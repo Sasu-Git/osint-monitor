@@ -128,6 +128,27 @@ class ItemEntity(Base):
 
 
 # ---------------------------------------------------------------------------
+# Situations
+# ---------------------------------------------------------------------------
+
+class Situation(Base):
+    """A continuing storyline that developments (events) belong to."""
+    __tablename__ = "situations"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
+    slug: Mapped[str] = mapped_column(String(100), unique=True, nullable=False)   # canonical key
+    title: Mapped[str] = mapped_column(String(255), nullable=False)
+    short_description: Mapped[str | None] = mapped_column(Text)
+    status: Mapped[str] = mapped_column(String(20), default="active", nullable=False)  # SituationStatus
+    region: Mapped[str | None] = mapped_column(String(100))
+    primary_actors: Mapped[list] = mapped_column(JSON, default=list, nullable=False)
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+
+    developments: Mapped[list["Event"]] = relationship(back_populates="situation")
+
+
+# ---------------------------------------------------------------------------
 # Events
 # ---------------------------------------------------------------------------
 
@@ -149,7 +170,9 @@ class Event(Base):
     admiralty_rating: Mapped[str | None] = mapped_column(String(10))  # e.g. "C1"
     corroboration_level: Mapped[str | None] = mapped_column(String(20))  # CONFIRMED/DISPUTED/UNVERIFIED
     has_contradictions: Mapped[bool] = mapped_column(Boolean, default=False)
+    situation_id: Mapped[int | None] = mapped_column(ForeignKey("situations.id"), index=True)
 
+    situation: Mapped["Situation | None"] = relationship(back_populates="developments")
     event_items: Mapped[list["EventItem"]] = relationship(back_populates="event")
     event_entities: Mapped[list["EventEntity"]] = relationship(back_populates="event")
     alerts: Mapped[list["Alert"]] = relationship(back_populates="event")
@@ -303,6 +326,14 @@ class StateSnapshot(Base):
     updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
 
 
+class SchemaMeta(Base):
+    """Migration bookkeeping: row ('schema_version', '<n>')."""
+    __tablename__ = "schema_meta"
+
+    key: Mapped[str] = mapped_column(String(50), primary_key=True)
+    value: Mapped[str] = mapped_column(String(100), nullable=False)
+
+
 # ---------------------------------------------------------------------------
 # Engine + Session
 # ---------------------------------------------------------------------------
@@ -339,29 +370,13 @@ def get_session(db_url: str | None = None) -> Session:
     return _SessionFactory()
 
 
-def init_db(db_url: str | None = None):
-    """Create all tables. Enables pgvector extension on PostgreSQL."""
-    engine = get_engine(db_url)
-    Base.metadata.create_all(engine)
+def init_db(db_url: str | None = None, backup_dir: Path | None = None):
+    """Create tables and apply pending schema migrations (see core/migrations.py).
+    Enables pgvector extension on PostgreSQL."""
+    from osint_monitor.core.migrations import run_migrations
 
-    # Migrations: add columns if missing
-    with engine.connect() as conn:
-        for stmt in [
-            "ALTER TABLE raw_items ADD COLUMN processed_at DATETIME",
-            "ALTER TABLE alerts ADD COLUMN trigger_key VARCHAR(500)",
-            "ALTER TABLE alerts ADD COLUMN superseded_by_id INTEGER",
-        ]:
-            try:
-                conn.execute(text(stmt))
-                conn.commit()
-            except Exception:
-                pass  # Column already exists
-        # Mark all existing items as already processed
-        try:
-            conn.execute(text("UPDATE raw_items SET processed_at = fetched_at WHERE processed_at IS NULL"))
-            conn.commit()
-        except Exception:
-            pass
+    engine = get_engine(db_url)
+    run_migrations(engine, backup_dir=backup_dir)
 
     # Enable pgvector on PostgreSQL (no-op on SQLite)
     if engine.dialect.name == "postgresql":
