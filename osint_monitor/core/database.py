@@ -347,8 +347,10 @@ def get_engine(db_url: str | None = None):
     global _engine
     if _engine is None:
         if db_url is None:
-            DEFAULT_DB_PATH.parent.mkdir(parents=True, exist_ok=True)
-            db_url = f"sqlite:///{DEFAULT_DB_PATH}"
+            from osint_monitor.core.config import get_settings
+            db_url = get_settings().db_url   # OSINT_DB_URL, default data/osint.db
+        if db_url.startswith("sqlite:///") and db_url != "sqlite:///:memory:":
+            Path(db_url.removeprefix("sqlite:///")).parent.mkdir(parents=True, exist_ok=True)
         _engine = create_engine(db_url, echo=False)
         # Enable WAL mode for SQLite
         if db_url.startswith("sqlite"):

@@ -53,6 +53,10 @@ def main():
     # export: dump DB to JSON for git tracking
     subparsers.add_parser("export", help="Export events, entities, claims, briefings to data/export/")
 
+    # smoke: end-to-end check on a temporary database
+    sub_smoke = subparsers.add_parser("smoke", help="Run the local pipeline on fixtures in a temporary database")
+    sub_smoke.add_argument("--keep", action="store_true", help="Keep the temporary database for inspection")
+
     args = parser.parse_args()
 
     logging.basicConfig(
@@ -60,6 +64,43 @@ def main():
         format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
     )
 
+    try:
+        _dispatch(args)
+    except Exception as e:
+        message = _setup_error_message(e)
+        if message is None:
+            raise
+        print(f"\nERROR: {message}", file=sys.stderr)
+        sys.exit(2)
+
+
+def _setup_error_message(e: Exception) -> str | None:
+    """A one-line explanation for configuration / setup problems; None = unexpected bug."""
+    import yaml
+    from pydantic import ValidationError
+
+    from osint_monitor.analysis.llm import LLMConfigurationError
+    from osint_monitor.core.migrations import MigrationError
+
+    try:
+        from osint_monitor.processors.nlp import SpacyModelMissing
+    except ImportError:          # spaCy itself not installed
+        SpacyModelMissing = ()   # noqa: N806
+    if isinstance(e, ModuleNotFoundError):
+        return (f"Python package '{e.name}' is not installed. Install the project into this "
+                f"environment: pip install -e \".[all,dev]\"")
+    if SpacyModelMissing and isinstance(e, SpacyModelMissing):
+        return str(e)
+    if isinstance(e, LLMConfigurationError):
+        return f"{e}\nSet it in .env (see .env.example) or choose another provider with --provider."
+    if isinstance(e, MigrationError):
+        return f"Database migration failed.\n{e}"
+    if isinstance(e, (ValidationError, yaml.YAMLError)):
+        return f"Invalid configuration file:\n{e}"
+    return None
+
+
+def _dispatch(args):
     if args.command is None:
         # Default: run collection pipeline (backwards compatible)
         _cmd_collect(argparse.Namespace(hours_back=24))
@@ -87,6 +128,9 @@ def main():
         _cmd_status()
     elif args.command == "export":
         _cmd_export()
+    elif args.command == "smoke":
+        from osint_monitor.smoke import main as smoke_main
+        smoke_main(["--keep"] if args.keep else [])
 
 
 def _cmd_collect(args):
@@ -164,10 +208,23 @@ def _cmd_daemon():
 
 
 def _cmd_migrate():
-    from osint_monitor.core.database import init_db, DEFAULT_DB_PATH
-    print(f"Initializing database at {DEFAULT_DB_PATH}")
+    from osint_monitor.core.database import get_engine, init_db
+    from osint_monitor.core.migrations import current_version, head_version
+
+    from sqlalchemy import inspect
+
+    engine = get_engine()
+    fresh = "events" not in inspect(engine).get_table_names()
+    before = current_version(engine)
+    print(f"Database: {engine.url.render_as_string(hide_password=True)}")
     init_db()
-    print("Done.")
+    after = current_version(engine)
+    if fresh:
+        print(f"Created new database at schema version {after}.")
+    elif after == before:
+        print(f"Schema up to date (version {after}).")
+    else:
+        print(f"Schema migrated: version {before} -> {after} (head {head_version()}).")
 
 
 def _cmd_seed():
@@ -248,7 +305,7 @@ def _cmd_export():
     from pathlib import Path
     from osint_monitor.core.database import (
         init_db, get_session, Event, EventItem, Entity, ItemEntity,
-        RawItem, Alert, Briefing, Claim,
+        RawItem, Alert, Briefing, Claim, Situation,
     )
     from sqlalchemy import func
 
@@ -272,9 +329,27 @@ def _cmd_export():
             "location_name": ev.location_name,
             "first_reported_at": ev.first_reported_at.isoformat() if ev.first_reported_at else None,
             "last_updated_at": ev.last_updated_at.isoformat() if ev.last_updated_at else None,
+            "situation_id": ev.situation_id,
         })
     (export_dir / "events.json").write_text(json.dumps(events, indent=2, ensure_ascii=False), encoding="utf-8")
     print(f"  Exported {len(events)} events")
+
+    # Situations (diagnostic view of grouping)
+    counts = dict(session.query(Event.situation_id, func.count(Event.id))
+                  .filter(Event.situation_id.isnot(None)).group_by(Event.situation_id))
+    situations = [{
+        "id": s.id,
+        "slug": s.slug,
+        "title": s.title,
+        "status": s.status,
+        "region": s.region,
+        "primary_actors": s.primary_actors or [],
+        "created_at": s.created_at.isoformat() if s.created_at else None,
+        "updated_at": s.updated_at.isoformat() if s.updated_at else None,
+        "event_count": counts.get(s.id, 0),
+    } for s in session.query(Situation).order_by(Situation.id)]
+    (export_dir / "situations.json").write_text(json.dumps(situations, indent=2, ensure_ascii=False), encoding="utf-8")
+    print(f"  Exported {len(situations)} situations")
 
     # Entities (top 200 by mention count)
     top_entities = (

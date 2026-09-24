@@ -79,6 +79,17 @@ def test_failing_migration_raises_and_keeps_version(legacy_engine, tmp_path, mon
         conn.execute(text("ALTER TABLE no_such_table ADD COLUMN x INTEGER"))
 
     monkeypatch.setattr(migrations, "MIGRATIONS", [(1, migrations.m001_legacy), (2, broken)])
-    with pytest.raises(Exception):
+    with pytest.raises(migrations.MigrationError, match="migration 2"):
         run_migrations(legacy_engine, backup_dir=tmp_path / "backups")
     assert current_version(legacy_engine) == 1
+
+
+def test_backup_failure_prevents_migration(legacy_engine, tmp_path, monkeypatch):
+    def no_disk(*args, **kwargs):
+        raise OSError("disk full")
+
+    monkeypatch.setattr(migrations, "backup_sqlite", no_disk)
+    with pytest.raises(migrations.MigrationError, match="back up"):
+        run_migrations(legacy_engine, backup_dir=tmp_path / "backups")
+    assert current_version(legacy_engine) == 0
+    assert "situation_id" not in {c["name"] for c in inspect(legacy_engine).get_columns("events")}

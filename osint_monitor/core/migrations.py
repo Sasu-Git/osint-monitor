@@ -27,6 +27,10 @@ logger = logging.getLogger(__name__)
 VERSION_KEY = "schema_version"
 
 
+class MigrationError(RuntimeError):
+    """A migration or the pre-migration backup failed; the database was left as it was."""
+
+
 def _columns(conn: Connection, table: str) -> set[str]:
     return {c["name"] for c in inspect(conn).get_columns(table)}
 
@@ -124,11 +128,20 @@ def run_migrations(engine: Engine, backup_dir: Path | None = None) -> int:
     if not pending:
         return version
 
-    backup_sqlite(engine, pending[-1][0], backup_dir)
+    try:
+        backup = backup_sqlite(engine, pending[-1][0], backup_dir)
+    except Exception as e:
+        raise MigrationError(f"Could not back up the database before migrating ({e}); "
+                             f"no migration was applied (schema version {version}).") from e
     for v, fn in pending:
         logger.info("Applying schema migration %d (%s)", v, fn.__name__)
-        with engine.begin() as conn:
-            fn(conn)
-            _set_version(conn, v)
+        try:
+            with engine.begin() as conn:
+                fn(conn)
+                _set_version(conn, v)
+        except Exception as e:
+            where = f" A backup from before the upgrade is at {backup}." if backup else ""
+            raise MigrationError(f"Schema migration {v} ({fn.__name__}) failed: {e}. "
+                                 f"The database is at schema version {version}.{where}") from e
         version = v
     return version

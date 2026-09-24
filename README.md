@@ -11,30 +11,41 @@ Autonomous geopolitical intelligence collection and analysis platform.
 
 ## Quick Start
 
+One environment (`.venv`) for runtime and tests. SQLite, no other services.
+`pyproject.toml` is the source of truth for Python dependencies; the spaCy
+language model is the only extra download.
+
 ```bash
-# 1. Clone and install
-git clone https://github.com/kerna/osint-monitor.git
-cd osint-monitor
-pip install -e ".[all]"
+# 1. Environment (Python 3.10+)
+python3 -m venv .venv
+source .venv/bin/activate            # Windows: .venv\Scripts\activate
+python -m pip install --upgrade pip setuptools wheel
+pip install -e ".[all,dev]"
 python -m spacy download en_core_web_lg
 
 # 2. Configure
-cp .env.example .env
-# Edit .env -- at minimum set OPENAI_API_KEY for briefings/ACH
+cp .env.example .env                 # Windows: copy .env.example .env
+# Edit .env -- set OPENAI_API_KEY (or another provider's key) for briefings
 
-# 3. Initialize
-python main.py migrate
+# 3. Verify
+pytest                               # unit tests
+python main.py smoke                 # real pipeline on fixtures, temporary DB, no network/LLM
+
+# 4. Run once
+python main.py migrate               # creates / upgrades data/osint.db (backs it up first)
 python main.py seed
-
-# 4. Collect and process
 python main.py collect
+python main.py briefing --hours-back 24
+python main.py serve                 # http://localhost:8000
 
-# 5. Start the dashboard
-python main.py serve
-# Open http://localhost:8000
+# Continuous operation (second terminal next to `serve`)
+python main.py daemon
 ```
 
-For production deployments, start PostgreSQL and Redis via Docker Compose first:
+The first `smoke` / `collect` downloads the sentence-transformers embedding model
+(`all-MiniLM-L6-v2`, ~90 MB) into the Hugging Face cache.
+
+Optional scaling only (not needed locally): PostgreSQL and Redis via Docker Compose:
 
 ```bash
 docker compose up -d
@@ -418,12 +429,15 @@ All commands are run via `python main.py <command>` or the installed `osint-moni
 |---------|-------------|-------------|
 | `collect` | Run collection and processing pipeline | `--hours-back` (default: 24) |
 | `briefing` | Generate intelligence briefing | `--type daily\|flash`, `--hours-back`, `--provider`, `--output` |
-| `serve` | Start web dashboard and API server | `--host`, `--port`, `--reload` |
+| `serve` | Start web dashboard and API server | `--host`, `--port`, `--no-reload` |
 | `daemon` | Run background scheduler daemon | -- |
 | `migrate` | Initialize or update database schema | -- |
 | `seed` | Seed entities from `config/entities.yaml` | -- |
 | `import` | Import legacy `archive.json` data | `--file` |
 | `alerts` | Check and display current alerts | `--hours-back` (default: 24) |
+| `export` | Dump events, situations, entities, claims, alerts, briefings to `data/export/` | -- |
+| `smoke` | End-to-end check on fixtures in a temporary database (no network, no LLM) | `--keep` |
+| `pause` / `resume` / `status` | Control the daemon pipeline | -- |
 
 Running `python main.py` with no arguments defaults to `collect`.
 

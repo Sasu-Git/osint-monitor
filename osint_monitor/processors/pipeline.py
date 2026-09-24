@@ -24,7 +24,7 @@ from osint_monitor.collectors.rss import NitterCollector, RSSCollector
 from osint_monitor.processors.dedup import Deduplicator, compute_content_hash
 from osint_monitor.processors.embeddings import embed_item, embedding_to_blob
 from osint_monitor.processors.entity_resolver import EntityResolver
-from osint_monitor.processors.nlp import extract_entities, extract_event_triples
+from osint_monitor.processors.nlp import SpacyModelMissing, extract_entities, extract_event_triples
 from osint_monitor.processors.scoring import compute_composite_severity
 
 logger = logging.getLogger(__name__)
@@ -271,8 +271,9 @@ def ensure_source(session: Session, name: str, source_type: str, url: str, credi
     return source
 
 
-def _run_single_collector(collector: BaseCollector) -> list[RawItemModel]:
-    """Run a single collector and stamp source_type. Thread-safe."""
+def _run_single_collector(collector: BaseCollector, failures: list[str] | None = None) -> list[RawItemModel]:
+    """Run a single collector and stamp source_type. Thread-safe.
+    A failing collector is logged (and appended to ``failures``) and yields no items."""
     try:
         items = collector.collect()
         for item in items:
@@ -281,10 +282,12 @@ def _run_single_collector(collector: BaseCollector) -> list[RawItemModel]:
         return items
     except Exception as e:
         logger.error(f"Collector {collector.name} failed: {e}")
+        if failures is not None:
+            failures.append(f"{collector.name}: {type(e).__name__}: {e}")
         return []
 
 
-def run_collection(session: Session) -> list[RawItemModel]:
+def run_collection(session: Session, failures: list[str] | None = None) -> list[RawItemModel]:
     """Run all collectors concurrently and return raw items."""
     from concurrent.futures import ThreadPoolExecutor, as_completed
 
@@ -293,12 +296,12 @@ def run_collection(session: Session) -> list[RawItemModel]:
 
     print("\n--- Collecting from sources ---")
     with ThreadPoolExecutor(max_workers=12) as pool:
-        futures = {pool.submit(_run_single_collector, c): c for c in collectors}
+        futures = {pool.submit(_run_single_collector, c, failures): c for c in collectors}
         for future in as_completed(futures):
             items = future.result()
             all_items.extend(items)
 
-    print(f"--- Collected {len(all_items)} total items ---\n")
+    print(f"--- Collected {len(all_items)} total items from {len(collectors)} collectors ---\n")
     return all_items
 
 
@@ -358,6 +361,10 @@ def process_new_items(session: Session, raw_items: list[RawItemModel]) -> dict:
             try:
                 _process_single_item(session, raw_item, deduplicator, resolver, stats)
                 savepoint.commit()
+            except SpacyModelMissing:
+                savepoint.rollback()
+                session.rollback()
+                raise          # setup problem, not a bad item: stop with the install instruction
             except Exception as e:
                 savepoint.rollback()
                 logger.error(f"Failed to process: {raw_item.title[:60]}: {e}")
@@ -368,28 +375,47 @@ def process_new_items(session: Session, raw_items: list[RawItemModel]) -> dict:
     return stats
 
 
-def run_post_processing(session: Session, quiet: bool = False) -> dict:
-    """Run clustering, enrichment, geocoding, corroboration, I&W, and fusion.
+def run_post_processing(session: Session, quiet: bool = False, offline: bool = False) -> dict:
+    """Run clustering, enrichment, geocoding, corroboration, situations, I&W, and fusion.
 
     This runs on all recent data and is designed to be called after any tier
-    produces new items.
+    produces new items. A failing stage is logged, rolled back and recorded in
+    ``stats["stages"]``; later stages still run.
 
     Args:
         session: Database session.
         quiet: If True, suppress print output (for daemon tier jobs).
+        offline: If True, skip the stages that call external services
+            (full-text fetching, Nominatim geocoding). Used by the smoke test.
 
     Returns:
-        Stats dict.
+        Stats dict; ``stats["stages"]`` maps stage name -> "ok" | "skipped (...)" | "failed: ...".
     """
-    stats = {}
+    stats: dict = {}
+    stages: dict[str, str] = {}
+    stats["stages"] = stages
 
     def _print(msg: str):
         if not quiet:
             print(msg)
 
+    def _stage(name: str, fn, network: bool = False) -> None:
+        if network and offline:
+            stages[name] = "skipped (offline)"
+            return
+        try:
+            fn()
+            stages[name] = "ok"
+        except Exception as e:
+            session.rollback()
+            stages[name] = f"failed: {type(e).__name__}: {e}"
+            logger.error(f"Pipeline stage '{name}' failed: {e}", exc_info=True)
+            _print(f"  !! {name} failed: {e}")
+
     # 1. Clustering
     _print("--- Clustering events ---")
-    try:
+
+    def _clustering():
         from osint_monitor.processors.clustering import cluster_recent_items, persist_clusters
         clusters = cluster_recent_items(session)
         if clusters:
@@ -398,22 +424,22 @@ def run_post_processing(session: Session, quiet: bool = False) -> dict:
             _print(f"  Created {len(clusters)} event clusters")
         else:
             _print("  No clusters formed")
-    except Exception as e:
-        logger.error(f"Clustering failed: {e}")
+    _stage("clustering", _clustering)
 
     # 2. Full-text enrichment
     _print("--- Enriching full text ---")
-    try:
+
+    def _fulltext():
         from osint_monitor.processors.fulltext import enrich_recent_items
         ft_stats = enrich_recent_items(session, hours_back=24, max_items=30)
         stats["enriched"] = ft_stats.get("enriched", 0) if isinstance(ft_stats, dict) else 0
         _print(f"  Enriched {stats['enriched']} items")
-    except Exception as e:
-        logger.debug(f"Full-text enrichment skipped: {e}")
+    _stage("fulltext", _fulltext, network=True)
 
     # 3. Relation extraction
     _print("--- Extracting relations ---")
-    try:
+
+    def _relations():
         from osint_monitor.processors.relations import extract_relations, persist_relations
         rel_count = 0
         recent_items = (
@@ -432,24 +458,25 @@ def run_post_processing(session: Session, quiet: bool = False) -> dict:
         session.commit()
         stats["relations"] = rel_count
         _print(f"  Extracted {rel_count} relations")
-    except Exception as e:
-        logger.debug(f"Relation extraction skipped: {e}")
+    _stage("relations", _relations)
 
     # 4. Geocoding
     _print("--- Geocoding events ---")
-    try:
+
+    def _geocoding():
         from osint_monitor.processors.geocoding import geocode_all_events
         geocoded = geocode_all_events(session)
         stats["geocoded"] = geocoded
         _print(f"  Geocoded {geocoded} events")
-    except Exception as e:
-        logger.error(f"Geocoding failed: {e}")
+    _stage("geocoding", _geocoding, network=True)
 
     # 5. Corroboration scoring
     _print("--- Scoring corroboration ---")
-    try:
+
+    def _corroboration():
         from osint_monitor.processors.corroboration import compute_corroboration_score
         events = session.query(Event).all()
+        failed = 0
         for ev in events:
             try:
                 sc = compute_corroboration_score(session, ev.id)
@@ -457,16 +484,20 @@ def run_post_processing(session: Session, quiet: bool = False) -> dict:
                 ev.admiralty_rating = sc.get("admiralty_rating")
                 ev.corroboration_level = sc.get("corroboration_level", "UNVERIFIED")
                 ev.has_contradictions = sc.get("has_contradictions", False)
-            except Exception:
+            except Exception as e:
+                failed += 1
+                logger.warning(f"Corroboration failed for event {ev.id}: {e}")
                 ev.corroboration_level = "UNVERIFIED"
         session.commit()
+        if failed and failed == len(events):
+            raise RuntimeError(f"corroboration failed for all {failed} events")
         _print(f"  Corroboration cached on {len(events)} events")
-    except Exception as e:
-        logger.debug(f"Corroboration scoring skipped: {e}")
+    _stage("corroboration", _corroboration)
 
     # 5b. Situation grouping
     _print("--- Grouping developments into situations ---")
-    try:
+
+    def _situations():
         from osint_monitor.processors.situations import assign_situations, get_grouper
         assignments = assign_situations(session, get_grouper())
         assigned = [a for a in assignments if a.slug]
@@ -474,13 +505,12 @@ def run_post_processing(session: Session, quiet: bool = False) -> dict:
         stats["situations_created"] = len({a.slug for a in assigned if a.created})
         _print(f"  {len(assigned)} of {len(assignments)} new developments assigned, "
                f"{stats['situations_created']} situations created")
-    except Exception as e:
-        session.rollback()
-        logger.error(f"Situation grouping failed: {e}")
+    _stage("situations", _situations)
 
     # 6. Indicators & Warnings
     _print("--- Evaluating I&W indicators ---")
-    try:
+
+    def _indicators():
         from osint_monitor.analysis.indicators import evaluate_indicators
         iw_results = evaluate_indicators(session, hours_back=24)
         for scenario in iw_results:
@@ -489,12 +519,12 @@ def run_post_processing(session: Session, quiet: bool = False) -> dict:
                 score = scenario.get("threat_score", scenario.get("score", 0))
                 _print(f"  [{scenario['status']}] {key}: {score:.0%}")
         stats["iw_elevated"] = sum(1 for s in iw_results if s.get("status") in ("ELEVATED", "WARNING"))
-    except Exception as e:
-        logger.debug(f"I&W evaluation skipped: {e}")
+    _stage("indicators", _indicators)
 
     # 7. Cross-modal signal fusion
     _print("--- Cross-modal signal fusion ---")
-    try:
+
+    def _fusion():
         from osint_monitor.analysis.fusion import fuse_signals, detect_signal_gaps
         correlations = fuse_signals(session, hours_back=24)
         gaps = detect_signal_gaps(session, hours_back=24)
@@ -504,9 +534,11 @@ def run_post_processing(session: Session, quiet: bool = False) -> dict:
             _print(f"  [{corr['confidence']:.0%}] {corr['pattern']}: {', '.join(corr['modalities_matched'])} ({corr['time_bucket']})")
         for gap in gaps:
             _print(f"  [GAP] {gap['description'][:100]}")
-    except Exception as e:
-        logger.debug(f"Signal fusion skipped: {e}")
+    _stage("fusion", _fusion)
 
+    failed = [name for name, status in stages.items() if status.startswith("failed")]
+    if failed:
+        logger.error(f"Post-processing finished with failed stages: {', '.join(failed)}")
     return stats
 
 
@@ -567,13 +599,16 @@ def run_pipeline(db_url: str | None = None) -> dict:
         "events_created": 0,
     }
 
+    failures: list[str] = []
+    stats["collector_failures"] = failures
     try:
         # 1. Collect all tiers at once (same as before)
-        raw_items = run_collection(session)
+        raw_items = run_collection(session, failures)
         stats["collected"] = len(raw_items)
 
         if not raw_items:
             print("No items collected.")
+            _print_failures(failures)
             return stats
 
         # 2. Process all items
@@ -594,6 +629,12 @@ def run_pipeline(db_url: str | None = None) -> dict:
         print(f"  I&W elevated: {stats.get('iw_elevated', 0)}")
         print(f"  Fusion correlations: {stats.get('fusion_correlations', 0)}")
         print(f"  Signal gaps: {stats.get('signal_gaps', 0)}")
+        print(f"  Situation assignments: {stats.get('situations_assigned', 0)} "
+              f"({stats.get('situations_created', 0)} new situations)")
+        print("  Stages:")
+        for name, status in stats["stages"].items():
+            print(f"    {name:<14} {status}")
+        _print_failures(failures)
 
     except Exception as e:
         session.rollback()
@@ -603,6 +644,13 @@ def run_pipeline(db_url: str | None = None) -> dict:
         session.close()
 
     return stats
+
+
+def _print_failures(failures: list[str]) -> None:
+    if failures:
+        print(f"  Failed collectors ({len(failures)}):")
+        for f in sorted(failures):
+            print(f"    {f[:160]}")
 
 
 def _process_single_item(

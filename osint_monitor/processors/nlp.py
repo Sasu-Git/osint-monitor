@@ -64,10 +64,24 @@ EVENT_VERB_MAP: dict[str, str] = {
 }
 
 _nlp_instance: Language | None = None
+FALLBACK_MODEL = "en_core_web_sm"
+
+
+class SpacyModelMissing(RuntimeError):
+    """The configured spaCy language model is not installed (it is not a pip dependency)."""
+
+    def __init__(self, model_name: str):
+        super().__init__(
+            f"spaCy model '{model_name}' is not installed.\n"
+            f"Install it into the project environment with:\n"
+            f"    python -m spacy download {model_name}\n"
+            f"(or set OSINT_SPACY_MODEL to a model you have installed)"
+        )
+        self.model_name = model_name
 
 
 def get_nlp() -> Language:
-    """Load spaCy model (cached singleton)."""
+    """Load spaCy model (cached singleton). Never downloads models at runtime."""
     global _nlp_instance
     if _nlp_instance is not None:
         return _nlp_instance
@@ -79,13 +93,14 @@ def get_nlp() -> Language:
         _nlp_instance = spacy.load(model_name)
         logger.info(f"Loaded spaCy model: {model_name}")
     except OSError:
-        logger.warning(f"{model_name} not found, falling back to en_core_web_sm")
+        if model_name == FALLBACK_MODEL:
+            raise SpacyModelMissing(model_name) from None
         try:
-            _nlp_instance = spacy.load("en_core_web_sm")
+            _nlp_instance = spacy.load(FALLBACK_MODEL)
         except OSError:
-            logger.warning("No spaCy model found. Downloading en_core_web_sm...")
-            spacy.cli.download("en_core_web_sm")
-            _nlp_instance = spacy.load("en_core_web_sm")
+            raise SpacyModelMissing(model_name) from None
+        logger.warning(f"spaCy model {model_name} not installed; using {FALLBACK_MODEL} "
+                       f"(lower NER quality). Install with: python -m spacy download {model_name}")
 
     # Add custom EntityRuler for weapons systems etc.
     _add_entity_ruler(_nlp_instance)
