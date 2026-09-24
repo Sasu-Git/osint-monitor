@@ -171,6 +171,24 @@ class Event(Base):
     corroboration_level: Mapped[str | None] = mapped_column(String(20))  # CONFIRMED/DISPUTED/UNVERIFIED
     has_contradictions: Mapped[bool] = mapped_column(Boolean, default=False)
     situation_id: Mapped[int | None] = mapped_column(ForeignKey("situations.id"), index=True)
+    # Development classification (processors/classification); NULL = not classified yet
+    event_domain: Mapped[str | None] = mapped_column(String(30))
+    interaction_mode: Mapped[str | None] = mapped_column(String(20))
+    concreteness: Mapped[str | None] = mapped_column(String(20))
+    significance_class: Mapped[str | None] = mapped_column(String(20))
+    change_summary: Mapped[str | None] = mapped_column(Text)          # FACT: what changed
+    why_it_matters: Mapped[str | None] = mapped_column(Text)          # ASSESSMENT
+    is_routine_commentary: Mapped[bool | None] = mapped_column(Boolean)
+    uncertainty_flags: Mapped[list | None] = mapped_column(JSON)
+    classification_source: Mapped[str | None] = mapped_column(String(100))  # "rules" | "llm:<p>/<m>"
+    classification_notes: Mapped[str | None] = mapped_column(Text)
+    classified_at: Mapped[datetime | None] = mapped_column(DateTime)
+    # Provenance confidence (processors/provenance), independent of significance
+    confidence_class: Mapped[str | None] = mapped_column(String(20))
+    # Ranking (processors/ranking). rank_score is an internal sort key, never shown as analysis.
+    rank_score: Mapped[float | None] = mapped_column(Float)
+    rank_reasons: Mapped[list | None] = mapped_column(JSON)
+    ranked_at: Mapped[datetime | None] = mapped_column(DateTime)
 
     situation: Mapped["Situation | None"] = relationship(back_populates="developments")
     event_items: Mapped[list["EventItem"]] = relationship(back_populates="event")
@@ -197,6 +215,8 @@ class EventEntity(Base):
     event_id: Mapped[int] = mapped_column(ForeignKey("events.id"), nullable=False)
     entity_id: Mapped[int] = mapped_column(ForeignKey("entities.id"), nullable=False)
     role: Mapped[str] = mapped_column(String(20), default="SUBJECT")
+    # Party participating in / driving the development, as opposed to an incidental mention
+    is_principal: Mapped[bool] = mapped_column(Boolean, default=False, nullable=False)
 
     event: Mapped["Event"] = relationship(back_populates="event_entities")
     entity: Mapped["Entity"] = relationship(back_populates="event_entities")

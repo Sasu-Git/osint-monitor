@@ -14,6 +14,9 @@ policy:
   keyword_weight: 0.2
   min_actor_coverage: 0.5
   join_threshold: 0.6
+  # used when an event has no principal actors and only mentioned entities are known
+  fallback_min_actor_coverage: 1.0
+  fallback_join_threshold: 0.8
   ambiguous_threshold: 0.4
   ambiguity_margin: 0.1
   min_actors_to_create: 2
@@ -40,6 +43,43 @@ actor_aliases:
   EU: European Union
   Sudanese: Sudan
   RSF: Rapid Support Forces
+
+# Person / body -> the state it acts for. Situations are country-level, so "Xi met Trump"
+# involves China and the United States. Keep to principals who reliably act for a state.
+actor_represents:
+  Donald Trump: United States
+  Trump: United States
+  White House: United States
+  Marco Rubio: United States
+  Rubio: United States
+  Pete Hegseth: United States
+  Hegseth: United States
+  Pentagon: United States
+  Department of Defense: United States
+  State Department: United States
+  U.S. Central Command: United States
+  CENTCOM: United States
+  US Navy: United States
+  Xi Jinping: China
+  Xi: China
+  Wang Yi: China
+  PLA: China
+  Vladimir Putin: Russia
+  Putin: Russia
+  Sergei Lavrov: Russia
+  Lavrov: Russia
+  Volodymyr Zelenskyy: Ukraine
+  Zelenskyy: Ukraine
+  Zelensky: Ukraine
+  Ali Khamenei: Iran
+  Khamenei: Iran
+  Masoud Pezeshkian: Iran
+  Pezeshkian: Iran
+  Abbas Araghchi: Iran
+  Araghchi: Iran
+  IRGC: Iran
+  Benjamin Netanyahu: Israel
+  Netanyahu: Israel
 
 # Region values match the region keys in sources.yaml.
 situations:

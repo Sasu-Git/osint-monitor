@@ -53,7 +53,7 @@ class SituationGrouper:
     def __init__(self, config: SituationsConfig | None = None, arbiter: SituationArbiter | None = None):
         self.config = config or load_situations_config()
         self.arbiter = arbiter
-        self.actors = ActorCanonicalizer(self.config.actor_aliases)
+        self.actors = ActorCanonicalizer(self.config.actor_aliases, self.config.actor_represents)
         for seed in self.config.situations:
             for name in seed.primary_actors:
                 self.actors.remember(name)
@@ -69,7 +69,8 @@ class SituationGrouper:
         if not shared or situation.status == SituationStatus.CLOSED:
             return None
         coverage = len(shared) / len(sit_actors)
-        if coverage < p.min_actor_coverage:
+        min_coverage = p.min_actor_coverage if dev.actors_are_principal else p.fallback_min_actor_coverage
+        if coverage < min_coverage:
             return None
 
         signals = [(p.actor_weight, coverage, R.ACTOR_OVERLAP)]
@@ -100,7 +101,8 @@ class SituationGrouper:
 
         best_score, best, best_reasons = scored[0]
         runner_up = scored[1][0] if len(scored) > 1 else None
-        clear = best_score >= p.join_threshold and (runner_up is None or best_score - runner_up > p.ambiguity_margin)
+        join_threshold = p.join_threshold if dev.actors_are_principal else p.fallback_join_threshold
+        clear = best_score >= join_threshold and (runner_up is None or best_score - runner_up > p.ambiguity_margin)
         if clear:
             return SituationAssignment(event_id=dev.event_id, slug=best.slug, reasons=best_reasons,
                                        candidates=candidates)
@@ -143,7 +145,8 @@ class SituationGrouper:
         existing_slugs = {s.slug for s in situations}
         recurring: dict[frozenset[str], list[int]] = defaultdict(list)
         for i in order:
-            if assignments[i].slug is None:
+            # only principal actor sets define new storylines; incidental mentions never do
+            if assignments[i].slug is None and developments[i].actors_are_principal:
                 key = self.actors.keys(developments[i].actors)
                 if len(key) >= p.min_actors_to_create:
                     recurring[key].append(i)

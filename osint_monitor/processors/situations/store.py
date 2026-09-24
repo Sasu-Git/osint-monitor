@@ -69,13 +69,17 @@ def load_profiles(session: Session, config: SituationsConfig) -> list[SituationP
 
 
 def signature_for_event(session: Session, event: Event) -> DevelopmentSignature:
-    actors = [ee.entity.canonical_name for ee in
-              session.query(EventEntity).options(joinedload(EventEntity.entity))
-              .filter(EventEntity.event_id == event.id)
-              if ee.entity and ee.entity.entity_type in ACTOR_ENTITY_TYPES]
+    """Principal actors when known (people included: they may represent a state);
+    otherwise every mentioned country / organisation, flagged so the grouper is stricter."""
+    links = [ee for ee in session.query(EventEntity).options(joinedload(EventEntity.entity))
+             .filter(EventEntity.event_id == event.id) if ee.entity]
+    principals = [ee.entity.canonical_name for ee in links if ee.is_principal]
+    mentioned = [ee.entity.canonical_name for ee in links if ee.entity.entity_type in ACTOR_ENTITY_TYPES]
     return DevelopmentSignature(
-        event_id=event.id, title=event.summary, actors=list(dict.fromkeys(actors)), region=event.region,
-        occurred_at=event.first_reported_at, embedding=_event_embedding(session, [event.id]),
+        event_id=event.id, title=event.summary,
+        actors=list(dict.fromkeys(principals or mentioned)), actors_are_principal=bool(principals),
+        region=event.region, occurred_at=event.first_reported_at,
+        embedding=_event_embedding(session, [event.id]),
     )
 
 

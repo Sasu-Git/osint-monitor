@@ -59,9 +59,26 @@ def m002_situations(conn: Connection) -> None:
     conn.execute(text("CREATE INDEX IF NOT EXISTS ix_events_situation_id ON events (situation_id)"))
 
 
+def m003_development_fields(conn: Connection) -> None:
+    """Classification, confidence and ranking on events; principal flag on event entities."""
+    dt = _datetime_type(conn)
+    for column, ddl in [
+        ("event_domain", "VARCHAR(30)"), ("interaction_mode", "VARCHAR(20)"),
+        ("concreteness", "VARCHAR(20)"), ("significance_class", "VARCHAR(20)"),
+        ("change_summary", "TEXT"), ("why_it_matters", "TEXT"),
+        ("is_routine_commentary", "BOOLEAN"), ("uncertainty_flags", "JSON"),
+        ("classification_source", "VARCHAR(100)"), ("classification_notes", "TEXT"),
+        ("classified_at", dt), ("confidence_class", "VARCHAR(20)"),
+        ("rank_score", "FLOAT"), ("rank_reasons", "JSON"), ("ranked_at", dt),
+    ]:
+        _add_column(conn, "events", column, ddl)
+    _add_column(conn, "event_entities", "is_principal", "BOOLEAN NOT NULL DEFAULT FALSE")
+
+
 MIGRATIONS: list[tuple[int, Callable[[Connection], None]]] = [
     (1, m001_legacy),
     (2, m002_situations),
+    (3, m003_development_fields),
 ]
 
 

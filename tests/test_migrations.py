@@ -25,6 +25,9 @@ LEGACY_DDL = [
     """INSERT INTO raw_items (id, source_id, title, content_hash, fetched_at)
        VALUES (1, 1, 'old item', 'h1', '2026-01-01 00:00:00')""",
     "INSERT INTO events (id, summary) VALUES (1, 'old event')",
+    """CREATE TABLE event_entities (id INTEGER PRIMARY KEY, event_id INTEGER NOT NULL, entity_id INTEGER NOT NULL,
+       role VARCHAR(20))""",
+    "INSERT INTO event_entities (id, event_id, entity_id, role) VALUES (1, 1, 1, 'SUBJECT')",
 ]
 
 
@@ -53,12 +56,15 @@ def test_legacy_database_migrates_to_head(legacy_engine, tmp_path):
     assert run_migrations(legacy_engine, backup_dir=backups) == head_version()
 
     insp = inspect(legacy_engine)
-    assert "situation_id" in {c["name"] for c in insp.get_columns("events")}
+    assert {"situation_id", "event_domain", "confidence_class", "rank_score", "classified_at"} <= {
+        c["name"] for c in insp.get_columns("events")}
+    assert "is_principal" in {c["name"] for c in insp.get_columns("event_entities")}
     assert {"trigger_key", "superseded_by_id"} <= {c["name"] for c in insp.get_columns("alerts")}
     assert "situations" in insp.get_table_names()
     with legacy_engine.connect() as conn:
         assert conn.execute(text("SELECT processed_at FROM raw_items")).scalar() is not None
         assert conn.execute(text("SELECT count(*) FROM events")).scalar() == 1   # data preserved
+        assert conn.execute(text("SELECT is_principal FROM event_entities")).scalar() == 0   # defaulted
     [backup] = list(backups.iterdir())
     assert backup.name.startswith(f"osint-pre-v{head_version()}-")
 

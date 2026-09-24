@@ -426,6 +426,16 @@ def run_post_processing(session: Session, quiet: bool = False, offline: bool = F
             _print("  No clusters formed")
     _stage("clustering", _clustering)
 
+    # 1b. Principal actors (who takes part vs who is merely mentioned)
+    _print("--- Identifying principal actors ---")
+
+    def _principals():
+        from osint_monitor.processors.principals import mark_principal_actors
+        p = mark_principal_actors(session)
+        stats["principals"] = p
+        _print(f"  {p['with_principals']} of {p['events']} recent events have principal actors")
+    _stage("principals", _principals)
+
     # 2. Full-text enrichment
     _print("--- Enriching full text ---")
 
@@ -435,6 +445,17 @@ def run_post_processing(session: Session, quiet: bool = False, offline: bool = F
         stats["enriched"] = ft_stats.get("enriched", 0) if isinstance(ft_stats, dict) else 0
         _print(f"  Enriched {stats['enriched']} items")
     _stage("fulltext", _fulltext, network=True)
+
+    # 2b. Development classification
+    _print("--- Classifying developments ---")
+
+    def _classification():
+        from osint_monitor.processors.development import classify_events
+        c = classify_events(session)
+        stats["classification"] = c
+        _print(f"  {c['classified']} of {c['candidates']} changed events classified with {c['classifier']}"
+               f" ({c['failed']} failed, {c['fallback']} fell back to rules, {c['unknown_type']} type unknown)")
+    _stage("classification", _classification)
 
     # 3. Relation extraction
     _print("--- Extracting relations ---")
@@ -484,6 +505,7 @@ def run_post_processing(session: Session, quiet: bool = False, offline: bool = F
                 ev.admiralty_rating = sc.get("admiralty_rating")
                 ev.corroboration_level = sc.get("corroboration_level", "UNVERIFIED")
                 ev.has_contradictions = sc.get("has_contradictions", False)
+                ev.confidence_class = sc.get("confidence_class")
             except Exception as e:
                 failed += 1
                 logger.warning(f"Corroboration failed for event {ev.id}: {e}")
@@ -493,6 +515,16 @@ def run_post_processing(session: Session, quiet: bool = False, offline: bool = F
             raise RuntimeError(f"corroboration failed for all {failed} events")
         _print(f"  Corroboration cached on {len(events)} events")
     _stage("corroboration", _corroboration)
+
+    # 5a. Ranking (deterministic editorial policy; the score is a sort key only)
+    _print("--- Ranking developments ---")
+
+    def _ranking():
+        from osint_monitor.processors.development import rank_events
+        r = rank_events(session)
+        stats["ranking"] = r
+        _print(f"  {r['ranked']} recent events ranked ({r['unclassified_ranked']} unclassified)")
+    _stage("ranking", _ranking)
 
     # 5b. Situation grouping
     _print("--- Grouping developments into situations ---")
@@ -629,6 +661,13 @@ def run_pipeline(db_url: str | None = None) -> dict:
         print(f"  I&W elevated: {stats.get('iw_elevated', 0)}")
         print(f"  Fusion correlations: {stats.get('fusion_correlations', 0)}")
         print(f"  Signal gaps: {stats.get('signal_gaps', 0)}")
+        principals = stats.get("principals") or {}
+        classification = stats.get("classification") or {}
+        print(f"  Principal actors: {principals.get('with_principals', 0)} of {principals.get('events', 0)} "
+              f"recent events")
+        print(f"  Classified: {classification.get('classified', 0)} of {classification.get('candidates', 0)} "
+              f"changed events ({classification.get('failed', 0)} failed)")
+        print(f"  Ranked: {(stats.get('ranking') or {}).get('ranked', 0)}")
         print(f"  Situation assignments: {stats.get('situations_assigned', 0)} "
               f"({stats.get('situations_created', 0)} new situations)")
         print("  Stages:")

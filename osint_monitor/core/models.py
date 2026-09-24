@@ -446,7 +446,8 @@ class DevelopmentSignature(BaseModel):
     """What the situation grouper needs to know about one development."""
     event_id: Optional[int] = None
     title: str
-    actors: list[str] = Field(default_factory=list)      # countries / organisations, any spelling
+    actors: list[str] = Field(default_factory=list)      # countries / organisations / people, any spelling
+    actors_are_principal: bool = True                    # False: fell back to every mentioned entity
     region: Optional[str] = None
     occurred_at: Optional[datetime] = None
     embedding: Optional[list[float]] = Field(default=None, repr=False)

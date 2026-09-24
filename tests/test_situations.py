@@ -199,18 +199,19 @@ def test_arbiter_request_lists_every_candidate(twin_situations):
 
 # --- persistence ------------------------------------------------------------------------------
 
-def add_event(session, title, *actors, hours_ago=1.0, region=None):
+def add_event(session, title, *actors, hours_ago=1.0, region=None, principal=True, mentioned=()):
+    """Event whose ``actors`` are principal (unless principal=False) plus incidental ``mentioned``."""
     event = Event(summary=title, region=region, first_reported_at=NOW - timedelta(hours=hours_ago),
                   last_updated_at=NOW - timedelta(hours=hours_ago))
     session.add(event)
     session.flush()
-    for name in actors:
+    for name, is_principal in [(a, principal) for a in actors] + [(m, False) for m in mentioned]:
         entity = session.query(Entity).filter_by(canonical_name=name).first()
         if entity is None:
             entity = Entity(canonical_name=name, entity_type="GPE")
             session.add(entity)
             session.flush()
-        session.add(EventEntity(event_id=event.id, entity_id=entity.id, role="SUBJECT"))
+        session.add(EventEntity(event_id=event.id, entity_id=entity.id, role="SUBJECT", is_principal=is_principal))
     session.commit()
     return event
 

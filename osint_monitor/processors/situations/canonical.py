@@ -16,14 +16,17 @@ _NON_SLUG = re.compile(r"[^a-z0-9]+")
 
 
 class ActorCanonicalizer:
-    def __init__(self, aliases: dict[str, str] | None = None):
+    def __init__(self, aliases: dict[str, str] | None = None, represents: dict[str, str] | None = None):
         self._aliases = {normalise(k): normalise(v) for k, v in (aliases or {}).items()}
+        # situations are country-level: a head of state or ministry stands for its state
+        self._represents = {normalise(k): normalise(v) for k, v in (represents or {}).items()}
         self._display: dict[str, str] = {}
 
     def key(self, name: str) -> str:
         """Lowercase canonical key for an actor name."""
         k = normalise(name)
-        return self._aliases.get(k, k)
+        k = self._aliases.get(k, k)
+        return self._represents.get(k, k)
 
     def keys(self, names: Iterable[str]) -> frozenset[str]:
         return frozenset(k for k in (self.key(n) for n in names) if k)
