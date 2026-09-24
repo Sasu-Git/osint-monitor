@@ -1,0 +1,171 @@
+# Development ranking policy (editorial policy, not a model output).
+# Read by osint_monitor.processors.ranking.PolicyRanker.
+#
+# The ranker adds these weights into an internal sort key. The key is never shown
+# in the UI -- only the reasons (reason_labels below) are.
+# Keys must be valid enum values from osint_monitor.core.models; unknown keys fail loudly.
+#
+# Intended ordering, which tests/test_ranking.py checks:
+#   - an in-person meeting beats routine statements on the same subject;
+#   - treaties, ceasefires, military action, formal sanctions, major policy shifts,
+#     resignations and election results can outrank a meeting;
+#   - confirmed beats speculative, fresh beats stale, first report beats repeats.
+
+# Base weight per development type. Every EventType must be listed.
+event_type_weights:
+  treaty: 12
+  ceasefire: 12
+  military_action: 12
+  agreement: 10
+  sanctions: 10
+  election: 10
+  resignation: 10
+  policy_change: 9
+  deployment: 8
+  arms_transfer: 8
+  economic_action: 8
+  summit: 7
+  bilateral_meeting: 6
+  multilateral_meeting: 6
+  appointment: 6
+  diplomatic_visit: 5
+  negotiation: 5
+  military_exercise: 5
+  threat: 4
+  significant_statement: 3
+  warning: 3
+  other: 2
+  commentary: 1
+  unknown: 1
+
+# How the parties interacted. Physical presence signals commitment.
+interaction_mode_weights:
+  physical: 3
+  telephone: 2
+  video: 1
+  written: 0
+  none: 0
+  unknown: 0
+
+# Deeds over words.
+concreteness_weights:
+  decision: 3
+  agreement: 3
+  action: 2
+  negotiation: 1
+  declaration: 0
+  commentary: -1
+  unknown: 0
+
+# Classifier's significance judgement, when it made one.
+significance_weights:
+  critical: 6
+  major: 4
+  notable: 2
+  background: 0
+
+# Seniority of the most senior actor involved. >= senior_role_threshold counts as "senior actor".
+role_weights:
+  head_of_state: 4
+  head_of_government: 4
+  foreign_minister: 3
+  defense_minister: 3
+  international_org_leader: 3
+  finance_minister: 2
+  senior_diplomat: 2
+  senior_military: 2
+  spokesperson: 0
+  other: 0
+senior_role_threshold: 3
+
+# Corroboration.
+confidence_weights:
+  confirmed: 3
+  probable: 2
+  possible: 1
+  unverified: 0
+  disputed: -1
+corroboration:
+  per_extra_source: 0.5
+  max_bonus: 2
+  widely_reported_sources: 3
+
+# Penalties (subtracted) for classifier uncertainty flags.
+uncertainty_penalties:
+  unconfirmed_completion: 3
+  contradictory_reports: 1.5
+  single_source: 1
+  insufficient_context: 1
+  actors_unclear: 0.5
+
+# Classifier marked the development as routine commentary.
+routine_commentary_penalty: 3
+
+# Repeats of the same event type within one topic (situation). Penalty grows per repeat.
+redundancy:
+  per_repeat:
+    commentary: 2
+    declaration: 1.5
+  default_per_repeat: 1
+  max_penalty: 8
+
+# Rhetoric about a topic that also has a concrete development in the same batch.
+overshadow_penalty: 1.5
+
+# First development of its type within a topic.
+novelty_bonus: 1
+
+# Lifecycle.
+status_weights:
+  superseded: -50
+  concluded: -1
+status_transition_weights:
+  emerging->developing: 0.5
+  concluded->developing: 2      # reopened by new reporting
+
+# Geographic / global relevance.
+geography:
+  priority_countries: {}        # e.g. {Iran: 1, Ukraine: 1}
+  priority_regions: {}          # e.g. {middle_east: 1}
+  countries_included: 2
+  per_extra_country: 0.5
+  max_multinational_bonus: 2
+  global_organizations: [UN, United Nations, UN Security Council, NATO, EU, European Union,
+                         G7, G20, IAEA, IMF, World Bank, WTO, WHO, OPEC, ASEAN, African Union]
+  global_organization_bonus: 1
+
+# Older developments sink.
+recency:
+  grace_hours: 12
+  penalty_per_day: 1
+  max_penalty: 6
+
+# Short UI phrases per reason. No numbers.
+reason_labels:
+  high_significance: High significance
+  senior_actor: Senior officials involved
+  physical_interaction: In-person meeting
+  remote_interaction: Call or video conference
+  concrete_action: Reported action
+  formal_decision: Formal decision
+  new_policy: New policy
+  agreement_reached: Agreement reached
+  independently_confirmed: Independently confirmed
+  widely_reported: Widely reported
+  new_development: New development
+  status_change: Status changed
+  priority_geography: Priority area
+  multinational: Several countries involved
+  global_institution: International institution involved
+  routine_commentary: Routine commentary
+  rhetoric_only: Statement only, no action
+  single_source: Single source
+  unconfirmed_report: Not confirmed as done
+  disputed: Reports disagree
+  weak_evidence: Thin evidence
+  duplicate_commentary_penalty: Repeats earlier commentary
+  repeated_coverage_penalty: Repeats earlier coverage
+  overshadowed_by_concrete: A more concrete development on the same topic exists
+  concluded: Concluded
+  superseded: Superseded by a later development
+  stale: Older development

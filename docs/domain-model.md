@@ -17,6 +17,15 @@
 - Classifier input is `ClusterContext` (items, entities, location, has_contradictions), built read-only by `classification/context.py`.
 - Not yet done: the §2 schema migration and applying classifications to `events`.
 
+**2026-09-24 — DevelopmentRanker (Prompt 4), implemented in `osint_monitor/processors/ranking/`:**
+
+- `ConfidenceClass`, `DevelopmentStatus`, `RoleClass` from §1 now exist in `core/models.py`. `RoleClass` gains `spokesperson` (routine official comment, weight 0).
+- New enum `RankReason`: machine-readable reasons (`senior_actor`, `physical_interaction`, `formal_decision`, `new_policy`, `independently_confirmed`, `duplicate_commentary_penalty`, …). Only reasons that actually moved a development are reported, strongest first.
+- Contracts: `RankingInput` (classification + confidence, independent source count, actor roles, status / previous status, `topic_key`, `prior_similar_count`, `occurred_at`, region) → `RankedDevelopment` (position, reasons, internal `score` used only for sorting).
+- `PolicyRanker` is deterministic: additive weights from `config/ranking.yaml` (validated by `RankingConfig`; every `EventType` must have a weight). Batch-level rules: repeats of the same type in a topic decay, rhetoric is demoted when its topic has a concrete development, first concrete development of its type in a topic gets a novelty bonus. Ties break on recency, then `development_id`.
+- `PolicyRanker.explain(reasons)` returns a short label string from `reason_labels`; no numbers reach the UI.
+- Not yet done: deriving `significance_class` / `significance_reasons` from the ranking and writing them to `events` (depends on the §2 migration).
+
 ---
 
 ## 0. Decisions at a glance
