@@ -1,0 +1,79 @@
+# Situations: continuing storylines that developments are grouped into.
+# Read by osint_monitor.processors.situations.
+#
+# A development joins at most one situation. Seeds below are upserted by slug on every
+# grouping run; set `status: closed` to retire one (it is never deleted, its developments stay).
+# New situations are created automatically only when the same set of >= 2 actors recurs, and
+# their slug is derived from the canonical actor names -- never from free text, so the same
+# storyline cannot be created twice under different names.
+
+policy:
+  actor_weight: 0.5
+  region_weight: 0.1
+  semantic_weight: 0.3
+  keyword_weight: 0.2
+  min_actor_coverage: 0.5
+  join_threshold: 0.6
+  ambiguous_threshold: 0.4
+  ambiguity_margin: 0.1
+  min_actors_to_create: 2
+  create_min_developments: 2
+  create_window_days: 7
+  dormant_after_days: 14
+  centroid_developments: 20
+
+# Variant -> canonical actor name, applied after the entity resolver's own normalisation.
+actor_aliases:
+  Iranian: Iran
+  Russian: Russia
+  Kremlin: Russia
+  Ukrainian: Ukraine
+  American: United States
+  White House: United States
+  Chinese: China
+  Israeli: Israel
+  IDF: Israel
+  Palestinian: Palestine
+  Gazan: Gaza
+  European Commission: European Union
+  Brussels: European Union
+  EU: European Union
+  Sudanese: Sudan
+  RSF: Rapid Support Forces
+
+# Region values match the region keys in sources.yaml.
+situations:
+  - slug: us-iran
+    title: US–Iran negotiations and confrontation
+    short_description: Talks, pressure and incidents between the United States and Iran, including the nuclear file.
+    region: iran
+    primary_actors: [United States, Iran]
+    keywords: [nuclear, enrichment, IAEA, JCPOA, talks, negotiations, sanctions, Hormuz]
+
+  - slug: russia-ukraine-war
+    title: Russia–Ukraine war
+    short_description: The war in Ukraine, including front-line fighting, strikes and ceasefire diplomacy.
+    region: russia
+    primary_actors: [Russia, Ukraine]
+    keywords: [front, offensive, drone, missile, ceasefire, peace talks, occupied]
+
+  - slug: eu-china-trade
+    title: EU–China trade dispute
+    short_description: Tariffs, anti-dumping cases and export controls between the European Union and China.
+    region: china
+    primary_actors: [European Union, China]
+    keywords: [tariff, anti-dumping, export control, EV, trade, subsidy, rare earth]
+
+  - slug: gaza-ceasefire
+    title: Gaza ceasefire negotiations
+    short_description: Ceasefire and hostage negotiations between Israel and Hamas, and mediation by Qatar, Egypt and the US.
+    region: middle_east
+    primary_actors: [Israel, Hamas]
+    keywords: [ceasefire, hostage, truce, Gaza, Rafah, mediation, humanitarian]
+
+  - slug: sudan-civil-war
+    title: Sudan civil war
+    short_description: Fighting between the Sudanese Armed Forces and the Rapid Support Forces.
+    region: africa
+    primary_actors: [Sudan, Rapid Support Forces]
+    keywords: [El Fasher, Darfur, Khartoum, SAF, famine]

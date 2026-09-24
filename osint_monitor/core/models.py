@@ -214,6 +214,24 @@ class ProvenanceFlag(str, Enum):
     FULLY_RETRACTED = "fully_retracted"                    # every supporting origin withdrew
 
 
+class SituationStatus(str, Enum):
+    ACTIVE = "active"
+    DORMANT = "dormant"          # no new developments for the configured period
+    CLOSED = "closed"            # manually closed; never auto-joined or reopened
+
+
+class SituationMatchReason(str, Enum):
+    """Why a development was (or was not) put in a situation."""
+    ACTOR_OVERLAP = "actor_overlap"
+    SAME_REGION = "same_region"
+    SEMANTIC_SIMILARITY = "semantic_similarity"
+    TOPIC_KEYWORDS = "topic_keywords"
+    ARBITER_CHOICE = "arbiter_choice"          # ambiguous case settled by the LLM arbiter
+    RECURRING_ACTORS = "recurring_actors"      # new situation: same actor set recurred
+    AMBIGUOUS = "ambiguous"                    # left unassigned: candidates too close to call
+    NO_MATCH = "no_match"
+
+
 class RankReason(str, Enum):
     """Machine-readable reason a development moved up or down. Only reasons that
     actually changed the ranking are reported."""
@@ -422,6 +440,54 @@ class ConfidenceAssessment(BaseModel):
     origins: list[OriginSummary] = Field(default_factory=list)
     items: list[ItemProvenance] = Field(default_factory=list)
     flags: list[ProvenanceFlag] = Field(default_factory=list)
+
+
+class DevelopmentSignature(BaseModel):
+    """What the situation grouper needs to know about one development."""
+    event_id: Optional[int] = None
+    title: str
+    actors: list[str] = Field(default_factory=list)      # countries / organisations, any spelling
+    region: Optional[str] = None
+    occurred_at: Optional[datetime] = None
+    embedding: Optional[list[float]] = Field(default=None, repr=False)
+
+
+class SituationProfile(BaseModel):
+    """An existing situation as seen by the grouper."""
+    situation_id: Optional[int] = None
+    slug: str
+    title: str
+    short_description: str = ""
+    status: SituationStatus = SituationStatus.ACTIVE
+    region: Optional[str] = None
+    primary_actors: list[str] = Field(default_factory=list)
+    keywords: list[str] = Field(default_factory=list)     # from situations.yaml seeds only
+    centroid: Optional[list[float]] = Field(default=None, repr=False)   # mean embedding of recent members
+
+
+class SituationAssignment(BaseModel):
+    """Grouper decision for one development. ``slug`` None = stays unassigned."""
+    event_id: Optional[int] = None
+    slug: Optional[str] = None
+    created: bool = False                                 # this decision created the situation
+    reasons: list[SituationMatchReason] = Field(default_factory=list)
+    candidates: list[str] = Field(default_factory=list)   # slugs considered, best first
+
+
+class DevelopmentBrief(BaseModel):
+    event_id: int
+    title: str
+    occurred_at: Optional[datetime] = None
+    corroboration_level: Optional[str] = None
+
+
+class SituationOverview(BaseModel):
+    """What the UI needs to answer: what is this story, what changed, what belongs to it."""
+    situation: SituationProfile
+    created_at: datetime
+    updated_at: datetime                                  # time of the latest development
+    development_count: int
+    recent_developments: list[DevelopmentBrief] = Field(default_factory=list)   # newest first
 
 
 class RankingInput(BaseModel):

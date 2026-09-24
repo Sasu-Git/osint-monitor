@@ -464,6 +464,20 @@ def run_post_processing(session: Session, quiet: bool = False) -> dict:
     except Exception as e:
         logger.debug(f"Corroboration scoring skipped: {e}")
 
+    # 5b. Situation grouping
+    _print("--- Grouping developments into situations ---")
+    try:
+        from osint_monitor.processors.situations import assign_situations, get_grouper
+        assignments = assign_situations(session, get_grouper())
+        assigned = [a for a in assignments if a.slug]
+        stats["situations_assigned"] = len(assigned)
+        stats["situations_created"] = len({a.slug for a in assigned if a.created})
+        _print(f"  {len(assigned)} of {len(assignments)} new developments assigned, "
+               f"{stats['situations_created']} situations created")
+    except Exception as e:
+        session.rollback()
+        logger.error(f"Situation grouping failed: {e}")
+
     # 6. Indicators & Warnings
     _print("--- Evaluating I&W indicators ---")
     try:
