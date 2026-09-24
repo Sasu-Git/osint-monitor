@@ -1,0 +1,108 @@
+# Source provenance policy. Read by osint_monitor.processors.provenance.
+#
+# Corroboration counts independent ORIGINS, not outlets:
+#   - every source belongs to an origin (default: itself);
+#   - an item that attributes its report to a known origin ("(Reuters)", "according to AP")
+#     is derivative and counts toward that origin, not its own outlet;
+#   - items whose body text is a near-identical copy of an earlier item count as the same origin;
+#   - analysis / commentary never counts as confirmation.
+# Provenance is inferred only when detectable; otherwise the item is its own origin and
+# sources with an unknown role raise the provenance_unknown flag.
+
+# Role resolution order: sources (by name) > category_roles (sources.yaml category) > collector_roles.
+sources:
+  Reuters World:      {role: wire, origin: Reuters}
+  BBC World:          {origin: BBC}
+  Al Jazeera:         {origin: Al Jazeera}
+  Defense.gov:        {role: primary_official, origin: US Department of Defense}
+  State Department:   {role: primary_official, origin: US State Department}
+  "@CENTCOM":         {role: primary_official, origin: US Central Command}
+  "@NATO":            {role: primary_official, origin: NATO}
+  "@bellingcat":      {role: osint, origin: Bellingcat}
+  "@TheIntelFrog":    {role: osint}
+  "@AuroraIntel":     {role: osint}
+  "@COUPSURE":        {role: osint}
+  "@detresfa_":       {role: osint}
+  "@RALee85":         {role: analysis}
+  "@NavyLookout":     {role: specialist_reporting}
+  ACLED:              {role: specialist_reporting}
+  USGS Seismic:       {role: primary_official}
+  NASA FIRMS:         {role: primary_official}
+  GDELT:              {role: unknown}          # aggregator: original outlet not preserved
+  X-ForYou:           {role: social}
+
+category_roles:
+  us_gov: primary_official
+  official: primary_official
+  official_gov: primary_official
+  wire: wire
+  wire_service: wire
+  news: independent_reporting
+  major_news: independent_reporting
+  defense: specialist_reporting
+  analysis: analysis
+  osint_account: osint
+  individual_twitter: social
+
+collector_roles:
+  sanctions: primary_official
+  twitter: social
+  telegram: social
+
+# Origins that other outlets attribute reports to. Aliases are matched with word boundaries;
+# short all-caps aliases (AP, AFP) are matched case-sensitively.
+origins:
+  Reuters:          {role: wire, aliases: [Reuters]}
+  Associated Press: {role: wire, aliases: [Associated Press, AP]}
+  AFP:              {role: wire, aliases: [AFP, Agence France-Presse]}
+  Bloomberg:        {role: wire, aliases: [Bloomberg]}
+  dpa:              {role: wire, aliases: [dpa, Deutsche Presse-Agentur]}
+  ANSA:             {role: wire, aliases: [ANSA]}
+  EFE:              {role: wire, aliases: [EFE]}
+  Kyodo:            {role: wire, aliases: [Kyodo]}
+  Yonhap:           {role: wire, aliases: [Yonhap]}
+  Anadolu:          {role: wire, aliases: [Anadolu Agency, Anadolu]}
+  Xinhua:           {role: primary_official, aliases: [Xinhua]}     # state agency
+  TASS:             {role: primary_official, aliases: [TASS]}       # state agency
+  IRNA:             {role: primary_official, aliases: [IRNA]}       # state agency
+  KCNA:             {role: primary_official, aliases: [KCNA]}       # state agency
+
+# Attribution phrases. "{alias}" is replaced by each origin alias. Case-insensitive.
+attribution_patterns:
+  - '\(\s*{alias}\s*\)'                                   # WASHINGTON (Reuters) -
+  - '\baccording to (?:a |an )?(?:report (?:by|from|in) )?(?:the )?{alias}\b'
+  - '\bciting (?:a |an )?(?:report (?:by|from|in) )?(?:the )?{alias}\b'
+  - '\btold {alias}\b'
+  - '\b{alias} (?:reported|reports|said, citing|news agency reported)\b'
+  - '\breporting by {alias}\b'
+  - '\b{alias} contributed to this report\b'
+  - '\bvia {alias}\b'
+  - '[-|]\s*{alias}\s*$'                                  # title suffix "... - Reuters"
+
+# Direct observation by the reporting outlet itself.
+firsthand_patterns:
+  - '\bour (?:correspondent|reporter)s?\b'
+  - '\b(?:at|from) the scene\b'
+  - '\bon the ground in\b'
+  - '\bwe (?:geolocated|verified|observed|confirmed)\b'
+  - '\bgeolocated (?:by|footage|video|imagery)\b'
+
+# The outlet withdraws its own earlier report. Story-level phrasing only: "Russia retracted
+# its offer" is news, not a retraction, and an official saying "it did not happen" is a denial.
+retraction_patterns:
+  - '\bretract(?:s|ed)? (?:its |their |our |the |a |an )?(?:earlier )?(?:story|report|article)\b'
+  - '\b(?:story|report|article) (?:has been |was )?(?:retracted|withdrawn)\b'
+  - '\bhas withdrawn (?:its |the )?(?:story|report|article)\b'
+  - '^\s*(?:retraction|KILL|WITHDRAWN)\b'
+
+reliable_roles: [primary_official, wire, independent_reporting, specialist_reporting]
+commentary_roles: [analysis]
+
+# Syndicated copies: same leading body text under different outlets.
+syndication_min_chars: 200
+syndication_similarity: 0.95
+
+thresholds:
+  confirmed_origins: 3        # >= 3 independent origins, >= 2 of them reliable
+  confirmed_reliable: 2       # (or: a primary official source + >= 1 other reliable origin)
+  probable_origins: 2

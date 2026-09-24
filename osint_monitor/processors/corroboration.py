@@ -20,6 +20,7 @@ from osint_monitor.core.database import (
     RawItem,
     Source,
 )
+from osint_monitor.core.models import ConfidenceClass
 from osint_monitor.processors.embeddings import (
     blob_to_embedding,
     cosine_similarity,
@@ -143,11 +144,14 @@ def compute_corroboration_score(session: Session, event_id: int) -> dict:
     """Compute multi-source corroboration score for an event.
 
     Returns a dict with:
-        - ``independent_sources``: count of distinct organisations/sources
+        - ``independent_sources``: independent origins (see processors.provenance)
+        - ``outlets``: distinct publishing sources, before collapsing derivative copies
         - ``source_diversity``: 0-1 float indicating type spread
         - ``admiralty_rating``: e.g. ``"B2"``
         - ``corroboration_level``: CONFIRMED / PROBABLE / POSSIBLE / DOUBTFUL / UNCONFIRMED
         - ``confidence``: 0-1 composite confidence
+        - ``confidence_class``: ConfidenceClass value from provenance
+        - ``provenance_flags``: ProvenanceFlag values, e.g. derivative_collapsed
     """
     # Gather all items + their sources for this event
     event_items = (
@@ -159,10 +163,13 @@ def compute_corroboration_score(session: Session, event_id: int) -> dict:
     if not event_items:
         return {
             "independent_sources": 0,
+            "outlets": 0,
             "source_diversity": 0.0,
             "admiralty_rating": "F6",
             "corroboration_level": "UNCONFIRMED",
             "confidence": 0.0,
+            "confidence_class": ConfidenceClass.UNVERIFIED.value,
+            "provenance_flags": [],
         }
 
     item_ids = [ei.item_id for ei in event_items]
@@ -178,7 +185,16 @@ def compute_corroboration_score(session: Session, event_id: int) -> dict:
             if source:
                 sources_by_id[item.source_id] = source
 
-    independent_count = len(source_ids)
+    # Independent origins, not outlets: wire copy republished by five outlets counts once,
+    # analysis never counts as confirmation.
+    provenance = None
+    try:
+        from osint_monitor.processors.provenance import assess_event
+        provenance = assess_event(session, event_id)
+        independent_count = provenance.independent_origins
+    except Exception as exc:
+        logger.warning(f"Provenance assessment failed for event {event_id}: {exc}")
+        independent_count = len(source_ids)
 
     # Determine reliability grades for each source
     source_grades = [
@@ -244,13 +260,19 @@ def compute_corroboration_score(session: Session, event_id: int) -> dict:
     except Exception:
         pass
 
+    if provenance and provenance.confidence_class == ConfidenceClass.DISPUTED:
+        has_contradictions = True
+
     return {
         "independent_sources": independent_count,
+        "outlets": len(source_ids),
         "source_diversity": round(diversity, 3),
         "admiralty_rating": admiralty_rating,
         "corroboration_level": corroboration_level,
         "confidence": round(confidence, 3),
         "has_contradictions": has_contradictions,
+        "confidence_class": provenance.confidence_class.value if provenance else None,
+        "provenance_flags": [f.value for f in provenance.flags] if provenance else [],
     }
 
 

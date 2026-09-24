@@ -26,6 +26,16 @@
 - `PolicyRanker.explain(reasons)` returns a short label string from `reason_labels`; no numbers reach the UI.
 - Not yet done: deriving `significance_class` / `significance_reasons` from the ranking and writing them to `events` (depends on the §2 migration).
 
+**2026-09-24 — Source provenance and confidence (Prompt 5), implemented in `osint_monitor/processors/provenance/`:**
+
+- `SourceRole` (`primary_official`, `wire`, `independent_reporting`, `specialist_reporting`, `analysis`, `osint`, `social`, `unknown`) replaces the §2.5 `source_role` draft values. Roles and origin groups live in `config/provenance.yaml` (per source name > sources.yaml category > collector type), not in new `sources` columns, so no migration is needed yet.
+- `EvidenceType` (`primary`, `firsthand`, `independent`, `derivative`, `commentary`) replaces the §1 `EvidenceRole` draft; `ItemStance` (`supports`, `denies`, `retracts`); `ProvenanceFlag` for exposed uncertainty (`derivative_collapsed`, `syndicated_copy`, `provenance_unknown`, `conflicting_official_statements`, `retracted`, …).
+- Corroboration counts **independent origins**: items attributing their report to a configured origin ("(Reuters)", "according to AP", "told Reuters", title suffix "- Reuters") or whose body text is a near-identical copy of an earlier item collapse into that origin; analysis never counts as confirmation. No citation-graph reconstruction.
+- `assess_confidence` → `ConfidenceAssessment` (`confidence_class`, origin summaries, per-item provenance, flags). It carries no significance; high significance + low confidence stays representable.
+- Retractions: story-level retraction phrasing by an origin makes its latest stance `retracts`; if no origin still supports, the assessment is `unverified` + `fully_retracted`. Denials come from items whose extracted claims are all denials.
+- `compute_corroboration_score` now reports origins as `independent_sources`, plus additive keys `outlets`, `confidence_class`, `provenance_flags`. The cached `Event.source_count` / `corroboration_level` therefore stop counting syndicated copies.
+- Not yet done: persisting `confidence_class` and per-item `evidence_role` (§2.1 / §2.4 migration); feeding `independent_origins` into `RankingInput` when the ranker is wired into the pipeline.
+
 ---
 
 ## 0. Decisions at a glance
