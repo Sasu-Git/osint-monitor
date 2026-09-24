@@ -274,8 +274,10 @@ def ensure_source(session: Session, name: str, source_type: str, url: str, credi
 def _run_single_collector(collector: BaseCollector, failures: list[str] | None = None) -> list[RawItemModel]:
     """Run a single collector and stamp source_type. Thread-safe.
     A failing collector is logged (and appended to ``failures``) and yields no items."""
+    from osint_monitor.core.watchdog import track_collector
     try:
-        items = collector.collect()
+        with track_collector(collector):
+            items = collector.collect()
         for item in items:
             if item.source_type == "rss" and collector.source_type != "rss":
                 item.source_type = collector.source_type

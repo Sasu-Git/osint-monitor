@@ -193,8 +193,12 @@ def _cmd_daemon():
     config = load_sources_config()
     tier_cfg = config.tiers
 
+    from osint_monitor.core.watchdog import arm_stack_dump, disarm_stack_dump, start_watchdog
+
     scheduler = create_scheduler()
     scheduler.start()
+    start_watchdog()      # logs collectors running > 2 min
+    arm_stack_dump()      # dumps all thread stacks to data/logs/daemon-stacks.log after 15 min without progress
 
     print("OSINT Monitor daemon started (tiered pipeline). Press Ctrl+C to stop.")
     print("Schedule:")
@@ -213,6 +217,7 @@ def _cmd_daemon():
         while True:
             time.sleep(60)
     except (KeyboardInterrupt, SystemExit):
+        disarm_stack_dump()
         scheduler.shutdown()
         print("\nDaemon stopped.")
 

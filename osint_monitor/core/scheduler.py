@@ -114,6 +114,8 @@ def _run_tier_job(tier: str):
         logger.error(f"[{tier}] Tier job failed: {e}")
     finally:
         lock.release()
+        from osint_monitor.core.watchdog import arm_stack_dump
+        arm_stack_dump()          # progress was made: restart the no-progress stack-dump timer
 
 
 def _run_analysis_job():
