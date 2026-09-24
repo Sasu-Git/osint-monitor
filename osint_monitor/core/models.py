@@ -173,6 +173,47 @@ class RoleClass(str, Enum):
     OTHER = "other"
 
 
+class SourceRole(str, Enum):
+    """What kind of publisher a source is (config/provenance.yaml)."""
+    PRIMARY_OFFICIAL = "primary_official"          # government, military, IO, court: the actor itself
+    WIRE = "wire"                                  # Reuters, AP, AFP ...
+    INDEPENDENT_REPORTING = "independent_reporting"  # general news outlets with own reporting
+    SPECIALIST_REPORTING = "specialist_reporting"  # trade / defense press
+    ANALYSIS = "analysis"                          # think tanks, op-eds, analysis sites
+    OSINT = "osint"                                # open-source investigators
+    SOCIAL = "social"                              # individual social accounts, channels
+    UNKNOWN = "unknown"
+
+
+class EvidenceType(str, Enum):
+    """How one item relates to the development it is evidence for."""
+    PRIMARY = "primary"            # official record of the action itself (readout, OFAC notice)
+    FIRSTHAND = "firsthand"        # reporter / investigator observed it directly
+    INDEPENDENT = "independent"    # own reporting, origin not traced further
+    DERIVATIVE = "derivative"      # repeats another origin's report (attribution or syndicated copy)
+    COMMENTARY = "commentary"      # analysis / opinion about the development
+
+
+class ItemStance(str, Enum):
+    SUPPORTS = "supports"
+    DENIES = "denies"
+    RETRACTS = "retracts"          # correction / retraction of the outlet's own earlier report
+
+
+class ProvenanceFlag(str, Enum):
+    PRIMARY_SOURCE = "primary_source"
+    SINGLE_ORIGIN = "single_origin"
+    DERIVATIVE_COLLAPSED = "derivative_collapsed"          # several items traced back to one origin
+    SYNDICATED_COPY = "syndicated_copy"                    # near-identical text across outlets
+    COMMENTARY_ONLY = "commentary_only"
+    PROVENANCE_UNKNOWN = "provenance_unknown"              # some items from sources with unknown role
+    LOW_RELIABILITY_ONLY = "low_reliability_only"
+    DENIED = "denied"
+    CONFLICTING_OFFICIAL_STATEMENTS = "conflicting_official_statements"
+    RETRACTED = "retracted"                                # an origin withdrew its report
+    FULLY_RETRACTED = "fully_retracted"                    # every supporting origin withdrew
+
+
 class RankReason(str, Enum):
     """Machine-readable reason a development moved up or down. Only reasons that
     actually changed the ranking are reported."""
@@ -337,6 +378,50 @@ class DevelopmentClassification(BaseModel):
     @classmethod
     def _blank_location_is_none(cls, value: Optional[str]) -> Optional[str]:
         return value.strip() or None if value else None
+
+
+class EvidenceItem(BaseModel):
+    """One source item as seen by the provenance stage."""
+    item_id: Optional[int] = None
+    source_name: str
+    source_category: Optional[str] = None     # sources.yaml category, if known
+    collector_type: Optional[str] = None      # Source.type: rss, twitter, sanctions ...
+    title: str = ""
+    text: str = ""
+    url: str = ""
+    published_at: Optional[datetime] = None
+    stance: ItemStance = ItemStance.SUPPORTS
+
+
+class ItemProvenance(BaseModel):
+    item_id: Optional[int] = None
+    source_name: str
+    source_role: SourceRole
+    evidence_type: EvidenceType
+    origin: str                               # who actually reported it; items sharing it count once
+    stance: ItemStance
+    derived_from: Optional[str] = None        # set when evidence_type is derivative
+    note: str = ""                            # how provenance was decided, for the evidence view
+
+
+class OriginSummary(BaseModel):
+    origin: str
+    role: SourceRole
+    evidence_types: list[EvidenceType]
+    sources: list[str]                        # outlets whose items trace back to this origin
+    item_count: int
+    stance: ItemStance                        # latest stance of this origin
+    reliable: bool
+
+
+class ConfidenceAssessment(BaseModel):
+    """How well-established a development is. Independent of how significant it is."""
+    confidence_class: ConfidenceClass
+    independent_origins: int                  # origins that support it with non-commentary evidence
+    reliable_origins: int
+    origins: list[OriginSummary] = Field(default_factory=list)
+    items: list[ItemProvenance] = Field(default_factory=list)
+    flags: list[ProvenanceFlag] = Field(default_factory=list)
 
 
 class RankingInput(BaseModel):

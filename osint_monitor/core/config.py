@@ -10,7 +10,7 @@ from pydantic_settings import BaseSettings
 
 from osint_monitor.core.models import (
     Concreteness, ConfidenceClass, DevelopmentStatus, EventDomain, EventType, InteractionMode,
-    RankReason, RoleClass, SignificanceClass, UncertaintyFlag,
+    RankReason, RoleClass, SignificanceClass, SourceRole, UncertaintyFlag,
 )
 
 
@@ -166,6 +166,46 @@ class RankingConfig(BaseModel):
         return {"->".join(p.strip() for p in k.split("->")): v for k, v in weights.items()}
 
 
+class SourceProfile(BaseModel):
+    role: Optional[SourceRole] = None
+    origin: Optional[str] = None              # origin group; defaults to the source name
+
+
+class OriginProfile(BaseModel):
+    role: SourceRole
+    aliases: list[str] = Field(default_factory=list)   # names as they appear in attributions
+
+
+class ConfidenceThresholds(BaseModel):
+    confirmed_origins: int = 3                # independent origins for CONFIRMED ...
+    confirmed_reliable: int = 2               # ... of which at least this many reliable
+    probable_origins: int = 2
+
+
+class ProvenanceConfig(BaseModel):
+    """Source roles and derivative-reporting detection (config/provenance.yaml)."""
+    sources: dict[str, SourceProfile] = Field(default_factory=dict)      # by source name, case-insensitive
+    category_roles: dict[str, SourceRole] = Field(default_factory=dict)  # sources.yaml category -> role
+    collector_roles: dict[str, SourceRole] = Field(default_factory=dict) # Source.type -> role
+    origins: dict[str, OriginProfile] = Field(default_factory=dict)      # attributable origins (wires ...)
+    attribution_patterns: list[str] = Field(default_factory=list)        # regex, "{alias}" placeholder
+    firsthand_patterns: list[str] = Field(default_factory=list)
+    retraction_patterns: list[str] = Field(default_factory=list)
+    reliable_roles: list[SourceRole] = Field(default_factory=list)
+    commentary_roles: list[SourceRole] = Field(default_factory=list)
+    syndication_min_chars: int = 200          # compare this many leading characters of body text
+    syndication_similarity: float = 0.95      # 0-1; at or above: treated as the same copy
+    thresholds: ConfidenceThresholds = Field(default_factory=ConfidenceThresholds)
+
+    @field_validator("attribution_patterns")
+    @classmethod
+    def _has_alias_placeholder(cls, patterns: list[str]) -> list[str]:
+        for p in patterns:
+            if "{alias}" not in p:
+                raise ValueError(f"attribution pattern needs an {{alias}} placeholder: {p!r}")
+        return patterns
+
+
 class AppSettings(BaseSettings):
     """App-level settings from environment variables."""
     db_url: str = f"sqlite:///{DATA_DIR / 'osint.db'}"
@@ -229,6 +269,14 @@ def load_ranking_config(path: Path | None = None) -> RankingConfig:
     with open(path, encoding="utf-8") as f:
         raw = yaml.safe_load(f) or {}
     return RankingConfig(**raw)
+
+
+def load_provenance_config(path: Path | None = None) -> ProvenanceConfig:
+    """Load and validate provenance.yaml."""
+    path = path or CONFIG_DIR / "provenance.yaml"
+    with open(path, encoding="utf-8") as f:
+        raw = yaml.safe_load(f) or {}
+    return ProvenanceConfig(**raw)
 
 
 def load_prompt(name: str) -> str:
