@@ -415,7 +415,10 @@ def persist_clusters(session: Session, clusters: list[dict]) -> int:
                         similarity_score=1.0,
                     ))
                     new_item_ids.append(item_id)
-            existing_event.last_updated_at = datetime.utcnow()
+            if new_item_ids:
+                # Re-clustering the same items is not an update: downstream stages
+                # re-classify and treat the event as fresh when this moves.
+                existing_event.last_updated_at = datetime.utcnow()
             # Update severity and region if the new cluster has better values
             if cluster.get("severity", 0.0) > existing_event.severity:
                 existing_event.severity = cluster["severity"]

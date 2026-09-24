@@ -57,6 +57,18 @@ def test_only_new_or_changed_events_are_reclassified(session):
     assert classify_events(session, RuleBasedClassifier(), now=NOW + timedelta(minutes=10))["classified"] == 1
 
 
+def test_reclustering_the_same_items_does_not_mark_the_event_changed(session):
+    from osint_monitor.processors.clustering import persist_clusters
+
+    event = add_event(session, "Putin meets Xi in Beijing", "Putin and Xi hold talks in Beijing")
+    item_ids = [ei.item_id for ei in session.query(EventItem).filter_by(event_id=event.id)]
+    classify_events(session, RuleBasedClassifier(), now=NOW)
+    before = event.last_updated_at
+    assert persist_clusters(session, [{"item_ids": item_ids, "summary": "x"}]) == 0
+    assert event.last_updated_at == before
+    assert classify_events(session, RuleBasedClassifier(), now=NOW)["candidates"] == 0
+
+
 class FlakyClassifier:
     name = "flaky"
 
