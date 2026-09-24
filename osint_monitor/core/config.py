@@ -5,10 +5,13 @@ from pathlib import Path
 from typing import Optional
 
 import yaml
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, field_validator
 from pydantic_settings import BaseSettings
 
-from osint_monitor.core.models import Concreteness, EventDomain, EventType, InteractionMode
+from osint_monitor.core.models import (
+    Concreteness, ConfidenceClass, DevelopmentStatus, EventDomain, EventType, InteractionMode,
+    RankReason, RoleClass, SignificanceClass, UncertaintyFlag,
+)
 
 
 BASE_DIR = Path(__file__).parent.parent.parent
@@ -94,6 +97,75 @@ class DevelopmentTypeDefaults(BaseModel):
     interaction_mode: InteractionMode
 
 
+class CorroborationPolicy(BaseModel):
+    per_extra_source: float = 0.0          # bonus per independent source beyond the first
+    max_bonus: float = 0.0
+    widely_reported_sources: int = 3       # from this many independent sources: 'widely reported'
+
+
+class RedundancyPolicy(BaseModel):
+    per_repeat: dict[Concreteness, float] = Field(default_factory=dict)
+    default_per_repeat: float = 0.0
+    max_penalty: float = 0.0
+
+
+class GeographyPolicy(BaseModel):
+    priority_countries: dict[str, float] = Field(default_factory=dict)   # name -> bonus, case-insensitive
+    priority_regions: dict[str, float] = Field(default_factory=dict)
+    countries_included: int = 2            # a bilateral development involves two countries at no bonus
+    per_extra_country: float = 0.0
+    max_multinational_bonus: float = 0.0
+    global_organizations: list[str] = Field(default_factory=list)
+    global_organization_bonus: float = 0.0
+
+
+class RecencyPolicy(BaseModel):
+    grace_hours: float = 12.0
+    penalty_per_day: float = 0.0
+    max_penalty: float = 0.0
+
+
+class RankingConfig(BaseModel):
+    """Editorial ranking policy (config/ranking.yaml). Unknown enum keys fail validation."""
+    event_type_weights: dict[EventType, float]
+    interaction_mode_weights: dict[InteractionMode, float] = Field(default_factory=dict)
+    concreteness_weights: dict[Concreteness, float] = Field(default_factory=dict)
+    significance_weights: dict[SignificanceClass, float] = Field(default_factory=dict)
+    role_weights: dict[RoleClass, float] = Field(default_factory=dict)
+    senior_role_threshold: float = 3.0
+    confidence_weights: dict[ConfidenceClass, float] = Field(default_factory=dict)
+    corroboration: CorroborationPolicy = Field(default_factory=CorroborationPolicy)
+    uncertainty_penalties: dict[UncertaintyFlag, float] = Field(default_factory=dict)
+    routine_commentary_penalty: float = 0.0
+    redundancy: RedundancyPolicy = Field(default_factory=RedundancyPolicy)
+    overshadow_penalty: float = 0.0
+    novelty_bonus: float = 0.0
+    status_weights: dict[DevelopmentStatus, float] = Field(default_factory=dict)
+    status_transition_weights: dict[str, float] = Field(default_factory=dict)   # "emerging->developing"
+    geography: GeographyPolicy = Field(default_factory=GeographyPolicy)
+    recency: RecencyPolicy = Field(default_factory=RecencyPolicy)
+    reason_labels: dict[RankReason, str] = Field(default_factory=dict)
+
+    @field_validator("event_type_weights")
+    @classmethod
+    def _all_event_types(cls, weights: dict[EventType, float]) -> dict[EventType, float]:
+        missing = set(EventType) - set(weights)
+        if missing:
+            raise ValueError(f"event_type_weights missing: {sorted(m.value for m in missing)}")
+        return weights
+
+    @field_validator("status_transition_weights")
+    @classmethod
+    def _valid_transitions(cls, weights: dict[str, float]) -> dict[str, float]:
+        for key in weights:
+            parts = key.split("->")
+            if len(parts) != 2:
+                raise ValueError(f"status transition must look like 'old->new', got {key!r}")
+            for p in parts:
+                DevelopmentStatus(p.strip())
+        return {"->".join(p.strip() for p in k.split("->")): v for k, v in weights.items()}
+
+
 class AppSettings(BaseSettings):
     """App-level settings from environment variables."""
     db_url: str = f"sqlite:///{DATA_DIR / 'osint.db'}"
@@ -149,6 +221,14 @@ def load_development_types(path: Path | None = None) -> dict[EventType, Developm
     with open(path) as f:
         raw = yaml.safe_load(f) or {}
     return {EventType(k): DevelopmentTypeDefaults(**v) for k, v in raw.items()}
+
+
+def load_ranking_config(path: Path | None = None) -> RankingConfig:
+    """Load and validate ranking.yaml."""
+    path = path or CONFIG_DIR / "ranking.yaml"
+    with open(path, encoding="utf-8") as f:
+        raw = yaml.safe_load(f) or {}
+    return RankingConfig(**raw)
 
 
 def load_prompt(name: str) -> str:

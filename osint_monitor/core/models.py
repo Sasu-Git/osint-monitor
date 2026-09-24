@@ -143,6 +143,69 @@ class UncertaintyFlag(str, Enum):
     CLASSIFIER_FALLBACK = "classifier_fallback"            # primary classifier failed, fallback used
 
 
+class ConfidenceClass(str, Enum):
+    CONFIRMED = "confirmed"      # >=3 independent sources incl. >=2 reliable, or primary official source + 1 independent
+    PROBABLE = "probable"        # >=2 independent sources
+    POSSIBLE = "possible"        # 1 reliable source
+    DISPUTED = "disputed"        # sources contradict each other
+    UNVERIFIED = "unverified"    # 1 low-reliability source or nothing usable
+
+
+class DevelopmentStatus(str, Enum):
+    """Lifecycle only -- confirmation lives in ConfidenceClass."""
+    EMERGING = "emerging"
+    DEVELOPING = "developing"
+    CONCLUDED = "concluded"
+    SUPERSEDED = "superseded"    # terminal
+
+
+class RoleClass(str, Enum):
+    """Office an actor holds. Seniority order comes from config/ranking.yaml, not from the enum."""
+    HEAD_OF_STATE = "head_of_state"
+    HEAD_OF_GOVERNMENT = "head_of_government"
+    FOREIGN_MINISTER = "foreign_minister"
+    DEFENSE_MINISTER = "defense_minister"
+    FINANCE_MINISTER = "finance_minister"
+    SENIOR_DIPLOMAT = "senior_diplomat"              # envoys, ambassadors to major posts, deputy FMs
+    SENIOR_MILITARY = "senior_military"              # chiefs of staff, combatant commanders
+    INTERNATIONAL_ORG_LEADER = "international_org_leader"
+    SPOKESPERSON = "spokesperson"
+    OTHER = "other"
+
+
+class RankReason(str, Enum):
+    """Machine-readable reason a development moved up or down. Only reasons that
+    actually changed the ranking are reported."""
+    HIGH_SIGNIFICANCE = "high_significance"
+    SENIOR_ACTOR = "senior_actor"
+    PHYSICAL_INTERACTION = "physical_interaction"
+    REMOTE_INTERACTION = "remote_interaction"
+    CONCRETE_ACTION = "concrete_action"
+    FORMAL_DECISION = "formal_decision"
+    NEW_POLICY = "new_policy"
+    AGREEMENT_REACHED = "agreement_reached"
+    INDEPENDENTLY_CONFIRMED = "independently_confirmed"
+    WIDELY_REPORTED = "widely_reported"
+    NEW_DEVELOPMENT = "new_development"
+    STATUS_CHANGE = "status_change"
+    PRIORITY_GEOGRAPHY = "priority_geography"
+    MULTINATIONAL = "multinational"
+    GLOBAL_INSTITUTION = "global_institution"
+    # demotions
+    ROUTINE_COMMENTARY = "routine_commentary"
+    RHETORIC_ONLY = "rhetoric_only"
+    SINGLE_SOURCE = "single_source"
+    UNCONFIRMED_REPORT = "unconfirmed_report"
+    DISPUTED = "disputed"
+    WEAK_EVIDENCE = "weak_evidence"
+    DUPLICATE_COMMENTARY_PENALTY = "duplicate_commentary_penalty"
+    REPEATED_COVERAGE_PENALTY = "repeated_coverage_penalty"
+    OVERSHADOWED_BY_CONCRETE = "overshadowed_by_concrete"
+    CONCLUDED = "concluded"
+    SUPERSEDED = "superseded"
+    STALE = "stale"
+
+
 # ---------------------------------------------------------------------------
 # Pipeline data contracts
 # ---------------------------------------------------------------------------
@@ -274,6 +337,31 @@ class DevelopmentClassification(BaseModel):
     @classmethod
     def _blank_location_is_none(cls, value: Optional[str]) -> Optional[str]:
         return value.strip() or None if value else None
+
+
+class RankingInput(BaseModel):
+    """Everything the ranker looks at for one development: the classification plus
+    corroboration, lifecycle and history facts supplied by the caller."""
+    development_id: Optional[int] = None
+    classification: DevelopmentClassification
+    confidence: ConfidenceClass = ConfidenceClass.UNVERIFIED
+    independent_sources: int = 0
+    actor_roles: list[RoleClass] = Field(default_factory=list)
+    status: DevelopmentStatus = DevelopmentStatus.EMERGING
+    previous_status: Optional[DevelopmentStatus] = None   # set when the status changed this run
+    topic_key: Optional[str] = None      # situation slug / topic; groups repeats and overshadowing
+    prior_similar_count: int = 0         # same topic + event type already seen before this batch
+    occurred_at: Optional[datetime] = None
+    region: Optional[str] = None
+
+
+class RankedDevelopment(BaseModel):
+    """Ranker output. ``score`` is an internal sort key only -- never show it in the UI."""
+    position: int                        # 1 = top
+    development_id: Optional[int] = None
+    input_index: int                     # index into the list given to rank()
+    score: float
+    reasons: list[RankReason] = Field(default_factory=list)   # strongest effect first
 
 
 class AlertModel(BaseModel):
