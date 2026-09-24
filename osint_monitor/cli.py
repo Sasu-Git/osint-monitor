@@ -53,6 +53,14 @@ def main():
     # export: dump DB to JSON for git tracking
     subparsers.add_parser("export", help="Export events, entities, claims, briefings to data/export/")
 
+    # inspect: debugging view of events (clusters, principals, regions, ranking)
+    sub_inspect = subparsers.add_parser("inspect", help="Show event clusters with diagnostics")
+    sub_inspect.add_argument("--event", type=int, default=None, help="Show one event in full")
+    sub_inspect.add_argument("--sort", choices=["rank", "size", "recent"], default="rank")
+    sub_inspect.add_argument("--limit", type=int, default=10)
+    sub_inspect.add_argument("--full", action="store_true", help="Include entities, region scores and titles")
+    sub_inspect.add_argument("--warnings-only", action="store_true", help="Only events with diagnostic warnings")
+
     # smoke: end-to-end check on a temporary database
     sub_smoke = subparsers.add_parser("smoke", help="Run the local pipeline on fixtures in a temporary database")
     sub_smoke.add_argument("--keep", action="store_true", help="Keep the temporary database for inspection")
@@ -128,6 +136,8 @@ def _dispatch(args):
         _cmd_status()
     elif args.command == "export":
         _cmd_export()
+    elif args.command == "inspect":
+        _cmd_inspect(args)
     elif args.command == "smoke":
         from osint_monitor.smoke import main as smoke_main
         smoke_main(["--keep"] if args.keep else [])
@@ -300,6 +310,35 @@ def _cmd_status():
         print("No daemon running (jobs only visible when daemon is active).")
 
 
+def _cmd_inspect(args):
+    from osint_monitor.core.config import load_sources_config
+    from osint_monitor.core.database import Event, get_session, init_db
+    from osint_monitor.processors.diagnostics import describe_event, format_event, select_events
+
+    init_db()
+    session = get_session()
+    regions = load_sources_config().regions
+    if args.event is not None:
+        event = session.get(Event, args.event)
+        if event is None:
+            print(f"No event {args.event}")
+        else:
+            print(format_event(describe_event(session, event, regions), full=True))
+        session.close()
+        return
+    limit = args.limit if not args.warnings_only else 10_000
+    shown = 0
+    for event in select_events(session, sort=args.sort, limit=limit):
+        d = describe_event(session, event, regions)
+        if args.warnings_only and not d["warnings"]:
+            continue
+        print(format_event(d, full=args.full) + "\n")
+        shown += 1
+        if shown >= args.limit:
+            break
+    session.close()
+
+
 def _cmd_export():
     import json
     from pathlib import Path
@@ -330,6 +369,15 @@ def _cmd_export():
             "first_reported_at": ev.first_reported_at.isoformat() if ev.first_reported_at else None,
             "last_updated_at": ev.last_updated_at.isoformat() if ev.last_updated_at else None,
             "situation_id": ev.situation_id,
+            "principal_actors": sorted({ee.entity.canonical_name for ee in ev.event_entities
+                                        if ee.is_principal and ee.entity}),
+            "event_type": ev.event_type,
+            "event_domain": ev.event_domain,
+            "concreteness": ev.concreteness,
+            "significance_class": ev.significance_class,
+            "confidence_class": ev.confidence_class,
+            "classification_source": ev.classification_source,
+            "rank_reasons": ev.rank_reasons or [],
         })
     (export_dir / "events.json").write_text(json.dumps(events, indent=2, ensure_ascii=False), encoding="utf-8")
     print(f"  Exported {len(events)} events")

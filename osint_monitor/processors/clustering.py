@@ -394,8 +394,10 @@ def _assign_region(
     return ranked[0][0]
 
 
-def persist_clusters(session: Session, clusters: list[dict]):
-    """Save clusters as Event records in the database."""
+def persist_clusters(session: Session, clusters: list[dict]) -> int:
+    """Save clusters as Event records in the database. Returns the number of new events
+    (clusters that overlap an existing event extend it instead)."""
+    created = 0
     for cluster in clusters:
         # Check if this cluster overlaps with an existing event
         existing_event = _find_overlapping_event(session, cluster["item_ids"])
@@ -435,6 +437,7 @@ def persist_clusters(session: Session, clusters: list[dict]):
             )
             session.add(event)
             session.flush()
+            created += 1
 
             for item_id in cluster["item_ids"]:
                 session.add(EventItem(
@@ -451,6 +454,7 @@ def persist_clusters(session: Session, clusters: list[dict]):
             _link_claims_to_event(session, event.id, cluster["item_ids"])
 
     session.commit()
+    return created
 
 
 def _link_claims_to_event(session: Session, event_id: int, item_ids: list[int]):

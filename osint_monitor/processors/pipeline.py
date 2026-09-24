@@ -418,10 +418,11 @@ def run_post_processing(session: Session, quiet: bool = False, offline: bool = F
     def _clustering():
         from osint_monitor.processors.clustering import cluster_recent_items, persist_clusters
         clusters = cluster_recent_items(session)
+        stats["clusters_found"] = len(clusters)
         if clusters:
-            persist_clusters(session, clusters)
-            stats["events_created"] = len(clusters)
-            _print(f"  Created {len(clusters)} event clusters")
+            created = persist_clusters(session, clusters)
+            stats["events_created"] = created
+            _print(f"  {len(clusters)} clusters: {created} new events, {len(clusters) - created} extended existing ones")
         else:
             _print("  No clusters formed")
     _stage("clustering", _clustering)
@@ -656,7 +657,8 @@ def run_pipeline(db_url: str | None = None) -> dict:
         print(f"  New items: {stats['new_items']}")
         print(f"  Duplicates: {stats['duplicates']}")
         print(f"  Entities: {stats['entities_extracted']}")
-        print(f"  Events: {stats.get('events_created', 0)}")
+        print(f"  Clusters found: {stats.get('clusters_found', 0)} "
+              f"(new events: {stats.get('events_created', 0)})")
         print(f"  Geocoded: {stats.get('geocoded', 0)}")
         print(f"  I&W elevated: {stats.get('iw_elevated', 0)}")
         print(f"  Fusion correlations: {stats.get('fusion_correlations', 0)}")

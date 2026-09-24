@@ -2,8 +2,8 @@
 
     python main.py smoke
 
-Runs migrations, entity seeding, NLP, embeddings, clustering, classification,
-corroboration and situation grouping on a small fixed set of articles -- no
+Runs migrations, entity seeding, NLP, embeddings, clustering, principal actors,
+classification, corroboration, ranking and situation grouping on a small fixed set of articles -- no
 collectors, no LLM, no network stages (full-text fetching and geocoding are
 skipped). Needs the installed spaCy and sentence-transformers models; the
 embedding model is downloaded to the Hugging Face cache on first use.
@@ -128,8 +128,6 @@ def _run(report: _Report, db_url: str, workdir: Path) -> None:
         Entity, Event, EventItem, RawItem, Situation, get_engine, get_session, init_db, reset_engine,
     )
     from osint_monitor.core.migrations import current_version, head_version
-    from osint_monitor.processors.classification import RuleBasedClassifier
-    from osint_monitor.processors.classification.context import build_cluster_context
     from osint_monitor.processors.entity_resolver import EntityResolver
     from osint_monitor.processors.pipeline import process_new_items, run_post_processing
 
@@ -198,12 +196,27 @@ def _run(report: _Report, db_url: str, workdir: Path) -> None:
             raise SmokeFailure(f"events {mixed} merge articles from different fixture stories")
     report.check("Event clustering", clustering)
 
+    def principals():
+        stage("principals")()
+        missing = [e.id for e in session.query(Event)
+                   if not any(ee.is_principal for ee in e.event_entities)]
+        if missing:
+            raise SmokeFailure(f"events {missing} have no principal actors")
+    report.check("Principal actors", principals)
+
     def classification():
-        clf = RuleBasedClassifier()
-        for event in session.query(Event):
-            clf.classify(build_cluster_context(session, event.id))
+        stage("classification")()
+        unclassified = [e.id for e in session.query(Event) if e.classified_at is None or not e.event_type]
+        if unclassified:
+            raise SmokeFailure(f"events {unclassified} not classified")
     report.check("Classification", classification)
     report.check("Corroboration", stage("corroboration"))
+
+    def ranking():
+        stage("ranking")()
+        if any(e.rank_score is None for e in session.query(Event)):
+            raise SmokeFailure("some events were not ranked")
+    report.check("Ranking", ranking)
 
     def situations():
         stage("situations")()
