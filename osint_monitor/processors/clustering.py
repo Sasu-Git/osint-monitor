@@ -3,11 +3,13 @@
 from __future__ import annotations
 
 import logging
+import re
 from collections import Counter, defaultdict
 from datetime import datetime, timedelta
 
 import hdbscan
 import numpy as np
+from rapidfuzz import fuzz
 from sqlalchemy.orm import Session, joinedload
 
 from osint_monitor.core.config import load_sources_config
@@ -22,6 +24,16 @@ logger = logging.getLogger(__name__)
 
 DEFAULT_WINDOW_HOURS = 48
 MIN_CLUSTER_SIZE = 2
+
+# Cluster refinement (see refine_cluster). Calibrated on live data: reports of the same
+# development from different outlets score 0.55-0.67 cosine; different developments on
+# the same topic score <= 0.51; templated single-source feeds (sanctions lists, stock
+# moves, ADS-B snapshots, seismic) score 0.45-0.85 among themselves.
+LINK_SIMILARITY = 0.53             # cross-source link: midpoint between 0.51 (different) and 0.55 (same)
+SAME_SOURCE_TITLE_RATIO = 90       # same outlet: only near-identical headlines (story updates) link
+MEMBER_SIMILARITY = 0.45           # minimum cosine to the cluster centroid after linking
+MAX_LINK_HOURS = 72
+LARGE_CLUSTER_WARNING = 10
 
 
 def cluster_recent_items(
@@ -95,9 +107,97 @@ def cluster_recent_items(
     # Re-cluster large clusters to decompose mega-events into sub-events
     clusters = _split_large_clusters(clusters, item_ids, X)
 
-    logger.info(f"Found {len(clusters)} clusters from {len(items)} items")
+    # HDBSCAN proposes; the link graph decides (cuts topical and templated-feed merges)
+    by_id = {item.id: item for item in items}
+    vectors = {item_id: X[idx] for idx, item_id in enumerate(item_ids)}
+    refined: dict[int, list[int]] = {}
+    for ids in clusters.values():
+        for part in refine_cluster([_ClusterMember.of(by_id[i], vectors[i]) for i in ids], min_cluster_size):
+            refined[len(refined)] = part
+    # HDBSCAN labels small or sparse batches as noise; the same strict links recover
+    # multi-outlet reports of one development among them
+    clustered = {i for part in refined.values() for i in part}
+    noise = [_ClusterMember.of(by_id[i], vectors[i]) for i in item_ids if i not in clustered]
+    noise = _attach_to_clusters(noise, refined, by_id, vectors)
+    rescued = refine_cluster(noise, min_cluster_size)
+    for part in rescued:
+        refined[len(refined)] = part
+    for part in refined.values():
+        if len(part) > LARGE_CLUSTER_WARNING:
+            logger.warning(f"Large event cluster: {len(part)} items (first: {by_id[part[0]].title[:80]!r})")
+    logger.info(f"Found {len(refined)} clusters from {len(items)} items "
+                f"({len(clusters)} HDBSCAN candidates, {len(rescued)} recovered from noise)")
 
-    return _build_cluster_summaries(session, clusters)
+    return _build_cluster_summaries(session, refined)
+
+
+class _ClusterMember:
+    __slots__ = ("id", "source_id", "title", "time", "vector")
+
+    def __init__(self, id, source_id, title, time, vector):
+        self.id, self.source_id, self.title, self.time, self.vector = id, source_id, title, time, vector
+
+    @classmethod
+    def of(cls, item: RawItem, vector: np.ndarray) -> "_ClusterMember":
+        return cls(item.id, item.source_id, item.title or "", item.published_at or item.fetched_at, vector)
+
+
+def _cosine(a: np.ndarray, b: np.ndarray) -> float:
+    denom = float(np.linalg.norm(a) * np.linalg.norm(b))
+    return float(np.dot(a, b)) / denom if denom else 0.0
+
+
+def _linked(a: _ClusterMember, b: _ClusterMember) -> bool:
+    if a.time and b.time and abs((a.time - b.time).total_seconds()) > MAX_LINK_HOURS * 3600:
+        return False
+    if a.source_id == b.source_id:
+        return fuzz.ratio(a.title.lower(), b.title.lower()) >= SAME_SOURCE_TITLE_RATIO
+    return _cosine(a.vector, b.vector) >= LINK_SIMILARITY
+
+
+def _attach_to_clusters(noise: list[_ClusterMember], clusters: dict[int, list[int]],
+                        by_id: dict, vectors: dict) -> list[_ClusterMember]:
+    """Add each noise item to the cluster it links to and sits closest to; return the rest."""
+    members = {label: [_ClusterMember.of(by_id[i], vectors[i]) for i in ids] for label, ids in clusters.items()}
+    centroids = {label: np.mean([m.vector for m in ms], axis=0) for label, ms in members.items()}
+    left = []
+    for item in noise:
+        best, best_sim = None, MEMBER_SIMILARITY
+        for label, ms in members.items():
+            sim = _cosine(item.vector, centroids[label])
+            if sim >= best_sim and any(_linked(item, m) for m in ms):
+                best, best_sim = label, sim
+        if best is None:
+            left.append(item)
+        else:
+            clusters[best].append(item.id)
+    return left
+
+
+def refine_cluster(members: list[_ClusterMember], min_size: int = MIN_CLUSTER_SIZE) -> list[list[int]]:
+    """Split a candidate cluster into connected components of linked items, then drop
+    members far from their component's centroid. Components below ``min_size`` vanish."""
+    remaining = list(range(len(members)))
+    parts: list[list[int]] = []
+    while remaining:
+        stack, component = [remaining.pop(0)], []
+        while stack:
+            i = stack.pop()
+            component.append(i)
+            linked = [j for j in remaining if _linked(members[i], members[j])]
+            for j in linked:
+                remaining.remove(j)
+            stack.extend(linked)
+        if len(component) >= min_size:
+            parts.append(component)
+
+    result = []
+    for component in parts:
+        centroid = np.mean([members[i].vector for i in component], axis=0)
+        kept = [i for i in component if _cosine(members[i].vector, centroid) >= MEMBER_SIMILARITY]
+        if len(kept) >= min_size:
+            result.append([members[i].id for i in kept])
+    return result
 
 
 def _split_large_clusters(
@@ -161,11 +261,9 @@ def _split_large_clusters(
             for sub_ids in sub_clusters.values():
                 result[next_label] = sub_ids
                 next_label += 1
-            # Assign noise items to the nearest sub-cluster
+            # Noise items stay out: dumping them into the largest sub-cluster built mega-events
             if noise_items:
-                # Just put them in the largest sub-cluster
-                largest_key = max(result, key=lambda k: len(result[k]))
-                result[largest_key].extend(noise_items)
+                logger.debug(f"Dropped {len(noise_items)} noise items when splitting a cluster of {len(ids)}")
 
     return result
 
@@ -253,29 +351,47 @@ def _get_extracted_entities_for_item(
     return result
 
 
+REGION_TITLE_WEIGHT = 3
+REGION_BODY_WEIGHT = 1
+REGION_MIN_SCORE = 2        # a single incidental body mention is not enough
+
+
+def _keyword_pattern(keyword: str) -> re.Pattern:
+    """Whole-word match; all-caps acronyms (PLA, PLAN, IRGC) are case-sensitive so that
+    'plan' or 'place' never count as China."""
+    flags = 0 if keyword.isupper() else re.IGNORECASE
+    return re.compile(rf"(?<!\w){re.escape(keyword)}(?!\w)", flags)
+
+
+def region_scores(items: list[RawItem], regions: dict) -> Counter:
+    """Per region: headline hits weigh more than body hits; each item counts once per field."""
+    patterns = {name: [_keyword_pattern(k) for k in cfg.keywords] for name, cfg in regions.items()}
+    scores: Counter = Counter()
+    for item in items:
+        for text, weight in ((item.title or "", REGION_TITLE_WEIGHT), (item.content or "", REGION_BODY_WEIGHT)):
+            for name, pats in patterns.items():
+                if any(p.search(text) for p in pats):
+                    scores[name] += weight
+    return scores
+
+
 def _assign_region(
     items: list[RawItem],
     regions: dict,
 ) -> str | None:
-    """Assign region by scanning item texts for region keywords.
+    """Region whose keywords dominate the cluster's headlines (and, less, bodies).
 
-    Returns the most common matching region, or None.
+    Returns None when no region reaches REGION_MIN_SCORE or two regions tie:
+    mixed-region reporting stays unlabelled rather than taking the first match.
     """
     if not regions:
         return None
-
-    region_counts: Counter = Counter()
-    for item in items:
-        text_lower = f"{item.title or ''} {item.content or ''}".lower()
-        for region_name, region_cfg in regions.items():
-            for keyword in region_cfg.keywords:
-                if keyword.lower() in text_lower:
-                    region_counts[region_name] += 1
-                    break  # one match per region per item is enough
-
-    if region_counts:
-        return region_counts.most_common(1)[0][0]
-    return None
+    ranked = region_scores(items, regions).most_common(2)
+    if not ranked or ranked[0][1] < REGION_MIN_SCORE:
+        return None
+    if len(ranked) > 1 and ranked[1][1] == ranked[0][1]:
+        return None
+    return ranked[0][0]
 
 
 def persist_clusters(session: Session, clusters: list[dict]):
