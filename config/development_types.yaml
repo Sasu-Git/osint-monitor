@@ -1,0 +1,28 @@
+# Default attributes per development type (editorial policy).
+# Keys must match osint_monitor.core.models.EventType (a test enforces this).
+# Classifiers start from these defaults and override per development.
+
+bilateral_meeting:     {domain: diplomacy,     concreteness: action,      interaction_mode: unknown}
+multilateral_meeting:  {domain: diplomacy,     concreteness: action,      interaction_mode: unknown}
+summit:                {domain: diplomacy,     concreteness: action,      interaction_mode: physical}
+negotiation:           {domain: diplomacy,     concreteness: negotiation, interaction_mode: unknown}
+diplomatic_visit:      {domain: diplomacy,     concreteness: action,      interaction_mode: physical}
+agreement:             {domain: diplomacy,     concreteness: agreement,   interaction_mode: unknown}
+treaty:                {domain: institutional, concreteness: agreement,   interaction_mode: written}
+sanctions:             {domain: economic,      concreteness: decision,    interaction_mode: none}
+military_action:       {domain: military,      concreteness: action,      interaction_mode: none}
+deployment:            {domain: military,      concreteness: action,      interaction_mode: none}
+military_exercise:     {domain: military,      concreteness: action,      interaction_mode: none}
+ceasefire:             {domain: security,      concreteness: agreement,   interaction_mode: unknown}
+arms_transfer:         {domain: military,      concreteness: decision,    interaction_mode: none}
+election:              {domain: political,     concreteness: action,      interaction_mode: none}
+appointment:           {domain: political,     concreteness: decision,    interaction_mode: none}
+resignation:           {domain: political,     concreteness: decision,    interaction_mode: none}
+policy_change:         {domain: political,     concreteness: decision,    interaction_mode: none}
+economic_action:       {domain: economic,      concreteness: decision,    interaction_mode: none}
+significant_statement: {domain: diplomacy,     concreteness: declaration, interaction_mode: none}
+threat:                {domain: security,      concreteness: declaration, interaction_mode: none}
+warning:               {domain: security,      concreteness: declaration, interaction_mode: none}
+commentary:            {domain: political,     concreteness: commentary,  interaction_mode: none}
+other:                 {domain: unknown,       concreteness: unknown,     interaction_mode: unknown}
+unknown:               {domain: unknown,       concreteness: unknown,     interaction_mode: unknown}

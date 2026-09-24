@@ -4,7 +4,7 @@ from datetime import datetime
 from enum import Enum
 from typing import Optional
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, field_validator
 
 
 class EntityType(str, Enum):
@@ -54,6 +54,93 @@ class EntityRole(str, Enum):
     SUBJECT = "SUBJECT"
     OBJECT = "OBJECT"
     LOCATION = "LOCATION"
+
+
+# ---------------------------------------------------------------------------
+# Development taxonomy (see docs/domain-model.md)
+#
+# OTHER   = a clear development that fits no category.
+# UNKNOWN = the evidence is insufficient to decide.
+# ---------------------------------------------------------------------------
+
+class EventType(str, Enum):
+    # Diplomacy
+    BILATERAL_MEETING = "bilateral_meeting"   # any direct exchange; mode in InteractionMode
+    MULTILATERAL_MEETING = "multilateral_meeting"
+    SUMMIT = "summit"
+    NEGOTIATION = "negotiation"
+    DIPLOMATIC_VISIT = "diplomatic_visit"
+    AGREEMENT = "agreement"
+    TREATY = "treaty"
+    # Coercion / security
+    SANCTIONS = "sanctions"
+    MILITARY_ACTION = "military_action"
+    DEPLOYMENT = "deployment"
+    MILITARY_EXERCISE = "military_exercise"
+    CEASEFIRE = "ceasefire"
+    ARMS_TRANSFER = "arms_transfer"
+    # Political / institutional
+    ELECTION = "election"
+    APPOINTMENT = "appointment"
+    RESIGNATION = "resignation"
+    POLICY_CHANGE = "policy_change"
+    ECONOMIC_ACTION = "economic_action"
+    # Rhetoric
+    SIGNIFICANT_STATEMENT = "significant_statement"
+    THREAT = "threat"
+    WARNING = "warning"
+    COMMENTARY = "commentary"
+    # Fallbacks
+    OTHER = "other"
+    UNKNOWN = "unknown"
+
+
+class EventDomain(str, Enum):
+    DIPLOMACY = "diplomacy"
+    MILITARY = "military"            # state armed forces
+    SECURITY = "security"            # terrorism, cyber, policing, intelligence
+    POLITICAL = "political"
+    ECONOMIC = "economic"
+    HUMANITARIAN = "humanitarian"
+    INSTITUTIONAL = "institutional"  # international organisations, courts, treaty bodies
+    UNKNOWN = "unknown"
+
+
+class InteractionMode(str, Enum):
+    PHYSICAL = "physical"
+    TELEPHONE = "telephone"
+    VIDEO = "video"
+    WRITTEN = "written"
+    NONE = "none"                    # no interaction (strike, sanctions, appointment)
+    UNKNOWN = "unknown"
+
+
+class Concreteness(str, Enum):
+    ACTION = "action"                # something happened (strike, meeting held)
+    DECISION = "decision"            # authoritative decision taken
+    AGREEMENT = "agreement"          # mutual commitment reached
+    NEGOTIATION = "negotiation"      # talks ongoing, no outcome
+    DECLARATION = "declaration"      # formal statement, threat, announced plan
+    COMMENTARY = "commentary"        # opinion / analysis
+    UNKNOWN = "unknown"
+
+
+class SignificanceClass(str, Enum):
+    CRITICAL = "critical"
+    MAJOR = "major"
+    NOTABLE = "notable"
+    BACKGROUND = "background"
+
+
+class UncertaintyFlag(str, Enum):
+    SINGLE_SOURCE = "single_source"
+    CONTRADICTORY_REPORTS = "contradictory_reports"
+    UNCONFIRMED_COMPLETION = "unconfirmed_completion"      # announced/planned, not reported as done
+    INTERACTION_MODE_UNCLEAR = "interaction_mode_unclear"
+    ACTORS_UNCLEAR = "actors_unclear"
+    INSUFFICIENT_CONTEXT = "insufficient_context"
+    OUTPUT_REPAIRED = "output_repaired"                    # model output had invalid values, coerced
+    CLASSIFIER_FALLBACK = "classifier_fallback"            # primary classifier failed, fallback used
 
 
 # ---------------------------------------------------------------------------
@@ -118,6 +205,75 @@ class EventCluster(BaseModel):
     location_name: Optional[str] = None
     lat: Optional[float] = None
     lon: Optional[float] = None
+
+
+class ContextItem(BaseModel):
+    """One source item inside a cluster, as shown to a classifier."""
+    title: str
+    excerpt: str = ""
+    source_name: str = ""
+    published_at: Optional[datetime] = None
+    url: str = ""
+
+
+class ContextEntity(BaseModel):
+    name: str
+    entity_type: str   # EntityType value; kept as str so unknown NER labels don't fail
+
+
+class ClusterContext(BaseModel):
+    """Normalized, read-only view of an event cluster handed to a classifier."""
+    event_id: Optional[int] = None
+    items: list[ContextItem] = Field(default_factory=list)
+    entities: list[ContextEntity] = Field(default_factory=list)
+    location_name: Optional[str] = None
+    has_contradictions: bool = False
+
+    @property
+    def distinct_sources(self) -> set[str]:
+        return {i.source_name for i in self.items if i.source_name}
+
+
+class DevelopmentClassification(BaseModel):
+    """Structured classification of a development. Describes what happened;
+    ranking is a separate stage."""
+    event_type: EventType = EventType.UNKNOWN
+    event_domain: EventDomain = EventDomain.UNKNOWN
+    interaction_mode: InteractionMode = InteractionMode.UNKNOWN
+    concreteness: Concreteness = Concreteness.UNKNOWN
+    significance_class: Optional[SignificanceClass] = None   # None = cannot judge
+    actors: list[str] = Field(default_factory=list)
+    countries: list[str] = Field(default_factory=list)
+    organizations: list[str] = Field(default_factory=list)
+    location: Optional[str] = None
+    material_change: str = ""        # FACT: what changed
+    why_it_matters: str = ""         # ASSESSMENT, grounded in the supplied context
+    is_routine_commentary: bool = False
+    classification_notes: str = ""
+    uncertainty_flags: list[UncertaintyFlag] = Field(default_factory=list)
+    classifier: str = ""             # "rules" | "llm:<provider>/<model>"
+
+    @field_validator("actors", "countries", "organizations", mode="after")
+    @classmethod
+    def _dedupe_names(cls, values: list[str]) -> list[str]:
+        seen: set[str] = set()
+        out = []
+        for v in values:
+            v = v.strip()
+            if v and v.lower() not in seen:
+                seen.add(v.lower())
+                out.append(v)
+        return out
+
+    @field_validator("uncertainty_flags", mode="after")
+    @classmethod
+    def _dedupe_flags(cls, values: list[UncertaintyFlag]) -> list[UncertaintyFlag]:
+        return list(dict.fromkeys(values))
+
+    @field_validator("location", mode="after")
+    @classmethod
+    def _blank_location_is_none(cls, value: Optional[str]) -> Optional[str]:
+        return value.strip() or None if value else None
 
 
 class AlertModel(BaseModel):

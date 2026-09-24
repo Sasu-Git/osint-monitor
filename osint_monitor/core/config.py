@@ -8,9 +8,12 @@ import yaml
 from pydantic import BaseModel, Field
 from pydantic_settings import BaseSettings
 
+from osint_monitor.core.models import Concreteness, EventDomain, EventType, InteractionMode
+
 
 BASE_DIR = Path(__file__).parent.parent.parent
 CONFIG_DIR = BASE_DIR / "config"
+PROMPTS_DIR = CONFIG_DIR / "prompts"
 DATA_DIR = BASE_DIR / "data"
 
 
@@ -85,6 +88,12 @@ class SourcesFileConfig(BaseModel):
     tiers: TierConfig = Field(default_factory=TierConfig)
 
 
+class DevelopmentTypeDefaults(BaseModel):
+    domain: EventDomain
+    concreteness: Concreteness
+    interaction_mode: InteractionMode
+
+
 class AppSettings(BaseSettings):
     """App-level settings from environment variables."""
     db_url: str = f"sqlite:///{DATA_DIR / 'osint.db'}"
@@ -93,6 +102,10 @@ class AppSettings(BaseSettings):
     anthropic_api_key: Optional[str] = None
     ollama_base_url: str = "http://localhost:11434"
     default_llm_provider: str = "openai"
+    # Development classifier: "rules" (deterministic, free) or "llm"
+    classifier_backend: str = "rules"
+    classifier_llm_provider: Optional[str] = None   # falls back to default_llm_provider
+    classifier_llm_model: Optional[str] = None      # falls back to the provider's default
     spacy_model: str = "en_core_web_lg"
     embedding_model: str = "all-MiniLM-L6-v2"
     log_level: str = "INFO"
@@ -128,6 +141,19 @@ def load_alerts_config(path: Path | None = None) -> AlertsConfig:
     with open(path) as f:
         raw = yaml.safe_load(f)
     return AlertsConfig(**raw)
+
+
+def load_development_types(path: Path | None = None) -> dict[EventType, DevelopmentTypeDefaults]:
+    """Load and validate development_types.yaml."""
+    path = path or CONFIG_DIR / "development_types.yaml"
+    with open(path) as f:
+        raw = yaml.safe_load(f) or {}
+    return {EventType(k): DevelopmentTypeDefaults(**v) for k, v in raw.items()}
+
+
+def load_prompt(name: str) -> str:
+    """Load a prompt template from config/prompts/<name>.md."""
+    return (PROMPTS_DIR / f"{name}.md").read_text(encoding="utf-8")
 
 
 def get_settings() -> AppSettings:
