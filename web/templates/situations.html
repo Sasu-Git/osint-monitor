@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block title %}Situations - OSINT Monitor{% endblock %}
+{% block content %}
+<style>
+  .sit-row { display: grid; grid-template-columns: 1fr auto; gap: 0.3rem 1rem; }
+  .sit-meta { color: var(--text-secondary); font-size: 0.8rem; }
+  .status { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; padding: 0.1rem 0.45rem;
+            border-radius: 4px; border: 1px solid var(--border); color: var(--text-secondary); }
+  .status-active { border-color: var(--low); color: var(--low); }
+  .status-dormant { border-color: var(--medium); color: var(--medium); }
+  .actors span { display: inline-block; background: var(--bg-secondary); border: 1px solid var(--border);
+                 border-radius: 4px; padding: 0.05rem 0.4rem; margin: 0.15rem 0.2rem 0 0; font-size: 0.75rem; }
+  .muted { color: var(--text-secondary); }
+</style>
+<h2 style="margin-bottom:0.4rem">Situations</h2>
+<p class="muted" style="margin-bottom:1rem;font-size:0.85rem">
+  Continuing storylines and the developments grouped into them. Evidence only: what was reported, by whom, and how well it is corroborated.
+</p>
+{% set active = situations | selectattr("development_count") | list %}
+{% set empty = situations | rejectattr("development_count") | list %}
+{% if not active %}
+<div class="card muted">No situation has developments yet.</div>
+{% endif %}
+{% for s in active %}
+<div class="card">
+  <div class="sit-row">
+    <div>
+      <a href="/situations/{{ s.slug }}" style="font-size:1rem;font-weight:600">{{ s.title }}</a>
+      <span class="status status-{{ s.status }}">{{ s.status }}</span>
+    </div>
+    <div class="sit-meta">last changed {{ s.last_changed.strftime('%Y-%m-%d %H:%M') if s.last_changed else '—' }} UTC</div>
+    <div class="actors">{% for a in s.primary_actors %}<span>{{ a }}</span>{% endfor %}</div>
+    <div class="sit-meta">{{ s.development_count }} development{{ '' if s.development_count == 1 else 's' }}{% if s.region %} · {{ s.region }}{% endif %}</div>
+    {% if s.latest_development %}<div class="sit-meta" style="grid-column:1/-1">Latest: {{ s.latest_development }}</div>{% endif %}
+  </div>
+</div>
+{% endfor %}
+{% if empty %}
+<h3 class="muted" style="margin:1.2rem 0 0.5rem;font-size:0.85rem">No developments yet</h3>
+<div class="card">
+  <table>
+    <tr><th>Situation</th><th>Actors</th><th>Status</th></tr>
+    {% for s in empty %}
+    <tr><td><a href="/situations/{{ s.slug }}">{{ s.title }}</a></td><td>{{ s.primary_actors | join(", ") }}</td><td>{{ s.status }}</td></tr>
+    {% endfor %}
+  </table>
+</div>
+{% endif %}
+{% endblock %}
