@@ -1935,5 +1935,262 @@
       "cause": ""
     }
   ],
+  "pairs": [
+    {
+      "a": 32,
+      "b": 46,
+      "sources": [
+        "Breaking Defense",
+        "Defense News"
+      ],
+      "titles": [
+        "OCCAR awards $4.2B DDX destroyer contract to Fincantieri, Leonardo joint venture",
+        "Italy taps state-owned firms to build two naval destroyers in $4.2 billion deal"
+      ],
+      "similarity": 0.524,
+      "hours_apart": 1.5,
+      "shared_actors": [
+        "ddx",
+        "fincantieri",
+        "leonardo",
+        "occar",
+        "taliban"
+      ],
+      "clusters": [
+        null,
+        null
+      ],
+      "same_story": true
+    },
+    {
+      "a": 92,
+      "b": 107,
+      "sources": [
+        "South China Morning Post",
+        "BBC World"
+      ],
+      "titles": [
+        "Xi-Trump dinner puts US tech titans in spotlight – what does it mean for China ties?",
+        "Xi got Trump's red carpet welcome - but not everything he wanted"
+      ],
+      "similarity": 0.524,
+      "hours_apart": 3.1,
+      "shared_actors": [
+        "china",
+        "united states"
+      ],
+      "clusters": [
+        null,
+        0
+      ],
+      "same_story": true
+    },
+    {
+      "a": 19,
+      "b": 50,
+      "sources": [
+        "Al Jazeera",
+        "Defense News"
+      ],
+      "titles": [
+        "Multiple regions in Russia come under Ukrainian drone attacks",
+        "Report: CIA warned Europe of Russian drone attack from vessels in the Mediterranean"
+      ],
+      "similarity": 0.504,
+      "hours_apart": 18.0,
+      "shared_actors": [
+        "russia",
+        "ukraine"
+      ],
+      "clusters": [
+        null,
+        null
+      ],
+      "same_story": false
+    },
+    {
+      "a": 22,
+      "b": 108,
+      "sources": [
+        "Al Jazeera",
+        "BBC World"
+      ],
+      "titles": [
+        "Jewish protestors join Free Palestine march to denounce Netanyahu",
+        "Netanyahu defends Israeli military action as delegates walk out before UN speech"
+      ],
+      "similarity": 0.493,
+      "hours_apart": 3.1,
+      "shared_actors": [
+        "israel"
+      ],
+      "clusters": [
+        null,
+        null
+      ],
+      "same_story": false
+    },
+    {
+      "a": 99,
+      "b": 106,
+      "sources": [
+        "South China Morning Post",
+        "BBC World"
+      ],
+      "titles": [
+        "From wine to ping-pong, Trump and Xi’s state dinner is heavy on historic symbolism",
+        "Trump and Xi exchange warm words at state dinner but little progress on key issues"
+      ],
+      "similarity": 0.491,
+      "hours_apart": 2.4,
+      "shared_actors": [
+        "china",
+        "united states"
+      ],
+      "clusters": [
+        null,
+        null
+      ],
+      "same_story": true
+    },
+    {
+      "a": 92,
+      "b": 106,
+      "sources": [
+        "South China Morning Post",
+        "BBC World"
+      ],
+      "titles": [
+        "Xi-Trump dinner puts US tech titans in spotlight – what does it mean for China ties?",
+        "Trump and Xi exchange warm words at state dinner but little progress on key issues"
+      ],
+      "similarity": 0.489,
+      "hours_apart": 1.2,
+      "shared_actors": [
+        "china",
+        "united states"
+      ],
+      "clusters": [
+        null,
+        null
+      ],
+      "same_story": true
+    },
+    {
+      "a": 24,
+      "b": 95,
+      "sources": [
+        "Al Jazeera",
+        "South China Morning Post"
+      ],
+      "titles": [
+        "Oil prices jump after Yemen’s Houthis claim attacks on Saudi facilities",
+        "France to protect key Saudi oil terminal as Houthis step up missile attacks"
+      ],
+      "similarity": 0.484,
+      "hours_apart": 2.4,
+      "shared_actors": [
+        "houthis",
+        "iran",
+        "saudi arabia"
+      ],
+      "clusters": [
+        null,
+        null
+      ],
+      "same_story": true
+    },
+    {
+      "a": 15,
+      "b": 108,
+      "sources": [
+        "Al Jazeera",
+        "BBC World"
+      ],
+      "titles": [
+        "Converging crises, chaos and walkouts dominate UNGA Day Three",
+        "Netanyahu defends Israeli military action as delegates walk out before UN speech"
+      ],
+      "similarity": 0.481,
+      "hours_apart": 5.7,
+      "shared_actors": [
+        "israel"
+      ],
+      "clusters": [
+        null,
+        null
+      ],
+      "same_story": false
+    },
+    {
+      "a": 99,
+      "b": 107,
+      "sources": [
+        "South China Morning Post",
+        "BBC World"
+      ],
+      "titles": [
+        "From wine to ping-pong, Trump and Xi’s state dinner is heavy on historic symbolism",
+        "Xi got Trump's red carpet welcome - but not everything he wanted"
+      ],
+      "similarity": 0.473,
+      "hours_apart": 1.8,
+      "shared_actors": [
+        "china",
+        "united states"
+      ],
+      "clusters": [
+        null,
+        0
+      ],
+      "same_story": true
+    },
+    {
+      "a": 70,
+      "b": 98,
+      "sources": [
+        "War on the Rocks",
+        "South China Morning Post"
+      ],
+      "titles": [
+        "South Korea’s Deliberate Strategic Ambiguity on Taiwan",
+        "AI war, Taiwan and translation: SCMP answers your questions from Xi-Trump summit"
+      ],
+      "similarity": 0.472,
+      "hours_apart": 36.4,
+      "shared_actors": [
+        "taiwan",
+        "united states"
+      ],
+      "clusters": [
+        null,
+        null
+      ],
+      "same_story": false
+    },
+    {
+      "a": 31,
+      "b": 50,
+      "sources": [
+        "Breaking Defense",
+        "Defense News"
+      ],
+      "titles": [
+        "Russian hybrid attacks likely to increase in coming months: Danish intel assessment",
+        "Report: CIA warned Europe of Russian drone attack from vessels in the Mediterranean"
+      ],
+      "similarity": 0.456,
+      "hours_apart": 6.8,
+      "shared_actors": [
+        "nato",
+        "russia"
+      ],
+      "clusters": [
+        null,
+        null
+      ],
+      "same_story": false
+    }
+  ],
   "labelled_by": "manual review of titles and nearest neighbours, 2026-09-25"
 }

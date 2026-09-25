@@ -107,3 +107,15 @@ def test_scoring_separates_multi_source_misses_from_same_outlet_follow_ups():
     assert scores["missed_multi_source_stories"] == 1 and scores["missed_same_outlet"] == 1
     assert scores["missed_similarities"] == [0.5]
     assert scores["unlabelled"] == [items[4]["item_id"]]
+
+
+def test_pair_scoring_reports_how_the_time_and_actor_rule_separates_labelled_pairs():
+    def pair(hours, shared, same):
+        return {"hours_apart": hours, "shared_actors": [f"a{i}" for i in range(shared)], "same_story": same}
+    pairs = [pair(1.5, 3, True), pair(3.0, 2, True), pair(5.0, 1, False), pair(6.8, 2, False),
+             pair(30, 2, False), {"hours_apart": 2, "shared_actors": ["x", "y"], "same_story": None}]
+    scores = cluster_eval.score_pairs(pairs)
+    assert scores["rule"] == {"max_hours": 6.0, "min_shared": 2, "tp": 2, "fp": 0, "fn": 0, "tn": 3}
+    assert scores["sweep"]["<=9h,>=2"]["fp"] == 1        # a looser time cut-off admits the 6.8 h pair
+    assert scores["false_with_enough_actors_hours"] == [6.8, 30]
+    assert scores["unlabelled"] == 1

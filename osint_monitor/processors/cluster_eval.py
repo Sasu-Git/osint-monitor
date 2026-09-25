@@ -18,6 +18,11 @@ Labels:
     missed_new_event  should have formed a new event with another noise item
     low_value         noise content (listings, promos, live-blog furniture)
 
+The review file also lists every cross-source *pair* scoring in the near band
+(0.45 <= cosine < LINK_SIMILARITY) with its time gap and shared canonical actors.
+Labelling ``same_story`` on those pairs tests a candidate secondary link rule
+(close in time + shared actors) without changing clustering.
+
 For a missed join, ``partner`` is the item id it should have joined and
 ``partner_source`` that item's source: a miss is multi-source only when the two
 sources differ (same-outlet follow-ups are deliberately not linked today).
@@ -36,7 +41,8 @@ import numpy as np
 from sqlalchemy.orm import Session
 
 from osint_monitor.core.config import load_event_grouping_config
-from osint_monitor.core.database import RawItem
+from osint_monitor.core.database import ItemEntity, RawItem
+from osint_monitor.processors.actors import ActorNormalizer
 from osint_monitor.processors.clustering import (
     DEFAULT_WINDOW_HOURS, LINK_SIMILARITY, MAX_LINK_HOURS, MEMBER_SIMILARITY, _ClusterMember, _linked,
     cluster_narrative, recent_items,
@@ -48,6 +54,8 @@ LABELS = ("singleton", "missed_member", "missed_new_event", "low_value")
 # bands of the best cross-source neighbour's cosine: where the linking threshold would bite
 BANDS = [("linkable", LINK_SIMILARITY), ("near", MEMBER_SIMILARITY), ("related", 0.35), ("far", -1.0)]
 PROBE_SIMILARITY = MEMBER_SIMILARITY        # below this, a cross-source neighbour is almost never the same story
+RULE_HOURS, RULE_SHARED = 6.0, 2            # candidate secondary link rule under evaluation
+SWEEP_HOURS, SWEEP_SHARED = (3, 6, 9, 12, 24), (1, 2, 3)
 
 
 def band(similarity: float | None) -> str:
@@ -117,6 +125,29 @@ def clustering_report(session: Session, window_hours: int = DEFAULT_WINDOW_HOURS
             "neighbours": [nb.as_dict() for nb in top],
         })
 
+    normalizer = ActorNormalizer.load()
+    actors: dict[int, set[str]] = {}
+    for ie in session.query(ItemEntity).filter(ItemEntity.item_id.in_(ids)):
+        if ie.entity is not None and (k := normalizer.key(ie.entity.canonical_name)):
+            actors.setdefault(ie.item_id, set()).add(k)
+    pairs = []
+    for a in range(len(ids)):
+        for b in range(a + 1, len(ids)):
+            x, y = by_id[ids[a]], by_id[ids[b]]
+            if x.source_id == y.source_id or not PROBE_SIMILARITY <= sims[a, b] < LINK_SIMILARITY:
+                continue
+            tx, ty = _time(x), _time(y)
+            pairs.append({
+                "a": x.id, "b": y.id,
+                "sources": [x.source.name if x.source else "?", y.source.name if y.source else "?"],
+                "titles": [x.title or "", y.title or ""],
+                "similarity": round(float(sims[a, b]), 3),
+                "hours_apart": round(abs((tx - ty).total_seconds()) / 3600, 1) if tx and ty else None,
+                "shared_actors": sorted(actors.get(x.id, set()) & actors.get(y.id, set())),
+                "clusters": [cluster_of.get(x.id), cluster_of.get(y.id)],
+            })
+    pairs.sort(key=lambda p: -p["similarity"])
+
     sources_per_cluster = Counter(len({by_id[i].source_id for i in g}) for g in groups)
     return {
         "now": (now or datetime.utcnow()).isoformat(timespec="seconds"),
@@ -135,6 +166,7 @@ def clustering_report(session: Session, window_hours: int = DEFAULT_WINDOW_HOURS
             (x for x in noise if x["best_cross_source"] and x["best_cross_source"]["similarity"] >= PROBE_SIMILARITY),
             key=lambda x: -x["best_cross_source"]["similarity"]),
         "noise": noise,
+        "band_pairs": pairs,
     }
 
 
@@ -160,6 +192,38 @@ def review_file(report: dict, sample: list[dict], db: str, seed: int) -> dict:
         "db": db, "now": report["now"], "window_hours": report["window_hours"], "seed": seed,
         "population": {"noise": report["items"]["noise"], "noise_by_band": report["noise_by_band"]},
         "items": [{**x, "label": None, "partner": None, "partner_source": None, "cause": ""} for x in sample],
+        "pairs": [{**p, "same_story": None} for p in report.get("band_pairs", [])],
+    }
+
+
+def rule_passes(pair: dict, max_hours: float = RULE_HOURS, min_shared: int = RULE_SHARED) -> bool:
+    return (pair["hours_apart"] is not None and pair["hours_apart"] <= max_hours
+            and len(pair["shared_actors"]) >= min_shared)
+
+
+def score_pairs(pairs: list[dict]) -> dict | None:
+    """How well "close in time + shared actors" separates labelled same-story pairs."""
+    labelled = [p for p in pairs if isinstance(p.get("same_story"), bool)]
+    if not labelled:
+        return None
+
+    def confusion(h, k):
+        c = Counter((p["same_story"], rule_passes(p, h, k)) for p in labelled)
+        return {"tp": c[(True, True)], "fp": c[(False, True)], "fn": c[(True, False)], "tn": c[(False, False)]}
+
+    true = [p for p in labelled if p["same_story"]]
+    false = [p for p in labelled if not p["same_story"]]
+    return {
+        "labelled": len(labelled), "same_story": len(true), "different": len(false),
+        "rule": {"max_hours": RULE_HOURS, "min_shared": RULE_SHARED, **confusion(RULE_HOURS, RULE_SHARED)},
+        "sweep": {f"<={h}h,>={k}": confusion(h, k) for h in SWEEP_HOURS for k in SWEEP_SHARED},
+        "true_hours": sorted(p["hours_apart"] for p in true if p["hours_apart"] is not None),
+        "true_shared": sorted(len(p["shared_actors"]) for p in true),
+        # the different-story pairs that come closest to passing: the rule's margin
+        "false_with_enough_actors_hours": sorted(p["hours_apart"] for p in false
+                                                 if len(p["shared_actors"]) >= RULE_SHARED
+                                                 and p["hours_apart"] is not None),
+        "unlabelled": sum(1 for p in pairs if not isinstance(p.get("same_story"), bool)),
     }
 
 
@@ -193,6 +257,7 @@ def score_review(review: dict) -> dict:
         "missed_similarities": sorted(v for v in partner_sim.values() if v is not None),
         "missed_partner_not_nearest": sorted(k for k, v in partner_sim.items() if v is None),
         "causes": Counter(x.get("cause") or "unspecified" for x in missed).most_common(),
+        "pairs": score_pairs(review.get("pairs", [])),
     }
 
 
@@ -243,4 +308,17 @@ def format_scores(scores: dict) -> str:
     ]
     if scores["unlabelled"]:
         lines.append(f"  unlabelled item ids: {scores['unlabelled']}")
+    p = scores.get("pairs")
+    if p:
+        r = p["rule"]
+        lines += [
+            f"near-band cross-source pairs: {p['labelled']} labelled "
+            f"({p['same_story']} same story, {p['different']} different; {p['unlabelled']} unlabelled)",
+            f"  rule <= {r['max_hours']}h and >= {r['min_shared']} shared actors: "
+            f"tp={r['tp']} fp={r['fp']} fn={r['fn']} tn={r['tn']}",
+            f"  same-story pairs: hours apart {p['true_hours']}, shared actors {p['true_shared']}",
+            f"  different pairs with >= {r['min_shared']} shared actors: hours apart "
+            f"{p['false_with_enough_actors_hours']}",
+            "  sweep (tp/fp/fn): " + ", ".join(f"{k} {v['tp']}/{v['fp']}/{v['fn']}" for k, v in p["sweep"].items()),
+        ]
     return "\n".join(lines)

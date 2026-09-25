@@ -11,6 +11,7 @@ Structured feeds are excluded, because they are grouped by record identity inste
 OSINT_DB_URL=sqlite:///data/eval/recall-2026-09-25.db python main.py inspect clustering --export review.json
 python main.py inspect clustering --review evaluations/clustering-recall-2026-09-25.json
 ```
+The review file carries both the labelled noise sample and the labelled near-band pairs; `--review` scores the rule and a sweep of cut-offs.
 
 ## Population
 
@@ -71,7 +72,7 @@ One additional condition separated all 11 pairs:
 
 | pairs | hours apart | shared actors |
 |---|---|---|
-| true | 1.2–4.1 h | 2–5 |
+| true | 1.2–3.1 h | 2–5 |
 | false | 18 h, 36 h and 6.8 h | 2 |
 | false | 3.1 h and 5.7 h | 1 ("israel") |
 
@@ -80,3 +81,13 @@ One additional condition separated all 11 pairs:
 Add that secondary link to `_linked`, behind a config flag, only after a second review day confirms it. Only 11 pairs back it, and one false pair sits at 6.8 h, just past the 6 h limit.
 
 Misses below 0.45 (items 3 and 4) need entity-based candidate generation, not a lower cosine. Defer that.
+
+## Second day (pending)
+
+The day must not overlap this window: collect on 2026-09-27 or later. The 09-24 collect shares 66 of 127 news titles with this one, so it doesn't count.
+```
+OSINT_DB_URL=sqlite:///data/eval/recall-<date>.db python main.py seed
+OSINT_DB_URL=sqlite:///data/eval/recall-<date>.db python main.py collect
+OSINT_DB_URL=sqlite:///data/eval/recall-<date>.db python main.py inspect clustering --export evaluations/clustering-recall-<date>.json
+```
+Label 30–50 noise items and every listed pair, then run `--review`. The rule goes into `feat/clustering-recall-link-rule` only if both days hold with no false passes.
