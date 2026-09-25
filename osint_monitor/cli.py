@@ -55,14 +55,21 @@ def main():
 
     # inspect: debugging view of events (clusters, principals, regions, ranking)
     sub_inspect = subparsers.add_parser("inspect", help="Show event clusters with diagnostics")
-    sub_inspect.add_argument("target", nargs="?", choices=["events", "situations"], default="events",
-                             help="events (default), or situations: what situation grouping decides "
-                                  "for each event, and why")
+    sub_inspect.add_argument("target", nargs="?", choices=list(INSPECT_TARGETS), default="events",
+                             help="events (default): event clusters; clustering: recall diagnostics for narrative "
+                                  "clustering; situations: what situation grouping decides for each event, and why")
     sub_inspect.add_argument("--event", type=int, default=None, help="Show one event in full")
     sub_inspect.add_argument("--sort", choices=["rank", "size", "recent"], default="rank")
     sub_inspect.add_argument("--limit", type=int, default=10)
     sub_inspect.add_argument("--full", action="store_true", help="Include entities, region scores and titles")
     sub_inspect.add_argument("--warnings-only", action="store_true", help="Only events with diagnostic warnings")
+    sub_inspect.add_argument("--window-hours", type=int, default=48, help="clustering: item window")
+    sub_inspect.add_argument("--now", default=None,
+                             help="clustering: evaluate as of this UTC time (ISO); default: latest fetch in the DB")
+    sub_inspect.add_argument("--sample", type=int, default=40, help="clustering: noise items in the review sample")
+    sub_inspect.add_argument("--seed", type=int, default=20260925, help="clustering: sample seed")
+    sub_inspect.add_argument("--export", default=None, help="clustering: write a review file to label")
+    sub_inspect.add_argument("--review", default=None, help="clustering: score a labelled review file")
 
     # smoke: end-to-end check on a temporary database
     sub_smoke = subparsers.add_parser("smoke", help="Run the local pipeline on fixtures in a temporary database")
@@ -329,9 +336,36 @@ def _cmd_inspect_situations(args):
     session.close()
 
 
+def _cmd_inspect_clustering(args):
+    import json
+    from datetime import datetime
+
+    from sqlalchemy import func
+
+    from osint_monitor.core.database import RawItem, get_session, init_db
+    from osint_monitor.processors import cluster_eval
+
+    if args.review:
+        print(cluster_eval.format_scores(cluster_eval.score_review(cluster_eval.load_review(args.review))))
+        return
+    init_db()
+    session = get_session()
+    # default to the latest fetch so a saved database always evaluates the same way
+    now = datetime.fromisoformat(args.now) if args.now else session.query(func.max(RawItem.fetched_at)).scalar()
+    report = cluster_eval.clustering_report(session, window_hours=args.window_hours, now=now)
+    print(cluster_eval.format_report(report, limit=args.limit))
+    if args.export:
+        sample = cluster_eval.sample_noise(report, n=args.sample, seed=args.seed)
+        review = cluster_eval.review_file(report, sample, db=str(session.bind.url), seed=args.seed)
+        with open(args.export, "w", encoding="utf-8") as f:
+            json.dump(review, f, indent=2, ensure_ascii=False)
+        print(f"\nWrote {len(sample)} noise items to {args.export} for review")
+    session.close()
+
+
 def _cmd_inspect(args):
-    if args.target == "situations":
-        _cmd_inspect_situations(args)
+    if args.target != "events":
+        INSPECT_TARGETS[args.target](args)
         return
     from osint_monitor.core.config import load_sources_config
     from osint_monitor.core.database import Event, get_session, init_db
@@ -360,6 +394,14 @@ def _cmd_inspect(args):
             break
     session.close()
 
+
+
+# inspect targets other than "events" (the default, handled in _cmd_inspect)
+INSPECT_TARGETS = {
+    "events": None,
+    "clustering": _cmd_inspect_clustering,
+    "situations": _cmd_inspect_situations,
+}
 
 def _cmd_export():
     import json

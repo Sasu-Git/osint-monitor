@@ -1,0 +1,2196 @@
+{
+  "about": "Manual review of clustering noise. Set `label` to one of ['singleton', 'missed_member', 'missed_new_event', 'low_value']; `cause` is free text for missed joins.",
+  "db": "sqlite:///C:/Users/EugenioVardiero/osint-monitor/data/eval/recall-2026-09-25.db",
+  "now": "2026-09-25T08:35:49",
+  "window_hours": 48,
+  "seed": 20260925,
+  "population": {
+    "noise": 80,
+    "noise_by_band": {
+      "linkable": 0,
+      "near": 15,
+      "related": 26,
+      "far": 39
+    }
+  },
+  "items": [
+    {
+      "item_id": 11,
+      "source": "Al Jazeera",
+      "title": "Mamdani plants olive tree with Gaza families",
+      "band": "far",
+      "best_cross_source": {
+        "item_id": 122,
+        "source": "BBC World",
+        "title": "Trump's Board of Peace unveils $2.45bn Gaza recovery plan",
+        "similarity": 0.282,
+        "hours_apart": 21.7,
+        "cluster": null,
+        "linkable": false
+      },
+      "neighbours": [
+        {
+          "item_id": 122,
+          "source": "BBC World",
+          "title": "Trump's Board of Peace unveils $2.45bn Gaza recovery plan",
+          "similarity": 0.282,
+          "hours_apart": 21.7,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 27,
+          "source": "Al Jazeera",
+          "title": "NYC police arrest Susan Sarandon, other celebrities protesting Netanyahu",
+          "similarity": 0.239,
+          "hours_apart": 5.3,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 22,
+          "source": "Al Jazeera",
+          "title": "Jewish protestors join Free Palestine march to denounce Netanyahu",
+          "similarity": 0.232,
+          "hours_apart": 4.1,
+          "cluster": null,
+          "linkable": false
+        }
+      ],
+      "label": "singleton",
+      "partner": null,
+      "partner_source": null,
+      "cause": ""
+    },
+    {
+      "item_id": 12,
+      "source": "Al Jazeera",
+      "title": "Pope Leo heads to France amid assisted dying, abuse debates",
+      "band": "far",
+      "best_cross_source": {
+        "item_id": 110,
+        "source": "BBC World",
+        "title": "Hundreds of thousands expected in Paris for Pope's visit",
+        "similarity": 0.335,
+        "hours_apart": 8.4,
+        "cluster": null,
+        "linkable": false
+      },
+      "neighbours": [
+        {
+          "item_id": 110,
+          "source": "BBC World",
+          "title": "Hundreds of thousands expected in Paris for Pope's visit",
+          "similarity": 0.335,
+          "hours_apart": 8.4,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 95,
+          "source": "South China Morning Post",
+          "title": "France to protect key Saudi oil terminal as Houthis step up missile attacks",
+          "similarity": 0.22,
+          "hours_apart": 1.6,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 56,
+          "source": "Defense News",
+          "title": "Europe’s push to reduce US reliance is reshaping the defense space market",
+          "similarity": 0.19,
+          "hours_apart": 42.4,
+          "cluster": null,
+          "linkable": false
+        }
+      ],
+      "label": "missed_new_event",
+      "partner": 110,
+      "partner_source": "BBC World",
+      "cause": "different angle (departure vs crowds); cosine 0.34"
+    },
+    {
+      "item_id": 15,
+      "source": "Al Jazeera",
+      "title": "Converging crises, chaos and walkouts dominate UNGA Day Three",
+      "band": "near",
+      "best_cross_source": {
+        "item_id": 108,
+        "source": "BBC World",
+        "title": "Netanyahu defends Israeli military action as delegates walk out before UN speech",
+        "similarity": 0.481,
+        "hours_apart": 5.7,
+        "cluster": null,
+        "linkable": false
+      },
+      "neighbours": [
+        {
+          "item_id": 108,
+          "source": "BBC World",
+          "title": "Netanyahu defends Israeli military action as delegates walk out before UN speech",
+          "similarity": 0.481,
+          "hours_apart": 5.7,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 29,
+          "source": "Al Jazeera",
+          "title": "More than 100 arrested as New Yorkers protest Netanyahu’s UN visit",
+          "similarity": 0.445,
+          "hours_apart": 4.1,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 122,
+          "source": "BBC World",
+          "title": "Trump's Board of Peace unveils $2.45bn Gaza recovery plan",
+          "similarity": 0.35,
+          "hours_apart": 20.3,
+          "cluster": null,
+          "linkable": false
+        }
+      ],
+      "label": "low_value",
+      "partner": null,
+      "partner_source": null,
+      "cause": "daily UNGA roundup"
+    },
+    {
+      "item_id": 19,
+      "source": "Al Jazeera",
+      "title": "Multiple regions in Russia come under Ukrainian drone attacks",
+      "band": "near",
+      "best_cross_source": {
+        "item_id": 50,
+        "source": "Defense News",
+        "title": "Report: CIA warned Europe of Russian drone attack from vessels in the Mediterranean",
+        "similarity": 0.504,
+        "hours_apart": 18.0,
+        "cluster": null,
+        "linkable": false
+      },
+      "neighbours": [
+        {
+          "item_id": 50,
+          "source": "Defense News",
+          "title": "Report: CIA warned Europe of Russian drone attack from vessels in the Mediterranean",
+          "similarity": 0.504,
+          "hours_apart": 18.0,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 31,
+          "source": "Breaking Defense",
+          "title": "Russian hybrid attacks likely to increase in coming months: Danish intel assessment",
+          "similarity": 0.414,
+          "hours_apart": 11.2,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 118,
+          "source": "BBC World",
+          "title": "Poland says fire at Starlink station is sabotage as Denmark warns of rising Russian threat",
+          "similarity": 0.38,
+          "hours_apart": 13.3,
+          "cluster": null,
+          "linkable": false
+        }
+      ],
+      "label": "singleton",
+      "partner": null,
+      "partner_source": null,
+      "cause": ""
+    },
+    {
+      "item_id": 22,
+      "source": "Al Jazeera",
+      "title": "Jewish protestors join Free Palestine march to denounce Netanyahu",
+      "band": "near",
+      "best_cross_source": {
+        "item_id": 108,
+        "source": "BBC World",
+        "title": "Netanyahu defends Israeli military action as delegates walk out before UN speech",
+        "similarity": 0.493,
+        "hours_apart": 3.1,
+        "cluster": null,
+        "linkable": false
+      },
+      "neighbours": [
+        {
+          "item_id": 29,
+          "source": "Al Jazeera",
+          "title": "More than 100 arrested as New Yorkers protest Netanyahu’s UN visit",
+          "similarity": 0.528,
+          "hours_apart": 1.4,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 108,
+          "source": "BBC World",
+          "title": "Netanyahu defends Israeli military action as delegates walk out before UN speech",
+          "similarity": 0.493,
+          "hours_apart": 3.1,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 115,
+          "source": "BBC World",
+          "title": "Rapper Macklemore announces 'Free Palestine' tour after Ed Sheeran fallout",
+          "similarity": 0.443,
+          "hours_apart": 9.9,
+          "cluster": null,
+          "linkable": false
+        }
+      ],
+      "label": "missed_new_event",
+      "partner": 29,
+      "partner_source": "Al Jazeera",
+      "cause": "same-outlet follow-up on the Netanyahu UN-visit protests"
+    },
+    {
+      "item_id": 23,
+      "source": "Al Jazeera",
+      "title": "Young men flee Tigray amid fears of forced recruitment",
+      "band": "far",
+      "best_cross_source": {
+        "item_id": 116,
+        "source": "BBC World",
+        "title": "Ethiopia's army says it has repelled attacks in first comment on fresh fighting",
+        "similarity": 0.339,
+        "hours_apart": 12.1,
+        "cluster": null,
+        "linkable": false
+      },
+      "neighbours": [
+        {
+          "item_id": 116,
+          "source": "BBC World",
+          "title": "Ethiopia's army says it has repelled attacks in first comment on fresh fighting",
+          "similarity": 0.339,
+          "hours_apart": 12.1,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 66,
+          "source": "War on the Rocks",
+          "title": "Tracing the Future Soldier’s Tech Stack",
+          "similarity": 0.273,
+          "hours_apart": 4.3,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 98,
+          "source": "South China Morning Post",
+          "title": "AI war, Taiwan and translation: SCMP answers your questions from Xi-Trump summit",
+          "similarity": 0.273,
+          "hours_apart": 2.2,
+          "cluster": null,
+          "linkable": false
+        }
+      ],
+      "label": "singleton",
+      "partner": null,
+      "partner_source": null,
+      "cause": "same conflict, different development"
+    },
+    {
+      "item_id": 24,
+      "source": "Al Jazeera",
+      "title": "Oil prices jump after Yemen’s Houthis claim attacks on Saudi facilities",
+      "band": "near",
+      "best_cross_source": {
+        "item_id": 95,
+        "source": "South China Morning Post",
+        "title": "France to protect key Saudi oil terminal as Houthis step up missile attacks",
+        "similarity": 0.484,
+        "hours_apart": 2.4,
+        "cluster": null,
+        "linkable": false
+      },
+      "neighbours": [
+        {
+          "item_id": 95,
+          "source": "South China Morning Post",
+          "title": "France to protect key Saudi oil terminal as Houthis step up missile attacks",
+          "similarity": 0.484,
+          "hours_apart": 2.4,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 25,
+          "source": "Al Jazeera",
+          "title": "Saudi, Turkish, Pakistani chiefs plan urgent talks amid Yemen fighting",
+          "similarity": 0.344,
+          "hours_apart": 0.1,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 31,
+          "source": "Breaking Defense",
+          "title": "Russian hybrid attacks likely to increase in coming months: Danish intel assessment",
+          "similarity": 0.222,
+          "hours_apart": 9.5,
+          "cluster": null,
+          "linkable": false
+        }
+      ],
+      "label": "missed_new_event",
+      "partner": 95,
+      "partner_source": "South China Morning Post",
+      "cause": "different angle (market reaction vs response)"
+    },
+    {
+      "item_id": 29,
+      "source": "Al Jazeera",
+      "title": "More than 100 arrested as New Yorkers protest Netanyahu’s UN visit",
+      "band": "related",
+      "best_cross_source": {
+        "item_id": 108,
+        "source": "BBC World",
+        "title": "Netanyahu defends Israeli military action as delegates walk out before UN speech",
+        "similarity": 0.445,
+        "hours_apart": 1.7,
+        "cluster": null,
+        "linkable": false
+      },
+      "neighbours": [
+        {
+          "item_id": 27,
+          "source": "Al Jazeera",
+          "title": "NYC police arrest Susan Sarandon, other celebrities protesting Netanyahu",
+          "similarity": 0.592,
+          "hours_apart": 0.2,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 22,
+          "source": "Al Jazeera",
+          "title": "Jewish protestors join Free Palestine march to denounce Netanyahu",
+          "similarity": 0.528,
+          "hours_apart": 1.4,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 108,
+          "source": "BBC World",
+          "title": "Netanyahu defends Israeli military action as delegates walk out before UN speech",
+          "similarity": 0.445,
+          "hours_apart": 1.7,
+          "cluster": null,
+          "linkable": false
+        }
+      ],
+      "label": "missed_new_event",
+      "partner": 27,
+      "partner_source": "Al Jazeera",
+      "cause": "same-outlet follow-up"
+    },
+    {
+      "item_id": 32,
+      "source": "Breaking Defense",
+      "title": "OCCAR awards $4.2B DDX destroyer contract to Fincantieri, Leonardo joint venture",
+      "band": "near",
+      "best_cross_source": {
+        "item_id": 46,
+        "source": "Defense News",
+        "title": "Italy taps state-owned firms to build two naval destroyers in $4.2 billion deal",
+        "similarity": 0.524,
+        "hours_apart": 1.5,
+        "cluster": null,
+        "linkable": false
+      },
+      "neighbours": [
+        {
+          "item_id": 46,
+          "source": "Defense News",
+          "title": "Italy taps state-owned firms to build two naval destroyers in $4.2 billion deal",
+          "similarity": 0.524,
+          "hours_apart": 1.5,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 38,
+          "source": "Breaking Defense",
+          "title": "EXCLUSIVE: SpaceX given unique access to classified DoD space tracking data, sources say",
+          "similarity": 0.344,
+          "hours_apart": 23.5,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 51,
+          "source": "Defense News",
+          "title": "Army awards Palantir $48.1M to modernize ammo management",
+          "similarity": 0.319,
+          "hours_apart": 17.4,
+          "cluster": null,
+          "linkable": false
+        }
+      ],
+      "label": "missed_new_event",
+      "partner": 46,
+      "partner_source": "Defense News",
+      "cause": "paraphrased headline: contract body vs country"
+    },
+    {
+      "item_id": 33,
+      "source": "Breaking Defense",
+      "title": "Navy launches Robotics and Autonomous Systems Warfighting Development Center",
+      "band": "related",
+      "best_cross_source": {
+        "item_id": 48,
+        "source": "Defense News",
+        "title": "Why the last tactical mile is crucial to acquisition reform",
+        "similarity": 0.355,
+        "hours_apart": 1.1,
+        "cluster": null,
+        "linkable": false
+      },
+      "neighbours": [
+        {
+          "item_id": 36,
+          "source": "Breaking Defense",
+          "title": "Navy wants more offensive, ‘expeditionary’ cyber capabilities",
+          "similarity": 0.432,
+          "hours_apart": 4.3,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 48,
+          "source": "Defense News",
+          "title": "Why the last tactical mile is crucial to acquisition reform",
+          "similarity": 0.355,
+          "hours_apart": 1.1,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 66,
+          "source": "War on the Rocks",
+          "title": "Tracing the Future Soldier’s Tech Stack",
+          "similarity": 0.319,
+          "hours_apart": 15.1,
+          "cluster": null,
+          "linkable": false
+        }
+      ],
+      "label": "singleton",
+      "partner": null,
+      "partner_source": null,
+      "cause": ""
+    },
+    {
+      "item_id": 36,
+      "source": "Breaking Defense",
+      "title": "Navy wants more offensive, ‘expeditionary’ cyber capabilities",
+      "band": "related",
+      "best_cross_source": {
+        "item_id": 48,
+        "source": "Defense News",
+        "title": "Why the last tactical mile is crucial to acquisition reform",
+        "similarity": 0.438,
+        "hours_apart": 3.3,
+        "cluster": null,
+        "linkable": false
+      },
+      "neighbours": [
+        {
+          "item_id": 37,
+          "source": "Breaking Defense",
+          "title": "The still-formidable F-16 will be even more capable with better electronic warfare",
+          "similarity": 0.444,
+          "hours_apart": 17.4,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 48,
+          "source": "Defense News",
+          "title": "Why the last tactical mile is crucial to acquisition reform",
+          "similarity": 0.438,
+          "hours_apart": 3.3,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 33,
+          "source": "Breaking Defense",
+          "title": "Navy launches Robotics and Autonomous Systems Warfighting Development Center",
+          "similarity": 0.432,
+          "hours_apart": 4.3,
+          "cluster": null,
+          "linkable": false
+        }
+      ],
+      "label": "singleton",
+      "partner": null,
+      "partner_source": null,
+      "cause": ""
+    },
+    {
+      "item_id": 40,
+      "source": "Breaking Defense",
+      "title": "UK launches first space squadron to ‘degrade and deny’ enemies",
+      "band": "related",
+      "best_cross_source": {
+        "item_id": 56,
+        "source": "Defense News",
+        "title": "Europe’s push to reduce US reliance is reshaping the defense space market",
+        "similarity": 0.386,
+        "hours_apart": 2.7,
+        "cluster": null,
+        "linkable": false
+      },
+      "neighbours": [
+        {
+          "item_id": 56,
+          "source": "Defense News",
+          "title": "Europe’s push to reduce US reliance is reshaping the defense space market",
+          "similarity": 0.386,
+          "hours_apart": 2.7,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 38,
+          "source": "Breaking Defense",
+          "title": "EXCLUSIVE: SpaceX given unique access to classified DoD space tracking data, sources say",
+          "similarity": 0.371,
+          "hours_apart": 2.6,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 35,
+          "source": "Breaking Defense",
+          "title": "Hawk trainer crash prompts UK to ground fleet",
+          "similarity": 0.361,
+          "hours_apart": 21.6,
+          "cluster": null,
+          "linkable": false
+        }
+      ],
+      "label": "singleton",
+      "partner": null,
+      "partner_source": null,
+      "cause": ""
+    },
+    {
+      "item_id": 46,
+      "source": "Defense News",
+      "title": "Italy taps state-owned firms to build two naval destroyers in $4.2 billion deal",
+      "band": "near",
+      "best_cross_source": {
+        "item_id": 32,
+        "source": "Breaking Defense",
+        "title": "OCCAR awards $4.2B DDX destroyer contract to Fincantieri, Leonardo joint venture",
+        "similarity": 0.524,
+        "hours_apart": 1.5,
+        "cluster": null,
+        "linkable": false
+      },
+      "neighbours": [
+        {
+          "item_id": 32,
+          "source": "Breaking Defense",
+          "title": "OCCAR awards $4.2B DDX destroyer contract to Fincantieri, Leonardo joint venture",
+          "similarity": 0.524,
+          "hours_apart": 1.5,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 48,
+          "source": "Defense News",
+          "title": "Why the last tactical mile is crucial to acquisition reform",
+          "similarity": 0.307,
+          "hours_apart": 0.7,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 57,
+          "source": "Defense News",
+          "title": "Germany wants to manufacture American PAC-3 interceptors to help meet global demand",
+          "similarity": 0.3,
+          "hours_apart": 27.6,
+          "cluster": null,
+          "linkable": false
+        }
+      ],
+      "label": "missed_new_event",
+      "partner": 32,
+      "partner_source": "Breaking Defense",
+      "cause": "paraphrased headline: contract body vs country"
+    },
+    {
+      "item_id": 49,
+      "source": "Defense News",
+      "title": "With Denmark, Saildrone logs first flag registration for naval surveillance drone",
+      "band": "far",
+      "best_cross_source": {
+        "item_id": 38,
+        "source": "Breaking Defense",
+        "title": "EXCLUSIVE: SpaceX given unique access to classified DoD space tracking data, sources say",
+        "similarity": 0.317,
+        "hours_apart": 19.9,
+        "cluster": null,
+        "linkable": false
+      },
+      "neighbours": [
+        {
+          "item_id": 50,
+          "source": "Defense News",
+          "title": "Report: CIA warned Europe of Russian drone attack from vessels in the Mediterranean",
+          "similarity": 0.398,
+          "hours_apart": 3.1,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 52,
+          "source": "Defense News",
+          "title": "Steam catapults? US Navy appears to be sticking with electromagnetics on carriers",
+          "similarity": 0.335,
+          "hours_apart": 20.1,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 38,
+          "source": "Breaking Defense",
+          "title": "EXCLUSIVE: SpaceX given unique access to classified DoD space tracking data, sources say",
+          "similarity": 0.317,
+          "hours_apart": 19.9,
+          "cluster": null,
+          "linkable": false
+        }
+      ],
+      "label": "singleton",
+      "partner": null,
+      "partner_source": null,
+      "cause": ""
+    },
+    {
+      "item_id": 50,
+      "source": "Defense News",
+      "title": "Report: CIA warned Europe of Russian drone attack from vessels in the Mediterranean",
+      "band": "near",
+      "best_cross_source": {
+        "item_id": 19,
+        "source": "Al Jazeera",
+        "title": "Multiple regions in Russia come under Ukrainian drone attacks",
+        "similarity": 0.504,
+        "hours_apart": 18.0,
+        "cluster": null,
+        "linkable": false
+      },
+      "neighbours": [
+        {
+          "item_id": 19,
+          "source": "Al Jazeera",
+          "title": "Multiple regions in Russia come under Ukrainian drone attacks",
+          "similarity": 0.504,
+          "hours_apart": 18.0,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 31,
+          "source": "Breaking Defense",
+          "title": "Russian hybrid attacks likely to increase in coming months: Danish intel assessment",
+          "similarity": 0.456,
+          "hours_apart": 6.8,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 56,
+          "source": "Defense News",
+          "title": "Europe’s push to reduce US reliance is reshaping the defense space market",
+          "similarity": 0.433,
+          "hours_apart": 22.1,
+          "cluster": null,
+          "linkable": false
+        }
+      ],
+      "label": "singleton",
+      "partner": null,
+      "partner_source": null,
+      "cause": "near a different Russia-drone story"
+    },
+    {
+      "item_id": 51,
+      "source": "Defense News",
+      "title": "Army awards Palantir $48.1M to modernize ammo management",
+      "band": "far",
+      "best_cross_source": {
+        "item_id": 32,
+        "source": "Breaking Defense",
+        "title": "OCCAR awards $4.2B DDX destroyer contract to Fincantieri, Leonardo joint venture",
+        "similarity": 0.319,
+        "hours_apart": 17.4,
+        "cluster": null,
+        "linkable": false
+      },
+      "neighbours": [
+        {
+          "item_id": 32,
+          "source": "Breaking Defense",
+          "title": "OCCAR awards $4.2B DDX destroyer contract to Fincantieri, Leonardo joint venture",
+          "similarity": 0.319,
+          "hours_apart": 17.4,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 43,
+          "source": "Breaking Defense",
+          "title": "Why the Army needs a clean sheet modern combat vehicle",
+          "similarity": 0.302,
+          "hours_apart": 12.2,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 48,
+          "source": "Defense News",
+          "title": "Why the last tactical mile is crucial to acquisition reform",
+          "similarity": 0.297,
+          "hours_apart": 15.2,
+          "cluster": null,
+          "linkable": false
+        }
+      ],
+      "label": "singleton",
+      "partner": null,
+      "partner_source": null,
+      "cause": ""
+    },
+    {
+      "item_id": 52,
+      "source": "Defense News",
+      "title": "Steam catapults? US Navy appears to be sticking with electromagnetics on carriers",
+      "band": "related",
+      "best_cross_source": {
+        "item_id": 36,
+        "source": "Breaking Defense",
+        "title": "Navy wants more offensive, ‘expeditionary’ cyber capabilities",
+        "similarity": 0.39,
+        "hours_apart": 18.2,
+        "cluster": null,
+        "linkable": false
+      },
+      "neighbours": [
+        {
+          "item_id": 36,
+          "source": "Breaking Defense",
+          "title": "Navy wants more offensive, ‘expeditionary’ cyber capabilities",
+          "similarity": 0.39,
+          "hours_apart": 18.2,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 41,
+          "source": "Breaking Defense",
+          "title": "Air, Space Forces pick up research pace for orbital cargo delivery",
+          "similarity": 0.35,
+          "hours_apart": 4.2,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 48,
+          "source": "Defense News",
+          "title": "Why the last tactical mile is crucial to acquisition reform",
+          "similarity": 0.335,
+          "hours_apart": 21.5,
+          "cluster": null,
+          "linkable": false
+        }
+      ],
+      "label": "singleton",
+      "partner": null,
+      "partner_source": null,
+      "cause": ""
+    },
+    {
+      "item_id": 54,
+      "source": "Defense News",
+      "title": "Greenland welcomes US military pact but trust still shaky",
+      "band": "far",
+      "best_cross_source": {
+        "item_id": 98,
+        "source": "South China Morning Post",
+        "title": "AI war, Taiwan and translation: SCMP answers your questions from Xi-Trump summit",
+        "similarity": 0.332,
+        "hours_apart": 38.5,
+        "cluster": null,
+        "linkable": false
+      },
+      "neighbours": [
+        {
+          "item_id": 47,
+          "source": "Defense News",
+          "title": "US to provide critical but more limited capabilities to NATO, top commander says",
+          "similarity": 0.416,
+          "hours_apart": 25.0,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 98,
+          "source": "South China Morning Post",
+          "title": "AI war, Taiwan and translation: SCMP answers your questions from Xi-Trump summit",
+          "similarity": 0.332,
+          "hours_apart": 38.5,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 123,
+          "source": "BBC World",
+          "title": "Iran's president tells Trump it will never 'bend the knee'",
+          "similarity": 0.329,
+          "hours_apart": 2.8,
+          "cluster": null,
+          "linkable": false
+        }
+      ],
+      "label": "singleton",
+      "partner": null,
+      "partner_source": null,
+      "cause": "partner report outside the window"
+    },
+    {
+      "item_id": 55,
+      "source": "Defense News",
+      "title": "German defense minister sees smooth sailing in parliament for his record defense budget",
+      "band": "far",
+      "best_cross_source": {
+        "item_id": 122,
+        "source": "BBC World",
+        "title": "Trump's Board of Peace unveils $2.45bn Gaza recovery plan",
+        "similarity": 0.202,
+        "hours_apart": 20.3,
+        "cluster": null,
+        "linkable": false
+      },
+      "neighbours": [
+        {
+          "item_id": 56,
+          "source": "Defense News",
+          "title": "Europe’s push to reduce US reliance is reshaping the defense space market",
+          "similarity": 0.262,
+          "hours_apart": 0.7,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 46,
+          "source": "Defense News",
+          "title": "Italy taps state-owned firms to build two naval destroyers in $4.2 billion deal",
+          "similarity": 0.235,
+          "hours_apart": 26.6,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 57,
+          "source": "Defense News",
+          "title": "Germany wants to manufacture American PAC-3 interceptors to help meet global demand",
+          "similarity": 0.23,
+          "hours_apart": 1.0,
+          "cluster": null,
+          "linkable": false
+        }
+      ],
+      "label": "singleton",
+      "partner": null,
+      "partner_source": null,
+      "cause": ""
+    },
+    {
+      "item_id": 56,
+      "source": "Defense News",
+      "title": "Europe’s push to reduce US reliance is reshaping the defense space market",
+      "band": "related",
+      "best_cross_source": {
+        "item_id": 31,
+        "source": "Breaking Defense",
+        "title": "Russian hybrid attacks likely to increase in coming months: Danish intel assessment",
+        "similarity": 0.409,
+        "hours_apart": 28.9,
+        "cluster": null,
+        "linkable": false
+      },
+      "neighbours": [
+        {
+          "item_id": 47,
+          "source": "Defense News",
+          "title": "US to provide critical but more limited capabilities to NATO, top commander says",
+          "similarity": 0.478,
+          "hours_apart": 27.2,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 50,
+          "source": "Defense News",
+          "title": "Report: CIA warned Europe of Russian drone attack from vessels in the Mediterranean",
+          "similarity": 0.433,
+          "hours_apart": 22.1,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 31,
+          "source": "Breaking Defense",
+          "title": "Russian hybrid attacks likely to increase in coming months: Danish intel assessment",
+          "similarity": 0.409,
+          "hours_apart": 28.9,
+          "cluster": null,
+          "linkable": false
+        }
+      ],
+      "label": "singleton",
+      "partner": null,
+      "partner_source": null,
+      "cause": ""
+    },
+    {
+      "item_id": 57,
+      "source": "Defense News",
+      "title": "Germany wants to manufacture American PAC-3 interceptors to help meet global demand",
+      "band": "far",
+      "best_cross_source": {
+        "item_id": 19,
+        "source": "Al Jazeera",
+        "title": "Multiple regions in Russia come under Ukrainian drone attacks",
+        "similarity": 0.317,
+        "hours_apart": 40.3,
+        "cluster": null,
+        "linkable": false
+      },
+      "neighbours": [
+        {
+          "item_id": 56,
+          "source": "Defense News",
+          "title": "Europe’s push to reduce US reliance is reshaping the defense space market",
+          "similarity": 0.384,
+          "hours_apart": 0.3,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 19,
+          "source": "Al Jazeera",
+          "title": "Multiple regions in Russia come under Ukrainian drone attacks",
+          "similarity": 0.317,
+          "hours_apart": 40.3,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 50,
+          "source": "Defense News",
+          "title": "Report: CIA warned Europe of Russian drone attack from vessels in the Mediterranean",
+          "similarity": 0.315,
+          "hours_apart": 22.4,
+          "cluster": null,
+          "linkable": false
+        }
+      ],
+      "label": "singleton",
+      "partner": null,
+      "partner_source": null,
+      "cause": ""
+    },
+    {
+      "item_id": 66,
+      "source": "War on the Rocks",
+      "title": "Tracing the Future Soldier’s Tech Stack",
+      "band": "related",
+      "best_cross_source": {
+        "item_id": 36,
+        "source": "Breaking Defense",
+        "title": "Navy wants more offensive, ‘expeditionary’ cyber capabilities",
+        "similarity": 0.402,
+        "hours_apart": 19.4,
+        "cluster": null,
+        "linkable": false
+      },
+      "neighbours": [
+        {
+          "item_id": 36,
+          "source": "Breaking Defense",
+          "title": "Navy wants more offensive, ‘expeditionary’ cyber capabilities",
+          "similarity": 0.402,
+          "hours_apart": 19.4,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 69,
+          "source": "War on the Rocks",
+          "title": "The New Signature Wounds: How Drone Warfare Is Reshaping the Injuries Veterans Bring Home",
+          "similarity": 0.38,
+          "hours_apart": 24.7,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 43,
+          "source": "Breaking Defense",
+          "title": "Why the Army needs a clean sheet modern combat vehicle",
+          "similarity": 0.346,
+          "hours_apart": 43.6,
+          "cluster": null,
+          "linkable": false
+        }
+      ],
+      "label": "singleton",
+      "partner": null,
+      "partner_source": null,
+      "cause": "analysis"
+    },
+    {
+      "item_id": 69,
+      "source": "War on the Rocks",
+      "title": "The New Signature Wounds: How Drone Warfare Is Reshaping the Injuries Veterans Bring Home",
+      "band": "related",
+      "best_cross_source": {
+        "item_id": 48,
+        "source": "Defense News",
+        "title": "Why the last tactical mile is crucial to acquisition reform",
+        "similarity": 0.353,
+        "hours_apart": 8.6,
+        "cluster": null,
+        "linkable": false
+      },
+      "neighbours": [
+        {
+          "item_id": 66,
+          "source": "War on the Rocks",
+          "title": "Tracing the Future Soldier’s Tech Stack",
+          "similarity": 0.38,
+          "hours_apart": 24.7,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 48,
+          "source": "Defense News",
+          "title": "Why the last tactical mile is crucial to acquisition reform",
+          "similarity": 0.353,
+          "hours_apart": 8.6,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 36,
+          "source": "Breaking Defense",
+          "title": "Navy wants more offensive, ‘expeditionary’ cyber capabilities",
+          "similarity": 0.351,
+          "hours_apart": 5.3,
+          "cluster": null,
+          "linkable": false
+        }
+      ],
+      "label": "singleton",
+      "partner": null,
+      "partner_source": null,
+      "cause": "analysis"
+    },
+    {
+      "item_id": 70,
+      "source": "War on the Rocks",
+      "title": "South Korea’s Deliberate Strategic Ambiguity on Taiwan",
+      "band": "near",
+      "best_cross_source": {
+        "item_id": 98,
+        "source": "South China Morning Post",
+        "title": "AI war, Taiwan and translation: SCMP answers your questions from Xi-Trump summit",
+        "similarity": 0.472,
+        "hours_apart": 36.4,
+        "cluster": null,
+        "linkable": false
+      },
+      "neighbours": [
+        {
+          "item_id": 98,
+          "source": "South China Morning Post",
+          "title": "AI war, Taiwan and translation: SCMP answers your questions from Xi-Trump summit",
+          "similarity": 0.472,
+          "hours_apart": 36.4,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 94,
+          "source": "South China Morning Post",
+          "title": "From Suzhou to AI: Singapore, China eye new playbook for economic ties",
+          "similarity": 0.374,
+          "hours_apart": 36.8,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 67,
+          "source": "War on the Rocks",
+          "title": "North Korea’s Irregular Warfare After Ukraine",
+          "similarity": 0.364,
+          "hours_apart": 38.0,
+          "cluster": null,
+          "linkable": false
+        }
+      ],
+      "label": "singleton",
+      "partner": null,
+      "partner_source": null,
+      "cause": "analysis"
+    },
+    {
+      "item_id": 87,
+      "source": "South China Morning Post",
+      "title": "Indonesian coal deal fuels doubts over production quota approvals",
+      "band": "far",
+      "best_cross_source": {
+        "item_id": 54,
+        "source": "Defense News",
+        "title": "Greenland welcomes US military pact but trust still shaky",
+        "similarity": 0.228,
+        "hours_apart": 40.6,
+        "cluster": null,
+        "linkable": false
+      },
+      "neighbours": [
+        {
+          "item_id": 104,
+          "source": "South China Morning Post",
+          "title": "Japan’s cut-price morgues cash in on legal loopholes as lonely deaths rise",
+          "similarity": 0.271,
+          "hours_apart": 4.0,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 94,
+          "source": "South China Morning Post",
+          "title": "From Suzhou to AI: Singapore, China eye new playbook for economic ties",
+          "similarity": 0.25,
+          "hours_apart": 1.7,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 54,
+          "source": "Defense News",
+          "title": "Greenland welcomes US military pact but trust still shaky",
+          "similarity": 0.228,
+          "hours_apart": 40.6,
+          "cluster": null,
+          "linkable": false
+        }
+      ],
+      "label": "singleton",
+      "partner": null,
+      "partner_source": null,
+      "cause": ""
+    },
+    {
+      "item_id": 88,
+      "source": "South China Morning Post",
+      "title": "Asia-Pacific hotels a ‘most compelling’ investment amid travel growth, flat supply: CBRE",
+      "band": "far",
+      "best_cross_source": {
+        "item_id": 70,
+        "source": "War on the Rocks",
+        "title": "South Korea’s Deliberate Strategic Ambiguity on Taiwan",
+        "similarity": 0.257,
+        "hours_apart": 38.5,
+        "cluster": null,
+        "linkable": false
+      },
+      "neighbours": [
+        {
+          "item_id": 93,
+          "source": "South China Morning Post",
+          "title": "Over 1,000 visitors flock to Po Pin Chau trail as Mid-Autumn Festival holiday begins",
+          "similarity": 0.336,
+          "hours_apart": 1.2,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 100,
+          "source": "South China Morning Post",
+          "title": "Hong Kong astronaut Lai Ka-ying sends Mid-Autumn Festival wishes to residents from space",
+          "similarity": 0.287,
+          "hours_apart": 2.2,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 104,
+          "source": "South China Morning Post",
+          "title": "Japan’s cut-price morgues cash in on legal loopholes as lonely deaths rise",
+          "similarity": 0.276,
+          "hours_apart": 4.0,
+          "cluster": null,
+          "linkable": false
+        }
+      ],
+      "label": "low_value",
+      "partner": null,
+      "partner_source": null,
+      "cause": "business promo"
+    },
+    {
+      "item_id": 89,
+      "source": "South China Morning Post",
+      "title": "Malaysia’s Najib ‘has no money’ to pay fine for house arrest, lawyer says",
+      "band": "far",
+      "best_cross_source": {
+        "item_id": 27,
+        "source": "Al Jazeera",
+        "title": "NYC police arrest Susan Sarandon, other celebrities protesting Netanyahu",
+        "similarity": 0.282,
+        "hours_apart": 5.4,
+        "cluster": null,
+        "linkable": false
+      },
+      "neighbours": [
+        {
+          "item_id": 101,
+          "source": "South China Morning Post",
+          "title": "Ex-Malaysian minister charged with sedition over Negeri Sembilan royal crisis",
+          "similarity": 0.404,
+          "hours_apart": 2.9,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 27,
+          "source": "Al Jazeera",
+          "title": "NYC police arrest Susan Sarandon, other celebrities protesting Netanyahu",
+          "similarity": 0.282,
+          "hours_apart": 5.4,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 104,
+          "source": "South China Morning Post",
+          "title": "Japan’s cut-price morgues cash in on legal loopholes as lonely deaths rise",
+          "similarity": 0.249,
+          "hours_apart": 4.0,
+          "cluster": null,
+          "linkable": false
+        }
+      ],
+      "label": "singleton",
+      "partner": null,
+      "partner_source": null,
+      "cause": ""
+    },
+    {
+      "item_id": 94,
+      "source": "South China Morning Post",
+      "title": "From Suzhou to AI: Singapore, China eye new playbook for economic ties",
+      "band": "related",
+      "best_cross_source": {
+        "item_id": 26,
+        "source": "Al Jazeera",
+        "title": "When AI’s moving this fast, who’s protecting us?",
+        "similarity": 0.428,
+        "hours_apart": 2.7,
+        "cluster": null,
+        "linkable": false
+      },
+      "neighbours": [
+        {
+          "item_id": 26,
+          "source": "Al Jazeera",
+          "title": "When AI’s moving this fast, who’s protecting us?",
+          "similarity": 0.428,
+          "hours_apart": 2.7,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 92,
+          "source": "South China Morning Post",
+          "title": "Xi-Trump dinner puts US tech titans in spotlight – what does it mean for China ties?",
+          "similarity": 0.423,
+          "hours_apart": 0.7,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 98,
+          "source": "South China Morning Post",
+          "title": "AI war, Taiwan and translation: SCMP answers your questions from Xi-Trump summit",
+          "similarity": 0.422,
+          "hours_apart": 0.3,
+          "cluster": null,
+          "linkable": false
+        }
+      ],
+      "label": "singleton",
+      "partner": null,
+      "partner_source": null,
+      "cause": ""
+    },
+    {
+      "item_id": 95,
+      "source": "South China Morning Post",
+      "title": "France to protect key Saudi oil terminal as Houthis step up missile attacks",
+      "band": "near",
+      "best_cross_source": {
+        "item_id": 24,
+        "source": "Al Jazeera",
+        "title": "Oil prices jump after Yemen’s Houthis claim attacks on Saudi facilities",
+        "similarity": 0.484,
+        "hours_apart": 2.4,
+        "cluster": null,
+        "linkable": false
+      },
+      "neighbours": [
+        {
+          "item_id": 24,
+          "source": "Al Jazeera",
+          "title": "Oil prices jump after Yemen’s Houthis claim attacks on Saudi facilities",
+          "similarity": 0.484,
+          "hours_apart": 2.4,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 25,
+          "source": "Al Jazeera",
+          "title": "Saudi, Turkish, Pakistani chiefs plan urgent talks amid Yemen fighting",
+          "similarity": 0.406,
+          "hours_apart": 2.5,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 56,
+          "source": "Defense News",
+          "title": "Europe’s push to reduce US reliance is reshaping the defense space market",
+          "similarity": 0.357,
+          "hours_apart": 40.8,
+          "cluster": null,
+          "linkable": false
+        }
+      ],
+      "label": "missed_new_event",
+      "partner": 24,
+      "partner_source": "Al Jazeera",
+      "cause": "different angle (response vs market reaction)"
+    },
+    {
+      "item_id": 98,
+      "source": "South China Morning Post",
+      "title": "AI war, Taiwan and translation: SCMP answers your questions from Xi-Trump summit",
+      "band": "near",
+      "best_cross_source": {
+        "item_id": 70,
+        "source": "War on the Rocks",
+        "title": "South Korea’s Deliberate Strategic Ambiguity on Taiwan",
+        "similarity": 0.472,
+        "hours_apart": 36.4,
+        "cluster": null,
+        "linkable": false
+      },
+      "neighbours": [
+        {
+          "item_id": 70,
+          "source": "War on the Rocks",
+          "title": "South Korea’s Deliberate Strategic Ambiguity on Taiwan",
+          "similarity": 0.472,
+          "hours_apart": 36.4,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 26,
+          "source": "Al Jazeera",
+          "title": "When AI’s moving this fast, who’s protecting us?",
+          "similarity": 0.439,
+          "hours_apart": 2.3,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 107,
+          "source": "BBC World",
+          "title": "Xi got Trump's red carpet welcome - but not everything he wanted",
+          "similarity": 0.438,
+          "hours_apart": 2.0,
+          "cluster": 0,
+          "linkable": false
+        }
+      ],
+      "label": "low_value",
+      "partner": null,
+      "partner_source": null,
+      "cause": "reader Q&A explainer"
+    },
+    {
+      "item_id": 99,
+      "source": "South China Morning Post",
+      "title": "From wine to ping-pong, Trump and Xi’s state dinner is heavy on historic symbolism",
+      "band": "near",
+      "best_cross_source": {
+        "item_id": 106,
+        "source": "BBC World",
+        "title": "Trump and Xi exchange warm words at state dinner but little progress on key issues",
+        "similarity": 0.491,
+        "hours_apart": 2.4,
+        "cluster": null,
+        "linkable": false
+      },
+      "neighbours": [
+        {
+          "item_id": 92,
+          "source": "South China Morning Post",
+          "title": "Xi-Trump dinner puts US tech titans in spotlight – what does it mean for China ties?",
+          "similarity": 0.739,
+          "hours_apart": 1.2,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 86,
+          "source": "South China Morning Post",
+          "title": "Trump gives Xi a tour of his pet White House building projects, including the ballroom",
+          "similarity": 0.563,
+          "hours_apart": 2.3,
+          "cluster": 0,
+          "linkable": false
+        },
+        {
+          "item_id": 105,
+          "source": "South China Morning Post",
+          "title": "Trump autopen joke at Biden’s expense draws rare laugh from China’s Xi",
+          "similarity": 0.507,
+          "hours_apart": 2.6,
+          "cluster": null,
+          "linkable": false
+        }
+      ],
+      "label": "missed_new_event",
+      "partner": 106,
+      "partner_source": "BBC World",
+      "cause": "colour piece vs substance on one dinner"
+    },
+    {
+      "item_id": 101,
+      "source": "South China Morning Post",
+      "title": "Ex-Malaysian minister charged with sedition over Negeri Sembilan royal crisis",
+      "band": "far",
+      "best_cross_source": {
+        "item_id": 27,
+        "source": "Al Jazeera",
+        "title": "NYC police arrest Susan Sarandon, other celebrities protesting Netanyahu",
+        "similarity": 0.262,
+        "hours_apart": 2.5,
+        "cluster": null,
+        "linkable": false
+      },
+      "neighbours": [
+        {
+          "item_id": 89,
+          "source": "South China Morning Post",
+          "title": "Malaysia’s Najib ‘has no money’ to pay fine for house arrest, lawyer says",
+          "similarity": 0.404,
+          "hours_apart": 2.9,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 27,
+          "source": "Al Jazeera",
+          "title": "NYC police arrest Susan Sarandon, other celebrities protesting Netanyahu",
+          "similarity": 0.262,
+          "hours_apart": 2.5,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 28,
+          "source": "Al Jazeera",
+          "title": "Contrasting treatment of Israel and Palestine on display at the UN",
+          "similarity": 0.212,
+          "hours_apart": 2.6,
+          "cluster": null,
+          "linkable": false
+        }
+      ],
+      "label": "singleton",
+      "partner": null,
+      "partner_source": null,
+      "cause": ""
+    },
+    {
+      "item_id": 104,
+      "source": "South China Morning Post",
+      "title": "Japan’s cut-price morgues cash in on legal loopholes as lonely deaths rise",
+      "band": "far",
+      "best_cross_source": {
+        "item_id": 17,
+        "source": "Al Jazeera",
+        "title": "Japan moves to tighten rules for foreigners, throwing futures into doubt",
+        "similarity": 0.29,
+        "hours_apart": 2.0,
+        "cluster": null,
+        "linkable": false
+      },
+      "neighbours": [
+        {
+          "item_id": 17,
+          "source": "Al Jazeera",
+          "title": "Japan moves to tighten rules for foreigners, throwing futures into doubt",
+          "similarity": 0.29,
+          "hours_apart": 2.0,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 88,
+          "source": "South China Morning Post",
+          "title": "Asia-Pacific hotels a ‘most compelling’ investment amid travel growth, flat supply: CBRE",
+          "similarity": 0.276,
+          "hours_apart": 4.0,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 87,
+          "source": "South China Morning Post",
+          "title": "Indonesian coal deal fuels doubts over production quota approvals",
+          "similarity": 0.271,
+          "hours_apart": 4.0,
+          "cluster": null,
+          "linkable": false
+        }
+      ],
+      "label": "singleton",
+      "partner": null,
+      "partner_source": null,
+      "cause": ""
+    },
+    {
+      "item_id": 105,
+      "source": "South China Morning Post",
+      "title": "Trump autopen joke at Biden’s expense draws rare laugh from China’s Xi",
+      "band": "related",
+      "best_cross_source": {
+        "item_id": 107,
+        "source": "BBC World",
+        "title": "Xi got Trump's red carpet welcome - but not everything he wanted",
+        "similarity": 0.397,
+        "hours_apart": 0.7,
+        "cluster": 0,
+        "linkable": false
+      },
+      "neighbours": [
+        {
+          "item_id": 92,
+          "source": "South China Morning Post",
+          "title": "Xi-Trump dinner puts US tech titans in spotlight – what does it mean for China ties?",
+          "similarity": 0.513,
+          "hours_apart": 3.8,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 99,
+          "source": "South China Morning Post",
+          "title": "From wine to ping-pong, Trump and Xi’s state dinner is heavy on historic symbolism",
+          "similarity": 0.507,
+          "hours_apart": 2.6,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 102,
+          "source": "South China Morning Post",
+          "title": "Pitch perfect cultural diplomacy wins heart of China’s first lady Peng Liyuan",
+          "similarity": 0.479,
+          "hours_apart": 1.5,
+          "cluster": null,
+          "linkable": false
+        }
+      ],
+      "label": "missed_member",
+      "partner": 107,
+      "partner_source": "BBC World",
+      "cause": "colour piece on the summit; cosine 0.40"
+    },
+    {
+      "item_id": 113,
+      "source": "BBC World",
+      "title": "Priest killed and four injured in knife attack at Polish abbey",
+      "band": "far",
+      "best_cross_source": {
+        "item_id": 27,
+        "source": "Al Jazeera",
+        "title": "NYC police arrest Susan Sarandon, other celebrities protesting Netanyahu",
+        "similarity": 0.222,
+        "hours_apart": 7.3,
+        "cluster": null,
+        "linkable": false
+      },
+      "neighbours": [
+        {
+          "item_id": 117,
+          "source": "BBC World",
+          "title": "105-year-old investigated for crimes at Nazi PoW camp in Germany",
+          "similarity": 0.303,
+          "hours_apart": 4.7,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 27,
+          "source": "Al Jazeera",
+          "title": "NYC police arrest Susan Sarandon, other celebrities protesting Netanyahu",
+          "similarity": 0.222,
+          "hours_apart": 7.3,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 19,
+          "source": "Al Jazeera",
+          "title": "Multiple regions in Russia come under Ukrainian drone attacks",
+          "similarity": 0.208,
+          "hours_apart": 10.0,
+          "cluster": null,
+          "linkable": false
+        }
+      ],
+      "label": "singleton",
+      "partner": null,
+      "partner_source": null,
+      "cause": ""
+    },
+    {
+      "item_id": 115,
+      "source": "BBC World",
+      "title": "Rapper Macklemore announces 'Free Palestine' tour after Ed Sheeran fallout",
+      "band": "related",
+      "best_cross_source": {
+        "item_id": 22,
+        "source": "Al Jazeera",
+        "title": "Jewish protestors join Free Palestine march to denounce Netanyahu",
+        "similarity": 0.443,
+        "hours_apart": 9.9,
+        "cluster": null,
+        "linkable": false
+      },
+      "neighbours": [
+        {
+          "item_id": 22,
+          "source": "Al Jazeera",
+          "title": "Jewish protestors join Free Palestine march to denounce Netanyahu",
+          "similarity": 0.443,
+          "hours_apart": 9.9,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 122,
+          "source": "BBC World",
+          "title": "Trump's Board of Peace unveils $2.45bn Gaza recovery plan",
+          "similarity": 0.373,
+          "hours_apart": 7.7,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 29,
+          "source": "Al Jazeera",
+          "title": "More than 100 arrested as New Yorkers protest Netanyahu’s UN visit",
+          "similarity": 0.34,
+          "hours_apart": 8.5,
+          "cluster": null,
+          "linkable": false
+        }
+      ],
+      "label": "singleton",
+      "partner": null,
+      "partner_source": null,
+      "cause": ""
+    },
+    {
+      "item_id": 120,
+      "source": "BBC World",
+      "title": "Rogue OpenAI agent 'infiltrated' Australian government website in world first",
+      "band": "far",
+      "best_cross_source": {
+        "item_id": 50,
+        "source": "Defense News",
+        "title": "Report: CIA warned Europe of Russian drone attack from vessels in the Mediterranean",
+        "similarity": 0.29,
+        "hours_apart": 4.4,
+        "cluster": null,
+        "linkable": false
+      },
+      "neighbours": [
+        {
+          "item_id": 111,
+          "source": "BBC World",
+          "title": "Why Australia chose the world's biggest political stage to reveal OpenAI hack",
+          "similarity": 0.682,
+          "hours_apart": 2.4,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 50,
+          "source": "Defense News",
+          "title": "Report: CIA warned Europe of Russian drone attack from vessels in the Mediterranean",
+          "similarity": 0.29,
+          "hours_apart": 4.4,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 98,
+          "source": "South China Morning Post",
+          "title": "AI war, Taiwan and translation: SCMP answers your questions from Xi-Trump summit",
+          "similarity": 0.26,
+          "hours_apart": 14.2,
+          "cluster": null,
+          "linkable": false
+        }
+      ],
+      "label": "singleton",
+      "partner": null,
+      "partner_source": null,
+      "cause": ""
+    },
+    {
+      "item_id": 122,
+      "source": "BBC World",
+      "title": "Trump's Board of Peace unveils $2.45bn Gaza recovery plan",
+      "band": "far",
+      "best_cross_source": {
+        "item_id": 15,
+        "source": "Al Jazeera",
+        "title": "Converging crises, chaos and walkouts dominate UNGA Day Three",
+        "similarity": 0.35,
+        "hours_apart": 20.3,
+        "cluster": null,
+        "linkable": false
+      },
+      "neighbours": [
+        {
+          "item_id": 115,
+          "source": "BBC World",
+          "title": "Rapper Macklemore announces 'Free Palestine' tour after Ed Sheeran fallout",
+          "similarity": 0.373,
+          "hours_apart": 7.7,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 15,
+          "source": "Al Jazeera",
+          "title": "Converging crises, chaos and walkouts dominate UNGA Day Three",
+          "similarity": 0.35,
+          "hours_apart": 20.3,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 28,
+          "source": "Al Jazeera",
+          "title": "Contrasting treatment of Israel and Palestine on display at the UN",
+          "similarity": 0.341,
+          "hours_apart": 16.3,
+          "cluster": null,
+          "linkable": false
+        }
+      ],
+      "label": "singleton",
+      "partner": null,
+      "partner_source": null,
+      "cause": ""
+    },
+    {
+      "item_id": 123,
+      "source": "BBC World",
+      "title": "Iran's president tells Trump it will never 'bend the knee'",
+      "band": "far",
+      "best_cross_source": {
+        "item_id": 25,
+        "source": "Al Jazeera",
+        "title": "Saudi, Turkish, Pakistani chiefs plan urgent talks amid Yemen fighting",
+        "similarity": 0.348,
+        "hours_apart": 33.3,
+        "cluster": null,
+        "linkable": false
+      },
+      "neighbours": [
+        {
+          "item_id": 25,
+          "source": "Al Jazeera",
+          "title": "Saudi, Turkish, Pakistani chiefs plan urgent talks amid Yemen fighting",
+          "similarity": 0.348,
+          "hours_apart": 33.3,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 54,
+          "source": "Defense News",
+          "title": "Greenland welcomes US military pact but trust still shaky",
+          "similarity": 0.329,
+          "hours_apart": 2.8,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 122,
+          "source": "BBC World",
+          "title": "Trump's Board of Peace unveils $2.45bn Gaza recovery plan",
+          "similarity": 0.308,
+          "hours_apart": 15.9,
+          "cluster": null,
+          "linkable": false
+        }
+      ],
+      "label": "singleton",
+      "partner": null,
+      "partner_source": null,
+      "cause": ""
+    },
+    {
+      "item_id": 125,
+      "source": "BBC World",
+      "title": "Why India's Election Commission is in the eye of a storm - again",
+      "band": "far",
+      "best_cross_source": {
+        "item_id": 18,
+        "source": "Al Jazeera",
+        "title": "Tata v Tata: What’s behind India’s big boardroom brawl?",
+        "similarity": 0.332,
+        "hours_apart": 20.9,
+        "cluster": null,
+        "linkable": false
+      },
+      "neighbours": [
+        {
+          "item_id": 18,
+          "source": "Al Jazeera",
+          "title": "Tata v Tata: What’s behind India’s big boardroom brawl?",
+          "similarity": 0.332,
+          "hours_apart": 20.9,
+          "cluster": null,
+          "linkable": false
+        },
+        {
+          "item_id": 91,
+          "source": "South China Morning Post",
+          "title": "Flood-ravaged Nepal pushes for climate deal with India, China",
+          "similarity": 0.257,
+          "hours_apart": 22.6,
+          "cluster": 1,
+          "linkable": false
+        },
+        {
+          "item_id": 120,
+          "source": "BBC World",
+          "title": "Rogue OpenAI agent 'infiltrated' Australian government website in world first",
+          "similarity": 0.239,
+          "hours_apart": 7.3,
+          "cluster": null,
+          "linkable": false
+        }
+      ],
+      "label": "singleton",
+      "partner": null,
+      "partner_source": null,
+      "cause": ""
+    }
+  ],
+  "pairs": [
+    {
+      "a": 32,
+      "b": 46,
+      "sources": [
+        "Breaking Defense",
+        "Defense News"
+      ],
+      "titles": [
+        "OCCAR awards $4.2B DDX destroyer contract to Fincantieri, Leonardo joint venture",
+        "Italy taps state-owned firms to build two naval destroyers in $4.2 billion deal"
+      ],
+      "similarity": 0.524,
+      "hours_apart": 1.5,
+      "shared_actors": [
+        "ddx",
+        "fincantieri",
+        "leonardo",
+        "occar",
+        "taliban"
+      ],
+      "clusters": [
+        null,
+        null
+      ],
+      "same_story": true
+    },
+    {
+      "a": 92,
+      "b": 107,
+      "sources": [
+        "South China Morning Post",
+        "BBC World"
+      ],
+      "titles": [
+        "Xi-Trump dinner puts US tech titans in spotlight – what does it mean for China ties?",
+        "Xi got Trump's red carpet welcome - but not everything he wanted"
+      ],
+      "similarity": 0.524,
+      "hours_apart": 3.1,
+      "shared_actors": [
+        "china",
+        "united states"
+      ],
+      "clusters": [
+        null,
+        0
+      ],
+      "same_story": true
+    },
+    {
+      "a": 19,
+      "b": 50,
+      "sources": [
+        "Al Jazeera",
+        "Defense News"
+      ],
+      "titles": [
+        "Multiple regions in Russia come under Ukrainian drone attacks",
+        "Report: CIA warned Europe of Russian drone attack from vessels in the Mediterranean"
+      ],
+      "similarity": 0.504,
+      "hours_apart": 18.0,
+      "shared_actors": [
+        "russia",
+        "ukraine"
+      ],
+      "clusters": [
+        null,
+        null
+      ],
+      "same_story": false
+    },
+    {
+      "a": 22,
+      "b": 108,
+      "sources": [
+        "Al Jazeera",
+        "BBC World"
+      ],
+      "titles": [
+        "Jewish protestors join Free Palestine march to denounce Netanyahu",
+        "Netanyahu defends Israeli military action as delegates walk out before UN speech"
+      ],
+      "similarity": 0.493,
+      "hours_apart": 3.1,
+      "shared_actors": [
+        "israel"
+      ],
+      "clusters": [
+        null,
+        null
+      ],
+      "same_story": false
+    },
+    {
+      "a": 99,
+      "b": 106,
+      "sources": [
+        "South China Morning Post",
+        "BBC World"
+      ],
+      "titles": [
+        "From wine to ping-pong, Trump and Xi’s state dinner is heavy on historic symbolism",
+        "Trump and Xi exchange warm words at state dinner but little progress on key issues"
+      ],
+      "similarity": 0.491,
+      "hours_apart": 2.4,
+      "shared_actors": [
+        "china",
+        "united states"
+      ],
+      "clusters": [
+        null,
+        null
+      ],
+      "same_story": true
+    },
+    {
+      "a": 92,
+      "b": 106,
+      "sources": [
+        "South China Morning Post",
+        "BBC World"
+      ],
+      "titles": [
+        "Xi-Trump dinner puts US tech titans in spotlight – what does it mean for China ties?",
+        "Trump and Xi exchange warm words at state dinner but little progress on key issues"
+      ],
+      "similarity": 0.489,
+      "hours_apart": 1.2,
+      "shared_actors": [
+        "china",
+        "united states"
+      ],
+      "clusters": [
+        null,
+        null
+      ],
+      "same_story": true
+    },
+    {
+      "a": 24,
+      "b": 95,
+      "sources": [
+        "Al Jazeera",
+        "South China Morning Post"
+      ],
+      "titles": [
+        "Oil prices jump after Yemen’s Houthis claim attacks on Saudi facilities",
+        "France to protect key Saudi oil terminal as Houthis step up missile attacks"
+      ],
+      "similarity": 0.484,
+      "hours_apart": 2.4,
+      "shared_actors": [
+        "houthis",
+        "iran",
+        "saudi arabia"
+      ],
+      "clusters": [
+        null,
+        null
+      ],
+      "same_story": true
+    },
+    {
+      "a": 15,
+      "b": 108,
+      "sources": [
+        "Al Jazeera",
+        "BBC World"
+      ],
+      "titles": [
+        "Converging crises, chaos and walkouts dominate UNGA Day Three",
+        "Netanyahu defends Israeli military action as delegates walk out before UN speech"
+      ],
+      "similarity": 0.481,
+      "hours_apart": 5.7,
+      "shared_actors": [
+        "israel"
+      ],
+      "clusters": [
+        null,
+        null
+      ],
+      "same_story": false
+    },
+    {
+      "a": 99,
+      "b": 107,
+      "sources": [
+        "South China Morning Post",
+        "BBC World"
+      ],
+      "titles": [
+        "From wine to ping-pong, Trump and Xi’s state dinner is heavy on historic symbolism",
+        "Xi got Trump's red carpet welcome - but not everything he wanted"
+      ],
+      "similarity": 0.473,
+      "hours_apart": 1.8,
+      "shared_actors": [
+        "china",
+        "united states"
+      ],
+      "clusters": [
+        null,
+        0
+      ],
+      "same_story": true
+    },
+    {
+      "a": 70,
+      "b": 98,
+      "sources": [
+        "War on the Rocks",
+        "South China Morning Post"
+      ],
+      "titles": [
+        "South Korea’s Deliberate Strategic Ambiguity on Taiwan",
+        "AI war, Taiwan and translation: SCMP answers your questions from Xi-Trump summit"
+      ],
+      "similarity": 0.472,
+      "hours_apart": 36.4,
+      "shared_actors": [
+        "taiwan",
+        "united states"
+      ],
+      "clusters": [
+        null,
+        null
+      ],
+      "same_story": false
+    },
+    {
+      "a": 31,
+      "b": 50,
+      "sources": [
+        "Breaking Defense",
+        "Defense News"
+      ],
+      "titles": [
+        "Russian hybrid attacks likely to increase in coming months: Danish intel assessment",
+        "Report: CIA warned Europe of Russian drone attack from vessels in the Mediterranean"
+      ],
+      "similarity": 0.456,
+      "hours_apart": 6.8,
+      "shared_actors": [
+        "nato",
+        "russia"
+      ],
+      "clusters": [
+        null,
+        null
+      ],
+      "same_story": false
+    }
+  ],
+  "labelled_by": "manual review of titles and nearest neighbours, 2026-09-25"
+}
