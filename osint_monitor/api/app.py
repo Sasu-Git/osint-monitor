@@ -22,6 +22,7 @@ from osint_monitor.api.websocket import router as sse_router
 from osint_monitor.api.routes.intelligence import router as intel_router
 from osint_monitor.api.routes.daemon import router as daemon_router
 from osint_monitor.api.routes.ingest import router as ingest_router
+from osint_monitor.api.routes.situations import router as situations_router
 from osint_monitor.api.auth import require_api_key
 
 logger = logging.getLogger(__name__)
@@ -68,6 +69,7 @@ app.include_router(sse_router, prefix="/api", tags=["stream"])
 app.include_router(intel_router, prefix="/api/intel", tags=["intelligence"])
 app.include_router(daemon_router, prefix="/api/daemon", tags=["daemon"])
 app.include_router(ingest_router, prefix="/api/ingest", tags=["ingest"])
+app.include_router(situations_router, prefix="/api/situations", tags=["situations"])
 
 
 @app.on_event("startup")
@@ -79,6 +81,33 @@ async def startup():
 @app.get("/", response_class=HTMLResponse)
 async def dashboard(request: Request):
     return templates.TemplateResponse(request, "dashboard.html")
+
+
+@app.get("/situations", response_class=HTMLResponse)
+async def situations_page(request: Request):
+    from osint_monitor.api.situation_views import list_situations
+    from osint_monitor.core.database import get_session
+    session = get_session()
+    try:
+        situations = list_situations(session)
+    finally:
+        session.close()
+    return templates.TemplateResponse(request, "situations.html", {"situations": situations})
+
+
+@app.get("/situations/{slug}", response_class=HTMLResponse)
+async def situation_detail_page(request: Request, slug: str):
+    from osint_monitor.api.situation_views import situation_detail
+    from osint_monitor.core.database import get_session
+    session = get_session()
+    try:
+        detail = situation_detail(session, slug)
+    finally:
+        session.close()
+    if detail is None:
+        return templates.TemplateResponse(request, "situation_detail.html", {"situation": None, "slug": slug},
+                                          status_code=404)
+    return templates.TemplateResponse(request, "situation_detail.html", {"situation": detail, "slug": slug})
 
 
 @app.get("/events", response_class=HTMLResponse)
