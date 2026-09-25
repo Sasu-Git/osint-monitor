@@ -37,10 +37,24 @@ MAX_LINK_HOURS = 72
 LARGE_CLUSTER_WARNING = 10
 
 
+def recent_items(session: Session, window_hours: int = DEFAULT_WINDOW_HOURS,
+                 now: datetime | None = None) -> list[RawItem]:
+    """Items fetched in the window whose publication date (if known) is inside it too."""
+    cutoff = (now or datetime.utcnow()) - timedelta(hours=window_hours)
+    fetched = (
+        session.query(RawItem)
+        .options(joinedload(RawItem.source))
+        .filter(RawItem.fetched_at >= cutoff)
+        .all()
+    )
+    return [i for i in fetched if i.published_at is None or i.published_at >= cutoff]
+
+
 def cluster_recent_items(
     session: Session,
     window_hours: int = DEFAULT_WINDOW_HOURS,
     min_cluster_size: int = MIN_CLUSTER_SIZE,
+    now: datetime | None = None,
 ) -> list[dict]:
     """Group recent items into events: narrative items by HDBSCAN + link graph on
     embeddings, structured (sensor / record) items by record identity
@@ -48,17 +62,10 @@ def cluster_recent_items(
 
     Returns list of cluster dicts: {item_ids, label, summary, severity, region, kind}.
     """
-    cutoff = datetime.utcnow() - timedelta(hours=window_hours)
-    recent = (
-        session.query(RawItem)
-        .options(joinedload(RawItem.source))
-        .filter(RawItem.fetched_at >= cutoff)
-        .all()
-    )
-    recent = [i for i in recent if i.published_at is None or i.published_at >= cutoff]
+    recent = recent_items(session, window_hours, now)
     narrative, structured = partition(recent, load_event_grouping_config())
     structured_groups = group_structured(structured, min_size=min_cluster_size)
-    narrative_groups = _cluster_narrative([i for i in narrative if i.embedding is not None], min_cluster_size)
+    narrative_groups = cluster_narrative([i for i in narrative if i.embedding is not None], min_cluster_size)
     logger.info(f"Event grouping: {len(narrative_groups)} narrative clusters from {len(narrative)} items, "
                 f"{len(structured_groups)} structured groups from {len(structured)} records")
     groups = {n: ids for n, ids in enumerate(narrative_groups)}
@@ -72,7 +79,7 @@ def cluster_recent_items(
     return clusters
 
 
-def _cluster_narrative(items: list[RawItem], min_cluster_size: int) -> list[list[int]]:
+def cluster_narrative(items: list[RawItem], min_cluster_size: int = MIN_CLUSTER_SIZE) -> list[list[int]]:
     """Semantic clustering of prose items (news, statements, analysis)."""
     if len(items) < min_cluster_size:
         logger.info(f"Only {len(items)} items with embeddings, skipping clustering")
