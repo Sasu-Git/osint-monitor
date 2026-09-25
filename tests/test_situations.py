@@ -294,3 +294,35 @@ def test_config_rejects_duplicate_or_malformed_slugs(config):
         SituationsConfig(**{**raw, "situations": raw["situations"] + [seed]})
     with pytest.raises(ValidationError):
         SituationsConfig(**{**raw, "situations": [{**seed, "slug": "US Iran!"}]})
+
+
+# --- diagnostics ---------------------------------------------------------------------------------
+
+def test_explain_gives_the_numbers_behind_match(grouper, seeds):
+    us_iran = next(s for s in seeds if s.slug == "us-iran")
+    talks = dev("US and Iran resume nuclear talks in Muscat", "United States", "Iran")
+    e = grouper.explain(talks, us_iran)
+    assert e["candidate"] and e["shared_actors"] == ["iran", "united states"] and e["coverage"] == 1.0
+    assert (e["score"], e["reasons"]) == grouper.match(talks, us_iran)
+    assert {s["signal"] for s in e["signals"]} >= {"actor_overlap", "topic_keywords"}
+    quake = grouper.explain(dev("Earthquake hits northern Japan", "Japan"), us_iran)
+    assert not quake["candidate"] and quake["excluded"] == "no shared actors"
+
+
+def test_situation_report_shows_decisions_candidates_and_recurring_pairs(session, grouper):
+    from osint_monitor.processors.situations.evaluation import situation_report
+    from osint_monitor.processors.situations.store import sync_seeds
+
+    sync_seeds(session, grouper.config, NOW)
+    add_event(session, "US and Iran resume nuclear talks", "United States", "Iran", hours_ago=3)
+    add_event(session, "Houthis claim attacks on Saudi oil facilities", "Houthis", "Saudi Arabia", hours_ago=2)
+    add_event(session, "France to protect Saudi terminal from Houthis", "France", "Houthis", "Saudi Arabia",
+              hours_ago=1)
+    report = situation_report(session, grouper)
+    rows = {r["summary"]: r for r in report["events"]}
+    talks = rows["US and Iran resume nuclear talks"]
+    assert talks["decision"] == "us-iran" and talks["candidates"][0]["slug"] == "us-iran"
+    # different exact sets: the current rule creates nothing, but the pair recurs
+    assert report["would_create"] == []
+    assert report["recurring_pairs"] == {"houthis + saudi arabia": [rows[t]["event_id"] for t in (
+        "Houthis claim attacks on Saudi oil facilities", "France to protect Saudi terminal from Houthis")]}
