@@ -15,8 +15,8 @@ windows:
   items_file: windows/2026-07-21.items.jsonl
   labels_file: labels/2026-07-21.labels.yaml
   items_sha256: defb0d57f9e6e45890758416e2ec102170f70d49c87aa829f5acba3a6ffb3c2b
-  labels_sha256: null
-  frozen_at: '2026-09-25T11:56:04'
+  labels_sha256: a69932af48474c6059a7c7e31e7227f5f03a60eae411357459863fcf06acc258
+  frozen_at: '2026-09-25T14:05:41'
   stats:
     items: 184
     sources: 4
@@ -40,8 +40,8 @@ windows:
   items_file: windows/2026-08-07.items.jsonl
   labels_file: labels/2026-08-07.labels.yaml
   items_sha256: ed662299446fdf84d6c422a2c550249e14a479baa3478470e30a68859a349ee7
-  labels_sha256: null
-  frozen_at: '2026-09-25T11:56:35'
+  labels_sha256: b8cd6fb93b219d788b1c4f8a6f479728cbca054befc1a8c355f4dc4df1bc427e
+  frozen_at: '2026-09-25T14:05:46'
   stats:
     items: 167
     sources: 3
@@ -64,8 +64,8 @@ windows:
   items_file: windows/2026-08-15.items.jsonl
   labels_file: labels/2026-08-15.labels.yaml
   items_sha256: 0274b7d836f97f8537b2772df6286f12bc4e20bab9ed1b272e6d91687cb7c0c2
-  labels_sha256: null
-  frozen_at: '2026-09-25T11:57:32'
+  labels_sha256: 01e703bce374a504f7d9dda35846062433a881fd0d1c9ea997ab25bf6e1b2acf
+  frozen_at: '2026-09-25T14:05:51'
   stats:
     items: 177
     sources: 2
@@ -87,8 +87,8 @@ windows:
   items_file: windows/2026-08-21.items.jsonl
   labels_file: labels/2026-08-21.labels.yaml
   items_sha256: c4932b5c4acf7d7566efd87b27a25dcb3ce78410c836ae1565463336ea860814
-  labels_sha256: null
-  frozen_at: '2026-09-25T12:58:56'
+  labels_sha256: 20f0208b9f4b2da497fac73afb2ec914ca0fc1982b5b7033a4cd84d34ca50ebf
+  frozen_at: '2026-09-25T14:05:55'
   stats:
     items: 162
     sources: 4
@@ -112,8 +112,8 @@ windows:
   items_file: windows/2026-08-31.items.jsonl
   labels_file: labels/2026-08-31.labels.yaml
   items_sha256: aed1d3041577c500c1eaddbbedd7f71aae088d0006dddec62a4a4b69e1d474de
-  labels_sha256: null
-  frozen_at: '2026-09-25T13:10:10'
+  labels_sha256: fd6da0138298cb9113e08d241e64fc2cb9cdb5b189e5bdb8800b5ef0c3f5d934
+  frozen_at: '2026-09-25T14:06:00'
   stats:
     items: 166
     sources: 4
@@ -137,8 +137,8 @@ windows:
   items_file: windows/2026-09-10.items.jsonl
   labels_file: labels/2026-09-10.labels.yaml
   items_sha256: fb1aa49e45d3315a4e8acc8c9f00a5de6205e3384bcd76e95fe46b169f8b1374
-  labels_sha256: null
-  frozen_at: '2026-09-25T13:58:28'
+  labels_sha256: 06369ed3b002661d45bbc65b7abef1ece3b70e9112370bc4fd33a9a30c36c7bc
+  frozen_at: '2026-09-25T14:06:05'
   stats:
     items: 101
     sources: 5
@@ -160,8 +160,8 @@ windows:
   items_file: windows/2026-09-25.items.jsonl
   labels_file: labels/2026-09-25.labels.yaml
   items_sha256: dd84b77e1b99c487396e1dc46411ea626ec49b005f98840e6a2f4dbba6affaef
-  labels_sha256: null
-  frozen_at: '2026-09-25T10:35:37'
+  labels_sha256: e9c8e45fb32fe42b09cd8b52d61179a71966d753cf69dabc100bd0762177c0ee
+  frozen_at: '2026-09-25T14:06:10'
   stats:
     items: 90
     sources: 6

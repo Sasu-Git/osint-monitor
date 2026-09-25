@@ -1,0 +1,335 @@
+# Gold labels for 2026-08-15. See osint_monitor/benchmark/format.py for the format.
+# Criteria: a development is one concrete occurrence; responses, follow-ups and analysis
+# of it are separate developments in the same storyline (related_but_distinct).
+# Blind: written from the label sheet only (title + excerpt), without similarity scores,
+# embeddings, replay or clusterer output.
+window: '2026-08-15'
+labelled_by: claude subagent (blind, from label-sheet only)
+labelled_at: '2026-09-25T14:03:29'
+developments:
+# --- Indonesia (Flores) earthquake -----------------------------------------------------
+- id: indonesia-flores-quake
+  storyline: indonesia-quake
+  members: [b-ddbd1c459b09, b-6c7107c5ad14, b-2231132356b1]
+  notes: the M7.7 quake itself with rising death toll (47 -> 51); AJ 'aftermath' item leads on the deaths too
+- id: indonesia-quake-survivor-accounts
+  storyline: indonesia-quake
+  members: [b-b30cd84dfc86]
+  notes: survivor feature
+- id: indonesia-quake-hospital-tents
+  storyline: indonesia-quake
+  members: [b-bd8a3daf7a97]
+  notes: patients treated in tents after hospital damaged (see uncertain pair with the aftermath item)
+# --- Colombia earthquake -----------------------------------------------------------------
+- id: colombia-asks-trump-tariff-suspension
+  storyline: colombia-quake
+  members: [b-fce2930002bc, b-e01a62fce6ad]
+- id: colombia-quake-girl-rescued
+  storyline: colombia-quake
+  members: [b-2420ccd2ee61]
+# --- Yasukuni Shrine, WWII anniversary -------------------------------------------------
+- id: yasukuni-ministers-visit
+  storyline: yasukuni-anniversary
+  members: [b-a9fc8865840f, b-8cc83849f311]
+  notes: Takaichi skips and sends offering, Koizumi and three ministers visit; AJ headline also mentions anger (see uncertain pair)
+- id: china-condemns-yasukuni-visit
+  storyline: yasukuni-anniversary
+  members: [b-dba74c970c5b]
+- id: yasukuni-explainer
+  storyline: yasukuni-anniversary
+  members: [b-a7034e5f5d0a]
+# --- US campus / park shootings ----------------------------------------------------------
+- id: virginia-state-university-shooting
+  members: [b-6034d35323b7, b-7faee26b5fb3]
+- id: kentucky-park-shooting
+  members: [b-d8dbff3c0d15]
+# --- Jason Arday ------------------------------------------------------------------------
+- id: jason-arday-found-dead
+  storyline: jason-arday
+  members: [b-a8a7da4fba13]
+- id: burnham-reacts-arday-death
+  storyline: jason-arday
+  members: [b-1dd4cb7f9628]
+- id: nathan-cofnas-profile
+  storyline: jason-arday
+  members: [b-847d06a054d9]
+  notes: explainer on the accuser
+# --- Hurricane Lala / Hawaii -------------------------------------------------------------
+- id: lala-strengthens-hurricane
+  storyline: storm-lala
+  members: [b-1688a4b3e9a6, b-46a776c84213]
+  notes: same outlet, same timestamp, near-identical excerpt; forecast then upgrade of the same storm approach
+- id: lala-weakens-hawaii-flooding
+  storyline: storm-lala
+  members: [b-af872cacb8c0]
+# --- Ceuta migrants ---------------------------------------------------------------------
+- id: morocco-intercepts-ceuta-migrants
+  storyline: ceuta-migration
+  members: [b-24525c85d565, b-a57802d08355]
+  notes: same outlet, same day, same police operation in Fnideq
+- id: ceuta-migrant-sit-in
+  storyline: ceuta-migration
+  members: [b-67616768e578]
+- id: fearne-mediterranean-migration
+  members: [b-619503a71315]
+  notes: interview on EU migration, not about Ceuta
+# --- Iran war -----------------------------------------------------------------------------
+- id: iran-urges-qatar-release-pilots
+  storyline: iran-pilots-qatar
+  members: [b-47831777465e]
+- id: qatar-denies-holding-pilots
+  storyline: iran-pilots-qatar
+  members: [b-54e026afdd76]
+  notes: Qatar's response; also restates Iran's claim
+- id: us-readies-iran-penalties
+  storyline: us-iran-economic-pressure
+  members: [b-3f933aeed2ab]
+- id: how-us-could-squeeze-iran
+  storyline: us-iran-economic-pressure
+  members: [b-637ccaebeb95]
+  notes: analysis of the Bessent announcement
+- id: iranians-war-economy
+  members: [b-84365b1ec67a]
+- id: trump-hormuz-us-territory-threat
+  members: [b-3b4de9de007d]
+- id: uss-washington-relieves-lincoln
+  members: [b-c8a5aeed0d4c]
+- id: china-hormuz-style-blockade-taiwan
+  members: [b-d5e449228bc5]
+  notes: analysis
+- id: africa-post-hormuz-opinion
+  members: [b-df08ec0a74b2]
+# --- Israel-Lebanon -----------------------------------------------------------------------
+- id: israel-strikes-lebanon-kill-11
+  storyline: israel-lebanon-strikes
+  members: [b-d74d5c6faf15]
+- id: israel-strikes-nabatieh-families-flee
+  storyline: israel-lebanon-strikes
+  members: [b-ddfb1a515624]
+  notes: next day's strikes, a new occurrence
+- id: why-israel-escalated-lebanon
+  storyline: israel-lebanon-strikes
+  members: [b-87eb04285083]
+  notes: analysis
+# --- West Bank / Qusra --------------------------------------------------------------------
+- id: qusra-settler-siege
+  storyline: qusra-siege
+  members: [b-fd3faf34113a, b-5ffcea5460ad]
+  notes: day-15 item does not name Qusra but the three families trapped for nearly a week match the eight-day siege
+- id: qusra-siege-timeline
+  storyline: qusra-siege
+  members: [b-9db66a0c51fe]
+  notes: explainer/timeline
+- id: israeli-army-raids-qusra
+  storyline: qusra-siege
+  members: [b-bc756e54ddc2]
+  notes: army raid on the village, distinct from settler siege (see uncertain pair)
+- id: west-bank-civilian-police
+  members: [b-be479a304883]
+- id: ben-gvir-nightly-killings-call
+  members: [b-e0fc7f85cd1a]
+- id: braslavski-asks-ben-gvir-execute
+  members: [b-871df647f34a]
+# --- Russia-Ukraine -------------------------------------------------------------------------
+- id: ukraine-flamingo-strike-samara
+  storyline: russia-ukraine-strikes
+  members: [b-ba250c125df2]
+- id: ukraine-mass-drone-attack-russia
+  storyline: russia-ukraine-strikes
+  members: [b-19177aba5b84, b-4f5f94b9fc9a]
+  notes: overnight 15-16 Aug attack; 201 over Moscow region early count, 822 nationwide later count
+- id: russia-strikes-ukraine-steel-plant
+  storyline: russia-ukraine-strikes
+  members: [b-104165c9224b]
+  notes: leads on the Russian strike, also covers the Moscow-region drone attack (see uncertain pairs)
+# --- Taliban five years -----------------------------------------------------------------
+- id: kabul-taliban-anniversary-celebration
+  storyline: taliban-five-years
+  members: [b-657dd24aeb03, b-5a54bf5d9422]
+- id: taliban-five-years-achievements
+  storyline: taliban-five-years
+  members: [b-3cce0a12c1b8]
+  notes: analysis
+- id: taliban-armed-opposition
+  storyline: taliban-five-years
+  members: [b-10298b861ae8]
+  notes: analysis
+- id: afghan-refugees-europe
+  storyline: taliban-five-years
+  members: [b-50423638ade2]
+- id: pakistan-aid-trucks-afghanistan
+  members: [b-bb3a2b0aec41]
+# --- India / Modi Independence Day --------------------------------------------------------
+- id: modi-intellectual-naxals-speech
+  storyline: modi-independence-day
+  members: [b-2ef13a426f19]
+- id: modi-free-coaching-youth
+  storyline: modi-independence-day
+  members: [b-185307612b41]
+  notes: announced on 15 Aug, possibly in the same speech (see uncertain pair)
+- id: azadi-chants-youth-protests
+  members: [b-dc6bec3a533d]
+# --- Zhu Rongji death ---------------------------------------------------------------------
+- id: zhu-rongji-opinion
+  storyline: zhu-rongji-death
+  members: [b-d6fcd67abf97]
+- id: hk-flags-half-staff-zhu
+  storyline: zhu-rongji-death
+  members: [b-3524ce2d40c3]
+- id: china-flags-half-mast-zhu-funeral
+  storyline: zhu-rongji-death
+  members: [b-ad3f360d13ea]
+  notes: national funeral arrangements; includes HK flags (see uncertain pair)
+# --- Hong Kong five-year plan -------------------------------------------------------------
+- id: hk-plan-series-gba
+  storyline: hk-five-year-plan
+  members: [b-b6f05e99d4fb]
+- id: hk-plan-series-inequality
+  storyline: hk-five-year-plan
+  members: [b-5e8b3e9c3f2f]
+- id: hk-plan-business-chambers
+  storyline: hk-five-year-plan
+  members: [b-408b3be0bd4e]
+- id: hk-plan-opinion-starting-gun
+  storyline: hk-five-year-plan
+  members: [b-4a0b65706f44]
+- id: hk-university-town
+  members: [b-252290cfd099]
+# --- Huanggang crossing -------------------------------------------------------------------
+- id: huanggang-crossing-what-to-expect
+  storyline: huanggang-crossing
+  members: [b-750cc77532c4]
+- id: huanggang-counterterror-drill
+  storyline: huanggang-crossing
+  members: [b-cb9dcfe3cd42]
+# --- Community Shield -----------------------------------------------------------------------
+- id: community-shield-arsenal-city
+  members: [b-1c3397500a52, b-56457536b0df, b-a6b1a1e132cb, b-fd1daf0dc1b5, b-80e76ef42381, b-d19a578180ac]
+  notes: same outlet; live blogs, as-it-happened and match reports of one match
+- id: premier-league-season-preview
+  members: [b-a6ff99bc91f7]
+- id: la-liga-season-preview
+  members: [b-9d3965da96ca]
+- id: ferran-torres-psg
+  members: [b-f088f0b72541]
+- id: djed-spence-inter
+  members: [b-3a066ef7d38b]
+# --- wildfires / drought --------------------------------------------------------------------
+- id: belgium-record-wildfire
+  members: [b-5aa5a7816cb1, b-41be8569ea90]
+- id: croatia-coast-wildfire
+  members: [b-b69f921145e8]
+- id: california-wildfires-workforce
+  members: [b-87ac4d9d573f]
+- id: europe-drought-satellite
+  members: [b-3cd319f6aab5]
+# --- Yemen ----------------------------------------------------------------------------------
+- id: yemen-govt-hits-back-houthi-offensive
+  storyline: yemen-conflict
+  members: [b-ee4e2d56aaa9]
+- id: houthi-attacks-makha-marib
+  storyline: yemen-conflict
+  members: [b-da256a1e6ed5]
+  notes: may be the same Houthi offensive (see uncertain pair)
+- id: next-yemen-war-analysis
+  storyline: yemen-conflict
+  members: [b-5e4b873d5154]
+# --- Australia gun buyback ------------------------------------------------------------------
+- id: australia-gun-buyback-november
+  members: [b-ff412d29c0a8, b-a3a6be6cc93b]
+  notes: same outlet
+# --- Malaysia -----------------------------------------------------------------------------
+- id: anwar-anti-corruption-vow
+  storyline: malaysia-anwar-coalition
+  members: [b-8e6060b75880]
+- id: dap-votes-stay-in-alliance
+  storyline: malaysia-anwar-coalition
+  members: [b-eeafbf46c5c5]
+# --- other singletons with plausible partners ---------------------------------------------
+- id: burnham-social-media-push
+  members: [b-c6c6d4f93378]
+- id: cambridge-professor-macfarlane-china
+  members: [b-560e8030599d]
+- id: scs-ecological-report
+  members: [b-95726dc6c0e9]
+- id: beijing-manila-worker-arrests
+  members: [b-ddd7df3c2a42]
+- id: taiwan-drone-defence-audit
+  members: [b-9305ee2b7a8d]
+- id: queen-mary-hospital-lift-contractors
+  members: [b-d8b85da361ed]
+- id: dse-candidate-lift-denied
+  members: [b-ea19e6b0abdc]
+- id: hk-scam-runners-arrests
+  members: [b-ffffd5354de8]
+- id: hk-juvenile-crime-arrests
+  members: [b-03f88fdb9e89]
+- id: hk-boy-cat-cruelty-arrest
+  members: [b-ef4cca4f78fd]
+- id: hk-heatwave-forecast
+  members: [b-9b2d1ee90934]
+- id: hk-subdivided-flat-heat-study
+  members: [b-fd8dc1558b1e]
+- id: sudan-burhan-dialogue-immunity
+  members: [b-4ebc68641e31]
+- id: erdogan-egypt-defence-pact
+  members: [b-afc18ddff6a4]
+- id: zimbabwe-ferry-toll
+  members: [b-a22e0f6e97c3]
+- id: hungary-bus-crash
+  members: [b-872c1c825b15]
+- id: oman-oil-spill-cleanup
+  members: [b-d220b81f58bd]
+- id: south-korea-end-war-talks
+  members: [b-0e84c43c6981]
+- id: bangladesh-rahman-hasina-extradition
+  members: [b-a5d0a15af0ef]
+- id: canada-petition-us-ambassador
+  members: [b-b182f736d89e]
+- id: democrats-primary-calendar
+  members: [b-8459099f9795]
+- id: bbc-trump-defamation-testimony
+  members: [b-4808b52d1dd4]
+- id: ebola-drc-worsening
+  members: [b-7c9e651cc611]
+related_pairs:
+- [b-2231132356b1, b-2420ccd2ee61, two different earthquakes (Indonesia vs Colombia)]
+- [b-ddbd1c459b09, b-e01a62fce6ad, two different earthquakes (Indonesia vs Colombia)]
+- [b-7faee26b5fb3, b-d8dbff3c0d15, two different US shootings]
+- [b-a8a7da4fba13, b-560e8030599d, both Cambridge professors, unrelated stories]
+- [b-1dd4cb7f9628, b-c6c6d4f93378, both UK PM Burnham, unrelated]
+- [b-67616768e578, b-619503a71315, Ceuta sit-in vs Fearne interview on migration]
+- [b-3f933aeed2ab, b-3b4de9de007d, two distinct Trump pressure moves on Iran]
+- [b-637ccaebeb95, b-84365b1ec67a, US economic squeeze vs Iranians' economy, distinct]
+- [b-3b4de9de007d, b-d5e449228bc5, both Hormuz blockade framing, distinct]
+- [b-3b4de9de007d, b-df08ec0a74b2, both Hormuz, distinct]
+- [b-c8a5aeed0d4c, b-3b4de9de007d, both US posture in the Iran war, distinct]
+- [b-bc756e54ddc2, b-be479a304883, West Bank army raid vs civilian police handover]
+- [b-e0fc7f85cd1a, b-871df647f34a, both Ben-Gvir, distinct statements]
+- [b-5aa5a7816cb1, b-b69f921145e8, different wildfires (Belgium vs Croatia)]
+- [b-41be8569ea90, b-87ac4d9d573f, different wildfires (Belgium vs California)]
+- [b-41be8569ea90, b-3cd319f6aab5, Belgium wildfire vs Europe drought]
+- [b-f088f0b72541, b-3a066ef7d38b, two different transfers]
+- [b-a6ff99bc91f7, b-9d3965da96ca, two different league previews]
+- [b-a6ff99bc91f7, b-80e76ef42381, season preview vs Community Shield match]
+- [b-185307612b41, b-dc6bec3a533d, both about India's youth protests, distinct]
+- [b-657dd24aeb03, b-bb3a2b0aec41, Taliban anniversary vs aid trucks to Afghanistan]
+- [b-d8b85da361ed, b-ea19e6b0abdc, both Hong Kong lift stories, unrelated]
+- [b-ffffd5354de8, b-03f88fdb9e89, two different HK police arrest operations]
+- [b-03f88fdb9e89, b-ef4cca4f78fd, both HK boys arrested, different cases]
+- [b-9b2d1ee90934, b-fd8dc1558b1e, HK heat forecast vs subdivided flat heat study]
+- [b-408b3be0bd4e, b-252290cfd099, Northern Metropolis in plan vs university town]
+- [b-95726dc6c0e9, b-ddd7df3c2a42, both China-Philippines/SCS tensions, distinct]
+- [b-9305ee2b7a8d, b-d5e449228bc5, both Taiwan defence, distinct]
+- [b-ee4e2d56aaa9, b-afc18ddff6a4, Saudi-backed Yemen fighting vs Saudi defence pact, distinct]
+- [b-d74d5c6faf15, b-fd3faf34113a, both Israeli actions, different fronts]
+uncertain_pairs:
+- [b-8cc83849f311, b-dba74c970c5b, AJ visit headline includes China's anger; SCMP leads on China's condemnation]
+- [b-6c7107c5ad14, b-bd8a3daf7a97, both AJ aftermath items for the Indonesia quake]
+- [b-104165c9224b, b-4f5f94b9fc9a, SCMP also reports the Moscow-region drone attack and warehouse fire]
+- [b-104165c9224b, b-19177aba5b84, both report the same overnight exchange of strikes]
+- [b-185307612b41, b-2ef13a426f19, coaching pledge may have been part of the Independence Day speech]
+- [b-3524ce2d40c3, b-ad3f360d13ea, HK flag announcement vs state-media funeral arrangements including HK]
+- [b-5ffcea5460ad, b-bc756e54ddc2, siege item mentions soldiers; army raid may be part of the same siege]
+- [b-ee4e2d56aaa9, b-da256a1e6ed5, new Houthi offensive may be the Makha/Marib attacks]
+notes: ''
