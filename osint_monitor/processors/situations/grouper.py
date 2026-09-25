@@ -29,6 +29,7 @@ from osint_monitor.core.config import SituationsConfig, load_situations_config
 from osint_monitor.core.models import (
     DevelopmentSignature, SituationAssignment, SituationMatchReason, SituationProfile, SituationStatus,
 )
+from osint_monitor.processors.actors import ActorNormalizer
 from osint_monitor.processors.situations.canonical import ActorCanonicalizer
 
 logger = logging.getLogger(__name__)
@@ -50,10 +51,12 @@ def _cosine(a: Sequence[float], b: Sequence[float]) -> float:
 
 
 class SituationGrouper:
-    def __init__(self, config: SituationsConfig | None = None, arbiter: SituationArbiter | None = None):
+    def __init__(self, config: SituationsConfig | None = None, arbiter: SituationArbiter | None = None,
+                 normalizer: ActorNormalizer | None = None):
         self.config = config or load_situations_config()
         self.arbiter = arbiter
-        self.actors = ActorCanonicalizer(self.config.actor_aliases, self.config.actor_represents)
+        normalizer = normalizer or ActorNormalizer.load(self.config.actor_aliases, self.config.actor_represents)
+        self.actors = ActorCanonicalizer(normalizer=normalizer)
         for seed in self.config.situations:
             for name in seed.primary_actors:
                 self.actors.remember(name)

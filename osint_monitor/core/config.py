@@ -237,9 +237,18 @@ class SituationPolicy(BaseModel):
     centroid_developments: int = 20      # recent members averaged into the situation centroid
 
 
+class ActorsConfig(BaseModel):
+    """How entity mentions become canonical actors (config/actors.yaml)."""
+    non_actors: list[str] = Field(default_factory=list)          # topics the NER mislabels as actors
+    demonyms: dict[str, str] = Field(default_factory=dict)       # "Australian" -> country
+    aliases: dict[str, str] = Field(default_factory=dict)        # variant -> canonical name
+    represents: dict[str, str] = Field(default_factory=dict)     # person / body -> state it acts for
+
+
 class SituationsConfig(BaseModel):
     """Situation seeds and grouping policy (config/situations.yaml)."""
     policy: SituationPolicy = Field(default_factory=SituationPolicy)
+    # extend config/actors.yaml (kept for older situations.yaml files)
     actor_aliases: dict[str, str] = Field(default_factory=dict)   # variant -> canonical name
     actor_represents: dict[str, str] = Field(default_factory=dict)   # person / body -> state it acts for
     situations: list[SituationSeed] = Field(default_factory=list)
@@ -335,6 +344,16 @@ def load_situations_config(path: Path | None = None) -> SituationsConfig:
     with open(path, encoding="utf-8") as f:
         raw = yaml.safe_load(f) or {}
     return SituationsConfig(**raw)
+
+
+def load_actors_config(path: Path | None = None) -> ActorsConfig:
+    """Load and validate actors.yaml (empty config if the file is missing)."""
+    path = path or CONFIG_DIR / "actors.yaml"
+    if not path.exists():
+        return ActorsConfig()
+    with open(path, encoding="utf-8") as f:
+        raw = yaml.safe_load(f) or {}
+    return ActorsConfig(**raw)
 
 
 def load_prompt(name: str) -> str:
