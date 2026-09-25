@@ -79,6 +79,9 @@ class EventType(str, Enum):
     MILITARY_EXERCISE = "military_exercise"
     CEASEFIRE = "ceasefire"
     ARMS_TRANSFER = "arms_transfer"
+    # arrests and prosecutions, terrorist or criminal attacks, cyber intrusions: security
+    # events that are not state military action
+    SECURITY_INCIDENT = "security_incident"
     # Political / institutional
     ELECTION = "election"
     APPOINTMENT = "appointment"
