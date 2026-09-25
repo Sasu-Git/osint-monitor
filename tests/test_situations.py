@@ -11,6 +11,7 @@ from osint_monitor.core.database import Entity, Event, EventEntity, Situation
 from osint_monitor.core.models import (
     DevelopmentSignature, SituationMatchReason, SituationProfile, SituationStatus,
 )
+from osint_monitor.processors.actors import ActorNormalizer
 from osint_monitor.processors.situations import (
     ActorCanonicalizer, LLMSituationArbiter, SituationGrouper, assign_situations, situation_overview,
 )
@@ -133,7 +134,7 @@ def test_no_new_situation_for_an_actor_set_that_already_has_one(config):
 
 
 def test_canonical_slug_ignores_spelling_and_order(config):
-    actors = ActorCanonicalizer(config.actor_aliases)
+    actors = ActorCanonicalizer(normalizer=ActorNormalizer.load())
     assert actors.slug(actors.keys(["USA", "Iranian"])) == actors.slug(actors.keys(["Tehran", "United States"]))
 
 
