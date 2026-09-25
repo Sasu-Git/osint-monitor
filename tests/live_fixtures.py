@@ -94,3 +94,52 @@ AIR_FORCE_CASI = [
      "The Air Force’s stance that the China Aerospace Studies Institute can function without civilian staff "
      "is “not credible,” its Brendan Mulvaney told Breaking Defense."),
 ]
+
+# 2026-09-24 eval run, event #7: 18 unrelated quakes from two seismic feeds in one event
+# because their templated text embeds alike. (source, source type, external_id, url, title, content, published)
+SEISMIC_RECORDS = [
+    ("USGS Seismic", "structured_api", "usgs_us6000txbm", "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txbm",
+     "Earthquake M5.2 - 139 km SW of Kokopo, Papua New Guinea",
+     "Magnitude: 5.2 | Depth: 95.6 km (deep) | Location: -5.3396,151.4915 | Place: 139 km SW of Kokopo, Papua New Guinea",
+     "2026-09-24 12:29:58"),
+    ("Seismic Explosion Detector", "infrastructure", "seis_exp_ci41338455", "https://earthquake.usgs.gov/earthquakes/eventpage/ci41338455",
+     "Shallow seismic: M1.63 depth=-1km at 13 km NE of Big Bear City, CA — explosion likelihood: HIGH",
+     "Magnitude: 1.63\nDepth: -1 km\nLocation: 34.3298333333333, -116.7305\nPlace: 13 km NE of Big Bear City, CA\n"
+     "Explosion likelihood: HIGH (score: 0.60)\n", "2026-09-24 12:54:08"),
+    ("USGS Seismic", "structured_api", "usgs_us6000tx29", "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tx29",
+     "Earthquake M5.3 - 51 km WSW of Arauco, Argentina",
+     "Magnitude: 5.3 | Depth: 121.5 km (deep) | Location: -28.7298,-67.2912 | Place: 51 km WSW of Arauco, Argentina",
+     "2026-09-23 09:21:14"),
+    ("Seismic Explosion Detector", "infrastructure", "seis_exp_nn00924831", "https://earthquake.usgs.gov/earthquakes/eventpage/nn00924831",
+     "Shallow seismic: M1.82 depth=3.9895km at 20 km ESE of Silver Springs, Nevada — explosion likelihood: MODERATE",
+     "Magnitude: 1.82\nDepth: 3.9895 km\nLocation: 39.3388, -119.0131\nPlace: 20 km ESE of Silver Springs, Nevada\n"
+     "Explosion likelihood: MODERATE (score: 0.45)\n", "2026-09-24 04:11:57"),
+    ("Seismic Explosion Detector", "infrastructure", "seis_exp_nc75440792", "https://earthquake.usgs.gov/earthquakes/eventpage/nc75440792",
+     "Shallow seismic: M1.52 depth=0.680000007152557km at 15 km WSW of Firebaugh, CA — explosion likelihood: HIGH",
+     "Magnitude: 1.52\nDepth: 0.680000007152557 km\nLocation: 36.8261680603027, -120.613998413086\n"
+     "Place: 15 km WSW of Firebaugh, CA\nExplosion likelihood: HIGH (score: 0.60)\n", "2026-09-24 11:21:24"),
+    ("USGS Seismic", "structured_api", "usgs_usauto6000tx3m,us6000tx3m", "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tx3m",
+     "Earthquake M5.7 - 180 km NW of Hihifo, Tonga",
+     "Magnitude: 5.7 | Depth: 10.0 km (deep) | Location: -14.9369,-175.1114 | Place: 180 km NW of Hihifo, Tonga",
+     "2026-09-23 14:41:02"),
+]
+
+# event #8: ADS-B snapshots and a flight-route reading merged into a "development"
+ADSB_RECORDS = [
+    ("ADSB Military Tracks", "adsb", "adsb_snapshot_202609241549", "https://api.adsb.lol/v2/mil",
+     "Military aircraft snapshot: 375 globally | persian_gulf: 4, eastern_med: 2, western_europe: 26",
+     "Global military aircraft tracked: 375\nBy region: persian_gulf: 4, eastern_med: 2, western_europe: 26",
+     "2026-09-24 15:49:14"),
+    ("Flight Route Monitor", "infrastructure", "flight_eastern_med_2026092415", "https://opensky-network.org/",
+     "FLIGHT AVOIDANCE: Eastern Mediterranean / Lebanon-Syria — only 16 commercial flights (normal: 20+)",
+     "Zone: Eastern Mediterranean / Lebanon-Syria\nTotal aircraft: 16\nCommercial: 16 (normal floor: 20)\nMilitary: 0",
+     "2026-09-24 15:55:44"),
+    ("ADSB Military Tracks", "adsb", "adsb_force_concentration_202609241549", "https://globe.adsbexchange.com/",
+     "MILITARY CONCENTRATION: 26 aircraft over Western Europe (bomber staging)",
+     "Breakdown: 14 other_military, 8 cargo, 3 isr_recon, 1 tanker\nRegion: RAF Fairford (B-1B/B-52 base), bomber departure routes",
+     "2026-09-24 15:49:14"),
+    ("ADSB Military Tracks", "adsb", "adsb_force_concentration_202609241602", "https://globe.adsbexchange.com/",
+     "MILITARY CONCENTRATION: 5 aircraft over Persian Gulf / Iran Theater",
+     "Breakdown: 2 cargo, 2 other_military, 1 tanker\nRegion: Operation Epic Fury theater, Hormuz, Iranian airspace",
+     "2026-09-24 16:02:11"),
+]
