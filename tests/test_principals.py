@@ -213,3 +213,28 @@ def test_person_principal_flags_the_linked_person_entity(session, actors):
     flags = {ee.entity.canonical_name: ee.is_principal for ee in session.query(EventEntity).filter_by(event_id=event.id)}
     # Pentagon also stands for the United States but was never a participant, so it stays a mention
     assert flags == {"Donald Trump": True, "Xi Jinping": True, "Pentagon": False, "Taiwan": False}
+
+
+def test_entity_with_a_misleading_alias_is_not_flagged(session, actors):
+    # live 09-24: the resolver merged "America" into an "Americas" entity, which then became principal
+    src = Source(name="Wire", type="rss", url="u")
+    session.add(src)
+    session.flush()
+    us = Entity(canonical_name="America", entity_type="GPE")
+    americas = Entity(canonical_name="Americas", entity_type="LOC", aliases=["America"])
+    greenland = Entity(canonical_name="Greenland", entity_type="GPE")
+    session.add_all([us, americas, greenland])
+    event = Event(summary="US signs Greenland pact")
+    session.add(event)
+    session.flush()
+    for n, title in enumerate(["Greenland welcomes US military pact", "America signs Greenland security pact"]):
+        item = RawItem(source_id=src.id, title=title, content="", content_hash=f"g{n}")
+        session.add(item)
+        session.flush()
+        session.add(EventItem(event_id=event.id, item_id=item.id))
+    session.add_all([EventEntity(event_id=event.id, entity_id=e.id, role="MENTION") for e in (us, americas, greenland)])
+    session.commit()
+
+    mark_principal_actors(session, normalizer=actors)
+    flags = {ee.entity.canonical_name: ee.is_principal for ee in session.query(EventEntity).filter_by(event_id=event.id)}
+    assert flags == {"America": True, "Americas": False, "Greenland": True}

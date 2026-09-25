@@ -260,19 +260,15 @@ def mark_principal_actors(session: Session, now: datetime | None = None,
 
         links = (session.query(EventEntity).options(joinedload(EventEntity.entity))
                  .filter(EventEntity.event_id == event.id).all())
-        linked: dict[str, list[EventEntity]] = {}
-        for ee in links:
-            if ee.entity is None:
-                continue
-            for name in [ee.entity.canonical_name, *(ee.entity.aliases or [])]:
-                surface = normalizer.surface(name)
-                if surface:
-                    linked.setdefault(surface, []).append(ee)
-
         principal_ids: set[int] = set()
         for key in selection.keys:
             names = selection.surfaces[key] | {key}
-            matched = {ee.entity_id for s in names for ee in linked.get(s, [])}
+            # the entity's own name must stand for this actor: an "Americas" entity that the
+            # resolver gave an "America" alias is not the United States
+            matched = {ee.entity_id for ee in links if ee.entity is not None
+                       and normalizer.key(ee.entity.canonical_name) == key
+                       and any(normalizer.surface(n) in names
+                               for n in [ee.entity.canonical_name, *(ee.entity.aliases or [])])}
             if not matched:
                 if by_surface is None:
                     by_surface = _entity_index(session, normalizer)
@@ -294,8 +290,7 @@ def mark_principal_actors(session: Session, now: datetime | None = None,
 def _entity_index(session: Session, normalizer: ActorNormalizer) -> dict[str, Entity]:
     index: dict[str, Entity] = {}
     for entity in session.query(Entity):
-        for name in [entity.canonical_name, *(entity.aliases or [])]:
-            surface = normalizer.surface(name)
-            if surface:
-                index.setdefault(surface, entity)
+        surface = normalizer.surface(entity.canonical_name)
+        if surface:
+            index.setdefault(surface, entity)
     return index
