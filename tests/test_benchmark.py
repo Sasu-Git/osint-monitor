@@ -321,3 +321,25 @@ def test_real_replay_is_read_only_and_uses_the_production_clusterer(tmp_path):
     assert {p.name: p.read_bytes() for p in tmp_path.iterdir()} == before
     assert result.clusters == [sorted([corpus[0].id, corpus[1].id])]
     assert {"china", "united states"} <= result.features[corpus[0].id].actors
+
+
+def test_wayback_cache_resumes_without_refetching(tmp_path):
+    calls = []
+
+    def fetch(url, params):
+        calls.append(url)
+        return "20260815120000\n" if "cdx" in url else RSS
+    cached = importers.cached(fetch, tmp_path / "cache")
+    feeds = [("BBC World", "https://feeds.example/rss.xml")]
+    first, _ = importers.from_wayback(feeds, T0, T0 + timedelta(days=1), fetch=cached)
+    second, _ = importers.from_wayback(feeds, T0, T0 + timedelta(days=1), fetch=cached)
+    assert first == second and len(calls) == 2                        # one CDX + one snapshot, once
+
+
+def test_a_failed_snapshot_aborts_the_window_instead_of_leaving_a_gap():
+    def fetch(url, params):
+        if "cdx" in url:
+            return "20260815120000\n"
+        raise BenchmarkError("refused")
+    with pytest.raises(BenchmarkError, match="refused"):
+        importers.from_wayback([("BBC World", "https://feeds.example/rss.xml")], T0, T0 + timedelta(days=1), fetch=fetch)

@@ -473,7 +473,10 @@ def _cmd_benchmark(args):
             source = bf.WindowSource(kind="local_db", reference=str(args.db))
         else:
             feeds = importers.configured_feeds(args.feeds)
-            items, report = importers.from_wayback(feeds, start, end, max_snapshots_per_feed=args.max_snapshots)
+            from osint_monitor.core.config import DATA_DIR
+            fetch = importers.cached(importers.http_fetch, DATA_DIR / "eval" / "wayback-cache")
+            items, report = importers.from_wayback(feeds, start, end, fetch=fetch,
+                                                   max_snapshots_per_feed=args.max_snapshots)
             source = bf.WindowSource(kind="wayback", reference=", ".join(n for n, _ in feeds),
                                      notes="; ".join(f"{k}: {v['items']} items / {v['snapshots']} snapshots"
                                                      for k, v in report.items()))

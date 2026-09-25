@@ -77,20 +77,46 @@ def from_database(db_path: str | Path, start: datetime, end: datetime) -> list[B
 Fetcher = Callable[[str, dict | None], str]
 
 
-def http_fetch(url: str, params: dict | None = None, retries: int = 2, pause: float = 1.0) -> str:
-    """GET with (connect, read) timeouts, retries and a pause between calls (archive.org is shared)."""
+def http_fetch(url: str, params: dict | None = None, retries: int = 5, pause: float = 4.0,
+               backoff: float = 30.0) -> str:
+    """GET with (connect, read) timeouts and a pause between calls. archive.org refuses
+    connections when a client is too fast, so failures back off exponentially (30 s, 60 s ...)."""
     last: Exception | None = None
     for attempt in range(retries + 1):
         try:
             time.sleep(pause)
             resp = requests.get(url, params=params, timeout=(10, 60),
                                 headers={"User-Agent": "osint-monitor-benchmark/1.0 (research; low volume)"})
+            if resp.status_code == 429:
+                raise requests.HTTPError("429 Too Many Requests", response=resp)
             resp.raise_for_status()
             return resp.text
         except requests.RequestException as e:
             last = e
-            logger.info("fetch failed (%s), attempt %d: %s", url, attempt + 1, e)
+            if attempt < retries:
+                wait = backoff * 2 ** attempt
+                logger.warning("fetch failed (%s), attempt %d: %s; retrying in %.0fs", url, attempt + 1, e, wait)
+                time.sleep(wait)
     raise BenchmarkError(f"could not fetch {url}: {last}")
+
+
+def cached(fetch: Fetcher, cache_dir: Path) -> Fetcher:
+    """Wrap a fetcher with a disk cache. Archived snapshots and past CDX ranges do not change,
+    so an interrupted import resumes without fetching anything twice."""
+    import hashlib
+    import json
+
+    cache_dir.mkdir(parents=True, exist_ok=True)
+
+    def wrapped(url: str, params: dict | None) -> str:
+        key = hashlib.sha256(json.dumps([url, params or {}], sort_keys=True).encode()).hexdigest()
+        path = cache_dir / f"{key}.txt"
+        if path.exists():
+            return path.read_text(encoding="utf-8")
+        text = fetch(url, params)
+        path.write_text(text, encoding="utf-8")
+        return text
+    return wrapped
 
 
 def snapshots(feed_url: str, start: datetime, end: datetime, fetch: Fetcher = http_fetch) -> list[str]:
@@ -115,11 +141,7 @@ def from_wayback(feeds: Iterable[tuple[str, str]], start: datetime, end: datetim
         kept = 0
         for stamp in stamps:
             archive_url = SNAPSHOT_URL.format(timestamp=stamp, url=url)
-            try:
-                feed = feedparser.parse(fetch(archive_url, None))
-            except BenchmarkError as e:
-                logger.warning("%s", e)
-                continue
+            feed = feedparser.parse(fetch(archive_url, None))    # a failed snapshot aborts: no silent gaps
             for raw in RSSCollector.entries_to_items(feed.entries, name):
                 if raw.published_at is None or not start <= raw.published_at < end:
                     continue
