@@ -290,7 +290,7 @@ class AppSettings(BaseSettings):
     anthropic_api_key: Optional[str] = None
     ollama_base_url: str = "http://localhost:11434"
     default_llm_provider: str = "openai"
-    # Development classifier: "rules" (deterministic, free) or "llm"
+    # Development classifier: "rules" (deterministic, free), "llm", or "hybrid" (LLM only for ambiguous cases)
     classifier_backend: str = "rules"
     classifier_llm_provider: Optional[str] = None   # falls back to default_llm_provider
     classifier_llm_model: Optional[str] = None      # falls back to the provider's default
