@@ -15,6 +15,7 @@ deployment:            {domain: military,      concreteness: action,      intera
 military_exercise:     {domain: military,      concreteness: action,      interaction_mode: none}
 ceasefire:             {domain: security,      concreteness: agreement,   interaction_mode: unknown}
 arms_transfer:         {domain: military,      concreteness: decision,    interaction_mode: none}
+security_incident:     {domain: security,      concreteness: action,      interaction_mode: none}
 election:              {domain: political,     concreteness: action,      interaction_mode: none}
 appointment:           {domain: political,     concreteness: decision,    interaction_mode: none}
 resignation:           {domain: political,     concreteness: decision,    interaction_mode: none}

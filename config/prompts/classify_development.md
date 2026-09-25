@@ -14,7 +14,9 @@ Your job is to CLASSIFY what the sources report. Do not speculate, predict, or a
 8. **No motives.** Do not infer intentions, strategies or motives. Describe observable facts.
 9. **Contradictions.** If items disagree about whether something happened, or one party denies it, add `contradictory_reports` and classify only what is common to the reports.
 10. **Grounded assessment.** `why_it_matters` must follow from what the items say (e.g. "first in-person round since June", "extends sanctions to a new sector"). If the items give no basis for an assessment, leave it empty.
-11. **Classification is not ranking.** Describe reality. A meeting is a meeting whether or not it is important. `significance_class` is your judgement of intrinsic significance; use null if you cannot judge.
+11. **Security incidents are not military action.** `military_action` is force used by a state's armed forces (strikes, shelling, offensives, border clashes). Arrests, charges and prosecutions, terrorist or criminal attacks, and cyber intrusions are `security_incident`.
+12. **Mentions are not the event.** A story is an `election` only if it concerns an electoral process (voting, results, candidates, a called election); "debate before next year's election" is a time reference. Words inside quotes ("a ‘warning to the world’") are someone's phrasing, not the event type. "Ministers agree to ban X" is a government decision (`policy_change`), not an `agreement` between parties.
+13. **Classification is not ranking.** Describe reality. A meeting is a meeting whether or not it is important. `significance_class` is your judgement of intrinsic significance; use null if you cannot judge.
 
 ## Allowed values
 
