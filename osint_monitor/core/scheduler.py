@@ -1,8 +1,8 @@
 """APScheduler-based tiered pipeline orchestration.
 
 Three collection tiers run at different intervals:
-  - hot  (2.5 min): ADS-B, BGP, DNS, currency, commodities, defense stocks, seismic
-  - warm (10 min):   RSS, Nitter, travel advisories, OONI, flight routes, GDELT, cables
+  - hot  (2.5 min): ADS-B, DNS, currency, commodities, defense stocks, seismic
+  - warm (10 min):   RSS, Nitter, travel advisories, OONI, flight routes, GDELT, cables, BGP
   - cold (60 min):   FIRMS, USGS, ACLED, sanctions, NVD, UNHCR, IAEA, Wikipedia, SEC, finance
 
 Each tier collects, processes deltas (dedup + NLP on new items only), and triggers

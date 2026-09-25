@@ -80,6 +80,8 @@ class TierConfig(BaseModel):
     hot_interval_seconds: int = 150    # 2.5 min
     warm_interval_seconds: int = 600   # 10 min
     cold_interval_seconds: int = 3600  # 60 min
+    # collector class name -> seconds one collect() may take before it stops and returns what it has
+    collector_budgets: dict[str, float] = Field(default_factory=dict)
 
 
 class SourcesFileConfig(BaseModel):
