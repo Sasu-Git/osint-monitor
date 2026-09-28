@@ -111,6 +111,7 @@ class BGPMonitor(BaseCollector):
         items: list[RawItemModel] = []
 
         for asn, info in self.watched_asns.items():
+            self.current_target = f"AS{asn}"  # read by core.watchdog when a check hangs
             name = info["name"]
             country = info["country"]
 
@@ -282,6 +283,7 @@ class DNSHealthMonitor(BaseCollector):
         down_count = 0
 
         for domain, info in self.domains.items():
+            self.current_target = domain      # read by core.watchdog when a check hangs
             dns = self._check_dns(domain)
             http = self._check_http(domain) if dns["resolves"] else {
                 "reachable": False, "status_code": 0, "response_time_ms": 0, "scheme": ""

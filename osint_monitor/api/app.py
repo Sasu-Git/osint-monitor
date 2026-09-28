@@ -78,64 +78,64 @@ async def startup():
 
 @app.get("/", response_class=HTMLResponse)
 async def dashboard(request: Request):
-    return templates.TemplateResponse("dashboard.html", {"request": request})
+    return templates.TemplateResponse(request, "dashboard.html")
 
 
 @app.get("/events", response_class=HTMLResponse)
 async def events_page(request: Request):
-    return templates.TemplateResponse("events.html", {"request": request})
+    return templates.TemplateResponse(request, "events.html")
 
 
 @app.get("/events/{event_id}", response_class=HTMLResponse)
 async def event_detail_page(request: Request, event_id: int):
-    return templates.TemplateResponse("event_detail.html", {"request": request, "event_id": event_id})
+    return templates.TemplateResponse(request, "event_detail.html", {"event_id": event_id})
 
 
 @app.get("/entities", response_class=HTMLResponse)
 async def entities_page(request: Request):
-    return templates.TemplateResponse("entities.html", {"request": request})
+    return templates.TemplateResponse(request, "entities.html")
 
 
 @app.get("/entities/{entity_id}", response_class=HTMLResponse)
 async def entity_detail_page(request: Request, entity_id: int):
-    return templates.TemplateResponse("entity_detail.html", {"request": request, "entity_id": entity_id})
+    return templates.TemplateResponse(request, "entity_detail.html", {"entity_id": entity_id})
 
 
 @app.get("/map", response_class=HTMLResponse)
 async def map_page(request: Request):
-    return templates.TemplateResponse("map.html", {"request": request})
+    return templates.TemplateResponse(request, "map.html")
 
 
 @app.get("/graph", response_class=HTMLResponse)
 async def graph_page(request: Request):
-    return templates.TemplateResponse("graph.html", {"request": request})
+    return templates.TemplateResponse(request, "graph.html")
 
 
 @app.get("/briefings", response_class=HTMLResponse)
 async def briefings_page(request: Request):
-    return templates.TemplateResponse("briefings.html", {"request": request})
+    return templates.TemplateResponse(request, "briefings.html")
 
 
 @app.get("/alerts", response_class=HTMLResponse)
 async def alerts_page(request: Request):
-    return templates.TemplateResponse("alerts.html", {"request": request})
+    return templates.TemplateResponse(request, "alerts.html")
 
 
 @app.get("/indicators", response_class=HTMLResponse)
 async def indicators_page(request: Request):
-    return templates.TemplateResponse("indicators.html", {"request": request})
+    return templates.TemplateResponse(request, "indicators.html")
 
 
 @app.get("/claims", response_class=HTMLResponse)
 async def claims_page(request: Request):
-    return templates.TemplateResponse("claims.html", {"request": request})
+    return templates.TemplateResponse(request, "claims.html")
 
 
 @app.get("/timeline", response_class=HTMLResponse)
 async def timeline_page(request: Request):
-    return templates.TemplateResponse("timeline.html", {"request": request})
+    return templates.TemplateResponse(request, "timeline.html")
 
 
 @app.get("/stix", response_class=HTMLResponse)
 async def stix_page(request: Request):
-    return templates.TemplateResponse("stix.html", {"request": request})
+    return templates.TemplateResponse(request, "stix.html")

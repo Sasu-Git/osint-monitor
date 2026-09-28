@@ -43,7 +43,9 @@ def test_claim_model():
 
 
 def test_alert_type_enum():
-    """All AlertType enum values are accessible and valid."""
-    expected_values = {"keyword", "anomaly", "trend", "threshold", "compound"}
+    """Legacy alert types stay valid so existing DB rows still load; newer
+    state-transition types were added alongside them."""
+    legacy_values = {"keyword", "anomaly", "trend", "threshold", "compound"}
     actual_values = {member.value for member in AlertType}
-    assert actual_values == expected_values
+    assert legacy_values <= actual_values
+    assert AlertType("first_report") is AlertType.FIRST_REPORT

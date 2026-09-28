@@ -8,7 +8,6 @@ import json
 import pytest
 from pydantic import ValidationError
 
-from osint_monitor.analysis.llm import LLMProvider
 from osint_monitor.core.models import (
     Concreteness, DevelopmentClassification, EventType, InteractionMode,
     SignificanceClass, UncertaintyFlag,
@@ -19,22 +18,7 @@ from osint_monitor.processors.classification import (
 from osint_monitor.processors.classification.llm_classifier import (
     build_system_prompt, parse_classification, render_context,
 )
-from tests.helpers import make_context
-
-
-class FakeProvider(LLMProvider):
-    model = "fake-1"
-
-    def __init__(self, *replies):
-        self.replies = list(replies)
-        self.calls: list[dict] = []
-
-    def generate(self, prompt, system="", temperature=0.3):
-        self.calls.append({"prompt": prompt, "system": system, "temperature": temperature})
-        reply = self.replies.pop(0)
-        if isinstance(reply, Exception):
-            raise reply
-        return reply
+from tests.helpers import FakeProvider, make_context
 
 
 def reply(**overrides) -> str:

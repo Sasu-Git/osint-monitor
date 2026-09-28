@@ -11,8 +11,10 @@
 
 cd "$(dirname "$0")"
 
-# Activate venv if present
-if [ -d "venv" ]; then
+# Activate the project environment if present (.venv is the documented one)
+if [ -d ".venv" ]; then
+    source .venv/bin/activate
+elif [ -d "venv" ]; then
     source venv/bin/activate
 fi
 

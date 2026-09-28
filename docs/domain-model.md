@@ -36,6 +36,15 @@
 - `compute_corroboration_score` now reports origins as `independent_sources`, plus additive keys `outlets`, `confidence_class`, `provenance_flags`. The cached `Event.source_count` / `corroboration_level` therefore stop counting syndicated copies.
 - Not yet done: persisting `confidence_class` and per-item `evidence_role` (§2.1 / §2.4 migration); feeding `independent_origins` into `RankingInput` when the ranker is wired into the pipeline.
 
+**2026-09-24 — Situation grouping (Prompt 6), implemented in `osint_monitor/processors/situations/` and `core/migrations.py`:**
+
+- Versioned migrations (§8) exist now, with only the situation parts: `m001_legacy` (the former ad-hoc columns, backfill runs once) and `m002_situations` (`events.situation_id` + index). `schema_meta`, SQLite backup before migrating, failures raise. The rest of §8 `m002_developments` becomes later migrations.
+- `situations` columns follow the Prompt 6 field list instead of §2.2: `id`, `slug` (canonical key, unique), `title`, `short_description`, `status`, `region`, `primary_actors` (JSON list of names), `created_at`, `updated_at` (time of the latest development). One primary situation per development (`events.situation_id`), as decided in §0.
+- Grouping (`SituationGrouper`) is deterministic: candidates must share ≥ `min_actor_coverage` of a situation's actors; evidence is actor coverage, same region, cosine similarity to the situation's recent-member embedding centroid, and seed topic keywords, averaged over the signals available. Clear winner joins; ambiguous cases go to an optional arbiter (`OSINT_SITUATION_ARBITER=llm`), which may only pick an existing candidate slug.
+- Canonicalization: new situations are created only when the same canonical actor set (≥ 2 actors, entity-resolver normalisation + `actor_aliases`) recurs ≥ 2 times in the window, and never when a situation with that actor set exists. Slug and title derive from the actor set, not from free text.
+- Seeds in `config/situations.yaml` are upserted by slug; closing/reopening is explicit in YAML (`status`), automatic active ↔ dormant is left alone. The §6 "removed slug → closed" rule is dropped: auto-created situations are not in YAML either, so absence cannot mean closure.
+- `situation_overview` answers what the story is, what changed recently and how many developments belong to it. "What is worth watching" is left to the narrative stage.
+
 ---
 
 ## 0. Decisions at a glance

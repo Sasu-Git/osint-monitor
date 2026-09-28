@@ -78,6 +78,38 @@ role_weights:
   other: 0
 senior_role_threshold: 3
 
+# Offices of frequently reported people, used when they are a principal actor of a development.
+# Stopgap until actor roles with validity dates are seeded (domain-model §2.3). Keep it short and current.
+known_roles:
+  Donald Trump: head_of_state
+  Trump: head_of_state
+  Xi Jinping: head_of_state
+  Xi: head_of_state
+  Vladimir Putin: head_of_state
+  Putin: head_of_state
+  Volodymyr Zelenskyy: head_of_state
+  Zelenskyy: head_of_state
+  Zelensky: head_of_state
+  Masoud Pezeshkian: head_of_state
+  Pezeshkian: head_of_state
+  Ali Khamenei: head_of_state
+  Khamenei: head_of_state
+  Benjamin Netanyahu: head_of_government
+  Netanyahu: head_of_government
+  Marco Rubio: foreign_minister
+  Rubio: foreign_minister
+  Abbas Araghchi: foreign_minister
+  Araghchi: foreign_minister
+  Sergei Lavrov: foreign_minister
+  Lavrov: foreign_minister
+  Wang Yi: foreign_minister
+  Pete Hegseth: defense_minister
+  Hegseth: defense_minister
+  Antonio Guterres: international_org_leader
+  Guterres: international_org_leader
+  Mark Rutte: international_org_leader
+  Rutte: international_org_leader
+
 # Corroboration.
 confidence_weights:
   confirmed: 3
