@@ -12,6 +12,13 @@ Development (evaluations/clustering/development-identity-diagnosis.md):
   (headline-only cosine below the threshold) are not one Development, however similar the
   bodies (this separates "N dead after ..." template disasters);
 - ``disjoint_locations``: items that name places but share none are not one Development.
+  With ``location_match: containment`` places are compared through config/geography.yaml, so
+  "Northern Cyprus" and "Cyprus" are compatible, while Kyiv and Odesa stay different places.
+
+``headline_override`` (optional) keeps a link the headline guard would cut when both are report
+headlines, published close together, naming compatible places (and, optionally, share actors):
+outlets sometimes headline one occurrence very differently ("storm floods US Northeast" /
+"nor'easter pummels New York and New Jersey").
 
 A cluster becomes the connected components of its remaining links. Analysis items cut off
 this way are not evidence of a Development; they are returned as commentary on the group they
@@ -30,6 +37,7 @@ from datetime import datetime
 import numpy as np
 
 from osint_monitor.core.config import DevelopmentSegmentationConfig
+from osint_monitor.processors.geography import Gazetteer
 
 logger = logging.getLogger(__name__)
 
@@ -61,6 +69,7 @@ class SegmentItem:
     vector: np.ndarray                    # the clustering embedding (title + lead)
     headline_vector: np.ndarray | None    # headline-only embedding
     locations: set[str] = field(default_factory=set)
+    actors: set[str] = field(default_factory=set)       # canonical actor keys (headline override only)
 
 
 @dataclass
@@ -76,15 +85,44 @@ def _cosine(a: np.ndarray, b: np.ndarray) -> float:
     return float(np.dot(a, b)) / denom if denom else 0.0
 
 
+_GAZETTEERS: dict[bool, Gazetteer] = {}
+
+
+def gazetteer(use_regions: bool = False) -> Gazetteer:
+    if use_regions not in _GAZETTEERS:
+        _GAZETTEERS[use_regions] = Gazetteer.load(use_regions=use_regions)
+    return _GAZETTEERS[use_regions]
+
+
+def places_compatible(a: set[str], b: set[str], config: DevelopmentSegmentationConfig) -> bool:
+    if config.location_match == "containment":
+        return gazetteer(config.use_regions).compatible(a, b)
+    return bool(a & b)
+
+
+def _headline_mismatch_outweighed(a: SegmentItem, b: SegmentItem, config: DevelopmentSegmentationConfig) -> bool:
+    o = config.headline_override
+    if o is None:
+        return False
+    if headline_kind(a.title) != REPORT or headline_kind(b.title) != REPORT:
+        return False                                    # live blogs and roundups mix developments
+    if a.published_at is None or b.published_at is None             or abs((a.published_at - b.published_at).total_seconds()) > o.max_hours * 3600:
+        return False
+    if o.require_shared_place and not (a.locations and b.locations and places_compatible(a.locations, b.locations, config)):
+        return False
+    return len(a.actors & b.actors) >= o.min_shared_actors
+
+
 def incompatibility(a: SegmentItem, b: SegmentItem, config: DevelopmentSegmentationConfig) -> str | None:
     """The guard that rules out a and b being one Development, or None."""
     if config.analysis_headlines and {headline_kind(a.title), headline_kind(b.title)} == {ANALYSIS, REPORT}:
         return "analysis_headline"
     if (config.min_headline_similarity is not None and a.source != b.source
             and a.headline_vector is not None and b.headline_vector is not None
-            and _cosine(a.headline_vector, b.headline_vector) < config.min_headline_similarity):
+            and _cosine(a.headline_vector, b.headline_vector) < config.min_headline_similarity
+            and not _headline_mismatch_outweighed(a, b, config)):
         return "headline_similarity"
-    if config.disjoint_locations and a.locations and b.locations and not (a.locations & b.locations):
+    if config.disjoint_locations and a.locations and b.locations and not places_compatible(a.locations, b.locations, config):
         return "disjoint_locations"
     return None
 
@@ -149,6 +187,7 @@ def segment_groups(session, groups: list[list[int]], config: DevelopmentSegmenta
     """Segment narrative clusters of RawItem ids. Returns (groups, commentary), where
     commentary maps an index into the returned groups to the analysis item ids about it."""
     from osint_monitor.core.database import Entity, ItemEntity, RawItem
+    from osint_monitor.processors.actors import ActorNormalizer
     from osint_monitor.processors.embeddings import blob_to_embedding, embed_texts
     from osint_monitor.processors.entity_resolver import normalise
 
@@ -157,11 +196,15 @@ def segment_groups(session, groups: list[list[int]], config: DevelopmentSegmenta
         return groups, {}
     rows = {r.id: r for r in session.query(RawItem).filter(RawItem.id.in_(ids))}
     locations: dict[int, set[str]] = {}
-    for item_id, name in (session.query(ItemEntity.item_id, Entity.canonical_name)
-                          .join(Entity, Entity.id == ItemEntity.entity_id)
-                          .filter(ItemEntity.item_id.in_(ids), Entity.entity_type.in_(LOCATION_TYPES))):
-        if key := normalise(name):
+    actors: dict[int, set[str]] = {}
+    normalizer = ActorNormalizer.load() if config.headline_override and config.headline_override.min_shared_actors else None
+    for item_id, name, etype in (session.query(ItemEntity.item_id, Entity.canonical_name, Entity.entity_type)
+                                 .join(Entity, Entity.id == ItemEntity.entity_id)
+                                 .filter(ItemEntity.item_id.in_(ids))):
+        if etype in LOCATION_TYPES and (key := normalise(name)):
             locations.setdefault(item_id, set()).add(key)
+        if normalizer and etype in ACTOR_TYPES and (key := normalizer.key(name)):
+            actors.setdefault(item_id, set()).add(key)
     headline_vectors = dict(zip(ids, embed_texts([rows[i].title or "" for i in ids]))) \
         if config.min_headline_similarity is not None else {}
 
@@ -171,7 +214,7 @@ def segment_groups(session, groups: list[list[int]], config: DevelopmentSegmenta
         items = [SegmentItem(id=i, source=rows[i].source_id, title=rows[i].title or "",
                              published_at=rows[i].published_at or rows[i].fetched_at,
                              vector=blob_to_embedding(rows[i].embedding), headline_vector=headline_vectors.get(i),
-                             locations=locations.get(i, set())) for i in g]
+                             locations=locations.get(i, set()), actors=actors.get(i, set())) for i in g]
         seg = segment(items, config, min_size)
         if len(seg.groups) != 1 or seg.commentary or seg.detached:
             logger.info(f"Development segmentation: cluster of {len(g)} -> {len(seg.groups)} developments, "
@@ -184,3 +227,4 @@ def segment_groups(session, groups: list[list[int]], config: DevelopmentSegmenta
 
 
 LOCATION_TYPES = ("GPE", "LOC", "FAC")
+ACTOR_TYPES = ("PERSON", "ORG", "GPE", "NORP")

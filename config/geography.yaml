@@ -1,0 +1,566 @@
+# Place containment for geographic compatibility (osint_monitor/processors/geography.py).
+#
+# Two place mentions are compatible when they name the same place or one contains the other
+# ("Northern Cyprus" and "Cyprus", "California" and "United States"). Two places inside the same
+# country are NOT compatible by that fact alone: Kyiv and Odesa are different places. Names not
+# listed here only match themselves. Keys and values are lower-case; lookups normalise names
+# (HTML entities, possessives, "the").
+#
+# `places` maps a place to the place that contains it. Countries need no entry unless they sit
+# inside a region below. `regions` are supra-national areas, applied only when
+# `use_regions` is enabled by the caller.
+
+aliases:
+  us: united states
+  u.s.: united states
+  usa: united states
+  america: united states
+  united states of america: united states
+  uk: united kingdom
+  britain: united kingdom
+  great britain: united kingdom
+  turkey: turkiye
+  türkiye: turkiye
+  nyc: new york city
+  washington, dc: washington dc
+  washington d.c.: washington dc
+  dr congo: democratic republic of the congo
+  drc: democratic republic of the congo
+  congo-kinshasa: democratic republic of the congo
+  ivory coast: cote d'ivoire
+  côte d'ivoire: cote d'ivoire
+  burma: myanmar
+  czechia: czech republic
+  uae: united arab emirates
+  emirates: united arab emirates
+  ksa: saudi arabia
+  dprk: north korea
+  republic of korea: south korea
+  occupied west bank: west bank
+  gaza strip: gaza
+  palestinian territories: palestine
+  occupied palestinian territories: palestine
+  hong kong sar: hong kong
+  macao: macau
+  kiev: kyiv
+  kharkov: kharkiv
+  odessa: odesa
+  bombay: mumbai
+  calcutta: kolkata
+  madras: chennai
+  peking: beijing
+  canton: guangzhou
+  saigon: ho chi minh city
+  holland: netherlands
+  the hague: hague
+
+# The directional part of "northern cyprus", "eastern ukraine", "southern lebanon": when the
+# rest of the name is a known place, the mention is a part of that place.
+directional_prefixes: [northern, southern, eastern, western, north, south, east, west, central,
+                       northeastern, northwestern, southeastern, southwestern, northeast, northwest,
+                       southeast, southwest, upper, lower, occupied, greater, rural, coastal]
+
+# Countries and territories (no parent). Listed so that "northern X" and aliases resolve.
+countries: [afghanistan, albania, algeria, andorra, angola, argentina, armenia, australia, austria,
+  azerbaijan, bahamas, bahrain, bangladesh, barbados, belarus, belgium, belize, benin, bhutan, bolivia,
+  bosnia and herzegovina, botswana, brazil, brunei, bulgaria, burkina faso, burundi, cambodia, cameroon,
+  canada, cape verde, central african republic, chad, chile, china, colombia, comoros, congo, costa rica,
+  cote d'ivoire, croatia, cuba, cyprus, czech republic, democratic republic of the congo, denmark,
+  djibouti, dominican republic, ecuador, egypt, el salvador, equatorial guinea, eritrea, estonia,
+  eswatini, ethiopia, fiji, finland, france, gabon, gambia, georgia, germany, ghana, greece, greenland,
+  guatemala, guinea, guinea-bissau, guyana, haiti, honduras, hungary, iceland, india, indonesia, iran,
+  iraq, ireland, israel, italy, jamaica, japan, jordan, kazakhstan, kenya, kosovo, kuwait, kyrgyzstan,
+  laos, latvia, lebanon, lesotho, liberia, libya, liechtenstein, lithuania, luxembourg, madagascar,
+  malawi, malaysia, maldives, mali, malta, mauritania, mauritius, mexico, moldova, monaco, mongolia,
+  montenegro, morocco, mozambique, myanmar, namibia, nepal, netherlands, new zealand, nicaragua, niger,
+  nigeria, north korea, north macedonia, norway, oman, pakistan, palestine, panama, papua new guinea,
+  paraguay, peru, philippines, poland, portugal, qatar, romania, russia, rwanda, saudi arabia, senegal,
+  serbia, sierra leone, singapore, slovakia, slovenia, solomon islands, somalia, south africa,
+  south korea, south sudan, spain, sri lanka, sudan, suriname, sweden, switzerland, syria, taiwan,
+  tajikistan, tanzania, thailand, timor-leste, togo, trinidad and tobago, tunisia, turkiye,
+  turkmenistan, uganda, ukraine, united arab emirates, united kingdom, united states, uruguay,
+  uzbekistan, vanuatu, vatican, venezuela, vietnam, yemen, zambia, zimbabwe, antarctica]
+
+places:
+  # Cyprus, Israel / Palestine
+  northern cyprus: cyprus
+  nicosia: cyprus
+  gaza: palestine
+  gaza city: gaza
+  khan younis: gaza
+  rafah: gaza
+  deir al-balah: gaza
+  jabalia: gaza
+  west bank: palestine
+  ramallah: west bank
+  nablus: west bank
+  hebron: west bank
+  jenin: west bank
+  tulkarm: west bank
+  qusra: west bank
+  qaryut: west bank
+  tel aviv: israel
+  haifa: israel
+  # Lebanon, Syria, Iraq, Iran, Gulf, Yemen
+  beirut: lebanon
+  tyre: lebanon
+  sidon: lebanon
+  nabatieh: lebanon
+  deir al-zahrani: lebanon
+  damascus: syria
+  aleppo: syria
+  idlib: syria
+  homs: syria
+  baghdad: iraq
+  erbil: iraq
+  basra: iraq
+  mosul: iraq
+  tehran: iran
+  isfahan: iran
+  tabriz: iran
+  bandar abbas: iran
+  qeshm island: iran
+  chabahar: iran
+  minab: iran
+  riyadh: saudi arabia
+  jeddah: saudi arabia
+  mecca: saudi arabia
+  medina: saudi arabia
+  doha: qatar
+  dubai: united arab emirates
+  abu dhabi: united arab emirates
+  muscat: oman
+  manama: bahrain
+  sanaa: yemen
+  aden: yemen
+  marib: yemen
+  hodeidah: yemen
+  # Ukraine, Russia, Europe
+  kyiv: ukraine
+  kharkiv: ukraine
+  odesa: ukraine
+  lviv: ukraine
+  dnipro: ukraine
+  zaporizhzhia: ukraine
+  donetsk: ukraine
+  luhansk: ukraine
+  kherson: ukraine
+  crimea: ukraine
+  sumy: ukraine
+  moscow: russia
+  st petersburg: russia
+  saint petersburg: russia
+  samara: russia
+  perm: russia
+  belgorod: russia
+  kursk: russia
+  chechnya: russia
+  siberia: russia
+  minsk: belarus
+  london: england
+  manchester: england
+  liverpool: england
+  birmingham: england
+  southampton: england
+  bournemouth: england
+  sussex: england
+  cambridge: england
+  oxford: england
+  england: united kingdom
+  scotland: united kingdom
+  wales: united kingdom
+  northern ireland: united kingdom
+  edinburgh: scotland
+  glasgow: scotland
+  belfast: northern ireland
+  dublin: ireland
+  paris: france
+  bordeaux: france
+  marseille: france
+  lyon: france
+  lourdes: france
+  berlin: germany
+  munich: germany
+  cologne: germany
+  hamburg: germany
+  frankfurt: germany
+  mannheim: germany
+  stade: lower saxony
+  bavaria: germany
+  lower saxony: germany
+  saxony: germany
+  north rhine-westphalia: germany
+  baden-wurttemberg: germany
+  madrid: spain
+  barcelona: spain
+  catalonia: spain
+  andalusia: spain
+  ceuta: spain
+  melilla: spain
+  elche: spain
+  rome: italy
+  milan: italy
+  naples: italy
+  bologna: italy
+  venice: italy
+  sicily: italy
+  sardinia: italy
+  lake garda: italy
+  vienna: austria
+  brussels: belgium
+  amsterdam: netherlands
+  hague: netherlands
+  rotterdam: netherlands
+  copenhagen: denmark
+  stockholm: sweden
+  fagersta: sweden
+  oslo: norway
+  helsinki: finland
+  warsaw: poland
+  prague: czech republic
+  budapest: hungary
+  bucharest: romania
+  sofia: bulgaria
+  athens: greece
+  lisbon: portugal
+  bern: switzerland
+  geneva: switzerland
+  zurich: switzerland
+  belgrade: serbia
+  chisinau: moldova
+  nuuk: greenland
+  istanbul: turkiye
+  ankara: turkiye
+  # Asia
+  beijing: china
+  shanghai: china
+  shenzhen: guangdong
+  guangzhou: guangdong
+  guangdong: china
+  guangdong province: guangdong
+  hong kong: china
+  macau: china
+  tibet: china
+  xinjiang: china
+  sichuan: china
+  hubei: china
+  henan: china
+  henan province: henan
+  fujian: china
+  zhejiang: china
+  jiangsu: china
+  shandong: china
+  yunnan: china
+  guangxi: china
+  guangxi zhuang: guangxi
+  inner mongolia: china
+  wuhan: hubei
+  yichang: hubei
+  huanggang: hubei
+  chengdu: sichuan
+  mianyang: sichuan
+  hangzhou: zhejiang
+  nanning: guangxi
+  guigang: guangxi
+  qingdao: shandong
+  tianjin: china
+  chongqing: china
+  xian: china
+  greater bay area: china
+  tai po: hong kong
+  causeway bay: hong kong
+  kowloon: hong kong
+  lantau: hong kong
+  lantau island: hong kong
+  hong kong island: hong kong
+  new territories: hong kong
+  taipei: taiwan
+  kaohsiung: taiwan
+  tokyo: japan
+  osaka: japan
+  kyoto: japan
+  hokkaido: japan
+  okinawa: japan
+  hiroshima: japan
+  nagasaki: japan
+  furano: hokkaido
+  seoul: south korea
+  busan: south korea
+  incheon: south korea
+  gwangju: south korea
+  seongnam: south korea
+  pyongyang: north korea
+  new delhi: india
+  delhi: india
+  mumbai: india
+  kolkata: india
+  chennai: india
+  bengaluru: india
+  hyderabad: india
+  kashmir: india
+  assam: india
+  sikkim: india
+  rajasthan: india
+  jharkhand: india
+  andhra pradesh: india
+  maharashtra: india
+  uttar pradesh: india
+  bihar: india
+  kerala: india
+  manipur: india
+  gujarat: india
+  tamil nadu: india
+  west bengal: india
+  karachi: pakistan
+  lahore: pakistan
+  islamabad: pakistan
+  peshawar: pakistan
+  balochistan: pakistan
+  khyber pakhtunkhwa: pakistan
+  kabul: afghanistan
+  herat: afghanistan
+  kandahar: afghanistan
+  dhaka: bangladesh
+  kathmandu: nepal
+  colombo: sri lanka
+  bangkok: thailand
+  nonthaburi province: thailand
+  chiang mai: thailand
+  phuket: thailand
+  hanoi: vietnam
+  ho chi minh city: vietnam
+  phnom penh: cambodia
+  yangon: myanmar
+  naypyidaw: myanmar
+  kuala lumpur: malaysia
+  sarawak: malaysia
+  sabah: malaysia
+  negeri sembilan: malaysia
+  melaka: malaysia
+  jakarta: indonesia
+  bali: indonesia
+  sumba: indonesia
+  flores: indonesia
+  flores island: indonesia
+  maumere: indonesia
+  java: indonesia
+  sumatra: indonesia
+  papua: indonesia
+  manila: philippines
+  metro manila: philippines
+  luzon: philippines
+  mindanao: philippines
+  cebu: philippines
+  bishkek: kyrgyzstan
+  astana: kazakhstan
+  almaty: kazakhstan
+  tashkent: uzbekistan
+  dushanbe: tajikistan
+  ulaanbaatar: mongolia
+  # Africa
+  cairo: egypt
+  khartoum: sudan
+  darfur: sudan
+  juba: south sudan
+  addis ababa: ethiopia
+  tigray: ethiopia
+  amhara: ethiopia
+  asmara: eritrea
+  mogadishu: somalia
+  nairobi: kenya
+  kampala: uganda
+  bundibugyo: uganda
+  kinshasa: democratic republic of the congo
+  goma: democratic republic of the congo
+  north kivu: democratic republic of the congo
+  south kivu: democratic republic of the congo
+  ituri: democratic republic of the congo
+  kigali: rwanda
+  lagos: nigeria
+  abuja: nigeria
+  kwara: nigeria
+  borno: nigeria
+  accra: ghana
+  dakar: senegal
+  bamako: mali
+  niamey: niger
+  ouagadougou: burkina faso
+  n'djamena: chad
+  tripoli: libya
+  benghazi: libya
+  tunis: tunisia
+  algiers: algeria
+  rabat: morocco
+  casablanca: morocco
+  nouakchott: mauritania
+  johannesburg: south africa
+  cape town: south africa
+  pretoria: south africa
+  durban: south africa
+  eastern cape: south africa
+  gauteng: south africa
+  kwazulu-natal: south africa
+  harare: zimbabwe
+  lake kariba: zimbabwe
+  maputo: mozambique
+  luanda: angola
+  # Americas
+  washington dc: united states
+  new york city: new york
+  manhattan: new york city
+  brooklyn: new york city
+  los angeles: california
+  san francisco: california
+  silicon valley: california
+  bay area: california
+  hollywood: los angeles
+  chicago: illinois
+  houston: texas
+  dallas: texas
+  austin: texas
+  miami: florida
+  philadelphia: pennsylvania
+  boston: massachusetts
+  seattle: washington state
+  portland: oregon
+  spokane: washington state
+  detroit: michigan
+  atlanta: georgia (us state)
+  nashville: tennessee
+  cincinnati: ohio
+  norfolk: virginia
+  chesterfield county: virginia
+  new orleans: louisiana
+  las vegas: nevada
+  phoenix: arizona
+  denver: colorado
+  honolulu: hawaii
+  big island: hawaii
+  anchorage: alaska
+  san juan: puerto rico
+  puerto rico: united states
+  guam: united states
+  alabama: united states
+  alaska: united states
+  arizona: united states
+  arkansas: united states
+  california: united states
+  colorado: united states
+  connecticut: united states
+  delaware: united states
+  florida: united states
+  georgia (us state): united states
+  hawaii: united states
+  idaho: united states
+  illinois: united states
+  indiana: united states
+  iowa: united states
+  kansas: united states
+  kentucky: united states
+  louisiana: united states
+  maine: united states
+  maryland: united states
+  massachusetts: united states
+  michigan: united states
+  minnesota: united states
+  mississippi: united states
+  missouri: united states
+  montana: united states
+  nebraska: united states
+  nevada: united states
+  new hampshire: united states
+  new jersey: united states
+  new mexico: united states
+  new york: united states
+  north carolina: united states
+  north dakota: united states
+  ohio: united states
+  oklahoma: united states
+  oregon: united states
+  pennsylvania: united states
+  rhode island: united states
+  south carolina: united states
+  south dakota: united states
+  tennessee: united states
+  texas: united states
+  utah: united states
+  vermont: united states
+  virginia: united states
+  washington state: united states
+  west virginia: united states
+  wisconsin: united states
+  wyoming: united states
+  # US regions (a region contains its states)
+  us northeast: united states
+  northeastern us: us northeast
+  northeast us: us northeast
+  new england: us northeast
+  mid-atlantic: united states
+  us midwest: united states
+  midwest: us midwest
+  us south: united states
+  us west coast: united states
+  east coast: united states
+  west coast: united states
+  ottawa: canada
+  toronto: ontario
+  montreal: quebec
+  vancouver: british columbia
+  ontario: canada
+  quebec: canada
+  british columbia: canada
+  alberta: canada
+  manitoba: canada
+  saskatchewan: canada
+  nova scotia: canada
+  new brunswick: canada
+  mexico city: mexico
+  tijuana: mexico
+  guadalajara: mexico
+  havana: cuba
+  caracas: venezuela
+  bogota: colombia
+  lima: peru
+  ayacucho: peru
+  santiago: chile
+  coquimbo: chile
+  huasco: chile
+  buenos aires: argentina
+  sao paulo: brazil
+  rio de janeiro: brazil
+  brasilia: brazil
+  georgetown: guyana
+  port-au-prince: haiti
+  # Oceania
+  sydney: australia
+  melbourne: australia
+  canberra: australia
+  brisbane: australia
+  perth: australia
+  bondi: sydney
+  new south wales: australia
+  queensland: australia
+  victoria: australia
+  wellington: new zealand
+  auckland: new zealand
+  honiara: solomon islands
+
+# Which places each US region contains (a state is in the region and in the country).
+region_members:
+  us northeast: [maine, new hampshire, vermont, massachusetts, rhode island, connecticut, new york,
+                 new jersey, pennsylvania]
+  mid-atlantic: [new york, new jersey, pennsylvania, delaware, maryland, virginia, washington dc]
+  us midwest: [ohio, michigan, indiana, illinois, wisconsin, minnesota, iowa, missouri, kansas, nebraska,
+               north dakota, south dakota]
+
+# Supra-national regions (applied only with use_regions).
+regions:
+  middle east: [iran, iraq, israel, palestine, lebanon, syria, jordan, saudi arabia, yemen, oman,
+                united arab emirates, qatar, bahrain, kuwait, egypt, turkiye]
+  gulf: [saudi arabia, united arab emirates, qatar, bahrain, kuwait, oman, iran, iraq]
+  southeast asia: [thailand, vietnam, cambodia, laos, myanmar, malaysia, singapore, indonesia,
+                   philippines, brunei, timor-leste]
+  east asia: [china, japan, south korea, north korea, taiwan, mongolia]
+  central asia: [kazakhstan, kyrgyzstan, tajikistan, turkmenistan, uzbekistan]
+  north africa: [egypt, libya, tunisia, algeria, morocco]
+  korean peninsula: [south korea, north korea]

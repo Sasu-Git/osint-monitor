@@ -56,4 +56,11 @@ development_segmentation:
   enabled: false
   analysis_headlines: true        # "Why ...?", "What we know ...", explainers vs report headlines
   min_headline_similarity: 0.5    # two outlets' headlines below this cosine are different Developments
-  disjoint_locations: true        # both items name places and share none
+  disjoint_locations: true        # both items name places and none is compatible
+  location_match: containment     # compare places through config/geography.yaml ("northern cyprus" is in "cyprus");
+                                  # "exact" compares names only
+  use_regions: false              # supra-national regions ("middle east") do not make places compatible
+  headline_override:              # a headline mismatch alone does not split two report headlines that were
+    max_hours: 6                  # published within 6 h and name compatible places (one storm headlined
+    require_shared_place: true    # by region and by states); never applies to live blogs or analysis
+    min_shared_actors: 0
