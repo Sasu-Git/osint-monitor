@@ -47,3 +47,61 @@ The development windows contain no cross-source false split caused by places or 
 so development evidence for v2 is thin: it is a small positive. The design targets the two named
 out-of-sample failures. Those windows (2026-08-31 and 2026-09-27-live) are therefore not blind to
 this change. A fresh live window is the real test.
+
+## Hold-out (run once, 2026-09-28; logged in holdout_runs.jsonl)
+
+The hold-out split now holds 2026-08-31, 2026-09-10 and 2026-09-27-live. v1 figures are from the
+earlier single runs; v2 has not been re-tuned.
+
+| window | cross-source SAME: none / v1 / v2 | RELATED linked: none / v1 / v2 | UNRELATED: none / v1 / v2 |
+|---|---|---|---|
+| 2026-08-31 | 4/4 / 3/4 / 3/4 | 24 / 7 / 7 | 0 / 0 / 0 |
+| 2026-09-10 | 3/4 / 3/4 / 3/4 | 28 / 2 / **6** | 3 / 0 / 0 |
+| 2026-09-27-live | 24/25 / 23/25 / **24/25** | 38 / 18 / 18 | 7 / 7 / 7 |
+| total | 31/33 / 29/33 / **30/33** | 90 / 27 / **31** | 10 / 7 / 7 |
+
+Multi-source developments across the three windows: no segmentation 18/20, v2 17/20 (all 3+-source
+developments are kept, 4/4).
+
+- **False split fixed:** the nor'easter (region vs states). The headline override kept it:
+  report/report, 0.8 h apart, compatible places.
+- **False split not fixed:** Northern Cyprus. NER gave the BBC item the single place "cyprus ayten",
+  a place name fused with a following person name, so no gazetteer entry can match it. The failure
+  is NER noise, not geography. It was not patched after seeing it.
+- **Wrong links reintroduced:** 4 related, all on 2026-09-10 and all from the headline override. They
+  are same-day report headlines about one storyline: different 9/11 anniversary ceremonies ("Four
+  former US presidents mark 25th anniversary in NYC" vs "Trump pays tribute ... at Pentagon ceremony"),
+  and a Houthi advance vs a battles piece. This is the storyline merging the override was meant to
+  avoid: close in time, compatible places, different occurrences.
+
+2026-08-31 and 2026-09-27-live are not blind to v2: their failures motivated it. The fresh live window
+required by the protocol cannot be built yet. Since 2026-09-28 12:00 UTC the daemon has collected
+22 narrative-window items. A 24 h window closes at 2026-09-29 12:00 UTC.
+
+## Recommendation: NEED ANOTHER LIVE WINDOW
+
+Evidence so far:
+
+- **Precision:** out-of-sample, related links fall 90 -> 31 and unrelated 10 -> 7.
+- **Development recall:** blind development recall is untouched (54/55, 29/30).
+- **Out-of-sample recall:** 30/33 vs a 31/33 baseline, so it is close to baseline. v1 was 29/33.
+- **Against:** the gain over v1 is one fixed pair for four reintroduced related links. The windows
+  that show the fix are not blind to the design.
+
+That is borderline-positive, not decisive. Next step: build `2026-09-29-live` from 2026-09-28 12:00
+to 2026-09-29 12:00 UTC, label it blind, freeze it, and run
+`inspect clustering-benchmark --holdout --segmentation --window 2026-09-29-live` once. Enable
+segmentation by default only if that window keeps cross-source SAME recall within one pair of the
+baseline and keeps most of the precision gain.
+
+## Remaining limitations
+
+- NER noise in place names ("cyprus ayten") defeats both exact and containment matching.
+- The headline override can rejoin same-day, same-place developments of one storyline (anniversary
+  ceremonies, battlefield reports).
+- Same-country different disasters (Nepal floods vs avalanche) stay merged: containment treats the
+  shared country as compatible.
+- Reactions, follow-ups, different actions by the same actors, and repeated actions in the same place
+  are unchanged. Both strict xfails are kept.
+- The gazetteer is curated: places missing from it only match exactly.
+- Incremental daemon behaviour is not replayed.
