@@ -63,9 +63,17 @@ def cluster_recent_items(
     Returns list of cluster dicts: {item_ids, label, summary, severity, region, kind}.
     """
     recent = recent_items(session, window_hours, now)
-    narrative, structured = partition(recent, load_event_grouping_config())
+    grouping = load_event_grouping_config()
+    narrative, structured = partition(recent, grouping)
     structured_groups = group_structured(structured, min_size=min_cluster_size)
     narrative_groups = cluster_narrative([i for i in narrative if i.embedding is not None], min_cluster_size)
+    commentary: dict[int, list[int]] = {}
+    if grouping.development_segmentation.enabled:
+        from osint_monitor.processors.development_segmentation import segment_groups
+        stories = len(narrative_groups)
+        narrative_groups, commentary = segment_groups(session, narrative_groups, grouping.development_segmentation,
+                                                      min_cluster_size)
+        logger.info(f"Development segmentation: {stories} narrative clusters -> {len(narrative_groups)} developments")
     logger.info(f"Event grouping: {len(narrative_groups)} narrative clusters from {len(narrative)} items, "
                 f"{len(structured_groups)} structured groups from {len(structured)} records")
     groups = {n: ids for n, ids in enumerate(narrative_groups)}
@@ -76,6 +84,8 @@ def cluster_recent_items(
     clusters = _build_cluster_summaries(session, groups)
     for c in clusters:
         c["kind"] = kinds[c["label"]]
+        if commentary.get(c["label"]):
+            c["commentary_item_ids"] = commentary[c["label"]]   # analysis about it, not evidence (not persisted yet)
     return clusters
 
 

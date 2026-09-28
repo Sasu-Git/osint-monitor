@@ -30,11 +30,13 @@ HOLDOUT_WARNING = ("HOLD-OUT RUN. The hold-out is meant to be evaluated once, af
 
 
 def evaluate_split(split: Split, root: Path = BENCHMARK_DIR, window_ids: list[str] | None = None,
-                   replay=replay_window) -> dict:
+                   replay=replay_window, segmentation: bool = False) -> dict:
     manifest = load_manifest(root)
     windows = [w for w in manifest.windows if w.split == split and (not window_ids or w.id in window_ids)]
     if not windows:
         raise BenchmarkError(f"no {split.value} windows in {root / 'manifest.yaml'}")
+    if segmentation:
+        return _evaluate_segmentation(split, root, windows, replay)
     frozen = load_frozen_rule(root) if split == Split.HOLDOUT else None
     rules = [frozen] if frozen else variants()
 
@@ -82,6 +84,34 @@ def evaluate_split(split: Split, root: Path = BENCHMARK_DIR, window_ids: list[st
     return report
 
 
+def segmentation_config():
+    """The configured guards, evaluated whether or not production has them enabled."""
+    from osint_monitor.core.config import load_event_grouping_config
+    return load_event_grouping_config().development_segmentation.model_copy(update={"enabled": True})
+
+
+def _evaluate_segmentation(split: Split, root: Path, windows, replay) -> dict:
+    config = segmentation_config()
+    per_window, current, segmented = [], [], []
+    for w in windows:
+        verify_frozen(w, root)
+        items = load_items(root / w.items_file)
+        gold = Gold(load_labels(root / w.labels_file, items), items)
+        result = replay(items, segmentation=config)
+        present = set(result.features)
+        before, after = evaluate(result.clusters, gold, present), evaluate(result.segmented, gold, present)
+        current.append(before)
+        segmented.append(after)
+        per_window.append({"window": w.id, "items": len(items), "current": before, "segmented": after,
+                           "commentary": len(result.commentary)})
+    report = {"split": split.value, "mode": "development_segmentation", "config": config.model_dump(),
+              "generated_at": datetime.utcnow().isoformat(timespec="seconds"), "windows": [w.id for w in windows],
+              "current": combine(current), "segmented": combine(segmented), "rules": {}, "per_window": per_window}
+    if split == Split.HOLDOUT:
+        _log_holdout(root, None, windows, segmentation=config)
+    return report
+
+
 def _sum_effects(effects: list[dict]) -> dict:
     keys = ("added_same", "added_related", "added_unrelated", "added_uncertain",
             "remaining_same_misses", "remaining_misses_below_band")
@@ -92,10 +122,16 @@ def _sum_effects(effects: list[dict]) -> dict:
     return out
 
 
-def _log_holdout(root: Path, rule, windows) -> None:
-    rule_hash = hashlib.sha256((root / FROZEN_RULE_FILE).read_bytes()).hexdigest()
-    record = {"ran_at": datetime.utcnow().isoformat(timespec="seconds"), "rule": rule.name, "rule_sha256": rule_hash,
+def _log_holdout(root: Path, rule, windows, segmentation=None) -> None:
+    record = {"ran_at": datetime.utcnow().isoformat(timespec="seconds"),
               "windows": {w.id: {"items": w.items_sha256, "labels": w.labels_sha256} for w in windows}}
+    if segmentation is None:
+        record.update(rule=rule.name, rule_sha256=hashlib.sha256((root / FROZEN_RULE_FILE).read_bytes()).hexdigest())
+    else:
+        from osint_monitor.processors import development_segmentation
+        code = Path(development_segmentation.__file__).read_bytes()
+        record.update(rule="development_segmentation", segmentation=segmentation.model_dump(),
+                      code_sha256=hashlib.sha256(code).hexdigest())
     with open(root / HOLDOUT_LOG, "a", encoding="utf-8", newline="\n") as f:
         f.write(json.dumps(record, sort_keys=True) + "\n")
 
@@ -127,6 +163,13 @@ def format_report(report: dict) -> str:
     lines = [f"BENCHMARK RESULTS ({report['split']}) on windows {report['windows']} — "
              "a small labelled benchmark, not an estimate for all news.", "",
              "Current clusterer:", "  " + dev_line(report["current"]), "  " + rest_line(report["current"]), ""]
+    if "segmented" in report:
+        lines += [f"With development segmentation {report['config']}:",
+                  "  " + dev_line(report["segmented"]), "  " + rest_line(report["segmented"]),
+                  f"  analysis items kept as commentary: {sum(w['commentary'] for w in report['per_window'])}", ""]
+        for w in report["per_window"]:
+            lines.append(f"  {w['window']}: before {rest_line(w['current'])}")
+            lines.append(f"  {' ' * len(w['window'])}  after  {rest_line(w['segmented'])}")
     for name, r in report["rules"].items():
         e = r["effect"]
         lines += [f"Rule [{name}]",

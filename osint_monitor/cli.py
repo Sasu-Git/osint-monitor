@@ -79,6 +79,9 @@ def main():
     sub_inspect.add_argument("--window", action="append", default=None,
                              help="clustering-benchmark: limit to this window id (repeatable)")
     sub_inspect.add_argument("--out", default=None, help="clustering-benchmark: write the full report as JSON")
+    sub_inspect.add_argument("--segmentation", action="store_true",
+                             help="clustering-benchmark: evaluate development segmentation (config/event_grouping.yaml) "
+                                  "instead of the link-rule variants")
 
     # benchmark: build, label and freeze clustering benchmark windows (evaluations/clustering/)
     sub_bench = subparsers.add_parser("benchmark", help="Build and freeze clustering benchmark windows")
@@ -451,7 +454,8 @@ def _cmd_inspect_clustering_benchmark(args):
         runs = evaluation.previous_holdout_runs()
         if runs:
             print(f"Previous hold-out runs: {len(runs)} (last {runs[-1]['ran_at']}, rule {runs[-1]['rule']!r})")
-    report = evaluation.evaluate_split(Split.HOLDOUT if args.holdout else Split.DEVELOPMENT, window_ids=args.window)
+    report = evaluation.evaluate_split(Split.HOLDOUT if args.holdout else Split.DEVELOPMENT, window_ids=args.window,
+                                       segmentation=args.segmentation)
     print(evaluation.format_report(report))
     if args.out:
         with open(args.out, "w", encoding="utf-8") as f:
