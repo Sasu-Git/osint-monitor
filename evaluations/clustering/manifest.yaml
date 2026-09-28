@@ -173,3 +173,27 @@ windows:
       South China Morning Post: 20
       War on the Rocks: 5
   overlaps: []
+- id: 2026-09-27-live
+  split: holdout
+  start: '2026-09-27T00:00:00'
+  end: '2026-09-28T12:00:00'
+  source:
+    kind: local_db
+    reference: data/eval/window-2026-09-25.db
+    notes: ''
+  items_file: windows/2026-09-27-live.items.jsonl
+  labels_file: labels/2026-09-27-live.labels.yaml
+  items_sha256: 7909656a6398bba461bb682c0b61ea2e852f0879be2bb7eec156d26b58bb994a
+  labels_sha256: null
+  frozen_at: '2026-09-28T13:25:25'
+  stats:
+    items: 173
+    sources: 6
+    per_source:
+      Al Jazeera: 78
+      BBC World: 19
+      Breaking Defense: 1
+      Defense News: 2
+      South China Morning Post: 71
+      War on the Rocks: 2
+  overlaps: []
