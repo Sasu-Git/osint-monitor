@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+{% block title %}{{ situation.title if situation else 'Situation not found' }} - OSINT Monitor{% endblock %}
+{% block content %}
+<style>
+  .muted { color: var(--text-secondary); }
+  .meta { color: var(--text-secondary); font-size: 0.8rem; }
+  .chips span { display: inline-block; background: var(--bg-secondary); border: 1px solid var(--border);
+                border-radius: 4px; padding: 0.05rem 0.45rem; margin: 0.15rem 0.25rem 0 0; font-size: 0.75rem; }
+  .chips .label { background: none; border: none; padding-left: 0; color: var(--text-secondary); }
+  .status { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; padding: 0.1rem 0.45rem;
+            border-radius: 4px; border: 1px solid var(--border); color: var(--text-secondary); }
+  .conf { font-size: 0.72rem; font-weight: 600; padding: 0.1rem 0.45rem; border-radius: 4px; text-transform: uppercase; }
+  .conf-confirmed { background: var(--low); color: #fff; }
+  .conf-probable { background: #2e8b57; color: #fff; }
+  .conf-possible { background: var(--medium); color: #1a1d29; }
+  .conf-disputed { background: var(--high); color: #fff; }
+  .conf-unverified, .conf-none { background: var(--text-secondary); color: #fff; }
+  .timeline { border-left: 2px solid var(--border); margin-left: 0.4rem; padding-left: 1.1rem; }
+  .dev { position: relative; }
+  .dev::before { content: ""; position: absolute; left: -1.55rem; top: 1.3rem; width: 0.7rem; height: 0.7rem;
+                 border-radius: 50%; background: var(--accent); }
+  .dev h3 { color: var(--text-primary); font-size: 0.95rem; margin: 0.2rem 0 0.4rem; }
+  details summary { cursor: pointer; color: var(--accent); font-size: 0.82rem; margin-top: 0.6rem; }
+  .evidence td { vertical-align: top; }
+  .flag { color: var(--high); }
+</style>
+
+{% if not situation %}
+<p><a href="/situations">&larr; Situations</a></p>
+<div class="card">No situation <code>{{ slug }}</code>.</div>
+{% else %}
+{% set s = situation %}
+<p style="margin-bottom:0.6rem"><a href="/situations" style="font-size:0.9rem">&larr; Situations</a></p>
+<div class="card">
+  <h2 style="font-size:1.25rem;margin-bottom:0.3rem">{{ s.title }} <span class="status">{{ s.status }}</span></h2>
+  {% if s.description %}<p class="muted" style="margin-bottom:0.5rem">{{ s.description }}</p>{% endif %}
+  <div class="chips"><span class="label">Principal actors</span>{% for a in s.primary_actors %}<span>{{ a }}</span>{% endfor %}</div>
+  <div class="meta" style="margin-top:0.5rem">
+    {{ s.development_count }} development{{ '' if s.development_count == 1 else 's' }}
+    · last changed {{ s.last_changed.strftime('%Y-%m-%d %H:%M') if s.last_changed else '—' }} UTC
+    {% if s.region %}· region {{ s.region }}{% endif %}
+    {% if s.created_at %}· tracked since {{ s.created_at.strftime('%Y-%m-%d') }}{% endif %}
+  </div>
+</div>
+
+{% if not s.developments %}
+<div class="card muted">No developments have been grouped into this situation yet.</div>
+{% else %}
+<h3 class="muted" style="margin:1rem 0 0.6rem;font-size:0.85rem;text-transform:uppercase;letter-spacing:0.08em">Timeline</h3>
+<div class="timeline">
+{% for d in s.developments %}
+  {% set c = d.confidence %}
+  <div class="card dev" id="development-{{ d.id }}">
+    <div class="meta">
+      {{ d.first_reported_at.strftime('%Y-%m-%d %H:%M') if d.first_reported_at else '—' }} UTC
+      {% if d.last_updated_at and d.first_reported_at and d.last_updated_at != d.first_reported_at %}
+        · updated {{ d.last_updated_at.strftime('%Y-%m-%d %H:%M') }}{% endif %}
+      · <a href="/events/{{ d.id }}">event {{ d.id }}</a>
+    </div>
+    <h3>{{ d.what_happened }}</h3>
+    {% if d.change_summary and d.change_summary != d.what_happened %}<p style="font-size:0.85rem;margin-bottom:0.4rem">{{ d.change_summary }}</p>{% endif %}
+
+    <div class="chips">
+      <span class="conf conf-{{ c.confidence_class or 'none' }}">{{ c.confidence_class or 'not assessed' }}</span>
+      {% if c.independent_origins is not none %}<span>{{ c.independent_origins }} independent origin{{ '' if c.independent_origins == 1 else 's' }}</span>{% endif %}
+      {% if c.reliable_origins %}<span>{{ c.reliable_origins }} reliable</span>{% endif %}
+      <span>{{ c.source_count }} source{{ '' if c.source_count == 1 else 's' }}</span>
+      {% for f in c.flags %}<span class="flag">{{ f | replace('_', ' ') }}</span>{% endfor %}
+    </div>
+    <div class="chips">
+      <span class="label">Classification</span>
+      {% set k = d.classification %}
+      {% for v in [k.event_type, k.event_domain, k.interaction_mode, k.concreteness] if v and v != 'unknown' %}<span>{{ v | replace('_', ' ') }}</span>{% endfor %}
+      {% if not k.event_type or k.event_type == 'unknown' %}<span class="muted">type not determined</span>{% endif %}
+      {% if k.classified_by %}<span class="label">by {{ k.classified_by }}</span>{% endif %}
+    </div>
+    {% if d.significance_class or d.rank_reasons %}
+    <div class="chips"><span class="label">Significance</span>
+      {% if d.significance_class %}<span>{{ d.significance_class }}</span>{% endif %}
+      {% for r in d.rank_reasons %}<span>{{ r | replace('_', ' ') }}</span>{% endfor %}
+    </div>{% endif %}
+    {% if d.principal_actors %}<div class="chips"><span class="label">Actors</span>{% for a in d.principal_actors %}<span>{{ a }}</span>{% endfor %}</div>{% endif %}
+    {% if k.uncertainty_flags %}<div class="chips"><span class="label">Uncertainty</span>{% for f in k.uncertainty_flags %}<span class="flag">{{ f | replace('_', ' ') }}</span>{% endfor %}</div>{% endif %}
+
+    <details>
+      <summary>Evidence ({{ d.evidence | length }} report{{ '' if d.evidence | length == 1 else 's' }})</summary>
+      <table class="evidence" style="margin-top:0.5rem">
+        <tr><th>Source</th><th>Report</th><th>Published</th><th>Provenance</th></tr>
+        {% for e in d.evidence %}
+        <tr>
+          <td>{{ e.source }}</td>
+          <td>{% if e.url %}<a href="{{ e.url }}" target="_blank" rel="noopener noreferrer">{{ e.title }}</a>{% else %}{{ e.title }}{% endif %}</td>
+          <td class="meta">{{ e.published_at.strftime('%Y-%m-%d %H:%M') if e.published_at else '—' }}</td>
+          <td class="meta">
+            {% if e.source_role %}{{ e.source_role | replace('_', ' ') }}{% endif %}{% if e.evidence_type %} · {{ e.evidence_type }}{% endif %}
+            {% if e.derived_from %}<br>via {{ e.derived_from }}{% elif e.origin and e.origin != e.source %}<br>origin {{ e.origin }}{% endif %}
+          </td>
+        </tr>
+        {% endfor %}
+      </table>
+    </details>
+  </div>
+{% endfor %}
+</div>
+{% endif %}
+{% endif %}
+{% endblock %}

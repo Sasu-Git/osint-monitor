@@ -27,6 +27,9 @@ dependencies = [
     "numpy>=1.24",
     # LLM Providers
     "openai>=1.0",
+    "python-dotenv>=1.0",       # imported by the OpenAI provider
+    # Geocoding (default pipeline stage)
+    "geopy>=2.4",
     # Analysis
     "scipy>=1.11",
     "networkx>=3.0",
@@ -45,14 +48,24 @@ dependencies = [
 telegram = ["telethon>=1.34"]
 twitter = ["tweepy>=4.14"]
 anthropic = ["anthropic>=0.25"]
+gemini = ["google-genai>=1.0"]
 desktop = ["plyer>=2.1"]
+geo = ["mgrs>=1.4"]                     # MGRS grid references in geocoding
 postgres = ["psycopg2-binary>=2.9", "pgvector>=0.2"]
 celery = ["celery[redis]>=5.3"]
+# Not part of `all`: only used by on-demand document / image analysis and the
+# browser collector, and heavy (OCR models) or needing external binaries.
+documents = ["pymupdf>=1.24", "pdfplumber>=0.11", "PyPDF2>=3.0", "python-docx>=1.1", "openpyxl>=3.1"]
+imint = ["Pillow>=10.0", "easyocr>=1.7", "pytesseract>=0.3"]   # pytesseract needs the tesseract binary
+browser = ["playwright>=1.45"]          # then: python -m playwright install chromium
+# Everything collect / briefing / serve / daemon can use.
 all = [
     "telethon>=1.34",
     "tweepy>=4.14",
     "anthropic>=0.25",
+    "google-genai>=1.0",
     "plyer>=2.1",
+    "mgrs>=1.4",
     "psycopg2-binary>=2.9",
     "pgvector>=0.2",
     "celery[redis]>=5.3",

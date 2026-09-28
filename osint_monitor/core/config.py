@@ -10,7 +10,7 @@ from pydantic_settings import BaseSettings
 
 from osint_monitor.core.models import (
     Concreteness, ConfidenceClass, DevelopmentStatus, EventDomain, EventType, InteractionMode,
-    RankReason, RoleClass, SignificanceClass, SourceRole, UncertaintyFlag,
+    RankReason, RoleClass, SignificanceClass, SituationStatus, SourceRole, UncertaintyFlag,
 )
 
 
@@ -80,6 +80,8 @@ class TierConfig(BaseModel):
     hot_interval_seconds: int = 150    # 2.5 min
     warm_interval_seconds: int = 600   # 10 min
     cold_interval_seconds: int = 3600  # 60 min
+    # collector class name -> seconds one collect() may take before it stops and returns what it has
+    collector_budgets: dict[str, float] = Field(default_factory=dict)
 
 
 class SourcesFileConfig(BaseModel):
@@ -133,6 +135,7 @@ class RankingConfig(BaseModel):
     significance_weights: dict[SignificanceClass, float] = Field(default_factory=dict)
     role_weights: dict[RoleClass, float] = Field(default_factory=dict)
     senior_role_threshold: float = 3.0
+    known_roles: dict[str, RoleClass] = Field(default_factory=dict)   # person name -> office (until actor_roles exists)
     confidence_weights: dict[ConfidenceClass, float] = Field(default_factory=dict)
     corroboration: CorroborationPolicy = Field(default_factory=CorroborationPolicy)
     uncertainty_penalties: dict[UncertaintyFlag, float] = Field(default_factory=dict)
@@ -206,6 +209,81 @@ class ProvenanceConfig(BaseModel):
         return patterns
 
 
+class SituationSeed(BaseModel):
+    slug: str = Field(pattern=r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
+    title: str
+    short_description: str = ""
+    region: Optional[str] = None
+    primary_actors: list[str] = Field(min_length=1)
+    keywords: list[str] = Field(default_factory=list)
+    status: SituationStatus = SituationStatus.ACTIVE
+
+
+class SituationPolicy(BaseModel):
+    # evidence weights; signals that are unavailable for a pair are left out of the average
+    actor_weight: float = 0.5
+    region_weight: float = 0.1
+    semantic_weight: float = 0.3
+    keyword_weight: float = 0.2
+    min_actor_coverage: float = 0.5      # share of the situation's actors the development must involve
+    join_threshold: float = 0.6
+    # stricter policy when a development has no principal actors and only mentioned entities are known
+    fallback_min_actor_coverage: float = 1.0
+    fallback_join_threshold: float = 0.8
+    ambiguous_threshold: float = 0.4     # between this and join_threshold: ask the arbiter
+    ambiguity_margin: float = 0.1        # two candidates this close are ambiguous too
+    min_actors_to_create: int = 2        # single-actor storylines must be seeded
+    create_min_developments: int = 2     # an actor set must recur before it becomes a situation
+    create_window_days: int = 7
+    dormant_after_days: int = 14
+    centroid_developments: int = 20      # recent members averaged into the situation centroid
+
+
+class ActorsConfig(BaseModel):
+    """How entity mentions become canonical actors (config/actors.yaml)."""
+    non_actors: list[str] = Field(default_factory=list)          # topics the NER mislabels as actors
+    demonyms: dict[str, str] = Field(default_factory=dict)       # "Australian" -> country
+    aliases: dict[str, str] = Field(default_factory=dict)        # variant -> canonical name
+    represents: dict[str, str] = Field(default_factory=dict)     # person / body -> state it acts for
+
+
+class StructuredSourcesConfig(BaseModel):
+    source_types: list[str] = Field(default_factory=list)
+    sources: list[str] = Field(default_factory=list)
+
+
+class SeismicFusionConfig(BaseModel):
+    max_seconds_apart: float = 120
+    max_km_apart: float = 100
+    max_magnitude_difference: float = 0.5
+
+
+class EventGroupingConfig(BaseModel):
+    """Narrative vs structured item grouping (config/event_grouping.yaml)."""
+    structured: StructuredSourcesConfig = Field(default_factory=StructuredSourcesConfig)
+    narrative_sources: list[str] = Field(default_factory=list)
+    strategies: dict[str, str] = Field(default_factory=dict)      # source name -> structured strategy
+    seismic: SeismicFusionConfig = Field(default_factory=SeismicFusionConfig)
+
+
+class SituationsConfig(BaseModel):
+    """Situation seeds and grouping policy (config/situations.yaml)."""
+    policy: SituationPolicy = Field(default_factory=SituationPolicy)
+    # extend config/actors.yaml (kept for older situations.yaml files)
+    actor_aliases: dict[str, str] = Field(default_factory=dict)   # variant -> canonical name
+    actor_represents: dict[str, str] = Field(default_factory=dict)   # person / body -> state it acts for
+    situations: list[SituationSeed] = Field(default_factory=list)
+
+    @field_validator("situations")
+    @classmethod
+    def _unique_slugs(cls, seeds: list[SituationSeed]) -> list[SituationSeed]:
+        slugs = [s.slug for s in seeds]
+        dupes = {s for s in slugs if slugs.count(s) > 1}
+        if dupes:
+            raise ValueError(f"duplicate situation slugs: {sorted(dupes)}")
+        return seeds
+
+
 class AppSettings(BaseSettings):
     """App-level settings from environment variables."""
     db_url: str = f"sqlite:///{DATA_DIR / 'osint.db'}"
@@ -214,10 +292,12 @@ class AppSettings(BaseSettings):
     anthropic_api_key: Optional[str] = None
     ollama_base_url: str = "http://localhost:11434"
     default_llm_provider: str = "openai"
-    # Development classifier: "rules" (deterministic, free) or "llm"
+    # Development classifier: "rules" (deterministic, free), "llm", or "hybrid" (LLM only for ambiguous cases)
     classifier_backend: str = "rules"
     classifier_llm_provider: Optional[str] = None   # falls back to default_llm_provider
     classifier_llm_model: Optional[str] = None      # falls back to the provider's default
+    # Situation grouping: ambiguous cases left unassigned ("none") or settled by the LLM ("llm")
+    situation_arbiter: str = "none"
     spacy_model: str = "en_core_web_lg"
     embedding_model: str = "all-MiniLM-L6-v2"
     log_level: str = "INFO"
@@ -277,6 +357,34 @@ def load_provenance_config(path: Path | None = None) -> ProvenanceConfig:
     with open(path, encoding="utf-8") as f:
         raw = yaml.safe_load(f) or {}
     return ProvenanceConfig(**raw)
+
+
+def load_situations_config(path: Path | None = None) -> SituationsConfig:
+    """Load and validate situations.yaml."""
+    path = path or CONFIG_DIR / "situations.yaml"
+    with open(path, encoding="utf-8") as f:
+        raw = yaml.safe_load(f) or {}
+    return SituationsConfig(**raw)
+
+
+def load_actors_config(path: Path | None = None) -> ActorsConfig:
+    """Load and validate actors.yaml (empty config if the file is missing)."""
+    path = path or CONFIG_DIR / "actors.yaml"
+    if not path.exists():
+        return ActorsConfig()
+    with open(path, encoding="utf-8") as f:
+        raw = yaml.safe_load(f) or {}
+    return ActorsConfig(**raw)
+
+
+def load_event_grouping_config(path: Path | None = None) -> EventGroupingConfig:
+    """Load and validate event_grouping.yaml (everything narrative if the file is missing)."""
+    path = path or CONFIG_DIR / "event_grouping.yaml"
+    if not path.exists():
+        return EventGroupingConfig()
+    with open(path, encoding="utf-8") as f:
+        raw = yaml.safe_load(f) or {}
+    return EventGroupingConfig(**raw)
 
 
 def load_prompt(name: str) -> str:

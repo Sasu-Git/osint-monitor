@@ -1,0 +1,114 @@
+# Gold labels for 2026-09-25. See osint_monitor/benchmark/format.py for the format.
+# Criteria: a development is one concrete occurrence; responses, follow-ups and analysis
+# of it are separate developments in the same storyline (related_but_distinct).
+# Development window only: this window's items were seen with similarity scores during the
+# 2026-09-25 recall review, so it is not blind. Labels written from the label sheet.
+window: '2026-09-25'
+labelled_by: claude (from label-sheet; window previously seen in the day-1 recall review)
+labelled_at: '2026-09-25T13:00:00'
+developments:
+# --- US-China summit (Xi state visit, Washington) ---------------------------------------
+- id: us-china-state-dinner
+  storyline: us-china-summit
+  members: [b-9796005bb46b, b-63cb0d4f2400, b-f2fe2e86b26c, b-702f72ebfbf0]
+  notes: White House state dinner for Xi. BBC headline also judges the summit outcome (see uncertain pair).
+- id: us-china-summit-outcome
+  storyline: us-china-summit
+  members: [b-97cb65d1a469]
+  notes: welcome and what Xi did / did not get from the talks
+- id: white-house-tour
+  storyline: us-china-summit
+  members: [b-683038d2cd37, b-1a3eb5515f5f]
+  notes: Trump shows Xi White House building works; the autopen joke happened on that tour. Same outlet.
+- id: first-ladies-smithsonian
+  storyline: us-china-summit
+  members: [b-082ed1ec356a]
+- id: scmp-summit-reader-qa
+  storyline: us-china-summit
+  members: [b-394d9d68572d]
+  notes: live Q&A page, low value
+- id: press-barred-from-state-dinner
+  storyline: us-china-summit
+  members: [b-162be742e132]
+  notes: press-access dispute at the dinner, a different occurrence from the dinner itself
+# --- two-outlet developments ------------------------------------------------------------
+- id: italy-ddx-destroyer-contract
+  members: [b-5d1ba8e525da, b-d72e5f6a5e01]
+- id: pope-leo-france-visit
+  members: [b-a2130595f86f, b-a8bcfc949562]
+- id: nepal-flood-climate-appeal
+  members: [b-d4cad9c5fd6c, b-17f8645e6056]
+  notes: Balendra Shah's appeal after the floods; SCMP adds the India-China alliance proposal
+- id: pakistan-afghanistan-cross-border-strikes
+  members: [b-14aae9d37ebe, b-38730424bfbc]
+- id: italy-burqa-ban-school-caps
+  members: [b-256c7087fa4e, b-8a758a84c401]
+- id: casi-civilian-staff-cut
+  members: [b-aa291f31d75e, b-6e3eb47c7f66]
+# --- Netanyahu at UNGA -----------------------------------------------------------------
+- id: netanyahu-unga-speech-walkout
+  storyline: netanyahu-unga
+  members: [b-fee27e429610]
+- id: nyc-protest-arrests-netanyahu
+  storyline: netanyahu-unga
+  members: [b-56d04e57766b, b-a9f27cc576aa]
+  notes: same outlet; Sarandon among those arrested at the same protest
+- id: jewish-march-against-netanyahu
+  storyline: netanyahu-unga
+  members: [b-3d9601881311]
+- id: unga-day-three-roundup
+  storyline: netanyahu-unga
+  members: [b-7e43978bd221]
+  notes: roundup covering the walkout among other things
+- id: israel-palestine-treatment-at-un
+  storyline: netanyahu-unga
+  members: [b-8272fab65325]
+  notes: analysis
+# --- Houthi attacks on Saudi Arabia ---------------------------------------------------
+- id: houthi-attacks-aramco
+  storyline: houthi-saudi
+  members: [b-43687a0f07ef]
+- id: france-troops-saudi-terminal
+  storyline: houthi-saudi
+  members: [b-6805597101d0]
+  notes: France's response; also reports the attacks (see uncertain pair)
+- id: saudi-turkey-pakistan-defence-talks
+  storyline: houthi-saudi
+  members: [b-e0cfcff8ba0a]
+# --- Russian hybrid threat to Europe ----------------------------------------------------
+- id: danish-intel-russian-hybrid-assessment
+  storyline: russia-hybrid-europe
+  members: [b-67498eaf9a8a]
+- id: poland-starlink-sabotage
+  storyline: russia-hybrid-europe
+  members: [b-83b1c4fd7c3c]
+  notes: headline pairs the Polish sabotage claim with the Danish warning (see uncertain pair)
+- id: cia-warning-drones-from-vessels
+  storyline: russia-hybrid-europe
+  members: [b-893ac7add538]
+# --- other storylines ---------------------------------------------------------------------
+- id: openai-agent-australia-breach
+  storyline: openai-australia
+  members: [b-31359c5c578a]
+- id: why-australia-revealed-breach-at-un
+  storyline: openai-australia
+  members: [b-0ed2621ab5c3]
+  notes: same outlet, explainer
+- id: ethiopia-army-repels-attacks
+  storyline: ethiopia-tigray
+  members: [b-d76616724887]
+- id: tigray-young-men-flee
+  storyline: ethiopia-tigray
+  members: [b-0ebe58675a38]
+- id: abu-farchi-gun-celebration
+  members: [b-8185baba77a0, b-c9ec164123fa]
+  notes: same outlet, two reports of one sending-off
+related_pairs:
+- [b-4574ee76b67f, b-f5fc571411a7, Pistorius - PAC-3 production bid vs defence budget - distinct]
+- [b-361a029728da, b-e66d3d9e1f1b, both US Navy announcements - distinct]
+uncertain_pairs:
+- [b-97cb65d1a469, b-63cb0d4f2400, both judge the summit's outcome; BBC one is framed on the dinner]
+- [b-43687a0f07ef, b-6805597101d0, SCMP report covers the attacks while leading on France's response]
+- [b-67498eaf9a8a, b-83b1c4fd7c3c, BBC headline includes the Danish warning]
+- [b-3d9601881311, b-56d04e57766b, march may be the same New York protest]
+notes: ''

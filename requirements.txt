@@ -23,6 +23,10 @@ numpy>=1.24
 
 # LLM
 openai>=1.0
+python-dotenv>=1.0
+
+# Geocoding
+geopy>=2.4
 
 # Analysis
 scipy>=1.11

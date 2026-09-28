@@ -1,0 +1,179 @@
+# Actor normalisation: how entity mentions become canonical actors.
+# Read by osint_monitor.processors.actors.ActorNormalizer and used by principal-actor
+# extraction, situation grouping and ranking topic keys.
+#
+# Order applied to every mention:
+#   1. surface cleanup (quotes, trailing punctuation, possessive "'s")
+#   2. the entity resolver's normalisation (lowercase, articles, US/U.S./America -> united states, ...)
+#   3. non_actors   -> dropped (topics the NER mislabels as organisations or places)
+#   4. demonyms     -> country ("Aussie" -> Australia); plurals ("Russians") are handled
+#   5. aliases      -> canonical actor ("Kremlin" -> Russia)
+#   6. represents   -> the state a person or body acts for ("Xi" -> China); situations and
+#                      principal support are counted at this level
+# All matching is on the normalised (lowercase) form; entries are case-insensitive.
+
+non_actors:
+  - AI
+  - A.I.
+  - artificial intelligence
+  - GenAI
+  - Internet
+  - Bitcoin
+  - Crypto
+  - Covid
+  - COVID-19
+  - Brexit
+  - Location
+  - Magnitude
+
+demonyms:
+  Afghan: Afghanistan
+  American: United States
+  Argentine: Argentina
+  Argentinian: Argentina
+  Armenian: Armenia
+  Aussie: Australia
+  Australian: Australia
+  Austrian: Austria
+  Azerbaijani: Azerbaijan
+  Bangladeshi: Bangladesh
+  Belarusian: Belarus
+  Belgian: Belgium
+  Brazilian: Brazil
+  British: United Kingdom
+  Briton: United Kingdom
+  Canadian: Canada
+  Chilean: Chile
+  Chinese: China
+  Colombian: Colombia
+  Congolese: Democratic Republic of the Congo
+  Cuban: Cuba
+  Czech: Czech Republic
+  Danish: Denmark
+  Dane: Denmark
+  Dutch: Netherlands
+  Egyptian: Egypt
+  Emirati: United Arab Emirates
+  Eritrean: Eritrea
+  Estonian: Estonia
+  Ethiopian: Ethiopia
+  Filipino: Philippines
+  Finnish: Finland
+  French: France
+  Georgian: Georgia
+  German: Germany
+  Greek: Greece
+  Hungarian: Hungary
+  Indian: India
+  Indonesian: Indonesia
+  Iranian: Iran
+  Iraqi: Iraq
+  Irish: Ireland
+  Israeli: Israel
+  Italian: Italy
+  Japanese: Japan
+  Jordanian: Jordan
+  Kazakh: Kazakhstan
+  Kenyan: Kenya
+  Kuwaiti: Kuwait
+  Latvian: Latvia
+  Lebanese: Lebanon
+  Libyan: Libya
+  Lithuanian: Lithuania
+  Malaysian: Malaysia
+  Malian: Mali
+  Mexican: Mexico
+  Moldovan: Moldova
+  Moroccan: Morocco
+  Nigerian: Nigeria
+  Nigerien: Niger
+  North Korean: North Korea
+  Norwegian: Norway
+  Omani: Oman
+  Pakistani: Pakistan
+  Palestinian: Palestine
+  Polish: Poland
+  Pole: Poland
+  Portuguese: Portugal
+  Qatari: Qatar
+  Romanian: Romania
+  Russian: Russia
+  Rwandan: Rwanda
+  Saudi: Saudi Arabia
+  Serbian: Serbia
+  Singaporean: Singapore
+  Somali: Somalia
+  South African: South Africa
+  South Korean: South Korea
+  Spanish: Spain
+  Sudanese: Sudan
+  Swedish: Sweden
+  Swiss: Switzerland
+  Syrian: Syria
+  Taiwanese: Taiwan
+  Thai: Thailand
+  Turkish: Turkey
+  Ukrainian: Ukraine
+  Venezuelan: Venezuela
+  Vietnamese: Vietnam
+  Yemeni: Yemen
+
+# Variant -> canonical actor name.
+aliases:
+  Kremlin: Russia
+  Moscow: Russia
+  Beijing: China
+  Tehran: Iran
+  Kyiv: Ukraine
+  Kiev: Ukraine
+  IDF: Israel
+  Gazan: Gaza
+  European Commission: European Union
+  Brussels: European Union
+  RSF: Rapid Support Forces
+  UAE: United Arab Emirates
+  Britain: United Kingdom
+  Great Britain: United Kingdom
+  Türkiye: Turkey
+
+# Person / body -> the state it acts for. Situations are country-level, so "Xi met Trump"
+# involves China and the United States. Keep to principals who reliably act for a state;
+# a bare "Air Force" or "Navy" names no state and stays an organisation.
+represents:
+  Donald Trump: United States
+  Trump: United States
+  White House: United States
+  Washington: United States
+  Marco Rubio: United States
+  Rubio: United States
+  Pete Hegseth: United States
+  Hegseth: United States
+  Pentagon: United States
+  Department of Defense: United States
+  State Department: United States
+  U.S. Central Command: United States
+  CENTCOM: United States
+  US Navy: United States
+  US Air Force: United States
+  USAF: United States
+  US Army: United States
+  Xi Jinping: China
+  Xi: China
+  Wang Yi: China
+  PLA: China
+  Vladimir Putin: Russia
+  Putin: Russia
+  Sergei Lavrov: Russia
+  Lavrov: Russia
+  Volodymyr Zelenskyy: Ukraine
+  Zelenskyy: Ukraine
+  Zelensky: Ukraine
+  Ali Khamenei: Iran
+  Khamenei: Iran
+  Masoud Pezeshkian: Iran
+  Pezeshkian: Iran
+  Abbas Araghchi: Iran
+  Araghchi: Iran
+  IRGC: Iran
+  Benjamin Netanyahu: Israel
+  Netanyahu: Israel

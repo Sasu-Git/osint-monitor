@@ -31,25 +31,28 @@ class RSSCollector(BaseCollector):
             except _requests.RequestException:
                 # Fallback to feedparser's own fetcher (different UA, handles redirects)
                 feed = feedparser.parse(self.url)
-            for entry in feed.entries[:self.max_items]:
-                pub_date = self._parse_date(entry)
-                description = self._clean_html(
-                    getattr(entry, "description", "") or ""
-                )
-                content = self._get_full_content(entry) or description
-
-                items.append(RawItemModel(
-                    title=entry.get("title", "No title"),
-                    content=content[:5000],
-                    url=entry.get("link", ""),
-                    published_at=pub_date,
-                    source_name=self.name,
-                    external_id=entry.get("id") or entry.get("link", ""),
-                    fetched_at=datetime.utcnow(),
-                ))
+            items = self.entries_to_items(feed.entries[:self.max_items], self.name)
             print(f"  [ok] {self.name}: {len(items)} items")
         except Exception as e:
             print(f"  [err] {self.name}: {e}")
+        return items
+
+    @classmethod
+    def entries_to_items(cls, entries, source_name: str, fetched_at: datetime | None = None) -> list[RawItemModel]:
+        """Parsed feed entries -> items, exactly as collected live (also used to replay archived feeds)."""
+        items = []
+        for entry in entries:
+            description = cls._clean_html(getattr(entry, "description", "") or "")
+            content = cls._get_full_content(entry) or description
+            items.append(RawItemModel(
+                title=entry.get("title", "No title"),
+                content=content[:5000],
+                url=entry.get("link", ""),
+                published_at=cls._parse_date(entry),
+                source_name=source_name,
+                external_id=entry.get("id") or entry.get("link", ""),
+                fetched_at=fetched_at or datetime.utcnow(),
+            ))
         return items
 
     @staticmethod

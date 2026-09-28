@@ -1,0 +1,47 @@
+# How collected items are grouped into events. Read by osint_monitor.processors.event_grouping.
+#
+# Narrative items (news, statements, analysis) are clustered semantically on their text.
+# Structured items (sensor readings and machine-generated records) are templated: two
+# unrelated earthquakes read almost alike, so they are grouped by record identity instead
+# -- never by text similarity. Both paths produce the same Event objects downstream.
+#
+# A source is structured when its type or its name is listed below; anything else is
+# narrative, so new news sources need no entry. `narrative_sources` overrides a type.
+
+structured:
+  source_types:
+    - infrastructure        # DNS, BGP, OONI, seismic explosion detector
+    - adsb
+    - ais
+    - aviation              # NOTAMs
+    - financial
+    - spectrum              # submarine cables
+    - sanctions
+    - sigint_vuln
+    - sigint_econ
+    - sigint_displacement
+    - sigint_nuclear
+    - sigint_imint
+    - sigint_trade
+  sources:
+    - USGS Seismic          # type structured_api, shared with prose feeds below
+    - NASA FIRMS
+    - Travel Advisories     # type government, but one templated record per country
+
+narrative_sources:
+  - GDELT                   # structured_api, but items are news articles
+  - ACLED                   # event records with analyst notes
+
+# Structured strategy per source. Sources not listed are "standalone": each record is its
+# own observation and is never merged with another (ADS-B snapshots, DNS/BGP checks,
+# sanctions listings, CVEs). Standalone records stay available to fusion and I&W.
+strategies:
+  USGS Seismic: seismic
+  Seismic Explosion Detector: seismic
+
+seismic:
+  # Same earthquake: the same USGS event id, or -- when ids differ between catalogues --
+  # origin times, epicentres and magnitudes all close.
+  max_seconds_apart: 120
+  max_km_apart: 100
+  max_magnitude_difference: 0.5

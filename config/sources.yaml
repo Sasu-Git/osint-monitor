@@ -2,13 +2,19 @@
 # Updated: 2026-03-19
 
 # Tiered polling intervals (seconds)
-# Hot:  pre-narrative signals (ADS-B, BGP, DNS, currency, commodities, defense stocks, seismic)
-# Warm: news and social (RSS, Nitter, travel advisories, OONI, flight routes, GDELT, cables)
+# Hot:  pre-narrative signals (ADS-B, DNS, currency, commodities, defense stocks, seismic)
+# Warm: news and social (RSS, Nitter, travel advisories, OONI, flight routes, GDELT, cables, BGP)
 # Cold: slow-updating datasets (FIRMS, USGS, ACLED, sanctions, NVD, UNHCR, IAEA, SEC, finance)
 tiers:
   hot_interval_seconds: 150    # 2.5 min
   warm_interval_seconds: 600   # 10 min
   cold_interval_seconds: 3600  # 60 min
+  # Wall-clock budget per collect() call (seconds), by collector class. A collector past its
+  # budget stops between targets and returns partial results, logged as "stopped early".
+  # Keep hot-tier budgets well under hot_interval_seconds.
+  collector_budgets:
+    DNSHealthMonitor: 90       # observed 83 s for all domains
+    BGPMonitor: 180            # observed 164 s; runs in the warm tier (600 s)
 
 # RSS Feeds - these work without API keys
 rss_feeds:

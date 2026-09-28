@@ -14,6 +14,10 @@ from osint_monitor.core.config import get_settings
 logger = logging.getLogger(__name__)
 
 
+class LLMConfigurationError(ValueError):
+    """The selected LLM provider cannot be used as configured (missing key, unknown name)."""
+
+
 class LLMProvider(ABC):
     """Abstract LLM provider."""
 
@@ -56,7 +60,7 @@ class OpenAIProvider(LLMProvider):
         self.model = model or settings.openai_model
 
         if not self.api_key:
-            raise ValueError(
+            raise LLMConfigurationError(
                 "OpenAI API key not found. Set OPENAI_API_KEY env var or OSINT_OPENAI_API_KEY."
             )
 
@@ -89,7 +93,7 @@ class AnthropicProvider(LLMProvider):
         self.model = model
 
         if not self.api_key:
-            raise ValueError("Anthropic API key not found. Set ANTHROPIC_API_KEY env var.")
+            raise LLMConfigurationError("Anthropic API key not found. Set ANTHROPIC_API_KEY env var.")
 
     def generate(self, prompt: str, system: str = "", temperature: float = 0.3) -> str:
         import anthropic
@@ -142,7 +146,7 @@ class GeminiProvider(LLMProvider):
         self.model = model
 
         if not self.api_key:
-            raise ValueError("Google API key not found. Set GOOGLE_API_KEY env var.")
+            raise LLMConfigurationError("Google API key not found. Set GOOGLE_API_KEY env var.")
 
     def generate(self, prompt: str, system: str = "", temperature: float = 0.3) -> str:
         from google import genai
@@ -180,6 +184,6 @@ def get_llm(provider: str | None = None, **kwargs) -> LLMProvider:
 
     cls = _PROVIDERS.get(provider)
     if cls is None:
-        raise ValueError(f"Unknown LLM provider: {provider}. Options: {list(_PROVIDERS.keys())}")
+        raise LLMConfigurationError(f"Unknown LLM provider: {provider}. Options: {list(_PROVIDERS.keys())}")
 
     return cls(**kwargs)

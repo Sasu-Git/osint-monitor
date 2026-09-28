@@ -1,0 +1,366 @@
+# Gold labels for 2026-08-07. See osint_monitor/benchmark/format.py for the format.
+# Criteria: a development is one concrete occurrence; responses, follow-ups and analysis
+# of it are separate developments in the same storyline (related_but_distinct).
+# Blind: labelled from the label sheet only (title + excerpt), without similarity scores,
+# replay, clusterer output or other windows' labels.
+window: '2026-08-07'
+labelled_by: "claude subagent (blind, from label-sheet only)"
+labelled_at: '2026-09-25T14:03:08'
+developments:
+# --- Saudi-Turkiye-Pakistan Mecca defence pact -------------------------------------------
+- id: mecca-defence-pact-signed
+  storyline: mecca-defence-pact
+  members: [b-cae8ffb97ad4, b-45274f0992ea, b-821a24ae343a, b-3b9c93b92d52, b-314b726cf1f5]
+  notes: the signing in Mecca. BBC published the same report twice; the AJ live blog of 08-08 leads on the signing.
+- id: erdogan-saudi-visit-preview
+  storyline: mecca-defence-pact
+  members: [b-aa655c8a0c72]
+  notes: preview of the visit, before the signing
+- id: mecca-pact-whats-in-it
+  storyline: mecca-defence-pact
+  members: [b-0497a818302f]
+  notes: explainer on the pact's content (see uncertain pair)
+- id: mecca-pact-challenges-us-role
+  storyline: mecca-defence-pact
+  members: [b-e317ccf9e541]
+  notes: analyst interview
+- id: mecca-pact-new-regional-order
+  storyline: mecca-defence-pact
+  members: [b-26ac1cd37789]
+  notes: analysis
+- id: mecca-pact-us-role-middle-east
+  storyline: mecca-defence-pact
+  members: [b-9608ea2214a3]
+  notes: analysis
+- id: mecca-pact-shield-or-signal
+  storyline: mecca-defence-pact
+  members: [b-5380cd2d3857]
+  notes: analysis
+- id: mecca-pact-challenges
+  storyline: mecca-defence-pact
+  members: [b-66de38cde124]
+  notes: analysis
+- id: mecca-pact-us-strategy
+  storyline: mecca-defence-pact
+  members: [b-4c59287d84d0]
+  notes: analysis
+- id: israel-mulls-mecca-pact
+  storyline: mecca-defence-pact
+  members: [b-476e54ea6440]
+  notes: Israel's reaction
+# --- Iran war / Strait of Hormuz ---------------------------------------------------------
+- id: iran-war-live-0807
+  storyline: iran-war-hormuz
+  members: [b-9f2919e55685]
+  notes: live blog leading on Trump expecting the war to end soon and a Hormuz deal being close
+- id: iran-hormuz-leverage-analysis
+  storyline: iran-war-hormuz
+  members: [b-a2c10ae4f135]
+  notes: opinion / analysis
+- id: iran-oman-hormuz-route-coordinates
+  storyline: iran-war-hormuz
+  members: [b-66dda2ce2fec]
+  notes: Iran and Oman agree vessel route coordinates (see uncertain pair with the BBC talks report)
+- id: oman-hormuz-talks-positive
+  storyline: iran-war-hormuz
+  members: [b-44782b2492e8]
+- id: uae-adnoc-tanker-strike
+  storyline: iran-war-hormuz
+  members: [b-10af2d89ec91]
+- id: war-on-iran-day-28-roundup
+  storyline: iran-war-hormuz
+  members: [b-6de24cc00a4b]
+  notes: daily roundup covering pact reactions and the Hormuz framework; left as its own development
+- id: vance-iran-nuclear-destroyed
+  storyline: iran-war-hormuz
+  members: [b-d330b0efa20d]
+- id: saudi-intel-chief-meets-iraqi-pm
+  storyline: iran-war-hormuz
+  members: [b-d02076a07db1]
+- id: kurdistan-barzani-stay-out
+  storyline: iran-war-hormuz
+  members: [b-b982a13c17bc]
+# --- Yemen / Houthis ----------------------------------------------------------------------
+- id: houthi-attacks-kill-58-troops
+  storyline: yemen-houthi
+  members: [b-bff99f9a4a75]
+- id: houthi-strike-marib-civilians
+  storyline: yemen-houthi
+  members: [b-65632095d79d]
+  notes: may be part of the same wave of attacks (see uncertain pair)
+- id: yemen-government-counterattack
+  storyline: yemen-houthi
+  members: [b-812820135935]
+# --- Thailand school shooting --------------------------------------------------------------
+- id: thailand-school-shooting
+  storyline: thailand-school-shooting
+  members: [b-d8b353ae65ba, b-7e6c9b8410a6, b-ac765de3b2c1]
+  notes: early SCMP count (one teacher) and later counts are the same shooting
+- id: thailand-shooting-what-we-know
+  storyline: thailand-school-shooting
+  members: [b-c56ac03cd0a3]
+  notes: explainer summary of the shooting (see uncertain pair)
+- id: thai-pupil-survivor-account
+  storyline: thailand-school-shooting
+  members: [b-8c745a0e9050]
+- id: thai-pm-gun-laws
+  storyline: thailand-school-shooting
+  members: [b-21feaf17566e]
+  notes: PM's response
+# --- Meta New Mexico ruling ---------------------------------------------------------------
+- id: meta-new-mexico-567m
+  members: [b-f8b49596c716, b-78e7652e9299, b-eada531ed152]
+# --- FIFA / Infantino ----------------------------------------------------------------------
+- id: caf-backs-infantino
+  storyline: infantino-fifa
+  members: [b-c248b180e52a]
+- id: argentina-mexico-back-infantino
+  storyline: infantino-fifa
+  members: [b-d8b4e8c3a9e7]
+  notes: explainer; Argentina and Mexico's backing
+- id: bbc-asks-infantino-resign
+  storyline: infantino-fifa
+  members: [b-92915f58c70d]
+- id: norway-calls-infantino-resign
+  storyline: infantino-fifa
+  members: [b-fd95ffe6a51a]
+- id: south-america-backs-infantino-colombia
+  storyline: infantino-fifa
+  members: [b-e7453aa2a676]
+  notes: South American backing while at the Colombian inauguration
+- id: infantino-denies-uefa-payment
+  storyline: infantino-fifa
+  members: [b-24dacda9c922]
+# --- Colombia new president ---------------------------------------------------------------
+- id: colombia-de-la-espriella-inauguration
+  storyline: colombia-new-president
+  members: [b-d314e2520300, b-7f0238fb2e6e]
+  notes: same outlet, two reports of the swearing-in
+- id: us-offers-colombia-1bn
+  storyline: colombia-new-president
+  members: [b-5f95ffe7d81f]
+  notes: US offer on day one; also mentions the maiden speech
+- id: colombia-car-bomb-pan-american
+  storyline: colombia-new-president
+  members: [b-d6ac3fb43749]
+# --- Spain-Italy border row / Spanish smuggling bust ---------------------------------------
+- id: spain-imposes-border-checks-italy
+  storyline: ceuta-border-row
+  members: [b-0f8ccdedd738, b-f4d707e16b02]
+- id: italy-vows-keep-border-checks
+  storyline: ceuta-border-row
+  members: [b-3dde725f7e29]
+  notes: Italy's stance before Spain's countermeasure
+- id: spain-smuggling-network-78-arrests
+  members: [b-5cc58f22375d, b-d53ac31ed492]
+# --- Russia-Ukraine ----------------------------------------------------------------------
+- id: guterres-condemns-russia-ukraine
+  storyline: russia-ukraine-war
+  members: [b-973926ce4a3c]
+- id: russia-record-glide-bombs
+  storyline: russia-ukraine-war
+  members: [b-5e5ea84d3eb2]
+- id: ukraine-strikes-wildberries-attacks
+  storyline: russia-ukraine-war
+  members: [b-a0280c2a0411]
+  notes: 08-07 attacks, a different night from the Kyiv-area strikes
+- id: russian-drones-target-medics
+  storyline: russia-ukraine-war
+  members: [b-c7995a8a5210]
+- id: russia-strikes-near-kyiv-child-killed
+  storyline: russia-ukraine-war
+  members: [b-f0cf5d04562d, b-10ebddd0863d]
+- id: us-senate-russia-sanctions-bill
+  storyline: russia-ukraine-war
+  members: [b-854e9fb8c9c0, b-35d3b6a5201f]
+- id: serbia-ukraine-economic-ties
+  storyline: russia-ukraine-war
+  members: [b-6cddaa062c28]
+- id: german-airport-drone-bomb-russia
+  storyline: russia-hybrid-europe
+  members: [b-22f73add60db]
+- id: drones-bulgaria-germany
+  storyline: russia-hybrid-europe
+  members: [b-dcd8f3a3d918]
+# --- wildfires / weather -------------------------------------------------------------------
+- id: spokane-fires
+  members: [b-cb5a7c0f7932, b-335f47c383b8]
+  notes: same outlet, two reports from the same fires
+- id: british-columbia-wildfire
+  members: [b-9676f37abed0, b-97c82dbe18f1]
+  notes: evacuation orders, then the Bald Range fire doubling; same fire
+- id: lake-garda-wildfire
+  members: [b-d5c311ad5951]
+- id: south-korea-record-heatwave
+  storyline: asia-heatwave
+  members: [b-1a60785ffdcf]
+- id: asia-heatwave-energy-fears
+  storyline: asia-heatwave
+  members: [b-c669f9054b1d]
+  notes: feature on the same heatwave (see uncertain pair)
+- id: seoul-silent-disco-heat
+  storyline: asia-heatwave
+  members: [b-8b845fcb3b5e]
+- id: typhoon-dolphin-okinawa
+  storyline: typhoon-dolphin
+  members: [b-516c4c8988ea]
+- id: hong-kong-37c-weekend
+  storyline: typhoon-dolphin
+  members: [b-f95bd8948efa]
+- id: assam-floods
+  members: [b-c89927f50e5c]
+- id: new-delhi-heavy-rain
+  members: [b-f421521ea846]
+- id: puerto-rico-drought-rationing
+  members: [b-eae5f4231851]
+- id: indonesia-village-reemerges-drought
+  members: [b-43cc642c4488]
+# --- Japan quake hospital video -------------------------------------------------------------
+- id: japan-quake-operating-room-video
+  members: [b-061c9dc500d6, b-bef7a6e7b68f]
+# --- US politics ---------------------------------------------------------------------------
+- id: white-house-ballroom-injunction
+  members: [b-17ead1be9cba, b-f1ef34a04103]
+- id: todd-blanche-confirmed-ag
+  members: [b-d9366bf067ee, b-07f3a6b14eeb]
+- id: hunter-biden-interview
+  members: [b-24e628c19aac, b-bbeaad3ab24a]
+  notes: AJ piece reports the same remarks (pardon, father's cancer) as the BBC interview
+- id: ogles-loses-primary
+  storyline: tennessee-primary
+  members: [b-45315238ef4d]
+- id: tennessee-redistricting-analysis
+  storyline: tennessee-primary
+  members: [b-209b476a5358]
+- id: texas-democrats-momentum
+  members: [b-8b607e991a68]
+- id: trump-birthright-executive-orders
+  members: [b-24b5d33747c5]
+- id: courts-clear-tps-deportations
+  members: [b-8f340c3b50e1]
+- id: trump-fire-lisa-cook
+  members: [b-6749c09f9e44]
+- id: trump-rwe-wind-payout
+  members: [b-1822896988f4]
+- id: trump-blames-republicans
+  members: [b-ccc8fdbd43d8]
+- id: us-july-jobs-report
+  members: [b-e7dd506993b5]
+# --- sport ---------------------------------------------------------------------------------
+- id: brandon-clarke-cause-of-death
+  members: [b-5b1126abeaa6, b-5e3940c37a8f]
+- id: jorge-messi-dies
+  members: [b-0b1e45f6983b, b-1d5fbfadeaf8]
+- id: shakib-trial-if-safe
+  storyline: shakib-al-hasan
+  members: [b-3b4a676b004a]
+- id: bangladesh-rules-out-shakib
+  storyline: shakib-al-hasan
+  members: [b-501a7a9828d0]
+- id: south-korea-fa-apology
+  members: [b-f41d597bd60c]
+- id: maradona-trial-masseur
+  members: [b-965f8b175a80]
+# --- Kosovo / Armenia -----------------------------------------------------------------------
+- id: kosovo-mp-eggs-kurti
+  members: [b-140af91112ea, b-cc3edbe4a373]
+- id: armenia-church-leader-trial-bishop
+  storyline: armenia-church-feud
+  members: [b-1d72113e1b2b]
+- id: armenia-church-leader-trial-spy
+  storyline: armenia-church-feud
+  members: [b-4f48faf71bc8]
+  notes: spying allegations; may be the same trial (see uncertain pair)
+# --- Lebanon / Syria / Israel-Palestine ------------------------------------------------------
+- id: lebanon-israel-talks-progress
+  storyline: israel-lebanon
+  members: [b-159b8896b526]
+- id: lebanese-soldiers-injured-zawtar
+  storyline: israel-lebanon
+  members: [b-a768c0d474ff]
+- id: lebanon-detains-assad-general
+  storyline: assad-era-officials
+  members: [b-f931fd00ee42]
+- id: bbc-finds-assad-spy-chief
+  storyline: assad-era-officials
+  members: [b-60996ec29872]
+- id: qalandiya-raid
+  members: [b-64ff20919984]
+- id: gaza-contaminated-water
+  storyline: gaza
+  members: [b-f9b94cc47382]
+- id: gaza-abu-safia-appeal
+  storyline: gaza
+  members: [b-f61532134bf2]
+- id: gaza-19-bodies-recovered
+  storyline: gaza
+  members: [b-61c8ebe7d4c4]
+# --- Africa ---------------------------------------------------------------------------------
+- id: drc-m23-prisoner-release
+  members: [b-303d55e4ab24]
+- id: drc-ebola-4000-cases
+  members: [b-42a1a3092008]
+- id: nigeria-308-rescued
+  members: [b-7b789867ccb7]
+- id: sudan-invisible-children
+  members: [b-5e4d8f3d2553]
+- id: sudan-un-education-warning
+  members: [b-0738eb3fff07]
+- id: ethiopia-north-alliances-explainer
+  members: [b-b34b436cf767]
+# --- other hard-negative candidates --------------------------------------------------------
+- id: brazil-voepass-crash-charges
+  members: [b-ddebe94d0f58]
+- id: rio-helicopter-crash
+  members: [b-55d5d2f37aee]
+- id: broad-peak-bodies-retrieved
+  members: [b-7204d4d195db]
+- id: everest-green-boots
+  members: [b-e172ae5697fb]
+- id: china-robot-school
+  members: [b-aea7f09ab6f8]
+- id: unitree-ipo
+  members: [b-8c4e3d92fe55]
+- id: idaho-mall-shooting-video
+  members: [b-845224f40eef]
+- id: argentina-protest-tear-gas
+  members: [b-4b0acc3031b5]
+- id: sri-lanka-prison-riot
+  members: [b-0ebad8d77e6b]
+- id: mexico-avocado-troops
+  members: [b-88a002daccaa]
+- id: icc-chad-venezuela-withdrawal
+  members: [b-48256f60ab36]
+- id: taiwan-president-evacuation-drill
+  members: [b-364d1faccdeb]
+- id: us-slams-china-scs-nature-reserve
+  members: [b-6a0b1ba005ec]
+related_pairs:
+- [b-0f8ccdedd738, b-5cc58f22375d, both Spanish migration-related actions, distinct]
+- [b-f4d707e16b02, b-d53ac31ed492, both Spanish migration-related actions, distinct]
+- [b-e7453aa2a676, b-d314e2520300, Infantino attends the inauguration; different development]
+- [b-cb5a7c0f7932, b-9676f37abed0, two North American wildfires, distinct]
+- [b-97c82dbe18f1, b-335f47c383b8, two North American wildfires, distinct]
+- [b-d5c311ad5951, b-9676f37abed0, two wildfire evacuations, distinct]
+- [b-c89927f50e5c, b-f421521ea846, both Indian monsoon flooding, distinct places]
+- [b-eae5f4231851, b-43cc642c4488, both droughts depleting reservoirs, distinct]
+- [b-5e4d8f3d2553, b-0738eb3fff07, both on Sudan's children in war, distinct]
+- [b-24b5d33747c5, b-8f340c3b50e1, both Trump immigration measures, distinct]
+- [b-ddebe94d0f58, b-55d5d2f37aee, both Brazil air crashes, distinct]
+- [b-7204d4d195db, b-e172ae5697fb, both dead climbers on 8000m peaks, distinct]
+- [b-aea7f09ab6f8, b-8c4e3d92fe55, both China robotics, distinct]
+- [b-7e6c9b8410a6, b-845224f40eef, two shootings, distinct]
+- [b-303d55e4ab24, b-42a1a3092008, both DR Congo, distinct]
+- [b-10af2d89ec91, b-bff99f9a4a75, both Iran-axis attacks on Gulf targets, distinct]
+- [b-45315238ef4d, b-8b607e991a68, both US primary / election races, distinct]
+- [b-d9366bf067ee, b-6749c09f9e44, Trump appointments / personnel, distinct]
+uncertain_pairs:
+- [b-66dda2ce2fec, b-44782b2492e8, both report progress in Iran-Oman Hormuz route talks on 08-08; may be the same announcement]
+- [b-bff99f9a4a75, b-65632095d79d, Marib civilian deaths may be part of the same day of Houthi attacks]
+- [b-c56ac03cd0a3, b-ac765de3b2c1, what-we-know summary vs straight report of the same shooting]
+- [b-0497a818302f, b-cae8ffb97ad4, what-is-in-it explainer published alongside the signing report]
+- [b-1a60785ffdcf, b-c669f9054b1d, same Korean heatwave; SCMP piece is a broader feature]
+- [b-1d72113e1b2b, b-4f48faf71bc8, Karekin II trial; charges differ, may be the same trial]
+- [b-f931fd00ee42, b-60996ec29872, detained Assad-era general may be the spy chief BBC tracked down]
+- [b-d8b4e8c3a9e7, b-e7453aa2a676, Latin American backing for Infantino, possibly the same endorsement]
+notes: ''

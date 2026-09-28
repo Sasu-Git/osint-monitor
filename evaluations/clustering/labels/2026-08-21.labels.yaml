@@ -1,0 +1,318 @@
+# Gold labels for 2026-08-21. See osint_monitor/benchmark/format.py for the format.
+# Criteria: a development is one concrete occurrence; responses, follow-ups and analysis
+# of it are separate developments in the same storyline (related_but_distinct).
+# Blind window: labelled from the label sheet only (title + excerpt), without similarity
+# scores, clusterer output or other windows' labels.
+window: '2026-08-21'
+labelled_by: "claude subagent (blind, from label-sheet only)"
+labelled_at: '2026-09-25T14:02:32'
+developments:
+# --- Hong Kong Tiananmen vigil trial ----------------------------------------------------
+- id: hk-tiananmen-alliance-guilty-verdict
+  storyline: hk-tiananmen-trial
+  members: [b-85e1f8c5197d, b-8a8e0d395f60, b-7d87768d2f82]
+  notes: SCMP, Al Jazeera and BBC report the same subversion verdict
+- id: hk-tiananmen-prison-explainer
+  storyline: hk-tiananmen-trial
+  members: [b-d21109ba71d7]
+  notes: explainer with Amnesty reaction
+# --- Swedish school sword attack --------------------------------------------------------
+- id: sweden-fagersta-school-sword-attack
+  members: [b-25760921e54e, b-312853eceb17, b-53dc89e53904]
+  notes: BBC later report adds one death; same attack at the Fagersta high school
+# --- US-Iran economic war ---------------------------------------------------------------
+- id: bessent-vows-toughest-iran-sanctions
+  storyline: us-iran-economic-war
+  members: [b-8608173935c4]
+  notes: live blog, lead is Bessent's sanctions vow
+- id: us-economic-isolation-strategy-analysis
+  storyline: us-iran-economic-war
+  members: [b-b63dd0b0fd76]
+  notes: analysis of Bessent's shift to economic isolation (see uncertain pair)
+- id: iran-rejects-new-us-sanctions
+  storyline: us-iran-economic-war
+  members: [b-144df3b935e7]
+  notes: Baghaei response to the sanctions threat
+- id: economic-d-day-hits-us-markets
+  storyline: us-iran-economic-war
+  members: [b-58ba94123221]
+  notes: market analysis
+- id: us-designates-hezbollah-iranian-proxy
+  members: [b-fe8c2559d8cc]
+  notes: separate Treasury action
+- id: asian-allies-wary-us-assets-iran-war
+  members: [b-c349800cdff6]
+- id: iran-weapons-capabilities-analysis
+  members: [b-ab3e1d62b3eb]
+- id: nsa-deputy-china-threat
+  members: [b-342d8d2a178d]
+# --- DR Congo Ebola ---------------------------------------------------------------------
+- id: un-ebola-growing-faster-2500-deaths
+  storyline: drc-ebola
+  members: [b-6a2e684a65d2]
+- id: ebola-vaccine-trial-to-start
+  storyline: drc-ebola
+  members: [b-2e0da6b7e7eb]
+  notes: leads on the vaccine trial, also carries the WHO speed warning (see uncertain pair)
+- id: ervebo-doses-arrive-drc
+  storyline: drc-ebola
+  members: [b-8826249c972c, b-422186e87411]
+  notes: same outlet, both on the arrival of 16,000 Ervebo doses
+# --- Imran Khan ---------------------------------------------------------------------------
+- id: imran-khan-back-to-prison
+  storyline: imran-khan
+  members: [b-754c16d98964]
+- id: khan-family-accuses-govt-hospital-order
+  storyline: imran-khan
+  members: [b-a6391f8f4239]
+- id: khan-sister-torture-claim
+  storyline: imran-khan
+  members: [b-215cdc4999f5]
+- id: pti-contempt-action-hospital-move
+  storyline: imran-khan
+  members: [b-fd281c485615]
+# --- US-Canada trade war ----------------------------------------------------------------
+- id: carney-retaliatory-tariffs
+  storyline: us-canada-trade
+  members: [b-ed25155d038d, b-f43c963adf42]
+  notes: BBC republished the same story
+- id: carney-crucial-test-analysis
+  storyline: us-canada-trade
+  members: [b-2601ecbd74d1, b-cd62c85e62be]
+  notes: BBC republished the same analysis
+- id: canadian-premier-attacks-trump
+  storyline: us-canada-trade
+  members: [b-320f20d36f00]
+# --- Beijing humanoid robots -------------------------------------------------------------
+- id: robot-breaks-bolt-100m-record
+  storyline: beijing-humanoid-robots
+  members: [b-38f9f084379c, b-e5e62052515e]
+  notes: World Humanoid Robot Games, Al Jazeera and BBC
+- id: humanoid-crashes-speed-test
+  storyline: beijing-humanoid-robots
+  members: [b-e095d21a704d]
+  notes: may be at the same games (see uncertain pair)
+- id: robot-horse-beijing-conference
+  storyline: beijing-humanoid-robots
+  members: [b-9259fb4b9124]
+  notes: robotics conference, likely a different event from the games
+- id: hk-tech-festival-paul-chan-ai
+  members: [b-e736db6a6335]
+# --- Russia-Ukraine war -------------------------------------------------------------------
+- id: ukraine-mall-strike-rescue
+  storyline: russia-ukraine-strikes
+  members: [b-71e9862bc0c3]
+- id: russian-strikes-kill-six-day-after-mall
+  storyline: russia-ukraine-strikes
+  members: [b-e090e68e5085]
+  notes: new strikes the day after the mall attack
+- id: russia-petrol-shortage-rosenberg
+  storyline: russia-home-front
+  members: [b-d92957f3578b]
+- id: russian-expert-social-crisis-warning
+  storyline: russia-home-front
+  members: [b-4cd9d9be1ad3]
+- id: ukraine-sanctions-masha-and-bear
+  members: [b-d566298b2073]
+# --- Israel in Syria --------------------------------------------------------------------
+- id: israeli-drone-strike-syria-southwest
+  storyline: israel-strikes-syria
+  members: [b-8b0980fba97b]
+- id: israeli-strike-near-damascus
+  storyline: israel-strikes-syria
+  members: [b-34d06bf06e8c]
+  notes: see uncertain pair; southwest vs near Damascus
+# --- West Bank settlements and settler violence -----------------------------------------
+- id: israel-reestablishes-west-bank-settlement
+  storyline: west-bank-settlements
+  members: [b-52e7176bac0a]
+- id: settlement-expansion-analysis
+  storyline: west-bank-settlements
+  members: [b-38eba7dee8c5]
+- id: settlers-burn-hebron-quarry-machinery
+  storyline: west-bank-settlements
+  members: [b-d610efa7ec3a]
+- id: settlers-target-qaryut-homes
+  storyline: west-bank-settlements
+  members: [b-9d435faf259d]
+- id: soldiers-throw-belongings-qusra
+  storyline: west-bank-settlements
+  members: [b-bcf2fde80a0a]
+- id: jewish-activists-protective-presence
+  storyline: west-bank-settlements
+  members: [b-e65cd1bb15f4]
+# --- Israel / Gaza other ------------------------------------------------------------------
+- id: uk-canada-australia-condemn-wck-probe-refusal
+  members: [b-fcd819c15684]
+- id: ex-diplomats-urge-sanctions-on-israel
+  members: [b-d6897636cbea]
+- id: gaza-weddings
+  members: [b-54ad572121b2]
+- id: gaza-children-swimming-class
+  members: [b-7999c9c16412]
+- id: gaza-running-out-of-burial-space
+  members: [b-3ee706b860b3]
+# --- Harry and Meghan ---------------------------------------------------------------------
+- id: harry-uk-return-royal-rift
+  storyline: harry-meghan-uk-return
+  members: [b-26fe409ebda8]
+- id: harry-meghan-brand-on-return
+  storyline: harry-meghan-uk-return
+  members: [b-e1d61749e965]
+- id: harry-ordered-to-pay-legal-costs
+  members: [b-df12883b1d79]
+- id: meghan-netflix-gentlemen-talks
+  members: [b-920a282d5760]
+# --- Hong Kong / Singapore / China business ----------------------------------------------
+- id: opatra-more-consumers-allege
+  storyline: opatra-crackdown
+  members: [b-12647c280dd9]
+- id: opatra-suspends-operations
+  storyline: opatra-crackdown
+  members: [b-0fedd85bc925]
+- id: hk-financiers-press-carried-interest
+  storyline: singapore-fund-incentives
+  members: [b-dfc16b535283]
+- id: singapore-fund-manager-carrots-analysis
+  storyline: singapore-fund-incentives
+  members: [b-47221c4faf92]
+- id: evergrande-liquidation-petition-accepted
+  members: [b-e766610207b3]
+- id: scmp-weekly-highlights
+  members: [b-bc8ea42498ab]
+  notes: digest, mentions Hui Ka-yan life sentence
+- id: mtr-manager-scam
+  members: [b-182b8f969524]
+- id: asia-agentic-ai-scam-warning
+  members: [b-695c79f97858]
+- id: hk-bookshops-closing
+  members: [b-a76192bb6b0c]
+# --- Weather, climate, disasters -----------------------------------------------------------
+- id: panama-canal-el-nino-limits
+  storyline: el-nino-2026
+  members: [b-bfdaaa494865]
+- id: met-office-el-nino-forecast
+  storyline: el-nino-2026
+  members: [b-f2b3df789ef0]
+- id: sarawak-haze-school-closures
+  storyline: borneo-fires-haze
+  members: [b-03faa7cefdb6]
+- id: indonesia-troops-borneo-wildfires
+  storyline: borneo-fires-haze
+  members: [b-a9ba50f32373]
+- id: peru-ayacucho-earthquake
+  members: [b-33c87e811c26]
+- id: flores-quake-survivors
+  members: [b-269b29c6351f]
+- id: typhoon-maysak-death-toll
+  members: [b-883ed0172d9e]
+- id: philippine-flood-control-scandal
+  members: [b-49ab0ae84bc1]
+- id: us-tornadoes-new-york-delaware
+  members: [b-8376ac0bb513]
+- id: south-korea-footballers-heat
+  members: [b-bdae49f9a9e3]
+- id: japan-human-fridges-heatwave
+  members: [b-7fd77555002c]
+# --- Japan / Asia security ----------------------------------------------------------------
+- id: russia-missile-test-kuril-islands
+  members: [b-6af650c96d25]
+- id: japan-lawmakers-china-visit
+  members: [b-9a969cf0f666]
+- id: japan-record-defence-budget
+  members: [b-5b6229e0f8b3]
+- id: japan-icc-judge-sanctioned
+  members: [b-bbdbc1d011f6]
+- id: china-drone-production-study
+  members: [b-a88428a2c7a3]
+- id: china-reusable-rocket-pla
+  members: [b-51ac60fbd495]
+- id: china-indonesia-drill-sea-followers
+  members: [b-f55f349f9898]
+- id: scmp-newsletter-wang-yi-south-korea
+  members: [b-8e4d7fda66a2]
+# --- espionage / Russia in Europe ---------------------------------------------------------
+- id: australia-charges-russia-spy
+  members: [b-55d4ee5b95b8]
+- id: germany-russia-weapons-cache
+  members: [b-b4013da56188]
+# --- AI and tech -------------------------------------------------------------------------
+- id: legal-tech-kimi-k3-pivot
+  members: [b-e5bc44c5568f]
+- id: mistral-zai-paradox
+  members: [b-8db0e36319e5]
+- id: brazil-ai-supercomputer
+  members: [b-3a527f407cc4]
+- id: us-china-ai-blocs-southeast-asia
+  members: [b-bbcb00eae268]
+# --- US politics and media ----------------------------------------------------------------
+- id: trump-shuts-down-reporters
+  members: [b-e96b4eb795b4]
+- id: stars-and-stripes-editor-fired
+  members: [b-e560241322a9]
+- id: trump-eases-beef-tariffs
+  members: [b-377124f8dfba]
+- id: us-deports-mexicans-to-guatemala
+  members: [b-9a5375314554]
+# --- crime / attacks ----------------------------------------------------------------------
+- id: canada-sikh-temple-stabbing
+  members: [b-36b77b6ef894]
+- id: india-child-dies-teacher-slap
+  members: [b-8d75b7c79a6f]
+- id: singapore-man-jailed-abusing-boys
+  members: [b-f818d24f9035]
+- id: myanmar-monastery-strike
+  members: [b-5ed64d3cfbe4]
+# --- sport --------------------------------------------------------------------------------
+- id: man-city-preview
+  members: [b-f21800253bff]
+- id: maresca-needs-time-bournemouth
+  members: [b-a26e096ccba9]
+- id: liverpool-preview
+  members: [b-b34bb8cdf0bb]
+- id: paredes-ten-game-ban
+  members: [b-662bc2b88af0]
+- id: concacaf-infantino-skip-event
+  members: [b-ff2a280cd649]
+- id: djibouti-federation-fifa-funds
+  members: [b-9e76870b7d26]
+related_pairs:
+- [b-d21109ba71d7, b-a76192bb6b0c, Hong Kong freedoms - vigil trial explainer vs bookshops closing, distinct]
+- [b-8608173935c4, b-fe8c2559d8cc, both US Treasury actions on Iran; Hezbollah designation is a separate action]
+- [b-144df3b935e7, b-fe8c2559d8cc, Iran reaction is to the sanctions threat, not the Hezbollah designation]
+- [b-c349800cdff6, b-ab3e1d62b3eb, both Iran-war analysis, distinct]
+- [b-342d8d2a178d, b-c349800cdff6, US-China threat framing around the Iran war, distinct]
+- [b-9259fb4b9124, b-e736db6a6335, robotics showcases in Beijing and Hong Kong, distinct]
+- [b-d92957f3578b, b-e090e68e5085, Russia-Ukraine war coverage, home front vs strikes]
+- [b-fcd819c15684, b-d6897636cbea, both pressure on Israel from UK and allies, distinct]
+- [b-54ad572121b2, b-7999c9c16412, Gaza human-interest features, distinct]
+- [b-3ee706b860b3, b-54ad572121b2, Gaza features, distinct]
+- [b-df12883b1d79, b-26fe409ebda8, Harry legal costs vs UK return, distinct]
+- [b-920a282d5760, b-e1d61749e965, Meghan acting talks vs brand-search analysis, distinct]
+- [b-e766610207b3, b-bc8ea42498ab, digest mentions Hui Ka-yan sentence; liquidation petition is separate]
+- [b-182b8f969524, b-695c79f97858, scams in Hong Kong vs Asia-wide warning, distinct]
+- [b-33c87e811c26, b-269b29c6351f, two earthquakes, Peru vs Indonesia]
+- [b-883ed0172d9e, b-49ab0ae84bc1, floods in China vs Philippines]
+- [b-bdae49f9a9e3, b-7fd77555002c, heat measures in South Korea vs Japan]
+- [b-6af650c96d25, b-5b6229e0f8b3, Japan regional threats - Russian missile test vs defence budget]
+- [b-9a969cf0f666, b-bbdbc1d011f6, Japan diplomacy, distinct]
+- [b-a88428a2c7a3, b-51ac60fbd495, PLA capability analysis, distinct]
+- [b-55d4ee5b95b8, b-b4013da56188, Russian espionage in Australia vs Germany]
+- [b-e5bc44c5568f, b-8db0e36319e5, Western firms relying on Chinese AI models, distinct]
+- [b-3a527f407cc4, b-bbcb00eae268, countries balancing US and Chinese AI, distinct]
+- [b-e96b4eb795b4, b-e560241322a9, press freedom under Trump, distinct]
+- [b-25760921e54e, b-36b77b6ef894, two stabbing attacks, Sweden vs Canada]
+- [b-8d75b7c79a6f, b-f818d24f9035, both involve a six-year-old boy, unrelated]
+- [b-f21800253bff, b-a26e096ccba9, Man City preview vs Maresca press conference]
+- [b-f21800253bff, b-b34bb8cdf0bb, same preview series, different clubs]
+- [b-ff2a280cd649, b-9e76870b7d26, FIFA governance stories, distinct]
+- [b-662bc2b88af0, b-ff2a280cd649, FIFA disciplinary vs governance, distinct]
+- [b-377124f8dfba, b-ed25155d038d, Trump tariff moves, beef vs Canada]
+uncertain_pairs:
+- [b-8608173935c4, b-b63dd0b0fd76, analysis piece may just be a video of the same Bessent announcement]
+- [b-6a2e684a65d2, b-2e0da6b7e7eb, UN/WHO warning on Ebola spread; BBC leads on the vaccine trial]
+- [b-215cdc4999f5, b-a6391f8f4239, sister's torture claim and family's hospital account may be one statement]
+- [b-754c16d98964, b-a6391f8f4239, family account is about the same hospital transfer and return]
+- [b-e095d21a704d, b-38f9f084379c, speed-test crash may be at the same robot games]
+- [b-8b0980fba97b, b-34d06bf06e8c, Syrian condemnations of Israeli strikes; locations differ]
+notes: ''

@@ -1,5 +1,6 @@
 """Small builders shared by tests."""
 
+from osint_monitor.analysis.llm import LLMProvider
 from osint_monitor.core.models import ClusterContext, ContextEntity, ContextItem
 
 
@@ -14,3 +15,19 @@ def make_context(*titles: str, sources: list[str] | None = None, excerpts: list[
         entities=[ContextEntity(name=n, entity_type=t) for n, t in (entities or {}).items()],
         **kwargs,
     )
+
+
+class FakeProvider(LLMProvider):
+    """Scripted LLM replies; an Exception in the script is raised instead of returned."""
+    model = "fake-1"
+
+    def __init__(self, *replies):
+        self.replies = list(replies)
+        self.calls: list[dict] = []
+
+    def generate(self, prompt, system="", temperature=0.3):
+        self.calls.append({"prompt": prompt, "system": system, "temperature": temperature})
+        reply = self.replies.pop(0)
+        if isinstance(reply, Exception):
+            raise reply
+        return reply

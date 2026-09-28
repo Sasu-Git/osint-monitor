@@ -1,0 +1,175 @@
+# Clustering benchmark manifest. Hashes are set by `python main.py benchmark freeze`.
+version: 1
+windows:
+- id: '2026-07-21'
+  split: development
+  start: '2026-07-21T00:00:00'
+  end: '2026-07-23T00:00:00'
+  source:
+    kind: wayback
+    reference: Defense.gov, State Department, Reuters World, BBC World, Al Jazeera, South China Morning Post, War on the Rocks,
+      Lawfare, Breaking Defense
+    notes: 'Defense.gov: 0 items / 0 snapshots; State Department: 0 items / 0 snapshots; Reuters World: 0 items / 0 snapshots;
+      BBC World: 21 items / 2 snapshots; Al Jazeera: 94 items / 8 snapshots; South China Morning Post: 64 items / 3 snapshots;
+      War on the Rocks: 5 items / 1 snapshots; Lawfare: 0 items / 0 snapshots; Breaking Defense: 0 items / 0 snapshots'
+  items_file: windows/2026-07-21.items.jsonl
+  labels_file: labels/2026-07-21.labels.yaml
+  items_sha256: defb0d57f9e6e45890758416e2ec102170f70d49c87aa829f5acba3a6ffb3c2b
+  labels_sha256: a69932af48474c6059a7c7e31e7227f5f03a60eae411357459863fcf06acc258
+  frozen_at: '2026-09-25T14:05:41'
+  stats:
+    items: 184
+    sources: 4
+    per_source:
+      Al Jazeera: 94
+      BBC World: 21
+      South China Morning Post: 64
+      War on the Rocks: 5
+  overlaps: []
+- id: '2026-08-07'
+  split: development
+  start: '2026-08-07T00:00:00'
+  end: '2026-08-09T00:00:00'
+  source:
+    kind: wayback
+    reference: Defense.gov, State Department, Reuters World, BBC World, Al Jazeera, South China Morning Post, War on the Rocks,
+      Lawfare, Breaking Defense
+    notes: 'Defense.gov: 0 items / 0 snapshots; State Department: 0 items / 0 snapshots; Reuters World: 0 items / 0 snapshots;
+      BBC World: 39 items / 2 snapshots; Al Jazeera: 108 items / 8 snapshots; South China Morning Post: 20 items / 1 snapshots;
+      War on the Rocks: 0 items / 0 snapshots; Lawfare: 0 items / 0 snapshots; Breaking Defense: 0 items / 0 snapshots'
+  items_file: windows/2026-08-07.items.jsonl
+  labels_file: labels/2026-08-07.labels.yaml
+  items_sha256: ed662299446fdf84d6c422a2c550249e14a479baa3478470e30a68859a349ee7
+  labels_sha256: b8cd6fb93b219d788b1c4f8a6f479728cbca054befc1a8c355f4dc4df1bc427e
+  frozen_at: '2026-09-25T14:05:46'
+  stats:
+    items: 167
+    sources: 3
+    per_source:
+      Al Jazeera: 108
+      BBC World: 39
+      South China Morning Post: 20
+  overlaps: []
+- id: '2026-08-15'
+  split: development
+  start: '2026-08-15T00:00:00'
+  end: '2026-08-17T00:00:00'
+  source:
+    kind: wayback
+    reference: Defense.gov, State Department, Reuters World, BBC World, Al Jazeera, South China Morning Post, War on the Rocks,
+      Lawfare, Breaking Defense
+    notes: 'Defense.gov: 0 items / 0 snapshots; State Department: 0 items / 0 snapshots; Reuters World: 0 items / 0 snapshots;
+      BBC World: 0 items / 0 snapshots; Al Jazeera: 85 items / 8 snapshots; South China Morning Post: 92 items / 8 snapshots;
+      War on the Rocks: 0 items / 0 snapshots; Lawfare: 0 items / 0 snapshots; Breaking Defense: 0 items / 8 snapshots'
+  items_file: windows/2026-08-15.items.jsonl
+  labels_file: labels/2026-08-15.labels.yaml
+  items_sha256: 0274b7d836f97f8537b2772df6286f12bc4e20bab9ed1b272e6d91687cb7c0c2
+  labels_sha256: 01e703bce374a504f7d9dda35846062433a881fd0d1c9ea997ab25bf6e1b2acf
+  frozen_at: '2026-09-25T14:05:51'
+  stats:
+    items: 177
+    sources: 2
+    per_source:
+      Al Jazeera: 85
+      South China Morning Post: 92
+  overlaps: []
+- id: '2026-08-21'
+  split: development
+  start: '2026-08-21T00:00:00'
+  end: '2026-08-23T00:00:00'
+  source:
+    kind: wayback
+    reference: Defense.gov, State Department, Reuters World, BBC World, Al Jazeera, South China Morning Post, War on the Rocks,
+      Lawfare, Breaking Defense
+    notes: 'Defense.gov: 0 items / 0 snapshots; State Department: 0 items / 0 snapshots; Reuters World: 0 items / 0 snapshots;
+      BBC World: 34 items / 3 snapshots; Al Jazeera: 66 items / 8 snapshots; South China Morning Post: 59 items / 8 snapshots;
+      War on the Rocks: 0 items / 0 snapshots; Lawfare: 0 items / 0 snapshots; Breaking Defense: 3 items / 8 snapshots'
+  items_file: windows/2026-08-21.items.jsonl
+  labels_file: labels/2026-08-21.labels.yaml
+  items_sha256: c4932b5c4acf7d7566efd87b27a25dcb3ce78410c836ae1565463336ea860814
+  labels_sha256: 20f0208b9f4b2da497fac73afb2ec914ca0fc1982b5b7033a4cd84d34ca50ebf
+  frozen_at: '2026-09-25T14:05:55'
+  stats:
+    items: 162
+    sources: 4
+    per_source:
+      Al Jazeera: 66
+      BBC World: 34
+      Breaking Defense: 3
+      South China Morning Post: 59
+  overlaps: []
+- id: '2026-08-31'
+  split: holdout
+  start: '2026-08-31T00:00:00'
+  end: '2026-09-02T00:00:00'
+  source:
+    kind: wayback
+    reference: Defense.gov, State Department, Reuters World, BBC World, Al Jazeera, South China Morning Post, War on the Rocks,
+      Lawfare, Breaking Defense
+    notes: 'Defense.gov: 0 items / 0 snapshots; State Department: 0 items / 0 snapshots; Reuters World: 0 items / 0 snapshots;
+      BBC World: 39 items / 1 snapshots; Al Jazeera: 53 items / 8 snapshots; South China Morning Post: 71 items / 8 snapshots;
+      War on the Rocks: 0 items / 0 snapshots; Lawfare: 0 items / 0 snapshots; Breaking Defense: 3 items / 8 snapshots'
+  items_file: windows/2026-08-31.items.jsonl
+  labels_file: labels/2026-08-31.labels.yaml
+  items_sha256: aed1d3041577c500c1eaddbbedd7f71aae088d0006dddec62a4a4b69e1d474de
+  labels_sha256: fd6da0138298cb9113e08d241e64fc2cb9cdb5b189e5bdb8800b5ef0c3f5d934
+  frozen_at: '2026-09-25T14:06:00'
+  stats:
+    items: 166
+    sources: 4
+    per_source:
+      Al Jazeera: 53
+      BBC World: 39
+      Breaking Defense: 3
+      South China Morning Post: 71
+  overlaps: []
+- id: '2026-09-10'
+  split: holdout
+  start: '2026-09-10T00:00:00'
+  end: '2026-09-12T00:00:00'
+  source:
+    kind: wayback
+    reference: Defense.gov, State Department, Reuters World, BBC World, Al Jazeera, South China Morning Post, War on the Rocks,
+      Lawfare, Breaking Defense
+    notes: 'Defense.gov: 0 items / 0 snapshots; State Department: 0 items / 0 snapshots; Reuters World: 0 items / 0 snapshots;
+      BBC World: 20 items / 2 snapshots; Al Jazeera: 55 items / 8 snapshots; South China Morning Post: 6 items / 8 snapshots;
+      War on the Rocks: 2 items / 1 snapshots; Lawfare: 0 items / 0 snapshots; Breaking Defense: 18 items / 8 snapshots'
+  items_file: windows/2026-09-10.items.jsonl
+  labels_file: labels/2026-09-10.labels.yaml
+  items_sha256: fb1aa49e45d3315a4e8acc8c9f00a5de6205e3384bcd76e95fe46b169f8b1374
+  labels_sha256: 06369ed3b002661d45bbc65b7abef1ece3b70e9112370bc4fd33a9a30c36c7bc
+  frozen_at: '2026-09-25T14:06:05'
+  stats:
+    items: 101
+    sources: 5
+    per_source:
+      Al Jazeera: 55
+      BBC World: 20
+      Breaking Defense: 18
+      South China Morning Post: 6
+      War on the Rocks: 2
+  overlaps: []
+- id: '2026-09-25'
+  split: development
+  start: '2026-09-23T08:36:00'
+  end: '2026-09-25T08:36:00'
+  source:
+    kind: local_db
+    reference: data/eval/recall-2026-09-25.db
+    notes: ''
+  items_file: windows/2026-09-25.items.jsonl
+  labels_file: labels/2026-09-25.labels.yaml
+  items_sha256: dd84b77e1b99c487396e1dc46411ea626ec49b005f98840e6a2f4dbba6affaef
+  labels_sha256: e9c8e45fb32fe42b09cd8b52d61179a71966d753cf69dabc100bd0762177c0ee
+  frozen_at: '2026-09-25T14:06:10'
+  stats:
+    items: 90
+    sources: 6
+    per_source:
+      Al Jazeera: 20
+      BBC World: 20
+      Breaking Defense: 13
+      Defense News: 12
+      South China Morning Post: 20
+      War on the Rocks: 5
+  overlaps: []

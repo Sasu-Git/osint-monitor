@@ -1,9 +1,11 @@
 """Deterministic, keyword-based development classifier.
 
 Free, offline and reproducible. It is the default backend, the fallback when the
-LLM classifier fails, and the reference implementation for tests. It reads
-headlines first (they are compact and factual) and only falls back to full text
-when no headline matches.
+LLM classifier fails, and the reference implementation for tests. Each headline
+votes for one type (they are compact and factual); only when no headline matches
+do the items' lead sentences vote. Negative guards keep incidental wording from
+deciding the type: topics of discussion, time anchors ("before the election"),
+quoted figures of speech, and domestic decisions phrased as "agree to".
 
 It does not judge significance or write assessments: significance_class stays
 None and why_it_matters stays empty.
@@ -12,6 +14,7 @@ None and why_it_matters stays empty.
 from __future__ import annotations
 
 import re
+from collections import Counter
 
 from osint_monitor.core.config import DevelopmentTypeDefaults, load_development_types
 from osint_monitor.core.models import (
@@ -39,6 +42,23 @@ COMMENTARY_TITLE = _rx(
 # Clauses naming a topic of discussion ("meets X to discuss sanctions") are removed
 # before type matching, so the topic does not become the event type.
 DISCUSSION_CLAUSE = _rx(r"\b(?:to discuss|discuss(?:es|ed|ing)?|over|about|regarding|ahead of)\b[^.,;:]*")
+# Time anchors are not events: "fuelling debate before next year's election" is not an
+# election, "since the war" is not military action.
+TEMPORAL_REFERENCE = _rx(
+    r"\b(?:before|after|since|until|following|in the (?:run|lead)-up to)\s+"
+    r"(?:(?:the|a|next|this|last|upcoming|coming|[\w-]+['’]s)\s+)*"
+    r"(?:general |presidential |parliamentary |local |snap )?(?:elections?|vote|polls|referendum|summit|talks|war)\b"
+)
+# Hypothetical force is not an event: "warns of response to any attack".
+HYPOTHETICAL = _rx(r"\b(?:any|possible|potential|future|further) (?:attacks?|strikes?|invasion|offensive)\b")
+# Quoted words are someone's phrasing, not the event: "labels flood a ‘warning to the world’".
+# Applied to rhetoric types only, whose keywords are the ones used figuratively.
+QUOTED = re.compile(r"‘[^’]*’|“[^”]*”|\"[^\"]*\"|(?<!\w)'[^']+'(?!\w)")
+# "Ministers agree to ban burqas" is a government decision, not an agreement between parties.
+DOMESTIC_DECISION = _rx(
+    r"\bagree(?:s|d)? to (?:ban|cap|raise|cut|lower|introduce|impose|restrict|limit|tax|allow|legali[sz]e|"
+    r"scrap|abolish|increase|reduce|require)\b")
+PARTIES = _rx(r"\b[\w.-]+(?:,| and) [\w.-]+(?: [\w.-]+)? agree|\bagree\w* with\b|\bboth sides\b")
 
 # Ordered: the first matching rule wins. Decisive, verb-anchored actions come first,
 # then meetings, then policy, then rhetoric.
@@ -50,7 +70,7 @@ TYPE_RULES: list[tuple[EventType, re.Pattern]] = [
     (EventType.AGREEMENT, _rx(
         r"\b(?:sign(?:s|ed)?|agree(?:s|d)?|reach(?:es|ed)?|seal(?:s|ed)?|conclude[sd]?|strike[sd]?|struck)\b"
         r"[^.;]{0,40}\b(?:agreement|deal|accord|memorandum|mou|pact)\b"
-        r"|\bagree(?:s|d)? (?:to|on)\b|\b(?:agreement|deal|accord|pact) (?:signed|reached|agreed)\b")),
+        r"|\bagree(?:s|d)? (?:to|on|with)\b|\b(?:agreement|deal|accord|pact) (?:signed|reached|agreed)\b")),
     (EventType.ELECTION, _rx(
         r"\b(?:elections?|re-elected|referendum|(?:wins?|won) (?:the )?(?:vote|presidency|election))\b")),
     (EventType.RESIGNATION, _rx(
@@ -61,10 +81,23 @@ TYPE_RULES: list[tuple[EventType, re.Pattern]] = [
     (EventType.ECONOMIC_ACTION, _rx(
         r"\b(?:tariffs?|export controls?|export ban|import ban|embargo|aid package|trade restrictions?)\b")),
     (EventType.MILITARY_EXERCISE, _rx(r"\b(?:military|naval|joint) exercises?\b|\bdrills?\b|\bwar ?games\b")),
+    # before military action: a knife attack or a hack is not state military action
+    (EventType.SECURITY_INCIDENT, _rx(
+        r"\barrest(?:s|ed|ing)?\b|\bcharged with\b|\bindict(?:s|ed|ment)\b|\bconvicted\b|\bsentenced\b|"
+        r"\bdetain(?:s|ed)\b|\b(?:knife|gun|stabbing|shooting|arson|terror(?:ist)?) attacks?\b|\bstabbings?\b|"
+        r"\bmass shooting\b|\bhack(?:s|ed|ers?|ing)?\b|\bcyber ?attacks?\b|\bransomware\b|\bdata breach\b|"
+        r"\bespionage\b")),
     (EventType.MILITARY_ACTION, _rx(
         r"\b(?:air ?strikes?|strikes? (?:on|against)|struck|shell(?:ing|ed)|bombard\w*|bomb(?:ing|ed|s)|"
         r"(?:missile|drone|rocket) (?:attack|strike)s?|attack(?:s|ed)?|offensive|invade[sd]?|invasion|"
-        r"launche[sd] (?:missiles|rockets|drones))\b")),
+        r"launche[sd] (?:missiles|rockets|drones))\b"
+        # "killed in Pakistani strikes", "forces kill Taliban fighters", "border clashes"
+        r"|\bkilled in [\w-]+ (?:air ?|drone |missile |artillery )?strikes?\b"
+        r"|\b(?:forces|troops|army|military|soldiers) (?:kill(?:s|ed)?|shell(?:s|ed)?|raid(?:s|ed)?)\b"
+        r"|\bborder (?:clash(?:es)?|escalation|fighting)\b"
+        r"|\bstrikes? kill(?:s|ed)?\b")),
+    # "Russia strikes Kharkiv": the verb with a named target (case-sensitive)
+    (EventType.MILITARY_ACTION, re.compile(r"\b(?:strikes|pounds|shells) [A-Z][a-z]")),
     (EventType.DEPLOYMENT, _rx(
         r"\b(?:re)?deploy(?:s|ed|ment|ing)?\b|\b(?:sends?|sent) (?:troops|warships|forces|jets)\b"
         r"|\bdispatch(?:es|ed)\b|\bcarrier strike group\b")),
@@ -88,7 +121,9 @@ TYPE_RULES: list[tuple[EventType, re.Pattern]] = [
     (EventType.WARNING, _rx(r"\bwarn(?:s|ed|ing)?\b|\bcaution(?:s|ed)?\b")),
 ]
 # Only matched against headlines: "said" appears in almost every article body.
-STATEMENT_TITLE = _rx(r"\b(?:said|says|stated|declare[sd]|announce[sd]|statement|addresse[sd])\b")
+STATEMENT_TITLE = _rx(
+    r"\b(?:said|says|stated|declare[sd]|announce[sd]|statement|addresse[sd]|"
+    r"labels?|labell?ed|brands?|branded|describe[sd])\b")
 
 # Completed vs planned. Headlines use the present tense for completed events.
 COMPLETION = _rx(
@@ -144,6 +179,18 @@ RHETORIC_TYPES = {
     EventType.COMMENTARY, EventType.OTHER, EventType.UNKNOWN,
 }
 AGREEMENT_TYPES = {EventType.AGREEMENT, EventType.TREATY, EventType.CEASEFIRE}
+# vote tie-break: rule order (decisive actions first), then statements, then commentary
+_PRIORITY = {t: n for n, t in enumerate(dict.fromkeys(
+    [t for t, _ in TYPE_RULES] + [EventType.SIGNIFICANT_STATEMENT, EventType.COMMENTARY]))}
+
+
+def _lead(excerpt: str) -> str:
+    """First sentence of an item's text: where the development itself is stated."""
+    text = (excerpt or "").strip()
+    for stop in (". ", "\n"):
+        if stop in text:
+            text = text.split(stop, 1)[0]
+    return text[:300]
 
 
 class RuleBasedClassifier:
@@ -155,12 +202,17 @@ class RuleBasedClassifier:
         self._defaults = type_defaults or load_development_types()
 
     def classify(self, context: ClusterContext) -> DevelopmentClassification:
+        return self.assess(context)[0]
+
+    def assess(self, context: ClusterContext) -> tuple[DevelopmentClassification, bool]:
+        """Classification plus whether the rules found the case ambiguous (no match, or
+        headlines split evenly between types) -- the cases worth a model's judgement."""
         titles = " \n".join(i.title for i in context.items)
         full_text = " \n".join(f"{i.title} {i.excerpt}" for i in context.items)
         notes: list[str] = []
         flags = context_flags(context)
 
-        event_type, matched = self._match_type(titles, full_text)
+        event_type, matched, ambiguous = self._match_type(context)
         notes.append(f"matched '{matched}'" if matched else "no rule matched")
 
         planned = bool(FUTURE.search(titles)) and not COMPLETION.search(titles)
@@ -201,31 +253,59 @@ class RuleBasedClassifier:
             classification_notes="Rules: " + "; ".join(notes),
             uncertainty_flags=flags,
             classifier=self.name,
-        )
+        ), ambiguous or event_type == EventType.UNKNOWN
 
     # ------------------------------------------------------------------
 
     @staticmethod
-    def _match_type(titles: str, full_text: str) -> tuple[EventType, str]:
-        commentary = COMMENTARY_TITLE.search(titles)
-        if commentary:
-            return EventType.COMMENTARY, commentary.group(0)
-
-        stripped_titles = DISCUSSION_CLAUSE.sub(" ", titles)
+    def _match_text(text: str, headline: bool) -> tuple[EventType, str] | None:
+        """Type of one headline (or lead sentence), with the negative guards applied."""
+        if headline:
+            commentary = COMMENTARY_TITLE.search(text)
+            if commentary:
+                return EventType.COMMENTARY, commentary.group(0)
+        stripped = HYPOTHETICAL.sub(" ", TEMPORAL_REFERENCE.sub(" ", DISCUSSION_CLAUSE.sub(" ", text)))
+        unquoted = QUOTED.sub(" ", stripped)
         for event_type, pattern in TYPE_RULES:
-            m = pattern.search(stripped_titles)
-            if m:
-                return event_type, m.group(0)
-        statement = STATEMENT_TITLE.search(stripped_titles)
-        if statement:
-            return EventType.SIGNIFICANT_STATEMENT, statement.group(0)
+            m = pattern.search(unquoted if event_type in RHETORIC_TYPES else stripped)
+            if not m:
+                continue
+            if event_type == EventType.AGREEMENT and DOMESTIC_DECISION.search(stripped) \
+                    and not PARTIES.search(stripped) and "agree" in m.group(0).lower():
+                continue                       # a government decision; policy rules decide
+            return event_type, m.group(0)
+        if headline:
+            statement = STATEMENT_TITLE.search(stripped)
+            if statement:
+                return EventType.SIGNIFICANT_STATEMENT, statement.group(0)
+        return None
 
-        stripped_text = DISCUSSION_CLAUSE.sub(" ", full_text)
-        for event_type, pattern in TYPE_RULES:
-            m = pattern.search(stripped_text)
-            if m:
-                return event_type, m.group(0)
-        return EventType.UNKNOWN, ""
+    def _match_type(self, context: ClusterContext) -> tuple[EventType, str, bool]:
+        """Vote across headlines, one vote each; if no headline matches, across lead sentences.
+
+        A single headline cannot decide a cluster against the others (one "sanctions"
+        headline in a summit cluster), and body text is limited to lead sentences, where
+        the development is stated, so incidental mentions further down do not count.
+        Ties go to the earlier rule (deeds before words). Returns (type, evidence, ambiguous).
+        """
+        for texts, headline in (([i.title for i in context.items], True),
+                                ([_lead(i.excerpt) for i in context.items], False)):
+            votes = [v for v in (self._match_text(t, headline) for t in texts if t) if v]
+            if not votes:
+                continue
+            counts = Counter(t for t, _ in votes)
+            ranked = sorted(counts, key=lambda t: (-counts[t], _PRIORITY[t]))
+            winner = ranked[0]
+            # a tie between two substantive types (not deed vs words, which priority settles)
+            ambiguous = (len(ranked) > 1 and counts[ranked[1]] == counts[winner]
+                         and winner not in RHETORIC_TYPES and ranked[1] not in RHETORIC_TYPES)
+            evidence = next(e for t, e in votes if t == winner)
+            if len(counts) > 1:
+                evidence += " (votes: " + ", ".join(f"{t.value}×{counts[t]}" for t in ranked) + ")"
+            if not headline:
+                evidence += " [lead sentence]"
+            return winner, evidence, ambiguous
+        return EventType.UNKNOWN, "", True
 
     def _concreteness(
         self,
