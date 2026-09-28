@@ -1,0 +1,16 @@
+rule:
+  name: 'proposed: 0.45-0.53, <=6h, >=2 shared actors'
+  min_similarity: 0.45
+  max_similarity: 0.53
+  max_hours: 6.0
+  min_shared: 2
+  min_coverage: null
+  actor_field: actors
+  require_same_type: false
+  require_shared_location: false
+rationale: Pre-registered from the day-1 recall review; frozen unchanged. Development
+  windows show no true joins added on the 4 blind windows (all 3 gains on 2026-09-25,
+  where the rule was derived) and 7 related-but-distinct false joins; hold-out is
+  read mainly as a false-join check. Not re-tuned (4h variant not chosen to avoid
+  fitting to development).
+frozen_at: '2026-09-28T12:20:43'
