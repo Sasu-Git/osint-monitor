@@ -258,12 +258,24 @@ class SeismicFusionConfig(BaseModel):
     max_magnitude_difference: float = 0.5
 
 
+class HeadlineOverrideConfig(BaseModel):
+    """Keep a link the headline guard would cut when stronger evidence agrees on one occurrence."""
+    max_hours: float = 6.0                          # published this close together
+    require_shared_place: bool = True               # both name places and some are compatible
+    min_shared_actors: int = 0                      # canonical actors mentioned by both
+
+
 class DevelopmentSegmentationConfig(BaseModel):
     """Split narrative clusters into Developments (processors/development_segmentation.py)."""
     enabled: bool = False
     analysis_headlines: bool = True                 # analysis/explainer headline vs report headline
     min_headline_similarity: Optional[float] = 0.5  # cross-source headline-only cosine; None disables
-    disjoint_locations: bool = True                 # both name places, none shared
+    disjoint_locations: bool = True                 # both name places, none compatible
+    location_match: str = "exact"                   # "exact" names, or "containment" (config/geography.yaml)
+    use_regions: bool = False                       # containment also through supra-national regions
+    headline_override: Optional[HeadlineOverrideConfig] = None   # when a headline mismatch is not decisive
+
+
 
 
 class EventGroupingConfig(BaseModel):
