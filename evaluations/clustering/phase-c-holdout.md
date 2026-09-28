@@ -43,7 +43,7 @@ of exactly the hard-negative class (related developments sharing actors and timi
 
 ## What the benchmark points at instead (not implemented, needs its own prompt)
 
-1. **Storyline-level over-merging is the main error** (34 of 46 mixed clusters in dev + hold-out
+1. **Storyline-level over-merging is the main error** (33 of 46 mixed clusters in dev + hold-out
    merge developments of one storyline; a handful merge unrelated items by template, e.g. "N dead
    after ..." disasters). For the Situation -> Development -> Evidence hierarchy this matters more than
    recall: an Event currently often spans several developments. Candidate directions to evaluate on
