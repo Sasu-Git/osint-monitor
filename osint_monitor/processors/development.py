@@ -24,7 +24,7 @@ from osint_monitor.core.models import (
     RankingInput, RoleClass, SignificanceClass, UncertaintyFlag,
 )
 from osint_monitor.processors.classification import (
-    DevelopmentClassifier, LLMClassifier, RuleBasedClassifier, get_classifier,
+    DevelopmentClassifier, HybridClassifier, LLMClassifier, RuleBasedClassifier, get_classifier,
 )
 from osint_monitor.processors.classification.context import build_cluster_context
 from osint_monitor.processors.actors import ActorNormalizer
@@ -42,7 +42,7 @@ def usable_classifier(classifier: DevelopmentClassifier | None = None) -> Develo
     """The configured classifier, or the rule-based one when the LLM backend cannot be used
     (missing key / unknown provider). Checked once per run instead of failing per event."""
     classifier = classifier or get_classifier()
-    if isinstance(classifier, LLMClassifier):
+    if isinstance(classifier, (LLMClassifier, HybridClassifier)):
         try:
             classifier.llm
         except Exception as e:
