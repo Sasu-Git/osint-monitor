@@ -1,0 +1,368 @@
+# Gold labels for 2026-09-27-live. See osint_monitor/benchmark/format.py for the format.
+# Criteria: a development is one concrete occurrence; responses, follow-ups and analysis
+# of it are separate developments in the same storyline (related_but_distinct).
+# Hold-out window: labelled blind, from the label sheet only (no similarity scores,
+# no clusterer output, no other windows' labels except the worked example).
+window: 2026-09-27-live
+labelled_by: "claude subagent (blind, from label-sheet only)"
+labelled_at: '2026-09-28T13:26:57'
+developments:
+# --- Iran war / Hormuz deal rejection ------------------------------------------------------
+- id: trump-rejects-hormuz-plan
+  storyline: iran-hormuz-deal
+  members: [b-03bf5d3fc39a]
+  notes: live blog leading on Trump's rejection of Iran's seven-day plan
+- id: araghchi-only-negotiation
+  storyline: iran-hormuz-deal
+  members: [b-7dd9705dba63]
+  notes: Iranian FM says Tehran awaits official rejection - only negotiation can end conflict
+- id: araghchi-doomsday-war
+  storyline: iran-hormuz-deal
+  members: [b-c5f73c1eff91, b-11af3f1b218b]
+  notes: Araghchi says Iran ready for doomsday/apocalyptic war; the live blog leads on the same warning
+- id: behind-trump-rejection-analysis
+  storyline: iran-hormuz-deal
+  members: [b-c2224cff562a]
+  notes: analysis
+- id: why-trump-rejected-explainer
+  storyline: iran-hormuz-deal
+  members: [b-199199c2efa8]
+  notes: explainer
+- id: hormuz-tensions-linger
+  storyline: iran-hormuz-deal
+  members: [b-f0d7399ed7a6]
+  notes: situation report on fears of renewed fighting
+- id: trump-expects-new-iran-talks
+  storyline: iran-hormuz-deal
+  members: [b-6df939d5bb83]
+- id: waltz-uranium-offer
+  storyline: iran-hormuz-deal
+  members: [b-90770abe12df]
+- id: oil-surges-after-rejection
+  storyline: iran-hormuz-deal
+  members: [b-1c28eab37d6a]
+- id: libya-hormuz-opportunity
+  storyline: iran-hormuz-deal
+  members: [b-2ebe9a437958]
+  notes: opinion/analysis
+- id: iran-children-return-school
+  storyline: iran-hormuz-deal
+  members: [b-1ea9d6def45b]
+- id: cathay-middle-east-suspension
+  storyline: iran-hormuz-deal
+  members: [b-7bdad4198577]
+# --- RAF Fairford terror arrests ------------------------------------------------------------
+- id: raf-fairford-arrests
+  storyline: raf-fairford-plot
+  members: [b-2aa4f4c5dec4, b-08345222b857]
+- id: trump-on-fairford-suspects
+  storyline: raf-fairford-plot
+  members: [b-a484ad627f49]
+  notes: headline leads on Trump's comment; body reports the arrests (see uncertain pair)
+- id: fairford-what-we-know
+  storyline: raf-fairford-plot
+  members: [b-d48a527f2c70]
+  notes: explainer
+- id: fairford-investigation-iran-link
+  storyline: raf-fairford-plot
+  members: [b-6a55fb42e3b3]
+  notes: Monday follow-up on explosives found and whether an Iran-linked attack was foiled
+# --- Pope Leo in Lourdes ---------------------------------------------------------------------
+- id: pope-meets-abuse-survivors
+  storyline: pope-france-visit
+  members: [b-4e5e0bc4c49b, b-7e163e96ca25]
+  notes: SCMP headline leads on the meeting with victims (written before it happened)
+- id: pope-bishops-abuse-speech
+  storyline: pope-france-visit
+  members: [b-9f2fd2c29401]
+  notes: speech to bishops before the service
+# --- Bangkok floods --------------------------------------------------------------------------
+- id: bangkok-floods
+  storyline: bangkok-floods
+  members: [b-4af70a52121d, b-889a385fedec]
+  notes: flood disaster declared / worst flood in 15 years - same flood on the same Sunday
+- id: bangkok-jet-ski-sentence
+  storyline: bangkok-floods
+  members: [b-b3d47c7e2cc9]
+# --- South Asia floods -----------------------------------------------------------------------
+- id: india-nepal-floods-56-dead
+  storyline: south-asia-floods
+  members: [b-697f41dd984f]
+- id: nepal-more-floods-14-dead
+  storyline: south-asia-floods
+  members: [b-c2228010948d]
+  notes: may be an updated Nepal toll of the same rains (see uncertain pair)
+- id: nepal-floods-one-month-missing
+  storyline: south-asia-floods
+  members: [b-004f547a2ee6]
+  notes: about the earlier catastrophic floods a month ago
+- id: nepal-floods-tourism
+  storyline: south-asia-floods
+  members: [b-95d551a3ca0e]
+  notes: feature
+# --- Himlung avalanche -----------------------------------------------------------------------
+- id: himlung-avalanche
+  members: [b-55d9c068605b, b-0393165ac641, b-58f7732af1e4, b-c7c597f69309]
+  notes: one avalanche; bodies found and resumed search are the same occurrence
+# --- two/multi-outlet developments -----------------------------------------------------------
+- id: south-africa-two-mass-shootings
+  members: [b-e57deb67e31f, b-c53fef85098b, b-ec08cd22e040]
+  notes: two shootings reported together as one story in all three outlets
+- id: detroit-strip-club-shooting
+  members: [b-7d16485e66e2, b-852c676eb04a]
+- id: swiss-neutrality-referendum
+  members: [b-db836227f175, b-b2269552031a, b-8a9ca0d10138]
+- id: afghanistan-28-fighters-killed
+  members: [b-77ba1fe5160f, b-229af37c7893]
+- id: israel-revokes-dutch-diplomats
+  members: [b-518ab3ddfe5a, b-1487322b526f]
+- id: noreaster-floods-northeast
+  members: [b-bfd2ab03d934, b-826487143011]
+# --- Serbia ----------------------------------------------------------------------------------
+- id: vucic-resigns
+  storyline: serbia-vucic
+  members: [b-8112e39d70bb, b-af5a851dc9c2, b-990be8299582, b-64831497ae4d]
+- id: serbia-snap-election-analysis
+  storyline: serbia-vucic
+  members: [b-379741003b7a]
+  notes: analysis
+# --- US-China summit aftermath ---------------------------------------------------------------
+- id: summit-trade-deliverables
+  storyline: us-china-summit
+  members: [b-660796c053bb, b-6dc695465ab4]
+  notes: published list of tariff cuts / coal purchases - same set of announced outcomes
+- id: trump-downplays-taiwan-talk
+  storyline: us-china-summit
+  members: [b-d1e12d5d765d]
+- id: trump-asked-xi-weapons
+  storyline: us-china-summit
+  members: [b-7ebc02ecc23a]
+  notes: US ambassador's disclosure and State Department walk-back
+- id: pandas-arrive-atlanta
+  storyline: us-china-summit
+  members: [b-d845d459c8b0, b-c4ae529fbee3]
+- id: southeast-asia-summit-reaction
+  storyline: us-china-summit
+  members: [b-ea9e63c7a37f]
+  notes: analysis
+- id: summit-what-wasnt-said
+  storyline: us-china-summit
+  members: [b-7c7c497f2d2f]
+  notes: analysis
+- id: scott-kennedy-summit-interview
+  storyline: us-china-summit
+  members: [b-1d63878125d2]
+- id: scmp-weekend-reads
+  storyline: us-china-summit
+  members: [b-190a4976ff99]
+  notes: digest - low value
+# --- South China Sea -------------------------------------------------------------------------
+- id: second-thomas-shoal-embassy-exchange
+  storyline: south-china-sea
+  members: [b-bad19b442040]
+- id: wz7-drone-scarborough
+  storyline: south-china-sea
+  members: [b-e8ac73126003]
+# --- Ireland vs Israel Nations League --------------------------------------------------------
+- id: bazunu-boycott
+  storyline: ireland-israel-match
+  members: [b-e20dd0116975]
+- id: irish-pubs-refuse-screening
+  storyline: ireland-israel-match
+  members: [b-2936c7c9f780]
+- id: ireland-beats-israel
+  storyline: ireland-israel-match
+  members: [b-7a548016abaa, b-60e2b4b9b99b]
+- id: israeli-fans-chants
+  storyline: ireland-israel-match
+  members: [b-a5039014350e, b-dbf1110acf2b]
+  notes: military slogans and monkey chants by Israeli fans at the same match
+# --- Israel / West Bank ----------------------------------------------------------------------
+- id: smotrich-calls-for-west-bank-war
+  storyline: smotrich-west-bank-war
+  members: [b-b4885bb68ad9]
+- id: smotrich-rhetoric-analysis
+  storyline: smotrich-west-bank-war
+  members: [b-4a29a1791be7]
+  notes: analysis
+- id: ben-gvir-threat-video
+  storyline: ben-gvir-salameh
+  members: [b-84e545bba88c]
+- id: palestinians-denounce-ben-gvir
+  storyline: ben-gvir-salameh
+  members: [b-c2772755ef8f]
+  notes: reaction
+- id: west-bank-checkpoints-map
+  storyline: west-bank-closures
+  members: [b-8e2910000646]
+  notes: explainer on the week-long crossing closure
+- id: west-bank-checkpoints-feature
+  storyline: west-bank-closures
+  members: [b-4db6730cec04]
+- id: israeli-opposition-unites
+  members: [b-04c6af35787d]
+- id: board-of-peace-unrwa
+  members: [b-71a230769348]
+# --- Yemen -----------------------------------------------------------------------------------
+- id: yemen-govt-widen-taiz-attacks
+  storyline: yemen-war
+  members: [b-c8f19fcb7c86]
+- id: bbc-yemen-frontline-report
+  storyline: yemen-war
+  members: [b-34c9031fecd0]
+  notes: reportage from a front-line city - not the specific offensive report
+- id: yemen-health-system-warning
+  storyline: yemen-war
+  members: [b-c984aa65e7bd]
+# --- Ethiopia --------------------------------------------------------------------------------
+- id: ethiopia-meskel-peace-calls
+  storyline: ethiopia-tigray
+  members: [b-900571b8d5e5]
+- id: ethiopia-recaptures-sekota
+  storyline: ethiopia-tigray
+  members: [b-44dd727c55a9]
+- id: aj-afar-frontline-report
+  storyline: ethiopia-tigray
+  members: [b-46352a21f0c5]
+- id: ethiopia-accuses-sudan-egypt
+  storyline: ethiopia-tigray
+  members: [b-26c419e266d8]
+# --- Venezuela -------------------------------------------------------------------------------
+- id: venezuela-prisoner-release
+  storyline: venezuela-transition
+  members: [b-222d501a5492]
+- id: venezuela-machado-rally
+  storyline: venezuela-transition
+  members: [b-c006c9ee898c]
+# --- UK Labour conference / Palestine Action -------------------------------------------------
+- id: labour-conference-opens
+  storyline: uk-labour-conference
+  members: [b-aedd2243d335]
+- id: palestine-action-liverpool-arrests
+  storyline: uk-labour-conference
+  members: [b-1c000524d875, b-b688841cf4a6]
+  notes: same outlet - arrests at the Liverpool demonstration ahead of the conference
+- id: healey-defence-reindustrialisation
+  storyline: uk-labour-conference
+  members: [b-c60aa1689eb5]
+- id: miliband-confronted-palestine-action
+  members: [b-30f6b56e111c]
+# --- South Korea / Ukraine POW row -----------------------------------------------------------
+- id: south-korea-ukraine-pow-row
+  storyline: korea-ukraine-pow
+  members: [b-c0262f39fb0e]
+- id: pow-row-ties-at-risk-analysis
+  storyline: korea-ukraine-pow
+  members: [b-1440a87f800b]
+  notes: analysis of the escalating row
+# --- India rape protests ---------------------------------------------------------------------
+- id: indian-university-rape-protest
+  storyline: lovely-university-protest
+  members: [b-490b27a5628d]
+- id: university-suspends-classes
+  storyline: lovely-university-protest
+  members: [b-2b50b4e05c45]
+  notes: follow-up decision
+- id: india-supreme-court-rapes
+  members: [b-6920d61d9910]
+# --- singletons that could plausibly be confused ---------------------------------------------
+- id: montreal-helicopter-crash
+  members: [b-71fcf76771d7]
+- id: hurricane-polo-mexico
+  members: [b-138039a8866c]
+- id: drc-vessel-capsizes
+  members: [b-312c0892cecb]
+- id: russian-strikes-ukraine
+  members: [b-31151ccfa8c5]
+- id: somalia-baidoa-fighting
+  members: [b-73ced999de20]
+- id: sudan-blue-nile-motorcycles
+  members: [b-09c833d46b36]
+- id: cuba-decries-us-military-action
+  members: [b-fffb91b9f8fd]
+- id: japan-russia-unsc-seat
+  members: [b-3f7a91669cc5]
+- id: france-senate-rn-gains
+  members: [b-398f4804f5ef]
+- id: sweden-andersson-talks-fail
+  members: [b-dd00375eac0e]
+- id: brazil-election-rallies
+  members: [b-21163175f676]
+- id: republicans-house-races-cash
+  members: [b-3682f0ef071f]
+- id: northern-ireland-orange-march-blocked
+  members: [b-e731e770d5e7]
+- id: ujjain-mosque-demolition-protest
+  members: [b-87e4724fffa5]
+- id: south-africa-refugees-durban
+  members: [b-3707752a2180]
+- id: us-white-genocide-memorial
+  members: [b-6aa33fd0cdb3]
+- id: ontario-hospital-thefts
+  members: [b-d8860e2148bb]
+- id: amodei-trump-dinner
+  members: [b-c3a2d3d84542]
+- id: gates-ai-regulation
+  members: [b-c38a85d4a5e0]
+- id: china-open-weight-ai-report
+  members: [b-b68f0e01a934]
+- id: malaysia-negeri-sembilan-sedition
+  members: [b-d0a78792e1ba]
+- id: siti-hasmah-dies
+  members: [b-be40163bb0e3]
+- id: singapore-actors-charged
+  members: [b-ca4ae0e03c11]
+- id: hk-bicycle-crackdown
+  members: [b-f4e7d11a6ba7]
+- id: hk-claw-machine-theft
+  members: [b-5ea0d45f0f45]
+- id: hk-gym-hidden-cameras
+  members: [b-d6fafe14a414]
+- id: hk-minibus-truck-crash
+  members: [b-67d584bb9cbf]
+- id: hk-abby-choi-jury-discharged
+  members: [b-1944a9bf4e59]
+- id: hk-jason-poon-bail
+  members: [b-be9033b240d7]
+- id: hk-slimming-injections-seized
+  members: [b-d753388dbaf6]
+- id: hk-visa-abuse-crackdown
+  members: [b-b1e6e939b426]
+- id: hk-yacht-rowers-investigation
+  members: [b-264a8b087b14]
+- id: amicro-hk-ipo
+  members: [b-e74b7c9055db]
+- id: cansemi-ipo-oversubscribed
+  members: [b-fd0a227bd988]
+- id: nio-geely-battery-swap-stake
+  members: [b-470c802bd999]
+related_pairs:
+- [b-7d16485e66e2, b-c53fef85098b, both mass shootings on Sunday - Detroit vs South Africa]
+- [b-e57deb67e31f, b-3707752a2180, both South Africa violence - shootings vs refugee camp fears]
+- [b-4af70a52121d, b-697f41dd984f, both deadly floods in Asia - Bangkok vs India and Nepal]
+- [b-826487143011, b-138039a8866c, both storms in North America - nor'easter vs Hurricane Polo]
+- [b-58f7732af1e4, b-c2228010948d, both Nepal weather disasters - avalanche vs floods]
+- [b-6702bd2e7120, b-8af8c93c3062, both professors' views on marriage - Hong Kong vs mainland]
+- [b-f4e7d11a6ba7, b-5ea0d45f0f45, both Hong Kong police cases - distinct]
+- [b-5ea0d45f0f45, b-d6fafe14a414, both Hong Kong police arrests - distinct]
+- [b-e74b7c9055db, b-fd0a227bd988, both Chinese chip company IPOs - distinct]
+- [b-7bdad4198577, b-d21ea384aa11, both Cathay Pacific - suspension vs archive history]
+- [b-908e76f42c22, b-4bcc6e4ddc33, both Hong Kong National Day holiday - distinct]
+- [b-84e545bba88c, b-b4885bb68ad9, both Israeli far-right ministers' threats - Ben-Gvir vs Smotrich]
+- [b-b4885bb68ad9, b-8e2910000646, Smotrich item mentions the Sukkot West Bank closure]
+- [b-4db6730cec04, b-78340070a4ce, both West Bank Palestinian hardship features]
+- [b-30f6b56e111c, b-b688841cf4a6, both Palestine Action ban protests - Miliband confrontation vs Liverpool arrests]
+- [b-6920d61d9910, b-490b27a5628d, both India rape accountability - Supreme Court vs campus protest]
+- [b-c38a85d4a5e0, b-c3a2d3d84542, both AI industry leaders - Gates vs Amodei]
+- [b-d4bf3d37b38a, b-6e7796e3ffc4, both Nations League match previews - distinct games]
+- [b-6e7796e3ffc4, b-60e2b4b9b99b, both Nations League - Belgium-France vs Ireland-Israel]
+- [b-26c419e266d8, b-09c833d46b36, both mention Sudan's army - distinct]
+- [b-b27bb4f7dbf2, b-c2224cff562a, both on US sanctions leverage over Iran - distinct]
+- [b-bad19b442040, b-027973ad1665, both Philippines foreign relations - distinct]
+uncertain_pairs:
+- [b-7dd9705dba63, b-c5f73c1eff91, both Araghchi remarks after the rejection - may be one interview]
+- [b-a484ad627f49, b-2aa4f4c5dec4, Defense News body is the arrests report while headline leads on Trump]
+- [b-6a55fb42e3b3, b-08345222b857, Monday follow-up may be the same arrests story updated]
+- [b-7e163e96ca25, b-9f2fd2c29401, SCMP day report may lead on the bishops speech rather than the survivor meeting]
+- [b-697f41dd984f, b-c2228010948d, Nepal toll 12 then 14 - may be the same rains updated]
+notes: ''

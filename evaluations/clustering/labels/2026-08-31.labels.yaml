@@ -1,0 +1,294 @@
+# Gold labels for 2026-08-31. See osint_monitor/benchmark/format.py for the format.
+# Criteria: a development is one concrete occurrence; responses, follow-ups and analysis
+# of it are separate developments in the same storyline (related_but_distinct).
+# Hold-out window: labelled blind, from the label sheet only (title + excerpt), with no
+# similarity scores, clusterer output or other windows' labels seen.
+window: '2026-08-31'
+labelled_by: claude subagent (blind, from label-sheet only)
+labelled_at: '2026-09-25T14:03:32'
+developments:
+# --- US-Iran exchange: Larak Island strike and Iranian retaliation ------------------------
+- id: us-larak-strike-iran-retaliation
+  storyline: us-iran-war
+  members: [b-2005cdd898cd, b-870dd2996e58, b-3dee8a5372cf, b-45bc85da0ff1]
+  notes: US bombs IRGC launchers on Larak Island, Iran hits bases in Jordan/UAE. The two live blogs lead on this exchange; same outlet throughout.
+- id: uae-intercepts-drone-denies-airbase-hit
+  storyline: us-iran-war
+  members: [b-76d3144059e8]
+  notes: UAE statement after the exchange (see uncertain pair)
+- id: can-iran-mine-hormuz-with-rockets
+  storyline: us-iran-war
+  members: [b-ae7ae5890919]
+  notes: analysis of the US claim
+- id: iran-war-economic-winners-losers
+  storyline: us-iran-war
+  members: [b-fe6f5688a552]
+  notes: analysis
+- id: us-to-sanction-another-iran-bank
+  storyline: iran-sanctions
+  members: [b-d18b3d3c6ab1]
+- id: operation-economic-outcast-failing
+  storyline: iran-sanctions
+  members: [b-7f55b56f9fed]
+  notes: opinion on the sanctions package
+# --- Mecca defence pact -----------------------------------------------------------------
+- id: mecca-pact-first-meeting
+  storyline: mecca-pact
+  members: [b-bf8b8b7b2085]
+- id: mecca-pact-whats-next
+  storyline: mecca-pact
+  members: [b-4320f84c3536]
+  notes: explainer on the meeting (see uncertain pair)
+- id: breaking-defense-mideast-recap
+  storyline: mecca-pact
+  members: [b-4987459dba37]
+  notes: podcast recap, pact explainer among other items
+# --- Nepal-Tibet floods -----------------------------------------------------------------
+- id: nepal-rescue-tunnel-workers-toll-900
+  storyline: nepal-tibet-floods
+  members: [b-b18d96e6fc10]
+- id: china-nepal-rescue-toll-near-1000
+  storyline: nepal-tibet-floods
+  members: [b-40456da07df1]
+  notes: Monday rescue update from the China side (see uncertain pairs)
+- id: china-warns-glacier-collapse-risk
+  storyline: nepal-tibet-floods
+  members: [b-757c54159001]
+  notes: same outlet and timestamp as the rescue update but leads on the ministry warning
+- id: nepal-foreign-rescue-teams-question
+  storyline: nepal-tibet-floods
+  members: [b-98df932ec432]
+  notes: analysis of the government's aid appeal
+- id: nuwakot-residents-return-home
+  storyline: nepal-tibet-floods
+  members: [b-193b898b20bc]
+- id: nepal-what-it-really-needs
+  storyline: nepal-tibet-floods
+  members: [b-e1d69e6c7217]
+  notes: opinion
+- id: nepal-tunnel-traps-how-many-dead
+  storyline: nepal-tibet-floods
+  members: [b-a5d8ac56e6a0]
+  notes: explainer on the toll
+- id: nepal-families-search-missing
+  storyline: nepal-tibet-floods
+  members: [b-81d26133629d]
+- id: nepal-final-minutes-before-flood
+  storyline: nepal-tibet-floods
+  members: [b-898d1b9dc809]
+  notes: reconstruction feature, missing Indians at the border crossing
+- id: nepal-worker-tunnel-testimony
+  storyline: nepal-tibet-floods
+  members: [b-f24f0531bb39]
+- id: scmp-weekend-reads-asia
+  members: [b-ea1a6e5796a4]
+  notes: digest whose headline mentions the floods and Japan jets to India
+# --- SCO summit -------------------------------------------------------------------------
+- id: sco-summit-preview
+  storyline: sco-summit
+  members: [b-4926f53474c5, b-07ece95fa89d, b-6ed12305e301]
+  notes: same outlet previews of the summit meeting; two of them are one article retitled
+- id: xi-bishkek-sco-eurasia-strategy
+  storyline: sco-summit
+  members: [b-fe085a8af44f]
+  notes: analysis framed on Xi's arrival (see uncertain pair)
+- id: modi-urges-putin-end-ukraine-war
+  storyline: sco-summit
+  members: [b-2b3e6701060f]
+  notes: analysis of Modi's peace plea
+- id: xi-cairo-trip
+  members: [b-0187e007955f]
+# --- two-outlet / duplicate developments ------------------------------------------------
+- id: grand-canyon-flash-flood
+  members: [b-04b8dd1b7e59, b-8c3f1988382e, b-adea0d13d447]
+  notes: same outlet, three versions with changing missing counts
+- id: baghdad-al-dora-explosions-fire
+  members: [b-b0575b7c3aa1, b-a24a6d46bb92]
+- id: sanchez-blames-russia-israel-ceuta-disinfo
+  storyline: ceuta-crisis
+  members: [b-b378591e2234, b-eb0ab8f69ba6]
+- id: ceuta-sexual-assaults-prosecutors
+  storyline: ceuta-crisis
+  members: [b-73e186f791a2]
+- id: unification-church-han-jailed
+  members: [b-8e5ef74bd47d, b-341fac703447]
+- id: greece-israel-air-defence-deal
+  storyline: greece-israel-deal
+  members: [b-fc10bd046cfa, b-2d14afc54339]
+- id: why-greece-signed-israel-deal
+  storyline: greece-israel-deal
+  members: [b-a6b62e9f30e0]
+  notes: analysis
+- id: northern-cyprus-ferry-sinking
+  members: [b-2e80a96f5651, b-8c136bee2610]
+  notes: BBC leads on a family's missing children but reports the same sinking
+- id: tupac-murder-verdict
+  members: [b-74a7d55cfb9b, b-627e1276af35, b-80b4e4856474]
+  notes: same outlet; one is a presenter's account from inside court of the same verdict
+- id: japan-opposition-alliance-split
+  members: [b-1b8945e0f22f, b-2921aecfa0b4]
+  notes: same outlet and timestamp; brink-of-collapse and confirmed-split versions of one story
+- id: singapore-envoy-hk-interview
+  members: [b-b56b49d61664, b-943c95907c68]
+  notes: same outlet; two articles from one interview with Singapore's envoy to Hong Kong
+- id: hk-dog-dna-test-demand
+  members: [b-146bd69c4cff, b-4aa45cba28ee]
+- id: perak-teen-wedding-handouts
+  members: [b-273c436e8276, b-fb232998bf4a]
+- id: chen-ye-zhejiang-appointment
+  members: [b-3284930b117a, b-5d7558284a59]
+- id: hk-flu-vaccines-early
+  members: [b-1491d871f8a0, b-b9f4f82de7bd]
+- id: linda-lin-dai-grave-arrest
+  members: [b-4171052c9611, b-6205ad930b49]
+# --- other storylines -------------------------------------------------------------------
+- id: venezuela-oil-deal-implications
+  storyline: us-venezuela
+  members: [b-f8d457f43869]
+  notes: analysis
+- id: maduro-detention-photos
+  storyline: us-venezuela
+  members: [b-953d7feff764]
+- id: hk-robot-convenience-stores-open
+  storyline: hk-robot-stores
+  members: [b-f627ee36c9cd]
+- id: paul-chan-robotics-role
+  storyline: hk-robot-stores
+  members: [b-c69758a15f4a]
+  notes: financial secretary's remarks welcoming the opening
+- id: sarawak-haze-indonesian-fires
+  storyline: borneo-wildfires
+  members: [b-d71f2886d120]
+- id: orangutans-borneo-wildfires
+  storyline: borneo-wildfires
+  members: [b-df14f0a7ac2b]
+- id: clancy-jury-deadlocked
+  storyline: clancy-trial
+  members: [b-16cdd3fa38e6]
+- id: clancy-jury-options-explainer
+  storyline: clancy-trial
+  members: [b-abd132a03511]
+- id: wang-fuk-court-buyout
+  members: [b-addd1aea07e7]
+# --- newsworthy singletons with plausible confusers --------------------------------------
+- id: nablus-raid-two-dead
+  members: [b-e1760bfc275b]
+- id: gaza-hamas-security-chief-captured
+  members: [b-71daeccff3a1]
+- id: syria-israel-diplomacy-analysis
+  members: [b-34b9b881aadb]
+- id: shein-hk-listing
+  members: [b-cb96f9214eef]
+- id: france-fast-fashion-fees
+  members: [b-be707d39ec12]
+- id: djokovic-us-open-exit
+  members: [b-b161f4902a23]
+- id: venus-williams-us-open-exit
+  members: [b-845b11da02ec]
+- id: thea-frodin-us-open
+  members: [b-22e37dc2f296]
+- id: man-city-sign-elias
+  members: [b-9539542e03ca]
+- id: liverpool-sign-barcola
+  members: [b-ded0b669142e]
+- id: transfer-deadline-explainer
+  members: [b-1747cedb5f02]
+- id: kyiv-rail-workers-strike
+  members: [b-dae18e5ac7b8]
+- id: wheat-prices-black-sea-attacks
+  members: [b-1e922d22af1d]
+- id: nord-stream-ukraine-germany-ties
+  members: [b-e736e426c4d0]
+- id: hk-retail-sales-july
+  members: [b-001d118b7c58]
+- id: hk-prime-retail-leasing
+  members: [b-3bc2a014eabe]
+- id: hk-sg-fund-tax-breaks-property
+  members: [b-2c9f26cf3c93]
+- id: northern-metropolis-tech-land-tender
+  members: [b-adfab4405e35]
+- id: singapore-teen-social-media-limits
+  members: [b-d7843f303842]
+- id: hk-child-social-media-opinion
+  members: [b-3a099e9e9a4b]
+- id: singapore-asean-chair
+  members: [b-0c3ddc50ce30]
+- id: asean-big-tech-meta-payout
+  members: [b-e94661df4425]
+- id: ftc-amazon-ad-pricing-lawsuit
+  members: [b-441de8ad53cc]
+- id: space-force-commercial-data
+  members: [b-648015363b82]
+- id: army-microreactor-questions
+  members: [b-f3b71ecb151b]
+- id: trump-midterms-analysis
+  members: [b-01633e215d8e]
+- id: michigan-senate-vance-el-sayed
+  members: [b-6db8977f46a0]
+- id: scotus-white-house-ballroom
+  members: [b-67f094e48da9]
+- id: us-army-secretary-resigns
+  members: [b-702f04216b60]
+- id: trump-falklands-review
+  members: [b-9e0cfc5bd952]
+- id: trump-xi-summit-prediction-markets
+  members: [b-c0b087d22080]
+- id: swiss-rave-shooting
+  members: [b-87b9f3cb6950]
+- id: times-square-stabbing
+  members: [b-bc8f97a41f60]
+- id: san-diego-mosque-teen-charged
+  members: [b-0fde45500469]
+- id: indonesia-us-joint-drills
+  members: [b-65f4ee102293]
+- id: china-executive-spying-two-countries
+  members: [b-497d5f679661]
+- id: japan-hypersonic-plans-china
+  members: [b-c011c687ae36]
+- id: japan-inc-india-bet
+  members: [b-0db307cfbf6e]
+- id: us-export-controls-tungsten
+  members: [b-89daedf0d7d1]
+- id: niger-mutiny-russia-sahel
+  members: [b-d3c77700543f]
+- id: zambia-hichilema-sworn-in
+  members: [b-15cc51073b16]
+- id: norway-new-king-oath
+  members: [b-fce99d7832f3]
+- id: kazakhstan-vice-president
+  members: [b-8bc48cc8d8f8]
+- id: afghan-deportees-taliban
+  members: [b-94ec6692afd9]
+- id: somalia-piracy-surge
+  members: [b-03d5d59ea100]
+- id: tunisia-heat-power-cuts
+  members: [b-c731c8c49c6f]
+related_pairs:
+- [b-e1760bfc275b, b-71daeccff3a1, Israeli raids in Nablus and Gaza City - distinct]
+- [b-cb96f9214eef, b-be707d39ec12, Shein listing vs French fast-fashion levy]
+- [b-b161f4902a23, b-845b11da02ec, two different US Open first-round exits]
+- [b-845b11da02ec, b-22e37dc2f296, Williams sisters at US Open vs Thea Frodin feature]
+- [b-9539542e03ca, b-ded0b669142e, two different transfer signings]
+- [b-ded0b669142e, b-1747cedb5f02, one signing vs transfer-deadline explainer]
+- [b-dae18e5ac7b8, b-1e922d22af1d, Russian strike on Kyiv vs Black Sea grain-terminal attacks]
+- [b-001d118b7c58, b-3bc2a014eabe, HK retail sales data vs retail leasing]
+- [b-b56b49d61664, b-2c9f26cf3c93, HK-Singapore rivalry - envoy interview vs fund tax breaks]
+- [b-943c95907c68, b-adfab4405e35, Northern Metropolis - envoy remarks vs land tender]
+- [b-d7843f303842, b-3a099e9e9a4b, teen social media limits in Singapore vs HK opinion]
+- [b-0c3ddc50ce30, b-e94661df4425, both about Asean agenda - distinct]
+- [b-e94661df4425, b-441de8ad53cc, Meta settlement vs FTC suit against Amazon]
+- [b-648015363b82, b-f3b71ecb151b, two Breaking Defense US military programme stories]
+- [b-01633e215d8e, b-6db8977f46a0, midterms analysis vs Michigan Senate race]
+- [b-87b9f3cb6950, b-bc8f97a41f60, two unrelated fatal attacks]
+- [b-addd1aea07e7, b-6f0b91d7f589, Wang Fuk Court buy-out vs advertorial about the fire]
+- [b-fe085a8af44f, b-0187e007955f, two different Xi trips (Bishkek vs Cairo)]
+- [b-b0575b7c3aa1, b-45bc85da0ff1, Baghdad explosions not reported as part of the US-Iran exchange]
+- [b-c011c687ae36, b-ea1a6e5796a4, Japan military build-up vs digest mentioning Japan jets to India]
+uncertain_pairs:
+- [b-76d3144059e8, b-45bc85da0ff1, UAE interception may be the Iranian attack on the UAE in the exchange]
+- [b-bf8b8b7b2085, b-4320f84c3536, explainer may be a report of the same meeting]
+- [b-40456da07df1, b-757c54159001, same outlet and timestamp - may be one article retitled]
+- [b-40456da07df1, b-b18d96e6fc10, same-day rescue updates from the two sides of the border]
+- [b-fe085a8af44f, b-4926f53474c5, both frame the summit's opening]
+- [b-f627ee36c9cd, b-c69758a15f4a, Chan's remarks may be from the opening event itself]
+notes: ''

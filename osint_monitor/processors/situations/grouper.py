@@ -29,6 +29,7 @@ from osint_monitor.core.config import SituationsConfig, load_situations_config
 from osint_monitor.core.models import (
     DevelopmentSignature, SituationAssignment, SituationMatchReason, SituationProfile, SituationStatus,
 )
+from osint_monitor.processors.actors import ActorNormalizer
 from osint_monitor.processors.situations.canonical import ActorCanonicalizer
 
 logger = logging.getLogger(__name__)
@@ -50,10 +51,12 @@ def _cosine(a: Sequence[float], b: Sequence[float]) -> float:
 
 
 class SituationGrouper:
-    def __init__(self, config: SituationsConfig | None = None, arbiter: SituationArbiter | None = None):
+    def __init__(self, config: SituationsConfig | None = None, arbiter: SituationArbiter | None = None,
+                 normalizer: ActorNormalizer | None = None):
         self.config = config or load_situations_config()
         self.arbiter = arbiter
-        self.actors = ActorCanonicalizer(self.config.actor_aliases, self.config.actor_represents)
+        normalizer = normalizer or ActorNormalizer.load(self.config.actor_aliases, self.config.actor_represents)
+        self.actors = ActorCanonicalizer(normalizer=normalizer)
         for seed in self.config.situations:
             for name in seed.primary_actors:
                 self.actors.remember(name)
@@ -62,16 +65,30 @@ class SituationGrouper:
 
     def match(self, dev: DevelopmentSignature, situation: SituationProfile) -> tuple[float, list[R]] | None:
         """Evidence that ``dev`` belongs to ``situation``; None if it is not a candidate."""
+        e = self.explain(dev, situation)
+        return (e["score"], e["reasons"]) if e["candidate"] else None
+
+    def explain(self, dev: DevelopmentSignature, situation: SituationProfile) -> dict:
+        """Every number behind ``match``: shared actors, coverage, why a situation is not a
+        candidate, each signal's weight and value, and the score. Read-only diagnostics."""
         p = self.config.policy
         dev_actors = self.actors.keys(dev.actors)
         sit_actors = self.actors.keys(situation.primary_actors)
         shared = dev_actors & sit_actors
-        if not shared or situation.status == SituationStatus.CLOSED:
-            return None
-        coverage = len(shared) / len(sit_actors)
+        coverage = len(shared) / len(sit_actors) if sit_actors else 0.0
         min_coverage = p.min_actor_coverage if dev.actors_are_principal else p.fallback_min_actor_coverage
+        out = {"slug": situation.slug, "shared_actors": sorted(shared), "coverage": coverage,
+               "min_coverage": min_coverage, "candidate": False, "excluded": None,
+               "signals": [], "score": None, "reasons": []}
+        if situation.status == SituationStatus.CLOSED:
+            out["excluded"] = "closed"
+            return out
+        if not shared:
+            out["excluded"] = "no shared actors"
+            return out
         if coverage < min_coverage:
-            return None
+            out["excluded"] = f"actor coverage {coverage:.2f} < {min_coverage}"
+            return out
 
         signals = [(p.actor_weight, coverage, R.ACTOR_OVERLAP)]
         if dev.region and situation.region:
@@ -85,7 +102,9 @@ class SituationGrouper:
             signals.append((p.keyword_weight, float(hit), R.TOPIC_KEYWORDS))
 
         score = sum(w * s for w, s, _ in signals) / sum(w for w, _, _ in signals)
-        return score, [r for _, s, r in signals if s >= 0.5]
+        out.update(candidate=True, score=score, reasons=[r for _, s, r in signals if s >= 0.5],
+                   signals=[{"signal": r.value, "weight": w, "value": round(s, 3)} for w, s, r in signals])
+        return out
 
     def assign(self, dev: DevelopmentSignature, situations: Sequence[SituationProfile]) -> SituationAssignment:
         p = self.config.policy

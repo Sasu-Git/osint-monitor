@@ -13,6 +13,7 @@ from sqlalchemy.orm import Session, joinedload
 
 from osint_monitor.core.config import load_sources_config
 from osint_monitor.core.database import Event, EventEntity, EventItem, RawItem, Situation
+from osint_monitor.processors.actors import ActorNormalizer
 from osint_monitor.processors.clustering import LARGE_CLUSTER_WARNING, REGION_MIN_SCORE, region_scores
 from osint_monitor.processors.embeddings import blob_to_embedding
 
@@ -52,6 +53,9 @@ def describe_event(session: Session, event: Event, regions: dict | None = None) 
         "items": len(items),
         "sources": sorted({i.source.name for i in items if i.source}),
         "principal_actors": sorted({ee.entity.canonical_name for ee in links if ee.is_principal and ee.entity}),
+        # what situation grouping and ranking see: principals after actor normalisation
+        "principal_keys": sorted(ActorNormalizer.load().keys(
+            ee.entity.canonical_name for ee in links if ee.is_principal and ee.entity)),
         "entities": sorted({ee.entity.canonical_name for ee in links if ee.entity}),
         "region": event.region,
         "region_scores": dict(scores.most_common()),
@@ -87,7 +91,7 @@ def format_event(d: dict, full: bool = False) -> str:
              f"region={d['region']} situation={d['situation']}",
              f"    type={d['event_type']} domain={d['event_domain']} concreteness={d['concreteness']} "
              f"confidence={d['confidence_class']}",
-             f"    principals={d['principal_actors'] or '-'}",
+             f"    principals={d['principal_keys'] or '-'} (entities: {d['principal_actors'] or '-'})",
              f"    rank reasons={', '.join(d['rank_reasons'][:5]) or '-'}"]
     if d["warnings"]:
         lines.append(f"    WARNING: {'; '.join(d['warnings'])}")

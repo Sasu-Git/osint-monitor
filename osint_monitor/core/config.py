@@ -80,6 +80,8 @@ class TierConfig(BaseModel):
     hot_interval_seconds: int = 150    # 2.5 min
     warm_interval_seconds: int = 600   # 10 min
     cold_interval_seconds: int = 3600  # 60 min
+    # collector class name -> seconds one collect() may take before it stops and returns what it has
+    collector_budgets: dict[str, float] = Field(default_factory=dict)
 
 
 class SourcesFileConfig(BaseModel):
@@ -237,9 +239,46 @@ class SituationPolicy(BaseModel):
     centroid_developments: int = 20      # recent members averaged into the situation centroid
 
 
+class ActorsConfig(BaseModel):
+    """How entity mentions become canonical actors (config/actors.yaml)."""
+    non_actors: list[str] = Field(default_factory=list)          # topics the NER mislabels as actors
+    demonyms: dict[str, str] = Field(default_factory=dict)       # "Australian" -> country
+    aliases: dict[str, str] = Field(default_factory=dict)        # variant -> canonical name
+    represents: dict[str, str] = Field(default_factory=dict)     # person / body -> state it acts for
+
+
+class StructuredSourcesConfig(BaseModel):
+    source_types: list[str] = Field(default_factory=list)
+    sources: list[str] = Field(default_factory=list)
+
+
+class SeismicFusionConfig(BaseModel):
+    max_seconds_apart: float = 120
+    max_km_apart: float = 100
+    max_magnitude_difference: float = 0.5
+
+
+class DevelopmentSegmentationConfig(BaseModel):
+    """Split narrative clusters into Developments (processors/development_segmentation.py)."""
+    enabled: bool = False
+    analysis_headlines: bool = True                 # analysis/explainer headline vs report headline
+    min_headline_similarity: Optional[float] = 0.5  # cross-source headline-only cosine; None disables
+    disjoint_locations: bool = True                 # both name places, none shared
+
+
+class EventGroupingConfig(BaseModel):
+    """Narrative vs structured item grouping (config/event_grouping.yaml)."""
+    structured: StructuredSourcesConfig = Field(default_factory=StructuredSourcesConfig)
+    narrative_sources: list[str] = Field(default_factory=list)
+    strategies: dict[str, str] = Field(default_factory=dict)      # source name -> structured strategy
+    seismic: SeismicFusionConfig = Field(default_factory=SeismicFusionConfig)
+    development_segmentation: DevelopmentSegmentationConfig = Field(default_factory=DevelopmentSegmentationConfig)
+
+
 class SituationsConfig(BaseModel):
     """Situation seeds and grouping policy (config/situations.yaml)."""
     policy: SituationPolicy = Field(default_factory=SituationPolicy)
+    # extend config/actors.yaml (kept for older situations.yaml files)
     actor_aliases: dict[str, str] = Field(default_factory=dict)   # variant -> canonical name
     actor_represents: dict[str, str] = Field(default_factory=dict)   # person / body -> state it acts for
     situations: list[SituationSeed] = Field(default_factory=list)
@@ -262,7 +301,7 @@ class AppSettings(BaseSettings):
     anthropic_api_key: Optional[str] = None
     ollama_base_url: str = "http://localhost:11434"
     default_llm_provider: str = "openai"
-    # Development classifier: "rules" (deterministic, free) or "llm"
+    # Development classifier: "rules" (deterministic, free), "llm", or "hybrid" (LLM only for ambiguous cases)
     classifier_backend: str = "rules"
     classifier_llm_provider: Optional[str] = None   # falls back to default_llm_provider
     classifier_llm_model: Optional[str] = None      # falls back to the provider's default
@@ -335,6 +374,26 @@ def load_situations_config(path: Path | None = None) -> SituationsConfig:
     with open(path, encoding="utf-8") as f:
         raw = yaml.safe_load(f) or {}
     return SituationsConfig(**raw)
+
+
+def load_actors_config(path: Path | None = None) -> ActorsConfig:
+    """Load and validate actors.yaml (empty config if the file is missing)."""
+    path = path or CONFIG_DIR / "actors.yaml"
+    if not path.exists():
+        return ActorsConfig()
+    with open(path, encoding="utf-8") as f:
+        raw = yaml.safe_load(f) or {}
+    return ActorsConfig(**raw)
+
+
+def load_event_grouping_config(path: Path | None = None) -> EventGroupingConfig:
+    """Load and validate event_grouping.yaml (everything narrative if the file is missing)."""
+    path = path or CONFIG_DIR / "event_grouping.yaml"
+    if not path.exists():
+        return EventGroupingConfig()
+    with open(path, encoding="utf-8") as f:
+        raw = yaml.safe_load(f) or {}
+    return EventGroupingConfig(**raw)
 
 
 def load_prompt(name: str) -> str:

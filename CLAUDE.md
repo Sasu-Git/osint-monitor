@@ -122,8 +122,8 @@ The daemon runs three collection tiers at different intervals:
 
 | Tier | Interval | Sources | What it catches |
 |------|----------|---------|-----------------|
-| **Hot** | 2.5 min | ADS-B, BGP, DNS, currency, commodities, defense stocks, seismic | Pre-narrative signals — military aircraft, infrastructure disruptions, market moves |
-| **Warm** | 10 min | RSS feeds (11), Nitter/social (14), GDELT, travel advisories, OONI, flight routes, cables | News cycle — matches actual source update frequency |
+| **Hot** | 2.5 min | ADS-B, DNS, currency, commodities, defense stocks, seismic | Pre-narrative signals — military aircraft, infrastructure disruptions, market moves |
+| **Warm** | 10 min | RSS feeds (11), Nitter/social (14), GDELT, travel advisories, OONI, flight routes, cables, BGP | News cycle — matches actual source update frequency |
 | **Cold** | 60 min | FIRMS, USGS, ACLED, sanctions, NVD, UNHCR, IAEA, Wikipedia, SEC, finance bridge, Congress | Slow-updating datasets — rate-limited or heavy APIs |
 
 Each tier does **delta-only processing**: dedup immediately, NLP/embedding/clustering only on NEW items, fusion re-evaluates after any tier produces new data. The dashboard gets SSE push updates within seconds of new items landing.

@@ -31,6 +31,7 @@ event_type_weights:
   diplomatic_visit: 5
   negotiation: 5
   military_exercise: 5
+  security_incident: 5
   threat: 4
   significant_statement: 3
   warning: 3
