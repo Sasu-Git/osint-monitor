@@ -184,8 +184,8 @@ windows:
   items_file: windows/2026-09-27-live.items.jsonl
   labels_file: labels/2026-09-27-live.labels.yaml
   items_sha256: 7909656a6398bba461bb682c0b61ea2e852f0879be2bb7eec156d26b58bb994a
-  labels_sha256: null
-  frozen_at: '2026-09-28T13:25:25'
+  labels_sha256: 447b88c7a3e72271880a089665158c44f6e134ae35adb990660920688c48e90e
+  frozen_at: '2026-09-28T13:28:54'
   stats:
     items: 173
     sources: 6
