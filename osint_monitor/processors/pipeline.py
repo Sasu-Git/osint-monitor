@@ -421,6 +421,7 @@ def run_post_processing(session: Session, quiet: bool = False, offline: bool = F
         from osint_monitor.processors.clustering import cluster_recent_items, persist_clusters
         clusters = cluster_recent_items(session)
         stats["clusters_found"] = len(clusters)
+        stats["structured_clusters"] = sum(1 for c in clusters if c.get("kind") == "structured")
         if clusters:
             created = persist_clusters(session, clusters)
             stats["events_created"] = created
@@ -660,7 +661,8 @@ def run_pipeline(db_url: str | None = None) -> dict:
         print(f"  Duplicates: {stats['duplicates']}")
         print(f"  Entities: {stats['entities_extracted']}")
         print(f"  Clusters found: {stats.get('clusters_found', 0)} "
-              f"(new events: {stats.get('events_created', 0)})")
+              f"({stats.get('structured_clusters', 0)} from sensor/record feeds; "
+              f"new events: {stats.get('events_created', 0)})")
         print(f"  Geocoded: {stats.get('geocoded', 0)}")
         print(f"  I&W elevated: {stats.get('iw_elevated', 0)}")
         print(f"  Fusion correlations: {stats.get('fusion_correlations', 0)}")

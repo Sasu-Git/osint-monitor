@@ -245,6 +245,25 @@ class ActorsConfig(BaseModel):
     represents: dict[str, str] = Field(default_factory=dict)     # person / body -> state it acts for
 
 
+class StructuredSourcesConfig(BaseModel):
+    source_types: list[str] = Field(default_factory=list)
+    sources: list[str] = Field(default_factory=list)
+
+
+class SeismicFusionConfig(BaseModel):
+    max_seconds_apart: float = 120
+    max_km_apart: float = 100
+    max_magnitude_difference: float = 0.5
+
+
+class EventGroupingConfig(BaseModel):
+    """Narrative vs structured item grouping (config/event_grouping.yaml)."""
+    structured: StructuredSourcesConfig = Field(default_factory=StructuredSourcesConfig)
+    narrative_sources: list[str] = Field(default_factory=list)
+    strategies: dict[str, str] = Field(default_factory=dict)      # source name -> structured strategy
+    seismic: SeismicFusionConfig = Field(default_factory=SeismicFusionConfig)
+
+
 class SituationsConfig(BaseModel):
     """Situation seeds and grouping policy (config/situations.yaml)."""
     policy: SituationPolicy = Field(default_factory=SituationPolicy)
@@ -354,6 +373,16 @@ def load_actors_config(path: Path | None = None) -> ActorsConfig:
     with open(path, encoding="utf-8") as f:
         raw = yaml.safe_load(f) or {}
     return ActorsConfig(**raw)
+
+
+def load_event_grouping_config(path: Path | None = None) -> EventGroupingConfig:
+    """Load and validate event_grouping.yaml (everything narrative if the file is missing)."""
+    path = path or CONFIG_DIR / "event_grouping.yaml"
+    if not path.exists():
+        return EventGroupingConfig()
+    with open(path, encoding="utf-8") as f:
+        raw = yaml.safe_load(f) or {}
+    return EventGroupingConfig(**raw)
 
 
 def load_prompt(name: str) -> str:

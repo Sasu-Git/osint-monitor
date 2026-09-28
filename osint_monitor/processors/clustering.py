@@ -12,12 +12,13 @@ import numpy as np
 from rapidfuzz import fuzz
 from sqlalchemy.orm import Session, joinedload
 
-from osint_monitor.core.config import load_sources_config
+from osint_monitor.core.config import load_event_grouping_config, load_sources_config
 from osint_monitor.core.database import (
     Event, EventEntity, EventItem, ItemEntity, RawItem, Source,
 )
 from osint_monitor.core.models import ExtractedEntity, EntityType, EntityRole
 from osint_monitor.processors.embeddings import blob_to_embedding
+from osint_monitor.processors.event_grouping import NARRATIVE, STRUCTURED, group_structured, partition
 from osint_monitor.processors.scoring import compute_composite_severity
 
 logger = logging.getLogger(__name__)
@@ -41,33 +42,38 @@ def cluster_recent_items(
     window_hours: int = DEFAULT_WINDOW_HOURS,
     min_cluster_size: int = MIN_CLUSTER_SIZE,
 ) -> list[dict]:
-    """Cluster recent items into events using HDBSCAN.
+    """Group recent items into events: narrative items by HDBSCAN + link graph on
+    embeddings, structured (sensor / record) items by record identity
+    (see ``event_grouping``).
 
-    Returns list of cluster dicts: {item_ids, label, summary, severity, region}.
+    Returns list of cluster dicts: {item_ids, label, summary, severity, region, kind}.
     """
     cutoff = datetime.utcnow() - timedelta(hours=window_hours)
-    items = (
+    recent = (
         session.query(RawItem)
         .options(joinedload(RawItem.source))
-        .filter(
-            RawItem.fetched_at >= cutoff,
-            RawItem.embedding.isnot(None),
-        )
+        .filter(RawItem.fetched_at >= cutoff)
         .all()
     )
+    recent = [i for i in recent if i.published_at is None or i.published_at >= cutoff]
+    narrative, structured = partition(recent, load_event_grouping_config())
+    structured_groups = group_structured(structured, min_size=min_cluster_size)
+    narrative_groups = _cluster_narrative([i for i in narrative if i.embedding is not None], min_cluster_size)
+    logger.info(f"Event grouping: {len(narrative_groups)} narrative clusters from {len(narrative)} items, "
+                f"{len(structured_groups)} structured groups from {len(structured)} records")
+    groups = {n: ids for n, ids in enumerate(narrative_groups)}
+    kinds = {n: NARRATIVE for n in groups}
+    for ids in structured_groups:
+        kinds[len(groups)] = STRUCTURED
+        groups[len(groups)] = ids
+    clusters = _build_cluster_summaries(session, groups)
+    for c in clusters:
+        c["kind"] = kinds[c["label"]]
+    return clusters
 
-    # Temporal filtering: exclude items whose published_at is clearly old
-    filtered_items = []
-    for item in items:
-        if item.published_at is not None and item.published_at < cutoff:
-            logger.debug(
-                f"Skipping item {item.id}: published_at {item.published_at} "
-                f"is older than {window_hours}h window"
-            )
-            continue
-        filtered_items.append(item)
-    items = filtered_items
 
+def _cluster_narrative(items: list[RawItem], min_cluster_size: int) -> list[list[int]]:
+    """Semantic clustering of prose items (news, statements, analysis)."""
     if len(items) < min_cluster_size:
         logger.info(f"Only {len(items)} items with embeddings, skipping clustering")
         return []
@@ -128,7 +134,7 @@ def cluster_recent_items(
     logger.info(f"Found {len(refined)} clusters from {len(items)} items "
                 f"({len(clusters)} HDBSCAN candidates, {len(rescued)} recovered from noise)")
 
-    return _build_cluster_summaries(session, refined)
+    return list(refined.values())
 
 
 class _ClusterMember:
