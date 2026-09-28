@@ -1,7 +1,7 @@
 # Segmentation compatibility: geographic containment and headline override
 
 Branch `feat/segmentation-compatibility`, from main after merging `feat/clustering-benchmark` and
-`feat/development-identity`. Code and config are frozen at 3923f64:
+`feat/development-identity`. Code and config are frozen at 936d05c (3923f64 before the rebase onto the reconciled main; same tree):
 
 - `osint_monitor/processors/geography.py` and `config/geography.yaml`;
 - `development_segmentation` in config/event_grouping.yaml, with
