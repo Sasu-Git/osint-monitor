@@ -258,12 +258,21 @@ class SeismicFusionConfig(BaseModel):
     max_magnitude_difference: float = 0.5
 
 
+class DevelopmentSegmentationConfig(BaseModel):
+    """Split narrative clusters into Developments (processors/development_segmentation.py)."""
+    enabled: bool = False
+    analysis_headlines: bool = True                 # analysis/explainer headline vs report headline
+    min_headline_similarity: Optional[float] = 0.5  # cross-source headline-only cosine; None disables
+    disjoint_locations: bool = True                 # both name places, none shared
+
+
 class EventGroupingConfig(BaseModel):
     """Narrative vs structured item grouping (config/event_grouping.yaml)."""
     structured: StructuredSourcesConfig = Field(default_factory=StructuredSourcesConfig)
     narrative_sources: list[str] = Field(default_factory=list)
     strategies: dict[str, str] = Field(default_factory=dict)      # source name -> structured strategy
     seismic: SeismicFusionConfig = Field(default_factory=SeismicFusionConfig)
+    development_segmentation: DevelopmentSegmentationConfig = Field(default_factory=DevelopmentSegmentationConfig)
 
 
 class SituationsConfig(BaseModel):

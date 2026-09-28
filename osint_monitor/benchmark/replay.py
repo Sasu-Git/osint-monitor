@@ -47,12 +47,16 @@ class ReplayResult:
     features: dict[str, ItemFeatures]                       # benchmark id -> features (surviving items)
     clusters: list[list[str]]                               # benchmark ids per production cluster
     deduplicated: list[str]                                 # benchmark ids the pipeline dropped as duplicates
+    segmented: list[list[str]] | None = None                # clusters after development segmentation, if replayed
+    commentary: dict[str, int] = field(default_factory=dict)  # analysis item -> index into segmented
 
     def cluster_of(self) -> dict[str, int]:
         return {i: n for n, members in enumerate(self.clusters) for i in members}
 
 
-def replay_window(items: list[BenchmarkItem]) -> ReplayResult:
+def replay_window(items: list[BenchmarkItem], segmentation=None) -> ReplayResult:
+    """``segmentation``: a DevelopmentSegmentationConfig; when given, the production clusters are
+    also passed through development segmentation (``ReplayResult.segmented``)."""
     os.environ.setdefault("HF_HUB_OFFLINE", "1")           # cached models only, never the network
     from osint_monitor.core.database import Base, Entity, ItemEntity, RawItem
     from osint_monitor.core.models import ClusterContext, ContextItem, RawItemModel
@@ -77,6 +81,12 @@ def replay_window(items: list[BenchmarkItem]) -> ReplayResult:
             stored = {r.external_id: r for r in session.query(RawItem).filter(RawItem.external_id.isnot(None))}
             by_raw_id = {r.id: bid for bid, r in stored.items()}
             groups = cluster_narrative([r for r in stored.values() if r.embedding is not None])
+            segmented, commentary = None, {}
+            if segmentation is not None:
+                from osint_monitor.processors.development_segmentation import segment_groups
+                seg_groups, seg_commentary = segment_groups(session, groups, segmentation)
+                segmented = [sorted(by_raw_id[i] for i in g) for g in seg_groups]
+                commentary = {by_raw_id[i]: n for n, ids in seg_commentary.items() for i in ids}
 
             normalizer, nlp, classifier = ActorNormalizer.load(), get_nlp(), RuleBasedClassifier()
             entity_rows = (session.query(ItemEntity.item_id, Entity.canonical_name, Entity.entity_type)
@@ -105,7 +115,8 @@ def replay_window(items: list[BenchmarkItem]) -> ReplayResult:
                 features[bid] = f
             clusters = sorted((sorted(by_raw_id[i] for i in g) for g in groups), key=lambda g: g[0])
             return ReplayResult(features=features, clusters=clusters,
-                                deduplicated=sorted(set(source) - set(stored)))
+                                deduplicated=sorted(set(source) - set(stored)),
+                                segmented=segmented, commentary=commentary)
         finally:
             session.close()
             engine.dispose()

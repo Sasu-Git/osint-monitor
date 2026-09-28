@@ -288,6 +288,25 @@ def test_development_runs_the_sweep_and_holdout_needs_a_frozen_rule(tmp_path, co
     assert len(runs) == 1 and runs[0]["rule"] == PROPOSED.name and "held" in runs[0]["windows"]
 
 
+def test_segmentation_mode_compares_before_after_and_logs_the_holdout_run(tmp_path, corpus):
+    make_window(tmp_path, corpus, labels_for(corpus), Split.HOLDOUT, "held")
+    base = fake_replay(corpus, [[0, 1, 2]])
+    seen = {}
+
+    def replay(items, segmentation=None):
+        seen["config"] = segmentation
+        result = base(items)
+        result.segmented = [[corpus[0].id, corpus[1].id]]            # the dinner split off
+        return result
+
+    held = evaluation.evaluate_split(Split.HOLDOUT, root=tmp_path, replay=replay, segmentation=True)
+    assert seen["config"].enabled                                    # evaluated even though production is off
+    assert held["current"]["pairs"]["related_linked"] == 2 and held["segmented"]["pairs"]["related_linked"] == 0
+    assert held["segmented"]["pairs"]["same_linked"] == 1 and "With development segmentation" in evaluation.format_report(held)
+    [run] = evaluation.previous_holdout_runs(tmp_path)               # no frozen link rule needed; config and code hashed
+    assert run["rule"] == "development_segmentation" and run["code_sha256"] and run["segmentation"]["enabled"]
+
+
 def test_unfrozen_windows_are_not_evaluated(tmp_path, corpus):
     make_window(tmp_path, corpus, labels_for(corpus), freeze=False)
     with pytest.raises(BenchmarkError, match="not frozen"):
