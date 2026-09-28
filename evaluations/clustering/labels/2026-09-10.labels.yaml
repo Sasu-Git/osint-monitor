@@ -1,0 +1,267 @@
+# Gold labels for 2026-09-10. See osint_monitor/benchmark/format.py for the format.
+# Criteria: a development is one concrete occurrence; responses, follow-ups and analysis
+# of it are separate developments in the same storyline (related_but_distinct).
+# Hold-out window: labelled blind from the label sheet only (title + excerpt), with no
+# similarity scores, clusterer output or replay seen.
+window: '2026-09-10'
+labelled_by: "claude subagent (blind, from label-sheet only)"
+labelled_at: '2026-09-25T14:03:21'
+developments:
+# --- Philippines ferry fire (MV June Aster, off Coron, Palawan) --------------------------
+- id: philippines-ferry-fire
+  storyline: philippines-ferry-fire
+  members: [b-bd3aa3e6530f, b-f74d648ecc35, b-489c792c634d]
+  notes: first report, coast guard drone video of the aftermath, and death toll update of the same fire
+- id: ferry-fire-survivor-account
+  storyline: philippines-ferry-fire
+  members: [b-6b83ffa896bb]
+  notes: survivor interview feature (see uncertain pair)
+# --- China cargo ship fire (Qingdao) -------------------------------------------------------
+- id: qingdao-cargo-ship-fire
+  members: [b-cb3c4d86185b, b-bafa52b6a583]
+# --- Republican midterms convention (Texas) -------------------------------------------------
+- id: trump-convention-5000-pledge
+  storyline: gop-midterm-convention
+  members: [b-92a3a7b5a11e]
+  notes: the convention speech pledge itself
+- id: convention-key-takeaways
+  storyline: gop-midterm-convention
+  members: [b-fa0a8cb54a37]
+  notes: analysis of the speech (see uncertain pair)
+- id: is-5000-pledge-legal
+  storyline: gop-midterm-convention
+  members: [b-0dbc60c6d24a]
+  notes: explainer video
+- id: convention-oil-prices-video
+  storyline: gop-midterm-convention
+  members: [b-0d82b76615a6]
+- id: has-trump-won-over-voters
+  storyline: gop-midterm-convention
+  members: [b-7aae99a41f95]
+- id: republicans-divided-economy-rnc
+  storyline: gop-midterm-convention
+  members: [b-80630ed6082f]
+  notes: pundit debate as the convention begins
+- id: trump-loyalty-test
+  storyline: gop-midterm-convention
+  members: [b-76d8ccf92df7]
+  notes: opinion/show piece, loosely tied
+# --- 9/11 25th anniversary -----------------------------------------------------------------
+- id: sept11-memorials-nationwide
+  storyline: sept11-25th-anniversary
+  members: [b-d978e0532a2a, b-284274889fb4]
+  notes: general reports of the day's commemorations across NY, VA and PA
+- id: former-presidents-nyc-ceremony
+  storyline: sept11-25th-anniversary
+  members: [b-42508faa01a1]
+- id: trump-pentagon-ceremony
+  storyline: sept11-25th-anniversary
+  members: [b-a8259968fc37]
+- id: us-leaders-remembrance-roundup
+  storyline: sept11-25th-anniversary
+  members: [b-a7e486edee82]
+  notes: roundup of what leaders said, including Trump's Iran-war parallel
+- id: chretien-gander-message
+  storyline: sept11-25th-anniversary
+  members: [b-e84ec6521bf8]
+- id: twin-towers-drone-display
+  storyline: sept11-25th-anniversary
+  members: [b-793322b03484]
+- id: americans-remember-vox-pop
+  storyline: sept11-25th-anniversary
+  members: [b-ba0ceb584e9a]
+- id: mamdani-memorial-row
+  storyline: sept11-25th-anniversary
+  members: [b-48dfa0d72ec0]
+# --- Houthi offensive in Yemen ------------------------------------------------------------
+- id: houthis-advance-southern-red-sea-coast
+  storyline: houthi-yemen-offensive
+  members: [b-f24084648a2d]
+- id: houthis-seize-entire-red-sea-coast
+  storyline: houthi-yemen-offensive
+  members: [b-3500b9609ad6]
+  notes: completion of the coastal seizure a day later; kept apart from the 09-10 advance report (see uncertain pair)
+- id: bbc-lightning-houthi-advance-analysis
+  storyline: houthi-yemen-offensive
+  members: [b-6d7cbf0cdf75]
+  notes: analysis, but reports the capture (see uncertain pair)
+- id: houthis-declare-red-sea-safe-except-saudi
+  storyline: houthi-yemen-offensive
+  members: [b-a3bdc5815028]
+- id: yemen-fighting-46000-displaced
+  storyline: houthi-yemen-offensive
+  members: [b-ee4cef7b5537]
+- id: yemen-fronts-explainer
+  storyline: houthi-yemen-offensive
+  members: [b-ef187bb8e5d5]
+- id: houthis-testing-saudi-restraint
+  storyline: houthi-yemen-offensive
+  members: [b-d50b240dfc48]
+  notes: opinion
+- id: can-houthis-close-red-sea
+  storyline: houthi-yemen-offensive
+  members: [b-84bb28326dbb]
+- id: houthi-advance-trade-oil-impact
+  storyline: houthi-yemen-offensive
+  members: [b-284d9c92dd68]
+- id: houthi-advance-more-than-red-sea
+  storyline: houthi-yemen-offensive
+  members: [b-64cfd866400e]
+  notes: opinion
+# --- Iran war -----------------------------------------------------------------------------
+- id: iran-war-live-sirik
+  storyline: iran-war
+  members: [b-e9e75a56ed8a]
+  notes: live blog; lead is projectiles hitting Sirik
+- id: iran-hormuz-talks-gulf-states-oman
+  storyline: iran-war
+  members: [b-ec0a6773c3a8]
+- id: trump-iran-war-until-after-elections
+  storyline: iran-war
+  members: [b-515ef676c1f6]
+- id: saudi-east-west-pipeline-shut
+  storyline: iran-war
+  members: [b-9dc47df74487]
+  notes: attacker not named in the excerpt
+- id: iaea-iran-noncompliance
+  storyline: iran-war
+  members: [b-7cb510214e5a]
+- id: air-missile-defence-lessons-iran
+  storyline: iran-war
+  members: [b-b8bf18219967]
+# --- Russia-Ukraine war ------------------------------------------------------------------
+- id: russia-jet-drones-outpace-defences
+  storyline: russia-ukraine-war
+  members: [b-8ea8918e30da]
+- id: russia-new-shelling-tactics
+  storyline: russia-ukraine-war
+  members: [b-169e122c72d4]
+- id: ukraine-arctic-gas-strike
+  storyline: russia-ukraine-war
+  members: [b-c7022b8efec2]
+- id: russia-attacks-after-witkoff-kushner-visit
+  storyline: russia-ukraine-war
+  members: [b-f3d51bd4cfc3]
+# --- Nepal floods -------------------------------------------------------------------------
+- id: nepal-floods-indian-workers
+  storyline: nepal-floods
+  members: [b-d340e7c23e50]
+- id: roma-nepal-shirt
+  storyline: nepal-floods
+  members: [b-e5bcfe18bd6f]
+# --- US-China AI ---------------------------------------------------------------------------
+- id: xi-visit-prep-ai-fight
+  members: [b-f6f180e2ac3f]
+- id: chinese-ai-firms-shun-us-commission
+  members: [b-a253d2d66be9]
+# --- singletons with plausible confusers -------------------------------------------------
+- id: ukrainian-armor-saigak-german-partner
+  members: [b-c729525385ef]
+- id: fire-point-freyja-program
+  members: [b-f3fd6e8082e5]
+- id: canada-ukraine-joint-defence-production
+  members: [b-fa4218621522]
+- id: asd-europe-vigilance-call
+  members: [b-06944a4d5274]
+- id: pentagon-europe-pullback-oped
+  members: [b-bb4e81c121e4]
+- id: army-ifpc-inc2-selection
+  members: [b-0864ce10c355]
+- id: patriot-industrial-base-sponsored
+  members: [b-ba331a937b6b]
+- id: golden-dome-propulsion-sponsored
+  members: [b-d8481b3abe77]
+- id: navy-base-nuclear-microreactor
+  members: [b-5bbfb2899e9c]
+- id: pentagon-border-testbed
+  members: [b-f58db40bdc0d]
+- id: dod-offensive-cyber-strategy
+  members: [b-6b73063e729e]
+- id: army-ngc2-i-corps
+  members: [b-72a352065240]
+- id: darc-radar-texas-site
+  members: [b-60eb6a855241]
+- id: afa-2026-preview
+  members: [b-b431a4af72c9]
+- id: netherlands-globaleye-purchase
+  members: [b-565092cb7531]
+- id: japan-south-korea-naval-buildup
+  members: [b-948bf4483584]
+- id: idf-new-ai-drones-branch
+  members: [b-c05d5cfe7957]
+- id: netanyahu-victimhood-opinion
+  members: [b-7d44c2ec47ba]
+- id: west-bank-checkpoints-economy
+  members: [b-aa551de5716b]
+- id: israel-bars-british-mps-opinion
+  members: [b-9d5df4d00bd9]
+- id: uk-pro-palestine-debanking
+  members: [b-9bf8467d75aa]
+- id: trump-ireland-visit-gaza-protests
+  members: [b-aade68afb0f4]
+- id: ryanair-dublin-wingtip-strike
+  members: [b-cf01079abe03]
+- id: uganda-quits-invictus-games
+  members: [b-774dff871fcb]
+- id: tooro-kingdom-succession-rift
+  members: [b-22be77f7f2ef]
+- id: giggs-man-utd-scouted-mbappe
+  members: [b-0f5ec91b2bef]
+- id: mbappe-ai-dictator-memes
+  members: [b-610b180782ca]
+- id: fff-withdraws-infantino-support
+  members: [b-fb4fd64fbbee]
+- id: morocco-pm-world-cup-final-row
+  members: [b-b566067aaf18]
+- id: us-august-inflation-petrol
+  members: [b-d5ba077417af]
+- id: census-immigrant-exclusion-proposal
+  members: [b-6e620a4ffaa5]
+- id: states-sue-endangered-species-rollback
+  members: [b-fb12623fc608]
+- id: ice-attacks-protesters-probe-calls
+  members: [b-6ce130247cb8]
+- id: ceuta-spy-agency-warning
+  members: [b-a9b0c290daea]
+- id: nigeria-suspends-south-africa-visits
+  members: [b-65b3c1d045a7]
+- id: algeria-cuts-ties-uae
+  members: [b-1fee6ff7f66c]
+- id: gambia-blackout-protests
+  members: [b-8acb0d9560aa]
+- id: sudan-tawila-shelter
+  members: [b-ecde0210befb]
+- id: drc-ebola-seventh-province
+  members: [b-101cfb4e71da]
+- id: us-strikes-ecuadorian-fishermen
+  members: [b-32709261212f]
+- id: us-counter-terrorism-assessment-gap
+  members: [b-807e640cc726]
+related_pairs:
+- [b-cb3c4d86185b, b-bd3aa3e6530f, two deadly ship fires in Asia the same day, distinct]
+- [b-8ea8918e30da, b-169e122c72d4, both on new Russian attack tactics, distinct pieces]
+- [b-c729525385ef, b-f3fd6e8082e5, Ukrainian defence firms seeking European partners, distinct]
+- [b-f3fd6e8082e5, b-fa4218621522, Ukraine defence-industry cooperation, distinct]
+- [b-0864ce10c355, b-ba331a937b6b, both US air-and-missile defence procurement, distinct]
+- [b-d8481b3abe77, b-ba331a937b6b, both sponsored missile-defence pieces, distinct]
+- [b-5bbfb2899e9c, b-f58db40bdc0d, Pentagon site selections for tech programs, distinct]
+- [b-f6f180e2ac3f, b-a253d2d66be9, US-China AI tensions, distinct occurrences]
+- [b-9d5df4d00bd9, b-9bf8467d75aa, both about UK pro-Palestine voices being silenced, distinct]
+- [b-7d44c2ec47ba, b-aa551de5716b, Israel opinion/feature pieces, distinct]
+- [b-774dff871fcb, b-22be77f7f2ef, both Uganda, unrelated]
+- [b-0f5ec91b2bef, b-610b180782ca, both Mbappe, unrelated stories]
+- [b-fb4fd64fbbee, b-b566067aaf18, football governance rows, distinct]
+- [b-aade68afb0f4, b-cf01079abe03, both Ireland, unrelated]
+- [b-d5ba077417af, b-0d82b76615a6, both about rising oil/petrol prices, distinct]
+- [b-9dc47df74487, b-d50b240dfc48, attack on Saudi pipeline vs Houthi-Saudi opinion; attacker unstated]
+- [b-e84ec6521bf8, b-aade68afb0f4, both allies rebuking the US, unrelated]
+uncertain_pairs:
+- [b-6b83ffa896bb, b-bd3aa3e6530f, survivor account is a feature but reports the same fire]
+- [b-92a3a7b5a11e, b-fa0a8cb54a37, takeaways piece reports the same convention speech]
+- [b-515ef676c1f6, b-92a3a7b5a11e, Iran-war/election remarks may have been made in the convention speech]
+- [b-f24084648a2d, b-3500b9609ad6, may be one continuing coastal advance rather than two milestones]
+- [b-3500b9609ad6, b-6d7cbf0cdf75, BBC analysis leads on the same capture of the coast]
+- [b-42508faa01a1, b-284274889fb4, AJ general memorial report covers the NYC ceremony]
+- [b-a8259968fc37, b-a7e486edee82, roundup's Trump remarks are likely from the Pentagon ceremony]
+- [b-e9e75a56ed8a, b-ec0a6773c3a8, live blog excerpt reports Tehran's readiness for regional dialogue]
+notes: ''

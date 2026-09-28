@@ -55,14 +55,57 @@ def main():
 
     # inspect: debugging view of events (clusters, principals, regions, ranking)
     sub_inspect = subparsers.add_parser("inspect", help="Show event clusters with diagnostics")
-    sub_inspect.add_argument("target", nargs="?", choices=["events", "situations"], default="events",
-                             help="events (default), or situations: what situation grouping decides "
-                                  "for each event, and why")
+    sub_inspect.add_argument("target", nargs="?", choices=list(INSPECT_TARGETS), default="events",
+                             help="events (default): event clusters; clustering: recall diagnostics for narrative "
+                                  "clustering; situations: what situation grouping decides for each event, and why; "
+                                  "clustering-benchmark: replay frozen benchmark windows (needs --development or --holdout)")
     sub_inspect.add_argument("--event", type=int, default=None, help="Show one event in full")
     sub_inspect.add_argument("--sort", choices=["rank", "size", "recent"], default="rank")
     sub_inspect.add_argument("--limit", type=int, default=10)
     sub_inspect.add_argument("--full", action="store_true", help="Include entities, region scores and titles")
     sub_inspect.add_argument("--warnings-only", action="store_true", help="Only events with diagnostic warnings")
+    sub_inspect.add_argument("--window-hours", type=int, default=48, help="clustering: item window")
+    sub_inspect.add_argument("--now", default=None,
+                             help="clustering: evaluate as of this UTC time (ISO); default: latest fetch in the DB")
+    sub_inspect.add_argument("--sample", type=int, default=40, help="clustering: noise items in the review sample")
+    sub_inspect.add_argument("--seed", type=int, default=20260925, help="clustering: sample seed")
+    sub_inspect.add_argument("--export", default=None, help="clustering: write a review file to label")
+    sub_inspect.add_argument("--review", default=None, help="clustering: score a labelled review file")
+    split = sub_inspect.add_mutually_exclusive_group()
+    split.add_argument("--development", action="store_true",
+                       help="clustering-benchmark: development windows (metrics, rule sweep, actor-first probe)")
+    split.add_argument("--holdout", action="store_true",
+                       help="clustering-benchmark: hold-out windows with the frozen rule only -- run once")
+    sub_inspect.add_argument("--window", action="append", default=None,
+                             help="clustering-benchmark: limit to this window id (repeatable)")
+    sub_inspect.add_argument("--out", default=None, help="clustering-benchmark: write the full report as JSON")
+
+    # benchmark: build, label and freeze clustering benchmark windows (evaluations/clustering/)
+    sub_bench = subparsers.add_parser("benchmark", help="Build and freeze clustering benchmark windows")
+    bench = sub_bench.add_subparsers(dest="bench_command")
+    for name, help_text in (("import-db", "window from a local SQLite database (read-only)"),
+                            ("import-wayback", "window from Wayback Machine snapshots of the RSS feeds")):
+        b = bench.add_parser(name, help=help_text)
+        b.add_argument("--id", required=True, help="window id, e.g. 2026-08-15")
+        b.add_argument("--start", required=True, help="UTC start (ISO), inclusive")
+        b.add_argument("--end", required=True, help="UTC end (ISO), exclusive")
+        b.add_argument("--split", choices=["development", "holdout"], required=True)
+        if name == "import-db":
+            b.add_argument("--db", required=True, help="path to the SQLite database (never modified)")
+        else:
+            b.add_argument("--feeds", nargs="*", default=None, help="feed names from sources.yaml (default: all)")
+            b.add_argument("--max-snapshots", type=int, default=8, help="snapshots per feed, spread over the window")
+    b = bench.add_parser("freeze", help="record SHA-256 of a window's items (and labels)")
+    b.add_argument("--window", required=True)
+    b.add_argument("--items-only", action="store_true", help="freeze items before labelling")
+    b.add_argument("--refreeze", action="store_true", help="deliberately accept changed files")
+    b = bench.add_parser("label-sheet", help="print a window's items in time order for blind labelling")
+    b.add_argument("--window", required=True)
+    bench.add_parser("list", help="list benchmark windows")
+    bench.add_parser("rules", help="list the offline rule variants")
+    b = bench.add_parser("freeze-rule", help="freeze the candidate rule chosen on development windows")
+    b.add_argument("--variant", required=True, help="variant name, as printed by `benchmark rules`")
+    b.add_argument("--rationale", required=True)
 
     # smoke: end-to-end check on a temporary database
     sub_smoke = subparsers.add_parser("smoke", help="Run the local pipeline on fixtures in a temporary database")
@@ -106,6 +149,9 @@ def _setup_error_message(e: Exception) -> str | None:
         return f"{e}\nSet it in .env (see .env.example) or choose another provider with --provider."
     if isinstance(e, MigrationError):
         return f"Database migration failed.\n{e}"
+    from osint_monitor.benchmark.format import BenchmarkError
+    if isinstance(e, BenchmarkError):
+        return f"Benchmark: {e}"
     if isinstance(e, (ValidationError, yaml.YAMLError)):
         return f"Invalid configuration file:\n{e}"
     return None
@@ -141,6 +187,8 @@ def _dispatch(args):
         _cmd_export()
     elif args.command == "inspect":
         _cmd_inspect(args)
+    elif args.command == "benchmark":
+        _cmd_benchmark(args)
     elif args.command == "smoke":
         from osint_monitor.smoke import main as smoke_main
         smoke_main(["--keep"] if args.keep else [])
@@ -329,9 +377,36 @@ def _cmd_inspect_situations(args):
     session.close()
 
 
+def _cmd_inspect_clustering(args):
+    import json
+    from datetime import datetime
+
+    from sqlalchemy import func
+
+    from osint_monitor.core.database import RawItem, get_session, init_db
+    from osint_monitor.processors import cluster_eval
+
+    if args.review:
+        print(cluster_eval.format_scores(cluster_eval.score_review(cluster_eval.load_review(args.review))))
+        return
+    init_db()
+    session = get_session()
+    # default to the latest fetch so a saved database always evaluates the same way
+    now = datetime.fromisoformat(args.now) if args.now else session.query(func.max(RawItem.fetched_at)).scalar()
+    report = cluster_eval.clustering_report(session, window_hours=args.window_hours, now=now)
+    print(cluster_eval.format_report(report, limit=args.limit))
+    if args.export:
+        sample = cluster_eval.sample_noise(report, n=args.sample, seed=args.seed)
+        review = cluster_eval.review_file(report, sample, db=str(session.bind.url), seed=args.seed)
+        with open(args.export, "w", encoding="utf-8") as f:
+            json.dump(review, f, indent=2, ensure_ascii=False)
+        print(f"\nWrote {len(sample)} noise items to {args.export} for review")
+    session.close()
+
+
 def _cmd_inspect(args):
-    if args.target == "situations":
-        _cmd_inspect_situations(args)
+    if args.target != "events":
+        INSPECT_TARGETS[args.target](args)
         return
     from osint_monitor.core.config import load_sources_config
     from osint_monitor.core.database import Event, get_session, init_db
@@ -360,6 +435,85 @@ def _cmd_inspect(args):
             break
     session.close()
 
+
+
+def _cmd_inspect_clustering_benchmark(args):
+    import json
+
+    from osint_monitor.benchmark import evaluation
+    from osint_monitor.benchmark.format import Split
+
+    if not (args.development or args.holdout):
+        print("Choose --development (explore, compare rules) or --holdout (frozen rule, once).")
+        return
+    if args.holdout:
+        print("!" * 78 + f"\n{evaluation.HOLDOUT_WARNING}\n" + "!" * 78)
+        runs = evaluation.previous_holdout_runs()
+        if runs:
+            print(f"Previous hold-out runs: {len(runs)} (last {runs[-1]['ran_at']}, rule {runs[-1]['rule']!r})")
+    report = evaluation.evaluate_split(Split.HOLDOUT if args.holdout else Split.DEVELOPMENT, window_ids=args.window)
+    print(evaluation.format_report(report))
+    if args.out:
+        with open(args.out, "w", encoding="utf-8") as f:
+            json.dump(report, f, indent=1, ensure_ascii=False, default=str)
+        print(f"\nFull report written to {args.out}")
+
+
+def _cmd_benchmark(args):
+    from datetime import datetime
+
+    from osint_monitor.benchmark import format as bf
+    from osint_monitor.benchmark import importers, rules
+
+    cmd = args.bench_command
+    if cmd in ("import-db", "import-wayback"):
+        start, end = datetime.fromisoformat(args.start), datetime.fromisoformat(args.end)
+        if cmd == "import-db":
+            items = importers.from_database(args.db, start, end)
+            source = bf.WindowSource(kind="local_db", reference=str(args.db))
+        else:
+            feeds = importers.configured_feeds(args.feeds)
+            from osint_monitor.core.config import DATA_DIR
+            fetch = importers.cached(importers.http_fetch, DATA_DIR / "eval" / "wayback-cache")
+            items, report = importers.from_wayback(feeds, start, end, fetch=fetch,
+                                                   max_snapshots_per_feed=args.max_snapshots)
+            source = bf.WindowSource(kind="wayback", reference=", ".join(n for n, _ in feeds),
+                                     notes="; ".join(f"{k}: {v['items']} items / {v['snapshots']} snapshots"
+                                                     for k, v in report.items()))
+        entry = importers.add_window(bf.load_manifest(), args.id, bf.Split(args.split), start, end, source, items)
+        print(f"Window {entry.id}: {entry.stats['items']} narrative items from {entry.stats['sources']} sources "
+              f"{entry.stats['per_source']}" + (f"; overlaps {entry.overlaps}" if entry.overlaps else ""))
+        print(f"Next: python main.py benchmark freeze --window {entry.id} --items-only")
+    elif cmd == "freeze":
+        e = bf.freeze_window(args.window, items_only=args.items_only, refreeze=args.refreeze)
+        print(f"Frozen {e.id}: items {e.items_sha256[:12]}" + (f", labels {e.labels_sha256[:12]}" if e.labels_sha256 else ""))
+    elif cmd == "label-sheet":
+        print(bf.label_sheet(args.window))
+    elif cmd == "list":
+        for w in bf.load_manifest().windows:
+            state = "labels frozen" if w.labels_sha256 else "items frozen" if w.items_sha256 else "not frozen"
+            print(f"{w.id:14} {w.split.value:11} {w.start:%Y-%m-%d %H:%M} .. {w.end:%Y-%m-%d %H:%M}  "
+                  f"{w.stats.get('items', '?'):>4} items {w.stats.get('sources', '?'):>2} sources  {state}"
+                  + (f"  overlaps {w.overlaps}" if w.overlaps else ""))
+    elif cmd == "rules":
+        for r in rules.variants():
+            print(r.name)
+    elif cmd == "freeze-rule":
+        match = [r for r in rules.variants() if r.name == args.variant]
+        if not match:
+            raise bf.BenchmarkError(f"no variant {args.variant!r}; see `python main.py benchmark rules`")
+        print(f"Frozen rule written to {rules.freeze_rule(match[0], args.rationale)}")
+    else:
+        print("Choose a benchmark subcommand; see `python main.py benchmark --help`.")
+
+
+# inspect targets other than "events" (the default, handled in _cmd_inspect)
+INSPECT_TARGETS = {
+    "events": None,
+    "clustering": _cmd_inspect_clustering,
+    "situations": _cmd_inspect_situations,
+    "clustering-benchmark": _cmd_inspect_clustering_benchmark,
+}
 
 def _cmd_export():
     import json

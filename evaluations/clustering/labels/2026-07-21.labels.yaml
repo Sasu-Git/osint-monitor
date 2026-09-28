@@ -1,0 +1,386 @@
+# Gold labels for 2026-07-21. See osint_monitor/benchmark/format.py for the format.
+# Criteria: a development is one concrete occurrence; responses, follow-ups and analysis
+# of it are separate developments in the same storyline (related_but_distinct).
+# Blind window: labelled from the label sheet only (title + excerpt), without similarity
+# scores, replay or clusterer output.
+window: '2026-07-21'
+labelled_by: "claude subagent (blind, from label-sheet only)"
+labelled_at: '2026-09-25T14:03:13'
+developments:
+# --- US-Iran war -------------------------------------------------------------------------
+- id: us-strikes-iran-night-10
+  storyline: iran-war
+  members: [b-62b5183ea3f8, b-e1198629fdf4, b-b0ca74bb19a9]
+  notes: 10th night of US strikes (night of 20-21 July); BBC also reports Iran hitting two ships in Hormuz
+- id: iran-war-live-0721
+  storyline: iran-war
+  members: [b-81db31c2d4e6]
+  notes: live blog leading on Iranian attacks on Gulf states / tankers on fire (see uncertain pair)
+- id: us-strikes-iran-night-11
+  storyline: iran-war
+  members: [b-5b33b184a58a, b-5b08b2c38cf2]
+- id: us-strikes-iran-night-12
+  storyline: iran-war
+  members: [b-38f50f83d742]
+  notes: 22 July evening strikes, with Iranian negotiator's warning
+- id: iran-war-live-0722
+  storyline: iran-war
+  members: [b-c87961b30b40]
+  notes: live blog, mixed lead (new attacks + Hegseth cost); left as its own singleton
+- id: hegseth-senate-hearing-war-cost
+  storyline: iran-war
+  members: [b-3571bce42329, b-395d3f820687, b-95434c91044d, b-8ec024eff40d]
+  notes: one hearing - $37.5bn cost, $70bn budget request, heated exchange with Michigan senator
+- id: trump-iran-pay-big-price
+  storyline: iran-war
+  members: [b-de28788c6db5]
+  notes: 22 July remark before the dignified transfer; distinct from the 21 July warning in the BBC strike reports
+- id: trump-threatens-bridges-power-plants
+  storyline: iran-war
+  members: [b-674a6a002077]
+- id: kuwait-electricity-rationing
+  storyline: iran-war
+  members: [b-7922869d5450]
+- id: minab-school-funerals
+  storyline: iran-war
+  members: [b-81e5df80a62b]
+- id: iran-judiciary-executions
+  storyline: iran-war
+  members: [b-529762b294c9]
+- id: iranians-struggle-feature
+  storyline: iran-war
+  members: [b-6b15c833bad6]
+- id: us-iran-mediation-analysis
+  storyline: iran-war
+  members: [b-1ffec8f335f5]
+- id: griffiths-diplomacy-interview
+  storyline: iran-war
+  members: [b-33bad98a3cc6]
+- id: iranian-missile-precision-analysis
+  storyline: iran-war
+  members: [b-10a8ee30237a]
+- id: china-lessons-us-sea-drone-strike
+  storyline: iran-war
+  members: [b-c89b58ed0c1a]
+- id: china-fuel-export-curbs
+  storyline: iran-war
+  members: [b-32cb911f958c]
+- id: wotr-iran-war-us-relations
+  storyline: iran-war
+  members: [b-ec25c31da891]
+# --- Houthis vs Saudi Arabia ------------------------------------------------------------
+- id: houthi-saudi-blockade-threat-oil
+  storyline: houthi-saudi
+  members: [b-021b9bce1db2]
+- id: saudi-strategic-patience-analysis
+  storyline: houthi-saudi
+  members: [b-dd82ab31ad1b]
+- id: houthis-claim-saudi-tanker-attack
+  storyline: houthi-saudi
+  members: [b-e3df64410436]
+# --- US-Saudi nuclear -------------------------------------------------------------------
+- id: us-saudi-nuclear-deal-proposed
+  storyline: us-saudi-nuclear
+  members: [b-bb8a4bdb40b2]
+  notes: explainer on reported proposal, before announcement
+- id: us-saudi-nuclear-deal-announced
+  storyline: us-saudi-nuclear
+  members: [b-ce6238b76bbf]
+# --- US-Canada tariffs ------------------------------------------------------------------
+- id: trump-50pct-canada-tariffs
+  storyline: us-canada-trade
+  members: [b-4ba904c24113, b-47db441a84f6, b-af2a9e7d6cc2]
+- id: carney-trump-agree-intensify-talks
+  storyline: us-canada-trade
+  members: [b-d35ef03408f7]
+  notes: see uncertain pair with the BBC tariff report that also mentions intensified talks
+- id: canadian-provinces-alcohol-bans
+  storyline: us-canada-trade
+  members: [b-bd7392e4786d]
+# --- Guyana ferry -----------------------------------------------------------------------
+- id: guyana-ferry-capsize
+  members: [b-9e80dce58977, b-c3b9eddbaf37, b-d4433b417d3c, b-2ff6a009d68b, b-5be9f7683f7d]
+  notes: MV Barima disaster; rising death toll (27/41/53) reported across outlets and days
+# --- Ukraine command crisis -------------------------------------------------------------
+- id: ukraine-defence-protests-explainer
+  storyline: ukraine-command-crisis
+  members: [b-178fcf70c4fc]
+- id: ukraine-row-over-syrskyi
+  storyline: ukraine-command-crisis
+  members: [b-9a69f1f72d26]
+  notes: protesters' demands before the dismissal
+- id: zelensky-sacks-syrskyi
+  storyline: ukraine-command-crisis
+  members: [b-aaf72e674062, b-c52fb953e8d0, b-fedecca8d86a, b-fab308955227]
+- id: generals-fired-explainer
+  storyline: ukraine-command-crisis
+  members: [b-e6086efaf459]
+- id: new-ukraine-chief-pledges-retaliation
+  storyline: ukraine-command-crisis
+  members: [b-0fb5d48c8680]
+- id: zaporizhzhia-daytime-strike
+  storyline: russia-ukraine-war
+  members: [b-5e911c25ca0d]
+- id: wotr-ukraine-drones
+  storyline: russia-ukraine-war
+  members: [b-6c7746fd49c2]
+# --- Lebanon ----------------------------------------------------------------------------
+- id: lebanese-army-pilot-zone-deployment
+  storyline: lebanon-israel
+  members: [b-5fc09afe1aab, b-f165ed008474, b-0ced7df2158a]
+- id: lebanese-await-return-pilot-zone
+  storyline: lebanon-israel
+  members: [b-15ae5ec72881]
+  notes: day-2 report of the army entering Zawtar al-Gharbiya, resident angle (see uncertain pair)
+- id: pilot-zone-resident-video
+  storyline: lebanon-israel
+  members: [b-a3c300200d70]
+- id: ex-biden-official-pilot-zones
+  storyline: lebanon-israel
+  members: [b-cb2e2ae13dd0]
+- id: aoun-trump-white-house-meeting
+  storyline: lebanon-israel
+  members: [b-8923af621115, b-b1ea91a960d9, b-c5a71f7037e7]
+  notes: Aoun's meeting with Trump; Hezbollah-talks remark and pledge to help Lebanon made there
+- id: trump-syria-hezbollah-analysis
+  storyline: lebanon-israel
+  members: [b-867d9fa0c7a9]
+# --- Gaza / Hamas -----------------------------------------------------------------------
+- id: gaza-strikes-kill-12
+  storyline: gaza
+  members: [b-d606d2f5062a]
+- id: gaza-strike-vehicle-two-killed
+  storyline: gaza
+  members: [b-af75fece0b43]
+- id: palestine-weekly
+  storyline: gaza
+  members: [b-feba7e1ed823]
+- id: gaza-journalists-evacuation-protest
+  storyline: gaza
+  members: [b-97d7561fc356]
+- id: israel-military-names-civilian-areas
+  storyline: gaza
+  members: [b-25b17a4fd30e]
+- id: al-hayya-leadership-analysis
+  storyline: hamas-leadership
+  members: [b-f29d9c411172]
+- id: al-hayya-ceasefire-speech
+  storyline: hamas-leadership
+  members: [b-7333ee4d6e49]
+- id: netherlands-settlement-trade-sanctions
+  members: [b-8eb5b8472569]
+- id: mamdani-netanyahu-statement
+  members: [b-d41c64c0caa9]
+# --- India ------------------------------------------------------------------------------
+- id: india-cockroach-protest-continues
+  storyline: india-education-protests
+  members: [b-beb0af28f7b1]
+- id: india-education-protest-explainer
+  storyline: india-education-protests
+  members: [b-8e4a910b6bf1]
+- id: rahul-gandhi-detained
+  storyline: india-education-protests
+  members: [b-d901b34fecfe]
+- id: rahul-gandhi-speaks-after-release
+  storyline: india-education-protests
+  members: [b-814093b496fc]
+- id: food-donations-student-protesters
+  storyline: india-education-protests
+  members: [b-dd681788dab6]
+- id: sikkim-tunnel-collapse
+  members: [b-7b1cf295db46, b-bb9784028631]
+- id: india-goat-football-tournament
+  members: [b-da013ddc60f3, b-ac448d6e4d9e]
+  notes: same outlet, same feature on one tournament
+# --- disasters and weather ---------------------------------------------------------------
+- id: afghanistan-flash-floods
+  members: [b-5eb742fe70dd, b-2d3c6f0fe5dd]
+- id: spain-wildfire-near-madrid
+  storyline: spain-wildfires
+  members: [b-d2611c6ad32f]
+- id: spain-wildfire-drone-footage
+  storyline: spain-wildfires
+  members: [b-0dd4f6d6a6c1]
+  notes: 30,000 ha burned; cannot tell whether it is the Madrid fire (see uncertain pair)
+- id: chile-floods-catastrophe
+  members: [b-3b87787a6e1e]
+- id: bordeaux-firefighters-die
+  members: [b-e47f0b88f0d1]
+- id: venezuela-quake-rubble-search
+  members: [b-0af25b0e5319]
+- id: mauritania-refugee-boat
+  members: [b-bd01820e78cc]
+# --- France social media ban ------------------------------------------------------------
+- id: france-under-15-social-media-ban
+  members: [b-926b4f65fa41, b-1357cdcf3b68, b-27d42d3e006c]
+# --- Nicaragua --------------------------------------------------------------------------
+- id: ortega-abolishes-elections
+  storyline: nicaragua-elections
+  members: [b-62bcb3b7be3e]
+- id: un-rights-chief-condemns-nicaragua
+  storyline: nicaragua-elections
+  members: [b-5676f002d19b]
+# --- OpenAI rogue agent -----------------------------------------------------------------
+- id: openai-agent-hacked-hugging-face
+  storyline: openai-rogue-agent
+  members: [b-5c1a33913b31]
+- id: openai-rogue-explainer
+  storyline: openai-rogue-agent
+  members: [b-ec3aa1181edc]
+# --- US-China ---------------------------------------------------------------------------
+- id: trump-softens-tone-before-rubio-wang
+  storyline: rubio-wang-talks
+  members: [b-43228994e143]
+- id: rubio-wang-asean-meeting
+  storyline: rubio-wang-talks
+  members: [b-d6c327594c40]
+- id: us-drone-import-ban-proposal
+  members: [b-823645e77e20]
+- id: senate-hearing-china-science
+  members: [b-438595d36348]
+- id: us-chinese-ai-gap-analysis
+  members: [b-2919dabd474e]
+- id: kimi-k3-launch-analysis
+  members: [b-414c8d18c9f1]
+- id: qiushi-engine-ranking
+  members: [b-e707474ed35d]
+- id: zhipu-shares-surge
+  members: [b-a74561c1b458]
+# --- South China Sea / region -----------------------------------------------------------
+- id: second-thomas-shoal-clash-protest
+  members: [b-712287ab87f3]
+- id: chinese-loans-philippines
+  members: [b-a388fce6c27a]
+- id: philippines-new-afp-chief
+  members: [b-fd1b2d6d4080]
+- id: us-pressure-maritime-flashpoints
+  members: [b-d0ea50cb6af0]
+- id: china-russia-drills-japan-eez
+  members: [b-eb2ea2d0171b]
+- id: japan-southeast-asia-sea-lanes
+  members: [b-cec8a98ec025]
+- id: solomons-us-coast-guard-deal
+  members: [b-269b11e325a4]
+- id: taiwan-opens-to-starlink
+  members: [b-7356d1d9c052]
+# --- EU-China ---------------------------------------------------------------------------
+- id: eu-lawmakers-china-visit
+  members: [b-1ef468273829]
+- id: eu-china-threat-posture-opinion
+  members: [b-d3ebc25aae70]
+# --- UK ---------------------------------------------------------------------------------
+- id: burnham-energy-bills
+  members: [b-90cafdf3d395]
+- id: miliband-streeting-records
+  members: [b-a0bc85ac1fe0]
+- id: widdecombe-murder-court
+  members: [b-8147beb04716]
+# --- Hong Kong crime --------------------------------------------------------------------
+- id: hk-racecourse-gambling-arrests
+  members: [b-835fad0c6e8c]
+- id: hk-world-cup-gambling-crackdown
+  members: [b-5d95d7b59388]
+- id: hk-bus-crash-tuen-mun
+  members: [b-271abd00c6a6]
+- id: hk-woman-killed-hokkaido-crash
+  members: [b-fbc2bfcdba1b]
+# --- US domestic ------------------------------------------------------------------------
+- id: manhattan-federal-building-fire
+  members: [b-b5d7ddf05683]
+- id: houston-justice-for-lorenzo-protest
+  members: [b-0f7e00303242]
+- id: judge-blocks-work-permit-stripping
+  members: [b-767c967f49d1]
+- id: eeoc-diversity-data-proposal
+  members: [b-f096f0e12b14]
+- id: cuba-ties-report
+  members: [b-5b97447c55a4]
+- id: maduro-trial-date
+  members: [b-3120c7088226]
+- id: cyclospora-outbreak
+  members: [b-85ff71d24385]
+- id: fda-peptides-review
+  members: [b-660abbc74923]
+- id: tate-brothers-miami-court
+  members: [b-f2a8760b4820]
+- id: instagram-tennessee-trial
+  members: [b-03503cde15aa]
+# --- health / aid -----------------------------------------------------------------------
+- id: unaids-us-funding-cuts-report
+  members: [b-a2f54eb3987e]
+- id: elon-other-gaza-hiv
+  members: [b-94a2c3bea605]
+- id: drc-ebola-deaths
+  members: [b-5357efcb3876]
+- id: sri-lanka-dengue-drones
+  members: [b-56320134f06a]
+# --- Europe other -----------------------------------------------------------------------
+- id: bologna-protests-death-in-custody
+  members: [b-df2107d502cb]
+- id: acropolis-stabbing
+  members: [b-48d2d3664a3e]
+- id: stade-shooting-suspect-suicide
+  members: [b-ecdd3db6cc1b]
+- id: moldova-new-pm
+  members: [b-824212d4eca6]
+- id: ozel-new-party
+  members: [b-22674a628640]
+- id: epstein-recruiter-found-dead
+  members: [b-745f4289811d]
+# --- Africa / Asia other ----------------------------------------------------------------
+- id: ghana-wontumi-sentenced
+  members: [b-bd6c3591896f]
+- id: nigeria-police-bribe-arrest
+  members: [b-212cf03ae67d]
+- id: mali-armed-groups-analysis
+  members: [b-d7dc1f8a7b03]
+- id: burkina-muslim-community-rift
+  members: [b-8d7be287d5cf]
+- id: morocco-algeria-rivalry
+  members: [b-377ab8dcfe7f]
+- id: kashmir-election-preview
+  members: [b-72e17c39c83e]
+- id: south-korea-defence-minister-desertion
+  members: [b-09ab248a69e7]
+- id: anwar-coalition-warning
+  members: [b-3aa65f0f0838]
+- id: malaysia-cybercrime-bill
+  members: [b-0cd03a069750]
+- id: indonesia-free-meals-budget-cut
+  members: [b-96ac6e0060db]
+- id: indonesia-china-ai-body
+  members: [b-6427fd715c81]
+- id: skyroot-orbital-launch
+  members: [b-c65974bd9a4b]
+related_pairs:
+- [b-835fad0c6e8c, b-5d95d7b59388, two separate Hong Kong police illegal-gambling operations with different arrest counts]
+- [b-271abd00c6a6, b-fbc2bfcdba1b, both road crashes involving Hong Kong people, different places]
+- [b-712287ab87f3, b-a388fce6c27a, China-Philippines maritime row vs loan data, distinct]
+- [b-712287ab87f3, b-d0ea50cb6af0, shoal clash vs analysis of US pressure on flashpoints]
+- [b-fd1b2d6d4080, b-712287ab87f3, Philippine military appointment vs shoal clash]
+- [b-eb2ea2d0171b, b-cec8a98ec025, both Japan maritime security, distinct]
+- [b-414c8d18c9f1, b-2919dabd474e, Kimi K3 launch analysis vs US-China AI gap analysis]
+- [b-e707474ed35d, b-414c8d18c9f1, two different Chinese AI systems]
+- [b-a74561c1b458, b-414c8d18c9f1, Zhipu shares vs Kimi K3, different Chinese AI firms]
+- [b-1ef468273829, b-d3ebc25aae70, EU parliament delegation visit vs opinion on EU position paper]
+- [b-a2f54eb3987e, b-94a2c3bea605, both about aid cuts driving HIV crises, distinct pieces]
+- [b-90cafdf3d395, b-a0bc85ac1fe0, both about the new UK government, distinct]
+- [b-b5d7ddf05683, b-0f7e00303242, both ICE-related unrest, different cities and events]
+- [b-3120c7088226, b-0af25b0e5319, both Venezuela, unrelated]
+- [b-bb8a4bdb40b2, b-021b9bce1db2, both Saudi Arabia, nuclear deal vs Houthi blockade]
+- [b-d606d2f5062a, b-5fc09afe1aab, Israeli military activity in Gaza vs Lebanon withdrawal]
+- [b-e47f0b88f0d1, b-d2611c6ad32f, French airport blaze vs Spanish wildfire]
+- [b-5eb742fe70dd, b-3b87787a6e1e, floods in Afghanistan vs Chile]
+- [b-9e80dce58977, b-bd01820e78cc, Guyana ferry vs Mauritania refugee boat, both maritime disasters]
+- [b-7b1cf295db46, b-5eb742fe70dd, both South Asia disasters with rescuers and missing people]
+- [b-62bcb3b7be3e, b-72e17c39c83e, both about elections, unrelated]
+- [b-a388fce6c27a, b-5471b124233b, both Chinese economic reach abroad, distinct]
+uncertain_pairs:
+- [b-81db31c2d4e6, b-e1198629fdf4, live blog leads on Iranian tanker attacks that BBC reports inside the night-10 strike story]
+- [b-8ec024eff40d, b-5b08b2c38cf2, headline on Hegseth's $70bn request but excerpt reports the 11th night of strikes]
+- [b-c87961b30b40, b-3571bce42329, live blog headline includes Hegseth's $37.5bn figure]
+- [b-47db441a84f6, b-d35ef03408f7, BBC tariff report already carries Carney's vow to intensify talks; may be the same statement]
+- [b-15ae5ec72881, b-0ced7df2158a, day-2 report of the army entering the pilot zone may be the same deployment]
+- [b-d2611c6ad32f, b-0dd4f6d6a6c1, drone footage may show the fire near Madrid]
+- [b-d901b34fecfe, b-beb0af28f7b1, Gandhi's protest may be part of the same student protest movement day]
+notes: ''
