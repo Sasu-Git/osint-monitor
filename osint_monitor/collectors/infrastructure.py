@@ -9,6 +9,7 @@ from __future__ import annotations
 import logging
 import os
 import socket
+import threading
 import time
 from datetime import datetime, timedelta, timezone
 from typing import Any
@@ -21,6 +22,29 @@ from osint_monitor.core.models import RawItemModel
 logger = logging.getLogger(__name__)
 
 _TIMEOUT = 20
+# (connect, read) seconds. requests has no total deadline; the collector time budget
+# (config/sources.yaml tiers.collector_budgets) bounds the whole collect() call.
+_HTTP_TIMEOUT = (5, 15)
+_DNS_DEADLINE = 5.0          # socket.getaddrinfo has no timeout of its own
+_HEAD_TIMEOUT = (5, 10)
+
+
+def resolve_with_deadline(host: str, deadline: float = _DNS_DEADLINE) -> list[str] | None:
+    """IPv4 addresses for ``host``; [] if it does not resolve; None if the resolver did not
+    answer within ``deadline`` seconds. The lookup runs in a daemon thread, so a hung system
+    resolver costs one parked thread instead of blocking the collector."""
+    result: dict[str, Any] = {}
+
+    def lookup():
+        try:
+            result["ips"] = sorted({a[4][0] for a in socket.getaddrinfo(host, 443, socket.AF_INET)})
+        except OSError:
+            result["ips"] = []
+
+    worker = threading.Thread(target=lookup, name=f"dns-{host}", daemon=True)
+    worker.start()
+    worker.join(deadline)
+    return result.get("ips") if not worker.is_alive() else None
 
 
 # ───────────────────────────────────────────────────────────────────────────
@@ -68,7 +92,7 @@ class BGPMonitor(BaseCollector):
         try:
             resp = requests.get(RIPE_ROUTING_STATUS, params={
                 "resource": asn,
-            }, timeout=_TIMEOUT)
+            }, timeout=_HTTP_TIMEOUT)
             resp.raise_for_status()
             data = resp.json().get("data", {})
             return {
@@ -89,7 +113,7 @@ class BGPMonitor(BaseCollector):
                 "resource": asn,
                 "starttime": start.strftime("%Y-%m-%dT%H:%M"),
                 "endtime": now.strftime("%Y-%m-%dT%H:%M"),
-            }, timeout=_TIMEOUT)
+            }, timeout=_HTTP_TIMEOUT)
             resp.raise_for_status()
             data = resp.json().get("data", {})
             updates = data.get("updates", [])
@@ -111,12 +135,17 @@ class BGPMonitor(BaseCollector):
         items: list[RawItemModel] = []
 
         for asn, info in self.watched_asns.items():
-            self.current_target = f"AS{asn}"  # read by core.watchdog when a check hangs
+            if self.over_budget():
+                logger.warning("BGP monitor: time budget spent before %s; remaining ASNs skipped", asn)
+                break
+            self.current_target = asn          # read by core.watchdog when a check hangs
             name = info["name"]
             country = info["country"]
 
             # Check routing status
             status = self._check_routing_status(asn)
+            if self.over_budget():
+                break
             updates = self._check_bgp_updates(asn, hours_back=6)
 
             if status is None and updates["total_updates"] == 0:
@@ -229,15 +258,11 @@ class DNSHealthMonitor(BaseCollector):
 
     @staticmethod
     def _check_dns(domain: str) -> dict:
-        """Check if a domain resolves via DNS."""
-        try:
-            ips = socket.getaddrinfo(domain, 443, socket.AF_INET)
-            ip_list = list({addr[4][0] for addr in ips})
-            return {"resolves": True, "ips": ip_list}
-        except socket.gaierror:
-            return {"resolves": False, "ips": []}
-        except Exception:
-            return {"resolves": False, "ips": []}
+        """Check if a domain resolves via DNS, within _DNS_DEADLINE seconds."""
+        ips = resolve_with_deadline(domain)
+        if ips is None:
+            return {"resolves": False, "ips": [], "timed_out": True}
+        return {"resolves": bool(ips), "ips": ips}
 
     # Domains with known SSL certificate issues (e.g. Chinese government sites
     # with cert mismatches).  We still monitor them -- detecting when they go
@@ -263,7 +288,7 @@ class DNSHealthMonitor(BaseCollector):
                     urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
                 resp = requests.head(
                     f"{scheme}://{domain}",
-                    timeout=10,
+                    timeout=_HEAD_TIMEOUT,
                     allow_redirects=True,
                     headers={"User-Agent": "osint-monitor/1.0"},
                     verify=not skip_ssl,
@@ -281,10 +306,19 @@ class DNSHealthMonitor(BaseCollector):
     def collect(self) -> list[RawItemModel]:
         items: list[RawItemModel] = []
         down_count = 0
+        timed_out = 0
 
         for domain, info in self.domains.items():
+            if self.over_budget():
+                logger.warning("DNS monitor: time budget spent before %s; remaining domains skipped", domain)
+                break
             self.current_target = domain      # read by core.watchdog when a check hangs
             dns = self._check_dns(domain)
+            if dns.get("timed_out"):
+                # our resolver did not answer: no evidence either way about the domain
+                timed_out += 1
+                logger.info("DNS monitor: lookup for %s timed out after %.0fs; skipped", domain, _DNS_DEADLINE)
+                continue
             http = self._check_http(domain) if dns["resolves"] else {
                 "reachable": False, "status_code": 0, "response_time_ms": 0, "scheme": ""
             }
@@ -323,7 +357,9 @@ class DNSHealthMonitor(BaseCollector):
 
             time.sleep(0.5)  # Don't hammer
 
-        print(f"  [ok] {self.name}: {len(self.domains)} domains checked, {down_count} unreachable")
+        print(f"  [ok] {self.name}: {len(self.domains)} domains checked, {down_count} unreachable"
+              + (f", {timed_out} lookups timed out" if timed_out else "")
+              + (" (stopped early: time budget)" if self.budget_exceeded else ""))
         return items[:self.max_items]
 
 

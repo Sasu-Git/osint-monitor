@@ -1,8 +1,8 @@
 """Processing pipeline orchestrator: collect -> dedup -> NLP -> score -> store.
 
 Supports tiered execution for near-realtime delta processing:
-  - hot  (2.5 min): ADS-B, BGP, DNS, currency, commodities, defense stocks, seismic
-  - warm (10 min):   RSS, Nitter, travel advisories, OONI, flight routes, GDELT, cables
+  - hot  (2.5 min): ADS-B, DNS, currency, commodities, defense stocks, seismic
+  - warm (10 min):   RSS, Nitter, travel advisories, OONI, flight routes, GDELT, cables, BGP
   - cold (60 min):   FIRMS, USGS, ACLED, sanctions, NVD, UNHCR, IAEA, Wikipedia, SEC, finance
 """
 
@@ -40,7 +40,6 @@ _processing_lock = threading.Lock()
 COLLECTOR_TIERS: dict[str, str] = {
     # Hot: lightweight real-time checks, pre-narrative signals
     "ADSBTrackCollector": "hot",
-    "BGPMonitor": "hot",
     "DNSHealthMonitor": "hot",
     "CurrencyCollector": "hot",
     "CommodityMonitor": "hot",
@@ -54,6 +53,7 @@ COLLECTOR_TIERS: dict[str, str] = {
     "FlightRouteMonitor": "warm",
     "GDELTCollector": "warm",
     "SubmarineCableMonitor": "warm",
+    "BGPMonitor": "warm",              # ~160 s of RIPE queries: longer than the hot interval
     # Cold: everything else (slow-updating, rate-limited, heavy)
     "NASAFIRMSCollector": "cold",
     "USGSSeismicCollector": "cold",
@@ -232,6 +232,10 @@ def build_collectors() -> list[BaseCollector]:
     except ImportError:
         logger.debug("Browser collector not available (playwright not installed)")
 
+    budgets = config.tiers.collector_budgets
+    for c in collectors:
+        if type(c).__name__ in budgets:
+            c.time_budget_seconds = budgets[type(c).__name__]
     return collectors
 
 
@@ -277,7 +281,12 @@ def _run_single_collector(collector: BaseCollector, failures: list[str] | None =
     from osint_monitor.core.watchdog import track_collector
     try:
         with track_collector(collector):
+            if hasattr(collector, "start_budget"):
+                collector.start_budget()
             items = collector.collect()
+        if getattr(collector, "budget_exceeded", False):
+            logger.warning(f"Collector {collector.name} stopped early: {collector.time_budget_seconds:.0f}s "
+                           f"budget spent, returning {len(items)} items (partial)")
         for item in items:
             if item.source_type == "rss" and collector.source_type != "rss":
                 item.source_type = collector.source_type
