@@ -25,61 +25,10 @@ policy:
   dormant_after_days: 14
   centroid_developments: 20
 
-# Variant -> canonical actor name, applied after the entity resolver's own normalisation.
-actor_aliases:
-  Iranian: Iran
-  Russian: Russia
-  Kremlin: Russia
-  Ukrainian: Ukraine
-  American: United States
-  White House: United States
-  Chinese: China
-  Israeli: Israel
-  IDF: Israel
-  Palestinian: Palestine
-  Gazan: Gaza
-  European Commission: European Union
-  Brussels: European Union
-  EU: European Union
-  Sudanese: Sudan
-  RSF: Rapid Support Forces
-
-# Person / body -> the state it acts for. Situations are country-level, so "Xi met Trump"
-# involves China and the United States. Keep to principals who reliably act for a state.
-actor_represents:
-  Donald Trump: United States
-  Trump: United States
-  White House: United States
-  Marco Rubio: United States
-  Rubio: United States
-  Pete Hegseth: United States
-  Hegseth: United States
-  Pentagon: United States
-  Department of Defense: United States
-  State Department: United States
-  U.S. Central Command: United States
-  CENTCOM: United States
-  US Navy: United States
-  Xi Jinping: China
-  Xi: China
-  Wang Yi: China
-  PLA: China
-  Vladimir Putin: Russia
-  Putin: Russia
-  Sergei Lavrov: Russia
-  Lavrov: Russia
-  Volodymyr Zelenskyy: Ukraine
-  Zelenskyy: Ukraine
-  Zelensky: Ukraine
-  Ali Khamenei: Iran
-  Khamenei: Iran
-  Masoud Pezeshkian: Iran
-  Pezeshkian: Iran
-  Abbas Araghchi: Iran
-  Araghchi: Iran
-  IRGC: Iran
-  Benjamin Netanyahu: Israel
-  Netanyahu: Israel
+# Actor names are normalised by config/actors.yaml (demonyms, aliases, person -> state).
+# Entries here extend it for this file only; prefer editing actors.yaml.
+actor_aliases: {}
+actor_represents: {}
 
 # Region values match the region keys in sources.yaml.
 situations:

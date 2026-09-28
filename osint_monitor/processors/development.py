@@ -27,6 +27,7 @@ from osint_monitor.processors.classification import (
     DevelopmentClassifier, LLMClassifier, RuleBasedClassifier, get_classifier,
 )
 from osint_monitor.processors.classification.context import build_cluster_context
+from osint_monitor.processors.actors import ActorNormalizer
 from osint_monitor.processors.entity_resolver import normalise
 from osint_monitor.processors.ranking import DevelopmentRanker, PolicyRanker
 
@@ -157,11 +158,12 @@ def rank_events(session: Session, ranker: DevelopmentRanker | None = None, now: 
     for ee in principal_rows:
         principals.setdefault(ee.event_id, {})[ee.entity_id] = ee.entity
     slugs = dict(session.query(Situation.id, Situation.slug))
+    actors = ActorNormalizer.load()        # "Trump" and "US" principals are one topic
 
     def topic(event: Event) -> str | None:
         if event.situation_id:
             return slugs.get(event.situation_id)
-        names = sorted(normalise(e.canonical_name) for e in principals.get(event.id, {}).values())
+        names = sorted(actors.keys(e.canonical_name for e in principals.get(event.id, {}).values()))
         return "actors:" + "|".join(names) if names else None
 
     inputs = [ranking_input(e, list(principals.get(e.id, {}).values()), roles, topic(e)) for e in events]

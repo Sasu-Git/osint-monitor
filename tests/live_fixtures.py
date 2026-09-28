@@ -60,3 +60,37 @@ RUSSIA_UKRAINE_STRIKES = [
     ("Russia hits Kyiv power grid in overnight drone attack", ""),
     ("Ukraine says Russian drone attack on Kyiv damaged energy sites", ""),
 ]
+
+# 2026-09-24 eval run, event #1: principals came out as {AI, China}; Trump fell below support
+# because outlets named him in different grammatical forms ("Trump-Xi", "Trump’s", "Xi-Trump").
+TRUMP_XI_SUMMIT_SMALL = [
+    ("Trump-Xi summit live: Trade, AI, Iran and Taiwan top US-China talks",
+     "Xi’s first White House visit in more than a decade comes amid ongoing disputes over trade, AI, Taiwan and war in Iran."),
+    ("Xi-Trump summit day 1 highlights: red carpet for China’s leader, Rubio defends visit, and more",
+     "We have put together stories from our coverage of Xi and Trump’s meeting in the US so far"),
+    ("Chinese CEOs fly to US on own, await invites to Trump’s state dinner for Xi Jinping",
+     "A small group of Chinese CEOs holding US visas has arrived in Washington after travelling separately "
+     "from President Xi Jinping’s official entourage, according to multiple sources familiar with the mat"),
+    ("Trump and Xi come face-to-face as US and China battle to win the AI race",
+     "The US and China are vying for AI supremacy while seeking to keep it under human control."),
+]
+
+# event #3: "Aussie" and "Australian" came out as two separate actors
+F35_PARTS = [
+    ("Has China received US F-35 parts by diverting an Australian shipment?",
+     "Australia and US investigate F-35 parts mistakenly sent to Hong Kong amid concerns over sensitive military technology."),
+    ("Aussie defense chief confirms missing F-35 parts, says none are ‘sensitive’",
+     "After parts reportedly made their way to Hong Kong, a Lockheed Martin spokesperson told Breaking Defense "
+     "that the missing components “are unserviceable and deemed low risk for exploitation.&#8221;"),
+]
+
+# event #5: "Air Force’s" kept its possessive as a separate actor
+AIR_FORCE_CASI = [
+    ("Fate of Air Force’s China Aerospace Studies Institute up in air",
+     "The China Aerospace Studies Institute will carry on by “leveraging assigned military service members "
+     "to accomplish its objectives,” according to an Air Force spokesperson."),
+    ("Air Force, civilian staff dispute status of China Aerospace Studies Institute", "On Oct"),
+    ("The Air Force says its China think-tank will continue. It’s director says it’s basically dead.",
+     "The Air Force’s stance that the China Aerospace Studies Institute can function without civilian staff "
+     "is “not credible,” its Brendan Mulvaney told Breaking Defense."),
+]
