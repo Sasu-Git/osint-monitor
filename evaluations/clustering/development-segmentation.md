@@ -74,3 +74,72 @@ development windows and checked on the live window.
 
 Read with the thin hold-out recall support (8 SAME pairs): the recall change is 1 pair, and it has
 an identified, specific cause. It is not a general drop.
+
+## Live out-of-sample window (run once, 2026-09-28)
+
+Window `2026-09-27-live` covers 2026-09-27 00:00 to 09-28 12:00, drawn from the daemon's eval DB. It
+has 173 items and 6 sources, including Defense News and Breaking Defense. Labels are blind and were
+frozen before replay.
+
+| | before | after |
+|---|---|---|
+| multi-source developments recovered (2 sources / 3+) | 12/13 (8/9, 4/4) | 11/13 (7/9, 4/4) |
+| cross-source SAME pairs linked | 24/25 | 23/25 |
+| RELATED_BUT_DISTINCT pairs linked | 38 | **18** (-53%) |
+| UNRELATED pairs linked | 7 | 7 |
+| mixed clusters | 8/16 | 6/14 |
+| singletons wrongly clustered | 19 | 13 |
+
+- **Lost SAME pair:** the nor'easter. Al Jazeera ran "Powerful storm floods US Northeast, causes power
+  outages" and BBC ran "One dead as nor'easter storm pummels New York and New Jersey". Headline cosine
+  is 0.35, so the headline-similarity guard cut the link: one outlet framed the story by region, the
+  other by states.
+- **Unrelated links left:** all 7 are two Nepal disasters, the floods and the Himlung avalanche. They
+  share the country, so the location guard cannot see them as different places. This is the same
+  template failure within one country.
+- **Baseline recall:** the current clusterer links 24/25 cross-source SAME pairs on the current source
+  mix, so the 2026-09-25 recall gap does not reproduce.
+
+The frozen link rule was also run once on this window, the planned day-2 recall check. It adds 1
+SAME join and 2 related joins, and completes 13/13 multi-source developments. Summed over the
+independent windows (4 blind dev, 2 hold-out, live), the rule adds 1 true join against 15 false joins.
+The KEEP recommendation for the link rule stands.
+
+## Assessment
+
+Precision improves on every evaluation set:
+
+| set | related links | unrelated links |
+|---|---|---|
+| dev | 131 -> 77 | 25 -> 3 |
+| hold-out | 52 -> 9 | 3 -> 0 |
+| live | 38 -> 18 | 7 -> 7 |
+
+Cross-source recall is unchanged on the blind development windows. It drops by **one pair** on the
+hold-out (7 -> 6 of 8) and one on the live window (24 -> 23 of 25), each costing one 2-source
+development. Out-of-sample, the guards removed 63 wrong links (related 43+20, unrelated 3+0) for 2
+lost true links.
+
+The acceptance criterion was precision gains with no recall degradation. It holds on development and
+misses by one pair on each out-of-sample set. Both misses have specific causes:
+
+- location granularity ("northern cyprus" vs "cyprus");
+- headline framing (region vs states).
+
+So segmentation stays **off by default**. Enabling it is a product decision, which the evidence
+supports if Development purity is worth about 1 lost 2-source story in 30. The next increment, which
+needs its own prompt, is a containment-aware location match (country contains region). It is expected
+to recover the Cyprus-type case, and must be designed on development windows and checked on the next
+live window.
+
+## Remaining failure modes
+
+1. Report vs report within one storyline: reactions, different actions by the same actors, follow-ups.
+   77 / 9 / 18 related links remain on dev / hold-out / live.
+2. Repeated actions in the same place on nearby days (strike nights). They need an explicit event
+   date, and RSS descriptions rarely carry one. Pinned by a strict xfail test.
+3. Different disasters in the same country (Nepal floods vs avalanche).
+4. Location granularity: a sub-region vs its country, or name variants.
+5. Headline framing: two outlets headline one event very differently (headline guard).
+6. Incremental daemon behaviour, where later ticks extend existing events, is not replayed by the
+   benchmark.
