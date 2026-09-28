@@ -45,3 +45,15 @@ seismic:
   max_seconds_apart: 120
   max_km_apart: 100
   max_magnitude_difference: 0.5
+
+# Narrative clusters group reports about one story; a story holds several Developments (an
+# action, the reaction, the next day's action, analysis of it). Segmentation re-checks every
+# link inside a cluster and drops links between items that cannot be one Development; the
+# cluster becomes the connected components of the rest. Analysis items cut off this way are
+# kept as commentary on the Development they discuss. Evidence and settings:
+# evaluations/clustering/development-identity-diagnosis.md
+development_segmentation:
+  enabled: false
+  analysis_headlines: true        # "Why ...?", "What we know ...", explainers vs report headlines
+  min_headline_similarity: 0.5    # two outlets' headlines below this cosine are different Developments
+  disjoint_locations: true        # both items name places and share none
