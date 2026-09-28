@@ -47,3 +47,30 @@ baseline. Met on development windows.
 
 The code at 183b195 and the configuration above are frozen. The hold-out is run once, next, and is
 read mainly for false joins: it holds 7 multi-source developments and 8 cross-source SAME pairs.
+
+## Hold-out (run once, 2026-09-28, logged in holdout_runs.jsonl)
+
+Windows 2026-08-31 and 2026-09-10 (blind). Code and configuration as frozen above.
+
+| | before | after |
+|---|---|---|
+| multi-source developments recovered (all 2-source) | 6/7 (1 partial) | 5/7 (1 partial, 1 missed) |
+| cross-source SAME pairs linked | 7/8 | 6/8 |
+| RELATED_BUT_DISTINCT pairs linked | 52 | **9** (-83%) |
+| UNRELATED pairs linked | 3 | **0** |
+| mixed clusters | 8/14 | 5/13 |
+| singletons wrongly clustered | 24 | 11 |
+| analysis items kept as commentary | - | 3 |
+
+Precision improves on independent data more than on development windows. One cross-source SAME pair
+is lost: the Northern Cyprus ferry sinking. Al Jazeera ran "Rescuers search for 18 missing after boat
+capsizes off Northern Cyprus" and BBC ran "'She slipped out of my hand' - children missing after ferry
+sinks off northern Cyprus". Both are report headlines, with headline cosine 0.58, so the
+disjoint-locations guard cut the link. The extracted place names do not overlap, though both name the
+same place ("Northern Cyprus" / "Cyprus"). **Failure mode: location granularity.** A sub-region and
+its country, or two spellings of one place, count as disjoint. Not fixed here: the hold-out is not
+used for tuning. A containment-aware location match is the obvious remedy. It must be designed on
+development windows and checked on the live window.
+
+Read with the thin hold-out recall support (8 SAME pairs): the recall change is 1 pair, and it has
+an identified, specific cause. It is not a general drop.
