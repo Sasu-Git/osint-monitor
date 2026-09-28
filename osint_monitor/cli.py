@@ -55,6 +55,9 @@ def main():
 
     # inspect: debugging view of events (clusters, principals, regions, ranking)
     sub_inspect = subparsers.add_parser("inspect", help="Show event clusters with diagnostics")
+    sub_inspect.add_argument("target", nargs="?", choices=["events", "situations"], default="events",
+                             help="events (default), or situations: what situation grouping decides "
+                                  "for each event, and why")
     sub_inspect.add_argument("--event", type=int, default=None, help="Show one event in full")
     sub_inspect.add_argument("--sort", choices=["rank", "size", "recent"], default="rank")
     sub_inspect.add_argument("--limit", type=int, default=10)
@@ -315,7 +318,21 @@ def _cmd_status():
         print("No daemon running (jobs only visible when daemon is active).")
 
 
+def _cmd_inspect_situations(args):
+    from osint_monitor.core.database import get_session, init_db
+    from osint_monitor.processors.situations import get_grouper
+    from osint_monitor.processors.situations.evaluation import format_situation_report, situation_report
+
+    init_db()
+    session = get_session()
+    print(format_situation_report(situation_report(session, get_grouper("none")), principal_only=not args.full))
+    session.close()
+
+
 def _cmd_inspect(args):
+    if args.target == "situations":
+        _cmd_inspect_situations(args)
+        return
     from osint_monitor.core.config import load_sources_config
     from osint_monitor.core.database import Event, get_session, init_db
     from osint_monitor.processors.diagnostics import describe_event, format_event, select_events
