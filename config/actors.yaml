@@ -135,6 +135,9 @@ aliases:
   Britain: United Kingdom
   Great Britain: United Kingdom
   Türkiye: Turkey
+  Turkiye: Turkey
+  Seoul: South Korea
+  Islamabad: Pakistan
 
 # Person / body -> the state it acts for. Situations are country-level, so "Xi met Trump"
 # involves China and the United States. Keep to principals who reliably act for a state;
@@ -177,3 +180,16 @@ represents:
   IRGC: Iran
   Benjamin Netanyahu: Israel
   Netanyahu: Israel
+
+# Role prefixes dropped from a name before matching ("FM Araghchi" -> Araghchi). Only
+# applied when the full name is not itself a configured actor.
+titles: [FM, PM, President, Prime Minister, Foreign Minister, Defence Minister, Defense Minister,
+         Minister, Chancellor, King, Queen, Crown Prince, Prince, Sheikh, General, Gen, Gen.,
+         Lt, Col, Dr, Mr, Mrs, Ms, Prof, Senator, Sen, Governor, Mayor]
+
+# News outlets. When one only reports ("tells BBC", "BBC reports from", "according to CCTV")
+# it is not a principal of the development; as the subject of anything else it still is.
+media_outlets: [BBC, BBC World, CCTV, CNN, Al Jazeera, Reuters, AP, Associated Press, AFP, Bloomberg,
+                Xinhua, TASS, IRNA, KCNA, Yonhap, Kyodo, NHK, Fox News, Sky News, New York Times,
+                Washington Post, Wall Street Journal, Financial Times, Guardian, South China Morning Post,
+                SCMP, Defense News, Breaking Defense, Global Times, RT, Anadolu]
