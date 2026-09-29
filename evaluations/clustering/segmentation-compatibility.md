@@ -159,3 +159,58 @@ baseline and keeps most of the precision gain.
   headlines from inside the window (the error message embeds the item title). The segmentation code
   and config are frozen and the labeller is a separate blind agent, so this cannot influence the rules
   or the labels. It is recorded for completeness.
+
+## Fresh live validation: result (2026-09-29, single run)
+
+`2026-09-29-live` covers 2026-09-28 12:00 to 09-29 12:00 UTC.
+
+- **Items:** frozen `bc19462d9e00` (commit f3ec450), from a backup snapshot taken 13:29 UTC. The window
+  holds 247 items: 210 narrative and 37 structured records, from 16 sources. Narrative items by
+  outlet: Al Jazeera 93, SCMP 79, BBC 26, Breaking Defense 4, Defense News 4, War on the Rocks 4.
+  There were no collection gaps after the keep-awake started (07:50 UTC); earlier standby gaps are
+  noted above.
+- **Labels:** frozen `757d19a13995` (commit 72c9e1c), labelled blind. They hold 136 developments,
+  19 multi-item, 15 multi-source (14 cross-source-evaluable after dedup), 15 storylines, 25
+  related_pairs and 6 uncertain_pairs.
+- **Run:** one `--holdout --segmentation` run, logged. The segmentation code blob is `fb58483`; the
+  logged `code_sha256` `03b63e65f4a6…` is the CRLF working copy of that blob. Pair-level diagnostics
+  re-replayed the window and reproduced the official run exactly.
+
+| | baseline (segmentation off) | frozen segmentation (v2) |
+|---|---|---|
+| cross-source SAME pairs linked | 15/16 | **14/16** |
+| multi-source developments recovered (2-src / 3+) | 13/14 (12/13, 1/1) | 12/14 (11/13, 1/1) |
+| RELATED_BUT_DISTINCT linked | 8 | 6 |
+| UNRELATED linked | 3 | **0** |
+| mixed clusters | 5/17 | 4/16 |
+| singletons wrongly clustered | 10 | 8 |
+
+- **True pair lost (1):** the SpaceX Starship flight. SCMP ran "Starship rocket reaches orbit for first
+  time" and Al Jazeera ran "Fiery end for SpaceX Starship mission". Headline cosine is 0.46, so the
+  headline-similarity guard cut the link. The override could not apply: the Al Jazeera item has no
+  extracted place, and SCMP's places are NER noise ("7.49am", "south texas"). The split is wrong
+  because both items report the same flight, framed at its start and at its end. This is the known
+  headline-framing class plus missing or noisy places, not a new pattern.
+- **Wrong links removed:** 5 (2 related, 3 unrelated).
+- **Compatibility layer vs v1:**
+  - it recovered 1 true pair, the Channel-crossing deaths (two outlets);
+  - it reintroduced 1 related link, "UAE confirms Netanyahu visit" vs the Israeli complaint over a TV
+    report about the visit.
+
+**Pre-registered rule applied:**
+
+- recall within one pair: yes (15 -> 14);
+- multi-source recovery similarly close: yes (13 -> 12);
+- precision gain remains: yes, wrong links 11 -> 6 and all 3 unrelated links removed;
+- no new systematic false split: yes, the one split is a known class;
+- no substantial reintroduction of storyline merging: yes, +1 related.
+
+**Result: ENABLE SEGMENTATION BY DEFAULT.** This is a recommendation pending approval. `enabled`
+remains `false`.
+
+Across all four out-of-sample windows (08-31, 09-10, 09-27-live, 09-29-live), v2 against no
+segmentation gives:
+
+- cross-source SAME pairs 44/49 vs 46/49;
+- related wrong links 37 vs 98;
+- unrelated wrong links 7 vs 13.
