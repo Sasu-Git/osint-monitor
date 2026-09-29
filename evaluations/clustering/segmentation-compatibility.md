@@ -105,3 +105,57 @@ baseline and keeps most of the precision gain.
   are unchanged. Both strict xfails are kept.
 - The gazetteer is curated: places missing from it only match exactly.
 - Incremental daemon behaviour is not replayed.
+
+## Fresh live validation: pre-registration (written 2026-09-29 before the window closes)
+
+- **Segmentation code under test:** frozen commit `936d05c`. The file blob
+  `osint_monitor/processors/development_segmentation.py` is `fb58483`. Its SHA-256 over LF bytes equals
+  the `code_sha256` logged by the previous hold-out run. The CRLF working copy on Windows hashes
+  differently. `9a6aaed` is a documentation-only follow-up.
+- **Window:** `2026-09-29-live`, 2026-09-28 12:00 to 2026-09-29 12:00 UTC (end exclusive), hold-out split.
+  The source is a SQLite backup-API snapshot of the daemon eval DB, taken after about 13:00 UTC. The
+  daemon DB is only read or copied, never written.
+- **Default:** `development_segmentation.enabled: false`. It is not changed by this validation.
+- **Procedure:** freeze items -> commit -> blind labels from the label sheet only -> freeze -> commit
+  separately -> verify hashes -> one `inspect clustering-benchmark --holdout --segmentation --window
+  2026-09-29-live` run. That run yields the baseline and segmentation from one replay. Pair-level
+  diagnostics come from a deterministic re-replay, asserted identical to that run.
+- **Decision criteria, fixed now:**
+  - **ENABLE** only if all of these hold:
+    - cross-source SAME recall stays within one pair of baseline;
+    - multi-source development recovery stays similarly close;
+    - most of the precision gain remains;
+    - no new systematic false-split pattern appears;
+    - the compatibility layer does not substantially reintroduce storyline-level over-merging.
+  - **KEEP OFF** if any of these hold:
+    - false splits are material;
+    - the override causes significant false joins;
+    - the precision gain is too small for the recall loss;
+    - a new systematic failure mode appears.
+  - **NEED MORE DATA** only if the window is too sparse, the result is genuinely borderline, or there
+    are too few multi-source developments.
+
+### Collection conditions in the window (operational metadata, checked 07:45 UTC)
+
+- **Process:** the daemon (PID 42048, worktree at `a9edd18`) ran continuously. Its only scheduler
+  start is 2026-09-25. It has no pause flag, no tracked changes, and no config file modified since the
+  window start. DB `quick_check: ok`.
+- **Host standby:** the machine went into standby (Windows Kernel-Power 506/507), so every tier
+  missed its ticks during:
+  - 14:27-18:47 UTC on 09-28;
+  - 23:23-02:02 UTC and 02:05-05:59 UTC on 09-29.
+
+  After each resume the RSS feeds were read in full. Narrative items by *published* hour during the
+  gaps are in line with the same hours the day before (e.g. 15-17 UTC: 6/10/10 vs 5/10/7), which is
+  consistent with the feed depth covering the gaps. Items published and rolled off a feed inside a gap
+  would be missing, which biases the window toward lower-volume completeness, not toward any story.
+- **Lock burst on resume:** at 06:02 UTC on 09-29, 29 items failed processing with `database is
+  locked`. This happened right after resume, when all tiers ran at once. No other lock errors occurred
+  in the window. Items that failed before storage are re-read on the next warm tick while still in
+  the feed.
+- **Other:** 3 timeouts in the government collector, which is structured and outside the narrative
+  window.
+- **Evaluator exposure:** while characterising the lock errors, the evaluator saw 8 truncated
+  headlines from inside the window (the error message embeds the item title). The segmentation code
+  and config are frozen and the labeller is a separate blind agent, so this cannot influence the rules
+  or the labels. It is recorded for completeness.
