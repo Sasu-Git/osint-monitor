@@ -36,7 +36,7 @@ def _rx(pattern: str) -> re.Pattern:
 COMMENTARY_TITLE = _rx(
     r"\b(?:analysis|opinion|op-ed|editorial|commentary|explainer|"
     r"spokes(?:person|man|woman)|told reporters|reiterat\w*|"
-    r"analysts? (?:say|said|warn)|experts? (?:say|said))\b|^what\b"
+    r"analysts? (?:say|said|warn)|experts? (?:say|said))\b|^(?:what|why|how)\b"
 )
 
 # Clauses naming a topic of discussion ("meets X to discuss sanctions") are removed
@@ -59,6 +59,45 @@ DOMESTIC_DECISION = _rx(
     r"\bagree(?:s|d)? to (?:ban|cap|raise|cut|lower|introduce|impose|restrict|limit|tax|allow|legali[sz]e|"
     r"scrap|abolish|increase|reduce|require)\b")
 PARTIES = _rx(r"\b[\w.-]+(?:,| and) [\w.-]+(?: [\w.-]+)? agree|\bagree\w* with\b|\bboth sides\b")
+
+# Legal and migration language collides with other types. These guards read a development's
+# headlines and suppress the types each one is mistaken for; the story then falls through to
+# another rule or stays honestly UNKNOWN (the taxonomy has no judicial or migration type).
+# Release from custody is not an incident or an election: "comic set for release after being
+# convicted", "releases political prisoners as election calls grow".
+CUSTODY_RELEASE = _rx(
+    r"\b(?:set for release|released from|freed from|out on bail|(?:granted|released on) bail|acquitted|"
+    r"pardon(?:s|ed)?)\b"
+    r"|\b(?:release[sd]?|frees|freed)\b[^.;]{0,50}\b(?:prisoners?|detainees?|activists?|dissidents?|suspects?|"
+    r"journalists?|critics?|opposition)\b"
+    r"|\b(?:release[sd]?|frees|freed)\b[^.;]{0,20}\bon bail\b|\bafter (?:his |her |their )?release\b")
+# Deportation, extradition and returns are not meetings, visits or deployments. Enforcement
+# actions only: "Meloni meets Libyan leader over migrants" is still a meeting.
+MIGRATION_ENFORCEMENT = _rx(
+    r"\b(?:deport\w*|extradit\w*|repatriat\w*|expel(?:s|led|ling)?|expulsions?|forcibly return\w*|"
+    r"push-?backs?)\b"
+    r"|\bsen(?:d|ds|ding|t) (?:back|home)\b|\bsen(?:d|ds|ding|t) [^.;]{0,40}\b(?:back|home) to\b")
+# A court acting is not a policy change, an election, an agreement or a resignation.
+COURT_ACTION = _rx(
+    r"\b(?:court|judges?|justices|tribunal|jury)\b[^.;]{0,40}"
+    r"\b(?:rules?|ruled|ruling|blocks?|blocked|orders?|ordered|upholds?|upheld|strikes? down|struck down|"
+    r"overturn\w*|convicts?|convicted|acquits?|acquitted|dismiss\w*|halts?|halted)\b")
+# Arrests, charges, verdicts and sentences are security incidents only when the offence is one:
+# gambling arrests, a bribery sentence or an insult conviction are law enforcement, not security.
+JUSTICE_STEP = _rx(
+    r"arrest(?:s|ed|ing)?|charged with|indict(?:s|ed|ment)|convict(?:s|ed)|sentenced|jail(?:s|ed)|detain(?:s|ed)")
+SECURITY_OFFENCE = _rx(
+    r"\b(?:terror\w*|attacks?|attackers?|shooting|shot|gunm[ae]n|stabb\w*|bomb\w*|explosiv\w*|plot\w*|"
+    r"spy\w*|spies|espionage|sabotage|militants?|extremis\w*|jihad\w*|insurgen\w*|hack\w*|cyber\w*|"
+    r"kidnap\w*|abduct\w*|hostages?|murder\w*|killings?|weapons?|firearms?|assassinat\w*|treason|coup|"
+    r"national security|subversion|sedition|drones?|far-right|far-left|neo-nazis?|white supremac\w*)\b")
+# "meet safety standards", "the Labour Party meets", "suspends official visits": not a meeting.
+NOT_A_MEETING = _rx(
+    r"\bmeets? (?:the |its |their |all |new |strict )?(?:standards?|requirements?|demands?|targets?|needs|"
+    r"deadlines?|criteria|expectations|goals?|obligations?|thresholds?)\b"
+    r"|\b(?:party|conference|congress|parliament|council|committee|board|cabinet|jury|panel) meets?\b"
+    r"|\b(?:suspend\w*|cancel\w*|postpone\w*|call(?:s|ed)? off|halts?|halted)\b[^.;]{0,40}"
+    r"\b(?:visits?|meetings?|talks|trips?)\b")
 
 # Ordered: the first matching rule wins. Decisive, verb-anchored actions come first,
 # then meetings, then policy, then rhetoric.
@@ -83,8 +122,8 @@ TYPE_RULES: list[tuple[EventType, re.Pattern]] = [
     (EventType.MILITARY_EXERCISE, _rx(r"\b(?:military|naval|joint) exercises?\b|\bdrills?\b|\bwar ?games\b")),
     # before military action: a knife attack or a hack is not state military action
     (EventType.SECURITY_INCIDENT, _rx(
-        r"\barrest(?:s|ed|ing)?\b|\bcharged with\b|\bindict(?:s|ed|ment)\b|\bconvicted\b|\bsentenced\b|"
-        r"\bdetain(?:s|ed)\b|\b(?:knife|gun|stabbing|shooting|arson|terror(?:ist)?) attacks?\b|\bstabbings?\b|"
+        r"\barrest(?:s|ed|ing)?\b|\bcharged with\b|\bindict(?:s|ed|ment)\b|\bconvict(?:s|ed)\b|\bsentenced\b|"
+        r"\bjail(?:s|ed)\b|\bdetain(?:s|ed)\b|\b(?:knife|gun|stabbing|shooting|arson|terror(?:ist)?) attacks?\b|\bstabbings?\b|"
         r"\bmass shooting\b|\bhack(?:s|ed|ers?|ing)?\b|\bcyber ?attacks?\b|\bransomware\b|\bdata breach\b|"
         r"\bespionage\b")),
     (EventType.MILITARY_ACTION, _rx(
@@ -258,7 +297,19 @@ class RuleBasedClassifier:
     # ------------------------------------------------------------------
 
     @staticmethod
-    def _match_text(text: str, headline: bool) -> tuple[EventType, str] | None:
+    def _suppressed(titles: str) -> frozenset:
+        """Types a development's headlines rule out (legal and migration guards)."""
+        out: set[EventType] = set()
+        if CUSTODY_RELEASE.search(titles):
+            out |= {EventType.SECURITY_INCIDENT, EventType.ELECTION}
+        if MIGRATION_ENFORCEMENT.search(titles):
+            out |= MEETING_TYPES | {EventType.DEPLOYMENT}
+        if COURT_ACTION.search(titles):
+            out |= {EventType.POLICY_CHANGE, EventType.ELECTION, EventType.AGREEMENT, EventType.RESIGNATION}
+        return frozenset(out)
+
+    @staticmethod
+    def _match_text(text: str, headline: bool, suppressed: frozenset = frozenset()) -> tuple[EventType, str] | None:
         """Type of one headline (or lead sentence), with the negative guards applied."""
         if headline:
             commentary = COMMENTARY_TITLE.search(text)
@@ -267,8 +318,15 @@ class RuleBasedClassifier:
         stripped = HYPOTHETICAL.sub(" ", TEMPORAL_REFERENCE.sub(" ", DISCUSSION_CLAUSE.sub(" ", text)))
         unquoted = QUOTED.sub(" ", stripped)
         for event_type, pattern in TYPE_RULES:
+            if event_type in suppressed:
+                continue
             m = pattern.search(unquoted if event_type in RHETORIC_TYPES else stripped)
             if not m:
+                continue
+            if event_type == EventType.SECURITY_INCIDENT and JUSTICE_STEP.fullmatch(m.group(0)) \
+                    and not SECURITY_OFFENCE.search(stripped):
+                continue                       # law enforcement over an ordinary offence
+            if event_type in MEETING_TYPES and NOT_A_MEETING.search(stripped):
                 continue
             if event_type == EventType.AGREEMENT and DOMESTIC_DECISION.search(stripped) \
                     and not PARTIES.search(stripped) and "agree" in m.group(0).lower():
@@ -288,10 +346,19 @@ class RuleBasedClassifier:
         the development is stated, so incidental mentions further down do not count.
         Ties go to the earlier rule (deeds before words). Returns (type, evidence, ambiguous).
         """
+        suppressed = self._suppressed(" \n".join(i.title for i in context.items))
         for texts, headline in (([i.title for i in context.items], True),
                                 ([_lead(i.excerpt) for i in context.items], False)):
-            votes = [v for v in (self._match_text(t, headline) for t in texts if t) if v]
+            votes = [v for v in (self._match_text(t, headline, suppressed) for t in texts if t) if v]
+            commentary = sum(1 for t, _ in votes if t == EventType.COMMENTARY)
+            if headline and commentary and commentary * 2 <= len([t for t in texts if t]):
+                # commentary only when most headlines are: explainers among reports do not decide it
+                votes = [v for v in votes if v[0] != EventType.COMMENTARY]
             if not votes:
+                if headline and suppressed:
+                    # the headlines say what kind of story this is (a release, a court act, a
+                    # deportation), just not a taxonomy type: incidental lead text must not decide it
+                    return EventType.UNKNOWN, "legal/migration headline, no taxonomy type", True
                 continue
             counts = Counter(t for t, _ in votes)
             ranked = sorted(counts, key=lambda t: (-counts[t], _PRIORITY[t]))
