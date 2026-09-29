@@ -319,6 +319,10 @@ class AppSettings(BaseSettings):
     classifier_backend: str = "rules"
     classifier_llm_provider: Optional[str] = None   # falls back to default_llm_provider
     classifier_llm_model: Optional[str] = None      # falls back to the provider's default
+    # Development summaries: "extractive" (lead sentences of occurrence evidence, deterministic),
+    # "llm" (existing LLM layer, evidence only, extractive fallback) or "off"
+    summary_backend: str = "extractive"
+    summary_llm_provider: Optional[str] = None      # falls back to default_llm_provider
     # Situation grouping: ambiguous cases left unassigned ("none") or settled by the LLM ("llm")
     situation_arbiter: str = "none"
     spacy_model: str = "en_core_web_lg"

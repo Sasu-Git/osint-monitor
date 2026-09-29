@@ -6,6 +6,7 @@
     <li class="dev">
       <div class="rank" aria-label="Rank">{{ c.rank }}</div>
       <div class="title"><a href="/developments/{{ d.id }}">{{ d.what_happened }}</a></div>
+      {% if d.summary.text %}<div class="summary">{{ d.summary.text }}</div>{% endif %}
       <div class="meta-right">
         {{ ui.confidence(d.confidence.confidence_class) }}
         <span class="time">{{ d.last_updated_at | when }}</span>

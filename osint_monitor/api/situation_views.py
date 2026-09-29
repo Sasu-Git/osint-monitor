@@ -44,6 +44,42 @@ class SourceEvidence(BaseModel):
     excerpt: str = ""                          # opening of the stored item text, for reading
 
 
+class OriginGroup(BaseModel):
+    """Reports that trace back to one origin: it counts once, however many outlets carried it."""
+    origin: str
+    role: Optional[str] = None
+    items: list[SourceEvidence] = Field(default_factory=list)
+
+
+class EvidenceGroup(BaseModel):
+    """Evidence of one kind (backend provenance only): official, independent, derivative,
+    commentary, or not determined."""
+    kind: str
+    origins: list[OriginGroup] = Field(default_factory=list)
+
+    @property
+    def item_count(self) -> int:
+        return sum(len(o.items) for o in self.origins)
+
+
+class EvidenceCounts(BaseModel):
+    items: int = 0                              # stored source items linked to the development
+    outlets: int = 0
+    independent_origins: Optional[int] = None   # from provenance; commentary never counts
+    official_origins: int = 0
+    derivative_items: int = 0
+    commentary_items: int = 0
+    undetermined_items: int = 0
+
+
+class SummaryInfo(BaseModel):
+    text: Optional[str] = None                  # persisted factual summary, never generated here
+    method: Optional[str] = None                # "extractive-leads-v1", "llm", "insufficient-evidence"
+    model: Optional[str] = None
+    generated_at: Optional[datetime] = None
+    item_ids: list[int] = Field(default_factory=list)
+
+
 class Classification(BaseModel):
     event_type: Optional[str] = None
     event_domain: Optional[str] = None
@@ -73,7 +109,10 @@ class DevelopmentView(BaseModel):
     significance_class: Optional[str] = None
     rank_reasons: list[str] = Field(default_factory=list)
     confidence: Confidence
+    summary: SummaryInfo = Field(default_factory=SummaryInfo)
     evidence: list[SourceEvidence] = Field(default_factory=list)
+    evidence_groups: list[EvidenceGroup] = Field(default_factory=list)   # the same items, grouped
+    counts: EvidenceCounts = Field(default_factory=EvidenceCounts)
 
 
 class SituationSummary(BaseModel):
@@ -99,7 +138,9 @@ EXCERPT_CHARS = 280
 
 
 def _excerpt(content: str | None) -> str:
-    text = " ".join((content or "").split())
+    import html
+    import re
+    text = " ".join(html.unescape(re.sub(r"<[^>]+>", " ", content or "")).split())
     if len(text) <= EXCERPT_CHARS:
         return text
     cut = text[:EXCERPT_CHARS].rsplit(" ", 1)[0]
@@ -127,6 +168,32 @@ def list_situations(session: Session) -> list[SituationSummary]:
     return out
 
 
+GROUP_ORDER = ["official", "independent", "derivative", "commentary", "undetermined"]
+
+
+def evidence_kind(e: SourceEvidence) -> str:
+    """Which evidence group an item belongs to, from its stored provenance only."""
+    if e.evidence_type is None:
+        return "undetermined"                   # provenance did not assess this item
+    if e.evidence_type == "commentary" or e.source_role == "analysis":
+        return "commentary"
+    if e.evidence_type == "derivative":
+        return "derivative"
+    if e.evidence_type == "primary" or e.source_role == "primary_official":
+        return "official"
+    return "independent"
+
+
+def group_evidence(evidence: list[SourceEvidence]) -> list[EvidenceGroup]:
+    groups: dict[str, dict[str, OriginGroup]] = {k: {} for k in GROUP_ORDER}
+    for e in evidence:
+        kind = evidence_kind(e)
+        key = (e.derived_from if kind == "derivative" and e.derived_from else e.origin) or e.source
+        group = groups[kind].setdefault(key, OriginGroup(origin=key, role=e.source_role))
+        group.items.append(e)
+    return [EvidenceGroup(kind=k, origins=list(groups[k].values())) for k in GROUP_ORDER if groups[k]]
+
+
 def development_view(session: Session, event: Event, canon: ActorCanonicalizer,
                      with_evidence: bool = True) -> DevelopmentView:
     links = (session.query(EventEntity).options(joinedload(EventEntity.entity))
@@ -152,8 +219,20 @@ def development_view(session: Session, event: Event, canon: ActorCanonicalizer,
                 source_role=p.source_role.value if p else None, evidence_type=p.evidence_type.value if p else None,
                 origin=p.origin if p else None, derived_from=p.derived_from if p else None,
                 provenance_note=p.note if p else "", excerpt=_excerpt(i.content)))
+    groups = group_evidence(evidence) if with_evidence else []
+    by_kind = {g.kind: g for g in groups}
+    counts = EvidenceCounts(
+        items=len(evidence), outlets=confidence.source_count,
+        independent_origins=confidence.independent_origins,
+        official_origins=len(by_kind["official"].origins) if "official" in by_kind else 0,
+        derivative_items=by_kind["derivative"].item_count if "derivative" in by_kind else 0,
+        commentary_items=by_kind["commentary"].item_count if "commentary" in by_kind else 0,
+        undetermined_items=by_kind["undetermined"].item_count if "undetermined" in by_kind else 0)
     return DevelopmentView(
         id=event.id, what_happened=event.summary, change_summary=event.change_summary,
+        summary=SummaryInfo(text=event.development_summary, method=event.summary_method, model=event.summary_model,
+                            generated_at=event.summary_generated_at, item_ids=list(event.summary_item_ids or [])),
+        evidence_groups=groups, counts=counts,
         first_reported_at=event.first_reported_at, last_updated_at=event.last_updated_at, region=event.region,
         principal_actors=actors,
         classification=Classification(

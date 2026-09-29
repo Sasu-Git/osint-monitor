@@ -25,7 +25,8 @@
     <li class="tl">
       <div class="when">{{ d.first_reported_at | when }}</div>
       <div class="title"><a href="/developments/{{ d.id }}">{{ d.what_happened }}</a></div>
-      {% if d.change_summary and d.change_summary | trim | lower != d.what_happened | trim | lower %}<p class="summary">{{ d.change_summary }}</p>{% endif %}
+      {% if d.summary.text %}<p class="summary">{{ d.summary.text }}</p>
+      {% elif d.change_summary and d.change_summary | trim | lower != d.what_happened | trim | lower %}<p class="summary">{{ d.change_summary }}</p>{% endif %}
       <div class="line">
         {{ ui.significance(d.significance_class) }}
         {{ ui.event_type(d.classification.event_type) }}

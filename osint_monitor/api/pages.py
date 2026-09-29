@@ -26,6 +26,11 @@ CONFIDENCE_LABELS = {"confirmed": "Confirmed", "probable": "Probable", "possible
 SOURCE_ROLE_LABELS = {"primary_official": "Official source", "wire": "Wire agency",
                       "independent_reporting": "Independent reporting", "specialist_reporting": "Specialist outlet",
                       "analysis": "Analysis", "osint": "OSINT account", "social": "Social media", "unknown": None}
+GROUP_LABELS = {"official": "Official / primary", "independent": "Independent reporting",
+                "derivative": "Derivative and syndicated coverage", "commentary": "Commentary and analysis",
+                "undetermined": "Provenance not determined"}
+SUMMARY_METHOD_LABELS = {"extractive-leads-v1": "Summary: lead sentences selected verbatim from independent reports",
+                         "llm": "Summary: written by a language model from these reports only"}
 EVIDENCE_LABELS = {"primary": "Primary", "firsthand": "First-hand", "independent": "Independent report",
                    "derivative": "Derivative", "commentary": "Commentary"}
 
@@ -50,6 +55,8 @@ templates.env.filters.update(
     role_label=lambda v: SOURCE_ROLE_LABELS.get(v or "unknown"),
     evidence_label=lambda v: EVIDENCE_LABELS.get(v or ""),
     humanize=lambda v: (v or "").replace("_", " ").capitalize(),
+    group_label=lambda k: GROUP_LABELS.get(k, k),
+    summary_method=lambda m: SUMMARY_METHOD_LABELS.get(m or "", f"Summary method: {m}"),
 )
 
 

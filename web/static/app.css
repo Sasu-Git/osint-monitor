@@ -99,10 +99,11 @@ h1, h2, h3 { margin: 0; font-weight: 600; letter-spacing: -0.01em; }
 .dev { display: grid; grid-template-columns: 36px 1fr auto; gap: 4px 14px; padding: 14px 4px;
   border-bottom: 1px solid var(--line); }
 .dev > * { min-width: 0; }
-.dev .rank { grid-row: 1 / span 3; color: var(--text-3); font: 600 13px var(--mono); padding-top: 2px; text-align: right; }
+.dev .title, .dev .summary, .dev .line, .dev .reasons { grid-column: 2; }
+.dev .rank { grid-column: 1; grid-row: 1; color: var(--text-3); font: 600 13px var(--mono); padding-top: 2px; text-align: right; }
 .dev .title { font-size: 15.5px; font-weight: 600; line-height: 1.3; color: var(--text); overflow-wrap: anywhere; }
 .dev .title a { color: inherit; }
-.dev .meta-right { grid-row: span 2; text-align: right; display: flex; flex-direction: column; align-items: flex-end; gap: 6px; }
+.dev .meta-right { grid-column: 3; grid-row: 1 / span 2; text-align: right; display: flex; flex-direction: column; align-items: flex-end; gap: 6px; }
 .dev .line { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center; font-size: 13px; color: var(--text-2); }
 .dev .reasons { grid-column: 2 / 4; font-size: 12.5px; color: var(--text-3); }
 .dev .reasons .caveat { color: var(--caveat); }
@@ -172,7 +173,7 @@ h1, h2, h3 { margin: 0; font-weight: 600; letter-spacing: -0.01em; }
   .topbar .aside { display: none; }
   .page { padding: 16px 12px 48px; }
   .dev { grid-template-columns: 24px minmax(0, 1fr); gap: 4px 10px; }
-  .dev .title, .dev .line, .dev .meta-right, .dev .reasons { grid-column: 2; }
+  .dev .title, .dev .summary, .dev .line, .dev .meta-right, .dev .reasons { grid-column: 2; }
   .dev .meta-right { grid-row: auto; align-items: center; flex-direction: row; flex-wrap: wrap; text-align: left; order: 0; }
   .page-head .sub { font-size: 12px; }
   .filters label { flex: 1 1 140px; }
@@ -184,3 +185,19 @@ h1, h2, h3 { margin: 0; font-weight: 600; letter-spacing: -0.01em; }
   .sit .count b { display: inline; font-size: 15px; margin-right: 4px; }
   .filters select { min-width: 0; }
 }
+
+/* --- summary provenance and grouped evidence ---------------------------------------------------- */
+.dev .summary { grid-column: 2; font-size: 13.5px; color: var(--text-2); line-height: 1.45; overflow-wrap: anywhere;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.provenance { margin-top: 8px; font-size: 12px; color: var(--text-3); }
+.provenance summary { cursor: pointer; }
+.provenance .facts { margin-top: 8px; font-size: 12px; }
+.ev-group { margin-bottom: 20px; }
+.ev-group h3 { font-size: 13px; font-weight: 700; margin: 0 0 6px; color: var(--text); }
+.ev-group .hint { margin: 0 0 8px; }
+.origin { margin: 0 0 10px; padding-left: 10px; border-left: 2px solid var(--line-strong); }
+.ev-official .origin { border-left-color: var(--confirmed); }
+.ev-commentary .origin, .ev-undetermined .origin { border-left-style: dashed; }
+.origin-head { display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: center; font-size: 13px; padding: 4px 0; }
+.origin .evidence { border-top: 0; }
+@media (max-width: 640px) { .dev .summary { grid-column: 2; } }

@@ -568,6 +568,13 @@ def run_post_processing(session: Session, quiet: bool = False, offline: bool = F
         _print(f"  Corroboration cached on {len(events)} events")
     _stage("corroboration", _corroboration)
 
+    # 4b. Development summaries (grounded in each development's own evidence; no network unless
+    # OSINT_SUMMARY_BACKEND=llm)
+    def _summaries():
+        from osint_monitor.processors.summaries import summarize_events
+        stats["summaries"] = summarize_events(session)
+    _stage("summaries", _summaries)
+
     # 5a. Ranking (deterministic editorial policy; the score is a sort key only)
     _print("--- Ranking developments ---")
 

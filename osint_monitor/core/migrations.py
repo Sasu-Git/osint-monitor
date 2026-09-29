@@ -75,10 +75,20 @@ def m003_development_fields(conn: Connection) -> None:
     _add_column(conn, "event_entities", "is_principal", "BOOLEAN NOT NULL DEFAULT FALSE")
 
 
+def m004_development_summary(conn: Connection) -> None:
+    """A persisted factual summary per development, with how and from which items it was made."""
+    for column, ddl in [
+        ("development_summary", "TEXT"), ("summary_method", "VARCHAR(100)"), ("summary_model", "VARCHAR(100)"),
+        ("summary_generated_at", _datetime_type(conn)), ("summary_item_ids", "JSON"),
+    ]:
+        _add_column(conn, "events", column, ddl)
+
+
 MIGRATIONS: list[tuple[int, Callable[[Connection], None]]] = [
     (1, m001_legacy),
     (2, m002_situations),
     (3, m003_development_fields),
+    (4, m004_development_summary),
 ]
 
 

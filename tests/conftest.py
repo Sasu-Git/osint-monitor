@@ -1,11 +1,30 @@
 """Shared fixtures for the OSINT Monitor test suite."""
 
+import os
+import tempfile
+from pathlib import Path
+
+# Tests never touch the real database: before any application code reads its settings, point the
+# default database at a throwaway file for the whole session (pages that query through the default
+# engine, e.g. Today at "/", read this empty, migrated database instead of data/osint.db).
+_TEST_DB = Path(tempfile.mkdtemp(prefix="osint-tests-")) / "default.db"
+os.environ["OSINT_DB_URL"] = f"sqlite:///{_TEST_DB.as_posix()}"
+
 import pytest
 from datetime import datetime, timedelta
 from sqlalchemy import create_engine, event
 from sqlalchemy.orm import sessionmaker
 
 from osint_monitor.core.database import Base, Source, RawItem
+
+
+@pytest.fixture(scope="session", autouse=True)
+def _throwaway_default_database():
+    from osint_monitor.core.config import get_settings
+    from osint_monitor.core.database import init_db
+    assert "osint.db" not in get_settings().db_url.replace("default.db", ""), get_settings().db_url
+    init_db(os.environ["OSINT_DB_URL"])
+    yield
 
 
 @pytest.fixture()

@@ -76,6 +76,7 @@ def main(argv=None):
     from osint_monitor.processors.pipeline import process_new_items
     from osint_monitor.processors.principals import mark_principal_actors
     from osint_monitor.processors.situations import assign_situations, get_grouper
+    from osint_monitor.processors.summaries import summarize_events
 
     init_db(url)
     session = get_session(url)
@@ -119,6 +120,7 @@ def main(argv=None):
                 ev.has_contradictions = sc.get("has_contradictions", False)
                 ev.confidence_class = sc.get("confidence_class")
             session.commit()
+            summarize_events(session, now=tick)
             rank_events(session, now=tick)
             assign_situations(session, grouper, now=tick)
             print(f"  {tick:%m-%d %H:%M}  +{new} items, {session.query(Event).count()} events")
