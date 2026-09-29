@@ -141,6 +141,11 @@ Sources are organized by intelligence discipline. Most work without API keys; op
 
 Region focus areas with keyword-based filtering: Iran, China/Taiwan, Russia/Ukraine, Middle East, North Korea, and Africa/Sahel.
 
+The table lists what the code can collect; some rows are not wired into collection (AIS is a stub; Telegram and the
+Twitter API collector are not built) and several need a key. For the exact inventory -- source identities, every
+endpoint, which are enabled here and what a database shows each produced -- run `python main.py inspect sources`
+(read-only; `--db` to read a copy, `--log` to add a daemon log's `[ok]`/`[err]` lines, `--json`).
+
 ## Intelligence Capabilities
 
 ### Entity Resolution with Coreference
@@ -437,6 +442,7 @@ All commands are run via `python main.py <command>` or the installed `osint-moni
 | `alerts` | Check and display current alerts | `--hours-back` (default: 24) |
 | `export` | Dump events, situations, entities, claims, alerts, briefings to `data/export/` | -- |
 | `smoke` | End-to-end check on fixtures in a temporary database (no network, no LLM) | `--keep` |
+| `inspect sources` | Configured source identities and endpoints, enabled/disabled, observations (read-only) | `--db`, `--log`, `--json`, `--active-only`, `--since` |
 | `pause` / `resume` / `status` | Control the daemon pipeline | -- |
 
 Running `python main.py` with no arguments defaults to `collect`.

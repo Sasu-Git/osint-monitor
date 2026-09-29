@@ -9,7 +9,6 @@ from datetime import datetime, timedelta
 
 import hdbscan
 import numpy as np
-from rapidfuzz import fuzz
 from sqlalchemy.orm import Session, joinedload
 
 from osint_monitor.core.config import load_event_grouping_config, load_sources_config
@@ -18,6 +17,7 @@ from osint_monitor.core.database import (
 )
 from osint_monitor.core.models import ExtractedEntity, EntityType, EntityRole
 from osint_monitor.processors.embeddings import blob_to_embedding
+from osint_monitor.processors import lexical
 from osint_monitor.processors.event_grouping import NARRATIVE, STRUCTURED, group_structured, partition
 from osint_monitor.processors.scoring import compute_composite_severity
 
@@ -31,7 +31,8 @@ MIN_CLUSTER_SIZE = 2
 # the same topic score <= 0.51; templated single-source feeds (sanctions lists, stock
 # moves, ADS-B snapshots, seismic) score 0.45-0.85 among themselves.
 LINK_SIMILARITY = 0.53             # cross-source link: midpoint between 0.51 (different) and 0.55 (same)
-SAME_SOURCE_TITLE_RATIO = 90       # same outlet: only near-identical headlines (story updates) link
+# same outlet: only near-identical headlines (story updates) link -- lexical.same_source_update,
+# threshold ``lexical.same_source_title_ratio`` in config/event_grouping.yaml (90)
 MEMBER_SIMILARITY = 0.45           # minimum cosine to the cluster centroid after linking
 MAX_LINK_HOURS = 72
 LARGE_CLUSTER_WARNING = 10
@@ -133,15 +134,17 @@ def cluster_narrative(items: list[RawItem], min_cluster_size: int = MIN_CLUSTER_
     # HDBSCAN proposes; the link graph decides (cuts topical and templated-feed merges)
     by_id = {item.id: item for item in items}
     vectors = {item_id: X[idx] for idx, item_id in enumerate(item_ids)}
+    # lexical guard (candidate, off by default): item terms for _linked
+    terms = lexical.batch_terms([by_id[i] for i in item_ids]) if lexical.settings().guard.enabled else {}
     refined: dict[int, list[int]] = {}
     for ids in clusters.values():
-        for part in refine_cluster([_ClusterMember.of(by_id[i], vectors[i]) for i in ids], min_cluster_size):
+        for part in refine_cluster([_ClusterMember.of(by_id[i], vectors[i], terms.get(i)) for i in ids], min_cluster_size):
             refined[len(refined)] = part
     # HDBSCAN labels small or sparse batches as noise; the same strict links recover
     # multi-outlet reports of one development among them
     clustered = {i for part in refined.values() for i in part}
-    noise = [_ClusterMember.of(by_id[i], vectors[i]) for i in item_ids if i not in clustered]
-    noise = _attach_to_clusters(noise, refined, by_id, vectors)
+    noise = [_ClusterMember.of(by_id[i], vectors[i], terms.get(i)) for i in item_ids if i not in clustered]
+    noise = _attach_to_clusters(noise, refined, by_id, vectors, terms)
     rescued = refine_cluster(noise, min_cluster_size)
     for part in rescued:
         refined[len(refined)] = part
@@ -155,14 +158,15 @@ def cluster_narrative(items: list[RawItem], min_cluster_size: int = MIN_CLUSTER_
 
 
 class _ClusterMember:
-    __slots__ = ("id", "source_id", "title", "time", "vector")
+    __slots__ = ("id", "source_id", "title", "time", "vector", "terms")
 
-    def __init__(self, id, source_id, title, time, vector):
+    def __init__(self, id, source_id, title, time, vector, terms=None):
         self.id, self.source_id, self.title, self.time, self.vector = id, source_id, title, time, vector
+        self.terms = terms            # lexical.ItemTerms, only when the lexical guard is enabled
 
     @classmethod
-    def of(cls, item: RawItem, vector: np.ndarray) -> "_ClusterMember":
-        return cls(item.id, item.source_id, item.title or "", item.published_at or item.fetched_at, vector)
+    def of(cls, item: RawItem, vector: np.ndarray, terms=None) -> "_ClusterMember":
+        return cls(item.id, item.source_id, item.title or "", item.published_at or item.fetched_at, vector, terms)
 
 
 def _cosine(a: np.ndarray, b: np.ndarray) -> float:
@@ -174,14 +178,21 @@ def _linked(a: _ClusterMember, b: _ClusterMember) -> bool:
     if a.time and b.time and abs((a.time - b.time).total_seconds()) > MAX_LINK_HOURS * 3600:
         return False
     if a.source_id == b.source_id:
-        return fuzz.ratio(a.title.lower(), b.title.lower()) >= SAME_SOURCE_TITLE_RATIO
-    return _cosine(a.vector, b.vector) >= LINK_SIMILARITY
+        return lexical.same_source_update(a.title, b.title)
+    similarity = _cosine(a.vector, b.vector)
+    if similarity < LINK_SIMILARITY:
+        return False
+    if a.terms is not None and b.terms is not None:        # lexical guard enabled (candidate)
+        return lexical.guard_allows(lexical.keyword_link_evidence(a.terms, b.terms), similarity)
+    return True
 
 
 def _attach_to_clusters(noise: list[_ClusterMember], clusters: dict[int, list[int]],
-                        by_id: dict, vectors: dict) -> list[_ClusterMember]:
+                        by_id: dict, vectors: dict, terms: dict | None = None) -> list[_ClusterMember]:
     """Add each noise item to the cluster it links to and sits closest to; return the rest."""
-    members = {label: [_ClusterMember.of(by_id[i], vectors[i]) for i in ids] for label, ids in clusters.items()}
+    terms = terms or {}
+    members = {label: [_ClusterMember.of(by_id[i], vectors[i], terms.get(i)) for i in ids]
+               for label, ids in clusters.items()}
     centroids = {label: np.mean([m.vector for m in ms], axis=0) for label, ms in members.items()}
     left = []
     for item in noise:

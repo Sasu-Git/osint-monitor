@@ -58,7 +58,9 @@ def main():
     sub_inspect.add_argument("target", nargs="?", choices=list(INSPECT_TARGETS), default="events",
                              help="events (default): event clusters; clustering: recall diagnostics for narrative "
                                   "clustering; situations: what situation grouping decides for each event, and why; "
-                                  "clustering-benchmark: replay frozen benchmark windows (needs --development or --holdout)")
+                                  "clustering-benchmark: replay frozen benchmark windows (needs --development or --holdout); "
+                                  "sources: every configured source and endpoint, enabled or not, and what the "
+                                  "database shows it produced (read-only)")
     sub_inspect.add_argument("--event", type=int, default=None, help="Show one event in full")
     sub_inspect.add_argument("--sort", choices=["rank", "size", "recent"], default="rank")
     sub_inspect.add_argument("--limit", type=int, default=10)
@@ -82,6 +84,14 @@ def main():
     sub_inspect.add_argument("--segmentation", action="store_true",
                              help="clustering-benchmark: evaluate development segmentation (config/event_grouping.yaml) "
                                   "instead of the link-rule variants")
+    sub_inspect.add_argument("--json", action="store_true", help="sources: print the inventory as JSON")
+    sub_inspect.add_argument("--active-only", action="store_true", help="sources: list only endpoints with stored items")
+    sub_inspect.add_argument("--since", default="24h",
+                             help="sources: recent-activity window, e.g. 24h, 7d (default 24h)")
+    sub_inspect.add_argument("--db", default=None,
+                             help="sources: SQLite file to read (read-only); default: the configured database")
+    sub_inspect.add_argument("--log", default=None,
+                             help="sources: daemon stdout log to read collector [ok]/[err] lines from")
 
     # benchmark: build, label and freeze clustering benchmark windows (evaluations/clustering/)
     sub_bench = subparsers.add_parser("benchmark", help="Build and freeze clustering benchmark windows")
@@ -512,7 +522,53 @@ def _cmd_benchmark(args):
 
 
 # inspect targets other than "events" (the default, handled in _cmd_inspect)
+def _parse_since(value: str):
+    from datetime import timedelta
+    import re
+    m = re.fullmatch(r"(\d+)\s*([hd])", (value or "").strip().lower())
+    if not m:
+        raise SystemExit(f"--since: expected e.g. 24h or 7d, got {value!r}")
+    n = int(m.group(1))
+    return timedelta(hours=n) if m.group(2) == "h" else timedelta(days=n)
+
+
+def _cmd_inspect_sources(args):
+    """Read-only: builds no collectors' network calls, never migrates or writes the database."""
+    import json
+    from datetime import datetime
+    from pathlib import Path
+
+    from osint_monitor.collectors import inventory as inv
+    from osint_monitor.core.config import get_settings
+
+    since = _parse_since(args.since)
+    db = args.db
+    if db is None:
+        url = get_settings().db_url
+        db = url.removeprefix("sqlite:///") if url.startswith("sqlite:///") else None
+    endpoints = inv.configured_endpoints()
+    observations = None
+    if db and Path(db).exists():
+        observations = inv.read_observations(db, now=datetime.fromisoformat(args.now) if args.now else None)
+    elif db:
+        print(f"(no database at {db}: configuration only)")
+    log = inv.read_log(args.log) if args.log else None
+    rows = inv.build_inventory(endpoints, observations, log)
+    summary = inv.summarize(rows, observations)
+    if observations is not None and since != _parse_since("24h"):
+        summary[f"endpoints_active_since_{args.since}"] = sum(
+            1 for r in rows if r.last_observed and r.last_observed >= observations.now - since)
+    issues = inv.naming_issues(endpoints, observations)
+    if args.active_only and observations is not None:
+        rows = [r for r in rows if r.last_observed and r.last_observed >= observations.now - since]
+    if args.json:
+        print(json.dumps(inv.inventory_json(rows, summary, issues), indent=1, default=str))
+    else:
+        print(inv.format_inventory(rows, summary, issues))
+
+
 INSPECT_TARGETS = {
+    "sources": _cmd_inspect_sources,
     "events": None,
     "clustering": _cmd_inspect_clustering,
     "situations": _cmd_inspect_situations,
