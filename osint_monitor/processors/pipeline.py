@@ -10,12 +10,14 @@ from __future__ import annotations
 
 import logging
 import threading
+import time
 from datetime import datetime
 
 from sqlalchemy.orm import Session
 
 from osint_monitor.core.config import load_sources_config, get_settings
 from osint_monitor.core.database import (
+    is_lock_error,
     Event, EventItem, ItemEntity, RawItem, Source, get_session, init_db,
 )
 from osint_monitor.core.models import RawItemModel
@@ -31,7 +33,14 @@ logger = logging.getLogger(__name__)
 
 # Lock to serialize the processing stage (NLP/embedding/clustering) across tiers.
 # Collection is I/O-bound and runs in parallel; processing is CPU-bound and serialized.
-_processing_lock = threading.Lock()
+_processing_lock = threading.RLock()
+# Tiers collect concurrently (network-bound), but only one at a time processes and
+# post-processes: SQLite has a single writer, and two tiers' write phases overlapping after a
+# resume made one of them fail with "database is locked". Re-entrant: run_tier holds it around
+# process_new_items, which takes it too.
+DB_WRITE_LOCK = _processing_lock
+LOCK_RETRIES = 3                 # per item / per stage, after the busy timeout has already waited
+LOCK_BACKOFF_SECONDS = 1.0       # 1 s, 2 s, 4 s
 
 # ---------------------------------------------------------------------------
 # Tier assignment — single source of truth
@@ -367,23 +376,46 @@ def process_new_items(session: Session, raw_items: list[RawItemModel]) -> dict:
         resolver = EntityResolver(session)
         resolver.seed_from_config()
 
+        lock_failures = 0
         for raw_item in raw_items:
-            savepoint = session.begin_nested()
-            try:
-                _process_single_item(session, raw_item, deduplicator, resolver, stats)
-                savepoint.commit()
-            except SpacyModelMissing:
-                savepoint.rollback()
-                session.rollback()
-                raise          # setup problem, not a bad item: stop with the install instruction
-            except Exception as e:
-                savepoint.rollback()
-                logger.error(f"Failed to process: {raw_item.title[:60]}: {e}")
-                continue
+            for attempt in range(LOCK_RETRIES + 1):
+                savepoint = session.begin_nested()
+                try:
+                    _process_single_item(session, raw_item, deduplicator, resolver, stats)
+                    savepoint.commit()
+                    break
+                except SpacyModelMissing:
+                    savepoint.rollback()
+                    session.rollback()
+                    raise          # setup problem, not a bad item: stop with the install instruction
+                except Exception as e:
+                    savepoint.rollback()
+                    if is_lock_error(e) and attempt < LOCK_RETRIES:
+                        time.sleep(LOCK_BACKOFF_SECONDS * 2 ** attempt)
+                        continue       # transient: the same item again, nothing half-written
+                    if is_lock_error(e):
+                        lock_failures += 1
+                    logger.error(f"Failed to process: {raw_item.title[:60]}: {e}")
+                    break
 
-        session.commit()
+        _commit_with_retry(session)
+        if lock_failures:
+            logger.error(f"{lock_failures} items not stored: the database stayed locked after {LOCK_RETRIES} "
+                         f"retries. They are collected again while they remain in their feeds.")
+        stats["lock_failures"] = lock_failures
 
     return stats
+
+
+def _commit_with_retry(session: Session) -> None:
+    for attempt in range(LOCK_RETRIES + 1):
+        try:
+            session.commit()
+            return
+        except Exception as e:
+            if not is_lock_error(e) or attempt == LOCK_RETRIES:
+                raise
+            time.sleep(LOCK_BACKOFF_SECONDS * 2 ** attempt)
 
 
 def run_post_processing(session: Session, quiet: bool = False, offline: bool = False) -> dict:
@@ -414,14 +446,21 @@ def run_post_processing(session: Session, quiet: bool = False, offline: bool = F
         if network and offline:
             stages[name] = "skipped (offline)"
             return
-        try:
-            fn()
-            stages[name] = "ok"
-        except Exception as e:
-            session.rollback()
-            stages[name] = f"failed: {type(e).__name__}: {e}"
-            logger.error(f"Pipeline stage '{name}' failed: {e}", exc_info=True)
-            _print(f"  !! {name} failed: {e}")
+        for attempt in range(LOCK_RETRIES + 1):
+            try:
+                fn()
+                stages[name] = "ok" if attempt == 0 else f"ok (after {attempt} lock retries)"
+                return
+            except Exception as e:
+                session.rollback()          # stages are idempotent: a retry recomputes from committed state
+                if is_lock_error(e) and attempt < LOCK_RETRIES:
+                    logger.warning(f"Pipeline stage '{name}': database locked, retry {attempt + 1}/{LOCK_RETRIES}")
+                    time.sleep(LOCK_BACKOFF_SECONDS * 2 ** attempt)
+                    continue
+                stages[name] = f"failed: {type(e).__name__}: {e}"
+                logger.error(f"Pipeline stage '{name}' failed: {e}", exc_info=True)
+                _print(f"  !! {name} failed: {e}")
+                return
 
     # 1. Clustering
     _print("--- Clustering events ---")
@@ -604,19 +643,18 @@ def run_tier(tier: str, db_url: str | None = None, quiet: bool = False) -> dict:
     session = get_session(db_url)
 
     try:
-        # 1. Collect this tier
+        # 1. Collect this tier (concurrently with other tiers: network-bound)
         raw_items = run_collection_for_tier(session, tier)
 
-        # 2. Process new items (delta only)
-        proc_stats = process_new_items(session, raw_items)
-
-        # 3. If we got new items, run post-processing (clustering, fusion, etc.)
-        if proc_stats.get("new_items", 0) > 0:
-            post_stats = run_post_processing(session, quiet=quiet)
-            proc_stats.update(post_stats)
-            logger.info(f"[{tier}] {proc_stats['new_items']} new items processed, post-processing complete")
-        else:
-            logger.info(f"[{tier}] No new items, skipping post-processing")
+        # 2-3. Write phase, one tier at a time: process new items, then post-process
+        with DB_WRITE_LOCK:
+            proc_stats = process_new_items(session, raw_items)
+            if proc_stats.get("new_items", 0) > 0:
+                post_stats = run_post_processing(session, quiet=quiet)
+                proc_stats.update(post_stats)
+                logger.info(f"[{tier}] {proc_stats['new_items']} new items processed, post-processing complete")
+            else:
+                logger.info(f"[{tier}] No new items, skipping post-processing")
 
         return proc_stats
 

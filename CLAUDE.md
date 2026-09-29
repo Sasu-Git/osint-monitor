@@ -130,6 +130,8 @@ Each tier does **delta-only processing**: dedup immediately, NLP/embedding/clust
 
 Tier intervals are configurable in `config/sources.yaml` under the `tiers:` section.
 
+After a host suspend, stale runs are skipped rather than replayed, job slots are staggered, tiers write to SQLite one at a time, and collection gaps are logged (`data/logs/collection_gaps.jsonl`, `python main.py status`). The daemon does not keep the host awake: see `docs/operations.md` for continuous-collection deployment.
+
 ### On/Off Control
 
 The pipeline can be paused and resumed without killing the daemon process.
