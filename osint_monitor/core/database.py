@@ -361,6 +361,16 @@ class SchemaMeta(Base):
 _engine = None
 _SessionFactory = None
 
+# SQLite allows one writer at a time. A writer waits this long for the lock before failing
+# (pysqlite's default is 5 s, shorter than one tier's post-processing write).
+SQLITE_BUSY_TIMEOUT_SECONDS = 30
+
+
+def is_lock_error(exc: BaseException) -> bool:
+    """Whether an exception is SQLite's transient "database is locked" / "busy" error."""
+    text = str(exc).lower()
+    return "database is locked" in text or "database table is locked" in text or "database is busy" in text
+
 
 def get_engine(db_url: str | None = None):
     """Get or create the database engine."""
@@ -371,7 +381,8 @@ def get_engine(db_url: str | None = None):
             db_url = get_settings().db_url   # OSINT_DB_URL, default data/osint.db
         if db_url.startswith("sqlite:///") and db_url != "sqlite:///:memory:":
             Path(db_url.removeprefix("sqlite:///")).parent.mkdir(parents=True, exist_ok=True)
-        _engine = create_engine(db_url, echo=False)
+        connect_args = {"timeout": SQLITE_BUSY_TIMEOUT_SECONDS} if db_url.startswith("sqlite") else {}
+        _engine = create_engine(db_url, echo=False, connect_args=connect_args)
         # Enable WAL mode for SQLite
         if db_url.startswith("sqlite"):
             @event.listens_for(_engine, "connect")

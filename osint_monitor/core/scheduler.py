@@ -8,15 +8,25 @@ Three collection tiers run at different intervals:
 Each tier collects, processes deltas (dedup + NLP on new items only), and triggers
 post-processing (clustering, fusion, I&W) only when new items appear. If a tier is
 still running when its next tick fires, the tick is skipped.
+
+Resume behaviour (host suspend, scheduler blocked): every job's slots are staggered by a
+fixed offset (JOB_OFFSETS), so tiers never become due in the same second; a run more than
+MISFIRE_GRACE_SECONDS late is skipped and coalesced into the next slot, never replayed; and
+tiers collect concurrently but write one at a time (pipeline.DB_WRITE_LOCK). Long silences
+are reported as collection gaps (log, status, data/logs/collection_gaps.jsonl): the daemon
+does not keep the host awake -- see docs/operations.md.
 """
 
 from __future__ import annotations
 
+import json
 import logging
 import threading
-from datetime import datetime
+from collections import deque
+from datetime import datetime, timedelta
 from pathlib import Path
 
+from apscheduler.events import EVENT_JOB_MISSED
 from apscheduler.schedulers.background import BackgroundScheduler
 
 from osint_monitor.core.database import get_session, init_db
@@ -35,6 +45,59 @@ _PAUSE_FLAG = Path(__file__).parent.parent.parent / "data" / "pause"
 
 # Module-level reference to the active scheduler (set by create_scheduler)
 _active_scheduler: BackgroundScheduler | None = None
+
+# Fixed per-job offsets (seconds) added to the first run. With the default intervals (150 s,
+# 600 s, 3600 s, 600 s, 7200 s) no two jobs ever share a slot.
+JOB_OFFSETS = {"tier_hot": 0, "tier_warm": 40, "tier_cold": 80, "alerts": 20, "analysis": 100}
+MISFIRE_GRACE_SECONDS = 30        # later than this: skip the stale run (coalesced), do not replay it
+GAP_FACTOR = 3                    # a tier silent for > 3 intervals (and > GAP_MIN_SECONDS) is a gap
+GAP_MIN_SECONDS = 900
+_GAP_LOG = Path(__file__).parent.parent.parent / "data" / "logs" / "collection_gaps.jsonl"
+
+_last_tick: dict[str, datetime] = {}
+_intervals: dict[str, int] = {}
+_recent_gaps: deque = deque(maxlen=50)
+
+
+def record_gap(kind: str, subject: str, since: datetime, until: datetime, expected_seconds: int | None = None) -> dict:
+    """Report a collection gap: logged as a warning, kept for status, appended to the gap log."""
+    seconds = int((until - since).total_seconds())
+    gap = {"kind": kind, "subject": subject, "from": since.isoformat(timespec="seconds"),
+           "to": until.isoformat(timespec="seconds"), "seconds": seconds, "expected_every": expected_seconds}
+    logger.warning(f"Collection gap ({kind}): {subject} idle {timedelta(seconds=seconds)} "
+                   f"from {gap['from']} to {gap['to']}"
+                   + (f", expected every {expected_seconds}s" if expected_seconds else "")
+                   + " -- likely host suspend/resume or a blocked scheduler")
+    _recent_gaps.append(gap)
+    try:
+        _GAP_LOG.parent.mkdir(parents=True, exist_ok=True)
+        with open(_GAP_LOG, "a", encoding="utf-8") as f:
+            f.write(json.dumps(gap) + "\n")
+    except OSError:
+        pass
+    return gap
+
+
+def check_tier_gap(tier: str, now: datetime | None = None) -> dict | None:
+    """Called when a tier tick starts: a gap if the tier has been silent for too long."""
+    now = now or datetime.utcnow()
+    last, interval = _last_tick.get(tier), _intervals.get(tier)
+    _last_tick[tier] = now
+    if last is None or not interval:
+        return None
+    if (now - last).total_seconds() > max(GAP_FACTOR * interval, GAP_MIN_SECONDS):
+        return record_gap("tier_silence", f"{tier} tier", last, now, interval)
+    return None
+
+
+def _on_job_missed(event) -> None:
+    """APScheduler skipped a run that was more than the misfire grace late. With coalescing it
+    reports only the latest stale slot, so this is a lower bound on the gap; the full silence is
+    measured by check_tier_gap on the tier's next tick."""
+    late = datetime.now(event.scheduled_run_time.tzinfo) - event.scheduled_run_time
+    if late.total_seconds() > GAP_MIN_SECONDS:
+        record_gap("missed_run", event.job_id, event.scheduled_run_time.replace(tzinfo=None),
+                   datetime.now(event.scheduled_run_time.tzinfo).replace(tzinfo=None))
 
 
 def is_paused() -> bool:
@@ -74,6 +137,8 @@ def get_status() -> dict:
         "paused": paused,
         "paused_since": _PAUSE_FLAG.read_text().strip() if paused else None,
         "jobs": jobs,
+        "last_tick": {t: v.isoformat(timespec="seconds") for t, v in _last_tick.items()},
+        "recent_gaps": list(_recent_gaps)[-10:],
     }
 
 
@@ -87,6 +152,7 @@ def _run_tier_job(tier: str):
     if not lock.acquire(blocking=False):
         logger.info(f"[{tier}] Still running from previous tick, skipping")
         return
+    check_tier_gap(tier)
     try:
         from osint_monitor.processors.pipeline import run_tier
         stats = run_tier(tier, quiet=True)
@@ -121,13 +187,15 @@ def _run_tier_job(tier: str):
 def _run_analysis_job():
     """Scheduled job: run trend analysis + anomaly detection."""
     from osint_monitor.analysis.trends import snapshot_trends, detect_anomalies, create_trend_alerts
+    from osint_monitor.processors.pipeline import DB_WRITE_LOCK
     try:
-        session = get_session()
-        snapshot_trends(session)
-        anomalies = detect_anomalies(session)
-        if anomalies:
-            create_trend_alerts(session, anomalies)
-        session.close()
+        with DB_WRITE_LOCK:                  # writes: one writer at a time with the tiers
+            session = get_session()
+            snapshot_trends(session)
+            anomalies = detect_anomalies(session)
+            if anomalies:
+                create_trend_alerts(session, anomalies)
+            session.close()
     except Exception as e:
         logger.error(f"Analysis job failed: {e}")
 
@@ -137,18 +205,19 @@ def _run_alert_job():
     from osint_monitor.alerting.engine import AlertEngine
     from osint_monitor.alerting.channels import build_channels, dispatch_alerts
     from osint_monitor.core.config import load_alerts_config
+    from osint_monitor.processors.pipeline import DB_WRITE_LOCK
     try:
-        session = get_session()
-        engine = AlertEngine(session)
-        alerts = engine.evaluate_all(hours_back=1)
-        engine.escalate_unacknowledged()
+        with DB_WRITE_LOCK:                  # writes alerts: one writer at a time with the tiers
+            session = get_session()
+            engine = AlertEngine(session)
+            alerts = engine.evaluate_all(hours_back=1)
+            engine.escalate_unacknowledged()
+            session.close()
 
-        if alerts:
+        if alerts:                           # delivery is network I/O: outside the lock
             config = load_alerts_config()
             channels = build_channels([c.model_dump() for c in config.channels])
             dispatch_alerts(alerts, channels)
-
-        session.close()
     except Exception as e:
         logger.error(f"Alert job failed: {e}")
 
@@ -170,46 +239,35 @@ def create_scheduler() -> BackgroundScheduler:
     tier_cfg = config.tiers
 
     global _active_scheduler
-    scheduler = BackgroundScheduler()
+    scheduler = BackgroundScheduler(job_defaults={"coalesce": True, "misfire_grace_time": MISFIRE_GRACE_SECONDS,
+                                                  "max_instances": 1})
     _active_scheduler = scheduler
+    scheduler.add_listener(_on_job_missed, EVENT_JOB_MISSED)
+    now = datetime.now().astimezone()
+
+    def first_run(job_id: str, interval: int) -> datetime:
+        return now + timedelta(seconds=interval + JOB_OFFSETS.get(job_id, 0))
 
     # --- Tiered collection ---
-    scheduler.add_job(
-        _run_tier_job,
-        "interval",
-        seconds=tier_cfg.hot_interval_seconds,
-        args=["hot"],
-        id="tier_hot",
-        name=f"Hot tier ({tier_cfg.hot_interval_seconds}s)",
-        max_instances=1,
-        coalesce=True,
-    )
-    scheduler.add_job(
-        _run_tier_job,
-        "interval",
-        seconds=tier_cfg.warm_interval_seconds,
-        args=["warm"],
-        id="tier_warm",
-        name=f"Warm tier ({tier_cfg.warm_interval_seconds}s)",
-        max_instances=1,
-        coalesce=True,
-    )
-    scheduler.add_job(
-        _run_tier_job,
-        "interval",
-        seconds=tier_cfg.cold_interval_seconds,
-        args=["cold"],
-        id="tier_cold",
-        name=f"Cold tier ({tier_cfg.cold_interval_seconds}s)",
-        max_instances=1,
-        coalesce=True,
-    )
+    for tier, interval in (("hot", tier_cfg.hot_interval_seconds), ("warm", tier_cfg.warm_interval_seconds),
+                           ("cold", tier_cfg.cold_interval_seconds)):
+        _intervals[tier] = interval
+        scheduler.add_job(
+            _run_tier_job,
+            "interval",
+            seconds=interval,
+            start_date=first_run(f"tier_{tier}", interval),
+            args=[tier],
+            id=f"tier_{tier}",
+            name=f"{tier.capitalize()} tier ({interval}s)",
+        )
 
     # --- Non-collection jobs ---
     scheduler.add_job(
         _run_analysis_job,
         "interval",
         hours=2,
+        start_date=first_run("analysis", 7200),
         id="analysis",
         name="Trend analysis",
     )
@@ -218,6 +276,7 @@ def create_scheduler() -> BackgroundScheduler:
         _run_alert_job,
         "interval",
         minutes=10,
+        start_date=first_run("alerts", 600),
         id="alerts",
         name="Alert evaluation",
     )
