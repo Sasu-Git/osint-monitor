@@ -1,0 +1,399 @@
+# Gold labels for 2026-09-29-live. See osint_monitor/benchmark/format.py for the format.
+# Criteria: a development is one concrete occurrence; responses, follow-ups and analysis
+# of it are separate developments in the same storyline (related_but_distinct).
+# Hold-out window: labelled blind from the label sheet only (title + excerpt), with no
+# similarity scores, clusterer output or other windows' labels seen.
+window: 2026-09-29-live
+labelled_by: claude subagent (blind, from label-sheet only)
+labelled_at: '2026-09-29T13:31:36'
+developments:
+# --- Channel crossings / migrants ---------------------------------------------------------
+- id: channel-dinghy-deaths
+  storyline: channel-migration
+  members: [b-4a153d08d5ee, b-3cf92c6e6216]
+  notes: child and two women killed on a packed dinghy off the French coast
+- id: french-police-tear-gas-beach
+  storyline: channel-migration
+  members: [b-af0a5e45fe54]
+- id: ceuta-migrant-children-protest
+  members: [b-1e14a9fd5fd3]
+# --- Bangkok floods ---------------------------------------------------------------------
+- id: bangkok-jet-skier-arrest
+  storyline: bangkok-floods
+  members: [b-1b1606813b1f]
+- id: hk-bangkok-flights-delayed
+  storyline: bangkok-floods
+  members: [b-40a69cb4ab43]
+- id: thai-airways-baggage-backlog
+  storyline: bangkok-floods
+  members: [b-785e84a90dea]
+- id: scmp-asia-weekly-highlights
+  members: [b-3eb6906b57a1]
+  notes: weekly roundup that leads on the Bangkok floods
+# --- Nepal floods -------------------------------------------------------------------------
+- id: nepal-mustang-landslide
+  storyline: nepal-floods
+  members: [b-f3ebb66b568d]
+- id: nepal-floods-landslides-avalanche
+  storyline: nepal-floods
+  members: [b-df170ba8afbf]
+  notes: nationwide round-up; may include the Mustang landslide (see uncertain pair)
+# --- Sydney data centre ---------------------------------------------------------------------
+- id: sydney-data-centre-scrapped
+  members: [b-8fb029d657d6, b-637b3d5573c9]
+# --- Korea -----------------------------------------------------------------------------------
+- id: seoul-summons-ukraine-envoy
+  storyline: korea-ukraine-pow-row
+  members: [b-f9b0ad6ea17a]
+- id: why-seoul-demands-ukraine-apology
+  storyline: korea-ukraine-pow-row
+  members: [b-3de08fe146d7]
+  notes: explainer on the same row
+- id: dmz-blast-north-korean-mines
+  members: [b-d80ca3e43777, b-7c617a10d6c2]
+  notes: Seoul's finding that North Korean mines caused the DMZ blast
+# --- Russia-Ukraine ------------------------------------------------------------------------
+- id: kyiv-academy-of-sciences-strike
+  storyline: russia-strikes-kyiv
+  members: [b-064c29499f9b, b-c9c7d7522825]
+- id: russia-pounds-kyiv-after-academy
+  storyline: russia-strikes-kyiv
+  members: [b-7ab9d4f9476b]
+  notes: further strikes after the Academy attack (see uncertain pair)
+- id: russia-2027-defence-budget
+  members: [b-9d7da06167d7]
+- id: putin-decree-15500-troops
+  members: [b-0633320f8e01]
+- id: ukraine-compass-digest
+  members: [b-5ea56aab723d]
+# --- Myanmar / Rohingya -------------------------------------------------------------------
+- id: myanmar-rakhine-market-airstrike
+  members: [b-fda9eb4fcc44, b-c746008c89ee]
+- id: malaysia-repatriation-to-myanmar
+  storyline: malaysia-rohingya-returns
+  members: [b-b26c02100dbb, b-9244faa26b60, b-89d356fd2694]
+- id: malaysia-rohingya-analysis
+  storyline: malaysia-rohingya-returns
+  members: [b-faf3df1e7bae]
+# --- Nigeria ----------------------------------------------------------------------------------
+- id: nigerian-dance-marathon-record
+  members: [b-0c4802738f69, b-1f27f2155779]
+- id: nigeria-kidnap-remains-found
+  storyline: nigeria-kidnappings
+  members: [b-a59f8ec99443]
+- id: nigeria-80-abducted
+  storyline: nigeria-kidnappings
+  members: [b-977b4fcde056]
+  notes: leads on new abductions but also reports the remains (see uncertain pair)
+# --- DRC Ebola --------------------------------------------------------------------------------
+- id: congo-politician-beaten-ebola
+  storyline: drc-ebola
+  members: [b-a371b10b41c6]
+- id: ebola-cases-surpass-8000
+  storyline: drc-ebola
+  members: [b-735b71c37f73]
+# --- RAF Fairford plot / UK ------------------------------------------------------------------
+- id: iran-denies-airbase-link
+  storyline: raf-fairford-plot
+  members: [b-02cc975e92ad]
+- id: raf-suspects-bailed
+  storyline: raf-fairford-plot
+  members: [b-7952121c4c72]
+- id: streeting-too-soon-to-blame
+  storyline: raf-fairford-plot
+  members: [b-d0a7777c8cd8]
+- id: rubio-airbase-foreign-actor
+  storyline: raf-fairford-plot
+  members: [b-ecff54014bcd]
+- id: uk-tougher-stance-israel
+  members: [b-5f8ee6e4546c]
+- id: uk-defence-ceos-russia-briefing
+  members: [b-48f193dc4cc6]
+- id: labour-conference-voter-trust
+  members: [b-84d2b0741e1a]
+# --- Iran war / Hormuz --------------------------------------------------------------------
+- id: iraq-oil-export-alternatives
+  storyline: iran-war
+  members: [b-521982d05de7]
+- id: iran-touts-hormuz-attacks
+  storyline: iran-war
+  members: [b-d289a1b37cf7]
+- id: opinion-trump-reject-iran-offer
+  storyline: iran-war
+  members: [b-3a37d34be63f]
+- id: iran-war-live-no-sanctions-relief
+  storyline: iran-war
+  members: [b-d93fa9820e25]
+  notes: live blog leading on Trump denying a sanctions-relief offer
+- id: araghchi-meets-qatari-mediators
+  storyline: iran-war
+  members: [b-17c6186b6eff]
+- id: us-iran-talks-deal-unlikely
+  storyline: iran-war
+  members: [b-7450f173f04f]
+  notes: analysis of the mediated talks
+- id: rubio-saudi-fm-talks
+  storyline: iran-war
+  members: [b-477fe93f6767]
+- id: us-waiver-najaf-iran-flights
+  storyline: iran-war
+  members: [b-a6c5c12bf244]
+- id: najaf-iran-flights-resume
+  storyline: iran-war
+  members: [b-0d1e24ede095]
+  notes: flights resuming and Tehran's UN complaint; consequence of the waiver (see uncertain pair)
+- id: us-forces-leave-iraq
+  members: [b-d90ed8592c5c]
+- id: manila-fuel-price-strike
+  members: [b-c2d13b848d14, b-2a124e6d6445]
+# --- US domestic ---------------------------------------------------------------------------
+- id: trump-iowa-steel-plant
+  members: [b-0df18717b61e, b-1ff757b6dc06]
+- id: cornell-case-reopened
+  storyline: cornell-rape-case
+  members: [b-3f307eb5a7ee, b-63a8f4e5d385]
+- id: cornell-case-explainer
+  storyline: cornell-rape-case
+  members: [b-7404c7e20ad8]
+- id: nyt-executive-shot-by-in-laws
+  members: [b-a18797a56bac, b-e8ec3f6939db]
+- id: fbi-deputy-bailey-resigns
+  members: [b-cfc69af24e1d]
+- id: judge-blocks-antiterror-grant-conditions
+  members: [b-7abbdf871560]
+- id: trump-government-funded-ads
+  members: [b-f04e4569c066]
+- id: us-revokes-latam-officials-visas
+  members: [b-161f4ae0da98]
+- id: china-backs-cuba
+  members: [b-e0278faedc3e]
+- id: tennessee-execution-woman
+  members: [b-d31fa9f7c961]
+- id: nfl-dhs-dawkins-video
+  members: [b-532360b31f86]
+- id: anti-south-asian-hate-report
+  members: [b-b42c7b2032be]
+- id: us-canada-alcohol-dairy-ban
+  members: [b-e9520f7a1679]
+# --- AI / tech -----------------------------------------------------------------------------
+- id: openai-cancels-gpt61-astra
+  members: [b-e8594f8f936b, b-99307cfc5d7b]
+- id: florida-seeks-chatgpt-block
+  members: [b-538912d56123]
+- id: pope-leo-ai-not-fake-news
+  members: [b-fa8563af77d5, b-ec1e7cad5883]
+- id: pope-leo-france-tour-final-day
+  members: [b-f7d4b622f072]
+- id: starship-reaches-orbit
+  members: [b-78f17cadda29, b-899db901c948]
+- id: jensen-huang-us-china-ai
+  members: [b-ac2e2701b595]
+- id: opinion-us-china-ai-control
+  members: [b-7f6480948923]
+- id: amd-acquires-world-labs
+  members: [b-5a7ace5b2eed]
+- id: apple-patent-verdict
+  members: [b-8d0b420e087a]
+- id: china-innovation-five-year-plan
+  members: [b-52edfbe97a80]
+- id: china-15-year-research-grants
+  members: [b-00ccbcc72d17]
+# --- France ------------------------------------------------------------------------------
+- id: bardella-antisemitism-allegations
+  members: [b-63b10f835e71, b-9d76a9fba40a]
+- id: french-school-protests-arrests
+  members: [b-14f6d75a9266]
+- id: swiftair-mali-crash-verdict
+  members: [b-69e53a4e520b]
+# --- Turkey ---------------------------------------------------------------------------------
+- id: turkish-comic-erdogan-conviction
+  members: [b-9b8b32101de8, b-a7a36770caa6]
+  notes: same outlet; sentenced with time served then released - one court outcome
+# --- Israel / Palestine -------------------------------------------------------------------
+- id: uae-confirms-netanyahu-visit
+  storyline: netanyahu-uae-visit
+  members: [b-0115154e4b8c]
+- id: shin-bet-complaint-uae-report
+  storyline: netanyahu-uae-visit
+  members: [b-dfaa73241bf8]
+- id: hamas-commander-al-beik-killed
+  members: [b-74c138ba2cd9]
+- id: jalud-settler-attack
+  members: [b-929eba31cd19]
+- id: west-bank-road-closures
+  members: [b-32ea3aa557f1]
+- id: gaza-satellite-ruins
+  members: [b-89952f3a2670]
+- id: lebanon-watches-israel-election
+  members: [b-5ed6684ab1f9]
+- id: israel-election-settlement-campaign
+  members: [b-0439f1466594]
+- id: al-aqsa-incursions-daily
+  members: [b-3074dd6dffdb]
+# --- UNGA 81 ---------------------------------------------------------------------------------
+- id: unga-durban-commemoration
+  storyline: unga-81
+  members: [b-e4d5122b482c]
+- id: south-sudan-sanctions-unga
+  storyline: unga-81
+  members: [b-6844f5643d75]
+- id: unga-five-takeaways
+  storyline: unga-81
+  members: [b-773c738a7c02]
+- id: slovenia-israel-u-turn
+  storyline: unga-81
+  members: [b-445783adb87f]
+- id: inside-al-jazeera-unga-coverage
+  storyline: unga-81
+  members: [b-c71ec3af11cb]
+# --- Ethiopia ------------------------------------------------------------------------------
+- id: ethiopia-takes-alamata
+  storyline: ethiopia-tigray
+  members: [b-9d8f4d73e686]
+- id: ethiopia-fighting-explainer
+  storyline: ethiopia-tigray
+  members: [b-ca943d59348e]
+# --- Weather -------------------------------------------------------------------------------
+- id: hurricane-polo-approaches-mexico
+  members: [b-353b70c40d58, b-5fcae6a2f23e]
+# --- Other Latin America / Falklands ------------------------------------------------------
+- id: milei-falklands-oil-threat
+  members: [b-cfe55b3ae7c5, b-5876145bc5bf]
+# --- Sport -----------------------------------------------------------------------------------
+- id: belgium-france-nations-league
+  members: [b-6f944abad02d, b-bb70836fab7f]
+  notes: live page of the match and the result report
+- id: spain-croatia-preview
+  members: [b-bc640329722e]
+- id: fifa-infantino-funding
+  storyline: fifa-election
+  members: [b-99d2548a4186]
+- id: fifa-accuses-uefa
+  storyline: fifa-election
+  members: [b-48b915a7dbfe]
+- id: asian-games-javelin-gold
+  members: [b-697ff6b5ebd4]
+- id: asian-games-wrong-venue
+  members: [b-23acff897a49]
+# --- Bandung ------------------------------------------------------------------------------
+- id: bandung-opinion
+  members: [b-612dbb6e4349]
+- id: bandung-documentary
+  members: [b-5c706b2834eb]
+# --- Hong Kong golden week ---------------------------------------------------------------
+- id: hk-checkpoints-golden-week
+  members: [b-228a5fafb60c]
+- id: hk-eco-sites-golden-week
+  members: [b-94116a9815eb]
+- id: hk-golden-week-things-to-do
+  members: [b-df5443a4397e]
+# --- China ---------------------------------------------------------------------------------
+- id: xi-safer-china
+  members: [b-97848e943ce5]
+- id: xi-universities-innovation
+  members: [b-d397c312f959]
+- id: wang-yi-meets-iwaya
+  members: [b-0ad069167c5c]
+- id: japanese-firms-pull-back-china
+  members: [b-ee3a990938c9]
+- id: pimco-china-diversification
+  members: [b-94435e12499f]
+- id: citi-china-30y-bonds
+  members: [b-4b5e4dd55357]
+- id: china-germany-trade-call
+  members: [b-0341cd3fba08]
+- id: us-soybeans-excluded-tariff-cuts
+  members: [b-a75b442337bd]
+- id: pandas-arrive-atlanta
+  members: [b-98af9c194fcf]
+- id: trump-china-weapons-analysis
+  members: [b-e0a652fcd1bd]
+# --- Spain -------------------------------------------------------------------------------------
+- id: madrid-housing-tent-camps
+  members: [b-14e3b42d3b32]
+- id: evicted-pensioner-returns
+  members: [b-d2125b9ecb70]
+# --- India ------------------------------------------------------------------------------------
+- id: india-mosque-demolition-clashes
+  members: [b-882bd2c74b01]
+- id: maharashtra-conversion-law
+  members: [b-483c81b60fe7]
+- id: india-releases-vandyke-ukrainians
+  members: [b-a4af874c5eac]
+# --- Hong Kong crime ------------------------------------------------------------------------
+- id: hk-gym-pinhole-cameras
+  members: [b-6ee8d7276bc6]
+- id: hk-hammer-attack-sentence
+  members: [b-c4fb5cc3cff7]
+# --- Defence industry -----------------------------------------------------------------------
+- id: aia-bain-defense-investment
+  members: [b-e84ee254869f]
+- id: opinion-washington-shareholder
+  members: [b-7908e0a4c5a4]
+- id: eu-five-defense-priorities
+  members: [b-a860f37d2d91]
+- id: us-uk-sinkex
+  members: [b-015386002504]
+- id: nz-australia-plan-tasman
+  members: [b-89c9d2d6eb49]
+- id: french-artillery-drone-reorg
+  members: [b-d0258b05e559]
+# --- other newsworthy singletons ---------------------------------------------------------
+- id: hungary-lifts-magyar-immunity
+  members: [b-65e61f7fce4d]
+- id: italy-regeni-conviction
+  members: [b-3137cf025754]
+- id: italy-muslims-burqa-ban
+  members: [b-4b08bec334c3]
+- id: iran-singer-lashes-upheld
+  members: [b-687e1effd269]
+- id: somalia-baidoa-clashes
+  members: [b-954bb49e8e93]
+- id: south-africa-women-killings
+  members: [b-6d25dfafc406]
+- id: vietnam-abducted-activists
+  members: [b-abe5a491fa1d]
+- id: uganda-journalist-crowned-king
+  members: [b-8adcd4a195ad]
+- id: australia-rate-hike
+  members: [b-9eaf7ff421e1]
+- id: gold-falls
+  members: [b-cc183cabbac7]
+- id: burkina-gold-refinery
+  members: [b-5e685c9a6edc]
+- id: indonesia-vip-prison-compound
+  members: [b-8b8deaca352b]
+related_pairs:
+- [b-48f193dc4cc6, b-02cc975e92ad, UK state-threat briefing on Russia vs Iran airbase denial - distinct]
+- [b-9d7da06167d7, b-0633320f8e01, Russian military budget vs Putin troop decree - distinct]
+- [b-d80ca3e43777, b-f9b0ad6ea17a, both South Korea and North Korea - DMZ blast vs PoW row]
+- [b-fda9eb4fcc44, b-9244faa26b60, Myanmar airstrike vs Malaysia repatriation to Myanmar]
+- [b-fa8563af77d5, b-f7d4b622f072, Pope Leo AI remarks vs France tour final day]
+- [b-e8594f8f936b, b-538912d56123, OpenAI model cancelled vs Florida seeks ChatGPT block]
+- [b-ac2e2701b595, b-7f6480948923, Jensen Huang remarks vs opinion on US-China AI race]
+- [b-52edfbe97a80, b-00ccbcc72d17, Chinese science blueprint vs research grant scheme]
+- [b-97848e943ce5, b-d397c312f959, two separate Xi Jinping directives]
+- [b-94435e12499f, b-4b5e4dd55357, Pimco vs Citi views on Chinese bonds]
+- [b-0ad069167c5c, b-ee3a990938c9, Wang Yi meeting with Japanese delegation vs survey of Japanese firms]
+- [b-228a5fafb60c, b-94116a9815eb, golden week checkpoints vs eco-site overtourism]
+- [b-228a5fafb60c, b-df5443a4397e, golden week checkpoints vs things-to-do guide]
+- [b-612dbb6e4349, b-5c706b2834eb, Bandung opinion vs documentary]
+- [b-6f944abad02d, b-bc640329722e, two different Nations League matches]
+- [b-697ff6b5ebd4, b-23acff897a49, both Asian Games - different incidents]
+- [b-14e3b42d3b32, b-d2125b9ecb70, Spanish housing - tent camps vs evicted pensioner]
+- [b-929eba31cd19, b-32ea3aa557f1, West Bank settler attack vs road closures]
+- [b-5ed6684ab1f9, b-0439f1466594, both about the upcoming Israeli election]
+- [b-882bd2c74b01, b-483c81b60fe7, India religion - mosque demolitions vs conversion law]
+- [b-af0a5e45fe54, b-1e14a9fd5fd3, migrants - Channel tear gas vs Ceuta children]
+- [b-e84ee254869f, b-7908e0a4c5a4, defense industrial investment study vs government-shareholder op-ed]
+- [b-d90ed8592c5c, b-a6c5c12bf244, US-Iraq troop withdrawal vs Iran-Iraq flight waiver]
+- [b-6ee8d7276bc6, b-c4fb5cc3cff7, two Hong Kong court cases]
+- [b-2a124e6d6445, b-d289a1b37cf7, Manila fuel strike blames Iran war vs Hormuz attacks]
+uncertain_pairs:
+- [b-f3ebb66b568d, b-df170ba8afbf, Nepal-wide flood report may include the Mustang landslide]
+- [b-064c29499f9b, b-7ab9d4f9476b, later report still centres on the Academy strike footage]
+- [b-a59f8ec99443, b-977b4fcde056, both report police finding kidnap victims' remains]
+- [b-a6c5c12bf244, b-0d1e24ede095, flight resumption may be the reporting of the waiver itself]
+- [b-f9b0ad6ea17a, b-3de08fe146d7, explainer may report the same summons]
+- [b-02cc975e92ad, b-5f8ee6e4546c, both may come from one British foreign minister speech]
+notes: ''
