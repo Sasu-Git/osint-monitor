@@ -51,9 +51,10 @@ seismic:
 # link inside a cluster and drops links between items that cannot be one Development; the
 # cluster becomes the connected components of the rest. Analysis items cut off this way are
 # kept as commentary on the Development they discuss. Evidence and settings:
-# evaluations/clustering/development-identity-diagnosis.md
+# evaluations/clustering/development-identity-diagnosis.md; enabled after the blind live
+# validation in evaluations/clustering/segmentation-compatibility.md (set false to turn it off).
 development_segmentation:
-  enabled: false
+  enabled: true
   analysis_headlines: true        # "Why ...?", "What we know ...", explainers vs report headlines
   min_headline_similarity: 0.5    # two outlets' headlines below this cosine are different Developments
   disjoint_locations: true        # both items name places and none is compatible

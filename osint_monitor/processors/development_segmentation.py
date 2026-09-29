@@ -24,7 +24,8 @@ A cluster becomes the connected components of its remaining links. Analysis item
 this way are not evidence of a Development; they are returned as commentary on the group they
 discussed. Other cut-off singletons return to the unclustered pool.
 
-Off by default (``development_segmentation.enabled`` in config/event_grouping.yaml).
+Enabled in config/event_grouping.yaml (``development_segmentation.enabled``). The code default is
+off, so without that file narrative clusters are used unsplit.
 """
 
 from __future__ import annotations
