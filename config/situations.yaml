@@ -21,6 +21,12 @@ policy:
   ambiguity_margin: 0.1
   min_actors_to_create: 2
   create_min_developments: 2
+  # New situations from a recurring canonical actor PAIR among semantically compatible
+  # unassigned developments (evaluated on the frozen benchmark against gold storylines:
+  # more coverage and higher precision than exact actor sets). "actor_set" restores the
+  # previous exact-set rule.
+  create_by: actor_pair
+  create_min_similarity: 0.40
   create_window_days: 7
   dormant_after_days: 14
   centroid_developments: 20

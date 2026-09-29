@@ -34,6 +34,14 @@ def grouper(config):
 
 
 @pytest.fixture(scope="module")
+def set_grouper(config):
+    """The exact actor-set creation rule, for tests of creation mechanics that carry no embeddings."""
+    cfg = config.model_copy(deep=True)
+    cfg.policy.create_by = "actor_set"
+    return SituationGrouper(cfg)
+
+
+@pytest.fixture(scope="module")
 def seeds(config):
     return [SituationProfile(slug=s.slug, title=s.title, region=s.region, primary_actors=s.primary_actors,
                              keywords=s.keywords, status=s.status) for s in config.situations]
@@ -94,7 +102,8 @@ def test_semantic_similarity_separates_storylines_with_the_same_actors(config):
 
 # --- canonical creation, no duplicates ---------------------------------------------------------
 
-def test_recurring_actor_set_creates_one_canonical_situation(grouper, seeds):
+def test_recurring_actor_set_creates_one_canonical_situation(set_grouper, seeds):
+    grouper = set_grouper
     batch = [dev("Israel strikes air-defence sites in Iran", "Israel", "Iran", id=1, hours_ago=5),
              dev("Iran vows response to Israeli strikes", "Tehran", "Israeli", id=2, hours_ago=3),
              dev("Israeli and Iranian officials trade threats", "IDF", "Iranian", id=3, hours_ago=1)]
@@ -105,7 +114,8 @@ def test_recurring_actor_set_creates_one_canonical_situation(grouper, seeds):
     assert all(a.created and R.RECURRING_ACTORS in a.reasons for a in assignments)
 
 
-def test_later_developments_join_the_created_situation_instead_of_duplicating(grouper, seeds):
+def test_later_developments_join_the_created_situation_instead_of_duplicating(set_grouper, seeds):
+    grouper = set_grouper
     first, created = grouper.group([dev("Israel strikes Iran", "Israel", "Iran", id=1),
                                     dev("Iran answers Israel", "Iran", "Israel", id=2)], seeds)
     later, created_again = grouper.group([dev("Israel and Iran exchange fire again", "Israeli", "Iran", id=3)],
@@ -217,7 +227,8 @@ def add_event(session, title, *actors, hours_ago=1.0, region=None, principal=Tru
     return event
 
 
-def test_pipeline_stage_persists_assignments_and_is_idempotent(session, grouper):
+def test_pipeline_stage_persists_assignments_and_is_idempotent(session, set_grouper):
+    grouper = set_grouper
     talks = add_event(session, "US and Iran resume nuclear talks", "United States", "Iran", hours_ago=3)
     quake = add_event(session, "Earthquake hits northern Japan", "Japan", hours_ago=2)
     strikes = [add_event(session, t, "Israel", "Iran", hours_ago=h)
@@ -326,3 +337,44 @@ def test_situation_report_shows_decisions_candidates_and_recurring_pairs(session
     assert report["would_create"] == []
     assert report["recurring_pairs"] == {"houthis + saudi arabia": [rows[t]["event_id"] for t in (
         "Houthis claim attacks on Saudi oil facilities", "France to protect Saudi terminal from Houthis")]}
+
+
+# --- creation by recurring actor pair (configured default) -------------------------------------
+
+SAME, OTHER = [1.0, 0.0], [0.0, 1.0]
+
+
+def test_configured_creation_rule_is_actor_pair(config):
+    assert config.policy.create_by == "actor_pair"
+
+
+def test_recurring_pair_founds_a_situation_and_three_actor_development_joins_it(grouper, seeds):
+    batch = [dev("Serbia and Kosovo trade accusations over border incident", "Serbia", "Kosovo", id=1,
+                 hours_ago=5, embedding=SAME),
+             dev("EU envoy meets Serbia and Kosovo leaders on border incident", "Serbia", "Kosovo", "European Union",
+                 id=2, hours_ago=3, embedding=SAME)]
+    assignments, created = grouper.group(batch, seeds)
+    assert [c.slug for c in created] == ["kosovo-serbia"]
+    assert slugs(assignments) == ["kosovo-serbia"] * 2
+
+
+def test_pair_in_unrelated_stories_does_not_found_a_situation(grouper, seeds):
+    batch = [dev("Serbia and Kosovo trade accusations over border incident", "Serbia", "Kosovo", id=1,
+                 embedding=SAME),
+             dev("Serbia and Kosovo meet in Nations League qualifier", "Serbia", "Kosovo", id=2, embedding=OTHER)]
+    assignments, created = grouper.group(batch, seeds)
+    assert not created and slugs(assignments) == [None, None]
+
+
+def test_pair_without_embeddings_does_not_found_a_situation(grouper, seeds):
+    batch = [dev("Serbia and Kosovo trade accusations", "Serbia", "Kosovo", id=1),
+             dev("Kosovo answers Serbia", "Kosovo", "Serbia", id=2)]
+    assert not grouper.group(batch, seeds)[1]
+
+
+def test_pair_of_an_existing_situation_is_not_founded_again(grouper, seeds):
+    batch = [dev("Russia and Ukraine exchange prisoners", "Russia", "Ukraine", id=1, embedding=SAME,
+                 region="sports"),
+             dev("Russia and Ukraine swap more prisoners", "Russia", "Ukraine", id=2, embedding=SAME, region="sports")]
+    _, created = grouper.group(batch, seeds)
+    assert "russia-ukraine" not in [c.slug for c in created]

@@ -11,9 +11,16 @@ exist, so a missing embedding or region neither helps nor hurts.
                                                      it may only pick an existing candidate
   nothing                                          -> stay unassigned
 
-Unassigned developments whose canonical actor set (>= min_actors_to_create actors)
-recurs at least create_min_developments times become a new situation keyed by that
-actor set -- unless a situation with the same actor set already exists.
+Unassigned developments with principal actors can found a new situation, keyed by
+canonical actors -- never when a situation with the same actors or slug exists:
+
+  create_by: actor_set   the exact actor set (>= min_actors_to_create) recurs in at least
+                         create_min_developments developments
+  create_by: actor_pair  a canonical actor pair recurs in at least create_min_developments
+                         developments that are semantically compatible (cosine >=
+                         create_min_similarity with another member). Pairs are taken most
+                         recurrent first; a development founds at most one situation, and
+                         one with more actors joins through the pair it contains.
 """
 
 from __future__ import annotations
@@ -22,6 +29,7 @@ import logging
 import math
 import re
 from collections import Counter, defaultdict
+from itertools import combinations
 from datetime import datetime
 from typing import Protocol, Sequence, runtime_checkable
 
@@ -162,16 +170,12 @@ class SituationGrouper:
 
         existing_sets = {self.actors.keys(s.primary_actors) for s in situations}
         existing_slugs = {s.slug for s in situations}
-        recurring: dict[frozenset[str], list[int]] = defaultdict(list)
-        for i in order:
-            # only principal actor sets define new storylines; incidental mentions never do
-            if assignments[i].slug is None and developments[i].actors_are_principal:
-                key = self.actors.keys(developments[i].actors)
-                if len(key) >= p.min_actors_to_create:
-                    recurring[key].append(i)
+        # only principal actor sets define new storylines; incidental mentions never do
+        founders = [i for i in order if assignments[i].slug is None and developments[i].actors_are_principal]
+        recurring = self._recurring(developments, founders, existing_sets, existing_slugs)
 
         created: list[SituationProfile] = []
-        for key, members in recurring.items():
+        for key, members in recurring:
             slug = self.actors.slug(key)
             if len(members) < p.create_min_developments or key in existing_sets or slug in existing_slugs:
                 continue
@@ -188,3 +192,41 @@ class SituationGrouper:
                                                      reasons=[R.RECURRING_ACTORS, R.ACTOR_OVERLAP],
                                                      candidates=assignments[i].candidates)
         return list(assignments), created
+
+    def _recurring(self, developments: Sequence[DevelopmentSignature], founders: list[int],
+                   existing_sets: set, existing_slugs: set) -> list[tuple[frozenset[str], list[int]]]:
+        """Candidate new situations: (canonical actor key, member indices), deterministic order."""
+        p = self.config.policy
+        keys = {i: self.actors.keys(developments[i].actors) for i in founders}
+        if p.create_by == "actor_set":
+            groups: dict[frozenset[str], list[int]] = defaultdict(list)
+            for i in founders:
+                if len(keys[i]) >= p.min_actors_to_create:
+                    groups[keys[i]].append(i)
+            return list(groups.items())
+        if p.create_by != "actor_pair":
+            raise ValueError(f"unknown create_by: {p.create_by!r}")
+        pairs: dict[tuple[str, ...], list[int]] = defaultdict(list)
+        for i in founders:
+            if len(keys[i]) >= max(2, p.min_actors_to_create):
+                for pair in combinations(sorted(keys[i]), 2):
+                    pairs[pair].append(i)
+        taken: set[int] = set()
+        out: list[tuple[frozenset[str], list[int]]] = []
+        for pair, members in sorted(pairs.items(), key=lambda kv: (-len(kv[1]), kv[0])):
+            key = frozenset(pair)
+            if key in existing_sets or self.actors.slug(key) in existing_slugs:
+                continue
+            members = [i for i in members if i not in taken]
+            members = [i for i in members if any(j != i and self._compatible(developments[i], developments[j])
+                                                 for j in members)]
+            if len(members) >= p.create_min_developments:
+                out.append((key, members))
+                taken.update(members)
+        return out
+
+    def _compatible(self, a: DevelopmentSignature, b: DevelopmentSignature) -> bool:
+        """Same storyline evidence for founding a situation: both embeddings known and close."""
+        if not a.embedding or not b.embedding:
+            return False
+        return _cosine(a.embedding, b.embedding) >= self.config.policy.create_min_similarity

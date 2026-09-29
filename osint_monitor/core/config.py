@@ -234,6 +234,11 @@ class SituationPolicy(BaseModel):
     ambiguity_margin: float = 0.1        # two candidates this close are ambiguous too
     min_actors_to_create: int = 2        # single-actor storylines must be seeded
     create_min_developments: int = 2     # an actor set must recur before it becomes a situation
+    # "actor_set": the exact canonical actor set recurs. "actor_pair": a canonical actor pair recurs
+    # among developments that are semantically compatible (cosine >= create_min_similarity with
+    # another member); developments with more actors join through the pair they contain.
+    create_by: str = "actor_set"
+    create_min_similarity: float = 0.40
     create_window_days: int = 7
     dormant_after_days: int = 14
     centroid_developments: int = 20      # recent members averaged into the situation centroid
