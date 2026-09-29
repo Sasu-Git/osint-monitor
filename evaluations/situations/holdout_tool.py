@@ -119,7 +119,10 @@ def sheet(args):
     assert not path.exists(), "labels already written"
     lines = ["# Blind situation-identity labels. For each pair: SAME_SITUATION (one persistent state of",
              "# affairs), DIFFERENT_SITUATION, or AMBIGUOUS. A situation is broader than one development",
-             "# or storyline, but must be one persistent geopolitical state of affairs.",
+             "# or storyline, but must be one persistent geopolitical state of affairs. A coherent",
+             "# multi-day event (a diplomatic visit, a summit, a papal visit, a disaster response) is",
+             "# NOT SAME_SITUATION by that fact alone: it must belong to a persistent state of affairs",
+             "# (e.g. summit bargaining that continues a bilateral dispute), otherwise DIFFERENT or AMBIGUOUS.",
              f"holdout: {args.id}", "labelled_by: ''", "labels:"]
     for a, b in pairs:
         lines.append(f"- pair: [{a}, {b}]")
