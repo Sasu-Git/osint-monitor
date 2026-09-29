@@ -15,7 +15,8 @@ from osint_monitor.processors.development_segmentation import (
 )
 from tests import live_fixtures as live
 
-ON = DevelopmentSegmentationConfig(enabled=True)
+ON = load_event_grouping_config().development_segmentation.model_copy(update={"enabled": True})   # as configured
+EXACT = DevelopmentSegmentationConfig(enabled=True)             # the first release: exact place names, no override
 T0 = datetime(2026, 8, 7, 9, 0)
 
 
@@ -194,6 +195,89 @@ def test_known_limitation_shooting_and_later_policy_response(embed):
          ["thailand"]),
     ]), ON)
     assert apart(seg, "shooting", "policy")
+
+
+# --- geographic and headline compatibility --------------------------------------------------------
+
+def linked_with_headline_mismatch(its):
+    """Precondition for framing tests: the clusterer links the pair but their headlines differ."""
+    from osint_monitor.processors.clustering import _ClusterMember, _linked
+    from osint_monitor.processors.development_segmentation import _cosine
+    a, b = (_ClusterMember(i.id, i.source, i.title, i.published_at, i.vector) for i in its)
+    return _linked(a, b) and _cosine(its[0].headline_vector, its[1].headline_vector) < ON.min_headline_similarity
+
+
+def test_northern_cyprus_and_cyprus_reports_stay_one_development(embed):
+    its = items(embed, [
+        ("aj", "Al Jazeera", 0, "Rescuers search for 18 missing after boat capsizes off Northern Cyprus",
+         "A boat carrying migrants capsized off the coast of Northern Cyprus, and rescuers are searching for 18 people "
+         "still missing.", ["northern cyprus"]),
+        ("bbc", "BBC World", 3, "Children missing after ferry sinks off Cyprus",
+         "Several children are among those missing after a ferry carrying migrants sank off the coast of Cyprus, "
+         "rescuers said.", ["cyprus"]),
+    ])
+    assert apart(segment(its, EXACT), "aj", "bbc")                 # the false split this fixes
+    assert together(segment(its, ON), "aj", "bbc")
+
+
+def test_broad_region_and_its_states_with_different_headlines_stay_one_development(embed):
+    its = items(embed, [
+        ("region", "Al Jazeera", 0, "Powerful storm floods US Northeast, causes power outages",
+         "A powerful nor'easter storm flooded roads across the US Northeast, killing one person and cutting power to "
+         "hundreds of thousands.", ["us northeast"]),
+        ("states", "BBC World", 1, "One dead as nor'easter storm pummels New York and New Jersey",
+         "A powerful nor'easter storm flooded roads in New York and New Jersey, killing one person and cutting power "
+         "to thousands.", ["new york", "new jersey"]),
+    ])
+    assert linked_with_headline_mismatch(its)
+    assert apart(segment(its, EXACT), "region", "states")
+    assert together(segment(its, ON), "region", "states")
+
+
+def test_same_event_with_very_different_headlines_stays_one_development(embed):
+    its = items(embed, [
+        ("a", "Al Jazeera", 0, "Swiss voters reject tighter neutrality rules",
+         "Swiss voters rejected a proposal to tighten the country's neutrality rules in a national referendum on Sunday.",
+         ["switzerland"]),
+        ("b", "BBC World", 2, "Populist push fails at the ballot box in Bern",
+         "Swiss voters on Sunday rejected a proposal to tighten the country's neutrality rules in a national referendum.",
+         ["bern"]),
+    ])
+    assert linked_with_headline_mismatch(its)
+    assert together(segment(its, ON), "a", "b")
+
+
+def test_city_and_its_state_are_compatible_places(embed):
+    its = items(embed, [
+        ("city", "Al Jazeera", 0, "Wildfire forces thousands to evacuate in Los Angeles",
+         "A fast-moving wildfire in the hills above Los Angeles forced thousands of residents to evacuate.",
+         ["los angeles"]),
+        ("state", "BBC World", 2, "California blaze prompts mass evacuations",
+         "Thousands of people fled their homes as a wildfire spread in California near Los Angeles.", ["california"]),
+    ])
+    assert together(segment(its, ON), "city", "state")
+
+
+def test_same_template_event_in_different_countries_still_splits(embed):
+    seg = segment(items(embed, [
+        ("nepal", "Al Jazeera", 0, "Magnitude 6.1 earthquake strikes western Nepal",
+         "A magnitude 6.1 earthquake struck western Nepal, damaging buildings.", ["nepal"]),
+        ("japan", "BBC World", 2, "Magnitude 6.1 earthquake strikes northern Japan",
+         "A magnitude 6.1 earthquake struck northern Japan, damaging buildings.", ["northern japan"]),
+    ]), ON)
+    assert apart(seg, "nepal", "japan") and cut(seg, "nepal", "japan", "disjoint_locations")
+
+
+def test_headline_override_never_rescues_live_coverage(embed):
+    its = items(embed, [
+        ("live", "Al Jazeera", 0, "Iran war live: US strikes Iran for a third night",
+         "US strikes on Iran continued for a third night, with explosions reported across Tehran.", ["iran", "tehran"]),
+        ("report", "BBC World", 1, "Tehran residents shelter as bombs fall overnight",
+         "US strikes on Iran continued for a third night, with explosions reported across Tehran as residents "
+         "sheltered.", ["tehran"]),
+    ])
+    assert linked_with_headline_mismatch(its)
+    assert cut(segment(its, ON), "live", "report", "headline_similarity")
 
 
 # --- contract -----------------------------------------------------------------------------------
