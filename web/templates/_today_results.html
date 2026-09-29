@@ -1,0 +1,48 @@
+{% import "_ui.html" as ui %}
+<div id="today-results">
+  {% if page.developments %}
+  <ol class="dev-list">
+    {% for c in page.developments %}{% set d = c.development %}
+    <li class="dev">
+      <div class="rank" aria-label="Rank">{{ c.rank }}</div>
+      <div class="title"><a href="/developments/{{ d.id }}">{{ d.what_happened }}</a></div>
+      <div class="meta-right">
+        {{ ui.confidence(d.confidence.confidence_class) }}
+        <span class="time">{{ d.last_updated_at | when }}</span>
+      </div>
+      <div class="line">
+        {{ ui.significance(d.significance_class) }}
+        {{ ui.event_type(d.classification.event_type) }}
+        {{ ui.domain(d.classification.event_domain) }}
+        {{ ui.actors(d.principal_actors) }}
+      </div>
+      <div class="line">
+        {{ ui.situation(c.situation_slug, c.situation_title) }}
+        <span>{{ ui.sources(c.independent_sources, None) }}</span>
+      </div>
+      {% if c.reasons.surfaced or c.reasons.caveats %}
+      <div class="reasons">
+        {{ c.reasons.surfaced | join(' · ') }}{% if c.reasons.surfaced and c.reasons.caveats %} · {% endif %}
+        {% if c.reasons.caveats %}<span class="caveat">{{ c.reasons.caveats | join(' · ') }}</span>{% endif %}
+      </div>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ol>
+  {% else %}
+  <div class="empty">
+    <strong>No corroborated developments in this period.</strong>
+    {% if page.anchor is none %}Nothing has been collected yet. Run <code>python main.py collect</code> or the daemon.
+    {% else %}Try a longer period or clear the filters.{% endif %}
+  </div>
+  {% endif %}
+
+  {% if page.awaiting_corroboration %}
+  <p class="notice">
+    {{ page.awaiting_corroboration }} story cluster{{ '' if page.awaiting_corroboration == 1 else 's' }} in this period
+    {{ 'has' if page.awaiting_corroboration == 1 else 'have' }} fewer than two independent sources and
+    {{ 'is' if page.awaiting_corroboration == 1 else 'are' }} not shown as a development until another source corroborates
+    {{ 'it' if page.awaiting_corroboration == 1 else 'them' }}.
+  </p>
+  {% endif %}
+</div>

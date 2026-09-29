@@ -129,8 +129,10 @@ def test_pages_render_situations_and_their_evidence(seeded):
     page = client.get("/situations/china-united-states")
     assert page.status_code == 200
     for expected in ["Trump and Xi agree to extend trade truce", "Tariff truce extended by one year.",
-                     "Associated Press", "confirmed", "Timeline", "diplomatic visit"]:
-        assert expected in page.text
+                     "confirmed", "Timeline", "diplomatic visit"]:
+        assert expected.lower() in page.text.lower()
+    evidence = client.get(page.text.split('href="/developments/')[1].split('"')[0].join(["/developments/", ""]))
+    assert evidence.status_code == 200 and "Associated Press" in evidence.text   # evidence one click away
     assert "Pacific balance" not in page.text
     assert client.get("/situations/no-such-thing").status_code == 404
 

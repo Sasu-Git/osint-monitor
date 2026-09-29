@@ -176,7 +176,8 @@
 <body>
     <nav class="sidebar">
         <h1>OSINT Monitor</h1>
-        <a href="/" {% if request.url.path == '/' %}class="active"{% endif %}>Dashboard</a>
+        <a href="/">Today</a>
+        <a href="/dashboard" {% if request.url.path == '/dashboard' %}class="active"{% endif %}>Dashboard</a>
         <a href="/situations" {% if '/situations' in request.url.path %}class="active"{% endif %}>Situations</a>
         <a href="/events" {% if '/events' in request.url.path %}class="active"{% endif %}>Events</a>
         <a href="/entities" {% if '/entities' in request.url.path %}class="active"{% endif %}>Entities</a>

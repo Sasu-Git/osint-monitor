@@ -41,6 +41,7 @@ class SourceEvidence(BaseModel):
     origin: Optional[str] = None               # who actually reported it; shared origins count once
     derived_from: Optional[str] = None
     provenance_note: str = ""
+    excerpt: str = ""                          # opening of the stored item text, for reading
 
 
 class Classification(BaseModel):
@@ -94,6 +95,16 @@ class SituationDetail(SituationSummary):
 
 # --- builders ---------------------------------------------------------------------------------
 
+EXCERPT_CHARS = 280
+
+
+def _excerpt(content: str | None) -> str:
+    text = " ".join((content or "").split())
+    if len(text) <= EXCERPT_CHARS:
+        return text
+    cut = text[:EXCERPT_CHARS].rsplit(" ", 1)[0]
+    return cut + " …"
+
 def _canonicalizer() -> ActorCanonicalizer:
     return ActorCanonicalizer(normalizer=ActorNormalizer.load())
 
@@ -140,7 +151,7 @@ def development_view(session: Session, event: Event, canon: ActorCanonicalizer,
                 published_at=i.published_at or i.fetched_at,
                 source_role=p.source_role.value if p else None, evidence_type=p.evidence_type.value if p else None,
                 origin=p.origin if p else None, derived_from=p.derived_from if p else None,
-                provenance_note=p.note if p else ""))
+                provenance_note=p.note if p else "", excerpt=_excerpt(i.content)))
     return DevelopmentView(
         id=event.id, what_happened=event.summary, change_summary=event.change_summary,
         first_reported_at=event.first_reported_at, last_updated_at=event.last_updated_at, region=event.region,

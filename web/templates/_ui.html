@@ -1,0 +1,33 @@
+{# Shared labels. Every label says what it is in words; colour only reinforces it. #}
+
+{% macro confidence(value) -%}
+  <span class="chip conf conf-{{ value or 'none' }}" title="Confidence">{{ value | conf_label }}</span>
+{%- endmacro %}
+
+{% macro event_type(value) -%}
+  {% if value in [None, '', 'unknown'] %}<span class="chip muted" title="Development type">Unclassified</span>
+  {%- else %}<span class="chip type" title="Development type">{{ value | type_label }}</span>{% endif %}
+{%- endmacro %}
+
+{% macro domain(value) -%}
+  {% set d = value | domain_label %}{% if d %}<span class="chip" title="Domain">{{ d }}</span>{% endif %}
+{%- endmacro %}
+
+{% macro significance(value) -%}
+  {% if value %}<span class="sig sig-{{ value }}" title="Significance">{{ value | humanize }}</span>{% endif %}
+{%- endmacro %}
+
+{% macro actors(names, empty='No principal actors identified') -%}
+  {% if names %}<span class="actors" title="Principal actors">{% for a in names %}{% if not loop.first %}<span class="sep">·</span>{% endif %}{{ a }}{% endfor %}</span>
+  {%- else %}<span class="none">{{ empty }}</span>{% endif %}
+{%- endmacro %}
+
+{% macro situation(slug, title) -%}
+  {% if slug %}<a class="situation-link" href="/situations/{{ slug }}">Part of <b>{{ title }}</b></a>
+  {%- else %}<span class="none">No active situation</span>{% endif %}
+{%- endmacro %}
+
+{% macro sources(independent, total) -%}
+  <span title="Independent sources (syndicated copies count once)">{{ independent }} independent source{{ '' if independent == 1 else 's' }}</span>
+  {%- if total and total != independent %}<span class="time"> · {{ total }} outlets</span>{% endif %}
+{%- endmacro %}

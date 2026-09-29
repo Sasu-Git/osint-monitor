@@ -42,6 +42,32 @@ python main.py serve                 # http://localhost:8000
 python main.py daemon
 ```
 
+### Reading interface
+
+`python main.py serve` then <http://localhost:8000>:
+
+- **Today** (`/`): corroborated developments (at least two independent sources), ranked, with type,
+  domain, confidence, principal actors, situation and the ranking reasons in words. Filters: period,
+  domain, situation, confidence.
+- **Development** (`/developments/{id}`): what happened, every supporting report with its outlet,
+  time, link and provenance, why it surfaced, and its classification.
+- **Situations** (`/situations`, `/situations/{slug}`): persistent storylines and their development
+  timelines.
+
+The previous all-signals dashboard is at `/dashboard`. A story reported by a single source is not
+shown as a development. It stays evidence until an independent source corroborates it.
+
+To try the pages on real collected data without touching `data/osint.db`, build a separate demo
+database from a snapshot of collected items, then serve it:
+
+```bash
+python scripts/build_demo_db.py --snapshot path/to/snapshot.db --start 2026-09-25T00:00 --end 2026-09-29T12:00
+OSINT_DB_URL=sqlite:///data/demo/osint-demo.db python main.py serve   # Windows: set OSINT_DB_URL=... first
+```
+
+The builder replays the snapshot's collected items through the production pipeline stages in
+simulated ticks. It opens the snapshot read-only and invents nothing.
+
 The first `smoke` / `collect` downloads the sentence-transformers embedding model
 (`all-MiniLM-L6-v2`, ~90 MB) into the Hugging Face cache.
 

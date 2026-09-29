@@ -21,6 +21,9 @@ data/pause
 data/telegram_session*
 !data/.gitkeep
 
+# Local demo databases (scripts/build_demo_db.py)
+data/demo/
+
 # Export directory IS tracked (JSON snapshots for git)
 !data/export/
 !data/export/*.json

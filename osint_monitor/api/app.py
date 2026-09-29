@@ -23,6 +23,7 @@ from osint_monitor.api.routes.intelligence import router as intel_router
 from osint_monitor.api.routes.daemon import router as daemon_router
 from osint_monitor.api.routes.ingest import router as ingest_router
 from osint_monitor.api.routes.situations import router as situations_router
+from osint_monitor.api.pages import router as pages_router
 from osint_monitor.api.auth import require_api_key
 
 logger = logging.getLogger(__name__)
@@ -78,36 +79,14 @@ async def startup():
     logger.info("OSINT Monitor API started")
 
 
-@app.get("/", response_class=HTMLResponse)
+# Reading pages: Today (/), Development detail, Situations, Situation detail (api/pages.py)
+app.include_router(pages_router, tags=["pages"])
+
+
+@app.get("/dashboard", response_class=HTMLResponse)
 async def dashboard(request: Request):
+    """The original all-signals dashboard (the home page is now Today)."""
     return templates.TemplateResponse(request, "dashboard.html")
-
-
-@app.get("/situations", response_class=HTMLResponse)
-async def situations_page(request: Request):
-    from osint_monitor.api.situation_views import list_situations
-    from osint_monitor.core.database import get_session
-    session = get_session()
-    try:
-        situations = list_situations(session)
-    finally:
-        session.close()
-    return templates.TemplateResponse(request, "situations.html", {"situations": situations})
-
-
-@app.get("/situations/{slug}", response_class=HTMLResponse)
-async def situation_detail_page(request: Request, slug: str):
-    from osint_monitor.api.situation_views import situation_detail
-    from osint_monitor.core.database import get_session
-    session = get_session()
-    try:
-        detail = situation_detail(session, slug)
-    finally:
-        session.close()
-    if detail is None:
-        return templates.TemplateResponse(request, "situation_detail.html", {"situation": None, "slug": slug},
-                                          status_code=404)
-    return templates.TemplateResponse(request, "situation_detail.html", {"situation": detail, "slug": slug})
 
 
 @app.get("/events", response_class=HTMLResponse)

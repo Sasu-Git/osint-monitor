@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}OSINT Monitor{% endblock %} · OSINT Monitor</title>
+  <link rel="stylesheet" href="/static/app.css">
+  <script src="https://unpkg.com/htmx.org@1.9.12" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/">OSINT Monitor</a>
+    <nav class="nav" aria-label="Main">
+      {% set path = request.url.path %}
+      <a href="/" {% if path == '/' or path.startswith('/developments') %}aria-current="page"{% endif %}>Today</a>
+      <a href="/situations" {% if path.startswith('/situations') %}aria-current="page"{% endif %}>Situations</a>
+    </nav>
+    <div class="aside"><a href="/dashboard">All signals (classic dashboard)</a></div>
+  </header>
+  <main class="page">
+    {% block content %}{% endblock %}
+  </main>
+</body>
+</html>

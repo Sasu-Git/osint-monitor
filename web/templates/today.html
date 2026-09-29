@@ -1,0 +1,43 @@
+{% extends "shell.html" %}
+{% block title %}Today{% endblock %}
+{% block content %}
+<div class="page-head">
+  <h1>What changed</h1>
+  <span class="sub">
+    Corroborated developments, ranked
+    {% if page.anchor %}· collection up to {{ page.anchor | when }}{% endif %}
+  </span>
+</div>
+
+<form class="filters" method="get" action="/" hx-get="/" hx-target="#today-results" hx-swap="outerHTML"
+      hx-trigger="change" hx-push-url="true">
+  <label>Period
+    <select name="range">
+      {% for r in ranges %}<option value="{{ r }}" {% if page.range_key == r %}selected{% endif %}>Last {{ r }}</option>{% endfor %}
+    </select>
+  </label>
+  <label>Domain
+    <select name="domain">
+      <option value="">All domains</option>
+      {% for d in page.domains %}<option value="{{ d }}" {% if page.filters.domain == d %}selected{% endif %}>{{ d | domain_label }}</option>{% endfor %}
+      <option value="unknown" {% if page.filters.domain == 'unknown' %}selected{% endif %}>Unclassified</option>
+    </select>
+  </label>
+  <label>Situation
+    <select name="situation">
+      <option value="">Any</option>
+      {% for slug, title in page.situations %}<option value="{{ slug }}" {% if page.filters.situation == slug %}selected{% endif %}>{{ title }}</option>{% endfor %}
+      <option value="none" {% if page.filters.situation == 'none' %}selected{% endif %}>No active situation</option>
+    </select>
+  </label>
+  <label>Confidence
+    <select name="confidence">
+      <option value="">Any</option>
+      {% for c in confidences %}<option value="{{ c }}" {% if page.filters.confidence == c %}selected{% endif %}>{{ c | conf_label }}</option>{% endfor %}
+    </select>
+  </label>
+  <noscript><button type="submit">Apply</button></noscript>
+</form>
+
+{% include "_today_results.html" %}
+{% endblock %}
