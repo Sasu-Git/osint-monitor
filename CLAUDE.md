@@ -169,7 +169,8 @@ The daemon pushes updates to the SSE stream at `/api/stream`, so the dashboard s
 
 ## Technical Notes
 
-- Pipeline: collectors -> dedup -> NLP -> claims -> clustering -> geocoding -> corroboration -> I&W -> alerting -> fusion
+- Pipeline: collectors -> dedup -> NLP -> claims -> clustering (narrative clustering, then development segmentation; structured records grouped by identity) -> geocoding -> corroboration -> I&W -> alerting -> fusion
+- Development segmentation (`processors/development_segmentation.py`, `development_segmentation` in `config/event_grouping.yaml`, enabled): re-checks links inside each narrative cluster and cuts those between items that cannot be one Development (analysis vs report headline, two outlets' headlines that describe different things, places with no containment relation). The coarse clusterer is unchanged; validation: `evaluations/clustering/segmentation-compatibility.md`
 - Tiered pipeline: hot (2.5min) / warm (10min) / cold (60min) with delta processing and skip-if-running guards
 - Database: SQLite default, PostgreSQL+pgvector for scale
 - LLM: OpenAI (gpt-5-mini default) for briefings, ACH, Red Team, I&W relevance scoring

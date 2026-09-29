@@ -45,6 +45,14 @@
 - Seeds in `config/situations.yaml` are upserted by slug; closing/reopening is explicit in YAML (`status`), automatic active ↔ dormant is left alone. The §6 "removed slug → closed" rule is dropped: auto-created situations are not in YAML either, so absence cannot mean closure.
 - `situation_overview` answers what the story is, what changed recently and how many developments belong to it. "What is worth watching" is left to the narrative stage.
 
+**2026-09-29 — Development identity and segmentation, enabled in `processors/development_segmentation.py`:**
+
+- A Development is one concrete occurrence (action, interaction, decision, statement or incident) with compatible actors, place and time. Updates to it (a rising death toll) stay in it; reactions, responses, later repetitions, previews and analysis are separate Developments or commentary in the same Situation. Full definition: `evaluations/clustering/development-identity-diagnosis.md`.
+- Narrative clustering answers "same story?"; development segmentation then answers "same occurrence?". It runs after narrative clustering (`development_segmentation.enabled: true` in `config/event_grouping.yaml`) and only cuts links: analysis/explainer vs report headlines, cross-source headlines that describe different things (unless both are reports within 6 h naming compatible places), and places with no containment relation (`config/geography.yaml`). Structured record grouping is unaffected.
+- Analysis, explainers and live blogs are not evidence that an occurrence happened. Cut off by segmentation, they are returned as `commentary_item_ids` on the Development they discuss (not persisted yet); otherwise they belong to the Situation.
+- Validated on a frozen blind benchmark and a fresh blind live window: Development precision improves materially (out of sample: related-but-distinct wrong links 98 -> 37, unrelated 13 -> 7) for a small, accepted recall cost (cross-source same-development pairs 46/49 -> 44/49). Known limits: headline framing, noisy place extraction, same-place repeated actions, reactions.
+- **Product rule — single-source stories.** A story reported by one source is not a Development. It stays an observation (raw item / evidence) until an independent source corroborates it; continuous incremental clustering then forms or extends the Event and it becomes eligible for classification, principal actors, ranking, situations and the main UI. Single-source observations may appear in lower-level evidence or live-feed views, never as first-class Developments. Current gap: two near-identical headlines from the *same* outlet still form an Event (same-outlet story updates link at title similarity >= 90), and corroboration must arrive within the 48 h clustering window.
+
 ---
 
 ## 0. Decisions at a glance
@@ -59,6 +67,7 @@
 | Actor roles | Small `actor_roles` table (roles change over time → validity dates → multiple rows). Seeded only from `entities.yaml`. No automatic person database. |
 | `phone_call` type | **Dropped.** Represented as `bilateral_meeting` + `interaction_mode=telephone`. Avoids two axes encoding the same fact. |
 | `confirmed` in development_status | **Dropped from status.** Confirmation is `confidence_class`. Keeping both allows contradictory states (status *confirmed*, confidence *disputed*). Status is lifecycle only. |
+| Single-source stories | **Not Developments.** Observations until independently corroborated; promotion happens through incremental clustering (see 2026-09-29 amendment). |
 | Legacy `severity` float | Kept, no longer displayed. Written from `significance_class` via a fixed lookup, only so existing sort-by-severity code keeps working until it is migrated. |
 
 ---

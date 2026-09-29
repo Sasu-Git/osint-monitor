@@ -298,9 +298,9 @@ def test_headline_kind():
     assert headline_kind("Zelensky sacks Ukraine's top army commander after days of protests") == REPORT
 
 
-def test_segmentation_is_off_by_default():
-    assert load_event_grouping_config().development_segmentation.enabled is False
-    assert DevelopmentSegmentationConfig().enabled is False
+def test_segmentation_is_enabled_by_config_and_off_without_it():
+    assert load_event_grouping_config().development_segmentation.enabled is True
+    assert DevelopmentSegmentationConfig().enabled is False     # a missing config file means no segmentation
 
 
 def test_enabled_pipeline_keeps_analysis_as_commentary_not_evidence(session, embed, monkeypatch):
