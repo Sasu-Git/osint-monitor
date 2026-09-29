@@ -9,7 +9,12 @@ Deterministic, no LLM. Five stages, each a function here:
 1. **Candidates** (``item_candidates``): actor mentions in an item's headline and lead
    sentence -- NER spans labelled PERSON / NORP / GPE / ORG, plus tokens the actor
    config names that the NER missed or mislabelled ("Xi-Trump summit", Trump as
-   WORK_OF_ART). Each gets a grammatical role (``is_participant``): after climbing
+   WORK_OF_ART). ``rejection`` then drops spans that are not actors in their sentence:
+   a city or region that is not the subject (Iowa in "new Iowa steel plant", Abu Dhabi in
+   "visit to Abu Dhabi"), common nouns the NER capitalised ("Child among three killed"),
+   group labels that are not a people ("anti-Semitism", "Himalayan"), named storms, an
+   outlet that only reports ("tells BBC"), and an organisation that only locates a person
+   ("New York Times executive"). Each gets a grammatical role (``is_participant``): after climbing
    through modifiers (compound, amod, poss, conj, appos, "of") it is a participant when
      - subject, object, dative, agent or complement of a clause,
      - the object of "with" / "between" / "against" / "by",
@@ -42,6 +47,7 @@ from sqlalchemy.orm import Session, joinedload
 
 from osint_monitor.core.database import Entity, Event, EventEntity, EventItem, RawItem
 from osint_monitor.processors.actors import ActorNormalizer
+from osint_monitor.processors.geography import Gazetteer
 
 logger = logging.getLogger(__name__)
 
@@ -64,6 +70,15 @@ TOPIC_VERBS = {"discuss", "debate", "address", "raise", "focus", "consider", "ex
                "weigh", "mull", "cite", "mention", "eye"}
 # "Trade, AI and Iran top US-China talks": subjects of agenda verbs are topics
 TOPIC_SUBJECT_VERBS = {"top", "dominate", "overshadow", "headline", "loom", "feature"}
+# Candidate rejection (see ``rejection``)
+WEATHER_WORDS = {"storm", "hurricane", "typhoon", "cyclone", "tropical"}
+REPORTING_VERBS = {"report", "tell", "say", "cite", "quote", "interview", "air", "broadcast"}
+# "New York Times executive", "NBA star": the organisation places the person, the person acts
+PERSON_ROLE_NOUNS = {"executive", "employee", "worker", "staff", "staffer", "journalist", "reporter",
+                     "correspondent", "editor", "star", "player", "athlete", "coach", "fan", "student",
+                     "professor", "researcher", "scientist", "doctor", "nurse", "teacher", "pupil",
+                     "customer", "user", "driver", "passenger"}
+PLACE_ACTOR_DEPS = {"nsubj"}            # "Seoul suspects ...", "Hong Kong bans ...": the authority acts
 WINDOW_DAYS = 3
 HEADLINE, LEAD = 1.0, 0.5
 
@@ -119,6 +134,43 @@ class Candidate:
     text: str
     participant: bool
     field: str                  # "title" | "lead"
+    rejected: str | None = None  # why the span is not an actor here (then participant is False)
+
+
+_GAZETTEER: Gazetteer | None = None
+
+
+def _gazetteer() -> Gazetteer:
+    global _GAZETTEER
+    if _GAZETTEER is None:
+        _GAZETTEER = Gazetteer.load()
+    return _GAZETTEER
+
+
+def rejection(span, normalizer: ActorNormalizer, geo: Gazetteer | None = None) -> str | None:
+    """Why an actor candidate is not an actor in its sentence, or None. Uses the NER label,
+    part of speech and dependency role; configured actors are never rejected."""
+    geo = geo or _gazetteer()
+    text, label, root = span.text, getattr(span, "label_", ""), span.root
+    if normalizer.is_known(text):
+        return None
+    before = span.doc[span.start - 1].lower_ if span.start > 0 else ""
+    if span[0].lower_ in WEATHER_WORDS or before in WEATHER_WORDS:
+        return "weather_system"
+    proper = [t.pos_ == "PROPN" for t in span]
+    if not any(proper) and not geo.is_country(text):
+        return "common_noun"
+    if label == "NORP" and not all(proper):
+        return "not_a_people"
+    head = root.head.lemma_.lower()
+    if normalizer.is_media(text) and (head in REPORTING_VERBS or (root.dep_ == "pobj" and root.head.lower_ == "to"
+                                                                  and root.head.head.lemma_.lower() == "accord")):
+        return "reporting_outlet"
+    if label == "ORG" and root.dep_ in {"compound", "poss"} and head in PERSON_ROLE_NOUNS:
+        return "affiliation"
+    if label != "PERSON" and geo.is_subnational(text) and root.dep_ not in PLACE_ACTOR_DEPS:
+        return "place"
+    return None
 
 
 def _spans(doc, normalizer: ActorNormalizer):
@@ -140,7 +192,9 @@ def item_candidates(nlp, title: str, lead: str = "", normalizer: ActorNormalizer
         if text:
             spans = list(_spans(nlp(text[:500]), normalizer))
             actor_tokens = {i for sp in spans for i in range(sp.start, sp.end)}
-            out.extend(Candidate(sp.text, is_participant(sp, actor_tokens), fld) for sp in spans)
+            for sp in spans:
+                why = rejection(sp, normalizer)
+                out.append(Candidate(sp.text, why is None and is_participant(sp, actor_tokens), fld, why))
     return out
 
 

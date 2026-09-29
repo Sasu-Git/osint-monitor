@@ -46,6 +46,9 @@ class ActorNormalizer:
         self._represents = {**n(config.represents), **n(extra_represents or {})}
         self._known = (set(self._demonyms) | set(self._demonyms.values()) | set(self._aliases)
                        | set(self._aliases.values()) | set(self._represents) | set(self._represents.values()))
+        titles = sorted({key(t) for t in config.titles if key(t)}, key=len, reverse=True)
+        self._title = re.compile(r"^(?:" + "|".join(re.escape(t) for t in titles) + r")\s+") if titles else None
+        self.media = {key(m) for m in config.media_outlets}
 
     @classmethod
     def load(cls, extra_aliases: dict[str, str] | None = None,
@@ -62,6 +65,8 @@ class ActorNormalizer:
     def surface(self, name: str) -> str | None:
         """Canonical name of the mentioned actor, or None if it is not an actor."""
         k = normalise(clean(name))
+        if self._title and k not in self._known:
+            k = self._title.sub("", k)                    # "FM Araghchi" -> "araghchi"
         if not k or k in self._non_actors:
             return None
         k = self._demonym(k) or k
@@ -78,6 +83,9 @@ class ActorNormalizer:
 
     def keys(self, names: Iterable[str]) -> frozenset[str]:
         return frozenset(k for k in (self.key(n) for n in names) if k)
+
+    def is_media(self, name: str) -> bool:
+        return normalise(clean(name)) in self.media
 
     def is_known(self, name: str) -> bool:
         """Whether the configuration names this actor (used to rescue NER misses such as "Xi-Trump")."""

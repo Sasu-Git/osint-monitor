@@ -245,6 +245,8 @@ class ActorsConfig(BaseModel):
     demonyms: dict[str, str] = Field(default_factory=dict)       # "Australian" -> country
     aliases: dict[str, str] = Field(default_factory=dict)        # variant -> canonical name
     represents: dict[str, str] = Field(default_factory=dict)     # person / body -> state it acts for
+    titles: list[str] = Field(default_factory=list)              # role prefixes dropped from names ("FM Araghchi")
+    media_outlets: list[str] = Field(default_factory=list)       # outlets that report, extending provenance origins
 
 
 class StructuredSourcesConfig(BaseModel):

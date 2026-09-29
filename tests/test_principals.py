@@ -238,3 +238,68 @@ def test_entity_with_a_misleading_alias_is_not_flagged(session, actors):
     mark_principal_actors(session, normalizer=actors)
     flags = {ee.entity.canonical_name: ee.is_principal for ee in session.query(EventEntity).filter_by(event_id=event.id)}
     assert flags == {"America": True, "Americas": False, "Greenland": True}
+
+
+# --- places, non-actors and context organisations (2026-09 live windows) -----------------------
+
+def keys(nlp, *items):
+    return principal_keys(nlp, [(t, lead) for t, lead in items], ActorNormalizer.load())
+
+
+def test_city_as_destination_is_not_a_principal(nlp):
+    assert keys(nlp, ("UAE confirms Netanyahu visit to Abu Dhabi", "")) == {"united arab emirates", "israel"}
+
+
+def test_state_as_location_modifier_is_not_a_principal(nlp):
+    assert "iowa" not in keys(nlp, ("Trump announcing new Iowa steel plant the White House says will be biggest in US", ""))
+
+
+def test_city_in_a_list_of_places_is_not_a_principal(nlp):
+    k = keys(nlp, ("US to grant sanctions waiver for flights between Iran and Iraq’s Najaf, source says", ""))
+    assert "najaf" not in k and {"united states", "iran"} <= k
+
+
+def test_capitalised_common_noun_is_not_a_principal(nlp):
+    assert "child" not in keys(nlp, ("Child among three killed off French coast in Channel crossing attempt", ""))
+
+
+def test_abstract_concept_is_not_a_principal(nlp):
+    k = keys(nlp, ("French far-right’s Bardella denies alleged anti-Semitism comments, files defamation lawsuit", ""))
+    assert "anti-semitism" not in k and "bardella" in k
+
+
+def test_named_storm_and_its_path_are_not_principals(nlp):
+    k = keys(nlp, ("Tropical Storm Lala expected to strengthen as it nears Hawaii", ""))
+    assert not k & {"storm lala", "lala", "hawaii"}
+
+
+def test_reporting_outlet_and_employer_are_not_principals(nlp):
+    assert "bbc" not in keys(nlp, ("Hunter Biden tells BBC his pardon was 'not good' for US or his father", ""))
+    assert "new york times" not in keys(nlp, ("New York Times executive fatally shot by elderly in-laws, police say", ""))
+
+
+def test_capital_as_subject_is_the_state_it_speaks_for(nlp):
+    assert keys(nlp, ("Seoul suspects North Korean mines behind DMZ blast", "")) >= {"south korea", "north korea"}
+    assert "seoul" not in keys(nlp, ("Seoul suspects North Korean mines behind DMZ blast", ""))
+
+
+def test_role_prefix_is_dropped_from_a_named_official(nlp):
+    assert "fm araghchi" not in keys(nlp, ("‘Iran ready for doomsday war’, FM Araghchi says", ""))
+
+
+# genuine principals the filters must keep
+
+def test_governments_and_named_officials_stay_principals(nlp):
+    assert keys(nlp, ("Argentina threatens legal action against UK over Falkland Islands oil exploration", "")) \
+        >= {"argentina", "united kingdom"}
+    assert "carney" in keys(nlp, ("Carney calls Trump's fresh tariffs a 'miscalculation' after trade talks collapse", ""))
+
+
+def test_military_organisations_companies_and_international_bodies_stay_principals(nlp):
+    assert "taliban" in keys(nlp, ("Four civilians killed in Pakistani strikes in Afghanistan, Taliban says", ""))
+    assert "meta" in keys(nlp, ("Court orders Meta to pay $567m over harm to youths", ""))
+    assert "nato" in keys(nlp, ("NATO deploys extra jets to Poland after airspace violation", ""))
+
+
+def test_regional_government_acting_stays_a_principal(nlp):
+    assert "british columbia" in keys(nlp, ("British Columbia issues evacuation orders ahead of fast-moving wildfire", ""))

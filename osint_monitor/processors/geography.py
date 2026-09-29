@@ -49,7 +49,8 @@ class Gazetteer:
         for region, members in groups.items():
             for m in members:
                 self.members.setdefault(clean(m), set()).add(clean(region))
-        self.known = ({clean(c) for c in countries or []} | set(self.parent) | set(self.parent.values())
+        self.countries = {clean(c) for c in countries or []}
+        self.known = (self.countries | set(self.parent) | set(self.parent.values())
                       | set(self.aliases.values()) | {r for rs in self.members.values() for r in rs})
         self._ancestors = lru_cache(maxsize=None)(self._compute_ancestors)
 
@@ -93,6 +94,14 @@ class Gazetteer:
     def same_or_contains(self, a: str, b: str) -> bool:
         a, b = self.canonical(a), self.canonical(b)
         return a == b or a in self._ancestors(b) or b in self._ancestors(a)
+
+    def is_country(self, name: str) -> bool:
+        return self.canonical(name) in self.countries
+
+    def is_subnational(self, name: str) -> bool:
+        """A known place inside a country (a city, region or territory), not a country."""
+        c = self.canonical(name)
+        return c not in self.countries and bool(self._ancestors(c) & self.countries)
 
     def compatible(self, a: set[str], b: set[str]) -> bool:
         """Some place in ``a`` is the same as, contains, or lies inside some place in ``b``."""
