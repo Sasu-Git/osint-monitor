@@ -125,6 +125,16 @@ def _has(model):
     return model in spacy.util.get_installed_models()
 
 
+def test_a_missing_language_model_is_reported_not_silent(monkeypatch):
+    import spacy.util
+    monkeypatch.setattr(spacy.util, "is_package", lambda name: name != "it_core_news_md")
+    status = NLP.ner_status()
+    assert status["it"] == ("it_core_news_md", False) and status["es"][1] and status["en"][1]
+    lines = NLP.format_ner_status(status)
+    assert any(line.startswith("Italian NER: MISSING (it_core_news_md)") for line in lines)
+    assert any(line.startswith("Spanish NER: available") for line in lines)
+
+
 @pytest.mark.skipif(not _has("es_core_news_md"), reason="Spanish model not installed")
 def test_spanish_text_is_parsed_by_the_spanish_model_and_clauses_never_become_entities():
     got = [(m.text, m.entity_type.value) for m in NLP.extract_mentions(
@@ -236,6 +246,13 @@ def test_a_capital_acting_stands_for_its_state():
     assert got.get("estonia") == "actor" and got.get("russia") == "target"
 
 
+def test_the_parties_to_a_joint_action_are_its_co_agents():
+    got = roles_of("USS Klakring sent to the bottom of the Atlantic in joint US-UK SINKEX")
+    assert got["united states"] == "actor" and got["united kingdom"] == "actor"
+    got = roles_of("Drone strike on joint US-Iraqi base in Erbil wounds soldiers")   # a target stays a target
+    assert got["united states"] == "target" and got["iraq"] == "target"
+
+
 def test_media_outlets_report_they_do_not_act():
     got = roles_of("Inside Yemen's front-line city", "The BBC travels to the front line with pro-government soldiers.")
     assert got.get("bbc") == "subject"
@@ -263,6 +280,8 @@ def principals_of(*titles, lead="", lang="en", source=None):
     (["US and France push G7 sanctions proposal"], {"united states", "france"}),
     (["US vetoes Security Council resolution"], {"united states"}),
     (["Trump meets Xi at the White House"], {"trump", "xi"}),                      # co-actors of a meeting
+    (["US, UK test SM-6, other missiles on SINKEX target frigate",                 # state-level co-principals
+      "USS Klakring sent to the bottom of the Atlantic in joint US-UK SINKEX"], {"united states", "united kingdom"}),
 ])
 def test_principal_status_comes_from_the_role(titles, expected):
     assert principals_of(*titles) == expected

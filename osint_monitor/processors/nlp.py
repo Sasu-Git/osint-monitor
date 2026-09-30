@@ -144,6 +144,28 @@ UD_LABEL_MAP: dict[str, EntityType | None] = {"PER": EntityType.PERSON, "ORG": E
                                                 "LOC": EntityType.LOC, "MISC": None}
 
 
+LANGUAGE_NAMES = {"en": "English", "it": "Italian", "es": "Spanish"}
+
+
+def ner_status() -> dict[str, tuple[str, bool]]:
+    """Language -> (model, installed) for every language with its own NER model. Checks the installed
+    packages without loading them. A missing it/es model means that language's items get no entities."""
+    from spacy.util import is_package
+    models = {"en": get_settings().spacy_model, **LANGUAGE_MODELS}
+    return {lang: (model, is_package(model)) for lang, model in models.items()}
+
+
+def format_ner_status(status: dict[str, tuple[str, bool]] | None = None) -> list[str]:
+    """One line per language: "Italian NER: MISSING (it_core_news_md) ..." or "English NER: available (...)"."""
+    lines = []
+    for lang, (model, ok) in (status or ner_status()).items():
+        name = LANGUAGE_NAMES.get(lang, lang)
+        lines.append(f"{name} NER: available ({model})" if ok else
+                     f"{name} NER: MISSING ({model}) -- {lang} items get no entities, roles or principals; "
+                     f"install with: python -m spacy download {model}")
+    return lines
+
+
 def get_language_nlp(lang: str | None) -> Language | None:
     """The spaCy pipeline for ``lang`` ("en", "it", "es"), or None when no trusted model is installed."""
     lang = (lang or "en").split("-")[0].lower()

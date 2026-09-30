@@ -150,6 +150,17 @@ def _run(report: _Report, db_url: str, workdir: Path) -> None:
             raise SmokeFailure("re-running migrations was not a no-op")
     report.check("Migrations", migrations)
 
+    from osint_monitor.processors.nlp import LANGUAGE_NAMES, ner_status
+    status = ner_status()
+    if not status["en"][1]:
+        report.line("NER models", "FAIL", f"English model {status['en'][0]} missing")
+        raise SmokeFailure(f"English NER model {status['en'][0]} not installed")
+    missing = [f"{LANGUAGE_NAMES[lang]} ({model})" for lang, (model, ok) in status.items() if not ok]
+    # a missing it/es model is a visible degraded state, not a failure: those items get no entities
+    report.line("NER models", "DEGRADED" if missing else "OK",
+                ("missing: " + ", ".join(missing) + " -- items in those languages get no entities") if missing
+                else ", ".join(f"{LANGUAGE_NAMES[lang]}" for lang in status))
+
     session = get_session()
 
     def seed():

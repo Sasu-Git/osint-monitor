@@ -139,3 +139,40 @@ Not chosen (each needs a larger semantic change or rests on less evidence):
 - headline institutional NER (D25);
 - a nominal-notice issuer rule (D16);
 - a generic-body phrase rule (D22).
+
+## After the fix (`runs/r2/08-joint-coagents.json`)
+
+`clause_role` now makes a polity a co-agent when it modifies a noun marked "joint" (it/es forms included) and
+the parse gave it only a place or topic role; target and affected roles are kept. No other runtime logic
+changed.
+
+| Metric | before fix | after fix | changed units |
+|---|---:|---:|---|
+| NER / typing / resolution / hygiene | as above | identical | none |
+| Principal-actor precision | 78% (18/23) | 80% (20/25) | +2 hits (D07 US, UK) |
+| Principal-actor recall | 69% (18/26) | 77% (20/26) | 2 fixed (D07), 0 introduced |
+| Actor-role accuracy | 56% (67/119) | 58% (69/119) | 2 fixed (D07 US, UK actor), 0 introduced |
+
+Per language: en principal precision 77% (17/22), recall 74% (17/23), roles 59% (66/112); es and es+it unchanged.
+
+Downstream checks (fix vs pre-fix commit 8dcceac):
+- Situation actor sets: `development_actors` over all 214 events of four read-only working-copy DBs (inventory,
+  source-expansion, entity-review en/ml). Principal sets, state-level sets and role maps change in exactly one
+  event, D07 (present in two DBs): `[]` -> `[united kingdom, united states]`.
+- Frozen clustering benchmark (`inspect clustering-benchmark --development`) and Development segmentation
+  (`--segmentation`): reports identical to the pre-fix commit except `generated_at` (holdout not run).
+- `pytest -q`: 544 passed, 3 xfailed (541 + 3 new tests). Smoke passes.
+
+Remaining principal errors after the fix: 11 (5 false positives D05 x2, D10, D22 x2; 6 misses D03 x2, D16,
+D22, D25 x2), all listed above and all needing a larger semantic change.
+
+## Operational
+
+- Missing it/es NER models are now visible: `main.py status` prints one line per language ("Italian NER:
+  MISSING (it_core_news_md) -- it items get no entities, roles or principals; install with ..."), the daemon
+  prints the same at startup and logs a warning, and smoke reports `NER models ... DEGRADED` (a missing English
+  model fails smoke). Checked with the Italian model simulated missing.
+- Migration collision: this branch adds migration 4 (`item_entities.resolution_method`, `resolution_evidence`,
+  `event_entities.actor_role`). The unmerged `feat/localhost-demo` branch also uses migration 4 (summaries).
+  Whichever lands second must renumber its migration to 5 and check that `head_version()` and any stored
+  schema versions on existing databases agree. Not resolved here.

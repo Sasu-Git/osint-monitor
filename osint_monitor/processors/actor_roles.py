@@ -112,8 +112,36 @@ def _phrase_head(tok):
     return tok
 
 
+# "joint US-UK SINKEX", "esercitazione congiunta": the modifiers of a joint action are its co-agents
+JOINT_WORDS = {"joint", "combined", "congiunto", "congiunta", "congiunti", "congiunte", "conjunto", "conjunta",
+               "conjuntos", "conjuntas"}
+_JOINT_CLIMB = {"compound", "amod", "nmod", "flat", "flat:name", "conj", "appos"}
+
+
+def _joint_head(tok):
+    """The noun marked "joint" whose modifier chain the token belongs to, or None."""
+    for _ in range(6):
+        if tok.dep_ not in _JOINT_CLIMB or tok.head is tok:
+            return None
+        tok = tok.head
+        if any(c.dep_ == "amod" and _lemma(c) in JOINT_WORDS for c in tok.children):
+            return tok
+    return None
+
+
 def clause_role(span, is_place: bool, is_forum: bool) -> tuple[str, str]:
-    """(role, reason) of a mention from its position in the parse."""
+    """(role, reason) of a mention from its position in the parse. A polity modifying a noun marked
+    "joint" is a co-agent of that action when the parse gives it only a place or topic role ("in joint US-UK
+    SINKEX"); a target or affected role is kept ("strike on joint US-Iraqi base")."""
+    role, reason = _clause_role(span, is_place, is_forum)
+    if role in ("location", "subject") and not is_place and not is_forum:
+        joint = _joint_head(span.root)
+        if joint is not None:
+            return "actor", f"co-agent of joint '{joint.text}'"
+    return role, reason
+
+
+def _clause_role(span, is_place: bool, is_forum: bool) -> tuple[str, str]:
     tok = span.root
     for _ in range(14):
         dep, head = tok.dep_, tok.head
