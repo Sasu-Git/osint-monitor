@@ -268,3 +268,45 @@ def _extract_russian(text: str) -> list[ExtractedEntity] | None:
         )
 
     return entities
+
+
+# ---------------------------------------------------------------------------
+# Item language for NER routing (en / it / es and the scripts above)
+# ---------------------------------------------------------------------------
+
+_FEED_LANGUAGES: dict[str, str] | None = None
+_STOPWORDS = {
+    "en": {"the", "of", "and", "to", "in", "is", "for", "on", "with", "as", "was", "by", "that", "from", "has"},
+    "it": {"il", "della", "che", "di", "del", "per", "non", "gli", "sono", "alla", "dei", "una", "nel", "con", "le"},
+    "es": {"el", "los", "las", "que", "del", "por", "una", "para", "con", "se", "en", "de", "al", "su", "ha"},
+}
+
+
+def configured_language(source_name: str | None) -> str | None:
+    """The language config/sources.yaml declares for a feed, if any."""
+    global _FEED_LANGUAGES
+    if _FEED_LANGUAGES is None:
+        try:
+            from osint_monitor.core.config import load_sources_config
+            _FEED_LANGUAGES = {f.name: f.language for f in load_sources_config().rss_feeds if f.language}
+        except Exception:
+            _FEED_LANGUAGES = {}
+    return _FEED_LANGUAGES.get(source_name or "")
+
+
+def detect_latin_language(text: str) -> str:
+    """en / it / es for Latin-script text by function-word counts; English when undecided."""
+    words = re.findall(r"[a-záéíóúñàèìòù]+", (text or "").lower())
+    counts = {lang: sum(1 for w in words if w in stop) for lang, stop in _STOPWORDS.items()}
+    best = max(counts, key=counts.get)
+    return best if counts[best] >= 2 and counts[best] > counts["en"] else "en"
+
+
+def item_language(source_name: str | None, text: str) -> str:
+    """The language to parse an item in: the feed's configured language, else the script, else a
+    function-word vote among English, Italian and Spanish."""
+    lang = configured_language(source_name)
+    if lang:
+        return lang
+    script = detect_language(text)
+    return script if script != "en" else detect_latin_language(text)

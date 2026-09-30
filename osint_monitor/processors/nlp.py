@@ -133,20 +133,112 @@ def _add_entity_ruler(nlp: Language):
         logger.info(f"Added {len(patterns)} custom entity patterns")
 
 
-def extract_entities(text: str) -> list[ExtractedEntity]:
+# --- language routing ----------------------------------------------------------------------------
+# English uses settings.spacy_model. Italian and Spanish items get their own models; a language without an
+# installed model gets no entities at all rather than English NER over foreign text (which turned clauses
+# into "entities" and principals). Install: python -m spacy download it_core_news_md es_core_news_md
+LANGUAGE_MODELS = {"it": "it_core_news_md", "es": "es_core_news_md"}
+_language_instances: dict[str, Language | None] = {}
+# it/es models label PER / ORG / LOC / MISC; LOC becomes GPE for places the gazetteer knows, MISC is dropped
+UD_LABEL_MAP: dict[str, EntityType | None] = {"PER": EntityType.PERSON, "ORG": EntityType.ORG,
+                                                "LOC": EntityType.LOC, "MISC": None}
+
+
+def get_language_nlp(lang: str | None) -> Language | None:
+    """The spaCy pipeline for ``lang`` ("en", "it", "es"), or None when no trusted model is installed."""
+    lang = (lang or "en").split("-")[0].lower()
+    if lang == "en":
+        return get_nlp()
+    if lang not in LANGUAGE_MODELS:
+        return None
+    if lang not in _language_instances:
+        try:
+            nlp = spacy.load(LANGUAGE_MODELS[lang])
+            _add_entity_ruler(nlp)
+            _language_instances[lang] = nlp
+            logger.info(f"Loaded spaCy model: {LANGUAGE_MODELS[lang]}")
+        except OSError:
+            logger.warning(f"spaCy model {LANGUAGE_MODELS[lang]} not installed: no entities for '{lang}' items "
+                           f"(install with: python -m spacy download {LANGUAGE_MODELS[lang]})")
+            _language_instances[lang] = None
+    return _language_instances[lang]
+
+
+_GEO = None
+
+
+def entity_type_of(label: str, text: str, lang: str = "en") -> EntityType | None:
+    """Our entity type for a spaCy label: the English model's OntoNotes labels, or the it/es models'
+    PER / ORG / LOC / MISC (the entity ruler adds our own labels to every model)."""
+    global _GEO
+    if lang == "en" or label not in UD_LABEL_MAP:
+        return SPACY_LABEL_MAP.get(label)
+    etype = UD_LABEL_MAP.get(label)
+    if etype is EntityType.LOC:
+        if _GEO is None:
+            from osint_monitor.processors.geography import Gazetteer
+            _GEO = Gazetteer.load()
+        if _GEO.is_country(text) or _GEO.is_subnational(text):
+            return EntityType.GPE
+    return etype
+
+
+# --- mention validation (all languages) -----------------------------------------------------------
+_LEAD_DROP = {"AUX", "VERB", "SCONJ", "PRON", "ADP", "CCONJ", "PUNCT"}
+_TRAIL_DROP = {"AUX", "VERB", "ADP", "DET", "CCONJ", "SCONJ", "PUNCT", "PRON"}
+MAX_MENTION_TOKENS = 6
+
+
+def mention_span(span):
+    """The name inside an NER span, or None when the span is clause-like.
+
+    Leading and trailing function words, verbs and lower-case common words are trimmed ("north Gaza" ->
+    "Gaza", "oficial de EEUU" -> "EEUU", "What Will Hegseth" -> "Hegseth"); what remains must contain no verb,
+    have at most MAX_MENTION_TOKENS tokens and contain a capital letter ("la moneda de Irán se hunde en un",
+    "que recibió la respuesta" fail)."""
+    start, end = span.start, span.end
+    doc = span.doc
+
+    def droppable_lead(t):
+        return t.pos_ in _LEAD_DROP or (t.is_lower and t.pos_ not in ("PROPN",)) or (t.pos_ == "DET" and t.is_lower)
+
+    def droppable_trail(t):
+        return t.pos_ in _TRAIL_DROP or (t.is_lower and t.pos_ not in ("PROPN", "NUM"))
+
+    while start < end and droppable_lead(doc[start]):
+        start += 1
+    while end > start and droppable_trail(doc[end - 1]):
+        end -= 1
+    if start >= end:
+        return None
+    core = doc[start:end]
+    words = [t for t in core if not t.is_punct]              # "Izz al-Din al-Beik" is four words, not seven tokens
+    if len(words) > MAX_MENTION_TOKENS or any(t.pos_ in ("VERB", "AUX") for t in core):
+        return None
+    if not any(ch.isupper() for ch in core.text) or any(t.text in (";", "?", "!") for t in core):
+        return None
+    return core
+
+
+def extract_entities(text: str, lang: str = "en") -> list[ExtractedEntity]:
     """Extract named entities from text."""
     from osint_monitor.processors.text_normalize import clean_name, clean_text
-    nlp = get_nlp()
+    nlp = get_language_nlp(lang)
+    if nlp is None:
+        return []                          # no trusted model for this language: no entities, not wrong ones
     doc = nlp(clean_text(text)[:10000])  # limit input size
 
     entities: list[ExtractedEntity] = []
     seen: set[str] = set()
 
     for ent in doc.ents:
-        etype = SPACY_LABEL_MAP.get(ent.label_)
+        span = mention_span(ent)
+        if span is None:
+            continue
+        etype = entity_type_of(ent.label_, span.text, (lang or "en").split("-")[0].lower())
         if etype is None:
             continue
-        name = clean_name(ent.text)
+        name = clean_name(span.text)
         if not name:
             continue
 
@@ -158,7 +250,7 @@ def extract_entities(text: str) -> list[ExtractedEntity]:
         role = EntityRole.LOCATION if etype in (EntityType.GPE, EntityType.LOC, EntityType.FAC) else EntityRole.SUBJECT
 
         entities.append(ExtractedEntity(
-            text=ent.text,                 # the mention as written (after text cleaning)
+            text=span.text,                # the mention as written (after text cleaning)
             entity_type=etype,
             role=role,
             confidence=1.0,
@@ -171,7 +263,7 @@ def extract_entities(text: str) -> list[ExtractedEntity]:
 def extract_mentions(text: str, lang: str = "en") -> list[ExtractedEntity]:
     """Entity mentions of one text written in ``lang``: the NER entry point the pipeline and the entity
     benchmark share."""
-    return extract_entities(text)
+    return extract_entities(text, lang)
 
 
 def extract_event_triples(text: str) -> list[dict]:

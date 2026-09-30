@@ -112,3 +112,51 @@ def test_ner_text_is_decoded_and_unglued_but_otherwise_as_written():
 def test_new_entities_get_the_clean_name_and_keep_the_raw_mention(session):
     entity, r = resolve(session, "the U.S. Navy’s", "ORG")
     assert entity.canonical_name == "U.S. Navy" and r.last_method == "new"
+
+
+# --- 3. multilingual NER routing / unsupported-language safety -------------------------------------
+
+from osint_monitor.processors import nlp as NLP  # noqa: E402
+from osint_monitor.processors.language import detect_latin_language, item_language  # noqa: E402
+
+
+def _has(model):
+    import spacy.util
+    return model in spacy.util.get_installed_models()
+
+
+@pytest.mark.skipif(not _has("es_core_news_md"), reason="Spanish model not installed")
+def test_spanish_text_is_parsed_by_the_spanish_model_and_clauses_never_become_entities():
+    got = [(m.text, m.entity_type.value) for m in NLP.extract_mentions(
+        "Por la guerra y la incertidumbre económica, la moneda de Irán se hunde en un mínimo histórico", "es")]
+    assert ("Irán", "GPE") in got
+    assert not any(len(t.split()) > 3 for t, _ in got)            # no "la moneda de Irán se hunde en un"
+    got = [(m.text, m.entity_type.value) for m in NLP.extract_mentions(
+        "Irán confirma que recibió la respuesta oficial de EEUU a su última propuesta", "es")]
+    assert got == [("Irán", "GPE"), ("EEUU", "GPE")]
+
+
+@pytest.mark.skipif(not _has("it_core_news_md"), reason="Italian model not installed")
+def test_italian_names_are_typed_by_the_italian_model():
+    got = {(m.text, m.entity_type.value) for m in NLP.extract_mentions("Trump, 'Usa valutano comitato di 10 persone'", "it")}
+    assert {("Trump", "PERSON"), ("Usa", "GPE")} <= got
+
+
+def test_a_language_without_a_trusted_model_yields_no_entities(monkeypatch):
+    monkeypatch.setitem(NLP._language_instances, "es", None)
+    assert NLP.extract_mentions("Irán confirma que recibió la respuesta de EEUU", "es") == []
+    assert NLP.extract_mentions("Текст на русском", "ru") == []
+
+
+def test_clause_like_spans_fail_validation_in_english_too():
+    doc = NLP.get_nlp()("What Will Hegseth’s “State of the Force” Reprise Reveal? Israeli forces kill Izz al-Din al-Beik")
+    names = [NLP.mention_span(e).text for e in doc.ents if NLP.mention_span(e) is not None]
+    assert "Hegseth" in names and "Izz al-Din al-Beik" in names and "Will Hegseth" not in names
+
+
+def test_item_language_prefers_the_feed_configuration_then_the_text():
+    assert item_language("El País Internacional", "anything") == "es"
+    assert item_language("ANSA Mondo", "anything") == "it"
+    assert item_language(None, "Il governo ha approvato il decreto per le scuole della città") == "it"
+    assert item_language(None, "El gobierno de España aprobó las medidas para los inquilinos") == "es"
+    assert detect_latin_language("The government approved the measures for the tenants") == "en"

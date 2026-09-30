@@ -53,9 +53,10 @@ from osint_monitor.processors.text_normalize import clean_text
 logger = logging.getLogger(__name__)
 
 ACTOR_LABELS = {"PERSON", "NORP", "GPE", "ORG"}
-CLIMB_DEPS = {"compound", "amod", "poss", "nmod", "appos", "conj", "flat", "case", "nummod", "cc"}
+CLIMB_DEPS = {"compound", "amod", "poss", "nmod", "appos", "conj", "flat", "case", "nummod", "cc", "flat:name"}
 PARTICIPANT_DEPS = {"nsubj", "nsubjpass", "csubj", "csubjpass", "dobj", "iobj", "dative", "agent",
-                    "attr", "oprd", "ROOT"}
+                    "attr", "oprd", "ROOT",
+                    "obj", "nsubj:pass", "csubj:pass"}          # Universal Dependencies labels (it/es models)
 PARTICIPANT_PREPS = {"with", "between", "against", "by"}
 TARGET_PREPS = {"on", "upon", "against"}
 # "sanctions on Russia", "strike on Iran": the object of a coercive measure is a party to it
@@ -119,7 +120,7 @@ def is_participant(span, actor_tokens: set[int] | None = None) -> bool:
             return False
         if dep in PARTICIPANT_DEPS:
             head = tok.head.lemma_.lower()
-            if dep in {"nsubj", "nsubjpass", "csubj", "csubjpass"}:
+            if dep in {"nsubj", "nsubjpass", "csubj", "csubjpass", "nsubj:pass", "csubj:pass"}:
                 return head not in TOPIC_SUBJECT_VERBS
             if dep != "ROOT" and dep != "agent" and head in TOPIC_VERBS:
                 return False
@@ -148,11 +149,11 @@ def _gazetteer() -> Gazetteer:
     return _GAZETTEER
 
 
-def rejection(span, normalizer: ActorNormalizer, geo: Gazetteer | None = None) -> str | None:
+def rejection(span, normalizer: ActorNormalizer, geo: Gazetteer | None = None, label: str | None = None) -> str | None:
     """Why an actor candidate is not an actor in its sentence, or None. Uses the NER label,
     part of speech and dependency role; configured actors are never rejected."""
     geo = geo or _gazetteer()
-    text, label, root = span.text, getattr(span, "label_", ""), span.root
+    text, label, root = span.text, label or getattr(span, "label_", ""), span.root
     if normalizer.is_known(text):
         return None
     before = span.doc[span.start - 1].lower_ if span.start > 0 else ""
@@ -174,27 +175,35 @@ def rejection(span, normalizer: ActorNormalizer, geo: Gazetteer | None = None) -
     return None
 
 
-def _spans(doc, normalizer: ActorNormalizer):
-    """Actor spans: NER actors, plus configured actors the NER missed or mislabelled."""
+def _spans(doc, normalizer: ActorNormalizer, lang: str = "en"):
+    """(span, label) for actor spans: NER actors -- names only, clause-like spans fail validation
+    (``nlp.mention_span``) -- plus configured actors the NER missed or mislabelled."""
+    from osint_monitor.processors.nlp import entity_type_of, mention_span
     covered: set[int] = set()
     for ent in doc.ents:
-        if ent.label_ in ACTOR_LABELS or normalizer.is_known(ent.text):
+        span = mention_span(ent)
+        if span is None:
+            continue
+        etype = entity_type_of(ent.label_, span.text, lang)
+        label = etype.value if etype else ent.label_
+        if label in ACTOR_LABELS or normalizer.is_known(span.text):
             covered.update(range(ent.start, ent.end))
-            yield ent
+            yield span, label
     for tok in doc:
         if tok.i not in covered and tok.pos_ == "PROPN" and normalizer.is_known(tok.text):
-            yield doc[tok.i:tok.i + 1]
+            yield doc[tok.i:tok.i + 1], ""
 
 
-def item_candidates(nlp, title: str, lead: str = "", normalizer: ActorNormalizer | None = None) -> list[Candidate]:
+def item_candidates(nlp, title: str, lead: str = "", normalizer: ActorNormalizer | None = None,
+                    lang: str = "en") -> list[Candidate]:
     normalizer = normalizer or ActorNormalizer.load()
     out = []
     for fld, text in (("title", title), ("lead", lead)):
         if text:
-            spans = list(_spans(nlp(clean_text(text)[:500]), normalizer))
-            actor_tokens = {i for sp in spans for i in range(sp.start, sp.end)}
-            for sp in spans:
-                why = rejection(sp, normalizer)
+            spans = list(_spans(nlp(clean_text(text)[:500]), normalizer, lang))
+            actor_tokens = {i for sp, _ in spans for i in range(sp.start, sp.end)}
+            for sp, label in spans:
+                why = rejection(sp, normalizer, label=label or None)
                 out.append(Candidate(sp.text, why is None and is_participant(sp, actor_tokens), fld, why))
     return out
 
@@ -278,16 +287,22 @@ def principal_selection(nlp, items: list[tuple[str, str]],
 class DevelopmentActors:
     principals: set[str]                            # principal actor names
     roles: dict[str, str]                           # actor name -> role in the Development
+    selection: "PrincipalSelection | None" = None
 
 
 def development_actors(items: list[dict], nlp=None, normalizer: ActorNormalizer | None = None) -> DevelopmentActors:
     """Principal actors and actor roles of one Development. ``items``: dicts with title, lead, lang, source."""
-    if nlp is None:
-        from osint_monitor.processors.nlp import get_nlp
-        nlp = get_nlp()
+    from osint_monitor.processors.nlp import get_language_nlp
     normalizer = normalizer or ActorNormalizer.load()
-    selection = principal_selection(nlp, [(i["title"], i["lead"]) for i in items], normalizer)
-    return DevelopmentActors(set(selection.keys), {k: "actor" for k in selection.keys})
+    evidence = []
+    for i in items:
+        item_nlp = nlp if nlp is not None else get_language_nlp(i.get("lang"))
+        if item_nlp is None:
+            continue                           # no trusted model for the language: no actor evidence
+        evidence.append(item_evidence(item_candidates(item_nlp, i["title"], i["lead"], normalizer,
+                                                      (i.get("lang") or "en")), normalizer))
+    selection = select_principals(evidence)
+    return DevelopmentActors(set(selection.keys), {k: "actor" for k in selection.keys}, selection)
 
 
 def principal_keys(nlp, items: list[tuple[str, str]], normalizer: ActorNormalizer | None = None) -> set[str]:
@@ -313,10 +328,9 @@ def mark_principal_actors(session: Session, now: datetime | None = None,
     participant ("Trump" for a selected United States). When no linked entity matches, an
     existing entity with that name is linked to the event.
     """
-    from osint_monitor.processors.nlp import get_nlp
+    from osint_monitor.processors.language import item_language
 
     now = now or datetime.utcnow()
-    nlp = get_nlp()
     normalizer = normalizer or ActorNormalizer.load()
     events = session.query(Event).filter(Event.last_updated_at >= now - timedelta(days=window_days)).all()
     stats = {"events": len(events), "with_principals": 0, "without_principals": 0, "principal_links": 0}
@@ -325,9 +339,13 @@ def mark_principal_actors(session: Session, now: datetime | None = None,
 
     by_surface: dict[str, Entity] | None = None      # all entities, built only if an event needs it
     for event in events:
-        rows = [(t, c) for t, c in session.query(RawItem.title, RawItem.content)
-                .join(EventItem, EventItem.item_id == RawItem.id).filter(EventItem.event_id == event.id)]
-        selection = principal_selection(nlp, [(t or "", _lead(c)) for t, c in rows], normalizer)
+        rows = (session.query(RawItem).options(joinedload(RawItem.source))
+                .join(EventItem, EventItem.item_id == RawItem.id).filter(EventItem.event_id == event.id).all())
+        actors = development_actors([{"title": r.title or "", "lead": _lead(r.content),
+                                      "lang": item_language(r.source.name if r.source else None, r.title or ""),
+                                      "source": r.source.name if r.source else None} for r in rows],
+                                    normalizer=normalizer)
+        selection = actors.selection
 
         links = (session.query(EventEntity).options(joinedload(EventEntity.entity))
                  .filter(EventEntity.event_id == event.id).all())

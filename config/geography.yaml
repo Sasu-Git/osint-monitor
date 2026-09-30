@@ -53,6 +53,69 @@ aliases:
   saigon: ho chi minh city
   holland: netherlands
   the hague: hague
+  # Italian and Spanish names (matching is accent-insensitive: "Irán" = "iran")
+  eeuu: united states
+  ee.uu.: united states
+  ee. uu.: united states
+  estados unidos: united states
+  stati uniti: united states
+  reino unido: united kingdom
+  regno unito: united kingdom
+  gran bretana: united kingdom
+  gran bretagna: united kingdom
+  rusia: russia
+  cina: china
+  francia: france
+  alemania: germany
+  germania: germany
+  ucrania: ukraine
+  ucraina: ukraine
+  israele: israel
+  turquia: turkiye
+  turchia: turkiye
+  italia: italy
+  espana: spain
+  spagna: spain
+  siria: syria
+  libano: lebanon
+  arabia saudita: saudi arabia
+  arabia saudi: saudi arabia
+  egipto: egypt
+  egitto: egypt
+  japon: japan
+  giappone: japan
+  corea del norte: north korea
+  corea del nord: north korea
+  corea del sur: south korea
+  corea del sud: south korea
+  pakistan: pakistan
+  afganistan: afghanistan
+  irak: iraq
+  mexico: mexico
+  messico: mexico
+  brasil: brazil
+  brasile: brazil
+  paises bajos: netherlands
+  paesi bassi: netherlands
+  polonia: poland
+  grecia: greece
+  cisjordania: west bank
+  cisgiordania: west bank
+  franja de gaza: gaza
+  striscia di gaza: gaza
+  kiev: kyiv
+  moscu: moscow
+  mosca: moscow
+  pekin: beijing
+  pechino: beijing
+  teheran: tehran
+  bruselas: brussels
+  bruxelles: brussels
+  londres: london
+  londra: london
+  paris: paris
+  parigi: paris
+  roma: rome
 
 # The directional part of "northern cyprus", "eastern ukraine", "southern lebanon": when the
 # rest of the name is a known place, the mention is a part of that place.

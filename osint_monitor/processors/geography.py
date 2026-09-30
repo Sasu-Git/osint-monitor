@@ -14,6 +14,7 @@ themselves after normalisation.
 from __future__ import annotations
 
 import html
+import unicodedata
 import re
 from functools import lru_cache
 from pathlib import Path
@@ -31,6 +32,7 @@ def clean(name: str) -> str:
     """Lower-case, unescape HTML, drop possessives, leading articles and stray punctuation."""
     t = html.unescape(name or "").replace("‌", "").replace(" ", " ")
     t = _SPACE.sub(" ", t.strip().lower())
+    t = "".join(c for c in unicodedata.normalize("NFKD", t) if not unicodedata.combining(c))   # Irán = iran
     t = _POSSESSIVE.sub("", t).strip(" .,;:\"“”'’")
     return _ARTICLE.sub("", t)
 
