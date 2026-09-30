@@ -25,6 +25,9 @@
 # entity-resolution-evaluation-sheet-owner-reviewed.md (D05, D07, D10, D13, D15, D21, D24, D25). Entity mention,
 # typing and canonical-name labels are unchanged except the added "Italian government" identity. Revision 1 hashes
 # are kept in manifest.yaml under previous_revisions.
+#
+# REVISION 3 (2026-09-30): "Donald J. Trump" accepted as a name of Donald Trump (the multilingual entity
+# table's canonical for the same person, entity 180). Benchmark-label correction only.
 # Accepted names exclude bare generic labels (Navy, Council, Commission, Air Force, Supreme Court, General Assembly):
 # the spec forbids them as standalone canonical identities (amended 2026-09-30 before the first benchmark run).
 
@@ -66,7 +69,7 @@ canonical_names:            # accepted names per canonical identity (resolution 
   U.S. Supreme Court: [U.S. Supreme Court, US Supreme Court, Supreme Court of the United States]
   Ukrainian Air Force: [Ukrainian Air Force, Air Force of Ukraine]
   White House: [White House, Casa Bianca, Casa Blanca]
-  Donald Trump: [Donald Trump, Trump]
+  Donald Trump: [Donald Trump, Trump, Donald J. Trump]
   Pete Hegseth: [Pete Hegseth, Hegseth]
   Emmanuel Macron: [Emmanuel Macron, Macron]
   Shehbaz Sharif: [Shehbaz Sharif]
