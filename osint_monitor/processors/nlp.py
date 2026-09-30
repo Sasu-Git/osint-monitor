@@ -163,6 +163,12 @@ def extract_entities(text: str) -> list[ExtractedEntity]:
     return entities
 
 
+def extract_mentions(text: str, lang: str = "en") -> list[ExtractedEntity]:
+    """Entity mentions of one text written in ``lang``: the NER entry point the pipeline and the entity
+    benchmark share."""
+    return extract_entities(text)
+
+
 def extract_event_triples(text: str) -> list[dict]:
     """Extract (ACTOR, ACTION, TARGET) triples via dependency parsing."""
     nlp = get_nlp()

@@ -85,6 +85,7 @@ def main():
                              help="clustering-benchmark: evaluate development segmentation (config/event_grouping.yaml) "
                                   "instead of the link-rule variants")
     sub_inspect.add_argument("--json", action="store_true", help="sources: print the inventory as JSON")
+    sub_inspect.add_argument("--compare", default=None, help="entity-benchmark: diff against a saved run (JSON)")
     sub_inspect.add_argument("--active-only", action="store_true", help="sources: list only endpoints with stored items")
     sub_inspect.add_argument("--since", default="24h",
                              help="sources: recent-activity window, e.g. 24h, 7d (default 24h)")
@@ -567,8 +568,29 @@ def _cmd_inspect_sources(args):
         print(inv.format_inventory(rows, summary, issues))
 
 
+def _cmd_inspect_entity_benchmark(args):
+    """Entity benchmark on the frozen gold set (evaluations/entities/gold/); --out saves the run,
+    --compare diffs it against a saved run."""
+    import json
+
+    from osint_monitor.benchmark import entities as eb
+
+    data = eb.to_json(eb.run())
+    print(eb.format_summary(data["summary"]))
+    if args.compare:
+        with open(args.compare, encoding="utf-8") as f:
+            before = json.load(f)
+        print(f"\nChanges against {args.compare}:\n")
+        print(eb.format_diff(eb.diff(before, data)))
+    if args.out:
+        with open(args.out, "w", encoding="utf-8") as f:
+            json.dump(data, f, indent=1, ensure_ascii=False)
+        print(f"\nRun written to {args.out}")
+
+
 INSPECT_TARGETS = {
     "sources": _cmd_inspect_sources,
+    "entity-benchmark": _cmd_inspect_entity_benchmark,
     "events": None,
     "clustering": _cmd_inspect_clustering,
     "situations": _cmd_inspect_situations,

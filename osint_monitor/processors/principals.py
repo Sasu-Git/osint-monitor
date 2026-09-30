@@ -273,6 +273,22 @@ def principal_selection(nlp, items: list[tuple[str, str]],
                               for t, lead in items])
 
 
+@dataclass
+class DevelopmentActors:
+    principals: set[str]                            # principal actor names
+    roles: dict[str, str]                           # actor name -> role in the Development
+
+
+def development_actors(items: list[dict], nlp=None, normalizer: ActorNormalizer | None = None) -> DevelopmentActors:
+    """Principal actors and actor roles of one Development. ``items``: dicts with title, lead, lang, source."""
+    if nlp is None:
+        from osint_monitor.processors.nlp import get_nlp
+        nlp = get_nlp()
+    normalizer = normalizer or ActorNormalizer.load()
+    selection = principal_selection(nlp, [(i["title"], i["lead"]) for i in items], normalizer)
+    return DevelopmentActors(set(selection.keys), {k: "actor" for k in selection.keys})
+
+
 def principal_keys(nlp, items: list[tuple[str, str]], normalizer: ActorNormalizer | None = None) -> set[str]:
     """Canonical (state-level) keys of principal actors for an event given (title, lead) per item."""
     return principal_selection(nlp, items, normalizer).keys

@@ -822,6 +822,8 @@ def _process_single_item(
                 role=ext_entity.role.value,
                 confidence=ext_entity.confidence,
                 span_text=ext_entity.text,
+                resolution_method=resolver.last_method,
+                resolution_evidence=(resolver.last_evidence or "")[:500] or None,
             ))
             stats["entities_extracted"] += 1
         session.flush()
