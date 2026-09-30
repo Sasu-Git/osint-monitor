@@ -9,6 +9,7 @@ Supports tiered execution for near-realtime delta processing:
 from __future__ import annotations
 
 import logging
+import os
 import threading
 import time
 from datetime import datetime
@@ -138,7 +139,6 @@ def build_collectors() -> list[BaseCollector]:
         collectors.append(TravelAdvisoryCollector())
         collectors.append(OONICollector())
         # NOTAMCollector only if API key available
-        import os
         if os.environ.get("FAA_NOTAM_KEY"):
             from osint_monitor.collectors.govint import NOTAMCollector
             collectors.append(NOTAMCollector())

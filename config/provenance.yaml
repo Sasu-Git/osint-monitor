@@ -30,6 +30,36 @@ sources:
   NASA FIRMS:         {role: primary_official}
   GDELT:              {role: unknown}          # aggregator: original outlet not preserved
   X-ForYou:           {role: social}
+  # Source expansion 2026-09-30 (docs/source-acquisition.md). Several feeds of one organisation
+  # share its origin, so they never count as independent of each other.
+  White House:                {role: primary_official, origin: The White House}
+  ANSA Mondo:                 {role: wire, origin: ANSA}
+  ANSA English:               {role: wire, origin: ANSA}
+  Europa Press Internacional: {role: wire, origin: Europa Press}
+  EFE:                        {role: wire, origin: EFE}
+  BBC Mundo:                  {origin: BBC}
+  Rai News Esteri:            {role: independent_reporting, origin: Rai}
+  DW World:                   {role: independent_reporting, origin: Deutsche Welle}
+  France 24:                  {role: independent_reporting, origin: France 24}
+  France 24 Español:          {role: independent_reporting, origin: France 24}
+  Il Sole 24 Ore Mondo:       {role: independent_reporting, origin: Il Sole 24 Ore}
+  El País Internacional:      {role: independent_reporting, origin: El País}
+  Clarín Mundo:               {role: independent_reporting, origin: Clarín}
+  Kyiv Independent:           {role: independent_reporting, origin: Kyiv Independent}
+  ECB Press:                  {role: primary_official, origin: European Central Bank}
+  Federal Reserve Press:      {role: primary_official, origin: Federal Reserve}
+  Federal Reserve Speeches:   {role: primary_official, origin: Federal Reserve}
+  BIS Press:                  {role: primary_official, origin: Bank for International Settlements}
+  European Commission Press:  {role: primary_official, origin: European Commission}
+  Council of the EU Press:    {role: primary_official, origin: Council of the European Union}
+  European Parliament Press:  {role: primary_official, origin: European Parliament}
+  UN News:                    {role: primary_official, origin: United Nations}
+  UN Press:                   {role: primary_official, origin: United Nations}
+  Federal Register:           {role: primary_official, origin: US Federal Register}
+  Congressional Research Service: {role: analysis}
+  Crisis Group:               {role: analysis, origin: International Crisis Group}
+  SIPRI:                      {role: analysis}
+  Bruegel:                    {role: analysis}
 
 category_roles:
   us_gov: primary_official
@@ -59,6 +89,7 @@ origins:
   dpa:              {role: wire, aliases: [dpa, Deutsche Presse-Agentur]}
   ANSA:             {role: wire, aliases: [ANSA]}
   EFE:              {role: wire, aliases: [EFE]}
+  Europa Press:     {role: wire, aliases: [Europa Press]}
   Kyodo:            {role: wire, aliases: [Kyodo]}
   Yonhap:           {role: wire, aliases: [Yonhap]}
   Anadolu:          {role: wire, aliases: [Anadolu Agency, Anadolu]}
@@ -78,6 +109,11 @@ attribution_patterns:
   - '\b{alias} contributed to this report\b'
   - '\bvia {alias}\b'
   - '[-|]\s*{alias}\s*$'                                  # title suffix "... - Reuters"
+  # Spanish and Italian attributions (El País citing EFE, Il Sole citing ANSA)
+  - '\bsegún (?:ha informado |informó |informa )?(?:la agencia )?{alias}\b'
+  - '\b(?:ha informado|informó|informa) (?:a )?(?:la agencia )?{alias}\b'
+  - '\bsecondo (?:quanto (?:riferisce|riporta) )?(?:l[''’]|la )?(?:agenzia )?{alias}\b'
+  - '\b(?:riferisce|riporta) (?:l[''’]|la )?(?:agenzia )?{alias}\b'
 
 # Direct observation by the reporting outlet itself.
 firsthand_patterns:

@@ -16,40 +16,151 @@ tiers:
     DNSHealthMonitor: 90       # observed 83 s for all domains
     BGPMonitor: 180            # observed 164 s; runs in the warm tier (600 s)
 
-# RSS Feeds - these work without API keys
+# RSS Feeds - these work without API keys.
+# Per feed: `identity` is the organisation (several feeds may share one; default: the feed name),
+# `language` the ISO 639-1 language of the content (stored as published, never translated),
+# `category` the source class (provenance role via config/provenance.yaml category_roles, or an
+# explicit entry there), `enabled: false` + `access` for feeds that need a licence or are unreachable.
+# Every feed is an endpoint in `python main.py inspect sources`. All RSS feeds run in the warm tier.
 rss_feeds:
-  # US Government (credibility: 1.0)
+  # --- US Government: primary official ---------------------------------------------------------
   - name: "Defense.gov"
-    url: "https://www.defense.gov/news/feed/"
+    identity: "US Department of Defense"
+    language: en
+    # releases feed; /news/feed/ answers 403 (Akamai) to feed clients since 2026-09
+    url: "https://www.defense.gov/DesktopModules/ArticleCS/RSS.ashx?ContentType=9&Site=945&max=10"
     category: "us_gov"
     credibility_score: 1.0
     priority: 1
     poll_interval: 900
 
   - name: "State Department"
-    url: "https://www.state.gov/rss/press-releases/"
+    identity: "US State Department"
+    language: en
+    # /rss/press-releases/ now redirects to an image; this is the current press-release feed
+    url: "https://www.state.gov/rss-feed/press-releases/feed/"
     category: "us_gov"
     credibility_score: 1.0
     priority: 1
     poll_interval: 900
 
-  # Wire Services (credibility: 0.9)
+  - name: "White House"
+    identity: "The White House"
+    language: en
+    url: "https://www.whitehouse.gov/news/feed/"
+    category: "us_gov"
+    credibility_score: 1.0
+    priority: 1
+    poll_interval: 900
+
+  # --- Wire services / news agencies ------------------------------------------------------------
   - name: "Reuters World"
+    identity: "Reuters"
+    language: en
     url: "https://www.reutersagency.com/feed/?taxonomy=best-topics&post_type=best"
     category: "news"
     credibility_score: 0.9
     priority: 1
     poll_interval: 600
+    enabled: false
+    access: "no public feed (URL answers 404); Reuters content needs a licensed API"
 
-  # Major International News (credibility: 0.8)
+  - name: "ANSA Mondo"
+    identity: "ANSA"
+    language: it
+    url: "https://www.ansa.it/sito/notizie/mondo/mondo_rss.xml"
+    category: "wire"
+    credibility_score: 0.9
+    priority: 1
+    poll_interval: 600
+
+  - name: "ANSA English"
+    identity: "ANSA"
+    language: en
+    url: "https://www.ansa.it/english/news/english_nr_rss.xml"
+    category: "wire"
+    credibility_score: 0.9
+    priority: 2
+    poll_interval: 600
+
+  - name: "Europa Press Internacional"
+    identity: "Europa Press"
+    language: es
+    url: "https://www.europapress.es/rss/rss.aspx?ch=00069"
+    category: "wire"
+    credibility_score: 0.85
+    priority: 1
+    poll_interval: 600
+
+  - name: "EFE"
+    identity: "EFE"
+    language: es
+    url: "https://efe.com/feed/"
+    category: "wire"
+    credibility_score: 0.9
+    priority: 1
+    poll_interval: 600
+    enabled: false
+    access: "efe.com answers a browser challenge (403) to feed clients; EFE content is licensed"
+
+  # --- Public broadcasters ----------------------------------------------------------------------
   - name: "BBC World"
+    identity: "BBC"
+    language: en
     url: "https://feeds.bbci.co.uk/news/world/rss.xml"
     category: "news"
     credibility_score: 0.8
     priority: 1
     poll_interval: 600
 
+  - name: "BBC Mundo"
+    identity: "BBC"
+    language: es
+    url: "https://feeds.bbci.co.uk/mundo/rss.xml"
+    category: "news"
+    credibility_score: 0.8
+    priority: 2
+    poll_interval: 600
+
+  - name: "Rai News Esteri"
+    identity: "Rai"
+    language: it
+    url: "https://www.rainews.it/rss/esteri"
+    category: "news"
+    credibility_score: 0.8
+    priority: 1
+    poll_interval: 600
+
+  - name: "DW World"
+    identity: "Deutsche Welle"
+    language: en
+    url: "https://rss.dw.com/rdf/rss-en-world"
+    category: "news"
+    credibility_score: 0.8
+    priority: 2
+    poll_interval: 600
+
+  - name: "France 24"
+    identity: "France 24"
+    language: en
+    url: "https://www.france24.com/en/rss"
+    category: "news"
+    credibility_score: 0.8
+    priority: 2
+    poll_interval: 600
+
+  - name: "France 24 Español"
+    identity: "France 24"
+    language: es
+    url: "https://www.france24.com/es/rss"
+    category: "news"
+    credibility_score: 0.8
+    priority: 3
+    poll_interval: 600
+
+  # --- Major international news -----------------------------------------------------------------
   - name: "Al Jazeera"
+    language: en
     url: "https://www.aljazeera.com/xml/rss/all.xml"
     category: "news"
     credibility_score: 0.8
@@ -57,14 +168,134 @@ rss_feeds:
     poll_interval: 600
 
   - name: "South China Morning Post"
+    language: en
     url: "https://www.scmp.com/rss/91/feed"
     category: "news"
     credibility_score: 0.8
     priority: 2
     poll_interval: 1800
 
-  # Specialty Analysis (credibility: 0.7)
+  - name: "Il Sole 24 Ore Mondo"
+    identity: "Il Sole 24 Ore"
+    language: it
+    url: "https://www.ilsole24ore.com/rss/mondo.xml"
+    category: "news"
+    credibility_score: 0.8
+    priority: 2
+    poll_interval: 1800
+
+  - name: "El País Internacional"
+    identity: "El País"
+    language: es
+    url: "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/internacional/portada"
+    category: "news"
+    credibility_score: 0.8
+    priority: 1
+    poll_interval: 1800
+
+  - name: "Clarín Mundo"
+    identity: "Clarín"
+    language: es
+    url: "https://www.clarin.com/rss/mundo/"
+    category: "news"
+    credibility_score: 0.7
+    priority: 3
+    poll_interval: 1800
+
+  - name: "Kyiv Independent"
+    language: en
+    url: "https://kyivindependent.com/news-archive/rss/"
+    category: "news"
+    credibility_score: 0.75
+    priority: 2
+    poll_interval: 1800
+
+  # --- Central banks / monetary institutions: primary official ----------------------------------
+  - name: "ECB Press"
+    identity: "European Central Bank"
+    language: en
+    url: "https://www.ecb.europa.eu/rss/press.html"
+    category: "official"
+    credibility_score: 1.0
+    priority: 1
+    poll_interval: 1800
+
+  - name: "Federal Reserve Press"
+    identity: "Federal Reserve"
+    language: en
+    url: "https://www.federalreserve.gov/feeds/press_all.xml"
+    category: "official"
+    credibility_score: 1.0
+    priority: 1
+    poll_interval: 1800
+
+  - name: "Federal Reserve Speeches"
+    identity: "Federal Reserve"
+    language: en
+    url: "https://www.federalreserve.gov/feeds/speeches.xml"
+    category: "official"
+    credibility_score: 1.0
+    priority: 2
+    poll_interval: 3600
+
+  - name: "BIS Press"
+    identity: "Bank for International Settlements"
+    language: en
+    url: "https://www.bis.org/doclist/all_pressrels.rss"
+    category: "official"
+    credibility_score: 1.0
+    priority: 2
+    poll_interval: 3600
+
+  # --- EU institutions and the UN: primary official ---------------------------------------------
+  - name: "European Commission Press"
+    identity: "European Commission"
+    language: en
+    url: "https://ec.europa.eu/commission/presscorner/api/rss?language=en"
+    category: "official"
+    credibility_score: 1.0
+    priority: 1
+    poll_interval: 1800
+
+  - name: "Council of the EU Press"
+    identity: "Council of the European Union"
+    language: en
+    url: "https://www.consilium.europa.eu/en/rss/pressreleases.ashx"
+    category: "official"
+    credibility_score: 1.0
+    priority: 1
+    poll_interval: 1800
+
+  - name: "European Parliament Press"
+    identity: "European Parliament"
+    language: en
+    url: "https://www.europarl.europa.eu/rss/doc/press-releases/en.xml"
+    category: "official"
+    credibility_score: 1.0
+    priority: 2
+    poll_interval: 1800
+
+  - name: "UN News"
+    identity: "United Nations"
+    language: en
+    url: "https://news.un.org/feed/subscribe/en/news/all/rss.xml"
+    category: "official"
+    credibility_score: 0.9
+    priority: 1
+    poll_interval: 1800
+
+  - name: "UN Press"
+    identity: "United Nations"
+    language: en
+    url: "https://press.un.org/en/rss.xml"
+    category: "official"
+    credibility_score: 1.0
+    priority: 2
+    poll_interval: 1800
+
+  # --- Specialty analysis: commentary, never occurrence evidence --------------------------------
   - name: "War on the Rocks"
+    language: en
     url: "https://warontherocks.com/feed/"
     category: "analysis"
     credibility_score: 0.7
@@ -72,6 +303,7 @@ rss_feeds:
     poll_interval: 3600
 
   - name: "Lawfare"
+    language: en
     url: "https://www.lawfaremedia.org/feed"
     category: "analysis"
     credibility_score: 0.7
@@ -79,14 +311,41 @@ rss_feeds:
     poll_interval: 3600
 
   - name: "CSIS"
-    url: "https://www.csis.org/rss.xml"
+    language: en
+    url: "https://www.csis.org/rss.xml"      # stale: newest entry 2016; no current CSIS feed found
     category: "analysis"
     credibility_score: 0.7
     priority: 2
     poll_interval: 3600
 
-  # Defense Industry (credibility: 0.7)
+  - name: "Crisis Group"
+    identity: "International Crisis Group"
+    language: en
+    url: "https://www.crisisgroup.org/rss.xml"
+    category: "analysis"
+    credibility_score: 0.7
+    priority: 1
+    poll_interval: 3600
+
+  - name: "SIPRI"
+    language: en
+    url: "https://www.sipri.org/rss/combined.xml"
+    category: "analysis"
+    credibility_score: 0.7
+    priority: 2
+    poll_interval: 3600
+
+  - name: "Bruegel"
+    language: en
+    url: "https://www.bruegel.org/rss.xml"
+    category: "analysis"
+    credibility_score: 0.7
+    priority: 2
+    poll_interval: 3600
+
+  # --- Defense industry: specialist reporting ---------------------------------------------------
   - name: "Defense News"
+    language: en
     url: "https://www.defensenews.com/arc/outboundfeeds/rss/"
     category: "defense"
     credibility_score: 0.7
@@ -94,6 +353,7 @@ rss_feeds:
     poll_interval: 1800
 
   - name: "Breaking Defense"
+    language: en
     url: "https://breakingdefense.com/feed/"
     category: "defense"
     credibility_score: 0.7

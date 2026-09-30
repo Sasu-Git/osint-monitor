@@ -40,15 +40,12 @@ def test_rss_and_nitter_endpoints_follow_the_sources_config():
 
 def test_one_identity_with_several_feeds_is_one_identity_and_several_endpoints():
     config = SourcesFileConfig(rss_feeds=[
-        SourceConfig(name="BBC World", url="https://feeds.bbci.co.uk/news/world/rss.xml"),
-        SourceConfig(name="BBC Business", url="https://feeds.bbci.co.uk/news/business/rss.xml"),
-        SourceConfig(name="BBC Politics", url="https://feeds.bbci.co.uk/news/politics/rss.xml", enabled=False),
+        SourceConfig(name="BBC World", identity="BBC", url="https://feeds.bbci.co.uk/news/world/rss.xml"),
+        SourceConfig(name="BBC Business", identity="BBC", url="https://feeds.bbci.co.uk/news/business/rss.xml"),
+        SourceConfig(name="BBC Politics", identity="BBC", url="https://feeds.bbci.co.uk/news/politics/rss.xml",
+                     enabled=False),
     ], twitter_accounts=[TwitterAccountConfig(username="@bellingcat")])
-    inv._IDENTITIES.update({"BBC Business": "BBC", "BBC Politics": "BBC"})
-    try:
-        rows = inv.build_inventory([e for e in inv.configured_endpoints(config) if e.family == "rss"], env={})
-    finally:
-        inv._IDENTITIES.pop("BBC Business"), inv._IDENTITIES.pop("BBC Politics")
+    rows = inv.build_inventory([e for e in inv.configured_endpoints(config) if e.family == "rss"], env={})
     s = inv.summarize(rows, None)
     assert s["identities_configured"] == 1 and s["endpoints_configured"] == 3
     assert s["endpoints_enabled"] == 2 and s["endpoints_disabled"] == 1
@@ -139,19 +136,19 @@ def test_reading_a_wal_database_creates_no_side_files(tmp_path):
 def test_log_evidence_marks_recurrent_errors_without_judging_silence(tmp_path):
     log = tmp_path / "daemon.out.log"
     log.write_text("\n".join(["  [err] @NATO: all Nitter instances failed (last: timeout)"] * 4
-                             + ["  [ok] Reuters World: 0 items"] * 4
+                             + ["  [ok] Lawfare: 0 items"] * 4
                              + ["  [ok] UN Consolidated: 50 entries", "  [skip] X-ForYou: Chrome CDP not available"]),
                    encoding="utf-8")
     evidence = inv.read_log(str(log))
-    assert evidence["@NATO"].err == 4 and evidence["Reuters World"].returned == 0
+    assert evidence["@NATO"].err == 4 and evidence["Lawfare"].returned == 0
     assert evidence["UN Consolidated"].returned == 50 and evidence["X-ForYou"].skip == 1
     db = tmp_path / "copy.db"
     make_db(db, ROWS)
     rows = {r.endpoint.source_name: r for r in inv.build_inventory(
         inv.configured_endpoints(), inv.read_observations(str(db)), evidence, env={})}
     assert rows["@NATO"].state == inv.ERRORS and "all Nitter instances failed" in rows["@NATO"].evidence
-    assert rows["Reuters World"].state == inv.NO_OBSERVATIONS           # silent, not declared broken
-    assert "0 items returned" in rows["Reuters World"].evidence
+    assert rows["Lawfare"].state == inv.NO_OBSERVATIONS           # silent, not declared broken
+    assert "0 items returned" in rows["Lawfare"].evidence
 
 
 def test_naming_issues_are_reported_not_merged(tmp_path):
@@ -159,7 +156,9 @@ def test_naming_issues_are_reported_not_merged(tmp_path):
     make_db(db, ROWS)
     eps = inv.configured_endpoints()
     issues = inv.naming_issues(eps, inv.read_observations(str(db)))
-    assert any("'government_documents' is the stored name for 2 publishers" in i for i in issues)
+    assert not any("government_documents" in i for i in issues)          # one stored name per publisher now
+    assert any("US State Department is stored under 2 source names by different collectors" in i for i in issues)
+    assert not any(i.startswith("ANSA is stored") for i in issues)                  # declared feeds of one identity
     assert any("spelling variants" in i and "'bbc world'" in i and "'BBC World'" in i for i in issues)
     assert any("database sources names 'bbc world'" in i for i in issues)
 

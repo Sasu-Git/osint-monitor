@@ -224,7 +224,7 @@ class GDELTCollector(BaseCollector):
 
     def __init__(
         self,
-        query: str = "military OR conflict OR sanctions",
+        query: str = "(military OR conflict OR sanctions)",   # the DOC API rejects OR'd terms without ()
         timespan: str = "24h",
         max_records: int = 50,
         **kwargs,

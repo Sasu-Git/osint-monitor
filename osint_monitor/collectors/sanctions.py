@@ -56,18 +56,15 @@ class SanctionsCollector(BaseCollector):
         items = []
         try:
             root = etree.fromstring(content)
-            ns = {"sdn": root.nsmap.get(None, "")}
-
-            for entry in root.findall(".//sdnEntry", namespaces={"sdn": ns.get("sdn", "")} if ns.get("sdn") else None):
-                if entry is None:
-                    continue
-
-                # Try without namespace first, then with
-                uid_el = entry.find("uid") or entry.find("{%s}uid" % ns.get("sdn", ""))
-                first_el = entry.find("firstName") or entry.find("{%s}firstName" % ns.get("sdn", ""))
-                last_el = entry.find("lastName") or entry.find("{%s}lastName" % ns.get("sdn", ""))
-                type_el = entry.find("sdnType") or entry.find("{%s}sdnType" % ns.get("sdn", ""))
-                program_el = entry.find(".//program") or entry.find(".//{%s}program" % ns.get("sdn", ""))
+            # sdn.xml has a default namespace, so unqualified paths matched nothing; "{*}" matches
+            # the element in any (or no) namespace. Elements are tested with "is not None": an
+            # element without children is falsy, so "a or b" skipped present elements.
+            for entry in root.iterfind(".//{*}sdnEntry"):
+                uid_el = entry.find("{*}uid")
+                first_el = entry.find("{*}firstName")
+                last_el = entry.find("{*}lastName")
+                type_el = entry.find("{*}sdnType")
+                program_el = entry.find(".//{*}program")
 
                 uid = uid_el.text if uid_el is not None else ""
                 first = first_el.text if first_el is not None else ""

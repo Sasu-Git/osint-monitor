@@ -29,6 +29,9 @@ class SourceConfig(BaseModel):
     priority: int = 2
     poll_interval: int = 900
     enabled: bool = True
+    identity: Optional[str] = None       # canonical source identity (organisation); default: the feed name
+    language: Optional[str] = None       # ISO 639-1 of the feed's content, stored untranslated
+    access: Optional[str] = None         # why a feed is disabled / what access it needs (licence, key)
 
 
 class TwitterAccountConfig(BaseModel):
@@ -351,7 +354,7 @@ class AppSettings(BaseSettings):
 def load_sources_config(path: Path | None = None) -> SourcesFileConfig:
     """Load and validate sources.yaml."""
     path = path or CONFIG_DIR / "sources.yaml"
-    with open(path) as f:
+    with open(path, encoding="utf-8") as f:
         raw = yaml.safe_load(f)
     return SourcesFileConfig(**raw)
 
@@ -361,7 +364,7 @@ def load_entities_config(path: Path | None = None) -> list[EntitySeedConfig]:
     path = path or CONFIG_DIR / "entities.yaml"
     if not path.exists():
         return []
-    with open(path) as f:
+    with open(path, encoding="utf-8") as f:
         raw = yaml.safe_load(f)
     return [EntitySeedConfig(**e) for e in raw.get("entities", [])]
 
@@ -371,7 +374,7 @@ def load_alerts_config(path: Path | None = None) -> AlertsConfig:
     path = path or CONFIG_DIR / "alerts.yaml"
     if not path.exists():
         return AlertsConfig()
-    with open(path) as f:
+    with open(path, encoding="utf-8") as f:
         raw = yaml.safe_load(f)
     return AlertsConfig(**raw)
 
@@ -379,7 +382,7 @@ def load_alerts_config(path: Path | None = None) -> AlertsConfig:
 def load_development_types(path: Path | None = None) -> dict[EventType, DevelopmentTypeDefaults]:
     """Load and validate development_types.yaml."""
     path = path or CONFIG_DIR / "development_types.yaml"
-    with open(path) as f:
+    with open(path, encoding="utf-8") as f:
         raw = yaml.safe_load(f) or {}
     return {EventType(k): DevelopmentTypeDefaults(**v) for k, v in raw.items()}
 
