@@ -14,6 +14,8 @@
 # roles: canonical -> actor | participant | target | affected | institutional_context | subject | location.
 # principals: the Development's principal actors = the entities whose role is actor; "A|B" accepts either name
 # (a head of state/government speaking for the state).
+# Accepted names exclude bare generic labels (Navy, Council, Commission, Air Force, Supreme Court, General Assembly):
+# the spec forbids them as standalone canonical identities (amended 2026-09-30 before the first benchmark run).
 
 canonical_names:            # accepted names per canonical identity (resolution counts a hit on any of them)
   United States: [US, U.S., U.S, USA, America, American, United States, the United States, United States of America, Estados Unidos, EEUU, EE.UU., Usa, Stati Uniti, US government]
@@ -40,17 +42,17 @@ canonical_names:            # accepted names per canonical identity (resolution 
   Houthis: [Houthis, Houthi, Ansar Allah, Houthi movement]
   Hamas: [Hamas]
   United Nations: [United Nations, UN, U.N.]
-  UN General Assembly: [UN General Assembly, UNGA, UNGA 81, General Assembly]
+  UN General Assembly: [UN General Assembly, UNGA, UNGA 81, United Nations General Assembly]
   NATO: [NATO, Nato, North Atlantic Treaty Organization]
   European Union: [European Union, EU]
-  European Commission: [European Commission, Commission, EU Commission]
-  Council of the European Union: [Council of the European Union, Council of the EU, Council, EU Council]
+  European Commission: [European Commission, EU Commission]
+  Council of the European Union: [Council of the European Union, Council of the EU, EU Council]
   US Department of Defense: [US Department of Defense, Department of Defense, Pentagon, Department of War, War Department, US Department of War, Defense Department, DoD]
-  U.S. Navy: [U.S. Navy, US Navy, United States Navy, Navy]
+  U.S. Navy: [U.S. Navy, US Navy, United States Navy]
   U.S. Customs and Border Protection: [U.S. Customs and Border Protection, Customs and Border Protection, CBP]
   U.S. Court of Appeals for the D.C. Circuit: [U.S. Court of Appeals for the D.C. Circuit, D.C. Circuit, DC Circuit, U.S. Court of Appeals, US appeals court, federal appeals court]
-  U.S. Supreme Court: [U.S. Supreme Court, Supreme Court, Corte Suprema]
-  Ukrainian Air Force: [Ukrainian Air Force, Air Force]
+  U.S. Supreme Court: [U.S. Supreme Court, US Supreme Court, Supreme Court of the United States]
+  Ukrainian Air Force: [Ukrainian Air Force, Air Force of Ukraine]
   White House: [White House, Casa Bianca, Casa Blanca]
   Donald Trump: [Donald Trump, Trump]
   Pete Hegseth: [Pete Hegseth, Hegseth]
