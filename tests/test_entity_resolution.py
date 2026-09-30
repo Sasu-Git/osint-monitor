@@ -72,8 +72,8 @@ def test_learned_aliases_are_not_trusted_for_exact_matches(session):
     polluted = add(session, "Mexican", "NORP", aliases=["American"])   # an alias an old fuzzy match stored
     entity, r = resolve(session, "American", "NORP")
     assert entity.id != polluted.id
-    variant = add(session, "the U.S. Navy", "ORG", aliases=["US Navy"])  # a surface variant stays trusted
-    entity, r = resolve(session, "US Navy", "ORG")
+    variant = add(session, "the Milrem Robotics", "ORG", aliases=["Milrem Robotics’"])  # a surface variant stays trusted
+    entity, r = resolve(session, "Milrem Robotics’", "ORG")
     assert entity.id == variant.id and r.last_method == "exact"
 
 
@@ -110,8 +110,8 @@ def test_ner_text_is_decoded_and_unglued_but_otherwise_as_written():
 
 
 def test_new_entities_get_the_clean_name_and_keep_the_raw_mention(session):
-    entity, r = resolve(session, "the U.S. Navy’s", "ORG")
-    assert entity.canonical_name == "U.S. Navy" and r.last_method == "new"
+    entity, r = resolve(session, "the Milrem Robotics’s", "ORG")
+    assert entity.canonical_name == "Milrem Robotics" and r.last_method == "new"
 
 
 # --- 3. multilingual NER routing / unsupported-language safety -------------------------------------
@@ -160,3 +160,42 @@ def test_item_language_prefers_the_feed_configuration_then_the_text():
     assert item_language(None, "Il governo ha approvato il decreto per le scuole della città") == "it"
     assert item_language(None, "El gobierno de España aprobó las medidas para los inquilinos") == "es"
     assert detect_latin_language("The government approved the measures for the tenants") == "en"
+
+
+# --- 4. institutional hierarchy and canonical institution mapping --------------------------------
+
+from osint_monitor.processors.institutions import item_qualifiers, registry  # noqa: E402
+
+
+def test_institutions_resolve_to_the_lowest_acting_body_with_parents():
+    reg = registry()
+    for name, canonical in [("Pentagon", "US Department of Defense"), ("Department of War", "US Department of Defense"),
+                            ("US Navy", "U.S. Navy"), ("UNGA 81", "UN General Assembly"), ("Casa Bianca", "White House"),
+                            ("CBP", "U.S. Customs and Border Protection"), ("Nato", "NATO")]:
+        assert reg.lookup(name).canonical == canonical
+    assert reg.parents("U.S. Navy") == ["US Department of Defense", "United States"]
+    assert reg.parents("UN Security Council") == ["United Nations"]
+    assert reg.lookup("un") is None and reg.lookup("who") is None     # acronyms are case-sensitive
+
+
+def test_generic_labels_resolve_only_from_context(session):
+    r = EntityResolver(session)
+    navy = r.resolve(ExtractedEntity(text="Navy", entity_type=EntityType.ORG),
+                     item_qualifiers([("Boeing", "ORG"), ("American", "NORP")]))
+    assert navy.canonical_name == "U.S. Navy" and r.last_method == "registry-context"
+    council = r.resolve(ExtractedEntity(text="Council", entity_type=EntityType.ORG),
+                        item_qualifiers([("Council", "ORG")], "Council of the EU Press"))
+    assert council.canonical_name == "Council of the European Union"
+    ambiguous = r.resolve(ExtractedEntity(text="Navy", entity_type=EntityType.ORG),
+                          item_qualifiers([("US", "GPE"), ("UK", "GPE")]))
+    assert ambiguous.canonical_name == "Navy" and "generic label" in r.last_evidence
+
+
+def test_capitals_keep_their_identity_and_act_for_their_state(session):
+    from osint_monitor.processors.actors import ActorNormalizer
+    add(session, "Ukraine", "GPE", ["Ukrainian"])
+    entity, _ = resolve(session, "Kyiv", "GPE")
+    assert entity.canonical_name == "Kyiv"                       # identity: the city
+    n = ActorNormalizer.load()
+    assert n.surface("Kyiv") == "kyiv" and n.key("Kyiv") == "ukraine"   # role: acts for Ukraine
+    assert n.key("European Commission") == "european union" and n.surface("European Commission") == "european commission"

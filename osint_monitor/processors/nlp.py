@@ -237,7 +237,12 @@ def extract_entities(text: str, lang: str = "en") -> list[ExtractedEntity]:
             continue
         etype = entity_type_of(ent.label_, span.text, (lang or "en").split("-")[0].lower())
         if etype is None:
-            continue
+            from osint_monitor.processors.institutions import registry
+            reg = registry()                    # MISC spans the registry names ("Corte Suprema") are organisations
+            if reg.lookup(span.text) or reg.is_generic(span.text):
+                etype = EntityType.ORG
+            else:
+                continue
         name = clean_name(span.text)
         if not name:
             continue

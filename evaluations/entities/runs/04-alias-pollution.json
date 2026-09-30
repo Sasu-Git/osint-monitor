@@ -1,0 +1,122 @@
+{
+ "en": {
+  "suspect_aliases": 72,
+  "still_resolving": [
+   {
+    "alias": "Türkiye",
+    "entity": "Turkiye",
+    "method": "exact"
+   },
+   {
+    "alias": "US Navy",
+    "entity": "U.S. Navy",
+    "method": "registry"
+   },
+   {
+    "alias": "Mark F. Cancian",
+    "entity": "Mark Cancian",
+    "method": "fuzzy-provisional"
+   },
+   {
+    "alias": "the North Atlantic Treaty Organization",
+    "entity": "NATO",
+    "method": "registry"
+   },
+   {
+    "alias": "CENTCOM",
+    "entity": "U.S. Central Command",
+    "method": "registry"
+   },
+   {
+    "alias": "travelto Oman",
+    "entity": "travelto Macau",
+    "method": "fuzzy-provisional"
+   },
+   {
+    "alias": "BOSCO TAGANDA Listed",
+    "entity": "Bosco Taganda’s",
+    "method": "fuzzy-provisional"
+   },
+   {
+    "alias": "Ali al-Zaidi",
+    "entity": "Ali Falih Al-Zaidi",
+    "method": "fuzzy-provisional"
+   },
+   {
+    "alias": "Kowloon City Court",
+    "entity": "Kowloon Court",
+    "method": "fuzzy-provisional"
+   },
+   {
+    "alias": "the US war",
+    "entity": "The U.S. war",
+    "method": "exact"
+   }
+  ]
+ },
+ "ml": {
+  "suspect_aliases": 56,
+  "still_resolving": [
+   {
+    "alias": "Donald Trump",
+    "entity": "Donald J. Trump",
+    "method": "fuzzy-provisional"
+   },
+   {
+    "alias": "Washington D.C.",
+    "entity": "Washington, DC",
+    "method": "exact"
+   },
+   {
+    "alias": "Fulton Sheen",
+    "entity": "Fulton J. Sheen",
+    "method": "fuzzy-provisional"
+   },
+   {
+    "alias": "emergenza su volo da Dubai",
+    "entity": "Emergenza sul volo FlyDubai",
+    "method": "fuzzy-provisional"
+   },
+   {
+    "alias": "del Gobierno",
+    "entity": "del governo",
+    "method": "fuzzy-provisional"
+   },
+   {
+    "alias": "En el",
+    "entity": "Enel",
+    "method": "fuzzy-provisional"
+   },
+   {
+    "alias": "de los",
+    "entity": "en los",
+    "method": "fuzzy-provisional"
+   },
+   {
+    "alias": "algunos de los",
+    "entity": "uno de los",
+    "method": "fuzzy-provisional"
+   },
+   {
+    "alias": "Teherán",
+    "entity": "Teheran",
+    "method": "exact"
+   },
+   {
+    "alias": "Quedó en el centro de la",
+    "entity": "encuentra en el centro de la",
+    "method": "fuzzy-provisional"
+   },
+   {
+    "alias": "al presidente",
+    "entity": "La presidenta",
+    "method": "fuzzy-provisional"
+   },
+   {
+    "alias": "Education",
+    "entity": "Éducation",
+    "method": "exact"
+   }
+  ]
+ }
+}

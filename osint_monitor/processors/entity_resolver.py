@@ -45,37 +45,29 @@ ABBREVIATION_MAP: dict[str, str] = {
 #    Maps every variant (lowercased) to a single canonical form.
 # ---------------------------------------------------------------------------
 _COREFERENCE_GROUPS: list[tuple[str, list[str]]] = [
+    # Capitals are places with their own identity (a capital acting for its state is a role, see
+    # config/actors.yaml `represents`); institutions are in config/institutions.yaml.
     ("United States", [
         "united states", "u.s.", "u.s", "us", "usa",
         "america", "united states of america",
-        "washington",  # as country, not city
     ]),
     ("Russia", [
-        "russia", "russian federation", "moscow",
+        "russia", "russian federation",
     ]),
     ("China", [
-        "china", "people's republic of china", "prc", "beijing",
+        "china", "people's republic of china", "prc",
     ]),
     ("Iran", [
-        "iran", "islamic republic of iran", "tehran",
+        "iran", "islamic republic of iran",
     ]),
     ("Israel", [
-        "israel", "tel aviv",
+        "israel",
     ]),
     ("Ukraine", [
-        "ukraine", "kyiv", "kiev",
+        "ukraine",
     ]),
     ("North Korea", [
-        "north korea", "dprk", "pyongyang",
-    ]),
-    ("U.S. Central Command", [
-        "centcom", "u.s. central command", "united states central command",
-    ]),
-    ("Department of Defense", [
-        "pentagon", "department of defense", "dod",
-    ]),
-    ("NATO", [
-        "nato", "north atlantic treaty organization",
+        "north korea", "dprk",
     ]),
 ]
 
@@ -314,8 +306,23 @@ class EntityResolver:
         entity.last_seen_at = datetime.utcnow()
         return entity
 
-    def resolve(self, extracted: ExtractedEntity) -> Entity:
-        """Resolve an extracted entity to a database Entity (see the class docstring)."""
+    def _institution_entity(self, canonical: str) -> Entity:
+        entity = self.session.query(Entity).filter_by(canonical_name=canonical).first()
+        if entity is None:
+            entity = Entity(canonical_name=canonical, entity_type=EntityType.ORG.value, aliases=[],
+                            first_seen_at=datetime.utcnow(), last_seen_at=datetime.utcnow())
+            self.session.add(entity)
+            self.session.flush()
+            if self._alias_map is not None:
+                self._alias_map[canonical.lower()] = entity.id
+                self._norm_map[normalise(canonical)] = entity.id
+        return entity
+
+    def resolve(self, extracted: ExtractedEntity, context: set[str] | None = None) -> Entity:
+        """Resolve an extracted entity to a database Entity (see the class docstring).
+
+        ``context``: the states / organisations the mention's item names or its publisher is
+        (``institutions.item_qualifiers``); a generic label ("the Navy") resolves only through it."""
         # --- Step 0: normalise & type-correct --------------------------------
         corrected_type = correct_entity_type(
             extracted.text, extracted.entity_type
@@ -331,6 +338,20 @@ class EntityResolver:
 
         alias_map = self._build_alias_map()
         norm_map = self._get_norm_map()
+
+        # --- Step 0b: institutions, organisations and forums (config/institutions.yaml) --------
+        from osint_monitor.processors.institutions import registry
+        reg = registry()
+        inst = reg.lookup(clean) or reg.lookup(extracted.text.strip())
+        if inst is not None:
+            return self._done(self._institution_entity(inst.canonical), "registry",
+                              f"'{extracted.text}' is a name of {inst.canonical} ({inst.kind})")
+        generic = reg.is_generic(clean)
+        if generic:
+            inst = reg.resolve_generic(clean, context or set())
+            if inst is not None:
+                return self._done(self._institution_entity(inst.canonical), "registry-context",
+                                  f"generic '{clean}' with {sorted(context or [])} -> {inst.canonical}")
 
         # --- Step 1: Exact match against trusted names ----------------------
         exact_key = text_lower if text_lower in alias_map else clean.lower()
@@ -354,7 +375,8 @@ class EntityResolver:
         best_score = 0.0
         best_id: int | None = None
         best_alias = ""
-        candidates = list(alias_map.items()) + list(self._untrusted.items())
+        # a generic label whose context names no owner is not matched to a look-alike either
+        candidates = [] if generic else list(alias_map.items()) + list(self._untrusted.items())
         for alias, eid in candidates:
             # Compare normalised forms for better fuzzy performance
             alias_norm = normalise(alias)
@@ -413,7 +435,8 @@ class EntityResolver:
             "Created new entity: %s (%s)", canonical, corrected_type.value
         )
         self.last_method = "new"
-        self.last_evidence = refused or "no trusted match"
+        self.last_evidence = ("generic label: the context names no owning institution" if generic
+                              else refused or "no trusted match")
         return entity
 
     # ------------------------------------------------------------------

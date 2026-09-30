@@ -120,29 +120,32 @@ demonyms:
 
 # Variant -> canonical actor name.
 aliases:
-  Kremlin: Russia
-  Moscow: Russia
-  Beijing: China
-  Tehran: Iran
-  Kyiv: Ukraine
-  Kiev: Ukraine
-  IDF: Israel
   Gazan: Gaza
-  European Commission: European Union
-  Brussels: European Union
   RSF: Rapid Support Forces
   UAE: United Arab Emirates
   Britain: United Kingdom
   Great Britain: United Kingdom
   Türkiye: Turkey
   Turkiye: Turkey
-  Seoul: South Korea
-  Islamabad: Pakistan
 
 # Person / body -> the state it acts for. Situations are country-level, so "Xi met Trump"
 # involves China and the United States. Keep to principals who reliably act for a state;
 # a bare "Air Force" or "Navy" names no state and stays an organisation.
 represents:
+  # capitals and seats of government act for their state ("Tallinn accuses Moscow"); they remain places
+  # with their own identity -- this is the actor mapping, not an alias (config/institutions.yaml holds bodies)
+  Kremlin: Russia
+  Moscow: Russia
+  Beijing: China
+  Tehran: Iran
+  Kyiv: Ukraine
+  Kiev: Ukraine
+  Tallinn: Estonia
+  Riyadh: Saudi Arabia
+  Ankara: Turkey
+  Brussels: European Union
+  Seoul: South Korea
+  Islamabad: Pakistan
   Donald Trump: United States
   Trump: United States
   White House: United States

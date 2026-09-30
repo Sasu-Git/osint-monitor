@@ -208,14 +208,20 @@ def predict(root: Path = GOLD_DIR) -> dict:
             for item in dev.items:
                 lang = _lang(item["lang"])
                 mentions = []
-                for field_name in ("title", "lead"):
-                    for m in extract_mentions(item[field_name] or "", lang):
+                extracted = [(f, m) for f in ("title", "lead") for m in extract_mentions(item[f] or "", lang)]
+                try:
+                    from osint_monitor.processors.institutions import item_qualifiers
+                    context = item_qualifiers([(m.text, m.entity_type.value) for _, m in extracted], item["source"])
+                except ImportError:                            # code before the institution registry
+                    context = None
+                for field_name, m in extracted:
                         try:
                             etype = EntityType(m.entity_type.value)
                         except ValueError:
                             etype = EntityType.ORG
+                        kwargs = {"context": context} if context is not None else {}
                         entity = resolver.resolve(ExtractedEntity(text=m.text, entity_type=etype,
-                                                                  canonical_name=m.canonical_name))
+                                                                  canonical_name=m.canonical_name), **kwargs)
                         mentions.append({"field": field_name, "text": m.text, "type": m.entity_type.value,
                                          "canonical": entity.canonical_name if entity else None,
                                          "method": getattr(resolver, "last_method", None),
