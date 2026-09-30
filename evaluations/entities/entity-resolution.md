@@ -4,6 +4,10 @@ Branch `feat/entity-resolution` from main at ee93a3e. Specification: the "Core E
 Enforcement Rules" appended to the entity review (2026-09-30). Implemented in the stated enforcement order,
 one commit per stage, each measured on the frozen gold set before the next.
 
+> **Superseded for principals and roles (2026-09-30):** the owner reviewed the gold labels; revision 2 and the
+> rescored results, remaining-error ledger and decision are in `owner-gold-rescore.md`. The tables below are
+> scored on revision 1 (Claude-written labels) and are kept as the record of the stage-by-stage run.
+
 ## Gold set (read first)
 
 The review document's human fields were empty when the spec arrived, so the gold labels in

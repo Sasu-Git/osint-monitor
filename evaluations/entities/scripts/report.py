@@ -5,7 +5,7 @@ from pathlib import Path
 
 from osint_monitor.benchmark import entities as eb
 
-RUNS = Path("evaluations/entities/runs")
+RUNS = Path(sys.argv[2] if len(sys.argv) > 2 else "evaluations/entities/runs")   # runs/r2: owner-reviewed gold
 STAGES = [("00-baseline", "baseline (main)"), ("01-fuzzy-safety", "1 fuzzy-alias safety"),
           ("02-normalisation", "2 text/name normalisation"), ("03-multilingual", "3 multilingual NER"),
           ("04-institutions", "4 institutional hierarchy"), ("05-roles", "5 actor roles"),
