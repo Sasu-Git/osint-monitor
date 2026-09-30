@@ -114,3 +114,72 @@ def test_the_daemon_alert_job_delivers_and_records_the_channel(db, monkeypatch):
     scheduler._run_alert_job()
     assert sent == ["Corroboration upgrade: test"]
     assert db().query(Alert).one().delivered_via == "Recorder"
+
+
+# --- collector outages are not signals ---------------------------------------------------------------
+
+@pytest.fixture
+def no_sleep(monkeypatch):
+    from osint_monitor.collectors import infrastructure as I
+    monkeypatch.setattr(I.time, "sleep", lambda s: None)
+    return I
+
+
+def test_an_opensky_failure_is_no_measurement_not_zero_flights(no_sleep, monkeypatch):
+    I = no_sleep
+    monkeypatch.setattr(I.FlightRouteMonitor, "_count_commercial_traffic", lambda self, bbox: None)
+    assert I.FlightRouteMonitor().collect() == []          # was: "FLIGHT AVOIDANCE ... only 0 commercial flights"
+
+
+def test_a_failed_bgp_updates_check_never_reads_as_normal(no_sleep, monkeypatch):
+    I = no_sleep
+    asns = {"AS1": {"name": "Test Net", "country": "IR", "critical": True}}
+    monkeypatch.setattr(I.BGPMonitor, "_check_bgp_updates", lambda self, asn, hours_back=6: None)
+    monkeypatch.setattr(I.BGPMonitor, "_check_routing_status",
+                        lambda self, asn: {"announced_prefixes": 120, "visibility_v4": 300})
+    assert I.BGPMonitor(watched_asns=asns).collect() == []  # was: "BGP status: AS1 ... normal", ratio 0
+    monkeypatch.setattr(I.BGPMonitor, "_check_routing_status",
+                        lambda self, asn: {"announced_prefixes": 0, "visibility_v4": 300})
+    [item] = I.BGPMonitor(watched_asns=asns).collect()      # a status anomaly is still reported
+    assert item.title.startswith("BGP ANOMALY") and "unavailable (check failed)" in item.content
+
+
+def test_an_unreachable_domain_is_a_verdict_only_when_our_own_network_works(no_sleep, monkeypatch):
+    I = no_sleep
+    domains = {"example.ir": {"country": "IR", "type": "government", "desc": "Test"}}
+    monkeypatch.setattr(I.DNSHealthMonitor, "_check_dns", staticmethod(lambda d: {"resolves": True, "ips": ["1.2.3.4"]}))
+    monkeypatch.setattr(I.DNSHealthMonitor, "_check_http", staticmethod(
+        lambda d: {"reachable": False, "status_code": 0, "response_time_ms": 0, "scheme": ""}))
+    monkeypatch.setattr(I.DNSHealthMonitor, "_local_network_ok", classmethod(lambda cls: False))
+    assert I.DNSHealthMonitor(domains=domains).collect() == []   # was: "DOMAIN DOWN" after a resume
+    monkeypatch.setattr(I.DNSHealthMonitor, "_local_network_ok", classmethod(lambda cls: True))
+    [item] = I.DNSHealthMonitor(domains=domains).collect()
+    assert item.title.startswith("DOMAIN DOWN: example.ir")
+
+
+# --- collector run status is recorded and readable from any process ------------------------------------
+
+def test_every_collector_run_is_recorded_with_its_state(tmp_path, monkeypatch, no_sleep):
+    from osint_monitor.collectors import rss, status
+    from osint_monitor.processors.pipeline import _run_single_collector
+    I = no_sleep
+    monkeypatch.setattr(status, "STATUS_FILE", tmp_path / "collector_status.json")
+
+    class Broken(rss.RSSCollector):
+        def collect(self):
+            raise RuntimeError("boom")
+
+    feed = rss.RSSCollector(name="Dead Feed", url="https://feed.invalid/rss")
+    monkeypatch.setattr(rss._requests, "get", lambda *a, **k: (_ for _ in ()).throw(rss._requests.ConnectionError("down")))
+    monkeypatch.setattr(rss.feedparser, "parse", lambda *a, **k: rss.feedparser.FeedParserDict(entries=[], status=503))
+    monkeypatch.setattr(I.FlightRouteMonitor, "_count_commercial_traffic", lambda self, bbox: None)
+
+    assert _run_single_collector(feed) == []
+    assert _run_single_collector(Broken(name="Broken", url="https://x.invalid")) == []
+    assert _run_single_collector(I.FlightRouteMonitor()) == []
+    data = status.load()
+    assert data["Dead Feed"]["state"] == "failed" and "down" in data["Dead Feed"]["last_error"]
+    assert data["Broken"]["state"] == "failed" and data["Broken"]["last_error"] == "RuntimeError: boom"
+    assert data["Flight Route Monitor"]["state"] == "failed"
+    assert "OpenSky query failed" in data["Flight Route Monitor"]["last_error"]
+    assert any("Dead Feed" in line for line in status.format_status(data))

@@ -141,7 +141,7 @@ class CommodityMonitor(BaseCollector):
                 "history": history,
             }
         except Exception as exc:
-            logger.debug("Yahoo Finance fetch failed for %s: %s", symbol, exc)
+            logger.warning("Yahoo Finance fetch failed for %s: %s", symbol, exc)
             return None
 
     def collect(self) -> list[RawItemModel]:
@@ -278,7 +278,7 @@ class DefenseStockMonitor(BaseCollector):
                 "change_pct": round((current - prev_close) / prev_close * 100, 2) if prev_close else 0,
             }
         except Exception as exc:
-            logger.debug("Yahoo Finance failed for %s: %s", symbol, exc)
+            logger.warning("Yahoo Finance failed for %s: %s", symbol, exc)
             return None
 
     def collect(self) -> list[RawItemModel]:
@@ -419,7 +419,7 @@ class SECDefenseMonitor(BaseCollector):
 
             return filings
         except Exception as exc:
-            logger.debug("EDGAR fetch failed for CIK %s: %s", cik, exc)
+            logger.warning("EDGAR fetch failed for CIK %s: %s", cik, exc)
             return []
 
     def collect(self) -> list[RawItemModel]:

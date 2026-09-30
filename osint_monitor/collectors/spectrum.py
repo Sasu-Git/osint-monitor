@@ -453,7 +453,7 @@ class WikipediaEditMonitor(BaseCollector):
                 return page_data.get("revisions", [])
             return []
         except Exception as exc:
-            logger.debug("Wikipedia edit check failed for '%s': %s", title, exc)
+            logger.warning("Wikipedia edit check failed for '%s': %s", title, exc)
             return []
 
     def collect(self) -> list[RawItemModel]:

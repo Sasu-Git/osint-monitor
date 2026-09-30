@@ -287,24 +287,34 @@ def ensure_source(session: Session, name: str, source_type: str, url: str, credi
 def _run_single_collector(collector: BaseCollector, failures: list[str] | None = None) -> list[RawItemModel]:
     """Run a single collector and stamp source_type. Thread-safe.
     A failing collector is logged (and appended to ``failures``) and yields no items."""
+    import time as _time
+
+    from osint_monitor.collectors import status as collector_status
     from osint_monitor.core.watchdog import track_collector
-    try:
-        with track_collector(collector):
-            if hasattr(collector, "start_budget"):
-                collector.start_budget()
-            items = collector.collect()
-        if getattr(collector, "budget_exceeded", False):
-            logger.warning(f"Collector {collector.name} stopped early: {collector.time_budget_seconds:.0f}s "
-                           f"budget spent, returning {len(items)} items (partial)")
-        for item in items:
-            if item.source_type == "rss" and collector.source_type != "rss":
-                item.source_type = collector.source_type
-        return items
-    except Exception as e:
-        logger.error(f"Collector {collector.name} failed: {e}")
-        if failures is not None:
-            failures.append(f"{collector.name}: {type(e).__name__}: {e}")
-        return []
+    started = _time.monotonic()
+    items: list[RawItemModel] = []
+    exception = None
+    with collector_status.capture_errors() as errors:
+        try:
+            with track_collector(collector):
+                if hasattr(collector, "start_budget"):
+                    collector.start_budget()
+                items = collector.collect()
+            if getattr(collector, "budget_exceeded", False):
+                logger.warning(f"Collector {collector.name} stopped early: {collector.time_budget_seconds:.0f}s "
+                               f"budget spent, returning {len(items)} items (partial)")
+                errors.append(f"time budget spent after {len(items)} items")
+            for item in items:
+                if item.source_type == "rss" and collector.source_type != "rss":
+                    item.source_type = collector.source_type
+        except Exception as e:
+            logger.error(f"Collector {collector.name} failed: {e}", exc_info=True)
+            exception = f"{type(e).__name__}: {e}"
+            if failures is not None:
+                failures.append(f"{collector.name}: {exception}")
+            items = []
+    collector_status.record(collector.name, len(items), list(errors), exception, _time.monotonic() - started)
+    return items
 
 
 def run_collection(session: Session, failures: list[str] | None = None) -> list[RawItemModel]:

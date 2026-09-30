@@ -1,5 +1,6 @@
 """Abstract base collector interface."""
 
+import logging
 import time
 from abc import ABC, abstractmethod
 
@@ -47,6 +48,11 @@ class BaseCollector(ABC):
         if self.elapsed() >= self.time_budget_seconds:
             self.budget_exceeded = True
         return self.budget_exceeded
+
+    def record_error(self, message: str) -> None:
+        """Report a failure that the collector handled itself (it returns fewer or no items). Captured into
+        the collector's run status (``collectors.status``) like any warning logged by collector code."""
+        logging.getLogger("osint_monitor.collectors.base").warning("%s: %s", self.name, message)
 
     def health_check(self) -> bool:
         """Check if the source is reachable."""

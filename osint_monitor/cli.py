@@ -386,6 +386,10 @@ def _cmd_status():
     print("Entity extraction:")
     for line in format_ner_status():
         print(f"  {line}")
+    from osint_monitor.collectors.status import format_status
+    print("Collectors (last run of each, from data/logs/collector_status.json):")
+    for line in format_status():
+        print(f"  {line}")
 
 
 def _cmd_inspect_situations(args):
