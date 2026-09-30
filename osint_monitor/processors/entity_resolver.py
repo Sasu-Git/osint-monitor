@@ -307,9 +307,12 @@ class EntityResolver:
         return entity
 
     def _institution_entity(self, canonical: str) -> Entity:
+        return self._institution_entity_typed(canonical, EntityType.ORG)
+
+    def _institution_entity_typed(self, canonical: str, etype: EntityType) -> Entity:
         entity = self.session.query(Entity).filter_by(canonical_name=canonical).first()
         if entity is None:
-            entity = Entity(canonical_name=canonical, entity_type=EntityType.ORG.value, aliases=[],
+            entity = Entity(canonical_name=canonical, entity_type=etype.value, aliases=[],
                             first_seen_at=datetime.utcnow(), last_seen_at=datetime.utcnow())
             self.session.add(entity)
             self.session.flush()
@@ -352,6 +355,17 @@ class EntityResolver:
             if inst is not None:
                 return self._done(self._institution_entity(inst.canonical), "registry-context",
                                   f"generic '{clean}' with {sorted(context or [])} -> {inst.canonical}")
+
+        # --- Step 0c: nationality words name their country, deterministically ("Canadian", "American");
+        # never by similarity ("American" is not "Mexican")
+        if corrected_type == EntityType.NORP or extracted.entity_type == EntityType.NORP:
+            country = _country_or_nationality(clean)
+            if country:
+                eid = alias_map.get(country) or norm_map.get(normalise(country))
+                entity = self.session.get(Entity, eid) if eid else None
+                if entity is None:
+                    entity = self._institution_entity_typed(country.title(), EntityType.GPE)
+                return self._done(entity, "demonym", f"'{extracted.text}' names {entity.canonical_name}")
 
         # --- Step 1: Exact match against trusted names ----------------------
         exact_key = text_lower if text_lower in alias_map else clean.lower()

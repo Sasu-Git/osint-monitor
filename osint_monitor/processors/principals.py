@@ -303,8 +303,16 @@ def development_actors(items: list[dict], nlp=None, normalizer: ActorNormalizer 
                                                       (i.get("lang") or "en")), normalizer))
     selection = select_principals(evidence)
     from osint_monitor.processors.actor_roles import development_roles
-    roles = development_roles(items, normalizer).roles
-    return DevelopmentActors(set(selection.keys), roles, selection)
+    dev = development_roles(items, normalizer)
+    # principal = the role says it acts, consistently across the evidence: its dominant role is "actor"
+    # and its actor support reaches the same threshold as before (1 for 1-2 items, else 1.5 / 25%)
+    need = required_support(len(dev.items))
+    principals = {h for h, role in dev.roles.items() if role == "actor" and dev.weights[h].get("actor", 0.0) >= need}
+    # lead sentences support the actors headlines name; they add none of their own ("The Pentagon
+    # declined to comment") unless no headline names an actor at all
+    if dev.headline_actors:
+        principals &= dev.headline_actors
+    return DevelopmentActors(principals, dev.roles, selection)
 
 
 def principal_keys(nlp, items: list[tuple[str, str]], normalizer: ActorNormalizer | None = None) -> set[str]:
@@ -347,35 +355,65 @@ def mark_principal_actors(session: Session, now: datetime | None = None,
                                       "lang": item_language(r.source.name if r.source else None, r.title or ""),
                                       "source": r.source.name if r.source else None} for r in rows],
                                     normalizer=normalizer)
-        selection = actors.selection
-
         links = (session.query(EventEntity).options(joinedload(EventEntity.entity))
                  .filter(EventEntity.event_id == event.id).all())
+        # an entity stands for the holders of its own name and of its short forms ("Xi" of "Xi Jinping");
+        # other aliases do not count: an "Americas" entity with an "America" alias is not the United States
+        holder_of = {ee.entity_id: {entity_holder(n, ee.entity.entity_type, normalizer)
+                                    for n in [ee.entity.canonical_name, *short_forms(ee.entity)]}
+                     for ee in links if ee.entity is not None}
         principal_ids: set[int] = set()
-        for key in selection.keys:
-            names = selection.surfaces[key] | {key}
+        for holder in actors.principals:
             # the entity's own name must stand for this actor: an "Americas" entity that the
             # resolver gave an "America" alias is not the United States
-            matched = {ee.entity_id for ee in links if ee.entity is not None
-                       and normalizer.key(ee.entity.canonical_name) == key
-                       and any(normalizer.surface(n) in names
-                               for n in [ee.entity.canonical_name, *(ee.entity.aliases or [])])}
+            matched = {eid for eid, hs in holder_of.items() if any(same_holder(h, holder) for h in hs)}
             if not matched:
                 if by_surface is None:
                     by_surface = _entity_index(session, normalizer)
-                entity = next((by_surface[s] for s in sorted(names) if s in by_surface), None)
+                entity = by_surface.get(holder)
                 if entity is not None:            # named in a headline but not linked to the event yet
                     ee = EventEntity(event_id=event.id, entity_id=entity.id, role="SUBJECT", is_principal=True)
                     session.add(ee)
                     links.append(ee)
+                    holder_of[entity.id] = {holder}
                     matched = {entity.id}
             principal_ids |= matched
         for ee in links:
             ee.is_principal = ee.entity_id in principal_ids
+            hs = holder_of.get(ee.entity_id, set())
+            ee.actor_role = next((role for name, role in actors.roles.items() if any(same_holder(h, name) for h in hs)), None)
         stats["principal_links"] += len(principal_ids)
         stats["with_principals" if principal_ids else "without_principals"] += 1
     session.commit()
     return stats
+
+
+def entity_holder(canonical: str, entity_type: str | None, normalizer: ActorNormalizer) -> str:
+    """The actor-role holder name an entity stands for (as ``actor_roles`` names holders)."""
+    from osint_monitor.processors.institutions import registry
+    inst = registry().lookup(canonical)
+    if inst:
+        return inst.canonical.lower()
+    geo = _gazetteer()
+    if entity_type in ("GPE", "NORP", "LOC", "FAC"):
+        key = normalizer.key(canonical)
+        if key and geo.is_country(key):
+            return geo.canonical(key)
+        return geo.canonical(canonical)
+    return normalizer.surface(canonical) or canonical.lower()
+
+
+def short_forms(entity: Entity) -> list[str]:
+    words = set(entity.canonical_name.lower().split())
+    return [a for a in entity.aliases or [] if a and set(a.lower().split()) < words]
+
+
+def same_holder(a: str, b: str) -> bool:
+    from osint_monitor.processors.entity_resolver import variant_key
+    if variant_key(a) == variant_key(b):
+        return True
+    ta, tb = a.split(), b.split()                    # "hegseth" / "pete hegseth"
+    return (len(ta) == 1 or len(tb) == 1) and ta[-1] == tb[-1] and max(len(ta), len(tb)) <= 3
 
 
 def _entity_index(session: Session, normalizer: ActorNormalizer) -> dict[str, Entity]:

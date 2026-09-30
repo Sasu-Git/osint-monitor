@@ -36,6 +36,10 @@ REQUEST_VERBS = {"ask", "request", "urge", "press", "appeal", "demand", "petitio
                  "pedir", "solicitar", "instar", "exigir"}
 MEETING_VERBS = {"meet", "visit", "host", "call", "talk", "negotiate", "incontrare", "visitare", "reunirse",
                  "visitar", "hablar"}
+# the parties to a meeting or negotiation are co-actors: "Trump meets Xi", "talks between Trump and Xi"
+MEETING_NOUNS = {"summit", "talk", "talks", "meeting", "visit", "call", "dinner", "negotiation", "dialogue", "deal",
+                 "pact", "accord", "agreement", "treaty", "truce", "vertice", "incontro", "cumbre", "reunión",
+                 "acuerdo", "accordo", "colloquio", "negociación", "trattativa"}
 TOPIC_VERBS = {"discuss", "debate", "address", "raise", "focus", "consider", "examine", "review", "weigh", "mull",
                "cite", "mention", "eye", "discutere", "discutir"}
 TOPIC_SUBJECT_VERBS = {"top", "dominate", "overshadow", "headline", "loom", "feature"}
@@ -98,6 +102,16 @@ def _case_word(tok) -> str | None:
     return None
 
 
+def _phrase_head(tok):
+    """The head of the noun phrase a token modifies ("G7" -> "sanctions" -> "proposal")."""
+    for _ in range(6):
+        if tok.dep_ in ("compound", "amod", "nmod", "flat", "flat:name") and tok.head is not tok:
+            tok = tok.head
+        else:
+            break
+    return tok
+
+
 def clause_role(span, is_place: bool, is_forum: bool) -> tuple[str, str]:
     """(role, reason) of a mention from its position in the parse."""
     tok = span.root
@@ -107,10 +121,10 @@ def clause_role(span, is_place: bool, is_forum: bool) -> tuple[str, str]:
             if dep == "conj":
                 tok = head
                 continue
+            if dep in ("compound", "amod", "nmod") and is_forum and _phrase_head(head).dep_ not in SUBJECT_DEPS | {"ROOT"}:
+                return "institutional_context", f"frames '{head.text}'"   # "G7 agreement", "push G7 sanctions proposal"
             if dep in ("compound", "amod", "poss", "nmod:poss") and _lemma(head) in ACTION_NOUNS:
                 return "actor", f"agent of '{head.text}'"      # "Houthi attacks", "US sanctions"
-            if dep in ("compound", "amod", "nmod") and is_forum and head.dep_ != "ROOT":
-                return "institutional_context", f"frames '{head.text}'"   # "G7 agreement", "Security Council resolution"
             tok = head                          # "Israeli forces", "Saudi Arabia's minister", "US Navy officials"
             continue
         if dep in PREP_OBJECT_DEPS or (dep in OBLIQUE_DEPS and _case_word(tok)):
@@ -126,7 +140,11 @@ def clause_role(span, is_place: bool, is_forum: bool) -> tuple[str, str]:
                 tok = gov                        # "head of Hamas" -> the noun's role
                 continue
             if word in PARTICIPANT_PREPS:
-                return ("subject", f"'{word}' after topic verb") if gov_lemma in TOPIC_VERBS else ("participant", f"'{word}' {gov.text}")
+                if gov_lemma in TOPIC_VERBS:
+                    return "subject", f"'{word}' after topic verb"
+                if gov_lemma in MEETING_VERBS or gov_lemma in MEETING_NOUNS:
+                    return "actor", f"party to '{gov.text}' ('{word}')"
+                return "participant", f"'{word}' {gov.text}"
             if word in TARGET_PREPS:
                 return "target", f"'{word}' {gov.text}"
             if word in ON_PREPS and (gov_lemma in COERCIVE_NOUNS or gov_lemma in COERCIVE_VERBS):
@@ -159,6 +177,8 @@ def clause_role(span, is_place: bool, is_forum: bool) -> tuple[str, str]:
                 return "affected", f"object of '{head.text}'"
             if is_place and gov_lemma not in MEETING_VERBS:
                 return "location", f"place object of '{head.text}'"
+            if gov_lemma in MEETING_VERBS:
+                return "actor", f"party to '{head.text}'"
             return "participant", f"object of '{head.text}'"
         if dep in INDIRECT_DEPS:
             return ("institutional_context" if is_forum else "participant"), f"indirect object of '{head.text}'"
@@ -270,11 +290,25 @@ def _merge_person_names(weights: dict[str, dict[str, float]]) -> dict[str, dict[
     return merged
 
 
+# Multi-story documents: rolling coverage and news round-ups report several Developments in one item. Their
+# mentions are not evidence of who acted in this Development (and the programme name is no actor). The
+# segmentation headline forms (live, day N, round-up, briefing) plus in-brief / latest / key-developments.
+_ROUNDUP = __import__("re").compile(r"\bin brief\b|\bnews in brief\b|\b(?:war|crisis) latest\b|\blatest:|"
+                                    r"\bkey developments\b|\bwhat we know\b|\bnotizie in breve\b|\ben directo\b|"
+                                    r"\bin diretta\b|\bminuto a minuto\b", 2)
+
+
+def is_roundup(title: str) -> bool:
+    from osint_monitor.processors.development_segmentation import ROLLING, headline_kind
+    return headline_kind(title or "") == ROLLING or bool(_ROUNDUP.search(title or ""))
+
+
 @dataclass
 class DevelopmentRoles:
     roles: dict[str, str]                       # holder -> role
     weights: dict[str, dict[str, float]]        # holder -> role -> weight
     items: list[ItemRoles]
+    headline_actors: set[str] = field(default_factory=set)   # holders acting in at least one headline
 
 
 def development_roles(items: list[dict], normalizer=None, geo=None) -> DevelopmentRoles:
@@ -288,8 +322,8 @@ def development_roles(items: list[dict], normalizer=None, geo=None) -> Developme
     weights: dict[str, dict[str, float]] = defaultdict(lambda: defaultdict(float))
     parsed = []
     for i in items:
-        if i.get("roundup"):
-            continue
+        if i.get("roundup", is_roundup(i.get("title") or "")):
+            continue                                        # a round-up is not evidence of who acted here
         lang = (i.get("lang") or "en").split()[0]
         nlp = get_language_nlp(lang)
         if nlp is None:
@@ -303,6 +337,9 @@ def development_roles(items: list[dict], normalizer=None, geo=None) -> Developme
             seen[key] = max(seen.get(key, 0.0), w)          # an item counts once per holder and role
         for (holder, role), w in seen.items():
             weights[holder][role] += w
-    weights = _merge_person_names(weights)
-    roles = {h: max(rs, key=lambda r: (rs[r], -ROLE_PRIORITY.index(r))) for h, rs in weights.items()}
-    return DevelopmentRoles(roles, {h: dict(r) for h, r in weights.items()}, parsed)
+    headline = {m.holder for r in parsed for m in r.mentions if m.field == "title" and m.role == "actor" and not m.fallback}
+    merged = _merge_person_names({**{h: dict(rs) for h, rs in weights.items()}})
+    names = {h: next((m for m in merged if m == h or h in m.split()), h) for h in headline}
+    roles = {h: max(rs, key=lambda r: (rs[r], -ROLE_PRIORITY.index(r))) for h, rs in merged.items()}
+    return DevelopmentRoles(roles, {h: dict(r) for h, r in merged.items()}, parsed,
+                            {names[h] for h in headline} & set(merged))

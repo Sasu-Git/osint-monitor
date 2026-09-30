@@ -124,7 +124,10 @@ def test_mark_principal_actors_flags_participants_only(session, nlp):
 
     stats = mark_principal_actors(session)
     flags = {ee.entity.canonical_name: ee.is_principal for ee in session.query(EventEntity).filter_by(event_id=event.id)}
-    assert flags == {"European Union": True, "Russia": True, "Ukraine": False}
+    # the EU acts; Russia is the target of the sanctions (spec: target != actor), Ukraine the subject
+    assert flags == {"European Union": True, "Russia": False, "Ukraine": False}
+    roles = {ee.entity.canonical_name: ee.actor_role for ee in session.query(EventEntity).filter_by(event_id=event.id)}
+    assert roles["European Union"] == "actor" and roles["Russia"] == "target"
     assert stats["with_principals"] == 1
     mark_principal_actors(session)                                     # idempotent
     assert session.query(EventEntity).filter_by(event_id=event.id).count() == 3

@@ -93,11 +93,11 @@
   "principal_precision": {
    "all": {
     "hit": 21,
-    "total": 51
+    "total": 50
    },
    "en": {
     "hit": 18,
-    "total": 48
+    "total": 47
    },
    "es": {
     "hit": 2,
@@ -7033,13 +7033,6 @@
    "dev": "D10",
    "ok": true,
    "detail": "predicted 'argentina'"
-  },
-  "principal_precision:D10:milei": {
-   "metric": "principal_precision",
-   "lang": "en",
-   "dev": "D10",
-   "ok": false,
-   "detail": "predicted 'milei' (not a gold principal)"
   },
   "principal_precision:D10:united kingdom": {
    "metric": "principal_precision",

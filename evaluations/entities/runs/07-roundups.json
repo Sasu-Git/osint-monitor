@@ -92,12 +92,12 @@
   },
   "principal_precision": {
    "all": {
-    "hit": 21,
-    "total": 50
+    "hit": 20,
+    "total": 22
    },
    "en": {
-    "hit": 18,
-    "total": 47
+    "hit": 17,
+    "total": 19
    },
    "es": {
     "hit": 2,
@@ -110,11 +110,11 @@
   },
   "principal_recall": {
    "all": {
-    "hit": 21,
+    "hit": 20,
     "total": 30
    },
    "en": {
-    "hit": 18,
+    "hit": 17,
     "total": 27
    },
    "es": {
@@ -165,14 +165,14 @@
    "lang": "en",
    "dev": "D01",
    "ok": true,
-   "detail": "'Spanish' -> 'Spanish' [exact] (gold Spain)"
+   "detail": "'Spanish' -> 'Spain' [demonym] (gold Spain)"
   },
   "canonical_hygiene:D01:1012:0:Spanish": {
    "metric": "canonical_hygiene",
    "lang": "en",
    "dev": "D01",
    "ok": true,
-   "detail": "canonical 'Spanish'"
+   "detail": "canonical 'Spain'"
   },
   "ner_recall:D01:1012:1:Maricarmen Abascal": {
    "metric": "ner_recall",
@@ -860,19 +860,19 @@
    "ok": true,
    "detail": "'Virginia' GPE"
   },
-  "principal_precision:D02:united states": {
+  "principal_precision:D02:pete hegseth": {
    "metric": "principal_precision",
    "lang": "en",
    "dev": "D02",
-   "ok": false,
-   "detail": "predicted 'united states' (not a gold principal)"
+   "ok": true,
+   "detail": "predicted 'pete hegseth'"
   },
   "principal_recall:D02:Pete Hegseth": {
    "metric": "principal_recall",
    "lang": "en",
    "dev": "D02",
-   "ok": false,
-   "detail": "gold 'Pete Hegseth' missed (predicted ['united states'])"
+   "ok": true,
+   "detail": "gold 'Pete Hegseth'"
   },
   "actor_role:D02:Pete Hegseth": {
    "metric": "actor_role",
@@ -1005,14 +1005,14 @@
    "lang": "en",
    "dev": "D03",
    "ok": true,
-   "detail": "'American' -> 'American' [new] (gold United States)"
+   "detail": "'American' -> 'U.S.' [demonym] (gold United States)"
   },
   "canonical_hygiene:D03:507:4:American": {
    "metric": "canonical_hygiene",
    "lang": "en",
    "dev": "D03",
    "ok": true,
-   "detail": "canonical 'American'"
+   "detail": "canonical 'U.S.'"
   },
   "ner_precision:D03:507:p0:Boeing": {
    "metric": "ner_precision",
@@ -1322,40 +1322,19 @@
    "ok": true,
    "detail": "'Northrop Grumman' ORG"
   },
-  "principal_precision:D03:boeing": {
-   "metric": "principal_precision",
-   "lang": "en",
-   "dev": "D03",
-   "ok": false,
-   "detail": "predicted 'boeing' (not a gold principal)"
-  },
-  "principal_precision:D03:navy": {
-   "metric": "principal_precision",
-   "lang": "en",
-   "dev": "D03",
-   "ok": false,
-   "detail": "predicted 'navy' (not a gold principal)"
-  },
-  "principal_precision:D03:united states": {
-   "metric": "principal_precision",
-   "lang": "en",
-   "dev": "D03",
-   "ok": false,
-   "detail": "predicted 'united states' (not a gold principal)"
-  },
   "principal_recall:D03:U.S. Navy": {
    "metric": "principal_recall",
    "lang": "en",
    "dev": "D03",
    "ok": false,
-   "detail": "gold 'U.S. Navy' missed (predicted ['boeing', 'navy', 'united states'])"
+   "detail": "gold 'U.S. Navy' missed (predicted [])"
   },
   "principal_recall:D03:US Department of Defense": {
    "metric": "principal_recall",
    "lang": "en",
    "dev": "D03",
    "ok": false,
-   "detail": "gold 'US Department of Defense' missed (predicted ['boeing', 'navy', 'united states'])"
+   "detail": "gold 'US Department of Defense' missed (predicted [])"
   },
   "actor_role:D03:U.S. Navy": {
    "metric": "actor_role",
@@ -1567,13 +1546,6 @@
    "ok": true,
    "detail": "'Alaska Peninsula' LOC"
   },
-  "principal_precision:D04:fat bear week": {
-   "metric": "principal_precision",
-   "lang": "en",
-   "dev": "D04",
-   "ok": false,
-   "detail": "predicted 'fat bear week' (not a gold principal)"
-  },
   "actor_role:D04:Fat Bear Week": {
    "metric": "actor_role",
    "lang": "en",
@@ -1614,14 +1586,14 @@
    "lang": "en",
    "dev": "D05",
    "ok": true,
-   "detail": "'Saudi' -> 'Saudi' [exact] (gold Saudi Arabia)"
+   "detail": "'Saudi' -> 'Saudi Arabia' [demonym] (gold Saudi Arabia)"
   },
   "canonical_hygiene:D05:72:0:Saudi": {
    "metric": "canonical_hygiene",
    "lang": "en",
    "dev": "D05",
    "ok": true,
-   "detail": "canonical 'Saudi'"
+   "detail": "canonical 'Saudi Arabia'"
   },
   "ner_recall:D05:72:1:Turkish": {
    "metric": "ner_recall",
@@ -1642,14 +1614,14 @@
    "lang": "en",
    "dev": "D05",
    "ok": true,
-   "detail": "'Turkish' -> 'Turkish' [exact] (gold Turkey)"
+   "detail": "'Turkish' -> 'Turkey' [demonym] (gold Turkey)"
   },
   "canonical_hygiene:D05:72:1:Turkish": {
    "metric": "canonical_hygiene",
    "lang": "en",
    "dev": "D05",
    "ok": true,
-   "detail": "canonical 'Turkish'"
+   "detail": "canonical 'Turkey'"
   },
   "ner_recall:D05:72:2:Pakistani": {
    "metric": "ner_recall",
@@ -1670,14 +1642,14 @@
    "lang": "en",
    "dev": "D05",
    "ok": true,
-   "detail": "'Pakistani' -> 'Pakistani' [exact] (gold Pakistan)"
+   "detail": "'Pakistani' -> 'Pakistan' [demonym] (gold Pakistan)"
   },
   "canonical_hygiene:D05:72:2:Pakistani": {
    "metric": "canonical_hygiene",
    "lang": "en",
    "dev": "D05",
    "ok": true,
-   "detail": "canonical 'Pakistani'"
+   "detail": "canonical 'Pakistan'"
   },
   "ner_recall:D05:72:3:Yemen": {
    "metric": "ner_recall",
@@ -1782,7 +1754,7 @@
    "lang": "en",
    "dev": "D05",
    "ok": true,
-   "detail": "'Pakistan' -> 'Pakistan' [new] (gold Pakistan)"
+   "detail": "'Pakistan' -> 'Pakistan' [exact] (gold Pakistan)"
   },
   "canonical_hygiene:D05:72:6:Pakistan": {
    "metric": "canonical_hygiene",
@@ -1957,14 +1929,14 @@
    "lang": "en",
    "dev": "D05",
    "ok": true,
-   "detail": "'Saudi' -> 'Saudi' [exact] (gold Saudi Arabia)"
+   "detail": "'Saudi' -> 'Saudi Arabia' [demonym] (gold Saudi Arabia)"
   },
   "canonical_hygiene:D05:110:1:Saudi": {
    "metric": "canonical_hygiene",
    "lang": "en",
    "dev": "D05",
    "ok": true,
-   "detail": "canonical 'Saudi'"
+   "detail": "canonical 'Saudi Arabia'"
   },
   "ner_recall:D05:110:2:Houthis": {
    "metric": "ner_recall",
@@ -2699,14 +2671,14 @@
    "lang": "en",
    "dev": "D05",
    "ok": true,
-   "detail": "'French' -> 'French' [exact] (gold France)"
+   "detail": "'French' -> 'France' [demonym] (gold France)"
   },
   "canonical_hygiene:D05:325:10:French": {
    "metric": "canonical_hygiene",
    "lang": "en",
    "dev": "D05",
    "ok": true,
-   "detail": "canonical 'French'"
+   "detail": "canonical 'France'"
   },
   "ner_recall:D05:325:11:Emmanuel Macron": {
    "metric": "ner_recall",
@@ -2895,14 +2867,14 @@
    "lang": "en",
    "dev": "D05",
    "ok": true,
-   "detail": "'Saudi' -> 'Saudi' [exact] (gold Saudi Arabia)"
+   "detail": "'Saudi' -> 'Saudi Arabia' [demonym] (gold Saudi Arabia)"
   },
   "canonical_hygiene:D05:433:2:Saudi": {
    "metric": "canonical_hygiene",
    "lang": "en",
    "dev": "D05",
    "ok": true,
-   "detail": "canonical 'Saudi'"
+   "detail": "canonical 'Saudi Arabia'"
   },
   "ner_recall:D05:433:3:Pakistan": {
    "metric": "ner_recall",
@@ -3861,14 +3833,14 @@
    "lang": "en",
    "dev": "D05",
    "ok": true,
-   "detail": "'Saudi' -> 'Saudi' [exact] (gold Saudi Arabia)"
+   "detail": "'Saudi' -> 'Saudi Arabia' [demonym] (gold Saudi Arabia)"
   },
   "canonical_hygiene:D05:603:0:Saudi": {
    "metric": "canonical_hygiene",
    "lang": "en",
    "dev": "D05",
    "ok": true,
-   "detail": "canonical 'Saudi'"
+   "detail": "canonical 'Saudi Arabia'"
   },
   "ner_recall:D05:603:1:Iran": {
    "metric": "ner_recall",
@@ -4197,14 +4169,14 @@
    "lang": "en",
    "dev": "D05",
    "ok": true,
-   "detail": "'Yemeni' -> 'Yemeni' [new] (gold Yemen)"
+   "detail": "'Yemeni' -> 'Yemen' [demonym] (gold Yemen)"
   },
   "canonical_hygiene:D05:660:2:Yemeni": {
    "metric": "canonical_hygiene",
    "lang": "en",
    "dev": "D05",
    "ok": true,
-   "detail": "canonical 'Yemeni'"
+   "detail": "canonical 'Yemen'"
   },
   "ner_recall:D05:660:3:Taiz": {
    "metric": "ner_recall",
@@ -4561,14 +4533,14 @@
    "lang": "en",
    "dev": "D05",
    "ok": true,
-   "detail": "'Saudi' -> 'Saudi' [exact] (gold Saudi Arabia)"
+   "detail": "'Saudi' -> 'Saudi Arabia' [demonym] (gold Saudi Arabia)"
   },
   "canonical_hygiene:D05:999:5:Saudi": {
    "metric": "canonical_hygiene",
    "lang": "en",
    "dev": "D05",
    "ok": true,
-   "detail": "canonical 'Saudi'"
+   "detail": "canonical 'Saudi Arabia'"
   },
   "ner_recall:D05:999:6:Yemen": {
    "metric": "ner_recall",
@@ -5079,14 +5051,14 @@
    "lang": "en",
    "dev": "D06",
    "ok": true,
-   "detail": "'Israeli' -> 'Israeli' [exact] (gold Israel)"
+   "detail": "'Israeli' -> 'Israel' [demonym] (gold Israel)"
   },
   "canonical_hygiene:D06:1061:0:Israeli": {
    "metric": "canonical_hygiene",
    "lang": "en",
    "dev": "D06",
    "ok": true,
-   "detail": "canonical 'Israeli'"
+   "detail": "canonical 'Israel'"
   },
   "ner_recall:D06:1061:1:Hamas": {
    "metric": "ner_recall",
@@ -5247,14 +5219,14 @@
    "lang": "en",
    "dev": "D06",
    "ok": true,
-   "detail": "'Israeli' -> 'Israeli' [exact] (gold Israel)"
+   "detail": "'Israeli' -> 'Israel' [demonym] (gold Israel)"
   },
   "canonical_hygiene:D06:1061:6:Israeli": {
    "metric": "canonical_hygiene",
    "lang": "en",
    "dev": "D06",
    "ok": true,
-   "detail": "canonical 'Israeli'"
+   "detail": "canonical 'Israel'"
   },
   "ner_recall:D06:1061:7:Gaza City": {
    "metric": "ner_recall",
@@ -5359,7 +5331,7 @@
    "lang": "en",
    "dev": "D06",
    "ok": true,
-   "detail": "'Israel' -> 'Israel' [new] (gold Israel)"
+   "detail": "'Israel' -> 'Israel' [exact] (gold Israel)"
   },
   "canonical_hygiene:D06:1171:0:Israel": {
    "metric": "canonical_hygiene",
@@ -5443,14 +5415,14 @@
    "lang": "en",
    "dev": "D06",
    "ok": true,
-   "detail": "'Israeli' -> 'Israeli' [exact] (gold Israel)"
+   "detail": "'Israeli' -> 'Israel' [demonym] (gold Israel)"
   },
   "canonical_hygiene:D06:1171:4:Israeli": {
    "metric": "canonical_hygiene",
    "lang": "en",
    "dev": "D06",
    "ok": true,
-   "detail": "canonical 'Israeli'"
+   "detail": "canonical 'Israel'"
   },
   "ner_recall:D06:1171:5:Hamas": {
    "metric": "ner_recall",
@@ -5550,33 +5522,12 @@
    "ok": true,
    "detail": "'Gaza' GPE"
   },
-  "principal_precision:D06:gaza": {
-   "metric": "principal_precision",
-   "lang": "en",
-   "dev": "D06",
-   "ok": false,
-   "detail": "predicted 'gaza' (not a gold principal)"
-  },
-  "principal_precision:D06:hamas": {
-   "metric": "principal_precision",
-   "lang": "en",
-   "dev": "D06",
-   "ok": false,
-   "detail": "predicted 'hamas' (not a gold principal)"
-  },
   "principal_precision:D06:israel": {
    "metric": "principal_precision",
    "lang": "en",
    "dev": "D06",
    "ok": true,
    "detail": "predicted 'israel'"
-  },
-  "principal_precision:D06:izz al-din al-beik": {
-   "metric": "principal_precision",
-   "lang": "en",
-   "dev": "D06",
-   "ok": false,
-   "detail": "predicted 'izz al-din al-beik' (not a gold principal)"
   },
   "principal_recall:D06:Israel": {
    "metric": "principal_recall",
@@ -5837,33 +5788,19 @@
    "ok": true,
    "detail": "'UK' GPE"
   },
-  "principal_precision:D07:united kingdom": {
-   "metric": "principal_precision",
-   "lang": "en",
-   "dev": "D07",
-   "ok": true,
-   "detail": "predicted 'united kingdom'"
-  },
-  "principal_precision:D07:united states": {
-   "metric": "principal_precision",
-   "lang": "en",
-   "dev": "D07",
-   "ok": true,
-   "detail": "predicted 'united states'"
-  },
   "principal_recall:D07:United States": {
    "metric": "principal_recall",
    "lang": "en",
    "dev": "D07",
-   "ok": true,
-   "detail": "gold 'United States|U.S. Navy'"
+   "ok": false,
+   "detail": "gold 'United States|U.S. Navy' missed (predicted [])"
   },
   "principal_recall:D07:United Kingdom": {
    "metric": "principal_recall",
    "lang": "en",
    "dev": "D07",
-   "ok": true,
-   "detail": "gold 'United Kingdom'"
+   "ok": false,
+   "detail": "gold 'United Kingdom' missed (predicted [])"
   },
   "actor_role:D07:United States": {
    "metric": "actor_role",
@@ -6059,14 +5996,14 @@
    "lang": "en",
    "dev": "D08",
    "ok": true,
-   "detail": "'Ukrainian' -> 'Ukrainian' [exact] (gold Ukraine)"
+   "detail": "'Ukrainian' -> 'Ukraine' [demonym] (gold Ukraine)"
   },
   "canonical_hygiene:D08:274:5:Ukrainian": {
    "metric": "canonical_hygiene",
    "lang": "en",
    "dev": "D08",
    "ok": true,
-   "detail": "canonical 'Ukrainian'"
+   "detail": "canonical 'Ukraine'"
   },
   "ner_precision:D08:274:p0:Russia": {
    "metric": "ner_precision",
@@ -6269,14 +6206,14 @@
    "lang": "en",
    "dev": "D08",
    "ok": true,
-   "detail": "'Russian' -> 'Russian' [new] (gold Russia)"
+   "detail": "'Russian' -> 'Russia' [demonym] (gold Russia)"
   },
   "canonical_hygiene:D08:275:0:Russian": {
    "metric": "canonical_hygiene",
    "lang": "en",
    "dev": "D08",
    "ok": true,
-   "detail": "canonical 'Russian'"
+   "detail": "canonical 'Russia'"
   },
   "ner_recall:D08:275:1:Ukraine": {
    "metric": "ner_recall",
@@ -6467,13 +6404,6 @@
    "ok": true,
    "detail": "predicted 'russia'"
   },
-  "principal_precision:D08:ukraine": {
-   "metric": "principal_precision",
-   "lang": "en",
-   "dev": "D08",
-   "ok": false,
-   "detail": "predicted 'ukraine' (not a gold principal)"
-  },
   "principal_recall:D08:Russia": {
    "metric": "principal_recall",
    "lang": "en",
@@ -6499,8 +6429,8 @@
    "metric": "actor_role",
    "lang": "en",
    "dev": "D08",
-   "ok": true,
-   "detail": "Kyiv: location (gold location)"
+   "ok": false,
+   "detail": "Kyiv: None (gold location)"
   },
   "actor_role:D08:Ukrainian Air Force": {
    "metric": "actor_role",
@@ -6683,13 +6613,6 @@
    "dev": "D09",
    "ok": true,
    "detail": "'Jonathan McKinsey' PERSON"
-  },
-  "principal_precision:D09:jonathan mckinsey": {
-   "metric": "principal_precision",
-   "lang": "en",
-   "dev": "D09",
-   "ok": false,
-   "detail": "predicted 'jonathan mckinsey' (not a gold principal)"
   },
   "actor_role:D09:Jonathan McKinsey": {
    "metric": "actor_role",
@@ -7034,13 +6957,6 @@
    "ok": true,
    "detail": "predicted 'argentina'"
   },
-  "principal_precision:D10:united kingdom": {
-   "metric": "principal_precision",
-   "lang": "en",
-   "dev": "D10",
-   "ok": false,
-   "detail": "predicted 'united kingdom' (not a gold principal)"
-  },
   "principal_recall:D10:Argentina": {
    "metric": "principal_recall",
    "lang": "en",
@@ -7172,14 +7088,14 @@
    "lang": "en",
    "dev": "D11",
    "ok": true,
-   "detail": "'Estonian' -> 'Estonian' [new] (gold Estonia)"
+   "detail": "'Estonian' -> 'Estonia' [demonym] (gold Estonia)"
   },
   "canonical_hygiene:D11:1123:3:Estonian": {
    "metric": "canonical_hygiene",
    "lang": "en",
    "dev": "D11",
    "ok": true,
-   "detail": "canonical 'Estonian'"
+   "detail": "canonical 'Estonia'"
   },
   "ner_recall:D11:1123:4:Ukraine": {
    "metric": "ner_recall",
@@ -7228,14 +7144,14 @@
    "lang": "en",
    "dev": "D11",
    "ok": true,
-   "detail": "'Russian' -> 'Russian' [exact] (gold Russia)"
+   "detail": "'Russian' -> 'Russia' [demonym] (gold Russia)"
   },
   "canonical_hygiene:D11:1123:5:Russian": {
    "metric": "canonical_hygiene",
    "lang": "en",
    "dev": "D11",
    "ok": true,
-   "detail": "canonical 'Russian'"
+   "detail": "canonical 'Russia'"
   },
   "ner_precision:D11:1123:p0:Estonia": {
    "metric": "ner_precision",
@@ -7592,14 +7508,14 @@
    "lang": "en",
    "dev": "D11",
    "ok": true,
-   "detail": "'Estonian' -> 'Estonian' [exact] (gold Estonia)"
+   "detail": "'Estonian' -> 'Estonia' [demonym] (gold Estonia)"
   },
   "canonical_hygiene:D11:1153:4:Estonian": {
    "metric": "canonical_hygiene",
    "lang": "en",
    "dev": "D11",
    "ok": true,
-   "detail": "canonical 'Estonian'"
+   "detail": "canonical 'Estonia'"
   },
   "ner_recall:D11:1153:5:Milrem Robotics": {
    "metric": "ner_recall",
@@ -8110,14 +8026,14 @@
    "lang": "en",
    "dev": "D11",
    "ok": true,
-   "detail": "'Russian' -> 'Russian' [exact] (gold Russia)"
+   "detail": "'Russian' -> 'Russia' [demonym] (gold Russia)"
   },
   "canonical_hygiene:D11:1172:5:Russian": {
    "metric": "canonical_hygiene",
    "lang": "en",
    "dev": "D11",
    "ok": true,
-   "detail": "canonical 'Russian'"
+   "detail": "canonical 'Russia'"
   },
   "ner_recall:D11:1172:6:Estonian": {
    "metric": "ner_recall",
@@ -8138,14 +8054,14 @@
    "lang": "en",
    "dev": "D11",
    "ok": true,
-   "detail": "'Estonian' -> 'Estonian' [exact] (gold Estonia)"
+   "detail": "'Estonian' -> 'Estonia' [demonym] (gold Estonia)"
   },
   "canonical_hygiene:D11:1172:6:Estonian": {
    "metric": "canonical_hygiene",
    "lang": "en",
    "dev": "D11",
    "ok": true,
-   "detail": "canonical 'Estonian'"
+   "detail": "canonical 'Estonia'"
   },
   "ner_recall:D11:1172:7:Tallinn": {
    "metric": "ner_recall",
@@ -8237,20 +8153,6 @@
    "dev": "D11",
    "ok": true,
    "detail": "predicted 'estonia'"
-  },
-  "principal_precision:D11:milrem": {
-   "metric": "principal_precision",
-   "lang": "en",
-   "dev": "D11",
-   "ok": false,
-   "detail": "predicted 'milrem' (not a gold principal)"
-  },
-  "principal_precision:D11:russia": {
-   "metric": "principal_precision",
-   "lang": "en",
-   "dev": "D11",
-   "ok": false,
-   "detail": "predicted 'russia' (not a gold principal)"
   },
   "principal_recall:D11:Estonia": {
    "metric": "principal_recall",
@@ -8705,14 +8607,14 @@
    "lang": "en",
    "dev": "D12",
    "ok": true,
-   "detail": "'Russian' -> 'Russian' [exact] (gold Russia)"
+   "detail": "'Russian' -> 'Russia' [demonym] (gold Russia)"
   },
   "canonical_hygiene:D12:490:5:Russian": {
    "metric": "canonical_hygiene",
    "lang": "en",
    "dev": "D12",
    "ok": true,
-   "detail": "canonical 'Russian'"
+   "detail": "canonical 'Russia'"
   },
   "ner_recall:D12:490:6:Estonian": {
    "metric": "ner_recall",
@@ -8733,14 +8635,14 @@
    "lang": "en",
    "dev": "D12",
    "ok": true,
-   "detail": "'Estonian' -> 'Estonian' [new] (gold Estonia)"
+   "detail": "'Estonian' -> 'Estonia' [demonym] (gold Estonia)"
   },
   "canonical_hygiene:D12:490:6:Estonian": {
    "metric": "canonical_hygiene",
    "lang": "en",
    "dev": "D12",
    "ok": true,
-   "detail": "canonical 'Estonian'"
+   "detail": "canonical 'Estonia'"
   },
   "ner_recall:D12:490:7:Tallinn": {
    "metric": "ner_recall",
@@ -8833,20 +8735,6 @@
    "ok": true,
    "detail": "predicted 'estonia'"
   },
-  "principal_precision:D12:milrem": {
-   "metric": "principal_precision",
-   "lang": "en",
-   "dev": "D12",
-   "ok": false,
-   "detail": "predicted 'milrem' (not a gold principal)"
-  },
-  "principal_precision:D12:russia": {
-   "metric": "principal_precision",
-   "lang": "en",
-   "dev": "D12",
-   "ok": false,
-   "detail": "predicted 'russia' (not a gold principal)"
-  },
   "principal_recall:D12:Estonia": {
    "metric": "principal_recall",
    "lang": "en",
@@ -8887,7 +8775,7 @@
    "lang": "en",
    "dev": "D12",
    "ok": false,
-   "detail": "NATO: institutional_context (gold subject)"
+   "detail": "NATO: actor (gold subject)"
   },
   "actor_role:D12:Mark Rutte": {
    "metric": "actor_role",
@@ -9118,14 +9006,14 @@
    "lang": "en",
    "dev": "D14",
    "ok": true,
-   "detail": "'South African' -> 'South African' [exact] (gold South Africa)"
+   "detail": "'South African' -> 'South Africa' [demonym] (gold South Africa)"
   },
   "canonical_hygiene:D14:667:0:South African": {
    "metric": "canonical_hygiene",
    "lang": "en",
    "dev": "D14",
    "ok": true,
-   "detail": "canonical 'South African'"
+   "detail": "canonical 'South Africa'"
   },
   "ner_recall:D14:667:1:South African": {
    "metric": "ner_recall",
@@ -9146,14 +9034,14 @@
    "lang": "en",
    "dev": "D14",
    "ok": true,
-   "detail": "'South African' -> 'South African' [exact] (gold South Africa)"
+   "detail": "'South African' -> 'South Africa' [demonym] (gold South Africa)"
   },
   "canonical_hygiene:D14:667:1:South African": {
    "metric": "canonical_hygiene",
    "lang": "en",
    "dev": "D14",
    "ok": true,
-   "detail": "canonical 'South African'"
+   "detail": "canonical 'South Africa'"
   },
   "ner_precision:D14:667:p0:South African": {
    "metric": "ner_precision",
@@ -9188,7 +9076,7 @@
    "lang": "en",
    "dev": "D14",
    "ok": true,
-   "detail": "'South Africa' -> 'South Africa' [new] (gold South Africa)"
+   "detail": "'South Africa' -> 'South Africa' [exact] (gold South Africa)"
   },
   "canonical_hygiene:D14:632:0:South Africa": {
    "metric": "canonical_hygiene",
@@ -9321,14 +9209,14 @@
    "lang": "en",
    "dev": "D14",
    "ok": true,
-   "detail": "'South African' -> 'South African' [exact] (gold South Africa)"
+   "detail": "'South African' -> 'South Africa' [demonym] (gold South Africa)"
   },
   "canonical_hygiene:D14:926:1:South African": {
    "metric": "canonical_hygiene",
    "lang": "en",
    "dev": "D14",
    "ok": true,
-   "detail": "canonical 'South African'"
+   "detail": "canonical 'South Africa'"
   },
   "ner_recall:D14:926:2:Cyril Ramaphosa": {
    "metric": "ner_recall",
@@ -9379,13 +9267,6 @@
    "ok": true,
    "detail": "'Cyril Ramaphosa' PERSON"
   },
-  "principal_precision:D14:south africa": {
-   "metric": "principal_precision",
-   "lang": "en",
-   "dev": "D14",
-   "ok": false,
-   "detail": "predicted 'south africa' (not a gold principal)"
-  },
   "actor_role:D14:South Africa": {
    "metric": "actor_role",
    "lang": "en",
@@ -9398,7 +9279,7 @@
    "lang": "en",
    "dev": "D14",
    "ok": false,
-   "detail": "Cyril Ramaphosa: actor (gold subject)"
+   "detail": "Cyril Ramaphosa: None (gold subject)"
   },
   "ner_recall:D15:494:0:Russia": {
    "metric": "ner_recall",
@@ -9587,14 +9468,14 @@
    "lang": "en",
    "dev": "D15",
    "ok": true,
-   "detail": "'Russian' -> 'Russian' [exact] (gold Russia)"
+   "detail": "'Russian' -> 'Russia' [demonym] (gold Russia)"
   },
   "canonical_hygiene:D15:285:1:Russian": {
    "metric": "canonical_hygiene",
    "lang": "en",
    "dev": "D15",
    "ok": true,
-   "detail": "canonical 'Russian'"
+   "detail": "canonical 'Russia'"
   },
   "ner_precision:D15:285:p0:Putin": {
    "metric": "ner_precision",
@@ -9657,14 +9538,14 @@
    "lang": "en",
    "dev": "D15",
    "ok": true,
-   "detail": "'Russian' -> 'Russian' [exact] (gold Russia)"
+   "detail": "'Russian' -> 'Russia' [demonym] (gold Russia)"
   },
   "canonical_hygiene:D15:282:1:Russian": {
    "metric": "canonical_hygiene",
    "lang": "en",
    "dev": "D15",
    "ok": true,
-   "detail": "canonical 'Russian'"
+   "detail": "canonical 'Russia'"
   },
   "ner_precision:D15:282:p0:Ukraine": {
    "metric": "ner_precision",
@@ -9680,12 +9561,12 @@
    "ok": true,
    "detail": "'Russian' NORP"
   },
-  "principal_precision:D15:russia": {
+  "principal_precision:D15:putin": {
    "metric": "principal_precision",
    "lang": "en",
    "dev": "D15",
    "ok": true,
-   "detail": "predicted 'russia'"
+   "detail": "predicted 'putin'"
   },
   "principal_recall:D15:Russia": {
    "metric": "principal_recall",
@@ -9713,7 +9594,7 @@
    "lang": "en",
    "dev": "D15",
    "ok": false,
-   "detail": "Ukraine: actor (gold subject)"
+   "detail": "Ukraine: location (gold subject)"
   },
   "actor_role:D15:Reuters": {
    "metric": "actor_role",
@@ -10016,33 +9897,12 @@
    "ok": true,
    "detail": "'Intertek USA' ORG"
   },
-  "principal_precision:D16:carteret": {
-   "metric": "principal_precision",
-   "lang": "en",
-   "dev": "D16",
-   "ok": false,
-   "detail": "predicted 'carteret' (not a gold principal)"
-  },
-  "principal_precision:D16:chelsea, ma": {
-   "metric": "principal_precision",
-   "lang": "en",
-   "dev": "D16",
-   "ok": false,
-   "detail": "predicted 'chelsea, ma' (not a gold principal)"
-  },
-  "principal_precision:D16:intertek usa, inc": {
-   "metric": "principal_precision",
-   "lang": "en",
-   "dev": "D16",
-   "ok": false,
-   "detail": "predicted 'intertek usa, inc' (not a gold principal)"
-  },
   "principal_recall:D16:U.S. Customs and Border Protection": {
    "metric": "principal_recall",
    "lang": "en",
    "dev": "D16",
    "ok": false,
-   "detail": "gold 'U.S. Customs and Border Protection' missed (predicted ['carteret', 'chelsea, ma', 'intertek usa, inc'])"
+   "detail": "gold 'U.S. Customs and Border Protection' missed (predicted [])"
   },
   "actor_role:D16:U.S. Customs and Border Protection": {
    "metric": "actor_role",
@@ -10119,14 +9979,14 @@
    "lang": "en",
    "dev": "D17",
    "ok": true,
-   "detail": "'Dutch' -> 'Dutch' [exact] (gold Netherlands)"
+   "detail": "'Dutch' -> 'Netherlands' [demonym] (gold Netherlands)"
   },
   "canonical_hygiene:D17:710:1:Dutch": {
    "metric": "canonical_hygiene",
    "lang": "en",
    "dev": "D17",
    "ok": true,
-   "detail": "canonical 'Dutch'"
+   "detail": "canonical 'Netherlands'"
   },
   "ner_recall:D17:710:2:Israel": {
    "metric": "ner_recall",
@@ -10259,14 +10119,14 @@
    "lang": "en",
    "dev": "D17",
    "ok": true,
-   "detail": "'Dutch' -> 'Dutch' [exact] (gold Netherlands)"
+   "detail": "'Dutch' -> 'Netherlands' [demonym] (gold Netherlands)"
   },
   "canonical_hygiene:D17:711:1:Dutch": {
    "metric": "canonical_hygiene",
    "lang": "en",
    "dev": "D17",
    "ok": true,
-   "detail": "canonical 'Dutch'"
+   "detail": "canonical 'Netherlands'"
   },
   "ner_recall:D17:711:2:Ramallah": {
    "metric": "ner_recall",
@@ -10343,14 +10203,14 @@
    "lang": "en",
    "dev": "D17",
    "ok": true,
-   "detail": "'Dutch' -> 'Dutch' [exact] (gold Netherlands)"
+   "detail": "'Dutch' -> 'Netherlands' [demonym] (gold Netherlands)"
   },
   "canonical_hygiene:D17:711:4:Dutch": {
    "metric": "canonical_hygiene",
    "lang": "en",
    "dev": "D17",
    "ok": true,
-   "detail": "canonical 'Dutch'"
+   "detail": "canonical 'Netherlands'"
   },
   "ner_recall:D17:711:5:Netherlands": {
    "metric": "ner_recall",
@@ -10455,14 +10315,14 @@
    "lang": "en",
    "dev": "D17",
    "ok": true,
-   "detail": "'Israeli' -> 'Israeli' [exact] (gold Israel)"
+   "detail": "'Israeli' -> 'Israel' [demonym] (gold Israel)"
   },
   "canonical_hygiene:D17:711:8:Israeli": {
    "metric": "canonical_hygiene",
    "lang": "en",
    "dev": "D17",
    "ok": true,
-   "detail": "canonical 'Israeli'"
+   "detail": "canonical 'Israel'"
   },
   "ner_recall:D17:711:9:West Bank": {
    "metric": "ner_recall",
@@ -10568,13 +10428,6 @@
    "dev": "D17",
    "ok": true,
    "detail": "predicted 'israel'"
-  },
-  "principal_precision:D17:netherlands": {
-   "metric": "principal_precision",
-   "lang": "en",
-   "dev": "D17",
-   "ok": false,
-   "detail": "predicted 'netherlands' (not a gold principal)"
   },
   "principal_recall:D17:Israel": {
    "metric": "principal_recall",
@@ -11423,20 +11276,6 @@
    "ok": true,
    "detail": "'Iran' GPE"
   },
-  "principal_precision:D18:iran": {
-   "metric": "principal_precision",
-   "lang": "en",
-   "dev": "D18",
-   "ok": false,
-   "detail": "predicted 'iran' (not a gold principal)"
-  },
-  "principal_precision:D18:iraq": {
-   "metric": "principal_precision",
-   "lang": "en",
-   "dev": "D18",
-   "ok": false,
-   "detail": "predicted 'iraq' (not a gold principal)"
-  },
   "principal_precision:D18:united states": {
    "metric": "principal_precision",
    "lang": "en",
@@ -11462,15 +11301,15 @@
    "metric": "actor_role",
    "lang": "en",
    "dev": "D18",
-   "ok": true,
-   "detail": "Donald Trump: actor (gold actor)"
+   "ok": false,
+   "detail": "Donald Trump: affected (gold actor)"
   },
   "actor_role:D18:Iran": {
    "metric": "actor_role",
    "lang": "en",
    "dev": "D18",
    "ok": false,
-   "detail": "Iran: actor (gold affected)"
+   "detail": "Iran: participant (gold affected)"
   },
   "actor_role:D18:Iraq": {
    "metric": "actor_role",
@@ -11596,14 +11435,14 @@
    "lang": "en",
    "dev": "D19",
    "ok": true,
-   "detail": "'Iranian' -> 'Iranian' [exact] (gold Iran)"
+   "detail": "'Iranian' -> 'Iran' [demonym] (gold Iran)"
   },
   "canonical_hygiene:D19:152:3:Iranian": {
    "metric": "canonical_hygiene",
    "lang": "en",
    "dev": "D19",
    "ok": true,
-   "detail": "canonical 'Iranian'"
+   "detail": "canonical 'Iran'"
   },
   "ner_precision:D19:152:p0:US": {
    "metric": "ner_precision",
@@ -11757,14 +11596,14 @@
    "lang": "en",
    "dev": "D19",
    "ok": true,
-   "detail": "'Russian' -> 'Russian' [exact] (gold Russia)"
+   "detail": "'Russian' -> 'Russia' [demonym] (gold Russia)"
   },
   "canonical_hygiene:D19:279:1:Russian": {
    "metric": "canonical_hygiene",
    "lang": "en",
    "dev": "D19",
    "ok": true,
-   "detail": "canonical 'Russian'"
+   "detail": "canonical 'Russia'"
   },
   "ner_recall:D19:279:2:Iran": {
    "metric": "ner_recall",
@@ -12059,13 +11898,6 @@
    "dev": "D19",
    "ok": true,
    "detail": "'Iran' GPE"
-  },
-  "principal_precision:D19:iran": {
-   "metric": "principal_precision",
-   "lang": "en",
-   "dev": "D19",
-   "ok": false,
-   "detail": "predicted 'iran' (not a gold principal)"
   },
   "principal_precision:D19:united states": {
    "metric": "principal_precision",
@@ -13229,33 +13061,12 @@
    "ok": true,
    "detail": "'Rakhine' NORP"
   },
-  "principal_precision:D21:gaza": {
-   "metric": "principal_precision",
-   "lang": "en",
-   "dev": "D21",
-   "ok": false,
-   "detail": "predicted 'gaza' (not a gold principal)"
-  },
   "principal_precision:D21:malaysia": {
    "metric": "principal_precision",
    "lang": "en",
    "dev": "D21",
    "ok": true,
    "detail": "predicted 'malaysia'"
-  },
-  "principal_precision:D21:myanmar": {
-   "metric": "principal_precision",
-   "lang": "en",
-   "dev": "D21",
-   "ok": false,
-   "detail": "predicted 'myanmar' (not a gold principal)"
-  },
-  "principal_precision:D21:world news": {
-   "metric": "principal_precision",
-   "lang": "en",
-   "dev": "D21",
-   "ok": false,
-   "detail": "predicted 'world news' (not a gold principal)"
   },
   "principal_recall:D21:Malaysia": {
    "metric": "principal_recall",
@@ -13275,15 +13086,15 @@
    "metric": "actor_role",
    "lang": "en",
    "dev": "D21",
-   "ok": false,
-   "detail": "Myanmar: actor (gold affected)"
+   "ok": true,
+   "detail": "Myanmar: affected (gold affected)"
   },
   "actor_role:D21:United Nations": {
    "metric": "actor_role",
    "lang": "en",
    "dev": "D21",
    "ok": false,
-   "detail": "United Nations: actor (gold subject)"
+   "detail": "United Nations: institutional_context (gold subject)"
   },
   "ner_recall:D22:390:0:US": {
    "metric": "ner_recall",
@@ -13740,12 +13551,19 @@
    "ok": false,
    "detail": "predicted 'united states' (not a gold principal)"
   },
+  "principal_precision:D22:us department of defense": {
+   "metric": "principal_precision",
+   "lang": "en",
+   "dev": "D22",
+   "ok": false,
+   "detail": "predicted 'us department of defense' (not a gold principal)"
+  },
   "principal_recall:D22:U.S. Court of Appeals for the D.C. Circuit": {
    "metric": "principal_recall",
    "lang": "en",
    "dev": "D22",
    "ok": false,
-   "detail": "gold 'U.S. Court of Appeals for the D.C. Circuit' missed (predicted ['united states'])"
+   "detail": "gold 'U.S. Court of Appeals for the D.C. Circuit' missed (predicted ['united states', 'us department of defense'])"
   },
   "actor_role:D22:U.S. Court of Appeals for the D.C. Circuit": {
    "metric": "actor_role",
@@ -14398,12 +14216,12 @@
    "ok": true,
    "detail": "'Donald Trump' PERSON"
   },
-  "principal_precision:D23:united states": {
+  "principal_precision:D23:donald trump": {
    "metric": "principal_precision",
    "lang": "es+it",
    "dev": "D23",
    "ok": true,
-   "detail": "predicted 'united states'"
+   "detail": "predicted 'donald trump'"
   },
   "principal_recall:D23:Donald Trump": {
    "metric": "principal_recall",
@@ -14650,19 +14468,19 @@
    "ok": true,
    "detail": "'Donald Trump' PERSON"
   },
-  "principal_precision:D24:eeuu": {
+  "principal_precision:D24:iran": {
    "metric": "principal_precision",
    "lang": "es",
    "dev": "D24",
    "ok": true,
-   "detail": "predicted 'eeuu'"
+   "detail": "predicted 'iran'"
   },
-  "principal_precision:D24:irán": {
+  "principal_precision:D24:united states": {
    "metric": "principal_precision",
    "lang": "es",
    "dev": "D24",
    "ok": true,
-   "detail": "predicted 'irán'"
+   "detail": "predicted 'united states'"
   },
   "principal_recall:D24:Iran": {
    "metric": "principal_recall",
@@ -14895,33 +14713,19 @@
    "ok": true,
    "detail": "'Europe' LOC"
   },
-  "principal_precision:D25:eu critical communication system": {
-   "metric": "principal_precision",
-   "lang": "en",
-   "dev": "D25",
-   "ok": false,
-   "detail": "predicted 'eu critical communication system' (not a gold principal)"
-  },
-  "principal_precision:D25:european union": {
-   "metric": "principal_precision",
-   "lang": "en",
-   "dev": "D25",
-   "ok": false,
-   "detail": "predicted 'european union' (not a gold principal)"
-  },
   "principal_recall:D25:Council of the European Union": {
    "metric": "principal_recall",
    "lang": "en",
    "dev": "D25",
    "ok": false,
-   "detail": "gold 'Council of the European Union' missed (predicted ['eu critical communication system', 'european union'])"
+   "detail": "gold 'Council of the European Union' missed (predicted [])"
   },
   "principal_recall:D25:European Commission": {
    "metric": "principal_recall",
    "lang": "en",
    "dev": "D25",
    "ok": false,
-   "detail": "gold 'European Commission' missed (predicted ['eu critical communication system', 'european union'])"
+   "detail": "gold 'European Commission' missed (predicted [])"
   },
   "actor_role:D25:Council of the European Union": {
    "metric": "actor_role",
@@ -14941,8 +14745,8 @@
    "metric": "actor_role",
    "lang": "en",
    "dev": "D25",
-   "ok": false,
-   "detail": "European Union: actor (gold institutional_context)"
+   "ok": true,
+   "detail": "European Union: institutional_context (gold institutional_context)"
   },
   "actor_role:D25:Brussels": {
    "metric": "actor_role",
@@ -14960,9 +14764,9 @@
       "field": "title",
       "text": "Spanish",
       "type": "NORP",
-      "canonical": "Spanish",
-      "method": "exact",
-      "evidence": "'Spanish' is a trusted name of 'Spanish'"
+      "canonical": "Spain",
+      "method": "demonym",
+      "evidence": "'Spanish' names Spain"
      },
      {
       "field": "lead",
@@ -15152,7 +14956,7 @@
     ]
    },
    "principals": [
-    "united states"
+    "pete hegseth"
    ],
    "roles": {
     "pete hegseth": "actor",
@@ -15201,9 +15005,9 @@
       "field": "lead",
       "text": "American",
       "type": "NORP",
-      "canonical": "American",
-      "method": "new",
-      "evidence": "fuzzy candidate 'Mexican' (100) refused: country or nationality word"
+      "canonical": "U.S.",
+      "method": "demonym",
+      "evidence": "'American' names U.S."
      }
     ],
     "2": [
@@ -15299,11 +15103,7 @@
      }
     ]
    },
-   "principals": [
-    "boeing",
-    "navy",
-    "united states"
-   ],
+   "principals": [],
    "roles": {
     "boeing": "actor",
     "united states": "subject",
@@ -15360,9 +15160,7 @@
      }
     ]
    },
-   "principals": [
-    "fat bear week"
-   ],
+   "principals": [],
    "roles": {
     "alaska": "location",
     "fat bear week": "participant",
@@ -15376,25 +15174,25 @@
       "field": "title",
       "text": "Saudi",
       "type": "NORP",
-      "canonical": "Saudi",
-      "method": "exact",
-      "evidence": "'Saudi' is a trusted name of 'Saudi'"
+      "canonical": "Saudi Arabia",
+      "method": "demonym",
+      "evidence": "'Saudi' names Saudi Arabia"
      },
      {
       "field": "title",
       "text": "Turkish",
       "type": "NORP",
-      "canonical": "Turkish",
-      "method": "exact",
-      "evidence": "'Turkish' is a trusted name of 'Turkish'"
+      "canonical": "Turkey",
+      "method": "demonym",
+      "evidence": "'Turkish' names Turkey"
      },
      {
       "field": "title",
       "text": "Pakistani",
       "type": "NORP",
-      "canonical": "Pakistani",
-      "method": "exact",
-      "evidence": "'Pakistani' is a trusted name of 'Pakistani'"
+      "canonical": "Pakistan",
+      "method": "demonym",
+      "evidence": "'Pakistani' names Pakistan"
      },
      {
       "field": "title",
@@ -15425,8 +15223,8 @@
       "text": "Pakistan",
       "type": "GPE",
       "canonical": "Pakistan",
-      "method": "new",
-      "evidence": "fuzzy candidate 'Pakistani' (100) refused: country or nationality word"
+      "method": "exact",
+      "evidence": "'Pakistan' is a trusted name of 'Pakistan'"
      },
      {
       "field": "lead",
@@ -15458,9 +15256,9 @@
       "field": "title",
       "text": "Saudi",
       "type": "NORP",
-      "canonical": "Saudi",
-      "method": "exact",
-      "evidence": "'Saudi' is a trusted name of 'Saudi'"
+      "canonical": "Saudi Arabia",
+      "method": "demonym",
+      "evidence": "'Saudi' names Saudi Arabia"
      },
      {
       "field": "title",
@@ -15654,9 +15452,9 @@
       "field": "lead",
       "text": "French",
       "type": "NORP",
-      "canonical": "French",
-      "method": "exact",
-      "evidence": "'French' is a trusted name of 'French'"
+      "canonical": "France",
+      "method": "demonym",
+      "evidence": "'French' names France"
      },
      {
       "field": "lead",
@@ -15704,9 +15502,9 @@
       "field": "title",
       "text": "Saudi",
       "type": "NORP",
-      "canonical": "Saudi",
-      "method": "exact",
-      "evidence": "'Saudi' is a trusted name of 'Saudi'"
+      "canonical": "Saudi Arabia",
+      "method": "demonym",
+      "evidence": "'Saudi' names Saudi Arabia"
      },
      {
       "field": "lead",
@@ -15952,9 +15750,9 @@
       "field": "title",
       "text": "Saudi",
       "type": "NORP",
-      "canonical": "Saudi",
-      "method": "exact",
-      "evidence": "'Saudi' is a trusted name of 'Saudi'"
+      "canonical": "Saudi Arabia",
+      "method": "demonym",
+      "evidence": "'Saudi' names Saudi Arabia"
      },
      {
       "field": "title",
@@ -16034,9 +15832,9 @@
       "field": "lead",
       "text": "Yemeni",
       "type": "NORP",
-      "canonical": "Yemeni",
-      "method": "new",
-      "evidence": "fuzzy candidate 'Yemen' (100) refused: country or nationality word"
+      "canonical": "Yemen",
+      "method": "demonym",
+      "evidence": "'Yemeni' names Yemen"
      },
      {
       "field": "lead",
@@ -16126,9 +15924,9 @@
       "field": "lead",
       "text": "Saudi",
       "type": "NORP",
-      "canonical": "Saudi",
-      "method": "exact",
-      "evidence": "'Saudi' is a trusted name of 'Saudi'"
+      "canonical": "Saudi Arabia",
+      "method": "demonym",
+      "evidence": "'Saudi' names Saudi Arabia"
      },
      {
       "field": "lead",
@@ -16226,7 +16024,6 @@
     "islamabad": "location",
     "riyadh": "location",
     "ankara": "location",
-    "taiz": "location",
     "bbc": "subject",
     "rubio": "actor",
     "hormuz strait": "location"
@@ -16239,9 +16036,9 @@
       "field": "title",
       "text": "Israeli",
       "type": "NORP",
-      "canonical": "Israeli",
-      "method": "exact",
-      "evidence": "'Israeli' is a trusted name of 'Israeli'"
+      "canonical": "Israel",
+      "method": "demonym",
+      "evidence": "'Israeli' names Israel"
      },
      {
       "field": "title",
@@ -16287,9 +16084,9 @@
       "field": "lead",
       "text": "Israeli",
       "type": "NORP",
-      "canonical": "Israeli",
-      "method": "exact",
-      "evidence": "'Israeli' is a trusted name of 'Israeli'"
+      "canonical": "Israel",
+      "method": "demonym",
+      "evidence": "'Israeli' names Israel"
      },
      {
       "field": "lead",
@@ -16306,8 +16103,8 @@
       "text": "Israel",
       "type": "GPE",
       "canonical": "Israel",
-      "method": "new",
-      "evidence": "fuzzy candidate 'Israeli' (100) refused: country or nationality word"
+      "method": "exact",
+      "evidence": "'Israel' is a trusted name of 'Israel'"
      },
      {
       "field": "title",
@@ -16329,9 +16126,9 @@
       "field": "lead",
       "text": "Israeli",
       "type": "NORP",
-      "canonical": "Israeli",
-      "method": "exact",
-      "evidence": "'Israeli' is a trusted name of 'Israeli'"
+      "canonical": "Israel",
+      "method": "demonym",
+      "evidence": "'Israeli' names Israel"
      },
      {
       "field": "lead",
@@ -16361,17 +16158,14 @@
       "field": "lead",
       "text": "Palestinian",
       "type": "NORP",
-      "canonical": "Palestinians",
-      "method": "exact",
-      "evidence": "'Palestinian' is a trusted name of 'Palestinians'"
+      "canonical": "Palestine",
+      "method": "demonym",
+      "evidence": "'Palestinian' names Palestine"
      }
     ]
    },
    "principals": [
-    "gaza",
-    "hamas",
-    "israel",
-    "izz al-din al-beik"
+    "israel"
    ],
    "roles": {
     "israel": "actor",
@@ -16453,10 +16247,7 @@
      }
     ]
    },
-   "principals": [
-    "united kingdom",
-    "united states"
-   ],
+   "principals": [],
    "roles": {
     "united states": "location",
     "united kingdom": "location",
@@ -16510,9 +16301,9 @@
       "field": "lead",
       "text": "Ukrainian",
       "type": "NORP",
-      "canonical": "Ukrainian",
-      "method": "exact",
-      "evidence": "'Ukrainian' is a trusted name of 'Ukrainian'"
+      "canonical": "Ukraine",
+      "method": "demonym",
+      "evidence": "'Ukrainian' names Ukraine"
      }
     ],
     "161": [
@@ -16554,9 +16345,9 @@
       "field": "title",
       "text": "Russian",
       "type": "NORP",
-      "canonical": "Russian",
-      "method": "new",
-      "evidence": "fuzzy candidate 'Russia' (100) refused: country or nationality word"
+      "canonical": "Russia",
+      "method": "demonym",
+      "evidence": "'Russian' names Russia"
      },
      {
       "field": "title",
@@ -16625,13 +16416,11 @@
     ]
    },
    "principals": [
-    "russia",
-    "ukraine"
+    "russia"
    ],
    "roles": {
     "russia": "actor",
     "ukraine": "target",
-    "kyiv": "location",
     "zircon": "subject",
     "onyx": "subject",
     "iskander-m": "subject"
@@ -16684,9 +16473,7 @@
      }
     ]
    },
-   "principals": [
-    "jonathan mckinsey"
-   ],
+   "principals": [],
    "roles": {
     "california": "location",
     "jonathan mckinsey": "actor"
@@ -16781,8 +16568,7 @@
    },
    "principals": [
     "argentina",
-    "milei",
-    "united kingdom"
+    "javier milei"
    ],
    "roles": {
     "argentina": "actor",
@@ -16824,9 +16610,9 @@
       "field": "lead",
       "text": "Estonian",
       "type": "NORP",
-      "canonical": "Estonian",
-      "method": "new",
-      "evidence": "fuzzy candidate 'Estonia' (100) refused: country or nationality word"
+      "canonical": "Estonia",
+      "method": "demonym",
+      "evidence": "'Estonian' names Estonia"
      },
      {
       "field": "lead",
@@ -16840,9 +16626,9 @@
       "field": "lead",
       "text": "Russian",
       "type": "NORP",
-      "canonical": "Russian",
-      "method": "exact",
-      "evidence": "'Russian' is a trusted name of 'Russian'"
+      "canonical": "Russia",
+      "method": "demonym",
+      "evidence": "'Russian' names Russia"
      }
     ],
     "1143": [
@@ -16932,9 +16718,9 @@
       "field": "lead",
       "text": "Estonian",
       "type": "NORP",
-      "canonical": "Estonian",
-      "method": "exact",
-      "evidence": "'Estonian' is a trusted name of 'Estonian'"
+      "canonical": "Estonia",
+      "method": "demonym",
+      "evidence": "'Estonian' names Estonia"
      },
      {
       "field": "lead",
@@ -17056,17 +16842,17 @@
       "field": "lead",
       "text": "Russian",
       "type": "NORP",
-      "canonical": "Russian",
-      "method": "exact",
-      "evidence": "'Russian' is a trusted name of 'Russian'"
+      "canonical": "Russia",
+      "method": "demonym",
+      "evidence": "'Russian' names Russia"
      },
      {
       "field": "lead",
       "text": "Estonian",
       "type": "NORP",
-      "canonical": "Estonian",
-      "method": "exact",
-      "evidence": "'Estonian' is a trusted name of 'Estonian'"
+      "canonical": "Estonia",
+      "method": "demonym",
+      "evidence": "'Estonian' names Estonia"
      },
      {
       "field": "lead",
@@ -17079,15 +16865,13 @@
     ]
    },
    "principals": [
-    "estonia",
-    "milrem",
-    "russia"
+    "estonia"
    ],
    "roles": {
     "estonia": "actor",
     "russia": "target",
     "ukraine": "subject",
-    "european nato": "institutional_context",
+    "european nato": "actor",
     "milrem robotics": "location",
     "milrem": "target",
     "mark rutte": "actor",
@@ -17201,17 +16985,17 @@
       "field": "lead",
       "text": "Russian",
       "type": "NORP",
-      "canonical": "Russian",
-      "method": "exact",
-      "evidence": "'Russian' is a trusted name of 'Russian'"
+      "canonical": "Russia",
+      "method": "demonym",
+      "evidence": "'Russian' names Russia"
      },
      {
       "field": "lead",
       "text": "Estonian",
       "type": "NORP",
-      "canonical": "Estonian",
-      "method": "new",
-      "evidence": "fuzzy candidate 'Estonia' (100) refused: country or nationality word"
+      "canonical": "Estonia",
+      "method": "demonym",
+      "evidence": "'Estonian' names Estonia"
      },
      {
       "field": "lead",
@@ -17224,16 +17008,14 @@
     ]
    },
    "principals": [
-    "estonia",
-    "milrem",
-    "russia"
+    "estonia"
    ],
    "roles": {
     "estonia": "actor",
     "russia": "target",
     "milrem": "target",
     "ukraine": "affected",
-    "nato": "institutional_context",
+    "nato": "actor",
     "mark rutte": "actor",
     "glasgow": "location",
     "scotland": "location",
@@ -17273,9 +17055,9 @@
       "field": "title",
       "text": "Italian",
       "type": "NORP",
-      "canonical": "Italian",
-      "method": "new",
-      "evidence": "fuzzy candidate 'Taliban' (100) refused: country or nationality word"
+      "canonical": "Italy",
+      "method": "demonym",
+      "evidence": "'Italian' names Italy"
      },
      {
       "field": "lead",
@@ -17289,9 +17071,9 @@
       "field": "lead",
       "text": "Italian",
       "type": "NORP",
-      "canonical": "Italian",
-      "method": "exact",
-      "evidence": "'Italian' is a trusted name of 'Italian'"
+      "canonical": "Italy",
+      "method": "demonym",
+      "evidence": "'Italian' names Italy"
      },
      {
       "field": "lead",
@@ -17319,17 +17101,17 @@
       "field": "title",
       "text": "South African",
       "type": "NORP",
-      "canonical": "South African",
-      "method": "exact",
-      "evidence": "'South African' is a trusted name of 'South African'"
+      "canonical": "South Africa",
+      "method": "demonym",
+      "evidence": "'South African' names South Africa"
      },
      {
       "field": "lead",
       "text": "South African",
       "type": "NORP",
-      "canonical": "South African",
-      "method": "exact",
-      "evidence": "'South African' is a trusted name of 'South African'"
+      "canonical": "South Africa",
+      "method": "demonym",
+      "evidence": "'South African' names South Africa"
      }
     ],
     "632": [
@@ -17338,8 +17120,8 @@
       "text": "South Africa",
       "type": "GPE",
       "canonical": "South Africa",
-      "method": "new",
-      "evidence": "fuzzy candidate 'South African' (100) refused: country or nationality word"
+      "method": "exact",
+      "evidence": "'South Africa' is a trusted name of 'South Africa'"
      }
     ],
     "687": [
@@ -17373,9 +17155,9 @@
       "field": "lead",
       "text": "South African",
       "type": "NORP",
-      "canonical": "South African",
-      "method": "exact",
-      "evidence": "'South African' is a trusted name of 'South African'"
+      "canonical": "South Africa",
+      "method": "demonym",
+      "evidence": "'South African' names South Africa"
      },
      {
       "field": "lead",
@@ -17387,12 +17169,9 @@
      }
     ]
    },
-   "principals": [
-    "south africa"
-   ],
+   "principals": [],
    "roles": {
-    "south africa": "location",
-    "cyril ramaphosa": "actor"
+    "south africa": "location"
    }
   },
   "D15": {
@@ -17444,9 +17223,9 @@
       "field": "title",
       "text": "Russian",
       "type": "NORP",
-      "canonical": "Russian",
-      "method": "exact",
-      "evidence": "'Russian' is a trusted name of 'Russian'"
+      "canonical": "Russia",
+      "method": "demonym",
+      "evidence": "'Russian' names Russia"
      }
     ],
     "282": [
@@ -17462,18 +17241,19 @@
       "field": "title",
       "text": "Russian",
       "type": "NORP",
-      "canonical": "Russian",
-      "method": "exact",
-      "evidence": "'Russian' is a trusted name of 'Russian'"
+      "canonical": "Russia",
+      "method": "demonym",
+      "evidence": "'Russian' names Russia"
      }
     ]
    },
    "principals": [
+    "putin",
     "russia"
    ],
    "roles": {
     "russia": "actor",
-    "ukraine": "actor",
+    "ukraine": "location",
     "reuters": "subject",
     "putin": "actor"
    }
@@ -17573,11 +17353,7 @@
      }
     ]
    },
-   "principals": [
-    "carteret",
-    "chelsea, ma",
-    "intertek usa, inc"
-   ],
+   "principals": [],
    "roles": {
     "intertek usa, inc": "subject",
     "chelsea, ma": "subject",
@@ -17603,9 +17379,9 @@
       "field": "title",
       "text": "Dutch",
       "type": "NORP",
-      "canonical": "Dutch",
-      "method": "exact",
-      "evidence": "'Dutch' is a trusted name of 'Dutch'"
+      "canonical": "Netherlands",
+      "method": "demonym",
+      "evidence": "'Dutch' names Netherlands"
      },
      {
       "field": "lead",
@@ -17637,9 +17413,9 @@
       "field": "title",
       "text": "Dutch",
       "type": "NORP",
-      "canonical": "Dutch",
-      "method": "exact",
-      "evidence": "'Dutch' is a trusted name of 'Dutch'"
+      "canonical": "Netherlands",
+      "method": "demonym",
+      "evidence": "'Dutch' names Netherlands"
      },
      {
       "field": "title",
@@ -17661,9 +17437,9 @@
       "field": "lead",
       "text": "Dutch",
       "type": "NORP",
-      "canonical": "Dutch",
-      "method": "exact",
-      "evidence": "'Dutch' is a trusted name of 'Dutch'"
+      "canonical": "Netherlands",
+      "method": "demonym",
+      "evidence": "'Dutch' names Netherlands"
      },
      {
       "field": "lead",
@@ -17693,9 +17469,9 @@
       "field": "lead",
       "text": "Israeli",
       "type": "NORP",
-      "canonical": "Israeli",
-      "method": "exact",
-      "evidence": "'Israeli' is a trusted name of 'Israeli'"
+      "canonical": "Israel",
+      "method": "demonym",
+      "evidence": "'Israeli' names Israel"
      },
      {
       "field": "lead",
@@ -17708,8 +17484,7 @@
     ]
    },
    "principals": [
-    "israel",
-    "netherlands"
+    "israel"
    ],
    "roles": {
     "israel": "actor",
@@ -17921,16 +17696,14 @@
     ]
    },
    "principals": [
-    "iran",
-    "iraq",
     "united states"
    ],
    "roles": {
     "united states": "actor",
-    "iran": "actor",
+    "iran": "participant",
     "iraq": "participant",
     "najaf": "location",
-    "donald trump": "actor",
+    "donald trump": "affected",
     "united nations": "institutional_context"
    }
   },
@@ -17965,9 +17738,9 @@
       "field": "lead",
       "text": "Iranian",
       "type": "NORP",
-      "canonical": "Iranian",
-      "method": "exact",
-      "evidence": "'Iranian' is a trusted name of 'Iranian'"
+      "canonical": "Iran",
+      "method": "demonym",
+      "evidence": "'Iranian' names Iran"
      }
     ],
     "13": [
@@ -18009,9 +17782,9 @@
       "field": "title",
       "text": "Russian",
       "type": "NORP",
-      "canonical": "Russian",
-      "method": "exact",
-      "evidence": "'Russian' is a trusted name of 'Russian'"
+      "canonical": "Russia",
+      "method": "demonym",
+      "evidence": "'Russian' names Russia"
      },
      {
       "field": "title",
@@ -18080,7 +17853,6 @@
     ]
    },
    "principals": [
-    "iran",
     "united states"
    ],
    "roles": {
@@ -18379,19 +18151,12 @@
     ]
    },
    "principals": [
-    "gaza",
-    "malaysia",
-    "myanmar",
-    "world news"
+    "malaysia"
    ],
    "roles": {
     "malaysia": "actor",
-    "myanmar": "actor",
-    "united nations": "actor",
-    "world news": "actor",
-    "gaza": "location",
-    "west bank": "location",
-    "rakhine": "location"
+    "myanmar": "affected",
+    "united nations": "institutional_context"
    }
   },
   "D22": {
@@ -18532,7 +18297,8 @@
     ]
    },
    "principals": [
-    "united states"
+    "united states",
+    "us department of defense"
    ],
    "roles": {
     "united states": "actor",
@@ -18760,7 +18526,7 @@
     ]
    },
    "principals": [
-    "united states"
+    "donald trump"
    ],
    "roles": {
     "donald trump": "actor",
@@ -18838,8 +18604,8 @@
     ]
    },
    "principals": [
-    "eeuu",
-    "irán"
+    "iran",
+    "united states"
    ],
    "roles": {
     "iran": "actor",
@@ -18926,12 +18692,9 @@
      }
     ]
    },
-   "principals": [
-    "eu critical communication system",
-    "european union"
-   ],
+   "principals": [],
    "roles": {
-    "european union": "actor",
+    "european union": "institutional_context",
     "council of the european union": "actor",
     "eu space threat response architecture": "participant",
     "eu critical communication system": "participant",

@@ -245,3 +245,52 @@ def test_media_outlets_report_they_do_not_act():
 def test_spanish_roles_from_universal_dependencies():
     got = roles_of("Irán confirma que recibió la respuesta oficial de EEUU a su última propuesta", lang="es")
     assert got.get("iran") == "actor" and got.get("united states") == "actor"
+
+
+# --- 6. principal actors from roles ----------------------------------------------------------------
+
+from osint_monitor.processors.principals import development_actors  # noqa: E402
+
+
+def principals_of(*titles, lead="", lang="en", source=None):
+    return development_actors([{"title": t, "lead": lead, "lang": lang, "source": source} for t in titles]).principals
+
+
+@pytest.mark.parametrize("titles, expected", [
+    (["Israel strikes Hamas commander in Gaza"], {"israel"}),                      # Gaza: location; Hamas: target
+    (["'Backpack' declared Alaska's Fat Bear Week winner"], set()),                # event name is no actor
+    (["Accreditation and Approval of Intertek USA, Inc. (Chelsea, MA), as a Commercial Gauger"], set()),
+    (["US and France push G7 sanctions proposal"], {"united states", "france"}),
+    (["US vetoes Security Council resolution"], {"united states"}),
+    (["Trump meets Xi at the White House"], {"trump", "xi"}),                      # co-actors of a meeting
+])
+def test_principal_status_comes_from_the_role(titles, expected):
+    assert principals_of(*titles) == expected
+
+
+def test_lead_sentences_add_no_principal_of_their_own():
+    got = principals_of("Trump meets Xi at the White House", lead="The Pentagon declined to comment.")
+    assert "us department of defense" not in got and {"trump", "xi"} <= got
+
+
+# --- 7. round-up / multi-story safeguards ------------------------------------------------------------
+
+from osint_monitor.processors.actor_roles import is_roundup  # noqa: E402
+
+
+@pytest.mark.parametrize("title, roundup", [
+    ("World News in Brief: Deadly Myanmar strikes as Malaysia begins deportations", True),
+    ("Live: Several people killed as Russia launches new round of strikes on Kyiv", True),
+    ("Ukraine war latest: Record Russian military budget for 2027", True),
+    ("Malaysia sends Rohingya back to Myanmar despite safety warnings", False),
+])
+def test_roundups_are_detected(title, roundup):
+    assert is_roundup(title) is roundup
+
+
+def test_a_roundup_contributes_no_actor_and_the_programme_is_never_one():
+    got = development_actors([
+        {"title": "Malaysia repatriates Myanmar migrants despite UN warnings", "lead": "", "lang": "en"},
+        {"title": "World News in Brief: Deadly Myanmar strikes as Malaysia begins deportations, Gaza update",
+         "lead": "The UN chief on Tuesday strongly condemned an airstrike in Myanmar.", "lang": "en"}]).principals
+    assert got == {"malaysia"}

@@ -277,6 +277,8 @@ def score(predictions: dict, root: Path = GOLD_DIR) -> RunResult:
         for name in p["principals"]:
             hit = next((n for n, alts in enumerate(dev.principals) if n not in matched_gold
                         and any(same_identity(name, a, names) for a in alts)), None)
+            if hit is None and any(any(same_identity(name, a, names) for a in dev.principals[n]) for n in matched_gold):
+                continue                  # another accepted name of a principal already found ("Argentina|Milei")
             if hit is not None:
                 matched_gold.add(hit)
             result.record("principal_precision", f"{dev.key}:{name}", dev.lang, dev.key, hit is not None,
