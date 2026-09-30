@@ -1,0 +1,9 @@
+frozen_at: '2026-09-30T11:56:03Z'
+note: Gold labels written before any entity-logic change; do not edit. entities-*.json
+  are the entity tables (with their learned aliases) of the working copies the review
+  was drawn from.
+sha256:
+  gold.yaml: 82bf82747724752c79ed8978df05c91d179f9306f0423a6861d8e68ee1bb6a35
+  items.json: 851b4b6d5c7ffc3b7bd4dd2a486486ee2d17f577814ee2c783b308692c6a24a5
+  entities-en.json: 3e26dbff3f2f473491f1fc7bce150a7fc34ccfdfb45efd73005982352412ccab
+  entities-ml.json: acaa52b370b6dd09f34e0bc1910ef8a4ad588793d349d28008b81a090b1227a6

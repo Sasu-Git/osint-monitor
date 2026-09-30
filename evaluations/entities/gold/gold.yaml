@@ -1,0 +1,311 @@
+# Frozen gold set for entity detection, typing, canonical resolution, actor roles and principal actors.
+#
+# Items: the 25 Developments (87 items) of evaluations/entities/entity-review-2026-09-30.md; text = each item's
+# headline and lead sentence as stored in items.json (principals._lead), after the benchmark's own reading of it.
+#
+# Labelled 2026-09-30 by Claude from the item text and the "Core Entity Resolution Principle & Enforcement Rules"
+# specification only, before any code change and without looking at model output for these items. The owner's
+# review fields in the review document were left empty; these labels stand in for them and are frozen (sha256 in
+# manifest.yaml). Contestable calls are marked in comments.
+#
+# Entity entries per item: one string, entries separated by "; ", each "surface | TYPE | canonical". TYPE may list alternatives ("ORG/NORP"). "? " marks an optional
+# mention: detecting it or not is neither a hit nor an error. Types: PERSON, NORP, GPE (countries, cities, regions),
+# LOC (non-political places), FAC, ORG, EVENT, PRODUCT, LAW.
+# roles: canonical -> actor | participant | target | affected | institutional_context | subject | location.
+# principals: the Development's principal actors = the entities whose role is actor; "A|B" accepts either name
+# (a head of state/government speaking for the state).
+
+canonical_names:            # accepted names per canonical identity (resolution counts a hit on any of them)
+  United States: [US, U.S., U.S, USA, America, American, United States, the United States, United States of America, Estados Unidos, EEUU, EE.UU., Usa, Stati Uniti, US government]
+  Spain: [Spain, España, Spanish]
+  Iran: [Iran, Irán, Iranian, Islamic Republic of Iran]
+  Iraq: [Iraq, Iraqi]
+  Israel: [Israel, Israeli]
+  Russia: [Russia, Russian, Russian Federation]
+  Ukraine: [Ukraine, Ukrainian]
+  Estonia: [Estonia, Estonian]
+  France: [France, French]
+  Saudi Arabia: [Saudi Arabia, Saudi, Kingdom of Saudi Arabia, KSA]
+  Turkey: [Turkey, Turkiye, Türkiye, Turkish]
+  Pakistan: [Pakistan, Pakistani]
+  Yemen: [Yemen, Yemeni]
+  Italy: [Italy, Italian, Italia]
+  South Africa: [South Africa, South African]
+  Netherlands: [Netherlands, Dutch, the Netherlands, Holland]
+  Malaysia: [Malaysia, Malaysian]
+  Myanmar: [Myanmar, Burma]
+  Argentina: [Argentina, Argentine, Argentinian]
+  United Kingdom: [United Kingdom, UK, U.K., Britain, Great Britain, British]
+  China: [China, Chinese]
+  Houthis: [Houthis, Houthi, Ansar Allah, Houthi movement]
+  Hamas: [Hamas]
+  United Nations: [United Nations, UN, U.N.]
+  UN General Assembly: [UN General Assembly, UNGA, UNGA 81, General Assembly]
+  NATO: [NATO, Nato, North Atlantic Treaty Organization]
+  European Union: [European Union, EU]
+  European Commission: [European Commission, Commission, EU Commission]
+  Council of the European Union: [Council of the European Union, Council of the EU, Council, EU Council]
+  US Department of Defense: [US Department of Defense, Department of Defense, Pentagon, Department of War, War Department, US Department of War, Defense Department, DoD]
+  U.S. Navy: [U.S. Navy, US Navy, United States Navy, Navy]
+  U.S. Customs and Border Protection: [U.S. Customs and Border Protection, Customs and Border Protection, CBP]
+  U.S. Court of Appeals for the D.C. Circuit: [U.S. Court of Appeals for the D.C. Circuit, D.C. Circuit, DC Circuit, U.S. Court of Appeals, US appeals court, federal appeals court]
+  U.S. Supreme Court: [U.S. Supreme Court, Supreme Court, Corte Suprema]
+  Ukrainian Air Force: [Ukrainian Air Force, Air Force]
+  White House: [White House, Casa Bianca, Casa Blanca]
+  Donald Trump: [Donald Trump, Trump]
+  Pete Hegseth: [Pete Hegseth, Hegseth]
+  Emmanuel Macron: [Emmanuel Macron, Macron]
+  Shehbaz Sharif: [Shehbaz Sharif]
+  Javier Milei: [Javier Milei, Milei]
+  Giorgia Meloni: [Giorgia Meloni, Meloni]
+  Cyril Ramaphosa: [Cyril Ramaphosa, Ramaphosa]
+  Vladimir Putin: [Vladimir Putin, Putin]
+  Marco Rubio: [Marco Rubio, Rubio]
+  Mark Rutte: [Mark Rutte, Rutte]
+  Emil Michael: [Emil Michael]
+  Jonathan McKinsey: [Jonathan McKinsey]
+  Maricarmen Abascal: [Maricarmen Abascal]
+  Izz al-Din al-Beik: [Izz al-Din al-Beik]
+  Milrem Robotics: [Milrem Robotics, Milrem]
+  Intertek USA: [Intertek USA, "Intertek USA, Inc.", "Intertek USA, Inc", Intertek]
+  Boeing: [Boeing]
+  Northrop Grumman: [Northrop Grumman]
+  Anthropic: [Anthropic, AnthropicAI]
+  New York Times: [New York Times, The New York Times, NYT]
+  Palestinian Authority: [Palestinian Authority, PA]
+  Reuters: [Reuters]
+  BBC: [BBC]
+  Strait of Hormuz: [Strait of Hormuz, Hormuz Strait, Hormuz]
+  Falkland Islands: [Falkland Islands, Falklands, Malvinas]
+  Red Sea: [Red Sea]
+  Atlantic Ocean: [Atlantic, Atlantic Ocean]
+  Alaska Peninsula: [Alaska Peninsula]
+  West Bank: [West Bank, occupied West Bank]
+  Gaza: [Gaza, Gaza Strip, north Gaza, northern Gaza]
+  Gaza City: [Gaza City]
+  Mecca Joint Defence Agreement: [Mecca Joint Defence Agreement, Mecca pact]
+  Fat Bear Week: [Fat Bear Week]
+  State of the Force: [State of the Force]
+
+developments:
+  D01:
+    ref: en#69
+    items:
+      1012: "Spanish | NORP | Spain; Maricarmen Abascal | PERSON | Maricarmen Abascal; Spain | GPE | Spain"
+      1124: "Spain | GPE | Spain"
+      1316: "Spain | GPE | Spain"
+      1200: "Spain | GPE | Spain; Spain | GPE | Spain"
+      1213: "Madrid | GPE | Madrid; Spain | GPE | Spain; Spain | GPE | Spain"
+      1233: "Spain | GPE | Spain; Madrid | GPE | Madrid; Spain | GPE | Spain"
+    roles: {Spain: actor, Maricarmen Abascal: affected, Madrid: location}
+    principals: [Spain]
+  D02:
+    ref: en#78
+    items:
+      1181: "Hegseth | PERSON | Pete Hegseth; ? State of the Force | EVENT | State of the Force; Pete Hegseth | PERSON | Pete Hegseth; ? State of the Force | EVENT | State of the Force"
+      1247: "Hegseth | PERSON | Pete Hegseth; US | GPE | United States; Pentagon | ORG | US Department of Defense; ? State of the Force | EVENT | State of the Force; Virginia | GPE | Virginia"
+    roles: {Pete Hegseth: actor, US Department of Defense: institutional_context, United States: subject, Virginia: location}
+    principals: [Pete Hegseth]
+  D03:
+    ref: ml#2
+    items:
+      507: "Boeing | ORG | Boeing; Navy | ORG | U.S. Navy; ? F/A-XX | PRODUCT | F/A-XX; Boeing | ORG | Boeing; American | NORP | United States; ? F-47 | PRODUCT | F-47"
+      2: "Department of War | ORG | US Department of Defense; U.S. Navy | ORG | U.S. Navy; ? F/A-XX | PRODUCT | F/A-XX; War Department | ORG | US Department of Defense; ? U.S | GPE | United States"
+      487: "US Navy | ORG | U.S. Navy; Boeing | ORG | Boeing; ? F/A-XX | PRODUCT | F/A-XX; Boeing | ORG | Boeing; Navy | ORG | U.S. Navy; ? F/A-XX | PRODUCT | F/A-XX; Northrop Grumman | ORG | Northrop Grumman"
+    # Boeing wins the award but the Navy / Department own the action (contract award): Boeing = participant
+    roles: {U.S. Navy: actor, US Department of Defense: actor, Boeing: participant, Northrop Grumman: subject, United States: institutional_context}
+    principals: [U.S. Navy, US Department of Defense]
+  D04:
+    ref: ml#20
+    items:
+      92: "? Backpack | PERSON | Backpack; Alaska | GPE | Alaska; Fat Bear Week | EVENT | Fat Bear Week; ? Backpack | PERSON | Backpack"
+      199: "? Backpack | PERSON | Backpack; Alaska | GPE | Alaska; Fat Bear Week | EVENT | Fat Bear Week; Alaska Peninsula | LOC | Alaska Peninsula"
+    roles: {Fat Bear Week: subject, Alaska: location, Alaska Peninsula: location}
+    principals: []
+  D05:
+    ref: en#4
+    items:
+      72: "Saudi | NORP | Saudi Arabia; Turkish | NORP | Turkey; Pakistani | NORP | Pakistan; Yemen | GPE | Yemen; Saudi Arabia | GPE | Saudi Arabia; Turkiye | GPE | Turkey; Pakistan | GPE | Pakistan; Houthi | ORG/NORP | Houthis; Yemen | GPE | Yemen"
+      110: "France | GPE | France; Saudi | NORP | Saudi Arabia; Houthis | ORG/NORP | Houthis; Emmanuel Macron | PERSON | Emmanuel Macron; France | GPE | France; Saudi Arabia | GPE | Saudi Arabia; ? Iran | GPE | Iran; Houthi | ORG/NORP | Houthis"
+      57: "Saudi Arabia | GPE | Saudi Arabia; Houthi | ORG/NORP | Houthis; France | GPE | France; Yanbu | GPE | Yanbu; Pakistan | GPE | Pakistan; Turkiye | GPE | Turkey; Riyadh | GPE | Riyadh"
+      325: "France | GPE | France; Saudi Arabia | GPE | Saudi Arabia; Red Sea | LOC | Red Sea; Macron | PERSON | Emmanuel Macron; PARIS | GPE | Paris; Reuters | ORG | Reuters; France | GPE | France; Saudi Arabia | GPE | Saudi Arabia; Red Sea | LOC | Red Sea; Yanbu | GPE | Yanbu; French | NORP | France; Emmanuel Macron | PERSON | Emmanuel Macron; ? Macron | PERSON | Emmanuel Macron; ? U.S | GPE | United States"
+      433: "Pakistan | GPE | Pakistan; Houthi | ORG/NORP | Houthis; Saudi | NORP | Saudi Arabia; Pakistan | GPE | Pakistan; Mecca Joint Defence Agreement | LAW/ORG | Mecca Joint Defence Agreement; Houthi | ORG/NORP | Houthis; Saudi Arabia | GPE | Saudi Arabia; UNGA 81 | ORG/EVENT | UN General Assembly"
+      441: "Houthi | ORG/NORP | Houthis; Mecca | GPE | Mecca; Medina | GPE | Medina; Pakistan | GPE | Pakistan; UN | ORG | United Nations; Shehbaz Sharif | PERSON | Shehbaz Sharif; Islamabad | GPE | Islamabad; Riyadh | GPE | Riyadh; Ankara | GPE | Ankara; ? Mecca | GPE | Mecca"
+      547: "Houthi | ORG/NORP | Houthis; Saudi Arabia | GPE | Saudi Arabia; ? Mecca | GPE | Mecca; Saudi Arabia | GPE | Saudi Arabia; Pakistan | GPE | Pakistan; Turkey | GPE | Turkey; Yemen | GPE | Yemen; Houthis | ORG/NORP | Houthis"
+      575: "? Mecca | GPE | Mecca; Houthi | ORG/NORP | Houthis; Saudi Arabia | GPE | Saudi Arabia; Turkiye | GPE | Turkey; Pakistan | GPE | Pakistan; Riyadh | GPE | Riyadh; Saudi Arabia | GPE | Saudi Arabia"
+      603: "Saudi | NORP | Saudi Arabia; Iran | GPE | Iran; Houthis | ORG/NORP | Houthis; UNGA | ORG/EVENT | UN General Assembly; UN | ORG | United Nations; Saudi Arabia | GPE | Saudi Arabia; Iran | GPE | Iran; Houthis | ORG/NORP | Houthis"
+      660: "Yemen | GPE | Yemen; Houthis | ORG/NORP | Houthis; Yemeni | NORP | Yemen; Taiz | GPE | Taiz"
+      721: "Yemen | GPE | Yemen; Houthis | ORG/NORP | Houthis; Yemen | GPE | Yemen; BBC | ORG | BBC"
+      999: "Rubio | PERSON | Marco Rubio; Saudi Arabia | GPE | Saudi Arabia; Yemen | GPE | Yemen; Hormuz Strait | LOC | Strait of Hormuz; US | GPE | United States; Saudi | NORP | Saudi Arabia; Yemen | GPE | Yemen; Houthis | ORG/NORP | Houthis"
+      1150: "Iran | GPE | Iran; Houthis | ORG/NORP | Houthis; Yemen | GPE | Yemen; Iran | GPE | Iran; Houthis | ORG/NORP | Houthis; Yemen | GPE | Yemen"
+    # a cluster of related reports: the Development is Saudi Arabia's allies lining up support against Houthi attacks
+    roles: {Saudi Arabia: actor, France: actor, Pakistan: actor, Turkey: actor, Houthis: actor, Iran: subject, United States: subject, Yemen: location, UN General Assembly: institutional_context, United Nations: institutional_context, Mecca Joint Defence Agreement: subject, Red Sea: location, Yanbu: location, Riyadh: location, Reuters: subject, BBC: subject}
+    principals: [Saudi Arabia, France|Emmanuel Macron, Pakistan|Shehbaz Sharif, Turkey, Houthis]
+  D06:
+    ref: en#65
+    items:
+      1061: "Israeli | NORP | Israel; Hamas | ORG | Hamas; Izz al-Din al-Beik | PERSON | Izz al-Din al-Beik; Gaza | GPE | Gaza; Hamas | ORG | Hamas; Gaza | GPE | Gaza; Israeli | NORP | Israel; Gaza City | GPE | Gaza City"
+      1171: "Israel | GPE | Israel; Gaza | GPE | Gaza; Hamas | ORG | Hamas; ? October 7, 2023 attack | EVENT | October 7 attack; Israeli | NORP | Israel; Hamas | ORG | Hamas; Gaza | GPE | Gaza; ? October 7, 2023 attack | EVENT | October 7 attack; ? Palestinian | NORP | Palestine"
+    roles: {Israel: actor, Hamas: target, Izz al-Din al-Beik: target, Gaza: location, Gaza City: location}
+    principals: [Israel]
+  D07:
+    ref: en#70
+    items:
+      984: "US | GPE | United States; UK | GPE | United Kingdom; ? SM-6 | PRODUCT | SM-6; ? SINKEX | EVENT | SINKEX; ? Mk 48 Advanced Capability Torpedo | PRODUCT | Mk 48 Advanced Capability Torpedo; Navy | ORG | U.S. Navy"
+      1203: "USS Klakring | PRODUCT/FAC | USS Klakring; Atlantic | LOC | Atlantic Ocean; US | GPE | United States; UK | GPE | United Kingdom; ? SINKEX | EVENT | SINKEX; ? U.S | GPE | United States"
+    roles: {United States: actor, United Kingdom: actor, U.S. Navy: participant, USS Klakring: target, Atlantic Ocean: location}
+    principals: [United States|U.S. Navy, United Kingdom]
+  D08:
+    ref: ml#12
+    items:
+      274: "Russia | GPE | Russia; Kyiv | GPE | Kyiv; Ukraine | GPE | Ukraine; Russia | GPE | Russia; Kyiv | GPE | Kyiv; Ukrainian | NORP | Ukraine"
+      161: "Russia | GPE | Russia; Kyiv | GPE | Kyiv; Russia | GPE | Russia; Kyiv | GPE | Kyiv"
+      275: "Russian | NORP | Russia; Ukraine | GPE | Ukraine; Kyiv | GPE | Kyiv; Air Force | ORG | Ukrainian Air Force; Russia | GPE | Russia; Ukraine | GPE | Ukraine; ? Zircon | PRODUCT | Zircon; ? Onyx | PRODUCT | Onyx; ? Iskander-M | PRODUCT | Iskander-M; ? S-400 | PRODUCT | S-400"
+    roles: {Russia: actor, Ukraine: target, Kyiv: location, Ukrainian Air Force: subject}
+    principals: [Russia]
+  D09:
+    ref: en#55
+    items:
+      1031: "California | GPE | California; New York Times | ORG | New York Times; California | GPE | California"
+      1014: "New York Times | ORG | New York Times; Jonathan McKinsey | PERSON | Jonathan McKinsey"
+    # the actors (the victim's in-laws) are unnamed
+    roles: {Jonathan McKinsey: affected, New York Times: institutional_context, California: location}
+    principals: []
+  D10:
+    ref: en#59
+    items:
+      1013: "Argentina | GPE | Argentina; UK | GPE | United Kingdom; Falkland Islands | GPE | Falkland Islands; Javier Milei | PERSON | Javier Milei; ? Sea Lion | FAC/PRODUCT | Sea Lion oilfield"
+      1092: "Argentina | GPE | Argentina; Milei | PERSON | Javier Milei; Falklands | GPE | Falkland Islands; Argentina | GPE | Argentina; UK | GPE | United Kingdom"
+    roles: {Argentina: actor, United Kingdom: target, Falkland Islands: location}
+    principals: [Argentina|Javier Milei]
+  D11:
+    ref: en#64
+    items:
+      1123: "Estonia | GPE | Estonia; Russia | GPE | Russia; Ukraine | GPE | Ukraine; Estonian | NORP | Estonia; Ukraine | GPE | Ukraine; Russian | NORP | Russia"
+      1143: "Estonia | GPE | Estonia; Russia | GPE | Russia; Ukraine | GPE | Ukraine; Russia | GPE | Russia; ? European | NORP | Europe; Nato | ORG | NATO; Ukraine | GPE | Ukraine"
+      1153: "Estonia | GPE | Estonia; Russia | GPE | Russia; Tallinn | GPE | Tallinn; Moscow | GPE | Moscow; Estonian | NORP | Estonia; Milrem Robotics | ORG | Milrem Robotics; Ukraine | GPE | Ukraine"
+      1175: "Estonia | GPE | Estonia; Russia | GPE | Russia; Milrem | ORG | Milrem Robotics; Russia | GPE | Russia; Ukraine | GPE | Ukraine; NATO | ORG | NATO; Mark Rutte | PERSON | Mark Rutte"
+      1172: "Estonia | GPE | Estonia; Russia | GPE | Russia; Milrem | ORG | Milrem Robotics; GLASGOW | GPE | Glasgow; Scotland | GPE | Scotland; Russian | NORP | Russia; Estonian | NORP | Estonia; Tallinn | GPE | Tallinn"
+    # the Development is Estonia's accusation; Russia is the accused party (target)
+    roles: {Estonia: actor, Russia: target, Milrem Robotics: affected, Ukraine: subject, NATO: subject, Mark Rutte: subject}
+    principals: [Estonia]
+  D12:
+    ref: ml#25
+    items:
+      512: "Estonia | GPE | Estonia; Russia | GPE | Russia; Milrem | ORG | Milrem Robotics; Russia | GPE | Russia; Ukraine | GPE | Ukraine; NATO | ORG | NATO; Mark Rutte | PERSON | Mark Rutte"
+      490: "Estonia | GPE | Estonia; Russia | GPE | Russia; Milrem | ORG | Milrem Robotics; GLASGOW | GPE | Glasgow; Scotland | GPE | Scotland; Russian | NORP | Russia; Estonian | NORP | Estonia; Tallinn | GPE | Tallinn"
+    roles: {Estonia: actor, Russia: target, Milrem Robotics: affected, Ukraine: subject, NATO: subject, Mark Rutte: subject}
+    principals: [Estonia]
+  D13:
+    ref: en#7
+    items:
+      44: "Italy | GPE | Italy; Giorgia Meloni | PERSON | Giorgia Meloni"
+      320: "Italy | GPE | Italy; ? Italian | NORP | Italian language; Italy | GPE | Italy; ? Italian | NORP | Italian language; Rome | GPE | Rome"
+    roles: {Italy: actor, Rome: location}
+    principals: [Italy|Giorgia Meloni]
+  D14:
+    ref: en#32
+    items:
+      667: "South African | NORP | South Africa; South African | NORP | South Africa"
+      632: "South Africa | GPE | South Africa"
+      687: "South Africa | GPE | South Africa; South Africa | GPE | South Africa"
+      926: "South Africa | GPE | South Africa; South African | NORP | South Africa; Cyril Ramaphosa | PERSON | Cyril Ramaphosa"
+    # perpetrators unknown; the police are not named beyond "South African police"
+    roles: {South Africa: location, Cyril Ramaphosa: subject}
+    principals: []
+  D15:
+    ref: ml#13
+    items:
+      494: "Russia | GPE | Russia; Russia | GPE | Russia; Ukraine | GPE | Ukraine; Reuters | ORG | Reuters"
+      285: "Putin | PERSON | Vladimir Putin; Russian | NORP | Russia"
+      282: "Ukraine | GPE | Ukraine; Russian | NORP | Russia"
+    roles: {Russia: actor, Vladimir Putin: actor, Ukraine: subject, Reuters: subject}
+    principals: [Russia|Vladimir Putin]
+  D16:
+    ref: ml#17
+    items:
+      553: "Intertek USA, Inc. | ORG | Intertek USA; Chelsea | GPE | Chelsea; ? MA | GPE | Massachusetts; CBP | ORG | U.S. Customs and Border Protection; Intertek USA, Inc | ORG | Intertek USA"
+      554: "Intertek USA, Inc. | ORG | Intertek USA; Carteret | GPE | Carteret; ? NJ | GPE | New Jersey; CBP | ORG | U.S. Customs and Border Protection; Intertek USA, Inc | ORG | Intertek USA"
+    roles: {U.S. Customs and Border Protection: actor, Intertek USA: participant, Chelsea: location, Carteret: location}
+    principals: [U.S. Customs and Border Protection]
+  D17:
+    ref: en#35
+    items:
+      710: "Israel | GPE | Israel; Dutch | NORP | Netherlands; Israel | GPE | Israel; ? Western | NORP | West; West Bank | GPE | West Bank"
+      711: "Israel | GPE | Israel; Dutch | NORP | Netherlands; Ramallah | GPE | Ramallah; Israel | GPE | Israel; Dutch | NORP | Netherlands; Netherlands | GPE | Netherlands; Ramallah | GPE | Ramallah; Palestinian Authority | ORG | Palestinian Authority; Israeli | NORP | Israel; West Bank | GPE | West Bank"
+    roles: {Israel: actor, Netherlands: target, Palestinian Authority: institutional_context, West Bank: location, Ramallah: location}
+    principals: [Israel]
+  D18:
+    ref: en#45
+    items:
+      932: "US | GPE | United States; Iran | GPE | Iran; Iraq | GPE | Iraq; Najaf | GPE | Najaf; US | GPE | United States; Donald Trump | PERSON | Donald Trump; Iran | GPE | Iran; ? Shiite Muslim | NORP | Shia Islam; Iraq | GPE | Iraq"
+      952: "Iraq | GPE | Iraq; Najaf | GPE | Najaf; Iran | GPE | Iran; Tehran | GPE | Tehran; US | GPE | United States; Tehran | GPE | Tehran; UN | ORG | United Nations; US | GPE | United States; Iran | GPE | Iran"
+      1008: "Iran | GPE | Iran; Trump | PERSON | Donald Trump; Tehran | GPE | Tehran; US | GPE | United States; Trump | PERSON | Donald Trump; Iran | GPE | Iran"
+    # Development: the US grants the flight waiver; Iran/Iraq are affected (Iran's protest is reported context)
+    roles: {United States: actor, Donald Trump: actor, Iran: affected, Iraq: affected, Najaf: location, United Nations: institutional_context}
+    principals: [United States|Donald Trump]
+  D19:
+    ref: ml#4
+    items:
+      152: "US | GPE | United States; Iran | GPE | Iran; US | GPE | United States; Iranian | NORP | Iran"
+      13: "United States | GPE | United States; Iran | GPE | Iran; UN | ORG | United Nations; ? Office of the Spokesman | ORG | US State Department"
+      279: "US | GPE | United States; Russian | NORP | Russia; Iran | GPE | Iran; Russia | GPE | Russia; Hong Kong | GPE | Hong Kong; China | GPE | China; Pakistan | GPE | Pakistan; United States | GPE | United States; Tehran | GPE | Tehran; ? Operation Economic Outcast | EVENT | Operation Economic Outcast; Iran | GPE | Iran"
+    roles: {United States: actor, Iran: target, Russia: target, United Nations: institutional_context, China: subject, Pakistan: subject, Hong Kong: location}
+    principals: [United States]
+  D20:
+    ref: en#56
+    items:
+      1066: "Malaysia | GPE | Malaysia; Myanmar | GPE | Myanmar"
+      1045: "Malaysia | GPE | Malaysia; Myanmar | GPE/NORP | Myanmar; Malaysia | GPE | Malaysia; Myanmar | GPE/NORP | Myanmar"
+      1094: "Malaysia | GPE | Malaysia; Rohingya | NORP | Rohingya"
+      1116: "Malaysia | GPE | Malaysia; Rohingya | NORP | Rohingya; Malaysia | GPE | Malaysia; ? Muslim | NORP | Muslims; Myanmar | GPE | Myanmar"
+      1125: "Malaysia | GPE | Malaysia; Rohingya | NORP | Rohingya; Myanmar | GPE | Myanmar; Malaysia | GPE | Malaysia; Rohingya | NORP | Rohingya; Myanmar | GPE | Myanmar"
+    roles: {Malaysia: actor, Myanmar: affected, Rohingya: affected}
+    principals: [Malaysia]
+  D21:
+    ref: ml#15
+    items:
+      150: "Malaysia | GPE | Malaysia; Myanmar | GPE | Myanmar; UN | ORG | United Nations; Malaysia | GPE | Malaysia; Myanmar | GPE/NORP | Myanmar; UN | ORG | United Nations"
+      # roundup: "World News in Brief" is the programme name, not an entity
+      396: "Myanmar | GPE | Myanmar; Malaysia | GPE | Malaysia; Gaza | GPE | Gaza; West Bank | GPE | West Bank; UN | ORG | United Nations; Myanmar | GPE | Myanmar; Rakhine | GPE | Rakhine"
+    roles: {Malaysia: actor, Myanmar: affected, United Nations: subject}
+    principals: [Malaysia]
+  D22:
+    ref: en#16
+    items:
+      390: "US | GPE | United States; Pentagon | ORG | US Department of Defense; Anthropic | ORG | Anthropic; Anthropic | ORG | Anthropic; ? Claude | PRODUCT | Claude"
+      421: "US | GPE | United States; Pentagon | ORG | US Department of Defense; Anthropic | ORG | Anthropic; Pentagon | ORG | US Department of Defense; Anthropic | ORG | Anthropic; Donald Trump | PERSON | Donald Trump; Pete Hegseth | PERSON | Pete Hegseth; ? U.S | GPE | United States"
+      429: "DC Circuit | ORG | U.S. Court of Appeals for the D.C. Circuit; Pentagon | ORG | US Department of Defense; Anthropic | ORG | Anthropic; Pentagon | ORG | US Department of Defense; Emil Michael | PERSON | Emil Michael; AnthropicAI | ORG | Anthropic"
+    # "US court"/"US appeals court" = the D.C. Circuit; the Pentagon's blacklisting is upheld (participant)
+    roles: {U.S. Court of Appeals for the D.C. Circuit: actor, US Department of Defense: participant, Anthropic: target, United States: institutional_context, Donald Trump: subject, Pete Hegseth: subject, Emil Michael: subject}
+    principals: [U.S. Court of Appeals for the D.C. Circuit]
+  D23:
+    ref: ml#8
+    items:
+      238: "Trump | PERSON | Donald Trump; Casa Bianca | ORG/FAC | White House"
+      132: "Trump | PERSON | Donald Trump; ? Big Tech | ORG | Big Tech"
+      57: "Trump | PERSON | Donald Trump; ? big tech | ORG | Big Tech"
+      267: "Donald Trump | PERSON | Donald Trump"
+      55: "Trump | PERSON | Donald Trump; Usa | GPE | United States"
+      71: "Trump | PERSON | Donald Trump; EEUU | GPE | United States; ? Gobierno de EEUU | ORG | United States; Estados Unidos | GPE | United States; Donald Trump | PERSON | Donald Trump"
+      129: "? Big Tech | ORG | Big Tech"
+      131: "Donald Trump | PERSON | Donald Trump; Trump | PERSON | Donald Trump; ? Big Tech | ORG | Big Tech; Corte Suprema | ORG | U.S. Supreme Court"
+      48: "Trump | PERSON | Donald Trump"
+      176: "Trump | PERSON | Donald Trump; Donald Trump | PERSON | Donald Trump"
+    roles: {Donald Trump: actor, United States: institutional_context, White House: location, U.S. Supreme Court: subject}
+    principals: [Donald Trump|United States]
+  D24:
+    ref: ml#16
+    items:
+      264: "Irán | GPE | Iran"
+      75: "Irán | GPE | Iran; EEUU | GPE | United States; Irán | GPE | Iran; Estados Unidos | GPE | United States; Donald Trump | PERSON | Donald Trump; ? Teher | GPE | Tehran"
+    # an exchange between the two governments: Iran confirms receipt of the US response to its proposal
+    roles: {Iran: actor, United States: actor, Donald Trump: subject}
+    principals: [Iran, United States|Donald Trump]
+  D25:
+    ref: ml#23
+    items:
+      361: "Council | ORG | Council of the European Union; ? EU | ORG | European Union; Council | ORG | Council of the European Union; ? EU Space Threat Response Architecture | ORG | EU Space Threat Response Architecture"
+      352: "Commission | ORG | European Commission; ? EU Critical Communication System | ORG | EU Critical Communication System; European Commission | ORG | European Commission; Brussels | GPE | Brussels; European Commission | ORG | European Commission; ? EU | ORG | European Union; Europe | LOC | Europe"
+    roles: {Council of the European Union: actor, European Commission: actor, European Union: institutional_context, Brussels: location}
+    principals: [Council of the European Union, European Commission]
