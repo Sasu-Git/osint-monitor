@@ -31,7 +31,9 @@ import yaml
 
 GOLD_DIR = Path(__file__).resolve().parents[2] / "evaluations" / "entities" / "gold"
 LANGS = ("en", "it", "es")
-ROLES = ("actor", "participant", "target", "affected", "institutional_context", "subject", "location")
+ROLES = ("actor", "participant", "target", "affected", "institutional_context", "subject", "location",
+         "representative")                          # representative: gold-only (a leader speaking for `represents`)
+PRINCIPAL_ROLES = ("lead", "co_principal", "secondary", "subordinate")
 
 
 # --- gold ------------------------------------------------------------------------------------------
@@ -51,8 +53,11 @@ class GoldDevelopment:
     db: str
     items: list[dict]                               # id, source, lang, title, lead
     mentions: dict[int, list[GoldMention]]
-    roles: dict[str, str]
+    roles: dict[str, str]                           # canonical -> role; "a|b" accepts either
     principals: list[tuple[str, ...]]               # alternatives per principal
+    principal_roles: dict[str, str] = field(default_factory=dict)   # bookkeeping only, not scored
+    represents: dict[str, str] = field(default_factory=dict)        # representative -> entity it speaks for
+    roundup_items: list[int] = field(default_factory=list)
 
     @property
     def lang(self) -> str:
@@ -73,8 +78,9 @@ def verify(root: Path = GOLD_DIR) -> dict:
     return manifest
 
 
-def load_gold(root: Path = GOLD_DIR) -> tuple[list[GoldDevelopment], dict[str, set[str]]]:
-    verify(root)
+def load_gold(root: Path = GOLD_DIR, check_hashes: bool = True) -> tuple[list[GoldDevelopment], dict[str, set[str]]]:
+    if check_hashes:                                # False only for the pre-freeze audit of a revision
+        verify(root)
     gold = yaml.safe_load((root / "gold.yaml").read_text(encoding="utf-8"))
     items = json.loads((root / "items.json").read_text(encoding="utf-8"))
     names = {c: {norm(n) for n in [c, *aliases]} for c, aliases in gold["canonical_names"].items()}
@@ -89,7 +95,9 @@ def load_gold(root: Path = GOLD_DIR) -> tuple[list[GoldDevelopment], dict[str, s
                 parsed.append(GoldMention(surface, tuple(types.split("/")), canonical, optional))
             mentions[int(item_id)] = parsed
         out.append(GoldDevelopment(key, g["ref"], items[key]["db"], items[key]["items"], mentions, g.get("roles") or {},
-                                   [tuple(p.split("|")) for p in g.get("principals") or []]))
+                                   [tuple(p.split("|")) for p in g.get("principals") or []],
+                                   g.get("principal_roles") or {}, g.get("represents") or {},
+                                   list(g.get("roundup_items") or [])))
     return out, names
 
 
@@ -288,7 +296,7 @@ def score(predictions: dict, root: Path = GOLD_DIR) -> RunResult:
                           f"gold '{'|'.join(alts)}'" + ("" if n in matched_gold else f" missed (predicted {p['principals']})"))
         for canonical, role in dev.roles.items():
             got = next((r for name, r in p["roles"].items() if same_identity(name, canonical, names)), None)
-            result.record("actor_role", f"{dev.key}:{canonical}", dev.lang, dev.key, got == role,
+            result.record("actor_role", f"{dev.key}:{canonical}", dev.lang, dev.key, got in role.split("|"),
                           f"{canonical}: {got} (gold {role})")
     return result
 

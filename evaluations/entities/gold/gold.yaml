@@ -11,9 +11,20 @@
 # Entity entries per item: one string, entries separated by "; ", each "surface | TYPE | canonical". TYPE may list alternatives ("ORG/NORP"). "? " marks an optional
 # mention: detecting it or not is neither a hit nor an error. Types: PERSON, NORP, GPE (countries, cities, regions),
 # LOC (non-political places), FAC, ORG, EVENT, PRODUCT, LAW.
-# roles: canonical -> actor | participant | target | affected | institutional_context | subject | location.
-# principals: the Development's principal actors = the entities whose role is actor; "A|B" accepts either name
-# (a head of state/government speaking for the state).
+# roles: canonical -> actor | participant | target | affected | institutional_context | subject | location |
+# representative. "a|b" accepts either role. "representative" (owner revision) is a named leader/official speaking
+# for the entity given in `represents`; it is benchmark-only vocabulary the runtime does not emit.
+# principals: the Development's principal actors (lead and co-principals); "A|B" accepts either name (a head of
+# state/government speaking for the state, where the owner accepted it).
+# principal_roles (owner revision, bookkeeping, not scored): lead | co_principal | secondary | subordinate.
+# A secondary actor has role actor but is NOT a principal: predicting it as a principal is a false positive.
+# represents (bookkeeping): representative -> the entity it speaks for.
+# roundup_items (bookkeeping): items that are roundups and contribute no actor/principal evidence by themselves.
+#
+# REVISION 2 (owner-reviewed, 2026-09-30): principal/role labels corrected per
+# entity-resolution-evaluation-sheet-owner-reviewed.md (D05, D07, D10, D13, D15, D21, D24, D25). Entity mention,
+# typing and canonical-name labels are unchanged except the added "Italian government" identity. Revision 1 hashes
+# are kept in manifest.yaml under previous_revisions.
 # Accepted names exclude bare generic labels (Navy, Council, Commission, Air Force, Supreme Court, General Assembly):
 # the spec forbids them as standalone canonical identities (amended 2026-09-30 before the first benchmark run).
 
@@ -47,6 +58,7 @@ canonical_names:            # accepted names per canonical identity (resolution 
   European Union: [European Union, EU]
   European Commission: [European Commission, EU Commission]
   Council of the European Union: [Council of the European Union, Council of the EU, EU Council]
+  Italian government: [Italian government, Government of Italy, Italian cabinet, Italian Council of Ministers]
   US Department of Defense: [US Department of Defense, Department of Defense, Pentagon, Department of War, War Department, US Department of War, Defense Department, DoD]
   U.S. Navy: [U.S. Navy, US Navy, United States Navy]
   U.S. Customs and Border Protection: [U.S. Customs and Border Protection, Customs and Border Protection, CBP]
@@ -141,8 +153,11 @@ developments:
       999: "Rubio | PERSON | Marco Rubio; Saudi Arabia | GPE | Saudi Arabia; Yemen | GPE | Yemen; Hormuz Strait | LOC | Strait of Hormuz; US | GPE | United States; Saudi | NORP | Saudi Arabia; Yemen | GPE | Yemen; Houthis | ORG/NORP | Houthis"
       1150: "Iran | GPE | Iran; Houthis | ORG/NORP | Houthis; Yemen | GPE | Yemen; Iran | GPE | Iran; Houthis | ORG/NORP | Houthis; Yemen | GPE | Yemen"
     # a cluster of related reports: the Development is Saudi Arabia's allies lining up support against Houthi attacks
-    roles: {Saudi Arabia: actor, France: actor, Pakistan: actor, Turkey: actor, Houthis: actor, Iran: subject, United States: subject, Yemen: location, UN General Assembly: institutional_context, United Nations: institutional_context, Mecca Joint Defence Agreement: subject, Red Sea: location, Yanbu: location, Riyadh: location, Reuters: subject, BBC: subject}
-    principals: [Saudi Arabia, France|Emmanuel Macron, Pakistan|Shehbaz Sharif, Turkey, Houthis]
+    # owner revision: one lead principal (Saudi Arabia); France/Pakistan/Turkey are secondary actors (allies), not
+    # co-principals; the Houthis are the opposing actor or the target depending on the item's framing
+    roles: {Saudi Arabia: actor, France: actor, Pakistan: actor, Turkey: actor, Houthis: actor|target, Iran: subject, United States: subject, Yemen: location, UN General Assembly: institutional_context, United Nations: institutional_context, Mecca Joint Defence Agreement: subject, Red Sea: location, Yanbu: location, Riyadh: location, Reuters: subject, BBC: subject}
+    principals: [Saudi Arabia]
+    principal_roles: {Saudi Arabia: lead, France: secondary, Pakistan: secondary, Turkey: secondary}
   D06:
     ref: en#65
     items:
@@ -156,7 +171,9 @@ developments:
       984: "US | GPE | United States; UK | GPE | United Kingdom; ? SM-6 | PRODUCT | SM-6; ? SINKEX | EVENT | SINKEX; ? Mk 48 Advanced Capability Torpedo | PRODUCT | Mk 48 Advanced Capability Torpedo; Navy | ORG | U.S. Navy"
       1203: "USS Klakring | PRODUCT/FAC | USS Klakring; Atlantic | LOC | Atlantic Ocean; US | GPE | United States; UK | GPE | United Kingdom; ? SINKEX | EVENT | SINKEX; ? U.S | GPE | United States"
     roles: {United States: actor, United Kingdom: actor, U.S. Navy: participant, USS Klakring: target, Atlantic Ocean: location}
-    principals: [United States|U.S. Navy, United Kingdom]
+    # owner revision: state-level principals (US-UK military coordination); the Navy is a subordinate participant
+    principals: [United States, United Kingdom]
+    principal_roles: {United States: co_principal, United Kingdom: co_principal, U.S. Navy: subordinate}
   D08:
     ref: ml#12
     items:
@@ -178,8 +195,11 @@ developments:
     items:
       1013: "Argentina | GPE | Argentina; UK | GPE | United Kingdom; Falkland Islands | GPE | Falkland Islands; Javier Milei | PERSON | Javier Milei; ? Sea Lion | FAC/PRODUCT | Sea Lion oilfield"
       1092: "Argentina | GPE | Argentina; Milei | PERSON | Javier Milei; Falklands | GPE | Falkland Islands; Argentina | GPE | Argentina; UK | GPE | United Kingdom"
-    roles: {Argentina: actor, United Kingdom: target, Falkland Islands: location}
-    principals: [Argentina|Javier Milei]
+    # owner revision: the state is the principal; Milei is its representative/speaker; the UK is the target
+    roles: {Argentina: actor, United Kingdom: target, Falkland Islands: location|subject, Javier Milei: representative}
+    principals: [Argentina]
+    principal_roles: {Argentina: lead}
+    represents: {Javier Milei: Argentina}
   D11:
     ref: en#64
     items:
@@ -203,8 +223,11 @@ developments:
     items:
       44: "Italy | GPE | Italy; Giorgia Meloni | PERSON | Giorgia Meloni"
       320: "Italy | GPE | Italy; ? Italian | NORP | Italian language; Italy | GPE | Italy; ? Italian | NORP | Italian language; Rome | GPE | Rome"
-    roles: {Italy: actor, Rome: location}
-    principals: [Italy|Giorgia Meloni]
+    # owner revision: government-level identity, not the leader alone; Meloni is representative/speaker
+    roles: {Italy: actor, Rome: location, Giorgia Meloni: representative}
+    principals: [Italy|Italian government]
+    principal_roles: {Italy: lead}
+    represents: {Giorgia Meloni: Italy}
   D14:
     ref: en#32
     items:
@@ -221,7 +244,8 @@ developments:
       494: "Russia | GPE | Russia; Russia | GPE | Russia; Ukraine | GPE | Ukraine; Reuters | ORG | Reuters"
       285: "Putin | PERSON | Vladimir Putin; Russian | NORP | Russia"
       282: "Ukraine | GPE | Ukraine; Russian | NORP | Russia"
-    roles: {Russia: actor, Vladimir Putin: actor, Ukraine: subject, Reuters: subject}
+    roles: {Russia: actor, Vladimir Putin: actor|representative, Ukraine: subject, Reuters: subject}
+    represents: {Vladimir Putin: Russia}
     principals: [Russia|Vladimir Putin]
   D16:
     ref: ml#17
@@ -270,8 +294,10 @@ developments:
       150: "Malaysia | GPE | Malaysia; Myanmar | GPE | Myanmar; UN | ORG | United Nations; Malaysia | GPE | Malaysia; Myanmar | GPE/NORP | Myanmar; UN | ORG | United Nations"
       # roundup: "World News in Brief" is the programme name, not an entity
       396: "Myanmar | GPE | Myanmar; Malaysia | GPE | Malaysia; Gaza | GPE | Gaza; West Bank | GPE | West Bank; UN | ORG | United Nations; Myanmar | GPE | Myanmar; Rakhine | GPE | Rakhine"
+    # owner: the roundup item (396) contributes no actor evidence; Malaysia is established by item 150 alone
     roles: {Malaysia: actor, Myanmar: affected, United Nations: subject}
     principals: [Malaysia]
+    roundup_items: [396]
   D22:
     ref: en#16
     items:
@@ -296,18 +322,26 @@ developments:
       176: "Trump | PERSON | Donald Trump; Donald Trump | PERSON | Donald Trump"
     roles: {Donald Trump: actor, United States: institutional_context, White House: location, U.S. Supreme Court: subject}
     principals: [Donald Trump|United States]
+    # the owner accepts the state as an alternative name of this principal: Trump signs for the United States,
+    # whose own role in the item is institutional context
+    represents: {Donald Trump: United States}
   D24:
     ref: ml#16
     items:
       264: "Irán | GPE | Iran"
       75: "Irán | GPE | Iran; EEUU | GPE | United States; Irán | GPE | Iran; Estados Unidos | GPE | United States; Donald Trump | PERSON | Donald Trump; ? Teher | GPE | Tehran"
     # an exchange between the two governments: Iran confirms receipt of the US response to its proposal
-    roles: {Iran: actor, United States: actor, Donald Trump: subject}
-    principals: [Iran, United States|Donald Trump]
+    # owner sheet: principals "Iran; United States", Trump subject/representative (the Trump alternative is dropped)
+    roles: {Iran: actor, United States: actor, Donald Trump: subject|representative}
+    principals: [Iran, United States]
+    principal_roles: {Iran: co_principal, United States: co_principal}
+    represents: {Donald Trump: United States}
   D25:
     ref: ml#23
     items:
       361: "Council | ORG | Council of the European Union; ? EU | ORG | European Union; Council | ORG | Council of the European Union; ? EU Space Threat Response Architecture | ORG | EU Space Threat Response Architecture"
       352: "Commission | ORG | European Commission; ? EU Critical Communication System | ORG | EU Critical Communication System; European Commission | ORG | European Commission; Brussels | GPE | Brussels; European Commission | ORG | European Commission; ? EU | ORG | European Union; Europe | LOC | Europe"
     roles: {Council of the European Union: actor, European Commission: actor, European Union: institutional_context, Brussels: location}
+    # owner revision: scored; the Commission owns the proposal, the Council is co-principal for its adopted action
     principals: [Council of the European Union, European Commission]
+    principal_roles: {European Commission: lead, Council of the European Union: co_principal}
