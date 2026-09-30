@@ -1,0 +1,757 @@
+# Owner verdicts: set verdict to ACCEPT or to SAME_DEVELOPMENT / DIFFERENT_DEVELOPMENT / AMBIGUOUS.
+A001:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+A002:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+A003:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+A004:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+A005:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+A006:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+A007:
+  proposed: SAME_DEVELOPMENT
+  verdict: null
+  note: null
+A008:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+A009:
+  proposed: AMBIGUOUS
+  verdict: null
+  note: null
+A010:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+A011:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+A012:
+  proposed: SAME_DEVELOPMENT
+  verdict: null
+  note: null
+A013:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+A014:
+  proposed: SAME_DEVELOPMENT
+  verdict: null
+  note: null
+A015:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+A016:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+A017:
+  proposed: AMBIGUOUS
+  verdict: null
+  note: null
+A018:
+  proposed: SAME_DEVELOPMENT
+  verdict: null
+  note: null
+A019:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+A020:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+A021:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+A022:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+A023:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+A024:
+  proposed: SAME_DEVELOPMENT
+  verdict: null
+  note: null
+A025:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+A026:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+A027:
+  proposed: SAME_DEVELOPMENT
+  verdict: null
+  note: null
+A028:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+A029:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+A030:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+A031:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+A032:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+A033:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+H001:
+  proposed: SAME_DEVELOPMENT
+  verdict: null
+  note: null
+H002:
+  proposed: SAME_DEVELOPMENT
+  verdict: null
+  note: null
+H003:
+  proposed: SAME_DEVELOPMENT
+  verdict: null
+  note: null
+H004:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+H005:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+H006:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+H007:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+H008:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+H009:
+  proposed: SAME_DEVELOPMENT
+  verdict: null
+  note: null
+H010:
+  proposed: SAME_DEVELOPMENT
+  verdict: null
+  note: null
+H011:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+H012:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+H013:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+H014:
+  proposed: SAME_DEVELOPMENT
+  verdict: null
+  note: null
+H015:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+H016:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+H017:
+  proposed: SAME_DEVELOPMENT
+  verdict: null
+  note: null
+H018:
+  proposed: SAME_DEVELOPMENT
+  verdict: null
+  note: null
+H019:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+H020:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+H021:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+H022:
+  proposed: SAME_DEVELOPMENT
+  verdict: null
+  note: null
+H023:
+  proposed: AMBIGUOUS
+  verdict: null
+  note: null
+H024:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+H025:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+H026:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+H027:
+  proposed: SAME_DEVELOPMENT
+  verdict: null
+  note: null
+H028:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+H029:
+  proposed: AMBIGUOUS
+  verdict: null
+  note: null
+H030:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+B001:
+  proposed: SAME_DEVELOPMENT
+  verdict: null
+  note: null
+B002:
+  proposed: SAME_DEVELOPMENT
+  verdict: null
+  note: null
+B003:
+  proposed: SAME_DEVELOPMENT
+  verdict: null
+  note: null
+B004:
+  proposed: SAME_DEVELOPMENT
+  verdict: null
+  note: null
+B005:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+B006:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+B007:
+  proposed: SAME_DEVELOPMENT
+  verdict: null
+  note: null
+B008:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+B009:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+B010:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+B011:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C001:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C002:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C003:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C004:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C005:
+  proposed: AMBIGUOUS
+  verdict: null
+  note: null
+C006:
+  proposed: SAME_DEVELOPMENT
+  verdict: null
+  note: null
+C007:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C008:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C009:
+  proposed: SAME_DEVELOPMENT
+  verdict: null
+  note: null
+C010:
+  proposed: SAME_DEVELOPMENT
+  verdict: null
+  note: null
+C011:
+  proposed: SAME_DEVELOPMENT
+  verdict: null
+  note: null
+C012:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C013:
+  proposed: SAME_DEVELOPMENT
+  verdict: null
+  note: null
+C014:
+  proposed: SAME_DEVELOPMENT
+  verdict: null
+  note: null
+C015:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C016:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C017:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C018:
+  proposed: AMBIGUOUS
+  verdict: null
+  note: null
+C019:
+  proposed: SAME_DEVELOPMENT
+  verdict: null
+  note: null
+C020:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C021:
+  proposed: SAME_DEVELOPMENT
+  verdict: null
+  note: null
+C022:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C023:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C024:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C025:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C026:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C027:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C028:
+  proposed: SAME_DEVELOPMENT
+  verdict: null
+  note: null
+C029:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C030:
+  proposed: SAME_DEVELOPMENT
+  verdict: null
+  note: null
+C031:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C032:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C033:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C034:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C035:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C036:
+  proposed: SAME_DEVELOPMENT
+  verdict: null
+  note: null
+C037:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C038:
+  proposed: SAME_DEVELOPMENT
+  verdict: null
+  note: null
+C039:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C040:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C041:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C042:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C043:
+  proposed: SAME_DEVELOPMENT
+  verdict: null
+  note: null
+C044:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C045:
+  proposed: SAME_DEVELOPMENT
+  verdict: null
+  note: null
+C046:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C047:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C048:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C049:
+  proposed: SAME_DEVELOPMENT
+  verdict: null
+  note: null
+C050:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C051:
+  proposed: SAME_DEVELOPMENT
+  verdict: null
+  note: null
+C052:
+  proposed: SAME_DEVELOPMENT
+  verdict: null
+  note: null
+C053:
+  proposed: SAME_DEVELOPMENT
+  verdict: null
+  note: null
+C054:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C055:
+  proposed: SAME_DEVELOPMENT
+  verdict: null
+  note: null
+C056:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C057:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C058:
+  proposed: SAME_DEVELOPMENT
+  verdict: null
+  note: null
+C059:
+  proposed: SAME_DEVELOPMENT
+  verdict: null
+  note: null
+C060:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C061:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C062:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C063:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C064:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C065:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C066:
+  proposed: SAME_DEVELOPMENT
+  verdict: null
+  note: null
+C067:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C068:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C069:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C070:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C071:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C072:
+  proposed: SAME_DEVELOPMENT
+  verdict: null
+  note: null
+C073:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C074:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C075:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C076:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C077:
+  proposed: SAME_DEVELOPMENT
+  verdict: null
+  note: null
+C078:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C079:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C080:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C081:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C082:
+  proposed: AMBIGUOUS
+  verdict: null
+  note: null
+C083:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C084:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C085:
+  proposed: SAME_DEVELOPMENT
+  verdict: null
+  note: null
+C086:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C087:
+  proposed: SAME_DEVELOPMENT
+  verdict: null
+  note: null
+C088:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C089:
+  proposed: SAME_DEVELOPMENT
+  verdict: null
+  note: null
+C090:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C091:
+  proposed: SAME_DEVELOPMENT
+  verdict: null
+  note: null
+C092:
+  proposed: SAME_DEVELOPMENT
+  verdict: null
+  note: null
+C093:
+  proposed: SAME_DEVELOPMENT
+  verdict: null
+  note: null
+C094:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C095:
+  proposed: SAME_DEVELOPMENT
+  verdict: null
+  note: null
+C096:
+  proposed: SAME_DEVELOPMENT
+  verdict: null
+  note: null
+C097:
+  proposed: SAME_DEVELOPMENT
+  verdict: null
+  note: null
+C098:
+  proposed: SAME_DEVELOPMENT
+  verdict: null
+  note: null
+C099:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C100:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C101:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C102:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C103:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C104:
+  proposed: SAME_DEVELOPMENT
+  verdict: null
+  note: null
+C105:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C106:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C107:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C108:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C109:
+  proposed: SAME_DEVELOPMENT
+  verdict: null
+  note: null
+C110:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C111:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C112:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
+C113:
+  proposed: SAME_DEVELOPMENT
+  verdict: null
+  note: null
+C114:
+  proposed: SAME_DEVELOPMENT
+  verdict: null
+  note: null
+C115:
+  proposed: DIFFERENT_DEVELOPMENT
+  verdict: null
+  note: null
