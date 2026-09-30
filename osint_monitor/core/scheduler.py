@@ -203,23 +203,34 @@ def _run_analysis_job():
 def _run_alert_job():
     """Scheduled job: evaluate alert rules."""
     from osint_monitor.alerting.engine import AlertEngine
-    from osint_monitor.alerting.channels import build_channels, dispatch_alerts
+    from osint_monitor.alerting.channels import build_channels, dispatch_alerts, persist_deliveries
     from osint_monitor.core.config import load_alerts_config
     from osint_monitor.processors.pipeline import DB_WRITE_LOCK
     try:
         with DB_WRITE_LOCK:                  # writes alerts: one writer at a time with the tiers
             session = get_session()
-            engine = AlertEngine(session)
-            alerts = engine.evaluate_all(hours_back=1)
-            engine.escalate_unacknowledged()
-            session.close()
+            try:
+                engine = AlertEngine(session)
+                alerts = engine.evaluate_all(hours_back=1)
+                engine.escalate_unacknowledged()
+                for alert in alerts:
+                    session.expunge(alert)   # loaded by evaluate_all: readable after the session closes
+            finally:
+                session.close()
 
         if alerts:                           # delivery is network I/O: outside the lock
             config = load_alerts_config()
             channels = build_channels([c.model_dump() for c in config.channels])
-            dispatch_alerts(alerts, channels)
+            deliveries = dispatch_alerts(alerts, channels)
+            if deliveries:
+                with DB_WRITE_LOCK:
+                    session = get_session()
+                    try:
+                        persist_deliveries(session, deliveries)
+                    finally:
+                        session.close()
     except Exception as e:
-        logger.error(f"Alert job failed: {e}")
+        logger.error(f"Alert job failed: {e}", exc_info=True)
 
 
 def _run_daily_briefing_job():

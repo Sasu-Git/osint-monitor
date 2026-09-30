@@ -89,7 +89,7 @@ def task_generate_briefing():
 def task_evaluate_alerts():
     """Evaluate all alert rules and dispatch notifications."""
     from osint_monitor.alerting.engine import AlertEngine
-    from osint_monitor.alerting.channels import build_channels, dispatch_alerts
+    from osint_monitor.alerting.channels import build_channels, dispatch_alerts, persist_deliveries
     from osint_monitor.core.config import load_alerts_config
     from osint_monitor.core.database import get_session
 
@@ -102,7 +102,7 @@ def task_evaluate_alerts():
         if alerts:
             config = load_alerts_config()
             channels = build_channels([c.model_dump() for c in config.channels])
-            dispatch_alerts(alerts, channels)
+            persist_deliveries(session, dispatch_alerts(alerts, channels))
 
         return {"alerts_fired": len(alerts)}
     finally:
