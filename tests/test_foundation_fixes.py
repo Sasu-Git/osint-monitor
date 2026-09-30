@@ -183,3 +183,31 @@ def test_every_collector_run_is_recorded_with_its_state(tmp_path, monkeypatch, n
     assert data["Flight Route Monitor"]["state"] == "failed"
     assert "OpenSky query failed" in data["Flight Route Monitor"]["last_error"]
     assert any("Dead Feed" in line for line in status.format_status(data))
+
+
+# --- daemon observability ------------------------------------------------------------------------------
+
+def test_a_daemon_restart_after_a_long_stop_is_recorded_as_a_gap(monkeypatch):
+    from datetime import datetime, timedelta
+    from osint_monitor.core import scheduler as sched
+    monkeypatch.setattr(sched, "_intervals", {"warm": 600})
+    monkeypatch.setattr(sched, "_last_tick", {})
+    t0 = datetime(2026, 9, 30, 8, 0)
+    assert sched.check_tier_gap("warm", now=t0) is None           # first tick ever: nothing to compare
+    monkeypatch.setattr(sched, "_last_tick", {})                   # a new process: in-memory state gone
+    gap = sched.check_tier_gap("warm", now=t0 + timedelta(hours=5))
+    assert gap["kind"] == "daemon_down" and gap["seconds"] == 5 * 3600
+    assert sched.check_tier_gap("warm", now=t0 + timedelta(hours=5, minutes=10)) is None
+
+
+def test_the_daemon_log_file_receives_log_records(tmp_path):
+    import logging
+    from osint_monitor.cli import add_daemon_log_file
+    handler = add_daemon_log_file(tmp_path / "daemon.log")
+    try:
+        logging.getLogger("osint_monitor.test").warning("written to the daemon log")
+        handler.flush()
+        assert "written to the daemon log" in (tmp_path / "daemon.log").read_text(encoding="utf-8")
+    finally:
+        logging.getLogger().removeHandler(handler)
+        handler.close()
