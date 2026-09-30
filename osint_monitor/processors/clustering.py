@@ -9,6 +9,7 @@ from datetime import datetime, timedelta
 
 import hdbscan
 import numpy as np
+from sqlalchemy import func
 from sqlalchemy.orm import Session, joinedload
 
 from osint_monitor.core.config import load_event_grouping_config, load_sources_config
@@ -16,6 +17,7 @@ from osint_monitor.core.database import (
     Event, EventEntity, EventItem, ItemEntity, RawItem, Source,
 )
 from osint_monitor.core.models import ExtractedEntity, EntityType, EntityRole
+from osint_monitor.core.runs import current_run_id
 from osint_monitor.processors.embeddings import blob_to_embedding
 from osint_monitor.processors import lexical
 from osint_monitor.processors.event_grouping import NARRATIVE, STRUCTURED, group_structured, partition
@@ -447,12 +449,15 @@ def persist_clusters(session: Session, clusters: list[dict]) -> int:
                         event_id=existing_event.id,
                         item_id=item_id,
                         similarity_score=1.0,
+                        added_at=datetime.utcnow(),
+                        added_run_id=current_run_id(),
                     ))
                     new_item_ids.append(item_id)
             if new_item_ids:
                 # Re-clustering the same items is not an update: downstream stages
                 # re-classify and treat the event as fresh when this moves.
                 existing_event.last_updated_at = datetime.utcnow()
+                update_earliest_published(session, existing_event, new_item_ids)
             # Update severity and region if the new cluster has better values
             if cluster.get("severity", 0.0) > existing_event.severity:
                 existing_event.severity = cluster["severity"]
@@ -481,8 +486,12 @@ def persist_clusters(session: Session, clusters: list[dict]) -> int:
                     event_id=event.id,
                     item_id=item_id,
                     similarity_score=1.0,
+                    added_at=datetime.utcnow(),
+                    added_run_id=current_run_id(),
                 ))
             session.flush()
+
+            update_earliest_published(session, event, cluster["item_ids"])
 
             # Populate event_entities from all items in the cluster
             _populate_event_entities(session, event.id, cluster["item_ids"])
@@ -492,6 +501,15 @@ def persist_clusters(session: Session, clusters: list[dict]) -> int:
 
     session.commit()
     return created
+
+
+def update_earliest_published(session: Session, event: Event, item_ids: list[int]) -> None:
+    """Keep ``event.earliest_published_at`` = the earliest publication time among its member items."""
+    if not item_ids:
+        return
+    earliest = session.query(func.min(RawItem.published_at)).filter(RawItem.id.in_(item_ids)).scalar()
+    if earliest is not None and (event.earliest_published_at is None or earliest < event.earliest_published_at):
+        event.earliest_published_at = earliest
 
 
 def _link_claims_to_event(session: Session, event_id: int, item_ids: list[int]):

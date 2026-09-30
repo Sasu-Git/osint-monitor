@@ -22,6 +22,7 @@ from osint_monitor.core.database import (
     Event, EventItem, ItemEntity, RawItem, Source, get_session, init_db,
 )
 from osint_monitor.core.models import RawItemModel
+from osint_monitor.core.runs import current_run_id
 from osint_monitor.collectors.base import BaseCollector
 from osint_monitor.collectors.rss import NitterCollector, RSSCollector
 from osint_monitor.processors.dedup import Deduplicator, compute_content_hash
@@ -649,22 +650,34 @@ def run_tier(tier: str, db_url: str | None = None, quiet: bool = False) -> dict:
     Returns:
         Stats dict.
     """
+    from osint_monitor.core.runs import finish_run, start_run
+
     init_db(db_url)
     session = get_session(db_url)
 
     try:
         # 1. Collect this tier (concurrently with other tiers: network-bound)
+        started = datetime.utcnow()
         raw_items = run_collection_for_tier(session, tier)
 
-        # 2-3. Write phase, one tier at a time: process new items, then post-process
+        # 2-3. Write phase, one tier at a time: process new items, then post-process. The run row is
+        # written here, under the lock, so run bookkeeping never races another tier's writes.
         with DB_WRITE_LOCK:
-            proc_stats = process_new_items(session, raw_items)
-            if proc_stats.get("new_items", 0) > 0:
-                post_stats = run_post_processing(session, quiet=quiet)
-                proc_stats.update(post_stats)
-                logger.info(f"[{tier}] {proc_stats['new_items']} new items processed, post-processing complete")
-            else:
-                logger.info(f"[{tier}] No new items, skipping post-processing")
+            run, token = start_run(session, "tier", tier=tier, started_at=started)
+            proc_stats: dict = {}
+            try:
+                proc_stats = process_new_items(session, raw_items)
+                if proc_stats.get("new_items", 0) > 0:
+                    post_stats = run_post_processing(session, quiet=quiet)
+                    proc_stats.update(post_stats)
+                    logger.info(f"[{tier}] {proc_stats['new_items']} new items processed, post-processing complete")
+                else:
+                    logger.info(f"[{tier}] No new items, skipping post-processing")
+            except Exception as e:
+                session.rollback()
+                finish_run(session, run, token, proc_stats, items_collected=len(raw_items), error=e)
+                raise
+            finish_run(session, run, token, proc_stats, items_collected=len(raw_items))
 
         return proc_stats
 
@@ -696,6 +709,7 @@ def run_pipeline(db_url: str | None = None) -> dict:
     stats["collector_failures"] = failures
     try:
         # 1. Collect all tiers at once (same as before)
+        started = datetime.utcnow()
         raw_items = run_collection(session, failures)
         stats["collected"] = len(raw_items)
 
@@ -704,13 +718,21 @@ def run_pipeline(db_url: str | None = None) -> dict:
             _print_failures(failures)
             return stats
 
-        # 2. Process all items
-        proc_stats = process_new_items(session, raw_items)
-        stats.update(proc_stats)
+        from osint_monitor.core.runs import finish_run, start_run
+        run, token = start_run(session, "oneshot", started_at=started)
+        try:
+            # 2. Process all items
+            proc_stats = process_new_items(session, raw_items)
+            stats.update(proc_stats)
 
-        # 3. Post-processing
-        post_stats = run_post_processing(session)
-        stats.update(post_stats)
+            # 3. Post-processing
+            post_stats = run_post_processing(session)
+            stats.update(post_stats)
+        except Exception as e:
+            session.rollback()
+            finish_run(session, run, token, stats, items_collected=len(raw_items), error=e)
+            raise
+        finish_run(session, run, token, stats, items_collected=len(raw_items))
 
         print(f"\n--- Pipeline complete ---")
         print(f"  Collected: {stats['collected']}")
@@ -802,6 +824,7 @@ def _process_single_item(
         fetched_at=raw_item.fetched_at,
         content_hash=dedup_result["content_hash"],
         embedding=embedding_to_blob(embedding) if embedding is not None else None,
+        ingested_run_id=current_run_id(),
     )
     session.add(db_item)
     session.flush()
@@ -877,6 +900,8 @@ def _process_single_item(
         )
         if existing_event_item:
             session.add(EventItem(
+                added_at=datetime.utcnow(),
+                added_run_id=current_run_id(),
                 event_id=existing_event_item.event_id,
                 item_id=db_item.id,
                 similarity_score=dedup_result["similarity"],

@@ -84,7 +84,9 @@ def test_tiers_collect_concurrently_but_write_one_at_a_time(monkeypatch):
         with guard:
             active[name] -= 1
 
-    class FakeSession:
+    class FakeSession:               # run bookkeeping (core.runs) adds and commits the PipelineRun row
+        def add(self, obj): pass
+        def commit(self): pass
         def rollback(self): pass
         def close(self): pass
 
