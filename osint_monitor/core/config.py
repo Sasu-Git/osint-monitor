@@ -280,6 +280,23 @@ class DevelopmentSegmentationConfig(BaseModel):
 
 
 
+class LexicalGuardConfig(BaseModel):
+    """Candidate link rule (processors/lexical.py ``guard_allows``); off unless enabled."""
+    enabled: bool = False
+    max_similarity: float = 0.60        # cross-source links at or above this cosine are never vetoed
+    min_event_specific: int = 1         # shared high/medium terms a weaker link needs
+
+
+class LexicalConfig(BaseModel):
+    """Lexical identity evidence for narrative clustering (processors/lexical.py)."""
+    same_source_title_ratio: float = 90            # same outlet: headline ratio for an update link
+    generic_document_frequency: float = 0.05       # a word in >= this share of the batch is generic
+    min_documents_for_frequency: int = 30          # smaller batches use generic_terms only
+    generic_terms: list[str] = Field(default_factory=list)
+    class_weights: dict[str, float] = Field(default_factory=lambda: {"high": 1.0, "medium": 0.5, "generic": 0.1})
+    guard: LexicalGuardConfig = Field(default_factory=LexicalGuardConfig)
+
+
 class EventGroupingConfig(BaseModel):
     """Narrative vs structured item grouping (config/event_grouping.yaml)."""
     structured: StructuredSourcesConfig = Field(default_factory=StructuredSourcesConfig)
@@ -287,6 +304,7 @@ class EventGroupingConfig(BaseModel):
     strategies: dict[str, str] = Field(default_factory=dict)      # source name -> structured strategy
     seismic: SeismicFusionConfig = Field(default_factory=SeismicFusionConfig)
     development_segmentation: DevelopmentSegmentationConfig = Field(default_factory=DevelopmentSegmentationConfig)
+    lexical: LexicalConfig = Field(default_factory=LexicalConfig)
 
 
 class SituationsConfig(BaseModel):
