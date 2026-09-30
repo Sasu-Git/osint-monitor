@@ -302,7 +302,9 @@ def development_actors(items: list[dict], nlp=None, normalizer: ActorNormalizer 
         evidence.append(item_evidence(item_candidates(item_nlp, i["title"], i["lead"], normalizer,
                                                       (i.get("lang") or "en")), normalizer))
     selection = select_principals(evidence)
-    return DevelopmentActors(set(selection.keys), {k: "actor" for k in selection.keys}, selection)
+    from osint_monitor.processors.actor_roles import development_roles
+    roles = development_roles(items, normalizer).roles
+    return DevelopmentActors(set(selection.keys), roles, selection)
 
 
 def principal_keys(nlp, items: list[tuple[str, str]], normalizer: ActorNormalizer | None = None) -> set[str]:

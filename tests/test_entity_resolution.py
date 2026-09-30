@@ -199,3 +199,49 @@ def test_capitals_keep_their_identity_and_act_for_their_state(session):
     n = ActorNormalizer.load()
     assert n.surface("Kyiv") == "kyiv" and n.key("Kyiv") == "ukraine"   # role: acts for Ukraine
     assert n.key("European Commission") == "european union" and n.surface("European Commission") == "european commission"
+
+
+# --- 5. actor roles --------------------------------------------------------------------------------
+
+from osint_monitor.processors.actor_roles import development_roles  # noqa: E402
+
+
+def roles_of(title, lead="", lang="en", source=None):
+    return development_roles([{"title": title, "lead": lead, "lang": lang, "source": source}]).roles
+
+
+@pytest.mark.parametrize("title, expected", [
+    ("NATO deploys additional forces to Poland", {"nato": "actor", "poland": "affected"}),
+    ("Poland asks NATO for more forces", {"poland": "actor", "nato": "target"}),
+    ("WTO rules against US tariff measure", {"world trade organization": "actor", "united states": "target"}),
+    ("G7 agrees new sanctions on Russia", {"g7": "actor", "russia": "target"}),
+    ("Italy blocks G7 agreement", {"italy": "actor", "g7": "institutional_context"}),
+    ("UN Security Council adopts sanctions", {"un security council": "actor"}),
+])
+def test_spec_role_examples(title, expected):
+    got = roles_of(title)
+    for holder, role in expected.items():
+        assert got.get(holder) == role, (title, got)
+
+
+def test_modifiers_of_actions_act_and_places_do_not():
+    got = roles_of("Israeli forces kill Hamas commander in Gaza attack")
+    assert got["israel"] == "actor" and got["hamas"] == "target" and got["gaza"] == "location"
+    got = roles_of("Houthi attacks on Saudi Arabia test regional pact")
+    assert (got.get("houthi") or got.get("houthis")) == "actor" and got["saudi arabia"] == "target"
+
+
+def test_a_capital_acting_stands_for_its_state():
+    got = roles_of("Tallinn accuses Moscow of responsibility for the fire")
+    assert got.get("estonia") == "actor" and got.get("russia") == "target"
+
+
+def test_media_outlets_report_they_do_not_act():
+    got = roles_of("Inside Yemen's front-line city", "The BBC travels to the front line with pro-government soldiers.")
+    assert got.get("bbc") == "subject"
+
+
+@pytest.mark.skipif(not _has("es_core_news_md"), reason="Spanish model not installed")
+def test_spanish_roles_from_universal_dependencies():
+    got = roles_of("Irán confirma que recibió la respuesta oficial de EEUU a su última propuesta", lang="es")
+    assert got.get("iran") == "actor" and got.get("united states") == "actor"
