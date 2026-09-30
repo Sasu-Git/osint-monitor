@@ -276,12 +276,9 @@ def _cmd_daemon():
     print("  - Daily briefing: 06:00 UTC")
     print()
     print("Delta processing: each tier only processes NEW items.")
-    from osint_monitor.processors.nlp import format_ner_status, ner_status
-    for line in format_ner_status():
+    from osint_monitor.processors.nlp import log_ner_status
+    for line in log_ner_status():
         print(f"  {line}")
-    if not all(ok for _, ok in ner_status().values()):
-        logging.getLogger(__name__).warning("Entity extraction degraded: " + "; ".join(
-            line for line in format_ner_status() if "MISSING" in line))
     print("Post-processing (clustering, fusion, I&W) runs after any tier with new data.")
 
     try:

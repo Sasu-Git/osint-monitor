@@ -125,14 +125,25 @@ def _has(model):
     return model in spacy.util.get_installed_models()
 
 
-def test_a_missing_language_model_is_reported_not_silent(monkeypatch):
+@pytest.mark.parametrize("missing, expected", [
+    ({"it_core_news_md"}, {"en": "available", "it": "missing", "es": "available"}),
+    ({"es_core_news_md"}, {"en": "available", "it": "available", "es": "missing"}),
+    ({"en_core_web_lg"}, {"en": "fallback", "it": "available", "es": "available"}),
+    ({"en_core_web_lg", "en_core_web_sm"}, {"en": "missing", "it": "available", "es": "available"}),
+])
+def test_a_missing_language_model_is_reported_not_silent(monkeypatch, caplog, missing, expected):
     import spacy.util
-    monkeypatch.setattr(spacy.util, "is_package", lambda name: name != "it_core_news_md")
+    monkeypatch.setattr(spacy.util, "is_package", lambda name: name not in missing)
+    monkeypatch.setattr(NLP.get_settings(), "spacy_model", "en_core_web_lg")
     status = NLP.ner_status()
-    assert status["it"] == ("it_core_news_md", False) and status["es"][1] and status["en"][1]
-    lines = NLP.format_ner_status(status)
-    assert any(line.startswith("Italian NER: MISSING (it_core_news_md)") for line in lines)
-    assert any(line.startswith("Spanish NER: available") for line in lines)
+    assert {lang: state for lang, (_, state) in status.items()} == expected
+    with caplog.at_level("WARNING"):
+        lines = NLP.log_ner_status()                     # what the daemon prints at startup
+    assert "Entity extraction degraded" in caplog.text
+    names = {"en": "English", "it": "Italian", "es": "Spanish"}
+    for lang, state in expected.items():
+        word = {"available": "available", "fallback": "DEGRADED", "missing": "MISSING"}[state]
+        assert any(line.startswith(f"{names[lang]} NER: {word}") for line in lines), lines
 
 
 @pytest.mark.skipif(not _has("es_core_news_md"), reason="Spanish model not installed")

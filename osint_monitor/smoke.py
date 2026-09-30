@@ -150,15 +150,16 @@ def _run(report: _Report, db_url: str, workdir: Path) -> None:
             raise SmokeFailure("re-running migrations was not a no-op")
     report.check("Migrations", migrations)
 
-    from osint_monitor.processors.nlp import LANGUAGE_NAMES, ner_status
+    from osint_monitor.processors.nlp import AVAILABLE, LANGUAGE_NAMES, MISSING, ner_status
     status = ner_status()
-    if not status["en"][1]:
-        report.line("NER models", "FAIL", f"English model {status['en'][0]} missing")
+    if status["en"][1] == MISSING:
+        report.line("NER models", "FAIL", f"English model {status['en'][0]} missing (no fallback installed)")
         raise SmokeFailure(f"English NER model {status['en'][0]} not installed")
-    missing = [f"{LANGUAGE_NAMES[lang]} ({model})" for lang, (model, ok) in status.items() if not ok]
-    # a missing it/es model is a visible degraded state, not a failure: those items get no entities
-    report.line("NER models", "DEGRADED" if missing else "OK",
-                ("missing: " + ", ".join(missing) + " -- items in those languages get no entities") if missing
+    degraded = [f"{LANGUAGE_NAMES[lang]} ({model}: {state})" for lang, (model, state) in status.items()
+                if state != AVAILABLE]
+    # an English fallback model or a missing it/es model is a visible degraded state, not a failure
+    report.line("NER models", "DEGRADED" if degraded else "OK",
+                ("; ".join(degraded) + " -- missing languages get no entities") if degraded
                 else ", ".join(f"{LANGUAGE_NAMES[lang]}" for lang in status))
 
     session = get_session()

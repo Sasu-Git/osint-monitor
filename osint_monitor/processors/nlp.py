@@ -147,22 +147,56 @@ UD_LABEL_MAP: dict[str, EntityType | None] = {"PER": EntityType.PERSON, "ORG": E
 LANGUAGE_NAMES = {"en": "English", "it": "Italian", "es": "Spanish"}
 
 
-def ner_status() -> dict[str, tuple[str, bool]]:
-    """Language -> (model, installed) for every language with its own NER model. Checks the installed
-    packages without loading them. A missing it/es model means that language's items get no entities."""
+AVAILABLE, FALLBACK, MISSING = "available", "fallback", "missing"
+
+
+def ner_status() -> dict[str, tuple[str, str]]:
+    """Language -> (model, state) for every language with its own NER model, mirroring what the loaders do,
+    without loading anything. English: the configured model, else FALLBACK_MODEL (``get_nlp`` falls back to
+    it with lower quality), else missing (``get_nlp`` raises). it/es: installed or missing (their items then
+    get no entities, roles or principals)."""
     from spacy.util import is_package
-    models = {"en": get_settings().spacy_model, **LANGUAGE_MODELS}
-    return {lang: (model, is_package(model)) for lang, model in models.items()}
+    configured = get_settings().spacy_model
+    if is_package(configured):
+        out = {"en": (configured, AVAILABLE)}
+    elif is_package(FALLBACK_MODEL):
+        out = {"en": (FALLBACK_MODEL, FALLBACK)}
+    else:
+        out = {"en": (configured, MISSING)}
+    out.update({lang: (model, AVAILABLE if is_package(model) else MISSING) for lang, model in LANGUAGE_MODELS.items()})
+    return out
 
 
-def format_ner_status(status: dict[str, tuple[str, bool]] | None = None) -> list[str]:
-    """One line per language: "Italian NER: MISSING (it_core_news_md) ..." or "English NER: available (...)"."""
+def ner_degraded(status: dict[str, tuple[str, str]] | None = None) -> bool:
+    return any(state != AVAILABLE for _, state in (status or ner_status()).values())
+
+
+def format_ner_status(status: dict[str, tuple[str, str]] | None = None) -> list[str]:
+    """One line per language: "English NER: available (en_core_web_lg)", "Italian NER: MISSING (...) ..."."""
+    configured = get_settings().spacy_model
     lines = []
-    for lang, (model, ok) in (status or ner_status()).items():
+    for lang, (model, state) in (status or ner_status()).items():
         name = LANGUAGE_NAMES.get(lang, lang)
-        lines.append(f"{name} NER: available ({model})" if ok else
-                     f"{name} NER: MISSING ({model}) -- {lang} items get no entities, roles or principals; "
-                     f"install with: python -m spacy download {model}")
+        if state == AVAILABLE:
+            lines.append(f"{name} NER: available ({model})")
+        elif state == FALLBACK:
+            lines.append(f"{name} NER: DEGRADED ({configured} missing; using {model}, lower NER quality) -- "
+                         f"install with: python -m spacy download {configured}")
+        elif lang == "en":
+            lines.append(f"{name} NER: MISSING ({model}) -- the pipeline cannot extract entities; "
+                         f"install with: python -m spacy download {model}")
+        else:
+            lines.append(f"{name} NER: MISSING ({model}) -- {lang} items get no entities, roles or principals; "
+                         f"install with: python -m spacy download {model}")
+    return lines
+
+
+def log_ner_status() -> list[str]:
+    """The status lines, with a warning logged when any language is degraded or missing (daemon startup)."""
+    status = ner_status()
+    lines = format_ner_status(status)
+    if ner_degraded(status):
+        logger.warning("Entity extraction degraded: " + "; ".join(x for x in lines if "available" not in x))
     return lines
 
 
