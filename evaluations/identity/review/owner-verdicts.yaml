@@ -1,757 +1,1136 @@
-# Owner verdicts: set verdict to ACCEPT or to SAME_DEVELOPMENT / DIFFERENT_DEVELOPMENT / AMBIGUOUS.
+# Owner verdicts for the Development-identity review (see scripts/verdicts.py for the fields).
+# Draft labels live in draft-labels.json and are never changed. Nothing is frozen until review ends.
 A001:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 A002:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 A003:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 A004:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 A005:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 A006:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 A007:
-  proposed: SAME_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 A008:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 A009:
-  proposed: AMBIGUOUS
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 A010:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 A011:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 A012:
-  proposed: SAME_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 A013:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 A014:
-  proposed: SAME_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 A015:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 A016:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 A017:
-  proposed: AMBIGUOUS
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 A018:
-  proposed: SAME_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 A019:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 A020:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 A021:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 A022:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 A023:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 A024:
-  proposed: SAME_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 A025:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 A026:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 A027:
-  proposed: SAME_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 A028:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 A029:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 A030:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 A031:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 A032:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 A033:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
-H001:
-  proposed: SAME_DEVELOPMENT
-  verdict: null
-  note: null
-H002:
-  proposed: SAME_DEVELOPMENT
-  verdict: null
-  note: null
-H003:
-  proposed: SAME_DEVELOPMENT
-  verdict: null
-  note: null
-H004:
-  proposed: DIFFERENT_DEVELOPMENT
-  verdict: null
-  note: null
-H005:
-  proposed: DIFFERENT_DEVELOPMENT
-  verdict: null
-  note: null
-H006:
-  proposed: DIFFERENT_DEVELOPMENT
-  verdict: null
-  note: null
-H007:
-  proposed: DIFFERENT_DEVELOPMENT
-  verdict: null
-  note: null
-H008:
-  proposed: DIFFERENT_DEVELOPMENT
-  verdict: null
-  note: null
-H009:
-  proposed: SAME_DEVELOPMENT
-  verdict: null
-  note: null
-H010:
-  proposed: SAME_DEVELOPMENT
-  verdict: null
-  note: null
-H011:
-  proposed: DIFFERENT_DEVELOPMENT
-  verdict: null
-  note: null
-H012:
-  proposed: DIFFERENT_DEVELOPMENT
-  verdict: null
-  note: null
-H013:
-  proposed: DIFFERENT_DEVELOPMENT
-  verdict: null
-  note: null
-H014:
-  proposed: SAME_DEVELOPMENT
-  verdict: null
-  note: null
-H015:
-  proposed: DIFFERENT_DEVELOPMENT
-  verdict: null
-  note: null
-H016:
-  proposed: DIFFERENT_DEVELOPMENT
-  verdict: null
-  note: null
-H017:
-  proposed: SAME_DEVELOPMENT
-  verdict: null
-  note: null
-H018:
-  proposed: SAME_DEVELOPMENT
-  verdict: null
-  note: null
-H019:
-  proposed: DIFFERENT_DEVELOPMENT
-  verdict: null
-  note: null
-H020:
-  proposed: DIFFERENT_DEVELOPMENT
-  verdict: null
-  note: null
-H021:
-  proposed: DIFFERENT_DEVELOPMENT
-  verdict: null
-  note: null
-H022:
-  proposed: SAME_DEVELOPMENT
-  verdict: null
-  note: null
-H023:
-  proposed: AMBIGUOUS
-  verdict: null
-  note: null
-H024:
-  proposed: DIFFERENT_DEVELOPMENT
-  verdict: null
-  note: null
-H025:
-  proposed: DIFFERENT_DEVELOPMENT
-  verdict: null
-  note: null
-H026:
-  proposed: DIFFERENT_DEVELOPMENT
-  verdict: null
-  note: null
-H027:
-  proposed: SAME_DEVELOPMENT
-  verdict: null
-  note: null
-H028:
-  proposed: DIFFERENT_DEVELOPMENT
-  verdict: null
-  note: null
-H029:
-  proposed: AMBIGUOUS
-  verdict: null
-  note: null
-H030:
-  proposed: DIFFERENT_DEVELOPMENT
-  verdict: null
-  note: null
+  reviewed_at: null
 B001:
-  proposed: SAME_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 B002:
-  proposed: SAME_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 B003:
-  proposed: SAME_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 B004:
-  proposed: SAME_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 B005:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 B006:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 B007:
-  proposed: SAME_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 B008:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 B009:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 B010:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 B011:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C001:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C002:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C003:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C004:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C005:
-  proposed: AMBIGUOUS
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C006:
-  proposed: SAME_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C007:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C008:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C009:
-  proposed: SAME_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C010:
-  proposed: SAME_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C011:
-  proposed: SAME_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C012:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C013:
-  proposed: SAME_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C014:
-  proposed: SAME_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C015:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C016:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C017:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C018:
-  proposed: AMBIGUOUS
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C019:
-  proposed: SAME_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C020:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C021:
-  proposed: SAME_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C022:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C023:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C024:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C025:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C026:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C027:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C028:
-  proposed: SAME_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C029:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C030:
-  proposed: SAME_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C031:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C032:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C033:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C034:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C035:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C036:
-  proposed: SAME_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C037:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C038:
-  proposed: SAME_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C039:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C040:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C041:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C042:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C043:
-  proposed: SAME_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C044:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C045:
-  proposed: SAME_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C046:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C047:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C048:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C049:
-  proposed: SAME_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C050:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C051:
-  proposed: SAME_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C052:
-  proposed: SAME_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C053:
-  proposed: SAME_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C054:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C055:
-  proposed: SAME_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C056:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C057:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C058:
-  proposed: SAME_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C059:
-  proposed: SAME_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C060:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C061:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C062:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C063:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C064:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C065:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C066:
-  proposed: SAME_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C067:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C068:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C069:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C070:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C071:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C072:
-  proposed: SAME_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C073:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C074:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C075:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C076:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C077:
-  proposed: SAME_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C078:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C079:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C080:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C081:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C082:
-  proposed: AMBIGUOUS
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C083:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C084:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C085:
-  proposed: SAME_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C086:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C087:
-  proposed: SAME_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C088:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C089:
-  proposed: SAME_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C090:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C091:
-  proposed: SAME_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C092:
-  proposed: SAME_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C093:
-  proposed: SAME_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C094:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C095:
-  proposed: SAME_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C096:
-  proposed: SAME_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C097:
-  proposed: SAME_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C098:
-  proposed: SAME_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C099:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C100:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C101:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C102:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C103:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C104:
-  proposed: SAME_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C105:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C106:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C107:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C108:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C109:
-  proposed: SAME_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C110:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C111:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C112:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C113:
-  proposed: SAME_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C114:
-  proposed: SAME_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
 C115:
-  proposed: DIFFERENT_DEVELOPMENT
   verdict: null
+  confidence: null
+  boundary_reason: null
   note: null
+  reviewed_at: null
+H001:
+  verdict: null
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: null
+H002:
+  verdict: null
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: null
+H003:
+  verdict: null
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: null
+H004:
+  verdict: null
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: null
+H005:
+  verdict: null
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: null
+H006:
+  verdict: null
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: null
+H007:
+  verdict: null
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: null
+H008:
+  verdict: null
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: null
+H009:
+  verdict: null
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: null
+H010:
+  verdict: null
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: null
+H011:
+  verdict: null
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: null
+H012:
+  verdict: null
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: null
+H013:
+  verdict: null
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: null
+H014:
+  verdict: null
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: null
+H015:
+  verdict: null
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: null
+H016:
+  verdict: null
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: null
+H017:
+  verdict: null
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: null
+H018:
+  verdict: null
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: null
+H019:
+  verdict: null
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: null
+H020:
+  verdict: null
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: null
+H021:
+  verdict: null
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: null
+H022:
+  verdict: null
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: null
+H023:
+  verdict: null
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: null
+H024:
+  verdict: null
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: null
+H025:
+  verdict: null
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: null
+H026:
+  verdict: null
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: null
+H027:
+  verdict: null
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: null
+H028:
+  verdict: null
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: null
+H029:
+  verdict: null
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: null
+H030:
+  verdict: null
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: null

@@ -110,11 +110,33 @@ def main() -> int:
                 + f" · confidence {lab.get('confidence', '-')} · {lab.get('rationale', '')}",
                 "- **owner verdict:** ____", ""]
     (REVIEW / "identity-review-sheet.md").write_text("\n".join(out) + "\n", encoding="utf-8", newline="\n")
-    verdicts = {case["case"]: {"proposed": lab.get("label"), "verdict": None, "note": None}
-                for case, a, b, c, lab, *_ in rows}
-    (REVIEW / "owner-verdicts.yaml").write_text(
-        "# Owner verdicts: set verdict to ACCEPT or to SAME_DEVELOPMENT / DIFFERENT_DEVELOPMENT / AMBIGUOUS.\n"
-        + yaml.safe_dump(verdicts, sort_keys=False, allow_unicode=True), encoding="utf-8", newline="\n")
+    # structured cases for the review page (scripts/review_server.py)
+    structured = []
+    for case, a, b, c, lab, same_dev, devs, flags in rows:
+        rel = ("same Development" if same_dev else "different Developments" if a["developments"] and b["developments"]
+               else "one item in a Development" if a["developments"] or b["developments"] else "neither in a Development")
+        structured.append({
+            "case": case["case"], "window": case["window"], "split": case["split"],
+            "items": [{k: it[k] for k in ("id", "tick", "published_at", "source", "source_type", "lang", "title",
+                                         "excerpt", "places", "entities", "roundup")} for it in (a, b)],
+            "multilingual": a["lang"] != "en" or b["lang"] != "en",
+            "flags": flags,
+            "system": {"relation": rel, "same_developments": same_dev, "cosine": c.get("cosine"),
+                       "rules": c.get("rules") or [], "why": c.get("why") or [],
+                       "item_developments": [a["developments"], b["developments"]],
+                       "developments": {str(d): {"summary": dv["summary"], "items": len(dv["members"]),
+                                                 "sources": dv["sources"], "principals": dv["principals"]}
+                                        for d, dv in sorted(devs.items())}},
+            "draft": {k: lab.get(k) for k in ("label", "note", "confidence", "rationale")},
+        })
+    (REVIEW / "review-cases.json").write_text(json.dumps(structured, indent=1, ensure_ascii=False) + "\n",
+                                              encoding="utf-8", newline="\n")
+    # verdicts are the owner's: create the file once, never overwrite what is there
+    import sys
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    import verdicts as V
+    if not V.VERDICTS_FILE.exists():
+        V.save({case["case"]: V.blank() for case, *_ in rows})
     print(len(rows), "cases;", {k: len(v) for k, v in flagged.items()})
     return 0
 
