@@ -88,3 +88,27 @@ def test_seeded_aliases_resolve_directly(session):
 def test_variant_key_folds_surface_noise_only():
     assert variant_key("the U.S. Navy’s") == variant_key("US Navy")
     assert variant_key("American") != variant_key("Mexican")
+
+
+# --- 2. canonical-name / text normalisation ------------------------------------------------------
+
+from osint_monitor.processors.text_normalize import clean_name, clean_text  # noqa: E402
+
+
+@pytest.mark.parametrize("raw, clean", [("the U.S. Navy", "U.S. Navy"), ("Saudi Arabia’s", "Saudi Arabia"),
+                                        ("Jonathan McKinsey's", "Jonathan McKinsey"), ("Hamas&#039;s", "Hamas"),
+                                        ("The Hague", "The Hague"), ("U.S.", "U.S."), ("El Salvador", "El Salvador"),
+                                        ("“State of the Force”", "State of the Force")])
+def test_canonical_names_are_clean_identities(raw, clean):
+    assert clean_name(raw) == clean
+
+
+def test_ner_text_is_decoded_and_unglued_but_otherwise_as_written():
+    t = clean_text("Macron said on Thursday.Macron also said strikesRussian drones hit Hamas&#039;s ⁠base — McKinsey")
+    assert "Thursday. Macron" in t and "strikes Russian" in t and "Hamas's base" in t
+    assert "McKinsey" in t and "—" in t                           # names and dashes left alone
+
+
+def test_new_entities_get_the_clean_name_and_keep_the_raw_mention(session):
+    entity, r = resolve(session, "the U.S. Navy’s", "ORG")
+    assert entity.canonical_name == "U.S. Navy" and r.last_method == "new"

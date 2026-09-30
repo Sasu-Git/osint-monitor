@@ -122,7 +122,8 @@ def clean_canonical(name: str) -> bool:
 
 def _match(gold: list[GoldMention], predicted: list[tuple[str, str]]) -> tuple[dict[int, int], list[int]]:
     """Gold index -> predicted index (one-to-one), and unmatched predicted indexes. Exact comparison form
-    first, then containment on word boundaries ("north Gaza" / "Gaza")."""
+    first, then containment on word boundaries with at most two extra words ("north Gaza" / "Gaza"), so a
+    clause-length span does not count as detecting a name inside it."""
     pairs: dict[int, int] = {}
     free = set(range(len(predicted)))
     for exact in (True, False):
@@ -132,8 +133,11 @@ def _match(gold: list[GoldMention], predicted: list[tuple[str, str]]) -> tuple[d
             gn = norm(g.surface)
             for pi in sorted(free):
                 pn = norm(predicted[pi][0])
-                ok = pn == gn if exact else (pn and gn and (re.search(rf"\b{re.escape(gn)}\b", pn)
-                                                            or re.search(rf"\b{re.escape(pn)}\b", gn)))
+                if exact:
+                    ok = pn == gn
+                else:
+                    ok = bool(pn and gn and abs(len(pn.split()) - len(gn.split())) <= 2
+                              and (re.search(rf"\b{re.escape(gn)}\b", pn) or re.search(rf"\b{re.escape(pn)}\b", gn)))
                 if ok:
                     pairs[gi] = pi
                     free.discard(pi)
@@ -160,6 +164,7 @@ class Tally:
 class RunResult:
     units: dict[str, dict] = field(default_factory=dict)     # unit id -> {metric, lang, dev, ok, detail}
     tallies: dict[str, dict[str, Tally]] = field(default_factory=lambda: defaultdict(lambda: defaultdict(Tally)))
+    predictions: dict = field(default_factory=dict)
 
     def record(self, metric: str, unit: str, lang: str, dev: str, ok: bool, detail: str) -> None:
         self.units[f"{metric}:{unit}"] = {"metric": metric, "lang": lang, "dev": dev, "ok": bool(ok), "detail": detail}
@@ -167,7 +172,7 @@ class RunResult:
             self.tallies[metric][key].add(ok)
 
 
-def _resolver_sessions(tmp: Path):
+def _resolver_sessions(tmp: Path, root: Path):
     from sqlalchemy import create_engine
     from sqlalchemy.orm import sessionmaker
 
@@ -177,7 +182,7 @@ def _resolver_sessions(tmp: Path):
         engine = create_engine(f"sqlite:///{tmp / f'entities-{db}.db'}")
         Base.metadata.create_all(engine)
         session = sessionmaker(bind=engine)()
-        for row in json.loads((GOLD_DIR / f"entities-{db}.json").read_text(encoding="utf-8")):
+        for row in json.loads((root / f"entities-{db}.json").read_text(encoding="utf-8")):
             session.add(Entity(id=row["id"], canonical_name=row["canonical_name"], entity_type=row["entity_type"],
                                aliases=row["aliases"]))
         session.commit()
@@ -185,83 +190,103 @@ def _resolver_sessions(tmp: Path):
     return sessions
 
 
-def run(root: Path = GOLD_DIR) -> RunResult:
+def predict(root: Path = GOLD_DIR) -> dict:
+    """Run the production entry points on the frozen items. Returns every prediction (no scoring)."""
     from osint_monitor.core.models import EntityType, ExtractedEntity
     from osint_monitor.processors import principals as P
     from osint_monitor.processors.entity_resolver import EntityResolver
     from osint_monitor.processors.nlp import extract_mentions
 
-    devs, names = load_gold(root)
-    result = RunResult()
+    devs, _ = load_gold(root)
+    out: dict = {}
     with tempfile.TemporaryDirectory(prefix="osint-entity-bench-") as tmp:
-        sessions = _resolver_sessions(Path(tmp))
+        sessions = _resolver_sessions(Path(tmp), root)
         resolvers = {db: EntityResolver(s) for db, s in sessions.items()}
         for dev in devs:
             resolver = resolvers[dev.db]
+            items = {}
             for item in dev.items:
                 lang = _lang(item["lang"])
-                predicted = []
+                mentions = []
                 for field_name in ("title", "lead"):
-                    predicted += [(m.text, m.entity_type.value) for m in extract_mentions(item[field_name] or "", lang)]
-                gold = dev.mentions[item["id"]]
-                pairs, extra = _match(gold, predicted)
-                for gi, g in enumerate(gold):
-                    unit = f"{dev.key}:{item['id']}:{gi}:{g.surface}"
-                    if g.optional:
-                        continue
-                    pi = pairs.get(gi)
-                    result.record("ner_recall", unit, lang, dev.key, pi is not None,
-                                  f"'{g.surface}'" + (f" <- '{predicted[pi][0]}'" if pi is not None else " missed"))
-                    if pi is None:
-                        continue
-                    ptype = predicted[pi][1]
-                    result.record("typing", unit, lang, dev.key, ptype in g.types,
-                                  f"'{g.surface}' {ptype} (gold {'/'.join(g.types)})")
-                    try:
-                        etype = EntityType(ptype)
-                    except ValueError:
-                        etype = EntityType.ORG
-                    entity = resolver.resolve(ExtractedEntity(text=predicted[pi][0], entity_type=etype))
-                    method = getattr(resolver, "last_method", None) or "-"
-                    ok = same_identity(entity.canonical_name if entity else None, g.canonical, names)
-                    result.record("resolution", unit, lang, dev.key, ok,
-                                  f"'{predicted[pi][0]}' -> '{entity.canonical_name if entity else None}' [{method}] "
-                                  f"(gold {g.canonical})")
-                    if entity is not None:
-                        result.record("canonical_hygiene", unit, lang, dev.key, clean_canonical(entity.canonical_name),
-                                      f"canonical '{entity.canonical_name}'")
-                matched_pred = set(pairs.values())
-                optional_pred = {pi for gi, pi in pairs.items() if gold[gi].optional}
-                for pi, (surface, ptype) in enumerate(predicted):
-                    if pi in optional_pred:
-                        continue
-                    result.record("ner_precision", f"{dev.key}:{item['id']}:p{pi}:{surface}", lang, dev.key,
-                                  pi in matched_pred, f"'{surface}' {ptype}" + ("" if pi in matched_pred else " (not in gold)"))
+                    for m in extract_mentions(item[field_name] or "", lang):
+                        try:
+                            etype = EntityType(m.entity_type.value)
+                        except ValueError:
+                            etype = EntityType.ORG
+                        entity = resolver.resolve(ExtractedEntity(text=m.text, entity_type=etype,
+                                                                  canonical_name=m.canonical_name))
+                        mentions.append({"field": field_name, "text": m.text, "type": m.entity_type.value,
+                                         "canonical": entity.canonical_name if entity else None,
+                                         "method": getattr(resolver, "last_method", None),
+                                         "evidence": getattr(resolver, "last_evidence", None)})
+                items[str(item["id"])] = mentions
             sessions[dev.db].commit()
-
             actors = P.development_actors([{"title": i["title"] or "", "lead": i["lead"] or "", "lang": _lang(i["lang"]),
                                             "source": i["source"]} for i in dev.items])
-            predicted_principals = sorted(actors.principals)
-            matched_gold = set()
-            for name in predicted_principals:
-                hit = next((n for n, alts in enumerate(dev.principals) if n not in matched_gold
-                            and any(same_identity(name, a, names) for a in alts)), None)
-                if hit is not None:
-                    matched_gold.add(hit)
-                result.record("principal_precision", f"{dev.key}:{name}", dev.lang, dev.key, hit is not None,
-                              f"predicted '{name}'" + ("" if hit is not None else " (not a gold principal)"))
-            for n, alts in enumerate(dev.principals):
-                result.record("principal_recall", f"{dev.key}:{alts[0]}", dev.lang, dev.key, n in matched_gold,
-                              f"gold '{'|'.join(alts)}'" + ("" if n in matched_gold else f" missed (predicted {predicted_principals})"))
-            for canonical, role in dev.roles.items():
-                got = next((r for name, r in actors.roles.items() if same_identity(name, canonical, names)), None)
-                result.record("actor_role", f"{dev.key}:{canonical}", dev.lang, dev.key, got == role,
-                              f"{canonical}: {got} (gold {role})")
+            out[dev.key] = {"items": items, "principals": sorted(actors.principals), "roles": dict(actors.roles)}
         for s in sessions.values():
             engine = s.get_bind()
             s.close()
             engine.dispose()
+    return out
+
+
+def score(predictions: dict, root: Path = GOLD_DIR) -> RunResult:
+    devs, names = load_gold(root)
+    result = RunResult(predictions=predictions)
+    for dev in devs:
+        p = predictions[dev.key]
+        for item in dev.items:
+            lang = _lang(item["lang"])
+            mentions = p["items"][str(item["id"])]
+            predicted = [(m["text"], m["type"]) for m in mentions]
+            gold = dev.mentions[item["id"]]
+            pairs, _ = _match(gold, predicted)
+            for gi, g in enumerate(gold):
+                if g.optional:
+                    continue
+                unit = f"{dev.key}:{item['id']}:{gi}:{g.surface}"
+                pi = pairs.get(gi)
+                result.record("ner_recall", unit, lang, dev.key, pi is not None,
+                              f"'{g.surface}'" + (f" <- '{predicted[pi][0]}'" if pi is not None else " missed"))
+                if pi is None:
+                    continue
+                m = mentions[pi]
+                result.record("typing", unit, lang, dev.key, m["type"] in g.types,
+                              f"'{g.surface}' {m['type']} (gold {'/'.join(g.types)})")
+                result.record("resolution", unit, lang, dev.key, same_identity(m["canonical"], g.canonical, names),
+                              f"'{m['text']}' -> '{m['canonical']}' [{m['method'] or '-'}] (gold {g.canonical})")
+                if m["canonical"]:
+                    result.record("canonical_hygiene", unit, lang, dev.key, clean_canonical(m["canonical"]),
+                                  f"canonical '{m['canonical']}'")
+            matched = set(pairs.values())
+            optional = {pi for gi, pi in pairs.items() if gold[gi].optional}
+            for pi, (surface, ptype) in enumerate(predicted):
+                if pi in optional:
+                    continue
+                result.record("ner_precision", f"{dev.key}:{item['id']}:p{pi}:{surface}", lang, dev.key, pi in matched,
+                              f"'{surface}' {ptype}" + ("" if pi in matched else " (not in gold)"))
+        matched_gold = set()
+        for name in p["principals"]:
+            hit = next((n for n, alts in enumerate(dev.principals) if n not in matched_gold
+                        and any(same_identity(name, a, names) for a in alts)), None)
+            if hit is not None:
+                matched_gold.add(hit)
+            result.record("principal_precision", f"{dev.key}:{name}", dev.lang, dev.key, hit is not None,
+                          f"predicted '{name}'" + ("" if hit is not None else " (not a gold principal)"))
+        for n, alts in enumerate(dev.principals):
+            result.record("principal_recall", f"{dev.key}:{alts[0]}", dev.lang, dev.key, n in matched_gold,
+                          f"gold '{'|'.join(alts)}'" + ("" if n in matched_gold else f" missed (predicted {p['principals']})"))
+        for canonical, role in dev.roles.items():
+            got = next((r for name, r in p["roles"].items() if same_identity(name, canonical, names)), None)
+            result.record("actor_role", f"{dev.key}:{canonical}", dev.lang, dev.key, got == role,
+                          f"{canonical}: {got} (gold {role})")
     return result
+
+
+def run(root: Path = GOLD_DIR) -> RunResult:
+    return score(predict(root), root)
 
 
 # --- reporting ------------------------------------------------------------------------------------
@@ -296,7 +321,7 @@ def format_summary(s: dict) -> str:
 
 
 def to_json(result: RunResult) -> dict:
-    return {"summary": summary(result), "units": result.units}
+    return {"summary": summary(result), "units": result.units, "predictions": result.predictions}
 
 
 def diff(before: dict, after: dict) -> dict:

@@ -86,6 +86,7 @@ def main():
                                   "instead of the link-rule variants")
     sub_inspect.add_argument("--json", action="store_true", help="sources: print the inventory as JSON")
     sub_inspect.add_argument("--compare", default=None, help="entity-benchmark: diff against a saved run (JSON)")
+    sub_inspect.add_argument("--rescore", default=None, help="entity-benchmark: score a saved run's predictions again")
     sub_inspect.add_argument("--active-only", action="store_true", help="sources: list only endpoints with stored items")
     sub_inspect.add_argument("--since", default="24h",
                              help="sources: recent-activity window, e.g. 24h, 7d (default 24h)")
@@ -575,7 +576,11 @@ def _cmd_inspect_entity_benchmark(args):
 
     from osint_monitor.benchmark import entities as eb
 
-    data = eb.to_json(eb.run())
+    if args.rescore:
+        with open(args.rescore, encoding="utf-8") as f:
+            data = eb.to_json(eb.score(json.load(f)["predictions"]))    # saved predictions, current scoring
+    else:
+        data = eb.to_json(eb.run())
     print(eb.format_summary(data["summary"]))
     if args.compare:
         with open(args.compare, encoding="utf-8") as f:

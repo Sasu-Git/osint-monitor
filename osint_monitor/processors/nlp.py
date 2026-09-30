@@ -135,8 +135,9 @@ def _add_entity_ruler(nlp: Language):
 
 def extract_entities(text: str) -> list[ExtractedEntity]:
     """Extract named entities from text."""
+    from osint_monitor.processors.text_normalize import clean_name, clean_text
     nlp = get_nlp()
-    doc = nlp(text[:10000])  # limit input size
+    doc = nlp(clean_text(text)[:10000])  # limit input size
 
     entities: list[ExtractedEntity] = []
     seen: set[str] = set()
@@ -145,8 +146,11 @@ def extract_entities(text: str) -> list[ExtractedEntity]:
         etype = SPACY_LABEL_MAP.get(ent.label_)
         if etype is None:
             continue
+        name = clean_name(ent.text)
+        if not name:
+            continue
 
-        key = f"{ent.text.lower()}:{etype}"
+        key = f"{name.lower()}:{etype}"
         if key in seen:
             continue
         seen.add(key)
@@ -154,10 +158,11 @@ def extract_entities(text: str) -> list[ExtractedEntity]:
         role = EntityRole.LOCATION if etype in (EntityType.GPE, EntityType.LOC, EntityType.FAC) else EntityRole.SUBJECT
 
         entities.append(ExtractedEntity(
-            text=ent.text,
+            text=ent.text,                 # the mention as written (after text cleaning)
             entity_type=etype,
             role=role,
             confidence=1.0,
+            canonical_name=name,           # the clean name an entity created from it gets
         ))
 
     return entities

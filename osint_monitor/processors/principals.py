@@ -48,6 +48,7 @@ from sqlalchemy.orm import Session, joinedload
 from osint_monitor.core.database import Entity, Event, EventEntity, EventItem, RawItem
 from osint_monitor.processors.actors import ActorNormalizer
 from osint_monitor.processors.geography import Gazetteer
+from osint_monitor.processors.text_normalize import clean_text
 
 logger = logging.getLogger(__name__)
 
@@ -190,7 +191,7 @@ def item_candidates(nlp, title: str, lead: str = "", normalizer: ActorNormalizer
     out = []
     for fld, text in (("title", title), ("lead", lead)):
         if text:
-            spans = list(_spans(nlp(text[:500]), normalizer))
+            spans = list(_spans(nlp(clean_text(text)[:500]), normalizer))
             actor_tokens = {i for sp in spans for i in range(sp.start, sp.end)}
             for sp in spans:
                 why = rejection(sp, normalizer)

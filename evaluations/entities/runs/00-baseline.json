@@ -2,25 +2,25 @@
  "summary": {
   "ner_precision": {
    "all": {
-    "hit": 374,
-    "total": 429
+    "hit": 370,
+    "total": 431
    },
    "en": {
     "hit": 354,
-    "total": 362
+    "total": 363
    },
    "es": {
-    "hit": 11,
+    "hit": 8,
     "total": 40
    },
    "it": {
-    "hit": 9,
-    "total": 27
+    "hit": 8,
+    "total": 28
    }
   },
   "ner_recall": {
    "all": {
-    "hit": 374,
+    "hit": 370,
     "total": 392
    },
    "en": {
@@ -28,18 +28,18 @@
     "total": 369
    },
    "es": {
-    "hit": 11,
+    "hit": 8,
     "total": 13
    },
    "it": {
-    "hit": 9,
+    "hit": 8,
     "total": 10
    }
   },
   "typing": {
    "all": {
-    "hit": 342,
-    "total": 374
+    "hit": 341,
+    "total": 370
    },
    "en": {
     "hit": 335,
@@ -47,17 +47,17 @@
    },
    "es": {
     "hit": 4,
-    "total": 11
+    "total": 8
    },
    "it": {
-    "hit": 3,
-    "total": 9
+    "hit": 2,
+    "total": 8
    }
   },
   "resolution": {
    "all": {
     "hit": 340,
-    "total": 374
+    "total": 370
    },
    "en": {
     "hit": 334,
@@ -65,29 +65,29 @@
    },
    "es": {
     "hit": 0,
-    "total": 11
+    "total": 8
    },
    "it": {
     "hit": 6,
-    "total": 9
+    "total": 8
    }
   },
   "canonical_hygiene": {
    "all": {
-    "hit": 358,
-    "total": 374
+    "hit": 354,
+    "total": 370
    },
    "en": {
     "hit": 338,
     "total": 354
    },
    "es": {
-    "hit": 11,
-    "total": 11
+    "hit": 8,
+    "total": 8
    },
    "it": {
-    "hit": 9,
-    "total": 9
+    "hit": 8,
+    "total": 8
    }
   },
   "principal_precision": {
@@ -14269,29 +14269,8 @@
    "metric": "ner_recall",
    "lang": "it",
    "dev": "D23",
-   "ok": true,
-   "detail": "'Donald Trump' <- 'Donald Trump e la nuova'"
-  },
-  "typing:D23:131:0:Donald Trump": {
-   "metric": "typing",
-   "lang": "it",
-   "dev": "D23",
-   "ok": true,
-   "detail": "'Donald Trump' PERSON (gold PERSON)"
-  },
-  "resolution:D23:131:0:Donald Trump": {
-   "metric": "resolution",
-   "lang": "it",
-   "dev": "D23",
    "ok": false,
-   "detail": "'Donald Trump e la nuova' -> 'Donald Trump e la nuova' [-] (gold Donald Trump)"
-  },
-  "canonical_hygiene:D23:131:0:Donald Trump": {
-   "metric": "canonical_hygiene",
-   "lang": "it",
-   "dev": "D23",
-   "ok": true,
-   "detail": "canonical 'Donald Trump e la nuova'"
+   "detail": "'Donald Trump' missed"
   },
   "ner_recall:D23:131:1:Trump": {
    "metric": "ner_recall",
@@ -14353,8 +14332,8 @@
    "metric": "ner_precision",
    "lang": "it",
    "dev": "D23",
-   "ok": true,
-   "detail": "'Donald Trump e la nuova' PERSON"
+   "ok": false,
+   "detail": "'Donald Trump e la nuova' PERSON (not in gold)"
   },
   "ner_precision:D23:131:p1:età": {
    "metric": "ner_precision",
@@ -14369,6 +14348,13 @@
    "dev": "D23",
    "ok": true,
    "detail": "'Trump' ORG"
+  },
+  "ner_precision:D23:131:p3:del Big Tech tra progetti sull'AI": {
+   "metric": "ner_precision",
+   "lang": "it",
+   "dev": "D23",
+   "ok": false,
+   "detail": "'del Big Tech tra progetti sull'AI' ORG (not in gold)"
   },
   "ner_precision:D23:131:p4:Suprema": {
    "metric": "ner_precision",
@@ -14459,63 +14445,42 @@
    "lang": "es",
    "dev": "D23",
    "ok": true,
-   "detail": "'Trump' <- 'Trump y los gigantes de la'"
+   "detail": "'Trump' <- 'El presidente Donald Trump'"
   },
   "typing:D23:176:0:Trump": {
    "metric": "typing",
    "lang": "es",
    "dev": "D23",
-   "ok": false,
-   "detail": "'Trump' ORG (gold PERSON)"
+   "ok": true,
+   "detail": "'Trump' PERSON (gold PERSON)"
   },
   "resolution:D23:176:0:Trump": {
    "metric": "resolution",
    "lang": "es",
    "dev": "D23",
    "ok": false,
-   "detail": "'Trump y los gigantes de la' -> 'Trump y los gigantes de la' [-] (gold Donald Trump)"
+   "detail": "'El presidente Donald Trump' -> 'El presidente Donald Trump' [-] (gold Donald Trump)"
   },
   "canonical_hygiene:D23:176:0:Trump": {
    "metric": "canonical_hygiene",
    "lang": "es",
    "dev": "D23",
    "ok": true,
-   "detail": "canonical 'Trump y los gigantes de la'"
+   "detail": "canonical 'El presidente Donald Trump'"
   },
   "ner_recall:D23:176:1:Donald Trump": {
    "metric": "ner_recall",
    "lang": "es",
    "dev": "D23",
-   "ok": true,
-   "detail": "'Donald Trump' <- 'El presidente Donald Trump'"
-  },
-  "typing:D23:176:1:Donald Trump": {
-   "metric": "typing",
-   "lang": "es",
-   "dev": "D23",
-   "ok": true,
-   "detail": "'Donald Trump' PERSON (gold PERSON)"
-  },
-  "resolution:D23:176:1:Donald Trump": {
-   "metric": "resolution",
-   "lang": "es",
-   "dev": "D23",
    "ok": false,
-   "detail": "'El presidente Donald Trump' -> 'El presidente Donald Trump' [-] (gold Donald Trump)"
-  },
-  "canonical_hygiene:D23:176:1:Donald Trump": {
-   "metric": "canonical_hygiene",
-   "lang": "es",
-   "dev": "D23",
-   "ok": true,
-   "detail": "canonical 'El presidente Donald Trump'"
+   "detail": "'Donald Trump' missed"
   },
   "ner_precision:D23:176:p0:Trump y los gigantes de la": {
    "metric": "ner_precision",
    "lang": "es",
    "dev": "D23",
-   "ok": true,
-   "detail": "'Trump y los gigantes de la' ORG"
+   "ok": false,
+   "detail": "'Trump y los gigantes de la' ORG (not in gold)"
   },
   "ner_precision:D23:176:p1:sellan un acuerdo": {
    "metric": "ner_precision",
@@ -14598,29 +14563,8 @@
    "metric": "ner_recall",
    "lang": "es",
    "dev": "D24",
-   "ok": true,
-   "detail": "'Irán' <- 'la moneda de Irán se hunde en un'"
-  },
-  "typing:D24:264:0:Irán": {
-   "metric": "typing",
-   "lang": "es",
-   "dev": "D24",
    "ok": false,
-   "detail": "'Irán' ORG (gold GPE)"
-  },
-  "resolution:D24:264:0:Irán": {
-   "metric": "resolution",
-   "lang": "es",
-   "dev": "D24",
-   "ok": false,
-   "detail": "'la moneda de Irán se hunde en un' -> 'la moneda de Irán se hunde' [-] (gold Iran)"
-  },
-  "canonical_hygiene:D24:264:0:Irán": {
-   "metric": "canonical_hygiene",
-   "lang": "es",
-   "dev": "D24",
-   "ok": true,
-   "detail": "canonical 'la moneda de Irán se hunde'"
+   "detail": "'Irán' missed"
   },
   "ner_precision:D24:264:p0:Por la guerra y la incertidumbre económica": {
    "metric": "ner_precision",
@@ -14633,8 +14577,8 @@
    "metric": "ner_precision",
    "lang": "es",
    "dev": "D24",
-   "ok": true,
-   "detail": "'la moneda de Irán se hunde en un' ORG"
+   "ok": false,
+   "detail": "'la moneda de Irán se hunde en un' ORG (not in gold)"
   },
   "ner_precision:D24:264:p2:Las": {
    "metric": "ner_precision",
@@ -14661,29 +14605,8 @@
    "metric": "ner_recall",
    "lang": "es",
    "dev": "D24",
-   "ok": true,
-   "detail": "'Irán' <- 'El Gobierno de Irán ha'"
-  },
-  "typing:D24:75:0:Irán": {
-   "metric": "typing",
-   "lang": "es",
-   "dev": "D24",
    "ok": false,
-   "detail": "'Irán' ORG (gold GPE)"
-  },
-  "resolution:D24:75:0:Irán": {
-   "metric": "resolution",
-   "lang": "es",
-   "dev": "D24",
-   "ok": false,
-   "detail": "'El Gobierno de Irán ha' -> 'El Gobierno de Irán ha' [-] (gold Iran)"
-  },
-  "canonical_hygiene:D24:75:0:Irán": {
-   "metric": "canonical_hygiene",
-   "lang": "es",
-   "dev": "D24",
-   "ok": true,
-   "detail": "canonical 'El Gobierno de Irán ha'"
+   "detail": "'Irán' missed"
   },
   "ner_recall:D24:75:1:EEUU": {
    "metric": "ner_recall",
@@ -14801,8 +14724,8 @@
    "metric": "ner_precision",
    "lang": "es",
    "dev": "D24",
-   "ok": true,
-   "detail": "'El Gobierno de Irán ha' ORG"
+   "ok": false,
+   "detail": "'El Gobierno de Irán ha' ORG (not in gold)"
   },
   "ner_precision:D24:75:p4:oficial de Estados Unidos": {
    "metric": "ner_precision",
@@ -15098,6 +15021,13 @@
    "ok": true,
    "detail": "'the European Commission' ORG"
   },
+  "ner_precision:D25:352:p4:EU Critical Communication System": {
+   "metric": "ner_precision",
+   "lang": "en",
+   "dev": "D25",
+   "ok": false,
+   "detail": "'EU Critical Communication System' ORG (not in gold)"
+  },
   "ner_precision:D25:352:p5:Europe": {
    "metric": "ner_precision",
    "lang": "en",
@@ -15160,6 +15090,4204 @@
    "dev": "D25",
    "ok": false,
    "detail": "Brussels: None (gold location)"
+  }
+ },
+ "predictions": {
+  "D01": {
+   "items": {
+    "1012": [
+     {
+      "field": "title",
+      "text": "Spanish",
+      "type": "NORP",
+      "canonical": "Spanish",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Maricarmen Abascal",
+      "type": "PRODUCT",
+      "canonical": "Maricarmen Abascal",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Spain",
+      "type": "GPE",
+      "canonical": "Spain",
+      "method": null,
+      "evidence": null
+     }
+    ],
+    "1124": [
+     {
+      "field": "title",
+      "text": "Spain",
+      "type": "GPE",
+      "canonical": "Spain",
+      "method": null,
+      "evidence": null
+     }
+    ],
+    "1316": [
+     {
+      "field": "title",
+      "text": "Spain",
+      "type": "GPE",
+      "canonical": "Spain",
+      "method": null,
+      "evidence": null
+     }
+    ],
+    "1200": [
+     {
+      "field": "title",
+      "text": "Spain",
+      "type": "GPE",
+      "canonical": "Spain",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Spain",
+      "type": "GPE",
+      "canonical": "Spain",
+      "method": null,
+      "evidence": null
+     }
+    ],
+    "1213": [
+     {
+      "field": "title",
+      "text": "Madrid",
+      "type": "GPE",
+      "canonical": "Madrid",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Spain",
+      "type": "GPE",
+      "canonical": "Spain",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Spain",
+      "type": "GPE",
+      "canonical": "Spain",
+      "method": null,
+      "evidence": null
+     }
+    ],
+    "1233": [
+     {
+      "field": "title",
+      "text": "Spain",
+      "type": "GPE",
+      "canonical": "Spain",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Madrid",
+      "type": "GPE",
+      "canonical": "Madrid",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Spain&#039;s",
+      "type": "NORP",
+      "canonical": "Spain&#039;s",
+      "method": null,
+      "evidence": null
+     }
+    ]
+   },
+   "principals": [
+    "spain"
+   ],
+   "roles": {
+    "spain": "actor"
+   }
+  },
+  "D02": {
+   "items": {
+    "1181": [
+     {
+      "field": "title",
+      "text": "Will Hegseth",
+      "type": "PERSON",
+      "canonical": "Will Hegseth",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Defense",
+      "type": "ORG",
+      "canonical": "Defense",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Pete Hegseth",
+      "type": "PERSON",
+      "canonical": "Pete Hegseth",
+      "method": null,
+      "evidence": null
+     }
+    ],
+    "1247": [
+     {
+      "field": "title",
+      "text": "Hegseth",
+      "type": "PERSON",
+      "canonical": "Hegseth",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "US",
+      "type": "GPE",
+      "canonical": "America",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Pentagon",
+      "type": "ORG",
+      "canonical": "the Department of Defense",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "secretary&#039;s &#039;State",
+      "type": "ORG",
+      "canonical": "secretary&#039;s &#039;State",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Virginia",
+      "type": "GPE",
+      "canonical": "Virginia",
+      "method": null,
+      "evidence": null
+     }
+    ]
+   },
+   "principals": [
+    "defense",
+    "united states"
+   ],
+   "roles": {
+    "defense": "actor",
+    "united states": "actor"
+   }
+  },
+  "D03": {
+   "items": {
+    "507": [
+     {
+      "field": "title",
+      "text": "Boeing",
+      "type": "ORG",
+      "canonical": "Boeing",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Navy",
+      "type": "ORG",
+      "canonical": "Navy",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "F/A-XX",
+      "type": "PRODUCT",
+      "canonical": "F/A-XX",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "American",
+      "type": "NORP",
+      "canonical": "Mexican",
+      "method": null,
+      "evidence": null
+     }
+    ],
+    "2": [
+     {
+      "field": "title",
+      "text": "Department of War",
+      "type": "ORG",
+      "canonical": "Department of War",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "U.S. Navy Award Contract",
+      "type": "ORG",
+      "canonical": "U.S. Navy Award Contract",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "The War Department",
+      "type": "ORG",
+      "canonical": "The War Department",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "U.S",
+      "type": "GPE",
+      "canonical": "U.S.",
+      "method": null,
+      "evidence": null
+     }
+    ],
+    "487": [
+     {
+      "field": "title",
+      "text": "US Navy",
+      "type": "ORG",
+      "canonical": "the U.S. Navy",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Boeing",
+      "type": "ORG",
+      "canonical": "Boeing",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "F",
+      "type": "PRODUCT",
+      "canonical": "F",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Boeing",
+      "type": "ORG",
+      "canonical": "Boeing",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Navy",
+      "type": "ORG",
+      "canonical": "Navy",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "F/A-XX",
+      "type": "PRODUCT",
+      "canonical": "F/A-XX",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Northrop Grumman",
+      "type": "ORG",
+      "canonical": "Northrop Grumman",
+      "method": null,
+      "evidence": null
+     }
+    ]
+   },
+   "principals": [
+    "boeing",
+    "navy",
+    "united states"
+   ],
+   "roles": {
+    "boeing": "actor",
+    "united states": "actor",
+    "navy": "actor"
+   }
+  },
+  "D04": {
+   "items": {
+    "92": [
+     {
+      "field": "title",
+      "text": "Alaska",
+      "type": "GPE",
+      "canonical": "Alaska",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Fat Bear Week",
+      "type": "ORG",
+      "canonical": "Fat Bear Week",
+      "method": null,
+      "evidence": null
+     }
+    ],
+    "199": [
+     {
+      "field": "title",
+      "text": "Alaska",
+      "type": "GPE",
+      "canonical": "Alaska",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Fat Bear Week",
+      "type": "ORG",
+      "canonical": "Fat Bear Week",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "the Alaska Peninsula",
+      "type": "LOC",
+      "canonical": "the Alaska Peninsula",
+      "method": null,
+      "evidence": null
+     }
+    ]
+   },
+   "principals": [
+    "fat bear week"
+   ],
+   "roles": {
+    "fat bear week": "actor"
+   }
+  },
+  "D05": {
+   "items": {
+    "72": [
+     {
+      "field": "title",
+      "text": "Saudi",
+      "type": "NORP",
+      "canonical": "Saudi",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Turkish",
+      "type": "NORP",
+      "canonical": "Turkish",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Pakistani",
+      "type": "NORP",
+      "canonical": "Pakistani",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Yemen",
+      "type": "GPE",
+      "canonical": "Yemen",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Saudi Arabia",
+      "type": "GPE",
+      "canonical": "Saudi Arabia",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Turkiye",
+      "type": "GPE",
+      "canonical": "Turkiye",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Pakistan",
+      "type": "GPE",
+      "canonical": "Pakistani",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Houthi",
+      "type": "ORG",
+      "canonical": "Houthis",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Yemen",
+      "type": "GPE",
+      "canonical": "Yemen",
+      "method": null,
+      "evidence": null
+     }
+    ],
+    "110": [
+     {
+      "field": "title",
+      "text": "France",
+      "type": "GPE",
+      "canonical": "France",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Saudi",
+      "type": "NORP",
+      "canonical": "Saudi",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Houthis",
+      "type": "ORG",
+      "canonical": "Houthis",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Emmanuel Macron",
+      "type": "PERSON",
+      "canonical": "Emmanuel Macron",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "France",
+      "type": "GPE",
+      "canonical": "France",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Saudi Arabia",
+      "type": "GPE",
+      "canonical": "Saudi Arabia",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Iran",
+      "type": "GPE",
+      "canonical": "Iran",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Houthi militia",
+      "type": "ORG",
+      "canonical": "Houthi militia",
+      "method": null,
+      "evidence": null
+     }
+    ],
+    "57": [
+     {
+      "field": "title",
+      "text": "Saudi Arabia",
+      "type": "GPE",
+      "canonical": "Saudi Arabia",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Houthi",
+      "type": "ORG",
+      "canonical": "Houthis",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "France",
+      "type": "GPE",
+      "canonical": "France",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Yanbu",
+      "type": "GPE",
+      "canonical": "Yanbu",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Pakistan",
+      "type": "GPE",
+      "canonical": "Pakistani",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Turkiye",
+      "type": "GPE",
+      "canonical": "Turkiye",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Riyadh",
+      "type": "GPE",
+      "canonical": "Riyadh",
+      "method": null,
+      "evidence": null
+     }
+    ],
+    "325": [
+     {
+      "field": "title",
+      "text": "France",
+      "type": "GPE",
+      "canonical": "France",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Saudi Arabia",
+      "type": "GPE",
+      "canonical": "Saudi Arabia",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Red Sea",
+      "type": "LOC",
+      "canonical": "Red Sea",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Macron",
+      "type": "ORG",
+      "canonical": "Macron",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "PARIS",
+      "type": "GPE",
+      "canonical": "Paris",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Reuters",
+      "type": "ORG",
+      "canonical": "Reuters",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "France",
+      "type": "GPE",
+      "canonical": "France",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Saudi Arabia",
+      "type": "GPE",
+      "canonical": "Saudi Arabia",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Red Sea",
+      "type": "LOC",
+      "canonical": "Red Sea",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Yanbu",
+      "type": "GPE",
+      "canonical": "Yanbu",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "French",
+      "type": "NORP",
+      "canonical": "French",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Emmanuel Macron",
+      "type": "PERSON",
+      "canonical": "Emmanuel Macron",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Macron",
+      "type": "ORG",
+      "canonical": "Macron",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "U.S",
+      "type": "GPE",
+      "canonical": "America",
+      "method": null,
+      "evidence": null
+     }
+    ],
+    "433": [
+     {
+      "field": "title",
+      "text": "Pakistan",
+      "type": "GPE",
+      "canonical": "Pakistani",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Houthi",
+      "type": "ORG",
+      "canonical": "Houthis",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Saudi",
+      "type": "NORP",
+      "canonical": "Saudi",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Pakistan",
+      "type": "GPE",
+      "canonical": "Pakistani",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "the Mecca Joint Defence Agreement",
+      "type": "ORG",
+      "canonical": "the Mecca Joint Defence Agreement",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Houthi",
+      "type": "ORG",
+      "canonical": "Houthis",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Saudi Arabia",
+      "type": "GPE",
+      "canonical": "Saudi Arabia",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "UNGA",
+      "type": "ORG",
+      "canonical": "UNGA",
+      "method": null,
+      "evidence": null
+     }
+    ],
+    "441": [
+     {
+      "field": "title",
+      "text": "Houthi",
+      "type": "ORG",
+      "canonical": "Houthis",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Mecca",
+      "type": "GPE",
+      "canonical": "Mecca",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Medina",
+      "type": "GPE",
+      "canonical": "Medina",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Pakistan",
+      "type": "GPE",
+      "canonical": "Pakistani",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "UN",
+      "type": "ORG",
+      "canonical": "UN",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Shehbaz Sharif",
+      "type": "PERSON",
+      "canonical": "Shehbaz Sharif",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Islamabad",
+      "type": "GPE",
+      "canonical": "Islamabad",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Riyadh",
+      "type": "GPE",
+      "canonical": "Riyadh",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Ankara",
+      "type": "GPE",
+      "canonical": "Ankara",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Mecca",
+      "type": "GPE",
+      "canonical": "Mecca",
+      "method": null,
+      "evidence": null
+     }
+    ],
+    "547": [
+     {
+      "field": "title",
+      "text": "Houthi",
+      "type": "ORG",
+      "canonical": "Houthis",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Saudi Arabia",
+      "type": "GPE",
+      "canonical": "Saudi Arabia",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Mecca",
+      "type": "GPE",
+      "canonical": "Mecca",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Saudi Arabia",
+      "type": "GPE",
+      "canonical": "Saudi Arabia",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Pakistan",
+      "type": "GPE",
+      "canonical": "Pakistani",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Turkey",
+      "type": "GPE",
+      "canonical": "Turkey",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Yemen",
+      "type": "GPE",
+      "canonical": "Yemen",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Houthis",
+      "type": "ORG",
+      "canonical": "Houthis",
+      "method": null,
+      "evidence": null
+     }
+    ],
+    "575": [
+     {
+      "field": "title",
+      "text": "Mecca",
+      "type": "GPE",
+      "canonical": "Mecca",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Houthi",
+      "type": "ORG",
+      "canonical": "Houthis",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Saudi Arabia",
+      "type": "GPE",
+      "canonical": "Saudi Arabia",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Turkiye",
+      "type": "GPE",
+      "canonical": "Turkiye",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Pakistan",
+      "type": "GPE",
+      "canonical": "Pakistani",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Riyadh",
+      "type": "GPE",
+      "canonical": "Riyadh",
+      "method": null,
+      "evidence": null
+     }
+    ],
+    "603": [
+     {
+      "field": "title",
+      "text": "Saudi",
+      "type": "NORP",
+      "canonical": "Saudi",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Iran",
+      "type": "GPE",
+      "canonical": "Iran",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Houthis",
+      "type": "ORG",
+      "canonical": "Houthis",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "UNGA",
+      "type": "ORG",
+      "canonical": "UNGA",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "UN",
+      "type": "ORG",
+      "canonical": "UN",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Saudi Arabia",
+      "type": "GPE",
+      "canonical": "Saudi Arabia",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Iran",
+      "type": "GPE",
+      "canonical": "Iran",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Houthis",
+      "type": "ORG",
+      "canonical": "Houthis",
+      "method": null,
+      "evidence": null
+     }
+    ],
+    "660": [
+     {
+      "field": "title",
+      "text": "Yemen",
+      "type": "GPE",
+      "canonical": "Yemen",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Houthis",
+      "type": "ORG",
+      "canonical": "Houthis",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Yemeni",
+      "type": "NORP",
+      "canonical": "Yemen",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Taiz",
+      "type": "ORG",
+      "canonical": "Taiz",
+      "method": null,
+      "evidence": null
+     }
+    ],
+    "721": [
+     {
+      "field": "title",
+      "text": "Yemen",
+      "type": "GPE",
+      "canonical": "Yemen",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Houthis",
+      "type": "ORG",
+      "canonical": "Houthis",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Yemen",
+      "type": "GPE",
+      "canonical": "Yemen",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "BBC",
+      "type": "ORG",
+      "canonical": "BBC",
+      "method": null,
+      "evidence": null
+     }
+    ],
+    "999": [
+     {
+      "field": "title",
+      "text": "Rubio",
+      "type": "PERSON",
+      "canonical": "Rubio",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Saudi Arabia’s",
+      "type": "GPE",
+      "canonical": "Saudi Arabia",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Yemen",
+      "type": "GPE",
+      "canonical": "Yemen",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Hormuz Strait",
+      "type": "LOC",
+      "canonical": "Hormuz Strait",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "US",
+      "type": "GPE",
+      "canonical": "America",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Saudi",
+      "type": "NORP",
+      "canonical": "Saudi",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Houthis",
+      "type": "ORG",
+      "canonical": "Houthis",
+      "method": null,
+      "evidence": null
+     }
+    ],
+    "1150": [
+     {
+      "field": "title",
+      "text": "Iran",
+      "type": "GPE",
+      "canonical": "Iran",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Houthis",
+      "type": "ORG",
+      "canonical": "Houthis",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Yemen",
+      "type": "GPE",
+      "canonical": "Yemen",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Iran",
+      "type": "GPE",
+      "canonical": "Iran",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Houthis",
+      "type": "ORG",
+      "canonical": "Houthis",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Yemen",
+      "type": "GPE",
+      "canonical": "Yemen",
+      "method": null,
+      "evidence": null
+     }
+    ]
+   },
+   "principals": [
+    "houthis",
+    "pakistan",
+    "saudi arabia"
+   ],
+   "roles": {
+    "pakistan": "actor",
+    "houthis": "actor",
+    "saudi arabia": "actor"
+   }
+  },
+  "D06": {
+   "items": {
+    "1061": [
+     {
+      "field": "title",
+      "text": "Israeli",
+      "type": "NORP",
+      "canonical": "Israeli",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Hamas",
+      "type": "ORG",
+      "canonical": "Hamas",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Izz al-Din al-Beik",
+      "type": "PERSON",
+      "canonical": "Izz al-Din al-Beik",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Gaza",
+      "type": "GPE",
+      "canonical": "Gaza",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Hamas&#039;s",
+      "type": "NORP",
+      "canonical": "Hamas&#039;s",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Gaza",
+      "type": "GPE",
+      "canonical": "Gaza",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Israeli",
+      "type": "NORP",
+      "canonical": "Israeli",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Gaza City",
+      "type": "GPE",
+      "canonical": "Gaza City",
+      "method": null,
+      "evidence": null
+     }
+    ],
+    "1171": [
+     {
+      "field": "title",
+      "text": "Israel",
+      "type": "GPE",
+      "canonical": "Israeli",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Gaza",
+      "type": "GPE",
+      "canonical": "Gaza",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Hamas",
+      "type": "ORG",
+      "canonical": "Hamas",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Israeli",
+      "type": "NORP",
+      "canonical": "Israeli",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Hamas",
+      "type": "ORG",
+      "canonical": "Hamas",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "north Gaza",
+      "type": "GPE",
+      "canonical": "north Gaza",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "the October 7",
+      "type": "EVENT",
+      "canonical": "the October 7",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Palestinian",
+      "type": "NORP",
+      "canonical": "Palestinians",
+      "method": null,
+      "evidence": null
+     }
+    ]
+   },
+   "principals": [
+    "gaza",
+    "hamas",
+    "israel",
+    "izz al-din al-beik"
+   ],
+   "roles": {
+    "israel": "actor",
+    "gaza": "actor",
+    "izz al-din al-beik": "actor",
+    "hamas": "actor"
+   }
+  },
+  "D07": {
+   "items": {
+    "984": [
+     {
+      "field": "title",
+      "text": "US",
+      "type": "GPE",
+      "canonical": "America",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "UK",
+      "type": "GPE",
+      "canonical": "UK",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "SM-6",
+      "type": "PERSON",
+      "canonical": "SM-6",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Navy",
+      "type": "ORG",
+      "canonical": "navy",
+      "method": null,
+      "evidence": null
+     }
+    ],
+    "1203": [
+     {
+      "field": "title",
+      "text": "Atlantic",
+      "type": "LOC",
+      "canonical": "Atlantic",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "US",
+      "type": "GPE",
+      "canonical": "America",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "UK",
+      "type": "GPE",
+      "canonical": "UK",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "U.S",
+      "type": "GPE",
+      "canonical": "America",
+      "method": null,
+      "evidence": null
+     }
+    ]
+   },
+   "principals": [
+    "united kingdom",
+    "united states"
+   ],
+   "roles": {
+    "united states": "actor",
+    "united kingdom": "actor"
+   }
+  },
+  "D08": {
+   "items": {
+    "274": [
+     {
+      "field": "title",
+      "text": "Russia",
+      "type": "GPE",
+      "canonical": "Russia",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Kyiv",
+      "type": "GPE",
+      "canonical": "Ukraine",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Ukraine",
+      "type": "GPE",
+      "canonical": "Ukraine",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Russia",
+      "type": "GPE",
+      "canonical": "Russia",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Kyiv",
+      "type": "GPE",
+      "canonical": "Ukraine",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Ukrainian",
+      "type": "NORP",
+      "canonical": "Ukrainian",
+      "method": null,
+      "evidence": null
+     }
+    ],
+    "161": [
+     {
+      "field": "title",
+      "text": "Russia",
+      "type": "GPE",
+      "canonical": "Russia",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Kyiv",
+      "type": "GPE",
+      "canonical": "Ukraine",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Russia",
+      "type": "GPE",
+      "canonical": "Russia",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Kyiv",
+      "type": "GPE",
+      "canonical": "Ukraine",
+      "method": null,
+      "evidence": null
+     }
+    ],
+    "275": [
+     {
+      "field": "title",
+      "text": "Russian",
+      "type": "NORP",
+      "canonical": "Russia",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Ukraine",
+      "type": "GPE",
+      "canonical": "Ukraine",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Kyiv",
+      "type": "GPE",
+      "canonical": "Ukraine",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "The Air Force",
+      "type": "ORG",
+      "canonical": "The Air Force",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Russia",
+      "type": "GPE",
+      "canonical": "Russia",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Ukraine",
+      "type": "GPE",
+      "canonical": "Ukraine",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Zircon",
+      "type": "ORG",
+      "canonical": "Zircon",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Onyx",
+      "type": "ORG",
+      "canonical": "Onyx",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Iskander-M",
+      "type": "ORG",
+      "canonical": "Iskander-M",
+      "method": null,
+      "evidence": null
+     }
+    ]
+   },
+   "principals": [
+    "russia",
+    "ukraine"
+   ],
+   "roles": {
+    "russia": "actor",
+    "ukraine": "actor"
+   }
+  },
+  "D09": {
+   "items": {
+    "1031": [
+     {
+      "field": "title",
+      "text": "California",
+      "type": "GPE",
+      "canonical": "California",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "New York Times",
+      "type": "ORG",
+      "canonical": "New York Times",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "California",
+      "type": "GPE",
+      "canonical": "California",
+      "method": null,
+      "evidence": null
+     }
+    ],
+    "1014": [
+     {
+      "field": "title",
+      "text": "New York Times",
+      "type": "ORG",
+      "canonical": "New York Times",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Jonathan McKinsey's",
+      "type": "PERSON",
+      "canonical": "Jonathan McKinsey's",
+      "method": null,
+      "evidence": null
+     }
+    ]
+   },
+   "principals": [
+    "jonathan mckinsey"
+   ],
+   "roles": {
+    "jonathan mckinsey": "actor"
+   }
+  },
+  "D10": {
+   "items": {
+    "1013": [
+     {
+      "field": "title",
+      "text": "Argentina",
+      "type": "GPE",
+      "canonical": "Argentina",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "UK",
+      "type": "GPE",
+      "canonical": "UK",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Falkland Islands",
+      "type": "LOC",
+      "canonical": "Falkland Islands",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Javier Milei",
+      "type": "PERSON",
+      "canonical": "Javier Milei",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Sea Lion",
+      "type": "ORG",
+      "canonical": "Sea Lion",
+      "method": null,
+      "evidence": null
+     }
+    ],
+    "1092": [
+     {
+      "field": "title",
+      "text": "Argentina",
+      "type": "GPE",
+      "canonical": "Argentina",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Milei",
+      "type": "NORP",
+      "canonical": "Milei",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Falklands",
+      "type": "GPE",
+      "canonical": "Falklands",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Argentina",
+      "type": "GPE",
+      "canonical": "Argentina",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "UK",
+      "type": "GPE",
+      "canonical": "UK",
+      "method": null,
+      "evidence": null
+     }
+    ]
+   },
+   "principals": [
+    "argentina",
+    "milei",
+    "united kingdom"
+   ],
+   "roles": {
+    "argentina": "actor",
+    "united kingdom": "actor",
+    "milei": "actor"
+   }
+  },
+  "D11": {
+   "items": {
+    "1123": [
+     {
+      "field": "title",
+      "text": "Estonia",
+      "type": "GPE",
+      "canonical": "Estonia",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Russia",
+      "type": "GPE",
+      "canonical": "Russian",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Ukraine",
+      "type": "GPE",
+      "canonical": "Ukraine",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Estonian",
+      "type": "NORP",
+      "canonical": "Estonia",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Ukraine",
+      "type": "GPE",
+      "canonical": "Ukraine",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Russian",
+      "type": "NORP",
+      "canonical": "Russian",
+      "method": null,
+      "evidence": null
+     }
+    ],
+    "1143": [
+     {
+      "field": "title",
+      "text": "Estonia",
+      "type": "GPE",
+      "canonical": "Estonia",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Russia",
+      "type": "GPE",
+      "canonical": "Russian",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Ukraine",
+      "type": "GPE",
+      "canonical": "Ukraine",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Russia",
+      "type": "GPE",
+      "canonical": "Russian",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "European Nato",
+      "type": "ORG",
+      "canonical": "EU",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Ukraine",
+      "type": "GPE",
+      "canonical": "Ukraine",
+      "method": null,
+      "evidence": null
+     }
+    ],
+    "1153": [
+     {
+      "field": "title",
+      "text": "Estonia",
+      "type": "GPE",
+      "canonical": "Estonia",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Russia",
+      "type": "GPE",
+      "canonical": "Russian",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Tallinn",
+      "type": "GPE",
+      "canonical": "Tallinn",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Moscow",
+      "type": "GPE",
+      "canonical": "Russian",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Estonian",
+      "type": "NORP",
+      "canonical": "Estonia",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Milrem Robotics",
+      "type": "ORG",
+      "canonical": "Milrem Robotics",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Ukraine",
+      "type": "GPE",
+      "canonical": "Ukraine",
+      "method": null,
+      "evidence": null
+     }
+    ],
+    "1175": [
+     {
+      "field": "title",
+      "text": "Estonia",
+      "type": "GPE",
+      "canonical": "Estonia",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Russia",
+      "type": "GPE",
+      "canonical": "Russian",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Milrem",
+      "type": "PERSON",
+      "canonical": "Milrem",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Russia",
+      "type": "GPE",
+      "canonical": "Russian",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Ukraine",
+      "type": "GPE",
+      "canonical": "Ukraine",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "NATO",
+      "type": "ORG",
+      "canonical": "NATO",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Mark Rutte",
+      "type": "PERSON",
+      "canonical": "Mark Rutte",
+      "method": null,
+      "evidence": null
+     }
+    ],
+    "1172": [
+     {
+      "field": "title",
+      "text": "Estonia",
+      "type": "GPE",
+      "canonical": "Estonia",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Russia",
+      "type": "GPE",
+      "canonical": "Russian",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Milrem",
+      "type": "PERSON",
+      "canonical": "Milrem",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "GLASGOW",
+      "type": "GPE",
+      "canonical": "GLASGOW",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Scotland",
+      "type": "GPE",
+      "canonical": "Scotland",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Russian",
+      "type": "NORP",
+      "canonical": "Russian",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Estonian",
+      "type": "NORP",
+      "canonical": "Estonia",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Tallinn",
+      "type": "GPE",
+      "canonical": "Tallinn",
+      "method": null,
+      "evidence": null
+     }
+    ]
+   },
+   "principals": [
+    "estonia",
+    "milrem",
+    "russia"
+   ],
+   "roles": {
+    "russia": "actor",
+    "estonia": "actor",
+    "milrem": "actor"
+   }
+  },
+  "D12": {
+   "items": {
+    "512": [
+     {
+      "field": "title",
+      "text": "Estonia",
+      "type": "GPE",
+      "canonical": "Estonia",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Russia",
+      "type": "GPE",
+      "canonical": "Russia",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Milrem",
+      "type": "PERSON",
+      "canonical": "Milrem",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Russia",
+      "type": "GPE",
+      "canonical": "Russia",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Ukraine",
+      "type": "GPE",
+      "canonical": "Ukraine",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "NATO",
+      "type": "ORG",
+      "canonical": "NATO",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Mark Rutte",
+      "type": "PERSON",
+      "canonical": "Mark Rutte",
+      "method": null,
+      "evidence": null
+     }
+    ],
+    "490": [
+     {
+      "field": "title",
+      "text": "Estonia",
+      "type": "GPE",
+      "canonical": "Estonia",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Russia",
+      "type": "GPE",
+      "canonical": "Russia",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Milrem",
+      "type": "PERSON",
+      "canonical": "Milrem",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "GLASGOW",
+      "type": "GPE",
+      "canonical": "GLASGOW",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Scotland",
+      "type": "GPE",
+      "canonical": "Scotland",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Russian",
+      "type": "NORP",
+      "canonical": "Russia",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Estonian",
+      "type": "NORP",
+      "canonical": "Estonia",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Tallinn",
+      "type": "GPE",
+      "canonical": "Tallinn",
+      "method": null,
+      "evidence": null
+     }
+    ]
+   },
+   "principals": [
+    "estonia",
+    "milrem",
+    "russia"
+   ],
+   "roles": {
+    "russia": "actor",
+    "estonia": "actor",
+    "milrem": "actor"
+   }
+  },
+  "D13": {
+   "items": {
+    "44": [
+     {
+      "field": "title",
+      "text": "Italy",
+      "type": "GPE",
+      "canonical": "Italy",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Giorgia Meloni",
+      "type": "PERSON",
+      "canonical": "Giorgia Meloni",
+      "method": null,
+      "evidence": null
+     }
+    ],
+    "320": [
+     {
+      "field": "title",
+      "text": "Italy",
+      "type": "GPE",
+      "canonical": "Italy",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Italian",
+      "type": "NORP",
+      "canonical": "Taliban",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Italy",
+      "type": "GPE",
+      "canonical": "Italy",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Italian",
+      "type": "NORP",
+      "canonical": "Taliban",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Rome",
+      "type": "GPE",
+      "canonical": "ROME",
+      "method": null,
+      "evidence": null
+     }
+    ]
+   },
+   "principals": [
+    "italy"
+   ],
+   "roles": {
+    "italy": "actor"
+   }
+  },
+  "D14": {
+   "items": {
+    "667": [
+     {
+      "field": "title",
+      "text": "South African",
+      "type": "NORP",
+      "canonical": "South African",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "South African",
+      "type": "NORP",
+      "canonical": "South African",
+      "method": null,
+      "evidence": null
+     }
+    ],
+    "632": [
+     {
+      "field": "title",
+      "text": "South Africa",
+      "type": "GPE",
+      "canonical": "South African",
+      "method": null,
+      "evidence": null
+     }
+    ],
+    "687": [
+     {
+      "field": "title",
+      "text": "South Africa",
+      "type": "GPE",
+      "canonical": "South African",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "South Africa",
+      "type": "GPE",
+      "canonical": "South African",
+      "method": null,
+      "evidence": null
+     }
+    ],
+    "926": [
+     {
+      "field": "title",
+      "text": "South Africa",
+      "type": "GPE",
+      "canonical": "South African",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "South African",
+      "type": "NORP",
+      "canonical": "South African",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Cyril Ramaphosa",
+      "type": "PERSON",
+      "canonical": "Cyril Ramaphosa",
+      "method": null,
+      "evidence": null
+     }
+    ]
+   },
+   "principals": [
+    "south africa"
+   ],
+   "roles": {
+    "south africa": "actor"
+   }
+  },
+  "D15": {
+   "items": {
+    "494": [
+     {
+      "field": "title",
+      "text": "Russia",
+      "type": "GPE",
+      "canonical": "Russia",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Russia",
+      "type": "GPE",
+      "canonical": "Russia",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Ukraine",
+      "type": "GPE",
+      "canonical": "Ukraine",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Reuters",
+      "type": "ORG",
+      "canonical": "Reuters",
+      "method": null,
+      "evidence": null
+     }
+    ],
+    "285": [
+     {
+      "field": "title",
+      "text": "Putin",
+      "type": "PERSON",
+      "canonical": "Vladimir Putin",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Russian",
+      "type": "NORP",
+      "canonical": "Russia",
+      "method": null,
+      "evidence": null
+     }
+    ],
+    "282": [
+     {
+      "field": "title",
+      "text": "Ukraine",
+      "type": "GPE",
+      "canonical": "Ukraine",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Russian",
+      "type": "NORP",
+      "canonical": "Russia",
+      "method": null,
+      "evidence": null
+     }
+    ]
+   },
+   "principals": [
+    "russia"
+   ],
+   "roles": {
+    "russia": "actor"
+   }
+  },
+  "D16": {
+   "items": {
+    "553": [
+     {
+      "field": "title",
+      "text": "Intertek USA, Inc.",
+      "type": "ORG",
+      "canonical": "Intertek USA, Inc.",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Chelsea, MA",
+      "type": "ORG",
+      "canonical": "Chelsea, MA",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Commercial Gauger and Laboratory",
+      "type": "ORG",
+      "canonical": "Commercial Gauger and Laboratory",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "CBP",
+      "type": "ORG",
+      "canonical": "CBP",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Intertek USA",
+      "type": "ORG",
+      "canonical": "Intertek USA, Inc.",
+      "method": null,
+      "evidence": null
+     }
+    ],
+    "554": [
+     {
+      "field": "title",
+      "text": "Intertek USA, Inc.",
+      "type": "ORG",
+      "canonical": "Intertek USA, Inc.",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Carteret",
+      "type": "GPE",
+      "canonical": "Carteret",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "NJ",
+      "type": "GPE",
+      "canonical": "NJ",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Commercial Gauger and Laboratory",
+      "type": "ORG",
+      "canonical": "Commercial Gauger and Laboratory",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "CBP",
+      "type": "ORG",
+      "canonical": "CBP",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Intertek USA",
+      "type": "ORG",
+      "canonical": "Intertek USA, Inc.",
+      "method": null,
+      "evidence": null
+     }
+    ]
+   },
+   "principals": [
+    "carteret",
+    "chelsea, ma",
+    "intertek usa, inc"
+   ],
+   "roles": {
+    "chelsea, ma": "actor",
+    "carteret": "actor",
+    "intertek usa, inc": "actor"
+   }
+  },
+  "D17": {
+   "items": {
+    "710": [
+     {
+      "field": "title",
+      "text": "Israel",
+      "type": "GPE",
+      "canonical": "Israeli",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Dutch",
+      "type": "NORP",
+      "canonical": "Dutch",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Israel",
+      "type": "GPE",
+      "canonical": "Israeli",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "West Bank",
+      "type": "GPE",
+      "canonical": "West Bank",
+      "method": null,
+      "evidence": null
+     }
+    ],
+    "711": [
+     {
+      "field": "title",
+      "text": "Israel",
+      "type": "GPE",
+      "canonical": "Israeli",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Dutch",
+      "type": "NORP",
+      "canonical": "Dutch",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Ramallah",
+      "type": "GPE",
+      "canonical": "Ramallah",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Israel",
+      "type": "GPE",
+      "canonical": "Israeli",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Dutch",
+      "type": "NORP",
+      "canonical": "Dutch",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Netherlands",
+      "type": "GPE",
+      "canonical": "Netherlands",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Ramallah",
+      "type": "GPE",
+      "canonical": "Ramallah",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Palestinian Authority",
+      "type": "ORG",
+      "canonical": "Palestinian Authority",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Israeli",
+      "type": "NORP",
+      "canonical": "Israeli",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "West Bank",
+      "type": "GPE",
+      "canonical": "West Bank",
+      "method": null,
+      "evidence": null
+     }
+    ]
+   },
+   "principals": [
+    "israel",
+    "netherlands"
+   ],
+   "roles": {
+    "israel": "actor",
+    "netherlands": "actor"
+   }
+  },
+  "D18": {
+   "items": {
+    "932": [
+     {
+      "field": "title",
+      "text": "US",
+      "type": "GPE",
+      "canonical": "America",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Iran",
+      "type": "GPE",
+      "canonical": "Iran",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Iraq",
+      "type": "GPE",
+      "canonical": "Iraq",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Najaf",
+      "type": "GPE",
+      "canonical": "Najaf",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "US",
+      "type": "GPE",
+      "canonical": "America",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Donald Trump",
+      "type": "PERSON",
+      "canonical": "Donald Trump",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Iran",
+      "type": "GPE",
+      "canonical": "Iran",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Shiite Muslim",
+      "type": "NORP",
+      "canonical": "Shiite Muslim",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Iraq",
+      "type": "GPE",
+      "canonical": "Iraq",
+      "method": null,
+      "evidence": null
+     }
+    ],
+    "952": [
+     {
+      "field": "title",
+      "text": "Iraq",
+      "type": "GPE",
+      "canonical": "Iraq",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Najaf",
+      "type": "GPE",
+      "canonical": "Najaf",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Iran",
+      "type": "GPE",
+      "canonical": "Iran",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Tehran",
+      "type": "GPE",
+      "canonical": "Iran",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "US",
+      "type": "GPE",
+      "canonical": "America",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Tehran",
+      "type": "GPE",
+      "canonical": "Iran",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "UN",
+      "type": "ORG",
+      "canonical": "UN",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "US",
+      "type": "GPE",
+      "canonical": "America",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Iran",
+      "type": "GPE",
+      "canonical": "Iran",
+      "method": null,
+      "evidence": null
+     }
+    ],
+    "1008": [
+     {
+      "field": "title",
+      "text": "Iran",
+      "type": "GPE",
+      "canonical": "Iran",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Trump",
+      "type": "PERSON",
+      "canonical": "Trump",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Tehran",
+      "type": "GPE",
+      "canonical": "Iran",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "US",
+      "type": "GPE",
+      "canonical": "America",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Trump",
+      "type": "PERSON",
+      "canonical": "Trump",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Iran",
+      "type": "GPE",
+      "canonical": "Iran",
+      "method": null,
+      "evidence": null
+     }
+    ]
+   },
+   "principals": [
+    "iran",
+    "iraq",
+    "united states"
+   ],
+   "roles": {
+    "united states": "actor",
+    "iraq": "actor",
+    "iran": "actor"
+   }
+  },
+  "D19": {
+   "items": {
+    "152": [
+     {
+      "field": "title",
+      "text": "US",
+      "type": "GPE",
+      "canonical": "U.S.",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Iran",
+      "type": "GPE",
+      "canonical": "Iran",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "US",
+      "type": "GPE",
+      "canonical": "U.S.",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Iranian",
+      "type": "NORP",
+      "canonical": "Iranian",
+      "method": null,
+      "evidence": null
+     }
+    ],
+    "13": [
+     {
+      "field": "title",
+      "text": "United States",
+      "type": "ORG",
+      "canonical": "U.S.",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Iran",
+      "type": "GPE",
+      "canonical": "Iran",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Office of the Spokesman",
+      "type": "ORG",
+      "canonical": "the Office of the Spokesperson",
+      "method": null,
+      "evidence": null
+     }
+    ],
+    "279": [
+     {
+      "field": "title",
+      "text": "US",
+      "type": "GPE",
+      "canonical": "U.S.",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Russian",
+      "type": "NORP",
+      "canonical": "Russia",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Iran",
+      "type": "GPE",
+      "canonical": "Iran",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Russia",
+      "type": "GPE",
+      "canonical": "Russia",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Hong Kong",
+      "type": "GPE",
+      "canonical": "Hong Kong",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "China",
+      "type": "GPE",
+      "canonical": "China",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Pakistan",
+      "type": "GPE",
+      "canonical": "Pakistan",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "the United States",
+      "type": "GPE",
+      "canonical": "U.S.",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Tehran",
+      "type": "GPE",
+      "canonical": "Iran",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Iran",
+      "type": "GPE",
+      "canonical": "Iran",
+      "method": null,
+      "evidence": null
+     }
+    ]
+   },
+   "principals": [
+    "iran",
+    "united states"
+   ],
+   "roles": {
+    "united states": "actor",
+    "iran": "actor"
+   }
+  },
+  "D20": {
+   "items": {
+    "1066": [
+     {
+      "field": "title",
+      "text": "Malaysia",
+      "type": "GPE",
+      "canonical": "Malaysia",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Myanmar",
+      "type": "GPE",
+      "canonical": "Myanmar",
+      "method": null,
+      "evidence": null
+     }
+    ],
+    "1045": [
+     {
+      "field": "title",
+      "text": "Malaysia",
+      "type": "GPE",
+      "canonical": "Malaysia",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Myanmar",
+      "type": "GPE",
+      "canonical": "Myanmar",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Malaysia",
+      "type": "GPE",
+      "canonical": "Malaysia",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Myanmar",
+      "type": "GPE",
+      "canonical": "Myanmar",
+      "method": null,
+      "evidence": null
+     }
+    ],
+    "1094": [
+     {
+      "field": "title",
+      "text": "Malaysia",
+      "type": "GPE",
+      "canonical": "Malaysia",
+      "method": null,
+      "evidence": null
+     }
+    ],
+    "1116": [
+     {
+      "field": "title",
+      "text": "Malaysia",
+      "type": "GPE",
+      "canonical": "Malaysia",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Rohingya",
+      "type": "ORG",
+      "canonical": "Rohingya",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Malaysia",
+      "type": "GPE",
+      "canonical": "Malaysia",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Muslim",
+      "type": "NORP",
+      "canonical": "Muslims",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Myanmar",
+      "type": "GPE",
+      "canonical": "Myanmar",
+      "method": null,
+      "evidence": null
+     }
+    ],
+    "1125": [
+     {
+      "field": "title",
+      "text": "Malaysia",
+      "type": "GPE",
+      "canonical": "Malaysia",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Rohingya",
+      "type": "ORG",
+      "canonical": "Rohingya",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Myanmar",
+      "type": "GPE",
+      "canonical": "Myanmar",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Malaysia",
+      "type": "GPE",
+      "canonical": "Malaysia",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Rohingya",
+      "type": "ORG",
+      "canonical": "Rohingya",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Myanmar",
+      "type": "GPE",
+      "canonical": "Myanmar",
+      "method": null,
+      "evidence": null
+     }
+    ]
+   },
+   "principals": [
+    "malaysia"
+   ],
+   "roles": {
+    "malaysia": "actor"
+   }
+  },
+  "D21": {
+   "items": {
+    "150": [
+     {
+      "field": "title",
+      "text": "Malaysia",
+      "type": "GPE",
+      "canonical": "Malaysia",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Myanmar",
+      "type": "GPE",
+      "canonical": "Myanmar",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "UN",
+      "type": "ORG",
+      "canonical": "UN",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Malaysia",
+      "type": "GPE",
+      "canonical": "Malaysia",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Myanmar",
+      "type": "GPE",
+      "canonical": "Myanmar",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "UN",
+      "type": "ORG",
+      "canonical": "UN",
+      "method": null,
+      "evidence": null
+     }
+    ],
+    "396": [
+     {
+      "field": "title",
+      "text": "World News",
+      "type": "ORG",
+      "canonical": "World News",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Myanmar",
+      "type": "GPE",
+      "canonical": "Myanmar",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Malaysia",
+      "type": "GPE",
+      "canonical": "Malaysia",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Gaza",
+      "type": "GPE",
+      "canonical": "Gaza",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "West Bank",
+      "type": "GPE",
+      "canonical": "West Bank",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "UN",
+      "type": "ORG",
+      "canonical": "UN",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Myanmar",
+      "type": "GPE",
+      "canonical": "Myanmar",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Rakhine",
+      "type": "NORP",
+      "canonical": "Rakhine",
+      "method": null,
+      "evidence": null
+     }
+    ]
+   },
+   "principals": [
+    "gaza",
+    "malaysia",
+    "myanmar",
+    "world news"
+   ],
+   "roles": {
+    "myanmar": "actor",
+    "world news": "actor",
+    "gaza": "actor",
+    "malaysia": "actor"
+   }
+  },
+  "D22": {
+   "items": {
+    "390": [
+     {
+      "field": "title",
+      "text": "US",
+      "type": "GPE",
+      "canonical": "America",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Pentagon",
+      "type": "ORG",
+      "canonical": "the Department of Defense",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Claude",
+      "type": "PERSON",
+      "canonical": "Claude",
+      "method": null,
+      "evidence": null
+     }
+    ],
+    "421": [
+     {
+      "field": "title",
+      "text": "US",
+      "type": "GPE",
+      "canonical": "America",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Pentagon",
+      "type": "ORG",
+      "canonical": "the Department of Defense",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Pentagon",
+      "type": "ORG",
+      "canonical": "the Department of Defense",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Donald Trump",
+      "type": "PERSON",
+      "canonical": "Donald Trump",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Defense",
+      "type": "ORG",
+      "canonical": "Defense",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Pete Hegseth",
+      "type": "PERSON",
+      "canonical": "Pete Hegseth",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "AI",
+      "type": "ORG",
+      "canonical": "AI",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "U.S",
+      "type": "GPE",
+      "canonical": "America",
+      "method": null,
+      "evidence": null
+     }
+    ],
+    "429": [
+     {
+      "field": "title",
+      "text": "DC Circuit",
+      "type": "ORG",
+      "canonical": "DC Circuit",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Pentagon",
+      "type": "ORG",
+      "canonical": "the Department of Defense",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Pentagon",
+      "type": "ORG",
+      "canonical": "the Department of Defense",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "CTO Emil Michael",
+      "type": "PERSON",
+      "canonical": "Emil Michael",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "AI",
+      "type": "ORG",
+      "canonical": "AI",
+      "method": null,
+      "evidence": null
+     }
+    ]
+   },
+   "principals": [
+    "united states"
+   ],
+   "roles": {
+    "united states": "actor"
+   }
+  },
+  "D23": {
+   "items": {
+    "238": [
+     {
+      "field": "title",
+      "text": "Trump",
+      "type": "ORG",
+      "canonical": "Trump",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Super Intelligence",
+      "type": "ORG",
+      "canonical": "Super Intelligence",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Pranzo alla Casa",
+      "type": "ORG",
+      "canonical": "Pranzo alla Casa",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "artificiale americana",
+      "type": "ORG",
+      "canonical": "artificiale americana",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "la nuova",
+      "type": "ORG",
+      "canonical": "la nuova",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "della Super Intelligenza",
+      "type": "ORG",
+      "canonical": "l'era della Super Intelligenza' '",
+      "method": null,
+      "evidence": null
+     }
+    ],
+    "132": [
+     {
+      "field": "title",
+      "text": "Trump",
+      "type": "ORG",
+      "canonical": "Trump",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Big Tech",
+      "type": "ORG",
+      "canonical": "di Big Tech",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Autoregolazione e nessun controllo",
+      "type": "ORG",
+      "canonical": "Autoregolazione e nessun controllo",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Un",
+      "type": "ORG",
+      "canonical": "UN",
+      "method": null,
+      "evidence": null
+     }
+    ],
+    "57": [
+     {
+      "field": "title",
+      "text": "Trump",
+      "type": "ORG",
+      "canonical": "Trump",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "impegno moralmente vincolante su sicurezza IA'",
+      "type": "PERSON",
+      "canonical": "impegno moralmente vincolante su sicurezza IA' '",
+      "method": null,
+      "evidence": null
+     }
+    ],
+    "267": [
+     {
+      "field": "title",
+      "text": "Donald Trump",
+      "type": "PERSON",
+      "canonical": "Donald J. Trump",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "que los",
+      "type": "ORG",
+      "canonical": "que los",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "tecnológico firmaron un acuerdo",
+      "type": "ORG",
+      "canonical": "tecnológico firmaron un acuerdo",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "la IA",
+      "type": "GPE",
+      "canonical": "la IA",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "declaró al término de la",
+      "type": "PERSON",
+      "canonical": "declaró al término de la",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "cabo este martes",
+      "type": "GPE",
+      "canonical": "cabo este martes",
+      "method": null,
+      "evidence": null
+     }
+    ],
+    "55": [
+     {
+      "field": "title",
+      "text": "Trump",
+      "type": "ORG",
+      "canonical": "Trump",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Usa",
+      "type": "GPE",
+      "canonical": "U.S.",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "li bloccheremo'",
+      "type": "PERSON",
+      "canonical": "li bloccheremo'",
+      "method": null,
+      "evidence": null
+     }
+    ],
+    "71": [
+     {
+      "field": "title",
+      "text": "Trump ordena",
+      "type": "ORG",
+      "canonical": "Trump ordena",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "la '",
+      "type": "ORG",
+      "canonical": "la '",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Inteligencia Artificial'",
+      "type": "ORG",
+      "canonical": "Inteligencia Artificial'",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "Súper Inteligencia'",
+      "type": "ORG",
+      "canonical": "Super Intelligence",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "El presidente de Estados Unidos",
+      "type": "ORG",
+      "canonical": "El presidente de Estados Unidos",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Donald Trump",
+      "type": "PERSON",
+      "canonical": "Donald J. Trump",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "firmado este martes una orden",
+      "type": "PERSON",
+      "canonical": "firmado este martes una orden",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "por la que insta",
+      "type": "ORG",
+      "canonical": "por la que insta",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "del Gobierno",
+      "type": "GPE",
+      "canonical": "del governo",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "sustituir el término",
+      "type": "ORG",
+      "canonical": "sustituir el término",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "por",
+      "type": "ORG",
+      "canonical": "por",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "oficial",
+      "type": "ORG",
+      "canonical": "oficial",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "documentos públicos",
+      "type": "GPE",
+      "canonical": "documentos públicos",
+      "method": null,
+      "evidence": null
+     }
+    ],
+    "129": [
+     {
+      "field": "title",
+      "text": "di Big Tech",
+      "type": "ORG",
+      "canonical": "di Big Tech",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Controlli",
+      "type": "ORG",
+      "canonical": "Controlli",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "concorrenza e sicurezza",
+      "type": "ORG",
+      "canonical": "concorrenza e sicurezza",
+      "method": null,
+      "evidence": null
+     }
+    ],
+    "131": [
+     {
+      "field": "title",
+      "text": "Donald Trump e la nuova",
+      "type": "PERSON",
+      "canonical": "Donald Trump e la nuova",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "età",
+      "type": "ORG",
+      "canonical": "età",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Trump",
+      "type": "ORG",
+      "canonical": "Trump",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "del Big Tech tra progetti sull'AI",
+      "type": "ORG",
+      "canonical": "del Big Tech tra progetti sull'AI",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Suprema",
+      "type": "ORG",
+      "canonical": "Suprema",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "piani di deportazione dei migranti",
+      "type": "PERSON",
+      "canonical": "piani di deportazione dei migranti",
+      "method": null,
+      "evidence": null
+     }
+    ],
+    "48": [
+     {
+      "field": "title",
+      "text": "Trump firma",
+      "type": "ORG",
+      "canonical": "Trump firma",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "l'era della",
+      "type": "ORG",
+      "canonical": "l'era della",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Sistemi di frontiera",
+      "type": "PERSON",
+      "canonical": "Sistemi di frontiera",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "ben oltre",
+      "type": "PERSON",
+      "canonical": "ben oltre",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "singoli aspetti",
+      "type": "PERSON",
+      "canonical": "singoli aspetti",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "umana",
+      "type": "ORG",
+      "canonical": "umana",
+      "method": null,
+      "evidence": null
+     }
+    ],
+    "176": [
+     {
+      "field": "title",
+      "text": "Trump y los gigantes de la",
+      "type": "ORG",
+      "canonical": "Trump y los gigantes de la",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "sellan un acuerdo",
+      "type": "ORG",
+      "canonical": "sellan un acuerdo",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "El presidente Donald Trump",
+      "type": "PERSON",
+      "canonical": "El presidente Donald Trump",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "un acuerdo que calificó como",
+      "type": "ORG",
+      "canonical": "un acuerdo que calificó como",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "algunos de los",
+      "type": "ORG",
+      "canonical": "uno de los",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "tecnológica",
+      "type": "GPE",
+      "canonical": "tecnológica",
+      "method": null,
+      "evidence": null
+     }
+    ]
+   },
+   "principals": [
+    "united states"
+   ],
+   "roles": {
+    "united states": "actor"
+   }
+  },
+  "D24": {
+   "items": {
+    "264": [
+     {
+      "field": "title",
+      "text": "Por la guerra y la incertidumbre económica",
+      "type": "GPE",
+      "canonical": "Por la guerra y la incertidumbre económica",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "la moneda de Irán se hunde en un",
+      "type": "ORG",
+      "canonical": "la moneda de Irán se hunde",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Las",
+      "type": "GPE",
+      "canonical": "las",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "internacionales presionan",
+      "type": "ORG",
+      "canonical": "internacionales presionan",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "las finanzas de la república",
+      "type": "FAC",
+      "canonical": "las finanzas de la república",
+      "method": null,
+      "evidence": null
+     }
+    ],
+    "75": [
+     {
+      "field": "title",
+      "text": "que recibió la respuesta",
+      "type": "ORG",
+      "canonical": "que recibió la respuesta",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "oficial de EEUU",
+      "type": "ORG",
+      "canonical": "oficial de EEUU",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "title",
+      "text": "su última propuesta para un acuerdo de paz",
+      "type": "ORG",
+      "canonical": "su última propuesta para un acuerdo de paz",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "El Gobierno de Irán ha",
+      "type": "ORG",
+      "canonical": "El Gobierno de Irán ha",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "oficial de Estados Unidos",
+      "type": "ORG",
+      "canonical": "oficial de Estados Unidos",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "su propuesta para reactivar",
+      "type": "ORG",
+      "canonical": "su propuesta para reactivar",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "el proceso de conversaciones para un acuerdo de paz",
+      "type": "ORG",
+      "canonical": "el proceso de conversaciones para un acuerdo de paz",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "días después de que el presidente",
+      "type": "ORG",
+      "canonical": "días después de que el presidente",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Donald Trump",
+      "type": "PERSON",
+      "canonical": "Donald J. Trump",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "expresara su rechazo al plan presentado",
+      "type": "PERSON",
+      "canonical": "expresara su rechazo al plan presentado",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "por Teher",
+      "type": "ORG",
+      "canonical": "por Teherán",
+      "method": null,
+      "evidence": null
+     }
+    ]
+   },
+   "principals": [
+    "la moneda de irán se hunde en un",
+    "oficial de eeuu",
+    "por la guerra y la incertidumbre económica",
+    "que recibió la respuesta",
+    "su última propuesta para un acuerdo de paz"
+   ],
+   "roles": {
+    "por la guerra y la incertidumbre económica": "actor",
+    "que recibió la respuesta": "actor",
+    "oficial de eeuu": "actor",
+    "la moneda de irán se hunde en un": "actor",
+    "su última propuesta para un acuerdo de paz": "actor"
+   }
+  },
+  "D25": {
+   "items": {
+    "361": [
+     {
+      "field": "title",
+      "text": "EU",
+      "type": "ORG",
+      "canonical": "the European Union",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Council",
+      "type": "ORG",
+      "canonical": "Council",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "the EU Space Threat Response Architecture",
+      "type": "ORG",
+      "canonical": "the EU Space Threat Response Architecture",
+      "method": null,
+      "evidence": null
+     }
+    ],
+    "352": [
+     {
+      "field": "title",
+      "text": "EU Critical Communication System",
+      "type": "ORG",
+      "canonical": "the European Union Critical Communication System European Commission",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "European Commission Press",
+      "type": "ORG",
+      "canonical": "the European Commission",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Brussels",
+      "type": "GPE",
+      "canonical": "Brussels",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "the European Commission",
+      "type": "ORG",
+      "canonical": "the European Commission",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "EU Critical Communication System",
+      "type": "ORG",
+      "canonical": "the European Union Critical Communication System European Commission",
+      "method": null,
+      "evidence": null
+     },
+     {
+      "field": "lead",
+      "text": "Europe",
+      "type": "LOC",
+      "canonical": "Europe",
+      "method": null,
+      "evidence": null
+     }
+    ]
+   },
+   "principals": [
+    "eu critical communication system",
+    "european union"
+   ],
+   "roles": {
+    "eu critical communication system": "actor",
+    "european union": "actor"
+   }
   }
  }
 }

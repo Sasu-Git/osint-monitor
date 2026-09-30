@@ -324,15 +324,18 @@ class EntityResolver:
             update={"entity_type": corrected_type}
         )
 
+        from osint_monitor.processors.text_normalize import clean_name
+        clean = clean_name(extracted.text) or extracted.text.strip()
         text_lower = extracted.text.strip().lower()
-        text_norm = normalise(extracted.text)
+        text_norm = normalise(clean)
 
         alias_map = self._build_alias_map()
         norm_map = self._get_norm_map()
 
         # --- Step 1: Exact match against trusted names ----------------------
-        if text_lower in alias_map:
-            entity = self.session.get(Entity, alias_map[text_lower])
+        exact_key = text_lower if text_lower in alias_map else clean.lower()
+        if exact_key in alias_map:
+            entity = self.session.get(Entity, alias_map[exact_key])
             if entity:
                 return self._done(entity, "exact", f"'{extracted.text}' is a trusted name of '{entity.canonical_name}'")
 
@@ -387,7 +390,7 @@ class EntityResolver:
             refused = ""
 
         # --- Step 3: Create new entity --------------------------------------
-        canonical = extracted.canonical_name or extracted.text
+        canonical = clean_name(extracted.canonical_name or extracted.text) or extracted.text.strip()
         entity = Entity(
             canonical_name=canonical,
             entity_type=corrected_type.value,

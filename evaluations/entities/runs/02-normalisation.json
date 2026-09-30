@@ -2,12 +2,12 @@
  "summary": {
   "ner_precision": {
    "all": {
-    "hit": 370,
-    "total": 431
+    "hit": 372,
+    "total": 433
    },
    "en": {
-    "hit": 354,
-    "total": 363
+    "hit": 356,
+    "total": 365
    },
    "es": {
     "hit": 8,
@@ -20,11 +20,11 @@
   },
   "ner_recall": {
    "all": {
-    "hit": 370,
+    "hit": 372,
     "total": 392
    },
    "en": {
-    "hit": 354,
+    "hit": 356,
     "total": 369
    },
    "es": {
@@ -38,12 +38,12 @@
   },
   "typing": {
    "all": {
-    "hit": 341,
-    "total": 370
+    "hit": 345,
+    "total": 372
    },
    "en": {
-    "hit": 335,
-    "total": 354
+    "hit": 339,
+    "total": 356
    },
    "es": {
     "hit": 4,
@@ -56,12 +56,12 @@
   },
   "resolution": {
    "all": {
-    "hit": 341,
-    "total": 370
+    "hit": 343,
+    "total": 372
    },
    "en": {
-    "hit": 335,
-    "total": 354
+    "hit": 337,
+    "total": 356
    },
    "es": {
     "hit": 0,
@@ -74,12 +74,12 @@
   },
   "canonical_hygiene": {
    "all": {
-    "hit": 354,
-    "total": 370
+    "hit": 358,
+    "total": 372
    },
    "en": {
-    "hit": 338,
-    "total": 354
+    "hit": 342,
+    "total": 356
    },
    "es": {
     "hit": 8,
@@ -557,28 +557,28 @@
    "lang": "en",
    "dev": "D01",
    "ok": true,
-   "detail": "'Spain' <- 'Spain&#039;s'"
+   "detail": "'Spain' <- 'Spain'"
   },
   "typing:D01:1233:2:Spain": {
    "metric": "typing",
    "lang": "en",
    "dev": "D01",
-   "ok": false,
-   "detail": "'Spain' NORP (gold GPE)"
+   "ok": true,
+   "detail": "'Spain' GPE (gold GPE)"
   },
   "resolution:D01:1233:2:Spain": {
    "metric": "resolution",
    "lang": "en",
    "dev": "D01",
    "ok": true,
-   "detail": "'Spain&#039;s' -> 'Spain&#039;s' [exact] (gold Spain)"
+   "detail": "'Spain' -> 'Spain' [exact] (gold Spain)"
   },
   "canonical_hygiene:D01:1233:2:Spain": {
    "metric": "canonical_hygiene",
    "lang": "en",
    "dev": "D01",
-   "ok": false,
-   "detail": "canonical 'Spain&#039;s'"
+   "ok": true,
+   "detail": "canonical 'Spain'"
   },
   "ner_precision:D01:1233:p0:Spain": {
    "metric": "ner_precision",
@@ -594,12 +594,12 @@
    "ok": true,
    "detail": "'Madrid' GPE"
   },
-  "ner_precision:D01:1233:p2:Spain&#039;s": {
+  "ner_precision:D01:1233:p2:Spain": {
    "metric": "ner_precision",
    "lang": "en",
    "dev": "D01",
    "ok": true,
-   "detail": "'Spain&#039;s' NORP"
+   "detail": "'Spain' GPE"
   },
   "principal_precision:D01:spain": {
    "metric": "principal_precision",
@@ -846,12 +846,12 @@
    "ok": true,
    "detail": "'Pentagon' ORG"
   },
-  "ner_precision:D02:1247:p3:secretary&#039;s &#039;State": {
+  "ner_precision:D02:1247:p3:Force": {
    "metric": "ner_precision",
    "lang": "en",
    "dev": "D02",
    "ok": false,
-   "detail": "'secretary&#039;s &#039;State' ORG (not in gold)"
+   "detail": "'Force' ORG (not in gold)"
   },
   "ner_precision:D02:1247:p4:Virginia": {
    "metric": "ner_precision",
@@ -969,8 +969,29 @@
    "metric": "ner_recall",
    "lang": "en",
    "dev": "D03",
-   "ok": false,
-   "detail": "'Boeing' missed"
+   "ok": true,
+   "detail": "'Boeing' <- 'Boeing'"
+  },
+  "typing:D03:507:3:Boeing": {
+   "metric": "typing",
+   "lang": "en",
+   "dev": "D03",
+   "ok": true,
+   "detail": "'Boeing' ORG (gold ORG)"
+  },
+  "resolution:D03:507:3:Boeing": {
+   "metric": "resolution",
+   "lang": "en",
+   "dev": "D03",
+   "ok": true,
+   "detail": "'Boeing' -> 'Boeing' [exact] (gold Boeing)"
+  },
+  "canonical_hygiene:D03:507:3:Boeing": {
+   "metric": "canonical_hygiene",
+   "lang": "en",
+   "dev": "D03",
+   "ok": true,
+   "detail": "canonical 'Boeing'"
   },
   "ner_recall:D03:507:4:American": {
    "metric": "ner_recall",
@@ -1014,7 +1035,14 @@
    "ok": true,
    "detail": "'Navy' ORG"
   },
-  "ner_precision:D03:507:p3:American": {
+  "ner_precision:D03:507:p3:Boeing": {
+   "metric": "ner_precision",
+   "lang": "en",
+   "dev": "D03",
+   "ok": true,
+   "detail": "'Boeing' ORG"
+  },
+  "ner_precision:D03:507:p4:American": {
    "metric": "ner_precision",
    "lang": "en",
    "dev": "D03",
@@ -4553,8 +4581,29 @@
    "metric": "ner_recall",
    "lang": "en",
    "dev": "D05",
-   "ok": false,
-   "detail": "'Yemen' missed"
+   "ok": true,
+   "detail": "'Yemen' <- 'Yemen'"
+  },
+  "typing:D05:999:6:Yemen": {
+   "metric": "typing",
+   "lang": "en",
+   "dev": "D05",
+   "ok": true,
+   "detail": "'Yemen' GPE (gold GPE)"
+  },
+  "resolution:D05:999:6:Yemen": {
+   "metric": "resolution",
+   "lang": "en",
+   "dev": "D05",
+   "ok": true,
+   "detail": "'Yemen' -> 'Yemen' [exact] (gold Yemen)"
+  },
+  "canonical_hygiene:D05:999:6:Yemen": {
+   "metric": "canonical_hygiene",
+   "lang": "en",
+   "dev": "D05",
+   "ok": true,
+   "detail": "canonical 'Yemen'"
   },
   "ner_recall:D05:999:7:Houthis": {
    "metric": "ner_recall",
@@ -4626,7 +4675,14 @@
    "ok": true,
    "detail": "'Saudi' NORP"
   },
-  "ner_precision:D05:999:p6:Houthis": {
+  "ner_precision:D05:999:p6:Yemen": {
+   "metric": "ner_precision",
+   "lang": "en",
+   "dev": "D05",
+   "ok": true,
+   "detail": "'Yemen' GPE"
+  },
+  "ner_precision:D05:999:p7:Houthis": {
    "metric": "ner_precision",
    "lang": "en",
    "dev": "D05",
@@ -5128,28 +5184,28 @@
    "lang": "en",
    "dev": "D06",
    "ok": true,
-   "detail": "'Hamas' <- 'Hamas&#039;s'"
+   "detail": "'Hamas' <- 'Hamas'"
   },
   "typing:D06:1061:4:Hamas": {
    "metric": "typing",
    "lang": "en",
    "dev": "D06",
-   "ok": false,
-   "detail": "'Hamas' NORP (gold ORG)"
+   "ok": true,
+   "detail": "'Hamas' ORG (gold ORG)"
   },
   "resolution:D06:1061:4:Hamas": {
    "metric": "resolution",
    "lang": "en",
    "dev": "D06",
    "ok": true,
-   "detail": "'Hamas&#039;s' -> 'Hamas&#039;s' [exact] (gold Hamas)"
+   "detail": "'Hamas' -> 'Hamas' [exact] (gold Hamas)"
   },
   "canonical_hygiene:D06:1061:4:Hamas": {
    "metric": "canonical_hygiene",
    "lang": "en",
    "dev": "D06",
-   "ok": false,
-   "detail": "canonical 'Hamas&#039;s'"
+   "ok": true,
+   "detail": "canonical 'Hamas'"
   },
   "ner_recall:D06:1061:5:Gaza": {
    "metric": "ner_recall",
@@ -5263,12 +5319,12 @@
    "ok": true,
    "detail": "'Gaza' GPE"
   },
-  "ner_precision:D06:1061:p4:Hamas&#039;s": {
+  "ner_precision:D06:1061:p4:Hamas": {
    "metric": "ner_precision",
    "lang": "en",
    "dev": "D06",
    "ok": true,
-   "detail": "'Hamas&#039;s' NORP"
+   "detail": "'Hamas' ORG"
   },
   "ner_precision:D06:1061:p5:Gaza": {
    "metric": "ner_precision",
@@ -15204,11 +15260,11 @@
      },
      {
       "field": "lead",
-      "text": "Spain&#039;s",
-      "type": "NORP",
-      "canonical": "Spain&#039;s",
+      "text": "Spain",
+      "type": "GPE",
+      "canonical": "Spain",
       "method": "exact",
-      "evidence": "'Spain&#039;s' is a trusted name of 'Spain&#039;s'"
+      "evidence": "'Spain' is a trusted name of 'Spain'"
      }
     ]
    },
@@ -15274,11 +15330,11 @@
      },
      {
       "field": "lead",
-      "text": "secretary&#039;s &#039;State",
+      "text": "Force",
       "type": "ORG",
-      "canonical": "secretary&#039;s &#039;State",
-      "method": "exact",
-      "evidence": "'secretary&#039;s &#039;State' is a trusted name of 'secretary&#039;s &#039;State'"
+      "canonical": "Force",
+      "method": "new",
+      "evidence": "no trusted match"
      },
      {
       "field": "lead",
@@ -15295,8 +15351,8 @@
     "united states"
    ],
    "roles": {
-    "defense": "actor",
-    "united states": "actor"
+    "united states": "actor",
+    "defense": "actor"
    }
   },
   "D03": {
@@ -15325,6 +15381,14 @@
       "canonical": "F/A-XX",
       "method": "exact",
       "evidence": "'F/A-XX' is a trusted name of 'F/A-XX'"
+     },
+     {
+      "field": "lead",
+      "text": "Boeing",
+      "type": "ORG",
+      "canonical": "Boeing",
+      "method": "exact",
+      "evidence": "'Boeing' is a trusted name of 'Boeing'"
      },
      {
       "field": "lead",
@@ -15434,9 +15498,9 @@
     "united states"
    ],
    "roles": {
-    "united states": "actor",
+    "boeing": "actor",
     "navy": "actor",
-    "boeing": "actor"
+    "united states": "actor"
    }
   },
   "D04": {
@@ -16256,6 +16320,14 @@
      },
      {
       "field": "lead",
+      "text": "Yemen",
+      "type": "GPE",
+      "canonical": "Yemen",
+      "method": "exact",
+      "evidence": "'Yemen' is a trusted name of 'Yemen'"
+     },
+     {
+      "field": "lead",
       "text": "Houthis",
       "type": "ORG",
       "canonical": "Houthis",
@@ -16320,9 +16392,9 @@
     "saudi arabia"
    ],
    "roles": {
+    "houthis": "actor",
     "saudi arabia": "actor",
-    "pakistan": "actor",
-    "houthis": "actor"
+    "pakistan": "actor"
    }
   },
   "D06": {
@@ -16362,11 +16434,11 @@
      },
      {
       "field": "lead",
-      "text": "Hamas&#039;s",
-      "type": "NORP",
-      "canonical": "Hamas&#039;s",
+      "text": "Hamas",
+      "type": "ORG",
+      "canonical": "Hamas",
       "method": "exact",
-      "evidence": "'Hamas&#039;s' is a trusted name of 'Hamas&#039;s'"
+      "evidence": "'Hamas' is a trusted name of 'Hamas'"
      },
      {
       "field": "lead",
@@ -16467,10 +16539,10 @@
     "izz al-din al-beik"
    ],
    "roles": {
-    "israel": "actor",
+    "gaza": "actor",
     "hamas": "actor",
-    "izz al-din al-beik": "actor",
-    "gaza": "actor"
+    "israel": "actor",
+    "izz al-din al-beik": "actor"
    }
   },
   "D07": {
@@ -16719,8 +16791,8 @@
     "ukraine"
    ],
    "roles": {
-    "russia": "actor",
-    "ukraine": "actor"
+    "ukraine": "actor",
+    "russia": "actor"
    }
   },
   "D09": {
@@ -16870,8 +16942,8 @@
     "united kingdom"
    ],
    "roles": {
-    "argentina": "actor",
     "united kingdom": "actor",
+    "argentina": "actor",
     "milei": "actor"
    }
   },
@@ -17166,8 +17238,8 @@
     "russia"
    ],
    "roles": {
-    "milrem": "actor",
     "estonia": "actor",
+    "milrem": "actor",
     "russia": "actor"
    }
   },
@@ -17305,8 +17377,8 @@
    ],
    "roles": {
     "estonia": "actor",
-    "russia": "actor",
-    "milrem": "actor"
+    "milrem": "actor",
+    "russia": "actor"
    }
   },
   "D13": {
@@ -17642,9 +17714,9 @@
     "intertek usa, inc"
    ],
    "roles": {
+    "carteret": "actor",
     "chelsea, ma": "actor",
-    "intertek usa, inc": "actor",
-    "carteret": "actor"
+    "intertek usa, inc": "actor"
    }
   },
   "D17": {
@@ -17771,8 +17843,8 @@
     "netherlands"
    ],
    "roles": {
-    "israel": "actor",
-    "netherlands": "actor"
+    "netherlands": "actor",
+    "israel": "actor"
    }
   },
   "D18": {
@@ -17982,8 +18054,8 @@
     "united states"
    ],
    "roles": {
-    "iraq": "actor",
     "united states": "actor",
+    "iraq": "actor",
     "iran": "actor"
    }
   },
@@ -18431,10 +18503,10 @@
     "world news"
    ],
    "roles": {
+    "malaysia": "actor",
     "world news": "actor",
     "myanmar": "actor",
-    "gaza": "actor",
-    "malaysia": "actor"
+    "gaza": "actor"
    }
   },
   "D22": {
@@ -18682,7 +18754,7 @@
       "type": "PERSON",
       "canonical": "impegno moralmente vincolante su sicurezza IA' '",
       "method": "fuzzy-provisional",
-      "evidence": "'impegno moralmente vincolante su sicurezza ia' '' scored 98 (threshold 80); not stored as an alias"
+      "evidence": "'impegno moralmente vincolante su sicurezza ia' '' scored 97 (threshold 80); not stored as an alias"
      }
     ],
     "267": [
@@ -18790,9 +18862,9 @@
       "field": "title",
       "text": "Súper Inteligencia'",
       "type": "ORG",
-      "canonical": "Súper Inteligencia'",
+      "canonical": "Súper Inteligencia",
       "method": "new",
-      "evidence": "fuzzy candidate 'Super Intelligence' (100) refused: different name tokens"
+      "evidence": "fuzzy candidate 'Super Intelligence' (97) refused: different name tokens"
      },
      {
       "field": "lead",
@@ -19194,10 +19266,10 @@
     "su última propuesta para un acuerdo de paz"
    ],
    "roles": {
-    "que recibió la respuesta": "actor",
     "la moneda de irán se hunde en un": "actor",
-    "por la guerra y la incertidumbre económica": "actor",
     "su última propuesta para un acuerdo de paz": "actor",
+    "por la guerra y la incertidumbre económica": "actor",
+    "que recibió la respuesta": "actor",
     "oficial de eeuu": "actor"
    }
   },
