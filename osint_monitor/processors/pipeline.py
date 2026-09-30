@@ -797,21 +797,29 @@ def _process_single_item(
     session.flush()
     stats["new_items"] += 1
 
-    # Multilingual: detect and translate if non-English
-    try:
-        from osint_monitor.processors.language import process_multilingual_item
-        raw_item = process_multilingual_item(raw_item)
-    except Exception:
-        pass  # continue with original language
+    # Language: Italian / Spanish items are parsed by their own NER model (never translated); other
+    # scripts are translated to English for NER when a translator is available
+    from osint_monitor.processors.language import item_language
+    source_name = raw_item.source_name
+    lang = item_language(source_name, f"{raw_item.title} {raw_item.content or ''}")
+    if lang not in ("en", "it", "es"):
+        try:
+            from osint_monitor.processors.language import process_multilingual_item
+            raw_item = process_multilingual_item(raw_item)
+            lang = "en"
+        except Exception:
+            pass  # continue with original language (no trusted NER model: no entities)
 
     # NLP: Extract entities
     text = f"{raw_item.title} {raw_item.content}"
     extracted = []
     try:
-        extracted = extract_entities(text)
+        extracted = extract_entities(text, lang)
+        from osint_monitor.processors.institutions import item_qualifiers
+        context = item_qualifiers([(e.text, e.entity_type.value) for e in extracted], source_name)
         seen_entity_roles: set[tuple[int, str]] = set()
         for ext_entity in extracted:
-            entity = resolver.resolve(ext_entity)
+            entity = resolver.resolve(ext_entity, context)
             key = (entity.id, ext_entity.role.value)
             if key in seen_entity_roles:
                 continue  # skip duplicate entity+role per item
@@ -822,6 +830,8 @@ def _process_single_item(
                 role=ext_entity.role.value,
                 confidence=ext_entity.confidence,
                 span_text=ext_entity.text,
+                resolution_method=resolver.last_method,
+                resolution_evidence=(resolver.last_evidence or "")[:500] or None,
             ))
             stats["entities_extracted"] += 1
         session.flush()

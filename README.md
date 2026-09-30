@@ -22,6 +22,8 @@ source .venv/bin/activate            # Windows: .venv\Scripts\activate
 python -m pip install --upgrade pip setuptools wheel
 pip install -e ".[all,dev]"
 python -m spacy download en_core_web_lg
+python -m spacy download it_core_news_md    # Italian feeds (optional: without it, Italian items get no entities)
+python -m spacy download es_core_news_md    # Spanish feeds (optional, likewise)
 
 # 2. Configure
 cp .env.example .env                 # Windows: copy .env.example .env

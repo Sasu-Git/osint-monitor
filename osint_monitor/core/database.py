@@ -122,6 +122,9 @@ class ItemEntity(Base):
     role: Mapped[str] = mapped_column(String(20), default="SUBJECT")  # SUBJECT, OBJECT, LOCATION
     confidence: Mapped[float] = mapped_column(Float, default=1.0)
     span_text: Mapped[str | None] = mapped_column(Text)
+    # exact | normalised | fuzzy-provisional | new, and what supported it (processors/entity_resolver.py)
+    resolution_method: Mapped[str | None] = mapped_column(String(30))
+    resolution_evidence: Mapped[str | None] = mapped_column(Text)
 
     item: Mapped["RawItem"] = relationship(back_populates="item_entities")
     entity: Mapped["Entity"] = relationship(back_populates="item_entities")
@@ -217,6 +220,8 @@ class EventEntity(Base):
     role: Mapped[str] = mapped_column(String(20), default="SUBJECT")
     # Party participating in / driving the development, as opposed to an incidental mention
     is_principal: Mapped[bool] = mapped_column(Boolean, default=False, nullable=False)
+    # role in the development: actor | participant | target | affected | institutional_context | subject | location
+    actor_role: Mapped[str | None] = mapped_column(String(30))
 
     event: Mapped["Event"] = relationship(back_populates="event_entities")
     entity: Mapped["Entity"] = relationship(back_populates="event_entities")

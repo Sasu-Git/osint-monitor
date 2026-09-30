@@ -75,10 +75,18 @@ def m003_development_fields(conn: Connection) -> None:
     _add_column(conn, "event_entities", "is_principal", "BOOLEAN NOT NULL DEFAULT FALSE")
 
 
+def m004_entity_resolution(conn: Connection) -> None:
+    """How each mention was resolved (method + evidence) and each event entity's role in the development."""
+    _add_column(conn, "item_entities", "resolution_method", "VARCHAR(30)")
+    _add_column(conn, "item_entities", "resolution_evidence", "TEXT")
+    _add_column(conn, "event_entities", "actor_role", "VARCHAR(30)")
+
+
 MIGRATIONS: list[tuple[int, Callable[[Connection], None]]] = [
     (1, m001_legacy),
     (2, m002_situations),
     (3, m003_development_fields),
+    (4, m004_entity_resolution),
 ]
 
 
