@@ -55,6 +55,7 @@ class Gate:
     prerequisite: str | None = None      # key into PREREQUISITES
     fallback_only: bool = False          # built only if another collector cannot be imported
     config_enabled: bool = True          # sources.yaml ``enabled``
+    access: str | None = None            # sources.yaml ``access``: why it is off / what it needs
 
 
 @dataclass(frozen=True)
@@ -69,6 +70,8 @@ class Endpoint:
     match: tuple[str, str] | None = None  # ("url" | "title", token): attributes items to this target
     gate: Gate = field(default_factory=Gate)
     note: str = ""
+    language: str | None = None          # ISO 639-1, from sources.yaml (content is stored untranslated)
+    category: str | None = None          # sources.yaml category (-> provenance category_roles)
 
     @property
     def key(self) -> str:
@@ -111,7 +114,7 @@ def gate_status(gate: Gate, env=None) -> tuple[bool, str | None]:
     """(enabled, reason it is not)."""
     env = os.environ if env is None else env
     if not gate.config_enabled:
-        return False, "disabled in config/sources.yaml"
+        return False, "disabled in config/sources.yaml" + (f": {gate.access}" if gate.access else "")
     if gate.fallback_only:
         return False, "fallback only: built when adsb_tracks cannot be imported"
     missing = [v for v in gate.env if not env.get(v)]
@@ -141,8 +144,9 @@ def configured_endpoints(config=None) -> list[Endpoint]:
     add = out.append
 
     for feed in config.rss_feeds:
-        add(Endpoint("rss", "RSSCollector", _feed_identity(feed.name), feed.name, "RSS feed", feed.url,
-                     gate=Gate(config_enabled=feed.enabled)))
+        add(Endpoint("rss", "RSSCollector", feed.identity or feed.name, feed.name, "RSS feed", feed.url,
+                     gate=Gate(config_enabled=feed.enabled, access=feed.access),
+                     language=feed.language, category=feed.category))
     instances = config.nitter_instances or ["https://nitter.net"]
     for account in config.twitter_accounts:
         user = account.username.lstrip("@")
@@ -180,10 +184,10 @@ def configured_endpoints(config=None) -> list[Endpoint]:
     for fir in govint.NOTAMCollector.FIRS_OF_INTEREST:
         add(Endpoint("government", "NOTAMCollector", "US FAA", "NOTAMs", "NOTAM API", govint.NOTAMCollector.FAA_API_URL,
                      target=fir, match=("title", fir), gate=Gate(env=("FAA_NOTAM_KEY",))))
-    add(Endpoint("documents", "DocumentCollector", "US Federal Register", "government_documents", "documents API",
-                 DocumentCollector.FEDERAL_REGISTER_URL, match=("url", "federalregister.gov")))
-    add(Endpoint("documents", "DocumentCollector", "Congressional Research Service", "government_documents",
-                 "CRS products RSS", DocumentCollector.CRS_RSS_URL, match=("url", "crsreports.congress.gov")))
+    add(Endpoint("documents", "DocumentCollector", "US Federal Register", DocumentCollector.FEDERAL_REGISTER_SOURCE,
+                 "documents API", DocumentCollector.FEDERAL_REGISTER_URL, language="en"))
+    add(Endpoint("documents", "DocumentCollector", "Congressional Research Service", DocumentCollector.CRS_SOURCE,
+                 "CRS products RSS", DocumentCollector.CRS_RSS_URL, language="en"))
 
     add(Endpoint("sigint", "IAEACollector", "IAEA", "IAEA Nuclear Safeguards", "top news feed", sigint.IAEACollector.FEED_URL))
     add(Endpoint("sigint", "NVDCollector", "NIST NVD", "NVD CVE Intelligence", "CVE API (7 days)", sigint.NVDCollector.BASE_URL,
@@ -251,12 +255,16 @@ def configured_endpoints(config=None) -> list[Endpoint]:
     return out
 
 
-_IDENTITIES = {"Reuters World": "Reuters", "BBC World": "BBC", "Defense.gov": "US Department of Defense",
-               "State Department": "US State Department"}
+_COLLECTOR_TYPES = {"sanctions": "sanctions", "social": "twitter"}     # provenance collector_roles keys
 
 
-def _feed_identity(name: str) -> str:
-    return _IDENTITIES.get(name, name)
+def provenance_role(ep: Endpoint, resolver=None) -> str:
+    """The source role provenance assigns to the endpoint's items (config/provenance.yaml)."""
+    from osint_monitor.processors.provenance.confidence import EvidenceItem
+    from osint_monitor.processors.provenance.resolve import ProvenanceResolver
+    resolver = resolver or ProvenanceResolver()
+    return resolver.source_role(EvidenceItem(source_name=ep.source_name, source_category=ep.category,
+                                             collector_type=_COLLECTOR_TYPES.get(ep.family))).value
 
 
 # --- observations ---------------------------------------------------------------------------------
@@ -370,6 +378,7 @@ class EndpointRow:
     last_24h: int | None
     state: str
     evidence: str = ""
+    role: str = ""                       # provenance source role of its items
 
 
 def _attributed(ep: Endpoint, obs: SourceObservation, now: datetime | None) -> tuple[int, datetime | None, int]:
@@ -382,6 +391,8 @@ def _attributed(ep: Endpoint, obs: SourceObservation, now: datetime | None) -> t
 
 def build_inventory(endpoints: list[Endpoint], observations: Observations | None = None,
                     log: dict[str, LogEvidence] | None = None, env=None) -> list[EndpointRow]:
+    from osint_monitor.processors.provenance.resolve import ProvenanceResolver
+    resolver = ProvenanceResolver()
     gates = {ep.key: gate_status(ep.gate, env) for ep in endpoints}
     # Items are attributed among the endpoints enabled here: a disabled alternative mode (FIRMS area
     # API without its key) must not be credited with what the enabled mode stored.
@@ -418,7 +429,7 @@ def build_inventory(endpoints: list[Endpoint], observations: Observations | None
             state = NO_OBSERVATIONS
         else:
             state = UNKNOWN
-        rows.append(EndpointRow(ep, enabled, reason, items, last, day, state, evidence))
+        rows.append(EndpointRow(ep, enabled, reason, items, last, day, state, evidence, provenance_role(ep, resolver)))
     return rows
 
 
@@ -433,6 +444,9 @@ def summarize(rows: list[EndpointRow], observations: Observations | None) -> dic
         "endpoints_enabled": len(enabled),
         "endpoints_disabled": len(rows) - len(enabled),
         "api_urls_configured": len({r.endpoint.url for r in rows}),
+        # enabled identities by the provenance role of their items, and content languages
+        "enabled_identities_by_role": dict(Counter(role for _, role in {(r.endpoint.identity, r.role) for r in enabled})),
+        "enabled_endpoints_by_language": dict(Counter(r.endpoint.language or "unspecified" for r in enabled)),
     }
     if observations is not None:
         configured_names = {r.endpoint.source_name for r in rows}
@@ -498,12 +512,24 @@ def naming_issues(endpoints: list[Endpoint], observations: Observations | None =
     per_identity = defaultdict(set)
     for e in endpoints:
         per_identity[e.identity].add(e.source_name)
+    collectors_of = defaultdict(set)
+    for e in endpoints:
+        collectors_of[e.identity].add(e.collector)
     for identity, ns in sorted(per_identity.items()):
-        if len(ns) > 1:
-            issues.append(f"{identity} is stored under {len(ns)} source names: {sorted(ns)}")
+        # several feeds of one organisation declared in sources.yaml (`identity`) are the design;
+        # one organisation split across different collectors is not
+        if len(ns) > 1 and collectors_of[identity] != {"RSSCollector"}:
+            issues.append(f"{identity} is stored under {len(ns)} source names by different collectors: {sorted(ns)}")
+    identity_of = {e.source_name: e.identity for e in endpoints}
     for name, spec in sorted((prov.get("sources") or {}).items()):
-        if isinstance(spec, dict) and spec.get("origin") and spec["origin"] != name:
-            issues.append(f"outlet {name!r} has provenance origin {spec['origin']!r} (outlet name != origin name)")
+        if not (isinstance(spec, dict) and spec.get("origin")):
+            continue
+        declared = identity_of.get(name)
+        if declared is None or declared == name:
+            if spec["origin"] != name:
+                issues.append(f"{name!r} has provenance origin {spec['origin']!r} but no declared identity")
+        elif spec["origin"] != declared:
+            issues.append(f"{name!r}: identity {declared!r} in sources.yaml, origin {spec['origin']!r} in provenance.yaml")
     if observations is not None:
         rss_named = {e.source_name for e in endpoints if e.collector == "NitterCollector"}
         typed_rss = sorted(n for n in rss_named if observations.source_types.get(n) == "rss")
@@ -529,7 +555,11 @@ def format_inventory(rows: list[EndpointRow], summary: dict, issues: list[str], 
               f"  configured:        {s['endpoints_configured']}   ({s['api_urls_configured']} distinct feed/API URLs, "
               f"{s['source_names_configured']} stored source names)",
               f"  enabled:           {s['endpoints_enabled']}",
-              f"  disabled:          {s['endpoints_disabled']}"]
+              f"  disabled:          {s['endpoints_disabled']}",
+              "  enabled identities by provenance role: "
+              + ", ".join(f"{k} {v}" for k, v in sorted(s["enabled_identities_by_role"].items())),
+              "  enabled endpoints by language: "
+              + ", ".join(f"{k} {v}" for k, v in sorted(s["enabled_endpoints_by_language"].items()))]
     if "endpoints_observed" in s:
         c0, c1 = s["coverage"]
         lines += [f"  observed:          {s['endpoints_observed']}"
@@ -555,7 +585,8 @@ def format_inventory(rows: list[EndpointRow], summary: dict, issues: list[str], 
             e = r.endpoint
             target = f" [{e.target}]" if e.target else ""
             items = "?" if r.items is None else str(r.items)
-            lines.append(f"  {e.source_name}{target} -- {e.endpoint}")
+            meta = ", ".join(x for x in (e.identity if e.identity != e.source_name else "", r.role, e.language or "") if x)
+            lines.append(f"  {e.source_name}{target} -- {e.endpoint}" + (f"   ({meta})" if meta else ""))
             lines.append(f"      {r.state}; items {items}, last {_when(r.last_observed)}"
                          + (f"; {r.disabled_reason}" if r.disabled_reason else ""))
             if r.evidence:
@@ -574,7 +605,8 @@ def inventory_json(rows: list[EndpointRow], summary: dict, issues: list[str]) ->
                 "endpoint": e.endpoint, "url": e.url, "target": e.target, "enabled": r.enabled,
                 "disabled_reason": r.disabled_reason, "items": r.items,
                 "last_observed": r.last_observed.isoformat() if r.last_observed else None,
-                "last_24h": r.last_24h, "state": r.state, "evidence": r.evidence, "note": e.note}
+                "last_24h": r.last_24h, "state": r.state, "evidence": r.evidence, "note": e.note,
+                "language": e.language, "category": e.category, "role": r.role}
     s = dict(summary)
     if "coverage" in s:
         s["coverage"] = [t.isoformat() if t else None for t in s["coverage"]]

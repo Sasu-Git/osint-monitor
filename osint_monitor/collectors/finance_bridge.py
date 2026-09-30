@@ -216,12 +216,12 @@ class FinanceBridgeCollector(BaseCollector):
                 vix = summary.get("current_value", 0)
                 trend = summary.get("trend", "")
 
-                if vix > 25:
-                    level = "ELEVATED FEAR"
+                if vix > 40:
+                    level = "EXTREME FEAR"
                 elif vix > 30:
                     level = "HIGH FEAR"
-                elif vix > 40:
-                    level = "EXTREME FEAR"
+                elif vix > 25:
+                    level = "ELEVATED FEAR"
                 else:
                     level = "NORMAL"
 

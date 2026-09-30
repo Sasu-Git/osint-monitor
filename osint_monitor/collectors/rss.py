@@ -28,9 +28,13 @@ class RSSCollector(BaseCollector):
                 resp = _requests.get(self.url, timeout=10, headers=_RSS_HEADERS)
                 resp.raise_for_status()
                 feed = feedparser.parse(resp.text)
-            except _requests.RequestException:
+            except _requests.RequestException as e:
                 # Fallback to feedparser's own fetcher (different UA, handles redirects)
                 feed = feedparser.parse(self.url)
+                status = feed.get("status")
+                if not feed.entries and (status is None or status >= 400):
+                    # a refused or missing feed is an error, not "0 items"
+                    raise RuntimeError(f"{e}" + (f" (fallback HTTP {status})" if status else ""))
             items = self.entries_to_items(feed.entries[:self.max_items], self.name)
             print(f"  [ok] {self.name}: {len(items)} items")
         except Exception as e:
