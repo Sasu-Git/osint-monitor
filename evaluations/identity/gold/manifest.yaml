@@ -1,26 +1,69 @@
-revision: 1
-frozen_at: '2026-10-01T19:21:11Z'
+revision: 2
+frozen_at: '2026-10-01T19:28:20Z'
 note: 'Owner-reviewed identity gold: 189 cases, every verdict given by the owner in the blind review page (draft
-  label hidden until the verdict). Notes are the owner''s, verbatim.'
+  label hidden until the verdict). Notes are the owner''s, verbatim. Revision 2: Owner confirmation (2026-10-01)
+  of four cases whose notes described the same Development: C034, C064, C076, C103 -> SAME_DEVELOPMENT. Supersedes
+  revision 1 for Phase 2 evaluation.'
+changes_from_previous:
+- case: C034
+  from: DIFFERENT_DEVELOPMENT
+  to: SAME_DEVELOPMENT
+- case: C064
+  from: DIFFERENT_DEVELOPMENT
+  to: SAME_DEVELOPMENT
+- case: C076
+  from: DIFFERENT_DEVELOPMENT
+  to: SAME_DEVELOPMENT
+- case: C103
+  from: DIFFERENT_DEVELOPMENT
+  to: SAME_DEVELOPMENT
 cases: 189
 labels:
-  DIFFERENT_DEVELOPMENT: 124
-  SAME_DEVELOPMENT: 64
+  DIFFERENT_DEVELOPMENT: 120
+  SAME_DEVELOPMENT: 68
   AMBIGUOUS: 1
 per_split:
   development:
-    DIFFERENT_DEVELOPMENT: 104
-    SAME_DEVELOPMENT: 54
+    DIFFERENT_DEVELOPMENT: 100
+    SAME_DEVELOPMENT: 58
     AMBIGUOUS: 1
   holdout:
     SAME_DEVELOPMENT: 10
     DIFFERENT_DEVELOPMENT: 20
-corrected_drafts: 9
+corrected_drafts: 13
 sha256:
-  gold/identity-gold.yaml: cc634bc7ccabdbb08882158a5c8c2dcea3adf7054db8c7f029aabbbb7a8f75ab
+  gold/identity-gold.yaml: cc98765b7506b9faa3b81913655978c23afc0d21202e8b69e85c1217ffa2cc58
   manifest.yaml: 9be66ed8b7aab51c2e64b6f17763d59b919345509a093b6dd1af61c007a6a401
   review/review-cases.json: 7fb653929096e7cf54dbce64b07240e405bd215ab1d0a72e83da8494059522d5
   review/draft-labels.json: 400805a5934ddc11f34c999d6abda598b1b2afa22619adddf4d313fa1a282692
-  review/owner-verdicts.yaml: a39166882902d881e2cb59be65c28eb983ac2f68d84ba5f820ba7bf0f23000f5
+  review/owner-verdicts.yaml: e7af82ba0b636351b3ded41d98ba8456c9fa7e5f12374c621b1a2e6d58f833c7
   review/labeller-input.md: d343e987ae6a36d71f99204da12dd1adada6c2eb671a24b02ff52ce6a3d25411
   review/cases.json: bb227c1de8e684a2960d65245909ae4bb220c57d3bd2ad716bf00e6feff2fe8e
+previous_revisions:
+- revision: 1
+  frozen_at: '2026-10-01T19:21:11Z'
+  note: 'Owner-reviewed identity gold: 189 cases, every verdict given by the owner in the blind review page (draft
+    label hidden until the verdict). Notes are the owner''s, verbatim.'
+  cases: 189
+  labels:
+    DIFFERENT_DEVELOPMENT: 124
+    SAME_DEVELOPMENT: 64
+    AMBIGUOUS: 1
+  per_split:
+    development:
+      DIFFERENT_DEVELOPMENT: 104
+      SAME_DEVELOPMENT: 54
+      AMBIGUOUS: 1
+    holdout:
+      SAME_DEVELOPMENT: 10
+      DIFFERENT_DEVELOPMENT: 20
+  corrected_drafts: 9
+  sha256:
+    gold/identity-gold.yaml: cc634bc7ccabdbb08882158a5c8c2dcea3adf7054db8c7f029aabbbb7a8f75ab
+    manifest.yaml: 9be66ed8b7aab51c2e64b6f17763d59b919345509a093b6dd1af61c007a6a401
+    review/review-cases.json: 7fb653929096e7cf54dbce64b07240e405bd215ab1d0a72e83da8494059522d5
+    review/draft-labels.json: 400805a5934ddc11f34c999d6abda598b1b2afa22619adddf4d313fa1a282692
+    review/owner-verdicts.yaml: a39166882902d881e2cb59be65c28eb983ac2f68d84ba5f820ba7bf0f23000f5
+    review/labeller-input.md: d343e987ae6a36d71f99204da12dd1adada6c2eb671a24b02ff52ce6a3d25411
+    review/cases.json: bb227c1de8e684a2960d65245909ae4bb220c57d3bd2ad716bf00e6feff2fe8e
+  git: 0f61719

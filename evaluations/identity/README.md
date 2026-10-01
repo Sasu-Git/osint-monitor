@@ -17,7 +17,7 @@ blind to the proposed Phase 2 algorithm, and the sheet says nothing about what a
 | 2 | Replay the **current** pipeline tick by tick; generate candidate pairs from several rules | `scripts/replay_current.py` → `review/system-trace/` | done |
 | 3 | Draft labels **blind**: the labeller sees only item text, outlet, publication time, language and the definition | `scripts/make_labeller_input.py` → `review/labeller-input.md`; labels → `review/draft-labels.json` | drafted |
 | 4 | Reviewer sheet: current system columns, proposed label, rationale, confidence, blank owner verdict; structural flags listed separately | `scripts/build_review_sheet.py` → `review/identity-review-sheet.md`, `review/review.html` (blind review page), `review/owner-verdicts.yaml` | done: 189/189 |
-| 5 | Apply owner verdicts, then freeze and hash the gold | `gold/identity-gold.yaml`, `gold/manifest.yaml` | **frozen, revision 1** |
+| 5 | Apply owner verdicts, then freeze and hash the gold | `gold/identity-gold.yaml`, `gold/manifest.yaml` | **frozen, revision 2** (supersedes revision 1) |
 | 6 | Only then implement stable identity against the frozen gold | – | unblocked (see `owner-notes-proposals.md`) |
 
 **Windows** (`manifest.yaml`): 4 ticks of 12 h each.
@@ -43,6 +43,26 @@ There is no multilingual holdout.
 - below-threshold hard negatives.
 
 Every rule is seeded and capped. The rules decide which pairs get labelled, never their labels.
+
+## Gold revisions
+
+**Revision 2 supersedes revision 1 for all Phase 2 evaluation.**
+
+| Rev | Change | SAME / DIFFERENT / AMBIGUOUS | Commit |
+|---|---|---|---|
+| 1 | owner verdicts on all 189 cases | 64 / 124 / 1 | 0f61719 |
+| 2 | owner confirmation (2026-10-01) of four cases whose notes described one Development: C034, C064, C076, C103 → SAME | 68 / 120 / 1 | this revision |
+
+Revision 1's hashes and commit are kept in `gold/manifest.yaml` under `previous_revisions`.
+`scripts/gold_check.py` verifies:
+- the hashes, and the history against the git blobs;
+- integrity;
+- that the holdout is unchanged since revision 1;
+- that the recorded changes are the only ones;
+- that notes are verbatim;
+- the totals.
+
+The semantic contract is in `development-identity-contract.md`.
 
 ## Gold format (after freezing)
 

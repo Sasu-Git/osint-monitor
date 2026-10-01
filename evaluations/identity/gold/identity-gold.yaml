@@ -864,11 +864,11 @@ C034:
   b: sx-351
   boundary_reason: roundup
   draft_label: DIFFERENT_DEVELOPMENT
-  label: DIFFERENT_DEVELOPMENT
+  label: SAME_DEVELOPMENT
   note: should be bundled together, it's literally the accompanying Q&A ( and btw we should vet the questions asked as well
     and possibly come up with other ones to launch /attach onto other threads)
   owner_confidence: high
-  source: owner (agrees with draft)
+  source: owner (corrected draft)
   split: development
   window: 2026-09-30-multilingual
 C035:
@@ -1197,12 +1197,12 @@ C064:
   b: sx-416
   boundary_reason: null
   draft_label: DIFFERENT_DEVELOPMENT
-  label: DIFFERENT_DEVELOPMENT
+  label: SAME_DEVELOPMENT
   note: basically same news, should bundle together and add to the development, before-after meeting only matters if there's
     a big dissonance between intentions/proposed aim of the meeting and the actual turnout (e.g. Zelensky - Trump live altercations
     along with JD Vance).
   owner_confidence: null
-  source: owner (agrees with draft)
+  source: owner (corrected draft)
   split: development
   window: 2026-09-30-multilingual
 C065:
@@ -1331,10 +1331,10 @@ C076:
   b: sx-275
   boundary_reason: null
   draft_label: DIFFERENT_DEVELOPMENT
-  label: DIFFERENT_DEVELOPMENT
+  label: SAME_DEVELOPMENT
   note: same attack though, should be clustered
   owner_confidence: null
-  source: owner (agrees with draft)
+  source: owner (corrected draft)
   split: development
   window: 2026-09-30-multilingual
 C077:
@@ -1630,10 +1630,10 @@ C103:
   b: sx-350
   boundary_reason: roundup
   draft_label: DIFFERENT_DEVELOPMENT
-  label: DIFFERENT_DEVELOPMENT
+  label: SAME_DEVELOPMENT
   note: different but should be bundled together into one piece of news
   owner_confidence: high
-  source: owner (agrees with draft)
+  source: owner (corrected draft)
   split: development
   window: 2026-09-30-multilingual
 C104:

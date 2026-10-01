@@ -474,12 +474,12 @@ C033:
   note: null
   reviewed_at: '2026-10-01T09:50:10Z'
 C034:
-  verdict: DIFFERENT_DEVELOPMENT
+  verdict: SAME_DEVELOPMENT
   confidence: high
   boundary_reason: roundup
   note: should be bundled together, it's literally the accompanying Q&A ( and btw we should vet the questions asked as well
     and possibly come up with other ones to launch /attach onto other threads)
-  reviewed_at: '2026-10-01T10:27:54Z'
+  reviewed_at: '2026-10-01T00:00:00Z'
 C035:
   verdict: DIFFERENT_DEVELOPMENT
   confidence: high
@@ -657,13 +657,13 @@ C063:
   note: null
   reviewed_at: '2026-10-01T09:54:00Z'
 C064:
-  verdict: DIFFERENT_DEVELOPMENT
+  verdict: SAME_DEVELOPMENT
   confidence: null
   boundary_reason: null
   note: basically same news, should bundle together and add to the development, before-after meeting only matters if there's
     a big dissonance between intentions/proposed aim of the meeting and the actual turnout (e.g. Zelensky - Trump live altercations
     along with JD Vance).
-  reviewed_at: '2026-10-01T10:31:47Z'
+  reviewed_at: '2026-10-01T00:00:00Z'
 C065:
   verdict: DIFFERENT_DEVELOPMENT
   confidence: null
@@ -731,11 +731,11 @@ C075:
   note: null
   reviewed_at: '2026-10-01T19:12:48Z'
 C076:
-  verdict: DIFFERENT_DEVELOPMENT
+  verdict: SAME_DEVELOPMENT
   confidence: null
   boundary_reason: null
   note: same attack though, should be clustered
-  reviewed_at: '2026-10-01T10:34:51Z'
+  reviewed_at: '2026-10-01T00:00:00Z'
 C077:
   verdict: SAME_DEVELOPMENT
   confidence: null
@@ -895,11 +895,11 @@ C102:
   note: null
   reviewed_at: '2026-10-01T19:15:26Z'
 C103:
-  verdict: DIFFERENT_DEVELOPMENT
+  verdict: SAME_DEVELOPMENT
   confidence: high
   boundary_reason: roundup
   note: different but should be bundled together into one piece of news
-  reviewed_at: '2026-10-01T10:37:56Z'
+  reviewed_at: '2026-10-01T00:00:00Z'
 C104:
   verdict: SAME_DEVELOPMENT
   confidence: null
