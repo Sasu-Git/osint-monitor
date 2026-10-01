@@ -1,0 +1,181 @@
+== E1 n=5 src=4/4 C1 confirmed dom=unknown sit=None rank=5.5 ["independently_confirmed", "widely_reported", "weak_evidence", "new_development"] region=iran
+   first=2026-09-30 09:43 last=2026-09-30 09:43 items 2026-09-29 11:08..2026-09-30 08:34
+   SUMMARY: Statement by Chief Pentagon Spokesman Sean Parnell on the Conclusion of the U.S. Military Mission in Iraq
+   DBprinc=['Iraq', 'Pentagon', 'U.S.']  MAINprinc=['united states']
+       149 DW World           2026-09-29 11:08 en      Iraq: US troops withdraw from their Iraqi US-led Operation Inherent Resolve mission against ISIS after 12 year
+       491 Defense News       2026-09-29 14:40 en      US forces exiting Iraq after 2 decades, leaving opening for Iran
+       164 France 24          2026-09-30 01:04 en      US forces leave Iraq, raising fears of Iran-backed militias amid power vacuum
+         1 Defense.gov        2026-09-30 07:00 en      Statement by Chief Pentagon Spokesman Sean Parnell on the Conclusion of the U.S. Military Mission in Iraq
+       157 France 24          2026-09-30 08:34 en      ‘The country has become a battlefield’: Last US troops exit Iraq
+== E2 n=3 src=3/3 C1 confirmed dom=diplomacy sit=None rank=11.0 ["independently_confirmed", "widely_reported", "new_development"] region=None
+   first=2026-09-30 09:43 last=2026-09-30 09:43 items 2026-09-29 21:26..2026-09-29 22:20
+   SUMMARY: Department of War and U.S. Navy Award Contract for F/A-XX Program
+   DBprinc=['Boeing', 'Navy', 'U.S.']  MAINprinc=[]
+       507 Breaking Defense   2026-09-29 21:26 en      Boeing wins Navy next-gen fighter F/A-XX competition
+         2 Defense.gov        2026-09-29 21:30 en      Department of War and U.S. Navy Award Contract for F/A-XX Program
+       487 Defense News       2026-09-29 22:20 en      US Navy selects Boeing to build next-generation F/A-XX fighter
+== E3 n=2 src=2/2 C2 probable dom=unknown sit=None rank=3.5 ["weak_evidence", "new_development"] region=None
+   first=2026-09-30 09:43 last=2026-09-30 09:43 items 2026-09-29 16:18..2026-09-29 16:59
+   SUMMARY: Pentagon awards Raytheon up to $20.7 billion to nearly double AMRAAM production
+   DBprinc=['Pentagon', 'Raytheon', 'U.S.']  MAINprinc=['raytheon', 'us department of defense']
+       488 Defense News       2026-09-29 16:18 en      Pentagon awards Raytheon up to $20.7 billion to nearly double AMRAAM production
+       510 Breaking Defense   2026-09-29 16:59 en      Raytheon nets potential $20.7 billion AMRAAM deal
+== E4 n=3 src=3/3 C1 confirmed dom=economic sit=us-iran rank=18.0 ["formal_decision", "independently_confirmed", "widely_reported", "new_development"] region=iran
+   first=2026-09-30 09:43 last=2026-09-30 09:43 items 2026-09-29 00:01..2026-09-30 02:28
+   SUMMARY: United States Disrupts Iran’s Proliferation-Sensitive Efforts in Support of UN Restrictions Fact Sheet
+   DBprinc=['Iran', 'Iranian', 'U.S.']  MAINprinc=['united states']
+       152 DW World           2026-09-29 00:01 en      US sanctions on Iran's aviation industry make travel less predictable as countries cancel flights
+        13 State Department   2026-09-29 17:32 en      United States Disrupts Iran’s Proliferation-Sensitive Efforts in Support of UN Restrictions Fact Sheet
+       279 Kyiv Independent   2026-09-30 02:28 en      US imposes sanctions against Russian companies tied to Iran weapons procurement
+== E5 n=6 src=3/3 C1 confirmed dom=unknown sit=None rank=5.0 ["independently_confirmed", "widely_reported", "weak_evidence", "new_development"] region=None
+   first=2026-09-30 09:43 last=2026-09-30 09:43 items 2026-09-30 06:56..2026-09-30 09:27
+   SUMMARY: Media, piloti del volo FlyDubai sarebbero uno dell'Oman e l'altro emiratino
+   DBprinc=['Israel', 'Volo Flydubai']  MAINprinc=[]
+        44 ANSA Mondo         2026-09-30 06:56 it      Media Israele, 'emergenza su volo da Dubai a Tel Aviv, decollati jet israeliani'
+       123 Rai News Esteri    2026-09-30 07:00 it      Volo FlyDubai, la ricostruzione di Tel Aviv: "Pilota ha cercato di far schiantare l'aereo"
+       122 Rai News Esteri    2026-09-30 07:58 it      Volo Flydubai, l'aereo diretto a Tel Aviv viene deviato in Arabia Saudita
+        40 ANSA Mondo         2026-09-30 08:40 it      'Emergenza sul volo FlyDubai per una lite tra pilota russo e copilota ucraino'
+       232 Il Sole 24 Ore Mon 2026-09-30 09:25 it      Allarme su volo FlyDubai dirottato, copilota accoltella comandante. Tentativo di far schiantare l’aereo
+        39 ANSA Mondo         2026-09-30 09:27 it      Media, piloti del volo FlyDubai sarebbero uno dell'Oman e l'altro emiratino
+== E6 n=4 src=4/4 C1 confirmed dom=unknown sit=None rank=9.5 ["senior_actor", "independently_confirmed", "widely_reported", "weak_evidence", "new_development"] region=None
+   first=2026-09-30 09:43 last=2026-09-30 09:43 items 2026-09-29 19:21..2026-09-30 08:09
+   SUMMARY: Ft, colloqui tra Trump e consiglieri per valutare uno stop all'export di gasolio
+   DBprinc=['Trump']  MAINprinc=['donald trump']
+       133 Rai News Esteri    2026-09-29 19:21 it      Gli Usa prestano alle aziende energetiche 40 milioni di barili di petrolio delle riserve strategiche
+       190 France 24 Español  2026-09-29 22:40 es      Informe desde Bruselas: La UE alerta sobre el suministro de gas ante la llegada del invierno
+        43 ANSA Mondo         2026-09-30 07:31 it      Ft, colloqui tra Trump e consiglieri per valutare uno stop all'export di gasolio
+       235 Il Sole 24 Ore Mon 2026-09-30 08:09 it      Ft: Trump valuta il divieto di export del gasolio per contenere la crisi dei prezzi
+== E7 n=3 src=2/2 C2 probable dom=unknown sit=None rank=3.5 ["weak_evidence", "new_development"] region=None
+   first=2026-09-30 09:43 last=2026-09-30 09:43 items 2026-09-30 01:04..2026-09-30 05:33
+   SUMMARY: Missili e droni su regione di Kiev, ucciso un bambino
+   DBprinc=['Ukraine']  MAINprinc=[]
+        49 ANSA Mondo         2026-09-30 01:04 it      Missili balistici lanciati su Kiev, esplosioni in città
+        47 ANSA Mondo         2026-09-30 02:30 it      Missili e droni su regione di Kiev, ucciso un bambino
+       237 Il Sole 24 Ore Mon 2026-09-30 05:33 it      Ucraina: missili balistici russi su Kiev, 2 morti. La Polonia chiude due aeroporti
+== E8 n=10 src=6/6 C1 confirmed dom=unknown sit=None rank=8.0 ["senior_actor", "independently_confirmed", "widely_reported", "weak_evidence", "repeated_coverage_penalty"] region=None
+   first=2026-09-30 09:43 last=2026-09-30 09:43 items 2026-09-29 19:04..2026-09-30 03:29
+   SUMMARY: Trump firma ordine esecutivo, 'inaugura l'era della Super Intelligenza'
+   DBprinc=['Trump', 'U.S.']  MAINprinc=['donald trump']
+       238 Il Sole 24 Ore Mon 2026-09-29 19:04 it      Trump, per Ai solo autoregolamentazione. Firmato l’ordine che cambia il nome in Super Intelligence
+       132 Rai News Esteri    2026-09-29 20:36 it      Trump incontra i vertici Big Tech sulla sicurezza AI: "Autoregolazione e nessun controllo federale"
+        57 ANSA Mondo         2026-09-29 20:36 it      Trump, 'da vertici big tech impegno moralmente vincolante su sicurezza IA'
+       267 Clarín Mundo       2026-09-29 20:42 es      Donald Trump anunció que los líderes del sector tecnológico firmaron un acuerdo "moralmente vinculante" para r
+        55 ANSA Mondo         2026-09-29 21:20 it      Trump, 'Usa valutano comitato di 10 persone per vigilare sull'IA'
+        71 Europa Press Inter 2026-09-29 23:02 es      Trump ordena renombrar la 'Inteligencia Artificial' como 'Súper Inteligencia' en todas las agencias del Gobier
+       129 Rai News Esteri    2026-09-29 23:05 it      Politica e scienza divise, gli esperti: “L'autoregolamentazione di Big Tech è una farsa"
+       131 Rai News Esteri    2026-09-29 23:32 it      Donald Trump e la nuova "età dell'oro": vertice con i big della tecnologia
+        48 ANSA Mondo         2026-09-30 01:10 it      Trump firma ordine esecutivo, 'inaugura l'era della Super Intelligenza'
+       176 France 24 Español  2026-09-30 03:29 es      Trump y los gigantes de la inteligencia artificial sellan un acuerdo "moralmente vinculante"
+== E9 n=5 src=4/4 C1 confirmed dom=unknown sit=None rank=4.5 ["independently_confirmed", "widely_reported", "weak_evidence"] region=None
+   first=2026-09-30 09:43 last=2026-09-30 09:43 items 2026-09-29 15:04..2026-09-30 03:45
+   SUMMARY: Al menos 440 detenidos en Francia en protestas estudiantiles unidas a la huelga de cientos de miles en el sector público
+   DBprinc=[]  MAINprinc=[]
+       111 BBC Mundo          2026-09-29 15:04 es      La anciana Maricarmen podrá volver a su casa tras el desalojo que puso el foco en la crisis de vivienda en Esp
+       271 Clarín Mundo       2026-09-29 18:08 es      Los reyes de España despliegan todo el protocolo para recibir a Emmanuel y Brigitte Macron en visita oficial
+       270 Clarín Mundo       2026-09-29 18:43 es      Presionado por las protestas, Pedro Sánchez anuncia decretos clave para enfrentar la crisis de la vivienda en 
+       181 France 24 Español  2026-09-30 02:47 es      Trabajadores públicos franceses se movilizan para exigir aumentos de salarios
+        76 Europa Press Inter 2026-09-30 03:45 es      Al menos 440 detenidos en Francia en protestas estudiantiles unidas a la huelga de cientos de miles en el sect
+== E10 n=4 src=4/4 C1 confirmed dom=unknown sit=None rank=5.5 ["independently_confirmed", "widely_reported", "weak_evidence", "new_development"] region=middle_east
+   first=2026-09-30 09:43 last=2026-09-30 09:43 items 2026-09-30 07:54..2026-09-30 09:02
+   SUMMARY: Israel-bound flight diverted after fight between pilots
+   DBprinc=['Israel']  MAINprinc=[]
+       222 South China Mornin 2026-09-30 07:54 en      FlyDubai flight to Israel diverted to Saudi Arabia after incident in cockpit
+       195 Al Jazeera         2026-09-30 08:00 en      Flydubai flight to Israel diverted to Saudi Arabia after emergency alert
+       158 France 24          2026-09-30 08:25 en      Israel-bound flight diverted to Saudi Arabia after brawl between pilots
+        81 BBC World          2026-09-30 09:02 en      Israel-bound flight diverted after fight between pilots
+== E11 n=3 src=3/3 C1 confirmed dom=unknown sit=None rank=3.5 ["independently_confirmed", "disputed", "widely_reported", "weak_evidence", "new_development"] region=north_korea
+   first=2026-09-30 09:43 last=2026-09-30 09:43 items 2026-09-30 05:24..2026-09-30 09:14
+   SUMMARY: South Korea demands apology from Pyongyang for landmine blasts that injured three
+   DBprinc=['South Korea']  MAINprinc=['south korea']
+        85 BBC World          2026-09-30 05:24 en      South Korea demands apology from Pyongyang for landmine blasts that injured three
+       194 Al Jazeera         2026-09-30 08:02 en      S Korea demands apology over DMZ blasts as N Korea denies planting mines
+       154 France 24          2026-09-30 09:14 en      Tensions mount as South Korea demands apology from North over mine blast
+== E12 n=3 src=2/2 C2 probable dom=military sit=russia-ukraine-war rank=17.5 ["concrete_action", "new_development"] region=russia
+   first=2026-09-30 09:43 last=2026-09-30 09:43 items 2026-09-30 00:28..2026-09-30 08:14
+   SUMMARY: Live: Several people killed as Russia launches new round of strikes on Kyiv
+   DBprinc=['Russia', 'Ukraine', 'Ukrainian']  MAINprinc=['russia']
+       274 Kyiv Independent   2026-09-30 00:28 en      Russia strikes Kyiv energy infrastructure, kills 3, injures 5 in overnight attack on Ukraine's capital
+       161 France 24          2026-09-30 05:35 en RR   Live: Several people killed as Russia launches new round of strikes on Kyiv
+       275 Kyiv Independent   2026-09-30 08:14 en      Russian attacks kill at least 6, injure 34 across Ukraine as Kyiv faces another overnight missile, drone attac
+== E13 n=3 src=2/2 C2 probable dom=political sit=None rank=19.5 ["senior_actor", "new_policy", "new_development"] region=russia
+   first=2026-09-30 09:43 last=2026-09-30 09:43 items 2026-09-28 18:07..2026-09-29 17:43
+   SUMMARY: Ukraine war latest: Record Russian military budget for 2027 confirms no interest in ending war
+   DBprinc=['Russia', 'Vladimir Putin']  MAINprinc=['putin', 'russia']
+       494 Defense News       2026-09-28 18:07 en      Russia raises 2027 military spending by 27%, budget documents show
+       285 Kyiv Independent   2026-09-29 16:45 en      Putin signs latest decree increasing Russian military staff in wake of monster military budget, looming mobili
+       282 Kyiv Independent   2026-09-29 17:43 en R    Ukraine war latest: Record Russian military budget for 2027 confirms no interest in ending war
+== E14 n=5 src=4/4 C1 confirmed dom=unknown sit=None rank=4.5 ["independently_confirmed", "widely_reported", "weak_evidence"] region=None
+   first=2026-09-30 09:43 last=2026-09-30 09:43 items 2026-09-29 18:07..2026-09-30 07:40
+   SUMMARY: La primera ministra designada de Marruecos iniciará hoy una ronda de contactos para ensamblar el nuevo Gobierno
+   DBprinc=[]  MAINprinc=[]
+       239 Il Sole 24 Ore Mon 2026-09-29 18:07 it      Marocco, Fatima Ezzahra El Mansouri sarà la prima premier donna del Regno
+       108 BBC Mundo          2026-09-30 00:03 es      Fatima Zahra El Mansouri, la primera mujer elegida primera ministra de Marruecos
+       127 Rai News Esteri    2026-09-30 04:06 it      Marocco, Fatima Zahara Mansouri è la prima donna premier della storia del Paese
+       126 Rai News Esteri    2026-09-30 04:08 it      Marocco, il re Mohammed VI incontra la nuova premier El Mansouri
+        77 Europa Press Inter 2026-09-30 07:40 es      La primera ministra designada de Marruecos iniciará hoy una ronda de contactos para ensamblar el nuevo Gobiern
+== E15 n=2 src=2/2 C2 confirmed dom=unknown sit=None rank=4.5 ["independently_confirmed", "weak_evidence", "new_development"] region=middle_east
+   first=2026-09-30 09:43 last=2026-09-30 09:43 items 2026-09-29 10:26..2026-09-29 12:00
+   SUMMARY: World News in Brief: Deadly Myanmar strikes as Malaysia begins deportations, new emergency funding released, Gaza and West Bank update
+   DBprinc=['Gaza', 'Malaysia', 'Myanmar', 'World News']  MAINprinc=['malaysia']
+       150 DW World           2026-09-29 10:26 en      Malaysia repatriates Myanmar migrants despite UN warnings
+       396 UN News            2026-09-29 12:00 en R    World News in Brief: Deadly Myanmar strikes as Malaysia begins deportations, new emergency funding released, G
+== E16 n=2 src=2/2 C2 probable dom=unknown sit=None rank=3.5 ["weak_evidence", "new_development"] region=None
+   first=2026-09-30 09:43 last=2026-09-30 09:43 items 2026-09-29 22:45..2026-09-30 08:42
+   SUMMARY: Irán confirma que recibió la respuesta oficial de EEUU a su última propuesta para un acuerdo de paz
+   DBprinc=['Por la guerra y la incertidumbre económica', 'oficial de EEUU', 'que recibió la respuesta']  MAINprinc=['iran', 'united states']
+       264 Clarín Mundo       2026-09-29 22:45 es      Por la guerra y la incertidumbre económica, la moneda de Irán se hunde en un mínimo histórico
+        75 Europa Press Inter 2026-09-30 08:42 es      Irán confirma que recibió la respuesta oficial de EEUU a su última propuesta para un acuerdo de paz
+== E17 n=2 src=1/1 F4 possible dom=political sit=None rank=6.0 ["unconfirmed_report", "single_source"] region=None
+   first=2026-09-30 09:43 last=2026-09-30 09:43 items 2026-09-29 00:00..2026-09-29 00:00
+   SUMMARY: Accreditation and Approval of Intertek USA, Inc. (Chelsea, MA), as a Commercial Gauger and Laboratory
+   DBprinc=['Carteret', 'Chelsea, MA', 'Intertek USA, Inc.']  MAINprinc=[]
+       553 Federal Register   2026-09-29 00:00 en      Accreditation and Approval of Intertek USA, Inc. (Chelsea, MA), as a Commercial Gauger and Laboratory
+       554 Federal Register   2026-09-29 00:00 en      Accreditation and Approval of Intertek USA, Inc. (Carteret, NJ), as a Commercial Gauger and Laboratory
+== E18 n=2 src=2/2 C2 probable dom=unknown sit=None rank=3.5 ["weak_evidence", "new_development"] region=None
+   first=2026-09-30 09:43 last=2026-09-30 09:43 items 2026-09-29 15:22..2026-09-30 08:35
+   SUMMARY: Burnham su Brexit, 'tutte le opzioni sul tavolo, inclusa riadesione a Ue'
+   DBprinc=['Burnham', 'Burnham su Brexit', 'Londra', 'sul tavolo']  MAINprinc=['burnham']
+       139 Rai News Esteri    2026-09-29 15:22 it      Burnham: "Londra per troppo tempo sulla strada sbagliata, miglioreremo i rapporti con l'UE"
+        41 ANSA Mondo         2026-09-30 08:35 it      Burnham su Brexit, 'tutte le opzioni sul tavolo, inclusa riadesione a Ue'
+== E19 n=2 src=2/2 C2 probable dom=unknown sit=None rank=2.5 ["weak_evidence"] region=None
+   first=2026-09-30 09:43 last=2026-09-30 09:43 items 2026-09-29 21:55..2026-09-30 03:53
+   SUMMARY: More than 400 detained as France student protests escalate
+   DBprinc=[]  MAINprinc=[]
+        88 BBC World          2026-09-29 21:55 en      More than 400 detained as France student protests escalate
+       208 Al Jazeera         2026-09-30 03:53 en      Public workers in France strike over pay as student protests turn violent
+== E20 n=2 src=2/2 C2 probable dom=diplomacy sit=None rank=5.5 [] region=None
+   first=2026-09-30 09:43 last=2026-09-30 09:43 items 2026-09-30 05:01..2026-09-30 06:57
+   SUMMARY: 'Backpack' declared Alaska's Fat Bear Week winner
+   DBprinc=['Fat Bear Week']  MAINprinc=[]
+        92 BBC World          2026-09-30 05:01 en      'Backpack' declared Alaska's Fat Bear Week winner
+       199 Al Jazeera         2026-09-30 06:57 en      Gentle giant Backpack wins Alaska’s Fat Bear Week
+== E21 n=2 src=2/2 C2 probable dom=unknown sit=None rank=3.5 ["weak_evidence", "new_development"] region=None
+   first=2026-09-30 09:43 last=2026-09-30 09:43 items 2026-09-30 02:39..2026-09-30 06:41
+   SUMMARY: Somali pirates killed oil tanker crew before rescue, official tells BBC
+   DBprinc=['Somali']  MAINprinc=['somalia']
+       210 Al Jazeera         2026-09-30 02:39 en      Somali pirates killed five crew members on hijacked tanker, officials say
+        93 BBC World          2026-09-30 06:41 en      Somali pirates killed oil tanker crew before rescue, official tells BBC
+== E22 n=2 src=2/2 C2 probable dom=unknown sit=None rank=6.5 ["senior_actor", "weak_evidence", "new_development"] region=africa
+   first=2026-09-30 09:43 last=2026-09-30 09:43 items 2026-09-29 11:15..2026-09-29 16:14
+   SUMMARY: Ethiopia: No regard for civilians as fighting in Ethiopia's Tigray region continues
+   DBprinc=['Booker', 'Coons', 'Ethiopia', 'Kaine Call', 'Merkley', 'RUBIO', 'Van Hollen']  MAINprinc=['booker', 'coons', 'kaine call', 'merkley', 'shaheen', 'van hollen']
+       532 GDELT              2026-09-29 11:15 en      Shaheen , Booker , Coons , Merkley , Van Hollen , Kaine Call for Secretary Rubio to Act to De - escalate Tensi
+       144 DW World           2026-09-29 16:14 en      Ethiopia: No regard for civilians as fighting in Ethiopia's Tigray region continues
+== E23 n=2 src=2/2 C2 probable dom=unknown sit=None rank=3.5 ["weak_evidence", "new_development"] region=None
+   first=2026-09-30 09:43 last=2026-09-30 09:43 items 2026-09-28 16:05..2026-09-29 22:00
+   SUMMARY: Commission proposes a new EU Critical Communication System for first responders
+   DBprinc=['Brussels', 'the European Commission', 'the European Union']  MAINprinc=[]
+       361 Council of the EU  2026-09-28 16:05 en      Council strengthens EU space threat response architecture
+       352 European Commissio 2026-09-29 22:00 en      Commission proposes a new EU Critical Communication System for first responders
+== E24 n=2 src=2/2 C2 confirmed dom=unknown sit=None rank=4.5 ["independently_confirmed", "weak_evidence", "new_development"] region=None
+   first=2026-09-30 09:43 last=2026-09-30 09:43 items 2026-09-28 10:55..2026-09-28 14:59
+   SUMMARY: European defence industry: Council identifies the first five projects of common interest
+   DBprinc=['Council', 'the European Commission', 'the European Union']  MAINprinc=['european union']
+       364 Council of the EU  2026-09-28 10:55 en      European defence industry: Council identifies the first five projects of common interest
+       495 Defense News       2026-09-28 14:59 en      EU nails down five defense priority areas to channel common spending
+== E25 n=2 src=2/2 C2 probable dom=security sit=None rank=10.5 ["concrete_action", "new_development"] region=russia
+   first=2026-09-30 09:43 last=2026-09-30 09:43 items 2026-09-29 14:42..2026-09-29 14:52
+   SUMMARY: Estonia blames Russia in arson attack on military robotics firm Milrem
+   DBprinc=['Estonia', 'Kremlin', 'Milrem', 'Russia']  MAINprinc=['estonia']
+       512 Breaking Defense   2026-09-29 14:42 en      Estonia accuses Russia of ordering August arson attack on Milrem
+       490 Defense News       2026-09-29 14:52 en      Estonia blames Russia in arson attack on military robotics firm Milrem

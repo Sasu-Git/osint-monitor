@@ -1,0 +1,564 @@
+{
+ "developments": {
+  "1": {
+   "summary": "Rescue work intensifies as death toll in China-Nepal disaster approaches 1,000",
+   "created_tick": 1,
+   "members": {
+    "b-40456da07df1": 1,
+    "b-b18d96e6fc10": 1,
+    "b-898d1b9dc809": 3,
+    "b-f24f0531bb39": 4
+   },
+   "principals": [
+    "Nepal"
+   ],
+   "sources": [
+    "Al Jazeera",
+    "BBC World",
+    "South China Morning Post"
+   ]
+  },
+  "2": {
+   "summary": "Malaysia’s air quality turns hazardous as Indonesian wildfires burn",
+   "created_tick": 2,
+   "members": {
+    "b-d71f2886d120": 2,
+    "b-df14f0a7ac2b": 2
+   },
+   "principals": [
+    "Indonesia",
+    "Malaysia"
+   ],
+   "sources": [
+    "BBC World",
+    "South China Morning Post"
+   ]
+  },
+  "3": {
+   "summary": "South Korea’s Unification Church leader Han Hak-ja jailed 2 years for bribing officials",
+   "created_tick": 2,
+   "members": {
+    "b-8e5ef74bd47d": 2,
+    "b-341fac703447": 2
+   },
+   "principals": [
+    "Han Hak-ja",
+    "South Korea",
+    "Unification Church"
+   ],
+   "sources": [
+    "Al Jazeera",
+    "South China Morning Post"
+   ]
+  },
+  "4": {
+   "summary": "Spain’s Sanchez says Russia, Israel spread disinformation on Ceuta crisis",
+   "created_tick": 2,
+   "members": {
+    "b-b378591e2234": 2,
+    "b-eb0ab8f69ba6": 2
+   },
+   "principals": [
+    "Israel",
+    "Pedro Sanchez",
+    "Sanchez",
+    "Spain"
+   ],
+   "sources": [
+    "Al Jazeera",
+    "South China Morning Post"
+   ]
+  },
+  "5": {
+   "summary": "Israel and Greece sign US$3.5 billion defence deal, largest ever between the 2",
+   "created_tick": 2,
+   "members": {
+    "b-fc10bd046cfa": 2,
+    "b-2d14afc54339": 2
+   },
+   "principals": [
+    "Greece",
+    "Israel"
+   ],
+   "sources": [
+    "Al Jazeera",
+    "South China Morning Post"
+   ]
+  }
+ },
+ "item_developments": {
+  "b-2005cdd898cd": [],
+  "b-870dd2996e58": [],
+  "b-0c3ddc50ce30": [],
+  "b-b56b49d61664": [],
+  "b-08af33a215e6": [],
+  "b-04b8dd1b7e59": [],
+  "b-8c3f1988382e": [],
+  "b-adea0d13d447": [],
+  "b-f8d457f43869": [],
+  "b-c69758a15f4a": [],
+  "b-f627ee36c9cd": [],
+  "b-26afc75d192b": [],
+  "b-ae9ae86efbd9": [],
+  "b-6465c0352830": [],
+  "b-3a099e9e9a4b": [],
+  "b-953d7feff764": [],
+  "b-28389747f7ac": [],
+  "b-943c95907c68": [],
+  "b-1b8945e0f22f": [],
+  "b-2921aecfa0b4": [],
+  "b-d18b3d3c6ab1": [],
+  "b-c731c8c49c6f": [],
+  "b-d3c77700543f": [],
+  "b-98df932ec432": [],
+  "b-9b2fa19d3f6a": [],
+  "b-3dee8a5372cf": [],
+  "b-e1760bfc275b": [],
+  "b-b119bf3f07d5": [],
+  "b-7408b0b8d1e9": [],
+  "b-6f0b91d7f589": [],
+  "b-d50a153f8299": [],
+  "b-4481b4ecb12b": [],
+  "b-cb0a718c3ce9": [],
+  "b-1dd649e50e1d": [],
+  "b-e6a6082e368e": [],
+  "b-c308958c1335": [],
+  "b-fe085a8af44f": [],
+  "b-4926f53474c5": [],
+  "b-193b898b20bc": [],
+  "b-e94661df4425": [],
+  "b-4987459dba37": [],
+  "b-ea1a6e5796a4": [],
+  "b-8e39c3fe4d6b": [],
+  "b-27ec75fafdcf": [],
+  "b-b161f4902a23": [],
+  "b-62c5f9e59518": [],
+  "b-146bd69c4cff": [],
+  "b-4aa45cba28ee": [],
+  "b-273c436e8276": [],
+  "b-fb232998bf4a": [],
+  "b-3284930b117a": [],
+  "b-5d7558284a59": [],
+  "b-40456da07df1": [
+   1
+  ],
+  "b-757c54159001": [],
+  "b-028973d7de3e": [],
+  "b-cff60ef9a872": [],
+  "b-7307c676d293": [],
+  "b-65f4ee102293": [],
+  "b-d71f2886d120": [
+   2
+  ],
+  "b-1491d871f8a0": [],
+  "b-b9f4f82de7bd": [],
+  "b-4171052c9611": [],
+  "b-6205ad930b49": [],
+  "b-d1c689638539": [],
+  "b-8e5ef74bd47d": [
+   3
+  ],
+  "b-b18d96e6fc10": [
+   1
+  ],
+  "b-5a3f98fabe01": [],
+  "b-117759f6f6d5": [],
+  "b-e736e426c4d0": [],
+  "b-34b9b881aadb": [],
+  "b-52c0d4398543": [],
+  "b-2c9f26cf3c93": [],
+  "b-07ece95fa89d": [],
+  "b-6ed12305e301": [],
+  "b-001d118b7c58": [],
+  "b-3bc2a014eabe": [],
+  "b-497d5f679661": [],
+  "b-8bc48cc8d8f8": [],
+  "b-45bc85da0ff1": [],
+  "b-845b11da02ec": [],
+  "b-d7843f303842": [],
+  "b-539bf5fe483b": [],
+  "b-b378591e2234": [
+   4
+  ],
+  "b-22e37dc2f296": [],
+  "b-53d000ad4586": [],
+  "b-fc3980ce6c38": [],
+  "b-a4c25db8fe90": [],
+  "b-b0575b7c3aa1": [],
+  "b-e1d69e6c7217": [],
+  "b-a5d8ac56e6a0": [],
+  "b-7f55b56f9fed": [],
+  "b-24d4d078adb5": [],
+  "b-091bfee50793": [],
+  "b-fc9323e9aa26": [],
+  "b-0187e007955f": [],
+  "b-ffe351a27f1a": [],
+  "b-24f2fb1f930d": [],
+  "b-76d3144059e8": [],
+  "b-adfab4405e35": [],
+  "b-bf8b8b7b2085": [],
+  "b-a24a6d46bb92": [],
+  "b-2e80a96f5651": [],
+  "b-c011c687ae36": [],
+  "b-fe6f5688a552": [],
+  "b-addd1aea07e7": [],
+  "b-fc10bd046cfa": [
+   5
+  ],
+  "b-bc310bca9281": [],
+  "b-6e6ab0d19fdf": [],
+  "b-648015363b82": [],
+  "b-4320f84c3536": [],
+  "b-ae7ae5890919": [],
+  "b-9539542e03ca": [],
+  "b-a9402cb7ddf0": [],
+  "b-87b9f3cb6950": [],
+  "b-89daedf0d7d1": [],
+  "b-eb0ab8f69ba6": [
+   4
+  ],
+  "b-ded0b669142e": [],
+  "b-341fac703447": [
+   3
+  ],
+  "b-1747cedb5f02": [],
+  "b-03d5d59ea100": [],
+  "b-2d14afc54339": [
+   5
+  ],
+  "b-f3b71ecb151b": [],
+  "b-d2d9a8d73ecd": [],
+  "b-334d9cd0c1dd": [],
+  "b-c0b087d22080": [],
+  "b-fc0f96143e70": [],
+  "b-1e922d22af1d": [],
+  "b-8c136bee2610": [],
+  "b-7516c18b931c": [],
+  "b-a6b62e9f30e0": [],
+  "b-01633e215d8e": [],
+  "b-81d26133629d": [],
+  "b-3e335143cf02": [],
+  "b-3b690c9bd496": [],
+  "b-c80c61f916c6": [],
+  "b-441de8ad53cc": [],
+  "b-df14f0a7ac2b": [
+   2
+  ],
+  "b-0db307cfbf6e": [],
+  "b-67f094e48da9": [],
+  "b-74a7d55cfb9b": [],
+  "b-702f04216b60": [],
+  "b-80b4e4856474": [],
+  "b-94ec6692afd9": [],
+  "b-beab31e948a8": [],
+  "b-67ae65f775c9": [],
+  "b-898d1b9dc809": [
+   1
+  ],
+  "b-cb96f9214eef": [],
+  "b-0fde45500469": [],
+  "b-dae18e5ac7b8": [],
+  "b-2b3e6701060f": [],
+  "b-15cc51073b16": [],
+  "b-fce99d7832f3": [],
+  "b-be707d39ec12": [],
+  "b-73e186f791a2": [],
+  "b-bc8f97a41f60": [],
+  "b-0368f03a6c60": [],
+  "b-f24f0531bb39": [
+   1
+  ],
+  "b-1c21c80a048c": [],
+  "b-9e0cfc5bd952": [],
+  "b-6db8977f46a0": [],
+  "b-627e1276af35": [],
+  "b-16cdd3fa38e6": [],
+  "b-71daeccff3a1": [],
+  "b-4023be5d70eb": [],
+  "b-c67ca4439124": [],
+  "b-abd132a03511": []
+ },
+ "ticks": [
+  {
+   "tick": 1,
+   "items_in": 102,
+   "items_stored": 94,
+   "clusters_before_segmentation": [
+    [
+     "b-98df932ec432",
+     "b-a5d8ac56e6a0",
+     "b-40456da07df1",
+     "b-e1d69e6c7217",
+     "b-b18d96e6fc10"
+    ],
+    [
+     "b-4987459dba37",
+     "b-bf8b8b7b2085"
+    ]
+   ],
+   "segmentation_cuts": [
+    [
+     "b-98df932ec432",
+     "b-e1d69e6c7217",
+     "analysis_headline"
+    ],
+    [
+     "b-98df932ec432",
+     "b-b18d96e6fc10",
+     "analysis_headline"
+    ],
+    [
+     "b-a5d8ac56e6a0",
+     "b-40456da07df1",
+     "analysis_headline"
+    ],
+    [
+     "b-4987459dba37",
+     "b-bf8b8b7b2085",
+     "analysis_headline"
+    ]
+   ]
+  },
+  {
+   "tick": 2,
+   "items_in": 37,
+   "items_stored": 37,
+   "clusters_before_segmentation": [
+    [
+     "b-98df932ec432",
+     "b-a5d8ac56e6a0",
+     "b-40456da07df1",
+     "b-e1d69e6c7217",
+     "b-b18d96e6fc10"
+    ],
+    [
+     "b-fc10bd046cfa",
+     "b-a6b62e9f30e0",
+     "b-2d14afc54339"
+    ],
+    [
+     "b-4987459dba37",
+     "b-bf8b8b7b2085"
+    ],
+    [
+     "b-d71f2886d120",
+     "b-df14f0a7ac2b"
+    ],
+    [
+     "b-8e5ef74bd47d",
+     "b-341fac703447"
+    ],
+    [
+     "b-b378591e2234",
+     "b-eb0ab8f69ba6"
+    ],
+    [
+     "b-2e80a96f5651",
+     "b-8c136bee2610"
+    ]
+   ],
+   "segmentation_cuts": [
+    [
+     "b-98df932ec432",
+     "b-e1d69e6c7217",
+     "analysis_headline"
+    ],
+    [
+     "b-98df932ec432",
+     "b-b18d96e6fc10",
+     "analysis_headline"
+    ],
+    [
+     "b-a5d8ac56e6a0",
+     "b-40456da07df1",
+     "analysis_headline"
+    ],
+    [
+     "b-fc10bd046cfa",
+     "b-a6b62e9f30e0",
+     "analysis_headline"
+    ],
+    [
+     "b-4987459dba37",
+     "b-bf8b8b7b2085",
+     "analysis_headline"
+    ],
+    [
+     "b-2e80a96f5651",
+     "b-8c136bee2610",
+     "disjoint_locations"
+    ]
+   ]
+  },
+  {
+   "tick": 3,
+   "items_in": 11,
+   "items_stored": 11,
+   "clusters_before_segmentation": [
+    [
+     "b-98df932ec432",
+     "b-a5d8ac56e6a0",
+     "b-898d1b9dc809",
+     "b-40456da07df1",
+     "b-e1d69e6c7217",
+     "b-b18d96e6fc10"
+    ],
+    [
+     "b-fc10bd046cfa",
+     "b-a6b62e9f30e0",
+     "b-2d14afc54339"
+    ],
+    [
+     "b-4987459dba37",
+     "b-bf8b8b7b2085"
+    ],
+    [
+     "b-d71f2886d120",
+     "b-df14f0a7ac2b"
+    ],
+    [
+     "b-8e5ef74bd47d",
+     "b-341fac703447"
+    ],
+    [
+     "b-b378591e2234",
+     "b-eb0ab8f69ba6"
+    ],
+    [
+     "b-2e80a96f5651",
+     "b-8c136bee2610"
+    ]
+   ],
+   "segmentation_cuts": [
+    [
+     "b-98df932ec432",
+     "b-e1d69e6c7217",
+     "analysis_headline"
+    ],
+    [
+     "b-98df932ec432",
+     "b-b18d96e6fc10",
+     "analysis_headline"
+    ],
+    [
+     "b-a5d8ac56e6a0",
+     "b-898d1b9dc809",
+     "analysis_headline"
+    ],
+    [
+     "b-a5d8ac56e6a0",
+     "b-40456da07df1",
+     "analysis_headline"
+    ],
+    [
+     "b-fc10bd046cfa",
+     "b-a6b62e9f30e0",
+     "analysis_headline"
+    ],
+    [
+     "b-4987459dba37",
+     "b-bf8b8b7b2085",
+     "analysis_headline"
+    ],
+    [
+     "b-2e80a96f5651",
+     "b-8c136bee2610",
+     "disjoint_locations"
+    ]
+   ]
+  },
+  {
+   "tick": 4,
+   "items_in": 16,
+   "items_stored": 16,
+   "clusters_before_segmentation": [
+    [
+     "b-98df932ec432",
+     "b-f24f0531bb39",
+     "b-40456da07df1",
+     "b-898d1b9dc809",
+     "b-a5d8ac56e6a0",
+     "b-e1d69e6c7217",
+     "b-b18d96e6fc10"
+    ],
+    [
+     "b-fc10bd046cfa",
+     "b-a6b62e9f30e0",
+     "b-2d14afc54339"
+    ],
+    [
+     "b-4987459dba37",
+     "b-bf8b8b7b2085"
+    ],
+    [
+     "b-d71f2886d120",
+     "b-df14f0a7ac2b"
+    ],
+    [
+     "b-8e5ef74bd47d",
+     "b-341fac703447"
+    ],
+    [
+     "b-b378591e2234",
+     "b-eb0ab8f69ba6"
+    ],
+    [
+     "b-2e80a96f5651",
+     "b-8c136bee2610"
+    ]
+   ],
+   "segmentation_cuts": [
+    [
+     "b-98df932ec432",
+     "b-f24f0531bb39",
+     "analysis_headline"
+    ],
+    [
+     "b-98df932ec432",
+     "b-e1d69e6c7217",
+     "analysis_headline"
+    ],
+    [
+     "b-98df932ec432",
+     "b-b18d96e6fc10",
+     "analysis_headline"
+    ],
+    [
+     "b-f24f0531bb39",
+     "b-40456da07df1",
+     "headline_similarity"
+    ],
+    [
+     "b-f24f0531bb39",
+     "b-a5d8ac56e6a0",
+     "analysis_headline"
+    ],
+    [
+     "b-40456da07df1",
+     "b-a5d8ac56e6a0",
+     "analysis_headline"
+    ],
+    [
+     "b-898d1b9dc809",
+     "b-a5d8ac56e6a0",
+     "analysis_headline"
+    ],
+    [
+     "b-fc10bd046cfa",
+     "b-a6b62e9f30e0",
+     "analysis_headline"
+    ],
+    [
+     "b-4987459dba37",
+     "b-bf8b8b7b2085",
+     "analysis_headline"
+    ],
+    [
+     "b-2e80a96f5651",
+     "b-8c136bee2610",
+     "disjoint_locations"
+    ]
+   ]
+  }
+ ]
+}

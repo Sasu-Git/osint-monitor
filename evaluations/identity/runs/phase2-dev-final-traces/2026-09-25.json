@@ -1,0 +1,245 @@
+{
+ "developments": {
+  "1": {
+   "summary": "Four civilians killed in Pakistani strikes in Afghanistan, Taliban says",
+   "created_tick": 4,
+   "members": {
+    "b-14aae9d37ebe": 4,
+    "b-38730424bfbc": 4
+   },
+   "principals": [
+    "Pakistan",
+    "Taliban"
+   ],
+   "sources": [
+    "Al Jazeera",
+    "BBC World"
+   ]
+  },
+  "2": {
+   "summary": "Italy ministers agree to ban burqa and niqab in school and cap foreigners in class",
+   "created_tick": 4,
+   "members": {
+    "b-256c7087fa4e": 4,
+    "b-8a758a84c401": 4
+   },
+   "principals": [
+    "Giorgia Meloni",
+    "Italy",
+    "Meloni"
+   ],
+   "sources": [
+    "Al Jazeera",
+    "BBC World"
+   ]
+  },
+  "3": {
+   "summary": "Xi got Trump's red carpet welcome - but not everything he wanted",
+   "created_tick": 4,
+   "members": {
+    "b-97cb65d1a469": 4,
+    "b-683038d2cd37": 4
+   },
+   "principals": [
+    "Donald Trump",
+    "Trump",
+    "Xi Jinping"
+   ],
+   "sources": [
+    "BBC World",
+    "South China Morning Post"
+   ]
+  },
+  "4": {
+   "summary": "Nepal’s leader labels devastating flood a ‘warning to the world’",
+   "created_tick": 4,
+   "members": {
+    "b-d4cad9c5fd6c": 4,
+    "b-17f8645e6056": 4
+   },
+   "principals": [
+    "Nepal"
+   ],
+   "sources": [
+    "Al Jazeera",
+    "South China Morning Post"
+   ]
+  }
+ },
+ "item_developments": {
+  "b-511bf71f4b51": [],
+  "b-404db7f387e0": [],
+  "b-4574ee76b67f": [],
+  "b-6c7e97b3f0f1": [],
+  "b-99dcf691f86c": [],
+  "b-f5fc571411a7": [],
+  "b-4b0f4af621f9": [],
+  "b-cc8da47e71cd": [],
+  "b-aa291f31d75e": [],
+  "b-740095d8184d": [],
+  "b-ab74b37e5cce": [],
+  "b-47bf10b81a7a": [],
+  "b-860a83283248": [],
+  "b-572ebbd9ffcf": [],
+  "b-0f3902c155f1": [],
+  "b-11100df54b04": [],
+  "b-a42dce75317b": [],
+  "b-5c6acf77a15b": [],
+  "b-5ab63931ffbb": [],
+  "b-3569da87f654": [],
+  "b-a140d543a214": [],
+  "b-ffad9f6efa48": [],
+  "b-893ac7add538": [],
+  "b-361a029728da": [],
+  "b-b1a80484cbb3": [],
+  "b-96ae40f77540": [],
+  "b-195fb13868a2": [],
+  "b-d76616724887": [],
+  "b-31359c5c578a": [],
+  "b-453ee4cac113": [],
+  "b-6e3eb47c7f66": [],
+  "b-83b1c4fd7c3c": [],
+  "b-30e38f0ed5e9": [],
+  "b-d72e5f6a5e01": [],
+  "b-e767866ae143": [],
+  "b-e66d3d9e1f1b": [],
+  "b-3d25324c2e80": [],
+  "b-5d1ba8e525da": [],
+  "b-0ed2621ab5c3": [],
+  "b-67498eaf9a8a": [],
+  "b-14aae9d37ebe": [
+   1
+  ],
+  "b-481646b49def": [],
+  "b-256c7087fa4e": [
+   2
+  ],
+  "b-a2130595f86f": [],
+  "b-fee27e429610": [],
+  "b-162be742e132": [],
+  "b-8a758a84c401": [
+   2
+  ],
+  "b-56d04e57766b": [],
+  "b-8272fab65325": [],
+  "b-a9f27cc576aa": [],
+  "b-1a3eb5515f5f": [],
+  "b-0981add9054d": [],
+  "b-e0cfcff8ba0a": [],
+  "b-43687a0f07ef": [],
+  "b-0ebe58675a38": [],
+  "b-3d9601881311": [],
+  "b-97cb65d1a469": [
+   3
+  ],
+  "b-37b407536a36": [],
+  "b-38730424bfbc": [
+   1
+  ],
+  "b-868c71fe1672": [],
+  "b-082ed1ec356a": [],
+  "b-959a32ba2a22": [],
+  "b-8185baba77a0": [],
+  "b-4f771205cb5b": [],
+  "b-2e1bf5650858": [],
+  "b-024748749433": [],
+  "b-9796005bb46b": [],
+  "b-394d9d68572d": [],
+  "b-8c1d1ab1f3e2": [],
+  "b-c18660482c48": [],
+  "b-f6b48ba3e358": [],
+  "b-de49f467b91b": [],
+  "b-6805597101d0": [],
+  "b-085829c65ea1": [],
+  "b-7e43978bd221": [],
+  "b-c9ec164123fa": [],
+  "b-10920f35f202": [],
+  "b-d4cad9c5fd6c": [
+   4
+  ],
+  "b-f2fe2e86b26c": [],
+  "b-17f8645e6056": [
+   4
+  ],
+  "b-702f72ebfbf0": [],
+  "b-8ff081434f97": [],
+  "b-a8bcfc949562": [],
+  "b-1e2d3e8e8bcd": [],
+  "b-1177014b1698": [],
+  "b-9b98be97cdeb": [],
+  "b-6346a77bebbe": [],
+  "b-1204081d6496": [],
+  "b-683038d2cd37": [
+   3
+  ],
+  "b-63cb0d4f2400": []
+ },
+ "ticks": [
+  {
+   "tick": 1,
+   "items_in": 16,
+   "items_stored": 16,
+   "clusters_before_segmentation": [],
+   "segmentation_cuts": []
+  },
+  {
+   "tick": 2,
+   "items_in": 5,
+   "items_stored": 5,
+   "clusters_before_segmentation": [],
+   "segmentation_cuts": []
+  },
+  {
+   "tick": 3,
+   "items_in": 22,
+   "items_stored": 22,
+   "clusters_before_segmentation": [
+    [
+     "b-aa291f31d75e",
+     "b-6e3eb47c7f66"
+    ]
+   ],
+   "segmentation_cuts": [
+    [
+     "b-aa291f31d75e",
+     "b-6e3eb47c7f66",
+     "headline_similarity"
+    ]
+   ]
+  },
+  {
+   "tick": 4,
+   "items_in": 47,
+   "items_stored": 47,
+   "clusters_before_segmentation": [
+    [
+     "b-97cb65d1a469",
+     "b-683038d2cd37"
+    ],
+    [
+     "b-aa291f31d75e",
+     "b-6e3eb47c7f66"
+    ],
+    [
+     "b-14aae9d37ebe",
+     "b-38730424bfbc"
+    ],
+    [
+     "b-256c7087fa4e",
+     "b-8a758a84c401"
+    ],
+    [
+     "b-d4cad9c5fd6c",
+     "b-17f8645e6056"
+    ]
+   ],
+   "segmentation_cuts": [
+    [
+     "b-aa291f31d75e",
+     "b-6e3eb47c7f66",
+     "headline_similarity"
+    ]
+   ]
+  }
+ ]
+}

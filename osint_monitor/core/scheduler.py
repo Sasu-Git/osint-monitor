@@ -54,6 +54,8 @@ GAP_FACTOR = 3                    # a tier silent for > 3 intervals (and > GAP_M
 GAP_MIN_SECONDS = 900
 _GAP_LOG = Path(__file__).parent.parent.parent / "data" / "logs" / "collection_gaps.jsonl"
 
+_TICK_FILE = Path(__file__).parent.parent.parent / "data" / "logs" / "tier_ticks.json"
+
 _last_tick: dict[str, datetime] = {}
 _intervals: dict[str, int] = {}
 _recent_gaps: deque = deque(maxlen=50)
@@ -67,7 +69,8 @@ def record_gap(kind: str, subject: str, since: datetime, until: datetime, expect
     logger.warning(f"Collection gap ({kind}): {subject} idle {timedelta(seconds=seconds)} "
                    f"from {gap['from']} to {gap['to']}"
                    + (f", expected every {expected_seconds}s" if expected_seconds else "")
-                   + " -- likely host suspend/resume or a blocked scheduler")
+                   + (" -- the daemon was not running (stopped, crashed or rebooted)" if kind == "daemon_down"
+                      else " -- likely host suspend/resume or a blocked scheduler"))
     _recent_gaps.append(gap)
     try:
         _GAP_LOG.parent.mkdir(parents=True, exist_ok=True)
@@ -78,15 +81,40 @@ def record_gap(kind: str, subject: str, since: datetime, until: datetime, expect
     return gap
 
 
+def _load_ticks() -> dict[str, datetime]:
+    try:
+        return {k: datetime.fromisoformat(v) for k, v in json.loads(_TICK_FILE.read_text(encoding="utf-8")).items()}
+    except (OSError, ValueError, TypeError):
+        return {}
+
+
+def _save_tick(tier: str, when: datetime) -> None:
+    try:
+        ticks = {k: v.isoformat() for k, v in _load_ticks().items()}
+        ticks[tier] = when.isoformat()
+        _TICK_FILE.parent.mkdir(parents=True, exist_ok=True)
+        tmp = _TICK_FILE.with_suffix(".tmp")
+        tmp.write_text(json.dumps(ticks), encoding="utf-8")
+        tmp.replace(_TICK_FILE)
+    except OSError:
+        pass
+
+
 def check_tier_gap(tier: str, now: datetime | None = None) -> dict | None:
-    """Called when a tier tick starts: a gap if the tier has been silent for too long."""
+    """Called when a tier tick starts: a gap if the tier has been silent for too long. The last tick is
+    also persisted, so the first tick after a daemon restart measures the silence since the previous
+    process's last tick (a crash, a reboot or a stopped daemon is a gap too)."""
     now = now or datetime.utcnow()
     last, interval = _last_tick.get(tier), _intervals.get(tier)
+    kind = "tier_silence"
+    if last is None:
+        last, kind = _load_ticks().get(tier), "daemon_down"
     _last_tick[tier] = now
+    _save_tick(tier, now)
     if last is None or not interval:
         return None
     if (now - last).total_seconds() > max(GAP_FACTOR * interval, GAP_MIN_SECONDS):
-        return record_gap("tier_silence", f"{tier} tier", last, now, interval)
+        return record_gap(kind, f"{tier} tier", last, now, interval)
     return None
 
 
@@ -156,6 +184,10 @@ def _run_tier_job(tier: str):
     try:
         from osint_monitor.processors.pipeline import run_tier
         stats = run_tier(tier, quiet=True)
+        failed = {k: v for k, v in (stats.get("stages") or {}).items() if str(v).startswith("failed")}
+        if failed:
+            logger.warning(f"[{tier}] {len(failed)} post-processing stage(s) failed: "
+                           + "; ".join(f"{k}: {v}" for k, v in failed.items()))
         new = stats.get("new_items", 0)
         if new > 0:
             logger.info(
@@ -177,7 +209,7 @@ def _run_tier_job(tier: str):
             except Exception:
                 pass  # SSE not running (daemon-only mode)
     except Exception as e:
-        logger.error(f"[{tier}] Tier job failed: {e}")
+        logger.error(f"[{tier}] Tier job failed: {e}", exc_info=True)
     finally:
         lock.release()
         from osint_monitor.core.watchdog import arm_stack_dump
@@ -203,23 +235,34 @@ def _run_analysis_job():
 def _run_alert_job():
     """Scheduled job: evaluate alert rules."""
     from osint_monitor.alerting.engine import AlertEngine
-    from osint_monitor.alerting.channels import build_channels, dispatch_alerts
+    from osint_monitor.alerting.channels import build_channels, dispatch_alerts, persist_deliveries
     from osint_monitor.core.config import load_alerts_config
     from osint_monitor.processors.pipeline import DB_WRITE_LOCK
     try:
         with DB_WRITE_LOCK:                  # writes alerts: one writer at a time with the tiers
             session = get_session()
-            engine = AlertEngine(session)
-            alerts = engine.evaluate_all(hours_back=1)
-            engine.escalate_unacknowledged()
-            session.close()
+            try:
+                engine = AlertEngine(session)
+                alerts = engine.evaluate_all(hours_back=1)
+                engine.escalate_unacknowledged()
+                for alert in alerts:
+                    session.expunge(alert)   # loaded by evaluate_all: readable after the session closes
+            finally:
+                session.close()
 
         if alerts:                           # delivery is network I/O: outside the lock
             config = load_alerts_config()
             channels = build_channels([c.model_dump() for c in config.channels])
-            dispatch_alerts(alerts, channels)
+            deliveries = dispatch_alerts(alerts, channels)
+            if deliveries:
+                with DB_WRITE_LOCK:
+                    session = get_session()
+                    try:
+                        persist_deliveries(session, deliveries)
+                    finally:
+                        session.close()
     except Exception as e:
-        logger.error(f"Alert job failed: {e}")
+        logger.error(f"Alert job failed: {e}", exc_info=True)
 
 
 def _run_daily_briefing_job():

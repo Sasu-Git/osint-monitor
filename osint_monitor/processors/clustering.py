@@ -9,6 +9,7 @@ from datetime import datetime, timedelta
 
 import hdbscan
 import numpy as np
+from sqlalchemy import func
 from sqlalchemy.orm import Session, joinedload
 
 from osint_monitor.core.config import load_event_grouping_config, load_sources_config
@@ -16,6 +17,7 @@ from osint_monitor.core.database import (
     Event, EventEntity, EventItem, ItemEntity, RawItem, Source,
 )
 from osint_monitor.core.models import ExtractedEntity, EntityType, EntityRole
+from osint_monitor.core.runs import current_run_id
 from osint_monitor.processors.embeddings import blob_to_embedding
 from osint_monitor.processors import lexical
 from osint_monitor.processors.event_grouping import NARRATIVE, STRUCTURED, group_structured, partition
@@ -428,70 +430,83 @@ def _assign_region(
     return ranked[0][0]
 
 
-def persist_clusters(session: Session, clusters: list[dict]) -> int:
-    """Save clusters as Event records in the database. Returns the number of new events
-    (clusters that overlap an existing event extend it instead)."""
+def persist_clusters(session: Session, clusters: list[dict], decisions: list | None = None) -> int:
+    """Save clusters as Developments (Event records). Returns the number of new Developments.
+
+    Identity rules (``development_identity``): clusters are processed in a fixed order; an item already in a
+    Development stays there and joins no second one; a new item extends the existing Development whose members
+    it is compatibly linked to; new items that continue nothing form a new Development only when they are linked
+    and come from at least two independent origins (single-source evidence stays below the Development layer).
+    ``decisions``, when given, receives every ``development_identity.Decision`` with its reasons."""
+    from osint_monitor.core.config import load_event_grouping_config
+    from osint_monitor.processors import development_identity as identity
+
+    config = load_event_grouping_config().development_segmentation
     created = 0
-    for cluster in clusters:
-        # Check if this cluster overlaps with an existing event
-        existing_event = _find_overlapping_event(session, cluster["item_ids"])
-
-        if existing_event:
-            # Update existing event with new items
-            new_item_ids = []
-            for item_id in cluster["item_ids"]:
-                if not session.query(EventItem).filter_by(
-                    event_id=existing_event.id, item_id=item_id
-                ).first():
-                    session.add(EventItem(
-                        event_id=existing_event.id,
-                        item_id=item_id,
-                        similarity_score=1.0,
-                    ))
-                    new_item_ids.append(item_id)
-            if new_item_ids:
-                # Re-clustering the same items is not an update: downstream stages
-                # re-classify and treat the event as fresh when this moves.
-                existing_event.last_updated_at = datetime.utcnow()
-            # Update severity and region if the new cluster has better values
-            if cluster.get("severity", 0.0) > existing_event.severity:
-                existing_event.severity = cluster["severity"]
-            if cluster.get("region") and not existing_event.region:
-                existing_event.region = cluster["region"]
-            session.flush()
-
-            # Populate event_entities for newly added items
-            _populate_event_entities(session, existing_event.id, new_item_ids)
-        else:
-            # Create new event
-            event = Event(
-                summary=cluster["summary"],
-                event_type=cluster.get("event_type"),
-                severity=cluster.get("severity", 0.0),
-                region=cluster.get("region"),
-                first_reported_at=datetime.utcnow(),
-                last_updated_at=datetime.utcnow(),
-            )
-            session.add(event)
-            session.flush()
-            created += 1
-
-            for item_id in cluster["item_ids"]:
+    for cluster in sorted(clusters, key=lambda c: identity.cluster_order_key(session, c)):
+        for d in identity.reconcile(session, cluster, config):
+            if decisions is not None:
+                decisions.append(d)
+            if not d.added:
+                continue
+            items = (session.query(RawItem).options(joinedload(RawItem.source))
+                     .filter(RawItem.id.in_(d.added)).all())
+            if d.created:
+                best = identity.summary_item(items)
+                event = Event(
+                    summary=best.title,
+                    event_type=cluster.get("event_type"),
+                    severity=cluster.get("severity", 0.0),
+                    region=cluster.get("region"),
+                    first_reported_at=datetime.utcnow(),
+                    last_updated_at=datetime.utcnow(),
+                )
+                session.add(event)
+                session.flush()
+                d.event_id = event.id
+                created += 1
+            else:
+                event = session.get(Event, d.event_id)
+            for item_id in d.added:
                 session.add(EventItem(
                     event_id=event.id,
                     item_id=item_id,
                     similarity_score=1.0,
+                    added_at=datetime.utcnow(),
+                    added_run_id=current_run_id(),
                 ))
             session.flush()
-
-            # Populate event_entities from all items in the cluster
-            _populate_event_entities(session, event.id, cluster["item_ids"])
-
-            # Link claims to event
-            _link_claims_to_event(session, event.id, cluster["item_ids"])
+            if not d.created:
+                # new evidence on an existing Development: downstream stages re-classify when this moves
+                event.last_updated_at = datetime.utcnow()
+                if cluster.get("severity", 0.0) > event.severity:
+                    event.severity = cluster["severity"]
+                if cluster.get("region") and not event.region:
+                    event.region = cluster["region"]
+                if not identity.is_report_headline(event.summary):
+                    # a roundup or analysis headline gives way to a report of the occurrence once one is a member
+                    all_items = (session.query(RawItem).options(joinedload(RawItem.source))
+                                 .join(EventItem, EventItem.item_id == RawItem.id)
+                                 .filter(EventItem.event_id == event.id).all())
+                    best = identity.summary_item(all_items)
+                    if identity.is_report_headline(best.title):
+                        event.summary = best.title
+            update_earliest_published(session, event, d.added)
+            _populate_event_entities(session, event.id, d.added)
+            _link_claims_to_event(session, event.id, d.added)
+            session.flush()
 
     session.commit()
     return created
+
+
+def update_earliest_published(session: Session, event: Event, item_ids: list[int]) -> None:
+    """Keep ``event.earliest_published_at`` = the earliest publication time among its member items."""
+    if not item_ids:
+        return
+    earliest = session.query(func.min(RawItem.published_at)).filter(RawItem.id.in_(item_ids)).scalar()
+    if earliest is not None and (event.earliest_published_at is None or earliest < event.earliest_published_at):
+        event.earliest_published_at = earliest
 
 
 def _link_claims_to_event(session: Session, event_id: int, item_ids: list[int]):
@@ -543,15 +558,3 @@ def _populate_event_entities(
             ))
 
     session.flush()
-
-
-def _find_overlapping_event(session: Session, item_ids: list[int]) -> Event | None:
-    """Find an existing event that shares items with this cluster."""
-    existing = (
-        session.query(EventItem)
-        .filter(EventItem.item_id.in_(item_ids))
-        .first()
-    )
-    if existing:
-        return existing.event
-    return None

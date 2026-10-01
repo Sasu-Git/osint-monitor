@@ -3,6 +3,7 @@
 import argparse
 import logging
 import sys
+from pathlib import Path
 
 
 def main():
@@ -128,9 +129,10 @@ def main():
 
     args = parser.parse_args()
 
+    from osint_monitor.core.config import get_settings
     logging.basicConfig(
-        level=logging.INFO,
-        format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
+        level=getattr(logging, str(get_settings().log_level).upper(), logging.INFO),
+        format=LOG_FORMAT,
     )
 
     try:
@@ -250,7 +252,22 @@ def _cmd_serve(args):
     )
 
 
+LOG_FORMAT = "%(asctime)s [%(levelname)s] %(name)s: %(message)s"
+DAEMON_LOG = Path(__file__).resolve().parents[1] / "data" / "logs" / "daemon.log"
+
+
+def add_daemon_log_file(path: Path = DAEMON_LOG) -> logging.Handler:
+    """Daemon logs also go to a rotating file (stderr alone is lost when the console closes)."""
+    from logging.handlers import RotatingFileHandler
+    path.parent.mkdir(parents=True, exist_ok=True)
+    handler = RotatingFileHandler(path, maxBytes=10_000_000, backupCount=5, encoding="utf-8")
+    handler.setFormatter(logging.Formatter(LOG_FORMAT))
+    logging.getLogger().addHandler(handler)
+    return handler
+
+
 def _cmd_daemon():
+    add_daemon_log_file()
     from osint_monitor.core.database import init_db
     from osint_monitor.core.config import load_sources_config
     from osint_monitor.core.scheduler import create_scheduler
@@ -385,6 +402,10 @@ def _cmd_status():
     from osint_monitor.processors.nlp import format_ner_status
     print("Entity extraction:")
     for line in format_ner_status():
+        print(f"  {line}")
+    from osint_monitor.collectors.status import format_status
+    print("Collectors (last run of each, from data/logs/collector_status.json):")
+    for line in format_status():
         print(f"  {line}")
 
 

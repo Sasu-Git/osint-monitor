@@ -461,8 +461,9 @@ class EntityResolver:
         """Add *raw_text* as an alias of *entity* (if not already present)."""
         aliases = entity.aliases or []
         if raw_text.lower() not in [a.lower() for a in aliases]:
-            aliases.append(raw_text)
-            entity.aliases = aliases
+            # a new list: a plain JSON column does not track in-place mutation, so appending to the loaded
+            # list and assigning it back is not persisted for a row already in the database
+            entity.aliases = [*aliases, raw_text]
 
         # Keep caches warm
         self._alias_map[raw_text.lower()] = entity.id

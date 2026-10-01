@@ -1,5 +1,6 @@
 """RSS/Atom feed collector."""
 
+import logging
 import re
 from datetime import datetime
 
@@ -8,6 +9,8 @@ import requests as _requests
 
 from osint_monitor.collectors.base import BaseCollector
 from osint_monitor.core.models import RawItemModel
+
+logger = logging.getLogger(__name__)
 
 _RSS_HEADERS = {
     "User-Agent": "Mozilla/5.0 (compatible; OSINT-Monitor/2.0; +research)",
@@ -39,6 +42,7 @@ class RSSCollector(BaseCollector):
             print(f"  [ok] {self.name}: {len(items)} items")
         except Exception as e:
             print(f"  [err] {self.name}: {e}")
+            logger.warning("RSS feed %s failed: %s", self.name, e)
         return items
 
     @classmethod
@@ -135,6 +139,7 @@ class NitterCollector(RSSCollector):
         # All instances exhausted — log once
         if last_error:
             print(f"  [err] {self.name}: all Nitter instances failed (last: {last_error})")
+            logger.warning("Nitter %s: all instances failed (last: %s)", self.name, last_error)
         else:
             print(f"  [--] {self.name}: 0 items (tried {len(self.instances)} instances)")
         return []

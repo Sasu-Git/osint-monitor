@@ -68,6 +68,8 @@ class RawItem(Base):
     #       type_=sa.Column(Vector(384)), postgresql_using='embedding::vector(384)')
     embedding: Mapped[bytes | None] = mapped_column(LargeBinary)  # 384-dim float32
     processed_at: Mapped[datetime | None] = mapped_column(DateTime, nullable=True, default=None)
+    # the pipeline run that stored this item (NULL: stored before run tracking, or outside a run)
+    ingested_run_id: Mapped[str | None] = mapped_column(ForeignKey("pipeline_runs.id"), index=True)
 
     source: Mapped["Source"] = relationship(back_populates="raw_items")
     item_entities: Mapped[list["ItemEntity"]] = relationship(back_populates="item")
@@ -162,8 +164,10 @@ class Event(Base):
     summary: Mapped[str] = mapped_column(Text, nullable=False)
     event_type: Mapped[str | None] = mapped_column(String(100))
     severity: Mapped[float] = mapped_column(Float, default=0.0)  # 0-1 composite
-    first_reported_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
-    last_updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    first_reported_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)   # row creation (processing)
+    last_updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)     # last membership change (processing)
+    # publication time of the earliest member item, kept apart from the processing times above
+    earliest_published_at: Mapped[datetime | None] = mapped_column(DateTime)
     location_name: Mapped[str | None] = mapped_column(String(255))
     lat: Mapped[float | None] = mapped_column(Float)
     lon: Mapped[float | None] = mapped_column(Float)
@@ -199,13 +203,43 @@ class Event(Base):
     alerts: Mapped[list["Alert"]] = relationship(back_populates="event")
 
 
+class PipelineRun(Base):
+    """One pipeline run (a daemon tier tick or a one-shot run). ``id`` is an opaque UUID (hex), immutable
+    and never derived from time. Version stamps say which code, config and models produced its outputs."""
+    __tablename__ = "pipeline_runs"
+
+    id: Mapped[str] = mapped_column(String(32), primary_key=True)
+    kind: Mapped[str] = mapped_column(String(30), nullable=False)          # "tier" | "oneshot"
+    tier: Mapped[str | None] = mapped_column(String(10))
+    started_at: Mapped[datetime] = mapped_column(DateTime, nullable=False)
+    finished_at: Mapped[datetime | None] = mapped_column(DateTime)
+    status: Mapped[str] = mapped_column(String(20), nullable=False)        # running | ok | partial | failed
+    code_sha: Mapped[str | None] = mapped_column(String(64))
+    code_dirty: Mapped[bool | None] = mapped_column(Boolean)
+    config_hash: Mapped[str | None] = mapped_column(String(64))
+    models: Mapped[dict | None] = mapped_column(JSON)
+    items_collected: Mapped[int | None] = mapped_column(Integer)
+    items_new: Mapped[int | None] = mapped_column(Integer)
+    stages: Mapped[dict | None] = mapped_column(JSON)
+    error: Mapped[str | None] = mapped_column(Text)
+
+
 class EventItem(Base):
+    """Membership of an item in a Development. ``added_at`` / ``added_run_id`` record when and in which run
+    the membership was created (NULL for memberships created before run tracking). Together with the item's
+    ``ingested_run_id`` they separate a newly ingested item from an existing item newly attached."""
     __tablename__ = "event_items"
+    __table_args__ = (
+        UniqueConstraint("event_id", "item_id", name="uq_event_item"),
+        Index("ix_event_items_item", "item_id"),
+    )
 
     id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
     event_id: Mapped[int] = mapped_column(ForeignKey("events.id"), nullable=False)
     item_id: Mapped[int] = mapped_column(ForeignKey("raw_items.id"), nullable=False)
     similarity_score: Mapped[float] = mapped_column(Float, default=1.0)
+    added_at: Mapped[datetime | None] = mapped_column(DateTime)
+    added_run_id: Mapped[str | None] = mapped_column(ForeignKey("pipeline_runs.id"), index=True)
 
     event: Mapped["Event"] = relationship(back_populates="event_items")
     item: Mapped["RawItem"] = relationship(back_populates="event_items")

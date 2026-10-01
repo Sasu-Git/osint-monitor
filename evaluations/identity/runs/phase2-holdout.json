@@ -1,0 +1,188 @@
+{
+ "scored_at": "2026-10-01T20:49:40Z",
+ "freeze": {
+  "frozen_at": "2026-10-01T20:48:23Z",
+  "branch": "feat/phase2-development-identity",
+  "head": "1f7748075379fdf091f11e16feb17c3ec287e7e7",
+  "config_hash": "40645c947f673b180276170f8407b24a8a7563f609306eeb3d6c60cbe3785d81",
+  "models": {
+   "ner_en": "en_core_web_lg (available)",
+   "ner_it": "it_core_news_md (available)",
+   "ner_es": "es_core_news_md (available)",
+   "embedding": "all-MiniLM-L6-v2"
+  },
+  "benchmarks": {
+   "clustering_manifest": "e667fad8f23d716db6bf6e87ecf195a1dd6e8f5affc9b4125b15f723c37f5e7a",
+   "entity_gold_manifest": "4c7af75a7e0366b9b425b2ee5e7bcba6b889a23ac995c1b5d9ba8aeb659347b2",
+   "identity_windows_manifest": "9be66ed8b7aab51c2e64b6f17763d59b919345509a093b6dd1af61c007a6a401"
+  },
+  "identity_gold": {
+   "revision": 2,
+   "sha256": "cc98765b7506b9faa3b81913655978c23afc0d21202e8b69e85c1217ffa2cc58",
+   "manifest_sha256": "87293792fba5af5ffe850d7c85eba80cf000b0ac2b33fe30f448730ebea6475c"
+  },
+  "rule": "no code change after holdout scoring begins; the holdout is scored exactly once"
+ },
+ "scored_head": "1ca37b5f20777e6c59bcac69002454836373f161",
+ "window": "2026-08-31",
+ "cases": 30,
+ "result": {
+  "window": "2026-08-31",
+  "tally": {
+   "pairs": 30,
+   "together": 8,
+   "gold_same": 10,
+   "together_and_same": 7,
+   "cross_tick_same": 8,
+   "cross_tick_same_retained": 5
+  },
+  "ledger": [
+   {
+    "case": "H001",
+    "gold": "SAME_DEVELOPMENT",
+    "current": "not grouped",
+    "developments": [
+     [],
+     []
+    ],
+    "ticks": [
+     4,
+     3
+    ],
+    "items": [
+     {
+      "id": "b-627e1276af35",
+      "source": "BBC World",
+      "lang": "en",
+      "title": "Ex-gang boss guilty of orchestrating 1996 murder of rapper Tupac Shakur"
+     },
+     {
+      "id": "b-80b4e4856474",
+      "source": "BBC World",
+      "lang": "en",
+      "title": "What it was like inside court for Tupac Shakur’s murder trial verdict"
+     }
+    ],
+    "error_class": "missed continuation",
+    "root_cause": "the later item did not join the earlier item's Development (or neither was clustered)",
+    "failure": "merge failure (SAME kept apart)"
+   },
+   {
+    "case": "H009",
+    "gold": "SAME_DEVELOPMENT",
+    "current": "not grouped",
+    "developments": [
+     [],
+     []
+    ],
+    "ticks": [
+     2,
+     1
+    ],
+    "items": [
+     {
+      "id": "b-8c136bee2610",
+      "source": "BBC World",
+      "lang": "en",
+      "title": "'She slipped out of my hand' - children missing after ferry sinks off northern Cyprus"
+     },
+     {
+      "id": "b-2e80a96f5651",
+      "source": "Al Jazeera",
+      "lang": "en",
+      "title": "Rescuers search for 18 missing after boat capsizes off Northern Cyprus"
+     }
+    ],
+    "error_class": "segmentation interaction",
+    "root_cause": "segmentation cut the link between them (guard: disjoint_locations)",
+    "failure": "merge failure (SAME kept apart)"
+   },
+   {
+    "case": "H018",
+    "gold": "SAME_DEVELOPMENT",
+    "current": "not grouped",
+    "developments": [
+     [],
+     []
+    ],
+    "ticks": [
+     4,
+     3
+    ],
+    "items": [
+     {
+      "id": "b-627e1276af35",
+      "source": "BBC World",
+      "lang": "en",
+      "title": "Ex-gang boss guilty of orchestrating 1996 murder of rapper Tupac Shakur"
+     },
+     {
+      "id": "b-74a7d55cfb9b",
+      "source": "BBC World",
+      "lang": "en",
+      "title": "Watch: Moment Duane 'Keffe D' Davis is found guilty of Tupac Shakur's murder"
+     }
+    ],
+    "error_class": "missed continuation",
+    "root_cause": "the later item did not join the earlier item's Development (or neither was clustered)",
+    "failure": "merge failure (SAME kept apart)"
+   },
+   {
+    "case": "H021",
+    "gold": "DIFFERENT_DEVELOPMENT",
+    "current": "kept together",
+    "developments": [
+     [
+      2
+     ],
+     [
+      2
+     ]
+    ],
+    "ticks": [
+     2,
+     1
+    ],
+    "items": [
+     {
+      "id": "b-df14f0a7ac2b",
+      "source": "BBC World",
+      "lang": "en",
+      "title": "Orangutans in danger as wildfires blaze through Borneo"
+     },
+     {
+      "id": "b-d71f2886d120",
+      "source": "South China Morning Post",
+      "lang": "en",
+      "title": "Malaysia’s air quality turns hazardous as Indonesian wildfires burn"
+     }
+    ],
+    "error_class": "whole-storyline overmerge",
+    "root_cause": "distinct occurrences of one storyline linked above the similarity threshold in one cluster (2-item Development); segmentation did not cut them",
+    "failure": "split failure (DIFFERENT kept together)"
+   }
+  ],
+  "developments": 5,
+  "multi_item": 5,
+  "mixed": [
+   "2"
+  ],
+  "labelled_developments": [
+   "1",
+   "2",
+   "3",
+   "4",
+   "5"
+  ],
+  "duplicate_memberships": {},
+  "items_in_developments": 12,
+  "single_source": [],
+  "roundups": [],
+  "late_memberships": 2,
+  "overlap_extensions": 1
+ },
+ "determinism": {
+  "identical": true,
+  "diffs": []
+ }
+}

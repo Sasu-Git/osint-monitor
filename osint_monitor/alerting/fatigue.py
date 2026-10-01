@@ -25,28 +25,21 @@ class FatigueManager:
         self.session = session
         self._config = load_alerts_config()
 
-    def should_fire(self, alert: Alert) -> bool:
-        """Returns False if this alert's trigger_key already exists (transition already alerted)."""
+    def is_duplicate(self, alert: Alert) -> bool:
+        """True if this alert's trigger_key already exists (transition already alerted)."""
         # No trigger_key means legacy alert — let it through but log a warning
         if not alert.trigger_key:
             logger.warning(f"Alert without trigger_key: {alert.title}")
-            return True
-
-        # Check quiet hours for non-critical
-        if alert.severity < 1.0 and self._in_quiet_hours():
-            logger.debug(f"Quiet hours, suppressing: {alert.title}")
             return False
+        return self.session.query(Alert.id).filter(Alert.trigger_key == alert.trigger_key).first() is not None
 
-        # Check if this exact transition was already alerted
-        existing = (
-            self.session.query(Alert.id)
-            .filter(Alert.trigger_key == alert.trigger_key)
-            .first()
-        )
-        if existing:
-            return False
+    def is_quiet(self, alert: Alert) -> bool:
+        """True if a non-critical alert falls in quiet hours: it is recorded but not notified."""
+        return alert.severity < 1.0 and self._in_quiet_hours()
 
-        return True
+    def should_fire(self, alert: Alert) -> bool:
+        """True if the alert is new and may be notified now."""
+        return not self.is_duplicate(alert) and not self.is_quiet(alert)
 
     def supersede(self, old_trigger_key: str, new_alert: Alert):
         """Mark a previous alert as superseded by a new one."""

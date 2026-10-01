@@ -1,0 +1,23 @@
+{
+ "frozen_at": "2026-10-01T20:48:23Z",
+ "branch": "feat/phase2-development-identity",
+ "head": "1f7748075379fdf091f11e16feb17c3ec287e7e7",
+ "config_hash": "40645c947f673b180276170f8407b24a8a7563f609306eeb3d6c60cbe3785d81",
+ "models": {
+  "ner_en": "en_core_web_lg (available)",
+  "ner_it": "it_core_news_md (available)",
+  "ner_es": "es_core_news_md (available)",
+  "embedding": "all-MiniLM-L6-v2"
+ },
+ "benchmarks": {
+  "clustering_manifest": "e667fad8f23d716db6bf6e87ecf195a1dd6e8f5affc9b4125b15f723c37f5e7a",
+  "entity_gold_manifest": "4c7af75a7e0366b9b425b2ee5e7bcba6b889a23ac995c1b5d9ba8aeb659347b2",
+  "identity_windows_manifest": "9be66ed8b7aab51c2e64b6f17763d59b919345509a093b6dd1af61c007a6a401"
+ },
+ "identity_gold": {
+  "revision": 2,
+  "sha256": "cc98765b7506b9faa3b81913655978c23afc0d21202e8b69e85c1217ffa2cc58",
+  "manifest_sha256": "87293792fba5af5ffe850d7c85eba80cf000b0ac2b33fe30f448730ebea6475c"
+ },
+ "rule": "no code change after holdout scoring begins; the holdout is scored exactly once"
+}

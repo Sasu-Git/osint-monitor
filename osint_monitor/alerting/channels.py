@@ -182,8 +182,11 @@ def build_channels(config_list: list[dict]) -> list[AlertChannel]:
     return channels
 
 
-def dispatch_alerts(alerts: list[Alert], channels: list[AlertChannel]):
-    """Send alerts through all configured channels."""
+def dispatch_alerts(alerts: list[Alert], channels: list[AlertChannel]) -> dict[int, str]:
+    """Send alerts through all configured channels. Returns alert id -> channels that delivered it; the caller
+    persists that with ``persist_deliveries`` (delivery runs outside the DB write lock, often after the
+    session that created the alerts has closed)."""
+    deliveries: dict[int, str] = {}
     for alert in alerts:
         delivered = []
         for channel in channels:
@@ -195,4 +198,16 @@ def dispatch_alerts(alerts: list[Alert], channels: list[AlertChannel]):
 
         if delivered:
             alert.delivered_via = ", ".join(delivered)
+            if alert.id is not None:
+                deliveries[alert.id] = alert.delivered_via
             logger.info(f"Alert delivered: {alert.title} via {alert.delivered_via}")
+    return deliveries
+
+
+def persist_deliveries(session, deliveries: dict[int, str]) -> None:
+    """Record which channels delivered each alert."""
+    for alert_id, via in deliveries.items():
+        row = session.get(Alert, alert_id)
+        if row is not None:
+            row.delivered_via = via[:100]
+    session.commit()

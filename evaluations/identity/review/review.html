@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Identity Gold Review</title>
+<style>
+:root {
+  --bg: #f6f5f1; --panel: #ffffff; --ink: #1d1d1b; --muted: #6b6a64; --line: #deddd6;
+  --accent: #2f5d8a; --same: #2e7d4f; --diff: #a2412e; --amb: #9a6b12; --reveal: #eef3f8; --focus: #2f5d8a55;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #161615; --panel: #20201e; --ink: #ecebe6; --muted: #a09f98; --line: #34332f;
+    --accent: #7fb0e0; --same: #6cc28f; --diff: #e08a74; --amb: #e0b35c; --reveal: #1f2a35; --focus: #7fb0e055;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #161615; --panel: #20201e; --ink: #ecebe6; --muted: #a09f98; --line: #34332f;
+  --accent: #7fb0e0; --same: #6cc28f; --diff: #e08a74; --amb: #e0b35c; --reveal: #1f2a35; --focus: #7fb0e055;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+header { position: sticky; top: 0; z-index: 2; background: var(--panel); border-bottom: 1px solid var(--line);
+  padding: 10px 16px; display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center; }
+header h1 { font-size: 16px; margin: 0; }
+.stat { color: var(--muted); font-variant-numeric: tabular-nums; }
+.bar { flex: 1 1 160px; height: 6px; background: var(--line); border-radius: 3px; overflow: hidden; min-width: 120px; }
+.bar > div { height: 100%; background: var(--accent); width: 0; }
+select, button, input, textarea { font: inherit; color: inherit; }
+select, input[type=text], textarea { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 5px 8px; }
+button { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 6px 12px; cursor: pointer; }
+button:hover { border-color: var(--accent); }
+button:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px solid var(--focus); outline-offset: 1px; }
+main { max-width: 1100px; margin: 0 auto; padding: 16px; }
+.caseline { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: baseline; margin-bottom: 10px; }
+.caseline h2 { margin: 0; font-size: 20px; font-variant-numeric: tabular-nums; }
+.pill { font-size: 12px; border: 1px solid var(--line); border-radius: 999px; padding: 1px 8px; color: var(--muted); }
+.pill.done { color: var(--same); border-color: var(--same); }
+.items { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 12px; }
+@media (max-width: 760px) { .items { grid-template-columns: minmax(0, 1fr); } }
+header label { display: inline-flex; gap: 6px; align-items: center; max-width: 100%; min-width: 0; }
+header select { min-width: 0; max-width: 100%; }
+main, .extras, .nav, .verdicts { min-width: 0; }
+code { overflow-wrap: anywhere; }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 14px; min-width: 0; }
+.card .tag { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
+.card h3 { font-size: 17px; margin: 4px 0 8px; overflow-wrap: anywhere; }
+.card p.excerpt { margin: 0 0 10px; color: var(--ink); opacity: .9; overflow-wrap: anywhere; }
+dl { display: grid; grid-template-columns: max-content 1fr; gap: 2px 10px; margin: 0; font-size: 13px; }
+dt { color: var(--muted); } dd { margin: 0; overflow-wrap: anywhere; }
+.verdicts { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0 8px; }
+.verdicts button { font-weight: 600; padding: 9px 14px; }
+.verdicts button.v-SAME_DEVELOPMENT { border-color: var(--same); color: var(--same); }
+.verdicts button.v-DIFFERENT_DEVELOPMENT { border-color: var(--diff); color: var(--diff); }
+.verdicts button.v-AMBIGUOUS { border-color: var(--amb); color: var(--amb); }
+.verdicts button.chosen { color: var(--panel); }
+.verdicts button.chosen.v-SAME_DEVELOPMENT { background: var(--same); }
+.verdicts button.chosen.v-DIFFERENT_DEVELOPMENT { background: var(--diff); }
+.verdicts button.chosen.v-AMBIGUOUS { background: var(--amb); }
+.extras { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; }
+.extras textarea { flex: 1 1 280px; min-height: 38px; }
+.nav { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; align-items: center; }
+.save { color: var(--muted); font-size: 13px; }
+.save.err { color: var(--diff); }
+.reveal { margin-top: 14px; background: var(--reveal); border: 1px dashed var(--line); border-radius: 10px; padding: 12px 14px; }
+.reveal h4 { margin: 0 0 6px; font-size: 14px; }
+.reveal .hidden-note { color: var(--muted); font-size: 13px; }
+.reveal ul { margin: 4px 0 0; padding-left: 18px; font-size: 13px; }
+.disagree { color: var(--diff); font-weight: 600; }
+.agree { color: var(--same); font-weight: 600; }
+.help { color: var(--muted); font-size: 12px; margin-top: 16px; }
+kbd { border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 4px; padding: 0 4px; font-size: 12px; }
+dialog { border: 1px solid var(--line); border-radius: 12px; background: var(--panel); color: var(--ink); max-width: 760px; width: calc(100% - 32px); }
+dialog table { border-collapse: collapse; width: 100%; font-size: 13px; }
+dialog td, dialog th { border-bottom: 1px solid var(--line); padding: 4px 6px; text-align: left; }
+.linklist a { color: var(--accent); cursor: pointer; margin-right: 6px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Development identity: gold review</h1>
+  <span class="stat" id="progress">loading…</span>
+  <div class="bar" aria-hidden="true"><div id="bar"></div></div>
+  <label>Queue
+    <select id="filter" aria-label="Queue filter">
+      <option value="recommended">Recommended order (all)</option>
+      <option value="ambiguous">Draft ambiguous</option>
+      <option value="low">Low confidence</option>
+      <option value="should_split">Should split</option>
+      <option value="should_merge">Should merge</option>
+      <option value="grows_same_id">Grows under same ID</option>
+      <option value="late_attach">Late attachment</option>
+      <option value="same_story_new_action">Same story / new action</option>
+      <option value="roundup_contamination">Roundup contamination</option>
+      <option value="single_source_below_development">Single-source</option>
+      <option value="multilingual">Multilingual</option>
+    </select>
+  </label>
+  <label><input type="checkbox" id="unresolvedOnly"> unresolved only</label>
+  <label><input type="checkbox" id="blind" checked> blind mode</label>
+  <button id="summaryBtn">Summary</button>
+</header>
+<main>
+  <div id="view"></div>
+  <p class="help">
+    Keys: <kbd>1</kbd> SAME · <kbd>2</kbd> DIFFERENT · <kbd>3</kbd> AMBIGUOUS · <kbd>←</kbd>/<kbd>→</kbd> or <kbd>k</kbd>/<kbd>j</kbd> previous/next ·
+    <kbd>u</kbd> next unresolved · <kbd>r</kbd> reveal · <kbd>s</kbd> summary. Every verdict is saved at once to
+    <code>owner-verdicts.yaml</code>; draft labels are never changed. Blind mode hides the current grouping, the draft
+    label, its rationale and confidence, and the candidate rule until you give a verdict. Structural-flag queues are
+    built from the draft label and the current grouping, so choosing one tells you what its cases have in common.
+  </p>
+</main>
+<dialog id="summary"><div id="summaryBody"></div><p><button id="closeSummary">Close</button></p></dialog>
+<script>
+"use strict";
+const S = { cases: [], byId: {}, verdicts: {}, options: {}, queue: [], idx: 0, revealed: new Set() };
+const LS = { get(k, d) { try { const v = localStorage.getItem(k); return v === null ? d : JSON.parse(v); } catch { return d; } },
+             set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} } };
+const $ = (id) => document.getElementById(id);
+// source text may carry HTML entities ("&#039;"): decode for display only (the stored data is untouched)
+const decoder = document.createElement("textarea");
+const decode = (s) => { decoder.innerHTML = String(s ?? ""); return decoder.value; };
+const esc = (s) => decode(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const LABEL = { SAME_DEVELOPMENT: "SAME", DIFFERENT_DEVELOPMENT: "DIFFERENT", AMBIGUOUS: "AMBIGUOUS" };
+const FLAG_NAMES = { should_split: "should split", should_merge: "should merge", grows_same_id: "grows under same ID",
+  late_attach: "late attachment", same_story_new_action: "same story / new action", roundup_contamination: "roundup contamination",
+  single_source_below_development: "single-source" };
+
+function bucket(c) {
+  const d = c.draft, f = c.flags;
+  if (d.label === "AMBIGUOUS" || d.confidence === "low") return 1;
+  if (f.includes("should_split")) return 2;
+  if (f.includes("should_merge")) return 3;
+  if (f.includes("same_story_new_action")) return 4;
+  if (f.includes("roundup_contamination")) return 5;
+  if (f.includes("grows_same_id") || f.includes("late_attach")) return 6;
+  if (d.confidence === "medium") return 7;
+  return 8;
+}
+function inFilter(c, f) {
+  switch (f) {
+    case "recommended": return true;
+    case "ambiguous": return c.draft.label === "AMBIGUOUS";
+    case "low": return c.draft.confidence === "low";
+    case "multilingual": return c.multilingual;
+    default: return c.flags.includes(f);
+  }
+}
+const reviewed = (id) => !!(S.verdicts[id] && S.verdicts[id].verdict);
+
+function buildQueue(keepId) {
+  const f = $("filter").value, only = $("unresolvedOnly").checked;
+  S.queue = S.cases.filter((c) => inFilter(c, f) && (!only || !reviewed(c.case) || c.case === keepId))
+    .sort((a, b) => bucket(a) - bucket(b) || a.case.localeCompare(b.case)).map((c) => c.case);
+  const at = keepId ? S.queue.indexOf(keepId) : -1;
+  S.idx = at >= 0 ? at : Math.min(S.idx, Math.max(0, S.queue.length - 1));
+}
+
+function itemCard(it, n, showSystem) {
+  const typ = it.source_type && it.source_type !== "rss" ? ` · ${esc(it.source_type)}` : "";
+  return `<article class="card" aria-label="Item ${n}">
+    <div class="tag">Item ${n}${showSystem && it.roundup ? " · roundup (headline heuristic)" : ""}</div>
+    <h3 lang="${esc(it.lang)}">${esc(it.title)}</h3>
+    ${it.excerpt ? `<p class="excerpt" lang="${esc(it.lang)}">${esc(it.excerpt)}</p>` : ""}
+    <dl>
+      <dt>Outlet</dt><dd>${esc(it.source)}${typ}</dd>
+      <dt>Published</dt><dd>${esc(it.published_at || "unknown")} · tick ${esc(it.tick)}</dd>
+      <dt>Language</dt><dd>${esc(it.lang)}</dd>
+      <dt>Actors (NER)</dt><dd>${esc((it.entities || []).slice(0, 8).join(", ") || "–")}</dd>
+      <dt>Places</dt><dd>${esc((it.places || []).slice(0, 8).join(", ") || "–")}</dd>
+      <dt>Item id</dt><dd><code>${esc(it.id)}</code></dd>
+    </dl></article>`;
+}
+
+function revealPanel(c, v) {
+  const sys = c.system, d = c.draft;
+  const devs = Object.entries(sys.developments).map(([id, dv]) =>
+    `<li>D${esc(id)}: “${esc(dv.summary)}” · ${dv.items} items · ${esc(dv.sources.join(", "))} · principals ${esc(dv.principals.slice(0, 6).join(", ") || "–")}</li>`).join("");
+  const agree = v && v.verdict ? (v.verdict === d.label ? `<span class="agree">agrees with draft</span>` : `<span class="disagree">differs from draft</span>`) : "";
+  return `<section class="reveal" aria-label="Comparison">
+    <h4>Draft label: ${esc(LABEL[d.label] || d.label)}${d.note ? ` (${esc(d.note)})` : ""} · confidence ${esc(d.confidence)} ${agree}</h4>
+    <div>${esc(d.rationale)}</div>
+    <h4 style="margin-top:10px">Current system</h4>
+    <div>${esc(sys.relation)}; item 1 in ${esc(sys.item_developments[0].map((x) => "D" + x).join(", ") || "–")}, item 2 in ${esc(sys.item_developments[1].map((x) => "D" + x).join(", ") || "–")}; cosine ${sys.cosine == null ? "n/a" : sys.cosine.toFixed(2)}</div>
+    ${devs ? `<ul>${devs}</ul>` : ""}
+    <div style="margin-top:6px">Proposed by: ${esc(sys.rules.join(", "))}${sys.why.length ? " — " + esc(sys.why.join("; ")) : ""}</div>
+    <div style="margin-top:6px">Structural flags (from the draft label): ${esc(c.flags.map((f) => FLAG_NAMES[f] || f).join(", ") || "none")}</div>
+  </section>`;
+}
+
+function render() {
+  const total = S.cases.length, done = S.cases.filter((c) => reviewed(c.case)).length;
+  $("progress").textContent = `${done}/${total} reviewed · ${total - done} unresolved · queue ${S.queue.length ? S.idx + 1 : 0}/${S.queue.length}`;
+  $("bar").style.width = `${(100 * done / total).toFixed(1)}%`;
+  if (!S.queue.length) { $("view").innerHTML = `<p>No cases in this queue.</p>`; return; }
+  const id = S.queue[S.idx], c = S.byId[id], v = S.verdicts[id] || {};
+  LS.set("identity-review-pos", { id, filter: $("filter").value });
+  const showSystem = !$("blind").checked || reviewed(id) || S.revealed.has(id);
+  const opt = (name, vals, cur) => `<label>${name} <select data-field="${name}"><option value="">–</option>${vals.map((x) =>
+    `<option ${cur === x ? "selected" : ""}>${x}</option>`).join("")}</select></label>`;
+  $("view").innerHTML = `
+    <div class="caseline"><h2>${esc(id)}</h2>
+      <span class="pill">${esc(c.window)} · ${esc(c.split)}</span>
+      ${reviewed(id) ? `<span class="pill done">reviewed: ${esc(LABEL[v.verdict])}</span>` : `<span class="pill">unresolved</span>`}
+      ${c.multilingual ? `<span class="pill">multilingual</span>` : ""}</div>
+    <div class="items">${itemCard(c.items[0], 1, showSystem)}${itemCard(c.items[1], 2, showSystem)}</div>
+    <div class="verdicts" role="group" aria-label="Verdict">
+      ${S.options.verdict.map((x, i) => `<button class="v-${x} ${v.verdict === x ? "chosen" : ""}" data-verdict="${x}" aria-pressed="${v.verdict === x}"><kbd>${i + 1}</kbd> ${LABEL[x]}</button>`).join("")}
+      ${v.verdict ? `<button data-clear="1">Clear verdict</button>` : ""}
+    </div>
+    <div class="extras">
+      ${opt("confidence", S.options.confidence, v.confidence)}
+      ${opt("boundary_reason", S.options.boundary_reason, v.boundary_reason)}
+      <textarea id="note" placeholder="Reviewer note (optional)" aria-label="Reviewer note">${esc(v.note || "")}</textarea>
+    </div>
+    <div class="nav">
+      <button id="prev">← Previous</button><button id="next">Next →</button><button id="nextUnres">Next unresolved</button>
+      ${showSystem ? "" : `<button id="revealBtn">Reveal comparison (r)</button>`}
+      <span class="save" id="save"></span>
+    </div>
+    ${showSystem ? revealPanel(c, v) : `<section class="reveal"><div class="hidden-note">Blind: current grouping, draft label, rationale, confidence and candidate rule are hidden until you give a verdict.</div></section>`}`;
+  document.querySelectorAll("[data-verdict]").forEach((b) => b.onclick = () => submit(id, b.dataset.verdict));
+  document.querySelectorAll("[data-clear]").forEach((b) => b.onclick = () => submit(id, null));
+  document.querySelectorAll("select[data-field]").forEach((s) => s.onchange = () => { if (reviewed(id)) submit(id, S.verdicts[id].verdict); });
+  $("note").onblur = () => { if (reviewed(id) && ($("note").value.trim() || null) !== (S.verdicts[id].note || null)) submit(id, S.verdicts[id].verdict); };
+  $("prev").onclick = () => move(-1); $("next").onclick = () => move(1); $("nextUnres").onclick = nextUnresolved;
+  if ($("revealBtn")) $("revealBtn").onclick = () => { S.revealed.add(id); render(); };
+}
+
+async function submit(id, verdict) {
+  const field = (n) => { const el = document.querySelector(`select[data-field="${n}"]`); return el && el.value ? el.value : null; };
+  const body = { case: id, verdict, confidence: field("confidence"), boundary_reason: field("boundary_reason"),
+                 note: $("note") ? $("note").value : null };
+  const status = $("save");
+  try {
+    const r = await fetch("/api/verdict", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
+    const j = await r.json();
+    if (!r.ok) throw new Error(j.error || r.status);
+    S.verdicts[id] = j.entry;
+    buildQueue(id); render();
+    $("save").textContent = verdict ? `saved ${new Date().toLocaleTimeString()}` : "verdict cleared";
+  } catch (e) {
+    status.textContent = `NOT saved: ${e.message} (is the review server running?)`; status.classList.add("err");
+  }
+}
+function move(d) { if (!S.queue.length) return; S.idx = (S.idx + d + S.queue.length) % S.queue.length; render(); window.scrollTo(0, 0); }
+function nextUnresolved() {
+  for (let k = 1; k <= S.queue.length; k++) {
+    const j = (S.idx + k) % S.queue.length;
+    if (!reviewed(S.queue[j])) { S.idx = j; render(); window.scrollTo(0, 0); return; }
+  }
+  showSummary();
+}
+
+function showSummary() {
+  const total = S.cases.length, rev = S.cases.filter((c) => reviewed(c.case));
+  const counts = { SAME_DEVELOPMENT: 0, DIFFERENT_DEVELOPMENT: 0, AMBIGUOUS: 0 };
+  const dis = [], byFlag = {};
+  for (const c of rev) {
+    const v = S.verdicts[c.case].verdict; counts[v]++;
+    if (v !== c.draft.label) { dis.push(c.case); for (const f of (c.flags.length ? c.flags : ["(no flag)"])) (byFlag[f] = byFlag[f] || []).push(c.case); }
+  }
+  const unres = S.cases.filter((c) => !reviewed(c.case)).map((c) => c.case);
+  const link = (id) => `<a data-go="${esc(id)}">${esc(id)}</a>`;
+  $("summaryBody").innerHTML = `<h3>Review summary</h3>
+    <p>${rev.length}/${total} reviewed · SAME ${counts.SAME_DEVELOPMENT} · DIFFERENT ${counts.DIFFERENT_DEVELOPMENT} · AMBIGUOUS ${counts.AMBIGUOUS}</p>
+    <p>Draft-label disagreements: <strong>${dis.length}</strong></p>
+    <table><tr><th>Structural flag</th><th>Disagreements</th><th>Cases</th></tr>
+      ${Object.entries(byFlag).map(([f, ids]) => `<tr><td>${esc(FLAG_NAMES[f] || f)}</td><td>${ids.length}</td><td class="linklist">${ids.map(link).join("")}</td></tr>`).join("") || `<tr><td colspan="3">none</td></tr>`}
+    </table>
+    <p>Unresolved (${unres.length}): <span class="linklist">${unres.map(link).join("")}</span></p>
+    <p class="help">The gold is not frozen or hashed by this page; freezing happens after review is complete.</p>`;
+  $("summaryBody").querySelectorAll("[data-go]").forEach((a) => a.onclick = () => {
+    $("filter").value = "recommended"; $("unresolvedOnly").checked = false; buildQueue(a.dataset.go); $("summary").close(); render();
+  });
+  $("summary").showModal();
+}
+
+document.addEventListener("keydown", (e) => {
+  if (e.target.matches("textarea, input[type=text], select") || e.ctrlKey || e.metaKey || e.altKey) return;
+  if ($("summary").open) { if (e.key === "s") $("summary").close(); return; }
+  const id = S.queue[S.idx];
+  const map = { "1": 0, "2": 1, "3": 2 };
+  if (e.key in map && id) { e.preventDefault(); submit(id, S.options.verdict[map[e.key]]); }
+  else if (e.key === "ArrowRight" || e.key === "j") move(1);
+  else if (e.key === "ArrowLeft" || e.key === "k") move(-1);
+  else if (e.key === "u") nextUnresolved();
+  else if (e.key === "r" && id) { S.revealed.add(id); render(); }
+  else if (e.key === "s") showSummary();
+});
+$("filter").onchange = () => { S.idx = 0; buildQueue(); render(); };
+$("unresolvedOnly").onchange = () => { buildQueue(S.queue[S.idx]); render(); };
+$("blind").onchange = render;
+$("summaryBtn").onclick = showSummary;
+$("closeSummary").onclick = () => $("summary").close();
+
+(async function init() {
+  try {
+    const st = await (await fetch("/api/state")).json();
+    S.cases = st.cases; S.verdicts = st.verdicts; S.options = st.options;
+    S.byId = Object.fromEntries(S.cases.map((c) => [c.case, c]));
+    const pos = LS.get("identity-review-pos", null);
+    const linked = decodeURIComponent(location.hash.slice(1));      // #C003 opens that case
+    if (S.byId[linked]) buildQueue(linked);
+    else {
+      if (pos && pos.filter) $("filter").value = pos.filter;
+      buildQueue(pos && S.byId[pos.id] ? pos.id : null);
+    }
+    render();
+  } catch (e) {
+    $("view").innerHTML = `<p>Could not load cases: ${esc(e.message)}. Start the server: <code>python evaluations/identity/scripts/review_server.py</code></p>`;
+  }
+})();
+</script>
+</body>
+</html>

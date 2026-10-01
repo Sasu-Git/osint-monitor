@@ -1,0 +1,1158 @@
+# Owner verdicts for the Development-identity review (see scripts/verdicts.py for the fields).
+# Draft labels live in draft-labels.json and are never changed. Nothing is frozen until review ends.
+A001:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: medium
+  boundary_reason: commentary_or_analysis
+  note: null
+  reviewed_at: '2026-10-01T10:19:53Z'
+A002:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: high
+  boundary_reason: distinct_action
+  note: null
+  reviewed_at: '2026-10-01T09:23:51Z'
+A003:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: high
+  boundary_reason: commentary_or_analysis
+  note: opinion pieces/commentaries should only surface if bringing new information to the table about specific developments
+  reviewed_at: '2026-10-01T10:40:43Z'
+A004:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:40:51Z'
+A005:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: shouldn't surface at all, not interested in sports business
+  reviewed_at: '2026-10-01T10:41:19Z'
+A006:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: high
+  boundary_reason: distinct_action
+  note: action - reaction, should trigger a small inquiry explaining the meaning or "weight" of the news based on reactions
+    from media, institutions and known social media account (limit to X & Instagram)
+  reviewed_at: '2026-10-01T10:22:17Z'
+A007:
+  verdict: SAME_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:41:31Z'
+A008:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:41:49Z'
+A009:
+  verdict: SAME_DEVELOPMENT
+  confidence: medium
+  boundary_reason: same_occurrence
+  note: null
+  reviewed_at: '2026-10-01T09:07:41Z'
+A010:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:42:00Z'
+A011:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:42:08Z'
+A012:
+  verdict: SAME_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:13:34Z'
+A013:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: medium
+  boundary_reason: distinct_action
+  note: distinct action / development but same situation, or rather an aspect of the situation between Israel and Palestine
+    and neighboring nations
+  reviewed_at: '2026-10-01T09:25:54Z'
+A014:
+  verdict: SAME_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:42:15Z'
+A015:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: medium
+  boundary_reason: commentary_or_analysis
+  note: null
+  reviewed_at: '2026-10-01T10:23:08Z'
+A016:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:42:21Z'
+A017:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: high
+  boundary_reason: distinct_action
+  note: different developments, same situation
+  reviewed_at: '2026-10-01T09:09:12Z'
+A018:
+  verdict: SAME_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:42:27Z'
+A019:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:42:35Z'
+A020:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:42:40Z'
+A021:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: medium
+  boundary_reason: follow_up_update
+  note: same situation though, also natural calamity here (should trigger automatic aggregation/clustering)
+  reviewed_at: '2026-10-01T09:27:11Z'
+A022:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: high
+  boundary_reason: follow_up_update
+  note: later occurrence but same situation, natural disaster
+  reviewed_at: '2026-10-01T09:27:52Z'
+A023:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: medium
+  boundary_reason: follow_up_update
+  note: 'different but same situation: action-reaction or co-causation mechanism, one likely occurs in response to or because
+    of the other'
+  reviewed_at: '2026-10-01T09:29:04Z'
+A024:
+  verdict: SAME_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:42:44Z'
+A025:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: medium
+  boundary_reason: commentary_or_analysis
+  note: null
+  reviewed_at: '2026-10-01T10:43:07Z'
+A026:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:43:19Z'
+A027:
+  verdict: SAME_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:43:28Z'
+A028:
+  verdict: AMBIGUOUS
+  confidence: medium
+  boundary_reason: same_occurrence
+  note: 'it is different only if the re-establishment didn''t force families out in the same area. When in doubt we should
+    trigger a sequence that makes sure we''re talking about the same event: detecting perhaps a common source cited, common
+    location etc..'
+  reviewed_at: '2026-10-01T09:31:53Z'
+A029:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:23:16Z'
+A030:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: commentary_or_analysis
+  note: null
+  reviewed_at: '2026-10-01T10:43:41Z'
+A031:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: commentary_or_analysis
+  note: null
+  reviewed_at: '2026-10-01T10:44:32Z'
+A032:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: calamity, should be bundled and update silently untill rescue and deathtoll stabilizes.
+  reviewed_at: '2026-10-01T10:45:15Z'
+A033:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:45:23Z'
+B001:
+  verdict: SAME_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:45:44Z'
+B002:
+  verdict: SAME_DEVELOPMENT
+  confidence: high
+  boundary_reason: same_occurrence
+  note: null
+  reviewed_at: '2026-10-01T10:09:08Z'
+B003:
+  verdict: SAME_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:13:38Z'
+B004:
+  verdict: SAME_DEVELOPMENT
+  confidence: high
+  boundary_reason: same_occurrence
+  note: null
+  reviewed_at: '2026-10-01T10:09:31Z'
+B005:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: same visit though, only the "juice" of the meeting should be extracted and surface
+  reviewed_at: '2026-10-01T10:24:00Z'
+B006:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:24:11Z'
+B007:
+  verdict: SAME_DEVELOPMENT
+  confidence: high
+  boundary_reason: same_occurrence
+  note: null
+  reviewed_at: '2026-10-01T10:09:57Z'
+B008:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: medium
+  boundary_reason: distinct_action
+  note: 'it''s a distinct action but the area of interest is the same: of course Xi did not travel all the way there for a
+    report of Trump''s building tour, despite this being the headline. It''s something that happened in the background of
+    other important meetings'
+  reviewed_at: '2026-10-01T09:34:38Z'
+B009:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:45:59Z'
+B010:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:47:21Z'
+B011:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: high
+  boundary_reason: follow_up_update
+  note: null
+  reviewed_at: '2026-10-01T09:36:01Z'
+C001:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: high
+  boundary_reason: distinct_action
+  note: 'completely distinct: one is about Big Tech and need for regulation, the other is focusing on energy demand and strategic
+    stock'
+  reviewed_at: '2026-10-01T09:37:24Z'
+C002:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: high
+  boundary_reason: distinct_action
+  note: 'distinct action, one is an announcement coming from Trump regarding how AI should be called (should trigger a question:
+    why/why now?) , the other is Big Tech regulation topic'
+  reviewed_at: '2026-10-01T09:38:37Z'
+C003:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: high
+  boundary_reason: distinct_action
+  note: null
+  reviewed_at: '2026-10-01T09:39:18Z'
+C004:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:47:30Z'
+C005:
+  verdict: SAME_DEVELOPMENT
+  confidence: high
+  boundary_reason: same_occurrence
+  note: null
+  reviewed_at: '2026-10-01T09:12:09Z'
+C006:
+  verdict: SAME_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:13:46Z'
+C007:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: high
+  boundary_reason: distinct_action
+  note: null
+  reviewed_at: '2026-10-01T09:39:40Z'
+C008:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:47:41Z'
+C009:
+  verdict: SAME_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:47:54Z'
+C010:
+  verdict: SAME_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:24:19Z'
+C011:
+  verdict: SAME_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:24:34Z'
+C012:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: high
+  boundary_reason: distinct_action
+  note: null
+  reviewed_at: '2026-10-01T09:44:43Z'
+C013:
+  verdict: SAME_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:48:10Z'
+C014:
+  verdict: SAME_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:24:45Z'
+C015:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:48:17Z'
+C016:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: high
+  boundary_reason: distinct_action
+  note: different but same topic
+  reviewed_at: '2026-10-01T10:25:56Z'
+C017:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: high
+  boundary_reason: commentary_or_analysis
+  note: distinct action but one is a commentary on the other
+  reviewed_at: '2026-10-01T09:45:33Z'
+C018:
+  verdict: SAME_DEVELOPMENT
+  confidence: high
+  boundary_reason: follow_up_update
+  note: it's the appointment itself and the meeting after, it's institutional formality to meet with the King right after
+    the formation of a new government.
+  reviewed_at: '2026-10-01T09:14:08Z'
+C019:
+  verdict: SAME_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:48:30Z'
+C020:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:48:40Z'
+C021:
+  verdict: SAME_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:13:54Z'
+C022:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: high
+  boundary_reason: commentary_or_analysis
+  note: null
+  reviewed_at: '2026-10-01T09:46:13Z'
+C023:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:26:14Z'
+C024:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:48:46Z'
+C025:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:48:51Z'
+C026:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: high
+  boundary_reason: distinct_action
+  note: null
+  reviewed_at: '2026-10-01T09:47:36Z'
+C027:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:49:00Z'
+C028:
+  verdict: SAME_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:49:06Z'
+C029:
+  verdict: SAME_DEVELOPMENT
+  confidence: medium
+  boundary_reason: same_occurrence
+  note: should be bundled together, same day development 1 hour apart, same source
+  reviewed_at: '2026-10-01T09:49:52Z'
+C030:
+  verdict: SAME_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:49:21Z'
+C031:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:26:33Z'
+C032:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: 'different but connected: state of the ocean vs fisheries funding, should be part of the same situation (maritime
+    policies)'
+  reviewed_at: '2026-10-01T10:50:31Z'
+C033:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: high
+  boundary_reason: distinct_action
+  note: null
+  reviewed_at: '2026-10-01T09:50:10Z'
+C034:
+  verdict: SAME_DEVELOPMENT
+  confidence: high
+  boundary_reason: roundup
+  note: should be bundled together, it's literally the accompanying Q&A ( and btw we should vet the questions asked as well
+    and possibly come up with other ones to launch /attach onto other threads)
+  reviewed_at: '2026-10-01T00:00:00Z'
+C035:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: high
+  boundary_reason: distinct_action
+  note: 'completely different action: france public sector pay protests vs eviction laws --> should trigger search on commentary
+    from both sides of each event to try and answer the question: what are the factors/policies/choices that contributed to
+    lead to this point?'
+  reviewed_at: '2026-10-01T09:51:57Z'
+C036:
+  verdict: SAME_DEVELOPMENT
+  confidence: high
+  boundary_reason: same_occurrence
+  note: null
+  reviewed_at: '2026-10-01T10:10:06Z'
+C037:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: high
+  boundary_reason: distinct_action
+  note: null
+  reviewed_at: '2026-10-01T09:52:22Z'
+C038:
+  verdict: SAME_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:14:00Z'
+C039:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: high
+  boundary_reason: follow_up_update
+  note: different but same exact topic
+  reviewed_at: '2026-10-01T10:29:07Z'
+C040:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: commentary_or_analysis
+  note: null
+  reviewed_at: '2026-10-01T10:50:52Z'
+C041:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:51:01Z'
+C042:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: high
+  boundary_reason: distinct_action
+  note: null
+  reviewed_at: '2026-10-01T09:52:52Z'
+C043:
+  verdict: SAME_DEVELOPMENT
+  confidence: high
+  boundary_reason: same_occurrence
+  note: null
+  reviewed_at: '2026-10-01T10:10:29Z'
+C044:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: not interested shouldn't surface
+  reviewed_at: '2026-10-01T10:53:01Z'
+C045:
+  verdict: SAME_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:53:08Z'
+C046:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: high
+  boundary_reason: distinct_action
+  note: null
+  reviewed_at: '2026-10-01T09:53:04Z'
+C047:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:53:26Z'
+C048:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: whenever the is a EUCCS proposal we should vet it carefully...
+  reviewed_at: '2026-10-01T10:54:12Z'
+C049:
+  verdict: SAME_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:14:16Z'
+C050:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:54:26Z'
+C051:
+  verdict: SAME_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:11:57Z'
+C052:
+  verdict: SAME_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:14:27Z'
+C053:
+  verdict: SAME_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:54:34Z'
+C054:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:54:39Z'
+C055:
+  verdict: SAME_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:54:46Z'
+C056:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:54:52Z'
+C057:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:55:03Z'
+C058:
+  verdict: SAME_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:56:00Z'
+C059:
+  verdict: SAME_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:56:03Z'
+C060:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:56:08Z'
+C061:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:56:16Z'
+C062:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: high
+  boundary_reason: distinct_action
+  note: null
+  reviewed_at: '2026-10-01T09:53:25Z'
+C063:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: high
+  boundary_reason: distinct_action
+  note: null
+  reviewed_at: '2026-10-01T09:54:00Z'
+C064:
+  verdict: SAME_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: basically same news, should bundle together and add to the development, before-after meeting only matters if there's
+    a big dissonance between intentions/proposed aim of the meeting and the actual turnout (e.g. Zelensky - Trump live altercations
+    along with JD Vance).
+  reviewed_at: '2026-10-01T00:00:00Z'
+C065:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:56:36Z'
+C066:
+  verdict: SAME_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:12:05Z'
+C067:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:31:54Z'
+C068:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:56:46Z'
+C069:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:56:53Z'
+C070:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:56:59Z'
+C071:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:57:10Z'
+C072:
+  verdict: SAME_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:14:32Z'
+C073:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: high
+  boundary_reason: distinct_action
+  note: null
+  reviewed_at: '2026-10-01T09:54:22Z'
+C074:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T19:12:36Z'
+C075:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T19:12:48Z'
+C076:
+  verdict: SAME_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: same attack though, should be clustered
+  reviewed_at: '2026-10-01T00:00:00Z'
+C077:
+  verdict: SAME_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:12:11Z'
+C078:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:35:03Z'
+C079:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: high
+  boundary_reason: distinct_action
+  note: 'for conflicts: we should be able to divide testimony from actual event reporting'
+  reviewed_at: '2026-10-01T09:55:41Z'
+C080:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: medium
+  boundary_reason: distinct_action
+  note: When headlines mix more events together like World news briefs, only surface things that have not appeared from other
+    sources yet, the ones that have are likely redundant and should not surface
+  reviewed_at: '2026-10-01T09:57:26Z'
+C081:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: commentary_or_analysis
+  note: null
+  reviewed_at: '2026-10-01T19:13:17Z'
+C082:
+  verdict: SAME_DEVELOPMENT
+  confidence: high
+  boundary_reason: follow_up_update
+  note: institutional formality, meeting with the king after newly formed government
+  reviewed_at: '2026-10-01T09:15:02Z'
+C083:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T19:13:30Z'
+C084:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: high
+  boundary_reason: distinct_action
+  note: null
+  reviewed_at: '2026-10-01T09:58:07Z'
+C085:
+  verdict: SAME_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:14:38Z'
+C086:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T19:13:52Z'
+C087:
+  verdict: SAME_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T19:14:05Z'
+C088:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T19:14:24Z'
+C089:
+  verdict: SAME_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:14:51Z'
+C090:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: high
+  boundary_reason: commentary_or_analysis
+  note: commentary, classic way of spinning the news as "cold" relationship between Italy & Egypt. We should make a feature
+    for recurring review of these ways to shape titles and frame topics
+  reviewed_at: '2026-10-01T10:36:45Z'
+C091:
+  verdict: SAME_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T19:14:38Z'
+C092:
+  verdict: SAME_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:12:16Z'
+C093:
+  verdict: SAME_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:15:22Z'
+C094:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: high
+  boundary_reason: commentary_or_analysis
+  note: one is the commentary (spanish, US senate vote refusal) vs the raid itself
+  reviewed_at: '2026-10-01T09:59:07Z'
+C095:
+  verdict: SAME_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T19:14:46Z'
+C096:
+  verdict: SAME_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:12:19Z'
+C097:
+  verdict: SAME_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T19:14:50Z'
+C098:
+  verdict: SAME_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T19:14:56Z'
+C099:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T19:15:02Z'
+C100:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: commentary_or_analysis
+  note: null
+  reviewed_at: '2026-10-01T10:37:00Z'
+C101:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T19:15:17Z'
+C102:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T19:15:26Z'
+C103:
+  verdict: SAME_DEVELOPMENT
+  confidence: high
+  boundary_reason: roundup
+  note: different but should be bundled together into one piece of news
+  reviewed_at: '2026-10-01T00:00:00Z'
+C104:
+  verdict: SAME_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:12:42Z'
+C105:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: high
+  boundary_reason: distinct_action
+  note: distinct action but same situation
+  reviewed_at: '2026-10-01T09:59:49Z'
+C106:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: high
+  boundary_reason: commentary_or_analysis
+  note: null
+  reviewed_at: '2026-10-01T10:00:16Z'
+C107:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T19:15:48Z'
+C108:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T19:16:01Z'
+C109:
+  verdict: SAME_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:15:33Z'
+C110:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T19:16:17Z'
+C111:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:38:13Z'
+C112:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: high
+  boundary_reason: distinct_action
+  note: null
+  reviewed_at: '2026-10-01T10:06:52Z'
+C113:
+  verdict: SAME_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:12:48Z'
+C114:
+  verdict: SAME_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:16:49Z'
+C115:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: high
+  boundary_reason: distinct_action
+  note: distinct action but same situation
+  reviewed_at: '2026-10-01T10:07:20Z'
+H001:
+  verdict: SAME_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:12:56Z'
+H002:
+  verdict: SAME_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: same but shouldn't surface unless of international relevance
+  reviewed_at: '2026-10-01T10:17:15Z'
+H003:
+  verdict: SAME_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: same but again, natural calamity
+  reviewed_at: '2026-10-01T10:17:43Z'
+H004:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T19:16:31Z'
+H005:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T19:16:42Z'
+H006:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: high
+  boundary_reason: follow_up_update
+  note: 'one is rescue operations and death toll, the other is specific to hydropower tunnels. different developments same
+    situation (when natural calamities occur, they should be clustered together because usually involving specific location
+    and relatively predictable chain of events: warnings, evacs if possible, the actual event, rescuing and death toll, then
+    cost assessment etc..)'
+  reviewed_at: '2026-10-01T09:20:09Z'
+H007:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T19:16:47Z'
+H008:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: calamity
+  reviewed_at: '2026-10-01T10:39:03Z'
+H009:
+  verdict: SAME_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:13:16Z'
+H010:
+  verdict: SAME_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:18:49Z'
+H011:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T19:16:54Z'
+H012:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: commentary_or_analysis
+  note: null
+  reviewed_at: '2026-10-01T19:17:16Z'
+H013:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T19:17:33Z'
+H014:
+  verdict: SAME_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T09:20:33Z'
+H015:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: calamity, bundle
+  reviewed_at: '2026-10-01T10:39:24Z'
+H016:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: medium
+  boundary_reason: distinct_action
+  note: different developments same situation
+  reviewed_at: '2026-10-01T09:21:53Z'
+H017:
+  verdict: SAME_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:19:07Z'
+H018:
+  verdict: SAME_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T10:13:24Z'
+H019:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T19:17:52Z'
+H020:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: calamity, bundle (clearly state testimony vs report)
+  reviewed_at: '2026-10-01T10:39:47Z'
+H021:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: high
+  boundary_reason: commentary_or_analysis
+  note: 'same situation, natural calamity, geographically limited: should be clustered'
+  reviewed_at: '2026-10-01T10:08:11Z'
+H022:
+  verdict: SAME_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T19:18:00Z'
+H023:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: high
+  boundary_reason: distinct_action
+  note: distinct action. One is rescue work intensification, the other is the news that survivors on that district are returning
+    to their ravaged homes
+  reviewed_at: '2026-10-01T09:16:10Z'
+H024:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: high
+  boundary_reason: commentary_or_analysis
+  note: not once occurrence but should be clustered, natural calamity
+  reviewed_at: '2026-10-01T10:08:44Z'
+H025:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T19:18:07Z'
+H026:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: medium
+  boundary_reason: follow_up_update
+  note: different developments same situation
+  reviewed_at: '2026-10-01T09:22:28Z'
+H027:
+  verdict: SAME_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T19:18:14Z'
+H028:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T19:18:30Z'
+H029:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: high
+  boundary_reason: distinct_action
+  note: One is returning one is rescue mission; same situation different developments
+  reviewed_at: '2026-10-01T09:16:46Z'
+H030:
+  verdict: DIFFERENT_DEVELOPMENT
+  confidence: null
+  boundary_reason: null
+  note: null
+  reviewed_at: '2026-10-01T19:18:36Z'

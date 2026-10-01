@@ -400,8 +400,7 @@ def persist_relations(
             # Update evidence list if this item is new evidence
             evidence_ids = existing.evidence_item_ids or []
             if item_id not in evidence_ids:
-                evidence_ids.append(item_id)
-                existing.evidence_item_ids = evidence_ids
+                existing.evidence_item_ids = [*evidence_ids, item_id]    # new list: JSON is not mutation-tracked
                 # Boost confidence slightly with additional evidence
                 existing.confidence = min(existing.confidence + 0.05, 1.0)
             created.append(existing)

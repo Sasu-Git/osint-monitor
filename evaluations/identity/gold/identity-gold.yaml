@@ -1,0 +1,2104 @@
+# Development-identity gold (frozen). Labels are the owner's verdicts after blind review of drafts
+# written by an annotator that saw only item text, outlet, time, language and the definition.
+# Item ids refer to the windows in ../manifest.yaml. Do not edit: changes need a new revision.
+A001:
+  a: b-85e1f8c5197d
+  b: b-d21109ba71d7
+  boundary_reason: commentary_or_analysis
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: medium
+  source: owner (agrees with draft)
+  split: development
+  window: '2026-08-21'
+A002:
+  a: b-ed25155d038d
+  b: b-320f20d36f00
+  boundary_reason: distinct_action
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: high
+  source: owner (agrees with draft)
+  split: development
+  window: '2026-08-21'
+A003:
+  a: b-e095d21a704d
+  b: b-b3d4b7966b1a
+  boundary_reason: commentary_or_analysis
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: opinion pieces/commentaries should only surface if bringing new information to the table about specific developments
+  owner_confidence: high
+  source: owner (agrees with draft)
+  split: development
+  window: '2026-08-21'
+A004:
+  a: b-3a527f407cc4
+  b: b-1a0f6855a3bf
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: '2026-08-21'
+A005:
+  a: b-b34bb8cdf0bb
+  b: b-f21800253bff
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: shouldn't surface at all, not interested in sports business
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: '2026-08-21'
+A006:
+  a: b-47221c4faf92
+  b: b-dfc16b535283
+  boundary_reason: distinct_action
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: action - reaction, should trigger a small inquiry explaining the meaning or "weight" of the news based on reactions
+    from media, institutions and known social media account (limit to X & Instagram)
+  owner_confidence: high
+  source: owner (agrees with draft)
+  split: development
+  window: '2026-08-21'
+A007:
+  a: b-53dc89e53904
+  b: b-312853eceb17
+  boundary_reason: null
+  draft_label: SAME_DEVELOPMENT
+  label: SAME_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: '2026-08-21'
+A008:
+  a: b-bbcb00eae268
+  b: b-f55f349f9898
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: '2026-08-21'
+A009:
+  a: b-8b0980fba97b
+  b: b-34d06bf06e8c
+  boundary_reason: same_occurrence
+  draft_label: AMBIGUOUS
+  label: SAME_DEVELOPMENT
+  note: null
+  owner_confidence: medium
+  source: owner (corrected draft)
+  split: development
+  window: '2026-08-21'
+A010:
+  a: b-e736db6a6335
+  b: b-9259fb4b9124
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: '2026-08-21'
+A011:
+  a: b-342d8d2a178d
+  b: b-bbcb00eae268
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: '2026-08-21'
+A012:
+  a: b-e5e62052515e
+  b: b-38f9f084379c
+  boundary_reason: null
+  draft_label: SAME_DEVELOPMENT
+  label: SAME_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: '2026-08-21'
+A013:
+  a: b-9d435faf259d
+  b: b-e65cd1bb15f4
+  boundary_reason: distinct_action
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: distinct action / development but same situation, or rather an aspect of the situation between Israel and Palestine
+    and neighboring nations
+  owner_confidence: medium
+  source: owner (agrees with draft)
+  split: development
+  window: '2026-08-21'
+A014:
+  a: b-8a8e0d395f60
+  b: b-7d87768d2f82
+  boundary_reason: null
+  draft_label: SAME_DEVELOPMENT
+  label: SAME_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: '2026-08-21'
+A015:
+  a: b-b63dd0b0fd76
+  b: b-8608173935c4
+  boundary_reason: commentary_or_analysis
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: medium
+  source: owner (agrees with draft)
+  split: development
+  window: '2026-08-21'
+A016:
+  a: b-3a527f407cc4
+  b: b-b3d4b7966b1a
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: '2026-08-21'
+A017:
+  a: b-6a2e684a65d2
+  b: b-2e0da6b7e7eb
+  boundary_reason: distinct_action
+  draft_label: AMBIGUOUS
+  label: DIFFERENT_DEVELOPMENT
+  note: different developments, same situation
+  owner_confidence: high
+  source: owner (corrected draft)
+  split: development
+  window: '2026-08-21'
+A018:
+  a: b-312853eceb17
+  b: b-25760921e54e
+  boundary_reason: null
+  draft_label: SAME_DEVELOPMENT
+  label: SAME_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: '2026-08-21'
+A019:
+  a: b-e090e68e5085
+  b: b-71e9862bc0c3
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: '2026-08-21'
+A020:
+  a: b-25760921e54e
+  b: b-36b77b6ef894
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: '2026-08-21'
+A021:
+  a: b-2e0da6b7e7eb
+  b: b-8826249c972c
+  boundary_reason: follow_up_update
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: same situation though, also natural calamity here (should trigger automatic aggregation/clustering)
+  owner_confidence: medium
+  source: owner (agrees with draft)
+  split: development
+  window: '2026-08-21'
+A022:
+  a: b-422186e87411
+  b: b-2e0da6b7e7eb
+  boundary_reason: follow_up_update
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: later occurrence but same situation, natural disaster
+  owner_confidence: high
+  source: owner (agrees with draft)
+  split: development
+  window: '2026-08-21'
+A023:
+  a: b-52e7176bac0a
+  b: b-e65cd1bb15f4
+  boundary_reason: follow_up_update
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: 'different but same situation: action-reaction or co-causation mechanism, one likely occurs in response to or because
+    of the other'
+  owner_confidence: medium
+  source: owner (agrees with draft)
+  split: development
+  window: '2026-08-21'
+A024:
+  a: b-25760921e54e
+  b: b-53dc89e53904
+  boundary_reason: null
+  draft_label: SAME_DEVELOPMENT
+  label: SAME_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: '2026-08-21'
+A025:
+  a: b-9d435faf259d
+  b: b-38eba7dee8c5
+  boundary_reason: commentary_or_analysis
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: medium
+  source: owner (agrees with draft)
+  split: development
+  window: '2026-08-21'
+A026:
+  a: b-c349800cdff6
+  b: b-bbcb00eae268
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: '2026-08-21'
+A027:
+  a: b-7d87768d2f82
+  b: b-85e1f8c5197d
+  boundary_reason: null
+  draft_label: SAME_DEVELOPMENT
+  label: SAME_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: '2026-08-21'
+A028:
+  a: b-52e7176bac0a
+  b: b-9d435faf259d
+  boundary_reason: same_occurrence
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: AMBIGUOUS
+  note: 'it is different only if the re-establishment didn''t force families out in the same area. When in doubt we should
+    trigger a sequence that makes sure we''re talking about the same event: detecting perhaps a common source cited, common
+    location etc..'
+  owner_confidence: medium
+  source: owner (corrected draft)
+  split: development
+  window: '2026-08-21'
+A029:
+  a: b-6a2e684a65d2
+  b: b-422186e87411
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: '2026-08-21'
+A030:
+  a: b-b3d4b7966b1a
+  b: b-9259fb4b9124
+  boundary_reason: commentary_or_analysis
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: '2026-08-21'
+A031:
+  a: b-52e7176bac0a
+  b: b-38eba7dee8c5
+  boundary_reason: commentary_or_analysis
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: '2026-08-21'
+A032:
+  a: b-6a2e684a65d2
+  b: b-8826249c972c
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: calamity, should be bundled and update silently untill rescue and deathtoll stabilizes.
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: '2026-08-21'
+A033:
+  a: b-3a527f407cc4
+  b: b-e736db6a6335
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: '2026-08-21'
+B001:
+  a: b-17f8645e6056
+  b: b-d4cad9c5fd6c
+  boundary_reason: null
+  draft_label: SAME_DEVELOPMENT
+  label: SAME_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: '2026-09-25'
+B002:
+  a: b-5d1ba8e525da
+  b: b-d72e5f6a5e01
+  boundary_reason: same_occurrence
+  draft_label: SAME_DEVELOPMENT
+  label: SAME_DEVELOPMENT
+  note: null
+  owner_confidence: high
+  source: owner (agrees with draft)
+  split: development
+  window: '2026-09-25'
+B003:
+  a: b-8a758a84c401
+  b: b-256c7087fa4e
+  boundary_reason: null
+  draft_label: SAME_DEVELOPMENT
+  label: SAME_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: '2026-09-25'
+B004:
+  a: b-63cb0d4f2400
+  b: b-9796005bb46b
+  boundary_reason: same_occurrence
+  draft_label: SAME_DEVELOPMENT
+  label: SAME_DEVELOPMENT
+  note: null
+  owner_confidence: high
+  source: owner (agrees with draft)
+  split: development
+  window: '2026-09-25'
+B005:
+  a: b-9796005bb46b
+  b: b-683038d2cd37
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: same visit though, only the "juice" of the meeting should be extracted and surface
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: '2026-09-25'
+B006:
+  a: b-fee27e429610
+  b: b-3d9601881311
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: '2026-09-25'
+B007:
+  a: b-6e3eb47c7f66
+  b: b-aa291f31d75e
+  boundary_reason: same_occurrence
+  draft_label: SAME_DEVELOPMENT
+  label: SAME_DEVELOPMENT
+  note: null
+  owner_confidence: high
+  source: owner (agrees with draft)
+  split: development
+  window: '2026-09-25'
+B008:
+  a: b-683038d2cd37
+  b: b-97cb65d1a469
+  boundary_reason: distinct_action
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: 'it''s a distinct action but the area of interest is the same: of course Xi did not travel all the way there for a
+    report of Trump''s building tour, despite this being the headline. It''s something that happened in the background of
+    other important meetings'
+  owner_confidence: medium
+  source: owner (agrees with draft)
+  split: development
+  window: '2026-09-25'
+B009:
+  a: b-453ee4cac113
+  b: b-361a029728da
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: '2026-09-25'
+B010:
+  a: b-683038d2cd37
+  b: b-f2fe2e86b26c
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: '2026-09-25'
+B011:
+  a: b-38730424bfbc
+  b: b-14aae9d37ebe
+  boundary_reason: follow_up_update
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: high
+  source: owner (agrees with draft)
+  split: development
+  window: '2026-09-25'
+C001:
+  a: sx-129
+  b: sx-133
+  boundary_reason: distinct_action
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: 'completely distinct: one is about Big Tech and need for regulation, the other is focusing on energy demand and strategic
+    stock'
+  owner_confidence: high
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C002:
+  a: sx-48
+  b: sx-129
+  boundary_reason: distinct_action
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: 'distinct action, one is an announcement coming from Trump regarding how AI should be called (should trigger a question:
+    why/why now?) , the other is Big Tech regulation topic'
+  owner_confidence: high
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C003:
+  a: sx-553
+  b: sx-554
+  boundary_reason: distinct_action
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: high
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C004:
+  a: sx-105
+  b: sx-256
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C005:
+  a: sx-421
+  b: sx-424
+  boundary_reason: same_occurrence
+  draft_label: AMBIGUOUS
+  label: SAME_DEVELOPMENT
+  note: null
+  owner_confidence: high
+  source: owner (corrected draft)
+  split: development
+  window: 2026-09-30-multilingual
+C006:
+  a: sx-264
+  b: sx-536
+  boundary_reason: null
+  draft_label: SAME_DEVELOPMENT
+  label: SAME_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C007:
+  a: sx-131
+  b: sx-129
+  boundary_reason: distinct_action
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: high
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C008:
+  a: sx-257
+  b: sx-109
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C009:
+  a: sx-232
+  b: sx-122
+  boundary_reason: null
+  draft_label: SAME_DEVELOPMENT
+  label: SAME_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C010:
+  a: sx-85
+  b: sx-154
+  boundary_reason: null
+  draft_label: SAME_DEVELOPMENT
+  label: SAME_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C011:
+  a: sx-1
+  b: sx-164
+  boundary_reason: null
+  draft_label: SAME_DEVELOPMENT
+  label: SAME_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C012:
+  a: sx-131
+  b: sx-263
+  boundary_reason: distinct_action
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: high
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C013:
+  a: sx-275
+  b: sx-161
+  boundary_reason: null
+  draft_label: SAME_DEVELOPMENT
+  label: SAME_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C014:
+  a: sx-238
+  b: sx-131
+  boundary_reason: null
+  draft_label: SAME_DEVELOPMENT
+  label: SAME_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C015:
+  a: sx-126
+  b: sx-179
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C016:
+  a: sx-168
+  b: sx-209
+  boundary_reason: distinct_action
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: different but same topic
+  owner_confidence: high
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C017:
+  a: sx-238
+  b: sx-129
+  boundary_reason: commentary_or_analysis
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: distinct action but one is a commentary on the other
+  owner_confidence: high
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C018:
+  a: sx-239
+  b: sx-126
+  boundary_reason: follow_up_update
+  draft_label: AMBIGUOUS
+  label: SAME_DEVELOPMENT
+  note: it's the appointment itself and the meeting after, it's institutional formality to meet with the King right after
+    the formation of a new government.
+  owner_confidence: high
+  source: owner (corrected draft)
+  split: development
+  window: 2026-09-30-multilingual
+C019:
+  a: sx-510
+  b: sx-488
+  boundary_reason: null
+  draft_label: SAME_DEVELOPMENT
+  label: SAME_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C020:
+  a: sx-126
+  b: sx-56
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C021:
+  a: sx-208
+  b: sx-88
+  boundary_reason: null
+  draft_label: SAME_DEVELOPMENT
+  label: SAME_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C022:
+  a: sx-71
+  b: sx-176
+  boundary_reason: commentary_or_analysis
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: high
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C023:
+  a: sx-273
+  b: sx-267
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C024:
+  a: sx-128
+  b: sx-133
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C025:
+  a: sx-127
+  b: sx-42
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C026:
+  a: sx-264
+  b: sx-75
+  boundary_reason: distinct_action
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: high
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C027:
+  a: sx-175
+  b: sx-263
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C028:
+  a: sx-81
+  b: sx-195
+  boundary_reason: null
+  draft_label: SAME_DEVELOPMENT
+  label: SAME_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C029:
+  a: sx-285
+  b: sx-282
+  boundary_reason: same_occurrence
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: SAME_DEVELOPMENT
+  note: should be bundled together, same day development 1 hour apart, same source
+  owner_confidence: medium
+  source: owner (corrected draft)
+  split: development
+  window: 2026-09-30-multilingual
+C030:
+  a: sx-507
+  b: sx-2
+  boundary_reason: null
+  draft_label: SAME_DEVELOPMENT
+  label: SAME_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C031:
+  a: sx-256
+  b: sx-244
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C032:
+  a: sx-353
+  b: sx-360
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: 'different but connected: state of the ocean vs fisheries funding, should be part of the same situation (maritime
+    policies)'
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C033:
+  a: sx-75
+  b: sx-536
+  boundary_reason: distinct_action
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: high
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C034:
+  a: sx-352
+  b: sx-351
+  boundary_reason: roundup
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: SAME_DEVELOPMENT
+  note: should be bundled together, it's literally the accompanying Q&A ( and btw we should vet the questions asked as well
+    and possibly come up with other ones to launch /attach onto other threads)
+  owner_confidence: high
+  source: owner (corrected draft)
+  split: development
+  window: 2026-09-30-multilingual
+C035:
+  a: sx-186
+  b: sx-111
+  boundary_reason: distinct_action
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: 'completely different action: france public sector pay protests vs eviction laws --> should trigger search on commentary
+    from both sides of each event to try and answer the question: what are the factors/policies/choices that contributed to
+    lead to this point?'
+  owner_confidence: high
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C036:
+  a: sx-240
+  b: sx-145
+  boundary_reason: same_occurrence
+  draft_label: SAME_DEVELOPMENT
+  label: SAME_DEVELOPMENT
+  note: null
+  owner_confidence: high
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C037:
+  a: sx-181
+  b: sx-111
+  boundary_reason: distinct_action
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: high
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C038:
+  a: sx-494
+  b: sx-282
+  boundary_reason: null
+  draft_label: SAME_DEVELOPMENT
+  label: SAME_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C039:
+  a: sx-400
+  b: sx-423
+  boundary_reason: follow_up_update
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: different but same exact topic
+  owner_confidence: high
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C040:
+  a: sx-169
+  b: sx-209
+  boundary_reason: commentary_or_analysis
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C041:
+  a: sx-115
+  b: sx-87
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C042:
+  a: sx-130
+  b: sx-129
+  boundary_reason: distinct_action
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: high
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C043:
+  a: sx-4
+  b: sx-510
+  boundary_reason: same_occurrence
+  draft_label: SAME_DEVELOPMENT
+  label: SAME_DEVELOPMENT
+  note: null
+  owner_confidence: high
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C044:
+  a: sx-198
+  b: sx-160
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: not interested shouldn't surface
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C045:
+  a: sx-47
+  b: sx-237
+  boundary_reason: null
+  draft_label: SAME_DEVELOPMENT
+  label: SAME_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C046:
+  a: sx-76
+  b: sx-111
+  boundary_reason: distinct_action
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: high
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C047:
+  a: sx-14
+  b: sx-12
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C048:
+  a: sx-347
+  b: sx-352
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: whenever the is a EUCCS proposal we should vet it carefully...
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C049:
+  a: sx-149
+  b: sx-1
+  boundary_reason: null
+  draft_label: SAME_DEVELOPMENT
+  label: SAME_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C050:
+  a: sx-51
+  b: sx-266
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C051:
+  a: sx-400
+  b: sx-416
+  boundary_reason: null
+  draft_label: SAME_DEVELOPMENT
+  label: SAME_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C052:
+  a: sx-157
+  b: sx-491
+  boundary_reason: null
+  draft_label: SAME_DEVELOPMENT
+  label: SAME_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C053:
+  a: sx-487
+  b: sx-2
+  boundary_reason: null
+  draft_label: SAME_DEVELOPMENT
+  label: SAME_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C054:
+  a: sx-257
+  b: sx-271
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C055:
+  a: sx-158
+  b: sx-222
+  boundary_reason: null
+  draft_label: SAME_DEVELOPMENT
+  label: SAME_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C056:
+  a: sx-278
+  b: sx-282
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C057:
+  a: sx-272
+  b: sx-113
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C058:
+  a: sx-246
+  b: sx-40
+  boundary_reason: null
+  draft_label: SAME_DEVELOPMENT
+  label: SAME_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C059:
+  a: sx-237
+  b: sx-49
+  boundary_reason: null
+  draft_label: SAME_DEVELOPMENT
+  label: SAME_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C060:
+  a: sx-410
+  b: sx-424
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C061:
+  a: sx-48
+  b: sx-234
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C062:
+  a: sx-76
+  b: sx-270
+  boundary_reason: distinct_action
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: high
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C063:
+  a: sx-263
+  b: sx-133
+  boundary_reason: distinct_action
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: high
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C064:
+  a: sx-423
+  b: sx-416
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: SAME_DEVELOPMENT
+  note: basically same news, should bundle together and add to the development, before-after meeting only matters if there's
+    a big dissonance between intentions/proposed aim of the meeting and the actual turnout (e.g. Zelensky - Trump live altercations
+    along with JD Vance).
+  owner_confidence: null
+  source: owner (corrected draft)
+  split: development
+  window: 2026-09-30-multilingual
+C065:
+  a: sx-507
+  b: sx-505
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C066:
+  a: sx-122
+  b: sx-39
+  boundary_reason: null
+  draft_label: SAME_DEVELOPMENT
+  label: SAME_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C067:
+  a: sx-12
+  b: sx-55
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C068:
+  a: sx-175
+  b: sx-267
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C069:
+  a: sx-266
+  b: sx-117
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C070:
+  a: sx-241
+  b: sx-57
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C071:
+  a: sx-43
+  b: sx-128
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C072:
+  a: sx-491
+  b: sx-164
+  boundary_reason: null
+  draft_label: SAME_DEVELOPMENT
+  label: SAME_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C073:
+  a: sx-235
+  b: sx-129
+  boundary_reason: distinct_action
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: high
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C074:
+  a: sx-488
+  b: sx-486
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C075:
+  a: sx-45
+  b: sx-47
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C076:
+  a: sx-277
+  b: sx-275
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: SAME_DEVELOPMENT
+  note: same attack though, should be clustered
+  owner_confidence: null
+  source: owner (corrected draft)
+  split: development
+  window: 2026-09-30-multilingual
+C077:
+  a: sx-4
+  b: sx-488
+  boundary_reason: null
+  draft_label: SAME_DEVELOPMENT
+  label: SAME_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C078:
+  a: sx-87
+  b: sx-124
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C079:
+  a: sx-245
+  b: sx-80
+  boundary_reason: distinct_action
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: 'for conflicts: we should be able to divide testimony from actual event reporting'
+  owner_confidence: high
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C080:
+  a: sx-150
+  b: sx-396
+  boundary_reason: distinct_action
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: When headlines mix more events together like World news briefs, only surface things that have not appeared from other
+    sources yet, the ones that have are likely redundant and should not surface
+  owner_confidence: medium
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C081:
+  a: sx-102
+  b: sx-175
+  boundary_reason: commentary_or_analysis
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C082:
+  a: sx-127
+  b: sx-126
+  boundary_reason: follow_up_update
+  draft_label: AMBIGUOUS
+  label: SAME_DEVELOPMENT
+  note: institutional formality, meeting with the king after newly formed government
+  owner_confidence: high
+  source: owner (corrected draft)
+  split: development
+  window: 2026-09-30-multilingual
+C083:
+  a: sx-428
+  b: sx-5
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C084:
+  a: sx-43
+  b: sx-129
+  boundary_reason: distinct_action
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: high
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C085:
+  a: sx-157
+  b: sx-149
+  boundary_reason: null
+  draft_label: SAME_DEVELOPMENT
+  label: SAME_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C086:
+  a: sx-5
+  b: sx-3
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C087:
+  a: sx-122
+  b: sx-246
+  boundary_reason: null
+  draft_label: SAME_DEVELOPMENT
+  label: SAME_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C088:
+  a: sx-239
+  b: sx-77
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C089:
+  a: sx-491
+  b: sx-149
+  boundary_reason: null
+  draft_label: SAME_DEVELOPMENT
+  label: SAME_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C090:
+  a: sx-64
+  b: sx-138
+  boundary_reason: commentary_or_analysis
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: commentary, classic way of spinning the news as "cold" relationship between Italy & Egypt. We should make a feature
+    for recurring review of these ways to shape titles and frame topics
+  owner_confidence: high
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C091:
+  a: sx-210
+  b: sx-93
+  boundary_reason: null
+  draft_label: SAME_DEVELOPMENT
+  label: SAME_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C092:
+  a: sx-39
+  b: sx-123
+  boundary_reason: null
+  draft_label: SAME_DEVELOPMENT
+  label: SAME_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C093:
+  a: sx-243
+  b: sx-185
+  boundary_reason: null
+  draft_label: SAME_DEVELOPMENT
+  label: SAME_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C094:
+  a: sx-79
+  b: sx-243
+  boundary_reason: commentary_or_analysis
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: one is the commentary (spanish, US senate vote refusal) vs the raid itself
+  owner_confidence: high
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C095:
+  a: sx-158
+  b: sx-81
+  boundary_reason: null
+  draft_label: SAME_DEVELOPMENT
+  label: SAME_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C096:
+  a: sx-39
+  b: sx-40
+  boundary_reason: null
+  draft_label: SAME_DEVELOPMENT
+  label: SAME_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C097:
+  a: sx-123
+  b: sx-122
+  boundary_reason: null
+  draft_label: SAME_DEVELOPMENT
+  label: SAME_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C098:
+  a: sx-512
+  b: sx-490
+  boundary_reason: null
+  draft_label: SAME_DEVELOPMENT
+  label: SAME_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C099:
+  a: sx-419
+  b: sx-353
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C100:
+  a: sx-167
+  b: sx-209
+  boundary_reason: commentary_or_analysis
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C101:
+  a: sx-487
+  b: sx-505
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C102:
+  a: sx-139
+  b: sx-137
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C103:
+  a: sx-352
+  b: sx-350
+  boundary_reason: roundup
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: SAME_DEVELOPMENT
+  note: different but should be bundled together into one piece of news
+  owner_confidence: high
+  source: owner (corrected draft)
+  split: development
+  window: 2026-09-30-multilingual
+C104:
+  a: sx-1
+  b: sx-121
+  boundary_reason: null
+  draft_label: SAME_DEVELOPMENT
+  label: SAME_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C105:
+  a: sx-139
+  b: sx-41
+  boundary_reason: distinct_action
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: distinct action but same situation
+  owner_confidence: high
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C106:
+  a: sx-176
+  b: sx-129
+  boundary_reason: commentary_or_analysis
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: high
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C107:
+  a: sx-408
+  b: sx-424
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C108:
+  a: sx-74
+  b: sx-263
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C109:
+  a: sx-164
+  b: sx-149
+  boundary_reason: null
+  draft_label: SAME_DEVELOPMENT
+  label: SAME_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C110:
+  a: sx-127
+  b: sx-77
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C111:
+  a: sx-156
+  b: sx-168
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C112:
+  a: sx-267
+  b: sx-263
+  boundary_reason: distinct_action
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: high
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C113:
+  a: sx-39
+  b: sx-232
+  boundary_reason: null
+  draft_label: SAME_DEVELOPMENT
+  label: SAME_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C114:
+  a: sx-279
+  b: sx-13
+  boundary_reason: null
+  draft_label: SAME_DEVELOPMENT
+  label: SAME_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+C115:
+  a: sx-152
+  b: sx-13
+  boundary_reason: distinct_action
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: distinct action but same situation
+  owner_confidence: high
+  source: owner (agrees with draft)
+  split: development
+  window: 2026-09-30-multilingual
+H001:
+  a: b-627e1276af35
+  b: b-80b4e4856474
+  boundary_reason: null
+  draft_label: SAME_DEVELOPMENT
+  label: SAME_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: holdout
+  window: '2026-08-31'
+H002:
+  a: b-341fac703447
+  b: b-8e5ef74bd47d
+  boundary_reason: null
+  draft_label: SAME_DEVELOPMENT
+  label: SAME_DEVELOPMENT
+  note: same but shouldn't surface unless of international relevance
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: holdout
+  window: '2026-08-31'
+H003:
+  a: b-f24f0531bb39
+  b: b-40456da07df1
+  boundary_reason: null
+  draft_label: SAME_DEVELOPMENT
+  label: SAME_DEVELOPMENT
+  note: same but again, natural calamity
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: holdout
+  window: '2026-08-31'
+H004:
+  a: b-a5d8ac56e6a0
+  b: b-8c3f1988382e
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: holdout
+  window: '2026-08-31'
+H005:
+  a: b-0db307cfbf6e
+  b: b-c011c687ae36
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: holdout
+  window: '2026-08-31'
+H006:
+  a: b-a5d8ac56e6a0
+  b: b-40456da07df1
+  boundary_reason: follow_up_update
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: 'one is rescue operations and death toll, the other is specific to hydropower tunnels. different developments same
+    situation (when natural calamities occur, they should be clustered together because usually involving specific location
+    and relatively predictable chain of events: warnings, evacs if possible, the actual event, rescuing and death toll, then
+    cost assessment etc..)'
+  owner_confidence: high
+  source: owner (agrees with draft)
+  split: holdout
+  window: '2026-08-31'
+H007:
+  a: b-04b8dd1b7e59
+  b: b-a5d8ac56e6a0
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: holdout
+  window: '2026-08-31'
+H008:
+  a: b-40456da07df1
+  b: b-757c54159001
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: calamity
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: holdout
+  window: '2026-08-31'
+H009:
+  a: b-8c136bee2610
+  b: b-2e80a96f5651
+  boundary_reason: null
+  draft_label: SAME_DEVELOPMENT
+  label: SAME_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: holdout
+  window: '2026-08-31'
+H010:
+  a: b-eb0ab8f69ba6
+  b: b-b378591e2234
+  boundary_reason: null
+  draft_label: SAME_DEVELOPMENT
+  label: SAME_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: holdout
+  window: '2026-08-31'
+H011:
+  a: b-98df932ec432
+  b: b-e1d69e6c7217
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: holdout
+  window: '2026-08-31'
+H012:
+  a: b-4320f84c3536
+  b: b-bf8b8b7b2085
+  boundary_reason: commentary_or_analysis
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: holdout
+  window: '2026-08-31'
+H013:
+  a: b-a6b62e9f30e0
+  b: b-fc10bd046cfa
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: holdout
+  window: '2026-08-31'
+H014:
+  a: b-40456da07df1
+  b: b-898d1b9dc809
+  boundary_reason: null
+  draft_label: SAME_DEVELOPMENT
+  label: SAME_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: holdout
+  window: '2026-08-31'
+H015:
+  a: b-98df932ec432
+  b: b-b18d96e6fc10
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: calamity, bundle
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: holdout
+  window: '2026-08-31'
+H016:
+  a: b-a5d8ac56e6a0
+  b: b-f24f0531bb39
+  boundary_reason: distinct_action
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: different developments same situation
+  owner_confidence: medium
+  source: owner (agrees with draft)
+  split: holdout
+  window: '2026-08-31'
+H017:
+  a: b-b18d96e6fc10
+  b: b-f24f0531bb39
+  boundary_reason: null
+  draft_label: SAME_DEVELOPMENT
+  label: SAME_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: holdout
+  window: '2026-08-31'
+H018:
+  a: b-627e1276af35
+  b: b-74a7d55cfb9b
+  boundary_reason: null
+  draft_label: SAME_DEVELOPMENT
+  label: SAME_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: holdout
+  window: '2026-08-31'
+H019:
+  a: b-bf8b8b7b2085
+  b: b-4987459dba37
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: holdout
+  window: '2026-08-31'
+H020:
+  a: b-98df932ec432
+  b: b-f24f0531bb39
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: calamity, bundle (clearly state testimony vs report)
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: holdout
+  window: '2026-08-31'
+H021:
+  a: b-df14f0a7ac2b
+  b: b-d71f2886d120
+  boundary_reason: commentary_or_analysis
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: 'same situation, natural calamity, geographically limited: should be clustered'
+  owner_confidence: high
+  source: owner (agrees with draft)
+  split: holdout
+  window: '2026-08-31'
+H022:
+  a: b-2d14afc54339
+  b: b-fc10bd046cfa
+  boundary_reason: null
+  draft_label: SAME_DEVELOPMENT
+  label: SAME_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: holdout
+  window: '2026-08-31'
+H023:
+  a: b-193b898b20bc
+  b: b-40456da07df1
+  boundary_reason: distinct_action
+  draft_label: AMBIGUOUS
+  label: DIFFERENT_DEVELOPMENT
+  note: distinct action. One is rescue work intensification, the other is the news that survivors on that district are returning
+    to their ravaged homes
+  owner_confidence: high
+  source: owner (corrected draft)
+  split: holdout
+  window: '2026-08-31'
+H024:
+  a: b-a5d8ac56e6a0
+  b: b-98df932ec432
+  boundary_reason: commentary_or_analysis
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: not once occurrence but should be clustered, natural calamity
+  owner_confidence: high
+  source: owner (agrees with draft)
+  split: holdout
+  window: '2026-08-31'
+H025:
+  a: b-a5d8ac56e6a0
+  b: b-adea0d13d447
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: holdout
+  window: '2026-08-31'
+H026:
+  a: b-898d1b9dc809
+  b: b-a5d8ac56e6a0
+  boundary_reason: follow_up_update
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: different developments same situation
+  owner_confidence: medium
+  source: owner (agrees with draft)
+  split: holdout
+  window: '2026-08-31'
+H027:
+  a: b-40456da07df1
+  b: b-b18d96e6fc10
+  boundary_reason: null
+  draft_label: SAME_DEVELOPMENT
+  label: SAME_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: holdout
+  window: '2026-08-31'
+H028:
+  a: b-e1d69e6c7217
+  b: b-40456da07df1
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: holdout
+  window: '2026-08-31'
+H029:
+  a: b-193b898b20bc
+  b: b-b18d96e6fc10
+  boundary_reason: distinct_action
+  draft_label: AMBIGUOUS
+  label: DIFFERENT_DEVELOPMENT
+  note: One is returning one is rescue mission; same situation different developments
+  owner_confidence: high
+  source: owner (corrected draft)
+  split: holdout
+  window: '2026-08-31'
+H030:
+  a: b-fc10bd046cfa
+  b: b-4320f84c3536
+  boundary_reason: null
+  draft_label: DIFFERENT_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
+  note: null
+  owner_confidence: null
+  source: owner (agrees with draft)
+  split: holdout
+  window: '2026-08-31'
