@@ -55,7 +55,7 @@ def replay(window: dict) -> dict:
     import numpy as np
 
     from osint_monitor.core import runs
-    from osint_monitor.core.database import (Entity, EventEntity, EventItem, Event, ItemEntity, RawItem,
+    from osint_monitor.core.database import (Entity, EventEntity, EventItem, Event, ItemEntity, RawItem, Situation,
                                              get_session, init_db, reset_engine)
     from osint_monitor.core.models import RawItemModel
     from osint_monitor.processors import clustering as CL
@@ -131,6 +131,9 @@ def replay(window: dict) -> dict:
     ext_of = {r.id: e for e, r in stored.items()}
     events = {}
     member_of = defaultdict(list)
+    slugs = {s.id: s.slug for s in session.query(Situation)}
+    situations = {s.slug: {"title": s.title, "status": s.status, "primary_actors": sorted(s.primary_actors or [])}
+                  for s in session.query(Situation)}
     for ev in session.query(Event).order_by(Event.id):
         mems = session.query(EventItem).filter_by(event_id=ev.id).all()
         ticks = {ext_of[m.item_id]: run_tick.get(m.added_run_id) for m in mems}
@@ -139,7 +142,8 @@ def replay(window: dict) -> dict:
                             .filter(EventEntity.event_id == ev.id, EventEntity.is_principal.is_(True))})
         events[ev.id] = {"summary": ev.summary, "created_tick": min(t for t in ticks.values() if t) if ticks else None,
                          "members": ticks, "principals": principals,
-                         "corroboration": ev.corroboration_level, "sources": sorted({stored[x].source.name for x in ticks})}
+                         "corroboration": ev.corroboration_level, "sources": sorted({stored[x].source.name for x in ticks}),
+                         "situation": slugs.get(ev.situation_id)}
         for x in ticks:
             member_of[x].append(ev.id)
     places = defaultdict(set)
@@ -268,6 +272,7 @@ def replay(window: dict) -> dict:
     reset_engine()
     return {"window": window["id"], "split": window["split"], "shift_hours": round(shift.total_seconds() / 3600, 1),
             "ticks": trace_ticks, "developments": {str(k): v for k, v in events.items()}, "items": item_rows,
+            "situations": situations,
             "candidates": sorted(cands.values(), key=lambda c: (c["a"], c["b"]))}
 
 
