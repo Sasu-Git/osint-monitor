@@ -1,0 +1,26 @@
+{
+ "developments_before": 37,
+ "developments_after": 37,
+ "unchanged": 36,
+ "changed_or_removed": 1,
+ "new_or_reshaped": 1,
+ "situations_before": [
+  "eu-china-trade",
+  "gaza-ceasefire",
+  "russia-ukraine-war",
+  "sudan-civil-war",
+  "us-iran"
+ ],
+ "situations_after": [
+  "eu-china-trade",
+  "gaza-ceasefire",
+  "russia-ukraine-war",
+  "sudan-civil-war",
+  "us-iran"
+ ],
+ "situation_membership_changes": [],
+ "situations_created_only_before": [],
+ "situations_created_only_after": [],
+ "situation_actor_set_changes": {},
+ "membership_changes_not_explained_by_development_change": 0
+}

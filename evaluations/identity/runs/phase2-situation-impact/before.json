@@ -1,0 +1,6057 @@
+{
+ "developments": {
+  "1": {
+   "summary": "Thai man’s jet ski stunt fuels anger in ‘unequal’ Bangkok as poor hit hardest by floods",
+   "created_tick": 7,
+   "members": {
+    "s-854": 7,
+    "s-881": 7
+   },
+   "principals": [
+    "Thailand"
+   ],
+   "corroboration": "PROBABLE",
+   "sources": [
+    "Al Jazeera",
+    "South China Morning Post"
+   ],
+   "situation": null
+  },
+  "2": {
+   "summary": "US to grant sanctions waiver for flights between Iran and Iraq’s Najaf, source says",
+   "created_tick": 7,
+   "members": {
+    "s-932": 7,
+    "s-952": 7,
+    "s-1008": 8
+   },
+   "principals": [
+    "America"
+   ],
+   "corroboration": "PROBABLE",
+   "sources": [
+    "Al Jazeera",
+    "South China Morning Post"
+   ],
+   "situation": "us-iran"
+  },
+  "3": {
+   "summary": "Mexico's Pacific coast braces for Hurricane Polo",
+   "created_tick": 7,
+   "members": {
+    "s-860": 7,
+    "s-935": 7
+   },
+   "principals": [
+    "Mexico"
+   ],
+   "corroboration": "PROBABLE",
+   "sources": [
+    "BBC World",
+    "South China Morning Post"
+   ],
+   "situation": null
+  },
+  "4": {
+   "summary": "Child among three killed off French coast in Channel crossing attempt",
+   "created_tick": 7,
+   "members": {
+    "s-872": 7,
+    "s-896": 7
+   },
+   "principals": [],
+   "corroboration": "PROBABLE",
+   "sources": [
+    "Al Jazeera",
+    "South China Morning Post"
+   ],
+   "situation": null
+  },
+  "5": {
+   "summary": "168 hours on the dance floor: Nigerian dancer chases Guinness World Record",
+   "created_tick": 7,
+   "members": {
+    "s-913": 7,
+    "s-928": 7,
+    "s-1170": 9
+   },
+   "principals": [
+    "Nigeria"
+   ],
+   "corroboration": "PROBABLE",
+   "sources": [
+    "Al Jazeera",
+    "BBC World"
+   ],
+   "situation": null
+  },
+  "6": {
+   "summary": "Stand-up comic set for release after being convicted of insulting Erdoğan",
+   "created_tick": 7,
+   "members": {
+    "s-929": 7,
+    "s-1018": 7
+   },
+   "principals": [],
+   "corroboration": "POSSIBLE",
+   "sources": [
+    "BBC World"
+   ],
+   "situation": null
+  },
+  "7": {
+   "summary": "Trump announcing new Iowa steel plant the White House says will be biggest in US",
+   "created_tick": 7,
+   "members": {
+    "s-933": 7,
+    "s-963": 7
+   },
+   "principals": [
+    "Donald Trump",
+    "Trump",
+    "White House"
+   ],
+   "corroboration": "PROBABLE",
+   "sources": [
+    "Al Jazeera",
+    "South China Morning Post"
+   ],
+   "situation": null
+  },
+  "8": {
+   "summary": "French far-right’s Bardella denies alleged antisemitic comments, files defamation lawsuit",
+   "created_tick": 7,
+   "members": {
+    "s-955": 7,
+    "s-967": 7,
+    "s-1144": 9
+   },
+   "principals": [
+    "Bardella",
+    "France",
+    "Jordan Bardella"
+   ],
+   "corroboration": "CONFIRMED",
+   "sources": [
+    "Al Jazeera",
+    "BBC World",
+    "South China Morning Post"
+   ],
+   "situation": null
+  },
+  "9": {
+   "summary": "Remains of dozens of suspected kidnap victims found in Nigerian forests",
+   "created_tick": 8,
+   "members": {
+    "s-931": 8,
+    "s-997": 8
+   },
+   "principals": [],
+   "corroboration": "PROBABLE",
+   "sources": [
+    "Al Jazeera",
+    "BBC World"
+   ],
+   "situation": null
+  },
+  "10": {
+   "summary": "Malaysia begins sending thousands of Myanmar nationals back to war-torn homeland",
+   "created_tick": 8,
+   "members": {
+    "s-1045": 8,
+    "s-1066": 8,
+    "s-1094": 9,
+    "s-1116": 9,
+    "s-1125": 9
+   },
+   "principals": [
+    "Malaysia"
+   ],
+   "corroboration": "CONFIRMED",
+   "sources": [
+    "Al Jazeera",
+    "BBC World",
+    "South China Morning Post"
+   ],
+   "situation": null
+  },
+  "11": {
+   "summary": "US prosecutors reopen case of alleged gang rape at Cornell University",
+   "created_tick": 8,
+   "members": {
+    "s-930": 8,
+    "s-1030": 8
+   },
+   "principals": [
+    "America"
+   ],
+   "corroboration": "PROBABLE",
+   "sources": [
+    "BBC World",
+    "South China Morning Post"
+   ],
+   "situation": null
+  },
+  "12": {
+   "summary": "Plan for controversial Sydney data centre scrapped after push-back",
+   "created_tick": 8,
+   "members": {
+    "s-879": 8,
+    "s-1037": 8
+   },
+   "principals": [
+    "Australia"
+   ],
+   "corroboration": "PROBABLE",
+   "sources": [
+    "BBC World",
+    "South China Morning Post"
+   ],
+   "situation": null
+  },
+  "13": {
+   "summary": "UAE confirms Netanyahu visit to Abu Dhabi",
+   "created_tick": 8,
+   "members": {
+    "s-958": 8,
+    "s-988": 8,
+    "s-1230": 10
+   },
+   "principals": [
+    "Benjamin Netanyahu",
+    "Israel"
+   ],
+   "corroboration": "PROBABLE",
+   "sources": [
+    "Al Jazeera",
+    "South China Morning Post"
+   ],
+   "situation": null
+  },
+  "14": {
+   "summary": "Pope Leo says concerns about AI doom scenarios are not ‘fake news’",
+   "created_tick": 8,
+   "members": {
+    "s-982": 8,
+    "s-998": 8
+   },
+   "principals": [
+    "Leo"
+   ],
+   "corroboration": "PROBABLE",
+   "sources": [
+    "Al Jazeera",
+    "South China Morning Post"
+   ],
+   "situation": null
+  },
+  "15": {
+   "summary": "New York Times executive fatally shot by elderly in-laws, police say",
+   "created_tick": 8,
+   "members": {
+    "s-1014": 8,
+    "s-1031": 8
+   },
+   "principals": [],
+   "corroboration": "PROBABLE",
+   "sources": [
+    "BBC World",
+    "South China Morning Post"
+   ],
+   "situation": null
+  },
+  "16": {
+   "summary": "China targets AI and frontier tech in newly unveiled innovation blueprint",
+   "created_tick": 9,
+   "members": {
+    "s-898": 9,
+    "s-975": 9,
+    "s-1118": 9,
+    "s-1198": 9,
+    "s-1215": 9,
+    "s-1262": 10,
+    "s-1268": 10
+   },
+   "principals": [
+    "America",
+    "Beijing",
+    "China",
+    "Donald Trump",
+    "Trump",
+    "Washington"
+   ],
+   "corroboration": "CONFIRMED",
+   "sources": [
+    "Al Jazeera",
+    "BBC World",
+    "South China Morning Post"
+   ],
+   "situation": null
+  },
+  "17": {
+   "summary": "South Korea suspects North Korean mines behind DMZ blast",
+   "created_tick": 9,
+   "members": {
+    "s-915": 9,
+    "s-1089": 9,
+    "s-1241": 10,
+    "s-1318": 10
+   },
+   "principals": [
+    "Seoul",
+    "South Korea"
+   ],
+   "corroboration": "CONFIRMED",
+   "sources": [
+    "Al Jazeera",
+    "BBC World",
+    "South China Morning Post"
+   ],
+   "situation": null
+  },
+  "18": {
+   "summary": "French PM warns against escalation of school protests after 164 arrested",
+   "created_tick": 9,
+   "members": {
+    "s-981": 9,
+    "s-1165": 9,
+    "s-1228": 10,
+    "s-1231": 10,
+    "s-1252": 10
+   },
+   "principals": [
+    "France"
+   ],
+   "corroboration": "PROBABLE",
+   "sources": [
+    "Al Jazeera",
+    "BBC World"
+   ],
+   "situation": null
+  },
+  "19": {
+   "summary": "Eiffel Tower chief to quit after female staff replaced by men during religious visit",
+   "created_tick": 9,
+   "members": {
+    "s-1197": 9,
+    "s-1201": 9
+   },
+   "principals": [],
+   "corroboration": "PROBABLE",
+   "sources": [
+    "BBC World",
+    "South China Morning Post"
+   ],
+   "situation": null
+  },
+  "20": {
+   "summary": "Evicted Spanish pensioner can move back home, lawyer says",
+   "created_tick": 9,
+   "members": {
+    "s-1012": 9,
+    "s-1124": 9,
+    "s-1200": 9,
+    "s-1213": 9,
+    "s-1316": 9,
+    "s-1233": 10
+   },
+   "principals": [
+    "Spain"
+   ],
+   "corroboration": "CONFIRMED",
+   "sources": [
+    "Al Jazeera",
+    "BBC World",
+    "South China Morning Post"
+   ],
+   "situation": null
+  },
+  "21": {
+   "summary": "‘New path’: UK’s Burnham promises huge expansion of public services",
+   "created_tick": 9,
+   "members": {
+    "s-1192": 9,
+    "s-1217": 9,
+    "s-1328": 10
+   },
+   "principals": [
+    "Andy Burnham",
+    "Britain",
+    "Burnham",
+    "UK"
+   ],
+   "corroboration": "PROBABLE",
+   "sources": [
+    "Al Jazeera",
+    "South China Morning Post"
+   ],
+   "situation": null
+  },
+  "22": {
+   "summary": "Israeli forces kill Hamas commander Izz al-Din al-Beik in Gaza attack",
+   "created_tick": 9,
+   "members": {
+    "s-1061": 9,
+    "s-1171": 9
+   },
+   "principals": [
+    "Israel"
+   ],
+   "corroboration": "PROBABLE",
+   "sources": [
+    "Al Jazeera",
+    "South China Morning Post"
+   ],
+   "situation": "gaza-ceasefire"
+  },
+  "23": {
+   "summary": "US ban on Canadian alcohol and dairy comes into effect as trade war drags on",
+   "created_tick": 9,
+   "members": {
+    "s-1015": 9,
+    "s-1219": 9
+   },
+   "principals": [
+    "America"
+   ],
+   "corroboration": "PROBABLE",
+   "sources": [
+    "Al Jazeera",
+    "BBC World"
+   ],
+   "situation": null
+  },
+  "24": {
+   "summary": "US forces set to complete withdrawal from Iraq after 2 decades",
+   "created_tick": 9,
+   "members": {
+    "s-1046": 9,
+    "s-1173": 9,
+    "s-1221": 9,
+    "s-1265": 10
+   },
+   "principals": [
+    "America"
+   ],
+   "corroboration": "PROBABLE",
+   "sources": [
+    "Al Jazeera",
+    "Defense News",
+    "South China Morning Post"
+   ],
+   "situation": null
+  },
+  "25": {
+   "summary": "‘Truly historic’: Morocco’s king appoints first woman prime minister",
+   "created_tick": 9,
+   "members": {
+    "s-1186": 9,
+    "s-1196": 9,
+    "s-1256": 10
+   },
+   "principals": [
+    "Morocco"
+   ],
+   "corroboration": "PROBABLE",
+   "sources": [
+    "Al Jazeera",
+    "BBC World"
+   ],
+   "situation": null
+  },
+  "26": {
+   "summary": "Israeli settlers attack Jalud village in occupied West Bank, torch homes",
+   "created_tick": 9,
+   "members": {
+    "s-1078": 9,
+    "s-1142": 9
+   },
+   "principals": [
+    "Israel"
+   ],
+   "corroboration": "PROBABLE",
+   "sources": [
+    "Al Jazeera",
+    "BBC World"
+   ],
+   "situation": null
+  },
+  "27": {
+   "summary": "Estonia blames Russia for arson attack on company supplying vehicles to Ukraine",
+   "created_tick": 9,
+   "members": {
+    "s-1123": 9,
+    "s-1143": 9,
+    "s-1153": 9,
+    "s-1172": 9,
+    "s-1175": 9
+   },
+   "principals": [
+    "Estonia",
+    "Tallinn"
+   ],
+   "corroboration": "CONFIRMED",
+   "sources": [
+    "Al Jazeera",
+    "BBC World",
+    "Breaking Defense",
+    "Defense News",
+    "South China Morning Post"
+   ],
+   "situation": null
+  },
+  "28": {
+   "summary": "Argentina threatens legal action against UK over Falkland Islands oil exploration",
+   "created_tick": 9,
+   "members": {
+    "s-1013": 9,
+    "s-1092": 9
+   },
+   "principals": [
+    "Argentina",
+    "Javier Milei",
+    "Milei"
+   ],
+   "corroboration": "PROBABLE",
+   "sources": [
+    "Al Jazeera",
+    "BBC World"
+   ],
+   "situation": null
+  },
+  "29": {
+   "summary": "Rights group accuses Vietnam of abducting Australian and Norwegian activists",
+   "created_tick": 9,
+   "members": {
+    "s-1067": 9,
+    "s-1130": 9
+   },
+   "principals": [
+    "Vietnam"
+   ],
+   "corroboration": "PROBABLE",
+   "sources": [
+    "BBC World",
+    "South China Morning Post"
+   ],
+   "situation": null
+  },
+  "30": {
+   "summary": "Journalist to be crowned king in Uganda after bitter succession dispute",
+   "created_tick": 9,
+   "members": {
+    "s-1068": 9,
+    "s-1126": 9
+   },
+   "principals": [],
+   "corroboration": "PROBABLE",
+   "sources": [
+    "Al Jazeera",
+    "BBC World"
+   ],
+   "situation": null
+  },
+  "31": {
+   "summary": "Man charged over AI image of crocodile at Singapore reservoir that led to search",
+   "created_tick": 9,
+   "members": {
+    "s-1102": 9,
+    "s-1145": 9
+   },
+   "principals": [],
+   "corroboration": "PROBABLE",
+   "sources": [
+    "BBC World",
+    "South China Morning Post"
+   ],
+   "situation": null
+  },
+  "32": {
+   "summary": "Pentagon awards Raytheon up to $20.7 billion to nearly double AMRAAM production",
+   "created_tick": 9,
+   "members": {
+    "s-1202": 9,
+    "s-1206": 9
+   },
+   "principals": [
+    "Raytheon",
+    "US Department of Defense"
+   ],
+   "corroboration": "PROBABLE",
+   "sources": [
+    "Breaking Defense",
+    "Defense News"
+   ],
+   "situation": null
+  },
+  "33": {
+   "summary": "Pentagon picks Boeing to build new carrier fighter jet to replace F/A-18",
+   "created_tick": 10,
+   "members": {
+    "s-1227": 10,
+    "s-1272": 10,
+    "s-1287": 10
+   },
+   "principals": [],
+   "corroboration": "CONFIRMED",
+   "sources": [
+    "Breaking Defense",
+    "Defense News",
+    "South China Morning Post"
+   ],
+   "situation": null
+  },
+  "34": {
+   "summary": "Somali pirates killed five crew members on hijacked tanker, officials say",
+   "created_tick": 10,
+   "members": {
+    "s-1254": 10,
+    "s-1277": 10,
+    "s-1302": 10
+   },
+   "principals": [
+    "Somalia"
+   ],
+   "corroboration": "CONFIRMED",
+   "sources": [
+    "Al Jazeera",
+    "BBC World",
+    "South China Morning Post"
+   ],
+   "situation": null
+  },
+  "35": {
+   "summary": "FlyDubai flight to Israel diverted to Saudi Arabia after incident in cockpit",
+   "created_tick": 10,
+   "members": {
+    "s-1314": 10,
+    "s-1315": 10,
+    "s-1319": 10
+   },
+   "principals": [],
+   "corroboration": "CONFIRMED",
+   "sources": [
+    "Al Jazeera",
+    "BBC World",
+    "South China Morning Post"
+   ],
+   "situation": null
+  },
+  "36": {
+   "summary": "Indonesian prison chief suspended over secret VIP compound for inmates",
+   "created_tick": 10,
+   "members": {
+    "s-1071": 10,
+    "s-1258": 10
+   },
+   "principals": [
+    "Indonesia"
+   ],
+   "corroboration": "PROBABLE",
+   "sources": [
+    "Al Jazeera",
+    "South China Morning Post"
+   ],
+   "situation": null
+  },
+  "37": {
+   "summary": "'Backpack' declared Alaska's Fat Bear Week winner",
+   "created_tick": 10,
+   "members": {
+    "s-1244": 10,
+    "s-1309": 10
+   },
+   "principals": [],
+   "corroboration": "PROBABLE",
+   "sources": [
+    "Al Jazeera",
+    "BBC World"
+   ],
+   "situation": null
+  }
+ },
+ "situations": {
+  "us-iran": {
+   "title": "US–Iran negotiations and confrontation",
+   "status": "active",
+   "primary_actors": [
+    "Iran",
+    "United States"
+   ]
+  },
+  "russia-ukraine-war": {
+   "title": "Russia–Ukraine war",
+   "status": "active",
+   "primary_actors": [
+    "Russia",
+    "Ukraine"
+   ]
+  },
+  "eu-china-trade": {
+   "title": "EU–China trade dispute",
+   "status": "active",
+   "primary_actors": [
+    "China",
+    "European Union"
+   ]
+  },
+  "gaza-ceasefire": {
+   "title": "Gaza ceasefire negotiations",
+   "status": "active",
+   "primary_actors": [
+    "Hamas",
+    "Israel"
+   ]
+  },
+  "sudan-civil-war": {
+   "title": "Sudan civil war",
+   "status": "active",
+   "primary_actors": [
+    "Rapid Support Forces",
+    "Sudan"
+   ]
+  }
+ },
+ "items": {
+  "s-1": {
+   "title": "Military aircraft snapshot: 220 globally | persian_gulf: 4, eastern_med: 1, western_europe: 70",
+   "source": "ADSB Military Tracks"
+  },
+  "s-2": {
+   "title": "TANKER ACTIVITY: 3 tanker(s) over Persian Gulf / Iran Theater — active refueling operations",
+   "source": "ADSB Military Tracks"
+  },
+  "s-3": {
+   "title": "ISR ACTIVITY: 3 reconnaissance aircraft over Western Europe (bomber staging)",
+   "source": "ADSB Military Tracks"
+  },
+  "s-4": {
+   "title": "CARGO MOVEMENT: 15 military transport aircraft over Western Europe (bomber staging)",
+   "source": "ADSB Military Tracks"
+  },
+  "s-5": {
+   "title": "MILITARY CONCENTRATION: 70 aircraft over Western Europe (bomber staging)",
+   "source": "ADSB Military Tracks"
+  },
+  "s-6": {
+   "title": "Shallow seismic: M2.46 depth=1.44000005722046km at 7 km SW of Volcano, Hawaii — explosion likelihood: MODERATE",
+   "source": "Seismic Explosion Detector"
+  },
+  "s-7": {
+   "title": "Shallow seismic: M1.9 depth=0.3km at 127 km SSW of McCarthy, Alaska — explosion likelihood: HIGH",
+   "source": "Seismic Explosion Detector"
+  },
+  "s-8": {
+   "title": "Shallow seismic: M1.52 depth=0.75km at 6 km NNW of The Geysers, CA — explosion likelihood: HIGH",
+   "source": "Seismic Explosion Detector"
+  },
+  "s-9": {
+   "title": "Shallow seismic: M3.1 depth=-3.37km at 3 km NW of Little America, Wyoming — explosion likelihood: HIGH",
+   "source": "Seismic Explosion Detector"
+  },
+  "s-10": {
+   "title": "Shallow seismic: M1.5 depth=0.5km at 8 km ENE of Badger, Alaska — explosion likelihood: HIGH",
+   "source": "Seismic Explosion Detector"
+  },
+  "s-11": {
+   "title": "Shallow seismic: M1.8 depth=5km at 37 km NE of Harding-Birch Lakes, Alaska — explosion likelihood: MODERATE",
+   "source": "Seismic Explosion Detector"
+  },
+  "s-12": {
+   "title": "Shallow seismic: M3 depth=4.5618km at 55 km SSW of Whites City, New Mexico — explosion likelihood: MODERATE",
+   "source": "Seismic Explosion Detector"
+  },
+  "s-13": {
+   "title": "Shallow seismic: M2.3 depth=4.3533km at 10 km SSE of Pearsall, Texas — explosion likelihood: MODERATE",
+   "source": "Seismic Explosion Detector"
+  },
+  "s-14": {
+   "title": "Shallow seismic: M1.94 depth=3.221495867km at 7 km ESE of Sulphur, Oklahoma — explosion likelihood: MODERATE",
+   "source": "Seismic Explosion Detector"
+  },
+  "s-15": {
+   "title": "Shallow seismic: M2.47 depth=4.6399998664856km at 7 km SE of Pinnacles, CA — explosion likelihood: MODERATE",
+   "source": "Seismic Explosion Detector"
+  },
+  "s-16": {
+   "title": "Shallow seismic: M2.9 depth=3.3569km at 37 km ESE of Balmorhea, Texas — explosion likelihood: MODERATE",
+   "source": "Seismic Explosion Detector"
+  },
+  "s-17": {
+   "title": "COMMODITY SPIKE: Natural Gas +14.95% ($3.26)",
+   "source": "Commodity SIGINT"
+  },
+  "s-18": {
+   "title": "DEFENSE SECTOR DROP: 4 stocks moving -1.3% avg",
+   "source": "Defense Stock Monitor"
+  },
+  "s-19": {
+   "title": "DEFENSE STOCK DROP: General Dynamics (GD) -5.52% ($336.29)",
+   "source": "Defense Stock Monitor"
+  },
+  "s-20": {
+   "title": "DEFENSE STOCK DROP: L3Harris (LHX) -4.96% ($238.04)",
+   "source": "Defense Stock Monitor"
+  },
+  "s-21": {
+   "title": "DEFENSE STOCK DROP: Huntington Ingalls (HII) -4.02% ($266.0)",
+   "source": "Defense Stock Monitor"
+  },
+  "s-22": {
+   "title": "DEFENSE STOCK SURGE: Palantir (PLTR) +9.28% ($192.59)",
+   "source": "Defense Stock Monitor"
+  },
+  "s-23": {
+   "title": "Domain OK: president.ir (Iranian Presidency, IR)",
+   "source": "DNS Health Monitor"
+  },
+  "s-24": {
+   "title": "Domain OK: leader.ir (Supreme Leader office, IR)",
+   "source": "DNS Health Monitor"
+  },
+  "s-25": {
+   "title": "Domain OK: dolat.ir (Iranian government portal, IR)",
+   "source": "DNS Health Monitor"
+  },
+  "s-26": {
+   "title": "DOMAIN DOWN: tasnimnews.com (Tasnim News (IRGC-linked), IR) — unreachable",
+   "source": "DNS Health Monitor"
+  },
+  "s-27": {
+   "title": "DOMAIN DOWN: modafl.ir (Iran Ministry of Defense, IR) — unreachable",
+   "source": "DNS Health Monitor"
+  },
+  "s-28": {
+   "title": "Domain OK: kremlin.ru (Kremlin, RU)",
+   "source": "DNS Health Monitor"
+  },
+  "s-29": {
+   "title": "DOMAIN DOWN: mil.ru (Russian MoD, RU) — unreachable",
+   "source": "DNS Health Monitor"
+  },
+  "s-30": {
+   "title": "DOMAIN DOWN: mod.gov.cn (China MoD, CN) — unreachable",
+   "source": "DNS Health Monitor"
+  },
+  "s-31": {
+   "title": "DOMAIN DOWN: kcna.kp (KCNA state media, KP) — unreachable",
+   "source": "DNS Health Monitor"
+  },
+  "s-32": {
+   "title": "MILITARY CONCENTRATION: 5 aircraft over Persian Gulf / Iran Theater",
+   "source": "ADSB Military Tracks"
+  },
+  "s-33": {
+   "title": "TANKER ACTIVITY: 4 tanker(s) over Western Europe (bomber staging) — active refueling operations",
+   "source": "ADSB Military Tracks"
+  },
+  "s-34": {
+   "title": "SURGE: black_sea has 2 aircraft vs 1 average — unusual concentration",
+   "source": "ADSB Military Tracks"
+  },
+  "s-35": {
+   "title": "COMMODITY DROP: WTI Crude Oil -3.12% ($92.79)",
+   "source": "Commodity SIGINT"
+  },
+  "s-36": {
+   "title": "Trump and Xi exchange warm words at state dinner but little progress on key issues",
+   "source": "BBC World"
+  },
+  "s-37": {
+   "title": "Xi got Trump's red carpet welcome - but not everything he wanted",
+   "source": "BBC World"
+  },
+  "s-38": {
+   "title": "Netanyahu defends Israeli military action as delegates walk out before UN speech",
+   "source": "BBC World"
+  },
+  "s-39": {
+   "title": "Media outlets banned by Trump denied access to White House dinner despite judge's order",
+   "source": "BBC World"
+  },
+  "s-40": {
+   "title": "Hundreds of thousands expected in Paris for Pope's visit",
+   "source": "BBC World"
+  },
+  "s-41": {
+   "title": "Why Australia chose the world's biggest political stage to reveal OpenAI hack",
+   "source": "BBC World"
+  },
+  "s-42": {
+   "title": "Four civilians killed in Pakistani strikes in Afghanistan, Taliban says",
+   "source": "BBC World"
+  },
+  "s-43": {
+   "title": "Priest killed and four injured in knife attack at Polish abbey",
+   "source": "BBC World"
+  },
+  "s-44": {
+   "title": "Italy ministers agree to ban burqa and niqab in school and cap foreigners in class",
+   "source": "BBC World"
+  },
+  "s-45": {
+   "title": "Africa's richest man helps fund $660m fuel pipeline between Ethiopia and Djibouti",
+   "source": "BBC World"
+  },
+  "s-46": {
+   "title": "Rapper Macklemore announces 'Free Palestine' tour after Ed Sheeran fallout",
+   "source": "BBC World"
+  },
+  "s-47": {
+   "title": "105-year-old investigated for crimes at Nazi PoW camp in Germany",
+   "source": "BBC World"
+  },
+  "s-48": {
+   "title": "Ethiopia's army says it has repelled attacks in first comment on fresh fighting",
+   "source": "BBC World"
+  },
+  "s-49": {
+   "title": "Poland says fire at Starlink station is sabotage as Denmark warns of rising Russian threat",
+   "source": "BBC World"
+  },
+  "s-50": {
+   "title": "Greek PM urges UK PM to return Elgin Marbles permanently",
+   "source": "BBC World"
+  },
+  "s-51": {
+   "title": "Rogue OpenAI agent 'infiltrated' Australian government website in world first",
+   "source": "BBC World"
+  },
+  "s-52": {
+   "title": "Teen rocker Nene Royal becomes first Thai to win America's Got Talent",
+   "source": "BBC World"
+  },
+  "s-53": {
+   "title": "From Nagaland to a path to the Oscars: Indian film brings a rarely seen world to global cinema",
+   "source": "BBC World"
+  },
+  "s-54": {
+   "title": "Why did an OpenAI system hack Australia's health system - and can it be stopped in the future?",
+   "source": "BBC World"
+  },
+  "s-55": {
+   "title": "Trump and Xi come face-to-face as US and China battle to win the AI race",
+   "source": "BBC World"
+  },
+  "s-56": {
+   "title": "Nepal PM says global order is broken in fighting climate crisis",
+   "source": "Al Jazeera"
+  },
+  "s-57": {
+   "title": "Saudi Arabia allies line up support as Houthi attacks mount",
+   "source": "Al Jazeera"
+  },
+  "s-58": {
+   "title": "Mamdani plants olive tree with Gaza families",
+   "source": "Al Jazeera"
+  },
+  "s-59": {
+   "title": "Pope Leo heads to France amid assisted dying, abuse debates",
+   "source": "Al Jazeera"
+  },
+  "s-60": {
+   "title": "Nepal’s leader labels devastating flood a ‘warning to the world’",
+   "source": "Al Jazeera"
+  },
+  "s-61": {
+   "title": "Israel’s Abu Farchi sent off for gun celebration in Nations League match",
+   "source": "Al Jazeera"
+  },
+  "s-62": {
+   "title": "Converging crises, chaos and walkouts dominate UNGA Day Three",
+   "source": "Al Jazeera"
+  },
+  "s-63": {
+   "title": "Hurricane Polo lashes Mexico as Nolo strengthens near Hawaii",
+   "source": "Al Jazeera"
+  },
+  "s-64": {
+   "title": "Japan moves to tighten rules for foreigners, throwing futures into doubt",
+   "source": "Al Jazeera"
+  },
+  "s-65": {
+   "title": "Tata v Tata: What’s behind India’s big boardroom brawl?",
+   "source": "Al Jazeera"
+  },
+  "s-66": {
+   "title": "Multiple regions in Russia come under Ukrainian drone attacks",
+   "source": "Al Jazeera"
+  },
+  "s-67": {
+   "title": "Israeli football player sent off after gun-firing goal celebration",
+   "source": "Al Jazeera"
+  },
+  "s-68": {
+   "title": "Pakistani forces kill Afghan Taliban fighters in border escalation",
+   "source": "Al Jazeera"
+  },
+  "s-69": {
+   "title": "Jewish protestors join Free Palestine march to denounce Netanyahu",
+   "source": "Al Jazeera"
+  },
+  "s-70": {
+   "title": "Young men flee Tigray amid fears of forced recruitment",
+   "source": "Al Jazeera"
+  },
+  "s-71": {
+   "title": "Oil prices jump after Yemen’s Houthis claim attacks on Saudi facilities",
+   "source": "Al Jazeera"
+  },
+  "s-72": {
+   "title": "Saudi, Turkish, Pakistani chiefs plan urgent talks amid Yemen fighting",
+   "source": "Al Jazeera"
+  },
+  "s-73": {
+   "title": "When AI’s moving this fast, who’s protecting us?",
+   "source": "Al Jazeera"
+  },
+  "s-74": {
+   "title": "NYC police arrest Susan Sarandon, other celebrities protesting Netanyahu",
+   "source": "Al Jazeera"
+  },
+  "s-75": {
+   "title": "Contrasting treatment of Israel and Palestine on display at the UN",
+   "source": "Al Jazeera"
+  },
+  "s-76": {
+   "title": "Tracing the Future Soldier’s Tech Stack",
+   "source": "War on the Rocks"
+  },
+  "s-77": {
+   "title": "North Korea’s Irregular Warfare After Ukraine",
+   "source": "War on the Rocks"
+  },
+  "s-78": {
+   "title": "Power, Prudence, and Restraint in Fénelon’s Telemachus",
+   "source": "War on the Rocks"
+  },
+  "s-79": {
+   "title": "The New Signature Wounds: How Drone Warfare Is Reshaping the Injuries Veterans Bring Home",
+   "source": "War on the Rocks"
+  },
+  "s-80": {
+   "title": "South Korea’s Deliberate Strategic Ambiguity on Taiwan",
+   "source": "War on the Rocks"
+  },
+  "s-81": {
+   "title": "Winning by the Rules: Optimizing Weapons Reviews in the Age of Technological Innovation",
+   "source": "War on the Rocks"
+  },
+  "s-82": {
+   "title": "Seoul Needs a Playbook for Hormuz, Ukraine, and What Comes Next",
+   "source": "War on the Rocks"
+  },
+  "s-83": {
+   "title": "What the End of Operation Inherent Resolve Means for Iraq and Syria",
+   "source": "War on the Rocks"
+  },
+  "s-84": {
+   "title": "Missed the Marque: Cyber Privateers Wanted, Compensation to Be Determined",
+   "source": "War on the Rocks"
+  },
+  "s-85": {
+   "title": "Zelensky’s Perception Problem: Are New Partnerships a Solution?",
+   "source": "War on the Rocks"
+  },
+  "s-86": {
+   "title": "Washington’s Foreign Equity Bets Need Better Governance",
+   "source": "War on the Rocks"
+  },
+  "s-87": {
+   "title": "Only America Could Have Designed the Field Jacket",
+   "source": "War on the Rocks"
+  },
+  "s-88": {
+   "title": "Pressure Points",
+   "source": "War on the Rocks"
+  },
+  "s-89": {
+   "title": "Why Eurasia, Not the Indo-Pacific, Matters Most in Next Phase of Taiwan Deterrence",
+   "source": "War on the Rocks"
+  },
+  "s-90": {
+   "title": "Latin America’s Balancing Act: Washington, Beijing, and the Post-Maduro Environment",
+   "source": "War on the Rocks"
+  },
+  "s-91": {
+   "title": "A Body Blow? The War on Iran and U.S. Military Readiness",
+   "source": "War on the Rocks"
+  },
+  "s-92": {
+   "title": "An Army General Talks Fusing Sensors and Shooters on the Eastern Flank",
+   "source": "War on the Rocks"
+  },
+  "s-93": {
+   "title": "The Real U.S.-Saudi Nuclear Deal Is Better Than We Thought",
+   "source": "War on the Rocks"
+  },
+  "s-94": {
+   "title": "Would NATO Membership for Ukraine Undermine Article 5 Itself?",
+   "source": "War on the Rocks"
+  },
+  "s-95": {
+   "title": "Strategic Stability and the Rebuilding of Xi’s Military",
+   "source": "War on the Rocks"
+  },
+  "s-96": {
+   "title": "Chinese marques in driving seat as high petrol prices accelerate EU shift to electric cars",
+   "source": "South China Morning Post"
+  },
+  "s-97": {
+   "title": "Philippines’ short-lived Discord ban exposes cracks in online safety strategy",
+   "source": "South China Morning Post"
+  },
+  "s-98": {
+   "title": "3 injured after explosion causes building collapse in Athens’ tourist centre",
+   "source": "South China Morning Post"
+  },
+  "s-99": {
+   "title": "Xi at White House, trade-war truce extension, Golden Week travel",
+   "source": "South China Morning Post"
+  },
+  "s-100": {
+   "title": "Why is the National Archives the last stop on Xi and Trump’s summit itinerary?",
+   "source": "South China Morning Post"
+  },
+  "s-101": {
+   "title": "Trump gives Xi a tour of his pet White House building projects, including the ballroom",
+   "source": "South China Morning Post"
+  },
+  "s-102": {
+   "title": "Indonesian coal deal fuels doubts over production quota approvals",
+   "source": "South China Morning Post"
+  },
+  "s-103": {
+   "title": "Asia-Pacific hotels a ‘most compelling’ investment amid travel growth, flat supply: CBRE",
+   "source": "South China Morning Post"
+  },
+  "s-104": {
+   "title": "Malaysia’s Najib ‘has no money’ to pay fine for house arrest, lawyer says",
+   "source": "South China Morning Post"
+  },
+  "s-105": {
+   "title": "Xi’s security chief among cohort of rising officials at White House banquet",
+   "source": "South China Morning Post"
+  },
+  "s-106": {
+   "title": "Flood-ravaged Nepal pushes for climate deal with India, China",
+   "source": "South China Morning Post"
+  },
+  "s-107": {
+   "title": "Xi-Trump dinner puts US tech titans in spotlight – what does it mean for China ties?",
+   "source": "South China Morning Post"
+  },
+  "s-108": {
+   "title": "Over 1,000 visitors flock to Po Pin Chau trail as Mid-Autumn Festival holiday begins",
+   "source": "South China Morning Post"
+  },
+  "s-109": {
+   "title": "From Suzhou to AI: Singapore, China eye new playbook for economic ties",
+   "source": "South China Morning Post"
+  },
+  "s-110": {
+   "title": "France to protect key Saudi oil terminal as Houthis step up missile attacks",
+   "source": "South China Morning Post"
+  },
+  "s-111": {
+   "title": "Mooncakes for the dog? How China is reinventing its iconic festive snack",
+   "source": "South China Morning Post"
+  },
+  "s-112": {
+   "title": "Minister rejects claims mainland Chinese nurses are favoured over local candidates",
+   "source": "South China Morning Post"
+  },
+  "s-113": {
+   "title": "AI war, Taiwan and translation: SCMP answers your questions from Xi-Trump summit",
+   "source": "South China Morning Post"
+  },
+  "s-114": {
+   "title": "From wine to ping-pong, Trump and Xi’s state dinner is heavy on historic symbolism",
+   "source": "South China Morning Post"
+  },
+  "s-115": {
+   "title": "Hong Kong astronaut Lai Ka-ying sends Mid-Autumn Festival wishes to residents from space",
+   "source": "South China Morning Post"
+  },
+  "s-116": {
+   "title": "The Bio-Pharma Industry and Society",
+   "source": "CSIS"
+  },
+  "s-117": {
+   "title": "The FY2017 Defense Budget and Strategic Outlook",
+   "source": "CSIS"
+  },
+  "s-118": {
+   "title": "2016 U.S.-Japan Security Seminar",
+   "source": "CSIS"
+  },
+  "s-119": {
+   "title": "The Future of the Grid—A View from ARPA-E",
+   "source": "CSIS"
+  },
+  "s-120": {
+   "title": "Statesmen's Forum: Wang Yi, Minister of Foreign Affairs, PRC",
+   "source": "CSIS"
+  },
+  "s-121": {
+   "title": "China Reality Check: China's \"Internet Sovereignty\" Initiative: Origins and Consequences",
+   "source": "CSIS"
+  },
+  "s-122": {
+   "title": "Statesmen's Forum: The Right Honourable Theresa May, MP, Home Secretary, United Kingdom",
+   "source": "CSIS"
+  },
+  "s-123": {
+   "title": "Strategic Opportunities in the Indo-Asia-Pacific with Admiral Harry B. Harris",
+   "source": "CSIS"
+  },
+  "s-124": {
+   "title": "Schieffer Series: A Discussion on Terrorism",
+   "source": "CSIS"
+  },
+  "s-125": {
+   "title": "Defense Outlook: A CSIS Series on Strategy, Budget, Forces, and Acquisition",
+   "source": "CSIS"
+  },
+  "s-126": {
+   "title": "Italy taps state-owned firms to build two naval destroyers in $4.2 billion deal",
+   "source": "Defense News"
+  },
+  "s-127": {
+   "title": "US to provide critical but more limited capabilities to NATO, top commander says",
+   "source": "Defense News"
+  },
+  "s-128": {
+   "title": "Why the last tactical mile is crucial to acquisition reform",
+   "source": "Defense News"
+  },
+  "s-129": {
+   "title": "With Denmark, Saildrone logs first flag registration for naval surveillance drone",
+   "source": "Defense News"
+  },
+  "s-130": {
+   "title": "Report: CIA warned Europe of Russian drone attack from vessels in the Mediterranean",
+   "source": "Defense News"
+  },
+  "s-131": {
+   "title": "Army awards Palantir $48.1M to modernize ammo management",
+   "source": "Defense News"
+  },
+  "s-132": {
+   "title": "Steam catapults? US Navy appears to be sticking with electromagnetics on carriers",
+   "source": "Defense News"
+  },
+  "s-133": {
+   "title": "Air Force, civilian staff dispute status of China Aerospace Studies Institute",
+   "source": "Defense News"
+  },
+  "s-134": {
+   "title": "Greenland welcomes US military pact but trust still shaky",
+   "source": "Defense News"
+  },
+  "s-135": {
+   "title": "German defense minister sees smooth sailing in parliament for his record defense budget",
+   "source": "Defense News"
+  },
+  "s-136": {
+   "title": "Europe’s push to reduce US reliance is reshaping the defense space market",
+   "source": "Defense News"
+  },
+  "s-137": {
+   "title": "Germany wants to manufacture American PAC-3 interceptors to help meet global demand",
+   "source": "Defense News"
+  },
+  "s-138": {
+   "title": "US Navy destroyers tested in Middle East as demands mount",
+   "source": "Defense News"
+  },
+  "s-139": {
+   "title": "Royal Navy successfully launches US Mk 48 torpedo from uncrewed submersible",
+   "source": "Defense News"
+  },
+  "s-140": {
+   "title": "Italian Navy plots race of two local machines: an F-35B against a Ferrari",
+   "source": "Defense News"
+  },
+  "s-141": {
+   "title": "CENTCOM has become a battle lab for unmanned systems",
+   "source": "Defense News"
+  },
+  "s-142": {
+   "title": "F-16 fighter jet crashes at US air base in western Germany",
+   "source": "Defense News"
+  },
+  "s-143": {
+   "title": "South Korea faces no good choices in sending forces for Trump’s unpopular Iran mission",
+   "source": "Defense News"
+  },
+  "s-144": {
+   "title": "US Army awards Lockheed Martin $1.2B PrSM contract",
+   "source": "Defense News"
+  },
+  "s-145": {
+   "title": "US to open two new military bases in Greenland, sources say",
+   "source": "Defense News"
+  },
+  "s-146": {
+   "title": "Russian hybrid attacks likely to increase in coming months: Danish intel assessment",
+   "source": "Breaking Defense"
+  },
+  "s-147": {
+   "title": "OCCAR awards $4.2B DDX destroyer contract to Fincantieri, Leonardo joint venture",
+   "source": "Breaking Defense"
+  },
+  "s-148": {
+   "title": "Navy launches Robotics and Autonomous Systems Warfighting Development Center",
+   "source": "Breaking Defense"
+  },
+  "s-149": {
+   "title": "The Air Force says its China think tank will continue. Its director says it’s basically dead.",
+   "source": "Breaking Defense"
+  },
+  "s-150": {
+   "title": "Hawk trainer crash prompts UK to ground fleet",
+   "source": "Breaking Defense"
+  },
+  "s-151": {
+   "title": "Navy wants more offensive, ‘expeditionary’ cyber capabilities",
+   "source": "Breaking Defense"
+  },
+  "s-152": {
+   "title": "The still-formidable F-16 will be even more capable with better electronic warfare",
+   "source": "Breaking Defense"
+  },
+  "s-153": {
+   "title": "EXCLUSIVE: SpaceX given unique access to classified DoD space tracking data, sources say",
+   "source": "Breaking Defense"
+  },
+  "s-154": {
+   "title": "Syria looks to end foreign military presence, have sovereignty over all bases: President",
+   "source": "Breaking Defense"
+  },
+  "s-155": {
+   "title": "UK launches first space squadron to ‘degrade and deny’ enemies",
+   "source": "Breaking Defense"
+  },
+  "s-156": {
+   "title": "Air, Space Forces pick up research pace for orbital cargo delivery",
+   "source": "Breaking Defense"
+  },
+  "s-157": {
+   "title": "Breaking Defense adds Mikayla Easley as additional editor, supporting continued growth",
+   "source": "Breaking Defense"
+  },
+  "s-158": {
+   "title": "Why the Army needs a clean sheet modern combat vehicle",
+   "source": "Breaking Defense"
+  },
+  "s-159": {
+   "title": "The future of European airpower might be unmanned",
+   "source": "Breaking Defense"
+  },
+  "s-160": {
+   "title": "Fate of Air Force’s China Aerospace Studies Institute up in air",
+   "source": "Breaking Defense"
+  },
+  "s-161": {
+   "title": "Travel Advisory [3]: Saudi Arabia",
+   "source": "Travel Advisories"
+  },
+  "s-162": {
+   "title": "Travel Advisory [2]: Cambodia",
+   "source": "Travel Advisories"
+  },
+  "s-163": {
+   "title": "Travel Advisory [2]: Italy",
+   "source": "Travel Advisories"
+  },
+  "s-164": {
+   "title": "Travel Advisory [1]: North Macedonia",
+   "source": "Travel Advisories"
+  },
+  "s-165": {
+   "title": "Travel Advisory [1]: Curaçao",
+   "source": "Travel Advisories"
+  },
+  "s-166": {
+   "title": "Travel Advisory [2]: United Kingdom",
+   "source": "Travel Advisories"
+  },
+  "s-167": {
+   "title": "Travel Advisory [1]: Suriname",
+   "source": "Travel Advisories"
+  },
+  "s-168": {
+   "title": "Travel Advisory [2]: Hong Kong",
+   "source": "Travel Advisories"
+  },
+  "s-169": {
+   "title": "Travel Advisory [2]: São Tomé and Príncipe",
+   "source": "Travel Advisories"
+  },
+  "s-170": {
+   "title": "Travel Advisory [2]: China",
+   "source": "Travel Advisories"
+  },
+  "s-171": {
+   "title": "Travel Advisory [2]: Nepal",
+   "source": "Travel Advisories"
+  },
+  "s-172": {
+   "title": "Travel Advisory [2]: Morocco",
+   "source": "Travel Advisories"
+  },
+  "s-173": {
+   "title": "Travel Advisory [2]: Peru",
+   "source": "Travel Advisories"
+  },
+  "s-174": {
+   "title": "Travel Advisory [2]: Tajikistan",
+   "source": "Travel Advisories"
+  },
+  "s-175": {
+   "title": "Travel Advisory [1]: Bhutan",
+   "source": "Travel Advisories"
+  },
+  "s-176": {
+   "title": "Travel Advisory [3]: Macau",
+   "source": "Travel Advisories"
+  },
+  "s-177": {
+   "title": "Travel Advisory [2]: Philippines",
+   "source": "Travel Advisories"
+  },
+  "s-178": {
+   "title": "Travel Advisory [2]: Brazil",
+   "source": "Travel Advisories"
+  },
+  "s-179": {
+   "title": "Travel Advisory [4]: Libya",
+   "source": "Travel Advisories"
+  },
+  "s-180": {
+   "title": "Travel Advisory [3]: Oman",
+   "source": "Travel Advisories"
+  },
+  "s-181": {
+   "title": "Internet disruption: GA - Gabon blocked social media",
+   "source": "OONI Internet Monitor"
+  },
+  "s-182": {
+   "title": "Internet disruption: IN - India blocked Telegram during exams",
+   "source": "OONI Internet Monitor"
+  },
+  "s-183": {
+   "title": "Internet disruption: ID - Indonesia blocked access to the Internet Archive",
+   "source": "OONI Internet Monitor"
+  },
+  "s-184": {
+   "title": "Internet disruption: RU - Russia blocked Telegram",
+   "source": "OONI Internet Monitor"
+  },
+  "s-185": {
+   "title": "Internet disruption: SA - Saudi Arabia just blocked Tinder",
+   "source": "OONI Internet Monitor"
+  },
+  "s-186": {
+   "title": "Internet disruption: TR - Türkiye blocked the opposition campaign Boykotyap amid protests",
+   "source": "OONI Internet Monitor"
+  },
+  "s-187": {
+   "title": "Internet disruption: RU - Russia blocked Bluesky",
+   "source": "OONI Internet Monitor"
+  },
+  "s-188": {
+   "title": "Internet disruption: BR - Brazil blocked Telegram",
+   "source": "OONI Internet Monitor"
+  },
+  "s-189": {
+   "title": "Internet disruption: GN - Guinea blocked Facebook, TikTok, and YouTube",
+   "source": "OONI Internet Monitor"
+  },
+  "s-190": {
+   "title": "Internet disruption: ES - Spain blocks access to reproductive rights website Women on Web",
+   "source": "OONI Internet Monitor"
+  },
+  "s-191": {
+   "title": "Internet disruption: VE - Venezuela blocked Twitter/X during protests",
+   "source": "OONI Internet Monitor"
+  },
+  "s-192": {
+   "title": "Internet disruption: BR - Brazil blocked Twitter/X",
+   "source": "OONI Internet Monitor"
+  },
+  "s-193": {
+   "title": "Internet disruption: ET - Ethiopia blocked social media amid church split tensions",
+   "source": "OONI Internet Monitor"
+  },
+  "s-194": {
+   "title": "Internet disruption: NP - Nepal blocked Telegram",
+   "source": "OONI Internet Monitor"
+  },
+  "s-195": {
+   "title": "Internet disruption: MY - Malaysia blocked MalaysiaNow and website of former MP",
+   "source": "OONI Internet Monitor"
+  },
+  "s-196": {
+   "title": "Internet disruption: JO - Jordan blocked Grindr",
+   "source": "OONI Internet Monitor"
+  },
+  "s-197": {
+   "title": "Internet disruption: SN - Senegal blocked social media amid political unrest",
+   "source": "OONI Internet Monitor"
+  },
+  "s-198": {
+   "title": "Internet disruption: TR - Turkey blocked Twitter following deadly earthquake",
+   "source": "OONI Internet Monitor"
+  },
+  "s-199": {
+   "title": "Internet disruption: PK - Pakistan started blocking Deutsche Welle (DW)",
+   "source": "OONI Internet Monitor"
+  },
+  "s-200": {
+   "title": "Internet disruption: TZ - Tanzania blocked Twitter/X",
+   "source": "OONI Internet Monitor"
+  },
+  "s-201": {
+   "title": "Cable endpoint: EG — 9959 IPv4 prefixes, 72 ASNs visible",
+   "source": "Submarine Cable Monitor"
+  },
+  "s-202": {
+   "title": "Cable endpoint: IR — 8478 IPv4 prefixes, 558 ASNs visible",
+   "source": "Submarine Cable Monitor"
+  },
+  "s-203": {
+   "title": "FLIGHT AVOIDANCE: Eastern Mediterranean / Lebanon-Syria — only 15 commercial flights (normal: 20+)",
+   "source": "Flight Route Monitor"
+  },
+  "s-204": {
+   "title": "Airspace activity: Black Sea — 90 commercial, 1 military aircraft",
+   "source": "Flight Route Monitor"
+  },
+  "s-205": {
+   "title": "BGP status: AS12880 (DCI (Iran Telecom), IR) — normal",
+   "source": "BGP Infrastructure Monitor"
+  },
+  "s-206": {
+   "title": "BGP status: AS48159 (TeleCommunication Infrastructure Co, IR) — normal",
+   "source": "BGP Infrastructure Monitor"
+  },
+  "s-207": {
+   "title": "Travel Advisory [3]: Macau",
+   "source": "Travel Advisories"
+  },
+  "s-208": {
+   "title": "Travel Advisory [4]: Iraq",
+   "source": "Travel Advisories"
+  },
+  "s-209": {
+   "title": "Travel Advisory [3]: United Arab Emirates",
+   "source": "Travel Advisories"
+  },
+  "s-210": {
+   "title": "Travel Advisory [3]: United Arab Emirates",
+   "source": "Travel Advisories"
+  },
+  "s-211": {
+   "title": "Travel Advisory [3]: Qatar",
+   "source": "Travel Advisories"
+  },
+  "s-212": {
+   "title": "Travel Advisory [4]: Ukraine",
+   "source": "Travel Advisories"
+  },
+  "s-213": {
+   "title": "Travel Advisory [3]: Kuwait",
+   "source": "Travel Advisories"
+  },
+  "s-214": {
+   "title": "Travel Advisory [2]: Serbia",
+   "source": "Travel Advisories"
+  },
+  "s-215": {
+   "title": "Travel Advisory [3]: Ethiopia",
+   "source": "Travel Advisories"
+  },
+  "s-216": {
+   "title": "Travel Advisory [1]: Montenegro",
+   "source": "Travel Advisories"
+  },
+  "s-217": {
+   "title": "Travel Advisory [2]: Bosnia and Herzegovina",
+   "source": "Travel Advisories"
+  },
+  "s-218": {
+   "title": "Travel Advisory [3]: Israel",
+   "source": "Travel Advisories"
+  },
+  "s-219": {
+   "title": "Travel Advisory [2]: Albania",
+   "source": "Travel Advisories"
+  },
+  "s-220": {
+   "title": "Travel Advisory [3]: West Bank",
+   "source": "Travel Advisories"
+  },
+  "s-221": {
+   "title": "DOMAIN DOWN: rodong.rep.kp (Rodong Sinmun, KP) — unreachable",
+   "source": "DNS Health Monitor"
+  },
+  "s-222": {
+   "title": "From ‘cheats’ to ‘great friendship’: How Trump’s rhetoric on China changed",
+   "source": "Al Jazeera"
+  },
+  "s-223": {
+   "title": "Switzerland’s neutrality vote is asking the wrong question",
+   "source": "Al Jazeera"
+  },
+  "s-224": {
+   "title": "SURGE: eastern_med has 4 aircraft vs 2 average — unusual concentration",
+   "source": "ADSB Military Tracks"
+  },
+  "s-225": {
+   "title": "CARGO MOVEMENT: 9 military transport aircraft over Western Europe (bomber staging)",
+   "source": "ADSB Military Tracks"
+  },
+  "s-226": {
+   "title": "Earthquake M5 - 124 km N of Metinaro, Timor Leste",
+   "source": "USGS Seismic"
+  },
+  "s-227": {
+   "title": "Earthquake M5.3 - 72 km NW of Finschhafen, Papua New Guinea",
+   "source": "USGS Seismic"
+  },
+  "s-228": {
+   "title": "Earthquake M5.1 - 32 km S of Kokopo, Papua New Guinea",
+   "source": "USGS Seismic"
+  },
+  "s-229": {
+   "title": "Earthquake M5.3 - 15 km SSW of Hilvan, Turkey",
+   "source": "USGS Seismic"
+  },
+  "s-230": {
+   "title": "Earthquake M5 - 140 km NNE of Ba, Fiji",
+   "source": "USGS Seismic"
+  },
+  "s-231": {
+   "title": "Earthquake M5.7 - 180 km NW of Hihifo, Tonga",
+   "source": "USGS Seismic"
+  },
+  "s-232": {
+   "title": "Earthquake M5 - Mariana Islands region",
+   "source": "USGS Seismic"
+  },
+  "s-233": {
+   "title": "Earthquake M5.3 - 51 km WSW of Arauco, Argentina",
+   "source": "USGS Seismic"
+  },
+  "s-234": {
+   "title": "Earthquake M5.1 - 88 km NNW of Uken, Japan",
+   "source": "USGS Seismic"
+  },
+  "s-235": {
+   "title": "Earthquake M5 - Volcano Islands, Japan region",
+   "source": "USGS Seismic"
+  },
+  "s-236": {
+   "title": "Earthquake M5.3 - 97 km S of Sarangani, Philippines",
+   "source": "USGS Seismic"
+  },
+  "s-237": {
+   "title": "Earthquake M5 - South Sandwich Islands region",
+   "source": "USGS Seismic"
+  },
+  "s-238": {
+   "title": "Earthquake M5 - 38 km E of Nobeoka, Japan",
+   "source": "USGS Seismic"
+  },
+  "s-239": {
+   "title": "Earthquake M5.2 - 167 km WNW of Mejillones, Chile",
+   "source": "USGS Seismic"
+  },
+  "s-240": {
+   "title": "Earthquake M5 - 34 km WNW of Luwuk, Indonesia",
+   "source": "USGS Seismic"
+  },
+  "s-241": {
+   "title": "Earthquake M5.5 - 35 km NNE of Ruteng, Indonesia",
+   "source": "USGS Seismic"
+  },
+  "s-242": {
+   "title": "Earthquake M5 - 248 km SSE of False Pass, Alaska",
+   "source": "USGS Seismic"
+  },
+  "s-243": {
+   "title": "Earthquake M5.7 - south of Africa",
+   "source": "USGS Seismic"
+  },
+  "s-244": {
+   "title": "CVE-2000-1024: eWave ServletExec 3.0C and earlier does not restrict access to the UploadServlet Java/JSP servlet, w (CVSS: 10.0)",
+   "source": "NVD CVE Intelligence"
+  },
+  "s-245": {
+   "title": "CVE-2000-1026: Multiple buffer overflows in LBNL tcpdump allow remote attackers to execute arbitrary commands. (CVSS: 10.0)",
+   "source": "NVD CVE Intelligence"
+  },
+  "s-246": {
+   "title": "CVE-2000-1029: Buffer overflow in host command allows a remote attacker to execute arbitrary commands via a long re (CVSS: 10.0)",
+   "source": "NVD CVE Intelligence"
+  },
+  "s-247": {
+   "title": "CVE-2000-1034: Buffer overflow in the System Monitor ActiveX control in Windows 2000 allows remote attackers to exe (CVSS: 10.0)",
+   "source": "NVD CVE Intelligence"
+  },
+  "s-248": {
+   "title": "CVE-2000-1035: Buffer overflows in TYPSoft FTP Server 0.78 and earlier allows remote attackers to cause a denial of (CVSS: 10.0)",
+   "source": "NVD CVE Intelligence"
+  },
+  "s-249": {
+   "title": "CVE-2000-1042: Buffer overflow in ypserv in Mandrake Linux 7.1 and earlier, and possibly other Linux operating syst (CVSS: 10.0)",
+   "source": "NVD CVE Intelligence"
+  },
+  "s-250": {
+   "title": "CVE-2000-1046: Multiple buffer overflows in the ESMTP service of Lotus Domino 5.0.2c and earlier allow remote attac (CVSS: 10.0)",
+   "source": "NVD CVE Intelligence"
+  },
+  "s-251": {
+   "title": "CVE-2000-1074: csstart program in iCal 2.1 Patch 2 uses relative pathnames to install the libsocket and libnsl libr (CVSS: 10.0)",
+   "source": "NVD CVE Intelligence"
+  },
+  "s-252": {
+   "title": "CVE-2000-1077: Buffer overflow in the SHTML logging functionality of iPlanet Web Server 4.x allows remote attackers (CVSS: 10.0)",
+   "source": "NVD CVE Intelligence"
+  },
+  "s-253": {
+   "title": "CVE-2000-0803: GNU Groff uses the current working directory to find a device description file, which allows a local (CVSS: 10.0)",
+   "source": "NVD CVE Intelligence"
+  },
+  "s-254": {
+   "title": "CVE-2000-0818: The default installation for the Oracle listener program 7.3.4, 8.0.6, and 8.1.6 allows an attacker  (CVSS: 10.0)",
+   "source": "NVD CVE Intelligence"
+  },
+  "s-255": {
+   "title": "CVE-2000-0905: QNX Embedded Resource Manager in Voyager web server 2.01B in the demo disks for QNX 405 allows remot (CVSS: 5.0)",
+   "source": "NVD CVE Intelligence"
+  },
+  "s-256": {
+   "title": "Displacement: 156,049,664 from - (2025)",
+   "source": "UNHCR Displacement"
+  },
+  "s-257": {
+   "title": "Thermal anomaly detected: 50.5426,26.2615 (ukraine)",
+   "source": "NASA FIRMS"
+  },
+  "s-258": {
+   "title": "UN Sanctions: ERIC BADEGE",
+   "source": "UN Consolidated"
+  },
+  "s-259": {
+   "title": "UN Sanctions: FRANK KAKOLELE BWAMBALE",
+   "source": "UN Consolidated"
+  },
+  "s-260": {
+   "title": "UN Sanctions: GASTON IYAMUREMYE",
+   "source": "UN Consolidated"
+  },
+  "s-261": {
+   "title": "UN Sanctions: INNOCENT KAINA",
+   "source": "UN Consolidated"
+  },
+  "s-262": {
+   "title": "UN Sanctions: JÉRÔME KAKWAVU BUKANDE",
+   "source": "UN Consolidated"
+  },
+  "s-263": {
+   "title": "UN Sanctions: GERMAIN KATANGA",
+   "source": "UN Consolidated"
+  },
+  "s-264": {
+   "title": "UN Sanctions: THOMAS LUBANGA",
+   "source": "UN Consolidated"
+  },
+  "s-265": {
+   "title": "UN Sanctions: SULTANI MAKENGA",
+   "source": "UN Consolidated"
+  },
+  "s-266": {
+   "title": "UN Sanctions: KHAWA PANGA MANDRO",
+   "source": "UN Consolidated"
+  },
+  "s-267": {
+   "title": "UN Sanctions: CALLIXTE MBARUSHIMANA",
+   "source": "UN Consolidated"
+  },
+  "s-268": {
+   "title": "UN Sanctions: IRUTA DOUGLAS MPAMO",
+   "source": "UN Consolidated"
+  },
+  "s-269": {
+   "title": "UN Sanctions: SYLVESTRE MUDACUMURA",
+   "source": "UN Consolidated"
+  },
+  "s-270": {
+   "title": "UN Sanctions: LEOPOLD MUJYAMBERE",
+   "source": "UN Consolidated"
+  },
+  "s-271": {
+   "title": "UN Sanctions: JAMIL MUKULU",
+   "source": "UN Consolidated"
+  },
+  "s-272": {
+   "title": "UN Sanctions: IGNACE MURWANASHYAKA",
+   "source": "UN Consolidated"
+  },
+  "s-273": {
+   "title": "UN Sanctions: STRATON MUSONI",
+   "source": "UN Consolidated"
+  },
+  "s-274": {
+   "title": "UN Sanctions: JULES MUTEBUTSI",
+   "source": "UN Consolidated"
+  },
+  "s-275": {
+   "title": "UN Sanctions: BAUDOIN NGARUYE WA MYAMURO",
+   "source": "UN Consolidated"
+  },
+  "s-276": {
+   "title": "UN Sanctions: MATHIEU, CHUI NGUDJOLO",
+   "source": "UN Consolidated"
+  },
+  "s-277": {
+   "title": "UN Sanctions: FLORIBERT NGABU NJABU",
+   "source": "UN Consolidated"
+  },
+  "s-278": {
+   "title": "UN Sanctions: LAURENT NKUNDA",
+   "source": "UN Consolidated"
+  },
+  "s-279": {
+   "title": "UN Sanctions: STANISLAS NZEYIMANA",
+   "source": "UN Consolidated"
+  },
+  "s-280": {
+   "title": "UN Sanctions: DIEUDONNÉ OZIA MAZIO",
+   "source": "UN Consolidated"
+  },
+  "s-281": {
+   "title": "UN Sanctions: JEAN-MARIE LUGERERO RUNIGA",
+   "source": "UN Consolidated"
+  },
+  "s-282": {
+   "title": "UN Sanctions: NTABO NTABERI SHEKA",
+   "source": "UN Consolidated"
+  },
+  "s-283": {
+   "title": "UN Sanctions: BOSCO TAGANDA",
+   "source": "UN Consolidated"
+  },
+  "s-284": {
+   "title": "UN Sanctions: INNOCENT ZIMURINDA",
+   "source": "UN Consolidated"
+  },
+  "s-285": {
+   "title": "UN Sanctions: MUHINDO AKILI MUNDOS",
+   "source": "UN Consolidated"
+  },
+  "s-286": {
+   "title": "UN Sanctions: GUIDON SHIMIRAY MWISSA",
+   "source": "UN Consolidated"
+  },
+  "s-287": {
+   "title": "UN Sanctions: LUCIEN NZAMBAMWITA",
+   "source": "UN Consolidated"
+  },
+  "s-288": {
+   "title": "UN Sanctions: GÉDÉON KYUNGU MUTANGA WA BAFUNKWA",
+   "source": "UN Consolidated"
+  },
+  "s-289": {
+   "title": "UN Sanctions: SEKA BALUKU",
+   "source": "UN Consolidated"
+  },
+  "s-290": {
+   "title": "UN Sanctions: PROTOGÈNE RUVUGAYIMIKORE",
+   "source": "UN Consolidated"
+  },
+  "s-291": {
+   "title": "UN Sanctions: BERNARD MAHESHE BYAMUNGU",
+   "source": "UN Consolidated"
+  },
+  "s-292": {
+   "title": "UN Sanctions: APOLLINAIRE HAKIZIMANA",
+   "source": "UN Consolidated"
+  },
+  "s-293": {
+   "title": "UN Sanctions: AHMAD MAHMOOD HASSAN",
+   "source": "UN Consolidated"
+  },
+  "s-294": {
+   "title": "UN Sanctions: MICHEL RUKUNDA",
+   "source": "UN Consolidated"
+  },
+  "s-295": {
+   "title": "UN Sanctions: CORNEILLE  NANGAA YOBELUO ",
+   "source": "UN Consolidated"
+  },
+  "s-296": {
+   "title": "UN Sanctions: SEBASTIEN UWIMBABAZI ",
+   "source": "UN Consolidated"
+  },
+  "s-297": {
+   "title": "UN Sanctions: MUHAMMED  LUMISA ",
+   "source": "UN Consolidated"
+  },
+  "s-298": {
+   "title": "UN Sanctions: CHARLES  SEMATAMA ",
+   "source": "UN Consolidated"
+  },
+  "s-299": {
+   "title": "UN Sanctions: JOHN  IMANI  NZENZE ",
+   "source": "UN Consolidated"
+  },
+  "s-300": {
+   "title": "UN Sanctions: GUSTAVE  KUBWAYO ",
+   "source": "UN Consolidated"
+  },
+  "s-301": {
+   "title": "India’s ‘cockroach’ movement targets election chief in political pivot",
+   "source": "South China Morning Post"
+  },
+  "s-302": {
+   "title": "China and EU deadlocked on medical devices, still talking on PHEV curbs: source",
+   "source": "South China Morning Post"
+  },
+  "s-303": {
+   "title": "US F-35 fighters to debut in Indian multinational air exercise",
+   "source": "Defense News"
+  },
+  "s-304": {
+   "title": "Travel Advisory [4]: Gaza",
+   "source": "Travel Advisories"
+  },
+  "s-305": {
+   "title": "Rising malnutrition in Nigeria as US war on Iran raises food costs",
+   "source": "Al Jazeera"
+  },
+  "s-306": {
+   "title": "Premier League and La Liga lead FIFA reform calls after ‘exploitative’ plan",
+   "source": "Al Jazeera"
+  },
+  "s-307": {
+   "title": "Iran pitches seven-day roadmap to end conflict with US",
+   "source": "Al Jazeera"
+  },
+  "s-308": {
+   "title": "Why did Xi and China’s first lady bring their own flasks to White House banquet?",
+   "source": "South China Morning Post"
+  },
+  "s-309": {
+   "title": "The Chinese roots of ‘gung-ho’ as Trump and Xi look to shared history",
+   "source": "South China Morning Post"
+  },
+  "s-310": {
+   "title": "Young Chinese women sew own underwear, clothes, amid frustration with fast fashion",
+   "source": "South China Morning Post"
+  },
+  "s-311": {
+   "title": "Travel Advisory [4]: Iraq",
+   "source": "Travel Advisories"
+  },
+  "s-312": {
+   "title": "Travel Advisory [2]: Algeria",
+   "source": "Travel Advisories"
+  },
+  "s-313": {
+   "title": "Travel Advisory [1]: Austria",
+   "source": "Travel Advisories"
+  },
+  "s-314": {
+   "title": "TANKER ACTIVITY: 1 tanker(s) over Eastern Mediterranean — active refueling operations",
+   "source": "ADSB Military Tracks"
+  },
+  "s-315": {
+   "title": "UN General Assembly live: Leaders from Lebanon, Iraq, Pakistan to speak",
+   "source": "Al Jazeera"
+  },
+  "s-316": {
+   "title": "What’s in Iran’s seven-day plan to reopen the Strait of Hormuz?",
+   "source": "Al Jazeera"
+  },
+  "s-317": {
+   "title": "Dog rescuers vow to microchip after arrest, decry punishing ‘those trying to help’",
+   "source": "South China Morning Post"
+  },
+  "s-318": {
+   "title": "CARGO MOVEMENT: 11 military transport aircraft over Western Europe (bomber staging)",
+   "source": "ADSB Military Tracks"
+  },
+  "s-319": {
+   "title": "Xi Jinping marks second Mid-Autumn Festival in US during state visit",
+   "source": "South China Morning Post"
+  },
+  "s-320": {
+   "title": "Italy to ban burkas in schools, with 30% cap on pupils with poor Italian",
+   "source": "South China Morning Post"
+  },
+  "s-321": {
+   "title": "SURGE: persian_gulf has 1 aircraft vs 0 average — unusual concentration",
+   "source": "ADSB Military Tracks"
+  },
+  "s-322": {
+   "title": "Jay-Z rape accuser says her allegation was false",
+   "source": "BBC World"
+  },
+  "s-323": {
+   "title": "China and the US are racing ahead on AI. Can they manage risks together?",
+   "source": "South China Morning Post"
+  },
+  "s-324": {
+   "title": "Trump’s warm welcome for Xi met with caution and uncertainty in Taiwan",
+   "source": "South China Morning Post"
+  },
+  "s-325": {
+   "title": "France to send military to protect Saudi Arabia on Red Sea oil route, Macron says",
+   "source": "Defense News"
+  },
+  "s-326": {
+   "title": "Travel Advisory [3]: Jordan",
+   "source": "Travel Advisories"
+  },
+  "s-327": {
+   "title": "Travel Advisory [3]: Bahrain",
+   "source": "Travel Advisories"
+  },
+  "s-328": {
+   "title": "Humanitarian crisis worsens in Ceuta as thousands remain stranded",
+   "source": "Al Jazeera"
+  },
+  "s-329": {
+   "title": "Pakistan, Turkiye edge closer towards joining Saudi war against Houthis",
+   "source": "Al Jazeera"
+  },
+  "s-330": {
+   "title": "Hong Kong teacher jailed for 3 years for molesting pupil during free tutoring",
+   "source": "South China Morning Post"
+  },
+  "s-331": {
+   "title": "Israeli official takes notes after UN walkout against Netanyahu",
+   "source": "Al Jazeera"
+  },
+  "s-332": {
+   "title": "Fighting in northern Ethiopia spurs fears of blackout and blockade",
+   "source": "Al Jazeera"
+  },
+  "s-333": {
+   "title": "US seeking to revive Russia-Ukraine ceasefire talks",
+   "source": "Al Jazeera"
+  },
+  "s-334": {
+   "title": "Fighting erupts between Tigray’s rebel alliance and Ethiopia’s military",
+   "source": "Al Jazeera"
+  },
+  "s-335": {
+   "title": "Protests in UK after arrest of far-right activist Daniel Thomas",
+   "source": "Al Jazeera"
+  },
+  "s-336": {
+   "title": "Internet restricted after fighting breaks out in Ethiopia's Tigray region",
+   "source": "BBC World"
+  },
+  "s-337": {
+   "title": "EU to release US$7.5 billion linked to Ukraine military aid",
+   "source": "South China Morning Post"
+  },
+  "s-338": {
+   "title": "Thousands visit Victoria Park for Mid-Autumn global showcase of lanterns",
+   "source": "South China Morning Post"
+  },
+  "s-339": {
+   "title": "HK Electric to cut fuel charge for first time in 4 months as CLP raises rate",
+   "source": "South China Morning Post"
+  },
+  "s-340": {
+   "title": "China overtakes US as top workplace for elite AI researchers, study finds",
+   "source": "South China Morning Post"
+  },
+  "s-341": {
+   "title": "In a US-China world, Asean must do more than avoid choosing sides",
+   "source": "South China Morning Post"
+  },
+  "s-342": {
+   "title": "Chinese aesthetics abound at Washington summit, from Mao suits to peony trousers",
+   "source": "South China Morning Post"
+  },
+  "s-343": {
+   "title": "Xi-Trump banquet: from flasks to US tech titans in attendance, here’s everything you missed",
+   "source": "South China Morning Post"
+  },
+  "s-344": {
+   "title": "Trump hails WWII ‘ally’ China as Xi tells of bonds ‘forged in blood and fire’",
+   "source": "South China Morning Post"
+  },
+  "s-345": {
+   "title": "Xi presses Trump to take the next step on Taiwan: oppose independence",
+   "source": "South China Morning Post"
+  },
+  "s-346": {
+   "title": "India’s ‘cockroach’ movement demands election chief’s resignation",
+   "source": "Al Jazeera"
+  },
+  "s-347": {
+   "title": "Airspace activity: Persian Gulf / Strait of Hormuz — 111 commercial, 1 military aircraft",
+   "source": "Flight Route Monitor"
+  },
+  "s-348": {
+   "title": "ISR ACTIVITY: 1 reconnaissance aircraft over Persian Gulf / Iran Theater",
+   "source": "ADSB Military Tracks"
+  },
+  "s-349": {
+   "title": "In Paris, Pope warns against losing humanity in ‘paradise of machines’",
+   "source": "South China Morning Post"
+  },
+  "s-350": {
+   "title": "Earthquake M5.3 - Vanuatu region",
+   "source": "USGS Seismic"
+  },
+  "s-351": {
+   "title": "DEFENSE STOCK DROP: RTX (Raytheon) (RTX) -3.08% ($188.03)",
+   "source": "Defense Stock Monitor"
+  },
+  "s-352": {
+   "title": "DEFENSE STOCK DROP: Northrop Grumman (NOC) -3.58% ($508.5)",
+   "source": "Defense Stock Monitor"
+  },
+  "s-353": {
+   "title": "Desolate Arctic outpost likely to host US troops under new Greenland deal",
+   "source": "Defense News"
+  },
+  "s-354": {
+   "title": "Travel Advisory [1]: Azerbaijan",
+   "source": "Travel Advisories"
+  },
+  "s-355": {
+   "title": "Airspace activity: Eastern Mediterranean / Lebanon-Syria — 38 commercial, 1 military aircraft",
+   "source": "Flight Route Monitor"
+  },
+  "s-356": {
+   "title": "Shallow seismic: M1.60674831979335 depth=0.790000021457672km at 2 km SSE of Bombay Beach, CA — explosion likelihood: HIGH",
+   "source": "Seismic Explosion Detector"
+  },
+  "s-357": {
+   "title": "Last day of Xi’s US visit begins with Trump at White House tea",
+   "source": "South China Morning Post"
+  },
+  "s-358": {
+   "title": "What summit? US TV blackout and midterms turmoil overshadow red-carpet treatment",
+   "source": "South China Morning Post"
+  },
+  "s-359": {
+   "title": "Police arrest 3 over HK$70,000 Jellycat claw machine shop theft",
+   "source": "South China Morning Post"
+  },
+  "s-360": {
+   "title": "DEFENSE STOCK DROP: Kratos Defense (KTOS) -3.22% ($45.93)",
+   "source": "Defense Stock Monitor"
+  },
+  "s-361": {
+   "title": "Special agents' blood and urine test results stolen in FBI hack",
+   "source": "BBC World"
+  },
+  "s-362": {
+   "title": "Man shot during 2024 Trump campaign rally in Butler dies",
+   "source": "BBC World"
+  },
+  "s-363": {
+   "title": "US backs Elon Musk's bid to overturn €120m EU fine against X",
+   "source": "BBC World"
+  },
+  "s-364": {
+   "title": "Travel Advisory [1]: Turkmenistan",
+   "source": "Travel Advisories"
+  },
+  "s-365": {
+   "title": "COMMODITY DROP: Gold -2.15% ($4289.8)",
+   "source": "Commodity SIGINT"
+  },
+  "s-366": {
+   "title": "DEFENSE STOCK DROP: AeroVironment (AVAV) -3.09% ($155.01)",
+   "source": "Defense Stock Monitor"
+  },
+  "s-367": {
+   "title": "Yemen fighting displaces 71,000 children, worsens malnutrition: UNICEF",
+   "source": "Al Jazeera"
+  },
+  "s-368": {
+   "title": "Why Canada is not ruling out a possible war with the US",
+   "source": "Al Jazeera"
+  },
+  "s-369": {
+   "title": "The Trump-Xi summit exposes a US disadvantage in the Global South",
+   "source": "Al Jazeera"
+  },
+  "s-370": {
+   "title": "Jannik Sinner withdraws from China Open as recovery from injury continues",
+   "source": "Al Jazeera"
+  },
+  "s-371": {
+   "title": "ISR ACTIVITY: 1 reconnaissance aircraft over Black Sea",
+   "source": "ADSB Military Tracks"
+  },
+  "s-372": {
+   "title": "How China is rethinking tank survival against FPVs and top-attack threats",
+   "source": "Breaking Defense"
+  },
+  "s-373": {
+   "title": "CARGO MOVEMENT: 3 military transport aircraft over Western Europe (bomber staging)",
+   "source": "ADSB Military Tracks"
+  },
+  "s-374": {
+   "title": "Shallow seismic: M1.5 depth=2.9km at 30 km ENE of Manley Hot Springs, Alaska — explosion likelihood: MODERATE",
+   "source": "Seismic Explosion Detector"
+  },
+  "s-375": {
+   "title": "Shallow seismic: M1.9 depth=5km at 38 km WNW of Cantwell, Alaska — explosion likelihood: MODERATE",
+   "source": "Seismic Explosion Detector"
+  },
+  "s-376": {
+   "title": "Shallow seismic: M1.55 depth=4.6045km at 2 km NNW of Sun Valley, Nevada — explosion likelihood: MODERATE",
+   "source": "Seismic Explosion Detector"
+  },
+  "s-377": {
+   "title": "Shallow seismic: M2.14 depth=-0.36km at 9 km S of Princeton, Canada — explosion likelihood: HIGH",
+   "source": "Seismic Explosion Detector"
+  },
+  "s-378": {
+   "title": "Shallow seismic: M1.52 depth=-0.7km at 5 km NNW of Venersborg, Washington — explosion likelihood: HIGH",
+   "source": "Seismic Explosion Detector"
+  },
+  "s-379": {
+   "title": "DEFENSE STOCK DROP: Lockheed Martin (LMT) -3.0% ($517.38)",
+   "source": "Defense Stock Monitor"
+  },
+  "s-380": {
+   "title": "Military aircraft snapshot: 298 globally | eastern_med: 2, western_europe: 4",
+   "source": "ADSB Military Tracks"
+  },
+  "s-381": {
+   "title": "Iraqi airports halt Iranian flights after new US aviation sanctions",
+   "source": "Al Jazeera"
+  },
+  "s-382": {
+   "title": "India’s Cockroach movement joins opposition push to oust election chief",
+   "source": "Al Jazeera"
+  },
+  "s-383": {
+   "title": "Families fleeing Yemen’s war face displacement, hunger and water shortages",
+   "source": "Al Jazeera"
+  },
+  "s-384": {
+   "title": "Poland boosts air defence after ‘Russian provocations’ amid Ukraine war",
+   "source": "Al Jazeera"
+  },
+  "s-385": {
+   "title": "US top court allows Trump to use controversial voter verification system",
+   "source": "Al Jazeera"
+  },
+  "s-386": {
+   "title": "Lebanese in Brazil, Brazilian in Lebanon",
+   "source": "Al Jazeera"
+  },
+  "s-387": {
+   "title": "Al Jazeera rejects Netanyahu’s attack on journalists in UN speech",
+   "source": "Al Jazeera"
+  },
+  "s-388": {
+   "title": "Timeline: Man City’s Premier League financial charges to reported verdict",
+   "source": "Al Jazeera"
+  },
+  "s-389": {
+   "title": "Ed Sheeran concerts at Robert Kraft stadiums cancelled over weather",
+   "source": "Al Jazeera"
+  },
+  "s-390": {
+   "title": "US court upholds Pentagon’s blacklisting of Anthropic",
+   "source": "Al Jazeera"
+  },
+  "s-391": {
+   "title": "Netanyahu’s UN belligerence wins cheers at home as world walks out",
+   "source": "Al Jazeera"
+  },
+  "s-392": {
+   "title": "Israeli shelling continues as Lebanon’s PM demands withdrawal in UN speech",
+   "source": "Al Jazeera"
+  },
+  "s-393": {
+   "title": "Ethiopia’s new rebel alliance faces an old problem",
+   "source": "Al Jazeera"
+  },
+  "s-394": {
+   "title": "More than 55,000 Sudanese refugees flee to Chad as UN calls for funding",
+   "source": "Al Jazeera"
+  },
+  "s-395": {
+   "title": "LIVE: Turkiye vs France – UEFA Nations League",
+   "source": "Al Jazeera"
+  },
+  "s-396": {
+   "title": "What the Trump-Xi meeting revealed about global power",
+   "source": "Al Jazeera"
+  },
+  "s-397": {
+   "title": "Trump hails ‘very productive’ talks with China’s Xi Jinping",
+   "source": "Al Jazeera"
+  },
+  "s-398": {
+   "title": "Lebanon PM calls for full Israeli withdrawal in UN address",
+   "source": "Al Jazeera"
+  },
+  "s-399": {
+   "title": "Iraq calls for a ‘sovereign Palestinian state’ at UNGA",
+   "source": "Al Jazeera"
+  },
+  "s-400": {
+   "title": "China swimmer makes Asian Games history as Thai sprinter wins track 100m",
+   "source": "Al Jazeera"
+  },
+  "s-401": {
+   "title": "Supreme Court allows Trump to use controversial database to check voter citizenship",
+   "source": "BBC World"
+  },
+  "s-402": {
+   "title": "Students strike across Germany in protest against military service",
+   "source": "BBC World"
+  },
+  "s-403": {
+   "title": "Senior Kazakh officials detained after 14 service members swept out to sea",
+   "source": "BBC World"
+  },
+  "s-404": {
+   "title": "Media outlets banned by Trump resume White House coverage after judge's order",
+   "source": "BBC World"
+  },
+  "s-405": {
+   "title": "China set to decide if Costa Rican or Guyanese diplomat becomes first woman UN chief",
+   "source": "South China Morning Post"
+  },
+  "s-406": {
+   "title": "US TV networks back at White House, as Trump praises ‘fair’ coverage of Xi visit",
+   "source": "South China Morning Post"
+  },
+  "s-407": {
+   "title": "Japan says Trump voiced concern over weak yen in summit with PM Takaichi",
+   "source": "South China Morning Post"
+  },
+  "s-408": {
+   "title": "Whistle-blower Jason Poon and wife charged over HK$6 million Covid-19 loan fraud",
+   "source": "South China Morning Post"
+  },
+  "s-409": {
+   "title": "US Navy stands up hub to prepare unmanned systems for combat",
+   "source": "Defense News"
+  },
+  "s-410": {
+   "title": "Thales in ‘quite advanced’ talks with NATO countries on AI-powered command software",
+   "source": "Defense News"
+  },
+  "s-411": {
+   "title": "‘Cyber magazine’ can run out ‘pretty damn quick’ in modern conflict: Admiral",
+   "source": "Breaking Defense"
+  },
+  "s-412": {
+   "title": "South Korea inducts first locally developed fighter jet into air force",
+   "source": "Breaking Defense"
+  },
+  "s-413": {
+   "title": "Navy launches Phase II for medium robo-ship project, seeks ‘innovative solutions’",
+   "source": "Breaking Defense"
+  },
+  "s-414": {
+   "title": "Travel Advisory [1]: Malta",
+   "source": "Travel Advisories"
+  },
+  "s-415": {
+   "title": "Earthquake M5.2 - 62 km SW of San Antonio, Chile",
+   "source": "USGS Seismic"
+  },
+  "s-416": {
+   "title": "Zelensky says Russia has widened attacks to hit Ukraine's data centres",
+   "source": "BBC World"
+  },
+  "s-417": {
+   "title": "How Israel’s ‘Blue Line’ team seizes Palestinian land in the West Bank",
+   "source": "Al Jazeera"
+  },
+  "s-418": {
+   "title": "UN expands list of firms involved in illegal Israeli settlement activities",
+   "source": "Al Jazeera"
+  },
+  "s-419": {
+   "title": "Iran threatens widespread disruption as Iraq halts Iran flights",
+   "source": "Al Jazeera"
+  },
+  "s-420": {
+   "title": "Will Turkiye end its military presence in northern Iraq?",
+   "source": "Al Jazeera"
+  },
+  "s-421": {
+   "title": "US appeals court upholds Pentagon’s blacklisting of Anthropic",
+   "source": "Defense News"
+  },
+  "s-422": {
+   "title": "Military aircraft snapshot: 302 globally | eastern_med: 2, western_europe: 4, black_sea: 1",
+   "source": "ADSB Military Tracks"
+  },
+  "s-423": {
+   "title": "ISR ACTIVITY: 1 reconnaissance aircraft over Black Sea",
+   "source": "ADSB Military Tracks"
+  },
+  "s-424": {
+   "title": "Trump's plans for massive arch move ahead",
+   "source": "BBC World"
+  },
+  "s-425": {
+   "title": "Trade deliverables, Taiwan push and ‘strategic stability’: key Xi-Trump takeaways overall",
+   "source": "South China Morning Post"
+  },
+  "s-426": {
+   "title": "Navy’s shipyard revamp could cost more than $200 billion: GAO",
+   "source": "Breaking Defense"
+  },
+  "s-427": {
+   "title": "Travel Advisory [1]: Barbados",
+   "source": "Travel Advisories"
+  },
+  "s-428": {
+   "title": "Black woman Tasia Fortune’s hanging was ‘staged’ after her death, Mississippi police say",
+   "source": "South China Morning Post"
+  },
+  "s-429": {
+   "title": "DC Circuit panel upholds Pentagon’s ban on Anthropic – so what comes next?",
+   "source": "Breaking Defense"
+  },
+  "s-430": {
+   "title": "Trump administration obligates $307M for military aid to Ukraine",
+   "source": "Defense News"
+  },
+  "s-431": {
+   "title": "Which countries walked out of Netanyahu’s UNGA speech?",
+   "source": "Al Jazeera"
+  },
+  "s-432": {
+   "title": "Jerusalem Daily: What was Netanyahu’s UNGA speech really about?",
+   "source": "Al Jazeera"
+  },
+  "s-433": {
+   "title": "Pakistan PM calls Houthi threats to Saudi holy sites a ‘red line’",
+   "source": "Al Jazeera"
+  },
+  "s-434": {
+   "title": "Building logistics networks that survive contested environments",
+   "source": "Breaking Defense"
+  },
+  "s-435": {
+   "title": "Military aircraft snapshot: 239 globally | western_europe: 7",
+   "source": "ADSB Military Tracks"
+  },
+  "s-436": {
+   "title": "SURGE: western_europe has 7 aircraft vs 3 average — unusual concentration",
+   "source": "ADSB Military Tracks"
+  },
+  "s-437": {
+   "title": "Huge fire on vehicle ferry off Mykonos prompts mass evacuation",
+   "source": "Al Jazeera"
+  },
+  "s-438": {
+   "title": "Afghan taxi drivers defy the Taliban’s music ban",
+   "source": "Al Jazeera"
+  },
+  "s-439": {
+   "title": "Iran offers US plan to reopen Hormuz within 7 days",
+   "source": "South China Morning Post"
+  },
+  "s-440": {
+   "title": "Shallow seismic: M1.79 depth=4.52km at 26 km ESE of Lake Isabella, CA — explosion likelihood: MODERATE",
+   "source": "Seismic Explosion Detector"
+  },
+  "s-441": {
+   "title": "Houthi attack on Mecca, Medina would cross ‘red line’, Pakistan PM tells UN",
+   "source": "Al Jazeera"
+  },
+  "s-442": {
+   "title": "Manchester City reportedly found guilty of almost 115 financial charges",
+   "source": "Al Jazeera"
+  },
+  "s-443": {
+   "title": "Shallow seismic: M1.75 depth=1.8485km at 55 km S of Kingston, Nevada — explosion likelihood: MODERATE",
+   "source": "Seismic Explosion Detector"
+  },
+  "s-444": {
+   "title": "Earthquake M7 - 68 km ENE of Tadine, New Caledonia",
+   "source": "USGS Seismic"
+  },
+  "s-445": {
+   "title": "Earthquake M5 - 13 km N of Xunchang, China",
+   "source": "USGS Seismic"
+  },
+  "s-446": {
+   "title": "China and the US can make nice, if not peace",
+   "source": "South China Morning Post"
+  },
+  "s-447": {
+   "title": "Ukraine’s deadly AI training platform for drone tech opens to UK companies",
+   "source": "Defense News"
+  },
+  "s-448": {
+   "title": "Netanyahu calls Al Jazeera a ‘toxic media outlet’",
+   "source": "Al Jazeera"
+  },
+  "s-449": {
+   "title": "Mbappe goal overshadowed by knee injury to mar Zidane debut France win",
+   "source": "Al Jazeera"
+  },
+  "s-450": {
+   "title": "What would a US diesel export ban mean for global fuel prices?",
+   "source": "Al Jazeera"
+  },
+  "s-451": {
+   "title": "Italy crisis deepens as Belgium’s win stalls World Cup rebuild in Rome",
+   "source": "Al Jazeera"
+  },
+  "s-452": {
+   "title": "Travel Advisory [1]: Belgium",
+   "source": "Travel Advisories"
+  },
+  "s-453": {
+   "title": "Iran to reopen Strait of Hormuz within a week if US agrees to plan",
+   "source": "Al Jazeera"
+  },
+  "s-454": {
+   "title": "DR Congo’s Ebola outbreak spreads to two new health zones, WHO says",
+   "source": "Al Jazeera"
+  },
+  "s-455": {
+   "title": "Military aircraft snapshot: 138 globally | western_europe: 3",
+   "source": "ADSB Military Tracks"
+  },
+  "s-456": {
+   "title": "Shallow seismic: M1.66 depth=-0.41km at 2 km E of Granite Falls, Washington — explosion likelihood: HIGH",
+   "source": "Seismic Explosion Detector"
+  },
+  "s-457": {
+   "title": "What Donald Trump and Xi Jinping revealed in the body language with their wives",
+   "source": "South China Morning Post"
+  },
+  "s-458": {
+   "title": "Pope Leo XIV warns AI could undermine humanity during France visit",
+   "source": "Al Jazeera"
+  },
+  "s-459": {
+   "title": "Iran offers US deal to reopen Strait of Hormuz in seven days",
+   "source": "BBC World"
+  },
+  "s-460": {
+   "title": "South African white genocide does not exist, new ambassador to US tells BBC",
+   "source": "BBC World"
+  },
+  "s-461": {
+   "title": "Inside the FBI hack: Agents fearful and angry after 'dangerous' data breach",
+   "source": "BBC World"
+  },
+  "s-462": {
+   "title": "OpenAI investigating 'dozens' of instances of agents acting improperly",
+   "source": "BBC World"
+  },
+  "s-463": {
+   "title": "Black woman found hanging from tree was dead before body was 'staged', police say",
+   "source": "BBC World"
+  },
+  "s-464": {
+   "title": "Two arrested after people seen mysteriously emerging from various New York City sewers",
+   "source": "BBC World"
+  },
+  "s-465": {
+   "title": "Thailand has had enough of foreign tourists behaving badly",
+   "source": "South China Morning Post"
+  },
+  "s-466": {
+   "title": "Xi-Trump atmospherics welcomed but mask structural rifts: analysts",
+   "source": "South China Morning Post"
+  },
+  "s-467": {
+   "title": "Iran war live: Tehran offers US plan to reopen Hormuz within seven days",
+   "source": "Al Jazeera"
+  },
+  "s-468": {
+   "title": "US court rules against Kalshi, says states can regulate prediction markets",
+   "source": "Al Jazeera"
+  },
+  "s-469": {
+   "title": "Shallow seismic: M1.8 depth=1.1km at 63 km S of Denali National Park, Alaska — explosion likelihood: MODERATE",
+   "source": "Seismic Explosion Detector"
+  },
+  "s-470": {
+   "title": "FLIGHT AVOIDANCE: Black Sea — only 0 commercial flights (normal: 15+)",
+   "source": "Flight Route Monitor"
+  },
+  "s-471": {
+   "title": "Facebook found liable as TikTok settles for $100m over user safety",
+   "source": "Al Jazeera"
+  },
+  "s-472": {
+   "title": "Pro-Imran Khan rally delayed amid government closures",
+   "source": "Al Jazeera"
+  },
+  "s-473": {
+   "title": "‘Never too late’: Filipino domestic helpers pursue degree dreams they put on hold",
+   "source": "South China Morning Post"
+  },
+  "s-474": {
+   "title": "China couple have 13 kids to avoid village bullying, elderly loneliness, dividing public opinion",
+   "source": "South China Morning Post"
+  },
+  "s-475": {
+   "title": "Offshore wind farm could create radar blind spots and ‘ghost’ targets, Chinese study warns",
+   "source": "South China Morning Post"
+  },
+  "s-476": {
+   "title": "TikTok settles lawsuit with Alabama for at least US$100m, to apply safety steps",
+   "source": "South China Morning Post"
+  },
+  "s-477": {
+   "title": "How Hong Kong firms are future-proofing business in challenging times",
+   "source": "South China Morning Post"
+  },
+  "s-478": {
+   "title": "China’s biotech firms move up value chain as drug deals evolve beyond licensing: analysts",
+   "source": "South China Morning Post"
+  },
+  "s-479": {
+   "title": "Shallow seismic: M1.7 depth=4.23km at 31 km N of Kernville, CA — explosion likelihood: MODERATE",
+   "source": "Seismic Explosion Detector"
+  },
+  "s-480": {
+   "title": "Commodity: Brent Crude Oil -2.89% ($97.44)",
+   "source": "Commodity SIGINT"
+  },
+  "s-481": {
+   "title": "How Chinese firms can avoid a Europe-style backlash in Southeast Asia",
+   "source": "South China Morning Post"
+  },
+  "s-482": {
+   "title": "Hong Kong police investigate suspected pinhole cameras in gym changing rooms",
+   "source": "South China Morning Post"
+  },
+  "s-483": {
+   "title": "Hong Kong tycoon-backed start-up bets on new battery to challenge energy-storage giants",
+   "source": "South China Morning Post"
+  },
+  "s-484": {
+   "title": "Hong Kong minister vows to give public account of Queen Mary Hospital lift saga",
+   "source": "South China Morning Post"
+  },
+  "s-485": {
+   "title": "China’s AI-led transformation is taking shape. Why are some economists urging caution?",
+   "source": "South China Morning Post"
+  },
+  "s-486": {
+   "title": "Hong Kong’s Paul Chan predicts positive market response to Xi-Trump summit",
+   "source": "South China Morning Post"
+  },
+  "s-487": {
+   "title": "Why Pakistan’s endless war on militants fails to break the cycle",
+   "source": "South China Morning Post"
+  },
+  "s-488": {
+   "title": "Why Taiwan’s coastguard vessel transfer to the Philippines has sparked a double outcry",
+   "source": "South China Morning Post"
+  },
+  "s-489": {
+   "title": "Xi-Trump summit: China and US to open ‘super intelligence’ communications channel",
+   "source": "South China Morning Post"
+  },
+  "s-490": {
+   "title": "OpenAI says its AI agents posted user images online in error",
+   "source": "South China Morning Post"
+  },
+  "s-491": {
+   "title": "China’s first lady Peng Liyuan shines during Xi-Trump summit: everything you missed",
+   "source": "South China Morning Post"
+  },
+  "s-492": {
+   "title": "Hong Kong is fast-tracking Northern Metropolis links. Will they be ready in time?",
+   "source": "South China Morning Post"
+  },
+  "s-493": {
+   "title": "CNN blocked from Trump’s trip as White House signals new media curb",
+   "source": "South China Morning Post"
+  },
+  "s-494": {
+   "title": "How Hong Kong companies are evolving with the times",
+   "source": "South China Morning Post"
+  },
+  "s-495": {
+   "title": "Will the Trump-Xi wartime ally nostalgia prompt a Japanese rethink on China ties?",
+   "source": "South China Morning Post"
+  },
+  "s-496": {
+   "title": "Bangkok roads submerged as flood disaster declared",
+   "source": "BBC World"
+  },
+  "s-497": {
+   "title": "White House bars CNN from travelling with Trump on Air Force One",
+   "source": "BBC World"
+  },
+  "s-498": {
+   "title": "Pope warns against 'losing humanity' to AI machines",
+   "source": "BBC World"
+  },
+  "s-499": {
+   "title": "Disaster zone declared across Bangkok as heavy rain triggers flooding",
+   "source": "Al Jazeera"
+  },
+  "s-500": {
+   "title": "Could AI firms be held responsible for mass shootings?",
+   "source": "Al Jazeera"
+  },
+  "s-501": {
+   "title": "Manchester City found guilty? What we know; what could the punishment be?",
+   "source": "Al Jazeera"
+  },
+  "s-502": {
+   "title": "Yuki Kurihara, Japan’s 11-year-old e-sports prodigy, wins Asian Games gold",
+   "source": "Al Jazeera"
+  },
+  "s-503": {
+   "title": "‘Nowhere else to go’: Gaza families shelter in buildings that may collapse",
+   "source": "Al Jazeera"
+  },
+  "s-504": {
+   "title": "Huckabee blames ‘biblical illiteracy’ for waning support for Israel in US",
+   "source": "Al Jazeera"
+  },
+  "s-505": {
+   "title": "‘Shaken faith’: Why are India’s elections under unprecedented scrutiny?",
+   "source": "Al Jazeera"
+  },
+  "s-506": {
+   "title": "Bangkok on red alert as massive floods hit the city",
+   "source": "Al Jazeera"
+  },
+  "s-507": {
+   "title": "US official claims Trump holds all the cards in Iran talks",
+   "source": "Al Jazeera"
+  },
+  "s-508": {
+   "title": "Iran pitches US a seven-day end to the war at UNGA",
+   "source": "Al Jazeera"
+  },
+  "s-509": {
+   "title": "White House bars CNN from Air Force One for Trump’s upcoming trip",
+   "source": "Al Jazeera"
+  },
+  "s-510": {
+   "title": "PAM wins big in Morocco parliament elections but falls short of majority",
+   "source": "Al Jazeera"
+  },
+  "s-511": {
+   "title": "Yemen’s government offers amnesty to Houthi defectors",
+   "source": "Al Jazeera"
+  },
+  "s-512": {
+   "title": "The bombs are still falling. Does diplomacy even work?",
+   "source": "Al Jazeera"
+  },
+  "s-513": {
+   "title": "Yemeni leader urges public to enlist, offers amnesty to Houthi defectors",
+   "source": "Al Jazeera"
+  },
+  "s-514": {
+   "title": "UNGA81: Why has Africa’s Security Council reform push remained unresolved?",
+   "source": "Al Jazeera"
+  },
+  "s-515": {
+   "title": "Pope Leo XIV makes first official Papal visit in France in nearly 20",
+   "source": "Al Jazeera"
+  },
+  "s-516": {
+   "title": "TikTok to pay $100 million to Alabama in teen addiction settlement",
+   "source": "Al Jazeera"
+  },
+  "s-517": {
+   "title": "Plane crash in DR Congo kills more than a dozen",
+   "source": "Al Jazeera"
+  },
+  "s-518": {
+   "title": "Shallow seismic: M2.3 depth=0.3km at 92 km SSE of Port Graham, Alaska — explosion likelihood: HIGH",
+   "source": "Seismic Explosion Detector"
+  },
+  "s-519": {
+   "title": "Pro-Palestine Action group to rally at Labour conference led by Burnham",
+   "source": "Al Jazeera"
+  },
+  "s-520": {
+   "title": "Pochettino regrets limited role in Balogun red card decision at World Cup",
+   "source": "Al Jazeera"
+  },
+  "s-521": {
+   "title": "Iran war squeezes Iraq’s economy as oil revenues fall and prices rise",
+   "source": "Al Jazeera"
+  },
+  "s-522": {
+   "title": "Brazil's Lula bans online gambling ahead of presidential election",
+   "source": "BBC World"
+  },
+  "s-523": {
+   "title": "The treasured 'eternal snow' on this tropical island is about to disappear forever",
+   "source": "BBC World"
+  },
+  "s-524": {
+   "title": "As Merz scrambles for support, Germany's identity crisis is laid bare",
+   "source": "BBC World"
+  },
+  "s-525": {
+   "title": "Are Ethiopians marching back to war in Tigray?",
+   "source": "BBC World"
+  },
+  "s-526": {
+   "title": "Hikers urge live updates on free quota spots to fix Po Pin Chau booking confusion",
+   "source": "South China Morning Post"
+  },
+  "s-527": {
+   "title": "Shallow seismic: M2.01 depth=2.89000010490417km at 13 km SSW of Tennant, CA — explosion likelihood: MODERATE",
+   "source": "Seismic Explosion Detector"
+  },
+  "s-528": {
+   "title": "Pezeshkian says Iran ‘no longer trusts talks with Washington’",
+   "source": "Al Jazeera"
+  },
+  "s-529": {
+   "title": "An unexpected welcome: Syrian Kurds return to their homes in Afrin",
+   "source": "Al Jazeera"
+  },
+  "s-530": {
+   "title": "Israel bans Arab parties from election: Who they are, why it matters",
+   "source": "Al Jazeera"
+  },
+  "s-531": {
+   "title": "Virat Kohli says he will retire from India cricket after 2027 World Cup",
+   "source": "Al Jazeera"
+  },
+  "s-532": {
+   "title": "England vs Spain: UEFA Nations League – Predictions, teams, head-to-head",
+   "source": "Al Jazeera"
+  },
+  "s-533": {
+   "title": "Trump ‘rejects’ Iran’s seven-day ceasefire proposal. What’s next?",
+   "source": "Al Jazeera"
+  },
+  "s-534": {
+   "title": "Senegal draw in Vieira debut, Nigeria survive scare, but Cape Verde crash",
+   "source": "Al Jazeera"
+  },
+  "s-535": {
+   "title": "China, US to open AI ‘communication channel’ after summit, White House says",
+   "source": "Al Jazeera"
+  },
+  "s-536": {
+   "title": "At least two dead after explosion destroys building close to Acropolis in Athens",
+   "source": "BBC World"
+  },
+  "s-537": {
+   "title": "Republic of Ireland news conference delayed before controversial Israel game",
+   "source": "BBC World"
+  },
+  "s-538": {
+   "title": "What is kratom, the 'gas station heroin' alarming officials in the US?",
+   "source": "BBC World"
+  },
+  "s-539": {
+   "title": "Why an international arrest warrant didn't stop Netanyahu's US trip",
+   "source": "BBC World"
+  },
+  "s-540": {
+   "title": "Bangkok declares disaster as heavy rains spark flooding",
+   "source": "BBC World"
+  },
+  "s-541": {
+   "title": "Thousands turn out to greet Pope in France",
+   "source": "BBC World"
+  },
+  "s-542": {
+   "title": "District councillor Peggy Wong resigns amid proxy-vote claims after Tai Po blaze",
+   "source": "South China Morning Post"
+  },
+  "s-543": {
+   "title": "Woman arrested over child abuse in Hong Kong after dashcam video shows boy shoved",
+   "source": "South China Morning Post"
+  },
+  "s-544": {
+   "title": "Mid-Autumn light show in Yuen Long panned online over stench and execution",
+   "source": "South China Morning Post"
+  },
+  "s-545": {
+   "title": "2 dead, 4 missing after explosion destroys building in Athens",
+   "source": "South China Morning Post"
+  },
+  "s-546": {
+   "title": "Chinese doctor with PhD leaves medical career to deliver food, pursue music part-time",
+   "source": "South China Morning Post"
+  },
+  "s-547": {
+   "title": "Houthi attacks on Saudi Arabia test limits of Mecca regional security pact",
+   "source": "South China Morning Post"
+  },
+  "s-548": {
+   "title": "Thailand’s Bangkok declares flood disaster across city as thousands flee from homes",
+   "source": "South China Morning Post"
+  },
+  "s-549": {
+   "title": "How Peng Liyuan and Melania Trump opened a parallel track in US-China diplomacy",
+   "source": "South China Morning Post"
+  },
+  "s-550": {
+   "title": "Travel Advisory [1]: Zambia",
+   "source": "Travel Advisories"
+  },
+  "s-551": {
+   "title": "Blast in Pakistan’s Dera Ismail Khan kills several people",
+   "source": "Al Jazeera"
+  },
+  "s-552": {
+   "title": "Why Xi’s flight path from China to the US was hours faster than Trump’s in May",
+   "source": "South China Morning Post"
+  },
+  "s-553": {
+   "title": "Why US deal on Greenland could narrow China’s Arctic engagement",
+   "source": "South China Morning Post"
+  },
+  "s-554": {
+   "title": "Pressure to boycott Israel game grows as Ireland preparations stall",
+   "source": "Al Jazeera"
+  },
+  "s-555": {
+   "title": "Shallow seismic: M1.89 depth=2.17000007629395km at 8 km WNW of Cobb, CA — explosion likelihood: MODERATE",
+   "source": "Seismic Explosion Detector"
+  },
+  "s-556": {
+   "title": "Women take up arms as sexual violence ravages eastern DRC",
+   "source": "Al Jazeera"
+  },
+  "s-557": {
+   "title": "At least 10 people killed in Russian and Ukrainian attacks",
+   "source": "Al Jazeera"
+  },
+  "s-558": {
+   "title": "Jerusalem Daily: violence continues as the world watches the UNGA",
+   "source": "Al Jazeera"
+  },
+  "s-559": {
+   "title": "Manchester City confident they can prove ‘innocence’ over charges: Chairman",
+   "source": "Al Jazeera"
+  },
+  "s-560": {
+   "title": "LIVE: England vs Spain – UEFA Nations League",
+   "source": "Al Jazeera"
+  },
+  "s-561": {
+   "title": "Several hundred thousand people gather for Pope Leo’s mass in Paris",
+   "source": "Al Jazeera"
+  },
+  "s-562": {
+   "title": "Thousands of students protest German military conscription",
+   "source": "Al Jazeera"
+  },
+  "s-563": {
+   "title": "One year on, the UK’s recognition of Palestinian statehood is bearing fruit",
+   "source": "Al Jazeera"
+  },
+  "s-564": {
+   "title": "Trump rejects Iran’s seven-day roadmap to reopen Strait of Hormuz",
+   "source": "Al Jazeera"
+  },
+  "s-565": {
+   "title": "Olympics: Germany picks Munich for Summer Games bid",
+   "source": "Al Jazeera"
+  },
+  "s-566": {
+   "title": "Israel-Ireland match to go ahead in Nations League after player vote",
+   "source": "Al Jazeera"
+  },
+  "s-567": {
+   "title": "Russell edges out Verstappen to win in Baku, Antonelli settles for fifth",
+   "source": "Al Jazeera"
+  },
+  "s-568": {
+   "title": "Is Ethiopia on the verge of another civil war as fighting erupts in Tigray?",
+   "source": "Al Jazeera"
+  },
+  "s-569": {
+   "title": "Egypt to rest Salah in South Sudan AFCON qualifier over pitch concerns",
+   "source": "Al Jazeera"
+  },
+  "s-570": {
+   "title": "The intelligence war is turning against the Houthis",
+   "source": "Al Jazeera"
+  },
+  "s-571": {
+   "title": "Girl disabled by Israeli strike urges wheelchairs be let into Gaza",
+   "source": "Al Jazeera"
+  },
+  "s-572": {
+   "title": "Turkiye calls for UN Security Council veto to end: Could it happen?",
+   "source": "Al Jazeera"
+  },
+  "s-573": {
+   "title": "The media battle behind Brazil’s election",
+   "source": "Al Jazeera"
+  },
+  "s-574": {
+   "title": "Manchester City face ‘drastic’ sanctions, says club’s former chairman",
+   "source": "Al Jazeera"
+  },
+  "s-575": {
+   "title": "Mecca defence alliance chiefs meet amid Houthi attacks",
+   "source": "Al Jazeera"
+  },
+  "s-576": {
+   "title": "Pope praises 'energy and commitment' of young people as huge crowds join open-air Mass in Paris",
+   "source": "BBC World"
+  },
+  "s-577": {
+   "title": "Security lapses at Utah campus where Charlie Kirk was killed, review says",
+   "source": "BBC World"
+  },
+  "s-578": {
+   "title": "German town bans 'stumbling stone' memorials to Nazi victims",
+   "source": "BBC World"
+  },
+  "s-579": {
+   "title": "OpenAI bots meddled with multiple US government agency sites",
+   "source": "BBC World"
+  },
+  "s-580": {
+   "title": "Russia targeting 'ordinary life' with attacks on Ukraine's data centres, Zelensky says",
+   "source": "BBC World"
+  },
+  "s-581": {
+   "title": "Trump rejects Iran proposal for deal to reopen Hormuz",
+   "source": "South China Morning Post"
+  },
+  "s-582": {
+   "title": "Pope celebrates giant Paris mass in landmark visit",
+   "source": "South China Morning Post"
+  },
+  "s-583": {
+   "title": "3 top reasons Trump will face a stronger Xi Jinping at November Apec forum in China",
+   "source": "South China Morning Post"
+  },
+  "s-584": {
+   "title": "China-based Brics bank set for lead role in hunger alliance this year, Brazil says",
+   "source": "South China Morning Post"
+  },
+  "s-585": {
+   "title": "Suicide bombing at police checkpoint in Pakistan kills at least 11",
+   "source": "South China Morning Post"
+  },
+  "s-586": {
+   "title": "Trade truce extension aside, was AI the real Xi-Trump summit breakthrough?",
+   "source": "South China Morning Post"
+  },
+  "s-587": {
+   "title": "Travel Advisory [1]: Guadeloupe",
+   "source": "Travel Advisories"
+  },
+  "s-588": {
+   "title": "Venezuelan government, opposition agree to work towards reform of top court",
+   "source": "Al Jazeera"
+  },
+  "s-589": {
+   "title": "Earthquake M5.2 - 148 km NW of Kilmia, Yemen",
+   "source": "USGS Seismic"
+  },
+  "s-590": {
+   "title": "Shallow seismic: M2.34 depth=3.91000008583069km at 4 km WNW of Orinda, CA — explosion likelihood: MODERATE",
+   "source": "Seismic Explosion Detector"
+  },
+  "s-591": {
+   "title": "Trump rejects combining US-China AI efforts",
+   "source": "Al Jazeera"
+  },
+  "s-592": {
+   "title": "Iraq seeks US exemption from ban on Iranian flights",
+   "source": "Al Jazeera"
+  },
+  "s-593": {
+   "title": "‘Stop arming Israel’: Pro-Palestine protesters march on Labour conference",
+   "source": "Al Jazeera"
+  },
+  "s-594": {
+   "title": "Cuba condemns US ‘collective punishment’ as Trump predicts deal",
+   "source": "Al Jazeera"
+  },
+  "s-595": {
+   "title": "Ethiopia’s Fano fighters claim capture of army vehicles and weapons",
+   "source": "Al Jazeera"
+  },
+  "s-596": {
+   "title": "Nor'easter storm brings coastal flooding, as New York and New Jersey declare emergency",
+   "source": "BBC World"
+  },
+  "s-597": {
+   "title": "South African police discover body of 10th woman near Johannesburg",
+   "source": "Al Jazeera"
+  },
+  "s-598": {
+   "title": "Trump rejects Iranian offer to reopen Strait of Hormuz",
+   "source": "Al Jazeera"
+  },
+  "s-599": {
+   "title": "Cuba accuses US at UN of deliberately inflicting humanitarian suffering",
+   "source": "Al Jazeera"
+  },
+  "s-600": {
+   "title": "Shallow seismic: M1.5 depth=1.98000001907349km at 1 km WSW of Anderson Springs, CA — explosion likelihood: MODERATE",
+   "source": "Seismic Explosion Detector"
+  },
+  "s-601": {
+   "title": "Tenth woman's body found in South Africa suburb as police probe killings",
+   "source": "BBC World"
+  },
+  "s-602": {
+   "title": "Why US chip controls took a back seat at the Xi-Trump summit",
+   "source": "South China Morning Post"
+  },
+  "s-603": {
+   "title": "Saudi FM accuses Iran of ‘flagrant attacks’ and condemns Houthis at UNGA",
+   "source": "Al Jazeera"
+  },
+  "s-604": {
+   "title": "Lavrov: Russia’s war in Ukraine will continue ‘through to the end’",
+   "source": "Al Jazeera"
+  },
+  "s-605": {
+   "title": "Colombia extradites leader of armed group to US in shift towards Washington",
+   "source": "Al Jazeera"
+  },
+  "s-606": {
+   "title": "Beijing says US, China to pursue military crisis-communication pact",
+   "source": "South China Morning Post"
+  },
+  "s-607": {
+   "title": "Thousands march in Spain over eviction of 87-year-old woman Maricarmen Abascal",
+   "source": "South China Morning Post"
+  },
+  "s-608": {
+   "title": "Tens of thousands attend right-wing protest over Ceuta migrant crisis",
+   "source": "Al Jazeera"
+  },
+  "s-609": {
+   "title": "Hamas slams Board of Peace for refusal to work with UNRWA in Gaza",
+   "source": "Al Jazeera"
+  },
+  "s-610": {
+   "title": "Russia scales up strikes on Ukraine as largest steelmaker halts operations",
+   "source": "Al Jazeera"
+  },
+  "s-611": {
+   "title": "Why is violence between Pakistan and Afghanistan recurring?",
+   "source": "Al Jazeera"
+  },
+  "s-612": {
+   "title": "Mother of woman found hanging in tree shocked as police say body was staged",
+   "source": "BBC World"
+  },
+  "s-613": {
+   "title": "Republic of Ireland to wear black armbands for Israel game",
+   "source": "BBC World"
+  },
+  "s-614": {
+   "title": "Yamal nets in Spain’s 3-2 comeback win against England in Nations League",
+   "source": "Al Jazeera"
+  },
+  "s-615": {
+   "title": "How China is seeking to transform the meaning of great power",
+   "source": "South China Morning Post"
+  },
+  "s-616": {
+   "title": "Claims China’s BeiDou satellite was refuelled in orbit could change space race",
+   "source": "South China Morning Post"
+  },
+  "s-617": {
+   "title": "Powerful storm brings flooding, power outages to northeastern United States",
+   "source": "Al Jazeera"
+  },
+  "s-618": {
+   "title": "Deadly shooting hits Caribbean islands of Saint Vincent and the Grenadines",
+   "source": "Al Jazeera"
+  },
+  "s-619": {
+   "title": "Student protesters disrupt NVIDIA AI climate panel",
+   "source": "Al Jazeera"
+  },
+  "s-620": {
+   "title": "Trump says he is rolling back Biden-era US fuel economy rules for cars",
+   "source": "Al Jazeera"
+  },
+  "s-621": {
+   "title": "Powerful storm pummels northeast US with rain and high winds",
+   "source": "South China Morning Post"
+  },
+  "s-622": {
+   "title": "Amid many thorny issues with China, Trump pushes to rename AI as superintelligence",
+   "source": "South China Morning Post"
+  },
+  "s-623": {
+   "title": "Why Xi Jinping skipped the UN after his Trump summit",
+   "source": "South China Morning Post"
+  },
+  "s-624": {
+   "title": "Travel Advisory [1]: Argentina",
+   "source": "Travel Advisories"
+  },
+  "s-625": {
+   "title": "Four American tourists among 6 killed in suspected gas leak blast in Athens",
+   "source": "Al Jazeera"
+  },
+  "s-626": {
+   "title": "After EU-Philippines trade breakthrough, is Asean-wide deal next?",
+   "source": "South China Morning Post"
+  },
+  "s-627": {
+   "title": "Iran war live: Tehran awaits official response as Trump rejects Hormuz plan",
+   "source": "Al Jazeera"
+  },
+  "s-628": {
+   "title": "Shallow seismic: M1.72 depth=2.86999988555908km at 18 km SW of Toms Place, CA — explosion likelihood: MODERATE",
+   "source": "Seismic Explosion Detector"
+  },
+  "s-629": {
+   "title": "Shallow seismic: M1.58 depth=3.9591km at 82 km NE of Tonopah, Nevada — explosion likelihood: MODERATE",
+   "source": "Seismic Explosion Detector"
+  },
+  "s-630": {
+   "title": "Shallow seismic: M3.31 depth=4.71999979019165km at 12 km SSE of Fern Forest, Hawaii — explosion likelihood: MODERATE",
+   "source": "Seismic Explosion Detector"
+  },
+  "s-631": {
+   "title": "Iranian minister says only negotiation can end conflict after Trump rejects Hormuz deal",
+   "source": "BBC World"
+  },
+  "s-632": {
+   "title": "Two mass shootings in South Africa leave 27 dead",
+   "source": "BBC World"
+  },
+  "s-633": {
+   "title": "Killer Christa Pike is to be executed within days, but her defence say she's a victim too",
+   "source": "BBC World"
+  },
+  "s-634": {
+   "title": "Ten climbers missing after avalanche hits Himalayan base camp",
+   "source": "BBC World"
+  },
+  "s-635": {
+   "title": "Four killed in helicopter crash near Montreal",
+   "source": "BBC World"
+  },
+  "s-636": {
+   "title": "Venezuela releases dozens of political prisoners as election calls grow",
+   "source": "BBC World"
+  },
+  "s-637": {
+   "title": "'Scourge' of abuse must be rooted out, says Pope during Lourdes visit",
+   "source": "BBC World"
+  },
+  "s-638": {
+   "title": "British national among six dead in building explosion close to Acropolis in Athens",
+   "source": "BBC World"
+  },
+  "s-639": {
+   "title": "Switzerland rejects stricter interpretation of its neutrality",
+   "source": "BBC World"
+  },
+  "s-640": {
+   "title": "Bangkok roads submerged as flood disaster declared",
+   "source": "BBC World"
+  },
+  "s-641": {
+   "title": "Afghanistan says 28 fighters killed as Islamabad, Kabul trade accusations",
+   "source": "Al Jazeera"
+  },
+  "s-642": {
+   "title": "LIVE: Norway vs Portugal – Nations League",
+   "source": "Al Jazeera"
+  },
+  "s-643": {
+   "title": "Who is Gavin Bazunu, and why is he boycotting the Ireland vs Israel match?",
+   "source": "Al Jazeera"
+  },
+  "s-644": {
+   "title": "The longevity boom is getting ahead of the science",
+   "source": "Al Jazeera"
+  },
+  "s-645": {
+   "title": "Finding Desert Angels: Searching for the missing at the US-Mexico border",
+   "source": "Al Jazeera"
+  },
+  "s-646": {
+   "title": "For Libya, the Hormuz crisis can be a trap or an opportunity",
+   "source": "Al Jazeera"
+  },
+  "s-647": {
+   "title": "Strait of Hormuz tensions linger as Iran and US move further from a deal",
+   "source": "Al Jazeera"
+  },
+  "s-648": {
+   "title": "True Crime Reports: The Dosa King’s Deadly Obsession",
+   "source": "Al Jazeera"
+  },
+  "s-649": {
+   "title": "Yemen’s health system could collapse in some areas, minister warns",
+   "source": "Al Jazeera"
+  },
+  "s-650": {
+   "title": "Israel’s Smotrich calls for ‘war’ in West Bank: Rhetoric or real threat?",
+   "source": "Al Jazeera"
+  },
+  "s-651": {
+   "title": "US installation commemorates victims of South African ‘white genocide’",
+   "source": "Al Jazeera"
+  },
+  "s-652": {
+   "title": "Ethiopians celebrate Meskel and call for peace amid fighting",
+   "source": "Al Jazeera"
+  },
+  "s-653": {
+   "title": "‘Better deal’: What’s behind Trump’s rejection of Iran’s truce offer?",
+   "source": "Al Jazeera"
+  },
+  "s-654": {
+   "title": "Swiss voters reject tighter neutrality rules in referendum",
+   "source": "Al Jazeera"
+  },
+  "s-655": {
+   "title": "Political rallies fill Brazil’s streets a week before elections",
+   "source": "Al Jazeera"
+  },
+  "s-656": {
+   "title": "Floods and landslides kill at least 56 people in India, 12 in Nepal",
+   "source": "Al Jazeera"
+  },
+  "s-657": {
+   "title": "‘No role for UNRWA in Gaza’: Does the Board of Peace toe Israeli lines?",
+   "source": "Al Jazeera"
+  },
+  "s-658": {
+   "title": "‘My hands are empty’: Displaced Palestinians struggle to survive",
+   "source": "Al Jazeera"
+  },
+  "s-659": {
+   "title": "Israeli minister Bezalel Smotrich calls for war in occupied West Bank",
+   "source": "Al Jazeera"
+  },
+  "s-660": {
+   "title": "Yemen government forces widen attacks against Houthis: What we know",
+   "source": "Al Jazeera"
+  },
+  "s-661": {
+   "title": "Police arrest man, 34, over hidden cameras found in Hong Kong gym changing rooms",
+   "source": "South China Morning Post"
+  },
+  "s-662": {
+   "title": "Afghanistan says 28 dead fighters came from Pakistan as Islamabad denies ties",
+   "source": "South China Morning Post"
+  },
+  "s-663": {
+   "title": "UK police arrest 5 on terrorism charges near airbase used by US in Iran war",
+   "source": "South China Morning Post"
+  },
+  "s-664": {
+   "title": "Hong Kong police hunt for man who stole HK$10,000 from claw machines using key",
+   "source": "South China Morning Post"
+  },
+  "s-665": {
+   "title": "Giant pandas Ping Ping and Fu Shuang touch down in the US under new loan deal",
+   "source": "South China Morning Post"
+  },
+  "s-666": {
+   "title": "How Beijing is neutralising Washington’s sanctions machine",
+   "source": "South China Morning Post"
+  },
+  "s-667": {
+   "title": "South African police probe mining feud shooting, 27 dead as elections near",
+   "source": "South China Morning Post"
+  },
+  "s-668": {
+   "title": "Keep out: why Greenland is the US military’s new eyes in the Arctic on China",
+   "source": "South China Morning Post"
+  },
+  "s-669": {
+   "title": "GlobalFoundries sees ‘strong’ demand for Chinese optical modules amid data centre boom",
+   "source": "South China Morning Post"
+  },
+  "s-670": {
+   "title": "3 hikers fall ill on Hong Kong trails as temperatures top 33 degrees",
+   "source": "South China Morning Post"
+  },
+  "s-671": {
+   "title": "The hidden risks of using traditional Chinese medicine with Western prescriptions",
+   "source": "South China Morning Post"
+  },
+  "s-672": {
+   "title": "Bangkok flood warnings ‘came too late’ Thais say, worst flood in 15 years",
+   "source": "South China Morning Post"
+  },
+  "s-673": {
+   "title": "The other crop that built China: how millet became foundation for Chinese civilisation",
+   "source": "South China Morning Post"
+  },
+  "s-674": {
+   "title": "Hong Kong men turn to plush ‘bag charms’ for self-expression, comfort",
+   "source": "South China Morning Post"
+  },
+  "s-675": {
+   "title": "Remote section of China’s Great Wall damaged by 20 years of mine waste dumping",
+   "source": "South China Morning Post"
+  },
+  "s-676": {
+   "title": "7 teens swept up in police crackdown on bicycle-related offences in Tseung Kwan O",
+   "source": "South China Morning Post"
+  },
+  "s-677": {
+   "title": "‘Right now, it’s fine’: Trump brushes off questions about summit talk on Taiwan",
+   "source": "South China Morning Post"
+  },
+  "s-678": {
+   "title": "Pope meets victims of sex abuse, urges ‘wise leaders’ as French election looms",
+   "source": "South China Morning Post"
+  },
+  "s-679": {
+   "title": "A Hong Kong professor’s sexist views have been laid bare. That’s good",
+   "source": "South China Morning Post"
+  },
+  "s-680": {
+   "title": "Why Southeast Asia feels relief and caution after the Xi-Trump summit",
+   "source": "South China Morning Post"
+  },
+  "s-681": {
+   "title": "Terror suspects wanted to do ‘big damage’ to air base used by US, Trump says",
+   "source": "Defense News"
+  },
+  "s-682": {
+   "title": "Military aircraft snapshot: 154 globally | eastern_med: 1, western_europe: 6, black_sea: 1",
+   "source": "ADSB Military Tracks"
+  },
+  "s-683": {
+   "title": "Woman charged with stealing from patients and staff at hospitals across Ontario",
+   "source": "BBC World"
+  },
+  "s-684": {
+   "title": "Before BTS and Blackpink, there was Big Bang: Now the Kings of K-pop are back",
+   "source": "BBC World"
+  },
+  "s-685": {
+   "title": "Young people in China are fangirling over a professor who gets their anxiety",
+   "source": "BBC World"
+  },
+  "s-686": {
+   "title": "Travel Advisory [1]: Cyprus",
+   "source": "Travel Advisories"
+  },
+  "s-687": {
+   "title": "Dozens killed in two mass shootings in South Africa",
+   "source": "Al Jazeera"
+  },
+  "s-688": {
+   "title": "Jerusalem Daily: Israeli opposition leaders unite to drive out Netanyahu",
+   "source": "Al Jazeera"
+  },
+  "s-689": {
+   "title": "Northern Ireland protesters block Orange Order march into Catholic area",
+   "source": "Al Jazeera"
+  },
+  "s-690": {
+   "title": "Muslims protest planned demolition of ‘600-year-old’ mosque in India",
+   "source": "Al Jazeera"
+  },
+  "s-691": {
+   "title": "Swiss reject tighter neutrality rules in referendum backed by right-wing populist party",
+   "source": "South China Morning Post"
+  },
+  "s-692": {
+   "title": "Earthquake M5 - 191 km NW of Oula Xiuma, China",
+   "source": "USGS Seismic"
+  },
+  "s-693": {
+   "title": "One month after Nepal’s catastrophic floods, thousands remain missing",
+   "source": "Al Jazeera"
+  },
+  "s-694": {
+   "title": "Giant pandas arrive in Atlanta as part of 10-year US-China agreement",
+   "source": "Al Jazeera"
+  },
+  "s-695": {
+   "title": "‘Iran ready for doomsday war’, FM Araghchi says",
+   "source": "Al Jazeera"
+  },
+  "s-696": {
+   "title": "Mike Waltz: US offered to sell Iran uranium for civilian programme",
+   "source": "Al Jazeera"
+  },
+  "s-697": {
+   "title": "UK Labour Party meets buoyed by Burnham but seeking concrete plans",
+   "source": "South China Morning Post"
+  },
+  "s-698": {
+   "title": "ISR ACTIVITY: 1 reconnaissance aircraft over Western Europe (bomber staging)",
+   "source": "ADSB Military Tracks"
+  },
+  "s-699": {
+   "title": "3 people killed and 4 injured in shooting at Michigan strip club, police say",
+   "source": "South China Morning Post"
+  },
+  "s-700": {
+   "title": "Palestine Action protesters arrested in Liverpool",
+   "source": "Al Jazeera"
+  },
+  "s-701": {
+   "title": "At least 12 dead and dozens missing after a vessel capsizes in DRC",
+   "source": "Al Jazeera"
+  },
+  "s-702": {
+   "title": "South Korea, Ukraine relations sour over North Korean POW transfer",
+   "source": "Al Jazeera"
+  },
+  "s-703": {
+   "title": "Trump expects new Iran talks despite rejecting deal offer",
+   "source": "South China Morning Post"
+  },
+  "s-704": {
+   "title": "Travel Advisory [1]: Antigua and Barbuda",
+   "source": "Travel Advisories"
+  },
+  "s-705": {
+   "title": "Stuck between Israeli military checkpoints",
+   "source": "Al Jazeera"
+  },
+  "s-706": {
+   "title": "Pubs in Ireland refuse to screen Israel match in protest over Gaza genocide",
+   "source": "Al Jazeera"
+  },
+  "s-707": {
+   "title": "Bill Gates says AI without regulation is ‘completely irresponsible’",
+   "source": "Al Jazeera"
+  },
+  "s-708": {
+   "title": "Embattled Serbian president resigns, paving way for early elections",
+   "source": "BBC World"
+  },
+  "s-709": {
+   "title": "Why has Trump rejected Iran’s peace proposal?",
+   "source": "Al Jazeera"
+  },
+  "s-710": {
+   "title": "Israel revokes Dutch diplomats’ status over sanctions on settlements",
+   "source": "Al Jazeera"
+  },
+  "s-711": {
+   "title": "Israel revokes diplomatic status of Dutch diplomats in Ramallah",
+   "source": "South China Morning Post"
+  },
+  "s-712": {
+   "title": "Ethiopian army reportedly recaptures strategic town as fighting spreads",
+   "source": "Al Jazeera"
+  },
+  "s-713": {
+   "title": "Three killed, four injured in shooting at Detroit, Michigan, strip club",
+   "source": "Al Jazeera"
+  },
+  "s-714": {
+   "title": "‘Atrocious’ crime: Cuban official decries possibility of US military action",
+   "source": "Al Jazeera"
+  },
+  "s-715": {
+   "title": "Serbian President Aleksandar Vucic resigns amid prolonged protests",
+   "source": "Al Jazeera"
+  },
+  "s-716": {
+   "title": "Five arrested near UK RAF base over suspected explosives ‘terror’ plot",
+   "source": "Al Jazeera"
+  },
+  "s-717": {
+   "title": "Scott Kennedy on the Xi-Trump summit and US-China instability",
+   "source": "South China Morning Post"
+  },
+  "s-718": {
+   "title": "Shallow seismic: M2.6251904964447 depth=2.26999998092651km at 23 km N of Trout Lake, Washington — explosion likelihood: MODERATE",
+   "source": "Seismic Explosion Detector"
+  },
+  "s-719": {
+   "title": "Shallow seismic: M1.51 depth=1.3km at 5 km NW of Boron, CA — explosion likelihood: MODERATE",
+   "source": "Seismic Explosion Detector"
+  },
+  "s-720": {
+   "title": "CARGO MOVEMENT: 3 military transport aircraft over Persian Gulf / Iran Theater",
+   "source": "ADSB Military Tracks"
+  },
+  "s-721": {
+   "title": "Inside Yemen's front-line city as Houthis battle for control",
+   "source": "BBC World"
+  },
+  "s-722": {
+   "title": "One dead as nor'easter storm pummels New York and New Jersey",
+   "source": "BBC World"
+  },
+  "s-723": {
+   "title": "Why some Indian civil servants become heroes for doing their jobs",
+   "source": "BBC World"
+  },
+  "s-724": {
+   "title": "News media must stay relevant or 'society will struggle', says World News Day organiser",
+   "source": "BBC World"
+  },
+  "s-725": {
+   "title": "Virat Kohli passes 15,000 ODI runs as India beat West Indies",
+   "source": "Al Jazeera"
+  },
+  "s-726": {
+   "title": "‘Still a lockdown’: Deadly floods hit Nepal tourism as peak season begins",
+   "source": "Al Jazeera"
+  },
+  "s-727": {
+   "title": "Russian strikes kill eight, injure dozens across Ukraine",
+   "source": "Al Jazeera"
+  },
+  "s-728": {
+   "title": "Sudanese army impounds dozens of motorcycles in Blue Nile curfew",
+   "source": "Al Jazeera"
+  },
+  "s-729": {
+   "title": "Serbia’s president resigns to run for prime minister",
+   "source": "Al Jazeera"
+  },
+  "s-730": {
+   "title": "14 killed, a dozen missing as Nepal is hit by more floods and landslides",
+   "source": "Al Jazeera"
+  },
+  "s-731": {
+   "title": "Anthropic CEO Amodei to have dinner with Trump at White House",
+   "source": "Al Jazeera"
+  },
+  "s-732": {
+   "title": "Venezuelans rally for opposition leader’s return and presidential elections",
+   "source": "Al Jazeera"
+  },
+  "s-733": {
+   "title": "Palestine Action protesters arrested outside UK Labour Party conference",
+   "source": "Al Jazeera"
+  },
+  "s-734": {
+   "title": "Ireland beats Israel 3-0 wearing black armbands to support Gaza",
+   "source": "Al Jazeera"
+  },
+  "s-735": {
+   "title": "UK Foreign Secretary confronted by activists over Palestine Action ban",
+   "source": "Al Jazeera"
+  },
+  "s-736": {
+   "title": "Ben-Gvir releases video threatening to kill senior Hamas figure in jail",
+   "source": "Al Jazeera"
+  },
+  "s-737": {
+   "title": "Refugees in South Africa fear new attacks as September 30 deadline looms",
+   "source": "Al Jazeera"
+  },
+  "s-738": {
+   "title": "Iran war live: Tehran open to ‘real diplomacy’, ready for ‘apocalyptic war’",
+   "source": "Al Jazeera"
+  },
+  "s-739": {
+   "title": "Pope pledges action on clergy child abuse in meeting with French survivors",
+   "source": "Al Jazeera"
+  },
+  "s-740": {
+   "title": "Man City’s 115 Charges — The Scandal, The Escape, and Pep’s Own Past",
+   "source": "Al Jazeera"
+  },
+  "s-741": {
+   "title": "Powerful storm floods US Northeast, causes power outages",
+   "source": "Al Jazeera"
+  },
+  "s-742": {
+   "title": "Ireland defeats Israel in controversial UEFA Nations League match",
+   "source": "Al Jazeera"
+  },
+  "s-743": {
+   "title": "Alleged rape on campus sparks violent protest at Indian university",
+   "source": "Al Jazeera"
+  },
+  "s-744": {
+   "title": "As China mulls how to make open-weight AI less dangerous, report proposes 6-stage process",
+   "source": "South China Morning Post"
+  },
+  "s-745": {
+   "title": "Republicans pour cash into dozens of US House races previously seen as ‘safe’",
+   "source": "South China Morning Post"
+  },
+  "s-746": {
+   "title": "Inside Malaysia’s plan to steal China’s durian market from Thailand",
+   "source": "South China Morning Post"
+  },
+  "s-747": {
+   "title": "Echoing Putin, Serbia’s president resigns in bid to become prime minister",
+   "source": "South China Morning Post"
+  },
+  "s-748": {
+   "title": "Cathay Pacific’s journey from single post-war plane to aviation powerhouse – SCMP archive",
+   "source": "South China Morning Post"
+  },
+  "s-749": {
+   "title": "Xiaomi-backed robotics chip designer clears hearing, eyes US$100m Hong Kong IPO: sources",
+   "source": "South China Morning Post"
+  },
+  "s-750": {
+   "title": "Avalanche at Nepal’s Himlung mountain leaves 2 workers dead, 14 missing",
+   "source": "South China Morning Post"
+  },
+  "s-751": {
+   "title": "Cathay extends Dubai, Riyadh flight suspension through January as Iran war drags on",
+   "source": "South China Morning Post"
+  },
+  "s-752": {
+   "title": "Malaysian police consider sedition charges for ex-Negeri Sembilan officials",
+   "source": "South China Morning Post"
+  },
+  "s-753": {
+   "title": "Xi–Trump body language, Thailand’s tourist backlash: 5 weekend reads you missed",
+   "source": "South China Morning Post"
+  },
+  "s-754": {
+   "title": "Trump asked Xi if Beijing wanted US weapons: a joke, a gambit or something more?",
+   "source": "South China Morning Post"
+  },
+  "s-755": {
+   "title": "China lights up ‘super microscope’ hopes with world-leading electron gun beam",
+   "source": "South China Morning Post"
+  },
+  "s-756": {
+   "title": "17 injured as minibus hits truck on Hong Kong highway during morning rush",
+   "source": "South China Morning Post"
+  },
+  "s-757": {
+   "title": "High Court discharges jury in Abby Choi murder trial over sick juror, causing delay",
+   "source": "South China Morning Post"
+  },
+  "s-758": {
+   "title": "Fireworks, free rides and dining deals: how to celebrate National Day in Hong Kong",
+   "source": "South China Morning Post"
+  },
+  "s-759": {
+   "title": "Siti Hasmah, wife of Malaysia’s Mahathir Mohamad, dies aged 100",
+   "source": "South China Morning Post"
+  },
+  "s-760": {
+   "title": "CDL’s Kwek clan looks to invest US$3.9b in Singapore, China, Japan to raise confidence",
+   "source": "South China Morning Post"
+  },
+  "s-761": {
+   "title": "Hong Kong to close deals with firms from strategic sectors in months: Paul Chan",
+   "source": "South China Morning Post"
+  },
+  "s-762": {
+   "title": "‘Everyone can attend university’: China unveils sweeping higher education reform",
+   "source": "South China Morning Post"
+  },
+  "s-763": {
+   "title": "Elderly resident sparks fury in China after cutting worker’s safety rope to hang laundry",
+   "source": "South China Morning Post"
+  },
+  "s-764": {
+   "title": "440,000 mainland arrivals over Mid-Autumn weekend, hotels brace for National Day",
+   "source": "South China Morning Post"
+  },
+  "s-765": {
+   "title": "Businessman Jason Poon, wife, granted bail over alleged HK$6 million loan fraud",
+   "source": "South China Morning Post"
+  },
+  "s-766": {
+   "title": "Internet disruption: IR - 3 anomalous web tests",
+   "source": "OONI Internet Monitor"
+  },
+  "s-767": {
+   "title": "Internet disruption: RU - 26 anomalous web tests",
+   "source": "OONI Internet Monitor"
+  },
+  "s-768": {
+   "title": "Internet disruption: VE - 9 anomalous web tests",
+   "source": "OONI Internet Monitor"
+  },
+  "s-769": {
+   "title": "US, China list goods recommended for tariff cuts following Trump-Xi summit",
+   "source": "Al Jazeera"
+  },
+  "s-770": {
+   "title": "Serbia’s snap election: Can Vucic outmanoeuvre the student revolt?",
+   "source": "Al Jazeera"
+  },
+  "s-771": {
+   "title": "Hong Kong authorities investigate yacht that allegedly charged at boat with 6 rowers",
+   "source": "South China Morning Post"
+  },
+  "s-772": {
+   "title": "Singaporean TV actors charged over death penalty protests",
+   "source": "South China Morning Post"
+  },
+  "s-773": {
+   "title": "China’s gas turbine makers aim to challenge global giants. Is Malaysia the start?",
+   "source": "South China Morning Post"
+  },
+  "s-774": {
+   "title": "Shallow seismic: M2.1 depth=0.9km at 25 km SE of Chickaloon, Alaska — explosion likelihood: HIGH",
+   "source": "Seismic Explosion Detector"
+  },
+  "s-775": {
+   "title": "Southeast Asia’s falling literacy: can cash and gamification fix it?",
+   "source": "South China Morning Post"
+  },
+  "s-776": {
+   "title": "Earthquake M5.4 - 231 km WSW of Port McNeill, Canada",
+   "source": "USGS Seismic"
+  },
+  "s-777": {
+   "title": "Rescuers search for 12 missing after Nepal avalanche kills two",
+   "source": "Al Jazeera"
+  },
+  "s-778": {
+   "title": "Speed to Fielding Is Not Speed to Combat Power",
+   "source": "War on the Rocks"
+  },
+  "s-779": {
+   "title": "CARGO MOVEMENT: 14 military transport aircraft over Persian Gulf / Iran Theater",
+   "source": "ADSB Military Tracks"
+  },
+  "s-780": {
+   "title": "Japan denies ‘militarisation’ after Russia opposes permanent UN council seat",
+   "source": "South China Morning Post"
+  },
+  "s-781": {
+   "title": "CARGO MOVEMENT: 3 military transport aircraft over Eastern Mediterranean",
+   "source": "ADSB Military Tracks"
+  },
+  "s-782": {
+   "title": "MILITARY CONCENTRATION: 6 aircraft over Eastern Mediterranean",
+   "source": "ADSB Military Tracks"
+  },
+  "s-783": {
+   "title": "SURGE: taiwan_strait has 1 aircraft vs 0 average — unusual concentration",
+   "source": "ADSB Military Tracks"
+  },
+  "s-784": {
+   "title": "Collective Defense in an Era of Tokens and Data Links",
+   "source": "War on the Rocks"
+  },
+  "s-785": {
+   "title": "China’s Nio and Geely deepen commitment to EV battery swapping tech in stake sale",
+   "source": "South China Morning Post"
+  },
+  "s-786": {
+   "title": "Second Thomas Shoal stand-off sparks sharp exchange between US, China embassies",
+   "source": "South China Morning Post"
+  },
+  "s-787": {
+   "title": "Israel’s Uvision, Estonia’s Lendurai to integrate systems for NATO military",
+   "source": "Breaking Defense"
+  },
+  "s-788": {
+   "title": "Travel Advisory [1]: Grenada",
+   "source": "Travel Advisories"
+  },
+  "s-789": {
+   "title": "CARGO MOVEMENT: 11 military transport aircraft over Western Europe (bomber staging)",
+   "source": "ADSB Military Tracks"
+  },
+  "s-790": {
+   "title": "Iran’s children return to school under the shadow of war",
+   "source": "Al Jazeera"
+  },
+  "s-791": {
+   "title": "France’s far-right National Rally gains ground in Senate vote",
+   "source": "Al Jazeera"
+  },
+  "s-792": {
+   "title": "Belgium vs France – Nations League: Team line-ups, head-to-head, Mbappe",
+   "source": "Al Jazeera"
+  },
+  "s-793": {
+   "title": "Trump-Xi summit: What wasn't said might matter the most",
+   "source": "BBC World"
+  },
+  "s-794": {
+   "title": "Two bodies found after avalanche hits Himalayan climbing group",
+   "source": "BBC World"
+  },
+  "s-795": {
+   "title": "Watch: Madonna and Taylor Swift win big at the MTV VMAs",
+   "source": "BBC World"
+  },
+  "s-796": {
+   "title": "South Korea’s POW row with Ukraine puts ties and aid at risk",
+   "source": "South China Morning Post"
+  },
+  "s-797": {
+   "title": "ByteDance grabs one-fifth of China’s data centre capacity as AI drives infrastructure boom",
+   "source": "South China Morning Post"
+  },
+  "s-798": {
+   "title": "‘Terror’ incident near RAF base used for Iran war: What we know",
+   "source": "Al Jazeera"
+  },
+  "s-799": {
+   "title": "Hong Kong cracks down on tourists abusing visas to run one-stop shop services",
+   "source": "South China Morning Post"
+  },
+  "s-800": {
+   "title": "China resuming US coal imports among thin list of summit outcomes",
+   "source": "South China Morning Post"
+  },
+  "s-801": {
+   "title": "Internet disruption: IQ - 2 anomalous web tests",
+   "source": "OONI Internet Monitor"
+  },
+  "s-802": {
+   "title": "TANKER ACTIVITY: 1 tanker(s) over Black Sea — active refueling operations",
+   "source": "ADSB Military Tracks"
+  },
+  "s-803": {
+   "title": "Oil prices surge after Trump rejects Iran’s plan to reopen Strait of Hormuz",
+   "source": "Al Jazeera"
+  },
+  "s-804": {
+   "title": "Azeez Al-Shaair honours slain Palestinian sisters despite NFL sanctions",
+   "source": "Al Jazeera"
+  },
+  "s-805": {
+   "title": "Mapping Israel’s 300 checkpoints: Where they are and how they work",
+   "source": "Al Jazeera"
+  },
+  "s-806": {
+   "title": "Hong Kong customs arrests 2, seizes HK$290,000 of ‘slimming injections’ from Japan",
+   "source": "South China Morning Post"
+  },
+  "s-807": {
+   "title": "Military aircraft snapshot: 233 globally | persian_gulf: 7, western_europe: 63, black_sea: 1",
+   "source": "ADSB Military Tracks"
+  },
+  "s-808": {
+   "title": "ISR ACTIVITY: 2 reconnaissance aircraft over Western Europe (bomber staging)",
+   "source": "ADSB Military Tracks"
+  },
+  "s-809": {
+   "title": "MILITARY CONCENTRATION: 63 aircraft over Western Europe (bomber staging)",
+   "source": "ADSB Military Tracks"
+  },
+  "s-810": {
+   "title": "Shallow seismic: M1.51 depth=1.97000002861023km at 10 km NW of The Geysers, CA — explosion likelihood: MODERATE",
+   "source": "Seismic Explosion Detector"
+  },
+  "s-811": {
+   "title": "Shallow seismic: M2.6 depth=5km at 15 km E of Socorro, New Mexico — explosion likelihood: MODERATE",
+   "source": "Seismic Explosion Detector"
+  },
+  "s-812": {
+   "title": "DEFENSE SECTOR DROP: 7 stocks moving -2.4% avg",
+   "source": "Defense Stock Monitor"
+  },
+  "s-813": {
+   "title": "DEFENSE STOCK DROP: General Dynamics (GD) -4.63% ($336.72)",
+   "source": "Defense Stock Monitor"
+  },
+  "s-814": {
+   "title": "DEFENSE STOCK DROP: L3Harris (LHX) -3.88% ($237.69)",
+   "source": "Defense Stock Monitor"
+  },
+  "s-815": {
+   "title": "DEFENSE STOCK DROP: Huntington Ingalls (HII) -3.24% ($264.02)",
+   "source": "Defense Stock Monitor"
+  },
+  "s-816": {
+   "title": "DEFENSE STOCK SURGE: Palantir (PLTR) +6.77% ($189.67)",
+   "source": "Defense Stock Monitor"
+  },
+  "s-817": {
+   "title": "Domain OK: president.ir (Iranian Presidency, IR)",
+   "source": "DNS Health Monitor"
+  },
+  "s-818": {
+   "title": "Domain OK: leader.ir (Supreme Leader office, IR)",
+   "source": "DNS Health Monitor"
+  },
+  "s-819": {
+   "title": "Domain OK: dolat.ir (Iranian government portal, IR)",
+   "source": "DNS Health Monitor"
+  },
+  "s-820": {
+   "title": "Domain OK: kremlin.ru (Kremlin, RU)",
+   "source": "DNS Health Monitor"
+  },
+  "s-821": {
+   "title": "Domain OK: mod.gov.cn (China MoD, CN)",
+   "source": "DNS Health Monitor"
+  },
+  "s-822": {
+   "title": "MILITARY CONCENTRATION: 6 aircraft over Persian Gulf / Iran Theater",
+   "source": "ADSB Military Tracks"
+  },
+  "s-823": {
+   "title": "COMMODITY SPIKE: WTI Crude Oil +3.66% ($95.53)",
+   "source": "Commodity SIGINT"
+  },
+  "s-824": {
+   "title": "India’s Supreme Court urges accountability over rapes",
+   "source": "South China Morning Post"
+  },
+  "s-825": {
+   "title": "How Mary Jane Veloso’s case exposes gaps in Filipino migrant protection",
+   "source": "South China Morning Post"
+  },
+  "s-826": {
+   "title": "Cable endpoint: EG — 9972 IPv4 prefixes, 72 ASNs visible",
+   "source": "Submarine Cable Monitor"
+  },
+  "s-827": {
+   "title": "BGP status: AS12880 (DCI (Iran Telecom), IR) — normal",
+   "source": "BGP Infrastructure Monitor"
+  },
+  "s-828": {
+   "title": "TANKER ACTIVITY: 5 tanker(s) over Western Europe (bomber staging) — active refueling operations",
+   "source": "ADSB Military Tracks"
+  },
+  "s-829": {
+   "title": "Travel Advisory [1]: Suriname",
+   "source": "Travel Advisories"
+  },
+  "s-830": {
+   "title": "Travel Advisory [2]: Mainland China, Hong Kong & Macau",
+   "source": "Travel Advisories"
+  },
+  "s-831": {
+   "title": "Travel Advisory [2]: Serbia",
+   "source": "Travel Advisories"
+  },
+  "s-832": {
+   "title": "Travel Advisory [3]: Ethiopia",
+   "source": "Travel Advisories"
+  },
+  "s-833": {
+   "title": "FLIGHT AVOIDANCE: Eastern Mediterranean / Lebanon-Syria — only 19 commercial flights (normal: 20+)",
+   "source": "Flight Route Monitor"
+  },
+  "s-834": {
+   "title": "CARGO MOVEMENT: 17 military transport aircraft over Western Europe (bomber staging)",
+   "source": "ADSB Military Tracks"
+  },
+  "s-835": {
+   "title": "ISR ACTIVITY: 1 reconnaissance aircraft over Western Europe (bomber staging)",
+   "source": "ADSB Military Tracks"
+  },
+  "s-836": {
+   "title": "Al Jazeera reports from near front line in Ethiopia’s Afar region",
+   "source": "Al Jazeera"
+  },
+  "s-837": {
+   "title": "China professor sparks debate by claiming one-third of youth are ‘unsuitable for marriage’",
+   "source": "South China Morning Post"
+  },
+  "s-838": {
+   "title": "SURGE: black_sea has 1 aircraft vs 0 average — unusual concentration",
+   "source": "ADSB Military Tracks"
+  },
+  "s-839": {
+   "title": "Palestinians denounce Israeli minister Ben-Gvir’s threats against prisoner",
+   "source": "Al Jazeera"
+  },
+  "s-840": {
+   "title": "Airspace activity: Black Sea — 63 commercial, 1 military aircraft",
+   "source": "Flight Route Monitor"
+  },
+  "s-841": {
+   "title": "Earthquake M5.1 - South Sandwich Islands region",
+   "source": "USGS Seismic"
+  },
+  "s-842": {
+   "title": "Earthquake M5 - 52 km NNW of Ruteng, Indonesia",
+   "source": "USGS Seismic"
+  },
+  "s-843": {
+   "title": "Earthquake M5.6 - 74 km ESE of Kokopo, Papua New Guinea",
+   "source": "USGS Seismic"
+  },
+  "s-844": {
+   "title": "Thermal anomaly detected: 34.8637,44.0224 (iran)",
+   "source": "NASA FIRMS"
+  },
+  "s-845": {
+   "title": "UN Sanctions: LEODOMIR MUGARAGU",
+   "source": "UN Consolidated"
+  },
+  "s-846": {
+   "title": "UN Sanctions: PACIFIQUE NTAWUNGUKA",
+   "source": "UN Consolidated"
+  },
+  "s-847": {
+   "title": "UN Sanctions: MOHAMED ALI NKALUBO",
+   "source": "UN Consolidated"
+  },
+  "s-848": {
+   "title": "UN Sanctions: WILLIAM AMURI YAKUTUMBA",
+   "source": "UN Consolidated"
+  },
+  "s-849": {
+   "title": "Sweden’s Magdalena Andersson ends government-formation talks with no result",
+   "source": "South China Morning Post"
+  },
+  "s-850": {
+   "title": "Hong Kong finds gold-trading leader in former exchange executive Bryan Chan",
+   "source": "South China Morning Post"
+  },
+  "s-851": {
+   "title": "Ethiopia accuses Sudan, Egypt of backing Tigray rebels as fighting rages",
+   "source": "Al Jazeera"
+  },
+  "s-852": {
+   "title": "China deploys advanced WZ-7 drone for first time near Scarborough Shoal",
+   "source": "South China Morning Post"
+  },
+  "s-853": {
+   "title": "Internet disruption: UA - 1 anomalous web tests",
+   "source": "OONI Internet Monitor"
+  },
+  "s-854": {
+   "title": "Thai man’s jet ski stunt fuels anger in ‘unequal’ Bangkok as poor hit hardest by floods",
+   "source": "South China Morning Post"
+  },
+  "s-855": {
+   "title": "UK investigates if arrests near US-run base prevented Iran-linked attack",
+   "source": "South China Morning Post"
+  },
+  "s-856": {
+   "title": "UK’s Healey puts defense in focus for reindustrialization push",
+   "source": "Defense News"
+  },
+  "s-857": {
+   "title": "Chinese chip foundry CanSemi’s IPO oversubscribed 2,360 times as investors chase AI boom",
+   "source": "South China Morning Post"
+  },
+  "s-858": {
+   "title": "Travel Advisory [2]: Algeria",
+   "source": "Travel Advisories"
+  },
+  "s-859": {
+   "title": "SURGE: persian_gulf has 1 aircraft vs 0 average — unusual concentration",
+   "source": "ADSB Military Tracks"
+  },
+  "s-860": {
+   "title": "Mexico's Pacific coast braces for Hurricane Polo",
+   "source": "BBC World"
+  },
+  "s-861": {
+   "title": "Hong Kong office expansion lags hiring push as tenants optimise current space: Colliers",
+   "source": "South China Morning Post"
+  },
+  "s-862": {
+   "title": "Indian university suspends classes amid violent protests over alleged rape",
+   "source": "Al Jazeera"
+  },
+  "s-863": {
+   "title": "Israeli football fans chant military slogans after defeat to Ireland",
+   "source": "Al Jazeera"
+  },
+  "s-864": {
+   "title": "DOMAIN DOWN: farsnews.ir (Fars News (IRGC-linked), IR) — unreachable",
+   "source": "DNS Health Monitor"
+  },
+  "s-865": {
+   "title": "TANKER ACTIVITY: 1 tanker(s) over Eastern Mediterranean — active refueling operations",
+   "source": "ADSB Military Tracks"
+  },
+  "s-866": {
+   "title": "SURGE: eastern_med has 2 aircraft vs 1 average — unusual concentration",
+   "source": "ADSB Military Tracks"
+  },
+  "s-867": {
+   "title": "Africa is not responsible for climate crisis: Activist Vanessa Nakate",
+   "source": "Al Jazeera"
+  },
+  "s-868": {
+   "title": "Israeli fans direct monkey chants and military slogans at Ireland’s players",
+   "source": "Al Jazeera"
+  },
+  "s-869": {
+   "title": "Fighting between rival forces in Somalia’s Baidoa",
+   "source": "Al Jazeera"
+  },
+  "s-870": {
+   "title": "AIIB plans to double financing by 2030. Can it bridge Asia’s infrastructure gap?",
+   "source": "South China Morning Post"
+  },
+  "s-871": {
+   "title": "Why South Korea is demanding an apology from Ukraine over North Korean PoWs",
+   "source": "Al Jazeera"
+  },
+  "s-872": {
+   "title": "Child among three killed off French coast in Channel crossing attempt",
+   "source": "Al Jazeera"
+  },
+  "s-873": {
+   "title": "Shallow seismic: M2.09 depth=2.21km at 3 km E of Enola, Arkansas — explosion likelihood: MODERATE",
+   "source": "Seismic Explosion Detector"
+  },
+  "s-874": {
+   "title": "ISR ACTIVITY: 4 reconnaissance aircraft over Western Europe (bomber staging)",
+   "source": "ADSB Military Tracks"
+  },
+  "s-875": {
+   "title": "China is no longer just the world’s factory. It’s the HQ",
+   "source": "South China Morning Post"
+  },
+  "s-876": {
+   "title": "Hong Kong launches one-month consultation on arbitration law reforms",
+   "source": "South China Morning Post"
+  },
+  "s-877": {
+   "title": "Police clash with protesters over mosque demolitions in India",
+   "source": "Al Jazeera"
+  },
+  "s-878": {
+   "title": "As private investment in defense increases, some bottlenecks in funding: AIA-Bain",
+   "source": "Breaking Defense"
+  },
+  "s-879": {
+   "title": "Plan for controversial Sydney data centre scrapped after push-back",
+   "source": "BBC World"
+  },
+  "s-880": {
+   "title": "Chinese commercial reactor achieves nuclear fusion with clean hydrogen-boron fuel",
+   "source": "South China Morning Post"
+  },
+  "s-881": {
+   "title": "Thai police arrest jet skier after joyride through flooded Bangkok streets",
+   "source": "Al Jazeera"
+  },
+  "s-882": {
+   "title": "Hong Kong checkpoints to handle 7.44 million passenger trips for National Day break",
+   "source": "South China Morning Post"
+  },
+  "s-883": {
+   "title": "Hong Kong wages rise 3.4% in June, with government expecting further gains",
+   "source": "South China Morning Post"
+  },
+  "s-884": {
+   "title": "At least 21 Hong Kong-Bangkok flights delayed amid flooding in Thai capital",
+   "source": "South China Morning Post"
+  },
+  "s-885": {
+   "title": "DEFENSE STOCK DROP: RTX (Raytheon) (RTX) -3.44% ($187.66)",
+   "source": "Defense Stock Monitor"
+  },
+  "s-886": {
+   "title": "DEFENSE STOCK DROP: Northrop Grumman (NOC) -3.4% ($508.75)",
+   "source": "Defense Stock Monitor"
+  },
+  "s-887": {
+   "title": "DEFENSE STOCK DROP: Boeing (BA) -4.66% ($191.77)",
+   "source": "Defense Stock Monitor"
+  },
+  "s-888": {
+   "title": "Xi Jinping demands ‘safer’ China as Communist Party prepares for leadership reshuffle",
+   "source": "South China Morning Post"
+  },
+  "s-889": {
+   "title": "Strong AI demand prompts Hong Kong trade body to raise exports growth forecast",
+   "source": "South China Morning Post"
+  },
+  "s-890": {
+   "title": "ISR ACTIVITY: 1 reconnaissance aircraft over Western Europe (bomber staging)",
+   "source": "ADSB Military Tracks"
+  },
+  "s-891": {
+   "title": "Bandung: The Meeting That Terrified the Superpowers | Al Jazeera Originals",
+   "source": "Al Jazeera"
+  },
+  "s-892": {
+   "title": "UN commemoration of Durban Declaration: What’s on agenda, who will attend?",
+   "source": "Al Jazeera"
+  },
+  "s-893": {
+   "title": "We need to talk about Bandung",
+   "source": "Al Jazeera"
+  },
+  "s-894": {
+   "title": "Sri Lanka’s Rumesh Pathirage wins Asian Games javelin gold",
+   "source": "Al Jazeera"
+  },
+  "s-895": {
+   "title": "Heavy rain triggers landslide in Nepal’s Mustang District",
+   "source": "Al Jazeera"
+  },
+  "s-896": {
+   "title": "Child and 2 women ‘crushed to death’ during France to UK sea crossing",
+   "source": "South China Morning Post"
+  },
+  "s-897": {
+   "title": "Airspace activity: Persian Gulf / Strait of Hormuz — 87 commercial, 1 military aircraft",
+   "source": "Flight Route Monitor"
+  },
+  "s-898": {
+   "title": "China targets AI and frontier tech in newly unveiled innovation blueprint",
+   "source": "South China Morning Post"
+  },
+  "s-899": {
+   "title": "DEFENSE STOCK DROP: Kratos Defense (KTOS) -8.21% ($44.6)",
+   "source": "Defense Stock Monitor"
+  },
+  "s-900": {
+   "title": "Cattle to feed: Why a global meat crisis is looming",
+   "source": "Al Jazeera"
+  },
+  "s-901": {
+   "title": "Iraq looks for oil export alternatives to the troubled Strait of Hormuz",
+   "source": "Al Jazeera"
+  },
+  "s-902": {
+   "title": "COMMODITY DROP: Gold -3.27% ($4177.3)",
+   "source": "Commodity SIGINT"
+  },
+  "s-903": {
+   "title": "DEFENSE STOCK DROP: AeroVironment (AVAV) -6.37% ($150.65)",
+   "source": "Defense Stock Monitor"
+  },
+  "s-904": {
+   "title": "Congo politician beaten to death after urging Ebola prevention on radio, his party says",
+   "source": "South China Morning Post"
+  },
+  "s-905": {
+   "title": "Spain vs Croatia: UEFA Nations League – Yamal, Modric, teams, form",
+   "source": "Al Jazeera"
+  },
+  "s-906": {
+   "title": "Trump made the right decision to reject Iran’s offer",
+   "source": "Al Jazeera"
+  },
+  "s-907": {
+   "title": "Somali army clashes with local forces for control of Baidoa",
+   "source": "Al Jazeera"
+  },
+  "s-908": {
+   "title": "Iran touts Hormuz attacks as oil flows increase despite tensions",
+   "source": "Al Jazeera"
+  },
+  "s-909": {
+   "title": "Photos: Russian drone strikes pound civilian targets across Kyiv",
+   "source": "Al Jazeera"
+  },
+  "s-910": {
+   "title": "UK police release suspects on bail after RAF arrests, investigation ongoing",
+   "source": "Al Jazeera"
+  },
+  "s-911": {
+   "title": "Paris court finds Swiftair guilty over 2014 Mali crash that killed 116",
+   "source": "Al Jazeera"
+  },
+  "s-912": {
+   "title": "Russia strike sets National Academy of Sciences of Ukraine ablaze",
+   "source": "Al Jazeera"
+  },
+  "s-913": {
+   "title": "168 hours on the dance floor: Nigerian dancer chases Guinness World Record",
+   "source": "Al Jazeera"
+  },
+  "s-914": {
+   "title": "Arming an adversary: Why Trump’s offer to sell China weapons belies US policy",
+   "source": "Al Jazeera"
+  },
+  "s-915": {
+   "title": "South Korea suspects North Korean mines behind DMZ blast",
+   "source": "Al Jazeera"
+  },
+  "s-916": {
+   "title": "Migrant children protest after police clear beach camp in Ceuta",
+   "source": "Al Jazeera"
+  },
+  "s-917": {
+   "title": "French police fire tear gas at migrants on beach",
+   "source": "Al Jazeera"
+  },
+  "s-918": {
+   "title": "Ebola cases surpass 8,000 as DRC struggles to control outbreak",
+   "source": "Al Jazeera"
+  },
+  "s-919": {
+   "title": "Jerusalem Daily: Israeli incursions at Al-Aqsa Mosque",
+   "source": "Al Jazeera"
+  },
+  "s-920": {
+   "title": "Florida authorities ask court to block OpenAI’s ChatGPT over safety issues",
+   "source": "Al Jazeera"
+  },
+  "s-921": {
+   "title": "LIVE: Belgium vs France – Nations League",
+   "source": "Al Jazeera"
+  },
+  "s-922": {
+   "title": "At least 33 killed after Myanmar military air strike hits market",
+   "source": "Al Jazeera"
+  },
+  "s-923": {
+   "title": "UK pledges tougher stance on Israeli actions in Gaza, West Bank",
+   "source": "Al Jazeera"
+  },
+  "s-924": {
+   "title": "Iran denies link to attack on airbase as UK minister warns of ‘proxies’",
+   "source": "Al Jazeera"
+  },
+  "s-925": {
+   "title": "Seoul summons Ukraine envoy over North Korean prisoner-of-war row",
+   "source": "BBC World"
+  },
+  "s-926": {
+   "title": "Twelve women have been killed in one part of South Africa since July. Here's what we know so far",
+   "source": "BBC World"
+  },
+  "s-927": {
+   "title": "Iran court upholds lashes sentence for singer who performed without hijab",
+   "source": "BBC World"
+  },
+  "s-928": {
+   "title": "Nigerian attempts to break world record by dancing non-stop for seven days",
+   "source": "BBC World"
+  },
+  "s-929": {
+   "title": "Stand-up comic set for release after being convicted of insulting Erdoğan",
+   "source": "BBC World"
+  },
+  "s-930": {
+   "title": "US prosecutors reopen case of alleged gang rape at Cornell University",
+   "source": "BBC World"
+  },
+  "s-931": {
+   "title": "Remains of dozens of suspected kidnap victims found in Nigerian forests",
+   "source": "BBC World"
+  },
+  "s-932": {
+   "title": "US to grant sanctions waiver for flights between Iran and Iraq’s Najaf, source says",
+   "source": "South China Morning Post"
+  },
+  "s-933": {
+   "title": "Trump announcing new Iowa steel plant the White House says will be biggest in US",
+   "source": "South China Morning Post"
+  },
+  "s-934": {
+   "title": "FBI deputy chief Andrew Bailey to resign after a little more than a year with agency",
+   "source": "South China Morning Post"
+  },
+  "s-935": {
+   "title": "Mexico could see life-threatening floods due to Hurricane Polo",
+   "source": "South China Morning Post"
+  },
+  "s-936": {
+   "title": "US police report raises more questions about Chinese researcher Wang Danhao’s death",
+   "source": "South China Morning Post"
+  },
+  "s-937": {
+   "title": "SpaceX’s Starship rocket reaches orbit for first time",
+   "source": "South China Morning Post"
+  },
+  "s-938": {
+   "title": "Hero’s burial for late Hong Kong constable paralysed for 21 years after attack",
+   "source": "South China Morning Post"
+  },
+  "s-939": {
+   "title": "VW, Gotion ramp up battery production in Europe, Morocco amid rising EV demand",
+   "source": "South China Morning Post"
+  },
+  "s-940": {
+   "title": "Russia raises 2027 military spending by 27%, budget documents show",
+   "source": "Defense News"
+  },
+  "s-941": {
+   "title": "EU nails down five defense priority areas to channel common spending",
+   "source": "Defense News"
+  },
+  "s-942": {
+   "title": "UK to gather defense CEOs for ‘closed-door’ Russian security briefing",
+   "source": "Breaking Defense"
+  },
+  "s-943": {
+   "title": "If Washington is going to be a shareholder, it should act like one",
+   "source": "Breaking Defense"
+  },
+  "s-944": {
+   "title": "CARGO MOVEMENT: 4 military transport aircraft over Western Europe (bomber staging)",
+   "source": "ADSB Military Tracks"
+  },
+  "s-945": {
+   "title": "Shallow seismic: M2 depth=2.6km at 86 km NNW of Karluk, Alaska — explosion likelihood: MODERATE",
+   "source": "Seismic Explosion Detector"
+  },
+  "s-946": {
+   "title": "DEFENSE STOCK DROP: Lockheed Martin (LMT) -3.15% ($518.56)",
+   "source": "Defense Stock Monitor"
+  },
+  "s-947": {
+   "title": "Putin signs decree adding 15,500 troops to Russian army",
+   "source": "South China Morning Post"
+  },
+  "s-948": {
+   "title": "Why the Week’s Most Important Story Went Unwritten",
+   "source": "War on the Rocks"
+  },
+  "s-949": {
+   "title": "DOMAIN DOWN: irna.ir (IRNA state news agency, IR) — unreachable",
+   "source": "DNS Health Monitor"
+  },
+  "s-950": {
+   "title": "Earthquake M5.4 - north of Svalbard",
+   "source": "USGS Seismic"
+  },
+  "s-951": {
+   "title": "American and six Ukrainians released by India after six months in jail",
+   "source": "Al Jazeera"
+  },
+  "s-952": {
+   "title": "Flights between Iraq’s Najaf and Iran resumed as Tehran protests US curbs",
+   "source": "Al Jazeera"
+  },
+  "s-953": {
+   "title": "ISR ACTIVITY: 1 reconnaissance aircraft over Western Europe (bomber staging)",
+   "source": "ADSB Military Tracks"
+  },
+  "s-954": {
+   "title": "Military aircraft snapshot: 365 globally | eastern_med: 3, western_europe: 9",
+   "source": "ADSB Military Tracks"
+  },
+  "s-955": {
+   "title": "French far-right’s Bardella denies alleged antisemitic comments, files defamation lawsuit",
+   "source": "South China Morning Post"
+  },
+  "s-956": {
+   "title": "NFL asks US Homeland Security to remove video with former star player",
+   "source": "Al Jazeera"
+  },
+  "s-957": {
+   "title": "Italian court convicts three Egyptian agents for kidnap of Giulio Regeni",
+   "source": "Al Jazeera"
+  },
+  "s-958": {
+   "title": "UAE confirms Netanyahu visit to Abu Dhabi",
+   "source": "Al Jazeera"
+  },
+  "s-959": {
+   "title": "How can the UK’s Labour Party rebuild voter trust?",
+   "source": "Al Jazeera"
+  },
+  "s-960": {
+   "title": "Myanmar army air strike kills dozens in Rakhine state",
+   "source": "Al Jazeera"
+  },
+  "s-961": {
+   "title": "JPMorgan’s Jamie Dimon on how growth can untangle US-China strife, thorny global issues",
+   "source": "South China Morning Post"
+  },
+  "s-962": {
+   "title": "Apple ordered to pay $5.7bn in patent infringement case",
+   "source": "Al Jazeera"
+  },
+  "s-963": {
+   "title": "Trump announces $15bn steel mill project in Iowa before US midterms",
+   "source": "Al Jazeera"
+  },
+  "s-964": {
+   "title": "Nepal hit by deadly floods, landslides, and avalanche",
+   "source": "Al Jazeera"
+  },
+  "s-965": {
+   "title": "US revokes visas from Latin American officials and families over accusations of corruption",
+   "source": "South China Morning Post"
+  },
+  "s-966": {
+   "title": "‘Friendship pandas’ arrive in Atlanta, marking US-China relations moment",
+   "source": "Al Jazeera"
+  },
+  "s-967": {
+   "title": "French far-right leader Bardella refutes anti-Semitism allegations",
+   "source": "Al Jazeera"
+  },
+  "s-968": {
+   "title": "South Sudan calls for sanctions to be lifted at UNGA",
+   "source": "Al Jazeera"
+  },
+  "s-969": {
+   "title": "Slovenia’s U-turn towards Israel",
+   "source": "Al Jazeera"
+  },
+  "s-970": {
+   "title": "Gaza’s young inventors build robots with what they have",
+   "source": "Al Jazeera"
+  },
+  "s-971": {
+   "title": "Shallow seismic: M1.75 depth=3.9km at 11 km SSE of Corona, CA — explosion likelihood: MODERATE",
+   "source": "Seismic Explosion Detector"
+  },
+  "s-972": {
+   "title": "Shallow seismic: M1.55 depth=4.1365km at 33 km S of Alamo, Nevada — explosion likelihood: MODERATE",
+   "source": "Seismic Explosion Detector"
+  },
+  "s-973": {
+   "title": "Shallow seismic: M3.3 depth=0km at 20 km W of Preston, Nevada — explosion likelihood: HIGH",
+   "source": "Seismic Explosion Detector"
+  },
+  "s-974": {
+   "title": "Earthquake M5.2 - 67 km ENE of Tadine, New Caledonia",
+   "source": "USGS Seismic"
+  },
+  "s-975": {
+   "title": "In the US-China AI race, the real fight is keeping humans in control",
+   "source": "South China Morning Post"
+  },
+  "s-976": {
+   "title": "China pledges to ‘firmly support’ Cuba as US escalates pressure on Havana",
+   "source": "South China Morning Post"
+  },
+  "s-977": {
+   "title": "Hundreds set up tent encampments in Madrid over housing crisis",
+   "source": "Al Jazeera"
+  },
+  "s-978": {
+   "title": "Olise scores late to grab France 1-0 Nations League win at Belgium",
+   "source": "Al Jazeera"
+  },
+  "s-979": {
+   "title": "TANKER ACTIVITY: 1 tanker(s) over Persian Gulf / Iran Theater — active refueling operations",
+   "source": "ADSB Military Tracks"
+  },
+  "s-980": {
+   "title": "Gold falls amid rising oil prices and higher US dollar",
+   "source": "Al Jazeera"
+  },
+  "s-981": {
+   "title": "French PM warns against escalation of school protests after 164 arrested",
+   "source": "BBC World"
+  },
+  "s-982": {
+   "title": "Pope Leo says concerns about AI doom scenarios are not ‘fake news’",
+   "source": "South China Morning Post"
+  },
+  "s-983": {
+   "title": "Travel Advisory [1]: Saint Lucia",
+   "source": "Travel Advisories"
+  },
+  "s-984": {
+   "title": "US, UK test SM-6, other missiles on SINKEX target frigate",
+   "source": "Breaking Defense"
+  },
+  "s-985": {
+   "title": "Shallow seismic: M1.66 depth=-0.52km at 8 km SW of Lookingglass, Oregon — explosion likelihood: HIGH",
+   "source": "Seismic Explosion Detector"
+  },
+  "s-986": {
+   "title": "SURGE: western_europe has 3 aircraft vs 1 average — unusual concentration",
+   "source": "ADSB Military Tracks"
+  },
+  "s-987": {
+   "title": "Shallow seismic: M2.2 depth=-0.36km at 10 km S of Princeton, Canada — explosion likelihood: HIGH",
+   "source": "Seismic Explosion Detector"
+  },
+  "s-988": {
+   "title": "Israel security agency files complaint over TV report that Netanyahu visited UAE",
+   "source": "South China Morning Post"
+  },
+  "s-989": {
+   "title": "Anti-South Asian ‘hate speech’ has exploded online in US, report finds",
+   "source": "Al Jazeera"
+  },
+  "s-990": {
+   "title": "‘Missed opportunity’: US soybean farmers question exclusion from China tariff cuts",
+   "source": "South China Morning Post"
+  },
+  "s-991": {
+   "title": "Shallow seismic: M3 depth=5km at 4 km W of Bogue, Kansas — explosion likelihood: MODERATE",
+   "source": "Seismic Explosion Detector"
+  },
+  "s-992": {
+   "title": "Judge blocks Trump from tying anti-terrorism grants to election changes",
+   "source": "South China Morning Post"
+  },
+  "s-993": {
+   "title": "Shallow seismic: M2.2 depth=0.3km at 7 km SE of Denali National Park, Alaska — explosion likelihood: HIGH",
+   "source": "Seismic Explosion Detector"
+  },
+  "s-994": {
+   "title": "ISR ACTIVITY: 1 reconnaissance aircraft over Black Sea",
+   "source": "ADSB Military Tracks"
+  },
+  "s-995": {
+   "title": "COMMODITY DROP: Natural Gas -5.22% ($3.12)",
+   "source": "Commodity SIGINT"
+  },
+  "s-996": {
+   "title": "Public transport drivers strike in Manila over soaring fuel prices",
+   "source": "Al Jazeera"
+  },
+  "s-997": {
+   "title": "More than 80 reported abducted in Nigeria as police find human remains",
+   "source": "Al Jazeera"
+  },
+  "s-998": {
+   "title": "Pope Leo says AI risk concerns not ‘fake news’",
+   "source": "Al Jazeera"
+  },
+  "s-999": {
+   "title": "Rubio, Saudi Arabia’s foreign minister hold talks on Yemen, Hormuz Strait",
+   "source": "Al Jazeera"
+  },
+  "s-1000": {
+   "title": "Ethiopian army claims to have taken Tigrayan stronghold",
+   "source": "Al Jazeera"
+  },
+  "s-1001": {
+   "title": "Russia pounds Ukraine’s Kyiv after deadly strike on Academy of Sciences",
+   "source": "Al Jazeera"
+  },
+  "s-1002": {
+   "title": "Fighter jets escort Pope Leo on final day of his France tour",
+   "source": "Al Jazeera"
+  },
+  "s-1003": {
+   "title": "Iran’s Araghchi meets Qatari mediators as US calls for nuclear talks",
+   "source": "Al Jazeera"
+  },
+  "s-1004": {
+   "title": "Hungary lifts immunity of Prime Minister Magyar, two Orban-era ministers",
+   "source": "Al Jazeera"
+  },
+  "s-1005": {
+   "title": "OpenAI cancels release of AI model GPT-6.1 Astra, citing safety concerns",
+   "source": "Al Jazeera"
+  },
+  "s-1006": {
+   "title": "Africa’s space ambitions are moving from policy to practice",
+   "source": "Al Jazeera"
+  },
+  "s-1007": {
+   "title": "Inside Al Jazeera’s UNGA coverage",
+   "source": "Al Jazeera"
+  },
+  "s-1008": {
+   "title": "Iran war live: Trump says he did not offer Tehran sanctions relief",
+   "source": "Al Jazeera"
+  },
+  "s-1009": {
+   "title": "Fiery end for SpaceX Starship mission",
+   "source": "Al Jazeera"
+  },
+  "s-1010": {
+   "title": "UK: ‘Too soon’ to blame airbase plot on foreign state",
+   "source": "Al Jazeera"
+  },
+  "s-1011": {
+   "title": "OpenAI scraps rollout of new model over safety concerns",
+   "source": "BBC World"
+  },
+  "s-1012": {
+   "title": "Evicted Spanish pensioner can move back home, lawyer says",
+   "source": "BBC World"
+  },
+  "s-1013": {
+   "title": "Argentina threatens legal action against UK over Falkland Islands oil exploration",
+   "source": "BBC World"
+  },
+  "s-1014": {
+   "title": "New York Times executive fatally shot by elderly in-laws, police say",
+   "source": "BBC World"
+  },
+  "s-1015": {
+   "title": "US ban on Canadian alcohol and dairy comes into effect as trade war drags on",
+   "source": "BBC World"
+  },
+  "s-1016": {
+   "title": "Tennessee governor declines to halt execution of state's lone woman on death row",
+   "source": "BBC World"
+  },
+  "s-1017": {
+   "title": "Lost songs from iconic Australian rockstar found in garage",
+   "source": "BBC World"
+  },
+  "s-1018": {
+   "title": "Stand-up comic released after being convicted of insulting Erdoğan",
+   "source": "BBC World"
+  },
+  "s-1019": {
+   "title": "Hurricane Polo unleashes threatening winds as it approaches Mexico",
+   "source": "BBC World"
+  },
+  "s-1020": {
+   "title": "MTR technician, winner at global vocational competition, will apply insights to job",
+   "source": "South China Morning Post"
+  },
+  "s-1021": {
+   "title": "One Bangkok flood battle after another as Thai Airways races to clear baggage backlog",
+   "source": "South China Morning Post"
+  },
+  "s-1022": {
+   "title": "China warns Japan over WWII history as business delegation visits Beijing",
+   "source": "South China Morning Post"
+  },
+  "s-1023": {
+   "title": "‘Safeguard the truth and strengthen global reach,’ John Lee urges Hong Kong media",
+   "source": "South China Morning Post"
+  },
+  "s-1024": {
+   "title": "‘Important and consequential’: Nvidia’s Jensen Huang on US-China AI race, risk management",
+   "source": "South China Morning Post"
+  },
+  "s-1025": {
+   "title": "Shoppers rejoice, farmers fume as Japan’s rice crisis turns into a surplus",
+   "source": "South China Morning Post"
+  },
+  "s-1026": {
+   "title": "Bangkok flood disaster, Indonesian victim of fake cash scam: 7 Asia highlights",
+   "source": "South China Morning Post"
+  },
+  "s-1027": {
+   "title": "AMD acquires ‘godmother of AI’ Li Fei-Fei’s start-up as battle with Nvidia intensifies",
+   "source": "South China Morning Post"
+  },
+  "s-1028": {
+   "title": "Man who allegedly hid 3 pinhole cameras in Hong Kong gym changing rooms out on bail",
+   "source": "South China Morning Post"
+  },
+  "s-1029": {
+   "title": "Chinese deep-ocean drilling ship brings home ‘precious’ South China Sea samples",
+   "source": "South China Morning Post"
+  },
+  "s-1030": {
+   "title": "US prosecutors reopen case of alleged frat house gang rape at Cornell University",
+   "source": "South China Morning Post"
+  },
+  "s-1031": {
+   "title": "Elderly in-laws arrested in California shooting death of New York Times employee",
+   "source": "South China Morning Post"
+  },
+  "s-1032": {
+   "title": "5 things to do over the National Day ‘golden week’ holiday in Hong Kong",
+   "source": "South China Morning Post"
+  },
+  "s-1033": {
+   "title": "China reveals plan to map the entire surface of Mars by 2028 amid race with US",
+   "source": "South China Morning Post"
+  },
+  "s-1034": {
+   "title": "China wife donates kidney to husband, defying sub 10% match rate for non-blood relatives",
+   "source": "South China Morning Post"
+  },
+  "s-1035": {
+   "title": "Japan enlists royal visit, subsidies to revive tourism in quake-hit Kyushu",
+   "source": "South China Morning Post"
+  },
+  "s-1036": {
+   "title": "Hong Kong mustn’t miss the boat on the Pinglu Canal and Asean trade",
+   "source": "South China Morning Post"
+  },
+  "s-1037": {
+   "title": "Australian firm drops US$842 million Sydney data centre plan after public fury",
+   "source": "South China Morning Post"
+  },
+  "s-1038": {
+   "title": "Chinese team sets world record with swarm of 116 underwater drones",
+   "source": "South China Morning Post"
+  },
+  "s-1039": {
+   "title": "Can Hong Kong protect its eco-sensitive sites amid ‘golden week’ overtourism fears?",
+   "source": "South China Morning Post"
+  },
+  "s-1040": {
+   "title": "Cable endpoint: IR — 8398 IPv4 prefixes, 556 ASNs visible",
+   "source": "Submarine Cable Monitor"
+  },
+  "s-1041": {
+   "title": "Shallow seismic: M1.95 depth=0.730000019073486km at 5 km SW of Volcano, Hawaii — explosion likelihood: HIGH",
+   "source": "Seismic Explosion Detector"
+  },
+  "s-1042": {
+   "title": "Australia raises interest rates to 15-year high",
+   "source": "Al Jazeera"
+  },
+  "s-1043": {
+   "title": "AFCON qualifiers: Wissa guides DR Congo to win, Tunisia held by Botswana",
+   "source": "Al Jazeera"
+  },
+  "s-1044": {
+   "title": "Hong Kong’s IPO revival faces test as three new stocks stumble on debut",
+   "source": "South China Morning Post"
+  },
+  "s-1045": {
+   "title": "Malaysia begins sending thousands of Myanmar nationals back to war-torn homeland",
+   "source": "South China Morning Post"
+  },
+  "s-1046": {
+   "title": "US forces set to complete withdrawal from Iraq after 2 decades",
+   "source": "South China Morning Post"
+  },
+  "s-1047": {
+   "title": "The Manhattan Project Mindset: How Nuclear Analogies Are Steering AI Policy Off Course",
+   "source": "War on the Rocks"
+  },
+  "s-1048": {
+   "title": "0.5% of nurses trained outside Hong Kong, authorities say amid hiring row",
+   "source": "South China Morning Post"
+  },
+  "s-1049": {
+   "title": "The Discipline of Refusal: Constitutional Concerns About Lawful Orders in the U.S. Military",
+   "source": "War on the Rocks"
+  },
+  "s-1050": {
+   "title": "FIFA could disburse millions to members as Infantino seeks re-election",
+   "source": "Al Jazeera"
+  },
+  "s-1051": {
+   "title": "Asian Games: South Korea volleyball team latest to be taken to wrong venue",
+   "source": "Al Jazeera"
+  },
+  "s-1052": {
+   "title": "The Frenemy: How Australia navigates superpower rivalry",
+   "source": "BBC World"
+  },
+  "s-1053": {
+   "title": "Are Trump's US government funded ads illegal?",
+   "source": "BBC World"
+  },
+  "s-1054": {
+   "title": "Sign before praying: A new conversion law is affecting churchgoers in Indian state",
+   "source": "BBC World"
+  },
+  "s-1055": {
+   "title": "Travel Advisory [1]: Bonaire",
+   "source": "Travel Advisories"
+  },
+  "s-1056": {
+   "title": "CARGO MOVEMENT: 11 military transport aircraft over Western Europe (bomber staging)",
+   "source": "ADSB Military Tracks"
+  },
+  "s-1057": {
+   "title": "Malaysia’s Forest City wants a rebirth. Scams, crime stand in the way",
+   "source": "South China Morning Post"
+  },
+  "s-1058": {
+   "title": "Israel’s West Bank road closures turn routine journeys into long ordeals",
+   "source": "Al Jazeera"
+  },
+  "s-1059": {
+   "title": "Satellite images show Gaza in ruins three years into Israel’s genocidal war",
+   "source": "Al Jazeera"
+  },
+  "s-1060": {
+   "title": "Can Pakistan’s Sohail Afridi win freedom for ex-PM Imran Khan?",
+   "source": "Al Jazeera"
+  },
+  "s-1061": {
+   "title": "Israeli forces kill Hamas commander Izz al-Din al-Beik in Gaza attack",
+   "source": "Al Jazeera"
+  },
+  "s-1062": {
+   "title": "Gaza doctors face tough decisions as patients face long waits for diagnoses",
+   "source": "Al Jazeera"
+  },
+  "s-1063": {
+   "title": "‘180-degree flip’ sees global investors turn to China for diversification: Pimco president",
+   "source": "South China Morning Post"
+  },
+  "s-1064": {
+   "title": "Philippines struggles to fill 20,000 teaching jobs: ‘we are facing a learning crisis’",
+   "source": "South China Morning Post"
+  },
+  "s-1065": {
+   "title": "The Unhedgeable Bet: What the Future Combat Systems Can Teach Us About Acquisition",
+   "source": "War on the Rocks"
+  },
+  "s-1066": {
+   "title": "Malaysia begins controversial repatriation of asylum seekers to Myanmar",
+   "source": "BBC World"
+  },
+  "s-1067": {
+   "title": "Rights group accuses Vietnam of abducting Australian and Norwegian activists",
+   "source": "BBC World"
+  },
+  "s-1068": {
+   "title": "Journalist to be crowned king in Uganda after bitter succession dispute",
+   "source": "BBC World"
+  },
+  "s-1069": {
+   "title": "China offers 15-year research grants to the world’s brightest young scientists",
+   "source": "South China Morning Post"
+  },
+  "s-1070": {
+   "title": "Hong Kong man jailed 3 years for hammer attack on associate who later died",
+   "source": "South China Morning Post"
+  },
+  "s-1071": {
+   "title": "Indonesian prison chief suspended over secret VIP compound for inmates",
+   "source": "South China Morning Post"
+  },
+  "s-1072": {
+   "title": "Shallow seismic: M1.76 depth=1.64km at 15 km NE of Ridgecrest, CA — explosion likelihood: MODERATE",
+   "source": "Seismic Explosion Detector"
+  },
+  "s-1073": {
+   "title": "COMMODITY DROP: Brent Crude Oil -7.75% ($98.34)",
+   "source": "Commodity SIGINT"
+  },
+  "s-1074": {
+   "title": "Fighting in Ethiopia intensifies: What’s the latest?",
+   "source": "Al Jazeera"
+  },
+  "s-1075": {
+   "title": "US-Iran talks continue, but ‘deal unlikely’ before midterm elections",
+   "source": "Al Jazeera"
+  },
+  "s-1076": {
+   "title": "Thousands of drivers strike in the Philippines over rising fuel prices",
+   "source": "Al Jazeera"
+  },
+  "s-1077": {
+   "title": "‘A false problem’: Italy’s Muslims question Meloni’s burqa ban",
+   "source": "Al Jazeera"
+  },
+  "s-1078": {
+   "title": "Israeli settlers attack Jalud village in occupied West Bank, torch homes",
+   "source": "Al Jazeera"
+  },
+  "s-1079": {
+   "title": "Burkina Faso's junta leader opens major gold refinery to keep mining profits at home",
+   "source": "BBC World"
+  },
+  "s-1080": {
+   "title": "How a rape rumour sent an Indian university into turmoil and emptied hostels",
+   "source": "BBC World"
+  },
+  "s-1081": {
+   "title": "It’s the end of the world – and I don’t feel fine",
+   "source": "South China Morning Post"
+  },
+  "s-1082": {
+   "title": "Shallow seismic: M2.1 depth=2.5km at 13 km SSE of Portage Creek, Alaska — explosion likelihood: MODERATE",
+   "source": "Seismic Explosion Detector"
+  },
+  "s-1083": {
+   "title": "UNGA 81: Five key takeaways from general debate",
+   "source": "Al Jazeera"
+  },
+  "s-1084": {
+   "title": "Novak Djokovic ready for tennis comeback at China Open",
+   "source": "Al Jazeera"
+  },
+  "s-1085": {
+   "title": "AstraZeneca, Merck, Novo deals boost Chinese biotech as global interest grows",
+   "source": "South China Morning Post"
+  },
+  "s-1086": {
+   "title": "BGP status: AS48159 (TeleCommunication Infrastructure Co, IR) — normal",
+   "source": "BGP Infrastructure Monitor"
+  },
+  "s-1087": {
+   "title": "Mahathir ‘lonely’ as family and Malaysia mourn Siti Hasmah",
+   "source": "South China Morning Post"
+  },
+  "s-1088": {
+   "title": "China’s CXMT to favour domestic suppliers in US$5.2b memory-chip capacity push: source",
+   "source": "South China Morning Post"
+  },
+  "s-1089": {
+   "title": "North Korean mines behind DMZ blast that injured 2 South Koreans, Seoul says",
+   "source": "South China Morning Post"
+  },
+  "s-1090": {
+   "title": "Why Citi is betting on China’s 30-year bonds as US Treasury yields climb",
+   "source": "South China Morning Post"
+  },
+  "s-1091": {
+   "title": "Japanese firms pull back from China amid geopolitical tensions, supply chain shifts",
+   "source": "South China Morning Post"
+  },
+  "s-1092": {
+   "title": "Argentina’s Milei threatens legal action over Falklands oil project",
+   "source": "Al Jazeera"
+  },
+  "s-1093": {
+   "title": "US’s Marco Rubio says UK airbase incident involved ‘foreign actor’",
+   "source": "Al Jazeera"
+  },
+  "s-1094": {
+   "title": "Malaysia begins sending back Rohingya refugees despite safety warnings",
+   "source": "Al Jazeera"
+  },
+  "s-1095": {
+   "title": "China mourns death of music legend Liu Huan, voice of 2008 Beijing Olympic theme song",
+   "source": "South China Morning Post"
+  },
+  "s-1096": {
+   "title": "Can China’s new satellite coordination standards boost PLA targeting and resilience?",
+   "source": "South China Morning Post"
+  },
+  "s-1097": {
+   "title": "Beijing and Berlin ‘exchanged opinions’ amid reported plan to shut China out of EU market",
+   "source": "South China Morning Post"
+  },
+  "s-1098": {
+   "title": "Singapore or bust: how Indonesian student’s crowdfunding plea shows degree of desirability",
+   "source": "South China Morning Post"
+  },
+  "s-1099": {
+   "title": "Early birds for Wang Fuk Court buy-back get first pick of subsidised houses",
+   "source": "South China Morning Post"
+  },
+  "s-1100": {
+   "title": "New Zealand, Australia sign pact to deepen naval cooperation",
+   "source": "Defense News"
+  },
+  "s-1101": {
+   "title": "TANKER ACTIVITY: 7 tanker(s) over Western Europe (bomber staging) — active refueling operations",
+   "source": "ADSB Military Tracks"
+  },
+  "s-1102": {
+   "title": "Man charged over AI image of crocodile at Singapore reservoir that led to search",
+   "source": "South China Morning Post"
+  },
+  "s-1103": {
+   "title": "French artillery regiment reorganizes guns to survive drone threats",
+   "source": "Defense News"
+  },
+  "s-1104": {
+   "title": "Philippine coastguard battles funding cuts amid bigger South China Sea role",
+   "source": "South China Morning Post"
+  },
+  "s-1105": {
+   "title": "Lebanese are watching Israel’s upcoming election, but few expect change",
+   "source": "Al Jazeera"
+  },
+  "s-1106": {
+   "title": "Xi urges universities to help drive China’s tech and innovation ambitions",
+   "source": "South China Morning Post"
+  },
+  "s-1107": {
+   "title": "India-Europe trade corridor gets Trump’s backing, but can IMEC survive war?",
+   "source": "South China Morning Post"
+  },
+  "s-1108": {
+   "title": "Shallow seismic: M2.1 depth=1.96000003814697km at 10 km W of Boonville, CA — explosion likelihood: MODERATE",
+   "source": "Seismic Explosion Detector"
+  },
+  "s-1109": {
+   "title": "AI, robotic arms power Hong Kong public hospital laundry and meal centre",
+   "source": "South China Morning Post"
+  },
+  "s-1110": {
+   "title": "In FIFA-UEFA tussle, European body accused of ‘misinformation campaign’",
+   "source": "Al Jazeera"
+  },
+  "s-1111": {
+   "title": "Why has a Cornell rape investigation been reopened?",
+   "source": "Al Jazeera"
+  },
+  "s-1112": {
+   "title": "Ireland lost to Israel",
+   "source": "Al Jazeera"
+  },
+  "s-1113": {
+   "title": "Palestine weekly: Israeli politicians vie to look toughest before election",
+   "source": "Al Jazeera"
+  },
+  "s-1114": {
+   "title": "Hong Kong man returns to city after 26 years in Philippine prison for drug offences",
+   "source": "South China Morning Post"
+  },
+  "s-1115": {
+   "title": "ISR ACTIVITY: 1 reconnaissance aircraft over Persian Gulf / Iran Theater",
+   "source": "ADSB Military Tracks"
+  },
+  "s-1116": {
+   "title": "Malaysia gave refuge to Rohingya; now it wants them to go",
+   "source": "Al Jazeera"
+  },
+  "s-1117": {
+   "title": "Hong Kong firms lag mainland China on AI adoption amid legacy-system burden: Accenture",
+   "source": "South China Morning Post"
+  },
+  "s-1118": {
+   "title": "US and China need shared risk vocabulary to manage AI threats: Beijing-linked think tank",
+   "source": "South China Morning Post"
+  },
+  "s-1119": {
+   "title": "Hong Kong turns Halloween into month-long event with street parties, free rides",
+   "source": "South China Morning Post"
+  },
+  "s-1120": {
+   "title": "Hormuz and Yemen: Iran offers de-escalation at a price others will pay",
+   "source": "Al Jazeera"
+  },
+  "s-1121": {
+   "title": "Can Tajikistan’s economic boom survive its debt gamble?",
+   "source": "Al Jazeera"
+  },
+  "s-1122": {
+   "title": "What did Yamal say to Messi at World Cup final? ‘Thank you for everything’",
+   "source": "Al Jazeera"
+  },
+  "s-1123": {
+   "title": "Estonia blames Russia for arson attack on company supplying vehicles to Ukraine",
+   "source": "South China Morning Post"
+  },
+  "s-1124": {
+   "title": "Spain announces new housing measures after protests over 87-year-old woman's eviction",
+   "source": "BBC World"
+  },
+  "s-1125": {
+   "title": "Malaysia sends Rohingya back to Myanmar despite safety warnings",
+   "source": "Al Jazeera"
+  },
+  "s-1126": {
+   "title": "Journalist ascends to throne in Uganda kingdom after succession dispute",
+   "source": "Al Jazeera"
+  },
+  "s-1127": {
+   "title": "What trap? US-China relations show conflict is far from inevitable",
+   "source": "South China Morning Post"
+  },
+  "s-1128": {
+   "title": "How readiness stays ready: The F110 delivers power, reliability and scale for the F-15EX",
+   "source": "Breaking Defense"
+  },
+  "s-1129": {
+   "title": "Retired Hong Kong woman loses HK$2.9 million in online romance, fake app scam",
+   "source": "South China Morning Post"
+  },
+  "s-1130": {
+   "title": "Vietnam charges 3 men with terrorism as abduction claim emerges",
+   "source": "South China Morning Post"
+  },
+  "s-1131": {
+   "title": "Shallow seismic: M1.67 depth=1.86km at 1 km SE of Rocky Mountain, Oklahoma — explosion likelihood: MODERATE",
+   "source": "Seismic Explosion Detector"
+  },
+  "s-1132": {
+   "title": "Hong Kong police receive 1,503 reports of suspicious iPhone charges worth HK$30m",
+   "source": "South China Morning Post"
+  },
+  "s-1133": {
+   "title": "Sell family jewels for latest iPhone? In India, craze dials up debate",
+   "source": "South China Morning Post"
+  },
+  "s-1134": {
+   "title": "CARGO MOVEMENT: 11 military transport aircraft over Western Europe (bomber staging)",
+   "source": "ADSB Military Tracks"
+  },
+  "s-1135": {
+   "title": "Turkiye arrests president, six members of football refereeing body in probe",
+   "source": "Al Jazeera"
+  },
+  "s-1136": {
+   "title": "Iranians stock up on food and medicine as fears of new US fighting grow",
+   "source": "Al Jazeera"
+  },
+  "s-1137": {
+   "title": "China’s generative AI user base crosses 700 million, covering over half the population",
+   "source": "South China Morning Post"
+  },
+  "s-1138": {
+   "title": "DIU, Space Force team up to kick-start buys of commercial sats for monitoring GEO",
+   "source": "Breaking Defense"
+  },
+  "s-1139": {
+   "title": "Shallow seismic: M1.67634832859039 depth=2.4300000667572km at 38 km NNE of Amboy, Washington — explosion likelihood: MODERATE",
+   "source": "Seismic Explosion Detector"
+  },
+  "s-1140": {
+   "title": "Earthquake M5.4 - 99 km SSE of Pangai, Tonga",
+   "source": "USGS Seismic"
+  },
+  "s-1141": {
+   "title": "'I was lured into a trap': Evan Gershkovich on moment that led to 16 months in Russian jail",
+   "source": "BBC World"
+  },
+  "s-1142": {
+   "title": "Israeli settlers attack West Bank village and block Palestinian family's return home",
+   "source": "BBC World"
+  },
+  "s-1143": {
+   "title": "Estonia blames Russia for arson at defence company supplying Ukraine",
+   "source": "BBC World"
+  },
+  "s-1144": {
+   "title": "French hard-right leader accuses opponents of 'total war' after claims of antisemitism",
+   "source": "BBC World"
+  },
+  "s-1145": {
+   "title": "Man charged over AI image of crocodile in Singapore reservoir",
+   "source": "BBC World"
+  },
+  "s-1146": {
+   "title": "Walkouts, clashes and moments that defined UNGA 2026",
+   "source": "Al Jazeera"
+  },
+  "s-1147": {
+   "title": "Shallow seismic: M2 depth=5km at 7 km NE of Potsdam, New York — explosion likelihood: MODERATE",
+   "source": "Seismic Explosion Detector"
+  },
+  "s-1148": {
+   "title": "Are Houthis using new modified cruise missiles in Yemen’s war?",
+   "source": "Al Jazeera"
+  },
+  "s-1149": {
+   "title": "Formula One’s Fernando Alonso to stay with Aston Martin next season",
+   "source": "Al Jazeera"
+  },
+  "s-1150": {
+   "title": "Iran downplays possible role in Houthis’ recent Yemen victories",
+   "source": "Al Jazeera"
+  },
+  "s-1151": {
+   "title": "Man City’s Premier League charges: What’s the latest and what comes next?",
+   "source": "Al Jazeera"
+  },
+  "s-1152": {
+   "title": "Nvidia and AMD chiefs join Tsinghua advisory board as US-China chip tensions persist",
+   "source": "South China Morning Post"
+  },
+  "s-1153": {
+   "title": "Estonia says Russia ordered August arson attack on defence company",
+   "source": "Al Jazeera"
+  },
+  "s-1154": {
+   "title": "Tourists face legal action over turtle-riding video in Oman",
+   "source": "Al Jazeera"
+  },
+  "s-1155": {
+   "title": "US Navy launches drone command that could reshape Taiwan war planning",
+   "source": "South China Morning Post"
+  },
+  "s-1156": {
+   "title": "How years of thin investment have stalled Germany’s rail network as China’s speeds ahead",
+   "source": "South China Morning Post"
+  },
+  "s-1157": {
+   "title": "Economist formally apologises for ‘sexist’ campus talk as students urge suspension",
+   "source": "South China Morning Post"
+  },
+  "s-1158": {
+   "title": "Legal aid chief denies stricter vetting as aid for policy challenges hits decade low",
+   "source": "South China Morning Post"
+  },
+  "s-1159": {
+   "title": "Does international law still matter?",
+   "source": "Al Jazeera"
+  },
+  "s-1160": {
+   "title": "Earthquake M5 - 58 km NW of Pante Makasar, Timor Leste",
+   "source": "USGS Seismic"
+  },
+  "s-1161": {
+   "title": "Earthquake M5.6 - southern Mid-Atlantic Ridge",
+   "source": "USGS Seismic"
+  },
+  "s-1162": {
+   "title": "BOMBER ACTIVITY: 1 bomber(s) over Western Europe (bomber staging) — active strike mission",
+   "source": "ADSB Military Tracks"
+  },
+  "s-1163": {
+   "title": "US-Iran talks in New York: What’s the latest?",
+   "source": "Al Jazeera"
+  },
+  "s-1164": {
+   "title": "CDC reports two measles deaths in US as cases hit 35-year high",
+   "source": "Al Jazeera"
+  },
+  "s-1165": {
+   "title": "Photos: French students protest, public workers strike before budget cuts",
+   "source": "Al Jazeera"
+  },
+  "s-1166": {
+   "title": "Why has Putin added 15,000 new soldiers to Russia’s army?",
+   "source": "Al Jazeera"
+  },
+  "s-1167": {
+   "title": "Indian firm building $15bn Trump-announced steel mill has deep Russia ties",
+   "source": "Al Jazeera"
+  },
+  "s-1168": {
+   "title": "Sudan takes centre stage on final day of UNGA",
+   "source": "Al Jazeera"
+  },
+  "s-1169": {
+   "title": "Bail for RAF base suspects suggests no evidence of ‘terror’, say analysts",
+   "source": "Al Jazeera"
+  },
+  "s-1170": {
+   "title": "Nigerian dances non-stop for seven days in world record bid",
+   "source": "BBC World"
+  },
+  "s-1171": {
+   "title": "Israel’s Gaza air strike kills Hamas commander behind October 7, 2023 attack",
+   "source": "South China Morning Post"
+  },
+  "s-1172": {
+   "title": "Estonia blames Russia in arson attack on military robotics firm Milrem",
+   "source": "Defense News"
+  },
+  "s-1173": {
+   "title": "US forces exiting Iraq after 2 decades, leaving opening for Iran",
+   "source": "Defense News"
+  },
+  "s-1174": {
+   "title": "House intel committee could investigate defense firm contributions to White House ballroom",
+   "source": "Breaking Defense"
+  },
+  "s-1175": {
+   "title": "Estonia accuses Russia of ordering August arson attack on Milrem",
+   "source": "Breaking Defense"
+  },
+  "s-1176": {
+   "title": "Drone-hunting on the border, plus turmoil at an Air Force think tank",
+   "source": "Breaking Defense"
+  },
+  "s-1177": {
+   "title": "US consumer confidence sinks to 12-year low over inflation, stagnant wages",
+   "source": "South China Morning Post"
+  },
+  "s-1178": {
+   "title": "Yemen’s war disrupts roads and ports, deepening humanitarian crisis",
+   "source": "Al Jazeera"
+  },
+  "s-1179": {
+   "title": "Ireland undecided on approach for next game against Israel, coach says",
+   "source": "Al Jazeera"
+  },
+  "s-1180": {
+   "title": "Dutch police arrest suspected member of group that claimed FBI hack",
+   "source": "BBC World"
+  },
+  "s-1181": {
+   "title": "What Will Hegseth’s “State of the Force” Reprise Reveal?",
+   "source": "War on the Rocks"
+  },
+  "s-1182": {
+   "title": "Dare to try: A visibly rewarding creative journey into Disney",
+   "source": "South China Morning Post"
+  },
+  "s-1183": {
+   "title": "Cyclist likely bitten by several dogs and died from throat injuries, source says",
+   "source": "South China Morning Post"
+  },
+  "s-1184": {
+   "title": "Shallow seismic: M2.06 depth=0.600000023841858km at 10 km WNW of Cobb, CA — explosion likelihood: HIGH",
+   "source": "Seismic Explosion Detector"
+  },
+  "s-1185": {
+   "title": "Military aircraft snapshot: 404 globally | persian_gulf: 3, eastern_med: 1, western_europe: 22",
+   "source": "ADSB Military Tracks"
+  },
+  "s-1186": {
+   "title": "‘Truly historic’: Morocco’s king appoints first woman prime minister",
+   "source": "Al Jazeera"
+  },
+  "s-1187": {
+   "title": "Knife-wielding schoolboy kills teacher, injures two in Slovakia",
+   "source": "Al Jazeera"
+  },
+  "s-1188": {
+   "title": "Trump administration ‘must be changed’: Iran’s IRGC appeals to US voters",
+   "source": "Al Jazeera"
+  },
+  "s-1189": {
+   "title": "Ethiopia blames regional rivals as risk of conflict spillover rises",
+   "source": "Al Jazeera"
+  },
+  "s-1190": {
+   "title": "Mourners in Gaza bury remains of loved ones killed in 2023 Israeli strike",
+   "source": "Al Jazeera"
+  },
+  "s-1191": {
+   "title": "Man City guilty of all serious financial breach charges: Premier League",
+   "source": "Al Jazeera"
+  },
+  "s-1192": {
+   "title": "‘New path’: UK’s Burnham promises huge expansion of public services",
+   "source": "Al Jazeera"
+  },
+  "s-1193": {
+   "title": "Russian nuclear-capable bomber plane crashes, killing six people",
+   "source": "Al Jazeera"
+  },
+  "s-1194": {
+   "title": "LIVE: Spain vs Croatia – Nations League",
+   "source": "Al Jazeera"
+  },
+  "s-1195": {
+   "title": "‘The emperor is naked’: UEFA’s Ceferin takes aim at FIFA boss Infantino",
+   "source": "Al Jazeera"
+  },
+  "s-1196": {
+   "title": "First female prime minister named in Morocco after winning elections",
+   "source": "BBC World"
+  },
+  "s-1197": {
+   "title": "Eiffel Tower chief to quit after female staff replaced by men during religious visit",
+   "source": "BBC World"
+  },
+  "s-1198": {
+   "title": "Trump rules out joint US-China venture to develop AI",
+   "source": "BBC World"
+  },
+  "s-1199": {
+   "title": "Mystery over UK airbase scare as police find petrol, not explosives",
+   "source": "South China Morning Post"
+  },
+  "s-1200": {
+   "title": "87-year-old woman whose eviction sparked protests in Spain is returning home",
+   "source": "South China Morning Post"
+  },
+  "s-1201": {
+   "title": "Eiffel Tower chief stepping down over removal of women staff for Hindu group’s visit",
+   "source": "South China Morning Post"
+  },
+  "s-1202": {
+   "title": "Pentagon awards Raytheon up to $20.7 billion to nearly double AMRAAM production",
+   "source": "Defense News"
+  },
+  "s-1203": {
+   "title": "USS Klakring sent to the bottom of the Atlantic in joint US-UK SINKEX",
+   "source": "Defense News"
+  },
+  "s-1204": {
+   "title": "Army awards up to $7B in sprawling counter-drone IDIQ",
+   "source": "Breaking Defense"
+  },
+  "s-1205": {
+   "title": "The drone war will be won on the factory floor, not just the front line",
+   "source": "Breaking Defense"
+  },
+  "s-1206": {
+   "title": "Raytheon nets potential $20.7 billion AMRAAM deal",
+   "source": "Breaking Defense"
+  },
+  "s-1207": {
+   "title": "Travel Advisory [1]: Lithuania",
+   "source": "Travel Advisories"
+  },
+  "s-1208": {
+   "title": "Trump unveils new site to simplify access to government services",
+   "source": "Al Jazeera"
+  },
+  "s-1209": {
+   "title": "Lindsay Clancy appears in court as her lawyer pushes for murder case to be dismissed",
+   "source": "BBC World"
+  },
+  "s-1210": {
+   "title": "Jerusalem Daily: Israeli worshippers attack Palestinian man",
+   "source": "Al Jazeera"
+  },
+  "s-1211": {
+   "title": "Shallow seismic: M1.52 depth=3.46km at 7 km WSW of Pala, CA — explosion likelihood: MODERATE",
+   "source": "Seismic Explosion Detector"
+  },
+  "s-1212": {
+   "title": "Can Iraq handle future security challenges alone?",
+   "source": "Al Jazeera"
+  },
+  "s-1213": {
+   "title": "Madrid residents feel the impact of Spain’s housing crisis",
+   "source": "Al Jazeera"
+  },
+  "s-1214": {
+   "title": "China expands overseas military presence with new Laos air force centre",
+   "source": "South China Morning Post"
+  },
+  "s-1215": {
+   "title": "Trump rejects calls to work with China on AI safety despite Xi summit progress",
+   "source": "South China Morning Post"
+  },
+  "s-1216": {
+   "title": "ISR ACTIVITY: 1 reconnaissance aircraft over Black Sea",
+   "source": "ADSB Military Tracks"
+  },
+  "s-1217": {
+   "title": "PM Burnham vows big shake-up for UK in high-risk political speech",
+   "source": "South China Morning Post"
+  },
+  "s-1218": {
+   "title": "Travel Advisory [1]: Panama",
+   "source": "Travel Advisories"
+  },
+  "s-1219": {
+   "title": "US ban on $1bn of Canadian goods takes effect in Trump’s latest retaliation",
+   "source": "Al Jazeera"
+  },
+  "s-1220": {
+   "title": "Has Gaza broken the Israel consensus in the US?",
+   "source": "Al Jazeera"
+  },
+  "s-1221": {
+   "title": "US troops fully withdraw from Baghdad base after two decades",
+   "source": "Al Jazeera"
+  },
+  "s-1222": {
+   "title": "Former American Idol contestant and pastor found guilty of murdering wife",
+   "source": "BBC World"
+  },
+  "s-1223": {
+   "title": "Shallow seismic: M1.59 depth=4.0358km at 28 km SSW of Hawthorne, Nevada — explosion likelihood: MODERATE",
+   "source": "Seismic Explosion Detector"
+  },
+  "s-1224": {
+   "title": "What we know about RAF Fairford ‘bomb plot’",
+   "source": "Al Jazeera"
+  },
+  "s-1225": {
+   "title": "US sanctions 10 entities for allegedly supporting Iran’s military",
+   "source": "Al Jazeera"
+  },
+  "s-1226": {
+   "title": "America’s foreign policy of coercion must end",
+   "source": "South China Morning Post"
+  },
+  "s-1227": {
+   "title": "Boeing wins Navy next-gen fighter F/A-XX competition",
+   "source": "Breaking Defense"
+  },
+  "s-1228": {
+   "title": "More than 400 detained as France student protests escalate",
+   "source": "BBC World"
+  },
+  "s-1229": {
+   "title": "Yamal stars as Spain thrash Croatia",
+   "source": "Al Jazeera"
+  },
+  "s-1230": {
+   "title": "‘Netanyahu targets Qatar to deflect from Gaza war crimes’",
+   "source": "Al Jazeera"
+  },
+  "s-1231": {
+   "title": "French students clash with police as protests over education cuts spread",
+   "source": "Al Jazeera"
+  },
+  "s-1232": {
+   "title": "What is white phosphorus, and why is Israel using it in Lebanon?",
+   "source": "Al Jazeera"
+  },
+  "s-1233": {
+   "title": "Spain protests: Evicted 87-year-old woman to return to Madrid home",
+   "source": "Al Jazeera"
+  },
+  "s-1234": {
+   "title": "Shallow seismic: M1.72 depth=1.6131km at 5 km SW of Burning Man Earth, Nevada — explosion likelihood: MODERATE",
+   "source": "Seismic Explosion Detector"
+  },
+  "s-1235": {
+   "title": "Xi-Trump summit drew Chinese CEOs. So why couldn’t they get a seat at the table?",
+   "source": "South China Morning Post"
+  },
+  "s-1236": {
+   "title": "Man dragged to death by New York subway train after bag gets caught in door",
+   "source": "South China Morning Post"
+  },
+  "s-1237": {
+   "title": "Shallow seismic: M1.9 depth=1.8958km at 44 km NW of Toyah, Texas — explosion likelihood: MODERATE",
+   "source": "Seismic Explosion Detector"
+  },
+  "s-1238": {
+   "title": "Chinese AI tool told researchers how to make bioweapons",
+   "source": "BBC World"
+  },
+  "s-1239": {
+   "title": "Three takeaways from Trump's 'Super Intelligence' summit",
+   "source": "BBC World"
+  },
+  "s-1240": {
+   "title": "Girl has multiple surgeries to control infections after strike in Gaza",
+   "source": "BBC World"
+  },
+  "s-1241": {
+   "title": "South Korea demands apology from Pyongyang for landmine blasts that injured three",
+   "source": "BBC World"
+  },
+  "s-1242": {
+   "title": "South Africa to clean up high-risk areas after 12 women killed",
+   "source": "BBC World"
+  },
+  "s-1243": {
+   "title": "Six Flags shuts down X2 rollercoaster after more than 100 allege brain injuries",
+   "source": "BBC World"
+  },
+  "s-1244": {
+   "title": "'Backpack' declared Alaska's Fat Bear Week winner",
+   "source": "BBC World"
+  },
+  "s-1245": {
+   "title": "US Supreme Court denies Christa Pike's last-ditch bid to halt execution",
+   "source": "BBC World"
+  },
+  "s-1246": {
+   "title": "Restaurant named after Xi Jinping attacked by Chinese nationals in South Korea",
+   "source": "BBC World"
+  },
+  "s-1247": {
+   "title": "Hegseth to cut number of US general and admiral positions by 20%",
+   "source": "Al Jazeera"
+  },
+  "s-1248": {
+   "title": "Israel’s Lapid accuses Netanyahu of ‘fear-mongering’ over attack warning",
+   "source": "Al Jazeera"
+  },
+  "s-1249": {
+   "title": "South African president orders action on femicide after killings",
+   "source": "Al Jazeera"
+  },
+  "s-1250": {
+   "title": "Democrats hope anger at Trump enough to get young people to vote",
+   "source": "Al Jazeera"
+  },
+  "s-1251": {
+   "title": "String of rapes in Delhi triggers social campaign for women’s safety",
+   "source": "Al Jazeera"
+  },
+  "s-1252": {
+   "title": "Public workers in France strike over pay as student protests turn violent",
+   "source": "Al Jazeera"
+  },
+  "s-1253": {
+   "title": "Trump backs AI self-regulation at tech summit but is it enough?",
+   "source": "Al Jazeera"
+  },
+  "s-1254": {
+   "title": "Somali pirates killed five crew members on hijacked tanker, officials say",
+   "source": "Al Jazeera"
+  },
+  "s-1255": {
+   "title": "US Senate blocks resolution seeking report on Americans killed in West Bank",
+   "source": "Al Jazeera"
+  },
+  "s-1256": {
+   "title": "King appoints Morocco’s first female prime minister",
+   "source": "Al Jazeera"
+  },
+  "s-1257": {
+   "title": "Morocco’s pro-Palestine protests challenge Rabat’s deepening Israel ties",
+   "source": "Al Jazeera"
+  },
+  "s-1258": {
+   "title": "Indonesia suspends five officials over luxury apartments for inmates",
+   "source": "Al Jazeera"
+  },
+  "s-1259": {
+   "title": "Iran war live: Trump claims war will end ‘very soon’, gives no details",
+   "source": "Al Jazeera"
+  },
+  "s-1260": {
+   "title": "Trump says he plans to campaign for 32 days before midterm elections",
+   "source": "Al Jazeera"
+  },
+  "s-1261": {
+   "title": "‘Nothing is justifying this’: Qatar’s PM slams Israel’s atrocities in Gaza",
+   "source": "Al Jazeera"
+  },
+  "s-1262": {
+   "title": "Trump, tech bosses sign voluntary pact pledging ‘robust’ AI safeguards",
+   "source": "Al Jazeera"
+  },
+  "s-1263": {
+   "title": "Jack Smith defends investigations into Trump during tense US Senate hearing",
+   "source": "Al Jazeera"
+  },
+  "s-1264": {
+   "title": "Venezuelan man shot by ICE officer in Texas is charged with assault",
+   "source": "Al Jazeera"
+  },
+  "s-1265": {
+   "title": "Iraq begins high-stakes security balancing act as US troops withdraw",
+   "source": "Al Jazeera"
+  },
+  "s-1266": {
+   "title": "Hong Kong urged to boost private housing supply as student demand jumps 45%",
+   "source": "South China Morning Post"
+  },
+  "s-1267": {
+   "title": "US social media users urge Koreans to unmask Cornell sexual assault suspect Winston Lee",
+   "source": "South China Morning Post"
+  },
+  "s-1268": {
+   "title": "Chinese firms trail global peers on profits, but AI power boom offers bright spot: Natixis",
+   "source": "South China Morning Post"
+  },
+  "s-1269": {
+   "title": "There’s been buzz around Carney for a prize long coveted by Trump",
+   "source": "South China Morning Post"
+  },
+  "s-1270": {
+   "title": "HSBC unveils RedCoin as name of its Hong Kong stablecoin for 3.3 million PayMe users",
+   "source": "South China Morning Post"
+  },
+  "s-1271": {
+   "title": "Slow is beautiful: China launches war against AI drama, goes beyond algorithms",
+   "source": "South China Morning Post"
+  },
+  "s-1272": {
+   "title": "Pentagon picks Boeing to build new carrier fighter jet to replace F/A-18",
+   "source": "South China Morning Post"
+  },
+  "s-1273": {
+   "title": "Malaysia’s Mahathir in hospital for observation a day after wife’s death",
+   "source": "South China Morning Post"
+  },
+  "s-1274": {
+   "title": "US Supreme Court lets Trump resume deportations to third countries",
+   "source": "South China Morning Post"
+  },
+  "s-1275": {
+   "title": "Boom News founder Tang Ho-wing, 1 other arrested by Hong Kong national security police",
+   "source": "South China Morning Post"
+  },
+  "s-1276": {
+   "title": "In Japan, free BitTorrent porn downloads bring legal trouble and fines",
+   "source": "South China Morning Post"
+  },
+  "s-1277": {
+   "title": "Somali pirates kill 5 crew on hijacked tanker before rescue by security forces",
+   "source": "South China Morning Post"
+  },
+  "s-1278": {
+   "title": "Taiwan plans US$850 million ammunition spend to prepare for potential PLA blockade",
+   "source": "South China Morning Post"
+  },
+  "s-1279": {
+   "title": "China warns officials, fires kindergarten principal over ‘mops in cooking pots’ scandal",
+   "source": "South China Morning Post"
+  },
+  "s-1280": {
+   "title": "Can pay-as-you-earn funding fix Southeast Asia’s higher education debt problem?",
+   "source": "South China Morning Post"
+  },
+  "s-1281": {
+   "title": "US-China trade truce remains ‘fragile’ after Xi-Trump summit, analysts say",
+   "source": "South China Morning Post"
+  },
+  "s-1282": {
+   "title": "Raising Hong Kong’s birth rate is an economic imperative",
+   "source": "South China Morning Post"
+  },
+  "s-1283": {
+   "title": "Family of 4 in hospital after fire at Sha Tin public housing estate",
+   "source": "South China Morning Post"
+  },
+  "s-1284": {
+   "title": "‘Hold the status quo’? US Congress reviews Xi-Trump summit outcomes",
+   "source": "South China Morning Post"
+  },
+  "s-1285": {
+   "title": "Cheap and illegal: mainland Chinese post social media adverts for services in Hong Kong",
+   "source": "South China Morning Post"
+  },
+  "s-1286": {
+   "title": "Why the Pentagon just dropped $450M on tungsten mining",
+   "source": "Defense News"
+  },
+  "s-1287": {
+   "title": "US Navy selects Boeing to build next-generation F/A-XX fighter",
+   "source": "Defense News"
+  },
+  "s-1288": {
+   "title": "What Boeing’s F/A-XX win means for the company, and what challenges come next",
+   "source": "Breaking Defense"
+  },
+  "s-1289": {
+   "title": "Navy to purchase 30 MUSVs following at-sea testing",
+   "source": "Breaking Defense"
+  },
+  "s-1290": {
+   "title": "Shallow seismic: M1.9 depth=4.2km at 58 km ESE of Egegik, Alaska — explosion likelihood: MODERATE",
+   "source": "Seismic Explosion Detector"
+  },
+  "s-1291": {
+   "title": "China’s DeepSeek open-sources tools to help Huawei chips supplant Nvidia in AI",
+   "source": "South China Morning Post"
+  },
+  "s-1292": {
+   "title": "Chinese biopharma’s global expansion",
+   "source": "South China Morning Post"
+  },
+  "s-1293": {
+   "title": "Philippines urged to adopt Malaysia’s lasting tourism strategy",
+   "source": "South China Morning Post"
+  },
+  "s-1294": {
+   "title": "China’s R&D spending hits record 2.8% of GDP, beating OECD average for the first time",
+   "source": "South China Morning Post"
+  },
+  "s-1295": {
+   "title": "Trump calls Kim Jong Un a ‘friend’ and plays down N Korea’s nuclear arsenal",
+   "source": "Al Jazeera"
+  },
+  "s-1296": {
+   "title": "OpenAI launches ‘dots,’ personal AI assistant ‘built to handle everything’",
+   "source": "Al Jazeera"
+  },
+  "s-1297": {
+   "title": "India’s Ujjain tense as mosque partially demolished for Hindu pilgrimage",
+   "source": "Al Jazeera"
+  },
+  "s-1298": {
+   "title": "China’s 2030 solid-state battery goal, Chinese carmakers see boost in Europe: 7 EV reads",
+   "source": "South China Morning Post"
+  },
+  "s-1299": {
+   "title": "Writing the Playbook: A Strategy and Doctrine for American Economic Security",
+   "source": "War on the Rocks"
+  },
+  "s-1300": {
+   "title": "Earthquake M5.6 - 74 km S of Yonakuni, Japan",
+   "source": "USGS Seismic"
+  },
+  "s-1301": {
+   "title": "Earthquake M5.4 - Balleny Islands region",
+   "source": "USGS Seismic"
+  },
+  "s-1302": {
+   "title": "Somali pirates killed oil tanker crew before rescue, official tells BBC",
+   "source": "BBC World"
+  },
+  "s-1303": {
+   "title": "Ukraine's prized steel industry left in ruins by Russian missile campaign",
+   "source": "BBC World"
+  },
+  "s-1304": {
+   "title": "Rated Ready is Not Ready: What America’s Korea Exercises Actually Measure",
+   "source": "War on the Rocks"
+  },
+  "s-1305": {
+   "title": "Hong Kong to expand IP financing sandbox after 7 firms secure cheaper loans",
+   "source": "South China Morning Post"
+  },
+  "s-1306": {
+   "title": "Singapore jails man for slapping preschooler at bus stop over rude gesture",
+   "source": "South China Morning Post"
+  },
+  "s-1307": {
+   "title": "Pakistan vows to defend Saudi Arabia against Houthis",
+   "source": "Al Jazeera"
+  },
+  "s-1308": {
+   "title": "Nigeria and Ghana suffer huge AFCON 2027 qualifying shocks",
+   "source": "Al Jazeera"
+  },
+  "s-1309": {
+   "title": "Gentle giant Backpack wins Alaska’s Fat Bear Week",
+   "source": "Al Jazeera"
+  },
+  "s-1310": {
+   "title": "ISR ACTIVITY: 3 reconnaissance aircraft over Western Europe (bomber staging)",
+   "source": "ADSB Military Tracks"
+  },
+  "s-1311": {
+   "title": "Behind closed doors, a fatal beating exposes Malaysia’s parallel boarding school rules",
+   "source": "South China Morning Post"
+  },
+  "s-1312": {
+   "title": "Hong Kong’s IPO haul in first 9 months smashes record despite Nasdaq’s fundraising lead",
+   "source": "South China Morning Post"
+  },
+  "s-1313": {
+   "title": "EU weighs sweeping new trade powers against China before make-or-break October",
+   "source": "South China Morning Post"
+  },
+  "s-1314": {
+   "title": "FlyDubai flight to Israel diverted to Saudi Arabia after incident in cockpit",
+   "source": "South China Morning Post"
+  },
+  "s-1315": {
+   "title": "Israel-bound flight diverted after fight between pilots",
+   "source": "BBC World"
+  },
+  "s-1316": {
+   "title": "Spain announces ban on evictions after protests over 87-year-old woman's removal from flat",
+   "source": "BBC World"
+  },
+  "s-1317": {
+   "title": "Shallow seismic: M1.7 depth=4.6km at 23 km ENE of Harding-Birch Lakes, Alaska — explosion likelihood: MODERATE",
+   "source": "Seismic Explosion Detector"
+  },
+  "s-1318": {
+   "title": "S Korea demands apology over DMZ blasts as N Korea denies planting mines",
+   "source": "Al Jazeera"
+  },
+  "s-1319": {
+   "title": "FlyDubai flight to Israel diverted to Saudi Arabia after emergency alert",
+   "source": "Al Jazeera"
+  },
+  "s-1320": {
+   "title": "‘Dire situation’: Lebanese prisoners on hunger strike for 18 days",
+   "source": "Al Jazeera"
+  },
+  "s-1321": {
+   "title": "Travel Advisory [1]: Zimbabwe",
+   "source": "Travel Advisories"
+  },
+  "s-1322": {
+   "title": "Seoul residents up in arms over school for North Korean defectors",
+   "source": "South China Morning Post"
+  },
+  "s-1323": {
+   "title": "Can India curb childhood obesity by banning junk food near schools?",
+   "source": "South China Morning Post"
+  },
+  "s-1324": {
+   "title": "Ukraine’s former defense minister launches ‘Manhattan Project’ for killer robots",
+   "source": "Defense News"
+  },
+  "s-1325": {
+   "title": "Africa's richest man to launch Kenya oil refinery despite land protests",
+   "source": "BBC World"
+  },
+  "s-1326": {
+   "title": "Crackdown on South Africa's unsafe streets ordered by president to keep women safe",
+   "source": "BBC World"
+  },
+  "s-1327": {
+   "title": "Apple leads China smartphone sales after launch of iPhone 18 Pro. Can the momentum last?",
+   "source": "South China Morning Post"
+  },
+  "s-1328": {
+   "title": "UK‘s PM Burnham sets out plans to reshape public services",
+   "source": "Al Jazeera"
+  },
+  "s-1329": {
+   "title": "Hijabi students turned away from school in Azerbaijan",
+   "source": "Al Jazeera"
+  },
+  "s-1330": {
+   "title": "'He will never walk free': Indian judge's letter promises child sex abuse survivor",
+   "source": "BBC World"
+  },
+  "s-1331": {
+   "title": "4-winged fossil found in Liaoning challenges single origin of dinosaur flight",
+   "source": "South China Morning Post"
+  },
+  "s-1332": {
+   "title": "Tai O rope-ferry in Hong Kong ends service after 100 years – SCMP archive",
+   "source": "South China Morning Post"
+  },
+  "s-1333": {
+   "title": "Travel Advisory [1]: Saint Kitts and Nevis",
+   "source": "Travel Advisories"
+  },
+  "s-1334": {
+   "title": "Southeast Asia faces ‘sleeper’ food crisis from Hormuz fertiliser bottleneck",
+   "source": "South China Morning Post"
+  },
+  "s-1335": {
+   "title": "Singapore beefs up rivalry with Hong Kong by picking 5 firms to boost equity market",
+   "source": "South China Morning Post"
+  }
+ }
+}
