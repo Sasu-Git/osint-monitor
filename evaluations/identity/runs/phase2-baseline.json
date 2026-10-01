@@ -1,0 +1,1788 @@
+{
+ "gold_revision": 2,
+ "gold_sha256": "cc98765b7506b9faa3b81913655978c23afc0d21202e8b69e85c1217ffa2cc58",
+ "windows": [
+  {
+   "window": "2026-08-21",
+   "tally": {
+    "pairs": 32,
+    "together": 12,
+    "gold_same": 7,
+    "together_and_same": 7,
+    "cross_tick_same": 1,
+    "cross_tick_same_retained": 1,
+    "ambiguous": 1
+   },
+   "ledger": [
+    {
+     "case": "A002",
+     "gold": "DIFFERENT_DEVELOPMENT",
+     "current": "kept together",
+     "developments": [
+      [
+       5
+      ],
+      [
+       5
+      ]
+     ],
+     "ticks": [
+      4,
+      1
+     ],
+     "items": [
+      {
+       "id": "b-ed25155d038d",
+       "source": "BBC World",
+       "lang": "en",
+       "title": "Carney calls Trump's fresh tariffs a 'miscalculation' after trade talks collapse"
+      },
+      {
+       "id": "b-320f20d36f00",
+       "source": "South China Morning Post",
+       "lang": "en",
+       "title": "Canadian premier says ‘erratic’ Trump ‘not to be trusted’ amid US trade feud"
+      }
+     ],
+     "error_class": "whole-storyline overmerge",
+     "root_cause": "distinct occurrences of one storyline linked above the similarity threshold in one cluster (2-item Development); segmentation did not cut them",
+     "failure": "split failure (DIFFERENT kept together)"
+    },
+    {
+     "case": "A013",
+     "gold": "DIFFERENT_DEVELOPMENT",
+     "current": "kept together",
+     "developments": [
+      [
+       6
+      ],
+      [
+       6
+      ]
+     ],
+     "ticks": [
+      4,
+      4
+     ],
+     "items": [
+      {
+       "id": "b-9d435faf259d",
+       "source": "Al Jazeera",
+       "lang": "en",
+       "title": "Settlers target Palestinian homes in Occupied West Bank’s Area B"
+      },
+      {
+       "id": "b-e65cd1bb15f4",
+       "source": "Al Jazeera",
+       "lang": "en",
+       "title": "Jewish activists push back against Israeli settlers"
+      }
+     ],
+     "error_class": "whole-storyline overmerge",
+     "root_cause": "distinct occurrences of one storyline linked above the similarity threshold in one cluster (3-item Development); segmentation did not cut them",
+     "failure": "split failure (DIFFERENT kept together)"
+    },
+    {
+     "case": "A021",
+     "gold": "DIFFERENT_DEVELOPMENT",
+     "current": "kept together",
+     "developments": [
+      [
+       3
+      ],
+      [
+       3
+      ]
+     ],
+     "ticks": [
+      2,
+      3
+     ],
+     "items": [
+      {
+       "id": "b-2e0da6b7e7eb",
+       "source": "BBC World",
+       "lang": "en",
+       "title": "Ebola vaccine trial to start in DR Congo as warning issued over speed of infections"
+      },
+      {
+       "id": "b-8826249c972c",
+       "source": "Al Jazeera",
+       "lang": "en",
+       "title": "More than 16,000 doses of Ervebo vaccine arrive in Ebola-hit DR Congo"
+      }
+     ],
+     "error_class": "whole-storyline overmerge",
+     "root_cause": "distinct occurrences of one storyline linked above the similarity threshold in one cluster (3-item Development); segmentation did not cut them",
+     "failure": "split failure (DIFFERENT kept together)"
+    },
+    {
+     "case": "A022",
+     "gold": "DIFFERENT_DEVELOPMENT",
+     "current": "kept together",
+     "developments": [
+      [
+       3
+      ],
+      [
+       3
+      ]
+     ],
+     "ticks": [
+      3,
+      2
+     ],
+     "items": [
+      {
+       "id": "b-422186e87411",
+       "source": "Al Jazeera",
+       "lang": "en",
+       "title": "Ebola continues to spread in the DRC as 16,000 vaccine doses arrive"
+      },
+      {
+       "id": "b-2e0da6b7e7eb",
+       "source": "BBC World",
+       "lang": "en",
+       "title": "Ebola vaccine trial to start in DR Congo as warning issued over speed of infections"
+      }
+     ],
+     "error_class": "whole-storyline overmerge",
+     "root_cause": "distinct occurrences of one storyline linked above the similarity threshold in one cluster (3-item Development); segmentation did not cut them",
+     "failure": "split failure (DIFFERENT kept together)"
+    },
+    {
+     "case": "A023",
+     "gold": "DIFFERENT_DEVELOPMENT",
+     "current": "kept together",
+     "developments": [
+      [
+       6
+      ],
+      [
+       6
+      ]
+     ],
+     "ticks": [
+      1,
+      4
+     ],
+     "items": [
+      {
+       "id": "b-52e7176bac0a",
+       "source": "BBC World",
+       "lang": "en",
+       "title": "Israel re-establishes closed West Bank settlement, defying growing international protests"
+      },
+      {
+       "id": "b-e65cd1bb15f4",
+       "source": "Al Jazeera",
+       "lang": "en",
+       "title": "Jewish activists push back against Israeli settlers"
+      }
+     ],
+     "error_class": "whole-storyline overmerge",
+     "root_cause": "distinct occurrences of one storyline linked above the similarity threshold in one cluster (3-item Development); segmentation did not cut them",
+     "failure": "split failure (DIFFERENT kept together)"
+    }
+   ],
+   "developments": 7,
+   "multi_item": 7,
+   "mixed": [
+    "3",
+    "5",
+    "6"
+   ],
+   "labelled_developments": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7"
+   ],
+   "duplicate_memberships": {},
+   "items_in_developments": 18,
+   "single_source": [],
+   "roundups": [],
+   "late_memberships": 0,
+   "overlap_extensions": 0
+  },
+  {
+   "window": "2026-09-25",
+   "tally": {
+    "pairs": 11,
+    "together": 4,
+    "gold_same": 5,
+    "together_and_same": 2,
+    "cross_tick_same": 2,
+    "cross_tick_same_retained": 1
+   },
+   "ledger": [
+    {
+     "case": "B002",
+     "gold": "SAME_DEVELOPMENT",
+     "current": "not grouped",
+     "developments": [
+      [],
+      []
+     ],
+     "ticks": [
+      3,
+      3
+     ],
+     "items": [
+      {
+       "id": "b-5d1ba8e525da",
+       "source": "Breaking Defense",
+       "lang": "en",
+       "title": "OCCAR awards $4.2B DDX destroyer contract to Fincantieri, Leonardo joint venture"
+      },
+      {
+       "id": "b-d72e5f6a5e01",
+       "source": "Defense News",
+       "lang": "en",
+       "title": "Italy taps state-owned firms to build two naval destroyers in $4.2 billion deal"
+      }
+     ],
+     "error_class": "other",
+     "root_cause": "same-tick items of one occurrence not grouped (below the link threshold or left as noise)",
+     "failure": "merge failure (SAME kept apart)"
+    },
+    {
+     "case": "B004",
+     "gold": "SAME_DEVELOPMENT",
+     "current": "not grouped",
+     "developments": [
+      [],
+      []
+     ],
+     "ticks": [
+      4,
+      4
+     ],
+     "items": [
+      {
+       "id": "b-63cb0d4f2400",
+       "source": "BBC World",
+       "lang": "en",
+       "title": "Trump and Xi exchange warm words at state dinner but little progress on key issues"
+      },
+      {
+       "id": "b-9796005bb46b",
+       "source": "South China Morning Post",
+       "lang": "en",
+       "title": "From wine to ping-pong, Trump and Xi’s state dinner is heavy on historic symbolism"
+      }
+     ],
+     "error_class": "other",
+     "root_cause": "same-tick items of one occurrence not grouped (below the link threshold or left as noise)",
+     "failure": "merge failure (SAME kept apart)"
+    },
+    {
+     "case": "B007",
+     "gold": "SAME_DEVELOPMENT",
+     "current": "not grouped",
+     "developments": [
+      [],
+      []
+     ],
+     "ticks": [
+      3,
+      1
+     ],
+     "items": [
+      {
+       "id": "b-6e3eb47c7f66",
+       "source": "Breaking Defense",
+       "lang": "en",
+       "title": "The Air Force says its China think tank will continue. Its director says it’s basically dead."
+      },
+      {
+       "id": "b-aa291f31d75e",
+       "source": "Defense News",
+       "lang": "en",
+       "title": "Air Force, civilian staff dispute status of China Aerospace Studies Institute"
+      }
+     ],
+     "error_class": "segmentation interaction",
+     "root_cause": "segmentation cut the link between them (guard: headline_similarity)",
+     "failure": "merge failure (SAME kept apart)"
+    },
+    {
+     "case": "B008",
+     "gold": "DIFFERENT_DEVELOPMENT",
+     "current": "kept together",
+     "developments": [
+      [
+       1
+      ],
+      [
+       1
+      ]
+     ],
+     "ticks": [
+      4,
+      4
+     ],
+     "items": [
+      {
+       "id": "b-683038d2cd37",
+       "source": "South China Morning Post",
+       "lang": "en",
+       "title": "Trump gives Xi a tour of his pet White House building projects, including the ballroom"
+      },
+      {
+       "id": "b-97cb65d1a469",
+       "source": "BBC World",
+       "lang": "en",
+       "title": "Xi got Trump's red carpet welcome - but not everything he wanted"
+      }
+     ],
+     "error_class": "whole-storyline overmerge",
+     "root_cause": "distinct occurrences of one storyline linked above the similarity threshold in one cluster (2-item Development); segmentation did not cut them",
+     "failure": "split failure (DIFFERENT kept together)"
+    },
+    {
+     "case": "B011",
+     "gold": "DIFFERENT_DEVELOPMENT",
+     "current": "kept together",
+     "developments": [
+      [
+       2
+      ],
+      [
+       2
+      ]
+     ],
+     "ticks": [
+      4,
+      3
+     ],
+     "items": [
+      {
+       "id": "b-38730424bfbc",
+       "source": "Al Jazeera",
+       "lang": "en",
+       "title": "Pakistani forces kill Afghan Taliban fighters in border escalation"
+      },
+      {
+       "id": "b-14aae9d37ebe",
+       "source": "BBC World",
+       "lang": "en",
+       "title": "Four civilians killed in Pakistani strikes in Afghanistan, Taliban says"
+      }
+     ],
+     "error_class": "whole-storyline overmerge",
+     "root_cause": "distinct occurrences of one storyline linked above the similarity threshold in one cluster (2-item Development); segmentation did not cut them",
+     "failure": "split failure (DIFFERENT kept together)"
+    }
+   ],
+   "developments": 4,
+   "multi_item": 4,
+   "mixed": [
+    "1",
+    "2"
+   ],
+   "labelled_developments": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ],
+   "duplicate_memberships": {},
+   "items_in_developments": 8,
+   "single_source": [],
+   "roundups": [],
+   "late_memberships": 0,
+   "overlap_extensions": 0
+  },
+  {
+   "window": "2026-09-30-multilingual",
+   "tally": {
+    "pairs": 115,
+    "together": 56,
+    "gold_same": 46,
+    "together_and_same": 32,
+    "cross_tick_same": 16,
+    "cross_tick_same_retained": 12
+   },
+   "ledger": [
+    {
+     "case": "C001",
+     "gold": "DIFFERENT_DEVELOPMENT",
+     "current": "kept together",
+     "developments": [
+      [
+       6
+      ],
+      [
+       6
+      ]
+     ],
+     "ticks": [
+      3,
+      3
+     ],
+     "items": [
+      {
+       "id": "sx-129",
+       "source": "Rai News Esteri",
+       "lang": "it",
+       "title": "Politica e scienza divise, gli esperti: “L'autoregolamentazione di Big Tech è una farsa\""
+      },
+      {
+       "id": "sx-133",
+       "source": "Rai News Esteri",
+       "lang": "it",
+       "title": "Gli Usa prestano alle aziende energetiche 40 milioni di barili di petrolio delle riserve strategiche"
+      }
+     ],
+     "error_class": "late attachment",
+     "root_cause": "a later-tick cluster overlapping the Development extends it with a different occurrence (overlap-merge)",
+     "failure": "split failure (DIFFERENT kept together)"
+    },
+    {
+     "case": "C002",
+     "gold": "DIFFERENT_DEVELOPMENT",
+     "current": "kept together",
+     "developments": [
+      [
+       6
+      ],
+      [
+       6
+      ]
+     ],
+     "ticks": [
+      4,
+      3
+     ],
+     "items": [
+      {
+       "id": "sx-48",
+       "source": "ANSA Mondo",
+       "lang": "it",
+       "title": "Trump firma ordine esecutivo, 'inaugura l'era della Super Intelligenza'"
+      },
+      {
+       "id": "sx-129",
+       "source": "Rai News Esteri",
+       "lang": "it",
+       "title": "Politica e scienza divise, gli esperti: “L'autoregolamentazione di Big Tech è una farsa\""
+      }
+     ],
+     "error_class": "late attachment",
+     "root_cause": "a later-tick cluster overlapping the Development extends it with a different occurrence (overlap-merge)",
+     "failure": "split failure (DIFFERENT kept together)"
+    },
+    {
+     "case": "C003",
+     "gold": "DIFFERENT_DEVELOPMENT",
+     "current": "kept together",
+     "developments": [
+      [
+       1
+      ],
+      [
+       1
+      ]
+     ],
+     "ticks": [
+      2,
+      2
+     ],
+     "items": [
+      {
+       "id": "sx-553",
+       "source": "Federal Register",
+       "lang": "en",
+       "title": "Accreditation and Approval of Intertek USA, Inc. (Chelsea, MA), as a Commercial Gauger and Laboratory"
+      },
+      {
+       "id": "sx-554",
+       "source": "Federal Register",
+       "lang": "en",
+       "title": "Accreditation and Approval of Intertek USA, Inc. (Carteret, NJ), as a Commercial Gauger and Laboratory"
+      }
+     ],
+     "error_class": "single-source promotion",
+     "root_cause": "one outlet's near-identical headlines form the Development on their own",
+     "failure": "split failure (DIFFERENT kept together)"
+    },
+    {
+     "case": "C005",
+     "gold": "SAME_DEVELOPMENT",
+     "current": "not grouped",
+     "developments": [
+      [],
+      []
+     ],
+     "ticks": [
+      3,
+      1
+     ],
+     "items": [
+      {
+       "id": "sx-421",
+       "source": "UN Press",
+       "lang": "en",
+       "title": "At ‘Most Dangerous Nuclear Moment’ Since Cold War Ended, Secretary-General Observance Message Urges Changing Course, Replacing Threats with Dialogue"
+      },
+      {
+       "id": "sx-424",
+       "source": "UN Press",
+       "lang": "en",
+       "title": "International Security Rapidly Deteriorates; General Assembly Urges Nations to Address Weaker Global Arms Treaties and Heightened Nuclear Risks"
+      }
+     ],
+     "error_class": "missed continuation",
+     "root_cause": "the later item did not join the earlier item's Development (or neither was clustered)",
+     "failure": "merge failure (SAME kept apart)"
+    },
+    {
+     "case": "C007",
+     "gold": "DIFFERENT_DEVELOPMENT",
+     "current": "kept together",
+     "developments": [
+      [
+       6
+      ],
+      [
+       6
+      ]
+     ],
+     "ticks": [
+      3,
+      3
+     ],
+     "items": [
+      {
+       "id": "sx-131",
+       "source": "Rai News Esteri",
+       "lang": "it",
+       "title": "Donald Trump e la nuova \"età dell'oro\": vertice con i big della tecnologia"
+      },
+      {
+       "id": "sx-129",
+       "source": "Rai News Esteri",
+       "lang": "it",
+       "title": "Politica e scienza divise, gli esperti: “L'autoregolamentazione di Big Tech è una farsa\""
+      }
+     ],
+     "error_class": "whole-storyline overmerge",
+     "root_cause": "distinct occurrences of one storyline linked above the similarity threshold in one cluster (15-item Development); segmentation did not cut them",
+     "failure": "split failure (DIFFERENT kept together)"
+    },
+    {
+     "case": "C012",
+     "gold": "DIFFERENT_DEVELOPMENT",
+     "current": "kept together",
+     "developments": [
+      [
+       6
+      ],
+      [
+       6
+      ]
+     ],
+     "ticks": [
+      3,
+      3
+     ],
+     "items": [
+      {
+       "id": "sx-131",
+       "source": "Rai News Esteri",
+       "lang": "it",
+       "title": "Donald Trump e la nuova \"età dell'oro\": vertice con i big della tecnologia"
+      },
+      {
+       "id": "sx-263",
+       "source": "El País Internacional",
+       "lang": "es",
+       "title": "Trump lanza una página oficial de información sobre el Gobierno de EE UU que le desmiente"
+      }
+     ],
+     "error_class": "whole-storyline overmerge",
+     "root_cause": "distinct occurrences of one storyline linked above the similarity threshold in one cluster (15-item Development); segmentation did not cut them",
+     "failure": "split failure (DIFFERENT kept together)"
+    },
+    {
+     "case": "C017",
+     "gold": "DIFFERENT_DEVELOPMENT",
+     "current": "kept together",
+     "developments": [
+      [
+       6
+      ],
+      [
+       6
+      ]
+     ],
+     "ticks": [
+      3,
+      3
+     ],
+     "items": [
+      {
+       "id": "sx-238",
+       "source": "Il Sole 24 Ore Mondo",
+       "lang": "it",
+       "title": "Trump, per Ai solo autoregolamentazione. Firmato l’ordine che cambia il nome in Super Intelligence"
+      },
+      {
+       "id": "sx-129",
+       "source": "Rai News Esteri",
+       "lang": "it",
+       "title": "Politica e scienza divise, gli esperti: “L'autoregolamentazione di Big Tech è una farsa\""
+      }
+     ],
+     "error_class": "whole-storyline overmerge",
+     "root_cause": "distinct occurrences of one storyline linked above the similarity threshold in one cluster (15-item Development); segmentation did not cut them",
+     "failure": "split failure (DIFFERENT kept together)"
+    },
+    {
+     "case": "C022",
+     "gold": "DIFFERENT_DEVELOPMENT",
+     "current": "kept together",
+     "developments": [
+      [
+       6
+      ],
+      [
+       6
+      ]
+     ],
+     "ticks": [
+      3,
+      4
+     ],
+     "items": [
+      {
+       "id": "sx-71",
+       "source": "Europa Press Internacional",
+       "lang": "es",
+       "title": "Trump ordena renombrar la 'Inteligencia Artificial' como 'Súper Inteligencia' en todas las agencias del Gobierno de EEUU"
+      },
+      {
+       "id": "sx-176",
+       "source": "France 24 Español",
+       "lang": "es",
+       "title": "Trump y los gigantes de la inteligencia artificial sellan un acuerdo \"moralmente vinculante\""
+      }
+     ],
+     "error_class": "late attachment",
+     "root_cause": "a later-tick cluster overlapping the Development extends it with a different occurrence (overlap-merge)",
+     "failure": "split failure (DIFFERENT kept together)"
+    },
+    {
+     "case": "C026",
+     "gold": "DIFFERENT_DEVELOPMENT",
+     "current": "kept together",
+     "developments": [
+      [
+       20
+      ],
+      [
+       20
+      ]
+     ],
+     "ticks": [
+      3,
+      4
+     ],
+     "items": [
+      {
+       "id": "sx-264",
+       "source": "Clarín Mundo",
+       "lang": "es",
+       "title": "Por la guerra y la incertidumbre económica, la moneda de Irán se hunde en un mínimo histórico"
+      },
+      {
+       "id": "sx-75",
+       "source": "Europa Press Internacional",
+       "lang": "es",
+       "title": "Irán confirma que recibió la respuesta oficial de EEUU a su última propuesta para un acuerdo de paz"
+      }
+     ],
+     "error_class": "whole-storyline overmerge",
+     "root_cause": "distinct occurrences of one storyline linked above the similarity threshold in one cluster (3-item Development); segmentation did not cut them",
+     "failure": "split failure (DIFFERENT kept together)"
+    },
+    {
+     "case": "C033",
+     "gold": "DIFFERENT_DEVELOPMENT",
+     "current": "kept together",
+     "developments": [
+      [
+       20
+      ],
+      [
+       20
+      ]
+     ],
+     "ticks": [
+      4,
+      4
+     ],
+     "items": [
+      {
+       "id": "sx-75",
+       "source": "Europa Press Internacional",
+       "lang": "es",
+       "title": "Irán confirma que recibió la respuesta oficial de EEUU a su última propuesta para un acuerdo de paz"
+      },
+      {
+       "id": "sx-536",
+       "source": "GDELT",
+       "lang": "en",
+       "title": "Iran Currency Hits a New Record Low as War Erodes the Country Economic Stability"
+      }
+     ],
+     "error_class": "whole-storyline overmerge",
+     "root_cause": "distinct occurrences of one storyline linked above the similarity threshold in one cluster (3-item Development); segmentation did not cut them",
+     "failure": "split failure (DIFFERENT kept together)"
+    },
+    {
+     "case": "C034",
+     "gold": "SAME_DEVELOPMENT",
+     "current": "not grouped",
+     "developments": [
+      [
+       3
+      ],
+      []
+     ],
+     "ticks": [
+      3,
+      3
+     ],
+     "items": [
+      {
+       "id": "sx-352",
+       "source": "European Commission Press",
+       "lang": "en",
+       "title": "Commission proposes a new EU Critical Communication System for first responders"
+      },
+      {
+       "id": "sx-351",
+       "source": "European Commission Press",
+       "lang": "en",
+       "title": "Questions and answers on the European Union Critical Communication System"
+      }
+     ],
+     "error_class": "missed continuation",
+     "root_cause": "one item is in a Development, the other was left out of it",
+     "failure": "merge failure (SAME kept apart)"
+    },
+    {
+     "case": "C035",
+     "gold": "DIFFERENT_DEVELOPMENT",
+     "current": "kept together",
+     "developments": [
+      [
+       7
+      ],
+      [
+       7
+      ]
+     ],
+     "ticks": [
+      4,
+      3
+     ],
+     "items": [
+      {
+       "id": "sx-186",
+       "source": "France 24 Español",
+       "lang": "es",
+       "title": "Informe desde París: más de 200 manifestaciones de empleados públicos, pide aumento de sueldo"
+      },
+      {
+       "id": "sx-111",
+       "source": "BBC Mundo",
+       "lang": "es",
+       "title": "La anciana Maricarmen podrá volver a su casa tras el desalojo que puso el foco en la crisis de vivienda en España"
+      }
+     ],
+     "error_class": "late attachment",
+     "root_cause": "a later-tick cluster overlapping the Development extends it with a different occurrence (overlap-merge)",
+     "failure": "split failure (DIFFERENT kept together)"
+    },
+    {
+     "case": "C036",
+     "gold": "SAME_DEVELOPMENT",
+     "current": "not grouped",
+     "developments": [
+      [
+       12
+      ],
+      []
+     ],
+     "ticks": [
+      3,
+      3
+     ],
+     "items": [
+      {
+       "id": "sx-240",
+       "source": "Il Sole 24 Ore Mondo",
+       "lang": "it",
+       "title": "«Hope again», l’appello di Burnham agli inglesi tra stop alle privatizzazioni e riforma del welfare"
+      },
+      {
+       "id": "sx-145",
+       "source": "DW World",
+       "lang": "en",
+       "title": "UK PM Burnham seeks 'hope again' at Labour Party conference"
+      }
+     ],
+     "error_class": "segmentation interaction",
+     "root_cause": "segmentation cut the link between them (guard: headline_similarity) (cross-language: the embedding model is English-only)",
+     "failure": "merge failure (SAME kept apart)"
+    },
+    {
+     "case": "C037",
+     "gold": "DIFFERENT_DEVELOPMENT",
+     "current": "kept together",
+     "developments": [
+      [
+       7
+      ],
+      [
+       7
+      ]
+     ],
+     "ticks": [
+      4,
+      3
+     ],
+     "items": [
+      {
+       "id": "sx-181",
+       "source": "France 24 Español",
+       "lang": "es",
+       "title": "Trabajadores públicos franceses se movilizan para exigir aumentos de salarios"
+      },
+      {
+       "id": "sx-111",
+       "source": "BBC Mundo",
+       "lang": "es",
+       "title": "La anciana Maricarmen podrá volver a su casa tras el desalojo que puso el foco en la crisis de vivienda en España"
+      }
+     ],
+     "error_class": "late attachment",
+     "root_cause": "a later-tick cluster overlapping the Development extends it with a different occurrence (overlap-merge)",
+     "failure": "split failure (DIFFERENT kept together)"
+    },
+    {
+     "case": "C042",
+     "gold": "DIFFERENT_DEVELOPMENT",
+     "current": "kept together",
+     "developments": [
+      [
+       6
+      ],
+      [
+       6
+      ]
+     ],
+     "ticks": [
+      3,
+      3
+     ],
+     "items": [
+      {
+       "id": "sx-130",
+       "source": "Rai News Esteri",
+       "lang": "it",
+       "title": "Tradurre il potere, l'arduo mestiere dell'interprete"
+      },
+      {
+       "id": "sx-129",
+       "source": "Rai News Esteri",
+       "lang": "it",
+       "title": "Politica e scienza divise, gli esperti: “L'autoregolamentazione di Big Tech è una farsa\""
+      }
+     ],
+     "error_class": "late attachment",
+     "root_cause": "a later-tick cluster overlapping the Development extends it with a different occurrence (overlap-merge)",
+     "failure": "split failure (DIFFERENT kept together)"
+    },
+    {
+     "case": "C043",
+     "gold": "SAME_DEVELOPMENT",
+     "current": "not grouped",
+     "developments": [
+      [],
+      [
+       2
+      ]
+     ],
+     "ticks": [
+      1,
+      3
+     ],
+     "items": [
+      {
+       "id": "sx-4",
+       "source": "Defense.gov",
+       "lang": "en",
+       "title": "Department of War and RTX Accelerate Advanced Medium-Range Air-to-Air Missile Production Through $20.7B Award"
+      },
+      {
+       "id": "sx-510",
+       "source": "Breaking Defense",
+       "lang": "en",
+       "title": "Raytheon nets potential $20.7 billion AMRAAM deal"
+      }
+     ],
+     "error_class": "segmentation interaction",
+     "root_cause": "segmentation cut the link between them (guard: headline_similarity)",
+     "failure": "merge failure (SAME kept apart)"
+    },
+    {
+     "case": "C046",
+     "gold": "DIFFERENT_DEVELOPMENT",
+     "current": "kept together",
+     "developments": [
+      [
+       7
+      ],
+      [
+       7
+      ]
+     ],
+     "ticks": [
+      4,
+      3
+     ],
+     "items": [
+      {
+       "id": "sx-76",
+       "source": "Europa Press Internacional",
+       "lang": "es",
+       "title": "Al menos 440 detenidos en Francia en protestas estudiantiles unidas a la huelga de cientos de miles en el sector público"
+      },
+      {
+       "id": "sx-111",
+       "source": "BBC Mundo",
+       "lang": "es",
+       "title": "La anciana Maricarmen podrá volver a su casa tras el desalojo que puso el foco en la crisis de vivienda en España"
+      }
+     ],
+     "error_class": "late attachment",
+     "root_cause": "a later-tick cluster overlapping the Development extends it with a different occurrence (overlap-merge)",
+     "failure": "split failure (DIFFERENT kept together)"
+    },
+    {
+     "case": "C051",
+     "gold": "SAME_DEVELOPMENT",
+     "current": "not grouped",
+     "developments": [
+      [],
+      []
+     ],
+     "ticks": [
+      3,
+      3
+     ],
+     "items": [
+      {
+       "id": "sx-400",
+       "source": "UN News",
+       "lang": "en",
+       "title": "Security Council LIVE: DRC peace deals fail to halt fighting as Ebola deepens crisis"
+      },
+      {
+       "id": "sx-416",
+       "source": "UN Press",
+       "lang": "en",
+       "title": "Commitments Must Yield Tangible Progress in Democratic Republic of Congo, Special Representative Tells Security Council"
+      }
+     ],
+     "error_class": "segmentation interaction",
+     "root_cause": "segmentation cut the link between them (guard: headline_similarity)",
+     "failure": "merge failure (SAME kept apart)"
+    },
+    {
+     "case": "C062",
+     "gold": "DIFFERENT_DEVELOPMENT",
+     "current": "kept together",
+     "developments": [
+      [
+       7
+      ],
+      [
+       7
+      ]
+     ],
+     "ticks": [
+      4,
+      3
+     ],
+     "items": [
+      {
+       "id": "sx-76",
+       "source": "Europa Press Internacional",
+       "lang": "es",
+       "title": "Al menos 440 detenidos en Francia en protestas estudiantiles unidas a la huelga de cientos de miles en el sector público"
+      },
+      {
+       "id": "sx-270",
+       "source": "Clarín Mundo",
+       "lang": "es",
+       "title": "Presionado por las protestas, Pedro Sánchez anuncia decretos clave para enfrentar la crisis de la vivienda en España"
+      }
+     ],
+     "error_class": "late attachment",
+     "root_cause": "a later-tick cluster overlapping the Development extends it with a different occurrence (overlap-merge)",
+     "failure": "split failure (DIFFERENT kept together)"
+    },
+    {
+     "case": "C063",
+     "gold": "DIFFERENT_DEVELOPMENT",
+     "current": "kept together",
+     "developments": [
+      [
+       6
+      ],
+      [
+       6
+      ]
+     ],
+     "ticks": [
+      3,
+      3
+     ],
+     "items": [
+      {
+       "id": "sx-263",
+       "source": "El País Internacional",
+       "lang": "es",
+       "title": "Trump lanza una página oficial de información sobre el Gobierno de EE UU que le desmiente"
+      },
+      {
+       "id": "sx-133",
+       "source": "Rai News Esteri",
+       "lang": "it",
+       "title": "Gli Usa prestano alle aziende energetiche 40 milioni di barili di petrolio delle riserve strategiche"
+      }
+     ],
+     "error_class": "late attachment",
+     "root_cause": "a later-tick cluster overlapping the Development extends it with a different occurrence (overlap-merge)",
+     "failure": "split failure (DIFFERENT kept together)"
+    },
+    {
+     "case": "C064",
+     "gold": "SAME_DEVELOPMENT",
+     "current": "not grouped",
+     "developments": [
+      [],
+      []
+     ],
+     "ticks": [
+      1,
+      3
+     ],
+     "items": [
+      {
+       "id": "sx-423",
+       "source": "UN Press",
+       "lang": "en",
+       "title": "Security Council, 10232nd Meeting (AM) Democratic Republic of the Congo/MONUSCO"
+      },
+      {
+       "id": "sx-416",
+       "source": "UN Press",
+       "lang": "en",
+       "title": "Commitments Must Yield Tangible Progress in Democratic Republic of Congo, Special Representative Tells Security Council"
+      }
+     ],
+     "error_class": "missed continuation",
+     "root_cause": "the later item did not join the earlier item's Development (or neither was clustered)",
+     "failure": "merge failure (SAME kept apart)"
+    },
+    {
+     "case": "C066",
+     "gold": "SAME_DEVELOPMENT",
+     "current": "not grouped",
+     "developments": [
+      [
+       21
+      ],
+      []
+     ],
+     "ticks": [
+      4,
+      4
+     ],
+     "items": [
+      {
+       "id": "sx-122",
+       "source": "Rai News Esteri",
+       "lang": "it",
+       "title": "Volo Flydubai, l'aereo diretto a Tel Aviv viene deviato in Arabia Saudita"
+      },
+      {
+       "id": "sx-39",
+       "source": "ANSA Mondo",
+       "lang": "it",
+       "title": "Media, piloti del volo FlyDubai sarebbero uno dell'Oman e l'altro emiratino"
+      }
+     ],
+     "error_class": "segmentation interaction",
+     "root_cause": "segmentation cut the link between them (guard: disjoint_locations)",
+     "failure": "merge failure (SAME kept apart)"
+    },
+    {
+     "case": "C073",
+     "gold": "DIFFERENT_DEVELOPMENT",
+     "current": "kept together",
+     "developments": [
+      [
+       6
+      ],
+      [
+       6
+      ]
+     ],
+     "ticks": [
+      4,
+      3
+     ],
+     "items": [
+      {
+       "id": "sx-235",
+       "source": "Il Sole 24 Ore Mondo",
+       "lang": "it",
+       "title": "Ft: Trump valuta il divieto di export del gasolio per contenere la crisi dei prezzi"
+      },
+      {
+       "id": "sx-129",
+       "source": "Rai News Esteri",
+       "lang": "it",
+       "title": "Politica e scienza divise, gli esperti: “L'autoregolamentazione di Big Tech è una farsa\""
+      }
+     ],
+     "error_class": "late attachment",
+     "root_cause": "a later-tick cluster overlapping the Development extends it with a different occurrence (overlap-merge)",
+     "failure": "split failure (DIFFERENT kept together)"
+    },
+    {
+     "case": "C076",
+     "gold": "SAME_DEVELOPMENT",
+     "current": "not grouped",
+     "developments": [
+      [],
+      [
+       15
+      ]
+     ],
+     "ticks": [
+      4,
+      4
+     ],
+     "items": [
+      {
+       "id": "sx-277",
+       "source": "Kyiv Independent",
+       "lang": "en",
+       "title": "Drone crashes in Moldova amid Russian mass attack on Ukraine"
+      },
+      {
+       "id": "sx-275",
+       "source": "Kyiv Independent",
+       "lang": "en",
+       "title": "Russian attacks kill at least 6, injure 34 across Ukraine as Kyiv faces another overnight missile, drone attack"
+      }
+     ],
+     "error_class": "missed continuation",
+     "root_cause": "one item is in a Development, the other was left out of it",
+     "failure": "merge failure (SAME kept apart)"
+    },
+    {
+     "case": "C077",
+     "gold": "SAME_DEVELOPMENT",
+     "current": "not grouped",
+     "developments": [
+      [],
+      [
+       2
+      ]
+     ],
+     "ticks": [
+      1,
+      3
+     ],
+     "items": [
+      {
+       "id": "sx-4",
+       "source": "Defense.gov",
+       "lang": "en",
+       "title": "Department of War and RTX Accelerate Advanced Medium-Range Air-to-Air Missile Production Through $20.7B Award"
+      },
+      {
+       "id": "sx-488",
+       "source": "Defense News",
+       "lang": "en",
+       "title": "Pentagon awards Raytheon up to $20.7 billion to nearly double AMRAAM production"
+      }
+     ],
+     "error_class": "segmentation interaction",
+     "root_cause": "segmentation cut the link between them (guard: headline_similarity)",
+     "failure": "merge failure (SAME kept apart)"
+    },
+    {
+     "case": "C079",
+     "gold": "DIFFERENT_DEVELOPMENT",
+     "current": "kept together",
+     "developments": [
+      [
+       26
+      ],
+      [
+       26
+      ]
+     ],
+     "ticks": [
+      3,
+      4
+     ],
+     "items": [
+      {
+       "id": "sx-245",
+       "source": "El País Internacional",
+       "lang": "es",
+       "title": "Tres soldados israelíes sobre Gaza: “Llegó un momento en que ya no parecía tan grave matar a decenas de personas”"
+      },
+      {
+       "id": "sx-80",
+       "source": "Europa Press Internacional",
+       "lang": "es",
+       "title": "Muere una palestina en un nuevo ataque de Israel contra la ciudad de Gaza a pesar del alto el fuego"
+      }
+     ],
+     "error_class": "whole-storyline overmerge",
+     "root_cause": "distinct occurrences of one storyline linked above the similarity threshold in one cluster (2-item Development); segmentation did not cut them",
+     "failure": "split failure (DIFFERENT kept together)"
+    },
+    {
+     "case": "C080",
+     "gold": "DIFFERENT_DEVELOPMENT",
+     "current": "kept together",
+     "developments": [
+      [
+       10
+      ],
+      [
+       10
+      ]
+     ],
+     "ticks": [
+      2,
+      3
+     ],
+     "items": [
+      {
+       "id": "sx-150",
+       "source": "DW World",
+       "lang": "en",
+       "title": "Malaysia repatriates Myanmar migrants despite UN warnings"
+      },
+      {
+       "id": "sx-396",
+       "source": "UN News",
+       "lang": "en",
+       "title": "World News in Brief: Deadly Myanmar strikes as Malaysia begins deportations, new emergency funding released, Gaza and West Bank update"
+      }
+     ],
+     "error_class": "roundup contamination",
+     "root_cause": "a roundup item shares the Development, so its mixed headline links distinct occurrences",
+     "failure": "split failure (DIFFERENT kept together)"
+    },
+    {
+     "case": "C084",
+     "gold": "DIFFERENT_DEVELOPMENT",
+     "current": "kept together",
+     "developments": [
+      [
+       6
+      ],
+      [
+       6
+      ]
+     ],
+     "ticks": [
+      4,
+      3
+     ],
+     "items": [
+      {
+       "id": "sx-43",
+       "source": "ANSA Mondo",
+       "lang": "it",
+       "title": "Ft, colloqui tra Trump e consiglieri per valutare uno stop all'export di gasolio"
+      },
+      {
+       "id": "sx-129",
+       "source": "Rai News Esteri",
+       "lang": "it",
+       "title": "Politica e scienza divise, gli esperti: “L'autoregolamentazione di Big Tech è una farsa\""
+      }
+     ],
+     "error_class": "late attachment",
+     "root_cause": "a later-tick cluster overlapping the Development extends it with a different occurrence (overlap-merge)",
+     "failure": "split failure (DIFFERENT kept together)"
+    },
+    {
+     "case": "C092",
+     "gold": "SAME_DEVELOPMENT",
+     "current": "not grouped",
+     "developments": [
+      [],
+      [
+       21
+      ]
+     ],
+     "ticks": [
+      4,
+      4
+     ],
+     "items": [
+      {
+       "id": "sx-39",
+       "source": "ANSA Mondo",
+       "lang": "it",
+       "title": "Media, piloti del volo FlyDubai sarebbero uno dell'Oman e l'altro emiratino"
+      },
+      {
+       "id": "sx-123",
+       "source": "Rai News Esteri",
+       "lang": "it",
+       "title": "Volo FlyDubai, la ricostruzione di Tel Aviv: \"Pilota ha cercato di far schiantare l'aereo\""
+      }
+     ],
+     "error_class": "segmentation interaction",
+     "root_cause": "segmentation cut the link between them (guard: disjoint_locations)",
+     "failure": "merge failure (SAME kept apart)"
+    },
+    {
+     "case": "C094",
+     "gold": "DIFFERENT_DEVELOPMENT",
+     "current": "kept together",
+     "developments": [
+      [
+       16
+      ],
+      [
+       16
+      ]
+     ],
+     "ticks": [
+      4,
+      2
+     ],
+     "items": [
+      {
+       "id": "sx-79",
+       "source": "Europa Press Internacional",
+       "lang": "es",
+       "title": "El Senado de EEUU rechaza votar una resolución acerca de la violencia en Cisjordania tras el último ataque de colonos"
+      },
+      {
+       "id": "sx-243",
+       "source": "Il Sole 24 Ore Mondo",
+       "lang": "it",
+       "title": "Cisgiordania, raid di coloni israeliani contro famiglia palestinese a Jalud. Condanna Usa"
+      }
+     ],
+     "error_class": "whole-storyline overmerge",
+     "root_cause": "distinct occurrences of one storyline linked above the similarity threshold in one cluster (3-item Development); segmentation did not cut them",
+     "failure": "split failure (DIFFERENT kept together)"
+    },
+    {
+     "case": "C096",
+     "gold": "SAME_DEVELOPMENT",
+     "current": "not grouped",
+     "developments": [
+      [],
+      [
+       21
+      ]
+     ],
+     "ticks": [
+      4,
+      4
+     ],
+     "items": [
+      {
+       "id": "sx-39",
+       "source": "ANSA Mondo",
+       "lang": "it",
+       "title": "Media, piloti del volo FlyDubai sarebbero uno dell'Oman e l'altro emiratino"
+      },
+      {
+       "id": "sx-40",
+       "source": "ANSA Mondo",
+       "lang": "it",
+       "title": "'Emergenza sul volo FlyDubai per una lite tra pilota russo e copilota ucraino'"
+      }
+     ],
+     "error_class": "missed continuation",
+     "root_cause": "one item is in a Development, the other was left out of it",
+     "failure": "merge failure (SAME kept apart)"
+    },
+    {
+     "case": "C103",
+     "gold": "SAME_DEVELOPMENT",
+     "current": "not grouped",
+     "developments": [
+      [
+       3
+      ],
+      []
+     ],
+     "ticks": [
+      3,
+      3
+     ],
+     "items": [
+      {
+       "id": "sx-352",
+       "source": "European Commission Press",
+       "lang": "en",
+       "title": "Commission proposes a new EU Critical Communication System for first responders"
+      },
+      {
+       "id": "sx-350",
+       "source": "European Commission Press",
+       "lang": "en",
+       "title": "Factsheet: EU Critical Communication System"
+      }
+     ],
+     "error_class": "missed continuation",
+     "root_cause": "one item is in a Development, the other was left out of it",
+     "failure": "merge failure (SAME kept apart)"
+    },
+    {
+     "case": "C104",
+     "gold": "SAME_DEVELOPMENT",
+     "current": "not grouped",
+     "developments": [
+      [
+       9
+      ],
+      []
+     ],
+     "ticks": [
+      4,
+      4
+     ],
+     "items": [
+      {
+       "id": "sx-1",
+       "source": "Defense.gov",
+       "lang": "en",
+       "title": "Statement by Chief Pentagon Spokesman Sean Parnell on the Conclusion of the U.S. Military Mission in Iraq"
+      },
+      {
+       "id": "sx-121",
+       "source": "Rai News Esteri",
+       "lang": "it",
+       "title": "Gli Stati Uniti annunciano la fine ufficiale della missione in Iraq"
+      }
+     ],
+     "error_class": "missed continuation",
+     "root_cause": "one item is in a Development, the other was left out of it (cross-language: the embedding model is English-only)",
+     "failure": "merge failure (SAME kept apart)"
+    },
+    {
+     "case": "C105",
+     "gold": "DIFFERENT_DEVELOPMENT",
+     "current": "kept together",
+     "developments": [
+      [
+       25
+      ],
+      [
+       25
+      ]
+     ],
+     "ticks": [
+      3,
+      4
+     ],
+     "items": [
+      {
+       "id": "sx-139",
+       "source": "Rai News Esteri",
+       "lang": "it",
+       "title": "Burnham: \"Londra per troppo tempo sulla strada sbagliata, miglioreremo i rapporti con l'UE\""
+      },
+      {
+       "id": "sx-41",
+       "source": "ANSA Mondo",
+       "lang": "it",
+       "title": "Burnham su Brexit, 'tutte le opzioni sul tavolo, inclusa riadesione a Ue'"
+      }
+     ],
+     "error_class": "whole-storyline overmerge",
+     "root_cause": "distinct occurrences of one storyline linked above the similarity threshold in one cluster (2-item Development); segmentation did not cut them",
+     "failure": "split failure (DIFFERENT kept together)"
+    },
+    {
+     "case": "C106",
+     "gold": "DIFFERENT_DEVELOPMENT",
+     "current": "kept together",
+     "developments": [
+      [
+       6
+      ],
+      [
+       6
+      ]
+     ],
+     "ticks": [
+      4,
+      3
+     ],
+     "items": [
+      {
+       "id": "sx-176",
+       "source": "France 24 Español",
+       "lang": "es",
+       "title": "Trump y los gigantes de la inteligencia artificial sellan un acuerdo \"moralmente vinculante\""
+      },
+      {
+       "id": "sx-129",
+       "source": "Rai News Esteri",
+       "lang": "it",
+       "title": "Politica e scienza divise, gli esperti: “L'autoregolamentazione di Big Tech è una farsa\""
+      }
+     ],
+     "error_class": "late attachment",
+     "root_cause": "a later-tick cluster overlapping the Development extends it with a different occurrence (overlap-merge)",
+     "failure": "split failure (DIFFERENT kept together)"
+    },
+    {
+     "case": "C112",
+     "gold": "DIFFERENT_DEVELOPMENT",
+     "current": "kept together",
+     "developments": [
+      [
+       6
+      ],
+      [
+       6
+      ]
+     ],
+     "ticks": [
+      3,
+      3
+     ],
+     "items": [
+      {
+       "id": "sx-267",
+       "source": "Clarín Mundo",
+       "lang": "es",
+       "title": "Donald Trump anunció que los líderes del sector tecnológico firmaron un acuerdo \"moralmente vinculante\" para regular la IA"
+      },
+      {
+       "id": "sx-263",
+       "source": "El País Internacional",
+       "lang": "es",
+       "title": "Trump lanza una página oficial de información sobre el Gobierno de EE UU que le desmiente"
+      }
+     ],
+     "error_class": "whole-storyline overmerge",
+     "root_cause": "distinct occurrences of one storyline linked above the similarity threshold in one cluster (15-item Development); segmentation did not cut them",
+     "failure": "split failure (DIFFERENT kept together)"
+    },
+    {
+     "case": "C113",
+     "gold": "SAME_DEVELOPMENT",
+     "current": "not grouped",
+     "developments": [
+      [],
+      [
+       21
+      ]
+     ],
+     "ticks": [
+      4,
+      4
+     ],
+     "items": [
+      {
+       "id": "sx-39",
+       "source": "ANSA Mondo",
+       "lang": "it",
+       "title": "Media, piloti del volo FlyDubai sarebbero uno dell'Oman e l'altro emiratino"
+      },
+      {
+       "id": "sx-232",
+       "source": "Il Sole 24 Ore Mondo",
+       "lang": "it",
+       "title": "Allarme su volo FlyDubai dirottato, copilota accoltella comandante. Tentativo di far schiantare l’aereo"
+      }
+     ],
+     "error_class": "segmentation interaction",
+     "root_cause": "segmentation cut the link between them (guard: disjoint_locations)",
+     "failure": "merge failure (SAME kept apart)"
+    },
+    {
+     "case": "C115",
+     "gold": "DIFFERENT_DEVELOPMENT",
+     "current": "kept together",
+     "developments": [
+      [
+       14
+      ],
+      [
+       14
+      ]
+     ],
+     "ticks": [
+      2,
+      3
+     ],
+     "items": [
+      {
+       "id": "sx-152",
+       "source": "DW World",
+       "lang": "en",
+       "title": "US sanctions on Iran's aviation industry make travel less predictable as countries cancel flights"
+      },
+      {
+       "id": "sx-13",
+       "source": "State Department",
+       "lang": "en",
+       "title": "United States Disrupts Iran’s Proliferation-Sensitive Efforts in Support of UN Restrictions Fact Sheet"
+      }
+     ],
+     "error_class": "whole-storyline overmerge",
+     "root_cause": "distinct occurrences of one storyline linked above the similarity threshold in one cluster (3-item Development); segmentation did not cut them",
+     "failure": "split failure (DIFFERENT kept together)"
+    }
+   ],
+   "developments": 28,
+   "multi_item": 28,
+   "mixed": [
+    "1",
+    "6",
+    "7",
+    "10",
+    "14",
+    "16",
+    "20",
+    "25",
+    "26"
+   ],
+   "labelled_developments": [
+    "1",
+    "2",
+    "4",
+    "5",
+    "6",
+    "7",
+    "9",
+    "10",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "20",
+    "21",
+    "22",
+    "23",
+    "24",
+    "25",
+    "26",
+    "28"
+   ],
+   "duplicate_memberships": {},
+   "items_in_developments": 92,
+   "single_source": [
+    {
+     "development": "1",
+     "source": "Federal Register",
+     "items": 2,
+     "summary": "Accreditation and Approval of Intertek USA, Inc. (Chelsea, MA), as a Commercial Gauger and Laboratory"
+    }
+   ],
+   "roundups": [
+    {
+     "development": "4",
+     "summary": "Ukraine war latest: Record Russian military budget for 2027 confirms no interest in ending war",
+     "roundup_items": [
+      "sx-282"
+     ],
+     "members": 3,
+     "sources_with": 2,
+     "sources_without": 2,
+     "source_count_inflated": false,
+     "corroboration": "PROBABLE",
+     "summary_is_roundup_with_reports_present": true,
+     "gold_different_pairs_among_non_roundup_members": []
+    },
+    {
+     "development": "10",
+     "summary": "World News in Brief: Deadly Myanmar strikes as Malaysia begins deportations, new emergency funding released, Gaza and West Bank update",
+     "roundup_items": [
+      "sx-396"
+     ],
+     "members": 2,
+     "sources_with": 2,
+     "sources_without": 1,
+     "source_count_inflated": true,
+     "corroboration": "PROBABLE",
+     "summary_is_roundup_with_reports_present": true,
+     "gold_different_pairs_among_non_roundup_members": []
+    },
+    {
+     "development": "15",
+     "summary": "Live: Several people killed as Russia launches new round of strikes on Kyiv",
+     "roundup_items": [
+      "sx-161"
+     ],
+     "members": 3,
+     "sources_with": 2,
+     "sources_without": 1,
+     "source_count_inflated": true,
+     "corroboration": "PROBABLE",
+     "summary_is_roundup_with_reports_present": true,
+     "gold_different_pairs_among_non_roundup_members": []
+    }
+   ],
+   "late_memberships": 12,
+   "overlap_extensions": 3
+  }
+ ],
+ "determinism": [
+  {
+   "window": "2026-08-21",
+   "run1_vs_run2": [],
+   "run1_vs_review_trace": [],
+   "identical": true,
+   "identical_to_review_trace": true
+  },
+  {
+   "window": "2026-09-25",
+   "run1_vs_run2": [],
+   "run1_vs_review_trace": [],
+   "identical": true,
+   "identical_to_review_trace": true
+  },
+  {
+   "window": "2026-09-30-multilingual",
+   "run1_vs_run2": [],
+   "run1_vs_review_trace": [],
+   "identical": true,
+   "identical_to_review_trace": true
+  }
+ ]
+}
