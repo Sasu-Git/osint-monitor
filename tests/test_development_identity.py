@@ -119,3 +119,49 @@ def test_a_roundup_does_not_corroborate(db):
     decisions = []
     assert persist_clusters(s, [{"item_ids": [report, roundup], "summary": "x"}], decisions) == 0
     assert all(r.startswith("single-source: 1 independent") for d in decisions for r in d.held.values())
+
+
+# --- owner rule P7: explicit evidence resolves a doubtful headline mismatch ---------------------------------
+
+def _seg(title, hours=0, places=(), anchors=(), cited=None):
+    from osint_monitor.processors.development_segmentation import SegmentItem
+    return SegmentItem(id=title, source=title, title=title, published_at=T0 + timedelta(hours=hours), vector=None,
+                       headline_vector=None, locations=set(places), anchors=set(anchors), cited=cited)
+
+
+@pytest.fixture
+def p7():
+    from osint_monitor.core.config import load_event_grouping_config
+    cfg = load_event_grouping_config().development_segmentation
+    assert cfg.occurrence_match is not None
+    return cfg
+
+
+def test_p7_needs_time_no_place_conflict_and_a_specific_anchor_or_cited_source(p7):
+    from osint_monitor.processors.development_segmentation import occurrence_evidence as ev
+    a = _seg("Pentagon awards Raytheon $20.7 billion AMRAAM contract", places=["united states"], anchors=["raytheon"])
+    b = _seg("Raytheon nets potential $20.7 billion AMRAAM deal", hours=20, anchors=["raytheon"])
+    assert "shared anchors ['raytheon']" in ev(a, b, p7)                 # a missing place is not a conflict
+    assert ev(a, _seg("Raytheon nets AMRAAM deal", hours=30, anchors=["raytheon"]), p7) is None    # too far apart
+    assert ev(a, _seg("Raytheon deal", places=["kyiv"], anchors=["raytheon"]), p7) is None         # place conflict
+    assert ev(a, _seg("Why the Raytheon deal matters", anchors=["raytheon"]), p7) is None          # analysis headline
+    assert ev(a, _seg("Missile maker wins contract", anchors=["lockheed martin"]), p7) is None     # no shared anchor
+    c, d = _seg("Strike hits port", cited="Reuters"), _seg("Port attacked overnight", hours=2, cited="Reuters")
+    assert "same cited source Reuters" in ev(c, d, p7)
+    assert ev(c, _seg("Port attacked overnight", cited="AP"), p7) is None
+
+
+def test_p7_anchors_exclude_states_leaders_outlets_generic_labels_and_short_names(db, p7):
+    from osint_monitor.core.database import Entity, ItemEntity
+    from osint_monitor.processors.development_segmentation import _occurrence_anchors
+    s = db()
+    item = add(s, "Outlet A", "Raytheon wins AMRAAM deal")
+    for name, etype in (("Raytheon", "ORG"), ("Donald Trump", "PERSON"), ("Reuters", "ORG"), ("Navy", "ORG"),
+                        ("United States", "GPE"), ("US Department of Defense", "ORG"), ("AI", "ORG")):
+        e = Entity(canonical_name=name, entity_type=etype, aliases=[])
+        s.add(e)
+        s.flush()
+        s.add(ItemEntity(item_id=item, entity_id=e.id, role="SUBJECT"))
+    s.commit()
+    anchors, _ = _occurrence_anchors(s, {item: s.get(RawItem, item)}, p7)
+    assert anchors[item] == {"raytheon"}

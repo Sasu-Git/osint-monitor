@@ -270,6 +270,18 @@ class HeadlineOverrideConfig(BaseModel):
     min_shared_actors: int = 0                      # canonical actors mentioned by both
 
 
+class OccurrenceMatchConfig(BaseModel):
+    """Owner rule P7 (evaluations/identity/owner-notes-proposals.md): a doubtful headline mismatch between two
+    report headlines is resolved as one occurrence only on explicit evidence. All conditions hold together:
+    published within ``max_hours``; no place conflict (when both name places, they are compatible); and at least
+    ``min_shared_anchors`` specific named entities in common, or the same cited source (both attribute their report
+    to one origin). Anchors exclude states, people and bodies that stand for a state, media outlets, generic
+    institution labels and names shorter than four characters ("AI", "UN")."""
+    max_hours: float = 24.0
+    min_shared_anchors: int = 1
+    use_cited_source: bool = True
+
+
 class DevelopmentSegmentationConfig(BaseModel):
     """Split narrative clusters into Developments (processors/development_segmentation.py)."""
     enabled: bool = False
@@ -279,6 +291,7 @@ class DevelopmentSegmentationConfig(BaseModel):
     location_match: str = "exact"                   # "exact" names, or "containment" (config/geography.yaml)
     use_regions: bool = False                       # containment also through supra-national regions
     headline_override: Optional[HeadlineOverrideConfig] = None   # when a headline mismatch is not decisive
+    occurrence_match: Optional[OccurrenceMatchConfig] = None     # P7: explicit evidence resolves a headline mismatch
 
 
 

@@ -65,6 +65,10 @@ development_segmentation:
     max_hours: 6                  # published within 6 h and name compatible places (one storm headlined
     require_shared_place: true    # by region and by states); never applies to live blogs or analysis
     min_shared_actors: 0
+  occurrence_match:               # owner rule P7: a headline mismatch between two report headlines is one
+    max_hours: 24                 # occurrence only on explicit evidence: within 24 h, no place conflict, and a
+    min_shared_anchors: 1         # specific named entity in common (not a state, a leader, an outlet or a
+    use_cited_source: true        # generic label) or the same cited source
 
 # Lexical identity evidence (osint_monitor/processors/lexical.py). Production has one lexical link
 # rule: two items from the same outlet link only when their headlines are near-identical (story
