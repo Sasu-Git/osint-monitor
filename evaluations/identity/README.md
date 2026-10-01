@@ -16,9 +16,9 @@ blind to the proposed Phase 2 algorithm, and the sheet says nothing about what a
 | 1 | Freeze replay windows and ticks before any labelling or identity code change | `manifest.yaml`, `windows/` | done (6af0ccf) |
 | 2 | Replay the **current** pipeline tick by tick; generate candidate pairs from several rules | `scripts/replay_current.py` → `review/system-trace/` | done |
 | 3 | Draft labels **blind**: the labeller sees only item text, outlet, publication time, language and the definition | `scripts/make_labeller_input.py` → `review/labeller-input.md`; labels → `review/draft-labels.json` | drafted |
-| 4 | Reviewer sheet: current system columns, proposed label, rationale, confidence, blank owner verdict; structural flags listed separately | `scripts/build_review_sheet.py` → `review/identity-review-sheet.md`, `review/owner-verdicts.yaml` | awaiting owner |
-| 5 | Apply owner verdicts, then freeze and hash the gold | `gold/` | after review |
-| 6 | Only then implement stable identity against the frozen gold | – | blocked by 5 |
+| 4 | Reviewer sheet: current system columns, proposed label, rationale, confidence, blank owner verdict; structural flags listed separately | `scripts/build_review_sheet.py` → `review/identity-review-sheet.md`, `review/review.html` (blind review page), `review/owner-verdicts.yaml` | done: 189/189 |
+| 5 | Apply owner verdicts, then freeze and hash the gold | `gold/identity-gold.yaml`, `gold/manifest.yaml` | **frozen, revision 1** |
+| 6 | Only then implement stable identity against the frozen gold | – | unblocked (see `owner-notes-proposals.md`) |
 
 **Windows** (`manifest.yaml`): 4 ticks of 12 h each.
 
