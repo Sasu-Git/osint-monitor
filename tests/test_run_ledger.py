@@ -68,8 +68,16 @@ def test_a_run_records_its_outcome_and_versions(db):
 
 # --- stamps --------------------------------------------------------------------------------------
 
-def test_memberships_record_their_run_and_publication_time_stays_apart_from_creation(db):
+def test_memberships_record_their_run_and_publication_time_stays_apart_from_creation(db, monkeypatch):
+    from osint_monitor.processors import development_identity, development_segmentation
     from osint_monitor.processors.clustering import persist_clusters
+    # stamps only: every pair links and the items count as independent (identity rules: test_development_identity)
+    from types import SimpleNamespace
+    monkeypatch.setattr(development_segmentation, "segment_items",
+                        lambda session, ids, config: {i: SimpleNamespace(vector=None) for i in ids})
+    monkeypatch.setattr(development_segmentation, "compatible_link", lambda a, b, config: True)
+    monkeypatch.setattr(development_segmentation, "_cosine", lambda a, b: 1.0)
+    monkeypatch.setattr(development_identity, "independent_origins", lambda session, ids: 2)
     s = db()
     src = _source(s)
     run1, t1 = runs.start_run(s, "tier", tier="warm")

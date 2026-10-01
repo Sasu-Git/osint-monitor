@@ -183,39 +183,59 @@ def segment(items: list[SegmentItem], config: DevelopmentSegmentationConfig, min
     return result
 
 
-def segment_groups(session, groups: list[list[int]], config: DevelopmentSegmentationConfig,
-                   min_size: int = 2) -> tuple[list[list[int]], dict[int, list[int]]]:
-    """Segment narrative clusters of RawItem ids. Returns (groups, commentary), where
-    commentary maps an index into the returned groups to the analysis item ids about it."""
+def segment_items(session, ids, config: DevelopmentSegmentationConfig) -> dict[int, SegmentItem]:
+    """SegmentItems for RawItem ids (places, actors, embeddings, headline embeddings), as segmentation sees them.
+    Items without an embedding are left out."""
     from osint_monitor.core.database import Entity, ItemEntity, RawItem
     from osint_monitor.processors.actors import ActorNormalizer
     from osint_monitor.processors.embeddings import blob_to_embedding, embed_texts
     from osint_monitor.processors.entity_resolver import normalise
 
-    ids = sorted({i for g in groups for i in g})
+    ids = sorted(set(ids))
     if not ids:
-        return groups, {}
-    rows = {r.id: r for r in session.query(RawItem).filter(RawItem.id.in_(ids))}
+        return {}
+    rows = {r.id: r for r in session.query(RawItem).filter(RawItem.id.in_(ids)) if r.embedding is not None}
     locations: dict[int, set[str]] = {}
     actors: dict[int, set[str]] = {}
     normalizer = ActorNormalizer.load() if config.headline_override and config.headline_override.min_shared_actors else None
     for item_id, name, etype in (session.query(ItemEntity.item_id, Entity.canonical_name, Entity.entity_type)
                                  .join(Entity, Entity.id == ItemEntity.entity_id)
-                                 .filter(ItemEntity.item_id.in_(ids))):
+                                 .filter(ItemEntity.item_id.in_(list(rows)))):
         if etype in LOCATION_TYPES and (key := normalise(name)):
             locations.setdefault(item_id, set()).add(key)
         if normalizer and etype in ACTOR_TYPES and (key := normalizer.key(name)):
             actors.setdefault(item_id, set()).add(key)
-    headline_vectors = dict(zip(ids, embed_texts([rows[i].title or "" for i in ids]))) \
-        if config.min_headline_similarity is not None else {}
+    order = sorted(rows)
+    headline_vectors = dict(zip(order, embed_texts([rows[i].title or "" for i in order]))) \
+        if config.min_headline_similarity is not None and order else {}
+    return {i: SegmentItem(id=i, source=rows[i].source_id, title=rows[i].title or "",
+                           published_at=rows[i].published_at or rows[i].fetched_at,
+                           vector=blob_to_embedding(rows[i].embedding), headline_vector=headline_vectors.get(i),
+                           locations=locations.get(i, set()), actors=actors.get(i, set())) for i in order}
+
+
+def compatible_link(a: SegmentItem, b: SegmentItem, config: DevelopmentSegmentationConfig) -> bool:
+    """True when a and b are linked by the clusterer's own link rule and no guard rules them out as one
+    Development: the per-pair test segmentation applies inside a cluster."""
+    from osint_monitor.processors.clustering import _ClusterMember, _linked
+    ma = _ClusterMember(a.id, a.source, a.title, a.published_at, a.vector)
+    mb = _ClusterMember(b.id, b.source, b.title, b.published_at, b.vector)
+    return _linked(ma, mb) and incompatibility(a, b, config) is None
+
+
+def segment_groups(session, groups: list[list[int]], config: DevelopmentSegmentationConfig,
+                   min_size: int = 2) -> tuple[list[list[int]], dict[int, list[int]]]:
+    """Segment narrative clusters of RawItem ids. Returns (groups, commentary), where
+    commentary maps an index into the returned groups to the analysis item ids about it."""
+    ids = sorted({i for g in groups for i in g})
+    if not ids:
+        return groups, {}
+    by_id = segment_items(session, ids, config)
 
     out: list[list[int]] = []
     commentary: dict[int, list[int]] = {}
     for g in groups:
-        items = [SegmentItem(id=i, source=rows[i].source_id, title=rows[i].title or "",
-                             published_at=rows[i].published_at or rows[i].fetched_at,
-                             vector=blob_to_embedding(rows[i].embedding), headline_vector=headline_vectors.get(i),
-                             locations=locations.get(i, set()), actors=actors.get(i, set())) for i in g]
+        items = [by_id[i] for i in g]
         seg = segment(items, config, min_size)
         if len(seg.groups) != 1 or seg.commentary or seg.detached:
             logger.info(f"Development segmentation: cluster of {len(g)} -> {len(seg.groups)} developments, "

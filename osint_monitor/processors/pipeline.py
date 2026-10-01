@@ -482,9 +482,20 @@ def run_post_processing(session: Session, quiet: bool = False, offline: bool = F
         stats["clusters_found"] = len(clusters)
         stats["structured_clusters"] = sum(1 for c in clusters if c.get("kind") == "structured")
         if clusters:
-            created = persist_clusters(session, clusters)
+            decisions: list = []
+            created = persist_clusters(session, clusters, decisions)
             stats["events_created"] = created
-            _print(f"  {len(clusters)} clusters: {created} new events, {len(clusters) - created} extended existing ones")
+            held = [r for d in decisions for r in d.held.values()]
+            stats["identity"] = {
+                "created": created,
+                "extended": sum(1 for d in decisions if d.added and not d.created),
+                "items_added": sum(len(d.added) for d in decisions),
+                "held_single_source": sum(1 for r in held if r.startswith("single-source")),
+                "held_unlinked": sum(1 for r in held if not r.startswith("single-source")),
+            }
+            _print(f"  {len(clusters)} clusters: {created} new Developments, {stats['identity']['extended']} extended; "
+                   f"{stats['identity']['held_single_source']} items held as single-source, "
+                   f"{stats['identity']['held_unlinked']} not linked to a Development")
         else:
             _print("  No clusters formed")
     _stage("clustering", _clustering)
