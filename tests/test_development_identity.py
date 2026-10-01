@@ -103,8 +103,19 @@ def test_the_summary_is_a_report_headline_not_a_live_blog(db):
     s = db()
     live = add(s, "Outlet B", "Live: earthquake strikes eastern Turkey, dozens killed")
     report = add(s, "Outlet A", "Magnitude 6.8 earthquake strikes eastern Turkey, killing dozens")
+    other = add(s, "Outlet C", "Strong earthquake kills dozens in eastern Turkey")   # a second independent origin
     s.get(RawItem, live).source.credibility_score = 0.9              # the live blog's outlet ranks higher
     s.commit()
-    persist_clusters(s, [{"item_ids": [live, report], "summary": "x"}])
+    persist_clusters(s, [{"item_ids": [live, report, other], "summary": "x"}])
     event = s.query(Event).one()
     assert event.summary == "Magnitude 6.8 earthquake strikes eastern Turkey, killing dozens"
+
+
+def test_a_roundup_does_not_corroborate(db):
+    s = db()
+    report = add(s, "Outlet A", "Magnitude 6.8 earthquake strikes eastern Turkey, killing dozens")
+    roundup = add(s, "Outlet B", "Live: earthquake strikes eastern Turkey, dozens killed")
+    s.commit()
+    decisions = []
+    assert persist_clusters(s, [{"item_ids": [report, roundup], "summary": "x"}], decisions) == 0
+    assert all(r.startswith("single-source: 1 independent") for d in decisions for r in d.held.values())
