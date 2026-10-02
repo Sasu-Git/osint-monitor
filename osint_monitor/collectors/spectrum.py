@@ -352,14 +352,15 @@ class RIPEAtlasMonitor(BaseCollector):
             else:
                 continue
 
+            # The RTT lines are parenthesised: unparenthesised, the conditional expressions
+            # swallowed the target/name/probe lines whenever RTTs were present.
             content = (
                 f"Target: {target}\n"
                 f"Name: {name}\n"
                 f"Measurement ID: {msm_id}\n"
                 f"Probes reporting: {probes_reporting}\n"
                 f"Timeouts: {timeouts}\n"
-                f"Avg RTT: {sum(rtts)/len(rtts):.1f}ms\n" if rtts else ""
-                f"Max RTT: {max(rtts):.1f}ms" if rtts else "All probes timed out"
+                + (f"Avg RTT: {sum(rtts)/len(rtts):.1f}ms\nMax RTT: {max(rtts):.1f}ms" if rtts else "All probes timed out")
             )
 
             if timeouts > probes_reporting * 0.5 or (rtts and sum(rtts)/len(rtts) > 300):
@@ -452,7 +453,7 @@ class WikipediaEditMonitor(BaseCollector):
                 return page_data.get("revisions", [])
             return []
         except Exception as exc:
-            logger.debug("Wikipedia edit check failed for '%s': %s", title, exc)
+            logger.warning("Wikipedia edit check failed for '%s': %s", title, exc)
             return []
 
     def collect(self) -> list[RawItemModel]:

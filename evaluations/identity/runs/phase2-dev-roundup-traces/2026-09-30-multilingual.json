@@ -1,0 +1,1754 @@
+{
+ "developments": {
+  "1": {
+   "summary": "Council strengthens EU space threat response architecture",
+   "created_tick": 3,
+   "members": {
+    "sx-361": 3,
+    "sx-352": 3
+   },
+   "principals": [],
+   "sources": [
+    "Council of the EU Press",
+    "European Commission Press"
+   ]
+  },
+  "2": {
+   "summary": "Putin signs latest decree increasing Russian military staff in wake of monster military budget, looming mobilization",
+   "created_tick": 3,
+   "members": {
+    "sx-494": 3,
+    "sx-282": 3,
+    "sx-285": 3
+   },
+   "principals": [
+    "Russia",
+    "Vladimir Putin"
+   ],
+   "sources": [
+    "Defense News",
+    "Kyiv Independent"
+   ]
+  },
+  "3": {
+   "summary": "Qué se sabe del Corredor Andes-Atlántico, el ambicioso proyecto con el que EE.UU. busca acceder a recursos estratégicos de Argentina (y competir con China)",
+   "created_tick": 3,
+   "members": {
+    "sx-110": 3,
+    "sx-266": 3
+   },
+   "principals": [
+    "EE.UU.",
+    "Estados Unidos",
+    "Rafael Grossi",
+    "Washington"
+   ],
+   "sources": [
+    "BBC Mundo",
+    "Clarín Mundo"
+   ]
+  },
+  "4": {
+   "summary": "Iraq: US troops withdraw from their Iraqi US-led Operation Inherent Resolve mission against ISIS after 12 years",
+   "created_tick": 3,
+   "members": {
+    "sx-149": 3,
+    "sx-491": 3,
+    "sx-1": 4,
+    "sx-157": 4,
+    "sx-164": 4
+   },
+   "principals": [
+    "U.S.",
+    "Washington"
+   ],
+   "sources": [
+    "DW World",
+    "Defense News",
+    "Defense.gov",
+    "France 24"
+   ]
+  },
+  "5": {
+   "summary": "Ethiopia: No regard for civilians as fighting in Ethiopia's Tigray region continues",
+   "created_tick": 3,
+   "members": {
+    "sx-532": 3,
+    "sx-144": 3
+   },
+   "principals": [
+    "Booker",
+    "Coons",
+    "Kaine Call",
+    "Merkley",
+    "Shaheen",
+    "Van Hollen"
+   ],
+   "sources": [
+    "DW World",
+    "GDELT"
+   ]
+  },
+  "6": {
+   "summary": "Estonia blames Russia in arson attack on military robotics firm Milrem",
+   "created_tick": 3,
+   "members": {
+    "sx-490": 3,
+    "sx-512": 3
+   },
+   "principals": [
+    "Estonia",
+    "Tallinn"
+   ],
+   "sources": [
+    "Breaking Defense",
+    "Defense News"
+   ]
+  },
+  "7": {
+   "summary": "«Hope again», l’appello di Burnham agli inglesi tra stop alle privatizzazioni e riforma del welfare",
+   "created_tick": 3,
+   "members": {
+    "sx-240": 3,
+    "sx-256": 3
+   },
+   "principals": [
+    "Andy Burnham",
+    "Burnham"
+   ],
+   "sources": [
+    "El País Internacional",
+    "Il Sole 24 Ore Mondo"
+   ]
+  },
+  "8": {
+   "summary": "La anciana Maricarmen podrá volver a su casa tras el desalojo que puso el foco en la crisis de vivienda en España",
+   "created_tick": 3,
+   "members": {
+    "sx-111": 3,
+    "sx-188": 3,
+    "sx-270": 3,
+    "sx-271": 3,
+    "sx-181": 4
+   },
+   "principals": [
+    "Emmanuel Macron",
+    "Macron"
+   ],
+   "sources": [
+    "BBC Mundo",
+    "Clarín Mundo",
+    "France 24 Español"
+   ]
+  },
+  "9": {
+   "summary": "Pentagon awards Raytheon up to $20.7 billion to nearly double AMRAAM production",
+   "created_tick": 3,
+   "members": {
+    "sx-488": 3,
+    "sx-510": 3
+   },
+   "principals": [
+    "Raytheon",
+    "US Department of Defense"
+   ],
+   "sources": [
+    "Breaking Defense",
+    "Defense News"
+   ]
+  },
+  "10": {
+   "summary": "Trump, 'Usa valutano comitato di 10 persone per vigilare sull'IA'",
+   "created_tick": 3,
+   "members": {
+    "sx-55": 3,
+    "sx-57": 3,
+    "sx-71": 3,
+    "sx-129": 3,
+    "sx-131": 3,
+    "sx-132": 3,
+    "sx-238": 3,
+    "sx-263": 3,
+    "sx-267": 3,
+    "sx-48": 4,
+    "sx-176": 4,
+    "sx-235": 4
+   },
+   "principals": [
+    "Donald Trump",
+    "Trump"
+   ],
+   "sources": [
+    "ANSA Mondo",
+    "Clarín Mundo",
+    "El País Internacional",
+    "Europa Press Internacional",
+    "France 24 Español",
+    "Il Sole 24 Ore Mondo",
+    "Rai News Esteri"
+   ]
+  },
+  "11": {
+   "summary": "Department of War and U.S. Navy Award Contract for F/A-XX Program",
+   "created_tick": 3,
+   "members": {
+    "sx-2": 3,
+    "sx-487": 3,
+    "sx-507": 3
+   },
+   "principals": [],
+   "sources": [
+    "Breaking Defense",
+    "Defense News",
+    "Defense.gov"
+   ]
+  },
+  "12": {
+   "summary": "United States Disrupts Iran’s Proliferation-Sensitive Efforts in Support of UN Restrictions Fact Sheet",
+   "created_tick": 4,
+   "members": {
+    "sx-152": 4,
+    "sx-13": 4,
+    "sx-279": 4
+   },
+   "principals": [
+    "U.S."
+   ],
+   "sources": [
+    "DW World",
+    "Kyiv Independent",
+    "State Department"
+   ]
+  },
+  "13": {
+   "summary": "El Senado de EEUU rechaza votar una resolución acerca de la violencia en Cisjordania tras el último ataque de colonos",
+   "created_tick": 4,
+   "members": {
+    "sx-243": 4,
+    "sx-79": 4,
+    "sx-185": 4
+   },
+   "principals": [],
+   "sources": [
+    "Europa Press Internacional",
+    "France 24 Español",
+    "Il Sole 24 Ore Mondo"
+   ]
+  },
+  "14": {
+   "summary": "Al menos 440 detenidos en Francia en protestas estudiantiles unidas a la huelga de cientos de miles en el sector público",
+   "created_tick": 4,
+   "members": {
+    "sx-76": 4,
+    "sx-186": 4
+   },
+   "principals": [],
+   "sources": [
+    "Europa Press Internacional",
+    "France 24 Español"
+   ]
+  },
+  "15": {
+   "summary": "Muere una palestina en un nuevo ataque de Israel contra la ciudad de Gaza a pesar del alto el fuego",
+   "created_tick": 4,
+   "members": {
+    "sx-245": 4,
+    "sx-80": 4
+   },
+   "principals": [
+    "Ejército de Israel",
+    "Israel"
+   ],
+   "sources": [
+    "El País Internacional",
+    "Europa Press Internacional"
+   ]
+  },
+  "16": {
+   "summary": "Burnham su Brexit, 'tutte le opzioni sul tavolo, inclusa riadesione a Ue'",
+   "created_tick": 4,
+   "members": {
+    "sx-139": 4,
+    "sx-41": 4
+   },
+   "principals": [
+    "Burnham"
+   ],
+   "sources": [
+    "ANSA Mondo",
+    "Rai News Esteri"
+   ]
+  },
+  "17": {
+   "summary": "Marocco, Fatima Ezzahra El Mansouri sarà la prima premier donna del Regno",
+   "created_tick": 4,
+   "members": {
+    "sx-239": 4,
+    "sx-126": 4,
+    "sx-127": 4
+   },
+   "principals": [],
+   "sources": [
+    "Il Sole 24 Ore Mondo",
+    "Rai News Esteri"
+   ]
+  },
+  "18": {
+   "summary": "More than 400 detained as France student protests escalate",
+   "created_tick": 4,
+   "members": {
+    "sx-88": 4,
+    "sx-208": 4
+   },
+   "principals": [],
+   "sources": [
+    "Al Jazeera",
+    "BBC World"
+   ]
+  },
+  "19": {
+   "summary": "Irán confirma que recibió la respuesta oficial de EEUU a su última propuesta para un acuerdo de paz",
+   "created_tick": 4,
+   "members": {
+    "sx-264": 4,
+    "sx-75": 4,
+    "sx-536": 4
+   },
+   "principals": [
+    "Iran",
+    "Irán"
+   ],
+   "sources": [
+    "Clarín Mundo",
+    "Europa Press Internacional",
+    "GDELT"
+   ]
+  },
+  "20": {
+   "summary": "La primera ministra designada de Marruecos iniciará hoy una ronda de contactos para ensamblar el nuevo Gobierno",
+   "created_tick": 4,
+   "members": {
+    "sx-77": 4,
+    "sx-108": 4
+   },
+   "principals": [],
+   "sources": [
+    "BBC Mundo",
+    "Europa Press Internacional"
+   ]
+  },
+  "21": {
+   "summary": "Missili e droni su regione di Kiev, ucciso un bambino",
+   "created_tick": 4,
+   "members": {
+    "sx-47": 4,
+    "sx-49": 4,
+    "sx-237": 4
+   },
+   "principals": [],
+   "sources": [
+    "ANSA Mondo",
+    "Il Sole 24 Ore Mondo"
+   ]
+  },
+  "22": {
+   "summary": "Somali pirates killed oil tanker crew before rescue, official tells BBC",
+   "created_tick": 4,
+   "members": {
+    "sx-93": 4,
+    "sx-210": 4
+   },
+   "principals": [
+    "Somalia"
+   ],
+   "sources": [
+    "Al Jazeera",
+    "BBC World"
+   ]
+  },
+  "23": {
+   "summary": "'Backpack' declared Alaska's Fat Bear Week winner",
+   "created_tick": 4,
+   "members": {
+    "sx-92": 4,
+    "sx-199": 4
+   },
+   "principals": [],
+   "sources": [
+    "Al Jazeera",
+    "BBC World"
+   ]
+  },
+  "24": {
+   "summary": "South Korea demands apology from Pyongyang for landmine blasts that injured three",
+   "created_tick": 4,
+   "members": {
+    "sx-85": 4,
+    "sx-154": 4,
+    "sx-194": 4
+   },
+   "principals": [
+    "South Korea"
+   ],
+   "sources": [
+    "Al Jazeera",
+    "BBC World",
+    "France 24"
+   ]
+  },
+  "25": {
+   "summary": "'Emergenza sul volo FlyDubai per una lite tra pilota russo e copilota ucraino'",
+   "created_tick": 4,
+   "members": {
+    "sx-40": 4,
+    "sx-44": 4,
+    "sx-122": 4,
+    "sx-123": 4,
+    "sx-232": 4,
+    "sx-246": 4
+   },
+   "principals": [],
+   "sources": [
+    "ANSA Mondo",
+    "El País Internacional",
+    "Il Sole 24 Ore Mondo",
+    "Rai News Esteri"
+   ]
+  },
+  "26": {
+   "summary": "Israel-bound flight diverted after fight between pilots",
+   "created_tick": 4,
+   "members": {
+    "sx-81": 4,
+    "sx-158": 4,
+    "sx-195": 4,
+    "sx-222": 4
+   },
+   "principals": [],
+   "sources": [
+    "Al Jazeera",
+    "BBC World",
+    "France 24",
+    "South China Morning Post"
+   ]
+  }
+ },
+ "item_developments": {
+  "sx-1": [
+   4
+  ],
+  "sx-2": [
+   11
+  ],
+  "sx-3": [],
+  "sx-4": [],
+  "sx-5": [],
+  "sx-10": [],
+  "sx-11": [],
+  "sx-12": [],
+  "sx-13": [
+   12
+  ],
+  "sx-14": [],
+  "sx-15": [],
+  "sx-16": [],
+  "sx-20": [],
+  "sx-21": [],
+  "sx-22": [],
+  "sx-23": [],
+  "sx-24": [],
+  "sx-25": [],
+  "sx-26": [],
+  "sx-27": [],
+  "sx-28": [],
+  "sx-29": [],
+  "sx-39": [],
+  "sx-40": [
+   25
+  ],
+  "sx-41": [
+   16
+  ],
+  "sx-42": [],
+  "sx-43": [],
+  "sx-44": [
+   25
+  ],
+  "sx-45": [],
+  "sx-46": [],
+  "sx-47": [
+   21
+  ],
+  "sx-48": [
+   10
+  ],
+  "sx-49": [
+   21
+  ],
+  "sx-50": [],
+  "sx-51": [],
+  "sx-52": [],
+  "sx-53": [],
+  "sx-54": [],
+  "sx-55": [
+   10
+  ],
+  "sx-56": [],
+  "sx-57": [
+   10
+  ],
+  "sx-58": [],
+  "sx-59": [],
+  "sx-60": [],
+  "sx-61": [],
+  "sx-62": [],
+  "sx-63": [],
+  "sx-64": [],
+  "sx-65": [],
+  "sx-66": [],
+  "sx-67": [],
+  "sx-68": [],
+  "sx-69": [],
+  "sx-70": [],
+  "sx-71": [
+   10
+  ],
+  "sx-72": [],
+  "sx-73": [],
+  "sx-74": [],
+  "sx-75": [
+   19
+  ],
+  "sx-76": [
+   14
+  ],
+  "sx-77": [
+   20
+  ],
+  "sx-78": [],
+  "sx-79": [
+   13
+  ],
+  "sx-80": [
+   15
+  ],
+  "sx-81": [
+   26
+  ],
+  "sx-82": [],
+  "sx-83": [],
+  "sx-84": [],
+  "sx-85": [
+   24
+  ],
+  "sx-86": [],
+  "sx-87": [],
+  "sx-88": [
+   18
+  ],
+  "sx-89": [],
+  "sx-90": [],
+  "sx-91": [],
+  "sx-92": [
+   23
+  ],
+  "sx-93": [
+   22
+  ],
+  "sx-94": [],
+  "sx-95": [],
+  "sx-96": [],
+  "sx-97": [],
+  "sx-98": [],
+  "sx-99": [],
+  "sx-100": [],
+  "sx-101": [],
+  "sx-102": [],
+  "sx-103": [],
+  "sx-104": [],
+  "sx-105": [],
+  "sx-106": [],
+  "sx-107": [],
+  "sx-108": [
+   20
+  ],
+  "sx-109": [],
+  "sx-110": [
+   3
+  ],
+  "sx-111": [
+   8
+  ],
+  "sx-112": [],
+  "sx-113": [],
+  "sx-114": [],
+  "sx-115": [],
+  "sx-117": [],
+  "sx-121": [],
+  "sx-122": [
+   25
+  ],
+  "sx-123": [
+   25
+  ],
+  "sx-124": [],
+  "sx-125": [],
+  "sx-126": [
+   17
+  ],
+  "sx-127": [
+   17
+  ],
+  "sx-128": [],
+  "sx-129": [
+   10
+  ],
+  "sx-130": [],
+  "sx-131": [
+   10
+  ],
+  "sx-132": [
+   10
+  ],
+  "sx-133": [],
+  "sx-134": [],
+  "sx-135": [],
+  "sx-136": [],
+  "sx-137": [],
+  "sx-138": [],
+  "sx-139": [
+   16
+  ],
+  "sx-140": [],
+  "sx-141": [],
+  "sx-142": [],
+  "sx-143": [],
+  "sx-144": [
+   5
+  ],
+  "sx-145": [],
+  "sx-146": [],
+  "sx-147": [],
+  "sx-148": [],
+  "sx-149": [
+   4
+  ],
+  "sx-150": [],
+  "sx-151": [],
+  "sx-152": [
+   12
+  ],
+  "sx-153": [],
+  "sx-154": [
+   24
+  ],
+  "sx-155": [],
+  "sx-156": [],
+  "sx-157": [
+   4
+  ],
+  "sx-158": [
+   26
+  ],
+  "sx-159": [],
+  "sx-160": [],
+  "sx-161": [],
+  "sx-162": [],
+  "sx-163": [],
+  "sx-164": [
+   4
+  ],
+  "sx-165": [],
+  "sx-166": [],
+  "sx-167": [],
+  "sx-168": [],
+  "sx-169": [],
+  "sx-170": [],
+  "sx-171": [],
+  "sx-172": [],
+  "sx-173": [],
+  "sx-174": [],
+  "sx-175": [],
+  "sx-176": [
+   10
+  ],
+  "sx-177": [],
+  "sx-178": [],
+  "sx-179": [],
+  "sx-180": [],
+  "sx-181": [
+   8
+  ],
+  "sx-182": [],
+  "sx-183": [],
+  "sx-184": [],
+  "sx-185": [
+   13
+  ],
+  "sx-186": [
+   14
+  ],
+  "sx-187": [],
+  "sx-188": [
+   8
+  ],
+  "sx-189": [],
+  "sx-190": [],
+  "sx-191": [],
+  "sx-192": [],
+  "sx-193": [],
+  "sx-194": [
+   24
+  ],
+  "sx-195": [
+   26
+  ],
+  "sx-196": [],
+  "sx-197": [],
+  "sx-198": [],
+  "sx-199": [
+   23
+  ],
+  "sx-200": [],
+  "sx-201": [],
+  "sx-202": [],
+  "sx-203": [],
+  "sx-204": [],
+  "sx-205": [],
+  "sx-206": [],
+  "sx-207": [],
+  "sx-208": [
+   18
+  ],
+  "sx-209": [],
+  "sx-210": [
+   22
+  ],
+  "sx-211": [],
+  "sx-212": [],
+  "sx-213": [],
+  "sx-214": [],
+  "sx-215": [],
+  "sx-216": [],
+  "sx-217": [],
+  "sx-218": [],
+  "sx-219": [],
+  "sx-220": [],
+  "sx-221": [],
+  "sx-222": [
+   26
+  ],
+  "sx-223": [],
+  "sx-224": [],
+  "sx-225": [],
+  "sx-226": [],
+  "sx-227": [],
+  "sx-228": [],
+  "sx-229": [],
+  "sx-230": [],
+  "sx-231": [],
+  "sx-232": [
+   25
+  ],
+  "sx-233": [],
+  "sx-234": [],
+  "sx-235": [
+   10
+  ],
+  "sx-236": [],
+  "sx-237": [
+   21
+  ],
+  "sx-238": [
+   10
+  ],
+  "sx-239": [
+   17
+  ],
+  "sx-240": [
+   7
+  ],
+  "sx-241": [],
+  "sx-242": [],
+  "sx-243": [
+   13
+  ],
+  "sx-244": [],
+  "sx-245": [
+   15
+  ],
+  "sx-246": [
+   25
+  ],
+  "sx-247": [],
+  "sx-252": [],
+  "sx-253": [],
+  "sx-254": [],
+  "sx-255": [],
+  "sx-256": [
+   7
+  ],
+  "sx-257": [],
+  "sx-258": [],
+  "sx-259": [],
+  "sx-260": [],
+  "sx-261": [],
+  "sx-262": [],
+  "sx-263": [
+   10
+  ],
+  "sx-264": [
+   19
+  ],
+  "sx-265": [],
+  "sx-266": [
+   3
+  ],
+  "sx-267": [
+   10
+  ],
+  "sx-268": [],
+  "sx-269": [],
+  "sx-270": [
+   8
+  ],
+  "sx-271": [
+   8
+  ],
+  "sx-272": [],
+  "sx-273": [],
+  "sx-274": [],
+  "sx-275": [],
+  "sx-276": [],
+  "sx-277": [],
+  "sx-278": [],
+  "sx-279": [
+   12
+  ],
+  "sx-280": [],
+  "sx-281": [],
+  "sx-282": [
+   2
+  ],
+  "sx-283": [],
+  "sx-284": [],
+  "sx-285": [
+   2
+  ],
+  "sx-286": [],
+  "sx-287": [],
+  "sx-288": [],
+  "sx-289": [],
+  "sx-290": [],
+  "sx-291": [],
+  "sx-303": [],
+  "sx-322": [],
+  "sx-323": [],
+  "sx-324": [],
+  "sx-325": [],
+  "sx-347": [],
+  "sx-348": [],
+  "sx-349": [],
+  "sx-350": [],
+  "sx-351": [],
+  "sx-352": [
+   1
+  ],
+  "sx-353": [],
+  "sx-354": [],
+  "sx-355": [],
+  "sx-356": [],
+  "sx-357": [],
+  "sx-358": [],
+  "sx-359": [],
+  "sx-360": [],
+  "sx-361": [
+   1
+  ],
+  "sx-362": [],
+  "sx-377": [],
+  "sx-378": [],
+  "sx-379": [],
+  "sx-396": [],
+  "sx-397": [],
+  "sx-398": [],
+  "sx-399": [],
+  "sx-400": [],
+  "sx-401": [],
+  "sx-402": [],
+  "sx-403": [],
+  "sx-404": [],
+  "sx-405": [],
+  "sx-406": [],
+  "sx-407": [],
+  "sx-408": [],
+  "sx-409": [],
+  "sx-410": [],
+  "sx-411": [],
+  "sx-412": [],
+  "sx-416": [],
+  "sx-417": [],
+  "sx-418": [],
+  "sx-419": [],
+  "sx-420": [],
+  "sx-421": [],
+  "sx-422": [],
+  "sx-423": [],
+  "sx-424": [],
+  "sx-425": [],
+  "sx-426": [],
+  "sx-427": [],
+  "sx-428": [],
+  "sx-429": [],
+  "sx-430": [],
+  "sx-431": [],
+  "sx-432": [],
+  "sx-485": [],
+  "sx-486": [],
+  "sx-487": [
+   11
+  ],
+  "sx-488": [
+   9
+  ],
+  "sx-489": [],
+  "sx-490": [
+   6
+  ],
+  "sx-491": [
+   4
+  ],
+  "sx-492": [],
+  "sx-493": [],
+  "sx-494": [
+   2
+  ],
+  "sx-495": [],
+  "sx-505": [],
+  "sx-506": [],
+  "sx-507": [
+   11
+  ],
+  "sx-508": [],
+  "sx-509": [],
+  "sx-510": [
+   9
+  ],
+  "sx-511": [],
+  "sx-512": [
+   6
+  ],
+  "sx-513": [],
+  "sx-514": [],
+  "sx-515": [],
+  "sx-516": [],
+  "sx-517": [],
+  "sx-518": [],
+  "sx-519": [],
+  "sx-520": [],
+  "sx-521": [],
+  "sx-522": [],
+  "sx-523": [],
+  "sx-524": [],
+  "sx-525": [],
+  "sx-526": [],
+  "sx-527": [],
+  "sx-528": [],
+  "sx-529": [],
+  "sx-530": [],
+  "sx-531": [],
+  "sx-532": [
+   5
+  ],
+  "sx-533": [],
+  "sx-534": [],
+  "sx-535": [],
+  "sx-536": [
+   19
+  ],
+  "sx-537": [],
+  "sx-538": [],
+  "sx-539": [],
+  "sx-540": [],
+  "sx-541": [],
+  "sx-542": [],
+  "sx-543": [],
+  "sx-544": [],
+  "sx-545": [],
+  "sx-546": [],
+  "sx-547": [],
+  "sx-548": [],
+  "sx-549": [],
+  "sx-550": [],
+  "sx-551": [],
+  "sx-552": [],
+  "sx-553": [],
+  "sx-554": [],
+  "sx-555": [],
+  "sx-556": [],
+  "sx-557": [],
+  "sx-558": [],
+  "sx-559": [],
+  "sx-560": []
+ },
+ "ticks": [
+  {
+   "tick": 1,
+   "items_in": 36,
+   "items_stored": 36,
+   "clusters_before_segmentation": [],
+   "segmentation_cuts": []
+  },
+  {
+   "tick": 2,
+   "items_in": 46,
+   "items_stored": 46,
+   "clusters_before_segmentation": [
+    [
+     "sx-553",
+     "sx-554"
+    ]
+   ],
+   "segmentation_cuts": []
+  },
+  {
+   "tick": 3,
+   "items_in": 147,
+   "items_stored": 147,
+   "clusters_before_segmentation": [
+    [
+     "sx-4",
+     "sx-510",
+     "sx-488"
+    ],
+    [
+     "sx-5",
+     "sx-428"
+    ],
+    [
+     "sx-361",
+     "sx-352"
+    ],
+    [
+     "sx-353",
+     "sx-360",
+     "sx-419"
+    ],
+    [
+     "sx-423",
+     "sx-400",
+     "sx-416"
+    ],
+    [
+     "sx-424",
+     "sx-399"
+    ],
+    [
+     "sx-494",
+     "sx-285",
+     "sx-282"
+    ],
+    [
+     "sx-2",
+     "sx-507",
+     "sx-487"
+    ],
+    [
+     "sx-553",
+     "sx-554"
+    ],
+    [
+     "sx-55",
+     "sx-132",
+     "sx-238",
+     "sx-129",
+     "sx-71",
+     "sx-263",
+     "sx-267",
+     "sx-57",
+     "sx-131",
+     "sx-130"
+    ],
+    [
+     "sx-111",
+     "sx-271",
+     "sx-188",
+     "sx-270",
+     "sx-257"
+    ],
+    [
+     "sx-117",
+     "sx-266",
+     "sx-110"
+    ],
+    [
+     "sx-516",
+     "sx-489"
+    ],
+    [
+     "sx-149",
+     "sx-491"
+    ],
+    [
+     "sx-150",
+     "sx-396"
+    ],
+    [
+     "sx-532",
+     "sx-144"
+    ],
+    [
+     "sx-56",
+     "sx-239"
+    ],
+    [
+     "sx-113",
+     "sx-272"
+    ],
+    [
+     "sx-133",
+     "sx-190"
+    ],
+    [
+     "sx-145",
+     "sx-240",
+     "sx-256"
+    ],
+    [
+     "sx-490",
+     "sx-512"
+    ]
+   ],
+   "segmentation_cuts": [
+    [
+     "sx-4",
+     "sx-510",
+     "headline_similarity"
+    ],
+    [
+     "sx-4",
+     "sx-488",
+     "headline_similarity"
+    ],
+    [
+     "sx-5",
+     "sx-428",
+     "analysis_headline"
+    ],
+    [
+     "sx-353",
+     "sx-360",
+     "headline_similarity"
+    ],
+    [
+     "sx-353",
+     "sx-419",
+     "headline_similarity"
+    ],
+    [
+     "sx-423",
+     "sx-400",
+     "headline_similarity"
+    ],
+    [
+     "sx-400",
+     "sx-416",
+     "headline_similarity"
+    ],
+    [
+     "sx-424",
+     "sx-399",
+     "disjoint_locations"
+    ],
+    [
+     "sx-2",
+     "sx-507",
+     "headline_similarity"
+    ],
+    [
+     "sx-55",
+     "sx-130",
+     "headline_similarity"
+    ],
+    [
+     "sx-238",
+     "sx-131",
+     "headline_similarity"
+    ],
+    [
+     "sx-263",
+     "sx-267",
+     "headline_similarity"
+    ],
+    [
+     "sx-263",
+     "sx-131",
+     "headline_similarity"
+    ],
+    [
+     "sx-57",
+     "sx-130",
+     "headline_similarity"
+    ],
+    [
+     "sx-271",
+     "sx-257",
+     "headline_similarity"
+    ],
+    [
+     "sx-117",
+     "sx-266",
+     "headline_similarity"
+    ],
+    [
+     "sx-516",
+     "sx-489",
+     "headline_similarity"
+    ],
+    [
+     "sx-56",
+     "sx-239",
+     "headline_similarity"
+    ],
+    [
+     "sx-113",
+     "sx-272",
+     "headline_similarity"
+    ],
+    [
+     "sx-133",
+     "sx-190",
+     "disjoint_locations"
+    ],
+    [
+     "sx-145",
+     "sx-240",
+     "headline_similarity"
+    ]
+   ]
+  },
+  {
+   "tick": 4,
+   "items_in": 163,
+   "items_stored": 163,
+   "clusters_before_segmentation": [
+    [
+     "sx-4",
+     "sx-510",
+     "sx-488"
+    ],
+    [
+     "sx-5",
+     "sx-203",
+     "sx-428"
+    ],
+    [
+     "sx-361",
+     "sx-352"
+    ],
+    [
+     "sx-423",
+     "sx-400",
+     "sx-416"
+    ],
+    [
+     "sx-424",
+     "sx-399"
+    ],
+    [
+     "sx-152",
+     "sx-279",
+     "sx-13"
+    ],
+    [
+     "sx-494",
+     "sx-285",
+     "sx-282"
+    ],
+    [
+     "sx-490",
+     "sx-512"
+    ],
+    [
+     "sx-161",
+     "sx-275",
+     "sx-274"
+    ],
+    [
+     "sx-149",
+     "sx-164",
+     "sx-157",
+     "sx-1",
+     "sx-491"
+    ],
+    [
+     "sx-150",
+     "sx-396",
+     "sx-184"
+    ],
+    [
+     "sx-243",
+     "sx-185",
+     "sx-79"
+    ],
+    [
+     "sx-2",
+     "sx-505",
+     "sx-507",
+     "sx-487"
+    ],
+    [
+     "sx-553",
+     "sx-554"
+    ],
+    [
+     "sx-57",
+     "sx-176",
+     "sx-48",
+     "sx-128",
+     "sx-43",
+     "sx-235",
+     "sx-133",
+     "sx-267",
+     "sx-175",
+     "sx-263",
+     "sx-238",
+     "sx-132",
+     "sx-131",
+     "sx-130",
+     "sx-129",
+     "sx-71",
+     "sx-55",
+     "sx-102",
+     "sx-74",
+     "sx-234"
+    ],
+    [
+     "sx-111",
+     "sx-271",
+     "sx-181",
+     "sx-76",
+     "sx-186",
+     "sx-188",
+     "sx-270",
+     "sx-257",
+     "sx-253"
+    ],
+    [
+     "sx-145",
+     "sx-240",
+     "sx-256"
+    ],
+    [
+     "sx-85",
+     "sx-194",
+     "sx-154"
+    ],
+    [
+     "sx-167",
+     "sx-209",
+     "sx-156",
+     "sx-169",
+     "sx-168"
+    ],
+    [
+     "sx-239",
+     "sx-127",
+     "sx-126",
+     "sx-54",
+     "sx-56",
+     "sx-42",
+     "sx-77",
+     "sx-108"
+    ],
+    [
+     "sx-264",
+     "sx-536",
+     "sx-75"
+    ],
+    [
+     "sx-266",
+     "sx-51",
+     "sx-117",
+     "sx-110",
+     "sx-179"
+    ],
+    [
+     "sx-353",
+     "sx-419",
+     "sx-360"
+    ],
+    [
+     "sx-39",
+     "sx-246",
+     "sx-44",
+     "sx-232",
+     "sx-40",
+     "sx-123",
+     "sx-122"
+    ],
+    [
+     "sx-47",
+     "sx-237",
+     "sx-49"
+    ],
+    [
+     "sx-81",
+     "sx-222",
+     "sx-195",
+     "sx-158"
+    ],
+    [
+     "sx-516",
+     "sx-489"
+    ],
+    [
+     "sx-115",
+     "sx-124"
+    ],
+    [
+     "sx-247",
+     "sx-72"
+    ],
+    [
+     "sx-532",
+     "sx-144"
+    ],
+    [
+     "sx-88",
+     "sx-208"
+    ],
+    [
+     "sx-113",
+     "sx-272"
+    ],
+    [
+     "sx-139",
+     "sx-41"
+    ],
+    [
+     "sx-241",
+     "sx-125"
+    ],
+    [
+     "sx-245",
+     "sx-80"
+    ],
+    [
+     "sx-92",
+     "sx-199"
+    ],
+    [
+     "sx-93",
+     "sx-210"
+    ],
+    [
+     "sx-160",
+     "sx-198"
+    ]
+   ],
+   "segmentation_cuts": [
+    [
+     "sx-4",
+     "sx-510",
+     "headline_similarity"
+    ],
+    [
+     "sx-4",
+     "sx-488",
+     "headline_similarity"
+    ],
+    [
+     "sx-5",
+     "sx-203",
+     "headline_similarity"
+    ],
+    [
+     "sx-5",
+     "sx-428",
+     "analysis_headline"
+    ],
+    [
+     "sx-203",
+     "sx-428",
+     "analysis_headline"
+    ],
+    [
+     "sx-423",
+     "sx-400",
+     "headline_similarity"
+    ],
+    [
+     "sx-400",
+     "sx-416",
+     "headline_similarity"
+    ],
+    [
+     "sx-424",
+     "sx-399",
+     "disjoint_locations"
+    ],
+    [
+     "sx-396",
+     "sx-184",
+     "headline_similarity"
+    ],
+    [
+     "sx-2",
+     "sx-505",
+     "analysis_headline"
+    ],
+    [
+     "sx-2",
+     "sx-507",
+     "headline_similarity"
+    ],
+    [
+     "sx-505",
+     "sx-487",
+     "analysis_headline"
+    ],
+    [
+     "sx-57",
+     "sx-130",
+     "headline_similarity"
+    ],
+    [
+     "sx-48",
+     "sx-128",
+     "headline_similarity"
+    ],
+    [
+     "sx-48",
+     "sx-234",
+     "headline_similarity"
+    ],
+    [
+     "sx-128",
+     "sx-43",
+     "headline_similarity"
+    ],
+    [
+     "sx-43",
+     "sx-133",
+     "headline_similarity"
+    ],
+    [
+     "sx-235",
+     "sx-55",
+     "headline_similarity"
+    ],
+    [
+     "sx-133",
+     "sx-234",
+     "headline_similarity"
+    ],
+    [
+     "sx-267",
+     "sx-175",
+     "analysis_headline"
+    ],
+    [
+     "sx-267",
+     "sx-263",
+     "headline_similarity"
+    ],
+    [
+     "sx-175",
+     "sx-263",
+     "analysis_headline"
+    ],
+    [
+     "sx-175",
+     "sx-131",
+     "analysis_headline"
+    ],
+    [
+     "sx-175",
+     "sx-102",
+     "analysis_headline"
+    ],
+    [
+     "sx-263",
+     "sx-131",
+     "headline_similarity"
+    ],
+    [
+     "sx-263",
+     "sx-74",
+     "headline_similarity"
+    ],
+    [
+     "sx-238",
+     "sx-131",
+     "headline_similarity"
+    ],
+    [
+     "sx-130",
+     "sx-55",
+     "headline_similarity"
+    ],
+    [
+     "sx-271",
+     "sx-257",
+     "headline_similarity"
+    ],
+    [
+     "sx-76",
+     "sx-270",
+     "disjoint_locations"
+    ],
+    [
+     "sx-76",
+     "sx-253",
+     "headline_similarity"
+    ],
+    [
+     "sx-145",
+     "sx-240",
+     "headline_similarity"
+    ],
+    [
+     "sx-167",
+     "sx-209",
+     "analysis_headline"
+    ],
+    [
+     "sx-209",
+     "sx-156",
+     "analysis_headline"
+    ],
+    [
+     "sx-209",
+     "sx-169",
+     "analysis_headline"
+    ],
+    [
+     "sx-209",
+     "sx-168",
+     "analysis_headline"
+    ],
+    [
+     "sx-239",
+     "sx-56",
+     "headline_similarity"
+    ],
+    [
+     "sx-239",
+     "sx-77",
+     "headline_similarity"
+    ],
+    [
+     "sx-239",
+     "sx-108",
+     "disjoint_locations"
+    ],
+    [
+     "sx-127",
+     "sx-56",
+     "headline_similarity"
+    ],
+    [
+     "sx-127",
+     "sx-42",
+     "headline_similarity"
+    ],
+    [
+     "sx-127",
+     "sx-77",
+     "headline_similarity"
+    ],
+    [
+     "sx-126",
+     "sx-54",
+     "headline_similarity"
+    ],
+    [
+     "sx-126",
+     "sx-56",
+     "disjoint_locations"
+    ],
+    [
+     "sx-126",
+     "sx-42",
+     "headline_similarity"
+    ],
+    [
+     "sx-266",
+     "sx-51",
+     "disjoint_locations"
+    ],
+    [
+     "sx-266",
+     "sx-117",
+     "headline_similarity"
+    ],
+    [
+     "sx-51",
+     "sx-179",
+     "disjoint_locations"
+    ],
+    [
+     "sx-353",
+     "sx-419",
+     "headline_similarity"
+    ],
+    [
+     "sx-353",
+     "sx-360",
+     "headline_similarity"
+    ],
+    [
+     "sx-39",
+     "sx-246",
+     "headline_similarity"
+    ],
+    [
+     "sx-39",
+     "sx-232",
+     "disjoint_locations"
+    ],
+    [
+     "sx-39",
+     "sx-123",
+     "disjoint_locations"
+    ],
+    [
+     "sx-39",
+     "sx-122",
+     "disjoint_locations"
+    ],
+    [
+     "sx-516",
+     "sx-489",
+     "headline_similarity"
+    ],
+    [
+     "sx-115",
+     "sx-124",
+     "headline_similarity"
+    ],
+    [
+     "sx-247",
+     "sx-72",
+     "headline_similarity"
+    ],
+    [
+     "sx-113",
+     "sx-272",
+     "headline_similarity"
+    ],
+    [
+     "sx-241",
+     "sx-125",
+     "headline_similarity"
+    ],
+    [
+     "sx-160",
+     "sx-198",
+     "disjoint_locations"
+    ]
+   ]
+  }
+ ]
+}

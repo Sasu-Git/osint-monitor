@@ -1,0 +1,561 @@
+{
+ "developments": {
+  "1": {
+   "summary": "Hong Kong Tiananmen vigil organiser, former leaders guilty of inciting subversion",
+   "created_tick": 1,
+   "members": {
+    "b-85e1f8c5197d": 1,
+    "b-8a8e0d395f60": 1,
+    "b-7d87768d2f82": 1
+   },
+   "principals": [],
+   "sources": [
+    "Al Jazeera",
+    "BBC World",
+    "South China Morning Post"
+   ]
+  },
+  "2": {
+   "summary": "Several people injured in sword attack at school in Sweden",
+   "created_tick": 2,
+   "members": {
+    "b-25760921e54e": 2,
+    "b-312853eceb17": 2,
+    "b-53dc89e53904": 2
+   },
+   "principals": [],
+   "sources": [
+    "Al Jazeera",
+    "BBC World",
+    "South China Morning Post"
+   ]
+  },
+  "3": {
+   "summary": "Ebola vaccine trial to start in DR Congo as warning issued over speed of infections",
+   "created_tick": 3,
+   "members": {
+    "b-2e0da6b7e7eb": 3,
+    "b-8826249c972c": 3,
+    "b-422186e87411": 3
+   },
+   "principals": [],
+   "sources": [
+    "Al Jazeera",
+    "BBC World"
+   ]
+  },
+  "4": {
+   "summary": "Canadian premier says ‘erratic’ Trump ‘not to be trusted’ amid US trade feud",
+   "created_tick": 4,
+   "members": {
+    "b-320f20d36f00": 4,
+    "b-ed25155d038d": 4
+   },
+   "principals": [
+    "Canada",
+    "Carney",
+    "Donald Trump",
+    "Mark Carney",
+    "Trump"
+   ],
+   "sources": [
+    "BBC World",
+    "South China Morning Post"
+   ]
+  },
+  "5": {
+   "summary": "Israel re-establishes closed West Bank settlement, defying growing international protests",
+   "created_tick": 4,
+   "members": {
+    "b-52e7176bac0a": 4,
+    "b-e65cd1bb15f4": 4,
+    "b-9d435faf259d": 4
+   },
+   "principals": [
+    "Israel"
+   ],
+   "sources": [
+    "Al Jazeera",
+    "BBC World"
+   ]
+  },
+  "6": {
+   "summary": "Usain Bolt’s 100m record broken at World Humanoid Robot Games",
+   "created_tick": 4,
+   "members": {
+    "b-38f9f084379c": 4,
+    "b-e5e62052515e": 4
+   },
+   "principals": [],
+   "sources": [
+    "Al Jazeera",
+    "BBC World"
+   ]
+  },
+  "7": {
+   "summary": "Israeli drone strike on ‘civilian vehicle’ injures several in Syria",
+   "created_tick": 4,
+   "members": {
+    "b-8b0980fba97b": 4,
+    "b-34d06bf06e8c": 4
+   },
+   "principals": [
+    "Israel",
+    "Syria"
+   ],
+   "sources": [
+    "Al Jazeera",
+    "BBC World"
+   ]
+  }
+ },
+ "item_developments": {
+  "b-8608173935c4": [],
+  "b-bbdbc1d011f6": [],
+  "b-9a5375314554": [],
+  "b-12647c280dd9": [],
+  "b-4ba14a32be42": [],
+  "b-6af650c96d25": [],
+  "b-dfc16b535283": [],
+  "b-9a969cf0f666": [],
+  "b-4cd5e81853fb": [],
+  "b-bfdaaa494865": [],
+  "b-b3d4b7966b1a": [],
+  "b-3a527f407cc4": [],
+  "b-cc08ed12fb2b": [],
+  "b-85e1f8c5197d": [
+   1
+  ],
+  "b-593e3df5a77c": [],
+  "b-6b008411d3ec": [],
+  "b-e9fe18bbf419": [],
+  "b-754c16d98964": [],
+  "b-320f20d36f00": [
+   4
+  ],
+  "b-178b15323e34": [],
+  "b-8a8e0d395f60": [
+   1
+  ],
+  "b-bc8ea42498ab": [],
+  "b-42e4a4091122": [],
+  "b-49ab0ae84bc1": [],
+  "b-2dcaac6a7238": [],
+  "b-f5cd3bc0be67": [],
+  "b-52e7176bac0a": [
+   5
+  ],
+  "b-7d87768d2f82": [
+   1
+  ],
+  "b-7fa33da9a802": [],
+  "b-be85620fa514": [],
+  "b-e766610207b3": [],
+  "b-695c79f97858": [],
+  "b-7a33206917aa": [],
+  "b-26fe409ebda8": [],
+  "b-4fdd59098a40": [],
+  "b-430141096ea1": [],
+  "b-f79d8ffc1e73": [],
+  "b-182b8f969524": [],
+  "b-362cca1ce350": [],
+  "b-269b29c6351f": [],
+  "b-883ed0172d9e": [],
+  "b-c78e45f71825": [],
+  "b-8e4d7fda66a2": [],
+  "b-5b6229e0f8b3": [],
+  "b-03faa7cefdb6": [],
+  "b-0fedd85bc925": [],
+  "b-e736db6a6335": [],
+  "b-a88428a2c7a3": [],
+  "b-8db0e36319e5": [],
+  "b-acfa69107263": [],
+  "b-7561937a9df0": [],
+  "b-fac9c06dff99": [],
+  "b-33c87e811c26": [],
+  "b-55d4ee5b95b8": [],
+  "b-a56b7ed74fbe": [],
+  "b-f55f349f9898": [],
+  "b-5d7e50883373": [],
+  "b-215cdc4999f5": [],
+  "b-3b180c19ae97": [],
+  "b-377124f8dfba": [],
+  "b-a6391f8f4239": [],
+  "b-4e090ab5ad1f": [],
+  "b-47221c4faf92": [],
+  "b-fe8c2559d8cc": [],
+  "b-784c57588d66": [],
+  "b-8d75b7c79a6f": [],
+  "b-e095d21a704d": [],
+  "b-f818d24f9035": [],
+  "b-f37d375e86f7": [],
+  "b-c349800cdff6": [],
+  "b-46b3869ce893": [],
+  "b-c7fc6069d1cd": [],
+  "b-3516b3727700": [],
+  "b-d21109ba71d7": [],
+  "b-342d8d2a178d": [],
+  "b-bcf2fde80a0a": [],
+  "b-bdae49f9a9e3": [],
+  "b-d92957f3578b": [],
+  "b-f2b3df789ef0": [],
+  "b-51ac60fbd495": [],
+  "b-54ad572121b2": [],
+  "b-b34bb8cdf0bb": [],
+  "b-1a0f6855a3bf": [],
+  "b-6a2e684a65d2": [],
+  "b-449d982b4681": [],
+  "b-df12883b1d79": [],
+  "b-2e0da6b7e7eb": [
+   3
+  ],
+  "b-58ba94123221": [],
+  "b-25760921e54e": [
+   2
+  ],
+  "b-b63dd0b0fd76": [],
+  "b-4bdce9942c01": [],
+  "b-e5bc44c5568f": [],
+  "b-9e76870b7d26": [],
+  "b-8376ac0bb513": [],
+  "b-a26e096ccba9": [],
+  "b-995c0a447c00": [],
+  "b-1e0d6412a20d": [],
+  "b-87acc226075b": [],
+  "b-312853eceb17": [
+   2
+  ],
+  "b-5c4770cb0470": [],
+  "b-bbcb00eae268": [],
+  "b-4ac7dead09e8": [],
+  "b-4cd9d9be1ad3": [],
+  "b-662bc2b88af0": [],
+  "b-13457b07b80d": [],
+  "b-fcd819c15684": [],
+  "b-d610efa7ec3a": [],
+  "b-5d5bb41d7ac1": [],
+  "b-6ad4512454be": [],
+  "b-b4013da56188": [],
+  "b-beca484d3a11": [],
+  "b-d566298b2073": [],
+  "b-694a0776cfe4": [],
+  "b-920a282d5760": [],
+  "b-38eba7dee8c5": [],
+  "b-53dc89e53904": [
+   2
+  ],
+  "b-5162a19b64e5": [],
+  "b-a76192bb6b0c": [],
+  "b-1f9af4732377": [],
+  "b-36b77b6ef894": [],
+  "b-b3a0d6ba0b2d": [],
+  "b-e1d61749e965": [],
+  "b-e96b4eb795b4": [],
+  "b-b0ad43cd35ac": [],
+  "b-8e90ad52cbe9": [],
+  "b-376b7919c8dc": [],
+  "b-144df3b935e7": [],
+  "b-461935b33d9b": [],
+  "b-9259fb4b9124": [],
+  "b-f21800253bff": [],
+  "b-fd281c485615": [],
+  "b-8826249c972c": [
+   3
+  ],
+  "b-422186e87411": [
+   3
+  ],
+  "b-38f9f084379c": [
+   6
+  ],
+  "b-7999c9c16412": [],
+  "b-e090e68e5085": [],
+  "b-056b5053b0a8": [],
+  "b-ff2a280cd649": [],
+  "b-e65cd1bb15f4": [
+   5
+  ],
+  "b-3ee706b860b3": [],
+  "b-71e9862bc0c3": [],
+  "b-7bef39fc49dd": [],
+  "b-a9ba50f32373": [],
+  "b-784967ca87b3": [],
+  "b-5ed64d3cfbe4": [],
+  "b-2972883a950e": [],
+  "b-ab3e1d62b3eb": [],
+  "b-1288b9e095f2": [],
+  "b-8b0980fba97b": [
+   7
+  ],
+  "b-d6897636cbea": [],
+  "b-9d435faf259d": [
+   5
+  ],
+  "b-8bc2de12c803": [],
+  "b-7fd77555002c": [],
+  "b-8d3989f81d6b": [],
+  "b-2601ecbd74d1": [],
+  "b-e560241322a9": [],
+  "b-e5e62052515e": [
+   6
+  ],
+  "b-ed25155d038d": [
+   4
+  ],
+  "b-f838c50034f9": [],
+  "b-cd62c85e62be": [],
+  "b-f43c963adf42": [],
+  "b-34d06bf06e8c": [
+   7
+  ]
+ },
+ "ticks": [
+  {
+   "tick": 1,
+   "items_in": 56,
+   "items_stored": 56,
+   "clusters_before_segmentation": [
+    [
+     "b-85e1f8c5197d",
+     "b-7d87768d2f82",
+     "b-8a8e0d395f60"
+    ]
+   ],
+   "segmentation_cuts": []
+  },
+  {
+   "tick": 2,
+   "items_in": 65,
+   "items_stored": 65,
+   "clusters_before_segmentation": [
+    [
+     "b-b3d4b7966b1a",
+     "b-e095d21a704d"
+    ],
+    [
+     "b-c349800cdff6",
+     "b-bbcb00eae268"
+    ],
+    [
+     "b-85e1f8c5197d",
+     "b-d21109ba71d7",
+     "b-7d87768d2f82",
+     "b-8a8e0d395f60"
+    ],
+    [
+     "b-25760921e54e",
+     "b-53dc89e53904",
+     "b-312853eceb17"
+    ],
+    [
+     "b-3a527f407cc4",
+     "b-1a0f6855a3bf"
+    ],
+    [
+     "b-6a2e684a65d2",
+     "b-2e0da6b7e7eb"
+    ]
+   ],
+   "segmentation_cuts": [
+    [
+     "b-b3d4b7966b1a",
+     "b-e095d21a704d",
+     "headline_similarity"
+    ],
+    [
+     "b-c349800cdff6",
+     "b-bbcb00eae268",
+     "analysis_headline"
+    ],
+    [
+     "b-85e1f8c5197d",
+     "b-d21109ba71d7",
+     "analysis_headline"
+    ],
+    [
+     "b-3a527f407cc4",
+     "b-1a0f6855a3bf",
+     "headline_similarity"
+    ],
+    [
+     "b-6a2e684a65d2",
+     "b-2e0da6b7e7eb",
+     "disjoint_locations"
+    ]
+   ]
+  },
+  {
+   "tick": 3,
+   "items_in": 14,
+   "items_stored": 14,
+   "clusters_before_segmentation": [
+    [
+     "b-b3d4b7966b1a",
+     "b-9259fb4b9124",
+     "b-e736db6a6335",
+     "b-e095d21a704d"
+    ],
+    [
+     "b-c349800cdff6",
+     "b-bbcb00eae268"
+    ],
+    [
+     "b-85e1f8c5197d",
+     "b-d21109ba71d7",
+     "b-7d87768d2f82",
+     "b-8a8e0d395f60"
+    ],
+    [
+     "b-25760921e54e",
+     "b-53dc89e53904",
+     "b-312853eceb17"
+    ],
+    [
+     "b-6a2e684a65d2",
+     "b-2e0da6b7e7eb",
+     "b-422186e87411",
+     "b-8826249c972c"
+    ],
+    [
+     "b-3a527f407cc4",
+     "b-1a0f6855a3bf"
+    ]
+   ],
+   "segmentation_cuts": [
+    [
+     "b-b3d4b7966b1a",
+     "b-9259fb4b9124",
+     "headline_similarity"
+    ],
+    [
+     "b-b3d4b7966b1a",
+     "b-e095d21a704d",
+     "headline_similarity"
+    ],
+    [
+     "b-9259fb4b9124",
+     "b-e736db6a6335",
+     "headline_similarity"
+    ],
+    [
+     "b-c349800cdff6",
+     "b-bbcb00eae268",
+     "analysis_headline"
+    ],
+    [
+     "b-85e1f8c5197d",
+     "b-d21109ba71d7",
+     "analysis_headline"
+    ],
+    [
+     "b-6a2e684a65d2",
+     "b-2e0da6b7e7eb",
+     "disjoint_locations"
+    ],
+    [
+     "b-3a527f407cc4",
+     "b-1a0f6855a3bf",
+     "headline_similarity"
+    ]
+   ]
+  },
+  {
+   "tick": 4,
+   "items_in": 27,
+   "items_stored": 25,
+   "clusters_before_segmentation": [
+    [
+     "b-b3d4b7966b1a",
+     "b-9259fb4b9124",
+     "b-e736db6a6335",
+     "b-e095d21a704d"
+    ],
+    [
+     "b-38f9f084379c",
+     "b-e5e62052515e"
+    ],
+    [
+     "b-c349800cdff6",
+     "b-bbcb00eae268"
+    ],
+    [
+     "b-85e1f8c5197d",
+     "b-d21109ba71d7",
+     "b-7d87768d2f82",
+     "b-8a8e0d395f60"
+    ],
+    [
+     "b-320f20d36f00",
+     "b-ed25155d038d"
+    ],
+    [
+     "b-52e7176bac0a",
+     "b-9d435faf259d",
+     "b-38eba7dee8c5",
+     "b-e65cd1bb15f4"
+    ],
+    [
+     "b-6a2e684a65d2",
+     "b-2e0da6b7e7eb",
+     "b-422186e87411",
+     "b-8826249c972c"
+    ],
+    [
+     "b-25760921e54e",
+     "b-53dc89e53904",
+     "b-312853eceb17"
+    ],
+    [
+     "b-3a527f407cc4",
+     "b-1a0f6855a3bf"
+    ],
+    [
+     "b-8b0980fba97b",
+     "b-34d06bf06e8c"
+    ]
+   ],
+   "segmentation_cuts": [
+    [
+     "b-b3d4b7966b1a",
+     "b-9259fb4b9124",
+     "headline_similarity"
+    ],
+    [
+     "b-b3d4b7966b1a",
+     "b-e095d21a704d",
+     "headline_similarity"
+    ],
+    [
+     "b-9259fb4b9124",
+     "b-e736db6a6335",
+     "headline_similarity"
+    ],
+    [
+     "b-c349800cdff6",
+     "b-bbcb00eae268",
+     "analysis_headline"
+    ],
+    [
+     "b-85e1f8c5197d",
+     "b-d21109ba71d7",
+     "analysis_headline"
+    ],
+    [
+     "b-9d435faf259d",
+     "b-38eba7dee8c5",
+     "analysis_headline"
+    ],
+    [
+     "b-6a2e684a65d2",
+     "b-2e0da6b7e7eb",
+     "disjoint_locations"
+    ],
+    [
+     "b-3a527f407cc4",
+     "b-1a0f6855a3bf",
+     "headline_similarity"
+    ]
+   ]
+  }
+ ]
+}

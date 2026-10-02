@@ -1,5 +1,6 @@
 """RSS/Atom feed collector."""
 
+import logging
 import re
 from datetime import datetime
 
@@ -8,6 +9,8 @@ import requests as _requests
 
 from osint_monitor.collectors.base import BaseCollector
 from osint_monitor.core.models import RawItemModel
+
+logger = logging.getLogger(__name__)
 
 _RSS_HEADERS = {
     "User-Agent": "Mozilla/5.0 (compatible; OSINT-Monitor/2.0; +research)",
@@ -28,13 +31,18 @@ class RSSCollector(BaseCollector):
                 resp = _requests.get(self.url, timeout=10, headers=_RSS_HEADERS)
                 resp.raise_for_status()
                 feed = feedparser.parse(resp.text)
-            except _requests.RequestException:
+            except _requests.RequestException as e:
                 # Fallback to feedparser's own fetcher (different UA, handles redirects)
                 feed = feedparser.parse(self.url)
+                status = feed.get("status")
+                if not feed.entries and (status is None or status >= 400):
+                    # a refused or missing feed is an error, not "0 items"
+                    raise RuntimeError(f"{e}" + (f" (fallback HTTP {status})" if status else ""))
             items = self.entries_to_items(feed.entries[:self.max_items], self.name)
             print(f"  [ok] {self.name}: {len(items)} items")
         except Exception as e:
             print(f"  [err] {self.name}: {e}")
+            logger.warning("RSS feed %s failed: %s", self.name, e)
         return items
 
     @classmethod
@@ -131,6 +139,7 @@ class NitterCollector(RSSCollector):
         # All instances exhausted — log once
         if last_error:
             print(f"  [err] {self.name}: all Nitter instances failed (last: {last_error})")
+            logger.warning("Nitter %s: all instances failed (last: %s)", self.name, last_error)
         else:
             print(f"  [--] {self.name}: 0 items (tried {len(self.instances)} instances)")
         return []

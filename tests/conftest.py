@@ -27,6 +27,16 @@ def _throwaway_default_database():
     yield
 
 
+@pytest.fixture(autouse=True)
+def _isolated_runtime_files(tmp_path, monkeypatch):
+    """Tests never read or write the real data/logs state (tier ticks, gap log, collector status)."""
+    from osint_monitor.collectors import status
+    from osint_monitor.core import scheduler
+    monkeypatch.setattr(scheduler, "_TICK_FILE", tmp_path / "tier_ticks.json")
+    monkeypatch.setattr(scheduler, "_GAP_LOG", tmp_path / "collection_gaps.jsonl")
+    monkeypatch.setattr(status, "STATUS_FILE", tmp_path / "collector_status.json")
+
+
 @pytest.fixture()
 def session():
     """Provide a clean in-memory SQLite database session per test."""

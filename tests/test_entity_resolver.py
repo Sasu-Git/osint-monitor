@@ -21,9 +21,10 @@ def test_normalise_expands_abbreviations():
 
 
 def test_normalise_coreference():
-    # "moscow" is in the coreference map -> "russia"
-    assert normalise("Moscow") == "russia"
-    assert "moscow" in COREFERENCE_MAP
+    # state name variants collapse; a capital is a place with its own identity (it acts for its state
+    # through config/actors.yaml `represents`, a role mapping, not an alias)
+    assert normalise("Russian Federation") == "russia"
+    assert normalise("Moscow") == "moscow" and "moscow" not in COREFERENCE_MAP
 
 
 def test_normalise_strips_twitter():

@@ -494,11 +494,16 @@ class DocumentCollector(BaseCollector):
     FEDERAL_REGISTER_URL = "https://www.federalregister.gov/api/v1/documents.json"
     CRS_RSS_URL = "https://crsreports.congress.gov/rss/AllProducts"
 
+    # One stored source name per publisher (previously both were "government_documents").
+    FEDERAL_REGISTER_SOURCE = "Federal Register"
+    CRS_SOURCE = "Congressional Research Service"
+
+    # Federal Register API type codes; the long names ("rules") match no document (count 0).
     DOCUMENT_TYPES = (
-        "presidential_documents",
-        "rules",
-        "proposed_rules",
-        "notices",
+        "PRESDOCU",
+        "RULE",
+        "PRORULE",
+        "NOTICE",
     )
 
     def __init__(
@@ -562,7 +567,7 @@ class DocumentCollector(BaseCollector):
                         content=summary[:5000],
                         url=doc.get("html_url", pdf_url),
                         published_at=pub_date,
-                        source_name=self.name,
+                        source_name=self.FEDERAL_REGISTER_SOURCE,
                         external_id=doc.get("document_number", ""),
                         fetched_at=datetime.utcnow(),
                     )
@@ -614,7 +619,7 @@ class DocumentCollector(BaseCollector):
                         content=summary[:5000],
                         url=entry.get("link", pdf_url),
                         published_at=pub_date,
-                        source_name=self.name,
+                        source_name=self.CRS_SOURCE,
                         external_id=entry.get("id") or entry.get("link", ""),
                         fetched_at=datetime.utcnow(),
                     )

@@ -1,0 +1,110 @@
+# Institutions, multilateral organisations and forums as first-class entities (processors/institutions.py).
+#
+# Each entry is one real-world body: its canonical name, kind, the body it belongs to (`parent`: a state or
+# another institution) and the names it is written under (any language). The lowest meaningful acting body is
+# the canonical actor ("Security Council resolution" -> UN Security Council, not United Nations); parents
+# stay available for aggregation (a Situation about the United States sees the U.S. Navy through its parent).
+#
+# Short all-capital aliases (UN, WHO, EU) match case-sensitively, so "who" or the article "un" never match.
+#
+# `generic_labels`: bare labels that name a body only in context ("the Navy", "the Council"). They resolve to
+# the institution whose qualifier (a state or organisation) the item names or whose identity the item's
+# publisher is; otherwise they stay unresolved and cannot be principal actors.
+#
+# kinds: GOVERNMENT_INSTITUTION, MULTILATERAL_ORGANIZATION, INSTITUTIONAL_BODY, MULTILATERAL_FORUM, COURT,
+#        MILITARY, OTHER_ORGANIZATION
+
+institutions:
+  # --- United Nations -----------------------------------------------------------------------------
+  - {canonical: United Nations, kind: MULTILATERAL_ORGANIZATION, aliases: [UN, U.N., ONU, Naciones Unidas, Nazioni Unite, Organizzazione delle Nazioni Unite]}
+  - {canonical: UN Security Council, kind: INSTITUTIONAL_BODY, parent: United Nations, aliases: [UNSC, U.N. Security Council, United Nations Security Council, Consejo de Seguridad, Consiglio di Sicurezza]}
+  - {canonical: UN General Assembly, kind: INSTITUTIONAL_BODY, parent: United Nations, aliases: [UNGA, U.N. General Assembly, United Nations General Assembly, UNGA 81, UNGA 80, Asamblea General de la ONU, Assemblea generale delle Nazioni Unite]}
+  - {canonical: UN Secretary-General, kind: INSTITUTIONAL_BODY, parent: United Nations, aliases: [UN Secretary General, U.N. Secretary-General, UN chief, Secretario General de la ONU, Segretario generale dell'ONU]}
+  - {canonical: UNHCR, kind: INSTITUTIONAL_BODY, parent: United Nations, aliases: [UN refugee agency, UN Refugee Agency, ACNUR, United Nations High Commissioner for Refugees]}
+  - {canonical: World Health Organization, kind: INSTITUTIONAL_BODY, parent: United Nations, aliases: [WHO, OMS]}
+  - {canonical: International Atomic Energy Agency, kind: INSTITUTIONAL_BODY, parent: United Nations, aliases: [IAEA, OIEA, AIEA]}
+  - {canonical: UNICEF, kind: INSTITUTIONAL_BODY, parent: United Nations, aliases: []}
+  - {canonical: World Food Programme, kind: INSTITUTIONAL_BODY, parent: United Nations, aliases: [WFP, PMA]}
+  - {canonical: OCHA, kind: INSTITUTIONAL_BODY, parent: United Nations, aliases: [UN OCHA, UN humanitarian office]}
+  - {canonical: International Court of Justice, kind: COURT, parent: United Nations, aliases: [ICJ, World Court, Corte Internacional de Justicia, Corte internazionale di giustizia]}
+  - {canonical: International Criminal Court, kind: COURT, aliases: [ICC, Corte Penal Internacional, Corte penale internazionale]}
+
+  # --- European Union -----------------------------------------------------------------------------
+  - {canonical: European Union, kind: MULTILATERAL_ORGANIZATION, aliases: [EU, E.U., Unión Europea, UE, Unione Europea]}
+  - {canonical: European Commission, kind: INSTITUTIONAL_BODY, parent: European Union, aliases: [EU Commission, Comisión Europea, Commissione europea, Commissione Europea]}
+  - {canonical: European Council, kind: INSTITUTIONAL_BODY, parent: European Union, aliases: [Consejo Europeo, Consiglio europeo]}
+  - {canonical: Council of the European Union, kind: INSTITUTIONAL_BODY, parent: European Union, aliases: [Council of the EU, EU Council, Consejo de la UE, Consejo de la Unión Europea, Consiglio dell'UE, Consiglio dell'Unione europea]}
+  - {canonical: European Parliament, kind: INSTITUTIONAL_BODY, parent: European Union, aliases: [EU Parliament, Parlamento Europeo, Parlamento europeo]}
+  - {canonical: European External Action Service, kind: INSTITUTIONAL_BODY, parent: European Union, aliases: [EEAS]}
+  - {canonical: European Central Bank, kind: INSTITUTIONAL_BODY, parent: European Union, aliases: [ECB, BCE, Banco Central Europeo, Banca centrale europea]}
+
+  # --- other multilateral organisations and forums --------------------------------------------------
+  - {canonical: NATO, kind: MULTILATERAL_ORGANIZATION, aliases: [Nato, North Atlantic Treaty Organization, OTAN]}
+  - {canonical: G7, kind: MULTILATERAL_FORUM, aliases: [Group of Seven, G-7, G7 summit]}
+  - {canonical: G20, kind: MULTILATERAL_FORUM, aliases: [Group of 20, G-20]}
+  - {canonical: BRICS, kind: MULTILATERAL_FORUM, aliases: []}
+  - {canonical: OPEC, kind: MULTILATERAL_ORGANIZATION, aliases: [Organization of the Petroleum Exporting Countries, OPEP]}
+  - {canonical: OPEC+, kind: MULTILATERAL_FORUM, aliases: [OPEC Plus]}
+  - {canonical: World Trade Organization, kind: MULTILATERAL_ORGANIZATION, aliases: [WTO, OMC]}
+  - {canonical: OECD, kind: MULTILATERAL_ORGANIZATION, aliases: [OCDE, OCSE]}
+  - {canonical: International Monetary Fund, kind: MULTILATERAL_ORGANIZATION, aliases: [IMF, FMI]}
+  - {canonical: World Bank, kind: MULTILATERAL_ORGANIZATION, aliases: [Banco Mundial, Banca mondiale]}
+  - {canonical: Bank for International Settlements, kind: MULTILATERAL_ORGANIZATION, aliases: [BIS]}
+  - {canonical: African Union, kind: MULTILATERAL_ORGANIZATION, aliases: [Unión Africana, Unione africana]}
+  - {canonical: ASEAN, kind: MULTILATERAL_ORGANIZATION, aliases: [Association of Southeast Asian Nations]}
+  - {canonical: Arab League, kind: MULTILATERAL_ORGANIZATION, aliases: [League of Arab States, Liga Árabe, Lega araba]}
+  - {canonical: Gulf Cooperation Council, kind: MULTILATERAL_ORGANIZATION, aliases: [GCC]}
+  - {canonical: Palestinian Authority, kind: GOVERNMENT_INSTITUTION, aliases: [Autoridad Palestina, Autorità palestinese, Autorità nazionale palestinese]}
+
+  # --- United States ----------------------------------------------------------------------------------
+  - {canonical: White House, kind: GOVERNMENT_INSTITUTION, parent: United States, aliases: [Casa Bianca, Casa Blanca]}
+  - {canonical: US Department of Defense, kind: GOVERNMENT_INSTITUTION, parent: United States, aliases: [Pentagon, Department of Defense, Defense Department, DoD, Department of War, War Department, US Department of War, U.S. Department of Defense, Pentágono, Pentagono]}
+  - {canonical: US State Department, kind: GOVERNMENT_INSTITUTION, parent: United States, aliases: [State Department, Department of State, U.S. State Department, Departamento de Estado, Dipartimento di Stato]}
+  - {canonical: US Treasury, kind: GOVERNMENT_INSTITUTION, parent: United States, aliases: [Treasury Department, Department of the Treasury, U.S. Treasury, US Treasury Department, Tesoro de EEUU]}
+  - {canonical: OFAC, kind: GOVERNMENT_INSTITUTION, parent: US Treasury, aliases: [Office of Foreign Assets Control]}
+  - {canonical: Federal Reserve, kind: GOVERNMENT_INSTITUTION, parent: United States, aliases: [Fed, US Federal Reserve, Reserva Federal, Federal Reserve Board]}
+  - {canonical: U.S. Navy, kind: MILITARY, parent: US Department of Defense, aliases: [US Navy, United States Navy, USN]}
+  - {canonical: U.S. Air Force, kind: MILITARY, parent: US Department of Defense, aliases: [US Air Force, United States Air Force, USAF]}
+  - {canonical: U.S. Army, kind: MILITARY, parent: US Department of Defense, aliases: [US Army, United States Army]}
+  - {canonical: U.S. Marine Corps, kind: MILITARY, parent: US Department of Defense, aliases: [US Marine Corps, United States Marine Corps, USMC]}
+  - {canonical: U.S. Central Command, kind: MILITARY, parent: US Department of Defense, aliases: [CENTCOM, US Central Command, United States Central Command]}
+  - {canonical: U.S. Customs and Border Protection, kind: GOVERNMENT_INSTITUTION, parent: United States, aliases: [CBP, Customs and Border Protection, US Customs and Border Protection]}
+  - {canonical: US Department of Homeland Security, kind: GOVERNMENT_INSTITUTION, parent: United States, aliases: [DHS, Department of Homeland Security, Homeland Security]}
+  - {canonical: CIA, kind: GOVERNMENT_INSTITUTION, parent: United States, aliases: [Central Intelligence Agency, U.S. Central Intelligence Agency]}
+  - {canonical: FBI, kind: GOVERNMENT_INSTITUTION, parent: United States, aliases: [Federal Bureau of Investigation]}
+  - {canonical: US Congress, kind: GOVERNMENT_INSTITUTION, parent: United States, aliases: [U.S. Congress, Congreso de EEUU, Congresso Usa]}
+  - {canonical: US Senate, kind: GOVERNMENT_INSTITUTION, parent: US Congress, aliases: [U.S. Senate]}
+  - {canonical: US House of Representatives, kind: GOVERNMENT_INSTITUTION, parent: US Congress, aliases: [House of Representatives, U.S. House]}
+  - {canonical: U.S. Supreme Court, kind: COURT, parent: United States, aliases: [US Supreme Court, Supreme Court of the United States]}
+  - {canonical: U.S. Court of Appeals for the D.C. Circuit, kind: COURT, parent: United States, aliases: [DC Circuit, D.C. Circuit, D.C. Circuit Court of Appeals]}
+
+  # --- other states' bodies -----------------------------------------------------------------------
+  - {canonical: Royal Navy, kind: MILITARY, parent: United Kingdom, aliases: []}
+  - {canonical: UK Ministry of Defence, kind: GOVERNMENT_INSTITUTION, parent: United Kingdom, aliases: [British Ministry of Defence]}
+  - {canonical: Kremlin, kind: GOVERNMENT_INSTITUTION, parent: Russia, aliases: [Cremlino, Kremlín]}
+  - {canonical: Russian Aerospace Forces, kind: MILITARY, parent: Russia, aliases: [VKS]}
+  - {canonical: Ukrainian Air Force, kind: MILITARY, parent: Ukraine, aliases: [Air Force of Ukraine, Ukraine's Air Force]}
+  - {canonical: Israel Defense Forces, kind: MILITARY, parent: Israel, aliases: [IDF, Israeli military, Israeli army]}
+  - {canonical: IRGC, kind: MILITARY, parent: Iran, aliases: [Islamic Revolutionary Guard Corps, Revolutionary Guards, Guardia Revolucionaria, Guardiani della Rivoluzione]}
+  - {canonical: People's Liberation Army, kind: MILITARY, parent: China, aliases: [PLA]}
+
+generic_labels:              # label -> {qualifier (state / organisation): institution}
+  navy: {United States: U.S. Navy, United Kingdom: Royal Navy}
+  air force: {United States: U.S. Air Force, Ukraine: Ukrainian Air Force, Russia: Russian Aerospace Forces}
+  army: {United States: U.S. Army}
+  council: {European Union: Council of the European Union, United Nations: UN Security Council}
+  commission: {European Union: European Commission}
+  parliament: {European Union: European Parliament}
+  supreme court: {United States: U.S. Supreme Court}
+  corte suprema: {United States: U.S. Supreme Court}
+  general assembly: {United Nations: UN General Assembly}
+  security council: {United Nations: UN Security Council}
+  congress: {United States: US Congress}
+  senate: {United States: US Senate}
+  ministry of defence: {United Kingdom: UK Ministry of Defence}
+  defense: {}
+  defence: {}
+  government: {}
+  ministry: {}
+  military: {}
+  court: {}

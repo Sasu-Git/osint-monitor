@@ -48,13 +48,15 @@ from sqlalchemy.orm import Session, joinedload
 from osint_monitor.core.database import Entity, Event, EventEntity, EventItem, RawItem
 from osint_monitor.processors.actors import ActorNormalizer
 from osint_monitor.processors.geography import Gazetteer
+from osint_monitor.processors.text_normalize import clean_text
 
 logger = logging.getLogger(__name__)
 
 ACTOR_LABELS = {"PERSON", "NORP", "GPE", "ORG"}
-CLIMB_DEPS = {"compound", "amod", "poss", "nmod", "appos", "conj", "flat", "case", "nummod", "cc"}
+CLIMB_DEPS = {"compound", "amod", "poss", "nmod", "appos", "conj", "flat", "case", "nummod", "cc", "flat:name"}
 PARTICIPANT_DEPS = {"nsubj", "nsubjpass", "csubj", "csubjpass", "dobj", "iobj", "dative", "agent",
-                    "attr", "oprd", "ROOT"}
+                    "attr", "oprd", "ROOT",
+                    "obj", "nsubj:pass", "csubj:pass"}          # Universal Dependencies labels (it/es models)
 PARTICIPANT_PREPS = {"with", "between", "against", "by"}
 TARGET_PREPS = {"on", "upon", "against"}
 # "sanctions on Russia", "strike on Iran": the object of a coercive measure is a party to it
@@ -118,7 +120,7 @@ def is_participant(span, actor_tokens: set[int] | None = None) -> bool:
             return False
         if dep in PARTICIPANT_DEPS:
             head = tok.head.lemma_.lower()
-            if dep in {"nsubj", "nsubjpass", "csubj", "csubjpass"}:
+            if dep in {"nsubj", "nsubjpass", "csubj", "csubjpass", "nsubj:pass", "csubj:pass"}:
                 return head not in TOPIC_SUBJECT_VERBS
             if dep != "ROOT" and dep != "agent" and head in TOPIC_VERBS:
                 return False
@@ -147,11 +149,11 @@ def _gazetteer() -> Gazetteer:
     return _GAZETTEER
 
 
-def rejection(span, normalizer: ActorNormalizer, geo: Gazetteer | None = None) -> str | None:
+def rejection(span, normalizer: ActorNormalizer, geo: Gazetteer | None = None, label: str | None = None) -> str | None:
     """Why an actor candidate is not an actor in its sentence, or None. Uses the NER label,
     part of speech and dependency role; configured actors are never rejected."""
     geo = geo or _gazetteer()
-    text, label, root = span.text, getattr(span, "label_", ""), span.root
+    text, label, root = span.text, label or getattr(span, "label_", ""), span.root
     if normalizer.is_known(text):
         return None
     before = span.doc[span.start - 1].lower_ if span.start > 0 else ""
@@ -173,27 +175,35 @@ def rejection(span, normalizer: ActorNormalizer, geo: Gazetteer | None = None) -
     return None
 
 
-def _spans(doc, normalizer: ActorNormalizer):
-    """Actor spans: NER actors, plus configured actors the NER missed or mislabelled."""
+def _spans(doc, normalizer: ActorNormalizer, lang: str = "en"):
+    """(span, label) for actor spans: NER actors -- names only, clause-like spans fail validation
+    (``nlp.mention_span``) -- plus configured actors the NER missed or mislabelled."""
+    from osint_monitor.processors.nlp import entity_type_of, mention_span
     covered: set[int] = set()
     for ent in doc.ents:
-        if ent.label_ in ACTOR_LABELS or normalizer.is_known(ent.text):
+        span = mention_span(ent)
+        if span is None:
+            continue
+        etype = entity_type_of(ent.label_, span.text, lang)
+        label = etype.value if etype else ent.label_
+        if label in ACTOR_LABELS or normalizer.is_known(span.text):
             covered.update(range(ent.start, ent.end))
-            yield ent
+            yield span, label
     for tok in doc:
         if tok.i not in covered and tok.pos_ == "PROPN" and normalizer.is_known(tok.text):
-            yield doc[tok.i:tok.i + 1]
+            yield doc[tok.i:tok.i + 1], ""
 
 
-def item_candidates(nlp, title: str, lead: str = "", normalizer: ActorNormalizer | None = None) -> list[Candidate]:
+def item_candidates(nlp, title: str, lead: str = "", normalizer: ActorNormalizer | None = None,
+                    lang: str = "en") -> list[Candidate]:
     normalizer = normalizer or ActorNormalizer.load()
     out = []
     for fld, text in (("title", title), ("lead", lead)):
         if text:
-            spans = list(_spans(nlp(text[:500]), normalizer))
-            actor_tokens = {i for sp in spans for i in range(sp.start, sp.end)}
-            for sp in spans:
-                why = rejection(sp, normalizer)
+            spans = list(_spans(nlp(clean_text(text)[:500]), normalizer, lang))
+            actor_tokens = {i for sp, _ in spans for i in range(sp.start, sp.end)}
+            for sp, label in spans:
+                why = rejection(sp, normalizer, label=label or None)
                 out.append(Candidate(sp.text, why is None and is_participant(sp, actor_tokens), fld, why))
     return out
 
@@ -273,6 +283,38 @@ def principal_selection(nlp, items: list[tuple[str, str]],
                               for t, lead in items])
 
 
+@dataclass
+class DevelopmentActors:
+    principals: set[str]                            # principal actor names
+    roles: dict[str, str]                           # actor name -> role in the Development
+    selection: "PrincipalSelection | None" = None
+
+
+def development_actors(items: list[dict], nlp=None, normalizer: ActorNormalizer | None = None) -> DevelopmentActors:
+    """Principal actors and actor roles of one Development. ``items``: dicts with title, lead, lang, source."""
+    from osint_monitor.processors.nlp import get_language_nlp
+    normalizer = normalizer or ActorNormalizer.load()
+    evidence = []
+    for i in items:
+        item_nlp = nlp if nlp is not None else get_language_nlp(i.get("lang"))
+        if item_nlp is None:
+            continue                           # no trusted model for the language: no actor evidence
+        evidence.append(item_evidence(item_candidates(item_nlp, i["title"], i["lead"], normalizer,
+                                                      (i.get("lang") or "en")), normalizer))
+    selection = select_principals(evidence)
+    from osint_monitor.processors.actor_roles import development_roles
+    dev = development_roles(items, normalizer)
+    # principal = the role says it acts, consistently across the evidence: its dominant role is "actor"
+    # and its actor support reaches the same threshold as before (1 for 1-2 items, else 1.5 / 25%)
+    need = required_support(len(dev.items))
+    principals = {h for h, role in dev.roles.items() if role == "actor" and dev.weights[h].get("actor", 0.0) >= need}
+    # lead sentences support the actors headlines name; they add none of their own ("The Pentagon
+    # declined to comment") unless no headline names an actor at all
+    if dev.headline_actors:
+        principals &= dev.headline_actors
+    return DevelopmentActors(principals, dev.roles, selection)
+
+
 def principal_keys(nlp, items: list[tuple[str, str]], normalizer: ActorNormalizer | None = None) -> set[str]:
     """Canonical (state-level) keys of principal actors for an event given (title, lead) per item."""
     return principal_selection(nlp, items, normalizer).keys
@@ -296,10 +338,9 @@ def mark_principal_actors(session: Session, now: datetime | None = None,
     participant ("Trump" for a selected United States). When no linked entity matches, an
     existing entity with that name is linked to the event.
     """
-    from osint_monitor.processors.nlp import get_nlp
+    from osint_monitor.processors.language import item_language
 
     now = now or datetime.utcnow()
-    nlp = get_nlp()
     normalizer = normalizer or ActorNormalizer.load()
     events = session.query(Event).filter(Event.last_updated_at >= now - timedelta(days=window_days)).all()
     stats = {"events": len(events), "with_principals": 0, "without_principals": 0, "principal_links": 0}
@@ -308,37 +349,71 @@ def mark_principal_actors(session: Session, now: datetime | None = None,
 
     by_surface: dict[str, Entity] | None = None      # all entities, built only if an event needs it
     for event in events:
-        rows = [(t, c) for t, c in session.query(RawItem.title, RawItem.content)
-                .join(EventItem, EventItem.item_id == RawItem.id).filter(EventItem.event_id == event.id)]
-        selection = principal_selection(nlp, [(t or "", _lead(c)) for t, c in rows], normalizer)
-
+        rows = (session.query(RawItem).options(joinedload(RawItem.source))
+                .join(EventItem, EventItem.item_id == RawItem.id).filter(EventItem.event_id == event.id).all())
+        actors = development_actors([{"title": r.title or "", "lead": _lead(r.content),
+                                      "lang": item_language(r.source.name if r.source else None, r.title or ""),
+                                      "source": r.source.name if r.source else None} for r in rows],
+                                    normalizer=normalizer)
         links = (session.query(EventEntity).options(joinedload(EventEntity.entity))
                  .filter(EventEntity.event_id == event.id).all())
+        # an entity stands for the holders of its own name and of its short forms ("Xi" of "Xi Jinping");
+        # other aliases do not count: an "Americas" entity with an "America" alias is not the United States
+        holder_of = {ee.entity_id: {entity_holder(n, ee.entity.entity_type, normalizer)
+                                    for n in [ee.entity.canonical_name, *short_forms(ee.entity)]}
+                     for ee in links if ee.entity is not None}
         principal_ids: set[int] = set()
-        for key in selection.keys:
-            names = selection.surfaces[key] | {key}
+        for holder in actors.principals:
             # the entity's own name must stand for this actor: an "Americas" entity that the
             # resolver gave an "America" alias is not the United States
-            matched = {ee.entity_id for ee in links if ee.entity is not None
-                       and normalizer.key(ee.entity.canonical_name) == key
-                       and any(normalizer.surface(n) in names
-                               for n in [ee.entity.canonical_name, *(ee.entity.aliases or [])])}
+            matched = {eid for eid, hs in holder_of.items() if any(same_holder(h, holder) for h in hs)}
             if not matched:
                 if by_surface is None:
                     by_surface = _entity_index(session, normalizer)
-                entity = next((by_surface[s] for s in sorted(names) if s in by_surface), None)
+                entity = by_surface.get(holder)
                 if entity is not None:            # named in a headline but not linked to the event yet
                     ee = EventEntity(event_id=event.id, entity_id=entity.id, role="SUBJECT", is_principal=True)
                     session.add(ee)
                     links.append(ee)
+                    holder_of[entity.id] = {holder}
                     matched = {entity.id}
             principal_ids |= matched
         for ee in links:
             ee.is_principal = ee.entity_id in principal_ids
+            hs = holder_of.get(ee.entity_id, set())
+            ee.actor_role = next((role for name, role in actors.roles.items() if any(same_holder(h, name) for h in hs)), None)
         stats["principal_links"] += len(principal_ids)
         stats["with_principals" if principal_ids else "without_principals"] += 1
     session.commit()
     return stats
+
+
+def entity_holder(canonical: str, entity_type: str | None, normalizer: ActorNormalizer) -> str:
+    """The actor-role holder name an entity stands for (as ``actor_roles`` names holders)."""
+    from osint_monitor.processors.institutions import registry
+    inst = registry().lookup(canonical)
+    if inst:
+        return inst.canonical.lower()
+    geo = _gazetteer()
+    if entity_type in ("GPE", "NORP", "LOC", "FAC"):
+        key = normalizer.key(canonical)
+        if key and geo.is_country(key):
+            return geo.canonical(key)
+        return geo.canonical(canonical)
+    return normalizer.surface(canonical) or canonical.lower()
+
+
+def short_forms(entity: Entity) -> list[str]:
+    words = set(entity.canonical_name.lower().split())
+    return [a for a in entity.aliases or [] if a and set(a.lower().split()) < words]
+
+
+def same_holder(a: str, b: str) -> bool:
+    from osint_monitor.processors.entity_resolver import variant_key
+    if variant_key(a) == variant_key(b):
+        return True
+    ta, tb = a.split(), b.split()                    # "hegseth" / "pete hegseth"
+    return (len(ta) == 1 or len(tb) == 1) and ta[-1] == tb[-1] and max(len(ta), len(tb)) <= 3
 
 
 def _entity_index(session: Session, normalizer: ActorNormalizer) -> dict[str, Entity]:

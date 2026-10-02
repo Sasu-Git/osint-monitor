@@ -31,6 +31,14 @@ def _normalize(text: str) -> str:
     return _SPACE.sub(" ", text.lower()).strip()
 
 
+def _rolling_or_analysis(title: str | None) -> bool:
+    """A live blog, roundup or analysis/explainer headline (the segmentation headline forms plus the roundup forms
+    actor roles exclude)."""
+    from osint_monitor.processors.actor_roles import is_roundup
+    from osint_monitor.processors.development_segmentation import REPORT, headline_kind
+    return headline_kind(title or "") != REPORT or is_roundup(title or "")
+
+
 class ProvenanceResolver:
     """Resolves EvidenceItems into ItemProvenance using config/provenance.yaml."""
 
@@ -105,6 +113,10 @@ class ProvenanceResolver:
 
             if role in cfg.commentary_roles:
                 etype, note = EvidenceType.COMMENTARY, f"{role.value} source"
+            elif _rolling_or_analysis(item.title):
+                # live blogs, roundups and analysis headlines report no single occurrence: not corroboration
+                # (evaluations/clustering/development-identity-diagnosis.md, commentary rule)
+                etype, note = EvidenceType.COMMENTARY, "live blog, roundup or analysis headline"
             elif derived:
                 etype, note = EvidenceType.DERIVATIVE, f"attributes report to {derived}"
             elif role == SourceRole.PRIMARY_OFFICIAL:

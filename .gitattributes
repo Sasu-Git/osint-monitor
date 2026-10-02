@@ -1,2 +1,4 @@
 # Frozen benchmark files are verified by SHA-256: keep their bytes identical on every checkout.
 evaluations/clustering/** text eol=lf
+evaluations/entities/gold/** text eol=lf
+evaluations/identity/** text eol=lf

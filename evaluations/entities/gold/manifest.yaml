@@ -1,0 +1,41 @@
+revision: 3
+frozen_at: '2026-09-30T17:45:47Z'
+note: 'Owner-reviewed gold revision: principal and actor-role labels corrected per entity-resolution-evaluation-sheet-owner-reviewed.md
+  (D05, D07, D10, D13, D15, D21, D23, D24, D25); benchmark-only fields added (role alternatives ''a|b'', role ''representative'',
+  principal_roles, represents, roundup_items). Mention, typing and canonical-name labels unchanged except the added
+  ''Italian government'' identity. Applied before any further entity-logic change; do not edit. entities-*.json
+  are the entity tables (with their learned aliases) of the working copies the review was drawn from. Revision 3:
+  ''Donald J. Trump'' added to the accepted names of Donald Trump (same person; canonical of the multilingual entity
+  table''s Trump entity). No other label changed.'
+sha256:
+  gold.yaml: 7d61a397c78d0b5dcc9299fb43bf5178ef1fd757195d98912642a781b0c3cb13
+  items.json: 851b4b6d5c7ffc3b7bd4dd2a486486ee2d17f577814ee2c783b308692c6a24a5
+  entities-en.json: 3e26dbff3f2f473491f1fc7bce150a7fc34ccfdfb45efd73005982352412ccab
+  entities-ml.json: acaa52b370b6dd09f34e0bc1910ef8a4ad588793d349d28008b81a090b1227a6
+previous_revisions:
+- revision: 2
+  frozen_at: '2026-09-30T17:07:57Z'
+  note: 'Owner-reviewed gold revision: principal and actor-role labels corrected per entity-resolution-evaluation-sheet-owner-reviewed.md
+    (D05, D07, D10, D13, D15, D21, D23, D24, D25); benchmark-only fields added (role alternatives ''a|b'', role
+    ''representative'', principal_roles, represents, roundup_items). Mention, typing and canonical-name labels unchanged
+    except the added ''Italian government'' identity. Applied before any further entity-logic change; do not edit.
+    entities-*.json are the entity tables (with their learned aliases) of the working copies the review was drawn
+    from.'
+  sha256:
+    gold.yaml: 3b9260738ddbf73d89aea2bbe56225d2ccbbc4054487d34b7ef7c6bb97b95fb1
+    items.json: 851b4b6d5c7ffc3b7bd4dd2a486486ee2d17f577814ee2c783b308692c6a24a5
+    entities-en.json: 3e26dbff3f2f473491f1fc7bce150a7fc34ccfdfb45efd73005982352412ccab
+    entities-ml.json: acaa52b370b6dd09f34e0bc1910ef8a4ad588793d349d28008b81a090b1227a6
+  git: bf39b7a
+- revision: 1
+  labelled_by: Claude (owner review fields empty)
+  frozen_at: '2026-09-30T11:56:03Z'
+  note: Gold labels written before any entity-logic change; do not edit. entities-*.json are the entity tables (with
+    their learned aliases) of the working copies the review was drawn from.
+  amended: '2026-09-30: generic labels removed from accepted canonical names, before the first benchmark run'
+  sha256:
+    gold.yaml: 80c324bffe5ad306f5263887d18b31603bc2574c47977c144528d12aed20644e
+    items.json: 851b4b6d5c7ffc3b7bd4dd2a486486ee2d17f577814ee2c783b308692c6a24a5
+    entities-en.json: 3e26dbff3f2f473491f1fc7bce150a7fc34ccfdfb45efd73005982352412ccab
+    entities-ml.json: acaa52b370b6dd09f34e0bc1910ef8a4ad588793d349d28008b81a090b1227a6
+  git: a26a67a

@@ -1,0 +1,94 @@
+version: 1
+frozen_at: '2026-09-30T19:33:43Z'
+note: Replay windows frozen before any identity labelling or identity code change. Labels (gold) are drafted blind,
+  reviewed by the owner, and only then frozen in gold/ with their own hashes.
+tick_hours: 12
+windows:
+- id: '2026-08-21'
+  split: development
+  why: wayback, 4 outlets incl. Breaking Defense; not used in the Phase 1 replay
+  start: '2026-08-21T00:00:00'
+  end: '2026-08-23T00:00:00'
+  items_file: ../clustering/windows/2026-08-21.items.jsonl
+  items_sha256: c4932b5c4acf7d7566efd87b27a25dcb3ce78410c836ae1565463336ea860814
+  items: 162
+  source: clustering benchmark window (frozen)
+  ticks:
+  - tick: 1
+    from: '2026-08-21T00:00:00'
+    to: '2026-08-21T12:00:00'
+  - tick: 2
+    from: '2026-08-21T12:00:00'
+    to: '2026-08-22T00:00:00'
+  - tick: 3
+    from: '2026-08-22T00:00:00'
+    to: '2026-08-22T12:00:00'
+  - tick: 4
+    from: '2026-08-22T12:00:00'
+    to: '2026-08-23T00:00:00'
+- id: '2026-09-25'
+  split: development
+  why: live pipeline data, 6 outlets (Defense News, War on the Rocks)
+  start: '2026-09-23T08:36:00'
+  end: '2026-09-25T08:36:00'
+  items_file: ../clustering/windows/2026-09-25.items.jsonl
+  items_sha256: dd84b77e1b99c487396e1dc46411ea626ec49b005f98840e6a2f4dbba6affaef
+  items: 90
+  source: clustering benchmark window (frozen)
+  ticks:
+  - tick: 1
+    from: '2026-09-23T08:36:00'
+    to: '2026-09-23T20:36:00'
+  - tick: 2
+    from: '2026-09-23T20:36:00'
+    to: '2026-09-24T08:36:00'
+  - tick: 3
+    from: '2026-09-24T08:36:00'
+    to: '2026-09-24T20:36:00'
+  - tick: 4
+    from: '2026-09-24T20:36:00'
+    to: '2026-09-25T08:36:00'
+- id: '2026-08-31'
+  split: holdout
+  why: wayback, 4 outlets; no time overlap with any development window
+  start: '2026-08-31T00:00:00'
+  end: '2026-09-02T00:00:00'
+  items_file: ../clustering/windows/2026-08-31.items.jsonl
+  items_sha256: aed1d3041577c500c1eaddbbedd7f71aae088d0006dddec62a4a4b69e1d474de
+  items: 166
+  source: clustering benchmark window (frozen)
+  ticks:
+  - tick: 1
+    from: '2026-08-31T00:00:00'
+    to: '2026-08-31T12:00:00'
+  - tick: 2
+    from: '2026-08-31T12:00:00'
+    to: '2026-09-01T00:00:00'
+  - tick: 3
+    from: '2026-09-01T00:00:00'
+    to: '2026-09-01T12:00:00'
+  - tick: 4
+    from: '2026-09-01T12:00:00'
+    to: '2026-09-02T00:00:00'
+- id: 2026-09-30-multilingual
+  split: development
+  why: 'source-expansion snapshot: en/it/es, institutional sources, roundups, records'
+  start: '2026-09-28T12:00:00'
+  end: '2026-09-30T12:00:00'
+  items_file: windows/2026-09-30-multilingual.items.jsonl
+  items_sha256: 492e17ce0ed0121d5e0ceafc0bdbb376e94fe4a0245880f74fd0cc1c3fb264d9
+  items: 392
+  source: read-only copy of data/eval/source-expansion-2026-09-30.db (raw_items, sources)
+  ticks:
+  - tick: 1
+    from: '2026-09-28T12:00:00'
+    to: '2026-09-29T00:00:00'
+  - tick: 2
+    from: '2026-09-29T00:00:00'
+    to: '2026-09-29T12:00:00'
+  - tick: 3
+    from: '2026-09-29T12:00:00'
+    to: '2026-09-30T00:00:00'
+  - tick: 4
+    from: '2026-09-30T00:00:00'
+    to: '2026-09-30T12:00:00'

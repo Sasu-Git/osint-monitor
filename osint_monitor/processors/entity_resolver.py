@@ -3,8 +3,10 @@ alias-based + fuzzy matching."""
 
 from __future__ import annotations
 
+import html
 import logging
 import re
+import unicodedata
 from datetime import datetime
 
 from rapidfuzz import fuzz
@@ -43,37 +45,29 @@ ABBREVIATION_MAP: dict[str, str] = {
 #    Maps every variant (lowercased) to a single canonical form.
 # ---------------------------------------------------------------------------
 _COREFERENCE_GROUPS: list[tuple[str, list[str]]] = [
+    # Capitals are places with their own identity (a capital acting for its state is a role, see
+    # config/actors.yaml `represents`); institutions are in config/institutions.yaml.
     ("United States", [
         "united states", "u.s.", "u.s", "us", "usa",
         "america", "united states of america",
-        "washington",  # as country, not city
     ]),
     ("Russia", [
-        "russia", "russian federation", "moscow",
+        "russia", "russian federation",
     ]),
     ("China", [
-        "china", "people's republic of china", "prc", "beijing",
+        "china", "people's republic of china", "prc",
     ]),
     ("Iran", [
-        "iran", "islamic republic of iran", "tehran",
+        "iran", "islamic republic of iran",
     ]),
     ("Israel", [
-        "israel", "tel aviv",
+        "israel",
     ]),
     ("Ukraine", [
-        "ukraine", "kyiv", "kiev",
+        "ukraine",
     ]),
     ("North Korea", [
-        "north korea", "dprk", "pyongyang",
-    ]),
-    ("U.S. Central Command", [
-        "centcom", "u.s. central command", "united states central command",
-    ]),
-    ("Department of Defense", [
-        "pentagon", "department of defense", "dod",
-    ]),
-    ("NATO", [
-        "nato", "north atlantic treaty organization",
+        "north korea", "dprk",
     ]),
 ]
 
@@ -147,15 +141,104 @@ def correct_entity_type(text: str, entity_type: EntityType) -> EntityType:
 # Main resolver
 # ---------------------------------------------------------------------------
 
+# ---------------------------------------------------------------------------
+# Resolution safety (fuzzy matches never create durable truth)
+# ---------------------------------------------------------------------------
+
+_VARIANT_PUNCT = re.compile(r"[.’'`´,\-–—/]")
+_ORDINAL_WORDS = {"first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth", "ninth", "tenth"}
+_NUMBER = re.compile(r"\d+")
+
+
+def variant_key(text: str) -> str:
+    """Surface form without case, article, possessive, punctuation or a plural 's': "the U.S. Navy",
+    "US Navy" and "U.S. Navy’s" share a key; "American" and "Mexican" do not."""
+    t = html.unescape(text or "").lower().strip()
+    t = "".join(c for c in unicodedata.normalize("NFKD", t) if not unicodedata.combining(c))   # Teherán = Teheran
+    t = re.sub(r"['’]s?$", "", t)
+    t = _ARTICLE_RE.sub("", t)
+    t = _VARIANT_PUNCT.sub("", t)
+    t = " ".join(t.split())
+    return t[:-1] if len(t) > 3 and t.endswith("s") and not t.endswith("ss") else t
+
+
+def _numbers(text: str) -> set[str]:
+    words = set(re.findall(r"[a-z]+", text.lower()))
+    return set(_NUMBER.findall(text)) | (words & _ORDINAL_WORDS)
+
+
+def _acronym(text: str) -> str | None:
+    letters = re.sub(r"[^A-Za-z]", "", text)
+    return letters if len(letters) >= 2 and letters.isupper() else None
+
+
+_GEO = None
+_ACTORS = None
+
+
+def _country_or_nationality(text: str) -> str | None:
+    """The country a whole mention names ("Canada", "American", "U.S."), else None."""
+    global _GEO, _ACTORS
+    if _GEO is None:
+        from osint_monitor.processors.actors import ActorNormalizer
+        from osint_monitor.processors.geography import Gazetteer
+        _GEO, _ACTORS = Gazetteer.load(), ActorNormalizer.load()
+    if _GEO.is_country(text):
+        return _GEO.canonical(text)
+    key = _ACTORS.surface(text)
+    return key if key and _GEO.is_country(key) else None
+
+
+def _known_place(text: str) -> str | None:
+    _country_or_nationality("")            # load
+    canon = _GEO.canonical(text)
+    return canon if (_GEO.is_country(canon) or _GEO.is_subnational(canon)) else None
+
+
+def identity_conflict(mention: str, candidate: str) -> str | None:
+    """Why ``mention`` must not be taken for ``candidate`` by similarity alone, or None.
+    Identity-critical tokens must agree: numbers and ordinals, country/nationality words (never fuzzy),
+    known places, acronym letters, and the proper-noun tokens two multi-word names do not share."""
+    if variant_key(mention) == variant_key(candidate):
+        return None
+    if _numbers(mention) != _numbers(candidate):
+        return "numbers differ"
+    if _country_or_nationality(mention) or _country_or_nationality(candidate):
+        return "country or nationality word"
+    pm, pc = _known_place(mention), _known_place(candidate)
+    if (pm or pc) and pm != pc:
+        return "different places"
+    vm, vc = variant_key(mention).split(), variant_key(candidate).split()
+    if len(vm) == 1 and len(vc) == 1:
+        return "single-word names differ"          # Zou / Zhou, Eastern / Western: the one token is the identity
+    am, ac = _acronym(mention), _acronym(candidate)
+    if (am or ac) and am != ac:
+        return "acronym letters differ"
+    tm = {w for w in re.findall(r"[A-Za-z][\w\-]*", mention) if w[0].isupper()}
+    tc = {w for w in re.findall(r"[A-Za-z][\w\-]*", candidate) if w[0].isupper()}
+    if len(tm) > 1 and len(tc) > 1 and {variant_key(w) for w in tm} ^ {variant_key(w) for w in tc}:
+        only_m = {variant_key(w) for w in tm} - {variant_key(w) for w in tc}
+        only_c = {variant_key(w) for w in tc} - {variant_key(w) for w in tm}
+        if only_m and only_c:
+            return "different name tokens"
+    return None
+
+
 class EntityResolver:
     """Resolves extracted entity mentions to canonical entities in the DB.
 
     Resolution order:
       0. Normalise text, correct entity type
-      1. Exact alias match (on normalised text)
-      2. Coreference-map match
-      3. Fuzzy match (rapidfuzz) – threshold varies by type match
+      1. Exact match against *trusted* names: canonical names, seeded aliases (config/entities.yaml) and
+         aliases that are surface variants of the canonical name ("US Navy" / "the U.S. Navy")
+      2. Normalised match (abbreviations, coreference groups)
+      3. Fuzzy match (rapidfuzz, type-aware thresholds) -- *provisional*: accepted only when no
+         identity-critical token disagrees (``identity_conflict``) and never stored as an alias
       4. Create new entity if no match
+
+    Aliases learned by earlier fuzzy matches (not seeded, not a surface variant) are no longer trusted
+    for exact matches; they are fuzzy evidence checked against the entity's canonical name. Every call
+    leaves ``last_method`` and ``last_evidence`` for the caller to store.
     """
 
     def __init__(self, session: Session):
@@ -163,27 +246,44 @@ class EntityResolver:
         self._alias_map: dict[str, int] | None = None
         # Secondary map: normalised-form -> entity_id (for normalisation hits)
         self._norm_map: dict[str, int] | None = None
+        self._untrusted: dict[str, int] = {}          # learned alias (lower) -> entity id
+        self._canonical: dict[int, str] = {}
+        self.last_method: str | None = None
+        self.last_evidence: str | None = None
 
     # ------------------------------------------------------------------
     # Alias / normalisation caches
     # ------------------------------------------------------------------
 
+    @staticmethod
+    def _seeded_aliases() -> dict[str, set[str]]:
+        out: dict[str, set[str]] = {}
+        for seed in load_entities_config():
+            out.setdefault(variant_key(seed.canonical_name), set()).update(variant_key(a) for a in seed.aliases)
+        return out
+
     def _build_alias_map(self) -> dict[str, int]:
-        """Build lowercase alias -> entity_id lookup."""
+        """Build lowercase trusted name -> entity_id lookup (and the untrusted learned aliases)."""
         if self._alias_map is not None:
             return self._alias_map
 
         self._alias_map = {}
         self._norm_map = {}
+        self._untrusted = {}
+        seeded = self._seeded_aliases()
         entities = self.session.query(Entity).all()
         for ent in entities:
+            self._canonical[ent.id] = ent.canonical_name
             key = ent.canonical_name.lower()
             self._alias_map[key] = ent.id
             self._norm_map[normalise(ent.canonical_name)] = ent.id
-            if ent.aliases:
-                for alias in ent.aliases:
-                    self._alias_map[alias.lower()] = ent.id
-                    self._norm_map[normalise(alias)] = ent.id
+            trusted = {variant_key(ent.canonical_name)} | seeded.get(variant_key(ent.canonical_name), set())
+            for alias in ent.aliases or []:
+                if variant_key(alias) in trusted:
+                    self._alias_map.setdefault(alias.lower(), ent.id)
+                    self._norm_map.setdefault(normalise(alias), ent.id)
+                else:
+                    self._untrusted.setdefault(alias.lower(), ent.id)
         return self._alias_map
 
     def _get_norm_map(self) -> dict[str, int]:
@@ -201,14 +301,31 @@ class EntityResolver:
     # Core resolution
     # ------------------------------------------------------------------
 
-    def resolve(self, extracted: ExtractedEntity) -> Entity:
-        """Resolve an extracted entity to a database Entity.
+    def _done(self, entity: Entity, method: str, evidence: str) -> Entity:
+        self.last_method, self.last_evidence = method, evidence
+        entity.last_seen_at = datetime.utcnow()
+        return entity
 
-        0. Normalise + type-correct
-        1. Exact alias match (raw lowercase & normalised form)
-        2. Fuzzy match (rapidfuzz) with type-aware thresholds
-        3. Create new entity if no match
-        """
+    def _institution_entity(self, canonical: str) -> Entity:
+        return self._institution_entity_typed(canonical, EntityType.ORG)
+
+    def _institution_entity_typed(self, canonical: str, etype: EntityType) -> Entity:
+        entity = self.session.query(Entity).filter_by(canonical_name=canonical).first()
+        if entity is None:
+            entity = Entity(canonical_name=canonical, entity_type=etype.value, aliases=[],
+                            first_seen_at=datetime.utcnow(), last_seen_at=datetime.utcnow())
+            self.session.add(entity)
+            self.session.flush()
+            if self._alias_map is not None:
+                self._alias_map[canonical.lower()] = entity.id
+                self._norm_map[normalise(canonical)] = entity.id
+        return entity
+
+    def resolve(self, extracted: ExtractedEntity, context: set[str] | None = None) -> Entity:
+        """Resolve an extracted entity to a database Entity (see the class docstring).
+
+        ``context``: the states / organisations the mention's item names or its publisher is
+        (``institutions.item_qualifiers``); a generic label ("the Navy") resolves only through it."""
         # --- Step 0: normalise & type-correct --------------------------------
         corrected_type = correct_entity_type(
             extracted.text, extracted.entity_type
@@ -217,40 +334,69 @@ class EntityResolver:
             update={"entity_type": corrected_type}
         )
 
+        from osint_monitor.processors.text_normalize import clean_name
+        clean = clean_name(extracted.text) or extracted.text.strip()
         text_lower = extracted.text.strip().lower()
-        text_norm = normalise(extracted.text)
+        text_norm = normalise(clean)
 
         alias_map = self._build_alias_map()
         norm_map = self._get_norm_map()
 
-        # --- Step 1: Exact match (raw lowercase) ----------------------------
-        if text_lower in alias_map:
-            entity = self.session.get(Entity, alias_map[text_lower])
+        # --- Step 0b: institutions, organisations and forums (config/institutions.yaml) --------
+        from osint_monitor.processors.institutions import registry
+        reg = registry()
+        inst = reg.lookup(clean) or reg.lookup(extracted.text.strip())
+        if inst is not None:
+            return self._done(self._institution_entity(inst.canonical), "registry",
+                              f"'{extracted.text}' is a name of {inst.canonical} ({inst.kind})")
+        generic = reg.is_generic(clean)
+        if generic:
+            inst = reg.resolve_generic(clean, context or set())
+            if inst is not None:
+                return self._done(self._institution_entity(inst.canonical), "registry-context",
+                                  f"generic '{clean}' with {sorted(context or [])} -> {inst.canonical}")
+
+        # --- Step 0c: nationality words name their country, deterministically ("Canadian", "American");
+        # never by similarity ("American" is not "Mexican")
+        if corrected_type == EntityType.NORP or extracted.entity_type == EntityType.NORP:
+            country = _country_or_nationality(clean)
+            if country:
+                eid = alias_map.get(country) or norm_map.get(normalise(country))
+                entity = self.session.get(Entity, eid) if eid else None
+                if entity is None:
+                    entity = self._institution_entity_typed(country.title(), EntityType.GPE)
+                return self._done(entity, "demonym", f"'{extracted.text}' names {entity.canonical_name}")
+
+        # --- Step 1: Exact match against trusted names ----------------------
+        exact_key = text_lower if text_lower in alias_map else clean.lower()
+        if exact_key in alias_map:
+            entity = self.session.get(Entity, alias_map[exact_key])
             if entity:
-                entity.last_seen_at = datetime.utcnow()
-                return entity
+                return self._done(entity, "exact", f"'{extracted.text}' is a trusted name of '{entity.canonical_name}'")
 
         # --- Step 1b: Exact match (normalised form) -------------------------
         if text_norm in norm_map:
             entity = self.session.get(Entity, norm_map[text_norm])
             if entity:
-                # Register the raw text as a new alias so future lookups are
-                # instant.
-                self._register_alias(entity, extracted.text)
-                entity.last_seen_at = datetime.utcnow()
-                return entity
+                # a pure surface variant becomes an alias; a match through the abbreviation /
+                # coreference tables is resolution evidence only
+                if variant_key(extracted.text) in {variant_key(entity.canonical_name),
+                                                    *(variant_key(a) for a in entity.aliases or [])}:
+                    self._register_alias(entity, extracted.text)
+                return self._done(entity, "normalised", f"normalised '{text_norm}' matches '{entity.canonical_name}'")
 
-        # --- Step 2: Fuzzy match with type-aware thresholds ------------------
+        # --- Step 2: Fuzzy match -- provisional, never stored as an alias --
         best_score = 0.0
         best_id: int | None = None
-
-        for alias, eid in alias_map.items():
+        best_alias = ""
+        # a generic label whose context names no owner is not matched to a look-alike either
+        candidates = [] if generic else list(alias_map.items()) + list(self._untrusted.items())
+        for alias, eid in candidates:
             # Compare normalised forms for better fuzzy performance
             alias_norm = normalise(alias)
             score = fuzz.ratio(text_norm, alias_norm)
             if score > best_score:
-                best_score = score
-                best_id = eid
+                best_score, best_id, best_alias = score, eid, alias
 
         if best_id is not None:
             target_type = self._entity_type_for_id(best_id)
@@ -262,20 +408,25 @@ class EntityResolver:
 
             if best_score >= threshold:
                 entity = self.session.get(Entity, best_id)
+                conflict = entity and (identity_conflict(extracted.text, entity.canonical_name)
+                                       or identity_conflict(extracted.text, best_alias))
+                if entity and not conflict:
+                    logger.debug("Fuzzy matched '%s' -> '%s' (%.0f%%, threshold=%d)",
+                                 extracted.text, entity.canonical_name, best_score, threshold)
+                    return self._done(entity, "fuzzy-provisional",
+                                      f"'{best_alias}' scored {best_score:.0f} (threshold {threshold}); not stored as an alias")
                 if entity:
-                    self._register_alias(entity, extracted.text)
-                    entity.last_seen_at = datetime.utcnow()
-                    logger.debug(
-                        "Fuzzy matched '%s' -> '%s' (%.0f%%, threshold=%d)",
-                        extracted.text,
-                        entity.canonical_name,
-                        best_score,
-                        threshold,
-                    )
-                    return entity
+                    logger.debug("Fuzzy candidate '%s' for '%s' refused: %s", entity.canonical_name, extracted.text, conflict)
+                    refused = f"fuzzy candidate '{entity.canonical_name}' ({best_score:.0f}) refused: {conflict}"
+                else:
+                    refused = ""
+            else:
+                refused = ""
+        else:
+            refused = ""
 
         # --- Step 3: Create new entity --------------------------------------
-        canonical = extracted.canonical_name or extracted.text
+        canonical = clean_name(extracted.canonical_name or extracted.text) or extracted.text.strip()
         entity = Entity(
             canonical_name=canonical,
             entity_type=corrected_type.value,
@@ -289,6 +440,7 @@ class EntityResolver:
         # Update caches
         self._alias_map[canonical.lower()] = entity.id
         self._norm_map[normalise(canonical)] = entity.id
+        self._canonical[entity.id] = canonical
         if extracted.text.lower() != canonical.lower():
             self._alias_map[extracted.text.lower()] = entity.id
             self._norm_map[normalise(extracted.text)] = entity.id
@@ -296,6 +448,9 @@ class EntityResolver:
         logger.debug(
             "Created new entity: %s (%s)", canonical, corrected_type.value
         )
+        self.last_method = "new"
+        self.last_evidence = ("generic label: the context names no owning institution" if generic
+                              else refused or "no trusted match")
         return entity
 
     # ------------------------------------------------------------------
@@ -306,8 +461,9 @@ class EntityResolver:
         """Add *raw_text* as an alias of *entity* (if not already present)."""
         aliases = entity.aliases or []
         if raw_text.lower() not in [a.lower() for a in aliases]:
-            aliases.append(raw_text)
-            entity.aliases = aliases
+            # a new list: a plain JSON column does not track in-place mutation, so appending to the loaded
+            # list and assigning it back is not persisted for a row already in the database
+            entity.aliases = [*aliases, raw_text]
 
         # Keep caches warm
         self._alias_map[raw_text.lower()] = entity.id

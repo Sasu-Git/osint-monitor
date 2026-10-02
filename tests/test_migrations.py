@@ -99,3 +99,13 @@ def test_backup_failure_prevents_migration(legacy_engine, tmp_path, monkeypatch)
         run_migrations(legacy_engine, backup_dir=tmp_path / "backups")
     assert current_version(legacy_engine) == 0
     assert "situation_id" not in {c["name"] for c in inspect(legacy_engine).get_columns("events")}
+
+
+def test_migration_numbers_are_unique_and_contiguous():
+    """Migration numbers are the schema's history: main's 4 (entity resolution) and 5 (run ledger) keep their
+    numbers; the localhost demo's development summaries landed second and became 6."""
+    numbers = [n for n, _ in migrations.MIGRATIONS]
+    assert numbers == list(range(1, len(numbers) + 1))
+    names = dict(migrations.MIGRATIONS)
+    assert names[4].__name__ == "m004_entity_resolution" and names[5].__name__ == "m005_run_ledger"
+    assert names[6].__name__ == "m006_development_summary"

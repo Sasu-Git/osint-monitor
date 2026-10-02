@@ -39,6 +39,9 @@ def _iw_tier(score: float) -> str:
     return "BASELINE"
 
 
+QUIET_HOURS = "suppressed: quiet hours"      # delivered_via of an alert recorded but not notified
+
+
 class AlertEngine:
     """Evaluates state transitions and generates alerts."""
 
@@ -67,19 +70,27 @@ class AlertEngine:
         # Tier 4: First Report
         candidates.extend(self._tier4_first_report(hours_back))
 
-        # Filter through dedup
-        fired = []
+        # Filter through dedup. A transition in quiet hours is recorded (the state tracker has already moved
+        # past it) but not returned for notification.
+        fired, quiet = [], 0
         for alert in candidates:
-            if self.fatigue.should_fire(alert):
-                self.session.add(alert)
-                self.session.flush()
-                fired.append(alert)
-            else:
+            if self.fatigue.is_duplicate(alert):
                 logger.debug(f"Alert deduped: {alert.trigger_key}")
+                continue
+            if self.fatigue.is_quiet(alert):
+                alert.delivered_via = QUIET_HOURS
+                quiet += 1
+            else:
+                fired.append(alert)
+            self.session.add(alert)
+            self.session.flush()
 
         self.session.commit()
-        if fired:
-            logger.info(f"Fired {len(fired)} alerts ({len(candidates) - len(fired)} deduped)")
+        for alert in fired:
+            self.session.refresh(alert)            # loaded, so callers can read it after the session closes
+        if fired or quiet:
+            logger.info(f"Fired {len(fired)} alerts, {quiet} recorded in quiet hours "
+                        f"({len(candidates) - len(fired) - quiet} deduped)")
         return fired
 
     # ------------------------------------------------------------------

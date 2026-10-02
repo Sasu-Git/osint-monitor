@@ -100,11 +100,12 @@ class BGPMonitor(BaseCollector):
                 "visibility_v4": data.get("visibility", {}).get("v4", {}).get("total_ris_peers", 0),
             }
         except Exception as exc:
-            logger.debug("Routing status check failed for %s: %s", asn, exc)
+            logger.warning("Routing status check failed for %s: %s", asn, exc)
             return None
 
-    def _check_bgp_updates(self, asn: str, hours_back: int = 6) -> dict:
-        """Check recent BGP updates (announcements vs withdrawals)."""
+    def _check_bgp_updates(self, asn: str, hours_back: int = 6) -> dict | None:
+        """Check recent BGP updates (announcements vs withdrawals). None when the check failed: a failed
+        check is no evidence of zero withdrawals."""
         now = datetime.now(timezone.utc)
         start = now - timedelta(hours=hours_back)
 
@@ -128,8 +129,8 @@ class BGPMonitor(BaseCollector):
                 "withdrawal_ratio": withdrawals / max(len(updates), 1),
             }
         except Exception as exc:
-            logger.debug("BGP updates check failed for %s: %s", asn, exc)
-            return {"total_updates": 0, "announcements": 0, "withdrawals": 0, "withdrawal_ratio": 0}
+            logger.warning("BGP updates check failed for %s: %s", asn, exc)
+            return None
 
     def collect(self) -> list[RawItemModel]:
         items: list[RawItemModel] = []
@@ -148,21 +149,21 @@ class BGPMonitor(BaseCollector):
                 break
             updates = self._check_bgp_updates(asn, hours_back=6)
 
-            if status is None and updates["total_updates"] == 0:
+            if status is None and (updates is None or updates["total_updates"] == 0):
                 continue
 
             # Detect anomalies
             is_anomalous = False
             severity_notes: list[str] = []
 
-            if updates["withdrawal_ratio"] > 0.5 and updates["total_updates"] > 10:
+            if updates is not None and updates["withdrawal_ratio"] > 0.5 and updates["total_updates"] > 10:
                 is_anomalous = True
                 severity_notes.append(
                     f"HIGH withdrawal ratio: {updates['withdrawal_ratio']:.0%} "
                     f"({updates['withdrawals']}/{updates['total_updates']} updates)"
                 )
 
-            if updates["withdrawals"] > 50:
+            if updates is not None and updates["withdrawals"] > 50:
                 is_anomalous = True
                 severity_notes.append(f"Mass withdrawal: {updates['withdrawals']} routes withdrawn in 6h")
 
@@ -174,8 +175,9 @@ class BGPMonitor(BaseCollector):
                 is_anomalous = True
                 severity_notes.append(f"Low visibility: only {status['visibility_v4']} RIS peers see this AS")
 
-            # Always report critical ASNs; only report non-critical if anomalous
-            if not is_anomalous and not info.get("critical"):
+            # Always report critical ASNs; only report non-critical if anomalous. "Normal" needs both checks:
+            # with the updates check failed, only a status anomaly is reported.
+            if not is_anomalous and (not info.get("critical") or updates is None):
                 continue
 
             if is_anomalous:
@@ -183,12 +185,15 @@ class BGPMonitor(BaseCollector):
             else:
                 title = f"BGP status: {asn} ({name}, {country}) — normal"
 
-            content_parts = [
-                f"ASN: {asn} ({name})",
-                f"Country: {country}",
-                f"Updates (6h): {updates['total_updates']} total, {updates['announcements']} announcements, {updates['withdrawals']} withdrawals",
-                f"Withdrawal ratio: {updates['withdrawal_ratio']:.1%}",
-            ]
+            content_parts = [f"ASN: {asn} ({name})", f"Country: {country}"]
+            if updates is not None:
+                content_parts += [
+                    f"Updates (6h): {updates['total_updates']} total, {updates['announcements']} announcements, "
+                    f"{updates['withdrawals']} withdrawals",
+                    f"Withdrawal ratio: {updates['withdrawal_ratio']:.1%}",
+                ]
+            else:
+                content_parts.append("Updates (6h): unavailable (check failed)")
             if status:
                 content_parts.append(f"Announced prefixes: {status['announced_prefixes']}")
                 content_parts.append(f"RIS peer visibility: {status['visibility_v4']}")
@@ -303,10 +308,26 @@ class DNSHealthMonitor(BaseCollector):
                 continue
         return {"reachable": False, "status_code": 0, "response_time_ms": 0, "scheme": ""}
 
+    # reachability controls: if none answers, "unreachable" describes our own network (e.g. just after a
+    # resume from sleep), not the watched domain
+    CONTROL_URLS = ("https://www.cloudflare.com", "https://www.google.com", "https://www.wikipedia.org")
+
+    @classmethod
+    def _local_network_ok(cls) -> bool:
+        for url in cls.CONTROL_URLS:
+            try:
+                requests.head(url, timeout=_HEAD_TIMEOUT, allow_redirects=True,
+                              headers={"User-Agent": "osint-monitor/1.0"})
+                return True
+            except Exception:
+                continue
+        return False
+
     def collect(self) -> list[RawItemModel]:
         items: list[RawItemModel] = []
         down_count = 0
         timed_out = 0
+        network_ok: bool | None = None          # checked once, on the first domain that looks down
 
         for domain, info in self.domains.items():
             if self.over_budget():
@@ -324,6 +345,13 @@ class DNSHealthMonitor(BaseCollector):
             }
 
             is_down = not dns["resolves"] or not http["reachable"]
+            if is_down:
+                if network_ok is None:
+                    network_ok = self._local_network_ok()
+                if not network_ok:
+                    logger.warning("DNS monitor: control sites unreachable, local network down; no verdicts")
+                    self.record_error("local network unreachable: domain checks skipped")
+                    break
 
             if is_down:
                 down_count += 1
@@ -403,8 +431,9 @@ class FlightRouteMonitor(BaseCollector):
             **kwargs,
         )
 
-    def _count_commercial_traffic(self, bbox: tuple) -> dict:
-        """Count aircraft in a bounding box, separating military from commercial."""
+    def _count_commercial_traffic(self, bbox: tuple) -> dict | None:
+        """Count aircraft in a bounding box, separating military from commercial. None when the query
+        failed: a failed query is no measurement, not zero flights."""
         from osint_monitor.collectors.adsb import MILITARY_CALLSIGN_PREFIXES
 
         lat_min, lon_min, lat_max, lon_max = bbox
@@ -416,8 +445,8 @@ class FlightRouteMonitor(BaseCollector):
             resp.raise_for_status()
             states = resp.json().get("states", []) or []
         except Exception as exc:
-            logger.debug("OpenSky query failed: %s", exc)
-            return {"total": 0, "commercial": 0, "military": 0, "origins": {}}
+            logger.warning("OpenSky query failed: %s", exc)
+            return None
 
         commercial = 0
         military = 0
@@ -446,6 +475,9 @@ class FlightRouteMonitor(BaseCollector):
 
         for zone_key, zone in self.WATCH_ZONES.items():
             traffic = self._count_commercial_traffic(zone["bbox"])
+            if traffic is None:
+                self.record_error(f"OpenSky query failed for {zone['desc']}")
+                continue
 
             is_anomalous = traffic["commercial"] < zone["normal_traffic_floor"]
             mil_presence = traffic["military"] > 0

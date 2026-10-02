@@ -53,7 +53,21 @@ class ActorNormalizer:
     @classmethod
     def load(cls, extra_aliases: dict[str, str] | None = None,
              extra_represents: dict[str, str] | None = None) -> "ActorNormalizer":
-        return cls(load_actors_config(), extra_aliases, extra_represents)
+        """Actor config plus the institution registry (config/institutions.yaml): every name of an
+        institution is an alias of its canonical name, and an institution represents its top parent
+        (the U.S. Navy acts for the United States). Two-letter acronyms (UN, EU) stay out: here names are
+        compared lower-case, and "un" is also an article."""
+        from osint_monitor.processors.institutions import registry
+        reg = registry()
+        aliases, represents = {}, {}
+        for inst in reg.by_name.values():
+            for alias in inst.aliases:
+                if len(re.sub(r"[^A-Za-z]", "", alias)) > 2:
+                    aliases[alias] = inst.canonical
+            top = reg.top(inst.canonical)
+            if top != inst.canonical:
+                represents[inst.canonical] = top
+        return cls(load_actors_config(), {**aliases, **(extra_aliases or {})}, {**represents, **(extra_represents or {})})
 
     def _demonym(self, k: str) -> str | None:
         if k in self._demonyms:

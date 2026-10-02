@@ -1,0 +1,71 @@
+{
+ "window": "2026-07-21",
+ "items": 184,
+ "batches": [
+  92,
+  92,
+  0
+ ],
+ "memberships": 42,
+ "memberships_added_per_run": {
+  "1": 7,
+  "2": 35
+ },
+ "membership_kinds": {
+  "new_item_new_membership": 36,
+  "existing_item_newly_attached": 6
+ },
+ "items_ingested_per_run": {
+  "1": 90,
+  "2": 92
+ },
+ "run_ids_unique_hex32": true,
+ "ledger": [
+  {
+   "batch": "batch1",
+   "status": "ok",
+   "items_collected": 92,
+   "items_new": 90,
+   "code_sha": "376d53cce43845e3f410c22a6a681064042beb4b",
+   "code_dirty": true,
+   "config_hash": "10cce270bdbc",
+   "models": {
+    "ner_en": "en_core_web_lg (available)",
+    "ner_it": "it_core_news_md (available)",
+    "ner_es": "es_core_news_md (available)",
+    "embedding": "all-MiniLM-L6-v2"
+   }
+  },
+  {
+   "batch": "batch2",
+   "status": "ok",
+   "items_collected": 92,
+   "items_new": 92,
+   "code_sha": "376d53cce43845e3f410c22a6a681064042beb4b",
+   "code_dirty": true,
+   "config_hash": "10cce270bdbc",
+   "models": {
+    "ner_en": "en_core_web_lg (available)",
+    "ner_it": "it_core_news_md (available)",
+    "ner_es": "es_core_news_md (available)",
+    "embedding": "all-MiniLM-L6-v2"
+   }
+  },
+  {
+   "batch": "batch3",
+   "status": "ok",
+   "items_collected": 0,
+   "items_new": 0,
+   "code_sha": "376d53cce43845e3f410c22a6a681064042beb4b",
+   "code_dirty": true,
+   "config_hash": "10cce270bdbc",
+   "models": {
+    "ner_en": "en_core_web_lg (available)",
+    "ner_it": "it_core_news_md (available)",
+    "ner_es": "es_core_news_md (available)",
+    "embedding": "all-MiniLM-L6-v2"
+   }
+  }
+ ],
+ "gate": "PASS"
+}

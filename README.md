@@ -22,6 +22,8 @@ source .venv/bin/activate            # Windows: .venv\Scripts\activate
 python -m pip install --upgrade pip setuptools wheel
 pip install -e ".[all,dev]"
 python -m spacy download en_core_web_lg
+python -m spacy download it_core_news_md    # Italian feeds (optional: without it, Italian items get no entities)
+python -m spacy download es_core_news_md    # Spanish feeds (optional, likewise)
 
 # 2. Configure
 cp .env.example .env                 # Windows: copy .env.example .env
@@ -166,6 +168,11 @@ Sources are organized by intelligence discipline. Most work without API keys; op
 | **DOCINT -- Policy** | Federal Register | Federal regulatory documents | No |
 
 Region focus areas with keyword-based filtering: Iran, China/Taiwan, Russia/Ukraine, Middle East, North Korea, and Africa/Sahel.
+
+The table lists what the code can collect; some rows are not wired into collection (AIS is a stub; Telegram and the
+Twitter API collector are not built) and several need a key. For the exact inventory -- source identities, every
+endpoint, which are enabled here and what a database shows each produced -- run `python main.py inspect sources`
+(read-only; `--db` to read a copy, `--log` to add a daemon log's `[ok]`/`[err]` lines, `--json`).
 
 ## Intelligence Capabilities
 
@@ -463,6 +470,7 @@ All commands are run via `python main.py <command>` or the installed `osint-moni
 | `alerts` | Check and display current alerts | `--hours-back` (default: 24) |
 | `export` | Dump events, situations, entities, claims, alerts, briefings to `data/export/` | -- |
 | `smoke` | End-to-end check on fixtures in a temporary database (no network, no LLM) | `--keep` |
+| `inspect sources` | Configured source identities and endpoints, enabled/disabled, observations (read-only) | `--db`, `--log`, `--json`, `--active-only`, `--since` |
 | `pause` / `resume` / `status` | Control the daemon pipeline | -- |
 
 Running `python main.py` with no arguments defaults to `collect`.

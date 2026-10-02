@@ -75,8 +75,39 @@ def m003_development_fields(conn: Connection) -> None:
     _add_column(conn, "event_entities", "is_principal", "BOOLEAN NOT NULL DEFAULT FALSE")
 
 
-def m004_development_summary(conn: Connection) -> None:
-    """A persisted factual summary per development, with how and from which items it was made."""
+def m004_entity_resolution(conn: Connection) -> None:
+    """How each mention was resolved (method + evidence) and each event entity's role in the development."""
+    _add_column(conn, "item_entities", "resolution_method", "VARCHAR(30)")
+    _add_column(conn, "item_entities", "resolution_evidence", "TEXT")
+    _add_column(conn, "event_entities", "actor_role", "VARCHAR(30)")
+
+
+def m005_run_ledger(conn: Connection) -> None:
+    """Run ledger and membership time (the pipeline_runs table itself comes from create_all).
+
+    Stamps: raw_items.ingested_run_id, event_items.added_at / added_run_id (NULL for existing rows: their time
+    is unknown and is not invented), events.earliest_published_at (backfilled from member items: a derived
+    fact). event_items gets UNIQUE(event_id, item_id); identical duplicate memberships, if any, are removed
+    first (keeping the oldest row)."""
+    dt = _datetime_type(conn)
+    _add_column(conn, "raw_items", "ingested_run_id", "VARCHAR(32) REFERENCES pipeline_runs(id)")
+    _add_column(conn, "event_items", "added_at", dt)
+    _add_column(conn, "event_items", "added_run_id", "VARCHAR(32) REFERENCES pipeline_runs(id)")
+    _add_column(conn, "events", "earliest_published_at", dt)
+    conn.execute(text("DELETE FROM event_items WHERE id NOT IN "
+                      "(SELECT MIN(id) FROM event_items GROUP BY event_id, item_id)"))
+    conn.execute(text("CREATE UNIQUE INDEX IF NOT EXISTS uq_event_item ON event_items (event_id, item_id)"))
+    conn.execute(text("CREATE INDEX IF NOT EXISTS ix_event_items_item ON event_items (item_id)"))
+    conn.execute(text("CREATE INDEX IF NOT EXISTS ix_event_items_added_run_id ON event_items (added_run_id)"))
+    conn.execute(text("CREATE INDEX IF NOT EXISTS ix_raw_items_ingested_run_id ON raw_items (ingested_run_id)"))
+    conn.execute(text(
+        "UPDATE events SET earliest_published_at = (SELECT MIN(r.published_at) FROM event_items ei "
+        "JOIN raw_items r ON r.id = ei.item_id WHERE ei.event_id = events.id)"))
+
+
+def m006_development_summary(conn: Connection) -> None:
+    """A persisted factual summary per development, with how and from which items it was made.
+    (Numbered 4 on feat/localhost-demo before main took 4 and 5.)"""
     for column, ddl in [
         ("development_summary", "TEXT"), ("summary_method", "VARCHAR(100)"), ("summary_model", "VARCHAR(100)"),
         ("summary_generated_at", _datetime_type(conn)), ("summary_item_ids", "JSON"),
@@ -88,7 +119,9 @@ MIGRATIONS: list[tuple[int, Callable[[Connection], None]]] = [
     (1, m001_legacy),
     (2, m002_situations),
     (3, m003_development_fields),
-    (4, m004_development_summary),
+    (4, m004_entity_resolution),
+    (5, m005_run_ledger),
+    (6, m006_development_summary),
 ]
 
 

@@ -1,0 +1,1136 @@
+{
+ "A001": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "commentary",
+  "confidence": "medium",
+  "rationale": "SCMP reports the Hong Kong Alliance guilty verdict; Al Jazeera's 'Why are ... facing prison?' is an explainer about it."
+ },
+ "A002": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": null,
+  "confidence": "high",
+  "rationale": "Carney announcing retaliatory tariffs after talks collapsed (22 Aug) is a different statement from Manitoba premier Kinew's attack on Trump (Thursday 20 Aug)."
+ },
+ "A003": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "commentary",
+  "confidence": "high",
+  "rationale": "A humanoid crashing in a speed test is an incident; the SCMP piece is an opinion on China's embodied-AI strategy."
+ },
+ "A004": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "unrelated",
+  "confidence": "high",
+  "rationale": "Brazil's AI supercomputer investment and Chinese telecoms' token-factory strategy are unrelated occurrences."
+ },
+ "A005": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "unrelated",
+  "confidence": "high",
+  "rationale": "Separate season previews for Liverpool and Manchester City."
+ },
+ "A006": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "reaction",
+  "confidence": "medium",
+  "rationale": "Analysts assessing Singapore's fund-manager package differs from Hong Kong financiers pressing for their own carried-interest tax break in response."
+ },
+ "A007": {
+  "label": "SAME_DEVELOPMENT",
+  "note": "update",
+  "confidence": "high",
+  "rationale": "Both report the Friday sword attack at a Swedish high school (Fagersta); BBC updates with one death and a suspect arrested."
+ },
+ "A008": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "unrelated",
+  "confidence": "high",
+  "rationale": "US-China AI bloc analysis versus analysis of the China-Indonesia naval drill; different subjects, both commentary."
+ },
+ "A009": {
+  "label": "AMBIGUOUS",
+  "note": null,
+  "confidence": "low",
+  "rationale": "Both report an Israeli strike in Syria on 22 Aug condemned by Syria as violating international law, but 'civilian vehicle in the southwest' and 'near Damascus' may or may not be the same strike."
+ },
+ "A010": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "unrelated",
+  "confidence": "high",
+  "rationale": "Paul Chan opening Hong Kong's tech exhibition and a robotics conference in Beijing are different events in different cities."
+ },
+ "A011": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "unrelated",
+  "confidence": "high",
+  "rationale": "NSA deputy Kosiba's remarks on China versus an SCMP analysis of US-China AI blocs in Southeast Asia."
+ },
+ "A012": {
+  "label": "SAME_DEVELOPMENT",
+  "note": "rewrite",
+  "confidence": "high",
+  "rationale": "Both report a humanoid robot beating Bolt's 100m record at the World Humanoid Robot Games in Beijing."
+ },
+ "A013": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": null,
+  "confidence": "high",
+  "rationale": "Settlers forcing families from homes in Qaryut is a different occurrence from Jewish activists providing a protective presence in the West Bank."
+ },
+ "A014": {
+  "label": "SAME_DEVELOPMENT",
+  "note": "rewrite",
+  "confidence": "high",
+  "rationale": "Both report the guilty verdict against Hong Kong Tiananmen activists in the national security trial."
+ },
+ "A015": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "commentary",
+  "confidence": "medium",
+  "rationale": "'The US could focus on economically isolating Iran' is analysis of the strategy shift; the live blog reports Bessent vowing toughest sanctions."
+ },
+ "A016": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "unrelated",
+  "confidence": "high",
+  "rationale": "Brazil's AI investment report versus an SCMP opinion on China's embodied AI."
+ },
+ "A017": {
+  "label": "AMBIGUOUS",
+  "note": null,
+  "confidence": "low",
+  "rationale": "Both carry the same-day UN/WHO warning on Ebola's speed with 2,500 deaths, but the BBC headline leads with a vaccine trial announcement, so it is unclear whether they share one occurrence."
+ },
+ "A018": {
+  "label": "SAME_DEVELOPMENT",
+  "note": "rewrite",
+  "confidence": "high",
+  "rationale": "Both report the sword attack at a high school in Fagersta, Sweden, with one person detained."
+ },
+ "A019": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "follow-up",
+  "confidence": "high",
+  "rationale": "Al Jazeera reports new Russian strikes killing 6 on the day after the mall attack; BBC covers rescue at Friday's mall strike that killed 16."
+ },
+ "A020": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "unrelated",
+  "confidence": "high",
+  "rationale": "A Swedish school sword attack and a stabbing at a Canadian Sikh temple are separate incidents."
+ },
+ "A021": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "follow-up",
+  "confidence": "medium",
+  "rationale": "The announced vaccine trial and WHO warning (21 Aug) differ from the arrival of 16,000 Ervebo doses in Kinshasa (22 Aug)."
+ },
+ "A022": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "follow-up",
+  "confidence": "medium",
+  "rationale": "Arrival of 16,000 vaccine doses on 22 Aug is a later occurrence than the vaccine-trial announcement and WHO warning of 21 Aug."
+ },
+ "A023": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": null,
+  "confidence": "high",
+  "rationale": "Israel re-establishing a closed settlement differs from Jewish activists' protective presence against settlers."
+ },
+ "A024": {
+  "label": "SAME_DEVELOPMENT",
+  "note": "update",
+  "confidence": "high",
+  "rationale": "Same Fagersta school sword attack; BBC later adds one killed and an 18-year-old suspect shot and arrested."
+ },
+ "A025": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "commentary",
+  "confidence": "high",
+  "rationale": "A report of settlers targeting homes in Qaryut versus a BBC explainer on settlement expansion."
+ },
+ "A026": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "unrelated",
+  "confidence": "high",
+  "rationale": "Asian allies' wariness over US asset moves for the Iran war versus an analysis of US-China AI blocs; different subjects."
+ },
+ "A027": {
+  "label": "SAME_DEVELOPMENT",
+  "note": "rewrite",
+  "confidence": "high",
+  "rationale": "Both report the guilty verdict against the Tiananmen vigil organisers under the national security law."
+ },
+ "A028": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": null,
+  "confidence": "high",
+  "rationale": "Re-establishment of a closed settlement by 30 families is a different occurrence from settlers forcing families out in Qaryut."
+ },
+ "A029": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "follow-up",
+  "confidence": "medium",
+  "rationale": "The UN warning with the toll passing 2,500 (21 Aug) versus the vaccine dose arrival next day; the second headline's occurrence is the doses."
+ },
+ "A030": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "commentary",
+  "confidence": "high",
+  "rationale": "An opinion on China's embodied AI versus a report on the robot horse at a Beijing robotics conference."
+ },
+ "A031": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "commentary",
+  "confidence": "high",
+  "rationale": "A report of one settlement being re-established versus a BBC explainer on how Israel is expanding settlements."
+ },
+ "A032": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "follow-up",
+  "confidence": "high",
+  "rationale": "The UN warning on outbreak spread (21 Aug) versus the arrival of 16,000 Ervebo doses (22 Aug)."
+ },
+ "A033": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "unrelated",
+  "confidence": "high",
+  "rationale": "Brazil's AI investment versus Paul Chan opening Hong Kong's tech festival."
+ },
+ "B001": {
+  "label": "SAME_DEVELOPMENT",
+  "note": "rewrite",
+  "confidence": "high",
+  "rationale": "Both report Nepal PM Balendra Shah's UN address calling for climate action after the floods."
+ },
+ "B002": {
+  "label": "SAME_DEVELOPMENT",
+  "note": "rewrite",
+  "confidence": "high",
+  "rationale": "Both report the OCCAR-brokered $4.2bn DDX destroyer contract for Italy with Fincantieri/Leonardo."
+ },
+ "B003": {
+  "label": "SAME_DEVELOPMENT",
+  "note": "rewrite",
+  "confidence": "high",
+  "rationale": "Both report Meloni's ministers agreeing to ban burqas/niqabs in schools and cap foreign students."
+ },
+ "B004": {
+  "label": "SAME_DEVELOPMENT",
+  "note": "rewrite",
+  "confidence": "medium",
+  "rationale": "Both report the Trump-Xi White House state dinner; BBC adds an assessment of little progress, SCMP details its symbolism."
+ },
+ "B005": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": null,
+  "confidence": "medium",
+  "rationale": "The state dinner and Trump's tour of White House building works for Xi are separate occurrences in the same visit."
+ },
+ "B006": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "reaction",
+  "confidence": "medium",
+  "rationale": "Netanyahu's UN speech and the walkout differ from a Free Palestine street march denouncing him."
+ },
+ "B007": {
+  "label": "SAME_DEVELOPMENT",
+  "note": "update",
+  "confidence": "medium",
+  "rationale": "Both report the dispute between the Air Force and CASI's director over eliminating the institute's civilian staff."
+ },
+ "B008": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "commentary",
+  "confidence": "high",
+  "rationale": "A report of Trump's building tour for Xi versus BBC analysis of what Xi did and did not get from the visit."
+ },
+ "B009": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "unrelated",
+  "confidence": "high",
+  "rationale": "An acquisition-reform opinion piece versus the Navy's cyber advisor seeking expeditionary cyber; unrelated."
+ },
+ "B010": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "commentary",
+  "confidence": "high",
+  "rationale": "A report of the White House building tour versus analysis of tech titans' seating at the state dinner."
+ },
+ "B011": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "follow-up",
+  "confidence": "medium",
+  "rationale": "Pakistani strikes on 10 targets in Afghanistan killing four civilians (24 Sep) differ from later cross-border fire killing Taliban fighters (25 Sep)."
+ },
+ "C001": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "unrelated",
+  "confidence": "high",
+  "rationale": "Experts criticising Big Tech AI self-regulation vs US lending 40m barrels from strategic reserves: unrelated occurrences."
+ },
+ "C002": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "commentary",
+  "confidence": "high",
+  "rationale": "Trump signing the Super Intelligence executive order vs an experts' critique piece on Big Tech self-regulation."
+ },
+ "C003": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "repeat",
+  "confidence": "high",
+  "rationale": "Two separate CBP accreditation notices for different Intertek sites (Chelsea MA vs Carteret NJ) with different dates."
+ },
+ "C004": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "unrelated",
+  "confidence": "high",
+  "rationale": "BBC film review of Inarritu's Digger vs Andy Burnham's housing programme at Labour conference."
+ },
+ "C005": {
+  "label": "AMBIGUOUS",
+  "note": null,
+  "confidence": "low",
+  "rationale": "Guterres' remarks at the plenary for the International Day for Total Elimination of Nuclear Weapons may be part of the GA high-level meeting summarised in item 2, but publication dates (28 vs 29 Sep 'today') leave it unclear whether it is the same meeting."
+ },
+ "C006": {
+  "label": "SAME_DEVELOPMENT",
+  "note": "rewrite",
+  "confidence": "high",
+  "rationale": "Both report the Iranian currency hitting a record low amid war, within hours of each other."
+ },
+ "C007": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "commentary",
+  "confidence": "high",
+  "rationale": "Trump's White House lunch with tech leaders vs an experts' critique piece on AI self-regulation."
+ },
+ "C008": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "unrelated",
+  "confidence": "high",
+  "rationale": "Feature on Mount Athos vs 11-year-old British chess grandmaster record."
+ },
+ "C009": {
+  "label": "SAME_DEVELOPMENT",
+  "note": "update",
+  "confidence": "high",
+  "rationale": "Same FlyDubai Dubai-Israel flight diverted to Saudi Arabia after a cockpit fight; item 1 adds later details (stabbing, crash attempt)."
+ },
+ "C010": {
+  "label": "SAME_DEVELOPMENT",
+  "note": "update",
+  "confidence": "medium",
+  "rationale": "Both headline South Korea's demand for an apology over the DMZ mine blasts injuring three; France 24 adds North Korea's rejection."
+ },
+ "C011": {
+  "label": "SAME_DEVELOPMENT",
+  "note": "update",
+  "confidence": "medium",
+  "rationale": "Pentagon statement on formally concluding Operation Inherent Resolve and France 24 report of US forces leaving remaining Iraqi bases on Wednesday describe the same withdrawal/conclusion."
+ },
+ "C012": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": null,
+  "confidence": "high",
+  "rationale": "Trump's Big Tech lunch summit vs the separate launch of the America.gov website."
+ },
+ "C013": {
+  "label": "SAME_DEVELOPMENT",
+  "note": "update",
+  "confidence": "high",
+  "rationale": "Same overnight 29-30 Sep Russian missile and drone attack on Kyiv/Ukraine; later report has higher toll."
+ },
+ "C014": {
+  "label": "SAME_DEVELOPMENT",
+  "note": "rewrite",
+  "confidence": "medium",
+  "rationale": "Both report Trump's White House lunch/summit with AI and tech leaders on 29 Sep inaugurating the 'Super Intelligence' era."
+ },
+ "C015": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "unrelated",
+  "confidence": "high",
+  "rationale": "Moroccan king meets new PM vs Delcy Rodriguez asks to reform Venezuela's hate law."
+ },
+ "C016": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "commentary",
+  "confidence": "medium",
+  "rationale": "Trump's statement refusing AI safety cooperation with China vs an Al Jazeera 'is it enough?' assessment of the self-regulation deal."
+ },
+ "C017": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "commentary",
+  "confidence": "high",
+  "rationale": "Report of Trump's order and AI lunch vs experts' critique piece on self-regulation."
+ },
+ "C018": {
+  "label": "AMBIGUOUS",
+  "note": null,
+  "confidence": "low",
+  "rationale": "El Mansouri's selection as PM vs the king's official palace meeting with her 'after the appointment'; unclear whether the audience is the appointment act itself or a subsequent meeting."
+ },
+ "C019": {
+  "label": "SAME_DEVELOPMENT",
+  "note": "rewrite",
+  "confidence": "high",
+  "rationale": "Both report the Pentagon's up-to-$20.7bn AMRAAM contract award to Raytheon."
+ },
+ "C020": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "unrelated",
+  "confidence": "high",
+  "rationale": "Morocco king meets new PM vs UN extends Haiti mission by six months."
+ },
+ "C021": {
+  "label": "SAME_DEVELOPMENT",
+  "note": "update",
+  "confidence": "medium",
+  "rationale": "Both report the same 29 Sep French student protest clashes with 400-440 arrests; Al Jazeera also covers the concurrent public-worker strike."
+ },
+ "C022": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": null,
+  "confidence": "medium",
+  "rationale": "Executive order renaming AI 'superintelligence' in agencies vs the separate 'morally binding' self-regulation accord with tech leaders, both on the same day."
+ },
+ "C023": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "preview",
+  "confidence": "medium",
+  "rationale": "Trump's 'never curb growth' remark at the America.gov launch before the meeting vs his announcement after the meeting that tech leaders signed an accord."
+ },
+ "C024": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "unrelated",
+  "confidence": "high",
+  "rationale": "US financial/travel squeeze on Cuba vs US loan of strategic petroleum reserve barrels to energy firms."
+ },
+ "C025": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "unrelated",
+  "confidence": "high",
+  "rationale": "Morocco's first woman PM vs EDA estimate of EU defence spending."
+ },
+ "C026": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": null,
+  "confidence": "high",
+  "rationale": "Iranian currency record low vs Iran confirming receipt of the US response to its peace proposal."
+ },
+ "C027": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "unrelated",
+  "confidence": "high",
+  "rationale": "Explainer on legality of third-country deportations vs launch of America.gov."
+ },
+ "C028": {
+  "label": "SAME_DEVELOPMENT",
+  "note": "update",
+  "confidence": "high",
+  "rationale": "Same FlyDubai Dubai-Tel Aviv flight diverted to Saudi Arabia after an emergency alert/pilot fight on 30 Sep."
+ },
+ "C029": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": null,
+  "confidence": "high",
+  "rationale": "Putin's decree raising military staff vs a daily roundup headlined on the record 2027 military budget."
+ },
+ "C030": {
+  "label": "SAME_DEVELOPMENT",
+  "note": "rewrite",
+  "confidence": "high",
+  "rationale": "Report and official release of the same Navy F/A-XX contract award to Boeing."
+ },
+ "C031": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": null,
+  "confidence": "medium",
+  "rationale": "Burnham's Tuesday conference programme on housing vs his Wednesday remark not ruling out rejoining the EU: different statements on different days."
+ },
+ "C032": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "unrelated",
+  "confidence": "high",
+  "rationale": "Commission state-of-the-ocean report vs Council position on fisheries funding in the MFF."
+ },
+ "C033": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": null,
+  "confidence": "high",
+  "rationale": "Iran receiving US response to peace proposal vs Iranian currency record low."
+ },
+ "C034": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "commentary",
+  "confidence": "medium",
+  "rationale": "The Commission's proposal of the EU Critical Communication System vs the accompanying Q&A explainer."
+ },
+ "C035": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "unrelated",
+  "confidence": "high",
+  "rationale": "French public sector pay protests vs Spanish pensioner Maricarmen returning home after eviction."
+ },
+ "C036": {
+  "label": "SAME_DEVELOPMENT",
+  "note": "rewrite",
+  "confidence": "high",
+  "rationale": "Both report Burnham's 'hope again' leader's speech at the Labour conference on 29 Sep."
+ },
+ "C037": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "unrelated",
+  "confidence": "high",
+  "rationale": "French public workers' pay demonstrations vs Spanish eviction case."
+ },
+ "C038": {
+  "label": "SAME_DEVELOPMENT",
+  "note": "update",
+  "confidence": "medium",
+  "rationale": "The daily roundup's headline is the record 27% rise in Russia's 2027 military budget, the same budget-document occurrence Defense News reports."
+ },
+ "C039": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "preview",
+  "confidence": "medium",
+  "rationale": "Item 2 is the pre-meeting programme ('will convene', 'anticipated briefers') for the DRC Security Council meeting that item 1 covers live."
+ },
+ "C040": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "commentary",
+  "confidence": "high",
+  "rationale": "Both are analysis/expert commentary pieces on the AI accord, not reports of an occurrence."
+ },
+ "C041": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "commentary",
+  "confidence": "high",
+  "rationale": "Profile/explainer of Christa Pike vs the Supreme Court's denial of her bid to halt execution."
+ },
+ "C042": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "unrelated",
+  "confidence": "high",
+  "rationale": "Feature on interpreters of power vs experts' critique of Big Tech self-regulation."
+ },
+ "C043": {
+  "label": "SAME_DEVELOPMENT",
+  "note": "rewrite",
+  "confidence": "high",
+  "rationale": "Official release and report of the same $20.7bn AMRAAM award to Raytheon."
+ },
+ "C044": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": null,
+  "confidence": "high",
+  "rationale": "Different AFCON 2027 qualifying matches (Ghana/Nigeria upsets vs Senegal win in Ethiopia)."
+ },
+ "C045": {
+  "label": "SAME_DEVELOPMENT",
+  "note": "update",
+  "confidence": "high",
+  "rationale": "Same overnight Russian missile/drone attack on Kyiv and its region on 30 Sep; tolls and details updated."
+ },
+ "C046": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "unrelated",
+  "confidence": "high",
+  "rationale": "French student protest arrests vs Spanish eviction case."
+ },
+ "C047": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": null,
+  "confidence": "high",
+  "rationale": "Rubio's 28 Sep Fox News interview vs his 29 Sep remarks at the America.gov event."
+ },
+ "C048": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": null,
+  "confidence": "high",
+  "rationale": "Daily news roundup headlined on the Democratic Resilience Centre vs the EUCCS proposal."
+ },
+ "C049": {
+  "label": "SAME_DEVELOPMENT",
+  "note": "update",
+  "confidence": "medium",
+  "rationale": "DW report of US troops completing withdrawal ending Operation Inherent Resolve and the Pentagon statement formally concluding it describe the same act."
+ },
+ "C050": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "unrelated",
+  "confidence": "high",
+  "rationale": "Ecuador minister on a cell for Correa vs Grossi in the UN Secretary-General race."
+ },
+ "C051": {
+  "label": "SAME_DEVELOPMENT",
+  "note": "rewrite",
+  "confidence": "medium",
+  "rationale": "UN News live coverage and UN Press summary of the same 29 Sep Security Council meeting on the DRC."
+ },
+ "C052": {
+  "label": "SAME_DEVELOPMENT",
+  "note": "update",
+  "confidence": "medium",
+  "rationale": "Both describe the final US withdrawal from Iraqi bases by Wednesday; the later France 24 piece reports the exit itself."
+ },
+ "C053": {
+  "label": "SAME_DEVELOPMENT",
+  "note": "rewrite",
+  "confidence": "high",
+  "rationale": "Report and official release of the Navy's F/A-XX award to Boeing."
+ },
+ "C054": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "unrelated",
+  "confidence": "high",
+  "rationale": "Mount Athos feature vs Spanish royals receiving the Macrons."
+ },
+ "C055": {
+  "label": "SAME_DEVELOPMENT",
+  "note": "rewrite",
+  "confidence": "high",
+  "rationale": "Same FlyDubai flight to Israel diverted to Saudi Arabia after a cockpit incident on 30 Sep."
+ },
+ "C056": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": null,
+  "confidence": "high",
+  "rationale": "Daily General Staff Russian casualty figure vs roundup headlined on the 2027 military budget."
+ },
+ "C057": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "unrelated",
+  "confidence": "high",
+  "rationale": "Barcelona torrential flooding vs Hurricane Polo landfall in Mexico."
+ },
+ "C058": {
+  "label": "SAME_DEVELOPMENT",
+  "note": "rewrite",
+  "confidence": "high",
+  "rationale": "Same FlyDubai emergency caused by a fight between pilots, landing in Saudi Arabia."
+ },
+ "C059": {
+  "label": "SAME_DEVELOPMENT",
+  "note": "update",
+  "confidence": "high",
+  "rationale": "Same overnight ballistic missile attack on Kyiv; later item adds deaths and Polish airport closures."
+ },
+ "C060": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": null,
+  "confidence": "high",
+  "rationale": "Security Council meeting on the Middle East vs General Assembly high-level meeting on nuclear risks."
+ },
+ "C061": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "unrelated",
+  "confidence": "high",
+  "rationale": "Trump AI executive order vs Polish-Italian business council in Milan."
+ },
+ "C062": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "unrelated",
+  "confidence": "high",
+  "rationale": "French protest arrests vs Sanchez housing decrees in Spain."
+ },
+ "C063": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "unrelated",
+  "confidence": "high",
+  "rationale": "America.gov launch vs US strategic oil reserve loan."
+ },
+ "C064": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "preview",
+  "confidence": "medium",
+  "rationale": "Pre-meeting programme of the DRC Security Council meeting vs the report of what the Special Representative told the Council."
+ },
+ "C065": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "commentary",
+  "confidence": "high",
+  "rationale": "Report of Boeing's F/A-XX win vs an analysis of what the win means."
+ },
+ "C066": {
+  "label": "SAME_DEVELOPMENT",
+  "note": "update",
+  "confidence": "medium",
+  "rationale": "Later detail (pilots' nationalities) on the same FlyDubai diversion incident."
+ },
+ "C067": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": null,
+  "confidence": "medium",
+  "rationale": "Rubio's remarks at the America.gov event vs Trump's statement on a 10-person AI oversight committee."
+ },
+ "C068": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "unrelated",
+  "confidence": "high",
+  "rationale": "Deportation legality explainer vs AI accord announcement."
+ },
+ "C069": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "unrelated",
+  "confidence": "high",
+  "rationale": "UN leadership race vs El Nino drought in Central America."
+ },
+ "C070": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "unrelated",
+  "confidence": "high",
+  "rationale": "Spanish housing decrees vs Trump AI accord."
+ },
+ "C071": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "unrelated",
+  "confidence": "high",
+  "rationale": "Trump weighing a diesel export ban vs Cuba sanctions tightening."
+ },
+ "C072": {
+  "label": "SAME_DEVELOPMENT",
+  "note": "update",
+  "confidence": "medium",
+  "rationale": "Both report US forces leaving their last Iraqi bases by/on Wednesday under the 2024 agreement."
+ },
+ "C073": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "unrelated",
+  "confidence": "high",
+  "rationale": "Trump weighing diesel export ban vs experts' critique of AI self-regulation."
+ },
+ "C074": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": null,
+  "confidence": "high",
+  "rationale": "AMRAAM contract award vs a separate $450m tungsten mining investment."
+ },
+ "C075": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": null,
+  "confidence": "high",
+  "rationale": "Ukrainian minister's statement on the economic cost of missile alerts vs the attack on Kyiv region killing a child."
+ },
+ "C076": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": null,
+  "confidence": "medium",
+  "rationale": "A drone crashing in Moldova is a distinct incident from the casualties of the same overnight attack on Ukraine."
+ },
+ "C077": {
+  "label": "SAME_DEVELOPMENT",
+  "note": "rewrite",
+  "confidence": "high",
+  "rationale": "Official release and report of the same $20.7bn AMRAAM award."
+ },
+ "C078": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "preview",
+  "confidence": "medium",
+  "rationale": "Supreme Court denial of Pike's bid vs a piece on her imminent execution and her 'not afraid to die' quote."
+ },
+ "C079": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "commentary",
+  "confidence": "high",
+  "rationale": "Feature with Israeli soldiers' testimonies vs a specific Israeli strike killing a Palestinian in Gaza City."
+ },
+ "C080": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": null,
+  "confidence": "medium",
+  "rationale": "A multi-item UN news-in-brief roundup whose headline is not solely the Malaysian repatriation vs the DW report on that repatriation."
+ },
+ "C081": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "commentary",
+  "confidence": "high",
+  "rationale": "Feature on Miami mass immigration hearings vs explainer on third-country deportations."
+ },
+ "C082": {
+  "label": "AMBIGUOUS",
+  "note": null,
+  "confidence": "low",
+  "rationale": "Mansouri becoming Morocco's first woman PM vs the king's palace meeting with her after the appointment; unclear if the audience is the appointment itself."
+ },
+ "C083": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "preview",
+  "confidence": "high",
+  "rationale": "Preview of Hegseth's upcoming 'State of the Force' address vs his signing of an election-defence directive."
+ },
+ "C084": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "unrelated",
+  "confidence": "high",
+  "rationale": "Diesel export ban talks vs experts' AI self-regulation critique."
+ },
+ "C085": {
+  "label": "SAME_DEVELOPMENT",
+  "note": "update",
+  "confidence": "medium",
+  "rationale": "Both report the completion of the US troop withdrawal from Iraq ending the anti-ISIS coalition mission."
+ },
+ "C086": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "repeat",
+  "confidence": "high",
+  "rationale": "Two different Hegseth directives on different days (election defence vs academy tenure)."
+ },
+ "C087": {
+  "label": "SAME_DEVELOPMENT",
+  "note": "rewrite",
+  "confidence": "high",
+  "rationale": "Same FlyDubai flight to Tel Aviv diverted to Saudi Arabia after a pilots' fight."
+ },
+ "C088": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "follow-up",
+  "confidence": "high",
+  "rationale": "El Mansouri's selection as PM vs her starting coalition consultations the next day."
+ },
+ "C089": {
+  "label": "SAME_DEVELOPMENT",
+  "note": "update",
+  "confidence": "medium",
+  "rationale": "Both report the US completing its military withdrawal from Iraqi bases."
+ },
+ "C090": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "commentary",
+  "confidence": "medium",
+  "rationale": "Meloni's 30 Sep statement refusing to cut ties with Egypt vs a background piece on the Rome-Cairo thaw."
+ },
+ "C091": {
+  "label": "SAME_DEVELOPMENT",
+  "note": "rewrite",
+  "confidence": "high",
+  "rationale": "Both report Somali pirates killed crew on the hijacked tanker before the rescue."
+ },
+ "C092": {
+  "label": "SAME_DEVELOPMENT",
+  "note": "update",
+  "confidence": "medium",
+  "rationale": "Both concern the same FlyDubai cockpit incident; one gives the reconstruction, the other revised pilot nationalities."
+ },
+ "C093": {
+  "label": "SAME_DEVELOPMENT",
+  "note": "update",
+  "confidence": "medium",
+  "rationale": "Both report the Israeli settler raid on the Palestinian village of Jalud, with US and later Netanyahu condemnation."
+ },
+ "C094": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "reaction",
+  "confidence": "high",
+  "rationale": "US Senate refusing to vote on a West Bank resolution after the attack vs the settler raid on Jalud itself."
+ },
+ "C095": {
+  "label": "SAME_DEVELOPMENT",
+  "note": "rewrite",
+  "confidence": "high",
+  "rationale": "Same Israel-bound FlyDubai diversion after a fight between pilots."
+ },
+ "C096": {
+  "label": "SAME_DEVELOPMENT",
+  "note": "update",
+  "confidence": "medium",
+  "rationale": "Same FlyDubai incident; later item corrects the pilots' nationalities."
+ },
+ "C097": {
+  "label": "SAME_DEVELOPMENT",
+  "note": "update",
+  "confidence": "high",
+  "rationale": "Same FlyDubai flight emergency and diversion to Saudi Arabia."
+ },
+ "C098": {
+  "label": "SAME_DEVELOPMENT",
+  "note": "rewrite",
+  "confidence": "high",
+  "rationale": "Both report Estonia's 29 Sep attribution of the August Milrem arson to Russia."
+ },
+ "C099": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "unrelated",
+  "confidence": "high",
+  "rationale": "UN climate summit coverage page vs Commission state-of-the-ocean report."
+ },
+ "C100": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "commentary",
+  "confidence": "medium",
+  "rationale": "Report of the voluntary AI safety accord vs Al Jazeera's 'is it enough?' assessment of it."
+ },
+ "C101": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "commentary",
+  "confidence": "high",
+  "rationale": "Report of the F/A-XX selection vs analysis of what it means for Boeing."
+ },
+ "C102": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "unrelated",
+  "confidence": "high",
+  "rationale": "Burnham's conference speech vs naming of an EU Parliament building after Sassoli."
+ },
+ "C103": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "commentary",
+  "confidence": "medium",
+  "rationale": "The EUCCS proposal press release vs its accompanying factsheet explainer."
+ },
+ "C104": {
+  "label": "SAME_DEVELOPMENT",
+  "note": "rewrite",
+  "confidence": "high",
+  "rationale": "Pentagon spokesman Parnell's statement and Rai's report of it on the official end of the Iraq mission."
+ },
+ "C105": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": null,
+  "confidence": "high",
+  "rationale": "Burnham's 29 Sep conference speech vs his 30 Sep BBC Radio remarks on EU rejoining."
+ },
+ "C106": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "commentary",
+  "confidence": "high",
+  "rationale": "Report of the 'morally binding' AI accord vs experts' critique piece."
+ },
+ "C107": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "unrelated",
+  "confidence": "high",
+  "rationale": "Renewables/energy security feature vs GA nuclear risk meeting."
+ },
+ "C108": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "unrelated",
+  "confidence": "high",
+  "rationale": "Trump's 32-day midterm campaign tour announcement vs America.gov launch."
+ },
+ "C109": {
+  "label": "SAME_DEVELOPMENT",
+  "note": "update",
+  "confidence": "medium",
+  "rationale": "Both report the US completing its troop withdrawal from Iraq."
+ },
+ "C110": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "follow-up",
+  "confidence": "high",
+  "rationale": "Mansouri becoming PM vs her subsequent round of coalition consultations starting Wednesday."
+ },
+ "C111": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": null,
+  "confidence": "medium",
+  "rationale": "Trump announcing the self-regulation commitment at the luncheon vs his earlier statement refusing AI safety cooperation with China."
+ },
+ "C112": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": null,
+  "confidence": "high",
+  "rationale": "AI accord announcement after the meeting vs America.gov launch."
+ },
+ "C113": {
+  "label": "SAME_DEVELOPMENT",
+  "note": "update",
+  "confidence": "medium",
+  "rationale": "Same FlyDubai incident; one reports the stabbing/crash attempt, the other the revised pilot nationalities."
+ },
+ "C114": {
+  "label": "SAME_DEVELOPMENT",
+  "note": "rewrite",
+  "confidence": "medium",
+  "rationale": "Kyiv Independent's report of US sanctions on 13 entities tied to Iran weapons procurement likely describes the 29 Sep State Department fact sheet on disrupting Iran's proliferation efforts."
+ },
+ "C115": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "commentary",
+  "confidence": "medium",
+  "rationale": "Analysis of effects of US aviation sanctions on Iran vs the State Department's 29 Sep proliferation-sanctions fact sheet."
+ },
+ "H001": {
+  "label": "SAME_DEVELOPMENT",
+  "note": "rewrite",
+  "confidence": "medium",
+  "rationale": "Both concern the guilty verdict against Duane 'Keffe D' Davis; the second is a courtroom eyewitness account of that verdict, not analysis."
+ },
+ "H002": {
+  "label": "SAME_DEVELOPMENT",
+  "note": "rewrite",
+  "confidence": "high",
+  "rationale": "Both report a South Korean court jailing Unification Church leader Han Hak-ja for two years for bribery."
+ },
+ "H003": {
+  "label": "SAME_DEVELOPMENT",
+  "note": "update",
+  "confidence": "medium",
+  "rationale": "Both cover the Nepal-China border flood rescue, with the toll rising from ~903 to over 1,000; the BBC piece is a survivor account within continuing rescue coverage."
+ },
+ "H004": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "unrelated",
+  "confidence": "high",
+  "rationale": "The Nepal-Tibet border floods and the Grand Canyon flash flood are separate disasters."
+ },
+ "H005": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "unrelated",
+  "confidence": "high",
+  "rationale": "Japanese corporate investment in India versus Japan's weapons plans; unrelated, both analytical."
+ },
+ "H006": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "commentary",
+  "confidence": "low",
+  "rationale": "The Al Jazeera 'How many are dead or missing?' piece is framed as an explainer/tally on the Nepal floods, versus SCMP's rescue report; same disaster."
+ },
+ "H007": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "unrelated",
+  "confidence": "high",
+  "rationale": "The Grand Canyon flash flood and the Nepal-Tibet floods are separate disasters."
+ },
+ "H008": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "follow-up",
+  "confidence": "medium",
+  "rationale": "China's Ministry of Water Resources warning of further glacier collapse is a distinct statement from the rescue-operations report, though both carry the same death toll."
+ },
+ "H009": {
+  "label": "SAME_DEVELOPMENT",
+  "note": "update",
+  "confidence": "high",
+  "rationale": "Both report the ferry that capsized off Northern Cyprus with around 18-20 missing, with added details (8 dead, crew arrested)."
+ },
+ "H010": {
+  "label": "SAME_DEVELOPMENT",
+  "note": "rewrite",
+  "confidence": "high",
+  "rationale": "Both report Sanchez saying on Monday that Russia and Israel spread disinformation on the Ceuta crisis."
+ },
+ "H011": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "commentary",
+  "confidence": "high",
+  "rationale": "An SCMP analysis on the timing of foreign rescue teams and an Al Jazeera opinion on Nepal's needs are both commentary, not one occurrence."
+ },
+ "H012": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "commentary",
+  "confidence": "high",
+  "rationale": "'What's next for their defence pact?' is analysis; the other reports the first Mecca defence pact meeting."
+ },
+ "H013": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "commentary",
+  "confidence": "high",
+  "rationale": "'Why has Greece signed...' is an explainer; SCMP reports the $3.5bn Israel-Greece deal signing."
+ },
+ "H014": {
+  "label": "SAME_DEVELOPMENT",
+  "note": "update",
+  "confidence": "low",
+  "rationale": "The BBC reconstruction of the floodwater hitting the Nepal-China border crossing covers the same flood incident as SCMP's rescue update, but it is a narrative feature."
+ },
+ "H015": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "commentary",
+  "confidence": "medium",
+  "rationale": "SCMP's question-headline analysis on whether foreign rescue teams should have come earlier versus Al Jazeera's rescue report with the toll past 900."
+ },
+ "H016": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "commentary",
+  "confidence": "low",
+  "rationale": "Al Jazeera's 'How many are dead or missing?' explainer versus the BBC survivor account within rescue coverage of the same flood."
+ },
+ "H017": {
+  "label": "SAME_DEVELOPMENT",
+  "note": "update",
+  "confidence": "medium",
+  "rationale": "Both cover the rescue of trapped hydropower workers in the Nepal flood; the toll rises from over 900 to over 1,000."
+ },
+ "H018": {
+  "label": "SAME_DEVELOPMENT",
+  "note": "rewrite",
+  "confidence": "high",
+  "rationale": "Both report Duane 'Keffe D' Davis being found guilty of Tupac Shakur's murder."
+ },
+ "H019": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "commentary",
+  "confidence": "high",
+  "rationale": "A report of the first Mecca pact meeting versus a Breaking Defense 'explained' recap/podcast."
+ },
+ "H020": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "commentary",
+  "confidence": "medium",
+  "rationale": "SCMP analysis on foreign rescue teams versus the BBC survivor account and rescue update."
+ },
+ "H021": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": null,
+  "confidence": "medium",
+  "rationale": "Same Indonesian wildfires, but orangutan habitat loss in Borneo and hazardous haze in Sarawak are different reported occurrences, neither a rewrite of the other."
+ },
+ "H022": {
+  "label": "SAME_DEVELOPMENT",
+  "note": "rewrite",
+  "confidence": "high",
+  "rationale": "Both report Greece and Israel signing the $3.5bn air-defence deal on Monday."
+ },
+ "H023": {
+  "label": "AMBIGUOUS",
+  "note": null,
+  "confidence": "low",
+  "rationale": "Survivors returning home in Nuwakot may be aftermath of the same border flood covered by SCMP's rescue report, or a distinct recovery occurrence; the text cannot decide."
+ },
+ "H024": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "commentary",
+  "confidence": "medium",
+  "rationale": "Both are explainer/analysis pieces on the Nepal floods (a tally and a question on foreign rescue help), not one occurrence."
+ },
+ "H025": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "unrelated",
+  "confidence": "high",
+  "rationale": "The Nepal floods and the Grand Canyon flash flood are separate disasters."
+ },
+ "H026": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "commentary",
+  "confidence": "low",
+  "rationale": "The BBC reconstruction of the flood at the border crossing versus Al Jazeera's 'How many are dead or missing?' explainer."
+ },
+ "H027": {
+  "label": "SAME_DEVELOPMENT",
+  "note": "update",
+  "confidence": "high",
+  "rationale": "Both report the intensifying rescue in the Nepal-China flood zone with the toll around 900-1,000."
+ },
+ "H028": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "commentary",
+  "confidence": "high",
+  "rationale": "An Al Jazeera opinion on what Nepal needs versus SCMP's rescue report."
+ },
+ "H029": {
+  "label": "AMBIGUOUS",
+  "note": null,
+  "confidence": "low",
+  "rationale": "Nuwakot residents returning home could be aftermath of the same flood as the tunnel rescue report, or a separate recovery occurrence."
+ },
+ "H030": {
+  "label": "DIFFERENT_DEVELOPMENT",
+  "note": "unrelated",
+  "confidence": "high",
+  "rationale": "The Israel-Greece arms deal versus analysis of the Pakistan-Saudi-Turkiye defence pact."
+ }
+}

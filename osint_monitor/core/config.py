@@ -29,6 +29,9 @@ class SourceConfig(BaseModel):
     priority: int = 2
     poll_interval: int = 900
     enabled: bool = True
+    identity: Optional[str] = None       # canonical source identity (organisation); default: the feed name
+    language: Optional[str] = None       # ISO 639-1 of the feed's content, stored untranslated
+    access: Optional[str] = None         # why a feed is disabled / what access it needs (licence, key)
 
 
 class TwitterAccountConfig(BaseModel):
@@ -267,6 +270,18 @@ class HeadlineOverrideConfig(BaseModel):
     min_shared_actors: int = 0                      # canonical actors mentioned by both
 
 
+class OccurrenceMatchConfig(BaseModel):
+    """Owner rule P7 (evaluations/identity/owner-notes-proposals.md): a doubtful headline mismatch between two
+    report headlines is resolved as one occurrence only on explicit evidence. All conditions hold together:
+    published within ``max_hours``; no place conflict (when both name places, they are compatible); and at least
+    ``min_shared_anchors`` specific named entities in common, or the same cited source (both attribute their report
+    to one origin). Anchors exclude states, people and bodies that stand for a state, media outlets, generic
+    institution labels and names shorter than four characters ("AI", "UN")."""
+    max_hours: float = 24.0
+    min_shared_anchors: int = 1
+    use_cited_source: bool = True
+
+
 class DevelopmentSegmentationConfig(BaseModel):
     """Split narrative clusters into Developments (processors/development_segmentation.py)."""
     enabled: bool = False
@@ -276,8 +291,26 @@ class DevelopmentSegmentationConfig(BaseModel):
     location_match: str = "exact"                   # "exact" names, or "containment" (config/geography.yaml)
     use_regions: bool = False                       # containment also through supra-national regions
     headline_override: Optional[HeadlineOverrideConfig] = None   # when a headline mismatch is not decisive
+    occurrence_match: Optional[OccurrenceMatchConfig] = None     # P7: explicit evidence resolves a headline mismatch
 
 
+
+
+class LexicalGuardConfig(BaseModel):
+    """Candidate link rule (processors/lexical.py ``guard_allows``); off unless enabled."""
+    enabled: bool = False
+    max_similarity: float = 0.60        # cross-source links at or above this cosine are never vetoed
+    min_event_specific: int = 1         # shared high/medium terms a weaker link needs
+
+
+class LexicalConfig(BaseModel):
+    """Lexical identity evidence for narrative clustering (processors/lexical.py)."""
+    same_source_title_ratio: float = 90            # same outlet: headline ratio for an update link
+    generic_document_frequency: float = 0.05       # a word in >= this share of the batch is generic
+    min_documents_for_frequency: int = 30          # smaller batches use generic_terms only
+    generic_terms: list[str] = Field(default_factory=list)
+    class_weights: dict[str, float] = Field(default_factory=lambda: {"high": 1.0, "medium": 0.5, "generic": 0.1})
+    guard: LexicalGuardConfig = Field(default_factory=LexicalGuardConfig)
 
 
 class EventGroupingConfig(BaseModel):
@@ -287,6 +320,7 @@ class EventGroupingConfig(BaseModel):
     strategies: dict[str, str] = Field(default_factory=dict)      # source name -> structured strategy
     seismic: SeismicFusionConfig = Field(default_factory=SeismicFusionConfig)
     development_segmentation: DevelopmentSegmentationConfig = Field(default_factory=DevelopmentSegmentationConfig)
+    lexical: LexicalConfig = Field(default_factory=LexicalConfig)
 
 
 class SituationsConfig(BaseModel):
@@ -337,7 +371,7 @@ class AppSettings(BaseSettings):
 def load_sources_config(path: Path | None = None) -> SourcesFileConfig:
     """Load and validate sources.yaml."""
     path = path or CONFIG_DIR / "sources.yaml"
-    with open(path) as f:
+    with open(path, encoding="utf-8") as f:
         raw = yaml.safe_load(f)
     return SourcesFileConfig(**raw)
 
@@ -347,7 +381,7 @@ def load_entities_config(path: Path | None = None) -> list[EntitySeedConfig]:
     path = path or CONFIG_DIR / "entities.yaml"
     if not path.exists():
         return []
-    with open(path) as f:
+    with open(path, encoding="utf-8") as f:
         raw = yaml.safe_load(f)
     return [EntitySeedConfig(**e) for e in raw.get("entities", [])]
 
@@ -357,7 +391,7 @@ def load_alerts_config(path: Path | None = None) -> AlertsConfig:
     path = path or CONFIG_DIR / "alerts.yaml"
     if not path.exists():
         return AlertsConfig()
-    with open(path) as f:
+    with open(path, encoding="utf-8") as f:
         raw = yaml.safe_load(f)
     return AlertsConfig(**raw)
 
@@ -365,7 +399,7 @@ def load_alerts_config(path: Path | None = None) -> AlertsConfig:
 def load_development_types(path: Path | None = None) -> dict[EventType, DevelopmentTypeDefaults]:
     """Load and validate development_types.yaml."""
     path = path or CONFIG_DIR / "development_types.yaml"
-    with open(path) as f:
+    with open(path, encoding="utf-8") as f:
         raw = yaml.safe_load(f) or {}
     return {EventType(k): DevelopmentTypeDefaults(**v) for k, v in raw.items()}
 
