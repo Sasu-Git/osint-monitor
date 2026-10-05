@@ -28,8 +28,18 @@ the live database. That rehearsal is in the evidence section at the end.
 | Migrations reached | 4 and 5 (head 5) | 4, 5 and 6 (head 6, development summary provenance columns) |
 | Rehearsed | yes | yes |
 
-The scripts read the head version from the target code, so the same steps cover both. The merge of
-`feat/localhost-demo` is a separate owner decision and is **not** part of this branch.
+**Decided (owner, 2026-10-05): deploy migration 6.** Migration 6 is reconciled against `main`, and 3→6 was
+rehearsed. The UI depends on the summary provenance columns. Deploying 5 first would force a second migration
+and deploy shortly afterwards. The integration order:
+
+1. merge `feat/localhost-demo` into `main`;
+2. merge `feat/deploy-observability-readiness`, after code review;
+3. run the full integrated gate once;
+4. tag the deployment candidate. That tag's SHA is `$TARGET`, and its head version must be 6.
+5. deploy in place (D2), then migrate through 6;
+6. run the post-deploy checks and the soak.
+
+The scripts read the head version from the target code. P2 and M2 therefore fail if `$TARGET` is not at head 6.
 
 **Decision D2: deploy in place.** Check the target out in the existing daemon worktree. Do not create a new
 worktree. That way `data\logs` stays: the tier-tick file, collector status and gap log.
@@ -306,3 +316,15 @@ file, no `daemon.log`. That is what an unstarted or broken daemon looks like.
   the soak changes the daemon's environment.
 - **Database location.** The live database lives under the main checkout's `data\eval`. Untracked, and easy to
   confuse with evaluation copies. Never run evaluation scripts with `OSINT_DB_URL` pointing at it.
+
+## Follow-ups (do not block this deployment)
+
+1. **Source identity debt.** `Source` rows, the source inventory, and the scoring and institution lookups are
+   keyed by display name (`source-health.md`, identity audit). Renaming a feed splits its items across two
+   `Source` rows.
+2. **Host suspend.** This is the dominant coverage risk. Before the soak, hold a keep-awake for its duration, or
+   run on a host that does not sleep (`docs/operations.md`). Otherwise the soak's coverage figures measure the
+   laptop, not the pipeline. This blocks the soak only if suspend is likely in that period.
+3. **Shared `.venv`.** Give the daemon its own virtual environment.
+4. **Redirected logs.** Archive `daemon.out.log` and `daemon.err.log` at deploy (S2). Long term, rely on the
+   rotating `daemon.log`.
