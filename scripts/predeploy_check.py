@@ -58,6 +58,7 @@ def main(argv=None) -> int:
     ap.add_argument("--daemon-log", type=Path)
     ap.add_argument("--collector-status", type=Path)
     ap.add_argument("--no-rehearse", action="store_true")
+    ap.add_argument("--expect-head", type=int, help="required migration head of the target code (6 for this deploy)")
     a = ap.parse_args(argv)
     if not a.db.exists():
         print(f"database not found: {a.db}")
@@ -68,18 +69,16 @@ def main(argv=None) -> int:
            "live": D.git_sha(a.live_worktree), "target": D.git_sha(REPO),
            "db": {"path": str(a.db.resolve()), "bytes": a.db.stat().st_size}}
 
-    # writer state
+    blocking += D.code_guard(REPO, a.expect_head)
+
+    # writer state. A non-empty -wal is normal for a WAL database (SQLite reuses the file without shrinking it, and
+    # a stopped process leaves committed frames there); the online backup reads them. It is recorded, not blocking.
     wal = a.db.with_name(a.db.name + "-wal")
-    rec["writer"] = {"daemon_pid": a.daemon_pid, "daemon_alive": pid_alive(a.daemon_pid) if a.daemon_pid else None,
-                     "wal_bytes": wal.stat().st_size if wal.exists() else 0}
-    if a.phase == "final":
-        if a.daemon_pid is None:
-            blocking.append("final phase needs --daemon-pid to prove the writer is gone")
-        elif rec["writer"]["daemon_alive"]:
-            blocking.append(f"daemon PID {a.daemon_pid} is still running")
-        if rec["writer"]["wal_bytes"]:
-            blocking.append(f"WAL file has {rec['writer']['wal_bytes']} bytes pending (a writer is or was active "
-                            "without a clean checkpoint)")
+    daemons = D.writer_processes()
+    rec["writer"] = {"daemon_pid": a.daemon_pid, "daemon_pid_alive": pid_alive(a.daemon_pid) if a.daemon_pid else None,
+                     "daemon_processes": daemons, "wal_bytes": wal.stat().st_size if wal.exists() else 0}
+    if a.phase == "final" and daemons:
+        blocking.append(f"a daemon process is still running: {daemons}")
 
     conn = D.ro(a.db)
     try:

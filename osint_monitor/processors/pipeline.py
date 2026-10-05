@@ -310,8 +310,7 @@ def _run_single_collector(collector: BaseCollector, failures: list[str] | None =
                     item.source_type = collector.source_type
         except Exception as e:
             exception = collector_status.redact(f"{type(e).__name__}: {e}")
-            logger.error("Collector %s failed: %s", collector.name, exception)
-            logger.debug("Collector %s traceback", collector.name, exc_info=True)
+            logger.error("Collector %s failed: %s", collector.name, exception, exc_info=True)
             if failures is not None:
                 failures.append(f"{collector.name}: {exception}")
             items = []
@@ -642,7 +641,8 @@ def run_post_processing(session: Session, quiet: bool = False, offline: bool = F
         correlations = fuse_signals(session, hours_back=24)
         gaps = detect_signal_gaps(session, hours_back=24)
         stats["fusion_correlations"] = len(correlations)
-        stats["signal_gaps"] = len(gaps)
+        stats["signal_gaps"] = sum(1 for g in gaps if not g.get("operational"))
+        stats["collection_outages"] = sum(1 for g in gaps if g.get("operational"))
         for corr in correlations[:5]:
             _print(f"  [{corr['confidence']:.0%}] {corr['pattern']}: {', '.join(corr['modalities_matched'])} ({corr['time_bucket']})")
         for gap in gaps:

@@ -311,3 +311,57 @@ def test_daemon_log_rotates_and_redacts_secrets(tmp_path):
     written = "".join(p.read_text(encoding="utf-8") for p in tmp_path.glob("daemon.log*"))
     assert (tmp_path / "daemon.log.1").exists()
     assert "SECRET" not in written and "api_key=[REDACTED]" in written
+
+
+# --- review fixes ------------------------------------------------------------------------------------------------------
+
+def test_missed_run_gaps_are_recorded_in_utc():
+    from datetime import timezone
+    from types import SimpleNamespace
+
+    from osint_monitor.core import scheduler
+    cest = timezone(timedelta(hours=2))
+    scheduled = datetime.now(cest) - timedelta(hours=1)
+    scheduler._on_job_missed(SimpleNamespace(scheduled_run_time=scheduled, job_id="tier_warm"))
+    [gap] = G.read_gap_log()
+    assert abs((gap["from"] - scheduled.astimezone(timezone.utc).replace(tzinfo=None)).total_seconds()) < 1
+    assert abs((gap["to"] - datetime.utcnow()).total_seconds()) < 5
+
+
+def test_unparseable_timestamps_never_crash_status_or_alerting():
+    S.STATUS_FILE.write_text(json.dumps({"schema": 2, "collectors": {"k": {
+        "key": "k", "name": "Wire", "state": "ok", "last_run": "x", "last_success": "not-a-time",
+        "last_failure": "also-bad", "tier": "warm"}}}), encoding="utf-8")
+    entry = S.read()["k"]
+    assert S.health_of(entry, T0) == "stale" and S.outage_since(entry, T0) is True
+    assert "1 stale" in S.format_status(configured=[])[0]
+    from osint_monitor.alerting import engine as E
+    assert E._operational_silence("Wire", T0, T0 + timedelta(hours=30)) is None
+
+
+def test_tracebacks_are_redacted_in_logs(tmp_path):
+    import logging
+
+    from osint_monitor import cli
+    handler = cli.add_daemon_log_file(tmp_path / "d.log")
+    try:
+        try:
+            raise ConnectionError("GET https://api.x/feed?token=TOPSECRET failed")
+        except ConnectionError:
+            logging.getLogger("osint_monitor.test_tb").error("collector failed", exc_info=True)
+        handler.flush()
+    finally:
+        logging.getLogger().removeHandler(handler)
+        handler.close()
+    text = (tmp_path / "d.log").read_text(encoding="utf-8")
+    assert "Traceback" in text and "TOPSECRET" not in text and "token=[REDACTED]" in text
+
+
+def test_pipeline_counts_analytic_gaps_and_outages_separately(session, monkeypatch):
+    from osint_monitor.analysis import fusion
+    from osint_monitor.processors import pipeline
+    monkeypatch.setattr(fusion, "modality_coverage", lambda rows=None: {"narrative": True})
+    monkeypatch.setattr(fusion, "fuse_signals", lambda s, hours_back=24: [])
+    _strike_news(session)
+    stats = pipeline.run_post_processing(session, quiet=True, offline=True)
+    assert stats["collection_outages"] == 4 and stats["signal_gaps"] == 0

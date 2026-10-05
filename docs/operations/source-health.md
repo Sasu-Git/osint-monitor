@@ -123,3 +123,21 @@ coverage 39.8% (38.2 of 96 h, 229 runs), with the same 19 gaps measured by hand 
 **Redaction.** Every log record (console and `daemon.log`) and every stored error is redacted (`status.redact`).
 That covers URL query tokens (`api_key`, `token`, …), `key=value` secrets, `Authorization` and other auth headers,
 and `user:pass@` in URLs.
+
+## Known limitations (from the 2026-10-05 code review)
+
+- **Thread capture.** Warnings are captured only from the collector's own thread. A collector that logs from
+  worker threads (the DNS monitor's per-host lookups) can report `ok` while some lookups failed.
+- **Credential-gated collectors.** Collectors that are not built without a credential (Space-Track, RIPE Atlas)
+  never appear in health. They are neither `disabled` nor `not_run`. `main.py inspect sources` lists their gates.
+- **Removed or re-pointed collectors.** A collector removed from config, or an RSS feed whose URL changed, keeps
+  its old entry. That entry turns `stale` and stays listed until the entry is deleted from the file.
+- **Health files are per worktree.** They live under the code's `data/logs`. A `serve` or `collect` run from
+  another checkout sees different (usually empty) health, so it treats every modality as uncollected and reports
+  no analytic signal gaps. Run operational tools from the daemon worktree.
+- **Malformed status file.** Until the next collector run rewrites it, coverage reads as empty, and analytic
+  signal gaps are withheld. This fails safe: no false findings.
+- **Silence-break threshold.** A source's resumption is alerted unless recorded gaps cover at least half of its
+  silence, or its collector failed during it. Shorter host sleeps inside a long genuine silence still alert.
+- **Concurrent writers.** Two processes writing status at once (the daemon and a one-shot `collect`) can lose one
+  update. They cannot corrupt the file, because each writer uses a unique temporary file and an atomic rename.

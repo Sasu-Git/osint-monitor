@@ -26,6 +26,7 @@ import json
 import logging
 import os
 import re
+import tempfile
 import threading
 from datetime import datetime
 from pathlib import Path
@@ -143,11 +144,30 @@ def by_name(data: dict, name: str) -> dict | None:
     return next((e for e in data.values() if e.get("name") == name), None)
 
 
-def _write(path: Path, entries: dict) -> None:
+def atomic_write_json(path: Path, obj) -> None:
+    """Write via a unique temp file in the same directory, then rename: concurrent writers (the daemon and a
+    one-shot ``collect``) can lose an update but never interleave into a corrupt file."""
     path.parent.mkdir(parents=True, exist_ok=True)
-    tmp = path.with_suffix(".tmp")
-    tmp.write_text(json.dumps({"schema": SCHEMA, "collectors": entries}, indent=1, sort_keys=True), encoding="utf-8")
-    os.replace(tmp, path)
+    fd, tmp = tempfile.mkstemp(dir=path.parent, prefix=f".{path.stem}.", suffix=".tmp")
+    try:
+        with os.fdopen(fd, "w", encoding="utf-8") as f:
+            json.dump(obj, f, indent=1, sort_keys=True)
+        os.replace(tmp, path)
+    finally:
+        if os.path.exists(tmp):
+            os.remove(tmp)
+
+
+def parse_time(value) -> datetime | None:
+    """An ISO timestamp from a status entry, or None when missing or unparseable (never raises)."""
+    try:
+        return datetime.fromisoformat(value) if value else None
+    except (TypeError, ValueError):
+        return None
+
+
+def _write(path: Path, entries: dict) -> None:
+    atomic_write_json(path, {"schema": SCHEMA, "collectors": entries})
 
 
 def _append_event(event: dict, path: Path | None = None) -> None:
@@ -181,9 +201,10 @@ def record(name: str, items: int, errors: list[str], exception: str | None, dura
             corrupt = path.with_name(f"{path.stem}.corrupt-{datetime.utcnow():%Y%m%d-%H%M%S}{path.suffix}")
             try:
                 os.replace(path, corrupt)
-            except OSError:
-                pass
-            logger.error("Collector status file was malformed (%s); moved to %s and restarted", e, corrupt.name)
+                logger.error("Collector status file was malformed (%s); moved to %s and restarted", e, corrupt.name)
+            except OSError as move_error:
+                logger.error("Collector status file was malformed (%s) and could not be set aside (%s); "
+                             "it is overwritten", e, move_error)
             data = {}
         entry = data.get(key)
         if entry is None:                                      # adopt a legacy (name-keyed) entry once
@@ -245,9 +266,8 @@ def health_of(entry: dict | None, now: datetime | None = None, *, disabled: bool
     if entry.get("state") == "failed":
         return "failed"
     now = now or datetime.utcnow()
-    last_ok = entry.get("last_success")
-    if not last_ok or (now - datetime.fromisoformat(last_ok)).total_seconds() > freshness_window(entry.get("tier"),
-                                                                                                 intervals):
+    last_ok = parse_time(entry.get("last_success"))           # unparseable counts as no success
+    if not last_ok or (now - last_ok).total_seconds() > freshness_window(entry.get("tier"), intervals):
         return "stale"
     return "partial" if entry.get("state") == "partial" else "healthy"
 
@@ -348,7 +368,7 @@ def outage_since(entry: dict | None, since: datetime) -> bool:
     ``since``, has no recorded success since then, or has no record at all."""
     if not entry:
         return True
-    last_fail, last_ok = entry.get("last_failure"), entry.get("last_success")
-    if last_fail and datetime.fromisoformat(last_fail) >= since:
+    last_fail, last_ok = parse_time(entry.get("last_failure")), parse_time(entry.get("last_success"))
+    if last_fail and last_fail >= since:
         return True
-    return not last_ok or datetime.fromisoformat(last_ok) < since
+    return not last_ok or last_ok < since

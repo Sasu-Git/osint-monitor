@@ -23,7 +23,7 @@ import json
 import logging
 import threading
 from collections import deque
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from apscheduler.events import EVENT_JOB_MISSED
@@ -125,8 +125,9 @@ def _on_job_missed(event) -> None:
     measured by check_tier_gap on the tier's next tick."""
     late = datetime.now(event.scheduled_run_time.tzinfo) - event.scheduled_run_time
     if late.total_seconds() > GAP_MIN_SECONDS:
-        record_gap("missed_run", event.job_id, event.scheduled_run_time.replace(tzinfo=None),
-                   datetime.now(event.scheduled_run_time.tzinfo).replace(tzinfo=None))
+        # every gap record is naive UTC (scheduled_run_time is aware, in the scheduler's local zone)
+        record_gap("missed_run", event.job_id,
+                   event.scheduled_run_time.astimezone(timezone.utc).replace(tzinfo=None), datetime.utcnow())
 
 
 def is_paused() -> bool:

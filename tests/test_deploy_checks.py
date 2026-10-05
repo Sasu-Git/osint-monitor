@@ -90,13 +90,60 @@ def test_structural_checks_catch_invented_timestamps_duplicates_and_lost_rows(tm
             "no duplicate (development, item) memberships", "expected unique constraints (by columns)"} <= failed
 
 
-def test_final_phase_refuses_while_the_writer_is_alive(tmp_path, capsys):
+def test_final_phase_refuses_while_a_daemon_process_exists_but_not_for_a_nonempty_wal(tmp_path, capsys, monkeypatch):
+    db = _legacy_db(tmp_path / "live.db")
+    (tmp_path / "live.db-wal").write_bytes(b"\0" * 4096)        # normal for WAL databases: never blocking
+    args = ["--db", str(db), "--live-worktree", str(tmp_path), "--out", str(tmp_path / "o"), "--phase", "final",
+            "--daemon-pid", "4242", "--no-rehearse"]
+    monkeypatch.setattr(D, "git_sha", lambda path: {"path": str(path), "sha": "x", "branch": "b", "dirty": False})
+    monkeypatch.setattr(D, "writer_processes", lambda: ['"python.exe" "C:\\w\\main.py" daemon'])
+    assert predeploy_check.main(args) == 1 and "daemon process is still running" in capsys.readouterr().out
+    monkeypatch.setattr(D, "writer_processes", lambda: [])
+    assert predeploy_check.main(args) == 0
+    rec = json.loads((tmp_path / "o" / "predeploy-final.json").read_text(encoding="utf-8"))
+    assert rec["writer"]["wal_bytes"] == 4096 and not rec["blocking"]
+
+
+def test_the_backup_is_one_self_contained_file(tmp_path):
+    db = _legacy_db(tmp_path / "live.db")
+    conn = sqlite3.connect(db)
+    conn.execute("PRAGMA journal_mode=WAL")                         # the live daemon DB is in WAL mode
+    conn.close()
+    bk = D.backup(db, tmp_path / "b.db")
+    assert sqlite3.connect(bk["path"]).execute("PRAGMA journal_mode").fetchone()[0] == "delete"
+    assert not Path(bk["path"] + "-wal").exists()
+
+
+def test_scripts_refuse_the_wrong_code_tree_or_migration_head(tmp_path, capsys):
+    repo = Path(__file__).resolve().parents[1]
+    assert D.code_guard(repo, D.expected_schema()[3]) == []
+    assert any("imported from" in p for p in D.code_guard(tmp_path, None))       # e.g. the editable install
+    assert any("expected 99" in p for p in D.code_guard(repo, 99))
     db = _legacy_db(tmp_path / "live.db")
     code = predeploy_check.main(["--db", str(db), "--live-worktree", str(tmp_path), "--out", str(tmp_path / "o"),
-                                 "--phase", "final", "--daemon-pid", str(os.getpid()), "--no-rehearse"])
-    assert code == 1 and "is still running" in capsys.readouterr().out
-    rec = json.loads((tmp_path / "o" / "predeploy-final.json").read_text(encoding="utf-8"))
-    assert rec["writer"]["daemon_alive"] is True and rec["blocking"]
+                                 "--no-rehearse", "--expect-head", "99"])
+    assert code == 1 and "expected 99" in capsys.readouterr().out
+    assert postdeploy_check.main(["--db", str(db), "--pre", "unused.json", "--expect-head", "99"]) == 1
+
+
+def test_single_source_check_exempts_structured_record_groups(tmp_path):
+    db = _legacy_db(tmp_path / "live.db")
+    r = D.rehearse_migration(db, tmp_path / "rehearsal")
+    copy = Path(r["copy"])
+    pre = {"live_state": r["before"], "target": {"sha": None}}
+    engine = create_engine(f"sqlite:///{copy.as_posix()}")
+    with engine.begin() as conn:
+        _insert(conn, "sources", id=3, name="USGS", type="seismic", url="u")
+        for item, src in ((10, 3), (11, 1)):
+            _insert(conn, "raw_items", id=item, source_id=src, title="t", content_hash=f"x{item}")
+        for ev, item in ((10, 10), (11, 11)):                      # one structured, one narrative single-source
+            _insert(conn, "events", id=ev, summary="e", first_reported_at="2026-10-05 01:00:00")
+            _insert(conn, "event_items", id=100 + ev, event_id=ev, item_id=item)
+    engine.dispose()
+    checks = postdeploy_check.runtime_checks(D.ro(copy), pre, __import__("datetime").datetime(2026, 10, 5),
+                                             None, 3, 5.0)
+    [single] = [c for c in checks if "single-source" in c["check"]]
+    assert not single["ok"] and "[11]" in single["detail"]          # the narrative one only
 
 
 def test_postdeploy_structure_passes_on_a_rehearsed_copy_and_reads_only(tmp_path, capsys):

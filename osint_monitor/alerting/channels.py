@@ -49,10 +49,8 @@ def record_delivery(channel: str, ok: bool, error: str | None = None, now: datet
             e["consecutive_failures"] = int(e.get("consecutive_failures") or 0) + 1
         data[channel] = e
         try:
-            path.parent.mkdir(parents=True, exist_ok=True)
-            tmp = path.with_suffix(".tmp")
-            tmp.write_text(json.dumps(data, indent=1, sort_keys=True), encoding="utf-8")
-            os.replace(tmp, path)
+            from osint_monitor.collectors.status import atomic_write_json
+            atomic_write_json(path, data)
         except OSError as exc:
             logger.error(f"Alert delivery status not written: {exc}")
     return e

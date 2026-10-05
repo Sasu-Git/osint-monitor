@@ -57,12 +57,17 @@ def runtime_checks(conn, pre: dict, since: datetime, logs_dir: Path | None, max_
                        (cutoff,)).fetchone()
     check("new memberships carry added_at / added_run_id", (mem[1] or 0) == 0,
           f"{mem[0]} new memberships, {mem[1] or 0} unstamped")
+    from osint_monitor.analysis.fusion import SOURCE_MODALITY
+    narrative = sorted(t for t, m in SOURCE_MODALITY.items() if m == "narrative")
+    marks = ",".join("?" * len(narrative))
+    # structured record groups (sensor / record identity) are exempt by design (development_identity, rule 4)
     single = conn.execute(
-        "SELECT e.id, e.summary FROM events e JOIN event_items ei ON ei.event_id = e.id JOIN raw_items r ON r.id = ei.item_id "
-        "WHERE e.id > ? GROUP BY e.id HAVING COUNT(DISTINCT r.source_id) < 2",
-        (pre["live_state"]["max_ids"]["events"] or 0,)).fetchall()
-    check("new Developments have >= 2 sources (single-source stays below the Development layer)", not single,
-          f"{len(single)} single-source: {[x[0] for x in single[:10]]}")
+        "SELECT e.id FROM events e JOIN event_items ei ON ei.event_id = e.id JOIN raw_items r ON r.id = ei.item_id "
+        "JOIN sources s ON s.id = r.source_id WHERE e.id > ? GROUP BY e.id "
+        f"HAVING COUNT(DISTINCT r.source_id) < 2 AND SUM(s.type NOT IN ({marks})) = 0",
+        ((pre["live_state"]["max_ids"]["events"] or 0), *narrative)).fetchall()
+    check("new narrative Developments have >= 2 sources (single-source stays below the Development layer)",
+          not single, f"{len(single)} single-source: {[x[0] for x in single[:10]]}")
     pre_slugs = set(pre["live_state"].get("situation_slugs") or [])
     now_slugs = {r[0] for r in conn.execute("SELECT slug FROM situations")}
     new_slugs = sorted(now_slugs - pre_slugs)
@@ -128,7 +133,13 @@ def main(argv=None) -> int:
     ap.add_argument("--out", type=Path)
     ap.add_argument("--max-new-situations", type=int, default=3)
     ap.add_argument("--explosion-factor", type=float, default=5.0)
+    ap.add_argument("--expect-head", type=int, help="required migration head (6 for this deploy)")
     a = ap.parse_args(argv)
+    problems = D.code_guard(Path(__file__).resolve().parents[1], a.expect_head)
+    if problems:
+        for p in problems:
+            print(f"BLOCKING: {p}")
+        return 1
     pre = json.loads(a.pre.read_text(encoding="utf-8"))
     conn = D.ro(a.db)
     try:

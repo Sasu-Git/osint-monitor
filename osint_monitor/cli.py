@@ -292,6 +292,8 @@ class RedactSecrets(logging.Filter):
         clean = redact(message)
         if clean != message:
             record.msg, record.args = clean, ()
+        if record.exc_info:          # tracebacks carry URLs too; another handler may already have cached the text
+            record.exc_text = redact(record.exc_text or logging.Formatter().formatException(record.exc_info))
         return True
 
 

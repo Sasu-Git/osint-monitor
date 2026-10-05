@@ -433,13 +433,17 @@ def _operational_silence(source_name: str, since: datetime, until: datetime) -> 
     """Why a source's silence was (at least mostly) our own outage, or None when we were collecting it.
     It is operational when recorded collection gaps cover at least half of it, or when the source's collector
     failed during it. Its resumption is then not a finding."""
-    from osint_monitor.core.gaps import overlap_seconds, read_gap_log
-    silent = (until - since).total_seconds()
-    covered = overlap_seconds(read_gap_log(), since, until)
-    if silent > 0 and covered >= 0.5 * silent:
-        return f"collection gaps cover {covered / 3600:.0f}h of the {silent / 3600:.0f}h silence"
-    from osint_monitor.collectors import status as collector_status
-    entry = collector_status.by_name(collector_status.load(), source_name)
-    if entry is not None and entry.get("last_failure") and datetime.fromisoformat(entry["last_failure"]) >= since:
-        return f"its collector failed during the silence (last failure {entry['last_failure']})"
+    try:
+        from osint_monitor.collectors import status as collector_status
+        from osint_monitor.core.gaps import overlap_seconds, read_gap_log
+        silent = (until - since).total_seconds()
+        covered = overlap_seconds(read_gap_log(), since, until)
+        if silent > 0 and covered >= 0.5 * silent:
+            return f"collection gaps cover {covered / 3600:.0f}h of the {silent / 3600:.0f}h silence"
+        entry = collector_status.by_name(collector_status.load(), source_name)
+        last_fail = collector_status.parse_time((entry or {}).get("last_failure"))
+        if last_fail and last_fail >= since:
+            return f"its collector failed during the silence (last failure {entry['last_failure']})"
+    except Exception as e:                    # operational evidence unreadable: alert as before, say why
+        logger.warning(f"Silence-break check could not read collection health ({e}); alerting as usual")
     return None

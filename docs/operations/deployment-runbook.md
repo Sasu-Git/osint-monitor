@@ -56,7 +56,8 @@ $PY     = "$REPO\.venv\Scripts\python.exe"
 $DB     = "$REPO\data\eval\window-2026-09-25.db"
 $TARGET = "<target sha from D1>"
 $OUT    = "$REPO\data\deploy\$(Get-Date -Format yyyyMMdd-HHmm)"   # records + backups (untracked: never commit)
-$OLDPID = 42048
+$OLDPID = 42048     # the venv launcher; the writer is its child (base python.exe) -- always stop the tree
+$URL    = "sqlite:///$($DB -replace '\\','/')"
 New-Item -ItemType Directory -Force $OUT | Out-Null
 ```
 
@@ -86,10 +87,16 @@ copy.
 ```powershell
 $env:PYTHONPATH = "$REPO-deploycheck"
 & $PY "$REPO-deploycheck\scripts\predeploy_check.py" --db $DB --live-worktree $DAEMON --out $OUT `
-    --phase pre --daemon-pid $OLDPID --daemon-log "$DAEMON\data\logs\daemon.err.log"
+    --phase pre --expect-head 6 --daemon-pid $OLDPID --daemon-log "$DAEMON\data\logs\daemon.err.log"
 ```
 
 Proceed only on `PRE-DEPLOY OK` (exit 0).
+
+**Two guards are built in.**
+- **Wrong code tree.** The scripts refuse to run if `osint_monitor` is imported from anywhere other than their own
+  worktree. The shared venv has an editable install of the main checkout, so without `PYTHONPATH` a script would
+  silently check against the wrong tree and the wrong migration head.
+- **Wrong head.** `--expect-head 6` refuses a target whose migration head is not 6.
 
 **P3. Capture the operational state of the old daemon.** It has no collector-status file and no tick file, so
 the log is the record.
@@ -103,55 +110,61 @@ Get-Content "$DAEMON\data\logs\daemon.err.log" -Tail 200 > "$OUT\old-daemon-err-
 
 ## X. Stop
 
-**X1. Stop the daemon cleanly.** It was started detached, so there is no console to send Ctrl+C to.
+**X1. Stop the daemon.** It was started detached, so there is no console to send Ctrl+C to, and there is no
+clean-shutdown command.
 
-1. Pause first: `& $PY "$DAEMON\main.py" pause`. Every tier then skips its next tick.
-2. Wait until the current write finishes: the log shows no `Running job` / `Job ... executed` lines for two
-   minutes.
-3. Then stop the process:
+1. **Pause.** `& $PY "$DAEMON\main.py" pause`. Every tier then skips its next tick.
+2. **Wait for the write in progress.** The last `Running job` line in the log must be followed by its
+   `executed successfully` line, and no new job may start for two minutes.
+3. **Terminate the process tree.** `.venv\Scripts\python.exe` (PID `$OLDPID`) is only a launcher. The daemon is
+   its child process (`C:\Python314\python.exe`, PID 29172 on 2026-10-05). `Stop-Process -Id $OLDPID` alone
+   leaves the writer running: kill the tree.
+
+Hard termination is safe for the data. SQLite transactions are atomic, so an interrupted write rolls back on the
+next open. Pausing first just avoids interrupting one.
 
 ```powershell
 & $PY "$DAEMON\main.py" pause
-Start-Sleep 150; Get-Content "$DAEMON\data\logs\daemon.err.log" -Tail 5
-Stop-Process -Id $OLDPID
+Start-Sleep 150; Get-Content "$DAEMON\data\logs\daemon.err.log" -Tail 8
+taskkill /PID $OLDPID /T /F
 ```
 
-**X2. Verify no writer remains.**
+**X2. Verify no writer remains.** A non-empty `-wal` file is normal and is not checked here. SQLite reuses the WAL
+file without shrinking it, and committed frames in it are read by the online backup.
 
 ```powershell
-Get-Process -Id $OLDPID -ErrorAction SilentlyContinue      # must return nothing
-Get-CimInstance Win32_Process -Filter "Name='python.exe'" | Where-Object CommandLine -match "main.py daemon"   # nothing
-Get-Item "$DB-wal" -ErrorAction SilentlyContinue | Select-Object Length                          # absent or 0
+Get-CimInstance Win32_Process -Filter "Name='python.exe'" | Where-Object CommandLine -match 'main\.py"?\s+daemon'
+# must return nothing (it matches both the launcher and the child)
 ```
 
-**X3. Final authoritative backup and record.** `--phase final` refuses while the PID is alive or the WAL holds
-data. **This backup is the one rollback restores.** The gap between it and the restart is recorded as a
-collection gap.
+**X3. Final authoritative backup and record.** `--phase final` refuses while any `main.py daemon` process exists,
+in any worktree. **This backup is the one rollback restores.** It is written as a single self-contained file, with
+no `-wal`. The gap between it and the restart is recorded as a collection gap.
 
 ```powershell
 & $PY "$REPO-deploycheck\scripts\predeploy_check.py" --db $DB --live-worktree $DAEMON --out $OUT `
-    --phase final --daemon-pid $OLDPID
+    --phase final --expect-head 6 --daemon-pid $OLDPID
 (Get-Date).ToUniversalTime().ToString("s") > "$OUT\stopped-at-utc.txt"
 ```
 
 ## M. Migration
 
-**M1. Apply the chain** with the target code, through migration 5 or 6 (D1).
+**M1. Apply the chain** with the target code, through migration 6 (D1).
 - `run_migrations` takes its own pre-migration backup under `data\backups`.
 - It applies each migration in a transaction and records the version after each.
 
 ```powershell
-git -C $DAEMON fetch $REPO
+git -C $DAEMON status --porcelain --untracked-files=no   # must be empty (worktrees share the repository: no fetch)
 git -C $DAEMON checkout --detach $TARGET
 git -C $DAEMON rev-parse HEAD                                   # = $TARGET
-$env:PYTHONPATH = $DAEMON; $env:OSINT_DB_URL = "sqlite:///$($DB -replace '\\','/')"
+$env:PYTHONPATH = $DAEMON; $env:OSINT_DB_URL = $URL
 & $PY "$DAEMON\main.py" migrate
 ```
 
 **M2. Verify the structure.**
 
 ```powershell
-& $PY "$DAEMON\scripts\postdeploy_check.py" --db $DB --pre "$OUT\predeploy-final.json" --out $OUT
+& $PY "$DAEMON\scripts\postdeploy_check.py" --db $DB --pre "$OUT\predeploy-final.json" --expect-head 6 --out $OUT
 ```
 
 It checks:
@@ -174,7 +187,8 @@ It checks:
 It is launched through WMI so that it outlives the terminal, like the old one.
 
 ```powershell
-$cmd = "cmd /c cd /d $DAEMON && set OSINT_DB_URL=sqlite:///$($DB -replace '\\','/') && " +
+# set "VAR=value": without the quotes cmd keeps the space before && in the value, giving a different DB path
+$cmd = "cmd /c cd /d $DAEMON && set `"OSINT_DB_URL=$URL`" && " +
        "`"$PY`" main.py daemon >> data\logs\daemon.out.log 2>> data\logs\daemon.err.log"
 $r = Invoke-CimMethod Win32_Process -MethodName Create -Arguments @{ CommandLine = $cmd }
 $r.ProcessId                                                         # the cmd wrapper PID
@@ -204,7 +218,7 @@ $r.ProcessId                                                         # the cmd w
 **C1.**
 
 ```powershell
-& $PY "$DAEMON\scripts\postdeploy_check.py" --db $DB --pre "$OUT\predeploy-final.json" --runtime `
+& $PY "$DAEMON\scripts\postdeploy_check.py" --db $DB --pre "$OUT\predeploy-final.json" --runtime --expect-head 6 `
     --since (Get-Content "$OUT\started-at-utc.txt") --logs-dir "$DAEMON\data\logs" --out $OUT
 & $PY "$DAEMON\main.py" status > "$OUT\status-after-start.txt"
 ```
@@ -217,7 +231,7 @@ $r.ProcessId                                                         # the cmd w
 | New items carry run provenance | every `raw_items.id` > pre-max has `ingested_run_id` | R5 |
 | New memberships carry `added_at` / `added_run_id` | all memberships with id > pre-max | R5 |
 | No duplicate memberships | 0 | R6 |
-| Single-source stays below the Development layer | every new Development has ≥ 2 sources | R8 |
+| Single-source stays below the Development layer | every new narrative Development has ≥ 2 sources (structured record groups are exempt by design) | R8 |
 | Collector failures are operational status | `collector_status.json` schema 2 is valid. Failed collectors appear in `status`, not as alerts. Any `signal_gap_opened` / `source_silence_break` alert since the start is reviewed (WARN) | R4 / R7 |
 | Alerts generated and delivered | `alert_delivery.json` shows no failing channel | R9 |
 | No unexpected Situation drift | ≤ 3 new Situation slugs (`--max-new-situations`) and none disappeared | R8 |
@@ -253,13 +267,15 @@ back fully.
 ```powershell
 # R-1  stop the new daemon (pause, wait for the write, stop) and verify no writer, as in X1-X2
 & $PY "$DAEMON\main.py" pause; Start-Sleep 150
-Get-CimInstance Win32_Process -Filter "Name='python.exe'" | Where-Object CommandLine -match "main.py daemon" |
-    ForEach-Object { Stop-Process -Id $_.ProcessId }
+Get-CimInstance Win32_Process -Filter "Name='python.exe'" | Where-Object CommandLine -match 'main\.py"?\s+daemon' |
+    ForEach-Object { taskkill /PID $_.ProcessId /T /F }
 
 # R-2  restore the verified final backup (keep the failed state for diagnosis)
 $final = (Get-Content "$OUT\predeploy-final.json" | ConvertFrom-Json).backup
-Move-Item $DB "$OUT\failed-deploy.db"; Remove-Item "$DB-wal","$DB-shm" -ErrorAction SilentlyContinue
-Copy-Item $final.path $DB
+Move-Item $DB "$OUT\failed-deploy.db"                       # with its -wal: committed frames of the failed state
+Move-Item "$DB-wal" "$OUT\failed-deploy.db-wal" -ErrorAction SilentlyContinue
+Remove-Item "$DB-shm" -ErrorAction SilentlyContinue
+Copy-Item $final.path $DB                                       # self-contained (journal_mode=DELETE)
 (Get-FileHash $DB -Algorithm SHA256).Hash.ToLower() -eq $final.sha256     # must be True
 
 # R-3  restore the prior runtime: code back to a9edd18. The schema-2 status files are moved aside, because the
@@ -271,7 +287,8 @@ Move-Item "$DAEMON\data\logs\collector_status.json","$DAEMON\data\logs\collector
           -ErrorAction SilentlyContinue
 
 # R-4  restart the prior daemon exactly as before, then clear the pause flag
-$cmd = "cmd /c cd /d $DAEMON && set OSINT_DB_URL=sqlite:///$($DB -replace '\\','/') && " +
+# set "VAR=value": without the quotes cmd keeps the space before && in the value, giving a different DB path
+$cmd = "cmd /c cd /d $DAEMON && set `"OSINT_DB_URL=$URL`" && " +
        "`"$PY`" main.py daemon >> data\logs\daemon.out.log 2>> data\logs\daemon.err.log"
 Invoke-CimMethod Win32_Process -MethodName Create -Arguments @{ CommandLine = $cmd }
 Remove-Item "$DAEMON\data\pause" -ErrorAction SilentlyContinue
@@ -279,8 +296,9 @@ Remove-Item "$DAEMON\data\pause" -ErrorAction SilentlyContinue
 
 **R-5. Verify the old state.**
 - The schema version is 3.
-- The row counts equal `predeploy-final.json` `live_state.counts`. Check with `scripts/predeploy_check.py
-  --phase pre --no-rehearse` from `$REPO-deploycheck`, which reads only.
+- The row counts equal `predeploy-final.json` `live_state.counts`. To check, run `scripts/predeploy_check.py
+  --phase pre --no-rehearse` from `$REPO-deploycheck` (with its `PYTHONPATH`). It only reads the database; it
+  writes nothing but another backup under `--out`.
 - `daemon.err.log` shows `Running job "Warm tier` lines again within 10 minutes.
 - The SHA is `a9edd18`.
 
@@ -312,8 +330,14 @@ file, no `daemon.log`. That is what an unstarted or broken daemon looks like.
   `main.py status` and `main.py gaps` now make it visible.
 - **Unrecoverable window.** Items published during the stop → final backup → restart window, and rolled off
   their feeds before the restart, are not recoverable.
-- **Shared venv.** The daemon and the main checkout share `.venv`. Installing packages in the main checkout during
-  the soak changes the daemon's environment.
+- **Shared venv.**
+  - The daemon and the main checkout share `.venv`. Installing packages in the main checkout during the soak
+    changes the daemon's environment.
+  - The venv's editable install points at the main checkout. Only `sys.path[0]` (the directory of `main.py`) makes
+    the daemon import its own worktree's code, so tools must run with `PYTHONPATH` set to the daemon worktree.
+    The deploy scripts enforce this.
+  - `.venv\Scripts\python.exe` is a launcher that starts the base interpreter as a child. Process checks and stops
+    must cover both.
 - **Database location.** The live database lives under the main checkout's `data\eval`. Untracked, and easy to
   confuse with evaluation copies. Never run evaluation scripts with `OSINT_DB_URL` pointing at it.
 

@@ -104,6 +104,7 @@ def backup(source: Path, dest: Path) -> dict:
     out = sqlite3.connect(dest)
     try:
         src.backup(out)
+        out.execute("PRAGMA journal_mode=DELETE")     # one self-contained file: no -wal to forget on restore
     finally:
         out.close()
         src.close()
@@ -231,6 +232,38 @@ def rehearse_migration(backup_path: Path, workdir: Path | None = None) -> dict:
     return {"copy": str(copy), "from_version": before["schema_version"], "to_version": version, "error": error,
             "seconds": round((datetime.utcnow() - started).total_seconds(), 1), "before": before, "after": after,
             "checks": checks, "ok": error is None and all(c["ok"] for c in checks)}
+
+
+def code_guard(repo: Path, expect_head: int | None) -> list[str]:
+    """Blocking problems with the code the checks import. The shared venv has an editable install of the main
+    checkout, so a script run without PYTHONPATH can silently verify against the wrong tree (and the wrong
+    migration head). Returns [] when osint_monitor resolves inside ``repo`` and its head is ``expect_head``."""
+    import osint_monitor
+    from osint_monitor.core.migrations import head_version
+    problems = []
+    loaded = Path(osint_monitor.__file__).resolve()
+    if Path(repo).resolve() not in loaded.parents:
+        problems.append(f"osint_monitor is imported from {loaded.parent}, not from {Path(repo).resolve()}: "
+                        f"set PYTHONPATH to the target worktree")
+    if expect_head is not None and head_version() != expect_head:
+        problems.append(f"target code migration head is {head_version()}, expected {expect_head}")
+    return problems
+
+
+def writer_processes() -> list[str]:
+    """Command lines of running daemon processes (``main.py daemon``), any worktree. Windows: CIM; else ps."""
+    import os
+    if os.name == "nt":
+        cmd = ["powershell", "-NoProfile", "-Command",
+               "Get-CimInstance Win32_Process -Filter \"Name='python.exe'\" | "
+               "Where-Object { $_.CommandLine -match 'main\\.py\"?\\s+daemon' } | ForEach-Object { $_.CommandLine }"]
+    else:
+        cmd = ["sh", "-c", "ps -eo args | grep -E 'main\\.py\"?[[:space:]]+daemon' | grep -v grep"]
+    try:
+        out = subprocess.run(cmd, capture_output=True, text=True, timeout=30).stdout
+    except (OSError, subprocess.SubprocessError) as e:
+        return [f"(process scan failed: {e})"]
+    return [line.strip() for line in out.splitlines() if line.strip()]
 
 
 def print_checks(checks: list[dict]) -> None:
