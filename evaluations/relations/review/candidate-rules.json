@@ -1,0 +1,446 @@
+{
+ "R001": [
+  "neg_same_place: UK"
+ ],
+ "R002": [
+  "cue: follow_up"
+ ],
+ "R003": [
+  "lifecycle: visit",
+  "neg_broad_pair: America-China"
+ ],
+ "R004": [
+  "owner_note: H015",
+  "owner_note: H020"
+ ],
+ "R005": [
+  "neg_chrono_adjacent: 2.0 h"
+ ],
+ "R006": [
+  "storyline_mates: unga-81"
+ ],
+ "R007": [
+  "neg_broad_pair: America-China"
+ ],
+ "R008": [
+  "owner_note: A006"
+ ],
+ "R009": [
+  "neg_same_actors: harry,meghan"
+ ],
+ "R010": [
+  "lifecycle: attack"
+ ],
+ "R011": [
+  "neg_same_actors: china,united states"
+ ],
+ "R012": [
+  "cue: reaction"
+ ],
+ "R013": [
+  "lifecycle: visit"
+ ],
+ "R014": [
+  "neg_broad_pair: America-Iran"
+ ],
+ "R015": [
+  "storyline_mates: ceuta-crisis"
+ ],
+ "R016": [
+  "lifecycle: visit"
+ ],
+ "R017": [
+  "owner_note: H029"
+ ],
+ "R018": [
+  "cue: reaction"
+ ],
+ "R019": [
+  "cue: reaction,follow_up"
+ ],
+ "R020": [
+  "gold_related: UK state-threat briefing on Russia vs Iran airbase denial - distinct"
+ ],
+ "R021": [
+  "neg_chrono_adjacent: 1.0 h"
+ ],
+ "R022": [
+  "lifecycle: attack"
+ ],
+ "R023": [
+  "owner_note: C016"
+ ],
+ "R024": [
+  "cue: reaction"
+ ],
+ "R025": [
+  "situation_holdout_control: Xi-Trump summit drew Chinese C / China backs Cuba, Beijing"
+ ],
+ "R026": [
+  "cue: reaction",
+  "neg_broad_pair: America-China",
+  "owner_note: B008",
+  "storyline_mates: us-china-summit"
+ ],
+ "R027": [
+  "neg_same_actors: all presidential actions,briefings & statements,nominations & appointments"
+ ],
+ "R028": [
+  "lifecycle: visit",
+  "neg_same_crisis: us-china-summit"
+ ],
+ "R029": [
+  "owner_note: A023"
+ ],
+ "R030": [
+  "owner_note: H021"
+ ],
+ "R031": [
+  "lifecycle: calamity"
+ ],
+ "R032": [
+  "neg_same_actors: harry,meghan"
+ ],
+ "R033": [
+  "lifecycle: attack"
+ ],
+ "R034": [
+  "lifecycle: visit"
+ ],
+ "R035": [
+  "owner_note: C032"
+ ],
+ "R036": [
+  "storyline_mates: netanyahu-unga"
+ ],
+ "R037": [
+  "lifecycle: calamity"
+ ],
+ "R038": [
+  "situation_holdout_control: Xi-Trump summit drew Chinese C / Can Europe still compete"
+ ],
+ "R039": [
+  "neg_same_place: US"
+ ],
+ "R040": [
+  "neg_same_crisis: west-bank-settlements"
+ ],
+ "R041": [
+  "neg_chrono_adjacent: 2.6 h"
+ ],
+ "R042": [
+  "cue: follow_up"
+ ],
+ "R043": [
+  "cue: follow_up"
+ ],
+ "R044": [
+  "situation_holdout_control: Can Europe still compete / China backs Cuba, Beijing"
+ ],
+ "R045": [
+  "owner_note: H006",
+  "owner_note: H016",
+  "owner_note: H026"
+ ],
+ "R046": [
+  "lifecycle: visit"
+ ],
+ "R047": [
+  "cue: reaction"
+ ],
+ "R048": [
+  "neg_same_actors: andy burnham,keir starmer,uk labour party"
+ ],
+ "R049": [
+  "storyline_mates: yemen-war"
+ ],
+ "R050": [
+  "neg_same_actors: democrat,united states"
+ ],
+ "R051": [
+  "cue: follow_up"
+ ],
+ "R052": [
+  "lifecycle: attack"
+ ],
+ "R053": [
+  "lifecycle: calamity"
+ ],
+ "R054": [
+  "neg_same_crisis: nepal-tibet-floods"
+ ],
+ "R055": [
+  "storyline_mates: us-china-summit"
+ ],
+ "R056": [
+  "gold_related: both US Treasury actions on Iran; Hezbollah designation is a separate action"
+ ],
+ "R057": [
+  "neg_same_crisis: channel-migration"
+ ],
+ "R058": [
+  "lifecycle: attack"
+ ],
+ "R059": [
+  "storyline_mates: iran-hormuz-deal"
+ ],
+ "R060": [
+  "owner_note: A013"
+ ],
+ "R061": [
+  "neg_chrono_adjacent: 1.1 h"
+ ],
+ "R062": [
+  "neg_same_place: China"
+ ],
+ "R063": [
+  "neg_broad_pair: America-China"
+ ],
+ "R064": [
+  "lifecycle: visit"
+ ],
+ "R065": [
+  "neg_same_actors: european,european union"
+ ],
+ "R066": [
+  "owner_note: C048"
+ ],
+ "R067": [
+  "lifecycle: attack"
+ ],
+ "R068": [
+  "lifecycle: calamity",
+  "owner_note: A032"
+ ],
+ "R069": [
+  "lifecycle: attack"
+ ],
+ "R070": [
+  "gold_related: Meta settlement vs FTC suit against Amazon"
+ ],
+ "R071": [
+  "lifecycle: attack"
+ ],
+ "R072": [
+  "owner_note: H008"
+ ],
+ "R073": [
+  "lifecycle: calamity"
+ ],
+ "R074": [
+  "gold_related: both mention Sudan's army - distinct"
+ ],
+ "R075": [
+  "owner_note: H024",
+  "storyline_mates: nepal-tibet-floods"
+ ],
+ "R076": [
+  "storyline_mates: west-bank-settlements"
+ ],
+ "R077": [
+  "lifecycle: attack"
+ ],
+ "R078": [
+  "gold_related: both Hong Kong police cases - distinct"
+ ],
+ "R079": [
+  "storyline_mates: iran-war"
+ ],
+ "R080": [
+  "lifecycle: attack"
+ ],
+ "R081": [
+  "cue: follow_up",
+  "gold_related: Japan military build-up vs digest mentioning Japan jets to India"
+ ],
+ "R082": [
+  "owner_note: A021",
+  "owner_note: A022",
+  "storyline_mates: drc-ebola"
+ ],
+ "R083": [
+  "lifecycle: visit",
+  "storyline_mates: sco-summit"
+ ],
+ "R084": [
+  "lifecycle: calamity"
+ ],
+ "R085": [
+  "neg_broad_pair: America-China"
+ ],
+ "R086": [
+  "cue: follow_up"
+ ],
+ "R087": [
+  "lifecycle: visit"
+ ],
+ "R088": [
+  "cue: follow_up"
+ ],
+ "R089": [
+  "neg_same_actors: all presidential actions,briefings & statements,nominations & appointments"
+ ],
+ "R090": [
+  "lifecycle: attack"
+ ],
+ "R091": [
+  "owner_note: A017",
+  "storyline_mates: drc-ebola"
+ ],
+ "R092": [
+  "situation_holdout_control: US delivers F-16V fighter jets / Xi-Trump summit drew Chinese C"
+ ],
+ "R093": [
+  "gold_related: teen social media limits in Singapore vs HK opinion"
+ ],
+ "R094": [
+  "neg_chrono_adjacent: 1.8 h"
+ ],
+ "R095": [
+  "gold_related: Trump tariff moves"
+ ],
+ "R096": [
+  "lifecycle: calamity"
+ ],
+ "R097": [
+  "neg_broad_pair: America-China",
+  "neg_same_actors: china,united states"
+ ],
+ "R098": [
+  "cue: follow_up"
+ ],
+ "R099": [
+  "neg_same_place: Hong Kong"
+ ],
+ "R100": [
+  "lifecycle: visit"
+ ],
+ "R101": [
+  "lifecycle: attack"
+ ],
+ "R102": [
+  "cue: reaction,follow_up"
+ ],
+ "R103": [
+  "storyline_mates: fifa-election"
+ ],
+ "R104": [
+  "gold_related: both Hong Kong police arrests - distinct"
+ ],
+ "R105": [
+  "neg_same_crisis: netanyahu-unga"
+ ],
+ "R106": [
+  "gold_related: both mass shootings on Sunday - Detroit vs South Africa"
+ ],
+ "R107": [
+  "neg_same_crisis: west-bank-settlements"
+ ],
+ "R108": [
+  "lifecycle: calamity"
+ ],
+ "R109": [
+  "neg_same_crisis: us-iran-war"
+ ],
+ "R110": [
+  "lifecycle: calamity"
+ ],
+ "R111": [
+  "neg_chrono_adjacent: 2.2 h"
+ ],
+ "R112": [
+  "lifecycle: attack"
+ ],
+ "R113": [
+  "neg_same_place: Iran"
+ ],
+ "R114": [
+  "lifecycle: calamity"
+ ],
+ "R115": [
+  "neg_broad_pair: America-Iran"
+ ],
+ "R116": [
+  "neg_same_place: Beijing,China,US,Washington"
+ ],
+ "R117": [
+  "cue: reaction"
+ ],
+ "R118": [
+  "neg_same_crisis: iran-hormuz-deal"
+ ],
+ "R119": [
+  "gold_related: Man City preview vs Maresca press conference"
+ ],
+ "R120": [
+  "lifecycle: calamity"
+ ],
+ "R121": [
+  "cue: follow_up"
+ ],
+ "R122": [
+  "lifecycle: visit",
+  "storyline_mates: us-china-summit"
+ ],
+ "R123": [
+  "gold_related: Russian military budget vs Putin troop decree - distinct"
+ ],
+ "R124": [
+  "gold_related: Pope Leo AI remarks vs France tour final day"
+ ],
+ "R125": [
+  "cue: reaction"
+ ],
+ "R126": [
+  "neg_chrono_adjacent: 0.8 h"
+ ],
+ "R127": [
+  "cue: reaction,follow_up",
+  "lifecycle: attack"
+ ],
+ "R128": [
+  "neg_same_actors: china,united states"
+ ],
+ "R129": [
+  "lifecycle: calamity"
+ ],
+ "R130": [
+  "gold_related: Harry legal costs vs UK return"
+ ],
+ "R131": [
+  "gold_related: Wang Yi meeting with Japanese delegation vs survey of Japanese firms"
+ ],
+ "R132": [
+  "cue: reaction,follow_up"
+ ],
+ "R133": [
+  "owner_note: B005"
+ ],
+ "R134": [
+  "gold_related: HK retail sales data vs retail leasing"
+ ],
+ "R135": [
+  "neg_broad_pair: America-China"
+ ],
+ "R136": [
+  "neg_same_crisis: ethiopia-tigray"
+ ],
+ "R137": [
+  "situation_holdout_control: Pentagon awards Raytheon up to / US Navy awards RTX"
+ ],
+ "R138": [
+  "cue: reaction"
+ ],
+ "R139": [
+  "neg_same_place: U.S."
+ ],
+ "R140": [
+  "neg_broad_pair: America-China"
+ ],
+ "R141": [
+  "lifecycle: visit"
+ ],
+ "R142": [
+  "neg_same_crisis: unga-81"
+ ]
+}

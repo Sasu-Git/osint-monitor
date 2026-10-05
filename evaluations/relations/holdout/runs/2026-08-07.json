@@ -1,0 +1,3253 @@
+{
+ "developments": {
+  "1": {
+   "corroboration": "CONFIRMED",
+   "members": {
+    "b-78e7652e9299": 1,
+    "b-eada531ed152": 1,
+    "b-f8b49596c716": 1
+   },
+   "principals": [],
+   "situation": null,
+   "sources": [
+    "Al Jazeera",
+    "BBC World",
+    "South China Morning Post"
+   ],
+   "summary": "New Mexico court orders Meta to pay $567m over harm to youths"
+  },
+  "10": {
+   "corroboration": "PROBABLE",
+   "members": {
+    "b-24e628c19aac": 4,
+    "b-bbeaad3ab24a": 4
+   },
+   "principals": [
+    "Biden",
+    "Hunter Biden"
+   ],
+   "situation": null,
+   "sources": [
+    "Al Jazeera",
+    "BBC World"
+   ],
+   "summary": "Hunter Biden tells BBC his pardon was 'not good' for US or his father's legacy"
+  },
+  "11": {
+   "corroboration": "PROBABLE",
+   "members": {
+    "b-5f95ffe7d81f": 4,
+    "b-7f0238fb2e6e": 4
+   },
+   "principals": [
+    "Colombia",
+    "US"
+   ],
+   "situation": null,
+   "sources": [
+    "Al Jazeera",
+    "BBC World"
+   ],
+   "summary": "Colombia’s new president takes office vowing to ‘crush’ narco-terrorism"
+  },
+  "12": {
+   "corroboration": "PROBABLE",
+   "members": {
+    "b-5b1126abeaa6": 4,
+    "b-5e3940c37a8f": 4
+   },
+   "principals": [
+    "Brandon Clarke",
+    "Clarke"
+   ],
+   "situation": null,
+   "sources": [
+    "Al Jazeera",
+    "BBC World"
+   ],
+   "summary": "NBA star Brandon Clarke died from heroin, cocaine effects, examiner rules"
+  },
+  "13": {
+   "corroboration": "PROBABLE",
+   "members": {
+    "b-44782b2492e8": 4,
+    "b-66dda2ce2fec": 4
+   },
+   "principals": [
+    "Iran",
+    "Oman"
+   ],
+   "situation": "us-iran",
+   "sources": [
+    "Al Jazeera",
+    "BBC World"
+   ],
+   "summary": "Iran deliberates Hormuz arrangement amid uncertain prospects with US"
+  },
+  "14": {
+   "corroboration": "PROBABLE",
+   "members": {
+    "b-0b1e45f6983b": 4,
+    "b-1d5fbfadeaf8": 4
+   },
+   "principals": [
+    "Lionel Messi",
+    "Messi"
+   ],
+   "situation": null,
+   "sources": [
+    "Al Jazeera",
+    "BBC World"
+   ],
+   "summary": "Lionel Messi’s father dies aged 68 after a long illness"
+  },
+  "15": {
+   "corroboration": "PROBABLE",
+   "members": {
+    "b-07f3a6b14eeb": 4,
+    "b-d9366bf067ee": 4
+   },
+   "principals": [
+    "Todd Blanche",
+    "Trump"
+   ],
+   "situation": null,
+   "sources": [
+    "Al Jazeera",
+    "BBC World"
+   ],
+   "summary": "Trump's ex-lawyer Todd Blanche narrowly confirmed as US attorney general"
+  },
+  "16": {
+   "corroboration": "PROBABLE",
+   "members": {
+    "b-140af91112ea": 4,
+    "b-cc3edbe4a373": 4
+   },
+   "principals": [],
+   "situation": null,
+   "sources": [
+    "Al Jazeera",
+    "BBC World"
+   ],
+   "summary": "Watch: Moment opposition MP throws eggs at Kosovo's acting PM"
+  },
+  "17": {
+   "corroboration": "PROBABLE",
+   "members": {
+    "b-9676f37abed0": 4,
+    "b-97c82dbe18f1": 4
+   },
+   "principals": [],
+   "situation": null,
+   "sources": [
+    "Al Jazeera",
+    "BBC World"
+   ],
+   "summary": "British Columbia issues evacuation orders ahead of fast-moving wildfires"
+  },
+  "2": {
+   "corroboration": "CONFIRMED",
+   "members": {
+    "b-21feaf17566e": 2,
+    "b-7e6c9b8410a6": 1,
+    "b-8c745a0e9050": 2,
+    "b-ac765de3b2c1": 2,
+    "b-d8b353ae65ba": 1
+   },
+   "principals": [],
+   "situation": null,
+   "sources": [
+    "Al Jazeera",
+    "BBC World",
+    "South China Morning Post"
+   ],
+   "summary": "Teacher and gunman killed in Thailand school shooting"
+  },
+  "3": {
+   "corroboration": "PROBABLE",
+   "members": {
+    "b-061c9dc500d6": 1,
+    "b-bef7a6e7b68f": 1
+   },
+   "principals": [],
+   "situation": null,
+   "sources": [
+    "Al Jazeera",
+    "BBC World"
+   ],
+   "summary": "Moment earthquake shakes hospital operating room in Japan"
+  },
+  "4": {
+   "corroboration": "PROBABLE",
+   "members": {
+    "b-65632095d79d": 2,
+    "b-812820135935": 4,
+    "b-bff99f9a4a75": 2
+   },
+   "principals": [
+    "Yemen"
+   ],
+   "situation": null,
+   "sources": [
+    "Al Jazeera",
+    "South China Morning Post"
+   ],
+   "summary": "Houthi attacks kill dozens of troops in Yemen, wound civilians in Saudi Arabia"
+  },
+  "5": {
+   "corroboration": "PROBABLE",
+   "members": {
+    "b-3b9c93b92d52": 2,
+    "b-45274f0992ea": 2,
+    "b-476e54ea6440": 4,
+    "b-cae8ffb97ad4": 2
+   },
+   "principals": [
+    "Pakistan",
+    "Saudi Arabia",
+    "Turkey",
+    "Turkiye"
+   ],
+   "situation": null,
+   "sources": [
+    "Al Jazeera",
+    "BBC World"
+   ],
+   "summary": "Saudi Arabia, Turkiye and Pakistan sign joint defence pact"
+  },
+  "6": {
+   "corroboration": "PROBABLE",
+   "members": {
+    "b-5cc58f22375d": 2,
+    "b-d53ac31ed492": 2
+   },
+   "principals": [
+    "Spain"
+   ],
+   "situation": null,
+   "sources": [
+    "Al Jazeera",
+    "BBC World"
+   ],
+   "summary": "Spanish police arrest 78 people in bust of 'one of largest' smuggling networks"
+  },
+  "7": {
+   "corroboration": "PROBABLE",
+   "members": {
+    "b-24dacda9c922": 4,
+    "b-92915f58c70d": 3,
+    "b-e7453aa2a676": 3,
+    "b-fd95ffe6a51a": 3
+   },
+   "principals": [
+    "FIFA",
+    "Gianni Infantino",
+    "Infantino",
+    "inauguration FIFA"
+   ],
+   "situation": null,
+   "sources": [
+    "Al Jazeera",
+    "BBC World"
+   ],
+   "summary": "Watch: BBC asks Infantino if he will resign as Fifa president"
+  },
+  "8": {
+   "corroboration": "PROBABLE",
+   "members": {
+    "b-0f8ccdedd738": 4,
+    "b-f4d707e16b02": 4
+   },
+   "principals": [
+    "Spain"
+   ],
+   "situation": null,
+   "sources": [
+    "Al Jazeera",
+    "BBC World"
+   ],
+   "summary": "Spain imposes border checks on Italy as countermeasure in Ceuta spat"
+  },
+  "9": {
+   "corroboration": "PROBABLE",
+   "members": {
+    "b-10ebddd0863d": 4,
+    "b-a0280c2a0411": 4,
+    "b-f0cf5d04562d": 4
+   },
+   "principals": [
+    "Kyiv Russia",
+    "Moscow",
+    "Russia"
+   ],
+   "situation": null,
+   "sources": [
+    "Al Jazeera",
+    "BBC World"
+   ],
+   "summary": "Several killed in attacks on Ukraine as Kyiv hits Russian e-commerce giant"
+  }
+ },
+ "items": {
+  "b-02935a967702": {
+   "developments": [],
+   "entities": [
+    "Health Silk Road",
+    "Pepfar",
+    "US Agency for International Development",
+    "World Health Organization"
+   ],
+   "excerpt": "China is expanding its role in the fight against HIV/Aids in Africa by funding new projects and backing local medicine manufacturing as part of its signature health initiative, the Health Silk Road.\nBeijing’s larger presence comes as traditional Western aid wanes following the closure of the US Agency for International Development and sweeping cuts to the World Health Organization and the Presiden",
+   "lang": "en",
+   "places": [
+    "Africa",
+    "Beijing",
+    "China",
+    "US"
+   ],
+   "published_at": "2026-08-07T04:00:11",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "What China’s expanded funding for HIV/Aids in Africa means as US cuts health aid"
+  },
+  "b-0497a818302f": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "Pact will &#039;reshape security architecture&#039; of the region, experts say.",
+   "lang": "en",
+   "places": [
+    "Pakistan",
+    "Saudi Arabia",
+    "Turkiye"
+   ],
+   "published_at": "2026-08-07T13:28:40",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Turkiye, Saudi Arabia, Pakistan sign joint defence agreement: What’s in it?"
+  },
+  "b-061c9dc500d6": {
+   "developments": [
+    3
+   ],
+   "entities": [
+    "Japan Security",
+    "Kumamoto General Hospital"
+   ],
+   "excerpt": "Security camera footage shows doctors shielding a patient on the operating table as last month's magnitude 6.8 quake shook Kumamoto General Hospital.",
+   "lang": "en",
+   "places": [],
+   "published_at": "2026-08-07T06:46:34",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Moment earthquake shakes hospital operating room in Japan"
+  },
+  "b-0738eb3fff07": {
+   "developments": [],
+   "entities": [
+    "United Nations"
+   ],
+   "excerpt": "War in Sudan has left over 8 million children out of school, and nearly three-quarters of schools have been affected.",
+   "lang": "en",
+   "places": [
+    "Sudan"
+   ],
+   "published_at": "2026-08-08T00:24:42",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Sudan’s war threatens an ‘entire generation’s’ future, UN warns"
+  },
+  "b-07f3a6b14eeb": {
+   "developments": [
+    15
+   ],
+   "entities": [
+    "Todd Blanche",
+    "Trump"
+   ],
+   "excerpt": "Todd Blanche, President Trump’s former lawyer, is now US attorney general.",
+   "lang": "en",
+   "places": [
+    "US"
+   ],
+   "published_at": "2026-08-08T21:04:54",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Trump’s Former Lawyer Is Now Attorney General"
+  },
+  "b-0b1e45f6983b": {
+   "developments": [
+    14
+   ],
+   "entities": [
+    "Jorge Messi",
+    "Lionel Messi",
+    "Rosario"
+   ],
+   "excerpt": "Jorge Messi died at a medical clinic in the Argentinian city of ⁠Rosario, according to his family.",
+   "lang": "en",
+   "places": [
+    "Argentina"
+   ],
+   "published_at": "2026-08-08T14:25:38",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Lionel Messi’s father dies aged 68 after a long illness"
+  },
+  "b-0bf46743f4c6": {
+   "developments": [],
+   "entities": [
+    "Grammy Award",
+    "Madonna",
+    "Orbit",
+    "William Orbit"
+   ],
+   "excerpt": "The Queen of Pop worked with Orbit several times over the years, most notably on her genre-bending, Grammy Award-winning album Ray of Light.",
+   "lang": "en",
+   "places": [],
+   "published_at": "2026-08-08T17:23:31",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Madonna pays tribute to 'genius, otherworldly' producer William Orbit"
+  },
+  "b-0c6d1e612ee1": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "The country has been divided since 2014, with rival governments in the east and west.",
+   "lang": "en",
+   "places": [
+    "Libya"
+   ],
+   "published_at": "2026-08-07T20:39:26",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Can diplomacy end the conflict in Libya?"
+  },
+  "b-0ebad8d77e6b": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "Authorities suspect narcotics dealers and gang rivalries are behind prison violence at facilities in Sri Lanka.",
+   "lang": "en",
+   "places": [
+    "Sri Lanka"
+   ],
+   "published_at": "2026-08-07T15:10:22",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Sri Lanka prisoners riot leaving 3 dead, 23 injured in chaos"
+  },
+  "b-0f8ccdedd738": {
+   "developments": [
+    8
+   ],
+   "entities": [],
+   "excerpt": "Madrid earlier warned of &#039;proportional measures&#039; if Rome did not end its checks amid fallout from Ceuta migrant crisis.",
+   "lang": "en",
+   "places": [
+    "Ceuta",
+    "Italy",
+    "Madrid",
+    "Rome",
+    "Spain"
+   ],
+   "published_at": "2026-08-07T16:10:51",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Spain imposes border checks on Italy as countermeasure in Ceuta spat"
+  },
+  "b-10af2d89ec91": {
+   "developments": [],
+   "entities": [
+    "ADNOC",
+    "Arab"
+   ],
+   "excerpt": "Gulf and Arab governments condemn Iran over missile strike on Emirati tanker.",
+   "lang": "en",
+   "places": [
+    "Gulf",
+    "Iran",
+    "Strait of Hormuz",
+    "United Arab Emirates"
+   ],
+   "published_at": "2026-08-08T15:01:29",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "UAE says Iran targeted ADNOC tanker in Strait of Hormuz, no casualties"
+  },
+  "b-10ebddd0863d": {
+   "developments": [
+    9
+   ],
+   "entities": [
+    "Child",
+    "Volodymyr Zelenskyy"
+   ],
+   "excerpt": "Russia continued its overnight attacks after President Volodymyr Zelensky warned of Ukraine's dwindling supplies of missile interceptors.",
+   "lang": "en",
+   "places": [
+    "Kyiv Russia",
+    "Russia",
+    "Ukraine"
+   ],
+   "published_at": "2026-08-08T18:06:25",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Child among three killed in Russian missile attacks near Kyiv"
+  },
+  "b-140af91112ea": {
+   "developments": [
+    16
+   ],
+   "entities": [
+    "Albin Kurti",
+    "Alliance",
+    "Time Kadrijaj"
+   ],
+   "excerpt": "Lawmakers and police officers had to intervene after Alliance party MP Time Kadrijaj hurled at least four eggs towards Kosovo's acting prime minister Albin Kurti.",
+   "lang": "en",
+   "places": [
+    "Kosovo"
+   ],
+   "published_at": "2026-08-08T15:59:37",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Watch: Moment opposition MP throws eggs at Kosovo's acting PM"
+  },
+  "b-159b8896b526": {
+   "developments": [],
+   "entities": [
+    "New Israeli"
+   ],
+   "excerpt": "New Israeli attacks reported in southern Lebanon as Beirut offers optimism after the seventh round of discussions.",
+   "lang": "en",
+   "places": [
+    "Beirut",
+    "Israel",
+    "Lebanon"
+   ],
+   "published_at": "2026-08-07T21:02:31",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Lebanon points to ‘positive progress’ on borders, prisoners in Israel talks"
+  },
+  "b-17ead1be9cba": {
+   "developments": [],
+   "entities": [
+    "Trump",
+    "White House"
+   ],
+   "excerpt": "The two-judge majority underscored that the president needed congressional authority to move forward with his plans.",
+   "lang": "en",
+   "places": [
+    "US"
+   ],
+   "published_at": "2026-08-07T20:27:56",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "US appeals court upholds injunction pausing Trump’s White House ballroom"
+  },
+  "b-1822896988f4": {
+   "developments": [],
+   "entities": [
+    "RWE",
+    "Trump"
+   ],
+   "excerpt": "The RWE payout is the latest in a string of deals cancelling wind energy projects, a power source long derided by Trump.",
+   "lang": "en",
+   "places": [
+    "Germany",
+    "US"
+   ],
+   "published_at": "2026-08-07T13:32:41",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Trump administration to pay German firm $1.2bn to halt US wind projects"
+  },
+  "b-1a60785ffdcf": {
+   "developments": [],
+   "entities": [
+    "42.5C."
+   ],
+   "excerpt": "A record-high heatwave is sweeping through the Korean Peninsula, sending temperatures skyrocketing, reaching 42.5C.",
+   "lang": "en",
+   "places": [
+    "Korean Peninsula",
+    "South Korea"
+   ],
+   "published_at": "2026-08-07T05:00:48",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Record-high heat soars through South Korea"
+  },
+  "b-1d5fbfadeaf8": {
+   "developments": [
+    14
+   ],
+   "entities": [
+    "Jorge",
+    "Lionel Messi",
+    "Messi"
+   ],
+   "excerpt": "Lionel Messi's father and agent Jorge dies at the age of 68 following a long illness.",
+   "lang": "en",
+   "places": [],
+   "published_at": "2026-08-08T15:51:11",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Messi's father Jorge dies aged 68 after illness"
+  },
+  "b-1d72113e1b2b": {
+   "developments": [],
+   "entities": [
+    "Armenian Apostolic Church"
+   ],
+   "excerpt": "Catholicos Karekin II and six other clerics are accused of failing to reinstate a bishop who was defrocked.",
+   "lang": "en",
+   "places": [],
+   "published_at": "2026-08-07T13:03:54",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Armenian Apostolic Church leader faces trial as feud with PM deepens"
+  },
+  "b-209b476a5358": {
+   "developments": [],
+   "entities": [
+    "Andy Ogles",
+    "District 9"
+   ],
+   "excerpt": "Tennessee&#039;s party primaries saw incumbent Representative Andy Ogles ousted and set up a heated race for District 9.",
+   "lang": "en",
+   "places": [
+    "Tennessee"
+   ],
+   "published_at": "2026-08-07T18:00:05",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Inside the results: How redistricting shaped Tennessee’s primary election"
+  },
+  "b-21feaf17566e": {
+   "developments": [
+    2
+   ],
+   "entities": [],
+   "excerpt": "Eight people were killed when a 14-year-old opened fire at his home and school before shooting himself dead.",
+   "lang": "en",
+   "places": [],
+   "published_at": "2026-08-07T21:19:27",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Thai PM vows to introduce stricter gun laws after eight killed in shooting"
+  },
+  "b-22f73add60db": {
+   "developments": [],
+   "entities": [
+    "BBC"
+   ],
+   "excerpt": "The BBC has seen evidence from previous cases that Russian-linked proxies not only handled drones and explosives, but also delivered them to Germany.",
+   "lang": "en",
+   "places": [
+    "Germany",
+    "Russia"
+   ],
+   "published_at": "2026-08-07T08:48:16",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "German airport drone-bomb: Could Russia be involved?"
+  },
+  "b-246e5e983f8b": {
+   "developments": [],
+   "entities": [
+    "Massive Attack",
+    "Seo Taiji & Boys"
+   ],
+   "excerpt": "When Massive Attack covered Seo Taiji & Boys’ “Regret of the Times” at Incheon Pentaport Rock Festival on August 1, the British band framed it as a tribute to a song that had once defied authoritarian control.\nNow, a South Korean city councillor wants to use a government audit to investigate the band over the performance, a move critics say risks reviving the very dynamic the song was written to r",
+   "lang": "en",
+   "places": [
+    "Gwangju",
+    "Incheon Pentaport Rock Festival",
+    "South Korea",
+    "United Kingdom"
+   ],
+   "published_at": "2026-08-07T01:39:17",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "Massive Attack’s South Korea gig video stirs row over 1980 Gwangju massacre"
+  },
+  "b-24b5d33747c5": {
+   "developments": [],
+   "entities": [
+    "Trump"
+   ],
+   "excerpt": "The executive orders ban birth tourism and expand the existing definition of people whose children are not eligible for US birthright citizenship.",
+   "lang": "en",
+   "places": [
+    "US"
+   ],
+   "published_at": "2026-08-07T00:34:14",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Trump again tries to limit US birthright citizenship with new executive orders"
+  },
+  "b-24dacda9c922": {
+   "developments": [
+    7
+   ],
+   "entities": [
+    "FIFA",
+    "Gianni Infantino",
+    "Infantino",
+    "UEFA"
+   ],
+   "excerpt": "However, UEFA says a &#039;departure payment&#039; was made to a female employee when Infantino was the body&#039;s general-secretary.",
+   "lang": "en",
+   "places": [],
+   "published_at": "2026-08-08T13:59:21",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "FIFA President Gianni Infantino denies claims UEFA paid off alleged lover"
+  },
+  "b-24e628c19aac": {
+   "developments": [
+    10
+   ],
+   "entities": [
+    "BBC",
+    "Hunter Biden"
+   ],
+   "excerpt": "In a wide-ranging BBC interview, the former president's son denies any interest in running for office and says his father's cancer has spread.",
+   "lang": "en",
+   "places": [
+    "US"
+   ],
+   "published_at": "2026-08-07T22:07:00",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Hunter Biden tells BBC his pardon was 'not good' for US or his father's legacy"
+  },
+  "b-26ac1cd37789": {
+   "developments": [],
+   "entities": [
+    "Mecca Joint Defence Pact"
+   ],
+   "excerpt": "The Mecca Joint Defence Pact brings together countries that sit between Iran and Israel, but will it be effective?",
+   "lang": "en",
+   "places": [
+    "Iran",
+    "Israel",
+    "Pakistan"
+   ],
+   "published_at": "2026-08-07T23:18:14",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Will Pakistan-Saudi-Turkiye alliance actually create a new regional order?"
+  },
+  "b-2b79e309052f": {
+   "developments": [],
+   "entities": [
+    "Ismail Sabri",
+    "Ismail Sabri Yaakob"
+   ],
+   "excerpt": "A Malaysian court on Friday deferred charges against former prime minister Ismail Sabri Yaakob, who could not attend his hearing in a multimillion-dollar corruption investigation after being admitted to hospital for a heart condition.\nIsmail Sabri, 66, has faced corruption accusations following the arrests of a senior aide and several others last February over alleged abuse of power and money laun",
+   "lang": "en",
+   "places": [
+    "Malaysia"
+   ],
+   "published_at": "2026-08-07T04:05:20",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "Malaysian ex-PM Ismail Sabri’s corruption charges delayed by health woes"
+  },
+  "b-2f8023b51f8d": {
+   "developments": [],
+   "entities": [
+    "European Union"
+   ],
+   "excerpt": "Germans have emerged as some of Europe’s most hawkish voters on China, more likely to consider Beijing as a rival or an adversary than in any other major EU country, a new survey has shown.\nPublished amid a bout of soul-searching in Berlin over whether to back a tougher approach towards China on trade, the findings suggest that the country’s citizens might not be opposed to such a shift.\nA combine",
+   "lang": "en",
+   "places": [
+    "Beijing",
+    "Berlin",
+    "China",
+    "Europe",
+    "Germany"
+   ],
+   "published_at": "2026-08-07T02:00:21",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "Germans emerge as Europe’s biggest China hawks as economic pain begins to bite"
+  },
+  "b-303d55e4ab24": {
+   "developments": [],
+   "entities": [
+    "ICRC",
+    "M23"
+   ],
+   "excerpt": "ICRC facilitates first known transfer of detainees between Congolese government and M23 rebels in North Kivu.",
+   "lang": "en",
+   "places": [
+    "Congo",
+    "DR",
+    "Democratic Republic Of The Congo",
+    "Doha",
+    "North Kivu"
+   ],
+   "published_at": "2026-08-07T19:21:01",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "DR Congo releases 15 prisoners to M23 rebels as part of Doha peace process"
+  },
+  "b-314b726cf1f5": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "Saudi crown prince, Turkish president and Pakistani prime minister sign a joint defence agreement in Mecca.",
+   "lang": "en",
+   "places": [],
+   "published_at": "2026-08-08T00:00:00",
+   "roundup": true,
+   "source": "Al Jazeera",
+   "stored": false,
+   "title": "Iran war live: Trilateral Mecca defence pact signed, as Hormuz deal looms"
+  },
+  "b-335f47c383b8": {
+   "developments": [],
+   "entities": [
+    "BBC"
+   ],
+   "excerpt": "One Spokane resident tells the BBC she realised the immense danger when she heard the fire had jumped over the river.",
+   "lang": "en",
+   "places": [
+    "Spokane",
+    "US"
+   ],
+   "published_at": "2026-08-08T00:51:16",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Scale of devastation shocks US city's fire-seasoned residents"
+  },
+  "b-35d3b6a5201f": {
+   "developments": [],
+   "entities": [
+    "Trump",
+    "US Senate"
+   ],
+   "excerpt": "The US Senate approved its strongest move against Russia under Trump.",
+   "lang": "en",
+   "places": [
+    "China",
+    "India",
+    "Russia",
+    "US"
+   ],
+   "published_at": "2026-08-08T03:20:41",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "US Senate passes Russia sanctions that could hurt India and China"
+  },
+  "b-364d1faccdeb": {
+   "developments": [],
+   "entities": [
+    "William Lai"
+   ],
+   "excerpt": "President William Lai took part in an emergency evacuation drill as part of Taiwan military exercises preparing for a potential Chinese invasion.",
+   "lang": "en",
+   "places": [
+    "China",
+    "Taiwan"
+   ],
+   "published_at": "2026-08-07T04:52:19",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Why was Taiwan’s president evacuated in the middle of the night?"
+  },
+  "b-3b4a676b004a": {
+   "developments": [],
+   "entities": [
+    "Cricket World Cup",
+    "Hasina",
+    "Shakib",
+    "Shakib Al Hasan"
+   ],
+   "excerpt": "Sheikh ⁠Hasina ally Shakib Al Hasan will face Bangladesh trial if safety assured, with Cricket World Cup return eyed.",
+   "lang": "en",
+   "places": [
+    "Bangladesh"
+   ],
+   "published_at": "2026-08-07T11:27:54",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Bangladesh cricket’s Shakib, an Hasina ally, will face trial if he is safe"
+  },
+  "b-3b9c93b92d52": {
+   "developments": [
+    5
+   ],
+   "entities": [],
+   "excerpt": "Saudi Arabia, Turkiye and Pakistan have signed a trilateral defence pact in Mecca aimed at deterring aggression.",
+   "lang": "en",
+   "places": [
+    "Iran",
+    "Mecca",
+    "Pakistan",
+    "Saudi Arabia",
+    "Turkiye"
+   ],
+   "published_at": "2026-08-07T16:42:35",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "War on Iran: Saudi Arabia, Turkiye and Pakistan sign defence pact"
+  },
+  "b-3dde725f7e29": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "Madrid warns of &#039;proportional measures&#039; if Rome does not put an end to checks amid fallout from Ceuta migrant crisis.",
+   "lang": "en",
+   "places": [],
+   "published_at": "2026-08-07T16:10:51",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": false,
+   "title": "Italy vows to maintain border checks despite Spain’s countermeasures threat"
+  },
+  "b-3e5924ea12e8": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "For many Congolese, the census is about identity, recognition and finally being recorded by the state.",
+   "lang": "en",
+   "places": [
+    "Congo",
+    "Democratic Republic Of The Congo"
+   ],
+   "published_at": "2026-08-08T04:29:46",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "‘I’ve never been counted’: DR Congo’s first census in 42 years"
+  },
+  "b-4069a7dfc42a": {
+   "developments": [],
+   "entities": [
+    "SCMP"
+   ],
+   "excerpt": "We have selected seven stories from this week’s news across Hong Kong, mainland China, the wider Asia region and beyond that resonated with our readers and shed light on topical issues. If you would like to see more of our reporting, please consider subscribing.\n1. China hits back at US with barrage of sanctions, drone industry curbs\nChina has hit back against a round of US sanctions with a barrag",
+   "lang": "en",
+   "places": [
+    "Asia",
+    "China",
+    "Hong Kong",
+    "North Korea",
+    "US"
+   ],
+   "published_at": "2026-08-07T04:15:05",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "China retaliates on US sanctions; North Korea’s dog meat advisory: SCMP’s 7 highlights"
+  },
+  "b-42a1a3092008": {
+   "developments": [],
+   "entities": [
+    "Ervebo"
+   ],
+   "excerpt": "The Bundibugyo epidemic, ​the world&#039;s second-largest, has been described as the ⁠fastest-spreading on record.",
+   "lang": "en",
+   "places": [
+    "DRC"
+   ],
+   "published_at": "2026-08-07T20:41:46",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Ebola cases top 4,000 in DRC as WHO urges Ervebo vaccine trial"
+  },
+  "b-43cc642c4488": {
+   "developments": [],
+   "entities": [
+    "Karian Reservoir"
+   ],
+   "excerpt": "Drone footage shows the remains of a submerged village re-emerging from Indonesia’s Karian Reservoir after a drought.",
+   "lang": "en",
+   "places": [
+    "Indonesia"
+   ],
+   "published_at": "2026-08-08T02:54:02",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Submerged Indonesian village re-emerges as drought lowers water levels"
+  },
+  "b-44782b2492e8": {
+   "developments": [
+    13
+   ],
+   "entities": [],
+   "excerpt": "Both sides suggest progress in talks to agree a new shipping route through the strait, but a breakthrough remains unclear.",
+   "lang": "en",
+   "places": [
+    "Hormuz",
+    "Iran",
+    "Oman"
+   ],
+   "published_at": "2026-08-08T19:18:57",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Hormuz talks positive, Oman says, as Iran warns deal would not open strait"
+  },
+  "b-45274f0992ea": {
+   "developments": [
+    5
+   ],
+   "entities": [],
+   "excerpt": "Pakistan says an attack on any of the three will amount to an attack against all, amid conflict in the Middle East.",
+   "lang": "en",
+   "places": [
+    "Middle East",
+    "Pakistan",
+    "Saudi Arabia",
+    "Turkey"
+   ],
+   "published_at": "2026-08-07T14:41:15",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Saudi Arabia, Turkey and Pakistan sign defence pact"
+  },
+  "b-45315238ef4d": {
+   "developments": [],
+   "entities": [
+    "Andy Ogles",
+    "Anti-Muslim",
+    "Muslims",
+    "Republican",
+    "Trump"
+   ],
+   "excerpt": "Trump&#039;s endorsement fails to save Tennessee legislator who recently said &#039;Muslims don&#039;t belong in American society&#039;.",
+   "lang": "en",
+   "places": [
+    "Tennessee",
+    "US"
+   ],
+   "published_at": "2026-08-07T04:04:45",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Anti-Muslim US Congressman Andy Ogles loses Republican primary"
+  },
+  "b-476e54ea6440": {
+   "developments": [
+    5
+   ],
+   "entities": [],
+   "excerpt": "Saudi Arabia, Turkiye, and Pakistan form a new defence pact, leaving Israel’s response and its implications uncertain.",
+   "lang": "en",
+   "places": [
+    "Israel",
+    "Pakistan",
+    "Saudi Arabia",
+    "Turkiye"
+   ],
+   "published_at": "2026-08-08T13:42:06",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Israel mulls Saudi, Turkiye, Pakistan pact as elections loom"
+  },
+  "b-48256f60ab36": {
+   "developments": [],
+   "entities": [
+    "International"
+   ],
+   "excerpt": "International court&#039;s oversight body warns exits threaten global justice, as US intensifies campaign against tribunal.",
+   "lang": "en",
+   "places": [
+    "Chad",
+    "US",
+    "Venezuela"
+   ],
+   "published_at": "2026-08-07T23:34:50",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "ICC body urges Chad and Venezuela to reverse course on withdrawal"
+  },
+  "b-4913bafd8df0": {
+   "developments": [],
+   "entities": [
+    "UNRWA",
+    "United Nations"
+   ],
+   "excerpt": "The UN body has been part of the lives of millions of Palestinian refugees. Post-genocide Gaza cannot cope without it",
+   "lang": "en",
+   "places": [
+    "Gaza",
+    "Palestine"
+   ],
+   "published_at": "2026-08-08T15:52:49",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "UNRWA has been with me since birth, I cannot imagine a future without it"
+  },
+  "b-4b0acc3031b5": {
+   "developments": [],
+   "entities": [
+    "Al Jazeera",
+    "Teresa Bo"
+   ],
+   "excerpt": "Al Jazeera’s Teresa Bo reports from Buenos Aires, where police fired tear gas as thousands protested.",
+   "lang": "en",
+   "places": [
+    "Argentina",
+    "Buenos Aires"
+   ],
+   "published_at": "2026-08-07T01:02:56",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Police in Argentina use tear gas to stop protesters"
+  },
+  "b-4c59287d84d0": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "Some experts say the deal precipitates a larger strategic shift in Middle East while others say it reinforces US goals.",
+   "lang": "en",
+   "places": [
+    "Middle East",
+    "Pakistan",
+    "US"
+   ],
+   "published_at": "2026-08-08T21:28:12",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Will Pakistan-Saudi-Turkiye defence pact change US strategy?"
+  },
+  "b-4f48faf71bc8": {
+   "developments": [],
+   "entities": [
+    "Apostolic Church",
+    "Church"
+   ],
+   "excerpt": "Armenia’s head of the Apostolic Church and senior clergy could face jail time over allegations of spying for Russia.",
+   "lang": "en",
+   "places": [
+    "Armenia",
+    "Russia"
+   ],
+   "published_at": "2026-08-08T04:31:42",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Armenia puts Church leader on trial for allegedly being a Russian spy"
+  },
+  "b-501a7a9828d0": {
+   "developments": [],
+   "entities": [
+    "Hasina",
+    "Shakib",
+    "Shakib Al Hasan"
+   ],
+   "excerpt": "Shakib Al Hasan says he will return home to face trial if safety assured, but Bangladesh rule out cricket comeback.",
+   "lang": "en",
+   "places": [
+    "Bangladesh"
+   ],
+   "published_at": "2026-08-08T05:30:53",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Bangladesh say Shakib will not play cricket again after Hasina event"
+  },
+  "b-516c4c8988ea": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "The storm has cut power to at least 44,000 buildings and injured five people on the Japanese island.",
+   "lang": "en",
+   "places": [
+    "China",
+    "Japan",
+    "Okinawa"
+   ],
+   "published_at": "2026-08-08T15:15:17",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Typhoon Dolphin batters Japan's Okinawa before bearing down on China"
+  },
+  "b-51b2c35923c6": {
+   "developments": [],
+   "entities": [
+    "AI"
+   ],
+   "excerpt": "US researchers say they created 16 viruses using AI, prompting hopes for medical advances and concerns about misuse.",
+   "lang": "en",
+   "places": [
+    "US"
+   ],
+   "published_at": "2026-08-07T03:48:22",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "AI used to create viruses not found in nature for first time"
+  },
+  "b-5380cd2d3857": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "The agreement names no adversary, but analysts say Iran and its regional network are central to the thinking behind it.",
+   "lang": "en",
+   "places": [
+    "Iran",
+    "Saudi Arabia"
+   ],
+   "published_at": "2026-08-08T16:52:11",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Saudi-Pakistan-Turkiye pact: A new shield or strategic signal?"
+  },
+  "b-55d5d2f37aee": {
+   "developments": [],
+   "entities": [
+    "Rio de Janeiro Three"
+   ],
+   "excerpt": "Three Colombian tourists are among the victims of Saturday&#039;s crash on mountainside forest of Tijuca National Park.",
+   "lang": "en",
+   "places": [
+    "Brazil",
+    "Colombia",
+    "Tijuca National Park"
+   ],
+   "published_at": "2026-08-08T23:19:28",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Four killed in helicopter crash in Brazil’s Rio de Janeiro"
+  },
+  "b-5b1126abeaa6": {
+   "developments": [
+    12
+   ],
+   "entities": [
+    "Brandon Clarke",
+    "Memphis Grizzlies",
+    "NBA"
+   ],
+   "excerpt": "Memphis Grizzlies ⁠forward Brandon Clarke&#039;s ⁠May 11 death ruled accidental, with effects of heroin and cocaine cited.",
+   "lang": "en",
+   "places": [],
+   "published_at": "2026-08-08T06:03:42",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "NBA star Brandon Clarke died from heroin, cocaine effects, examiner rules"
+  },
+  "b-5cc58f22375d": {
+   "developments": [
+    6
+   ],
+   "entities": [],
+   "excerpt": "The group moved synthetic drugs from Spain to Algeria, then used the return journey to smuggle migrants and weapons.",
+   "lang": "en",
+   "places": [
+    "Algeria",
+    "Spain"
+   ],
+   "published_at": "2026-08-07T16:13:45",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Spanish police arrest 78 people in bust of 'one of largest' smuggling networks"
+  },
+  "b-5d343dc02db0": {
+   "developments": [],
+   "entities": [
+    "Jaswant Singh Khalra",
+    "Navkiran",
+    "Sikh"
+   ],
+   "excerpt": "Jaswant Singh Khalra&#039;s daughter Navkiran reflects on slain father&#039;s life and legacy, which also inspired a recent film.",
+   "lang": "en",
+   "places": [],
+   "published_at": "2026-08-07T06:29:40",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "‘Still searching for truth’: Daughter of Sikh activist killed 30 years ago"
+  },
+  "b-5e3940c37a8f": {
+   "developments": [
+    12
+   ],
+   "entities": [
+    "Brandon Clarke",
+    "Clarke",
+    "Memphis Grizzlies",
+    "NBA"
+   ],
+   "excerpt": "Memphis Grizzlies forward Brandon Clarke's death was due to the effects of heroin and cocaine, the Los Angeles medical authority reveals.",
+   "lang": "en",
+   "places": [
+    "Los Angeles"
+   ],
+   "published_at": "2026-08-08T12:05:04",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "NBA forward Clarke's death due to effects of drugs"
+  },
+  "b-5e4d8f3d2553": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "Babies born as a result of rape are often unable to get a birth certificate, meaning a life-time of problems.",
+   "lang": "en",
+   "places": [
+    "Sudan"
+   ],
+   "published_at": "2026-08-07T00:26:52",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Sudan's invisible children - born in war with no legal identity"
+  },
+  "b-5e5ea84d3eb2": {
+   "developments": [],
+   "entities": [
+    "Volodymyr Zelenskyy"
+   ],
+   "excerpt": "Moscow&#039;s troops suffer high rate of losses as Zelenskyy renews air campaign against Russia.",
+   "lang": "en",
+   "places": [
+    "Moscow",
+    "Russia",
+    "Ukraine"
+   ],
+   "published_at": "2026-08-07T13:12:52",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Russia drops record number of glide bombs on Ukraine as casualties pile up"
+  },
+  "b-5f95ffe7d81f": {
+   "developments": [
+    11
+   ],
+   "entities": [
+    "Abelardo De La Espriella"
+   ],
+   "excerpt": "Abelardo de la Espriella used his maiden speech to promise an \"all-out war\" on what he calls \"narco-terrorism\".",
+   "lang": "en",
+   "places": [
+    "Colombia",
+    "US"
+   ],
+   "published_at": "2026-08-08T17:58:42",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "US offers $1bn to Colombia on new right-wing president's first day of office"
+  },
+  "b-60996ec29872": {
+   "developments": [],
+   "entities": [
+    "Assad"
+   ],
+   "excerpt": "How we tracked down \"The Spider\" who was once one of the most-feared men in Syria.",
+   "lang": "en",
+   "places": [
+    "Syria"
+   ],
+   "published_at": "2026-08-07T23:23:12",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "The phone book that led us to Assad's spy chief in hiding"
+  },
+  "b-61c8ebe7d4c4": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "More than 8,000 people remain missing amid rubble in Gaza, with recovery efforts hindered by lack of heavy machinery.",
+   "lang": "en",
+   "places": [
+    "Gaza"
+   ],
+   "published_at": "2026-08-08T23:09:30",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Crews recover 19 bodies from rubble of destroyed Gaza building"
+  },
+  "b-6218a8e43854": {
+   "developments": [],
+   "entities": [
+    "Nigel Farage"
+   ],
+   "excerpt": "The UK media has been accused of giving far-right leader Nigel Farage an easy ride",
+   "lang": "en",
+   "places": [
+    "United Kingdom"
+   ],
+   "published_at": "2026-08-08T18:05:44",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "The influencers taking on far-right leader Nigel Farage"
+  },
+  "b-64ff20919984": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "Israeli forces arrest dozens of Palestinians near Jerusalem amid uptick in military and settler violence in West Bank.",
+   "lang": "en",
+   "places": [
+    "Israel",
+    "Jerusalem",
+    "Palestine",
+    "West Bank"
+   ],
+   "published_at": "2026-08-07T01:51:50",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Israeli raid in West Bank’s Qalandiya injures 51 Palestinians"
+  },
+  "b-65632095d79d": {
+   "developments": [
+    4
+   ],
+   "entities": [
+    "Health",
+    "Houthis",
+    "Qassem Bahaibah"
+   ],
+   "excerpt": "Health Minister Qassem Bahaibah says 14 injured, accuses group of targeting residential areas and displacement camps.",
+   "lang": "en",
+   "places": [
+    "Marib",
+    "Yemen"
+   ],
+   "published_at": "2026-08-07T14:22:24",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Two civilians killed in Houthi strike on Marib, says Yemen’s government"
+  },
+  "b-66dda2ce2fec": {
+   "developments": [
+    13
+   ],
+   "entities": [],
+   "excerpt": "Iran and Oman have agreed on the coordinates of routes to be taken by vessels through the Strait of Hormuz.",
+   "lang": "en",
+   "places": [
+    "Hormuz",
+    "Iran",
+    "Oman",
+    "Strait of Hormuz",
+    "US"
+   ],
+   "published_at": "2026-08-08T13:52:40",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Iran deliberates Hormuz arrangement amid uncertain prospects with US"
+  },
+  "b-66de38cde124": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "Saudi Arabia turns to Turkiye and Pakistan for defence ties, raising questions overreliance on the US.",
+   "lang": "en",
+   "places": [
+    "Mecca",
+    "Pakistan",
+    "Saudi Arabia",
+    "Turkiye",
+    "US"
+   ],
+   "published_at": "2026-08-08T20:25:43",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "What are the challenges facing the Mecca agreement?"
+  },
+  "b-6749c09f9e44": {
+   "developments": [],
+   "entities": [
+    "Donald Trump",
+    "Federal Reserve",
+    "Lisa Cook"
+   ],
+   "excerpt": "US president has clashed with Federal Reserve members over his bid to rapidly slash interest rates despite inflation.",
+   "lang": "en",
+   "places": [
+    "US"
+   ],
+   "published_at": "2026-08-07T23:40:16",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Donald Trump renews effort to fire Federal Reserve governor Lisa Cook"
+  },
+  "b-68f7413c86ac": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "China’s central state-owned enterprises (SOEs) are consolidating scattered overseas accounts into unified treasury hubs, with Hong Kong emerging as the preferred base amid a broader crackdown on outflows of state cash.\nDecades of overseas expansion had seen many SOEs build up assets in multiple jurisdictions, leaving cash management fragmented and making it harder for regulators and company headqu",
+   "lang": "en",
+   "places": [
+    "China",
+    "Hong Kong"
+   ],
+   "published_at": "2026-08-07T03:04:43",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "Hong Kong preferred base as Chinese SOEs consolidate overseas accounts in treasury hubs"
+  },
+  "b-6a0b1ba005ec": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "US State Department accuses China of attempting to deny Filipino vessels access to fishing grounds in contested area.",
+   "lang": "en",
+   "places": [
+    "China",
+    "Philippines",
+    "South China Sea",
+    "US"
+   ],
+   "published_at": "2026-08-08T18:57:53",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "US slams Chinese ‘nature reserve’ as effort to claim South China Sea"
+  },
+  "b-6ad5eb939f3e": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "No longer confined to disputed islands or historical memory, the rivalry between Beijing and Tokyo has evolved into a fight for the global microphone, as both countries try to define each other’s international identity.\nAmid an escalating diplomatic crisis, China is intensifying its rhetoric against what it calls Japan’s “new militarism”, using World War II-era history to rally regional and global",
+   "lang": "en",
+   "places": [
+    "Beijing",
+    "China",
+    "Japan",
+    "Tokyo"
+   ],
+   "published_at": "2026-08-07T01:00:07",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "China vs Japan: the battle for the global microphone to reshape post-war identity"
+  },
+  "b-6cddaa062c28": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "Serbia says it will help rebuild Ukrainian cities and provide aid as the two countries deepen cooperation.",
+   "lang": "en",
+   "places": [
+    "Serbia",
+    "Ukraine"
+   ],
+   "published_at": "2026-08-08T17:05:17",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Serbia and Ukraine pledge closer economic ties, eye free trade deal"
+  },
+  "b-6de24cc00a4b": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "Saudi-Pakistan-Turkiye pact draws mixed reactions, as Iran and Oman agree a Hormuz security framework.",
+   "lang": "en",
+   "places": [
+    "Hormuz",
+    "Iran",
+    "Oman",
+    "Saudi Arabia"
+   ],
+   "published_at": "2026-08-08T14:09:02",
+   "roundup": true,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "War on Iran: Phase II: Day 28"
+  },
+  "b-7043e3ae215e": {
+   "developments": [],
+   "entities": [
+    "Houses of Parliament"
+   ],
+   "excerpt": "It is thought an apprentice stonemason who worked on the Houses of Parliament in London borrowed it.",
+   "lang": "en",
+   "places": [
+    "Australia",
+    "London"
+   ],
+   "published_at": "2026-08-07T18:06:58",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Book hidden in fireplace returned to Australian library 150 years overdue"
+  },
+  "b-7204d4d195db": {
+   "developments": [],
+   "entities": [
+    "Broad Peak",
+    "Nirmal Purja"
+   ],
+   "excerpt": "A search team has retrieved the remains of renowned climber Nirmal Purja and several members of his team.",
+   "lang": "en",
+   "places": [],
+   "published_at": "2026-08-07T05:49:22",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Bodies of climbers killed in avalanche retrieved from Broad Peak"
+  },
+  "b-723e5cb44e85": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "After a fire broke out, the building was cleared in what activists say was a politically motivated move.",
+   "lang": "en",
+   "places": [
+    "Rome"
+   ],
+   "published_at": "2026-08-08T05:45:58",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Hundreds camp on sweltering Rome street amid tussle over squatted building"
+  },
+  "b-73c989d5c5b6": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "Team evacuated a patient from McMurdo Station after landing plane in total darkness and temperature of -43°C.",
+   "lang": "en",
+   "places": [
+    "Antarctica",
+    "Australia",
+    "McMurdo Station"
+   ],
+   "published_at": "2026-08-07T05:44:29",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Australian aviation crew carries out daring midwinter Antarctica rescue"
+  },
+  "b-76e272decf93": {
+   "developments": [],
+   "entities": [
+    "Man Utd",
+    "PSG",
+    "Premier League",
+    "Real Madrid",
+    "UEFA Champions League"
+   ],
+   "excerpt": "From the Premier League and La Liga to the UEFA Champions League, which players hold the key to their clubs&#039; season?",
+   "lang": "en",
+   "places": [
+    "Barcelona",
+    "La Liga"
+   ],
+   "published_at": "2026-08-08T16:26:36",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Which stars need to shine this season: Real Madrid, Barcelona, Man Utd, PSG"
+  },
+  "b-78e7652e9299": {
+   "developments": [
+    1
+   ],
+   "entities": [
+    "Meta"
+   ],
+   "excerpt": "A New Mexico judge on Thursday ordered Meta to pay more than half a billion dollars over the state’s claims that the social media giant created a “public nuisance” and harmed children.\nMeta was previously ordered to pay US$375 million in damages to New Mexico in March when a jury found the company liable for endangering children by making them vulnerable to predators on its platforms, among other ",
+   "lang": "en",
+   "places": [
+    "New Mexico",
+    "US"
+   ],
+   "published_at": "2026-08-07T02:12:38",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "Meta ordered in US to pay US$567 million to address child safety harms"
+  },
+  "b-7b789867ccb7": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "Nigerian security forces have rescued 308 people abducted in separate attacks in northern Niger and Kwara states.",
+   "lang": "en",
+   "places": [
+    "Kwara",
+    "Niger",
+    "Nigeria"
+   ],
+   "published_at": "2026-08-07T02:30:23",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Exclusive report with the 308 people rescued by Nigerian forces"
+  },
+  "b-7d529ddcdca0": {
+   "developments": [],
+   "entities": [
+    "Christians",
+    "Holy Land Palestinian"
+   ],
+   "excerpt": "Palestinian Christians are facing violence and displacement across Gaza, Jerusalem and the occupied West Bank.",
+   "lang": "en",
+   "places": [
+    "Gaza",
+    "Jerusalem",
+    "Palestine",
+    "West Bank"
+   ],
+   "published_at": "2026-08-08T05:28:45",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Violence is driving Palestinian Christians out of their Holy Land"
+  },
+  "b-7e6c9b8410a6": {
+   "developments": [
+    2
+   ],
+   "entities": [
+    "Authorities"
+   ],
+   "excerpt": "Authorities say suspected gunman shot and ⁠killed his grandparents ​at their home before opening fire at the school.",
+   "lang": "en",
+   "places": [
+    "Thailand"
+   ],
+   "published_at": "2026-08-07T04:23:52",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "At least six killed, 15 wounded in Thailand school shooting, police say"
+  },
+  "b-7e6edef51dfd": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "Today, a total of 6 companies own 90% of the American media market.",
+   "lang": "en",
+   "places": [
+    "US"
+   ],
+   "published_at": "2026-08-07T00:28:50",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Do you know who owns the media you watch?"
+  },
+  "b-7f0238fb2e6e": {
+   "developments": [
+    11
+   ],
+   "entities": [
+    "Abelardo De La Espriella"
+   ],
+   "excerpt": "Right-wing politician Abelardo De La Espriella takes office after narrowly winning June’s presidential runoff.",
+   "lang": "en",
+   "places": [
+    "Colombia"
+   ],
+   "published_at": "2026-08-08T01:15:53",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Colombia’s new president takes office vowing to ‘crush’ narco-terrorism"
+  },
+  "b-812820135935": {
+   "developments": [
+    4
+   ],
+   "entities": [
+    "Houthis",
+    "Marib Fears"
+   ],
+   "excerpt": "Fears of a wider conflict grow as Yemen’s army counterattacks and expert warns ‘all the warning signs are there’.",
+   "lang": "en",
+   "places": [
+    "Yemen"
+   ],
+   "published_at": "2026-08-08T18:43:20",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Yemen’s government forces attack Houthis amid renewed shelling of Marib"
+  },
+  "b-821a24ae343a": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "Pakistan says an attack on any of the three will amount to an attack against all, amid conflict in the Middle East.",
+   "lang": "en",
+   "places": [],
+   "published_at": "2026-08-07T17:42:54",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": false,
+   "title": "Saudi Arabia, Turkey and Pakistan sign defence pact"
+  },
+  "b-845224f40eef": {
+   "developments": [],
+   "entities": [
+    "CCTV"
+   ],
+   "excerpt": "Police bodycam and CCTV catches Idaho mall shooting as it unfolds",
+   "lang": "en",
+   "places": [
+    "Idaho"
+   ],
+   "published_at": "2026-08-08T12:07:23",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Police bodycam and CCTV catches Idaho mall shooting as it unfolds"
+  },
+  "b-85285d4429f4": {
+   "developments": [],
+   "entities": [
+    "Yan",
+    "Yan Zhengjun"
+   ],
+   "excerpt": "A man in central China has gone viral for a series of “second-hand brat recycling” videos that are splitting public opinion, with some praising them as vital educational tools and others warning that they cause childhood trauma.\nYan Zhengjun, known by the nickname “Uncle A Jun,” hails from Henan province and has amassed 1.6 million followers on a popular platform.\nSince 2021, Yan has created hundr",
+   "lang": "en",
+   "places": [
+    "China",
+    "Henan"
+   ],
+   "published_at": "2026-08-07T02:27:13",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "‘Kids’ nemesis’: Chinese vlogger uses ‘recycling’ approach to help children drop bad habits"
+  },
+  "b-854e9fb8c9c0": {
+   "developments": [],
+   "entities": [
+    "US Senate"
+   ],
+   "excerpt": "Legislation implements aggressive economic sanctions, including 100 percent tariff on Russian oil and gas importers.",
+   "lang": "en",
+   "places": [
+    "Russia",
+    "US",
+    "Ukraine"
+   ],
+   "published_at": "2026-08-08T00:06:22",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "US Senate passes sweeping Russian energy sanctions bill amid Ukraine war"
+  },
+  "b-88a002daccaa": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "Mexico deployed more than 1,500 troops to its main avocado-producing state after the US suspended export inspections.",
+   "lang": "en",
+   "places": [
+    "Mexico",
+    "US"
+   ],
+   "published_at": "2026-08-07T05:25:56",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Mexico deploys troops to secure avocado region after US halts imports"
+  },
+  "b-8b607e991a68": {
+   "developments": [],
+   "entities": [
+    "Democrats",
+    "James Talarico",
+    "Ken Paxton",
+    "Republican",
+    "Texas Senate",
+    "US Senate"
+   ],
+   "excerpt": "James Talarico leads Ken Paxton in the Texas Senate race, signalling a potential shift in the Republican stronghold.",
+   "lang": "en",
+   "places": [
+    "Texas"
+   ],
+   "published_at": "2026-08-07T22:08:49",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Democrats gain momentum in pivotal US Senate and governor’s races in Texas"
+  },
+  "b-8b845fcb3b5e": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "South Koreans in Seoul cooled off with a silent disco pool party during a record-breaking heat wave.",
+   "lang": "en",
+   "places": [
+    "Seoul",
+    "South Korea"
+   ],
+   "published_at": "2026-08-07T21:12:45",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "South Koreans beat the heat with ‘silent disco’ pool party"
+  },
+  "b-8c0bf7081ae4": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "The country is home to some of the world's most unique species - but it is losing them at an alarming rate.",
+   "lang": "en",
+   "places": [
+    "Australia"
+   ],
+   "published_at": "2026-08-08T19:00:22",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Australia is the planet's extinction hotspot, but one animal offers a glimmer of hope"
+  },
+  "b-8c4e3d92fe55": {
+   "developments": [],
+   "entities": [
+    "AI",
+    "DeepSeek",
+    "IPO",
+    "Unitree",
+    "Unitree Robotics"
+   ],
+   "excerpt": "The long-awaited initial public offering of Unitree Robotics, which values the Hangzhou-based firm at 60.99 billion yuan (US$9 billion), is set to serve as a valuation benchmark for China’s booming embodied-AI sector, buoyed by retail investor excitement and high-profile AI backers like DeepSeek.\nWidely billed as “mainland China’s first humanoid stock”, Unitree has priced its IPO on Shanghai’s Sta",
+   "lang": "en",
+   "places": [
+    "China",
+    "Hangzhou",
+    "Shanghai"
+   ],
+   "published_at": "2026-08-07T04:23:35",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "Backed by DeepSeek, Unitree IPO tests investor appetite for China’s AI robotics boom"
+  },
+  "b-8c745a0e9050": {
+   "developments": [
+    2
+   ],
+   "entities": [],
+   "excerpt": "The student says she feared never seeing her mother again after the attack killed five teachers.",
+   "lang": "en",
+   "places": [
+    "Thailand"
+   ],
+   "published_at": "2026-08-07T14:20:27",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "I was standing in front of my teacher when she was shot, Thai pupil says"
+  },
+  "b-8f340c3b50e1": {
+   "developments": [],
+   "entities": [
+    "Temporary Protected Status",
+    "Trump"
+   ],
+   "excerpt": "Rulings allow Trump administration to end Temporary Protected Status for nationals of the two countries.",
+   "lang": "en",
+   "places": [
+    "Myanmar",
+    "South Sudan",
+    "US"
+   ],
+   "published_at": "2026-08-08T02:08:28",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "US courts clear way for deportations of South Sudan, Myanmar nationals"
+  },
+  "b-90535981ecf4": {
+   "developments": [],
+   "entities": [
+    "Hun Manet"
+   ],
+   "excerpt": "The PM has made repression less visible and more sophisticated, strengthening the authoritarian system he inherited.",
+   "lang": "en",
+   "places": [
+    "Cambodia"
+   ],
+   "published_at": "2026-08-07T16:47:33",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Hun Manet is refining Cambodia’s authoritarian model"
+  },
+  "b-92915f58c70d": {
+   "developments": [
+    7
+   ],
+   "entities": [
+    "BBC",
+    "FIFA",
+    "Infantino"
+   ],
+   "excerpt": "The head of the football governing body has faced multiple calls to quit after his aborted attempt to sell private stakes in the World Cup.",
+   "lang": "en",
+   "places": [],
+   "published_at": "2026-08-07T21:24:17",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Watch: BBC asks Infantino if he will resign as Fifa president"
+  },
+  "b-937b25279701": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "The Philippines is reopening Metro Manila to new outsourcing hubs as it tries to defend its place in the global services market and win more complex work from multinational companies.\nOfficials, industry executives and property analysts say the move could help the country compete for higher-value offshore functions – from software engineering and finance to healthcare documentation, data work and ",
+   "lang": "en",
+   "places": [
+    "Manila",
+    "Metro Manila",
+    "Philippines"
+   ],
+   "published_at": "2026-08-07T03:00:07",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "Beyond call centres? Philippines reopens Manila for outsourcing edge"
+  },
+  "b-946e79f1411e": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "Lost harvests and disrupted supply routes have pushed many families deeper into food insecurity.",
+   "lang": "en",
+   "places": [
+    "Mozambique"
+   ],
+   "published_at": "2026-08-07T00:12:16",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "After the floods, hunger: Mozambique’s second disaster"
+  },
+  "b-9608ea2214a3": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "Analysts say regional partners are seeking alternatives to supplement their security without discarding US support.",
+   "lang": "en",
+   "places": [
+    "Mecca",
+    "Middle East",
+    "US"
+   ],
+   "published_at": "2026-08-08T01:29:14",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "What could the Mecca defence pact mean for the US role in the Middle East?"
+  },
+  "b-965f8b175a80": {
+   "developments": [],
+   "entities": [
+    "Diego Maradona"
+   ],
+   "excerpt": "Seven healthcare professionals have been on trial since mid-April in Argentina for possible negligence.",
+   "lang": "en",
+   "places": [
+    "Argentina"
+   ],
+   "published_at": "2026-08-07T13:30:43",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Diego Maradona bloated, bedridden and resigned before death, says masseur"
+  },
+  "b-9676f37abed0": {
+   "developments": [
+    17
+   ],
+   "entities": [],
+   "excerpt": "Authorities warn residents to be prepared to leave their homes as fast-moving wildfires spread across western Canada.",
+   "lang": "en",
+   "places": [
+    "British Columbia",
+    "Canada"
+   ],
+   "published_at": "2026-08-08T17:14:09",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "British Columbia issues evacuation orders ahead of fast-moving wildfires"
+  },
+  "b-973926ce4a3c": {
+   "developments": [],
+   "entities": [
+    "Guterres",
+    "United Nations"
+   ],
+   "excerpt": "UN chief Guterres calls for de-escalation and a ceasefire as Russia-Ukraine attacks intensify.",
+   "lang": "en",
+   "places": [
+    "Russia",
+    "Ukraine"
+   ],
+   "published_at": "2026-08-07T12:34:13",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "UN chief condemns both Ukraine and Russia amid escalation in war"
+  },
+  "b-97c82dbe18f1": {
+   "developments": [
+    17
+   ],
+   "entities": [],
+   "excerpt": "The Bald Range wildfire in British Columbia, still considered \"out of control\", has spread to more than 36 sq miles (95 sq km).",
+   "lang": "en",
+   "places": [
+    "British Columbia",
+    "Canada"
+   ],
+   "published_at": "2026-08-08T22:01:54",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Fast-moving Canada wildfire doubles in size forcing thousands to flee homes"
+  },
+  "b-99611c6778ce": {
+   "developments": [],
+   "entities": [
+    "Ken Mochizuki",
+    "Rexan Wong Chak-chi",
+    "Wong"
+   ],
+   "excerpt": "At just 18, Hong Kong tech enthusiasts Rexan Wong Chak-chi and Ken Mochizuki are both rushing to deliver their business ideas.\nHowever, their choices of launch pad could not be further apart. While Wong is eyeing Silicon Valley in the United States for better support, Mochizuki is keen to stay in the city and contribute to the local community.\nTheir contrasting approaches highlight Hong Kong’s adv",
+   "lang": "en",
+   "places": [
+    "China",
+    "Hong Kong",
+    "Silicon Valley",
+    "US"
+   ],
+   "published_at": "2026-08-07T00:30:08",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "Hong Kong aims to be a global tech hub, but can it hold on to its young talent?"
+  },
+  "b-9f2919e55685": {
+   "developments": [],
+   "entities": [
+    "Trump"
+   ],
+   "excerpt": "The US, Iran and Oman are close to a temporary deal to reopen the Strait of Hormuz.",
+   "lang": "en",
+   "places": [
+    "Hormuz",
+    "Iran",
+    "Oman",
+    "Strait of Hormuz",
+    "US"
+   ],
+   "published_at": "2026-08-07T00:00:00",
+   "roundup": true,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Iran war live: Trump expects war to end ‘pretty soon’; Hormuz deal close"
+  },
+  "b-a0280c2a0411": {
+   "developments": [
+    9
+   ],
+   "entities": [
+    "Wildberries"
+   ],
+   "excerpt": "Ukraine continues to strike warehouses and logistics hubs run by Wildberries, which it says aid Moscow&#039;s war efforts.",
+   "lang": "en",
+   "places": [
+    "Kyiv",
+    "Moscow",
+    "Russia",
+    "Ukraine"
+   ],
+   "published_at": "2026-08-07T18:54:55",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Several killed in attacks on Ukraine as Kyiv hits Russian e-commerce giant"
+  },
+  "b-a2c10ae4f135": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "Iran can exploit dependence on Hormuz today, but prolonged disruption will erode that leverage",
+   "lang": "en",
+   "places": [
+    "Hormuz",
+    "Iran"
+   ],
+   "published_at": "2026-08-07T12:28:52",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Iran’s grip on trade is a potent weapon, but it has an expiry date"
+  },
+  "b-a628f7998e19": {
+   "developments": [],
+   "entities": [
+    "CJP"
+   ],
+   "excerpt": "Weeks after the CJP protests shook Delhi, a new youth-led movement over jobs and recruitment is gathering force in Jharkhand.",
+   "lang": "en",
+   "places": [
+    "Delhi",
+    "India",
+    "Jharkhand"
+   ],
+   "published_at": "2026-08-07T08:32:57",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "A new youth agitation grips an Indian state after 'cockroach' protests"
+  },
+  "b-a768c0d474ff": {
+   "developments": [],
+   "entities": [
+    "Zawtar al-Gharbiyah"
+   ],
+   "excerpt": "Soldiers disarm unexploded ordnance in Zawtar al-Gharbiyah, near where Israeli forces reportedly built an earth barrier.",
+   "lang": "en",
+   "places": [
+    "Israel",
+    "Lebanon"
+   ],
+   "published_at": "2026-08-08T19:00:43",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Lebanese soldiers injured while Israeli troops intrude on southern town"
+  },
+  "b-aa655c8a0c72": {
+   "developments": [],
+   "entities": [
+    "Mohammed bin Salman",
+    "Shehbaz Sharif"
+   ],
+   "excerpt": "Erdogan will meet with Saudi Crown Prince Mohammed bin Salman and Pakistani PM Shehbaz Sharif, his office says.",
+   "lang": "en",
+   "places": [
+    "Erdogan",
+    "Pakistan",
+    "Saudi Arabia",
+    "Turkiye"
+   ],
+   "published_at": "2026-08-07T04:43:43",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Turkiye’s Erdogan visits Saudi Arabia: What to expect"
+  },
+  "b-ac765de3b2c1": {
+   "developments": [
+    2
+   ],
+   "entities": [
+    "Thailand Authorities"
+   ],
+   "excerpt": "Authorities say the 14-year-old killed his grandparents before gunning down five teachers at his school.",
+   "lang": "en",
+   "places": [],
+   "published_at": "2026-08-07T15:17:59",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Seven killed after teen shooter opens fire at home and school in Thailand"
+  },
+  "b-aea7f09ab6f8": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "&quot;Our main goal is to empower robots&#039; brains.&quot;\n\n\n\nChina has launched its first robot school.",
+   "lang": "en",
+   "places": [
+    "China"
+   ],
+   "published_at": "2026-08-07T11:33:28",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "First school for robots opens in China"
+  },
+  "b-b34b436cf767": {
+   "developments": [],
+   "entities": [
+    "Fano",
+    "TPLF"
+   ],
+   "excerpt": "The TPLF, Fano militias and Eritrea are redrawing the battle lines in Ethiopia’s north.",
+   "lang": "en",
+   "places": [
+    "Eritrea",
+    "Ethiopia",
+    "Northern Ethiopia"
+   ],
+   "published_at": "2026-08-07T11:19:01",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Northern Ethiopia’s shifting alliances explained"
+  },
+  "b-b7449e379a5e": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "A young deaf migrant in Spain prepares for an emotional reunion with his family in Morocco after years apart.",
+   "lang": "en",
+   "places": [
+    "Morocco",
+    "Spain"
+   ],
+   "published_at": "2026-08-07T14:18:53",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Imade"
+  },
+  "b-b982a13c17bc": {
+   "developments": [],
+   "entities": [
+    "Al Jazeera",
+    "Barzani",
+    "Kurdish",
+    "Masrour Barzani"
+   ],
+   "excerpt": "In an interview with Al Jazeera, Masrour Barzani denies any &#039;pressure&#039; to enter the Iran war despite over 1,000 attacks.",
+   "lang": "en",
+   "places": [
+    "Iran",
+    "Iraq"
+   ],
+   "published_at": "2026-08-08T14:58:42",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Iraq’s Kurdish region wants to stay out of regional conflicts: PM Barzani"
+  },
+  "b-bb51bd99f2db": {
+   "developments": [],
+   "entities": [
+    "China Travel Service",
+    "Perry Yiu Pak-leung",
+    "Yiu"
+   ],
+   "excerpt": "Hong Kong’s tourism industry has called for more experiential events and closer cross-border cooperation to draw visitors, after tourist spending fell to HK$197.5 billion last year, 44 per cent below its 2018 level.\nLawmaker Perry Yiu Pak-leung, chairman of China Travel Service (Hong Kong) Limited, said on Friday that the fall reflected changing travel patterns, with tourists placing greater value",
+   "lang": "en",
+   "places": [
+    "Hong Kong"
+   ],
+   "published_at": "2026-08-07T04:54:03",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "Hong Kong tourism sector urges action with visitor spending 44% below 2018 level"
+  },
+  "b-bbeaad3ab24a": {
+   "developments": [
+    10
+   ],
+   "entities": [
+    "Biden",
+    "Hunter Biden",
+    "Joe Biden"
+   ],
+   "excerpt": "The younger Biden son has addressed his father&#039;s debate performance and the pardon he received after felony convictions.",
+   "lang": "en",
+   "places": [],
+   "published_at": "2026-08-08T18:55:20",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "‘Debilitating’: Hunter Biden speaks out about father Joe Biden’s cancer"
+  },
+  "b-bef7a6e7b68f": {
+   "developments": [
+    3
+   ],
+   "entities": [],
+   "excerpt": "A viral video shows medical staff protecting a patient as an earthquake struck Japan during surgery.",
+   "lang": "en",
+   "places": [
+    "Japan"
+   ],
+   "published_at": "2026-08-07T07:43:05",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Earthquake strikes as doctors perform surgery"
+  },
+  "b-bff99f9a4a75": {
+   "developments": [
+    4
+   ],
+   "entities": [
+    "Houthis",
+    "Yahya"
+   ],
+   "excerpt": "Yemen’s Iran-backed Houthis killed at least 58 government troops in missile and drone attacks on Thursday, a military source said, in one of the deadliest days of the country’s civil war in four years.\nThe attacks come as Yemen is increasingly drawn into the US-Israeli war with Iran, with the rebels stepping up attacks against both government forces and neighbouring Saudi Arabia, a key US ally and",
+   "lang": "en",
+   "places": [
+    "Iran",
+    "Israel",
+    "Saudi Arabia",
+    "US",
+    "Yemen"
+   ],
+   "published_at": "2026-08-07T03:00:56",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "Houthi attacks kill dozens of troops in Yemen, wound civilians in Saudi Arabia"
+  },
+  "b-c19e2c61d6b5": {
+   "developments": [],
+   "entities": [
+    "Australian National University",
+    "National University of Singapore",
+    "University of Hong Kong",
+    "Wang Gungwu"
+   ],
+   "excerpt": "Professor Wang Gungwu is regarded internationally as an authority on Chinese history. The 95-year-old is best known for his explorations of Chinese history in the long view, and for his writings on the Chinese diaspora. He has been a professor at the National University of Singapore since 2007 and emeritus professor at the Australian National University since 1988. He was vice-chancellor of the Un",
+   "lang": "en",
+   "places": [
+    "China"
+   ],
+   "published_at": "2026-08-07T02:57:29",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "Wang Gungwu on the lessons of Chinese history and the Cold War"
+  },
+  "b-c248b180e52a": {
+   "developments": [],
+   "entities": [
+    "CAF",
+    "FIFA",
+    "Gianni Infantino",
+    "Infantino",
+    "Patrice Motsepe"
+   ],
+   "excerpt": "CAF president Patrice Motsepe calls for good governance, as Africa throws weight behind FIFA&#039;s Gianni Infantino.",
+   "lang": "en",
+   "places": [
+    "Africa"
+   ],
+   "published_at": "2026-08-07T07:44:06",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Africa backs Infantino as CAF unanimously votes in FIFA president’s favour"
+  },
+  "b-c56ac03cd0a3": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "At least seven people have died after a teenage boy shot his grandparents before opening fire on a school in Bangkok.",
+   "lang": "en",
+   "places": [
+    "Bangkok",
+    "Thailand"
+   ],
+   "published_at": "2026-08-07T17:17:36",
+   "roundup": true,
+   "source": "BBC World",
+   "stored": true,
+   "title": "What we know so far about the deadly Thailand shooting"
+  },
+  "b-c669f9054b1d": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "Chae Young-sun, a 69-year-old retired government employee living in the South Korean city of Gwangju, has stopped taking daily walks since a searing heatwave began gripping most parts of the country more than a month ago.\n“I’m worried about my health because it’s simply too hot to go for a walk,” he said.\n“Yesterday afternoon, I finally summoned the courage to take a short walk around my neighbour",
+   "lang": "en",
+   "places": [
+    "Asia",
+    "Gwangju",
+    "South Korea"
+   ],
+   "published_at": "2026-08-07T00:00:19",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "As record heatwave hits Asia, fears of energy crisis and health risks mount"
+  },
+  "b-c7995a8a5210": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "Ukrainian emergency workers warn of growing Russian attacks on hospitals and ambulances.",
+   "lang": "en",
+   "places": [
+    "Russia",
+    "Ukraine"
+   ],
+   "published_at": "2026-08-08T00:02:49",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "'I ran because I knew I would die': Russian drones target medics in Ukraine"
+  },
+  "b-c89927f50e5c": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "Thousands of people in India have been displaced since July after monsoon rains triggered severe flooding.",
+   "lang": "en",
+   "places": [
+    "Assam",
+    "India"
+   ],
+   "published_at": "2026-08-07T02:53:19",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "More than one million affected by floods in India’s Assam state"
+  },
+  "b-cae8ffb97ad4": {
+   "developments": [
+    5
+   ],
+   "entities": [],
+   "excerpt": "The Saudi crown prince, Turkish president and Pakistani prime minister have signed a joint defence agreement in Mecca.",
+   "lang": "en",
+   "places": [
+    "Mecca",
+    "Pakistan",
+    "Saudi Arabia",
+    "Turkey",
+    "Turkiye"
+   ],
+   "published_at": "2026-08-07T12:44:41",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Saudi Arabia, Turkiye and Pakistan sign joint defence pact"
+  },
+  "b-cb5a7c0f7932": {
+   "developments": [],
+   "entities": [
+    "BBC"
+   ],
+   "excerpt": "Officials are still working to contain the blazes that have burned down at least 860 buildings, including hundreds of homes.",
+   "lang": "en",
+   "places": [
+    "Spokane"
+   ],
+   "published_at": "2026-08-07T01:10:58",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "‘Wiped out’ - BBC reports from Spokane neighbourhood devastated by fires"
+  },
+  "b-cc3edbe4a373": {
+   "developments": [
+    16
+   ],
+   "entities": [
+    "Albin Kurti"
+   ],
+   "excerpt": "An opposition lawmaker threw eggs at acting Prime Minster Albin Kurti during a parliamentary session.",
+   "lang": "en",
+   "places": [
+    "Kosovo"
+   ],
+   "published_at": "2026-08-08T16:09:06",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Opposition MP hurls eggs at Kosovo Prime Minister"
+  },
+  "b-ccc8fdbd43d8": {
+   "developments": [],
+   "entities": [
+    "Republican",
+    "Trump"
+   ],
+   "excerpt": "Republican senators are using the summer recess to avoid politically difficult votes.",
+   "lang": "en",
+   "places": [],
+   "published_at": "2026-08-08T01:28:39",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Trump shifts blame to Republicans for waning support from public"
+  },
+  "b-d02076a07db1": {
+   "developments": [],
+   "entities": [
+    "Ali al-Zaidi"
+   ],
+   "excerpt": "Prime Minister Ali al-Zaidi had cancelled an earlier Saudi trip after deadly July 29 US-Saudi strikes on Iraq.",
+   "lang": "en",
+   "places": [
+    "Iraq",
+    "Riyadh",
+    "Saudi Arabia",
+    "US"
+   ],
+   "published_at": "2026-08-08T03:42:43",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Saudi intelligence chief meets Iraqi PM, renews Riyadh visit invitation"
+  },
+  "b-d314e2520300": {
+   "developments": [],
+   "entities": [
+    "De la Espriella",
+    "Gustavo Petro"
+   ],
+   "excerpt": "The new president, who replaces leftist Gustavo Petro, continues the rightward political shift in Latin America.",
+   "lang": "en",
+   "places": [
+    "Colombia",
+    "Latin America"
+   ],
+   "published_at": "2026-08-08T00:31:52",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "De la Espriella sworn in as Colombia’s leader, vows armed group crackdown"
+  },
+  "b-d330b0efa20d": {
+   "developments": [],
+   "entities": [
+    "JD Vance",
+    "Vance"
+   ],
+   "excerpt": "US Vice President JD Vance claims Washington has “destroyed” Iran’s nuclear programme and degraded its military.",
+   "lang": "en",
+   "places": [
+    "Iran",
+    "US",
+    "Washington"
+   ],
+   "published_at": "2026-08-08T23:27:55",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Vance says US ‘destroyed’ Iran’s nuclear programme"
+  },
+  "b-d53ac31ed492": {
+   "developments": [
+    6
+   ],
+   "entities": [],
+   "excerpt": "Authorities say they broke up one of the largest criminal networks running migrant smuggling in Western Mediterranean.",
+   "lang": "en",
+   "places": [
+    "Mediterranean",
+    "Spain",
+    "Western Mediterranean"
+   ],
+   "published_at": "2026-08-07T17:07:29",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Mediterranean smuggling network ‘dismantled’ in Spain-led raid, 78 arrested"
+  },
+  "b-d5c2519b02da": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "Police in the French capital tighten rules for riders after a sharp increase in fatal accidents.",
+   "lang": "en",
+   "places": [
+    "France",
+    "Paris"
+   ],
+   "published_at": "2026-08-08T20:18:28",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Paris tells e-scooter riders to wear safety gear or face fines"
+  },
+  "b-d5c311ad5951": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "At least 200 people have been evacuated after a wildfire broke out near Italy’s Lake Garda.",
+   "lang": "en",
+   "places": [
+    "Italy",
+    "Lake Garda"
+   ],
+   "published_at": "2026-08-08T19:13:03",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "At least 200 people evacuated as wildfire rages near Lake Garda"
+  },
+  "b-d6ac3fb43749": {
+   "developments": [],
+   "entities": [
+    "Pan-American Highway"
+   ],
+   "excerpt": "Government promises harsh response following explosives attack on Pan-American Highway in southwest of country.",
+   "lang": "en",
+   "places": [
+    "Colombia"
+   ],
+   "published_at": "2026-08-08T22:22:36",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Car bomb attack rattles Colombia after inauguration of hardline president"
+  },
+  "b-d792262d4d6b": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "Ivory Coast&#039;s &#039;talking drum&#039; returns to home village after 110 years",
+   "lang": "en",
+   "places": [
+    "Ivory Coast"
+   ],
+   "published_at": "2026-08-08T12:52:04",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Ivory Coast’s ‘talking drum’ returns to home village after 110 years"
+  },
+  "b-d8b353ae65ba": {
+   "developments": [
+    2
+   ],
+   "entities": [
+    "Dechrapee Kongdee"
+   ],
+   "excerpt": "⁠At least one teacher was killed and four other people injured by a student who opened fire at a school in Thailand on Friday before killing himself, authorities ‌said.\nLieutenant Colonel Dechrapee Kongdee Nonthaburi Provincial Police Commander confirmed the casualties and said the suspected gunman had died by suicide. Among those injured were one teacher and three students, he said.\nThe incident ",
+   "lang": "en",
+   "places": [
+    "Bang Kruai",
+    "Bangkok",
+    "Nonthaburi",
+    "Thailand"
+   ],
+   "published_at": "2026-08-07T03:55:48",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "Teacher and gunman killed in Thailand school shooting"
+  },
+  "b-d8b4e8c3a9e7": {
+   "developments": [],
+   "entities": [
+    "FIFA",
+    "Gianni Infantino",
+    "Infantino"
+   ],
+   "excerpt": "How does FIFA presidency stand? Norway wants resignation, but Argentina and Mexico join Africa in Gianni Infantino camp.",
+   "lang": "en",
+   "places": [
+    "Africa",
+    "Argentina",
+    "Mexico",
+    "Norway"
+   ],
+   "published_at": "2026-08-07T12:23:03",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Argentina and Mexico join Africa in backing FIFA’s Infantino: What to know"
+  },
+  "b-d9366bf067ee": {
+   "developments": [
+    15
+   ],
+   "entities": [
+    "Republican",
+    "Todd Blanche",
+    "Trump"
+   ],
+   "excerpt": "The vote cements Trump's former criminal defence lawyer as the nation's top law enforcement official despite a rare pushback from some Republicans.",
+   "lang": "en",
+   "places": [
+    "US"
+   ],
+   "published_at": "2026-08-08T15:56:39",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Trump's ex-lawyer Todd Blanche narrowly confirmed as US attorney general"
+  },
+  "b-dcd8f3a3d918": {
+   "developments": [],
+   "entities": [
+    "NATO"
+   ],
+   "excerpt": "Drone incidents in Europe igniting fears that Moscow&#039;s war on Kyiv is entangling NATO nations.",
+   "lang": "en",
+   "places": [
+    "Bulgaria",
+    "Europe",
+    "Germany",
+    "Kyiv",
+    "Moscow",
+    "Russia"
+   ],
+   "published_at": "2026-08-08T12:30:52",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Drones spotted in Bulgaria and Germany raise concerns about Russian escalation"
+  },
+  "b-ddebe94d0f58": {
+   "developments": [],
+   "entities": [
+    "Voepass"
+   ],
+   "excerpt": "Official says plane was irregularly cleared for departure before crash that killed 62 people outside Sao Paulo.",
+   "lang": "en",
+   "places": [
+    "Brazil",
+    "Sao Paulo"
+   ],
+   "published_at": "2026-08-07T01:17:13",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Brazil formally accuses 16 people over 2024 Voepass deadly plane crash"
+  },
+  "b-de92261449f3": {
+   "developments": [],
+   "entities": [
+    "Asian",
+    "Gold",
+    "Shanghai Gold Exchange"
+   ],
+   "excerpt": "Gold prices have “explosive” upside potential, according to analysts, boding well for Hong Kong’s ambitions as a trading hub as Asian central banks continue to have a voracious appetite for stockpiling bullion.\nSupporting the outlook, Beijing – which has added to its gold reserve for 20 straight months – wants to better connect the Shanghai Gold Exchange to Hong Kong, and the South Korean central ",
+   "lang": "en",
+   "places": [
+    "Beijing",
+    "Hong Kong",
+    "South Korea"
+   ],
+   "published_at": "2026-08-07T00:00:14",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "Gold’s price potential still ‘explosive’ amid Beijing hoarding, Hong Kong trading push"
+  },
+  "b-e172ae5697fb": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "For decades, an Indian man's lime shoes have been a grim trail marker for many climbing the world's highest peak.",
+   "lang": "en",
+   "places": [
+    "Everest",
+    "India"
+   ],
+   "published_at": "2026-08-08T00:29:27",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "He's been frozen on Everest for 30 years, now 'Green Boots' may finally be coming home"
+  },
+  "b-e317ccf9e541": {
+   "developments": [],
+   "entities": [
+    "Alex Alfirraz Scheers",
+    "Defence"
+   ],
+   "excerpt": "Defence analyst Alex Alfirraz Scheers says the Saudi Arabia-Pakistan-Turkiye defence agreement signals a realignment",
+   "lang": "en",
+   "places": [
+    "Pakistan",
+    "Saudi Arabia",
+    "Turkiye",
+    "US"
+   ],
+   "published_at": "2026-08-07T16:23:33",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Saudi Arabia, Pakistan, Turkiye defence pact challenges US role"
+  },
+  "b-e5dd3051c082": {
+   "developments": [],
+   "entities": [
+    "Central Yacht",
+    "Paul Brackley"
+   ],
+   "excerpt": "From wealth and waterways to manufacturing, the Greater Bay Area possesses the essential ingredients to become an international yacht hub, with the integrated economic and business zone having more to offer than many other regions, according to an industry veteran.\nLuxury vessels could help unlock demand for the economy, and with its manifold strengths, Hong Kong could make a splash and turn the b",
+   "lang": "en",
+   "places": [
+    "China",
+    "Greater Bay Area",
+    "Hong Kong"
+   ],
+   "published_at": "2026-08-07T02:00:16",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "Next great harbour? China’s Greater Bay Area has tools to be a yacht hub: industry veteran"
+  },
+  "b-e7453aa2a676": {
+   "developments": [
+    7
+   ],
+   "entities": [
+    "Abelardo De La Espriella",
+    "FIFA",
+    "Gianni Infantino",
+    "Infantino",
+    "South American",
+    "inauguration FIFA"
+   ],
+   "excerpt": "FIFA president Gianni Infantino gets South American football&#039;s backing while at Abelardo de la Espriella&#039;s inauguration.",
+   "lang": "en",
+   "places": [
+    "Colombia"
+   ],
+   "published_at": "2026-08-08T05:10:27",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "FIFA’s Infantino backed in Colombia where he attends president inauguration"
+  },
+  "b-e7dd506993b5": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "US labour market loses 23,000 jobs in July as education, government and retail sectors record significant declines.",
+   "lang": "en",
+   "places": [
+    "US"
+   ],
+   "published_at": "2026-08-07T16:25:35",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "US labour market sheds jobs in July as labour force participation slumps"
+  },
+  "b-eada531ed152": {
+   "developments": [
+    1
+   ],
+   "entities": [
+    "Meta"
+   ],
+   "excerpt": "The ruling is in addition to $375m in fines Meta was already ordered to pay in the case, for a total of $942m.",
+   "lang": "en",
+   "places": [],
+   "published_at": "2026-08-07T09:22:03",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Meta fined $567m in largest child safety ruling against social media giant"
+  },
+  "b-eae5f4231851": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "Puerto Rico is beginning 48-hour water rationing for more than 180,000 households as severe drought depletes reservoirs.",
+   "lang": "en",
+   "places": [
+    "Puerto Rico"
+   ],
+   "published_at": "2026-08-08T00:13:53",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Puerto Rico rations water as severe drought leaves reservoirs depleted"
+  },
+  "b-f0cf5d04562d": {
+   "developments": [
+    9
+   ],
+   "entities": [
+    "Attack",
+    "US Senate"
+   ],
+   "excerpt": "Attack comes as US Senate passes new Russia sanctions and Kyiv appeals for air defence interceptors.",
+   "lang": "en",
+   "places": [
+    "Kyiv",
+    "Russia",
+    "US",
+    "Ukraine"
+   ],
+   "published_at": "2026-08-08T04:18:45",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Russian strikes near Ukrainian capital kill three, including child"
+  },
+  "b-f1ef34a04103": {
+   "developments": [],
+   "entities": [
+    "Donald Trump",
+    "White House"
+   ],
+   "excerpt": "A federal appeals court has ordered President Donald Trump’s administration to halt construction on a ballroom project.",
+   "lang": "en",
+   "places": [
+    "US"
+   ],
+   "published_at": "2026-08-07T21:18:20",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "US appeals court halts White House ballroom construction"
+  },
+  "b-f38929d8a3a2": {
+   "developments": [],
+   "entities": [
+    "Raphaël Graven"
+   ],
+   "excerpt": "Raphaël Graven, 46, died in August 2025, with his death live broadcast on the streaming platform Kick.",
+   "lang": "en",
+   "places": [
+    "France"
+   ],
+   "published_at": "2026-08-07T00:51:40",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Two people convicted in relation to death of French streamer"
+  },
+  "b-f41d597bd60c": {
+   "developments": [],
+   "entities": [
+    "London 2012 Olympic Games"
+   ],
+   "excerpt": "Football association apologises over claims relating to qualifiers for World Cup 2014 and the London 2012 Olympic Games.",
+   "lang": "en",
+   "places": [
+    "South Korea FA"
+   ],
+   "published_at": "2026-08-08T07:49:21",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "South Korea FA apologises over ‘sexual services’ allegations"
+  },
+  "b-f421521ea846": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "Heavy rains have pounded New Delhi and its surrounding towns, disrupting traffic and leaving commuters stranded.",
+   "lang": "en",
+   "places": [
+    "New Delhi"
+   ],
+   "published_at": "2026-08-07T17:19:06",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "New Delhi on red alert as heavy rains pound the city"
+  },
+  "b-f4d707e16b02": {
+   "developments": [
+    8
+   ],
+   "entities": [],
+   "excerpt": "Italy introduced border controls following an influx of about 78,000 migrants from  Morocco into the neighbouring Spanish exclave of Ceuta.",
+   "lang": "en",
+   "places": [
+    "Ceuta",
+    "Italy",
+    "Morocco",
+    "Spain"
+   ],
+   "published_at": "2026-08-08T14:25:19",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Spain imposes border controls against Italy as row over Ceuta migrant influx intensifies"
+  },
+  "b-f61532134bf2": {
+   "developments": [],
+   "entities": [
+    "Abu Safia"
+   ],
+   "excerpt": "Fears increase for life of Hussam Abu Safia detained by Israel amid reports of torture and lack of medical care.",
+   "lang": "en",
+   "places": [
+    "Gaza",
+    "Hussam Abu Safia",
+    "Israel"
+   ],
+   "published_at": "2026-08-08T17:26:59",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Gaza health chief urges action to ‘save’ Dr Abu Safia before it’s too late"
+  },
+  "b-f8b49596c716": {
+   "developments": [
+    1
+   ],
+   "entities": [
+    "Facebook",
+    "Instagram",
+    "Meta"
+   ],
+   "excerpt": "The ruling comes in the second phase of a landmark trial, with the Instagram, Facebook owner also losing in March.",
+   "lang": "en",
+   "places": [
+    "New Mexico"
+   ],
+   "published_at": "2026-08-07T01:51:03",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "New Mexico court orders Meta to pay $567m over harm to youths"
+  },
+  "b-f8c5e926fde6": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "Feliks the eagle was abducted as he first flew the nest in Serbia and wound up in the Middle East with poachers who demanded a ransom.",
+   "lang": "en",
+   "places": [
+    "Middle East",
+    "Serbia"
+   ],
+   "published_at": "2026-08-07T20:40:56",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Kidnapped rare Serbian eagle freed into wild after rescue"
+  },
+  "b-f931fd00ee42": {
+   "developments": [],
+   "entities": [
+    "al-Assad"
+   ],
+   "excerpt": "Judicial and security sources say a routine embassy visit landed a wanted former Syrian general in a Beirut jail cell.",
+   "lang": "en",
+   "places": [
+    "Beirut",
+    "Lebanon",
+    "Syria"
+   ],
+   "published_at": "2026-08-08T15:42:03",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Lebanon ‘detains’ former al-Assad-era general, weighs handing him to Syria"
+  },
+  "b-f95bd8948efa": {
+   "developments": [],
+   "entities": [
+    "Fahrenheit",
+    "Hong Kong Observatory"
+   ],
+   "excerpt": "Temperatures in some parts of Hong Kong could hit 37 degrees Celsius (99 Fahrenheit) or above over the coming weekend under the influence of Tropical Cyclone Dolphin, according to the city’s forecaster, which warned residents to take precautions against heatstroke.\nThe Hong Kong Observatory said weak winds would linger over the city on Friday, with hot weather persisting over the next few days and",
+   "lang": "en",
+   "places": [
+    "Hong Kong"
+   ],
+   "published_at": "2026-08-07T03:40:14",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "Temperatures could hit 37 degrees Celsius in Hong Kong over extremely hot weekend"
+  },
+  "b-f9b94cc47382": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "Gaza’s damaged water infrastructure is leaving families struggling to access safe drinking water.",
+   "lang": "en",
+   "places": [
+    "Gaza"
+   ],
+   "published_at": "2026-08-07T19:47:42",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Contaminated water putting Gaza families at risk"
+  },
+  "b-fd95ffe6a51a": {
+   "developments": [
+    7
+   ],
+   "entities": [
+    "FIFA",
+    "Gianni Infantino",
+    "Norway Football Federation"
+   ],
+   "excerpt": "Norway’s football federation has called on Gianni Infantino to resign.",
+   "lang": "en",
+   "places": [
+    "Norway"
+   ],
+   "published_at": "2026-08-08T04:37:56",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Norway Football Federation calls for FIFA president to resign"
+  }
+ },
+ "shift_hours": 1376.8,
+ "situations": {
+  "eu-china-trade": {
+   "primary_actors": [
+    "China",
+    "European Union"
+   ],
+   "status": "active",
+   "title": "EU–China trade dispute"
+  },
+  "gaza-ceasefire": {
+   "primary_actors": [
+    "Hamas",
+    "Israel"
+   ],
+   "status": "active",
+   "title": "Gaza ceasefire negotiations"
+  },
+  "russia-ukraine-war": {
+   "primary_actors": [
+    "Russia",
+    "Ukraine"
+   ],
+   "status": "active",
+   "title": "Russia–Ukraine war"
+  },
+  "sudan-civil-war": {
+   "primary_actors": [
+    "Rapid Support Forces",
+    "Sudan"
+   ],
+   "status": "active",
+   "title": "Sudan civil war"
+  },
+  "us-iran": {
+   "primary_actors": [
+    "Iran",
+    "United States"
+   ],
+   "status": "active",
+   "title": "US–Iran negotiations and confrontation"
+  }
+ },
+ "split": "holdout",
+ "window": "2026-08-07"
+}

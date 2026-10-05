@@ -1,0 +1,1138 @@
+{
+ "R001": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Hong Kong beauty-sales allegations and ex-diplomats' letter on Israel share no actor, place or matter.",
+  "confidence": "high"
+ },
+ "R002": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": "commentary",
+  "rationale": "B is an explainer of the jury's options in the Clancy trial, analysis rather than a new occurrence relating to A's deadlock.",
+  "confidence": "medium"
+ },
+ "R003": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": "commentary",
+  "rationale": "A is the SCO summit in Bishkek; B is commentary on prediction markets for the separate Trump-Xi White House summit.",
+  "confidence": "high"
+ },
+ "R004": {
+  "label": "same_calamity_lifecycle",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "A reports Nepal's appeal for foreign rescue aid and B the rescue effort and death toll for the same Nepal-China border flash flood with workers trapped in hydropower tunnels.",
+  "confidence": "medium"
+ },
+ "R005": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": "commentary",
+  "rationale": "Both are analysis pieces (BBC assessment of what Xi got, SCMP reader Q&A) about the same Xi state visit, not distinct occurrences.",
+  "confidence": "medium"
+ },
+ "R006": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": "commentary",
+  "rationale": "A is analysis of Slovenia's policy shift; B is a behind-the-scenes piece on Al Jazeera's UNGA coverage.",
+  "confidence": "high"
+ },
+ "R007": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Trump's remark on Taiwan talks and the ambassador's disclosure of the weapons question are separate post-summit statements; neither responds to the other.",
+  "confidence": "medium"
+ },
+ "R008": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": "commentary",
+  "rationale": "B is analysts' commentary on Singapore's fund-manager incentives; A reacts to Singapore's scheme, not to B.",
+  "confidence": "medium"
+ },
+ "R009": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": "commentary",
+  "rationale": "A is commentary on the Harry-William rift; B is Meghan's reported Netflix talks, with no stated link.",
+  "confidence": "high"
+ },
+ "R010": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Pakistani strikes in Afghanistan and Saudi-Turkish-Pakistani talks on Yemen are different matters sharing only Pakistan.",
+  "confidence": "high"
+ },
+ "R011": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": "commentary",
+  "rationale": "A is a weekend reading digest; B is the announced list of tariff cuts following the summit.",
+  "confidence": "high"
+ },
+ "R012": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": "SAME_DEVELOPMENT_SUSPECTED",
+  "flag": "commentary",
+  "rationale": "Both pieces analyse the criticism and legality of the same taxpayer-funded Trump ads, apparently the same matter in commentary form.",
+  "confidence": "medium"
+ },
+ "R013": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Manitoba premier's attack on Trump and Carney's retaliatory tariffs after talks collapsed share only the US-Canada trade feud; no explicit link.",
+  "confidence": "medium"
+ },
+ "R014": {
+  "label": "reaction_to",
+  "direction": "B->A",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "B's Araghchi warning is reported as coming after Washington rejected the seven-day Hormuz roadmap, which is A.",
+  "confidence": "medium"
+ },
+ "R015": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Sanchez's disinformation accusation and prosecutors' report of sexual assaults in Ceuta share the Ceuta crisis but no relation.",
+  "confidence": "high"
+ },
+ "R016": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": "commentary",
+  "rationale": "Both are analysis pieces on separate aspects of the summit outcomes (crisis prevention, WWII remains).",
+  "confidence": "medium"
+ },
+ "R017": {
+  "label": "same_calamity_lifecycle",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "A (survivors returning to flood-ravaged homes in Nuwakot) and B (rescue and death toll) are stages of the same late-August Nepal flash flood.",
+  "confidence": "medium"
+ },
+ "R018": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Gaza wedding feature and condemnation over the WCK probe share only the Gaza war.",
+  "confidence": "high"
+ },
+ "R019": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Araghchi's war warning and Trump's expectation of new talks are separate statements; B does not respond to A.",
+  "confidence": "medium"
+ },
+ "R020": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Iran's denial over the airbase attack and the UK briefing on Russian threats concern different actors and matters.",
+  "confidence": "high"
+ },
+ "R021": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Harvey's pivot to Kimi K3 and US-China AI bloc competition in Southeast Asia share only the topic.",
+  "confidence": "high"
+ },
+ "R022": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "CIA warning of Russian drone plot and France protecting a Saudi terminal from Houthis are unrelated.",
+  "confidence": "high"
+ },
+ "R023": {
+  "label": "same_visit_or_summit",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "A (Trump's AI remarks at the White House luncheon with tech bosses) and B (voluntary AI agreement signed at the tech summit) belong to the same White House AI meeting.",
+  "confidence": "medium"
+ },
+ "R024": {
+  "label": "AMBIGUOUS",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "The march denouncing Netanyahu may be a protest at his UNGA appearance, but the text does not state its venue or link to the speech; that would settle same_visit_or_summit.",
+  "confidence": "low"
+ },
+ "R025": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": "commentary",
+  "rationale": "A analyses Chinese CEOs at the state dinner; B is a Latin America reading digest and poll.",
+  "confidence": "high"
+ },
+ "R026": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": "commentary",
+  "rationale": "B is BBC analysis of the Xi visit's results rather than a distinct occurrence relating to the White House tour in A.",
+  "confidence": "medium"
+ },
+ "R027": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "White House nominations list and a pest-control order are unrelated documents.",
+  "confidence": "high"
+ },
+ "R028": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": "commentary",
+  "rationale": "B is a reader Q&A live article on the summit, commentary rather than an occurrence linked to the tour in A.",
+  "confidence": "medium"
+ },
+ "R029": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Settlement re-establishment and Jewish activists' protective presence share only the West Bank topic.",
+  "confidence": "high"
+ },
+ "R030": {
+  "label": "same_calamity_lifecycle",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Haze in Sarawak from Indonesian forest fires and orangutan habitat destroyed by wildfires in Borneo appear to be effects of the same ongoing Indonesian Borneo fire episode on the same day.",
+  "confidence": "low"
+ },
+ "R031": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "B is a new rain-triggered flood and landslide event, distinct from the August flood whose aftermath A reports.",
+  "confidence": "high"
+ },
+ "R032": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": "commentary",
+  "rationale": "B is commentary on Harry and Meghan's brand; A is Meghan's Netflix talks.",
+  "confidence": "high"
+ },
+ "R033": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Estonia's arson accusation against Russia and Taiwan's resilience planning are unrelated.",
+  "confidence": "high"
+ },
+ "R034": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Trump's claim about discussing prisoners and a feature on Xi photos at the White House share only the summit context.",
+  "confidence": "medium"
+ },
+ "R035": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Council fisheries funding position and the Commission ocean report are separate EU acts.",
+  "confidence": "high"
+ },
+ "R036": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": "commentary",
+  "rationale": "B analyses the contrasting UN treatment of Israel and Palestine; it is commentary on A's speech, not a distinct occurrence.",
+  "confidence": "medium"
+ },
+ "R037": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "B's tourism impact refers to the earlier devastating floods, not to the new floods and landslides in A.",
+  "confidence": "medium"
+ },
+ "R038": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": "commentary",
+  "rationale": "State-dinner CEO analysis and European competitiveness discussion share no matter.",
+  "confidence": "high"
+ },
+ "R039": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Hormuz tensions and a Cuban official decrying US sanctions share only the US as actor.",
+  "confidence": "high"
+ },
+ "R040": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Soldiers in Qusra and settlers burning machinery near Hebron are separate incidents in different places.",
+  "confidence": "high"
+ },
+ "R041": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "China's AI-relationship crackdown and paid romantic photo shoots share only a broad topic.",
+  "confidence": "high"
+ },
+ "R042": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": "commentary",
+  "rationale": "US-Venezuela oil deal analysis and Iran sanctions commentary are unrelated.",
+  "confidence": "high"
+ },
+ "R043": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "US withdrawal from Iraq and Trump's claim the Iran war ends soon are not explicitly linked.",
+  "confidence": "high"
+ },
+ "R044": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": "commentary",
+  "rationale": "European competitiveness discussion and Latin America digest/poll are unrelated.",
+  "confidence": "high"
+ },
+ "R045": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": "SAME_DEVELOPMENT_SUSPECTED",
+  "flag": null,
+  "rationale": "Both report the same Aug 31 rescue status and missing count for workers trapped in hydropower tunnels after the Nepal-Tibet flood.",
+  "confidence": "medium"
+ },
+ "R046": {
+  "label": "same_visit_or_summit",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Pope Leo's meeting with abuse survivors and his address to bishops both took place in Lourdes on the same day of his France visit.",
+  "confidence": "high"
+ },
+ "R047": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": "commentary",
+  "rationale": "Trump's Kim remark and a global relations digest are unrelated.",
+  "confidence": "high"
+ },
+ "R048": {
+  "label": "same_visit_or_summit",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Healey's speech is explicitly his first speech to the Labour Party annual conference launched in A.",
+  "confidence": "high"
+ },
+ "R049": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Yemen health minister warning and a front-line reportage share only the Yemen war.",
+  "confidence": "high"
+ },
+ "R050": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Possible House probe into ballroom donations and Democrats' youth vote strategy are not linked.",
+  "confidence": "high"
+ },
+ "R051": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Amicro IPO and a customs seizure of slimming injections are unrelated.",
+  "confidence": "high"
+ },
+ "R052": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "A describes the cumulative missile campaign on steelworks; B is a specific Kyiv strike with no stated link.",
+  "confidence": "high"
+ },
+ "R053": {
+  "label": "same_calamity_lifecycle",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "China's warning of further glacier collapse and Nepal's tunnel rescue both concern the same Tibet-Nepal border flood and mudslide.",
+  "confidence": "high"
+ },
+ "R054": {
+  "label": "same_calamity_lifecycle",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Survivors returning home and relatives searching for the missing are stages of the same Nepal flash flood.",
+  "confidence": "medium"
+ },
+ "R055": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": "commentary",
+  "rationale": "A is analysts' commentary on Southeast Asian reaction to the summit; B is Trump's Taiwan remark.",
+  "confidence": "medium"
+ },
+ "R056": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Bessent's vow of toughest Iran sanctions and the Hezbollah designation are not explicitly linked as one package or follow-up.",
+  "confidence": "low"
+ },
+ "R057": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Channel crossing deaths and police tear gas on a beach share place and topic but no stated link.",
+  "confidence": "medium"
+ },
+ "R058": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": "commentary",
+  "rationale": "Analysis of Trump's rejection and UK arrests near a US base are unrelated.",
+  "confidence": "high"
+ },
+ "R059": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": "commentary",
+  "rationale": "A is analysis of why Trump rejected Iran's plan; B's oil surge is caused by the rejection itself, not by A.",
+  "confidence": "medium"
+ },
+ "R060": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Jewish activists' protective presence and settler attacks in Qaryut share only the West Bank topic.",
+  "confidence": "high"
+ },
+ "R061": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "EU trade-power deliberations and the Commission daily news item on Democratic Resilience are unrelated.",
+  "confidence": "high"
+ },
+ "R062": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Peng Liyuan's museum visit and Nepal's climate appeal are unrelated.",
+  "confidence": "high"
+ },
+ "R063": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Ambassador Xie's remark and the US National Day note are separate acts sharing only the bilateral relationship.",
+  "confidence": "high"
+ },
+ "R064": {
+  "label": "same_visit_or_summit",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "A includes the Madrid welcome and first day of Macron's state visit; B is the final day of the same two-day visit.",
+  "confidence": "medium"
+ },
+ "R065": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "EU defence priority projects and Sino-German trade call are unrelated.",
+  "confidence": "high"
+ },
+ "R066": {
+  "label": "AMBIGUOUS",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "The Daily News excerpt shows only the Democratic Resilience item; if its body lists the EUCCS proposal it is the same Development, otherwise no relation.",
+  "confidence": "low"
+ },
+ "R067": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Russian missile test near Kuril islands and a strike on a Ukraine mall share only Russia.",
+  "confidence": "high"
+ },
+ "R068": {
+  "label": "same_calamity_lifecycle",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Ebola spread warning and vaccine doses arriving are stages of the same DRC Ebola outbreak.",
+  "confidence": "high"
+ },
+ "R069": {
+  "label": "same_attack_wave",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "B reports Russia continuing to pound Kyiv right after the Academy of Sciences strike in A, part of the same round-the-clock assault on the capital.",
+  "confidence": "medium"
+ },
+ "R070": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Meta settlement prompting Asean calls and the FTC suit against Amazon are separate matters.",
+  "confidence": "high"
+ },
+ "R071": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": "commentary",
+  "rationale": "UAE drone interception and analysis of Greece's missile deal are not linked.",
+  "confidence": "high"
+ },
+ "R072": {
+  "label": "same_calamity_lifecycle",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Both are stages of the same China-Nepal border glacier/flood disaster: A is China's warning of further collapses as the toll nears 1,000, B the rescue operations and rising death toll.",
+  "confidence": "high"
+ },
+ "R073": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "A reports new landslides from fresh heavy rain a month after the floods, while B is a missing person from the original August floods found safe; different hazard episodes.",
+  "confidence": "medium"
+ },
+ "R074": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "A Blue Nile curfew motorcycle seizure and Ethiopia's accusation over Tigray share only the region and actor Sudan.",
+  "confidence": "high"
+ },
+ "R075": {
+  "label": "same_calamity_lifecycle",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Both concern the same Nepal-Tibet border flash flood: A Nepal's appeal for foreign rescue aid, B the rescue hindered in hydropower tunnels and the missing/dead count.",
+  "confidence": "medium"
+ },
+ "R076": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Soldiers throwing belongings in Qusra and Jewish activists' protective presence share only the West Bank setting.",
+  "confidence": "high"
+ },
+ "R077": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": "commentary",
+  "rationale": "A is an explainer on wheat prices and grain terminal attacks; B is a separate Russian strike on Kyiv rail workers.",
+  "confidence": "high"
+ },
+ "R078": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Bicycle offence crackdown and claw-machine theft are unrelated Hong Kong police matters.",
+  "confidence": "high"
+ },
+ "R079": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Iran touting Hormuz attacks and an assessment that a US-Iran deal is unlikely share only the US-Iran pair; neither references the other.",
+  "confidence": "medium"
+ },
+ "R080": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Gaza strike killing a Hamas commander and a settler attack on Jalud village are separate occurrences in the same conflict.",
+  "confidence": "high"
+ },
+ "R081": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": "commentary",
+  "rationale": "A is a weekend-reads digest and B an analysis of Japanese weapons plans; no occurrence relation.",
+  "confidence": "high"
+ },
+ "R082": {
+  "label": "same_calamity_lifecycle",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Both are stages of the same DR Congo Ebola outbreak: A the vaccine trial announcement and WHO warning, B the arrival of 16,000 Ervebo doses.",
+  "confidence": "high"
+ },
+ "R083": {
+  "label": "same_visit_or_summit",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Both concern the same SCO summit in Bishkek: A Xi's arrival for the summit, B Russian and Chinese leaders meeting at it.",
+  "confidence": "medium"
+ },
+ "R084": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": "commentary",
+  "rationale": "A is a weekend-reads digest that merely lists the floods; B is China's glacier-collapse warning.",
+  "confidence": "high"
+ },
+ "R085": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": "commentary",
+  "rationale": "A is a BBC assessment of what Xi did and did not obtain from the visit, commentary rather than a distinct occurrence related to B's state dinner.",
+  "confidence": "medium"
+ },
+ "R086": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": "commentary",
+  "rationale": "A is an opinion piece on Trump rejecting Iran's offer; B is a court ruling on anti-terrorism grants; unrelated.",
+  "confidence": "high"
+ },
+ "R087": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "A is Trump's later remark on Taiwan talk and B the publication of tariff-cut lists; both follow the summit but neither responds to or continues the other.",
+  "confidence": "medium"
+ },
+ "R088": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": "commentary",
+  "rationale": "B is an analysis piece on the contrasting treatment of Israel and Palestine at the UN, commentary on Netanyahu's UNGA appearance rather than an occurrence linked to A's protests.",
+  "confidence": "medium"
+ },
+ "R089": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "America.gov launch and the First Lady's garden tours are unrelated White House releases.",
+  "confidence": "high"
+ },
+ "R090": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "UK terror arrests near an air base and an explainer on Trump rejecting Iran's peace proposal share no stated link.",
+  "confidence": "high"
+ },
+ "R091": {
+  "label": "same_calamity_lifecycle",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Both are about the same DRC Ebola outbreak passing 2,500 deaths: A the UN warning of faster spread, B the vaccine trial start (the warning overlaps).",
+  "confidence": "medium"
+ },
+ "R092": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Chinese CEOs left out of the state dinner and F-16V delivery to Taiwan share only the US-China context.",
+  "confidence": "high"
+ },
+ "R093": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": "commentary",
+  "rationale": "A is an opinion piece on Hong Kong child social media use; B is a Singapore legislative plan; same topic only.",
+  "confidence": "high"
+ },
+ "R094": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "India releasing VanDyke and US revoking Latin American officials' visas are unrelated.",
+  "confidence": "high"
+ },
+ "R095": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Canada's retaliatory tariffs respond to fresh US tariffs after talks collapsed, not to A's beef tariff easing.",
+  "confidence": "high"
+ },
+ "R096": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "A jet skier's arrest during the Bangkok flood is a side incident, not a stage of the calamity like B's flight disruptions; shared flood context only.",
+  "confidence": "low"
+ },
+ "R097": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": "commentary",
+  "rationale": "A is an opinion piece on AI control; B is soybean farmers' reaction to tariff cuts; unrelated.",
+  "confidence": "high"
+ },
+ "R098": {
+  "label": "AMBIGUOUS",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "DPRK's UNGA statement and the nuclear-elimination high-level meeting fall on the same day; whether DPRK spoke at that meeting or in the general debate would settle it.",
+  "confidence": "low"
+ },
+ "R099": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "A commerce chief interview on inbound capital and a markets newsletter on IPOs share only the Hong Kong economy topic.",
+  "confidence": "high"
+ },
+ "R100": {
+  "label": "same_visit_or_summit",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Both concern Netanyahu's same visit to the UAE: A the UAE confirmation, B Shin Bet's complaint over a TV report of that trip.",
+  "confidence": "medium"
+ },
+ "R101": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "F/A-XX award to Boeing and the tungsten mining investment are separate Pentagon decisions.",
+  "confidence": "high"
+ },
+ "R102": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": "commentary",
+  "rationale": "A is analysis of a US Treasury strategy shift; B Iran condemns new US sanctions and a Trump threat without naming A's statement.",
+  "confidence": "medium"
+ },
+ "R103": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Infantino's funding offer and FIFA accusing UEFA of misinformation share the FIFA election topic but neither responds to the other.",
+  "confidence": "medium"
+ },
+ "R104": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Claw-machine theft and gym hidden cameras arrest are unrelated police cases.",
+  "confidence": "high"
+ },
+ "R105": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": "commentary",
+  "rationale": "A is an analysis of contrasting treatment at the UN; B is a UNGA Day Three roundup; commentary around the same address.",
+  "confidence": "medium"
+ },
+ "R106": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "South African mass shootings and a Detroit strip club shooting are unrelated.",
+  "confidence": "high"
+ },
+ "R107": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": "commentary",
+  "rationale": "A is settler arson at a quarry; B is an analysis of settlement expansion; same topic only.",
+  "confidence": "high"
+ },
+ "R108": {
+  "label": "same_calamity_lifecycle",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Both are response-stage statements within the same DRC Ebola outbreak: calls for humanitarian access and the WHO warning on patient-care challenges.",
+  "confidence": "medium"
+ },
+ "R109": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": "commentary",
+  "rationale": "Both are analysis pieces on the Iran war (economic winners/losers, rocket mining claim).",
+  "confidence": "high"
+ },
+ "R110": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Kuala Lumpur haze ranking and a missing Malaysian found in Nepal share only Malaysia.",
+  "confidence": "high"
+ },
+ "R111": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Israeli opposition uniting and West Bank checkpoints are unrelated.",
+  "confidence": "high"
+ },
+ "R112": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "NORTHCOM drone testing and an attack on a Xi-named restaurant in Korea are unrelated.",
+  "confidence": "high"
+ },
+ "R113": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Iran denying an airbase attack link and an Iranian court upholding a singer's lashes share only Iran.",
+  "confidence": "high"
+ },
+ "R114": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Ebola humanitarian access calls and a Security Council meeting on DRC conflict/MONUSCO share the DRC crisis but no stated link.",
+  "confidence": "medium"
+ },
+ "R115": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": "commentary",
+  "rationale": "B is an analysis of lingering Hormuz tensions after Trump's rejection, commentary on the same rejection reported in A.",
+  "confidence": "medium"
+ },
+ "R116": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Indonesia-US drills and an analysis of prediction markets on the Trump-Xi summit are unrelated.",
+  "confidence": "high"
+ },
+ "R117": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Legal aid statistics and the helper wage defence are unrelated Hong Kong policy items.",
+  "confidence": "high"
+ },
+ "R118": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Waltz revealing a US uranium-sale offer is not stated as a response to or continuation of A's tensions report.",
+  "confidence": "medium"
+ },
+ "R119": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": "commentary",
+  "rationale": "A is Maresca's press comments and B a season preview analysis; same topic only.",
+  "confidence": "high"
+ },
+ "R120": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Flores earthquake survivors and Borneo wildfires are different hazards.",
+  "confidence": "high"
+ },
+ "R121": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Japanese firms leaving China and Pimco on investors returning to China share only the topic.",
+  "confidence": "high"
+ },
+ "R122": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": "commentary",
+  "rationale": "B is a live Q&A/analysis page on the summit, commentary rather than an occurrence related to A's state dinner.",
+  "confidence": "high"
+ },
+ "R123": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Russia's 2027 defence budget rise and Putin's troop decree are separate acts; the decree gave no reason and no causal link is stated.",
+  "confidence": "medium"
+ },
+ "R124": {
+  "label": "AMBIGUOUS",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "The Pope's AI remarks came on Monday during his four-day France tour, but the text does not say they were made on the tour; the venue would settle it.",
+  "confidence": "low"
+ },
+ "R125": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Analysis of Trump's China arms offer and Trump denying Iran sanctions relief are unrelated.",
+  "confidence": "high"
+ },
+ "R126": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Robot convenience stores and a social media opinion piece are unrelated.",
+  "confidence": "high"
+ },
+ "R127": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "A is new Russian strikes the day after the mall attack; B is rescue at the earlier mall strike; different days, not one wave.",
+  "confidence": "medium"
+ },
+ "R128": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Navy drone command and Trump's political prisoners remark share only US-China context.",
+  "confidence": "high"
+ },
+ "R129": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "A jet skier's arrest is a side incident, not a calamity stage like B's flood recovery and baggage backlog; shared flood context only.",
+  "confidence": "low"
+ },
+ "R130": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": "commentary",
+  "rationale": "A is analysis of the royal rift; B is a costs ruling in Harry's lawsuit; shared actor only.",
+  "confidence": "high"
+ },
+ "R131": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Wang Yi meeting a Japanese delegation and a survey of Japanese firms leaving China share only the bilateral pair.",
+  "confidence": "high"
+ },
+ "R132": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Both follow Trump's rejection of the Hormuz deal, but B's expectation of talks does not respond to A's Iranian minister statement.",
+  "confidence": "medium"
+ },
+ "R133": {
+  "label": "same_visit_or_summit",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Trump's White House tour for Xi and the state dinner are parts of the same Xi state visit on the same day.",
+  "confidence": "high"
+ },
+ "R134": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "July retail sales figures and retail leasing trends share only the topic.",
+  "confidence": "high"
+ },
+ "R135": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": "commentary",
+  "rationale": "B is an analysis of what was not said at the summit; commentary unrelated to A's weapons question.",
+  "confidence": "high"
+ },
+ "R136": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Meskel celebrations and a front-line report from Afar share only the Ethiopia conflict context.",
+  "confidence": "medium"
+ },
+ "R137": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "AMRAAM and SM-6 contracts are separate awards to the same contractor.",
+  "confidence": "high"
+ },
+ "R138": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": "SAME_DEVELOPMENT_SUSPECTED",
+  "flag": null,
+  "rationale": "B covers the same White House AI luncheon and America.gov launch as A, with Trump's China remark made at that event.",
+  "confidence": "medium"
+ },
+ "R139": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Mining policy reversal and the SPR oil loan are separate US energy actions.",
+  "confidence": "high"
+ },
+ "R140": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": "commentary",
+  "rationale": "A is an opinion piece; B is Daines urging engagement on rare earths; topic only.",
+  "confidence": "high"
+ },
+ "R141": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": "commentary",
+  "rationale": "Manitoba premier's attack on Trump and an analysis of Carney walking away from talks share the trade feud only.",
+  "confidence": "medium"
+ },
+ "R142": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": "commentary",
+  "rationale": "A previews the Durban commemoration; B is a takeaways analysis of the general debate; no bounded link stated.",
+  "confidence": "medium"
+ }
+}
