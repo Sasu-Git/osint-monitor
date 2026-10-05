@@ -5,11 +5,11 @@
 # NOT SAME_SITUATION by that fact alone: it must belong to a persistent state of affairs
 # (e.g. summit bargaining that continues a bilateral dispute), otherwise DIFFERENT or AMBIGUOUS.
 holdout: holdout-2026-10-03
-labelled_by: ''
+labelled_by: 'blind-labeller-agent (separate context)'
 labels:
 - pair: [d84, d99]
-  label: ''
-  note: ''
+  label: SAME_SITUATION
+  note: 'Both are the Russian long-range air campaign against Kyiv and Ukrainian energy infrastructure within the ongoing Russia-Ukraine war.'
   # A 2026-09-30T11:32 [Al Jazeera] Russian attacks on Ukraine’s Kyiv region kill four, target power grid
   #   City officials say three killed in Ukraine&#039;s capital, as emergency services say child killed in the surrounding region.
   # A 2026-09-30T11:47 [BBC World] Russia launches largest attack on Ukraine energy infrastructure since spring
@@ -23,8 +23,8 @@ labels:
   # B 2026-10-02T08:03 [Al Jazeera] Russia tries to freeze Ukraine as it suffers record casualties and retreats
   #   Moscow has suffered further losses of occupied territory, but is using new drones to beat Ukraine&#039;s defences.
 - pair: [d101, d99]
-  label: ''
-  note: ''
+  label: SAME_SITUATION
+  note: 'Both cover the reciprocal Russia-Ukraine missile and drone strike war (Russian strikes on Ukrainian industry and Kyiv, Ukrainian strikes on Russian missile production); the Japan lessons item is peripheral.'
   # A 2026-09-29T23:33 [BBC World] Ukraine's prized steel industry left in ruins by Russian missile campaign
   #   Ukraine's remaining steelworks, a vital part of its economy, have all but ground to a halt because of relentless attacks.
   # A 2026-10-01T09:00 [South China Morning Post] Why Japan is looking to Ukraine’s front lines to overhaul its defences
@@ -38,8 +38,8 @@ labels:
   # B 2026-10-02T08:03 [Al Jazeera] Russia tries to freeze Ukraine as it suffers record casualties and retreats
   #   Moscow has suffered further losses of occupied territory, but is using new drones to beat Ukraine&#039;s defences.
 - pair: [d120, d88]
-  label: ''
-  note: ''
+  label: DIFFERENT_SITUATION
+  note: 'China''s standing in Latin America and regional opinion polls is a different state of affairs from the Washington Xi-Trump summit, despite sharing US and China as actors.'
   # A 2026-10-01T14:00 [South China Morning Post] China backs Cuba, Beijing’s Panama threat, new UN chief: 7 Latin America relations reads
   #   We have selected seven of the most interesting and important news stories covering Latin American relations from the past few weeks
   # A 2026-10-02T20:52 [Al Jazeera] Latin America sees China as more positive global influence than US: Poll
@@ -51,8 +51,8 @@ labels:
   # B 2026-09-30T13:46 [South China Morning Post] Xi projects confidence in National Day speech, with rallying call for economic growth
   #   Chinese President Xi Jinping projected a message of confidence about the country’s ability to overcome challenges during his annual National Day address, issuing a rallying call for robust economic growth and more certai
 - pair: [d115, d88]
-  label: ''
-  note: ''
+  label: AMBIGUOUS
+  note: 'The F-16V deliveries are framed against the Xi-Trump summit whose agenda included Taiwan, but Taiwan arms supply may be a distinct cross-strait security situation rather than the bilateral summit bargaining.'
   # A 2026-10-02T08:26 [Al Jazeera] US delivers F-16V fighter jets to Taiwan as island eyes threat from China
   #   Amid threats from China, Taipai is growing concerned about the Trump administration&#039;s commitment to arming the island.
   # A 2026-10-02T10:00 [South China Morning Post] Taiwan hails F-16V delivery as sign US support holds after Xi-Trump summit
@@ -66,8 +66,8 @@ labels:
   # B 2026-09-30T13:46 [South China Morning Post] Xi projects confidence in National Day speech, with rallying call for economic growth
   #   Chinese President Xi Jinping projected a message of confidence about the country’s ability to overcome challenges during his annual National Day address, issuing a rallying call for robust economic growth and more certai
 - pair: [d115, d120]
-  label: ''
-  note: ''
+  label: DIFFERENT_SITUATION
+  note: 'Taiwan arms deliveries and Latin American perceptions of China versus the US share actors but concern different states of affairs.'
   # A 2026-10-02T08:26 [Al Jazeera] US delivers F-16V fighter jets to Taiwan as island eyes threat from China
   #   Amid threats from China, Taipai is growing concerned about the Trump administration&#039;s commitment to arming the island.
   # A 2026-10-02T10:00 [South China Morning Post] Taiwan hails F-16V delivery as sign US support holds after Xi-Trump summit
@@ -79,8 +79,8 @@ labels:
   # B 2026-10-02T20:52 [Al Jazeera] Latin America sees China as more positive global influence than US: Poll
   #   Annual Latinobarometro survey finds views of China’s influence improving as perceptions of US influence worsen.
 - pair: [d112, d115]
-  label: ''
-  note: ''
+  label: DIFFERENT_SITUATION
+  note: 'European competitiveness and Spain-China rapprochement within the EU is unrelated to US arms deliveries to Taiwan.'
   # A 2026-10-01T09:40 [Al Jazeera] Can Europe still compete with the US and China?
   #   Europe faces growing pressure from the US and China as it struggles to stay competitive.
   # A 2026-10-01T23:42 [BBC World] Spain and China are cosying up - to the anger of many in the EU
@@ -92,8 +92,8 @@ labels:
   # B 2026-10-02T17:20 [Breaking Defense] After yearslong delay, Taiwan receives first pair of new F-16s
   #   The two jets landed at an airbase in eastern Taiwan on Friday.
 - pair: [d112, d88]
-  label: ''
-  note: ''
+  label: DIFFERENT_SITUATION
+  note: 'Europe''s economic positioning and Spain-China ties are a different state of affairs from the US-China summit in Washington and Xi''s National Day speech.'
   # A 2026-10-01T09:40 [Al Jazeera] Can Europe still compete with the US and China?
   #   Europe faces growing pressure from the US and China as it struggles to stay competitive.
   # A 2026-10-01T23:42 [BBC World] Spain and China are cosying up - to the anger of many in the EU
@@ -105,8 +105,8 @@ labels:
   # B 2026-09-30T13:46 [South China Morning Post] Xi projects confidence in National Day speech, with rallying call for economic growth
   #   Chinese President Xi Jinping projected a message of confidence about the country’s ability to overcome challenges during his annual National Day address, issuing a rallying call for robust economic growth and more certai
 - pair: [d110, d86]
-  label: ''
-  note: ''
+  label: SAME_SITUATION
+  note: 'The Ethiopia-Eritrea diplomatic rupture is explicitly tied to the escalating Tigray and northern Ethiopia fighting covered in B; the Somalia Baidoa item is an outlier.'
   # A 2026-10-01T20:10 [Al Jazeera] Eritrea severs diplomatic ties with Ethiopia in tit-for-tat move
   #   Ethiopia says it will shut its embassy in Asmara, declares 10 Eritrean diplomats persona non grata.
   # A 2026-10-02T03:49 [South China Morning Post] Ethiopia and Eritrea sever diplomatic ties as northern fighting escalates
@@ -120,8 +120,8 @@ labels:
   # B 2026-09-29T08:19 [Al Jazeera] Fighting in Ethiopia intensifies: What’s the latest?
   #   Capture of key town could pave the way for federal forces to push towards Tigray&#039;s capital, Mekelle.
 - pair: [d112, d120]
-  label: ''
-  note: ''
+  label: DIFFERENT_SITUATION
+  note: 'China''s relations with Europe and with Latin America are separate regional states of affairs that only share China as an actor.'
   # A 2026-10-01T09:40 [Al Jazeera] Can Europe still compete with the US and China?
   #   Europe faces growing pressure from the US and China as it struggles to stay competitive.
   # A 2026-10-01T23:42 [BBC World] Spain and China are cosying up - to the anger of many in the EU
@@ -131,8 +131,8 @@ labels:
   # B 2026-10-02T20:52 [Al Jazeera] Latin America sees China as more positive global influence than US: Poll
   #   Annual Latinobarometro survey finds views of China’s influence improving as perceptions of US influence worsen.
 - pair: [d117, d73]
-  label: ''
-  note: ''
+  label: AMBIGUOUS
+  note: 'Both are Raytheon multiyear missile production contracts amid US munitions stockpile concerns, but it is unclear whether a procurement ramp-up constitutes one persistent geopolitical state of affairs rather than separate contract awards.'
   # A 2026-10-01T22:05 [Defense News] US Navy awards RTX’s Raytheon $24.4B for SM-6 missiles amid stockpile concerns
   #   RTX’s Raytheon unit won a multiyear contract worth up to $24.4 billion to produce Standard Missile-6 interceptors for the U.S
   # A 2026-10-02T13:49 [Breaking Defense] Navy, Raytheon ink $24.4B deal for SM-6 ‘acceleration’
@@ -142,8 +142,8 @@ labels:
   # B 2026-09-29T16:59 [Breaking Defense] Raytheon nets potential $20.7 billion AMRAAM deal
   #   Separately, L3Harris announced it won a $6 billion contract from Lockheed Martin for THAAD interceptor propulsion systems.
 - pair: [d101, d84]
-  label: ''
-  note: ''
+  label: SAME_SITUATION
+  note: 'Both cover the Russian strike campaign on Ukrainian infrastructure and industry (they even share the steel industry article) within the Russia-Ukraine war.'
   # A 2026-09-29T23:33 [BBC World] Ukraine's prized steel industry left in ruins by Russian missile campaign
   #   Ukraine's remaining steelworks, a vital part of its economy, have all but ground to a halt because of relentless attacks.
   # A 2026-10-01T09:00 [South China Morning Post] Why Japan is looking to Ukraine’s front lines to overhaul its defences
