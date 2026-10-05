@@ -1,0 +1,191 @@
+{
+ "A exact actor set": {
+  "seed_assignments": {
+   "gaza-ceasefire": 1,
+   "russia-ukraine-war": 3
+  },
+  "created": [
+   {
+    "slug": "eritrea-ethiopia",
+    "members": [
+     "d86",
+     "d110"
+    ],
+    "titles": [
+     "Somali army clashes with local forces for control of Baidoa",
+     "Eritrea severs diplomatic ties with Ethiopia in tit-for-tat move"
+    ],
+    "pair_labels": {
+     "SAME_SITUATION": 1
+    },
+    "similarities": [
+     0.92
+    ]
+   }
+  ],
+  "missed_same_pairs": [
+   [
+    "d101",
+    "d84"
+   ],
+   [
+    "d101",
+    "d99"
+   ],
+   [
+    "d84",
+    "d99"
+   ]
+  ]
+ },
+ "B actor pair >= 0.40": {
+  "seed_assignments": {
+   "gaza-ceasefire": 1,
+   "russia-ukraine-war": 3
+  },
+  "created": [
+   {
+    "slug": "raytheon-united-states",
+    "members": [
+     "d73",
+     "d117"
+    ],
+    "titles": [
+     "Pentagon awards Raytheon up to $20.7 billion to nearly double AMRAAM p",
+     "US Navy awards RTX’s Raytheon $24.4B for SM-6 missiles amid stockpile "
+    ],
+    "pair_labels": {
+     "AMBIGUOUS": 1
+    },
+    "similarities": [
+     0.68
+    ]
+   },
+   {
+    "slug": "eritrea-ethiopia",
+    "members": [
+     "d86",
+     "d110"
+    ],
+    "titles": [
+     "Somali army clashes with local forces for control of Baidoa",
+     "Eritrea severs diplomatic ties with Ethiopia in tit-for-tat move"
+    ],
+    "pair_labels": {
+     "SAME_SITUATION": 1
+    },
+    "similarities": [
+     0.92
+    ]
+   },
+   {
+    "slug": "china-united-states",
+    "members": [
+     "d88",
+     "d112",
+     "d120"
+    ],
+    "titles": [
+     "Xi-Trump summit drew Chinese CEOs. So why couldn’t they get a seat at ",
+     "Can Europe still compete with the US and China?",
+     "China backs Cuba, Beijing’s Panama threat, new UN chief: 7 Latin Ameri"
+    ],
+    "pair_labels": {
+     "DIFFERENT_SITUATION": 3
+    },
+    "similarities": [
+     0.35,
+     0.51,
+     0.42
+    ]
+   }
+  ],
+  "missed_same_pairs": [
+   [
+    "d101",
+    "d84"
+   ],
+   [
+    "d101",
+    "d99"
+   ],
+   [
+    "d84",
+    "d99"
+   ]
+  ]
+ },
+ "diagnostic: actor pair >= 0.50": {
+  "seed_assignments": {
+   "gaza-ceasefire": 1,
+   "russia-ukraine-war": 3
+  },
+  "created": [
+   {
+    "slug": "raytheon-united-states",
+    "members": [
+     "d73",
+     "d117"
+    ],
+    "titles": [
+     "Pentagon awards Raytheon up to $20.7 billion to nearly double AMRAAM p",
+     "US Navy awards RTX’s Raytheon $24.4B for SM-6 missiles amid stockpile "
+    ],
+    "pair_labels": {
+     "AMBIGUOUS": 1
+    },
+    "similarities": [
+     0.68
+    ]
+   },
+   {
+    "slug": "eritrea-ethiopia",
+    "members": [
+     "d86",
+     "d110"
+    ],
+    "titles": [
+     "Somali army clashes with local forces for control of Baidoa",
+     "Eritrea severs diplomatic ties with Ethiopia in tit-for-tat move"
+    ],
+    "pair_labels": {
+     "SAME_SITUATION": 1
+    },
+    "similarities": [
+     0.92
+    ]
+   },
+   {
+    "slug": "china-united-states",
+    "members": [
+     "d88",
+     "d120"
+    ],
+    "titles": [
+     "Xi-Trump summit drew Chinese CEOs. So why couldn’t they get a seat at ",
+     "China backs Cuba, Beijing’s Panama threat, new UN chief: 7 Latin Ameri"
+    ],
+    "pair_labels": {
+     "DIFFERENT_SITUATION": 1
+    },
+    "similarities": [
+     0.51
+    ]
+   }
+  ],
+  "missed_same_pairs": [
+   [
+    "d101",
+    "d84"
+   ],
+   [
+    "d101",
+    "d99"
+   ],
+   [
+    "d84",
+    "d99"
+   ]
+  ]
+ }
+}
