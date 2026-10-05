@@ -29,12 +29,18 @@ class RSSCollector(BaseCollector):
         try:
             try:
                 resp = _requests.get(self.url, timeout=10, headers=_RSS_HEADERS)
+                self.last_http_status = getattr(resp, "status_code", None)
                 resp.raise_for_status()
                 feed = feedparser.parse(resp.text)
             except _requests.RequestException as e:
                 # Fallback to feedparser's own fetcher (different UA, handles redirects)
+                self.fallback_used = True
+                logger.info("RSS feed %s: primary fetch failed (%s), trying feedparser fallback", self.name,
+                            type(e).__name__)
                 feed = feedparser.parse(self.url)
                 status = feed.get("status")
+                if status is not None:
+                    self.last_http_status = status
                 if not feed.entries and (status is None or status >= 400):
                     # a refused or missing feed is an error, not "0 items"
                     raise RuntimeError(f"{e}" + (f" (fallback HTTP {status})" if status else ""))
@@ -103,13 +109,16 @@ class NitterCollector(RSSCollector):
             **kwargs,
         )
         self.source_type = "twitter_nitter"
+        self.health_key = f"NitterCollector:{self.username}"     # self.url changes with the fallback instance
 
     def collect(self) -> list[RawItemModel]:
         last_error = None
-        for instance in self.instances:
+        for n, instance in enumerate(self.instances):
             self.url = f"{instance}/{self.username}/rss"
+            self.fallback_used = n > 0
             try:
                 resp = _requests.get(self.url, timeout=10, headers=_RSS_HEADERS)
+                self.last_http_status = getattr(resp, "status_code", None)
                 resp.raise_for_status()
                 feed = feedparser.parse(resp.text)
                 items = []

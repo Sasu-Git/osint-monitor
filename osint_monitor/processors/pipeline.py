@@ -309,12 +309,19 @@ def _run_single_collector(collector: BaseCollector, failures: list[str] | None =
                 if item.source_type == "rss" and collector.source_type != "rss":
                     item.source_type = collector.source_type
         except Exception as e:
-            logger.error(f"Collector {collector.name} failed: {e}", exc_info=True)
-            exception = f"{type(e).__name__}: {e}"
+            exception = collector_status.redact(f"{type(e).__name__}: {e}")
+            logger.error("Collector %s failed: %s", collector.name, exception)
+            logger.debug("Collector %s traceback", collector.name, exc_info=True)
             if failures is not None:
                 failures.append(f"{collector.name}: {exception}")
             items = []
-    collector_status.record(collector.name, len(items), list(errors), exception, _time.monotonic() - started)
+    entry = collector_status.record(
+        collector.name, len(items), list(errors), exception, _time.monotonic() - started,
+        key=getattr(collector, "health_key", None) or collector.name, collector_type=type(collector).__name__,
+        source_type=getattr(collector, "source_type", None), tier=COLLECTOR_TIERS.get(type(collector).__name__, "cold"),
+        endpoint=getattr(collector, "url", None), http_status=getattr(collector, "last_http_status", None),
+        fallback_used=bool(getattr(collector, "fallback_used", False)))
+    collector_status.log_run(entry)
     return items
 
 

@@ -177,12 +177,14 @@ def test_every_collector_run_is_recorded_with_its_state(tmp_path, monkeypatch, n
     assert _run_single_collector(feed) == []
     assert _run_single_collector(Broken(name="Broken", url="https://x.invalid")) == []
     assert _run_single_collector(I.FlightRouteMonitor()) == []
-    data = status.load()
-    assert data["Dead Feed"]["state"] == "failed" and "down" in data["Dead Feed"]["last_error"]
-    assert data["Broken"]["state"] == "failed" and data["Broken"]["last_error"] == "RuntimeError: boom"
-    assert data["Flight Route Monitor"]["state"] == "failed"
-    assert "OpenSky query failed" in data["Flight Route Monitor"]["last_error"]
-    assert any("Dead Feed" in line for line in status.format_status(data))
+    data = status.load()                      # keyed by stable identity; display names are labels
+    dead, broken, flights = (status.by_name(data, n) for n in ("Dead Feed", "Broken", "Flight Route Monitor"))
+    assert dead["key"] == "RSSCollector:https://feed.invalid/rss"
+    assert dead["state"] == "failed" and "down" in dead["last_error"]
+    assert broken["state"] == "failed" and broken["last_error"] == "RuntimeError: boom"
+    assert flights["state"] == "failed"
+    assert "OpenSky query failed" in flights["last_error"]
+    assert any("Dead Feed" in line for line in status.format_status(data, configured=[]))
 
 
 # --- daemon observability ------------------------------------------------------------------------------

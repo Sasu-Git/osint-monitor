@@ -4,15 +4,58 @@ from __future__ import annotations
 
 import json
 import logging
+import os
 import smtplib
+import threading
 from abc import ABC, abstractmethod
+from datetime import datetime
 from email.mime.text import MIMEText
+from pathlib import Path
 
 import requests
 
 from osint_monitor.core.database import Alert
 
 logger = logging.getLogger(__name__)
+
+# Per-channel delivery health (operational): data/logs/alert_delivery.json, read by `main.py status`.
+DELIVERY_FILE = Path(__file__).resolve().parents[2] / "data" / "logs" / "alert_delivery.json"
+_delivery_lock = threading.Lock()
+
+
+def load_delivery_status(path: Path | None = None) -> dict:
+    try:
+        data = json.loads((path or DELIVERY_FILE).read_text(encoding="utf-8"))
+        return data if isinstance(data, dict) else {}
+    except (OSError, ValueError):
+        return {}
+
+
+def record_delivery(channel: str, ok: bool, error: str | None = None, now: datetime | None = None,
+                    path: Path | None = None) -> dict:
+    """Record one delivery attempt on ``channel``: last attempt / success / failure and consecutive failures."""
+    from osint_monitor.collectors.status import redact
+    path = path or DELIVERY_FILE
+    now_s = (now or datetime.utcnow()).isoformat(timespec="seconds")
+    with _delivery_lock:
+        data = load_delivery_status(path)
+        e = data.get(channel, {})
+        e["last_attempt"] = now_s
+        if ok:
+            e["last_success"], e["consecutive_failures"] = now_s, 0
+        else:
+            e["last_failure"] = now_s
+            e["last_error"] = redact(error or "send() returned False")[:300]
+            e["consecutive_failures"] = int(e.get("consecutive_failures") or 0) + 1
+        data[channel] = e
+        try:
+            path.parent.mkdir(parents=True, exist_ok=True)
+            tmp = path.with_suffix(".tmp")
+            tmp.write_text(json.dumps(data, indent=1, sort_keys=True), encoding="utf-8")
+            os.replace(tmp, path)
+        except OSError as exc:
+            logger.error(f"Alert delivery status not written: {exc}")
+    return e
 
 
 class AlertChannel(ABC):
@@ -190,11 +233,17 @@ def dispatch_alerts(alerts: list[Alert], channels: list[AlertChannel]) -> dict[i
     for alert in alerts:
         delivered = []
         for channel in channels:
+            name = channel.__class__.__name__
             try:
-                if channel.send(alert):
-                    delivered.append(channel.__class__.__name__)
+                ok = bool(channel.send(alert))
+                record_delivery(name, ok)
+                if ok:
+                    delivered.append(name)
+                else:
+                    logger.warning(f"Alert delivery failed on {name}: send() returned False")
             except Exception as e:
-                logger.error(f"Channel {channel.__class__.__name__} failed: {e}")
+                record_delivery(name, False, f"{type(e).__name__}: {e}")
+                logger.error(f"Channel {name} failed: {e}")
 
         if delivered:
             alert.delivered_via = ", ".join(delivered)

@@ -286,9 +286,23 @@ _REGION_KEYWORDS: dict[str, list[str]] = {
 # Absence detection — what SHOULD be there but ISN'T
 # ───────────────────────────────────────────────────────────────────────────
 
+def modality_coverage(health_rows: dict | None = None) -> dict[str, bool]:
+    """Modality -> whether at least one of its collectors is currently collecting (health ``healthy`` or
+    ``partial``, see ``collectors.status``). Operational state only."""
+    if health_rows is None:
+        from osint_monitor.collectors import status as collector_status
+        health_rows = collector_status.health_report()["rows"]
+    covered: dict[str, bool] = {}
+    for row in health_rows.values():
+        modality = SOURCE_MODALITY.get(row.get("source_type") or "", "narrative")
+        covered[modality] = covered.get(modality, False) or row.get("health") in ("healthy", "partial")
+    return covered
+
+
 def detect_signal_gaps(
     session: Session,
     hours_back: int = 24,
+    coverage: dict[str, bool] | None = None,
 ) -> list[dict[str, Any]]:
     """Detect suspicious signal absences.
 
@@ -299,8 +313,14 @@ def detect_signal_gaps(
 
     If BGP shows Iranian networks are up but DNS shows government domains
     are down, that's a deliberate shutdown, not collateral damage.
+
+    An absence is only analytic when we were actually collecting that modality. When its collectors are
+    failed, stale, disabled or have not run (``coverage``, from collector health), the gap is returned as
+    ``collection_outage`` with ``operational: True``: an outage of ours, never a finding about the world, and
+    no contradiction or negative confirmation is derived from it.
     """
     cutoff = datetime.utcnow() - timedelta(hours=hours_back)
+    coverage = modality_coverage() if coverage is None else coverage
 
     # Count items per source type
     source_counts: dict[str, int] = {}
@@ -330,9 +350,20 @@ def detect_signal_gaps(
 
     for modality, description in expected_modalities.items():
         if source_counts.get(modality, 0) == 0:
+            if not coverage.get(modality, False):
+                gaps.append({
+                    "gap_type": "collection_outage",
+                    "modality": modality,
+                    "operational": True,
+                    "description": f"No {description} collected in last {hours_back}h: its collectors are "
+                                   f"failed, stale, disabled or have not run",
+                    "significance": "Operational: our collection is down for this modality; not a finding",
+                })
+                continue
             gaps.append({
                 "gap_type": "missing_modality",
                 "modality": modality,
+                "operational": False,
                 "description": f"No {description} in last {hours_back}h",
                 "significance": "Cannot cross-correlate without this signal type",
             })
@@ -341,6 +372,8 @@ def detect_signal_gaps(
     has_narrative_about_strikes = False
     has_thermal = source_counts.get("imagery", 0) > 0
     has_infrastructure = source_counts.get("infrastructure", 0) > 0
+    imagery_collected = coverage.get("imagery", False)                 # only then is an absence evidence
+    infrastructure_collected = coverage.get("infrastructure", False)
 
     # Check if narrative mentions strikes
     strike_items = (
@@ -359,10 +392,11 @@ def detect_signal_gaps(
     if strike_items > 3:
         has_narrative_about_strikes = True
 
-    if has_narrative_about_strikes and not has_thermal:
+    if has_narrative_about_strikes and not has_thermal and imagery_collected:
         gaps.append({
             "gap_type": "contradiction",
             "modality": "imagery",
+            "operational": False,
             "description": (
                 f"News reports {strike_items} items about strikes/attacks but "
                 f"no thermal anomaly data (FIRMS) is present in the database. "
@@ -372,7 +406,7 @@ def detect_signal_gaps(
             "significance": "Cannot independently confirm reported strikes",
         })
 
-    if has_narrative_about_strikes and has_infrastructure:
+    if has_narrative_about_strikes and has_infrastructure and infrastructure_collected:
         # Check if infrastructure data shows damage
         infra_anomalies = (
             session.query(RawItem)
@@ -392,6 +426,7 @@ def detect_signal_gaps(
             gaps.append({
                 "gap_type": "negative_confirmation",
                 "modality": "infrastructure",
+                "operational": False,
                 "description": (
                     "Infrastructure monitoring shows NO disruptions despite active "
                     "conflict reporting. Networks are intact — damage is physical, "

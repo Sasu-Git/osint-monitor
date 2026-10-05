@@ -298,6 +298,10 @@ class AlertEngine:
                 gap = (latest_item.fetched_at - last_seen).total_seconds()
                 # Item is fresh (within last hour) but previous was >24h ago
                 if gap > 86400 and (now - latest_item.fetched_at).total_seconds() < 3600:
+                    why = _operational_silence(src.name, last_seen, latest_item.fetched_at)
+                    if why:
+                        logger.info(f"Source {src.name} resumed after {gap / 3600:.0f}h, not alerted: {why}")
+                        continue
                     gap_hours = gap / 3600
                     alerts.append(Alert(
                         item_id=latest_item.id,
@@ -329,6 +333,10 @@ class AlertEngine:
 
         current_gap_types = set()
         for gap in current_gaps:
+            if gap.get("operational"):
+                # our collection outage, not a finding: shown in `main.py status`, never alerted as a signal gap
+                logger.info(f"Signal gap not alerted (collection outage): {gap['modality']}")
+                continue
             gap_id = f"{gap['gap_type']}:{gap['modality']}"
             current_gap_types.add(gap_id)
 
@@ -419,3 +427,19 @@ class AlertEngine:
     def escalate_unacknowledged(self, minutes: int = 30):
         """No-op. Artificial escalation removed — severity reflects reality, not neglect."""
         pass
+
+
+def _operational_silence(source_name: str, since: datetime, until: datetime) -> str | None:
+    """Why a source's silence was (at least mostly) our own outage, or None when we were collecting it.
+    It is operational when recorded collection gaps cover at least half of it, or when the source's collector
+    failed during it. Its resumption is then not a finding."""
+    from osint_monitor.core.gaps import overlap_seconds, read_gap_log
+    silent = (until - since).total_seconds()
+    covered = overlap_seconds(read_gap_log(), since, until)
+    if silent > 0 and covered >= 0.5 * silent:
+        return f"collection gaps cover {covered / 3600:.0f}h of the {silent / 3600:.0f}h silence"
+    from osint_monitor.collectors import status as collector_status
+    entry = collector_status.by_name(collector_status.load(), source_name)
+    if entry is not None and entry.get("last_failure") and datetime.fromisoformat(entry["last_failure"]) >= since:
+        return f"its collector failed during the silence (last failure {entry['last_failure']})"
+    return None

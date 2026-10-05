@@ -69,8 +69,9 @@ def record_gap(kind: str, subject: str, since: datetime, until: datetime, expect
     logger.warning(f"Collection gap ({kind}): {subject} idle {timedelta(seconds=seconds)} "
                    f"from {gap['from']} to {gap['to']}"
                    + (f", expected every {expected_seconds}s" if expected_seconds else "")
-                   + (" -- the daemon was not running (stopped, crashed or rebooted)" if kind == "daemon_down"
-                      else " -- likely host suspend/resume or a blocked scheduler"))
+                   + (" -- the daemon process was not running (why it stopped is unknown)" if kind == "daemon_down"
+                      else " -- cause unknown: host suspend, a blocked scheduler or a stopped process cannot be "
+                           "told apart"))
     _recent_gaps.append(gap)
     try:
         _GAP_LOG.parent.mkdir(parents=True, exist_ok=True)

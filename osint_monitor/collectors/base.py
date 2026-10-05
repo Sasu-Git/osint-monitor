@@ -17,6 +17,9 @@ class BaseCollector(ABC):
     """
 
     time_budget_seconds: float | None = None
+    # observability (collectors.status): set by collectors that know them, reset at each run
+    fallback_used: bool = False
+    last_http_status: int | None = None
 
     def __init__(self, name: str, source_type: str, url: str, **kwargs):
         self.name = name
@@ -27,6 +30,8 @@ class BaseCollector(ABC):
             self.time_budget_seconds = kwargs["time_budget_seconds"]
         self._started: float | None = None
         self.budget_exceeded = False
+        # stable operational identity for health records: the endpoint as configured, not the display name
+        self.health_key = f"{type(self).__name__}:{url or name}"
 
     @abstractmethod
     def collect(self) -> list[RawItemModel]:
@@ -36,6 +41,8 @@ class BaseCollector(ABC):
     def start_budget(self) -> None:
         self._started = time.monotonic()
         self.budget_exceeded = False
+        self.fallback_used = False
+        self.last_http_status = None
 
     def elapsed(self) -> float:
         started = getattr(self, "_started", None)      # subclasses may skip BaseCollector.__init__

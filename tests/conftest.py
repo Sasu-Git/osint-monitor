@@ -16,6 +16,12 @@ def _isolated_runtime_files(tmp_path, monkeypatch):
     monkeypatch.setattr(scheduler, "_TICK_FILE", tmp_path / "tier_ticks.json")
     monkeypatch.setattr(scheduler, "_GAP_LOG", tmp_path / "collection_gaps.jsonl")
     monkeypatch.setattr(status, "STATUS_FILE", tmp_path / "collector_status.json")
+    monkeypatch.setattr(status, "EVENTS_FILE", tmp_path / "collector_events.jsonl")
+    from osint_monitor.core import gaps
+    monkeypatch.setattr(gaps, "GAP_LOG", tmp_path / "collection_gaps.jsonl")
+    monkeypatch.setattr(gaps, "EVENTS_LOG", tmp_path / "collector_events.jsonl")
+    from osint_monitor.alerting import channels
+    monkeypatch.setattr(channels, "DELIVERY_FILE", tmp_path / "alert_delivery.json")
 
 
 @pytest.fixture()
