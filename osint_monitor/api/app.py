@@ -24,6 +24,7 @@ from osint_monitor.api.routes.daemon import router as daemon_router
 from osint_monitor.api.routes.ingest import router as ingest_router
 from osint_monitor.api.routes.situations import router as situations_router
 from osint_monitor.api.auth import require_api_key
+from osint_monitor.api.relation_review import router as relation_review_router
 
 logger = logging.getLogger(__name__)
 
@@ -70,6 +71,8 @@ app.include_router(intel_router, prefix="/api/intel", tags=["intelligence"])
 app.include_router(daemon_router, prefix="/api/daemon", tags=["daemon"])
 app.include_router(ingest_router, prefix="/api/ingest", tags=["ingest"])
 app.include_router(situations_router, prefix="/api/situations", tags=["situations"])
+# localhost-only annotation tool for the Phase 3 relation gold (evaluations/relations/review)
+app.include_router(relation_review_router, prefix="/eval/relations", tags=["evaluation"])
 
 
 @app.on_event("startup")

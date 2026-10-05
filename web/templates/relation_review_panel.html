@@ -1,0 +1,37 @@
+<section class="panel" id="panel">
+  <form id="verdict-form" hx-post="/eval/relations/case/{{ cid }}" hx-target="#panel" hx-swap="outerHTML"
+        method="post" action="/eval/relations/case/{{ cid }}">
+    <input type="hidden" name="filter" value="{{ flt }}">
+    <input type="hidden" name="rel" value="{{ rel or '' }}">
+    <b>Owner verdict</b>
+    {% if verdict %}<span class="saved">saved: {{ verdict.label }}{% if verdict.direction %} ({{ verdict.direction }}){% endif %}
+      · {{ verdict.reviewed_at }}</span>{% else %}<span class="muted">not reviewed yet</span>{% endif %}
+    {% if error %}<div class="error">{{ error }}</div>{% endif %}
+    <div class="verdicts">
+      {% for v in verdicts %}
+      <label><input type="radio" name="label" value="{{ v }}" onchange="syncDirection()"
+                    {{ 'checked' if verdict and verdict.label == v }}><span>{{ v }}{% if v in directed %} ⇄{% endif %}</span><kbd>{{ shortcuts[v] }}</kbd></label>
+      {% endfor %}
+    </div>
+    <div class="dirs" id="dirs" {{ '' if verdict and verdict.label in directed else 'hidden' }}>
+      Direction (source → target, e.g. <i>B reacts to A</i> = B→A):
+      <label><input type="radio" name="direction" value="A->B" {{ 'checked' if verdict and verdict.direction == 'A->B' }}><span>A → B</span><kbd>[</kbd></label>
+      <label><input type="radio" name="direction" value="B->A" {{ 'checked' if verdict and verdict.direction == 'B->A' }}><span>B → A</span><kbd>]</kbd></label>
+    </div>
+    <p><textarea name="note" placeholder="Optional note (kept verbatim)">{{ verdict.note if verdict and verdict.note else '' }}</textarea></p>
+    <button type="submit">Save verdict <kbd>Enter</kbd></button>
+    {% if verdict %}
+      <button type="button" class="secondary" id="reveal" hx-get="/eval/relations/case/{{ cid }}/draft"
+              hx-target="#draft" hx-swap="innerHTML">Reveal draft <kbd>r</kbd></button>
+      {% if nav.next %}<a href="/eval/relations/case/{{ nav.next }}?{{ q }}">next case →</a>{% endif %}
+    {% endif %}
+  </form>
+  <div id="draft"></div>
+  <div class="legend">
+    Shortcuts: <kbd>←</kbd> previous · <kbd>→</kbd> next · <kbd>s</kbd> skip ·
+    <kbd>n</kbd> NO_RELATION · <kbd>1</kbd>–<kbd>7</kbd> relation types (in button order) ·
+    <kbd>a</kbd> AMBIGUOUS · <kbd>i</kbd> SAME_DEVELOPMENT_SUSPECTED · <kbd>[</kbd>/<kbd>]</kbd> direction A→B / B→A ·
+    <kbd>Enter</kbd> or <kbd>Ctrl</kbd>+<kbd>Enter</kbd> (in the note) save · <kbd>r</kbd> reveal draft (after saving).
+    The draft label stays hidden until you have saved a verdict; revealing it never changes your verdict.
+  </div>
+</section>

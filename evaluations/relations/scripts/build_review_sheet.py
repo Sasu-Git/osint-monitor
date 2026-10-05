@@ -86,8 +86,7 @@ def main():
     (REVIEW / "relation-review-sheet.md").write_text("\n".join(lines) + "\n", encoding="utf-8", newline="\n")
     vpath = REVIEW / "owner-verdicts.yaml"
     if not vpath.exists():
-        header = ("# Owner verdicts for the relation gold, one entry per case. `label: ACCEPT` accepts the draft label\n"
-                  "# and direction; otherwise write the label (and direction for directed types). Notes are kept verbatim.\n")
+        from osint_monitor.api.relation_review import HEADER as header   # same schema the review UI writes
         body = "".join(f"{c['case']}: {{label: null, direction: null, identity_flag: null, note: null}}\n"
                        for c in cases)
         vpath.write_text(header + body, encoding="utf-8", newline="\n")
