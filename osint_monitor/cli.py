@@ -49,7 +49,16 @@ def main():
     # pause/resume: toggle pipeline on/off
     subparsers.add_parser("pause", help="Pause the daemon pipeline (all tiers skip)")
     subparsers.add_parser("resume", help="Resume the daemon pipeline")
-    subparsers.add_parser("status", help="Show daemon pipeline status")
+    subparsers.add_parser("status", help="Show daemon, pipeline, collector, gap, model and alert-delivery status")
+
+    sub_gaps = subparsers.add_parser("gaps", help="Collection coverage and gaps for a time window (read-only)")
+    sub_gaps.add_argument("--start", required=True, help="UTC start, e.g. 2026-09-29T12:00")
+    sub_gaps.add_argument("--end", required=True, help="UTC end (exclusive)")
+    sub_gaps.add_argument("--tier", default="warm", choices=["hot", "warm", "cold"])
+    sub_gaps.add_argument("--db", help="database URL (default: OSINT_DB_URL); opened read-only")
+    sub_gaps.add_argument("--log", help="daemon log to read tier runs from (for databases without a run ledger)")
+    sub_gaps.add_argument("--log-utc-offset", type=float, default=0.0,
+                          help="hours the log's local timestamps are ahead of UTC (e.g. 2 for CEST)")
 
     # export: dump DB to JSON for git tracking
     subparsers.add_parser("export", help="Export events, entities, claims, briefings to data/export/")
@@ -134,6 +143,8 @@ def main():
         level=getattr(logging, str(get_settings().log_level).upper(), logging.INFO),
         format=LOG_FORMAT,
     )
+    for h in logging.getLogger().handlers:
+        h.addFilter(RedactSecrets())
 
     try:
         _dispatch(args)
@@ -200,6 +211,8 @@ def _dispatch(args):
         _cmd_resume()
     elif args.command == "status":
         _cmd_status()
+    elif args.command == "gaps":
+        _cmd_gaps(args)
     elif args.command == "export":
         _cmd_export()
     elif args.command == "inspect":
@@ -262,8 +275,26 @@ def add_daemon_log_file(path: Path = DAEMON_LOG) -> logging.Handler:
     path.parent.mkdir(parents=True, exist_ok=True)
     handler = RotatingFileHandler(path, maxBytes=10_000_000, backupCount=5, encoding="utf-8")
     handler.setFormatter(logging.Formatter(LOG_FORMAT))
+    handler.addFilter(RedactSecrets())
     logging.getLogger().addHandler(handler)
     return handler
+
+
+class RedactSecrets(logging.Filter):
+    """Strip credentials (URL tokens, auth headers, user:pass@) from every log record before it is written."""
+
+    def filter(self, record: logging.LogRecord) -> bool:
+        from osint_monitor.collectors.status import redact
+        try:
+            message = record.getMessage()
+        except Exception:
+            return True
+        clean = redact(message)
+        if clean != message:
+            record.msg, record.args = clean, ()
+        if record.exc_info:          # tracebacks carry URLs too; another handler may already have cached the text
+            record.exc_text = redact(record.exc_text or logging.Formatter().formatException(record.exc_info))
+        return True
 
 
 def _cmd_daemon():
@@ -387,26 +418,25 @@ def _cmd_resume():
 
 
 def _cmd_status():
-    from osint_monitor.core.scheduler import is_paused, get_status
-    status = get_status()
-    if status["paused"]:
-        print(f"Pipeline: PAUSED (since {status['paused_since']})")
-    else:
-        print("Pipeline: RUNNING")
-    if status["jobs"]:
-        print("Jobs:")
-        for job in status["jobs"]:
+    from osint_monitor.core.opstatus import status_lines
+    from osint_monitor.core.scheduler import get_status
+    jobs = get_status()["jobs"]
+    for line in status_lines():
+        print(line)
+    if jobs:
+        print("\nJobs (this process):")
+        for job in jobs:
             print(f"  {job['name']} -> next: {job['next_run']}")
-    else:
-        print("No daemon running (jobs only visible when daemon is active).")
-    from osint_monitor.processors.nlp import format_ner_status
-    print("Entity extraction:")
-    for line in format_ner_status():
-        print(f"  {line}")
-    from osint_monitor.collectors.status import format_status
-    print("Collectors (last run of each, from data/logs/collector_status.json):")
-    for line in format_status():
-        print(f"  {line}")
+
+
+def _cmd_gaps(args):
+    from datetime import datetime
+
+    from osint_monitor.core.gaps import format_report, report
+    r = report(datetime.fromisoformat(args.start), datetime.fromisoformat(args.end), args.tier, db_url=args.db,
+               log_path=args.log, log_utc_offset=args.log_utc_offset)
+    for line in format_report(r):
+        print(line)
 
 
 def _cmd_inspect_situations(args):

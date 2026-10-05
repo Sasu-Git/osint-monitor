@@ -23,7 +23,7 @@ import json
 import logging
 import threading
 from collections import deque
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from apscheduler.events import EVENT_JOB_MISSED
@@ -69,8 +69,9 @@ def record_gap(kind: str, subject: str, since: datetime, until: datetime, expect
     logger.warning(f"Collection gap ({kind}): {subject} idle {timedelta(seconds=seconds)} "
                    f"from {gap['from']} to {gap['to']}"
                    + (f", expected every {expected_seconds}s" if expected_seconds else "")
-                   + (" -- the daemon was not running (stopped, crashed or rebooted)" if kind == "daemon_down"
-                      else " -- likely host suspend/resume or a blocked scheduler"))
+                   + (" -- the daemon process was not running (why it stopped is unknown)" if kind == "daemon_down"
+                      else " -- cause unknown: host suspend, a blocked scheduler or a stopped process cannot be "
+                           "told apart"))
     _recent_gaps.append(gap)
     try:
         _GAP_LOG.parent.mkdir(parents=True, exist_ok=True)
@@ -124,8 +125,9 @@ def _on_job_missed(event) -> None:
     measured by check_tier_gap on the tier's next tick."""
     late = datetime.now(event.scheduled_run_time.tzinfo) - event.scheduled_run_time
     if late.total_seconds() > GAP_MIN_SECONDS:
-        record_gap("missed_run", event.job_id, event.scheduled_run_time.replace(tzinfo=None),
-                   datetime.now(event.scheduled_run_time.tzinfo).replace(tzinfo=None))
+        # every gap record is naive UTC (scheduled_run_time is aware, in the scheduler's local zone)
+        record_gap("missed_run", event.job_id,
+                   event.scheduled_run_time.astimezone(timezone.utc).replace(tzinfo=None), datetime.utcnow())
 
 
 def is_paused() -> bool:

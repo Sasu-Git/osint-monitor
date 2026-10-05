@@ -43,10 +43,14 @@ The daemon does not keep the host awake. It reports when it was not running:
 - `tier_silence`: a tier ticks after more than 3 intervals (and at least 15 minutes) without one.
   This gives the full idle period.
 
-Each gap is logged as `WARNING Collection gap (...) ... likely host suspend/resume or a blocked
-scheduler`, kept in `python main.py status` (`recent_gaps`, `last_tick`), and appended to
-`data/logs/collection_gaps.jsonl`. Check that file before using a collection period for
-evaluation.
+Each gap is logged as `WARNING Collection gap (...) ... cause unknown: host suspend, a blocked
+scheduler or a stopped process cannot be told apart` (or, for `daemon_down`, that the process was
+not running), and appended to `data/logs/collection_gaps.jsonl`. `python main.py status` shows the
+heartbeat per tier and the last 24 h of warm coverage. `python main.py gaps --start ... --end ...`
+reports coverage and gaps for any window, also from an old daemon's log. See
+[operations/source-health.md](operations/source-health.md). Check coverage before using a
+collection period for evaluation. Deployment and rollback:
+[operations/deployment-runbook.md](operations/deployment-runbook.md).
 
 ## Deploying for continuous collection
 

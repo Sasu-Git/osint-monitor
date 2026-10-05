@@ -309,12 +309,18 @@ def _run_single_collector(collector: BaseCollector, failures: list[str] | None =
                 if item.source_type == "rss" and collector.source_type != "rss":
                     item.source_type = collector.source_type
         except Exception as e:
-            logger.error(f"Collector {collector.name} failed: {e}", exc_info=True)
-            exception = f"{type(e).__name__}: {e}"
+            exception = collector_status.redact(f"{type(e).__name__}: {e}")
+            logger.error("Collector %s failed: %s", collector.name, exception, exc_info=True)
             if failures is not None:
                 failures.append(f"{collector.name}: {exception}")
             items = []
-    collector_status.record(collector.name, len(items), list(errors), exception, _time.monotonic() - started)
+    entry = collector_status.record(
+        collector.name, len(items), list(errors), exception, _time.monotonic() - started,
+        key=getattr(collector, "health_key", None) or collector.name, collector_type=type(collector).__name__,
+        source_type=getattr(collector, "source_type", None), tier=COLLECTOR_TIERS.get(type(collector).__name__, "cold"),
+        endpoint=getattr(collector, "url", None), http_status=getattr(collector, "last_http_status", None),
+        fallback_used=bool(getattr(collector, "fallback_used", False)))
+    collector_status.log_run(entry)
     return items
 
 
@@ -642,7 +648,8 @@ def run_post_processing(session: Session, quiet: bool = False, offline: bool = F
         correlations = fuse_signals(session, hours_back=24)
         gaps = detect_signal_gaps(session, hours_back=24)
         stats["fusion_correlations"] = len(correlations)
-        stats["signal_gaps"] = len(gaps)
+        stats["signal_gaps"] = sum(1 for g in gaps if not g.get("operational"))
+        stats["collection_outages"] = sum(1 for g in gaps if g.get("operational"))
         for corr in correlations[:5]:
             _print(f"  [{corr['confidence']:.0%}] {corr['pattern']}: {', '.join(corr['modalities_matched'])} ({corr['time_bucket']})")
         for gap in gaps:
