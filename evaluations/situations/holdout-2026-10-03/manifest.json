@@ -1,0 +1,9 @@
+{
+ "id": "holdout-2026-10-03",
+ "start": "2026-09-29T12:00",
+ "end": "2026-10-03T12:00",
+ "source_snapshot": "C:/Users/EugenioVardiero/osint-monitor/data/eval/situation-holdout-2026-10-03.snapshot.db",
+ "developments": 63,
+ "developments_sha256": "c10c776c4d412130ae2e283bfe74ef3b948b6e1bb0f6c11f44ad875865eed495",
+ "frozen_at": "2026-10-05T10:27:36+02:00"
+}

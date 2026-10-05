@@ -1,0 +1,158 @@
+# Blind situation-identity labels. For each pair: SAME_SITUATION (one persistent state of
+# affairs), DIFFERENT_SITUATION, or AMBIGUOUS. A situation is broader than one development
+# or storyline, but must be one persistent geopolitical state of affairs. A coherent
+# multi-day event (a diplomatic visit, a summit, a papal visit, a disaster response) is
+# NOT SAME_SITUATION by that fact alone: it must belong to a persistent state of affairs
+# (e.g. summit bargaining that continues a bilateral dispute), otherwise DIFFERENT or AMBIGUOUS.
+holdout: holdout-2026-10-03
+labelled_by: ''
+labels:
+- pair: [d84, d99]
+  label: ''
+  note: ''
+  # A 2026-09-30T11:32 [Al Jazeera] Russian attacks on Ukraine’s Kyiv region kill four, target power grid
+  #   City officials say three killed in Ukraine&#039;s capital, as emergency services say child killed in the surrounding region.
+  # A 2026-09-30T11:47 [BBC World] Russia launches largest attack on Ukraine energy infrastructure since spring
+  #   In total 11 regions of the country were attacked overnight, with residential buildings and railways also targeted, the Ukrainian PM says.
+  # A 2026-09-29T23:33 [BBC World] Ukraine's prized steel industry left in ruins by Russian missile campaign
+  #   Ukraine's remaining steelworks, a vital part of its economy, have all but ground to a halt because of relentless attacks.
+  # B 2026-09-30T22:13 [Al Jazeera] Russian drone crashes into Kyiv playground without exploding
+  #   A Russian attack drone crashed into a children’s playground in Kyiv, Ukraine without exploding.
+  # B 2026-10-01T07:09 [South China Morning Post] Ukraine scrambles as Russia’s jet drones breach Kyiv’s defences
+  #   Russia’s new class of jet-powered drones rip across the night sky in Kyiv at hundreds of kilometres per hour, leaving Ukrainian air-defence units only moments to intercept them
+  # B 2026-10-02T08:03 [Al Jazeera] Russia tries to freeze Ukraine as it suffers record casualties and retreats
+  #   Moscow has suffered further losses of occupied territory, but is using new drones to beat Ukraine&#039;s defences.
+- pair: [d101, d99]
+  label: ''
+  note: ''
+  # A 2026-09-29T23:33 [BBC World] Ukraine's prized steel industry left in ruins by Russian missile campaign
+  #   Ukraine's remaining steelworks, a vital part of its economy, have all but ground to a halt because of relentless attacks.
+  # A 2026-10-01T09:00 [South China Morning Post] Why Japan is looking to Ukraine’s front lines to overhaul its defences
+  #   Japan is increasingly tapping into Ukraine’s war experience against Russia as a valuable source of intelligence on military technologies that could strengthen its defensive and offensive capabilities.
+  # A 2026-10-01T12:13 [Defense News] Ukraine has struck Russian factory vital for Moscow’s missiles, private intelligence firm says
+  #   GLASGOW, Scotland — A Russian factory that Ukraine struck on Sept
+  # B 2026-09-30T22:13 [Al Jazeera] Russian drone crashes into Kyiv playground without exploding
+  #   A Russian attack drone crashed into a children’s playground in Kyiv, Ukraine without exploding.
+  # B 2026-10-01T07:09 [South China Morning Post] Ukraine scrambles as Russia’s jet drones breach Kyiv’s defences
+  #   Russia’s new class of jet-powered drones rip across the night sky in Kyiv at hundreds of kilometres per hour, leaving Ukrainian air-defence units only moments to intercept them
+  # B 2026-10-02T08:03 [Al Jazeera] Russia tries to freeze Ukraine as it suffers record casualties and retreats
+  #   Moscow has suffered further losses of occupied territory, but is using new drones to beat Ukraine&#039;s defences.
+- pair: [d120, d88]
+  label: ''
+  note: ''
+  # A 2026-10-01T14:00 [South China Morning Post] China backs Cuba, Beijing’s Panama threat, new UN chief: 7 Latin America relations reads
+  #   We have selected seven of the most interesting and important news stories covering Latin American relations from the past few weeks
+  # A 2026-10-02T20:52 [Al Jazeera] Latin America sees China as more positive global influence than US: Poll
+  #   Annual Latinobarometro survey finds views of China’s influence improving as perceptions of US influence worsen.
+  # B 2026-09-29T22:00 [South China Morning Post] Xi-Trump summit drew Chinese CEOs. So why couldn’t they get a seat at the table?
+  #   As American billionaires gathered at the White House to honour Chinese President Xi Jinping and his wife Peng Liyuan last Thursday, a group of Chinese business leaders spent the evening on the sidelines.
+  # B 2026-09-30T17:30 [War on the Rocks] Triumph or Procrastination? Experts Split on the Trump-Xi Summit
+  #   Over the better part of three days, President Donald Trump hosted Chinese President Xi Jinping in Washington for a summit that drew international attention for its high-stakes agenda, from trade and AI to Taiwan
+  # B 2026-09-30T13:46 [South China Morning Post] Xi projects confidence in National Day speech, with rallying call for economic growth
+  #   Chinese President Xi Jinping projected a message of confidence about the country’s ability to overcome challenges during his annual National Day address, issuing a rallying call for robust economic growth and more certai
+- pair: [d115, d88]
+  label: ''
+  note: ''
+  # A 2026-10-02T08:26 [Al Jazeera] US delivers F-16V fighter jets to Taiwan as island eyes threat from China
+  #   Amid threats from China, Taipai is growing concerned about the Trump administration&#039;s commitment to arming the island.
+  # A 2026-10-02T10:00 [South China Morning Post] Taiwan hails F-16V delivery as sign US support holds after Xi-Trump summit
+  #   Taiwan has hailed the much-delayed arrival of two F-16V fighter jets as a demonstration of continuing US military support, despite the summit between President Xi Jinping and US President Donald Trump.
+  # A 2026-10-02T17:20 [Breaking Defense] After yearslong delay, Taiwan receives first pair of new F-16s
+  #   The two jets landed at an airbase in eastern Taiwan on Friday.
+  # B 2026-09-29T22:00 [South China Morning Post] Xi-Trump summit drew Chinese CEOs. So why couldn’t they get a seat at the table?
+  #   As American billionaires gathered at the White House to honour Chinese President Xi Jinping and his wife Peng Liyuan last Thursday, a group of Chinese business leaders spent the evening on the sidelines.
+  # B 2026-09-30T17:30 [War on the Rocks] Triumph or Procrastination? Experts Split on the Trump-Xi Summit
+  #   Over the better part of three days, President Donald Trump hosted Chinese President Xi Jinping in Washington for a summit that drew international attention for its high-stakes agenda, from trade and AI to Taiwan
+  # B 2026-09-30T13:46 [South China Morning Post] Xi projects confidence in National Day speech, with rallying call for economic growth
+  #   Chinese President Xi Jinping projected a message of confidence about the country’s ability to overcome challenges during his annual National Day address, issuing a rallying call for robust economic growth and more certai
+- pair: [d115, d120]
+  label: ''
+  note: ''
+  # A 2026-10-02T08:26 [Al Jazeera] US delivers F-16V fighter jets to Taiwan as island eyes threat from China
+  #   Amid threats from China, Taipai is growing concerned about the Trump administration&#039;s commitment to arming the island.
+  # A 2026-10-02T10:00 [South China Morning Post] Taiwan hails F-16V delivery as sign US support holds after Xi-Trump summit
+  #   Taiwan has hailed the much-delayed arrival of two F-16V fighter jets as a demonstration of continuing US military support, despite the summit between President Xi Jinping and US President Donald Trump.
+  # A 2026-10-02T17:20 [Breaking Defense] After yearslong delay, Taiwan receives first pair of new F-16s
+  #   The two jets landed at an airbase in eastern Taiwan on Friday.
+  # B 2026-10-01T14:00 [South China Morning Post] China backs Cuba, Beijing’s Panama threat, new UN chief: 7 Latin America relations reads
+  #   We have selected seven of the most interesting and important news stories covering Latin American relations from the past few weeks
+  # B 2026-10-02T20:52 [Al Jazeera] Latin America sees China as more positive global influence than US: Poll
+  #   Annual Latinobarometro survey finds views of China’s influence improving as perceptions of US influence worsen.
+- pair: [d112, d115]
+  label: ''
+  note: ''
+  # A 2026-10-01T09:40 [Al Jazeera] Can Europe still compete with the US and China?
+  #   Europe faces growing pressure from the US and China as it struggles to stay competitive.
+  # A 2026-10-01T23:42 [BBC World] Spain and China are cosying up - to the anger of many in the EU
+  #   On the streets of Barcelona, fiery red and gold Chinese dragons (presumably with very sweaty people inside the costumes) danced among delighted crowds, while Chinese acrobats elicited gasps of amazement as they rolled, t
+  # B 2026-10-02T08:26 [Al Jazeera] US delivers F-16V fighter jets to Taiwan as island eyes threat from China
+  #   Amid threats from China, Taipai is growing concerned about the Trump administration&#039;s commitment to arming the island.
+  # B 2026-10-02T10:00 [South China Morning Post] Taiwan hails F-16V delivery as sign US support holds after Xi-Trump summit
+  #   Taiwan has hailed the much-delayed arrival of two F-16V fighter jets as a demonstration of continuing US military support, despite the summit between President Xi Jinping and US President Donald Trump.
+  # B 2026-10-02T17:20 [Breaking Defense] After yearslong delay, Taiwan receives first pair of new F-16s
+  #   The two jets landed at an airbase in eastern Taiwan on Friday.
+- pair: [d112, d88]
+  label: ''
+  note: ''
+  # A 2026-10-01T09:40 [Al Jazeera] Can Europe still compete with the US and China?
+  #   Europe faces growing pressure from the US and China as it struggles to stay competitive.
+  # A 2026-10-01T23:42 [BBC World] Spain and China are cosying up - to the anger of many in the EU
+  #   On the streets of Barcelona, fiery red and gold Chinese dragons (presumably with very sweaty people inside the costumes) danced among delighted crowds, while Chinese acrobats elicited gasps of amazement as they rolled, t
+  # B 2026-09-29T22:00 [South China Morning Post] Xi-Trump summit drew Chinese CEOs. So why couldn’t they get a seat at the table?
+  #   As American billionaires gathered at the White House to honour Chinese President Xi Jinping and his wife Peng Liyuan last Thursday, a group of Chinese business leaders spent the evening on the sidelines.
+  # B 2026-09-30T17:30 [War on the Rocks] Triumph or Procrastination? Experts Split on the Trump-Xi Summit
+  #   Over the better part of three days, President Donald Trump hosted Chinese President Xi Jinping in Washington for a summit that drew international attention for its high-stakes agenda, from trade and AI to Taiwan
+  # B 2026-09-30T13:46 [South China Morning Post] Xi projects confidence in National Day speech, with rallying call for economic growth
+  #   Chinese President Xi Jinping projected a message of confidence about the country’s ability to overcome challenges during his annual National Day address, issuing a rallying call for robust economic growth and more certai
+- pair: [d110, d86]
+  label: ''
+  note: ''
+  # A 2026-10-01T20:10 [Al Jazeera] Eritrea severs diplomatic ties with Ethiopia in tit-for-tat move
+  #   Ethiopia says it will shut its embassy in Asmara, declares 10 Eritrean diplomats persona non grata.
+  # A 2026-10-02T03:49 [South China Morning Post] Ethiopia and Eritrea sever diplomatic ties as northern fighting escalates
+  #   Ethiopia and Eritrea broke diplomatic ties on Thursday, accusing each other of stoking internal conflicts as fighting continued in northern Ethiopia.
+  # A 2026-10-02T04:40 [Al Jazeera] Eritrea severs diplomatic ties with Ethiopia in row over Tigray
+  #   Eritrea has severed diplomatic ties with Ethiopia after Addis Ababa closed its embassy in Asmara
+  # B 2026-09-28T17:58 [Al Jazeera] Somali army clashes with local forces for control of Baidoa
+  #   The latest outbreak of fighting in the South West State city stranded civilians unable to flee or reach hospitals.
+  # B 2026-09-30T15:04 [BBC World] Ethiopia fighting escalates in Tigray killing 52 civilians, medic tells the BBC
+  #   The deadly fighting has also spread to neighbouring regions, stranding tourists in Lalibela.
+  # B 2026-09-29T08:19 [Al Jazeera] Fighting in Ethiopia intensifies: What’s the latest?
+  #   Capture of key town could pave the way for federal forces to push towards Tigray&#039;s capital, Mekelle.
+- pair: [d112, d120]
+  label: ''
+  note: ''
+  # A 2026-10-01T09:40 [Al Jazeera] Can Europe still compete with the US and China?
+  #   Europe faces growing pressure from the US and China as it struggles to stay competitive.
+  # A 2026-10-01T23:42 [BBC World] Spain and China are cosying up - to the anger of many in the EU
+  #   On the streets of Barcelona, fiery red and gold Chinese dragons (presumably with very sweaty people inside the costumes) danced among delighted crowds, while Chinese acrobats elicited gasps of amazement as they rolled, t
+  # B 2026-10-01T14:00 [South China Morning Post] China backs Cuba, Beijing’s Panama threat, new UN chief: 7 Latin America relations reads
+  #   We have selected seven of the most interesting and important news stories covering Latin American relations from the past few weeks
+  # B 2026-10-02T20:52 [Al Jazeera] Latin America sees China as more positive global influence than US: Poll
+  #   Annual Latinobarometro survey finds views of China’s influence improving as perceptions of US influence worsen.
+- pair: [d117, d73]
+  label: ''
+  note: ''
+  # A 2026-10-01T22:05 [Defense News] US Navy awards RTX’s Raytheon $24.4B for SM-6 missiles amid stockpile concerns
+  #   RTX’s Raytheon unit won a multiyear contract worth up to $24.4 billion to produce Standard Missile-6 interceptors for the U.S
+  # A 2026-10-02T13:49 [Breaking Defense] Navy, Raytheon ink $24.4B deal for SM-6 ‘acceleration’
+  #   The deal covers at least five-years of production for an undisclosed number of missiles.
+  # B 2026-09-29T16:18 [Defense News] Pentagon awards Raytheon up to $20.7 billion to nearly double AMRAAM production
+  #   The Defense Department has awarded Raytheon a multiyear contract worth up to $20.7 billion to build Advanced Medium-Range Air-to-Air Missiles, or AMRAAMs
+  # B 2026-09-29T16:59 [Breaking Defense] Raytheon nets potential $20.7 billion AMRAAM deal
+  #   Separately, L3Harris announced it won a $6 billion contract from Lockheed Martin for THAAD interceptor propulsion systems.
+- pair: [d101, d84]
+  label: ''
+  note: ''
+  # A 2026-09-29T23:33 [BBC World] Ukraine's prized steel industry left in ruins by Russian missile campaign
+  #   Ukraine's remaining steelworks, a vital part of its economy, have all but ground to a halt because of relentless attacks.
+  # A 2026-10-01T09:00 [South China Morning Post] Why Japan is looking to Ukraine’s front lines to overhaul its defences
+  #   Japan is increasingly tapping into Ukraine’s war experience against Russia as a valuable source of intelligence on military technologies that could strengthen its defensive and offensive capabilities.
+  # A 2026-10-01T12:13 [Defense News] Ukraine has struck Russian factory vital for Moscow’s missiles, private intelligence firm says
+  #   GLASGOW, Scotland — A Russian factory that Ukraine struck on Sept
+  # B 2026-09-30T11:32 [Al Jazeera] Russian attacks on Ukraine’s Kyiv region kill four, target power grid
+  #   City officials say three killed in Ukraine&#039;s capital, as emergency services say child killed in the surrounding region.
+  # B 2026-09-30T11:47 [BBC World] Russia launches largest attack on Ukraine energy infrastructure since spring
+  #   In total 11 regions of the country were attacked overnight, with residential buildings and railways also targeted, the Ukrainian PM says.
+  # B 2026-09-29T23:33 [BBC World] Ukraine's prized steel industry left in ruins by Russian missile campaign
+  #   Ukraine's remaining steelworks, a vital part of its economy, have all but ground to a halt because of relentless attacks.
