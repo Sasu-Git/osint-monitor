@@ -105,12 +105,23 @@ def m005_run_ledger(conn: Connection) -> None:
         "JOIN raw_items r ON r.id = ei.item_id WHERE ei.event_id = events.id)"))
 
 
+def m006_development_summary(conn: Connection) -> None:
+    """A persisted factual summary per development, with how and from which items it was made.
+    (Numbered 4 on feat/localhost-demo before main took 4 and 5.)"""
+    for column, ddl in [
+        ("development_summary", "TEXT"), ("summary_method", "VARCHAR(100)"), ("summary_model", "VARCHAR(100)"),
+        ("summary_generated_at", _datetime_type(conn)), ("summary_item_ids", "JSON"),
+    ]:
+        _add_column(conn, "events", column, ddl)
+
+
 MIGRATIONS: list[tuple[int, Callable[[Connection], None]]] = [
     (1, m001_legacy),
     (2, m002_situations),
     (3, m003_development_fields),
     (4, m004_entity_resolution),
     (5, m005_run_ledger),
+    (6, m006_development_summary),
 ]
 
 

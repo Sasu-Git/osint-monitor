@@ -1,0 +1,154 @@
+{% extends "shell.html" %}
+{% import "_ui.html" as ui %}
+{% block title %}{% if page %}{{ page.card.development.what_happened[:60] }}{% else %}Development not found{% endif %}{% endblock %}
+{% block content %}
+{% if page is none %}
+  <div class="crumbs"><a href="/">Today</a></div>
+  <div class="empty"><strong>Development #{{ event_id }} does not exist.</strong><a href="/">Back to Today</a></div>
+{% else %}
+{% set c = page.card %}{% set d = c.development %}{% set cl = d.classification %}{% set conf = d.confidence %}
+<div class="crumbs">
+  <a href="/">Today</a>{% if c.situation_slug %} / <a href="/situations/{{ c.situation_slug }}">{{ c.situation_title }}</a>{% endif %}
+</div>
+
+<header class="detail-head">
+  <div class="line">
+    {{ ui.significance(d.significance_class) }}
+    {{ ui.event_type(cl.event_type) }}
+    {{ ui.domain(cl.event_domain) }}
+    {{ ui.confidence(conf.confidence_class) }}
+    <span class="time wrap">First reported {{ d.first_reported_at | when }}{% if d.last_updated_at and d.last_updated_at != d.first_reported_at %} · updated {{ d.last_updated_at | when }}{% endif %}</span>
+  </div>
+  <h1>{{ d.what_happened }}</h1>
+  <div class="line">
+    {{ ui.actors(d.principal_actors) }}
+    {{ ui.situation(c.situation_slug, c.situation_title) }}
+  </div>
+</header>
+
+{% if not c.corroborated %}
+<p class="notice caution">
+  Awaiting corroboration: this story cluster has {{ c.independent_sources }} independent source{{ '' if c.independent_sources == 1 else 's' }}.
+  It is not listed as a development until at least {{ min_sources }} independent sources report it.
+</p>
+{% endif %}
+
+<div class="grid-2">
+  <div>
+    <section class="section">
+      <h2>What happened</h2>
+      {% set sm = d.summary %}
+      {% if sm.text %}
+        <p class="lede">{{ sm.text }}</p>
+        <details class="provenance">
+          <summary>{{ sm.method | summary_method }}{% if sm.generated_at %} · {{ sm.generated_at | when }}{% endif %}</summary>
+          <dl class="facts">
+            <dt>Method</dt><dd>{{ sm.method }}</dd>
+            {% if sm.model %}<dt>Model</dt><dd>{{ sm.model }}</dd>{% endif %}
+            <dt>Generated</dt><dd>{{ sm.generated_at | when }}</dd>
+            <dt>From items</dt><dd>{% for i in sm.item_ids %}#{{ i }}{% if not loop.last %}, {% endif %}{% endfor %}</dd>
+          </dl>
+        </details>
+      {% elif d.change_summary and d.change_summary | trim | lower != d.what_happened | trim | lower %}
+        <p class="lede">{{ d.change_summary }}</p>
+        <p class="hint">From the classifier's change note; no evidence-grounded summary is stored.</p>
+      {% elif sm.method == 'insufficient-evidence' %}
+        <p class="lede">{{ d.what_happened }}</p>
+        <p class="hint">No factual summary: the reports do not contain a usable lead that states what happened. Headline of the most credible report shown instead.</p>
+      {% else %}
+        <p class="lede">{{ d.what_happened }}</p>
+        <p class="hint">No summary has been generated for this development yet. Headline of the most credible report shown instead.</p>
+      {% endif %}
+    </section>
+
+    <section class="section">
+      <h2>Evidence strength</h2>
+      {% set n = d.counts %}
+      <div class="evidence-summary">
+        {{ ui.confidence(conf.confidence_class) }}
+        <span class="chip">{{ n.items }} source item{{ '' if n.items == 1 else 's' }}</span>
+        {% if n.independent_origins is not none %}<span class="chip">{{ n.independent_origins }} independent origin{{ '' if n.independent_origins == 1 else 's' }}</span>
+        {% else %}<span class="chip muted">Independent origins not determined</span>{% endif %}
+        {% if n.official_origins %}<span class="chip">{{ n.official_origins }} official source{{ '' if n.official_origins == 1 else 's' }}</span>{% endif %}
+        {% if n.derivative_items %}<span class="chip">{{ n.derivative_items }} derivative</span>{% endif %}
+        {% if n.commentary_items %}<span class="chip muted">{{ n.commentary_items }} commentary, not counted</span>{% endif %}
+        {% if n.undetermined_items %}<span class="chip muted">{{ n.undetermined_items }} provenance not determined</span>{% endif %}
+        {% for f in conf.flags %}<span class="chip muted">{{ f | humanize }}</span>{% endfor %}
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Supporting evidence</h2>
+      {% if d.evidence_groups %}
+        {% for g in d.evidence_groups %}
+        <div class="ev-group ev-{{ g.kind }}">
+          <h3>{{ g.kind | group_label }}</h3>
+          {% if g.kind == 'commentary' %}<p class="hint">Analysis about the development; not counted as evidence that it happened.</p>{% endif %}
+          {% if g.kind == 'undetermined' %}<p class="hint">Provenance was not assessed for these items; they are not counted as independent.</p>{% endif %}
+          {% for o in g.origins %}
+          <div class="origin">
+            <div class="origin-head">
+              {% if g.kind == 'derivative' %}Repeats <b>{{ o.origin }}</b>{% else %}<b>{{ o.origin }}</b>{% endif %}
+              {% set outlets = o.items | map(attribute='source') | unique | list %}
+              {% if outlets | length > 1 or (outlets and outlets[0] | lower != o.origin | lower) %}<span class="time">via {{ outlets | join(', ') }}</span>{% endif %}
+              {% set role = o.role | role_label %}{% if role and o.role not in ['independent_reporting', 'unknown'] %}<span class="chip">{{ role }}</span>{% endif %}
+            </div>
+            <ol class="evidence">
+              {% for e in o.items %}
+              <li class="ev {{ e.evidence_type or '' }}">
+                <div class="who">{% if e.source | lower != o.origin | lower %}{{ e.source }}{% endif %}<span class="time">{{ e.published_at | when }}</span><span class="time">item #{{ e.item_id }}</span></div>
+                <div class="what">
+                  {% if e.url and (e.url.startswith('http://') or e.url.startswith('https://')) %}
+                    <a href="{{ e.url }}" rel="noopener noreferrer" target="_blank">{{ e.title or 'Untitled report' }}</a>
+                  {% else %}{{ e.title or 'Untitled report' }} <span class="time">(no link)</span>{% endif %}
+                </div>
+                {% if e.excerpt and e.excerpt | lower != (e.title or '') | lower %}<div class="excerpt">{{ e.excerpt }}</div>{% endif %}
+                <div class="tags">
+                  {% set ev = e.evidence_type | evidence_label %}{% if ev %}<span class="chip">{{ ev }}</span>{% else %}<span class="chip muted">Evidence type unknown</span>{% endif %}
+                  {% if e.item_id in d.summary.item_ids %}<span class="chip">Used in summary</span>{% endif %}
+                </div>
+                {% if e.derived_from or (e.provenance_note and not e.provenance_note.startswith('own reporting')) %}
+                <div class="note">{% if e.derived_from %}Derived from {{ e.derived_from }}. {% endif %}{% if not e.provenance_note.startswith('own reporting') %}{{ e.provenance_note }}{% endif %}</div>
+                {% endif %}
+              </li>
+              {% endfor %}
+            </ol>
+          </div>
+          {% endfor %}
+        </div>
+        {% endfor %}
+      {% else %}<p class="none">No source items are linked to this development.</p>{% endif %}
+    </section>
+  </div>
+
+  <aside>
+    <section class="section panel">
+      <h2>Why this surfaced</h2>
+      {% if c.reasons.surfaced %}<ul class="bullets">{% for r in c.reasons.surfaced %}<li>{{ r }}</li>{% endfor %}</ul>
+      {% else %}<p class="none">No ranking reasons recorded.</p>{% endif %}
+      {% if c.reasons.caveats %}
+      <h2 style="margin-top:14px">Caveats</h2>
+      <ul class="bullets caveats">{% for r in c.reasons.caveats %}<li>{{ r }}</li>{% endfor %}</ul>
+      {% endif %}
+    </section>
+
+    <section class="section panel">
+      <h2>Classification</h2>
+      <dl class="facts">
+        <dt>Type</dt><dd>{{ cl.event_type | type_label }}</dd>
+        <dt>Domain</dt><dd>{{ (cl.event_domain | domain_label) or 'Unclassified' }}</dd>
+        <dt>Interaction</dt><dd>{{ (cl.interaction_mode | domain_label) or 'Not determined' }}</dd>
+        <dt>Concreteness</dt><dd>{{ (cl.concreteness | domain_label) or 'Not determined' }}</dd>
+        <dt>Significance</dt><dd>{{ (d.significance_class | humanize) or 'Not assessed' }}</dd>
+        <dt>Confidence</dt><dd>{{ conf.confidence_class | conf_label }}</dd>
+        <dt>Sources</dt><dd>{{ c.independent_sources }} independent · {{ conf.source_count }} outlet{{ '' if conf.source_count == 1 else 's' }} · {{ d.evidence | length }} report{{ '' if d.evidence | length == 1 else 's' }}</dd>
+        <dt>Actors</dt><dd>{{ d.principal_actors | join(', ') or 'None identified' }}</dd>
+        <dt>Region</dt><dd>{{ (d.region | domain_label) or 'Not assigned' }}</dd>
+        {% if cl.classified_by %}<dt>Classifier</dt><dd>{{ cl.classified_by }}</dd>{% endif %}
+        {% if cl.uncertainty_flags %}<dt>Uncertainty</dt><dd>{{ cl.uncertainty_flags | map('humanize') | join(', ') }}</dd>{% endif %}
+      </dl>
+    </section>
+  </aside>
+</div>
+{% endif %}
+{% endblock %}

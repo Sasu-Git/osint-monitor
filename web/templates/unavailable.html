@@ -1,0 +1,8 @@
+{% extends "shell.html" %}
+{% block title %}Unavailable{% endblock %}
+{% block content %}
+<div class="empty">
+  <strong>{{ page }} is unavailable: the database could not be read.</strong>
+  Check that the database file exists and is not locked, then reload. Details are in the server log.
+</div>
+{% endblock %}

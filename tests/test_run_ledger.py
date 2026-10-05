@@ -165,7 +165,7 @@ def test_migration_5_adds_the_stamps_backfills_publication_time_and_invents_no_m
             _insert(conn, "event_items", id=i, event_id=1, item_id=item)
     assert "ingested_run_id" not in {c["name"] for c in inspect(engine).get_columns("raw_items")}
 
-    assert run_migrations(engine, backup_dir=tmp_path / "backups") == head_version() == 5
+    assert run_migrations(engine, backup_dir=tmp_path / "backups") == head_version() >= 5   # 4 -> head, via 5
     with engine.connect() as conn:
         rows = conn.execute(text("SELECT id, added_at, added_run_id FROM event_items ORDER BY id")).fetchall()
         assert [r[0] for r in rows] == [1, 2]                        # identical duplicate removed, oldest kept
@@ -174,6 +174,6 @@ def test_migration_5_adds_the_stamps_backfills_publication_time_and_invents_no_m
         idx = {i["name"] for i in inspect(conn).get_indexes("event_items")}
         assert {"uq_event_item", "ix_event_items_item", "ix_event_items_added_run_id"} <= idx
         assert "ingested_run_id" in {c["name"] for c in inspect(conn).get_columns("raw_items")}
-    assert current_version(engine) == 5
+    assert current_version(engine) == head_version()
     assert (tmp_path / "backups").exists()                           # pre-migration backup taken
     engine.dispose()

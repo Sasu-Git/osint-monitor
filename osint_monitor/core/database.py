@@ -196,6 +196,12 @@ class Event(Base):
     rank_score: Mapped[float | None] = mapped_column(Float)
     rank_reasons: Mapped[list | None] = mapped_column(JSON)
     ranked_at: Mapped[datetime | None] = mapped_column(DateTime)
+    # FACT: what concretely happened, grounded only in this development's evidence (processors/summaries.py)
+    development_summary: Mapped[str | None] = mapped_column(Text)
+    summary_method: Mapped[str | None] = mapped_column(String(100))   # "extractive-leads-v1", "llm", "insufficient-evidence"
+    summary_model: Mapped[str | None] = mapped_column(String(100))    # provider/model when an LLM wrote it
+    summary_generated_at: Mapped[datetime | None] = mapped_column(DateTime)
+    summary_item_ids: Mapped[list | None] = mapped_column(JSON)        # raw item ids the summary was made from
 
     situation: Mapped["Situation | None"] = relationship(back_populates="developments")
     event_items: Mapped[list["EventItem"]] = relationship(back_populates="event")
