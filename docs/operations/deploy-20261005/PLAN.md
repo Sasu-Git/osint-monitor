@@ -24,3 +24,46 @@
 - the failing collectors: Nitter, Lawfare, X-ForYou, US Congress, Financial Intelligence (Quant);
 - a "ledger starts at …" label in `main.py status`;
 - the `python -c` import-probe note in the runbook.
+
+## Status of item 1 (2026-10-06)
+
+**Code.** `ActorNormalizer` changes:
+- It reuses the gazetteer's es/it place names (`config/geography.yaml`) for mentions that are not already actor
+  names.
+- It matches accent-insensitively.
+- `config/actors.yaml` gains es/it demonyms and organisation names (OTAN, ONU, Unión Europea, Casa Blanca …).
+- `ambiguous_names: [Bolsonaro]`: a bare family name is not an actor; full names stay distinct.
+
+**Gate versus `main`:**
+- pytest 659 passed / 3 xfailed; smoke passed;
+- entity benchmark: no unit changed;
+- clustering benchmark (development): identical;
+- identity scores (development): identical.
+
+**Repair.** `scripts/repair_situations.py` is a dry run by default. `--apply` backs up first, then retires invalid
+created Situations: status `closed`, slug renamed, members detached. `--regroup` runs the normal grouping stage
+afterwards.
+
+**Simulation on a backup-API copy of the live DB (2026-10-06 14:09Z):**
+- **Retired**, exactly the two expected:
+  - `estados-unidos-united-states` (actors collapse; E135, E157);
+  - `bolsonaro-fl-vio-bolsonaro` (bare "Bolsonaro"; E114, E147, E148).
+- **Kept:** `nato-russia`, and every seed.
+- **Regroup:**
+  - E227 (a Spanish Zelenskyy article) now joins the `russia-ukraine-war` seed;
+  - a **new `russia-united-states` was founded by E159 (es) and E168 (en), which are one occurrence** (a Siberian
+    lab-plague case in two languages).
+
+**New finding (needs an owner decision before any live repair).** Cross-language Development splits count as
+recurrence when a Situation is created. The English-only embeddings split one occurrence into en and es
+Developments. With the actor names now aligned, those duplicates share an actor set and found a Situation. The
+original `estados-unidos-united-states` was the same pattern (E135/E157 = one Fairford event).
+
+**Options:**
+- (a) Require the founding Developments to be distinct occurrences, for example not sharing a specific place
+  within 48 h. This is a Situation-grouping change.
+- (b) Fix cross-language identity first (Phase 2 known limit).
+- (c) Accept and repair periodically.
+
+**The live DB has not been touched.** The repair runs on live only with a new deploy candidate and owner
+approval.
