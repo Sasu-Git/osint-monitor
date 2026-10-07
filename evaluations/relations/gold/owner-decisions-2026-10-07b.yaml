@@ -1,0 +1,45 @@
+# Owner decisions of 2026-10-07 (second round). Applied when the final development-side relation gold is frozen
+# (step 3), after Development-identity repair, because identity repair may re-map case targets (D19).
+relation_cases:
+  R055:
+    label: NO_RELATION
+    reason: "A (08:06) predates B's Taiwan remarks (09:43); A cannot react to B"
+    external_links:
+      - side: a
+        relation: reaction_to
+        role: reaction
+        trigger: "Xi-Trump summit (Washington) -- must resolve to the summit's Development ID; no canonical link otherwise"
+  T025:
+    label: AMBIGUOUS
+    reason: "identity verdict DIFFERENT (two days of the French school-protest wave); the relation was not assessed"
+identity_verdicts:            # -> Development-identity gold revision 3 (additions); excluded from relation scoring
+  R012: {verdict: SAME_DEVELOPMENT, items: [sx-100, sx-170], window: 2026-09-30-multilingual,
+         cause: "same-language recall miss (BBC / France 24)"}
+  R138: {verdict: SAME_DEVELOPMENT, items: ["D10 (es/it AI luncheon)", sx-168], window: 2026-09-30-multilingual,
+         cause: "cross-language split (es/it vs en)"}
+  T008: {verdict: SAME_DEVELOPMENT, items: [s-1124, s-1316], window: 2026-10-03-live,
+         cause: "same outlet, same day update (Spain's eviction measures)"}
+  T034: {verdict: SAME_DEVELOPMENT, items: [s-1200, s-1233], window: 2026-10-03-live,
+         cause: "same-language recall miss (SCMP / Al Jazeera)"}
+  T041: {verdict: SAME_DEVELOPMENT, items: [s-1525, "D9 BBC item"], window: 2026-10-03-live,
+         cause: "late-attachment miss (Christa Pike)"}
+  T025: {verdict: DIFFERENT_DEVELOPMENT, items: [s-1228, s-1380], window: 2026-10-03-live,
+         cause: "distinct days of one protest wave"}
+  T033: {verdict: SAME_DEVELOPMENT, items: [sx-535, "D19 rial item"], window: 2026-09-30-multilingual,
+         cause: "GDELT headline-only item not attached"}
+  T039: {verdict: SAME_DEVELOPMENT, items: [sx-540, "D19 rial item"], window: 2026-09-30-multilingual,
+         cause: "GDELT headline-only item not attached"}
+  D19:  {verdict: SPLIT_REQUIRED, window: 2026-09-30-multilingual,
+         cause: "mixed: the rial record low plus a separate 'Iran confirms it received the US response' occurrence"}
+regression_cases:             # owner: explicit regression cases for the cross-language fix (live window)
+  - "RAF Fairford: US Air Force removes bombers (en, E135) == El Pentágono retira sus bombarderos de Fairford (es, E157)"
+  - "Siberian plague: Russian lab worker dies of suspected plague (en, E168) == Rusia asegura ... Irkutsk (es, E159)"
+  - "R138: White House AI luncheon / America.gov (es/it D10) == France 24 (en)"
+model_decision:
+  cross_language_candidates: paraphrase-multilingual-MiniLM-L12-v2
+  constraints: [candidate generation only, P7-style explicit anchors are the acceptance guard,
+                multilingual cosine alone never merges, record model and version in provenance,
+                benchmark on identity gold revision 3 before enabling]
+other_causes:
+  same_language_misses: "existing Phase 2 identity logic, not the multilingual model"
+  gdelt_headline_only: "text-quality rule; headline-only items do not carry full evidentiary weight"
