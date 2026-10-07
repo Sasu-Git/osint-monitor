@@ -21,6 +21,12 @@ sha256:
   taxonomy.md: d7e126bb1bd972ed3ec773071b879faaf6026f2f8717b2edee26f3ca82c7b719
   gold/relation-gold.yaml: f79271ee3a6b7a5b942f0404a67fff5e29115d3c9bbe76b730a3e588c5b74621
   scripts/freeze_relation_gold.py: 96fd0bf082359e7636c93267b91be38e3592471ccd480e05f2b701df67b60404
+  gold/relation-gold-reaction-batch.yaml: a88b5f20eb426340801f9e1f7bb9b674231335c464273ddc5b5a78036df7e226
+  gold/reaction-batch-verdicts.snapshot.yaml: f6bdc24835e7a5c27cc084c9ff7e739cfcbd508f33b8ed64f0eebfe11864e44f
+  review-reaction-batch/cases.json: 7892f737f0e9925339d5fbc06ee92f895782a45085a14c438aa1b3b6f1cdd0fa
+  review-reaction-batch/draft-labels.json: fa78818a941ee77e937e48452645227aff95678c59e306a4ac00c31669e9c433
+  taxonomy.md (revision 1): 46687b2d3f79b9370892d80d303502be6c74a00095f00740abca444008863818
+  scripts/freeze_reaction_batch.py: 70419826c0203b278c6877562d9a38d3a42fbe5d99f3ac0b7523c66e72c81e1e
 holdout_seal: holdout/SEALED.yaml unchanged; not opened
 revision: 1
 cases_frozen: 141
@@ -54,9 +60,31 @@ scored_cases: 133
 runtime_taxonomy:
   same_calamity_lifecycle: implement
   same_convened_event: implement
-  reaction_to: targeted batch first
+  reaction_to: 'implement (targeted batch passed: 7 canonical positives, 5 triggers)'
   same_attack_wave: defer
   follow_up_to: defer
   commentary_on: defer
   caused_by: dropped from Phase 3 runtime
   co_caused_with: dropped from Phase 3 runtime
+reaction_batch:
+  frozen_at: '2026-10-07T16:56:56+00:00'
+  cases: 45
+  labels:
+    NO_RELATION: 23
+    commentary_on: 3
+    reaction_to: 5
+    SAME_DEVELOPMENT_SUSPECTED: 6
+    follow_up_to: 5
+    same_convened_event: 2
+    same_attack_wave: 1
+  canonical_reaction_to: 5
+combined_canonical_positives:
+  caused_by: 0
+  co_caused_with: 1
+  commentary_on: 7
+  follow_up_to: 5
+  reaction_to: 7
+  same_attack_wave: 2
+  same_calamity_lifecycle: 13
+  same_convened_event: 10
+combined_scored_cases: 172

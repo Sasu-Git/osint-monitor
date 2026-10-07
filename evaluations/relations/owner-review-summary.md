@@ -240,3 +240,78 @@ untouched.
 | **Targeted batch first** | `reaction_to`: only 2 canonical positives |
 | **Defer** | `same_attack_wave`, `follow_up_to`, `commentary_on` |
 | **Drop from Phase 3 runtime** | `caused_by`, `co_caused_with` |
+
+---
+
+## 11. Targeted `reaction_to` batch (2026-10-07)
+
+**Setup.** 45 pairs from the development windows only. The holdout seal is intact. The owner reviewed all 45.
+Frozen as `gold/relation-gold-reaction-batch.yaml`, with the verdicts verbatim in
+`gold/reaction-batch-verdicts.snapshot.yaml` and the hashes in `gold/manifest.yaml`.
+
+**Owner verdicts:**
+
+| Verdict | Cases |
+|---|---:|
+| `NO_RELATION` | 23 |
+| `SAME_DEVELOPMENT_SUSPECTED` | 6 |
+| `reaction_to` | 5 |
+| `follow_up_to` | 5 |
+| `commentary_on` | 3 |
+| `same_convened_event` | 2 |
+| `same_attack_wave` | 1 |
+
+### Explicit `reaction_to` positives
+
+| Case | Reaction | Trigger |
+|---|---|---|
+| T006 | Palestinians denounce Ben-Gvir's threats | Ben-Gvir's video threat |
+| T018 | Iran's minister: only negotiation can end the conflict, "after Trump rejects Hormuz deal" | Trump rejects the Hormuz plan |
+| T030 | Iran: new US sanctions violate sovereignty | the US vows the toughest sanctions |
+| T043 | the same Iran statement | the US designates Hezbollah an Iranian proxy (one reaction, two triggers) |
+| T036 | Paul Chan: Hong Kong's role in robotics | Hong Kong's first robot-run stores |
+
+With R008 and R014: **7 canonical positives over 5 distinct triggers.** The batch passes, so `reaction_to` moves
+to **implement**.
+
+### Other findings
+
+- **Third events.** In 5 cases the owner asks for links to a third event to be **modelled**, not left as notes
+  (T005, T007, T029, T042, T045, all around Trump's rejection of the Hormuz plan). T044 is a third topic (Hong
+  Kong's golden week). These are recorded under `external_links`.
+- **Requirement for the relation runtime.** When both sides point to an occurrence that the system holds (or
+  should hold) as a Development, the link must attach to that Development. It must not stay a free-text event
+  name.
+- **Identity suspects, routed to identity review:**
+  - T008 and T034 (the Spain eviction case);
+  - T025 (French school protests);
+  - T041 (Christa Pike, the same day);
+  - T033 and T039 (the Iran rial record low, en/es).
+
+  T033 and T039 are cross-language splits again.
+
+### Combined gold (revision 1 plus the batch)
+
+172 scored cases. Canonical positives:
+
+| Relation | Canonical positives |
+|---|---:|
+| `same_calamity_lifecycle` | 13 |
+| `same_convened_event` | 10 |
+| `reaction_to` | 7 |
+| `commentary_on` | 7 |
+| `follow_up_to` | 5 |
+| `same_attack_wave` | 2 |
+| `co_caused_with` | 1 |
+| `caused_by` | 0 |
+
+### Final Phase 3 runtime taxonomy
+
+| Plan | Types |
+|---|---|
+| **Implement** | `same_calamity_lifecycle`, `same_convened_event`, `reaction_to` |
+| **Defer** | `same_attack_wave`, `follow_up_to`, `commentary_on` |
+| **Dropped from Phase 3 runtime** | `caused_by`, `co_caused_with` |
+
+`follow_up_to` reached 5 positives in the batch, but 4 of them are one case (Christa Pike). It stays deferred, as
+decided.

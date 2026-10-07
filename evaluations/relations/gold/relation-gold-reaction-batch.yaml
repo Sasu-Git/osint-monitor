@@ -1,0 +1,556 @@
+# Relation gold revision 1 addendum: targeted reaction_to batch (development windows), frozen.
+T001:
+  a: 2026-08-21:carney-crucial-test-analysis
+  b: 2026-08-21:carney-retaliatory-tariffs
+  label: NO_RELATION
+  roles: null
+  evidence: null
+  canonical: false
+  scored: true
+  external_links: null
+  owner_note: null
+  annotation: null
+T002:
+  a: 2026-08-21:asian-allies-wary-us-assets-iran-war
+  b: 2026-08-21:iran-rejects-new-us-sanctions
+  label: NO_RELATION
+  roles: null
+  evidence: null
+  canonical: false
+  scored: true
+  external_links: null
+  owner_note: null
+  annotation: null
+T003:
+  a: 2026-09-30-multilingual:sx-150
+  b: 2026-09-30-multilingual:sx-396
+  label: commentary_on
+  roles:
+    commentary: 2026-09-30-multilingual:sx-396
+    subject: 2026-09-30-multilingual:sx-150
+  evidence: explicit
+  canonical: true
+  scored: true
+  external_links: null
+  owner_note: B is world news in brief, so it's not the totality of B that is the development of A, just a tiny bit, the bit
+    about repatriating
+  annotation: 'owner: B is a news-in-brief roundup; only its Malaysia-repatriation item comments on A'
+T004:
+  a: 2026-09-25:israel-palestine-treatment-at-un
+  b: 2026-09-25:jewish-march-against-netanyahu
+  label: NO_RELATION
+  roles: null
+  evidence: null
+  canonical: false
+  scored: true
+  external_links: null
+  owner_note: null
+  annotation: null
+T005:
+  a: 2026-09-27-live:trump-expects-new-iran-talks
+  b: 2026-09-27-live:why-trump-rejected-explainer
+  label: NO_RELATION
+  roles: null
+  evidence: null
+  canonical: false
+  scored: true
+  external_links:
+  - side: a
+    relation: follow_up_to
+    event: Trump rejects Iran's Strait of Hormuz plan (27 Sep)
+  - side: b
+    relation: commentary_on
+    event: Trump rejects Iran's Strait of Hormuz plan (27 Sep)
+  owner_note: 'link to third occurrence needs modelling (the rejection) '
+  annotation: null
+T006:
+  a: 2026-09-27-live:ben-gvir-threat-video
+  b: 2026-09-27-live:palestinians-denounce-ben-gvir
+  label: reaction_to
+  roles:
+    reaction: 2026-09-27-live:palestinians-denounce-ben-gvir
+    trigger: 2026-09-27-live:ben-gvir-threat-video
+  evidence: explicit
+  canonical: true
+  scored: true
+  external_links: null
+  owner_note: null
+  annotation: null
+T007:
+  a: 2026-09-27-live:behind-trump-rejection-analysis
+  b: 2026-09-27-live:hormuz-tensions-linger
+  label: NO_RELATION
+  roles: null
+  evidence: null
+  canonical: false
+  scored: true
+  external_links:
+  - side: a
+    relation: commentary_on
+    event: Trump rejects Iran's Strait of Hormuz plan (27 Sep)
+  - side: b
+    relation: commentary_on
+    event: Trump rejects Iran's Strait of Hormuz plan (27 Sep)
+  owner_note: no relation, both concern third occurrence, should be linked and modelled
+  annotation: null
+T008:
+  a: 2026-10-03-live:s-1124
+  b: 2026-10-03-live:s-1316
+  label: SAME_DEVELOPMENT_SUSPECTED
+  roles: null
+  evidence: null
+  canonical: false
+  scored: false
+  external_links: null
+  owner_note: clearly same development, same proposal, same day, same woman, same case
+  annotation: null
+T009:
+  a: 2026-09-29-live:malaysia-repatriation-to-myanmar
+  b: 2026-09-29-live:malaysia-rohingya-analysis
+  label: commentary_on
+  roles:
+    commentary: 2026-09-29-live:malaysia-rohingya-analysis
+    subject: 2026-09-29-live:malaysia-repatriation-to-myanmar
+  evidence: explicit
+  canonical: true
+  scored: true
+  external_links: null
+  owner_note: null
+  annotation: null
+T010:
+  a: 2026-09-29-live:opinion-trump-reject-iran-offer
+  b: 2026-09-29-live:iran-war-live-no-sanctions-relief
+  label: NO_RELATION
+  roles: null
+  evidence: null
+  canonical: false
+  scored: true
+  external_links: null
+  owner_note: null
+  annotation: null
+T011:
+  a: 2026-09-30-multilingual:sx-5
+  b: 2026-09-30-multilingual:sx-428
+  label: NO_RELATION
+  roles: null
+  evidence: null
+  canonical: false
+  scored: true
+  external_links: null
+  owner_note: null
+  annotation: null
+T012:
+  a: 2026-10-03-live:s-1245
+  b: 2026-10-03-live:D9
+  label: follow_up_to
+  roles:
+    follow_up: 2026-10-03-live:D9
+    original: 2026-10-03-live:s-1245
+  evidence: explicit
+  canonical: true
+  scored: true
+  external_links: null
+  owner_note: null
+  annotation: null
+T013:
+  a: 2026-10-03-live:s-1421
+  b: 2026-10-03-live:D9
+  label: follow_up_to
+  roles:
+    follow_up: 2026-10-03-live:D9
+    original: 2026-10-03-live:s-1421
+  evidence: explicit
+  canonical: true
+  scored: true
+  external_links: null
+  owner_note: null
+  annotation: null
+T014:
+  a: 2026-10-03-live:s-1404
+  b: 2026-10-03-live:D9
+  label: follow_up_to
+  roles:
+    follow_up: 2026-10-03-live:D9
+    original: 2026-10-03-live:s-1404
+  evidence: explicit
+  canonical: true
+  scored: true
+  external_links: null
+  owner_note: null
+  annotation: null
+T015:
+  a: 2026-08-31:singapore-envoy-hk-interview
+  b: 2026-08-31:paul-chan-robotics-role
+  label: NO_RELATION
+  roles: null
+  evidence: null
+  canonical: false
+  scored: true
+  external_links: null
+  owner_note: null
+  annotation: null
+T016:
+  a: 2026-09-30-multilingual:sx-425
+  b: 2026-09-30-multilingual:sx-423
+  label: NO_RELATION
+  roles: null
+  evidence: null
+  canonical: false
+  scored: true
+  external_links: null
+  owner_note: null
+  annotation: null
+T017:
+  a: 2026-08-21:soldiers-throw-belongings-qusra
+  b: 2026-08-21:israeli-drone-strike-syria-southwest
+  label: NO_RELATION
+  roles: null
+  evidence: null
+  canonical: false
+  scored: true
+  external_links: null
+  owner_note: null
+  annotation: null
+T018:
+  a: 2026-09-27-live:trump-rejects-hormuz-plan
+  b: 2026-09-27-live:araghchi-only-negotiation
+  label: reaction_to
+  roles:
+    reaction: 2026-09-27-live:araghchi-only-negotiation
+    trigger: 2026-09-27-live:trump-rejects-hormuz-plan
+  evidence: explicit
+  canonical: true
+  scored: true
+  external_links: null
+  owner_note: null
+  annotation: null
+T019:
+  a: 2026-09-25:nyc-protest-arrests-netanyahu
+  b: 2026-09-25:jewish-march-against-netanyahu
+  label: same_convened_event
+  roles: null
+  evidence: explicit
+  canonical: true
+  scored: true
+  external_links: null
+  owner_note: null
+  annotation: the protests at Netanyahu's UN visit belong to the convened event (UN General Assembly)
+T020:
+  a: 2026-09-29-live:myanmar-rakhine-market-airstrike
+  b: 2026-09-29-live:malaysia-repatriation-to-myanmar
+  label: NO_RELATION
+  roles: null
+  evidence: null
+  canonical: false
+  scored: true
+  external_links: null
+  owner_note: null
+  annotation: null
+T021:
+  a: 2026-08-31:us-larak-strike-iran-retaliation
+  b: 2026-08-31:uae-intercepts-drone-denies-airbase-hit
+  label: same_attack_wave
+  roles: null
+  evidence: explicit
+  canonical: true
+  scored: true
+  external_links: null
+  owner_note: null
+  annotation: null
+T022:
+  a: 2026-09-29-live:us-waiver-najaf-iran-flights
+  b: 2026-09-29-live:iran-war-live-no-sanctions-relief
+  label: NO_RELATION
+  roles: null
+  evidence: null
+  canonical: false
+  scored: true
+  external_links: null
+  owner_note: null
+  annotation: null
+T023:
+  a: 2026-09-29-live:najaf-iran-flights-resume
+  b: 2026-09-29-live:iran-war-live-no-sanctions-relief
+  label: NO_RELATION
+  roles: null
+  evidence: null
+  canonical: false
+  scored: true
+  external_links: null
+  owner_note: null
+  annotation: null
+T024:
+  a: 2026-08-21:japan-icc-judge-sanctioned
+  b: 2026-08-21:japan-record-defence-budget
+  label: NO_RELATION
+  roles: null
+  evidence: null
+  canonical: false
+  scored: true
+  external_links: null
+  owner_note: null
+  annotation: null
+T025:
+  a: 2026-10-03-live:s-1228
+  b: 2026-10-03-live:s-1380
+  label: SAME_DEVELOPMENT_SUSPECTED
+  roles: null
+  evidence: null
+  canonical: false
+  scored: false
+  external_links: null
+  owner_note: null
+  annotation: null
+T026:
+  a: 2026-08-21:uk-canada-australia-condemn-wck-probe-refusal
+  b: 2026-08-21:israeli-drone-strike-syria-southwest
+  label: NO_RELATION
+  roles: null
+  evidence: null
+  canonical: false
+  scored: true
+  external_links: null
+  owner_note: null
+  annotation: null
+T027:
+  a: 2026-09-29-live:hk-eco-sites-golden-week
+  b: 2026-09-29-live:hk-golden-week-things-to-do
+  label: NO_RELATION
+  roles: null
+  evidence: null
+  canonical: false
+  scored: true
+  external_links: null
+  owner_note: null
+  annotation: null
+T028:
+  a: 2026-09-30-multilingual:sx-168
+  b: 2026-09-30-multilingual:sx-167
+  label: same_convened_event
+  roles: null
+  evidence: explicit
+  canonical: true
+  scored: true
+  external_links: null
+  owner_note: null
+  annotation: null
+T029:
+  a: 2026-09-27-live:hormuz-tensions-linger
+  b: 2026-09-27-live:araghchi-doomsday-war
+  label: NO_RELATION
+  roles: null
+  evidence: null
+  canonical: false
+  scored: true
+  external_links:
+  - side: b
+    relation: reaction_to
+    event: Trump rejects Iran's Strait of Hormuz plan (27 Sep)
+  - side: a
+    relation: commentary_on
+    event: Trump rejects Iran's Strait of Hormuz plan (27 Sep)
+  owner_note: it's a reaction to a third event, should be linked and modelled accordingly
+  annotation: null
+T030:
+  a: 2026-08-21:bessent-vows-toughest-iran-sanctions
+  b: 2026-08-21:iran-rejects-new-us-sanctions
+  label: reaction_to
+  roles:
+    reaction: 2026-08-21:iran-rejects-new-us-sanctions
+    trigger: 2026-08-21:bessent-vows-toughest-iran-sanctions
+  evidence: explicit
+  canonical: true
+  scored: true
+  external_links: null
+  owner_note: null
+  annotation: null
+T031:
+  a: 2026-09-29-live:iran-denies-airbase-link
+  b: 2026-09-29-live:iran-war-live-no-sanctions-relief
+  label: NO_RELATION
+  roles: null
+  evidence: null
+  canonical: false
+  scored: true
+  external_links: null
+  owner_note: null
+  annotation: null
+T032:
+  a: 2026-09-30-multilingual:sx-169
+  b: 2026-09-30-multilingual:sx-167
+  label: commentary_on
+  roles:
+    commentary: 2026-09-30-multilingual:sx-169
+    subject: 2026-09-30-multilingual:sx-167
+  evidence: explicit
+  canonical: true
+  scored: true
+  external_links: null
+  owner_note: null
+  annotation: null
+T033:
+  a: 2026-09-30-multilingual:sx-535
+  b: 2026-09-30-multilingual:D19
+  label: SAME_DEVELOPMENT_SUSPECTED
+  roles: null
+  evidence: null
+  canonical: false
+  scored: false
+  external_links: null
+  owner_note: null
+  annotation: null
+T034:
+  a: 2026-10-03-live:s-1200
+  b: 2026-10-03-live:s-1233
+  label: SAME_DEVELOPMENT_SUSPECTED
+  roles: null
+  evidence: null
+  canonical: false
+  scored: false
+  external_links: null
+  owner_note: null
+  annotation: null
+T035:
+  a: 2026-09-30-multilingual:sx-410
+  b: 2026-09-30-multilingual:sx-423
+  label: NO_RELATION
+  roles: null
+  evidence: null
+  canonical: false
+  scored: true
+  external_links: null
+  owner_note: null
+  annotation: null
+T036:
+  a: 2026-08-31:hk-robot-convenience-stores-open
+  b: 2026-08-31:paul-chan-robotics-role
+  label: reaction_to
+  roles:
+    reaction: 2026-08-31:paul-chan-robotics-role
+    trigger: 2026-08-31:hk-robot-convenience-stores-open
+  evidence: explicit
+  canonical: true
+  scored: true
+  external_links: null
+  owner_note: null
+  annotation: null
+T037:
+  a: 2026-09-27-live:trump-rejects-hormuz-plan
+  b: 2026-09-27-live:trump-expects-new-iran-talks
+  label: follow_up_to
+  roles:
+    follow_up: 2026-09-27-live:trump-expects-new-iran-talks
+    original: 2026-09-27-live:trump-rejects-hormuz-plan
+  evidence: explicit
+  canonical: true
+  scored: true
+  external_links: null
+  owner_note: null
+  annotation: null
+T038:
+  a: 2026-08-21:economic-d-day-hits-us-markets
+  b: 2026-08-21:iran-rejects-new-us-sanctions
+  label: NO_RELATION
+  roles: null
+  evidence: null
+  canonical: false
+  scored: true
+  external_links: null
+  owner_note: null
+  annotation: null
+T039:
+  a: 2026-09-30-multilingual:sx-540
+  b: 2026-09-30-multilingual:D19
+  label: SAME_DEVELOPMENT_SUSPECTED
+  roles: null
+  evidence: null
+  canonical: false
+  scored: false
+  external_links: null
+  owner_note: null
+  annotation: null
+T040:
+  a: 2026-10-03-live:s-1510
+  b: 2026-10-03-live:D9
+  label: follow_up_to
+  roles:
+    follow_up: 2026-10-03-live:D9
+    original: 2026-10-03-live:s-1510
+  evidence: explicit
+  canonical: true
+  scored: true
+  external_links: null
+  owner_note: null
+  annotation: null
+T041:
+  a: 2026-10-03-live:s-1525
+  b: 2026-10-03-live:D9
+  label: SAME_DEVELOPMENT_SUSPECTED
+  roles: null
+  evidence: null
+  canonical: false
+  scored: false
+  external_links: null
+  owner_note: null
+  annotation: null
+T042:
+  a: 2026-09-27-live:behind-trump-rejection-analysis
+  b: 2026-09-27-live:trump-expects-new-iran-talks
+  label: NO_RELATION
+  roles: null
+  evidence: null
+  canonical: false
+  scored: true
+  external_links:
+  - side: a
+    relation: commentary_on
+    event: Trump rejects Iran's Strait of Hormuz plan (27 Sep)
+  - side: b
+    relation: follow_up_to
+    event: Trump rejects Iran's Strait of Hormuz plan (27 Sep)
+  owner_note: link to third event and model
+  annotation: null
+T043:
+  a: 2026-08-21:us-designates-hezbollah-iranian-proxy
+  b: 2026-08-21:iran-rejects-new-us-sanctions
+  label: reaction_to
+  roles:
+    reaction: 2026-08-21:iran-rejects-new-us-sanctions
+    trigger: 2026-08-21:us-designates-hezbollah-iranian-proxy
+  evidence: explicit
+  canonical: true
+  scored: true
+  external_links: null
+  owner_note: null
+  annotation: 'the same Iran statement also reacts to the sanctions vow in T030: one reaction, two triggers'
+T044:
+  a: 2026-09-29-live:hk-checkpoints-golden-week
+  b: 2026-09-29-live:hk-golden-week-things-to-do
+  label: NO_RELATION
+  roles: null
+  evidence: null
+  canonical: false
+  scored: true
+  external_links:
+  - side: both
+    relation: context
+    event: Hong Kong National Day 'golden week' holiday
+  owner_note: third topic
+  annotation: null
+T045:
+  a: 2026-09-27-live:araghchi-only-negotiation
+  b: 2026-09-27-live:hormuz-tensions-linger
+  label: NO_RELATION
+  roles: null
+  evidence: null
+  canonical: false
+  scored: true
+  external_links:
+  - side: a
+    relation: reaction_to
+    event: Trump rejects Iran's Strait of Hormuz plan (27 Sep)
+  - side: b
+    relation: commentary_on
+    event: Trump rejects Iran's Strait of Hormuz plan (27 Sep)
+  owner_note: third event
+  annotation: null
