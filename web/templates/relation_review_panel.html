@@ -14,7 +14,7 @@
       {% endfor %}
     </div>
     <div class="dirs" id="dirs" {{ '' if verdict and verdict.label in directed else 'hidden' }}>
-      Direction (source → target, e.g. <i>B reacts to A</i> = B→A):
+      Roles: <b>A → B</b> = A is the reaction / follow-up / effect / commentary, B the trigger / original / cause / subject:
       <label><input type="radio" name="direction" value="A->B" {{ 'checked' if verdict and verdict.direction == 'A->B' }}><span>A → B</span><kbd>[</kbd></label>
       <label><input type="radio" name="direction" value="B->A" {{ 'checked' if verdict and verdict.direction == 'B->A' }}><span>B → A</span><kbd>]</kbd></label>
     </div>
@@ -29,7 +29,7 @@
   <div id="draft"></div>
   <div class="legend">
     Shortcuts: <kbd>←</kbd> previous · <kbd>→</kbd> next · <kbd>s</kbd> skip ·
-    <kbd>n</kbd> NO_RELATION · <kbd>1</kbd>–<kbd>7</kbd> relation types (in button order) ·
+    <kbd>n</kbd> NO_RELATION · <kbd>1</kbd>–<kbd>8</kbd> relation types (in button order) ·
     <kbd>a</kbd> AMBIGUOUS · <kbd>i</kbd> SAME_DEVELOPMENT_SUSPECTED · <kbd>[</kbd>/<kbd>]</kbd> direction A→B / B→A ·
     <kbd>Enter</kbd> or <kbd>Ctrl</kbd>+<kbd>Enter</kbd> (in the note) save · <kbd>r</kbd> reveal draft (after saving).
     The draft label stays hidden until you have saved a verdict; revealing it never changes your verdict.

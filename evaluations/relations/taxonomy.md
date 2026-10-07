@@ -1,56 +1,67 @@
-# Development relation taxonomy (Phase 3, draft for owner review)
+# Development relation taxonomy (Phase 3, revision 1: owner decisions of 2026-10-07)
 
 A relation connects **two distinct Developments**. A Development is one occurrence (Phase 2 contract,
 `evaluations/identity/development-identity-contract.md`). Relations explain how occurrences connect. They never
 merge Developments and never change Situation membership.
 
-## Labels
+## Labels and named roles
 
-| Label | Kind | Direction | Definition | Required evidence |
+Directed relations name each side's role; there are no generic arrows.
+
+| Label | Kind | Roles | Definition | Required evidence |
 |---|---|---|---|---|
-| `same_calamity_lifecycle` | episode | symmetric | Both are stages of **one** natural or health calamity in a bounded area: warning, evacuation, impact, rescue and death toll, damage and cost, recovery. | The same hazard event (the same storm, quake, flood episode or outbreak) and an overlapping area. Same hazard type, same country or same season is not enough. |
-| `same_visit_or_summit` | episode | symmetric | Both happen within **one** bounded visit, meeting or summit: its announcement, the meeting, signed outcomes, side meetings, protests at it. | The same occasion: participants, dates and venue. The same bilateral relationship over time is not enough. |
-| `same_attack_wave` | episode | symmetric | Both come from **one** bounded wave of attacks (one night, one operation), including its side effects elsewhere. | The same wave: time span and attacker, explicitly or by the stated timing. Two days of strikes in the same war are not one wave. |
-| `reaction_to` | directed | source → target | The source is a statement or action by an actor that **explicitly responds** to the target: condemnation, rejection, welcome, counter-measure announced as a response. | The source names the target occurrence or refers to it unambiguously. |
-| `follow_up_to` | directed | source → target | The source is a **later step of the same matter** begun in the target, typically by the same institution or process: charges after an arrest, a verdict after a trial, implementation after a decision, an inquiry into an incident. | Explicit continuity: the same case, decision, incident or procedure. Later news on the same topic is not enough. |
-| `caused_by` | directed | effect → cause | The text **explicitly states** that the target caused or triggered the source. | An attributed causal claim ("because of", "triggered by", "in the wake of" with stated causation). An inferred cause is not enough: label `AMBIGUOUS` or `NO_RELATION`. |
-| `co_caused_with` | symmetric | none | Both are **explicitly attributed** to the same identifiable underlying cause (one event or decision), and neither causes the other. | Both texts name the common cause. |
-| `NO_RELATION` | none | none | Distinct Developments without any of the relations above. | none |
-| `AMBIGUOUS` | none | none | The evidence shown does not settle it. The note says what would. | none |
+| `same_calamity_lifecycle` | episode | – | Both are stages of **one** natural or health calamity in a bounded area: warning, evacuation, impact, rescue and death toll, damage and cost, recovery. | The same hazard event (the same storm, quake, flood episode or outbreak) and an overlapping area. |
+| `same_convened_event` | episode | – | Both belong to **one bounded scheduled gathering** (a visit, summit, conference or assembly session): its distinct actions and stated outcomes. | The same occasion: participants, dates, venue. Later implementation of an outcome is `follow_up_to`. |
+| `same_attack_wave` | episode | – | Both come from **one** bounded wave of attacks (one night, one operation). | The same wave: time span and attacker. |
+| `reaction_to` | directed | **reaction → trigger** | The reaction is a statement or action by an actor that **explicitly responds** to the trigger: condemnation, rejection, welcome, counter-measure. | The reaction names the trigger occurrence or refers to it unambiguously. |
+| `follow_up_to` | directed | **follow-up → original** | The follow-up is a later step of the same matter (the same case, decision, incident or procedure). | Explicit continuity. |
+| `caused_by` | directed | **effect → cause** | The text explicitly states that the cause brought about the effect. | An attributed causal claim. |
+| `commentary_on` | directed | **commentary → subject** | The commentary is analysis, an explainer or opinion about the subject occurrence. | The commentary is about the subject occurrence. |
+| `co_caused_with` | symmetric | – | Both are explicitly attributed to the same identifiable cause, and neither causes the other. | Both texts name the common cause. |
+| `NO_RELATION` | none | – | Distinct Developments without any of the relations above. | – |
+| `AMBIGUOUS` | none | – | The evidence shown does not settle it. | – |
+
+An identity question is not a relation. Set `SAME_DEVELOPMENT_SUSPECTED` when both sides look like one occurrence;
+it is routed to identity review.
+
+## Evidence rule
+
+**Canonical relations are explicit-only.** The text must state the link: a named trigger, an attributed cause, an
+explicit continuation.
+
+A link the owner judges real but only inferable (a reaction to a general situation, a shared background cause) is
+recorded with `evidence: inferred`. It is **non-canonical**: kept for later Situation/assessment logic, never
+emitted at runtime.
+
+## Third events
+
+When both sides relate to a **third** occurrence that is not in the pair, the pair itself is `NO_RELATION`. The
+links to the third event are recorded as external links. For example, two commentaries on the same decision are
+each `commentary_on` that decision, not related to each other.
 
 ## Precedence (one primary label per pair)
 
-1. **The same occurrence** is not a relation. It is an identity question: set `identity_flag: SAME_DEVELOPMENT_SUSPECTED`
-   and leave the relation label `NO_RELATION`.
-   - A release, its Q&A, its factsheet and the daily-news mention of one act are **one Development**. There is
-     no `official_package` relation.
-2. **Episode types first.** These are `same_calamity_lifecycle`, `same_visit_or_summit` and `same_attack_wave`.
-   They take precedence when both Developments are stages of one bounded episode. Within an episode, the
-   directed types are not used, even if one stage follows another.
-3. **Then the directed types,** in this order:
-   - `reaction_to`: a different actor responds;
-   - `follow_up_to`: the same matter or process continues;
-   - `caused_by`: any other explicit causal claim.
-4. **`co_caused_with`** comes last.
+1. **The same occurrence** → `SAME_DEVELOPMENT_SUSPECTED`. This is not a relation.
+2. **Episode types**, when both sides are stages of one bounded episode.
+3. **`reaction_to`** when a different actor responds. Then **`follow_up_to`** when the same matter continues. Then
+   **`caused_by`**.
+4. **`commentary_on`** when one side analyses the other.
+5. **`co_caused_with`**.
 
-## What is never sufficient on its own
+## Never sufficient on its own
 
-- shared actors, including broad bilateral pairs such as US–China, US–Iran or Russia–Ukraine;
+- shared actors, including broad bilateral pairs such as US–China;
 - a shared place;
 - temporal proximity;
 - the same conflict, crisis, storyline or Situation;
 - the same topic;
 - high text similarity.
 
-The Situation hold-out (2026-10-05, `KEEP EXACT ACTOR-SET`) showed that a shared broad actor pair is no evidence
-of a persistent connection. Broad pairs are therefore explicit negative controls in the gold.
+## Phase 3 runtime (owner decision, 2026-10-07)
 
-## Out of scope
-
-- **Commentary and analysis.** A piece analysing a Development is evidence with the COMMENTARY role. It is not
-  a Development that relates to it.
-  - If commentary appears as its own unit, label the pair `NO_RELATION` with `flag: commentary`.
-  - Commentary that reports a **new** reaction (a named actor's statement) can support `reaction_to`.
-- **Situation membership.** Relations do not imply it. A relation between Developments in two Situations does
-  not move either of them.
-- **Storyline grouping.** A whole storyline is not a relation. Relations are pairwise and evidence-bound.
+| Plan | Types |
+|---|---|
+| **Implement** | `same_calamity_lifecycle`, `same_convened_event` |
+| **Targeted batch first** | `reaction_to` |
+| **Defer** | `same_attack_wave`, `follow_up_to`, `commentary_on` |
+| **Dropped from Phase 3 runtime** | `caused_by`, `co_caused_with` (they stay in the gold taxonomy) |

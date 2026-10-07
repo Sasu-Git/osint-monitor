@@ -35,6 +35,10 @@ def side(o, tag):
 
 
 def main():
+    import sys
+    global REVIEW
+    if "--dir" in sys.argv:
+        REVIEW = ROOT / sys.argv[sys.argv.index("--dir") + 1]
     data = json.loads((REVIEW / "cases.json").read_text(encoding="utf-8"))
     drafts = json.loads((REVIEW / "draft-labels.json").read_text(encoding="utf-8"))
     cases = sorted(data["cases"], key=lambda c: c["case"])

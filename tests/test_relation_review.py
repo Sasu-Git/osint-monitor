@@ -22,8 +22,13 @@ REAL_VERDICTS = (REAL_REVIEW / "owner-verdicts.yaml").read_bytes()
 def review_dir(tmp_path):
     d = tmp_path / "review"
     d.mkdir()
-    for name in ("cases.json", "draft-labels.json", "owner-verdicts.yaml", "relation-review-sheet.md"):
+    for name in ("cases.json", "draft-labels.json", "relation-review-sheet.md"):
         shutil.copyfile(REAL_REVIEW / name, d / name)
+    # start from blank verdicts (the real file now holds the completed owner review)
+    import json
+    ids = [c["case"] for c in json.loads((d / "cases.json").read_text(encoding="utf-8"))["cases"]]
+    blank = "{label: null, direction: null, identity_flag: null, note: null}"
+    (d / "owner-verdicts.yaml").write_text("".join(f"{c}: {blank}\n" for c in ids), encoding="utf-8")
     return d
 
 
@@ -84,7 +89,7 @@ def test_existing_verdicts_survive_reload_and_other_saves(store):
 
 
 def test_regenerating_the_sheet_never_overwrites_owner_verdicts(store, monkeypatch):
-    store.save("R004", "same_visit_or_summit", None, "keep me")
+    store.save("R004", "same_convened_event", None, "keep me")
     before = store.verdicts_path.read_bytes()
     spec = importlib.util.spec_from_file_location(
         "build_review_sheet", RR.RELATIONS_DIR / "scripts" / "build_review_sheet.py")

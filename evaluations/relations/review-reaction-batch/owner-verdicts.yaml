@@ -1,0 +1,49 @@
+# Owner verdicts for the Phase 3 relation gold, one entry per case (written by the review UI,
+# /eval/relations). label: NO_RELATION | a relation type | AMBIGUOUS | SAME_DEVELOPMENT_SUSPECTED.
+# direction (A->B | B->A, source -> target) only for reaction_to, follow_up_to, caused_by.
+# Notes are kept verbatim. Regenerating the review sheet never overwrites this file.
+T001: {label: null, direction: null, identity_flag: null, note: null}
+T002: {label: null, direction: null, identity_flag: null, note: null}
+T003: {label: null, direction: null, identity_flag: null, note: null}
+T004: {label: null, direction: null, identity_flag: null, note: null}
+T005: {label: null, direction: null, identity_flag: null, note: null}
+T006: {label: null, direction: null, identity_flag: null, note: null}
+T007: {label: null, direction: null, identity_flag: null, note: null}
+T008: {label: null, direction: null, identity_flag: null, note: null}
+T009: {label: null, direction: null, identity_flag: null, note: null}
+T010: {label: null, direction: null, identity_flag: null, note: null}
+T011: {label: null, direction: null, identity_flag: null, note: null}
+T012: {label: null, direction: null, identity_flag: null, note: null}
+T013: {label: null, direction: null, identity_flag: null, note: null}
+T014: {label: null, direction: null, identity_flag: null, note: null}
+T015: {label: null, direction: null, identity_flag: null, note: null}
+T016: {label: null, direction: null, identity_flag: null, note: null}
+T017: {label: null, direction: null, identity_flag: null, note: null}
+T018: {label: null, direction: null, identity_flag: null, note: null}
+T019: {label: null, direction: null, identity_flag: null, note: null}
+T020: {label: null, direction: null, identity_flag: null, note: null}
+T021: {label: null, direction: null, identity_flag: null, note: null}
+T022: {label: null, direction: null, identity_flag: null, note: null}
+T023: {label: null, direction: null, identity_flag: null, note: null}
+T024: {label: null, direction: null, identity_flag: null, note: null}
+T025: {label: null, direction: null, identity_flag: null, note: null}
+T026: {label: null, direction: null, identity_flag: null, note: null}
+T027: {label: null, direction: null, identity_flag: null, note: null}
+T028: {label: null, direction: null, identity_flag: null, note: null}
+T029: {label: null, direction: null, identity_flag: null, note: null}
+T030: {label: null, direction: null, identity_flag: null, note: null}
+T031: {label: null, direction: null, identity_flag: null, note: null}
+T032: {label: null, direction: null, identity_flag: null, note: null}
+T033: {label: null, direction: null, identity_flag: null, note: null}
+T034: {label: null, direction: null, identity_flag: null, note: null}
+T035: {label: null, direction: null, identity_flag: null, note: null}
+T036: {label: null, direction: null, identity_flag: null, note: null}
+T037: {label: null, direction: null, identity_flag: null, note: null}
+T038: {label: null, direction: null, identity_flag: null, note: null}
+T039: {label: null, direction: null, identity_flag: null, note: null}
+T040: {label: null, direction: null, identity_flag: null, note: null}
+T041: {label: null, direction: null, identity_flag: null, note: null}
+T042: {label: null, direction: null, identity_flag: null, note: null}
+T043: {label: null, direction: null, identity_flag: null, note: null}
+T044: {label: null, direction: null, identity_flag: null, note: null}
+T045: {label: null, direction: null, identity_flag: null, note: null}

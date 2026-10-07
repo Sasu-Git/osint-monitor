@@ -10,7 +10,9 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def main():
-    cases = json.loads((ROOT / "review" / "cases.json").read_text(encoding="utf-8"))["cases"]
+    import sys
+    review = ROOT / (sys.argv[sys.argv.index("--dir") + 1] if "--dir" in sys.argv else "review")
+    cases = json.loads((review / "cases.json").read_text(encoding="utf-8"))["cases"]
     out = ["# Relation labelling input (blind)", "",
            "Label every case using the definitions in `taxonomy.md` (included below).",
            "",
@@ -20,7 +22,9 @@ def main():
            "Return, per case:",
            "",
            "- `label`: one relation type, `NO_RELATION` or `AMBIGUOUS`;",
-           "- `direction`: `B->A` or `A->B` for a directed type, written source -> target, or `none`;",
+           "- `direction`: for a directed type, which side holds the first role: `A->B` means A is the reaction /",
+           "  follow-up / effect / commentary and B the trigger / original / cause / subject; `B->A` the reverse; else",
+           "  `none`;",
            "- `identity_flag`: `SAME_DEVELOPMENT_SUSPECTED` or null;",
            "- `flag`: for example `commentary`, or null;",
            "- `rationale`: one sentence that cites the evidence;",
@@ -36,7 +40,7 @@ def main():
                 if e["excerpt"]:
                     out.append(f"  > {e['excerpt'][:300]}")
         out.append("")
-    (ROOT / "review" / "labeller-input.md").write_text("\n".join(out) + "\n", encoding="utf-8", newline="\n")
+    (review / "labeller-input.md").write_text("\n".join(out) + "\n", encoding="utf-8", newline="\n")
     print(len(cases), "cases -> review/labeller-input.md")
 
 

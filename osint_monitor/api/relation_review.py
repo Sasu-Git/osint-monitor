@@ -27,21 +27,23 @@ from fastapi.templating import Jinja2Templates
 
 REPO = Path(__file__).resolve().parents[2]
 RELATIONS_DIR = REPO / "evaluations" / "relations"
-REVIEW_DIR = RELATIONS_DIR / "review"
+REVIEW_DIR = Path(os.environ.get("RELATION_REVIEW_DIR") or RELATIONS_DIR / "review")
 HOLDOUT_DIR = RELATIONS_DIR / "holdout"
 TEMPLATES = Jinja2Templates(directory=str(REPO / "web" / "templates"))
 
-DIRECTED = ("reaction_to", "follow_up_to", "caused_by")
-SYMMETRIC = ("same_calamity_lifecycle", "same_visit_or_summit", "same_attack_wave", "co_caused_with")
+# taxonomy revision 1 (2026-10-07): named roles; A->B means A holds the first role (reaction, follow-up, effect,
+# commentary) and B the second (trigger, original, cause, subject)
+DIRECTED = ("reaction_to", "follow_up_to", "caused_by", "commentary_on")
+SYMMETRIC = ("same_calamity_lifecycle", "same_convened_event", "same_attack_wave", "co_caused_with")
 RELATIONS = SYMMETRIC[:3] + DIRECTED + SYMMETRIC[3:]
 IDENTITY = "SAME_DEVELOPMENT_SUSPECTED"
 VERDICTS = ("NO_RELATION",) + RELATIONS + ("AMBIGUOUS", IDENTITY)
 DIRECTIONS = ("A->B", "B->A")
 FILTERS = ("all", "unreviewed", "reviewed", "ambiguous", "identity", "disagree")
 # keyboard shortcuts, shown on the page
-SHORTCUTS = {"NO_RELATION": "n", "same_calamity_lifecycle": "1", "same_visit_or_summit": "2", "same_attack_wave": "3",
-             "reaction_to": "4", "follow_up_to": "5", "caused_by": "6", "co_caused_with": "7", "AMBIGUOUS": "a",
-             IDENTITY: "i"}
+SHORTCUTS = {"NO_RELATION": "n", "same_calamity_lifecycle": "1", "same_convened_event": "2", "same_attack_wave": "3",
+             "reaction_to": "4", "follow_up_to": "5", "caused_by": "6", "commentary_on": "7", "co_caused_with": "8",
+             "AMBIGUOUS": "a", IDENTITY: "i"}
 HEADER = ("# Owner verdicts for the Phase 3 relation gold, one entry per case (written by the review UI,\n"
           "# /eval/relations). label: NO_RELATION | a relation type | AMBIGUOUS | SAME_DEVELOPMENT_SUSPECTED.\n"
           "# direction (A->B | B->A, source -> target) only for reaction_to, follow_up_to, caused_by.\n"

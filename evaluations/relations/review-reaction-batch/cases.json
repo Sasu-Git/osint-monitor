@@ -1,0 +1,4008 @@
+{
+ "meta": {
+  "batch": "reaction_to targeted batch",
+  "split": "development",
+  "seed": 20261007,
+  "per_window": 8,
+  "cases": 45,
+  "script_sha256": "7d6a289f8e1f22f190968b1eee94d49dc7ca5976058e6a16ba437f300ff5ccb1"
+ },
+ "cases": [
+  {
+   "case": "T001",
+   "a": {
+    "id": "2026-08-21:carney-crucial-test-analysis",
+    "window": "2026-08-21",
+    "members": [
+     "b-2601ecbd74d1",
+     "b-cd62c85e62be"
+    ],
+    "storyline": "us-canada-trade",
+    "first": "2026-08-22T16:20:51",
+    "last": "2026-08-22T20:02:46",
+    "actors": [
+     "Carney",
+     "Trump",
+     "White House"
+    ],
+    "places": [
+     "Canada"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "BBC World"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-2601ecbd74d1",
+      "source": "BBC World",
+      "published_at": "2026-08-22T16:20:51",
+      "title": "Carney faces crucial test after walking away from Trump's deal",
+      "excerpt": "The Canadian prime minister will have to sell his gamble that walking away from talks with the White House will be worth the consequences."
+     },
+     {
+      "item": "b-cd62c85e62be",
+      "source": "BBC World",
+      "published_at": "2026-08-22T20:02:46",
+      "title": "Carney faces crucial test after walking away from Trump's deal",
+      "excerpt": "The Canadian prime minister will have to sell his gamble that walking away from talks with the White House will be worth the consequences."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-08-21:carney-retaliatory-tariffs",
+    "window": "2026-08-21",
+    "members": [
+     "b-ed25155d038d",
+     "b-f43c963adf42"
+    ],
+    "storyline": "us-canada-trade",
+    "first": "2026-08-22T18:20:36",
+    "last": "2026-08-22T20:10:00",
+    "actors": [
+     "Canada",
+     "Carney",
+     "Donald Trump",
+     "Mark Carney",
+     "Trump"
+    ],
+    "places": [
+     "Canada",
+     "US"
+    ],
+    "system_developments": [
+     4
+    ],
+    "situations": [],
+    "sources": [
+     "BBC World"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-ed25155d038d",
+      "source": "BBC World",
+      "published_at": "2026-08-22T18:20:36",
+      "title": "Carney calls Trump's fresh tariffs a 'miscalculation' after trade talks collapse",
+      "excerpt": "Canada's prime minister said he was \"reluctantly\" announcing retaliatory tariffs as he accused the US of starting a trade war."
+     },
+     {
+      "item": "b-f43c963adf42",
+      "source": "BBC World",
+      "published_at": "2026-08-22T20:10:00",
+      "title": "Carney calls Trump's fresh tariffs a 'miscalculation' after trade talks collapse",
+      "excerpt": "Canada's prime minister said he was \"reluctantly\" announcing retaliatory tariffs as he accused the US of starting a trade war."
+     }
+    ]
+   },
+   "cosine": 0.558
+  },
+  {
+   "case": "T002",
+   "a": {
+    "id": "2026-08-21:asian-allies-wary-us-assets-iran-war",
+    "window": "2026-08-21",
+    "members": [
+     "b-c349800cdff6"
+    ],
+    "storyline": null,
+    "first": "2026-08-21T12:32:03",
+    "last": "2026-08-21T12:32:03",
+    "actors": [
+     "Trump"
+    ],
+    "places": [
+     "Asia",
+     "China",
+     "US"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-c349800cdff6",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-21T12:32:03",
+      "title": "US allies in Asia wary as Trump moves military assets for Iran war",
+      "excerpt": "Allies worry about the US ability to deter China, even if the bulk of US forces remain in the region."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-08-21:iran-rejects-new-us-sanctions",
+    "window": "2026-08-21",
+    "members": [
+     "b-144df3b935e7"
+    ],
+    "storyline": "us-iran-economic-war",
+    "first": "2026-08-22T09:14:09",
+    "last": "2026-08-22T09:14:09",
+    "actors": [
+     "Esmaeil Baghaei",
+     "Foreign Ministry",
+     "Trump"
+    ],
+    "places": [
+     "Iran",
+     "US"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-144df3b935e7",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-22T09:14:09",
+      "title": "Iran says new US sanctions violate sovereignty of other states",
+      "excerpt": "Foreign Ministry spokesman Esmaeil Baghaei slams Trump&#039;s latest threat as a return to &#039;full-scale classic colonialism&#039;."
+     }
+    ]
+   },
+   "cosine": 0.48
+  },
+  {
+   "case": "T003",
+   "a": {
+    "id": "2026-09-30-multilingual:sx-150",
+    "window": "2026-09-30-multilingual",
+    "members": [
+     "sx-150"
+    ],
+    "storyline": null,
+    "first": "2026-09-29T10:26:00",
+    "last": "2026-09-29T10:26:00",
+    "actors": [
+     "United Nations"
+    ],
+    "places": [
+     "Malaysia",
+     "Myanmar"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "DW World"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "sx-150",
+      "source": "DW World",
+      "published_at": "2026-09-29 10:26:00.000000",
+      "title": "Malaysia repatriates Myanmar migrants despite UN warnings",
+      "excerpt": "Malaysia has started repatriating about 1,500 Myanmar nationals, defying warnings from the UN and rights groups. Malaysia, facing an uptick in anti-migrant sentiment, says the program is strictly voluntary."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-09-30-multilingual:sx-396",
+    "window": "2026-09-30-multilingual",
+    "members": [
+     "sx-396"
+    ],
+    "storyline": null,
+    "first": "2026-09-29T12:00:00",
+    "last": "2026-09-29T12:00:00",
+    "actors": [
+     "Rakhine",
+     "United Nations",
+     "World News"
+    ],
+    "places": [
+     "Gaza",
+     "Malaysia",
+     "Myanmar",
+     "West Bank"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "UN News"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": true,
+    "evidence": [
+     {
+      "item": "sx-396",
+      "source": "UN News",
+      "published_at": "2026-09-29 12:00:00.000000",
+      "title": "World News in Brief: Deadly Myanmar strikes as Malaysia begins deportations, new emergency funding released, Gaza and West Bank update",
+      "excerpt": "The UN chief on Tuesday strongly condemned an airstrike that reportedly killed at least 50 people at a market in Myanmar’s Rakhine state and called for those responsible to be held to account."
+     }
+    ]
+   },
+   "cosine": 0.653
+  },
+  {
+   "case": "T004",
+   "a": {
+    "id": "2026-09-25:israel-palestine-treatment-at-un",
+    "window": "2026-09-25",
+    "members": [
+     "b-8272fab65325"
+    ],
+    "storyline": "netanyahu-unga",
+    "first": "2026-09-25T02:26:16",
+    "last": "2026-09-25T02:26:16",
+    "actors": [
+     "UN General Assembly",
+     "UN Israel's Prime"
+    ],
+    "places": [
+     "Israel",
+     "Palestine"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-8272fab65325",
+      "source": "Al Jazeera",
+      "published_at": "2026-09-25T02:26:16",
+      "title": "Contrasting treatment of Israel and Palestine on display at the UN",
+      "excerpt": "Israel’s Prime Minister addressed the UN General Assembly in person, despite having an ICC arrest warrant."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-09-25:jewish-march-against-netanyahu",
+    "window": "2026-09-25",
+    "members": [
+     "b-3d9601881311"
+    ],
+    "storyline": "netanyahu-unga",
+    "first": "2026-09-25T03:49:43",
+    "last": "2026-09-25T03:49:43",
+    "actors": [
+     "Al Jazeera",
+     "Benjamin Netanyahu",
+     "Emma Withrow",
+     "Jewish"
+    ],
+    "places": [
+     "Palestine"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-3d9601881311",
+      "source": "Al Jazeera",
+      "published_at": "2026-09-25T03:49:43",
+      "title": "Jewish protestors join Free Palestine march to denounce Netanyahu",
+      "excerpt": "Al Jazeera’s Emma Withrow reports from a Free Palestine march, where Jewish demonstrators rejected Netanyahu."
+     }
+    ]
+   },
+   "cosine": 0.428
+  },
+  {
+   "case": "T005",
+   "a": {
+    "id": "2026-09-27-live:trump-expects-new-iran-talks",
+    "window": "2026-09-27-live",
+    "members": [
+     "b-6df939d5bb83"
+    ],
+    "storyline": "iran-hormuz-deal",
+    "first": "2026-09-27T19:16:36",
+    "last": "2026-09-27T19:16:36",
+    "actors": [
+     "Axios",
+     "Donald Trump",
+     "Iran",
+     "Tehran",
+     "Trump",
+     "UN General Assembly",
+     "US",
+     "Washington"
+    ],
+    "places": [
+     "Iran",
+     "New York",
+     "Strait of Hormuz",
+     "Tehran",
+     "US"
+    ],
+    "system_developments": [
+     3
+    ],
+    "situations": [
+     "us-iran"
+    ],
+    "sources": [
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-6df939d5bb83",
+      "source": "South China Morning Post",
+      "published_at": "2026-09-27T19:16:36",
+      "title": "Trump expects new Iran talks despite rejecting deal offer",
+      "excerpt": "US President Donald Trump said on Sunday that he expects talks with Iran to resume in the coming week, despite his rejection of a truce proposal put forward by Tehran.\nIranian officials brought with them to the UN General Assembly in New York a plan for a seven-day truce followed by the reopening of"
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-09-27-live:why-trump-rejected-explainer",
+    "window": "2026-09-27-live",
+    "members": [
+     "b-199199c2efa8"
+    ],
+    "storyline": "iran-hormuz-deal",
+    "first": "2026-09-27T20:03:04",
+    "last": "2026-09-27T20:03:04",
+    "actors": [
+     "Trump"
+    ],
+    "places": [
+     "Iran",
+     "US"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-199199c2efa8",
+      "source": "Al Jazeera",
+      "published_at": "2026-09-27T20:03:04",
+      "title": "Why has Trump rejected Iran’s peace proposal?",
+      "excerpt": "The US president has reportedly threatened to resume strikes on Iran."
+     }
+    ]
+   },
+   "cosine": 0.582
+  },
+  {
+   "case": "T006",
+   "a": {
+    "id": "2026-09-27-live:ben-gvir-threat-video",
+    "window": "2026-09-27-live",
+    "members": [
+     "b-84e545bba88c"
+    ],
+    "storyline": "ben-gvir-salameh",
+    "first": "2026-09-28T01:33:52",
+    "last": "2026-09-28T01:33:52",
+    "actors": [
+     "Ben-Gvir",
+     "Hamas",
+     "Hassan Salameh",
+     "Itamar Ben-Gvir"
+    ],
+    "places": [
+     "Israel"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-84e545bba88c",
+      "source": "Al Jazeera",
+      "published_at": "2026-09-28T01:33:52",
+      "title": "Ben-Gvir releases video threatening to kill senior Hamas figure in jail",
+      "excerpt": "Israel’s security minister Itamar Ben-Gvir has released a video in which he is seen threatening to kill Hassan Salameh."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-09-27-live:palestinians-denounce-ben-gvir",
+    "window": "2026-09-27-live",
+    "members": [
+     "b-c2772755ef8f"
+    ],
+    "storyline": "ben-gvir-salameh",
+    "first": "2026-09-28T10:11:28",
+    "last": "2026-09-28T10:11:28",
+    "actors": [
+     "Ben-Gvir",
+     "Hassan Salama"
+    ],
+    "places": [
+     "Israel",
+     "Palestine"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-c2772755ef8f",
+      "source": "Al Jazeera",
+      "published_at": "2026-09-28T10:11:28",
+      "title": "Palestinians denounce Israeli minister Ben-Gvir’s threats against prisoner",
+      "excerpt": "Footage of national security minister taunting Hassan Salama in his cell draws sharp condemnation from Palestinians."
+     }
+    ]
+   },
+   "cosine": 0.752
+  },
+  {
+   "case": "T007",
+   "a": {
+    "id": "2026-09-27-live:behind-trump-rejection-analysis",
+    "window": "2026-09-27-live",
+    "members": [
+     "b-c2224cff562a"
+    ],
+    "storyline": "iran-hormuz-deal",
+    "first": "2026-09-27T13:17:53",
+    "last": "2026-09-27T13:17:53",
+    "actors": [
+     "Trump"
+    ],
+    "places": [
+     "Iran"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-c2224cff562a",
+      "source": "Al Jazeera",
+      "published_at": "2026-09-27T13:17:53",
+      "title": "‘Better deal’: What’s behind Trump’s rejection of Iran’s truce offer?",
+      "excerpt": "Experts say Trump sees economic sanctions as key to extracting more concessions but he risks losing leverage."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-09-27-live:hormuz-tensions-linger",
+    "window": "2026-09-27-live",
+    "members": [
+     "b-f0d7399ed7a6"
+    ],
+    "storyline": "iran-hormuz-deal",
+    "first": "2026-09-27T14:36:44",
+    "last": "2026-09-27T14:36:44",
+    "actors": [
+     "Donald Trump",
+     "Iran",
+     "Tehran",
+     "Trump",
+     "US",
+     "Washington"
+    ],
+    "places": [
+     "Hormuz",
+     "Iran",
+     "US"
+    ],
+    "system_developments": [
+     3
+    ],
+    "situations": [
+     "us-iran"
+    ],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-f0d7399ed7a6",
+      "source": "Al Jazeera",
+      "published_at": "2026-09-27T14:36:44",
+      "title": "Strait of Hormuz tensions linger as Iran and US move further from a deal",
+      "excerpt": "There are fears of renewed fighting between the US and Iran, after President Trump rejected a deal."
+     }
+    ]
+   },
+   "cosine": 0.647
+  },
+  {
+   "case": "T008",
+   "a": {
+    "id": "2026-10-03-live:s-1124",
+    "window": "2026-10-03-live",
+    "members": [
+     "s-1124"
+    ],
+    "storyline": null,
+    "first": "2026-09-29T12:14:50",
+    "last": "2026-09-29T12:14:50",
+    "actors": [],
+    "places": [
+     "Spain"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "BBC World"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "s-1124",
+      "source": "BBC World",
+      "published_at": "2026-09-29 12:14:50.000000",
+      "title": "Spain announces new housing measures after protests over 87-year-old woman's eviction",
+      "excerpt": "The measures include a proposed ban on evictions until 2030 and the automatic renewal of tenant contracts."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-10-03-live:s-1316",
+    "window": "2026-10-03-live",
+    "members": [
+     "s-1316"
+    ],
+    "storyline": null,
+    "first": "2026-09-29T16:23:58",
+    "last": "2026-09-29T16:23:58",
+    "actors": [],
+    "places": [
+     "Spain"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "BBC World"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "s-1316",
+      "source": "BBC World",
+      "published_at": "2026-09-29 16:23:58.000000",
+      "title": "Spain announces ban on evictions after protests over 87-year-old woman's removal from flat",
+      "excerpt": "The ban is part of a number of proposals that must be approved in parliament within 30 days."
+     }
+    ]
+   },
+   "cosine": 0.81
+  },
+  {
+   "case": "T009",
+   "a": {
+    "id": "2026-09-29-live:malaysia-repatriation-to-myanmar",
+    "window": "2026-09-29-live",
+    "members": [
+     "b-b26c02100dbb",
+     "b-9244faa26b60",
+     "b-89d356fd2694"
+    ],
+    "storyline": "malaysia-rohingya-returns",
+    "first": "2026-09-29T06:06:20",
+    "last": "2026-09-29T09:27:06",
+    "actors": [
+     "Malaysia"
+    ],
+    "places": [
+     "Kuala Lumpur",
+     "Malaysia",
+     "Myanmar"
+    ],
+    "system_developments": [
+     16
+    ],
+    "situations": [],
+    "sources": [
+     "Al Jazeera",
+     "BBC World",
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-b26c02100dbb",
+      "source": "BBC World",
+      "published_at": "2026-09-29T06:06:20",
+      "title": "Malaysia begins controversial repatriation of asylum seekers to Myanmar",
+      "excerpt": "Human rights groups say some 5,000 returnees could face violence, persecution and forced conscription."
+     },
+     {
+      "item": "b-9244faa26b60",
+      "source": "South China Morning Post",
+      "published_at": "2026-09-29T07:00:01",
+      "title": "Malaysia begins sending thousands of Myanmar nationals back to war-torn homeland",
+      "excerpt": "Malaysia began an operation to send nearly 1,500 Myanmar nationals back to their war-torn homeland on Tuesday, pressing ahead with a government-to-government repatriation deal despite warnings that returnees could face persecution and forced conscription.\nThe first group of 1,476 is part of an agree"
+     },
+     {
+      "item": "b-89d356fd2694",
+      "source": "Al Jazeera",
+      "published_at": "2026-09-29T09:27:06",
+      "title": "Malaysia begins sending back Rohingya refugees despite safety warnings",
+      "excerpt": "About 1,500 refugees are to be sent back in the first phase, despite criticism from rights groups."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-09-29-live:malaysia-rohingya-analysis",
+    "window": "2026-09-29-live",
+    "members": [
+     "b-faf3df1e7bae"
+    ],
+    "storyline": "malaysia-rohingya-returns",
+    "first": "2026-09-29T11:22:40",
+    "last": "2026-09-29T11:22:40",
+    "actors": [
+     "Malaysia",
+     "Muslims",
+     "Rohingya"
+    ],
+    "places": [
+     "Malaysia",
+     "Myanmar"
+    ],
+    "system_developments": [
+     16
+    ],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-faf3df1e7bae",
+      "source": "Al Jazeera",
+      "published_at": "2026-09-29T11:22:40",
+      "title": "Malaysia gave refuge to Rohingya; now it wants them to go",
+      "excerpt": "Malaysia welcomed persecuted Muslim minority but now plans to send them back to Myanmar amid rising hate against them."
+     }
+    ]
+   },
+   "cosine": 0.768
+  },
+  {
+   "case": "T010",
+   "a": {
+    "id": "2026-09-29-live:opinion-trump-reject-iran-offer",
+    "window": "2026-09-29-live",
+    "members": [
+     "b-3a37d34be63f"
+    ],
+    "storyline": "iran-war",
+    "first": "2026-09-28T18:16:26",
+    "last": "2026-09-28T18:16:26",
+    "actors": [
+     "Trump"
+    ],
+    "places": [
+     "Iran",
+     "Tehran",
+     "US"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-3a37d34be63f",
+      "source": "Al Jazeera",
+      "published_at": "2026-09-28T18:16:26",
+      "title": "Trump made the right decision to reject Iran’s offer",
+      "excerpt": "The US president has denied Tehran the opportunity to use the US midterm elections as a pressure point."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-09-29-live:iran-war-live-no-sanctions-relief",
+    "window": "2026-09-29-live",
+    "members": [
+     "b-d93fa9820e25"
+    ],
+    "storyline": "iran-war",
+    "first": "2026-09-29T00:00:00",
+    "last": "2026-09-29T00:00:00",
+    "actors": [
+     "Trump",
+     "US"
+    ],
+    "places": [
+     "Iran",
+     "Tehran",
+     "US"
+    ],
+    "system_developments": [
+     6
+    ],
+    "situations": [
+     "us-iran"
+    ],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": true,
+    "evidence": [
+     {
+      "item": "b-d93fa9820e25",
+      "source": "Al Jazeera",
+      "published_at": "2026-09-29T00:00:00",
+      "title": "Iran war live: Trump says he did not offer Tehran sanctions relief",
+      "excerpt": "US President Trump rejects a news report claiming his administration offered Iran sanctions relief and frozen funds."
+     }
+    ]
+   },
+   "cosine": 0.606
+  },
+  {
+   "case": "T011",
+   "a": {
+    "id": "2026-09-30-multilingual:sx-5",
+    "window": "2026-09-30-multilingual",
+    "members": [
+     "sx-5"
+    ],
+    "storyline": null,
+    "first": "2026-09-28T20:30:00",
+    "last": "2026-09-28T20:30:00",
+    "actors": [
+     "Pete Hegseth",
+     "US Department of Defense"
+    ],
+    "places": [],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Defense.gov"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "sx-5",
+      "source": "Defense.gov",
+      "published_at": "2026-09-28 20:30:00.000000",
+      "title": "Secretary of War Pete Hegseth Signs Directive to Defend 2026 Elections From Foreign Threats",
+      "excerpt": "Secretary of War Pete Hegseth signed a memorandum directing the War Department to mobilize a comprehensive, whole-of-government defense of the election infrastructure from foreign adversaries."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-09-30-multilingual:sx-428",
+    "window": "2026-09-30-multilingual",
+    "members": [
+     "sx-428"
+    ],
+    "storyline": null,
+    "first": "2026-09-29T16:00:11",
+    "last": "2026-09-29T16:00:11",
+    "actors": [
+     "Defense",
+     "Donald Trump",
+     "Hegseth",
+     "Pete Hegseth",
+     "US Department of Defense"
+    ],
+    "places": [
+     "U.S."
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "War on the Rocks"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "sx-428",
+      "source": "War on the Rocks",
+      "published_at": "2026-09-29 16:00:11.000000",
+      "title": "What Will Hegseth’s “State of the Force” Reprise Reveal?",
+      "excerpt": "Secretary of Defense Pete Hegseth is expected to convene a high-profile meeting of military personnel for a &#8220;State of the Force&#8221; address this week. Will it show the U.S. armed forces as healthy? The answer may depend on how the audience responds, regardless of what Hegseth says. How the "
+     }
+    ]
+   },
+   "cosine": 0.559
+  },
+  {
+   "case": "T012",
+   "a": {
+    "id": "2026-10-03-live:s-1245",
+    "window": "2026-10-03-live",
+    "members": [
+     "s-1245"
+    ],
+    "storyline": null,
+    "first": "2026-09-29T23:39:58",
+    "last": "2026-09-29T23:39:58",
+    "actors": [
+     "Christa Pike",
+     "U.S. Supreme Court"
+    ],
+    "places": [
+     "Tennessee"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "BBC World"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "s-1245",
+      "source": "BBC World",
+      "published_at": "2026-09-29 23:39:58.000000",
+      "title": "US Supreme Court denies Christa Pike's last-ditch bid to halt execution",
+      "excerpt": "The Tennessee inmate has been awaiting execution since she was sentenced to death in 1996 for the murder of a teenage classmate."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-10-03-live:D9",
+    "window": "2026-10-03-live",
+    "members": [
+     "s-1663",
+     "s-1790",
+     "s-1834",
+     "s-1935",
+     "s-1921"
+    ],
+    "storyline": null,
+    "first": "2026-10-01T16:45:35",
+    "last": "2026-10-02T20:57:32",
+    "actors": [
+     "Christa Pike",
+     "Pike",
+     "Randy Spivey"
+    ],
+    "places": [
+     "Nashville",
+     "Tennessee",
+     "US"
+    ],
+    "system_developments": [
+     9
+    ],
+    "situations": [],
+    "sources": [
+     "Al Jazeera",
+     "BBC World",
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "s-1663",
+      "source": "BBC World",
+      "published_at": "2026-10-01 16:45:35.000000",
+      "title": "Tennessee halts executions after Christa Pike survives two lethal injection attempts",
+      "excerpt": "Pikeâs lawyers have asked for her death sentence to be commuted following the botched execution."
+     },
+     {
+      "item": "s-1790",
+      "source": "South China Morning Post",
+      "published_at": "2026-10-02 03:02:52.000000",
+      "title": "Christa Pike in ‘life-saving care’ after botched Tennessee execution",
+      "excerpt": "A condemned female murderer who survived two lethal injections during a botched execution by the US state of Tennessee was in critical condition and receiving “life-saving care”, her lawyer said on Thursday.\nIn an extraordinary chain of events, Christa Pike, 50, was whisked from a prison execution c"
+     },
+     {
+      "item": "s-1834",
+      "source": "Al Jazeera",
+      "published_at": "2026-10-02 07:58:08.000000",
+      "title": "Lawyers for US inmate who survived lethal injections demand release",
+      "excerpt": "Christa Pike is in critical condition after two failed attempts to execute her by lethal injection, her lawyer says."
+     },
+     {
+      "item": "s-1935",
+      "source": "BBC World",
+      "published_at": "2026-10-02 20:32:07.000000",
+      "title": "US murderer Christa Pike unconscious and on ventilator after failed execution, lawyers say",
+      "excerpt": "As of Thursday night, Pike remained critically ill and is being treated at a hospital in Nashville, Tennessee."
+     }
+    ]
+   },
+   "cosine": 0.835
+  },
+  {
+   "case": "T013",
+   "a": {
+    "id": "2026-10-03-live:s-1421",
+    "window": "2026-10-03-live",
+    "members": [
+     "s-1421"
+    ],
+    "storyline": null,
+    "first": "2026-09-30T16:44:16",
+    "last": "2026-09-30T16:44:16",
+    "actors": [
+     "Christa Pike Christa Pike"
+    ],
+    "places": [
+     "Tennessee",
+     "US"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "s-1421",
+      "source": "Al Jazeera",
+      "published_at": "2026-09-30 16:44:16.000000",
+      "title": "US appeals court halts Tennessee execution of Christa Pike",
+      "excerpt": "Christa Pike was set to become the first woman executed by Tennessee in more than 200 years."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-10-03-live:D9",
+    "window": "2026-10-03-live",
+    "members": [
+     "s-1663",
+     "s-1790",
+     "s-1834",
+     "s-1935",
+     "s-1921"
+    ],
+    "storyline": null,
+    "first": "2026-10-01T16:45:35",
+    "last": "2026-10-02T20:57:32",
+    "actors": [
+     "Christa Pike",
+     "Pike",
+     "Randy Spivey"
+    ],
+    "places": [
+     "Nashville",
+     "Tennessee",
+     "US"
+    ],
+    "system_developments": [
+     9
+    ],
+    "situations": [],
+    "sources": [
+     "Al Jazeera",
+     "BBC World",
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "s-1663",
+      "source": "BBC World",
+      "published_at": "2026-10-01 16:45:35.000000",
+      "title": "Tennessee halts executions after Christa Pike survives two lethal injection attempts",
+      "excerpt": "Pikeâs lawyers have asked for her death sentence to be commuted following the botched execution."
+     },
+     {
+      "item": "s-1790",
+      "source": "South China Morning Post",
+      "published_at": "2026-10-02 03:02:52.000000",
+      "title": "Christa Pike in ‘life-saving care’ after botched Tennessee execution",
+      "excerpt": "A condemned female murderer who survived two lethal injections during a botched execution by the US state of Tennessee was in critical condition and receiving “life-saving care”, her lawyer said on Thursday.\nIn an extraordinary chain of events, Christa Pike, 50, was whisked from a prison execution c"
+     },
+     {
+      "item": "s-1834",
+      "source": "Al Jazeera",
+      "published_at": "2026-10-02 07:58:08.000000",
+      "title": "Lawyers for US inmate who survived lethal injections demand release",
+      "excerpt": "Christa Pike is in critical condition after two failed attempts to execute her by lethal injection, her lawyer says."
+     },
+     {
+      "item": "s-1935",
+      "source": "BBC World",
+      "published_at": "2026-10-02 20:32:07.000000",
+      "title": "US murderer Christa Pike unconscious and on ventilator after failed execution, lawyers say",
+      "excerpt": "As of Thursday night, Pike remained critically ill and is being treated at a hospital in Nashville, Tennessee."
+     }
+    ]
+   },
+   "cosine": 0.83
+  },
+  {
+   "case": "T014",
+   "a": {
+    "id": "2026-10-03-live:s-1404",
+    "window": "2026-10-03-live",
+    "members": [
+     "s-1404"
+    ],
+    "storyline": null,
+    "first": "2026-09-30T16:00:16",
+    "last": "2026-09-30T16:00:16",
+    "actors": [
+     "Christa Pike",
+     "Pike"
+    ],
+    "places": [
+     "Tennessee",
+     "US"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "s-1404",
+      "source": "South China Morning Post",
+      "published_at": "2026-09-30 16:00:16.000000",
+      "title": "US Tennessee’s first execution of a woman in 200 years halted",
+      "excerpt": "A US appeal court on Wednesday halted the ⁠execution of death row inmate Christa Pike in Tennessee, less than two hours before she was scheduled to become the first woman that state has put to death in more than 200 years.\nThe 6th US Circuit Court of Appeals ordered a “short stay of execution” to gi"
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-10-03-live:D9",
+    "window": "2026-10-03-live",
+    "members": [
+     "s-1663",
+     "s-1790",
+     "s-1834",
+     "s-1935",
+     "s-1921"
+    ],
+    "storyline": null,
+    "first": "2026-10-01T16:45:35",
+    "last": "2026-10-02T20:57:32",
+    "actors": [
+     "Christa Pike",
+     "Pike",
+     "Randy Spivey"
+    ],
+    "places": [
+     "Nashville",
+     "Tennessee",
+     "US"
+    ],
+    "system_developments": [
+     9
+    ],
+    "situations": [],
+    "sources": [
+     "Al Jazeera",
+     "BBC World",
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "s-1663",
+      "source": "BBC World",
+      "published_at": "2026-10-01 16:45:35.000000",
+      "title": "Tennessee halts executions after Christa Pike survives two lethal injection attempts",
+      "excerpt": "Pikeâs lawyers have asked for her death sentence to be commuted following the botched execution."
+     },
+     {
+      "item": "s-1790",
+      "source": "South China Morning Post",
+      "published_at": "2026-10-02 03:02:52.000000",
+      "title": "Christa Pike in ‘life-saving care’ after botched Tennessee execution",
+      "excerpt": "A condemned female murderer who survived two lethal injections during a botched execution by the US state of Tennessee was in critical condition and receiving “life-saving care”, her lawyer said on Thursday.\nIn an extraordinary chain of events, Christa Pike, 50, was whisked from a prison execution c"
+     },
+     {
+      "item": "s-1834",
+      "source": "Al Jazeera",
+      "published_at": "2026-10-02 07:58:08.000000",
+      "title": "Lawyers for US inmate who survived lethal injections demand release",
+      "excerpt": "Christa Pike is in critical condition after two failed attempts to execute her by lethal injection, her lawyer says."
+     },
+     {
+      "item": "s-1935",
+      "source": "BBC World",
+      "published_at": "2026-10-02 20:32:07.000000",
+      "title": "US murderer Christa Pike unconscious and on ventilator after failed execution, lawyers say",
+      "excerpt": "As of Thursday night, Pike remained critically ill and is being treated at a hospital in Nashville, Tennessee."
+     }
+    ]
+   },
+   "cosine": 0.823
+  },
+  {
+   "case": "T015",
+   "a": {
+    "id": "2026-08-31:singapore-envoy-hk-interview",
+    "window": "2026-08-31",
+    "members": [
+     "b-b56b49d61664",
+     "b-943c95907c68"
+    ],
+    "storyline": null,
+    "first": "2026-08-31T00:00:20",
+    "last": "2026-08-31T02:00:15",
+    "actors": [
+     "Eric Teo Boon Hee"
+    ],
+    "places": [
+     "Asia",
+     "Hong Kong",
+     "Northern Metropolis",
+     "Singapore",
+     "South"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-b56b49d61664",
+      "source": "South China Morning Post",
+      "published_at": "2026-08-31T00:00:20",
+      "title": "Hong Kong, Singapore aren’t ‘enemies’, our competition is healthy, envoy says",
+      "excerpt": "Singapore and Hong Kong do not view each other as enemies, but rather admire one another’s accomplishments, the country’s top envoy to the city has said, calling for greater cooperation between the two jurisdictions often cast as fierce rivals.\nEric Teo Boon Hee, Singapore’s consul general in Hong K"
+     },
+     {
+      "item": "b-943c95907c68",
+      "source": "South China Morning Post",
+      "published_at": "2026-08-31T02:00:15",
+      "title": "Singapore firms keen to tap Northern Metropolis’ ‘massive potential’, envoy says",
+      "excerpt": "Singaporean businesses are keen to explore the “massive potential” emerging in Hong Kong’s Northern Metropolis megaproject after the country’s prime minister visited the site earlier this year, its top envoy to the city has said.\nIn an exclusive interview with the South China Morning Post, Singapore"
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-08-31:paul-chan-robotics-role",
+    "window": "2026-08-31",
+    "members": [
+     "b-c69758a15f4a"
+    ],
+    "storyline": "hk-robot-stores",
+    "first": "2026-08-31T00:43:59",
+    "last": "2026-08-31T00:43:59",
+    "actors": [
+     "Galbot",
+     "Hung Hom",
+     "Kai Tak",
+     "Paul Chan Hong Kong",
+     "Wan Chai"
+    ],
+    "places": [
+     "Beijing",
+     "China",
+     "Hong Kong"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-c69758a15f4a",
+      "source": "South China Morning Post",
+      "published_at": "2026-08-31T00:43:59",
+      "title": "Hong Kong can play unique role in fostering robotics industry: Paul Chan",
+      "excerpt": "Hong Kong can serve a unique role in the development of the robotics industry, the financial chief has said as he welcomed the coming opening of the city’s first convenience stores operated by humanoid robots developed by a Beijing-based company.\nFollowing an opening ceremony on Monday, the first “G"
+     }
+    ]
+   },
+   "cosine": 0.469
+  },
+  {
+   "case": "T016",
+   "a": {
+    "id": "2026-09-30-multilingual:sx-425",
+    "window": "2026-09-30-multilingual",
+    "members": [
+     "sx-425"
+    ],
+    "storyline": null,
+    "first": "2026-09-28T23:02:52",
+    "last": "2026-09-28T23:02:52",
+    "actors": [
+     "Force",
+     "Gang Suppression Force",
+     "Haitian National Police",
+     "Office",
+     "UN Security Council",
+     "UN Support Office",
+     "United Nations"
+    ],
+    "places": [
+     "Haiti",
+     "Panama",
+     "U.S."
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "UN Press"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "sx-425",
+      "source": "UN Press",
+      "published_at": "2026-09-28 23:02:52.000000",
+      "title": "Security Council, 10231st Meeting (AM) Haiti",
+      "excerpt": "The Security Council today is expected to vote on a draft resolution re-authorizing the Gang Suppression Force in Haiti, put forward by the United States and Panama, the co-penholders on Haiti. The Council first authorized the Force on 30 September 2025 under resolution 2793 (2025) for an initial 12"
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-09-30-multilingual:sx-423",
+    "window": "2026-09-30-multilingual",
+    "members": [
+     "sx-423",
+     "sx-400",
+     "sx-416"
+    ],
+    "storyline": null,
+    "first": "2026-09-28T23:02:53",
+    "last": "2026-09-29T21:52:33",
+    "actors": [
+     "James Swan",
+     "M23",
+     "UN Security Council",
+     "United Nations",
+     "United Nations Organization Stabilization Mission"
+    ],
+    "places": [
+     "Congo",
+     "DRC",
+     "Democratic Republic",
+     "Democratic Republic of Congo",
+     "Democratic Republic of the Congo",
+     "Haiti",
+     "New York",
+     "Rwanda"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "UN News",
+     "UN Press"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "sx-423",
+      "source": "UN Press",
+      "published_at": "2026-09-28 23:02:53.000000",
+      "title": "Security Council, 10232nd Meeting (AM) Democratic Republic of the Congo/MONUSCO",
+      "excerpt": "Following its meeting concerning Haiti, the Council will convene to consider the situation in the Democratic Republic of the Congo. Anticipated briefers include James Swan, Head of the United Nations Organization Stabilization Mission in the Democratic Republic of the Congo (MONUSCO), as well as a r"
+     },
+     {
+      "item": "sx-400",
+      "source": "UN News",
+      "published_at": "2026-09-29 12:00:00.000000",
+      "title": "Security Council LIVE: DRC peace deals fail to halt fighting as Ebola deepens crisis",
+      "excerpt": "The Security Council met in New York&nbsp;on the Democratic Republic of the Congo (DRC) Tuesday, where clashes between Government forces and M23 rebels continue in the east, despite a series of peace agreements. Ambassadors focused on ceasefire monitoring, rising tensions between the DRC and Rwanda "
+     },
+     {
+      "item": "sx-416",
+      "source": "UN Press",
+      "published_at": "2026-09-29 21:52:33.000000",
+      "title": "Commitments Must Yield Tangible Progress in Democratic Republic of Congo, Special Representative Tells Security Council",
+      "excerpt": "Serious challenges remain despite sustained diplomatic engagement to address the conflict in the eastern part of the Democratic Republic of the Congo, the Security Council heard today, as speakers welcomed the ceasefire monitoring and verification conducted by the UN mission in that country."
+     }
+    ]
+   },
+   "cosine": 0.676
+  },
+  {
+   "case": "T017",
+   "a": {
+    "id": "2026-08-21:soldiers-throw-belongings-qusra",
+    "window": "2026-08-21",
+    "members": [
+     "b-bcf2fde80a0a"
+    ],
+    "storyline": "west-bank-settlements",
+    "first": "2026-08-21T13:01:54",
+    "last": "2026-08-21T13:01:54",
+    "actors": [],
+    "places": [
+     "Israel",
+     "Palestine",
+     "Qusra"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-bcf2fde80a0a",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-21T13:01:54",
+      "title": "Israeli soldiers throw belongings from besieged Palestinian home",
+      "excerpt": "Israeli soldiers were filmed throwing belongings from Palestinian homes in Qusra."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-08-21:israeli-drone-strike-syria-southwest",
+    "window": "2026-08-21",
+    "members": [
+     "b-8b0980fba97b",
+     "b-34d06bf06e8c"
+    ],
+    "storyline": "israel-strikes-syria",
+    "first": "2026-08-22T14:37:40",
+    "last": "2026-08-22T21:42:42",
+    "actors": [
+     "Israel",
+     "Syria"
+    ],
+    "places": [
+     "Damascus",
+     "Israel",
+     "Syria",
+     "Turkey"
+    ],
+    "system_developments": [
+     7
+    ],
+    "situations": [],
+    "sources": [
+     "Al Jazeera",
+     "BBC World"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-8b0980fba97b",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-22T14:37:40",
+      "title": "Israeli drone strike on ‘civilian vehicle’ injures several in Syria",
+      "excerpt": "Syria condemns attack in southwest as a &#039;flagrant violation of sovereignty&#039; and a &#039;blatant breach of international law&#039;."
+     },
+     {
+      "item": "b-34d06bf06e8c",
+      "source": "BBC World",
+      "published_at": "2026-08-22T21:42:42",
+      "title": "Syria says Israeli strike near Damascus violation of international law",
+      "excerpt": "The latest incident comes days after reports emerged Israel had struck a military airbase close to the Turkish border."
+     }
+    ]
+   },
+   "cosine": 0.446
+  },
+  {
+   "case": "T018",
+   "a": {
+    "id": "2026-09-27-live:trump-rejects-hormuz-plan",
+    "window": "2026-09-27-live",
+    "members": [
+     "b-03bf5d3fc39a"
+    ],
+    "storyline": "iran-hormuz-deal",
+    "first": "2026-09-27T00:00:00",
+    "last": "2026-09-27T00:00:00",
+    "actors": [
+     "Donald Trump",
+     "Iran",
+     "Tehran",
+     "Trump",
+     "US",
+     "Washington"
+    ],
+    "places": [
+     "Hormuz",
+     "Iran",
+     "Strait of Hormuz",
+     "Tehran",
+     "US"
+    ],
+    "system_developments": [
+     3
+    ],
+    "situations": [
+     "us-iran"
+    ],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": true,
+    "evidence": [
+     {
+      "item": "b-03bf5d3fc39a",
+      "source": "Al Jazeera",
+      "published_at": "2026-09-27T00:00:00",
+      "title": "Iran war live: Tehran awaits official response as Trump rejects Hormuz plan",
+      "excerpt": "US president rejects Iran&#039;s seven-day plan to reopen the Strait of Hormuz, saying the deal is not &#039;acceptable&#039;."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-09-27-live:araghchi-only-negotiation",
+    "window": "2026-09-27-live",
+    "members": [
+     "b-7dd9705dba63"
+    ],
+    "storyline": "iran-hormuz-deal",
+    "first": "2026-09-27T07:44:11",
+    "last": "2026-09-27T07:44:11",
+    "actors": [
+     "Donald Trump",
+     "Iran",
+     "Tehran",
+     "Trump",
+     "US",
+     "Washington"
+    ],
+    "places": [
+     "Hormuz",
+     "Iran",
+     "Tehran",
+     "US"
+    ],
+    "system_developments": [
+     3
+    ],
+    "situations": [
+     "us-iran"
+    ],
+    "sources": [
+     "BBC World"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-7dd9705dba63",
+      "source": "BBC World",
+      "published_at": "2026-09-27T07:44:11",
+      "title": "Iranian minister says only negotiation can end conflict after Trump rejects Hormuz deal",
+      "excerpt": "The foreign minister says Tehran is waiting for an official rejection of a deal, despite the US President's comments."
+     }
+    ]
+   },
+   "cosine": 0.73
+  },
+  {
+   "case": "T019",
+   "a": {
+    "id": "2026-09-25:nyc-protest-arrests-netanyahu",
+    "window": "2026-09-25",
+    "members": [
+     "b-56d04e57766b",
+     "b-a9f27cc576aa"
+    ],
+    "storyline": "netanyahu-unga",
+    "first": "2026-09-25T02:24:16",
+    "last": "2026-09-25T02:35:53",
+    "actors": [
+     "Benjamin Netanyahu",
+     "New Yorkers",
+     "Susan Sarandon",
+     "UN General Assembly",
+     "United Nations"
+    ],
+    "places": [
+     "Israel",
+     "NYC"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-56d04e57766b",
+      "source": "Al Jazeera",
+      "published_at": "2026-09-25T02:24:16",
+      "title": "More than 100 arrested as New Yorkers protest Netanyahu’s UN visit",
+      "excerpt": "Demonstrators blocked streets and marched towards UN headquarters as the Israeli PM addressed world leaders at UNGA."
+     },
+     {
+      "item": "b-a9f27cc576aa",
+      "source": "Al Jazeera",
+      "published_at": "2026-09-25T02:35:53",
+      "title": "NYC police arrest Susan Sarandon, other celebrities protesting Netanyahu",
+      "excerpt": "Rights groups accuse UN of hosting a &#039;war criminal&#039; as delegations walk out during Israeli prime minister&#039;s speech."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-09-25:jewish-march-against-netanyahu",
+    "window": "2026-09-25",
+    "members": [
+     "b-3d9601881311"
+    ],
+    "storyline": "netanyahu-unga",
+    "first": "2026-09-25T03:49:43",
+    "last": "2026-09-25T03:49:43",
+    "actors": [
+     "Al Jazeera",
+     "Benjamin Netanyahu",
+     "Emma Withrow",
+     "Jewish"
+    ],
+    "places": [
+     "Palestine"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-3d9601881311",
+      "source": "Al Jazeera",
+      "published_at": "2026-09-25T03:49:43",
+      "title": "Jewish protestors join Free Palestine march to denounce Netanyahu",
+      "excerpt": "Al Jazeera’s Emma Withrow reports from a Free Palestine march, where Jewish demonstrators rejected Netanyahu."
+     }
+    ]
+   },
+   "cosine": 0.589
+  },
+  {
+   "case": "T020",
+   "a": {
+    "id": "2026-09-29-live:myanmar-rakhine-market-airstrike",
+    "window": "2026-09-29-live",
+    "members": [
+     "b-fda9eb4fcc44",
+     "b-c746008c89ee"
+    ],
+    "storyline": null,
+    "first": "2026-09-28T15:38:16",
+    "last": "2026-09-28T19:31:27",
+    "actors": [
+     "Rakhine",
+     "Rakhine State"
+    ],
+    "places": [
+     "Myanmar"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-fda9eb4fcc44",
+      "source": "Al Jazeera",
+      "published_at": "2026-09-28T15:38:16",
+      "title": "At least 33 killed after Myanmar military air strike hits market",
+      "excerpt": "Dozens of people have been killed in a military air strike on an opposition-controlled area of Rakhine State, Myanmar."
+     },
+     {
+      "item": "b-c746008c89ee",
+      "source": "Al Jazeera",
+      "published_at": "2026-09-28T19:31:27",
+      "title": "Myanmar army air strike kills dozens in Rakhine state",
+      "excerpt": "Nearly half a million people are displaced in Rakhine as a result of the conflict between the military and rebel groups."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-09-29-live:malaysia-repatriation-to-myanmar",
+    "window": "2026-09-29-live",
+    "members": [
+     "b-b26c02100dbb",
+     "b-9244faa26b60",
+     "b-89d356fd2694"
+    ],
+    "storyline": "malaysia-rohingya-returns",
+    "first": "2026-09-29T06:06:20",
+    "last": "2026-09-29T09:27:06",
+    "actors": [
+     "Malaysia"
+    ],
+    "places": [
+     "Kuala Lumpur",
+     "Malaysia",
+     "Myanmar"
+    ],
+    "system_developments": [
+     16
+    ],
+    "situations": [],
+    "sources": [
+     "Al Jazeera",
+     "BBC World",
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-b26c02100dbb",
+      "source": "BBC World",
+      "published_at": "2026-09-29T06:06:20",
+      "title": "Malaysia begins controversial repatriation of asylum seekers to Myanmar",
+      "excerpt": "Human rights groups say some 5,000 returnees could face violence, persecution and forced conscription."
+     },
+     {
+      "item": "b-9244faa26b60",
+      "source": "South China Morning Post",
+      "published_at": "2026-09-29T07:00:01",
+      "title": "Malaysia begins sending thousands of Myanmar nationals back to war-torn homeland",
+      "excerpt": "Malaysia began an operation to send nearly 1,500 Myanmar nationals back to their war-torn homeland on Tuesday, pressing ahead with a government-to-government repatriation deal despite warnings that returnees could face persecution and forced conscription.\nThe first group of 1,476 is part of an agree"
+     },
+     {
+      "item": "b-89d356fd2694",
+      "source": "Al Jazeera",
+      "published_at": "2026-09-29T09:27:06",
+      "title": "Malaysia begins sending back Rohingya refugees despite safety warnings",
+      "excerpt": "About 1,500 refugees are to be sent back in the first phase, despite criticism from rights groups."
+     }
+    ]
+   },
+   "cosine": 0.461
+  },
+  {
+   "case": "T021",
+   "a": {
+    "id": "2026-08-31:us-larak-strike-iran-retaliation",
+    "window": "2026-08-31",
+    "members": [
+     "b-2005cdd898cd",
+     "b-870dd2996e58",
+     "b-3dee8a5372cf",
+     "b-45bc85da0ff1"
+    ],
+    "storyline": "us-iran-war",
+    "first": "2026-08-31T00:00:00",
+    "last": "2026-08-31T09:19:40",
+    "actors": [
+     "IRGC",
+     "U.S. Central Command"
+    ],
+    "places": [
+     "Iran",
+     "Jordan",
+     "Larak Island",
+     "Strait of Hormuz",
+     "UAE",
+     "US"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-2005cdd898cd",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-31T00:00:00",
+      "title": "Iran war live: IRGC attacks US bases in Jordan after US bombs Larak Island",
+      "excerpt": "US Central Command says its forces bombed two rocket launchers of the IRGC on Larak Island."
+     },
+     {
+      "item": "b-870dd2996e58",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-31T00:00:00",
+      "title": "Iran war live: Tehran says it attacked bases in Jordan, UAE after US strike",
+      "excerpt": "CENTCOM says US forces bombed two IRGC rocket launchers on Larak Island which presented an &#039;imminent threat&#039;."
+     },
+     {
+      "item": "b-3dee8a5372cf",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-31T03:06:56",
+      "title": "Iran targets Jordan after first US attack in a month",
+      "excerpt": "The US has launched its first strikes on Iran in a month, hitting sites on Larak Island. Iran hit back targeting bases h"
+     },
+     {
+      "item": "b-45bc85da0ff1",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-31T09:19:40",
+      "title": "Iran attacks Jordan, UAE after US bombs Larak Island: What’s the latest?",
+      "excerpt": "The retaliatory attacks came after the US targeted two Iranian launchers on Larak Island in the Strait of Hormuz."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-08-31:uae-intercepts-drone-denies-airbase-hit",
+    "window": "2026-08-31",
+    "members": [
+     "b-76d3144059e8"
+    ],
+    "storyline": "us-iran-war",
+    "first": "2026-08-31T11:25:43",
+    "last": "2026-08-31T11:25:43",
+    "actors": [
+     "Al Menhad"
+    ],
+    "places": [
+     "Iran",
+     "UAE",
+     "US"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-76d3144059e8",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-31T11:25:43",
+      "title": "UAE intercepts drone after US and Iran exchange attacks",
+      "excerpt": "The UAE says it intercepted a drone coming from Iran and rejected &#039;false&#039; reports of an attack on its Al Menhad airbase."
+     }
+    ]
+   },
+   "cosine": 0.412
+  },
+  {
+   "case": "T022",
+   "a": {
+    "id": "2026-09-29-live:us-waiver-najaf-iran-flights",
+    "window": "2026-09-29-live",
+    "members": [
+     "b-a6c5c12bf244"
+    ],
+    "storyline": "iran-war",
+    "first": "2026-09-28T18:28:29",
+    "last": "2026-09-28T18:28:29",
+    "actors": [
+     "Donald Trump",
+     "Iraqi Airways",
+     "Shiite",
+     "Shiite Muslim",
+     "US",
+     "US Treasury"
+    ],
+    "places": [
+     "Iran",
+     "Iraq",
+     "Najaf",
+     "US"
+    ],
+    "system_developments": [
+     6
+    ],
+    "situations": [
+     "us-iran"
+    ],
+    "sources": [
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-a6c5c12bf244",
+      "source": "South China Morning Post",
+      "published_at": "2026-09-28T18:28:29",
+      "title": "US to grant sanctions waiver for flights between Iran and Iraq’s Najaf, source says",
+      "excerpt": "US President Donald Trump’s administration was set to grant a limited waiver to its Iran sanctions programme on Monday to allow for flights carrying Shiite Muslim religious pilgrims between Iran and Iraq, a person with direct knowledge of the matter said.\nThe source, who is involved ‌in the delibera"
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-09-29-live:iran-war-live-no-sanctions-relief",
+    "window": "2026-09-29-live",
+    "members": [
+     "b-d93fa9820e25"
+    ],
+    "storyline": "iran-war",
+    "first": "2026-09-29T00:00:00",
+    "last": "2026-09-29T00:00:00",
+    "actors": [
+     "Trump",
+     "US"
+    ],
+    "places": [
+     "Iran",
+     "Tehran",
+     "US"
+    ],
+    "system_developments": [
+     6
+    ],
+    "situations": [
+     "us-iran"
+    ],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": true,
+    "evidence": [
+     {
+      "item": "b-d93fa9820e25",
+      "source": "Al Jazeera",
+      "published_at": "2026-09-29T00:00:00",
+      "title": "Iran war live: Trump says he did not offer Tehran sanctions relief",
+      "excerpt": "US President Trump rejects a news report claiming his administration offered Iran sanctions relief and frozen funds."
+     }
+    ]
+   },
+   "cosine": 0.6
+  },
+  {
+   "case": "T023",
+   "a": {
+    "id": "2026-09-29-live:najaf-iran-flights-resume",
+    "window": "2026-09-29-live",
+    "members": [
+     "b-0d1e24ede095"
+    ],
+    "storyline": "iran-war",
+    "first": "2026-09-28T18:50:24",
+    "last": "2026-09-28T18:50:24",
+    "actors": [
+     "US",
+     "United Nations"
+    ],
+    "places": [
+     "Iran",
+     "Iraq",
+     "Najaf",
+     "Tehran",
+     "US"
+    ],
+    "system_developments": [
+     6
+    ],
+    "situations": [
+     "us-iran"
+    ],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-0d1e24ede095",
+      "source": "Al Jazeera",
+      "published_at": "2026-09-28T18:50:24",
+      "title": "Flights between Iraq’s Najaf and Iran resumed as Tehran protests US curbs",
+      "excerpt": "Tehran filed a UN complaint against US sanctions forcing regional cancellations of Iran flights."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-09-29-live:iran-war-live-no-sanctions-relief",
+    "window": "2026-09-29-live",
+    "members": [
+     "b-d93fa9820e25"
+    ],
+    "storyline": "iran-war",
+    "first": "2026-09-29T00:00:00",
+    "last": "2026-09-29T00:00:00",
+    "actors": [
+     "Trump",
+     "US"
+    ],
+    "places": [
+     "Iran",
+     "Tehran",
+     "US"
+    ],
+    "system_developments": [
+     6
+    ],
+    "situations": [
+     "us-iran"
+    ],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": true,
+    "evidence": [
+     {
+      "item": "b-d93fa9820e25",
+      "source": "Al Jazeera",
+      "published_at": "2026-09-29T00:00:00",
+      "title": "Iran war live: Trump says he did not offer Tehran sanctions relief",
+      "excerpt": "US President Trump rejects a news report claiming his administration offered Iran sanctions relief and frozen funds."
+     }
+    ]
+   },
+   "cosine": 0.518
+  },
+  {
+   "case": "T024",
+   "a": {
+    "id": "2026-08-21:japan-icc-judge-sanctioned",
+    "window": "2026-08-21",
+    "members": [
+     "b-bbdbc1d011f6"
+    ],
+    "storyline": null,
+    "first": "2026-08-21T00:00:38",
+    "last": "2026-08-21T00:00:38",
+    "actors": [
+     "Donald Trump",
+     "International Criminal Court",
+     "Tomoko Akane"
+    ],
+    "places": [
+     "Hague",
+     "Japan",
+     "Tokyo",
+     "US",
+     "Washington"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-bbdbc1d011f6",
+      "source": "South China Morning Post",
+      "published_at": "2026-08-21T00:00:38",
+      "title": "Japan faces ‘nightmare scenario’ as it struggles to defend ICC judge",
+      "excerpt": "Japan has spent years casting the International Criminal Court as a pillar of the rules-based order. This week, its closest ally sanctioned the Japanese judge who leads it.\nThe move has left Tokyo in an uncomfortable bind: defend Tomoko Akane, the Japanese president of The Hague-based court, and ris"
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-08-21:japan-record-defence-budget",
+    "window": "2026-08-21",
+    "members": [
+     "b-5b6229e0f8b3"
+    ],
+    "storyline": null,
+    "first": "2026-08-21T09:15:45",
+    "last": "2026-08-21T09:15:45",
+    "actors": [],
+    "places": [
+     "Japan",
+     "Tokyo",
+     "US"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-5b6229e0f8b3",
+      "source": "South China Morning Post",
+      "published_at": "2026-08-21T09:15:45",
+      "title": "Japan seeks record US$56 billion defence push amid growing regional tensions",
+      "excerpt": "Japan is preparing to spend more than ever on defence as analysts say Tokyo is being forced to respond to a convergence of regional threats, fast-changing military technology and growing uncertainty over the reliability of the US security umbrella.\nThe defence ministry is preparing to request a reco"
+     }
+    ]
+   },
+   "cosine": 0.456
+  },
+  {
+   "case": "T025",
+   "a": {
+    "id": "2026-10-03-live:s-1228",
+    "window": "2026-10-03-live",
+    "members": [
+     "s-1228"
+    ],
+    "storyline": null,
+    "first": "2026-09-29T21:32:19",
+    "last": "2026-09-29T21:32:19",
+    "actors": [],
+    "places": [
+     "France"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "BBC World"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "s-1228",
+      "source": "BBC World",
+      "published_at": "2026-09-29 21:32:19.000000",
+      "title": "More than 400 detained as France student protests escalate",
+      "excerpt": "Students have been protesting against conditions and resources in secondary schools since last week."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-10-03-live:s-1380",
+    "window": "2026-10-03-live",
+    "members": [
+     "s-1380"
+    ],
+    "storyline": null,
+    "first": "2026-09-30T13:18:01",
+    "last": "2026-09-30T13:18:01",
+    "actors": [],
+    "places": [
+     "France"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "BBC World"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "s-1380",
+      "source": "BBC World",
+      "published_at": "2026-09-30 13:18:01.000000",
+      "title": "Dozens hurt and hundreds arrested in wave of French school protests",
+      "excerpt": "Students have been protesting against conditions and resources in secondary schools since last week."
+     }
+    ]
+   },
+   "cosine": 0.846
+  },
+  {
+   "case": "T026",
+   "a": {
+    "id": "2026-08-21:uk-canada-australia-condemn-wck-probe-refusal",
+    "window": "2026-08-21",
+    "members": [
+     "b-fcd819c15684"
+    ],
+    "storyline": null,
+    "first": "2026-08-21T15:58:57",
+    "last": "2026-08-21T15:58:57",
+    "actors": [],
+    "places": [
+     "Australia",
+     "Canada",
+     "Gaza",
+     "Israel",
+     "UK"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "BBC World"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-fcd819c15684",
+      "source": "BBC World",
+      "published_at": "2026-08-21T15:58:57",
+      "title": "UK, Canada and Australia condemn Israel for refusing criminal probe into aid worker killings in Gaza",
+      "excerpt": "Seven World Central Kitchen workers were killed in the Israeli strike on their convoy in 2024."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-08-21:israeli-drone-strike-syria-southwest",
+    "window": "2026-08-21",
+    "members": [
+     "b-8b0980fba97b",
+     "b-34d06bf06e8c"
+    ],
+    "storyline": "israel-strikes-syria",
+    "first": "2026-08-22T14:37:40",
+    "last": "2026-08-22T21:42:42",
+    "actors": [
+     "Israel",
+     "Syria"
+    ],
+    "places": [
+     "Damascus",
+     "Israel",
+     "Syria",
+     "Turkey"
+    ],
+    "system_developments": [
+     7
+    ],
+    "situations": [],
+    "sources": [
+     "Al Jazeera",
+     "BBC World"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-8b0980fba97b",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-22T14:37:40",
+      "title": "Israeli drone strike on ‘civilian vehicle’ injures several in Syria",
+      "excerpt": "Syria condemns attack in southwest as a &#039;flagrant violation of sovereignty&#039; and a &#039;blatant breach of international law&#039;."
+     },
+     {
+      "item": "b-34d06bf06e8c",
+      "source": "BBC World",
+      "published_at": "2026-08-22T21:42:42",
+      "title": "Syria says Israeli strike near Damascus violation of international law",
+      "excerpt": "The latest incident comes days after reports emerged Israel had struck a military airbase close to the Turkish border."
+     }
+    ]
+   },
+   "cosine": 0.472
+  },
+  {
+   "case": "T027",
+   "a": {
+    "id": "2026-09-29-live:hk-eco-sites-golden-week",
+    "window": "2026-09-29-live",
+    "members": [
+     "b-94116a9815eb"
+    ],
+    "storyline": null,
+    "first": "2026-09-29T00:30:08",
+    "last": "2026-09-29T00:30:08",
+    "actors": [
+     "Po Pin Chau",
+     "South China Morning Post"
+    ],
+    "places": [
+     "China",
+     "Hong Kong"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-94116a9815eb",
+      "source": "South China Morning Post",
+      "published_at": "2026-09-29T00:30:08",
+      "title": "Can Hong Kong protect its eco-sensitive sites amid ‘golden week’ overtourism fears?",
+      "excerpt": "Hong Kong is bracing for a surge of mainland Chinese visitors to its eco-sensitive areas during the National Day “golden week” holiday, as strong interest in countryside attractions raises questions over whether the city can absorb crowds without overwhelming popular sites.\nA review of discussions o"
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-09-29-live:hk-golden-week-things-to-do",
+    "window": "2026-09-29-live",
+    "members": [
+     "b-df5443a4397e"
+    ],
+    "storyline": null,
+    "first": "2026-09-29T03:00:12",
+    "last": "2026-09-29T03:00:12",
+    "actors": [
+     "Sai Kung",
+     "Unesco Global Geopark"
+    ],
+    "places": [
+     "China",
+     "Hong Kong"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-df5443a4397e",
+      "source": "South China Morning Post",
+      "published_at": "2026-09-29T03:00:12",
+      "title": "5 things to do over the National Day ‘golden week’ holiday in Hong Kong",
+      "excerpt": "Hong Kong is set to welcome 1.29 million mainland Chinese visitors over the National Day “golden week” break, fuelling questions online about what locals and tourists can do during the celebrations.\nOn popular mainland social media platform RedNote, many users have recommended a range of activities,"
+     }
+    ]
+   },
+   "cosine": 0.747
+  },
+  {
+   "case": "T028",
+   "a": {
+    "id": "2026-09-30-multilingual:sx-168",
+    "window": "2026-09-30-multilingual",
+    "members": [
+     "sx-168"
+    ],
+    "storyline": null,
+    "first": "2026-09-29T21:05:00",
+    "last": "2026-09-29T21:05:00",
+    "actors": [
+     "AI",
+     "Donald Trump",
+     "Trump",
+     "White House",
+     "Xi Jinping"
+    ],
+    "places": [
+     "China",
+     "South Korea",
+     "U.S."
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "France 24"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "sx-168",
+      "source": "France 24",
+      "published_at": "2026-09-29 21:05:00.000000",
+      "title": "Trump says he doesn't want to work with China on AI safety",
+      "excerpt": "US President Donald Trump discussed AI development with dozens of tech bosses at the White House on Tuesday. Ahead of his \"super intelligence\" luncheon, Trump launched a new AI-powered website for government services, vowing not to stifle the technology's growth. He also said he didn't want to work "
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-09-30-multilingual:sx-167",
+    "window": "2026-09-30-multilingual",
+    "members": [
+     "sx-167"
+    ],
+    "storyline": null,
+    "first": "2026-09-29T22:48:07",
+    "last": "2026-09-29T22:48:07",
+    "actors": [
+     "AI",
+     "Donald Trump",
+     "Trump",
+     "Trump US"
+    ],
+    "places": [],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "France 24"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "sx-167",
+      "source": "France 24",
+      "published_at": "2026-09-29 22:48:07.000000",
+      "title": "AI companies sign voluntary accord on safety with Trump",
+      "excerpt": "US President Donald Trump and leaders of major AI companies signed a voluntary accord Tuesday to strengthen safety as the technology faces growing public concern. The agreement calls for internal controls, independent audits and board oversight while Trump rejected calls for government restrictions "
+     }
+    ]
+   },
+   "cosine": 0.572
+  },
+  {
+   "case": "T029",
+   "a": {
+    "id": "2026-09-27-live:hormuz-tensions-linger",
+    "window": "2026-09-27-live",
+    "members": [
+     "b-f0d7399ed7a6"
+    ],
+    "storyline": "iran-hormuz-deal",
+    "first": "2026-09-27T14:36:44",
+    "last": "2026-09-27T14:36:44",
+    "actors": [
+     "Donald Trump",
+     "Iran",
+     "Tehran",
+     "Trump",
+     "US",
+     "Washington"
+    ],
+    "places": [
+     "Hormuz",
+     "Iran",
+     "US"
+    ],
+    "system_developments": [
+     3
+    ],
+    "situations": [
+     "us-iran"
+    ],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-f0d7399ed7a6",
+      "source": "Al Jazeera",
+      "published_at": "2026-09-27T14:36:44",
+      "title": "Strait of Hormuz tensions linger as Iran and US move further from a deal",
+      "excerpt": "There are fears of renewed fighting between the US and Iran, after President Trump rejected a deal."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-09-27-live:araghchi-doomsday-war",
+    "window": "2026-09-27-live",
+    "members": [
+     "b-c5f73c1eff91",
+     "b-11af3f1b218b"
+    ],
+    "storyline": "iran-hormuz-deal",
+    "first": "2026-09-27T17:46:04",
+    "last": "2026-09-28T00:00:00",
+    "actors": [
+     "Abbas Araghchi",
+     "Donald Trump",
+     "FM Araghchi",
+     "Iran",
+     "Tehran",
+     "Trump",
+     "US",
+     "Washington"
+    ],
+    "places": [
+     "Hormuz",
+     "Iran",
+     "Strait",
+     "Tehran",
+     "Washington"
+    ],
+    "system_developments": [
+     3
+    ],
+    "situations": [
+     "us-iran"
+    ],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-c5f73c1eff91",
+      "source": "Al Jazeera",
+      "published_at": "2026-09-27T17:46:04",
+      "title": "‘Iran ready for doomsday war’, FM Araghchi says",
+      "excerpt": "Foreign Minister Abbas Araghchi says Iran is prepared for war to resume, ‘even if it comes to a doomsday war’."
+     },
+     {
+      "item": "b-11af3f1b218b",
+      "source": "Al Jazeera",
+      "published_at": "2026-09-28T00:00:00",
+      "title": "Iran war live: Tehran open to ‘real diplomacy’, ready for ‘apocalyptic war’",
+      "excerpt": "Abbas Araghchi&#039;s warning comes after Washington rejected a seven-day roadmap to end the war and reopen Strait of Hormuz."
+     }
+    ]
+   },
+   "cosine": 0.582
+  },
+  {
+   "case": "T030",
+   "a": {
+    "id": "2026-08-21:bessent-vows-toughest-iran-sanctions",
+    "window": "2026-08-21",
+    "members": [
+     "b-8608173935c4"
+    ],
+    "storyline": "us-iran-economic-war",
+    "first": "2026-08-21T00:00:00",
+    "last": "2026-08-21T00:00:00",
+    "actors": [
+     "Bessent",
+     "Treasury"
+    ],
+    "places": [
+     "China",
+     "Iran",
+     "US"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": true,
+    "evidence": [
+     {
+      "item": "b-8608173935c4",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-21T00:00:00",
+      "title": "Iran war live: US vows toughest Iran sanctions, urges China support",
+      "excerpt": "US Treasury Secretary Bessent says new economic measures will &#039;collapse&#039; Iranian government."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-08-21:iran-rejects-new-us-sanctions",
+    "window": "2026-08-21",
+    "members": [
+     "b-144df3b935e7"
+    ],
+    "storyline": "us-iran-economic-war",
+    "first": "2026-08-22T09:14:09",
+    "last": "2026-08-22T09:14:09",
+    "actors": [
+     "Esmaeil Baghaei",
+     "Foreign Ministry",
+     "Trump"
+    ],
+    "places": [
+     "Iran",
+     "US"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-144df3b935e7",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-22T09:14:09",
+      "title": "Iran says new US sanctions violate sovereignty of other states",
+      "excerpt": "Foreign Ministry spokesman Esmaeil Baghaei slams Trump&#039;s latest threat as a return to &#039;full-scale classic colonialism&#039;."
+     }
+    ]
+   },
+   "cosine": 0.575
+  },
+  {
+   "case": "T031",
+   "a": {
+    "id": "2026-09-29-live:iran-denies-airbase-link",
+    "window": "2026-09-29-live",
+    "members": [
+     "b-02cc975e92ad"
+    ],
+    "storyline": "raf-fairford-plot",
+    "first": "2026-09-28T15:29:48",
+    "last": "2026-09-28T15:29:48",
+    "actors": [
+     "British FM"
+    ],
+    "places": [
+     "Iran",
+     "Tehran",
+     "UK"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-02cc975e92ad",
+      "source": "Al Jazeera",
+      "published_at": "2026-09-28T15:29:48",
+      "title": "Iran denies link to attack on airbase as UK minister warns of ‘proxies’",
+      "excerpt": "Tehran condemns &#039;unfounded and malicious speculation&#039;; British FM vows to &#039;act against the proxies of Iran&#039;."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-09-29-live:iran-war-live-no-sanctions-relief",
+    "window": "2026-09-29-live",
+    "members": [
+     "b-d93fa9820e25"
+    ],
+    "storyline": "iran-war",
+    "first": "2026-09-29T00:00:00",
+    "last": "2026-09-29T00:00:00",
+    "actors": [
+     "Trump",
+     "US"
+    ],
+    "places": [
+     "Iran",
+     "Tehran",
+     "US"
+    ],
+    "system_developments": [
+     6
+    ],
+    "situations": [
+     "us-iran"
+    ],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": true,
+    "evidence": [
+     {
+      "item": "b-d93fa9820e25",
+      "source": "Al Jazeera",
+      "published_at": "2026-09-29T00:00:00",
+      "title": "Iran war live: Trump says he did not offer Tehran sanctions relief",
+      "excerpt": "US President Trump rejects a news report claiming his administration offered Iran sanctions relief and frozen funds."
+     }
+    ]
+   },
+   "cosine": 0.455
+  },
+  {
+   "case": "T032",
+   "a": {
+    "id": "2026-09-30-multilingual:sx-169",
+    "window": "2026-09-30-multilingual",
+    "members": [
+     "sx-169"
+    ],
+    "storyline": null,
+    "first": "2026-09-29T21:00:26",
+    "last": "2026-09-29T21:00:26",
+    "actors": [
+     "AI",
+     "Donald Trump",
+     "Harrison Rolfes",
+     "Monte Francis",
+     "PitchBook",
+     "White House"
+    ],
+    "places": [
+     "France",
+     "U.S."
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "France 24"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "sx-169",
+      "source": "France 24",
+      "published_at": "2026-09-29 21:00:26.000000",
+      "title": "Safeguards 'build a moat' around US AI firms, prevent open-source models from advancing, expert says",
+      "excerpt": "US President Donald Trump on Tuesday said the tech executives gathered at the White House to discuss regulating AI had signed a \"morally binding\" commitment to build adequate safeguards on the fast-moving technology. Speaking with FRANCE 24's Monte Francis, Harrison Rolfes, Senior Research Analyst a"
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-09-30-multilingual:sx-167",
+    "window": "2026-09-30-multilingual",
+    "members": [
+     "sx-167"
+    ],
+    "storyline": null,
+    "first": "2026-09-29T22:48:07",
+    "last": "2026-09-29T22:48:07",
+    "actors": [
+     "AI",
+     "Donald Trump",
+     "Trump",
+     "Trump US"
+    ],
+    "places": [],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "France 24"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "sx-167",
+      "source": "France 24",
+      "published_at": "2026-09-29 22:48:07.000000",
+      "title": "AI companies sign voluntary accord on safety with Trump",
+      "excerpt": "US President Donald Trump and leaders of major AI companies signed a voluntary accord Tuesday to strengthen safety as the technology faces growing public concern. The agreement calls for internal controls, independent audits and board oversight while Trump rejected calls for government restrictions "
+     }
+    ]
+   },
+   "cosine": 0.66
+  },
+  {
+   "case": "T033",
+   "a": {
+    "id": "2026-09-30-multilingual:sx-535",
+    "window": "2026-09-30-multilingual",
+    "members": [
+     "sx-535"
+    ],
+    "storyline": null,
+    "first": "2026-09-29T14:45:00",
+    "last": "2026-09-29T14:45:00",
+    "actors": [
+     "English"
+    ],
+    "places": [
+     "India",
+     "Iran"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "GDELT"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "sx-535",
+      "source": "GDELT",
+      "published_at": "2026-09-29 14:45:00.000000",
+      "title": "Iran rial crashes past 2 . 5 million per dollar : War , sanctions push currency to new low",
+      "excerpt": "Domain: livemint.com | Language: English | Source country: India"
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-09-30-multilingual:D19",
+    "window": "2026-09-30-multilingual",
+    "members": [
+     "sx-264",
+     "sx-536",
+     "sx-75"
+    ],
+    "storyline": null,
+    "first": "2026-09-29T22:45:03",
+    "last": "2026-09-30T08:42:46",
+    "actors": [
+     "Donald Trump",
+     "English",
+     "Iran",
+     "Irán"
+    ],
+    "places": [
+     "EE.UU.",
+     "Estados Unidos",
+     "Iran",
+     "Irán",
+     "Syria",
+     "Teheran"
+    ],
+    "system_developments": [
+     19
+    ],
+    "situations": [],
+    "sources": [
+     "Clarín Mundo",
+     "Europa Press Internacional",
+     "GDELT"
+    ],
+    "langs": [
+     "en",
+     "es"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "sx-264",
+      "source": "Clarín Mundo",
+      "published_at": "2026-09-29 22:45:03.000000",
+      "title": "Por la guerra y la incertidumbre económica, la moneda de Irán se hunde en un mínimo histórico",
+      "excerpt": "Las sanciones internacionales presionan a las finanzas de la república islámica. El régimen abre la puerta a nuevas negociaciones con Estados Unidos para terminar con el conflicto."
+     },
+     {
+      "item": "sx-536",
+      "source": "GDELT",
+      "published_at": "2026-09-30 01:15:00.000000",
+      "title": "Iran Currency Hits a New Record Low as War Erodes the Country Economic Stability",
+      "excerpt": "Domain: english.aawsat.com | Language: English | Source country: Syria"
+     },
+     {
+      "item": "sx-75",
+      "source": "Europa Press Internacional",
+      "published_at": "2026-09-30 08:42:46.000000",
+      "title": "Irán confirma que recibió la respuesta oficial de EEUU a su última propuesta para un acuerdo de paz",
+      "excerpt": "El Gobierno de Irán ha confirmado este miércoles que ha recibido la respuesta oficial de Estados Unidos a su propuesta para reactivar el proceso de conversaciones para un acuerdo de paz, días después de que el presidente estadounidense, Donald Trump, expresara su rechazo al plan presentado por Teher"
+     }
+    ]
+   },
+   "cosine": 0.574
+  },
+  {
+   "case": "T034",
+   "a": {
+    "id": "2026-10-03-live:s-1200",
+    "window": "2026-10-03-live",
+    "members": [
+     "s-1200"
+    ],
+    "storyline": null,
+    "first": "2026-09-29T17:54:08",
+    "last": "2026-09-29T17:54:08",
+    "actors": [],
+    "places": [
+     "Madrid",
+     "Spain"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "s-1200",
+      "source": "South China Morning Post",
+      "published_at": "2026-09-29 17:54:08.000000",
+      "title": "87-year-old woman whose eviction sparked protests in Spain is returning home",
+      "excerpt": "Spain’s coalition government said it had agreed on proposals including banning evictions until 2030 to address the country’s housing crisis, as the 87-year-old woman whose forced removal last week triggered protests accepted an offer to return home.\nHundreds of ‌people remained camped in one of Madr"
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-10-03-live:s-1233",
+    "window": "2026-10-03-live",
+    "members": [
+     "s-1233"
+    ],
+    "storyline": null,
+    "first": "2026-09-29T21:02:02",
+    "last": "2026-09-29T21:02:02",
+    "actors": [],
+    "places": [
+     "Madrid",
+     "Spain"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "s-1233",
+      "source": "Al Jazeera",
+      "published_at": "2026-09-29 21:02:02.000000",
+      "title": "Spain protests: Evicted 87-year-old woman to return to Madrid home",
+      "excerpt": "The real estate firm backs down and restores her old rent after mass protests over Spain&#039;s housing crisis."
+     }
+    ]
+   },
+   "cosine": 0.879
+  },
+  {
+   "case": "T035",
+   "a": {
+    "id": "2026-09-30-multilingual:sx-410",
+    "window": "2026-09-30-multilingual",
+    "members": [
+     "sx-410"
+    ],
+    "storyline": null,
+    "first": "2026-09-28T12:00:00",
+    "last": "2026-09-28T12:00:00",
+    "actors": [
+     "Hamas",
+     "UN Security Council"
+    ],
+    "places": [
+     "Gaza",
+     "Israel",
+     "Middle East",
+     "West Bank"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "UN News"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": true,
+    "evidence": [
+     {
+      "item": "sx-410",
+      "source": "UN News",
+      "published_at": "2026-09-28 12:00:00.000000",
+      "title": "Security Council LIVE: Ambassadors meet as West Bank tensions rise, Gaza plan stalls",
+      "excerpt": "The Security Council met Monday morning with prospects for peace in the Middle East under strain on two fronts. In the West Bank, settler violence and settlement expansion are raising fears for a two-State solution. In Gaza, a year-old peace plan has stalled while civilian suffering continues. The m"
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-09-30-multilingual:sx-423",
+    "window": "2026-09-30-multilingual",
+    "members": [
+     "sx-423",
+     "sx-400",
+     "sx-416"
+    ],
+    "storyline": null,
+    "first": "2026-09-28T23:02:53",
+    "last": "2026-09-29T21:52:33",
+    "actors": [
+     "James Swan",
+     "M23",
+     "UN Security Council",
+     "United Nations",
+     "United Nations Organization Stabilization Mission"
+    ],
+    "places": [
+     "Congo",
+     "DRC",
+     "Democratic Republic",
+     "Democratic Republic of Congo",
+     "Democratic Republic of the Congo",
+     "Haiti",
+     "New York",
+     "Rwanda"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "UN News",
+     "UN Press"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "sx-423",
+      "source": "UN Press",
+      "published_at": "2026-09-28 23:02:53.000000",
+      "title": "Security Council, 10232nd Meeting (AM) Democratic Republic of the Congo/MONUSCO",
+      "excerpt": "Following its meeting concerning Haiti, the Council will convene to consider the situation in the Democratic Republic of the Congo. Anticipated briefers include James Swan, Head of the United Nations Organization Stabilization Mission in the Democratic Republic of the Congo (MONUSCO), as well as a r"
+     },
+     {
+      "item": "sx-400",
+      "source": "UN News",
+      "published_at": "2026-09-29 12:00:00.000000",
+      "title": "Security Council LIVE: DRC peace deals fail to halt fighting as Ebola deepens crisis",
+      "excerpt": "The Security Council met in New York&nbsp;on the Democratic Republic of the Congo (DRC) Tuesday, where clashes between Government forces and M23 rebels continue in the east, despite a series of peace agreements. Ambassadors focused on ceasefire monitoring, rising tensions between the DRC and Rwanda "
+     },
+     {
+      "item": "sx-416",
+      "source": "UN Press",
+      "published_at": "2026-09-29 21:52:33.000000",
+      "title": "Commitments Must Yield Tangible Progress in Democratic Republic of Congo, Special Representative Tells Security Council",
+      "excerpt": "Serious challenges remain despite sustained diplomatic engagement to address the conflict in the eastern part of the Democratic Republic of the Congo, the Security Council heard today, as speakers welcomed the ceasefire monitoring and verification conducted by the UN mission in that country."
+     }
+    ]
+   },
+   "cosine": 0.598
+  },
+  {
+   "case": "T036",
+   "a": {
+    "id": "2026-08-31:hk-robot-convenience-stores-open",
+    "window": "2026-08-31",
+    "members": [
+     "b-f627ee36c9cd"
+    ],
+    "storyline": "hk-robot-stores",
+    "first": "2026-08-31T00:43:59",
+    "last": "2026-08-31T00:43:59",
+    "actors": [
+     "Galbot",
+     "Hung Hom",
+     "Kai Tak",
+     "Wan Chai"
+    ],
+    "places": [
+     "Beijing",
+     "China",
+     "Hong Kong"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-f627ee36c9cd",
+      "source": "South China Morning Post",
+      "published_at": "2026-08-31T00:43:59",
+      "title": "At your service: Hong Kong welcomes first humanoid robot-run convenience stores",
+      "excerpt": "Hong Kong’s first convenience stores operated by humanoid robots will open on Tuesday, with the Beijing-based company behind it planning to establish about 10 more outlets locally as it makes the city its first stop in “going overseas”.\nFollowing an opening ceremony on Monday, the first “Galbot stor"
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-08-31:paul-chan-robotics-role",
+    "window": "2026-08-31",
+    "members": [
+     "b-c69758a15f4a"
+    ],
+    "storyline": "hk-robot-stores",
+    "first": "2026-08-31T00:43:59",
+    "last": "2026-08-31T00:43:59",
+    "actors": [
+     "Galbot",
+     "Hung Hom",
+     "Kai Tak",
+     "Paul Chan Hong Kong",
+     "Wan Chai"
+    ],
+    "places": [
+     "Beijing",
+     "China",
+     "Hong Kong"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-c69758a15f4a",
+      "source": "South China Morning Post",
+      "published_at": "2026-08-31T00:43:59",
+      "title": "Hong Kong can play unique role in fostering robotics industry: Paul Chan",
+      "excerpt": "Hong Kong can serve a unique role in the development of the robotics industry, the financial chief has said as he welcomed the coming opening of the city’s first convenience stores operated by humanoid robots developed by a Beijing-based company.\nFollowing an opening ceremony on Monday, the first “G"
+     }
+    ]
+   },
+   "cosine": 0.822
+  },
+  {
+   "case": "T037",
+   "a": {
+    "id": "2026-09-27-live:trump-rejects-hormuz-plan",
+    "window": "2026-09-27-live",
+    "members": [
+     "b-03bf5d3fc39a"
+    ],
+    "storyline": "iran-hormuz-deal",
+    "first": "2026-09-27T00:00:00",
+    "last": "2026-09-27T00:00:00",
+    "actors": [
+     "Donald Trump",
+     "Iran",
+     "Tehran",
+     "Trump",
+     "US",
+     "Washington"
+    ],
+    "places": [
+     "Hormuz",
+     "Iran",
+     "Strait of Hormuz",
+     "Tehran",
+     "US"
+    ],
+    "system_developments": [
+     3
+    ],
+    "situations": [
+     "us-iran"
+    ],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": true,
+    "evidence": [
+     {
+      "item": "b-03bf5d3fc39a",
+      "source": "Al Jazeera",
+      "published_at": "2026-09-27T00:00:00",
+      "title": "Iran war live: Tehran awaits official response as Trump rejects Hormuz plan",
+      "excerpt": "US president rejects Iran&#039;s seven-day plan to reopen the Strait of Hormuz, saying the deal is not &#039;acceptable&#039;."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-09-27-live:trump-expects-new-iran-talks",
+    "window": "2026-09-27-live",
+    "members": [
+     "b-6df939d5bb83"
+    ],
+    "storyline": "iran-hormuz-deal",
+    "first": "2026-09-27T19:16:36",
+    "last": "2026-09-27T19:16:36",
+    "actors": [
+     "Axios",
+     "Donald Trump",
+     "Iran",
+     "Tehran",
+     "Trump",
+     "UN General Assembly",
+     "US",
+     "Washington"
+    ],
+    "places": [
+     "Iran",
+     "New York",
+     "Strait of Hormuz",
+     "Tehran",
+     "US"
+    ],
+    "system_developments": [
+     3
+    ],
+    "situations": [
+     "us-iran"
+    ],
+    "sources": [
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-6df939d5bb83",
+      "source": "South China Morning Post",
+      "published_at": "2026-09-27T19:16:36",
+      "title": "Trump expects new Iran talks despite rejecting deal offer",
+      "excerpt": "US President Donald Trump said on Sunday that he expects talks with Iran to resume in the coming week, despite his rejection of a truce proposal put forward by Tehran.\nIranian officials brought with them to the UN General Assembly in New York a plan for a seven-day truce followed by the reopening of"
+     }
+    ]
+   },
+   "cosine": 0.641
+  },
+  {
+   "case": "T038",
+   "a": {
+    "id": "2026-08-21:economic-d-day-hits-us-markets",
+    "window": "2026-08-21",
+    "members": [
+     "b-58ba94123221"
+    ],
+    "storyline": "us-iran-economic-war",
+    "first": "2026-08-21T13:47:26",
+    "last": "2026-08-21T13:47:26",
+    "actors": [
+     "Trump"
+    ],
+    "places": [
+     "Iran",
+     "Israel",
+     "US"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-58ba94123221",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-21T13:47:26",
+      "title": "Trump’s ‘economic D-Day’ claims first victim: Not Iran, but US markets",
+      "excerpt": "The US and Israel&#039;s war on Iran has upended global financial and energy markets."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-08-21:iran-rejects-new-us-sanctions",
+    "window": "2026-08-21",
+    "members": [
+     "b-144df3b935e7"
+    ],
+    "storyline": "us-iran-economic-war",
+    "first": "2026-08-22T09:14:09",
+    "last": "2026-08-22T09:14:09",
+    "actors": [
+     "Esmaeil Baghaei",
+     "Foreign Ministry",
+     "Trump"
+    ],
+    "places": [
+     "Iran",
+     "US"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-144df3b935e7",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-22T09:14:09",
+      "title": "Iran says new US sanctions violate sovereignty of other states",
+      "excerpt": "Foreign Ministry spokesman Esmaeil Baghaei slams Trump&#039;s latest threat as a return to &#039;full-scale classic colonialism&#039;."
+     }
+    ]
+   },
+   "cosine": 0.448
+  },
+  {
+   "case": "T039",
+   "a": {
+    "id": "2026-09-30-multilingual:sx-540",
+    "window": "2026-09-30-multilingual",
+    "members": [
+     "sx-540"
+    ],
+    "storyline": null,
+    "first": "2026-09-29T16:30:00",
+    "last": "2026-09-29T16:30:00",
+    "actors": [
+     "English"
+    ],
+    "places": [
+     "Iran",
+     "U.S."
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "GDELT"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "sx-540",
+      "source": "GDELT",
+      "published_at": "2026-09-29 16:30:00.000000",
+      "title": "  This is how the war will end : Iran currency hits new record low",
+      "excerpt": "Domain: fortune.com | Language: English | Source country: United States"
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-09-30-multilingual:D19",
+    "window": "2026-09-30-multilingual",
+    "members": [
+     "sx-264",
+     "sx-536",
+     "sx-75"
+    ],
+    "storyline": null,
+    "first": "2026-09-29T22:45:03",
+    "last": "2026-09-30T08:42:46",
+    "actors": [
+     "Donald Trump",
+     "English",
+     "Iran",
+     "Irán"
+    ],
+    "places": [
+     "EE.UU.",
+     "Estados Unidos",
+     "Iran",
+     "Irán",
+     "Syria",
+     "Teheran"
+    ],
+    "system_developments": [
+     19
+    ],
+    "situations": [],
+    "sources": [
+     "Clarín Mundo",
+     "Europa Press Internacional",
+     "GDELT"
+    ],
+    "langs": [
+     "en",
+     "es"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "sx-264",
+      "source": "Clarín Mundo",
+      "published_at": "2026-09-29 22:45:03.000000",
+      "title": "Por la guerra y la incertidumbre económica, la moneda de Irán se hunde en un mínimo histórico",
+      "excerpt": "Las sanciones internacionales presionan a las finanzas de la república islámica. El régimen abre la puerta a nuevas negociaciones con Estados Unidos para terminar con el conflicto."
+     },
+     {
+      "item": "sx-536",
+      "source": "GDELT",
+      "published_at": "2026-09-30 01:15:00.000000",
+      "title": "Iran Currency Hits a New Record Low as War Erodes the Country Economic Stability",
+      "excerpt": "Domain: english.aawsat.com | Language: English | Source country: Syria"
+     },
+     {
+      "item": "sx-75",
+      "source": "Europa Press Internacional",
+      "published_at": "2026-09-30 08:42:46.000000",
+      "title": "Irán confirma que recibió la respuesta oficial de EEUU a su última propuesta para un acuerdo de paz",
+      "excerpt": "El Gobierno de Irán ha confirmado este miércoles que ha recibido la respuesta oficial de Estados Unidos a su propuesta para reactivar el proceso de conversaciones para un acuerdo de paz, días después de que el presidente estadounidense, Donald Trump, expresara su rechazo al plan presentado por Teher"
+     }
+    ]
+   },
+   "cosine": 0.549
+  },
+  {
+   "case": "T040",
+   "a": {
+    "id": "2026-10-03-live:s-1510",
+    "window": "2026-10-03-live",
+    "members": [
+     "s-1510"
+    ],
+    "storyline": null,
+    "first": "2026-10-01T02:35:59",
+    "last": "2026-10-01T02:35:59",
+    "actors": [
+     "Christa Pike"
+    ],
+    "places": [
+     "Tennessee"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "s-1510",
+      "source": "Al Jazeera",
+      "published_at": "2026-10-01 02:35:59.000000",
+      "title": "Christa Pike’s execution by lethal injection fails in Tennessee",
+      "excerpt": "Witnesses say Tennessee officials were unable to execute Christa Pike after a lethal injection attempt."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-10-03-live:D9",
+    "window": "2026-10-03-live",
+    "members": [
+     "s-1663",
+     "s-1790",
+     "s-1834",
+     "s-1935",
+     "s-1921"
+    ],
+    "storyline": null,
+    "first": "2026-10-01T16:45:35",
+    "last": "2026-10-02T20:57:32",
+    "actors": [
+     "Christa Pike",
+     "Pike",
+     "Randy Spivey"
+    ],
+    "places": [
+     "Nashville",
+     "Tennessee",
+     "US"
+    ],
+    "system_developments": [
+     9
+    ],
+    "situations": [],
+    "sources": [
+     "Al Jazeera",
+     "BBC World",
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "s-1663",
+      "source": "BBC World",
+      "published_at": "2026-10-01 16:45:35.000000",
+      "title": "Tennessee halts executions after Christa Pike survives two lethal injection attempts",
+      "excerpt": "Pikeâs lawyers have asked for her death sentence to be commuted following the botched execution."
+     },
+     {
+      "item": "s-1790",
+      "source": "South China Morning Post",
+      "published_at": "2026-10-02 03:02:52.000000",
+      "title": "Christa Pike in ‘life-saving care’ after botched Tennessee execution",
+      "excerpt": "A condemned female murderer who survived two lethal injections during a botched execution by the US state of Tennessee was in critical condition and receiving “life-saving care”, her lawyer said on Thursday.\nIn an extraordinary chain of events, Christa Pike, 50, was whisked from a prison execution c"
+     },
+     {
+      "item": "s-1834",
+      "source": "Al Jazeera",
+      "published_at": "2026-10-02 07:58:08.000000",
+      "title": "Lawyers for US inmate who survived lethal injections demand release",
+      "excerpt": "Christa Pike is in critical condition after two failed attempts to execute her by lethal injection, her lawyer says."
+     },
+     {
+      "item": "s-1935",
+      "source": "BBC World",
+      "published_at": "2026-10-02 20:32:07.000000",
+      "title": "US murderer Christa Pike unconscious and on ventilator after failed execution, lawyers say",
+      "excerpt": "As of Thursday night, Pike remained critically ill and is being treated at a hospital in Nashville, Tennessee."
+     }
+    ]
+   },
+   "cosine": 0.85
+  },
+  {
+   "case": "T041",
+   "a": {
+    "id": "2026-10-03-live:s-1525",
+    "window": "2026-10-03-live",
+    "members": [
+     "s-1525"
+    ],
+    "storyline": null,
+    "first": "2026-10-01T04:14:43",
+    "last": "2026-10-01T04:14:43",
+    "actors": [
+     "Christa Pike",
+     "Pike"
+    ],
+    "places": [
+     "Tennessee"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "s-1525",
+      "source": "South China Morning Post",
+      "published_at": "2026-10-01 04:14:43.000000",
+      "title": "Tennessee halts executions after Christa Pike survives 2 doses of lethal drug",
+      "excerpt": "Tennessee officials were unable to put Christa Pike to death on Wednesday for a 1995 murder after administering two doses of a lethal drug. A death penalty expert said it was an unprecedented failure, and Tennessee’s governor halted the remaining execution for the rest of the year.\nPike, 50, was ali"
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-10-03-live:D9",
+    "window": "2026-10-03-live",
+    "members": [
+     "s-1663",
+     "s-1790",
+     "s-1834",
+     "s-1935",
+     "s-1921"
+    ],
+    "storyline": null,
+    "first": "2026-10-01T16:45:35",
+    "last": "2026-10-02T20:57:32",
+    "actors": [
+     "Christa Pike",
+     "Pike",
+     "Randy Spivey"
+    ],
+    "places": [
+     "Nashville",
+     "Tennessee",
+     "US"
+    ],
+    "system_developments": [
+     9
+    ],
+    "situations": [],
+    "sources": [
+     "Al Jazeera",
+     "BBC World",
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "s-1663",
+      "source": "BBC World",
+      "published_at": "2026-10-01 16:45:35.000000",
+      "title": "Tennessee halts executions after Christa Pike survives two lethal injection attempts",
+      "excerpt": "Pikeâs lawyers have asked for her death sentence to be commuted following the botched execution."
+     },
+     {
+      "item": "s-1790",
+      "source": "South China Morning Post",
+      "published_at": "2026-10-02 03:02:52.000000",
+      "title": "Christa Pike in ‘life-saving care’ after botched Tennessee execution",
+      "excerpt": "A condemned female murderer who survived two lethal injections during a botched execution by the US state of Tennessee was in critical condition and receiving “life-saving care”, her lawyer said on Thursday.\nIn an extraordinary chain of events, Christa Pike, 50, was whisked from a prison execution c"
+     },
+     {
+      "item": "s-1834",
+      "source": "Al Jazeera",
+      "published_at": "2026-10-02 07:58:08.000000",
+      "title": "Lawyers for US inmate who survived lethal injections demand release",
+      "excerpt": "Christa Pike is in critical condition after two failed attempts to execute her by lethal injection, her lawyer says."
+     },
+     {
+      "item": "s-1935",
+      "source": "BBC World",
+      "published_at": "2026-10-02 20:32:07.000000",
+      "title": "US murderer Christa Pike unconscious and on ventilator after failed execution, lawyers say",
+      "excerpt": "As of Thursday night, Pike remained critically ill and is being treated at a hospital in Nashville, Tennessee."
+     }
+    ]
+   },
+   "cosine": 0.871
+  },
+  {
+   "case": "T042",
+   "a": {
+    "id": "2026-09-27-live:behind-trump-rejection-analysis",
+    "window": "2026-09-27-live",
+    "members": [
+     "b-c2224cff562a"
+    ],
+    "storyline": "iran-hormuz-deal",
+    "first": "2026-09-27T13:17:53",
+    "last": "2026-09-27T13:17:53",
+    "actors": [
+     "Trump"
+    ],
+    "places": [
+     "Iran"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-c2224cff562a",
+      "source": "Al Jazeera",
+      "published_at": "2026-09-27T13:17:53",
+      "title": "‘Better deal’: What’s behind Trump’s rejection of Iran’s truce offer?",
+      "excerpt": "Experts say Trump sees economic sanctions as key to extracting more concessions but he risks losing leverage."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-09-27-live:trump-expects-new-iran-talks",
+    "window": "2026-09-27-live",
+    "members": [
+     "b-6df939d5bb83"
+    ],
+    "storyline": "iran-hormuz-deal",
+    "first": "2026-09-27T19:16:36",
+    "last": "2026-09-27T19:16:36",
+    "actors": [
+     "Axios",
+     "Donald Trump",
+     "Iran",
+     "Tehran",
+     "Trump",
+     "UN General Assembly",
+     "US",
+     "Washington"
+    ],
+    "places": [
+     "Iran",
+     "New York",
+     "Strait of Hormuz",
+     "Tehran",
+     "US"
+    ],
+    "system_developments": [
+     3
+    ],
+    "situations": [
+     "us-iran"
+    ],
+    "sources": [
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-6df939d5bb83",
+      "source": "South China Morning Post",
+      "published_at": "2026-09-27T19:16:36",
+      "title": "Trump expects new Iran talks despite rejecting deal offer",
+      "excerpt": "US President Donald Trump said on Sunday that he expects talks with Iran to resume in the coming week, despite his rejection of a truce proposal put forward by Tehran.\nIranian officials brought with them to the UN General Assembly in New York a plan for a seven-day truce followed by the reopening of"
+     }
+    ]
+   },
+   "cosine": 0.594
+  },
+  {
+   "case": "T043",
+   "a": {
+    "id": "2026-08-21:us-designates-hezbollah-iranian-proxy",
+    "window": "2026-08-21",
+    "members": [
+     "b-fe8c2559d8cc"
+    ],
+    "storyline": null,
+    "first": "2026-08-21T12:12:35",
+    "last": "2026-08-21T12:12:35",
+    "actors": [
+     "Hezbollah",
+     "IRGC",
+     "Quds Force",
+     "US Treasury"
+    ],
+    "places": [
+     "Iran",
+     "Lebanon",
+     "US"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-fe8c2559d8cc",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-21T12:12:35",
+      "title": "US designates Hezbollah an Iranian proxy, sanctions funding network",
+      "excerpt": "The US Treasury labels Lebanon-based group &#039;an extension&#039; of the IRGC&#039;s Quds Force and takes aim at financing."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-08-21:iran-rejects-new-us-sanctions",
+    "window": "2026-08-21",
+    "members": [
+     "b-144df3b935e7"
+    ],
+    "storyline": "us-iran-economic-war",
+    "first": "2026-08-22T09:14:09",
+    "last": "2026-08-22T09:14:09",
+    "actors": [
+     "Esmaeil Baghaei",
+     "Foreign Ministry",
+     "Trump"
+    ],
+    "places": [
+     "Iran",
+     "US"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-144df3b935e7",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-22T09:14:09",
+      "title": "Iran says new US sanctions violate sovereignty of other states",
+      "excerpt": "Foreign Ministry spokesman Esmaeil Baghaei slams Trump&#039;s latest threat as a return to &#039;full-scale classic colonialism&#039;."
+     }
+    ]
+   },
+   "cosine": 0.47
+  },
+  {
+   "case": "T044",
+   "a": {
+    "id": "2026-09-29-live:hk-checkpoints-golden-week",
+    "window": "2026-09-29-live",
+    "members": [
+     "b-228a5fafb60c"
+    ],
+    "storyline": null,
+    "first": "2026-09-28T13:18:57",
+    "last": "2026-09-28T13:18:57",
+    "actors": [
+     "Immigration Department"
+    ],
+    "places": [
+     "China",
+     "Hong Kong",
+     "Hongkongers"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-228a5fafb60c",
+      "source": "South China Morning Post",
+      "published_at": "2026-09-28T13:18:57",
+      "title": "Hong Kong checkpoints to handle 7.44 million passenger trips for National Day break",
+      "excerpt": "Hong Kong’s checkpoints are expected to handle about 7.44 million passenger trips over mainland China’s National Day “golden week” break, while people movements are anticipated to peak this weekend.\nThe Immigration Department said on Monday that the figure would include inbound and outbound trips by"
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-09-29-live:hk-golden-week-things-to-do",
+    "window": "2026-09-29-live",
+    "members": [
+     "b-df5443a4397e"
+    ],
+    "storyline": null,
+    "first": "2026-09-29T03:00:12",
+    "last": "2026-09-29T03:00:12",
+    "actors": [
+     "Sai Kung",
+     "Unesco Global Geopark"
+    ],
+    "places": [
+     "China",
+     "Hong Kong"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-df5443a4397e",
+      "source": "South China Morning Post",
+      "published_at": "2026-09-29T03:00:12",
+      "title": "5 things to do over the National Day ‘golden week’ holiday in Hong Kong",
+      "excerpt": "Hong Kong is set to welcome 1.29 million mainland Chinese visitors over the National Day “golden week” break, fuelling questions online about what locals and tourists can do during the celebrations.\nOn popular mainland social media platform RedNote, many users have recommended a range of activities,"
+     }
+    ]
+   },
+   "cosine": 0.761
+  },
+  {
+   "case": "T045",
+   "a": {
+    "id": "2026-09-27-live:araghchi-only-negotiation",
+    "window": "2026-09-27-live",
+    "members": [
+     "b-7dd9705dba63"
+    ],
+    "storyline": "iran-hormuz-deal",
+    "first": "2026-09-27T07:44:11",
+    "last": "2026-09-27T07:44:11",
+    "actors": [
+     "Donald Trump",
+     "Iran",
+     "Tehran",
+     "Trump",
+     "US",
+     "Washington"
+    ],
+    "places": [
+     "Hormuz",
+     "Iran",
+     "Tehran",
+     "US"
+    ],
+    "system_developments": [
+     3
+    ],
+    "situations": [
+     "us-iran"
+    ],
+    "sources": [
+     "BBC World"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-7dd9705dba63",
+      "source": "BBC World",
+      "published_at": "2026-09-27T07:44:11",
+      "title": "Iranian minister says only negotiation can end conflict after Trump rejects Hormuz deal",
+      "excerpt": "The foreign minister says Tehran is waiting for an official rejection of a deal, despite the US President's comments."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-09-27-live:hormuz-tensions-linger",
+    "window": "2026-09-27-live",
+    "members": [
+     "b-f0d7399ed7a6"
+    ],
+    "storyline": "iran-hormuz-deal",
+    "first": "2026-09-27T14:36:44",
+    "last": "2026-09-27T14:36:44",
+    "actors": [
+     "Donald Trump",
+     "Iran",
+     "Tehran",
+     "Trump",
+     "US",
+     "Washington"
+    ],
+    "places": [
+     "Hormuz",
+     "Iran",
+     "US"
+    ],
+    "system_developments": [
+     3
+    ],
+    "situations": [
+     "us-iran"
+    ],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-f0d7399ed7a6",
+      "source": "Al Jazeera",
+      "published_at": "2026-09-27T14:36:44",
+      "title": "Strait of Hormuz tensions linger as Iran and US move further from a deal",
+      "excerpt": "There are fears of renewed fighting between the US and Iran, after President Trump rejected a deal."
+     }
+    ]
+   },
+   "cosine": 0.745
+  }
+ ]
+}
