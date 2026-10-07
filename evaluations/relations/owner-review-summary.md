@@ -40,7 +40,7 @@ frozen verbatim in `gold/owner-verdicts.snapshot.yaml`, with SHA-256 in `gold/ma
 
 ### Agreement with the blind draft
 
-The owner changed the draft on 26 cases. 18 of them were draft `NO_RELATION` → a relation or `AMBIGUOUS`. That direction matters: the
+The owner changed the draft on 26 cases. 21 of them were draft `NO_RELATION` → a relation, `AMBIGUOUS` or an identity suspect. That direction matters: the
 draft applied the taxonomy's explicit-evidence rule, and the owner's verdicts are often looser (§6, D3).
 
 ## 2. Confirmed positives per relation type
