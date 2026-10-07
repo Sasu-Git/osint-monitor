@@ -1,10 +1,6 @@
-frozen_at: '2026-10-07T12:40:46+00:00'
-state: owner verdicts frozen verbatim; gold NOT frozen (owner discussion required)
+frozen_at: '2026-10-07T13:09:24+00:00'
+state: 'FROZEN: relation gold revision 1 (development split); owner verdict snapshot unchanged'
 cases: 142
-status:
-  settled: 122
-  pending_owner_discussion: 16
-  identity_suspect: 4
 owner_labels:
   NO_RELATION: 96
   follow_up_to: 2
@@ -16,22 +12,6 @@ owner_labels:
   AMBIGUOUS: 5
   co_caused_with: 4
   same_attack_wave: 1
-confirmed_positives_settled:
-  same_calamity_lifecycle: 13
-  same_visit_or_summit: 8
-  same_attack_wave: 1
-  reaction_to: 1
-  follow_up_to: 0
-  caused_by: 0
-  co_caused_with: 0
-positives_incl_pending:
-  same_calamity_lifecycle: 13
-  same_visit_or_summit: 10
-  same_attack_wave: 1
-  reaction_to: 4
-  follow_up_to: 2
-  caused_by: 3
-  co_caused_with: 4
 sha256:
   gold/owner-verdicts.snapshot.yaml: 075a805a8f7473f03d23452016c8cd019bf135a1f38015764f9d3d1312b03adb
   gold/relation-gold.candidate.yaml: 3de5d2f90c0d2ca04aba013fa7b70935cd9f8d091491cb125ccb7dd78401d780
@@ -39,4 +19,44 @@ sha256:
   review/draft-labels.json: 72c856526371fd7b5cf54e33e06ec629e5922983ad624eb9baa48f6285d90cbf
   review/relation-review-sheet.md: 0180fbae729c2a1d03f6c7f1af8be05d2276f511372cc83aa2fe14cec95b65d1
   taxonomy.md: d7e126bb1bd972ed3ec773071b879faaf6026f2f8717b2edee26f3ca82c7b719
+  gold/relation-gold.yaml: f79271ee3a6b7a5b942f0404a67fff5e29115d3c9bbe76b730a3e588c5b74621
+  scripts/freeze_relation_gold.py: 96fd0bf082359e7636c93267b91be38e3592471ccd480e05f2b701df67b60404
 holdout_seal: holdout/SEALED.yaml unchanged; not opened
+revision: 1
+cases_frozen: 141
+deferred_owner_debate:
+  R055: 'owner leans reaction_to; disputed: A (08:06) was published before B''s Taiwan remarks (09:43), and A reacts to the
+    summit as a whole. To settle in discussion; excluded from the frozen gold.'
+labels:
+  NO_RELATION: 100
+  commentary_on: 4
+  same_calamity_lifecycle: 13
+  reaction_to: 4
+  SAME_DEVELOPMENT_SUSPECTED: 2
+  AMBIGUOUS: 6
+  same_convened_event: 8
+  follow_up_to: 2
+  same_attack_wave: 1
+  co_caused_with: 1
+canonical_positives:
+  caused_by: 0
+  co_caused_with: 1
+  commentary_on: 4
+  follow_up_to: 0
+  reaction_to: 2
+  same_attack_wave: 1
+  same_calamity_lifecycle: 13
+  same_convened_event: 8
+inferred_positives (non-canonical):
+  follow_up_to: 2
+  reaction_to: 2
+scored_cases: 133
+runtime_taxonomy:
+  same_calamity_lifecycle: implement
+  same_convened_event: implement
+  reaction_to: targeted batch first
+  same_attack_wave: defer
+  follow_up_to: defer
+  commentary_on: defer
+  caused_by: dropped from Phase 3 runtime
+  co_caused_with: dropped from Phase 3 runtime

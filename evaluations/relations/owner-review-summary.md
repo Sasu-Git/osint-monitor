@@ -169,3 +169,74 @@ Recorded for the backlog. They do not change any relation label.
 2. rewrite the directed arrows to named roles;
 3. freeze `gold/relation-gold.yaml` with hashes;
 4. only then implement the runtime types.
+
+---
+
+## 10. Resolution and freeze (2026-10-07, owner decisions)
+
+### Locked taxonomy decisions
+
+- **Named semantic roles, not arrows:**
+  - `reaction_to`: reaction → trigger;
+  - `follow_up_to`: follow-up → original;
+  - `caused_by`: effect → cause;
+  - `commentary_on`: commentary → subject.
+- **`commentary_on`** joins the gold taxonomy. Its runtime is deferred: it is a content relation, not a
+  world-state relation.
+- **Evidence.** Runtime canonical relations are explicit-only. Inferred links are kept in the gold with
+  `evidence: inferred` and `canonical: false`, for later Situation/assessment logic.
+- **Rename.** `same_visit_or_summit` → **`same_convened_event`**: a bounded scheduled gathering and its distinct
+  actions/outcomes.
+
+### Case resolutions
+
+| Case | Final | How |
+|---|---|---|
+| R132 | `co_caused_with` (explicit; common cause: Trump's rejection) | owner agrees |
+| R115 | `NO_RELATION`; both sides `commentary_on` the rejection (external link) | owner agrees |
+| R134 | `NO_RELATION` (different events, same topic) | owner agrees |
+| R098 | `AMBIGUOUS`, not scored | owner: two events. Their relation was not assessed; candidate `same_convened_event` (same day, UN General Assembly) |
+| R008 | `reaction_to`: reaction = A (HK financiers), trigger = B (Singapore scheme) | owner agrees |
+| R127 | `NO_RELATION`; B `follow_up_to` the Friday mall attack (external) | owner: link to the third event |
+| R059 | `NO_RELATION`; A `commentary_on`, B `caused_by` the rejection (external) | owner: link to the third event |
+| R087 | `NO_RELATION`; B an outcome of the summit, A a later remark about it (external) | owner: link to the summit |
+| R060 | `NO_RELATION` | owner: the note was a West Bank watchpoint |
+| R123 | `follow_up_to` (follow-up = troop decree, original = budget), **inferred** | owner: follow-up or co-cause both fine |
+| R029, R076 | `reaction_to`, **inferred** (non-canonical) | D3 |
+| R056 | `follow_up_to`, **inferred** (non-canonical) | D3 |
+| R002, R036 | `commentary_on` (commentary = B) | D2 |
+| R005 | `commentary_on` (commentary = B, the Q&A; subject = A, the summit) | owner condition met; D2 |
+| R105 | `commentary_on` (commentary = A; subject = B, UNGA Day Three) | D2 |
+| R012, R138 | `SAME_DEVELOPMENT_SUSPECTED`, routed to identity review, not scored | evidence and owner agree |
+| **R055** | **deferred for debate, excluded from the frozen gold** | owner leans `reaction_to`. Disputed: A was published at 08:06, before B's Taiwan remarks (09:43, "on Saturday"), and A reacts to the summit as a whole, so it cannot react to B. |
+
+### Frozen gold (`gold/relation-gold.yaml`, revision 1)
+
+141 cases (142 minus R055); **133 scored**.
+
+| Label | Cases | Canonical (explicit) | Inferred |
+|---|---:|---:|---:|
+| `NO_RELATION` | 100 | – | – |
+| `same_calamity_lifecycle` | 13 | 13 | 0 |
+| `same_convened_event` | 8 | 8 | 0 |
+| `commentary_on` | 4 | 4 | 0 |
+| `reaction_to` | 4 | **2** (R008, R014) | 2 (R029, R076) |
+| `follow_up_to` | 2 | 0 | 2 (R056, R123) |
+| `same_attack_wave` | 1 | 1 | 0 |
+| `co_caused_with` | 1 | 1 | 0 |
+| `caused_by` | 0 | 0 | 0 |
+| `AMBIGUOUS` | 6 (not scored) | – | – |
+| `SAME_DEVELOPMENT_SUSPECTED` | 2 (not scored) | – | – |
+
+Third-event links are recorded per case under `external_links` (not scored): R059, R087, R115, R127, R132.
+SHA-256 of the gold, the verdict snapshot and the inputs are in `gold/manifest.yaml`. The sealed holdout is
+untouched.
+
+### Final Phase 3 runtime taxonomy
+
+| Plan | Types |
+|---|---|
+| **Implement** | `same_calamity_lifecycle` (13 canonical positives, 3 episodes); `same_convened_event` (8 canonical, 7 events) |
+| **Targeted batch first** | `reaction_to`: only 2 canonical positives |
+| **Defer** | `same_attack_wave`, `follow_up_to`, `commentary_on` |
+| **Drop from Phase 3 runtime** | `caused_by`, `co_caused_with` |
