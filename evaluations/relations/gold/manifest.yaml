@@ -1,0 +1,42 @@
+frozen_at: '2026-10-07T12:40:46+00:00'
+state: owner verdicts frozen verbatim; gold NOT frozen (owner discussion required)
+cases: 142
+status:
+  settled: 122
+  pending_owner_discussion: 16
+  identity_suspect: 4
+owner_labels:
+  NO_RELATION: 96
+  follow_up_to: 2
+  same_calamity_lifecycle: 13
+  same_visit_or_summit: 10
+  caused_by: 3
+  SAME_DEVELOPMENT_SUSPECTED: 4
+  reaction_to: 4
+  AMBIGUOUS: 5
+  co_caused_with: 4
+  same_attack_wave: 1
+confirmed_positives_settled:
+  same_calamity_lifecycle: 13
+  same_visit_or_summit: 8
+  same_attack_wave: 1
+  reaction_to: 1
+  follow_up_to: 0
+  caused_by: 0
+  co_caused_with: 0
+positives_incl_pending:
+  same_calamity_lifecycle: 13
+  same_visit_or_summit: 10
+  same_attack_wave: 1
+  reaction_to: 4
+  follow_up_to: 2
+  caused_by: 3
+  co_caused_with: 4
+sha256:
+  gold/owner-verdicts.snapshot.yaml: 075a805a8f7473f03d23452016c8cd019bf135a1f38015764f9d3d1312b03adb
+  gold/relation-gold.candidate.yaml: 3de5d2f90c0d2ca04aba013fa7b70935cd9f8d091491cb125ccb7dd78401d780
+  review/cases.json: 181a478f03f336a5976df24c0c7f8e9116a58614db6e8085eabbabf9f1f8ecd4
+  review/draft-labels.json: 72c856526371fd7b5cf54e33e06ec629e5922983ad624eb9baa48f6285d90cbf
+  review/relation-review-sheet.md: 0180fbae729c2a1d03f6c7f1af8be05d2276f511372cc83aa2fe14cec95b65d1
+  taxonomy.md: d7e126bb1bd972ed3ec773071b879faaf6026f2f8717b2edee26f3ca82c7b719
+holdout_seal: holdout/SEALED.yaml unchanged; not opened

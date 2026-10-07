@@ -1,0 +1,1604 @@
+# Relation gold candidate (owner verdicts applied). NOT a frozen gold: cases with status
+# pending_owner_discussion / identity_suspect are unsettled. See ../owner-review-summary.md.
+R001:
+  a: 2026-08-21:opatra-more-consumers-allege
+  b: 2026-08-21:ex-diplomats-urge-sanctions-on-israel
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R002:
+  a: 2026-08-31:clancy-jury-deadlocked
+  b: 2026-08-31:clancy-jury-options-explainer
+  owner_label: follow_up_to
+  owner_direction: A->B
+  owner_note: Judge asks jurors to keep trying --> what are the jury's options; I think it is a follow-up or commentary on
+    the empasse the jury is facing
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: pending_owner_discussion
+  open_question: direction convention; owner reads it as 'follow-up or commentary' (commentary policy)
+  annotation: null
+R003:
+  a: 2026-08-31:sco-summit-preview
+  b: 2026-08-31:trump-xi-summit-prediction-markets
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: 'The common denominator here seems to be China: on one side entertaining relationships with Modi & Putin, on
+    the other side with Trump. There is no relation between the two events, but the common denominator would be China Foreign
+    Policy '
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R004:
+  a: 2026-08-31:nepal-foreign-rescue-teams-question
+  b: 2026-08-31:nepal-rescue-tunnel-workers-toll-900
+  owner_label: same_calamity_lifecycle
+  owner_direction: null
+  owner_note: null
+  draft_label: same_calamity_lifecycle
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R005:
+  a: 2026-09-25:us-china-summit-outcome
+  b: 2026-09-25:scmp-summit-reader-qa
+  owner_label: same_visit_or_summit
+  owner_direction: null
+  owner_note: If they are both analysis pieces then there is a relation, they're broadly referring to the same meeting or
+    summit
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: pending_owner_discussion
+  open_question: conditional verdict ('if they are both analysis pieces'); commentary policy
+  annotation: null
+R006:
+  a: 2026-09-29-live:slovenia-israel-u-turn
+  b: 2026-09-29-live:inside-al-jazeera-unga-coverage
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R007:
+  a: 2026-09-27-live:trump-downplays-taiwan-talk
+  b: 2026-09-27-live:trump-asked-xi-weapons
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: No relation, although in the topic of US-China relationship Taiwan is an uncovered nerve that somehow always
+    connects
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R008:
+  a: 2026-08-21:hk-financiers-press-carried-interest
+  b: 2026-08-21:singapore-fund-manager-carrots-analysis
+  owner_label: caused_by
+  owner_direction: B->A
+  owner_note: Hong Kong tax break is a reaction to --> Singapore rival tax scheme
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: pending_owner_discussion
+  open_question: note says 'a reaction to', label caused_by; direction convention -> proposed reaction_to A->B
+  annotation: null
+R009:
+  a: 2026-08-21:harry-uk-return-royal-rift
+  b: 2026-08-21:meghan-netflix-gentlemen-talks
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R010:
+  a: 2026-09-25:pakistan-afghanistan-cross-border-strikes
+  b: 2026-09-25:saudi-turkey-pakistan-defence-talks
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: 'one is an event at Pak-Afg border, the others are urgent meetings in face of Houthi attacks '
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R011:
+  a: 2026-09-27-live:scmp-weekend-reads
+  b: 2026-09-27-live:summit-trade-deliverables
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: Reading digests should be aggregated by Geographical macro-areas and time-frames (one digest a week per macro-area
+    is more than fine)
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R012:
+  a: 2026-09-30-multilingual:sx-100
+  b: 2026-09-30-multilingual:sx-170
+  owner_label: SAME_DEVELOPMENT_SUSPECTED
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: identity_suspect
+  open_question: 'agree: one matter (taxpayer-funded Trump ads) by two outlets -> identity review'
+  annotation: null
+R013:
+  a: 2026-08-21:canadian-premier-attacks-trump
+  b: 2026-08-21:carney-retaliatory-tariffs
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R014:
+  a: 2026-09-27-live:trump-rejects-hormuz-plan
+  b: 2026-09-27-live:araghchi-doomsday-war
+  owner_label: reaction_to
+  owner_direction: B->A
+  owner_note: null
+  draft_label: reaction_to
+  draft_direction: B->A
+  status: settled
+  open_question: null
+  annotation: null
+R015:
+  a: 2026-08-31:sanchez-blames-russia-israel-ceuta-disinfo
+  b: 2026-08-31:ceuta-sexual-assaults-prosecutors
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: shared crisis, no relation
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R016:
+  a: 2026-10-03-live:s-1366
+  b: 2026-10-03-live:s-1407
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: 'still they should both be encapsuled in the summit: basically a series of threads that originate from there'
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R017:
+  a: 2026-08-31:nuwakot-residents-return-home
+  b: 2026-08-31:nepal-rescue-tunnel-workers-toll-900
+  owner_label: same_calamity_lifecycle
+  owner_direction: null
+  owner_note: null
+  draft_label: same_calamity_lifecycle
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R018:
+  a: 2026-08-21:gaza-weddings
+  b: 2026-08-21:uk-canada-australia-condemn-wck-probe-refusal
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R019:
+  a: 2026-09-27-live:araghchi-doomsday-war
+  b: 2026-09-27-live:trump-expects-new-iran-talks
+  owner_label: AMBIGUOUS
+  owner_direction: null
+  owner_note: No relation but these are all followups or reactions to peace talks, might be co-caused; i'd flag a bit of ambiguity
+    here
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R020:
+  a: 2026-09-29-live:iran-denies-airbase-link
+  b: 2026-09-29-live:uk-defence-ceos-russia-briefing
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R021:
+  a: 2026-08-21:legal-tech-kimi-k3-pivot
+  b: 2026-08-21:us-china-ai-blocs-southeast-asia
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R022:
+  a: 2026-09-25:cia-warning-drones-from-vessels
+  b: 2026-09-25:france-troops-saudi-terminal
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R023:
+  a: 2026-09-30-multilingual:sx-168
+  b: 2026-09-30-multilingual:sx-209
+  owner_label: same_visit_or_summit
+  owner_direction: null
+  owner_note: null
+  draft_label: same_visit_or_summit
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R024:
+  a: 2026-09-25:netanyahu-unga-speech-walkout
+  b: 2026-09-25:jewish-march-against-netanyahu
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: 'no relation but commonality in critiquing/protesting Netanyahu '
+  draft_label: AMBIGUOUS
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R025:
+  a: 2026-10-03-live:s-1235
+  b: 2026-10-03-live:D16
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: 'reading digest, same policy as previous save should be implemented: one summary digest a week per macroarea '
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R026:
+  a: 2026-09-25:white-house-tour
+  b: 2026-09-25:us-china-summit-outcome
+  owner_label: AMBIGUOUS
+  owner_direction: null
+  owner_note: 'it is the same meeting / summit referenced, but one is an analysis piece and the other two are about practicalities
+    or events actually occurred during '
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R027:
+  a: 2026-09-30-multilingual:sx-28
+  b: 2026-09-30-multilingual:sx-21
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R028:
+  a: 2026-09-25:white-house-tour
+  b: 2026-09-25:scmp-summit-reader-qa
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: commentary on what happened
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R029:
+  a: 2026-08-21:israel-reestablishes-west-bank-settlement
+  b: 2026-08-21:jewish-activists-protective-presence
+  owner_label: reaction_to
+  owner_direction: B->A
+  owner_note: If the re-establishment didn't occur then we wouldn't have had activists protesting against it.. hope that makes
+    sense. It's not an absolute but mostly logic, one would assume that activists were there precisely because of the old
+    settlement re-establishment; so no relation seems odd; i would give either reaction to or ambiguous
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: pending_owner_discussion
+  open_question: 'inferred reaction (owner: activists ''precisely because'' of the re-establishment); explicit-evidence rule'
+  annotation: null
+R030:
+  a: 2026-08-31:sarawak-haze-indonesian-fires
+  b: 2026-08-31:orangutans-borneo-wildfires
+  owner_label: same_calamity_lifecycle
+  owner_direction: null
+  owner_note: null
+  draft_label: same_calamity_lifecycle
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R031:
+  a: 2026-09-27-live:nepal-floods-one-month-missing
+  b: 2026-09-27-live:nepal-more-floods-14-dead
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R032:
+  a: 2026-08-21:meghan-netflix-gentlemen-talks
+  b: 2026-08-21:harry-meghan-brand-on-return
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: 'I don''t want this gossip to surface in general. Unless it''s official visits or leaks like Panama Papers or
+    Epstein Files. '
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R033:
+  a: 2026-10-03-live:s-1153
+  b: 2026-10-03-live:s-1654
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R034:
+  a: 2026-10-03-live:s-1486
+  b: 2026-10-03-live:s-1701
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: only shared summit context
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R035:
+  a: 2026-09-30-multilingual:sx-360
+  b: 2026-09-30-multilingual:sx-353
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: only relation is maritime policy, possibly climate change related claims
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R036:
+  a: 2026-09-25:netanyahu-unga-speech-walkout
+  b: 2026-09-25:israel-palestine-treatment-at-un
+  owner_label: reaction_to
+  owner_direction: B->A
+  owner_note: there is a relation, without the speech there is no commentary
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: pending_owner_discussion
+  open_question: commentary labelled reaction_to ('without the speech there is no commentary'); commentary policy
+  annotation: null
+R037:
+  a: 2026-09-27-live:nepal-more-floods-14-dead
+  b: 2026-09-27-live:nepal-floods-tourism
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: no relation but the bigger picture is calamities lifecycles; important to distinguish between major events
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R038:
+  a: 2026-10-03-live:s-1235
+  b: 2026-10-03-live:s-1585
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R039:
+  a: 2026-09-27-live:hormuz-tensions-linger
+  b: 2026-09-27-live:cuba-decries-us-military-action
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R040:
+  a: 2026-08-21:soldiers-throw-belongings-qusra
+  b: 2026-08-21:settlers-burn-hebron-quarry-machinery
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: 'no relation although these kinds of documented activities from armed forces (burning machinery, throwing belongings)
+    should be part of a broader scrutiny on armed conflicts '
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R041:
+  a: 2026-10-03-live:s-1482
+  b: 2026-10-03-live:s-1532
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R042:
+  a: 2026-08-31:venezuela-oil-deal-implications
+  b: 2026-08-31:operation-economic-outcast-failing
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R043:
+  a: 2026-10-03-live:s-1173
+  b: 2026-10-03-live:s-1259
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: 'only implicit link is US foreign policy and military operations/surveillance '
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R044:
+  a: 2026-10-03-live:s-1585
+  b: 2026-10-03-live:D16
+  owner_label: AMBIGUOUS
+  owner_direction: null
+  owner_note: 'IMO this is kind of ambiguous, it''s not one single development but here the topic is the rising role of China
+    as main US competitor both in economic and diplomatic terms (see influence in South America) '
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R045:
+  a: 2026-08-31:nepal-rescue-tunnel-workers-toll-900
+  b: 2026-08-31:nepal-tunnel-traps-how-many-dead
+  owner_label: same_calamity_lifecycle
+  owner_direction: null
+  owner_note: even if same development, one lifecycle is fine. We can insert checkpoints for the most newsworthy events
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: owner keeps the lifecycle relation even if the two sides are one Development ('one lifecycle is fine')
+R046:
+  a: 2026-09-27-live:pope-meets-abuse-survivors
+  b: 2026-09-27-live:pope-bishops-abuse-speech
+  owner_label: same_visit_or_summit
+  owner_direction: null
+  owner_note: null
+  draft_label: same_visit_or_summit
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R047:
+  a: 2026-10-03-live:s-1295
+  b: 2026-10-03-live:s-1907
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: Whenever SCMP or similar give a summary read of "most important news stories in the past X weeks" or "X days"
+    I'd like to have an option to trigger a drilldown research on each of the news stories
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R048:
+  a: 2026-09-27-live:labour-conference-opens
+  b: 2026-09-27-live:healey-defence-reindustrialisation
+  owner_label: same_visit_or_summit
+  owner_direction: null
+  owner_note: null
+  draft_label: same_visit_or_summit
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R049:
+  a: 2026-09-27-live:yemen-health-system-warning
+  b: 2026-09-27-live:bbc-yemen-frontline-report
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R050:
+  a: 2026-10-03-live:s-1174
+  b: 2026-10-03-live:s-1250
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R051:
+  a: 2026-09-27-live:amicro-hk-ipo
+  b: 2026-09-27-live:hk-slimming-injections-seized
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: 'When a big company (over 20M expected IPO) "clears hearing" I would like the option to trigger a short search:
+    history of the company, leadership, backers/investors, core technology/products.'
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R052:
+  a: 2026-10-03-live:s-1303
+  b: 2026-10-03-live:s-1361
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R053:
+  a: 2026-08-31:china-warns-glacier-collapse-risk
+  b: 2026-08-31:nepal-tunnel-traps-how-many-dead
+  owner_label: same_calamity_lifecycle
+  owner_direction: null
+  owner_note: null
+  draft_label: same_calamity_lifecycle
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R054:
+  a: 2026-08-31:nuwakot-residents-return-home
+  b: 2026-08-31:nepal-families-search-missing
+  owner_label: same_calamity_lifecycle
+  owner_direction: null
+  owner_note: null
+  draft_label: same_calamity_lifecycle
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R055:
+  a: 2026-09-27-live:southeast-asia-summit-reaction
+  b: 2026-09-27-live:trump-downplays-taiwan-talk
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: 'no relation although the reaction originated from Trump''s remarks made at the visit, so I would also linger
+    towards "reaction_to"; '
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: pending_owner_discussion
+  open_question: verdict NO_RELATION but owner leans to reaction_to
+  annotation: null
+R056:
+  a: 2026-08-21:bessent-vows-toughest-iran-sanctions
+  b: 2026-08-21:us-designates-hezbollah-iranian-proxy
+  owner_label: follow_up_to
+  owner_direction: A->B
+  owner_note: 'not specifically linked as one thing, but it is pretty clear that the main objective is to hit Iran/ secure
+    Israel '
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: pending_owner_discussion
+  open_question: follow_up_to although 'not specifically linked as one thing'; direction convention
+  annotation: null
+R057:
+  a: 2026-09-29-live:channel-dinghy-deaths
+  b: 2026-09-29-live:french-police-tear-gas-beach
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: 'these should fall under a big "non legal migration flows" umbrella. Greece, Morocco, Italy, Spain, Portugal,
+    France, England, Libia and Egypt should be watched closely regarding this, as well as EU responses to governmental actions
+    (such as naval blocks for example) '
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R058:
+  a: 2026-09-27-live:why-trump-rejected-explainer
+  b: 2026-09-27-live:fairford-investigation-iran-link
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R059:
+  a: 2026-09-27-live:why-trump-rejected-explainer
+  b: 2026-09-27-live:oil-surges-after-rejection
+  owner_label: caused_by
+  owner_direction: A->B
+  owner_note: caused by the object of A's analysis. The analysis talks about the rejection, it is the rejection causing the
+    spikes, not the analysis itself of course. This is obvious
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: pending_owner_discussion
+  open_question: caused_by through the object of an analysis piece (the cause is the rejection, not in the pair)
+  annotation: null
+R060:
+  a: 2026-08-21:jewish-activists-protective-presence
+  b: 2026-08-21:settlers-target-qaryut-homes
+  owner_label: co_caused_with
+  owner_direction: null
+  owner_note: No relation but the shared "west bank" topic is a pretty hot one for the Isreal-Palestine conflict. Without
+    settlers presence there would not be a need to deter violence
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: pending_owner_discussion
+  open_question: label co_caused_with but note begins 'No relation'
+  annotation: null
+R061:
+  a: 2026-09-30-multilingual:sx-221
+  b: 2026-09-30-multilingual:sx-347
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: 'Commission Daily news seems interesting, we could think of a bundle summary read for EU institutions modelled
+    on this '
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R062:
+  a: 2026-09-25:first-ladies-smithsonian
+  b: 2026-09-25:nepal-flood-climate-appeal
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R063:
+  a: 2026-10-03-live:s-1533
+  b: 2026-10-03-live:s-1591
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R064:
+  a: 2026-09-30-multilingual:D9
+  b: 2026-09-30-multilingual:sx-155
+  owner_label: same_visit_or_summit
+  owner_direction: null
+  owner_note: 'only 2 articles are about Macron in A, therefore connecting to B, as a followup/commentary. Rest should not
+    be part of the development (should be part of "housing crisis" on the "Spain" area) '
+  draft_label: same_visit_or_summit
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: 'side A (system D9) is a mixed Development: Macron''s visit plus Spain''s housing crisis; the relation holds
+    for its Macron items; D9 routed to identity review'
+R065:
+  a: 2026-09-29-live:eu-five-defense-priorities
+  b: 2026-09-29-live:china-germany-trade-call
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R066:
+  a: 2026-09-30-multilingual:D1
+  b: 2026-09-30-multilingual:sx-347
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: I cannot see the body, I marked no relation
+  draft_label: AMBIGUOUS
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: 'the Daily News body is truncated in the feed (only the opening item is stored): the verdict was given on limited
+    evidence'
+R067:
+  a: 2026-08-21:russia-missile-test-kuril-islands
+  b: 2026-08-21:ukraine-mall-strike-rescue
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R068:
+  a: 2026-08-21:un-ebola-growing-faster-2500-deaths
+  b: 2026-08-21:ervebo-doses-arrive-drc
+  owner_label: same_calamity_lifecycle
+  owner_direction: null
+  owner_note: null
+  draft_label: same_calamity_lifecycle
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R069:
+  a: 2026-09-29-live:kyiv-academy-of-sciences-strike
+  b: 2026-09-29-live:russia-pounds-kyiv-after-academy
+  owner_label: same_attack_wave
+  owner_direction: null
+  owner_note: null
+  draft_label: same_attack_wave
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R070:
+  a: 2026-08-31:asean-big-tech-meta-payout
+  b: 2026-08-31:ftc-amazon-ad-pricing-lawsuit
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: 'no relation but whenever someone sues one of the Mag7 or a big Pharmaceutical I would like the event surface,
+    especially for Mag7 judiciary developments should be looked at very closely. '
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R071:
+  a: 2026-08-31:uae-intercepts-drone-denies-airbase-hit
+  b: 2026-08-31:why-greece-signed-israel-deal
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R072:
+  a: 2026-08-31:china-warns-glacier-collapse-risk
+  b: 2026-08-31:nepal-rescue-tunnel-workers-toll-900
+  owner_label: same_calamity_lifecycle
+  owner_direction: null
+  owner_note: null
+  draft_label: same_calamity_lifecycle
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R073:
+  a: 2026-10-03-live:s-1474
+  b: 2026-10-03-live:s-1814
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R074:
+  a: 2026-09-27-live:sudan-blue-nile-motorcycles
+  b: 2026-09-27-live:ethiopia-accuses-sudan-egypt
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R075:
+  a: 2026-08-31:nepal-foreign-rescue-teams-question
+  b: 2026-08-31:nepal-tunnel-traps-how-many-dead
+  owner_label: same_calamity_lifecycle
+  owner_direction: null
+  owner_note: null
+  draft_label: same_calamity_lifecycle
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R076:
+  a: 2026-08-21:soldiers-throw-belongings-qusra
+  b: 2026-08-21:jewish-activists-protective-presence
+  owner_label: reaction_to
+  owner_direction: B->A
+  owner_note: 'same logic as before, without settlers there would be no need for pushback. It''s not important that the reaction
+    be to the exact event to create a causal link. If settlers come in and protestors follow claiming to provide "protective
+    presence" we should be able to at least vet the relationship and decide whether it surfaces as a reaction, something else
+    or doesn''t surface at all '
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: pending_owner_discussion
+  open_question: inferred reaction ('not important that the reaction be to the exact event'); explicit-evidence rule
+  annotation: null
+R077:
+  a: 2026-08-31:wheat-prices-black-sea-attacks
+  b: 2026-08-31:kyiv-rail-workers-strike
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R078:
+  a: 2026-09-27-live:hk-bicycle-crackdown
+  b: 2026-09-27-live:hk-claw-machine-theft
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R079:
+  a: 2026-09-29-live:iran-touts-hormuz-attacks
+  b: 2026-09-29-live:us-iran-talks-deal-unlikely
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R080:
+  a: 2026-09-29-live:hamas-commander-al-beik-killed
+  b: 2026-09-29-live:jalud-settler-attack
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R081:
+  a: 2026-08-31:scmp-weekend-reads-asia
+  b: 2026-08-31:japan-hypersonic-plans-china
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R082:
+  a: 2026-08-21:ebola-vaccine-trial-to-start
+  b: 2026-08-21:ervebo-doses-arrive-drc
+  owner_label: same_calamity_lifecycle
+  owner_direction: null
+  owner_note: null
+  draft_label: same_calamity_lifecycle
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R083:
+  a: 2026-08-31:xi-bishkek-sco-eurasia-strategy
+  b: 2026-08-31:sco-summit-preview
+  owner_label: same_visit_or_summit
+  owner_direction: null
+  owner_note: null
+  draft_label: same_visit_or_summit
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R084:
+  a: 2026-08-31:scmp-weekend-reads-asia
+  b: 2026-08-31:china-warns-glacier-collapse-risk
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R085:
+  a: 2026-09-25:us-china-summit-outcome
+  b: 2026-09-25:us-china-state-dinner
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R086:
+  a: 2026-09-29-live:opinion-trump-reject-iran-offer
+  b: 2026-09-29-live:judge-blocks-antiterror-grant-conditions
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R087:
+  a: 2026-09-27-live:trump-downplays-taiwan-talk
+  b: 2026-09-27-live:summit-trade-deliverables
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: are we sure we want to flag this kind of things under no relation? if the remarks follow the summit, then it
+    should be a followup, especially because it's about a very hot topic inside US-China relationship
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: pending_owner_discussion
+  open_question: owner asks 'are we sure ... should be a followup' while the verdict is NO_RELATION
+  annotation: null
+R088:
+  a: 2026-09-25:nyc-protest-arrests-netanyahu
+  b: 2026-09-25:israel-palestine-treatment-at-un
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R089:
+  a: 2026-09-30-multilingual:sx-25
+  b: 2026-09-30-multilingual:sx-24
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R090:
+  a: 2026-09-27-live:trump-on-fairford-suspects
+  b: 2026-09-27-live:why-trump-rejected-explainer
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R091:
+  a: 2026-08-21:un-ebola-growing-faster-2500-deaths
+  b: 2026-08-21:ebola-vaccine-trial-to-start
+  owner_label: same_calamity_lifecycle
+  owner_direction: null
+  owner_note: null
+  draft_label: same_calamity_lifecycle
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R092:
+  a: 2026-10-03-live:s-1235
+  b: 2026-10-03-live:D15
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R093:
+  a: 2026-08-31:hk-child-social-media-opinion
+  b: 2026-08-31:singapore-teen-social-media-limits
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: 'same topic, we should bundle it in "approaches" -> how different macro areas handle the same topic (e.g. EU
+    with intra-country differences, same with US or South America) '
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R094:
+  a: 2026-09-29-live:india-releases-vandyke-ukrainians
+  b: 2026-09-29-live:us-revokes-latam-officials-visas
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R095:
+  a: 2026-08-21:trump-eases-beef-tariffs
+  b: 2026-08-21:carney-retaliatory-tariffs
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R096:
+  a: 2026-09-29-live:bangkok-jet-skier-arrest
+  b: 2026-09-29-live:hk-bangkok-flights-delayed
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: correct, side incident
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R097:
+  a: 2026-09-29-live:opinion-us-china-ai-control
+  b: 2026-09-29-live:us-soybeans-excluded-tariff-cuts
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R098:
+  a: 2026-09-30-multilingual:sx-405
+  b: 2026-09-30-multilingual:sx-424
+  owner_label: SAME_DEVELOPMENT_SUSPECTED
+  owner_direction: null
+  owner_note: the DPRK made statements regarding its nuclear position, but specifically during its main UN General Assembly
+    (UNGA) address.
+  draft_label: AMBIGUOUS
+  draft_direction: null
+  status: identity_suspect
+  open_question: evidence suggests two different General Assembly meetings (general debate vs the 28 Sep high-level nuclear
+    meeting) -> owner discussion
+  annotation: null
+R099:
+  a: 2026-10-03-live:s-1796
+  b: 2026-10-03-live:s-1842
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R100:
+  a: 2026-09-29-live:uae-confirms-netanyahu-visit
+  b: 2026-09-29-live:shin-bet-complaint-uae-report
+  owner_label: same_visit_or_summit
+  owner_direction: null
+  owner_note: null
+  draft_label: same_visit_or_summit
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R101:
+  a: 2026-09-30-multilingual:D11
+  b: 2026-09-30-multilingual:sx-486
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: 'Interesting here, whenever critical minerals are invested in like this, especially by G20 countries, it should
+    surface and generate its own situation. (prompt me to address after review) '
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R102:
+  a: 2026-08-21:us-economic-isolation-strategy-analysis
+  b: 2026-08-21:iran-rejects-new-us-sanctions
+  owner_label: AMBIGUOUS
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R103:
+  a: 2026-09-29-live:fifa-infantino-funding
+  b: 2026-09-29-live:fifa-accuses-uefa
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R104:
+  a: 2026-09-27-live:hk-claw-machine-theft
+  b: 2026-09-27-live:hk-gym-hidden-cameras
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R105:
+  a: 2026-09-25:israel-palestine-treatment-at-un
+  b: 2026-09-25:unga-day-three-roundup
+  owner_label: same_visit_or_summit
+  owner_direction: null
+  owner_note: both are commentaries referred to the same address/event; they don't refer each other but they literally cover
+    the same event
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: pending_owner_discussion
+  open_question: two commentaries on one event labelled same_visit_or_summit; commentary policy
+  annotation: null
+R106:
+  a: 2026-09-27-live:south-africa-two-mass-shootings
+  b: 2026-09-27-live:detroit-strip-club-shooting
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R107:
+  a: 2026-08-21:settlers-burn-hebron-quarry-machinery
+  b: 2026-08-21:settlement-expansion-analysis
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R108:
+  a: 2026-09-30-multilingual:sx-412
+  b: 2026-09-30-multilingual:sx-401
+  owner_label: same_calamity_lifecycle
+  owner_direction: null
+  owner_note: null
+  draft_label: same_calamity_lifecycle
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R109:
+  a: 2026-08-31:iran-war-economic-winners-losers
+  b: 2026-08-31:can-iran-mine-hormuz-with-rockets
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R110:
+  a: 2026-10-03-live:s-1374
+  b: 2026-10-03-live:s-1814
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R111:
+  a: 2026-09-27-live:israeli-opposition-unites
+  b: 2026-09-27-live:west-bank-checkpoints-feature
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R112:
+  a: 2026-09-30-multilingual:sx-513
+  b: 2026-09-30-multilingual:sx-91
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R113:
+  a: 2026-09-29-live:iran-denies-airbase-link
+  b: 2026-09-29-live:iran-singer-lashes-upheld
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R114:
+  a: 2026-09-30-multilingual:sx-412
+  b: 2026-09-30-multilingual:sx-423
+  owner_label: same_calamity_lifecycle
+  owner_direction: null
+  owner_note: '... if they share the DRC crisis then there is a link. It''s the same lifecycle'
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: 'condition met: B''s coverage includes ''Security Council LIVE: ... as Ebola deepens crisis'''
+R115:
+  a: 2026-09-27-live:trump-rejects-hormuz-plan
+  b: 2026-09-27-live:hormuz-tensions-linger
+  owner_label: co_caused_with
+  owner_direction: null
+  owner_note: 'I think this should be co_caused with: they''re both commentary pieces on a broader topic which "caused" both
+    (prompt me if you disagree/agree and why) '
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: pending_owner_discussion
+  open_question: 'owner asks for a take: co_caused_with for two commentary pieces'
+  annotation: null
+R116:
+  a: 2026-08-31:indonesia-us-joint-drills
+  b: 2026-08-31:trump-xi-summit-prediction-markets
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R117:
+  a: 2026-10-03-live:s-1158
+  b: 2026-10-03-live:s-2005
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R118:
+  a: 2026-09-27-live:hormuz-tensions-linger
+  b: 2026-09-27-live:waltz-uranium-offer
+  owner_label: AMBIGUOUS
+  owner_direction: null
+  owner_note: ..I think it's a natural development produced by the tension, otherwise they wouldn't have made the offer
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R119:
+  a: 2026-08-21:maresca-needs-time-bournemouth
+  b: 2026-08-21:man-city-preview
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: 'I don''t want sports news to surface at all, we can disregard this topics or similar topics entirely '
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R120:
+  a: 2026-08-21:flores-quake-survivors
+  b: 2026-08-21:indonesia-troops-borneo-wildfires
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R121:
+  a: 2026-09-29-live:japanese-firms-pull-back-china
+  b: 2026-09-29-live:pimco-china-diversification
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: interesting though, as Japan pulls away investors are going in. Should trigger a small research into why
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R122:
+  a: 2026-09-25:us-china-state-dinner
+  b: 2026-09-25:scmp-summit-reader-qa
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R123:
+  a: 2026-09-29-live:russia-2027-defence-budget
+  b: 2026-09-29-live:putin-decree-15500-troops
+  owner_label: co_caused_with
+  owner_direction: null
+  owner_note: okay yes separate acts but same development, he is raising military budget and that in some shape or form is
+    included in the fact that more troops will join. I would put follow up or co_caused_with
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: pending_owner_discussion
+  open_question: 'owner: ''separate acts but same development''; follow_up_to or co_caused_with'
+  annotation: null
+R124:
+  a: 2026-09-29-live:pope-leo-ai-not-fake-news
+  b: 2026-09-29-live:pope-leo-france-tour-final-day
+  owner_label: same_visit_or_summit
+  owner_direction: null
+  owner_note: yes, they were
+  draft_label: AMBIGUOUS
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: owner confirms the AI remarks were made during the France tour
+R125:
+  a: 2026-09-29-live:trump-china-weapons-analysis
+  b: 2026-09-29-live:iran-war-live-no-sanctions-relief
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R126:
+  a: 2026-08-31:hk-robot-convenience-stores-open
+  b: 2026-08-31:hk-child-social-media-opinion
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: Applied robotics should be one of those topics (like the "AI Race" or "Semiconductors" or "Critical Raw Material")
+    where we should always have a birdseye view on
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R127:
+  a: 2026-08-21:russian-strikes-kill-six-day-after-mall
+  b: 2026-08-21:ukraine-mall-strike-rescue
+  owner_label: caused_by
+  owner_direction: A->B
+  owner_note: different days but the rescue cited in B is directly caused by A
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: pending_owner_discussion
+  open_question: 'caused_by contradicted by the text: B''s rescue follows the previous day''s mall attack, not A''s strikes'
+  annotation: null
+R128:
+  a: 2026-10-03-live:s-1155
+  b: 2026-10-03-live:s-1486
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R129:
+  a: 2026-09-29-live:bangkok-jet-skier-arrest
+  b: 2026-09-29-live:thai-airways-baggage-backlog
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R130:
+  a: 2026-08-21:harry-uk-return-royal-rift
+  b: 2026-08-21:harry-ordered-to-pay-legal-costs
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: 'Royals gossip should be disregarded unless highly controversial or political subjects are specifically addressed. '
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R131:
+  a: 2026-09-29-live:wang-yi-meets-iwaya
+  b: 2026-09-29-live:japanese-firms-pull-back-china
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R132:
+  a: 2026-09-27-live:araghchi-only-negotiation
+  b: 2026-09-27-live:trump-expects-new-iran-talks
+  owner_label: co_caused_with
+  owner_direction: null
+  owner_note: 'B does not respond to A but they are both caused by the rejection (ping me with your take on this as well) '
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: pending_owner_discussion
+  open_question: 'owner asks for a take: co_caused_with (both name Trump''s rejection)'
+  annotation: null
+R133:
+  a: 2026-09-25:white-house-tour
+  b: 2026-09-25:us-china-state-dinner
+  owner_label: same_visit_or_summit
+  owner_direction: null
+  owner_note: null
+  draft_label: same_visit_or_summit
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R134:
+  a: 2026-08-31:hk-retail-sales-july
+  b: 2026-08-31:hk-prime-retail-leasing
+  owner_label: SAME_DEVELOPMENT_SUSPECTED
+  owner_direction: null
+  owner_note: '"only" the topic? it''s literally HongKong retail, how are they not part of the same development? (let''s dig
+    on this, ping me for futher clarification or follow-up) '
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: identity_suspect
+  open_question: 'evidence: a government statistics release vs a leasing-market feature, same topic -> owner discussion'
+  annotation: null
+R135:
+  a: 2026-09-27-live:trump-asked-xi-weapons
+  b: 2026-09-27-live:summit-what-wasnt-said
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R136:
+  a: 2026-09-27-live:ethiopia-meskel-peace-calls
+  b: 2026-09-27-live:aj-afar-frontline-report
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R137:
+  a: 2026-10-03-live:s-1202
+  b: 2026-10-03-live:D18
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R138:
+  a: 2026-09-30-multilingual:D10
+  b: 2026-09-30-multilingual:sx-168
+  owner_label: SAME_DEVELOPMENT_SUSPECTED
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: identity_suspect
+  open_question: 'agree: the 29 Sep White House AI luncheon / America.gov, es-it vs en (cross-language split) -> identity
+    review'
+  annotation: null
+R139:
+  a: 2026-09-30-multilingual:sx-29
+  b: 2026-09-30-multilingual:sx-133
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R140:
+  a: 2026-10-03-live:s-1371
+  b: 2026-10-03-live:s-1942
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R141:
+  a: 2026-08-21:canadian-premier-attacks-trump
+  b: 2026-08-21:carney-crucial-test-analysis
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
+R142:
+  a: 2026-09-29-live:unga-durban-commemoration
+  b: 2026-09-29-live:unga-five-takeaways
+  owner_label: NO_RELATION
+  owner_direction: null
+  owner_note: null
+  draft_label: NO_RELATION
+  draft_direction: null
+  status: settled
+  open_question: null
+  annotation: null
