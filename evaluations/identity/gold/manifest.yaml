@@ -1,8 +1,7 @@
-revision: 3
-frozen_at: '2026-10-08T13:06:51+00:00'
-note: 'Revision 3 adds 74 owner-reviewed development cases (cross-language candidates V001-V060; owner-given verdicts G01-G14:
-  Phase 3 identity suspects, the D19 split, the RAF Fairford and Siberian plague regression pairs) in windows 2026-09-30-multilingual,
-  2026-10-03-live and 2026-10-05-live. Revision 2''s 189 cases are unchanged. Four additions carry a contract_conflict flag.'
+revision: 4
+frozen_at: '2026-10-08T13:28:20+00:00'
+note: 'Revision 4: owner corrections of four revision 3 additions (V004, V037, V057 -> DIFFERENT: commentary is a separate
+  Development; V014 -> SAME: one mass attack and its side effect, as C076). Revision 2''s 189 cases unchanged.'
 cases: 189
 labels: &id001
   DIFFERENT_DEVELOPMENT: 120
@@ -19,14 +18,9 @@ per_split: &id002
 additions:
   cases: 74
   labels:
-    SAME_DEVELOPMENT: 41
-    DIFFERENT_DEVELOPMENT: 33
-  contract_conflicts:
-  - V004
-  - V014
-  - V037
-  - V057
-changes_from_previous: []
+    SAME_DEVELOPMENT: 39
+    DIFFERENT_DEVELOPMENT: 35
+  contract_conflicts: []
 sha256:
   gold/identity-gold.yaml: cc98765b7506b9faa3b81913655978c23afc0d21202e8b69e85c1217ffa2cc58
   manifest.yaml: 5707bbf514319b24fe1621aad2955a73bc9796ab9b65cd4a357ea6a6870e0a25
@@ -35,12 +29,58 @@ sha256:
   review/owner-verdicts.yaml: e7af82ba0b636351b3ded41d98ba8456c9fa7e5f12374c621b1a2e6d58f833c7
   review/labeller-input.md: d343e987ae6a36d71f99204da12dd1adada6c2eb671a24b02ff52ce6a3d25411
   review/cases.json: bb227c1de8e684a2960d65245909ae4bb220c57d3bd2ad716bf00e6feff2fe8e
-  gold/identity-gold-rev3-additions.yaml: 1039d665d4722efa388a8e0f1a1bdeb48f1758079377358045483cb8919d202a
+  gold/identity-gold-rev3-additions.yaml: a92b66f2309162c1378a2b0164a34c11534a2924da3ab88944abc75616825d6b
   review-rev3/review-cases.json: fcf4e6f8e2c5906dcf25c93e0d08ba0afe93c0bfd6b262eecedf6b0ca8987104
-  review-rev3/owner-verdicts.yaml: 7c6c01bbe6d1b24dfa0f31d79f709cd161f822cb7fe391a3abf49545c2affdb5
+  review-rev3/owner-verdicts.yaml: 02e6320b0496697c8d7076eca61980d093e5f5d536901a68cb727777e8178919
   review-rev3/draft-labels.json: bd999456e4c8075f5e8c83b4e9d57b24fca8b625e9c93534bffc92465a6665ad
   review-rev3/labeller-input.md: 03f5e21e55cce8bb25cd692715d7c774da0af29407ae2263369fe08ca4956392
+changes_from_previous:
+- case: V004
+  from: SAME_DEVELOPMENT
+  to: DIFFERENT_DEVELOPMENT
+- case: V037
+  from: SAME_DEVELOPMENT
+  to: DIFFERENT_DEVELOPMENT
+- case: V057
+  from: SAME_DEVELOPMENT
+  to: DIFFERENT_DEVELOPMENT
+- case: V014
+  from: DIFFERENT_DEVELOPMENT
+  to: SAME_DEVELOPMENT
 previous_revisions:
+- revision: 3
+  frozen_at: '2026-10-08T13:06:51+00:00'
+  note: 'Revision 3 adds 74 owner-reviewed development cases (cross-language candidates V001-V060; owner-given verdicts G01-G14:
+    Phase 3 identity suspects, the D19 split, the RAF Fairford and Siberian plague regression pairs) in windows 2026-09-30-multilingual,
+    2026-10-03-live and 2026-10-05-live. Revision 2''s 189 cases are unchanged. Four additions carry a contract_conflict flag.'
+  cases: 189
+  labels: *id001
+  per_split: *id002
+  additions:
+    cases: 74
+    labels:
+      SAME_DEVELOPMENT: 41
+      DIFFERENT_DEVELOPMENT: 33
+    contract_conflicts:
+    - V004
+    - V014
+    - V037
+    - V057
+  changes_from_previous: []
+  sha256:
+    gold/identity-gold.yaml: cc98765b7506b9faa3b81913655978c23afc0d21202e8b69e85c1217ffa2cc58
+    manifest.yaml: 5707bbf514319b24fe1621aad2955a73bc9796ab9b65cd4a357ea6a6870e0a25
+    review/review-cases.json: 7fb653929096e7cf54dbce64b07240e405bd215ab1d0a72e83da8494059522d5
+    review/draft-labels.json: 400805a5934ddc11f34c999d6abda598b1b2afa22619adddf4d313fa1a282692
+    review/owner-verdicts.yaml: e7af82ba0b636351b3ded41d98ba8456c9fa7e5f12374c621b1a2e6d58f833c7
+    review/labeller-input.md: d343e987ae6a36d71f99204da12dd1adada6c2eb671a24b02ff52ce6a3d25411
+    review/cases.json: bb227c1de8e684a2960d65245909ae4bb220c57d3bd2ad716bf00e6feff2fe8e
+    gold/identity-gold-rev3-additions.yaml: 1039d665d4722efa388a8e0f1a1bdeb48f1758079377358045483cb8919d202a
+    review-rev3/review-cases.json: fcf4e6f8e2c5906dcf25c93e0d08ba0afe93c0bfd6b262eecedf6b0ca8987104
+    review-rev3/owner-verdicts.yaml: 7c6c01bbe6d1b24dfa0f31d79f709cd161f822cb7fe391a3abf49545c2affdb5
+    review-rev3/draft-labels.json: bd999456e4c8075f5e8c83b4e9d57b24fca8b625e9c93534bffc92465a6665ad
+    review-rev3/labeller-input.md: 03f5e21e55cce8bb25cd692715d7c774da0af29407ae2263369fe08ca4956392
+  git: ad5ef16
 - revision: 2
   frozen_at: '2026-10-01T19:28:20Z'
   note: 'Owner-reviewed identity gold: 189 cases, every verdict given by the owner in the blind review page (draft label hidden

@@ -87,7 +87,7 @@ def main() -> int:
         prev_rev = revisions[0]
         prev = yaml.safe_load(blob(prev_rev["git"], "gold/identity-gold.yaml"))
         changed = sorted(k for k in gold if prev[k]["label"] != gold[k]["label"])
-        recorded = sorted(c["case"] for c in m.get("changes_from_previous") or [])
+        recorded = sorted(c["case"] for c in m.get("changes_from_previous") or [] if c["case"] in gold)
         check(5, changed == recorded, f"changed {changed} != recorded {recorded}")
         for cid in gold:
             other = {k for k in gold[cid] if gold[cid][k] != prev[cid][k]} - {"label", "source"}
@@ -109,6 +109,15 @@ def main() -> int:
                   f"{cid} item not in its frozen window")
             check(7, e["note"] == owner3[cid].get("note") and e["label"] == owner3[cid]["verdict"],
                   f"{cid} label/note not verbatim")
+        if revisions and m["revision"] >= 4:     # addition labels changed only where recorded
+            try:
+                prev_adds = yaml.safe_load(blob(revisions[0]["git"], "gold/identity-gold-rev3-additions.yaml"))
+            except subprocess.CalledProcessError:
+                prev_adds = None
+            if prev_adds:
+                changed_a = sorted(k for k in adds if prev_adds[k]["label"] != adds[k]["label"])
+                recorded_a = sorted(c["case"] for c in m.get("changes_from_previous") or [] if c["case"] in adds)
+                check(7, changed_a == recorded_a, f"addition changes {changed_a} != recorded {recorded_a}")
         ac = Counter(e["label"] for e in adds.values())
         exp_a = [int(x) for x in arg("--expect-additions", "41,33,0").split(",")]
         got_a = [ac["SAME_DEVELOPMENT"], ac["DIFFERENT_DEVELOPMENT"], ac["AMBIGUOUS"]]

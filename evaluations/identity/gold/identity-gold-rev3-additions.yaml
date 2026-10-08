@@ -1,4 +1,4 @@
-# Development-identity gold revision 3: additions (owner-reviewed 2026-10-08). Do not edit.
+# Development-identity gold additions (revision 3 cases; labels as of revision 4). Do not edit.
 G01:
   a: sx-100
   b: sx-170
@@ -250,17 +250,16 @@ V004:
   a: s-2633
   b: s-2976
   boundary_reason: commentary_or_analysis
-  contract_conflict: commentary pieces on the Oct 7 anniversary labelled SAME; the contract and gold rev 1-2 keep commentary
-    a separate Development (e.g. C094), and V036/V042/V047 here keep it DIFFERENT
+  contract_conflict: null
   draft_label: DIFFERENT_DEVELOPMENT
-  label: SAME_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
   languages:
   - en
   - es
   note: same occurrence (3 year anniversary of Oct 7th) different commentaries. Essentially the same development. B just has
     more value because it carries Bibi's declarations.
   owner_confidence: null
-  source: owner (corrected draft)
+  source: owner corrected (2026-10-08)
   split: development
   window: 2026-10-05-live
 V005:
@@ -402,16 +401,15 @@ V014:
   a: sx-47
   b: sx-277
   boundary_reason: null
-  contract_conflict: Kyiv-region strike vs drone crash in Moldova during the same mass attack labelled DIFFERENT; gold rev
-    2 C076 labelled a Moldova drone crash during the overnight attack SAME
+  contract_conflict: null
   draft_label: DIFFERENT_DEVELOPMENT
-  label: DIFFERENT_DEVELOPMENT
+  label: SAME_DEVELOPMENT
   languages:
   - en
   - it
   note: different developments, same attack wave
   owner_confidence: null
-  source: owner (agrees with draft)
+  source: owner corrected (2026-10-08)
   split: development
   window: 2026-09-30-multilingual
 V015:
@@ -748,15 +746,15 @@ V037:
   a: s-2618
   b: s-2928
   boundary_reason: commentary_or_analysis
-  contract_conflict: an explainer on the plague case labelled SAME (commentary as same Development)
+  contract_conflict: null
   draft_label: AMBIGUOUS
-  label: SAME_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
   languages:
   - en
   - es
   note: they are both commentary of the same occurrence, should be under "same" because it's essentially the same development
   owner_confidence: medium
-  source: owner (corrected draft)
+  source: owner corrected (2026-10-08)
   split: development
   window: 2026-10-05-live
 V038:
@@ -1048,16 +1046,16 @@ V057:
   a: s-2633
   b: s-2606
   boundary_reason: null
-  contract_conflict: a 3-year timeline piece labelled SAME (commentary as same Development)
+  contract_conflict: null
   draft_label: DIFFERENT_DEVELOPMENT
-  label: SAME_DEVELOPMENT
+  label: DIFFERENT_DEVELOPMENT
   languages:
   - es
   - it
   note: The thread is only a side piece on the main narrative. Treat as same development giving priority to B, it has a fuller
     timeline
   owner_confidence: null
-  source: owner (corrected draft)
+  source: owner corrected (2026-10-08)
   split: development
   window: 2026-10-05-live
 V058:
