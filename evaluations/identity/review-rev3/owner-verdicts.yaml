@@ -1,444 +1,448 @@
+# Owner verdicts for the Development-identity review (see scripts/verdicts.py for the fields).
+# Draft labels live in draft-labels.json and are never changed. Nothing is frozen until review ends.
 G01:
-  boundary_reason: null
+  verdict: SAME_DEVELOPMENT
   confidence: high
+  boundary_reason: null
   note: 'owner, 2026-10-07: R012: one matter, BBC / France 24'
   reviewed_at: '2026-10-07T00:00:00Z'
-  verdict: SAME_DEVELOPMENT
 G02:
-  boundary_reason: null
+  verdict: SAME_DEVELOPMENT
   confidence: high
+  boundary_reason: null
   note: 'owner, 2026-10-07: R138: White House AI luncheon, it / en'
   reviewed_at: '2026-10-07T00:00:00Z'
-  verdict: SAME_DEVELOPMENT
 G03:
-  boundary_reason: null
+  verdict: SAME_DEVELOPMENT
   confidence: high
+  boundary_reason: null
   note: 'owner, 2026-10-07: R138: America.gov launch at the luncheon, es / en'
   reviewed_at: '2026-10-07T00:00:00Z'
-  verdict: SAME_DEVELOPMENT
 G04:
-  boundary_reason: null
+  verdict: SAME_DEVELOPMENT
   confidence: high
+  boundary_reason: null
   note: 'owner, 2026-10-07: T008: Spain''s eviction measures, same day'
   reviewed_at: '2026-10-07T00:00:00Z'
-  verdict: SAME_DEVELOPMENT
 G05:
-  boundary_reason: null
+  verdict: SAME_DEVELOPMENT
   confidence: high
+  boundary_reason: null
   note: 'owner, 2026-10-07: T034: evicted woman returns home'
   reviewed_at: '2026-10-07T00:00:00Z'
-  verdict: SAME_DEVELOPMENT
 G06:
-  boundary_reason: null
+  verdict: SAME_DEVELOPMENT
   confidence: high
+  boundary_reason: null
   note: 'owner, 2026-10-07: T041: Tennessee halts executions (Christa Pike)'
   reviewed_at: '2026-10-07T00:00:00Z'
-  verdict: SAME_DEVELOPMENT
 G07:
-  boundary_reason: null
+  verdict: DIFFERENT_DEVELOPMENT
   confidence: high
+  boundary_reason: null
   note: 'owner, 2026-10-07: T025: two days of the protest wave'
   reviewed_at: '2026-10-07T00:00:00Z'
-  verdict: DIFFERENT_DEVELOPMENT
 G08:
-  boundary_reason: null
+  verdict: SAME_DEVELOPMENT
   confidence: high
+  boundary_reason: null
   note: 'owner, 2026-10-07: T033: rial record low (GDELT)'
   reviewed_at: '2026-10-07T00:00:00Z'
-  verdict: SAME_DEVELOPMENT
 G09:
-  boundary_reason: null
+  verdict: SAME_DEVELOPMENT
   confidence: high
+  boundary_reason: null
   note: 'owner, 2026-10-07: T039: rial record low (GDELT)'
   reviewed_at: '2026-10-07T00:00:00Z'
-  verdict: SAME_DEVELOPMENT
 G10:
-  boundary_reason: null
+  verdict: DIFFERENT_DEVELOPMENT
   confidence: high
+  boundary_reason: null
   note: 'owner, 2026-10-07: D19 split: rial low vs US response'
   reviewed_at: '2026-10-07T00:00:00Z'
-  verdict: DIFFERENT_DEVELOPMENT
 G11:
-  boundary_reason: null
+  verdict: DIFFERENT_DEVELOPMENT
   confidence: high
+  boundary_reason: null
   note: 'owner, 2026-10-07: D19 split: rial low vs US response'
   reviewed_at: '2026-10-07T00:00:00Z'
-  verdict: DIFFERENT_DEVELOPMENT
 G12:
-  boundary_reason: null
+  verdict: SAME_DEVELOPMENT
   confidence: high
+  boundary_reason: null
   note: 'owner, 2026-10-07: regression: RAF Fairford bombers, en / es'
   reviewed_at: '2026-10-07T00:00:00Z'
-  verdict: SAME_DEVELOPMENT
 G13:
-  boundary_reason: null
+  verdict: SAME_DEVELOPMENT
   confidence: high
+  boundary_reason: null
   note: 'owner, 2026-10-07: regression: RAF Fairford bombers, en / es'
   reviewed_at: '2026-10-07T00:00:00Z'
-  verdict: SAME_DEVELOPMENT
 G14:
-  boundary_reason: null
+  verdict: SAME_DEVELOPMENT
   confidence: high
+  boundary_reason: null
   note: 'owner, 2026-10-07: regression: Siberian plague case, en / es'
   reviewed_at: '2026-10-07T00:00:00Z'
-  verdict: SAME_DEVELOPMENT
 V001:
-  boundary_reason: null
+  verdict: SAME_DEVELOPMENT
   confidence: null
+  boundary_reason: null
   note: null
-  reviewed_at: null
-  verdict: null
+  reviewed_at: '2026-10-08T12:51:43Z'
 V002:
-  boundary_reason: null
+  verdict: DIFFERENT_DEVELOPMENT
   confidence: null
+  boundary_reason: null
   note: null
-  reviewed_at: null
-  verdict: null
+  reviewed_at: '2026-10-08T12:51:58Z'
 V003:
-  boundary_reason: null
+  verdict: SAME_DEVELOPMENT
   confidence: null
+  boundary_reason: null
   note: null
-  reviewed_at: null
-  verdict: null
+  reviewed_at: '2026-10-08T12:52:03Z'
 V004:
-  boundary_reason: null
+  verdict: SAME_DEVELOPMENT
   confidence: null
-  note: null
-  reviewed_at: null
-  verdict: null
+  boundary_reason: commentary_or_analysis
+  note: same occurrence (3 year anniversary of Oct 7th) different commentaries. Essentially the same development. B just has
+    more value because it carries Bibi's declarations.
+  reviewed_at: '2026-10-08T12:07:19Z'
 V005:
-  boundary_reason: null
-  confidence: null
+  verdict: SAME_DEVELOPMENT
+  confidence: high
+  boundary_reason: same_occurrence
   note: null
-  reviewed_at: null
-  verdict: null
+  reviewed_at: '2026-10-08T12:07:39Z'
 V006:
-  boundary_reason: null
+  verdict: DIFFERENT_DEVELOPMENT
   confidence: null
+  boundary_reason: null
   note: null
-  reviewed_at: null
-  verdict: null
+  reviewed_at: '2026-10-08T12:07:53Z'
 V007:
-  boundary_reason: null
-  confidence: null
+  verdict: SAME_DEVELOPMENT
+  confidence: high
+  boundary_reason: same_occurrence
   note: null
-  reviewed_at: null
-  verdict: null
+  reviewed_at: '2026-10-08T11:58:23Z'
 V008:
-  boundary_reason: null
+  verdict: DIFFERENT_DEVELOPMENT
   confidence: null
+  boundary_reason: null
   note: null
-  reviewed_at: null
-  verdict: null
+  reviewed_at: '2026-10-08T12:19:16Z'
 V009:
-  boundary_reason: null
+  verdict: SAME_DEVELOPMENT
   confidence: null
+  boundary_reason: null
   note: null
-  reviewed_at: null
-  verdict: null
+  reviewed_at: '2026-10-08T12:53:23Z'
 V010:
-  boundary_reason: null
+  verdict: SAME_DEVELOPMENT
   confidence: null
+  boundary_reason: null
   note: null
-  reviewed_at: null
-  verdict: null
+  reviewed_at: '2026-10-08T12:53:38Z'
 V011:
-  boundary_reason: null
+  verdict: SAME_DEVELOPMENT
   confidence: null
+  boundary_reason: null
   note: null
-  reviewed_at: null
-  verdict: null
+  reviewed_at: '2026-10-08T12:19:32Z'
 V012:
-  boundary_reason: null
+  verdict: DIFFERENT_DEVELOPMENT
   confidence: null
+  boundary_reason: null
   note: null
-  reviewed_at: null
-  verdict: null
+  reviewed_at: '2026-10-08T12:53:49Z'
 V013:
-  boundary_reason: null
+  verdict: DIFFERENT_DEVELOPMENT
   confidence: null
+  boundary_reason: null
   note: null
-  reviewed_at: null
-  verdict: null
+  reviewed_at: '2026-10-08T12:27:20Z'
 V014:
-  boundary_reason: null
+  verdict: DIFFERENT_DEVELOPMENT
   confidence: null
-  note: null
-  reviewed_at: null
-  verdict: null
+  boundary_reason: null
+  note: different developments, same attack wave
+  reviewed_at: '2026-10-08T12:27:56Z'
 V015:
-  boundary_reason: null
+  verdict: DIFFERENT_DEVELOPMENT
   confidence: null
+  boundary_reason: null
   note: null
-  reviewed_at: null
-  verdict: null
+  reviewed_at: '2026-10-08T12:54:01Z'
 V016:
-  boundary_reason: null
+  verdict: DIFFERENT_DEVELOPMENT
   confidence: null
+  boundary_reason: null
   note: null
-  reviewed_at: null
-  verdict: null
+  reviewed_at: '2026-10-08T12:28:06Z'
 V017:
-  boundary_reason: null
+  verdict: DIFFERENT_DEVELOPMENT
   confidence: null
+  boundary_reason: null
   note: null
-  reviewed_at: null
-  verdict: null
+  reviewed_at: '2026-10-08T12:28:22Z'
 V018:
-  boundary_reason: null
+  verdict: DIFFERENT_DEVELOPMENT
   confidence: null
+  boundary_reason: null
   note: null
-  reviewed_at: null
-  verdict: null
+  reviewed_at: '2026-10-08T12:28:35Z'
 V019:
-  boundary_reason: null
+  verdict: SAME_DEVELOPMENT
   confidence: null
+  boundary_reason: null
   note: null
-  reviewed_at: null
-  verdict: null
+  reviewed_at: '2026-10-08T12:54:06Z'
 V020:
-  boundary_reason: null
+  verdict: SAME_DEVELOPMENT
   confidence: null
+  boundary_reason: null
   note: null
-  reviewed_at: null
-  verdict: null
+  reviewed_at: '2026-10-08T12:54:12Z'
 V021:
-  boundary_reason: null
+  verdict: DIFFERENT_DEVELOPMENT
   confidence: null
+  boundary_reason: null
   note: null
-  reviewed_at: null
-  verdict: null
+  reviewed_at: '2026-10-08T12:54:23Z'
 V022:
-  boundary_reason: null
+  verdict: DIFFERENT_DEVELOPMENT
   confidence: null
+  boundary_reason: null
   note: null
-  reviewed_at: null
-  verdict: null
+  reviewed_at: '2026-10-08T12:28:41Z'
 V023:
-  boundary_reason: null
+  verdict: DIFFERENT_DEVELOPMENT
   confidence: null
+  boundary_reason: null
   note: null
-  reviewed_at: null
-  verdict: null
+  reviewed_at: '2026-10-08T12:28:53Z'
 V024:
-  boundary_reason: null
+  verdict: SAME_DEVELOPMENT
   confidence: null
+  boundary_reason: null
   note: null
-  reviewed_at: null
-  verdict: null
+  reviewed_at: '2026-10-08T12:55:28Z'
 V025:
-  boundary_reason: null
+  verdict: DIFFERENT_DEVELOPMENT
   confidence: null
+  boundary_reason: null
   note: null
-  reviewed_at: null
-  verdict: null
+  reviewed_at: '2026-10-08T13:00:37Z'
 V026:
-  boundary_reason: null
+  verdict: SAME_DEVELOPMENT
   confidence: null
+  boundary_reason: null
   note: null
-  reviewed_at: null
-  verdict: null
+  reviewed_at: '2026-10-08T13:00:46Z'
 V027:
-  boundary_reason: null
+  verdict: DIFFERENT_DEVELOPMENT
   confidence: null
+  boundary_reason: null
   note: null
-  reviewed_at: null
-  verdict: null
+  reviewed_at: '2026-10-08T12:29:10Z'
 V028:
-  boundary_reason: null
+  verdict: SAME_DEVELOPMENT
   confidence: null
+  boundary_reason: null
   note: null
-  reviewed_at: null
-  verdict: null
+  reviewed_at: '2026-10-08T13:02:02Z'
 V029:
-  boundary_reason: null
+  verdict: DIFFERENT_DEVELOPMENT
   confidence: null
-  note: null
-  reviewed_at: null
-  verdict: null
+  boundary_reason: null
+  note: cosine should definitely surface. different news but should be bundled together
+  reviewed_at: '2026-10-08T12:37:21Z'
 V030:
-  boundary_reason: null
+  verdict: DIFFERENT_DEVELOPMENT
   confidence: null
+  boundary_reason: null
   note: null
-  reviewed_at: null
-  verdict: null
+  reviewed_at: '2026-10-08T12:39:12Z'
 V031:
-  boundary_reason: null
+  verdict: DIFFERENT_DEVELOPMENT
   confidence: null
+  boundary_reason: null
   note: null
-  reviewed_at: null
-  verdict: null
+  reviewed_at: '2026-10-08T12:42:27Z'
 V032:
-  boundary_reason: null
+  verdict: SAME_DEVELOPMENT
   confidence: null
+  boundary_reason: null
   note: null
-  reviewed_at: null
-  verdict: null
+  reviewed_at: '2026-10-08T13:02:07Z'
 V033:
-  boundary_reason: null
+  verdict: SAME_DEVELOPMENT
   confidence: null
+  boundary_reason: null
   note: null
-  reviewed_at: null
-  verdict: null
+  reviewed_at: '2026-10-08T13:02:14Z'
 V034:
-  boundary_reason: null
+  verdict: SAME_DEVELOPMENT
   confidence: null
+  boundary_reason: null
   note: null
-  reviewed_at: null
-  verdict: null
+  reviewed_at: '2026-10-08T12:42:58Z'
 V035:
-  boundary_reason: null
+  verdict: DIFFERENT_DEVELOPMENT
   confidence: null
+  boundary_reason: null
   note: null
-  reviewed_at: null
-  verdict: null
+  reviewed_at: '2026-10-08T13:02:37Z'
 V036:
-  boundary_reason: null
+  verdict: DIFFERENT_DEVELOPMENT
   confidence: null
-  note: null
-  reviewed_at: null
-  verdict: null
+  boundary_reason: null
+  note: then we should say B explains A, or commentary of A
+  reviewed_at: '2026-10-08T12:43:28Z'
 V037:
-  boundary_reason: null
-  confidence: null
-  note: null
-  reviewed_at: null
-  verdict: null
+  verdict: SAME_DEVELOPMENT
+  confidence: medium
+  boundary_reason: commentary_or_analysis
+  note: they are both commentary of the same occurrence, should be under "same" because it's essentially the same development
+  reviewed_at: '2026-10-08T12:05:56Z'
 V038:
-  boundary_reason: null
+  verdict: DIFFERENT_DEVELOPMENT
   confidence: null
+  boundary_reason: null
   note: null
-  reviewed_at: null
-  verdict: null
+  reviewed_at: '2026-10-08T13:02:46Z'
 V039:
-  boundary_reason: null
+  verdict: SAME_DEVELOPMENT
   confidence: null
+  boundary_reason: null
   note: null
-  reviewed_at: null
-  verdict: null
+  reviewed_at: '2026-10-08T13:02:54Z'
 V040:
-  boundary_reason: null
+  verdict: SAME_DEVELOPMENT
   confidence: null
+  boundary_reason: null
   note: null
-  reviewed_at: null
-  verdict: null
+  reviewed_at: '2026-10-08T13:02:59Z'
 V041:
-  boundary_reason: null
+  verdict: DIFFERENT_DEVELOPMENT
   confidence: null
+  boundary_reason: null
   note: null
-  reviewed_at: null
-  verdict: null
+  reviewed_at: '2026-10-08T12:43:34Z'
 V042:
-  boundary_reason: null
+  verdict: DIFFERENT_DEVELOPMENT
   confidence: null
-  note: null
-  reviewed_at: null
-  verdict: null
+  boundary_reason: null
+  note: A looks like commentary on B
+  reviewed_at: '2026-10-08T12:44:11Z'
 V043:
-  boundary_reason: null
+  verdict: SAME_DEVELOPMENT
   confidence: null
+  boundary_reason: null
   note: null
-  reviewed_at: null
-  verdict: null
+  reviewed_at: '2026-10-08T12:44:16Z'
 V044:
-  boundary_reason: null
+  verdict: DIFFERENT_DEVELOPMENT
   confidence: null
+  boundary_reason: null
   note: null
-  reviewed_at: null
-  verdict: null
+  reviewed_at: '2026-10-08T13:03:04Z'
 V045:
-  boundary_reason: null
+  verdict: SAME_DEVELOPMENT
   confidence: null
+  boundary_reason: null
   note: null
-  reviewed_at: null
-  verdict: null
+  reviewed_at: '2026-10-08T13:03:11Z'
 V046:
-  boundary_reason: null
+  verdict: SAME_DEVELOPMENT
   confidence: null
+  boundary_reason: null
   note: null
-  reviewed_at: null
-  verdict: null
+  reviewed_at: '2026-10-08T12:44:21Z'
 V047:
-  boundary_reason: null
+  verdict: DIFFERENT_DEVELOPMENT
   confidence: null
-  note: null
-  reviewed_at: null
-  verdict: null
+  boundary_reason: null
+  note: same, B is analysis piece
+  reviewed_at: '2026-10-08T12:44:51Z'
 V048:
-  boundary_reason: null
+  verdict: SAME_DEVELOPMENT
   confidence: null
+  boundary_reason: null
   note: null
-  reviewed_at: null
-  verdict: null
+  reviewed_at: '2026-10-08T13:03:26Z'
 V049:
-  boundary_reason: null
+  verdict: DIFFERENT_DEVELOPMENT
   confidence: null
+  boundary_reason: null
   note: null
-  reviewed_at: null
-  verdict: null
+  reviewed_at: '2026-10-08T12:49:19Z'
 V050:
-  boundary_reason: null
+  verdict: DIFFERENT_DEVELOPMENT
   confidence: null
+  boundary_reason: null
   note: null
-  reviewed_at: null
-  verdict: null
+  reviewed_at: '2026-10-08T12:49:32Z'
 V051:
-  boundary_reason: null
+  verdict: SAME_DEVELOPMENT
   confidence: null
+  boundary_reason: null
   note: null
-  reviewed_at: null
-  verdict: null
+  reviewed_at: '2026-10-08T12:49:39Z'
 V052:
-  boundary_reason: null
+  verdict: DIFFERENT_DEVELOPMENT
   confidence: null
+  boundary_reason: null
   note: null
-  reviewed_at: null
-  verdict: null
+  reviewed_at: '2026-10-08T13:03:41Z'
 V053:
-  boundary_reason: null
+  verdict: DIFFERENT_DEVELOPMENT
   confidence: null
+  boundary_reason: null
   note: null
-  reviewed_at: null
-  verdict: null
+  reviewed_at: '2026-10-08T13:04:02Z'
 V054:
-  boundary_reason: null
+  verdict: SAME_DEVELOPMENT
   confidence: null
+  boundary_reason: null
   note: null
-  reviewed_at: null
-  verdict: null
+  reviewed_at: '2026-10-08T13:04:14Z'
 V055:
-  boundary_reason: null
+  verdict: DIFFERENT_DEVELOPMENT
   confidence: null
-  note: null
-  reviewed_at: null
-  verdict: null
+  boundary_reason: null
+  note: both tied to third event (incurring election)
+  reviewed_at: '2026-10-08T12:50:16Z'
 V056:
-  boundary_reason: null
+  verdict: SAME_DEVELOPMENT
   confidence: null
+  boundary_reason: null
   note: null
-  reviewed_at: null
-  verdict: null
+  reviewed_at: '2026-10-08T13:04:23Z'
 V057:
-  boundary_reason: null
+  verdict: SAME_DEVELOPMENT
   confidence: null
-  note: null
-  reviewed_at: null
-  verdict: null
+  boundary_reason: null
+  note: The thread is only a side piece on the main narrative. Treat as same development giving priority to B, it has a fuller
+    timeline
+  reviewed_at: '2026-10-08T12:51:35Z'
 V058:
-  boundary_reason: null
+  verdict: SAME_DEVELOPMENT
   confidence: null
+  boundary_reason: null
   note: null
-  reviewed_at: null
-  verdict: null
+  reviewed_at: '2026-10-08T13:04:30Z'
 V059:
-  boundary_reason: null
+  verdict: SAME_DEVELOPMENT
   confidence: null
+  boundary_reason: null
   note: null
-  reviewed_at: null
-  verdict: null
+  reviewed_at: '2026-10-08T13:04:36Z'
 V060:
-  boundary_reason: null
+  verdict: SAME_DEVELOPMENT
   confidence: null
+  boundary_reason: null
   note: null
-  reviewed_at: null
-  verdict: null
+  reviewed_at: '2026-10-08T13:04:43Z'

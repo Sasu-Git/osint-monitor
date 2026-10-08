@@ -8,8 +8,11 @@
 5 changes: the labels that differ from the previous revision are exactly the recorded changes; nothing else in
   any case changed except the label and its source; owner notes are verbatim from owner-verdicts.yaml
 6 totals: the expected counts (``--expect SAME,DIFFERENT,AMBIGUOUS``) and the case count
+7 revision 3 additions (when present): integrity as in 3, development split only, notes verbatim from
+  review-rev3/owner-verdicts.yaml, ids disjoint from the main gold, counts (``--expect-additions S,D,A``)
 
 Usage: python evaluations/identity/scripts/gold_check.py [--expect 68,120,1] [--cases 189] [--holdout 30]
+       [--expect-additions 41,33,0]
 """
 import hashlib
 import json
@@ -93,6 +96,25 @@ def main() -> int:
     for cid, e in gold.items():
         check(5, e["note"] == owner[cid]["note"], f"{cid} note not verbatim")
 
+    add_path = ROOT / "gold" / "identity-gold-rev3-additions.yaml"
+    if m["revision"] >= 3:
+        adds = yaml.safe_load(add_path.read_text(encoding="utf-8"))
+        owner3 = yaml.safe_load((ROOT / "review-rev3" / "owner-verdicts.yaml").read_text(encoding="utf-8"))
+        for cid, e in adds.items():
+            check(7, cid not in gold, f"{cid} also in the main gold")
+            check(7, e["label"] in V.VERDICTS and e["a"] != e["b"], f"{cid} label/items")
+            check(7, e["split"] == "development" and by_window.get(e["window"], {}).get("split") == "development",
+                  f"{cid} not a development case")
+            check(7, e["a"] in items.get(e["window"], ()) and e["b"] in items.get(e["window"], ()),
+                  f"{cid} item not in its frozen window")
+            check(7, e["note"] == owner3[cid].get("note") and e["label"] == owner3[cid]["verdict"],
+                  f"{cid} label/note not verbatim")
+        ac = Counter(e["label"] for e in adds.values())
+        exp_a = [int(x) for x in arg("--expect-additions", "41,33,0").split(",")]
+        got_a = [ac["SAME_DEVELOPMENT"], ac["DIFFERENT_DEVELOPMENT"], ac["AMBIGUOUS"]]
+        check(7, got_a == exp_a, f"additions SAME/DIFFERENT/AMBIGUOUS {got_a} != expected {exp_a}")
+        print(f"revision 3 additions: {len(adds)} cases, SAME {got_a[0]}, DIFFERENT {got_a[1]}, AMBIGUOUS {got_a[2]}")
+
     counts = Counter(e["label"] for e in gold.values())
     exp = [int(x) for x in arg("--expect", "68,120,1").split(",")]
     got = [counts["SAME_DEVELOPMENT"], counts["DIFFERENT_DEVELOPMENT"], counts["AMBIGUOUS"]]
@@ -103,7 +125,7 @@ def main() -> int:
           f"holdout {len(holdout)}; history {[r['revision'] for r in revisions]}")
     for f in failures:
         print("FAIL", f)
-    print("gold check:", "FAILED" if failures else "passed (checks 1-6)")
+    print("gold check:", "FAILED" if failures else f"passed (checks 1-{7 if m['revision'] >= 3 else 6})")
     return 1 if failures else 0
 
 

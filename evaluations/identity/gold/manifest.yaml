@@ -1,28 +1,14 @@
-revision: 2
-frozen_at: '2026-10-01T19:28:20Z'
-note: 'Owner-reviewed identity gold: 189 cases, every verdict given by the owner in the blind review page (draft
-  label hidden until the verdict). Notes are the owner''s, verbatim. Revision 2: Owner confirmation (2026-10-01)
-  of four cases whose notes described the same Development: C034, C064, C076, C103 -> SAME_DEVELOPMENT. Supersedes
-  revision 1 for Phase 2 evaluation.'
-changes_from_previous:
-- case: C034
-  from: DIFFERENT_DEVELOPMENT
-  to: SAME_DEVELOPMENT
-- case: C064
-  from: DIFFERENT_DEVELOPMENT
-  to: SAME_DEVELOPMENT
-- case: C076
-  from: DIFFERENT_DEVELOPMENT
-  to: SAME_DEVELOPMENT
-- case: C103
-  from: DIFFERENT_DEVELOPMENT
-  to: SAME_DEVELOPMENT
+revision: 3
+frozen_at: '2026-10-08T13:06:51+00:00'
+note: 'Revision 3 adds 74 owner-reviewed development cases (cross-language candidates V001-V060; owner-given verdicts G01-G14:
+  Phase 3 identity suspects, the D19 split, the RAF Fairford and Siberian plague regression pairs) in windows 2026-09-30-multilingual,
+  2026-10-03-live and 2026-10-05-live. Revision 2''s 189 cases are unchanged. Four additions carry a contract_conflict flag.'
 cases: 189
-labels:
+labels: &id001
   DIFFERENT_DEVELOPMENT: 120
   SAME_DEVELOPMENT: 68
   AMBIGUOUS: 1
-per_split:
+per_split: &id002
   development:
     DIFFERENT_DEVELOPMENT: 100
     SAME_DEVELOPMENT: 58
@@ -30,20 +16,53 @@ per_split:
   holdout:
     SAME_DEVELOPMENT: 10
     DIFFERENT_DEVELOPMENT: 20
-corrected_drafts: 13
+additions:
+  cases: 74
+  labels:
+    SAME_DEVELOPMENT: 41
+    DIFFERENT_DEVELOPMENT: 33
+  contract_conflicts:
+  - V004
+  - V014
+  - V037
+  - V057
+changes_from_previous: []
 sha256:
   gold/identity-gold.yaml: cc98765b7506b9faa3b81913655978c23afc0d21202e8b69e85c1217ffa2cc58
-  manifest.yaml: 9be66ed8b7aab51c2e64b6f17763d59b919345509a093b6dd1af61c007a6a401
+  manifest.yaml: 5707bbf514319b24fe1621aad2955a73bc9796ab9b65cd4a357ea6a6870e0a25
   review/review-cases.json: 7fb653929096e7cf54dbce64b07240e405bd215ab1d0a72e83da8494059522d5
   review/draft-labels.json: 400805a5934ddc11f34c999d6abda598b1b2afa22619adddf4d313fa1a282692
   review/owner-verdicts.yaml: e7af82ba0b636351b3ded41d98ba8456c9fa7e5f12374c621b1a2e6d58f833c7
   review/labeller-input.md: d343e987ae6a36d71f99204da12dd1adada6c2eb671a24b02ff52ce6a3d25411
   review/cases.json: bb227c1de8e684a2960d65245909ae4bb220c57d3bd2ad716bf00e6feff2fe8e
+  gold/identity-gold-rev3-additions.yaml: 1039d665d4722efa388a8e0f1a1bdeb48f1758079377358045483cb8919d202a
+  review-rev3/review-cases.json: fcf4e6f8e2c5906dcf25c93e0d08ba0afe93c0bfd6b262eecedf6b0ca8987104
+  review-rev3/owner-verdicts.yaml: 7c6c01bbe6d1b24dfa0f31d79f709cd161f822cb7fe391a3abf49545c2affdb5
+  review-rev3/draft-labels.json: bd999456e4c8075f5e8c83b4e9d57b24fca8b625e9c93534bffc92465a6665ad
+  review-rev3/labeller-input.md: 03f5e21e55cce8bb25cd692715d7c774da0af29407ae2263369fe08ca4956392
 previous_revisions:
+- revision: 2
+  frozen_at: '2026-10-01T19:28:20Z'
+  note: 'Owner-reviewed identity gold: 189 cases, every verdict given by the owner in the blind review page (draft label hidden
+    until the verdict). Notes are the owner''s, verbatim. Revision 2: Owner confirmation (2026-10-01) of four cases whose
+    notes described the same Development: C034, C064, C076, C103 -> SAME_DEVELOPMENT. Supersedes revision 1 for Phase 2 evaluation.'
+  cases: 189
+  labels: *id001
+  per_split: *id002
+  corrected_drafts: 13
+  sha256:
+    gold/identity-gold.yaml: cc98765b7506b9faa3b81913655978c23afc0d21202e8b69e85c1217ffa2cc58
+    manifest.yaml: 9be66ed8b7aab51c2e64b6f17763d59b919345509a093b6dd1af61c007a6a401
+    review/review-cases.json: 7fb653929096e7cf54dbce64b07240e405bd215ab1d0a72e83da8494059522d5
+    review/draft-labels.json: 400805a5934ddc11f34c999d6abda598b1b2afa22619adddf4d313fa1a282692
+    review/owner-verdicts.yaml: e7af82ba0b636351b3ded41d98ba8456c9fa7e5f12374c621b1a2e6d58f833c7
+    review/labeller-input.md: d343e987ae6a36d71f99204da12dd1adada6c2eb671a24b02ff52ce6a3d25411
+    review/cases.json: bb227c1de8e684a2960d65245909ae4bb220c57d3bd2ad716bf00e6feff2fe8e
+  git: e9f7b6b
 - revision: 1
   frozen_at: '2026-10-01T19:21:11Z'
-  note: 'Owner-reviewed identity gold: 189 cases, every verdict given by the owner in the blind review page (draft
-    label hidden until the verdict). Notes are the owner''s, verbatim.'
+  note: 'Owner-reviewed identity gold: 189 cases, every verdict given by the owner in the blind review page (draft label hidden
+    until the verdict). Notes are the owner''s, verbatim.'
   cases: 189
   labels:
     DIFFERENT_DEVELOPMENT: 124
