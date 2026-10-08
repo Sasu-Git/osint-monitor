@@ -314,6 +314,15 @@ class LexicalConfig(BaseModel):
     guard: LexicalGuardConfig = Field(default_factory=LexicalGuardConfig)
 
 
+class CrossLanguageConfig(BaseModel):
+    """Cross-language Development links (processors/cross_language.py). The multilingual model only proposes
+    candidates; explicit anchors decide (owner decision 2026-10-07). Off until benchmarked on identity gold rev 3."""
+    enabled: bool = False
+    model: str = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+    min_cosine: float = 0.60
+    max_hours: float = 24
+
+
 class EventGroupingConfig(BaseModel):
     """Narrative vs structured item grouping (config/event_grouping.yaml)."""
     structured: StructuredSourcesConfig = Field(default_factory=StructuredSourcesConfig)
@@ -322,6 +331,7 @@ class EventGroupingConfig(BaseModel):
     seismic: SeismicFusionConfig = Field(default_factory=SeismicFusionConfig)
     development_segmentation: DevelopmentSegmentationConfig = Field(default_factory=DevelopmentSegmentationConfig)
     lexical: LexicalConfig = Field(default_factory=LexicalConfig)
+    cross_language: CrossLanguageConfig = Field(default_factory=CrossLanguageConfig)
 
 
 class SituationsConfig(BaseModel):

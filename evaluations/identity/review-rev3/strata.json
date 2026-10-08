@@ -1,0 +1,245 @@
+{
+ "model_revision": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+ "strata": {
+  "V001": {
+   "cosine": 0.781,
+   "guard_accepted": false
+  },
+  "V002": {
+   "cosine": 0.592,
+   "guard_accepted": true
+  },
+  "V003": {
+   "cosine": 0.814,
+   "guard_accepted": false
+  },
+  "V004": {
+   "cosine": 0.585,
+   "guard_accepted": true
+  },
+  "V005": {
+   "cosine": 0.673,
+   "guard_accepted": false
+  },
+  "V006": {
+   "cosine": 0.802,
+   "guard_accepted": true
+  },
+  "V007": {
+   "cosine": 0.789,
+   "guard_accepted": true
+  },
+  "V008": {
+   "cosine": 0.658,
+   "guard_accepted": false
+  },
+  "V009": {
+   "cosine": 0.847,
+   "guard_accepted": true
+  },
+  "V010": {
+   "cosine": 0.671,
+   "guard_accepted": false
+  },
+  "V011": {
+   "cosine": 0.601,
+   "guard_accepted": false
+  },
+  "V012": {
+   "cosine": 0.584,
+   "guard_accepted": false
+  },
+  "V013": {
+   "cosine": 0.706,
+   "guard_accepted": true
+  },
+  "V014": {
+   "cosine": 0.575,
+   "guard_accepted": false
+  },
+  "V015": {
+   "cosine": 0.588,
+   "guard_accepted": true
+  },
+  "V016": {
+   "cosine": 0.646,
+   "guard_accepted": false
+  },
+  "V017": {
+   "cosine": 0.637,
+   "guard_accepted": true
+  },
+  "V018": {
+   "cosine": 0.668,
+   "guard_accepted": true
+  },
+  "V019": {
+   "cosine": 0.742,
+   "guard_accepted": true
+  },
+  "V020": {
+   "cosine": 0.863,
+   "guard_accepted": false
+  },
+  "V021": {
+   "cosine": 0.574,
+   "guard_accepted": true
+  },
+  "V022": {
+   "cosine": 0.594,
+   "guard_accepted": false
+  },
+  "V023": {
+   "cosine": 0.644,
+   "guard_accepted": true
+  },
+  "V024": {
+   "cosine": 0.738,
+   "guard_accepted": true
+  },
+  "V025": {
+   "cosine": 0.623,
+   "guard_accepted": true
+  },
+  "V026": {
+   "cosine": 0.797,
+   "guard_accepted": false
+  },
+  "V027": {
+   "cosine": 0.851,
+   "guard_accepted": true
+  },
+  "V028": {
+   "cosine": 0.634,
+   "guard_accepted": true
+  },
+  "V029": {
+   "cosine": 0.828,
+   "guard_accepted": false
+  },
+  "V030": {
+   "cosine": 0.554,
+   "guard_accepted": false
+  },
+  "V031": {
+   "cosine": 0.626,
+   "guard_accepted": false
+  },
+  "V032": {
+   "cosine": 0.693,
+   "guard_accepted": false
+  },
+  "V033": {
+   "cosine": 0.678,
+   "guard_accepted": true
+  },
+  "V034": {
+   "cosine": 0.719,
+   "guard_accepted": false
+  },
+  "V035": {
+   "cosine": 0.58,
+   "guard_accepted": true
+  },
+  "V036": {
+   "cosine": 0.837,
+   "guard_accepted": false
+  },
+  "V037": {
+   "cosine": 0.704,
+   "guard_accepted": true
+  },
+  "V038": {
+   "cosine": 0.684,
+   "guard_accepted": false
+  },
+  "V039": {
+   "cosine": 0.681,
+   "guard_accepted": false
+  },
+  "V040": {
+   "cosine": 0.84,
+   "guard_accepted": true
+  },
+  "V041": {
+   "cosine": 0.746,
+   "guard_accepted": true
+  },
+  "V042": {
+   "cosine": 0.844,
+   "guard_accepted": true
+  },
+  "V043": {
+   "cosine": 0.661,
+   "guard_accepted": false
+  },
+  "V044": {
+   "cosine": 0.625,
+   "guard_accepted": false
+  },
+  "V045": {
+   "cosine": 0.802,
+   "guard_accepted": true
+  },
+  "V046": {
+   "cosine": 0.699,
+   "guard_accepted": false
+  },
+  "V047": {
+   "cosine": 0.864,
+   "guard_accepted": false
+  },
+  "V048": {
+   "cosine": 0.735,
+   "guard_accepted": false
+  },
+  "V049": {
+   "cosine": 0.707,
+   "guard_accepted": true
+  },
+  "V050": {
+   "cosine": 0.84,
+   "guard_accepted": true
+  },
+  "V051": {
+   "cosine": 0.733,
+   "guard_accepted": true
+  },
+  "V052": {
+   "cosine": 0.564,
+   "guard_accepted": false
+  },
+  "V053": {
+   "cosine": 0.557,
+   "guard_accepted": false
+  },
+  "V054": {
+   "cosine": 0.769,
+   "guard_accepted": true
+  },
+  "V055": {
+   "cosine": 0.638,
+   "guard_accepted": true
+  },
+  "V056": {
+   "cosine": 0.689,
+   "guard_accepted": true
+  },
+  "V057": {
+   "cosine": 0.834,
+   "guard_accepted": true
+  },
+  "V058": {
+   "cosine": 0.87,
+   "guard_accepted": false
+  },
+  "V059": {
+   "cosine": 0.845,
+   "guard_accepted": false
+  },
+  "V060": {
+   "cosine": 0.802,
+   "guard_accepted": false
+  }
+ }
+}

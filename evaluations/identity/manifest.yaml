@@ -1,7 +1,7 @@
 version: 1
 frozen_at: '2026-09-30T19:33:43Z'
-note: Replay windows frozen before any identity labelling or identity code change. Labels (gold) are drafted blind,
-  reviewed by the owner, and only then frozen in gold/ with their own hashes.
+note: Replay windows frozen before any identity labelling or identity code change. Labels (gold) are drafted blind, reviewed
+  by the owner, and only then frozen in gold/ with their own hashes.
 tick_hours: 12
 windows:
 - id: '2026-08-21'
@@ -92,3 +92,56 @@ windows:
   - tick: 4
     from: '2026-09-30T00:00:00'
     to: '2026-09-30T12:00:00'
+- id: 2026-10-03-live
+  split: development
+  why: 'revision 3: Phase 3 relation-review identity suspects (T008, T025, T034, T041)'
+  start: '2026-09-29T12:00:00'
+  end: '2026-10-03T12:00:00'
+  items_file: windows/2026-10-03-live.items.jsonl
+  items_sha256: f66e02726930173fa10ca226a09cceb492700fc40441f481f2f2ff892c06fd46
+  items: 753
+  source: relation-review export (rss) of the 2026-10-05 backup-API snapshot
+  ticks:
+  - tick: 1
+    from: '2026-09-29T12:00:00'
+    to: '2026-09-30T00:00:00'
+  - tick: 2
+    from: '2026-09-30T00:00:00'
+    to: '2026-09-30T12:00:00'
+  - tick: 3
+    from: '2026-09-30T12:00:00'
+    to: '2026-10-01T00:00:00'
+  - tick: 4
+    from: '2026-10-01T00:00:00'
+    to: '2026-10-01T12:00:00'
+  - tick: 5
+    from: '2026-10-01T12:00:00'
+    to: '2026-10-02T00:00:00'
+  - tick: 6
+    from: '2026-10-02T00:00:00'
+    to: '2026-10-02T12:00:00'
+  - tick: 7
+    from: '2026-10-02T12:00:00'
+    to: '2026-10-03T00:00:00'
+  - tick: 8
+    from: '2026-10-03T00:00:00'
+    to: '2026-10-03T12:00:00'
+- id: 2026-10-05-live
+  split: development
+  why: 'revision 3: cross-language regression cases (RAF Fairford, Siberian plague)'
+  start: '2026-10-04T12:00:00'
+  end: '2026-10-06T00:00:00'
+  items_file: windows/2026-10-05-live.items.jsonl
+  items_sha256: 3ea43a325af80b202d45dbcd4749c1282fe4d6535e247a3c0eb418c0cb5a4a2e
+  items: 833
+  source: read-only backup-API copy of the live DB taken 2026-10-06 (rss items)
+  ticks:
+  - tick: 1
+    from: '2026-10-04T12:00:00'
+    to: '2026-10-05T00:00:00'
+  - tick: 2
+    from: '2026-10-05T00:00:00'
+    to: '2026-10-05T12:00:00'
+  - tick: 3
+    from: '2026-10-05T12:00:00'
+    to: '2026-10-06T00:00:00'

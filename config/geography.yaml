@@ -104,6 +104,7 @@ aliases:
   franja de gaza: gaza
   striscia di gaza: gaza
   kiev: kyiv
+  shelejov: shelekhov
   moscu: moscow
   mosca: moscow
   pekin: beijing
@@ -221,6 +222,8 @@ places:
   kursk: russia
   chechnya: russia
   siberia: russia
+  irkutsk: siberia
+  shelekhov: irkutsk
   minsk: belarus
   london: england
   manchester: england

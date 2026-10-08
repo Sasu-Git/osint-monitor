@@ -87,7 +87,10 @@ def independent_origins(session: Session, item_ids) -> int:
                              text=(r.content or "")[:TEXT_CHARS], url=r.url or "",
                              published_at=r.published_at or r.fetched_at) for r in rows]
     resolved = ProvenanceResolver().resolve(evidence)
-    return len({p.origin for p in resolved if p.evidence_type != EvidenceType.COMMENTARY})
+    from osint_monitor.processors.embeddings import headline_only
+    weak = {r.id for r in rows if headline_only(r.content)}      # a headline with no body is not independent evidence
+    return len({p.origin for p in resolved
+                if p.evidence_type != EvidenceType.COMMENTARY and p.item_id not in weak})
 
 
 def _components(ids: list[int], linked) -> list[list[int]]:
@@ -132,11 +135,13 @@ def reconcile(session: Session, cluster: dict, config) -> list[Decision]:
                for e in touched}
     seg = segment_items(session, set(new_ids) | {m for ms in members.values() for m in ms}, config)
     cache: dict[tuple[int, int], bool] = {}
+    from osint_monitor.processors.cross_language import linked_pairs
+    xlinks = linked_pairs(cluster.get("xlang_links"))           # accepted on explicit anchors, across languages
 
     def linked(a: int, b: int) -> bool:
         key = (a, b) if a < b else (b, a)
         if key not in cache:
-            cache[key] = a in seg and b in seg and compatible_link(seg[a], seg[b], config)
+            cache[key] = key in xlinks or (a in seg and b in seg and compatible_link(seg[a], seg[b], config))
         return cache[key]
 
     decisions: list[Decision] = []
@@ -177,4 +182,8 @@ def reconcile(session: Session, cluster: dict, config) -> list[Decision]:
     if held.held:
         held.reasons.append("below the Development layer")
         decisions.append(held)
+    if xlinks:
+        for d in decisions:
+            if d.added:
+                d.reasons.extend(f"cross-language link: {'; '.join(e['evidence'])}" for e in cluster["xlang_links"])
     return decisions

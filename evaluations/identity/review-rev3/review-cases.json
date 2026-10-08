@@ -1,0 +1,3212 @@
+[
+ {
+  "case": "V001",
+  "window": "2026-09-30-multilingual",
+  "split": "development",
+  "items": [
+   {
+    "id": "sx-48",
+    "published_at": "2026-09-30 01:10:48.000000",
+    "source": "ANSA Mondo",
+    "source_type": "rss",
+    "lang": "it",
+    "title": "Trump firma ordine esecutivo, 'inaugura l'era della Super Intelligenza'",
+    "excerpt": "'Sistemi di frontiera odierni vanno ben oltre singoli aspetti dell'intelligenza umana'"
+   },
+   {
+    "id": "sx-22",
+    "published_at": "2026-09-29 21:21:06.000000",
+    "source": "White House",
+    "source_type": "rss",
+    "lang": "en",
+    "title": "Fact Sheet: President Donald J. Trump Inaugurates The Era of Super Intelligence",
+    "excerpt": "News\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\t\t\n\t\n\t\t\n\t\t\n\t\t\tSearch\n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\n\t\t\t\n\t\t\t\t\n\t\t\t\t\tSelect Category\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\tAll News\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\tBriefings &amp; Statements\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\tAll Presidential Actions\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\tExecutive Orders\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\tNominations &amp; Appointments\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\tPresidential Memoranda\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\tProclamations\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\tFact Sheets\t\t\t\t\t\t\t\n\t\t\t\t\t\t"
+   }
+  ],
+  "multilingual": true,
+  "flags": [],
+  "system": {
+   "relation": "cross-language candidate",
+   "why": [
+    "proposed by multilingual similarity"
+   ],
+   "rules": [
+    "xlang"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "V002",
+  "window": "2026-10-05-live",
+  "split": "development",
+  "items": [
+   {
+    "id": "s-2456",
+    "published_at": "2026-10-05 12:31:35.000000",
+    "source": "BBC Mundo",
+    "source_type": "rss",
+    "lang": "es",
+    "title": "Pedro Sánchez convoca elecciones anticipadas tras el fracaso en el Congreso de sus decretos para enfrentar la crisis de la vivienda en España",
+    "excerpt": "El anuncio de Sánchez se produce tras varios días de protestas en el país europeo, surgidas a raíz del desalojo de la anciana Maricarmen. Las elecciones se celebrarán el próximo 29 de noviembre."
+   },
+   {
+    "id": "s-2858",
+    "published_at": "2026-10-05 13:27:32.000000",
+    "source": "ANSA English",
+    "source_type": "rss",
+    "lang": "en",
+    "title": "The Committee of Italians Abroad in Madrid Calls for Elections to Renew the Committee",
+    "excerpt": "(ANSA) - MADRID, 05 OTT - On December 4, 2026, elections will be held to renew and establish the Committees of Italians Residing Abroad (Comit.es). Voters who meet the legal requirements for active suffrage and who have been residing and registered in the Registry of Italians Residing Abroad (AIRE) within the consular district of the Consulate General of Italy in Madrid for at least 6 months prior to the election date are eligible to participate. The Consulate announced this in a statement.\nVoting takes place by mail, and to receive the voting packet, voters must request registration on the vo"
+   }
+  ],
+  "multilingual": true,
+  "flags": [],
+  "system": {
+   "relation": "cross-language candidate",
+   "why": [
+    "proposed by multilingual similarity"
+   ],
+   "rules": [
+    "xlang"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "V003",
+  "window": "2026-09-30-multilingual",
+  "split": "development",
+  "items": [
+   {
+    "id": "sx-491",
+    "published_at": "2026-09-29 14:40:57.000000",
+    "source": "Defense News",
+    "source_type": "rss",
+    "lang": "en",
+    "title": "US forces exiting Iraq after 2 decades, leaving opening for Iran",
+    "excerpt": "U.S. forces are set to depart from their last bases in Iraq by Wednesday, a move celebrated as a victory by Iran and its allies, who now have deep influence in the country where 4,500 Americans died during more than two decades of war.Iraqi security experts say the withdrawal — agreed to in 2024 under U.S. President Joe Biden and carried out by Donald Trump’s administration even as it wages war against Iran — could give Tehran and its allies free rein, while also allowing other U.S. enemies, including the Islamic State, to stage a comeback.“Iran stands to benefit strategically from the coaliti"
+   },
+   {
+    "id": "sx-101",
+    "published_at": "2026-09-30 03:32:27.000000",
+    "source": "BBC Mundo",
+    "source_type": "rss",
+    "lang": "es",
+    "title": "EE.UU. se retira completamente de Irak tras 20 años de presencia militar: cómo deja el país y qué ocurrirá ahora",
+    "excerpt": "EE.UU. tiene previsto retirar las tropas que aún mantiene en Irak este 30 de septiembre, poniendo fin a una presencia militar que comenzó con la invasión  en 2003 que derrocó a Saddam Hussein."
+   }
+  ],
+  "multilingual": true,
+  "flags": [],
+  "system": {
+   "relation": "cross-language candidate",
+   "why": [
+    "proposed by multilingual similarity"
+   ],
+   "rules": [
+    "xlang"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "V004",
+  "window": "2026-10-05-live",
+  "split": "development",
+  "items": [
+   {
+    "id": "s-2633",
+    "published_at": "2026-10-05 00:39:44.000000",
+    "source": "Clarín Mundo",
+    "source_type": "rss",
+    "lang": "es",
+    "title": "A tres años del ataque de Hamas: la amenaza de un nuevo atentado reaviva las alarmas en Israel",
+    "excerpt": "La incursión armada de 2023 derivó en la jornada letal para el pueblo judío, con 1.219 asesinados y más de 250 secuestrados.Al cumplirse el tercer aniversario del ataque de Hamas, otro intento terrorista en un vuelo comercial reactivó las alertas de seguridad en Israel."
+   },
+   {
+    "id": "s-2976",
+    "published_at": "2026-10-05 15:05:32.000000",
+    "source": "South China Morning Post",
+    "source_type": "rss",
+    "lang": "en",
+    "title": "‘There will be no Hamas rule in Gaza,’ Netanyahu vows at October 7 memorial",
+    "excerpt": "Israeli Prime Minister Benjamin Netanyahu on Monday vowed there would be no Hamas rule in Gaza as he attended a memorial event marking three years since the militant group’s October 7, 2023 attack.\nMonday is a national day of remembrance for the deadliest day in Israel’s history, with flags lowered to half mast on public buildings from 6.29 am, the time the attack began.\nSpeaking during a state ceremony at the Mount Herzl military cemetery in Jerusalem, Netanyahu said “we have achieved enormous..."
+   }
+  ],
+  "multilingual": true,
+  "flags": [],
+  "system": {
+   "relation": "cross-language candidate",
+   "why": [
+    "proposed by multilingual similarity"
+   ],
+   "rules": [
+    "xlang"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "V005",
+  "window": "2026-10-05-live",
+  "split": "development",
+  "items": [
+   {
+    "id": "s-2246",
+    "published_at": "2026-10-04 17:48:51.000000",
+    "source": "South China Morning Post",
+    "source_type": "rss",
+    "lang": "en",
+    "title": "Brazilians head to polls in high-stakes, polarised election",
+    "excerpt": "Brazilians queued to vote on Sunday in the first round of a tight election, following a campaign dominated by corruption scandals, economic anxiety and accusations of US meddling.\nThe field of 13 candidates has been led by two clear front runners – leftist President Luiz Inacio Lula da Silva, 80, who is seeking a fourth term, and Senator Flavio Bolsonaro, the 45-year-old son of former president Jair Bolsonaro, who hopes to return his father’s right-wing movement to power.\nA victory for the..."
+   },
+   {
+    "id": "s-2444",
+    "published_at": "2026-10-05 10:46:37.000000",
+    "source": "ANSA Mondo",
+    "source_type": "rss",
+    "lang": "it",
+    "title": "Astensione record in Brasile, il 21,08% non ha votato al primo turno",
+    "excerpt": "Si tratta del livello più alto registrato dalle elezioni del 1998 (21,5%)"
+   }
+  ],
+  "multilingual": true,
+  "flags": [],
+  "system": {
+   "relation": "cross-language candidate",
+   "why": [
+    "proposed by multilingual similarity"
+   ],
+   "rules": [
+    "xlang"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "V006",
+  "window": "2026-10-05-live",
+  "split": "development",
+  "items": [
+   {
+    "id": "s-3000",
+    "published_at": "2026-10-05 12:53:09.000000",
+    "source": "Clarín Mundo",
+    "source_type": "rss",
+    "lang": "es",
+    "title": "¿Cómo votó Brasil el domingo? San Pablo y el Sur frenaron la ola roja de Lula y dieron la ventaja a Flávio Bolsonaro",
+    "excerpt": "Los avances de Flávio Bolsonaro en estados con mayor peso electoral fueron la clave de su ascenso.Lula da Silva ganó en los estados del noreste, pero no fue suficiente."
+   },
+   {
+    "id": "s-3184",
+    "published_at": "2026-10-05 18:44:35.000000",
+    "source": "France 24",
+    "source_type": "rss",
+    "lang": "en",
+    "title": "Return of the Bolsonaros: Why the far-right surge in Brazilian elections?",
+    "excerpt": "Do voters care about attempted coups? Brazil's Flavio Bolsonaro on the cusp of unseating Luiz Inacio Lula da Silva in the October 25th presidential runoff, Bolsonaro whose father was jailed over the Brazilian version of the January 6th storming of the US Capitol. Up and down the ballot, there are other Bolsonaros elected in the first round as the far-right surges. Is it about incumbent fatigue? Do Brazilians subscribe to Bolsonaro’s \"God, Homeland, Family\" mantra?"
+   }
+  ],
+  "multilingual": true,
+  "flags": [],
+  "system": {
+   "relation": "cross-language candidate",
+   "why": [
+    "proposed by multilingual similarity"
+   ],
+   "rules": [
+    "xlang"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "V007",
+  "window": "2026-10-05-live",
+  "split": "development",
+  "items": [
+   {
+    "id": "s-2305",
+    "published_at": "2026-10-05 01:55:50.000000",
+    "source": "Al Jazeera",
+    "source_type": "rss",
+    "lang": "en",
+    "title": "Brazil’s presidential race: Three key takeaways from the first round",
+    "excerpt": "Flavio Bolsonaro beat polling expectations as Brazil’s right gained ground, setting up October 25 run-off with Lula."
+   },
+   {
+    "id": "s-2593",
+    "published_at": "2026-10-05 03:11:09.000000",
+    "source": "France 24 Español",
+    "source_type": "rss",
+    "lang": "es",
+    "title": "Lula y Bolsonaro se enfrentan en el balotaje en Brasil: ¿qué se puede concluir de la primera vuelta?",
+    "excerpt": "El senador de extrema derecha Flávio Bolsonaro y el mandatario de izquierda Luiz Inácio Lula da Silva irán a una segunda vuelta en las elecciones presidenciales de Brasil, según los resultados de los comicios del 4 de octubre, con casi el 100% escrutado. ¿Qué se puede concluir? Lo analizamos con nuestros invitados: Simone Pitta, abogada y doctora en Ciencia Política de la Universidad de los Andes; Juan Agulló, sociólogo y doctor en Sociología por la École des Hautes Études en Sciences Sociales de París; y José Luis Oreiro, profesor del departamento de Economía de la Universidad de Brasilia."
+   }
+  ],
+  "multilingual": true,
+  "flags": [],
+  "system": {
+   "relation": "cross-language candidate",
+   "why": [
+    "proposed by multilingual similarity"
+   ],
+   "rules": [
+    "xlang"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "V008",
+  "window": "2026-10-05-live",
+  "split": "development",
+  "items": [
+   {
+    "id": "s-2451",
+    "published_at": "2026-10-05 07:29:06.000000",
+    "source": "ANSA Mondo",
+    "source_type": "rss",
+    "lang": "it",
+    "title": "Sanchez, 'ho deciso di convocare le elezioni il 29 novembre'",
+    "excerpt": "Il premier in una dichiarazione istituzionale"
+   },
+   {
+    "id": "s-2610",
+    "published_at": "2026-10-05 11:36:47.000000",
+    "source": "El País Internacional",
+    "source_type": "rss",
+    "lang": "es",
+    "title": "Pedro Sánchez, único líder socialdemócrata en una UE derechizada, activa el súper año electoral en Europa",
+    "excerpt": "El presidente español, Pedro Sánchez, y la presidenta de la Comisión Europea, Ursula von der Leyen, el pasado enero en el Consejo Europeo en Bruselas."
+   }
+  ],
+  "multilingual": true,
+  "flags": [],
+  "system": {
+   "relation": "cross-language candidate",
+   "why": [
+    "proposed by multilingual similarity"
+   ],
+   "rules": [
+    "xlang"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "V009",
+  "window": "2026-10-05-live",
+  "split": "development",
+  "items": [
+   {
+    "id": "s-2562",
+    "published_at": "2026-10-05 12:08:00.000000",
+    "source": "Rai News Esteri",
+    "source_type": "rss",
+    "lang": "it",
+    "title": "Sanchez porta la Spagna al voto il 29 novembre sull'onda delle proteste per la crisi abitativa",
+    "excerpt": "Il capo del governo di Madrid, pressato da giorni da richieste di elezioni anticipate, punta a capitalizzare un consenso \"last minute\" con i provvedimenti per la casa, una crisi che ha portato a proteste in tutto il Paese"
+   },
+   {
+    "id": "s-2630",
+    "published_at": "2026-10-05 07:18:30.000000",
+    "source": "Clarín Mundo",
+    "source_type": "rss",
+    "lang": "es",
+    "title": "Pedro Sánchez adelantó las elecciones generales en España para el 29 de noviembre",
+    "excerpt": "El presidente español emitió un mensaje desde el Palacio de La Moncloa.En su discurso llamó a los españoles a decidir si quieren sumarse \"a la ola derechista o seguir siendo un baluarte de justicia social\"."
+   }
+  ],
+  "multilingual": true,
+  "flags": [],
+  "system": {
+   "relation": "cross-language candidate",
+   "why": [
+    "proposed by multilingual similarity"
+   ],
+   "rules": [
+    "xlang"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "V010",
+  "window": "2026-09-30-multilingual",
+  "split": "development",
+  "items": [
+   {
+    "id": "sx-56",
+    "published_at": "2026-09-29 20:36:05.000000",
+    "source": "ANSA Mondo",
+    "source_type": "rss",
+    "lang": "it",
+    "title": "Haiti, l'Onu proroga di sei mesi la missione contro le bande armate",
+    "excerpt": "La forza internazionale resta fino a marzo 2027, ma ha schierato solo 1.500 uomini"
+   },
+   {
+    "id": "sx-420",
+    "published_at": "2026-09-29 18:45:37.000000",
+    "source": "UN Press",
+    "source_type": "rss",
+    "lang": "en",
+    "title": "Adopting Resolution 2829 (2026), Security Council Renews Haiti Gang Suppression Force for Six Months",
+    "excerpt": "The Security Council today renewed the mandate of the Gang Suppression Force in Haiti for six months, as speakers called for its rapid deployment to reclaim territory from armed gangs, restore State authority and create conditions for elections."
+   }
+  ],
+  "multilingual": true,
+  "flags": [],
+  "system": {
+   "relation": "cross-language candidate",
+   "why": [
+    "proposed by multilingual similarity"
+   ],
+   "rules": [
+    "xlang"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "V011",
+  "window": "2026-09-30-multilingual",
+  "split": "development",
+  "items": [
+   {
+    "id": "sx-41",
+    "published_at": "2026-09-30 08:35:42.000000",
+    "source": "ANSA Mondo",
+    "source_type": "rss",
+    "lang": "it",
+    "title": "Burnham su Brexit, 'tutte le opzioni sul tavolo, inclusa riadesione a Ue'",
+    "excerpt": "Il premier a Bbc Radio: 'Serve però il consenso pubblico'"
+   },
+   {
+    "id": "sx-244",
+    "published_at": "2026-09-30 08:02:57.000000",
+    "source": "El País Internacional",
+    "source_type": "rss",
+    "lang": "es",
+    "title": "Andy Burnham no descarta estudiar un futuro reingreso del Reino Unido en la UE",
+    "excerpt": "El primer ministro británica, Andy Burnham, durante la conferencia del Partido Laborista, este miércoles en Liverpool."
+   }
+  ],
+  "multilingual": true,
+  "flags": [],
+  "system": {
+   "relation": "cross-language candidate",
+   "why": [
+    "proposed by multilingual similarity"
+   ],
+   "rules": [
+    "xlang"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "V012",
+  "window": "2026-10-05-live",
+  "split": "development",
+  "items": [
+   {
+    "id": "s-2454",
+    "published_at": "2026-10-05 10:07:52.000000",
+    "source": "ANSA Mondo",
+    "source_type": "rss",
+    "lang": "it",
+    "title": "Doppio attacco russo su Kharkiv con missili Banderol, un morto",
+    "excerpt": "Colpita una infrastruttura energetica nella regione di Poltava, 22 mila senza elettricità"
+   },
+   {
+    "id": "s-2582",
+    "published_at": "2026-10-05 12:46:26.000000",
+    "source": "France 24 Español",
+    "source_type": "rss",
+    "lang": "es",
+    "title": "¿Peste pulmonar en Siberia? Europa sigue el caso mientras Rusia pide calma",
+    "excerpt": "La muerte de una trabajadora de un instituto especializado en peste en Siberia encendió las alarmas ante la posibilidad de un caso de peste pulmonar, mientras Rusia intenta contener las especulaciones y asegura que los análisis no detectaron la bacteria. La Comisión Europea sigue el caso “muy de cerca” y mantiene contactos con las autoridades sanitarias europeas, aunque por ahora no existe confirmación de un brote en la región de Irkutsk."
+   }
+  ],
+  "multilingual": true,
+  "flags": [],
+  "system": {
+   "relation": "cross-language candidate",
+   "why": [
+    "proposed by multilingual similarity"
+   ],
+   "rules": [
+    "xlang"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "V013",
+  "window": "2026-10-05-live",
+  "split": "development",
+  "items": [
+   {
+    "id": "s-2561",
+    "published_at": "2026-10-05 12:20:00.000000",
+    "source": "Rai News Esteri",
+    "source_type": "rss",
+    "lang": "it",
+    "title": "Il primo turno delle presidenziali in Brasile, avanti Bolsonaro: ribaltati i pronostici pro-Lula",
+    "excerpt": "La sfida per il secondo turno del 25 ottobre è ancora aperta ma il presidente uscente non minimizza il peso di una pesante bocciatura delle sue politiche"
+   },
+   {
+    "id": "s-3487",
+    "published_at": "2026-10-05 21:55:27.000000",
+    "source": "France 24 Español",
+    "source_type": "rss",
+    "lang": "es",
+    "title": "¿Cómo queda el balance de poder en Brasil?",
+    "excerpt": "En nuestra sección En Contexto analizamos las elecciones en Brasil y el crecimiento del bolsonarismo, además de los factores que han permitido su consolidación como una de las principales fuerzas políticas del país. A su vez, revisamos cómo las expresiones conservadoras se fortalecen en el Congreso y las gobernaciones y qué opciones tienen los candidatos Flávio Bolsonaro y Luiz Inácio Lula da Silva para sumar apoyos de cara al balotaje."
+   }
+  ],
+  "multilingual": true,
+  "flags": [],
+  "system": {
+   "relation": "cross-language candidate",
+   "why": [
+    "proposed by multilingual similarity"
+   ],
+   "rules": [
+    "xlang"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "V014",
+  "window": "2026-09-30-multilingual",
+  "split": "development",
+  "items": [
+   {
+    "id": "sx-47",
+    "published_at": "2026-09-30 02:30:01.000000",
+    "source": "ANSA Mondo",
+    "source_type": "rss",
+    "lang": "it",
+    "title": "Missili e droni su regione di Kiev, ucciso un bambino",
+    "excerpt": "Corpo trovato tra le macerie di un'abitazione a Vyshgorod"
+   },
+   {
+    "id": "sx-277",
+    "published_at": "2026-09-30 07:03:10.000000",
+    "source": "Kyiv Independent",
+    "source_type": "rss",
+    "lang": "en",
+    "title": "Drone crashes in Moldova amid Russian mass attack on Ukraine",
+    "excerpt": "Russia attacked Ukraine overnight with 188 drones and various missiles, according to Ukraine's air force."
+   }
+  ],
+  "multilingual": true,
+  "flags": [],
+  "system": {
+   "relation": "cross-language candidate",
+   "why": [
+    "proposed by multilingual similarity"
+   ],
+   "rules": [
+    "xlang"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "V015",
+  "window": "2026-10-05-live",
+  "split": "development",
+  "items": [
+   {
+    "id": "s-3188",
+    "published_at": "2026-10-05 18:24:05.000000",
+    "source": "Clarín Mundo",
+    "source_type": "rss",
+    "lang": "es",
+    "title": "\"Lo hice para vengar a Gaza, quería morir como mártir\": el copiloto del vuelo de Flydubai confesó por qué atacó al piloto",
+    "excerpt": "Hammam Al-Hammami fue interrogado por los investigadores de Emiratos Árabes Unidos. Mientras, Israel busca determinar si el piloto actuó solo o si fue enviado por otra persona."
+   },
+   {
+    "id": "s-2239",
+    "published_at": "2026-10-04 15:22:25.000000",
+    "source": "Al Jazeera",
+    "source_type": "rss",
+    "lang": "en",
+    "title": "‘Did he know?’: Why Israel is rejecting an October 7 reckoning",
+    "excerpt": "The fixation on Netanyahu’s failures allows Israel to avoid confronting what it has done in Gaza."
+   }
+  ],
+  "multilingual": true,
+  "flags": [],
+  "system": {
+   "relation": "cross-language candidate",
+   "why": [
+    "proposed by multilingual similarity"
+   ],
+   "rules": [
+    "xlang"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "V016",
+  "window": "2026-09-30-multilingual",
+  "split": "development",
+  "items": [
+   {
+    "id": "sx-273",
+    "published_at": "2026-09-29 16:03:03.000000",
+    "source": "Clarín Mundo",
+    "source_type": "rss",
+    "lang": "es",
+    "title": "\"Jamás frenaré el crecimiento\" de la IA, dice Trump antes de reunirse con los mayores ejecutivos del sector",
+    "excerpt": "Lo dijo al presentar el portal America.gov, una plataforma que utiliza IA para agilizar trámites administrativos como la solicitud de pasaportes.El jefe de Estado convocó para este martes a un almuerzo en la Casa Blanca a Elon Musk, Jeff Bezos, Satya Nadella, Jensen Huang y Dario Amodei."
+   },
+   {
+    "id": "sx-209",
+    "published_at": "2026-09-30 03:00:59.000000",
+    "source": "Al Jazeera",
+    "source_type": "rss",
+    "lang": "en",
+    "title": "Trump backs AI self-regulation at tech summit but is it enough?",
+    "excerpt": "US President Donald Trump and leading tech companies have signed a voluntary agreement to regulate AI development."
+   }
+  ],
+  "multilingual": true,
+  "flags": [],
+  "system": {
+   "relation": "cross-language candidate",
+   "why": [
+    "proposed by multilingual similarity"
+   ],
+   "rules": [
+    "xlang"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "V017",
+  "window": "2026-10-05-live",
+  "split": "development",
+  "items": [
+   {
+    "id": "s-3059",
+    "published_at": "2026-10-05 17:10:18.000000",
+    "source": "ANSA Mondo",
+    "source_type": "rss",
+    "lang": "it",
+    "title": "Lo Yemen riconquista il controllo dello Stretto di Bab el-Mandeb",
+    "excerpt": "Gli Houthi hanno affermato di aver colpito l'aeroporto di Riad e una raffineria del colosso energetico saudita Aramco, oltre a diversi siti nel sud del Regno. Gli attacchi, condotti soprattutto con droni, missili balistici e da crociera, \"hanno preso di mira l'aeroporto internazionale di Riad\", ha dichiarato il portavoce militare dei ribelli yemeniti, Yahya Saree, aggiungendo che sono stati colpiti anche \"la raffineria di Aramco a Rabgh\" e siti militari e aeroporti nel sud del Paese.\n\n\"Alba dello Yemen\": si chiama così l'operazione militare su vasta scala con cui le forze del governo yemenita,"
+   },
+   {
+    "id": "s-2381",
+    "published_at": "2026-10-05 09:38:26.000000",
+    "source": "Al Jazeera",
+    "source_type": "rss",
+    "lang": "en",
+    "title": "Yemen war escalates: What’s the latest, as government forces claim gains?",
+    "excerpt": "After launching major military offensive to reclaim Houthi-held areas, Yemen&#039;s government says it has taken key district"
+   }
+  ],
+  "multilingual": true,
+  "flags": [],
+  "system": {
+   "relation": "cross-language candidate",
+   "why": [
+    "proposed by multilingual similarity"
+   ],
+   "rules": [
+    "xlang"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "V018",
+  "window": "2026-10-05-live",
+  "split": "development",
+  "items": [
+   {
+    "id": "s-2397",
+    "published_at": "2026-10-05 10:18:47.000000",
+    "source": "BBC World",
+    "source_type": "rss",
+    "lang": "en",
+    "title": "Spanish PM Sánchez calls early election after housing protests",
+    "excerpt": "Sánchez says Spain will head to the polls on 29 November after recent defeats on measures aimed at addressing the country's housing crisis."
+   },
+   {
+    "id": "s-2580",
+    "published_at": "2026-10-05 13:09:04.000000",
+    "source": "France 24 Español",
+    "source_type": "rss",
+    "lang": "es",
+    "title": "Ocho años de Pedro Sánchez: ¿cómo ha sido su Gobierno?",
+    "excerpt": "Pedro Sánchez ha marcado una de las etapas políticas más intensas de la España reciente. Llegó al poder en 2018 tras una moción de censura que puso fin al Gobierno de Mariano Rajoy. Tras más de ocho años al frente del Ejecutivo, Sánchez ha convocado elecciones anticipadas para el 29 de noviembre de 2026, poniendo su legado y su continuidad en manos de los votantes."
+   }
+  ],
+  "multilingual": true,
+  "flags": [],
+  "system": {
+   "relation": "cross-language candidate",
+   "why": [
+    "proposed by multilingual similarity"
+   ],
+   "rules": [
+    "xlang"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "V019",
+  "window": "2026-10-05-live",
+  "split": "development",
+  "items": [
+   {
+    "id": "s-2454",
+    "published_at": "2026-10-05 10:07:52.000000",
+    "source": "ANSA Mondo",
+    "source_type": "rss",
+    "lang": "it",
+    "title": "Doppio attacco russo su Kharkiv con missili Banderol, un morto",
+    "excerpt": "Colpita una infrastruttura energetica nella regione di Poltava, 22 mila senza elettricità"
+   },
+   {
+    "id": "s-2651",
+    "published_at": "2026-10-05 08:05:36.000000",
+    "source": "Kyiv Independent",
+    "source_type": "rss",
+    "lang": "en",
+    "title": "Kharkiv targeted in deadly Banderol strike as Russia kills 5, injures 61 across Ukraine over past day",
+    "excerpt": "Overnight, Russia launched 205 attack drones of various types, including 49 jet-powered drones, Ukraine's Air Force said."
+   }
+  ],
+  "multilingual": true,
+  "flags": [],
+  "system": {
+   "relation": "cross-language candidate",
+   "why": [
+    "proposed by multilingual similarity"
+   ],
+   "rules": [
+    "xlang"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "V020",
+  "window": "2026-09-30-multilingual",
+  "split": "development",
+  "items": [
+   {
+    "id": "sx-127",
+    "published_at": "2026-09-30 04:06:00.000000",
+    "source": "Rai News Esteri",
+    "source_type": "rss",
+    "lang": "it",
+    "title": "Marocco, Fatima Zahara Mansouri è la prima donna premier della storia del Paese",
+    "excerpt": "Avvocata, ex ministra e sindaca di Marrakech, la 50enne diventa la prima donna premier del Regno. Ora il compito di trovare alleati per formare una coalizione stabile"
+   },
+   {
+    "id": "sx-108",
+    "published_at": "2026-09-30 00:03:59.000000",
+    "source": "BBC Mundo",
+    "source_type": "rss",
+    "lang": "es",
+    "title": "Fatima Zahra El Mansouri, la primera mujer elegida primera ministra de Marruecos",
+    "excerpt": "Fatima Zahra El Mansouri fue designada por el rey en el cargo de primera ministra. Así se convierte en la primera mujer en el alto puesto y la segunda en liderar un gobierno en el mundo árabe."
+   }
+  ],
+  "multilingual": true,
+  "flags": [],
+  "system": {
+   "relation": "cross-language candidate",
+   "why": [
+    "proposed by multilingual similarity"
+   ],
+   "rules": [
+    "xlang"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "V021",
+  "window": "2026-10-05-live",
+  "split": "development",
+  "items": [
+   {
+    "id": "s-2619",
+    "published_at": "2026-10-05 03:30:01.000000",
+    "source": "El País Internacional",
+    "source_type": "rss",
+    "lang": "es",
+    "title": "Ghaydaa Kamal Al Abadsa, escritora palestina: “En Gaza no hay un alto el fuego, no crean esa mentira”",
+    "excerpt": "DVD 1338 (29/09/26) Ghaydaa Kamal Al-Abadsa, escritora gazatí fotografiada en el centro de Madrid © Claudio Álvarez."
+   },
+   {
+    "id": "s-2233",
+    "published_at": "2026-10-04 16:18:01.000000",
+    "source": "Al Jazeera",
+    "source_type": "rss",
+    "lang": "en",
+    "title": "Three years of genocide in Gaza through one man’s camera",
+    "excerpt": "For almost three years, Ibrahim Rabaa has filmed fragments of his life through Israel’s genocide in Gaza."
+   }
+  ],
+  "multilingual": true,
+  "flags": [],
+  "system": {
+   "relation": "cross-language candidate",
+   "why": [
+    "proposed by multilingual similarity"
+   ],
+   "rules": [
+    "xlang"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "V022",
+  "window": "2026-09-30-multilingual",
+  "split": "development",
+  "items": [
+   {
+    "id": "sx-273",
+    "published_at": "2026-09-29 16:03:03.000000",
+    "source": "Clarín Mundo",
+    "source_type": "rss",
+    "lang": "es",
+    "title": "\"Jamás frenaré el crecimiento\" de la IA, dice Trump antes de reunirse con los mayores ejecutivos del sector",
+    "excerpt": "Lo dijo al presentar el portal America.gov, una plataforma que utiliza IA para agilizar trámites administrativos como la solicitud de pasaportes.El jefe de Estado convocó para este martes a un almuerzo en la Casa Blanca a Elon Musk, Jeff Bezos, Satya Nadella, Jensen Huang y Dario Amodei."
+   },
+   {
+    "id": "sx-156",
+    "published_at": "2026-09-30 08:42:08.000000",
+    "source": "France 24",
+    "source_type": "rss",
+    "lang": "en",
+    "title": "Trump puts trust in AI bosses to 'police themselves'",
+    "excerpt": "As fears mount over the safety of rapidly advancing AI models, US President Donald Trump gathered tech leaders at the White House on Tuesday where he said they signed a \"morally binding\" commitment to self-regulate and build adequate safeguards on the fast-moving technology.  \"They're going to police themselves,\" Trump said after the meeting."
+   }
+  ],
+  "multilingual": true,
+  "flags": [],
+  "system": {
+   "relation": "cross-language candidate",
+   "why": [
+    "proposed by multilingual similarity"
+   ],
+   "rules": [
+    "xlang"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "V023",
+  "window": "2026-10-05-live",
+  "split": "development",
+  "items": [
+   {
+    "id": "s-3184",
+    "published_at": "2026-10-05 18:44:35.000000",
+    "source": "France 24",
+    "source_type": "rss",
+    "lang": "en",
+    "title": "Return of the Bolsonaros: Why the far-right surge in Brazilian elections?",
+    "excerpt": "Do voters care about attempted coups? Brazil's Flavio Bolsonaro on the cusp of unseating Luiz Inacio Lula da Silva in the October 25th presidential runoff, Bolsonaro whose father was jailed over the Brazilian version of the January 6th storming of the US Capitol. Up and down the ballot, there are other Bolsonaros elected in the first round as the far-right surges. Is it about incumbent fatigue? Do Brazilians subscribe to Bolsonaro’s \"God, Homeland, Family\" mantra?"
+   },
+   {
+    "id": "s-3487",
+    "published_at": "2026-10-05 21:55:27.000000",
+    "source": "France 24 Español",
+    "source_type": "rss",
+    "lang": "es",
+    "title": "¿Cómo queda el balance de poder en Brasil?",
+    "excerpt": "En nuestra sección En Contexto analizamos las elecciones en Brasil y el crecimiento del bolsonarismo, además de los factores que han permitido su consolidación como una de las principales fuerzas políticas del país. A su vez, revisamos cómo las expresiones conservadoras se fortalecen en el Congreso y las gobernaciones y qué opciones tienen los candidatos Flávio Bolsonaro y Luiz Inácio Lula da Silva para sumar apoyos de cara al balotaje."
+   }
+  ],
+  "multilingual": true,
+  "flags": [],
+  "system": {
+   "relation": "cross-language candidate",
+   "why": [
+    "proposed by multilingual similarity"
+   ],
+   "rules": [
+    "xlang"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "V024",
+  "window": "2026-10-05-live",
+  "split": "development",
+  "items": [
+   {
+    "id": "s-2562",
+    "published_at": "2026-10-05 12:08:00.000000",
+    "source": "Rai News Esteri",
+    "source_type": "rss",
+    "lang": "it",
+    "title": "Sanchez porta la Spagna al voto il 29 novembre sull'onda delle proteste per la crisi abitativa",
+    "excerpt": "Il capo del governo di Madrid, pressato da giorni da richieste di elezioni anticipate, punta a capitalizzare un consenso \"last minute\" con i provvedimenti per la casa, una crisi che ha portato a proteste in tutto il Paese"
+   },
+   {
+    "id": "s-2397",
+    "published_at": "2026-10-05 10:18:47.000000",
+    "source": "BBC World",
+    "source_type": "rss",
+    "lang": "en",
+    "title": "Spanish PM Sánchez calls early election after housing protests",
+    "excerpt": "Sánchez says Spain will head to the polls on 29 November after recent defeats on measures aimed at addressing the country's housing crisis."
+   }
+  ],
+  "multilingual": true,
+  "flags": [],
+  "system": {
+   "relation": "cross-language candidate",
+   "why": [
+    "proposed by multilingual similarity"
+   ],
+   "rules": [
+    "xlang"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "V025",
+  "window": "2026-09-30-multilingual",
+  "split": "development",
+  "items": [
+   {
+    "id": "sx-139",
+    "published_at": "2026-09-29 15:22:00.000000",
+    "source": "Rai News Esteri",
+    "source_type": "rss",
+    "lang": "it",
+    "title": "Burnham: \"Londra per troppo tempo sulla strada sbagliata, miglioreremo i rapporti con l'UE\"",
+    "excerpt": "Al congresso del Labour il premier conferma i punti della sua strategia per riavvicinare il Regno Unito a Bruxelles: taglio dell'Iva alle bollette elettriche, nazionalizzazione dell'acqua, viaggi in bus a 2 sterline"
+   },
+   {
+    "id": "sx-356",
+    "published_at": "2026-09-29 14:18:00.000000",
+    "source": "European Commission Press",
+    "source_type": "rss",
+    "lang": "en",
+    "title": "Remarks by Commissioner Brunner at the press point on a five-point plan to strengthen resilience and security of EU external borders",
+    "excerpt": "European Commission Speech Brussels, 29 Sep 2026 Good morning.\nLater this week will discuss at the Justice and Home Affairs Council in Luxembourg, where we stand and what we still need to do on migration. Let ..."
+   }
+  ],
+  "multilingual": true,
+  "flags": [],
+  "system": {
+   "relation": "cross-language candidate",
+   "why": [
+    "proposed by multilingual similarity"
+   ],
+   "rules": [
+    "xlang"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "V026",
+  "window": "2026-10-05-live",
+  "split": "development",
+  "items": [
+   {
+    "id": "s-3339",
+    "published_at": "2026-10-05 20:17:35.000000",
+    "source": "Al Jazeera",
+    "source_type": "rss",
+    "lang": "en",
+    "title": "Turkiye, Pakistan agree to military deployment to Saudi Arabia",
+    "excerpt": "Turkiye, Saudi Arabia and Pakistan have agreed to trigger collective deterrence measures in response to Houthi attacks."
+   },
+   {
+    "id": "s-3548",
+    "published_at": "2026-10-05 22:41:08.000000",
+    "source": "France 24 Español",
+    "source_type": "rss",
+    "lang": "es",
+    "title": "Arabia Saudita, Turquía y Pakistán activan su alianza militar: ¿qué implica ante la amenaza hutí?",
+    "excerpt": "Arabia Saudita, Turquía y Pakistán acordaron desplegar rápidamente fuerzas y capacidades militares en territorio saudí, en la primera activación del acuerdo que firmaron en agosto. La decisión llega en plena escalada con los hutíes, que este lunes 5 de octubre afirmaron haber atacado con misiles y drones aeropuertos, instalaciones militares y una refinería de Aramco en Arabia Saudita, tras la ofensiva del Gobierno de Yemen para expulsarlos del estrecho de Bab el-Mandeb."
+   }
+  ],
+  "multilingual": true,
+  "flags": [],
+  "system": {
+   "relation": "cross-language candidate",
+   "why": [
+    "proposed by multilingual similarity"
+   ],
+   "rules": [
+    "xlang"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "V027",
+  "window": "2026-10-05-live",
+  "split": "development",
+  "items": [
+   {
+    "id": "s-2426",
+    "published_at": "2026-10-04 20:43:59.000000",
+    "source": "Europa Press Internacional",
+    "source_type": "rss",
+    "lang": "es",
+    "title": "Bolsonaro gana la primera vuelta en Brasil con el 47% de los votos y disputará contra Lula (45%) la segunda vuelta",
+    "excerpt": "El candidato ultraderechista del Partido Liberal (PL) a la Presidencia de Brasil e hijo del expresidente Jair Bolsonaro, Flávio Bolsonaro, ha ganado la primera vuelta de las elecciones en Brasil con un 47,17% de los sufragios. Su rival y presidente saliente, Luiz Inácio Lula da Silva, ha quedado cuatro puntos por debajo (45,00%)."
+   },
+   {
+    "id": "s-2548",
+    "published_at": "2026-10-05 12:52:32.000000",
+    "source": "France 24",
+    "source_type": "rss",
+    "lang": "en",
+    "title": "Brazil presidential election: 'Bolsonaro being ahead is a surprise,' researcher says",
+    "excerpt": "Far-right candidate Flavio Bolsonaro has pulled off a surprise win in the first round of Brazil’s presidential election. He defied most polls to win with 47 percent, compared to 45 percent for leftist incumbent Luiz Inacio Lula de Silva. We spoke to Thomas Zicman de Barros, a research fellow at CEVIPOF, the political research centre at Sciences Po University, and columnist for our sister radio station RFI. He told us that never before in Brazilian history has a candidate who was behind in the first round then succeeded in the second."
+   }
+  ],
+  "multilingual": true,
+  "flags": [],
+  "system": {
+   "relation": "cross-language candidate",
+   "why": [
+    "proposed by multilingual similarity"
+   ],
+   "rules": [
+    "xlang"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "V028",
+  "window": "2026-09-30-multilingual",
+  "split": "development",
+  "items": [
+   {
+    "id": "sx-79",
+    "published_at": "2026-09-30 05:02:20.000000",
+    "source": "Europa Press Internacional",
+    "source_type": "rss",
+    "lang": "es",
+    "title": "El Senado de EEUU rechaza votar una resolución acerca de la violencia en Cisjordania tras el último ataque de colonos",
+    "excerpt": "El Departamento de Estado reedita su postura tras la agresión de colonos a periodistas de NBC: \"Condenamos la violencia criminal por parte de cualquier grupo\""
+   },
+   {
+    "id": "sx-211",
+    "published_at": "2026-09-30 02:26:20.000000",
+    "source": "Al Jazeera",
+    "source_type": "rss",
+    "lang": "en",
+    "title": "US Senate blocks resolution seeking report on Americans killed in West Bank",
+    "excerpt": "The resolution cites a &#039;lack of accountability&#039; by Israel&#039;s government and an &#039;inability to secure justice&#039; by the US."
+   }
+  ],
+  "multilingual": true,
+  "flags": [],
+  "system": {
+   "relation": "cross-language candidate",
+   "why": [
+    "proposed by multilingual similarity"
+   ],
+   "rules": [
+    "xlang"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "V029",
+  "window": "2026-10-05-live",
+  "split": "development",
+  "items": [
+   {
+    "id": "s-2600",
+    "published_at": "2026-10-05 07:05:00.000000",
+    "source": "Il Sole 24 Ore Mondo",
+    "source_type": "rss",
+    "lang": "it",
+    "title": "Gran Bretagna, sì dei Verdi a mozione che equipara sionismo a forma di razzismo",
+    "excerpt": "Il Partito Verde britannico, di orientamento di sinistra, ha votato a favore di una mozione che definisce il sionismo come una forma di razzismo, suscitando dure reazioni da parte di..."
+   },
+   {
+    "id": "s-2832",
+    "published_at": "2026-10-05 13:03:09.000000",
+    "source": "Al Jazeera",
+    "source_type": "rss",
+    "lang": "en",
+    "title": "Before UK Greens, who else has equated Zionism with racism?",
+    "excerpt": "Israel condemns the move as the party&#039;s vote causes an uproar, including among party members."
+   }
+  ],
+  "multilingual": true,
+  "flags": [],
+  "system": {
+   "relation": "cross-language candidate",
+   "why": [
+    "proposed by multilingual similarity"
+   ],
+   "rules": [
+    "xlang"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "V030",
+  "window": "2026-10-05-live",
+  "split": "development",
+  "items": [
+   {
+    "id": "s-2305",
+    "published_at": "2026-10-05 01:55:50.000000",
+    "source": "Al Jazeera",
+    "source_type": "rss",
+    "lang": "en",
+    "title": "Brazil’s presidential race: Three key takeaways from the first round",
+    "excerpt": "Flavio Bolsonaro beat polling expectations as Brazil’s right gained ground, setting up October 25 run-off with Lula."
+   },
+   {
+    "id": "s-2444",
+    "published_at": "2026-10-05 10:46:37.000000",
+    "source": "ANSA Mondo",
+    "source_type": "rss",
+    "lang": "it",
+    "title": "Astensione record in Brasile, il 21,08% non ha votato al primo turno",
+    "excerpt": "Si tratta del livello più alto registrato dalle elezioni del 1998 (21,5%)"
+   }
+  ],
+  "multilingual": true,
+  "flags": [],
+  "system": {
+   "relation": "cross-language candidate",
+   "why": [
+    "proposed by multilingual similarity"
+   ],
+   "rules": [
+    "xlang"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "V031",
+  "window": "2026-10-05-live",
+  "split": "development",
+  "items": [
+   {
+    "id": "s-2224",
+    "published_at": "2026-10-04 03:42:15.000000",
+    "source": "BBC World",
+    "source_type": "rss",
+    "lang": "en",
+    "title": "'Anger in the streets': Tens of thousands protest in Spain over housing crisis",
+    "excerpt": "More than 50 protests took place on Saturday after the government failed to get emergency legislation through parliament."
+   },
+   {
+    "id": "s-2568",
+    "published_at": "2026-10-04 17:28:00.000000",
+    "source": "Rai News Esteri",
+    "source_type": "rss",
+    "lang": "it",
+    "title": "Casa e scuola: il filo rosso che lega le proteste in Europa",
+    "excerpt": "In Spagna per il diritto alla casa, in Francia l'erosione allo studio accende lo scontento dei più giovani"
+   }
+  ],
+  "multilingual": true,
+  "flags": [],
+  "system": {
+   "relation": "cross-language candidate",
+   "why": [
+    "proposed by multilingual similarity"
+   ],
+   "rules": [
+    "xlang"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "V032",
+  "window": "2026-09-30-multilingual",
+  "split": "development",
+  "items": [
+   {
+    "id": "sx-238",
+    "published_at": "2026-09-29 19:04:00.000000",
+    "source": "Il Sole 24 Ore Mondo",
+    "source_type": "rss",
+    "lang": "it",
+    "title": "Trump, per Ai solo autoregolamentazione. Firmato l’ordine che cambia il nome in Super Intelligence",
+    "excerpt": "Pranzo alla Casa Bianca con decine di protagonisti dell’intelligenza artificiale americana per inaugurare la nuova era della Super Intelligenza. Nessuna menzione di rischi, crisi, e incidenti anche se forse nascerà un comitato consultivo di supervisione."
+   },
+   {
+    "id": "sx-22",
+    "published_at": "2026-09-29 21:21:06.000000",
+    "source": "White House",
+    "source_type": "rss",
+    "lang": "en",
+    "title": "Fact Sheet: President Donald J. Trump Inaugurates The Era of Super Intelligence",
+    "excerpt": "News\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\t\t\n\t\n\t\t\n\t\t\n\t\t\tSearch\n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\n\t\t\t\n\t\t\t\t\n\t\t\t\t\tSelect Category\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\tAll News\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\tBriefings &amp; Statements\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\tAll Presidential Actions\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\tExecutive Orders\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\tNominations &amp; Appointments\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\tPresidential Memoranda\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\tProclamations\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\tFact Sheets\t\t\t\t\t\t\t\n\t\t\t\t\t\t"
+   }
+  ],
+  "multilingual": true,
+  "flags": [],
+  "system": {
+   "relation": "cross-language candidate",
+   "why": [
+    "proposed by multilingual similarity"
+   ],
+   "rules": [
+    "xlang"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "V033",
+  "window": "2026-10-05-live",
+  "split": "development",
+  "items": [
+   {
+    "id": "s-2545",
+    "published_at": "2026-10-05 13:00:14.000000",
+    "source": "France 24",
+    "source_type": "rss",
+    "lang": "en",
+    "title": "US bombers leave UK air base amid 'new threats': What we know so far",
+    "excerpt": "The United States confirmed that it had withdrawn all B-1 bombers from the British airbase of RAF Fairford, reportedly due to \"new threats,\" with Britain's government insisting Monday the site is safe. France 24's Philip Turle takes a look at what we know so far."
+   },
+   {
+    "id": "s-2623",
+    "published_at": "2026-10-05 07:42:43.000000",
+    "source": "El País Internacional",
+    "source_type": "rss",
+    "lang": "es",
+    "title": "El Pentágono retira sus bombarderos de la base británica de Fairford tras el presunto intento de atentado",
+    "excerpt": "Un bombardero A B‑1B Lancer estadounidense aterriza el martes pasado en la base de la RAF de Fairford."
+   }
+  ],
+  "multilingual": true,
+  "flags": [],
+  "system": {
+   "relation": "cross-language candidate",
+   "why": [
+    "proposed by multilingual similarity"
+   ],
+   "rules": [
+    "xlang"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "V034",
+  "window": "2026-09-30-multilingual",
+  "split": "development",
+  "items": [
+   {
+    "id": "sx-396",
+    "published_at": "2026-09-29 12:00:00.000000",
+    "source": "UN News",
+    "source_type": "rss",
+    "lang": "en",
+    "title": "World News in Brief: Deadly Myanmar strikes as Malaysia begins deportations, new emergency funding released, Gaza and West Bank update",
+    "excerpt": "The UN chief on Tuesday strongly condemned an airstrike that reportedly killed at least 50 people at a market in Myanmar’s Rakhine state and called for those responsible to be held to account."
+   },
+   {
+    "id": "sx-184",
+    "published_at": "2026-09-30 02:37:23.000000",
+    "source": "France 24 Español",
+    "source_type": "rss",
+    "lang": "es",
+    "title": "Myanmar: ataque aéreo contra un mercado deja al menos 50 muertos",
+    "excerpt": "Un ataque aéreo del Ejército de Myanmar contra un concurrido mercado en Rakáin, dejó al menos 50 muertos y cerca de 60 heridos. Entre las víctimas se encontraban comerciantes, compradores y transeúntes que se encontraban en la zona al momento del bombardeo, incluyendo mujeres y niños. Pobladores de la zona rechazaron los actos del Ejército y niegan lazos con las milicias que controlan Rakáin."
+   }
+  ],
+  "multilingual": true,
+  "flags": [],
+  "system": {
+   "relation": "cross-language candidate",
+   "why": [
+    "proposed by multilingual similarity"
+   ],
+   "rules": [
+    "xlang"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "V035",
+  "window": "2026-10-05-live",
+  "split": "development",
+  "items": [
+   {
+    "id": "s-2968",
+    "published_at": "2026-10-05 15:18:08.000000",
+    "source": "ANSA Mondo",
+    "source_type": "rss",
+    "lang": "it",
+    "title": "'Shin Bet avverte il governo, Hamas pronto ad attacco a ridosso del voto'",
+    "excerpt": "Durante il gabinetto\n\npolitico-militare israeliano di ieri sera, il capo dello Shin\n\nBet David Zini, ha presentato ai ministri un'allerta\n\nd'intelligence specifica e preoccupante: Hamas sta\n\nintensificando gli sforzi per organizzare un attacco complesso o\n\nun'operazione mirata di rapimento. Lo riferisce Channel 12.Secondo le valutazioni, Hamas mira a lanciare l'operazione in\n\nprossimità delle elezioni del 27 ottobre o nell'immediato\n\nperiodo successivo, con l'intento di generare un forte impatto\n\nmediatico, perturbare l'agenda politica israeliana e influenzare\n\nla situazione operativa. L'appar"
+   },
+   {
+    "id": "s-2976",
+    "published_at": "2026-10-05 15:05:32.000000",
+    "source": "South China Morning Post",
+    "source_type": "rss",
+    "lang": "en",
+    "title": "‘There will be no Hamas rule in Gaza,’ Netanyahu vows at October 7 memorial",
+    "excerpt": "Israeli Prime Minister Benjamin Netanyahu on Monday vowed there would be no Hamas rule in Gaza as he attended a memorial event marking three years since the militant group’s October 7, 2023 attack.\nMonday is a national day of remembrance for the deadliest day in Israel’s history, with flags lowered to half mast on public buildings from 6.29 am, the time the attack began.\nSpeaking during a state ceremony at the Mount Herzl military cemetery in Jerusalem, Netanyahu said “we have achieved enormous..."
+   }
+  ],
+  "multilingual": true,
+  "flags": [],
+  "system": {
+   "relation": "cross-language candidate",
+   "why": [
+    "proposed by multilingual similarity"
+   ],
+   "rules": [
+    "xlang"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "V036",
+  "window": "2026-10-05-live",
+  "split": "development",
+  "items": [
+   {
+    "id": "s-2603",
+    "published_at": "2026-10-05 05:16:00.000000",
+    "source": "Il Sole 24 Ore Mondo",
+    "source_type": "rss",
+    "lang": "it",
+    "title": "Sanchez convoca elezioni anticipate: «La scelta è tra retrocedere con l’ultradestra o avanzare»",
+    "excerpt": "Il premier spagnolo annuncia la convocazione di elezioni anticipate per domenica 29 novembre"
+   },
+   {
+    "id": "s-3147",
+    "published_at": "2026-10-05 18:44:26.000000",
+    "source": "France 24 Español",
+    "source_type": "rss",
+    "lang": "es",
+    "title": "España: ¿Qué llevó a Pedro Sánchez a convocar elecciones anticipadas?",
+    "excerpt": "España celebrará elecciones generales anticipadas el próximo 29 de noviembre tras la decisión del presidente del Gobierno, Pedro Sánchez, de disolver las Cortes. El anuncio llega después de la derrota parlamentaria de los decretos de vivienda impulsados por el Ejecutivo."
+   }
+  ],
+  "multilingual": true,
+  "flags": [],
+  "system": {
+   "relation": "cross-language candidate",
+   "why": [
+    "proposed by multilingual similarity"
+   ],
+   "rules": [
+    "xlang"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "V037",
+  "window": "2026-10-05-live",
+  "split": "development",
+  "items": [
+   {
+    "id": "s-2618",
+    "published_at": "2026-10-05 10:17:38.000000",
+    "source": "El País Internacional",
+    "source_type": "rss",
+    "lang": "es",
+    "title": "Rusia pone bajo observación a cientos de personas tras morir una investigadora de un laboratorio contra la peste",
+    "excerpt": "Trabajos de desinfección de coranavirus en la estación de tren de Yaroslavsky en Moscú, el 10 de noviembre de 2022."
+   },
+   {
+    "id": "s-2928",
+    "published_at": "2026-10-05 11:58:00.000000",
+    "source": "DW World",
+    "source_type": "rss",
+    "lang": "en",
+    "title": "Suspected pneumonic plague in Siberia: What we know about the disease",
+    "excerpt": "A worker at a plague research institute in Siberia has died, and nearly 200 of her contacts are under medical observation. Russian authorities deny a link to the bacterial infection. The US is monitoring the situation."
+   }
+  ],
+  "multilingual": true,
+  "flags": [],
+  "system": {
+   "relation": "cross-language candidate",
+   "why": [
+    "proposed by multilingual similarity"
+   ],
+   "rules": [
+    "xlang"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "V038",
+  "window": "2026-10-05-live",
+  "split": "development",
+  "items": [
+   {
+    "id": "s-3146",
+    "published_at": "2026-10-05 16:55:32.000000",
+    "source": "Europa Press Internacional",
+    "source_type": "rss",
+    "lang": "es",
+    "title": "Israel asegura que ha matado ya a 4.000 de los 6.000 \"terroristas\" del 7 de octubre de 2023",
+    "excerpt": "El ministro de Defensa de Israel, Israel Katz, ha asegurado este lunes que las fuerzas militares israelíes han acabado ya con la vida de 4.000 de los 6.000 milicianos palestinos que participaron en el asalto contra territorio israelí desde la Franja de Gaza del 7 de octubre de 2023."
+   },
+   {
+    "id": "s-3400",
+    "published_at": "2026-10-05 20:49:35.000000",
+    "source": "Al Jazeera",
+    "source_type": "rss",
+    "lang": "en",
+    "title": "Israeli forces kill one, injure several in occupied West Bank",
+    "excerpt": "Palestinians in West Bank are suffering increasing Israeli violence and repression."
+   }
+  ],
+  "multilingual": true,
+  "flags": [],
+  "system": {
+   "relation": "cross-language candidate",
+   "why": [
+    "proposed by multilingual similarity"
+   ],
+   "rules": [
+    "xlang"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "V039",
+  "window": "2026-09-30-multilingual",
+  "split": "development",
+  "items": [
+   {
+    "id": "sx-263",
+    "published_at": "2026-09-29 18:24:27.000000",
+    "source": "El País Internacional",
+    "source_type": "rss",
+    "lang": "es",
+    "title": "Trump lanza una página oficial de información sobre el Gobierno de EE UU que le desmiente",
+    "excerpt": "El presidente de Estados Unidos, Donald Trump, en el acto de presentación de la plataforma America.gov."
+   },
+   {
+    "id": "sx-26",
+    "published_at": "2026-09-29 14:45:35.000000",
+    "source": "White House",
+    "source_type": "rss",
+    "lang": "en",
+    "title": "Fact Sheet: President Donald J. Trump Streamlines Access to Government Services Through America.gov",
+    "excerpt": "News\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\t\t\n\t\n\t\t\n\t\t\n\t\t\tSearch\n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\n\t\t\t\n\t\t\t\t\n\t\t\t\t\tSelect Category\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\tAll News\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\tBriefings &amp; Statements\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\tAll Presidential Actions\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\tExecutive Orders\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\tNominations &amp; Appointments\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\tPresidential Memoranda\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\tProclamations\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\tFact Sheets\t\t\t\t\t\t\t\n\t\t\t\t\t\t"
+   }
+  ],
+  "multilingual": true,
+  "flags": [],
+  "system": {
+   "relation": "cross-language candidate",
+   "why": [
+    "proposed by multilingual similarity"
+   ],
+   "rules": [
+    "xlang"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "V040",
+  "window": "2026-09-30-multilingual",
+  "split": "development",
+  "items": [
+   {
+    "id": "sx-76",
+    "published_at": "2026-09-30 03:45:08.000000",
+    "source": "Europa Press Internacional",
+    "source_type": "rss",
+    "lang": "es",
+    "title": "Al menos 440 detenidos en Francia en protestas estudiantiles unidas a la huelga de cientos de miles en el sector público",
+    "excerpt": "El sindicato CGT denuncia las condiciones de Bomberos y sanitarios e insta al Gobierno a revisar su presupuesto antes de presentarlo el jueves"
+   },
+   {
+    "id": "sx-88",
+    "published_at": "2026-09-29 21:55:13.000000",
+    "source": "BBC World",
+    "source_type": "rss",
+    "lang": "en",
+    "title": "More than 400 detained as France student protests escalate",
+    "excerpt": "Students have been protesting conditions and resources in high schools since last week."
+   }
+  ],
+  "multilingual": true,
+  "flags": [],
+  "system": {
+   "relation": "cross-language candidate",
+   "why": [
+    "proposed by multilingual similarity"
+   ],
+   "rules": [
+    "xlang"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "V041",
+  "window": "2026-10-05-live",
+  "split": "development",
+  "items": [
+   {
+    "id": "s-2297",
+    "published_at": "2026-10-05 05:08:23.000000",
+    "source": "Al Jazeera",
+    "source_type": "rss",
+    "lang": "en",
+    "title": "Bolsonaro beats expectations in Brazil vote, faces Lula in runoff",
+    "excerpt": "Brazil’s presidential election is heading to a run-off after Bolsonaro and Lula both fell short of the 50% needed to win"
+   },
+   {
+    "id": "s-2595",
+    "published_at": "2026-10-05 02:49:22.000000",
+    "source": "France 24 Español",
+    "source_type": "rss",
+    "lang": "es",
+    "title": "Lula y Bolsonaro van al balotaje: ¿Es posible disminuir el Estado brasileño?",
+    "excerpt": "Tras los resultados electorales en Brasil, que llevaron al balotaje al presidente y candidato de izquierda, Luiz Inácio Lula da Silva, y al senador de ultraderecha, Flávio Bolsonaro, el debate sobre el tamaño del Estado vuelve a cobrar relevancia, en un contexto regional donde varios países discuten reducir su aparato estatal. Bolsonaro ha propuesto eliminar al menos 10 ministerios como parte de su plan de gobierno. Para analizar el tema hablamos con José Luis Oreiro, profesor del departamento de Economía de la Universidad de Brasilia."
+   }
+  ],
+  "multilingual": true,
+  "flags": [],
+  "system": {
+   "relation": "cross-language candidate",
+   "why": [
+    "proposed by multilingual similarity"
+   ],
+   "rules": [
+    "xlang"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "V042",
+  "window": "2026-10-05-live",
+  "split": "development",
+  "items": [
+   {
+    "id": "s-2593",
+    "published_at": "2026-10-05 03:11:09.000000",
+    "source": "France 24 Español",
+    "source_type": "rss",
+    "lang": "es",
+    "title": "Lula y Bolsonaro se enfrentan en el balotaje en Brasil: ¿qué se puede concluir de la primera vuelta?",
+    "excerpt": "El senador de extrema derecha Flávio Bolsonaro y el mandatario de izquierda Luiz Inácio Lula da Silva irán a una segunda vuelta en las elecciones presidenciales de Brasil, según los resultados de los comicios del 4 de octubre, con casi el 100% escrutado. ¿Qué se puede concluir? Lo analizamos con nuestros invitados: Simone Pitta, abogada y doctora en Ciencia Política de la Universidad de los Andes; Juan Agulló, sociólogo y doctor en Sociología por la École des Hautes Études en Sciences Sociales de París; y José Luis Oreiro, profesor del departamento de Economía de la Universidad de Brasilia."
+   },
+   {
+    "id": "s-2575",
+    "published_at": "2026-10-05 12:21:00.000000",
+    "source": "Rai News Esteri",
+    "source_type": "rss",
+    "lang": "it",
+    "title": "Presidenziali in Brasile, Flavio Bolsonaro a sorpresa supera Lula di 2 punti. Si va al ballottaggio",
+    "excerpt": "Il candidato di destra al 47%: \"Il Brasile vuole cambiare\". Il presidente uscente al 45%: \"Sono bravo ai supplementari\". Scelta rinviata al secondo turno del 25 ottobre"
+   }
+  ],
+  "multilingual": true,
+  "flags": [],
+  "system": {
+   "relation": "cross-language candidate",
+   "why": [
+    "proposed by multilingual similarity"
+   ],
+   "rules": [
+    "xlang"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "V043",
+  "window": "2026-09-30-multilingual",
+  "split": "development",
+  "items": [
+   {
+    "id": "sx-491",
+    "published_at": "2026-09-29 14:40:57.000000",
+    "source": "Defense News",
+    "source_type": "rss",
+    "lang": "en",
+    "title": "US forces exiting Iraq after 2 decades, leaving opening for Iran",
+    "excerpt": "U.S. forces are set to depart from their last bases in Iraq by Wednesday, a move celebrated as a victory by Iran and its allies, who now have deep influence in the country where 4,500 Americans died during more than two decades of war.Iraqi security experts say the withdrawal — agreed to in 2024 under U.S. President Joe Biden and carried out by Donald Trump’s administration even as it wages war against Iran — could give Tehran and its allies free rein, while also allowing other U.S. enemies, including the Islamic State, to stage a comeback.“Iran stands to benefit strategically from the coaliti"
+   },
+   {
+    "id": "sx-140",
+    "published_at": "2026-09-29 15:20:00.000000",
+    "source": "Rai News Esteri",
+    "source_type": "rss",
+    "lang": "it",
+    "title": "Iraq, gli ultimi soldati americani verso l’uscita: la lunga ombra di una guerra",
+    "excerpt": "La partenza dell’ultimo soldato non è ancora stata confermata. Quando avverrà, la scena sembrerà chiudere una storia cominciata ventitré anni fa. In realtà quella storia ha già avuto una prima uscita e un ritorno"
+   }
+  ],
+  "multilingual": true,
+  "flags": [],
+  "system": {
+   "relation": "cross-language candidate",
+   "why": [
+    "proposed by multilingual similarity"
+   ],
+   "rules": [
+    "xlang"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "V044",
+  "window": "2026-09-30-multilingual",
+  "split": "development",
+  "items": [
+   {
+    "id": "sx-237",
+    "published_at": "2026-09-30 05:33:00.000000",
+    "source": "Il Sole 24 Ore Mondo",
+    "source_type": "rss",
+    "lang": "it",
+    "title": "Ucraina: missili balistici russi su Kiev, 2 morti. La Polonia chiude due aeroporti",
+    "excerpt": "Nella notte le forze armate russe hanno lanciato un attacco su Kiev con missili balistici. Numerose esplosioni si sono udite nella capitale ucraina. In alcune zone della città ci sono..."
+   },
+   {
+    "id": "sx-99",
+    "published_at": "2026-09-29 23:33:34.000000",
+    "source": "BBC World",
+    "source_type": "rss",
+    "lang": "en",
+    "title": "Ukraine's prized steel industry left in ruins by Russian missile campaign",
+    "excerpt": "Ukraine's remaining steelworks, a vital part of its economy, have all but ground to a halt because of relentless attacks."
+   }
+  ],
+  "multilingual": true,
+  "flags": [],
+  "system": {
+   "relation": "cross-language candidate",
+   "why": [
+    "proposed by multilingual similarity"
+   ],
+   "rules": [
+    "xlang"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "V045",
+  "window": "2026-10-05-live",
+  "split": "development",
+  "items": [
+   {
+    "id": "s-2553",
+    "published_at": "2026-10-05 09:49:23.000000",
+    "source": "France 24",
+    "source_type": "rss",
+    "lang": "en",
+    "title": "US withdraws all bombers from UK base at centre of suspected terror attack",
+    "excerpt": "The United States has removed its B-1 bombers from a British air base one week after five men were arrested nearby on suspicion of preparing terrorist acts, a ‌suspected plot that British Prime Minister Andy Burnham said was likely backed by Iran. The planes had been ⁠stationed at RAF Fairford, which had recently been used for US strikes on Iran."
+   },
+   {
+    "id": "s-2639",
+    "published_at": "2026-10-04 22:24:58.000000",
+    "source": "Clarín Mundo",
+    "source_type": "rss",
+    "lang": "es",
+    "title": "Estados Unidos retiró sus bombarderos de una base del Reino Unido tras descubrir un plan de atentado",
+    "excerpt": "• La detención de un ciudadano con doble nacionalidad en Londres encendió las alarmas en el complejo militar ubicado a 160 kilómetros de la capital.\n• Las autoridades británicas atribuyeron la maniobra a Teherán, aunque el gobierno iraní desmintió rotundamente cualquier vinculación."
+   }
+  ],
+  "multilingual": true,
+  "flags": [],
+  "system": {
+   "relation": "cross-language candidate",
+   "why": [
+    "proposed by multilingual similarity"
+   ],
+   "rules": [
+    "xlang"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "V046",
+  "window": "2026-09-30-multilingual",
+  "split": "development",
+  "items": [
+   {
+    "id": "sx-168",
+    "published_at": "2026-09-29 21:05:00.000000",
+    "source": "France 24",
+    "source_type": "rss",
+    "lang": "en",
+    "title": "Trump says he doesn't want to work with China on AI safety",
+    "excerpt": "US President Donald Trump discussed AI development with dozens of tech bosses at the White House on Tuesday. Ahead of his \"super intelligence\" luncheon, Trump launched a new AI-powered website for government services, vowing not to stifle the technology's growth. He also said he didn't want to work with Chinese President Xi Jinping on AI oversight. Plus, dozens of dogs are rescued from a breeding farm in South Korea as the country prepares for a complete phaseout of the dog meat industry."
+   },
+   {
+    "id": "sx-273",
+    "published_at": "2026-09-29 16:03:03.000000",
+    "source": "Clarín Mundo",
+    "source_type": "rss",
+    "lang": "es",
+    "title": "\"Jamás frenaré el crecimiento\" de la IA, dice Trump antes de reunirse con los mayores ejecutivos del sector",
+    "excerpt": "Lo dijo al presentar el portal America.gov, una plataforma que utiliza IA para agilizar trámites administrativos como la solicitud de pasaportes.El jefe de Estado convocó para este martes a un almuerzo en la Casa Blanca a Elon Musk, Jeff Bezos, Satya Nadella, Jensen Huang y Dario Amodei."
+   }
+  ],
+  "multilingual": true,
+  "flags": [],
+  "system": {
+   "relation": "cross-language candidate",
+   "why": [
+    "proposed by multilingual similarity"
+   ],
+   "rules": [
+    "xlang"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "V047",
+  "window": "2026-09-30-multilingual",
+  "split": "development",
+  "items": [
+   {
+    "id": "sx-166",
+    "published_at": "2026-09-29 23:17:13.000000",
+    "source": "France 24",
+    "source_type": "rss",
+    "lang": "en",
+    "title": "US Supreme Court lifts restrictions on third-country deportations",
+    "excerpt": "The US Supreme Court on Tuesday cleared the Trump administration to resume deporting migrants to countries other than their own while it considers the legality of the practice. The court’s conservative majority temporarily blocked safeguards requiring deportees to receive notice of where they would be sent and time to raise persecution concerns."
+   },
+   {
+    "id": "sx-175",
+    "published_at": "2026-09-30 03:31:43.000000",
+    "source": "France 24 Español",
+    "source_type": "rss",
+    "lang": "es",
+    "title": "¿Está amparada por el derecho internacional la deportación a terceros países promovida por Trump?",
+    "excerpt": "La Corte Suprema de Estados Unidos autorizó de forma temporal al Gobierno de Donald Trump a reanudar las deportaciones aceleradas de migrantes hacia países distintos a sus lugares de origen, mientras se analiza la legalidad definitiva de esta política. El derecho internacional cuestiona que las personas puedan ser enviados a países en los que pueden ser víctimas de crímenes. Haim Vásquez, abogado de inmigración y exfiscal criminal, aborda el tema en France 24."
+   }
+  ],
+  "multilingual": true,
+  "flags": [],
+  "system": {
+   "relation": "cross-language candidate",
+   "why": [
+    "proposed by multilingual similarity"
+   ],
+   "rules": [
+    "xlang"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "V048",
+  "window": "2026-09-30-multilingual",
+  "split": "development",
+  "items": [
+   {
+    "id": "sx-275",
+    "published_at": "2026-09-30 08:14:48.000000",
+    "source": "Kyiv Independent",
+    "source_type": "rss",
+    "lang": "en",
+    "title": "Russian attacks kill at least 6, injure 34 across Ukraine as Kyiv faces another overnight missile, drone attack",
+    "excerpt": "The Air Force said Russia attacked Ukraine overnight with Zircon and Onyx anti-ship missiles, Iskander-M and S-400 ballistic missiles, and 188 attack drones of various types."
+   },
+   {
+    "id": "sx-237",
+    "published_at": "2026-09-30 05:33:00.000000",
+    "source": "Il Sole 24 Ore Mondo",
+    "source_type": "rss",
+    "lang": "it",
+    "title": "Ucraina: missili balistici russi su Kiev, 2 morti. La Polonia chiude due aeroporti",
+    "excerpt": "Nella notte le forze armate russe hanno lanciato un attacco su Kiev con missili balistici. Numerose esplosioni si sono udite nella capitale ucraina. In alcune zone della città ci sono..."
+   }
+  ],
+  "multilingual": true,
+  "flags": [],
+  "system": {
+   "relation": "cross-language candidate",
+   "why": [
+    "proposed by multilingual similarity"
+   ],
+   "rules": [
+    "xlang"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "V049",
+  "window": "2026-10-05-live",
+  "split": "development",
+  "items": [
+   {
+    "id": "s-2305",
+    "published_at": "2026-10-05 01:55:50.000000",
+    "source": "Al Jazeera",
+    "source_type": "rss",
+    "lang": "en",
+    "title": "Brazil’s presidential race: Three key takeaways from the first round",
+    "excerpt": "Flavio Bolsonaro beat polling expectations as Brazil’s right gained ground, setting up October 25 run-off with Lula."
+   },
+   {
+    "id": "s-2595",
+    "published_at": "2026-10-05 02:49:22.000000",
+    "source": "France 24 Español",
+    "source_type": "rss",
+    "lang": "es",
+    "title": "Lula y Bolsonaro van al balotaje: ¿Es posible disminuir el Estado brasileño?",
+    "excerpt": "Tras los resultados electorales en Brasil, que llevaron al balotaje al presidente y candidato de izquierda, Luiz Inácio Lula da Silva, y al senador de ultraderecha, Flávio Bolsonaro, el debate sobre el tamaño del Estado vuelve a cobrar relevancia, en un contexto regional donde varios países discuten reducir su aparato estatal. Bolsonaro ha propuesto eliminar al menos 10 ministerios como parte de su plan de gobierno. Para analizar el tema hablamos con José Luis Oreiro, profesor del departamento de Economía de la Universidad de Brasilia."
+   }
+  ],
+  "multilingual": true,
+  "flags": [],
+  "system": {
+   "relation": "cross-language candidate",
+   "why": [
+    "proposed by multilingual similarity"
+   ],
+   "rules": [
+    "xlang"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "V050",
+  "window": "2026-10-05-live",
+  "split": "development",
+  "items": [
+   {
+    "id": "s-2593",
+    "published_at": "2026-10-05 03:11:09.000000",
+    "source": "France 24 Español",
+    "source_type": "rss",
+    "lang": "es",
+    "title": "Lula y Bolsonaro se enfrentan en el balotaje en Brasil: ¿qué se puede concluir de la primera vuelta?",
+    "excerpt": "El senador de extrema derecha Flávio Bolsonaro y el mandatario de izquierda Luiz Inácio Lula da Silva irán a una segunda vuelta en las elecciones presidenciales de Brasil, según los resultados de los comicios del 4 de octubre, con casi el 100% escrutado. ¿Qué se puede concluir? Lo analizamos con nuestros invitados: Simone Pitta, abogada y doctora en Ciencia Política de la Universidad de los Andes; Juan Agulló, sociólogo y doctor en Sociología por la École des Hautes Études en Sciences Sociales de París; y José Luis Oreiro, profesor del departamento de Economía de la Universidad de Brasilia."
+   },
+   {
+    "id": "s-2533",
+    "published_at": "2026-10-05 00:27:00.000000",
+    "source": "DW World",
+    "source_type": "rss",
+    "lang": "en",
+    "title": "Brazil election: Bolsonaro and Lula head to runoff",
+    "excerpt": "Populist Flavio Bolsonaro has secured a thin lead over incumbent Luiz Inacio Lula da Silva, but the next president of Brazil will be decided in the runoff round, according to the country’s electoral court."
+   }
+  ],
+  "multilingual": true,
+  "flags": [],
+  "system": {
+   "relation": "cross-language candidate",
+   "why": [
+    "proposed by multilingual similarity"
+   ],
+   "rules": [
+    "xlang"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "V051",
+  "window": "2026-10-05-live",
+  "split": "development",
+  "items": [
+   {
+    "id": "s-2598",
+    "published_at": "2026-10-05 09:57:00.000000",
+    "source": "Il Sole 24 Ore Mondo",
+    "source_type": "rss",
+    "lang": "it",
+    "title": "Russia, donna morta in Siberia per peste: in 200 sotto osservazione",
+    "excerpt": "Una donna di 28 anni è morta di peste nella regione di Irkutsk, in Siberia, e 197 persone sono state poste sotto osservazione, alcune sono state ricoverate in ospedale. Ne..."
+   },
+   {
+    "id": "s-2582",
+    "published_at": "2026-10-05 12:46:26.000000",
+    "source": "France 24 Español",
+    "source_type": "rss",
+    "lang": "es",
+    "title": "¿Peste pulmonar en Siberia? Europa sigue el caso mientras Rusia pide calma",
+    "excerpt": "La muerte de una trabajadora de un instituto especializado en peste en Siberia encendió las alarmas ante la posibilidad de un caso de peste pulmonar, mientras Rusia intenta contener las especulaciones y asegura que los análisis no detectaron la bacteria. La Comisión Europea sigue el caso “muy de cerca” y mantiene contactos con las autoridades sanitarias europeas, aunque por ahora no existe confirmación de un brote en la región de Irkutsk."
+   }
+  ],
+  "multilingual": true,
+  "flags": [],
+  "system": {
+   "relation": "cross-language candidate",
+   "why": [
+    "proposed by multilingual similarity"
+   ],
+   "rules": [
+    "xlang"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "V052",
+  "window": "2026-09-30-multilingual",
+  "split": "development",
+  "items": [
+   {
+    "id": "sx-255",
+    "published_at": "2026-09-29 09:13:32.000000",
+    "source": "El País Internacional",
+    "source_type": "rss",
+    "lang": "es",
+    "title": "Rusia hipoteca su futuro económico por la guerra: defensa, seguridad y espionaje suman ya casi la mitad del gasto público",
+    "excerpt": "El presidente ruso, Vladímir Putin, el viernes pasado en San Petersburgo."
+   },
+   {
+    "id": "sx-287",
+    "published_at": "2026-09-29 15:32:30.000000",
+    "source": "Kyiv Independent",
+    "source_type": "rss",
+    "lang": "en",
+    "title": "After Nestle and Auchan seizures, Russia is coming for others",
+    "excerpt": "The recent Russian seizure of assets belonging to corporate giants Nestle and Auchan made headlines, all the more striking given the companies&apos; years of loyalty to the Kremlin regime, including throughout Russia&apos;s full-scale invasion of Ukraine.This action seems shocking, but should not be surprising. Fascist imperial"
+   }
+  ],
+  "multilingual": true,
+  "flags": [],
+  "system": {
+   "relation": "cross-language candidate",
+   "why": [
+    "proposed by multilingual similarity"
+   ],
+   "rules": [
+    "xlang"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "V053",
+  "window": "2026-10-05-live",
+  "split": "development",
+  "items": [
+   {
+    "id": "s-2422",
+    "published_at": "2026-10-05 12:26:40.000000",
+    "source": "Al Jazeera",
+    "source_type": "rss",
+    "lang": "en",
+    "title": "In Russia-occupied Oleshky, Ukrainians face hunger, drones and landmines",
+    "excerpt": "Ukrainians are turning to weeds for sustenance in a town where bodies are reportedly eaten by feral dogs."
+   },
+   {
+    "id": "s-2582",
+    "published_at": "2026-10-05 12:46:26.000000",
+    "source": "France 24 Español",
+    "source_type": "rss",
+    "lang": "es",
+    "title": "¿Peste pulmonar en Siberia? Europa sigue el caso mientras Rusia pide calma",
+    "excerpt": "La muerte de una trabajadora de un instituto especializado en peste en Siberia encendió las alarmas ante la posibilidad de un caso de peste pulmonar, mientras Rusia intenta contener las especulaciones y asegura que los análisis no detectaron la bacteria. La Comisión Europea sigue el caso “muy de cerca” y mantiene contactos con las autoridades sanitarias europeas, aunque por ahora no existe confirmación de un brote en la región de Irkutsk."
+   }
+  ],
+  "multilingual": true,
+  "flags": [],
+  "system": {
+   "relation": "cross-language candidate",
+   "why": [
+    "proposed by multilingual similarity"
+   ],
+   "rules": [
+    "xlang"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "V054",
+  "window": "2026-10-05-live",
+  "split": "development",
+  "items": [
+   {
+    "id": "s-2314",
+    "published_at": "2026-10-05 04:58:56.000000",
+    "source": "BBC World",
+    "source_type": "rss",
+    "lang": "en",
+    "title": "US air force removes all bombers from British military base RAF Fairford",
+    "excerpt": "A statement says all bombers deployed to RAF Fairford have been \"re-deployed to their home stations\" in the US."
+   },
+   {
+    "id": "s-2623",
+    "published_at": "2026-10-05 07:42:43.000000",
+    "source": "El País Internacional",
+    "source_type": "rss",
+    "lang": "es",
+    "title": "El Pentágono retira sus bombarderos de la base británica de Fairford tras el presunto intento de atentado",
+    "excerpt": "Un bombardero A B‑1B Lancer estadounidense aterriza el martes pasado en la base de la RAF de Fairford."
+   }
+  ],
+  "multilingual": true,
+  "flags": [],
+  "system": {
+   "relation": "cross-language candidate",
+   "why": [
+    "proposed by multilingual similarity"
+   ],
+   "rules": [
+    "xlang"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "V055",
+  "window": "2026-10-05-live",
+  "split": "development",
+  "items": [
+   {
+    "id": "s-2625",
+    "published_at": "2026-10-04 20:19:43.000000",
+    "source": "El País Internacional",
+    "source_type": "rss",
+    "lang": "es",
+    "title": "Brasil decide su futuro entre Lula y Bolsonaro, un estadista desgastado y el hijo de un ultra",
+    "excerpt": "El presidente Lula, el día 24 en São Gonçalo, y Flávio Bolsonaro, este sábado en Río."
+   },
+   {
+    "id": "s-2201",
+    "published_at": "2026-10-04 10:55:40.000000",
+    "source": "Al Jazeera",
+    "source_type": "rss",
+    "lang": "en",
+    "title": "Will Brazil’s Lula halt the right-wing wave sweeping Latin America?",
+    "excerpt": "Lula has remained a symbol for much of the global left amid the rise of the far right in Latin America."
+   }
+  ],
+  "multilingual": true,
+  "flags": [],
+  "system": {
+   "relation": "cross-language candidate",
+   "why": [
+    "proposed by multilingual similarity"
+   ],
+   "rules": [
+    "xlang"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "V056",
+  "window": "2026-10-05-live",
+  "split": "development",
+  "items": [
+   {
+    "id": "s-2551",
+    "published_at": "2026-10-05 10:09:38.000000",
+    "source": "France 24",
+    "source_type": "rss",
+    "lang": "en",
+    "title": "Trump names Jay Clayton as AI czar to lead 'Super Intelligence Force'",
+    "excerpt": "US President Donald Trump has named his National Intelligence Director Jay Clayton as America's \"Super Intelligence\" czar, as fears over AI grow. Also, oil markets react to Houthi attacks as well as export data, and France's fiscal woes drive the euro to a 17-month low."
+   },
+   {
+    "id": "s-2605",
+    "published_at": "2026-10-04 14:08:00.000000",
+    "source": "Il Sole 24 Ore Mondo",
+    "source_type": "rss",
+    "lang": "it",
+    "title": "Trump affida l’IA al capo dei Servizi: Clayton nuovo «zar» della Super Intelligence",
+    "excerpt": "Jay Clayton avrà 120 giorni per valutare rischi e opportunità dei sistemi più avanzati. Sullo sfondo la competizione con Pechino, il ruolo del Pentagono e il rapporto con le big tech"
+   }
+  ],
+  "multilingual": true,
+  "flags": [],
+  "system": {
+   "relation": "cross-language candidate",
+   "why": [
+    "proposed by multilingual similarity"
+   ],
+   "rules": [
+    "xlang"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "V057",
+  "window": "2026-10-05-live",
+  "split": "development",
+  "items": [
+   {
+    "id": "s-2633",
+    "published_at": "2026-10-05 00:39:44.000000",
+    "source": "Clarín Mundo",
+    "source_type": "rss",
+    "lang": "es",
+    "title": "A tres años del ataque de Hamas: la amenaza de un nuevo atentado reaviva las alarmas en Israel",
+    "excerpt": "La incursión armada de 2023 derivó en la jornada letal para el pueblo judío, con 1.219 asesinados y más de 250 secuestrados.Al cumplirse el tercer aniversario del ataque de Hamas, otro intento terrorista en un vuelo comercial reactivó las alertas de seguridad en Israel."
+   },
+   {
+    "id": "s-2606",
+    "published_at": "2026-10-04 13:55:00.000000",
+    "source": "Il Sole 24 Ore Mondo",
+    "source_type": "rss",
+    "lang": "it",
+    "title": "Dal 7 ottobre a oggi, i 3 anni che hanno cambiato il Medio Oriente in 30 date",
+    "excerpt": "Dall’attacco del 7 ottobre 2023 in cui Hamas uccise 1.300 israeliani e ne rapì 250 sono passati tre anni. La guerra che ne è seguita ha provocato, per le autorità..."
+   }
+  ],
+  "multilingual": true,
+  "flags": [],
+  "system": {
+   "relation": "cross-language candidate",
+   "why": [
+    "proposed by multilingual similarity"
+   ],
+   "rules": [
+    "xlang"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "V058",
+  "window": "2026-09-30-multilingual",
+  "split": "development",
+  "items": [
+   {
+    "id": "sx-490",
+    "published_at": "2026-09-29 14:52:40.000000",
+    "source": "Defense News",
+    "source_type": "rss",
+    "lang": "en",
+    "title": "Estonia blames Russia in arson attack on military robotics firm Milrem",
+    "excerpt": "GLASGOW, Scotland — Russian special services were behind the fire at a building used by an Estonian military robotics company last month, the government in Tallinn said on Tuesday. The finding comes after a six-week investigation by the Estonian Internal Security Service. In a press statement, the government said it could say “with full confidence that the arson attack on the building of defence industry company Milrem … was an act of sabotage commissioned by the special services of the Russian Federation.”A fire was spotted by residents in a Lasnamäe neighborhood building used by Milrem in th"
+   },
+   {
+    "id": "sx-262",
+    "published_at": "2026-09-29 11:27:02.000000",
+    "source": "El País Internacional",
+    "source_type": "rss",
+    "lang": "es",
+    "title": "Estonia acusa a Rusia del incendio en un fabricante de material militar",
+    "excerpt": "Un vehículo de Milrem Robotics, el 10 de septiembre en una feria en Londres."
+   }
+  ],
+  "multilingual": true,
+  "flags": [],
+  "system": {
+   "relation": "cross-language candidate",
+   "why": [
+    "proposed by multilingual similarity"
+   ],
+   "rules": [
+    "xlang"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "V059",
+  "window": "2026-09-30-multilingual",
+  "split": "development",
+  "items": [
+   {
+    "id": "sx-108",
+    "published_at": "2026-09-30 00:03:59.000000",
+    "source": "BBC Mundo",
+    "source_type": "rss",
+    "lang": "es",
+    "title": "Fatima Zahra El Mansouri, la primera mujer elegida primera ministra de Marruecos",
+    "excerpt": "Fatima Zahra El Mansouri fue designada por el rey en el cargo de primera ministra. Así se convierte en la primera mujer en el alto puesto y la segunda en liderar un gobierno en el mundo árabe."
+   },
+   {
+    "id": "sx-97",
+    "published_at": "2026-09-29 17:14:10.000000",
+    "source": "BBC World",
+    "source_type": "rss",
+    "lang": "en",
+    "title": "First female prime minister named in Morocco after winning elections",
+    "excerpt": "Her appointment by the king makes her only the second woman to lead a government in the Arab world."
+   }
+  ],
+  "multilingual": true,
+  "flags": [],
+  "system": {
+   "relation": "cross-language candidate",
+   "why": [
+    "proposed by multilingual similarity"
+   ],
+   "rules": [
+    "xlang"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "V060",
+  "window": "2026-09-30-multilingual",
+  "split": "development",
+  "items": [
+   {
+    "id": "sx-270",
+    "published_at": "2026-09-29 18:43:43.000000",
+    "source": "Clarín Mundo",
+    "source_type": "rss",
+    "lang": "es",
+    "title": "Presionado por las protestas, Pedro Sánchez anuncia decretos clave para enfrentar la crisis de la vivienda en España",
+    "excerpt": "Las medidas apuntan a frenar los desalojos y controlar los fondos buitres. Además,  los contratos de alquiler vigentes puedan extenderse automáticamente por dos años.Para que las normas mantengan sus efectos en el tiempo, el Parlamento tiene que aprobarlo dentro de los 30 días."
+   },
+   {
+    "id": "sx-241",
+    "published_at": "2026-09-29 14:59:00.000000",
+    "source": "Il Sole 24 Ore Mondo",
+    "source_type": "rss",
+    "lang": "it",
+    "title": "Spagna, Sánchez vara nuove misure contro la crisi abitativa: cosa cambia per affitti e sfratti",
+    "excerpt": "Dopo lo sfratto di una pensionata, centinaia di persone accampate a Puerta del Sol. Il governo approva due decreti per tutelare gli inquilini, mentre il deficit abitativo rischia di superare il milione di unità entro il 2028"
+   }
+  ],
+  "multilingual": true,
+  "flags": [],
+  "system": {
+   "relation": "cross-language candidate",
+   "why": [
+    "proposed by multilingual similarity"
+   ],
+   "rules": [
+    "xlang"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "G01",
+  "window": "2026-09-30-multilingual",
+  "split": "development",
+  "items": [
+   {
+    "id": "sx-100",
+    "published_at": "2026-09-29 01:12:52.000000",
+    "source": "BBC World",
+    "source_type": "rss",
+    "lang": "en",
+    "title": "Are Trump's US government funded ads illegal?",
+    "excerpt": "President Trump has faced criticism after fronting adverts which were paid for by the US government."
+   },
+   {
+    "id": "sx-170",
+    "published_at": "2026-09-29 20:56:32.000000",
+    "source": "France 24",
+    "source_type": "rss",
+    "lang": "en",
+    "title": "Public service announcement or Donald Trump propaganda?",
+    "excerpt": "The White House calls them public service announcements - like those used in past administrations. Almost everyone else doesn't agree, with three taxpayer-funded advertisements that glorify President Donald Trump drawing criticism from across the partisan divide. Legal experts say the ads violate federal laws on government propaganda, as France 24's Emerald Maxwell explains in this edition of Truth or Fake."
+   }
+  ],
+  "multilingual": false,
+  "flags": [
+   "owner-given"
+  ],
+  "system": {
+   "relation": "owner-given verdict",
+   "why": [
+    "R012: one matter, BBC / France 24"
+   ],
+   "rules": [
+    "given"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "G02",
+  "window": "2026-09-30-multilingual",
+  "split": "development",
+  "items": [
+   {
+    "id": "sx-132",
+    "published_at": "2026-09-29 20:36:00.000000",
+    "source": "Rai News Esteri",
+    "source_type": "rss",
+    "lang": "it",
+    "title": "Trump incontra i vertici Big Tech sulla sicurezza AI: \"Autoregolazione e nessun controllo federale\"",
+    "excerpt": "Un impegno \"moralmente vincolante\" a predisporre misure di salvaguardia. Zuckerberg: \"Controlli interni robusti\". Musk: \"L'esito più probabile? Un futuro di abbondanza\""
+   },
+   {
+    "id": "sx-168",
+    "published_at": "2026-09-29 21:05:00.000000",
+    "source": "France 24",
+    "source_type": "rss",
+    "lang": "en",
+    "title": "Trump says he doesn't want to work with China on AI safety",
+    "excerpt": "US President Donald Trump discussed AI development with dozens of tech bosses at the White House on Tuesday. Ahead of his \"super intelligence\" luncheon, Trump launched a new AI-powered website for government services, vowing not to stifle the technology's growth. He also said he didn't want to work with Chinese President Xi Jinping on AI oversight. Plus, dozens of dogs are rescued from a breeding farm in South Korea as the country prepares for a complete phaseout of the dog meat industry."
+   }
+  ],
+  "multilingual": true,
+  "flags": [
+   "owner-given"
+  ],
+  "system": {
+   "relation": "owner-given verdict",
+   "why": [
+    "R138: White House AI luncheon, it / en"
+   ],
+   "rules": [
+    "given"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "G03",
+  "window": "2026-09-30-multilingual",
+  "split": "development",
+  "items": [
+   {
+    "id": "sx-263",
+    "published_at": "2026-09-29 18:24:27.000000",
+    "source": "El País Internacional",
+    "source_type": "rss",
+    "lang": "es",
+    "title": "Trump lanza una página oficial de información sobre el Gobierno de EE UU que le desmiente",
+    "excerpt": "El presidente de Estados Unidos, Donald Trump, en el acto de presentación de la plataforma America.gov."
+   },
+   {
+    "id": "sx-168",
+    "published_at": "2026-09-29 21:05:00.000000",
+    "source": "France 24",
+    "source_type": "rss",
+    "lang": "en",
+    "title": "Trump says he doesn't want to work with China on AI safety",
+    "excerpt": "US President Donald Trump discussed AI development with dozens of tech bosses at the White House on Tuesday. Ahead of his \"super intelligence\" luncheon, Trump launched a new AI-powered website for government services, vowing not to stifle the technology's growth. He also said he didn't want to work with Chinese President Xi Jinping on AI oversight. Plus, dozens of dogs are rescued from a breeding farm in South Korea as the country prepares for a complete phaseout of the dog meat industry."
+   }
+  ],
+  "multilingual": true,
+  "flags": [
+   "owner-given"
+  ],
+  "system": {
+   "relation": "owner-given verdict",
+   "why": [
+    "R138: America.gov launch at the luncheon, es / en"
+   ],
+   "rules": [
+    "given"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "G04",
+  "window": "2026-10-03-live",
+  "split": "development",
+  "items": [
+   {
+    "id": "s-1124",
+    "published_at": "2026-09-29 12:14:50.000000",
+    "source": "BBC World",
+    "source_type": "rss",
+    "lang": null,
+    "title": "Spain announces new housing measures after protests over 87-year-old woman's eviction",
+    "excerpt": "The measures include a proposed ban on evictions until 2030 and the automatic renewal of tenant contracts."
+   },
+   {
+    "id": "s-1316",
+    "published_at": "2026-09-29 16:23:58.000000",
+    "source": "BBC World",
+    "source_type": "rss",
+    "lang": null,
+    "title": "Spain announces ban on evictions after protests over 87-year-old woman's removal from flat",
+    "excerpt": "The ban is part of a number of proposals that must be approved in parliament within 30 days."
+   }
+  ],
+  "multilingual": false,
+  "flags": [
+   "owner-given"
+  ],
+  "system": {
+   "relation": "owner-given verdict",
+   "why": [
+    "T008: Spain's eviction measures, same day"
+   ],
+   "rules": [
+    "given"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "G05",
+  "window": "2026-10-03-live",
+  "split": "development",
+  "items": [
+   {
+    "id": "s-1200",
+    "published_at": "2026-09-29 17:54:08.000000",
+    "source": "South China Morning Post",
+    "source_type": "rss",
+    "lang": null,
+    "title": "87-year-old woman whose eviction sparked protests in Spain is returning home",
+    "excerpt": "Spain’s coalition government said it had agreed on proposals including banning evictions until 2030 to address the country’s housing crisis, as the 87-year-old woman whose forced removal last week triggered protests accepted an offer to return home.\nHundreds of ‌people remained camped in one of Madrid’s main squares on Tuesday to protest Maricarmen Abascal’s removal from her home on a stretcher last Wednesday.\nThey are demanding legal reforms including a rent freeze and the automatic renewal of..."
+   },
+   {
+    "id": "s-1233",
+    "published_at": "2026-09-29 21:02:02.000000",
+    "source": "Al Jazeera",
+    "source_type": "rss",
+    "lang": null,
+    "title": "Spain protests: Evicted 87-year-old woman to return to Madrid home",
+    "excerpt": "The real estate firm backs down and restores her old rent after mass protests over Spain&#039;s housing crisis."
+   }
+  ],
+  "multilingual": false,
+  "flags": [
+   "owner-given"
+  ],
+  "system": {
+   "relation": "owner-given verdict",
+   "why": [
+    "T034: evicted woman returns home"
+   ],
+   "rules": [
+    "given"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "G06",
+  "window": "2026-10-03-live",
+  "split": "development",
+  "items": [
+   {
+    "id": "s-1525",
+    "published_at": "2026-10-01 04:14:43.000000",
+    "source": "South China Morning Post",
+    "source_type": "rss",
+    "lang": null,
+    "title": "Tennessee halts executions after Christa Pike survives 2 doses of lethal drug",
+    "excerpt": "Tennessee officials were unable to put Christa Pike to death on Wednesday for a 1995 murder after administering two doses of a lethal drug. A death penalty expert said it was an unprecedented failure, and Tennessee’s governor halted the remaining execution for the rest of the year.\nPike, 50, was alive and loudly snoring after the attempted lethal injection and taken by ambulance from the prison, her lawyers said. She was being treated at a hospital, but they said they had not been told about her..."
+   },
+   {
+    "id": "s-1663",
+    "published_at": "2026-10-01 16:45:35.000000",
+    "source": "BBC World",
+    "source_type": "rss",
+    "lang": null,
+    "title": "Tennessee halts executions after Christa Pike survives two lethal injection attempts",
+    "excerpt": "Pikeâs lawyers have asked for her death sentence to be commuted following the botched execution."
+   }
+  ],
+  "multilingual": false,
+  "flags": [
+   "owner-given"
+  ],
+  "system": {
+   "relation": "owner-given verdict",
+   "why": [
+    "T041: Tennessee halts executions (Christa Pike)"
+   ],
+   "rules": [
+    "given"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "G07",
+  "window": "2026-10-03-live",
+  "split": "development",
+  "items": [
+   {
+    "id": "s-1228",
+    "published_at": "2026-09-29 21:32:19.000000",
+    "source": "BBC World",
+    "source_type": "rss",
+    "lang": null,
+    "title": "More than 400 detained as France student protests escalate",
+    "excerpt": "Students have been protesting against conditions and resources in secondary schools since last week."
+   },
+   {
+    "id": "s-1380",
+    "published_at": "2026-09-30 13:18:01.000000",
+    "source": "BBC World",
+    "source_type": "rss",
+    "lang": null,
+    "title": "Dozens hurt and hundreds arrested in wave of French school protests",
+    "excerpt": "Students have been protesting against conditions and resources in secondary schools since last week."
+   }
+  ],
+  "multilingual": false,
+  "flags": [
+   "owner-given"
+  ],
+  "system": {
+   "relation": "owner-given verdict",
+   "why": [
+    "T025: two days of the protest wave"
+   ],
+   "rules": [
+    "given"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "G08",
+  "window": "2026-09-30-multilingual",
+  "split": "development",
+  "items": [
+   {
+    "id": "sx-535",
+    "published_at": "2026-09-29 14:45:00.000000",
+    "source": "GDELT",
+    "source_type": "structured_api",
+    "lang": "en",
+    "title": "Iran rial crashes past 2 . 5 million per dollar : War , sanctions push currency to new low",
+    "excerpt": "Domain: livemint.com | Language: English | Source country: India"
+   },
+   {
+    "id": "sx-536",
+    "published_at": "2026-09-30 01:15:00.000000",
+    "source": "GDELT",
+    "source_type": "structured_api",
+    "lang": "en",
+    "title": "Iran Currency Hits a New Record Low as War Erodes the Country Economic Stability",
+    "excerpt": "Domain: english.aawsat.com | Language: English | Source country: Syria"
+   }
+  ],
+  "multilingual": false,
+  "flags": [
+   "owner-given"
+  ],
+  "system": {
+   "relation": "owner-given verdict",
+   "why": [
+    "T033: rial record low (GDELT)"
+   ],
+   "rules": [
+    "given"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "G09",
+  "window": "2026-09-30-multilingual",
+  "split": "development",
+  "items": [
+   {
+    "id": "sx-540",
+    "published_at": "2026-09-29 16:30:00.000000",
+    "source": "GDELT",
+    "source_type": "structured_api",
+    "lang": "en",
+    "title": "  This is how the war will end : Iran currency hits new record low",
+    "excerpt": "Domain: fortune.com | Language: English | Source country: United States"
+   },
+   {
+    "id": "sx-536",
+    "published_at": "2026-09-30 01:15:00.000000",
+    "source": "GDELT",
+    "source_type": "structured_api",
+    "lang": "en",
+    "title": "Iran Currency Hits a New Record Low as War Erodes the Country Economic Stability",
+    "excerpt": "Domain: english.aawsat.com | Language: English | Source country: Syria"
+   }
+  ],
+  "multilingual": false,
+  "flags": [
+   "owner-given"
+  ],
+  "system": {
+   "relation": "owner-given verdict",
+   "why": [
+    "T039: rial record low (GDELT)"
+   ],
+   "rules": [
+    "given"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "G10",
+  "window": "2026-09-30-multilingual",
+  "split": "development",
+  "items": [
+   {
+    "id": "sx-264",
+    "published_at": "2026-09-29 22:45:03.000000",
+    "source": "Clarín Mundo",
+    "source_type": "rss",
+    "lang": "es",
+    "title": "Por la guerra y la incertidumbre económica, la moneda de Irán se hunde en un mínimo histórico",
+    "excerpt": "Las sanciones internacionales presionan a las finanzas de la república islámica. El régimen abre la puerta a nuevas negociaciones con Estados Unidos para terminar con el conflicto."
+   },
+   {
+    "id": "sx-75",
+    "published_at": "2026-09-30 08:42:46.000000",
+    "source": "Europa Press Internacional",
+    "source_type": "rss",
+    "lang": "es",
+    "title": "Irán confirma que recibió la respuesta oficial de EEUU a su última propuesta para un acuerdo de paz",
+    "excerpt": "El Gobierno de Irán ha confirmado este miércoles que ha recibido la respuesta oficial de Estados Unidos a su propuesta para reactivar el proceso de conversaciones para un acuerdo de paz, días después de que el presidente estadounidense, Donald Trump, expresara su rechazo al plan presentado por Teherán."
+   }
+  ],
+  "multilingual": false,
+  "flags": [
+   "owner-given"
+  ],
+  "system": {
+   "relation": "owner-given verdict",
+   "why": [
+    "D19 split: rial low vs US response"
+   ],
+   "rules": [
+    "given"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "G11",
+  "window": "2026-09-30-multilingual",
+  "split": "development",
+  "items": [
+   {
+    "id": "sx-536",
+    "published_at": "2026-09-30 01:15:00.000000",
+    "source": "GDELT",
+    "source_type": "structured_api",
+    "lang": "en",
+    "title": "Iran Currency Hits a New Record Low as War Erodes the Country Economic Stability",
+    "excerpt": "Domain: english.aawsat.com | Language: English | Source country: Syria"
+   },
+   {
+    "id": "sx-75",
+    "published_at": "2026-09-30 08:42:46.000000",
+    "source": "Europa Press Internacional",
+    "source_type": "rss",
+    "lang": "es",
+    "title": "Irán confirma que recibió la respuesta oficial de EEUU a su última propuesta para un acuerdo de paz",
+    "excerpt": "El Gobierno de Irán ha confirmado este miércoles que ha recibido la respuesta oficial de Estados Unidos a su propuesta para reactivar el proceso de conversaciones para un acuerdo de paz, días después de que el presidente estadounidense, Donald Trump, expresara su rechazo al plan presentado por Teherán."
+   }
+  ],
+  "multilingual": true,
+  "flags": [
+   "owner-given"
+  ],
+  "system": {
+   "relation": "owner-given verdict",
+   "why": [
+    "D19 split: rial low vs US response"
+   ],
+   "rules": [
+    "given"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "G12",
+  "window": "2026-10-05-live",
+  "split": "development",
+  "items": [
+   {
+    "id": "s-2277",
+    "published_at": "2026-10-04 21:31:53.000000",
+    "source": "South China Morning Post",
+    "source_type": "rss",
+    "lang": "en",
+    "title": "US Air Force removes all bombers from UK airbase targeted by suspected terror attack",
+    "excerpt": "The US Air Force has brought home its bombers stationed at a US-run military airbase in England used to strike Iran following an investigation into a planned terror attack at the RAF Fairford base.\nThe bombers were redeployed back to their home bases in the United States, according to a Pentagon official who was not authorised to discuss sensitive military movements and spoke on Sunday on condition of anonymity.\nAviation watchers such as the Military Air Tracking Alliance have observed dozens of..."
+   },
+   {
+    "id": "s-2623",
+    "published_at": "2026-10-05 07:42:43.000000",
+    "source": "El País Internacional",
+    "source_type": "rss",
+    "lang": "es",
+    "title": "El Pentágono retira sus bombarderos de la base británica de Fairford tras el presunto intento de atentado",
+    "excerpt": "Un bombardero A B‑1B Lancer estadounidense aterriza el martes pasado en la base de la RAF de Fairford."
+   }
+  ],
+  "multilingual": true,
+  "flags": [
+   "owner-given"
+  ],
+  "system": {
+   "relation": "owner-given verdict",
+   "why": [
+    "regression: RAF Fairford bombers, en / es"
+   ],
+   "rules": [
+    "given"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "G13",
+  "window": "2026-10-05-live",
+  "split": "development",
+  "items": [
+   {
+    "id": "s-2314",
+    "published_at": "2026-10-05 04:58:56.000000",
+    "source": "BBC World",
+    "source_type": "rss",
+    "lang": "en",
+    "title": "US air force removes all bombers from British military base RAF Fairford",
+    "excerpt": "A statement says all bombers deployed to RAF Fairford have been \"re-deployed to their home stations\" in the US."
+   },
+   {
+    "id": "s-2639",
+    "published_at": "2026-10-04 22:24:58.000000",
+    "source": "Clarín Mundo",
+    "source_type": "rss",
+    "lang": "es",
+    "title": "Estados Unidos retiró sus bombarderos de una base del Reino Unido tras descubrir un plan de atentado",
+    "excerpt": "• La detención de un ciudadano con doble nacionalidad en Londres encendió las alarmas en el complejo militar ubicado a 160 kilómetros de la capital.\n• Las autoridades británicas atribuyeron la maniobra a Teherán, aunque el gobierno iraní desmintió rotundamente cualquier vinculación."
+   }
+  ],
+  "multilingual": true,
+  "flags": [
+   "owner-given"
+  ],
+  "system": {
+   "relation": "owner-given verdict",
+   "why": [
+    "regression: RAF Fairford bombers, en / es"
+   ],
+   "rules": [
+    "given"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ },
+ {
+  "case": "G14",
+  "window": "2026-10-05-live",
+  "split": "development",
+  "items": [
+   {
+    "id": "s-2299",
+    "published_at": "2026-10-05 04:07:51.000000",
+    "source": "Al Jazeera",
+    "source_type": "rss",
+    "lang": "en",
+    "title": "Russian lab worker dies of suspected plague in Siberia; US monitoring case",
+    "excerpt": "A Russian agency links the lab worker&#039;s death to &#039;pneumonia of unknown&#039; origin."
+   },
+   {
+    "id": "s-2432",
+    "published_at": "2026-10-05 06:53:46.000000",
+    "source": "Europa Press Internacional",
+    "source_type": "rss",
+    "lang": "es",
+    "title": "Rusia asegura que la situación epidemiológica en Irkutsk es \"estable\" tras un supuesto accidente en un laboratorio",
+    "excerpt": "Las autoridades de Rusia han asegurado que la situación epidemiológica en la región de Irkutsk es \"estable\", después de activar una serie de medidas de emergencia durante los últimos días a causa de la muerte de una investigadora en un presunto accidente de laboratorio en Shelejov."
+   }
+  ],
+  "multilingual": true,
+  "flags": [
+   "owner-given"
+  ],
+  "system": {
+   "relation": "owner-given verdict",
+   "why": [
+    "regression: Siberian plague case, en / es"
+   ],
+   "rules": [
+    "given"
+   ],
+   "same_developments": [],
+   "item_developments": [
+    [],
+    []
+   ],
+   "developments": {},
+   "cosine": null
+  }
+ }
+]

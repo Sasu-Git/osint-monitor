@@ -67,6 +67,14 @@ def model_versions() -> dict:
     from osint_monitor.processors.nlp import ner_status
     out = {f"ner_{lang}": f"{model} ({state})" for lang, (model, state) in ner_status().items()}
     out["embedding"] = get_settings().embedding_model
+    try:
+        from osint_monitor.core.config import load_event_grouping_config
+        cl = load_event_grouping_config().cross_language
+        if cl.enabled:
+            from osint_monitor.processors.cross_language import revision_of
+            out["multilingual_candidates"] = f"{cl.model}@{revision_of(cl.model) or 'unknown'}"
+    except Exception:
+        pass
     return out
 
 

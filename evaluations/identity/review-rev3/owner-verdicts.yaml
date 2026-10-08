@@ -1,0 +1,444 @@
+G01:
+  boundary_reason: null
+  confidence: high
+  note: 'owner, 2026-10-07: R012: one matter, BBC / France 24'
+  reviewed_at: '2026-10-07T00:00:00Z'
+  verdict: SAME_DEVELOPMENT
+G02:
+  boundary_reason: null
+  confidence: high
+  note: 'owner, 2026-10-07: R138: White House AI luncheon, it / en'
+  reviewed_at: '2026-10-07T00:00:00Z'
+  verdict: SAME_DEVELOPMENT
+G03:
+  boundary_reason: null
+  confidence: high
+  note: 'owner, 2026-10-07: R138: America.gov launch at the luncheon, es / en'
+  reviewed_at: '2026-10-07T00:00:00Z'
+  verdict: SAME_DEVELOPMENT
+G04:
+  boundary_reason: null
+  confidence: high
+  note: 'owner, 2026-10-07: T008: Spain''s eviction measures, same day'
+  reviewed_at: '2026-10-07T00:00:00Z'
+  verdict: SAME_DEVELOPMENT
+G05:
+  boundary_reason: null
+  confidence: high
+  note: 'owner, 2026-10-07: T034: evicted woman returns home'
+  reviewed_at: '2026-10-07T00:00:00Z'
+  verdict: SAME_DEVELOPMENT
+G06:
+  boundary_reason: null
+  confidence: high
+  note: 'owner, 2026-10-07: T041: Tennessee halts executions (Christa Pike)'
+  reviewed_at: '2026-10-07T00:00:00Z'
+  verdict: SAME_DEVELOPMENT
+G07:
+  boundary_reason: null
+  confidence: high
+  note: 'owner, 2026-10-07: T025: two days of the protest wave'
+  reviewed_at: '2026-10-07T00:00:00Z'
+  verdict: DIFFERENT_DEVELOPMENT
+G08:
+  boundary_reason: null
+  confidence: high
+  note: 'owner, 2026-10-07: T033: rial record low (GDELT)'
+  reviewed_at: '2026-10-07T00:00:00Z'
+  verdict: SAME_DEVELOPMENT
+G09:
+  boundary_reason: null
+  confidence: high
+  note: 'owner, 2026-10-07: T039: rial record low (GDELT)'
+  reviewed_at: '2026-10-07T00:00:00Z'
+  verdict: SAME_DEVELOPMENT
+G10:
+  boundary_reason: null
+  confidence: high
+  note: 'owner, 2026-10-07: D19 split: rial low vs US response'
+  reviewed_at: '2026-10-07T00:00:00Z'
+  verdict: DIFFERENT_DEVELOPMENT
+G11:
+  boundary_reason: null
+  confidence: high
+  note: 'owner, 2026-10-07: D19 split: rial low vs US response'
+  reviewed_at: '2026-10-07T00:00:00Z'
+  verdict: DIFFERENT_DEVELOPMENT
+G12:
+  boundary_reason: null
+  confidence: high
+  note: 'owner, 2026-10-07: regression: RAF Fairford bombers, en / es'
+  reviewed_at: '2026-10-07T00:00:00Z'
+  verdict: SAME_DEVELOPMENT
+G13:
+  boundary_reason: null
+  confidence: high
+  note: 'owner, 2026-10-07: regression: RAF Fairford bombers, en / es'
+  reviewed_at: '2026-10-07T00:00:00Z'
+  verdict: SAME_DEVELOPMENT
+G14:
+  boundary_reason: null
+  confidence: high
+  note: 'owner, 2026-10-07: regression: Siberian plague case, en / es'
+  reviewed_at: '2026-10-07T00:00:00Z'
+  verdict: SAME_DEVELOPMENT
+V001:
+  boundary_reason: null
+  confidence: null
+  note: null
+  reviewed_at: null
+  verdict: null
+V002:
+  boundary_reason: null
+  confidence: null
+  note: null
+  reviewed_at: null
+  verdict: null
+V003:
+  boundary_reason: null
+  confidence: null
+  note: null
+  reviewed_at: null
+  verdict: null
+V004:
+  boundary_reason: null
+  confidence: null
+  note: null
+  reviewed_at: null
+  verdict: null
+V005:
+  boundary_reason: null
+  confidence: null
+  note: null
+  reviewed_at: null
+  verdict: null
+V006:
+  boundary_reason: null
+  confidence: null
+  note: null
+  reviewed_at: null
+  verdict: null
+V007:
+  boundary_reason: null
+  confidence: null
+  note: null
+  reviewed_at: null
+  verdict: null
+V008:
+  boundary_reason: null
+  confidence: null
+  note: null
+  reviewed_at: null
+  verdict: null
+V009:
+  boundary_reason: null
+  confidence: null
+  note: null
+  reviewed_at: null
+  verdict: null
+V010:
+  boundary_reason: null
+  confidence: null
+  note: null
+  reviewed_at: null
+  verdict: null
+V011:
+  boundary_reason: null
+  confidence: null
+  note: null
+  reviewed_at: null
+  verdict: null
+V012:
+  boundary_reason: null
+  confidence: null
+  note: null
+  reviewed_at: null
+  verdict: null
+V013:
+  boundary_reason: null
+  confidence: null
+  note: null
+  reviewed_at: null
+  verdict: null
+V014:
+  boundary_reason: null
+  confidence: null
+  note: null
+  reviewed_at: null
+  verdict: null
+V015:
+  boundary_reason: null
+  confidence: null
+  note: null
+  reviewed_at: null
+  verdict: null
+V016:
+  boundary_reason: null
+  confidence: null
+  note: null
+  reviewed_at: null
+  verdict: null
+V017:
+  boundary_reason: null
+  confidence: null
+  note: null
+  reviewed_at: null
+  verdict: null
+V018:
+  boundary_reason: null
+  confidence: null
+  note: null
+  reviewed_at: null
+  verdict: null
+V019:
+  boundary_reason: null
+  confidence: null
+  note: null
+  reviewed_at: null
+  verdict: null
+V020:
+  boundary_reason: null
+  confidence: null
+  note: null
+  reviewed_at: null
+  verdict: null
+V021:
+  boundary_reason: null
+  confidence: null
+  note: null
+  reviewed_at: null
+  verdict: null
+V022:
+  boundary_reason: null
+  confidence: null
+  note: null
+  reviewed_at: null
+  verdict: null
+V023:
+  boundary_reason: null
+  confidence: null
+  note: null
+  reviewed_at: null
+  verdict: null
+V024:
+  boundary_reason: null
+  confidence: null
+  note: null
+  reviewed_at: null
+  verdict: null
+V025:
+  boundary_reason: null
+  confidence: null
+  note: null
+  reviewed_at: null
+  verdict: null
+V026:
+  boundary_reason: null
+  confidence: null
+  note: null
+  reviewed_at: null
+  verdict: null
+V027:
+  boundary_reason: null
+  confidence: null
+  note: null
+  reviewed_at: null
+  verdict: null
+V028:
+  boundary_reason: null
+  confidence: null
+  note: null
+  reviewed_at: null
+  verdict: null
+V029:
+  boundary_reason: null
+  confidence: null
+  note: null
+  reviewed_at: null
+  verdict: null
+V030:
+  boundary_reason: null
+  confidence: null
+  note: null
+  reviewed_at: null
+  verdict: null
+V031:
+  boundary_reason: null
+  confidence: null
+  note: null
+  reviewed_at: null
+  verdict: null
+V032:
+  boundary_reason: null
+  confidence: null
+  note: null
+  reviewed_at: null
+  verdict: null
+V033:
+  boundary_reason: null
+  confidence: null
+  note: null
+  reviewed_at: null
+  verdict: null
+V034:
+  boundary_reason: null
+  confidence: null
+  note: null
+  reviewed_at: null
+  verdict: null
+V035:
+  boundary_reason: null
+  confidence: null
+  note: null
+  reviewed_at: null
+  verdict: null
+V036:
+  boundary_reason: null
+  confidence: null
+  note: null
+  reviewed_at: null
+  verdict: null
+V037:
+  boundary_reason: null
+  confidence: null
+  note: null
+  reviewed_at: null
+  verdict: null
+V038:
+  boundary_reason: null
+  confidence: null
+  note: null
+  reviewed_at: null
+  verdict: null
+V039:
+  boundary_reason: null
+  confidence: null
+  note: null
+  reviewed_at: null
+  verdict: null
+V040:
+  boundary_reason: null
+  confidence: null
+  note: null
+  reviewed_at: null
+  verdict: null
+V041:
+  boundary_reason: null
+  confidence: null
+  note: null
+  reviewed_at: null
+  verdict: null
+V042:
+  boundary_reason: null
+  confidence: null
+  note: null
+  reviewed_at: null
+  verdict: null
+V043:
+  boundary_reason: null
+  confidence: null
+  note: null
+  reviewed_at: null
+  verdict: null
+V044:
+  boundary_reason: null
+  confidence: null
+  note: null
+  reviewed_at: null
+  verdict: null
+V045:
+  boundary_reason: null
+  confidence: null
+  note: null
+  reviewed_at: null
+  verdict: null
+V046:
+  boundary_reason: null
+  confidence: null
+  note: null
+  reviewed_at: null
+  verdict: null
+V047:
+  boundary_reason: null
+  confidence: null
+  note: null
+  reviewed_at: null
+  verdict: null
+V048:
+  boundary_reason: null
+  confidence: null
+  note: null
+  reviewed_at: null
+  verdict: null
+V049:
+  boundary_reason: null
+  confidence: null
+  note: null
+  reviewed_at: null
+  verdict: null
+V050:
+  boundary_reason: null
+  confidence: null
+  note: null
+  reviewed_at: null
+  verdict: null
+V051:
+  boundary_reason: null
+  confidence: null
+  note: null
+  reviewed_at: null
+  verdict: null
+V052:
+  boundary_reason: null
+  confidence: null
+  note: null
+  reviewed_at: null
+  verdict: null
+V053:
+  boundary_reason: null
+  confidence: null
+  note: null
+  reviewed_at: null
+  verdict: null
+V054:
+  boundary_reason: null
+  confidence: null
+  note: null
+  reviewed_at: null
+  verdict: null
+V055:
+  boundary_reason: null
+  confidence: null
+  note: null
+  reviewed_at: null
+  verdict: null
+V056:
+  boundary_reason: null
+  confidence: null
+  note: null
+  reviewed_at: null
+  verdict: null
+V057:
+  boundary_reason: null
+  confidence: null
+  note: null
+  reviewed_at: null
+  verdict: null
+V058:
+  boundary_reason: null
+  confidence: null
+  note: null
+  reviewed_at: null
+  verdict: null
+V059:
+  boundary_reason: null
+  confidence: null
+  note: null
+  reviewed_at: null
+  verdict: null
+V060:
+  boundary_reason: null
+  confidence: null
+  note: null
+  reviewed_at: null
+  verdict: null

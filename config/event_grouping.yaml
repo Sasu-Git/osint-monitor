@@ -83,3 +83,14 @@ lexical:
   class_weights: {high: 1.0, medium: 0.5, generic: 0.1}   # diagnostic overlap only
   guard:
     enabled: false                  # candidate link rule, see the evaluation note
+
+# Cross-language Development links (processors/cross_language.py; owner decision 2026-10-07). A multilingual model
+# proposes links between narrative units that share no language (centroid cosine >= min_cosine, first reports at most
+# max_hours apart); a link is accepted only on explicit anchors -- a shared specific named entity, a compatible specific
+# (non-country) place, or a shared non-year number -- and no place conflict. Cosine alone never merges. Off until it
+# is benchmarked on identity gold revision 3.
+cross_language:
+  enabled: false
+  model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+  min_cosine: 0.60
+  max_hours: 24

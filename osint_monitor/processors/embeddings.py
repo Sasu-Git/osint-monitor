@@ -8,6 +8,8 @@ import struct
 import threading
 from typing import Optional
 
+import re
+
 import numpy as np
 
 from osint_monitor.core.config import get_settings
@@ -71,9 +73,20 @@ def embed_texts(texts: list[str]) -> np.ndarray:
     return model.encode(texts, normalize_embeddings=True, batch_size=32, show_progress_bar=False)
 
 
+# A body that is only aggregator metadata ("Domain: livemint.com | Language: English | Source country: India",
+# the GDELT collector) carries no text about the occurrence: such an item is headline-only.
+_METADATA_BODY = re.compile(r"^\s*Domain:\s*\S+\s*\|\s*Language:[^|]*\|\s*Source country:[^|]*$", re.I)
+
+
+def headline_only(content: str | None) -> bool:
+    """True when an item has no body text of its own, only aggregator metadata (or nothing)."""
+    return not (content or "").strip() or bool(_METADATA_BODY.match(content or ""))
+
+
 def embed_item(title: str, content: str = "") -> np.ndarray:
-    """Embed an item using title + first 200 chars of content."""
-    text = f"{title} {content[:200]}".strip()
+    """Embed an item using title + first 200 chars of content; a headline-only item by its title alone (its
+    metadata body would only add noise shared by every item of the same aggregator)."""
+    text = (title or "").strip() if headline_only(content) else f"{title} {content[:200]}".strip()
     return embed_text(text)
 
 

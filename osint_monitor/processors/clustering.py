@@ -77,6 +77,16 @@ def cluster_recent_items(
         narrative_groups, commentary = segment_groups(session, narrative_groups, grouping.development_segmentation,
                                                       min_cluster_size)
         logger.info(f"Development segmentation: {stories} narrative clusters -> {len(narrative_groups)} developments")
+    xlang: dict[int, list] = {}
+    if grouping.cross_language.enabled:
+        from osint_monitor.processors.cross_language import link_groups
+        grouped = {i for g in narrative_groups for i in g}
+        singles = [i.id for i in narrative if i.embedding is not None and i.id not in grouped]
+        before = {frozenset(g): commentary.get(n, []) for n, g in enumerate(narrative_groups)}
+        narrative_groups, xlang = link_groups(session, narrative_groups, singles, grouping)
+        commentary = {n: [c for g, cs in before.items() if g <= set(ids) for c in cs]
+                      for n, ids in enumerate(narrative_groups)}
+        commentary = {n: cs for n, cs in commentary.items() if cs}
     logger.info(f"Event grouping: {len(narrative_groups)} narrative clusters from {len(narrative)} items, "
                 f"{len(structured_groups)} structured groups from {len(structured)} records")
     groups = {n: ids for n, ids in enumerate(narrative_groups)}
@@ -89,6 +99,8 @@ def cluster_recent_items(
         c["kind"] = kinds[c["label"]]
         if commentary.get(c["label"]):
             c["commentary_item_ids"] = commentary[c["label"]]   # analysis about it, not evidence (not persisted yet)
+        if xlang.get(c["label"]) and c["kind"] == NARRATIVE:
+            c["xlang_links"] = xlang[c["label"]]               # accepted cross-language links (explicit anchors)
     return clusters
 
 

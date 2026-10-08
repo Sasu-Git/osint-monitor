@@ -74,7 +74,12 @@ class Handler(BaseHTTPRequestHandler):
 
 
 def main() -> int:
+    global CASES_FILE, PAGE
     port = int(sys.argv[sys.argv.index("--port") + 1]) if "--port" in sys.argv else 8765
+    if "--dir" in sys.argv:                     # another review set, e.g. review-rev3 (gold revision 3)
+        review = Path(__file__).resolve().parents[1] / sys.argv[sys.argv.index("--dir") + 1]
+        CASES_FILE, PAGE = review / "review-cases.json", review / "review.html"
+        Handler.verdicts_path = review / "owner-verdicts.yaml"
     Handler.cases = load_cases()
     ids = [c["case"] for c in Handler.cases]
     assert len(ids) == len(set(ids)), "duplicate case ids"
