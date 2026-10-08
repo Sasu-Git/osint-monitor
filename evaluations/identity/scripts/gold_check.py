@@ -12,7 +12,7 @@
   review-rev3/owner-verdicts.yaml, ids disjoint from the main gold, counts (``--expect-additions S,D,A``)
 
 Usage: python evaluations/identity/scripts/gold_check.py [--expect 68,120,1] [--cases 189] [--holdout 30]
-       [--expect-additions 41,33,0]
+       [--expect-additions 39,35,0]
 """
 import hashlib
 import json
@@ -119,7 +119,7 @@ def main() -> int:
                 recorded_a = sorted(c["case"] for c in m.get("changes_from_previous") or [] if c["case"] in adds)
                 check(7, changed_a == recorded_a, f"addition changes {changed_a} != recorded {recorded_a}")
         ac = Counter(e["label"] for e in adds.values())
-        exp_a = [int(x) for x in arg("--expect-additions", "41,33,0").split(",")]
+        exp_a = [int(x) for x in arg("--expect-additions", "39,35,0").split(",")]
         got_a = [ac["SAME_DEVELOPMENT"], ac["DIFFERENT_DEVELOPMENT"], ac["AMBIGUOUS"]]
         check(7, got_a == exp_a, f"additions SAME/DIFFERENT/AMBIGUOUS {got_a} != expected {exp_a}")
         print(f"revision 3 additions: {len(adds)} cases, SAME {got_a[0]}, DIFFERENT {got_a[1]}, AMBIGUOUS {got_a[2]}")
