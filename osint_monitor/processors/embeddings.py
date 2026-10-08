@@ -79,8 +79,9 @@ _METADATA_BODY = re.compile(r"^\s*Domain:\s*\S+\s*\|\s*Language:[^|]*\|\s*Source
 
 
 def headline_only(content: str | None) -> bool:
-    """True when an item has no body text of its own, only aggregator metadata (or nothing)."""
-    return not (content or "").strip() or bool(_METADATA_BODY.match(content or ""))
+    """True when an item's body is only aggregator metadata. An empty body is not headline-only here: many feeds
+    publish title-only items, and they keep their full weight (the rule targets aggregator records, not outlets)."""
+    return bool(_METADATA_BODY.match(content or ""))
 
 
 def embed_item(title: str, content: str = "") -> np.ndarray:

@@ -56,7 +56,7 @@ def main() -> int:
     nruns = int(sys.argv[sys.argv.index("--runs") + 1]) if "--runs" in sys.argv else 1
     manifest = yaml.safe_load((ROOT / "manifest.yaml").read_text(encoding="utf-8"))
     gm = yaml.safe_load((ROOT / "gold" / "manifest.yaml").read_text(encoding="utf-8"))
-    assert gm["revision"] == 2
+    assert gm["revision"] >= 2          # revision 3 only adds cases (scored by score_rev3_xlang.py); these are rev 2's
     gold = {k: v for k, v in yaml.safe_load((ROOT / "gold" / "identity-gold.yaml").read_text(encoding="utf-8")).items()
             if v["split"] == "development"}
     results, determinism = [], []
