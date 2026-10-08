@@ -40,6 +40,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "SAME_DEVELOPMENT",
+   "note": null,
+   "confidence": "high",
+   "rationale": "Both report Trump's executive order inaugurating the 'era of Super Intelligence' (ANSA 'firma ordine esecutivo'; White House fact sheet)."
   }
  },
  {
@@ -83,6 +89,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "DIFFERENT_DEVELOPMENT",
+   "note": null,
+   "confidence": "high",
+   "rationale": "A is Sánchez calling Spanish general elections for 29 November; B is elections for the Committees of Italians Abroad on 4 December."
   }
  },
  {
@@ -126,6 +138,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "SAME_DEVELOPMENT",
+   "note": null,
+   "confidence": "high",
+   "rationale": "Both report the final US troop withdrawal from Iraq by Wednesday/30 September after two decades."
   }
  },
  {
@@ -169,6 +187,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "DIFFERENT_DEVELOPMENT",
+   "note": null,
+   "confidence": "medium",
+   "rationale": "A is about a new attack threat (flight incident) reviving alarms on the anniversary; B is Netanyahu's vow at the October 7 memorial event."
   }
  },
  {
@@ -212,6 +236,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "SAME_DEVELOPMENT",
+   "note": "Statistic of the same election day",
+   "confidence": "medium",
+   "rationale": "A reports Brazilians voting in the first round; B reports the record 21.08% abstention in that same first round, a factual result of the same vote."
   }
  },
  {
@@ -255,6 +285,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "DIFFERENT_DEVELOPMENT",
+   "note": "Two distinct analysis pieces",
+   "confidence": "medium",
+   "rationale": "A is a results breakdown by state of the first round; B is a France 24 analysis segment on 'Why the far-right surge'."
   }
  },
  {
@@ -298,6 +334,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "AMBIGUOUS",
+   "note": "Analysis vs analysis of one event; neither a pure report",
+   "confidence": "medium",
+   "rationale": "Both are analysis pieces ('three key takeaways'; '¿qué se puede concluir?') on the same first-round result that also restate the runoff outcome."
   }
  },
  {
@@ -341,6 +383,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "DIFFERENT_DEVELOPMENT",
+   "note": "Report vs analysis",
+   "confidence": "medium",
+   "rationale": "A reports Sánchez's institutional declaration calling elections; B is an El País analysis of Sánchez as the lone social democrat and Europe's electoral year."
   }
  },
  {
@@ -384,6 +432,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "SAME_DEVELOPMENT",
+   "note": null,
+   "confidence": "high",
+   "rationale": "Both report Sánchez calling Spanish elections for 29 November."
   }
  },
  {
@@ -427,6 +481,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "SAME_DEVELOPMENT",
+   "note": null,
+   "confidence": "high",
+   "rationale": "Both report the Security Council renewing the Haiti gang suppression force for six months (Resolution 2829)."
   }
  },
  {
@@ -470,6 +530,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "SAME_DEVELOPMENT",
+   "note": "B's snippet is a conference photo caption; headline matches",
+   "confidence": "medium",
+   "rationale": "Both report Burnham saying rejoining the EU is not ruled out ('tutte le opzioni sul tavolo, inclusa riadesione'; 'no descarta... reingreso')."
   }
  },
  {
@@ -513,6 +579,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "DIFFERENT_DEVELOPMENT",
+   "note": null,
+   "confidence": "high",
+   "rationale": "A is a Russian missile attack on Kharkiv; B is a suspected plague case in Siberia."
   }
  },
  {
@@ -556,6 +628,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "DIFFERENT_DEVELOPMENT",
+   "note": "Report vs analysis",
+   "confidence": "medium",
+   "rationale": "A reports the first-round result with Bolsonaro ahead; B is an 'En Contexto' analysis of the balance of power and rise of bolsonarismo."
   }
  },
  {
@@ -599,6 +677,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "DIFFERENT_DEVELOPMENT",
+   "note": "Distinct incidents within one overnight attack",
+   "confidence": "medium",
+   "rationale": "A reports a child killed in Vyshgorod in the Kyiv region strike; B is about a drone crashing in Moldova during the same mass attack."
   }
  },
  {
@@ -642,6 +726,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "DIFFERENT_DEVELOPMENT",
+   "note": null,
+   "confidence": "high",
+   "rationale": "A is the Flydubai co-pilot's confession; B is an Al Jazeera opinion piece on Israel's October 7 reckoning."
   }
  },
  {
@@ -685,6 +775,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "DIFFERENT_DEVELOPMENT",
+   "note": null,
+   "confidence": "medium",
+   "rationale": "A is Trump's 'never stop growth' remark when launching America.gov before the meeting; B is the voluntary AI self-regulation agreement signed at the summit, framed as analysis ('is it enough?')."
   }
  },
  {
@@ -728,6 +824,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "DIFFERENT_DEVELOPMENT",
+   "note": null,
+   "confidence": "medium",
+   "rationale": "A reports Houthi strikes on Riyadh airport/Aramco and Bab el-Mandeb control; B reports Yemeni government forces claiming gains in an offensive."
   }
  },
  {
@@ -771,6 +873,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "DIFFERENT_DEVELOPMENT",
+   "note": "Report vs retrospective analysis",
+   "confidence": "medium",
+   "rationale": "A reports Sánchez calling an early election; B is a retrospective on eight years of Sánchez's government."
   }
  },
  {
@@ -814,6 +922,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "SAME_DEVELOPMENT",
+   "note": "B also aggregates nationwide casualties",
+   "confidence": "high",
+   "rationale": "Both report the deadly Russian Banderol strike on Kharkiv on 5 October."
   }
  },
  {
@@ -857,6 +971,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "SAME_DEVELOPMENT",
+   "note": null,
+   "confidence": "high",
+   "rationale": "Both report Fatima Zahra El Mansouri becoming Morocco's first woman prime minister."
   }
  },
  {
@@ -900,6 +1020,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "DIFFERENT_DEVELOPMENT",
+   "note": null,
+   "confidence": "high",
+   "rationale": "A is an interview with a Palestinian writer in Madrid; B is a photo feature on one man's camera in Gaza."
   }
  },
  {
@@ -943,6 +1069,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "DIFFERENT_DEVELOPMENT",
+   "note": null,
+   "confidence": "medium",
+   "rationale": "A is Trump's remark at the America.gov launch before the meeting; B is the 'morally binding' self-regulation commitment signed at the White House meeting."
   }
  },
  {
@@ -986,6 +1118,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "DIFFERENT_DEVELOPMENT",
+   "note": null,
+   "confidence": "medium",
+   "rationale": "Both are separate France 24 analysis segments on Brazil's far-right surge and balance of power, not reports of one occurrence."
   }
  },
  {
@@ -1029,6 +1167,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "SAME_DEVELOPMENT",
+   "note": null,
+   "confidence": "high",
+   "rationale": "Both report Sánchez calling the 29 November election after housing protests."
   }
  },
  {
@@ -1072,6 +1216,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "DIFFERENT_DEVELOPMENT",
+   "note": null,
+   "confidence": "high",
+   "rationale": "A is Burnham's Labour conference speech on EU relations; B is Commissioner Brunner's remarks on EU external border security."
   }
  },
  {
@@ -1115,6 +1265,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "SAME_DEVELOPMENT",
+   "note": null,
+   "confidence": "high",
+   "rationale": "Both report Saudi Arabia, Turkey and Pakistan agreeing to deploy forces to Saudi territory in response to Houthi attacks."
   }
  },
  {
@@ -1158,6 +1314,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "DIFFERENT_DEVELOPMENT",
+   "note": "Report vs commentary",
+   "confidence": "medium",
+   "rationale": "A reports the first-round result (47% vs 45%); B is an interview with a researcher commenting on the surprise."
   }
  },
  {
@@ -1201,6 +1363,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "SAME_DEVELOPMENT",
+   "note": null,
+   "confidence": "high",
+   "rationale": "Both report the US Senate blocking a resolution on violence in the West Bank / Americans killed there."
   }
  },
  {
@@ -1244,6 +1412,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "DIFFERENT_DEVELOPMENT",
+   "note": "Report vs explainer",
+   "confidence": "medium",
+   "rationale": "A reports the UK Greens' vote equating Zionism with racism; B is an explainer on who else has made that equation."
   }
  },
  {
@@ -1287,6 +1461,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "DIFFERENT_DEVELOPMENT",
+   "note": "Analysis vs report",
+   "confidence": "medium",
+   "rationale": "A is an analysis of takeaways from the first round; B reports the record abstention figure."
   }
  },
  {
@@ -1330,6 +1510,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "DIFFERENT_DEVELOPMENT",
+   "note": null,
+   "confidence": "medium",
+   "rationale": "A reports the Saturday housing protests in Spain; B is a commentary linking housing and school protests across Europe."
   }
  },
  {
@@ -1373,6 +1559,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "SAME_DEVELOPMENT",
+   "note": null,
+   "confidence": "high",
+   "rationale": "Both report Trump signing the order inaugurating the 'Super Intelligence' era (Il Sole 'Firmato l'ordine'; White House fact sheet)."
   }
  },
  {
@@ -1416,6 +1608,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "SAME_DEVELOPMENT",
+   "note": null,
+   "confidence": "high",
+   "rationale": "Both report the US withdrawing B-1 bombers from RAF Fairford."
   }
  },
  {
@@ -1459,6 +1657,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "SAME_DEVELOPMENT",
+   "note": "A is a multi-item brief; condemnation is a reaction",
+   "confidence": "medium",
+   "rationale": "Both cover the airstrike killing at least 50 at a market in Myanmar's Rakhine state; A leads with the UN chief's condemnation of it."
   }
  },
  {
@@ -1502,6 +1706,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "DIFFERENT_DEVELOPMENT",
+   "note": null,
+   "confidence": "high",
+   "rationale": "A is the Shin Bet warning to cabinet of a Hamas attack plan; B is Netanyahu's vow at the October 7 memorial."
   }
  },
  {
@@ -1545,6 +1755,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "DIFFERENT_DEVELOPMENT",
+   "note": "Report vs explainer",
+   "confidence": "medium",
+   "rationale": "A reports Sánchez announcing early elections; B is an explainer on what led him to call them."
   }
  },
  {
@@ -1588,6 +1804,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "AMBIGUOUS",
+   "note": "Explainer framing vs factual lede",
+   "confidence": "medium",
+   "rationale": "A reports Russia observing hundreds after a plague-lab researcher's death; B is a DW 'what we know about the disease' explainer whose lede reports the same death and ~200 contacts under observation."
   }
  },
  {
@@ -1631,6 +1853,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "DIFFERENT_DEVELOPMENT",
+   "note": null,
+   "confidence": "high",
+   "rationale": "A is Katz's claim of killing 4,000 of 6,000 October 7 attackers; B is an Israeli raid killing one in the West Bank."
   }
  },
  {
@@ -1674,6 +1902,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "SAME_DEVELOPMENT",
+   "note": null,
+   "confidence": "high",
+   "rationale": "Both report Trump launching the America.gov government information platform."
   }
  },
  {
@@ -1717,6 +1951,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "SAME_DEVELOPMENT",
+   "note": null,
+   "confidence": "high",
+   "rationale": "Both report more than 400 detained in French student protests."
   }
  },
  {
@@ -1760,6 +2000,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "DIFFERENT_DEVELOPMENT",
+   "note": "Report vs analysis",
+   "confidence": "medium",
+   "rationale": "A reports the first-round result and runoff; B is a debate segment on reducing the size of the Brazilian state."
   }
  },
  {
@@ -1803,6 +2049,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "DIFFERENT_DEVELOPMENT",
+   "note": "Analysis vs report",
+   "confidence": "medium",
+   "rationale": "A is an analysis segment ('¿qué se puede concluir?'); B reports Flávio Bolsonaro leading Lula 47-45 and the runoff."
   }
  },
  {
@@ -1846,6 +2098,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "SAME_DEVELOPMENT",
+   "note": "B is partly reflective",
+   "confidence": "medium",
+   "rationale": "Both report the last US soldiers leaving Iraq after two decades."
   }
  },
  {
@@ -1889,6 +2147,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "DIFFERENT_DEVELOPMENT",
+   "note": null,
+   "confidence": "high",
+   "rationale": "A reports an overnight ballistic missile attack on Kyiv; B is a feature on the steel industry ruined by a sustained missile campaign."
   }
  },
  {
@@ -1932,6 +2196,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "SAME_DEVELOPMENT",
+   "note": null,
+   "confidence": "high",
+   "rationale": "Both report the US withdrawing its bombers from RAF Fairford after a suspected terror plot."
   }
  },
  {
@@ -1975,6 +2245,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "SAME_DEVELOPMENT",
+   "note": "A's headline highlights the China remark from the same appearance",
+   "confidence": "medium",
+   "rationale": "Both report Trump's remarks at the America.gov launch ahead of the AI luncheon, vowing not to stifle AI growth."
   }
  },
  {
@@ -2018,6 +2294,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "DIFFERENT_DEVELOPMENT",
+   "note": "Report vs analysis",
+   "confidence": "medium",
+   "rationale": "A reports the Supreme Court lifting restrictions on third-country deportations; B analyses whether such deportations are lawful under international law."
   }
  },
  {
@@ -2061,6 +2343,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "SAME_DEVELOPMENT",
+   "note": null,
+   "confidence": "high",
+   "rationale": "Both report the same overnight 30 September Russian missile and drone attack on Kyiv."
   }
  },
  {
@@ -2104,6 +2392,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "DIFFERENT_DEVELOPMENT",
+   "note": null,
+   "confidence": "medium",
+   "rationale": "A is takeaways analysis of the first round; B is a debate on the size of the Brazilian state."
   }
  },
  {
@@ -2147,6 +2441,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "DIFFERENT_DEVELOPMENT",
+   "note": "Analysis vs report",
+   "confidence": "medium",
+   "rationale": "A is an analysis segment on the first round; B reports Bolsonaro and Lula heading to a runoff."
   }
  },
  {
@@ -2190,6 +2490,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "SAME_DEVELOPMENT",
+   "note": "B adds EU and Russian reactions",
+   "confidence": "medium",
+   "rationale": "Both report the death of a woman/plague-institute worker in Siberia and the suspected plague case."
   }
  },
  {
@@ -2233,6 +2539,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "DIFFERENT_DEVELOPMENT",
+   "note": null,
+   "confidence": "high",
+   "rationale": "A is about Russia's military-heavy budget; B is about Russian seizures of Nestle and Auchan assets."
   }
  },
  {
@@ -2276,6 +2588,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "DIFFERENT_DEVELOPMENT",
+   "note": null,
+   "confidence": "high",
+   "rationale": "A is a report on hunger in occupied Oleshky; B is a suspected plague case in Siberia."
   }
  },
  {
@@ -2319,6 +2637,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "SAME_DEVELOPMENT",
+   "note": null,
+   "confidence": "high",
+   "rationale": "Both report the US removing all bombers from RAF Fairford."
   }
  },
  {
@@ -2362,6 +2686,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "DIFFERENT_DEVELOPMENT",
+   "note": null,
+   "confidence": "medium",
+   "rationale": "Both are separate pre-vote analysis pieces on the Lula-Bolsonaro race, not one occurrence."
   }
  },
  {
@@ -2405,6 +2735,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "SAME_DEVELOPMENT",
+   "note": null,
+   "confidence": "high",
+   "rationale": "Both report Trump naming Jay Clayton as 'Super Intelligence' czar."
   }
  },
  {
@@ -2448,6 +2784,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "DIFFERENT_DEVELOPMENT",
+   "note": null,
+   "confidence": "medium",
+   "rationale": "A is about a new attack threat on the anniversary; B is a 30-date timeline of three years since October 7."
   }
  },
  {
@@ -2491,6 +2833,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "SAME_DEVELOPMENT",
+   "note": null,
+   "confidence": "high",
+   "rationale": "Both report Estonia blaming Russia for the arson at military robotics firm Milrem."
   }
  },
  {
@@ -2534,6 +2882,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "SAME_DEVELOPMENT",
+   "note": null,
+   "confidence": "high",
+   "rationale": "Both report Morocco's king naming its first female prime minister."
   }
  },
  {
@@ -2577,6 +2931,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "SAME_DEVELOPMENT",
+   "note": null,
+   "confidence": "high",
+   "rationale": "Both report Sánchez's government approving housing decrees on rents and evictions."
   }
  },
  {
@@ -2622,6 +2982,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "(owner-given)",
+   "note": null,
+   "confidence": null,
+   "rationale": "R012: one matter, BBC / France 24"
   }
  },
  {
@@ -2667,6 +3033,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "(owner-given)",
+   "note": null,
+   "confidence": null,
+   "rationale": "R138: White House AI luncheon, it / en"
   }
  },
  {
@@ -2712,6 +3084,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "(owner-given)",
+   "note": null,
+   "confidence": null,
+   "rationale": "R138: America.gov launch at the luncheon, es / en"
   }
  },
  {
@@ -2757,6 +3135,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "(owner-given)",
+   "note": null,
+   "confidence": null,
+   "rationale": "T008: Spain's eviction measures, same day"
   }
  },
  {
@@ -2802,6 +3186,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "(owner-given)",
+   "note": null,
+   "confidence": null,
+   "rationale": "T034: evicted woman returns home"
   }
  },
  {
@@ -2847,6 +3237,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "(owner-given)",
+   "note": null,
+   "confidence": null,
+   "rationale": "T041: Tennessee halts executions (Christa Pike)"
   }
  },
  {
@@ -2892,6 +3288,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "(owner-given)",
+   "note": null,
+   "confidence": null,
+   "rationale": "T025: two days of the protest wave"
   }
  },
  {
@@ -2937,6 +3339,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "(owner-given)",
+   "note": null,
+   "confidence": null,
+   "rationale": "T033: rial record low (GDELT)"
   }
  },
  {
@@ -2982,6 +3390,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "(owner-given)",
+   "note": null,
+   "confidence": null,
+   "rationale": "T039: rial record low (GDELT)"
   }
  },
  {
@@ -3027,6 +3441,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "(owner-given)",
+   "note": null,
+   "confidence": null,
+   "rationale": "D19 split: rial low vs US response"
   }
  },
  {
@@ -3072,6 +3492,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "(owner-given)",
+   "note": null,
+   "confidence": null,
+   "rationale": "D19 split: rial low vs US response"
   }
  },
  {
@@ -3117,6 +3543,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "(owner-given)",
+   "note": null,
+   "confidence": null,
+   "rationale": "regression: RAF Fairford bombers, en / es"
   }
  },
  {
@@ -3162,6 +3594,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "(owner-given)",
+   "note": null,
+   "confidence": null,
+   "rationale": "regression: RAF Fairford bombers, en / es"
   }
  },
  {
@@ -3207,6 +3645,12 @@
    ],
    "developments": {},
    "cosine": null
+  },
+  "draft": {
+   "label": "(owner-given)",
+   "note": null,
+   "confidence": null,
+   "rationale": "regression: Siberian plague case, en / es"
   }
  }
 ]
