@@ -1,0 +1,18 @@
+sealed_at: '2026-10-08T13:08:13+00:00'
+window:
+  id: 2026-10-07-live
+  split: holdout
+  fetched_from: '2026-10-06 00:00:00'
+  fetched_to: '2026-10-08 00:00:00'
+items: 1155
+languages:
+  en: 763
+  es: 259
+  it: 133
+sha256:
+  2026-10-07-live.items.jsonl: bddb0b184dbd83b91812470c396592aa2d8312ac68eaaf6a1455d56300f8073f
+  snapshot: e01d02f29b341149739d0cafecef3d9b3cd08d8c9e70fc34e4fa3216d394deeb
+snapshot: C:\Users\EugenioVardiero\osint-monitor\data\eval\xlang-holdout-20261008\live-20261008-130812.db
+rule: 'Do not open, print, replay or label anything here until the cross-language
+  stage is frozen. Then: candidate pairs from this window, blind annotator draft,
+  owner verdicts, freeze, one score.'
