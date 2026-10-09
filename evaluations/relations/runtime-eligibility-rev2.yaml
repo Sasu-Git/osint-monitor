@@ -1,0 +1,1521 @@
+# Derived from relation gold revision 2 and runs-rev2/ (see scripts/mark_runtime_eligibility.py).
+# Not gold: eligibility changes when Development formation changes.
+gold: relation-gold-rev2.yaml
+code: ''
+replays:
+  2026-08-21.json: f7d5dbe7df162c3bf87dab31f26aef65a5d04e781f7a908dd6c9323ecb9109ba
+  2026-08-31.json: d3b0484982f775f7ceed4b97e618ed074e43834cc02431f006d8fba42033bb62
+  2026-09-25.json: 9d6bea06e87118e10ad381de4eb777a2c6e6c50dca9e596009f7a1976021ddcc
+  2026-09-27-live.json: cfbd3c03e5ee3049f7febe62019446a243b32d3ffabc100dd705201eaaab71fd
+  2026-09-29-live.json: d574da4e10d693a62d8867939139d26cdce79079c280a1ba7137ea32ca10ac8b
+  2026-09-30-multilingual.json: 99d0dd030b397a6918855dfb5f355e253b351778aa3f37f7842b85ae980cb630
+  2026-10-03-live.json: 70dcc1ee82ffab7b2fd597d709d3d83a28dc0a52ad5b3fd20cde634650d9d458
+counts:
+  all:
+    NOT_SURFACED: 157
+    BLOCKED_BY_IDENTITY: 28
+    RUNTIME_ELIGIBLE: 2
+  scored:
+    NOT_SURFACED: 149
+    BLOCKED_BY_IDENTITY: 22
+    RUNTIME_ELIGIBLE: 2
+  canonical_positives:
+    NOT_SURFACED: 32
+    BLOCKED_BY_IDENTITY: 13
+cases:
+  R001:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R002:
+    status: NOT_SURFACED
+    label: commentary_on
+    scored: true
+    canonical: true
+    unsurfaced_sides:
+    - a
+    - b
+  R003:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R004:
+    status: NOT_SURFACED
+    label: same_calamity_lifecycle
+    scored: true
+    canonical: true
+    unsurfaced_sides:
+    - a
+  R005:
+    status: NOT_SURFACED
+    label: commentary_on
+    scored: true
+    canonical: true
+    unsurfaced_sides:
+    - b
+  R006:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R007:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - b
+  R008:
+    status: NOT_SURFACED
+    label: reaction_to
+    scored: true
+    canonical: true
+    unsurfaced_sides:
+    - a
+    - b
+  R009:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R010:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - b
+  R011:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R012:
+    status: NOT_SURFACED
+    label: SAME_DEVELOPMENT_SUSPECTED
+    scored: false
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R013:
+    status: BLOCKED_BY_IDENTITY
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    development:
+      window: '2026-08-21'
+      id: 4
+      size: 2
+      summary: Canadian premier says ‘erratic’ Trump ‘not to be trusted’ amid US trade feud
+  R014:
+    status: BLOCKED_BY_IDENTITY
+    label: reaction_to
+    scored: true
+    canonical: true
+    development:
+      window: 2026-09-27-live
+      id: 3
+      size: 5
+      summary: Iranian minister says only negotiation can end conflict after Trump rejects Hormuz deal
+  R015:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - b
+  R016:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R017:
+    status: NOT_SURFACED
+    label: same_calamity_lifecycle
+    scored: true
+    canonical: true
+    unsurfaced_sides:
+    - a
+  R018:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R019:
+    status: BLOCKED_BY_IDENTITY
+    label: AMBIGUOUS
+    scored: false
+    canonical: false
+    development:
+      window: 2026-09-27-live
+      id: 3
+      size: 5
+      summary: Iranian minister says only negotiation can end conflict after Trump rejects Hormuz deal
+  R020:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R021:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R022:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R023:
+    status: NOT_SURFACED
+    label: same_convened_event
+    scored: true
+    canonical: true
+    unsurfaced_sides:
+    - a
+    - b
+  R024:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R025:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+  R026:
+    status: BLOCKED_BY_IDENTITY
+    label: AMBIGUOUS
+    scored: false
+    canonical: false
+    development:
+      window: '2026-09-25'
+      id: 3
+      size: 2
+      summary: Xi got Trump's red carpet welcome - but not everything he wanted
+  R027:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R028:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - b
+  R029:
+    status: BLOCKED_BY_IDENTITY
+    label: reaction_to
+    scored: true
+    canonical: false
+    development:
+      window: '2026-08-21'
+      id: 5
+      size: 3
+      summary: Israel re-establishes closed West Bank settlement, defying growing international protests
+  R030:
+    status: BLOCKED_BY_IDENTITY
+    label: same_calamity_lifecycle
+    scored: true
+    canonical: true
+    development:
+      window: '2026-08-31'
+      id: 2
+      size: 2
+      summary: Malaysia’s air quality turns hazardous as Indonesian wildfires burn
+  R031:
+    status: BLOCKED_BY_IDENTITY
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    development:
+      window: 2026-09-27-live
+      id: 9
+      size: 5
+      summary: Ten climbers missing after avalanche hits Himalayan base camp
+  R032:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R033:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - b
+  R034:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R035:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R036:
+    status: NOT_SURFACED
+    label: commentary_on
+    scored: true
+    canonical: true
+    unsurfaced_sides:
+    - a
+    - b
+  R037:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - b
+  R038:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R039:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - b
+  R040:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R041:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R042:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R043:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - b
+  R044:
+    status: NOT_SURFACED
+    label: AMBIGUOUS
+    scored: false
+    canonical: false
+    unsurfaced_sides:
+    - a
+  R045:
+    status: NOT_SURFACED
+    label: same_calamity_lifecycle
+    scored: true
+    canonical: true
+    unsurfaced_sides:
+    - b
+  R046:
+    status: BLOCKED_BY_IDENTITY
+    label: same_convened_event
+    scored: true
+    canonical: true
+    development:
+      window: 2026-09-27-live
+      id: 2
+      size: 3
+      summary: Pope meets victims of sex abuse, urges ‘wise leaders’ as French election looms
+  R047:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R048:
+    status: NOT_SURFACED
+    label: same_convened_event
+    scored: true
+    canonical: true
+    unsurfaced_sides:
+    - a
+    - b
+  R049:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R050:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R051:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R052:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+  R053:
+    status: NOT_SURFACED
+    label: same_calamity_lifecycle
+    scored: true
+    canonical: true
+    unsurfaced_sides:
+    - a
+    - b
+  R054:
+    status: NOT_SURFACED
+    label: same_calamity_lifecycle
+    scored: true
+    canonical: true
+    unsurfaced_sides:
+    - a
+    - b
+  R055:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+  R056:
+    status: NOT_SURFACED
+    label: follow_up_to
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R057:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - b
+  R058:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+  R059:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R060:
+    status: BLOCKED_BY_IDENTITY
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    development:
+      window: '2026-08-21'
+      id: 5
+      size: 3
+      summary: Israel re-establishes closed West Bank settlement, defying growing international protests
+  R061:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R062:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+  R063:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R064:
+    status: NOT_SURFACED
+    label: same_convened_event
+    scored: true
+    canonical: true
+    unsurfaced_sides:
+    - b
+  R065:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R066:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - b
+  R067:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R068:
+    status: NOT_SURFACED
+    label: same_calamity_lifecycle
+    scored: true
+    canonical: true
+    unsurfaced_sides:
+    - a
+  R069:
+    status: NOT_SURFACED
+    label: same_attack_wave
+    scored: true
+    canonical: true
+    unsurfaced_sides:
+    - a
+    - b
+  R070:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R071:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R072:
+    status: NOT_SURFACED
+    label: same_calamity_lifecycle
+    scored: true
+    canonical: true
+    unsurfaced_sides:
+    - a
+  R073:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - b
+  R074:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R075:
+    status: NOT_SURFACED
+    label: same_calamity_lifecycle
+    scored: true
+    canonical: true
+    unsurfaced_sides:
+    - a
+    - b
+  R076:
+    status: NOT_SURFACED
+    label: reaction_to
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+  R077:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R078:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R079:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R080:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R081:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R082:
+    status: BLOCKED_BY_IDENTITY
+    label: same_calamity_lifecycle
+    scored: true
+    canonical: true
+    development:
+      window: '2026-08-21'
+      id: 3
+      size: 3
+      summary: Ebola vaccine trial to start in DR Congo as warning issued over speed of infections
+  R083:
+    status: NOT_SURFACED
+    label: same_convened_event
+    scored: true
+    canonical: true
+    unsurfaced_sides:
+    - a
+    - b
+  R084:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R085:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - b
+  R086:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R087:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - b
+  R088:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R089:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R090:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - b
+  R091:
+    status: NOT_SURFACED
+    label: same_calamity_lifecycle
+    scored: true
+    canonical: true
+    unsurfaced_sides:
+    - a
+  R092:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+  R093:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R094:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R095:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+  R096:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R097:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R098:
+    status: NOT_SURFACED
+    label: AMBIGUOUS
+    scored: false
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R099:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R100:
+    status: BLOCKED_BY_IDENTITY
+    label: same_convened_event
+    scored: true
+    canonical: true
+    development:
+      window: 2026-09-29-live
+      id: 8
+      size: 2
+      summary: UAE confirms Netanyahu visit to Abu Dhabi
+  R101:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - b
+  R102:
+    status: NOT_SURFACED
+    label: AMBIGUOUS
+    scored: false
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R103:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R104:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R105:
+    status: NOT_SURFACED
+    label: commentary_on
+    scored: true
+    canonical: true
+    unsurfaced_sides:
+    - a
+    - b
+  R106:
+    status: RUNTIME_ELIGIBLE
+    label: NO_RELATION
+    scored: true
+    canonical: false
+  R107:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R108:
+    status: NOT_SURFACED
+    label: same_calamity_lifecycle
+    scored: true
+    canonical: true
+    unsurfaced_sides:
+    - a
+    - b
+  R109:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R110:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R111:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R112:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R113:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R114:
+    status: NOT_SURFACED
+    label: same_calamity_lifecycle
+    scored: true
+    canonical: true
+    unsurfaced_sides:
+    - a
+    - b
+  R115:
+    status: BLOCKED_BY_IDENTITY
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    development:
+      window: 2026-09-27-live
+      id: 3
+      size: 5
+      summary: Iranian minister says only negotiation can end conflict after Trump rejects Hormuz deal
+  R116:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R117:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R118:
+    status: NOT_SURFACED
+    label: AMBIGUOUS
+    scored: false
+    canonical: false
+    unsurfaced_sides:
+    - b
+  R119:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R120:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R121:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R122:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R123:
+    status: NOT_SURFACED
+    label: follow_up_to
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R124:
+    status: NOT_SURFACED
+    label: same_convened_event
+    scored: true
+    canonical: true
+    unsurfaced_sides:
+    - b
+  R125:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+  R126:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R127:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R128:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R129:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R130:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R131:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R132:
+    status: BLOCKED_BY_IDENTITY
+    label: co_caused_with
+    scored: true
+    canonical: true
+    development:
+      window: 2026-09-27-live
+      id: 3
+      size: 5
+      summary: Iranian minister says only negotiation can end conflict after Trump rejects Hormuz deal
+  R133:
+    status: NOT_SURFACED
+    label: same_convened_event
+    scored: true
+    canonical: true
+    unsurfaced_sides:
+    - b
+  R134:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R135:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+  R136:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R137:
+    status: RUNTIME_ELIGIBLE
+    label: NO_RELATION
+    scored: true
+    canonical: false
+  R138:
+    status: NOT_SURFACED
+    label: SAME_DEVELOPMENT_SUSPECTED
+    scored: false
+    canonical: false
+    unsurfaced_sides:
+    - b
+  R139:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R140:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  R141:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - b
+  R142:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  T001:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+  T002:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  T003:
+    status: NOT_SURFACED
+    label: commentary_on
+    scored: true
+    canonical: true
+    unsurfaced_sides:
+    - a
+    - b
+  T004:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  T005:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - b
+  T006:
+    status: NOT_SURFACED
+    label: reaction_to
+    scored: true
+    canonical: true
+    unsurfaced_sides:
+    - a
+    - b
+  T007:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+  T008:
+    status: BLOCKED_BY_IDENTITY
+    label: SAME_DEVELOPMENT_SUSPECTED
+    scored: false
+    canonical: false
+    development:
+      window: 2026-10-03-live
+      id: 3
+      size: 5
+      summary: Spain announces new housing measures after protests over 87-year-old woman's eviction
+  T009:
+    status: BLOCKED_BY_IDENTITY
+    label: commentary_on
+    scored: true
+    canonical: true
+    development:
+      window: 2026-09-29-live
+      id: 16
+      size: 4
+      summary: Malaysia begins controversial repatriation of asylum seekers to Myanmar
+  T010:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+  T011:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  T012:
+    status: BLOCKED_BY_IDENTITY
+    label: follow_up_to
+    scored: true
+    canonical: true
+    development:
+      window: 2026-10-03-live
+      id: 19
+      size: 14
+      summary: US Supreme Court denies Christa Pike's last-ditch bid to halt execution
+  T013:
+    status: BLOCKED_BY_IDENTITY
+    label: follow_up_to
+    scored: true
+    canonical: true
+    development:
+      window: 2026-10-03-live
+      id: 19
+      size: 14
+      summary: US Supreme Court denies Christa Pike's last-ditch bid to halt execution
+  T014:
+    status: BLOCKED_BY_IDENTITY
+    label: follow_up_to
+    scored: true
+    canonical: true
+    development:
+      window: 2026-10-03-live
+      id: 19
+      size: 14
+      summary: US Supreme Court denies Christa Pike's last-ditch bid to halt execution
+  T015:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  T016:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  T017:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+  T018:
+    status: BLOCKED_BY_IDENTITY
+    label: reaction_to
+    scored: true
+    canonical: true
+    development:
+      window: 2026-09-27-live
+      id: 3
+      size: 5
+      summary: Iranian minister says only negotiation can end conflict after Trump rejects Hormuz deal
+  T019:
+    status: NOT_SURFACED
+    label: same_convened_event
+    scored: true
+    canonical: true
+    unsurfaced_sides:
+    - a
+    - b
+  T020:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+  T021:
+    status: NOT_SURFACED
+    label: same_attack_wave
+    scored: true
+    canonical: true
+    unsurfaced_sides:
+    - a
+    - b
+  T022:
+    status: BLOCKED_BY_IDENTITY
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    development:
+      window: 2026-09-29-live
+      id: 6
+      size: 3
+      summary: US to grant sanctions waiver for flights between Iran and Iraq’s Najaf, source says
+  T023:
+    status: BLOCKED_BY_IDENTITY
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    development:
+      window: 2026-09-29-live
+      id: 6
+      size: 3
+      summary: US to grant sanctions waiver for flights between Iran and Iraq’s Najaf, source says
+  T024:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  T025:
+    status: BLOCKED_BY_IDENTITY
+    label: AMBIGUOUS
+    scored: false
+    canonical: false
+    development:
+      window: 2026-10-03-live
+      id: 5
+      size: 12
+      summary: 'Photos: French students protest, public workers strike before budget cuts'
+  T026:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+  T027:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  T028:
+    status: NOT_SURFACED
+    label: same_convened_event
+    scored: true
+    canonical: true
+    unsurfaced_sides:
+    - a
+    - b
+  T029:
+    status: BLOCKED_BY_IDENTITY
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    development:
+      window: 2026-09-27-live
+      id: 3
+      size: 5
+      summary: Iranian minister says only negotiation can end conflict after Trump rejects Hormuz deal
+  T030:
+    status: NOT_SURFACED
+    label: reaction_to
+    scored: true
+    canonical: true
+    unsurfaced_sides:
+    - a
+    - b
+  T031:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+  T032:
+    status: NOT_SURFACED
+    label: commentary_on
+    scored: true
+    canonical: true
+    unsurfaced_sides:
+    - a
+    - b
+  T033:
+    status: NOT_SURFACED
+    label: SAME_DEVELOPMENT_SUSPECTED
+    scored: false
+    canonical: false
+    unsurfaced_sides:
+    - a
+  T034:
+    status: BLOCKED_BY_IDENTITY
+    label: SAME_DEVELOPMENT_SUSPECTED
+    scored: false
+    canonical: false
+    development:
+      window: 2026-10-03-live
+      id: 3
+      size: 5
+      summary: Spain announces new housing measures after protests over 87-year-old woman's eviction
+  T035:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  T036:
+    status: NOT_SURFACED
+    label: reaction_to
+    scored: true
+    canonical: true
+    unsurfaced_sides:
+    - a
+    - b
+  T037:
+    status: BLOCKED_BY_IDENTITY
+    label: follow_up_to
+    scored: true
+    canonical: true
+    development:
+      window: 2026-09-27-live
+      id: 3
+      size: 5
+      summary: Iranian minister says only negotiation can end conflict after Trump rejects Hormuz deal
+  T038:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  T039:
+    status: NOT_SURFACED
+    label: SAME_DEVELOPMENT_SUSPECTED
+    scored: false
+    canonical: false
+    unsurfaced_sides:
+    - a
+  T040:
+    status: BLOCKED_BY_IDENTITY
+    label: follow_up_to
+    scored: true
+    canonical: true
+    development:
+      window: 2026-10-03-live
+      id: 19
+      size: 14
+      summary: US Supreme Court denies Christa Pike's last-ditch bid to halt execution
+  T041:
+    status: BLOCKED_BY_IDENTITY
+    label: SAME_DEVELOPMENT_SUSPECTED
+    scored: false
+    canonical: false
+    development:
+      window: 2026-10-03-live
+      id: 19
+      size: 14
+      summary: US Supreme Court denies Christa Pike's last-ditch bid to halt execution
+  T042:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+  T043:
+    status: NOT_SURFACED
+    label: reaction_to
+    scored: true
+    canonical: true
+    unsurfaced_sides:
+    - a
+    - b
+  T044:
+    status: NOT_SURFACED
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    unsurfaced_sides:
+    - a
+    - b
+  T045:
+    status: BLOCKED_BY_IDENTITY
+    label: NO_RELATION
+    scored: true
+    canonical: false
+    development:
+      window: 2026-09-27-live
+      id: 3
+      size: 5
+      summary: Iranian minister says only negotiation can end conflict after Trump rejects Hormuz deal
