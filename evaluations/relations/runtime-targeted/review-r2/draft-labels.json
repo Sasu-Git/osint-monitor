@@ -1,0 +1,4 @@
+{
+  "P201": {"label": "NO_RELATION", "direction": "none", "identity_flag": null, "flag": "inferred", "rationale": "B's protests 'demand political action over housing' and follow the government's failure 'to get emergency legislation through parliament', which is a later third occurrence and the general housing crisis, not an explicit response to A's announcement of eviction-ban measures or the 87-year-old woman's return home.", "confidence": "medium"},
+  "P202": {"label": "NO_RELATION", "direction": "none", "identity_flag": null, "flag": null, "rationale": "A covers French school-student protests and public-worker strikes over education cuts, while B covers Spanish pot-banging protests over the housing crisis; they share only the protest topic and time window, and neither text refers to the other.", "confidence": "high"}
+}

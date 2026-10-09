@@ -1,0 +1,6 @@
+# Owner verdicts for the Phase 3 relation gold, one entry per case (written by the review UI,
+# /eval/relations). label: NO_RELATION | a relation type | AMBIGUOUS | SAME_DEVELOPMENT_SUSPECTED.
+# direction (A->B | B->A, source -> target) only for reaction_to, follow_up_to, caused_by.
+# Notes are kept verbatim. Regenerating the review sheet never overwrites this file.
+P201: {label: null, direction: null, identity_flag: null, note: null}
+P202: {label: null, direction: null, identity_flag: null, note: null}
