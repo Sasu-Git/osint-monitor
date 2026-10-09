@@ -1,0 +1,29 @@
+# Owner decision, 2026-10-08: the GDELT headline-only rule is accepted on semantic grounds.
+#
+# Context: Phase 2 identity gate, branch fix/cross-language-identity with the cross-language stage disabled, against
+# main (5f046b3). The only identity cases that changed are both in window 2026-09-30-multilingual and both involve
+# the GDELT item sx-536, whose body is aggregator metadata only ("Domain: ... | Language: ... | Source country: ...").
+# The headline-only rule (processors/embeddings.py headline_only) now embeds it by its title alone.
+decision: accepted
+rule: GDELT headline-only (an aggregator-metadata body carries no text about the occurrence)
+reason: >-
+  The old merge was partly sustained by aggregator metadata that should never have been treated as semantic article
+  content. Removing that text also fixes C033, a genuine false merge. Reintroducing metadata to recover C006 would be
+  the wrong trade.
+metric_effect:   # Phase 2 identity, development windows, main -> branch (stage disabled)
+  continuity_precision: [43/65, 42/63]
+  continuity_recall: [43/58, 42/58]
+  split_failures: [22/100, 21/100]
+  merge_failures: [15/58, 16/58]
+  id_stability: [16/19, 15/19]
+  mixed_developments: [12/31, 12/31]
+cases:
+  C006:
+    pair: [sx-264, sx-536]   # Clarin Mundo (es) / GDELT (en): Iran's currency at a record low
+    gold: SAME_DEVELOPMENT
+    outcome: legitimate SAME pair now missed because the GDELT item has only a headline
+    status: regression / recall case; the proper identity mechanism must recover it without using GDELT metadata
+  C033:
+    pair: [sx-75, sx-536]    # Europa Press (es) Iran received the US reply / GDELT (en) currency record low
+    gold: DIFFERENT_DEVELOPMENT
+    outcome: false merge correctly removed by the same change

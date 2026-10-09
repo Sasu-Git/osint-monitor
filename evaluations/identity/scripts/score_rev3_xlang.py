@@ -122,7 +122,11 @@ def main() -> int:
               "regression": {cid: {"case": REGRESSION[cid], "off": next(r["off"] for r in rows if r["case"] == cid),
                                    "on": next(r["on"] for r in rows if r["case"] == cid)} for cid in REGRESSION},
               "accepted_links": links, "accepted_link_count": len(links), "rows": rows}
-    out = ROOT / "runs" / "rev3-xlang.json"
+    # --out NAME keeps earlier benchmark observations (runs/rev3-xlang.json is frozen) untouched
+    out = ROOT / "runs" / (sys.argv[sys.argv.index("--out") + 1] if "--out" in sys.argv else "rev3-xlang.json")
+    if out.exists() and "--out" not in sys.argv:
+        print(f"refusing to overwrite {out.name}; pass --out NAME")
+        return 1
     out.write_text(json.dumps(report, indent=1, ensure_ascii=False, default=str) + "\n", encoding="utf-8")
     a, wc = report["all"], report["without_conflicts"]
     print("OFF", a["off"])

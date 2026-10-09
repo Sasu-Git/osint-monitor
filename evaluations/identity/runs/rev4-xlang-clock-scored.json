@@ -1,0 +1,436 @@
+{
+ "labels": "revision 4",
+ "report": {
+  "all": {
+   "off": {
+    "tp": 3,
+    "fp": 2,
+    "fn": 36,
+    "precision": 0.6,
+    "recall": 0.07692307692307693,
+    "f1": 0.13636363636363635
+   },
+   "on": {
+    "tp": 15,
+    "fp": 22,
+    "fn": 24,
+    "precision": 0.40540540540540543,
+    "recall": 0.38461538461538464,
+    "f1": 0.39473684210526316
+   },
+   "n": 74
+  },
+  "band 0.65-0.75": {
+   "off": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 13,
+    "precision": null,
+    "recall": 0.0,
+    "f1": null
+   },
+   "on": {
+    "tp": 6,
+    "fp": 6,
+    "fn": 7,
+    "precision": 0.5,
+    "recall": 0.46153846153846156,
+    "f1": 0.48000000000000004
+   },
+   "n": 20
+  },
+  "band <0.65": {
+   "off": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 3,
+    "precision": null,
+    "recall": 0.0,
+    "f1": null
+   },
+   "on": {
+    "tp": 0,
+    "fp": 8,
+    "fn": 3,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": null
+   },
+   "n": 20
+  },
+  "band >=0.75": {
+   "off": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 12,
+    "precision": null,
+    "recall": 0.0,
+    "f1": null
+   },
+   "on": {
+    "tp": 3,
+    "fp": 6,
+    "fn": 9,
+    "precision": 0.3333333333333333,
+    "recall": 0.25,
+    "f1": 0.28571428571428575
+   },
+   "n": 20
+  },
+  "band given": {
+   "off": {
+    "tp": 3,
+    "fp": 2,
+    "fn": 8,
+    "precision": 0.6,
+    "recall": 0.2727272727272727,
+    "f1": 0.37499999999999994
+   },
+   "on": {
+    "tp": 6,
+    "fp": 2,
+    "fn": 5,
+    "precision": 0.75,
+    "recall": 0.5454545454545454,
+    "f1": 0.631578947368421
+   },
+   "n": 14
+  },
+  "langs en": {
+   "off": {
+    "tp": 3,
+    "fp": 1,
+    "fn": 3,
+    "precision": 0.75,
+    "recall": 0.5,
+    "f1": 0.6
+   },
+   "on": {
+    "tp": 3,
+    "fp": 1,
+    "fn": 3,
+    "precision": 0.75,
+    "recall": 0.5,
+    "f1": 0.6
+   },
+   "n": 7
+  },
+  "langs en-es": {
+   "off": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 17,
+    "precision": null,
+    "recall": 0.0,
+    "f1": null
+   },
+   "on": {
+    "tp": 7,
+    "fp": 12,
+    "fn": 10,
+    "precision": 0.3684210526315789,
+    "recall": 0.4117647058823529,
+    "f1": 0.3888888888888889
+   },
+   "n": 37
+  },
+  "langs en-it": {
+   "off": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 11,
+    "precision": null,
+    "recall": 0.0,
+    "f1": null
+   },
+   "on": {
+    "tp": 4,
+    "fp": 3,
+    "fn": 7,
+    "precision": 0.5714285714285714,
+    "recall": 0.36363636363636365,
+    "f1": 0.4444444444444444
+   },
+   "n": 18
+  },
+  "langs es": {
+   "off": {
+    "tp": 0,
+    "fp": 1,
+    "fn": 0,
+    "precision": 0.0,
+    "recall": null,
+    "f1": null
+   },
+   "on": {
+    "tp": 0,
+    "fp": 1,
+    "fn": 0,
+    "precision": 0.0,
+    "recall": null,
+    "f1": null
+   },
+   "n": 1
+  },
+  "langs es-it": {
+   "off": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 5,
+    "precision": null,
+    "recall": 0.0,
+    "f1": null
+   },
+   "on": {
+    "tp": 1,
+    "fp": 5,
+    "fn": 4,
+    "precision": 0.16666666666666666,
+    "recall": 0.2,
+    "f1": 0.1818181818181818
+   },
+   "n": 11
+  }
+ },
+ "stage_added_true": [
+  "G12",
+  "G13",
+  "G14",
+  "V005",
+  "V007",
+  "V019",
+  "V024",
+  "V033",
+  "V045",
+  "V051",
+  "V054",
+  "V056"
+ ],
+ "stage_added_false": [
+  "V004",
+  "V006",
+  "V008",
+  "V013",
+  "V015",
+  "V017",
+  "V018",
+  "V021",
+  "V023",
+  "V025",
+  "V027",
+  "V030",
+  "V036",
+  "V037",
+  "V041",
+  "V042",
+  "V049",
+  "V050",
+  "V055",
+  "V057"
+ ],
+ "missed_same_on": [
+  "G01",
+  "G02",
+  "G03",
+  "G08",
+  "G09",
+  "V001",
+  "V003",
+  "V009",
+  "V010",
+  "V011",
+  "V014",
+  "V020",
+  "V026",
+  "V028",
+  "V032",
+  "V034",
+  "V039",
+  "V040",
+  "V043",
+  "V046",
+  "V048",
+  "V058",
+  "V059",
+  "V060"
+ ],
+ "false_merge_evidence": {
+  "V004": [
+   [
+    "multilingual cosine 0.63 (sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2@e8f8c211)",
+    "shared anchors ['hamas']",
+    "shared specific places ['gaza~gaza']"
+   ]
+  ],
+  "V006": [
+   [
+    "multilingual cosine 0.86 (sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2@e8f8c211)",
+    "shared anchors ['bolsonaro', 'flavio bolsonaro', 'luiz inacio lula da silva', 'lula']"
+   ]
+  ],
+  "V008": [
+   [
+    "multilingual cosine 0.87 (sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2@e8f8c211)",
+    "shared anchors ['sanchez']",
+    "shared specific places ['madrid~madrid']"
+   ]
+  ],
+  "V013": [
+   [
+    "multilingual cosine 0.68 (sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2@e8f8c211)",
+    "shared anchors ['flavio bolsonaro']"
+   ]
+  ],
+  "V015": [
+   [
+    "multilingual cosine 0.69 (sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2@e8f8c211)",
+    "shared specific places ['gaza~gaza']"
+   ]
+  ],
+  "V017": [
+   [
+    "multilingual cosine 0.67 (sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2@e8f8c211)",
+    "shared anchors ['houthis']"
+   ]
+  ],
+  "V018": [
+   [
+    "multilingual cosine 0.66 (sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2@e8f8c211)",
+    "shared anchors ['pedro sanchez']"
+   ]
+  ],
+  "V021": [
+   [
+    "multilingual cosine 0.65 (sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2@e8f8c211)",
+    "shared specific places ['gaza~gaza']"
+   ],
+   [
+    "multilingual cosine 0.61 (sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2@e8f8c211)",
+    "shared specific places ['gaza~gaza']"
+   ]
+  ],
+  "V023": [
+   [
+    "multilingual cosine 0.63 (sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2@e8f8c211)",
+    "shared anchors ['flavio bolsonaro', 'luiz inacio lula da silva']"
+   ]
+  ],
+  "V025": [
+   [
+    "multilingual cosine 0.62 (sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2@e8f8c211)",
+    "shared anchors ['european union']"
+   ],
+   [
+    "multilingual cosine 0.62 (sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2@e8f8c211)",
+    "shared anchors ['european union']"
+   ]
+  ],
+  "V027": [
+   [
+    "multilingual cosine 0.90 (sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2@e8f8c211)",
+    "shared anchors ['bolsonaro', 'flavio bolsonaro', 'jair bolsonaro', 'luiz inacio lula da silva']"
+   ]
+  ],
+  "V030": [
+   [
+    "multilingual cosine 0.86 (sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2@e8f8c211)",
+    "shared anchors ['bolsonaro', 'flavio bolsonaro', 'lula']"
+   ]
+  ],
+  "V036": [],
+  "V037": [
+   [
+    "multilingual cosine 0.71 (sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2@e8f8c211)",
+    "shared specific places ['irkutsk~siberia', 'shelekhov~siberia']",
+    "shared numbers ['200']"
+   ],
+   [
+    "multilingual cosine 0.73 (sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2@e8f8c211)",
+    "shared specific places ['irkutsk~siberia', 'shelekhov~siberia', 'siberia~siberia']",
+    "shared numbers ['200']"
+   ]
+  ],
+  "V041": [
+   [
+    "multilingual cosine 0.78 (sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2@e8f8c211)",
+    "shared anchors ['bolsonaro', 'flavio bolsonaro', 'luiz inacio lula da silva', 'lula']"
+   ],
+   [
+    "multilingual cosine 0.89 (sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2@e8f8c211)",
+    "shared anchors ['bolsonaro', 'flavio bolsonaro', 'luiz inacio lula da silva', 'lula']"
+   ]
+  ],
+  "V042": [
+   [
+    "multilingual cosine 0.89 (sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2@e8f8c211)",
+    "shared anchors ['bolsonaro', 'flavio bolsonaro', 'lula']"
+   ]
+  ],
+  "V049": [
+   [
+    "multilingual cosine 0.71 (sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2@e8f8c211)",
+    "shared anchors ['flavio bolsonaro', 'lula']"
+   ],
+   [
+    "multilingual cosine 0.86 (sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2@e8f8c211)",
+    "shared anchors ['bolsonaro', 'flavio bolsonaro', 'luiz inacio lula da silva', 'lula']"
+   ]
+  ],
+  "V050": [
+   [
+    "multilingual cosine 0.86 (sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2@e8f8c211)",
+    "shared anchors ['bolsonaro', 'flavio bolsonaro', 'luiz inacio lula da silva', 'lula']"
+   ],
+   [
+    "multilingual cosine 0.89 (sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2@e8f8c211)",
+    "shared anchors ['bolsonaro', 'flavio bolsonaro', 'luiz inacio lula da silva', 'lula']"
+   ]
+  ],
+  "V055": [
+   [
+    "multilingual cosine 0.77 (sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2@e8f8c211)",
+    "shared anchors ['flavio bolsonaro', 'lula', 'lula da silva']"
+   ]
+  ],
+  "V057": [
+   [
+    "multilingual cosine 0.76 (sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2@e8f8c211)",
+    "shared anchors ['hamas']",
+    "shared numbers ['250']"
+   ]
+  ]
+ },
+ "false_merge_anchor_kinds": {
+  "anchors": 16,
+  "specific": 5,
+  "numbers": 2
+ },
+ "accepted_link_count": 103,
+ "regression": {
+  "G12": {
+   "case": "RAF Fairford (SCMP en / El Pais es)",
+   "off": false,
+   "on": true
+  },
+  "G13": {
+   "case": "RAF Fairford (BBC en / Clarin es)",
+   "off": false,
+   "on": true
+  },
+  "G14": {
+   "case": "Siberian plague (Al Jazeera en / Europa Press es)",
+   "off": false,
+   "on": true
+  },
+  "G02": {
+   "case": "R138 AI luncheon (it / en)",
+   "off": false,
+   "on": false
+  },
+  "G03": {
+   "case": "R138 America.gov (es / en)",
+   "off": false,
+   "on": false
+  }
+ }
+}

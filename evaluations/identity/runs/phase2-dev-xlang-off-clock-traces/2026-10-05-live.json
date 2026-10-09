@@ -1,0 +1,5891 @@
+{
+ "developments": {
+  "1": {
+   "summary": "Netanyahu orders security review of international flights to Israel after Flydubai attack",
+   "created_tick": 1,
+   "members": {
+    "s-2258": 1,
+    "s-2540": 1,
+    "s-2404": 2
+   },
+   "principals": [
+    "Benjamin Netanyahu",
+    "Flydubai"
+   ],
+   "sources": [
+    "BBC World",
+    "DW World",
+    "South China Morning Post"
+   ]
+  },
+  "2": {
+   "summary": "Lo que la fallida ejecución de Christa Pike revela sobre la pena de muerte en EE.UU.",
+   "created_tick": 1,
+   "members": {
+    "s-2467": 1,
+    "s-2609": 1
+   },
+   "principals": [
+    "Christa Pike",
+    "Pike",
+    "Trump"
+   ],
+   "sources": [
+    "BBC Mundo",
+    "Il Sole 24 Ore Mondo"
+   ]
+  },
+  "3": {
+   "summary": "Media, Lula e Bolsonaro andranno al ballottaggio il 25 ottobre",
+   "created_tick": 1,
+   "members": {
+    "s-2426": 1,
+    "s-2455": 1,
+    "s-2576": 1,
+    "s-2616": 1,
+    "s-2625": 1,
+    "s-2626": 1,
+    "s-2636": 1,
+    "s-2637": 1,
+    "s-2638": 1,
+    "s-2427": 2,
+    "s-2428": 2,
+    "s-2429": 2,
+    "s-2444": 3,
+    "s-2449": 3,
+    "s-2452": 2,
+    "s-2457": 2,
+    "s-2461": 2,
+    "s-2565": 2,
+    "s-2566": 2,
+    "s-2585": 2,
+    "s-2591": 2,
+    "s-2592": 2,
+    "s-2596": 2,
+    "s-2597": 2,
+    "s-2604": 2,
+    "s-2612": 2,
+    "s-2613": 2,
+    "s-2614": 2,
+    "s-2621": 2,
+    "s-2629": 2,
+    "s-2631": 2,
+    "s-2632": 2,
+    "s-2634": 2,
+    "s-2561": 3,
+    "s-2575": 3,
+    "s-2581": 3,
+    "s-2923": 3,
+    "s-2932": 3,
+    "s-2933": 3,
+    "s-2998": 3,
+    "s-3060": 3,
+    "s-3074": 3,
+    "s-3075": 3,
+    "s-3076": 3,
+    "s-3091": 3,
+    "s-3095": 3,
+    "s-3096": 3,
+    "s-3098": 3,
+    "s-3120": 3,
+    "s-3121": 3,
+    "s-3149": 3,
+    "s-3254": 3,
+    "s-3294": 3,
+    "s-3321": 3,
+    "s-3354": 3,
+    "s-3485": 3
+   },
+   "principals": [
+    "Bolsonaro",
+    "Flavio Bolsonaro",
+    "Partido Liberal de Bolsonaro"
+   ],
+   "sources": [
+    "ANSA Mondo",
+    "BBC Mundo",
+    "Clarín Mundo",
+    "El País Internacional",
+    "Europa Press Internacional",
+    "France 24 Español",
+    "Il Sole 24 Ore Mondo",
+    "Rai News Esteri"
+   ]
+  },
+  "4": {
+   "summary": "Ethiopian rebel forces withdraw from Tigray regional capital",
+   "created_tick": 1,
+   "members": {
+    "s-2188": 1,
+    "s-2198": 1,
+    "s-2535": 1,
+    "s-2308": 2,
+    "s-2546": 3
+   },
+   "principals": [
+    "Ethiopia"
+   ],
+   "sources": [
+    "Al Jazeera",
+    "BBC World",
+    "DW World",
+    "France 24"
+   ]
+  },
+  "5": {
+   "summary": "Brazil votes in deeply polarised election pitting Lula against Bolsonaro",
+   "created_tick": 1,
+   "members": {
+    "s-2196": 1,
+    "s-2246": 1,
+    "s-2275": 1,
+    "s-2297": 2,
+    "s-2315": 2,
+    "s-2376": 2,
+    "s-2533": 2,
+    "s-2557": 2,
+    "s-2857": 2,
+    "s-2420": 3,
+    "s-2547": 3,
+    "s-2548": 3,
+    "s-3397": 3,
+    "s-3421": 3
+   },
+   "principals": [
+    "Bolsonaro",
+    "Brazil",
+    "Flavio Bolsonaro"
+   ],
+   "sources": [
+    "Al Jazeera",
+    "BBC World",
+    "DW World",
+    "France 24",
+    "South China Morning Post"
+   ]
+  },
+  "6": {
+   "summary": "India election chief faces calls to resign from protesters, opposition",
+   "created_tick": 1,
+   "members": {
+    "s-2210": 1,
+    "s-2229": 1,
+    "s-2550": 2
+   },
+   "principals": [
+    "India"
+   ],
+   "sources": [
+    "Al Jazeera",
+    "France 24",
+    "South China Morning Post"
+   ]
+  },
+  "7": {
+   "summary": "Yemen’s leader announces military operation to retake Houthi-held territory",
+   "created_tick": 1,
+   "members": {
+    "s-2194": 1,
+    "s-2220": 1,
+    "s-2260": 1,
+    "s-2303": 2,
+    "s-2310": 2,
+    "s-2380": 2,
+    "s-2558": 2,
+    "s-2853": 3,
+    "s-2966": 3,
+    "s-2983": 3,
+    "s-2986": 3,
+    "s-3207": 3
+   },
+   "principals": [
+    "Yemen"
+   ],
+   "sources": [
+    "Al Jazeera",
+    "BBC World",
+    "Defense News",
+    "France 24",
+    "South China Morning Post"
+   ]
+  },
+  "8": {
+   "summary": "Germany’s Merz in Kyiv announces $1.5B in aid, urges Putin to end war",
+   "created_tick": 1,
+   "members": {
+    "s-2230": 1,
+    "s-2645": 1,
+    "s-3107": 3
+   },
+   "principals": [
+    "Friedrich Merz",
+    "Germany",
+    "Merz"
+   ],
+   "sources": [
+    "Al Jazeera",
+    "Breaking Defense",
+    "Kyiv Independent"
+   ]
+  },
+  "9": {
+   "summary": "US Marine arrested over murder of woman in Okinawa, Japan",
+   "created_tick": 1,
+   "members": {
+    "s-2222": 1,
+    "s-2237": 1,
+    "s-2374": 2,
+    "s-2402": 2,
+    "s-2990": 3,
+    "s-3029": 3
+   },
+   "principals": [
+    "US"
+   ],
+   "sources": [
+    "Al Jazeera",
+    "BBC Mundo",
+    "BBC World"
+   ]
+  },
+  "10": {
+   "summary": "Iran tells US: there is ‘no military solution’ to end the war",
+   "created_tick": 1,
+   "members": {
+    "s-2242": 1,
+    "s-2259": 1
+   },
+   "principals": [
+    "Iran"
+   ],
+   "sources": [
+    "Al Jazeera",
+    "South China Morning Post"
+   ]
+  },
+  "11": {
+   "summary": "Dodik urges Serb turnout against ‘Sarajevo crooks’ in Bosnia election",
+   "created_tick": 1,
+   "members": {
+    "s-2241": 1,
+    "s-2269": 1,
+    "s-2301": 2,
+    "s-2530": 2,
+    "s-2652": 2
+   },
+   "principals": [
+    "Dodik",
+    "Milorad Dodik"
+   ],
+   "sources": [
+    "Al Jazeera",
+    "DW World",
+    "Kyiv Independent",
+    "South China Morning Post"
+   ]
+  },
+  "12": {
+   "summary": "Supporters of Imran Khan begin ‘long march’ to Islamabad",
+   "created_tick": 1,
+   "members": {
+    "s-2251": 1,
+    "s-2254": 1,
+    "s-2257": 1,
+    "s-2319": 2
+   },
+   "principals": [
+    "Imran Khan",
+    "Islamabad",
+    "Khan",
+    "Pakistan",
+    "Pro-Imran Khan"
+   ],
+   "sources": [
+    "Al Jazeera",
+    "BBC World",
+    "South China Morning Post"
+   ]
+  },
+  "13": {
+   "summary": "UK Green Party adopts ‘Zionism is racism’ policy, drawing backlash from Israel",
+   "created_tick": 1,
+   "members": {
+    "s-2248": 1,
+    "s-2272": 1,
+    "s-2388": 2,
+    "s-2555": 2,
+    "s-2424": 3,
+    "s-2832": 3
+   },
+   "principals": [
+    "Britain",
+    "Israel",
+    "UK",
+    "UK Green Party"
+   ],
+   "sources": [
+    "Al Jazeera",
+    "France 24",
+    "South China Morning Post"
+   ]
+  },
+  "14": {
+   "summary": "Dozens detained at a rally in Moscow held by Kremlin-friendly Communist Party, party says",
+   "created_tick": 1,
+   "members": {
+    "s-2245": 1,
+    "s-2654": 1
+   },
+   "principals": [],
+   "sources": [
+    "Kyiv Independent",
+    "South China Morning Post"
+   ]
+  },
+  "15": {
+   "summary": "Hundreds of schools to close on Monday as education protests rock France",
+   "created_tick": 1,
+   "members": {
+    "s-2244": 1,
+    "s-2256": 1,
+    "s-2317": 2,
+    "s-2532": 2,
+    "s-2559": 2,
+    "s-2978": 2,
+    "s-2423": 3,
+    "s-2949": 3,
+    "s-2981": 3,
+    "s-2982": 3,
+    "s-3293": 3,
+    "s-3394": 3
+   },
+   "principals": [
+    "France"
+   ],
+   "sources": [
+    "Al Jazeera",
+    "BBC World",
+    "DW World",
+    "France 24",
+    "South China Morning Post"
+   ]
+  },
+  "16": {
+   "summary": "Nationalists top Bosnia-Herzegovina's divisive election",
+   "created_tick": 1,
+   "members": {
+    "s-2534": 1,
+    "s-2628": 1
+   },
+   "principals": [],
+   "sources": [
+    "DW World",
+    "El País Internacional"
+   ]
+  },
+  "17": {
+   "summary": "US Air Force removes all bombers from UK airbase targeted by suspected terror attack",
+   "created_tick": 1,
+   "members": {
+    "s-2277": 1,
+    "s-2283": 1,
+    "s-2314": 2,
+    "s-2354": 2,
+    "s-2398": 2,
+    "s-2553": 2,
+    "s-2412": 3,
+    "s-3078": 3,
+    "s-3275": 3,
+    "s-3440": 3
+   },
+   "principals": [
+    "Donald Trump",
+    "Trump",
+    "US"
+   ],
+   "sources": [
+    "Al Jazeera",
+    "BBC World",
+    "Defense News",
+    "France 24",
+    "South China Morning Post"
+   ]
+  },
+  "18": {
+   "summary": "En fotos: las multitudinarias protestas en España contra la crisis de la vivienda",
+   "created_tick": 2,
+   "members": {
+    "s-2468": 2,
+    "s-2587": 2,
+    "s-2588": 2,
+    "s-2589": 2,
+    "s-2590": 2,
+    "s-2630": 2,
+    "s-2456": 3,
+    "s-2995": 3,
+    "s-3168": 3,
+    "s-3452": 3,
+    "s-3454": 3,
+    "s-3486": 3
+   },
+   "principals": [
+    "Pedro Sanchez"
+   ],
+   "sources": [
+    "BBC Mundo",
+    "Clarín Mundo",
+    "France 24 Español"
+   ]
+  },
+  "19": {
+   "summary": "La Spagna in piazza per il diritto alla casa. E Sanchez pensa al voto anticipato",
+   "created_tick": 2,
+   "members": {
+    "s-2567": 2,
+    "s-2568": 2,
+    "s-2579": 2,
+    "s-2563": 2,
+    "s-2601": 2,
+    "s-3187": 3,
+    "s-3467": 3
+   },
+   "principals": [
+    "Sanchez",
+    "Spagna"
+   ],
+   "sources": [
+    "Il Sole 24 Ore Mondo",
+    "Rai News Esteri"
+   ]
+  },
+  "20": {
+   "summary": "El presidente de Cornell dice que la universidad \"debe hacer más\" tras la denuncia de violación en grupo en una fraternidad",
+   "created_tick": 2,
+   "members": {
+    "s-2469": 2,
+    "s-2594": 2
+   },
+   "principals": [
+    "Cornell",
+    "Universidad de Cornell"
+   ],
+   "sources": [
+    "BBC Mundo",
+    "France 24 Español"
+   ]
+  },
+  "21": {
+   "summary": "Malaysia repatriates 1,500 Myanmar nationals despite UN risk warnings",
+   "created_tick": 2,
+   "members": {
+    "s-2212": 2,
+    "s-2307": 2,
+    "s-3082": 3
+   },
+   "principals": [
+    "Malaysia"
+   ],
+   "sources": [
+    "Al Jazeera",
+    "South China Morning Post"
+   ]
+  },
+  "22": {
+   "summary": "Sanchez, 'ho deciso di convocare le elezioni il 29 novembre'",
+   "created_tick": 2,
+   "members": {
+    "s-2574": 2,
+    "s-2451": 2,
+    "s-2562": 3
+   },
+   "principals": [
+    "Sanchez"
+   ],
+   "sources": [
+    "ANSA Mondo",
+    "Rai News Esteri"
+   ]
+  },
+  "23": {
+   "summary": "Forze governative Yemen, ripreso il controllo di Bab el Mandeb",
+   "created_tick": 2,
+   "members": {
+    "s-2627": 2,
+    "s-2446": 2,
+    "s-2448": 2,
+    "s-2602": 2,
+    "s-3059": 3,
+    "s-3141": 3,
+    "s-3183": 3,
+    "s-3208": 3,
+    "s-3353": 3,
+    "s-3417": 3
+   },
+   "principals": [
+    "Gobierno de Yemen",
+    "Yemen"
+   ],
+   "sources": [
+    "ANSA Mondo",
+    "El País Internacional",
+    "Europa Press Internacional",
+    "Il Sole 24 Ore Mondo",
+    "Rai News Esteri"
+   ]
+  },
+  "24": {
+   "summary": "Commission unlocks €157 million to Moldova for reform progress under the Growth Plan",
+   "created_tick": 2,
+   "members": {
+    "s-2775": 2,
+    "s-2644": 2,
+    "s-2704": 3
+   },
+   "principals": [
+    "European Union",
+    "Moldova",
+    "Republic of Moldova"
+   ],
+   "sources": [
+    "Council of the EU Press",
+    "European Commission Press",
+    "Kyiv Independent"
+   ]
+  },
+  "25": {
+   "summary": "Il Nicaragua ha deciso di ritirarsi dal Parlamento centroamericano",
+   "created_tick": 2,
+   "members": {
+    "s-2282": 2,
+    "s-2447": 2
+   },
+   "principals": [
+    "Nicaragua"
+   ],
+   "sources": [
+    "ANSA Mondo",
+    "Al Jazeera"
+   ]
+  },
+  "26": {
+   "summary": "US Coast Guard suspends search for 6 aboard crashed medical aircraft",
+   "created_tick": 2,
+   "members": {
+    "s-2337": 2,
+    "s-2302": 2,
+    "s-2318": 2
+   },
+   "principals": [],
+   "sources": [
+    "Al Jazeera",
+    "BBC World",
+    "South China Morning Post"
+   ]
+  },
+  "27": {
+   "summary": "Rusia asegura que la situación epidemiológica en Irkutsk es \"estable\" tras un supuesto accidente en un laboratorio",
+   "created_tick": 2,
+   "members": {
+    "s-2635": 2,
+    "s-2432": 2,
+    "s-2618": 2,
+    "s-2964": 3,
+    "s-3416": 3
+   },
+   "principals": [
+    "EE.UU.",
+    "Moscú",
+    "Rusia"
+   ],
+   "sources": [
+    "BBC Mundo",
+    "Clarín Mundo",
+    "El País Internacional",
+    "Europa Press Internacional"
+   ]
+  },
+  "28": {
+   "summary": "Aumentan a 1.460 los palestinos muertos por ataques de Israel contra Gaza desde el acuerdo de alto el fuego",
+   "created_tick": 2,
+   "members": {
+    "s-2619": 2,
+    "s-2633": 2,
+    "s-3143": 2,
+    "s-3057": 3,
+    "s-3063": 3,
+    "s-3146": 3,
+    "s-3188": 3
+   },
+   "principals": [
+    "Hamas",
+    "Hamás",
+    "Israel",
+    "Israele"
+   ],
+   "sources": [
+    "ANSA Mondo",
+    "Clarín Mundo",
+    "El País Internacional",
+    "Europa Press Internacional"
+   ]
+  },
+  "29": {
+   "summary": "Trump unveils 'Super Intelligence Force' to oversee AI policy",
+   "created_tick": 2,
+   "members": {
+    "s-2316": 2,
+    "s-2386": 2,
+    "s-2551": 2
+   },
+   "principals": [
+    "Donald Trump",
+    "Trump"
+   ],
+   "sources": [
+    "BBC World",
+    "France 24"
+   ]
+  },
+  "30": {
+   "summary": "Spanish Prime Minister Pedro Sanchez announces snap election",
+   "created_tick": 2,
+   "members": {
+    "s-2349": 2,
+    "s-2357": 2,
+    "s-2397": 2,
+    "s-3079": 3,
+    "s-3251": 3,
+    "s-3253": 3
+   },
+   "principals": [
+    "Pedro Sanchez",
+    "Sanchez",
+    "Spain"
+   ],
+   "sources": [
+    "Al Jazeera",
+    "BBC World",
+    "France 24",
+    "South China Morning Post"
+   ]
+  },
+  "31": {
+   "summary": "Ft, 'l'Estonia sposta le truppe più vicino al confine con la Russia'",
+   "created_tick": 2,
+   "members": {
+    "s-2450": 2,
+    "s-2599": 2
+   },
+   "principals": [
+    "Estonia"
+   ],
+   "sources": [
+    "ANSA Mondo",
+    "Il Sole 24 Ore Mondo"
+   ]
+  },
+  "32": {
+   "summary": "Ex-prince Andrew takes UK police to court to ‘quash’ Epstein affair search warrants",
+   "created_tick": 2,
+   "members": {
+    "s-2371": 2,
+    "s-2393": 2
+   },
+   "principals": [
+    "Andrew",
+    "Prince Andrew"
+   ],
+   "sources": [
+    "Al Jazeera",
+    "South China Morning Post"
+   ]
+  },
+  "33": {
+   "summary": "Nobel Medicine Prize awarded to 3 scientists for optogenetics development",
+   "created_tick": 2,
+   "members": {
+    "s-2377": 2,
+    "s-2387": 2,
+    "s-2554": 2,
+    "s-2556": 2,
+    "s-2992": 3,
+    "s-3502": 3
+   },
+   "principals": [],
+   "sources": [
+    "Al Jazeera",
+    "BBC World",
+    "France 24",
+    "South China Morning Post"
+   ]
+  },
+  "34": {
+   "summary": "Ségolène Royal denuncia la 'repressione' degli studenti in Francia",
+   "created_tick": 3,
+   "members": {
+    "s-2224": 3,
+    "s-2564": 3,
+    "s-2440": 3,
+    "s-2870": 3,
+    "s-2920": 3,
+    "s-2996": 3,
+    "s-3058": 3,
+    "s-3086": 3,
+    "s-3090": 3,
+    "s-3122": 3,
+    "s-3234": 3
+   },
+   "principals": [],
+   "sources": [
+    "ANSA Mondo",
+    "BBC World",
+    "El País Internacional",
+    "France 24 Español",
+    "Il Sole 24 Ore Mondo",
+    "Rai News Esteri"
+   ]
+  },
+  "35": {
+   "summary": "Amid teen triumph and organisational chaos, Asian Games close in Japan",
+   "created_tick": 3,
+   "members": {
+    "s-2193": 3,
+    "s-2544": 3
+   },
+   "principals": [
+    "Asian Games",
+    "Games",
+    "Japan"
+   ],
+   "sources": [
+    "Al Jazeera",
+    "France 24"
+   ]
+  },
+  "36": {
+   "summary": "Herzog, 'lutto per uomini, donne, bambini, neonati, anziani, caduti il 7 ottobre'",
+   "created_tick": 3,
+   "members": {
+    "s-2606": 3,
+    "s-2439": 3
+   },
+   "principals": [],
+   "sources": [
+    "ANSA Mondo",
+    "Il Sole 24 Ore Mondo"
+   ]
+  },
+  "37": {
+   "summary": "Sudan: Driver killed in aerial attack on aid trucks in South Kordofan",
+   "created_tick": 3,
+   "members": {
+    "s-2231": 3,
+    "s-2753": 3
+   },
+   "principals": [],
+   "sources": [
+    "Al Jazeera",
+    "UN News"
+   ]
+  },
+  "38": {
+   "summary": "Turquía y Pakistán enviarán tropas en apoyo a Arabia Saudí tras los ataques de los hutíes",
+   "created_tick": 3,
+   "members": {
+    "s-3125": 3,
+    "s-3140": 3
+   },
+   "principals": [
+    "Pakistan",
+    "Turquía"
+   ],
+   "sources": [
+    "Europa Press Internacional",
+    "Rai News Esteri"
+   ]
+  },
+  "39": {
+   "summary": "Ethiopia: Statement by the High Representative on behalf of the European Union on the escalating conflict in Ethiopia and the implications for the region",
+   "created_tick": 3,
+   "members": {
+    "s-2309": 3,
+    "s-3101": 3
+   },
+   "principals": [
+    "Ethiopia"
+   ],
+   "sources": [
+    "Al Jazeera",
+    "Council of the EU Press"
+   ]
+  },
+  "40": {
+   "summary": "Russian lab worker dies of suspected plague in Siberia; US monitoring case",
+   "created_tick": 3,
+   "members": {
+    "s-2299": 3,
+    "s-3088": 3,
+    "s-3206": 3,
+    "s-3290": 3,
+    "s-3396": 3
+   },
+   "principals": [
+    "Moscow",
+    "Russia",
+    "US",
+    "Washington"
+   ],
+   "sources": [
+    "Al Jazeera",
+    "BBC World",
+    "France 24",
+    "South China Morning Post"
+   ]
+  },
+  "41": {
+   "summary": "FBI arrests ‘Chinese foreign agent’ for spying on Taiwan president’s son",
+   "created_tick": 3,
+   "members": {
+    "s-2298": 3,
+    "s-3505": 3
+   },
+   "principals": [
+    "FBI",
+    "US",
+    "Washington"
+   ],
+   "sources": [
+    "Al Jazeera",
+    "South China Morning Post"
+   ]
+  },
+  "42": {
+   "summary": "Messi set for final emotional farewell in Argentina send-off",
+   "created_tick": 3,
+   "members": {
+    "s-2552": 3,
+    "s-2421": 3
+   },
+   "principals": [
+    "Lionel Messi",
+    "Messi"
+   ],
+   "sources": [
+    "Al Jazeera",
+    "France 24"
+   ]
+  },
+  "43": {
+   "summary": "New automatic gun turrets successfully down first Russian jet-powered drones, Air Force says",
+   "created_tick": 3,
+   "members": {
+    "s-2391": 3,
+    "s-2642": 3
+   },
+   "principals": [
+    "Kyiv",
+    "Ukraine"
+   ],
+   "sources": [
+    "Defense News",
+    "Kyiv Independent"
+   ]
+  },
+  "44": {
+   "summary": "Speech by President António Costa at the opening ceremony of the academic year of the College of Europe (Natolin campus)",
+   "created_tick": 3,
+   "members": {
+    "s-2706": 3,
+    "s-2833": 3
+   },
+   "principals": [
+    "Ribera"
+   ],
+   "sources": [
+    "Council of the EU Press",
+    "European Commission Press"
+   ]
+  },
+  "45": {
+   "summary": "El presidente de Irán nombra a Mehrdad Ajlaqi nuevo ministro de Defensa",
+   "created_tick": 3,
+   "members": {
+    "s-2583": 3,
+    "s-3092": 3,
+    "s-3144": 3
+   },
+   "principals": [
+    "Irán",
+    "Teherán"
+   ],
+   "sources": [
+    "El País Internacional",
+    "Europa Press Internacional",
+    "France 24 Español"
+   ]
+  },
+  "46": {
+   "summary": "ICC unseals four arrest warrants over Taliban persecution of women and girls",
+   "created_tick": 3,
+   "members": {
+    "s-3072": 3,
+    "s-3104": 3,
+    "s-3255": 3
+   },
+   "principals": [],
+   "sources": [
+    "France 24",
+    "South China Morning Post",
+    "UN News"
+   ]
+  },
+  "47": {
+   "summary": "Mueren dos personas tras un incendio en un buque comercial en aguas del mar Negro frente a Rumanía",
+   "created_tick": 3,
+   "members": {
+    "s-2433": 3,
+    "s-2859": 3
+   },
+   "principals": [],
+   "sources": [
+    "El País Internacional",
+    "Europa Press Internacional"
+   ]
+  },
+  "48": {
+   "summary": "Netanyahu, 'il regime iraniano è destinato a sparire'",
+   "created_tick": 3,
+   "members": {
+    "s-2437": 3,
+    "s-3080": 3,
+    "s-3093": 3
+   },
+   "principals": [
+    "Benjamin Netanyahu"
+   ],
+   "sources": [
+    "ANSA Mondo",
+    "Al Jazeera",
+    "El País Internacional"
+   ]
+  },
+  "49": {
+   "summary": "President Trump and Republicans Are Delivering Real Results for Nebraska",
+   "created_tick": 3,
+   "members": {
+    "s-2542": 3,
+    "s-3068": 3
+   },
+   "principals": [
+    "Donald Trump",
+    "Republican",
+    "Trump"
+   ],
+   "sources": [
+    "France 24",
+    "White House"
+   ]
+  },
+  "50": {
+   "summary": "France, Germany call for new weapon allowing ‘immediate cut off’ of China from EU market",
+   "created_tick": 3,
+   "members": {
+    "s-2929": 3,
+    "s-3071": 3
+   },
+   "principals": [
+    "Germany"
+   ],
+   "sources": [
+    "France 24",
+    "South China Morning Post"
+   ]
+  },
+  "51": {
+   "summary": "Zelensky condemns 'horrific' Russian strike on boat carrying corn in Black Sea",
+   "created_tick": 3,
+   "members": {
+    "s-2965": 3,
+    "s-3004": 3,
+    "s-3308": 3
+   },
+   "principals": [
+    "Russia",
+    "Ukraine"
+   ],
+   "sources": [
+    "Al Jazeera",
+    "BBC World",
+    "Kyiv Independent"
+   ]
+  },
+  "52": {
+   "summary": "Calano le maschere d'ossigeno durante il volo, aereo della British per Chicago torna a Londra",
+   "created_tick": 3,
+   "members": {
+    "s-3062": 3,
+    "s-3069": 3
+   },
+   "principals": [],
+   "sources": [
+    "ANSA Mondo",
+    "Rai News Esteri"
+   ]
+  },
+  "53": {
+   "summary": "Putin authorizes reorganization of UniCredit's Russian division",
+   "created_tick": 3,
+   "members": {
+    "s-3066": 3,
+    "s-3099": 3
+   },
+   "principals": [
+    "Italy",
+    "UniCredit",
+    "Vladimir Putin"
+   ],
+   "sources": [
+    "ANSA English",
+    "Kyiv Independent"
+   ]
+  },
+  "54": {
+   "summary": "Systems Selected for JIATF 401 Directed-Energy Counter-Drone Pilot Program",
+   "created_tick": 3,
+   "members": {
+    "s-3291": 3,
+    "s-3470": 3
+   },
+   "principals": [
+    "US Department of Defense"
+   ],
+   "sources": [
+    "Breaking Defense",
+    "Defense.gov"
+   ]
+  },
+  "55": {
+   "summary": "Ethiopia’s PM insists on access to Red Sea despite regional conflict threat",
+   "created_tick": 3,
+   "members": {
+    "s-3395": 3,
+    "s-3422": 3
+   },
+   "principals": [
+    "Ethiopia"
+   ],
+   "sources": [
+    "Al Jazeera",
+    "France 24"
+   ]
+  }
+ },
+ "item_developments": {
+  "s-2188": [
+   4
+  ],
+  "s-2189": [],
+  "s-2190": [],
+  "s-2191": [],
+  "s-2192": [],
+  "s-2193": [
+   35
+  ],
+  "s-2194": [
+   7
+  ],
+  "s-2195": [],
+  "s-2196": [
+   5
+  ],
+  "s-2197": [],
+  "s-2198": [
+   4
+  ],
+  "s-2199": [],
+  "s-2200": [],
+  "s-2201": [],
+  "s-2202": [],
+  "s-2203": [],
+  "s-2204": [],
+  "s-2205": [],
+  "s-2206": [],
+  "s-2207": [],
+  "s-2208": [],
+  "s-2209": [],
+  "s-2210": [
+   6
+  ],
+  "s-2211": [],
+  "s-2212": [
+   21
+  ],
+  "s-2215": [],
+  "s-2219": [],
+  "s-2220": [
+   7
+  ],
+  "s-2221": [],
+  "s-2222": [
+   9
+  ],
+  "s-2223": [],
+  "s-2224": [
+   34
+  ],
+  "s-2225": [],
+  "s-2226": [],
+  "s-2227": [],
+  "s-2228": [],
+  "s-2229": [
+   6
+  ],
+  "s-2230": [
+   8
+  ],
+  "s-2231": [
+   37
+  ],
+  "s-2232": [],
+  "s-2233": [],
+  "s-2234": [],
+  "s-2235": [],
+  "s-2236": [],
+  "s-2237": [
+   9
+  ],
+  "s-2238": [],
+  "s-2239": [],
+  "s-2240": [],
+  "s-2241": [
+   11
+  ],
+  "s-2242": [
+   10
+  ],
+  "s-2243": [],
+  "s-2244": [
+   15
+  ],
+  "s-2245": [
+   14
+  ],
+  "s-2246": [
+   5
+  ],
+  "s-2247": [],
+  "s-2248": [
+   13
+  ],
+  "s-2249": [],
+  "s-2250": [],
+  "s-2251": [
+   12
+  ],
+  "s-2254": [
+   12
+  ],
+  "s-2255": [],
+  "s-2256": [
+   15
+  ],
+  "s-2257": [
+   12
+  ],
+  "s-2258": [
+   1
+  ],
+  "s-2259": [
+   10
+  ],
+  "s-2260": [
+   7
+  ],
+  "s-2269": [
+   11
+  ],
+  "s-2270": [],
+  "s-2272": [
+   13
+  ],
+  "s-2273": [],
+  "s-2275": [
+   5
+  ],
+  "s-2277": [
+   17
+  ],
+  "s-2278": [],
+  "s-2279": [],
+  "s-2282": [
+   25
+  ],
+  "s-2283": [
+   17
+  ],
+  "s-2294": [],
+  "s-2295": [],
+  "s-2296": [],
+  "s-2297": [
+   5
+  ],
+  "s-2298": [
+   41
+  ],
+  "s-2299": [
+   40
+  ],
+  "s-2300": [],
+  "s-2301": [
+   11
+  ],
+  "s-2302": [
+   26
+  ],
+  "s-2303": [
+   7
+  ],
+  "s-2304": [],
+  "s-2305": [],
+  "s-2306": [],
+  "s-2307": [
+   21
+  ],
+  "s-2308": [
+   4
+  ],
+  "s-2309": [
+   39
+  ],
+  "s-2310": [
+   7
+  ],
+  "s-2311": [],
+  "s-2312": [],
+  "s-2313": [],
+  "s-2314": [
+   17
+  ],
+  "s-2315": [
+   5
+  ],
+  "s-2316": [
+   29
+  ],
+  "s-2317": [
+   15
+  ],
+  "s-2318": [
+   26
+  ],
+  "s-2319": [
+   12
+  ],
+  "s-2320": [],
+  "s-2321": [],
+  "s-2322": [],
+  "s-2323": [],
+  "s-2324": [],
+  "s-2325": [],
+  "s-2326": [],
+  "s-2327": [],
+  "s-2328": [],
+  "s-2329": [],
+  "s-2330": [],
+  "s-2331": [],
+  "s-2332": [],
+  "s-2333": [],
+  "s-2334": [],
+  "s-2335": [],
+  "s-2336": [],
+  "s-2337": [
+   26
+  ],
+  "s-2340": [],
+  "s-2343": [],
+  "s-2344": [],
+  "s-2346": [],
+  "s-2349": [
+   30
+  ],
+  "s-2350": [],
+  "s-2351": [],
+  "s-2352": [],
+  "s-2354": [
+   17
+  ],
+  "s-2357": [
+   30
+  ],
+  "s-2358": [],
+  "s-2359": [],
+  "s-2360": [],
+  "s-2361": [],
+  "s-2362": [],
+  "s-2365": [],
+  "s-2367": [],
+  "s-2368": [],
+  "s-2370": [],
+  "s-2371": [
+   32
+  ],
+  "s-2372": [],
+  "s-2373": [],
+  "s-2374": [
+   9
+  ],
+  "s-2376": [
+   5
+  ],
+  "s-2377": [
+   33
+  ],
+  "s-2378": [],
+  "s-2379": [],
+  "s-2380": [
+   7
+  ],
+  "s-2381": [],
+  "s-2382": [],
+  "s-2383": [],
+  "s-2384": [],
+  "s-2386": [
+   29
+  ],
+  "s-2387": [
+   33
+  ],
+  "s-2388": [
+   13
+  ],
+  "s-2389": [],
+  "s-2390": [],
+  "s-2391": [
+   43
+  ],
+  "s-2392": [],
+  "s-2393": [
+   32
+  ],
+  "s-2394": [],
+  "s-2395": [],
+  "s-2396": [],
+  "s-2397": [
+   30
+  ],
+  "s-2398": [
+   17
+  ],
+  "s-2399": [],
+  "s-2402": [
+   9
+  ],
+  "s-2403": [],
+  "s-2404": [
+   1
+  ],
+  "s-2405": [],
+  "s-2406": [],
+  "s-2407": [],
+  "s-2408": [],
+  "s-2411": [],
+  "s-2412": [
+   17
+  ],
+  "s-2413": [],
+  "s-2415": [],
+  "s-2416": [],
+  "s-2418": [],
+  "s-2420": [
+   5
+  ],
+  "s-2421": [
+   42
+  ],
+  "s-2422": [],
+  "s-2423": [
+   15
+  ],
+  "s-2424": [
+   13
+  ],
+  "s-2425": [],
+  "s-2426": [
+   3
+  ],
+  "s-2427": [
+   3
+  ],
+  "s-2428": [
+   3
+  ],
+  "s-2429": [
+   3
+  ],
+  "s-2430": [],
+  "s-2431": [],
+  "s-2432": [
+   27
+  ],
+  "s-2433": [
+   47
+  ],
+  "s-2434": [],
+  "s-2435": [],
+  "s-2436": [],
+  "s-2437": [
+   48
+  ],
+  "s-2438": [],
+  "s-2439": [
+   36
+  ],
+  "s-2440": [
+   34
+  ],
+  "s-2441": [],
+  "s-2442": [],
+  "s-2443": [],
+  "s-2444": [
+   3
+  ],
+  "s-2445": [],
+  "s-2446": [
+   23
+  ],
+  "s-2447": [
+   25
+  ],
+  "s-2448": [
+   23
+  ],
+  "s-2449": [
+   3
+  ],
+  "s-2450": [
+   31
+  ],
+  "s-2451": [
+   22
+  ],
+  "s-2452": [
+   3
+  ],
+  "s-2453": [],
+  "s-2454": [],
+  "s-2455": [
+   3
+  ],
+  "s-2456": [
+   18
+  ],
+  "s-2457": [
+   3
+  ],
+  "s-2458": [],
+  "s-2459": [],
+  "s-2460": [],
+  "s-2461": [
+   3
+  ],
+  "s-2462": [],
+  "s-2463": [],
+  "s-2464": [],
+  "s-2465": [],
+  "s-2466": [],
+  "s-2467": [
+   2
+  ],
+  "s-2468": [
+   18
+  ],
+  "s-2469": [
+   20
+  ],
+  "s-2470": [],
+  "s-2471": [],
+  "s-2472": [],
+  "s-2473": [],
+  "s-2474": [],
+  "s-2475": [],
+  "s-2476": [],
+  "s-2477": [],
+  "s-2478": [],
+  "s-2479": [],
+  "s-2480": [],
+  "s-2481": [],
+  "s-2482": [],
+  "s-2483": [],
+  "s-2484": [],
+  "s-2485": [],
+  "s-2486": [],
+  "s-2487": [],
+  "s-2488": [],
+  "s-2489": [],
+  "s-2490": [],
+  "s-2491": [],
+  "s-2492": [],
+  "s-2493": [],
+  "s-2494": [],
+  "s-2495": [],
+  "s-2496": [],
+  "s-2497": [],
+  "s-2498": [],
+  "s-2499": [],
+  "s-2500": [],
+  "s-2501": [],
+  "s-2502": [],
+  "s-2503": [],
+  "s-2504": [],
+  "s-2505": [],
+  "s-2506": [],
+  "s-2507": [],
+  "s-2508": [],
+  "s-2509": [],
+  "s-2510": [],
+  "s-2511": [],
+  "s-2512": [],
+  "s-2513": [],
+  "s-2514": [],
+  "s-2515": [],
+  "s-2516": [],
+  "s-2517": [],
+  "s-2518": [],
+  "s-2519": [],
+  "s-2520": [],
+  "s-2521": [],
+  "s-2522": [],
+  "s-2523": [],
+  "s-2524": [],
+  "s-2525": [],
+  "s-2526": [],
+  "s-2527": [],
+  "s-2528": [],
+  "s-2529": [],
+  "s-2530": [
+   11
+  ],
+  "s-2531": [],
+  "s-2532": [
+   15
+  ],
+  "s-2533": [
+   5
+  ],
+  "s-2534": [
+   16
+  ],
+  "s-2535": [
+   4
+  ],
+  "s-2536": [],
+  "s-2537": [],
+  "s-2538": [],
+  "s-2539": [],
+  "s-2540": [
+   1
+  ],
+  "s-2541": [],
+  "s-2542": [
+   49
+  ],
+  "s-2543": [],
+  "s-2544": [
+   35
+  ],
+  "s-2545": [],
+  "s-2546": [
+   4
+  ],
+  "s-2547": [
+   5
+  ],
+  "s-2548": [
+   5
+  ],
+  "s-2549": [],
+  "s-2550": [
+   6
+  ],
+  "s-2551": [
+   29
+  ],
+  "s-2552": [
+   42
+  ],
+  "s-2553": [
+   17
+  ],
+  "s-2554": [
+   33
+  ],
+  "s-2555": [
+   13
+  ],
+  "s-2556": [
+   33
+  ],
+  "s-2557": [
+   5
+  ],
+  "s-2558": [
+   7
+  ],
+  "s-2559": [
+   15
+  ],
+  "s-2560": [],
+  "s-2561": [
+   3
+  ],
+  "s-2562": [
+   22
+  ],
+  "s-2563": [
+   19
+  ],
+  "s-2564": [
+   34
+  ],
+  "s-2565": [
+   3
+  ],
+  "s-2566": [
+   3
+  ],
+  "s-2567": [
+   19
+  ],
+  "s-2568": [
+   19
+  ],
+  "s-2569": [],
+  "s-2570": [],
+  "s-2571": [],
+  "s-2572": [],
+  "s-2573": [],
+  "s-2574": [
+   22
+  ],
+  "s-2575": [
+   3
+  ],
+  "s-2576": [
+   3
+  ],
+  "s-2577": [],
+  "s-2578": [],
+  "s-2579": [
+   19
+  ],
+  "s-2580": [],
+  "s-2581": [
+   3
+  ],
+  "s-2582": [],
+  "s-2583": [
+   45
+  ],
+  "s-2584": [],
+  "s-2585": [
+   3
+  ],
+  "s-2586": [],
+  "s-2587": [
+   18
+  ],
+  "s-2588": [
+   18
+  ],
+  "s-2589": [
+   18
+  ],
+  "s-2590": [
+   18
+  ],
+  "s-2591": [
+   3
+  ],
+  "s-2592": [
+   3
+  ],
+  "s-2593": [],
+  "s-2594": [
+   20
+  ],
+  "s-2595": [],
+  "s-2596": [
+   3
+  ],
+  "s-2597": [
+   3
+  ],
+  "s-2598": [],
+  "s-2599": [
+   31
+  ],
+  "s-2600": [],
+  "s-2601": [
+   19
+  ],
+  "s-2602": [
+   23
+  ],
+  "s-2603": [],
+  "s-2604": [
+   3
+  ],
+  "s-2605": [],
+  "s-2606": [
+   36
+  ],
+  "s-2607": [],
+  "s-2608": [],
+  "s-2609": [
+   2
+  ],
+  "s-2610": [],
+  "s-2611": [],
+  "s-2612": [
+   3
+  ],
+  "s-2613": [
+   3
+  ],
+  "s-2614": [
+   3
+  ],
+  "s-2615": [],
+  "s-2616": [
+   3
+  ],
+  "s-2617": [],
+  "s-2618": [
+   27
+  ],
+  "s-2619": [
+   28
+  ],
+  "s-2620": [],
+  "s-2621": [
+   3
+  ],
+  "s-2622": [],
+  "s-2623": [],
+  "s-2624": [],
+  "s-2625": [
+   3
+  ],
+  "s-2626": [
+   3
+  ],
+  "s-2627": [
+   23
+  ],
+  "s-2628": [
+   16
+  ],
+  "s-2629": [
+   3
+  ],
+  "s-2630": [
+   18
+  ],
+  "s-2631": [
+   3
+  ],
+  "s-2632": [
+   3
+  ],
+  "s-2633": [
+   28
+  ],
+  "s-2634": [
+   3
+  ],
+  "s-2635": [
+   27
+  ],
+  "s-2636": [
+   3
+  ],
+  "s-2637": [
+   3
+  ],
+  "s-2638": [
+   3
+  ],
+  "s-2639": [],
+  "s-2640": [],
+  "s-2641": [],
+  "s-2642": [
+   43
+  ],
+  "s-2643": [],
+  "s-2644": [
+   24
+  ],
+  "s-2645": [
+   8
+  ],
+  "s-2646": [],
+  "s-2647": [],
+  "s-2648": [],
+  "s-2649": [],
+  "s-2650": [],
+  "s-2651": [],
+  "s-2652": [
+   11
+  ],
+  "s-2653": [],
+  "s-2654": [
+   14
+  ],
+  "s-2655": [],
+  "s-2656": [],
+  "s-2657": [],
+  "s-2658": [],
+  "s-2659": [],
+  "s-2660": [],
+  "s-2661": [],
+  "s-2662": [],
+  "s-2663": [],
+  "s-2664": [],
+  "s-2665": [],
+  "s-2666": [],
+  "s-2667": [],
+  "s-2668": [],
+  "s-2669": [],
+  "s-2670": [],
+  "s-2671": [],
+  "s-2672": [],
+  "s-2673": [],
+  "s-2674": [],
+  "s-2675": [],
+  "s-2676": [],
+  "s-2677": [],
+  "s-2678": [],
+  "s-2679": [],
+  "s-2680": [],
+  "s-2681": [],
+  "s-2682": [],
+  "s-2683": [],
+  "s-2684": [],
+  "s-2685": [],
+  "s-2686": [],
+  "s-2687": [],
+  "s-2688": [],
+  "s-2689": [],
+  "s-2690": [],
+  "s-2691": [],
+  "s-2692": [],
+  "s-2693": [],
+  "s-2694": [],
+  "s-2695": [],
+  "s-2696": [],
+  "s-2697": [],
+  "s-2698": [],
+  "s-2699": [],
+  "s-2700": [],
+  "s-2701": [],
+  "s-2702": [],
+  "s-2703": [],
+  "s-2704": [
+   24
+  ],
+  "s-2705": [],
+  "s-2706": [
+   44
+  ],
+  "s-2707": [],
+  "s-2708": [],
+  "s-2709": [],
+  "s-2710": [],
+  "s-2711": [],
+  "s-2712": [],
+  "s-2713": [],
+  "s-2714": [],
+  "s-2715": [],
+  "s-2716": [],
+  "s-2717": [],
+  "s-2718": [],
+  "s-2719": [],
+  "s-2720": [],
+  "s-2721": [],
+  "s-2722": [],
+  "s-2723": [],
+  "s-2724": [],
+  "s-2725": [],
+  "s-2726": [],
+  "s-2727": [],
+  "s-2728": [],
+  "s-2729": [],
+  "s-2730": [],
+  "s-2731": [],
+  "s-2732": [],
+  "s-2733": [],
+  "s-2734": [],
+  "s-2735": [],
+  "s-2736": [],
+  "s-2737": [],
+  "s-2738": [],
+  "s-2739": [],
+  "s-2740": [],
+  "s-2741": [],
+  "s-2742": [],
+  "s-2743": [],
+  "s-2744": [],
+  "s-2745": [],
+  "s-2746": [],
+  "s-2747": [],
+  "s-2748": [],
+  "s-2749": [],
+  "s-2750": [],
+  "s-2751": [],
+  "s-2752": [],
+  "s-2753": [
+   37
+  ],
+  "s-2754": [],
+  "s-2755": [],
+  "s-2756": [],
+  "s-2757": [],
+  "s-2758": [],
+  "s-2759": [],
+  "s-2760": [],
+  "s-2761": [],
+  "s-2762": [],
+  "s-2763": [],
+  "s-2764": [],
+  "s-2765": [],
+  "s-2766": [],
+  "s-2767": [],
+  "s-2768": [],
+  "s-2769": [],
+  "s-2770": [],
+  "s-2771": [],
+  "s-2772": [],
+  "s-2773": [],
+  "s-2774": [],
+  "s-2775": [
+   24
+  ],
+  "s-2776": [],
+  "s-2777": [],
+  "s-2778": [],
+  "s-2779": [],
+  "s-2780": [],
+  "s-2781": [],
+  "s-2782": [],
+  "s-2783": [],
+  "s-2784": [],
+  "s-2785": [],
+  "s-2786": [],
+  "s-2787": [],
+  "s-2788": [],
+  "s-2789": [],
+  "s-2790": [],
+  "s-2791": [],
+  "s-2792": [],
+  "s-2793": [],
+  "s-2794": [],
+  "s-2795": [],
+  "s-2796": [],
+  "s-2797": [],
+  "s-2798": [],
+  "s-2799": [],
+  "s-2800": [],
+  "s-2801": [],
+  "s-2802": [],
+  "s-2803": [],
+  "s-2804": [],
+  "s-2805": [],
+  "s-2806": [],
+  "s-2807": [],
+  "s-2808": [],
+  "s-2809": [],
+  "s-2810": [],
+  "s-2811": [],
+  "s-2812": [],
+  "s-2813": [],
+  "s-2814": [],
+  "s-2815": [],
+  "s-2816": [],
+  "s-2817": [],
+  "s-2818": [],
+  "s-2819": [],
+  "s-2832": [
+   13
+  ],
+  "s-2833": [
+   44
+  ],
+  "s-2853": [
+   7
+  ],
+  "s-2854": [],
+  "s-2856": [],
+  "s-2857": [
+   5
+  ],
+  "s-2858": [],
+  "s-2859": [
+   47
+  ],
+  "s-2869": [],
+  "s-2870": [
+   34
+  ],
+  "s-2871": [],
+  "s-2872": [],
+  "s-2873": [],
+  "s-2874": [],
+  "s-2875": [],
+  "s-2920": [
+   34
+  ],
+  "s-2921": [],
+  "s-2922": [],
+  "s-2923": [
+   3
+  ],
+  "s-2924": [],
+  "s-2925": [],
+  "s-2926": [],
+  "s-2927": [],
+  "s-2928": [],
+  "s-2929": [
+   50
+  ],
+  "s-2930": [],
+  "s-2931": [],
+  "s-2932": [
+   3
+  ],
+  "s-2933": [
+   3
+  ],
+  "s-2934": [],
+  "s-2949": [
+   15
+  ],
+  "s-2950": [],
+  "s-2963": [],
+  "s-2964": [
+   27
+  ],
+  "s-2965": [
+   51
+  ],
+  "s-2966": [
+   7
+  ],
+  "s-2967": [],
+  "s-2968": [],
+  "s-2969": [],
+  "s-2970": [],
+  "s-2971": [],
+  "s-2972": [],
+  "s-2973": [],
+  "s-2974": [],
+  "s-2975": [],
+  "s-2976": [],
+  "s-2977": [],
+  "s-2978": [
+   15
+  ],
+  "s-2979": [],
+  "s-2980": [],
+  "s-2981": [
+   15
+  ],
+  "s-2982": [
+   15
+  ],
+  "s-2983": [
+   7
+  ],
+  "s-2984": [],
+  "s-2985": [],
+  "s-2986": [
+   7
+  ],
+  "s-2987": [],
+  "s-2988": [],
+  "s-2989": [],
+  "s-2990": [
+   9
+  ],
+  "s-2991": [],
+  "s-2992": [
+   33
+  ],
+  "s-2993": [],
+  "s-2994": [],
+  "s-2995": [
+   18
+  ],
+  "s-2996": [
+   34
+  ],
+  "s-2997": [],
+  "s-2998": [
+   3
+  ],
+  "s-2999": [],
+  "s-3000": [],
+  "s-3001": [],
+  "s-3002": [],
+  "s-3003": [],
+  "s-3004": [
+   51
+  ],
+  "s-3005": [],
+  "s-3006": [],
+  "s-3007": [],
+  "s-3008": [],
+  "s-3009": [],
+  "s-3010": [],
+  "s-3028": [],
+  "s-3029": [
+   9
+  ],
+  "s-3030": [],
+  "s-3031": [],
+  "s-3032": [],
+  "s-3033": [],
+  "s-3048": [],
+  "s-3049": [],
+  "s-3050": [],
+  "s-3051": [],
+  "s-3052": [],
+  "s-3054": [],
+  "s-3055": [],
+  "s-3056": [],
+  "s-3057": [
+   28
+  ],
+  "s-3058": [
+   34
+  ],
+  "s-3059": [
+   23
+  ],
+  "s-3060": [
+   3
+  ],
+  "s-3061": [],
+  "s-3062": [
+   52
+  ],
+  "s-3063": [
+   28
+  ],
+  "s-3064": [],
+  "s-3065": [],
+  "s-3066": [
+   53
+  ],
+  "s-3067": [],
+  "s-3068": [
+   49
+  ],
+  "s-3069": [
+   52
+  ],
+  "s-3070": [],
+  "s-3071": [
+   50
+  ],
+  "s-3072": [
+   46
+  ],
+  "s-3073": [],
+  "s-3074": [
+   3
+  ],
+  "s-3075": [
+   3
+  ],
+  "s-3076": [
+   3
+  ],
+  "s-3077": [],
+  "s-3078": [
+   17
+  ],
+  "s-3079": [
+   30
+  ],
+  "s-3080": [
+   48
+  ],
+  "s-3081": [],
+  "s-3082": [
+   21
+  ],
+  "s-3083": [],
+  "s-3084": [],
+  "s-3085": [],
+  "s-3086": [
+   34
+  ],
+  "s-3087": [],
+  "s-3088": [
+   40
+  ],
+  "s-3089": [],
+  "s-3090": [
+   34
+  ],
+  "s-3091": [
+   3
+  ],
+  "s-3092": [
+   45
+  ],
+  "s-3093": [
+   48
+  ],
+  "s-3094": [],
+  "s-3095": [
+   3
+  ],
+  "s-3096": [
+   3
+  ],
+  "s-3097": [],
+  "s-3098": [
+   3
+  ],
+  "s-3099": [
+   53
+  ],
+  "s-3100": [],
+  "s-3101": [
+   39
+  ],
+  "s-3102": [],
+  "s-3103": [],
+  "s-3104": [
+   46
+  ],
+  "s-3105": [],
+  "s-3106": [],
+  "s-3107": [
+   8
+  ],
+  "s-3119": [],
+  "s-3120": [
+   3
+  ],
+  "s-3121": [
+   3
+  ],
+  "s-3122": [
+   34
+  ],
+  "s-3123": [],
+  "s-3124": [],
+  "s-3125": [
+   38
+  ],
+  "s-3140": [
+   38
+  ],
+  "s-3141": [
+   23
+  ],
+  "s-3142": [],
+  "s-3143": [
+   28
+  ],
+  "s-3144": [
+   45
+  ],
+  "s-3145": [],
+  "s-3146": [
+   28
+  ],
+  "s-3147": [],
+  "s-3148": [],
+  "s-3149": [
+   3
+  ],
+  "s-3167": [],
+  "s-3168": [
+   18
+  ],
+  "s-3169": [],
+  "s-3183": [
+   23
+  ],
+  "s-3184": [],
+  "s-3185": [],
+  "s-3186": [],
+  "s-3187": [
+   19
+  ],
+  "s-3188": [
+   28
+  ],
+  "s-3206": [
+   40
+  ],
+  "s-3207": [
+   7
+  ],
+  "s-3208": [
+   23
+  ],
+  "s-3234": [
+   34
+  ],
+  "s-3235": [],
+  "s-3236": [],
+  "s-3251": [
+   30
+  ],
+  "s-3252": [],
+  "s-3253": [
+   30
+  ],
+  "s-3254": [
+   3
+  ],
+  "s-3255": [
+   46
+  ],
+  "s-3256": [],
+  "s-3257": [],
+  "s-3258": [],
+  "s-3275": [
+   17
+  ],
+  "s-3276": [],
+  "s-3290": [
+   40
+  ],
+  "s-3291": [
+   54
+  ],
+  "s-3292": [],
+  "s-3293": [
+   15
+  ],
+  "s-3294": [
+   3
+  ],
+  "s-3307": [],
+  "s-3308": [
+   51
+  ],
+  "s-3309": [],
+  "s-3310": [],
+  "s-3321": [
+   3
+  ],
+  "s-3322": [],
+  "s-3323": [],
+  "s-3324": [],
+  "s-3339": [],
+  "s-3340": [],
+  "s-3341": [],
+  "s-3342": [],
+  "s-3343": [],
+  "s-3353": [
+   23
+  ],
+  "s-3354": [
+   3
+  ],
+  "s-3368": [],
+  "s-3369": [],
+  "s-3383": [],
+  "s-3394": [
+   15
+  ],
+  "s-3395": [
+   55
+  ],
+  "s-3396": [
+   40
+  ],
+  "s-3397": [
+   5
+  ],
+  "s-3398": [],
+  "s-3399": [],
+  "s-3400": [],
+  "s-3401": [],
+  "s-3402": [],
+  "s-3416": [
+   27
+  ],
+  "s-3417": [
+   23
+  ],
+  "s-3418": [],
+  "s-3419": [],
+  "s-3420": [],
+  "s-3421": [
+   5
+  ],
+  "s-3422": [
+   55
+  ],
+  "s-3423": [],
+  "s-3424": [],
+  "s-3438": [],
+  "s-3439": [],
+  "s-3440": [
+   17
+  ],
+  "s-3452": [
+   18
+  ],
+  "s-3453": [],
+  "s-3454": [
+   18
+  ],
+  "s-3466": [],
+  "s-3467": [
+   19
+  ],
+  "s-3468": [],
+  "s-3469": [],
+  "s-3470": [
+   54
+  ],
+  "s-3485": [
+   3
+  ],
+  "s-3486": [
+   18
+  ],
+  "s-3487": [],
+  "s-3502": [
+   33
+  ],
+  "s-3503": [],
+  "s-3504": [],
+  "s-3505": [
+   41
+  ],
+  "s-3523": [],
+  "s-3533": [],
+  "s-3548": [],
+  "s-3549": [],
+  "s-3566": [],
+  "s-3567": [],
+  "s-3568": [],
+  "s-3569": []
+ },
+ "ticks": [
+  {
+   "tick": 1,
+   "items_in": 328,
+   "items_stored": 328,
+   "clusters_before_segmentation": [
+    [
+     "s-2188",
+     "s-2535",
+     "s-2198"
+    ],
+    [
+     "s-2189",
+     "s-2260",
+     "s-2194",
+     "s-2220"
+    ],
+    [
+     "s-2191",
+     "s-2540",
+     "s-2258",
+     "s-2215"
+    ],
+    [
+     "s-2230",
+     "s-2645"
+    ],
+    [
+     "s-2196",
+     "s-2275",
+     "s-2201",
+     "s-2246"
+    ],
+    [
+     "s-2210",
+     "s-2229"
+    ],
+    [
+     "s-2241",
+     "s-2628",
+     "s-2534",
+     "s-2255",
+     "s-2269",
+     "s-2243"
+    ],
+    [
+     "s-2251",
+     "s-2257",
+     "s-2254"
+    ],
+    [
+     "s-2270",
+     "s-2337"
+    ],
+    [
+     "s-2426",
+     "s-2638",
+     "s-2637",
+     "s-2626",
+     "s-2625",
+     "s-2636",
+     "s-2616",
+     "s-2576",
+     "s-2455"
+    ],
+    [
+     "s-2467",
+     "s-2609"
+    ],
+    [
+     "s-2567",
+     "s-2607",
+     "s-2579",
+     "s-2578",
+     "s-2577",
+     "s-2606"
+    ],
+    [
+     "s-2570",
+     "s-2605",
+     "s-2572"
+    ],
+    [
+     "s-2195",
+     "s-2219"
+    ],
+    [
+     "s-2222",
+     "s-2237"
+    ],
+    [
+     "s-2242",
+     "s-2259"
+    ],
+    [
+     "s-2244",
+     "s-2256"
+    ],
+    [
+     "s-2245",
+     "s-2654"
+    ],
+    [
+     "s-2248",
+     "s-2272"
+    ],
+    [
+     "s-2277",
+     "s-2283"
+    ]
+   ],
+   "segmentation_cuts": [
+    [
+     "s-2189",
+     "s-2260",
+     "analysis_headline"
+    ],
+    [
+     "s-2189",
+     "s-2220",
+     "analysis_headline"
+    ],
+    [
+     "s-2191",
+     "s-2540",
+     "analysis_headline"
+    ],
+    [
+     "s-2540",
+     "s-2215",
+     "analysis_headline"
+    ],
+    [
+     "s-2275",
+     "s-2201",
+     "analysis_headline"
+    ],
+    [
+     "s-2241",
+     "s-2628",
+     "headline_similarity"
+    ],
+    [
+     "s-2241",
+     "s-2534",
+     "disjoint_locations"
+    ],
+    [
+     "s-2628",
+     "s-2269",
+     "disjoint_locations"
+    ],
+    [
+     "s-2534",
+     "s-2255",
+     "analysis_headline"
+    ],
+    [
+     "s-2534",
+     "s-2269",
+     "disjoint_locations"
+    ],
+    [
+     "s-2255",
+     "s-2269",
+     "analysis_headline"
+    ],
+    [
+     "s-2269",
+     "s-2243",
+     "analysis_headline"
+    ],
+    [
+     "s-2270",
+     "s-2337",
+     "headline_similarity"
+    ],
+    [
+     "s-2567",
+     "s-2607",
+     "headline_similarity"
+    ],
+    [
+     "s-2607",
+     "s-2579",
+     "disjoint_locations"
+    ],
+    [
+     "s-2607",
+     "s-2578",
+     "disjoint_locations"
+    ],
+    [
+     "s-2607",
+     "s-2577",
+     "headline_similarity"
+    ],
+    [
+     "s-2578",
+     "s-2606",
+     "headline_similarity"
+    ],
+    [
+     "s-2570",
+     "s-2605",
+     "disjoint_locations"
+    ],
+    [
+     "s-2605",
+     "s-2572",
+     "disjoint_locations"
+    ],
+    [
+     "s-2195",
+     "s-2219",
+     "analysis_headline"
+    ]
+   ]
+  },
+  {
+   "tick": 2,
+   "items_in": 208,
+   "items_stored": 208,
+   "clusters_before_segmentation": [
+    [
+     "s-2188",
+     "s-2308",
+     "s-2535",
+     "s-2198"
+    ],
+    [
+     "s-2189",
+     "s-2558",
+     "s-2381",
+     "s-2310",
+     "s-2303",
+     "s-2194",
+     "s-2260",
+     "s-2380",
+     "s-2220"
+    ],
+    [
+     "s-2258",
+     "s-2404"
+    ],
+    [
+     "s-2196",
+     "s-2857",
+     "s-2305",
+     "s-2297",
+     "s-2557",
+     "s-2533",
+     "s-2376",
+     "s-2275",
+     "s-2201",
+     "s-2246",
+     "s-2315"
+    ],
+    [
+     "s-2210",
+     "s-2550",
+     "s-2223",
+     "s-2229"
+    ],
+    [
+     "s-2212",
+     "s-2307"
+    ],
+    [
+     "s-2222",
+     "s-2402",
+     "s-2374",
+     "s-2237"
+    ],
+    [
+     "s-2244",
+     "s-2978",
+     "s-2559",
+     "s-2532",
+     "s-2317",
+     "s-2256"
+    ],
+    [
+     "s-2241",
+     "s-2652",
+     "s-2301",
+     "s-2243",
+     "s-2530",
+     "s-2255",
+     "s-2628",
+     "s-2534",
+     "s-2269"
+    ],
+    [
+     "s-2248",
+     "s-2555",
+     "s-2388",
+     "s-2272"
+    ],
+    [
+     "s-2251",
+     "s-2319",
+     "s-2257",
+     "s-2254"
+    ],
+    [
+     "s-2270",
+     "s-2337",
+     "s-2318",
+     "s-2302"
+    ],
+    [
+     "s-2277",
+     "s-2553",
+     "s-2398",
+     "s-2354",
+     "s-2314",
+     "s-2283"
+    ],
+    [
+     "s-2426",
+     "s-2632",
+     "s-2428",
+     "s-2427",
+     "s-2621",
+     "s-2614",
+     "s-2613",
+     "s-2612",
+     "s-2597",
+     "s-2595",
+     "s-2593",
+     "s-2592",
+     "s-2591",
+     "s-2585",
+     "s-2566",
+     "s-2565",
+     "s-2461",
+     "s-2457",
+     "s-2638",
+     "s-2637",
+     "s-2626",
+     "s-2625",
+     "s-2616",
+     "s-2455",
+     "s-2576",
+     "s-2636",
+     "s-2429",
+     "s-2449",
+     "s-2452",
+     "s-2596",
+     "s-2604",
+     "s-2629",
+     "s-2631",
+     "s-2634"
+    ],
+    [
+     "s-2467",
+     "s-2609"
+    ],
+    [
+     "s-2567",
+     "s-2601",
+     "s-2579",
+     "s-2574",
+     "s-2568",
+     "s-2451",
+     "s-2453",
+     "s-2563",
+     "s-2600"
+    ],
+    [
+     "s-2570",
+     "s-2605",
+     "s-2572"
+    ],
+    [
+     "s-2578",
+     "s-2607",
+     "s-2577",
+     "s-2606",
+     "s-2564"
+    ],
+    [
+     "s-2450",
+     "s-2599"
+    ],
+    [
+     "s-2627",
+     "s-2602",
+     "s-2448",
+     "s-2446"
+    ],
+    [
+     "s-2775",
+     "s-2644"
+    ],
+    [
+     "s-2316",
+     "s-2551",
+     "s-2386"
+    ],
+    [
+     "s-2349",
+     "s-2397",
+     "s-2370",
+     "s-2357"
+    ],
+    [
+     "s-2377",
+     "s-2556",
+     "s-2554",
+     "s-2387"
+    ],
+    [
+     "s-2587",
+     "s-2630",
+     "s-2590",
+     "s-2589",
+     "s-2588",
+     "s-2610",
+     "s-2468",
+     "s-2611",
+     "s-2622"
+    ],
+    [
+     "s-2195",
+     "s-2219"
+    ],
+    [
+     "s-2230",
+     "s-2645"
+    ],
+    [
+     "s-2242",
+     "s-2259"
+    ],
+    [
+     "s-2245",
+     "s-2654"
+    ],
+    [
+     "s-2282",
+     "s-2447"
+    ],
+    [
+     "s-2312",
+     "s-2406"
+    ],
+    [
+     "s-2469",
+     "s-2594"
+    ],
+    [
+     "s-2635",
+     "s-2618",
+     "s-2432"
+    ],
+    [
+     "s-2639",
+     "s-2623"
+    ],
+    [
+     "s-2296",
+     "s-2328"
+    ],
+    [
+     "s-2299",
+     "s-2928"
+    ],
+    [
+     "s-2371",
+     "s-2393"
+    ],
+    [
+     "s-2619",
+     "s-3143",
+     "s-2633"
+    ]
+   ],
+   "segmentation_cuts": [
+    [
+     "s-2189",
+     "s-2558",
+     "analysis_headline"
+    ],
+    [
+     "s-2189",
+     "s-2260",
+     "analysis_headline"
+    ],
+    [
+     "s-2189",
+     "s-2220",
+     "analysis_headline"
+    ],
+    [
+     "s-2558",
+     "s-2381",
+     "analysis_headline"
+    ],
+    [
+     "s-2381",
+     "s-2260",
+     "analysis_headline"
+    ],
+    [
+     "s-2381",
+     "s-2220",
+     "analysis_headline"
+    ],
+    [
+     "s-2857",
+     "s-2305",
+     "analysis_headline"
+    ],
+    [
+     "s-2305",
+     "s-2557",
+     "analysis_headline"
+    ],
+    [
+     "s-2305",
+     "s-2533",
+     "analysis_headline"
+    ],
+    [
+     "s-2305",
+     "s-2376",
+     "analysis_headline"
+    ],
+    [
+     "s-2305",
+     "s-2275",
+     "analysis_headline"
+    ],
+    [
+     "s-2305",
+     "s-2315",
+     "analysis_headline"
+    ],
+    [
+     "s-2376",
+     "s-2201",
+     "analysis_headline"
+    ],
+    [
+     "s-2275",
+     "s-2201",
+     "analysis_headline"
+    ],
+    [
+     "s-2210",
+     "s-2550",
+     "headline_similarity"
+    ],
+    [
+     "s-2550",
+     "s-2223",
+     "headline_similarity"
+    ],
+    [
+     "s-2241",
+     "s-2652",
+     "disjoint_locations"
+    ],
+    [
+     "s-2241",
+     "s-2628",
+     "headline_similarity"
+    ],
+    [
+     "s-2241",
+     "s-2534",
+     "disjoint_locations"
+    ],
+    [
+     "s-2652",
+     "s-2301",
+     "disjoint_locations"
+    ],
+    [
+     "s-2652",
+     "s-2243",
+     "analysis_headline"
+    ],
+    [
+     "s-2301",
+     "s-2534",
+     "disjoint_locations"
+    ],
+    [
+     "s-2243",
+     "s-2530",
+     "analysis_headline"
+    ],
+    [
+     "s-2243",
+     "s-2269",
+     "analysis_headline"
+    ],
+    [
+     "s-2530",
+     "s-2255",
+     "analysis_headline"
+    ],
+    [
+     "s-2255",
+     "s-2534",
+     "analysis_headline"
+    ],
+    [
+     "s-2255",
+     "s-2269",
+     "analysis_headline"
+    ],
+    [
+     "s-2628",
+     "s-2269",
+     "disjoint_locations"
+    ],
+    [
+     "s-2534",
+     "s-2269",
+     "disjoint_locations"
+    ],
+    [
+     "s-2270",
+     "s-2337",
+     "headline_similarity"
+    ],
+    [
+     "s-2426",
+     "s-2595",
+     "analysis_headline"
+    ],
+    [
+     "s-2426",
+     "s-2593",
+     "analysis_headline"
+    ],
+    [
+     "s-2426",
+     "s-2629",
+     "disjoint_locations"
+    ],
+    [
+     "s-2632",
+     "s-2595",
+     "analysis_headline"
+    ],
+    [
+     "s-2632",
+     "s-2593",
+     "analysis_headline"
+    ],
+    [
+     "s-2428",
+     "s-2595",
+     "analysis_headline"
+    ],
+    [
+     "s-2428",
+     "s-2593",
+     "analysis_headline"
+    ],
+    [
+     "s-2428",
+     "s-2629",
+     "headline_similarity"
+    ],
+    [
+     "s-2427",
+     "s-2595",
+     "analysis_headline"
+    ],
+    [
+     "s-2427",
+     "s-2593",
+     "analysis_headline"
+    ],
+    [
+     "s-2427",
+     "s-2629",
+     "headline_similarity"
+    ],
+    [
+     "s-2621",
+     "s-2595",
+     "analysis_headline"
+    ],
+    [
+     "s-2621",
+     "s-2593",
+     "analysis_headline"
+    ],
+    [
+     "s-2614",
+     "s-2595",
+     "analysis_headline"
+    ],
+    [
+     "s-2614",
+     "s-2593",
+     "analysis_headline"
+    ],
+    [
+     "s-2613",
+     "s-2595",
+     "analysis_headline"
+    ],
+    [
+     "s-2613",
+     "s-2593",
+     "analysis_headline"
+    ],
+    [
+     "s-2612",
+     "s-2595",
+     "analysis_headline"
+    ],
+    [
+     "s-2612",
+     "s-2593",
+     "analysis_headline"
+    ],
+    [
+     "s-2597",
+     "s-2576",
+     "headline_similarity"
+    ],
+    [
+     "s-2597",
+     "s-2629",
+     "headline_similarity"
+    ],
+    [
+     "s-2595",
+     "s-2566",
+     "analysis_headline"
+    ],
+    [
+     "s-2595",
+     "s-2565",
+     "analysis_headline"
+    ],
+    [
+     "s-2595",
+     "s-2461",
+     "analysis_headline"
+    ],
+    [
+     "s-2595",
+     "s-2457",
+     "analysis_headline"
+    ],
+    [
+     "s-2595",
+     "s-2638",
+     "analysis_headline"
+    ],
+    [
+     "s-2595",
+     "s-2637",
+     "analysis_headline"
+    ],
+    [
+     "s-2595",
+     "s-2626",
+     "analysis_headline"
+    ],
+    [
+     "s-2595",
+     "s-2625",
+     "analysis_headline"
+    ],
+    [
+     "s-2595",
+     "s-2616",
+     "analysis_headline"
+    ],
+    [
+     "s-2595",
+     "s-2455",
+     "analysis_headline"
+    ],
+    [
+     "s-2595",
+     "s-2576",
+     "analysis_headline"
+    ],
+    [
+     "s-2595",
+     "s-2429",
+     "analysis_headline"
+    ],
+    [
+     "s-2595",
+     "s-2452",
+     "analysis_headline"
+    ],
+    [
+     "s-2595",
+     "s-2604",
+     "analysis_headline"
+    ],
+    [
+     "s-2595",
+     "s-2629",
+     "analysis_headline"
+    ],
+    [
+     "s-2595",
+     "s-2631",
+     "analysis_headline"
+    ],
+    [
+     "s-2593",
+     "s-2566",
+     "analysis_headline"
+    ],
+    [
+     "s-2593",
+     "s-2565",
+     "analysis_headline"
+    ],
+    [
+     "s-2593",
+     "s-2461",
+     "analysis_headline"
+    ],
+    [
+     "s-2593",
+     "s-2457",
+     "analysis_headline"
+    ],
+    [
+     "s-2593",
+     "s-2638",
+     "analysis_headline"
+    ],
+    [
+     "s-2593",
+     "s-2637",
+     "analysis_headline"
+    ],
+    [
+     "s-2593",
+     "s-2626",
+     "analysis_headline"
+    ],
+    [
+     "s-2593",
+     "s-2625",
+     "analysis_headline"
+    ],
+    [
+     "s-2593",
+     "s-2616",
+     "analysis_headline"
+    ],
+    [
+     "s-2593",
+     "s-2455",
+     "analysis_headline"
+    ],
+    [
+     "s-2593",
+     "s-2576",
+     "analysis_headline"
+    ],
+    [
+     "s-2593",
+     "s-2636",
+     "analysis_headline"
+    ],
+    [
+     "s-2593",
+     "s-2604",
+     "analysis_headline"
+    ],
+    [
+     "s-2593",
+     "s-2629",
+     "analysis_headline"
+    ],
+    [
+     "s-2593",
+     "s-2631",
+     "analysis_headline"
+    ],
+    [
+     "s-2585",
+     "s-2629",
+     "disjoint_locations"
+    ],
+    [
+     "s-2565",
+     "s-2629",
+     "headline_similarity"
+    ],
+    [
+     "s-2461",
+     "s-2629",
+     "disjoint_locations"
+    ],
+    [
+     "s-2457",
+     "s-2629",
+     "headline_similarity"
+    ],
+    [
+     "s-2576",
+     "s-2596",
+     "headline_similarity"
+    ],
+    [
+     "s-2629",
+     "s-2631",
+     "disjoint_locations"
+    ],
+    [
+     "s-2567",
+     "s-2453",
+     "disjoint_locations"
+    ],
+    [
+     "s-2567",
+     "s-2600",
+     "disjoint_locations"
+    ],
+    [
+     "s-2601",
+     "s-2574",
+     "headline_similarity"
+    ],
+    [
+     "s-2579",
+     "s-2453",
+     "headline_similarity"
+    ],
+    [
+     "s-2579",
+     "s-2600",
+     "disjoint_locations"
+    ],
+    [
+     "s-2574",
+     "s-2453",
+     "disjoint_locations"
+    ],
+    [
+     "s-2574",
+     "s-2600",
+     "headline_similarity"
+    ],
+    [
+     "s-2568",
+     "s-2453",
+     "headline_similarity"
+    ],
+    [
+     "s-2570",
+     "s-2605",
+     "disjoint_locations"
+    ],
+    [
+     "s-2605",
+     "s-2572",
+     "disjoint_locations"
+    ],
+    [
+     "s-2578",
+     "s-2607",
+     "disjoint_locations"
+    ],
+    [
+     "s-2578",
+     "s-2606",
+     "headline_similarity"
+    ],
+    [
+     "s-2607",
+     "s-2577",
+     "headline_similarity"
+    ],
+    [
+     "s-2607",
+     "s-2564",
+     "headline_similarity"
+    ],
+    [
+     "s-2627",
+     "s-2448",
+     "disjoint_locations"
+    ],
+    [
+     "s-2349",
+     "s-2370",
+     "analysis_headline"
+    ],
+    [
+     "s-2370",
+     "s-2357",
+     "analysis_headline"
+    ],
+    [
+     "s-2377",
+     "s-2387",
+     "disjoint_locations"
+    ],
+    [
+     "s-2587",
+     "s-2610",
+     "disjoint_locations"
+    ],
+    [
+     "s-2630",
+     "s-2610",
+     "disjoint_locations"
+    ],
+    [
+     "s-2630",
+     "s-2611",
+     "headline_similarity"
+    ],
+    [
+     "s-2630",
+     "s-2622",
+     "headline_similarity"
+    ],
+    [
+     "s-2590",
+     "s-2610",
+     "disjoint_locations"
+    ],
+    [
+     "s-2590",
+     "s-2622",
+     "headline_similarity"
+    ],
+    [
+     "s-2589",
+     "s-2610",
+     "headline_similarity"
+    ],
+    [
+     "s-2588",
+     "s-2610",
+     "headline_similarity"
+    ],
+    [
+     "s-2588",
+     "s-2622",
+     "headline_similarity"
+    ],
+    [
+     "s-2195",
+     "s-2219",
+     "analysis_headline"
+    ],
+    [
+     "s-2312",
+     "s-2406",
+     "headline_similarity"
+    ],
+    [
+     "s-2639",
+     "s-2623",
+     "disjoint_locations"
+    ],
+    [
+     "s-2296",
+     "s-2328",
+     "disjoint_locations"
+    ],
+    [
+     "s-2299",
+     "s-2928",
+     "analysis_headline"
+    ]
+   ]
+  },
+  {
+   "tick": 3,
+   "items_in": 297,
+   "items_stored": 296,
+   "clusters_before_segmentation": [
+    [
+     "s-2188",
+     "s-2546",
+     "s-2308",
+     "s-2535",
+     "s-2198"
+    ],
+    [
+     "s-2189",
+     "s-2983",
+     "s-3399",
+     "s-3207",
+     "s-2986",
+     "s-2966",
+     "s-2381",
+     "s-2380",
+     "s-2310",
+     "s-2303",
+     "s-2194",
+     "s-2853",
+     "s-2558",
+     "s-2260",
+     "s-2220"
+    ],
+    [
+     "s-2193",
+     "s-2544"
+    ],
+    [
+     "s-2195",
+     "s-2219"
+    ],
+    [
+     "s-2230",
+     "s-3107",
+     "s-2645"
+    ],
+    [
+     "s-2196",
+     "s-2979",
+     "s-2201"
+    ],
+    [
+     "s-2426",
+     "s-3485",
+     "s-2428",
+     "s-2427",
+     "s-3354",
+     "s-3294",
+     "s-3254",
+     "s-3149",
+     "s-3121",
+     "s-3120",
+     "s-3098",
+     "s-3091",
+     "s-3076",
+     "s-3075",
+     "s-3000",
+     "s-2998",
+     "s-2933",
+     "s-2932",
+     "s-2581",
+     "s-2632",
+     "s-2621",
+     "s-2614",
+     "s-2613",
+     "s-2612",
+     "s-2597",
+     "s-2595",
+     "s-2593",
+     "s-2592",
+     "s-2591",
+     "s-2585",
+     "s-2565",
+     "s-2461",
+     "s-2457",
+     "s-2638",
+     "s-2637",
+     "s-2626",
+     "s-2625",
+     "s-2616",
+     "s-2569",
+     "s-2576",
+     "s-2636",
+     "s-2429",
+     "s-2452",
+     "s-2566",
+     "s-2596",
+     "s-2629",
+     "s-2631",
+     "s-2634",
+     "s-2872",
+     "s-2923",
+     "s-2997",
+     "s-3060",
+     "s-3073",
+     "s-3074",
+     "s-3095",
+     "s-3096",
+     "s-3119",
+     "s-3321",
+     "s-3487"
+    ],
+    [
+     "s-2297",
+     "s-2548",
+     "s-2420",
+     "s-2305",
+     "s-2857",
+     "s-2557",
+     "s-2533",
+     "s-2376",
+     "s-2246",
+     "s-2275",
+     "s-2315",
+     "s-2547",
+     "s-3184",
+     "s-3397",
+     "s-3421"
+    ],
+    [
+     "s-2604",
+     "s-2575",
+     "s-2455",
+     "s-2444",
+     "s-2449",
+     "s-2561"
+    ],
+    [
+     "s-2210",
+     "s-2550",
+     "s-2223",
+     "s-2229"
+    ],
+    [
+     "s-2212",
+     "s-3082",
+     "s-2307"
+    ],
+    [
+     "s-2222",
+     "s-2990",
+     "s-2374",
+     "s-3029",
+     "s-2402",
+     "s-2237"
+    ],
+    [
+     "s-2241",
+     "s-2652",
+     "s-2301",
+     "s-2243",
+     "s-2530",
+     "s-3398",
+     "s-2255",
+     "s-2628",
+     "s-2534",
+     "s-2269"
+    ],
+    [
+     "s-2244",
+     "s-3394",
+     "s-3293",
+     "s-2418",
+     "s-2949",
+     "s-2982",
+     "s-2981",
+     "s-2543",
+     "s-2423",
+     "s-2978",
+     "s-2559",
+     "s-2532",
+     "s-2317",
+     "s-2256"
+    ],
+    [
+     "s-2248",
+     "s-2832",
+     "s-2424",
+     "s-2555",
+     "s-2388",
+     "s-2272"
+    ],
+    [
+     "s-2251",
+     "s-2319",
+     "s-2257",
+     "s-2254"
+    ],
+    [
+     "s-2270",
+     "s-2337",
+     "s-2318",
+     "s-2302"
+    ],
+    [
+     "s-2277",
+     "s-3275",
+     "s-3440",
+     "s-3078",
+     "s-2991",
+     "s-2545",
+     "s-2412",
+     "s-2553",
+     "s-2398",
+     "s-2354",
+     "s-2314",
+     "s-2283"
+    ],
+    [
+     "s-2567",
+     "s-3187",
+     "s-2562",
+     "s-2574",
+     "s-2568",
+     "s-2607",
+     "s-2451",
+     "s-2453",
+     "s-2563",
+     "s-2600",
+     "s-2601",
+     "s-2560",
+     "s-2573",
+     "s-3061",
+     "s-3467"
+    ],
+    [
+     "s-2570",
+     "s-2605",
+     "s-2572"
+    ],
+    [
+     "s-2606",
+     "s-2439",
+     "s-3342",
+     "s-2968"
+    ],
+    [
+     "s-2450",
+     "s-2599",
+     "s-2441"
+    ],
+    [
+     "s-2627",
+     "s-3417",
+     "s-3548",
+     "s-3125",
+     "s-3208",
+     "s-3183",
+     "s-3059",
+     "s-3353",
+     "s-3141",
+     "s-3140",
+     "s-2602",
+     "s-2448",
+     "s-2446"
+    ],
+    [
+     "s-2635",
+     "s-3416",
+     "s-2964",
+     "s-2582",
+     "s-2618",
+     "s-2432",
+     "s-2598"
+    ],
+    [
+     "s-2775",
+     "s-2704",
+     "s-2644"
+    ],
+    [
+     "s-2298",
+     "s-3505"
+    ],
+    [
+     "s-2299",
+     "s-3290",
+     "s-3396",
+     "s-3206",
+     "s-3088",
+     "s-2928"
+    ],
+    [
+     "s-2316",
+     "s-2551",
+     "s-2386"
+    ],
+    [
+     "s-2349",
+     "s-3253",
+     "s-3079",
+     "s-3251",
+     "s-2397",
+     "s-2370",
+     "s-2357"
+    ],
+    [
+     "s-2377",
+     "s-3502",
+     "s-2459",
+     "s-2992",
+     "s-2556",
+     "s-2554",
+     "s-2387"
+    ],
+    [
+     "s-2391",
+     "s-2642",
+     "s-2247"
+    ],
+    [
+     "s-2564",
+     "s-3090",
+     "s-3122",
+     "s-2996",
+     "s-2920",
+     "s-2870",
+     "s-3058",
+     "s-2224",
+     "s-2608",
+     "s-2442",
+     "s-2440",
+     "s-2970",
+     "s-3086",
+     "s-3234"
+    ],
+    [
+     "s-2583",
+     "s-3144",
+     "s-3092"
+    ],
+    [
+     "s-2587",
+     "s-3454",
+     "s-3486",
+     "s-3168",
+     "s-3147",
+     "s-2590",
+     "s-2589",
+     "s-2588",
+     "s-3452",
+     "s-2456",
+     "s-2995",
+     "s-2580",
+     "s-2630",
+     "s-2610",
+     "s-2639",
+     "s-2611",
+     "s-2622",
+     "s-2871",
+     "s-3148",
+     "s-3169"
+    ],
+    [
+     "s-2619",
+     "s-3439",
+     "s-3143",
+     "s-3188",
+     "s-3063",
+     "s-3146",
+     "s-3057",
+     "s-2633",
+     "s-3094"
+    ],
+    [
+     "s-2437",
+     "s-3093",
+     "s-3080"
+    ],
+    [
+     "s-2735",
+     "s-2854",
+     "s-2734",
+     "s-2705"
+    ],
+    [
+     "s-2929",
+     "s-3071"
+    ],
+    [
+     "s-3072",
+     "s-3255",
+     "s-3104",
+     "s-3167"
+    ],
+    [
+     "s-2231",
+     "s-2753"
+    ],
+    [
+     "s-2239",
+     "s-2976"
+    ],
+    [
+     "s-2242",
+     "s-2259"
+    ],
+    [
+     "s-2245",
+     "s-2654"
+    ],
+    [
+     "s-2258",
+     "s-2404"
+    ],
+    [
+     "s-2282",
+     "s-2447"
+    ],
+    [
+     "s-2312",
+     "s-2406"
+    ],
+    [
+     "s-2469",
+     "s-2594"
+    ],
+    [
+     "s-2296",
+     "s-2328"
+    ],
+    [
+     "s-2309",
+     "s-3101"
+    ],
+    [
+     "s-2371",
+     "s-2393"
+    ],
+    [
+     "s-2443",
+     "s-2999"
+    ],
+    [
+     "s-2552",
+     "s-2421"
+    ],
+    [
+     "s-2706",
+     "s-2833"
+    ],
+    [
+     "s-2433",
+     "s-2859"
+    ],
+    [
+     "s-2542",
+     "s-3068"
+    ],
+    [
+     "s-2965",
+     "s-3004",
+     "s-3308"
+    ],
+    [
+     "s-3062",
+     "s-3069"
+    ],
+    [
+     "s-3066",
+     "s-3099"
+    ],
+    [
+     "s-3087",
+     "s-3503"
+    ],
+    [
+     "s-3291",
+     "s-3470"
+    ],
+    [
+     "s-3395",
+     "s-3422"
+    ]
+   ],
+   "segmentation_cuts": [
+    [
+     "s-2189",
+     "s-2983",
+     "analysis_headline"
+    ],
+    [
+     "s-2189",
+     "s-2853",
+     "analysis_headline"
+    ],
+    [
+     "s-2189",
+     "s-2558",
+     "analysis_headline"
+    ],
+    [
+     "s-2189",
+     "s-2260",
+     "analysis_headline"
+    ],
+    [
+     "s-2189",
+     "s-2220",
+     "analysis_headline"
+    ],
+    [
+     "s-2983",
+     "s-3399",
+     "analysis_headline"
+    ],
+    [
+     "s-2983",
+     "s-2381",
+     "analysis_headline"
+    ],
+    [
+     "s-3399",
+     "s-3207",
+     "analysis_headline"
+    ],
+    [
+     "s-3399",
+     "s-2853",
+     "analysis_headline"
+    ],
+    [
+     "s-3399",
+     "s-2558",
+     "analysis_headline"
+    ],
+    [
+     "s-3399",
+     "s-2260",
+     "analysis_headline"
+    ],
+    [
+     "s-3399",
+     "s-2220",
+     "analysis_headline"
+    ],
+    [
+     "s-3207",
+     "s-2381",
+     "analysis_headline"
+    ],
+    [
+     "s-2381",
+     "s-2853",
+     "analysis_headline"
+    ],
+    [
+     "s-2381",
+     "s-2558",
+     "analysis_headline"
+    ],
+    [
+     "s-2381",
+     "s-2260",
+     "analysis_headline"
+    ],
+    [
+     "s-2381",
+     "s-2220",
+     "analysis_headline"
+    ],
+    [
+     "s-2195",
+     "s-2219",
+     "analysis_headline"
+    ],
+    [
+     "s-2196",
+     "s-2979",
+     "analysis_headline"
+    ],
+    [
+     "s-2426",
+     "s-3000",
+     "analysis_headline"
+    ],
+    [
+     "s-2426",
+     "s-2595",
+     "analysis_headline"
+    ],
+    [
+     "s-2426",
+     "s-2593",
+     "analysis_headline"
+    ],
+    [
+     "s-2426",
+     "s-2629",
+     "disjoint_locations"
+    ],
+    [
+     "s-2426",
+     "s-2872",
+     "analysis_headline"
+    ],
+    [
+     "s-2426",
+     "s-3487",
+     "analysis_headline"
+    ],
+    [
+     "s-3485",
+     "s-3000",
+     "analysis_headline"
+    ],
+    [
+     "s-3485",
+     "s-2595",
+     "analysis_headline"
+    ],
+    [
+     "s-3485",
+     "s-2593",
+     "analysis_headline"
+    ],
+    [
+     "s-3485",
+     "s-2569",
+     "headline_similarity"
+    ],
+    [
+     "s-3485",
+     "s-2629",
+     "headline_similarity"
+    ],
+    [
+     "s-2428",
+     "s-3000",
+     "analysis_headline"
+    ],
+    [
+     "s-2428",
+     "s-2595",
+     "analysis_headline"
+    ],
+    [
+     "s-2428",
+     "s-2593",
+     "analysis_headline"
+    ],
+    [
+     "s-2428",
+     "s-2629",
+     "headline_similarity"
+    ],
+    [
+     "s-2428",
+     "s-2997",
+     "analysis_headline"
+    ],
+    [
+     "s-2428",
+     "s-3487",
+     "analysis_headline"
+    ],
+    [
+     "s-2427",
+     "s-3091",
+     "headline_similarity"
+    ],
+    [
+     "s-2427",
+     "s-3000",
+     "analysis_headline"
+    ],
+    [
+     "s-2427",
+     "s-2595",
+     "analysis_headline"
+    ],
+    [
+     "s-2427",
+     "s-2593",
+     "analysis_headline"
+    ],
+    [
+     "s-2427",
+     "s-2629",
+     "headline_similarity"
+    ],
+    [
+     "s-2427",
+     "s-2872",
+     "analysis_headline"
+    ],
+    [
+     "s-2427",
+     "s-3487",
+     "analysis_headline"
+    ],
+    [
+     "s-3354",
+     "s-2595",
+     "analysis_headline"
+    ],
+    [
+     "s-3354",
+     "s-2593",
+     "analysis_headline"
+    ],
+    [
+     "s-3354",
+     "s-2565",
+     "headline_similarity"
+    ],
+    [
+     "s-3354",
+     "s-2629",
+     "headline_similarity"
+    ],
+    [
+     "s-3354",
+     "s-2872",
+     "analysis_headline"
+    ],
+    [
+     "s-3354",
+     "s-2997",
+     "analysis_headline"
+    ],
+    [
+     "s-3354",
+     "s-3487",
+     "analysis_headline"
+    ],
+    [
+     "s-3294",
+     "s-3000",
+     "analysis_headline"
+    ],
+    [
+     "s-3294",
+     "s-2595",
+     "analysis_headline"
+    ],
+    [
+     "s-3294",
+     "s-2593",
+     "analysis_headline"
+    ],
+    [
+     "s-3294",
+     "s-2872",
+     "analysis_headline"
+    ],
+    [
+     "s-3254",
+     "s-3000",
+     "analysis_headline"
+    ],
+    [
+     "s-3254",
+     "s-2595",
+     "analysis_headline"
+    ],
+    [
+     "s-3254",
+     "s-2593",
+     "analysis_headline"
+    ],
+    [
+     "s-3149",
+     "s-2595",
+     "analysis_headline"
+    ],
+    [
+     "s-3149",
+     "s-2593",
+     "analysis_headline"
+    ],
+    [
+     "s-3149",
+     "s-2872",
+     "analysis_headline"
+    ],
+    [
+     "s-3149",
+     "s-3487",
+     "analysis_headline"
+    ],
+    [
+     "s-3121",
+     "s-3000",
+     "analysis_headline"
+    ],
+    [
+     "s-3121",
+     "s-2452",
+     "headline_similarity"
+    ],
+    [
+     "s-3120",
+     "s-3000",
+     "analysis_headline"
+    ],
+    [
+     "s-3120",
+     "s-2636",
+     "headline_similarity"
+    ],
+    [
+     "s-3120",
+     "s-2629",
+     "disjoint_locations"
+    ],
+    [
+     "s-3098",
+     "s-2595",
+     "analysis_headline"
+    ],
+    [
+     "s-3098",
+     "s-2593",
+     "analysis_headline"
+    ],
+    [
+     "s-3098",
+     "s-2452",
+     "headline_similarity"
+    ],
+    [
+     "s-3098",
+     "s-2629",
+     "headline_similarity"
+    ],
+    [
+     "s-3098",
+     "s-2872",
+     "analysis_headline"
+    ],
+    [
+     "s-3098",
+     "s-3487",
+     "analysis_headline"
+    ],
+    [
+     "s-3091",
+     "s-3000",
+     "analysis_headline"
+    ],
+    [
+     "s-3091",
+     "s-2595",
+     "analysis_headline"
+    ],
+    [
+     "s-3091",
+     "s-2593",
+     "analysis_headline"
+    ],
+    [
+     "s-3091",
+     "s-2565",
+     "headline_similarity"
+    ],
+    [
+     "s-3091",
+     "s-2638",
+     "headline_similarity"
+    ],
+    [
+     "s-3091",
+     "s-2576",
+     "headline_similarity"
+    ],
+    [
+     "s-3091",
+     "s-2636",
+     "headline_similarity"
+    ],
+    [
+     "s-3091",
+     "s-2452",
+     "headline_similarity"
+    ],
+    [
+     "s-3091",
+     "s-2923",
+     "headline_similarity"
+    ],
+    [
+     "s-3076",
+     "s-3000",
+     "analysis_headline"
+    ],
+    [
+     "s-3076",
+     "s-2629",
+     "headline_similarity"
+    ],
+    [
+     "s-3075",
+     "s-3000",
+     "analysis_headline"
+    ],
+    [
+     "s-3000",
+     "s-2581",
+     "analysis_headline"
+    ],
+    [
+     "s-3000",
+     "s-2621",
+     "analysis_headline"
+    ],
+    [
+     "s-3000",
+     "s-2614",
+     "analysis_headline"
+    ],
+    [
+     "s-3000",
+     "s-2613",
+     "analysis_headline"
+    ],
+    [
+     "s-3000",
+     "s-2612",
+     "analysis_headline"
+    ],
+    [
+     "s-3000",
+     "s-2597",
+     "analysis_headline"
+    ],
+    [
+     "s-3000",
+     "s-2592",
+     "analysis_headline"
+    ],
+    [
+     "s-3000",
+     "s-2591",
+     "analysis_headline"
+    ],
+    [
+     "s-3000",
+     "s-2585",
+     "analysis_headline"
+    ],
+    [
+     "s-3000",
+     "s-2565",
+     "analysis_headline"
+    ],
+    [
+     "s-3000",
+     "s-2461",
+     "analysis_headline"
+    ],
+    [
+     "s-3000",
+     "s-2457",
+     "analysis_headline"
+    ],
+    [
+     "s-3000",
+     "s-2626",
+     "analysis_headline"
+    ],
+    [
+     "s-3000",
+     "s-2625",
+     "analysis_headline"
+    ],
+    [
+     "s-3000",
+     "s-2616",
+     "analysis_headline"
+    ],
+    [
+     "s-3000",
+     "s-2576",
+     "analysis_headline"
+    ],
+    [
+     "s-3000",
+     "s-2452",
+     "analysis_headline"
+    ],
+    [
+     "s-3000",
+     "s-2566",
+     "analysis_headline"
+    ],
+    [
+     "s-3000",
+     "s-2596",
+     "analysis_headline"
+    ],
+    [
+     "s-3000",
+     "s-2629",
+     "analysis_headline"
+    ],
+    [
+     "s-3000",
+     "s-3074",
+     "analysis_headline"
+    ],
+    [
+     "s-3000",
+     "s-3321",
+     "analysis_headline"
+    ],
+    [
+     "s-2998",
+     "s-2595",
+     "analysis_headline"
+    ],
+    [
+     "s-2998",
+     "s-2593",
+     "analysis_headline"
+    ],
+    [
+     "s-2998",
+     "s-2629",
+     "headline_similarity"
+    ],
+    [
+     "s-2998",
+     "s-2872",
+     "analysis_headline"
+    ],
+    [
+     "s-2998",
+     "s-2997",
+     "analysis_headline"
+    ],
+    [
+     "s-2998",
+     "s-3487",
+     "analysis_headline"
+    ],
+    [
+     "s-2933",
+     "s-2595",
+     "analysis_headline"
+    ],
+    [
+     "s-2933",
+     "s-2593",
+     "analysis_headline"
+    ],
+    [
+     "s-2933",
+     "s-2872",
+     "analysis_headline"
+    ],
+    [
+     "s-2932",
+     "s-2595",
+     "analysis_headline"
+    ],
+    [
+     "s-2932",
+     "s-2593",
+     "analysis_headline"
+    ],
+    [
+     "s-2932",
+     "s-2629",
+     "headline_similarity"
+    ],
+    [
+     "s-2932",
+     "s-2872",
+     "analysis_headline"
+    ],
+    [
+     "s-2932",
+     "s-3487",
+     "analysis_headline"
+    ],
+    [
+     "s-2581",
+     "s-2923",
+     "headline_similarity"
+    ],
+    [
+     "s-2632",
+     "s-2595",
+     "analysis_headline"
+    ],
+    [
+     "s-2632",
+     "s-2593",
+     "analysis_headline"
+    ],
+    [
+     "s-2632",
+     "s-3487",
+     "analysis_headline"
+    ],
+    [
+     "s-2621",
+     "s-2595",
+     "analysis_headline"
+    ],
+    [
+     "s-2621",
+     "s-2593",
+     "analysis_headline"
+    ],
+    [
+     "s-2621",
+     "s-2872",
+     "analysis_headline"
+    ],
+    [
+     "s-2614",
+     "s-2595",
+     "analysis_headline"
+    ],
+    [
+     "s-2614",
+     "s-2593",
+     "analysis_headline"
+    ],
+    [
+     "s-2614",
+     "s-3487",
+     "analysis_headline"
+    ],
+    [
+     "s-2613",
+     "s-2595",
+     "analysis_headline"
+    ],
+    [
+     "s-2613",
+     "s-2593",
+     "analysis_headline"
+    ],
+    [
+     "s-2613",
+     "s-2872",
+     "analysis_headline"
+    ],
+    [
+     "s-2612",
+     "s-2595",
+     "analysis_headline"
+    ],
+    [
+     "s-2612",
+     "s-2593",
+     "analysis_headline"
+    ],
+    [
+     "s-2612",
+     "s-2872",
+     "analysis_headline"
+    ],
+    [
+     "s-2612",
+     "s-3487",
+     "analysis_headline"
+    ],
+    [
+     "s-2597",
+     "s-2576",
+     "headline_similarity"
+    ],
+    [
+     "s-2597",
+     "s-2629",
+     "headline_similarity"
+    ],
+    [
+     "s-2595",
+     "s-2565",
+     "analysis_headline"
+    ],
+    [
+     "s-2595",
+     "s-2461",
+     "analysis_headline"
+    ],
+    [
+     "s-2595",
+     "s-2457",
+     "analysis_headline"
+    ],
+    [
+     "s-2595",
+     "s-2638",
+     "analysis_headline"
+    ],
+    [
+     "s-2595",
+     "s-2637",
+     "analysis_headline"
+    ],
+    [
+     "s-2595",
+     "s-2626",
+     "analysis_headline"
+    ],
+    [
+     "s-2595",
+     "s-2625",
+     "analysis_headline"
+    ],
+    [
+     "s-2595",
+     "s-2616",
+     "analysis_headline"
+    ],
+    [
+     "s-2595",
+     "s-2576",
+     "analysis_headline"
+    ],
+    [
+     "s-2595",
+     "s-2429",
+     "analysis_headline"
+    ],
+    [
+     "s-2595",
+     "s-2452",
+     "analysis_headline"
+    ],
+    [
+     "s-2595",
+     "s-2566",
+     "analysis_headline"
+    ],
+    [
+     "s-2595",
+     "s-2629",
+     "analysis_headline"
+    ],
+    [
+     "s-2595",
+     "s-2631",
+     "analysis_headline"
+    ],
+    [
+     "s-2595",
+     "s-2923",
+     "analysis_headline"
+    ],
+    [
+     "s-2595",
+     "s-3095",
+     "analysis_headline"
+    ],
+    [
+     "s-2595",
+     "s-3096",
+     "analysis_headline"
+    ],
+    [
+     "s-2595",
+     "s-3321",
+     "analysis_headline"
+    ],
+    [
+     "s-2593",
+     "s-2565",
+     "analysis_headline"
+    ],
+    [
+     "s-2593",
+     "s-2461",
+     "analysis_headline"
+    ],
+    [
+     "s-2593",
+     "s-2457",
+     "analysis_headline"
+    ],
+    [
+     "s-2593",
+     "s-2638",
+     "analysis_headline"
+    ],
+    [
+     "s-2593",
+     "s-2637",
+     "analysis_headline"
+    ],
+    [
+     "s-2593",
+     "s-2626",
+     "analysis_headline"
+    ],
+    [
+     "s-2593",
+     "s-2625",
+     "analysis_headline"
+    ],
+    [
+     "s-2593",
+     "s-2616",
+     "analysis_headline"
+    ],
+    [
+     "s-2593",
+     "s-2576",
+     "analysis_headline"
+    ],
+    [
+     "s-2593",
+     "s-2636",
+     "analysis_headline"
+    ],
+    [
+     "s-2593",
+     "s-2566",
+     "analysis_headline"
+    ],
+    [
+     "s-2593",
+     "s-2629",
+     "analysis_headline"
+    ],
+    [
+     "s-2593",
+     "s-2631",
+     "analysis_headline"
+    ],
+    [
+     "s-2593",
+     "s-3095",
+     "analysis_headline"
+    ],
+    [
+     "s-2593",
+     "s-3096",
+     "analysis_headline"
+    ],
+    [
+     "s-2593",
+     "s-3321",
+     "analysis_headline"
+    ],
+    [
+     "s-2591",
+     "s-2923",
+     "headline_similarity"
+    ],
+    [
+     "s-2585",
+     "s-2629",
+     "disjoint_locations"
+    ],
+    [
+     "s-2565",
+     "s-2629",
+     "headline_similarity"
+    ],
+    [
+     "s-2461",
+     "s-2629",
+     "disjoint_locations"
+    ],
+    [
+     "s-2461",
+     "s-2872",
+     "analysis_headline"
+    ],
+    [
+     "s-2461",
+     "s-3487",
+     "analysis_headline"
+    ],
+    [
+     "s-2457",
+     "s-2629",
+     "headline_similarity"
+    ],
+    [
+     "s-2457",
+     "s-2872",
+     "analysis_headline"
+    ],
+    [
+     "s-2457",
+     "s-3074",
+     "headline_similarity"
+    ],
+    [
+     "s-2457",
+     "s-3487",
+     "analysis_headline"
+    ],
+    [
+     "s-2638",
+     "s-2923",
+     "headline_similarity"
+    ],
+    [
+     "s-2638",
+     "s-3074",
+     "headline_similarity"
+    ],
+    [
+     "s-2638",
+     "s-3487",
+     "analysis_headline"
+    ],
+    [
+     "s-2637",
+     "s-3487",
+     "analysis_headline"
+    ],
+    [
+     "s-2625",
+     "s-2872",
+     "analysis_headline"
+    ],
+    [
+     "s-2625",
+     "s-3487",
+     "analysis_headline"
+    ],
+    [
+     "s-2576",
+     "s-2596",
+     "headline_similarity"
+    ],
+    [
+     "s-2576",
+     "s-3095",
+     "headline_similarity"
+    ],
+    [
+     "s-2576",
+     "s-3487",
+     "analysis_headline"
+    ],
+    [
+     "s-2636",
+     "s-2997",
+     "analysis_headline"
+    ],
+    [
+     "s-2636",
+     "s-3487",
+     "analysis_headline"
+    ],
+    [
+     "s-2629",
+     "s-2631",
+     "disjoint_locations"
+    ],
+    [
+     "s-2629",
+     "s-2872",
+     "analysis_headline"
+    ],
+    [
+     "s-2629",
+     "s-3096",
+     "headline_similarity"
+    ],
+    [
+     "s-2631",
+     "s-2872",
+     "analysis_headline"
+    ],
+    [
+     "s-2634",
+     "s-3487",
+     "analysis_headline"
+    ],
+    [
+     "s-2872",
+     "s-3095",
+     "analysis_headline"
+    ],
+    [
+     "s-2872",
+     "s-3096",
+     "analysis_headline"
+    ],
+    [
+     "s-2923",
+     "s-3074",
+     "headline_similarity"
+    ],
+    [
+     "s-3073",
+     "s-3096",
+     "headline_similarity"
+    ],
+    [
+     "s-3095",
+     "s-3487",
+     "analysis_headline"
+    ],
+    [
+     "s-3096",
+     "s-3487",
+     "analysis_headline"
+    ],
+    [
+     "s-2297",
+     "s-3184",
+     "analysis_headline"
+    ],
+    [
+     "s-2548",
+     "s-2305",
+     "analysis_headline"
+    ],
+    [
+     "s-2420",
+     "s-3184",
+     "analysis_headline"
+    ],
+    [
+     "s-2305",
+     "s-2857",
+     "analysis_headline"
+    ],
+    [
+     "s-2305",
+     "s-2557",
+     "analysis_headline"
+    ],
+    [
+     "s-2305",
+     "s-2533",
+     "analysis_headline"
+    ],
+    [
+     "s-2305",
+     "s-2376",
+     "analysis_headline"
+    ],
+    [
+     "s-2305",
+     "s-2275",
+     "analysis_headline"
+    ],
+    [
+     "s-2305",
+     "s-2315",
+     "analysis_headline"
+    ],
+    [
+     "s-2305",
+     "s-2547",
+     "analysis_headline"
+    ],
+    [
+     "s-2305",
+     "s-3421",
+     "analysis_headline"
+    ],
+    [
+     "s-2857",
+     "s-2547",
+     "headline_similarity"
+    ],
+    [
+     "s-2857",
+     "s-3184",
+     "analysis_headline"
+    ],
+    [
+     "s-2533",
+     "s-3184",
+     "analysis_headline"
+    ],
+    [
+     "s-2376",
+     "s-3184",
+     "analysis_headline"
+    ],
+    [
+     "s-2275",
+     "s-3184",
+     "analysis_headline"
+    ],
+    [
+     "s-3184",
+     "s-3397",
+     "analysis_headline"
+    ],
+    [
+     "s-2210",
+     "s-2550",
+     "headline_similarity"
+    ],
+    [
+     "s-2550",
+     "s-2223",
+     "headline_similarity"
+    ],
+    [
+     "s-2241",
+     "s-2652",
+     "disjoint_locations"
+    ],
+    [
+     "s-2241",
+     "s-2628",
+     "headline_similarity"
+    ],
+    [
+     "s-2241",
+     "s-2534",
+     "disjoint_locations"
+    ],
+    [
+     "s-2652",
+     "s-2301",
+     "disjoint_locations"
+    ],
+    [
+     "s-2652",
+     "s-2243",
+     "analysis_headline"
+    ],
+    [
+     "s-2301",
+     "s-2534",
+     "disjoint_locations"
+    ],
+    [
+     "s-2243",
+     "s-2530",
+     "analysis_headline"
+    ],
+    [
+     "s-2243",
+     "s-2269",
+     "analysis_headline"
+    ],
+    [
+     "s-2530",
+     "s-3398",
+     "analysis_headline"
+    ],
+    [
+     "s-2530",
+     "s-2255",
+     "analysis_headline"
+    ],
+    [
+     "s-3398",
+     "s-2628",
+     "analysis_headline"
+    ],
+    [
+     "s-3398",
+     "s-2534",
+     "analysis_headline"
+    ],
+    [
+     "s-3398",
+     "s-2269",
+     "analysis_headline"
+    ],
+    [
+     "s-2255",
+     "s-2534",
+     "analysis_headline"
+    ],
+    [
+     "s-2255",
+     "s-2269",
+     "analysis_headline"
+    ],
+    [
+     "s-2628",
+     "s-2269",
+     "disjoint_locations"
+    ],
+    [
+     "s-2534",
+     "s-2269",
+     "disjoint_locations"
+    ],
+    [
+     "s-2244",
+     "s-2543",
+     "analysis_headline"
+    ],
+    [
+     "s-3394",
+     "s-2543",
+     "analysis_headline"
+    ],
+    [
+     "s-2949",
+     "s-2543",
+     "analysis_headline"
+    ],
+    [
+     "s-2543",
+     "s-2423",
+     "analysis_headline"
+    ],
+    [
+     "s-2543",
+     "s-2978",
+     "analysis_headline"
+    ],
+    [
+     "s-2543",
+     "s-2532",
+     "analysis_headline"
+    ],
+    [
+     "s-2543",
+     "s-2317",
+     "analysis_headline"
+    ],
+    [
+     "s-2543",
+     "s-2256",
+     "analysis_headline"
+    ],
+    [
+     "s-2248",
+     "s-2832",
+     "analysis_headline"
+    ],
+    [
+     "s-2832",
+     "s-2555",
+     "analysis_headline"
+    ],
+    [
+     "s-2270",
+     "s-2337",
+     "headline_similarity"
+    ],
+    [
+     "s-2277",
+     "s-2991",
+     "analysis_headline"
+    ],
+    [
+     "s-2277",
+     "s-2545",
+     "analysis_headline"
+    ],
+    [
+     "s-3275",
+     "s-2991",
+     "analysis_headline"
+    ],
+    [
+     "s-3275",
+     "s-2545",
+     "analysis_headline"
+    ],
+    [
+     "s-3440",
+     "s-2991",
+     "analysis_headline"
+    ],
+    [
+     "s-3440",
+     "s-2545",
+     "analysis_headline"
+    ],
+    [
+     "s-3078",
+     "s-2545",
+     "analysis_headline"
+    ],
+    [
+     "s-2991",
+     "s-2553",
+     "analysis_headline"
+    ],
+    [
+     "s-2991",
+     "s-2354",
+     "analysis_headline"
+    ],
+    [
+     "s-2545",
+     "s-2412",
+     "analysis_headline"
+    ],
+    [
+     "s-2545",
+     "s-2398",
+     "analysis_headline"
+    ],
+    [
+     "s-2545",
+     "s-2354",
+     "analysis_headline"
+    ],
+    [
+     "s-2545",
+     "s-2314",
+     "analysis_headline"
+    ],
+    [
+     "s-2545",
+     "s-2283",
+     "analysis_headline"
+    ],
+    [
+     "s-2567",
+     "s-2607",
+     "headline_similarity"
+    ],
+    [
+     "s-2567",
+     "s-2453",
+     "disjoint_locations"
+    ],
+    [
+     "s-2567",
+     "s-2600",
+     "disjoint_locations"
+    ],
+    [
+     "s-2567",
+     "s-3061",
+     "headline_similarity"
+    ],
+    [
+     "s-3187",
+     "s-2568",
+     "headline_similarity"
+    ],
+    [
+     "s-3187",
+     "s-2560",
+     "headline_similarity"
+    ],
+    [
+     "s-3187",
+     "s-3061",
+     "headline_similarity"
+    ],
+    [
+     "s-2562",
+     "s-2453",
+     "disjoint_locations"
+    ],
+    [
+     "s-2574",
+     "s-2453",
+     "disjoint_locations"
+    ],
+    [
+     "s-2574",
+     "s-2600",
+     "headline_similarity"
+    ],
+    [
+     "s-2574",
+     "s-2601",
+     "headline_similarity"
+    ],
+    [
+     "s-2574",
+     "s-3061",
+     "headline_similarity"
+    ],
+    [
+     "s-2568",
+     "s-2453",
+     "headline_similarity"
+    ],
+    [
+     "s-2607",
+     "s-2453",
+     "headline_similarity"
+    ],
+    [
+     "s-2607",
+     "s-2560",
+     "headline_similarity"
+    ],
+    [
+     "s-2453",
+     "s-2560",
+     "headline_similarity"
+    ],
+    [
+     "s-2453",
+     "s-2573",
+     "disjoint_locations"
+    ],
+    [
+     "s-2600",
+     "s-2560",
+     "disjoint_locations"
+    ],
+    [
+     "s-2560",
+     "s-3061",
+     "disjoint_locations"
+    ],
+    [
+     "s-2573",
+     "s-3061",
+     "headline_similarity"
+    ],
+    [
+     "s-2570",
+     "s-2605",
+     "disjoint_locations"
+    ],
+    [
+     "s-2605",
+     "s-2572",
+     "disjoint_locations"
+    ],
+    [
+     "s-2606",
+     "s-2968",
+     "headline_similarity"
+    ],
+    [
+     "s-2439",
+     "s-3342",
+     "disjoint_locations"
+    ],
+    [
+     "s-2599",
+     "s-2441",
+     "headline_similarity"
+    ],
+    [
+     "s-2627",
+     "s-3140",
+     "disjoint_locations"
+    ],
+    [
+     "s-2627",
+     "s-2448",
+     "disjoint_locations"
+    ],
+    [
+     "s-3417",
+     "s-3548",
+     "analysis_headline"
+    ],
+    [
+     "s-3417",
+     "s-2448",
+     "disjoint_locations"
+    ],
+    [
+     "s-3548",
+     "s-3125",
+     "analysis_headline"
+    ],
+    [
+     "s-3548",
+     "s-3208",
+     "analysis_headline"
+    ],
+    [
+     "s-3548",
+     "s-3183",
+     "analysis_headline"
+    ],
+    [
+     "s-3548",
+     "s-3353",
+     "analysis_headline"
+    ],
+    [
+     "s-3548",
+     "s-3141",
+     "analysis_headline"
+    ],
+    [
+     "s-3548",
+     "s-3140",
+     "analysis_headline"
+    ],
+    [
+     "s-3208",
+     "s-3140",
+     "disjoint_locations"
+    ],
+    [
+     "s-3208",
+     "s-2448",
+     "disjoint_locations"
+    ],
+    [
+     "s-3141",
+     "s-2448",
+     "disjoint_locations"
+    ],
+    [
+     "s-2635",
+     "s-2582",
+     "analysis_headline"
+    ],
+    [
+     "s-3416",
+     "s-2582",
+     "analysis_headline"
+    ],
+    [
+     "s-2964",
+     "s-2582",
+     "analysis_headline"
+    ],
+    [
+     "s-2582",
+     "s-2618",
+     "analysis_headline"
+    ],
+    [
+     "s-2582",
+     "s-2598",
+     "analysis_headline"
+    ],
+    [
+     "s-2299",
+     "s-2928",
+     "analysis_headline"
+    ],
+    [
+     "s-3290",
+     "s-2928",
+     "analysis_headline"
+    ],
+    [
+     "s-3396",
+     "s-2928",
+     "analysis_headline"
+    ],
+    [
+     "s-3206",
+     "s-2928",
+     "analysis_headline"
+    ],
+    [
+     "s-3088",
+     "s-2928",
+     "analysis_headline"
+    ],
+    [
+     "s-2349",
+     "s-2370",
+     "analysis_headline"
+    ],
+    [
+     "s-3253",
+     "s-2370",
+     "analysis_headline"
+    ],
+    [
+     "s-3079",
+     "s-2370",
+     "analysis_headline"
+    ],
+    [
+     "s-2370",
+     "s-2357",
+     "analysis_headline"
+    ],
+    [
+     "s-2377",
+     "s-3502",
+     "disjoint_locations"
+    ],
+    [
+     "s-2377",
+     "s-2992",
+     "disjoint_locations"
+    ],
+    [
+     "s-2377",
+     "s-2387",
+     "disjoint_locations"
+    ],
+    [
+     "s-2992",
+     "s-2556",
+     "headline_similarity"
+    ],
+    [
+     "s-2642",
+     "s-2247",
+     "headline_similarity"
+    ],
+    [
+     "s-2564",
+     "s-2608",
+     "headline_similarity"
+    ],
+    [
+     "s-2564",
+     "s-2442",
+     "headline_similarity"
+    ],
+    [
+     "s-2564",
+     "s-2970",
+     "disjoint_locations"
+    ],
+    [
+     "s-3090",
+     "s-2224",
+     "disjoint_locations"
+    ],
+    [
+     "s-3122",
+     "s-2224",
+     "disjoint_locations"
+    ],
+    [
+     "s-2920",
+     "s-2608",
+     "headline_similarity"
+    ],
+    [
+     "s-2870",
+     "s-2224",
+     "disjoint_locations"
+    ],
+    [
+     "s-2440",
+     "s-3234",
+     "headline_similarity"
+    ],
+    [
+     "s-2587",
+     "s-2610",
+     "disjoint_locations"
+    ],
+    [
+     "s-3454",
+     "s-3147",
+     "analysis_headline"
+    ],
+    [
+     "s-3454",
+     "s-2611",
+     "headline_similarity"
+    ],
+    [
+     "s-3486",
+     "s-2610",
+     "headline_similarity"
+    ],
+    [
+     "s-3486",
+     "s-2639",
+     "headline_similarity"
+    ],
+    [
+     "s-3168",
+     "s-2610",
+     "disjoint_locations"
+    ],
+    [
+     "s-3147",
+     "s-3452",
+     "analysis_headline"
+    ],
+    [
+     "s-3147",
+     "s-2456",
+     "analysis_headline"
+    ],
+    [
+     "s-3147",
+     "s-2630",
+     "analysis_headline"
+    ],
+    [
+     "s-3147",
+     "s-2610",
+     "analysis_headline"
+    ],
+    [
+     "s-2590",
+     "s-2610",
+     "disjoint_locations"
+    ],
+    [
+     "s-2590",
+     "s-2622",
+     "headline_similarity"
+    ],
+    [
+     "s-2589",
+     "s-2610",
+     "headline_similarity"
+    ],
+    [
+     "s-2588",
+     "s-2610",
+     "headline_similarity"
+    ],
+    [
+     "s-2588",
+     "s-2622",
+     "headline_similarity"
+    ],
+    [
+     "s-2588",
+     "s-3148",
+     "headline_similarity"
+    ],
+    [
+     "s-2456",
+     "s-2580",
+     "analysis_headline"
+    ],
+    [
+     "s-2456",
+     "s-2610",
+     "disjoint_locations"
+    ],
+    [
+     "s-2456",
+     "s-2871",
+     "analysis_headline"
+    ],
+    [
+     "s-2456",
+     "s-3148",
+     "headline_similarity"
+    ],
+    [
+     "s-2456",
+     "s-3169",
+     "disjoint_locations"
+    ],
+    [
+     "s-2995",
+     "s-2610",
+     "headline_similarity"
+    ],
+    [
+     "s-2580",
+     "s-2630",
+     "analysis_headline"
+    ],
+    [
+     "s-2580",
+     "s-2610",
+     "analysis_headline"
+    ],
+    [
+     "s-2630",
+     "s-2610",
+     "disjoint_locations"
+    ],
+    [
+     "s-2630",
+     "s-2611",
+     "headline_similarity"
+    ],
+    [
+     "s-2630",
+     "s-2622",
+     "headline_similarity"
+    ],
+    [
+     "s-3148",
+     "s-3169",
+     "disjoint_locations"
+    ],
+    [
+     "s-2619",
+     "s-3439",
+     "headline_similarity"
+    ],
+    [
+     "s-3143",
+     "s-3063",
+     "headline_similarity"
+    ],
+    [
+     "s-2854",
+     "s-2734",
+     "headline_similarity"
+    ],
+    [
+     "s-2734",
+     "s-2705",
+     "headline_similarity"
+    ],
+    [
+     "s-3104",
+     "s-3167",
+     "headline_similarity"
+    ],
+    [
+     "s-2239",
+     "s-2976",
+     "analysis_headline"
+    ],
+    [
+     "s-2312",
+     "s-2406",
+     "headline_similarity"
+    ],
+    [
+     "s-2296",
+     "s-2328",
+     "disjoint_locations"
+    ],
+    [
+     "s-2443",
+     "s-2999",
+     "headline_similarity"
+    ]
+   ]
+  }
+ ]
+}

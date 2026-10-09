@@ -97,11 +97,21 @@ def replay(window: dict) -> dict:
         current["cuts"].extend([(x, y, guard) for x, y, guard in seg.cuts])
         return seg
 
-    CL.cluster_narrative, DS.segment = rec_cluster, rec_segment
+    # The clustering window (48 h back from "now") is evaluated at each tick's own end, moved by the same offset as
+    # the publication times: a window longer than 48 h would otherwise lose its first items before they are ever
+    # clustered, which production (clustering at the tick's own wall-clock time) never does.
+    orig_recent = CL.recent_items
+    clock = {}
+
+    def recent_at_tick(session_, window_hours=CL.DEFAULT_WINDOW_HOURS, now=None):
+        return orig_recent(session_, window_hours, now or clock.get("now"))
+
+    CL.cluster_narrative, DS.segment, CL.recent_items = rec_cluster, rec_segment, recent_at_tick
     run_tick = {}
     try:
         for tk in window["ticks"]:
             n = tk["tick"]
+            clock["now"] = min(datetime.fromisoformat(tk["to"]) + shift, datetime.utcnow())
             batch = [i for i in items if tick_of[i["id"]] == n]
             run, token = runs.start_run(session, "identity-replay", tier=f"t{n}")
             run_tick[run.id] = n
@@ -124,7 +134,7 @@ def replay(window: dict) -> dict:
                 "segmentation_cuts": [[ext_of.get(x), ext_of.get(y), g] for x, y, g in current["cuts"]],
             })
     finally:
-        CL.cluster_narrative, DS.segment = orig_cluster, orig_segment
+        CL.cluster_narrative, DS.segment, CL.recent_items = orig_cluster, orig_segment, orig_recent
 
     # final state
     stored = {r.external_id: r for r in session.query(RawItem)}
