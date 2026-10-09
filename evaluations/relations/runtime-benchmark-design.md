@@ -71,3 +71,10 @@ About 25 generator pairs in total plus 50 per window: about 175 cases to label.
   of the probe population), never from hard negatives.
 - The 2026-10-08 window ends at 21:00 UTC; collection stopped at 20:42 (daemon killed by a console Ctrl+C event,
   restarted detached on 2026-10-09). The gap is not part of any prospective holdout.
+
+## Amendment 2 (2026-10-09, after the freeze; the frozen benchmark is unchanged)
+
+Hard-negative stratum: **0 available** in every window. Checked independently of the sampler: the only qualifying
+pair in the three windows (2026-10-05-live D27/D40: both hold US and Russia, and the same Situation) was already
+drawn by the generator stratum (U124, an identity suspect). Nothing is synthesised. Negatives come from the probe and
+random strata and from the targeted batch (`runtime-targeted-design.md`).
