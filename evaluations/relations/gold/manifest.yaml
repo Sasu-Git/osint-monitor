@@ -1,63 +1,28 @@
-frozen_at: '2026-10-07T13:09:24+00:00'
-state: 'FROZEN: relation gold revision 1 (development split); owner verdict snapshot unchanged'
-cases: 142
-owner_labels:
-  NO_RELATION: 96
-  follow_up_to: 2
-  same_calamity_lifecycle: 13
-  same_visit_or_summit: 10
-  caused_by: 3
-  SAME_DEVELOPMENT_SUSPECTED: 4
-  reaction_to: 4
-  AMBIGUOUS: 5
-  co_caused_with: 4
-  same_attack_wave: 1
-sha256:
-  gold/owner-verdicts.snapshot.yaml: 075a805a8f7473f03d23452016c8cd019bf135a1f38015764f9d3d1312b03adb
-  gold/relation-gold.candidate.yaml: 3de5d2f90c0d2ca04aba013fa7b70935cd9f8d091491cb125ccb7dd78401d780
-  review/cases.json: 181a478f03f336a5976df24c0c7f8e9116a58614db6e8085eabbabf9f1f8ecd4
-  review/draft-labels.json: 72c856526371fd7b5cf54e33e06ec629e5922983ad624eb9baa48f6285d90cbf
-  review/relation-review-sheet.md: 0180fbae729c2a1d03f6c7f1af8be05d2276f511372cc83aa2fe14cec95b65d1
-  taxonomy.md: d7e126bb1bd972ed3ec773071b879faaf6026f2f8717b2edee26f3ca82c7b719
-  gold/relation-gold.yaml: f79271ee3a6b7a5b942f0404a67fff5e29115d3c9bbe76b730a3e588c5b74621
-  scripts/freeze_relation_gold.py: 96fd0bf082359e7636c93267b91be38e3592471ccd480e05f2b701df67b60404
-  gold/relation-gold-reaction-batch.yaml: a88b5f20eb426340801f9e1f7bb9b674231335c464273ddc5b5a78036df7e226
-  gold/reaction-batch-verdicts.snapshot.yaml: f6bdc24835e7a5c27cc084c9ff7e739cfcbd508f33b8ed64f0eebfe11864e44f
-  review-reaction-batch/cases.json: 7892f737f0e9925339d5fbc06ee92f895782a45085a14c438aa1b3b6f1cdd0fa
-  review-reaction-batch/draft-labels.json: fa78818a941ee77e937e48452645227aff95678c59e306a4ac00c31669e9c433
-  taxonomy.md (revision 1): 46687b2d3f79b9370892d80d303502be6c74a00095f00740abca444008863818
-  scripts/freeze_reaction_batch.py: 70419826c0203b278c6877562d9a38d3a42fbe5d99f3ac0b7523c66e72c81e1e
-holdout_seal: holdout/SEALED.yaml unchanged; not opened
-revision: 1
-cases_frozen: 141
-deferred_owner_debate:
-  R055: 'owner leans reaction_to; disputed: A (08:06) was published before B''s Taiwan remarks (09:43), and A reacts to the
-    summit as a whole. To settle in discussion; excluded from the frozen gold.'
+revision: 2
+frozen_at: '2026-10-09T10:42:32+00:00'
+state: 'FROZEN: relation gold revision 2 (development split); holdout sealed, not opened'
+cases: 187
+scored_cases: 173
 labels:
-  NO_RELATION: 100
-  commentary_on: 4
-  same_calamity_lifecycle: 13
-  reaction_to: 4
-  SAME_DEVELOPMENT_SUSPECTED: 2
-  AMBIGUOUS: 6
-  same_convened_event: 8
-  follow_up_to: 2
-  same_attack_wave: 1
+  AMBIGUOUS: 7
+  NO_RELATION: 124
+  SAME_DEVELOPMENT_SUSPECTED: 7
   co_caused_with: 1
+  commentary_on: 7
+  follow_up_to: 7
+  reaction_to: 9
+  same_attack_wave: 2
+  same_calamity_lifecycle: 13
+  same_convened_event: 10
 canonical_positives:
-  caused_by: 0
   co_caused_with: 1
-  commentary_on: 4
-  follow_up_to: 0
-  reaction_to: 2
-  same_attack_wave: 1
+  commentary_on: 7
+  follow_up_to: 5
+  reaction_to: 7
+  same_attack_wave: 2
   same_calamity_lifecycle: 13
-  same_convened_event: 8
-inferred_positives (non-canonical):
-  follow_up_to: 2
-  reaction_to: 2
-scored_cases: 133
-runtime_taxonomy:
+  same_convened_event: 10
+runtime_taxonomy: &id001
   same_calamity_lifecycle: implement
   same_convened_event: implement
   reaction_to: 'implement (targeted batch passed: 7 canonical positives, 5 triggers)'
@@ -66,25 +31,117 @@ runtime_taxonomy:
   commentary_on: defer
   caused_by: dropped from Phase 3 runtime
   co_caused_with: dropped from Phase 3 runtime
-reaction_batch:
-  frozen_at: '2026-10-07T16:56:56+00:00'
-  cases: 45
-  labels:
-    NO_RELATION: 23
-    commentary_on: 3
-    reaction_to: 5
-    SAME_DEVELOPMENT_SUSPECTED: 6
-    follow_up_to: 5
-    same_convened_event: 2
+scoring:
+  scored_labels: 'cases with scored: true; AMBIGUOUS and SAME_DEVELOPMENT_SUSPECTED are excluded and reported separately'
+  canonical: only canonical (explicit-evidence) positives count as positives; inferred positives are non-canonical and never
+    expected at runtime
+  sides: a side is an item set; a system Development covers a side when it contains the side's items
+  BLOCKED_BY_IDENTITY: 'the system puts both sides of a pair into one Development: no distinct Development pair exists to
+    link. Counted against end-to-end relation coverage, not against the relation classifier''s precision or recall (owner
+    2026-10-09)'
+  external_links: a third-event link counts only when its target is a gold side (resolved); unresolved links are non-canonical
+    and never scored as relations
+changes_from_previous:
+- case: R055
+  change: 'added: NO_RELATION, summit link unresolved'
+- case: T025
+  change: SAME_DEVELOPMENT_SUSPECTED -> AMBIGUOUS
+- case: R064
+  change: 'side a: 2026-09-30-multilingual:D9 -> 2026-09-30-multilingual:D9~macron-visit'
+- case: T033
+  change: 'side b: 2026-09-30-multilingual:D19 -> 2026-09-30-multilingual:D19~rial'
+- case: T039
+  change: 'side b: 2026-09-30-multilingual:D19 -> 2026-09-30-multilingual:D19~rial'
+- case: R114
+  change: 'side b: 2026-09-30-multilingual:sx-423 -> 2026-09-30-multilingual:sx-400'
+sha256:
+  gold/relation-gold-rev2.yaml: 213b2a590815b5558da00d93a6265266e9fcc6b2b37e8ea921d2dcb26094b6b7
+  gold/relation-sides-rev2.yaml: 16c39669854d8bf99a07a1c21ce262b89c16fc7d57fdcca5ef0f54d3e2d28a07
+  gold/owner-decisions-2026-10-07b.yaml: 4b429cbfc7b2869ffd7835596827d993e13aa5b8695a49bd1212d23d7d04d2ba
+  taxonomy.md: 46687b2d3f79b9370892d80d303502be6c74a00095f00740abca444008863818
+  scripts/freeze_relation_gold_rev2.py: fd8550ee399d52085d0ae63db7757f2ceab77fd0628d19dd3e1916ff54679275
+holdout_seal: holdout/SEALED.yaml unchanged; not opened
+previous_revisions:
+- frozen_at: '2026-10-07T13:09:24+00:00'
+  state: 'FROZEN: relation gold revision 1 (development split); owner verdict snapshot unchanged'
+  cases: 142
+  owner_labels:
+    NO_RELATION: 96
+    follow_up_to: 2
+    same_calamity_lifecycle: 13
+    same_visit_or_summit: 10
+    caused_by: 3
+    SAME_DEVELOPMENT_SUSPECTED: 4
+    reaction_to: 4
+    AMBIGUOUS: 5
+    co_caused_with: 4
     same_attack_wave: 1
-  canonical_reaction_to: 5
-combined_canonical_positives:
-  caused_by: 0
-  co_caused_with: 1
-  commentary_on: 7
-  follow_up_to: 5
-  reaction_to: 7
-  same_attack_wave: 2
-  same_calamity_lifecycle: 13
-  same_convened_event: 10
-combined_scored_cases: 172
+  sha256:
+    gold/owner-verdicts.snapshot.yaml: 075a805a8f7473f03d23452016c8cd019bf135a1f38015764f9d3d1312b03adb
+    gold/relation-gold.candidate.yaml: 3de5d2f90c0d2ca04aba013fa7b70935cd9f8d091491cb125ccb7dd78401d780
+    review/cases.json: 181a478f03f336a5976df24c0c7f8e9116a58614db6e8085eabbabf9f1f8ecd4
+    review/draft-labels.json: 72c856526371fd7b5cf54e33e06ec629e5922983ad624eb9baa48f6285d90cbf
+    review/relation-review-sheet.md: 0180fbae729c2a1d03f6c7f1af8be05d2276f511372cc83aa2fe14cec95b65d1
+    taxonomy.md: d7e126bb1bd972ed3ec773071b879faaf6026f2f8717b2edee26f3ca82c7b719
+    gold/relation-gold.yaml: f79271ee3a6b7a5b942f0404a67fff5e29115d3c9bbe76b730a3e588c5b74621
+    scripts/freeze_relation_gold.py: 96fd0bf082359e7636c93267b91be38e3592471ccd480e05f2b701df67b60404
+    gold/relation-gold-reaction-batch.yaml: a88b5f20eb426340801f9e1f7bb9b674231335c464273ddc5b5a78036df7e226
+    gold/reaction-batch-verdicts.snapshot.yaml: f6bdc24835e7a5c27cc084c9ff7e739cfcbd508f33b8ed64f0eebfe11864e44f
+    review-reaction-batch/cases.json: 7892f737f0e9925339d5fbc06ee92f895782a45085a14c438aa1b3b6f1cdd0fa
+    review-reaction-batch/draft-labels.json: fa78818a941ee77e937e48452645227aff95678c59e306a4ac00c31669e9c433
+    taxonomy.md (revision 1): 46687b2d3f79b9370892d80d303502be6c74a00095f00740abca444008863818
+    scripts/freeze_reaction_batch.py: 70419826c0203b278c6877562d9a38d3a42fbe5d99f3ac0b7523c66e72c81e1e
+  holdout_seal: holdout/SEALED.yaml unchanged; not opened
+  revision: 1
+  cases_frozen: 141
+  deferred_owner_debate:
+    R055: 'owner leans reaction_to; disputed: A (08:06) was published before B''s Taiwan remarks (09:43), and A reacts to
+      the summit as a whole. To settle in discussion; excluded from the frozen gold.'
+  labels:
+    NO_RELATION: 100
+    commentary_on: 4
+    same_calamity_lifecycle: 13
+    reaction_to: 4
+    SAME_DEVELOPMENT_SUSPECTED: 2
+    AMBIGUOUS: 6
+    same_convened_event: 8
+    follow_up_to: 2
+    same_attack_wave: 1
+    co_caused_with: 1
+  canonical_positives:
+    caused_by: 0
+    co_caused_with: 1
+    commentary_on: 4
+    follow_up_to: 0
+    reaction_to: 2
+    same_attack_wave: 1
+    same_calamity_lifecycle: 13
+    same_convened_event: 8
+  inferred_positives (non-canonical):
+    follow_up_to: 2
+    reaction_to: 2
+  scored_cases: 133
+  runtime_taxonomy: *id001
+  reaction_batch:
+    frozen_at: '2026-10-07T16:56:56+00:00'
+    cases: 45
+    labels:
+      NO_RELATION: 23
+      commentary_on: 3
+      reaction_to: 5
+      SAME_DEVELOPMENT_SUSPECTED: 6
+      follow_up_to: 5
+      same_convened_event: 2
+      same_attack_wave: 1
+    canonical_reaction_to: 5
+  combined_canonical_positives:
+    caused_by: 0
+    co_caused_with: 1
+    commentary_on: 7
+    follow_up_to: 5
+    reaction_to: 7
+    same_attack_wave: 2
+    same_calamity_lifecycle: 13
+    same_convened_event: 10
+  combined_scored_cases: 172
+  git: 0233855
