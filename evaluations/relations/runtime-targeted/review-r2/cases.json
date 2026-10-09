@@ -1,0 +1,307 @@
+{
+ "meta": {
+  "design": "runtime-targeted-design.md",
+  "round": 2,
+  "pools": [
+   "2026-10-03-live"
+  ],
+  "types": [
+   "same_calamity_lifecycle",
+   "same_convened_event",
+   "reaction_to"
+  ],
+  "cap": 30,
+  "cases": 2
+ },
+ "cases": [
+  {
+   "case": "P201",
+   "a": {
+    "id": "2026-10-03-live:D3",
+    "window": "2026-10-03-live",
+    "members": [
+     "s-1124",
+     "s-1316",
+     "s-1200",
+     "s-1213",
+     "s-1233"
+    ],
+    "storyline": null,
+    "first": "2026-09-29 12:14:50.000000",
+    "last": "2026-09-29 21:02:02.000000",
+    "actors": [
+     "Spain"
+    ],
+    "places": [
+     "Madrid",
+     "Spain"
+    ],
+    "system_developments": [
+     3
+    ],
+    "situations": [],
+    "sources": [
+     "Al Jazeera",
+     "BBC World",
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "s-1124",
+      "source": "BBC World",
+      "published_at": "2026-09-29 12:14:50.000000",
+      "title": "Spain announces new housing measures after protests over 87-year-old woman's eviction",
+      "excerpt": "The measures include a proposed ban on evictions until 2030 and the automatic renewal of tenant contracts."
+     },
+     {
+      "item": "s-1316",
+      "source": "BBC World",
+      "published_at": "2026-09-29 16:23:58.000000",
+      "title": "Spain announces ban on evictions after protests over 87-year-old woman's removal from flat",
+      "excerpt": "The ban is part of a number of proposals that must be approved in parliament within 30 days."
+     },
+     {
+      "item": "s-1200",
+      "source": "South China Morning Post",
+      "published_at": "2026-09-29 17:54:08.000000",
+      "title": "87-year-old woman whose eviction sparked protests in Spain is returning home",
+      "excerpt": "Spain’s coalition government said it had agreed on proposals including banning evictions until 2030 to address the country’s housing crisis, as the 87-year-old woman whose forced removal last week triggered protests accepted an offer to return home.\nHundreds of ‌people remained camped in one of Madrid’s main squares on Tuesday to protest Maricarmen Abascal’s removal from her home on a stretcher la"
+     },
+     {
+      "item": "s-1213",
+      "source": "Al Jazeera",
+      "published_at": "2026-09-29 18:57:52.000000",
+      "title": "Madrid residents feel the impact of Spain’s housing crisis",
+      "excerpt": "Spain’s housing crisis is deepening as soaring rents and a shortage of homes put affordable housing out of reach."
+     },
+     {
+      "item": "s-1233",
+      "source": "Al Jazeera",
+      "published_at": "2026-09-29 21:02:02.000000",
+      "title": "Spain protests: Evicted 87-year-old woman to return to Madrid home",
+      "excerpt": "The real estate firm backs down and restores her old rent after mass protests over Spain&#039;s housing crisis."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-10-03-live:D51",
+    "window": "2026-10-03-live",
+    "members": [
+     "s-1767",
+     "s-2037"
+    ],
+    "storyline": null,
+    "first": "2026-10-02 01:56:50.000000",
+    "last": "2026-10-03 11:35:48.000000",
+    "actors": [],
+    "places": [
+     "Spain"
+    ],
+    "system_developments": [
+     51
+    ],
+    "situations": [],
+    "sources": [
+     "Al Jazeera",
+     "BBC World"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "s-1767",
+      "source": "Al Jazeera",
+      "published_at": "2026-10-02 01:56:50.000000",
+      "title": "Pot banging protests across Spain over housing crisis",
+      "excerpt": "Hundreds of protesters across Spain took part in pot banging demonstrations to demand political action over housing"
+     },
+     {
+      "item": "s-2037",
+      "source": "BBC World",
+      "published_at": "2026-10-03 11:35:48.000000",
+      "title": "Protesters across Spain demand action over housing crisis",
+      "excerpt": "More than 50 protests are planned to take place on Saturday after the government failed to get emergency legislation through parliament."
+     }
+    ]
+   }
+  },
+  {
+   "case": "P202",
+   "a": {
+    "id": "2026-10-03-live:D5",
+    "window": "2026-10-03-live",
+    "members": [
+     "s-1165",
+     "s-1231",
+     "s-1228",
+     "s-1252",
+     "s-1380",
+     "s-1670",
+     "s-1666",
+     "s-1700",
+     "s-1851",
+     "s-1897",
+     "s-1902",
+     "s-1934"
+    ],
+    "storyline": null,
+    "first": "2026-09-29 14:51:43.000000",
+    "last": "2026-10-02 21:13:27.000000",
+    "actors": [],
+    "places": [
+     "France",
+     "Marseille",
+     "Paris"
+    ],
+    "system_developments": [
+     5
+    ],
+    "situations": [],
+    "sources": [
+     "Al Jazeera",
+     "BBC World",
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "s-1165",
+      "source": "Al Jazeera",
+      "published_at": "2026-09-29 14:51:43.000000",
+      "title": "Photos: French students protest, public workers strike before budget cuts",
+      "excerpt": "French high school students have blockaded dozens of schools and public sector workers have gone on strike, protesting planned budget cuts before next year’s presidential election.\n\nTuesday’s action comes seven months before the vote and just two days before the government is due to unveil its draft 2027 budget, with opinion polls consistently reflecting deep dissatisfaction with President Emmanue"
+     },
+     {
+      "item": "s-1231",
+      "source": "Al Jazeera",
+      "published_at": "2026-09-29 21:09:23.000000",
+      "title": "French students clash with police as protests over education cuts spread",
+      "excerpt": "French school students have blocked schools across France, demanding better learning conditions."
+     },
+     {
+      "item": "s-1228",
+      "source": "BBC World",
+      "published_at": "2026-09-29 21:32:19.000000",
+      "title": "More than 400 detained as France student protests escalate",
+      "excerpt": "Students have been protesting against conditions and resources in secondary schools since last week."
+     },
+     {
+      "item": "s-1252",
+      "source": "Al Jazeera",
+      "published_at": "2026-09-30 03:53:39.000000",
+      "title": "Public workers in France strike over pay as student protests turn violent",
+      "excerpt": "Tens of thousands of workers march nationwide, as police arrest 440 students in clashes at schools."
+     },
+     {
+      "item": "s-1380",
+      "source": "BBC World",
+      "published_at": "2026-09-30 13:18:01.000000",
+      "title": "Dozens hurt and hundreds arrested in wave of French school protests",
+      "excerpt": "Students have been protesting against conditions and resources in secondary schools since last week."
+     },
+     {
+      "item": "s-1670",
+      "source": "South China Morning Post",
+      "published_at": "2026-10-01 15:47:38.000000",
+      "title": "French school protests spread as fires, blockades deepen unrest",
+      "excerpt": "A protest by French secondary school students over overcrowded classrooms, teacher shortages and crumbling facilities deepened on Thursday, with fires set outside schools and blockades in several cities.\nMore than 160 schools were shut down on Thursday, while university students joined the protests in Paris and Marseille. The movement in the lycees, which students aged 15 to 18 attend for their fi"
+     },
+     {
+      "item": "s-1666",
+      "source": "BBC World",
+      "published_at": "2026-10-01 16:34:22.000000",
+      "title": "Fires break out at French schools as students protest nationwide",
+      "excerpt": "The French government holds a crisis meeting as demonstrations grow and become violent in places."
+     },
+     {
+      "item": "s-1700",
+      "source": "Al Jazeera",
+      "published_at": "2026-10-01 18:18:18.000000",
+      "title": "School protests spread as fires, blockades deepen unrest in France",
+      "excerpt": "Police have detained hundreds as students protest overcrowded classrooms, teacher shortages and crumbling facilities."
+     },
+     {
+      "item": "s-1851",
+      "source": "South China Morning Post",
+      "published_at": "2026-10-02 09:50:26.000000",
+      "title": "Hundreds of French high schools shut as new violence erupts",
+      "excerpt": "French high school students lit fires outside schools and faced off with police on Friday as a protest movement that has forced the closure of some 400 establishments showed no sign of abating.\nThe movement, which began last week in the Paris region and rapidly spread nationwide, has seen teenage pupils at lycees in their final years of schooling block access to buildings and clash with police.\nTh"
+     },
+     {
+      "item": "s-1897",
+      "source": "BBC World",
+      "published_at": "2026-10-02 12:43:02.000000",
+      "title": "School protests send shivers down French government's spine",
+      "excerpt": "A movement that started nearly two weeks ago has spread, and in France young people on the streets spells trouble, writes Hugh Schofield."
+     },
+     {
+      "item": "s-1902",
+      "source": "Al Jazeera",
+      "published_at": "2026-10-02 13:12:45.000000",
+      "title": "Protests shutter hundreds of French schools as violence flares",
+      "excerpt": "Education minister declares students &#039;in danger&#039; as hundreds of injuries reported across the country."
+     },
+     {
+      "item": "s-1934",
+      "source": "BBC World",
+      "published_at": "2026-10-02 21:13:27.000000",
+      "title": "Riot police clash with students as education protests rage in France",
+      "excerpt": "About 735 schools have faced disruption as violent protests over standards and lack of teachers continue."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-10-03-live:D51",
+    "window": "2026-10-03-live",
+    "members": [
+     "s-1767",
+     "s-2037"
+    ],
+    "storyline": null,
+    "first": "2026-10-02 01:56:50.000000",
+    "last": "2026-10-03 11:35:48.000000",
+    "actors": [],
+    "places": [
+     "Spain"
+    ],
+    "system_developments": [
+     51
+    ],
+    "situations": [],
+    "sources": [
+     "Al Jazeera",
+     "BBC World"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "s-1767",
+      "source": "Al Jazeera",
+      "published_at": "2026-10-02 01:56:50.000000",
+      "title": "Pot banging protests across Spain over housing crisis",
+      "excerpt": "Hundreds of protesters across Spain took part in pot banging demonstrations to demand political action over housing"
+     },
+     {
+      "item": "s-2037",
+      "source": "BBC World",
+      "published_at": "2026-10-03 11:35:48.000000",
+      "title": "Protesters across Spain demand action over housing crisis",
+      "excerpt": "More than 50 protests are planned to take place on Saturday after the government failed to get emergency legislation through parliament."
+     }
+    ]
+   }
+  }
+ ]
+}

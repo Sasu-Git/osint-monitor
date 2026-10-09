@@ -1,0 +1,16 @@
+{
+ "P201": {
+  "targeted": "reaction_to",
+  "rank": 1,
+  "cosine": 0.689,
+  "window": "2026-10-03-live",
+  "eligible": 2
+ },
+ "P202": {
+  "targeted": "reaction_to",
+  "rank": 2,
+  "cosine": 0.536,
+  "window": "2026-10-03-live",
+  "eligible": 2
+ }
+}
