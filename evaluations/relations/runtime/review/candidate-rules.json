@@ -1,0 +1,848 @@
+{
+ "U001": {
+  "stratum": "generator",
+  "window": "2026-10-05-live",
+  "proposed": [
+   "reaction_to 30->22"
+  ]
+ },
+ "U002": {
+  "stratum": "probe",
+  "window": "2026-10-05-live",
+  "proposed": []
+ },
+ "U003": {
+  "stratum": "probe",
+  "window": "2026-10-08-live",
+  "proposed": []
+ },
+ "U004": {
+  "stratum": "random",
+  "window": "2026-10-03-live",
+  "proposed": []
+ },
+ "U005": {
+  "stratum": "probe",
+  "window": "2026-10-08-live",
+  "proposed": []
+ },
+ "U006": {
+  "stratum": "probe",
+  "window": "2026-10-05-live",
+  "proposed": []
+ },
+ "U007": {
+  "stratum": "generator",
+  "window": "2026-10-03-live",
+  "proposed": [
+   "reaction_to 46->11"
+  ]
+ },
+ "U008": {
+  "stratum": "generator",
+  "window": "2026-10-05-live",
+  "proposed": [
+   "reaction_to 51->43"
+  ]
+ },
+ "U009": {
+  "stratum": "probe",
+  "window": "2026-10-05-live",
+  "proposed": []
+ },
+ "U010": {
+  "stratum": "generator",
+  "window": "2026-10-03-live",
+  "proposed": [
+   "reaction_to 22->16"
+  ]
+ },
+ "U011": {
+  "stratum": "generator",
+  "window": "2026-10-03-live",
+  "proposed": [
+   "reaction_to 46->4"
+  ]
+ },
+ "U012": {
+  "stratum": "probe",
+  "window": "2026-10-03-live",
+  "proposed": []
+ },
+ "U013": {
+  "stratum": "probe",
+  "window": "2026-10-05-live",
+  "proposed": []
+ },
+ "U014": {
+  "stratum": "probe",
+  "window": "2026-10-05-live",
+  "proposed": []
+ },
+ "U015": {
+  "stratum": "random",
+  "window": "2026-10-03-live",
+  "proposed": []
+ },
+ "U016": {
+  "stratum": "probe",
+  "window": "2026-10-08-live",
+  "proposed": []
+ },
+ "U017": {
+  "stratum": "random",
+  "window": "2026-10-05-live",
+  "proposed": []
+ },
+ "U018": {
+  "stratum": "probe",
+  "window": "2026-10-05-live",
+  "proposed": []
+ },
+ "U019": {
+  "stratum": "probe",
+  "window": "2026-10-03-live",
+  "proposed": []
+ },
+ "U020": {
+  "stratum": "random",
+  "window": "2026-10-03-live",
+  "proposed": []
+ },
+ "U021": {
+  "stratum": "probe",
+  "window": "2026-10-08-live",
+  "proposed": []
+ },
+ "U022": {
+  "stratum": "random",
+  "window": "2026-10-05-live",
+  "proposed": []
+ },
+ "U023": {
+  "stratum": "probe",
+  "window": "2026-10-08-live",
+  "proposed": []
+ },
+ "U024": {
+  "stratum": "probe",
+  "window": "2026-10-03-live",
+  "proposed": []
+ },
+ "U025": {
+  "stratum": "generator",
+  "window": "2026-10-03-live",
+  "proposed": [
+   "reaction_to 42->4"
+  ]
+ },
+ "U026": {
+  "stratum": "generator",
+  "window": "2026-10-05-live",
+  "proposed": [
+   "same_convened_event 3->41"
+  ]
+ },
+ "U027": {
+  "stratum": "random",
+  "window": "2026-10-08-live",
+  "proposed": []
+ },
+ "U028": {
+  "stratum": "probe",
+  "window": "2026-10-05-live",
+  "proposed": []
+ },
+ "U029": {
+  "stratum": "probe",
+  "window": "2026-10-03-live",
+  "proposed": []
+ },
+ "U030": {
+  "stratum": "probe",
+  "window": "2026-10-05-live",
+  "proposed": []
+ },
+ "U031": {
+  "stratum": "probe",
+  "window": "2026-10-03-live",
+  "proposed": []
+ },
+ "U032": {
+  "stratum": "generator",
+  "window": "2026-10-03-live",
+  "proposed": [
+   "same_convened_event 1->46",
+   "reaction_to 46->1"
+  ]
+ },
+ "U033": {
+  "stratum": "random",
+  "window": "2026-10-05-live",
+  "proposed": []
+ },
+ "U034": {
+  "stratum": "random",
+  "window": "2026-10-03-live",
+  "proposed": []
+ },
+ "U035": {
+  "stratum": "random",
+  "window": "2026-10-05-live",
+  "proposed": []
+ },
+ "U036": {
+  "stratum": "probe",
+  "window": "2026-10-05-live",
+  "proposed": []
+ },
+ "U037": {
+  "stratum": "random",
+  "window": "2026-10-03-live",
+  "proposed": []
+ },
+ "U038": {
+  "stratum": "generator",
+  "window": "2026-10-03-live",
+  "proposed": [
+   "reaction_to 24->6"
+  ]
+ },
+ "U039": {
+  "stratum": "probe",
+  "window": "2026-10-05-live",
+  "proposed": []
+ },
+ "U040": {
+  "stratum": "probe",
+  "window": "2026-10-03-live",
+  "proposed": []
+ },
+ "U041": {
+  "stratum": "probe",
+  "window": "2026-10-03-live",
+  "proposed": []
+ },
+ "U042": {
+  "stratum": "generator",
+  "window": "2026-10-05-live",
+  "proposed": [
+   "same_convened_event 10->41"
+  ]
+ },
+ "U043": {
+  "stratum": "generator",
+  "window": "2026-10-05-live",
+  "proposed": [
+   "reaction_to 29->17"
+  ]
+ },
+ "U044": {
+  "stratum": "random",
+  "window": "2026-10-03-live",
+  "proposed": []
+ },
+ "U045": {
+  "stratum": "generator",
+  "window": "2026-10-03-live",
+  "proposed": [
+   "reaction_to 42->38"
+  ]
+ },
+ "U046": {
+  "stratum": "generator",
+  "window": "2026-10-03-live",
+  "proposed": [
+   "same_convened_event 5->8"
+  ]
+ },
+ "U047": {
+  "stratum": "probe",
+  "window": "2026-10-08-live",
+  "proposed": []
+ },
+ "U048": {
+  "stratum": "generator",
+  "window": "2026-10-05-live",
+  "proposed": [
+   "same_convened_event 8->43"
+  ]
+ },
+ "U049": {
+  "stratum": "probe",
+  "window": "2026-10-03-live",
+  "proposed": []
+ },
+ "U050": {
+  "stratum": "random",
+  "window": "2026-10-03-live",
+  "proposed": []
+ },
+ "U051": {
+  "stratum": "probe",
+  "window": "2026-10-08-live",
+  "proposed": []
+ },
+ "U052": {
+  "stratum": "random",
+  "window": "2026-10-08-live",
+  "proposed": []
+ },
+ "U053": {
+  "stratum": "random",
+  "window": "2026-10-03-live",
+  "proposed": []
+ },
+ "U054": {
+  "stratum": "probe",
+  "window": "2026-10-05-live",
+  "proposed": []
+ },
+ "U055": {
+  "stratum": "random",
+  "window": "2026-10-08-live",
+  "proposed": []
+ },
+ "U056": {
+  "stratum": "probe",
+  "window": "2026-10-08-live",
+  "proposed": []
+ },
+ "U057": {
+  "stratum": "generator",
+  "window": "2026-10-03-live",
+  "proposed": [
+   "reaction_to 46->38"
+  ]
+ },
+ "U058": {
+  "stratum": "probe",
+  "window": "2026-10-03-live",
+  "proposed": []
+ },
+ "U059": {
+  "stratum": "random",
+  "window": "2026-10-05-live",
+  "proposed": []
+ },
+ "U060": {
+  "stratum": "generator",
+  "window": "2026-10-05-live",
+  "proposed": [
+   "same_convened_event 3->24"
+  ]
+ },
+ "U061": {
+  "stratum": "probe",
+  "window": "2026-10-05-live",
+  "proposed": []
+ },
+ "U062": {
+  "stratum": "probe",
+  "window": "2026-10-08-live",
+  "proposed": []
+ },
+ "U063": {
+  "stratum": "generator",
+  "window": "2026-10-03-live",
+  "proposed": [
+   "reaction_to 4->1"
+  ]
+ },
+ "U064": {
+  "stratum": "probe",
+  "window": "2026-10-03-live",
+  "proposed": []
+ },
+ "U065": {
+  "stratum": "probe",
+  "window": "2026-10-08-live",
+  "proposed": []
+ },
+ "U066": {
+  "stratum": "generator",
+  "window": "2026-10-05-live",
+  "proposed": [
+   "reaction_to 29->2"
+  ]
+ },
+ "U067": {
+  "stratum": "probe",
+  "window": "2026-10-08-live",
+  "proposed": []
+ },
+ "U068": {
+  "stratum": "generator",
+  "window": "2026-10-03-live",
+  "proposed": [
+   "reaction_to 19->4"
+  ]
+ },
+ "U069": {
+  "stratum": "probe",
+  "window": "2026-10-08-live",
+  "proposed": []
+ },
+ "U070": {
+  "stratum": "probe",
+  "window": "2026-10-03-live",
+  "proposed": []
+ },
+ "U071": {
+  "stratum": "probe",
+  "window": "2026-10-03-live",
+  "proposed": []
+ },
+ "U072": {
+  "stratum": "random",
+  "window": "2026-10-08-live",
+  "proposed": []
+ },
+ "U073": {
+  "stratum": "probe",
+  "window": "2026-10-05-live",
+  "proposed": []
+ },
+ "U074": {
+  "stratum": "probe",
+  "window": "2026-10-08-live",
+  "proposed": []
+ },
+ "U075": {
+  "stratum": "probe",
+  "window": "2026-10-08-live",
+  "proposed": []
+ },
+ "U076": {
+  "stratum": "probe",
+  "window": "2026-10-05-live",
+  "proposed": []
+ },
+ "U077": {
+  "stratum": "probe",
+  "window": "2026-10-03-live",
+  "proposed": []
+ },
+ "U078": {
+  "stratum": "probe",
+  "window": "2026-10-03-live",
+  "proposed": []
+ },
+ "U079": {
+  "stratum": "probe",
+  "window": "2026-10-05-live",
+  "proposed": []
+ },
+ "U080": {
+  "stratum": "probe",
+  "window": "2026-10-03-live",
+  "proposed": []
+ },
+ "U081": {
+  "stratum": "probe",
+  "window": "2026-10-03-live",
+  "proposed": []
+ },
+ "U082": {
+  "stratum": "probe",
+  "window": "2026-10-08-live",
+  "proposed": []
+ },
+ "U083": {
+  "stratum": "probe",
+  "window": "2026-10-03-live",
+  "proposed": []
+ },
+ "U084": {
+  "stratum": "generator",
+  "window": "2026-10-05-live",
+  "proposed": [
+   "reaction_to 30->19"
+  ]
+ },
+ "U085": {
+  "stratum": "probe",
+  "window": "2026-10-05-live",
+  "proposed": []
+ },
+ "U086": {
+  "stratum": "probe",
+  "window": "2026-10-08-live",
+  "proposed": []
+ },
+ "U087": {
+  "stratum": "probe",
+  "window": "2026-10-05-live",
+  "proposed": []
+ },
+ "U088": {
+  "stratum": "generator",
+  "window": "2026-10-05-live",
+  "proposed": [
+   "reaction_to 50->8"
+  ]
+ },
+ "U089": {
+  "stratum": "probe",
+  "window": "2026-10-03-live",
+  "proposed": []
+ },
+ "U090": {
+  "stratum": "random",
+  "window": "2026-10-05-live",
+  "proposed": []
+ },
+ "U091": {
+  "stratum": "probe",
+  "window": "2026-10-08-live",
+  "proposed": []
+ },
+ "U092": {
+  "stratum": "probe",
+  "window": "2026-10-08-live",
+  "proposed": []
+ },
+ "U093": {
+  "stratum": "random",
+  "window": "2026-10-08-live",
+  "proposed": []
+ },
+ "U094": {
+  "stratum": "random",
+  "window": "2026-10-05-live",
+  "proposed": []
+ },
+ "U095": {
+  "stratum": "random",
+  "window": "2026-10-08-live",
+  "proposed": []
+ },
+ "U096": {
+  "stratum": "random",
+  "window": "2026-10-05-live",
+  "proposed": []
+ },
+ "U097": {
+  "stratum": "generator",
+  "window": "2026-10-03-live",
+  "proposed": [
+   "reaction_to 42->29"
+  ]
+ },
+ "U098": {
+  "stratum": "generator",
+  "window": "2026-10-03-live",
+  "proposed": [
+   "reaction_to 19->11"
+  ]
+ },
+ "U099": {
+  "stratum": "generator",
+  "window": "2026-10-03-live",
+  "proposed": [
+   "reaction_to 42->19"
+  ]
+ },
+ "U100": {
+  "stratum": "probe",
+  "window": "2026-10-08-live",
+  "proposed": []
+ },
+ "U101": {
+  "stratum": "probe",
+  "window": "2026-10-05-live",
+  "proposed": []
+ },
+ "U102": {
+  "stratum": "probe",
+  "window": "2026-10-08-live",
+  "proposed": []
+ },
+ "U103": {
+  "stratum": "probe",
+  "window": "2026-10-05-live",
+  "proposed": []
+ },
+ "U104": {
+  "stratum": "probe",
+  "window": "2026-10-03-live",
+  "proposed": []
+ },
+ "U105": {
+  "stratum": "probe",
+  "window": "2026-10-03-live",
+  "proposed": []
+ },
+ "U106": {
+  "stratum": "generator",
+  "window": "2026-10-05-live",
+  "proposed": [
+   "reaction_to 51->40"
+  ]
+ },
+ "U107": {
+  "stratum": "probe",
+  "window": "2026-10-03-live",
+  "proposed": []
+ },
+ "U108": {
+  "stratum": "probe",
+  "window": "2026-10-03-live",
+  "proposed": []
+ },
+ "U109": {
+  "stratum": "probe",
+  "window": "2026-10-03-live",
+  "proposed": []
+ },
+ "U110": {
+  "stratum": "probe",
+  "window": "2026-10-08-live",
+  "proposed": []
+ },
+ "U111": {
+  "stratum": "probe",
+  "window": "2026-10-08-live",
+  "proposed": []
+ },
+ "U112": {
+  "stratum": "probe",
+  "window": "2026-10-08-live",
+  "proposed": []
+ },
+ "U113": {
+  "stratum": "generator",
+  "window": "2026-10-03-live",
+  "proposed": [
+   "reaction_to 42->1"
+  ]
+ },
+ "U114": {
+  "stratum": "probe",
+  "window": "2026-10-08-live",
+  "proposed": []
+ },
+ "U115": {
+  "stratum": "probe",
+  "window": "2026-10-05-live",
+  "proposed": []
+ },
+ "U116": {
+  "stratum": "generator",
+  "window": "2026-10-05-live",
+  "proposed": [
+   "reaction_to 5->3"
+  ]
+ },
+ "U117": {
+  "stratum": "generator",
+  "window": "2026-10-03-live",
+  "proposed": [
+   "reaction_to 46->42"
+  ]
+ },
+ "U118": {
+  "stratum": "random",
+  "window": "2026-10-08-live",
+  "proposed": []
+ },
+ "U119": {
+  "stratum": "probe",
+  "window": "2026-10-03-live",
+  "proposed": []
+ },
+ "U120": {
+  "stratum": "probe",
+  "window": "2026-10-03-live",
+  "proposed": []
+ },
+ "U121": {
+  "stratum": "generator",
+  "window": "2026-10-05-live",
+  "proposed": [
+   "same_convened_event 3->10"
+  ]
+ },
+ "U122": {
+  "stratum": "random",
+  "window": "2026-10-05-live",
+  "proposed": []
+ },
+ "U123": {
+  "stratum": "probe",
+  "window": "2026-10-05-live",
+  "proposed": []
+ },
+ "U124": {
+  "stratum": "generator",
+  "window": "2026-10-05-live",
+  "proposed": [
+   "same_calamity_lifecycle 27->40"
+  ]
+ },
+ "U125": {
+  "stratum": "probe",
+  "window": "2026-10-08-live",
+  "proposed": []
+ },
+ "U126": {
+  "stratum": "probe",
+  "window": "2026-10-08-live",
+  "proposed": []
+ },
+ "U127": {
+  "stratum": "generator",
+  "window": "2026-10-03-live",
+  "proposed": [
+   "reaction_to 19->1"
+  ]
+ },
+ "U128": {
+  "stratum": "generator",
+  "window": "2026-10-03-live",
+  "proposed": [
+   "reaction_to 46->19"
+  ]
+ },
+ "U129": {
+  "stratum": "probe",
+  "window": "2026-10-05-live",
+  "proposed": []
+ },
+ "U130": {
+  "stratum": "random",
+  "window": "2026-10-08-live",
+  "proposed": []
+ },
+ "U131": {
+  "stratum": "generator",
+  "window": "2026-10-05-live",
+  "proposed": [
+   "reaction_to 22->19"
+  ]
+ },
+ "U132": {
+  "stratum": "probe",
+  "window": "2026-10-03-live",
+  "proposed": []
+ },
+ "U133": {
+  "stratum": "probe",
+  "window": "2026-10-03-live",
+  "proposed": []
+ },
+ "U134": {
+  "stratum": "random",
+  "window": "2026-10-08-live",
+  "proposed": []
+ },
+ "U135": {
+  "stratum": "probe",
+  "window": "2026-10-05-live",
+  "proposed": []
+ },
+ "U136": {
+  "stratum": "random",
+  "window": "2026-10-05-live",
+  "proposed": []
+ },
+ "U137": {
+  "stratum": "probe",
+  "window": "2026-10-08-live",
+  "proposed": []
+ },
+ "U138": {
+  "stratum": "probe",
+  "window": "2026-10-05-live",
+  "proposed": []
+ },
+ "U139": {
+  "stratum": "generator",
+  "window": "2026-10-03-live",
+  "proposed": [
+   "reaction_to 42->11"
+  ]
+ },
+ "U140": {
+  "stratum": "probe",
+  "window": "2026-10-03-live",
+  "proposed": []
+ },
+ "U141": {
+  "stratum": "probe",
+  "window": "2026-10-03-live",
+  "proposed": []
+ },
+ "U142": {
+  "stratum": "random",
+  "window": "2026-10-03-live",
+  "proposed": []
+ },
+ "U143": {
+  "stratum": "probe",
+  "window": "2026-10-08-live",
+  "proposed": []
+ },
+ "U144": {
+  "stratum": "probe",
+  "window": "2026-10-08-live",
+  "proposed": []
+ },
+ "U145": {
+  "stratum": "random",
+  "window": "2026-10-08-live",
+  "proposed": []
+ },
+ "U146": {
+  "stratum": "probe",
+  "window": "2026-10-05-live",
+  "proposed": []
+ },
+ "U147": {
+  "stratum": "random",
+  "window": "2026-10-03-live",
+  "proposed": []
+ },
+ "U148": {
+  "stratum": "probe",
+  "window": "2026-10-05-live",
+  "proposed": []
+ },
+ "U149": {
+  "stratum": "probe",
+  "window": "2026-10-05-live",
+  "proposed": []
+ },
+ "U150": {
+  "stratum": "probe",
+  "window": "2026-10-08-live",
+  "proposed": []
+ },
+ "U151": {
+  "stratum": "generator",
+  "window": "2026-10-05-live",
+  "proposed": [
+   "reaction_to 30->18"
+  ]
+ },
+ "U152": {
+  "stratum": "probe",
+  "window": "2026-10-05-live",
+  "proposed": []
+ },
+ "U153": {
+  "stratum": "probe",
+  "window": "2026-10-05-live",
+  "proposed": []
+ },
+ "U154": {
+  "stratum": "probe",
+  "window": "2026-10-05-live",
+  "proposed": []
+ },
+ "U155": {
+  "stratum": "probe",
+  "window": "2026-10-03-live",
+  "proposed": []
+ }
+}

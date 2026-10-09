@@ -60,3 +60,14 @@ after the implementation is frozen.
 ## Size
 
 About 25 generator pairs in total plus 50 per window: about 175 cases to label.
+
+## Amendment 1 (2026-10-09, before any case was drawn)
+
+- Owner: the generator stratum is fully enumerated (candidate precision is exact); the probe stratum is sampled
+  independently per window with a recorded seed (`random.Random(f"20261009:{window}")`, `runtime/manifest.yaml`).
+- Hard negatives: pairs not proposed and not drawn as probe, where both Developments involve both actors of one broad
+  pair, or that share a Situation. A broad-pair pair almost always shares a principal, so the stratum may include
+  undrawn probe-population pairs; recall is therefore estimated from the probe draws only (a simple random sample
+  of the probe population), never from hard negatives.
+- The 2026-10-08 window ends at 21:00 UTC; collection stopped at 20:42 (daemon killed by a console Ctrl+C event,
+  restarted detached on 2026-10-09). The gap is not part of any prospective holdout.

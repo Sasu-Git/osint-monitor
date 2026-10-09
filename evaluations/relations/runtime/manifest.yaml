@@ -1,0 +1,28 @@
+# Runtime-eligible relation benchmark (runtime-benchmark-design.md): development windows. Pairs of distinct system
+# Developments only. No window overlaps a sealed holdout (multilingual identity holdout 10-06 00:00 to 10-08 00:00;
+# relation holdout windows 07-21, 08-07, 08-15, 09-10). Item files are referenced in place, frozen by hash.
+version: 1
+tick_hours: 12
+seed: 20261009        # per window: random.Random(f"{seed}:{window id}")
+caps: {probe: 30, hard_negative: 10, random: 10}   # generator stratum: every proposed pair (fully enumerated)
+windows:
+- id: 2026-10-03-live
+  items_file: ../windows/2026-10-03-live.items.jsonl
+  items_sha256: f66e02726930173fa10ca226a09cceb492700fc40441f481f2f2ff892c06fd46
+  start: '2026-09-29T12:00:00'
+  end: '2026-10-03T12:00:00'
+  source: relation development window (Situation hold-out snapshot, rss only)
+- id: 2026-10-05-live
+  items_file: ../../identity/windows/2026-10-05-live.items.jsonl
+  items_sha256: 3ea43a325af80b202d45dbcd4749c1282fe4d6535e247a3c0eb418c0cb5a4a2e
+  start: '2026-10-04T12:00:00'
+  end: '2026-10-06T00:00:00'
+  source: identity development window (backup-API copy of the live DB, 2026-10-06, rss only)
+- id: 2026-10-08-live
+  items_file: ../windows/2026-10-08-live.items.jsonl
+  items_sha256: 1d6d2fffa1efb2c9a6fa69494dc36203a27a01ccbfb6699f41563d7a36318990
+  start: '2026-10-08T00:00:00'
+  end: '2026-10-08T21:00:00'
+  source: >-
+    backup-API copy of the live DB taken 2026-10-09 (data/eval/relations-runtime-20261009.snapshot.db, sha256
+    34c6f0e5d019f31e8e68739a6432279a600fe7a086b8687275586729388c5008), rss only; collection stopped at 20:42 UTC
