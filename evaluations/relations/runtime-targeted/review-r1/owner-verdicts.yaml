@@ -1,0 +1,36 @@
+# Owner verdicts for the Phase 3 relation gold, one entry per case (written by the review UI,
+# /eval/relations). label: NO_RELATION | a relation type | AMBIGUOUS | SAME_DEVELOPMENT_SUSPECTED.
+# direction (A->B | B->A, source -> target) only for reaction_to, follow_up_to, caused_by.
+# Notes are kept verbatim. Regenerating the review sheet never overwrites this file.
+P101: {label: null, direction: null, identity_flag: null, note: null}
+P102: {label: null, direction: null, identity_flag: null, note: null}
+P103: {label: null, direction: null, identity_flag: null, note: null}
+P104: {label: null, direction: null, identity_flag: null, note: null}
+P105: {label: null, direction: null, identity_flag: null, note: null}
+P106: {label: null, direction: null, identity_flag: null, note: null}
+P107: {label: null, direction: null, identity_flag: null, note: null}
+P108: {label: null, direction: null, identity_flag: null, note: null}
+P109: {label: null, direction: null, identity_flag: null, note: null}
+P110: {label: null, direction: null, identity_flag: null, note: null}
+P111: {label: null, direction: null, identity_flag: null, note: null}
+P112: {label: null, direction: null, identity_flag: null, note: null}
+P113: {label: null, direction: null, identity_flag: null, note: null}
+P114: {label: null, direction: null, identity_flag: null, note: null}
+P115: {label: null, direction: null, identity_flag: null, note: null}
+P116: {label: null, direction: null, identity_flag: null, note: null}
+P117: {label: null, direction: null, identity_flag: null, note: null}
+P118: {label: null, direction: null, identity_flag: null, note: null}
+P119: {label: null, direction: null, identity_flag: null, note: null}
+P120: {label: null, direction: null, identity_flag: null, note: null}
+P121: {label: null, direction: null, identity_flag: null, note: null}
+P122: {label: null, direction: null, identity_flag: null, note: null}
+P123: {label: null, direction: null, identity_flag: null, note: null}
+P124: {label: null, direction: null, identity_flag: null, note: null}
+P125: {label: null, direction: null, identity_flag: null, note: null}
+P126: {label: null, direction: null, identity_flag: null, note: null}
+P127: {label: null, direction: null, identity_flag: null, note: null}
+P128: {label: null, direction: null, identity_flag: null, note: null}
+P129: {label: null, direction: null, identity_flag: null, note: null}
+P130: {label: null, direction: null, identity_flag: null, note: null}
+P131: {label: null, direction: null, identity_flag: null, note: null}
+P132: {label: null, direction: null, identity_flag: null, note: null}
