@@ -1,0 +1,1242 @@
+{
+ "U001": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": "SAME_DEVELOPMENT_SUSPECTED",
+  "flag": "cross_language_same_occurrence",
+  "rationale": "Both sides report Sanchez's 5 October announcement of a 29 November snap election (ANSA/Rai 'convocare le elezioni il 29 novembre' vs Al Jazeera/BBC 'announces snap election'), the same occurrence in Italian and English.",
+  "confidence": "high"
+ },
+ "U002": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "A is about the failed Christa Pike execution and US death-penalty debate, B about Dodik's claimed victory in the Bosnian election; no shared occurrence or stated link.",
+  "confidence": "high"
+ },
+ "U003": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": "shared_place_only",
+  "rationale": "A is Israel's forced downsizing of the UK consulate in East Jerusalem, B the quashing of search warrants in the Andrew Mountbatten-Windsor probe; only the UK is shared.",
+  "confidence": "high"
+ },
+ "U004": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": "shared_actor_only",
+  "rationale": "Hegseth's 20% cut of generals and admirals and the Army's PrSM Increment 4 prototype awards are separate Pentagon actions with no stated link.",
+  "confidence": "high"
+ },
+ "U005": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "A covers the Russian strike on Kramatorsk buses and other attacks on Ukraine, B covers Houthi attacks on Riyadh airport and the Yemen and Hormuz situation; different conflicts.",
+  "confidence": "high"
+ },
+ "U006": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": "same_storyline_only",
+  "rationale": "Estonia moving troops toward the Russian border (FT report) and the Russian drone strike on a Turkish-owned corn ship in the Black Sea are separate occurrences; neither text links them.",
+  "confidence": "high"
+ },
+ "U007": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "A is an Ohio murder verdict against a former American Idol contestant, B the delivery of F-16V jets to Taiwan; unrelated.",
+  "confidence": "high"
+ },
+ "U008": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": "same_storyline_only",
+  "rationale": "Ukrainian/European arms projects and new gun turrets downing jet drones versus a Russian drone strike on a cargo ship; same war, no explicit link.",
+  "confidence": "high"
+ },
+ "U009": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Pike execution and US death-penalty debate versus Iran training civilian volunteers and naming a defence minister; unrelated.",
+  "confidence": "high"
+ },
+ "U010": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": "same_storyline_only",
+  "rationale": "Russian strikes on Kyiv energy infrastructure versus Russia's nuclear warning to NATO over Kaliningrad; Putin's remarks respond to Western statements, not to A's strikes.",
+  "confidence": "high"
+ },
+ "U011": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "US withdrawal from Iraq and the F-16V delivery to Taiwan are unrelated US military occurrences.",
+  "confidence": "high"
+ },
+ "U012": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "The RAF Fairford plot attributed to Iran and the G7 diesel and oil reserve release under Trump pressure are unrelated.",
+  "confidence": "high"
+ },
+ "U013": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Araghchi saying there is no military solution to the war versus the suspected plague lab death in Irkutsk; unrelated.",
+  "confidence": "high"
+ },
+ "U014": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Brazil's first-round election versus the France-Germany proposal for an EU trade response tool aimed at China; no stated link.",
+  "confidence": "high"
+ },
+ "U015": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Spain's eviction ban after the 87-year-old woman's eviction versus the G7 diesel reserve release; unrelated.",
+  "confidence": "high"
+ },
+ "U016": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Russian strikes on Kramatorsk versus the French student protests and Lecornu's response; unrelated.",
+  "confidence": "high"
+ },
+ "U017": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Merz's Kyiv visit announcing German aid versus the FBI arrest of a suspected Chinese agent spying on Taiwan's president's son; unrelated.",
+  "confidence": "high"
+ },
+ "U018": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": "shared_place_only",
+  "rationale": "The suspected Siberian plague lab death versus Putin authorising UniCredit's Russian reorganisation; only Russia is shared.",
+  "confidence": "high"
+ },
+ "U019": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Supreme Court immigration orders on deportations and ICE detention versus the G7 diesel reserve release; unrelated.",
+  "confidence": "high"
+ },
+ "U020": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": "same_topic_only",
+  "rationale": "Hegseth's cut of general officer posts versus the White House nominating Lt. Gen. Miller for SPACECOM; B does not mention the cuts.",
+  "confidence": "high"
+ },
+ "U021": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Venezuelan politics and new US charges against Maduro versus two Latvians arrested near RAF Molesworth; unrelated.",
+  "confidence": "high"
+ },
+ "U022": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Brazil's first-round election versus Ukrainian/European arms projects; unrelated.",
+  "confidence": "high"
+ },
+ "U023": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": "shared_actor_only",
+  "rationale": "Rubio's Athens remarks on nationalism versus Vance accusing Microsoft of visa fraud; different actions by US officials, no link.",
+  "confidence": "high"
+ },
+ "U024": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Trump rejecting US-China AI cooperation versus the UK PM linking Iran to the RAF Fairford plot; unrelated.",
+  "confidence": "high"
+ },
+ "U025": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "US troop withdrawal from Iraq versus the G7 diesel reserve release; unrelated.",
+  "confidence": "high"
+ },
+ "U026": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Brazil's first-round election versus the FBI arrest in the Taiwan surveillance case; unrelated.",
+  "confidence": "high"
+ },
+ "U027": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Pike's recovery and the first execution since her case versus the third anniversary of 7 October and the Lebanon war; unrelated.",
+  "confidence": "high"
+ },
+ "U028": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Bosnian election result versus the Nobel Prize in Medicine for optogenetics; unrelated.",
+  "confidence": "high"
+ },
+ "U029": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Renee Good's family suing over the ICE shooting versus Canada fast-tracking an oil pipeline; unrelated.",
+  "confidence": "high"
+ },
+ "U030": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Spanish housing protests and the snap election versus the Nobel Prize in Medicine; unrelated.",
+  "confidence": "high"
+ },
+ "U031": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "The RAF Fairford plot and the arrest of a UK-Iranian man versus the NY governor appointing a special prosecutor in the Cornell rape case; unrelated.",
+  "confidence": "high"
+ },
+ "U032": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": "shared_actor_only",
+  "rationale": "Trump rejecting AI cooperation with China versus the F-16V delivery to Taiwan; a mention of the Xi-Trump summit is shared background, not a link.",
+  "confidence": "high"
+ },
+ "U033": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Brazil's first-round election versus the Asian Games closing in Japan; unrelated.",
+  "confidence": "high"
+ },
+ "U034": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Christa Pike's failed execution versus Swiss glacier ice loss; unrelated.",
+  "confidence": "high"
+ },
+ "U035": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Indian protests demanding the election chief's resignation versus a British Airways depressurisation emergency; unrelated.",
+  "confidence": "high"
+ },
+ "U036": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Sanchez calling a snap election over housing versus the suspected Siberian plague death; unrelated.",
+  "confidence": "high"
+ },
+ "U037": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Hong Kong national security arrest of the Boom News founder versus escalating fighting in Ethiopia; unrelated.",
+  "confidence": "high"
+ },
+ "U038": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": "shared_actor_only",
+  "rationale": "Burnham's Labour conference speech on public services versus Burnham linking Iran to the RAF Fairford plot; the same actor in separate occurrences.",
+  "confidence": "high"
+ },
+ "U039": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Pike case and US death-penalty debate versus the US removing B-1 bombers from RAF Fairford; unrelated.",
+  "confidence": "high"
+ },
+ "U040": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": "inferred_situation_link",
+  "rationale": "Eritrea and Ethiopia cutting ties is explicitly a tit-for-tat for Ethiopia's embassy closure and is set against the general northern conflict ('as northern fighting escalates'), but neither text names A's specific Tigray killings or Addis blasts as the trigger, so any link is only inferable.",
+  "confidence": "medium"
+ },
+ "U041": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Latin American views of China and the US versus the G7 diesel reserve release; unrelated.",
+  "confidence": "high"
+ },
+ "U042": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Araghchi's 'no military solution' statement versus the FBI arrest in the Taiwan surveillance case; unrelated.",
+  "confidence": "high"
+ },
+ "U043": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": "shared_actor_only",
+  "rationale": "The US pulling bombers from RAF Fairford versus Trump creating a 'Super Intelligence Force' AI taskforce; separate occurrences.",
+  "confidence": "high"
+ },
+ "U044": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "US Army PrSM prototype awards versus Russian jet-drone attacks on Kyiv; no stated link.",
+  "confidence": "high"
+ },
+ "U045": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "The Renee Good family lawsuit versus the G7 diesel reserve release; unrelated.",
+  "confidence": "high"
+ },
+ "U046": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": "shared_place_only",
+  "rationale": "French school protests versus the Eiffel Tower chief resigning over the removal of female staff; only France is shared.",
+  "confidence": "high"
+ },
+ "U047": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "The Pike aftermath and Jamaal Howard's execution in Texas versus Colombia's debt and De la Espriella's support for ex-soldiers; unrelated.",
+  "confidence": "high"
+ },
+ "U048": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": "same_storyline_only",
+  "rationale": "Merz's Kyiv aid announcement versus Fire Point missile development and new gun turrets; neither text names the other.",
+  "confidence": "high"
+ },
+ "U049": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Hegseth's general officer cuts versus the F-16V delivery to Taiwan; unrelated.",
+  "confidence": "high"
+ },
+ "U050": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Christa Pike's failed execution versus Alaska's Fat Bear Week winner; unrelated.",
+  "confidence": "high"
+ },
+ "U051": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "A tanker hit by projectiles off Qatar versus the UK-Germany anti-sabotage and security cooperation plan; unrelated.",
+  "confidence": "high"
+ },
+ "U052": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "The US-Zambia health partnership versus the quashing of the Andrew Mountbatten-Windsor search warrants; unrelated.",
+  "confidence": "high"
+ },
+ "U053": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Trump's $200bn South Korean energy-investment announcement and Brazil's presidential race share no actor, matter or stated link.",
+  "confidence": "high"
+ },
+ "U054": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "French school closures over student protests and Trump's AI 'Super Intelligence Force' are unrelated occurrences.",
+  "confidence": "high"
+ },
+ "U055": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Eritrean troops entering Tigray and the quashed search warrants for ex-prince Andrew have no connection.",
+  "confidence": "high"
+ },
+ "U056": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "The Andrew search-warrant ruling and the US suspension of IT firms from the green card programme are unrelated.",
+  "confidence": "high"
+ },
+ "U057": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "The Renee Good family's lawsuit over an ICE shooting and the F-16V delivery to Taiwan share no matter or link.",
+  "confidence": "high"
+ },
+ "U058": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "The scrapped UK-France 'one in, one out' migrant scheme and MI5's espionage alert about China share only the UK as a place.",
+  "confidence": "high"
+ },
+ "U059": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Spanish housing and French student protests have no stated link to the Franco-German proposal for an EU trade tool; sharing France is not enough.",
+  "confidence": "high"
+ },
+ "U060": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Brazil's first-round election result and the EU-Moldova Association Council disbursement are unrelated.",
+  "confidence": "high"
+ },
+ "U061": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Spain's housing protests and snap-election call share no stated link with Brazil's first-round vote.",
+  "confidence": "high"
+ },
+ "U062": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "The Texas execution after the Pike case and the US-Zambia health partnership are unrelated.",
+  "confidence": "high"
+ },
+ "U063": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Trump rejecting AI cooperation with China and the US troop withdrawal from Iraq share only the US as an actor.",
+  "confidence": "high"
+ },
+ "U064": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "The murder verdict for a former American Idol contestant and the Latin America-China relations pieces are unrelated.",
+  "confidence": "high"
+ },
+ "U065": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "The forced downsizing of the UK consulate in East Jerusalem and Israel's pavilion at the Marrakech airshow share only Israel as an actor.",
+  "confidence": "high"
+ },
+ "U066": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Commentary on the Pike execution and death-penalty policy has no link to Trump's AI taskforce.",
+  "confidence": "high"
+ },
+ "U067": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Mamdani's 7 October anniversary remarks and the UK Jerusalem consulate closure belong to the same broad region but have no stated link.",
+  "confidence": "high"
+ },
+ "U068": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "The US withdrawal from Iraq and the Christa Pike execution saga are unrelated.",
+  "confidence": "high"
+ },
+ "U069": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Penguin decline, the Ecuador fishermen ruling and the Chile Magellan dispute have no link to Trump's Nobel Peace Prize claims.",
+  "confidence": "high"
+ },
+ "U070": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "The Fat Bear Week winner and the South Korean energy investments share only an Alaska mention.",
+  "confidence": "high"
+ },
+ "U071": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "China's new Laos air force centre and the G7 diesel-reserve release are unrelated.",
+  "confidence": "high"
+ },
+ "U072": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Brazil's runoff campaign marches and the suspected plague case in Siberia are unrelated.",
+  "confidence": "high"
+ },
+ "U073": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "The Imran Khan long march and the Mecca Defence Pact meeting in Riyadh share only Pakistan as an actor.",
+  "confidence": "high"
+ },
+ "U074": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Rubio's Athens remarks on nationalism and the US visa-fraud suspensions have no stated link.",
+  "confidence": "high"
+ },
+ "U075": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Pike's recovery and the Texas execution share no link with Trump's statements on Iran strikes before the midterms.",
+  "confidence": "high"
+ },
+ "U076": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "The US bomber withdrawal from RAF Fairford and the Irkutsk lab plague death share only Rubio as a commenter.",
+  "confidence": "high"
+ },
+ "U077": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Boeing's fighter contracts and Canada fast-tracking an oil pipeline are unrelated.",
+  "confidence": "high"
+ },
+ "U078": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Estonia blaming Russia for the Milrem arson and Russian drone strikes on Kyiv are distinct occurrences; sharing Russia as the actor is not enough.",
+  "confidence": "high"
+ },
+ "U079": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Brazil's first-round election and the Irkutsk lab plague case are unrelated.",
+  "confidence": "high"
+ },
+ "U080": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Supreme Court immigration rulings and the Cornell rape allegations have no link.",
+  "confidence": "high"
+ },
+ "U081": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "The US withdrawal from Iraq and the Latin America-China relations pieces are unrelated.",
+  "confidence": "high"
+ },
+ "U082": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "The DNC lawsuit over taxpayer-funded ads and the new torture charges against Maduro are unrelated.",
+  "confidence": "high"
+ },
+ "U083": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Boeing's fighter contracts and Hegseth's 20% cut to generals share only the Pentagon as an actor.",
+  "confidence": "high"
+ },
+ "U084": {
+  "label": "caused_by",
+  "direction": "B->A",
+  "identity_flag": null,
+  "flag": "A_contains_election_call_items",
+  "rationale": "B's reports state that mounting anger over the housing crisis and protests 'led' Sanchez to call the 29 November snap election ('calls early election after housing protests'), and A's Italian coverage says the street protests 'push Sanchez toward the polls'; A also carries one Italian item on the election call itself, so there is partial overlap.",
+  "confidence": "medium"
+ },
+ "U085": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "The Nobel medicine prize and Iran training civilians and naming a new defence minister are unrelated.",
+  "confidence": "high"
+ },
+ "U086": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Trump's Iran-strike statements and Colombia's debt and the De la Espriella items are unrelated.",
+  "confidence": "high"
+ },
+ "U087": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "The bomber withdrawal from RAF Fairford and Ukrainian and European arms projects have no stated link.",
+  "confidence": "high"
+ },
+ "U088": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Merz's Kyiv aid package and the Franco-German EU trade-tool proposal share only Merz as an actor.",
+  "confidence": "high"
+ },
+ "U089": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "China's Laos air base and the US Supreme Court deportation rulings are unrelated.",
+  "confidence": "high"
+ },
+ "U090": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Spain's housing protests and the Irkutsk lab plague case are unrelated.",
+  "confidence": "high"
+ },
+ "U091": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Houthi strikes on Saudi airports and the death of the evicted Spanish pensioner are unrelated.",
+  "confidence": "high"
+ },
+ "U092": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "The DNC ad lawsuit and the arrest of two Latvians at RAF Molesworth are unrelated.",
+  "confidence": "high"
+ },
+ "U093": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "The EU-China trade talks in Beijing and the torture charges against Maduro are unrelated.",
+  "confidence": "high"
+ },
+ "U094": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Spain's housing protests and the detentions at a Moscow Communist Party rally are both protests, but nothing links them.",
+  "confidence": "high"
+ },
+ "U095": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "The Russian strike on Kramatorsk buses and the death of actor Nana Patekar are unrelated.",
+  "confidence": "high"
+ },
+ "U096": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Spanish and French protests and Nicaragua's withdrawal from the Central American Parliament are unrelated.",
+  "confidence": "high"
+ },
+ "U097": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "The South Korean investment announcement and the G7 diesel-reserve release share Trump and the midterm framing, but neither text names the other.",
+  "confidence": "high"
+ },
+ "U098": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "The American Idol contestant's murder verdict and the Christa Pike execution are separate criminal cases.",
+  "confidence": "high"
+ },
+ "U099": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "The botched Pike execution and the G7 diesel release are unrelated.",
+  "confidence": "high"
+ },
+ "U100": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "The torture charges against Maduro and Rubio's Athens remarks have no stated link in the shown text.",
+  "confidence": "high"
+ },
+ "U101": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Brazil's first-round election and the Yemeni government offensive against the Houthis are unrelated.",
+  "confidence": "high"
+ },
+ "U102": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "The Andrew search-warrant ruling and Trump's Nobel Peace Prize claims are unrelated.",
+  "confidence": "high"
+ },
+ "U103": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "The bomber withdrawal from RAF Fairford and Trump's Nebraska campaign visit are unrelated.",
+  "confidence": "high"
+ },
+ "U104": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "Boeing's fighter contracts and the suspected Iran-linked plot at RAF Fairford are unrelated.",
+  "confidence": "high"
+ },
+ "U105": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "A is Russian drone strikes on Kyiv, B is the Latvian election; shared Russia backdrop only, no stated link.",
+  "confidence": "high"
+ },
+ "U106": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "A is the suspected plague death at a Siberian lab, B is a Russian drone strike on a Turkish cargo ship in the Black Sea; unrelated occurrences.",
+  "confidence": "high"
+ },
+ "U107": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "A is a Latin America/China reading list and Latinobarometro poll, B is Canada fast-tracking an oil pipeline; no shared occurrence or stated link.",
+  "confidence": "high"
+ },
+ "U108": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "A is the RAF Fairford plot attributed to Iran and the arrest, B is the MI5 alert on Chinese academic espionage; shared UK-security topic only.",
+  "confidence": "high"
+ },
+ "U109": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "A is Russian strikes on Ukraine's energy grid, B is the MI5 China espionage alert; unrelated.",
+  "confidence": "high"
+ },
+ "U110": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": "SAME_DEVELOPMENT_SUSPECTED",
+  "flag": "mixed_cluster",
+  "rationale": "A is the new US torture charges against Maduro and Cilia Flores, and B's France 24 Espanol item reports the same charges (the other B items, Cabello and Delcy Rodriguez at FAO, are unrelated), so the pair overlaps on the same occurrence.",
+  "confidence": "medium"
+ },
+ "U111": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "A is EU-China trade talks in Beijing, B is Anthropic's Chinese-language options and China's AI-companion crackdown; China is a shared actor only.",
+  "confidence": "high"
+ },
+ "U112": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "A is a tanker hit off Qatar, B is the ruling on unlawful search warrants for ex-prince Andrew; unrelated.",
+  "confidence": "high"
+ },
+ "U113": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "A is Trump rejecting US-China AI cooperation and the AI pact, B is the G7 diesel reserve release under Trump pressure; shared actor only.",
+  "confidence": "high"
+ },
+ "U114": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "A is Anthropic/China AI chatbot items, B is Rubio's remarks and nationalism speech in Athens; unrelated.",
+  "confidence": "high"
+ },
+ "U115": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "A is Dodik claiming victory in the Bosnian election, B is Iran training civilians and naming a defence minister; unrelated.",
+  "confidence": "high"
+ },
+ "U116": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": "SAME_DEVELOPMENT_SUSPECTED",
+  "flag": "cross_language",
+  "rationale": "Both sides report the first round of Brazil's presidential election on 4 October (Flavio Bolsonaro 47% vs Lula 45%, runoff 25 October), A in Spanish/Italian and B in English.",
+  "confidence": "high"
+ },
+ "U117": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "A is the G7 diesel/oil reserve release after Trump pressure, B is the delivery of F-16V jets to Taiwan; unrelated.",
+  "confidence": "high"
+ },
+ "U118": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "A is Colombian President De la Espriella's debt and Moise-case items, B is the Andrew search-warrant ruling; unrelated.",
+  "confidence": "high"
+ },
+ "U119": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "A is a Latin America-China reading list and poll, B is pre-election coverage of Brazil's Lula-Bolsonaro race; regional topic only.",
+  "confidence": "high"
+ },
+ "U120": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "A is the completed US troop withdrawal from Iraq, B is Supreme Court rulings on Trump deportation and ICE detention policy; unrelated.",
+  "confidence": "high"
+ },
+ "U121": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "A is Brazil's first-round election, B is Iran's foreign minister saying there is no military solution to the war; unrelated.",
+  "confidence": "high"
+ },
+ "U122": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "A is Araghchi's statement on the US-Iran war, B is detentions at a Communist Party rally in Moscow; unrelated.",
+  "confidence": "high"
+ },
+ "U123": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "A is commentary on Christa Pike's failed execution and the US death penalty, B is the Yemeni government offensive against the Houthis; unrelated.",
+  "confidence": "high"
+ },
+ "U124": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": "SAME_DEVELOPMENT_SUSPECTED",
+  "flag": "cross_language",
+  "rationale": "Both sides report the death of a researcher at the Siberian (Irkutsk) plague lab, the ~200 people under observation and the US monitoring the case, A in Spanish and B in English.",
+  "confidence": "high"
+ },
+ "U125": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "A is a mixed set (penguin decline, Ecuador fishermen acquitted, Chile-US Magellan row), B is the Andrew search-warrant ruling; no link.",
+  "confidence": "high"
+ },
+ "U126": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "A's Chile item responds to remarks by US ambassador Brandon Judd, not to Rubio's Athens remarks in B; shared US actor only.",
+  "confidence": "high"
+ },
+ "U127": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "A is Trump's AI policy stance, B is the Christa Pike execution saga; unrelated.",
+  "confidence": "high"
+ },
+ "U128": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "A is Christa Pike's botched execution, B is the F-16V delivery to Taiwan; unrelated.",
+  "confidence": "high"
+ },
+ "U129": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "A is Brazil's first-round election, B is the Russian plague lab death; unrelated.",
+  "confidence": "high"
+ },
+ "U130": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "A is the French student protests, B is the Russian strike on buses in Kramatorsk and the Moldovan airspace violation; unrelated.",
+  "confidence": "high"
+ },
+ "U131": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": "SAME_DEVELOPMENT_SUSPECTED",
+  "flag": "mixed_cluster",
+  "rationale": "B is Sanchez calling the 29 November snap election, and A also contains that announcement (Il Sole 24 Ore: Spain to early vote) mixed with the housing protests, so both sides cover the same election-call occurrence.",
+  "confidence": "medium"
+ },
+ "U132": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "A is Trump's $200bn South Korean energy investment claim, B is Pentagon drone competitions and the In-Q-Tel partnership; unrelated.",
+  "confidence": "high"
+ },
+ "U133": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "A is China's new military training centre in Laos, B is the South Korean investment announcement; unrelated.",
+  "confidence": "high"
+ },
+ "U134": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "A is later developments in the Siberian plague case, B is the Russian strike on buses in Kramatorsk; Russia is a shared actor only.",
+  "confidence": "high"
+ },
+ "U135": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "A is Trump's Super Intelligence Force, B is the Franco-German proposal for an EU trade response tool; unrelated.",
+  "confidence": "high"
+ },
+ "U136": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "A is commentary on Pike's failed execution, B is the suspended search for a crashed air ambulance off Massachusetts; unrelated.",
+  "confidence": "high"
+ },
+ "U137": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "A is the 7 October anniversary and Lebanon war items, B is the forced downscaling of the UK consulate in East Jerusalem over settlement sanctions; shared Israel topic only.",
+  "confidence": "high"
+ },
+ "U138": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "A is the Yemeni government offensive and Bab el-Mandeb advance, B is Ethiopia's PM demanding Red Sea access; the Ethiopia texts do not reference the Yemen offensive.",
+  "confidence": "high"
+ },
+ "U139": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "A is a murder verdict against a former American Idol contestant, B is the G7 diesel release; unrelated.",
+  "confidence": "high"
+ },
+ "U140": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "A is Latin America-China relations items, B is Saudi-Houthi fighting and a planned offensive; unrelated.",
+  "confidence": "high"
+ },
+ "U141": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "A is the US withdrawal from Iraq, B is the New York governor appointing a special prosecutor in the Cornell rape case; unrelated.",
+  "confidence": "high"
+ },
+ "U142": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "A is Supreme Court immigration rulings, B is the Cornell rape case special prosecutor; shared US-legal topic only.",
+  "confidence": "high"
+ },
+ "U143": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": "SAME_DEVELOPMENT_SUSPECTED",
+  "flag": "cross_language",
+  "rationale": "Both sides report the death of evicted pensioner Maricarmen Abascal in Madrid on 7 October and the protests it sparked, A in Spanish/Italian and B in English.",
+  "confidence": "high"
+ },
+ "U144": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "A is the Siberian plague case follow-ups, B is the Pike aftermath and the Texas execution of Jamaal Howard; unrelated.",
+  "confidence": "high"
+ },
+ "U145": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "A is Christa Pike waking and the Texas execution, B is Italy's new electoral law; unrelated.",
+  "confidence": "high"
+ },
+ "U146": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "A is Brazil's first-round election, B is Messi's farewell match for Argentina; unrelated.",
+  "confidence": "high"
+ },
+ "U147": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "A is Estonia blaming Russia for the Milrem arson, B is the US Army selecting five firms for PrSM prototypes; unrelated.",
+  "confidence": "high"
+ },
+ "U148": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "A is commentary on Pike's failed execution, B is Brazil's first-round election; unrelated.",
+  "confidence": "high"
+ },
+ "U149": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "A is Trump's AI taskforce, B is the Siberian plague death; shared US actor only.",
+  "confidence": "high"
+ },
+ "U150": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "A is Trump statements on Iran attacks and the midterms, B is the Andrew search-warrant ruling; unrelated.",
+  "confidence": "high"
+ },
+ "U151": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": "SAME_DEVELOPMENT_SUSPECTED",
+  "flag": "cross_language",
+  "rationale": "Both sides report Pedro Sanchez calling the 29 November snap election after the housing decrees were rejected, A in Spanish and B in English.",
+  "confidence": "high"
+ },
+ "U152": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "A is the US removing B-1 bombers from RAF Fairford, B is ex-prince Andrew's court challenge to search warrants; shared UK setting only.",
+  "confidence": "high"
+ },
+ "U153": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "A is Brazil's first-round election, B is Trump's Nebraska rally visit; Trump appears in both but no stated link.",
+  "confidence": "high"
+ },
+ "U154": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "A is the Yemeni government offensive, B is Dodik's Bosnian election victory claim; unrelated.",
+  "confidence": "high"
+ },
+ "U155": {
+  "label": "NO_RELATION",
+  "direction": "none",
+  "identity_flag": null,
+  "flag": null,
+  "rationale": "A is Trump's AI policy stance, B is a murder verdict against a former American Idol contestant; unrelated.",
+  "confidence": "high"
+ }
+}
