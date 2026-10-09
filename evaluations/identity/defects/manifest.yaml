@@ -1,0 +1,56 @@
+frozen_at: '2026-10-09T13:20:26+00:00'
+state: 'FROZEN candidate manifest: identity defect review set (no identity logic changed)'
+baseline: identity code 0eff3ea; cross-language stage disabled
+seed: 20261009
+cases: 128
+by_class:
+  AMBIGUOUS: 1
+  CORRECT_BEHAVIOR: 23
+  CROSS_LANGUAGE_MISS: 43
+  OVERMERGE: 42
+  SAME_LANGUAGE_RECALL_MISS: 17
+  SPLIT: 2
+by_source:
+  CT:
+    CORRECT_BEHAVIOR: 23
+  IG:
+    OVERMERGE: 23
+    AMBIGUOUS: 1
+    SAME_LANGUAGE_RECALL_MISS: 17
+    CROSS_LANGUAGE_MISS: 35
+  RB:
+    OVERMERGE: 22
+  RT:
+    CROSS_LANGUAGE_MISS: 8
+    SPLIT: 2
+outputs:
+  defect-cases.json: fafc8abb4b7d5f1eec1e5286a251ab32a5a650e614e8e4fcc33dc3472764a681
+  defect-review.md: 4656a6d8e91dbb200b503c6507ac07841da3f3450757f3683d1fe7d51b8677bf
+inputs:
+  clustering\windows\2026-08-21.items.jsonl: c4932b5c4acf7d7566efd87b27a25dcb3ce78410c836ae1565463336ea860814
+  clustering\windows\2026-08-31.items.jsonl: aed1d3041577c500c1eaddbbedd7f71aae088d0006dddec62a4a4b69e1d474de
+  clustering\windows\2026-09-25.items.jsonl: dd84b77e1b99c487396e1dc46411ea626ec49b005f98840e6a2f4dbba6affaef
+  clustering\windows\2026-09-27-live.items.jsonl: 7909656a6398bba461bb682c0b61ea2e852f0879be2bb7eec156d26b58bb994a
+  clustering\windows\2026-09-29-live.items.jsonl: bc19462d9e00a996b1faf626bab783217d32fabc598877254edc656cc8c2d781
+  identity\gold\identity-gold-rev3-additions.yaml: a92b66f2309162c1378a2b0164a34c11534a2924da3ab88944abc75616825d6b
+  identity\gold\identity-gold.yaml: cc98765b7506b9faa3b81913655978c23afc0d21202e8b69e85c1217ffa2cc58
+  identity\runs\phase2-dev-xlang-off-clock.json: bb3a3190dc98a34e3cfc13151835300673617709472e87552fe3dad574c4c370
+  identity\windows\2026-09-30-multilingual.items.jsonl: 492e17ce0ed0121d5e0ceafc0bdbb376e94fe4a0245880f74fd0cc1c3fb264d9
+  identity\windows\2026-10-03-live.items.jsonl: f66e02726930173fa10ca226a09cceb492700fc40441f481f2f2ff892c06fd46
+  identity\windows\2026-10-05-live.items.jsonl: 3ea43a325af80b202d45dbcd4749c1282fe4d6535e247a3c0eb418c0cb5a4a2e
+  relations\gold\relation-gold-rev2.yaml: 213b2a590815b5558da00d93a6265266e9fcc6b2b37e8ea921d2dcb26094b6b7
+  relations\gold\relation-sides-rev2.yaml: 16c39669854d8bf99a07a1c21ce262b89c16fc7d57fdcca5ef0f54d3e2d28a07
+  relations\runs-rev2\2026-08-21.json: f7d5dbe7df162c3bf87dab31f26aef65a5d04e781f7a908dd6c9323ecb9109ba
+  relations\runs-rev2\2026-08-31.json: d3b0484982f775f7ceed4b97e618ed074e43834cc02431f006d8fba42033bb62
+  relations\runs-rev2\2026-09-25.json: 9d6bea06e87118e10ad381de4eb777a2c6e6c50dca9e596009f7a1976021ddcc
+  relations\runs-rev2\2026-09-27-live.json: cfbd3c03e5ee3049f7febe62019446a243b32d3ffabc100dd705201eaaab71fd
+  relations\runs-rev2\2026-09-29-live.json: d574da4e10d693a62d8867939139d26cdce79079c280a1ba7137ea32ca10ac8b
+  relations\runs-rev2\2026-09-30-multilingual.json: 99d0dd030b397a6918855dfb5f355e253b351778aa3f37f7842b85ae980cb630
+  relations\runtime\gold\runtime-gold.yaml: 1f7f6f3597bc19f2a651bb8c875fec22185db1d7db1fcc83ea2bcc47f2fcd070
+  relations\runtime\runs\2026-10-03-live.json: 1b03581088fd6d44e464d9cb3146998b47fffb3a08a24440f6d1e1e42a11f5c3
+  relations\runtime\runs\2026-10-05-live.json: d4a35ab014851441881992a27f24a81038269017a549c0624c5391a8f1c96219
+  relations\runtime\runs\2026-10-08-live.json: 7d13ccfedce7864f90f91142491f22b8e2b7297e2a9540ff03158ba91aecbfda
+  relations\runtime-eligibility-rev2.yaml: 0e92d0672af5a4776075c67e089a5d4b41b3cc4e5f6822b6eb104a48e56a3475
+  relations\runtime-targeted\gold\targeted-gold.yaml: 85edf507f2cd1f683bcc7ae38eb4929cf2122c2b450a95fbad1ce332ec5ad13c
+  relations\windows\2026-10-08-live.items.jsonl: 1d6d2fffa1efb2c9a6fa69494dc36203a27a01ccbfb6699f41563d7a36318990
+script: 94905e4e0ed717c03a8717848a9b671e02403f44976877aa63c53d9c9316a8df
