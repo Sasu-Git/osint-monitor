@@ -1,0 +1,28 @@
+frozen_at: '2026-10-09T13:08:12+00:00'
+state: 'FROZEN: positive-targeted runtime batch, rounds 1-2 (runtime-targeted-design.md)'
+cases: 34
+labels:
+  NO_RELATION: 31
+  SAME_DEVELOPMENT_SUSPECTED: 3
+drawn_by_targeted_type:
+  reaction_to: 32
+  same_calamity_lifecycle: 2
+eligible_pairs:
+  round 1 reaction_to: 48
+  round 1 same_calamity_lifecycle: 2
+  round 2 reaction_to: 2
+confirmed_runtime_positives:
+  same_calamity_lifecycle: 0
+  same_convened_event: 0
+  reaction_to: 0
+target_per_type: 8-12
+sha256:
+  runtime-targeted/review-r1/cases.json: 92c1b9dc8fca5a28532c1e7a5b512ef4432215c9e61c70b050f410b77a61b6b1
+  runtime-targeted/review-r1/candidate-rules.json: e1f60ecd4e44992154f4d0db3e75f8e6971419dc1607d51a7f5f856df8410451
+  runtime-targeted/review-r1/draft-labels.json: 19ab8336bfc11bfbf7721eaceee93f5e322c19a0536925be8e9c6cc67d0d03d3
+  runtime-targeted/review-r1/owner-verdicts.yaml: 4efe9ace63931a16e3d6164f9c6c99108ca72bed450a8664d65e439f92d988fe
+  runtime-targeted/review-r2/cases.json: 67a185314c6d13eac02a2a9fa6ff75869e2194ead389d5c30d423aa2a5da3d67
+  runtime-targeted/review-r2/candidate-rules.json: 8f8cd1a1b9f15b1a5f2fc9edf46f96e7d870be9b3e7867401bd9e73f0ff07027
+  runtime-targeted/review-r2/draft-labels.json: a330862de6f43aa8739e3b71e9e4342ec8ba88e168369fb9074feb6963b5697a
+  runtime-targeted/review-r2/owner-verdicts.yaml: 6d4ce5153c55517b9e2a6768518959b6c329197090fc819f20f45dd2aa086790
+  runtime-targeted/gold/targeted-gold.yaml: 85edf507f2cd1f683bcc7ae38eb4929cf2122c2b450a95fbad1ce332ec5ad13c

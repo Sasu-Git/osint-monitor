@@ -1,5 +1,8 @@
 # Phase 3: typed relationships between Developments (gold design)
 
+> **Status (2026-10-09): Phase 3 paused, evaluation-blocked by upstream Development identity/coverage.** See
+> `PHASE3-STATUS.md`.
+
 Status: **gold design, ready for owner review.** No runtime relation logic exists. Situation grouping is unchanged.
 
 ```text
