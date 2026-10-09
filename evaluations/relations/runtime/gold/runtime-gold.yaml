@@ -1,0 +1,4621 @@
+# Runtime-eligible relation benchmark (development), frozen. Do not edit.
+U001:
+  window: 2026-10-05-live
+  a:
+    development: 2026-10-05-live:D22
+    members:
+    - s-2574
+    - s-2451
+    - s-2562
+  b:
+    development: 2026-10-05-live:D30
+    members:
+    - s-2349
+    - s-2357
+    - s-2397
+    - s-3079
+    - s-3251
+    - s-3253
+  label: SAME_DEVELOPMENT_SUSPECTED
+  roles: null
+  scored: false
+  runtime_type: false
+  identity_flag: SAME_DEVELOPMENT_SUSPECTED
+  stratum: generator
+  proposed:
+  - reaction_to 30->22
+  owner_note: null
+  draft_label: NO_RELATION
+U002:
+  window: 2026-10-05-live
+  a:
+    development: 2026-10-05-live:D2
+    members:
+    - s-2467
+    - s-2609
+  b:
+    development: 2026-10-05-live:D11
+    members:
+    - s-2241
+    - s-2269
+    - s-2301
+    - s-2652
+    - s-2530
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U003:
+  window: 2026-10-08-live
+  a:
+    development: 2026-10-08-live:D22
+    members:
+    - s-6362
+    - s-6493
+    - s-6535
+    - s-6666
+    - s-7157
+  b:
+    development: 2026-10-08-live:D43
+    members:
+    - s-7152
+    - s-7210
+    - s-7264
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U004:
+  window: 2026-10-03-live
+  a:
+    development: 2026-10-03-live:D21
+    members:
+    - s-1247
+    - s-1472
+    - s-1511
+  b:
+    development: 2026-10-03-live:D23
+    members:
+    - s-1408
+    - s-1447
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: random
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U005:
+  window: 2026-10-08-live
+  a:
+    development: 2026-10-08-live:D3
+    members:
+    - s-6430
+    - s-7063
+    - s-6711
+    - s-6764
+    - s-6767
+    - s-6802
+    - s-6836
+    - s-6922
+    - s-6936
+    - s-7112
+    - s-7208
+    - s-7326
+    - s-7315
+    - s-7339
+  b:
+    development: 2026-10-08-live:D5
+    members:
+    - s-6398
+    - s-6537
+    - s-6456
+    - s-6591
+    - s-6956
+    - s-7294
+    - s-7379
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U006:
+  window: 2026-10-05-live
+  a:
+    development: 2026-10-05-live:D31
+    members:
+    - s-2450
+    - s-2599
+  b:
+    development: 2026-10-05-live:D51
+    members:
+    - s-3004
+    - s-2965
+    - s-3308
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U007:
+  window: 2026-10-03-live
+  a:
+    development: 2026-10-03-live:D11
+    members:
+    - s-1222
+    - s-1347
+  b:
+    development: 2026-10-03-live:D46
+    members:
+    - s-1839
+    - s-1853
+    - s-1956
+    - s-1960
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: generator
+  proposed:
+  - reaction_to 46->11
+  owner_note: null
+  draft_label: NO_RELATION
+U008:
+  window: 2026-10-05-live
+  a:
+    development: 2026-10-05-live:D43
+    members:
+    - s-2391
+    - s-2642
+  b:
+    development: 2026-10-05-live:D51
+    members:
+    - s-3004
+    - s-2965
+    - s-3308
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: generator
+  proposed:
+  - reaction_to 51->43
+  owner_note: null
+  draft_label: NO_RELATION
+U009:
+  window: 2026-10-05-live
+  a:
+    development: 2026-10-05-live:D2
+    members:
+    - s-2467
+    - s-2609
+  b:
+    development: 2026-10-05-live:D45
+    members:
+    - s-2583
+    - s-3092
+    - s-3144
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U010:
+  window: 2026-10-03-live
+  a:
+    development: 2026-10-03-live:D16
+    members:
+    - s-1361
+    - s-1363
+    - s-1619
+  b:
+    development: 2026-10-03-live:D22
+    members:
+    - s-1390
+    - s-1444
+    - s-1689
+    - s-1726
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: generator
+  proposed:
+  - reaction_to 22->16
+  owner_note: null
+  draft_label: NO_RELATION
+U011:
+  window: 2026-10-03-live
+  a:
+    development: 2026-10-03-live:D4
+    members:
+    - s-1173
+    - s-1221
+    - s-1337
+    - s-1364
+    - s-1379
+    - s-1389
+    - s-1413
+    - s-1513
+  b:
+    development: 2026-10-03-live:D46
+    members:
+    - s-1839
+    - s-1853
+    - s-1956
+    - s-1960
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: generator
+  proposed:
+  - reaction_to 46->4
+  owner_note: null
+  draft_label: NO_RELATION
+U012:
+  window: 2026-10-03-live
+  a:
+    development: 2026-10-03-live:D24
+    members:
+    - s-1414
+    - s-1440
+    - s-1512
+    - s-1687
+    - s-1692
+    - s-1976
+  b:
+    development: 2026-10-03-live:D42
+    members:
+    - s-1769
+    - s-1775
+    - s-1900
+    - s-1952
+    - s-1927
+    - s-1933
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U013:
+  window: 2026-10-05-live
+  a:
+    development: 2026-10-05-live:D10
+    members:
+    - s-2242
+    - s-2259
+  b:
+    development: 2026-10-05-live:D27
+    members:
+    - s-2635
+    - s-2432
+    - s-2618
+    - s-2964
+    - s-3416
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U014:
+  window: 2026-10-05-live
+  a:
+    development: 2026-10-05-live:D3
+    members:
+    - s-2626
+    - s-2616
+    - s-2576
+    - s-2625
+    - s-2426
+    - s-2455
+    - s-2638
+    - s-2637
+    - s-2636
+    - s-2566
+    - s-2634
+    - s-2632
+    - s-2631
+    - s-2614
+    - s-2427
+    - s-2613
+    - s-2457
+    - s-2597
+    - s-2596
+    - s-2612
+    - s-2592
+    - s-2621
+    - s-2591
+    - s-2629
+    - s-2565
+    - s-2604
+    - s-2429
+    - s-2428
+    - s-2452
+    - s-2461
+    - s-2449
+    - s-2444
+    - s-2585
+    - s-2561
+    - s-2575
+    - s-2933
+    - s-2932
+    - s-2581
+    - s-2998
+    - s-2923
+    - s-3098
+    - s-3096
+    - s-3076
+    - s-3091
+    - s-3075
+    - s-3095
+    - s-3074
+    - s-3060
+    - s-3149
+    - s-3121
+    - s-3120
+    - s-3254
+    - s-3294
+    - s-3354
+    - s-3321
+    - s-3485
+  b:
+    development: 2026-10-05-live:D50
+    members:
+    - s-2929
+    - s-3071
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U015:
+  window: 2026-10-03-live
+  a:
+    development: 2026-10-03-live:D3
+    members:
+    - s-1124
+    - s-1316
+    - s-1200
+    - s-1213
+    - s-1233
+  b:
+    development: 2026-10-03-live:D42
+    members:
+    - s-1769
+    - s-1775
+    - s-1900
+    - s-1952
+    - s-1927
+    - s-1933
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: random
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U016:
+  window: 2026-10-08-live
+  a:
+    development: 2026-10-08-live:D3
+    members:
+    - s-6430
+    - s-7063
+    - s-6711
+    - s-6764
+    - s-6767
+    - s-6802
+    - s-6836
+    - s-6922
+    - s-6936
+    - s-7112
+    - s-7208
+    - s-7326
+    - s-7315
+    - s-7339
+  b:
+    development: 2026-10-08-live:D12
+    members:
+    - s-6358
+    - s-6462
+    - s-6392
+    - s-6466
+    - s-6903
+    - s-7242
+    - s-7185
+    - s-7228
+    - s-7286
+    - s-7321
+    - s-7320
+    - s-7376
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U017:
+  window: 2026-10-05-live
+  a:
+    development: 2026-10-05-live:D8
+    members:
+    - s-2645
+    - s-2230
+    - s-3107
+  b:
+    development: 2026-10-05-live:D41
+    members:
+    - s-2298
+    - s-3505
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: random
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U018:
+  window: 2026-10-05-live
+  a:
+    development: 2026-10-05-live:D40
+    members:
+    - s-2299
+    - s-3088
+    - s-3206
+    - s-3290
+    - s-3396
+  b:
+    development: 2026-10-05-live:D53
+    members:
+    - s-3066
+    - s-3099
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U019:
+  window: 2026-10-03-live
+  a:
+    development: 2026-10-03-live:D32
+    members:
+    - s-1274
+    - s-1681
+  b:
+    development: 2026-10-03-live:D42
+    members:
+    - s-1769
+    - s-1775
+    - s-1900
+    - s-1952
+    - s-1927
+    - s-1933
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U020:
+  window: 2026-10-03-live
+  a:
+    development: 2026-10-03-live:D21
+    members:
+    - s-1247
+    - s-1472
+    - s-1511
+  b:
+    development: 2026-10-03-live:D25
+    members:
+    - s-1424
+    - s-1442
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: random
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U021:
+  window: 2026-10-08-live
+  a:
+    development: 2026-10-08-live:D17
+    members:
+    - s-6461
+    - s-6349
+    - s-7154
+  b:
+    development: 2026-10-08-live:D47
+    members:
+    - s-7334
+    - s-7318
+    - s-7395
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U022:
+  window: 2026-10-05-live
+  a:
+    development: 2026-10-05-live:D3
+    members:
+    - s-2626
+    - s-2616
+    - s-2576
+    - s-2625
+    - s-2426
+    - s-2455
+    - s-2638
+    - s-2637
+    - s-2636
+    - s-2566
+    - s-2634
+    - s-2632
+    - s-2631
+    - s-2614
+    - s-2427
+    - s-2613
+    - s-2457
+    - s-2597
+    - s-2596
+    - s-2612
+    - s-2592
+    - s-2621
+    - s-2591
+    - s-2629
+    - s-2565
+    - s-2604
+    - s-2429
+    - s-2428
+    - s-2452
+    - s-2461
+    - s-2449
+    - s-2444
+    - s-2585
+    - s-2561
+    - s-2575
+    - s-2933
+    - s-2932
+    - s-2581
+    - s-2998
+    - s-2923
+    - s-3098
+    - s-3096
+    - s-3076
+    - s-3091
+    - s-3075
+    - s-3095
+    - s-3074
+    - s-3060
+    - s-3149
+    - s-3121
+    - s-3120
+    - s-3254
+    - s-3294
+    - s-3354
+    - s-3321
+    - s-3485
+  b:
+    development: 2026-10-05-live:D43
+    members:
+    - s-2391
+    - s-2642
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: random
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U023:
+  window: 2026-10-08-live
+  a:
+    development: 2026-10-08-live:D39
+    members:
+    - s-6598
+    - s-7161
+  b:
+    development: 2026-10-08-live:D45
+    members:
+    - s-7227
+    - s-7297
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U024:
+  window: 2026-10-03-live
+  a:
+    development: 2026-10-03-live:D1
+    members:
+    - s-1118
+    - s-1198
+    - s-1215
+    - s-1262
+    - s-1268
+  b:
+    development: 2026-10-03-live:D24
+    members:
+    - s-1414
+    - s-1440
+    - s-1512
+    - s-1687
+    - s-1692
+    - s-1976
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U025:
+  window: 2026-10-03-live
+  a:
+    development: 2026-10-03-live:D4
+    members:
+    - s-1173
+    - s-1221
+    - s-1337
+    - s-1364
+    - s-1379
+    - s-1389
+    - s-1413
+    - s-1513
+  b:
+    development: 2026-10-03-live:D42
+    members:
+    - s-1769
+    - s-1775
+    - s-1900
+    - s-1952
+    - s-1927
+    - s-1933
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: generator
+  proposed:
+  - reaction_to 42->4
+  owner_note: null
+  draft_label: NO_RELATION
+U026:
+  window: 2026-10-05-live
+  a:
+    development: 2026-10-05-live:D3
+    members:
+    - s-2626
+    - s-2616
+    - s-2576
+    - s-2625
+    - s-2426
+    - s-2455
+    - s-2638
+    - s-2637
+    - s-2636
+    - s-2566
+    - s-2634
+    - s-2632
+    - s-2631
+    - s-2614
+    - s-2427
+    - s-2613
+    - s-2457
+    - s-2597
+    - s-2596
+    - s-2612
+    - s-2592
+    - s-2621
+    - s-2591
+    - s-2629
+    - s-2565
+    - s-2604
+    - s-2429
+    - s-2428
+    - s-2452
+    - s-2461
+    - s-2449
+    - s-2444
+    - s-2585
+    - s-2561
+    - s-2575
+    - s-2933
+    - s-2932
+    - s-2581
+    - s-2998
+    - s-2923
+    - s-3098
+    - s-3096
+    - s-3076
+    - s-3091
+    - s-3075
+    - s-3095
+    - s-3074
+    - s-3060
+    - s-3149
+    - s-3121
+    - s-3120
+    - s-3254
+    - s-3294
+    - s-3354
+    - s-3321
+    - s-3485
+  b:
+    development: 2026-10-05-live:D41
+    members:
+    - s-2298
+    - s-3505
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: generator
+  proposed:
+  - same_convened_event 3->41
+  owner_note: null
+  draft_label: NO_RELATION
+U027:
+  window: 2026-10-08-live
+  a:
+    development: 2026-10-08-live:D10
+    members:
+    - s-6379
+    - s-6334
+    - s-6638
+    - s-6665
+    - s-6761
+  b:
+    development: 2026-10-08-live:D36
+    members:
+    - s-6345
+    - s-7322
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: random
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U028:
+  window: 2026-10-05-live
+  a:
+    development: 2026-10-05-live:D11
+    members:
+    - s-2241
+    - s-2269
+    - s-2301
+    - s-2652
+    - s-2530
+  b:
+    development: 2026-10-05-live:D33
+    members:
+    - s-2556
+    - s-2377
+    - s-2554
+    - s-2387
+    - s-2992
+    - s-3502
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U029:
+  window: 2026-10-03-live
+  a:
+    development: 2026-10-03-live:D38
+    members:
+    - s-1665
+    - s-1682
+    - s-1801
+  b:
+    development: 2026-10-03-live:D39
+    members:
+    - s-1691
+    - s-1709
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U030:
+  window: 2026-10-05-live
+  a:
+    development: 2026-10-05-live:D19
+    members:
+    - s-2579
+    - s-2568
+    - s-2567
+    - s-2601
+    - s-2563
+    - s-3187
+    - s-3467
+  b:
+    development: 2026-10-05-live:D33
+    members:
+    - s-2556
+    - s-2377
+    - s-2554
+    - s-2387
+    - s-2992
+    - s-3502
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U031:
+  window: 2026-10-03-live
+  a:
+    development: 2026-10-03-live:D24
+    members:
+    - s-1414
+    - s-1440
+    - s-1512
+    - s-1687
+    - s-1692
+    - s-1976
+  b:
+    development: 2026-10-03-live:D50
+    members:
+    - s-1776
+    - s-1948
+    - s-1931
+    - s-1936
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U032:
+  window: 2026-10-03-live
+  a:
+    development: 2026-10-03-live:D1
+    members:
+    - s-1118
+    - s-1198
+    - s-1215
+    - s-1262
+    - s-1268
+  b:
+    development: 2026-10-03-live:D46
+    members:
+    - s-1839
+    - s-1853
+    - s-1956
+    - s-1960
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: generator
+  proposed:
+  - same_convened_event 1->46
+  - reaction_to 46->1
+  owner_note: null
+  draft_label: NO_RELATION
+U033:
+  window: 2026-10-05-live
+  a:
+    development: 2026-10-05-live:D5
+    members:
+    - s-2196
+    - s-2246
+    - s-2275
+    - s-2533
+    - s-2857
+    - s-2315
+    - s-2297
+    - s-2557
+    - s-2376
+    - s-2420
+    - s-2548
+    - s-2547
+    - s-3421
+    - s-3397
+  b:
+    development: 2026-10-05-live:D35
+    members:
+    - s-2193
+    - s-2544
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: random
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U034:
+  window: 2026-10-03-live
+  a:
+    development: 2026-10-03-live:D19
+    members:
+    - s-1245
+    - s-1385
+    - s-1402
+    - s-1404
+    - s-1421
+    - s-1480
+    - s-1510
+    - s-1525
+    - s-1506
+    - s-1663
+    - s-1790
+    - s-1834
+    - s-1935
+    - s-1921
+  b:
+    development: 2026-10-03-live:D31
+    members:
+    - s-1493
+    - s-1530
+    - s-1505
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: random
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U035:
+  window: 2026-10-05-live
+  a:
+    development: 2026-10-05-live:D6
+    members:
+    - s-2210
+    - s-2229
+    - s-2550
+  b:
+    development: 2026-10-05-live:D52
+    members:
+    - s-3069
+    - s-3062
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: random
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U036:
+  window: 2026-10-05-live
+  a:
+    development: 2026-10-05-live:D18
+    members:
+    - s-2468
+    - s-2630
+    - s-2590
+    - s-2589
+    - s-2588
+    - s-2587
+    - s-2456
+    - s-2995
+    - s-3168
+    - s-3454
+    - s-3452
+    - s-3486
+  b:
+    development: 2026-10-05-live:D40
+    members:
+    - s-2299
+    - s-3088
+    - s-3206
+    - s-3290
+    - s-3396
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U037:
+  window: 2026-10-03-live
+  a:
+    development: 2026-10-03-live:D20
+    members:
+    - s-1275
+    - s-1477
+  b:
+    development: 2026-10-03-live:D33
+    members:
+    - s-1403
+    - s-1604
+    - s-1643
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: random
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U038:
+  window: 2026-10-03-live
+  a:
+    development: 2026-10-03-live:D6
+    members:
+    - s-1192
+    - s-1217
+    - s-1328
+  b:
+    development: 2026-10-03-live:D24
+    members:
+    - s-1414
+    - s-1440
+    - s-1512
+    - s-1687
+    - s-1692
+    - s-1976
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: generator
+  proposed:
+  - reaction_to 24->6
+  owner_note: null
+  draft_label: NO_RELATION
+U039:
+  window: 2026-10-05-live
+  a:
+    development: 2026-10-05-live:D2
+    members:
+    - s-2467
+    - s-2609
+  b:
+    development: 2026-10-05-live:D17
+    members:
+    - s-2277
+    - s-2283
+    - s-2314
+    - s-2354
+    - s-2553
+    - s-2398
+    - s-2412
+    - s-3078
+    - s-3275
+    - s-3440
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U040:
+  window: 2026-10-03-live
+  a:
+    development: 2026-10-03-live:D33
+    members:
+    - s-1403
+    - s-1604
+    - s-1643
+  b:
+    development: 2026-10-03-live:D41
+    members:
+    - s-1718
+    - s-1788
+    - s-1759
+    - s-1779
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U041:
+  window: 2026-10-03-live
+  a:
+    development: 2026-10-03-live:D47
+    members:
+    - s-1646
+    - s-1923
+  b:
+    development: 2026-10-03-live:D42
+    members:
+    - s-1769
+    - s-1775
+    - s-1900
+    - s-1952
+    - s-1927
+    - s-1933
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U042:
+  window: 2026-10-05-live
+  a:
+    development: 2026-10-05-live:D10
+    members:
+    - s-2242
+    - s-2259
+  b:
+    development: 2026-10-05-live:D41
+    members:
+    - s-2298
+    - s-3505
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: generator
+  proposed:
+  - same_convened_event 10->41
+  owner_note: null
+  draft_label: NO_RELATION
+U043:
+  window: 2026-10-05-live
+  a:
+    development: 2026-10-05-live:D17
+    members:
+    - s-2277
+    - s-2283
+    - s-2314
+    - s-2354
+    - s-2553
+    - s-2398
+    - s-2412
+    - s-3078
+    - s-3275
+    - s-3440
+  b:
+    development: 2026-10-05-live:D29
+    members:
+    - s-2316
+    - s-2386
+    - s-2551
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: generator
+  proposed:
+  - reaction_to 29->17
+  owner_note: null
+  draft_label: NO_RELATION
+U044:
+  window: 2026-10-03-live
+  a:
+    development: 2026-10-03-live:D23
+    members:
+    - s-1408
+    - s-1447
+  b:
+    development: 2026-10-03-live:D30
+    members:
+    - s-1476
+    - s-1543
+    - s-1640
+    - s-1832
+    - s-1892
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: random
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U045:
+  window: 2026-10-03-live
+  a:
+    development: 2026-10-03-live:D38
+    members:
+    - s-1665
+    - s-1682
+    - s-1801
+  b:
+    development: 2026-10-03-live:D42
+    members:
+    - s-1769
+    - s-1775
+    - s-1900
+    - s-1952
+    - s-1927
+    - s-1933
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: generator
+  proposed:
+  - reaction_to 42->38
+  owner_note: null
+  draft_label: NO_RELATION
+U046:
+  window: 2026-10-03-live
+  a:
+    development: 2026-10-03-live:D5
+    members:
+    - s-1165
+    - s-1231
+    - s-1228
+    - s-1252
+    - s-1380
+    - s-1670
+    - s-1666
+    - s-1700
+    - s-1851
+    - s-1897
+    - s-1902
+    - s-1934
+  b:
+    development: 2026-10-03-live:D8
+    members:
+    - s-1197
+    - s-1201
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: generator
+  proposed:
+  - same_convened_event 5->8
+  owner_note: null
+  draft_label: NO_RELATION
+U047:
+  window: 2026-10-08-live
+  a:
+    development: 2026-10-08-live:D18
+    members:
+    - s-6396
+    - s-6347
+    - s-6356
+  b:
+    development: 2026-10-08-live:D35
+    members:
+    - s-6884
+    - s-7382
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U048:
+  window: 2026-10-05-live
+  a:
+    development: 2026-10-05-live:D8
+    members:
+    - s-2645
+    - s-2230
+    - s-3107
+  b:
+    development: 2026-10-05-live:D43
+    members:
+    - s-2391
+    - s-2642
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: generator
+  proposed:
+  - same_convened_event 8->43
+  owner_note: null
+  draft_label: NO_RELATION
+U049:
+  window: 2026-10-03-live
+  a:
+    development: 2026-10-03-live:D21
+    members:
+    - s-1247
+    - s-1472
+    - s-1511
+  b:
+    development: 2026-10-03-live:D46
+    members:
+    - s-1839
+    - s-1853
+    - s-1956
+    - s-1960
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U050:
+  window: 2026-10-03-live
+  a:
+    development: 2026-10-03-live:D19
+    members:
+    - s-1245
+    - s-1385
+    - s-1402
+    - s-1404
+    - s-1421
+    - s-1480
+    - s-1510
+    - s-1525
+    - s-1506
+    - s-1663
+    - s-1790
+    - s-1834
+    - s-1935
+    - s-1921
+  b:
+    development: 2026-10-03-live:D13
+    members:
+    - s-1244
+    - s-1309
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: random
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U051:
+  window: 2026-10-08-live
+  a:
+    development: 2026-10-08-live:D19
+    members:
+    - s-6367
+    - s-6784
+  b:
+    development: 2026-10-08-live:D42
+    members:
+    - s-7089
+    - s-7263
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U052:
+  window: 2026-10-08-live
+  a:
+    development: 2026-10-08-live:D41
+    members:
+    - s-7000
+    - s-7288
+  b:
+    development: 2026-10-08-live:D43
+    members:
+    - s-7152
+    - s-7210
+    - s-7264
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: random
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U053:
+  window: 2026-10-03-live
+  a:
+    development: 2026-10-03-live:D29
+    members:
+    - s-1441
+    - s-1534
+    - s-1602
+  b:
+    development: 2026-10-03-live:D43
+    members:
+    - s-1765
+    - s-1810
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: random
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U054:
+  window: 2026-10-05-live
+  a:
+    development: 2026-10-05-live:D15
+    members:
+    - s-2244
+    - s-2256
+    - s-2317
+    - s-2532
+    - s-2978
+    - s-2559
+    - s-2423
+    - s-2949
+    - s-2982
+    - s-2981
+    - s-3293
+    - s-3394
+  b:
+    development: 2026-10-05-live:D29
+    members:
+    - s-2316
+    - s-2386
+    - s-2551
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U055:
+  window: 2026-10-08-live
+  a:
+    development: 2026-10-08-live:D4
+    members:
+    - s-6597
+    - s-6846
+  b:
+    development: 2026-10-08-live:D43
+    members:
+    - s-7152
+    - s-7210
+    - s-7264
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: random
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U056:
+  window: 2026-10-08-live
+  a:
+    development: 2026-10-08-live:D43
+    members:
+    - s-7152
+    - s-7210
+    - s-7264
+  b:
+    development: 2026-10-08-live:D46
+    members:
+    - s-7268
+    - s-7324
+    - s-7399
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U057:
+  window: 2026-10-03-live
+  a:
+    development: 2026-10-03-live:D38
+    members:
+    - s-1665
+    - s-1682
+    - s-1801
+  b:
+    development: 2026-10-03-live:D46
+    members:
+    - s-1839
+    - s-1853
+    - s-1956
+    - s-1960
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: generator
+  proposed:
+  - reaction_to 46->38
+  owner_note: null
+  draft_label: NO_RELATION
+U058:
+  window: 2026-10-03-live
+  a:
+    development: 2026-10-03-live:D26
+    members:
+    - s-1423
+    - s-1427
+  b:
+    development: 2026-10-03-live:D27
+    members:
+    - s-1431
+    - s-1438
+    - s-1675
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U059:
+  window: 2026-10-05-live
+  a:
+    development: 2026-10-05-live:D34
+    members:
+    - s-2224
+    - s-2564
+    - s-2440
+    - s-2870
+    - s-2920
+    - s-2996
+    - s-3058
+    - s-3122
+    - s-3090
+    - s-3086
+    - s-3234
+  b:
+    development: 2026-10-05-live:D50
+    members:
+    - s-2929
+    - s-3071
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: random
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U060:
+  window: 2026-10-05-live
+  a:
+    development: 2026-10-05-live:D3
+    members:
+    - s-2626
+    - s-2616
+    - s-2576
+    - s-2625
+    - s-2426
+    - s-2455
+    - s-2638
+    - s-2637
+    - s-2636
+    - s-2566
+    - s-2634
+    - s-2632
+    - s-2631
+    - s-2614
+    - s-2427
+    - s-2613
+    - s-2457
+    - s-2597
+    - s-2596
+    - s-2612
+    - s-2592
+    - s-2621
+    - s-2591
+    - s-2629
+    - s-2565
+    - s-2604
+    - s-2429
+    - s-2428
+    - s-2452
+    - s-2461
+    - s-2449
+    - s-2444
+    - s-2585
+    - s-2561
+    - s-2575
+    - s-2933
+    - s-2932
+    - s-2581
+    - s-2998
+    - s-2923
+    - s-3098
+    - s-3096
+    - s-3076
+    - s-3091
+    - s-3075
+    - s-3095
+    - s-3074
+    - s-3060
+    - s-3149
+    - s-3121
+    - s-3120
+    - s-3254
+    - s-3294
+    - s-3354
+    - s-3321
+    - s-3485
+  b:
+    development: 2026-10-05-live:D24
+    members:
+    - s-2775
+    - s-2644
+    - s-2704
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: generator
+  proposed:
+  - same_convened_event 3->24
+  owner_note: null
+  draft_label: NO_RELATION
+U061:
+  window: 2026-10-05-live
+  a:
+    development: 2026-10-05-live:D19
+    members:
+    - s-2579
+    - s-2568
+    - s-2567
+    - s-2601
+    - s-2563
+    - s-3187
+    - s-3467
+  b:
+    development: 2026-10-05-live:D5
+    members:
+    - s-2196
+    - s-2246
+    - s-2275
+    - s-2533
+    - s-2857
+    - s-2315
+    - s-2297
+    - s-2557
+    - s-2376
+    - s-2420
+    - s-2548
+    - s-2547
+    - s-3421
+    - s-3397
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U062:
+  window: 2026-10-08-live
+  a:
+    development: 2026-10-08-live:D18
+    members:
+    - s-6396
+    - s-6347
+    - s-6356
+  b:
+    development: 2026-10-08-live:D41
+    members:
+    - s-7000
+    - s-7288
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U063:
+  window: 2026-10-03-live
+  a:
+    development: 2026-10-03-live:D1
+    members:
+    - s-1118
+    - s-1198
+    - s-1215
+    - s-1262
+    - s-1268
+  b:
+    development: 2026-10-03-live:D4
+    members:
+    - s-1173
+    - s-1221
+    - s-1337
+    - s-1364
+    - s-1379
+    - s-1389
+    - s-1413
+    - s-1513
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: generator
+  proposed:
+  - reaction_to 4->1
+  owner_note: null
+  draft_label: NO_RELATION
+U064:
+  window: 2026-10-03-live
+  a:
+    development: 2026-10-03-live:D11
+    members:
+    - s-1222
+    - s-1347
+  b:
+    development: 2026-10-03-live:D47
+    members:
+    - s-1646
+    - s-1923
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U065:
+  window: 2026-10-08-live
+  a:
+    development: 2026-10-08-live:D22
+    members:
+    - s-6362
+    - s-6493
+    - s-6535
+    - s-6666
+    - s-7157
+  b:
+    development: 2026-10-08-live:D48
+    members:
+    - s-7393
+    - s-7413
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U066:
+  window: 2026-10-05-live
+  a:
+    development: 2026-10-05-live:D2
+    members:
+    - s-2467
+    - s-2609
+  b:
+    development: 2026-10-05-live:D29
+    members:
+    - s-2316
+    - s-2386
+    - s-2551
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: generator
+  proposed:
+  - reaction_to 29->2
+  owner_note: null
+  draft_label: NO_RELATION
+U067:
+  window: 2026-10-08-live
+  a:
+    development: 2026-10-08-live:D11
+    members:
+    - s-6400
+    - s-6394
+    - s-6806
+  b:
+    development: 2026-10-08-live:D22
+    members:
+    - s-6362
+    - s-6493
+    - s-6535
+    - s-6666
+    - s-7157
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U068:
+  window: 2026-10-03-live
+  a:
+    development: 2026-10-03-live:D4
+    members:
+    - s-1173
+    - s-1221
+    - s-1337
+    - s-1364
+    - s-1379
+    - s-1389
+    - s-1413
+    - s-1513
+  b:
+    development: 2026-10-03-live:D19
+    members:
+    - s-1245
+    - s-1385
+    - s-1402
+    - s-1404
+    - s-1421
+    - s-1480
+    - s-1510
+    - s-1525
+    - s-1506
+    - s-1663
+    - s-1790
+    - s-1834
+    - s-1935
+    - s-1921
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: generator
+  proposed:
+  - reaction_to 19->4
+  owner_note: null
+  draft_label: NO_RELATION
+U069:
+  window: 2026-10-08-live
+  a:
+    development: 2026-10-08-live:D9
+    members:
+    - s-6346
+    - s-6391
+    - s-7402
+  b:
+    development: 2026-10-08-live:D44
+    members:
+    - s-7145
+    - s-7335
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U070:
+  window: 2026-10-03-live
+  a:
+    development: 2026-10-03-live:D13
+    members:
+    - s-1244
+    - s-1309
+  b:
+    development: 2026-10-03-live:D29
+    members:
+    - s-1441
+    - s-1534
+    - s-1602
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U071:
+  window: 2026-10-03-live
+  a:
+    development: 2026-10-03-live:D18
+    members:
+    - s-1214
+    - s-1410
+  b:
+    development: 2026-10-03-live:D42
+    members:
+    - s-1769
+    - s-1775
+    - s-1900
+    - s-1952
+    - s-1927
+    - s-1933
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U072:
+  window: 2026-10-08-live
+  a:
+    development: 2026-10-08-live:D1
+    members:
+    - s-6405
+    - s-6491
+    - s-6348
+    - s-6393
+    - s-6588
+    - s-6719
+    - s-7087
+    - s-7336
+    - s-7370
+  b:
+    development: 2026-10-08-live:D6
+    members:
+    - s-6402
+    - s-6739
+    - s-7151
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: random
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U073:
+  window: 2026-10-05-live
+  a:
+    development: 2026-10-05-live:D12
+    members:
+    - s-2251
+    - s-2257
+    - s-2254
+    - s-2319
+  b:
+    development: 2026-10-05-live:D38
+    members:
+    - s-3125
+    - s-3140
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U074:
+  window: 2026-10-08-live
+  a:
+    development: 2026-10-08-live:D39
+    members:
+    - s-6598
+    - s-7161
+  b:
+    development: 2026-10-08-live:D46
+    members:
+    - s-7268
+    - s-7324
+    - s-7399
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U075:
+  window: 2026-10-08-live
+  a:
+    development: 2026-10-08-live:D10
+    members:
+    - s-6379
+    - s-6334
+    - s-6638
+    - s-6665
+    - s-6761
+  b:
+    development: 2026-10-08-live:D34
+    members:
+    - s-6455
+    - s-6399
+    - s-7008
+    - s-7293
+    - s-7298
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U076:
+  window: 2026-10-05-live
+  a:
+    development: 2026-10-05-live:D17
+    members:
+    - s-2277
+    - s-2283
+    - s-2314
+    - s-2354
+    - s-2553
+    - s-2398
+    - s-2412
+    - s-3078
+    - s-3275
+    - s-3440
+  b:
+    development: 2026-10-05-live:D27
+    members:
+    - s-2635
+    - s-2432
+    - s-2618
+    - s-2964
+    - s-3416
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U077:
+  window: 2026-10-03-live
+  a:
+    development: 2026-10-03-live:D10
+    members:
+    - s-1227
+    - s-1287
+    - s-1272
+    - s-1411
+    - s-1449
+  b:
+    development: 2026-10-03-live:D39
+    members:
+    - s-1691
+    - s-1709
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U078:
+  window: 2026-10-03-live
+  a:
+    development: 2026-10-03-live:D2
+    members:
+    - s-1123
+    - s-1143
+    - s-1153
+    - s-1175
+    - s-1172
+  b:
+    development: 2026-10-03-live:D30
+    members:
+    - s-1476
+    - s-1543
+    - s-1640
+    - s-1832
+    - s-1892
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U079:
+  window: 2026-10-05-live
+  a:
+    development: 2026-10-05-live:D3
+    members:
+    - s-2626
+    - s-2616
+    - s-2576
+    - s-2625
+    - s-2426
+    - s-2455
+    - s-2638
+    - s-2637
+    - s-2636
+    - s-2566
+    - s-2634
+    - s-2632
+    - s-2631
+    - s-2614
+    - s-2427
+    - s-2613
+    - s-2457
+    - s-2597
+    - s-2596
+    - s-2612
+    - s-2592
+    - s-2621
+    - s-2591
+    - s-2629
+    - s-2565
+    - s-2604
+    - s-2429
+    - s-2428
+    - s-2452
+    - s-2461
+    - s-2449
+    - s-2444
+    - s-2585
+    - s-2561
+    - s-2575
+    - s-2933
+    - s-2932
+    - s-2581
+    - s-2998
+    - s-2923
+    - s-3098
+    - s-3096
+    - s-3076
+    - s-3091
+    - s-3075
+    - s-3095
+    - s-3074
+    - s-3060
+    - s-3149
+    - s-3121
+    - s-3120
+    - s-3254
+    - s-3294
+    - s-3354
+    - s-3321
+    - s-3485
+  b:
+    development: 2026-10-05-live:D27
+    members:
+    - s-2635
+    - s-2432
+    - s-2618
+    - s-2964
+    - s-3416
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U080:
+  window: 2026-10-03-live
+  a:
+    development: 2026-10-03-live:D32
+    members:
+    - s-1274
+    - s-1681
+  b:
+    development: 2026-10-03-live:D34
+    members:
+    - s-1485
+    - s-1714
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U081:
+  window: 2026-10-03-live
+  a:
+    development: 2026-10-03-live:D4
+    members:
+    - s-1173
+    - s-1221
+    - s-1337
+    - s-1364
+    - s-1379
+    - s-1389
+    - s-1413
+    - s-1513
+  b:
+    development: 2026-10-03-live:D47
+    members:
+    - s-1646
+    - s-1923
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U082:
+  window: 2026-10-08-live
+  a:
+    development: 2026-10-08-live:D7
+    members:
+    - s-6383
+    - s-6369
+  b:
+    development: 2026-10-08-live:D33
+    members:
+    - s-6460
+    - s-7241
+    - s-7206
+    - s-7266
+    - s-7223
+    - s-7258
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U083:
+  window: 2026-10-03-live
+  a:
+    development: 2026-10-03-live:D10
+    members:
+    - s-1227
+    - s-1287
+    - s-1272
+    - s-1411
+    - s-1449
+  b:
+    development: 2026-10-03-live:D21
+    members:
+    - s-1247
+    - s-1472
+    - s-1511
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U084:
+  window: 2026-10-05-live
+  a:
+    development: 2026-10-05-live:D19
+    members:
+    - s-2579
+    - s-2568
+    - s-2567
+    - s-2601
+    - s-2563
+    - s-3187
+    - s-3467
+  b:
+    development: 2026-10-05-live:D30
+    members:
+    - s-2349
+    - s-2357
+    - s-2397
+    - s-3079
+    - s-3251
+    - s-3253
+  label: caused_by
+  roles:
+    effect: 2026-10-05-live:D30
+    cause: 2026-10-05-live:D19
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: generator
+  proposed:
+  - reaction_to 30->19
+  owner_note: null
+  draft_label: caused_by
+U085:
+  window: 2026-10-05-live
+  a:
+    development: 2026-10-05-live:D33
+    members:
+    - s-2556
+    - s-2377
+    - s-2554
+    - s-2387
+    - s-2992
+    - s-3502
+  b:
+    development: 2026-10-05-live:D45
+    members:
+    - s-2583
+    - s-3092
+    - s-3144
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U086:
+  window: 2026-10-08-live
+  a:
+    development: 2026-10-08-live:D34
+    members:
+    - s-6455
+    - s-6399
+    - s-7008
+    - s-7293
+    - s-7298
+  b:
+    development: 2026-10-08-live:D35
+    members:
+    - s-6884
+    - s-7382
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U087:
+  window: 2026-10-05-live
+  a:
+    development: 2026-10-05-live:D17
+    members:
+    - s-2277
+    - s-2283
+    - s-2314
+    - s-2354
+    - s-2553
+    - s-2398
+    - s-2412
+    - s-3078
+    - s-3275
+    - s-3440
+  b:
+    development: 2026-10-05-live:D43
+    members:
+    - s-2391
+    - s-2642
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U088:
+  window: 2026-10-05-live
+  a:
+    development: 2026-10-05-live:D8
+    members:
+    - s-2645
+    - s-2230
+    - s-3107
+  b:
+    development: 2026-10-05-live:D50
+    members:
+    - s-2929
+    - s-3071
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: generator
+  proposed:
+  - reaction_to 50->8
+  owner_note: null
+  draft_label: NO_RELATION
+U089:
+  window: 2026-10-03-live
+  a:
+    development: 2026-10-03-live:D18
+    members:
+    - s-1214
+    - s-1410
+  b:
+    development: 2026-10-03-live:D32
+    members:
+    - s-1274
+    - s-1681
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U090:
+  window: 2026-10-05-live
+  a:
+    development: 2026-10-05-live:D19
+    members:
+    - s-2579
+    - s-2568
+    - s-2567
+    - s-2601
+    - s-2563
+    - s-3187
+    - s-3467
+  b:
+    development: 2026-10-05-live:D27
+    members:
+    - s-2635
+    - s-2432
+    - s-2618
+    - s-2964
+    - s-3416
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: random
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U091:
+  window: 2026-10-08-live
+  a:
+    development: 2026-10-08-live:D14
+    members:
+    - s-6376
+    - s-6375
+    - s-6371
+    - s-6419
+    - s-6382
+    - s-6340
+    - s-6512
+    - s-6760
+    - s-7039
+    - s-7187
+  b:
+    development: 2026-10-08-live:D16
+    members:
+    - s-6370
+    - s-6759
+    - s-6844
+    - s-6869
+    - s-6932
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U092:
+  window: 2026-10-08-live
+  a:
+    development: 2026-10-08-live:D7
+    members:
+    - s-6383
+    - s-6369
+  b:
+    development: 2026-10-08-live:D47
+    members:
+    - s-7334
+    - s-7318
+    - s-7395
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U093:
+  window: 2026-10-08-live
+  a:
+    development: 2026-10-08-live:D13
+    members:
+    - s-6377
+    - s-6411
+  b:
+    development: 2026-10-08-live:D33
+    members:
+    - s-6460
+    - s-7241
+    - s-7206
+    - s-7266
+    - s-7223
+    - s-7258
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: random
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U094:
+  window: 2026-10-05-live
+  a:
+    development: 2026-10-05-live:D19
+    members:
+    - s-2579
+    - s-2568
+    - s-2567
+    - s-2601
+    - s-2563
+    - s-3187
+    - s-3467
+  b:
+    development: 2026-10-05-live:D14
+    members:
+    - s-2245
+    - s-2654
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: random
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U095:
+  window: 2026-10-08-live
+  a:
+    development: 2026-10-08-live:D3
+    members:
+    - s-6430
+    - s-7063
+    - s-6711
+    - s-6764
+    - s-6767
+    - s-6802
+    - s-6836
+    - s-6922
+    - s-6936
+    - s-7112
+    - s-7208
+    - s-7326
+    - s-7315
+    - s-7339
+  b:
+    development: 2026-10-08-live:D21
+    members:
+    - s-6341
+    - s-6467
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: random
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U096:
+  window: 2026-10-05-live
+  a:
+    development: 2026-10-05-live:D34
+    members:
+    - s-2224
+    - s-2564
+    - s-2440
+    - s-2870
+    - s-2920
+    - s-2996
+    - s-3058
+    - s-3122
+    - s-3090
+    - s-3086
+    - s-3234
+  b:
+    development: 2026-10-05-live:D25
+    members:
+    - s-2282
+    - s-2447
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: random
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U097:
+  window: 2026-10-03-live
+  a:
+    development: 2026-10-03-live:D29
+    members:
+    - s-1441
+    - s-1534
+    - s-1602
+  b:
+    development: 2026-10-03-live:D42
+    members:
+    - s-1769
+    - s-1775
+    - s-1900
+    - s-1952
+    - s-1927
+    - s-1933
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: generator
+  proposed:
+  - reaction_to 42->29
+  owner_note: null
+  draft_label: NO_RELATION
+U098:
+  window: 2026-10-03-live
+  a:
+    development: 2026-10-03-live:D11
+    members:
+    - s-1222
+    - s-1347
+  b:
+    development: 2026-10-03-live:D19
+    members:
+    - s-1245
+    - s-1385
+    - s-1402
+    - s-1404
+    - s-1421
+    - s-1480
+    - s-1510
+    - s-1525
+    - s-1506
+    - s-1663
+    - s-1790
+    - s-1834
+    - s-1935
+    - s-1921
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: generator
+  proposed:
+  - reaction_to 19->11
+  owner_note: null
+  draft_label: NO_RELATION
+U099:
+  window: 2026-10-03-live
+  a:
+    development: 2026-10-03-live:D19
+    members:
+    - s-1245
+    - s-1385
+    - s-1402
+    - s-1404
+    - s-1421
+    - s-1480
+    - s-1510
+    - s-1525
+    - s-1506
+    - s-1663
+    - s-1790
+    - s-1834
+    - s-1935
+    - s-1921
+  b:
+    development: 2026-10-03-live:D42
+    members:
+    - s-1769
+    - s-1775
+    - s-1900
+    - s-1952
+    - s-1927
+    - s-1933
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: generator
+  proposed:
+  - reaction_to 42->19
+  owner_note: null
+  draft_label: NO_RELATION
+U100:
+  window: 2026-10-08-live
+  a:
+    development: 2026-10-08-live:D32
+    members:
+    - s-6339
+    - s-7199
+    - s-7238
+  b:
+    development: 2026-10-08-live:D39
+    members:
+    - s-6598
+    - s-7161
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U101:
+  window: 2026-10-05-live
+  a:
+    development: 2026-10-05-live:D5
+    members:
+    - s-2196
+    - s-2246
+    - s-2275
+    - s-2533
+    - s-2857
+    - s-2315
+    - s-2297
+    - s-2557
+    - s-2376
+    - s-2420
+    - s-2548
+    - s-2547
+    - s-3421
+    - s-3397
+  b:
+    development: 2026-10-05-live:D7
+    members:
+    - s-2194
+    - s-2220
+    - s-2260
+    - s-2310
+    - s-2303
+    - s-2558
+    - s-2380
+    - s-2853
+    - s-2966
+    - s-2983
+    - s-2986
+    - s-3207
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U102:
+  window: 2026-10-08-live
+  a:
+    development: 2026-10-08-live:D43
+    members:
+    - s-7152
+    - s-7210
+    - s-7264
+  b:
+    development: 2026-10-08-live:D44
+    members:
+    - s-7145
+    - s-7335
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U103:
+  window: 2026-10-05-live
+  a:
+    development: 2026-10-05-live:D17
+    members:
+    - s-2277
+    - s-2283
+    - s-2314
+    - s-2354
+    - s-2553
+    - s-2398
+    - s-2412
+    - s-3078
+    - s-3275
+    - s-3440
+  b:
+    development: 2026-10-05-live:D49
+    members:
+    - s-2542
+    - s-3068
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U104:
+  window: 2026-10-03-live
+  a:
+    development: 2026-10-03-live:D10
+    members:
+    - s-1227
+    - s-1287
+    - s-1272
+    - s-1411
+    - s-1449
+  b:
+    development: 2026-10-03-live:D24
+    members:
+    - s-1414
+    - s-1440
+    - s-1512
+    - s-1687
+    - s-1692
+    - s-1976
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U105:
+  window: 2026-10-03-live
+  a:
+    development: 2026-10-03-live:D30
+    members:
+    - s-1476
+    - s-1543
+    - s-1640
+    - s-1832
+    - s-1892
+  b:
+    development: 2026-10-03-live:D52
+    members:
+    - s-2008
+    - s-1987
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U106:
+  window: 2026-10-05-live
+  a:
+    development: 2026-10-05-live:D40
+    members:
+    - s-2299
+    - s-3088
+    - s-3206
+    - s-3290
+    - s-3396
+  b:
+    development: 2026-10-05-live:D51
+    members:
+    - s-3004
+    - s-2965
+    - s-3308
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: generator
+  proposed:
+  - reaction_to 51->40
+  owner_note: null
+  draft_label: NO_RELATION
+U107:
+  window: 2026-10-03-live
+  a:
+    development: 2026-10-03-live:D47
+    members:
+    - s-1646
+    - s-1923
+  b:
+    development: 2026-10-03-live:D39
+    members:
+    - s-1691
+    - s-1709
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U108:
+  window: 2026-10-03-live
+  a:
+    development: 2026-10-03-live:D24
+    members:
+    - s-1414
+    - s-1440
+    - s-1512
+    - s-1687
+    - s-1692
+    - s-1976
+  b:
+    development: 2026-10-03-live:D27
+    members:
+    - s-1431
+    - s-1438
+    - s-1675
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U109:
+  window: 2026-10-03-live
+  a:
+    development: 2026-10-03-live:D16
+    members:
+    - s-1361
+    - s-1363
+    - s-1619
+  b:
+    development: 2026-10-03-live:D27
+    members:
+    - s-1431
+    - s-1438
+    - s-1675
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U110:
+  window: 2026-10-08-live
+  a:
+    development: 2026-10-08-live:D33
+    members:
+    - s-6460
+    - s-7241
+    - s-7206
+    - s-7266
+    - s-7223
+    - s-7258
+  b:
+    development: 2026-10-08-live:D17
+    members:
+    - s-6461
+    - s-6349
+    - s-7154
+  label: SAME_DEVELOPMENT_SUSPECTED
+  roles: null
+  scored: false
+  runtime_type: false
+  identity_flag: SAME_DEVELOPMENT_SUSPECTED
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U111:
+  window: 2026-10-08-live
+  a:
+    development: 2026-10-08-live:D13
+    members:
+    - s-6377
+    - s-6411
+  b:
+    development: 2026-10-08-live:D26
+    members:
+    - s-6538
+    - s-6756
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U112:
+  window: 2026-10-08-live
+  a:
+    development: 2026-10-08-live:D19
+    members:
+    - s-6367
+    - s-6784
+  b:
+    development: 2026-10-08-live:D43
+    members:
+    - s-7152
+    - s-7210
+    - s-7264
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U113:
+  window: 2026-10-03-live
+  a:
+    development: 2026-10-03-live:D1
+    members:
+    - s-1118
+    - s-1198
+    - s-1215
+    - s-1262
+    - s-1268
+  b:
+    development: 2026-10-03-live:D42
+    members:
+    - s-1769
+    - s-1775
+    - s-1900
+    - s-1952
+    - s-1927
+    - s-1933
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: generator
+  proposed:
+  - reaction_to 42->1
+  owner_note: null
+  draft_label: NO_RELATION
+U114:
+  window: 2026-10-08-live
+  a:
+    development: 2026-10-08-live:D26
+    members:
+    - s-6538
+    - s-6756
+  b:
+    development: 2026-10-08-live:D39
+    members:
+    - s-6598
+    - s-7161
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U115:
+  window: 2026-10-05-live
+  a:
+    development: 2026-10-05-live:D11
+    members:
+    - s-2241
+    - s-2269
+    - s-2301
+    - s-2652
+    - s-2530
+  b:
+    development: 2026-10-05-live:D45
+    members:
+    - s-2583
+    - s-3092
+    - s-3144
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U116:
+  window: 2026-10-05-live
+  a:
+    development: 2026-10-05-live:D3
+    members:
+    - s-2626
+    - s-2616
+    - s-2576
+    - s-2625
+    - s-2426
+    - s-2455
+    - s-2638
+    - s-2637
+    - s-2636
+    - s-2566
+    - s-2634
+    - s-2632
+    - s-2631
+    - s-2614
+    - s-2427
+    - s-2613
+    - s-2457
+    - s-2597
+    - s-2596
+    - s-2612
+    - s-2592
+    - s-2621
+    - s-2591
+    - s-2629
+    - s-2565
+    - s-2604
+    - s-2429
+    - s-2428
+    - s-2452
+    - s-2461
+    - s-2449
+    - s-2444
+    - s-2585
+    - s-2561
+    - s-2575
+    - s-2933
+    - s-2932
+    - s-2581
+    - s-2998
+    - s-2923
+    - s-3098
+    - s-3096
+    - s-3076
+    - s-3091
+    - s-3075
+    - s-3095
+    - s-3074
+    - s-3060
+    - s-3149
+    - s-3121
+    - s-3120
+    - s-3254
+    - s-3294
+    - s-3354
+    - s-3321
+    - s-3485
+  b:
+    development: 2026-10-05-live:D5
+    members:
+    - s-2196
+    - s-2246
+    - s-2275
+    - s-2533
+    - s-2857
+    - s-2315
+    - s-2297
+    - s-2557
+    - s-2376
+    - s-2420
+    - s-2548
+    - s-2547
+    - s-3421
+    - s-3397
+  label: SAME_DEVELOPMENT_SUSPECTED
+  roles: null
+  scored: false
+  runtime_type: false
+  identity_flag: SAME_DEVELOPMENT_SUSPECTED
+  stratum: generator
+  proposed:
+  - reaction_to 5->3
+  owner_note: null
+  draft_label: NO_RELATION
+U117:
+  window: 2026-10-03-live
+  a:
+    development: 2026-10-03-live:D42
+    members:
+    - s-1769
+    - s-1775
+    - s-1900
+    - s-1952
+    - s-1927
+    - s-1933
+  b:
+    development: 2026-10-03-live:D46
+    members:
+    - s-1839
+    - s-1853
+    - s-1956
+    - s-1960
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: generator
+  proposed:
+  - reaction_to 46->42
+  owner_note: null
+  draft_label: NO_RELATION
+U118:
+  window: 2026-10-08-live
+  a:
+    development: 2026-10-08-live:D35
+    members:
+    - s-6884
+    - s-7382
+  b:
+    development: 2026-10-08-live:D43
+    members:
+    - s-7152
+    - s-7210
+    - s-7264
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: random
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U119:
+  window: 2026-10-03-live
+  a:
+    development: 2026-10-03-live:D47
+    members:
+    - s-1646
+    - s-1923
+  b:
+    development: 2026-10-03-live:D43
+    members:
+    - s-1765
+    - s-1810
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U120:
+  window: 2026-10-03-live
+  a:
+    development: 2026-10-03-live:D4
+    members:
+    - s-1173
+    - s-1221
+    - s-1337
+    - s-1364
+    - s-1379
+    - s-1389
+    - s-1413
+    - s-1513
+  b:
+    development: 2026-10-03-live:D32
+    members:
+    - s-1274
+    - s-1681
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U121:
+  window: 2026-10-05-live
+  a:
+    development: 2026-10-05-live:D3
+    members:
+    - s-2626
+    - s-2616
+    - s-2576
+    - s-2625
+    - s-2426
+    - s-2455
+    - s-2638
+    - s-2637
+    - s-2636
+    - s-2566
+    - s-2634
+    - s-2632
+    - s-2631
+    - s-2614
+    - s-2427
+    - s-2613
+    - s-2457
+    - s-2597
+    - s-2596
+    - s-2612
+    - s-2592
+    - s-2621
+    - s-2591
+    - s-2629
+    - s-2565
+    - s-2604
+    - s-2429
+    - s-2428
+    - s-2452
+    - s-2461
+    - s-2449
+    - s-2444
+    - s-2585
+    - s-2561
+    - s-2575
+    - s-2933
+    - s-2932
+    - s-2581
+    - s-2998
+    - s-2923
+    - s-3098
+    - s-3096
+    - s-3076
+    - s-3091
+    - s-3075
+    - s-3095
+    - s-3074
+    - s-3060
+    - s-3149
+    - s-3121
+    - s-3120
+    - s-3254
+    - s-3294
+    - s-3354
+    - s-3321
+    - s-3485
+  b:
+    development: 2026-10-05-live:D10
+    members:
+    - s-2242
+    - s-2259
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: generator
+  proposed:
+  - same_convened_event 3->10
+  owner_note: null
+  draft_label: NO_RELATION
+U122:
+  window: 2026-10-05-live
+  a:
+    development: 2026-10-05-live:D10
+    members:
+    - s-2242
+    - s-2259
+  b:
+    development: 2026-10-05-live:D14
+    members:
+    - s-2245
+    - s-2654
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: random
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U123:
+  window: 2026-10-05-live
+  a:
+    development: 2026-10-05-live:D2
+    members:
+    - s-2467
+    - s-2609
+  b:
+    development: 2026-10-05-live:D23
+    members:
+    - s-2627
+    - s-2602
+    - s-2448
+    - s-2446
+    - s-3141
+    - s-3059
+    - s-3208
+    - s-3183
+    - s-3353
+    - s-3417
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U124:
+  window: 2026-10-05-live
+  a:
+    development: 2026-10-05-live:D27
+    members:
+    - s-2635
+    - s-2432
+    - s-2618
+    - s-2964
+    - s-3416
+  b:
+    development: 2026-10-05-live:D40
+    members:
+    - s-2299
+    - s-3088
+    - s-3206
+    - s-3290
+    - s-3396
+  label: SAME_DEVELOPMENT_SUSPECTED
+  roles: null
+  scored: false
+  runtime_type: false
+  identity_flag: SAME_DEVELOPMENT_SUSPECTED
+  stratum: generator
+  proposed:
+  - same_calamity_lifecycle 27->40
+  owner_note: null
+  draft_label: NO_RELATION
+U125:
+  window: 2026-10-08-live
+  a:
+    development: 2026-10-08-live:D9
+    members:
+    - s-6346
+    - s-6391
+    - s-7402
+  b:
+    development: 2026-10-08-live:D43
+    members:
+    - s-7152
+    - s-7210
+    - s-7264
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U126:
+  window: 2026-10-08-live
+  a:
+    development: 2026-10-08-live:D9
+    members:
+    - s-6346
+    - s-6391
+    - s-7402
+  b:
+    development: 2026-10-08-live:D39
+    members:
+    - s-6598
+    - s-7161
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U127:
+  window: 2026-10-03-live
+  a:
+    development: 2026-10-03-live:D1
+    members:
+    - s-1118
+    - s-1198
+    - s-1215
+    - s-1262
+    - s-1268
+  b:
+    development: 2026-10-03-live:D19
+    members:
+    - s-1245
+    - s-1385
+    - s-1402
+    - s-1404
+    - s-1421
+    - s-1480
+    - s-1510
+    - s-1525
+    - s-1506
+    - s-1663
+    - s-1790
+    - s-1834
+    - s-1935
+    - s-1921
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: generator
+  proposed:
+  - reaction_to 19->1
+  owner_note: null
+  draft_label: NO_RELATION
+U128:
+  window: 2026-10-03-live
+  a:
+    development: 2026-10-03-live:D19
+    members:
+    - s-1245
+    - s-1385
+    - s-1402
+    - s-1404
+    - s-1421
+    - s-1480
+    - s-1510
+    - s-1525
+    - s-1506
+    - s-1663
+    - s-1790
+    - s-1834
+    - s-1935
+    - s-1921
+  b:
+    development: 2026-10-03-live:D46
+    members:
+    - s-1839
+    - s-1853
+    - s-1956
+    - s-1960
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: generator
+  proposed:
+  - reaction_to 46->19
+  owner_note: null
+  draft_label: NO_RELATION
+U129:
+  window: 2026-10-05-live
+  a:
+    development: 2026-10-05-live:D5
+    members:
+    - s-2196
+    - s-2246
+    - s-2275
+    - s-2533
+    - s-2857
+    - s-2315
+    - s-2297
+    - s-2557
+    - s-2376
+    - s-2420
+    - s-2548
+    - s-2547
+    - s-3421
+    - s-3397
+  b:
+    development: 2026-10-05-live:D27
+    members:
+    - s-2635
+    - s-2432
+    - s-2618
+    - s-2964
+    - s-3416
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U130:
+  window: 2026-10-08-live
+  a:
+    development: 2026-10-08-live:D12
+    members:
+    - s-6358
+    - s-6462
+    - s-6392
+    - s-6466
+    - s-6903
+    - s-7242
+    - s-7185
+    - s-7228
+    - s-7286
+    - s-7321
+    - s-7320
+    - s-7376
+  b:
+    development: 2026-10-08-live:D24
+    members:
+    - s-6492
+    - s-6645
+    - s-6769
+    - s-6787
+    - s-6841
+    - s-6818
+    - s-7162
+    - s-6935
+    - s-7381
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: random
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U131:
+  window: 2026-10-05-live
+  a:
+    development: 2026-10-05-live:D19
+    members:
+    - s-2579
+    - s-2568
+    - s-2567
+    - s-2601
+    - s-2563
+    - s-3187
+    - s-3467
+  b:
+    development: 2026-10-05-live:D22
+    members:
+    - s-2574
+    - s-2451
+    - s-2562
+  label: SAME_DEVELOPMENT_SUSPECTED
+  roles: null
+  scored: false
+  runtime_type: false
+  identity_flag: SAME_DEVELOPMENT_SUSPECTED
+  stratum: generator
+  proposed:
+  - reaction_to 22->19
+  owner_note: null
+  draft_label: NO_RELATION
+U132:
+  window: 2026-10-03-live
+  a:
+    development: 2026-10-03-live:D29
+    members:
+    - s-1441
+    - s-1534
+    - s-1602
+  b:
+    development: 2026-10-03-live:D36
+    members:
+    - s-1650
+    - s-1655
+    - s-1961
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U133:
+  window: 2026-10-03-live
+  a:
+    development: 2026-10-03-live:D18
+    members:
+    - s-1214
+    - s-1410
+  b:
+    development: 2026-10-03-live:D29
+    members:
+    - s-1441
+    - s-1534
+    - s-1602
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U134:
+  window: 2026-10-08-live
+  a:
+    development: 2026-10-08-live:D6
+    members:
+    - s-6402
+    - s-6739
+    - s-7151
+  b:
+    development: 2026-10-08-live:D24
+    members:
+    - s-6492
+    - s-6645
+    - s-6769
+    - s-6787
+    - s-6841
+    - s-6818
+    - s-7162
+    - s-6935
+    - s-7381
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: random
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U135:
+  window: 2026-10-05-live
+  a:
+    development: 2026-10-05-live:D29
+    members:
+    - s-2316
+    - s-2386
+    - s-2551
+  b:
+    development: 2026-10-05-live:D50
+    members:
+    - s-2929
+    - s-3071
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U136:
+  window: 2026-10-05-live
+  a:
+    development: 2026-10-05-live:D2
+    members:
+    - s-2467
+    - s-2609
+  b:
+    development: 2026-10-05-live:D26
+    members:
+    - s-2337
+    - s-2302
+    - s-2318
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: random
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U137:
+  window: 2026-10-08-live
+  a:
+    development: 2026-10-08-live:D36
+    members:
+    - s-6345
+    - s-7322
+  b:
+    development: 2026-10-08-live:D22
+    members:
+    - s-6362
+    - s-6493
+    - s-6535
+    - s-6666
+    - s-7157
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U138:
+  window: 2026-10-05-live
+  a:
+    development: 2026-10-05-live:D7
+    members:
+    - s-2194
+    - s-2220
+    - s-2260
+    - s-2310
+    - s-2303
+    - s-2558
+    - s-2380
+    - s-2853
+    - s-2966
+    - s-2983
+    - s-2986
+    - s-3207
+  b:
+    development: 2026-10-05-live:D55
+    members:
+    - s-3422
+    - s-3395
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U139:
+  window: 2026-10-03-live
+  a:
+    development: 2026-10-03-live:D11
+    members:
+    - s-1222
+    - s-1347
+  b:
+    development: 2026-10-03-live:D42
+    members:
+    - s-1769
+    - s-1775
+    - s-1900
+    - s-1952
+    - s-1927
+    - s-1933
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: generator
+  proposed:
+  - reaction_to 42->11
+  owner_note: null
+  draft_label: NO_RELATION
+U140:
+  window: 2026-10-03-live
+  a:
+    development: 2026-10-03-live:D47
+    members:
+    - s-1646
+    - s-1923
+  b:
+    development: 2026-10-03-live:D48
+    members:
+    - s-1708
+    - s-1707
+    - s-1954
+    - s-2007
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U141:
+  window: 2026-10-03-live
+  a:
+    development: 2026-10-03-live:D4
+    members:
+    - s-1173
+    - s-1221
+    - s-1337
+    - s-1364
+    - s-1379
+    - s-1389
+    - s-1413
+    - s-1513
+  b:
+    development: 2026-10-03-live:D50
+    members:
+    - s-1776
+    - s-1948
+    - s-1931
+    - s-1936
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U142:
+  window: 2026-10-03-live
+  a:
+    development: 2026-10-03-live:D32
+    members:
+    - s-1274
+    - s-1681
+  b:
+    development: 2026-10-03-live:D50
+    members:
+    - s-1776
+    - s-1948
+    - s-1931
+    - s-1936
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: random
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U143:
+  window: 2026-10-08-live
+  a:
+    development: 2026-10-08-live:D8
+    members:
+    - s-6401
+    - s-6389
+    - s-6644
+    - s-7001
+    - s-7146
+    - s-7209
+  b:
+    development: 2026-10-08-live:D16
+    members:
+    - s-6370
+    - s-6759
+    - s-6844
+    - s-6869
+    - s-6932
+  label: SAME_DEVELOPMENT_SUSPECTED
+  roles: null
+  scored: false
+  runtime_type: false
+  identity_flag: SAME_DEVELOPMENT_SUSPECTED
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U144:
+  window: 2026-10-08-live
+  a:
+    development: 2026-10-08-live:D6
+    members:
+    - s-6402
+    - s-6739
+    - s-7151
+  b:
+    development: 2026-10-08-live:D18
+    members:
+    - s-6396
+    - s-6347
+    - s-6356
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U145:
+  window: 2026-10-08-live
+  a:
+    development: 2026-10-08-live:D10
+    members:
+    - s-6379
+    - s-6334
+    - s-6638
+    - s-6665
+    - s-6761
+  b:
+    development: 2026-10-08-live:D30
+    members:
+    - s-6902
+    - s-7088
+    - s-7007
+    - s-6949
+    - s-7004
+    - s-7002
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: random
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U146:
+  window: 2026-10-05-live
+  a:
+    development: 2026-10-05-live:D3
+    members:
+    - s-2626
+    - s-2616
+    - s-2576
+    - s-2625
+    - s-2426
+    - s-2455
+    - s-2638
+    - s-2637
+    - s-2636
+    - s-2566
+    - s-2634
+    - s-2632
+    - s-2631
+    - s-2614
+    - s-2427
+    - s-2613
+    - s-2457
+    - s-2597
+    - s-2596
+    - s-2612
+    - s-2592
+    - s-2621
+    - s-2591
+    - s-2629
+    - s-2565
+    - s-2604
+    - s-2429
+    - s-2428
+    - s-2452
+    - s-2461
+    - s-2449
+    - s-2444
+    - s-2585
+    - s-2561
+    - s-2575
+    - s-2933
+    - s-2932
+    - s-2581
+    - s-2998
+    - s-2923
+    - s-3098
+    - s-3096
+    - s-3076
+    - s-3091
+    - s-3075
+    - s-3095
+    - s-3074
+    - s-3060
+    - s-3149
+    - s-3121
+    - s-3120
+    - s-3254
+    - s-3294
+    - s-3354
+    - s-3321
+    - s-3485
+  b:
+    development: 2026-10-05-live:D42
+    members:
+    - s-2552
+    - s-2421
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U147:
+  window: 2026-10-03-live
+  a:
+    development: 2026-10-03-live:D2
+    members:
+    - s-1123
+    - s-1143
+    - s-1153
+    - s-1175
+    - s-1172
+  b:
+    development: 2026-10-03-live:D23
+    members:
+    - s-1408
+    - s-1447
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: random
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U148:
+  window: 2026-10-05-live
+  a:
+    development: 2026-10-05-live:D2
+    members:
+    - s-2467
+    - s-2609
+  b:
+    development: 2026-10-05-live:D3
+    members:
+    - s-2626
+    - s-2616
+    - s-2576
+    - s-2625
+    - s-2426
+    - s-2455
+    - s-2638
+    - s-2637
+    - s-2636
+    - s-2566
+    - s-2634
+    - s-2632
+    - s-2631
+    - s-2614
+    - s-2427
+    - s-2613
+    - s-2457
+    - s-2597
+    - s-2596
+    - s-2612
+    - s-2592
+    - s-2621
+    - s-2591
+    - s-2629
+    - s-2565
+    - s-2604
+    - s-2429
+    - s-2428
+    - s-2452
+    - s-2461
+    - s-2449
+    - s-2444
+    - s-2585
+    - s-2561
+    - s-2575
+    - s-2933
+    - s-2932
+    - s-2581
+    - s-2998
+    - s-2923
+    - s-3098
+    - s-3096
+    - s-3076
+    - s-3091
+    - s-3075
+    - s-3095
+    - s-3074
+    - s-3060
+    - s-3149
+    - s-3121
+    - s-3120
+    - s-3254
+    - s-3294
+    - s-3354
+    - s-3321
+    - s-3485
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U149:
+  window: 2026-10-05-live
+  a:
+    development: 2026-10-05-live:D29
+    members:
+    - s-2316
+    - s-2386
+    - s-2551
+  b:
+    development: 2026-10-05-live:D40
+    members:
+    - s-2299
+    - s-3088
+    - s-3206
+    - s-3290
+    - s-3396
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U150:
+  window: 2026-10-08-live
+  a:
+    development: 2026-10-08-live:D34
+    members:
+    - s-6455
+    - s-6399
+    - s-7008
+    - s-7293
+    - s-7298
+  b:
+    development: 2026-10-08-live:D43
+    members:
+    - s-7152
+    - s-7210
+    - s-7264
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U151:
+  window: 2026-10-05-live
+  a:
+    development: 2026-10-05-live:D18
+    members:
+    - s-2468
+    - s-2630
+    - s-2590
+    - s-2589
+    - s-2588
+    - s-2587
+    - s-2456
+    - s-2995
+    - s-3168
+    - s-3454
+    - s-3452
+    - s-3486
+  b:
+    development: 2026-10-05-live:D30
+    members:
+    - s-2349
+    - s-2357
+    - s-2397
+    - s-3079
+    - s-3251
+    - s-3253
+  label: SAME_DEVELOPMENT_SUSPECTED
+  roles: null
+  scored: false
+  runtime_type: false
+  identity_flag: SAME_DEVELOPMENT_SUSPECTED
+  stratum: generator
+  proposed:
+  - reaction_to 30->18
+  owner_note: null
+  draft_label: NO_RELATION
+U152:
+  window: 2026-10-05-live
+  a:
+    development: 2026-10-05-live:D17
+    members:
+    - s-2277
+    - s-2283
+    - s-2314
+    - s-2354
+    - s-2553
+    - s-2398
+    - s-2412
+    - s-3078
+    - s-3275
+    - s-3440
+  b:
+    development: 2026-10-05-live:D32
+    members:
+    - s-2371
+    - s-2393
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U153:
+  window: 2026-10-05-live
+  a:
+    development: 2026-10-05-live:D3
+    members:
+    - s-2626
+    - s-2616
+    - s-2576
+    - s-2625
+    - s-2426
+    - s-2455
+    - s-2638
+    - s-2637
+    - s-2636
+    - s-2566
+    - s-2634
+    - s-2632
+    - s-2631
+    - s-2614
+    - s-2427
+    - s-2613
+    - s-2457
+    - s-2597
+    - s-2596
+    - s-2612
+    - s-2592
+    - s-2621
+    - s-2591
+    - s-2629
+    - s-2565
+    - s-2604
+    - s-2429
+    - s-2428
+    - s-2452
+    - s-2461
+    - s-2449
+    - s-2444
+    - s-2585
+    - s-2561
+    - s-2575
+    - s-2933
+    - s-2932
+    - s-2581
+    - s-2998
+    - s-2923
+    - s-3098
+    - s-3096
+    - s-3076
+    - s-3091
+    - s-3075
+    - s-3095
+    - s-3074
+    - s-3060
+    - s-3149
+    - s-3121
+    - s-3120
+    - s-3254
+    - s-3294
+    - s-3354
+    - s-3321
+    - s-3485
+  b:
+    development: 2026-10-05-live:D49
+    members:
+    - s-2542
+    - s-3068
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U154:
+  window: 2026-10-05-live
+  a:
+    development: 2026-10-05-live:D7
+    members:
+    - s-2194
+    - s-2220
+    - s-2260
+    - s-2310
+    - s-2303
+    - s-2558
+    - s-2380
+    - s-2853
+    - s-2966
+    - s-2983
+    - s-2986
+    - s-3207
+  b:
+    development: 2026-10-05-live:D11
+    members:
+    - s-2241
+    - s-2269
+    - s-2301
+    - s-2652
+    - s-2530
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION
+U155:
+  window: 2026-10-03-live
+  a:
+    development: 2026-10-03-live:D1
+    members:
+    - s-1118
+    - s-1198
+    - s-1215
+    - s-1262
+    - s-1268
+  b:
+    development: 2026-10-03-live:D11
+    members:
+    - s-1222
+    - s-1347
+  label: NO_RELATION
+  roles: null
+  scored: true
+  runtime_type: false
+  identity_flag: null
+  stratum: probe
+  proposed: []
+  owner_note: null
+  draft_label: NO_RELATION

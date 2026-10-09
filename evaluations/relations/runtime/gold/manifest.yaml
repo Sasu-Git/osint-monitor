@@ -1,0 +1,60 @@
+frozen_at: '2026-10-09T12:50:03+00:00'
+state: 'FROZEN: runtime-eligible relation benchmark (development); before Session 2 acceptance logic'
+design: runtime-benchmark-design.md (with amendment 1)
+cases: 155
+labels:
+  SAME_DEVELOPMENT_SUSPECTED: 7
+  NO_RELATION: 147
+  caused_by: 1
+by_stratum:
+  generator:
+    SAME_DEVELOPMENT_SUSPECTED: 5
+    NO_RELATION: 29
+    caused_by: 1
+  probe:
+    NO_RELATION: 88
+    SAME_DEVELOPMENT_SUSPECTED: 2
+  random:
+    NO_RELATION: 30
+runtime_type_positives: 0
+populations:
+  2026-10-03-live:
+    developments: 52
+    pairs: 1326
+    generator: 19
+    probe_population: 247
+    probe_drawn: 30
+    hard_negative_population: 0
+    hard_negative_drawn: 0
+    random_population: 1277
+    random_drawn: 10
+  2026-10-05-live:
+    developments: 55
+    pairs: 1485
+    generator: 16
+    probe_population: 332
+    probe_drawn: 30
+    hard_negative_population: 0
+    hard_negative_drawn: 0
+    random_population: 1439
+    random_drawn: 10
+  2026-10-08-live:
+    developments: 48
+    pairs: 1128
+    generator: 0
+    probe_population: 251
+    probe_drawn: 30
+    hard_negative_population: 0
+    hard_negative_drawn: 0
+    random_population: 1098
+    random_drawn: 10
+seed: 20261009
+generator: relation-candidates-v1
+sha256:
+  runtime/gold/runtime-gold.yaml: 1f7f6f3597bc19f2a651bb8c875fec22185db1d7db1fcc83ea2bcc47f2fcd070
+  runtime/gold/owner-verdicts.snapshot.yaml: e46f792358bd79f7ff5100a50f308e6ded2fe5f1ad7f1f4df61f56dfd55827b3
+  runtime/review/cases.json: ef01e39bb90c5ee4f765e436e678342682519162f7d70b0f52f8bfba9d7358c0
+  runtime/review/candidate-rules.json: 812745c11c5c9e166339d48476476e97c665a325f0a6119c6234358d8ea30627
+  runtime/review/draft-labels.json: ed16f20c620cafeaab64a62293dc4ecdd610fa080c2ad174df673e9f4f8fb793
+  runtime/manifest.yaml: 4950a9e68d0911e450e61dca7bb5ffd2bcdb70520960a18321ce6796f8489964
+  taxonomy.md: 46687b2d3f79b9370892d80d303502be6c74a00095f00740abca444008863818
