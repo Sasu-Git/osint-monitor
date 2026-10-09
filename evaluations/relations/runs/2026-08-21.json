@@ -1,0 +1,3019 @@
+{
+ "developments": {
+  "1": {
+   "corroboration": "CONFIRMED",
+   "members": {
+    "b-7d87768d2f82": 1,
+    "b-85e1f8c5197d": 1,
+    "b-8a8e0d395f60": 1
+   },
+   "principals": [],
+   "situation": null,
+   "sources": [
+    "Al Jazeera",
+    "BBC World",
+    "South China Morning Post"
+   ],
+   "summary": "Hong Kong Tiananmen vigil organiser, former leaders guilty of inciting subversion"
+  },
+  "2": {
+   "corroboration": "CONFIRMED",
+   "members": {
+    "b-25760921e54e": 2,
+    "b-312853eceb17": 2,
+    "b-53dc89e53904": 2
+   },
+   "principals": [],
+   "situation": null,
+   "sources": [
+    "Al Jazeera",
+    "BBC World",
+    "South China Morning Post"
+   ],
+   "summary": "Several people injured in sword attack at school in Sweden"
+  },
+  "3": {
+   "corroboration": "PROBABLE",
+   "members": {
+    "b-2e0da6b7e7eb": 3,
+    "b-422186e87411": 3,
+    "b-8826249c972c": 3
+   },
+   "principals": [],
+   "situation": null,
+   "sources": [
+    "Al Jazeera",
+    "BBC World"
+   ],
+   "summary": "Ebola vaccine trial to start in DR Congo as warning issued over speed of infections"
+  },
+  "4": {
+   "corroboration": "PROBABLE",
+   "members": {
+    "b-320f20d36f00": 4,
+    "b-ed25155d038d": 4
+   },
+   "principals": [
+    "Canada",
+    "Carney",
+    "Donald Trump",
+    "Mark Carney",
+    "Trump"
+   ],
+   "situation": null,
+   "sources": [
+    "BBC World",
+    "South China Morning Post"
+   ],
+   "summary": "Canadian premier says ‘erratic’ Trump ‘not to be trusted’ amid US trade feud"
+  },
+  "5": {
+   "corroboration": "PROBABLE",
+   "members": {
+    "b-52e7176bac0a": 4,
+    "b-9d435faf259d": 4,
+    "b-e65cd1bb15f4": 4
+   },
+   "principals": [
+    "Israel"
+   ],
+   "situation": null,
+   "sources": [
+    "Al Jazeera",
+    "BBC World"
+   ],
+   "summary": "Israel re-establishes closed West Bank settlement, defying growing international protests"
+  },
+  "6": {
+   "corroboration": "PROBABLE",
+   "members": {
+    "b-38f9f084379c": 4,
+    "b-e5e62052515e": 4
+   },
+   "principals": [],
+   "situation": null,
+   "sources": [
+    "Al Jazeera",
+    "BBC World"
+   ],
+   "summary": "Usain Bolt’s 100m record broken at World Humanoid Robot Games"
+  },
+  "7": {
+   "corroboration": "PROBABLE",
+   "members": {
+    "b-34d06bf06e8c": 4,
+    "b-8b0980fba97b": 4
+   },
+   "principals": [
+    "Israel",
+    "Syria"
+   ],
+   "situation": null,
+   "sources": [
+    "Al Jazeera",
+    "BBC World"
+   ],
+   "summary": "Israeli drone strike on ‘civilian vehicle’ injures several in Syria"
+  }
+ },
+ "items": {
+  "b-03faa7cefdb6": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "Transboundary haze has again disrupted daily life on Malaysian Borneo, forcing nearly 600 schools in Sarawak to shut on Friday as air pollution in parts of the state reached “very unhealthy” levels.\nThe closures affecting almost 200,000 pupils were the latest disruptions caused by Southeast Asia’s persistent haze problem, which flares during dry spells when forest and peatland fires – often linked",
+   "lang": "en",
+   "places": [
+    "Malaysia",
+    "Malaysian Borneo",
+    "Sarawak",
+    "Southeast Asia"
+   ],
+   "published_at": "2026-08-21T09:26:40",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "Malaysia’s Sarawak shuts almost 600 schools as haze hits ‘very unhealthy’ level"
+  },
+  "b-056b5053b0a8": {
+   "developments": [],
+   "entities": [
+    "Guetingers"
+   ],
+   "excerpt": "When Germany was divided, the Guetingers were among the 70 million people split between two opposing nations.",
+   "lang": "en",
+   "places": [
+    "Berlin Wall",
+    "Germany"
+   ],
+   "published_at": "2026-08-22T12:31:00",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "The Berlin Wall separated his family. Its legacy still endures"
+  },
+  "b-0fedd85bc925": {
+   "developments": [],
+   "entities": [
+    "Opatra London",
+    "Sayles Retail",
+    "Sheung Wan"
+   ],
+   "excerpt": "The British headquarters and Hong Kong distributor of beauty product company Opatra London have suspended local operations after allegations of aggressive sales tactics triggered the arrest of local senior staff and a raid on a corporate secretarial office in Sheung Wan.\nIn a statement issued on Friday, Opatra London continued to distance itself from the local distributor, which it said owned and ",
+   "lang": "en",
+   "places": [
+    "Hong Kong",
+    "UK"
+   ],
+   "published_at": "2026-08-21T09:43:07",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "Opatra London and Hong Kong distributor suspend local operations after arrests"
+  },
+  "b-12647c280dd9": {
+   "developments": [],
+   "entities": [
+    "Opatra"
+   ],
+   "excerpt": "More consumers in Hong Kong have come forward to allege aggressive sales tactics across the beauty sector, including credit card abuse, unwanted physical contact and pressure to buy costly products, on the back of a crackdown on the local operations of a UK-based brand.\nLegal experts warned that such practices could breach the Trade Descriptions Ordinance, which prohibits harassment, coercion and ",
+   "lang": "en",
+   "places": [
+    "Hong Kong",
+    "UK"
+   ],
+   "published_at": "2026-08-21T00:30:08",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "More Hong Kong consumers allege coercive beauty sales in wake of Opatra crackdown"
+  },
+  "b-1288b9e095f2": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "The man had taken his two boys on the trip but is said to have left one behind when he got tired.",
+   "lang": "en",
+   "places": [
+    "Mount Fuji"
+   ],
+   "published_at": "2026-08-22T14:35:11",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Father leaves 7-year-old son alone on Mount Fuji to continue hike"
+  },
+  "b-13457b07b80d": {
+   "developments": [],
+   "entities": [
+    "Flushing Meadows",
+    "Jannik Sinner"
+   ],
+   "excerpt": "Five-time major champion Sinner, who won the US Open in 2024, will not be competing at Flushing Meadows this year.",
+   "lang": "en",
+   "places": [],
+   "published_at": "2026-08-21T15:57:54",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Jannik Sinner to miss US Open tennis major due to knee injury"
+  },
+  "b-144df3b935e7": {
+   "developments": [],
+   "entities": [
+    "Esmaeil Baghaei",
+    "Foreign Ministry",
+    "Trump"
+   ],
+   "excerpt": "Foreign Ministry spokesman Esmaeil Baghaei slams Trump&#039;s latest threat as a return to &#039;full-scale classic colonialism&#039;.",
+   "lang": "en",
+   "places": [
+    "Iran",
+    "US"
+   ],
+   "published_at": "2026-08-22T09:14:09",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Iran says new US sanctions violate sovereignty of other states"
+  },
+  "b-178b15323e34": {
+   "developments": [],
+   "entities": [
+    "Lawrence Wong",
+    "YouGov",
+    "Zahir Latif"
+   ],
+   "excerpt": "As Singapore Prime Minister Lawrence Wong prepares to unveil plans to ease the strain on families during his National Day Rally speech on Sunday, a new survey points to a difficult question behind the city state’s record-low fertility rate: what if a substantial share of residents no longer want children at all?\nNearly one in four Singaporeans aged 18 to 44 surveyed by YouGov in July said they had",
+   "lang": "en",
+   "places": [
+    "Singapore"
+   ],
+   "published_at": "2026-08-21T03:41:09",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "‘No bandwidth left for the family’: why many Singaporeans want to be child-free"
+  },
+  "b-182b8f969524": {
+   "developments": [],
+   "entities": [
+    "HSBC",
+    "MTR Corp",
+    "MTR Corporation"
+   ],
+   "excerpt": "A senior manager at Hong Kong rail giant the MTR Corporation was allegedly conned out of HK$74 million (US$9.4 million) in a two-year-long scam by a fraudster posing as an employee of HSBC UK who lured the victim into investing in green bonds.\nPolice said on Friday that a 59-year-old man had reported that he had been scammed. The case has been classified as obtaining property by deception, and no ",
+   "lang": "en",
+   "places": [
+    "Hong Kong",
+    "UK"
+   ],
+   "published_at": "2026-08-21T07:40:07",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "MTR Corp senior manager conned out of HK$74m by fraudster posing as HSBC UK staff"
+  },
+  "b-1a0f6855a3bf": {
+   "developments": [],
+   "entities": [
+    "AI",
+    "China Mobile",
+    "China Telecom",
+    "Unicom"
+   ],
+   "excerpt": "China’s three state-owned telecoms giants have made billable artificial intelligence tokens a key focus of their growth strategies, as AI adoption accelerates across the country and computing demand soars.\nChina Mobile, China Telecom and China Unicom all pointed to AI and computing operations as key growth drivers in their first-half financial disclosures released this month, presenting usage of t",
+   "lang": "en",
+   "places": [
+    "China"
+   ],
+   "published_at": "2026-08-21T13:30:10",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "China’s telecoms giants bet on ‘token factories’ as AI drives revenue growth"
+  },
+  "b-1e0d6412a20d": {
+   "developments": [],
+   "entities": [
+    "Fury",
+    "Joshua"
+   ],
+   "excerpt": "The all-British, much anticipated boxing showdown between Fury and Joshua was scheduled for November.",
+   "lang": "en",
+   "places": [
+    "UK"
+   ],
+   "published_at": "2026-08-21T14:38:45",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Fury says fight with Joshua looks unlikely with venue yet to be agreed"
+  },
+  "b-1f9af4732377": {
+   "developments": [],
+   "entities": [
+    "ByteDance",
+    "TikTok"
+   ],
+   "excerpt": "The deal stems from a 2024 lawsuit alleging TikTok and its parent company ByteDance collected \"vast amounts of data\" on millions of users under the age of 13.",
+   "lang": "en",
+   "places": [
+    "US"
+   ],
+   "published_at": "2026-08-21T22:36:12",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "TikTok to pay $400m to US in one of largest child privacy settlements"
+  },
+  "b-215cdc4999f5": {
+   "developments": [],
+   "entities": [
+    "Imran Khan",
+    "Khan"
+   ],
+   "excerpt": "The sister of Pakistan’s former prime minister Imran Khan says he told her he was being tortured in jail.",
+   "lang": "en",
+   "places": [
+    "Pakistan"
+   ],
+   "published_at": "2026-08-21T12:00:32",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Sister of ex-Pakistan PM Khan says he is being tortured in jail"
+  },
+  "b-25760921e54e": {
+   "developments": [
+    2
+   ],
+   "entities": [],
+   "excerpt": "One person has been taken into custody after the attack at a high school in Fagersta, local authorities said.",
+   "lang": "en",
+   "places": [
+    "Fagersta",
+    "Sweden"
+   ],
+   "published_at": "2026-08-21T13:48:09",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Several people injured in sword attack at school in Sweden"
+  },
+  "b-2601ecbd74d1": {
+   "developments": [],
+   "entities": [
+    "Carney",
+    "Trump",
+    "White House"
+   ],
+   "excerpt": "The Canadian prime minister will have to sell his gamble that walking away from talks with the White House will be worth the consequences.",
+   "lang": "en",
+   "places": [
+    "Canada"
+   ],
+   "published_at": "2026-08-22T16:20:51",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Carney faces crucial test after walking away from Trump's deal"
+  },
+  "b-269b29c6351f": {
+   "developments": [],
+   "entities": [
+    "Carolus Winfridus",
+    "Flores",
+    "Sikka Regency"
+   ],
+   "excerpt": "Carolus Winfridus was asleep when an earthquake struck off Indonesia’s island of Flores, as he was awoken by intense rumbling and saw his wardrobe doors flying open.\nHe and his family quickly scrambled for a way out of their house in the town of Maumere, Sikka Regency, one of nine regencies hit by Saturday’s devastating 7.7-magnitude quake that killed almost 80 people and displaced nearly 100,000.",
+   "lang": "en",
+   "places": [
+    "Indonesia",
+    "Maumere"
+   ],
+   "published_at": "2026-08-21T08:03:05",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "Indonesian quake survivors recall trauma of all-day intense aftershocks, self-rescue"
+  },
+  "b-26fe409ebda8": {
+   "developments": [],
+   "entities": [
+    "Charles",
+    "Harry",
+    "Meghan",
+    "Prince Harry",
+    "Prince William",
+    "Princess Diana",
+    "William"
+   ],
+   "excerpt": "William and Harry were united in grief as children by the tragic death of their mother, Princess Diana, but their relationship as adults has been ripped apart by anger and hurt.\nThe pair – dubbed “the heir and the spare” from an early age – have failed to put aside their differences, despite their father King Charles’ cancer diagnosis.\nAnd as Prince Harry, the Duke of Sussex, prepares to return to",
+   "lang": "en",
+   "places": [
+    "Sussex",
+    "UK"
+   ],
+   "published_at": "2026-08-21T06:53:49",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "As Harry plans UK return, can he patch up royal rift with Prince William?"
+  },
+  "b-2972883a950e": {
+   "developments": [],
+   "entities": [
+    "Premier League",
+    "Utd"
+   ],
+   "excerpt": "Manchester United lose 2-0 at newly promoted Hull City to open their Premier League campaign.",
+   "lang": "en",
+   "places": [
+    "Hull City",
+    "Manchester United"
+   ],
+   "published_at": "2026-08-22T13:54:02",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Man Utd humiliated at Hull to open Premier League account"
+  },
+  "b-2dcaac6a7238": {
+   "developments": [],
+   "entities": [
+    "Abdul Hadi Awang",
+    "Anwar Ibrahim",
+    "DAP",
+    "Democratic Action Party",
+    "Hadi",
+    "Islamist",
+    "Malaysian Muslims",
+    "Muslims",
+    "Pan-Malaysian Islamic Party"
+   ],
+   "excerpt": "Malaysia’s Islamist opposition leader Abdul Hadi Awang has sparked outrage and ridicule with unproven claims linking religion to dishonesty, suggesting that Muslims are less corrupt than non-Muslims.\nHadi’s remarks, which drew demands for evidence, came amid a series of attacks by his Pan-Malaysian Islamic Party (PAS) on the Democratic Action Party (DAP), a predominantly ethnic Chinese party in Pr",
+   "lang": "en",
+   "places": [
+    "China",
+    "Malaysia"
+   ],
+   "published_at": "2026-08-21T04:54:02",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "Are Malaysian Muslims less corrupt? PAS leader skewered over divisive politics"
+  },
+  "b-2e0da6b7e7eb": {
+   "developments": [
+    3
+   ],
+   "entities": [],
+   "excerpt": "About half of the 2,500 recorded deaths from Ebola happened in the last 20 days, the WHO says.",
+   "lang": "en",
+   "places": [
+    "DR Congo"
+   ],
+   "published_at": "2026-08-21T13:44:43",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Ebola vaccine trial to start in DR Congo as warning issued over speed of infections"
+  },
+  "b-312853eceb17": {
+   "developments": [
+    2
+   ],
+   "entities": [
+    "Brinell"
+   ],
+   "excerpt": "A man armed ⁠with a sword injured several people at a Swedish high school on Friday and one person was later detained, local authorities said.\nThe incident occurred on Friday afternoon at the ‌Brinell high school, which has some 450 students aged 16 to 20, in the town of Fagersta in central Sweden.\n“A call was received regarding a case of ongoing deadly violence at a school in Fagersta,” police sa",
+   "lang": "en",
+   "places": [
+    "Fagersta",
+    "Sweden"
+   ],
+   "published_at": "2026-08-21T14:49:33",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "Man armed with sword injures several at Swedish high school"
+  },
+  "b-320f20d36f00": {
+   "developments": [
+    4
+   ],
+   "entities": [
+    "Donald Trump",
+    "Mark Carney",
+    "Wab Kinew"
+   ],
+   "excerpt": "The premier of a Canadian province launched a blistering attack on US President Donald Trump on Thursday, calling him a “bad person” and “not to be trusted” and urging Canada to keep fighting rather than rush to make concessions in trade talks with Washington.\nManitoba Premier Wab Kinew said Canada has leverage in the talks even as his province weighs restoring US alcohol sales at Prime Minister M",
+   "lang": "en",
+   "places": [
+    "Canada",
+    "Manitoba",
+    "US",
+    "Washington"
+   ],
+   "published_at": "2026-08-21T03:12:49",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "Canadian premier says ‘erratic’ Trump ‘not to be trusted’ amid US trade feud"
+  },
+  "b-33c87e811c26": {
+   "developments": [],
+   "entities": [
+    "US Geological Survey"
+   ],
+   "excerpt": "A magnitude 6.7 earthquake struck the Ayacucho region on Thursday, the US Geological Survey says.",
+   "lang": "en",
+   "places": [
+    "Ayacucho",
+    "Peru"
+   ],
+   "published_at": "2026-08-21T11:14:38",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Peru earthquake damages buildings and causes power cuts"
+  },
+  "b-342d8d2a178d": {
+   "developments": [],
+   "entities": [
+    "GEOINT",
+    "NSA",
+    "Tim Kosiba"
+   ],
+   "excerpt": "NSA Deputy Director Tim Kosiba said Beijing is playing &#8220;spoiler&#8221; the world over, alleging, for example, that &#8220;Chinese companies provided GEOINT to the Iranians to help hit our bases and our allies.&#8221;",
+   "lang": "en",
+   "places": [
+    "Beijing",
+    "China",
+    "Iran"
+   ],
+   "published_at": "2026-08-21T12:58:20",
+   "roundup": false,
+   "source": "Breaking Defense",
+   "stored": true,
+   "title": "‘Hot competition’: NSA deputy sounds alarm on China threat, AI race"
+  },
+  "b-34d06bf06e8c": {
+   "developments": [
+    7
+   ],
+   "entities": [],
+   "excerpt": "The latest incident comes days after reports emerged Israel had struck a military airbase close to the Turkish border.",
+   "lang": "en",
+   "places": [
+    "Damascus",
+    "Israel",
+    "Syria",
+    "Turkey"
+   ],
+   "published_at": "2026-08-22T21:42:42",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Syria says Israeli strike near Damascus violation of international law"
+  },
+  "b-3516b3727700": {
+   "developments": [],
+   "entities": [
+    "Min Zin"
+   ],
+   "excerpt": "Min Zin was arrested on June 3 after the Chinese government invited him to attend a conference.",
+   "lang": "en",
+   "places": [
+    "China",
+    "Myanmar",
+    "US"
+   ],
+   "published_at": "2026-08-21T12:48:17",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "China rejects US claim that Myanmar analyst wrongfully detained"
+  },
+  "b-362cca1ce350": {
+   "developments": [],
+   "entities": [
+    "Gwangbokhoe",
+    "Korean",
+    "Ministry of Patriots",
+    "Sin Kyu",
+    "Veterans Affairs"
+   ],
+   "excerpt": "China-based Korean independence leader Sin Kyu-sik was the real mastermind behind his country’s provisional government in exile, according to new research that promotes him to a main player in the resistance against Japan’s occupation.\nThe research was presented at a symposium in Seoul co-hosted by Gwangbokhoe, the official association for those who fought against Japan’s occupation.\nThe academic ",
+   "lang": "en",
+   "places": [
+    "China",
+    "Japan",
+    "Seoul",
+    "South Korea"
+   ],
+   "published_at": "2026-08-21T08:00:09",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "Research boosts South Korean-Chinese links in WWII resistance against Japan"
+  },
+  "b-36b77b6ef894": {
+   "developments": [],
+   "entities": [
+    "Sikh"
+   ],
+   "excerpt": "One suspect is in custody, and police have said they are still investigating if the attack was motivated by hate.",
+   "lang": "en",
+   "places": [
+    "Canada"
+   ],
+   "published_at": "2026-08-21T22:45:01",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Two injured in stabbing attack at Canada Sikh temple"
+  },
+  "b-376b7919c8dc": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "Left-armers star in wicket bonanza as Australia take 101-run lead over Bangladesh on first day of the second Test.",
+   "lang": "en",
+   "places": [
+    "Australia",
+    "Bangladesh"
+   ],
+   "published_at": "2026-08-22T08:53:17",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Australia bite back as 18 wickets fall on day one of second Bangladesh Test"
+  },
+  "b-377124f8dfba": {
+   "developments": [],
+   "entities": [
+    "Donald Trump"
+   ],
+   "excerpt": "President Donald Trump announced on Friday that the United States would temporarily allow a greater volume of foreign beef imports, in his latest bid to lower costs for American consumers as midterm elections approach.\nThe US cattle herd has shrunk to its lowest level since the 1950s – in part due to drought and international competition – with the diminishing herd size pushing cattle prices highe",
+   "lang": "en",
+   "places": [
+    "US"
+   ],
+   "published_at": "2026-08-21T12:05:34",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "Trump eases tariffs on ground beef imports for 90 days"
+  },
+  "b-38eba7dee8c5": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "There has been a significant expansion of building and road construction on Palestinian land occupied by Israel in recent years.",
+   "lang": "en",
+   "places": [
+    "Israel",
+    "Palestine",
+    "West Bank"
+   ],
+   "published_at": "2026-08-21T19:31:47",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "How Israel is expanding settlements in drive to reshape West Bank"
+  },
+  "b-38f9f084379c": {
+   "developments": [
+    6
+   ],
+   "entities": [
+    "Bolt",
+    "Usain Bolt"
+   ],
+   "excerpt": "Chinese robot reaches peak ​speed of 14.5 metres per second to beat Bolt&#039;s 100m record in Beijing, says state media.",
+   "lang": "en",
+   "places": [
+    "Beijing",
+    "China",
+    "World Humanoid Robot Games"
+   ],
+   "published_at": "2026-08-22T11:30:51",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Usain Bolt’s 100m record broken at World Humanoid Robot Games"
+  },
+  "b-3a527f407cc4": {
+   "developments": [],
+   "entities": [
+    "AI"
+   ],
+   "excerpt": "The government has announced investments of about 2.3 billion reais ($444.2m) to bolster its AI ecosystem.",
+   "lang": "en",
+   "places": [
+    "Brazil",
+    "China",
+    "US"
+   ],
+   "published_at": "2026-08-21T01:38:37",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Brazil launches AI supercomputer push while balancing US and Chinese tech"
+  },
+  "b-3b180c19ae97": {
+   "developments": [],
+   "entities": [
+    "Semitism",
+    "Star of David"
+   ],
+   "excerpt": "Incidents of anti-Semitism have been on the rise in Europe since Israel&#039;s genocidal war on Gaza began.",
+   "lang": "en",
+   "places": [
+    "Europe",
+    "Gaza",
+    "Israel",
+    "Palestine",
+    "Sweden"
+   ],
+   "published_at": "2026-08-21T12:01:36",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "How a Swedish Palestinian minister raised controversy with Star of David"
+  },
+  "b-3ee706b860b3": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "Israel&#039;s genocidal war on Gaza has seen thousands of bodies buried in makeshift sites.",
+   "lang": "en",
+   "places": [
+    "Gaza",
+    "Israel"
+   ],
+   "published_at": "2026-08-22T13:10:45",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "As families retrieve bodies, Gaza is running out of places to bury the dead"
+  },
+  "b-422186e87411": {
+   "developments": [
+    3
+   ],
+   "entities": [
+    "DRC"
+   ],
+   "excerpt": "Health authorities are warning that ‘approximately one person has been dying from Ebola every thirty minutes’.",
+   "lang": "en",
+   "places": [],
+   "published_at": "2026-08-22T11:15:39",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Ebola continues to spread in the DRC as 16,000 vaccine doses arrive"
+  },
+  "b-42e4a4091122": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "Footage circulating on social media shows dozens of migrants arriving by boat on Spain’s southeastern coast.",
+   "lang": "en",
+   "places": [
+    "Spain"
+   ],
+   "published_at": "2026-08-21T04:47:56",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Dozens of migrants land on Spanish coast surprising beachgoers"
+  },
+  "b-430141096ea1": {
+   "developments": [],
+   "entities": [
+    "Aeon",
+    "Asian",
+    "MaxValu"
+   ],
+   "excerpt": "The decision by Japanese retailer Aeon to sell its MaxValu minimart chain in Thailand is the latest example of the tight grip domestic conglomerates hold over Thai consumers, retail experts say.\nYet the move also hints at the shifting economic fortunes of neighbouring Vietnam, where major Asian retailers including Aeon are competing aggressively for market share among a rapidly expanding middle cl",
+   "lang": "en",
+   "places": [
+    "Japan",
+    "Thailand",
+    "Vietnam"
+   ],
+   "published_at": "2026-08-21T07:05:09",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "Japan’s Aeon exits Thai retail to chase Vietnam’s booming middle class"
+  },
+  "b-449d982b4681": {
+   "developments": [],
+   "entities": [
+    "Chopra Jonas",
+    "Cycle of Love"
+   ],
+   "excerpt": "Priyanka Chopra Jonas has executive produced The Cycle of Love, based on an Indian artist who cycled from India to Europe to reunite with his wife.",
+   "lang": "en",
+   "places": [
+    "Europe",
+    "India"
+   ],
+   "published_at": "2026-08-21T13:32:28",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Priyanka Chopra Jonas on making a film about love and caste inequality"
+  },
+  "b-461935b33d9b": {
+   "developments": [],
+   "entities": [
+    "WBF",
+    "Zolani Tete"
+   ],
+   "excerpt": "Zolani Tete, who held WBF flyweight and WBO bantamweight world titles, killed at his home in Eastern Cape, South Africa.",
+   "lang": "en",
+   "places": [
+    "Eastern Cape",
+    "South Africa"
+   ],
+   "published_at": "2026-08-22T09:51:50",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Former world champion boxer Zolani Tete shot and killed in South Africa"
+  },
+  "b-46b3869ce893": {
+   "developments": [],
+   "entities": [
+    "Customs and Excise Department"
+   ],
+   "excerpt": "Smuggled cockroaches, frozen domestic rats and mealworms were among a haul of pests seized at a border checkpoint in Hong Kong, with a local driver arrested, authorities said on Friday.\nThe Customs and Excise Department said officers intercepted the 118kg (260lbs) shipment – which also contained moth larvae and fruit flies mixed with declared goods – inside a goods vehicle at the Man Kam To contro",
+   "lang": "en",
+   "places": [
+    "Hong Kong",
+    "Man Kam"
+   ],
+   "published_at": "2026-08-21T12:32:42",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "Cockroaches, frozen rats among 118kg of pests, pet food seized in Hong Kong"
+  },
+  "b-47221c4faf92": {
+   "developments": [],
+   "entities": [
+    "Ramkishen Rajan",
+    "Yong Pung"
+   ],
+   "excerpt": "Singapore’s latest package of tax breaks and visa incentives for fund managers could enhance its appeal as a leading asset management hub, as competition with Hong Kong intensifies for global capital and high-value financial talent, analysts have said.\nWhile the measures would help maintain Singapore’s competitiveness, they are unlikely to create a significant or lasting advantage over Hong Kong, ",
+   "lang": "en",
+   "places": [
+    "Hong Kong",
+    "Lee Kuan Yew School",
+    "Singapore"
+   ],
+   "published_at": "2026-08-21T12:08:50",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "Singapore’s carrots for fund managers set to sharpen competition with Hong Kong"
+  },
+  "b-49ab0ae84bc1": {
+   "developments": [],
+   "entities": [
+    "Ferdinand Marcos Jnr",
+    "Marcos",
+    "Philippine"
+   ],
+   "excerpt": "The latest floods to hit Metro Manila and parts of the Philippines’ main island of Luzon have turned a familiar seasonal disaster into a renewed test of political accountability for President Ferdinand Marcos Jnr, as anger over allegedly corrupt flood-control projects returns to the centre of public debate.\nAnalysts said the deluge had sharpened scrutiny of the slow-moving investigation into alleg",
+   "lang": "en",
+   "places": [
+    "Luzon",
+    "Metro Manila"
+   ],
+   "published_at": "2026-08-21T04:53:58",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "Philippine flood-control scandal resurfaces after latest monsoon deluge"
+  },
+  "b-4ac7dead09e8": {
+   "developments": [],
+   "entities": [
+    "AI",
+    "Army",
+    "Dedicated"
+   ],
+   "excerpt": "Dedicated funding is key, according to the Army&#8217;s principal cyber advisor, because the service&#8217;s cyber command cannot fund AI work strictly from their operational budget.",
+   "lang": "en",
+   "places": [],
+   "published_at": "2026-08-21T15:10:10",
+   "roundup": false,
+   "source": "Breaking Defense",
+   "stored": true,
+   "title": "Army cyber defenses need ‘dedicated funding’ for AI, top official says"
+  },
+  "b-4ba14a32be42": {
+   "developments": [],
+   "entities": [
+    "Taliban",
+    "United Nations"
+   ],
+   "excerpt": "The two men, detained in the western city of Herat on August 9, were released on Thursday morning.",
+   "lang": "en",
+   "places": [
+    "Afghanistan",
+    "Herat"
+   ],
+   "published_at": "2026-08-21T00:44:46",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Taliban release two detained UN staff members in Afghanistan"
+  },
+  "b-4bdce9942c01": {
+   "developments": [],
+   "entities": [
+    "European Union",
+    "Midway"
+   ],
+   "excerpt": "Midway through a three-month negotiating period with Beijing, new data show the trade balances of 24 European Union member states are still moving in what Brussels considers to be the wrong direction.\nChina extended its trade surplus over all but three EU members in July compared to a year earlier, calculations based on new Chinese customs figures showed. In some instances, the monthly swing was d",
+   "lang": "en",
+   "places": [
+    "Beijing",
+    "Brussels",
+    "China",
+    "Europe",
+    "Malta",
+    "Sweden"
+   ],
+   "published_at": "2026-08-21T14:00:06",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "China’s trade grip tightens in Europe as clock ticks towards October deadline"
+  },
+  "b-4cd5e81853fb": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "Tunisia has seen an uptick in protests as economic conditions in the country have deteriorated.",
+   "lang": "en",
+   "places": [
+    "Tunisia"
+   ],
+   "published_at": "2026-08-21T01:06:30",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Antigovernment protesters take to Tunisia’s streets for second month"
+  },
+  "b-4cd9d9be1ad3": {
+   "developments": [],
+   "entities": [
+    "Vladimir Putin"
+   ],
+   "excerpt": "Putin&#039;s forces continue to bring horror to Ukrainian civilians as Kyiv destroys key sections of Russian infrastructure.",
+   "lang": "en",
+   "places": [
+    "Kyiv",
+    "Russia",
+    "Ukraine"
+   ],
+   "published_at": "2026-08-21T15:13:31",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Russian expert warns of impending social crisis as Ukraine death toll rises"
+  },
+  "b-4e090ab5ad1f": {
+   "developments": [],
+   "entities": [
+    "Bayern",
+    "Bayern Munich",
+    "Jamal Musiala",
+    "Vincent Kompany"
+   ],
+   "excerpt": "Coach Vincent Kompany said Bayern were aware of Jamal Musiala&#039;s neurological disorder long before it was made public.",
+   "lang": "en",
+   "places": [
+    "Musiala"
+   ],
+   "published_at": "2026-08-21T12:08:19",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Bayern Munich’s Musiala collapsed on-field as a result of medication change"
+  },
+  "b-4fdd59098a40": {
+   "developments": [],
+   "entities": [
+    "Deloitte",
+    "District Court",
+    "Ex-Deloitte",
+    "Ho Man",
+    "Lenovo",
+    "Minnie Wat Lai"
+   ],
+   "excerpt": "A former Deloitte information technology manager has been jailed for 22 months for stealing 423 laptops worth HK$1.2 million (US$153,000) from the accounting firm’s Hong Kong office to fund his stock trading addiction.\nThe District Court sentenced Ho Man-kit, 40, on Friday after he pleaded guilty earlier this month to a count of theft for misappropriating Lenovo computers and selling them to an el",
+   "lang": "en",
+   "places": [
+    "Hong Kong"
+   ],
+   "published_at": "2026-08-21T07:04:41",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "Ex-Deloitte IT manager jailed for 22 months over HK$1.2 million laptop theft"
+  },
+  "b-5162a19b64e5": {
+   "developments": [],
+   "entities": [
+    "Modi",
+    "Narendra Modi"
+   ],
+   "excerpt": "Narendra Modi's new, more casual online persona is drawing attention from young Indians - but also plenty of scepticism.",
+   "lang": "en",
+   "places": [
+    "India"
+   ],
+   "published_at": "2026-08-21T22:15:32",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Modi spent years building his strong image - why is he making Gen Z reels now?"
+  },
+  "b-51ac60fbd495": {
+   "developments": [],
+   "entities": [
+    "LandSpace",
+    "People's Liberation Army"
+   ],
+   "excerpt": "A pair of landmark rocket recoveries in recent weeks has brought China a step closer to mastering reusable launch technology – a breakthrough analysts said could give the People’s Liberation Army an advantage in combat by increasing the resilience of its satellite-supported “kill chain”, the process of identifying, tracking and engaging a target.\nIn a first for China, commercial rocket company Lan",
+   "lang": "en",
+   "places": [
+    "China"
+   ],
+   "published_at": "2026-08-21T13:12:24",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "Why China’s reusable rocket breakthrough matters for the PLA’s ‘kill chain’"
+  },
+  "b-52e7176bac0a": {
+   "developments": [
+    5
+   ],
+   "entities": [],
+   "excerpt": "Thirty \"pioneer families\" have arrived on a wave of nationalism driven by Israel's government, but the rapid change has left nearby Palestinian residents fearful.",
+   "lang": "en",
+   "places": [
+    "Israel",
+    "Palestine",
+    "West Bank"
+   ],
+   "published_at": "2026-08-21T05:00:57",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Israel re-establishes closed West Bank settlement, defying growing international protests"
+  },
+  "b-53dc89e53904": {
+   "developments": [
+    2
+   ],
+   "entities": [],
+   "excerpt": "Officials say another three people were injured, and an 18-year-old male suspect shot and arrested.",
+   "lang": "en",
+   "places": [
+    "Sweden"
+   ],
+   "published_at": "2026-08-21T21:03:24",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "One killed in sword attack at Swedish school"
+  },
+  "b-54ad572121b2": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "In Gaza, weddings offer Palestinian families a brief escape from Israel’s genocidal war.",
+   "lang": "en",
+   "places": [
+    "Gaza",
+    "Israel",
+    "Palestine"
+   ],
+   "published_at": "2026-08-21T13:29:19",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Weddings in Gaza offer rare moments of joy amid genocide"
+  },
+  "b-55d4ee5b95b8": {
+   "developments": [],
+   "entities": [
+    "Krissy Barrett",
+    "Russian-Australian"
+   ],
+   "excerpt": "Australian police charged a man with foreign interference on Friday for allegedly seeking to pass intelligence about Ukrainian military activities to Russia.\nThe 27-year-old Russian-Australian citizen underwent “military-style” training in Russia and later joined the Ukrainian armed forces, Australian federal police commissioner Krissy Barrett told a news conference.\nPolice allege he travelled to ",
+   "lang": "en",
+   "places": [
+    "Australia",
+    "Russia",
+    "Ukraine"
+   ],
+   "published_at": "2026-08-21T11:23:46",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "Australia charges dual citizen accused of spying for Russia in Ukraine"
+  },
+  "b-58ba94123221": {
+   "developments": [],
+   "entities": [
+    "Trump"
+   ],
+   "excerpt": "The US and Israel&#039;s war on Iran has upended global financial and energy markets.",
+   "lang": "en",
+   "places": [
+    "Iran",
+    "Israel",
+    "US"
+   ],
+   "published_at": "2026-08-21T13:47:26",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Trump’s ‘economic D-Day’ claims first victim: Not Iran, but US markets"
+  },
+  "b-593e3df5a77c": {
+   "developments": [],
+   "entities": [
+    "Sunao Takami",
+    "Takahiro Shiraishi"
+   ],
+   "excerpt": "Japan executed on Friday a man convicted of an arson attack on a pachinko parlour in 2009 that killed five people, authorities said.\nIt was Japan’s first hanging since Takahiro Shiraishi, the “Twitter killer” who murdered and dismembered nine people, was put to death in June 2025.\nSunao Takami, the man executed on Friday, doused a pachinko parlour – a popular game mixing pinball and a slot machine",
+   "lang": "en",
+   "places": [
+    "Japan",
+    "Osaka"
+   ],
+   "published_at": "2026-08-21T02:38:31",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "Japan executes man behind pachinko parlour arson that killed 5"
+  },
+  "b-5b6229e0f8b3": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "Japan is preparing to spend more than ever on defence as analysts say Tokyo is being forced to respond to a convergence of regional threats, fast-changing military technology and growing uncertainty over the reliability of the US security umbrella.\nThe defence ministry is preparing to request a record budget of 8.9 trillion yen (US$56.1 billion) for the 2027 financial year, with major outlays plan",
+   "lang": "en",
+   "places": [
+    "Japan",
+    "Tokyo",
+    "US"
+   ],
+   "published_at": "2026-08-21T09:15:45",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "Japan seeks record US$56 billion defence push amid growing regional tensions"
+  },
+  "b-5c4770cb0470": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "Decentralised power can give communities the means to sustain themselves rather than wait for change to come from above.",
+   "lang": "en",
+   "places": [
+    "Iraq"
+   ],
+   "published_at": "2026-08-21T14:50:08",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Iraq’s solar villages show how to build an energy transition that lasts"
+  },
+  "b-5d5bb41d7ac1": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "Follow updates from the opening match of the season - including the build-up, analysis and live text commentary.",
+   "lang": "en",
+   "places": [],
+   "published_at": "2026-08-21T16:15:39",
+   "roundup": true,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Arsenal vs Coventry LIVE: Premier League"
+  },
+  "b-5d7e50883373": {
+   "developments": [],
+   "entities": [
+    "Army"
+   ],
+   "excerpt": "A brief chat with the chief of the Army&#8217;s Space and Missile Defense Command.",
+   "lang": "en",
+   "places": [
+    "Golden Dome"
+   ],
+   "published_at": "2026-08-21T12:00:00",
+   "roundup": false,
+   "source": "Breaking Defense",
+   "stored": true,
+   "title": "How the Army balances Patriot priorities and approaches Golden Dome"
+  },
+  "b-5ed64d3cfbe4": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "A rescue worker said the site had been struck twice as civilians gathered for a meditation retreat.",
+   "lang": "en",
+   "places": [
+    "Myanmar"
+   ],
+   "published_at": "2026-08-22T13:48:06",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Fourteen killed in strike on Myanmar monastery"
+  },
+  "b-662bc2b88af0": {
+   "developments": [],
+   "entities": [
+    "FIFA",
+    "Leandro Paredes",
+    "Paredes"
+   ],
+   "excerpt": "Leandro Paredes banned for 10 games as FIFA suspends three Argentina players for World Cup final scuffle with Spain.",
+   "lang": "en",
+   "places": [
+    "Argentina",
+    "Spain"
+   ],
+   "published_at": "2026-08-21T15:31:33",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Argentina’s Paredes gets 10-game ban for World Cup final scuffle with Spain"
+  },
+  "b-694a0776cfe4": {
+   "developments": [],
+   "entities": [
+    "Duane Davis",
+    "Tupac"
+   ],
+   "excerpt": "A recording of the interview Duane Davis conducted with detectives was played to the jury.",
+   "lang": "en",
+   "places": [],
+   "published_at": "2026-08-21T18:09:38",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Tupac murder accused told police in 2008 his nephew fired fatal shots"
+  },
+  "b-695c79f97858": {
+   "developments": [],
+   "entities": [
+    "AI"
+   ],
+   "excerpt": "Online scam syndicates that rely on trafficked workers, guarded compounds and vast call-centre-style operations could soon become more threatening by exploiting agentic AI to run some fraud operations autonomously, a cybercrime expert has warned.\nUnlike earlier uses of artificial intelligence to write scripts, translate messages or produce deepfakes, agentic AI systems can carry out multi-step tas",
+   "lang": "en",
+   "places": [
+    "Asia"
+   ],
+   "published_at": "2026-08-21T06:29:20",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "Asia faces scam ‘epidemic’ threat as gangs exploit agentic AI, cybercrime expert warns"
+  },
+  "b-6a2e684a65d2": {
+   "developments": [],
+   "entities": [
+    "DRC",
+    "United Nations"
+   ],
+   "excerpt": "Epidemic remains out of control amid DR Congo conflict, funding shortages and attacks on health workers and facilities",
+   "lang": "en",
+   "places": [
+    "Congo",
+    "DR"
+   ],
+   "published_at": "2026-08-21T13:30:36",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Ebola outbreak ‘growing faster, ⁠⁠wider’ as DRC death toll passes 2,500: UN"
+  },
+  "b-6ad4512454be": {
+   "developments": [],
+   "entities": [
+    "Joe Root"
+   ],
+   "excerpt": "Joe Root&#039;s return as England captain results in a thumping win inside three days against Pakistan in first Test.",
+   "lang": "en",
+   "places": [
+    "England",
+    "Pakistan"
+   ],
+   "published_at": "2026-08-21T16:24:39",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "England thrash Pakistan by an innings and 103 runs in first Test"
+  },
+  "b-6af650c96d25": {
+   "developments": [],
+   "entities": [
+    "Akira Muto",
+    "Pacific Fleet",
+    "Vladimir Putin"
+   ],
+   "excerpt": "Russia’s Pacific Fleet said on Thursday it has conducted a missile test off a group of Russian-held, Japanese-claimed islands amid an intensifying row over the disputed territory following President Vladimir Putin’s first-ever visit there last week.\nWhile it was unclear exactly when the test was carried out, the announcement comes after the Russian foreign ministry summoned Japanese Ambassador to ",
+   "lang": "en",
+   "places": [
+    "Etorofu",
+    "Japan",
+    "Russia"
+   ],
+   "published_at": "2026-08-21T00:48:28",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "Russia tests missiles near Japanese-claimed islands after Putin’s visit"
+  },
+  "b-6b008411d3ec": {
+   "developments": [],
+   "entities": [
+    "Beijing Children's Hospital",
+    "Capital Medicine University"
+   ],
+   "excerpt": "A five-year-old girl in northern China accidentally swallowed a 50-gram gold bar, sparking viral jokes online that she took the mainland nickname for children – “gold-devouring beasts” – far too literally.\nThe Beijing Children’s Hospital, affiliated with Capital Medicine University, reported the case that was treated on August 16.\nThe girl was brought to the hospital after accidentally swallowing ",
+   "lang": "en",
+   "places": [
+    "China"
+   ],
+   "published_at": "2026-08-21T02:46:12",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "Real-life ‘gold-devouring beast’: Chinese girl, 5, hospitalised after swallowing gold bar"
+  },
+  "b-71e9862bc0c3": {
+   "developments": [],
+   "entities": [
+    "Volodymyr Zelenskyy"
+   ],
+   "excerpt": "Four people are still missing after Friday's attack which killed 16 and left 130 injured, including a number of children.",
+   "lang": "en",
+   "places": [
+    "Russia",
+    "Ukraine"
+   ],
+   "published_at": "2026-08-22T13:13:16",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Rescuers dig through Ukraine mall wreckage as Zelensky condemns 'despicable' Russian strike"
+  },
+  "b-754c16d98964": {
+   "developments": [],
+   "entities": [
+    "Imran Khan"
+   ],
+   "excerpt": "Pakistan’s former Prime Minister Imran Khan was sent back to prison after being transferred for a medical evaluation.",
+   "lang": "en",
+   "places": [
+    "Pakistan"
+   ],
+   "published_at": "2026-08-21T03:08:09",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Pakistan’s Imran Khan back to prison after evaluation at hospital"
+  },
+  "b-7561937a9df0": {
+   "developments": [],
+   "entities": [
+    "Jiupai News",
+    "Xing",
+    "Xing Zhi"
+   ],
+   "excerpt": "Public anger has surged on mainland social media after authorities declined to classify the death of a programmer in his company’s toilet as work-related.\nAccording to Jiupai News, Xing Zhi, a 39-year-old programmer from Shenzhen and father of two, died in his company’s toilet in April.\nAfter clocking in that morning, Xing went directly to a second-floor toilet instead of his 11th-floor desk and n",
+   "lang": "en",
+   "places": [
+    "China",
+    "Shenzhen"
+   ],
+   "published_at": "2026-08-21T10:49:41",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "Outrage as China programmer’s toilet death ruled non-work-related for being ‘not at desk’"
+  },
+  "b-784967ca87b3": {
+   "developments": [],
+   "entities": [
+    "Kaiserslautern"
+   ],
+   "excerpt": "Waldhof Mannheim and Kaiserslautern game halted for 30 minutes as eight people hospitalised with about 100 injured.",
+   "lang": "en",
+   "places": [
+    "Mannheim"
+   ],
+   "published_at": "2026-08-22T13:44:02",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Fans and police injured in pitch invasion during ‘high risk’ German Cup tie"
+  },
+  "b-784c57588d66": {
+   "developments": [],
+   "entities": [
+    "Mazagon Dock Shipbuilders Ltd",
+    "ThyssenKrupp Marine Systems"
+   ],
+   "excerpt": "India’s long-delayed plan to build six advanced conventional submarines with Germany has moved closer to final approval, a deal analysts say could test the depth of New Delhi’s “Make in India” defence ambitions while helping it respond to growing undersea pressure from Pakistan and China.\nThe US$7.3 billion deal would involve building submarines for the Indian navy with Germany’s ThyssenKrupp Mari",
+   "lang": "en",
+   "places": [
+    "China",
+    "Germany",
+    "India",
+    "Mumbai",
+    "New Delhi",
+    "Pakistan"
+   ],
+   "published_at": "2026-08-21T12:15:26",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "How a German submarine deal could test ‘Make in India’ ambitions"
+  },
+  "b-7999c9c16412": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "On Gaza’s shore, 1,300 Palestinian children joined a swimming class to cope with the trauma of Israel’s genocidal war.",
+   "lang": "en",
+   "places": [
+    "Gaza",
+    "Israel",
+    "Palestine"
+   ],
+   "published_at": "2026-08-22T11:58:55",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Hundreds of children take part in swimming class on Gaza’s shore"
+  },
+  "b-7a33206917aa": {
+   "developments": [],
+   "entities": [
+    "Hubei International Travel Health"
+   ],
+   "excerpt": "International students accounted for more than half of the HIV infections identified among individuals entering China through the city of Wuhan over the past few years, although the number of cases remained low, according to customs data.\nPublic health officials analysed HIV cases detected among inbound long-term visa holders and “others” at the city’s ports of entry from 2018 to 2025.\nIn that per",
+   "lang": "en",
+   "places": [
+    "China",
+    "Wuhan"
+   ],
+   "published_at": "2026-08-21T06:47:00",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "International students account for most HIV cases detected at Wuhan port: study"
+  },
+  "b-7bef39fc49dd": {
+   "developments": [],
+   "entities": [
+    "Trump"
+   ],
+   "excerpt": "A right-wing wave is sweeping through the region and that is not good news.",
+   "lang": "en",
+   "places": [
+    "Latin America"
+   ],
+   "published_at": "2026-08-22T13:23:56",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Is Trump making Latin America great again?"
+  },
+  "b-7d87768d2f82": {
+   "developments": [
+    1
+   ],
+   "entities": [],
+   "excerpt": "Three activists were accused of inciting others to subvert state power under the China-introduced law.",
+   "lang": "en",
+   "places": [
+    "China",
+    "Hong Kong",
+    "Tiananmen"
+   ],
+   "published_at": "2026-08-21T05:47:32",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Hong Kong's Tiananmen activists guilty in national security trial"
+  },
+  "b-7fa33da9a802": {
+   "developments": [],
+   "entities": [
+    "Geely",
+    "IoT",
+    "MIIT",
+    "Zhejiang Geespace Technology"
+   ],
+   "excerpt": "China has approved its first private-sector commercial trial for satellite Internet of Things (IoT) services, granting a permit to a Geely-backed venture as part of broader efforts to open the country’s burgeoning satellite communications market to private capital.\nThe Ministry of Industry and Information Technology (MIIT) granted Zhejiang Geespace Technology, the commercial space subsidiary of el",
+   "lang": "en",
+   "places": [
+    "China"
+   ],
+   "published_at": "2026-08-21T06:00:19",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "China clears Geely for landmark satellite IoT test to spur commercial space sector"
+  },
+  "b-7fd77555002c": {
+   "developments": [],
+   "entities": [
+    "Hiemon Box"
+   ],
+   "excerpt": "Designed to stop heatstroke in its tracks, the &quot;Do Hiemon Box&quot; delivers rapid, targeted cooling during extreme weather.",
+   "lang": "en",
+   "places": [
+    "Japan"
+   ],
+   "published_at": "2026-08-22T15:48:27",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Walk-In “Human Fridges” are Japan’s newest heatwave weapon"
+  },
+  "b-8376ac0bb513": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "Tornadoes swept through New York and Delaware as severe storms brought torrential rain to the Mid-Atlantic.",
+   "lang": "en",
+   "places": [
+    "Delaware",
+    "Mid-Atlantic",
+    "New York"
+   ],
+   "published_at": "2026-08-21T14:35:50",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Tornadoes touch down in New York and Delaware"
+  },
+  "b-85e1f8c5197d": {
+   "developments": [
+    1
+   ],
+   "entities": [
+    "Chow Hang-tung",
+    "Lee Cheuk-yan",
+    "West Kowloon Court"
+   ],
+   "excerpt": "A now-disbanded alliance behind Hong Kong’s annual Tiananmen Square vigil, along with two of its former leaders, have been found guilty of inciting subversion under the national security law for advocating an end to “one-party dictatorship” in mainland China.\nThe Hong Kong Alliance in Support of Patriotic Democratic Movements of China, its former chairman Lee Cheuk-yan and former vice-chairwoman C",
+   "lang": "en",
+   "places": [
+    "China",
+    "Hong Kong",
+    "Hong Kong Tiananmen",
+    "Tiananmen Square"
+   ],
+   "published_at": "2026-08-21T02:28:28",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "Hong Kong Tiananmen vigil organiser, former leaders guilty of inciting subversion"
+  },
+  "b-8608173935c4": {
+   "developments": [],
+   "entities": [
+    "Bessent",
+    "Treasury"
+   ],
+   "excerpt": "US Treasury Secretary Bessent says new economic measures will &#039;collapse&#039; Iranian government.",
+   "lang": "en",
+   "places": [
+    "China",
+    "Iran",
+    "US"
+   ],
+   "published_at": "2026-08-21T00:00:00",
+   "roundup": true,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Iran war live: US vows toughest Iran sanctions, urges China support"
+  },
+  "b-87acc226075b": {
+   "developments": [],
+   "entities": [
+    "Chung Pui-kei",
+    "High Court",
+    "Hong Chi Association",
+    "Lam Hiu"
+   ],
+   "excerpt": "A former assistant warden at a residential home for the intellectually disabled in Hong Kong has been accused of raping a resident multiple times two years ago.\nChung Pui-kei has been charged with five counts of rape of a mentally incapacitated woman who lived at a home in Tai Po linked to the Hong Chi Association, an NGO, between July and August 2024.\nProsecutor Human Lam Hiu-man outlined the fiv",
+   "lang": "en",
+   "places": [
+    "Hong Kong",
+    "Tai Po"
+   ],
+   "published_at": "2026-08-21T14:45:36",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "Ex-care home worker accused of raping intellectually disabled woman 5 times"
+  },
+  "b-8826249c972c": {
+   "developments": [
+    3
+   ],
+   "entities": [],
+   "excerpt": "The doses are the first of 70,000 allocated for Kinshasa as experts warn of the virus&#039;s exponential spread.",
+   "lang": "en",
+   "places": [
+    "Congo",
+    "Kinshasa"
+   ],
+   "published_at": "2026-08-22T10:13:56",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "More than 16,000 doses of Ervebo vaccine arrive in Ebola-hit DR Congo"
+  },
+  "b-883ed0172d9e": {
+   "developments": [],
+   "entities": [
+    "Xinhua"
+   ],
+   "excerpt": "The official death toll from Typhoon Maysak’s devastating floods in southern China jumped from 39 to 159 on Friday, as authorities updated the figures for the first time in six weeks.\nAccording to media briefings held in Nanning and Guigang in Guangxi Zhuang autonomous region, 10 people remained missing and the disaster affected more than 1.65 million people, state news agency Xinhua reported.\nThe",
+   "lang": "en",
+   "places": [
+    "China",
+    "Guangxi Zhuang",
+    "Guigang",
+    "Nanning"
+   ],
+   "published_at": "2026-08-21T08:12:15",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "China’s Typhoon Maysak death toll soars to 159 as region tallies catastrophic losses"
+  },
+  "b-8a8e0d395f60": {
+   "developments": [
+    1
+   ],
+   "entities": [
+    "Activist"
+   ],
+   "excerpt": "Activist group says the &#039;twisted&#039; Hong Kong judicial system had long ago decided that the pair were guilty.",
+   "lang": "en",
+   "places": [
+    "Hong Kong",
+    "Hong Kong Tiananmen"
+   ],
+   "published_at": "2026-08-21T03:50:15",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Hong Kong Tiananmen activists found guilty of national security charges"
+  },
+  "b-8b0980fba97b": {
+   "developments": [
+    7
+   ],
+   "entities": [],
+   "excerpt": "Syria condemns attack in southwest as a &#039;flagrant violation of sovereignty&#039; and a &#039;blatant breach of international law&#039;.",
+   "lang": "en",
+   "places": [
+    "Israel",
+    "Syria"
+   ],
+   "published_at": "2026-08-22T14:37:40",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Israeli drone strike on ‘civilian vehicle’ injures several in Syria"
+  },
+  "b-8bc2de12c803": {
+   "developments": [],
+   "entities": [
+    "Cyclospora",
+    "DOGE"
+   ],
+   "excerpt": "The US has recorded more than 160 food recalls this year, as a Cyclospora outbreak has sickened nearly 11,000 people.",
+   "lang": "en",
+   "places": [
+    "US"
+   ],
+   "published_at": "2026-08-22T15:46:48",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Did DOGE cuts make America’s food safety problem worse?"
+  },
+  "b-8d3989f81d6b": {
+   "developments": [],
+   "entities": [
+    "Rodri"
+   ],
+   "excerpt": "Barcelona start their season at Elche in La Liga on Sunday but will do so without their new signing, Rodri.",
+   "lang": "en",
+   "places": [
+    "Barcelona",
+    "Elche",
+    "La Liga"
+   ],
+   "published_at": "2026-08-22T16:10:21",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Elche vs Barcelona: La Liga – prediction, team news, lineups"
+  },
+  "b-8d75b7c79a6f": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "A six-year-old child has collapsed and died after being slapped by his teacher in India.",
+   "lang": "en",
+   "places": [
+    "India"
+   ],
+   "published_at": "2026-08-21T12:17:21",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Six-year-old child dies after being slapped by teacher in India"
+  },
+  "b-8db0e36319e5": {
+   "developments": [],
+   "entities": [
+    "AI",
+    "European",
+    "European Union",
+    "Mistral AI"
+   ],
+   "excerpt": "On August 11, a tiny line buried in a lengthy press release from French company Mistral AI spoke volumes about the strategic and technological dilemmas facing the European Union, as the bloc prepares to navigate an autumn period full of geopolitical and trade upheaval.\nIn a bid to roll out “European infrastructure for sovereign AI”, Mistral – Europe’s great hope in the global artificial intelligen",
+   "lang": "en",
+   "places": [
+    "China",
+    "Europe",
+    "France"
+   ],
+   "published_at": "2026-08-21T10:30:06",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "The Mistral paradox: Europe’s push for tech sovereignty relies on China’s Z.ai"
+  },
+  "b-8e4d7fda66a2": {
+   "developments": [],
+   "entities": [
+    "Chow Chung-yan",
+    "Jackson Hole Note",
+    "People's Liberation Army",
+    "Tsinghua University",
+    "Wang Yi",
+    "Warsh",
+    "Zhou",
+    "Zhou Bo"
+   ],
+   "excerpt": "Note: SCMP Plus subscribers can attend an exclusive event with Zhou Bo, a retired People’s Liberation Army senior colonel, in Hong Kong on Tuesday. Zhou will discuss China’s military modernisation as the PLA works towards its 2027 centenary goal. SCMP Editor-in-Chief Chow Chung-yan will host the fireside chat. Zhou is now a senior fellow at Tsinghua University.\n\nChinese Foreign Minister Wang Yi so",
+   "lang": "en",
+   "places": [
+    "China",
+    "Hong Kong",
+    "South Korea",
+    "US"
+   ],
+   "published_at": "2026-08-21T09:00:16",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "Wang Yi visits South Korea, China’s economy cools, Warsh speaks at Jackson Hole"
+  },
+  "b-8e90ad52cbe9": {
+   "developments": [],
+   "entities": [
+    "Sydney Marathon"
+   ],
+   "excerpt": "Online sleuths detected the error after Sydney Marathon unveiled the double-sided medal.",
+   "lang": "en",
+   "places": [
+    "Munich"
+   ],
+   "published_at": "2026-08-22T07:53:57",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Sydney Marathon medal mistakenly depicts Munich stadium"
+  },
+  "b-920a282d5760": {
+   "developments": [],
+   "entities": [
+    "BBC",
+    "Meghan",
+    "Netflix",
+    "Prince Harry"
+   ],
+   "excerpt": "This would be Meghan's first significant acting role since her marriage to Prince Harry.",
+   "lang": "en",
+   "places": [],
+   "published_at": "2026-08-21T18:29:31",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Meghan in talks for role in Netflix series The Gentlemen, BBC understands"
+  },
+  "b-9259fb4b9124": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "More than 300 companies are showcasing the latest advances in robotics at the five-day event in Beijing, China, organisers say.",
+   "lang": "en",
+   "places": [
+    "Beijing",
+    "China"
+   ],
+   "published_at": "2026-08-22T10:01:18",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Robot horse and rider steal the spotlight at Chinese conference"
+  },
+  "b-995c0a447c00": {
+   "developments": [],
+   "entities": [
+    "EV",
+    "Elon Musk",
+    "Tesla"
+   ],
+   "excerpt": "Tesla has issued the largest-ever product recall in mainland China’s electric vehicle (EV) market, as Elon Musk’s firm pledges to fix a door-handle issue affecting nearly 3 million cars.\nThe massive recall comes as Chinese regulators move to ban retractable car door handles over safety fears, after a fatal incident last year in which a driver was left trapped inside a burning vehicle as passers-by",
+   "lang": "en",
+   "places": [
+    "China",
+    "US"
+   ],
+   "published_at": "2026-08-21T14:38:14",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "Tesla forced to recall record 3 million cars in China over door-handle issue"
+  },
+  "b-9a5375314554": {
+   "developments": [],
+   "entities": [
+    "Trump"
+   ],
+   "excerpt": "The Trump administration has ramped up deportations to third countries in an apparent bid to deter immigration.",
+   "lang": "en",
+   "places": [
+    "Guatemala",
+    "Mexico",
+    "US"
+   ],
+   "published_at": "2026-08-21T00:12:37",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "US deports nearly 2,300 Mexicans to Guatemala over Mexico’s objections"
+  },
+  "b-9a969cf0f666": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "A reported trip to China next week by a cross-party group of Japanese lawmakers could carry “pronounced” symbolic weight but is unlikely to herald a thaw in ties between the two neighbours, Chinese experts suggest.\nFor the first time since bilateral relations succumbed to a bitter chill 10 months ago, a delegation of Japan’s parliamentary members will visit Beijing from August 24 to 27, according ",
+   "lang": "en",
+   "places": [
+    "Beijing",
+    "China",
+    "Japan"
+   ],
+   "published_at": "2026-08-21T01:00:11",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "Japan lawmakers to visit China in bid to cool row, but thaw unlikely: experts"
+  },
+  "b-9d435faf259d": {
+   "developments": [
+    5
+   ],
+   "entities": [],
+   "excerpt": "Palestinians in Qaryut say Israeli settlers, backed by the military, are forcing families from their homes.",
+   "lang": "en",
+   "places": [
+    "Israel",
+    "Occupied West Bank",
+    "Palestine",
+    "Qaryut"
+   ],
+   "published_at": "2026-08-22T15:45:40",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Settlers target Palestinian homes in Occupied West Bank’s Area B"
+  },
+  "b-9e76870b7d26": {
+   "developments": [],
+   "entities": [
+    "CAF",
+    "Djibouti Football Federation",
+    "FIFA FIFA"
+   ],
+   "excerpt": "FIFA and CAF provides more than $1m a year to Djibouti&#039;s federation, which faces corruption allegations over misuse.",
+   "lang": "en",
+   "places": [
+    "Djibouti"
+   ],
+   "published_at": "2026-08-21T14:18:23",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Djibouti Football Federation accused of misusing funds from FIFA"
+  },
+  "b-a26e096ccba9": {
+   "developments": [],
+   "entities": [
+    "EPL",
+    "Enzo Maresca",
+    "Maresca",
+    "Pep Guardiola"
+   ],
+   "excerpt": "Enzo Maresca replaced Pep Guardiola between seasons but says Man City may need patience before more trophies arrive.",
+   "lang": "en",
+   "places": [
+    "Bournemouth",
+    "Man City",
+    "Manchester City"
+   ],
+   "published_at": "2026-08-21T14:36:24",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Manchester City’s Maresca admits he needs time as Bournemouth visit in EPL"
+  },
+  "b-a56b7ed74fbe": {
+   "developments": [],
+   "entities": [
+    "Chinese University of Hong Kong",
+    "Gary Wong Ka-wai",
+    "HKU",
+    "ICAC",
+    "Independent Commission Against Corruption"
+   ],
+   "excerpt": "An associate professor at the University of Hong Kong (HKU) has been charged by the corruption watchdog for allegedly receiving HK$2.2 million (US$280,500) in bribes in return for awarding seven procurement contracts for information technology education services to a vendor.\nThe Independent Commission Against Corruption (ICAC) said on Friday that it had prosecuted Gary Wong Ka-wai, 45, of the univ",
+   "lang": "en",
+   "places": [],
+   "published_at": "2026-08-21T11:33:09",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "HKU professor charged over HK$2.2m bribery linked to IT education contracts"
+  },
+  "b-a6391f8f4239": {
+   "developments": [],
+   "entities": [
+    "Imran Khan",
+    "Khan"
+   ],
+   "excerpt": "Khan’s sister and personal physician describe a chaotic night as officials give conflicting accounts of his whereabouts.",
+   "lang": "en",
+   "places": [
+    "Pakistan"
+   ],
+   "published_at": "2026-08-21T12:05:51",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Pakistan ex-PM Imran Khan’s family accuses gov’t of defying hospital order"
+  },
+  "b-a76192bb6b0c": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "For some mainlanders, Hong Kong's independent bookstores are a window into a different, freer world.",
+   "lang": "en",
+   "places": [
+    "China",
+    "Hong Kong"
+   ],
+   "published_at": "2026-08-21T22:26:25",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "These bookshops let Chinese readers question their country - now the doors are closing"
+  },
+  "b-a88428a2c7a3": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "Even when fully mobilised, China’s industrial system would only be able to meet 60 per cent of the country’s military demand for drones in a conflict, according to a rare study looking into the expected effects of a sudden war.\nThe estimates were produced by an artificial intelligence model that covered a multilevel supply chain linking drone assembly plants with subsystem and component suppliers.",
+   "lang": "en",
+   "places": [
+    "China"
+   ],
+   "published_at": "2026-08-21T10:00:05",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "China’s drone production capacity can only meet 60% of war demand: study"
+  },
+  "b-a9ba50f32373": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "Fires between January and July burned more than 200,000 hectares of land, says the government.",
+   "lang": "en",
+   "places": [
+    "Borneo",
+    "Indonesia"
+   ],
+   "published_at": "2026-08-22T13:35:57",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Indonesia bolsters troop numbers to combat Borneo wildfires"
+  },
+  "b-ab3e1d62b3eb": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "Iran says production is ongoing, but details will not be revealed during war conditions.",
+   "lang": "en",
+   "places": [
+    "Iran",
+    "US"
+   ],
+   "published_at": "2026-08-22T14:19:06",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "What did war with the US reveal about Iran’s weapons capabilities?"
+  },
+  "b-acfa69107263": {
+   "developments": [],
+   "entities": [
+    "Ping",
+    "Ping An Insurance (Group",
+    "Richard Sheng"
+   ],
+   "excerpt": "Ping An Insurance (Group), China’s largest insurer in terms of market capitalisation, is eyeing investments in Hong Kong-listed exchange-traded funds (ETFs) to boost returns following Beijing’s green light for cross-border allocations, according to senior executives.\n“Allowing mainland insurance funds to invest in Hong Kong listed ETFs is set to tighten the ties between Hong Kong and the mainland ",
+   "lang": "en",
+   "places": [
+    "Beijing",
+    "China",
+    "Hong Kong"
+   ],
+   "published_at": "2026-08-21T10:31:35",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "Chinese insurer Ping An eyes Hong Kong ETFs as Beijing greenlights cross-border investment"
+  },
+  "b-b0ad43cd35ac": {
+   "developments": [],
+   "entities": [
+    "Lindsay Clancy"
+   ],
+   "excerpt": "The defence brought their final witness - a forensic psychiatrist - to the stand to testify about the effects of postpartum psychosis.",
+   "lang": "en",
+   "places": [],
+   "published_at": "2026-08-22T03:43:26",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Lindsay Clancy suffering 'command hallucination' when she killed children, court hears"
+  },
+  "b-b34bb8cdf0bb": {
+   "developments": [],
+   "entities": [
+    "Liverpool"
+   ],
+   "excerpt": "Liverpool&#039;s new Spanish boss is tasked with making the club title challengers again, but he faces a number of issues.",
+   "lang": "en",
+   "places": [
+    "Spain"
+   ],
+   "published_at": "2026-08-21T13:29:28",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Liverpool preview: Five key questions heading into 2026-27 season"
+  },
+  "b-b3a0d6ba0b2d": {
+   "developments": [],
+   "entities": [
+    "BBC"
+   ],
+   "excerpt": "Experts told the BBC the pressures of childhood stardom can put actors at an unusually higher risk of substance abuse issues.",
+   "lang": "en",
+   "places": [],
+   "published_at": "2026-08-21T23:41:33",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Drugs at their fingertips, intense pressure: Why child stars fall into addiction"
+  },
+  "b-b3d4b7966b1a": {
+   "developments": [],
+   "entities": [
+    "Robotics"
+   ],
+   "excerpt": "The world has seen tremendous progress in the capabilities of robots in the past year. Robots can now walk, dance, run and perform increasingly sophisticated movements, yet impressive demonstrations do not equal commercial value.\nBeyond the hype surrounding China’s red-hot embodied robotics sector, one challenge confronts all players: data.\nRobotics has long faced the challenge of achieving widesp",
+   "lang": "en",
+   "places": [
+    "China"
+   ],
+   "published_at": "2026-08-21T01:30:06",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "In the embodied AI race, China can opt to look beyond bigger models"
+  },
+  "b-b4013da56188": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "German intelligence believes guns found last year were for carrying out assassinations on behalf of Moscow, reports say.",
+   "lang": "en",
+   "places": [
+    "Germany",
+    "Moscow",
+    "Russia"
+   ],
+   "published_at": "2026-08-21T16:26:53",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Germany investigates Russia links to weapons cache discovered in woods, reports say"
+  },
+  "b-b63dd0b0fd76": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "The US Treasury Secretary, has indicated a change in US strategy towards Iran, focusing on economic isolation.",
+   "lang": "en",
+   "places": [
+    "Iran",
+    "US"
+   ],
+   "published_at": "2026-08-21T13:59:28",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "War on Iran: The US could focus on economically isolating Iran"
+  },
+  "b-bbcb00eae268": {
+   "developments": [],
+   "entities": [
+    "AI",
+    "Pax Silica",
+    "South China Morning Post",
+    "Southeast Asian",
+    "World Artificial Intelligence Cooperation Organisation (Waico"
+   ],
+   "excerpt": "Southeast Asian leaders have long insisted they will not be forced to pick sides in the great-power rivalry between the US and China. But their posture is about to be further tested.\nThis time, the battleground is AI. While Washington wants the region locked into Pax Silica – its bid to build a China-free artificial intelligence supply chain – Beijing wants its neighbours to join China’s own World",
+   "lang": "en",
+   "places": [
+    "Beijing",
+    "China",
+    "Southeast Asia",
+    "US",
+    "Washington"
+   ],
+   "published_at": "2026-08-21T15:00:05",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "China and US push Southeast Asia over their AI blocs. Will it test region’s non-alignment?"
+  },
+  "b-bbdbc1d011f6": {
+   "developments": [],
+   "entities": [
+    "Donald Trump",
+    "International Criminal Court",
+    "Tomoko Akane"
+   ],
+   "excerpt": "Japan has spent years casting the International Criminal Court as a pillar of the rules-based order. This week, its closest ally sanctioned the Japanese judge who leads it.\nThe move has left Tokyo in an uncomfortable bind: defend Tomoko Akane, the Japanese president of The Hague-based court, and risk antagonising US leader Donald Trump, or temper its criticism and appear weak in the face of an att",
+   "lang": "en",
+   "places": [
+    "Hague",
+    "Japan",
+    "Tokyo",
+    "US",
+    "Washington"
+   ],
+   "published_at": "2026-08-21T00:00:38",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "Japan faces ‘nightmare scenario’ as it struggles to defend ICC judge"
+  },
+  "b-bc8ea42498ab": {
+   "developments": [],
+   "entities": [
+    "Hui Ka-yan"
+   ],
+   "excerpt": "We have selected seven stories from this week’s news across Hong Kong, mainland China, the wider Asia region and beyond that resonated with our readers and shed light on topical issues. If you would like to see more of our reporting, please consider subscribing.\n1. Chinese team aims to put ‘smart’ diabetes probiotic on US shelves within 2 years\nChinese researchers have engineered a probiotic that ",
+   "lang": "en",
+   "places": [
+    "Asia",
+    "China",
+    "Hong Kong",
+    "US"
+   ],
+   "published_at": "2026-08-21T04:15:08",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "China’s ‘smart’ diabetes probiotics; life sentence for Hui Ka-yan: SCMP’s 7 highlights"
+  },
+  "b-bcf2fde80a0a": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "Israeli soldiers were filmed throwing belongings from Palestinian homes in Qusra.",
+   "lang": "en",
+   "places": [
+    "Israel",
+    "Palestine",
+    "Qusra"
+   ],
+   "published_at": "2026-08-21T13:01:54",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Israeli soldiers throw belongings from besieged Palestinian home"
+  },
+  "b-bdae49f9a9e3": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "South Korea professional football association urges stronger heat protections in face of rising temperatures.",
+   "lang": "en",
+   "places": [
+    "South Korea"
+   ],
+   "published_at": "2026-08-21T13:04:32",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "South Korea footballers urge safety after extreme heat statistics"
+  },
+  "b-be85620fa514": {
+   "developments": [],
+   "entities": [
+    "Ateez",
+    "East Asians",
+    "Gamix",
+    "San Japanese"
+   ],
+   "excerpt": "Japanese influencer Gamix, who went viral for sobbing after Japan’s defeat at the 2026 Fifa World Cup, has sparked controversy after making a gesture widely considered racist towards East Asians while parodying Ateez member San’s viral “BAD” challenge.\nGamix uploaded a video to his social media account on Thursday in which he recreated the choreography from Ateez’s “BAD”, a viral trend that has re",
+   "lang": "en",
+   "places": [
+    "Japan",
+    "San"
+   ],
+   "published_at": "2026-08-21T06:07:32",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "Anger over Japanese influencer Gamix’s ‘slant-eyed’ jibe at K-pop star San"
+  },
+  "b-beca484d3a11": {
+   "developments": [],
+   "entities": [
+    "Trump"
+   ],
+   "excerpt": "The president says the 147-lap race will be an event &#039;like no other&#039; as drivers zip through Washington, DC.",
+   "lang": "en",
+   "places": [
+    "Washington, DC"
+   ],
+   "published_at": "2026-08-21T16:27:32",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "What to know about the Freedom 250 Grand Prix, Trump’s capital car race"
+  },
+  "b-bfdaaa494865": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "The El Nino weather phenomenon is expected to increase the likelihood of drought and excess heat across the region.",
+   "lang": "en",
+   "places": [
+    "Panama Canal"
+   ],
+   "published_at": "2026-08-21T01:12:02",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Panama Canal to limit shipping ahead of extreme weather during El Nino"
+  },
+  "b-c349800cdff6": {
+   "developments": [],
+   "entities": [
+    "Trump"
+   ],
+   "excerpt": "Allies worry about the US ability to deter China, even if the bulk of US forces remain in the region.",
+   "lang": "en",
+   "places": [
+    "Asia",
+    "China",
+    "US"
+   ],
+   "published_at": "2026-08-21T12:32:03",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "US allies in Asia wary as Trump moves military assets for Iran war"
+  },
+  "b-c78e45f71825": {
+   "developments": [],
+   "entities": [
+    "Nissin",
+    "Nissin Foods",
+    "Spicy Kimchi"
+   ],
+   "excerpt": "Nissin Foods, the company that invented instant noodles, appears to have created an entirely new category with a hit product: cup noodles made with cold water.\nInitial supplies of the handy meal – available in Spicy Kimchi and Chicken Salt Lemon flavours – sold out a week after hitting store shelves on July 20, according to Nissin. While the Tokyo-based company did not disclose sales figures, it h",
+   "lang": "en",
+   "places": [
+    "Japan",
+    "Tokyo"
+   ],
+   "published_at": "2026-08-21T08:46:55",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "No kettle needed: Japan’s cold-water cup noodles fly off the shelves"
+  },
+  "b-c7fc6069d1cd": {
+   "developments": [],
+   "entities": [
+    "Agriculture, Fisheries and Conservation Department",
+    "Quota",
+    "Sai Kung"
+   ],
+   "excerpt": "Hong Kong authorities will cap access to a popular Sai Kung trail overlooking hexagonal rock columns at 2,000 people per day during several stretches from next month and require real-name registration for visitors, marking the city’s first countryside crowd-control measures of their kind.\nThe Agriculture, Fisheries and Conservation Department announced the arrangement on Friday for the Po Pin Chau",
+   "lang": "en",
+   "places": [
+    "High Island Geo Trail",
+    "Hong Kong"
+   ],
+   "published_at": "2026-08-21T12:40:37",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "Quota set for visitors to popular Sai Kung coastal trail in first for Hong Kong"
+  },
+  "b-cc08ed12fb2b": {
+   "developments": [],
+   "entities": [
+    "Grand Ethiopian Renaissance Dam"
+   ],
+   "excerpt": "Three projects mark a new test for Egypt after it failed to prevent construction of the Grand Ethiopian Renaissance Dam.",
+   "lang": "en",
+   "places": [
+    "Egypt",
+    "Ethiopia",
+    "Nile"
+   ],
+   "published_at": "2026-08-21T02:11:33",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "After GERD, can Egypt shape Ethiopia’s next Nile dams?"
+  },
+  "b-cd62c85e62be": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "The Canadian prime minister will have to sell his gamble that walking away from talks with the White House will be worth the consequences.",
+   "lang": "en",
+   "places": [],
+   "published_at": "2026-08-22T20:02:46",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": false,
+   "title": "Carney faces crucial test after walking away from Trump's deal"
+  },
+  "b-d21109ba71d7": {
+   "developments": [],
+   "entities": [
+    "Amnesty International"
+   ],
+   "excerpt": "Amnesty International said they ‘must be released immediately and unconditionally’.",
+   "lang": "en",
+   "places": [
+    "Hong Kong",
+    "Tiananmen"
+   ],
+   "published_at": "2026-08-21T12:54:44",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Why are Hong Kong’s Tiananmen vigil organisers facing prison?"
+  },
+  "b-d566298b2073": {
+   "developments": [],
+   "entities": [
+    "Bear",
+    "Masha",
+    "Volodymyr Zelenskyy"
+   ],
+   "excerpt": "Zelenskyy signs decree imposing sanctions on producers, accuses cartoon show of spreading &#039;pro-Russian propaganda&#039;.",
+   "lang": "en",
+   "places": [
+    "Russia",
+    "Ukraine"
+   ],
+   "published_at": "2026-08-21T16:38:15",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Ukraine sanctions popular Russian cartoon ‘Masha and the Bear’"
+  },
+  "b-d610efa7ec3a": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "Israeli settlers entered a stone quarry in Wadi Al-Rakheem near Hebron overnight and set fire to heavy machinery",
+   "lang": "en",
+   "places": [
+    "Hebron",
+    "Israel",
+    "Wadi Al-Rakheem",
+    "West Bank"
+   ],
+   "published_at": "2026-08-21T16:00:02",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Israeli settlers set fire to heavy machinery at West Bank quarry"
+  },
+  "b-d6897636cbea": {
+   "developments": [],
+   "entities": [
+    "European Union"
+   ],
+   "excerpt": "An open letter demands a ban on arms transfers and a freeze on EU-Israel and UK-Israel trade agreements.",
+   "lang": "en",
+   "places": [
+    "France",
+    "Israel",
+    "Palestine",
+    "UK"
+   ],
+   "published_at": "2026-08-22T15:30:49",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Over 100 ex-diplomats urge France, UK to sanction Israel over Palestine"
+  },
+  "b-d92957f3578b": {
+   "developments": [],
+   "entities": [
+    "Rosenberg"
+   ],
+   "excerpt": "Drivers are waiting hours in fuel queues, as Moscow prepares to celebrate Russian Flag Day.",
+   "lang": "en",
+   "places": [
+    "Moscow",
+    "Russia"
+   ],
+   "published_at": "2026-08-21T13:07:00",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Rosenberg: Shortage of petrol but not patriotism as Russians feel growing impact of war"
+  },
+  "b-df12883b1d79": {
+   "developments": [],
+   "entities": [
+    "Associated Newspapers",
+    "Daily Mail",
+    "Elton John",
+    "Matthew Nicklin",
+    "Prince Harry"
+   ],
+   "excerpt": "Prince Harry, Elton John ⁠and other high-profile claimants face paying ⁠millions of dollars out of their own pockets to cover the legal costs of the Daily Mail’s publisher after a judge ruled their failed privacy lawsuits were conducted in an unreasonable way.\nJudge Matthew Nicklin’s judgment on costs, ‌which was published on Friday, also ordered an interim payment from the claimants of £9.54 mill",
+   "lang": "en",
+   "places": [],
+   "published_at": "2026-08-21T13:39:25",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "Prince Harry and others ordered to pay initial US$13 million in failed lawsuit"
+  },
+  "b-dfc16b535283": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "Hong Kong should press ahead with its proposed tax break on carried interest, the performance fees earned by hedge fund and private equity managers, after Singapore unveiled a rival tax-exemption scheme, according to industry participants.\nThe bill, submitted to lawmakers in June and expected to come to a vote later this year, has sparked debate in the financial industry. Some participants argue t",
+   "lang": "en",
+   "places": [
+    "Hong Kong",
+    "Singapore"
+   ],
+   "published_at": "2026-08-21T01:00:07",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "Hong Kong financiers press for tax breaks after Singapore unveils rival scheme"
+  },
+  "b-e090e68e5085": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "Meanwhile, Ukrainian drone hits home in southern Russia, killing two children and injuring their parents, officials say.",
+   "lang": "en",
+   "places": [
+    "Russia",
+    "Ukraine"
+   ],
+   "published_at": "2026-08-22T12:09:09",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Russian strikes kill 6 people in Ukraine, day after shopping complex attack"
+  },
+  "b-e095d21a704d": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "Humanoid crashes during speed test as China’s robotics industry grows",
+   "lang": "en",
+   "places": [
+    "China"
+   ],
+   "published_at": "2026-08-21T12:25:04",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Humanoid crashes during speed test as China’s robotics industry grows"
+  },
+  "b-e1d61749e965": {
+   "developments": [],
+   "entities": [
+    "Harry",
+    "Meghan"
+   ],
+   "excerpt": "They will not be working royals when they come back. So what could they be doing instead?",
+   "lang": "en",
+   "places": [
+    "UK"
+   ],
+   "published_at": "2026-08-22T00:03:10",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "As they return to the UK, Harry and Meghan search for a brand that sticks"
+  },
+  "b-e560241322a9": {
+   "developments": [],
+   "entities": [
+    "Erik Slavin"
+   ],
+   "excerpt": "Erik Slavin believes he was fired for saying in an interview that \"in a hypothetical situation, censorship would be a red line\".",
+   "lang": "en",
+   "places": [
+    "US"
+   ],
+   "published_at": "2026-08-22T16:57:19",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "US military newspaper editor voices censorship fears after being fired"
+  },
+  "b-e5bc44c5568f": {
+   "developments": [],
+   "entities": [
+    "Andreessen Horowitz",
+    "Harvey",
+    "Harvey Tenet",
+    "Kimi",
+    "Kimi K3",
+    "Moonshot AI",
+    "Sequoia Capital"
+   ],
+   "excerpt": "A US artificial intelligence start-up backed by OpenAI has built its first in-house model on Chinese lab Moonshot AI’s Kimi K3, highlighting a growing shift by Western tech firms towards Chinese open-weight systems amid soaring development costs.\nSan Francisco-based legal tech provider Harvey, whose high-profile backers also include Sequoia Capital and Andreessen Horowitz, said on Thursday that it",
+   "lang": "en",
+   "places": [
+    "China",
+    "San Francisco",
+    "US"
+   ],
+   "published_at": "2026-08-21T14:00:10",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "OpenAI-backed legal tech firm pivots to Chinese Kimi K3 open-weight model"
+  },
+  "b-e5e62052515e": {
+   "developments": [
+    6
+   ],
+   "entities": [
+    "Usain Bolt"
+   ],
+   "excerpt": "The robot ran the distance in 9.39 seconds at the World Humanoid Robot Games in Beijing.",
+   "lang": "en",
+   "places": [
+    "Beijing",
+    "World Humanoid Robot Games"
+   ],
+   "published_at": "2026-08-22T17:02:06",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Watch: Moment humanoid robot beats Usain Bolt's 100m record"
+  },
+  "b-e65cd1bb15f4": {
+   "developments": [
+    5
+   ],
+   "entities": [
+    "Jewish"
+   ],
+   "excerpt": "Jewish activists provide a ‘protective presence’ to deter settler violence in parts of the Occupied West Bank.",
+   "lang": "en",
+   "places": [
+    "Israel",
+    "Occupied West Bank"
+   ],
+   "published_at": "2026-08-22T12:51:55",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Jewish activists push back against Israeli settlers"
+  },
+  "b-e736db6a6335": {
+   "developments": [],
+   "entities": [
+    "AI",
+    "Convention and Exhibition Centre",
+    "Hong Kong Computer and Communications Festival",
+    "Paul Chan",
+    "Wan Chai"
+   ],
+   "excerpt": "Humanoid robots, 3D printers and artificial intelligence (AI) hubs are among the newest technologies showcased at Hong Kong’s annual electronics and tech exhibition, as the city’s finance chief encourages residents to learn how to use them.\nAt the opening of the four-day event on Friday, hundreds of visitors crowded the 22nd Hong Kong Computer and Communications Festival at the Convention and Exhi",
+   "lang": "en",
+   "places": [
+    "Hong Kong"
+   ],
+   "published_at": "2026-08-21T09:54:38",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "Embrace AI to boost competitiveness, Paul Chan says at tech festival opening"
+  },
+  "b-e766610207b3": {
+   "developments": [],
+   "entities": [
+    "China Evergrande Group",
+    "Evergrande",
+    "Guangzhou Intermediate People's Court",
+    "Guangzhou Rural Commercial Bank",
+    "Hengda Real Estate"
+   ],
+   "excerpt": "A court in southern China’s Guangdong province formally accepted a bankruptcy liquidation petition against China Evergrande Group’s main onshore unit, closing the final chapter in the unravelling of what was once the country’s largest property developer.\nThe Guangzhou Intermediate People’s Court said on Friday that Guangzhou Rural Commercial Bank’s Huaxia branch met the legal criteria under the na",
+   "lang": "en",
+   "places": [
+    "China",
+    "Guangdong",
+    "Huaxia"
+   ],
+   "published_at": "2026-08-21T06:21:11",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "Chinese court accepts Evergrande liquidation petition 1 day after founder’s life sentence"
+  },
+  "b-e96b4eb795b4": {
+   "developments": [],
+   "entities": [
+    "BBC"
+   ],
+   "excerpt": "As the US president insults a journalist again, the BBC looks at the questions he does not like to answer.",
+   "lang": "en",
+   "places": [
+    "US"
+   ],
+   "published_at": "2026-08-22T02:39:10",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "'Quiet, quiet, quiet!' - What triggers Trump to shut down reporters?"
+  },
+  "b-e9fe18bbf419": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "Solar expansion policies across China have led to a reduction in bird diversity, with wealthier and non-desert regions bearing the brunt of species loss, according to a study led by researchers in China and the US.\nThey found that solar expansion had eaten into birds’ foraging and breeding grounds, and had left what habitat remained more fragmented, pitting China’s carbon reduction policies agains",
+   "lang": "en",
+   "places": [
+    "China",
+    "US"
+   ],
+   "published_at": "2026-08-21T03:00:09",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "International study finds solar panels in China could be harming birds"
+  },
+  "b-ed25155d038d": {
+   "developments": [
+    4
+   ],
+   "entities": [
+    "Carney",
+    "Trump"
+   ],
+   "excerpt": "Canada's prime minister said he was \"reluctantly\" announcing retaliatory tariffs as he accused the US of starting a trade war.",
+   "lang": "en",
+   "places": [
+    "Canada",
+    "US"
+   ],
+   "published_at": "2026-08-22T18:20:36",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Carney calls Trump's fresh tariffs a 'miscalculation' after trade talks collapse"
+  },
+  "b-f21800253bff": {
+   "developments": [],
+   "entities": [
+    "Enzo Maresca",
+    "Pep Guardiola"
+   ],
+   "excerpt": "Enzo Maresca faces the formidable challenge of following the legendary manager Pep Guardiola as new season starts.",
+   "lang": "en",
+   "places": [
+    "Manchester City"
+   ],
+   "published_at": "2026-08-22T10:09:11",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Manchester City preview: Five key questions heading into 2026-27 season"
+  },
+  "b-f2b3df789ef0": {
+   "developments": [],
+   "entities": [
+    "Met Office"
+   ],
+   "excerpt": "Met Office predicts &#039;unprecedented&#039; sea surface temperature rise of 3C (5.4F) plus will heighten extreme weather risks.",
+   "lang": "en",
+   "places": [
+    "UK"
+   ],
+   "published_at": "2026-08-21T13:12:07",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "El Nino set to be most intense ‘for over a century’: UK forecasters"
+  },
+  "b-f37d375e86f7": {
+   "developments": [],
+   "entities": [
+    "Communist Party of China",
+    "Jiang",
+    "Jiang Zemin",
+    "Xi Jinping"
+   ],
+   "excerpt": "The centenary of Jiang Zemin’s birth, marked on August 17 with a memorial in Beijing attended and addressed by President Xi Jinping, was more than an occasion to commemorate a former Chinese leader. It was also an exercise in political history: a moment to locate Jiang, the era he led and the reform legacy associated with him within the broader story of the Communist Party of China’s evolution and",
+   "lang": "en",
+   "places": [
+    "Beijing",
+    "China"
+   ],
+   "published_at": "2026-08-21T12:30:06",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "China is using Jiang Zemin centenary to signal political continuity"
+  },
+  "b-f43c963adf42": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "Canada's prime minister said he was \"reluctantly\" announcing retaliatory tariffs as he accused the US of starting a trade war.",
+   "lang": "en",
+   "places": [],
+   "published_at": "2026-08-22T20:10:00",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": false,
+   "title": "Carney calls Trump's fresh tariffs a 'miscalculation' after trade talks collapse"
+  },
+  "b-f55f349f9898": {
+   "developments": [],
+   "entities": [
+    "Southeast Asian",
+    "Wang Yi"
+   ],
+   "excerpt": "China and Indonesia’s recent joint naval exercise east of Taiwan has prompted speculation that other Southeast Asian countries may follow suit.\nLast Wednesday’s drill – which one observer said may “lower the political threshold” for neighbouring countries – was followed by a meeting of the two countries’ foreign and defence ministers on Friday, where they discussed further military cooperation and",
+   "lang": "en",
+   "places": [
+    "China",
+    "Indonesia",
+    "Taiwan"
+   ],
+   "published_at": "2026-08-21T11:57:39",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "Will other Southeast Asian countries follow Indonesia’s example with joint China drill?"
+  },
+  "b-f5cd3bc0be67": {
+   "developments": [],
+   "entities": [
+    "Guotai Haitong",
+    "Guotai Haitong Securities",
+    "Guotai Haitong Securities Asset Management",
+    "Qualified Domestic Institutional Investor"
+   ],
+   "excerpt": "An asset-management arm of Guotai Haitong Securities, a leading Chinese brokerage, was ordered to pay 52.5 million yuan (US$7.8 million) in fines and penalties for activities undertaken by its offshore investment business as Beijing tightens its scrutiny of capital flows.\nGuotai Haitong Securities Asset Management was fined 25.9 million yuan and ordered to forfeit 26.7 million yuan in illegal gain",
+   "lang": "en",
+   "places": [
+    "Beijing",
+    "China"
+   ],
+   "published_at": "2026-08-21T05:00:06",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "Chinese regulators slap US$7.8m penalty on Guotai Haitong arm amid capital flow crackdown"
+  },
+  "b-f79d8ffc1e73": {
+   "developments": [],
+   "entities": [
+    "Agriculture, Fisheries and Conservation Department",
+    "Tse Chin-wan"
+   ],
+   "excerpt": "Hong Kong environment authorities have said they will review the definition of fighting dogs and relevant regulations to strengthen public safety, a day after the owner of a pet training facility was attacked by a canine suspected of being a mixed-breed fighting dog and was later found dead.\nSecretary for Environment and Ecology Tse Chin-wan made the announcement on Friday as the Agriculture, Fish",
+   "lang": "en",
+   "places": [
+    "Hong Kong"
+   ],
+   "published_at": "2026-08-21T07:15:44",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "Hong Kong to review definition, rules on fighting dogs after handler mauled"
+  },
+  "b-f818d24f9035": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "A man was sentenced to nine years and 10 months’ jail, and eight strokes of the cane on Friday for abusing multiple young boys who were under his care.\nThe man beat his youngest victim – a six-year-old boy – with a hanger more than 600 times, forced him to hold a push-up position for hours, and made him sleep in the toilet and drink his own urine.\nThe boy suffered severe injuries as a result, incl",
+   "lang": "en",
+   "places": [
+    "Singapore"
+   ],
+   "published_at": "2026-08-21T12:29:40",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "Singapore jails and canes man for abusing boy, 6"
+  },
+  "b-f838c50034f9": {
+   "developments": [],
+   "entities": [
+    "Erin Patterson"
+   ],
+   "excerpt": "A table tennis tournament and a throat lozenge could help Erin Patterson's lawyers overturn her convictions.",
+   "lang": "en",
+   "places": [],
+   "published_at": "2026-08-22T19:03:03",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "The hotel booking mix-up that could free mushroom murderer"
+  },
+  "b-fac9c06dff99": {
+   "developments": [],
+   "entities": [
+    "CUHK",
+    "Chinese University of Hong Kong",
+    "Ronald Wong"
+   ],
+   "excerpt": "A team of researchers from the Chinese University of Hong Kong (CUHK) has conducted the city’s first robot-assisted pelvic fracture surgery in what promises to be a safer, less intrusive alternative to a procedure typically considered among the most challenging.\nCUHK’s faculty of medicine said on Friday that the novel orthopaedic robotic surgical system could turn a “new page” in trauma care amid ",
+   "lang": "en",
+   "places": [
+    "Hong Kong"
+   ],
+   "published_at": "2026-08-21T11:00:07",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "CUHK researchers perform Hong Kong’s first robot-assisted pelvic fracture surgery"
+  },
+  "b-fcd819c15684": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "Seven World Central Kitchen workers were killed in the Israeli strike on their convoy in 2024.",
+   "lang": "en",
+   "places": [
+    "Australia",
+    "Canada",
+    "Gaza",
+    "Israel",
+    "UK"
+   ],
+   "published_at": "2026-08-21T15:58:57",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "UK, Canada and Australia condemn Israel for refusing criminal probe into aid worker killings in Gaza"
+  },
+  "b-fd281c485615": {
+   "developments": [],
+   "entities": [
+    "Imran Khan",
+    "PTI",
+    "Party"
+   ],
+   "excerpt": "Party launches legal action after authorities take ex-PM to ⁠state hospital for check-up ⁠before returning him to jail.",
+   "lang": "en",
+   "places": [
+    "Pakistan"
+   ],
+   "published_at": "2026-08-22T10:13:48",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Pakistan’s PTI seeks contempt action over jailed Imran Khan’s hospital move"
+  },
+  "b-fe8c2559d8cc": {
+   "developments": [],
+   "entities": [
+    "Hezbollah",
+    "IRGC",
+    "Quds Force",
+    "US Treasury"
+   ],
+   "excerpt": "The US Treasury labels Lebanon-based group &#039;an extension&#039; of the IRGC&#039;s Quds Force and takes aim at financing.",
+   "lang": "en",
+   "places": [
+    "Iran",
+    "Lebanon",
+    "US"
+   ],
+   "published_at": "2026-08-21T12:12:35",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "US designates Hezbollah an Iranian proxy, sanctions funding network"
+  },
+  "b-ff2a280cd649": {
+   "developments": [],
+   "entities": [
+    "CONCACAF",
+    "FIFA",
+    "Gianni Infantino",
+    "Infantino"
+   ],
+   "excerpt": "The pressure on Gianni Infantino has led CONCACAF to reportedly ask the FIFA president to skip upcoming tournament.",
+   "lang": "en",
+   "places": [],
+   "published_at": "2026-08-22T12:37:26",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "CONCACAF asks Infantino to skip youth event amid FIFA governance crisis"
+  }
+ },
+ "shift_hours": 1040.7,
+ "situations": {
+  "eu-china-trade": {
+   "primary_actors": [
+    "China",
+    "European Union"
+   ],
+   "status": "active",
+   "title": "EU–China trade dispute"
+  },
+  "gaza-ceasefire": {
+   "primary_actors": [
+    "Hamas",
+    "Israel"
+   ],
+   "status": "active",
+   "title": "Gaza ceasefire negotiations"
+  },
+  "russia-ukraine-war": {
+   "primary_actors": [
+    "Russia",
+    "Ukraine"
+   ],
+   "status": "active",
+   "title": "Russia–Ukraine war"
+  },
+  "sudan-civil-war": {
+   "primary_actors": [
+    "Rapid Support Forces",
+    "Sudan"
+   ],
+   "status": "active",
+   "title": "Sudan civil war"
+  },
+  "us-iran": {
+   "primary_actors": [
+    "Iran",
+    "United States"
+   ],
+   "status": "active",
+   "title": "US–Iran negotiations and confrontation"
+  }
+ },
+ "split": "development",
+ "window": "2026-08-21"
+}

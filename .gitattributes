@@ -2,3 +2,4 @@
 evaluations/clustering/** text eol=lf
 evaluations/entities/gold/** text eol=lf
 evaluations/identity/** text eol=lf
+evaluations/relations/** text eol=lf

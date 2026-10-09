@@ -1,0 +1,6805 @@
+{
+ "meta": {
+  "split": "holdout",
+  "seed": 20261005,
+  "caps": {
+   "owner_note": null,
+   "situation_holdout_control": null,
+   "gold_related": 4,
+   "storyline_mates": 3,
+   "cue": 3,
+   "lifecycle": 2,
+   "neg_same_actors": 2,
+   "neg_same_place": 1,
+   "neg_same_crisis": 2,
+   "neg_chrono_adjacent": 1,
+   "neg_broad_pair": 2
+  },
+  "cases": 78,
+  "identity_same_merges": {
+   "2026-07-21": [],
+   "2026-08-07": [],
+   "2026-08-15": [],
+   "2026-09-10": []
+  },
+  "script_sha256": "d585bc88fabc1c5a406e579a35f693d738b6a20e5b5c2e1cb86fd1052aff03a2"
+ },
+ "cases": [
+  {
+   "case": "RH001",
+   "a": {
+    "id": "2026-09-10:trump-iran-war-until-after-elections",
+    "window": "2026-09-10",
+    "members": [
+     "b-515ef676c1f6"
+    ],
+    "storyline": "iran-war",
+    "first": "2026-09-10T10:43:53",
+    "last": "2026-09-10T10:43:53",
+    "actors": [
+     "Trump"
+    ],
+    "places": [
+     "Iran"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "BBC World"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-515ef676c1f6",
+      "source": "BBC World",
+      "published_at": "2026-09-10T10:43:53",
+      "title": "Iran war won't end until after crucial November elections, says Trump",
+      "excerpt": "The president also said oil prices won't come down until after the November races, claiming without evidence that Iran wants to impact the election."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-09-10:saudi-east-west-pipeline-shut",
+    "window": "2026-09-10",
+    "members": [
+     "b-9dc47df74487"
+    ],
+    "storyline": "iran-war",
+    "first": "2026-09-11T20:24:55",
+    "last": "2026-09-11T20:24:55",
+    "actors": [],
+    "places": [
+     "Arabian Peninsula",
+     "Baghdad",
+     "East-West",
+     "Hormuz",
+     "Iran",
+     "Iraq",
+     "Middle East",
+     "Riyadh",
+     "Saudi Arabia"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-9dc47df74487",
+      "source": "South China Morning Post",
+      "published_at": "2026-09-11T20:24:55",
+      "title": "Saudi pipeline that bypasses Hormuz shut after attacks",
+      "excerpt": "Saudi Arabia has shut down its East-West pipeline after the vital oil conduit came under aerial attack in the widening Middle East war.\nThe world’s largest crude oil exporter temporarily closed the pipeline after a drone attack that both Baghdad and Riyadh said had originated in Iraq, where Iranian-"
+     }
+    ]
+   },
+   "cosine": 0.386
+  },
+  {
+   "case": "RH002",
+   "a": {
+    "id": "2026-08-07:german-airport-drone-bomb-russia",
+    "window": "2026-08-07",
+    "members": [
+     "b-22f73add60db"
+    ],
+    "storyline": "russia-hybrid-europe",
+    "first": "2026-08-07T08:48:16",
+    "last": "2026-08-07T08:48:16",
+    "actors": [
+     "BBC"
+    ],
+    "places": [
+     "Germany",
+     "Russia"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "BBC World"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-22f73add60db",
+      "source": "BBC World",
+      "published_at": "2026-08-07T08:48:16",
+      "title": "German airport drone-bomb: Could Russia be involved?",
+      "excerpt": "The BBC has seen evidence from previous cases that Russian-linked proxies not only handled drones and explosives, but also delivered them to Germany."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-08-07:guterres-condemns-russia-ukraine",
+    "window": "2026-08-07",
+    "members": [
+     "b-973926ce4a3c"
+    ],
+    "storyline": "russia-ukraine-war",
+    "first": "2026-08-07T12:34:13",
+    "last": "2026-08-07T12:34:13",
+    "actors": [
+     "Guterres",
+     "United Nations"
+    ],
+    "places": [
+     "Russia",
+     "Ukraine"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-973926ce4a3c",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-07T12:34:13",
+      "title": "UN chief condemns both Ukraine and Russia amid escalation in war",
+      "excerpt": "UN chief Guterres calls for de-escalation and a ceasefire as Russia-Ukraine attacks intensify."
+     }
+    ]
+   },
+   "cosine": 0.324
+  },
+  {
+   "case": "RH003",
+   "a": {
+    "id": "2026-09-10:nepal-floods-indian-workers",
+    "window": "2026-09-10",
+    "members": [
+     "b-d340e7c23e50"
+    ],
+    "storyline": "nepal-floods",
+    "first": "2026-09-10T07:57:23",
+    "last": "2026-09-10T07:57:23",
+    "actors": [],
+    "places": [
+     "India",
+     "Nepal"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-d340e7c23e50",
+      "source": "Al Jazeera",
+      "published_at": "2026-09-10T07:57:23",
+      "title": "‘Gone in a blink’: Nepal floods sweep away Indian workers who built hotels",
+      "excerpt": "The migrants were at work, building homes and hotels, when the floods hit, sweeping three of them away."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-09-10:roma-nepal-shirt",
+    "window": "2026-09-10",
+    "members": [
+     "b-e5bcfe18bd6f"
+    ],
+    "storyline": "nepal-floods",
+    "first": "2026-09-10T10:02:05",
+    "last": "2026-09-10T10:02:05",
+    "actors": [
+     "Champions League",
+     "Fenerbahce"
+    ],
+    "places": [
+     "Italy",
+     "Nepal"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-e5bcfe18bd6f",
+      "source": "Al Jazeera",
+      "published_at": "2026-09-10T10:02:05",
+      "title": "Roma to support Nepal flood victims through Champions League match shirt",
+      "excerpt": "Italian club to auction special &#039;Together for Nepal&#039; shirts to be worn in the match against Fenerbahce."
+     }
+    ]
+   },
+   "cosine": 0.278
+  },
+  {
+   "case": "RH004",
+   "a": {
+    "id": "2026-08-15:indonesia-flores-quake",
+    "window": "2026-08-15",
+    "members": [
+     "b-ddbd1c459b09",
+     "b-6c7107c5ad14",
+     "b-2231132356b1"
+    ],
+    "storyline": "indonesia-quake",
+    "first": "2026-08-15T02:55:04",
+    "last": "2026-08-16T05:14:00",
+    "actors": [
+     "Flores",
+     "Indonesia",
+     "Meteorology, Climatology and Geophysics Agency"
+    ],
+    "places": [
+     "Flores Island",
+     "Indonesia",
+     "US"
+    ],
+    "system_developments": [
+     2
+    ],
+    "situations": [],
+    "sources": [
+     "Al Jazeera",
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-ddbd1c459b09",
+      "source": "South China Morning Post",
+      "published_at": "2026-08-15T02:55:04",
+      "title": "At least 47 killed in Indonesia after magnitude 7.7 quake hits Flores region",
+      "excerpt": "A powerful magnitude 7.7 earthquake struck off the coast of Indonesia early Saturday, killing at least 47 people, collapsing buildings and homes as well as causing panic in a region prone to deadly quakes. Authorities said more than a dozen people were injured.\nAuthorities issued a tsunami warning b"
+     },
+     {
+      "item": "b-6c7107c5ad14",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-15T11:19:56",
+      "title": "Aftermath of deadly Indonesia earthquake",
+      "excerpt": "Dozens of people have been killed after a 7.7-magnitude earthquake off Indonesia’s Flores Island."
+     },
+     {
+      "item": "b-2231132356b1",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-16T05:14:00",
+      "title": "Indonesia’s magnitude 7.7 quake kills at least 51, displaces thousands",
+      "excerpt": "Over 1,300 homes damaged and 5,000 people displaced as Indonesia grapples with one of its deadliest quakes in years."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-08-15:indonesia-quake-hospital-tents",
+    "window": "2026-08-15",
+    "members": [
+     "b-bd8a3daf7a97"
+    ],
+    "storyline": "indonesia-quake",
+    "first": "2026-08-16T13:19:35",
+    "last": "2026-08-16T13:19:35",
+    "actors": [],
+    "places": [
+     "Indonesia"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-bd8a3daf7a97",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-16T13:19:35",
+      "title": "Patients treated in tents after earthquake damages Indonesia hospital",
+      "excerpt": "Patients treated in tents after earthquake damages Indonesia hospital"
+     }
+    ]
+   },
+   "cosine": 0.451
+  },
+  {
+   "case": "RH005",
+   "a": {
+    "id": "2026-08-07:trump-fire-lisa-cook",
+    "window": "2026-08-07",
+    "members": [
+     "b-6749c09f9e44"
+    ],
+    "storyline": null,
+    "first": "2026-08-07T23:40:16",
+    "last": "2026-08-07T23:40:16",
+    "actors": [
+     "Donald Trump",
+     "Federal Reserve",
+     "Lisa Cook"
+    ],
+    "places": [
+     "US"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-6749c09f9e44",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-07T23:40:16",
+      "title": "Donald Trump renews effort to fire Federal Reserve governor Lisa Cook",
+      "excerpt": "US president has clashed with Federal Reserve members over his bid to rapidly slash interest rates despite inflation."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-08-07:todd-blanche-confirmed-ag",
+    "window": "2026-08-07",
+    "members": [
+     "b-d9366bf067ee",
+     "b-07f3a6b14eeb"
+    ],
+    "storyline": null,
+    "first": "2026-08-08T15:56:39",
+    "last": "2026-08-08T21:04:54",
+    "actors": [
+     "Republican",
+     "Todd Blanche",
+     "Trump"
+    ],
+    "places": [
+     "US"
+    ],
+    "system_developments": [
+     15
+    ],
+    "situations": [],
+    "sources": [
+     "Al Jazeera",
+     "BBC World"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-d9366bf067ee",
+      "source": "BBC World",
+      "published_at": "2026-08-08T15:56:39",
+      "title": "Trump's ex-lawyer Todd Blanche narrowly confirmed as US attorney general",
+      "excerpt": "The vote cements Trump's former criminal defence lawyer as the nation's top law enforcement official despite a rare pushback from some Republicans."
+     },
+     {
+      "item": "b-07f3a6b14eeb",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-08T21:04:54",
+      "title": "Trump’s Former Lawyer Is Now Attorney General",
+      "excerpt": "Todd Blanche, President Trump’s former lawyer, is now US attorney general."
+     }
+    ]
+   },
+   "cosine": 0.33
+  },
+  {
+   "case": "RH006",
+   "a": {
+    "id": "2026-08-15:ukraine-flamingo-strike-samara",
+    "window": "2026-08-15",
+    "members": [
+     "b-ba250c125df2"
+    ],
+    "storyline": "russia-ukraine-strikes",
+    "first": "2026-08-15T15:50:06",
+    "last": "2026-08-15T15:50:06",
+    "actors": [
+     "Flamingo"
+    ],
+    "places": [
+     "Moscow",
+     "Russia",
+     "Samara",
+     "Ukraine"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-ba250c125df2",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-15T15:50:06",
+      "title": "Ukraine hits Russian Starlink-style network, Moscow tracks arms package",
+      "excerpt": "Ukraine used domestically produced Flamingo missiles to hit targets in Russia&#039;s southwestern Samara region."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-08-15:ukraine-mass-drone-attack-russia",
+    "window": "2026-08-15",
+    "members": [
+     "b-19177aba5b84",
+     "b-4f5f94b9fc9a"
+    ],
+    "storyline": "russia-ukraine-strikes",
+    "first": "2026-08-16T04:54:33",
+    "last": "2026-08-16T15:35:53",
+    "actors": [
+     "Kyiv",
+     "Kyiv Russian",
+     "Moscow",
+     "Russia",
+     "Ukraine"
+    ],
+    "places": [
+     "Moscow",
+     "Russia",
+     "Ukraine",
+     "Wildberries"
+    ],
+    "system_developments": [
+     7
+    ],
+    "situations": [
+     "russia-ukraine-war"
+    ],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-19177aba5b84",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-16T04:54:33",
+      "title": "Ukraine targets Moscow in mass drone attack as Russia bombards Kyiv",
+      "excerpt": "Russian authorities report 201 Ukrainian drones downed overnight in the Moscow region in the escalating conflict."
+     },
+     {
+      "item": "b-4f5f94b9fc9a",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-16T15:35:53",
+      "title": "Largest Ukrainian drone attack on Russia, Moscow says 822 drones shot down",
+      "excerpt": "Ukraine launched hundreds of drones across Russia, killing at least six people and striking a Wildberries logistics hub."
+     }
+    ]
+   },
+   "cosine": 0.614
+  },
+  {
+   "case": "RH007",
+   "a": {
+    "id": "2026-08-07:erdogan-saudi-visit-preview",
+    "window": "2026-08-07",
+    "members": [
+     "b-aa655c8a0c72"
+    ],
+    "storyline": "mecca-defence-pact",
+    "first": "2026-08-07T04:43:43",
+    "last": "2026-08-07T04:43:43",
+    "actors": [
+     "Mohammed bin Salman",
+     "Shehbaz Sharif"
+    ],
+    "places": [
+     "Erdogan",
+     "Pakistan",
+     "Saudi Arabia",
+     "Turkiye"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-aa655c8a0c72",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-07T04:43:43",
+      "title": "Turkiye’s Erdogan visits Saudi Arabia: What to expect",
+      "excerpt": "Erdogan will meet with Saudi Crown Prince Mohammed bin Salman and Pakistani PM Shehbaz Sharif, his office says."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-08-07:israel-mulls-mecca-pact",
+    "window": "2026-08-07",
+    "members": [
+     "b-476e54ea6440"
+    ],
+    "storyline": "mecca-defence-pact",
+    "first": "2026-08-08T13:42:06",
+    "last": "2026-08-08T13:42:06",
+    "actors": [
+     "Pakistan",
+     "Saudi Arabia",
+     "Turkey",
+     "Turkiye"
+    ],
+    "places": [
+     "Israel",
+     "Pakistan",
+     "Saudi Arabia",
+     "Turkiye"
+    ],
+    "system_developments": [
+     5
+    ],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-476e54ea6440",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-08T13:42:06",
+      "title": "Israel mulls Saudi, Turkiye, Pakistan pact as elections loom",
+      "excerpt": "Saudi Arabia, Turkiye, and Pakistan form a new defence pact, leaving Israel’s response and its implications uncertain."
+     }
+    ]
+   },
+   "cosine": 0.434
+  },
+  {
+   "case": "RH008",
+   "a": {
+    "id": "2026-07-21:eu-china-threat-posture-opinion",
+    "window": "2026-07-21",
+    "members": [
+     "b-d3ebc25aae70"
+    ],
+    "storyline": null,
+    "first": "2026-07-21T12:30:08",
+    "last": "2026-07-21T12:30:08",
+    "actors": [
+     "European",
+     "European Union",
+     "Indo-Pacific"
+    ],
+    "places": [
+     "Beijing",
+     "Brussels",
+     "China",
+     "Europe",
+     "Russia",
+     "South China Sea",
+     "Ukraine"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-d3ebc25aae70",
+      "source": "South China Morning Post",
+      "published_at": "2026-07-21T12:30:08",
+      "title": "Europe’s incoherent ‘China threat’ posture is a threat to itself",
+      "excerpt": "The China threat has landed in Brussels. A new European Union position paper accuses Beijing of amplifying security threats, posing “a critical long-term strategic challenge” and reviving “sphere-of-influence logic” to reshape the global order.\nBeijing is cast as an enabler of Russia’s invasion of U"
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-07-21:france-under-15-social-media-ban",
+    "window": "2026-07-21",
+    "members": [
+     "b-926b4f65fa41",
+     "b-1357cdcf3b68",
+     "b-27d42d3e006c"
+    ],
+    "storyline": null,
+    "first": "2026-07-21T19:32:09",
+    "last": "2026-07-22T03:34:11",
+    "actors": [
+     "Emmanuel Macron",
+     "European",
+     "European Union",
+     "France",
+     "Macron",
+     "TikTok"
+    ],
+    "places": [
+     "Australia",
+     "Europe",
+     "France",
+     "United Kingdom"
+    ],
+    "system_developments": [
+     7
+    ],
+    "situations": [],
+    "sources": [
+     "Al Jazeera",
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-926b4f65fa41",
+      "source": "South China Morning Post",
+      "published_at": "2026-07-21T19:32:09",
+      "title": "France’s parliament approves social media ban for children under 15, in EU first",
+      "excerpt": "France’s parliament on Tuesday approved a bill banning social media access for children under 15, making France the first European country to bar children from apps such as TikTok.\nPresident Emmanuel Macron has championed the ban as a flagship reform of his final term in office and pledged to enforc"
+     },
+     {
+      "item": "b-1357cdcf3b68",
+      "source": "Al Jazeera",
+      "published_at": "2026-07-21T20:44:48",
+      "title": "French parliament passes social media ban for under-15s",
+      "excerpt": "President Emmanuel Macron, who has championed the initiative, wants the ban in effect before the upcoming school year."
+     },
+     {
+      "item": "b-27d42d3e006c",
+      "source": "Al Jazeera",
+      "published_at": "2026-07-22T03:34:11",
+      "title": "France becomes first EU country to officially ban social media for children",
+      "excerpt": "France will ban social media for under-15s from September 1, following the UK and Australia’s moves toward blanket bans."
+     }
+    ]
+   },
+   "cosine": 0.217
+  },
+  {
+   "case": "RH009",
+   "a": {
+    "id": "2026-07-21:kuwait-electricity-rationing",
+    "window": "2026-07-21",
+    "members": [
+     "b-7922869d5450"
+    ],
+    "storyline": "iran-war",
+    "first": "2026-07-21T20:06:57",
+    "last": "2026-07-21T20:06:57",
+    "actors": [],
+    "places": [
+     "Iran",
+     "Kuwait"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-7922869d5450",
+      "source": "Al Jazeera",
+      "published_at": "2026-07-21T20:06:57",
+      "title": "Kuwaitis ration electricity after Iranian strikes hit power grid",
+      "excerpt": "Kuwaitis are rationing electricity after Iranian strikes on power infrastructure are raising fears of outages"
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-07-21:us-strikes-iran-night-11",
+    "window": "2026-07-21",
+    "members": [
+     "b-5b33b184a58a",
+     "b-5b08b2c38cf2"
+    ],
+    "storyline": "iran-war",
+    "first": "2026-07-21T23:46:00",
+    "last": "2026-07-22T05:05:25",
+    "actors": [
+     "Iran",
+     "Tehran",
+     "Trump",
+     "US",
+     "Washington"
+    ],
+    "places": [
+     "Iran",
+     "Tabriz",
+     "Tehran",
+     "US"
+    ],
+    "system_developments": [
+     3
+    ],
+    "situations": [
+     "us-iran"
+    ],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-5b33b184a58a",
+      "source": "Al Jazeera",
+      "published_at": "2026-07-21T23:46:00",
+      "title": "US attacks Iran for 11th consecutive night",
+      "excerpt": "Explosions reported in northwestern Iran&#039;s Tabriz, capital Tehran and across southern Iran."
+     },
+     {
+      "item": "b-5b08b2c38cf2",
+      "source": "Al Jazeera",
+      "published_at": "2026-07-22T05:05:25",
+      "title": "US expands strikes on 11th straight night of attacks",
+      "excerpt": "The US military’s 11th consecutive night of strikes extended to Iranian provinces not previously hit."
+     }
+    ]
+   },
+   "cosine": 0.382
+  },
+  {
+   "case": "RH010",
+   "a": {
+    "id": "2026-09-10:pentagon-europe-pullback-oped",
+    "window": "2026-09-10",
+    "members": [
+     "b-bb4e81c121e4"
+    ],
+    "storyline": null,
+    "first": "2026-09-11T15:12:21",
+    "last": "2026-09-11T15:12:21",
+    "actors": [
+     "Daniel Kochis",
+     "European NATO",
+     "Hudson Institute",
+     "US Department of Defense"
+    ],
+    "places": [
+     "Europe",
+     "Russia",
+     "US"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Breaking Defense"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-bb4e81c121e4",
+      "source": "Breaking Defense",
+      "published_at": "2026-09-11T15:12:21",
+      "title": "Now is the wrong time for the Pentagon to pull back from Europe",
+      "excerpt": "The Hudson Institute&#8217;s Daniel Kochis argues in this op-ed that Russia must remain convinced that America’s presence, combined with European NATO members’ firepower, is enough not to risk a direct confrontation."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-09-10:trump-pentagon-ceremony",
+    "window": "2026-09-10",
+    "members": [
+     "b-a8259968fc37"
+    ],
+    "storyline": "sept11-25th-anniversary",
+    "first": "2026-09-11T15:45:46",
+    "last": "2026-09-11T15:45:46",
+    "actors": [
+     "Donald Trump",
+     "Trump",
+     "US",
+     "US Department of Defense"
+    ],
+    "places": [
+     "US"
+    ],
+    "system_developments": [
+     4
+    ],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-a8259968fc37",
+      "source": "Al Jazeera",
+      "published_at": "2026-09-11T15:45:46",
+      "title": "Trump pays tribute to the victims of 9/11 at Pentagon ceremony",
+      "excerpt": "US President Donald Trump remembered the victims of the September 11 attacks at a ceremony to mark the 25th anniversary."
+     }
+    ]
+   },
+   "cosine": 0.306
+  },
+  {
+   "case": "RH011",
+   "a": {
+    "id": "2026-08-07:texas-democrats-momentum",
+    "window": "2026-08-07",
+    "members": [
+     "b-8b607e991a68"
+    ],
+    "storyline": null,
+    "first": "2026-08-07T22:08:49",
+    "last": "2026-08-07T22:08:49",
+    "actors": [
+     "Democrats",
+     "James Talarico",
+     "Ken Paxton",
+     "Republican",
+     "Texas Senate",
+     "US Senate"
+    ],
+    "places": [
+     "Texas"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-8b607e991a68",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-07T22:08:49",
+      "title": "Democrats gain momentum in pivotal US Senate and governor’s races in Texas",
+      "excerpt": "James Talarico leads Ken Paxton in the Texas Senate race, signalling a potential shift in the Republican stronghold."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-08-07:trump-blames-republicans",
+    "window": "2026-08-07",
+    "members": [
+     "b-ccc8fdbd43d8"
+    ],
+    "storyline": null,
+    "first": "2026-08-08T01:28:39",
+    "last": "2026-08-08T01:28:39",
+    "actors": [
+     "Republican",
+     "Trump"
+    ],
+    "places": [],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-ccc8fdbd43d8",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-08T01:28:39",
+      "title": "Trump shifts blame to Republicans for waning support from public",
+      "excerpt": "Republican senators are using the summer recess to avoid politically difficult votes."
+     }
+    ]
+   },
+   "cosine": 0.326
+  },
+  {
+   "case": "RH012",
+   "a": {
+    "id": "2026-09-10:houthis-seize-entire-red-sea-coast",
+    "window": "2026-09-10",
+    "members": [
+     "b-3500b9609ad6"
+    ],
+    "storyline": "houthi-yemen-offensive",
+    "first": "2026-09-11T15:34:30",
+    "last": "2026-09-11T15:34:30",
+    "actors": [
+     "Houthis"
+    ],
+    "places": [
+     "Iran",
+     "Red Sea",
+     "Yemen"
+    ],
+    "system_developments": [
+     3
+    ],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-3500b9609ad6",
+      "source": "Al Jazeera",
+      "published_at": "2026-09-11T15:34:30",
+      "title": "Houthis take control of Yemen’s entire Red Sea coast, reports say",
+      "excerpt": "The Iran-backed Houthi forces have taken control over most of the western Red Sea coastal line"
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-09-10:saudi-east-west-pipeline-shut",
+    "window": "2026-09-10",
+    "members": [
+     "b-9dc47df74487"
+    ],
+    "storyline": "iran-war",
+    "first": "2026-09-11T20:24:55",
+    "last": "2026-09-11T20:24:55",
+    "actors": [],
+    "places": [
+     "Arabian Peninsula",
+     "Baghdad",
+     "East-West",
+     "Hormuz",
+     "Iran",
+     "Iraq",
+     "Middle East",
+     "Riyadh",
+     "Saudi Arabia"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-9dc47df74487",
+      "source": "South China Morning Post",
+      "published_at": "2026-09-11T20:24:55",
+      "title": "Saudi pipeline that bypasses Hormuz shut after attacks",
+      "excerpt": "Saudi Arabia has shut down its East-West pipeline after the vital oil conduit came under aerial attack in the widening Middle East war.\nThe world’s largest crude oil exporter temporarily closed the pipeline after a drone attack that both Baghdad and Riyadh said had originated in Iraq, where Iranian-"
+     }
+    ]
+   },
+   "cosine": 0.409
+  },
+  {
+   "case": "RH013",
+   "a": {
+    "id": "2026-07-21:second-thomas-shoal-clash-protest",
+    "window": "2026-07-21",
+    "members": [
+     "b-712287ab87f3"
+    ],
+    "storyline": null,
+    "first": "2026-07-21T07:33:24",
+    "last": "2026-07-21T07:33:24",
+    "actors": [
+     "BRP",
+     "China Coast Guard",
+     "Philippine Navy"
+    ],
+    "places": [
+     "China",
+     "Philippines",
+     "Second Thomas Shoal China",
+     "South China Sea"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-712287ab87f3",
+      "source": "South China Morning Post",
+      "published_at": "2026-07-21T07:33:24",
+      "title": "China lodges protest with Philippines after latest clash near Second Thomas Shoal",
+      "excerpt": "China has lodged a formal protest with the Philippines, accusing it of initiating an attack on its coastguards following the latest clash between the two sides in the South China Sea.\nMonday’s clash near the disputed Second Thomas Shoal involved a Chinese coastguard vessel and two Philippine Navy ru"
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-07-21:chinese-loans-philippines",
+    "window": "2026-07-21",
+    "members": [
+     "b-a388fce6c27a"
+    ],
+    "storyline": null,
+    "first": "2026-07-21T07:48:04",
+    "last": "2026-07-21T07:48:04",
+    "actors": [
+     "AidData",
+     "Dito Telecommunity",
+     "Ferdinand Marcos Jnr"
+    ],
+    "places": [
+     "Beijing",
+     "China",
+     "Philippines",
+     "South China Sea",
+     "US"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-a388fce6c27a",
+      "source": "South China Morning Post",
+      "published_at": "2026-07-21T07:48:04",
+      "title": "Chinese loans to Philippines stay resilient despite maritime row",
+      "excerpt": "New findings on Chinese financing in the Philippines are challenging the assumption that Beijing reduced its funding under President Ferdinand Marcos Jnr because of worsening tensions in the South China Sea.\nInstead, Chinese capital had continued to support Filipino businesses in recent years, inclu"
+     }
+    ]
+   },
+   "cosine": 0.505
+  },
+  {
+   "case": "RH014",
+   "a": {
+    "id": "2026-09-10:fire-point-freyja-program",
+    "window": "2026-09-10",
+    "members": [
+     "b-f3fd6e8082e5"
+    ],
+    "storyline": null,
+    "first": "2026-09-11T15:04:11",
+    "last": "2026-09-11T15:04:11",
+    "actors": [
+     "European",
+     "Fire Point"
+    ],
+    "places": [
+     "Ukraine"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Breaking Defense"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-f3fd6e8082e5",
+      "source": "Breaking Defense",
+      "published_at": "2026-09-11T15:04:11",
+      "title": "CEO of Ukraine’s Fire Point: Freyja anti-ballistic missile program seeks ‘best players’",
+      "excerpt": "Iryna Terekh said that when working with European companies, she prefers those that “work and think in Ukrainian speed and [with a] Ukrainian mindset.&#8221;"
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-09-10:canada-ukraine-joint-defence-production",
+    "window": "2026-09-10",
+    "members": [
+     "b-fa4218621522"
+    ],
+    "storyline": null,
+    "first": "2026-09-11T16:26:08",
+    "last": "2026-09-11T16:26:08",
+    "actors": [
+     "Joint Ukraine Multinational Program"
+    ],
+    "places": [
+     "Canada",
+     "Ottawa",
+     "Ukraine"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Breaking Defense"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-fa4218621522",
+      "source": "Breaking Defense",
+      "published_at": "2026-09-11T16:26:08",
+      "title": "Canada, Ukraine to jointly produce defense tech, part of ‘100-year partnership’",
+      "excerpt": "Ottawa also pledged to invest approximately $350 million to purchase air defense interceptors via the Joint Ukraine Multinational Program, also known as JUMPSTART."
+     }
+    ]
+   },
+   "cosine": 0.271
+  },
+  {
+   "case": "RH015",
+   "a": {
+    "id": "2026-07-21:us-strikes-iran-night-10",
+    "window": "2026-07-21",
+    "members": [
+     "b-62b5183ea3f8",
+     "b-e1198629fdf4",
+     "b-b0ca74bb19a9"
+    ],
+    "storyline": "iran-war",
+    "first": "2026-07-21T00:06:33",
+    "last": "2026-07-21T16:10:56",
+    "actors": [
+     "Iran",
+     "Tehran",
+     "Trump",
+     "US",
+     "Washington"
+    ],
+    "places": [
+     "Bahrain",
+     "Iran",
+     "Jordan",
+     "Strait of Hormuz",
+     "US",
+     "Washington"
+    ],
+    "system_developments": [
+     3
+    ],
+    "situations": [
+     "us-iran"
+    ],
+    "sources": [
+     "Al Jazeera",
+     "BBC World"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-62b5183ea3f8",
+      "source": "Al Jazeera",
+      "published_at": "2026-07-21T00:06:33",
+      "title": "US attacks Iran for 10th consecutive night",
+      "excerpt": "Washington vows revenge for US military casualties, while Iran claims attacks on US sites across the region."
+     },
+     {
+      "item": "b-e1198629fdf4",
+      "source": "BBC World",
+      "published_at": "2026-07-21T09:48:20",
+      "title": "US launches fresh strikes on Iran, as Trump warns of retaliation for deaths of soldiers",
+      "excerpt": "Iran says it has hit two ships in the Strait of Hormuz as well as targets in Bahrain and Jordan."
+     },
+     {
+      "item": "b-b0ca74bb19a9",
+      "source": "BBC World",
+      "published_at": "2026-07-21T16:10:56",
+      "title": "US launches fresh strikes on Iran, as Trump warns of retaliation for deaths of soldiers",
+      "excerpt": "Iran says it has hit two ships in the Strait of Hormuz as well as targets in Bahrain and Jordan."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-07-21:iranian-missile-precision-analysis",
+    "window": "2026-07-21",
+    "members": [
+     "b-10a8ee30237a"
+    ],
+    "storyline": "iran-war",
+    "first": "2026-07-22T22:03:13",
+    "last": "2026-07-22T22:03:13",
+    "actors": [
+     "Iran",
+     "Tehran",
+     "Trump",
+     "US",
+     "Washington"
+    ],
+    "places": [
+     "Iran",
+     "Jordan",
+     "US"
+    ],
+    "system_developments": [
+     3
+    ],
+    "situations": [
+     "us-iran"
+    ],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-10a8ee30237a",
+      "source": "Al Jazeera",
+      "published_at": "2026-07-22T22:03:13",
+      "title": "Iranian missiles show deadly precision amid US-Iran war escalation",
+      "excerpt": "Killing of three US soldiers at Jordan base shows Iran maintains the ability to exact deadly toll in grinding conflict."
+     }
+    ]
+   },
+   "cosine": 0.653
+  },
+  {
+   "case": "RH016",
+   "a": {
+    "id": "2026-08-07:spokane-fires",
+    "window": "2026-08-07",
+    "members": [
+     "b-cb5a7c0f7932",
+     "b-335f47c383b8"
+    ],
+    "storyline": null,
+    "first": "2026-08-07T01:10:58",
+    "last": "2026-08-08T00:51:16",
+    "actors": [
+     "BBC"
+    ],
+    "places": [
+     "Spokane",
+     "US"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "BBC World"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-cb5a7c0f7932",
+      "source": "BBC World",
+      "published_at": "2026-08-07T01:10:58",
+      "title": "‘Wiped out’ - BBC reports from Spokane neighbourhood devastated by fires",
+      "excerpt": "Officials are still working to contain the blazes that have burned down at least 860 buildings, including hundreds of homes."
+     },
+     {
+      "item": "b-335f47c383b8",
+      "source": "BBC World",
+      "published_at": "2026-08-08T00:51:16",
+      "title": "Scale of devastation shocks US city's fire-seasoned residents",
+      "excerpt": "One Spokane resident tells the BBC she realised the immense danger when she heard the fire had jumped over the river."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-08-07:british-columbia-wildfire",
+    "window": "2026-08-07",
+    "members": [
+     "b-9676f37abed0",
+     "b-97c82dbe18f1"
+    ],
+    "storyline": null,
+    "first": "2026-08-08T17:14:09",
+    "last": "2026-08-08T22:01:54",
+    "actors": [],
+    "places": [
+     "British Columbia",
+     "Canada"
+    ],
+    "system_developments": [
+     17
+    ],
+    "situations": [],
+    "sources": [
+     "Al Jazeera",
+     "BBC World"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-9676f37abed0",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-08T17:14:09",
+      "title": "British Columbia issues evacuation orders ahead of fast-moving wildfires",
+      "excerpt": "Authorities warn residents to be prepared to leave their homes as fast-moving wildfires spread across western Canada."
+     },
+     {
+      "item": "b-97c82dbe18f1",
+      "source": "BBC World",
+      "published_at": "2026-08-08T22:01:54",
+      "title": "Fast-moving Canada wildfire doubles in size forcing thousands to flee homes",
+      "excerpt": "The Bald Range wildfire in British Columbia, still considered \"out of control\", has spread to more than 36 sq miles (95 sq km)."
+     }
+    ]
+   },
+   "cosine": 0.364
+  },
+  {
+   "case": "RH017",
+   "a": {
+    "id": "2026-09-10:philippines-ferry-fire",
+    "window": "2026-09-10",
+    "members": [
+     "b-bd3aa3e6530f",
+     "b-f74d648ecc35",
+     "b-489c792c634d"
+    ],
+    "storyline": "philippines-ferry-fire",
+    "first": "2026-09-10T06:30:19",
+    "last": "2026-09-11T15:41:54",
+    "actors": [
+     "Coast Guard",
+     "June Aster",
+     "Philippine Coast Guard",
+     "Philippines",
+     "Philippines Drone"
+    ],
+    "places": [
+     "Coron",
+     "Palawan",
+     "Philippines"
+    ],
+    "system_developments": [
+     2
+    ],
+    "situations": [],
+    "sources": [
+     "Al Jazeera",
+     "BBC World"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-bd3aa3e6530f",
+      "source": "BBC World",
+      "published_at": "2026-09-10T06:30:19",
+      "title": "Five dead and 86 missing as 'heartbreaking' fire breaks out on Philippines ferry",
+      "excerpt": "The fire broke out as the vessel nearing its destination at the tourist hotspot of Coron in Palawan."
+     },
+     {
+      "item": "b-f74d648ecc35",
+      "source": "Al Jazeera",
+      "published_at": "2026-09-10T10:28:44",
+      "title": "Drone video shows aftermath of deadly ferry fire off the Philippines",
+      "excerpt": "Drone video from the Philippine Coast Guard shows smoke rising from the burned out MV June Aster off Palawan."
+     },
+     {
+      "item": "b-489c792c634d",
+      "source": "Al Jazeera",
+      "published_at": "2026-09-11T15:41:54",
+      "title": "Philippines ferry fire death toll rises to 35 after bodies recovered",
+      "excerpt": "Coast Guard says 30 more bodies recovered after five people were initially confirmed dead in Wednesday&#039;s disaster."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-09-10:qingdao-cargo-ship-fire",
+    "window": "2026-09-10",
+    "members": [
+     "b-cb3c4d86185b",
+     "b-bafa52b6a583"
+    ],
+    "storyline": null,
+    "first": "2026-09-10T12:24:54",
+    "last": "2026-09-10T12:45:11",
+    "actors": [
+     "CCTV"
+    ],
+    "places": [
+     "China",
+     "China Fire",
+     "Qingdao"
+    ],
+    "system_developments": [
+     1
+    ],
+    "situations": [],
+    "sources": [
+     "Al Jazeera",
+     "BBC World"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-cb3c4d86185b",
+      "source": "BBC World",
+      "published_at": "2026-09-10T12:24:54",
+      "title": "Twenty-five dead after fire on cargo ship in eastern China",
+      "excerpt": "Of the 42 people on board, 17 were were evacuated, CCTV reports."
+     },
+     {
+      "item": "b-bafa52b6a583",
+      "source": "Al Jazeera",
+      "published_at": "2026-09-10T12:45:11",
+      "title": "At least 25 dead after cargo ship catches fire in China",
+      "excerpt": "Fire breaks out on ship being repaired in the port of Qingdao, eastern China."
+     }
+    ]
+   },
+   "cosine": 0.603
+  },
+  {
+   "case": "RH018",
+   "a": {
+    "id": "2026-08-07:japan-quake-operating-room-video",
+    "window": "2026-08-07",
+    "members": [
+     "b-061c9dc500d6",
+     "b-bef7a6e7b68f"
+    ],
+    "storyline": null,
+    "first": "2026-08-07T06:46:34",
+    "last": "2026-08-07T07:43:05",
+    "actors": [
+     "Japan Security",
+     "Kumamoto General Hospital"
+    ],
+    "places": [
+     "Japan"
+    ],
+    "system_developments": [
+     3
+    ],
+    "situations": [],
+    "sources": [
+     "Al Jazeera",
+     "BBC World"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-061c9dc500d6",
+      "source": "BBC World",
+      "published_at": "2026-08-07T06:46:34",
+      "title": "Moment earthquake shakes hospital operating room in Japan",
+      "excerpt": "Security camera footage shows doctors shielding a patient on the operating table as last month's magnitude 6.8 quake shook Kumamoto General Hospital."
+     },
+     {
+      "item": "b-bef7a6e7b68f",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-07T07:43:05",
+      "title": "Earthquake strikes as doctors perform surgery",
+      "excerpt": "A viral video shows medical staff protecting a patient as an earthquake struck Japan during surgery."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-08-07:typhoon-dolphin-okinawa",
+    "window": "2026-08-07",
+    "members": [
+     "b-516c4c8988ea"
+    ],
+    "storyline": "typhoon-dolphin",
+    "first": "2026-08-08T15:15:17",
+    "last": "2026-08-08T15:15:17",
+    "actors": [],
+    "places": [
+     "China",
+     "Japan",
+     "Okinawa"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "BBC World"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-516c4c8988ea",
+      "source": "BBC World",
+      "published_at": "2026-08-08T15:15:17",
+      "title": "Typhoon Dolphin batters Japan's Okinawa before bearing down on China",
+      "excerpt": "The storm has cut power to at least 44,000 buildings and injured five people on the Japanese island."
+     }
+    ]
+   },
+   "cosine": 0.303
+  },
+  {
+   "case": "RH019",
+   "a": {
+    "id": "2026-07-21:spain-wildfire-near-madrid",
+    "window": "2026-07-21",
+    "members": [
+     "b-d2611c6ad32f"
+    ],
+    "storyline": "spain-wildfires",
+    "first": "2026-07-21T20:17:04",
+    "last": "2026-07-21T20:17:04",
+    "actors": [],
+    "places": [
+     "Madrid Fire",
+     "Spain"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-d2611c6ad32f",
+      "source": "Al Jazeera",
+      "published_at": "2026-07-21T20:17:04",
+      "title": "Spain battles latest in series of major wildfires near Madrid",
+      "excerpt": "Fire breaks out amid Spain&#039;s third heatwave of the summer, with temperatures forecast to rise above 40C."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-07-21:spain-wildfire-drone-footage",
+    "window": "2026-07-21",
+    "members": [
+     "b-0dd4f6d6a6c1"
+    ],
+    "storyline": "spain-wildfires",
+    "first": "2026-07-21T21:21:12",
+    "last": "2026-07-21T21:21:12",
+    "actors": [],
+    "places": [
+     "Spain"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-0dd4f6d6a6c1",
+      "source": "Al Jazeera",
+      "published_at": "2026-07-21T21:21:12",
+      "title": "Drone shows scorched landscape after Spain wildfire",
+      "excerpt": "A drone has revealed what remains of this forest after a wildfire burned through over 30,000 hectares of it."
+     }
+    ]
+   },
+   "cosine": 0.459
+  },
+  {
+   "case": "RH020",
+   "a": {
+    "id": "2026-08-15:dse-candidate-lift-denied",
+    "window": "2026-08-15",
+    "members": [
+     "b-ea19e6b0abdc"
+    ],
+    "storyline": null,
+    "first": "2026-08-16T09:42:09",
+    "last": "2026-08-16T09:42:09",
+    "actors": [
+     "Caritas St Joseph Secondary School",
+     "DSE",
+     "Diploma of Secondary",
+     "Ray Lau"
+    ],
+    "places": [
+     "Hong Kong"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-ea19e6b0abdc",
+      "source": "South China Morning Post",
+      "published_at": "2026-08-16T09:42:09",
+      "title": "Exam body defends denying unwell DSE candidate access to lift before assessment",
+      "excerpt": "Hong Kong’s examination authority has defended an invigilator who refused to let a candidate with anxiety use a school lift after he started feeling unwell before his second assessment, arguing the man had not requested the facility in advance.\nSpeaking to the South China Morning Post, private candi"
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-08-15:china-flags-half-mast-zhu-funeral",
+    "window": "2026-08-15",
+    "members": [
+     "b-ad3f360d13ea"
+    ],
+    "storyline": "zhu-rongji-death",
+    "first": "2026-08-16T10:37:33",
+    "last": "2026-08-16T10:37:33",
+    "actors": [
+     "Xinhua",
+     "Zhu",
+     "Zhu Rongji"
+    ],
+    "places": [
+     "Beijing",
+     "China",
+     "Hong Kong",
+     "Macau",
+     "Tiananmen"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-ad3f360d13ea",
+      "source": "South China Morning Post",
+      "published_at": "2026-08-16T10:37:33",
+      "title": "China to fly flags at half-mast for former premier Zhu Rongji’s funeral",
+      "excerpt": "Former Chinese premier Zhu Rongji will be cremated in Beijing on Tuesday, with flags across the country – including in Hong Kong and Macau – flown at half-mast, state media reported on Sunday.\nZhu, who served as premier from 1998 to 2003 and played a pivotal role in transitioning China towards a mar"
+     }
+    ]
+   },
+   "cosine": 0.153
+  },
+  {
+   "case": "RH021",
+   "a": {
+    "id": "2026-08-15:huanggang-counterterror-drill",
+    "window": "2026-08-15",
+    "members": [
+     "b-cb9dcfe3cd42"
+    ],
+    "storyline": "huanggang-crossing",
+    "first": "2026-08-15T12:53:49",
+    "last": "2026-08-15T12:53:49",
+    "actors": [
+     "Security Bureau"
+    ],
+    "places": [
+     "Hong Kong",
+     "Huanggang"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-cb9dcfe3cd42",
+      "source": "South China Morning Post",
+      "published_at": "2026-08-15T12:53:49",
+      "title": "Hong Kong stages first counterterrorism drill at redeveloped Huanggang crossing",
+      "excerpt": "Hong Kong authorities have conducted a counterterrorism drill at the revamped Huanggang border crossing and used a new “crowd flow” test to simulate an unexpected surge in passenger numbers, with about 5,000 civil servants taking part.\nThe counterterrorism exercise on Saturday was the first such dri"
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-08-15:dse-candidate-lift-denied",
+    "window": "2026-08-15",
+    "members": [
+     "b-ea19e6b0abdc"
+    ],
+    "storyline": null,
+    "first": "2026-08-16T09:42:09",
+    "last": "2026-08-16T09:42:09",
+    "actors": [
+     "Caritas St Joseph Secondary School",
+     "DSE",
+     "Diploma of Secondary",
+     "Ray Lau"
+    ],
+    "places": [
+     "Hong Kong"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-ea19e6b0abdc",
+      "source": "South China Morning Post",
+      "published_at": "2026-08-16T09:42:09",
+      "title": "Exam body defends denying unwell DSE candidate access to lift before assessment",
+      "excerpt": "Hong Kong’s examination authority has defended an invigilator who refused to let a candidate with anxiety use a school lift after he started feeling unwell before his second assessment, arguing the man had not requested the facility in advance.\nSpeaking to the South China Morning Post, private candi"
+     }
+    ]
+   },
+   "cosine": 0.414
+  },
+  {
+   "case": "RH022",
+   "a": {
+    "id": "2026-09-10:iran-war-live-sirik",
+    "window": "2026-09-10",
+    "members": [
+     "b-e9e75a56ed8a"
+    ],
+    "storyline": "iran-war",
+    "first": "2026-09-10T00:00:00",
+    "last": "2026-09-10T00:00:00",
+    "actors": [],
+    "places": [
+     "Iran",
+     "Sirik",
+     "Tehran"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": true,
+    "evidence": [
+     {
+      "item": "b-e9e75a56ed8a",
+      "source": "Al Jazeera",
+      "published_at": "2026-09-10T00:00:00",
+      "title": "Iran war live: Iran media say ‘enemy’ projectiles hit Sirik areas",
+      "excerpt": "Tehran says ready for dialogue with nations in the region to &#039;foster mutual trust&#039; and &#039;achieve sustainable security&#039;."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-09-10:trump-iran-war-until-after-elections",
+    "window": "2026-09-10",
+    "members": [
+     "b-515ef676c1f6"
+    ],
+    "storyline": "iran-war",
+    "first": "2026-09-10T10:43:53",
+    "last": "2026-09-10T10:43:53",
+    "actors": [
+     "Trump"
+    ],
+    "places": [
+     "Iran"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "BBC World"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-515ef676c1f6",
+      "source": "BBC World",
+      "published_at": "2026-09-10T10:43:53",
+      "title": "Iran war won't end until after crucial November elections, says Trump",
+      "excerpt": "The president also said oil prices won't come down until after the November races, claiming without evidence that Iran wants to impact the election."
+     }
+    ]
+   },
+   "cosine": 0.406
+  },
+  {
+   "case": "RH023",
+   "a": {
+    "id": "2026-08-07:russian-drones-target-medics",
+    "window": "2026-08-07",
+    "members": [
+     "b-c7995a8a5210"
+    ],
+    "storyline": "russia-ukraine-war",
+    "first": "2026-08-08T00:02:49",
+    "last": "2026-08-08T00:02:49",
+    "actors": [],
+    "places": [
+     "Russia",
+     "Ukraine"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "BBC World"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-c7995a8a5210",
+      "source": "BBC World",
+      "published_at": "2026-08-08T00:02:49",
+      "title": "'I ran because I knew I would die': Russian drones target medics in Ukraine",
+      "excerpt": "Ukrainian emergency workers warn of growing Russian attacks on hospitals and ambulances."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-08-07:drones-bulgaria-germany",
+    "window": "2026-08-07",
+    "members": [
+     "b-dcd8f3a3d918"
+    ],
+    "storyline": "russia-hybrid-europe",
+    "first": "2026-08-08T12:30:52",
+    "last": "2026-08-08T12:30:52",
+    "actors": [
+     "NATO"
+    ],
+    "places": [
+     "Bulgaria",
+     "Europe",
+     "Germany",
+     "Kyiv",
+     "Moscow",
+     "Russia"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-dcd8f3a3d918",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-08T12:30:52",
+      "title": "Drones spotted in Bulgaria and Germany raise concerns about Russian escalation",
+      "excerpt": "Drone incidents in Europe igniting fears that Moscow&#039;s war on Kyiv is entangling NATO nations."
+     }
+    ]
+   },
+   "cosine": 0.566
+  },
+  {
+   "case": "RH024",
+   "a": {
+    "id": "2026-08-15:hk-scam-runners-arrests",
+    "window": "2026-08-15",
+    "members": [
+     "b-ffffd5354de8"
+    ],
+    "storyline": null,
+    "first": "2026-08-16T10:03:46",
+    "last": "2026-08-16T10:03:46",
+    "actors": [],
+    "places": [
+     "HK$700,000",
+     "Hong Kong",
+     "Kowloon West",
+     "Malaysia"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-ffffd5354de8",
+      "source": "South China Morning Post",
+      "published_at": "2026-08-16T10:03:46",
+      "title": "17 arrested, HK$3.67m seized in crackdown on scam group using Malaysian ‘runners’",
+      "excerpt": "Hong Kong police have arrested 17 people and seized HK$3.67 million (US$470,500) in a crackdown on a fraud syndicate that recruited foreign “runners” from Malaysia to collect crime proceeds from victims.\nThe police force’s Kowloon West crime squad said on Sunday that the arrests were made in connect"
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-08-15:hk-juvenile-crime-arrests",
+    "window": "2026-08-15",
+    "members": [
+     "b-03f88fdb9e89"
+    ],
+    "storyline": null,
+    "first": "2026-08-16T12:54:43",
+    "last": "2026-08-16T12:54:43",
+    "actors": [],
+    "places": [
+     "Hong Kong",
+     "New Territories South"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-03f88fdb9e89",
+      "source": "South China Morning Post",
+      "published_at": "2026-08-16T12:54:43",
+      "title": "Boy, 13, among 16 arrested as Hong Kong police tackle juvenile crime",
+      "excerpt": "Hong Kong police have arrested 16 people as part of efforts to clamp down on juvenile crime, with those apprehended including a 13‑year‑old boy linked to a shoplifting case involving stolen goods worth about HK$4,000 (US$510).\nOfficers from the force’s New Territories South regional headquarters sai"
+     }
+    ]
+   },
+   "cosine": 0.698
+  },
+  {
+   "case": "RH025",
+   "a": {
+    "id": "2026-09-10:republicans-divided-economy-rnc",
+    "window": "2026-09-10",
+    "members": [
+     "b-80630ed6082f"
+    ],
+    "storyline": "gop-midterm-convention",
+    "first": "2026-09-10T00:33:12",
+    "last": "2026-09-10T00:33:12",
+    "actors": [
+     "Adolfo Franco",
+     "GOP",
+     "RNC",
+     "Republicans",
+     "Rina Shah",
+     "Trump"
+    ],
+    "places": [],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-80630ed6082f",
+      "source": "Al Jazeera",
+      "published_at": "2026-09-10T00:33:12",
+      "title": "Republicans divided over Trump’s economy as RNC begins",
+      "excerpt": "Republican strategist Adolfo Franco and GOP adviser Rina Shah clash over Trump’s handling of the economy."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-09-10:trump-convention-5000-pledge",
+    "window": "2026-09-10",
+    "members": [
+     "b-92a3a7b5a11e"
+    ],
+    "storyline": "gop-midterm-convention",
+    "first": "2026-09-10T13:23:37",
+    "last": "2026-09-10T13:23:37",
+    "actors": [
+     "Republicans",
+     "Trump"
+    ],
+    "places": [
+     "US"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "BBC World"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-92a3a7b5a11e",
+      "source": "BBC World",
+      "published_at": "2026-09-10T13:23:37",
+      "title": "Trump says every adult American will get $5,000 if Republicans win midterms",
+      "excerpt": "Speaking at a party convention, the US president gave no details on how the plan would work or where the money would come from."
+     }
+    ]
+   },
+   "cosine": 0.427
+  },
+  {
+   "case": "RH026",
+   "a": {
+    "id": "2026-08-07:ogles-loses-primary",
+    "window": "2026-08-07",
+    "members": [
+     "b-45315238ef4d"
+    ],
+    "storyline": "tennessee-primary",
+    "first": "2026-08-07T04:04:45",
+    "last": "2026-08-07T04:04:45",
+    "actors": [
+     "Andy Ogles",
+     "Anti-Muslim",
+     "Muslims",
+     "Republican",
+     "Trump"
+    ],
+    "places": [
+     "Tennessee",
+     "US"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-45315238ef4d",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-07T04:04:45",
+      "title": "Anti-Muslim US Congressman Andy Ogles loses Republican primary",
+      "excerpt": "Trump&#039;s endorsement fails to save Tennessee legislator who recently said &#039;Muslims don&#039;t belong in American society&#039;."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-08-07:todd-blanche-confirmed-ag",
+    "window": "2026-08-07",
+    "members": [
+     "b-d9366bf067ee",
+     "b-07f3a6b14eeb"
+    ],
+    "storyline": null,
+    "first": "2026-08-08T15:56:39",
+    "last": "2026-08-08T21:04:54",
+    "actors": [
+     "Republican",
+     "Todd Blanche",
+     "Trump"
+    ],
+    "places": [
+     "US"
+    ],
+    "system_developments": [
+     15
+    ],
+    "situations": [],
+    "sources": [
+     "Al Jazeera",
+     "BBC World"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-d9366bf067ee",
+      "source": "BBC World",
+      "published_at": "2026-08-08T15:56:39",
+      "title": "Trump's ex-lawyer Todd Blanche narrowly confirmed as US attorney general",
+      "excerpt": "The vote cements Trump's former criminal defence lawyer as the nation's top law enforcement official despite a rare pushback from some Republicans."
+     },
+     {
+      "item": "b-07f3a6b14eeb",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-08T21:04:54",
+      "title": "Trump’s Former Lawyer Is Now Attorney General",
+      "excerpt": "Todd Blanche, President Trump’s former lawyer, is now US attorney general."
+     }
+    ]
+   },
+   "cosine": 0.267
+  },
+  {
+   "case": "RH027",
+   "a": {
+    "id": "2026-09-10:russia-jet-drones-outpace-defences",
+    "window": "2026-09-10",
+    "members": [
+     "b-8ea8918e30da"
+    ],
+    "storyline": "russia-ukraine-war",
+    "first": "2026-09-10T04:43:54",
+    "last": "2026-09-10T04:43:54",
+    "actors": [],
+    "places": [
+     "Russia",
+     "Ukraine"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "BBC World"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-8ea8918e30da",
+      "source": "BBC World",
+      "published_at": "2026-09-10T04:43:54",
+      "title": "Russia's new jet-powered drones outpacing Ukraine's air defences with daily launches",
+      "excerpt": "The new models can travel at speeds of up to 300mph, faster than Ukraine's air defence interceptors."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-09-10:fire-point-freyja-program",
+    "window": "2026-09-10",
+    "members": [
+     "b-f3fd6e8082e5"
+    ],
+    "storyline": null,
+    "first": "2026-09-11T15:04:11",
+    "last": "2026-09-11T15:04:11",
+    "actors": [
+     "European",
+     "Fire Point"
+    ],
+    "places": [
+     "Ukraine"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Breaking Defense"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-f3fd6e8082e5",
+      "source": "Breaking Defense",
+      "published_at": "2026-09-11T15:04:11",
+      "title": "CEO of Ukraine’s Fire Point: Freyja anti-ballistic missile program seeks ‘best players’",
+      "excerpt": "Iryna Terekh said that when working with European companies, she prefers those that “work and think in Ukrainian speed and [with a] Ukrainian mindset.&#8221;"
+     }
+    ]
+   },
+   "cosine": 0.371
+  },
+  {
+   "case": "RH028",
+   "a": {
+    "id": "2026-08-07:kurdistan-barzani-stay-out",
+    "window": "2026-08-07",
+    "members": [
+     "b-b982a13c17bc"
+    ],
+    "storyline": "iran-war-hormuz",
+    "first": "2026-08-08T14:58:42",
+    "last": "2026-08-08T14:58:42",
+    "actors": [
+     "Al Jazeera",
+     "Barzani",
+     "Kurdish",
+     "Masrour Barzani"
+    ],
+    "places": [
+     "Iran",
+     "Iraq"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-b982a13c17bc",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-08T14:58:42",
+      "title": "Iraq’s Kurdish region wants to stay out of regional conflicts: PM Barzani",
+      "excerpt": "In an interview with Al Jazeera, Masrour Barzani denies any &#039;pressure&#039; to enter the Iran war despite over 1,000 attacks."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-08-07:uae-adnoc-tanker-strike",
+    "window": "2026-08-07",
+    "members": [
+     "b-10af2d89ec91"
+    ],
+    "storyline": "iran-war-hormuz",
+    "first": "2026-08-08T15:01:29",
+    "last": "2026-08-08T15:01:29",
+    "actors": [
+     "ADNOC",
+     "Arab"
+    ],
+    "places": [
+     "Gulf",
+     "Iran",
+     "Strait of Hormuz",
+     "United Arab Emirates"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-10af2d89ec91",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-08T15:01:29",
+      "title": "UAE says Iran targeted ADNOC tanker in Strait of Hormuz, no casualties",
+      "excerpt": "Gulf and Arab governments condemn Iran over missile strike on Emirati tanker."
+     }
+    ]
+   },
+   "cosine": 0.324
+  },
+  {
+   "case": "RH029",
+   "a": {
+    "id": "2026-08-07:iran-war-live-0807",
+    "window": "2026-08-07",
+    "members": [
+     "b-9f2919e55685"
+    ],
+    "storyline": "iran-war-hormuz",
+    "first": "2026-08-07T00:00:00",
+    "last": "2026-08-07T00:00:00",
+    "actors": [
+     "Trump"
+    ],
+    "places": [
+     "Hormuz",
+     "Iran",
+     "Oman",
+     "Strait of Hormuz",
+     "US"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": true,
+    "evidence": [
+     {
+      "item": "b-9f2919e55685",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-07T00:00:00",
+      "title": "Iran war live: Trump expects war to end ‘pretty soon’; Hormuz deal close",
+      "excerpt": "The US, Iran and Oman are close to a temporary deal to reopen the Strait of Hormuz."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-08-07:uae-adnoc-tanker-strike",
+    "window": "2026-08-07",
+    "members": [
+     "b-10af2d89ec91"
+    ],
+    "storyline": "iran-war-hormuz",
+    "first": "2026-08-08T15:01:29",
+    "last": "2026-08-08T15:01:29",
+    "actors": [
+     "ADNOC",
+     "Arab"
+    ],
+    "places": [
+     "Gulf",
+     "Iran",
+     "Strait of Hormuz",
+     "United Arab Emirates"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-10af2d89ec91",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-08T15:01:29",
+      "title": "UAE says Iran targeted ADNOC tanker in Strait of Hormuz, no casualties",
+      "excerpt": "Gulf and Arab governments condemn Iran over missile strike on Emirati tanker."
+     }
+    ]
+   },
+   "cosine": 0.481
+  },
+  {
+   "case": "RH030",
+   "a": {
+    "id": "2026-09-10:trump-ireland-visit-gaza-protests",
+    "window": "2026-09-10",
+    "members": [
+     "b-aade68afb0f4"
+    ],
+    "storyline": null,
+    "first": "2026-09-11T14:09:52",
+    "last": "2026-09-11T14:09:52",
+    "actors": [
+     "Connolly",
+     "Trump"
+    ],
+    "places": [
+     "Gaza",
+     "Ireland",
+     "US"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-aade68afb0f4",
+      "source": "Al Jazeera",
+      "published_at": "2026-09-11T14:09:52",
+      "title": "‘Majority do not welcome him’: Trump heads to Ireland amid fury over Gaza",
+      "excerpt": "Protests set to erupt across Ireland, where President Connolly has long regarded the US as an untrustworthy power."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-09-10:ryanair-dublin-wingtip-strike",
+    "window": "2026-09-10",
+    "members": [
+     "b-cf01079abe03"
+    ],
+    "storyline": null,
+    "first": "2026-09-11T16:27:24",
+    "last": "2026-09-11T16:27:24",
+    "actors": [
+     "Boeing",
+     "Ryanair"
+    ],
+    "places": [
+     "Dublin"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-cf01079abe03",
+      "source": "Al Jazeera",
+      "published_at": "2026-09-11T16:27:24",
+      "title": "Passenger plane aborts landing after wing clips Dublin runway",
+      "excerpt": "A passenger aboard a Ryanair Boeing 737 recorded the moment the aircraft’s wingtip struck the runway at Dublin airport."
+     }
+    ]
+   },
+   "cosine": 0.231
+  },
+  {
+   "case": "RH031",
+   "a": {
+    "id": "2026-09-10:ukraine-arctic-gas-strike",
+    "window": "2026-09-10",
+    "members": [
+     "b-c7022b8efec2"
+    ],
+    "storyline": "russia-ukraine-war",
+    "first": "2026-09-10T10:38:53",
+    "last": "2026-09-10T10:38:53",
+    "actors": [],
+    "places": [
+     "Arctic",
+     "Russia",
+     "Ukraine"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-c7022b8efec2",
+      "source": "Al Jazeera",
+      "published_at": "2026-09-10T10:38:53",
+      "title": "How Ukraine’s deepest attack in Russia, on Arctic gas, signals new reach",
+      "excerpt": "Long-range Ukrainian drones hit Russia&#039;s key gas plants, raising questions about the conflict&#039;s next phase."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-09-10:ukrainian-armor-saigak-german-partner",
+    "window": "2026-09-10",
+    "members": [
+     "b-c729525385ef"
+    ],
+    "storyline": null,
+    "first": "2026-09-10T13:29:15",
+    "last": "2026-09-10T13:29:15",
+    "actors": [],
+    "places": [
+     "Germany",
+     "Ukraine"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Breaking Defense"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-c729525385ef",
+      "source": "Breaking Defense",
+      "published_at": "2026-09-10T13:29:15",
+      "title": "Ukrainian Armor eyes German industry partnership for newly unveiled land vehicles",
+      "excerpt": "The Saigak APC features an active protection system that the company says can defeat up to 20 First Person View (FPV) drones, amid a proliferation of the aircraft dominating the war in Ukraine."
+     }
+    ]
+   },
+   "cosine": 0.212
+  },
+  {
+   "case": "RH032",
+   "a": {
+    "id": "2026-08-15:zhu-rongji-opinion",
+    "window": "2026-08-15",
+    "members": [
+     "b-d6fcd67abf97"
+    ],
+    "storyline": "zhu-rongji-death",
+    "first": "2026-08-15T12:30:06",
+    "last": "2026-08-15T12:30:06",
+    "actors": [
+     "National Committee",
+     "Sino-American",
+     "Zhu",
+     "Zhu Rongji"
+    ],
+    "places": [
+     "China",
+     "Shanghai",
+     "US"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-d6fcd67abf97",
+      "source": "South China Morning Post",
+      "published_at": "2026-08-15T12:30:06",
+      "title": "Zhu Rongji’s death a reminder of what US-China relations have lost",
+      "excerpt": "With the death of former Chinese premier Zhu Rongji, both China and the wider world have lost a great leader.\nZhu took personal risks for better US-China ties. He believed that productive Sino-American relations were good for China and for the world.\nHe was a global leader before China had achieved "
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-08-15:hk-flags-half-staff-zhu",
+    "window": "2026-08-15",
+    "members": [
+     "b-3524ce2d40c3"
+    ],
+    "storyline": "zhu-rongji-death",
+    "first": "2026-08-16T09:54:02",
+    "last": "2026-08-16T09:54:02",
+    "actors": [
+     "Admiralty, Government House",
+     "Xinhua",
+     "Zhu",
+     "Zhu Rongji",
+     "Zhu Rongji Hong Kong"
+    ],
+    "places": [
+     "China",
+     "Hong Kong",
+     "Hong Kong International Airport"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-3524ce2d40c3",
+      "source": "South China Morning Post",
+      "published_at": "2026-08-16T09:54:02",
+      "title": "Flags to fly at half-staff in Hong Kong as tribute to late ex-premier Zhu Rongji",
+      "excerpt": "Hong Kong will fly the national and regional flags at half-staff at various government sites on Tuesday to mourn the late former Chinese premier Zhu Rongji.\nThe government said on Sunday it would lower the flags at government headquarters in Admiralty, Government House, all control points and checkp"
+     }
+    ]
+   },
+   "cosine": 0.319
+  },
+  {
+   "case": "RH033",
+   "a": {
+    "id": "2026-07-21:skyroot-orbital-launch",
+    "window": "2026-07-21",
+    "members": [
+     "b-c65974bd9a4b"
+    ],
+    "storyline": null,
+    "first": "2026-07-21T04:00:15",
+    "last": "2026-07-21T04:00:15",
+    "actors": [
+     "Satish Dhawan Space Centre",
+     "Skyroot Aerospace",
+     "Sriharikota"
+    ],
+    "places": [
+     "Andhra Pradesh",
+     "China",
+     "India",
+     "Skyroot",
+     "US"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-c65974bd9a4b",
+      "source": "South China Morning Post",
+      "published_at": "2026-07-21T04:00:15",
+      "title": "India joins China, US in commercial space race with Skyroot launch",
+      "excerpt": "India’s first privately developed orbital rocket has given the country’s fledgling commercial space industry a long-sought proof point, but analysts say Skyroot Aerospace must now show it can launch regularly, cheaply and reliably enough to win customers in a crowded global market.\nSkyroot’s Vikram-"
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-07-21:us-strikes-iran-night-11",
+    "window": "2026-07-21",
+    "members": [
+     "b-5b33b184a58a",
+     "b-5b08b2c38cf2"
+    ],
+    "storyline": "iran-war",
+    "first": "2026-07-21T23:46:00",
+    "last": "2026-07-22T05:05:25",
+    "actors": [
+     "Iran",
+     "Tehran",
+     "Trump",
+     "US",
+     "Washington"
+    ],
+    "places": [
+     "Iran",
+     "Tabriz",
+     "Tehran",
+     "US"
+    ],
+    "system_developments": [
+     3
+    ],
+    "situations": [
+     "us-iran"
+    ],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-5b33b184a58a",
+      "source": "Al Jazeera",
+      "published_at": "2026-07-21T23:46:00",
+      "title": "US attacks Iran for 11th consecutive night",
+      "excerpt": "Explosions reported in northwestern Iran&#039;s Tabriz, capital Tehran and across southern Iran."
+     },
+     {
+      "item": "b-5b08b2c38cf2",
+      "source": "Al Jazeera",
+      "published_at": "2026-07-22T05:05:25",
+      "title": "US expands strikes on 11th straight night of attacks",
+      "excerpt": "The US military’s 11th consecutive night of strikes extended to Iranian provinces not previously hit."
+     }
+    ]
+   },
+   "cosine": 0.095
+  },
+  {
+   "case": "RH034",
+   "a": {
+    "id": "2026-08-15:europe-drought-satellite",
+    "window": "2026-08-15",
+    "members": [
+     "b-3cd319f6aab5"
+    ],
+    "storyline": null,
+    "first": "2026-08-16T07:46:22",
+    "last": "2026-08-16T07:46:22",
+    "actors": [
+     "Danube",
+     "Rhine"
+    ],
+    "places": [
+     "Europe"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-3cd319f6aab5",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-16T07:46:22",
+      "title": "New satellite images show Europe’s disappearing rivers due to drought",
+      "excerpt": "Half of Europe’s land is experiencing drought with rivers running low from the Danube to the Rhine."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-08-15:belgium-record-wildfire",
+    "window": "2026-08-15",
+    "members": [
+     "b-5aa5a7816cb1",
+     "b-41be8569ea90"
+    ],
+    "storyline": null,
+    "first": "2026-08-16T10:09:40",
+    "last": "2026-08-16T12:35:31",
+    "actors": [
+     "Belgium",
+     "European Union"
+    ],
+    "places": [
+     "Belgium",
+     "Germany"
+    ],
+    "system_developments": [
+     8
+    ],
+    "situations": [],
+    "sources": [
+     "Al Jazeera",
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-5aa5a7816cb1",
+      "source": "South China Morning Post",
+      "published_at": "2026-08-16T10:09:40",
+      "title": "Belgium battles worst wildfire on record, EU allies come to aid",
+      "excerpt": "Firefighters battling Belgium’s largest modern-day wildfire were counting on crucial air support on Sunday to help tame the blaze in a hard-to-access nature reserve, after it doubled in size over the previous 24 hours.\nMore than 250 firefighters and emergency personnel were mobilised through the nig"
+     },
+     {
+      "item": "b-41be8569ea90",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-16T12:35:31",
+      "title": "Belgium’s largest wildfire on record spreads towards German border",
+      "excerpt": "Largest recorded wildfire in Belgium forces 600 residents to evacuate as blaze spreads towards German border towns."
+     }
+    ]
+   },
+   "cosine": 0.181
+  },
+  {
+   "case": "RH035",
+   "a": {
+    "id": "2026-08-07:saudi-intel-chief-meets-iraqi-pm",
+    "window": "2026-08-07",
+    "members": [
+     "b-d02076a07db1"
+    ],
+    "storyline": "iran-war-hormuz",
+    "first": "2026-08-08T03:42:43",
+    "last": "2026-08-08T03:42:43",
+    "actors": [
+     "Ali al-Zaidi"
+    ],
+    "places": [
+     "Iraq",
+     "Riyadh",
+     "Saudi Arabia",
+     "US"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-d02076a07db1",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-08T03:42:43",
+      "title": "Saudi intelligence chief meets Iraqi PM, renews Riyadh visit invitation",
+      "excerpt": "Prime Minister Ali al-Zaidi had cancelled an earlier Saudi trip after deadly July 29 US-Saudi strikes on Iraq."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-08-07:vance-iran-nuclear-destroyed",
+    "window": "2026-08-07",
+    "members": [
+     "b-d330b0efa20d"
+    ],
+    "storyline": "iran-war-hormuz",
+    "first": "2026-08-08T23:27:55",
+    "last": "2026-08-08T23:27:55",
+    "actors": [
+     "JD Vance",
+     "Vance"
+    ],
+    "places": [
+     "Iran",
+     "US",
+     "Washington"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-d330b0efa20d",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-08T23:27:55",
+      "title": "Vance says US ‘destroyed’ Iran’s nuclear programme",
+      "excerpt": "US Vice President JD Vance claims Washington has “destroyed” Iran’s nuclear programme and degraded its military."
+     }
+    ]
+   },
+   "cosine": 0.331
+  },
+  {
+   "case": "RH036",
+   "a": {
+    "id": "2026-08-15:qusra-settler-siege",
+    "window": "2026-08-15",
+    "members": [
+     "b-fd3faf34113a",
+     "b-5ffcea5460ad"
+    ],
+    "storyline": "qusra-siege",
+    "first": "2026-08-15T15:48:07",
+    "last": "2026-08-16T17:18:00",
+    "actors": [],
+    "places": [
+     "Israel",
+     "Palestine",
+     "Qusra",
+     "West Bank"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-fd3faf34113a",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-15T15:48:07",
+      "title": "Israeli settlers besiege Palestinian families in occupied West Bank",
+      "excerpt": "Three Palestinian families say they have been trapped inside their homes in the occupied West Bank for nearly a week."
+     },
+     {
+      "item": "b-5ffcea5460ad",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-16T17:18:00",
+      "title": "‘Water and salt’: Qusra residents trapped in Israeli settler siege",
+      "excerpt": "Israeli settlers and soldiers besiege Qusra families for eight days, blocking water and aid."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-08-15:israel-strikes-nabatieh-families-flee",
+    "window": "2026-08-15",
+    "members": [
+     "b-ddfb1a515624"
+    ],
+    "storyline": "israel-lebanon-strikes",
+    "first": "2026-08-16T04:43:21",
+    "last": "2026-08-16T04:43:21",
+    "actors": [
+     "Israel"
+    ],
+    "places": [
+     "Israel",
+     "Lebanon",
+     "Nabatieh"
+    ],
+    "system_developments": [
+     6
+    ],
+    "situations": [
+     "gaza-ceasefire"
+    ],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-ddfb1a515624",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-16T04:43:21",
+      "title": "Israel strikes south Lebanon again as families flee north",
+      "excerpt": "Israeli airstrikes hit the Nabatieh district of southern Lebanon just hours after the deadliest day of Israeli raids."
+     }
+    ]
+   },
+   "cosine": 0.407
+  },
+  {
+   "case": "RH037",
+   "a": {
+    "id": "2026-07-21:us-iran-mediation-analysis",
+    "window": "2026-07-21",
+    "members": [
+     "b-1ffec8f335f5"
+    ],
+    "storyline": "iran-war",
+    "first": "2026-07-21T19:27:26",
+    "last": "2026-07-21T19:27:26",
+    "actors": [],
+    "places": [
+     "Iran",
+     "US"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-1ffec8f335f5",
+      "source": "Al Jazeera",
+      "published_at": "2026-07-21T19:27:26",
+      "title": "Can mediators broker a truce between the US and Iran?",
+      "excerpt": "With every new round of attacks raising political cost of compromise, analysts warn the window for peace may be closing."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-07-21:hegseth-senate-hearing-war-cost",
+    "window": "2026-07-21",
+    "members": [
+     "b-3571bce42329",
+     "b-395d3f820687",
+     "b-95434c91044d",
+     "b-8ec024eff40d"
+    ],
+    "storyline": "iran-war",
+    "first": "2026-07-21T21:17:06",
+    "last": "2026-07-22T15:52:54",
+    "actors": [
+     "Caine",
+     "Democrats",
+     "Donald Trump",
+     "Hegseth",
+     "Pete Hegseth",
+     "Republican",
+     "US",
+     "US Department of Defense",
+     "US House of Representatives",
+     "US Senate"
+    ],
+    "places": [
+     "Iran",
+     "Michigan",
+     "Tehran",
+     "US"
+    ],
+    "system_developments": [
+     9
+    ],
+    "situations": [],
+    "sources": [
+     "Al Jazeera",
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-3571bce42329",
+      "source": "Al Jazeera",
+      "published_at": "2026-07-21T21:17:06",
+      "title": "US defence chief Hegseth puts Iran war cost at $37.5bn so far",
+      "excerpt": "Latest cost comes as Hegseth and Joint Chiefs Chairman Caine seek a $1.5 trillion budget, including $70bn for Iran war."
+     },
+     {
+      "item": "b-395d3f820687",
+      "source": "South China Morning Post",
+      "published_at": "2026-07-21T23:50:21",
+      "title": "US war in Iran has cost US$37.5 billion so far, Pentagon chief Hegseth says",
+      "excerpt": "The cost of the United States’ war in Iran has risen to US$37.5 billion so far, US Defence Secretary Pete Hegseth said on Tuesday, as he faced sceptical lawmakers for the first time since heavy bombings resumed to seek urgent funding for the unpopular conflict.\nWith just six months before midterm el"
+     },
+     {
+      "item": "b-95434c91044d",
+      "source": "Al Jazeera",
+      "published_at": "2026-07-22T05:02:51",
+      "title": "Hegseth called a ‘failure’ over Iran as he reveals $37b cost of war",
+      "excerpt": "US Defense Secretary Pete Hegseth gets into a heated exchange after being called a failed leader by Michigan Senator."
+     },
+     {
+      "item": "b-8ec024eff40d",
+      "source": "Al Jazeera",
+      "published_at": "2026-07-22T15:52:54",
+      "title": "War on Iran: Hegseth wants $70B more to keep fighting",
+      "excerpt": "Iran activated air defence systems across Tehran on the 11th night of US strikes."
+     }
+    ]
+   },
+   "cosine": 0.345
+  },
+  {
+   "case": "RH038",
+   "a": {
+    "id": "2026-08-07:iran-oman-hormuz-route-coordinates",
+    "window": "2026-08-07",
+    "members": [
+     "b-66dda2ce2fec"
+    ],
+    "storyline": "iran-war-hormuz",
+    "first": "2026-08-08T13:52:40",
+    "last": "2026-08-08T13:52:40",
+    "actors": [
+     "Iran",
+     "Oman"
+    ],
+    "places": [
+     "Hormuz",
+     "Iran",
+     "Oman",
+     "Strait of Hormuz",
+     "US"
+    ],
+    "system_developments": [
+     13
+    ],
+    "situations": [
+     "us-iran"
+    ],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-66dda2ce2fec",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-08T13:52:40",
+      "title": "Iran deliberates Hormuz arrangement amid uncertain prospects with US",
+      "excerpt": "Iran and Oman have agreed on the coordinates of routes to be taken by vessels through the Strait of Hormuz."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-08-07:war-on-iran-day-28-roundup",
+    "window": "2026-08-07",
+    "members": [
+     "b-6de24cc00a4b"
+    ],
+    "storyline": "iran-war-hormuz",
+    "first": "2026-08-08T14:09:02",
+    "last": "2026-08-08T14:09:02",
+    "actors": [],
+    "places": [
+     "Hormuz",
+     "Iran",
+     "Oman",
+     "Saudi Arabia"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": true,
+    "evidence": [
+     {
+      "item": "b-6de24cc00a4b",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-08T14:09:02",
+      "title": "War on Iran: Phase II: Day 28",
+      "excerpt": "Saudi-Pakistan-Turkiye pact draws mixed reactions, as Iran and Oman agree a Hormuz security framework."
+     }
+    ]
+   },
+   "cosine": 0.62
+  },
+  {
+   "case": "RH039",
+   "a": {
+    "id": "2026-07-21:wotr-iran-war-us-relations",
+    "window": "2026-07-21",
+    "members": [
+     "b-ec25c31da891"
+    ],
+    "storyline": "iran-war",
+    "first": "2026-07-21T17:30:04",
+    "last": "2026-07-21T17:30:04",
+    "actors": [
+     "Donald Trump",
+     "Jenny Town",
+     "Key U.S. Relations",
+     "NorthSouth Korea"
+    ],
+    "places": [
+     "France",
+     "India",
+     "Iran",
+     "Middle East",
+     "South Korea",
+     "Stimson Center",
+     "Strait of Hormuz",
+     "US",
+     "Ukraine",
+     "United Kingdom"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "War on the Rocks"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-ec25c31da891",
+      "source": "War on the Rocks",
+      "published_at": "2026-07-21T17:30:04",
+      "title": "How the War with Iran is Shaping Key U.S. Relations Beyond the Middle East",
+      "excerpt": "The&#160;U.S. war with Iran has had political, economic, and military implications that spread far beyond the Middle East. We asked five experts to assess how the war with Iran has affected U.S. bilateral relations with key countries that illustrate some of the global ramifications: South Korea, Ind"
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-07-21:kuwait-electricity-rationing",
+    "window": "2026-07-21",
+    "members": [
+     "b-7922869d5450"
+    ],
+    "storyline": "iran-war",
+    "first": "2026-07-21T20:06:57",
+    "last": "2026-07-21T20:06:57",
+    "actors": [],
+    "places": [
+     "Iran",
+     "Kuwait"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-7922869d5450",
+      "source": "Al Jazeera",
+      "published_at": "2026-07-21T20:06:57",
+      "title": "Kuwaitis ration electricity after Iranian strikes hit power grid",
+      "excerpt": "Kuwaitis are rationing electricity after Iranian strikes on power infrastructure are raising fears of outages"
+     }
+    ]
+   },
+   "cosine": 0.303
+  },
+  {
+   "case": "RH040",
+   "a": {
+    "id": "2026-08-15:scs-ecological-report",
+    "window": "2026-08-15",
+    "members": [
+     "b-95726dc6c0e9"
+    ],
+    "storyline": null,
+    "first": "2026-08-15T11:45:14",
+    "last": "2026-08-15T11:45:14",
+    "actors": [],
+    "places": [
+     "Beijing",
+     "China",
+     "South China Sea",
+     "US",
+     "Washington"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-95726dc6c0e9",
+      "source": "South China Morning Post",
+      "published_at": "2026-08-15T11:45:14",
+      "title": "Beijing issues ecological report to solidify South China Sea claims amid US row",
+      "excerpt": "China has published ecological assessment reports on nine disputed South China Sea features, amid an escalating row with Washington over Beijing’s establishment of a “national nature reserve” in the contested waters.\nOn Friday, the Ministry of Natural Resources’ South China Sea Bureau issued its 202"
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-08-15:beijing-manila-worker-arrests",
+    "window": "2026-08-15",
+    "members": [
+     "b-ddd7df3c2a42"
+    ],
+    "storyline": null,
+    "first": "2026-08-16T08:00:12",
+    "last": "2026-08-16T08:00:12",
+    "actors": [
+     "Defence",
+     "Ferdinand Marcos Jnr",
+     "Gilberto Teodoro Jnr",
+     "Misamis Oriental",
+     "Philippine",
+     "Teodoro"
+    ],
+    "places": [
+     "Beijing",
+     "China",
+     "Manila",
+     "South China Sea"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-ddd7df3c2a42",
+      "source": "South China Morning Post",
+      "published_at": "2026-08-16T08:00:12",
+      "title": "Beijing and Manila clash over arrests of ‘illegal’ workers as tensions worsen",
+      "excerpt": "Tensions between Beijing and Manila appear to have spilled over from the South China Sea to immigration, just as Philippine President Ferdinand Marcos Jnr indicated he wanted to “reset” ties.\nManila on Sunday dismissed Beijing’s criticism of Defence Secretary Gilberto Teodoro Jnr over his role in th"
+     }
+    ]
+   },
+   "cosine": 0.276
+  },
+  {
+   "case": "RH041",
+   "a": {
+    "id": "2026-07-21:us-strikes-iran-night-10",
+    "window": "2026-07-21",
+    "members": [
+     "b-62b5183ea3f8",
+     "b-e1198629fdf4",
+     "b-b0ca74bb19a9"
+    ],
+    "storyline": "iran-war",
+    "first": "2026-07-21T00:06:33",
+    "last": "2026-07-21T16:10:56",
+    "actors": [
+     "Iran",
+     "Tehran",
+     "Trump",
+     "US",
+     "Washington"
+    ],
+    "places": [
+     "Bahrain",
+     "Iran",
+     "Jordan",
+     "Strait of Hormuz",
+     "US",
+     "Washington"
+    ],
+    "system_developments": [
+     3
+    ],
+    "situations": [
+     "us-iran"
+    ],
+    "sources": [
+     "Al Jazeera",
+     "BBC World"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-62b5183ea3f8",
+      "source": "Al Jazeera",
+      "published_at": "2026-07-21T00:06:33",
+      "title": "US attacks Iran for 10th consecutive night",
+      "excerpt": "Washington vows revenge for US military casualties, while Iran claims attacks on US sites across the region."
+     },
+     {
+      "item": "b-e1198629fdf4",
+      "source": "BBC World",
+      "published_at": "2026-07-21T09:48:20",
+      "title": "US launches fresh strikes on Iran, as Trump warns of retaliation for deaths of soldiers",
+      "excerpt": "Iran says it has hit two ships in the Strait of Hormuz as well as targets in Bahrain and Jordan."
+     },
+     {
+      "item": "b-b0ca74bb19a9",
+      "source": "BBC World",
+      "published_at": "2026-07-21T16:10:56",
+      "title": "US launches fresh strikes on Iran, as Trump warns of retaliation for deaths of soldiers",
+      "excerpt": "Iran says it has hit two ships in the Strait of Hormuz as well as targets in Bahrain and Jordan."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-07-21:us-strikes-iran-night-11",
+    "window": "2026-07-21",
+    "members": [
+     "b-5b33b184a58a",
+     "b-5b08b2c38cf2"
+    ],
+    "storyline": "iran-war",
+    "first": "2026-07-21T23:46:00",
+    "last": "2026-07-22T05:05:25",
+    "actors": [
+     "Iran",
+     "Tehran",
+     "Trump",
+     "US",
+     "Washington"
+    ],
+    "places": [
+     "Iran",
+     "Tabriz",
+     "Tehran",
+     "US"
+    ],
+    "system_developments": [
+     3
+    ],
+    "situations": [
+     "us-iran"
+    ],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-5b33b184a58a",
+      "source": "Al Jazeera",
+      "published_at": "2026-07-21T23:46:00",
+      "title": "US attacks Iran for 11th consecutive night",
+      "excerpt": "Explosions reported in northwestern Iran&#039;s Tabriz, capital Tehran and across southern Iran."
+     },
+     {
+      "item": "b-5b08b2c38cf2",
+      "source": "Al Jazeera",
+      "published_at": "2026-07-22T05:05:25",
+      "title": "US expands strikes on 11th straight night of attacks",
+      "excerpt": "The US military’s 11th consecutive night of strikes extended to Iranian provinces not previously hit."
+     }
+    ]
+   },
+   "cosine": 0.732
+  },
+  {
+   "case": "RH042",
+   "a": {
+    "id": "2026-08-07:uae-adnoc-tanker-strike",
+    "window": "2026-08-07",
+    "members": [
+     "b-10af2d89ec91"
+    ],
+    "storyline": "iran-war-hormuz",
+    "first": "2026-08-08T15:01:29",
+    "last": "2026-08-08T15:01:29",
+    "actors": [
+     "ADNOC",
+     "Arab"
+    ],
+    "places": [
+     "Gulf",
+     "Iran",
+     "Strait of Hormuz",
+     "United Arab Emirates"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-10af2d89ec91",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-08T15:01:29",
+      "title": "UAE says Iran targeted ADNOC tanker in Strait of Hormuz, no casualties",
+      "excerpt": "Gulf and Arab governments condemn Iran over missile strike on Emirati tanker."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-08-07:oman-hormuz-talks-positive",
+    "window": "2026-08-07",
+    "members": [
+     "b-44782b2492e8"
+    ],
+    "storyline": "iran-war-hormuz",
+    "first": "2026-08-08T19:18:57",
+    "last": "2026-08-08T19:18:57",
+    "actors": [
+     "Iran",
+     "Oman"
+    ],
+    "places": [
+     "Hormuz",
+     "Iran",
+     "Oman"
+    ],
+    "system_developments": [
+     13
+    ],
+    "situations": [
+     "us-iran"
+    ],
+    "sources": [
+     "BBC World"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-44782b2492e8",
+      "source": "BBC World",
+      "published_at": "2026-08-08T19:18:57",
+      "title": "Hormuz talks positive, Oman says, as Iran warns deal would not open strait",
+      "excerpt": "Both sides suggest progress in talks to agree a new shipping route through the strait, but a breakthrough remains unclear."
+     }
+    ]
+   },
+   "cosine": 0.514
+  },
+  {
+   "case": "RH043",
+   "a": {
+    "id": "2026-07-21:qiushi-engine-ranking",
+    "window": "2026-07-21",
+    "members": [
+     "b-e707474ed35d"
+    ],
+    "storyline": null,
+    "first": "2026-07-21T12:17:32",
+    "last": "2026-07-21T12:17:32",
+    "actors": [
+     "AI",
+     "Anthropic",
+     "Claude",
+     "Open Science Desktop",
+     "Qiushi Engine",
+     "Zhejiang University"
+    ],
+    "places": [
+     "China"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-e707474ed35d",
+      "source": "South China Morning Post",
+      "published_at": "2026-07-21T12:17:32",
+      "title": "Chinese AI agent Qiushi Engine outperforms Anthropic’s Claude Code in autonomous research",
+      "excerpt": "A Chinese artificial intelligence (AI) system has topped an international ranking for autonomous scientific research, pulling ahead of Anthropic’s Claude Code and other top agents.\nAs of Tuesday, the Zhejiang University-led Qiushi Engine held the top overall spot on the ResearchClawBench leaderboard"
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-07-21:kimi-k3-launch-analysis",
+    "window": "2026-07-21",
+    "members": [
+     "b-414c8d18c9f1"
+    ],
+    "storyline": null,
+    "first": "2026-07-21T14:24:30",
+    "last": "2026-07-21T14:24:30",
+    "actors": [
+     "Kimi K3",
+     "Moonshot AI"
+    ],
+    "places": [
+     "China",
+     "Silicon Valley",
+     "US"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-414c8d18c9f1",
+      "source": "South China Morning Post",
+      "published_at": "2026-07-21T14:24:30",
+      "title": "Another ‘DeepSeek moment’? What China’s Kimi K3 means for the global AI industry",
+      "excerpt": "The launch of Moonshot AI’s Kimi K3 has revived an intense debate that has raged in Silicon Valley ever since DeepSeek’s shock breakthrough last year: whether China can overcome its limited access to advanced chips to match the performance of the United States’ frontier artificial intelligence model"
+     }
+    ]
+   },
+   "cosine": 0.506
+  },
+  {
+   "case": "RH044",
+   "a": {
+    "id": "2026-07-21:us-pressure-maritime-flashpoints",
+    "window": "2026-07-21",
+    "members": [
+     "b-d0ea50cb6af0"
+    ],
+    "storyline": null,
+    "first": "2026-07-21T14:00:27",
+    "last": "2026-07-21T14:00:27",
+    "actors": [
+     "Yue Shengsong"
+    ],
+    "places": [
+     "Beijing",
+     "China",
+     "East China Sea",
+     "South China Sea",
+     "Taiwan Strait",
+     "US",
+     "Washington"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-d0ea50cb6af0",
+      "source": "South China Morning Post",
+      "published_at": "2026-07-21T14:00:27",
+      "title": "The US mounts pressure across 3 maritime flashpoints. How should China respond?",
+      "excerpt": "Chinese researchers have called for more coordination among the country’s maritime authorities to counter an American strategy that has put pressure on Beijing across three critical waterways in the first island chain.\nBy synchronising operations across flashpoints in the East China Sea, the Taiwan "
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-07-21:aoun-trump-white-house-meeting",
+    "window": "2026-07-21",
+    "members": [
+     "b-8923af621115",
+     "b-b1ea91a960d9",
+     "b-c5a71f7037e7"
+    ],
+    "storyline": "lebanon-israel",
+    "first": "2026-07-21T17:30:32",
+    "last": "2026-07-21T21:27:21",
+    "actors": [
+     "Aoun",
+     "Donald Trump",
+     "Hezbollah",
+     "Joseph Aoun",
+     "LAF",
+     "Lebanon",
+     "Trump"
+    ],
+    "places": [
+     "Israel",
+     "Lebanon",
+     "US",
+     "Washington"
+    ],
+    "system_developments": [
+     6
+    ],
+    "situations": [],
+    "sources": [
+     "Al Jazeera",
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-8923af621115",
+      "source": "Al Jazeera",
+      "published_at": "2026-07-21T17:30:32",
+      "title": "Lebanon’s goal to end hostilities with Israel ‘forever’, says president",
+      "excerpt": "Lebanese President Aoun told Trump that Lebanon&#039;s “ultimate objective” is to end hostilities with Israel “forever”."
+     },
+     {
+      "item": "b-b1ea91a960d9",
+      "source": "Al Jazeera",
+      "published_at": "2026-07-21T19:16:08",
+      "title": "Trump says he’s open to talks with Hezbollah, vows to help Lebanon",
+      "excerpt": "US President Trump said he is open to direct talks with Hezbollah."
+     },
+     {
+      "item": "b-c5a71f7037e7",
+      "source": "South China Morning Post",
+      "published_at": "2026-07-21T21:27:21",
+      "title": "Trump vows to help Lebanon pursue peace with Israel",
+      "excerpt": "US President Donald Trump vowed on Tuesday to help Lebanon “a lot” as its president, Joseph Aoun, sought Washington’s backing for a fragile effort to disarm Hezbollah and forge a path to peace with Israel.\nAoun, the first Lebanese president invited to Washington since 2009, asked Trump for political"
+     }
+    ]
+   },
+   "cosine": 0.197
+  },
+  {
+   "case": "RH045",
+   "a": {
+    "id": "2026-07-21:china-lessons-us-sea-drone-strike",
+    "window": "2026-07-21",
+    "members": [
+     "b-c89b58ed0c1a"
+    ],
+    "storyline": "iran-war",
+    "first": "2026-07-21T11:30:08",
+    "last": "2026-07-21T11:30:08",
+    "actors": [
+     "Chinese",
+     "People's Liberation Army",
+     "U.S. Central Command"
+    ],
+    "places": [
+     "China",
+     "Ghadir",
+     "Iran",
+     "US"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-c89b58ed0c1a",
+      "source": "South China Morning Post",
+      "published_at": "2026-07-21T11:30:08",
+      "title": "What can China learn from the US sea drone strike on an Iranian submarine base?",
+      "excerpt": "Chinese military analysts are urging the People’s Liberation Army (PLA) to rapidly strengthen harbour defences after the United States carried out its first combat strike using unmanned surface vessels (USVs) to destroy an Iranian submarine.\nUS Central Command released footage on July 13 of what it "
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-07-21:trump-softens-tone-before-rubio-wang",
+    "window": "2026-07-21",
+    "members": [
+     "b-43228994e143"
+    ],
+    "storyline": "rubio-wang-talks",
+    "first": "2026-07-21T17:35:24",
+    "last": "2026-07-21T17:35:24",
+    "actors": [
+     "Donald Trump",
+     "Marco Rubio",
+     "Rubio-Wang",
+     "State",
+     "Wang Yi"
+    ],
+    "places": [
+     "Beijing",
+     "China",
+     "Manila",
+     "US",
+     "Washington"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-43228994e143",
+      "source": "South China Morning Post",
+      "published_at": "2026-07-21T17:35:24",
+      "title": "Trump softens tone on alleged China election meddling before Rubio-Wang talks",
+      "excerpt": "US Secretary of State Marco Rubio will meet Chinese Foreign Minister Wang Yi in Manila on Wednesday, as President Donald Trump signalled that Washington would confront Beijing over its alleged interference in the 2020 election but played down the prospect of retaliation.\n“We’re going to talk to them"
+     }
+    ]
+   },
+   "cosine": 0.24
+  },
+  {
+   "case": "RH046",
+   "a": {
+    "id": "2026-07-21:ukraine-row-over-syrskyi",
+    "window": "2026-07-21",
+    "members": [
+     "b-9a69f1f72d26"
+    ],
+    "storyline": "ukraine-command-crisis",
+    "first": "2026-07-21T12:33:15",
+    "last": "2026-07-21T12:33:15",
+    "actors": [
+     "Mykhailo Fedorov",
+     "Oleksandr Syrskyi"
+    ],
+    "places": [
+     "Ukraine"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "BBC World"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-9a69f1f72d26",
+      "source": "BBC World",
+      "published_at": "2026-07-21T12:33:15",
+      "title": "Row escalates in Ukraine over army chief's future",
+      "excerpt": "Protesters are demanding Oleksandr Syrskyi be removed and former defence minister Mykhailo Fedorov reinstated by Friday."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-07-21:new-ukraine-chief-pledges-retaliation",
+    "window": "2026-07-21",
+    "members": [
+     "b-0fb5d48c8680"
+    ],
+    "storyline": "ukraine-command-crisis",
+    "first": "2026-07-22T20:34:56",
+    "last": "2026-07-22T20:34:56",
+    "actors": [
+     "Marco Rubio",
+     "Sergei Lavrov"
+    ],
+    "places": [
+     "Russia",
+     "US",
+     "Ukraine"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-0fb5d48c8680",
+      "source": "Al Jazeera",
+      "published_at": "2026-07-22T20:34:56",
+      "title": "Ukraine’s new military chief pledges to escalate retaliation against Russia",
+      "excerpt": "Russian Foreign Minister Sergei Lavrov is due to meet US counterpart Marco Rubio, but progress towards peace unlikely."
+     }
+    ]
+   },
+   "cosine": 0.483
+  },
+  {
+   "case": "RH047",
+   "a": {
+    "id": "2026-07-21:china-lessons-us-sea-drone-strike",
+    "window": "2026-07-21",
+    "members": [
+     "b-c89b58ed0c1a"
+    ],
+    "storyline": "iran-war",
+    "first": "2026-07-21T11:30:08",
+    "last": "2026-07-21T11:30:08",
+    "actors": [
+     "Chinese",
+     "People's Liberation Army",
+     "U.S. Central Command"
+    ],
+    "places": [
+     "China",
+     "Ghadir",
+     "Iran",
+     "US"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-c89b58ed0c1a",
+      "source": "South China Morning Post",
+      "published_at": "2026-07-21T11:30:08",
+      "title": "What can China learn from the US sea drone strike on an Iranian submarine base?",
+      "excerpt": "Chinese military analysts are urging the People’s Liberation Army (PLA) to rapidly strengthen harbour defences after the United States carried out its first combat strike using unmanned surface vessels (USVs) to destroy an Iranian submarine.\nUS Central Command released footage on July 13 of what it "
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-07-21:rubio-wang-asean-meeting",
+    "window": "2026-07-21",
+    "members": [
+     "b-d6c327594c40"
+    ],
+    "storyline": "rubio-wang-talks",
+    "first": "2026-07-22T22:11:14",
+    "last": "2026-07-22T22:11:14",
+    "actors": [
+     "ASEAN",
+     "Rubio",
+     "Xi Jinping"
+    ],
+    "places": [
+     "China",
+     "US"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-d6c327594c40",
+      "source": "Al Jazeera",
+      "published_at": "2026-07-22T22:11:14",
+      "title": "Rubio says US, China must ‘work through’ big differences at ASEAN meeting",
+      "excerpt": "Rubio met his Chinese counterpart to discuss managing tensions ahead of President Xi Jinping&#039;s upcoming US visit."
+     }
+    ]
+   },
+   "cosine": 0.35
+  },
+  {
+   "case": "RH048",
+   "a": {
+    "id": "2026-09-10:can-houthis-close-red-sea",
+    "window": "2026-09-10",
+    "members": [
+     "b-84bb28326dbb"
+    ],
+    "storyline": "houthi-yemen-offensive",
+    "first": "2026-09-11T14:47:12",
+    "last": "2026-09-11T14:47:12",
+    "actors": [
+     "Houthis"
+    ],
+    "places": [
+     "Red Sea",
+     "Yemen"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-84bb28326dbb",
+      "source": "Al Jazeera",
+      "published_at": "2026-09-11T14:47:12",
+      "title": "Can the Houthis close the Red Sea after seizing the Yemen coast?",
+      "excerpt": "Some observers see a force that has improved impressively in the past years, but others doubt the Houthis can sustain wins."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-09-10:houthi-advance-trade-oil-impact",
+    "window": "2026-09-10",
+    "members": [
+     "b-284d9c92dd68"
+    ],
+    "storyline": "houthi-yemen-offensive",
+    "first": "2026-09-11T16:13:39",
+    "last": "2026-09-11T16:13:39",
+    "actors": [
+     "Bab al-Mandab",
+     "Houthis"
+    ],
+    "places": [
+     "Yemen"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "BBC World"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-284d9c92dd68",
+      "source": "BBC World",
+      "published_at": "2026-09-11T16:13:39",
+      "title": "How global trade and oil prices could be hit by Houthi advance",
+      "excerpt": "Yemen's Houthis have seized territory near the Bab al-Mandab Strait - a key trade gateway for oil and global shipping."
+     }
+    ]
+   },
+   "cosine": 0.56
+  },
+  {
+   "case": "RH049",
+   "a": {
+    "id": "2026-07-21:unaids-us-funding-cuts-report",
+    "window": "2026-07-21",
+    "members": [
+     "b-a2f54eb3987e"
+    ],
+    "storyline": null,
+    "first": "2026-07-21T20:44:06",
+    "last": "2026-07-21T20:44:06",
+    "actors": [
+     "UNAIDS"
+    ],
+    "places": [
+     "US"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-a2f54eb3987e",
+      "source": "Al Jazeera",
+      "published_at": "2026-07-21T20:44:06",
+      "title": "US funding cuts deal blow to global HIV treatment: Report",
+      "excerpt": "UNAIDS chief calls for &#039;radical change&#039; as aid cuts gut HIV clinics and treatment worldwide."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-07-21:elon-other-gaza-hiv",
+    "window": "2026-07-21",
+    "members": [
+     "b-94a2c3bea605"
+    ],
+    "storyline": null,
+    "first": "2026-07-22T15:30:00",
+    "last": "2026-07-22T15:30:00",
+    "actors": [
+     "Elon"
+    ],
+    "places": [],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-94a2c3bea605",
+      "source": "Al Jazeera",
+      "published_at": "2026-07-22T15:30:00",
+      "title": "Elon and the Other Gaza",
+      "excerpt": "How the world&#039;s richest man helped trigger an HIV crisis in one of the world&#039;s poorest countries."
+     }
+    ]
+   },
+   "cosine": 0.388
+  },
+  {
+   "case": "RH050",
+   "a": {
+    "id": "2026-08-15:afghan-refugees-europe",
+    "window": "2026-08-15",
+    "members": [
+     "b-50423638ade2"
+    ],
+    "storyline": "taliban-five-years",
+    "first": "2026-08-15T12:14:30",
+    "last": "2026-08-15T12:14:30",
+    "actors": [],
+    "places": [
+     "Afghanistan",
+     "Europe",
+     "Kabul"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-50423638ade2",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-15T12:14:30",
+      "title": "Afghan refugees face an uncertain future as Europe shifts to the right",
+      "excerpt": "With the fall of the former government in Kabul, thousands of Afghans were forced to flee the country, many to Europe."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-08-15:taliban-armed-opposition",
+    "window": "2026-08-15",
+    "members": [
+     "b-10298b861ae8"
+    ],
+    "storyline": "taliban-five-years",
+    "first": "2026-08-15T12:44:30",
+    "last": "2026-08-15T12:44:30",
+    "actors": [
+     "Taliban",
+     "United Nations"
+    ],
+    "places": [],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-10298b861ae8",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-15T12:44:30",
+      "title": "Five years on, how will Taliban deal with armed opposition?",
+      "excerpt": "The United Nations says armed groups opposed to the government remain active."
+     }
+    ]
+   },
+   "cosine": 0.382
+  },
+  {
+   "case": "RH051",
+   "a": {
+    "id": "2026-08-15:china-hormuz-style-blockade-taiwan",
+    "window": "2026-08-15",
+    "members": [
+     "b-d5e449228bc5"
+    ],
+    "storyline": null,
+    "first": "2026-08-15T11:30:00",
+    "last": "2026-08-15T11:30:00",
+    "actors": [
+     "Chinese"
+    ],
+    "places": [
+     "China",
+     "Iran",
+     "Strait of Hormuz",
+     "Taiwan",
+     "Ukraine"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-d5e449228bc5",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-15T11:30:00",
+      "title": "Is China seeking to copy Iran’s Strait of Hormuz blockade around Taiwan?",
+      "excerpt": "Taiwan has long prepared for a Chinese military invasion but wars in Iran and Ukraine expose new potential threats."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-08-15:scs-ecological-report",
+    "window": "2026-08-15",
+    "members": [
+     "b-95726dc6c0e9"
+    ],
+    "storyline": null,
+    "first": "2026-08-15T11:45:14",
+    "last": "2026-08-15T11:45:14",
+    "actors": [],
+    "places": [
+     "Beijing",
+     "China",
+     "South China Sea",
+     "US",
+     "Washington"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-95726dc6c0e9",
+      "source": "South China Morning Post",
+      "published_at": "2026-08-15T11:45:14",
+      "title": "Beijing issues ecological report to solidify South China Sea claims amid US row",
+      "excerpt": "China has published ecological assessment reports on nine disputed South China Sea features, amid an escalating row with Washington over Beijing’s establishment of a “national nature reserve” in the contested waters.\nOn Friday, the Ministry of Natural Resources’ South China Sea Bureau issued its 202"
+     }
+    ]
+   },
+   "cosine": 0.394
+  },
+  {
+   "case": "RH052",
+   "a": {
+    "id": "2026-08-07:houthi-attacks-kill-58-troops",
+    "window": "2026-08-07",
+    "members": [
+     "b-bff99f9a4a75"
+    ],
+    "storyline": "yemen-houthi",
+    "first": "2026-08-07T03:00:56",
+    "last": "2026-08-07T03:00:56",
+    "actors": [
+     "Houthis",
+     "Yahya",
+     "Yemen"
+    ],
+    "places": [
+     "Iran",
+     "Israel",
+     "Saudi Arabia",
+     "US",
+     "Yemen"
+    ],
+    "system_developments": [
+     4
+    ],
+    "situations": [],
+    "sources": [
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-bff99f9a4a75",
+      "source": "South China Morning Post",
+      "published_at": "2026-08-07T03:00:56",
+      "title": "Houthi attacks kill dozens of troops in Yemen, wound civilians in Saudi Arabia",
+      "excerpt": "Yemen’s Iran-backed Houthis killed at least 58 government troops in missile and drone attacks on Thursday, a military source said, in one of the deadliest days of the country’s civil war in four years.\nThe attacks come as Yemen is increasingly drawn into the US-Israeli war with Iran, with the rebels"
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-08-07:uae-adnoc-tanker-strike",
+    "window": "2026-08-07",
+    "members": [
+     "b-10af2d89ec91"
+    ],
+    "storyline": "iran-war-hormuz",
+    "first": "2026-08-08T15:01:29",
+    "last": "2026-08-08T15:01:29",
+    "actors": [
+     "ADNOC",
+     "Arab"
+    ],
+    "places": [
+     "Gulf",
+     "Iran",
+     "Strait of Hormuz",
+     "United Arab Emirates"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-10af2d89ec91",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-08T15:01:29",
+      "title": "UAE says Iran targeted ADNOC tanker in Strait of Hormuz, no casualties",
+      "excerpt": "Gulf and Arab governments condemn Iran over missile strike on Emirati tanker."
+     }
+    ]
+   },
+   "cosine": 0.502
+  },
+  {
+   "case": "RH053",
+   "a": {
+    "id": "2026-08-07:asia-heatwave-energy-fears",
+    "window": "2026-08-07",
+    "members": [
+     "b-c669f9054b1d"
+    ],
+    "storyline": "asia-heatwave",
+    "first": "2026-08-07T00:00:19",
+    "last": "2026-08-07T00:00:19",
+    "actors": [],
+    "places": [
+     "Asia",
+     "Gwangju",
+     "South Korea"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-c669f9054b1d",
+      "source": "South China Morning Post",
+      "published_at": "2026-08-07T00:00:19",
+      "title": "As record heatwave hits Asia, fears of energy crisis and health risks mount",
+      "excerpt": "Chae Young-sun, a 69-year-old retired government employee living in the South Korean city of Gwangju, has stopped taking daily walks since a searing heatwave began gripping most parts of the country more than a month ago.\n“I’m worried about my health because it’s simply too hot to go for a walk,” he"
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-08-07:south-korea-record-heatwave",
+    "window": "2026-08-07",
+    "members": [
+     "b-1a60785ffdcf"
+    ],
+    "storyline": "asia-heatwave",
+    "first": "2026-08-07T05:00:48",
+    "last": "2026-08-07T05:00:48",
+    "actors": [
+     "42.5C."
+    ],
+    "places": [
+     "Korean Peninsula",
+     "South Korea"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-1a60785ffdcf",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-07T05:00:48",
+      "title": "Record-high heat soars through South Korea",
+      "excerpt": "A record-high heatwave is sweeping through the Korean Peninsula, sending temperatures skyrocketing, reaching 42.5C."
+     }
+    ]
+   },
+   "cosine": 0.343
+  },
+  {
+   "case": "RH054",
+   "a": {
+    "id": "2026-08-15:afghan-refugees-europe",
+    "window": "2026-08-15",
+    "members": [
+     "b-50423638ade2"
+    ],
+    "storyline": "taliban-five-years",
+    "first": "2026-08-15T12:14:30",
+    "last": "2026-08-15T12:14:30",
+    "actors": [],
+    "places": [
+     "Afghanistan",
+     "Europe",
+     "Kabul"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-50423638ade2",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-15T12:14:30",
+      "title": "Afghan refugees face an uncertain future as Europe shifts to the right",
+      "excerpt": "With the fall of the former government in Kabul, thousands of Afghans were forced to flee the country, many to Europe."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-08-15:kabul-taliban-anniversary-celebration",
+    "window": "2026-08-15",
+    "members": [
+     "b-657dd24aeb03",
+     "b-5a54bf5d9422"
+    ],
+    "storyline": "taliban-five-years",
+    "first": "2026-08-15T13:12:51",
+    "last": "2026-08-16T08:40:34",
+    "actors": [
+     "Taliban"
+    ],
+    "places": [
+     "Afghanistan",
+     "Kabul"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-657dd24aeb03",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-15T13:12:51",
+      "title": "Afghans mark five years of Taliban rule",
+      "excerpt": "Afghans have gathered in Kabul to mark five years since the Taliban returned to power."
+     },
+     {
+      "item": "b-5a54bf5d9422",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-16T08:40:34",
+      "title": "Photos: Patriotic music and flags mark Taliban rule anniversary in Kabul",
+      "excerpt": "Crowds create carnival-like atmosphere in Afghan capital as Taliban celebrates five years since its return to power."
+     }
+    ]
+   },
+   "cosine": 0.386
+  },
+  {
+   "case": "RH055",
+   "a": {
+    "id": "2026-08-15:qusra-settler-siege",
+    "window": "2026-08-15",
+    "members": [
+     "b-fd3faf34113a",
+     "b-5ffcea5460ad"
+    ],
+    "storyline": "qusra-siege",
+    "first": "2026-08-15T15:48:07",
+    "last": "2026-08-16T17:18:00",
+    "actors": [],
+    "places": [
+     "Israel",
+     "Palestine",
+     "Qusra",
+     "West Bank"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-fd3faf34113a",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-15T15:48:07",
+      "title": "Israeli settlers besiege Palestinian families in occupied West Bank",
+      "excerpt": "Three Palestinian families say they have been trapped inside their homes in the occupied West Bank for nearly a week."
+     },
+     {
+      "item": "b-5ffcea5460ad",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-16T17:18:00",
+      "title": "‘Water and salt’: Qusra residents trapped in Israeli settler siege",
+      "excerpt": "Israeli settlers and soldiers besiege Qusra families for eight days, blocking water and aid."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-08-15:qusra-siege-timeline",
+    "window": "2026-08-15",
+    "members": [
+     "b-9db66a0c51fe"
+    ],
+    "storyline": "qusra-siege",
+    "first": "2026-08-16T13:17:57",
+    "last": "2026-08-16T13:17:57",
+    "actors": [],
+    "places": [
+     "Israel",
+     "Palestine",
+     "Qusra",
+     "West Bank"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-9db66a0c51fe",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-16T13:17:57",
+      "title": "Timeline: The one-week siege of Qusra by Israeli settlers in the West Bank",
+      "excerpt": "Israeli settlers encircle Palestinian homes and cut off supplies, leading to a declaration of a military zone."
+     }
+    ]
+   },
+   "cosine": 0.697
+  },
+  {
+   "case": "RH056",
+   "a": {
+    "id": "2026-07-21:pilot-zone-resident-video",
+    "window": "2026-07-21",
+    "members": [
+     "b-a3c300200d70"
+    ],
+    "storyline": "lebanon-israel",
+    "first": "2026-07-22T13:07:59",
+    "last": "2026-07-22T13:07:59",
+    "actors": [
+     "Lebanon"
+    ],
+    "places": [
+     "Lebanon"
+    ],
+    "system_developments": [
+     5
+    ],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-a3c300200d70",
+      "source": "Al Jazeera",
+      "published_at": "2026-07-22T13:07:59",
+      "title": "‘This land will remain ours’ says a resident in Lebanon’s ‘pilot zone’",
+      "excerpt": "‘This land will remain ours’ says a resident in Lebanon’s ‘pilot zone’"
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-07-21:trump-syria-hezbollah-analysis",
+    "window": "2026-07-21",
+    "members": [
+     "b-867d9fa0c7a9"
+    ],
+    "storyline": "lebanon-israel",
+    "first": "2026-07-22T17:18:14",
+    "last": "2026-07-22T17:18:14",
+    "actors": [
+     "Donald Trump",
+     "Hezbollah",
+     "Lebanon",
+     "Trump"
+    ],
+    "places": [
+     "Damascus",
+     "Lebanon",
+     "Syria",
+     "US"
+    ],
+    "system_developments": [
+     6
+    ],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-867d9fa0c7a9",
+      "source": "Al Jazeera",
+      "published_at": "2026-07-22T17:18:14",
+      "title": "Trump push for Syrian intervention against Hezbollah ‘short-sighted’",
+      "excerpt": "Analysts say US president&#039;s pressure on Damascus to intervene in Lebanon could undermine domestic security."
+     }
+    ]
+   },
+   "cosine": 0.26
+  },
+  {
+   "case": "RH057",
+   "a": {
+    "id": "2026-09-10:navy-base-nuclear-microreactor",
+    "window": "2026-09-10",
+    "members": [
+     "b-5bbfb2899e9c"
+    ],
+    "storyline": null,
+    "first": "2026-09-10T20:31:57",
+    "last": "2026-09-10T20:31:57",
+    "actors": [
+     "Indiana Navy",
+     "Trump",
+     "US Department of Defense"
+    ],
+    "places": [],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Breaking Defense"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-5bbfb2899e9c",
+      "source": "Breaking Defense",
+      "published_at": "2026-09-10T20:31:57",
+      "title": "Why the Pentagon picked an Indiana Navy base to host a nuclear microreactor",
+      "excerpt": "The program is driving hard to meet President Trump’s 2028 deadline, officials said, but they have yet to release a formal solicitation, let alone pick a specific vendor and design."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-09-10:pentagon-border-testbed",
+    "window": "2026-09-10",
+    "members": [
+     "b-f58db40bdc0d"
+    ],
+    "storyline": null,
+    "first": "2026-09-11T16:58:44",
+    "last": "2026-09-11T16:58:44",
+    "actors": [
+     "Americas Security Affairs",
+     "Breaking Defense",
+     "Homeland Defense",
+     "Mark Ditlevson",
+     "US Department of Defense"
+    ],
+    "places": [
+     "Mexico",
+     "US"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Breaking Defense"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-f58db40bdc0d",
+      "source": "Breaking Defense",
+      "published_at": "2026-09-11T16:58:44",
+      "title": "Pentagon eyeing tech testbed expansion along US-Mexico border",
+      "excerpt": "“We want to do as much as we can; I would love to continue to bring on new projects, new programs to the border and try it out, but we want to do it in a responsible way that&#8217;s safe,” Mark Ditlevson, assistant secretary of defense for Homeland Defense and Americas Security Affairs, told Breaki"
+     }
+    ]
+   },
+   "cosine": 0.51
+  },
+  {
+   "case": "RH058",
+   "a": {
+    "id": "2026-09-10:trump-ireland-visit-gaza-protests",
+    "window": "2026-09-10",
+    "members": [
+     "b-aade68afb0f4"
+    ],
+    "storyline": null,
+    "first": "2026-09-11T14:09:52",
+    "last": "2026-09-11T14:09:52",
+    "actors": [
+     "Connolly",
+     "Trump"
+    ],
+    "places": [
+     "Gaza",
+     "Ireland",
+     "US"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-aade68afb0f4",
+      "source": "Al Jazeera",
+      "published_at": "2026-09-11T14:09:52",
+      "title": "‘Majority do not welcome him’: Trump heads to Ireland amid fury over Gaza",
+      "excerpt": "Protests set to erupt across Ireland, where President Connolly has long regarded the US as an untrustworthy power."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-09-10:chinese-ai-firms-shun-us-commission",
+    "window": "2026-09-10",
+    "members": [
+     "b-a253d2d66be9"
+    ],
+    "storyline": null,
+    "first": "2026-09-11T22:36:20",
+    "last": "2026-09-11T22:36:20",
+    "actors": [
+     "Chinese AI"
+    ],
+    "places": [
+     "Beijing",
+     "China",
+     "US",
+     "Washington"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-a253d2d66be9",
+      "source": "South China Morning Post",
+      "published_at": "2026-09-11T22:36:20",
+      "title": "Chinese AI firms shunned US delegation over sanctions fears, commission says",
+      "excerpt": "A US congressional advisory body on China said on Friday that leading Chinese artificial intelligence (AI) firms declined to meet its members during a recent Beijing visit over concerns that doing so could expose the firms to US sanctions.\nBut members also underscored the importance of the coming AI"
+     }
+    ]
+   },
+   "cosine": 0.142
+  },
+  {
+   "case": "RH059",
+   "a": {
+    "id": "2026-07-21:wotr-iran-war-us-relations",
+    "window": "2026-07-21",
+    "members": [
+     "b-ec25c31da891"
+    ],
+    "storyline": "iran-war",
+    "first": "2026-07-21T17:30:04",
+    "last": "2026-07-21T17:30:04",
+    "actors": [
+     "Donald Trump",
+     "Jenny Town",
+     "Key U.S. Relations",
+     "NorthSouth Korea"
+    ],
+    "places": [
+     "France",
+     "India",
+     "Iran",
+     "Middle East",
+     "South Korea",
+     "Stimson Center",
+     "Strait of Hormuz",
+     "US",
+     "Ukraine",
+     "United Kingdom"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "War on the Rocks"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-ec25c31da891",
+      "source": "War on the Rocks",
+      "published_at": "2026-07-21T17:30:04",
+      "title": "How the War with Iran is Shaping Key U.S. Relations Beyond the Middle East",
+      "excerpt": "The&#160;U.S. war with Iran has had political, economic, and military implications that spread far beyond the Middle East. We asked five experts to assess how the war with Iran has affected U.S. bilateral relations with key countries that illustrate some of the global ramifications: South Korea, Ind"
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-07-21:trump-threatens-bridges-power-plants",
+    "window": "2026-07-21",
+    "members": [
+     "b-674a6a002077"
+    ],
+    "storyline": "iran-war",
+    "first": "2026-07-22T15:24:13",
+    "last": "2026-07-22T15:24:13",
+    "actors": [
+     "Iran",
+     "Tehran",
+     "Trump",
+     "US",
+     "Washington"
+    ],
+    "places": [
+     "Iran",
+     "Tehran",
+     "US"
+    ],
+    "system_developments": [
+     3
+    ],
+    "situations": [
+     "us-iran"
+    ],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-674a6a002077",
+      "source": "Al Jazeera",
+      "published_at": "2026-07-22T15:24:13",
+      "title": "Trump threatens to bomb Iranian bridges, power plants over ship attacks",
+      "excerpt": "Iranian official says Tehran would retaliate by targeting &#039;energy facilities in which the United States has interests&#039;."
+     }
+    ]
+   },
+   "cosine": 0.436
+  },
+  {
+   "case": "RH060",
+   "a": {
+    "id": "2026-08-15:israel-strikes-lebanon-kill-11",
+    "window": "2026-08-15",
+    "members": [
+     "b-d74d5c6faf15"
+    ],
+    "storyline": "israel-lebanon-strikes",
+    "first": "2026-08-15T18:15:51",
+    "last": "2026-08-15T18:15:51",
+    "actors": [
+     "Ansar",
+     "Hezbollah",
+     "Israel"
+    ],
+    "places": [
+     "Deir al-Zahrani",
+     "Israel",
+     "Lebanon"
+    ],
+    "system_developments": [
+     6
+    ],
+    "situations": [
+     "gaza-ceasefire"
+    ],
+    "sources": [
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-d74d5c6faf15",
+      "source": "South China Morning Post",
+      "published_at": "2026-08-15T18:15:51",
+      "title": "Israeli air strikes on Lebanon kill 11 people in another test to truce",
+      "excerpt": "Israeli air strikes on southern Lebanon killed at least 11 people on Saturday, in the deadliest attacks since a truce between Israel and Hezbollah went into effect on June 20.\nLebanon’s health ministry and state news agency said an air strike that targeted a home on the edge of Ansar village killed "
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-08-15:why-israel-escalated-lebanon",
+    "window": "2026-08-15",
+    "members": [
+     "b-87eb04285083"
+    ],
+    "storyline": "israel-lebanon-strikes",
+    "first": "2026-08-16T10:59:10",
+    "last": "2026-08-16T10:59:10",
+    "actors": [],
+    "places": [
+     "Israel",
+     "Lebanon",
+     "US"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-87eb04285083",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-16T10:59:10",
+      "title": "Why has Israel escalated attacks in southern Lebanon despite ceasefire?",
+      "excerpt": "At least 11 people killed in one day of Israeli attacks despite truce extension brokered by US in June."
+     }
+    ]
+   },
+   "cosine": 0.745
+  },
+  {
+   "case": "RH061",
+   "a": {
+    "id": "2026-08-07:spokane-fires",
+    "window": "2026-08-07",
+    "members": [
+     "b-cb5a7c0f7932",
+     "b-335f47c383b8"
+    ],
+    "storyline": null,
+    "first": "2026-08-07T01:10:58",
+    "last": "2026-08-08T00:51:16",
+    "actors": [
+     "BBC"
+    ],
+    "places": [
+     "Spokane",
+     "US"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "BBC World"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-cb5a7c0f7932",
+      "source": "BBC World",
+      "published_at": "2026-08-07T01:10:58",
+      "title": "‘Wiped out’ - BBC reports from Spokane neighbourhood devastated by fires",
+      "excerpt": "Officials are still working to contain the blazes that have burned down at least 860 buildings, including hundreds of homes."
+     },
+     {
+      "item": "b-335f47c383b8",
+      "source": "BBC World",
+      "published_at": "2026-08-08T00:51:16",
+      "title": "Scale of devastation shocks US city's fire-seasoned residents",
+      "excerpt": "One Spokane resident tells the BBC she realised the immense danger when she heard the fire had jumped over the river."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-08-07:houthi-attacks-kill-58-troops",
+    "window": "2026-08-07",
+    "members": [
+     "b-bff99f9a4a75"
+    ],
+    "storyline": "yemen-houthi",
+    "first": "2026-08-07T03:00:56",
+    "last": "2026-08-07T03:00:56",
+    "actors": [
+     "Houthis",
+     "Yahya",
+     "Yemen"
+    ],
+    "places": [
+     "Iran",
+     "Israel",
+     "Saudi Arabia",
+     "US",
+     "Yemen"
+    ],
+    "system_developments": [
+     4
+    ],
+    "situations": [],
+    "sources": [
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-bff99f9a4a75",
+      "source": "South China Morning Post",
+      "published_at": "2026-08-07T03:00:56",
+      "title": "Houthi attacks kill dozens of troops in Yemen, wound civilians in Saudi Arabia",
+      "excerpt": "Yemen’s Iran-backed Houthis killed at least 58 government troops in missile and drone attacks on Thursday, a military source said, in one of the deadliest days of the country’s civil war in four years.\nThe attacks come as Yemen is increasingly drawn into the US-Israeli war with Iran, with the rebels"
+     }
+    ]
+   },
+   "cosine": 0.184
+  },
+  {
+   "case": "RH062",
+   "a": {
+    "id": "2026-08-15:ukraine-mass-drone-attack-russia",
+    "window": "2026-08-15",
+    "members": [
+     "b-19177aba5b84",
+     "b-4f5f94b9fc9a"
+    ],
+    "storyline": "russia-ukraine-strikes",
+    "first": "2026-08-16T04:54:33",
+    "last": "2026-08-16T15:35:53",
+    "actors": [
+     "Kyiv",
+     "Kyiv Russian",
+     "Moscow",
+     "Russia",
+     "Ukraine"
+    ],
+    "places": [
+     "Moscow",
+     "Russia",
+     "Ukraine",
+     "Wildberries"
+    ],
+    "system_developments": [
+     7
+    ],
+    "situations": [
+     "russia-ukraine-war"
+    ],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-19177aba5b84",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-16T04:54:33",
+      "title": "Ukraine targets Moscow in mass drone attack as Russia bombards Kyiv",
+      "excerpt": "Russian authorities report 201 Ukrainian drones downed overnight in the Moscow region in the escalating conflict."
+     },
+     {
+      "item": "b-4f5f94b9fc9a",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-16T15:35:53",
+      "title": "Largest Ukrainian drone attack on Russia, Moscow says 822 drones shot down",
+      "excerpt": "Ukraine launched hundreds of drones across Russia, killing at least six people and striking a Wildberries logistics hub."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-08-15:russia-strikes-ukraine-steel-plant",
+    "window": "2026-08-15",
+    "members": [
+     "b-104165c9224b"
+    ],
+    "storyline": "russia-ukraine-strikes",
+    "first": "2026-08-16T13:28:04",
+    "last": "2026-08-16T13:28:04",
+    "actors": [
+     "Kyiv",
+     "Moscow",
+     "NATO",
+     "Russia",
+     "Ukraine"
+    ],
+    "places": [
+     "Kyiv",
+     "Moldova",
+     "Moscow",
+     "Romania",
+     "Russia",
+     "Ukraine"
+    ],
+    "system_developments": [
+     7
+    ],
+    "situations": [
+     "russia-ukraine-war"
+    ],
+    "sources": [
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-104165c9224b",
+      "source": "South China Morning Post",
+      "published_at": "2026-08-16T13:28:04",
+      "title": "Moscow strikes Ukrainian steel plant as Kyiv targets Russian economy",
+      "excerpt": "Russia carried out a wave of air strikes on Ukraine overnight, killing two people at a steel plant, and Kyiv launched a heavy drone attack on the Moscow region that killed one person and set ablaze a warehouse ‌used by Russia’s leading e-commerce retailer.\nRomania, which borders Ukraine, said an F-1"
+     }
+    ]
+   },
+   "cosine": 0.745
+  },
+  {
+   "case": "RH063",
+   "a": {
+    "id": "2026-09-10:trump-loyalty-test",
+    "window": "2026-09-10",
+    "members": [
+     "b-76d8ccf92df7"
+    ],
+    "storyline": "gop-midterm-convention",
+    "first": "2026-09-10T12:59:25",
+    "last": "2026-09-10T12:59:25",
+    "actors": [
+     "Trump"
+    ],
+    "places": [],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-76d8ccf92df7",
+      "source": "Al Jazeera",
+      "published_at": "2026-09-10T12:59:25",
+      "title": "The Trump loyalty test: Will his supporters ever disagree with him?",
+      "excerpt": "The Trump loyalty test: Will his supporters ever disagree with him?"
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-09-10:has-trump-won-over-voters",
+    "window": "2026-09-10",
+    "members": [
+     "b-7aae99a41f95"
+    ],
+    "storyline": "gop-midterm-convention",
+    "first": "2026-09-11T06:16:54",
+    "last": "2026-09-11T06:16:54",
+    "actors": [
+     "BBC",
+     "Republicans",
+     "Sarah Smith",
+     "Trump"
+    ],
+    "places": [
+     "North America",
+     "US"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "BBC World"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-7aae99a41f95",
+      "source": "BBC World",
+      "published_at": "2026-09-11T06:16:54",
+      "title": "Has Trump won over voters with his midterm convention?",
+      "excerpt": "The BBC's North America editor Sarah Smith breaks down the main takeaways from the first-ever Republican convention held in the middle of a US presidential term."
+     }
+    ]
+   },
+   "cosine": 0.3
+  },
+  {
+   "case": "RH064",
+   "a": {
+    "id": "2026-07-21:china-russia-drills-japan-eez",
+    "window": "2026-07-21",
+    "members": [
+     "b-eb2ea2d0171b"
+    ],
+    "storyline": null,
+    "first": "2026-07-21T04:00:20",
+    "last": "2026-07-21T04:00:20",
+    "actors": [
+     "EEZ",
+     "Shinjiro Koizumi"
+    ],
+    "places": [
+     "Britain",
+     "China",
+     "EEZ Chinese",
+     "Farnborough International Airshow",
+     "Japan",
+     "Pacific Ocean",
+     "Russia"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": true,
+    "evidence": [
+     {
+      "item": "b-eb2ea2d0171b",
+      "source": "South China Morning Post",
+      "published_at": "2026-07-21T04:00:20",
+      "title": "Japan says Chinese and Russian warships held live-fire drills within its EEZ",
+      "excerpt": "Chinese and Russian navy ships were spotted conducting joint live-fire drills within Japan’s claimed exclusive economic zone in the Pacific Ocean on Sunday, its defence ministry said.\nJapanese Defence Minister Shinjiro Koizumi first revealed that the two navies had held drills in Japan’s EEZ during "
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-07-21:us-pressure-maritime-flashpoints",
+    "window": "2026-07-21",
+    "members": [
+     "b-d0ea50cb6af0"
+    ],
+    "storyline": null,
+    "first": "2026-07-21T14:00:27",
+    "last": "2026-07-21T14:00:27",
+    "actors": [
+     "Yue Shengsong"
+    ],
+    "places": [
+     "Beijing",
+     "China",
+     "East China Sea",
+     "South China Sea",
+     "Taiwan Strait",
+     "US",
+     "Washington"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-d0ea50cb6af0",
+      "source": "South China Morning Post",
+      "published_at": "2026-07-21T14:00:27",
+      "title": "The US mounts pressure across 3 maritime flashpoints. How should China respond?",
+      "excerpt": "Chinese researchers have called for more coordination among the country’s maritime authorities to counter an American strategy that has put pressure on Beijing across three critical waterways in the first island chain.\nBy synchronising operations across flashpoints in the East China Sea, the Taiwan "
+     }
+    ]
+   },
+   "cosine": 0.444
+  },
+  {
+   "case": "RH065",
+   "a": {
+    "id": "2026-08-15:indonesia-quake-survivor-accounts",
+    "window": "2026-08-15",
+    "members": [
+     "b-b30cd84dfc86"
+    ],
+    "storyline": "indonesia-quake",
+    "first": "2026-08-16T04:45:39",
+    "last": "2026-08-16T04:45:39",
+    "actors": [
+     "Flores",
+     "Indonesia"
+    ],
+    "places": [
+     "Flores Island",
+     "Indonesia",
+     "Melania"
+    ],
+    "system_developments": [
+     2
+    ],
+    "situations": [],
+    "sources": [
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-b30cd84dfc86",
+      "source": "South China Morning Post",
+      "published_at": "2026-08-16T04:45:39",
+      "title": "Indonesian earthquake survivors recount chaotic escape: ‘house collapsed on me’",
+      "excerpt": "Melania Nius was at her husband’s hospital bedside on Indonesia’s Flores Island when a powerful quake shook their town to its core, sending patients fleeing into the chaos outside.\nMelania, 56, recounted how she prayed as she fought to get her family to safety.\n“The four of us – my husband, our two "
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-08-15:indonesia-quake-hospital-tents",
+    "window": "2026-08-15",
+    "members": [
+     "b-bd8a3daf7a97"
+    ],
+    "storyline": "indonesia-quake",
+    "first": "2026-08-16T13:19:35",
+    "last": "2026-08-16T13:19:35",
+    "actors": [],
+    "places": [
+     "Indonesia"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-bd8a3daf7a97",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-16T13:19:35",
+      "title": "Patients treated in tents after earthquake damages Indonesia hospital",
+      "excerpt": "Patients treated in tents after earthquake damages Indonesia hospital"
+     }
+    ]
+   },
+   "cosine": 0.434
+  },
+  {
+   "case": "RH066",
+   "a": {
+    "id": "2026-08-15:yasukuni-ministers-visit",
+    "window": "2026-08-15",
+    "members": [
+     "b-a9fc8865840f",
+     "b-8cc83849f311"
+    ],
+    "storyline": "yasukuni-anniversary",
+    "first": "2026-08-15T01:17:08",
+    "last": "2026-08-15T11:09:27",
+    "actors": [
+     "Cabinet",
+     "Defence",
+     "Japan",
+     "Koizumi",
+     "Sanae Takaichi",
+     "Shinjiro Koizumi",
+     "Takaichi"
+    ],
+    "places": [
+     "China",
+     "Japan",
+     "South Korea",
+     "Tokyo"
+    ],
+    "system_developments": [
+     1
+    ],
+    "situations": [],
+    "sources": [
+     "Al Jazeera",
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-a9fc8865840f",
+      "source": "South China Morning Post",
+      "published_at": "2026-08-15T01:17:08",
+      "title": "Japan PM avoids Yasukuni Shrine on WWII anniversary, 4 ministers visit",
+      "excerpt": "Japanese Prime Minister Sanae Takaichi on Saturday skipped a visit to Tokyo’s controversial Yasukuni Shrine and sent an offering instead, but Defence Minister Shinjiro Koizumi and three other Cabinet members went there on the 81st anniversary of the end of World War II.\nDespite Takaichi, a conservat"
+     },
+     {
+      "item": "b-8cc83849f311",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-15T11:09:27",
+      "title": "Japanese minister visits shrine to war dead, angering China, South Korea",
+      "excerpt": "Defence Minister Koizumi&#039;s visit to Yasukuni Shrine comes on the 81st anniversary of Japan&#039;s surrender in WWII."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-08-15:china-condemns-yasukuni-visit",
+    "window": "2026-08-15",
+    "members": [
+     "b-dba74c970c5b"
+    ],
+    "storyline": "yasukuni-anniversary",
+    "first": "2026-08-15T06:00:48",
+    "last": "2026-08-15T06:00:48",
+    "actors": [
+     "Asian",
+     "Japan",
+     "Sanae Takaichi",
+     "Shinjiro Koizumi"
+    ],
+    "places": [
+     "Beijing",
+     "China",
+     "Japan"
+    ],
+    "system_developments": [
+     1
+    ],
+    "situations": [],
+    "sources": [
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-dba74c970c5b",
+      "source": "South China Morning Post",
+      "published_at": "2026-08-15T06:00:48",
+      "title": "China slams Japanese officials’ visit to Yasukuni Shrine on WWII anniversary",
+      "excerpt": "China has “strongly condemned” Japanese leaders for visiting the controversial Yasukuni Shrine and making an offering on the 81st anniversary of Japan’s announcement of surrender in World War II.\nBeijing said it had lodged a formal protest after Japanese defence chief Shinjiro Koizumi and others vis"
+     }
+    ]
+   },
+   "cosine": 0.776
+  },
+  {
+   "case": "RH067",
+   "a": {
+    "id": "2026-08-15:colombia-asks-trump-tariff-suspension",
+    "window": "2026-08-15",
+    "members": [
+     "b-fce2930002bc",
+     "b-e01a62fce6ad"
+    ],
+    "storyline": "colombia-quake",
+    "first": "2026-08-15T23:04:47",
+    "last": "2026-08-15T23:43:01",
+    "actors": [
+     "Abelardo de la Espriella",
+     "Colombia",
+     "Donald Trump",
+     "South American",
+     "Trump"
+    ],
+    "places": [
+     "Colombia",
+     "US"
+    ],
+    "system_developments": [
+     5
+    ],
+    "situations": [],
+    "sources": [
+     "Al Jazeera",
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-fce2930002bc",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-15T23:04:47",
+      "title": "Colombia asks Trump to suspend tariffs as country reels from earthquake",
+      "excerpt": "Post-earthquake reconstruction is expected to cost about $6.4bn, but Colombia has been hit by renewed US tariffs."
+     },
+     {
+      "item": "b-e01a62fce6ad",
+      "source": "South China Morning Post",
+      "published_at": "2026-08-15T23:43:01",
+      "title": "Colombia leader asks Trump to suspend tariffs after deadly quake",
+      "excerpt": "Colombia’s new President Abelardo de la Espriella on Saturday called on his US counterpart Donald Trump to suspend tariffs currently targeting the South American nation, which is reeling after a deadly earthquake.\nUS tariffs on Colombian products rose from 10 per cent to 12.5 per cent in late July, "
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-08-15:colombia-quake-girl-rescued",
+    "window": "2026-08-15",
+    "members": [
+     "b-2420ccd2ee61"
+    ],
+    "storyline": "colombia-quake",
+    "first": "2026-08-16T08:53:14",
+    "last": "2026-08-16T08:53:14",
+    "actors": [],
+    "places": [
+     "Colombia"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-2420ccd2ee61",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-16T08:53:14",
+      "title": "3-year-old girl rescued 100 hours after Colombia earthquake",
+      "excerpt": "A three-year-old girl and a 75-year-old man have been pulled alive from the rubble days after Colombia’s earthquake."
+     }
+    ]
+   },
+   "cosine": 0.333
+  },
+  {
+   "case": "RH068",
+   "a": {
+    "id": "2026-08-07:icc-chad-venezuela-withdrawal",
+    "window": "2026-08-07",
+    "members": [
+     "b-48256f60ab36"
+    ],
+    "storyline": null,
+    "first": "2026-08-07T23:34:50",
+    "last": "2026-08-07T23:34:50",
+    "actors": [
+     "International"
+    ],
+    "places": [
+     "Chad",
+     "US",
+     "Venezuela"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-48256f60ab36",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-07T23:34:50",
+      "title": "ICC body urges Chad and Venezuela to reverse course on withdrawal",
+      "excerpt": "International court&#039;s oversight body warns exits threaten global justice, as US intensifies campaign against tribunal."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-08-07:courts-clear-tps-deportations",
+    "window": "2026-08-07",
+    "members": [
+     "b-8f340c3b50e1"
+    ],
+    "storyline": null,
+    "first": "2026-08-08T02:08:28",
+    "last": "2026-08-08T02:08:28",
+    "actors": [
+     "Temporary Protected Status",
+     "Trump"
+    ],
+    "places": [
+     "Myanmar",
+     "South Sudan",
+     "US"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-8f340c3b50e1",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-08T02:08:28",
+      "title": "US courts clear way for deportations of South Sudan, Myanmar nationals",
+      "excerpt": "Rulings allow Trump administration to end Temporary Protected Status for nationals of the two countries."
+     }
+    ]
+   },
+   "cosine": 0.392
+  },
+  {
+   "case": "RH069",
+   "a": {
+    "id": "2026-07-21:chinese-loans-philippines",
+    "window": "2026-07-21",
+    "members": [
+     "b-a388fce6c27a"
+    ],
+    "storyline": null,
+    "first": "2026-07-21T07:48:04",
+    "last": "2026-07-21T07:48:04",
+    "actors": [
+     "AidData",
+     "Dito Telecommunity",
+     "Ferdinand Marcos Jnr"
+    ],
+    "places": [
+     "Beijing",
+     "China",
+     "Philippines",
+     "South China Sea",
+     "US"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-a388fce6c27a",
+      "source": "South China Morning Post",
+      "published_at": "2026-07-21T07:48:04",
+      "title": "Chinese loans to Philippines stay resilient despite maritime row",
+      "excerpt": "New findings on Chinese financing in the Philippines are challenging the assumption that Beijing reduced its funding under President Ferdinand Marcos Jnr because of worsening tensions in the South China Sea.\nInstead, Chinese capital had continued to support Filipino businesses in recent years, inclu"
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-07-21:us-pressure-maritime-flashpoints",
+    "window": "2026-07-21",
+    "members": [
+     "b-d0ea50cb6af0"
+    ],
+    "storyline": null,
+    "first": "2026-07-21T14:00:27",
+    "last": "2026-07-21T14:00:27",
+    "actors": [
+     "Yue Shengsong"
+    ],
+    "places": [
+     "Beijing",
+     "China",
+     "East China Sea",
+     "South China Sea",
+     "Taiwan Strait",
+     "US",
+     "Washington"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-d0ea50cb6af0",
+      "source": "South China Morning Post",
+      "published_at": "2026-07-21T14:00:27",
+      "title": "The US mounts pressure across 3 maritime flashpoints. How should China respond?",
+      "excerpt": "Chinese researchers have called for more coordination among the country’s maritime authorities to counter an American strategy that has put pressure on Beijing across three critical waterways in the first island chain.\nBy synchronising operations across flashpoints in the East China Sea, the Taiwan "
+     }
+    ]
+   },
+   "cosine": 0.427
+  },
+  {
+   "case": "RH070",
+   "a": {
+    "id": "2026-07-21:iranians-struggle-feature",
+    "window": "2026-07-21",
+    "members": [
+     "b-6b15c833bad6"
+    ],
+    "storyline": "iran-war",
+    "first": "2026-07-21T17:49:33",
+    "last": "2026-07-21T17:49:33",
+    "actors": [],
+    "places": [
+     "Iran",
+     "US"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-6b15c833bad6",
+      "source": "Al Jazeera",
+      "published_at": "2026-07-21T17:49:33",
+      "title": "Iranians struggle to get by amid US war and domestic woes",
+      "excerpt": "People are facing mounting pressures, including rising living costs, electricity cuts and bombarded infrastructure."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-07-21:iranian-missile-precision-analysis",
+    "window": "2026-07-21",
+    "members": [
+     "b-10a8ee30237a"
+    ],
+    "storyline": "iran-war",
+    "first": "2026-07-22T22:03:13",
+    "last": "2026-07-22T22:03:13",
+    "actors": [
+     "Iran",
+     "Tehran",
+     "Trump",
+     "US",
+     "Washington"
+    ],
+    "places": [
+     "Iran",
+     "Jordan",
+     "US"
+    ],
+    "system_developments": [
+     3
+    ],
+    "situations": [
+     "us-iran"
+    ],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-10a8ee30237a",
+      "source": "Al Jazeera",
+      "published_at": "2026-07-22T22:03:13",
+      "title": "Iranian missiles show deadly precision amid US-Iran war escalation",
+      "excerpt": "Killing of three US soldiers at Jordan base shows Iran maintains the ability to exact deadly toll in grinding conflict."
+     }
+    ]
+   },
+   "cosine": 0.457
+  },
+  {
+   "case": "RH071",
+   "a": {
+    "id": "2026-08-07:drc-m23-prisoner-release",
+    "window": "2026-08-07",
+    "members": [
+     "b-303d55e4ab24"
+    ],
+    "storyline": null,
+    "first": "2026-08-07T19:21:01",
+    "last": "2026-08-07T19:21:01",
+    "actors": [
+     "ICRC",
+     "M23"
+    ],
+    "places": [
+     "Congo",
+     "DR",
+     "Democratic Republic Of The Congo",
+     "Doha",
+     "North Kivu"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-303d55e4ab24",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-07T19:21:01",
+      "title": "DR Congo releases 15 prisoners to M23 rebels as part of Doha peace process",
+      "excerpt": "ICRC facilitates first known transfer of detainees between Congolese government and M23 rebels in North Kivu."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-08-07:drc-ebola-4000-cases",
+    "window": "2026-08-07",
+    "members": [
+     "b-42a1a3092008"
+    ],
+    "storyline": null,
+    "first": "2026-08-07T20:41:46",
+    "last": "2026-08-07T20:41:46",
+    "actors": [
+     "Ervebo"
+    ],
+    "places": [
+     "DRC"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-42a1a3092008",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-07T20:41:46",
+      "title": "Ebola cases top 4,000 in DRC as WHO urges Ervebo vaccine trial",
+      "excerpt": "The Bundibugyo epidemic, ​the world&#039;s second-largest, has been described as the ⁠fastest-spreading on record."
+     }
+    ]
+   },
+   "cosine": 0.296
+  },
+  {
+   "case": "RH072",
+   "a": {
+    "id": "2026-07-21:sikkim-tunnel-collapse",
+    "window": "2026-07-21",
+    "members": [
+     "b-7b1cf295db46",
+     "b-bb9784028631"
+    ],
+    "storyline": null,
+    "first": "2026-07-21T08:57:53",
+    "last": "2026-07-21T19:41:38",
+    "actors": [
+     "Himalayan",
+     "India",
+     "Prem Singh",
+     "State"
+    ],
+    "places": [
+     "China",
+     "India",
+     "Sikkim",
+     "Tamang"
+    ],
+    "system_developments": [
+     4
+    ],
+    "situations": [],
+    "sources": [
+     "Al Jazeera",
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-7b1cf295db46",
+      "source": "South China Morning Post",
+      "published_at": "2026-07-21T08:57:53",
+      "title": "India tunnel disaster at hydropower project leaves 11 dead, 14 missing",
+      "excerpt": "A suspected gas explosion on Monday triggered a collapse inside a tunnel that was under construction at a hydropower project in India’s northeastern Himalayan state of Sikkim, leaving at least 11 people dead and 14 missing, officials said on Tuesday.\nState Chief Minister Prem Singh Tamang, who visit"
+     },
+     {
+      "item": "b-bb9784028631",
+      "source": "Al Jazeera",
+      "published_at": "2026-07-21T19:41:38",
+      "title": "India tunnel collapse kills 10 as toxic gases hamper rescue",
+      "excerpt": "At least 10 people have died and 17 remain trapped after a suspected gas explosion caused a tunnel to collapse."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-07-21:afghanistan-flash-floods",
+    "window": "2026-07-21",
+    "members": [
+     "b-5eb742fe70dd",
+     "b-2d3c6f0fe5dd"
+    ],
+    "storyline": null,
+    "first": "2026-07-21T17:41:39",
+    "last": "2026-07-21T19:21:15",
+    "actors": [],
+    "places": [
+     "Afghanistan"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-5eb742fe70dd",
+      "source": "Al Jazeera",
+      "published_at": "2026-07-21T17:41:39",
+      "title": "Rescuers search for survivors amid risk of fresh floods in Afghanistan",
+      "excerpt": "Death toll rises to at least 23, with more than 100 people missing, as monsoon season spreads chaos across region."
+     },
+     {
+      "item": "b-2d3c6f0fe5dd",
+      "source": "Al Jazeera",
+      "published_at": "2026-07-21T19:21:15",
+      "title": "Rescuers search for flood survivors in Afghanistan",
+      "excerpt": "Rescuers in eastern Afghanistan are searching through mud and rubble after flash floods and a landslide"
+     }
+    ]
+   },
+   "cosine": 0.439
+  },
+  {
+   "case": "RH073",
+   "a": {
+    "id": "2026-08-07:mecca-pact-whats-in-it",
+    "window": "2026-08-07",
+    "members": [
+     "b-0497a818302f"
+    ],
+    "storyline": "mecca-defence-pact",
+    "first": "2026-08-07T13:28:40",
+    "last": "2026-08-07T13:28:40",
+    "actors": [],
+    "places": [
+     "Pakistan",
+     "Saudi Arabia",
+     "Turkiye"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-0497a818302f",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-07T13:28:40",
+      "title": "Turkiye, Saudi Arabia, Pakistan sign joint defence agreement: What’s in it?",
+      "excerpt": "Pact will &#039;reshape security architecture&#039; of the region, experts say."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-08-07:israel-mulls-mecca-pact",
+    "window": "2026-08-07",
+    "members": [
+     "b-476e54ea6440"
+    ],
+    "storyline": "mecca-defence-pact",
+    "first": "2026-08-08T13:42:06",
+    "last": "2026-08-08T13:42:06",
+    "actors": [
+     "Pakistan",
+     "Saudi Arabia",
+     "Turkey",
+     "Turkiye"
+    ],
+    "places": [
+     "Israel",
+     "Pakistan",
+     "Saudi Arabia",
+     "Turkiye"
+    ],
+    "system_developments": [
+     5
+    ],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-476e54ea6440",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-08T13:42:06",
+      "title": "Israel mulls Saudi, Turkiye, Pakistan pact as elections loom",
+      "excerpt": "Saudi Arabia, Turkiye, and Pakistan form a new defence pact, leaving Israel’s response and its implications uncertain."
+     }
+    ]
+   },
+   "cosine": 0.706
+  },
+  {
+   "case": "RH074",
+   "a": {
+    "id": "2026-07-21:us-chinese-ai-gap-analysis",
+    "window": "2026-07-21",
+    "members": [
+     "b-2919dabd474e"
+    ],
+    "storyline": null,
+    "first": "2026-07-21T18:38:24",
+    "last": "2026-07-21T18:38:24",
+    "actors": [
+     "AI"
+    ],
+    "places": [
+     "China",
+     "OpenAI",
+     "US",
+     "Washington"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-2919dabd474e",
+      "source": "South China Morning Post",
+      "published_at": "2026-07-21T18:38:24",
+      "title": "As US-Chinese AI model gap narrows, what next for Washington?",
+      "excerpt": "For years, Washington has fixated on the gap between US and Chinese artificial intelligence (AI) models as AI has increasingly taken centre stage in the strategic competition between the world’s two leading powers.\nThe release of OpenAI’s ChatGPT in late 2022 established a clear early lead for the U"
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-07-21:senate-hearing-china-science",
+    "window": "2026-07-21",
+    "members": [
+     "b-438595d36348"
+    ],
+    "storyline": null,
+    "first": "2026-07-21T20:19:45",
+    "last": "2026-07-21T20:19:45",
+    "actors": [
+     "Drew Endy",
+     "Hoover Institution",
+     "Stanford University",
+     "US Senate"
+    ],
+    "places": [
+     "China",
+     "Mars",
+     "Paris",
+     "Shanghai",
+     "US",
+     "Washington"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-438595d36348",
+      "source": "South China Morning Post",
+      "published_at": "2026-07-21T20:19:45",
+      "title": "Crawfish soup on Mars? US fears over China’s scientific ambitions raised in Senate hearing",
+      "excerpt": "A Chinese researcher’s vision of serving spicy crawfish soup to astronauts on Mars became an unlikely symbol of Washington’s growing anxiety over China’s scientific ambitions at a US Senate hearing on Tuesday.\nDrew Endy, associate professor at Stanford University and director of bio-strategy and lea"
+     }
+    ]
+   },
+   "cosine": 0.325
+  },
+  {
+   "case": "RH075",
+   "a": {
+    "id": "2026-09-10:trump-pentagon-ceremony",
+    "window": "2026-09-10",
+    "members": [
+     "b-a8259968fc37"
+    ],
+    "storyline": "sept11-25th-anniversary",
+    "first": "2026-09-11T15:45:46",
+    "last": "2026-09-11T15:45:46",
+    "actors": [
+     "Donald Trump",
+     "Trump",
+     "US",
+     "US Department of Defense"
+    ],
+    "places": [
+     "US"
+    ],
+    "system_developments": [
+     4
+    ],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-a8259968fc37",
+      "source": "Al Jazeera",
+      "published_at": "2026-09-11T15:45:46",
+      "title": "Trump pays tribute to the victims of 9/11 at Pentagon ceremony",
+      "excerpt": "US President Donald Trump remembered the victims of the September 11 attacks at a ceremony to mark the 25th anniversary."
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-09-10:sept11-memorials-nationwide",
+    "window": "2026-09-10",
+    "members": [
+     "b-d978e0532a2a",
+     "b-284274889fb4"
+    ],
+    "storyline": "sept11-25th-anniversary",
+    "first": "2026-09-11T17:06:42",
+    "last": "2026-09-11T18:00:41",
+    "actors": [
+     "Donald Trump",
+     "J.D. Vance",
+     "Trump",
+     "US",
+     "US Department of Defense",
+     "World Trade Centre"
+    ],
+    "places": [
+     "Lower",
+     "New York",
+     "Pennsylvania",
+     "US",
+     "Virginia"
+    ],
+    "system_developments": [
+     4
+    ],
+    "situations": [],
+    "sources": [
+     "Al Jazeera",
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-d978e0532a2a",
+      "source": "South China Morning Post",
+      "published_at": "2026-09-11T17:06:42",
+      "title": "Americans mark 25 years since 9/11 attacks amid enduring grief, reflection",
+      "excerpt": "Twenty-five years ⁠after the deadliest attack on US soil, Americans paused on Friday to commemorate the nearly 3,000 people killed when hijacked planes slammed into the World Trade Centre, the Pentagon and a field in Pennsylvania – and to wrestle with the consequences of September 11 that reverberat"
+     },
+     {
+      "item": "b-284274889fb4",
+      "source": "Al Jazeera",
+      "published_at": "2026-09-11T18:00:41",
+      "title": "US holds memorials for the 9/11 attacks, 25 years later",
+      "excerpt": "In New York, Virginia and Pennsylvania, mourners gathered to remember nearly 3,000 people killed during the hijackings."
+     }
+    ]
+   },
+   "cosine": 0.617
+  },
+  {
+   "case": "RH076",
+   "a": {
+    "id": "2026-08-15:modi-free-coaching-youth",
+    "window": "2026-08-15",
+    "members": [
+     "b-185307612b41"
+    ],
+    "storyline": "modi-independence-day",
+    "first": "2026-08-15T08:27:20",
+    "last": "2026-08-15T08:27:20",
+    "actors": [
+     "Gen Z",
+     "Modi",
+     "Narendra Modi"
+    ],
+    "places": [
+     "India",
+     "New Delhi",
+     "Red Fort"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-185307612b41",
+      "source": "South China Morning Post",
+      "published_at": "2026-08-15T08:27:20",
+      "title": "India’s Modi woos youth with free coaching, AI training after Gen Z protests",
+      "excerpt": "Indian Prime Minister Narendra Modi said on Saturday his government would provide free online coaching lessons for competitive exams, weeks after massive youth-led protests forced the education minister to resign.\nModi said the initiative was aimed at easing the financial burden on millions of famil"
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-08-15:azadi-chants-youth-protests",
+    "window": "2026-08-15",
+    "members": [
+     "b-dc6bec3a533d"
+    ],
+    "storyline": null,
+    "first": "2026-08-15T15:25:51",
+    "last": "2026-08-15T15:25:51",
+    "actors": [],
+    "places": [
+     "India"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-dc6bec3a533d",
+      "source": "Al Jazeera",
+      "published_at": "2026-08-15T15:25:51",
+      "title": "Sedition to anthem: Many lives of ‘Azadi’ chants in India’s youth protests",
+      "excerpt": "A decade ago, student leaders were jailed for shouting &#039;Azadi&#039;, which means freedom."
+     }
+    ]
+   },
+   "cosine": 0.352
+  },
+  {
+   "case": "RH077",
+   "a": {
+    "id": "2026-07-21:trump-softens-tone-before-rubio-wang",
+    "window": "2026-07-21",
+    "members": [
+     "b-43228994e143"
+    ],
+    "storyline": "rubio-wang-talks",
+    "first": "2026-07-21T17:35:24",
+    "last": "2026-07-21T17:35:24",
+    "actors": [
+     "Donald Trump",
+     "Marco Rubio",
+     "Rubio-Wang",
+     "State",
+     "Wang Yi"
+    ],
+    "places": [
+     "Beijing",
+     "China",
+     "Manila",
+     "US",
+     "Washington"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-43228994e143",
+      "source": "South China Morning Post",
+      "published_at": "2026-07-21T17:35:24",
+      "title": "Trump softens tone on alleged China election meddling before Rubio-Wang talks",
+      "excerpt": "US Secretary of State Marco Rubio will meet Chinese Foreign Minister Wang Yi in Manila on Wednesday, as President Donald Trump signalled that Washington would confront Beijing over its alleged interference in the 2020 election but played down the prospect of retaliation.\n“We’re going to talk to them"
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-07-21:rubio-wang-asean-meeting",
+    "window": "2026-07-21",
+    "members": [
+     "b-d6c327594c40"
+    ],
+    "storyline": "rubio-wang-talks",
+    "first": "2026-07-22T22:11:14",
+    "last": "2026-07-22T22:11:14",
+    "actors": [
+     "ASEAN",
+     "Rubio",
+     "Xi Jinping"
+    ],
+    "places": [
+     "China",
+     "US"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "Al Jazeera"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-d6c327594c40",
+      "source": "Al Jazeera",
+      "published_at": "2026-07-22T22:11:14",
+      "title": "Rubio says US, China must ‘work through’ big differences at ASEAN meeting",
+      "excerpt": "Rubio met his Chinese counterpart to discuss managing tensions ahead of President Xi Jinping&#039;s upcoming US visit."
+     }
+    ]
+   },
+   "cosine": 0.697
+  },
+  {
+   "case": "RH078",
+   "a": {
+    "id": "2026-08-15:zhu-rongji-opinion",
+    "window": "2026-08-15",
+    "members": [
+     "b-d6fcd67abf97"
+    ],
+    "storyline": "zhu-rongji-death",
+    "first": "2026-08-15T12:30:06",
+    "last": "2026-08-15T12:30:06",
+    "actors": [
+     "National Committee",
+     "Sino-American",
+     "Zhu",
+     "Zhu Rongji"
+    ],
+    "places": [
+     "China",
+     "Shanghai",
+     "US"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-d6fcd67abf97",
+      "source": "South China Morning Post",
+      "published_at": "2026-08-15T12:30:06",
+      "title": "Zhu Rongji’s death a reminder of what US-China relations have lost",
+      "excerpt": "With the death of former Chinese premier Zhu Rongji, both China and the wider world have lost a great leader.\nZhu took personal risks for better US-China ties. He believed that productive Sino-American relations were good for China and for the world.\nHe was a global leader before China had achieved "
+     }
+    ]
+   },
+   "b": {
+    "id": "2026-08-15:china-flags-half-mast-zhu-funeral",
+    "window": "2026-08-15",
+    "members": [
+     "b-ad3f360d13ea"
+    ],
+    "storyline": "zhu-rongji-death",
+    "first": "2026-08-16T10:37:33",
+    "last": "2026-08-16T10:37:33",
+    "actors": [
+     "Xinhua",
+     "Zhu",
+     "Zhu Rongji"
+    ],
+    "places": [
+     "Beijing",
+     "China",
+     "Hong Kong",
+     "Macau",
+     "Tiananmen"
+    ],
+    "system_developments": [],
+    "situations": [],
+    "sources": [
+     "South China Morning Post"
+    ],
+    "langs": [
+     "en"
+    ],
+    "roundup_only": false,
+    "evidence": [
+     {
+      "item": "b-ad3f360d13ea",
+      "source": "South China Morning Post",
+      "published_at": "2026-08-16T10:37:33",
+      "title": "China to fly flags at half-mast for former premier Zhu Rongji’s funeral",
+      "excerpt": "Former Chinese premier Zhu Rongji will be cremated in Beijing on Tuesday, with flags across the country – including in Hong Kong and Macau – flown at half-mast, state media reported on Sunday.\nZhu, who served as premier from 1998 to 2003 and played a pivotal role in transitioning China towards a mar"
+     }
+    ]
+   },
+   "cosine": 0.564
+  }
+ ],
+ "rules": {
+  "RH001": [
+   "cue: follow_up"
+  ],
+  "RH002": [
+   "lifecycle: attack"
+  ],
+  "RH003": [
+   "lifecycle: calamity"
+  ],
+  "RH004": [
+   "cue: follow_up",
+   "lifecycle: calamity"
+  ],
+  "RH005": [
+   "gold_related: Trump appointments / personnel"
+  ],
+  "RH006": [
+   "lifecycle: attack"
+  ],
+  "RH007": [
+   "neg_same_crisis: mecca-defence-pact"
+  ],
+  "RH008": [
+   "neg_same_actors: european,european union"
+  ],
+  "RH009": [
+   "neg_same_crisis: iran-war"
+  ],
+  "RH010": [
+   "neg_chrono_adjacent: 0.6 h"
+  ],
+  "RH011": [
+   "neg_same_actors: republican,united states"
+  ],
+  "RH012": [
+   "cue: follow_up"
+  ],
+  "RH013": [
+   "gold_related: China-Philippines maritime row vs loan data"
+  ],
+  "RH014": [
+   "gold_related: Ukraine defence-industry cooperation"
+  ],
+  "RH015": [
+   "neg_broad_pair: America-Iran"
+  ],
+  "RH016": [
+   "gold_related: two North American wildfires"
+  ],
+  "RH017": [
+   "gold_related: two deadly ship fires in Asia the same day"
+  ],
+  "RH018": [
+   "lifecycle: calamity"
+  ],
+  "RH019": [
+   "lifecycle: calamity"
+  ],
+  "RH020": [
+   "neg_same_place: Hong Kong"
+  ],
+  "RH021": [
+   "cue: follow_up"
+  ],
+  "RH022": [
+   "cue: follow_up",
+   "storyline_mates: iran-war"
+  ],
+  "RH023": [
+   "lifecycle: attack"
+  ],
+  "RH024": [
+   "gold_related: two different HK police arrest operations"
+  ],
+  "RH025": [
+   "neg_same_crisis: gop-midterm-convention"
+  ],
+  "RH026": [
+   "neg_same_actors: republican,united states"
+  ],
+  "RH027": [
+   "lifecycle: attack"
+  ],
+  "RH028": [
+   "storyline_mates: iran-war-hormuz"
+  ],
+  "RH029": [
+   "cue: reaction"
+  ],
+  "RH030": [
+   "gold_related: both Ireland"
+  ],
+  "RH031": [
+   "lifecycle: attack"
+  ],
+  "RH032": [
+   "neg_same_actors: zhu,zhu rongji"
+  ],
+  "RH033": [
+   "lifecycle: attack"
+  ],
+  "RH034": [
+   "gold_related: Belgium wildfire vs Europe drought"
+  ],
+  "RH035": [
+   "neg_same_crisis: iran-war-hormuz"
+  ],
+  "RH036": [
+   "cue: follow_up"
+  ],
+  "RH037": [
+   "storyline_mates: iran-war"
+  ],
+  "RH038": [
+   "cue: reaction"
+  ],
+  "RH039": [
+   "storyline_mates: iran-war"
+  ],
+  "RH040": [
+   "gold_related: both China-Philippines/SCS tensions"
+  ],
+  "RH041": [
+   "neg_broad_pair: America-Iran"
+  ],
+  "RH042": [
+   "storyline_mates: iran-war-hormuz"
+  ],
+  "RH043": [
+   "gold_related: two different Chinese AI systems"
+  ],
+  "RH044": [
+   "neg_same_place: US,Washington"
+  ],
+  "RH045": [
+   "neg_broad_pair: America-China",
+   "neg_same_actors: china,united states"
+  ],
+  "RH046": [
+   "storyline_mates: ukraine-command-crisis"
+  ],
+  "RH047": [
+   "neg_broad_pair: America-China"
+  ],
+  "RH048": [
+   "storyline_mates: houthi-yemen-offensive"
+  ],
+  "RH049": [
+   "gold_related: both about aid cuts driving HIV crises"
+  ],
+  "RH050": [
+   "neg_same_crisis: taliban-five-years"
+  ],
+  "RH051": [
+   "neg_chrono_adjacent: 0.3 h"
+  ],
+  "RH052": [
+   "cue: reaction",
+   "gold_related: both Iran-axis attacks on Gulf targets"
+  ],
+  "RH053": [
+   "lifecycle: calamity"
+  ],
+  "RH054": [
+   "neg_same_crisis: taliban-five-years"
+  ],
+  "RH055": [
+   "storyline_mates: qusra-siege"
+  ],
+  "RH056": [
+   "neg_same_crisis: lebanon-israel"
+  ],
+  "RH057": [
+   "gold_related: Pentagon site selections for tech programs"
+  ],
+  "RH058": [
+   "neg_same_place: US"
+  ],
+  "RH059": [
+   "cue: reaction"
+  ],
+  "RH060": [
+   "lifecycle: attack"
+  ],
+  "RH061": [
+   "neg_same_place: US"
+  ],
+  "RH062": [
+   "neg_broad_pair: Russia-Ukraine"
+  ],
+  "RH063": [
+   "neg_same_crisis: gop-midterm-convention"
+  ],
+  "RH064": [
+   "cue: reaction"
+  ],
+  "RH065": [
+   "lifecycle: calamity"
+  ],
+  "RH066": [
+   "lifecycle: visit"
+  ],
+  "RH067": [
+   "storyline_mates: colombia-quake"
+  ],
+  "RH068": [
+   "neg_chrono_adjacent: 2.6 h"
+  ],
+  "RH069": [
+   "cue: reaction"
+  ],
+  "RH070": [
+   "lifecycle: attack"
+  ],
+  "RH071": [
+   "gold_related: both DR Congo"
+  ],
+  "RH072": [
+   "gold_related: both South Asia disasters with rescuers and missing people"
+  ],
+  "RH073": [
+   "storyline_mates: mecca-defence-pact"
+  ],
+  "RH074": [
+   "neg_chrono_adjacent: 1.7 h"
+  ],
+  "RH075": [
+   "storyline_mates: sept11-25th-anniversary"
+  ],
+  "RH076": [
+   "gold_related: both about India's youth protests"
+  ],
+  "RH077": [
+   "lifecycle: visit"
+  ],
+  "RH078": [
+   "storyline_mates: zhu-rongji-death"
+  ]
+ }
+}

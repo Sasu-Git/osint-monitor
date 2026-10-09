@@ -1,0 +1,49 @@
+# Owner verdicts for the Phase 3 relation gold, one entry per case (written by the review UI,
+# /eval/relations). label: NO_RELATION | a relation type | AMBIGUOUS | SAME_DEVELOPMENT_SUSPECTED.
+# direction (A->B | B->A, source -> target) only for reaction_to, follow_up_to, caused_by.
+# Notes are kept verbatim. Regenerating the review sheet never overwrites this file.
+T001: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T13:18:17+00:00'}
+T002: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T13:18:37+00:00'}
+T003: {label: commentary_on, direction: B->A, identity_flag: null, note: 'B is world news in brief, so it''s not the totality of B that is the development of A, just a tiny bit, the bit about repatriating', reviewed_at: '2026-10-07T13:20:22+00:00'}
+T004: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T13:20:40+00:00'}
+T005: {label: NO_RELATION, direction: null, identity_flag: null, note: 'link to third occurrence needs modelling (the rejection) ', reviewed_at: '2026-10-07T13:44:14+00:00'}
+T006: {label: reaction_to, direction: B->A, identity_flag: null, note: null, reviewed_at: '2026-10-07T13:44:40+00:00'}
+T007: {label: NO_RELATION, direction: null, identity_flag: null, note: 'no relation, both concern third occurrence, should be linked and modelled', reviewed_at: '2026-10-07T13:46:24+00:00'}
+T008: {label: SAME_DEVELOPMENT_SUSPECTED, direction: null, identity_flag: SAME_DEVELOPMENT_SUSPECTED, note: 'clearly same development, same proposal, same day, same woman, same case', reviewed_at: '2026-10-07T13:47:17+00:00'}
+T009: {label: commentary_on, direction: B->A, identity_flag: null, note: null, reviewed_at: '2026-10-07T13:47:52+00:00'}
+T010: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T13:48:21+00:00'}
+T011: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T13:52:40+00:00'}
+T012: {label: follow_up_to, direction: B->A, identity_flag: null, note: null, reviewed_at: '2026-10-07T13:53:12+00:00'}
+T013: {label: follow_up_to, direction: B->A, identity_flag: null, note: null, reviewed_at: '2026-10-07T13:53:27+00:00'}
+T014: {label: follow_up_to, direction: B->A, identity_flag: null, note: null, reviewed_at: '2026-10-07T13:53:54+00:00'}
+T015: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T13:54:13+00:00'}
+T016: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T13:54:33+00:00'}
+T017: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T13:54:43+00:00'}
+T018: {label: reaction_to, direction: B->A, identity_flag: null, note: null, reviewed_at: '2026-10-07T13:55:27+00:00'}
+T019: {label: same_convened_event, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T13:56:57+00:00'}
+T020: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T13:57:35+00:00'}
+T021: {label: same_attack_wave, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T13:58:13+00:00'}
+T022: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T13:58:27+00:00'}
+T023: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T13:58:38+00:00'}
+T024: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T13:59:51+00:00'}
+T025: {label: SAME_DEVELOPMENT_SUSPECTED, direction: null, identity_flag: SAME_DEVELOPMENT_SUSPECTED, note: null, reviewed_at: '2026-10-07T14:00:40+00:00'}
+T026: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T14:00:50+00:00'}
+T027: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T14:01:18+00:00'}
+T028: {label: same_convened_event, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T14:01:45+00:00'}
+T029: {label: NO_RELATION, direction: null, identity_flag: null, note: 'it''s a reaction to a third event, should be linked and modelled accordingly', reviewed_at: '2026-10-07T14:02:45+00:00'}
+T030: {label: reaction_to, direction: B->A, identity_flag: null, note: null, reviewed_at: '2026-10-07T14:03:02+00:00'}
+T031: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T14:03:10+00:00'}
+T032: {label: commentary_on, direction: A->B, identity_flag: null, note: null, reviewed_at: '2026-10-07T14:03:35+00:00'}
+T033: {label: SAME_DEVELOPMENT_SUSPECTED, direction: null, identity_flag: SAME_DEVELOPMENT_SUSPECTED, note: null, reviewed_at: '2026-10-07T14:04:42+00:00'}
+T034: {label: SAME_DEVELOPMENT_SUSPECTED, direction: null, identity_flag: SAME_DEVELOPMENT_SUSPECTED, note: null, reviewed_at: '2026-10-07T14:04:57+00:00'}
+T035: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T14:05:08+00:00'}
+T036: {label: reaction_to, direction: B->A, identity_flag: null, note: null, reviewed_at: '2026-10-07T14:05:41+00:00'}
+T037: {label: follow_up_to, direction: B->A, identity_flag: null, note: null, reviewed_at: '2026-10-07T16:50:12+00:00'}
+T038: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T16:50:30+00:00'}
+T039: {label: SAME_DEVELOPMENT_SUSPECTED, direction: null, identity_flag: SAME_DEVELOPMENT_SUSPECTED, note: null, reviewed_at: '2026-10-07T16:51:03+00:00'}
+T040: {label: follow_up_to, direction: B->A, identity_flag: null, note: null, reviewed_at: '2026-10-07T16:52:30+00:00'}
+T041: {label: SAME_DEVELOPMENT_SUSPECTED, direction: null, identity_flag: SAME_DEVELOPMENT_SUSPECTED, note: null, reviewed_at: '2026-10-07T16:53:02+00:00'}
+T042: {label: NO_RELATION, direction: null, identity_flag: null, note: link to third event and model, reviewed_at: '2026-10-07T16:53:56+00:00'}
+T043: {label: reaction_to, direction: B->A, identity_flag: null, note: null, reviewed_at: '2026-10-07T16:54:31+00:00'}
+T044: {label: NO_RELATION, direction: null, identity_flag: null, note: third topic, reviewed_at: '2026-10-07T16:54:54+00:00'}
+T045: {label: NO_RELATION, direction: null, identity_flag: null, note: third event, reviewed_at: '2026-10-07T16:55:43+00:00'}

@@ -1,0 +1,97 @@
+# Phase 3 relation gold: windows. Development split feeds the review sheet; the holdout split is sealed
+# (holdout/SEALED.yaml) and is neither replayed for inspection nor read while relation logic is developed.
+# Item files are referenced in place with the hashes they were frozen with; nothing here re-freezes them.
+version: 1
+tick_hours: 12
+windows:
+# --- development --------------------------------------------------------------------------------------------------
+- id: '2026-08-21'
+  split: development
+  items_file: ../clustering/windows/2026-08-21.items.jsonl
+  items_sha256: c4932b5c4acf7d7566efd87b27a25dcb3ce78410c836ae1565463336ea860814
+  occurrences: ../clustering/labels/2026-08-21.labels.yaml
+  start: '2026-08-21T00:00:00'
+  end: '2026-08-23T00:00:00'
+  why: identity gold A-cases (owner notes), clustering gold occurrences and storylines
+- id: '2026-08-31'
+  split: development
+  items_file: ../clustering/windows/2026-08-31.items.jsonl
+  items_sha256: aed1d3041577c500c1eaddbbedd7f71aae088d0006dddec62a4a4b69e1d474de
+  occurrences: ../clustering/labels/2026-08-31.labels.yaml
+  start: '2026-08-31T00:00:00'
+  end: '2026-09-02T00:00:00'
+  why: identity gold H-cases (owner notes, calamity lifecycle); the Phase 2 holdout is scored and closed
+- id: '2026-09-25'
+  split: development
+  items_file: ../clustering/windows/2026-09-25.items.jsonl
+  items_sha256: dd84b77e1b99c487396e1dc46411ea626ec49b005f98840e6a2f4dbba6affaef
+  occurrences: ../clustering/labels/2026-09-25.labels.yaml
+  start: '2026-09-23T08:36:00'
+  end: '2026-09-25T08:36:00'
+  why: identity gold B-cases (summit / visit notes), live defence outlets
+- id: 2026-09-27-live
+  split: development
+  items_file: ../clustering/windows/2026-09-27-live.items.jsonl
+  items_sha256: 7909656a6398bba461bb682c0b61ea2e852f0879be2bb7eec156d26b58bb994a
+  occurrences: ../clustering/labels/2026-09-27-live.labels.yaml
+  start: '2026-09-27T00:00:00'
+  end: '2026-09-28T12:00:00'
+  why: live pipeline data with clustering gold occurrences
+- id: 2026-09-29-live
+  split: development
+  items_file: ../clustering/windows/2026-09-29-live.items.jsonl
+  items_sha256: bc19462d9e00a996b1faf626bab783217d32fabc598877254edc656cc8c2d781
+  occurrences: ../clustering/labels/2026-09-29-live.labels.yaml
+  start: '2026-09-28T12:00:00'
+  end: '2026-09-29T12:00:00'
+  why: live pipeline data with clustering gold occurrences
+- id: 2026-09-30-multilingual
+  split: development
+  items_file: ../identity/windows/2026-09-30-multilingual.items.jsonl
+  items_sha256: 492e17ce0ed0121d5e0ceafc0bdbb376e94fe4a0245880f74fd0cc1c3fb264d9
+  occurrences: null
+  start: '2026-09-28T12:00:00'
+  end: '2026-09-30T12:00:00'
+  why: identity gold C-cases (official packages, reaction notes); en/it/es institutional sources
+- id: 2026-10-03-live
+  split: development
+  items_file: windows/2026-10-03-live.items.jsonl
+  items_sha256: f66e02726930173fa10ca226a09cceb492700fc40441f481f2f2ff892c06fd46
+  source: data/eval/situation-holdout-2026-10-03.snapshot.db (backup-API copy, sha256 1934c11a), rss sources only
+  occurrences: null
+  start: '2026-09-29T12:00:00'
+  end: '2026-10-03T12:00:00'
+  why: the Situation hold-out window (news sources only); broad actor-pair controls (US-China, Russia-Ukraine)
+# --- holdout (sealed) ---------------------------------------------------------------------------------------------
+- id: '2026-07-21'
+  split: holdout
+  items_file: ../clustering/windows/2026-07-21.items.jsonl
+  items_sha256: defb0d57f9e6e45890758416e2ec102170f70d49c87aa829f5acba3a6ffb3c2b
+  occurrences: ../clustering/labels/2026-07-21.labels.yaml
+  start: '2026-07-21T00:00:00'
+  end: '2026-07-23T00:00:00'
+  why: never used for identity or relation work
+- id: '2026-08-07'
+  split: holdout
+  items_file: ../clustering/windows/2026-08-07.items.jsonl
+  items_sha256: ed662299446fdf84d6c422a2c550249e14a479baa3478470e30a68859a349ee7
+  occurrences: ../clustering/labels/2026-08-07.labels.yaml
+  start: '2026-08-07T00:00:00'
+  end: '2026-08-09T00:00:00'
+  why: never used for identity or relation work
+- id: '2026-08-15'
+  split: holdout
+  items_file: ../clustering/windows/2026-08-15.items.jsonl
+  items_sha256: 0274b7d836f97f8537b2772df6286f12bc4e20bab9ed1b272e6d91687cb7c0c2
+  occurrences: ../clustering/labels/2026-08-15.labels.yaml
+  start: '2026-08-15T00:00:00'
+  end: '2026-08-17T00:00:00'
+  why: never used for identity or relation work
+- id: '2026-09-10'
+  split: holdout
+  items_file: ../clustering/windows/2026-09-10.items.jsonl
+  items_sha256: fb1aa49e45d3315a4e8acc8c9f00a5de6205e3384bcd76e95fe46b169f8b1374
+  occurrences: ../clustering/labels/2026-09-10.labels.yaml
+  start: '2026-09-10T00:00:00'
+  end: '2026-09-12T00:00:00'
+  why: clustering holdout (scored once for clustering); never used for identity or relation work

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Relation review · {{ cid }}</title>
+<script src="https://unpkg.com/htmx.org@1.9.12"></script>
+<style>
+  :root { --bg:#0f1117; --card:#1a1d29; --card2:#222639; --text:#e4e7f0; --muted:#8b92a8; --accent:#4f8ff7;
+          --warn:#ffc107; --bad:#ff4757; --ok:#28c76f; --border:#2d3148; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:'Segoe UI',system-ui,sans-serif; background:var(--bg); color:var(--text); font-size:14px; }
+  header { display:flex; gap:16px; align-items:center; padding:10px 16px; border-bottom:1px solid var(--border);
+           background:var(--card); position:sticky; top:0; z-index:2; flex-wrap:wrap; }
+  header h1 { font-size:16px; margin:0; }
+  a { color:var(--accent); text-decoration:none; }
+  .muted { color:var(--muted); }
+  .nav a, .nav span { padding:4px 10px; border:1px solid var(--border); border-radius:6px; margin-right:4px; }
+  .nav span.disabled { color:var(--muted); opacity:.5; }
+  .filters a { font-size:12px; padding:2px 8px; border-radius:10px; border:1px solid var(--border); margin-right:4px; }
+  .filters a.on { background:var(--accent); color:#fff; border-color:var(--accent); }
+  main { padding:16px; display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+  @media (max-width: 1000px) { main { grid-template-columns:1fr; } }
+  .side { background:var(--card); border:1px solid var(--border); border-radius:8px; padding:12px 14px; }
+  .side h2 { font-size:14px; margin:0 0 8px; font-family:monospace; }
+  dl { display:grid; grid-template-columns:130px 1fr; gap:3px 10px; margin:0 0 10px; }
+  dt { color:var(--muted); } dd { margin:0; }
+  .badge { display:inline-block; font-size:11px; padding:1px 7px; border-radius:9px; margin:0 4px 2px 0;
+           border:1px solid var(--border); }
+  .b-fact { border-color:var(--ok); color:var(--ok); }
+  .b-comm { border-color:var(--warn); color:var(--warn); }
+  .b-single { border-color:var(--bad); color:var(--bad); }
+  .ev { border-left:3px solid var(--ok); padding:6px 10px; margin:6px 0; background:var(--card2); border-radius:0 6px 6px 0; }
+  .ev.comm { border-left-color:var(--warn); }
+  .ev .t { font-weight:600; } .ev .x { color:#c8ccd8; margin-top:3px; }
+  #panel-wrap { grid-column:1 / -1; }
+  .panel { background:var(--card); border:1px solid var(--border); border-radius:8px; padding:12px 14px; }
+  .verdicts { display:flex; flex-wrap:wrap; gap:6px; margin:6px 0 10px; }
+  .verdicts label, .dirs label { border:1px solid var(--border); border-radius:6px; padding:5px 10px; cursor:pointer;
+           background:var(--card2); }
+  .verdicts input, .dirs input { display:none; }
+  .verdicts input:checked + span, .dirs input:checked + span { color:#fff; }
+  .verdicts label:has(input:checked), .dirs label:has(input:checked) { background:var(--accent); border-color:var(--accent); }
+  kbd { font-size:10px; border:1px solid var(--muted); border-radius:3px; padding:0 3px; color:var(--muted); margin-left:4px; }
+  textarea { width:100%; min-height:56px; background:var(--card2); color:var(--text); border:1px solid var(--border);
+             border-radius:6px; padding:6px; font-family:inherit; }
+  button { background:var(--accent); color:#fff; border:0; border-radius:6px; padding:6px 14px; cursor:pointer; font-size:14px; }
+  button.secondary { background:var(--card2); border:1px solid var(--border); }
+  .error { color:var(--bad); margin:6px 0; } .saved { color:var(--ok); margin:6px 0; }
+  .legend { font-size:12px; color:var(--muted); margin-top:10px; line-height:1.8; }
+  .draft { margin-top:10px; padding:8px 10px; border:1px dashed var(--border); border-radius:6px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Relation gold review</h1>
+  <span><b>{{ reviewed }}</b> / {{ total }} reviewed · <b>{{ remaining }}</b> remaining</span>
+  <span class="nav">
+    {% if nav.prev %}<a id="prev" href="/eval/relations/case/{{ nav.prev }}?{{ q }}">← Previous</a>{% else %}<span class="disabled">← Previous</span>{% endif %}
+    {% if nav.next %}<a id="next" href="/eval/relations/case/{{ nav.next }}?{{ q }}">Next →</a>
+      <a id="skip" href="/eval/relations/case/{{ nav.next }}?{{ q }}" title="move on without saving">Skip</a>
+    {% else %}<span class="disabled">Next →</span>{% endif %}
+  </span>
+  <span class="muted">{{ cid }}{% if nav.position %} · {{ nav.position }} of {{ nav.in_filter }} in filter{% else %} · outside current filter{% endif %}</span>
+  <span class="filters">
+    {% for f in filters %}<a class="{{ 'on' if f == flt and not rel }}" href="/eval/relations?filter={{ f }}">{{ f }}</a>{% endfor %}
+    <select onchange="if(this.value) location='/eval/relations?filter=all&rel='+this.value">
+      <option value="">relation type…</option>
+      {% for r in relations %}<option value="{{ r }}" {{ 'selected' if r == rel }}>{{ r }}</option>{% endfor %}
+    </select>
+  </span>
+  <a href="/eval/relations/summary">Summary</a>
+</header>
+<main>
+  {% for tag, s in (("A", a), ("B", b)) %}
+  <section class="side">
+    <h2>Development {{ tag }} · {{ s.id }}</h2>
+    <div>
+      {% if s.system %}<span class="badge b-fact">system Development {{ s.system }}</span>
+      {% else %}<span class="badge b-single">not surfaced as a system Development</span>{% endif %}
+      {% if s.single_source %}<span class="badge b-single">single source</span>{% endif %}
+      {% if s.roundup_only %}<span class="badge b-comm">roundup only</span>{% endif %}
+    </div>
+    <dl>
+      <dt>Time (UTC)</dt><dd>{{ s.first }}{% if s.last and s.last != s.first %} → {{ s.last }}{% endif %}</dd>
+      <dt>Sources</dt><dd>{{ s.sources|join(", ") }} ({{ s.members }} item{{ 's' if s.members != 1 }}){% if s.langs %} · {{ s.langs|join("/") }}{% endif %}</dd>
+      <dt>Actors</dt><dd>{{ s.actors[:14]|join(", ") or "—" }}</dd>
+      <dt>Places</dt><dd>{{ s.places[:12]|join(", ") or "—" }}</dd>
+      <dt>Situation</dt><dd>{{ s.situations|join(", ") or "none" }} <span class="muted">(production, actor_set)</span></dd>
+    </dl>
+    {% for e in s.evidence %}
+    <div class="ev {{ 'comm' if e.commentary }}">
+      <div class="t">{{ e.title }}</div>
+      <div class="muted">{{ e.published_at }} · {{ e.source }}
+        {% if e.commentary %}<span class="badge b-comm">commentary / analysis headline</span>{% else %}<span class="badge b-fact">report</span>{% endif %}</div>
+      {% if e.excerpt %}<div class="x">{{ e.excerpt }}</div>{% endif %}
+    </div>
+    {% endfor %}
+  </section>
+  {% endfor %}
+  <div id="panel-wrap">{% include "relation_review_panel.html" %}</div>
+</main>
+<script>
+// Keyboard shortcuts only; the server validates and stores every verdict.
+(function () {
+  const keys = {{ shortcuts|tojson }};
+  const directed = {{ directed|list|tojson }};
+  function form() { return document.getElementById("verdict-form"); }
+  window.syncDirection = function () {
+    const f = form(); if (!f) return;
+    const sel = f.querySelector('input[name="label"]:checked');
+    const box = document.getElementById("dirs");
+    const need = sel && directed.includes(sel.value);
+    box.hidden = !need;
+    if (!need) f.querySelectorAll('input[name="direction"]').forEach(i => i.checked = false);
+  };
+  document.addEventListener("htmx:afterSwap", syncDirection);
+  document.addEventListener("DOMContentLoaded", syncDirection);
+  document.addEventListener("keydown", function (ev) {
+    const inText = ["TEXTAREA", "INPUT", "SELECT"].includes(ev.target.tagName) && ev.target.type !== "radio";
+    if (ev.ctrlKey && ev.key === "Enter") { ev.preventDefault(); form() && htmx.trigger(form(), "submit"); return; }
+    if (inText || ev.ctrlKey || ev.metaKey || ev.altKey) return;
+    const go = id => { const a = document.getElementById(id); if (a) location = a.href; };
+    if (ev.key === "ArrowLeft") return go("prev");
+    if (ev.key === "ArrowRight") return go("next");
+    if (ev.key === "s") return go("skip");
+    if (ev.key === "Enter") { ev.preventDefault(); return form() && htmx.trigger(form(), "submit"); }
+    if (ev.key === "r") { const b = document.getElementById("reveal"); if (b) b.click(); return; }
+    if (ev.key === "[" || ev.key === "]") {
+      const v = ev.key === "[" ? "A->B" : "B->A";
+      const r = form() && form().querySelector('input[name="direction"][value="' + v + '"]');
+      if (r && !document.getElementById("dirs").hidden) r.checked = true;
+      return;
+    }
+    for (const [label, k] of Object.entries(keys)) {
+      if (ev.key === k) {
+        const r = form() && form().querySelector('input[name="label"][value="' + label + '"]');
+        if (r) { r.checked = true; syncDirection(); }
+        return;
+      }
+    }
+  });
+})();
+</script>
+</body>
+</html>

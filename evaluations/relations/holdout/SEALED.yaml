@@ -1,0 +1,25 @@
+sealed_at: '2026-10-05T08:52:36+00:00'
+rule: 'Do not open, print or score anything under holdout/ until the relation implementation is frozen. Then: blind
+  annotator draft, owner verdicts, freeze labels, one scored run.'
+windows:
+- id: '2026-07-21'
+  items_sha256: defb0d57f9e6e45890758416e2ec102170f70d49c87aa829f5acba3a6ffb3c2b
+  occurrences: ../clustering/labels/2026-07-21.labels.yaml
+- id: '2026-08-07'
+  items_sha256: ed662299446fdf84d6c422a2c550249e14a479baa3478470e30a68859a349ee7
+  occurrences: ../clustering/labels/2026-08-07.labels.yaml
+- id: '2026-08-15'
+  items_sha256: 0274b7d836f97f8537b2772df6286f12bc4e20bab9ed1b272e6d91687cb7c0c2
+  occurrences: ../clustering/labels/2026-08-15.labels.yaml
+- id: '2026-09-10'
+  items_sha256: fb1aa49e45d3315a4e8acc8c9f00a5de6205e3384bcd76e95fe46b169f8b1374
+  occurrences: ../clustering/labels/2026-09-10.labels.yaml
+files:
+  holdout/cases.sealed.json: 4653ff089ec009b8fb639ac9d3fad043e693d739280849ca848067f43f120f8f
+  holdout/runs/2026-07-21.json: 1a3b2d02c2b5226c57e4f704b3dbe2c828f43cd37423a8991f70943cec7d49c0
+  holdout/runs/2026-08-07.json: 5dbf05b200b71faf7b7807b6f0e765194c13f981ac67b12ee726dd7f1aa3f638
+  holdout/runs/2026-08-15.json: 0e36dc1c0964e19d8f6e3e320fd7564c0fddce9a9a076025c7a924ecab5108a8
+  holdout/runs/2026-09-10.json: 4e85605b39ccc28057b05289b1bcd267385778422d5f04f0ee46450013aef687
+scripts:
+  scripts/replay_windows.py: 019d3ba9c71ced8d30a8798e1b9d962bbf7959af733cc2c6b9908390bafff54b
+  scripts/build_cases.py: d585bc88fabc1c5a406e579a35f693d738b6a20e5b5c2e1cb86fd1052aff03a2

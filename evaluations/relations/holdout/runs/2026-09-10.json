@@ -1,0 +1,1873 @@
+{
+ "developments": {
+  "1": {
+   "corroboration": "PROBABLE",
+   "members": {
+    "b-bafa52b6a583": 2,
+    "b-cb3c4d86185b": 2
+   },
+   "principals": [],
+   "situation": null,
+   "sources": [
+    "Al Jazeera",
+    "BBC World"
+   ],
+   "summary": "Twenty-five dead after fire on cargo ship in eastern China"
+  },
+  "2": {
+   "corroboration": "PROBABLE",
+   "members": {
+    "b-489c792c634d": 4,
+    "b-bd3aa3e6530f": 4
+   },
+   "principals": [
+    "Philippines"
+   ],
+   "situation": null,
+   "sources": [
+    "Al Jazeera",
+    "BBC World"
+   ],
+   "summary": "Five dead and 86 missing as 'heartbreaking' fire breaks out on Philippines ferry"
+  },
+  "3": {
+   "corroboration": "PROBABLE",
+   "members": {
+    "b-3500b9609ad6": 4,
+    "b-64cfd866400e": 4,
+    "b-6d7cbf0cdf75": 4,
+    "b-ef187bb8e5d5": 4,
+    "b-f24084648a2d": 4
+   },
+   "principals": [
+    "Houthis"
+   ],
+   "situation": null,
+   "sources": [
+    "Al Jazeera",
+    "BBC World"
+   ],
+   "summary": "Houthis, Yemeni forces engaged in fierce battles: Why each front matters"
+  },
+  "4": {
+   "corroboration": "PROBABLE",
+   "members": {
+    "b-284274889fb4": 4,
+    "b-42508faa01a1": 4,
+    "b-a8259968fc37": 4,
+    "b-d978e0532a2a": 4
+   },
+   "principals": [
+    "Donald Trump",
+    "Trump",
+    "US"
+   ],
+   "situation": null,
+   "sources": [
+    "Al Jazeera",
+    "South China Morning Post"
+   ],
+   "summary": "Four former US presidents mark 25th anniversary of 9/11 in New York City"
+  }
+ },
+ "items": {
+  "b-062340cf3103": {
+   "developments": [],
+   "entities": [
+    "FDA"
+   ],
+   "excerpt": "The FDA says contaminated lettuce has been removed from the market after nearly 13,000 linked cases.",
+   "lang": "en",
+   "places": [
+    "US"
+   ],
+   "published_at": "2026-09-11T17:35:36",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "US declares end of largest recorded cyclosporiasis outbreak"
+  },
+  "b-06944a4d5274": {
+   "developments": [],
+   "entities": [
+    "European"
+   ],
+   "excerpt": "The call from the Aerospace, Security &#038; Defence Industries Association of Europe comes as European officials increasingly point the finger at Moscow.",
+   "lang": "en",
+   "places": [
+    "Moscow"
+   ],
+   "published_at": "2026-09-11T16:04:53",
+   "roundup": false,
+   "source": "Breaking Defense",
+   "stored": true,
+   "title": "After suspicious incidents, European group urges ‘vigilance’ for defense firms"
+  },
+  "b-0864ce10c355": {
+   "developments": [],
+   "entities": [
+    "Army",
+    "Boeing-Anduril",
+    "Breaking Defense",
+    "IFPC Inc 2",
+    "Lockheed"
+   ],
+   "excerpt": "The companies&#8217; solutions will move into the developmental phase, an Army spokesperson told Breaking Defense.",
+   "lang": "en",
+   "places": [],
+   "published_at": "2026-09-10T20:08:14",
+   "roundup": false,
+   "source": "Breaking Defense",
+   "stored": true,
+   "title": "Army selects Lockheed, Boeing-Anduril team for next phase in IFPC Inc 2 competition"
+  },
+  "b-0d82b76615a6": {
+   "developments": [],
+   "entities": [
+    "BBC",
+    "Republican Party",
+    "Republicans",
+    "Sarah Smith",
+    "Trump"
+   ],
+   "excerpt": "The BBC's Sarah Smith is at the Republican Party's first midterms convention in Texas, taking place as oil prices rise to $100 (£74) a barrel.",
+   "lang": "en",
+   "places": [
+    "Texas"
+   ],
+   "published_at": "2026-09-10T01:37:31",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Watch: Do Republicans blame Trump for high oil prices?"
+  },
+  "b-0dbc60c6d24a": {
+   "developments": [],
+   "entities": [
+    "Republican Party",
+    "Trump"
+   ],
+   "excerpt": "The US president has said every American will get $5,000 (£3,700) if the Republican Party wins November's midterms.",
+   "lang": "en",
+   "places": [
+    "US"
+   ],
+   "published_at": "2026-09-10T07:12:32",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Watch: Is Trump's $5,000 election pledge legal?"
+  },
+  "b-0f5ec91b2bef": {
+   "developments": [],
+   "entities": [
+    "Mbappe",
+    "Ryan Giggs",
+    "United"
+   ],
+   "excerpt": "Former United assistant coach reveals his pursuit of a teenage Mbappe after a tip-off from a French scout.",
+   "lang": "en",
+   "places": [
+    "France",
+    "Manchester United"
+   ],
+   "published_at": "2026-09-10T13:13:10",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Manchester United scouted Mbappe but didn’t sign him, says Ryan Giggs"
+  },
+  "b-101cfb4e71da": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "Case found in northwestern province of South-Ubangi bordering the Central African Republic and Congo-Brazzaville.",
+   "lang": "en",
+   "places": [
+    "Central African Republic",
+    "Congo",
+    "DR",
+    "South-Ubangi"
+   ],
+   "published_at": "2026-09-11T14:32:15",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Ebola case detected in seventh DR Congo province"
+  },
+  "b-169e122c72d4": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "Ukrainians are losing more sleep, shopping for food is becoming harder and travel is often fraught with risk and delays.",
+   "lang": "en",
+   "places": [
+    "Russia",
+    "Ukraine"
+   ],
+   "published_at": "2026-09-10T10:19:17",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Russia’s new shelling tactics deepen suffering in Ukraine"
+  },
+  "b-1fee6ff7f66c": {
+   "developments": [],
+   "entities": [
+    "UAE Relations"
+   ],
+   "excerpt": "Relations have been strained for years, as the two countries took differing positions on several regional issues.",
+   "lang": "en",
+   "places": [
+    "Algeria"
+   ],
+   "published_at": "2026-09-10T12:26:06",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Algeria says cutting diplomatic ties with UAE"
+  },
+  "b-22be77f7f2ef": {
+   "developments": [],
+   "entities": [
+    "Oyo",
+    "Royal",
+    "Tooro",
+    "Ugandan"
+   ],
+   "excerpt": "King Oyo's family say he left a will naming his young son as heir to the Tooro kingdom.",
+   "lang": "en",
+   "places": [],
+   "published_at": "2026-09-10T13:12:40",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Royal family rift after popular TV news presenter chosen to succeed Ugandan king"
+  },
+  "b-231af2f400e7": {
+   "developments": [],
+   "entities": [
+    "Asian Games"
+   ],
+   "excerpt": "The continental games will officially open on September 19, but several team competitions will get under way earlier.",
+   "lang": "en",
+   "places": [
+    "Iran",
+    "Japan",
+    "Qatar"
+   ],
+   "published_at": "2026-09-10T10:06:58",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Qatar beat Iran in men’s basketball as Asian Games begin in Japan"
+  },
+  "b-25cfbaa0be10": {
+   "developments": [],
+   "entities": [
+    "BBC",
+    "Nirmal Purja"
+   ],
+   "excerpt": "Mountaineer Mingma G tells the BBC about the climb to bring home the bodies of his closest friends.",
+   "lang": "en",
+   "places": [],
+   "published_at": "2026-09-11T23:39:01",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "When an avalanche killed climber Nirmal Purja, his friends faced the hardest mission of all"
+  },
+  "b-284274889fb4": {
+   "developments": [
+    4
+   ],
+   "entities": [],
+   "excerpt": "In New York, Virginia and Pennsylvania, mourners gathered to remember nearly 3,000 people killed during the hijackings.",
+   "lang": "en",
+   "places": [
+    "New York",
+    "Pennsylvania",
+    "US",
+    "Virginia"
+   ],
+   "published_at": "2026-09-11T18:00:41",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "US holds memorials for the 9/11 attacks, 25 years later"
+  },
+  "b-284d9c92dd68": {
+   "developments": [],
+   "entities": [
+    "Bab al-Mandab",
+    "Houthis"
+   ],
+   "excerpt": "Yemen's Houthis have seized territory near the Bab al-Mandab Strait - a key trade gateway for oil and global shipping.",
+   "lang": "en",
+   "places": [
+    "Yemen"
+   ],
+   "published_at": "2026-09-11T16:13:39",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "How global trade and oil prices could be hit by Houthi advance"
+  },
+  "b-32709261212f": {
+   "developments": [],
+   "entities": [
+    "Ecuadorian",
+    "Trump"
+   ],
+   "excerpt": "A growing number of fishermen say their boats have been struck by US forces as Trump expands his anti-drug campaign.",
+   "lang": "en",
+   "places": [
+    "US"
+   ],
+   "published_at": "2026-09-11T17:18:17",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "‘Handcuffed and blindfolded’: Is the US targeting Ecuadorian fishermen?"
+  },
+  "b-3500b9609ad6": {
+   "developments": [
+    3
+   ],
+   "entities": [
+    "Houthis"
+   ],
+   "excerpt": "The Iran-backed Houthi forces have taken control over most of the western Red Sea coastal line",
+   "lang": "en",
+   "places": [
+    "Iran",
+    "Red Sea",
+    "Yemen"
+   ],
+   "published_at": "2026-09-11T15:34:30",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Houthis take control of Yemen’s entire Red Sea coast, reports say"
+  },
+  "b-35b1ff1f7776": {
+   "developments": [],
+   "entities": [
+    "House of Commons",
+    "Parliament"
+   ],
+   "excerpt": "Parliament&#039;s lower ⁠chamber, the House of Commons, rejected the legislation by 286 votes to 270.",
+   "lang": "en",
+   "places": [
+    "United Kingdom"
+   ],
+   "published_at": "2026-09-11T17:31:22",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "UK lawmakers vote against bill to legalise assisted dying"
+  },
+  "b-42508faa01a1": {
+   "developments": [
+    4
+   ],
+   "entities": [
+    "Barack Obama",
+    "Bill Clinton",
+    "George W. Bush",
+    "Joe Biden"
+   ],
+   "excerpt": "Former US Presidents Joe Biden, Barack Obama, George W. Bush, and Bill Clinton are remembering the victims of the 9/11.",
+   "lang": "en",
+   "places": [
+    "New York City",
+    "US"
+   ],
+   "published_at": "2026-09-11T15:33:07",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Four former US presidents mark 25th anniversary of 9/11 in New York City"
+  },
+  "b-489c792c634d": {
+   "developments": [
+    2
+   ],
+   "entities": [
+    "Coast Guard"
+   ],
+   "excerpt": "Coast Guard says 30 more bodies recovered after five people were initially confirmed dead in Wednesday&#039;s disaster.",
+   "lang": "en",
+   "places": [
+    "Philippines"
+   ],
+   "published_at": "2026-09-11T15:41:54",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Philippines ferry fire death toll rises to 35 after bodies recovered"
+  },
+  "b-48dfa0d72ec0": {
+   "developments": [],
+   "entities": [
+    "Mamdani",
+    "Muslim",
+    "Zeshan Hamdani",
+    "Zohran Mamdani"
+   ],
+   "excerpt": "Zeshan Hamdani speaks out after push back against New York Mayor Zohran Mamdani, who is Muslim, attending 9/11 events.",
+   "lang": "en",
+   "places": [
+    "New York"
+   ],
+   "published_at": "2026-09-11T04:10:24",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Brother of Muslim police cadet killed in 9/11 'disappointed' by calls for Mamdani to sit out memorial"
+  },
+  "b-515ef676c1f6": {
+   "developments": [],
+   "entities": [
+    "Trump"
+   ],
+   "excerpt": "The president also said oil prices won't come down until after the November races, claiming without evidence that Iran wants to impact the election.",
+   "lang": "en",
+   "places": [
+    "Iran"
+   ],
+   "published_at": "2026-09-10T10:43:53",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Iran war won't end until after crucial November elections, says Trump"
+  },
+  "b-565092cb7531": {
+   "developments": [],
+   "entities": [
+    "GlobalEye",
+    "NATO"
+   ],
+   "excerpt": "The plane, which would be delivered in 2031, would be owned directly by the Netherlands.",
+   "lang": "en",
+   "places": [
+    "Netherlands"
+   ],
+   "published_at": "2026-09-10T13:09:19",
+   "roundup": false,
+   "source": "Breaking Defense",
+   "stored": true,
+   "title": "Netherlands to purchase its own GlobalEye aircraft, on top of NATO’s order"
+  },
+  "b-5bbfb2899e9c": {
+   "developments": [],
+   "entities": [
+    "Indiana Navy",
+    "Trump",
+    "US Department of Defense"
+   ],
+   "excerpt": "The program is driving hard to meet President Trump’s 2028 deadline, officials said, but they have yet to release a formal solicitation, let alone pick a specific vendor and design.",
+   "lang": "en",
+   "places": [],
+   "published_at": "2026-09-10T20:31:57",
+   "roundup": false,
+   "source": "Breaking Defense",
+   "stored": true,
+   "title": "Why the Pentagon picked an Indiana Navy base to host a nuclear microreactor"
+  },
+  "b-5e139419dc20": {
+   "developments": [],
+   "entities": [
+    "Al Jazeera",
+    "Multicultural Malmo"
+   ],
+   "excerpt": "Al Jazeera speaks to voters in Malmo, a city the far right often singles out for its diversity, ahead of Sweden&#039;s vote.",
+   "lang": "en",
+   "places": [
+    "Malmo",
+    "Sweden"
+   ],
+   "published_at": "2026-09-10T13:29:20",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Multicultural Malmo: Swedish city loathed by far right braces for election"
+  },
+  "b-606612d11f2d": {
+   "developments": [],
+   "entities": [
+    "Alaskan",
+    "Derek Parker Aghnaanga"
+   ],
+   "excerpt": "A 15-year-old boy survived on top of an overturned skiff in Alaska’s frigid Bering Sea for roughly two days, losing his older brother and then his cousin to the ocean after the boat capsized while they were out fishing.\nThe teen, identified by a relative as Derek Parker Aghnaanga, was finally hoisted to safety Monday by a fishing boat near St Lawrence Island – a remote Alaskan island closer to Rus",
+   "lang": "en",
+   "places": [
+    "Alaska",
+    "Bering Sea",
+    "Russia",
+    "St Lawrence Island",
+    "US"
+   ],
+   "published_at": "2026-09-11T19:26:39",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "US boy, 15, rescued after clinging to capsized boat for days in Alaska’s Bering Sea"
+  },
+  "b-60eb6a855241": {
+   "developments": [],
+   "entities": [
+    "DARC",
+    "Space Force"
+   ],
+   "excerpt": "The Space Force expects the US site, the third and final one in the multi-nation DARC network, to complete civil construction in 2029, and begin operations in 2030.",
+   "lang": "en",
+   "places": [
+    "Texas",
+    "US"
+   ],
+   "published_at": "2026-09-11T13:10:00",
+   "roundup": false,
+   "source": "Breaking Defense",
+   "stored": true,
+   "title": "Space Force picks Texas as US home for trinational DARC space radar network"
+  },
+  "b-610b180782ca": {
+   "developments": [],
+   "entities": [
+    "Kylian Mbappe",
+    "Mbappe",
+    "Real Madrid"
+   ],
+   "excerpt": "France international and World Cup record holder Kylian Mbappe speaks out over memes using his image.",
+   "lang": "en",
+   "places": [
+    "France"
+   ],
+   "published_at": "2026-09-11T18:44:57",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Real Madrid’s Mbappe: AI dictator memes show lack of political awareness"
+  },
+  "b-64cfd866400e": {
+   "developments": [
+    3
+   ],
+   "entities": [
+    "Houthis"
+   ],
+   "excerpt": "Houthis were already able to disrupt shipping - their advance consolidates that power, and exposes government weakness.",
+   "lang": "en",
+   "places": [
+    "Red Sea",
+    "Yemen"
+   ],
+   "published_at": "2026-09-11T19:01:07",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Houthi advance in Yemen is about more than just the Red Sea"
+  },
+  "b-65b3c1d045a7": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "Months of anti-foreigner protests across South Africa have forced tens of thousands to leave the country.",
+   "lang": "en",
+   "places": [
+    "Nigeria",
+    "South Africa"
+   ],
+   "published_at": "2026-09-11T15:12:23",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Nigeria suspends official visits to South Africa over anti-migrant violence"
+  },
+  "b-6b73063e729e": {
+   "developments": [],
+   "entities": [
+    "Brig",
+    "US Department of Defense",
+    "William Wilburn"
+   ],
+   "excerpt": "&#8220;It&#8217;s about driving big outcomes and giving the secretary and the president options, more options. We want to move away from things that look like persistent engagement,&#8221; according to Brig. Gen. William Wilburn, deputy principal cyber advisor for the DoD.",
+   "lang": "en",
+   "places": [],
+   "published_at": "2026-09-10T17:15:00",
+   "roundup": false,
+   "source": "Breaking Defense",
+   "stored": true,
+   "title": "DoD cyber strategy aims for ‘something big, something muscular’ in offensive ops"
+  },
+  "b-6b83ffa896bb": {
+   "developments": [],
+   "entities": [
+    "BBC"
+   ],
+   "excerpt": "A survivor has told the BBC of the chaos onboard as the ferry caught fire near the popular tourist spot of Coron.",
+   "lang": "en",
+   "places": [
+    "Coron",
+    "Philippines"
+   ],
+   "published_at": "2026-09-10T09:35:46",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "'People were trampling me': Philippine ferry fire survivor recalls narrow escape"
+  },
+  "b-6ce130247cb8": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "Calls grow for investigation after ICE attacks protesters",
+   "lang": "en",
+   "places": [],
+   "published_at": "2026-09-10T12:07:30",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Calls grow for investigation after ICE attacks protesters"
+  },
+  "b-6d7cbf0cdf75": {
+   "developments": [
+    3
+   ],
+   "entities": [],
+   "excerpt": "The capture by the rebels of a stretch of Yemen's strategic coastline is the group's most impressive military coup for several years.",
+   "lang": "en",
+   "places": [
+    "Iran",
+    "Yemen"
+   ],
+   "published_at": "2026-09-11T19:44:58",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Lightning Houthi advance in Yemen may bring dangerous new dimension to Iran war"
+  },
+  "b-6e620a4ffaa5": {
+   "developments": [],
+   "entities": [
+    "Trump",
+    "US House"
+   ],
+   "excerpt": "The proposal aims to exclude some legal and undocumented immigrants from the count used to determine US House seats.",
+   "lang": "en",
+   "places": [
+    "US"
+   ],
+   "published_at": "2026-09-10T00:33:08",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Trump administration proposes excluding certain immigrants from US census"
+  },
+  "b-71f774326024": {
+   "developments": [],
+   "entities": [
+    "Dow Jones",
+    "Selina Cheng"
+   ],
+   "excerpt": "Dow Jones was acquitted of the charge of dismissal over Selina Cheng&#039;s leadership role.",
+   "lang": "en",
+   "places": [
+    "Hong Kong"
+   ],
+   "published_at": "2026-09-10T10:48:51",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Hong Kong court rules Dow Jones tried to stop journalist taking union role"
+  },
+  "b-72a352065240": {
+   "developments": [],
+   "entities": [
+    "Army",
+    "Corps"
+   ],
+   "excerpt": "As the Army begins fielding NGC2 to I Corps, software tools will be critical to enable interoperability and getting new capabilities to units faster.",
+   "lang": "en",
+   "places": [],
+   "published_at": "2026-09-11T12:00:00",
+   "roundup": false,
+   "source": "Breaking Defense",
+   "stored": true,
+   "title": "Beyond prototypes: Army readies operational NGC2 tech for I Corps"
+  },
+  "b-76d8ccf92df7": {
+   "developments": [],
+   "entities": [
+    "Trump"
+   ],
+   "excerpt": "The Trump loyalty test: Will his supporters ever disagree with him?",
+   "lang": "en",
+   "places": [],
+   "published_at": "2026-09-10T12:59:25",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "The Trump loyalty test: Will his supporters ever disagree with him?"
+  },
+  "b-774dff871fcb": {
+   "developments": [],
+   "entities": [
+    "Invictus Games",
+    "Prince Harry"
+   ],
+   "excerpt": "The decision, announced by the chief of defence, comes just two months after Uganda said it would participate.",
+   "lang": "en",
+   "places": [
+    "Uganda"
+   ],
+   "published_at": "2026-09-10T08:44:19",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Uganda pulling out of Prince Harry's Invictus Games, says military chief"
+  },
+  "b-782480ae0881": {
+   "developments": [],
+   "entities": [
+    "AI",
+    "Bureaucracy and Technology",
+    "US Department of Defense",
+    "White House"
+   ],
+   "excerpt": "If there is a revolution brewing in the automation of white-collar work, you wouldn&#8217;t know it at the Pentagon. Here, the typical action officers, staff who tackle the daily work of the bureaucracy, perform essentially the same duties as their predecessors in 1996 or 1956: creating charts, authoring papers, delivering briefings, and coordinating across offices. Given the promise of AI tools, ",
+   "lang": "en",
+   "places": [],
+   "published_at": "2026-09-10T08:00:52",
+   "roundup": false,
+   "source": "War on the Rocks",
+   "stored": true,
+   "title": "Automating the Action Officer: Between Bureaucracy and Technology"
+  },
+  "b-793322b03484": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "Organisers say each of the 2,977 drones in the display represents a victim of the 9/11 attacks.",
+   "lang": "en",
+   "places": [
+    "New York City Organisers",
+    "Twin Towers"
+   ],
+   "published_at": "2026-09-10T14:19:26",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Drone display recreates the Twin Towers over New York City"
+  },
+  "b-7aae99a41f95": {
+   "developments": [],
+   "entities": [
+    "BBC",
+    "Republicans",
+    "Sarah Smith",
+    "Trump"
+   ],
+   "excerpt": "The BBC's North America editor Sarah Smith breaks down the main takeaways from the first-ever Republican convention held in the middle of a US presidential term.",
+   "lang": "en",
+   "places": [
+    "North America",
+    "US"
+   ],
+   "published_at": "2026-09-11T06:16:54",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Has Trump won over voters with his midterm convention?"
+  },
+  "b-7cb510214e5a": {
+   "developments": [],
+   "entities": [
+    "International Atomic Energy Agency"
+   ],
+   "excerpt": "Nuclear watchdog has gone more than a year without inspecting key sites; Iran says US attacks have made access unsafe.",
+   "lang": "en",
+   "places": [
+    "Iran",
+    "US"
+   ],
+   "published_at": "2026-09-10T10:59:39",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "IAEA accuses Iran of ‘noncompliance’"
+  },
+  "b-7d44c2ec47ba": {
+   "developments": [],
+   "entities": [
+    "Benjamin Netanyahu"
+   ],
+   "excerpt": "Ahead of Israel&#039;s national elections, Netanyahu reaches for an old playbook: grievance, blame-shifting and victimhood.",
+   "lang": "en",
+   "places": [
+    "Israel"
+   ],
+   "published_at": "2026-09-10T09:38:58",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Benjamin Netanyahu has overseen a genocide: In his telling, he’s a victim"
+  },
+  "b-80630ed6082f": {
+   "developments": [],
+   "entities": [
+    "Adolfo Franco",
+    "GOP",
+    "RNC",
+    "Republicans",
+    "Rina Shah",
+    "Trump"
+   ],
+   "excerpt": "Republican strategist Adolfo Franco and GOP adviser Rina Shah clash over Trump’s handling of the economy.",
+   "lang": "en",
+   "places": [],
+   "published_at": "2026-09-10T00:33:12",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Republicans divided over Trump’s economy as RNC begins"
+  },
+  "b-807e640cc726": {
+   "developments": [],
+   "entities": [
+    "Assessment Gap",
+    "Bureau of Counterterrorism",
+    "US State Department"
+   ],
+   "excerpt": "For eight years I helped decide whether American counter-terrorism money was working.As a programs advisor in the State Department&#8217;s Bureau of Counterterrorism from 2018 to 2025, I oversaw about 20 projects in East Africa worth roughly $80 million a year. None of that money moved without a performance monitoring plan. We established baselines before work started and agreed on indicators in a",
+   "lang": "en",
+   "places": [
+    "East Africa",
+    "US"
+   ],
+   "published_at": "2026-09-10T07:30:59",
+   "roundup": false,
+   "source": "War on the Rocks",
+   "stored": true,
+   "title": "The Assessment Gap in U.S. Counter-Terrorism Strikes"
+  },
+  "b-84bb28326dbb": {
+   "developments": [],
+   "entities": [
+    "Houthis"
+   ],
+   "excerpt": "Some observers see a force that has improved impressively in the past years, but others doubt the Houthis can sustain wins.",
+   "lang": "en",
+   "places": [
+    "Red Sea",
+    "Yemen"
+   ],
+   "published_at": "2026-09-11T14:47:12",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Can the Houthis close the Red Sea after seizing the Yemen coast?"
+  },
+  "b-8acb0d9560aa": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "Protests turn violent in The Gambia over rolling blackouts",
+   "lang": "en",
+   "places": [
+    "Gambia"
+   ],
+   "published_at": "2026-09-10T10:25:21",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Protests turn violent in The Gambia over rolling blackouts"
+  },
+  "b-8ea8918e30da": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "The new models can travel at speeds of up to 300mph, faster than Ukraine's air defence interceptors.",
+   "lang": "en",
+   "places": [
+    "Russia",
+    "Ukraine"
+   ],
+   "published_at": "2026-09-10T04:43:54",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Russia's new jet-powered drones outpacing Ukraine's air defences with daily launches"
+  },
+  "b-92a3a7b5a11e": {
+   "developments": [],
+   "entities": [
+    "Republicans",
+    "Trump"
+   ],
+   "excerpt": "Speaking at a party convention, the US president gave no details on how the plan would work or where the money would come from.",
+   "lang": "en",
+   "places": [
+    "US"
+   ],
+   "published_at": "2026-09-10T13:23:37",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Trump says every adult American will get $5,000 if Republicans win midterms"
+  },
+  "b-948bf4483584": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "Japan and South Korea are stepping up their naval game in the face of China&#8217;s phenomenal expansion.",
+   "lang": "en",
+   "places": [
+    "China",
+    "Japan",
+    "South Korea"
+   ],
+   "published_at": "2026-09-10T06:29:00",
+   "roundup": false,
+   "source": "Breaking Defense",
+   "stored": true,
+   "title": "How Japan, South Korea are building up naval capabilities for China threat"
+  },
+  "b-9bf8467d75aa": {
+   "developments": [],
+   "entities": [
+    "George Galloway",
+    "Palestine Action"
+   ],
+   "excerpt": "A Palestine Action prisoner&#039;s mother, politician George Galloway and a leftist news outlet are among those speaking up.",
+   "lang": "en",
+   "places": [
+    "United Kingdom"
+   ],
+   "published_at": "2026-09-11T15:22:21",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "‘Tool of oppression’: Rising number of UK pro-Palestine voices debanked"
+  },
+  "b-9d5df4d00bd9": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "Israel’s decision to bar British MPs exposes how far it will go to avoid scrutiny over its treatment of Palestinians.",
+   "lang": "en",
+   "places": [
+    "Israel",
+    "Palestine",
+    "United Kingdom"
+   ],
+   "published_at": "2026-09-10T12:16:47",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Israel will never stop me speaking up for Palestine"
+  },
+  "b-9dc47df74487": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "Saudi Arabia has shut down its East-West pipeline after the vital oil conduit came under aerial attack in the widening Middle East war.\nThe world’s largest crude oil exporter temporarily closed the pipeline after a drone attack that both Baghdad and Riyadh said had originated in Iraq, where Iranian-backed militias operate. Iraq dismissed a military commander on Saturday in response to the attack.\n",
+   "lang": "en",
+   "places": [
+    "Arabian Peninsula",
+    "Baghdad",
+    "East-West",
+    "Hormuz",
+    "Iran",
+    "Iraq",
+    "Middle East",
+    "Riyadh",
+    "Saudi Arabia"
+   ],
+   "published_at": "2026-09-11T20:24:55",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "Saudi pipeline that bypasses Hormuz shut after attacks"
+  },
+  "b-a253d2d66be9": {
+   "developments": [],
+   "entities": [
+    "Chinese AI"
+   ],
+   "excerpt": "A US congressional advisory body on China said on Friday that leading Chinese artificial intelligence (AI) firms declined to meet its members during a recent Beijing visit over concerns that doing so could expose the firms to US sanctions.\nBut members also underscored the importance of the coming AI dialogue between Washington and Beijing.\n“We were told, ‘You guys are a really scary commission, an",
+   "lang": "en",
+   "places": [
+    "Beijing",
+    "China",
+    "US",
+    "Washington"
+   ],
+   "published_at": "2026-09-11T22:36:20",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "Chinese AI firms shunned US delegation over sanctions fears, commission says"
+  },
+  "b-a3bdc5815028": {
+   "developments": [],
+   "entities": [
+    "Houthis",
+    "Yahya Saree"
+   ],
+   "excerpt": "Houthi spokesman Yahya Saree said maritime navigation in the Red Sea is safe, except for Saudi ships.",
+   "lang": "en",
+   "places": [
+    "Red Sea",
+    "Saudi Arabia"
+   ],
+   "published_at": "2026-09-11T16:32:14",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Houthis declare Red Sea shipping safe except for Saudi vessels"
+  },
+  "b-a7e486edee82": {
+   "developments": [],
+   "entities": [
+    "Abdul El-Sayed",
+    "Trump"
+   ],
+   "excerpt": "Trump drew parallels to the US&#039;s present-day war against Iran, while figures like Abdul El-Sayed called for inclusivity.",
+   "lang": "en",
+   "places": [
+    "Iran",
+    "US"
+   ],
+   "published_at": "2026-09-11T19:21:48",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "How US leaders remembered the 25th anniversary of the 9/11 attacks"
+  },
+  "b-a8259968fc37": {
+   "developments": [
+    4
+   ],
+   "entities": [
+    "Donald Trump",
+    "Trump",
+    "US Department of Defense"
+   ],
+   "excerpt": "US President Donald Trump remembered the victims of the September 11 attacks at a ceremony to mark the 25th anniversary.",
+   "lang": "en",
+   "places": [
+    "US"
+   ],
+   "published_at": "2026-09-11T15:45:46",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Trump pays tribute to the victims of 9/11 at Pentagon ceremony"
+  },
+  "b-a9106fba4fdf": {
+   "developments": [],
+   "entities": [
+    "Denise Cosco",
+    "Ndrangheta"
+   ],
+   "excerpt": "Denise Cosco testified against the powerful 'Ndrangheta clan and her own father over the murder of her mother in Italy.",
+   "lang": "en",
+   "places": [
+    "Italy"
+   ],
+   "published_at": "2026-09-11T20:34:29",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Tragic death of woman who testified against father in notorious mafia murder of mother"
+  },
+  "b-a9b0c290daea": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "Declassified documents show Madrid and Morocco were warned of plans by migrants to breach the Ceuta border.",
+   "lang": "en",
+   "places": [
+    "Ceuta",
+    "Madrid",
+    "Morocco",
+    "Spain"
+   ],
+   "published_at": "2026-09-10T01:26:46",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Spain’s spy agency warned of mass crossings into Ceuta before border crisis"
+  },
+  "b-aa551de5716b": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "Israeli military checkpoints are choking the West Bank economy, devastating local businesses and daily life.",
+   "lang": "en",
+   "places": [
+    "Israel",
+    "Palestine",
+    "West Bank"
+   ],
+   "published_at": "2026-09-10T09:48:03",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Israeli checkpoints in the West Bank are choking the Palestinian economy"
+  },
+  "b-aade68afb0f4": {
+   "developments": [],
+   "entities": [
+    "Connolly",
+    "Trump"
+   ],
+   "excerpt": "Protests set to erupt across Ireland, where President Connolly has long regarded the US as an untrustworthy power.",
+   "lang": "en",
+   "places": [
+    "Gaza",
+    "Ireland",
+    "US"
+   ],
+   "published_at": "2026-09-11T14:09:52",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "‘Majority do not welcome him’: Trump heads to Ireland amid fury over Gaza"
+  },
+  "b-b3ada02b7b9e": {
+   "developments": [],
+   "entities": [
+    "Hamza Abdelkarim"
+   ],
+   "excerpt": "Four goals in five games made the 18-year-old striker Barcelona&#039;s top scorer during preseason.",
+   "lang": "en",
+   "places": [
+    "Barcelona",
+    "Egypt"
+   ],
+   "published_at": "2026-09-10T12:24:25",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Is Egypt’s Hamza Abdelkarim set to be Barcelona’s next breakout star?"
+  },
+  "b-b3df9781572e": {
+   "developments": [],
+   "entities": [
+    "AK Party",
+    "Erdogan"
+   ],
+   "excerpt": "An interview with Turkish President Erdogan on foreign policy, regional conflicts and 25 years of AK Party rule.",
+   "lang": "en",
+   "places": [
+    "Turkey"
+   ],
+   "published_at": "2026-09-11T16:00:00",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Erdogan: The Making of Modern Turkiye"
+  },
+  "b-b431a4af72c9": {
+   "developments": [],
+   "entities": [
+    "AFA",
+    "AFA 2026 Breaking Defense",
+    "Aaron Mehta",
+    "Michael Marrow"
+   ],
+   "excerpt": "Breaking Defense&#8217;s Aaron Mehta and Michael Marrow preview anticipated developments at this year&#8217;s AFA conference.",
+   "lang": "en",
+   "places": [],
+   "published_at": "2026-09-11T14:01:00",
+   "roundup": false,
+   "source": "Breaking Defense",
+   "stored": true,
+   "title": "What we’re watching for at AFA 2026"
+  },
+  "b-b566067aaf18": {
+   "developments": [],
+   "entities": [
+    "Aziz Akhannouch"
+   ],
+   "excerpt": "Prime Minister Aziz Akhannouch slams his country&#039;s football chief after claim Morocco will host 2030 World Cup final.",
+   "lang": "en",
+   "places": [
+    "Morocco"
+   ],
+   "published_at": "2026-09-11T17:16:00",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Morocco PM takes aim at federation chief over 2030 World Cup final boast"
+  },
+  "b-b8bf18219967": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "While overall effectiveness is high, damage to US bases and assets in the Iran conflict shows gaps in air-and-missile-defense.",
+   "lang": "en",
+   "places": [
+    "Iran",
+    "US"
+   ],
+   "published_at": "2026-09-11T19:41:08",
+   "roundup": false,
+   "source": "Breaking Defense",
+   "stored": true,
+   "title": "Concurrent attacks across multiple domains force rethinking of air-and-missile-defense"
+  },
+  "b-ba0ceb584e9a": {
+   "developments": [],
+   "entities": [
+    "BBC"
+   ],
+   "excerpt": "The BBC asks people in Washington what they were doing on that day and how 11 September 2001 changed the country.",
+   "lang": "en",
+   "places": [
+    "US",
+    "Washington"
+   ],
+   "published_at": "2026-09-11T02:48:43",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Watch: Americans remember what they were doing on 9/11"
+  },
+  "b-ba331a937b6b": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "[Sponsored] Manufacturing scale, global sustainment, and next-gen tech are becoming inseparable.",
+   "lang": "en",
+   "places": [],
+   "published_at": "2026-09-11T17:41:00",
+   "roundup": false,
+   "source": "Breaking Defense",
+   "stored": true,
+   "title": "Support for Patriot air-and-missile defense is a case study for the industrial base"
+  },
+  "b-bafa52b6a583": {
+   "developments": [
+    1
+   ],
+   "entities": [],
+   "excerpt": "Fire breaks out on ship being repaired in the port of Qingdao, eastern China.",
+   "lang": "en",
+   "places": [
+    "China",
+    "China Fire",
+    "Qingdao"
+   ],
+   "published_at": "2026-09-10T12:45:11",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "At least 25 dead after cargo ship catches fire in China"
+  },
+  "b-bb4e81c121e4": {
+   "developments": [],
+   "entities": [
+    "Daniel Kochis",
+    "European NATO",
+    "Hudson Institute",
+    "US Department of Defense"
+   ],
+   "excerpt": "The Hudson Institute&#8217;s Daniel Kochis argues in this op-ed that Russia must remain convinced that America’s presence, combined with European NATO members’ firepower, is enough not to risk a direct confrontation.",
+   "lang": "en",
+   "places": [
+    "Europe",
+    "Russia",
+    "US"
+   ],
+   "published_at": "2026-09-11T15:12:21",
+   "roundup": false,
+   "source": "Breaking Defense",
+   "stored": true,
+   "title": "Now is the wrong time for the Pentagon to pull back from Europe"
+  },
+  "b-bd3aa3e6530f": {
+   "developments": [
+    2
+   ],
+   "entities": [],
+   "excerpt": "The fire broke out as the vessel nearing its destination at the tourist hotspot of Coron in Palawan.",
+   "lang": "en",
+   "places": [
+    "Coron",
+    "Palawan",
+    "Philippines"
+   ],
+   "published_at": "2026-09-10T06:30:19",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Five dead and 86 missing as 'heartbreaking' fire breaks out on Philippines ferry"
+  },
+  "b-c05d5cfe7957": {
+   "developments": [],
+   "entities": [
+    "AI",
+    "Eyal Zamir"
+   ],
+   "excerpt": "&#8220;The battlefield is changing at a dizzying pace, and we are changing with it,” Israeli military Chief of Staff Lt. Gen. Eyal Zamir said.",
+   "lang": "en",
+   "places": [
+    "Israel"
+   ],
+   "published_at": "2026-09-10T18:30:00",
+   "roundup": false,
+   "source": "Breaking Defense",
+   "stored": true,
+   "title": "Israeli military creates new branch focused on AI, drones and robotics"
+  },
+  "b-c7022b8efec2": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "Long-range Ukrainian drones hit Russia&#039;s key gas plants, raising questions about the conflict&#039;s next phase.",
+   "lang": "en",
+   "places": [
+    "Arctic",
+    "Russia",
+    "Ukraine"
+   ],
+   "published_at": "2026-09-10T10:38:53",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "How Ukraine’s deepest attack in Russia, on Arctic gas, signals new reach"
+  },
+  "b-c729525385ef": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "The Saigak APC features an active protection system that the company says can defeat up to 20 First Person View (FPV) drones, amid a proliferation of the aircraft dominating the war in Ukraine.",
+   "lang": "en",
+   "places": [
+    "Germany",
+    "Ukraine"
+   ],
+   "published_at": "2026-09-10T13:29:15",
+   "roundup": false,
+   "source": "Breaking Defense",
+   "stored": true,
+   "title": "Ukrainian Armor eyes German industry partnership for newly unveiled land vehicles"
+  },
+  "b-cb3c4d86185b": {
+   "developments": [
+    1
+   ],
+   "entities": [
+    "CCTV"
+   ],
+   "excerpt": "Of the 42 people on board, 17 were were evacuated, CCTV reports.",
+   "lang": "en",
+   "places": [
+    "China"
+   ],
+   "published_at": "2026-09-10T12:24:54",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Twenty-five dead after fire on cargo ship in eastern China"
+  },
+  "b-cb4de08c8fb8": {
+   "developments": [],
+   "entities": [
+    "English"
+   ],
+   "excerpt": "The English cricket board confirms it is reviewing the team’s security for the remainder of the tour.",
+   "lang": "en",
+   "places": [
+    "Pakistan",
+    "United Kingdom"
+   ],
+   "published_at": "2026-09-10T13:25:06",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Pakistan U19 cricketers mistaken for asylum seekers by protesters in UK"
+  },
+  "b-cf01079abe03": {
+   "developments": [],
+   "entities": [
+    "Boeing",
+    "Ryanair"
+   ],
+   "excerpt": "A passenger aboard a Ryanair Boeing 737 recorded the moment the aircraft’s wingtip struck the runway at Dublin airport.",
+   "lang": "en",
+   "places": [
+    "Dublin"
+   ],
+   "published_at": "2026-09-11T16:27:24",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Passenger plane aborts landing after wing clips Dublin runway"
+  },
+  "b-d340e7c23e50": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "The migrants were at work, building homes and hotels, when the floods hit, sweeping three of them away.",
+   "lang": "en",
+   "places": [
+    "India",
+    "Nepal"
+   ],
+   "published_at": "2026-09-10T07:57:23",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "‘Gone in a blink’: Nepal floods sweep away Indian workers who built hotels"
+  },
+  "b-d4db1206415f": {
+   "developments": [],
+   "entities": [
+    "Premier League",
+    "Sorba Thomas",
+    "Welsh"
+   ],
+   "excerpt": "Premier League club confirms accident, says 27-year-old Welsh international &#039;unscathed&#039;.",
+   "lang": "en",
+   "places": [
+    "Hull City"
+   ],
+   "published_at": "2026-09-11T14:22:19",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Hull City’s Sorba Thomas unharmed as car overturned in crash"
+  },
+  "b-d50b240dfc48": {
+   "developments": [],
+   "entities": [
+    "Houthis"
+   ],
+   "excerpt": "Riyadh needs to restore deterrence without being pulled back into a prolonged Yemen war.",
+   "lang": "en",
+   "places": [
+    "Riyadh",
+    "Saudi Arabia",
+    "Yemen"
+   ],
+   "published_at": "2026-09-10T11:17:23",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "The Houthis are testing the limits of Saudi restraint"
+  },
+  "b-d5ba077417af": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "Petrol prices jumped 3.9 percent month-to-month, accounting for one-third of the overall inflation increase in August.",
+   "lang": "en",
+   "places": [
+    "US"
+   ],
+   "published_at": "2026-09-11T17:28:11",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Rising petrol costs drive sharp inflation increase in US in August"
+  },
+  "b-d8481b3abe77": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "[Sponsored] Throttleable systems, boost-phase interception, and new manufacturing capacity expand missile defense options.",
+   "lang": "en",
+   "places": [
+    "Golden Dome"
+   ],
+   "published_at": "2026-09-11T12:28:00",
+   "roundup": false,
+   "source": "Breaking Defense",
+   "stored": true,
+   "title": "Why propulsion could be the critical piece in Golden Dome’s architecture"
+  },
+  "b-d978e0532a2a": {
+   "developments": [
+    4
+   ],
+   "entities": [
+    "J.D. Vance",
+    "US Department of Defense",
+    "World Trade Centre"
+   ],
+   "excerpt": "Twenty-five years ⁠after the deadliest attack on US soil, Americans paused on Friday to commemorate the nearly 3,000 people killed when hijacked planes slammed into the World Trade Centre, the Pentagon and a field in Pennsylvania – and to wrestle with the consequences of September 11 that reverberate to this day.\nIn New York, family members of the victims, many carrying pictures of their loved one",
+   "lang": "en",
+   "places": [
+    "Lower",
+    "New York",
+    "Pennsylvania",
+    "US"
+   ],
+   "published_at": "2026-09-11T17:06:42",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "Americans mark 25 years since 9/11 attacks amid enduring grief, reflection"
+  },
+  "b-e5bcfe18bd6f": {
+   "developments": [],
+   "entities": [
+    "Champions League",
+    "Fenerbahce"
+   ],
+   "excerpt": "Italian club to auction special &#039;Together for Nepal&#039; shirts to be worn in the match against Fenerbahce.",
+   "lang": "en",
+   "places": [
+    "Italy",
+    "Nepal"
+   ],
+   "published_at": "2026-09-10T10:02:05",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Roma to support Nepal flood victims through Champions League match shirt"
+  },
+  "b-e84ec6521bf8": {
+   "developments": [],
+   "entities": [
+    "Ex-Canada PM",
+    "Jean Chretien",
+    "Pete"
+   ],
+   "excerpt": "Standing in the town that sheltered thousands of stranded Americans after the September 11 attacks, former Canadian prime minister Jean Chretien marked the 25th anniversary on Friday with a pointed message for the US: “Never mistake our generosity for weakness.”\nThe 92-year-old former leader, who was prime minister at the time of the attacks, drew a standing ovation after telling his “American fri",
+   "lang": "en",
+   "places": [
+    "Canada",
+    "US"
+   ],
+   "published_at": "2026-09-11T23:14:21",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "Ex-Canada PM Jean Chretien tells US: ‘never mistake our generosity for weakness’"
+  },
+  "b-e9e75a56ed8a": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "Tehran says ready for dialogue with nations in the region to &#039;foster mutual trust&#039; and &#039;achieve sustainable security&#039;.",
+   "lang": "en",
+   "places": [
+    "Iran",
+    "Sirik",
+    "Tehran"
+   ],
+   "published_at": "2026-09-10T00:00:00",
+   "roundup": true,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Iran war live: Iran media say ‘enemy’ projectiles hit Sirik areas"
+  },
+  "b-ec0a6773c3a8": {
+   "developments": [],
+   "entities": [
+    "Foreign Ministry"
+   ],
+   "excerpt": "Iran&#039;s Foreign Ministry says the meeting in Oman is to &#039;promote better understanding among the countries of the region&#039;.",
+   "lang": "en",
+   "places": [
+    "Gulf",
+    "Hormuz",
+    "Iran",
+    "Oman",
+    "Strait"
+   ],
+   "published_at": "2026-09-11T18:33:36",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Iran says will discuss Strait of Hormuz with Gulf states on Monday"
+  },
+  "b-ecde0210befb": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "Insufficient aid and shelter increase hardship for displaced in Tawila, as malnutrition and disease spread rapidly.",
+   "lang": "en",
+   "places": [
+    "Sudan",
+    "Tawila"
+   ],
+   "published_at": "2026-09-10T12:47:35",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Hundreds of thousands lack adequate shelter at Sudan’s Tawila camp"
+  },
+  "b-ee4cef7b5537": {
+   "developments": [],
+   "entities": [
+    "IOM",
+    "UN The International Organisation for Migration"
+   ],
+   "excerpt": "The International Organisation for Migration (IOM) warns that the figure is rising &#039;by the hour&#039;.",
+   "lang": "en",
+   "places": [
+    "Yemen"
+   ],
+   "published_at": "2026-09-11T18:14:29",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "At least 46,000 displaced by escalating Yemen fighting: UN"
+  },
+  "b-ef187bb8e5d5": {
+   "developments": [
+    3
+   ],
+   "entities": [
+    "Houthis",
+    "United Nations"
+   ],
+   "excerpt": "Forces loyal to the UN-recognised government and Houthis fight on multiple fronts in an effort to expand their control.",
+   "lang": "en",
+   "places": [
+    "Yemen"
+   ],
+   "published_at": "2026-09-10T09:05:39",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Houthis, Yemeni forces engaged in fierce battles: Why each front matters"
+  },
+  "b-f24084648a2d": {
+   "developments": [
+    3
+   ],
+   "entities": [
+    "Houthis"
+   ],
+   "excerpt": "Yemen’s Houthi rebels are advancing along the Red Sea coast, to gain more leverage over the Bab el-Mandeb Strait.",
+   "lang": "en",
+   "places": [
+    "Red Sea",
+    "Yemen"
+   ],
+   "published_at": "2026-09-10T13:14:03",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Houthis advance along Yemen’s southern Red Sea coast"
+  },
+  "b-f3d51bd4cfc3": {
+   "developments": [],
+   "entities": [],
+   "excerpt": "The Witkoff-Kushner visit to Moscow was immediately followed by Russian attacks on Kyiv.",
+   "lang": "en",
+   "places": [
+    "Kyiv",
+    "Moscow",
+    "Russia",
+    "US",
+    "Ukraine"
+   ],
+   "published_at": "2026-09-11T16:30:48",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "US diplomacy under fire as Russia escalates attacks on Ukrainian officials"
+  },
+  "b-f3fd6e8082e5": {
+   "developments": [],
+   "entities": [
+    "European",
+    "Fire Point"
+   ],
+   "excerpt": "Iryna Terekh said that when working with European companies, she prefers those that “work and think in Ukrainian speed and [with a] Ukrainian mindset.&#8221;",
+   "lang": "en",
+   "places": [
+    "Ukraine"
+   ],
+   "published_at": "2026-09-11T15:04:11",
+   "roundup": false,
+   "source": "Breaking Defense",
+   "stored": true,
+   "title": "CEO of Ukraine’s Fire Point: Freyja anti-ballistic missile program seeks ‘best players’"
+  },
+  "b-f58db40bdc0d": {
+   "developments": [],
+   "entities": [
+    "Americas Security Affairs",
+    "Breaking Defense",
+    "Homeland Defense",
+    "Mark Ditlevson",
+    "US Department of Defense"
+   ],
+   "excerpt": "“We want to do as much as we can; I would love to continue to bring on new projects, new programs to the border and try it out, but we want to do it in a responsible way that&#8217;s safe,” Mark Ditlevson, assistant secretary of defense for Homeland Defense and Americas Security Affairs, told Breaking Defense.",
+   "lang": "en",
+   "places": [
+    "Mexico",
+    "US"
+   ],
+   "published_at": "2026-09-11T16:58:44",
+   "roundup": false,
+   "source": "Breaking Defense",
+   "stored": true,
+   "title": "Pentagon eyeing tech testbed expansion along US-Mexico border"
+  },
+  "b-f6f180e2ac3f": {
+   "developments": [],
+   "entities": [
+    "AI",
+    "Donald Trump",
+    "White House",
+    "Xi Jinping"
+   ],
+   "excerpt": "Rising tensions over artificial intelligence are shaping the final preparations for Chinese President Xi Jinping’s visit to the United States.\nWashington and Beijing are discussing the possibility of folding a long-awaited AI dialogue into a broader economic meeting in the days before Xi meets US President Donald Trump, according to several people familiar with the arrangements.\nThe two leaders ag",
+   "lang": "en",
+   "places": [
+    "Beijing",
+    "China",
+    "US",
+    "Washington"
+   ],
+   "published_at": "2026-09-11T22:00:10",
+   "roundup": false,
+   "source": "South China Morning Post",
+   "stored": true,
+   "title": "AI fight shadows final preparations for Xi Jinping’s White House visit to meet Donald Trump"
+  },
+  "b-f74d648ecc35": {
+   "developments": [],
+   "entities": [
+    "June Aster",
+    "Philippine Coast Guard",
+    "Philippines Drone"
+   ],
+   "excerpt": "Drone video from the Philippine Coast Guard shows smoke rising from the burned out MV June Aster off Palawan.",
+   "lang": "en",
+   "places": [
+    "Palawan"
+   ],
+   "published_at": "2026-09-10T10:28:44",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "Drone video shows aftermath of deadly ferry fire off the Philippines"
+  },
+  "b-f9b2e093be00": {
+   "developments": [],
+   "entities": [
+    "Apple",
+    "iPhone",
+    "iPhone Apple"
+   ],
+   "excerpt": "Apple showed off at an event the first major design change to the iPhone in almost 20 years.",
+   "lang": "en",
+   "places": [],
+   "published_at": "2026-09-10T09:32:34",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Apple's new boss starts with big gamble on £1,999 first folding iPhone"
+  },
+  "b-fa0a8cb54a37": {
+   "developments": [],
+   "entities": [
+    "Republicans"
+   ],
+   "excerpt": "The US president covered many of the subjects he has returned to time and again - with a few surprises thrown in.",
+   "lang": "en",
+   "places": [
+    "US"
+   ],
+   "published_at": "2026-09-10T04:07:44",
+   "roundup": false,
+   "source": "BBC World",
+   "stored": true,
+   "title": "Four key takeaways from Republican midterms convention"
+  },
+  "b-fa4218621522": {
+   "developments": [],
+   "entities": [
+    "Joint Ukraine Multinational Program"
+   ],
+   "excerpt": "Ottawa also pledged to invest approximately $350 million to purchase air defense interceptors via the Joint Ukraine Multinational Program, also known as JUMPSTART.",
+   "lang": "en",
+   "places": [
+    "Canada",
+    "Ottawa",
+    "Ukraine"
+   ],
+   "published_at": "2026-09-11T16:26:08",
+   "roundup": false,
+   "source": "Breaking Defense",
+   "stored": true,
+   "title": "Canada, Ukraine to jointly produce defense tech, part of ‘100-year partnership’"
+  },
+  "b-fb12623fc608": {
+   "developments": [],
+   "entities": [
+    "Trump"
+   ],
+   "excerpt": "Attorneys general from 20 states and Washington, DC, say the US government illegally rolled back landmark protections.",
+   "lang": "en",
+   "places": [
+    "US",
+    "Washington, DC"
+   ],
+   "published_at": "2026-09-10T00:52:05",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "US states sue Trump over weakening of endangered species protections"
+  },
+  "b-fb4fd64fbbee": {
+   "developments": [],
+   "entities": [
+    "European",
+    "FIFA",
+    "French Football Federation",
+    "Infantino FFF"
+   ],
+   "excerpt": "FFF aligns position with of other European federations, such as Belgium, England, Italy, Scotland, and Sweden.",
+   "lang": "en",
+   "places": [
+    "Belgium",
+    "England",
+    "Italy",
+    "Scotland",
+    "Sweden"
+   ],
+   "published_at": "2026-09-10T13:38:51",
+   "roundup": false,
+   "source": "Al Jazeera",
+   "stored": true,
+   "title": "French Football Federation withdraws support for FIFA President Infantino"
+  }
+ },
+ "shift_hours": 560.8,
+ "situations": {
+  "eu-china-trade": {
+   "primary_actors": [
+    "China",
+    "European Union"
+   ],
+   "status": "active",
+   "title": "EU–China trade dispute"
+  },
+  "gaza-ceasefire": {
+   "primary_actors": [
+    "Hamas",
+    "Israel"
+   ],
+   "status": "active",
+   "title": "Gaza ceasefire negotiations"
+  },
+  "russia-ukraine-war": {
+   "primary_actors": [
+    "Russia",
+    "Ukraine"
+   ],
+   "status": "active",
+   "title": "Russia–Ukraine war"
+  },
+  "sudan-civil-war": {
+   "primary_actors": [
+    "Rapid Support Forces",
+    "Sudan"
+   ],
+   "status": "active",
+   "title": "Sudan civil war"
+  },
+  "us-iran": {
+   "primary_actors": [
+    "Iran",
+    "United States"
+   ],
+   "status": "active",
+   "title": "US–Iran negotiations and confrontation"
+  }
+ },
+ "split": "holdout",
+ "window": "2026-09-10"
+}

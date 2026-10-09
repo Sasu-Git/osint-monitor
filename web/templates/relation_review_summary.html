@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Relation review summary</title>
+<style>
+  body { margin:0; padding:20px; font-family:'Segoe UI',system-ui,sans-serif; background:#0f1117; color:#e4e7f0; font-size:14px; }
+  a { color:#4f8ff7; text-decoration:none; }
+  table { border-collapse:collapse; margin:10px 0 20px; }
+  th, td { border:1px solid #2d3148; padding:5px 12px; text-align:left; }
+  th { color:#8b92a8; font-weight:600; }
+  .warn { color:#ffc107; }
+</style>
+</head>
+<body>
+<h1>Relation gold review: summary</h1>
+<p><b>{{ s.reviewed }}</b> / {{ s.total }} reviewed · <b>{{ s.remaining }}</b> remaining ·
+  <a href="/eval/relations?filter=unreviewed">continue reviewing</a> · <a href="/eval/relations?filter=all">all cases</a></p>
+
+<h2>Owner verdicts</h2>
+<table>
+  <tr><th>Verdict</th><th>Cases</th></tr>
+  {% for v in verdicts %}<tr><td>{{ v }}</td><td>{{ s.counts[v] }}</td></tr>{% endfor %}
+</table>
+
+<p>Identity suspects: <b>{{ s.identity }}</b> · Ambiguous: <b>{{ s.ambiguous }}</b></p>
+
+<h2>Confirmed positives per relation type</h2>
+<table>
+  <tr><th>Relation</th><th>Owner-confirmed</th><th></th></tr>
+  {% for r in relations %}<tr><td>{{ r }}</td><td>{{ s.positives[r] }}</td>
+    <td>{% if s.positives[r] < 3 %}<span class="warn">below 3: supplementary batch, merge or drop (README §5a)</span>{% endif %}</td></tr>{% endfor %}
+</table>
+
+<h2>Owner vs draft disagreements ({{ s.disagreements|length }})</h2>
+<p>{% for c in s.disagreements %}<a href="/eval/relations/case/{{ c }}?filter=disagree">{{ c }}</a>{{ ", " if not loop.last }}{% else %}none{% endfor %}</p>
+<p style="color:#8b92a8">Sealed holdout cases are never loaded here. The gold is not frozen by this page.</p>
+</body>
+</html>

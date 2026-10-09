@@ -1,0 +1,146 @@
+# Owner verdicts for the Phase 3 relation gold, one entry per case (written by the review UI,
+# /eval/relations). label: NO_RELATION | a relation type | AMBIGUOUS | SAME_DEVELOPMENT_SUSPECTED.
+# direction (A->B | B->A, source -> target) only for reaction_to, follow_up_to, caused_by.
+# Notes are kept verbatim. Regenerating the review sheet never overwrites this file.
+R001: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-05T09:31:33+00:00'}
+R002: {label: follow_up_to, direction: A->B, identity_flag: null, note: Judge asks jurors to keep trying --> what are the jury's options; I think it is a follow-up or commentary on the empasse the jury is facing, reviewed_at: '2026-10-05T09:33:25+00:00'}
+R003: {label: NO_RELATION, direction: null, identity_flag: null, note: 'The common denominator here seems to be China: on one side entertaining relationships with Modi & Putin, on the other side with Trump. There is no relation between the two events, but the common denominator would be China Foreign Policy ', reviewed_at: '2026-10-05T09:36:04+00:00'}
+R004: {label: same_calamity_lifecycle, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-05T09:36:31+00:00'}
+R005: {label: same_visit_or_summit, direction: null, identity_flag: null, note: 'If they are both analysis pieces then there is a relation, they''re broadly referring to the same meeting or summit', reviewed_at: '2026-10-05T09:38:20+00:00'}
+R006: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-05T09:38:34+00:00'}
+R007: {label: NO_RELATION, direction: null, identity_flag: null, note: 'No relation, although in the topic of US-China relationship Taiwan is an uncovered nerve that somehow always connects', reviewed_at: '2026-10-05T09:40:28+00:00'}
+R008: {label: caused_by, direction: B->A, identity_flag: null, note: Hong Kong tax break is a reaction to --> Singapore rival tax scheme, reviewed_at: '2026-10-05T09:49:59+00:00'}
+R009: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-05T09:50:42+00:00'}
+R010: {label: NO_RELATION, direction: null, identity_flag: null, note: 'one is an event at Pak-Afg border, the others are urgent meetings in face of Houthi attacks ', reviewed_at: '2026-10-05T09:51:35+00:00'}
+R011: {label: NO_RELATION, direction: null, identity_flag: null, note: Reading digests should be aggregated by Geographical macro-areas and time-frames (one digest a week per macro-area is more than fine), reviewed_at: '2026-10-05T09:57:14+00:00'}
+R012: {label: SAME_DEVELOPMENT_SUSPECTED, direction: null, identity_flag: SAME_DEVELOPMENT_SUSPECTED, note: null, reviewed_at: '2026-10-05T10:45:48+00:00'}
+R013: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-05T10:47:07+00:00'}
+R014: {label: reaction_to, direction: B->A, identity_flag: null, note: null, reviewed_at: '2026-10-05T11:26:45+00:00'}
+R015: {label: NO_RELATION, direction: null, identity_flag: null, note: 'shared crisis, no relation', reviewed_at: '2026-10-05T11:29:03+00:00'}
+R016: {label: NO_RELATION, direction: null, identity_flag: null, note: 'still they should both be encapsuled in the summit: basically a series of threads that originate from there', reviewed_at: '2026-10-05T11:30:42+00:00'}
+R017: {label: same_calamity_lifecycle, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-05T11:31:05+00:00'}
+R018: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-05T11:31:27+00:00'}
+R019: {label: AMBIGUOUS, direction: null, identity_flag: null, note: 'No relation but these are all followups or reactions to peace talks, might be co-caused; i''d flag a bit of ambiguity here', reviewed_at: '2026-10-05T11:34:07+00:00'}
+R020: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-05T11:35:25+00:00'}
+R021: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-05T11:35:48+00:00'}
+R022: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-05T11:54:32+00:00'}
+R023: {label: same_visit_or_summit, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-05T11:55:14+00:00'}
+R024: {label: NO_RELATION, direction: null, identity_flag: null, note: 'no relation but commonality in critiquing/protesting Netanyahu ', reviewed_at: '2026-10-05T11:56:19+00:00'}
+R025: {label: NO_RELATION, direction: null, identity_flag: null, note: 'reading digest, same policy as previous save should be implemented: one summary digest a week per macroarea ', reviewed_at: '2026-10-05T12:01:44+00:00'}
+R026: {label: AMBIGUOUS, direction: null, identity_flag: null, note: 'it is the same meeting / summit referenced, but one is an analysis piece and the other two are about practicalities or events actually occurred during ', reviewed_at: '2026-10-05T12:03:05+00:00'}
+R027: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-05T12:04:00+00:00'}
+R028: {label: NO_RELATION, direction: null, identity_flag: null, note: commentary on what happened, reviewed_at: '2026-10-05T12:04:28+00:00'}
+R029: {label: reaction_to, direction: B->A, identity_flag: null, note: 'If the re-establishment didn''t occur then we wouldn''t have had activists protesting against it.. hope that makes sense. It''s not an absolute but mostly logic, one would assume that activists were there precisely because of the old settlement re-establishment; so no relation seems odd; i would give either reaction to or ambiguous', reviewed_at: '2026-10-05T12:07:09+00:00'}
+R030: {label: same_calamity_lifecycle, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-05T12:07:24+00:00'}
+R031: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-05T12:20:50+00:00'}
+R032: {label: NO_RELATION, direction: null, identity_flag: null, note: 'I don''t want this gossip to surface in general. Unless it''s official visits or leaks like Panama Papers or Epstein Files. ', reviewed_at: '2026-10-05T12:22:12+00:00'}
+R033: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-05T12:22:23+00:00'}
+R034: {label: NO_RELATION, direction: null, identity_flag: null, note: only shared summit context, reviewed_at: '2026-10-05T12:23:26+00:00'}
+R035: {label: NO_RELATION, direction: null, identity_flag: null, note: 'only relation is maritime policy, possibly climate change related claims', reviewed_at: '2026-10-06T10:57:51+00:00'}
+R036: {label: reaction_to, direction: B->A, identity_flag: null, note: 'there is a relation, without the speech there is no commentary', reviewed_at: '2026-10-06T10:59:05+00:00'}
+R037: {label: NO_RELATION, direction: null, identity_flag: null, note: no relation but the bigger picture is calamities lifecycles; important to distinguish between major events, reviewed_at: '2026-10-06T10:59:56+00:00'}
+R038: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-06T11:00:33+00:00'}
+R039: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-06T11:00:56+00:00'}
+R040: {label: NO_RELATION, direction: null, identity_flag: null, note: 'no relation although these kinds of documented activities from armed forces (burning machinery, throwing belongings) should be part of a broader scrutiny on armed conflicts ', reviewed_at: '2026-10-06T11:02:17+00:00'}
+R041: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-06T11:03:22+00:00'}
+R042: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-06T11:03:47+00:00'}
+R043: {label: NO_RELATION, direction: null, identity_flag: null, note: 'only implicit link is US foreign policy and military operations/surveillance ', reviewed_at: '2026-10-06T11:04:35+00:00'}
+R044: {label: AMBIGUOUS, direction: null, identity_flag: null, note: 'IMO this is kind of ambiguous, it''s not one single development but here the topic is the rising role of China as main US competitor both in economic and diplomatic terms (see influence in South America) ', reviewed_at: '2026-10-06T11:05:47+00:00'}
+R045: {label: same_calamity_lifecycle, direction: null, identity_flag: null, note: 'even if same development, one lifecycle is fine. We can insert checkpoints for the most newsworthy events', reviewed_at: '2026-10-06T11:07:47+00:00'}
+R046: {label: same_visit_or_summit, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-06T11:20:24+00:00'}
+R047: {label: NO_RELATION, direction: null, identity_flag: null, note: Whenever SCMP or similar give a summary read of "most important news stories in the past X weeks" or "X days" I'd like to have an option to trigger a drilldown research on each of the news stories, reviewed_at: '2026-10-06T11:22:20+00:00'}
+R048: {label: same_visit_or_summit, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-06T11:23:02+00:00'}
+R049: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-06T11:23:49+00:00'}
+R050: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-06T11:27:47+00:00'}
+R051: {label: NO_RELATION, direction: null, identity_flag: null, note: 'When a big company (over 20M expected IPO) "clears hearing" I would like the option to trigger a short search: history of the company, leadership, backers/investors, core technology/products.', reviewed_at: '2026-10-06T11:29:34+00:00'}
+R052: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-06T11:30:06+00:00'}
+R053: {label: same_calamity_lifecycle, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-06T11:30:38+00:00'}
+R054: {label: same_calamity_lifecycle, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-06T11:30:46+00:00'}
+R055: {label: NO_RELATION, direction: null, identity_flag: null, note: 'no relation although the reaction originated from Trump''s remarks made at the visit, so I would also linger towards "reaction_to"; ', reviewed_at: '2026-10-06T11:31:49+00:00'}
+R056: {label: follow_up_to, direction: A->B, identity_flag: null, note: 'not specifically linked as one thing, but it is pretty clear that the main objective is to hit Iran/ secure Israel ', reviewed_at: '2026-10-06T11:33:09+00:00'}
+R057: {label: NO_RELATION, direction: null, identity_flag: null, note: 'these should fall under a big "non legal migration flows" umbrella. Greece, Morocco, Italy, Spain, Portugal, France, England, Libia and Egypt should be watched closely regarding this, as well as EU responses to governmental actions (such as naval blocks for example) ', reviewed_at: '2026-10-06T11:35:21+00:00'}
+R058: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-06T11:35:28+00:00'}
+R059: {label: caused_by, direction: A->B, identity_flag: null, note: 'caused by the object of A''s analysis. The analysis talks about the rejection, it is the rejection causing the spikes, not the analysis itself of course. This is obvious', reviewed_at: '2026-10-06T11:36:36+00:00'}
+R060: {label: co_caused_with, direction: null, identity_flag: null, note: No relation but the shared "west bank" topic is a pretty hot one for the Isreal-Palestine conflict. Without settlers presence there would not be a need to deter violence, reviewed_at: '2026-10-06T11:38:23+00:00'}
+R061: {label: NO_RELATION, direction: null, identity_flag: null, note: 'Commission Daily news seems interesting, we could think of a bundle summary read for EU institutions modelled on this ', reviewed_at: '2026-10-06T12:04:00+00:00'}
+R062: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-06T12:04:16+00:00'}
+R063: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-06T12:05:05+00:00'}
+R064: {label: same_visit_or_summit, direction: null, identity_flag: null, note: 'only 2 articles are about Macron in A, therefore connecting to B, as a followup/commentary. Rest should not be part of the development (should be part of "housing crisis" on the "Spain" area) ', reviewed_at: '2026-10-06T12:07:31+00:00'}
+R065: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-06T12:07:43+00:00'}
+R066: {label: NO_RELATION, direction: null, identity_flag: null, note: 'I cannot see the body, I marked no relation', reviewed_at: '2026-10-06T12:08:43+00:00'}
+R067: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-06T14:16:26+00:00'}
+R068: {label: same_calamity_lifecycle, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-06T14:16:43+00:00'}
+R069: {label: same_attack_wave, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-06T14:16:59+00:00'}
+R070: {label: NO_RELATION, direction: null, identity_flag: null, note: 'no relation but whenever someone sues one of the Mag7 or a big Pharmaceutical I would like the event surface, especially for Mag7 judiciary developments should be looked at very closely. ', reviewed_at: '2026-10-06T14:18:53+00:00'}
+R071: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-06T14:19:11+00:00'}
+R072: {label: same_calamity_lifecycle, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-06T14:19:21+00:00'}
+R073: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-06T14:19:48+00:00'}
+R074: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-06T14:24:28+00:00'}
+R075: {label: same_calamity_lifecycle, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-06T14:24:35+00:00'}
+R076: {label: reaction_to, direction: B->A, identity_flag: null, note: 'same logic as before, without settlers there would be no need for pushback. It''s not important that the reaction be to the exact event to create a causal link. If settlers come in and protestors follow claiming to provide "protective presence" we should be able to at least vet the relationship and decide whether it surfaces as a reaction, something else or doesn''t surface at all ', reviewed_at: '2026-10-06T14:26:46+00:00'}
+R077: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T06:56:58+00:00'}
+R078: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T06:57:19+00:00'}
+R079: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T06:57:47+00:00'}
+R080: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T06:57:58+00:00'}
+R081: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T10:47:02+00:00'}
+R082: {label: same_calamity_lifecycle, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T10:47:12+00:00'}
+R083: {label: same_visit_or_summit, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T10:47:33+00:00'}
+R084: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T10:47:55+00:00'}
+R085: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T10:48:36+00:00'}
+R086: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T10:50:28+00:00'}
+R087: {label: NO_RELATION, direction: null, identity_flag: null, note: 'are we sure we want to flag this kind of things under no relation? if the remarks follow the summit, then it should be a followup, especially because it''s about a very hot topic inside US-China relationship', reviewed_at: '2026-10-07T10:52:03+00:00'}
+R088: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T10:52:43+00:00'}
+R089: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T10:52:55+00:00'}
+R090: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T10:54:36+00:00'}
+R091: {label: same_calamity_lifecycle, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T10:55:20+00:00'}
+R092: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T10:56:07+00:00'}
+R093: {label: NO_RELATION, direction: null, identity_flag: null, note: 'same topic, we should bundle it in "approaches" -> how different macro areas handle the same topic (e.g. EU with intra-country differences, same with US or South America) ', reviewed_at: '2026-10-07T10:58:25+00:00'}
+R094: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T10:58:34+00:00'}
+R095: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T10:58:46+00:00'}
+R096: {label: NO_RELATION, direction: null, identity_flag: null, note: 'correct, side incident', reviewed_at: '2026-10-07T10:59:22+00:00'}
+R097: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T10:59:33+00:00'}
+R098: {label: SAME_DEVELOPMENT_SUSPECTED, direction: null, identity_flag: SAME_DEVELOPMENT_SUSPECTED, note: 'the DPRK made statements regarding its nuclear position, but specifically during its main UN General Assembly (UNGA) address.', reviewed_at: '2026-10-07T11:02:24+00:00'}
+R099: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T11:09:19+00:00'}
+R100: {label: same_visit_or_summit, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T11:09:28+00:00'}
+R101: {label: NO_RELATION, direction: null, identity_flag: null, note: 'Interesting here, whenever critical minerals are invested in like this, especially by G20 countries, it should surface and generate its own situation. (prompt me to address after review) ', reviewed_at: '2026-10-07T11:10:56+00:00'}
+R102: {label: AMBIGUOUS, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T11:11:30+00:00'}
+R103: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T11:16:31+00:00'}
+R104: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T11:17:31+00:00'}
+R105: {label: same_visit_or_summit, direction: null, identity_flag: null, note: both are commentaries referred to the same address/event; they don't refer each other but they literally cover the same event, reviewed_at: '2026-10-07T11:18:34+00:00'}
+R106: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T11:18:47+00:00'}
+R107: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T11:19:12+00:00'}
+R108: {label: same_calamity_lifecycle, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T11:19:37+00:00'}
+R109: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T11:19:49+00:00'}
+R110: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T11:29:48+00:00'}
+R111: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T11:30:01+00:00'}
+R112: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T11:30:24+00:00'}
+R113: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T11:30:43+00:00'}
+R114: {label: same_calamity_lifecycle, direction: null, identity_flag: null, note: '... if they share the DRC crisis then there is a link. It''s the same lifecycle', reviewed_at: '2026-10-07T11:31:55+00:00'}
+R115: {label: co_caused_with, direction: null, identity_flag: null, note: 'I think this should be co_caused with: they''re both commentary pieces on a broader topic which "caused" both (prompt me if you disagree/agree and why) ', reviewed_at: '2026-10-07T11:33:40+00:00'}
+R116: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T11:33:51+00:00'}
+R117: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T11:34:27+00:00'}
+R118: {label: AMBIGUOUS, direction: null, identity_flag: null, note: '..I think it''s a natural development produced by the tension, otherwise they wouldn''t have made the offer', reviewed_at: '2026-10-07T11:35:37+00:00'}
+R119: {label: NO_RELATION, direction: null, identity_flag: null, note: 'I don''t want sports news to surface at all, we can disregard this topics or similar topics entirely ', reviewed_at: '2026-10-07T11:44:07+00:00'}
+R120: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T11:44:30+00:00'}
+R121: {label: NO_RELATION, direction: null, identity_flag: null, note: 'interesting though, as Japan pulls away investors are going in. Should trigger a small research into why', reviewed_at: '2026-10-07T11:45:28+00:00'}
+R122: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T11:51:14+00:00'}
+R123: {label: co_caused_with, direction: null, identity_flag: null, note: 'okay yes separate acts but same development, he is raising military budget and that in some shape or form is included in the fact that more troops will join. I would put follow up or co_caused_with', reviewed_at: '2026-10-07T11:53:52+00:00'}
+R124: {label: same_visit_or_summit, direction: null, identity_flag: null, note: 'yes, they were', reviewed_at: '2026-10-07T11:54:57+00:00'}
+R125: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T11:55:10+00:00'}
+R126: {label: NO_RELATION, direction: null, identity_flag: null, note: Applied robotics should be one of those topics (like the "AI Race" or "Semiconductors" or "Critical Raw Material") where we should always have a birdseye view on, reviewed_at: '2026-10-07T11:56:30+00:00'}
+R127: {label: caused_by, direction: A->B, identity_flag: null, note: different days but the rescue cited in B is directly caused by A, reviewed_at: '2026-10-07T11:57:31+00:00'}
+R128: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T11:57:41+00:00'}
+R129: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T11:57:51+00:00'}
+R130: {label: NO_RELATION, direction: null, identity_flag: null, note: 'Royals gossip should be disregarded unless highly controversial or political subjects are specifically addressed. ', reviewed_at: '2026-10-07T11:59:06+00:00'}
+R131: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T12:00:38+00:00'}
+R132: {label: co_caused_with, direction: null, identity_flag: null, note: 'B does not respond to A but they are both caused by the rejection (ping me with your take on this as well) ', reviewed_at: '2026-10-07T12:04:52+00:00'}
+R133: {label: same_visit_or_summit, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T12:27:32+00:00'}
+R134: {label: SAME_DEVELOPMENT_SUSPECTED, direction: null, identity_flag: SAME_DEVELOPMENT_SUSPECTED, note: '"only" the topic? it''s literally HongKong retail, how are they not part of the same development? (let''s dig on this, ping me for futher clarification or follow-up) ', reviewed_at: '2026-10-07T12:29:43+00:00'}
+R135: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T12:31:17+00:00'}
+R136: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T12:31:37+00:00'}
+R137: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T12:32:07+00:00'}
+R138: {label: SAME_DEVELOPMENT_SUSPECTED, direction: null, identity_flag: SAME_DEVELOPMENT_SUSPECTED, note: null, reviewed_at: '2026-10-07T12:32:36+00:00'}
+R139: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T12:32:52+00:00'}
+R140: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T12:33:17+00:00'}
+R141: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T12:33:35+00:00'}
+R142: {label: NO_RELATION, direction: null, identity_flag: null, note: null, reviewed_at: '2026-10-07T12:33:48+00:00'}

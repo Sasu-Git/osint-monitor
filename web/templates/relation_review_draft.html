@@ -1,0 +1,9 @@
+<div class="draft">
+  <b>Blind draft</b> (separate annotator):
+  <code>{{ draft.label }}</code>{% if draft.direction and draft.direction != 'none' %} · {{ draft.direction }}{% endif %}
+  · confidence {{ draft.confidence }}
+  {% if draft.identity_flag %} · <span class="badge b-single">{{ draft.identity_flag }}</span>{% endif %}
+  {% if draft.flag %} · <span class="badge b-comm">{{ draft.flag }}</span>{% endif %}
+  · {% if agrees %}<span class="saved">agrees with your verdict</span>{% else %}<span class="error">differs from your verdict</span>{% endif %}
+  <div class="muted">{{ draft.rationale }}</div>
+</div>
