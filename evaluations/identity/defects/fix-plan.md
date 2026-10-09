@@ -45,3 +45,16 @@ Frozen defect set; identity gold revision 4 (development); Phase 2 identity hold
 scored holdout); clustering benchmark; segmentation benchmark; entity benchmark; Situation dry-run; duplicate
 membership and single-source invariants. Every changed gold case is explained. Stop if the gains need broad precision
 regressions.
+
+## Amendment 1 (after the first scoring run `t24p1`, before any other change)
+
+Run `t24p1` (`score-t24p1.json`): defect set 23 -> 30 correct (8 overmerges fixed, 1 control broken), gold 157 -> 160.
+P1 had no effect in the data: the release-package items now link, but they come from one outlet, so the
+single-source holdback (unchanged) keeps them below the Development layer.
+
+The one regression (C114, SAME) is an artifact of how T24 split new items: chronological chunks anchored at the
+earliest item. In C114's cluster an unrelated earlier report (DW, C115 DIFFERENT) opened the first chunk and pushed
+the later of the two same-occurrence reports (9 h apart) into a second chunk. The rule stays the same (a Development's
+reports span at most 24 h); its implementation for new Developments changes: linked new items merge in descending
+similarity order, and a merge is refused when the merged group would span more than 24 h. No threshold or
+parameter changes. Run label `t24p1-v2`.

@@ -1,0 +1,797 @@
+{
+ "window": "2026-09-25",
+ "developments": {
+  "1": {
+   "members": [
+    "b-14aae9d37ebe",
+    "b-38730424bfbc"
+   ],
+   "principals": [
+    "Pakistan",
+    "Taliban"
+   ],
+   "summary": "Four civilians killed in Pakistani strikes in Afghanistan, Taliban says"
+  },
+  "2": {
+   "members": [
+    "b-256c7087fa4e",
+    "b-8a758a84c401"
+   ],
+   "principals": [
+    "Giorgia Meloni",
+    "Italy",
+    "Meloni"
+   ],
+   "summary": "Italy ministers agree to ban burqa and niqab in school and cap foreigners in class"
+  },
+  "3": {
+   "members": [
+    "b-683038d2cd37",
+    "b-97cb65d1a469"
+   ],
+   "principals": [
+    "Donald Trump",
+    "Trump",
+    "Xi Jinping"
+   ],
+   "summary": "Xi got Trump's red carpet welcome - but not everything he wanted"
+  },
+  "4": {
+   "members": [
+    "b-17f8645e6056",
+    "b-d4cad9c5fd6c"
+   ],
+   "principals": [
+    "Nepal"
+   ],
+   "summary": "Nepal’s leader labels devastating flood a ‘warning to the world’"
+  }
+ },
+ "items": {
+  "b-511bf71f4b51": {
+   "developments": [],
+   "lang": "en",
+   "places": []
+  },
+  "b-404db7f387e0": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Madrid",
+    "Spain"
+   ]
+  },
+  "b-4574ee76b67f": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Berlin",
+    "COLOGNE",
+    "Germany",
+    "United States"
+   ]
+  },
+  "b-6c7e97b3f0f1": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Europe",
+    "Israel",
+    "Middle East",
+    "PARIS",
+    "Sovereignty",
+    "Ukraine",
+    "United States"
+   ]
+  },
+  "b-99dcf691f86c": {
+   "developments": [],
+   "lang": "en",
+   "places": []
+  },
+  "b-f5fc571411a7": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Bundestag",
+    "Germany",
+    "Russia",
+    "Ukraine",
+    "VIENNA"
+   ]
+  },
+  "b-4b0f4af621f9": {
+   "developments": [],
+   "lang": "en",
+   "places": []
+  },
+  "b-cc8da47e71cd": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Arctic",
+    "Denmark",
+    "Greenland",
+    "New York",
+    "Nuuk",
+    "United States",
+    "Washington"
+   ]
+  },
+  "b-aa291f31d75e": {
+   "developments": [],
+   "lang": "en",
+   "places": []
+  },
+  "b-740095d8184d": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "UK"
+   ]
+  },
+  "b-ab74b37e5cce": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Damascus",
+    "Syria"
+   ]
+  },
+  "b-47bf10b81a7a": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Seoul",
+    "South Korea",
+    "Taiwan",
+    "United States",
+    "Washington"
+   ]
+  },
+  "b-860a83283248": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Iran",
+    "United States"
+   ]
+  },
+  "b-572ebbd9ffcf": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "China",
+    "Fujian",
+    "United States"
+   ]
+  },
+  "b-0f3902c155f1": {
+   "developments": [],
+   "lang": "en",
+   "places": []
+  },
+  "b-11100df54b04": {
+   "developments": [],
+   "lang": "en",
+   "places": []
+  },
+  "b-a42dce75317b": {
+   "developments": [],
+   "lang": "en",
+   "places": []
+  },
+  "b-5c6acf77a15b": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Thailand",
+    "United States"
+   ]
+  },
+  "b-5ab63931ffbb": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "United States"
+   ]
+  },
+  "b-3569da87f654": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "La"
+   ]
+  },
+  "b-a140d543a214": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "India"
+   ]
+  },
+  "b-ffad9f6efa48": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Gaza",
+    "New York"
+   ]
+  },
+  "b-893ac7add538": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Europe",
+    "France",
+    "Italy",
+    "Lithuania",
+    "Mediterranean",
+    "Mediterranean VIENNA",
+    "Russia",
+    "Spain"
+   ]
+  },
+  "b-361a029728da": {
+   "developments": [],
+   "lang": "en",
+   "places": []
+  },
+  "b-b1a80484cbb3": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "UK"
+   ]
+  },
+  "b-96ae40f77540": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Denmark",
+    "Europe",
+    "Netherlands",
+    "Norway",
+    "Poland",
+    "Saildrone Denmark",
+    "United States",
+    "WARSAW"
+   ]
+  },
+  "b-195fb13868a2": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Germany"
+   ]
+  },
+  "b-d76616724887": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Ethiopia"
+   ]
+  },
+  "b-31359c5c578a": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Australia"
+   ]
+  },
+  "b-453ee4cac113": {
+   "developments": [],
+   "lang": "en",
+   "places": []
+  },
+  "b-6e3eb47c7f66": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "China"
+   ]
+  },
+  "b-83b1c4fd7c3c": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Denmark",
+    "Poland",
+    "Russia",
+    "Ukraine"
+   ]
+  },
+  "b-30e38f0ed5e9": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Denmark",
+    "Europe",
+    "Moscow",
+    "Norfolk",
+    "Russia",
+    "UK",
+    "United States",
+    "Virginia"
+   ]
+  },
+  "b-d72e5f6a5e01": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Italy",
+    "ROME"
+   ]
+  },
+  "b-e767866ae143": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Greece",
+    "UK"
+   ]
+  },
+  "b-e66d3d9e1f1b": {
+   "developments": [],
+   "lang": "en",
+   "places": []
+  },
+  "b-3d25324c2e80": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Dublin",
+    "Palestine"
+   ]
+  },
+  "b-5d1ba8e525da": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Italy"
+   ]
+  },
+  "b-0ed2621ab5c3": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Australia"
+   ]
+  },
+  "b-67498eaf9a8a": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Denmark",
+    "Moscow",
+    "Russia"
+   ]
+  },
+  "b-14aae9d37ebe": {
+   "developments": [
+    1
+   ],
+   "lang": "en",
+   "places": [
+    "Afghanistan",
+    "Pakistan"
+   ]
+  },
+  "b-481646b49def": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Poland",
+    "Ukraine"
+   ]
+  },
+  "b-256c7087fa4e": {
+   "developments": [
+    2
+   ],
+   "lang": "en",
+   "places": [
+    "Italy"
+   ]
+  },
+  "b-a2130595f86f": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "PARIS"
+   ]
+  },
+  "b-fee27e429610": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Israel"
+   ]
+  },
+  "b-162be742e132": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "MS"
+   ]
+  },
+  "b-8a758a84c401": {
+   "developments": [
+    2
+   ],
+   "lang": "en",
+   "places": [
+    "Italy"
+   ]
+  },
+  "b-56d04e57766b": {
+   "developments": [],
+   "lang": "en",
+   "places": []
+  },
+  "b-8272fab65325": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Israel",
+    "Palestine"
+   ]
+  },
+  "b-a9f27cc576aa": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Israel",
+    "NYC"
+   ]
+  },
+  "b-1a3eb5515f5f": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "China",
+    "United States"
+   ]
+  },
+  "b-0981add9054d": {
+   "developments": [],
+   "lang": "en",
+   "places": []
+  },
+  "b-e0cfcff8ba0a": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Pakistan",
+    "Saudi Arabia",
+    "Turkey",
+    "Turkiye",
+    "Yemen"
+   ]
+  },
+  "b-43687a0f07ef": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Iran",
+    "Saudi Arabia",
+    "Yemen"
+   ]
+  },
+  "b-0ebe58675a38": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Tigray"
+   ]
+  },
+  "b-3d9601881311": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Palestine"
+   ]
+  },
+  "b-97cb65d1a469": {
+   "developments": [
+    3
+   ],
+   "lang": "en",
+   "places": [
+    "China",
+    "Taiwan"
+   ]
+  },
+  "b-37b407536a36": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Japan"
+   ]
+  },
+  "b-38730424bfbc": {
+   "developments": [
+    1
+   ],
+   "lang": "en",
+   "places": [
+    "Afghanistan",
+    "Pakistan"
+   ]
+  },
+  "b-868c71fe1672": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Hong Kong",
+    "Hong Kong Online"
+   ]
+  },
+  "b-082ed1ec356a": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "China",
+    "United States"
+   ]
+  },
+  "b-959a32ba2a22": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Malaysia",
+    "Melaka",
+    "Negeri Sembilan",
+    "Parkroyal"
+   ]
+  },
+  "b-8185baba77a0": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Israel"
+   ]
+  },
+  "b-4f771205cb5b": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Russia",
+    "Ukraine"
+   ]
+  },
+  "b-2e1bf5650858": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "India"
+   ]
+  },
+  "b-024748749433": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "China",
+    "Hong Kong",
+    "Tiangong"
+   ]
+  },
+  "b-9796005bb46b": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "China",
+    "East Room",
+    "United States"
+   ]
+  },
+  "b-394d9d68572d": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "China",
+    "South",
+    "Taiwan",
+    "United States",
+    "Washington"
+   ]
+  },
+  "b-8c1d1ab1f3e2": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "China",
+    "Hong Kong"
+   ]
+  },
+  "b-c18660482c48": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Japan",
+    "Tokyo"
+   ]
+  },
+  "b-f6b48ba3e358": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Hawaii",
+    "Hawaii Mexico",
+    "Mexico",
+    "Nolo"
+   ]
+  },
+  "b-de49f467b91b": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Chengdu",
+    "China"
+   ]
+  },
+  "b-6805597101d0": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "France",
+    "Iran",
+    "Red Sea",
+    "Saudi Arabia",
+    "TF1",
+    "Yanbu"
+   ]
+  },
+  "b-085829c65ea1": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "China",
+    "FutureChina Global Forum",
+    "Singapore",
+    "Suzhou"
+   ]
+  },
+  "b-7e43978bd221": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Kuwait",
+    "Yemen"
+   ]
+  },
+  "b-c9ec164123fa": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Austria",
+    "Israel"
+   ]
+  },
+  "b-10920f35f202": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "China",
+    "High Island Geo Trail",
+    "Hong Kong"
+   ]
+  },
+  "b-d4cad9c5fd6c": {
+   "developments": [
+    4
+   ],
+   "lang": "en",
+   "places": [
+    "Nepal"
+   ]
+  },
+  "b-f2fe2e86b26c": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Beijing",
+    "China",
+    "United States",
+    "Washington"
+   ]
+  },
+  "b-17f8645e6056": {
+   "developments": [
+    4
+   ],
+   "lang": "en",
+   "places": [
+    "China",
+    "Himalaya",
+    "India",
+    "Nepal",
+    "New York"
+   ]
+  },
+  "b-702f72ebfbf0": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "China"
+   ]
+  },
+  "b-8ff081434f97": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "North Korea",
+    "Ukraine",
+    "Ukraine Pyongyang"
+   ]
+  },
+  "b-a8bcfc949562": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "France"
+   ]
+  },
+  "b-1e2d3e8e8bcd": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Gaza",
+    "New York",
+    "Palestine"
+   ]
+  },
+  "b-1177014b1698": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Malaysia"
+   ]
+  },
+  "b-9b98be97cdeb": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Asia",
+    "Asia-Pacific",
+    "China",
+    "Hong Kong",
+    "Japan",
+    "South Korea"
+   ]
+  },
+  "b-6346a77bebbe": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Indonesia"
+   ]
+  },
+  "b-1204081d6496": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Hollywood"
+   ]
+  },
+  "b-683038d2cd37": {
+   "developments": [
+    3
+   ],
+   "lang": "en",
+   "places": [
+    "Beijing",
+    "China",
+    "Great Hall of the People",
+    "Oval Office",
+    "South Lawn",
+    "United States"
+   ]
+  },
+  "b-63cb0d4f2400": {
+   "developments": [],
+   "lang": "en",
+   "places": []
+  }
+ }
+}

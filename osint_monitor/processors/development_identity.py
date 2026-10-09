@@ -11,7 +11,10 @@ which items *could* be one occurrence; this module decides, deterministically, w
    the existing Development it *continues*: a member it is directly linked to under the clusterer's link rule,
    with no segmentation guard against the pair (``development_segmentation.compatible_link``). Being in the same
    cluster is not enough. Among several Developments it continues, the one with the most linked members wins
-   (then the highest similarity, then the lowest id).
+   (then the highest similarity, then the lowest id). With ``max_occurrence_span_hours`` (T24) set, an item
+   published more than that many hours from a Development's earliest report never continues it, and new items
+   group (strongest links first) only while the group spans at most that many hours: one occurrence does not run
+   for days (evaluations/identity/defects/fix-plan.md).
 4. **New Developments.** New items that continue nothing may form a new Development. They must be connected by
    compatible links themselves (at least ``MIN_SIZE`` items), and must come from at least two independent origins
    (``independent_origins``). Otherwise they stay below the Development layer, as unclustered items, until
@@ -111,6 +114,37 @@ def _components(ids: list[int], linked) -> list[list[int]]:
     return parts
 
 
+def _span_components(ids: list[int], linked, seg: dict, span_s: float) -> list[list[int]]:
+    """Components of linked items whose reports span at most ``span_s`` seconds (T24). Links are taken in descending
+    similarity; a link is used only if the group it forms stays within the span, so no single early or late item
+    decides where the span starts. Items without a time impose no constraint."""
+    from osint_monitor.processors.development_segmentation import _cosine
+    parent = {i: i for i in ids}
+    bounds = {i: ((seg[i].published_at,) * 2 if i in seg and seg[i].published_at else (None, None)) for i in ids}
+
+    def find(x):
+        while parent[x] != x:
+            parent[x] = parent[parent[x]]
+            x = parent[x]
+        return x
+    edges = sorted(((_cosine(seg[a].vector, seg[b].vector), a, b) for n, a in enumerate(ids) for b in ids[n + 1:]
+                    if a in seg and b in seg and linked(a, b)), key=lambda e: (-e[0], e[1], e[2]))
+    for _, a, b in edges:
+        ra, rb = find(a), find(b)
+        if ra == rb:
+            continue
+        times = [t for t in (*bounds[ra], *bounds[rb]) if t is not None]
+        lo, hi = (min(times), max(times)) if times else (None, None)
+        if lo is not None and (hi - lo).total_seconds() > span_s:
+            continue
+        parent[rb] = ra
+        bounds[ra] = (lo, hi)
+    groups: dict[int, list[int]] = {}
+    for i in ids:
+        groups.setdefault(find(i), []).append(i)
+    return [sorted(g) for g in sorted(groups.values(), key=min)]
+
+
 def reconcile(session: Session, cluster: dict, config) -> list[Decision]:
     """Decide what one cluster does to the persisted Developments (no writes). Returns one Decision per
     Development it extends or creates, plus one (event_id None) for the items it leaves below the layer."""
@@ -144,12 +178,25 @@ def reconcile(session: Session, cluster: dict, config) -> list[Decision]:
             cache[key] = key in xlinks or (a in seg and b in seg and compatible_link(seg[a], seg[b], config))
         return cache[key]
 
+    span = getattr(config, "max_occurrence_span_hours", None)
+    span_s = span * 3600 if span else None
+    first = {e: min((seg[m].published_at for m in members[e] if m in seg and seg[m].published_at), default=None)
+             for e in touched} if span_s is not None else {}
+
+    def within_span(n: int, e: int) -> bool:                    # T24: one occurrence spans at most `span` hours
+        if span_s is None:
+            return True
+        t = seg[n].published_at if n in seg else None
+        return t is None or first[e] is None or abs((t - first[e]).total_seconds()) <= span_s
+
     decisions: list[Decision] = []
     extend: dict[int, list[int]] = {}
     rest: list[int] = []
     for n in new_ids:
         best = None
         for e in touched:
+            if not within_span(n, e):
+                continue
             links = [m for m in members[e] if linked(n, m)]
             if links:
                 score = (len(links), max(_cosine(seg[n].vector, seg[m].vector) for m in links), -e)
@@ -165,7 +212,9 @@ def reconcile(session: Session, cluster: dict, config) -> list[Decision]:
         decisions.append(d)
 
     held = Decision(cluster=cluster)
-    for part in _components(sorted(rest), linked):
+    parts = (_components(sorted(rest), linked) if span_s is None   # T24: linked groups within the span
+             else _span_components(sorted(rest), linked, seg, span_s))
+    for part in parts:
         if len(part) < MIN_SIZE:
             for n in part:
                 held.held[n] = ("linked to no member of an overlapping Development" if touched

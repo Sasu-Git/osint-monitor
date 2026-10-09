@@ -293,6 +293,7 @@ class DevelopmentSegmentationConfig(BaseModel):
     use_regions: bool = False                       # containment also through supra-national regions
     headline_override: Optional[HeadlineOverrideConfig] = None   # when a headline mismatch is not decisive
     occurrence_match: Optional[OccurrenceMatchConfig] = None     # P7: explicit evidence resolves a headline mismatch
+    max_occurrence_span_hours: Optional[float] = None   # T24: a Development's reports span at most this; None disables
 
 
 

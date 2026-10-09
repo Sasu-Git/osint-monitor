@@ -1,0 +1,1936 @@
+{
+ "window": "2026-09-29-live",
+ "developments": {
+  "1": {
+   "members": [
+    "b-3cf92c6e6216",
+    "b-4a153d08d5ee"
+   ],
+   "principals": [],
+   "summary": "Child among three killed off French coast in Channel crossing attempt"
+  },
+  "2": {
+   "members": [
+    "b-78f17cadda29",
+    "b-899db901c948"
+   ],
+   "principals": [
+    "SpaceX"
+   ],
+   "summary": "SpaceX’s Starship rocket reaches orbit for first time"
+  },
+  "3": {
+   "members": [
+    "b-0c4802738f69",
+    "b-1f27f2155779"
+   ],
+   "principals": [
+    "Nigeria"
+   ],
+   "summary": "Nigerian attempts to break world record by dancing non-stop for seven days"
+  },
+  "4": {
+   "members": [
+    "b-353b70c40d58",
+    "b-5fcae6a2f23e"
+   ],
+   "principals": [
+    "Mexico"
+   ],
+   "summary": "Mexico could see life-threatening floods due to Hurricane Polo"
+  },
+  "5": {
+   "members": [
+    "b-0df18717b61e",
+    "b-1ff757b6dc06"
+   ],
+   "principals": [
+    "Donald Trump",
+    "Trump",
+    "White House"
+   ],
+   "summary": "Trump announcing new Iowa steel plant the White House says will be biggest in US"
+  },
+  "6": {
+   "members": [
+    "b-0d1e24ede095",
+    "b-a6c5c12bf244",
+    "b-d93fa9820e25"
+   ],
+   "principals": [
+    "US"
+   ],
+   "summary": "US to grant sanctions waiver for flights between Iran and Iraq’s Najaf, source says"
+  },
+  "7": {
+   "members": [
+    "b-63b10f835e71",
+    "b-9d76a9fba40a"
+   ],
+   "principals": [
+    "Bardella",
+    "France",
+    "Jordan Bardella"
+   ],
+   "summary": "French far-right’s Bardella denies alleged antisemitic comments, files defamation lawsuit"
+  },
+  "8": {
+   "members": [
+    "b-0115154e4b8c",
+    "b-dfaa73241bf8"
+   ],
+   "principals": [
+    "Benjamin Netanyahu",
+    "Israel",
+    "UAE"
+   ],
+   "summary": "UAE confirms Netanyahu visit to Abu Dhabi"
+  },
+  "9": {
+   "members": [
+    "b-637b3d5573c9",
+    "b-8fb029d657d6"
+   ],
+   "principals": [
+    "Australia"
+   ],
+   "summary": "Plan for controversial Sydney data centre scrapped after push-back"
+  },
+  "10": {
+   "members": [
+    "b-977b4fcde056",
+    "b-a59f8ec99443"
+   ],
+   "principals": [],
+   "summary": "Remains of dozens of suspected kidnap victims found in Nigerian forests"
+  },
+  "11": {
+   "members": [
+    "b-7c617a10d6c2",
+    "b-d80ca3e43777"
+   ],
+   "principals": [
+    "North Korea",
+    "Seoul",
+    "South Korea"
+   ],
+   "summary": "South Korea suspects North Korean mines behind DMZ blast"
+  },
+  "12": {
+   "members": [
+    "b-3f307eb5a7ee",
+    "b-63a8f4e5d385"
+   ],
+   "principals": [
+    "US"
+   ],
+   "summary": "US prosecutors reopen case of alleged gang rape at Cornell University"
+  },
+  "13": {
+   "members": [
+    "b-ec1e7cad5883",
+    "b-fa8563af77d5"
+   ],
+   "principals": [
+    "Leo"
+   ],
+   "summary": "Pope Leo says concerns about AI doom scenarios are not ‘fake news’"
+  },
+  "14": {
+   "members": [
+    "b-a18797a56bac",
+    "b-e8ec3f6939db"
+   ],
+   "principals": [],
+   "summary": "Elderly in-laws arrested in California shooting death of New York Times employee"
+  },
+  "15": {
+   "members": [
+    "b-5876145bc5bf",
+    "b-cfe55b3ae7c5"
+   ],
+   "principals": [
+    "Argentina",
+    "Javier Milei",
+    "Milei"
+   ],
+   "summary": "Argentina threatens legal action against UK over Falkland Islands oil exploration"
+  },
+  "16": {
+   "members": [
+    "b-89d356fd2694",
+    "b-9244faa26b60",
+    "b-b26c02100dbb",
+    "b-faf3df1e7bae"
+   ],
+   "principals": [
+    "Malaysia"
+   ],
+   "summary": "Malaysia begins controversial repatriation of asylum seekers to Myanmar"
+  }
+ },
+ "items": {
+  "b-b929073ddaea": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Africa"
+   ]
+  },
+  "b-4a153d08d5ee": {
+   "developments": [
+    1
+   ],
+   "lang": "en",
+   "places": [
+    "France"
+   ]
+  },
+  "b-d7c7f0cb398c": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Asia",
+    "Beijing",
+    "Doha",
+    "Qatar"
+   ]
+  },
+  "b-3de08fe146d7": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Kyiv",
+    "North Korea",
+    "Seoul",
+    "South Korea",
+    "Ukraine"
+   ]
+  },
+  "b-e913508444fa": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "China"
+   ]
+  },
+  "b-a0d2222cc8c3": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Hong Kong"
+   ]
+  },
+  "b-882bd2c74b01": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "India"
+   ]
+  },
+  "b-e84ee254869f": {
+   "developments": [],
+   "lang": "en",
+   "places": []
+  },
+  "b-8fb029d657d6": {
+   "developments": [
+    9
+   ],
+   "lang": "en",
+   "places": [
+    "Sydney"
+   ]
+  },
+  "b-b843898c2503": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "China",
+    "Hebei",
+    "Langfang"
+   ]
+  },
+  "b-1b1606813b1f": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Bangkok",
+    "Thailand"
+   ]
+  },
+  "b-40a69cb4ab43": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Bangkok",
+    "Hong Kong",
+    "Hongkongers",
+    "Thailand"
+   ]
+  },
+  "b-f3ebb66b568d": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Mustang",
+    "Mustang District Part",
+    "Nepal"
+   ]
+  },
+  "b-697ff6b5ebd4": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "India",
+    "Sri Lanka"
+   ]
+  },
+  "b-679c543a216e": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Hong Kong"
+   ]
+  },
+  "b-228a5fafb60c": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "China",
+    "Hong Kong",
+    "Hongkongers"
+   ]
+  },
+  "b-7e7eaadee80c": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Hong Kong"
+   ]
+  },
+  "b-97848e943ce5": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "China",
+    "Washington"
+   ]
+  },
+  "b-612dbb6e4349": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Bandung"
+   ]
+  },
+  "b-e4d5122b482c": {
+   "developments": [],
+   "lang": "en",
+   "places": []
+  },
+  "b-5c706b2834eb": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Global South"
+   ]
+  },
+  "b-3cf92c6e6216": {
+   "developments": [
+    1
+   ],
+   "lang": "en",
+   "places": [
+    "France",
+    "Sangatte",
+    "UK"
+   ]
+  },
+  "b-521982d05de7": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Iraq",
+    "Strait",
+    "Strait of Hormuz"
+   ]
+  },
+  "b-7c2d28a8b5d1": {
+   "developments": [],
+   "lang": "en",
+   "places": []
+  },
+  "b-52edfbe97a80": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "China"
+   ]
+  },
+  "b-a371b10b41c6": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Butembo",
+    "Congo",
+    "North Kivu"
+   ]
+  },
+  "b-abd1538d02e7": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "China",
+    "Europe",
+    "Germany",
+    "Morocco",
+    "North Africa"
+   ]
+  },
+  "b-dac8f443af95": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Gallant Garden",
+    "Hong Kong"
+   ]
+  },
+  "b-78f17cadda29": {
+   "developments": [
+    2
+   ],
+   "lang": "en",
+   "places": [
+    "South Texas"
+   ]
+  },
+  "b-7908e0a4c5a4": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "US",
+    "Washington"
+   ]
+  },
+  "b-f9b0ad6ea17a": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "North Korea",
+    "Seoul",
+    "South Korea",
+    "Ukraine"
+   ]
+  },
+  "b-a860f37d2d91": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Europe",
+    "PARIS"
+   ]
+  },
+  "b-8ebb27b2ca44": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Ann Arbor",
+    "China",
+    "US"
+   ]
+  },
+  "b-02cc975e92ad": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Iran",
+    "Tehran",
+    "UK"
+   ]
+  },
+  "b-5f8ee6e4546c": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Gaza",
+    "Israel",
+    "Palestine",
+    "UK",
+    "West Bank"
+   ]
+  },
+  "b-fda9eb4fcc44": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Myanmar"
+   ]
+  },
+  "b-0c4802738f69": {
+   "developments": [
+    3
+   ],
+   "lang": "en",
+   "places": [
+    "Lagos",
+    "Nigeria"
+   ]
+  },
+  "b-353b70c40d58": {
+   "developments": [
+    4
+   ],
+   "lang": "en",
+   "places": [
+    "Baja California Sur",
+    "Hawaii",
+    "Mexico",
+    "Puerto San Carlos"
+   ]
+  },
+  "b-6f944abad02d": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Belgium",
+    "France"
+   ]
+  },
+  "b-48f193dc4cc6": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Russia",
+    "UK",
+    "Ukraine"
+   ]
+  },
+  "b-538912d56123": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Florida",
+    "US"
+   ]
+  },
+  "b-3074dd6dffdb": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Al-Aqsa Mosque",
+    "Al-Aqsa Mosque Jerusalem Daily",
+    "Israel"
+   ]
+  },
+  "b-a59f8ec99443": {
+   "developments": [
+    10
+   ],
+   "lang": "en",
+   "places": [
+    "Nigeria"
+   ]
+  },
+  "b-735b71c37f73": {
+   "developments": [],
+   "lang": "en",
+   "places": []
+  },
+  "b-af0a5e45fe54": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Britain",
+    "France"
+   ]
+  },
+  "b-1e14a9fd5fd3": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Ceuta"
+   ]
+  },
+  "b-d80ca3e43777": {
+   "developments": [
+    11
+   ],
+   "lang": "en",
+   "places": [
+    "Demilitarized Zone",
+    "Koreas",
+    "North Korea",
+    "South Korea"
+   ]
+  },
+  "b-e0a652fcd1bd": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Beijing",
+    "China",
+    "US"
+   ]
+  },
+  "b-1f27f2155779": {
+   "developments": [
+    3
+   ],
+   "lang": "en",
+   "places": [
+    "Nigeria"
+   ]
+  },
+  "b-064c29499f9b": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Kyiv",
+    "Russia",
+    "Ukraine"
+   ]
+  },
+  "b-69e53a4e520b": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "France",
+    "Mali",
+    "PARIS",
+    "Spain"
+   ]
+  },
+  "b-687e1effd269": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Iran"
+   ]
+  },
+  "b-cfc69af24e1d": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Missouri",
+    "US"
+   ]
+  },
+  "b-6d25dfafc406": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "South Africa"
+   ]
+  },
+  "b-7952121c4c72": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "UK"
+   ]
+  },
+  "b-c9c7d7522825": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Germany",
+    "Kyiv",
+    "Moscow",
+    "Russia",
+    "Ukraine",
+    "Zaporizhzhia"
+   ]
+  },
+  "b-d289a1b37cf7": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Hormuz",
+    "Iran",
+    "Washington"
+   ]
+  },
+  "b-954bb49e8e93": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Baidoa",
+    "Somalia",
+    "South West State"
+   ]
+  },
+  "b-0df18717b61e": {
+   "developments": [
+    5
+   ],
+   "lang": "en",
+   "places": [
+    "India",
+    "Iowa",
+    "US"
+   ]
+  },
+  "b-9d7da06167d7": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Russia",
+    "Ukraine"
+   ]
+  },
+  "b-3f307eb5a7ee": {
+   "developments": [
+    12
+   ],
+   "lang": "en",
+   "places": [
+    "US"
+   ]
+  },
+  "b-9b8b32101de8": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Turkey"
+   ]
+  },
+  "b-3a37d34be63f": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Iran",
+    "Tehran",
+    "US"
+   ]
+  },
+  "b-bc640329722e": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Croatia",
+    "Spain"
+   ]
+  },
+  "b-a6c5c12bf244": {
+   "developments": [
+    6
+   ],
+   "lang": "en",
+   "places": [
+    "Iran",
+    "Iraq",
+    "Najaf",
+    "US"
+   ]
+  },
+  "b-6c5e9a6a790e": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Australia",
+    "Beijing",
+    "China"
+   ]
+  },
+  "b-0d1e24ede095": {
+   "developments": [
+    6
+   ],
+   "lang": "en",
+   "places": [
+    "Iran",
+    "Iraq",
+    "Najaf",
+    "Tehran",
+    "US"
+   ]
+  },
+  "b-a4af874c5eac": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "India",
+    "US",
+    "Ukraine"
+   ]
+  },
+  "b-0633320f8e01": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Russia",
+    "Ukraine"
+   ]
+  },
+  "b-5ea56aab723d": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "US",
+    "Ukraine"
+   ]
+  },
+  "b-c746008c89ee": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Myanmar"
+   ]
+  },
+  "b-84d2b0741e1a": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "UK"
+   ]
+  },
+  "b-63b10f835e71": {
+   "developments": [
+    7
+   ],
+   "lang": "en",
+   "places": [
+    "France"
+   ]
+  },
+  "b-0115154e4b8c": {
+   "developments": [
+    8
+   ],
+   "lang": "en",
+   "places": [
+    "Abu Dhabi",
+    "Israel"
+   ]
+  },
+  "b-3137cf025754": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Cambridge",
+    "Egypt",
+    "Italy"
+   ]
+  },
+  "b-532360b31f86": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "US"
+   ]
+  },
+  "b-df170ba8afbf": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Nepal"
+   ]
+  },
+  "b-b400b3d5a1ed": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "China",
+    "Hong Kong",
+    "US"
+   ]
+  },
+  "b-1ff757b6dc06": {
+   "developments": [
+    5
+   ],
+   "lang": "en",
+   "places": [
+    "Iowa",
+    "US"
+   ]
+  },
+  "b-8d0b420e087a": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "California"
+   ]
+  },
+  "b-a7a36770caa6": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Turkey"
+   ]
+  },
+  "b-3fe0cdb24f02": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Gaza",
+    "Gaza City"
+   ]
+  },
+  "b-445783adb87f": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Israel Slovenia",
+    "Palestine",
+    "Slovenia"
+   ]
+  },
+  "b-6844f5643d75": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "South Sudan"
+   ]
+  },
+  "b-161f4ae0da98": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Bolivia",
+    "Colombia",
+    "Ecuador",
+    "Peru",
+    "US"
+   ]
+  },
+  "b-9d76a9fba40a": {
+   "developments": [
+    7
+   ],
+   "lang": "en",
+   "places": [
+    "France"
+   ]
+  },
+  "b-98af9c194fcf": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Atlanta",
+    "China",
+    "US",
+    "Zoo Atlanta"
+   ]
+  },
+  "b-bb70836fab7f": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "France 1-0 Nations League"
+   ]
+  },
+  "b-14e3b42d3b32": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Madrid"
+   ]
+  },
+  "b-e0278faedc3e": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Beijing",
+    "China",
+    "Cuba",
+    "Havana",
+    "Havana China",
+    "US",
+    "Washington"
+   ]
+  },
+  "b-7f6480948923": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "China",
+    "US"
+   ]
+  },
+  "b-cc183cabbac7": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "US"
+   ]
+  },
+  "b-fa8563af77d5": {
+   "developments": [
+    13
+   ],
+   "lang": "en",
+   "places": [
+    "US"
+   ]
+  },
+  "b-14f6d75a9266": {
+   "developments": [],
+   "lang": "en",
+   "places": []
+  },
+  "b-015386002504": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "UK",
+    "US"
+   ]
+  },
+  "b-b42c7b2032be": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "US"
+   ]
+  },
+  "b-dfaa73241bf8": {
+   "developments": [
+    8
+   ],
+   "lang": "en",
+   "places": [
+    "Israel",
+    "UAE"
+   ]
+  },
+  "b-a75b442337bd": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Beijing",
+    "China",
+    "US"
+   ]
+  },
+  "b-7abbdf871560": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "US",
+    "Washington"
+   ]
+  },
+  "b-d0a7777c8cd8": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "UK"
+   ]
+  },
+  "b-5fcae6a2f23e": {
+   "developments": [
+    4
+   ],
+   "lang": "en",
+   "places": [
+    "Baja California Sur",
+    "Cabo San Lucas",
+    "Mexico"
+   ]
+  },
+  "b-8adcd4a195ad": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Uganda"
+   ]
+  },
+  "b-899db901c948": {
+   "developments": [
+    2
+   ],
+   "lang": "en",
+   "places": []
+  },
+  "b-d93fa9820e25": {
+   "developments": [
+    6
+   ],
+   "lang": "en",
+   "places": [
+    "Iran",
+    "Tehran",
+    "US"
+   ]
+  },
+  "b-c71ec3af11cb": {
+   "developments": [],
+   "lang": "en",
+   "places": []
+  },
+  "b-08f80109ab56": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Abidjan",
+    "Africa"
+   ]
+  },
+  "b-94116a9815eb": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "China",
+    "Hong Kong"
+   ]
+  },
+  "b-e8594f8f936b": {
+   "developments": [],
+   "lang": "en",
+   "places": []
+  },
+  "b-483c81b60fe7": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "India"
+   ]
+  },
+  "b-a07f28751518": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "China",
+    "TH-618s"
+   ]
+  },
+  "b-65e61f7fce4d": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Hungary"
+   ]
+  },
+  "b-f04e4569c066": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "US"
+   ]
+  },
+  "b-637b3d5573c9": {
+   "developments": [
+    9
+   ],
+   "lang": "en",
+   "places": [
+    "Australia",
+    "Sydney"
+   ]
+  },
+  "b-d2125b9ecb70": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Spain"
+   ]
+  },
+  "b-ccd245360c78": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Beibu Gulf",
+    "China",
+    "Guangxi",
+    "Gulf of Tonkin",
+    "Hengzhou",
+    "Hong Kong",
+    "Pinglu Canal",
+    "Southeast Asia",
+    "Xijin"
+   ]
+  },
+  "b-68f10b0ae699": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Japan",
+    "Kumamoto",
+    "Kyushu Travel"
+   ]
+  },
+  "b-55f7952625ba": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Australia"
+   ]
+  },
+  "b-18ce5cb1983f": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "China"
+   ]
+  },
+  "b-24455c7023b2": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "China",
+    "Mars",
+    "US"
+   ]
+  },
+  "b-17c6186b6eff": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Araghchi",
+    "Hormuz",
+    "Iran",
+    "Qatar",
+    "Tehran",
+    "US"
+   ]
+  },
+  "b-d31fa9f7c961": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Tennessee"
+   ]
+  },
+  "b-f7d4b622f072": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "France"
+   ]
+  },
+  "b-df5443a4397e": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "China",
+    "Hong Kong"
+   ]
+  },
+  "b-a18797a56bac": {
+   "developments": [
+    14
+   ],
+   "lang": "en",
+   "places": [
+    "California",
+    "Dublin",
+    "San Francisco"
+   ]
+  },
+  "b-7ab9d4f9476b": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Kyiv",
+    "Russia",
+    "Ukraine"
+   ]
+  },
+  "b-63a8f4e5d385": {
+   "developments": [
+    12
+   ],
+   "lang": "en",
+   "places": [
+    "US"
+   ]
+  },
+  "b-cfe55b3ae7c5": {
+   "developments": [
+    15
+   ],
+   "lang": "en",
+   "places": [
+    "Argentina",
+    "Falkland Islands",
+    "UK"
+   ]
+  },
+  "b-e8ec3f6939db": {
+   "developments": [
+    14
+   ],
+   "lang": "en",
+   "places": []
+  },
+  "b-e9520f7a1679": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Canada",
+    "US"
+   ]
+  },
+  "b-cbc4a64a1656": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "China",
+    "Mengxiang",
+    "South China Sea"
+   ]
+  },
+  "b-6ee8d7276bc6": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Hong Kong"
+   ]
+  },
+  "b-99307cfc5d7b": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Australia"
+   ]
+  },
+  "b-5a7ace5b2eed": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "US"
+   ]
+  },
+  "b-9d8f4d73e686": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Ethiopia"
+   ]
+  },
+  "b-3eb6906b57a1": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Asia",
+    "Bangkok",
+    "Indonesia",
+    "Thailand"
+   ]
+  },
+  "b-477fe93f6767": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Saudi Arabia",
+    "US",
+    "Yemen"
+   ]
+  },
+  "b-095425559670": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Chiba",
+    "Japan",
+    "Tokyo"
+   ]
+  },
+  "b-ec1e7cad5883": {
+   "developments": [
+    13
+   ],
+   "lang": "en",
+   "places": []
+  },
+  "b-977b4fcde056": {
+   "developments": [
+    10
+   ],
+   "lang": "en",
+   "places": [
+    "Niger",
+    "Nigeria",
+    "Zamfara"
+   ]
+  },
+  "b-ac2e2701b595": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "China",
+    "US"
+   ]
+  },
+  "b-c2d13b848d14": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Manila"
+   ]
+  },
+  "b-abe5a491fa1d": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Australia",
+    "Norway",
+    "Vietnam"
+   ]
+  },
+  "b-96d4cc96bc63": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "China",
+    "Hong Kong"
+   ]
+  },
+  "b-0ad069167c5c": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Beijing",
+    "China",
+    "Japan"
+   ]
+  },
+  "b-b26c02100dbb": {
+   "developments": [
+    16
+   ],
+   "lang": "en",
+   "places": [
+    "Malaysia",
+    "Myanmar"
+   ]
+  },
+  "b-48899e837d69": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Botswana Democratic Republic",
+    "Congo",
+    "Tunisia"
+   ]
+  },
+  "b-9eaf7ff421e1": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Australia"
+   ]
+  },
+  "b-785e84a90dea": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Bangkok",
+    "Thailand"
+   ]
+  },
+  "b-1519691d1394": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Hong Kong",
+    "Shanghai"
+   ]
+  },
+  "b-9244faa26b60": {
+   "developments": [
+    16
+   ],
+   "lang": "en",
+   "places": [
+    "Kuala Lumpur",
+    "Malaysia",
+    "Myanmar"
+   ]
+  },
+  "b-3534ee35be4c": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Hong Kong",
+    "Shenzhen Kinwong"
+   ]
+  },
+  "b-ee3a990938c9": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Beijing",
+    "China",
+    "Japan",
+    "Tokyo"
+   ]
+  },
+  "b-d90ed8592c5c": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Iran",
+    "Iraq",
+    "Tehran",
+    "US"
+   ]
+  },
+  "b-23acff897a49": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Japan",
+    "South Korea"
+   ]
+  },
+  "b-99d2548a4186": {
+   "developments": [],
+   "lang": "en",
+   "places": []
+  },
+  "b-9a2b3be0acc1": {
+   "developments": [],
+   "lang": "en",
+   "places": []
+  },
+  "b-3316c5da9b9e": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "China",
+    "Hong Kong"
+   ]
+  },
+  "b-e85bca36ee8e": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Gaza"
+   ]
+  },
+  "b-1ccfac35d51d": {
+   "developments": [],
+   "lang": "en",
+   "places": []
+  },
+  "b-0341cd3fba08": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Beijing",
+    "Berlin",
+    "Brussels",
+    "China",
+    "France",
+    "Germany"
+   ]
+  },
+  "b-74c138ba2cd9": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Gaza",
+    "Gaza City",
+    "Israel"
+   ]
+  },
+  "b-7784f92fb4a1": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Pakistan"
+   ]
+  },
+  "b-89952f3a2670": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Gaza",
+    "Google Earth",
+    "Israel",
+    "Palestine"
+   ]
+  },
+  "b-32ea3aa557f1": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Israel",
+    "Palestine",
+    "West Bank"
+   ]
+  },
+  "b-c39d6366e860": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Forest City",
+    "Johor",
+    "Malaysia"
+   ]
+  },
+  "b-fd25a5aaa231": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Philippines"
+   ]
+  },
+  "b-94435e12499f": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "China",
+    "US"
+   ]
+  },
+  "b-175c09de94c4": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Golden Dome for America"
+   ]
+  },
+  "b-929eba31cd19": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Israel",
+    "Jalud",
+    "West Bank"
+   ]
+  },
+  "b-5e685c9a6edc": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Burkina Faso"
+   ]
+  },
+  "b-00ccbcc72d17": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "China"
+   ]
+  },
+  "b-4b08bec334c3": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Italy"
+   ]
+  },
+  "b-b5f1fd40af95": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "India",
+    "LPU"
+   ]
+  },
+  "b-2a124e6d6445": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Iran",
+    "Israel",
+    "Philippines",
+    "US"
+   ]
+  },
+  "b-8b8deaca352b": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Bogor",
+    "Indonesia",
+    "West Java"
+   ]
+  },
+  "b-7450f173f04f": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Iran",
+    "US"
+   ]
+  },
+  "b-ca943d59348e": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Ethiopia",
+    "Mekelle"
+   ]
+  },
+  "b-c4fb5cc3cff7": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Hong Kong",
+    "Pilkem Street"
+   ]
+  },
+  "b-2c0267279cd5": {
+   "developments": [],
+   "lang": "en",
+   "places": []
+  },
+  "b-a73dfed33860": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Silicon Valley",
+    "US"
+   ]
+  },
+  "b-773c738a7c02": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Palestine"
+   ]
+  },
+  "b-7137fbe9e1f0": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "China",
+    "Florida",
+    "UK",
+    "US"
+   ]
+  },
+  "b-ecff54014bcd": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "UK",
+    "US",
+    "Washington"
+   ]
+  },
+  "b-67a6fb0c7975": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Malaysia"
+   ]
+  },
+  "b-5876145bc5bf": {
+   "developments": [
+    15
+   ],
+   "lang": "en",
+   "places": [
+    "Argentina",
+    "Falklands",
+    "UK"
+   ]
+  },
+  "b-4b5e4dd55357": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "China"
+   ]
+  },
+  "b-89d356fd2694": {
+   "developments": [
+    16
+   ],
+   "lang": "en",
+   "places": [
+    "Malaysia"
+   ]
+  },
+  "b-7c617a10d6c2": {
+   "developments": [
+    11
+   ],
+   "lang": "en",
+   "places": [
+    "North Korea",
+    "Pyongyang",
+    "Seoul",
+    "South Korea"
+   ]
+  },
+  "b-78caf622a4d8": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "China"
+   ]
+  },
+  "b-fc10c8d93890": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Beijing",
+    "China"
+   ]
+  },
+  "b-9629e4cd9016": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Beijing",
+    "China",
+    "Shanghai"
+   ]
+  },
+  "b-406138838360": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Hong Kong"
+   ]
+  },
+  "b-f825c5aa36da": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Indonesia",
+    "Singapore"
+   ]
+  },
+  "b-89c9d2d6eb49": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Australia",
+    "Canberra",
+    "New Zealand",
+    "WELLINGTON"
+   ]
+  },
+  "b-d0258b05e559": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Besançon",
+    "France"
+   ]
+  },
+  "b-6570e601eacb": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Myanmar",
+    "Singapore"
+   ]
+  },
+  "b-5ed6684ab1f9": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Israel",
+    "Lebanon"
+   ]
+  },
+  "b-9bfc960c28a0": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Philippines",
+    "South China Sea"
+   ]
+  },
+  "b-0439f1466594": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Israel",
+    "Palestine"
+   ]
+  },
+  "b-d397c312f959": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Beijing",
+    "Chengdu",
+    "China",
+    "Sichuan"
+   ]
+  },
+  "b-16eb81a80abf": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "China",
+    "Europe",
+    "India",
+    "Israel",
+    "Middle East",
+    "Saudi Arabia",
+    "UAE",
+    "US"
+   ]
+  },
+  "b-5957c46b0031": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Ireland",
+    "Israel"
+   ]
+  },
+  "b-7404c7e20ad8": {
+   "developments": [],
+   "lang": "en",
+   "places": []
+  },
+  "b-6854a0bb10df": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Hong Kong",
+    "Lantau Island"
+   ]
+  },
+  "b-48b915a7dbfe": {
+   "developments": [],
+   "lang": "en",
+   "places": []
+  },
+  "b-faf3df1e7bae": {
+   "developments": [
+    16
+   ],
+   "lang": "en",
+   "places": [
+    "Malaysia",
+    "Myanmar"
+   ]
+  },
+  "b-6a0bb981745d": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Hong Kong",
+    "Hong Kong International Airport",
+    "Manila",
+    "Philippines"
+   ]
+  },
+  "b-840a22b20fd7": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Asia",
+    "Disneyland",
+    "Hong Kong"
+   ]
+  },
+  "b-03590c16cfb4": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Argentina"
+   ]
+  },
+  "b-81f833fbbfac": {
+   "developments": [],
+   "lang": "en",
+   "places": [
+    "Tajikistan"
+   ]
+  }
+ }
+}

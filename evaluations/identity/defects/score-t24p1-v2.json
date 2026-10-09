@@ -1,0 +1,1204 @@
+{
+ "label": "t24p1-v2",
+ "defect_transitions": {
+  "AMBIGUOUS None->None": 1,
+  "CORRECT_BEHAVIOR True->True": 23,
+  "CROSS_LANGUAGE_MISS False->False": 43,
+  "OVERMERGE False->False": 34,
+  "OVERMERGE False->True": 8,
+  "SAME_LANGUAGE_RECALL_MISS False->False": 17,
+  "SPLIT False->False": 2
+ },
+ "defect_rows": [
+  {
+   "case": "D001",
+   "class": "CORRECT_BEHAVIOR",
+   "refs": [
+    "CT A006 (control)"
+   ],
+   "before": true,
+   "after": true
+  },
+  {
+   "case": "D002",
+   "class": "CORRECT_BEHAVIOR",
+   "refs": [
+    "CT A024 (control)"
+   ],
+   "before": true,
+   "after": true
+  },
+  {
+   "case": "D003",
+   "class": "CORRECT_BEHAVIOR",
+   "refs": [
+    "CT A027 (control)"
+   ],
+   "before": true,
+   "after": true
+  },
+  {
+   "case": "D004",
+   "class": "OVERMERGE",
+   "refs": [
+    "IG A002"
+   ],
+   "before": false,
+   "after": true
+  },
+  {
+   "case": "D005",
+   "class": "OVERMERGE",
+   "refs": [
+    "IG A021"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D006",
+   "class": "OVERMERGE",
+   "refs": [
+    "IG A022"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D007",
+   "class": "AMBIGUOUS",
+   "refs": [
+    "IG A028"
+   ],
+   "before": null,
+   "after": null
+  },
+  {
+   "case": "D008",
+   "class": "OVERMERGE",
+   "refs": [
+    "RB R013 (NO_RELATION)"
+   ],
+   "before": false,
+   "after": true
+  },
+  {
+   "case": "D009",
+   "class": "OVERMERGE",
+   "refs": [
+    "RB R029 (reaction_to)",
+    "IG A023"
+   ],
+   "before": false,
+   "after": true
+  },
+  {
+   "case": "D010",
+   "class": "OVERMERGE",
+   "refs": [
+    "RB R060 (NO_RELATION)",
+    "IG A013"
+   ],
+   "before": false,
+   "after": true
+  },
+  {
+   "case": "D011",
+   "class": "OVERMERGE",
+   "refs": [
+    "RB R082 (same_calamity_lifecycle)"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D012",
+   "class": "OVERMERGE",
+   "refs": [
+    "RB R030 (same_calamity_lifecycle)"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D013",
+   "class": "CORRECT_BEHAVIOR",
+   "refs": [
+    "CT B003 (control)"
+   ],
+   "before": true,
+   "after": true
+  },
+  {
+   "case": "D014",
+   "class": "SAME_LANGUAGE_RECALL_MISS",
+   "refs": [
+    "IG B002"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D015",
+   "class": "SAME_LANGUAGE_RECALL_MISS",
+   "refs": [
+    "IG B004"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D016",
+   "class": "SAME_LANGUAGE_RECALL_MISS",
+   "refs": [
+    "IG B007"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D017",
+   "class": "OVERMERGE",
+   "refs": [
+    "IG B008"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D018",
+   "class": "OVERMERGE",
+   "refs": [
+    "IG B011"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D019",
+   "class": "OVERMERGE",
+   "refs": [
+    "RB R014 (reaction_to)"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D020",
+   "class": "OVERMERGE",
+   "refs": [
+    "RB R031 (NO_RELATION)"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D021",
+   "class": "OVERMERGE",
+   "refs": [
+    "RB R046 (same_convened_event)"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D022",
+   "class": "OVERMERGE",
+   "refs": [
+    "RB R115 (NO_RELATION)"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D023",
+   "class": "OVERMERGE",
+   "refs": [
+    "RB R132 (co_caused_with)"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D024",
+   "class": "OVERMERGE",
+   "refs": [
+    "RB T018 (reaction_to)"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D025",
+   "class": "OVERMERGE",
+   "refs": [
+    "RB T029 (NO_RELATION)"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D026",
+   "class": "OVERMERGE",
+   "refs": [
+    "RB T037 (follow_up_to)"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D027",
+   "class": "OVERMERGE",
+   "refs": [
+    "RB T045 (NO_RELATION)"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D028",
+   "class": "OVERMERGE",
+   "refs": [
+    "RB R100 (same_convened_event)"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D029",
+   "class": "OVERMERGE",
+   "refs": [
+    "RB T009 (commentary_on)"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D030",
+   "class": "OVERMERGE",
+   "refs": [
+    "RB T022 (NO_RELATION)"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D031",
+   "class": "OVERMERGE",
+   "refs": [
+    "RB T023 (NO_RELATION)"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D032",
+   "class": "CORRECT_BEHAVIOR",
+   "refs": [
+    "CT C014 (control)"
+   ],
+   "before": true,
+   "after": true
+  },
+  {
+   "case": "D033",
+   "class": "CORRECT_BEHAVIOR",
+   "refs": [
+    "CT C019 (control)"
+   ],
+   "before": true,
+   "after": true
+  },
+  {
+   "case": "D034",
+   "class": "CORRECT_BEHAVIOR",
+   "refs": [
+    "CT C025 (control)"
+   ],
+   "before": true,
+   "after": true
+  },
+  {
+   "case": "D035",
+   "class": "CORRECT_BEHAVIOR",
+   "refs": [
+    "CT C035 (control)"
+   ],
+   "before": true,
+   "after": true
+  },
+  {
+   "case": "D036",
+   "class": "CORRECT_BEHAVIOR",
+   "refs": [
+    "CT C043 (control)"
+   ],
+   "before": true,
+   "after": true
+  },
+  {
+   "case": "D037",
+   "class": "CORRECT_BEHAVIOR",
+   "refs": [
+    "CT C044 (control)"
+   ],
+   "before": true,
+   "after": true
+  },
+  {
+   "case": "D038",
+   "class": "CORRECT_BEHAVIOR",
+   "refs": [
+    "CT C056 (control)"
+   ],
+   "before": true,
+   "after": true
+  },
+  {
+   "case": "D039",
+   "class": "CORRECT_BEHAVIOR",
+   "refs": [
+    "CT C070 (control)"
+   ],
+   "before": true,
+   "after": true
+  },
+  {
+   "case": "D040",
+   "class": "CORRECT_BEHAVIOR",
+   "refs": [
+    "CT C071 (control)"
+   ],
+   "before": true,
+   "after": true
+  },
+  {
+   "case": "D041",
+   "class": "CORRECT_BEHAVIOR",
+   "refs": [
+    "CT C072 (control)"
+   ],
+   "before": true,
+   "after": true
+  },
+  {
+   "case": "D042",
+   "class": "CORRECT_BEHAVIOR",
+   "refs": [
+    "CT C086 (control)"
+   ],
+   "before": true,
+   "after": true
+  },
+  {
+   "case": "D043",
+   "class": "CORRECT_BEHAVIOR",
+   "refs": [
+    "CT C089 (control)"
+   ],
+   "before": true,
+   "after": true
+  },
+  {
+   "case": "D044",
+   "class": "CORRECT_BEHAVIOR",
+   "refs": [
+    "CT C100 (control)"
+   ],
+   "before": true,
+   "after": true
+  },
+  {
+   "case": "D045",
+   "class": "CORRECT_BEHAVIOR",
+   "refs": [
+    "CT C109 (control)"
+   ],
+   "before": true,
+   "after": true
+  },
+  {
+   "case": "D046",
+   "class": "CORRECT_BEHAVIOR",
+   "refs": [
+    "CT C110 (control)"
+   ],
+   "before": true,
+   "after": true
+  },
+  {
+   "case": "D047",
+   "class": "CORRECT_BEHAVIOR",
+   "refs": [
+    "CT C114 (control)"
+   ],
+   "before": true,
+   "after": true
+  },
+  {
+   "case": "D048",
+   "class": "OVERMERGE",
+   "refs": [
+    "IG C002"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D049",
+   "class": "SAME_LANGUAGE_RECALL_MISS",
+   "refs": [
+    "IG C005"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D050",
+   "class": "CROSS_LANGUAGE_MISS",
+   "refs": [
+    "IG C006"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D051",
+   "class": "OVERMERGE",
+   "refs": [
+    "IG C007"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D052",
+   "class": "OVERMERGE",
+   "refs": [
+    "IG C012"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D053",
+   "class": "SAME_LANGUAGE_RECALL_MISS",
+   "refs": [
+    "IG C013"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D054",
+   "class": "OVERMERGE",
+   "refs": [
+    "IG C017"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D055",
+   "class": "OVERMERGE",
+   "refs": [
+    "IG C022"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D056",
+   "class": "OVERMERGE",
+   "refs": [
+    "IG C026",
+    "IG G10"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D057",
+   "class": "SAME_LANGUAGE_RECALL_MISS",
+   "refs": [
+    "IG C034"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D058",
+   "class": "OVERMERGE",
+   "refs": [
+    "IG C037"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D059",
+   "class": "SAME_LANGUAGE_RECALL_MISS",
+   "refs": [
+    "IG C051"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D060",
+   "class": "SAME_LANGUAGE_RECALL_MISS",
+   "refs": [
+    "IG C064"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D061",
+   "class": "SAME_LANGUAGE_RECALL_MISS",
+   "refs": [
+    "IG C066"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D062",
+   "class": "OVERMERGE",
+   "refs": [
+    "IG C073"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D063",
+   "class": "SAME_LANGUAGE_RECALL_MISS",
+   "refs": [
+    "IG C076"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D064",
+   "class": "OVERMERGE",
+   "refs": [
+    "IG C079"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D065",
+   "class": "SAME_LANGUAGE_RECALL_MISS",
+   "refs": [
+    "IG C092"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D066",
+   "class": "OVERMERGE",
+   "refs": [
+    "IG C094"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D067",
+   "class": "SAME_LANGUAGE_RECALL_MISS",
+   "refs": [
+    "IG C096"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D068",
+   "class": "SAME_LANGUAGE_RECALL_MISS",
+   "refs": [
+    "IG C103"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D069",
+   "class": "CROSS_LANGUAGE_MISS",
+   "refs": [
+    "IG C104"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D070",
+   "class": "OVERMERGE",
+   "refs": [
+    "IG C105"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D071",
+   "class": "OVERMERGE",
+   "refs": [
+    "IG C106"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D072",
+   "class": "OVERMERGE",
+   "refs": [
+    "IG C112"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D073",
+   "class": "SAME_LANGUAGE_RECALL_MISS",
+   "refs": [
+    "IG C113"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D074",
+   "class": "OVERMERGE",
+   "refs": [
+    "IG C115"
+   ],
+   "before": false,
+   "after": true
+  },
+  {
+   "case": "D075",
+   "class": "SAME_LANGUAGE_RECALL_MISS",
+   "refs": [
+    "IG G01"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D076",
+   "class": "CROSS_LANGUAGE_MISS",
+   "refs": [
+    "IG G02"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D077",
+   "class": "CROSS_LANGUAGE_MISS",
+   "refs": [
+    "IG G03"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D078",
+   "class": "SAME_LANGUAGE_RECALL_MISS",
+   "refs": [
+    "IG G08"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D079",
+   "class": "SAME_LANGUAGE_RECALL_MISS",
+   "refs": [
+    "IG G09"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D080",
+   "class": "CROSS_LANGUAGE_MISS",
+   "refs": [
+    "IG V001"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D081",
+   "class": "CROSS_LANGUAGE_MISS",
+   "refs": [
+    "IG V003"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D082",
+   "class": "CROSS_LANGUAGE_MISS",
+   "refs": [
+    "IG V010"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D083",
+   "class": "CROSS_LANGUAGE_MISS",
+   "refs": [
+    "IG V011"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D084",
+   "class": "CROSS_LANGUAGE_MISS",
+   "refs": [
+    "IG V014"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D085",
+   "class": "CROSS_LANGUAGE_MISS",
+   "refs": [
+    "IG V020"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D086",
+   "class": "CROSS_LANGUAGE_MISS",
+   "refs": [
+    "IG V028"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D087",
+   "class": "CROSS_LANGUAGE_MISS",
+   "refs": [
+    "IG V032"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D088",
+   "class": "CROSS_LANGUAGE_MISS",
+   "refs": [
+    "IG V034"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D089",
+   "class": "CROSS_LANGUAGE_MISS",
+   "refs": [
+    "IG V039"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D090",
+   "class": "CROSS_LANGUAGE_MISS",
+   "refs": [
+    "IG V040"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D091",
+   "class": "CROSS_LANGUAGE_MISS",
+   "refs": [
+    "IG V043"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D092",
+   "class": "CROSS_LANGUAGE_MISS",
+   "refs": [
+    "IG V046"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D093",
+   "class": "CROSS_LANGUAGE_MISS",
+   "refs": [
+    "IG V048"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D094",
+   "class": "CROSS_LANGUAGE_MISS",
+   "refs": [
+    "IG V058"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D095",
+   "class": "CROSS_LANGUAGE_MISS",
+   "refs": [
+    "IG V059"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D096",
+   "class": "CROSS_LANGUAGE_MISS",
+   "refs": [
+    "IG V060"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D097",
+   "class": "CORRECT_BEHAVIOR",
+   "refs": [
+    "CT T008 (blocked relation pair, correct merge)"
+   ],
+   "before": true,
+   "after": true
+  },
+  {
+   "case": "D098",
+   "class": "CORRECT_BEHAVIOR",
+   "refs": [
+    "CT T034 (blocked relation pair, correct merge)"
+   ],
+   "before": true,
+   "after": true
+  },
+  {
+   "case": "D099",
+   "class": "CORRECT_BEHAVIOR",
+   "refs": [
+    "CT T041 (blocked relation pair, correct merge)"
+   ],
+   "before": true,
+   "after": true
+  },
+  {
+   "case": "D100",
+   "class": "OVERMERGE",
+   "refs": [
+    "IG G07"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D101",
+   "class": "OVERMERGE",
+   "refs": [
+    "RB T012 (follow_up_to)"
+   ],
+   "before": false,
+   "after": true
+  },
+  {
+   "case": "D102",
+   "class": "OVERMERGE",
+   "refs": [
+    "RB T013 (follow_up_to)"
+   ],
+   "before": false,
+   "after": true
+  },
+  {
+   "case": "D103",
+   "class": "OVERMERGE",
+   "refs": [
+    "RB T014 (follow_up_to)"
+   ],
+   "before": false,
+   "after": true
+  },
+  {
+   "case": "D104",
+   "class": "OVERMERGE",
+   "refs": [
+    "RB T040 (follow_up_to)"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D105",
+   "class": "CROSS_LANGUAGE_MISS",
+   "refs": [
+    "IG G12"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D106",
+   "class": "CROSS_LANGUAGE_MISS",
+   "refs": [
+    "IG G13"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D107",
+   "class": "CROSS_LANGUAGE_MISS",
+   "refs": [
+    "IG G14"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D108",
+   "class": "CROSS_LANGUAGE_MISS",
+   "refs": [
+    "IG V005"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D109",
+   "class": "CROSS_LANGUAGE_MISS",
+   "refs": [
+    "IG V007"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D110",
+   "class": "CROSS_LANGUAGE_MISS",
+   "refs": [
+    "IG V009"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D111",
+   "class": "CROSS_LANGUAGE_MISS",
+   "refs": [
+    "IG V019"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D112",
+   "class": "CROSS_LANGUAGE_MISS",
+   "refs": [
+    "IG V024"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D113",
+   "class": "CROSS_LANGUAGE_MISS",
+   "refs": [
+    "IG V026"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D114",
+   "class": "CROSS_LANGUAGE_MISS",
+   "refs": [
+    "IG V033"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D115",
+   "class": "CROSS_LANGUAGE_MISS",
+   "refs": [
+    "IG V045"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D116",
+   "class": "CROSS_LANGUAGE_MISS",
+   "refs": [
+    "IG V051"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D117",
+   "class": "CROSS_LANGUAGE_MISS",
+   "refs": [
+    "IG V054"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D118",
+   "class": "CROSS_LANGUAGE_MISS",
+   "refs": [
+    "IG V056"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D119",
+   "class": "CROSS_LANGUAGE_MISS",
+   "refs": [
+    "RT P123"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D120",
+   "class": "CROSS_LANGUAGE_MISS",
+   "refs": [
+    "RT U001"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D121",
+   "class": "CROSS_LANGUAGE_MISS",
+   "refs": [
+    "RT U116"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D122",
+   "class": "CROSS_LANGUAGE_MISS",
+   "refs": [
+    "RT U124"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D123",
+   "class": "SPLIT",
+   "refs": [
+    "RT U131"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D124",
+   "class": "CROSS_LANGUAGE_MISS",
+   "refs": [
+    "RT U151"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D125",
+   "class": "CROSS_LANGUAGE_MISS",
+   "refs": [
+    "RT P118"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D126",
+   "class": "CROSS_LANGUAGE_MISS",
+   "refs": [
+    "RT P125"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D127",
+   "class": "SPLIT",
+   "refs": [
+    "RT U110"
+   ],
+   "before": false,
+   "after": false
+  },
+  {
+   "case": "D128",
+   "class": "CROSS_LANGUAGE_MISS",
+   "refs": [
+    "RT U143"
+   ],
+   "before": false,
+   "after": false
+  }
+ ],
+ "gold_correct": {
+  "before": 157,
+  "after": 161,
+  "scored": 232
+ },
+ "gold_changed": [
+  {
+   "case": "A002",
+   "label": "DIFFERENT_DEVELOPMENT",
+   "window": "2026-08-21",
+   "before": false,
+   "after": true
+  },
+  {
+   "case": "A013",
+   "label": "DIFFERENT_DEVELOPMENT",
+   "window": "2026-08-21",
+   "before": false,
+   "after": true
+  },
+  {
+   "case": "A023",
+   "label": "DIFFERENT_DEVELOPMENT",
+   "window": "2026-08-21",
+   "before": false,
+   "after": true
+  },
+  {
+   "case": "C115",
+   "label": "DIFFERENT_DEVELOPMENT",
+   "window": "2026-09-30-multilingual",
+   "before": false,
+   "after": true
+  }
+ ]
+}

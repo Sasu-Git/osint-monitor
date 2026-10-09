@@ -69,6 +69,9 @@ development_segmentation:
     max_hours: 24                 # occurrence only on explicit evidence: within 24 h, no place conflict, and a
     min_shared_anchors: 1         # specific named entity in common (not a state, a leader, an outlet or a
     use_cited_source: true        # generic label) or the same cited source
+  max_occurrence_span_hours: null # T24 (a Development's reports span at most N h) is implemented but OFF: at 24 h it
+                                  # cut one-occurrence pairs 32-34 h apart in the Phase 2 holdout
+                                  # (evaluations/identity/defects/followup-results.md)
 
 # Lexical identity evidence (osint_monitor/processors/lexical.py). Production has one lexical link
 # rule: two items from the same outlet link only when their headlines are near-identical (story
