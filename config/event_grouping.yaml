@@ -94,3 +94,8 @@ cross_language:
   model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
   min_cosine: 0.60
   max_hours: 24
+  # Acceptance guard (evaluations/identity/xlang-guard-tuning-plan.md). These values are the original stage.
+  require_anchor_classes: 1     # G1: distinct anchor classes (actor, place, number) a pair must share
+  broad_anchor_units: null      # G2: an anchor or place in more than this many units of the run is not decisive
+  direct_links_only: false      # G3: units merge only through direct links, never through a chain
+  exact_places: false           # G4: a place anchor needs the same place; containment does not count

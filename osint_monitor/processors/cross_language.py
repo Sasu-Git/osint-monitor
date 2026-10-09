@@ -25,6 +25,7 @@ from __future__ import annotations
 import logging
 import re
 import threading
+from collections import Counter
 from dataclasses import dataclass, field
 from datetime import datetime
 from itertools import combinations
@@ -96,21 +97,60 @@ def specific_places_compatible(a: set[str], b: set[str], geo) -> list[str]:
     return [f"{x}~{y}" for x in sorted(a) for y in sorted(b) if geo.same_or_contains(x, y)]
 
 
-def judge(a: Unit, b: Unit, cosine: float, geo, model_tag: str) -> XLink:
+@dataclass(frozen=True)
+class Guard:
+    """Acceptance guard switches (CrossLanguageConfig; the defaults are the original stage) and, for G2, the anchors
+    and places that are broad in this run."""
+    require_anchor_classes: int = 1
+    exact_places: bool = False
+    broad_anchors: frozenset = frozenset()
+    broad_places: frozenset = frozenset()
+
+    @classmethod
+    def of(cls, cl, units: list[Unit] | None = None) -> "Guard":
+        broad_a, broad_p = broad_terms(units or [], cl.broad_anchor_units)
+        return cls(cl.require_anchor_classes, cl.exact_places, broad_a, broad_p)
+
+
+def broad_terms(units: list[Unit], k: int | None) -> tuple[frozenset, frozenset]:
+    """G2: anchors and places that occur in more than ``k`` units of the run (a storyline, not one occurrence)."""
+    if k is None:
+        return frozenset(), frozenset()
+    anchors, places = Counter(), Counter()
+    for u in units:
+        anchors.update(u.anchors)
+        places.update(u.places)
+    return (frozenset(x for x, n in anchors.items() if n > k), frozenset(x for x, n in places.items() if n > k))
+
+
+def judge(a: Unit, b: Unit, cosine: float, geo, model_tag: str, guard: Guard | None = None) -> XLink:
+    g = guard or Guard()
     evidence = [f"multilingual cosine {cosine:.2f} ({model_tag})"]
     # only gazetteer-known places can conflict: multilingual NER emits noisy LOC spans ("gobierno", "regno")
     if a.places and b.places and not specific_places_compatible(a.places, b.places, geo):
         return XLink(a, b, cosine, False, evidence + [f"place conflict {sorted(a.places)} / {sorted(b.places)}"])
     shared_anchor = sorted(a.anchors & b.anchors)
-    shared_place = specific_places_compatible(a.places, b.places, geo)
+    if g.exact_places:
+        shared_place = [f"{x}~{x}" for x in sorted(a.places & b.places)]
+    else:
+        shared_place = specific_places_compatible(a.places, b.places, geo)
     shared_number = sorted(a.numbers & b.numbers)
+    broad = [x for x in shared_anchor if x in g.broad_anchors] + \
+            [p for p in shared_place if set(p.split("~")) & g.broad_places]
+    shared_anchor = [x for x in shared_anchor if x not in g.broad_anchors]
+    shared_place = [p for p in shared_place if not set(p.split("~")) & g.broad_places]
     if shared_anchor:
         evidence.append(f"shared anchors {shared_anchor[:4]}")
     if shared_place:
         evidence.append(f"shared specific places {shared_place[:4]}")
     if shared_number:
         evidence.append(f"shared numbers {shared_number[:4]}")
-    return XLink(a, b, cosine, bool(shared_anchor or shared_place or shared_number), evidence)
+    if broad:
+        evidence.append(f"broad, not decisive {broad[:4]}")
+    classes = sum(1 for c in (shared_anchor, shared_place, shared_number) if c)
+    if classes and classes < g.require_anchor_classes:
+        evidence.append(f"{classes} anchor class(es), {g.require_anchor_classes} required")
+    return XLink(a, b, cosine, classes >= max(1, g.require_anchor_classes), evidence)
 
 
 def build_units(session, groups: list[list[int]], singles: list[int], config) -> list[Unit]:
@@ -167,6 +207,7 @@ def build_units(session, groups: list[list[int]], singles: list[int], config) ->
 def propose(units: list[Unit], config, geo) -> list[XLink]:
     cl = config.cross_language
     tag = f"{cl.model}@{(revision_of(cl.model) or '?')[:8]}"
+    guard = Guard.of(cl, units)
     out = []
     for a, b in combinations(units, 2):
         if a.langs & b.langs or a.vector is None or b.vector is None:
@@ -175,7 +216,7 @@ def propose(units: list[Unit], config, geo) -> list[XLink]:
             continue
         cos = float(a.vector @ b.vector)
         if cos >= cl.min_cosine:
-            out.append(judge(a, b, cos, geo, tag))
+            out.append(judge(a, b, cos, geo, tag, guard))
     return out
 
 
@@ -185,6 +226,54 @@ def link_groups(session, groups: list[list[int]], singles: list[int], config) ->
     from osint_monitor.processors.development_segmentation import gazetteer
     units = build_units(session, groups, singles, config)
     links = propose(units, config, gazetteer(False))
+    for l in links:
+        logger.info("Cross-language %s: %s <-> %s; %s", "LINK" if l.accepted else "candidate rejected",
+                    l.a.items[:3], l.b.items[:3], "; ".join(l.evidence))
+    return merge_units(units, links, config.cross_language.direct_links_only)
+
+
+def _cross(a: Unit, b: Unit) -> bool:
+    return not (a.langs & b.langs)
+
+
+def direct_links(units: list[Unit], accepted: list[XLink]) -> list[XLink]:
+    """G3: the accepted links that merge units only through direct support. A component of three or more units is
+    kept whole when every cross-language unit pair in it has an accepted link; otherwise its links are reconsidered
+    in descending cosine order and a link is kept only if every cross-language pair of the component it creates is
+    still directly linked (plan amendment 1)."""
+    index = {id(u): n for n, u in enumerate(units)}
+    linked = {frozenset((index[id(l.a)], index[id(l.b)])) for l in accepted}
+
+    def clique(members: set[int]) -> bool:
+        return all(frozenset((x, y)) in linked for x, y in combinations(sorted(members), 2)
+                   if _cross(units[x], units[y]))
+
+    comp_of: dict[int, set[int]] = {}
+    for l in accepted:                                      # components of the accepted links
+        x, y = index[id(l.a)], index[id(l.b)]
+        merged = comp_of.get(x, {x}) | comp_of.get(y, {y})
+        for m in merged:
+            comp_of[m] = merged
+    kept: list[XLink] = []
+    whole = {frozenset(c) for c in comp_of.values() if clique(c)}
+    current: dict[int, set[int]] = {}
+    for l in sorted(accepted, key=lambda l: (-l.cosine, index[id(l.a)], index[id(l.b)])):
+        x, y = index[id(l.a)], index[id(l.b)]
+        if frozenset(comp_of[x]) in whole:
+            kept.append(l)
+            continue
+        merged = current.get(x, {x}) | current.get(y, {y})
+        if clique(merged):
+            for m in merged:
+                current[m] = merged
+            kept.append(l)
+    order = {id(l): n for n, l in enumerate(accepted)}
+    return sorted(kept, key=lambda l: order[id(l)])
+
+
+def merge_units(units: list[Unit], links: list[XLink], direct_only: bool = False
+                ) -> tuple[list[list[int]], dict[int, list]]:
+    """Merge units joined by accepted links (G3: direct links only). Returns (groups, xlang) as ``link_groups``."""
     parent = list(range(len(units)))
     index = {id(u): n for n, u in enumerate(units)}
 
@@ -194,9 +283,8 @@ def link_groups(session, groups: list[list[int]], singles: list[int], config) ->
             x = parent[x]
         return x
     accepted = [l for l in links if l.accepted]
-    for l in links:
-        logger.info("Cross-language %s: %s <-> %s; %s", "LINK" if l.accepted else "candidate rejected",
-                    l.a.items[:3], l.b.items[:3], "; ".join(l.evidence))
+    if direct_only:
+        accepted = direct_links(units, accepted)
     for l in accepted:
         parent[find(index[id(l.a)])] = find(index[id(l.b)])
     merged: dict[int, list[int]] = {}

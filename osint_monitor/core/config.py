@@ -321,6 +321,11 @@ class CrossLanguageConfig(BaseModel):
     model: str = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
     min_cosine: float = 0.60
     max_hours: float = 24
+    # acceptance guard (evaluations/identity/xlang-guard-tuning-plan.md); the defaults are the original stage
+    require_anchor_classes: int = 1           # G1: distinct anchor classes (actor, place, number) a pair must share
+    broad_anchor_units: Optional[int] = None  # G2: an anchor in more than this many units of the run is not decisive
+    direct_links_only: bool = False           # G3: units merge only through direct links, never through a chain
+    exact_places: bool = False                # G4: a place anchor needs the same place; containment does not count
 
 
 class EventGroupingConfig(BaseModel):

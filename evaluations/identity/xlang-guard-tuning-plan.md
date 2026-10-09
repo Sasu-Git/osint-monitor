@@ -118,3 +118,26 @@ Outcomes:
   thresholds with that in mind; they are set as counts for that reason.
 - Stage-added precision is measured on labelled pairs only; unlabelled accepted links (item 4 above) are reported
   but not scored.
+
+## Amendment 1 (2026-10-09, before any experiment ran)
+
+Owner approval of the thresholds as written, with two clarifications:
+
+- "Stage-added false merges on rev4 additions ≤ 2" counts only false merges **added by the cross-language stage**
+  (DIFFERENT pairs together with the stage on and apart with it off). Pre-existing same-language errors (for
+  example G07, which production also merges) do not count.
+- "Zero new false merges on the Phase 2 identity gold" means no DIFFERENT pair together with the stage on that is
+  apart in the **stage-off** run of the same code. Pre-existing Phase 2 errors do not count.
+
+Implementation precision for G3, fixed before the runs: when a merged component of three or more units fails the
+direct-support test, its accepted links are reconsidered in descending cosine order (ties by unit order). A link is
+kept only if, after the merge it causes, every cross-language unit pair in the resulting component still has a
+direct accepted link. This keeps each unit's highest-cosine link wherever that link does not create a chain, and
+never merges two units that only an intermediate unit connects.
+
+## Amendment 2 (2026-10-09, before any experiment ran)
+
+Choice of `k` for E5 and E7 when the selection rule does not decide it (neither E2a nor E2b qualifies, or both
+qualify with equal true merges): the `k` with fewer stage-added false merges (rev4 additions plus new Phase 2 false
+merges), then more stage-added true merges, then `k = 3`. The stage-off baseline for every experiment is one
+stage-off replay of the same code (the guard switches do not act when the stage is disabled).
