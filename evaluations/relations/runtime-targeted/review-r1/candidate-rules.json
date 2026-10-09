@@ -1,0 +1,226 @@
+{
+ "P101": {
+  "targeted": "reaction_to",
+  "rank": 31,
+  "cosine": 0.55,
+  "window": "2026-10-08-live",
+  "eligible": 48
+ },
+ "P102": {
+  "targeted": "reaction_to",
+  "rank": 16,
+  "cosine": 0.584,
+  "window": "2026-10-05-live",
+  "eligible": 48
+ },
+ "P103": {
+  "targeted": "reaction_to",
+  "rank": 15,
+  "cosine": 0.585,
+  "window": "2026-10-08-live",
+  "eligible": 48
+ },
+ "P104": {
+  "targeted": "reaction_to",
+  "rank": 17,
+  "cosine": 0.582,
+  "window": "2026-10-08-live",
+  "eligible": 48
+ },
+ "P105": {
+  "targeted": "reaction_to",
+  "rank": 30,
+  "cosine": 0.55,
+  "window": "2026-10-08-live",
+  "eligible": 48
+ },
+ "P106": {
+  "targeted": "reaction_to",
+  "rank": 14,
+  "cosine": 0.598,
+  "window": "2026-10-08-live",
+  "eligible": 48
+ },
+ "P107": {
+  "targeted": "reaction_to",
+  "rank": 3,
+  "cosine": 0.716,
+  "window": "2026-10-08-live",
+  "eligible": 48
+ },
+ "P108": {
+  "targeted": "reaction_to",
+  "rank": 4,
+  "cosine": 0.695,
+  "window": "2026-10-05-live",
+  "eligible": 48
+ },
+ "P109": {
+  "targeted": "reaction_to",
+  "rank": 13,
+  "cosine": 0.598,
+  "window": "2026-10-08-live",
+  "eligible": 48
+ },
+ "P110": {
+  "targeted": "reaction_to",
+  "rank": 12,
+  "cosine": 0.605,
+  "window": "2026-10-08-live",
+  "eligible": 48
+ },
+ "P111": {
+  "targeted": "reaction_to",
+  "rank": 26,
+  "cosine": 0.566,
+  "window": "2026-10-08-live",
+  "eligible": 48
+ },
+ "P112": {
+  "targeted": "reaction_to",
+  "rank": 2,
+  "cosine": 0.725,
+  "window": "2026-10-05-live",
+  "eligible": 48
+ },
+ "P113": {
+  "targeted": "reaction_to",
+  "rank": 22,
+  "cosine": 0.569,
+  "window": "2026-10-05-live",
+  "eligible": 48
+ },
+ "P114": {
+  "targeted": "reaction_to",
+  "rank": 7,
+  "cosine": 0.638,
+  "window": "2026-10-08-live",
+  "eligible": 48
+ },
+ "P115": {
+  "targeted": "reaction_to",
+  "rank": 19,
+  "cosine": 0.574,
+  "window": "2026-10-08-live",
+  "eligible": 48
+ },
+ "P116": {
+  "targeted": "reaction_to",
+  "rank": 9,
+  "cosine": 0.624,
+  "window": "2026-10-05-live",
+  "eligible": 48
+ },
+ "P117": {
+  "targeted": "reaction_to",
+  "rank": 29,
+  "cosine": 0.557,
+  "window": "2026-10-08-live",
+  "eligible": 48
+ },
+ "P118": {
+  "targeted": "reaction_to",
+  "rank": 23,
+  "cosine": 0.568,
+  "window": "2026-10-08-live",
+  "eligible": 48
+ },
+ "P119": {
+  "targeted": "reaction_to",
+  "rank": 5,
+  "cosine": 0.647,
+  "window": "2026-10-05-live",
+  "eligible": 48
+ },
+ "P120": {
+  "targeted": "same_calamity_lifecycle",
+  "rank": 2,
+  "cosine": 0.132,
+  "window": "2026-10-05-live",
+  "eligible": 2
+ },
+ "P121": {
+  "targeted": "reaction_to",
+  "rank": 20,
+  "cosine": 0.574,
+  "window": "2026-10-05-live",
+  "eligible": 48
+ },
+ "P122": {
+  "targeted": "reaction_to",
+  "rank": 10,
+  "cosine": 0.62,
+  "window": "2026-10-08-live",
+  "eligible": 48
+ },
+ "P123": {
+  "targeted": "reaction_to",
+  "rank": 28,
+  "cosine": 0.564,
+  "window": "2026-10-05-live",
+  "eligible": 48
+ },
+ "P124": {
+  "targeted": "reaction_to",
+  "rank": 24,
+  "cosine": 0.567,
+  "window": "2026-10-08-live",
+  "eligible": 48
+ },
+ "P125": {
+  "targeted": "reaction_to",
+  "rank": 21,
+  "cosine": 0.57,
+  "window": "2026-10-08-live",
+  "eligible": 48
+ },
+ "P126": {
+  "targeted": "reaction_to",
+  "rank": 27,
+  "cosine": 0.565,
+  "window": "2026-10-08-live",
+  "eligible": 48
+ },
+ "P127": {
+  "targeted": "reaction_to",
+  "rank": 11,
+  "cosine": 0.618,
+  "window": "2026-10-05-live",
+  "eligible": 48
+ },
+ "P128": {
+  "targeted": "reaction_to",
+  "rank": 1,
+  "cosine": 0.74,
+  "window": "2026-10-08-live",
+  "eligible": 48
+ },
+ "P129": {
+  "targeted": "same_calamity_lifecycle",
+  "rank": 1,
+  "cosine": 0.628,
+  "window": "2026-10-05-live",
+  "eligible": 2
+ },
+ "P130": {
+  "targeted": "reaction_to",
+  "rank": 6,
+  "cosine": 0.64,
+  "window": "2026-10-08-live",
+  "eligible": 48
+ },
+ "P131": {
+  "targeted": "reaction_to",
+  "rank": 18,
+  "cosine": 0.577,
+  "window": "2026-10-05-live",
+  "eligible": 48
+ },
+ "P132": {
+  "targeted": "reaction_to",
+  "rank": 25,
+  "cosine": 0.567,
+  "window": "2026-10-08-live",
+  "eligible": 48
+ }
+}
