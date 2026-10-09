@@ -1,0 +1,426 @@
+{
+ "k": 3,
+ "results": {
+  "E0": {
+   "tp": 15,
+   "fp": 22,
+   "fn": 24,
+   "precision": 0.40540540540540543,
+   "recall": 0.38461538461538464,
+   "stage_added_true": [
+    "G12",
+    "G13",
+    "G14",
+    "V005",
+    "V007",
+    "V019",
+    "V024",
+    "V033",
+    "V045",
+    "V051",
+    "V054",
+    "V056"
+   ],
+   "stage_added_false": [
+    "V004",
+    "V006",
+    "V008",
+    "V013",
+    "V015",
+    "V017",
+    "V018",
+    "V021",
+    "V023",
+    "V025",
+    "V027",
+    "V030",
+    "V036",
+    "V037",
+    "V041",
+    "V042",
+    "V049",
+    "V050",
+    "V055",
+    "V057"
+   ],
+   "phase2_new_false": [
+    "C041",
+    "C078",
+    "C090"
+   ],
+   "phase2_new_true": [
+    "C104"
+   ],
+   "lost_true": [],
+   "regression": {
+    "G12": true,
+    "G13": true,
+    "G14": true,
+    "G02": false,
+    "G03": false,
+    "C006": false
+   },
+   "accepted_links": 103,
+   "links_dropped_by_g3": 0,
+   "qualifies": false
+  },
+  "E1": {
+   "tp": 5,
+   "fp": 6,
+   "fn": 34,
+   "precision": 0.45454545454545453,
+   "recall": 0.1282051282051282,
+   "stage_added_true": [
+    "G14",
+    "V024"
+   ],
+   "stage_added_false": [
+    "V004",
+    "V008",
+    "V037",
+    "V057"
+   ],
+   "phase2_new_false": [
+    "C041",
+    "C078",
+    "C090"
+   ],
+   "phase2_new_true": [],
+   "lost_true": [],
+   "regression": {
+    "G12": false,
+    "G13": false,
+    "G14": true,
+    "G02": false,
+    "G03": false,
+    "C006": false
+   },
+   "accepted_links": 21,
+   "links_dropped_by_g3": 0,
+   "qualifies": false
+  },
+  "E2a": {
+   "tp": 11,
+   "fp": 5,
+   "fn": 28,
+   "precision": 0.6875,
+   "recall": 0.28205128205128205,
+   "stage_added_true": [
+    "G12",
+    "G13",
+    "G14",
+    "V005",
+    "V019",
+    "V033",
+    "V045",
+    "V054"
+   ],
+   "stage_added_false": [
+    "V027",
+    "V037",
+    "V057"
+   ],
+   "phase2_new_false": [
+    "C041",
+    "C078",
+    "C090"
+   ],
+   "phase2_new_true": [
+    "C104"
+   ],
+   "lost_true": [],
+   "regression": {
+    "G12": true,
+    "G13": true,
+    "G14": true,
+    "G02": false,
+    "G03": false,
+    "C006": false
+   },
+   "accepted_links": 44,
+   "links_dropped_by_g3": 0,
+   "qualifies": false
+  },
+  "E2b": {
+   "tp": 15,
+   "fp": 18,
+   "fn": 24,
+   "precision": 0.45454545454545453,
+   "recall": 0.38461538461538464,
+   "stage_added_true": [
+    "G12",
+    "G13",
+    "G14",
+    "V005",
+    "V007",
+    "V019",
+    "V024",
+    "V033",
+    "V045",
+    "V051",
+    "V054",
+    "V056"
+   ],
+   "stage_added_false": [
+    "V006",
+    "V008",
+    "V013",
+    "V018",
+    "V021",
+    "V023",
+    "V027",
+    "V030",
+    "V036",
+    "V037",
+    "V041",
+    "V042",
+    "V049",
+    "V050",
+    "V055",
+    "V057"
+   ],
+   "phase2_new_false": [
+    "C041",
+    "C078",
+    "C090"
+   ],
+   "phase2_new_true": [
+    "C104"
+   ],
+   "lost_true": [],
+   "regression": {
+    "G12": true,
+    "G13": true,
+    "G14": true,
+    "G02": false,
+    "G03": false,
+    "C006": false
+   },
+   "accepted_links": 83,
+   "links_dropped_by_g3": 0,
+   "qualifies": false
+  },
+  "E3": {
+   "tp": 14,
+   "fp": 18,
+   "fn": 25,
+   "precision": 0.4375,
+   "recall": 0.358974358974359,
+   "stage_added_true": [
+    "G12",
+    "G13",
+    "G14",
+    "V005",
+    "V007",
+    "V019",
+    "V024",
+    "V045",
+    "V051",
+    "V054",
+    "V056"
+   ],
+   "stage_added_false": [
+    "V004",
+    "V006",
+    "V008",
+    "V015",
+    "V017",
+    "V021",
+    "V025",
+    "V027",
+    "V030",
+    "V037",
+    "V041",
+    "V042",
+    "V049",
+    "V050",
+    "V055",
+    "V057"
+   ],
+   "phase2_new_false": [
+    "C090"
+   ],
+   "phase2_new_true": [
+    "C104"
+   ],
+   "lost_true": [],
+   "regression": {
+    "G12": true,
+    "G13": true,
+    "G14": true,
+    "G02": false,
+    "G03": false,
+    "C006": false
+   },
+   "accepted_links": 86,
+   "links_dropped_by_g3": 17,
+   "qualifies": false
+  },
+  "E4": {
+   "tp": 15,
+   "fp": 22,
+   "fn": 24,
+   "precision": 0.40540540540540543,
+   "recall": 0.38461538461538464,
+   "stage_added_true": [
+    "G12",
+    "G13",
+    "G14",
+    "V005",
+    "V007",
+    "V019",
+    "V024",
+    "V033",
+    "V045",
+    "V051",
+    "V054",
+    "V056"
+   ],
+   "stage_added_false": [
+    "V004",
+    "V006",
+    "V008",
+    "V013",
+    "V015",
+    "V017",
+    "V018",
+    "V021",
+    "V023",
+    "V025",
+    "V027",
+    "V030",
+    "V036",
+    "V037",
+    "V041",
+    "V042",
+    "V049",
+    "V050",
+    "V055",
+    "V057"
+   ],
+   "phase2_new_false": [
+    "C041",
+    "C078",
+    "C090"
+   ],
+   "phase2_new_true": [
+    "C104"
+   ],
+   "lost_true": [],
+   "regression": {
+    "G12": true,
+    "G13": true,
+    "G14": true,
+    "G02": false,
+    "G03": false,
+    "C006": false
+   },
+   "accepted_links": 101,
+   "links_dropped_by_g3": 0,
+   "qualifies": false
+  },
+  "E5": {
+   "tp": 11,
+   "fp": 5,
+   "fn": 28,
+   "precision": 0.6875,
+   "recall": 0.28205128205128205,
+   "stage_added_true": [
+    "G12",
+    "G13",
+    "G14",
+    "V005",
+    "V019",
+    "V033",
+    "V045",
+    "V054"
+   ],
+   "stage_added_false": [
+    "V027",
+    "V037",
+    "V057"
+   ],
+   "phase2_new_false": [
+    "C090"
+   ],
+   "phase2_new_true": [
+    "C104"
+   ],
+   "lost_true": [],
+   "regression": {
+    "G12": true,
+    "G13": true,
+    "G14": true,
+    "G02": false,
+    "G03": false,
+    "C006": false
+   },
+   "accepted_links": 38,
+   "links_dropped_by_g3": 4,
+   "qualifies": false
+  },
+  "E6": {
+   "tp": 5,
+   "fp": 6,
+   "fn": 34,
+   "precision": 0.45454545454545453,
+   "recall": 0.1282051282051282,
+   "stage_added_true": [
+    "G14",
+    "V024"
+   ],
+   "stage_added_false": [
+    "V004",
+    "V008",
+    "V037",
+    "V057"
+   ],
+   "phase2_new_false": [
+    "C090"
+   ],
+   "phase2_new_true": [],
+   "lost_true": [],
+   "regression": {
+    "G12": false,
+    "G13": false,
+    "G14": true,
+    "G02": false,
+    "G03": false,
+    "C006": false
+   },
+   "accepted_links": 18,
+   "links_dropped_by_g3": 2,
+   "qualifies": false
+  },
+  "E7": {
+   "tp": 3,
+   "fp": 3,
+   "fn": 36,
+   "precision": 0.5,
+   "recall": 0.07692307692307693,
+   "stage_added_true": [],
+   "stage_added_false": [
+    "V057"
+   ],
+   "phase2_new_false": [
+    "C090"
+   ],
+   "phase2_new_true": [],
+   "lost_true": [],
+   "regression": {
+    "G12": false,
+    "G13": false,
+    "G14": false,
+    "G02": false,
+    "G03": false,
+    "C006": false
+   },
+   "accepted_links": 6,
+   "links_dropped_by_g3": 1,
+   "qualifies": false
+  }
+ },
+ "qualifying": [],
+ "winner": null,
+ "decision": "KEEP DISABLED"
+}
