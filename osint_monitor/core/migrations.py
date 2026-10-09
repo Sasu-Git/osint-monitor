@@ -115,6 +115,16 @@ def m006_development_summary(conn: Connection) -> None:
         _add_column(conn, "events", column, ddl)
 
 
+def m007_development_relations(conn: Connection) -> None:
+    """Typed relations between Developments (Phase 3). The table itself comes from create_all, which runs before
+    migrations on every start; this migration only records the schema step and its target index, so an existing
+    database reaches version 7 with the table and its constraints in place."""
+    if "development_relations" not in set(inspect(conn).get_table_names()):
+        raise RuntimeError("development_relations was not created")
+    conn.execute(text("CREATE INDEX IF NOT EXISTS ix_development_relations_target "
+                      "ON development_relations (target_event_id)"))
+
+
 MIGRATIONS: list[tuple[int, Callable[[Connection], None]]] = [
     (1, m001_legacy),
     (2, m002_situations),
@@ -122,6 +132,7 @@ MIGRATIONS: list[tuple[int, Callable[[Connection], None]]] = [
     (4, m004_entity_resolution),
     (5, m005_run_ledger),
     (6, m006_development_summary),
+    (7, m007_development_relations),
 ]
 
 

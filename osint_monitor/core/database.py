@@ -4,7 +4,7 @@ from datetime import datetime
 from pathlib import Path
 
 from sqlalchemy import (
-    Boolean, Column, DateTime, Enum, Float, ForeignKey, Index, Integer,
+    Boolean, CheckConstraint, Column, DateTime, Enum, Float, ForeignKey, Index, Integer,
     JSON, LargeBinary, String, Text, UniqueConstraint, create_engine,
     event, text,
 )
@@ -265,6 +265,35 @@ class EventEntity(Base):
 
     event: Mapped["Event"] = relationship(back_populates="event_entities")
     entity: Mapped["Entity"] = relationship(back_populates="event_entities")
+
+
+class DevelopmentRelation(Base):
+    """A typed relation between two distinct Developments (processors/development_relations.py).
+
+    Both endpoints are real Development IDs: there is no free-text endpoint, so a link to an occurrence the system
+    has no Development for is never stored. Directed types store the first role as ``source`` (reaction) and the
+    second as ``target`` (trigger); symmetric types store the lower ID as ``source``. ``evidence`` lists the member
+    items and text spans the relation rests on. A relation never merges Developments and never changes Situation
+    membership."""
+    __tablename__ = "development_relations"
+    __table_args__ = (
+        UniqueConstraint("relation_type", "source_event_id", "target_event_id", name="uq_development_relation"),
+        CheckConstraint("source_event_id <> target_event_id", name="ck_development_relation_distinct"),
+        Index("ix_development_relations_target", "target_event_id"),
+    )
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
+    relation_type: Mapped[str] = mapped_column(String(40), nullable=False)
+    source_event_id: Mapped[int] = mapped_column(ForeignKey("events.id"), nullable=False, index=True)
+    target_event_id: Mapped[int] = mapped_column(ForeignKey("events.id"), nullable=False)
+    status: Mapped[str] = mapped_column(String(20), nullable=False)       # candidate | accepted | rejected
+    evidence_kind: Mapped[str] = mapped_column(String(20), nullable=False)  # explicit | inferred | none (candidates)
+    evidence: Mapped[list] = mapped_column(JSON, nullable=False)          # [{item_id, side, cue, text}]
+    method: Mapped[str] = mapped_column(String(100), nullable=False)      # rule / model and its version
+    created_at: Mapped[datetime] = mapped_column(DateTime, nullable=False)
+    created_run_id: Mapped[str | None] = mapped_column(ForeignKey("pipeline_runs.id"))
+    updated_at: Mapped[datetime] = mapped_column(DateTime, nullable=False)
+    updated_run_id: Mapped[str | None] = mapped_column(ForeignKey("pipeline_runs.id"))
 
 
 # ---------------------------------------------------------------------------

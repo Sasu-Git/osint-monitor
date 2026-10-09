@@ -109,3 +109,4 @@ def test_migration_numbers_are_unique_and_contiguous():
     names = dict(migrations.MIGRATIONS)
     assert names[4].__name__ == "m004_entity_resolution" and names[5].__name__ == "m005_run_ledger"
     assert names[6].__name__ == "m006_development_summary"
+    assert names[7].__name__ == "m007_development_relations"
