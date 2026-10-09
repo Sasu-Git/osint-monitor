@@ -1,0 +1,2822 @@
+{
+ "method": "relation-candidates-v1",
+ "volume": {
+  "2026-08-21": {
+   "developments": 7,
+   "pairs": 21,
+   "candidates": {
+    "reaction_to": 1
+   }
+  },
+  "2026-08-31": {
+   "developments": 5,
+   "pairs": 10,
+   "candidates": {}
+  },
+  "2026-09-25": {
+   "developments": 4,
+   "pairs": 6,
+   "candidates": {}
+  },
+  "2026-09-27-live": {
+   "developments": 15,
+   "pairs": 105,
+   "candidates": {
+    "same_convened_event": 1
+   }
+  },
+  "2026-09-29-live": {
+   "developments": 16,
+   "pairs": 120,
+   "candidates": {
+    "reaction_to": 1
+   }
+  },
+  "2026-09-30-multilingual": {
+   "developments": 25,
+   "pairs": 300,
+   "candidates": {
+    "reaction_to": 1
+   }
+  },
+  "2026-10-03-live": {
+   "developments": 52,
+   "pairs": 1326,
+   "candidates": {
+    "reaction_to": 18,
+    "same_convened_event": 2
+   }
+  }
+ },
+ "by_type": {
+  "same_calamity_lifecycle": {
+   "canonical_positives": 13,
+   "coverage": {
+    "NOT_SURFACED": 11,
+    "BLOCKED_BY_IDENTITY": 2
+   },
+   "recalled": [],
+   "missed": [],
+   "reversed_direction": [],
+   "blocked": [
+    "R030",
+    "R082"
+   ],
+   "not_surfaced": [
+    "R004",
+    "R017",
+    "R045",
+    "R053",
+    "R054",
+    "R068",
+    "R072",
+    "R075",
+    "R091",
+    "R108",
+    "R114"
+   ]
+  },
+  "same_convened_event": {
+   "canonical_positives": 10,
+   "coverage": {
+    "NOT_SURFACED": 8,
+    "BLOCKED_BY_IDENTITY": 2
+   },
+   "recalled": [],
+   "missed": [],
+   "reversed_direction": [],
+   "blocked": [
+    "R046",
+    "R100"
+   ],
+   "not_surfaced": [
+    "R023",
+    "R048",
+    "R064",
+    "R083",
+    "R124",
+    "R133",
+    "T019",
+    "T028"
+   ]
+  },
+  "reaction_to": {
+   "canonical_positives": 7,
+   "coverage": {
+    "NOT_SURFACED": 5,
+    "BLOCKED_BY_IDENTITY": 2
+   },
+   "recalled": [],
+   "missed": [],
+   "reversed_direction": [],
+   "blocked": [
+    "R014",
+    "T018"
+   ],
+   "not_surfaced": [
+    "R008",
+    "T006",
+    "T030",
+    "T036",
+    "T043"
+   ]
+  }
+ },
+ "negatives": {
+  "covered_no_relation": 2,
+  "with_any_candidate": 0,
+  "by_type": {},
+  "by_family": {
+   "gold_related": {
+    "cases": 1,
+    "with_candidate": 0
+   },
+   "situation_holdout_control": {
+    "cases": 1,
+    "with_candidate": 0
+   }
+  }
+ },
+ "reference": {
+  "R002 commentary_on": {
+   "coverage": "NOT_SURFACED",
+   "candidates": []
+  },
+  "R005 commentary_on": {
+   "coverage": "NOT_SURFACED",
+   "candidates": []
+  },
+  "R012 SAME_DEVELOPMENT_SUSPECTED (inferred)": {
+   "coverage": "NOT_SURFACED",
+   "candidates": []
+  },
+  "R019 AMBIGUOUS (inferred)": {
+   "coverage": "BLOCKED_BY_IDENTITY",
+   "candidates": []
+  },
+  "R026 AMBIGUOUS (inferred)": {
+   "coverage": "BLOCKED_BY_IDENTITY",
+   "candidates": []
+  },
+  "R029 reaction_to (inferred)": {
+   "coverage": "BLOCKED_BY_IDENTITY",
+   "candidates": []
+  },
+  "R036 commentary_on": {
+   "coverage": "NOT_SURFACED",
+   "candidates": []
+  },
+  "R044 AMBIGUOUS (inferred)": {
+   "coverage": "NOT_SURFACED",
+   "candidates": []
+  },
+  "R056 follow_up_to (inferred)": {
+   "coverage": "NOT_SURFACED",
+   "candidates": []
+  },
+  "R069 same_attack_wave": {
+   "coverage": "NOT_SURFACED",
+   "candidates": []
+  },
+  "R076 reaction_to (inferred)": {
+   "coverage": "NOT_SURFACED",
+   "candidates": []
+  },
+  "R098 AMBIGUOUS (inferred)": {
+   "coverage": "NOT_SURFACED",
+   "candidates": []
+  },
+  "R102 AMBIGUOUS (inferred)": {
+   "coverage": "NOT_SURFACED",
+   "candidates": []
+  },
+  "R105 commentary_on": {
+   "coverage": "NOT_SURFACED",
+   "candidates": []
+  },
+  "R118 AMBIGUOUS (inferred)": {
+   "coverage": "NOT_SURFACED",
+   "candidates": []
+  },
+  "R123 follow_up_to (inferred)": {
+   "coverage": "NOT_SURFACED",
+   "candidates": []
+  },
+  "R132 co_caused_with": {
+   "coverage": "BLOCKED_BY_IDENTITY",
+   "candidates": []
+  },
+  "R138 SAME_DEVELOPMENT_SUSPECTED (inferred)": {
+   "coverage": "NOT_SURFACED",
+   "candidates": []
+  },
+  "T003 commentary_on": {
+   "coverage": "NOT_SURFACED",
+   "candidates": []
+  },
+  "T008 SAME_DEVELOPMENT_SUSPECTED (inferred)": {
+   "coverage": "BLOCKED_BY_IDENTITY",
+   "candidates": []
+  },
+  "T009 commentary_on": {
+   "coverage": "BLOCKED_BY_IDENTITY",
+   "candidates": []
+  },
+  "T012 follow_up_to": {
+   "coverage": "BLOCKED_BY_IDENTITY",
+   "candidates": []
+  },
+  "T013 follow_up_to": {
+   "coverage": "BLOCKED_BY_IDENTITY",
+   "candidates": []
+  },
+  "T014 follow_up_to": {
+   "coverage": "BLOCKED_BY_IDENTITY",
+   "candidates": []
+  },
+  "T021 same_attack_wave": {
+   "coverage": "NOT_SURFACED",
+   "candidates": []
+  },
+  "T025 AMBIGUOUS (inferred)": {
+   "coverage": "BLOCKED_BY_IDENTITY",
+   "candidates": []
+  },
+  "T032 commentary_on": {
+   "coverage": "NOT_SURFACED",
+   "candidates": []
+  },
+  "T033 SAME_DEVELOPMENT_SUSPECTED (inferred)": {
+   "coverage": "NOT_SURFACED",
+   "candidates": []
+  },
+  "T034 SAME_DEVELOPMENT_SUSPECTED (inferred)": {
+   "coverage": "BLOCKED_BY_IDENTITY",
+   "candidates": []
+  },
+  "T037 follow_up_to": {
+   "coverage": "BLOCKED_BY_IDENTITY",
+   "candidates": []
+  },
+  "T039 SAME_DEVELOPMENT_SUSPECTED (inferred)": {
+   "coverage": "NOT_SURFACED",
+   "candidates": []
+  },
+  "T040 follow_up_to": {
+   "coverage": "BLOCKED_BY_IDENTITY",
+   "candidates": []
+  },
+  "T041 SAME_DEVELOPMENT_SUSPECTED (inferred)": {
+   "coverage": "BLOCKED_BY_IDENTITY",
+   "candidates": []
+  }
+ },
+ "rows": [
+  {
+   "case": "R001",
+   "window": "2026-08-21",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "neg_same_place: UK"
+   ]
+  },
+  {
+   "case": "R002",
+   "window": "2026-08-31",
+   "label": "commentary_on",
+   "canonical": true,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "cue: follow_up"
+   ]
+  },
+  {
+   "case": "R003",
+   "window": "2026-08-31",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "lifecycle: visit",
+    "neg_broad_pair: America-China"
+   ]
+  },
+  {
+   "case": "R004",
+   "window": "2026-08-31",
+   "label": "same_calamity_lifecycle",
+   "canonical": true,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "owner_note: H015",
+    "owner_note: H020"
+   ]
+  },
+  {
+   "case": "R005",
+   "window": "2026-09-25",
+   "label": "commentary_on",
+   "canonical": true,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "neg_chrono_adjacent: 2.0 h"
+   ]
+  },
+  {
+   "case": "R006",
+   "window": "2026-09-29-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "storyline_mates: unga-81"
+   ]
+  },
+  {
+   "case": "R007",
+   "window": "2026-09-27-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "neg_broad_pair: America-China"
+   ]
+  },
+  {
+   "case": "R008",
+   "window": "2026-08-21",
+   "label": "reaction_to",
+   "canonical": true,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "owner_note: A006"
+   ]
+  },
+  {
+   "case": "R009",
+   "window": "2026-08-21",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "neg_same_actors: harry,meghan"
+   ]
+  },
+  {
+   "case": "R010",
+   "window": "2026-09-25",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "lifecycle: attack"
+   ]
+  },
+  {
+   "case": "R011",
+   "window": "2026-09-27-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "neg_same_actors: china,united states"
+   ]
+  },
+  {
+   "case": "R012",
+   "window": "2026-09-30-multilingual",
+   "label": "SAME_DEVELOPMENT_SUSPECTED",
+   "canonical": false,
+   "scored": false,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "cue: reaction"
+   ]
+  },
+  {
+   "case": "R013",
+   "window": "2026-08-21",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "BLOCKED_BY_IDENTITY",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "lifecycle: visit"
+   ]
+  },
+  {
+   "case": "R014",
+   "window": "2026-09-27-live",
+   "label": "reaction_to",
+   "canonical": true,
+   "scored": true,
+   "coverage": "BLOCKED_BY_IDENTITY",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "neg_broad_pair: America-Iran"
+   ]
+  },
+  {
+   "case": "R015",
+   "window": "2026-08-31",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "storyline_mates: ceuta-crisis"
+   ]
+  },
+  {
+   "case": "R016",
+   "window": "2026-10-03-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "lifecycle: visit"
+   ]
+  },
+  {
+   "case": "R017",
+   "window": "2026-08-31",
+   "label": "same_calamity_lifecycle",
+   "canonical": true,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "owner_note: H029"
+   ]
+  },
+  {
+   "case": "R018",
+   "window": "2026-08-21",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "cue: reaction"
+   ]
+  },
+  {
+   "case": "R019",
+   "window": "2026-09-27-live",
+   "label": "AMBIGUOUS",
+   "canonical": false,
+   "scored": false,
+   "coverage": "BLOCKED_BY_IDENTITY",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "cue: reaction,follow_up"
+   ]
+  },
+  {
+   "case": "R020",
+   "window": "2026-09-29-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "gold_related: UK state-threat briefing on Russia vs Iran airbase denial - distinct"
+   ]
+  },
+  {
+   "case": "R021",
+   "window": "2026-08-21",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "neg_chrono_adjacent: 1.0 h"
+   ]
+  },
+  {
+   "case": "R022",
+   "window": "2026-09-25",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "lifecycle: attack"
+   ]
+  },
+  {
+   "case": "R023",
+   "window": "2026-09-30-multilingual",
+   "label": "same_convened_event",
+   "canonical": true,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "owner_note: C016"
+   ]
+  },
+  {
+   "case": "R024",
+   "window": "2026-09-25",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "cue: reaction"
+   ]
+  },
+  {
+   "case": "R025",
+   "window": "2026-10-03-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "situation_holdout_control: Xi-Trump summit drew Chinese C / China backs Cuba, Beijing"
+   ]
+  },
+  {
+   "case": "R026",
+   "window": "2026-09-25",
+   "label": "AMBIGUOUS",
+   "canonical": false,
+   "scored": false,
+   "coverage": "BLOCKED_BY_IDENTITY",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "cue: reaction",
+    "neg_broad_pair: America-China",
+    "owner_note: B008",
+    "storyline_mates: us-china-summit"
+   ]
+  },
+  {
+   "case": "R027",
+   "window": "2026-09-30-multilingual",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "neg_same_actors: all presidential actions,briefings & statements,nominations & appointments"
+   ]
+  },
+  {
+   "case": "R028",
+   "window": "2026-09-25",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "lifecycle: visit",
+    "neg_same_crisis: us-china-summit"
+   ]
+  },
+  {
+   "case": "R029",
+   "window": "2026-08-21",
+   "label": "reaction_to",
+   "canonical": false,
+   "scored": true,
+   "coverage": "BLOCKED_BY_IDENTITY",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "owner_note: A023"
+   ]
+  },
+  {
+   "case": "R030",
+   "window": "2026-08-31",
+   "label": "same_calamity_lifecycle",
+   "canonical": true,
+   "scored": true,
+   "coverage": "BLOCKED_BY_IDENTITY",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "owner_note: H021"
+   ]
+  },
+  {
+   "case": "R031",
+   "window": "2026-09-27-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "BLOCKED_BY_IDENTITY",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "lifecycle: calamity"
+   ]
+  },
+  {
+   "case": "R032",
+   "window": "2026-08-21",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "neg_same_actors: harry,meghan"
+   ]
+  },
+  {
+   "case": "R033",
+   "window": "2026-10-03-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "lifecycle: attack"
+   ]
+  },
+  {
+   "case": "R034",
+   "window": "2026-10-03-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "lifecycle: visit"
+   ]
+  },
+  {
+   "case": "R035",
+   "window": "2026-09-30-multilingual",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "owner_note: C032"
+   ]
+  },
+  {
+   "case": "R036",
+   "window": "2026-09-25",
+   "label": "commentary_on",
+   "canonical": true,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "storyline_mates: netanyahu-unga"
+   ]
+  },
+  {
+   "case": "R037",
+   "window": "2026-09-27-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "lifecycle: calamity"
+   ]
+  },
+  {
+   "case": "R038",
+   "window": "2026-10-03-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "situation_holdout_control: Xi-Trump summit drew Chinese C / Can Europe still compete"
+   ]
+  },
+  {
+   "case": "R039",
+   "window": "2026-09-27-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "neg_same_place: US"
+   ]
+  },
+  {
+   "case": "R040",
+   "window": "2026-08-21",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "neg_same_crisis: west-bank-settlements"
+   ]
+  },
+  {
+   "case": "R041",
+   "window": "2026-10-03-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "neg_chrono_adjacent: 2.6 h"
+   ]
+  },
+  {
+   "case": "R042",
+   "window": "2026-08-31",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "cue: follow_up"
+   ]
+  },
+  {
+   "case": "R043",
+   "window": "2026-10-03-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "cue: follow_up"
+   ]
+  },
+  {
+   "case": "R044",
+   "window": "2026-10-03-live",
+   "label": "AMBIGUOUS",
+   "canonical": false,
+   "scored": false,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "situation_holdout_control: Can Europe still compete / China backs Cuba, Beijing"
+   ]
+  },
+  {
+   "case": "R045",
+   "window": "2026-08-31",
+   "label": "same_calamity_lifecycle",
+   "canonical": true,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "owner_note: H006",
+    "owner_note: H016",
+    "owner_note: H026"
+   ]
+  },
+  {
+   "case": "R046",
+   "window": "2026-09-27-live",
+   "label": "same_convened_event",
+   "canonical": true,
+   "scored": true,
+   "coverage": "BLOCKED_BY_IDENTITY",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "lifecycle: visit"
+   ]
+  },
+  {
+   "case": "R047",
+   "window": "2026-10-03-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "cue: reaction"
+   ]
+  },
+  {
+   "case": "R048",
+   "window": "2026-09-27-live",
+   "label": "same_convened_event",
+   "canonical": true,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "neg_same_actors: andy burnham,keir starmer,uk labour party"
+   ]
+  },
+  {
+   "case": "R049",
+   "window": "2026-09-27-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "storyline_mates: yemen-war"
+   ]
+  },
+  {
+   "case": "R050",
+   "window": "2026-10-03-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "neg_same_actors: democrat,united states"
+   ]
+  },
+  {
+   "case": "R051",
+   "window": "2026-09-27-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "cue: follow_up"
+   ]
+  },
+  {
+   "case": "R052",
+   "window": "2026-10-03-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "lifecycle: attack"
+   ]
+  },
+  {
+   "case": "R053",
+   "window": "2026-08-31",
+   "label": "same_calamity_lifecycle",
+   "canonical": true,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "lifecycle: calamity"
+   ]
+  },
+  {
+   "case": "R054",
+   "window": "2026-08-31",
+   "label": "same_calamity_lifecycle",
+   "canonical": true,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "neg_same_crisis: nepal-tibet-floods"
+   ]
+  },
+  {
+   "case": "R055",
+   "window": "2026-09-27-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "storyline_mates: us-china-summit"
+   ]
+  },
+  {
+   "case": "R056",
+   "window": "2026-08-21",
+   "label": "follow_up_to",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "gold_related: both US Treasury actions on Iran; Hezbollah designation is a separate action"
+   ]
+  },
+  {
+   "case": "R057",
+   "window": "2026-09-29-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "neg_same_crisis: channel-migration"
+   ]
+  },
+  {
+   "case": "R058",
+   "window": "2026-09-27-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "lifecycle: attack"
+   ]
+  },
+  {
+   "case": "R059",
+   "window": "2026-09-27-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "storyline_mates: iran-hormuz-deal"
+   ]
+  },
+  {
+   "case": "R060",
+   "window": "2026-08-21",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "BLOCKED_BY_IDENTITY",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "owner_note: A013"
+   ]
+  },
+  {
+   "case": "R061",
+   "window": "2026-09-30-multilingual",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "neg_chrono_adjacent: 1.1 h"
+   ]
+  },
+  {
+   "case": "R062",
+   "window": "2026-09-25",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "neg_same_place: China"
+   ]
+  },
+  {
+   "case": "R063",
+   "window": "2026-10-03-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "neg_broad_pair: America-China"
+   ]
+  },
+  {
+   "case": "R064",
+   "window": "2026-09-30-multilingual",
+   "label": "same_convened_event",
+   "canonical": true,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "lifecycle: visit"
+   ]
+  },
+  {
+   "case": "R065",
+   "window": "2026-09-29-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "neg_same_actors: european,european union"
+   ]
+  },
+  {
+   "case": "R066",
+   "window": "2026-09-30-multilingual",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "owner_note: C048"
+   ]
+  },
+  {
+   "case": "R067",
+   "window": "2026-08-21",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "lifecycle: attack"
+   ]
+  },
+  {
+   "case": "R068",
+   "window": "2026-08-21",
+   "label": "same_calamity_lifecycle",
+   "canonical": true,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "lifecycle: calamity",
+    "owner_note: A032"
+   ]
+  },
+  {
+   "case": "R069",
+   "window": "2026-09-29-live",
+   "label": "same_attack_wave",
+   "canonical": true,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "lifecycle: attack"
+   ]
+  },
+  {
+   "case": "R070",
+   "window": "2026-08-31",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "gold_related: Meta settlement vs FTC suit against Amazon"
+   ]
+  },
+  {
+   "case": "R071",
+   "window": "2026-08-31",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "lifecycle: attack"
+   ]
+  },
+  {
+   "case": "R072",
+   "window": "2026-08-31",
+   "label": "same_calamity_lifecycle",
+   "canonical": true,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "owner_note: H008"
+   ]
+  },
+  {
+   "case": "R073",
+   "window": "2026-10-03-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "lifecycle: calamity"
+   ]
+  },
+  {
+   "case": "R074",
+   "window": "2026-09-27-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "gold_related: both mention Sudan's army - distinct"
+   ]
+  },
+  {
+   "case": "R075",
+   "window": "2026-08-31",
+   "label": "same_calamity_lifecycle",
+   "canonical": true,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "owner_note: H024",
+    "storyline_mates: nepal-tibet-floods"
+   ]
+  },
+  {
+   "case": "R076",
+   "window": "2026-08-21",
+   "label": "reaction_to",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "storyline_mates: west-bank-settlements"
+   ]
+  },
+  {
+   "case": "R077",
+   "window": "2026-08-31",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "lifecycle: attack"
+   ]
+  },
+  {
+   "case": "R078",
+   "window": "2026-09-27-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "gold_related: both Hong Kong police cases - distinct"
+   ]
+  },
+  {
+   "case": "R079",
+   "window": "2026-09-29-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "storyline_mates: iran-war"
+   ]
+  },
+  {
+   "case": "R080",
+   "window": "2026-09-29-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "lifecycle: attack"
+   ]
+  },
+  {
+   "case": "R081",
+   "window": "2026-08-31",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "cue: follow_up",
+    "gold_related: Japan military build-up vs digest mentioning Japan jets to India"
+   ]
+  },
+  {
+   "case": "R082",
+   "window": "2026-08-21",
+   "label": "same_calamity_lifecycle",
+   "canonical": true,
+   "scored": true,
+   "coverage": "BLOCKED_BY_IDENTITY",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "owner_note: A021",
+    "owner_note: A022",
+    "storyline_mates: drc-ebola"
+   ]
+  },
+  {
+   "case": "R083",
+   "window": "2026-08-31",
+   "label": "same_convened_event",
+   "canonical": true,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "lifecycle: visit",
+    "storyline_mates: sco-summit"
+   ]
+  },
+  {
+   "case": "R084",
+   "window": "2026-08-31",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "lifecycle: calamity"
+   ]
+  },
+  {
+   "case": "R085",
+   "window": "2026-09-25",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "neg_broad_pair: America-China"
+   ]
+  },
+  {
+   "case": "R086",
+   "window": "2026-09-29-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "cue: follow_up"
+   ]
+  },
+  {
+   "case": "R087",
+   "window": "2026-09-27-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "lifecycle: visit"
+   ]
+  },
+  {
+   "case": "R088",
+   "window": "2026-09-25",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "cue: follow_up"
+   ]
+  },
+  {
+   "case": "R089",
+   "window": "2026-09-30-multilingual",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "neg_same_actors: all presidential actions,briefings & statements,nominations & appointments"
+   ]
+  },
+  {
+   "case": "R090",
+   "window": "2026-09-27-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "lifecycle: attack"
+   ]
+  },
+  {
+   "case": "R091",
+   "window": "2026-08-21",
+   "label": "same_calamity_lifecycle",
+   "canonical": true,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "owner_note: A017",
+    "storyline_mates: drc-ebola"
+   ]
+  },
+  {
+   "case": "R092",
+   "window": "2026-10-03-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "situation_holdout_control: US delivers F-16V fighter jets / Xi-Trump summit drew Chinese C"
+   ]
+  },
+  {
+   "case": "R093",
+   "window": "2026-08-31",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "gold_related: teen social media limits in Singapore vs HK opinion"
+   ]
+  },
+  {
+   "case": "R094",
+   "window": "2026-09-29-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "neg_chrono_adjacent: 1.8 h"
+   ]
+  },
+  {
+   "case": "R095",
+   "window": "2026-08-21",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "gold_related: Trump tariff moves"
+   ]
+  },
+  {
+   "case": "R096",
+   "window": "2026-09-29-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "lifecycle: calamity"
+   ]
+  },
+  {
+   "case": "R097",
+   "window": "2026-09-29-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "neg_broad_pair: America-China",
+    "neg_same_actors: china,united states"
+   ]
+  },
+  {
+   "case": "R098",
+   "window": "2026-09-30-multilingual",
+   "label": "AMBIGUOUS",
+   "canonical": false,
+   "scored": false,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "cue: follow_up"
+   ]
+  },
+  {
+   "case": "R099",
+   "window": "2026-10-03-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "neg_same_place: Hong Kong"
+   ]
+  },
+  {
+   "case": "R100",
+   "window": "2026-09-29-live",
+   "label": "same_convened_event",
+   "canonical": true,
+   "scored": true,
+   "coverage": "BLOCKED_BY_IDENTITY",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "lifecycle: visit"
+   ]
+  },
+  {
+   "case": "R101",
+   "window": "2026-09-30-multilingual",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "lifecycle: attack"
+   ]
+  },
+  {
+   "case": "R102",
+   "window": "2026-08-21",
+   "label": "AMBIGUOUS",
+   "canonical": false,
+   "scored": false,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "cue: reaction,follow_up"
+   ]
+  },
+  {
+   "case": "R103",
+   "window": "2026-09-29-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "storyline_mates: fifa-election"
+   ]
+  },
+  {
+   "case": "R104",
+   "window": "2026-09-27-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "gold_related: both Hong Kong police arrests - distinct"
+   ]
+  },
+  {
+   "case": "R105",
+   "window": "2026-09-25",
+   "label": "commentary_on",
+   "canonical": true,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "neg_same_crisis: netanyahu-unga"
+   ]
+  },
+  {
+   "case": "R106",
+   "window": "2026-09-27-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "COVERED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "gold_related: both mass shootings on Sunday - Detroit vs South Africa"
+   ]
+  },
+  {
+   "case": "R107",
+   "window": "2026-08-21",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "neg_same_crisis: west-bank-settlements"
+   ]
+  },
+  {
+   "case": "R108",
+   "window": "2026-09-30-multilingual",
+   "label": "same_calamity_lifecycle",
+   "canonical": true,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "lifecycle: calamity"
+   ]
+  },
+  {
+   "case": "R109",
+   "window": "2026-08-31",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "neg_same_crisis: us-iran-war"
+   ]
+  },
+  {
+   "case": "R110",
+   "window": "2026-10-03-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "lifecycle: calamity"
+   ]
+  },
+  {
+   "case": "R111",
+   "window": "2026-09-27-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "neg_chrono_adjacent: 2.2 h"
+   ]
+  },
+  {
+   "case": "R112",
+   "window": "2026-09-30-multilingual",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "lifecycle: attack"
+   ]
+  },
+  {
+   "case": "R113",
+   "window": "2026-09-29-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "neg_same_place: Iran"
+   ]
+  },
+  {
+   "case": "R114",
+   "window": "2026-09-30-multilingual",
+   "label": "same_calamity_lifecycle",
+   "canonical": true,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "lifecycle: calamity"
+   ]
+  },
+  {
+   "case": "R115",
+   "window": "2026-09-27-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "BLOCKED_BY_IDENTITY",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "neg_broad_pair: America-Iran"
+   ]
+  },
+  {
+   "case": "R116",
+   "window": "2026-08-31",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "neg_same_place: Beijing,China,US,Washington"
+   ]
+  },
+  {
+   "case": "R117",
+   "window": "2026-10-03-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "cue: reaction"
+   ]
+  },
+  {
+   "case": "R118",
+   "window": "2026-09-27-live",
+   "label": "AMBIGUOUS",
+   "canonical": false,
+   "scored": false,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "neg_same_crisis: iran-hormuz-deal"
+   ]
+  },
+  {
+   "case": "R119",
+   "window": "2026-08-21",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "gold_related: Man City preview vs Maresca press conference"
+   ]
+  },
+  {
+   "case": "R120",
+   "window": "2026-08-21",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "lifecycle: calamity"
+   ]
+  },
+  {
+   "case": "R121",
+   "window": "2026-09-29-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "cue: follow_up"
+   ]
+  },
+  {
+   "case": "R122",
+   "window": "2026-09-25",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "lifecycle: visit",
+    "storyline_mates: us-china-summit"
+   ]
+  },
+  {
+   "case": "R123",
+   "window": "2026-09-29-live",
+   "label": "follow_up_to",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "gold_related: Russian military budget vs Putin troop decree - distinct"
+   ]
+  },
+  {
+   "case": "R124",
+   "window": "2026-09-29-live",
+   "label": "same_convened_event",
+   "canonical": true,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "gold_related: Pope Leo AI remarks vs France tour final day"
+   ]
+  },
+  {
+   "case": "R125",
+   "window": "2026-09-29-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "cue: reaction"
+   ]
+  },
+  {
+   "case": "R126",
+   "window": "2026-08-31",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "neg_chrono_adjacent: 0.8 h"
+   ]
+  },
+  {
+   "case": "R127",
+   "window": "2026-08-21",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "cue: reaction,follow_up",
+    "lifecycle: attack"
+   ]
+  },
+  {
+   "case": "R128",
+   "window": "2026-10-03-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "neg_same_actors: china,united states"
+   ]
+  },
+  {
+   "case": "R129",
+   "window": "2026-09-29-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "lifecycle: calamity"
+   ]
+  },
+  {
+   "case": "R130",
+   "window": "2026-08-21",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "gold_related: Harry legal costs vs UK return"
+   ]
+  },
+  {
+   "case": "R131",
+   "window": "2026-09-29-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "gold_related: Wang Yi meeting with Japanese delegation vs survey of Japanese firms"
+   ]
+  },
+  {
+   "case": "R132",
+   "window": "2026-09-27-live",
+   "label": "co_caused_with",
+   "canonical": true,
+   "scored": true,
+   "coverage": "BLOCKED_BY_IDENTITY",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "cue: reaction,follow_up"
+   ]
+  },
+  {
+   "case": "R133",
+   "window": "2026-09-25",
+   "label": "same_convened_event",
+   "canonical": true,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "owner_note: B005"
+   ]
+  },
+  {
+   "case": "R134",
+   "window": "2026-08-31",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "gold_related: HK retail sales data vs retail leasing"
+   ]
+  },
+  {
+   "case": "R135",
+   "window": "2026-09-27-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "neg_broad_pair: America-China"
+   ]
+  },
+  {
+   "case": "R136",
+   "window": "2026-09-27-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "neg_same_crisis: ethiopia-tigray"
+   ]
+  },
+  {
+   "case": "R137",
+   "window": "2026-10-03-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "COVERED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "situation_holdout_control: Pentagon awards Raytheon up to / US Navy awards RTX"
+   ]
+  },
+  {
+   "case": "R138",
+   "window": "2026-09-30-multilingual",
+   "label": "SAME_DEVELOPMENT_SUSPECTED",
+   "canonical": false,
+   "scored": false,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "cue: reaction"
+   ]
+  },
+  {
+   "case": "R139",
+   "window": "2026-09-30-multilingual",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "neg_same_place: U.S."
+   ]
+  },
+  {
+   "case": "R140",
+   "window": "2026-10-03-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "neg_broad_pair: America-China"
+   ]
+  },
+  {
+   "case": "R141",
+   "window": "2026-08-21",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "lifecycle: visit"
+   ]
+  },
+  {
+   "case": "R142",
+   "window": "2026-09-29-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": [
+    "neg_same_crisis: unga-81"
+   ]
+  },
+  {
+   "case": "T001",
+   "window": "2026-08-21",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": "cue 'retaliatory', shared ['canada', 'carney', 'united states'], cosine 0.56, window 2026-08-21"
+  },
+  {
+   "case": "T002",
+   "window": "2026-08-21",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": "cue 'slams', shared ['united states', 'us'], cosine 0.48, window 2026-08-21"
+  },
+  {
+   "case": "T003",
+   "window": "2026-09-30-multilingual",
+   "label": "commentary_on",
+   "canonical": true,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": "cue 'condemned', shared ['malaysia', 'myanmar', 'united nations'], cosine 0.65, window 2026-09-30-multilingual"
+  },
+  {
+   "case": "T004",
+   "window": "2026-09-25",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": "cue 'denounce', shared ['israel', 'palestine'], cosine 0.43, window 2026-09-25"
+  },
+  {
+   "case": "T005",
+   "window": "2026-09-27-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": "cue 'rejected', shared ['iran', 'united states', 'us'], cosine 0.58, window 2026-09-27-live"
+  },
+  {
+   "case": "T006",
+   "window": "2026-09-27-live",
+   "label": "reaction_to",
+   "canonical": true,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": "cue 'denounce', shared ['ben-gvir', 'israel'], cosine 0.75, window 2026-09-27-live"
+  },
+  {
+   "case": "T007",
+   "window": "2026-09-27-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": "cue 'rejected', shared ['iran', 'united states'], cosine 0.65, window 2026-09-27-live"
+  },
+  {
+   "case": "T008",
+   "window": "2026-10-03-live",
+   "label": "SAME_DEVELOPMENT_SUSPECTED",
+   "canonical": false,
+   "scored": false,
+   "coverage": "BLOCKED_BY_IDENTITY",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": "cue 'protests over', shared ['spain'], cosine 0.81, window 2026-10-03-live"
+  },
+  {
+   "case": "T009",
+   "window": "2026-09-29-live",
+   "label": "commentary_on",
+   "canonical": true,
+   "scored": true,
+   "coverage": "BLOCKED_BY_IDENTITY",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": "cue 'welcomed', shared ['malaysia', 'myanmar'], cosine 0.77, window 2026-09-29-live"
+  },
+  {
+   "case": "T010",
+   "window": "2026-09-29-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": "cue 'rejects', shared ['iran', 'tehran', 'united states', 'us'], cosine 0.61, window 2026-09-29-live"
+  },
+  {
+   "case": "T011",
+   "window": "2026-09-30-multilingual",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": "cue 'responds', shared ['united states'], cosine 0.56, window 2026-09-30-multilingual"
+  },
+  {
+   "case": "T012",
+   "window": "2026-10-03-live",
+   "label": "follow_up_to",
+   "canonical": true,
+   "scored": true,
+   "coverage": "BLOCKED_BY_IDENTITY",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": "cue 'condemned', shared ['christa pike', 'tennessee'], cosine 0.83, window 2026-10-03-live"
+  },
+  {
+   "case": "T013",
+   "window": "2026-10-03-live",
+   "label": "follow_up_to",
+   "canonical": true,
+   "scored": true,
+   "coverage": "BLOCKED_BY_IDENTITY",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": "cue 'condemned', shared ['tennessee', 'us'], cosine 0.83, window 2026-10-03-live"
+  },
+  {
+   "case": "T014",
+   "window": "2026-10-03-live",
+   "label": "follow_up_to",
+   "canonical": true,
+   "scored": true,
+   "coverage": "BLOCKED_BY_IDENTITY",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": "cue 'condemned', shared ['christa pike', 'pike', 'tennessee', 'us'], cosine 0.82, window 2026-10-03-live"
+  },
+  {
+   "case": "T015",
+   "window": "2026-08-31",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": "cue 'welcomed', shared ['hong kong'], cosine 0.47, window 2026-08-31"
+  },
+  {
+   "case": "T016",
+   "window": "2026-09-30-multilingual",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": "cue 'welcomed', shared ['haiti', 'united nations'], cosine 0.68, window 2026-09-30-multilingual"
+  },
+  {
+   "case": "T017",
+   "window": "2026-08-21",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": "cue 'condemns', shared ['israel'], cosine 0.45, window 2026-08-21"
+  },
+  {
+   "case": "T018",
+   "window": "2026-09-27-live",
+   "label": "reaction_to",
+   "canonical": true,
+   "scored": true,
+   "coverage": "BLOCKED_BY_IDENTITY",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": "cue 'rejects', shared ['hormuz', 'iran', 'tehran', 'united states', 'us'], cosine 0.73, window 2026-09-27-live"
+  },
+  {
+   "case": "T019",
+   "window": "2026-09-25",
+   "label": "same_convened_event",
+   "canonical": true,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": "cue 'denounce', shared ['israel'], cosine 0.59, window 2026-09-25"
+  },
+  {
+   "case": "T020",
+   "window": "2026-09-29-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": "cue 'criticism', shared ['myanmar'], cosine 0.46, window 2026-09-29-live"
+  },
+  {
+   "case": "T021",
+   "window": "2026-08-31",
+   "label": "same_attack_wave",
+   "canonical": true,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": "cue 'rejected', shared ['iran', 'uae', 'us'], cosine 0.41, window 2026-08-31"
+  },
+  {
+   "case": "T022",
+   "window": "2026-09-29-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "BLOCKED_BY_IDENTITY",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": "cue 'rejects', shared ['iran', 'united states', 'us'], cosine 0.60, window 2026-09-29-live"
+  },
+  {
+   "case": "T023",
+   "window": "2026-09-29-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "BLOCKED_BY_IDENTITY",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": "cue 'rejects', shared ['iran', 'tehran', 'united states', 'us'], cosine 0.52, window 2026-09-29-live"
+  },
+  {
+   "case": "T024",
+   "window": "2026-08-21",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": "cue 'respond', shared ['japan', 'tokyo', 'us'], cosine 0.46, window 2026-08-21"
+  },
+  {
+   "case": "T025",
+   "window": "2026-10-03-live",
+   "label": "AMBIGUOUS",
+   "canonical": false,
+   "scored": false,
+   "coverage": "BLOCKED_BY_IDENTITY",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": "cue 'protesting against', shared ['france'], cosine 0.85, window 2026-10-03-live"
+  },
+  {
+   "case": "T026",
+   "window": "2026-08-21",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": "cue 'condemns', shared ['israel'], cosine 0.47, window 2026-08-21"
+  },
+  {
+   "case": "T027",
+   "window": "2026-09-29-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": "cue 'welcome', shared ['china', 'hong kong'], cosine 0.75, window 2026-09-29-live"
+  },
+  {
+   "case": "T028",
+   "window": "2026-09-30-multilingual",
+   "label": "same_convened_event",
+   "canonical": true,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": "cue 'rejected', shared ['united states'], cosine 0.57, window 2026-09-30-multilingual"
+  },
+  {
+   "case": "T029",
+   "window": "2026-09-27-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "BLOCKED_BY_IDENTITY",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": "cue 'rejected', shared ['hormuz', 'iran', 'united states'], cosine 0.58, window 2026-09-27-live"
+  },
+  {
+   "case": "T030",
+   "window": "2026-08-21",
+   "label": "reaction_to",
+   "canonical": true,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": "cue 'slams', shared ['iran', 'us'], cosine 0.58, window 2026-08-21"
+  },
+  {
+   "case": "T031",
+   "window": "2026-09-29-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": "cue 'rejects', shared ['iran', 'tehran'], cosine 0.45, window 2026-09-29-live"
+  },
+  {
+   "case": "T032",
+   "window": "2026-09-30-multilingual",
+   "label": "commentary_on",
+   "canonical": true,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": "cue 'rejected', shared ['united states'], cosine 0.66, window 2026-09-30-multilingual"
+  },
+  {
+   "case": "T033",
+   "window": "2026-09-30-multilingual",
+   "label": "SAME_DEVELOPMENT_SUSPECTED",
+   "canonical": false,
+   "scored": false,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": "cue 'reactivar', shared ['english', 'iran'], cosine 0.57, window 2026-09-30-multilingual"
+  },
+  {
+   "case": "T034",
+   "window": "2026-10-03-live",
+   "label": "SAME_DEVELOPMENT_SUSPECTED",
+   "canonical": false,
+   "scored": false,
+   "coverage": "BLOCKED_BY_IDENTITY",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": "cue 'protests over', shared ['madrid', 'spain'], cosine 0.88, window 2026-10-03-live"
+  },
+  {
+   "case": "T035",
+   "window": "2026-09-30-multilingual",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": "cue 'welcomed', shared ['united nations'], cosine 0.60, window 2026-09-30-multilingual"
+  },
+  {
+   "case": "T036",
+   "window": "2026-08-31",
+   "label": "reaction_to",
+   "canonical": true,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": "cue 'welcomed', shared ['beijing', 'china', 'galbot', 'hong kong', 'hung hom'], cosine 0.82, window 2026-08-31"
+  },
+  {
+   "case": "T037",
+   "window": "2026-09-27-live",
+   "label": "follow_up_to",
+   "canonical": true,
+   "scored": true,
+   "coverage": "BLOCKED_BY_IDENTITY",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": "cue 'rejecting', shared ['iran', 'strait of hormuz', 'tehran', 'united states', 'us'], cosine 0.64, window 2026-09-27-live"
+  },
+  {
+   "case": "T038",
+   "window": "2026-08-21",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": "cue 'slams', shared ['iran', 'united states', 'us'], cosine 0.45, window 2026-08-21"
+  },
+  {
+   "case": "T039",
+   "window": "2026-09-30-multilingual",
+   "label": "SAME_DEVELOPMENT_SUSPECTED",
+   "canonical": false,
+   "scored": false,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": "cue 'reactivar', shared ['english', 'iran'], cosine 0.55, window 2026-09-30-multilingual"
+  },
+  {
+   "case": "T040",
+   "window": "2026-10-03-live",
+   "label": "follow_up_to",
+   "canonical": true,
+   "scored": true,
+   "coverage": "BLOCKED_BY_IDENTITY",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": "cue 'condemned', shared ['christa pike', 'tennessee'], cosine 0.85, window 2026-10-03-live"
+  },
+  {
+   "case": "T041",
+   "window": "2026-10-03-live",
+   "label": "SAME_DEVELOPMENT_SUSPECTED",
+   "canonical": false,
+   "scored": false,
+   "coverage": "BLOCKED_BY_IDENTITY",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": "cue 'condemned', shared ['christa pike', 'pike', 'tennessee'], cosine 0.87, window 2026-10-03-live"
+  },
+  {
+   "case": "T042",
+   "window": "2026-09-27-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": "cue 'rejecting', shared ['iran', 'united states'], cosine 0.59, window 2026-09-27-live"
+  },
+  {
+   "case": "T043",
+   "window": "2026-08-21",
+   "label": "reaction_to",
+   "canonical": true,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": "cue 'slams', shared ['iran', 'united states', 'us'], cosine 0.47, window 2026-08-21"
+  },
+  {
+   "case": "T044",
+   "window": "2026-09-29-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "NOT_SURFACED",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": "cue 'welcome', shared ['china', 'hong kong'], cosine 0.76, window 2026-09-29-live"
+  },
+  {
+   "case": "T045",
+   "window": "2026-09-27-live",
+   "label": "NO_RELATION",
+   "canonical": false,
+   "scored": true,
+   "coverage": "BLOCKED_BY_IDENTITY",
+   "hit": false,
+   "reversed": false,
+   "candidate_types": [],
+   "families": "cue 'rejected', shared ['hormuz', 'iran', 'united states', 'us'], cosine 0.75, window 2026-09-27-live"
+  }
+ ]
+}
