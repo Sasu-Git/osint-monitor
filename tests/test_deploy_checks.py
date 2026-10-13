@@ -206,3 +206,19 @@ def test_development_growth_separates_backlog_from_fresh_developments(tmp_path):
     [growth] = [c for c in postdeploy_check.runtime_checks(D.ro(copy), pre, since, None, 3, 5.0)
                 if "explosion" in c["check"]]
     assert "backlog not counted: 2" in growth["detail"]
+
+
+def test_memberships_stamped_by_the_running_daemon_are_not_invented_but_new_stamps_are(tmp_path):
+    copy, _ = _rehearsed(tmp_path)
+    conn = sqlite3.connect(copy)
+    conn.execute("UPDATE event_items SET added_at = '2026-10-06 00:00:00' WHERE id = 1")    # stamped by the daemon
+    conn.commit()
+    before = D.snapshot(D.ro(copy))                     # a same-schema deploy: one membership already stamped
+    assert before["stamped_memberships"] == 1
+    [inv] = [c for c in D.verify_structure(D.ro(copy), before) if "invented" in c["check"]]
+    assert inv["ok"]
+    conn.execute("UPDATE event_items SET added_at = '2026-10-06 00:00:00' WHERE id = 2")    # a migration stamping history
+    conn.commit()
+    conn.close()
+    [inv] = [c for c in D.verify_structure(D.ro(copy), before) if "invented" in c["check"]]
+    assert not inv["ok"] and "2 pre-deploy memberships" in inv["detail"]
