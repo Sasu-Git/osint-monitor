@@ -168,3 +168,19 @@ The live DB is not touched: the repair runs on live only with a new deploy candi
 - **Daemon supervision is production architecture**, not soak tooling. It runs host-side (scheduled task, config
   outside git) and is not part of the deployed application code; the deployment runbook now holds it before stopping
   the daemon (X0) and re-pins and releases it after the start (S3) or a rollback (R-4b).
+
+## Items 3 and 4 (2026-10-13)
+
+- **Item 3** (`d3b8da5`). `scripts/postdeploy_check.py`: stage statuses are required only for finished runs that
+  ingested new items (no-op runs are exempt and counted); the Development growth rate counts only fresh
+  Developments, and the backlog (earliest item published before the daemon start, or only first-time sources) is
+  reported separately. Tests in `tests/test_deploy_checks.py`.
+- **Item 4.** `alerting/engine.py`: a known signal gap that turns operational (our collection outage) is held as
+  *suspended*: no "Signal restored" while we are not collecting, no new "gap opened" when it turns analytic again,
+  "restored" only when the gap is really gone. A source silence that began before the first recorded pipeline run is
+  operational (no collection evidence), so its resumption is not a "Source resumed" alert. Tests in
+  `tests/test_source_observability.py`.
+
+**Next deploy candidate (scope):** item 1 actor normalisation and the actor-identity repair tool (live repair only
+with approval), item 2 trend baseline, item 3 post-deploy checks, item 4 operational alerts. Not in it: the founder
+guard (off, separate branch), item 5, the failing collectors. pytest 691 passed / 3 xfailed; smoke passed.
