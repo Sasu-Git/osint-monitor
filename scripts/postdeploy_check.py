@@ -27,6 +27,31 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import deploy_checks as D  # noqa: E402
 
 
+def development_growth(conn, pre: dict, since: datetime) -> tuple[int, int]:
+    """New Developments since the start, split into (fresh, backlog). Backlog: the earliest member item was published
+    before the daemon started (items that waited in feeds), or every member item comes from a source that had no item
+    before the deploy (a first-time source's initial feed fill). A source-set change or a restart after a pause fills
+    in backlog by design; only fresh Developments measure the steady creation rate."""
+    max_item = pre["live_state"]["max_ids"]["raw_items"] or 0
+    max_event = pre["live_state"]["max_ids"]["events"] or 0
+    first_time = {r[0] for r in conn.execute("SELECT source_id FROM raw_items GROUP BY source_id HAVING MIN(id) > ?",
+                                             (max_item,))}
+    fresh = backlog = 0
+    for event_id, earliest in conn.execute(
+            "SELECT e.id, MIN(COALESCE(r.published_at, r.fetched_at)) FROM events e "
+            "JOIN event_items ei ON ei.event_id = e.id JOIN raw_items r ON r.id = ei.item_id "
+            "WHERE e.id > ? GROUP BY e.id", (max_event,)):
+        sources = {r[0] for r in conn.execute("SELECT DISTINCT r.source_id FROM event_items ei "
+                                              "JOIN raw_items r ON r.id = ei.item_id WHERE ei.event_id = ?",
+                                              (event_id,))}
+        early = earliest is not None and str(earliest) < since.isoformat(sep=" ")
+        if early or (sources and sources <= first_time):
+            backlog += 1
+        else:
+            fresh += 1
+    return fresh, backlog
+
+
 def runtime_checks(conn, pre: dict, since: datetime, logs_dir: Path | None, max_new_situations: int,
                    explosion_factor: float) -> list[dict]:
     out = []
@@ -36,16 +61,20 @@ def runtime_checks(conn, pre: dict, since: datetime, logs_dir: Path | None, max_
 
     s = since.isoformat(sep=" ")
     target_sha = (pre.get("target") or {}).get("sha")
-    runs = conn.execute("SELECT id, tier, status, code_sha, config_hash, stages, items_collected FROM pipeline_runs "
-                        "WHERE started_at >= ? ORDER BY started_at", (s,)).fetchall()
+    runs = conn.execute("SELECT id, tier, status, code_sha, config_hash, stages, items_collected, items_new "
+                        "FROM pipeline_runs WHERE started_at >= ? ORDER BY started_at", (s,)).fetchall()
     check("pipeline runs recorded since start", runs, f"{len(runs)} runs")
     if runs:
         shas = {r[3] for r in runs}
         check("runs carry the target code SHA", shas == {target_sha}, f"run SHAs {sorted(x or '?' for x in shas)}, "
                                                                        f"target {target_sha}")
         check("runs carry a config hash", all(r[4] for r in runs), f"{sum(1 for r in runs if not r[4])} without")
-        empty = [r[0][:8] for r in runs if r[2] != "running" and not json.loads(r[5] or "{}")]
-        check("finished runs record stage statuses", not empty, f"{len(empty)} finished runs without stages")
+        # a run that ingested nothing new skips post-processing by design: only runs with new items owe stages
+        finished = [r for r in runs if r[2] != "running"]
+        owed = [r for r in finished if (r[7] or 0) > 0]
+        empty = [r[0][:8] for r in owed if not json.loads(r[5] or "{}")]
+        check("finished runs with new items record stage statuses", not empty,
+              f"{len(empty)} of {len(owed)} without stages ({len(finished) - len(owed)} no-op runs exempt)")
         failed = [(r[1], r[2]) for r in runs if r[2] == "failed"]
         check("no failed pipeline runs", not failed, f"{len(failed)} failed: {failed[:5]}", warn=True)
     new_items = conn.execute("SELECT COUNT(*), SUM(ingested_run_id IS NULL) FROM raw_items WHERE id > ?",
@@ -75,14 +104,14 @@ def runtime_checks(conn, pre: dict, since: datetime, logs_dir: Path | None, max_
           f"{len(new_slugs)} new: {new_slugs[:10]} (limit {max_new_situations})")
     check("no Situation disappeared", pre_slugs <= now_slugs, f"missing {sorted(pre_slugs - now_slugs)[:10]}")
     hours = max((datetime.utcnow() - since).total_seconds() / 3600, 0.25)
-    new_dev = conn.execute("SELECT COUNT(*) FROM events WHERE id > ?", (pre["live_state"]["max_ids"]["events"] or 0,)
-                           ).fetchone()[0]
+    fresh, backlog = development_growth(conn, pre, since)
     base = conn.execute("SELECT COUNT(*) FROM events WHERE id <= ? AND first_reported_at >= ?",
                         (pre["live_state"]["max_ids"]["events"] or 0,
                          (since - timedelta(days=7)).isoformat(sep=" "))).fetchone()[0] / (7 * 24)
-    rate = new_dev / hours
-    check("no Development count explosion", rate <= max(explosion_factor * base, 2.0),
-          f"{new_dev} new in {hours:.1f} h = {rate:.2f}/h vs pre-deploy {base:.2f}/h (limit x{explosion_factor})")
+    rate = fresh / hours
+    check("no Development count explosion (backlog excluded)", rate <= max(explosion_factor * base, 2.0),
+          f"{fresh} new in {hours:.1f} h = {rate:.2f}/h vs pre-deploy {base:.2f}/h (limit x{explosion_factor}); "
+          f"backlog not counted: {backlog} (published before the start, or only from first-time sources)")
     alerts = conn.execute("SELECT alert_type, delivered_via FROM alerts WHERE created_at >= ?", (s,)).fetchall()
     outage_like = [a for a in alerts if a[0] in ("signal_gap_opened", "source_silence_break")]
     check("no signal-gap / silence-break alerts to review", not outage_like,
