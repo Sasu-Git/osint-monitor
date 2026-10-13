@@ -1,5 +1,9 @@
 # Founder-distinctness guard: census before building an evaluation set (2026-10-13)
 
+**Status (owner, 2026-10-13): DEFERRED: no demonstrated incremental value after actor normalisation.** The guard stays
+off and on this branch. Its evaluation starts only when a live census (`census.py`) finds one or more genuine
+guard-positive founder pairs.
+
 Owner request: a frozen evaluation set answering "does the guard suppress duplicate founders without suppressing
 legitimate Situation creation?". Before drawing it, the founder-pair population was measured.
 
