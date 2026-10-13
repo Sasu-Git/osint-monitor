@@ -8,7 +8,11 @@ Serves review.html and a small JSON API on 127.0.0.1:
 Labels: SHOULD_JOIN (the item belongs in one Development with at least one shown partner; name which), SHOULD_NOT_JOIN,
 AMBIGUOUS. The frozen files (sample-manifest.json, review-cases.json, key.json) are never written.
 
-Usage: python review_server.py [--port 8766]   then open http://127.0.0.1:8766/
+Provenance: every entry records its reviewer (--reviewer, default "owner"). One reviewer per case: a label from a
+different reviewer on an already-labelled case is refused (record a disagreement as a separate review note instead).
+Anonymous labels are not accepted.
+
+Usage: python review_server.py [--port 8766] [--reviewer owner]   then open http://127.0.0.1:8766/
 """
 from __future__ import annotations
 
@@ -36,7 +40,7 @@ def load_labels(case_ids):
         raw = yaml.safe_load(LABELS_FILE.read_text(encoding="utf-8")) or {}
     except FileNotFoundError:
         raw = {}
-    return {c: {f: (raw.get(c) or {}).get(f) for f in ("label", "partners", "note", "labelled_at")} for c in case_ids}
+    return {c: {f: (raw.get(c) or {}).get(f) for f in ("label", "partners", "note", "reviewer", "labelled_at")} for c in case_ids}
 
 
 def save_labels(labels):
@@ -51,6 +55,7 @@ class Handler(BaseHTTPRequestHandler):
     cases: dict = {}
     key: dict = {}
     labels: dict = {}
+    reviewer: str = "owner"
 
     def _send(self, status, body, ctype):
         self.send_response(status)
@@ -100,9 +105,13 @@ class Handler(BaseHTTPRequestHandler):
                 raise ValueError("SHOULD_JOIN needs at least one partner")
             if label != "SHOULD_JOIN":
                 partners = []
+            prior = self.labels[cid].get("reviewer")
+            if self.labels[cid].get("label") and prior and prior != self.reviewer:
+                raise ValueError(f"{cid} is already labelled by {prior}; record a disagreement as a review note")
         except (ValueError, TypeError, json.JSONDecodeError) as e:
             return self._json(400, {"error": str(e)})
         self.labels[cid] = {"label": label, "partners": partners or None, "note": (body.get("note") or "").strip() or None,
+                            "reviewer": self.reviewer,
                             "labelled_at": datetime.now(timezone.utc).isoformat(timespec="seconds")}
         save_labels(self.labels)
         print(f"saved {cid}: {label}", flush=True)
@@ -111,6 +120,9 @@ class Handler(BaseHTTPRequestHandler):
 
 def main() -> int:
     port = int(sys.argv[sys.argv.index("--port") + 1]) if "--port" in sys.argv else 8766
+    Handler.reviewer = (sys.argv[sys.argv.index("--reviewer") + 1] if "--reviewer" in sys.argv else "owner").strip()
+    if not Handler.reviewer:
+        raise SystemExit("--reviewer must not be empty")
     cases = json.loads((HERE / "review-cases.json").read_text(encoding="utf-8"))
     Handler.cases = {c["case"]: c for c in cases}
     Handler.key = json.loads((HERE / "key.json").read_text(encoding="utf-8"))
