@@ -1,4 +1,4 @@
-# Live-daemon supervisor (post-soak item 6)
+# Live-daemon supervisor (production architecture since 2026-10-13; post-soak item 6)
 
 The live daemon stopped unattended twice in five days: a console `^C` on 2026-10-08 20:49 UTC, and a silent stop
 (no traceback, no crash event) on 2026-10-09 21:05 UTC that cost 3 days 10 h of collection. The supervisor restarts

@@ -152,3 +152,19 @@ recurrence"); actor-identity retirements keep their wording.
   pytest 685 passed / 3 xfailed; smoke passed.
 
 The live DB is not touched: the repair runs on live only with a new deploy candidate and owner approval.
+
+## Owner decisions, 2026-10-13 (after items 6, 2 and 1a)
+
+- **Item 1 option (a) is split out.** The founder-distinctness guard changes the Situation creation contract after
+  the exact actor-set holdout was accepted, and it was derived from the Fairford, Irkutsk and Ucrania failures, so it
+  needs its own evaluation. It lives on `feat/situation-founder-guard` (at `1ef8f2b`, guard on). On this branch the code
+  stays but `founder_same_occurrence_hours` is **null (off)**, and the repair retires only actor-identity failures. No
+  live Situation is repaired yet.
+- **Exact actor set stays the Situation policy.** The guard may become a precondition on founder distinctness; it does
+  not redefine Situation identity.
+- **Next deploy candidate:** the safe fixes only: the trend baseline (item 2), post-deploy check false failures
+  (item 3) and false operational alerts (item 4), plus the item 1 actor normalisation already gated.
+- **Hot-tier latency (item 5) and failing collectors** move to the following pass unless they worsen.
+- **Daemon supervision is production architecture**, not soak tooling. It runs host-side (scheduled task, config
+  outside git) and is not part of the deployed application code; the deployment runbook now holds it before stopping
+  the daemon (X0) and re-pins and releases it after the start (S3) or a rollback (R-4b).

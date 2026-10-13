@@ -328,68 +328,76 @@ def test_situation_report_shows_decisions_candidates_and_recurring_pairs(session
         "Houthis claim attacks on Saudi oil facilities", "France to protect Saudi terminal from Houthis")]}
 
 
-# --- founders must be distinct occurrences (post-soak item 1, option a) -----------------------------------------
+# --- founders must be distinct occurrences (post-soak item 1, option a; OFF in config, evaluated separately) ----
+
+@pytest.fixture(scope="module")
+def guarded(config):
+    return SituationGrouper(config.model_copy(update={"policy": config.policy.model_copy(
+        update={"founder_same_occurrence_hours": 48})}))
+
+
+def test_the_founder_guard_is_off_in_the_shipped_config(config):
+    assert config.policy.founder_same_occurrence_hours is None
 
 def founder(title, *actors, id, hours_ago, places=(), lang="en"):
     d = dev(title, *actors, id=id, hours_ago=hours_ago)
     return d.model_copy(update={"places": list(places), "languages": [lang]})
 
 
-def test_one_occurrence_reported_twice_does_not_found_a_situation(grouper, seeds):
+def test_one_occurrence_reported_twice_does_not_found_a_situation(guarded, seeds):
     batch = [founder("US bombers leave RAF Fairford", "United States", "United Kingdom", id=1, hours_ago=6,
                      places=["fairford"]),
              founder("El Pentagono retira sus bombarderos de Fairford", "Estados Unidos", "Reino Unido", id=2,
                      hours_ago=4, places=["fairford"], lang="es")]
-    assignments, created = grouper.group(batch, seeds)
+    assignments, created = guarded.group(batch, seeds)
     assert created == [] and slugs(assignments) == [None, None]
 
 
-def test_distinct_occurrences_with_the_same_actors_still_found_one(grouper, seeds):
+def test_distinct_occurrences_with_the_same_actors_still_found_one(guarded, seeds):
     batch = [founder("Poland expels Russian diplomats", "Russia", "Poland", id=1, hours_ago=30, places=["warsaw"]),
              founder("Russia summons the Polish ambassador", "Russia", "Poland", id=2, hours_ago=2,
                      places=["moscow"])]
-    assert [c.slug for c in grouper.group(batch, seeds)[1]] == ["poland-russia"]
+    assert [c.slug for c in guarded.group(batch, seeds)[1]] == ["poland-russia"]
 
 
-def test_the_same_place_days_apart_is_two_occurrences(grouper, seeds):
+def test_the_same_place_days_apart_is_two_occurrences(guarded, seeds):
     batch = [founder("Strike on Kyiv", "Russia", "Poland", id=1, hours_ago=72, places=["kyiv"]),
              founder("Another strike on Kyiv", "Russia", "Poland", id=2, hours_ago=1, places=["kyiv"])]
-    assert [c.slug for c in grouper.group(batch, seeds)[1]] == ["poland-russia"]
+    assert [c.slug for c in guarded.group(batch, seeds)[1]] == ["poland-russia"]
 
 
-def test_a_third_distinct_founder_completes_the_recurrence(grouper, seeds):
+def test_a_third_distinct_founder_completes_the_recurrence(guarded, seeds):
     batch = [founder("Fairford, English", "United States", "United Kingdom", id=1, hours_ago=6, places=["fairford"]),
              founder("Fairford, Spanish", "Estados Unidos", "Reino Unido", id=2, hours_ago=4, places=["fairford"],
                      lang="es"),
              founder("US and UK sign a new basing agreement", "United States", "United Kingdom", id=3, hours_ago=1,
                      places=["london"])]
-    assert [c.slug for c in grouper.group(batch, seeds)[1]] == ["united-kingdom-united-states"]
+    assert [c.slug for c in guarded.group(batch, seeds)[1]] == ["united-kingdom-united-states"]
 
 
-def test_founders_without_places_count_as_distinct(grouper, seeds):
+def test_founders_without_places_count_as_distinct(guarded, seeds):
     batch = [founder("A", "Russia", "Poland", id=1, hours_ago=3), founder("B", "Russia", "Poland", id=2, hours_ago=1)]
-    assert [c.slug for c in grouper.group(batch, seeds)[1]] == ["poland-russia"]
+    assert [c.slug for c in guarded.group(batch, seeds)[1]] == ["poland-russia"]
 
 
 def test_the_rule_can_be_switched_off(config, seeds):
-    g = SituationGrouper(config.model_copy(update={"policy": config.policy.model_copy(
-        update={"founder_same_occurrence_hours": None})}))
+    g = SituationGrouper(config)                          # the shipped config: guard off
     batch = [founder("Fairford, English", "United States", "United Kingdom", id=1, hours_ago=6, places=["fairford"]),
              founder("Fairford, Spanish", "Estados Unidos", "Reino Unido", id=2, hours_ago=4, places=["fairford"],
                      lang="es")]
     assert [c.slug for c in g.group(batch, seeds)[1]] == ["united-kingdom-united-states"]
 
 
-def test_same_language_occurrences_in_one_place_stay_distinct(grouper, seeds):
+def test_same_language_occurrences_in_one_place_stay_distinct(guarded, seeds):
     # a papal visit: the speech and the Mass are two occurrences in Paris within a day, both in English
     batch = [founder("Pope warns against AI in Paris speech", "Vatican", "France", id=1, hours_ago=20, places=["paris"]),
              founder("Hundreds of thousands at the Pope's Paris Mass", "Vatican", "France", id=2, hours_ago=2,
                      places=["paris"])]
-    assert grouper.distinct_occurrences(batch) == 2
+    assert guarded.distinct_occurrences(batch) == 2
 
 
 
-def test_signatures_carry_languages_and_specific_places(session):
+def test_signatures_carry_languages_and_specific_places(session, guarded):
     from osint_monitor.core.database import EventItem, ItemEntity, RawItem, Source
     from osint_monitor.processors.situations.store import signature_for_event
     en = Source(name="BBC World", type="rss", url="https://bbc.invalid/")
@@ -413,4 +421,4 @@ def test_signatures_carry_languages_and_specific_places(session):
         sigs.append(signature_for_event(session, event))
     assert [s.languages for s in sigs] == [["en"], ["es"]]
     assert all(s.places == ["fairford"] for s in sigs)   # Russia is a country, Washington stands for a state
-    assert SituationGrouper(load_situations_config()).distinct_occurrences(sigs) == 1
+    assert guarded.distinct_occurrences(sigs) == 1
