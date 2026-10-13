@@ -67,3 +67,34 @@ original `estados-unidos-united-states` was the same pattern (E135/E157 = one Fa
 
 **The live DB has not been touched.** The repair runs on live only with a new deploy candidate and owner
 approval.
+
+## Item 6 (2026-10-13): daemon supervisor
+
+`scripts/ops/supervisor/` (`9b2d652`, `a3cdff4`), installed as the scheduled task "OSINT daemon supervisor" on the
+live host: restarts the daemon when its process is gone, pinned commit only, at most 3 times an hour, HOLD file for
+deliberate stops, keeps the keep-awake running. Trigger: a second unattended stop (2026-10-09 21:05 UTC, silent)
+cost 3 days 10.5 h of collection. Operating notes in `data/deploy/LIVE-DAEMON.md` (host, outside git).
+
+## Item 2 (2026-10-13): trend baseline (design fixed before code changes)
+
+**Diagnosis** (backup-API copy of the live DB, 2026-10-13): `detect_anomalies` compares an entity's mentions in the
+last 24 h (by `fetched_at`, every source) with the mean and standard deviation of its stored 24 h snapshots from
+the last 30 days. The live DB starts on 2026-09-25 with 22 sources; the 2026-10-05 deploy added 30 sources and
+daily items rose about 5x (250 to 1,300). Trend alerts went from 6-20 a day to 167 (10-05) and 307 (10-06).
+
+**Rules:**
+1. **Stable source cohort.** A source counts only once it has collected for at least 14 days (its first item is at
+   least 14 days old). The baseline uses only days on which every cohort source was already collecting, so the
+   baseline and the current window always cover the same sources: a source-set change cannot raise an anomaly by
+   itself, and a new source enters with 14 days of its own history.
+2. **Event time.** Mentions are counted by publication time (collection time when missing), so a backlog
+   collected at once after an outage does not spike.
+3. **Incomplete days.** A baseline day whose cohort item volume is below half of the median day is excluded
+   (outages, partial collection).
+4. **Baseline from raw items.** Daily counts are computed from the items at each run (no stored baseline to go
+   stale or to reset); trend snapshots are still stored for the dashboard. At least 7 complete baseline days are
+   required, and the standard deviation is floored at the Poisson level (`sqrt(mean)`, at least 1) so that a
+   near-constant series cannot turn a small change into many sigmas. The anomaly threshold stays 2 sigma.
+
+**Measurement:** replay detection at the end of each day on the DB copy, old method vs new, alerts per day; the
+source-expansion days (10-05, 10-06) must not spike under the new rules.
