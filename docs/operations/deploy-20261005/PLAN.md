@@ -184,3 +184,18 @@ The live DB is not touched: the repair runs on live only with a new deploy candi
 **Next deploy candidate (scope):** item 1 actor normalisation and the actor-identity repair tool (live repair only
 with approval), item 2 trend baseline, item 3 post-deploy checks, item 4 operational alerts. Not in it: the founder
 guard (off, separate branch), item 5, the failing collectors. pytest 691 passed / 3 xfailed; smoke passed.
+
+## Candidate regression gate (2026-10-13, branch at `a5fcbd9`, against `main` = `5f046b3`)
+
+| gate | result |
+|---|---|
+| pytest | 691 passed / 3 xfailed (before the rehearsal fix; that fix adds 2 tests, both passing) |
+| smoke | passed |
+| identity gold check | passed (checks 1-6) |
+| Phase 2 identity (development) | 43/65, 43/58, 22/100, 15/58, 16/19, 12/31: identical to `main` (fix-1 reference) |
+| clustering benchmark (development) | every metric identical; 8 pair-diagnostic fields differ only by actor normalisation ("drc" -> "democratic republic of the congo", item 1) |
+| entity benchmark | no unit changed |
+| migration rehearsal (backup-API copy of the live DB, schema 6 -> head 6) | PRE-DEPLOY OK, 12 checks. The "no invented membership timestamps" check first failed falsely on the 2,222 memberships the running daemon stamped since 2026-10-05; fixed in `a5fcbd9` (the snapshot records already-stamped memberships). |
+
+Ready to become a deploy candidate on owner approval (tag, then the deployment runbook with supervisor hold X0 / re-pin
+S3). The live Situation repair (three actor-identity retirements) stays a separate, approved step.
