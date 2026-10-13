@@ -11,11 +11,13 @@ before review ends (the review page reveals each case's key only after its label
 - pools: below_threshold 1028, segmentation_es 69, segmentation_it 92, cross_language 190
 - labels: SHOULD_JOIN (with the partner ids it should join), SHOULD_NOT_JOIN, AMBIGUOUS
 
+Hashes are over the committed (LF) bytes; a CRLF checkout must be normalised first.
+
 | file | sha256 |
 |---|---|
 | build_sample.py | `b82381950e51c85c8c0e0189f68c358b5149745cf28088a97105a5b4fa54bd1e` |
-| sample-manifest.json | `f2189d75b0cc8793db0903e611df7726524e968a898780ed7592faae0180711e` |
-| review-cases.json | `4ad21683e460d9cbfec4925923abac25bd542df70ced32876325799c1734a541` |
-| key.json | `356c3ec75338c03c5e6c703f7295aefc50d3325da101ffce3fedd98f09c57f0c` |
+| sample-manifest.json | `8eae9a2bd6705074412f889201199a47474ec628fcd6af5db92337a04865ad99` |
+| review-cases.json | `403025ca27c8281f338eebba09d854f9c0eec7701975cacd0632c086c20f8544` |
+| key.json | `5dcc40e3267ed34b3389e976d8a0ee17be4ee2b8c5dd7601af057c27846a5926` |
 
 Review: `python review_server.py` then open http://127.0.0.1:8766/ . Score: `python score.py`.
