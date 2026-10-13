@@ -98,3 +98,26 @@ daily items rose about 5x (250 to 1,300). Trend alerts went from 6-20 a day to 1
 
 **Measurement:** replay detection at the end of each day on the DB copy, old method vs new, alerts per day; the
 source-expansion days (10-05, 10-06) must not spike under the new rules.
+
+**Item 2 amendment (after the first measurement, 2026-10-13).** Counting days without a mention as zero lets a
+rare entity reach 2 sigma with two mentions: at the first evaluation with a cohort (2026-10-10 00:00 UTC), 15 of
+the 23 anomalies had 2-4 mentions (Waze, Yandex, a single person's name), while those with 5 or more read as news
+(Russia, ICC, Panama, Putin, Poland). The old rule avoided this only indirectly (it skipped entities with fewer than
+5 snapshots). Added: an anomaly needs at least 5 mentions in the current 24 h (`MIN_CURRENT_MENTIONS`). Nothing else
+changed.
+
+**Item 2 result (2026-10-13).** Replayed at the end of each day on a backup-API copy of the live DB
+(`data/eval/trends-20261013.snapshot.db`), old rule vs new:
+
+| evaluated (UTC) | old | new |
+|---|---|---|
+| 09-26 .. 10-04 (before the expansion) | 0-13 a day | 0 (no source has 14 days yet) |
+| 10-05 .. 10-09 (the source expansion) | 10, 39, 32, 32, 28 | **0** |
+| 10-10 00:00 (first evaluation with a 14-day cohort) | 15 | 8: US Department of Defense, Russia, Panama, Putin, Poland, Washington, ICC, Army |
+| 10-13 07:30 (after a 3.5-day outage) | 0 | 0 |
+
+The 30 sources added on 2026-10-05 enter the cohort on 2026-10-19; until then trend anomalies come from the
+original 22 sources only. Stored trend alerts from before this fix stay as they are (untrusted history).
+Tests: `tests/test_trend_baseline.py` (steady series, real surge, new source, backlog, outage days, short history,
+rare entity). pytest 677 passed / 3 xfailed; smoke passed. Not deployed: reaches the live daemon only with an approved
+candidate.
