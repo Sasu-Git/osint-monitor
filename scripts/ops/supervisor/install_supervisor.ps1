@@ -31,7 +31,7 @@ if (-not (Test-Path $config)) {
         log                   = (Join-Path $RuntimeDir "supervisor.jsonl")
         log_every_check       = $false
     }
-    ($cfg | ConvertTo-Json) | Out-File -Encoding utf8 $config
+    [System.IO.File]::WriteAllText($config, ($cfg | ConvertTo-Json), (New-Object System.Text.UTF8Encoding $false))   # no BOM
 }
 
 $pythonw = (Get-Content $config -Raw | ConvertFrom-Json).pythonw

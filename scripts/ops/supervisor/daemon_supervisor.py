@@ -95,7 +95,7 @@ def recent_restarts(log: Path, now: datetime) -> int:
 
 
 def main(config_path: str) -> int:
-    cfg = json.loads(Path(config_path).read_text(encoding="utf-8"))
+    cfg = json.loads(Path(config_path).read_text(encoding="utf-8-sig"))   # Windows PowerShell 5.1 writes a BOM
     log = Path(cfg["log"])
     log.parent.mkdir(parents=True, exist_ok=True)
     now = datetime.now(timezone.utc)
