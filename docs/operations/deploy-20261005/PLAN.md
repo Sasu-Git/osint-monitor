@@ -121,3 +121,34 @@ original 22 sources only. Stored trend alerts from before this fix stay as they 
 Tests: `tests/test_trend_baseline.py` (steady series, real surge, new source, backlog, outage days, short history,
 rare entity). pytest 677 passed / 3 xfailed; smoke passed. Not deployed: reaches the live daemon only with an approved
 candidate.
+
+## Item 1, option (a) (owner decision 2026-10-13): founders must be distinct occurrences
+
+**Rule** (`SituationGrouper.distinct_occurrences`, policy `founder_same_occurrence_hours: 48`). A new Situation needs
+`create_min_developments` distinct occurrences, not Developments. Two founders count as one occurrence when they
+have **no language in common**, were first reported within 48 h of each other, and name a compatible specific place
+(the same place or one containing the other; countries and places that stand for a state, such as Washington or
+Moscow, do not count; a place the gazetteer does not know matches only the same name). Development signatures carry
+their items' languages and specific places.
+
+**Why cross-language only (amendment after the first live-copy check).** The first version, a shared place within
+48 h in any language, would have retired `france-pope`: the Pope's AI speech in Paris and the Paris Mass are two
+English-language occurrences of one visit. Identity keeps same-language occurrences apart; it is across languages that
+one occurrence becomes two Developments (the cross-language stage stays disabled), so only those founders are suspect.
+
+**Repair.** `scripts/repair_situations.py` also retires a created Situation that claims recurrence (at least
+`create_min_developments` Developments) but whose Developments are fewer distinct occurrences ("invalid
+recurrence"); actor-identity retirements keep their wording.
+
+**Checks.**
+- On the live-DB copy the founding pairs score as one occurrence: E159 (es) / E168 (en), the Irkutsk plague case;
+  E135 (en) / E157 (es), the Fairford bombers.
+- Dry run on a backup-API copy (2026-10-13): retires exactly `bolsonaro-fl-vio-bolsonaro`,
+  `estados-unidos-united-states` and `ucrania-ukraine` (a third Spanish/English actor collapse created live since
+  10-06). `france-pope` and `russia-united-states` stay: the latter now holds several distinct occurrences (plague,
+  fuel prices, sanctions law, diesel deal).
+- Tests: `tests/test_situations.py` (one occurrence in two languages, distinct occurrences, same place days apart, a
+  third founder, no places, switch off, same-language visit, signatures from real items), `tests/test_repair_situations.py`.
+  pytest 685 passed / 3 xfailed; smoke passed.
+
+The live DB is not touched: the repair runs on live only with a new deploy candidate and owner approval.

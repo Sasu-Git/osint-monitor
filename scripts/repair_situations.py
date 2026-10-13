@@ -11,7 +11,10 @@ with "Flávio Bolsonaro".
 A created (non-seed, not closed) Situation is invalid when, under the current normaliser, its primary actors:
 - include a name that is no longer an actor (an ambiguous family name, a non-actor topic), or
 - collapse onto fewer distinct actors (two names of one state), or
-- fall below the policy's ``min_actors_to_create``.
+- fall below the policy's ``min_actors_to_create``;
+
+or when its Developments are fewer distinct occurrences than ``create_min_developments`` (one occurrence reported
+twice, e.g. in two languages, counted as recurrence; ``founder_same_occurrence_hours``, post-soak item 1 option a).
 
 Repair, per invalid Situation:
 - status ``closed`` (never auto-joined or reopened)
@@ -47,6 +50,23 @@ def invalid_reason(actors: list[str], normalizer, min_actors: int) -> str | None
     return None
 
 
+def occurrence_reason(session, situation_id: int, config) -> str | None:
+    """Post-soak item 1, option a: a created Situation whose Developments are fewer distinct occurrences than the
+    creation minimum (one occurrence reported twice, e.g. in two languages) never recurred."""
+    from osint_monitor.core.database import Event
+    from osint_monitor.processors.situations.grouper import SituationGrouper
+    from osint_monitor.processors.situations.store import signature_for_event
+    if config.policy.founder_same_occurrence_hours is None:
+        return None
+    events = session.query(Event).filter(Event.situation_id == situation_id).order_by(Event.id).all()
+    if len(events) < config.policy.create_min_developments:       # no recurrence claimed
+        return None
+    n = SituationGrouper(config).distinct_occurrences([signature_for_event(session, e) for e in events])
+    if n < config.policy.create_min_developments:
+        return f"{len(events)} Developments but {n} distinct occurrence(s)"
+    return None
+
+
 def find_invalid(session, normalizer, config) -> list[dict]:
     from osint_monitor.core.database import Event, Situation
     seeds = {s.slug for s in config.situations}
@@ -55,9 +75,12 @@ def find_invalid(session, normalizer, config) -> list[dict]:
         if s.slug in seeds or s.status == "closed":
             continue
         reason = invalid_reason(list(s.primary_actors or []), normalizer, config.policy.min_actors_to_create)
+        kind = "actor identity"
+        if not reason:
+            reason, kind = occurrence_reason(session, s.id, config), "recurrence"
         if reason:
             members = [e.id for e in session.query(Event.id).filter(Event.situation_id == s.id)]
-            out.append({"id": s.id, "slug": s.slug, "actors": list(s.primary_actors or []), "reason": reason,
+            out.append({"id": s.id, "slug": s.slug, "actors": list(s.primary_actors or []), "reason": reason, "kind": kind,
                         "developments": members})
     return out
 
@@ -68,7 +91,7 @@ def retire(session, invalid: list[dict], today: str) -> None:
         s = session.get(Situation, row["id"])
         s.status = "closed"
         s.slug = f"{row['slug']}--retired-{today}"[:200]
-        s.short_description = f"Retired {today}: invalid actor identity ({row['reason']})."
+        s.short_description = f"Retired {today}: invalid {row.get('kind', 'actor identity')} ({row['reason']})."
         session.query(Event).filter(Event.situation_id == s.id).update({Event.situation_id: None},
                                                                       synchronize_session=False)
     session.commit()

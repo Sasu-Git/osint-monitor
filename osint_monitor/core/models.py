@@ -454,6 +454,8 @@ class DevelopmentSignature(BaseModel):
     region: Optional[str] = None
     occurred_at: Optional[datetime] = None
     embedding: Optional[list[float]] = Field(default=None, repr=False)
+    places: list[str] = Field(default_factory=list)      # specific (non-country) places named by its items
+    languages: list[str] = Field(default_factory=list)   # languages of its items
 
 
 class SituationProfile(BaseModel):

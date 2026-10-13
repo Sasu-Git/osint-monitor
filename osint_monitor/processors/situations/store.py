@@ -80,7 +80,41 @@ def signature_for_event(session: Session, event: Event) -> DevelopmentSignature:
         actors=list(dict.fromkeys(principals or mentioned)), actors_are_principal=bool(principals),
         region=event.region, occurred_at=event.first_reported_at,
         embedding=_event_embedding(session, [event.id]),
+        places=_specific_places(session, event.id),
+        languages=_languages(session, event.id),
     )
+
+
+def _languages(session: Session, event_id: int) -> list[str]:
+    from osint_monitor.core.database import Source
+    from osint_monitor.processors.language import item_language
+    rows = (session.query(RawItem.title, Source.name).join(EventItem, EventItem.item_id == RawItem.id)
+            .outerjoin(Source, Source.id == RawItem.source_id).filter(EventItem.event_id == event_id).all())
+    return sorted({item_language(source, title or "") for title, source in rows})
+
+
+def _specific_places(session: Session, event_id: int) -> list[str]:
+    """Specific places named by the development's items: gazetteer-canonical, not a country, and not a capital or
+    seat that stands for its state (``actors.yaml`` represents: "Washington", "Moscow" name a state, not one
+    occurrence). Places the gazetteer does not know are kept by their normalised name (they only match that name)."""
+    from osint_monitor.processors.actors import ActorNormalizer
+    actors = ActorNormalizer.load()
+    from osint_monitor.core.database import Entity, ItemEntity
+    from osint_monitor.processors.development_segmentation import LOCATION_TYPES, gazetteer
+    from osint_monitor.processors.entity_resolver import normalise
+    geo = gazetteer(False)
+    out = set()
+    for name, etype in (session.query(Entity.canonical_name, Entity.entity_type)
+                        .join(ItemEntity, ItemEntity.entity_id == Entity.id)
+                        .join(EventItem, EventItem.item_id == ItemEntity.item_id)
+                        .filter(EventItem.event_id == event_id)):
+        if etype not in LOCATION_TYPES or not name:
+            continue
+        place = geo.canonical(normalise(name))
+        surface = actors.surface(name) or ""
+        if place and not geo.is_country(place) and actors.represents(surface) == surface:
+            out.add(place)
+    return sorted(out)
 
 
 # -- the pipeline stage -------------------------------------------------------------------------

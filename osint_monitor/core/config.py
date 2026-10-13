@@ -237,6 +237,9 @@ class SituationPolicy(BaseModel):
     ambiguity_margin: float = 0.1        # two candidates this close are ambiguous too
     min_actors_to_create: int = 2        # single-actor storylines must be seeded
     create_min_developments: int = 2     # an actor set must recur before it becomes a situation
+    # founders first reported this close together that name a compatible specific place may be one occurrence
+    # (reported twice, e.g. in two languages) and count once towards create_min_developments; None disables
+    founder_same_occurrence_hours: Optional[float] = None
     create_window_days: int = 7
     dormant_after_days: int = 14
     centroid_developments: int = 20      # recent members averaged into the situation centroid

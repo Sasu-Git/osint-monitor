@@ -326,3 +326,91 @@ def test_situation_report_shows_decisions_candidates_and_recurring_pairs(session
     assert report["would_create"] == []
     assert report["recurring_pairs"] == {"houthis + saudi arabia": [rows[t]["event_id"] for t in (
         "Houthis claim attacks on Saudi oil facilities", "France to protect Saudi terminal from Houthis")]}
+
+
+# --- founders must be distinct occurrences (post-soak item 1, option a) -----------------------------------------
+
+def founder(title, *actors, id, hours_ago, places=(), lang="en"):
+    d = dev(title, *actors, id=id, hours_ago=hours_ago)
+    return d.model_copy(update={"places": list(places), "languages": [lang]})
+
+
+def test_one_occurrence_reported_twice_does_not_found_a_situation(grouper, seeds):
+    batch = [founder("US bombers leave RAF Fairford", "United States", "United Kingdom", id=1, hours_ago=6,
+                     places=["fairford"]),
+             founder("El Pentagono retira sus bombarderos de Fairford", "Estados Unidos", "Reino Unido", id=2,
+                     hours_ago=4, places=["fairford"], lang="es")]
+    assignments, created = grouper.group(batch, seeds)
+    assert created == [] and slugs(assignments) == [None, None]
+
+
+def test_distinct_occurrences_with_the_same_actors_still_found_one(grouper, seeds):
+    batch = [founder("Poland expels Russian diplomats", "Russia", "Poland", id=1, hours_ago=30, places=["warsaw"]),
+             founder("Russia summons the Polish ambassador", "Russia", "Poland", id=2, hours_ago=2,
+                     places=["moscow"])]
+    assert [c.slug for c in grouper.group(batch, seeds)[1]] == ["poland-russia"]
+
+
+def test_the_same_place_days_apart_is_two_occurrences(grouper, seeds):
+    batch = [founder("Strike on Kyiv", "Russia", "Poland", id=1, hours_ago=72, places=["kyiv"]),
+             founder("Another strike on Kyiv", "Russia", "Poland", id=2, hours_ago=1, places=["kyiv"])]
+    assert [c.slug for c in grouper.group(batch, seeds)[1]] == ["poland-russia"]
+
+
+def test_a_third_distinct_founder_completes_the_recurrence(grouper, seeds):
+    batch = [founder("Fairford, English", "United States", "United Kingdom", id=1, hours_ago=6, places=["fairford"]),
+             founder("Fairford, Spanish", "Estados Unidos", "Reino Unido", id=2, hours_ago=4, places=["fairford"],
+                     lang="es"),
+             founder("US and UK sign a new basing agreement", "United States", "United Kingdom", id=3, hours_ago=1,
+                     places=["london"])]
+    assert [c.slug for c in grouper.group(batch, seeds)[1]] == ["united-kingdom-united-states"]
+
+
+def test_founders_without_places_count_as_distinct(grouper, seeds):
+    batch = [founder("A", "Russia", "Poland", id=1, hours_ago=3), founder("B", "Russia", "Poland", id=2, hours_ago=1)]
+    assert [c.slug for c in grouper.group(batch, seeds)[1]] == ["poland-russia"]
+
+
+def test_the_rule_can_be_switched_off(config, seeds):
+    g = SituationGrouper(config.model_copy(update={"policy": config.policy.model_copy(
+        update={"founder_same_occurrence_hours": None})}))
+    batch = [founder("Fairford, English", "United States", "United Kingdom", id=1, hours_ago=6, places=["fairford"]),
+             founder("Fairford, Spanish", "Estados Unidos", "Reino Unido", id=2, hours_ago=4, places=["fairford"],
+                     lang="es")]
+    assert [c.slug for c in g.group(batch, seeds)[1]] == ["united-kingdom-united-states"]
+
+
+def test_same_language_occurrences_in_one_place_stay_distinct(grouper, seeds):
+    # a papal visit: the speech and the Mass are two occurrences in Paris within a day, both in English
+    batch = [founder("Pope warns against AI in Paris speech", "Vatican", "France", id=1, hours_ago=20, places=["paris"]),
+             founder("Hundreds of thousands at the Pope's Paris Mass", "Vatican", "France", id=2, hours_ago=2,
+                     places=["paris"])]
+    assert grouper.distinct_occurrences(batch) == 2
+
+
+
+def test_signatures_carry_languages_and_specific_places(session):
+    from osint_monitor.core.database import EventItem, ItemEntity, RawItem, Source
+    from osint_monitor.processors.situations.store import signature_for_event
+    en = Source(name="BBC World", type="rss", url="https://bbc.invalid/")
+    es = Source(name="Europa Press Internacional", type="rss", url="https://ep.invalid/")
+    session.add_all([en, es])
+    session.flush()
+    places = {n: Entity(canonical_name=n, entity_type=t) for n, t in
+              (("Fairford", "FAC"), ("Washington", "GPE"), ("Russia", "GPE"))}
+    session.add_all(places.values())
+    sigs = []
+    for i, (src, title) in enumerate(((en, "US bombers leave RAF Fairford"),
+                                      (es, "El Pentágono retira sus bombarderos de Fairford"))):
+        item = RawItem(source_id=src.id, title=title, content_hash=f"h{i}", fetched_at=NOW)
+        event = Event(summary=title, first_reported_at=NOW - timedelta(hours=2 * i))
+        session.add_all([item, event])
+        session.flush()
+        session.add(EventItem(event_id=event.id, item_id=item.id))
+        for n in ("Fairford", "Washington", "Russia"):
+            session.add(ItemEntity(item_id=item.id, entity_id=places[n].id))
+        session.flush()
+        sigs.append(signature_for_event(session, event))
+    assert [s.languages for s in sigs] == [["en"], ["es"]]
+    assert all(s.places == ["fairford"] for s in sigs)   # Russia is a country, Washington stands for a state
+    assert SituationGrouper(load_situations_config()).distinct_occurrences(sigs) == 1

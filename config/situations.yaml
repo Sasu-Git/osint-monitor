@@ -21,6 +21,9 @@ policy:
   ambiguity_margin: 0.1
   min_actors_to_create: 2
   create_min_developments: 2
+  # founders reported within 48 h that name a compatible specific place may be one occurrence (e.g. the same
+  # event in two languages) and count once (post-soak item 1, option a)
+  founder_same_occurrence_hours: 48
   create_window_days: 7
   dormant_after_days: 14
   centroid_developments: 20

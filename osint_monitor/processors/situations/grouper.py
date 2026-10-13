@@ -147,6 +147,39 @@ class SituationGrouper:
             return None
         return choice
 
+    def distinct_occurrences(self, founders: Sequence[DevelopmentSignature]) -> int:
+        """How many distinct occurrences the founders of a new situation stand for. Development identity cannot link
+        one occurrence across languages, so two founders **with no language in common**, first reported within
+        ``founder_same_occurrence_hours``, that name a compatible specific place (the same place, or one containing
+        the other; countries and state capitals do not count) may be one occurrence reported twice, and count once.
+        Founders sharing a language are distinct: identity keeps same-language occurrences apart (a papal visit's
+        speech and its Mass are two). Recurrence of an actor set must come from distinct occurrences (post-soak item 1,
+        option a)."""
+        hours = self.config.policy.founder_same_occurrence_hours
+        if hours is None:
+            return len(founders)
+        from osint_monitor.processors.development_segmentation import gazetteer
+        geo = gazetteer(False)
+        parent = list(range(len(founders)))
+
+        def find(x):
+            while parent[x] != x:
+                parent[x] = parent[parent[x]]
+                x = parent[x]
+            return x
+        for i in range(len(founders)):
+            for j in range(i + 1, len(founders)):
+                a, b = founders[i], founders[j]
+                if not (a.occurred_at and b.occurred_at and a.places and b.places and a.languages and b.languages):
+                    continue
+                if set(a.languages) & set(b.languages):
+                    continue
+                if abs((a.occurred_at - b.occurred_at).total_seconds()) > hours * 3600:
+                    continue
+                if any(x == y or geo.same_or_contains(x, y) for x in a.places for y in b.places):
+                    parent[find(i)] = find(j)
+        return len({find(i) for i in range(len(founders))})
+
     # -- a batch ---------------------------------------------------------------------------
 
     def group(self, developments: Sequence[DevelopmentSignature], situations: Sequence[SituationProfile]
@@ -174,6 +207,11 @@ class SituationGrouper:
         for key, members in recurring.items():
             slug = self.actors.slug(key)
             if len(members) < p.create_min_developments or key in existing_sets or slug in existing_slugs:
+                continue
+            occurrences = self.distinct_occurrences([developments[i] for i in members])
+            if occurrences < p.create_min_developments:
+                logger.info(f"Situation {slug} not created: {len(members)} developments but {occurrences} distinct "
+                            f"occurrence(s) (founders within {p.founder_same_occurrence_hours} h naming one place)")
                 continue
             regions = Counter(developments[i].region for i in members if developments[i].region)
             profile = SituationProfile(
