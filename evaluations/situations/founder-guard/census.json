@@ -1,0 +1,1995 @@
+{
+ "db": "C:/Users/EugenioVardiero/osint-monitor/data/deploy/20261013-1246/backup-final-20261013-105028.db",
+ "pairs": [
+  {
+   "a": 1,
+   "b": 2,
+   "actor_set": [
+    "china",
+    "united states"
+   ],
+   "gap_hours": 0.0,
+   "langs": [
+    [
+     "en"
+    ],
+    [
+     "en"
+    ]
+   ],
+   "cross_language": false,
+   "shared_places": [
+    "asean~asean",
+    "futurechina business forum~futurechina business forum",
+    "new york~new york",
+    "south~south"
+   ],
+   "guard_same": false,
+   "situations": [
+    "china-united-states",
+    "china-united-states"
+   ],
+   "titles": [
+    "Xi got Trump's red carpet welcome - but not everything he wanted",
+    "Trump and Xi come face-to-face as US and China battle to win the AI race"
+   ]
+  },
+  {
+   "a": 1,
+   "b": 39,
+   "actor_set": [
+    "china",
+    "united states"
+   ],
+   "gap_hours": 71.0,
+   "langs": [
+    [
+     "en"
+    ],
+    [
+     "en"
+    ]
+   ],
+   "cross_language": false,
+   "shared_places": [],
+   "guard_same": false,
+   "situations": [
+    "china-united-states",
+    "china-united-states"
+   ],
+   "titles": [
+    "Xi got Trump's red carpet welcome - but not everything he wanted",
+    "‘Right now, it’s fine’: Trump brushes off questions about summit talk on Taiwan"
+   ]
+  },
+  {
+   "a": 1,
+   "b": 49,
+   "actor_set": [
+    "china",
+    "united states"
+   ],
+   "gap_hours": 92.3,
+   "langs": [
+    [
+     "en"
+    ],
+    [
+     "en"
+    ]
+   ],
+   "cross_language": false,
+   "shared_places": [],
+   "guard_same": false,
+   "situations": [
+    "china-united-states",
+    "china-united-states"
+   ],
+   "titles": [
+    "Xi got Trump's red carpet welcome - but not everything he wanted",
+    "Pope Leo says concerns about AI doom scenarios are not ‘fake news’"
+   ]
+  },
+  {
+   "a": 1,
+   "b": 88,
+   "actor_set": [
+    "china",
+    "united states"
+   ],
+   "gap_hours": 127.9,
+   "langs": [
+    [
+     "en"
+    ],
+    [
+     "en"
+    ]
+   ],
+   "cross_language": false,
+   "shared_places": [
+    "middle east~middle east"
+   ],
+   "guard_same": false,
+   "situations": [
+    "china-united-states",
+    "china-united-states"
+   ],
+   "titles": [
+    "Xi got Trump's red carpet welcome - but not everything he wanted",
+    "Xi-Trump summit drew Chinese CEOs. So why couldn’t they get a seat at the table?"
+   ]
+  },
+  {
+   "a": 2,
+   "b": 39,
+   "actor_set": [
+    "china",
+    "united states"
+   ],
+   "gap_hours": 71.0,
+   "langs": [
+    [
+     "en"
+    ],
+    [
+     "en"
+    ]
+   ],
+   "cross_language": false,
+   "shared_places": [],
+   "guard_same": false,
+   "situations": [
+    "china-united-states",
+    "china-united-states"
+   ],
+   "titles": [
+    "Trump and Xi come face-to-face as US and China battle to win the AI race",
+    "‘Right now, it’s fine’: Trump brushes off questions about summit talk on Taiwan"
+   ]
+  },
+  {
+   "a": 2,
+   "b": 49,
+   "actor_set": [
+    "china",
+    "united states"
+   ],
+   "gap_hours": 92.3,
+   "langs": [
+    [
+     "en"
+    ],
+    [
+     "en"
+    ]
+   ],
+   "cross_language": false,
+   "shared_places": [
+    "hong kong~hong kong",
+    "san francisco~san francisco"
+   ],
+   "guard_same": false,
+   "situations": [
+    "china-united-states",
+    "china-united-states"
+   ],
+   "titles": [
+    "Trump and Xi come face-to-face as US and China battle to win the AI race",
+    "Pope Leo says concerns about AI doom scenarios are not ‘fake news’"
+   ]
+  },
+  {
+   "a": 2,
+   "b": 88,
+   "actor_set": [
+    "china",
+    "united states"
+   ],
+   "gap_hours": 127.9,
+   "langs": [
+    [
+     "en"
+    ],
+    [
+     "en"
+    ]
+   ],
+   "cross_language": false,
+   "shared_places": [],
+   "guard_same": false,
+   "situations": [
+    "china-united-states",
+    "china-united-states"
+   ],
+   "titles": [
+    "Trump and Xi come face-to-face as US and China battle to win the AI race",
+    "Xi-Trump summit drew Chinese CEOs. So why couldn’t they get a seat at the table?"
+   ]
+  },
+  {
+   "a": 39,
+   "b": 49,
+   "actor_set": [
+    "china",
+    "united states"
+   ],
+   "gap_hours": 21.3,
+   "langs": [
+    [
+     "en"
+    ],
+    [
+     "en"
+    ]
+   ],
+   "cross_language": false,
+   "shared_places": [],
+   "guard_same": false,
+   "situations": [
+    "china-united-states",
+    "china-united-states"
+   ],
+   "titles": [
+    "‘Right now, it’s fine’: Trump brushes off questions about summit talk on Taiwan",
+    "Pope Leo says concerns about AI doom scenarios are not ‘fake news’"
+   ]
+  },
+  {
+   "a": 39,
+   "b": 88,
+   "actor_set": [
+    "china",
+    "united states"
+   ],
+   "gap_hours": 56.9,
+   "langs": [
+    [
+     "en"
+    ],
+    [
+     "en"
+    ]
+   ],
+   "cross_language": false,
+   "shared_places": [],
+   "guard_same": false,
+   "situations": [
+    "china-united-states",
+    "china-united-states"
+   ],
+   "titles": [
+    "‘Right now, it’s fine’: Trump brushes off questions about summit talk on Taiwan",
+    "Xi-Trump summit drew Chinese CEOs. So why couldn’t they get a seat at the table?"
+   ]
+  },
+  {
+   "a": 49,
+   "b": 88,
+   "actor_set": [
+    "china",
+    "united states"
+   ],
+   "gap_hours": 35.5,
+   "langs": [
+    [
+     "en"
+    ],
+    [
+     "en"
+    ]
+   ],
+   "cross_language": false,
+   "shared_places": [],
+   "guard_same": false,
+   "situations": [
+    "china-united-states",
+    "china-united-states"
+   ],
+   "titles": [
+    "Pope Leo says concerns about AI doom scenarios are not ‘fake news’",
+    "Xi-Trump summit drew Chinese CEOs. So why couldn’t they get a seat at the table?"
+   ]
+  },
+  {
+   "a": 12,
+   "b": 84,
+   "actor_set": [
+    "russia",
+    "ukraine"
+   ],
+   "gap_hours": 112.7,
+   "langs": [
+    [
+     "en"
+    ],
+    [
+     "en"
+    ]
+   ],
+   "cross_language": false,
+   "shared_places": [],
+   "guard_same": false,
+   "situations": [
+    "russia-ukraine-war",
+    "russia-ukraine-war"
+   ],
+   "titles": [
+    "Poland boosts air defence after ‘Russian provocations’ amid Ukraine war",
+    "Russian attacks on Ukraine’s Kyiv region kill four, target power grid"
+   ]
+  },
+  {
+   "a": 12,
+   "b": 99,
+   "actor_set": [
+    "russia",
+    "ukraine"
+   ],
+   "gap_hours": 132.3,
+   "langs": [
+    [
+     "en"
+    ],
+    [
+     "en"
+    ]
+   ],
+   "cross_language": false,
+   "shared_places": [],
+   "guard_same": false,
+   "situations": [
+    "russia-ukraine-war",
+    "russia-ukraine-war"
+   ],
+   "titles": [
+    "Poland boosts air defence after ‘Russian provocations’ amid Ukraine war",
+    "Russian drone crashes into Kyiv playground without exploding"
+   ]
+  },
+  {
+   "a": 12,
+   "b": 101,
+   "actor_set": [
+    "russia",
+    "ukraine"
+   ],
+   "gap_hours": 133.8,
+   "langs": [
+    [
+     "en"
+    ],
+    [
+     "en"
+    ]
+   ],
+   "cross_language": false,
+   "shared_places": [],
+   "guard_same": false,
+   "situations": [
+    "russia-ukraine-war",
+    "russia-ukraine-war"
+   ],
+   "titles": [
+    "Poland boosts air defence after ‘Russian provocations’ amid Ukraine war",
+    "Ukraine's prized steel industry left in ruins by Russian missile campaign"
+   ]
+  },
+  {
+   "a": 84,
+   "b": 99,
+   "actor_set": [
+    "russia",
+    "ukraine"
+   ],
+   "gap_hours": 19.7,
+   "langs": [
+    [
+     "en"
+    ],
+    [
+     "en"
+    ]
+   ],
+   "cross_language": false,
+   "shared_places": [
+    "azov~azov",
+    "glasgow~glasgow",
+    "glasgow~scotland",
+    "rostov oblast~rostov oblast",
+    "scotland~glasgow",
+    "scotland~scotland",
+    "tokyo~tokyo"
+   ],
+   "guard_same": false,
+   "situations": [
+    "russia-ukraine-war",
+    "russia-ukraine-war"
+   ],
+   "titles": [
+    "Russian attacks on Ukraine’s Kyiv region kill four, target power grid",
+    "Russian drone crashes into Kyiv playground without exploding"
+   ]
+  },
+  {
+   "a": 84,
+   "b": 101,
+   "actor_set": [
+    "russia",
+    "ukraine"
+   ],
+   "gap_hours": 21.2,
+   "langs": [
+    [
+     "en"
+    ],
+    [
+     "en"
+    ]
+   ],
+   "cross_language": false,
+   "shared_places": [
+    "azov~azov",
+    "glasgow~glasgow",
+    "glasgow~scotland",
+    "rostov oblast~rostov oblast",
+    "scotland~glasgow",
+    "scotland~scotland",
+    "tokyo~tokyo"
+   ],
+   "guard_same": false,
+   "situations": [
+    "russia-ukraine-war",
+    "russia-ukraine-war"
+   ],
+   "titles": [
+    "Russian attacks on Ukraine’s Kyiv region kill four, target power grid",
+    "Ukraine's prized steel industry left in ruins by Russian missile campaign"
+   ]
+  },
+  {
+   "a": 84,
+   "b": 170,
+   "actor_set": [
+    "russia",
+    "ukraine"
+   ],
+   "gap_hours": 123.7,
+   "langs": [
+    [
+     "en"
+    ],
+    [
+     "en"
+    ]
+   ],
+   "cross_language": false,
+   "shared_places": [],
+   "guard_same": false,
+   "situations": [
+    "russia-ukraine-war",
+    "russia-ukraine-war"
+   ],
+   "titles": [
+    "Russian attacks on Ukraine’s Kyiv region kill four, target power grid",
+    "Zelensky condemns 'horrific' Russian strike on boat carrying corn in Black Sea"
+   ]
+  },
+  {
+   "a": 84,
+   "b": 214,
+   "actor_set": [
+    "russia",
+    "ukraine"
+   ],
+   "gap_hours": 141.7,
+   "langs": [
+    [
+     "en"
+    ],
+    [
+     "en"
+    ]
+   ],
+   "cross_language": false,
+   "shared_places": [],
+   "guard_same": false,
+   "situations": [
+    "russia-ukraine-war",
+    "russia-ukraine-war"
+   ],
+   "titles": [
+    "Russian attacks on Ukraine’s Kyiv region kill four, target power grid",
+    "Russia's military spending masks a longer-term strategy for a prolonged war"
+   ]
+  },
+  {
+   "a": 84,
+   "b": 227,
+   "actor_set": [
+    "russia",
+    "ukraine"
+   ],
+   "gap_hours": 144.2,
+   "langs": [
+    [
+     "en"
+    ],
+    [
+     "es"
+    ]
+   ],
+   "cross_language": true,
+   "shared_places": [],
+   "guard_same": false,
+   "situations": [
+    "russia-ukraine-war",
+    "ucrania-ukraine"
+   ],
+   "titles": [
+    "Russian attacks on Ukraine’s Kyiv region kill four, target power grid",
+    "Zelenski advierte de que Rusia prepara un nuevo \"ataque masivo\" y Ucrania prepara \"contramedidas\""
+   ]
+  },
+  {
+   "a": 84,
+   "b": 242,
+   "actor_set": [
+    "russia",
+    "ukraine"
+   ],
+   "gap_hours": 148.3,
+   "langs": [
+    [
+     "en"
+    ],
+    [
+     "en"
+    ]
+   ],
+   "cross_language": false,
+   "shared_places": [],
+   "guard_same": false,
+   "situations": [
+    "russia-ukraine-war",
+    "russia-ukraine-war"
+   ],
+   "titles": [
+    "Russian attacks on Ukraine’s Kyiv region kill four, target power grid",
+    "The price of doing business in Russia"
+   ]
+  },
+  {
+   "a": 99,
+   "b": 101,
+   "actor_set": [
+    "russia",
+    "ukraine"
+   ],
+   "gap_hours": 1.5,
+   "langs": [
+    [
+     "en"
+    ],
+    [
+     "en"
+    ]
+   ],
+   "cross_language": false,
+   "shared_places": [
+    "azov~azov",
+    "glasgow~glasgow",
+    "glasgow~scotland",
+    "rostov oblast~rostov oblast",
+    "scotland~glasgow",
+    "scotland~scotland",
+    "tokyo~tokyo"
+   ],
+   "guard_same": false,
+   "situations": [
+    "russia-ukraine-war",
+    "russia-ukraine-war"
+   ],
+   "titles": [
+    "Russian drone crashes into Kyiv playground without exploding",
+    "Ukraine's prized steel industry left in ruins by Russian missile campaign"
+   ]
+  },
+  {
+   "a": 99,
+   "b": 170,
+   "actor_set": [
+    "russia",
+    "ukraine"
+   ],
+   "gap_hours": 104.0,
+   "langs": [
+    [
+     "en"
+    ],
+    [
+     "en"
+    ]
+   ],
+   "cross_language": false,
+   "shared_places": [],
+   "guard_same": false,
+   "situations": [
+    "russia-ukraine-war",
+    "russia-ukraine-war"
+   ],
+   "titles": [
+    "Russian drone crashes into Kyiv playground without exploding",
+    "Zelensky condemns 'horrific' Russian strike on boat carrying corn in Black Sea"
+   ]
+  },
+  {
+   "a": 99,
+   "b": 214,
+   "actor_set": [
+    "russia",
+    "ukraine"
+   ],
+   "gap_hours": 122.0,
+   "langs": [
+    [
+     "en"
+    ],
+    [
+     "en"
+    ]
+   ],
+   "cross_language": false,
+   "shared_places": [],
+   "guard_same": false,
+   "situations": [
+    "russia-ukraine-war",
+    "russia-ukraine-war"
+   ],
+   "titles": [
+    "Russian drone crashes into Kyiv playground without exploding",
+    "Russia's military spending masks a longer-term strategy for a prolonged war"
+   ]
+  },
+  {
+   "a": 99,
+   "b": 227,
+   "actor_set": [
+    "russia",
+    "ukraine"
+   ],
+   "gap_hours": 124.5,
+   "langs": [
+    [
+     "en"
+    ],
+    [
+     "es"
+    ]
+   ],
+   "cross_language": true,
+   "shared_places": [],
+   "guard_same": false,
+   "situations": [
+    "russia-ukraine-war",
+    "ucrania-ukraine"
+   ],
+   "titles": [
+    "Russian drone crashes into Kyiv playground without exploding",
+    "Zelenski advierte de que Rusia prepara un nuevo \"ataque masivo\" y Ucrania prepara \"contramedidas\""
+   ]
+  },
+  {
+   "a": 99,
+   "b": 242,
+   "actor_set": [
+    "russia",
+    "ukraine"
+   ],
+   "gap_hours": 128.7,
+   "langs": [
+    [
+     "en"
+    ],
+    [
+     "en"
+    ]
+   ],
+   "cross_language": false,
+   "shared_places": [],
+   "guard_same": false,
+   "situations": [
+    "russia-ukraine-war",
+    "russia-ukraine-war"
+   ],
+   "titles": [
+    "Russian drone crashes into Kyiv playground without exploding",
+    "The price of doing business in Russia"
+   ]
+  },
+  {
+   "a": 101,
+   "b": 170,
+   "actor_set": [
+    "russia",
+    "ukraine"
+   ],
+   "gap_hours": 102.5,
+   "langs": [
+    [
+     "en"
+    ],
+    [
+     "en"
+    ]
+   ],
+   "cross_language": false,
+   "shared_places": [],
+   "guard_same": false,
+   "situations": [
+    "russia-ukraine-war",
+    "russia-ukraine-war"
+   ],
+   "titles": [
+    "Ukraine's prized steel industry left in ruins by Russian missile campaign",
+    "Zelensky condemns 'horrific' Russian strike on boat carrying corn in Black Sea"
+   ]
+  },
+  {
+   "a": 101,
+   "b": 214,
+   "actor_set": [
+    "russia",
+    "ukraine"
+   ],
+   "gap_hours": 120.5,
+   "langs": [
+    [
+     "en"
+    ],
+    [
+     "en"
+    ]
+   ],
+   "cross_language": false,
+   "shared_places": [],
+   "guard_same": false,
+   "situations": [
+    "russia-ukraine-war",
+    "russia-ukraine-war"
+   ],
+   "titles": [
+    "Ukraine's prized steel industry left in ruins by Russian missile campaign",
+    "Russia's military spending masks a longer-term strategy for a prolonged war"
+   ]
+  },
+  {
+   "a": 101,
+   "b": 227,
+   "actor_set": [
+    "russia",
+    "ukraine"
+   ],
+   "gap_hours": 123.0,
+   "langs": [
+    [
+     "en"
+    ],
+    [
+     "es"
+    ]
+   ],
+   "cross_language": true,
+   "shared_places": [],
+   "guard_same": false,
+   "situations": [
+    "russia-ukraine-war",
+    "ucrania-ukraine"
+   ],
+   "titles": [
+    "Ukraine's prized steel industry left in ruins by Russian missile campaign",
+    "Zelenski advierte de que Rusia prepara un nuevo \"ataque masivo\" y Ucrania prepara \"contramedidas\""
+   ]
+  },
+  {
+   "a": 101,
+   "b": 242,
+   "actor_set": [
+    "russia",
+    "ukraine"
+   ],
+   "gap_hours": 127.2,
+   "langs": [
+    [
+     "en"
+    ],
+    [
+     "en"
+    ]
+   ],
+   "cross_language": false,
+   "shared_places": [],
+   "guard_same": false,
+   "situations": [
+    "russia-ukraine-war",
+    "russia-ukraine-war"
+   ],
+   "titles": [
+    "Ukraine's prized steel industry left in ruins by Russian missile campaign",
+    "The price of doing business in Russia"
+   ]
+  },
+  {
+   "a": 170,
+   "b": 214,
+   "actor_set": [
+    "russia",
+    "ukraine"
+   ],
+   "gap_hours": 18.0,
+   "langs": [
+    [
+     "en"
+    ],
+    [
+     "en"
+    ]
+   ],
+   "cross_language": false,
+   "shared_places": [],
+   "guard_same": false,
+   "situations": [
+    "russia-ukraine-war",
+    "russia-ukraine-war"
+   ],
+   "titles": [
+    "Zelensky condemns 'horrific' Russian strike on boat carrying corn in Black Sea",
+    "Russia's military spending masks a longer-term strategy for a prolonged war"
+   ]
+  },
+  {
+   "a": 170,
+   "b": 227,
+   "actor_set": [
+    "russia",
+    "ukraine"
+   ],
+   "gap_hours": 20.5,
+   "langs": [
+    [
+     "en"
+    ],
+    [
+     "es"
+    ]
+   ],
+   "cross_language": true,
+   "shared_places": [],
+   "guard_same": false,
+   "situations": [
+    "russia-ukraine-war",
+    "ucrania-ukraine"
+   ],
+   "titles": [
+    "Zelensky condemns 'horrific' Russian strike on boat carrying corn in Black Sea",
+    "Zelenski advierte de que Rusia prepara un nuevo \"ataque masivo\" y Ucrania prepara \"contramedidas\""
+   ]
+  },
+  {
+   "a": 170,
+   "b": 242,
+   "actor_set": [
+    "russia",
+    "ukraine"
+   ],
+   "gap_hours": 24.6,
+   "langs": [
+    [
+     "en"
+    ],
+    [
+     "en"
+    ]
+   ],
+   "cross_language": false,
+   "shared_places": [
+    "europe~europe"
+   ],
+   "guard_same": false,
+   "situations": [
+    "russia-ukraine-war",
+    "russia-ukraine-war"
+   ],
+   "titles": [
+    "Zelensky condemns 'horrific' Russian strike on boat carrying corn in Black Sea",
+    "The price of doing business in Russia"
+   ]
+  },
+  {
+   "a": 170,
+   "b": 331,
+   "actor_set": [
+    "russia",
+    "ukraine"
+   ],
+   "gap_hours": 69.0,
+   "langs": [
+    [
+     "en"
+    ],
+    [
+     "en"
+    ]
+   ],
+   "cross_language": false,
+   "shared_places": [],
+   "guard_same": false,
+   "situations": [
+    "russia-ukraine-war",
+    "russia-ukraine-war"
+   ],
+   "titles": [
+    "Zelensky condemns 'horrific' Russian strike on boat carrying corn in Black Sea",
+    "In Kyiv district battered by Russian strikes, a protest to save trees turns ugly"
+   ]
+  },
+  {
+   "a": 170,
+   "b": 376,
+   "actor_set": [
+    "russia",
+    "ukraine"
+   ],
+   "gap_hours": 93.6,
+   "langs": [
+    [
+     "en"
+    ],
+    [
+     "en"
+    ]
+   ],
+   "cross_language": false,
+   "shared_places": [],
+   "guard_same": false,
+   "situations": [
+    "russia-ukraine-war",
+    "russia-ukraine-war"
+   ],
+   "titles": [
+    "Zelensky condemns 'horrific' Russian strike on boat carrying corn in Black Sea",
+    "Ukraine pushes Russia back in Donetsk as military, civilian casualties soar"
+   ]
+  },
+  {
+   "a": 214,
+   "b": 227,
+   "actor_set": [
+    "russia",
+    "ukraine"
+   ],
+   "gap_hours": 2.5,
+   "langs": [
+    [
+     "en"
+    ],
+    [
+     "es"
+    ]
+   ],
+   "cross_language": true,
+   "shared_places": [],
+   "guard_same": false,
+   "situations": [
+    "russia-ukraine-war",
+    "ucrania-ukraine"
+   ],
+   "titles": [
+    "Russia's military spending masks a longer-term strategy for a prolonged war",
+    "Zelenski advierte de que Rusia prepara un nuevo \"ataque masivo\" y Ucrania prepara \"contramedidas\""
+   ]
+  },
+  {
+   "a": 214,
+   "b": 242,
+   "actor_set": [
+    "russia",
+    "ukraine"
+   ],
+   "gap_hours": 6.7,
+   "langs": [
+    [
+     "en"
+    ],
+    [
+     "en"
+    ]
+   ],
+   "cross_language": false,
+   "shared_places": [],
+   "guard_same": false,
+   "situations": [
+    "russia-ukraine-war",
+    "russia-ukraine-war"
+   ],
+   "titles": [
+    "Russia's military spending masks a longer-term strategy for a prolonged war",
+    "The price of doing business in Russia"
+   ]
+  },
+  {
+   "a": 214,
+   "b": 331,
+   "actor_set": [
+    "russia",
+    "ukraine"
+   ],
+   "gap_hours": 51.0,
+   "langs": [
+    [
+     "en"
+    ],
+    [
+     "en"
+    ]
+   ],
+   "cross_language": false,
+   "shared_places": [],
+   "guard_same": false,
+   "situations": [
+    "russia-ukraine-war",
+    "russia-ukraine-war"
+   ],
+   "titles": [
+    "Russia's military spending masks a longer-term strategy for a prolonged war",
+    "In Kyiv district battered by Russian strikes, a protest to save trees turns ugly"
+   ]
+  },
+  {
+   "a": 214,
+   "b": 376,
+   "actor_set": [
+    "russia",
+    "ukraine"
+   ],
+   "gap_hours": 75.7,
+   "langs": [
+    [
+     "en"
+    ],
+    [
+     "en"
+    ]
+   ],
+   "cross_language": false,
+   "shared_places": [],
+   "guard_same": false,
+   "situations": [
+    "russia-ukraine-war",
+    "russia-ukraine-war"
+   ],
+   "titles": [
+    "Russia's military spending masks a longer-term strategy for a prolonged war",
+    "Ukraine pushes Russia back in Donetsk as military, civilian casualties soar"
+   ]
+  },
+  {
+   "a": 214,
+   "b": 417,
+   "actor_set": [
+    "russia",
+    "ukraine"
+   ],
+   "gap_hours": 166.7,
+   "langs": [
+    [
+     "en"
+    ],
+    [
+     "en"
+    ]
+   ],
+   "cross_language": false,
+   "shared_places": [],
+   "guard_same": false,
+   "situations": [
+    "russia-ukraine-war",
+    "russia-ukraine-war"
+   ],
+   "titles": [
+    "Russia's military spending masks a longer-term strategy for a prolonged war",
+    "Kyiv under missile attack before air raid alert issued"
+   ]
+  },
+  {
+   "a": 227,
+   "b": 242,
+   "actor_set": [
+    "russia",
+    "ukraine"
+   ],
+   "gap_hours": 4.2,
+   "langs": [
+    [
+     "es"
+    ],
+    [
+     "en"
+    ]
+   ],
+   "cross_language": true,
+   "shared_places": [],
+   "guard_same": false,
+   "situations": [
+    "ucrania-ukraine",
+    "russia-ukraine-war"
+   ],
+   "titles": [
+    "Zelenski advierte de que Rusia prepara un nuevo \"ataque masivo\" y Ucrania prepara \"contramedidas\"",
+    "The price of doing business in Russia"
+   ]
+  },
+  {
+   "a": 227,
+   "b": 331,
+   "actor_set": [
+    "russia",
+    "ukraine"
+   ],
+   "gap_hours": 48.5,
+   "langs": [
+    [
+     "es"
+    ],
+    [
+     "en"
+    ]
+   ],
+   "cross_language": true,
+   "shared_places": [],
+   "guard_same": false,
+   "situations": [
+    "ucrania-ukraine",
+    "russia-ukraine-war"
+   ],
+   "titles": [
+    "Zelenski advierte de que Rusia prepara un nuevo \"ataque masivo\" y Ucrania prepara \"contramedidas\"",
+    "In Kyiv district battered by Russian strikes, a protest to save trees turns ugly"
+   ]
+  },
+  {
+   "a": 227,
+   "b": 376,
+   "actor_set": [
+    "russia",
+    "ukraine"
+   ],
+   "gap_hours": 73.2,
+   "langs": [
+    [
+     "es"
+    ],
+    [
+     "en"
+    ]
+   ],
+   "cross_language": true,
+   "shared_places": [],
+   "guard_same": false,
+   "situations": [
+    "ucrania-ukraine",
+    "russia-ukraine-war"
+   ],
+   "titles": [
+    "Zelenski advierte de que Rusia prepara un nuevo \"ataque masivo\" y Ucrania prepara \"contramedidas\"",
+    "Ukraine pushes Russia back in Donetsk as military, civilian casualties soar"
+   ]
+  },
+  {
+   "a": 227,
+   "b": 417,
+   "actor_set": [
+    "russia",
+    "ukraine"
+   ],
+   "gap_hours": 164.2,
+   "langs": [
+    [
+     "es"
+    ],
+    [
+     "en"
+    ]
+   ],
+   "cross_language": true,
+   "shared_places": [],
+   "guard_same": false,
+   "situations": [
+    "ucrania-ukraine",
+    "russia-ukraine-war"
+   ],
+   "titles": [
+    "Zelenski advierte de que Rusia prepara un nuevo \"ataque masivo\" y Ucrania prepara \"contramedidas\"",
+    "Kyiv under missile attack before air raid alert issued"
+   ]
+  },
+  {
+   "a": 242,
+   "b": 331,
+   "actor_set": [
+    "russia",
+    "ukraine"
+   ],
+   "gap_hours": 44.3,
+   "langs": [
+    [
+     "en"
+    ],
+    [
+     "en"
+    ]
+   ],
+   "cross_language": false,
+   "shared_places": [],
+   "guard_same": false,
+   "situations": [
+    "russia-ukraine-war",
+    "russia-ukraine-war"
+   ],
+   "titles": [
+    "The price of doing business in Russia",
+    "In Kyiv district battered by Russian strikes, a protest to save trees turns ugly"
+   ]
+  },
+  {
+   "a": 242,
+   "b": 376,
+   "actor_set": [
+    "russia",
+    "ukraine"
+   ],
+   "gap_hours": 69.0,
+   "langs": [
+    [
+     "en"
+    ],
+    [
+     "en"
+    ]
+   ],
+   "cross_language": false,
+   "shared_places": [],
+   "guard_same": false,
+   "situations": [
+    "russia-ukraine-war",
+    "russia-ukraine-war"
+   ],
+   "titles": [
+    "The price of doing business in Russia",
+    "Ukraine pushes Russia back in Donetsk as military, civilian casualties soar"
+   ]
+  },
+  {
+   "a": 242,
+   "b": 417,
+   "actor_set": [
+    "russia",
+    "ukraine"
+   ],
+   "gap_hours": 160.0,
+   "langs": [
+    [
+     "en"
+    ],
+    [
+     "en"
+    ]
+   ],
+   "cross_language": false,
+   "shared_places": [],
+   "guard_same": false,
+   "situations": [
+    "russia-ukraine-war",
+    "russia-ukraine-war"
+   ],
+   "titles": [
+    "The price of doing business in Russia",
+    "Kyiv under missile attack before air raid alert issued"
+   ]
+  },
+  {
+   "a": 331,
+   "b": 376,
+   "actor_set": [
+    "russia",
+    "ukraine"
+   ],
+   "gap_hours": 24.7,
+   "langs": [
+    [
+     "en"
+    ],
+    [
+     "en"
+    ]
+   ],
+   "cross_language": false,
+   "shared_places": [],
+   "guard_same": false,
+   "situations": [
+    "russia-ukraine-war",
+    "russia-ukraine-war"
+   ],
+   "titles": [
+    "In Kyiv district battered by Russian strikes, a protest to save trees turns ugly",
+    "Ukraine pushes Russia back in Donetsk as military, civilian casualties soar"
+   ]
+  },
+  {
+   "a": 331,
+   "b": 417,
+   "actor_set": [
+    "russia",
+    "ukraine"
+   ],
+   "gap_hours": 115.7,
+   "langs": [
+    [
+     "en"
+    ],
+    [
+     "en"
+    ]
+   ],
+   "cross_language": false,
+   "shared_places": [],
+   "guard_same": false,
+   "situations": [
+    "russia-ukraine-war",
+    "russia-ukraine-war"
+   ],
+   "titles": [
+    "In Kyiv district battered by Russian strikes, a protest to save trees turns ugly",
+    "Kyiv under missile attack before air raid alert issued"
+   ]
+  },
+  {
+   "a": 376,
+   "b": 417,
+   "actor_set": [
+    "russia",
+    "ukraine"
+   ],
+   "gap_hours": 91.0,
+   "langs": [
+    [
+     "en"
+    ],
+    [
+     "en"
+    ]
+   ],
+   "cross_language": false,
+   "shared_places": [],
+   "guard_same": false,
+   "situations": [
+    "russia-ukraine-war",
+    "russia-ukraine-war"
+   ],
+   "titles": [
+    "Ukraine pushes Russia back in Donetsk as military, civilian casualties soar",
+    "Kyiv under missile attack before air raid alert issued"
+   ]
+  },
+  {
+   "a": 19,
+   "b": 27,
+   "actor_set": [
+    "france",
+    "pope"
+   ],
+   "gap_hours": 17.5,
+   "langs": [
+    [
+     "en"
+    ],
+    [
+     "en"
+    ]
+   ],
+   "cross_language": false,
+   "shared_places": [
+    "paris~paris"
+   ],
+   "guard_same": false,
+   "situations": [
+    "france-pope",
+    "france-pope"
+   ],
+   "titles": [
+    "In Paris, Pope warns against losing humanity in ‘paradise of machines’",
+    "Hundreds of thousands expected in Paris for Pope's visit"
+   ]
+  },
+  {
+   "a": 40,
+   "b": 109,
+   "actor_set": [
+    "south korea",
+    "ukraine"
+   ],
+   "gap_hours": 93.0,
+   "langs": [
+    [
+     "en"
+    ],
+    [
+     "en"
+    ]
+   ],
+   "cross_language": false,
+   "shared_places": [],
+   "guard_same": false,
+   "situations": [
+    null,
+    null
+   ],
+   "titles": [
+    "South Korea, Ukraine relations sour over North Korean POW transfer",
+    "Row between Ukraine, South Korea mounts over North Korean POWs"
+   ]
+  },
+  {
+   "a": 168,
+   "b": 184,
+   "actor_set": [
+    "russia",
+    "united states"
+   ],
+   "gap_hours": 4.0,
+   "langs": [
+    [
+     "en"
+    ],
+    [
+     "en"
+    ]
+   ],
+   "cross_language": false,
+   "shared_places": [],
+   "guard_same": false,
+   "situations": [
+    "russia-united-states",
+    "russia-united-states"
+   ],
+   "titles": [
+    "Russian lab worker dies of suspected plague in Siberia; US monitoring case",
+    "Trump blames Democrats and Ukraine for soaring US fuel prices, not Iran war"
+   ]
+  },
+  {
+   "a": 168,
+   "b": 308,
+   "actor_set": [
+    "russia",
+    "united states"
+   ],
+   "gap_hours": 62.2,
+   "langs": [
+    [
+     "en"
+    ],
+    [
+     "en"
+    ]
+   ],
+   "cross_language": false,
+   "shared_places": [],
+   "guard_same": false,
+   "situations": [
+    "russia-united-states",
+    "russia-united-states"
+   ],
+   "titles": [
+    "Russian lab worker dies of suspected plague in Siberia; US monitoring case",
+    "US senators urge Trump administration to enforce new Russia sanctions law ahead of Oct. 18 deadline"
+   ]
+  },
+  {
+   "a": 168,
+   "b": 387,
+   "actor_set": [
+    "russia",
+    "united states"
+   ],
+   "gap_hours": 97.6,
+   "langs": [
+    [
+     "en"
+    ],
+    [
+     "en",
+     "es",
+     "it"
+    ]
+   ],
+   "cross_language": false,
+   "shared_places": [],
+   "guard_same": false,
+   "situations": [
+    "russia-united-states",
+    "russia-united-states"
+   ],
+   "titles": [
+    "Russian lab worker dies of suspected plague in Siberia; US monitoring case",
+    "Trump, 'mappa New York senza Little Italy una vergogna', minaccia taglio fondi"
+   ]
+  },
+  {
+   "a": 168,
+   "b": 395,
+   "actor_set": [
+    "russia",
+    "united states"
+   ],
+   "gap_hours": 100.0,
+   "langs": [
+    [
+     "en"
+    ],
+    [
+     "en"
+    ]
+   ],
+   "cross_language": false,
+   "shared_places": [],
+   "guard_same": false,
+   "situations": [
+    "russia-united-states",
+    "russia-united-states"
+   ],
+   "titles": [
+    "Russian lab worker dies of suspected plague in Siberia; US monitoring case",
+    "Trump announces deal with Putin to release Russian diesel"
+   ]
+  },
+  {
+   "a": 184,
+   "b": 308,
+   "actor_set": [
+    "russia",
+    "united states"
+   ],
+   "gap_hours": 58.2,
+   "langs": [
+    [
+     "en"
+    ],
+    [
+     "en"
+    ]
+   ],
+   "cross_language": false,
+   "shared_places": [],
+   "guard_same": false,
+   "situations": [
+    "russia-united-states",
+    "russia-united-states"
+   ],
+   "titles": [
+    "Trump blames Democrats and Ukraine for soaring US fuel prices, not Iran war",
+    "US senators urge Trump administration to enforce new Russia sanctions law ahead of Oct. 18 deadline"
+   ]
+  },
+  {
+   "a": 184,
+   "b": 387,
+   "actor_set": [
+    "russia",
+    "united states"
+   ],
+   "gap_hours": 93.7,
+   "langs": [
+    [
+     "en"
+    ],
+    [
+     "en",
+     "es",
+     "it"
+    ]
+   ],
+   "cross_language": false,
+   "shared_places": [],
+   "guard_same": false,
+   "situations": [
+    "russia-united-states",
+    "russia-united-states"
+   ],
+   "titles": [
+    "Trump blames Democrats and Ukraine for soaring US fuel prices, not Iran war",
+    "Trump, 'mappa New York senza Little Italy una vergogna', minaccia taglio fondi"
+   ]
+  },
+  {
+   "a": 184,
+   "b": 395,
+   "actor_set": [
+    "russia",
+    "united states"
+   ],
+   "gap_hours": 96.0,
+   "langs": [
+    [
+     "en"
+    ],
+    [
+     "en"
+    ]
+   ],
+   "cross_language": false,
+   "shared_places": [],
+   "guard_same": false,
+   "situations": [
+    "russia-united-states",
+    "russia-united-states"
+   ],
+   "titles": [
+    "Trump blames Democrats and Ukraine for soaring US fuel prices, not Iran war",
+    "Trump announces deal with Putin to release Russian diesel"
+   ]
+  },
+  {
+   "a": 308,
+   "b": 387,
+   "actor_set": [
+    "russia",
+    "united states"
+   ],
+   "gap_hours": 35.5,
+   "langs": [
+    [
+     "en"
+    ],
+    [
+     "en",
+     "es",
+     "it"
+    ]
+   ],
+   "cross_language": false,
+   "shared_places": [],
+   "guard_same": false,
+   "situations": [
+    "russia-united-states",
+    "russia-united-states"
+   ],
+   "titles": [
+    "US senators urge Trump administration to enforce new Russia sanctions law ahead of Oct. 18 deadline",
+    "Trump, 'mappa New York senza Little Italy una vergogna', minaccia taglio fondi"
+   ]
+  },
+  {
+   "a": 308,
+   "b": 395,
+   "actor_set": [
+    "russia",
+    "united states"
+   ],
+   "gap_hours": 37.8,
+   "langs": [
+    [
+     "en"
+    ],
+    [
+     "en"
+    ]
+   ],
+   "cross_language": false,
+   "shared_places": [],
+   "guard_same": false,
+   "situations": [
+    "russia-united-states",
+    "russia-united-states"
+   ],
+   "titles": [
+    "US senators urge Trump administration to enforce new Russia sanctions law ahead of Oct. 18 deadline",
+    "Trump announces deal with Putin to release Russian diesel"
+   ]
+  },
+  {
+   "a": 308,
+   "b": 399,
+   "actor_set": [
+    "russia",
+    "united states"
+   ],
+   "gap_hours": 121.9,
+   "langs": [
+    [
+     "en"
+    ],
+    [
+     "es",
+     "it"
+    ]
+   ],
+   "cross_language": true,
+   "shared_places": [],
+   "guard_same": false,
+   "situations": [
+    "russia-united-states",
+    "russia-united-states"
+   ],
+   "titles": [
+    "US senators urge Trump administration to enforce new Russia sanctions law ahead of Oct. 18 deadline",
+    "Zelensky, almeno due morti questa sera in attacchi russi a Kiev"
+   ]
+  },
+  {
+   "a": 308,
+   "b": 416,
+   "actor_set": [
+    "russia",
+    "united states"
+   ],
+   "gap_hours": 122.3,
+   "langs": [
+    [
+     "en"
+    ],
+    [
+     "en"
+    ]
+   ],
+   "cross_language": false,
+   "shared_places": [],
+   "guard_same": false,
+   "situations": [
+    "russia-united-states",
+    "russia-united-states"
+   ],
+   "titles": [
+    "US senators urge Trump administration to enforce new Russia sanctions law ahead of Oct. 18 deadline",
+    "Trump faces growing backlash over plans to import diesel from Russia"
+   ]
+  },
+  {
+   "a": 387,
+   "b": 395,
+   "actor_set": [
+    "russia",
+    "united states"
+   ],
+   "gap_hours": 2.4,
+   "langs": [
+    [
+     "en",
+     "es",
+     "it"
+    ],
+    [
+     "en"
+    ]
+   ],
+   "cross_language": false,
+   "shared_places": [],
+   "guard_same": false,
+   "situations": [
+    "russia-united-states",
+    "russia-united-states"
+   ],
+   "titles": [
+    "Trump, 'mappa New York senza Little Italy una vergogna', minaccia taglio fondi",
+    "Trump announces deal with Putin to release Russian diesel"
+   ]
+  },
+  {
+   "a": 387,
+   "b": 399,
+   "actor_set": [
+    "russia",
+    "united states"
+   ],
+   "gap_hours": 86.4,
+   "langs": [
+    [
+     "en",
+     "es",
+     "it"
+    ],
+    [
+     "es",
+     "it"
+    ]
+   ],
+   "cross_language": false,
+   "shared_places": [],
+   "guard_same": false,
+   "situations": [
+    "russia-united-states",
+    "russia-united-states"
+   ],
+   "titles": [
+    "Trump, 'mappa New York senza Little Italy una vergogna', minaccia taglio fondi",
+    "Zelensky, almeno due morti questa sera in attacchi russi a Kiev"
+   ]
+  },
+  {
+   "a": 387,
+   "b": 416,
+   "actor_set": [
+    "russia",
+    "united states"
+   ],
+   "gap_hours": 86.9,
+   "langs": [
+    [
+     "en",
+     "es",
+     "it"
+    ],
+    [
+     "en"
+    ]
+   ],
+   "cross_language": false,
+   "shared_places": [],
+   "guard_same": false,
+   "situations": [
+    "russia-united-states",
+    "russia-united-states"
+   ],
+   "titles": [
+    "Trump, 'mappa New York senza Little Italy una vergogna', minaccia taglio fondi",
+    "Trump faces growing backlash over plans to import diesel from Russia"
+   ]
+  },
+  {
+   "a": 395,
+   "b": 399,
+   "actor_set": [
+    "russia",
+    "united states"
+   ],
+   "gap_hours": 84.0,
+   "langs": [
+    [
+     "en"
+    ],
+    [
+     "es",
+     "it"
+    ]
+   ],
+   "cross_language": true,
+   "shared_places": [],
+   "guard_same": false,
+   "situations": [
+    "russia-united-states",
+    "russia-united-states"
+   ],
+   "titles": [
+    "Trump announces deal with Putin to release Russian diesel",
+    "Zelensky, almeno due morti questa sera in attacchi russi a Kiev"
+   ]
+  },
+  {
+   "a": 395,
+   "b": 416,
+   "actor_set": [
+    "russia",
+    "united states"
+   ],
+   "gap_hours": 84.5,
+   "langs": [
+    [
+     "en"
+    ],
+    [
+     "en"
+    ]
+   ],
+   "cross_language": false,
+   "shared_places": [],
+   "guard_same": false,
+   "situations": [
+    "russia-united-states",
+    "russia-united-states"
+   ],
+   "titles": [
+    "Trump announces deal with Putin to release Russian diesel",
+    "Trump faces growing backlash over plans to import diesel from Russia"
+   ]
+  },
+  {
+   "a": 399,
+   "b": 416,
+   "actor_set": [
+    "russia",
+    "united states"
+   ],
+   "gap_hours": 0.5,
+   "langs": [
+    [
+     "es",
+     "it"
+    ],
+    [
+     "en"
+    ]
+   ],
+   "cross_language": true,
+   "shared_places": [],
+   "guard_same": false,
+   "situations": [
+    "russia-united-states",
+    "russia-united-states"
+   ],
+   "titles": [
+    "Zelensky, almeno due morti questa sera in attacchi russi a Kiev",
+    "Trump faces growing backlash over plans to import diesel from Russia"
+   ]
+  },
+  {
+   "a": 202,
+   "b": 351,
+   "actor_set": [
+    "donald j. trump",
+    "united states"
+   ],
+   "gap_hours": 63.1,
+   "langs": [
+    [
+     "en"
+    ],
+    [
+     "en"
+    ]
+   ],
+   "cross_language": false,
+   "shared_places": [],
+   "guard_same": false,
+   "situations": [
+    "donald-j-trump-united-states",
+    "donald-j-trump-united-states"
+   ],
+   "titles": [
+    "President Trump Takes Decisive Action to Lower Diesel Costs for American Truckers, Farmers",
+    "President Trump Is Putting American Industry, Jobs, and Paychecks Back on the Map"
+   ]
+  },
+  {
+   "a": 280,
+   "b": 366,
+   "actor_set": [
+    "china",
+    "european union"
+   ],
+   "gap_hours": 48.8,
+   "langs": [
+    [
+     "en"
+    ],
+    [
+     "en"
+    ]
+   ],
+   "cross_language": false,
+   "shared_places": [
+    "europe~europe"
+   ],
+   "guard_same": false,
+   "situations": [
+    "eu-china-trade",
+    "eu-china-trade"
+   ],
+   "titles": [
+    "Press release - EU-China relations: MEPs defend dialogue, fair trade, and human rights",
+    "China and EU reach ‘understanding’ on hybrid vehicles after crunch trade talks"
+   ]
+  }
+ ],
+ "actor_sets": 151,
+ "developments": 177
+}
