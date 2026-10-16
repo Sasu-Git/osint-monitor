@@ -869,7 +869,8 @@ def _process_single_item(
             pass  # continue with original language (no trusted NER model: no entities)
 
     # NLP: Extract entities
-    text = f"{raw_item.title} {raw_item.content}"
+    from osint_monitor.processors.nlp import ner_text
+    text = ner_text(raw_item.title, raw_item.content)       # headline and body as separate sentences
     extracted = []
     try:
         extracted = extract_entities(text, lang)

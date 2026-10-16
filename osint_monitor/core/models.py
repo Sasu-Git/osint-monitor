@@ -291,6 +291,9 @@ class ExtractedEntity(BaseModel):
     role: EntityRole = EntityRole.SUBJECT
     confidence: float = 1.0
     canonical_name: Optional[str] = None
+    # the name this mention resolves as: a bare surname's full name in the same item ("Musk" -> "Elon Musk", when
+    # the item names exactly one person with that surname), or a named storm ("Rachel" -> "Storm Rachel")
+    refers_to: Optional[str] = None
 
 
 class ProcessedItem(BaseModel):
