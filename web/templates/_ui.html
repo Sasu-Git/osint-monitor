@@ -27,6 +27,15 @@
   {%- else %}<span class="none">No active situation</span>{% endif %}
 {%- endmacro %}
 
+{# Event geography (where it happened), from the stored location when the placement check confirms it. #}
+{% macro place(g) -%}
+  {% if g.mapped %}<span class="place" title="Location (stored, confirmed by the places the reports mention)">
+    {%- if g.country_level %}{{ g.country_name }} <span class="time">(whole country)</span>
+    {%- else %}{{ g.place }}{% if g.country_name and g.country_name != g.place %}, {{ g.country_name }}{% endif %}{% endif %}</span>
+  {%- elif g.country_name %}<span class="place unmapped" title="Not on the map: {{ g.not_mapped_because }}">{{ g.country_name }} <span class="time">(not on map)</span></span>
+  {%- else %}<span class="none" title="{{ g.not_mapped_because }}">No confirmed location</span>{% endif %}
+{%- endmacro %}
+
 {% macro sources(independent, total) -%}
   <span title="Independent sources (syndicated copies count once)">{{ independent }} independent source{{ '' if independent == 1 else 's' }}</span>
   {%- if total and total != independent %}<span class="time"> · {{ total }} outlets</span>{% endif %}

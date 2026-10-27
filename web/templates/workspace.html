@@ -1,0 +1,96 @@
+{% extends "shell.html" %}
+{% block title %}{{ 'Map' if view == 'map' else 'Today' }}{% endblock %}
+{% block main_class %}ws view-{{ view }}{% endblock %}
+{% block head %}
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css">
+  <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js" defer></script>
+  <script src="/static/workspace.js" defer></script>
+{% endblock %}
+{% block content %}
+{% set f = page.filters %}
+<aside class="ws-left" id="rail-left" aria-label="Filters and priorities">
+  <div class="rail-head">
+    <span>Filters</span>
+    <button type="button" class="icon-btn" data-toggle="rail-left" aria-controls="rail-left" title="Collapse">&laquo;</button>
+  </div>
+  <form id="ws-filters" class="rail-form" method="get" action="{{ '/map' if view == 'map' else '/' }}"
+        hx-get="{{ '/map' if view == 'map' else '/' }}" hx-target="#feed" hx-swap="outerHTML" hx-push-url="true"
+        hx-trigger="change, priorities-changed from:body">
+    <fieldset class="seg-field">
+      <legend>Period</legend>
+      <div class="seg" role="radiogroup">
+        {% for key, label in ranges.items() %}
+        <label><input type="radio" name="range" value="{{ key }}" {% if f.range == key %}checked{% endif %}><span>{{ label }}</span></label>
+        {% endfor %}
+      </div>
+    </fieldset>
+    <input type="hidden" name="country" id="f-country" value="{{ f.country }}">
+    <div class="country-filter" id="country-filter" {% if not f.country %}hidden{% endif %}>
+      <span>Country</span>
+      <b id="country-filter-name">{{ page.focus_country[1] if page.focus_country else '' }}</b>
+      <button type="button" class="icon-btn" data-clear-country title="Clear country filter">&times;</button>
+    </div>
+    <label>Topic
+      <select name="domain">
+        <option value="">All topics</option>
+        {% for d in domain_levels %}<option value="{{ d }}" {% if f.domain == d %}selected{% endif %}>{{ d | domain_label }}</option>{% endfor %}
+        <option value="unknown" {% if f.domain == 'unknown' %}selected{% endif %}>Unclassified</option>
+      </select>
+    </label>
+    <label>Development type
+      <select name="type">
+        <option value="">All types</option>
+        {% for t in event_types %}<option value="{{ t }}" {% if f.type == t %}selected{% endif %}>{{ t | type_label }}</option>{% endfor %}
+      </select>
+    </label>
+    <label>Confidence
+      <select name="confidence">
+        <option value="">Any</option>
+        {% for c in confidences %}<option value="{{ c }}" {% if f.confidence == c %}selected{% endif %}>{{ c | conf_label }}</option>{% endfor %}
+      </select>
+    </label>
+    <label>Lifecycle
+      <select name="lifecycle">
+        <option value="">New and updated</option>
+        {% for k, label in lifecycles.items() %}<option value="{{ k }}" {% if f.lifecycle == k %}selected{% endif %}>{{ label }}</option>{% endfor %}
+      </select>
+    </label>
+    <label>Situation
+      <select name="situation">
+        <option value="">Any</option>
+        {% for slug, title in all_situations %}<option value="{{ slug }}" {% if f.situation == slug %}selected{% endif %}>{{ title }}</option>{% endfor %}
+        <option value="none" {% if f.situation == 'none' %}selected{% endif %}>No active situation</option>
+      </select>
+    </label>
+    <label class="check"><input type="checkbox" name="show_muted" value="1" {% if f.show_muted %}checked{% endif %}> Show muted</label>
+    <noscript><button type="submit">Apply</button></noscript>
+  </form>
+  {% include "_priorities.html" %}
+</aside>
+
+<section class="ws-main" aria-label="Map and developments">
+  <div class="ws-mapwrap">
+    <div id="map" class="ws-map" data-geojson="/api/workspace/developments.geojson" data-mode="workspace"
+         role="region" aria-label="World map of developments"></div>
+    <div class="map-legend" aria-hidden="true">
+      <span><i class="dot lvl-HIGH"></i>High priority</span>
+      <span><i class="dot lvl-NORMAL"></i>Normal</span>
+      <span><i class="dot lvl-LOW"></i>Low</span>
+      <span><i class="dot ring"></i>Whole-country location</span>
+      <span><i class="dot cluster-high"></i>Group with a high-priority item</span>
+    </div>
+  </div>
+  {% include "_feed.html" %}
+</section>
+
+<aside class="ws-right" id="rail-right" aria-label="What changed and context">
+  <div class="rail-head">
+    <span>Context</span>
+    <button type="button" class="icon-btn" data-toggle="rail-right" aria-controls="rail-right" title="Close">&times;</button>
+  </div>
+  <div id="preview"></div>
+  {% include "_context.html" %}
+</aside>
+<button type="button" class="drawer-btn" data-toggle="rail-right" aria-controls="rail-right">What changed</button>
+<button type="button" class="drawer-btn left" data-toggle="rail-left" aria-controls="rail-left">Filters &amp; priorities</button>
+{% endblock %}

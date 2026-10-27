@@ -41,6 +41,8 @@ def _isolated_runtime_files(tmp_path, monkeypatch):
     monkeypatch.setattr(gaps, "EVENTS_LOG", tmp_path / "collector_events.jsonl")
     from osint_monitor.alerting import channels
     monkeypatch.setattr(channels, "DELIVERY_FILE", tmp_path / "alert_delivery.json")
+    # personal priorities (workspace) go to a per-test user-state database, never data/user_state.db
+    monkeypatch.setenv("OSINT_USER_STATE_DB", str(tmp_path / "user_state.db"))
 
 
 @pytest.fixture()

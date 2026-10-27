@@ -1,8 +1,8 @@
-"""Server-rendered reading pages: Today, Development detail, Situations, Situation detail.
+"""Server-rendered reading pages: Development detail, Situations, Situation detail (Today and Map are the
+workspace, api/workspace.py).
 
 Read-only. View models come from api/development_views.py and api/situation_views.py; the
-templates only format what those return. Filters on Today work as a plain GET form and are
-enhanced with HTMX (the list is swapped in place when the request carries HX-Request).
+templates only format what those return.
 """
 
 from __future__ import annotations
@@ -89,31 +89,26 @@ def _read(fn):
         session.close()
 
 
-@router.get("/", response_class=HTMLResponse)
-async def today_page(request: Request, range: str = "24h", domain: str = "", situation: str = "",
-                     confidence: str = ""):
-    from osint_monitor.api.development_views import TIME_RANGES, today
-    try:
-        page = _read(lambda s: today(s, range_key=range, domain=domain, situation=situation, confidence=confidence))
-    except _Unavailable as e:
-        return _unavailable(request, "Today", e)
-    context = {"page": page, "ranges": list(TIME_RANGES), "confidences": list(CONFIDENCE_LABELS)}
-    template = "_today_results.html" if request.headers.get("HX-Request") else "today.html"
-    return templates.TemplateResponse(request, template, context)
-
-
 @router.get("/developments/{event_id}", response_class=HTMLResponse)
 async def development_detail_page(request: Request, event_id: int):
     from osint_monitor.api.development_views import MIN_INDEPENDENT_SOURCES, development_page
+    from osint_monitor.api.workspace import store
+    from osint_monitor.api.workspace_views import describe
+    from osint_monitor.core.database import Event
+
+    def build(s):
+        page = development_page(s, event_id)
+        return page, (describe(s, [s.get(Event, event_id)], store(), None)[event_id] if page else None)
     try:
-        page = _read(lambda s: development_page(s, event_id))
+        page, item = _read(build)
     except _Unavailable as e:
         return _unavailable(request, "Development", e)
     if page is None:
         return templates.TemplateResponse(request, "development_detail.html", {"page": None, "event_id": event_id},
                                           status_code=404)
     return templates.TemplateResponse(request, "development_detail.html",
-                                      {"page": page, "event_id": event_id, "min_sources": MIN_INDEPENDENT_SOURCES})
+                                      {"page": page, "item": item, "event_id": event_id,
+                                       "min_sources": MIN_INDEPENDENT_SOURCES})
 
 
 @router.get("/situations", response_class=HTMLResponse)

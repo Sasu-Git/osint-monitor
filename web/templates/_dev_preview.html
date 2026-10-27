@@ -1,0 +1,24 @@
+{% import "_ui.html" as ui %}
+{% if page is none %}
+<div class="preview"><p class="hint">Development #{{ event_id }} does not exist.</p></div>
+{% else %}{% set c = page.card %}{% set d = c.development %}{% set g = item.geography %}
+<article class="preview" data-id="{{ d.id }}">
+  <div class="line">
+    {{ ui.event_type(d.classification.event_type) }}
+    {{ ui.domain(d.classification.event_domain) }}
+    {{ ui.confidence(d.confidence.confidence_class) }}
+  </div>
+  <h2 class="preview-title"><a href="/developments/{{ d.id }}">{{ d.what_happened }}</a></h2>
+  {% if d.summary.text %}<p class="summary">{{ d.summary.text }}</p>{% endif %}
+  <dl class="facts">
+    <dt>Updated</dt><dd>{{ d.last_updated_at | when }}</dd>
+    <dt>Location</dt><dd>{{ ui.place(g) }}</dd>
+    <dt>Actors</dt><dd>{{ ui.actors(d.principal_actors) }}</dd>
+    {% if item.involves %}<dt>Involves</dt><dd>{{ item.involves | map(attribute=1) | join(', ') }}</dd>{% endif %}
+    <dt>Situation</dt><dd>{{ ui.situation(c.situation_slug, c.situation_title) }}</dd>
+    <dt>Sources</dt><dd>{{ ui.sources(c.independent_sources, None) }}</dd>
+  </dl>
+  {% if item.priority.note %}<p class="prio-note">{{ item.priority.note }}</p>{% endif %}
+  <a class="btn" href="/developments/{{ d.id }}">Open development and evidence &rarr;</a>
+</article>
+{% endif %}

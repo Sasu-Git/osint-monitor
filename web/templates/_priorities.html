@@ -1,0 +1,35 @@
+{# Personal priorities. Presentation only: they reorder, emphasise or hide developments; they never change one. #}
+{% from "_levels.html" import levels_control with context %}
+<div id="priorities" class="priorities">
+  <div class="rail-head"><span>My priorities</span></div>
+  <p class="hint">HIGH surfaces first, LOW is quieter, MUTED is hidden unless "Show muted". Ordering only: priorities never change a development, its Situation, confidence or evidence.</p>
+
+  <section class="prio-block">
+    <h3>Countries</h3>
+    {% if country_levels %}
+    <ul class="prio-list">
+      {% for cid, name, lv in country_levels %}
+      <li class="prio-row set-{{ lv }}"><span class="prio-name">{{ name }}</span>{{ levels_control('country', cid, lv, name) }}</li>
+      {% endfor %}
+    </ul>
+    {% else %}<p class="hint">All countries NORMAL.</p>{% endif %}
+    <input type="search" name="q" class="country-search" placeholder="Find a country…" aria-label="Find a country"
+           autocomplete="off" hx-get="/ui/countries" hx-trigger="input changed delay:150ms, search" hx-target="next .country-results"
+           hx-swap="innerHTML">
+    <ul class="prio-list country-results" aria-live="polite"></ul>
+  </section>
+
+  <section class="prio-block">
+    <h3>Topics</h3>
+    <ul class="prio-list">
+      {% for d, lv in domain_levels.items() %}
+      <li class="prio-row set-{{ lv }}"><span class="prio-name">{{ d | domain_label }}</span>{{ levels_control('domain', d, lv, d | domain_label) }}</li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <form class="prio-reset" hx-post="/ui/priorities/reset" hx-target="#priorities" hx-swap="outerHTML"
+        hx-confirm="Reset every country and topic to NORMAL?">
+    <button type="submit" class="link-btn">Reset all to NORMAL</button>
+  </form>
+</div>

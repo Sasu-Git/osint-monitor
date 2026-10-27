@@ -24,6 +24,7 @@ from osint_monitor.api.routes.daemon import router as daemon_router
 from osint_monitor.api.routes.ingest import router as ingest_router
 from osint_monitor.api.routes.situations import router as situations_router
 from osint_monitor.api.pages import router as pages_router
+from osint_monitor.api.workspace import router as workspace_router
 from osint_monitor.api.auth import require_api_key
 
 logger = logging.getLogger(__name__)
@@ -79,7 +80,9 @@ async def startup():
     logger.info("OSINT Monitor API started")
 
 
-# Reading pages: Today (/), Development detail, Situations, Situation detail (api/pages.py)
+# Workspace: Today (/) and Map (/map), Priorities, the map GeoJSON and personal priorities (api/workspace.py)
+app.include_router(workspace_router, tags=["workspace"])
+# Reading pages: Development detail, Situations, Situation detail (api/pages.py)
 app.include_router(pages_router, tags=["pages"])
 
 
@@ -107,11 +110,6 @@ async def entities_page(request: Request):
 @app.get("/entities/{entity_id}", response_class=HTMLResponse)
 async def entity_detail_page(request: Request, entity_id: int):
     return templates.TemplateResponse(request, "entity_detail.html", {"entity_id": entity_id})
-
-
-@app.get("/map", response_class=HTMLResponse)
-async def map_page(request: Request):
-    return templates.TemplateResponse(request, "map.html")
 
 
 @app.get("/graph", response_class=HTMLResponse)

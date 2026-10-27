@@ -1,0 +1,49 @@
+{# "What changed" rail: built from the same selection as the feed and the map. #}
+<div id="context" class="context" {% if oob %}hx-swap-oob="true"{% endif %}>
+  {% if page.focus_situation %}{% set s = page.focus_situation %}
+  <section class="ctx-block focus">
+    <h2>Situation</h2>
+    <a class="ctx-title" href="/situations/{{ s.slug }}">{{ s.title }}</a>
+    <div class="line"><span class="chip">{{ s.status | humanize }}</span>
+      {% if page.focus_situation_actors %}<span class="actors">{{ page.focus_situation_actors | join(' · ') }}</span>{% endif %}</div>
+    <p class="hint">{{ s.developments }} development{{ '' if s.developments == 1 else 's' }} in this period, {{ s.new }} new.
+      {% if s.latest %}Latest: {{ s.latest }}{% endif %}</p>
+  </section>
+  {% endif %}
+  {% if page.focus_country %}
+  <section class="ctx-block focus">
+    <h2>Country</h2>
+    <span class="ctx-title">{{ page.focus_country[1] }}</span>
+    <p class="hint">Developments located there or whose principal actors act for it. Location and involvement are listed separately on each card.</p>
+  </section>
+  {% endif %}
+
+  <section class="ctx-block">
+    <h2>In this period</h2>
+    {% if page.anchor %}
+    <dl class="tally">
+      <div><dt>New</dt><dd>{{ page.new }}</dd></div>
+      <div><dt>Updated</dt><dd>{{ page.updated }}</dd></div>
+      <div><dt>On map</dt><dd>{{ page.mapped }}</dd></div>
+      {% if page.muted %}<div><dt>Muted</dt><dd>{{ page.muted }}</dd></div>{% endif %}
+    </dl>
+    <p class="hint">Since {{ page.since | when }}. Counts follow the filters; nothing here is a score.</p>
+    {% else %}<p class="hint">Nothing collected yet.</p>{% endif %}
+  </section>
+
+  <section class="ctx-block">
+    <h2>Situations that changed</h2>
+    {% if page.situations_changed %}
+    <ul class="ctx-list">
+      {% for s in page.situations_changed[:10] %}
+      <li data-situation="{{ s.slug }}">
+        <a href="/situations/{{ s.slug }}">{{ s.title }}</a>
+        <span class="time">{{ s.developments }} dev.{% if s.new %} · {{ s.new }} new{% endif %}</span>
+        <div class="latest">{{ s.latest }}</div>
+      </li>
+      {% endfor %}
+    </ul>
+    {% if page.situations_changed | length > 10 %}<p class="hint">and {{ page.situations_changed | length - 10 }} more.</p>{% endif %}
+    {% else %}<p class="hint">No Situation gained or changed a development in this selection.</p>{% endif %}
+  </section>
+</div>

@@ -6,19 +6,23 @@
   <title>{% block title %}OSINT Monitor{% endblock %} · OSINT Monitor</title>
   <link rel="stylesheet" href="/static/app.css">
   <script src="https://unpkg.com/htmx.org@1.9.12" defer></script>
+  {% block head %}{% endblock %}
 </head>
-<body>
+<body class="{% block body_class %}{% endblock %}">
   <header class="topbar">
     <a class="brand" href="/">OSINT Monitor</a>
     <nav class="nav" aria-label="Main">
       {% set path = request.url.path %}
       <a href="/" {% if path == '/' or path.startswith('/developments') %}aria-current="page"{% endif %}>Today</a>
+      <a href="/map" {% if path == '/map' %}aria-current="page"{% endif %}>Map</a>
       <a href="/situations" {% if path.startswith('/situations') %}aria-current="page"{% endif %}>Situations</a>
+      <a href="/priorities" {% if path == '/priorities' %}aria-current="page"{% endif %}>Priorities</a>
     </nav>
     <div class="aside"><a href="/dashboard">All signals (classic dashboard)</a></div>
   </header>
-  <main class="page">
+  <main class="{% block main_class %}page{% endblock %}">
     {% block content %}{% endblock %}
   </main>
+  {% block scripts %}{% endblock %}
 </body>
 </html>

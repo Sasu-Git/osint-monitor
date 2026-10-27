@@ -94,17 +94,39 @@ def _card(session: Session, event: Event, rank: int, canon, situations: dict[int
                            reasons=split_reasons(view.rank_reasons))
 
 
+def window(session: Session, range_key: str) -> tuple[Optional[datetime], Optional[datetime], list[Event]]:
+    """(anchor, since, developments updated in the window). The window ends at the newest collected
+    development, not the wall clock, so a paused collector does not empty the page."""
+    anchor = session.query(func.max(Event.last_updated_at)).scalar()
+    if anchor is None:
+        return None, None, []
+    since = anchor - timedelta(hours=TIME_RANGES[range_key])
+    return anchor, since, session.query(Event).filter(Event.last_updated_at >= since).all()
+
+
+def matches(e: Event, situations: dict[int, Situation], domain: str = "", situation: str = "",
+            confidence: str = "") -> bool:
+    return ((not domain or (e.event_domain or "unknown") == domain)
+            and (not situation or (situation == "none" and e.situation_id is None)
+                 or (e.situation_id in situations and situations[e.situation_id].slug == situation))
+            and (not confidence or (e.confidence_class or "") == confidence))
+
+
+def rank_order(e: Event) -> tuple:
+    """The pipeline's ranking order (rank_score is a sort key only, never shown)."""
+    return (e.rank_score is None, -(e.rank_score or 0.0),
+            -(e.last_updated_at.timestamp() if e.last_updated_at else 0), e.id)
+
+
 def today(session: Session, range_key: str = "24h", domain: str = "", situation: str = "",
           confidence: str = "", limit: int = 60) -> TodayPage:
     """Corroborated developments updated in the window, in ranking order."""
     range_key = range_key if range_key in TIME_RANGES else "24h"
-    anchor = session.query(func.max(Event.last_updated_at)).scalar()
+    anchor, _, events = window(session, range_key)
     page = TodayPage(anchor=anchor, range_key=range_key,
                      filters={"range": range_key, "domain": domain, "situation": situation, "confidence": confidence})
     if anchor is None:
         return page
-    since = anchor - timedelta(hours=TIME_RANGES[range_key])
-    events = session.query(Event).filter(Event.last_updated_at >= since).all()
     situations = {s.id: s for s in session.query(Situation)}
     page.domains = sorted({e.event_domain for e in events if e.event_domain and e.event_domain != "unknown"})
     used = {e.situation_id for e in events if e.situation_id}
@@ -112,13 +134,7 @@ def today(session: Session, range_key: str = "24h", domain: str = "", situation:
                              key=lambda x: x[1])
     corroborated = [e for e in events if (e.source_count or 0) >= MIN_INDEPENDENT_SOURCES]
     page.awaiting_corroboration = len(events) - len(corroborated)
-    chosen = [e for e in corroborated
-              if (not domain or (e.event_domain or "unknown") == domain)
-              and (not situation or (situation == "none" and e.situation_id is None)
-                   or (e.situation_id in situations and situations[e.situation_id].slug == situation))
-              and (not confidence or (e.confidence_class or "") == confidence)]
-    chosen.sort(key=lambda e: (e.rank_score is None, -(e.rank_score or 0.0),
-                               -(e.last_updated_at.timestamp() if e.last_updated_at else 0), e.id))
+    chosen = sorted((e for e in corroborated if matches(e, situations, domain, situation, confidence)), key=rank_order)
     canon = _canonicalizer()
     page.developments = [_card(session, e, n, canon, situations) for n, e in enumerate(chosen[:limit], start=1)]
     return page

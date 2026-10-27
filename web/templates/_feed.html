@@ -1,15 +1,27 @@
 {% import "_ui.html" as ui %}
-<div id="today-results">
-  {% if page.developments %}
+<div id="feed" class="ws-feed">
+  <div class="feed-head">
+    <h1>What changed</h1>
+    <span class="sub">
+      {% if page.anchor %}
+        {{ page.total }} corroborated development{{ '' if page.total == 1 else 's' }}
+        · {{ page.mapped }} on the map{% if page.unmapped %}, {{ page.unmapped }} without a confirmed location{% endif %}
+        {% if page.muted and not page.filters.show_muted %}· {{ page.muted }} muted{% endif %}
+        · collection up to {{ page.anchor | when }}
+      {% endif %}
+    </span>
+  </div>
+  {% if page.cards %}
   <ol class="dev-list">
-    {% for c in page.developments %}{% set d = c.development %}
-    <li class="dev">
-      <div class="rank" aria-label="Rank">{{ c.rank }}</div>
+    {% for wc in page.cards %}{% set c = wc.card %}{% set d = c.development %}{% set it = wc.item %}{% set g = it.geography %}
+    <li class="dev lvl-{{ it.priority.level.value }}" data-id="{{ d.id }}" data-situation="{{ c.situation_slug or '' }}">
+      <div class="rank" aria-label="Position">{{ c.rank }}</div>
       <div class="title"><a href="/developments/{{ d.id }}">{{ d.what_happened }}</a></div>
       {% if d.summary.text %}<div class="summary">{{ d.summary.text }}</div>{% endif %}
       <div class="meta-right">
         {{ ui.confidence(d.confidence.confidence_class) }}
         <span class="time">{{ d.last_updated_at | when }}</span>
+        <span class="state state-{{ it.lifecycle }}">{{ 'New' if it.lifecycle == 'new' else 'Updated' }}</span>
       </div>
       <div class="line">
         {{ ui.significance(d.significance_class) }}
@@ -18,9 +30,14 @@
         {{ ui.actors(d.principal_actors) }}
       </div>
       <div class="line">
+        {{ ui.place(g) }}
+        {% if it.involves %}<span class="involves" title="States the principal actors act for">Involves {{ it.involves | map(attribute=1) | join(', ') }}</span>{% endif %}
+      </div>
+      <div class="line">
         {{ ui.situation(c.situation_slug, c.situation_title) }}
         <span>{{ ui.sources(c.independent_sources, None) }}</span>
       </div>
+      {% if it.priority.note %}<div class="prio-note">{{ it.priority.note }}</div>{% endif %}
       {% if c.reasons.surfaced or c.reasons.caveats %}
       <div class="reasons">
         {{ c.reasons.surfaced | join(' · ') }}{% if c.reasons.surfaced and c.reasons.caveats %} · {% endif %}
@@ -30,10 +47,14 @@
     </li>
     {% endfor %}
   </ol>
+  {% if page.total > page.cards | length %}
+  <p class="hint">Showing the first {{ page.cards | length }} of {{ page.total }}. Narrow the filters to see the rest.</p>
+  {% endif %}
   {% else %}
   <div class="empty">
     <strong>No corroborated developments in this period.</strong>
     {% if page.anchor is none %}Nothing has been collected yet. Run <code>python main.py collect</code> or the daemon.
+    {% elif page.muted and not page.filters.show_muted %}{{ page.muted }} muted development{{ '' if page.muted == 1 else 's' }} hidden: tick "Show muted" to see {{ 'it' if page.muted == 1 else 'them' }}.
     {% else %}Try a longer period or clear the filters.{% endif %}
   </div>
   {% endif %}
@@ -47,3 +68,4 @@
   </p>
   {% endif %}
 </div>
+{% if request.headers.get('HX-Request') %}{% with oob=True %}{% include "_context.html" %}{% endwith %}{% endif %}

@@ -1,0 +1,5 @@
+{% from "_levels.html" import levels_control with context %}
+{% for cid, name, lv in results %}
+<li class="prio-row set-{{ lv }}"><span class="prio-name">{{ name }} <span class="time">{{ cid }}</span></span>{{ levels_control('country', cid, lv, name) }}</li>
+{% else %}{% if q %}<li class="hint">No country matches “{{ q }}”.</li>{% endif %}
+{% endfor %}

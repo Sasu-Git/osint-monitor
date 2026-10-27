@@ -122,6 +122,18 @@
   </div>
 
   <aside>
+    {% if item %}{% set g = item.geography %}
+    <section class="section panel">
+      <h2>Where</h2>
+      <dl class="facts">
+        <dt>Location</dt><dd>{{ ui.place(g) }}</dd>
+        {% if not g.mapped %}<dt>Map</dt><dd>Not on the map: {{ g.not_mapped_because }}</dd>{% endif %}
+        <dt>Involves</dt><dd>{% if item.involves %}{{ item.involves | map(attribute=1) | join(', ') }}{% else %}<span class="none">No state actors identified</span>{% endif %}</dd>
+      </dl>
+      {% if g.country %}<p class="hint"><a href="/map?country={{ g.country }}&amp;range=7d">Show {{ g.country_name }} on the map</a></p>{% endif %}
+      {% if item.priority.note %}<p class="prio-note">{{ item.priority.note }}</p>{% endif %}
+    </section>
+    {% endif %}
     <section class="section panel">
       <h2>Why this surfaced</h2>
       {% if c.reasons.surfaced %}<ul class="bullets">{% for r in c.reasons.surfaced %}<li>{{ r }}</li>{% endfor %}</ul>

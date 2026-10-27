@@ -1,0 +1,26 @@
+{% extends "shell.html" %}
+{% block title %}Priorities{% endblock %}
+{% block head %}<script src="/static/workspace.js" defer></script>{% endblock %}
+{% block content %}
+<div class="page-head">
+  <h1>Priorities</h1>
+  <span class="sub">Personal settings for what the workspace surfaces first. Stored for this installation only.</span>
+</div>
+<div class="prio-page">
+  {% include "_priorities.html" %}
+  <aside class="panel">
+    <h2 class="section-h">How priorities work</h2>
+    <dl class="facts">
+      <dt>HIGH</dt><dd>Listed first and emphasised on the map.</dd>
+      <dt>NORMAL</dt><dd>The default. The pipeline's ranking order applies.</dd>
+      <dt>LOW</dt><dd>Listed after NORMAL and drawn quieter.</dd>
+      <dt>MUTED</dt><dd>Hidden from the feed and the map until "Show muted" is ticked.</dd>
+    </dl>
+    <p class="hint">A development concerns a country when it is located there or when its principal actors act for it
+      (a US–China meeting in Geneva concerns Switzerland as its location and the US and China as actors).
+      A muted topic hides a development; a muted country hides it only when every country it concerns is muted.</p>
+    <p class="hint">Priorities are presentation only. They do not change which developments exist, which Situation a
+      development belongs to, its confidence or its evidence.</p>
+  </aside>
+</div>
+{% endblock %}

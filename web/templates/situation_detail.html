@@ -1,6 +1,11 @@
 {% extends "shell.html" %}
 {% import "_ui.html" as ui %}
 {% block title %}{% if situation %}{{ situation.title }}{% else %}Situation not found{% endif %}{% endblock %}
+{% block head %}
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css">
+  <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js" defer></script>
+  <script src="/static/workspace.js" defer></script>
+{% endblock %}
 {% block content %}
 <div class="crumbs"><a href="/situations">Situations</a></div>
 {% if situation is none %}
@@ -17,6 +22,7 @@
   {% if situation.description %}<p class="lede" style="margin-top:10px">{{ situation.description }}</p>{% endif %}
 </header>
 
+<div class="grid-2">
 <section class="section">
   <h2>Timeline · newest first</h2>
   {% if situation.developments %}
@@ -42,5 +48,33 @@
   <div class="empty"><strong>No developments linked yet.</strong>This situation is tracked; developments join it when they involve its actors.</div>
   {% endif %}
 </section>
+<aside>
+  {% if situation.developments %}{% set latest = situation.developments[0] %}
+  <section class="section panel">
+    <h2>Latest development</h2>
+    <a class="ctx-title" href="/developments/{{ latest.id }}">{{ latest.what_happened }}</a>
+    <p class="hint">First reported {{ latest.first_reported_at | when }}.</p>
+    {% if latest.change_summary and latest.change_summary | trim | lower != latest.what_happened | trim | lower %}
+    <p class="summary">What changed: {{ latest.change_summary }}</p>{% endif %}
+  </section>
+  {% endif %}
+  <section class="section">
+    <h2>Geographic context</h2>
+    <div class="mini-wrap"><div id="map" class="mini-map" data-mode="situation"
+      data-geojson="/api/workspace/developments.geojson?scope=situation&amp;situation={{ situation.slug | urlencode }}&amp;show_muted=1"
+      role="region" aria-label="Map of this situation's developments"></div></div>
+    <p class="hint">Developments whose stored location is confirmed by the places their reports mention. The others appear in the timeline only.</p>
+  </section>
+  <section class="section panel">
+    <h2>Status</h2>
+    <dl class="facts">
+      <dt>Status</dt><dd>{{ situation.status | humanize }}</dd>
+      <dt>Developments</dt><dd>{{ situation.development_count }}</dd>
+      <dt>Tracking since</dt><dd>{{ situation.created_at | when }}</dd>
+      <dt>Last changed</dt><dd>{{ situation.last_changed | when }}</dd>
+    </dl>
+  </section>
+</aside>
+</div>
 {% endif %}
 {% endblock %}
