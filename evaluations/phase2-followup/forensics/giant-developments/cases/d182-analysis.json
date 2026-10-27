@@ -1,0 +1,2956 @@
+{
+ "stats": {
+  "members": 148,
+  "paths": {
+   "created the Development": 5,
+   "continuation": 140,
+   "dedup (near-duplicate from another source)": 3
+  },
+  "continuation_reconstructed": 139,
+  "continuation_total": 140,
+  "single_link_attachments": 47,
+  "attach_links": 868,
+  "attach_links_near_threshold": 402,
+  "attach_links_p7": 19,
+  "attach_links_override": 31,
+  "attach_links_commentary_bridge": 121,
+  "attach_links_broad_actor_only": 358,
+  "attach_links_broad_place_only": 376,
+  "attach_links_no_shared_entity": 26,
+  "attach_links_cross_substory": 526,
+  "hop_distance": {
+   "0": 5,
+   "1": 41,
+   "2": 65,
+   "3": 32,
+   "null": 1,
+   "4": 4
+  },
+  "substories": 45,
+  "substories_ge5": 3,
+  "best_link_cosine_quartiles": [
+   0.5318,
+   0.569,
+   0.6194,
+   0.6779,
+   0.9608
+  ]
+ },
+ "substories": [
+  {
+   "substory": 5,
+   "size": 34,
+   "first_published": "2026-10-06 07:47",
+   "last_published": "2026-10-09 07:57",
+   "first_attached": "2026-10-06 08:14",
+   "sample_titles": [
+    "October 7 anniversary: How the Hamas attacks reshaped Israel, global politics and the Jewish experience three years on",
+    "Israel puts military on high alert over claimed Hamas attack ahead of October 7",
+    "Israel warns Gazans will pay 'heavy price' for any October 7 attacks on military",
+    "Jerusalem Daily:  Tension high in Israel ahead of October 7"
+   ]
+  },
+  {
+   "substory": 4,
+   "size": 26,
+   "first_published": "2026-10-06 06:47",
+   "last_published": "2026-10-09 19:17",
+   "first_attached": "2026-10-06 06:54",
+   "sample_titles": [
+    "Israelis scarred by Oct. 7 struggle to see Gaza as anything other than a threat",
+    "Beyond UN Rhetoric on Gaza",
+    "Three years of Israel’s genocide in Gaza: In numbers",
+    "Israel marks Hamas attack as Gaza grapples with fallout"
+   ]
+  },
+  {
+   "substory": 1,
+   "size": 21,
+   "first_published": "2026-10-05 00:39",
+   "last_published": "2026-10-09 08:41",
+   "first_attached": "2026-10-05 18:53",
+   "sample_titles": [
+    "Ghaydaa Kamal Al Abadsa, escritora palestina: “En Gaza no hay un alto el fuego, no crean esa mentira”",
+    "A tres años del ataque de Hamas: la amenaza de un nuevo atentado reaviva las alarmas en Israel",
+    "Aumentan a 1.460 los palestinos muertos por ataques de Israel contra Gaza desde el acuerdo de alto el fuego",
+    "Israel advierte que Gaza pagará un \"alto precio\" si sus tropas son atacadas el 7 de octubre"
+   ]
+  },
+  {
+   "substory": 2,
+   "size": 4,
+   "first_published": "2026-10-05 16:55",
+   "last_published": "2026-10-07 11:45",
+   "first_attached": "2026-10-05 18:53",
+   "sample_titles": [
+    "Israel anunció que mató a 4.000 implicados en la masacre del 7 de octubre: quedan 2.000 prófugos",
+    "Israel asegura que ha matado ya a 4.000 de los 6.000 \"terroristas\" del 7 de octubre de 2023",
+    "Israel desplaza a 69 personas en una sola demolición en Jerusalén Este, la mayor cifra registrada por la ONU",
+    "El jefe del Ejército de Israel compara los fallos del 7-O con los del Yom Kippur y alerta de nuevos ataques"
+   ]
+  },
+  {
+   "substory": 42,
+   "size": 4,
+   "first_published": "2026-10-08 07:56",
+   "last_published": "2026-10-08 15:35",
+   "first_attached": "2026-10-08 08:13",
+   "sample_titles": [
+    "Israel pone fin a la actividad del Consulado Británico en Jerusalén y veta la entrada a altos cargos por \"antisemitas\"",
+    "Judíos etíopes llevan años esperando una visa para llegar a Israel",
+    "Tras las sanciones a colonos: Israel dio por terminadas las funciones del consulado británico en Jerusalén",
+    "Israel cierra el Consulado británico en Jerusalén pero acepta dejarle una pequeña presencia diplomática"
+   ]
+  },
+  {
+   "substory": 6,
+   "size": 3,
+   "first_published": "2026-10-05 20:26",
+   "last_published": "2026-10-07 16:41",
+   "first_attached": "2026-10-06 10:34",
+   "sample_titles": [
+    "Israele, Katz: uccisi 4mila dei 6mila terroristi responsabili del 7 ottobre",
+    "Israele divisa a tre anni dal massacro del 7 ottobre",
+    "Sale a 5 morti il bilancio dei raid israeliani a Gaza nell'anniversario del 7 ottobre"
+   ]
+  },
+  {
+   "substory": 20,
+   "size": 3,
+   "first_published": "2026-10-07 09:17",
+   "last_published": "2026-10-07 14:23",
+   "first_attached": "2026-10-07 10:54",
+   "sample_titles": [
+    "Three years since Hamas October 7 attack: What did Netanyahu know?",
+    "Scars from Oct. 7 fuel deep divisions over Netanyahu ahead of Israeli election",
+    "Netanyahu faces fresh scrutiny over pre-October 7th warnings"
+   ]
+  },
+  {
+   "substory": 34,
+   "size": 3,
+   "first_published": "2026-10-07 21:17",
+   "last_published": "2026-10-08 20:32",
+   "first_attached": "2026-10-07 21:35",
+   "sample_titles": [
+    "October 7 Anniversary: New York Mayor Mamdani Condemns Hamas Attack, Accuses Israel Of Ongoing Genocide In Gaza",
+    "Anti-Israel protesters label Mamdani a traitor, accuse him of genocide outside Oct 7 vigil",
+    "Mamdanis Oct. 7 commemoration outrages supporters and critics of Israel"
+   ]
+  },
+  {
+   "substory": 3,
+   "size": 2,
+   "first_published": "2026-10-05 22:17",
+   "last_published": "2026-10-06 08:43",
+   "first_attached": "2026-10-05 22:24",
+   "sample_titles": [
+    "Gazas book enthusiasts keep Palestines literary heritage alive despite Israels genocide - Shafaqna English",
+    "Gaza woman rescues books from rubble to keep education alive"
+   ]
+  },
+  {
+   "substory": 8,
+   "size": 2,
+   "first_published": "2026-10-06 17:27",
+   "last_published": "2026-10-07 23:28",
+   "first_attached": "2026-10-06 17:55",
+   "sample_titles": [
+    "Israele, tre anni dopo nelle comunità colpite dall'attentato",
+    "Tre anni dopo la strage di Re'im: il dolore, la rabbia e la ferita ancora aperta di Israele"
+   ]
+  },
+  {
+   "substory": 9,
+   "size": 2,
+   "first_published": "2026-10-06 16:17",
+   "last_published": "2026-10-07 05:36",
+   "first_attached": "2026-10-06 21:36",
+   "sample_titles": [
+    "Il cardinale Pizzaballa: 7 ottobre spartiacque, futuro da ricostruire. Terra Santa in situazione gravissima",
+    "Tre anni dal 7 ottobre: il minuto di silenzio in ricordo delle vittime"
+   ]
+  },
+  {
+   "substory": 11,
+   "size": 2,
+   "first_published": "2026-10-05 18:47",
+   "last_published": "2026-10-06 19:17",
+   "first_attached": "2026-10-07 06:54",
+   "sample_titles": [
+    "Israel has restored security: Envoy Reuven Azar ahead of October 7 attacks anniversary",
+    "At UNs October 7th Commemoration, U.S.s Waltz says attack on Israel backfired on Iran"
+   ]
+  },
+  {
+   "substory": 13,
+   "size": 2,
+   "first_published": "2026-10-06 19:17",
+   "last_published": "2026-10-07 14:02",
+   "first_attached": "2026-10-07 06:54",
+   "sample_titles": [
+    "Pain, anger and the search for answers on third anniversary of October 7 attacks - 07-Oct-2026",
+    "The Truth About Oct. 7 Massacre, 3 Years Later"
+   ]
+  },
+  {
+   "substory": 14,
+   "size": 2,
+   "first_published": "2026-10-07 06:47",
+   "last_published": "2026-10-07 13:21",
+   "first_attached": "2026-10-07 06:54",
+   "sample_titles": [
+    "Israel marks third anniversary of October 7 atrocity, with tearful mourners gathered at Nova festival site and across the nation",
+    "Three years on, October 7 massacre sites in Israel draw visitors seeking to remember"
+   ]
+  },
+  {
+   "substory": 15,
+   "size": 2,
+   "first_published": "2026-10-06 06:17",
+   "last_published": "2026-10-07 20:32",
+   "first_attached": "2026-10-07 06:54",
+   "sample_titles": [
+    "Israeli documentary NAZA opens in the US, reigniting debate over the war in Gaza",
+    "NPR Faces Criticism for Gaza Documentary Review on Israeli Military Actions"
+   ]
+  },
+  {
+   "substory": 17,
+   "size": 2,
+   "first_published": "2026-10-05 22:47",
+   "last_published": "2026-10-07 08:17",
+   "first_attached": "2026-10-07 08:25",
+   "sample_titles": [
+    "Israeli occupation forces near completion of massive trench to partition Gaza: Report",
+    "Satellite photos show how Israeli forces have erased Gaza towns"
+   ]
+  },
+  {
+   "substory": 18,
+   "size": 2,
+   "first_published": "2026-10-06 12:00",
+   "last_published": "2026-10-06 16:32",
+   "first_attached": "2026-10-07 08:45",
+   "sample_titles": [
+    "Israeli demolition in East Jerusalem displaces 69 Palestinians",
+    "Israels Ben Gvir oversees demolition of Palestinian homes in occupied East Jerusalem"
+   ]
+  },
+  {
+   "substory": 22,
+   "size": 2,
+   "first_published": "2026-10-07 11:55",
+   "last_published": "2026-10-07 12:36",
+   "first_attached": "2026-10-07 12:14",
+   "sample_titles": [
+    "Hamas, '7 ottobre giornata gloriosa per la storia del nostro popolo'",
+    "Hamás describe el 7-O como \"un glorioso hito histórico\" enmarcado en \"el derecho a la resistencia\""
+   ]
+  },
+  {
+   "substory": 26,
+   "size": 2,
+   "first_published": "2026-10-07 13:30",
+   "last_published": "2026-10-08 10:47",
+   "first_attached": "2026-10-07 13:54",
+   "sample_titles": [
+    "October 7: Former Israeli hostage speaks to France 24",
+    "Israel remembers October 7 victims amid calls for accountability"
+   ]
+  },
+  {
+   "substory": 32,
+   "size": 2,
+   "first_published": "2026-10-07 11:47",
+   "last_published": "2026-10-07 11:47",
+   "first_attached": "2026-10-07 19:36",
+   "sample_titles": [
+    "Israelis split in 1s elections since Oct 7 attack",
+    "Israelis are split over Netanyahu in their first elections since Oct. 7 – KTBB News, Weather, Talk"
+   ]
+  },
+  {
+   "substory": 40,
+   "size": 2,
+   "first_published": "2026-10-06 21:02",
+   "last_published": "2026-10-06 22:17",
+   "first_attached": "2026-10-08 07:54",
+   "sample_titles": [
+    "Israels paradox three years into the war: capital seeks Ssfety, defense industry investments rise",
+    "CIA warns of potential Israeli civil war, state collapse: Fracture from within"
+   ]
+  },
+  {
+   "substory": 7,
+   "size": 1,
+   "first_published": "2026-10-06 13:17",
+   "last_published": "2026-10-06 13:17",
+   "first_attached": "2026-10-06 13:24",
+   "sample_titles": [
+    "Israeli defense minister vows to eliminate all 2,000 remaining Oct. 7 terrorists"
+   ]
+  },
+  {
+   "substory": 10,
+   "size": 1,
+   "first_published": "2026-10-05 22:32",
+   "last_published": "2026-10-05 22:32",
+   "first_attached": "2026-10-07 06:46",
+   "sample_titles": [
+    "Gaza: the simplicity of horror - BusinessWorld Online"
+   ]
+  },
+  {
+   "substory": 12,
+   "size": 1,
+   "first_published": "2026-10-06 15:57",
+   "last_published": "2026-10-06 15:57",
+   "first_attached": "2026-10-07 06:54",
+   "sample_titles": [
+    "Make Israeli-Palestinian Ceasefire Permanent, Allow Humanitarian Assistance at Scale, Secretary-General Urges in Message Marking Third Anniversary of 7 October"
+   ]
+  },
+  {
+   "substory": 16,
+   "size": 1,
+   "first_published": "2026-10-06 13:17",
+   "last_published": "2026-10-06 13:17",
+   "first_attached": "2026-10-07 06:54",
+   "sample_titles": [
+    "Gazas biggest hospital inoperative amid Israeli attack"
+   ]
+  },
+  {
+   "substory": 19,
+   "size": 1,
+   "first_published": "2026-10-07 05:02",
+   "last_published": "2026-10-07 05:02",
+   "first_attached": "2026-10-07 09:03",
+   "sample_titles": [
+    "Residents of kibbutz destroyed in 7 October Hamas-led attacks grapple with how to rebuild"
+   ]
+  },
+  {
+   "substory": 21,
+   "size": 1,
+   "first_published": "2026-10-07 09:47",
+   "last_published": "2026-10-07 09:47",
+   "first_attached": "2026-10-07 12:04",
+   "sample_titles": [
+    "UCLA student group hosts vigil to mourn Palestinians killed in Israel-Hamas war"
+   ]
+  },
+  {
+   "substory": 23,
+   "size": 1,
+   "first_published": "2026-10-07 12:47",
+   "last_published": "2026-10-07 12:47",
+   "first_attached": "2026-10-07 12:54",
+   "sample_titles": [
+    "Tag: Israel-Hamas War – NBC10 Philadelphia"
+   ]
+  },
+  {
+   "substory": 24,
+   "size": 1,
+   "first_published": "2026-10-07 12:59",
+   "last_published": "2026-10-07 12:59",
+   "first_attached": "2026-10-07 13:24",
+   "sample_titles": [
+    "'Time doesn't heal': Parents of October 7 attacks victim Aner Shapira"
+   ]
+  },
+  {
+   "substory": 25,
+   "size": 1,
+   "first_published": "2026-10-07 11:17",
+   "last_published": "2026-10-07 11:17",
+   "first_attached": "2026-10-07 13:24",
+   "sample_titles": [
+    "Tense scenes in Melbourne as Israel supporters square off against pro-Palestine activists holding heartless vigil three years to the day since the bloody October 7 massacre"
+   ]
+  },
+  {
+   "substory": 27,
+   "size": 1,
+   "first_published": "2026-10-07 14:40",
+   "last_published": "2026-10-07 14:40",
+   "first_attached": "2026-10-07 16:56",
+   "sample_titles": [
+    "EEUU afirma que nunca olvidará el \"acto de barbarie\" del 7-O y reafirma la defensa de la civilización"
+   ]
+  },
+  {
+   "substory": 28,
+   "size": 1,
+   "first_published": "2026-10-07 14:30",
+   "last_published": "2026-10-07 14:30",
+   "first_attached": "2026-10-07 16:56",
+   "sample_titles": [
+    "La BBC entra en Gaza: campos infestados de ratas y miles de niños que necesitan ser evacuados de una zona devastada por la guerra"
+   ]
+  },
+  {
+   "substory": 29,
+   "size": 1,
+   "first_published": "2026-10-07 14:48",
+   "last_published": "2026-10-07 14:48",
+   "first_attached": "2026-10-07 16:56",
+   "sample_titles": [
+    "Tres años de la matanza en el festival Nova de Israel: “Tengo miedo a olvidar la voz de mi hija”"
+   ]
+  },
+  {
+   "substory": 30,
+   "size": 1,
+   "first_published": "2026-10-07 10:02",
+   "last_published": "2026-10-07 10:02",
+   "first_attached": "2026-10-07 18:45",
+   "sample_titles": [
+    "Mattarella: \"Due popoli due Stati. Fermare inaudita violenza\" Meloni: “Massacro di innocenti\""
+   ]
+  },
+  {
+   "substory": 31,
+   "size": 1,
+   "first_published": "2026-10-07 15:25",
+   "last_published": "2026-10-07 15:25",
+   "first_attached": "2026-10-07 19:23",
+   "sample_titles": [
+    "The mass killing does not mean Israel’s winning"
+   ]
+  },
+  {
+   "substory": 33,
+   "size": 1,
+   "first_published": "2026-10-07 20:47",
+   "last_published": "2026-10-07 20:47",
+   "first_attached": "2026-10-07 20:59",
+   "sample_titles": [
+    "October 7 terrorist trials face delays, Israeli Knesset convenes committee"
+   ]
+  },
+  {
+   "substory": 35,
+   "size": 1,
+   "first_published": "2026-10-07 21:04",
+   "last_published": "2026-10-07 21:04",
+   "first_attached": "2026-10-07 21:53",
+   "sample_titles": [
+    "Sostenitori della causa palestinese hanno sfilato a Berlino"
+   ]
+  },
+  {
+   "substory": 36,
+   "size": 1,
+   "first_published": "2026-10-07 23:23",
+   "last_published": "2026-10-07 23:23",
+   "first_attached": "2026-10-08 05:54",
+   "sample_titles": [
+    "“El sufrimiento no comenzó ni terminó ese día”: el polémico mensaje del alcalde de Nueva York, Zohran Mamdani, a tres años de la masacre del 7-O"
+   ]
+  },
+  {
+   "substory": 37,
+   "size": 1,
+   "first_published": "2026-10-07 00:58",
+   "last_published": "2026-10-07 00:58",
+   "first_attached": "2026-10-08 05:58",
+   "sample_titles": [
+    "What’s behind Israel’s growing shift to the right?"
+   ]
+  },
+  {
+   "substory": 38,
+   "size": 1,
+   "first_published": "2026-10-08 06:08",
+   "last_published": "2026-10-08 06:08",
+   "first_attached": "2026-10-08 06:54",
+   "sample_titles": [
+    "What did Palestinians take when they fled after October 7?"
+   ]
+  },
+  {
+   "substory": 39,
+   "size": 1,
+   "first_published": "2026-10-06 19:17",
+   "last_published": "2026-10-06 19:17",
+   "first_attached": "2026-10-08 07:54",
+   "sample_titles": [
+    "Luis Har, former Israeli hostage in Gaza: If it had been only up to our government, we would still be there | International"
+   ]
+  },
+  {
+   "substory": 41,
+   "size": 1,
+   "first_published": "2026-10-07 13:17",
+   "last_published": "2026-10-07 13:17",
+   "first_attached": "2026-10-08 07:54",
+   "sample_titles": [
+    "Iran will strike before October 27 – Israel is no longer invincible, trembles at the new balance of power in the Middle East"
+   ]
+  },
+  {
+   "substory": 43,
+   "size": 1,
+   "first_published": "2026-10-08 08:02",
+   "last_published": "2026-10-08 08:02",
+   "first_attached": "2026-10-08 08:13",
+   "sample_titles": [
+    "Three years after Oct. 7, Huckabee warns fight goes beyond Israel"
+   ]
+  },
+  {
+   "substory": 44,
+   "size": 1,
+   "first_published": "2026-10-08 10:27",
+   "last_published": "2026-10-08 10:27",
+   "first_attached": "2026-10-08 10:44",
+   "sample_titles": [
+    "Mamdani es abucheado por manifestantes propalestinos por acudir a un acto de recuerdo de las víctimas del 7 de octubre"
+   ]
+  },
+  {
+   "substory": 45,
+   "size": 1,
+   "first_published": "2026-10-08 17:17",
+   "last_published": "2026-10-08 17:17",
+   "first_attached": "2026-10-08 18:16",
+   "sample_titles": [
+    "Jerusalem Daily: Remembrance and mourning"
+   ]
+  }
+ ],
+ "daily": [
+  {
+   "day": "2026-10-05",
+   "attached": 6,
+   "size_end": 6,
+   "actors": 13,
+   "places": 7,
+   "sources": 4,
+   "languages": 2,
+   "substories": 3,
+   "span_days": 0.9,
+   "mean_window_members": 5.0,
+   "mean_linked": 1.0,
+   "single_link_share": 1.0,
+   "new_substory_share": 1.0
+  },
+  {
+   "day": "2026-10-06",
+   "attached": 13,
+   "size_end": 19,
+   "actors": 20,
+   "places": 9,
+   "sources": 8,
+   "languages": 3,
+   "substories": 9,
+   "span_days": 1.7,
+   "mean_window_members": 11.8,
+   "mean_linked": 2.4,
+   "single_link_share": 0.62,
+   "new_substory_share": 0.69
+  },
+  {
+   "day": "2026-10-07",
+   "attached": 94,
+   "size_end": 113,
+   "actors": 88,
+   "places": 46,
+   "sources": 15,
+   "languages": 3,
+   "substories": 35,
+   "span_days": 2.9,
+   "mean_window_members": 63.5,
+   "mean_linked": 6.3,
+   "single_link_share": 0.32,
+   "new_substory_share": 0.46
+  },
+  {
+   "day": "2026-10-08",
+   "attached": 30,
+   "size_end": 143,
+   "actors": 102,
+   "places": 57,
+   "sources": 15,
+   "languages": 3,
+   "substories": 45,
+   "span_days": 3.8,
+   "mean_window_members": 124.6,
+   "mean_linked": 5.9,
+   "single_link_share": 0.3,
+   "new_substory_share": 0.53
+  },
+  {
+   "day": "2026-10-09",
+   "attached": 5,
+   "size_end": 148,
+   "actors": 108,
+   "places": 63,
+   "sources": 15,
+   "languages": 3,
+   "substories": 45,
+   "span_days": 4.8,
+   "mean_window_members": 122.6,
+   "mean_linked": 4.8,
+   "single_link_share": 0.0,
+   "new_substory_share": 0.0
+  }
+ ],
+ "cuts": [
+  {
+   "cut": "baseline (all reconstructed attach-time links)",
+   "components": 2,
+   "non_singleton": 1,
+   "largest": [
+    147,
+    1
+   ],
+   "singletons": 1,
+   "seed_component": 147,
+   "substories_in_seed_component": 44,
+   "substories_split_across_components": [],
+   "largest_component_samples": {
+    "147": [
+     "Ghaydaa Kamal Al Abadsa, escritora palestina: “En Gaza no hay un alto el fuego, no crean e",
+     "A tres años del ataque de Hamas: la amenaza de un nuevo atentado reaviva las alarmas en Is",
+     "Israel anunció que mató a 4.000 implicados en la masacre del 7 de octubre: quedan 2.000 pr"
+    ],
+    "1": [
+     "Gaza: the simplicity of horror - BusinessWorld Online"
+    ]
+   }
+  },
+  {
+   "cut": "remove commentary / analysis / roundup bridge links",
+   "components": 19,
+   "non_singleton": 1,
+   "largest": [
+    130,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "singletons": 18,
+   "seed_component": 130,
+   "substories_in_seed_component": 42,
+   "substories_split_across_components": [],
+   "largest_component_samples": {
+    "130": [
+     "Ghaydaa Kamal Al Abadsa, escritora palestina: “En Gaza no hay un alto el fuego, no crean e",
+     "A tres años del ataque de Hamas: la amenaza de un nuevo atentado reaviva las alarmas en Is",
+     "Israel anunció que mató a 4.000 implicados en la masacre del 7 de octubre: quedan 2.000 pr"
+    ],
+    "1": [
+     "Israeli-Palestinian conflict live updates: Israel marks 3 years since Oct. 7 attack"
+    ]
+   }
+  },
+  {
+   "cut": "remove live-blog links",
+   "components": 9,
+   "non_singleton": 3,
+   "largest": [
+    132,
+    8,
+    2,
+    1,
+    1,
+    1
+   ],
+   "singletons": 6,
+   "seed_component": 132,
+   "substories_in_seed_component": 42,
+   "substories_split_across_components": [
+    4
+   ],
+   "largest_component_samples": {
+    "132": [
+     "Ghaydaa Kamal Al Abadsa, escritora palestina: “En Gaza no hay un alto el fuego, no crean e",
+     "A tres años del ataque de Hamas: la amenaza de un nuevo atentado reaviva las alarmas en Is",
+     "Israel anunció que mató a 4.000 implicados en la masacre del 7 de octubre: quedan 2.000 pr"
+    ],
+    "8": [
+     "Three years since Hamas October 7 attack: What did Netanyahu know?",
+     "Three years of October 7 Hamas attack. Was Israel alerted by a country days before?",
+     "How three years of Israel’s genocidal war have changed Gaza"
+    ],
+    "2": [
+     "No longer the same Israel? October 7th and the future of the Jewish State",
+     "What’s behind Israel’s growing shift to the right?"
+    ],
+    "1": [
+     "Gaza: the simplicity of horror - BusinessWorld Online"
+    ]
+   }
+  },
+  {
+   "cut": "remove links whose only shared entities are states (broad actor anchor)",
+   "components": 36,
+   "non_singleton": 4,
+   "largest": [
+    110,
+    2,
+    2,
+    2,
+    1,
+    1
+   ],
+   "singletons": 32,
+   "seed_component": 110,
+   "substories_in_seed_component": 30,
+   "substories_split_across_components": [],
+   "largest_component_samples": {
+    "110": [
+     "Ghaydaa Kamal Al Abadsa, escritora palestina: “En Gaza no hay un alto el fuego, no crean e",
+     "A tres años del ataque de Hamas: la amenaza de un nuevo atentado reaviva las alarmas en Is",
+     "Israel anunció que mató a 4.000 implicados en la masacre del 7 de octubre: quedan 2.000 pr"
+    ],
+    "2": [
+     "Israel pone fin a la actividad del Consulado Británico en Jerusalén y veta la entrada a al",
+     "Tras las sanciones a colonos: Israel dio por terminadas las funciones del consulado britán"
+    ]
+   }
+  },
+  {
+   "cut": "remove links whose only shared places are countries/regions (broad place anchor)",
+   "components": 36,
+   "non_singleton": 3,
+   "largest": [
+    111,
+    2,
+    2,
+    1,
+    1,
+    1
+   ],
+   "singletons": 33,
+   "seed_component": 111,
+   "substories_in_seed_component": 31,
+   "substories_split_across_components": [],
+   "largest_component_samples": {
+    "111": [
+     "Ghaydaa Kamal Al Abadsa, escritora palestina: “En Gaza no hay un alto el fuego, no crean e",
+     "A tres años del ataque de Hamas: la amenaza de un nuevo atentado reaviva las alarmas en Is",
+     "Israel anunció que mató a 4.000 implicados en la masacre del 7 de octubre: quedan 2.000 pr"
+    ],
+    "2": [
+     "Three years since Hamas October 7 attack: What did Netanyahu know?",
+     "Three years of October 7 Hamas attack. Was Israel alerted by a country days before?"
+    ],
+    "1": [
+     "Israeli defense minister vows to eliminate all 2,000 remaining Oct. 7 terrorists"
+    ]
+   }
+  },
+  {
+   "cut": "remove links with no shared entity at all",
+   "components": 8,
+   "non_singleton": 2,
+   "largest": [
+    139,
+    3,
+    1,
+    1,
+    1,
+    1
+   ],
+   "singletons": 6,
+   "seed_component": 139,
+   "substories_in_seed_component": 41,
+   "substories_split_across_components": [],
+   "largest_component_samples": {
+    "139": [
+     "Ghaydaa Kamal Al Abadsa, escritora palestina: “En Gaza no hay un alto el fuego, no crean e",
+     "A tres años del ataque de Hamas: la amenaza de un nuevo atentado reaviva las alarmas en Is",
+     "Israel anunció que mató a 4.000 implicados en la masacre del 7 de octubre: quedan 2.000 pr"
+    ],
+    "3": [
+     "Hamas, '7 ottobre giornata gloriosa per la storia del nostro popolo'",
+     "Mattarella: \"Due popoli due Stati. Fermare inaudita violenza\" Meloni: “Massacro di innocen",
+     "Sostenitori della causa palestinese hanno sfilato a Berlino"
+    ],
+    "1": [
+     "Pain, anger and the search for answers on third anniversary of October 7 attacks - 07-Oct-"
+    ]
+   }
+  },
+  {
+   "cut": "remove near-threshold links (cosine < 0.58)",
+   "components": 30,
+   "non_singleton": 5,
+   "largest": [
+    114,
+    3,
+    2,
+    2,
+    2,
+    1
+   ],
+   "singletons": 25,
+   "seed_component": 114,
+   "substories_in_seed_component": 29,
+   "substories_split_across_components": [],
+   "largest_component_samples": {
+    "114": [
+     "Ghaydaa Kamal Al Abadsa, escritora palestina: “En Gaza no hay un alto el fuego, no crean e",
+     "A tres años del ataque de Hamas: la amenaza de un nuevo atentado reaviva las alarmas en Is",
+     "Israel anunció que mató a 4.000 implicados en la masacre del 7 de octubre: quedan 2.000 pr"
+    ],
+    "3": [
+     "Israel pone fin a la actividad del Consulado Británico en Jerusalén y veta la entrada a al",
+     "Tras las sanciones a colonos: Israel dio por terminadas las funciones del consulado britán",
+     "Israel cierra el Consulado británico en Jerusalén pero acepta dejarle una pequeña presenci"
+    ],
+    "2": [
+     "October 7: Former Israeli hostage speaks to France 24",
+     "Luis Har, former Israeli hostage in Gaza: If it had been only up to our government, we wou"
+    ]
+   }
+  },
+  {
+   "cut": "remove links crossing sub-stories (descriptive grouping)",
+   "components": 62,
+   "non_singleton": 11,
+   "largest": [
+    33,
+    26,
+    20,
+    4,
+    2,
+    2
+   ],
+   "singletons": 51,
+   "seed_component": 20,
+   "substories_in_seed_component": 1,
+   "substories_split_across_components": [],
+   "largest_component_samples": {
+    "33": [
+     "October 7 anniversary: How the Hamas attacks reshaped Israel, global politics and the Jewi",
+     "Israel puts military on high alert over claimed Hamas attack ahead of October 7",
+     "Israel warns Gazans will pay 'heavy price' for any October 7 attacks on military"
+    ],
+    "26": [
+     "Israelis scarred by Oct. 7 struggle to see Gaza as anything other than a threat",
+     "Beyond UN Rhetoric on Gaza",
+     "Three years of Israel’s genocide in Gaza: In numbers"
+    ],
+    "20": [
+     "Ghaydaa Kamal Al Abadsa, escritora palestina: “En Gaza no hay un alto el fuego, no crean e",
+     "A tres años del ataque de Hamas: la amenaza de un nuevo atentado reaviva las alarmas en Is",
+     "Aumentan a 1.460 los palestinos muertos por ataques de Israel contra Gaza desde el acuerdo"
+    ],
+    "4": [
+     "Israel pone fin a la actividad del Consulado Británico en Jerusalén y veta la entrada a al",
+     "Judíos etíopes llevan años esperando una visa para llegar a Israel",
+     "Tras las sanciones a colonos: Israel dio por terminadas las funciones del consulado britán"
+    ]
+   }
+  },
+  {
+   "cut": "direct-to-seed only (no chaining): members linked directly to a seed item",
+   "components": 103,
+   "non_singleton": 1,
+   "largest": [
+    46,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "singletons": 102,
+   "seed_component": 46,
+   "substories_in_seed_component": 11,
+   "substories_split_across_components": [],
+   "largest_component_samples": {
+    "46": [
+     "Ghaydaa Kamal Al Abadsa, escritora palestina: “En Gaza no hay un alto el fuego, no crean e",
+     "A tres años del ataque de Hamas: la amenaza de un nuevo atentado reaviva las alarmas en Is",
+     "Israel anunció que mató a 4.000 implicados en la masacre del 7 de octubre: quedan 2.000 pr"
+    ],
+    "1": [
+     "Israele divisa a tre anni dal massacro del 7 ottobre"
+    ]
+   }
+  }
+ ],
+ "series": [
+  {
+   "n": 1,
+   "added_at": "2026-10-05 18:53",
+   "size": 1,
+   "actors": 5,
+   "places": 2,
+   "sources": 1,
+   "languages": 1,
+   "headline_kinds": 1,
+   "substories": 1,
+   "span_days": 0.0,
+   "window_members": 0,
+   "linked": 0
+  },
+  {
+   "n": 2,
+   "added_at": "2026-10-05 18:53",
+   "size": 2,
+   "actors": 7,
+   "places": 3,
+   "sources": 2,
+   "languages": 1,
+   "headline_kinds": 1,
+   "substories": 1,
+   "span_days": 0.1,
+   "window_members": 0,
+   "linked": 0
+  },
+  {
+   "n": 3,
+   "added_at": "2026-10-05 18:53",
+   "size": 3,
+   "actors": 8,
+   "places": 3,
+   "sources": 2,
+   "languages": 1,
+   "headline_kinds": 1,
+   "substories": 2,
+   "span_days": 0.7,
+   "window_members": 0,
+   "linked": 0
+  },
+  {
+   "n": 4,
+   "added_at": "2026-10-05 18:53",
+   "size": 4,
+   "actors": 10,
+   "places": 6,
+   "sources": 3,
+   "languages": 1,
+   "headline_kinds": 1,
+   "substories": 2,
+   "span_days": 0.7,
+   "window_members": 0,
+   "linked": 0
+  },
+  {
+   "n": 5,
+   "added_at": "2026-10-05 18:53",
+   "size": 5,
+   "actors": 11,
+   "places": 6,
+   "sources": 3,
+   "languages": 1,
+   "headline_kinds": 1,
+   "substories": 2,
+   "span_days": 0.7,
+   "window_members": 0,
+   "linked": 0
+  },
+  {
+   "n": 6,
+   "added_at": "2026-10-05 22:24",
+   "size": 6,
+   "actors": 13,
+   "places": 7,
+   "sources": 4,
+   "languages": 2,
+   "headline_kinds": 1,
+   "substories": 3,
+   "span_days": 0.9,
+   "window_members": 5,
+   "linked": 1
+  },
+  {
+   "n": 7,
+   "added_at": "2026-10-06 06:54",
+   "size": 7,
+   "actors": 13,
+   "places": 7,
+   "sources": 4,
+   "languages": 2,
+   "headline_kinds": 1,
+   "substories": 4,
+   "span_days": 1.3,
+   "window_members": 6,
+   "linked": 1
+  },
+  {
+   "n": 8,
+   "added_at": "2026-10-06 08:14",
+   "size": 8,
+   "actors": 14,
+   "places": 7,
+   "sources": 4,
+   "languages": 2,
+   "headline_kinds": 1,
+   "substories": 5,
+   "span_days": 1.3,
+   "window_members": 7,
+   "linked": 1
+  },
+  {
+   "n": 9,
+   "added_at": "2026-10-06 09:13",
+   "size": 9,
+   "actors": 14,
+   "places": 7,
+   "sources": 5,
+   "languages": 2,
+   "headline_kinds": 1,
+   "substories": 5,
+   "span_days": 1.3,
+   "window_members": 8,
+   "linked": 4
+  },
+  {
+   "n": 10,
+   "added_at": "2026-10-06 10:34",
+   "size": 10,
+   "actors": 16,
+   "places": 8,
+   "sources": 6,
+   "languages": 3,
+   "headline_kinds": 1,
+   "substories": 6,
+   "span_days": 1.4,
+   "window_members": 9,
+   "linked": 3
+  },
+  {
+   "n": 11,
+   "added_at": "2026-10-06 13:24",
+   "size": 11,
+   "actors": 16,
+   "places": 8,
+   "sources": 6,
+   "languages": 3,
+   "headline_kinds": 1,
+   "substories": 7,
+   "span_days": 1.5,
+   "window_members": 10,
+   "linked": 1
+  },
+  {
+   "n": 12,
+   "added_at": "2026-10-06 15:24",
+   "size": 12,
+   "actors": 17,
+   "places": 8,
+   "sources": 6,
+   "languages": 3,
+   "headline_kinds": 1,
+   "substories": 7,
+   "span_days": 1.6,
+   "window_members": 11,
+   "linked": 1
+  },
+  {
+   "n": 13,
+   "added_at": "2026-10-06 15:24",
+   "size": 13,
+   "actors": 17,
+   "places": 8,
+   "sources": 6,
+   "languages": 3,
+   "headline_kinds": 1,
+   "substories": 7,
+   "span_days": 1.6,
+   "window_members": 11,
+   "linked": 1
+  },
+  {
+   "n": 14,
+   "added_at": "2026-10-06 17:24",
+   "size": 14,
+   "actors": 17,
+   "places": 8,
+   "sources": 6,
+   "languages": 3,
+   "headline_kinds": 1,
+   "substories": 7,
+   "span_days": 1.7,
+   "window_members": 13,
+   "linked": 8
+  },
+  {
+   "n": 15,
+   "added_at": "2026-10-06 17:55",
+   "size": 15,
+   "actors": 17,
+   "places": 8,
+   "sources": 7,
+   "languages": 3,
+   "headline_kinds": 1,
+   "substories": 8,
+   "span_days": 1.7,
+   "window_members": 14,
+   "linked": 2
+  },
+  {
+   "n": 16,
+   "added_at": "2026-10-06 18:06",
+   "size": 16,
+   "actors": 18,
+   "places": 8,
+   "sources": 8,
+   "languages": 3,
+   "headline_kinds": 1,
+   "substories": 8,
+   "span_days": 1.7,
+   "window_members": 15,
+   "linked": 1
+  },
+  {
+   "n": 17,
+   "added_at": "2026-10-06 19:15",
+   "size": 17,
+   "actors": 19,
+   "places": 8,
+   "sources": 8,
+   "languages": 3,
+   "headline_kinds": 1,
+   "substories": 8,
+   "span_days": 1.7,
+   "window_members": 16,
+   "linked": 6
+  },
+  {
+   "n": 18,
+   "added_at": "2026-10-06 21:36",
+   "size": 18,
+   "actors": 19,
+   "places": 8,
+   "sources": 8,
+   "languages": 3,
+   "headline_kinds": 1,
+   "substories": 8,
+   "span_days": 1.7,
+   "window_members": 17,
+   "linked": 1
+  },
+  {
+   "n": 19,
+   "added_at": "2026-10-06 21:36",
+   "size": 19,
+   "actors": 20,
+   "places": 9,
+   "sources": 8,
+   "languages": 3,
+   "headline_kinds": 1,
+   "substories": 9,
+   "span_days": 1.7,
+   "window_members": 17,
+   "linked": 1
+  },
+  {
+   "n": 20,
+   "added_at": "2026-10-07 05:54",
+   "size": 20,
+   "actors": 20,
+   "places": 9,
+   "sources": 9,
+   "languages": 3,
+   "headline_kinds": 1,
+   "substories": 9,
+   "span_days": 1.7,
+   "window_members": 19,
+   "linked": 1
+  },
+  {
+   "n": 21,
+   "added_at": "2026-10-07 05:54",
+   "size": 21,
+   "actors": 21,
+   "places": 9,
+   "sources": 9,
+   "languages": 3,
+   "headline_kinds": 1,
+   "substories": 9,
+   "span_days": 1.7,
+   "window_members": 19,
+   "linked": 1
+  },
+  {
+   "n": 22,
+   "added_at": "2026-10-07 06:46",
+   "size": 22,
+   "actors": 21,
+   "places": 9,
+   "sources": 9,
+   "languages": 3,
+   "headline_kinds": 1,
+   "substories": 9,
+   "span_days": 2.1,
+   "window_members": 21,
+   "linked": 4
+  },
+  {
+   "n": 23,
+   "added_at": "2026-10-07 06:46",
+   "size": 23,
+   "actors": 21,
+   "places": 9,
+   "sources": 9,
+   "languages": 3,
+   "headline_kinds": 1,
+   "substories": 9,
+   "span_days": 2.2,
+   "window_members": 21,
+   "linked": 5
+  },
+  {
+   "n": 24,
+   "added_at": "2026-10-07 06:46",
+   "size": 24,
+   "actors": 21,
+   "places": 9,
+   "sources": 9,
+   "languages": 3,
+   "headline_kinds": 1,
+   "substories": 9,
+   "span_days": 2.2,
+   "window_members": 21,
+   "linked": 3
+  },
+  {
+   "n": 25,
+   "added_at": "2026-10-07 06:46",
+   "size": 25,
+   "actors": 21,
+   "places": 10,
+   "sources": 10,
+   "languages": 3,
+   "headline_kinds": 1,
+   "substories": 9,
+   "span_days": 2.2,
+   "window_members": 21,
+   "linked": 6
+  },
+  {
+   "n": 26,
+   "added_at": "2026-10-07 06:46",
+   "size": 26,
+   "actors": 21,
+   "places": 10,
+   "sources": 10,
+   "languages": 3,
+   "headline_kinds": 1,
+   "substories": 9,
+   "span_days": 2.2,
+   "window_members": 21,
+   "linked": 1
+  },
+  {
+   "n": 27,
+   "added_at": "2026-10-07 06:46",
+   "size": 27,
+   "actors": 21,
+   "places": 10,
+   "sources": 10,
+   "languages": 3,
+   "headline_kinds": 1,
+   "substories": 10,
+   "span_days": 2.2,
+   "window_members": 21,
+   "linked": 0
+  },
+  {
+   "n": 28,
+   "added_at": "2026-10-07 06:46",
+   "size": 28,
+   "actors": 23,
+   "places": 13,
+   "sources": 10,
+   "languages": 3,
+   "headline_kinds": 1,
+   "substories": 10,
+   "span_days": 2.2,
+   "window_members": 21,
+   "linked": 3
+  },
+  {
+   "n": 29,
+   "added_at": "2026-10-07 06:46",
+   "size": 29,
+   "actors": 23,
+   "places": 13,
+   "sources": 10,
+   "languages": 3,
+   "headline_kinds": 1,
+   "substories": 10,
+   "span_days": 2.2,
+   "window_members": 21,
+   "linked": 10
+  },
+  {
+   "n": 30,
+   "added_at": "2026-10-07 06:46",
+   "size": 30,
+   "actors": 24,
+   "places": 14,
+   "sources": 10,
+   "languages": 3,
+   "headline_kinds": 1,
+   "substories": 10,
+   "span_days": 2.2,
+   "window_members": 21,
+   "linked": 7
+  },
+  {
+   "n": 31,
+   "added_at": "2026-10-07 06:46",
+   "size": 31,
+   "actors": 25,
+   "places": 14,
+   "sources": 10,
+   "languages": 3,
+   "headline_kinds": 1,
+   "substories": 10,
+   "span_days": 2.2,
+   "window_members": 21,
+   "linked": 6
+  },
+  {
+   "n": 32,
+   "added_at": "2026-10-07 06:54",
+   "size": 32,
+   "actors": 26,
+   "places": 14,
+   "sources": 10,
+   "languages": 3,
+   "headline_kinds": 1,
+   "substories": 11,
+   "span_days": 2.2,
+   "window_members": 31,
+   "linked": 1
+  },
+  {
+   "n": 33,
+   "added_at": "2026-10-07 06:54",
+   "size": 33,
+   "actors": 26,
+   "places": 14,
+   "sources": 10,
+   "languages": 3,
+   "headline_kinds": 1,
+   "substories": 11,
+   "span_days": 2.2,
+   "window_members": 31,
+   "linked": 3
+  },
+  {
+   "n": 34,
+   "added_at": "2026-10-07 06:54",
+   "size": 34,
+   "actors": 27,
+   "places": 14,
+   "sources": 11,
+   "languages": 3,
+   "headline_kinds": 1,
+   "substories": 12,
+   "span_days": 2.2,
+   "window_members": 31,
+   "linked": 2
+  },
+  {
+   "n": 35,
+   "added_at": "2026-10-07 06:54",
+   "size": 35,
+   "actors": 29,
+   "places": 15,
+   "sources": 11,
+   "languages": 3,
+   "headline_kinds": 1,
+   "substories": 12,
+   "span_days": 2.2,
+   "window_members": 31,
+   "linked": 1
+  },
+  {
+   "n": 36,
+   "added_at": "2026-10-07 06:54",
+   "size": 36,
+   "actors": 29,
+   "places": 15,
+   "sources": 11,
+   "languages": 3,
+   "headline_kinds": 1,
+   "substories": 13,
+   "span_days": 2.2,
+   "window_members": 31,
+   "linked": 1
+  },
+  {
+   "n": 37,
+   "added_at": "2026-10-07 06:54",
+   "size": 37,
+   "actors": 29,
+   "places": 15,
+   "sources": 11,
+   "languages": 3,
+   "headline_kinds": 1,
+   "substories": 13,
+   "span_days": 2.3,
+   "window_members": 31,
+   "linked": 6
+  },
+  {
+   "n": 38,
+   "added_at": "2026-10-07 06:54",
+   "size": 38,
+   "actors": 29,
+   "places": 15,
+   "sources": 11,
+   "languages": 3,
+   "headline_kinds": 1,
+   "substories": 14,
+   "span_days": 2.3,
+   "window_members": 31,
+   "linked": 4
+  },
+  {
+   "n": 39,
+   "added_at": "2026-10-07 06:54",
+   "size": 39,
+   "actors": 30,
+   "places": 16,
+   "sources": 11,
+   "languages": 3,
+   "headline_kinds": 1,
+   "substories": 15,
+   "span_days": 2.3,
+   "window_members": 31,
+   "linked": 1
+  },
+  {
+   "n": 40,
+   "added_at": "2026-10-07 06:54",
+   "size": 40,
+   "actors": 30,
+   "places": 16,
+   "sources": 11,
+   "languages": 3,
+   "headline_kinds": 1,
+   "substories": 16,
+   "span_days": 2.3,
+   "window_members": 31,
+   "linked": 1
+  },
+  {
+   "n": 41,
+   "added_at": "2026-10-07 07:24",
+   "size": 41,
+   "actors": 30,
+   "places": 16,
+   "sources": 11,
+   "languages": 3,
+   "headline_kinds": 1,
+   "substories": 16,
+   "span_days": 2.3,
+   "window_members": 40,
+   "linked": 5
+  },
+  {
+   "n": 42,
+   "added_at": "2026-10-07 07:44",
+   "size": 42,
+   "actors": 31,
+   "places": 16,
+   "sources": 11,
+   "languages": 3,
+   "headline_kinds": 1,
+   "substories": 16,
+   "span_days": 2.3,
+   "window_members": 41,
+   "linked": 8
+  },
+  {
+   "n": 43,
+   "added_at": "2026-10-07 08:14",
+   "size": 43,
+   "actors": 32,
+   "places": 18,
+   "sources": 11,
+   "languages": 3,
+   "headline_kinds": 1,
+   "substories": 16,
+   "span_days": 2.3,
+   "window_members": 42,
+   "linked": 2
+  },
+  {
+   "n": 44,
+   "added_at": "2026-10-07 08:25",
+   "size": 44,
+   "actors": 32,
+   "places": 18,
+   "sources": 11,
+   "languages": 3,
+   "headline_kinds": 2,
+   "substories": 16,
+   "span_days": 2.3,
+   "window_members": 43,
+   "linked": 7
+  },
+  {
+   "n": 45,
+   "added_at": "2026-10-07 08:25",
+   "size": 45,
+   "actors": 32,
+   "places": 18,
+   "sources": 11,
+   "languages": 3,
+   "headline_kinds": 2,
+   "substories": 17,
+   "span_days": 2.3,
+   "window_members": 43,
+   "linked": 1
+  },
+  {
+   "n": 46,
+   "added_at": "2026-10-07 08:45",
+   "size": 46,
+   "actors": 32,
+   "places": 18,
+   "sources": 11,
+   "languages": 3,
+   "headline_kinds": 2,
+   "substories": 17,
+   "span_days": 2.3,
+   "window_members": 45,
+   "linked": 6
+  },
+  {
+   "n": 47,
+   "added_at": "2026-10-07 08:45",
+   "size": 47,
+   "actors": 34,
+   "places": 20,
+   "sources": 12,
+   "languages": 3,
+   "headline_kinds": 2,
+   "substories": 18,
+   "span_days": 2.3,
+   "window_members": 45,
+   "linked": 3
+  },
+  {
+   "n": 48,
+   "added_at": "2026-10-07 08:54",
+   "size": 48,
+   "actors": 35,
+   "places": 21,
+   "sources": 12,
+   "languages": 3,
+   "headline_kinds": 2,
+   "substories": 18,
+   "span_days": 2.3,
+   "window_members": 47,
+   "linked": 15
+  },
+  {
+   "n": 49,
+   "added_at": "2026-10-07 08:56",
+   "size": 49,
+   "actors": 36,
+   "places": 21,
+   "sources": 12,
+   "languages": 3,
+   "headline_kinds": 2,
+   "substories": 18,
+   "span_days": 2.3,
+   "window_members": 47,
+   "linked": 7
+  },
+  {
+   "n": 50,
+   "added_at": "2026-10-07 08:56",
+   "size": 50,
+   "actors": 39,
+   "places": 23,
+   "sources": 12,
+   "languages": 3,
+   "headline_kinds": 2,
+   "substories": 18,
+   "span_days": 2.3,
+   "window_members": 47,
+   "linked": 1
+  },
+  {
+   "n": 51,
+   "added_at": "2026-10-07 08:56",
+   "size": 51,
+   "actors": 39,
+   "places": 23,
+   "sources": 12,
+   "languages": 3,
+   "headline_kinds": 2,
+   "substories": 18,
+   "span_days": 2.3,
+   "window_members": 47,
+   "linked": 3
+  },
+  {
+   "n": 52,
+   "added_at": "2026-10-07 09:03",
+   "size": 52,
+   "actors": 40,
+   "places": 23,
+   "sources": 12,
+   "languages": 3,
+   "headline_kinds": 2,
+   "substories": 18,
+   "span_days": 2.3,
+   "window_members": 51,
+   "linked": 1
+  },
+  {
+   "n": 53,
+   "added_at": "2026-10-07 09:03",
+   "size": 53,
+   "actors": 41,
+   "places": 23,
+   "sources": 13,
+   "languages": 3,
+   "headline_kinds": 2,
+   "substories": 19,
+   "span_days": 2.3,
+   "window_members": 51,
+   "linked": 1
+  },
+  {
+   "n": 54,
+   "added_at": "2026-10-07 09:25",
+   "size": 54,
+   "actors": 41,
+   "places": 23,
+   "sources": 13,
+   "languages": 3,
+   "headline_kinds": 2,
+   "substories": 19,
+   "span_days": 2.3,
+   "window_members": 53,
+   "linked": 12
+  },
+  {
+   "n": 55,
+   "added_at": "2026-10-07 09:25",
+   "size": 55,
+   "actors": 41,
+   "places": 23,
+   "sources": 13,
+   "languages": 3,
+   "headline_kinds": 2,
+   "substories": 19,
+   "span_days": 2.4,
+   "window_members": 53,
+   "linked": 7
+  },
+  {
+   "n": 56,
+   "added_at": "2026-10-07 09:54",
+   "size": 56,
+   "actors": 41,
+   "places": 23,
+   "sources": 13,
+   "languages": 3,
+   "headline_kinds": 2,
+   "substories": 19,
+   "span_days": 2.4,
+   "window_members": 55,
+   "linked": 8
+  },
+  {
+   "n": 57,
+   "added_at": "2026-10-07 10:06",
+   "size": 57,
+   "actors": 41,
+   "places": 23,
+   "sources": 13,
+   "languages": 3,
+   "headline_kinds": 2,
+   "substories": 19,
+   "span_days": 2.4,
+   "window_members": 56,
+   "linked": 2
+  },
+  {
+   "n": 58,
+   "added_at": "2026-10-07 10:24",
+   "size": 58,
+   "actors": 41,
+   "places": 23,
+   "sources": 13,
+   "languages": 3,
+   "headline_kinds": 2,
+   "substories": 19,
+   "span_days": 2.4,
+   "window_members": 57,
+   "linked": 19
+  },
+  {
+   "n": 59,
+   "added_at": "2026-10-07 10:54",
+   "size": 59,
+   "actors": 45,
+   "places": 26,
+   "sources": 13,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 20,
+   "span_days": 2.4,
+   "window_members": 58,
+   "linked": 1
+  },
+  {
+   "n": 60,
+   "added_at": "2026-10-07 11:06",
+   "size": 60,
+   "actors": 48,
+   "places": 28,
+   "sources": 13,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 20,
+   "span_days": 2.4,
+   "window_members": 59,
+   "linked": 16
+  },
+  {
+   "n": 61,
+   "added_at": "2026-10-07 11:15",
+   "size": 61,
+   "actors": 48,
+   "places": 28,
+   "sources": 14,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 20,
+   "span_days": 2.4,
+   "window_members": 60,
+   "linked": 3
+  },
+  {
+   "n": 62,
+   "added_at": "2026-10-07 11:45",
+   "size": 62,
+   "actors": 48,
+   "places": 28,
+   "sources": 14,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 20,
+   "span_days": 2.5,
+   "window_members": 61,
+   "linked": 15
+  },
+  {
+   "n": 63,
+   "added_at": "2026-10-07 12:03",
+   "size": 63,
+   "actors": 48,
+   "places": 28,
+   "sources": 14,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 20,
+   "span_days": 2.5,
+   "window_members": 62,
+   "linked": 25
+  },
+  {
+   "n": 64,
+   "added_at": "2026-10-07 12:04",
+   "size": 64,
+   "actors": 49,
+   "places": 28,
+   "sources": 14,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 21,
+   "span_days": 2.5,
+   "window_members": 62,
+   "linked": 1
+  },
+  {
+   "n": 65,
+   "added_at": "2026-10-07 12:04",
+   "size": 65,
+   "actors": 50,
+   "places": 28,
+   "sources": 14,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 21,
+   "span_days": 2.5,
+   "window_members": 62,
+   "linked": 2
+  },
+  {
+   "n": 66,
+   "added_at": "2026-10-07 12:14",
+   "size": 66,
+   "actors": 50,
+   "places": 28,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 22,
+   "span_days": 2.5,
+   "window_members": 65,
+   "linked": 4
+  },
+  {
+   "n": 67,
+   "added_at": "2026-10-07 12:14",
+   "size": 67,
+   "actors": 50,
+   "places": 28,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 22,
+   "span_days": 2.5,
+   "window_members": 65,
+   "linked": 1
+  },
+  {
+   "n": 68,
+   "added_at": "2026-10-07 12:25",
+   "size": 68,
+   "actors": 50,
+   "places": 28,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 22,
+   "span_days": 2.5,
+   "window_members": 67,
+   "linked": 14
+  },
+  {
+   "n": 69,
+   "added_at": "2026-10-07 12:54",
+   "size": 69,
+   "actors": 50,
+   "places": 28,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 22,
+   "span_days": 2.5,
+   "window_members": 68,
+   "linked": 9
+  },
+  {
+   "n": 70,
+   "added_at": "2026-10-07 12:54",
+   "size": 70,
+   "actors": 51,
+   "places": 29,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 23,
+   "span_days": 2.5,
+   "window_members": 68,
+   "linked": 5
+  },
+  {
+   "n": 71,
+   "added_at": "2026-10-07 13:15",
+   "size": 71,
+   "actors": 51,
+   "places": 29,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 23,
+   "span_days": 2.5,
+   "window_members": 70,
+   "linked": 10
+  },
+  {
+   "n": 72,
+   "added_at": "2026-10-07 13:24",
+   "size": 72,
+   "actors": 57,
+   "places": 30,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 24,
+   "span_days": 2.5,
+   "window_members": 71,
+   "linked": 1
+  },
+  {
+   "n": 73,
+   "added_at": "2026-10-07 13:24",
+   "size": 73,
+   "actors": 57,
+   "places": 30,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 24,
+   "span_days": 2.5,
+   "window_members": 71,
+   "linked": 25
+  },
+  {
+   "n": 74,
+   "added_at": "2026-10-07 13:24",
+   "size": 74,
+   "actors": 57,
+   "places": 30,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 24,
+   "span_days": 2.5,
+   "window_members": 71,
+   "linked": 4
+  },
+  {
+   "n": 75,
+   "added_at": "2026-10-07 13:24",
+   "size": 75,
+   "actors": 57,
+   "places": 30,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 24,
+   "span_days": 2.5,
+   "window_members": 71,
+   "linked": 1
+  },
+  {
+   "n": 76,
+   "added_at": "2026-10-07 13:24",
+   "size": 76,
+   "actors": 58,
+   "places": 31,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 25,
+   "span_days": 2.5,
+   "window_members": 71,
+   "linked": 1
+  },
+  {
+   "n": 77,
+   "added_at": "2026-10-07 13:24",
+   "size": 77,
+   "actors": 58,
+   "places": 31,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 25,
+   "span_days": 2.5,
+   "window_members": 71,
+   "linked": 24
+  },
+  {
+   "n": 78,
+   "added_at": "2026-10-07 13:34",
+   "size": 78,
+   "actors": 58,
+   "places": 31,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 25,
+   "span_days": 2.5,
+   "window_members": 77,
+   "linked": 1
+  },
+  {
+   "n": 79,
+   "added_at": "2026-10-07 13:54",
+   "size": 79,
+   "actors": 59,
+   "places": 31,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 26,
+   "span_days": 2.5,
+   "window_members": 78,
+   "linked": 2
+  },
+  {
+   "n": 80,
+   "added_at": "2026-10-07 13:54",
+   "size": 80,
+   "actors": 61,
+   "places": 31,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 26,
+   "span_days": 2.5,
+   "window_members": 78,
+   "linked": 22
+  },
+  {
+   "n": 81,
+   "added_at": "2026-10-07 13:54",
+   "size": 81,
+   "actors": 61,
+   "places": 31,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 26,
+   "span_days": 2.5,
+   "window_members": 78,
+   "linked": 3
+  },
+  {
+   "n": 82,
+   "added_at": "2026-10-07 14:04",
+   "size": 82,
+   "actors": 61,
+   "places": 31,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 26,
+   "span_days": 2.5,
+   "window_members": 81,
+   "linked": 26
+  },
+  {
+   "n": 83,
+   "added_at": "2026-10-07 16:56",
+   "size": 83,
+   "actors": 62,
+   "places": 32,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 26,
+   "span_days": 2.7,
+   "window_members": 82,
+   "linked": 5
+  },
+  {
+   "n": 84,
+   "added_at": "2026-10-07 16:56",
+   "size": 84,
+   "actors": 62,
+   "places": 33,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 27,
+   "span_days": 2.7,
+   "window_members": 82,
+   "linked": 2
+  },
+  {
+   "n": 85,
+   "added_at": "2026-10-07 16:56",
+   "size": 85,
+   "actors": 63,
+   "places": 33,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 28,
+   "span_days": 2.7,
+   "window_members": 82,
+   "linked": 8
+  },
+  {
+   "n": 86,
+   "added_at": "2026-10-07 16:56",
+   "size": 86,
+   "actors": 63,
+   "places": 34,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 28,
+   "span_days": 2.7,
+   "window_members": 82,
+   "linked": 30
+  },
+  {
+   "n": 87,
+   "added_at": "2026-10-07 16:56",
+   "size": 87,
+   "actors": 65,
+   "places": 35,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 29,
+   "span_days": 2.7,
+   "window_members": 82,
+   "linked": 1
+  },
+  {
+   "n": 88,
+   "added_at": "2026-10-07 16:56",
+   "size": 88,
+   "actors": 65,
+   "places": 35,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 29,
+   "span_days": 2.7,
+   "window_members": 82,
+   "linked": 7
+  },
+  {
+   "n": 89,
+   "added_at": "2026-10-07 16:56",
+   "size": 89,
+   "actors": 67,
+   "places": 36,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 29,
+   "span_days": 2.7,
+   "window_members": 82,
+   "linked": 10
+  },
+  {
+   "n": 90,
+   "added_at": "2026-10-07 18:32",
+   "size": 90,
+   "actors": 67,
+   "places": 36,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 29,
+   "span_days": 2.7,
+   "window_members": 89,
+   "linked": 1
+  },
+  {
+   "n": 91,
+   "added_at": "2026-10-07 18:45",
+   "size": 91,
+   "actors": 69,
+   "places": 38,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 30,
+   "span_days": 2.7,
+   "window_members": 90,
+   "linked": 1
+  },
+  {
+   "n": 92,
+   "added_at": "2026-10-07 19:23",
+   "size": 92,
+   "actors": 69,
+   "places": 38,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 30,
+   "span_days": 2.7,
+   "window_members": 91,
+   "linked": 1
+  },
+  {
+   "n": 93,
+   "added_at": "2026-10-07 19:23",
+   "size": 93,
+   "actors": 72,
+   "places": 39,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 30,
+   "span_days": 2.7,
+   "window_members": 91,
+   "linked": 1
+  },
+  {
+   "n": 94,
+   "added_at": "2026-10-07 19:23",
+   "size": 94,
+   "actors": 72,
+   "places": 39,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 30,
+   "span_days": 2.7,
+   "window_members": 91,
+   "linked": 2
+  },
+  {
+   "n": 95,
+   "added_at": "2026-10-07 19:23",
+   "size": 95,
+   "actors": 72,
+   "places": 39,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 31,
+   "span_days": 2.7,
+   "window_members": 91,
+   "linked": 2
+  },
+  {
+   "n": 96,
+   "added_at": "2026-10-07 19:23",
+   "size": 96,
+   "actors": 72,
+   "places": 39,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 31,
+   "span_days": 2.7,
+   "window_members": 91,
+   "linked": 24
+  },
+  {
+   "n": 97,
+   "added_at": "2026-10-07 19:36",
+   "size": 97,
+   "actors": 72,
+   "places": 39,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 32,
+   "span_days": 2.7,
+   "window_members": 96,
+   "linked": 2
+  },
+  {
+   "n": 98,
+   "added_at": "2026-10-07 19:36",
+   "size": 98,
+   "actors": 74,
+   "places": 40,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 32,
+   "span_days": 2.7,
+   "window_members": 96,
+   "linked": 1
+  },
+  {
+   "n": 99,
+   "added_at": "2026-10-07 19:36",
+   "size": 99,
+   "actors": 74,
+   "places": 40,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 32,
+   "span_days": 2.7,
+   "window_members": 96,
+   "linked": 1
+  },
+  {
+   "n": 100,
+   "added_at": "2026-10-07 19:36",
+   "size": 100,
+   "actors": 75,
+   "places": 40,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 32,
+   "span_days": 2.8,
+   "window_members": 96,
+   "linked": 10
+  },
+  {
+   "n": 101,
+   "added_at": "2026-10-07 19:36",
+   "size": 101,
+   "actors": 76,
+   "places": 42,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 32,
+   "span_days": 2.8,
+   "window_members": 96,
+   "linked": 5
+  },
+  {
+   "n": 102,
+   "added_at": "2026-10-07 19:55",
+   "size": 102,
+   "actors": 77,
+   "places": 42,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 32,
+   "span_days": 2.8,
+   "window_members": 101,
+   "linked": 7
+  },
+  {
+   "n": 103,
+   "added_at": "2026-10-07 20:15",
+   "size": 103,
+   "actors": 77,
+   "places": 42,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 32,
+   "span_days": 2.8,
+   "window_members": 102,
+   "linked": 11
+  },
+  {
+   "n": 104,
+   "added_at": "2026-10-07 20:27",
+   "size": 104,
+   "actors": 77,
+   "places": 42,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 32,
+   "span_days": 2.8,
+   "window_members": 103,
+   "linked": 7
+  },
+  {
+   "n": 105,
+   "added_at": "2026-10-07 20:46",
+   "size": 105,
+   "actors": 79,
+   "places": 42,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 32,
+   "span_days": 2.8,
+   "window_members": 104,
+   "linked": 1
+  },
+  {
+   "n": 106,
+   "added_at": "2026-10-07 20:59",
+   "size": 106,
+   "actors": 79,
+   "places": 42,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 32,
+   "span_days": 2.8,
+   "window_members": 105,
+   "linked": 38
+  },
+  {
+   "n": 107,
+   "added_at": "2026-10-07 20:59",
+   "size": 107,
+   "actors": 81,
+   "places": 42,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 33,
+   "span_days": 2.8,
+   "window_members": 105,
+   "linked": 3
+  },
+  {
+   "n": 108,
+   "added_at": "2026-10-07 21:14",
+   "size": 108,
+   "actors": 82,
+   "places": 42,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 33,
+   "span_days": 2.8,
+   "window_members": 107,
+   "linked": 14
+  },
+  {
+   "n": 109,
+   "added_at": "2026-10-07 21:25",
+   "size": 109,
+   "actors": 82,
+   "places": 42,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 33,
+   "span_days": 2.9,
+   "window_members": 108,
+   "linked": 15
+  },
+  {
+   "n": 110,
+   "added_at": "2026-10-07 21:35",
+   "size": 110,
+   "actors": 85,
+   "places": 44,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 33,
+   "span_days": 2.9,
+   "window_members": 109,
+   "linked": 1
+  },
+  {
+   "n": 111,
+   "added_at": "2026-10-07 21:35",
+   "size": 111,
+   "actors": 88,
+   "places": 45,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 34,
+   "span_days": 2.9,
+   "window_members": 109,
+   "linked": 6
+  },
+  {
+   "n": 112,
+   "added_at": "2026-10-07 21:53",
+   "size": 112,
+   "actors": 88,
+   "places": 46,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 35,
+   "span_days": 2.9,
+   "window_members": 111,
+   "linked": 1
+  },
+  {
+   "n": 113,
+   "added_at": "2026-10-07 22:07",
+   "size": 113,
+   "actors": 88,
+   "places": 46,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 35,
+   "span_days": 2.9,
+   "window_members": 112,
+   "linked": 27
+  },
+  {
+   "n": 114,
+   "added_at": "2026-10-08 05:54",
+   "size": 114,
+   "actors": 90,
+   "places": 46,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 35,
+   "span_days": 2.9,
+   "window_members": 113,
+   "linked": 2
+  },
+  {
+   "n": 115,
+   "added_at": "2026-10-08 05:54",
+   "size": 115,
+   "actors": 90,
+   "places": 46,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 35,
+   "span_days": 3.2,
+   "window_members": 111,
+   "linked": 16
+  },
+  {
+   "n": 116,
+   "added_at": "2026-10-08 05:54",
+   "size": 116,
+   "actors": 90,
+   "places": 46,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 35,
+   "span_days": 3.2,
+   "window_members": 111,
+   "linked": 11
+  },
+  {
+   "n": 117,
+   "added_at": "2026-10-08 05:54",
+   "size": 117,
+   "actors": 90,
+   "places": 46,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 35,
+   "span_days": 3.2,
+   "window_members": 112,
+   "linked": 14
+  },
+  {
+   "n": 118,
+   "added_at": "2026-10-08 05:54",
+   "size": 118,
+   "actors": 91,
+   "places": 47,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 36,
+   "span_days": 3.2,
+   "window_members": 113,
+   "linked": 1
+  },
+  {
+   "n": 119,
+   "added_at": "2026-10-08 05:54",
+   "size": 119,
+   "actors": 91,
+   "places": 47,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 36,
+   "span_days": 3.2,
+   "window_members": 113,
+   "linked": 2
+  },
+  {
+   "n": 120,
+   "added_at": "2026-10-08 05:58",
+   "size": 120,
+   "actors": 91,
+   "places": 47,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 37,
+   "span_days": 3.2,
+   "window_members": 119,
+   "linked": 1
+  },
+  {
+   "n": 121,
+   "added_at": "2026-10-08 06:54",
+   "size": 121,
+   "actors": 91,
+   "places": 47,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 38,
+   "span_days": 3.2,
+   "window_members": 118,
+   "linked": 1
+  },
+  {
+   "n": 122,
+   "added_at": "2026-10-08 06:54",
+   "size": 122,
+   "actors": 92,
+   "places": 48,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 38,
+   "span_days": 3.3,
+   "window_members": 118,
+   "linked": 4
+  },
+  {
+   "n": 123,
+   "added_at": "2026-10-08 07:54",
+   "size": 123,
+   "actors": 93,
+   "places": 48,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 39,
+   "span_days": 3.3,
+   "window_members": 122,
+   "linked": 1
+  },
+  {
+   "n": 124,
+   "added_at": "2026-10-08 07:54",
+   "size": 124,
+   "actors": 94,
+   "places": 48,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 40,
+   "span_days": 3.3,
+   "window_members": 122,
+   "linked": 1
+  },
+  {
+   "n": 125,
+   "added_at": "2026-10-08 07:54",
+   "size": 125,
+   "actors": 94,
+   "places": 48,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 40,
+   "span_days": 3.3,
+   "window_members": 122,
+   "linked": 1
+  },
+  {
+   "n": 126,
+   "added_at": "2026-10-08 07:54",
+   "size": 126,
+   "actors": 94,
+   "places": 48,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 41,
+   "span_days": 3.3,
+   "window_members": 122,
+   "linked": 1
+  },
+  {
+   "n": 127,
+   "added_at": "2026-10-08 08:03",
+   "size": 127,
+   "actors": 94,
+   "places": 49,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 41,
+   "span_days": 3.3,
+   "window_members": 125,
+   "linked": 7
+  },
+  {
+   "n": 128,
+   "added_at": "2026-10-08 08:13",
+   "size": 128,
+   "actors": 96,
+   "places": 50,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 42,
+   "span_days": 3.3,
+   "window_members": 125,
+   "linked": 3
+  },
+  {
+   "n": 129,
+   "added_at": "2026-10-08 08:13",
+   "size": 129,
+   "actors": 96,
+   "places": 50,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 42,
+   "span_days": 3.3,
+   "window_members": 125,
+   "linked": 4
+  },
+  {
+   "n": 130,
+   "added_at": "2026-10-08 08:13",
+   "size": 130,
+   "actors": 97,
+   "places": 50,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 43,
+   "span_days": 3.3,
+   "window_members": 125,
+   "linked": 2
+  },
+  {
+   "n": 131,
+   "added_at": "2026-10-08 08:26",
+   "size": 131,
+   "actors": 97,
+   "places": 50,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 43,
+   "span_days": 3.3,
+   "window_members": 128,
+   "linked": 16
+  },
+  {
+   "n": 132,
+   "added_at": "2026-10-08 10:44",
+   "size": 132,
+   "actors": 97,
+   "places": 50,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 44,
+   "span_days": 3.4,
+   "window_members": 128,
+   "linked": 3
+  },
+  {
+   "n": 133,
+   "added_at": "2026-10-08 10:52",
+   "size": 133,
+   "actors": 97,
+   "places": 50,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 44,
+   "span_days": 3.4,
+   "window_members": 129,
+   "linked": 1
+  },
+  {
+   "n": 134,
+   "added_at": "2026-10-08 10:56",
+   "size": 134,
+   "actors": 97,
+   "places": 50,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 44,
+   "span_days": 3.4,
+   "window_members": 130,
+   "linked": 11
+  },
+  {
+   "n": 135,
+   "added_at": "2026-10-08 11:44",
+   "size": 135,
+   "actors": 97,
+   "places": 50,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 44,
+   "span_days": 3.5,
+   "window_members": 131,
+   "linked": 8
+  },
+  {
+   "n": 136,
+   "added_at": "2026-10-08 12:18",
+   "size": 136,
+   "actors": 97,
+   "places": 50,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 44,
+   "span_days": 3.5,
+   "window_members": 132,
+   "linked": 6
+  },
+  {
+   "n": 137,
+   "added_at": "2026-10-08 13:16",
+   "size": 137,
+   "actors": 98,
+   "places": 54,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 44,
+   "span_days": 3.5,
+   "window_members": 133,
+   "linked": 1
+  },
+  {
+   "n": 138,
+   "added_at": "2026-10-08 14:56",
+   "size": 138,
+   "actors": 98,
+   "places": 54,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 44,
+   "span_days": 3.5,
+   "window_members": 135,
+   "linked": 29
+  },
+  {
+   "n": 139,
+   "added_at": "2026-10-08 16:06",
+   "size": 139,
+   "actors": 98,
+   "places": 54,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 44,
+   "span_days": 3.5,
+   "window_members": 135,
+   "linked": 2
+  },
+  {
+   "n": 140,
+   "added_at": "2026-10-08 16:06",
+   "size": 140,
+   "actors": 99,
+   "places": 54,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 44,
+   "span_days": 3.6,
+   "window_members": 135,
+   "linked": 2
+  },
+  {
+   "n": 141,
+   "added_at": "2026-10-08 18:16",
+   "size": 141,
+   "actors": 102,
+   "places": 57,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 44,
+   "span_days": 3.7,
+   "window_members": 137,
+   "linked": 11
+  },
+  {
+   "n": 142,
+   "added_at": "2026-10-08 18:16",
+   "size": 142,
+   "actors": 102,
+   "places": 57,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 45,
+   "span_days": 3.7,
+   "window_members": 135,
+   "linked": 7
+  },
+  {
+   "n": 143,
+   "added_at": "2026-10-08 20:48",
+   "size": 143,
+   "actors": 102,
+   "places": 57,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 45,
+   "span_days": 3.8,
+   "window_members": 135,
+   "linked": 7
+  },
+  {
+   "n": 144,
+   "added_at": "2026-10-09 11:48",
+   "size": 144,
+   "actors": 102,
+   "places": 59,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 45,
+   "span_days": 4.3,
+   "window_members": 128,
+   "linked": 11
+  },
+  {
+   "n": 145,
+   "added_at": "2026-10-09 11:48",
+   "size": 145,
+   "actors": 103,
+   "places": 59,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 45,
+   "span_days": 4.3,
+   "window_members": 129,
+   "linked": 2
+  },
+  {
+   "n": 146,
+   "added_at": "2026-10-09 19:13",
+   "size": 146,
+   "actors": 103,
+   "places": 59,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 45,
+   "span_days": 4.7,
+   "window_members": 115,
+   "linked": 4
+  },
+  {
+   "n": 147,
+   "added_at": "2026-10-09 19:56",
+   "size": 147,
+   "actors": 103,
+   "places": 59,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 45,
+   "span_days": 4.8,
+   "window_members": 112,
+   "linked": 3
+  },
+  {
+   "n": 148,
+   "added_at": "2026-10-09 21:05",
+   "size": 148,
+   "actors": 108,
+   "places": 63,
+   "sources": 15,
+   "languages": 3,
+   "headline_kinds": 3,
+   "substories": 45,
+   "span_days": 4.8,
+   "window_members": 129,
+   "linked": 4
+  }
+ ]
+}

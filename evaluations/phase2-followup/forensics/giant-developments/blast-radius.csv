@@ -1,0 +1,993 @@
+event_id,summary,event_type,event_domain,size,span_days,growth_days,outlets,languages,actors,places,analysis,live_blogs,roundups,drift_share_below_0.53_to_first_run,max_hop,unreached_by_chain,near_threshold_share,signatures,d398_like,inspect,likely_coherent_large,non_english_share,gdelt_share
+398,"Six Ukrainian energy sites hit by Russia since Trump announced ceasefire, Zelensky says",ceasefire,security,593,15.9,15,17,3,358,138,33,12,20,0.674,8,1,0.173,large;long;drift;chain;actor_diverse,True,False,False,0.04,0.48
+397,‘These attacks must cease immediately’: Guterres condemns deadly Houthi strike on Riyadh airport,military_action,military,319,15.7,15,16,3,159,92,16,5,5,0.335,7,3,0.158,large;long;chain;actor_diverse,False,True,False,0.08,0.61
+449,"Brasile, Flávio Bolsonaro annuncia visita al padre dopo tre mesi di stop",election,political,294,14.4,14,15,3,186,96,10,3,4,0.204,6,0,0.104,large;long;chain;actor_diverse,False,True,True,0.76,0.03
+639,Francia vuelve a permitir el uso de granadas aturdidoras de cara a las protestas de este sábado,election,political,256,11.1,11,12,3,196,129,0,0,4,0.406,6,0,0.177,large;long;chain;actor_diverse,False,True,False,0.9,0.02
+399,"Zelensky, almeno due morti questa sera in attacchi russi a Kiev",unknown,unknown,255,15.5,14,9,3,181,139,1,0,4,0.28,8,1,0.184,large;long;chain;actor_diverse,False,True,True,1.0,0.0
+626,France to witness a 'crossroads of anger' as mass protests expected on Saturday,election,political,216,12.1,11,9,2,185,65,21,25,26,0.369,6,0,0.145,large;long;chain;actor_diverse,False,True,False,0.03,0.1
+514,"Despite long history with Netanyahu, Trump hedges as Israel vote nears",election,political,154,14.3,13,14,3,92,62,0,0,1,0.651,7,0,0.132,large;long;drift;chain;actor_diverse,True,False,False,0.64,0.23
+182,Aumentan a 1.460 los palestinos muertos por ataques de Israel contra Gaza desde el acuerdo de alto el fuego,military_action,military,148,4.8,5,15,3,108,63,11,4,6,0.587,3,1,0.261,large;long;drift;actor_diverse,False,True,False,0.3,0.43
+119,"After Red Sea losses, Yemen’s government forces hold the line",military_action,military,137,8.0,6,9,1,89,52,13,9,10,0.093,3,0,0.102,large;long;actor_diverse,False,True,True,0.0,0.55
+147,Bolsonaro gana la primera vuelta en Brasil con el 47% de los votos y disputará contra Lula (45%) la segunda vuelta,unknown,unknown,108,5.6,5,9,3,102,52,0,0,0,0.232,4,0,0.098,large;long;chain;actor_diverse,False,True,True,0.97,0.02
+124,"Russia strikes second major bridge in Kyiv, mayor says",military_action,military,105,7.1,6,10,2,87,40,1,3,9,0.66,3,0,0.258,large;long;drift;actor_diverse,False,True,False,0.01,0.35
+67,French PM warns against escalation of school protests after 164 arrested,warning,security,91,10.9,6,6,1,56,11,12,6,7,0.057,3,0,0.029,large;long;actor_diverse,False,True,True,0.0,0.01
+162,Ségolène Royal denuncia la 'repressione' degli studenti in Francia,unknown,unknown,76,4.5,5,8,2,59,43,0,0,3,0.297,3,0,0.189,large;long;actor_diverse,False,True,True,1.0,0.0
+812,US congressional candidate Brad Lander freed after West Bank detention,military_action,military,76,5.9,7,9,2,47,24,0,1,1,0.863,5,0,0.151,large;long;drift;chain;actor_diverse,True,False,False,0.09,0.5
+416,Trump faces growing backlash over plans to import diesel from Russia,significant_statement,diplomacy,74,8.9,8,8,1,78,24,0,0,0,0.31,6,0,0.225,large;long;chain;actor_diverse,False,True,False,0.0,0.64
+441,"L'uragano Simon verso Mazatlán, due vittime in Messico",summit,diplomacy,74,10.7,11,8,3,85,46,2,0,0,0.07,5,0,0.07,large;long;chain;actor_diverse,False,True,True,0.99,0.0
+923,"Lebanese sceptical Israeli polls will bring change, end occupation of south",election,political,66,4.1,4,6,2,40,11,15,3,3,0.175,3,0,0.159,large;long;actor_diverse,False,True,True,0.02,0.44
+786,"Musk ordered slowdown of Starlink service Ukraine military relies on, report says",significant_statement,diplomacy,63,5.4,6,9,2,37,18,0,0,1,0.098,3,0,0.115,large;long,False,True,True,0.05,0.63
+630,Settlers attack Palestinian mosque near occupied East Jerusalem,military_action,military,62,9.1,8,6,1,47,23,2,1,1,0.373,5,0,0.254,large;long;chain;actor_diverse,False,True,False,0.0,0.6
+805,Iran’s enriched uranium re-emerges as point of contention in US talks,military_action,military,58,6.8,7,5,1,45,23,9,2,3,0.455,4,1,0.352,large;long;chain;actor_diverse,False,True,False,0.0,0.69
+663,"In calo il traffico su Truth Social, 'meno 30% in un anno'",unknown,unknown,56,7.4,7,6,3,48,37,0,0,0,0.106,3,0,0.383,large;long;actor_diverse,False,True,True,0.98,0.0
+142,Pedro Sánchez convoca elecciones anticipadas tras el fracaso en el Congreso de sus decretos para enfrentar la crisis de ,significant_statement,diplomacy,51,6.0,5,11,3,54,26,0,0,0,0.409,3,0,0.205,large;long;actor_diverse,False,True,False,0.78,0.0
+135,US Air Force removes all bombers from UK airbase targeted by suspected terror attack,security_incident,security,49,4.9,6,8,2,40,20,0,0,0,0.512,3,0,0.186,large;long;drift;actor_diverse,False,True,False,0.06,0.55
+493,"Detenidas más de 20 personas en una protesta estudiantil en Albania que deja una veintena de heridos, incluidos policías",military_action,military,49,8.9,9,13,3,34,21,2,0,1,0.128,4,0,0.021,large;long;chain,False,True,True,0.39,0.02
+82,FlyDubai flight to Israel diverted to Saudi Arabia after incident in cockpit,security_incident,security,48,5.5,2,5,1,31,9,10,0,1,0.0,1,0,0.0,large;long,False,True,True,0.0,0.04
+419,"Von der Leyen ve ""inaceptable"" el ataque con drones a buques cerca de la costa de Bulgaria",military_action,military,41,3.7,4,11,2,51,26,0,1,1,0.289,3,1,0.216,large;long;actor_diverse,False,True,True,0.17,0.49
+670,Canadá confirma víctimas mortales por un gran incendio en la base militar de Alberta,unknown,unknown,41,3.0,4,6,2,24,8,0,0,0,0.054,2,0,0.27,large;long,False,True,True,0.05,0.8
+2,Trump and Xi come face-to-face as US and China battle to win the AI race,summit,diplomacy,39,8.4,1,3,1,39,11,11,0,0,,0,0,,large;long,False,True,True,0.0,0.0
+386,Imposing Sanctions on the International Criminal Court,sanctions,economic,37,0.4,1,13,2,45,17,0,0,0,0.0,1,0,0.042,large;actor_diverse,False,True,True,0.03,0.54
+462,Protesta dei sindacati per chiedere l'aumento del salario minimo in Venezuela,sanctions,economic,37,6.8,6,8,3,55,28,0,0,0,0.343,4,0,0.257,large;long;chain;actor_diverse,False,True,False,0.84,0.14
+439,El Papa llega al hospital Gemelli de Roma para que le extirpen un nódulo del pulmón,unknown,unknown,36,9.9,9,7,2,41,38,2,1,1,0.824,7,0,0.5,large;long;drift;chain;actor_diverse,True,False,False,1.0,0.0
+232,"Nobel, fino al 12 ottobre la settimana dei Premi 2026",unknown,unknown,35,4.2,4,8,2,38,18,0,0,0,0.152,2,0,0.03,large;long,False,True,True,1.0,0.0
+114,Everything you need to know about Brazil’s tight presidential race,election,political,33,6.1,3,6,1,37,7,9,1,1,0.0,1,0,0.0,large;long,False,True,True,0.0,0.09
+448,"Media, 'Netanyahu ha parlato con Trump di riprendere guerra contro l'Iran'",military_action,military,33,6.1,6,10,3,35,24,0,0,0,0.621,4,0,0.31,large;long;drift;chain,True,False,False,0.64,0.3
+702,Sudan army accused of drone strike on livestock market,military_action,military,33,5.0,5,8,1,34,21,0,0,2,0.161,3,0,0.097,large;long,False,True,True,0.0,0.52
+168,Russian lab worker dies of suspected plague in Siberia; US monitoring case,significant_statement,diplomacy,32,4.4,5,8,1,18,10,0,0,0,0.033,2,0,0.0,large;long,False,True,True,0.0,0.22
+405,Russia’s war of aggression against Ukraine: EU agrees largest-ever package of listings targeting  almost 1600 individual,military_action,military,32,3.9,4,7,1,64,29,0,1,3,0.172,2,0,0.276,large;long;actor_diverse,False,True,True,0.0,0.53
+426,Pope's lung-surgery announcement was bolt from the blue says Parolin,significant_statement,diplomacy,32,6.5,6,6,1,56,18,1,0,1,0.1,3,0,0.0,large;long;actor_diverse,False,True,True,0.0,0.06
+556,Retired US generals call on Pentagon to cancel 'barbaric' execution livestream,significant_statement,diplomacy,32,2.7,2,5,1,22,7,1,2,2,0.037,2,0,0.222,large,False,False,True,0.0,0.75
+155,"Forze governative Yemen, ripreso il controllo di Bab el Mandeb",bilateral_meeting,diplomacy,31,4.6,5,12,3,26,34,0,0,0,0.25,4,0,0.179,large;long;chain,False,True,True,0.81,0.1
+423,"Francia, Glucksmann trionfa alle primarie socialdemocratiche: ""Ora avanti fino all'Eliseo""",unknown,unknown,31,3.5,3,9,3,32,15,0,2,2,0.69,3,0,0.31,large;drift,False,True,False,0.39,0.03
+400,"""Cada día muere gente"": las familias en Gaza que siguen bajo los ataques israelíes pese al alto el fuego, mientras el ac",military_action,military,30,4.8,4,9,2,32,17,1,2,3,0.704,3,0,0.37,large;long;drift,False,True,False,0.17,0.5
+356,"Firing squad execution to be livestreamed, Pentagon says",significant_statement,diplomacy,29,1.3,1,5,1,18,4,2,4,4,0.045,2,0,0.273,,False,False,False,0.0,0.72
+780,Kenya confirms eighth Ebola case amid widening regional outbreak,unknown,unknown,29,8.4,8,8,2,36,25,0,0,0,0.2,3,0,0.04,long,False,False,False,0.03,0.1
+800,"Russia frees US citizen Stephen Hubbard, state media reports",negotiation,diplomacy,29,2.6,3,11,2,26,14,1,0,0,0.115,2,0,0.077,,False,False,False,0.17,0.59
+841,Gobierno y oposición cierran el tercer ciclo de diálogos en Venezuela con acuerdos sobre inhabilitaciones políticas,unknown,unknown,29,6.0,6,8,3,34,22,0,0,0,0.148,3,0,0.259,long,False,False,False,0.9,0.07
+159,"Rusia asegura que la situación epidemiológica en Irkutsk es ""estable"" tras un supuesto accidente en un laboratorio",unknown,unknown,28,4.3,5,8,2,13,17,0,0,0,0.2,3,0,0.12,long,False,False,False,1.0,0.0
+885,From the streets to the ballot box: Serbia’s students hope for election win,election,political,28,4.7,5,8,2,23,9,0,0,0,0.04,2,0,0.0,long,False,False,False,0.04,0.14
+18,Iran pitches seven-day roadmap to end conflict with US,ceasefire,security,27,4.2,1,3,1,19,10,5,4,4,,0,0,,long,False,False,False,0.0,0.0
+54,US prosecutors reopen case of alleged gang rape at Cornell University,appointment,political,27,10.1,5,6,2,29,6,2,0,0,0.1,2,0,0.4,long,False,False,False,0.04,0.19
+130,Japan’s Takaichi presses US after marine arrested over murder-robbery of woman,security_incident,security,27,5.5,5,7,2,23,10,0,0,0,0.136,3,0,0.045,long,False,False,False,0.11,0.48
+210,Trump jokes about letting Iran bomb Los Angeles and San Diego,significant_statement,diplomacy,27,3.6,4,8,2,37,28,0,0,0,0.16,3,0,0.2,long,False,False,False,0.19,0.63
+408,Joint Statement on the United Kingdom’s Attribution of Iran’s Involvement in Attempted Terrorist Attack at RAF Fairford,significant_statement,diplomacy,27,2.9,3,7,1,50,37,0,0,0,0.583,3,0,0.167,drift;actor_diverse,False,True,False,0.0,0.74
+460,Casa Bianca ha chiesto all'ambasciatrice in Grecia di dimettersi,unknown,unknown,27,6.1,7,3,1,31,16,0,0,0,0.48,4,0,0.32,long;chain,False,True,False,1.0,0.0
+144,"Netanyahu, 'il regime iraniano è destinato a sparire'",election,political,26,5.6,5,10,3,31,21,0,0,0,0.292,3,0,0.167,long,False,False,False,0.81,0.12
+145,"La Spagna al voto: i sondaggi premiano le destre, l'area progressista frammentata",unknown,unknown,26,5.8,5,3,1,22,12,0,0,0,0.0,2,0,0.143,long,False,False,False,1.0,0.0
+363,Former UN rights chief awarded Nobel Peace Prize,significant_statement,diplomacy,26,0.5,1,9,1,46,13,1,0,0,0.059,2,0,0.059,actor_diverse,False,False,False,0.0,0.38
+447,"""Musk donó a los republicanos 276 millones de dólares para las midterms"": 'The New York Times'",unknown,unknown,26,9.6,8,5,1,32,21,0,0,0,0.227,5,0,0.455,long;chain,False,True,False,1.0,0.0
+515,"Colombia, governo De la Espriella chiede di escludere la riforma rurale da mandato Onu",unknown,unknown,26,6.7,5,7,3,46,19,0,0,1,0.261,3,2,0.095,long;actor_diverse,False,True,False,0.88,0.0
+697,Alberta heads to polls to decide whether to hold vote on separation from Canada,election,political,26,4.7,5,7,2,15,6,0,0,0,0.25,3,1,0.087,long,False,False,False,0.04,0.58
+193,UK ‘threatens to expel 27 Israeli diplomats’ over Jerusalem consulate,sanctions,economic,25,2.9,3,4,1,18,10,0,0,0,0.0,1,0,0.043,,False,False,False,0.0,0.72
+424,India 'cockroach' leaders detained after entering barricaded protest site,policy_change,political,25,8.5,7,8,3,25,6,0,0,0,0.304,6,0,0.174,long;chain,False,True,False,0.16,0.08
+719,"Florida, mandato d'arresto per omicidio contro Raul Castro",unknown,unknown,25,4.3,5,8,3,22,20,0,0,0,0.435,3,0,0.217,long,False,False,False,0.6,0.36
+296,"Venezuela’s Maduro to face new US charges over alleged torture of Americans, official says",significant_statement,diplomacy,24,3.3,3,10,3,20,13,0,0,0,0.409,2,0,0.182,,False,False,False,0.54,0.29
+1,Xi got Trump's red carpet welcome - but not everything he wanted,negotiation,diplomacy,23,3.0,1,3,1,29,15,8,0,0,,0,0,,,False,False,False,0.0,0.0
+122,Pot banging protests across Spain over housing crisis,election,political,23,5.7,4,8,2,23,6,4,0,0,0.154,1,0,0.154,long,False,False,False,0.13,0.22
+85,Tennessee governor declines to halt execution of state's lone woman on death row,commentary,political,21,5.6,1,3,1,16,4,1,0,0,,0,0,,long,False,False,False,0.0,0.0
+694,Secretary of State Marco Rubio Remarks to the Press,multilateral_meeting,diplomacy,21,3.2,3,3,1,102,39,0,0,0,0.211,3,0,0.211,actor_diverse,False,False,False,0.0,0.52
+132,Iran tells US: there is ‘no military solution’ to end the war,bilateral_meeting,diplomacy,20,5.0,6,9,1,19,14,0,2,3,0.722,6,0,0.611,long;drift;chain,True,False,False,0.0,0.5
+901,"First Lady Melania Trump Secures Ceasefire Between Russia and Ukraine, Localized to Oleshky",ceasefire,security,20,2.3,2,7,2,22,11,0,0,1,0.059,2,0,0.059,,False,False,False,0.05,0.55
+173,U.S. Statement on Increased Tensions Between Ethiopia and Eritrea,significant_statement,diplomacy,19,5.9,5,7,1,20,11,0,0,0,0.267,3,0,0.067,long,False,False,False,0.0,0.37
+227,"Zelenski advierte de que Rusia prepara un nuevo ""ataque masivo"" y Ucrania prepara ""contramedidas""",military_action,military,19,4.2,4,4,1,18,21,0,0,0,0.235,2,0,0.118,long,False,False,False,1.0,0.0
+453,Israel’s military raids NGO offices in Ramallah,election,political,19,4.2,4,6,1,44,22,1,2,2,0.562,3,0,0.438,long;drift;actor_diverse,False,True,False,0.0,0.47
+506,"Iran steps up Hormuz surveillance: Attacks soar, oil flows crash again",military_action,military,19,2.4,3,4,2,12,13,1,1,1,0.214,2,0,0.357,,False,False,False,0.05,0.74
+128,Ethiopia’s government forces retake airport from Tigray rebels in Mekelle,appointment,political,18,4.9,5,6,2,15,7,3,1,1,0.083,2,0,0.0,long,False,False,False,0.06,0.33
+204,Fort Hood shooter to be executed by firing squad - a first for US military since World War Two,security_incident,security,18,1.4,2,5,1,18,5,0,0,0,0.0,1,0,0.133,,False,False,False,0.0,0.72
+418,IMF raises 2026 growth forecast for Italy from 0.5% to 0.8%,warning,security,18,1.8,2,4,1,22,9,0,0,0,0.062,2,0,0.375,,False,False,False,0.0,0.67
+456,Last Seen in Crimea: Kyiv Independent documentary investigates Russia's secret detention system for Ukrainian civilians,military_action,military,18,1.3,2,6,1,23,9,0,0,0,0.0,2,0,0.188,,False,False,False,0.0,0.61
+487,"China and North Korea to open New Yalu River Bridge, state media reports",sanctions,economic,18,2.2,3,6,1,19,12,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.44
+566,"Emergency, a Gaza entro dicembre 1,4 milioni in grave insicurezza alimentare",military_action,military,18,5.9,6,7,3,24,11,0,0,0,0.188,3,0,0.438,long,False,False,False,0.89,0.11
+962,Officials from Mecca pact states to hold talks in Iran amid regional tensions,bilateral_meeting,diplomacy,18,1.1,2,7,2,21,23,0,0,0,0.071,2,0,0.143,,False,False,False,0.17,0.56
+31,UK police arrest 5 on terrorism charges near airbase used by US in Iran war,security_incident,security,17,5.9,1,4,1,33,10,4,0,3,,0,0,,long,False,False,False,0.0,0.0
+49,Pope Leo says concerns about AI doom scenarios are not ‘fake news’,summit,diplomacy,17,3.7,1,3,1,20,4,4,0,0,,0,0,,,False,False,False,0.0,0.0
+148,"Astensione record in Brasile, il 21,08% non ha votato al primo turno",unknown,unknown,17,3.6,3,4,2,27,7,0,0,0,0.0,2,0,0.0,,False,False,False,1.0,0.0
+281,Secretary of State Marco Rubio and Greek Foreign Minister Giorgos Gerapetritis at the Opening Session of the United Stat,significant_statement,diplomacy,17,2.9,3,5,2,84,45,0,0,0,0.133,3,0,0.333,actor_diverse,False,False,False,0.06,0.35
+451,Systems to counter missiles and drones take centre stage at US defence expo,significant_statement,diplomacy,17,3.8,4,4,1,121,29,0,1,1,0.4,3,0,0.333,long;actor_diverse,False,True,False,0.0,0.35
+478,"US fines Bank of America US$1.2 billion, says it violated money laundering, sanctions laws",sanctions,economic,17,1.1,1,4,1,13,3,0,0,0,0.0,1,0,0.083,,False,False,False,0.0,0.76
+490,"DR Congo Ebola cases pass 9,000 as efforts to curb transmission falter",diplomatic_visit,diplomacy,17,3.0,3,7,2,18,15,4,0,0,0.067,2,0,0.133,,False,False,False,0.06,0.24
+557,Sky turns orange as wildfires rage across Indonesia,multilateral_meeting,diplomacy,17,7.6,6,5,1,20,16,0,0,0,0.267,4,0,0.333,long;chain,False,True,False,0.0,0.06
+684,Gaza families fear food shortages as Israel halts commercial shipments,significant_statement,diplomacy,17,3.8,4,5,1,10,8,0,0,0,0.067,2,0,0.0,long,False,False,False,0.0,0.41
+699,Australian lawmaker Helen Haines in critical condition after vehicle attack,military_action,military,17,2.4,3,5,1,14,4,0,0,0,0.133,2,0,0.133,,False,False,False,0.0,0.0
+836,"North Korea to resume propaganda broadcasts, South Korea urges dialogue",significant_statement,diplomacy,17,3.6,4,3,1,17,9,0,0,0,0.091,2,0,0.273,long,False,False,False,0.0,0.82
+134,"UK Green Party adopts ‘Zionism is racism’ policy, drawing backlash from Israel",bilateral_meeting,diplomacy,16,4.2,5,4,1,22,5,2,0,0,0.0,2,0,0.0,long,False,False,False,0.0,0.5
+177,"La Inteligencia de Alemania acusa a Rusia de una ""guerra en la sombra"" y apunta a ""éxitos"" frente a Moscú",unknown,unknown,16,3.5,4,5,1,29,16,0,0,0,0.357,3,0,0.214,long,False,False,False,1.0,0.0
+392,"Panama, Pil in crescita verso il 5% ma l'Fmi chiede riforme",warning,security,16,0.7,1,9,3,16,25,0,0,1,0.0,2,0,0.111,,False,False,False,0.81,0.0
+414,La coalición liderara por Arabia Saudí intercepta tres misiles balísticos hutíes contra Riad y Jamis Mushait,military_action,military,16,5.8,5,4,1,17,20,0,0,0,0.0,4,0,0.143,long;chain,False,True,False,1.0,0.0
+428,"EU Week of Regions and Cities convenes 5,000 participants to discuss the future of cohesion policy",summit,diplomacy,16,4.6,4,5,1,22,8,0,2,2,0.231,3,1,0.25,long,False,False,False,0.0,0.12
+542,"New Trump spokeswoman makes White House debut, takes only 3 questions",appointment,political,16,3.2,3,6,1,32,7,0,4,4,0.0,2,0,0.0,,False,False,False,0.0,0.12
+731,Un sacerdote muere tras caerle encima un enorme crucifijo durante una misa que estaba transmitiendo en vivo en Ecuador,unknown,unknown,16,5.2,5,7,3,17,7,0,0,0,0.231,3,0,0.0,long,False,False,False,0.94,0.0
+863,"Iran says seven ships hit in Hormuz Strait, warns US of wider response",significant_statement,diplomacy,16,4.5,4,2,1,7,13,0,0,0,0.0,3,0,0.429,long,False,False,False,0.0,0.88
+108,"Iran war live: Trump hints US could strike Iran, warns time coming",military_action,military,15,2.7,1,3,1,15,5,2,1,2,,0,0,,,False,False,False,0.0,0.0
+224,"Sailors missing after fresh attacks on Black Sea vessels, Bulgaria says",military_action,military,15,1.1,2,5,1,17,8,0,0,1,0.231,2,0,0.154,,False,False,False,0.0,0.53
+425,DR Congo’s former president Kabila to lead new movement with M23 rebels,unknown,unknown,15,3.0,3,6,2,25,11,0,0,0,0.0,1,0,0.0,,False,False,False,0.07,0.47
+536,"Zelensky, 'grazie Meloni per il sostegno e la posizione inequivocabile'",unknown,unknown,15,2.2,3,6,2,36,17,0,0,2,0.615,5,0,0.692,drift;chain,False,True,False,1.0,0.0
+563,"Pakistan, crolla il tetto in una scuola a Peshawar: ci sono morti e feriti, tra questi anche bambini",unknown,unknown,15,2.7,2,9,3,12,13,0,0,0,0.615,4,0,0.308,drift;chain,False,True,False,0.87,0.13
+608,Two hospitalised after shooting at Oregon elementary school; gunman dead,military_action,military,15,1.7,4,6,1,9,5,0,0,0,0.077,2,0,0.077,long,False,False,False,0.0,0.07
+793,Human rights: EU appoints a new Special Representative,sanctions,economic,15,4.0,3,6,1,19,6,0,0,0,0.154,2,0,0.077,long,False,False,False,0.0,0.53
+903,"Seven shot dead by gunmen at church funeral in Jordan, state media say",military_action,military,15,3.9,4,5,1,12,6,0,0,0,0.231,3,0,0.077,long,False,False,False,0.0,0.13
+136,"Malaysia repatriates 1,500 Myanmar nationals despite UN risk warnings",significant_statement,diplomacy,14,4.0,5,3,1,17,6,0,0,0,0.25,3,0,0.083,long,False,False,False,0.0,0.5
+172,Nigeria launches rescue after military plane crashes with 32 aboard,significant_statement,diplomacy,14,1.9,3,3,1,14,3,0,0,0,0.083,2,0,0.083,,False,False,False,0.0,0.86
+207,Un pelotón de fusilamiento ejecutará al psiquiatra militar que mató a trece personas en la base Fort Hood (EEUU) en 2009,unknown,unknown,14,3.7,3,5,2,11,7,0,0,5,0.25,3,0,0.167,,False,False,False,1.0,0.0
+215,Kenya confirms its first Ebola death as outbreak spreads,significant_statement,diplomacy,14,3.1,3,9,3,24,11,0,1,1,0.0,2,0,0.0,,False,False,False,0.14,0.07
+217,Francis Halzen wins 2026 Nobel Prize in Physics,unknown,unknown,14,1.1,2,6,2,24,11,0,0,0,0.4,2,0,0.1,,False,False,False,0.29,0.0
+438,Spain’s king visits Ceuta amid tensions with Morocco,diplomatic_visit,diplomacy,14,2.2,3,7,2,25,16,0,0,0,0.583,4,0,0.167,drift;chain,False,True,False,0.57,0.07
+444,Trump’s diesel deal opens a new rift with Europe over Ukraine,significant_statement,diplomacy,14,2.0,3,4,2,16,14,0,0,0,0.167,2,0,0.333,,False,False,False,0.07,0.57
+711,Russia’s Lavrov to discuss US war and regional security during Tehran visit,warning,security,14,3.2,3,2,1,11,12,0,1,1,0.25,3,0,0.583,,False,False,False,0.0,0.79
+725,EU invests over €390 million in 135 new climate and environment projects,military_action,military,14,2.0,3,8,1,19,9,0,0,0,0.833,3,0,0.167,drift,False,False,False,0.0,0.36
+4,Saudi Arabia allies line up support as Houthi attacks mount,military_action,military,13,4.4,1,4,1,36,23,1,0,1,,0,0,,long,False,False,False,0.0,0.0
+86,Somali army clashes with local forces for control of Baidoa,policy_change,political,13,3.8,1,3,1,20,14,2,0,0,,0,0,,,False,False,False,0.0,0.0
+211,"Israeli forces kill one, injure several in occupied West Bank",military_action,military,13,3.0,3,2,1,9,7,0,1,1,0.273,3,0,0.273,,False,False,False,0.0,0.46
+254,"US death row inmate Christa Pike conscious after failed execution, lawyers say",security_incident,security,13,2.2,4,4,1,9,3,3,0,1,0.0,1,0,0.0,long,False,False,False,0.0,0.0
+411,Fridges in French supermarkets hit by cyber attack,security_incident,security,13,1.6,2,4,1,13,2,0,0,0,0.0,1,0,0.111,,False,False,False,0.0,0.38
+497,China chip exports jump 136% to US$45b as AI frenzy jacks up prices,sanctions,economic,13,2.6,3,3,1,21,10,0,0,0,0.818,5,0,0.636,drift;chain,False,True,False,0.0,0.31
+505,"North Korea’s new missile museum: part shrine, part arms bazaar",military_action,military,13,3.6,3,5,1,11,12,0,0,0,0.0,2,0,0.091,,False,False,False,0.0,0.46
+662,Burnt out cars and shattered glass on Paris streets after protests turn to riots and looting,significant_statement,diplomacy,13,1.9,3,4,1,12,5,5,2,2,0.167,3,0,0.167,,False,False,False,0.0,0.0
+778,Elon Musk says he will give SpaceX share to ‘every kid in America’,significant_statement,diplomacy,13,3.2,3,5,1,16,2,0,0,0,0.0,2,0,0.091,,False,False,False,0.0,0.54
+935,Il movimento studentesco converge su Belgrado e lancia la sfida a Vucic,unknown,unknown,13,4.2,4,4,2,11,5,0,0,0,0.091,2,0,0.0,long,False,False,False,1.0,0.0
+68,US forces set to complete withdrawal from Iraq after 2 decades,significant_statement,diplomacy,12,1.8,1,5,1,38,11,2,0,0,,0,0,,,False,False,False,0.0,0.0
+133,Bosnian Serb leader says Bosnia is ‘dead’ ahead of election,election,political,12,3.6,3,5,1,19,7,4,0,0,0.0,2,0,0.0,,False,False,False,0.0,0.08
+163,Lionel Messi to join Argentina for farewell match against Benin,unknown,unknown,12,2.9,4,3,1,15,6,0,0,0,0.0,1,0,0.1,long,False,False,False,0.0,0.0
+464,Russia arrests Japanese reporter for alleged espionage,security_incident,security,12,1.7,3,6,1,13,8,0,0,0,0.0,1,0,0.2,,False,False,False,0.0,0.5
+492,"Trump says 'massive' oil, gas and mineral exploration to begin in Greenland",significant_statement,diplomacy,12,1.1,2,4,1,13,5,0,0,0,0.0,1,0,0.1,,False,False,False,0.0,0.58
+590,Venezuela’s Maduro pleads not guilty to US conspiracy to torture charges,significant_statement,diplomacy,12,1.2,2,5,1,13,4,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.67
+893,At least one dead and four injured in Paris suburb shooting,security_incident,security,12,2.8,2,4,1,6,3,0,0,0,0.1,2,0,0.1,,False,False,False,0.0,0.33
+897,Ultimi sondaggi in Serbia delineano esito incerto fra studenti e Vucic,unknown,unknown,12,3.9,4,6,2,19,7,0,0,0,0.3,2,0,0.2,long,False,False,False,1.0,0.0
+78,Hegseth to cut number of US general and admiral positions by 20%,significant_statement,diplomacy,11,2.2,1,5,1,28,6,3,0,0,,0,0,,,False,False,False,0.0,0.0
+84,"Russian attacks on Ukraine’s Kyiv region kill four, target power grid",military_action,military,11,2.4,1,5,1,30,10,1,0,0,,0,0,,,False,False,False,0.0,0.0
+184,"Trump blames Democrats and Ukraine for soaring US fuel prices, not Iran war",negotiation,diplomacy,11,4.2,4,4,1,12,11,0,0,0,0.556,3,0,0.778,long;drift,False,True,False,0.0,0.64
+203,Trump says he will stop using taxpayer funds for ads after bipartisan pushback,significant_statement,diplomacy,11,2.6,3,5,1,9,2,0,0,1,0.125,2,0,0.125,,False,False,False,0.0,0.45
+289,Meloni renews commitment to fighting antisemitism on October 7 anniversary,election,political,11,2.2,3,8,3,19,11,0,0,0,0.444,2,0,0.222,,False,False,False,0.55,0.09
+421,La disciplina escolar de Fujimori en Perú: “Los hombrecitos deben venir con el pelo corto. Está prohibido pintarse el pe,unknown,unknown,11,4.0,3,5,2,14,13,0,0,0,0.111,2,0,0.333,long,False,False,False,1.0,0.0
+431,Immigration agents search congresswoman Ilhan Omar's home,warning,security,11,2.2,3,4,1,13,4,0,0,0,0.111,1,0,0.222,,False,False,False,0.0,0.73
+669,"Media canadesi, 'almeno 7 morti nell'incendio nella base militare'",unknown,unknown,11,3.4,4,5,2,10,4,0,0,0,0.857,3,0,0.429,long;drift,False,True,False,1.0,0.0
+710,"Marco Rubio visits India this week, with a visit to the world's largest oil refinery topping the agenda",economic_action,economic,11,2.5,3,2,1,9,7,0,0,0,0.0,1,0,0.5,,False,False,False,0.0,0.91
+837,"El Salvador, ultimatum di Bukele alle gang di Haiti",threat,security,11,3.3,3,7,3,17,4,0,0,0,0.0,1,0,0.143,,False,False,False,0.64,0.09
+129,"India election chief faces calls to resign from protesters, opposition",election,political,10,4.0,4,4,1,15,4,1,0,0,0.0,2,0,0.143,long,False,False,False,0.0,0.0
+225,"South Korea says it received 'insufficient' apology from Ukraine over North Korean POWs, mulls envoy recall",significant_statement,diplomacy,10,2.1,2,6,1,6,5,0,0,0,0.0,2,0,0.0,,False,False,False,0.0,0.4
+312,Por qué la mayor colonia de pingüinos del mundo ha perdido dos tercios de su población,unknown,unknown,10,1.4,2,4,2,13,17,0,0,0,0.625,3,0,0.375,drift,False,False,False,1.0,0.0
+339,Trump says US will not attack Iran before November’s midterm elections,military_action,military,10,2.1,2,2,1,8,5,0,0,0,0.0,1,0,0.5,,False,False,False,0.0,0.9
+349,At least 81 US aircraft worth up to $3.3bn lost or damaged in Iran war,significant_statement,diplomacy,10,2.4,2,2,1,7,3,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.9
+407,Un ciberataque contra neveras y congeladores de cientos de supermercados de Francia provoca pérdidas millonarias,security_incident,security,10,1.1,1,5,2,10,6,0,0,0,0.0,1,0,0.0,,False,False,False,1.0,0.0
+520,US inflation rises more than expected ahead of midterm elections,election,political,10,1.1,2,4,1,4,3,0,0,0,0.0,2,0,0.5,,False,False,False,0.0,0.6
+636,El Gobierno palestino condena el incendio de una mezquita en Cisjordania a manos de colonos israelíes,unknown,unknown,10,4.0,4,5,1,14,10,0,0,0,0.0,1,0,0.0,long,False,False,False,1.0,0.0
+698,"US-Russia-China summit would only 'encourage Putin to continue this war,' Ukraine says",summit,diplomacy,10,1.8,3,4,1,19,12,0,0,0,0.0,2,0,0.571,,False,False,False,0.0,0.6
+709,Daily News 19 / 10 / 2026,diplomatic_visit,diplomacy,10,3.3,4,3,1,19,6,0,0,0,0.375,3,0,0.75,long,False,False,False,0.0,0.0
+718,Ukraine deploys drone to airlift wounded soldier in 'world-first' operation,deployment,military,10,2.0,3,4,1,12,4,0,0,1,0.0,1,0,0.0,,False,False,False,0.0,0.6
+761,"Turkiye moves to ratify Mecca defence pact with Pakistan, Saudi Arabia",agreement,diplomacy,10,2.8,3,3,1,15,9,0,0,0,0.143,2,0,0.143,,False,False,False,0.0,0.7
+766,UK rearrests duo on suspicion of aiding Iran in alleged plot at US-run airbase,security_incident,security,10,2.9,2,3,1,6,6,0,0,0,0.125,2,0,0.0,,False,False,False,0.0,0.8
+782,NATO to send additional patrol planes to Black Sea after drone attacks,military_action,military,10,2.9,4,5,1,10,5,0,0,0,0.25,3,0,0.0,long,False,False,False,0.0,0.6
+787,"King Charles welcomes Omani sultan, hails peace efforts in UK state visit",diplomatic_visit,diplomacy,10,1.5,1,2,1,18,8,0,0,0,0.0,2,0,0.25,,False,False,False,0.0,0.8
+867,"Super Typhoon Champi: Hong Kong airlines cancel at least 12 Taiwan, Japan flights",military_exercise,military,10,2.1,3,5,1,26,18,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.2
+949,Obama attacks Trump as he campaigns for Democrats ahead of midterm elections,military_action,military,10,1.7,2,4,1,15,6,0,0,0,0.0,2,0,0.286,,False,False,False,0.0,0.4
+954,Venezuelan opposition leader María Machado returns after months in exile,election,political,10,1.3,3,6,1,13,7,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.2
+5,"Four civilians killed in Pakistani strikes in Afghanistan, Taliban says",military_action,military,9,2.9,1,3,1,18,9,2,0,0,,0,0,,,False,False,False,0.0,0.0
+27,Hundreds of thousands expected in Paris for Pope's visit,election,political,9,2.6,1,3,1,16,4,0,0,0,,0,0,,,False,False,False,0.0,0.0
+99,Russian drone crashes into Kyiv playground without exploding,military_action,military,9,1.6,1,4,1,30,10,1,0,0,,0,0,,,False,False,False,0.0,0.0
+160,Trump unveils 'Super Intelligence Force' to oversee AI policy,policy_change,political,9,2.7,3,6,1,11,3,0,0,0,0.667,4,0,0.333,chain,False,False,False,0.0,0.33
+258,"Irán carga contra las ""delirantes previsiones"" de EEUU sobre la guerra económica: ""También fracasaréis""",negotiation,diplomacy,9,2.1,2,6,3,14,15,0,0,0,0.143,2,0,0.429,,False,False,False,0.78,0.22
+263,Christa Pike ha ripreso conoscenza e parla,unknown,unknown,9,2.5,3,3,1,10,6,0,0,0,0.5,2,0,0.75,,False,False,False,1.0,0.0
+271,"Fonti Nato, il Comitato Militare alleato in visita a Kiev",unknown,unknown,9,2.2,2,3,2,12,17,0,0,0,0.429,3,0,0.143,,False,False,False,0.89,0.11
+387,"Trump, 'mappa New York senza Little Italy una vergogna', minaccia taglio fondi",threat,security,9,1.8,1,5,3,12,14,0,0,0,0.6,2,0,0.8,,False,False,False,0.89,0.0
+395,Trump announces deal with Putin to release Russian diesel,significant_statement,diplomacy,9,0.0,1,5,1,8,4,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.56
+473,Pakistan has locked down Imran Khan's stronghold - but it could backfire,bilateral_meeting,diplomacy,9,1.2,2,4,1,18,6,0,0,0,0.429,2,0,0.714,,False,False,False,0.0,0.67
+480,Saudi man charged with planting 'sophisticated' recording device in OpenAI office,diplomatic_visit,diplomacy,9,1.5,2,4,1,6,3,0,0,0,0.286,2,0,0.143,,False,False,False,0.0,0.22
+481,US Army creates robotics technician job to focus on drone warfare,unknown,unknown,9,3.1,2,3,1,49,15,0,0,0,0.143,2,0,0.429,actor_diverse,False,False,False,0.0,0.56
+499,"Man City vs PSG: Champions League – teams, predictions, line ups",significant_statement,diplomacy,9,1.7,2,3,1,25,7,0,1,1,0.0,2,0,0.286,,False,False,False,0.0,0.11
+525,Pete Hegseth to discuss autonomous warfare at AUSA Annual 2026 on Oct 14 at 10am EST,negotiation,diplomacy,9,1.9,2,4,1,44,17,0,1,1,0.2,2,0,0.0,actor_diverse,False,False,False,0.0,0.22
+528,"Sally Rooney books can’t be sold in UK amid Palestine Action ban, publisher says",policy_change,political,9,2.0,3,5,1,15,4,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.11
+609,"Al menos 3 niños y un adulto mueren en un tiroteo en una escuela primaria de Oregón, según medios en EE.UU.",unknown,unknown,9,1.9,3,6,2,6,9,0,0,0,0.143,1,0,0.286,,False,False,False,1.0,0.0
+692,The kingmakers who could determine Israel’s election,election,political,9,3.4,3,3,1,11,2,0,0,0,0.286,3,0,0.714,,False,False,False,0.0,0.67
+708,"France 'has to assist' Gulf states, diplomat says as Macron makes three-day visit",significant_statement,diplomacy,9,2.9,3,5,2,14,15,0,0,0,0.286,2,0,0.0,,False,False,False,0.22,0.22
+717,Kenya pastor accused of ordering parents to starve their children to death faces verdict,security_incident,security,9,2.4,3,4,1,12,5,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.0
+781,"Media, 'Iran ha trascinato negoziati con gli Usa per indebolire Trump alle midterm'",unknown,unknown,9,1.7,2,5,2,15,13,0,0,0,0.857,2,0,0.571,,False,False,False,1.0,0.0
+810,Russian occupation official exposed in Kyiv Independent documentary charged with war crimes,security_incident,security,9,2.8,3,5,1,16,4,0,0,0,0.0,2,1,0.0,,False,False,False,0.0,0.44
+884,Russia to send first diesel tanker to the US amid Trump deal,sanctions,economic,9,2.8,2,3,1,9,6,0,0,0,0.286,3,0,0.143,,False,False,False,0.0,0.56
+26,Republic of Ireland news conference delayed before controversial Israel game,unknown,unknown,8,2.0,1,2,1,8,6,0,0,0,,0,0,,,False,False,False,0.0,0.0
+138,Nobel Medicine Prize awarded to 3 scientists for optogenetics development,unknown,unknown,8,0.8,3,6,2,11,4,0,0,0,0.167,2,0,0.167,,False,False,False,0.25,0.0
+176,ICC unseals four arrest warrants over Taliban persecution of women and girls,threat,security,8,3.0,4,4,1,12,3,0,0,0,0.0,2,0,0.167,long,False,False,False,0.0,0.5
+185,US Army tests counter-drone tech at Mexican border as cartel drone use rises,deployment,military,8,0.9,2,5,2,28,14,0,0,0,0.333,1,0,0.333,,False,False,False,0.12,0.5
+191,"""Estamos listos para ir de inmediato"": los millonarios cubanoestadounidenses que esperan en Miami que caiga el gobierno ",unknown,unknown,8,2.5,4,5,3,10,8,0,0,0,0.167,2,0,0.167,long,False,False,False,0.88,0.12
+198,Quebec votes in provincial election as separatist surge poses test for Canada’s PM Carney,election,political,8,1.0,1,5,2,14,6,0,0,0,0.0,1,0,0.0,,False,False,False,0.25,0.0
+202,"President Trump Takes Decisive Action to Lower Diesel Costs for American Truckers, Farmers",policy_change,political,8,1.0,1,3,1,27,4,0,0,0,0.0,2,0,0.2,,False,False,False,0.0,0.5
+255,EU seeks ways to make expansion more palatable to members,unknown,unknown,8,1.8,3,7,1,17,6,0,1,1,0.667,3,0,0.5,,False,False,False,0.0,0.12
+265,El emotivo último partido en el que Messi se despidió de la selección argentina,unknown,unknown,8,1.0,2,3,1,16,8,0,0,0,0.6,2,0,0.2,,False,False,False,1.0,0.0
+328,🔴Nobel Prize in Literature awarded to Canada’s Anne Carson,unknown,unknown,8,0.3,2,5,2,14,8,0,0,0,0.0,1,0,0.0,,False,False,False,0.12,0.0
+343,El portaaeronaves 'USS Abraham Lincoln' regresa a EEUU tras cerca de diez meses de despliegue en Oriente Próximo,deployment,military,8,1.3,2,4,2,8,11,0,1,1,0.0,2,0,0.4,,False,False,False,0.25,0.62
+455,'Transactional diplomacy': Greece positioning itself as Trump’s most 'reliable ally in the region',resignation,political,8,1.2,2,5,1,11,5,0,0,1,0.0,1,0,0.0,,False,False,False,0.0,0.38
+458,US Army to stand up command for unmanned and autonomous warfare,unknown,unknown,8,2.3,3,3,1,48,17,0,1,1,0.167,2,0,0.167,actor_diverse,False,False,False,0.0,0.38
+495,‘Like we don’t exist’: Palestinians in West Bank denied say in Israel vote,election,political,8,2.4,3,3,1,12,6,0,0,0,0.5,3,0,1.0,,False,False,False,0.0,0.5
+538,"Security Council, 10241st Meeting (AM) Haiti",sanctions,economic,8,2.3,2,3,1,8,5,0,0,0,0.0,2,0,0.0,,False,False,False,0.0,0.62
+564,EU leaders to ‘urgently’ call for new trade weapons to tackle China shock,election,political,8,1.8,2,3,1,14,10,0,0,0,0.167,2,0,0.167,,False,False,False,0.0,0.0
+582,"Ethiopian forces enter key Tigray town, raising fears among residents",significant_statement,diplomacy,8,3.1,2,3,1,8,4,0,0,0,0.0,2,0,0.167,,False,False,False,0.0,0.5
+705,En estado crítico una diputada australiana tras ser atropellada deliberadamente junto a su oficina,unknown,unknown,8,1.9,3,4,1,9,5,0,0,0,0.0,1,0,0.0,,False,False,False,1.0,0.0
+729,"Canada, l'Alberta al voto: si decide se avviare l'iter per l'indipendenza e staccarsi da Ottawa",election,political,8,2.7,3,6,3,12,8,0,0,0,0.167,2,0,0.167,,False,False,False,0.88,0.0
+735,"Trump approval hits record-low 31 percent, polls show Republican struggles",election,political,8,1.7,3,3,1,13,2,0,0,0,0.333,3,0,0.167,,False,False,False,0.0,0.38
+859,Trump ordered to answer questions under oath in BBC lawsuit,unknown,unknown,8,0.3,2,4,1,9,4,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.62
+928,Rubio calls on Cubans to partner with CIA ‘to create positive change’,unknown,unknown,8,1.0,2,4,2,9,6,0,0,0,0.0,2,0,0.4,,False,False,False,0.12,0.5
+940,"Sindacati, '800.000 in piazza in Francia, 250.000 a Parigi'",unknown,unknown,8,1.1,3,3,1,11,10,0,0,0,0.4,2,0,0.6,,False,False,False,1.0,0.0
+942,Thousands take to Tel Aviv's streets for protests against Netanyahu,military_action,military,8,1.2,3,3,1,9,5,0,0,0,0.0,2,0,0.2,,False,False,False,0.0,0.38
+945,Bulgaria holds presidential elections amid divisions over Ukraine war,election,political,8,3.1,2,4,1,9,5,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.5
+996,"Helsinki, 'Stubb e Store hanno avuto una conversazione con Putin'",unknown,unknown,8,0.1,1,6,3,18,17,0,0,0,0.0,1,0,0.25,,False,False,False,0.62,0.12
+8,Netanyahu defends Israeli military action as delegates walk out before UN speech,security_incident,security,7,0.8,1,2,1,10,2,3,0,0,,0,0,,,False,False,False,0.0,0.0
+9,Ethiopia's army says it has repelled attacks in first comment on fresh fighting,military_action,military,7,3.2,1,2,1,5,2,2,0,0,,0,0,,,False,False,False,0.0,0.0
+23,Bangkok roads submerged as flood disaster declared,significant_statement,diplomacy,7,1.3,1,3,1,5,4,0,0,0,,0,0,,,False,False,False,0.0,0.0
+38,Ten climbers missing after avalanche hits Himalayan base camp,unknown,unknown,7,1.2,1,3,1,8,1,0,0,0,,0,0,,,False,False,False,0.0,0.0
+69,"Evicted Spanish pensioner can move back home, lawyer says",policy_change,political,7,1.5,1,3,1,3,2,1,0,0,,0,0,,,False,False,False,0.0,0.0
+76,Pentagon picks Boeing to build new carrier fighter jet to replace F/A-18,significant_statement,diplomacy,7,1.6,1,3,1,25,2,1,0,0,,0,0,,,False,False,False,0.0,0.0
+100,US Navy launches drone command that could reshape Taiwan war planning,military_action,military,7,3.1,1,4,1,26,6,1,0,0,,0,0,,,False,False,False,0.0,0.0
+110,Eritrea severs diplomatic ties with Ethiopia in tit-for-tat move,unknown,unknown,7,1.0,1,3,1,11,9,2,0,0,,0,0,,,False,False,False,0.0,0.0
+113,Trump says US may ask Europe to release diesel reserves,agreement,diplomacy,7,1.3,1,3,1,9,4,1,0,0,,0,0,,,False,False,False,0.0,0.0
+125,Medical plane with 6 on board missing off Massachusetts coast,deployment,military,7,1.4,1,3,1,9,4,0,0,0,,0,0,,,False,False,False,0.0,0.0
+149,"Sanchez, 'ho deciso di convocare le elezioni il 29 novembre'",election,political,7,2.2,3,4,2,7,8,0,0,0,0.333,2,0,0.0,,False,False,False,1.0,0.0
+154,Nationalists top Bosnia-Herzegovina's divisive election,election,political,7,2.1,3,4,2,17,9,0,0,0,0.2,1,0,0.4,,False,False,False,0.57,0.29
+170,Zelensky condemns 'horrific' Russian strike on boat carrying corn in Black Sea,military_action,military,7,1.9,3,4,1,9,7,0,0,0,0.6,3,0,0.4,,False,False,False,0.0,0.43
+233,Former German spy chief arrested for espionage and treason,security_incident,security,7,2.0,3,4,1,11,5,0,0,0,0.2,2,0,0.2,,False,False,False,0.0,0.29
+237,"In Gaza, we cannot even begin to recover from trauma",ceasefire,security,7,1.9,2,2,1,9,4,0,0,0,0.0,1,0,1.0,,False,False,False,0.0,0.86
+270,"Wsj: 'Washington preme su Mosca, serve nota ufficiale sul decesso legato alla peste'",unknown,unknown,7,2.8,3,4,2,5,7,0,0,0,0.2,2,0,0.4,,False,False,False,1.0,0.0
+282,"Arrestato 19enne per attacco con coltello in una scuola in Polonia, sette feriti",security_incident,security,7,2.0,2,4,2,6,5,0,0,0,0.2,2,0,0.4,,False,False,False,1.0,0.0
+318,Lithuania calls for EU sanctions against Russian grain,sanctions,economic,7,2.2,1,2,1,17,8,0,0,0,0.2,2,0,0.6,,False,False,False,0.0,0.71
+361,El Pentágono retransmitirá la primera ejecución por fusilamiento desde 1945,unknown,unknown,7,0.8,1,5,1,14,8,0,0,1,0.0,1,0,0.0,,False,False,False,1.0,0.0
+459,"No, Ukraine's strikes on Yandex data centers didn't cripple Russian influence ops",military_action,military,7,2.0,3,3,1,11,5,0,0,0,0.2,2,0,0.2,,False,False,False,0.0,0.43
+558,Costa Rica opens mega-prison as Bukele model embraced across Latin America,unknown,unknown,7,0.8,1,7,3,7,6,0,0,0,0.4,2,0,0.0,,False,False,False,0.57,0.14
+567,"Pakistan school roof collapse kills dozens of pupils, teacher in Peshawar",warning,security,7,1.6,2,4,1,6,3,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.0
+571,Ship catches fire in Romania’s waters amid rising attacks in the Black Sea,military_action,military,7,1.9,2,5,1,5,8,0,0,0,0.0,2,0,0.2,,False,False,False,0.0,0.43
+616,Rubio presses Lebanon on confiscation of weapons from Hezbollah,unknown,unknown,7,2.3,2,2,1,8,2,0,0,0,0.0,2,0,0.25,,False,False,False,0.0,0.71
+635,"Security Council, 10245th Meeting (AM) Sudan",military_action,military,7,3.7,2,5,1,15,9,1,1,1,0.0,1,0,0.0,,False,False,False,0.0,0.29
+644,Let us cooperate to protect Christians worldwide Putin tells pope,significant_statement,diplomacy,7,0.3,1,4,1,17,8,0,0,0,0.5,1,0,0.5,,False,False,False,0.0,0.29
+700,Hezbollah funding plan indicates a new challenge to Lebanon’s government,unknown,unknown,7,1.5,2,4,1,15,5,0,0,0,0.2,2,0,0.8,,False,False,False,0.0,0.57
+723,Ex-OpenAI worker accused of planting device had Saudi support says court filing,security_incident,security,7,0.6,2,3,1,10,3,0,0,0,0.0,2,0,0.2,,False,False,False,0.0,0.57
+762,"Cuba, 'gli Usa consentono a dei terroristi di agire impunemente'",economic_action,economic,7,5.0,5,6,3,23,24,0,0,0,1.0,3,0,0.6,long,False,False,False,0.86,0.14
+799,Factsheet on Vision 2040 for fisheries and aquaculture in the EU,bilateral_meeting,diplomacy,7,3.8,3,4,1,19,8,0,1,1,0.0,1,0,0.333,,False,False,False,0.0,0.0
+804,"Drones take over AUSA, plus the Army’s plan to bring in new vendors",unknown,unknown,7,2.0,2,4,1,25,16,0,0,0,0.25,2,0,0.5,,False,False,False,0.0,0.43
+828,US Air Force outlines the fighter fleet it needs by 2035,agreement,diplomacy,7,0.9,2,4,1,30,2,0,0,0,0.4,2,0,0.0,,False,False,False,0.0,0.29
+839,Ramaswamy faces firestorm over US political ad featuring Democrat rival’s estranged mother,military_action,military,7,1.7,2,5,1,18,3,0,0,1,0.0,1,0,0.0,,False,False,False,0.0,0.14
+846,La Corte penale internazionale vince il premio Sacharov del Pe,unknown,unknown,7,0.3,1,5,2,13,3,0,0,0,0.0,1,0,0.0,,False,False,False,1.0,0.0
+847,"Muere una persona en Francia a causa del virus shamonda, hasta ahora considerado no transmisible a humanos",significant_statement,diplomacy,7,0.4,2,7,2,2,4,0,0,0,0.0,1,0,0.0,,False,False,False,0.43,0.0
+874,Casualties reported after 7.0 quake strikes China’s Tibet,military_action,military,7,1.7,3,5,1,7,5,0,0,0,0.2,2,0,0.2,,False,False,False,0.0,0.14
+911,Ukraine repatriates 252 bodies that Russia claims belong to Ukrainian soldiers,military_action,military,7,2.7,2,3,1,6,4,0,0,0,0.25,2,0,0.0,,False,False,False,0.0,0.43
+916,Trump administration sues to block possible Democratic win in Alaska,election,political,7,2.2,3,5,1,13,3,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.14
+936,"Un incendio destruye casi por completo el Nido del Águila, antiguo refugio de Hitler",unknown,unknown,7,0.7,2,5,1,8,12,0,0,0,0.0,1,0,0.2,,False,False,False,1.0,0.0
+958,"Barcelona vs Real Madrid: La Liga – El Clasico preview, predictions, teams",bilateral_meeting,diplomacy,7,1.6,1,4,2,17,9,0,1,1,0.0,1,0,1.0,,False,False,False,0.14,0.0
+56,Malaysia begins sending thousands of Myanmar nationals back to war-torn homeland,bilateral_meeting,diplomacy,6,1.5,1,3,1,5,3,1,0,0,,0,0,,,False,False,False,0.0,0.0
+58,South Korea suspects North Korean mines behind DMZ blast,significant_statement,diplomacy,6,2.3,1,3,1,10,7,0,0,0,,0,0,,,False,False,False,0.0,0.0
+188,FBI arrests ‘Chinese foreign agent’ for spying on Taiwan president’s son,security_incident,security,6,3.4,3,3,1,15,9,0,0,0,0.5,3,0,0.5,,False,False,False,0.0,0.5
+189,"Turkiye, Pakistan agree to military deployment to Saudi Arabia",agreement,diplomacy,6,2.7,4,3,1,16,10,0,0,0,0.0,1,0,0.5,long,False,False,False,0.0,0.67
+221,NATO drafts strategy on repelling Russian attack against eastern flank,warning,security,6,2.3,2,2,1,11,7,0,0,0,0.75,2,0,0.75,,False,False,False,0.0,0.33
+231,Secretary Rubio’s Meeting with Icelandic Prime Minister Frostadóttir,significant_statement,diplomacy,6,0.1,1,3,1,28,16,0,0,0,0.0,2,0,0.25,,False,False,False,0.0,0.5
+243,Paramount and Warner Bros merge into one Hollywood giant,unknown,unknown,6,0.8,2,4,2,21,2,0,0,0,0.0,1,0,0.0,,False,False,False,0.33,0.0
+355,Hurricane Isaias charges towards the US Gulf Coast with dangerous winds,unknown,unknown,6,1.2,2,3,2,10,9,0,0,0,0.25,2,0,0.25,,False,False,False,0.17,0.5
+381,"Omani Flydubai co-pilot planned to crash plane into Israeli airport, UAE says",military_action,military,6,1.6,1,6,2,11,9,0,0,0,0.25,2,0,0.0,,False,False,False,0.33,0.17
+461,Cornell bans all fraternity parties over gang sex assault allegations,policy_change,political,6,1.1,2,5,1,9,3,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.33
+466,Ex-gang boss sentenced to 40 years for orchestrating Tupac Shakur's murder,security_incident,security,6,0.1,2,5,2,7,2,0,0,0,0.0,1,0,0.25,,False,False,False,0.17,0.0
+467,Argentina lodges legal claim against UK's Falklands oil exploration,unknown,unknown,6,0.8,2,6,3,11,11,0,0,0,0.75,3,0,0.5,,False,False,False,0.67,0.17
+512,Netanyahu asegura estar en contra de un ataque de EEUU o Israel contra Irán en los próximos días,negotiation,diplomacy,6,1.8,2,4,2,9,7,0,0,0,0.5,2,0,0.5,,False,False,False,0.33,0.5
+526,"Container ship hit by projectile sinks in Strait of Hormuz, Singapore says",significant_statement,diplomacy,6,0.7,2,3,1,3,2,0,0,0,0.0,2,0,0.5,,False,False,False,0.0,0.67
+535,US stocks drop to their worst day since July as inflation worsens,unknown,unknown,6,0.3,1,2,1,3,1,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.83
+615,"Ong, Teheran condanna a morte una ragazza per un post sui social",unknown,unknown,6,2.0,1,3,1,9,8,0,0,0,0.333,2,0,0.667,,False,False,False,1.0,0.0
+624,China tells Israel to stop ‘forced establishment’ of West Bank settlements,significant_statement,diplomacy,6,0.3,1,4,1,10,6,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.5
+675,"Netanyahu, 'cautela su violenza a diplomatici, servono prove inconfutabili'",unknown,unknown,6,2.0,2,3,2,4,8,0,0,0,0.333,2,0,0.333,,False,False,False,1.0,0.0
+686,Un vuelo de Tel Aviv a Viena aterriza de emergencia en Bulgaria tras una amenaza de bomba,unknown,unknown,6,0.5,1,5,2,13,9,0,0,0,0.0,1,0,0.0,,False,False,False,0.5,0.0
+701,Meloni chairing security meeting after youth riots in Milan,bilateral_meeting,diplomacy,6,0.3,1,3,1,29,9,0,0,0,0.25,2,0,0.25,,False,False,False,0.0,0.0
+727,Search under way for four soldiers missing after gang attack in Haiti,election,political,6,0.9,2,4,1,8,2,0,0,0,0.25,2,0,0.25,,False,False,False,0.0,0.33
+737,Imposing Sanctions to Protect Americans from Intellectual Property Theft,sanctions,economic,6,2.0,3,3,1,14,4,0,0,0,0.5,2,0,0.25,,False,False,False,0.0,0.33
+745,Salvini says 500 more soldiers to defend Milan,deployment,military,6,1.9,2,4,2,17,5,0,0,0,0.0,1,0,0.0,,False,False,False,0.17,0.17
+811,German military raises sabotage threat level amid warning of Russian attacks: report,military_action,military,6,3.4,4,4,1,20,12,0,0,0,0.0,2,0,0.5,long,False,False,False,0.0,0.33
+929,"North Korea’s Kim Jong Un arrives in China, South Korean media say",diplomatic_visit,diplomacy,6,0.5,2,5,2,13,13,0,0,0,0.25,2,0,0.5,,False,False,False,0.33,0.17
+972,Daily News 26 / 10 / 2026,significant_statement,diplomacy,6,1.1,2,2,1,12,4,0,0,0,0.0,0,1,,,False,False,False,0.0,0.0
+11,Media outlets banned by Trump resume White House coverage after judge's order,policy_change,political,5,0.5,1,3,1,16,3,1,0,0,,0,0,,,False,False,False,0.0,0.0
+12,Poland boosts air defence after ‘Russian provocations’ amid Ukraine war,military_action,military,5,2.1,1,3,1,5,2,0,0,0,,0,0,,,False,False,False,0.0,0.0
+24,3 injured after explosion causes building collapse in Athens’ tourist centre,unknown,unknown,5,1.6,1,3,1,7,6,0,0,0,,0,0,,,False,False,False,0.0,0.0
+30,"Nor'easter storm brings coastal flooding, as New York and New Jersey declare emergency",unknown,unknown,5,1.2,1,3,1,8,10,0,0,0,,0,0,,,False,False,False,0.0,0.0
+37,"Embattled Serbian president resigns, paving way for early elections",resignation,political,5,0.4,1,3,1,7,3,1,0,0,,0,0,,,False,False,False,0.0,0.0
+64,Estonia blames Russia for arson attack on company supplying vehicles to Ukraine,security_incident,security,5,0.1,1,5,1,36,14,0,0,0,,0,0,,,False,False,False,0.0,0.0
+65,Israeli forces kill Hamas commander Izz al-Din al-Beik in Gaza attack,military_action,military,5,1.9,1,2,1,10,3,0,0,0,,0,0,,,False,False,False,0.0,0.0
+103,"The drone war will be won on the factory floor, not just the front line",unknown,unknown,5,2.9,1,2,1,20,3,1,0,0,,0,0,,,False,False,False,0.0,0.0
+123,"North Korea fires ballistic missile towards the sea, South Korea says",significant_statement,diplomacy,5,3.7,3,5,1,47,18,0,0,0,1.0,2,0,1.0,actor_diverse,False,False,False,0.0,0.2
+183,Turquía y Pakistán enviarán tropas en apoyo a Arabia Saudí tras los ataques de los hutíes,unknown,unknown,5,0.5,2,4,2,8,9,0,0,0,0.333,2,0,0.333,,False,False,False,1.0,0.0
+208,Las autoridades de Moscú registran al menos un muerto y seis heridos tras detectar más de 600 drones,unknown,unknown,5,2.1,3,2,1,6,8,0,0,0,0.0,1,0,0.0,,False,False,False,1.0,0.0
+212,Seoul probe reveals border mine blast caused by North Korea,warning,security,5,1.9,2,3,1,11,6,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.4
+244,"Upon Receiving National Honour, Secretary-General Thanks People of Pakistan, Hailing It as Country of Strength, Determin",diplomatic_visit,diplomacy,5,1.3,2,2,1,14,5,0,0,0,0.0,2,0,1.0,,False,False,False,0.0,0.4
+256,Ex-CIA official accused of stealing US$40 million in gold bars pleads guilty,unknown,unknown,5,0.5,2,3,1,7,2,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.6
+275,Noruega estudia limitar los lentes inteligentes por temor a las grabaciones sin consentimiento,unknown,unknown,5,2.8,2,4,1,5,10,0,0,0,0.333,2,0,0.333,,False,False,False,1.0,0.0
+280,"Press release - EU-China relations: MEPs defend dialogue, fair trade, and human rights",negotiation,diplomacy,5,0.9,2,3,1,8,6,0,0,0,0.0,2,0,0.333,,False,False,False,0.0,0.0
+300,Trump on why he thinks he deserves the Nobel Peace Prize,significant_statement,diplomacy,5,1.6,2,2,1,2,1,0,0,0,0.0,1,0,0.333,,False,False,False,0.0,0.8
+345,Secretary of State Marco Rubio and Portuguese Foreign Minister Paulo Rangel at a Joint Press Availability,diplomatic_visit,diplomacy,5,0.3,1,2,1,26,13,0,0,0,,0,0,,,False,False,False,0.0,0.6
+348,"US suspends Microsoft, major IT firms from green card programme",unknown,unknown,5,0.8,2,3,1,14,5,0,0,0,0.333,1,0,0.333,,False,False,False,0.0,0.0
+360,"Un herido por disparos en operación del ICE en Nueva York, que justifica la acción por su historial criminal",unknown,unknown,5,0.7,1,3,1,6,3,0,0,0,0.0,1,0,0.0,,False,False,False,1.0,0.0
+362,ICE agent shoots man in New York City,significant_statement,diplomacy,5,0.5,1,3,1,6,5,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.0
+396,L'esplosione e la paura al Terminal 3 dopo il missile Houthi sull'aeroporto King Khalid,unknown,unknown,5,2.3,1,3,2,6,11,0,0,0,0.0,1,0,1.0,,False,False,False,1.0,0.0
+412,Breaking Bad actor RJ Mitte dies aged 34,unknown,unknown,5,0.4,1,4,2,6,1,0,0,0,0.0,1,0,0.0,,False,False,False,0.6,0.0
+433,"Japan, US review military liberty policies after Okinawa killing",negotiation,diplomacy,5,1.6,2,2,1,10,7,0,0,0,0.333,2,0,0.333,,False,False,False,0.0,0.6
+436,"Colombia peace deal must endure as insecurity grows, Security Council hears",significant_statement,diplomacy,5,1.7,2,3,1,8,2,0,0,0,0.667,2,0,0.333,,False,False,False,0.0,0.6
+452,"Estudiantes, docentes y sindicatos marchan por París a pocas horas del debate nacional sobre presupuestos",unknown,unknown,5,0.8,2,3,1,10,2,0,0,1,0.0,1,0,0.5,,False,False,False,1.0,0.0
+468,Security Council Hears Calls for Greater Synergy among Parallel Diplomatic Efforts to End Violence in Eastern Democratic,significant_statement,diplomacy,5,1.3,2,4,1,8,2,0,0,0,0.0,1,0,1.0,,False,False,False,0.0,0.4
+474,Rwanda to host a Grand Prix in 2030s as Formula One returns to Africa,significant_statement,diplomacy,5,2.2,3,3,1,9,6,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.2
+475,"Less than half of EU citizens support Ukraine's quick accession, poll shows",unknown,unknown,5,1.1,2,3,1,9,3,0,0,0,0.0,1,0,1.0,,False,False,False,0.0,0.6
+483,Secretary of State Rubio’s Call with UK Foreign Secretary Miliband,negotiation,diplomacy,5,2.7,2,3,1,28,17,0,0,0,0.333,3,0,0.333,,False,False,False,0.0,0.4
+539,Hegseth calls US$1.5 trillion defence budget ‘critical’ to counter China,significant_statement,diplomacy,5,0.5,2,4,1,13,5,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.4
+559,"President Trump Returns to Arizona with a Record of Results: Tax Relief, Jobs, and Border Security",diplomatic_visit,diplomacy,5,1.2,1,2,1,44,15,0,0,0,0.333,3,0,0.667,actor_diverse,False,False,False,0.0,0.6
+581,"Finlandia, Danimarca e Svezia a Costa, 'non indebolire sistema Ets'",unknown,unknown,5,1.1,2,2,1,10,7,0,0,1,0.5,2,0,0.5,,False,False,False,1.0,0.0
+597,Afghanistan faces record hunger levels amid rampant rights violations,threat,security,5,1.6,2,3,1,5,1,0,0,0,0.0,2,0,0.333,,False,False,False,0.0,0.6
+604,Israel halts commercial goods from entering Gaza; Hamas denies tax claims,significant_statement,diplomacy,5,1.4,2,2,1,6,2,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.6
+619,Más de una treintena de personas detenidas en protestas universitarias en Buenos Aires,unknown,unknown,5,1.2,2,3,2,13,4,0,0,0,0.0,1,0,0.0,,False,False,False,1.0,0.0
+651,Brazil's elections matter for the planet. This is why,election,political,5,2.3,2,5,1,6,1,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.2
+656,"Trump suspende el último paquete de sanciones contra Rusia por motivos de ""interés nacional""",unknown,unknown,5,1.3,2,2,1,7,6,1,0,0,0.0,1,0,0.0,,False,False,False,1.0,0.0
+659,"Fotoreporter WP aggredita dai coloni, 'mi hanno spinto a terra e preso a calci'",unknown,unknown,5,1.8,1,3,1,9,3,0,0,0,,0,0,,,False,False,False,1.0,0.0
+680,"Lithuania foils arson attack on Starlink equipment, suspects Russian involvement",security_incident,security,5,1.4,2,3,1,10,7,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.6
+703,‘Hybrid warfare’: Taiwan drives away 16 Chinese ships,deployment,military,5,2.0,2,3,1,14,14,0,0,0,0.333,3,0,0.333,,False,False,False,0.0,0.4
+704,Qatar to unveil regional defence partnership,significant_statement,diplomacy,5,1.4,2,2,1,5,3,0,0,0,0.0,1,0,0.5,,False,False,False,0.0,0.6
+713,Cómo es la revolucionaria misión que busca traer un trozo de la mayor luna de Marte a la Tierra,unknown,unknown,5,1.3,2,4,1,1,8,0,0,0,0.0,1,0,0.0,,False,False,False,1.0,0.0
+765,Eastern Libya parliament approves 2019 maritime deal with Turkiye,significant_statement,diplomacy,5,1.7,3,3,1,11,7,0,0,0,0.0,1,0,0.333,,False,False,False,0.0,0.6
+803,UK approves development of Jackdaw gasfield in North Sea,unknown,unknown,5,0.6,1,2,1,5,2,0,1,1,0.0,1,0,1.0,,False,False,False,0.0,0.8
+856,50 people beat foreign man to death in South Africa as anti-migrant tensions rage,military_action,military,5,1.0,2,4,1,8,6,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.0
+862,Forte terremoto di magnitudo 7 colpisce il Tibet,unknown,unknown,5,0.6,2,5,2,5,6,0,0,0,0.0,1,0,0.0,,False,False,False,1.0,0.0
+892,"Pope cancels October 27 visit to Assisi, 'too soon after surgery'",bilateral_meeting,diplomacy,5,0.3,1,2,1,20,7,0,1,1,0.0,1,0,0.0,,False,False,False,0.0,0.8
+894,"Premier Francia, 'a Trappes fatti gravissimi, monitora l'antiterrorismo'",unknown,unknown,5,0.6,2,3,1,4,5,0,0,0,0.0,1,0,0.0,,False,False,False,1.0,0.0
+912,‘Foreign policy is the economy’: How Iran war is shaping US midterm vote,policy_change,political,5,2.1,2,2,1,8,2,0,0,0,0.0,1,0,1.0,,False,False,False,0.0,0.8
+926,Arrest made after fire at Hitler's mountaintop Eagle's Nest retreat,deployment,military,5,0.4,2,3,1,13,3,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.0
+960,China’s political elite gather for talks on Communist Party discipline,bilateral_meeting,diplomacy,5,0.3,1,4,1,10,2,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.4
+976,"Anthropic’s IPO filing shows explosive growth, risks and staggering costs",warning,security,5,0.9,2,4,1,10,4,0,0,0,0.333,1,0,0.333,,False,False,False,0.0,0.2
+990,Major Chinese brands drop Mbappé as backlash grows over Mao joke,significant_statement,diplomacy,5,0.3,1,5,1,10,3,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.2
+992,"Harry Kane ends England's 25-year Ballon d'Or drought, Putellas wins third crown",unknown,unknown,5,0.5,1,2,1,18,4,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.0
+22,Rogue OpenAI agent 'infiltrated' Australian government website in world first,significant_statement,diplomacy,4,1.5,1,2,1,5,2,0,0,0,,0,0,,,False,False,False,0.0,0.0
+32,Two mass shootings in South Africa leave 27 dead,election,political,4,1.2,1,3,1,3,2,1,0,1,,0,0,,,False,False,False,0.0,0.0
+57,Alleged rape on campus sparks violent protest at Indian university,unknown,unknown,4,3.1,1,3,1,8,1,2,0,0,,0,0,,,False,False,False,0.0,0.0
+60,Journalist to be crowned king in Uganda after bitter succession dispute,unknown,unknown,4,1.5,1,2,1,5,3,0,0,0,,0,0,,,False,False,False,0.0,0.0
+92,Russia sends nuclear warning to Nato over its Kaliningrad enclave,warning,security,4,1.3,1,3,1,5,4,0,0,0,,0,0,,,False,False,False,0.0,0.0
+97,"Swiss glaciers suffer 'disastrous' year of ice loss, threatening water supplies",warning,security,4,1.2,1,3,1,4,1,1,0,0,,0,0,,,False,False,False,0.0,0.0
+101,Ukraine's prized steel industry left in ruins by Russian missile campaign,military_action,military,4,1.6,1,4,1,27,10,1,0,0,,0,0,,,False,False,False,0.0,0.0
+115,US delivers F-16V fighter jets to Taiwan as island eyes threat from China,summit,diplomacy,4,0.4,1,4,1,23,10,0,0,0,,0,0,,,False,False,False,0.0,0.0
+131,Supporters of Imran Khan begin ‘long march’ to Islamabad,negotiation,diplomacy,4,0.6,1,3,1,5,1,0,0,0,,0,0,,,False,False,False,0.0,0.0
+141,US to deploy NMESIS anti-ship system on Japanese island closest to Taiwan for first time,deployment,military,4,3.1,2,3,1,37,19,0,0,0,0.5,2,0,0.5,,False,False,False,0.0,0.25
+143,Pakistan vs. Afghanistan: From allies and neighbors to war,unknown,unknown,4,1.8,1,2,1,5,2,0,0,0,0.0,1,0,0.5,,False,False,False,0.0,0.75
+169,Latest US military strike on alleged drug boat kills four in Caribbean,military_action,military,4,0.1,1,2,1,5,2,0,0,0,,0,0,,,False,False,False,0.0,0.75
+175,Irán entrena a mujeres en las armas ante una posible invasión terrestre,unknown,unknown,4,1.2,2,4,1,8,6,0,0,0,0.5,2,0,0.5,,False,False,False,1.0,0.0
+180,Putin authorizes reorganization of UniCredit's Russian division,unknown,unknown,4,1.1,2,3,1,12,3,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.5
+181,Funeral held at Gaza church for mother and daughter killed in Gaza strike,military_action,military,4,2.4,2,2,1,11,3,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.25
+187,Mecca alliance agrees to activate collective deterrence measures,agreement,diplomacy,4,0.7,2,2,1,5,1,0,0,0,0.0,1,0,0.5,,False,False,False,0.0,0.75
+190,"US not removing diplomats from Kyiv amid Russian threats, Rubio says",sanctions,economic,4,1.9,3,2,1,7,5,0,0,0,0.5,2,0,0.5,,False,False,False,0.0,0.5
+192,Systems Selected for JIATF 401 Directed-Energy Counter-Drone Pilot Program,unknown,unknown,4,1.9,3,3,1,31,12,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.0
+196,"South Korea shipped fuel to Russia via sanctioned vessels, media reports",sanctions,economic,4,2.6,2,3,1,5,6,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.5
+197,Las iniciativas más relevantes que llegarán a las boletas en las ‘midterms’ de noviembre,unknown,unknown,4,0.8,1,4,1,2,4,0,0,0,1.0,1,0,1.0,,False,False,False,1.0,0.0
+199,Boeing nabs potential $14.7 billion PAC-3 seeker contract,unknown,unknown,4,1.4,2,3,1,16,6,0,0,0,0.5,2,0,0.5,,False,False,False,0.0,0.25
+205,"France vs Belgium: UEFA Nations League – Olise, De Bruyne, teams and format",unknown,unknown,4,0.9,1,2,1,8,3,0,1,1,,0,0,,,False,False,False,0.0,0.0
+219,UEFA to investigate spitting incident at Ireland–Israel football match,unknown,unknown,4,0.8,1,2,1,5,2,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.75
+283,US military aid to Israel continues three years into Gaza genocide,significant_statement,diplomacy,4,1.1,1,2,1,5,3,0,0,0,,0,0,,,False,False,False,0.0,0.75
+299,"Department of War's Office of Strategic Capital Announces $1.5 Billion Conditional Loan Commitment to Wolfspeed, Inc.",significant_statement,diplomacy,4,0.8,2,2,1,7,1,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.5
+302,"US and Lebanon protecting wanted Syrian general, BBC finds",unknown,unknown,4,1.8,1,2,1,8,3,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.75
+303,Russia's largest Yandex data center reportedly hit in drone attack,military_action,military,4,2.8,2,2,1,8,2,0,0,0,0.0,2,0,0.0,,False,False,False,0.0,0.5
+304,US stocks slide as oil prices fluctuate over renewed Iran war fears,unknown,unknown,4,1.8,1,2,1,3,3,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.75
+314,Veteran Indian actor Nana Patekar dies at 75,unknown,unknown,4,1.4,2,3,1,6,1,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.5
+358,Department of War Awards $6.3 Billion Multi-Year Contract to RTX's Raytheon for SM-3 BLOCK IB Interceptors,unknown,unknown,4,1.0,1,3,1,18,8,0,0,0,0.5,2,0,0.5,,False,False,False,0.0,0.0
+372,India’s Cockroach movement says members detained as protests continue,significant_statement,diplomacy,4,0.7,1,3,1,8,3,0,0,0,0.0,1,0,1.0,,False,False,False,0.0,0.0
+402,Hurricane Simon batters Mexico's Pacific Coast,unknown,unknown,4,1.6,1,3,1,5,5,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.5
+403,Speech by President António Costa at the opening session of the 24th edition of the European Week of Regions and Cities,unknown,unknown,4,0.2,1,2,1,8,2,0,0,0,,0,0,,,False,False,False,0.0,0.0
+432,Paris Motor Show kicks off as China-EU rivalry heats up,diplomatic_visit,diplomacy,4,2.3,2,2,1,11,5,0,0,0,0.5,2,0,0.5,,False,False,False,0.0,0.0
+437,US archbishop says Catholics in army should not participate in firing squad,significant_statement,diplomacy,4,1.1,2,2,1,6,2,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.75
+442,L'attrice Selma Blair arrestata dopo aver aggredito due assistenti di volo,unknown,unknown,4,2.0,2,2,1,4,1,0,0,0,0.0,2,0,0.5,,False,False,False,1.0,0.0
+485,General Assembly Elects 15 Members to Human Rights Council,election,political,4,1.2,1,3,1,4,0,0,0,0,1.0,1,0,1.0,,False,False,False,0.0,0.25
+494,Army to take a (cautious) step toward employing AI agents to defend networks: Official,warning,security,4,1.3,1,3,1,8,3,0,0,0,0.0,1,0,1.0,,False,False,False,0.0,0.5
+554,Trump suggests those who leak government information should ‘be shot’,significant_statement,diplomacy,4,0.3,1,2,1,5,1,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.75
+568,"Security Council, 10242nd Meeting (AM) Libya",election,political,4,0.9,1,3,1,7,2,0,1,1,,0,0,,,False,False,False,0.0,0.25
+569,‘Each country goes its own way’: How Balkan politics shape ties with Israel,significant_statement,diplomacy,4,2.4,2,2,1,8,3,0,0,0,0.0,1,0,1.0,,False,False,False,0.0,0.75
+575,Rescheduling of the EU-GCC Summit,summit,diplomacy,4,1.1,2,4,1,8,5,0,0,0,0.5,2,0,0.5,,False,False,False,0.0,0.25
+586,Closing loopholes: Council lists individuals and entities for circumventing EU sanctions,sanctions,economic,4,1.1,1,3,1,8,3,0,0,0,0.0,1,0,0.5,,False,False,False,0.0,0.5
+593,"‘Dark day for Turkey’: Pro-opposition TV channel boss slams police raid, broadcast halt",appointment,political,4,1.4,1,3,1,7,2,0,2,2,,0,0,,,False,False,False,0.0,0.0
+610,"Polizia Oregon, 'ucciso l'uomo armato nella scuola, ci sono feriti'",unknown,unknown,4,0.3,2,3,1,3,6,0,0,0,0.5,2,0,0.5,,False,False,False,1.0,0.0
+627,Lanci di lacrimogeni e incidenti alla manifestazione per le Università in Argentina,unknown,unknown,4,0.8,1,3,2,5,2,0,0,0,0.0,2,0,0.0,,False,False,False,0.25,0.0
+650,War in Ukraine: Kyiv residents decry shortage of bomb shelters,unknown,unknown,4,4.1,3,3,1,5,3,0,0,0,0.0,2,0,0.0,long,False,False,False,0.0,0.5
+652,"Southern California wildfire engulfs homes, prompts evacuation orders",unknown,unknown,4,1.1,1,2,1,6,4,0,0,0,,0,0,,,False,False,False,0.0,0.75
+660,Pakistan risks deeper instability as political feud threatens counterterrorism efforts,military_action,military,4,2.3,1,2,1,8,4,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.75
+665,"Kast y Paz se reúnen para mejorar las relaciones entre Bolivia y Chile, tensas desde hace décadas",unknown,unknown,4,0.8,1,2,1,6,5,0,0,0,,0,0,,,False,False,False,1.0,0.0
+667,Asesinato de destacado exfiscal anticorrupción Juan Francisco Solórzano sacude a Guatemala,security_incident,security,4,0.7,1,4,3,4,1,0,0,0,0.0,1,0,0.0,,False,False,False,0.75,0.0
+677,Egypt to provide ‘necessary’ support to Saudi Arabia amid Houthi attacks,agreement,diplomacy,4,0.3,1,2,1,5,2,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.75
+706,Bangladesh says it was not informed of its citizens' execution by Saudi Arabia,significant_statement,diplomacy,4,0.5,1,3,1,6,5,0,0,0,0.0,1,0,0.5,,False,False,False,0.0,0.5
+722,First Lady Melania Trump Champions New U.S. Women’s Health Initiative,unknown,unknown,4,0.2,1,3,1,18,1,0,0,0,0.0,2,0,0.0,,False,False,False,0.0,0.0
+726,Exiled critic of Rwandan president found beheaded,diplomatic_visit,diplomacy,4,1.0,2,4,1,13,5,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.25
+730,Directo Latam y el decreto de Sheinbaum que obliga a redes sociales a proteger a menores,unknown,unknown,4,1.5,2,3,1,9,4,0,0,0,0.5,2,0,1.0,,False,False,False,1.0,0.0
+733,Spain floods kill four as torrential rain inundates eastern regions,unknown,unknown,4,0.6,2,3,1,2,3,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.5
+738,Japan readies Martian moon mission to uncover origins of life,diplomatic_visit,diplomacy,4,1.7,1,4,1,7,5,0,0,0,,0,0,,,False,False,False,0.0,0.0
+739,‘Weight of responsibility’: Promise and perils of covering Ethiopia’s war,unknown,unknown,4,2.2,2,3,1,9,4,0,0,0,0.0,1,0,1.0,,False,False,False,0.0,0.5
+746,Russian satellite stalked ICEYE spacecraft in potentially dangerous on-orbit maneuvers,significant_statement,diplomacy,4,2.1,2,3,1,8,6,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.5
+760,La crisis de la vivienda y la gestión de Ceuta sacuden la carrera electoral en España,unknown,unknown,4,2.2,3,4,1,10,4,0,0,0,0.5,2,0,1.0,,False,False,False,1.0,0.0
+770,Trump sued over Canadian tariffs in latest legal challenge,economic_action,economic,4,1.7,1,3,1,4,3,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.5
+771,Joint statement by Presidents von der Leyen and Costa,significant_statement,diplomacy,4,1.7,3,2,1,12,3,0,0,0,0.5,2,0,0.5,,False,False,False,0.0,0.0
+777,"Ecuador-Perù, Noboa cede a Lima la presidenza della Comunità andina",unknown,unknown,4,1.1,2,3,2,10,8,0,0,0,0.0,1,0,1.0,,False,False,False,1.0,0.0
+791,Por qué Chile enfrenta una crisis económica con récord de desempleo en medio de las políticas de austeridad de Kast,unknown,unknown,4,2.3,2,3,1,7,6,0,0,0,0.5,2,0,1.0,,False,False,False,1.0,0.0
+801,🔴 Russia releases US citizen accused of fighting for Ukraine,unknown,unknown,4,0.9,1,2,1,7,3,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.75
+822,Caos en la red por PHP: gobiernos en todo el mundo cierran sitios web tras alerta de seguridad,unknown,unknown,4,0.8,2,3,1,4,5,0,0,0,0.5,2,0,0.0,,False,False,False,1.0,0.0
+827,Pope does not need further treatment after lung cancer surgery,unknown,unknown,4,0.5,2,4,1,16,7,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.0
+831,Meta to pay New Mexico a historic US$25 billion in Cambridge Analytica case,unknown,unknown,4,0.5,2,4,2,10,5,0,0,0,0.0,1,0,0.0,,False,False,False,0.25,0.0
+854,"Israeli forces kill disabled man in southern Syria raid, state media says",military_action,military,4,1.0,2,2,1,8,5,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.75
+870,Trump says NBA star LeBron James disrespected US national anthem,significant_statement,diplomacy,4,1.0,2,3,1,9,3,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.25
+878,Taiwan si prepara all'arrivo del potente tifone Champi,unknown,unknown,4,2.5,2,4,2,4,4,0,0,0,0.5,1,0,0.5,,False,False,False,1.0,0.0
+889,"Austria expels 4 Russian diplomats, Moscow vows response",security_incident,security,4,0.1,1,3,2,6,3,0,0,0,0.0,1,0,0.5,,False,False,False,0.25,0.5
+909,"Civilian cargo ship sinks off coast of Romania after Russian drone strike, authorities say",military_action,military,4,0.2,1,3,1,6,5,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.5
+933,"Ukraine strikes factory in Russia's Tolyatti, airfield in Krasnodar Krai, General Staff says",military_action,military,4,1.9,3,2,1,12,6,0,0,0,0.0,1,0,0.5,,False,False,False,0.0,0.25
+948,Israel to close West Bank crossings on election day as crackdown escalates,election,political,4,0.7,1,4,1,8,4,0,0,0,,0,0,,,False,False,False,0.0,0.0
+952,"Putin, accusarci per i disordini segno di debolezza e incapacità dei leader europei",unknown,unknown,4,1.7,3,3,1,11,8,0,0,0,0.5,2,0,0.0,,False,False,False,1.0,0.0
+957,"Los hutíes reivindican ataques contra Arabia Saudita, pero niegan tomar como blanco La Meca y Medina",unknown,unknown,4,1.2,1,3,1,6,11,0,0,0,0.0,1,0,0.0,,False,False,False,1.0,0.0
+965,Algerian parliament’s upper house approves troop deployment to Niger,deployment,military,4,2.0,2,3,1,9,4,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.0
+973,Macron vows ‘concrete’ measures to address student demands after unrest,significant_statement,diplomacy,4,0.1,1,2,1,6,2,0,1,1,0.0,1,0,0.0,,False,False,False,0.0,0.0
+986,Ex-FBI chief James Comey faces federal charges for third time,unknown,unknown,4,0.7,1,3,2,7,2,0,0,0,0.0,1,0,0.0,,False,False,False,0.25,0.0
+10,India’s ‘cockroach’ movement targets election chief in political pivot,election,political,3,0.3,1,2,1,4,1,0,0,0,,0,0,,,False,False,False,0.0,0.0
+16,US court upholds Pentagon’s blacklisting of Anthropic,policy_change,political,3,0.1,1,3,1,10,2,1,0,0,,0,0,,,False,False,False,0.0,0.0
+19,"In Paris, Pope warns against losing humanity in ‘paradise of machines’",warning,security,3,0.4,1,3,1,6,3,0,0,0,,0,0,,,False,False,False,0.0,0.0
+20,"Black woman Tasia Fortune’s hanging was ‘staged’ after her death, Mississippi police say",unknown,unknown,3,1.1,1,2,1,7,2,0,0,0,,0,0,,,False,False,False,0.0,0.0
+21,Facebook found liable as TikTok settles for $100m over user safety,agreement,diplomacy,3,0.0,1,2,1,7,3,0,0,0,,0,0,,,False,False,False,0.0,0.0
+33,Switzerland rejects stricter interpretation of its neutrality,election,political,3,0.2,1,3,1,3,1,0,0,0,,0,0,,,False,False,False,0.0,0.0
+34,Giant pandas Ping Ping and Fu Shuang touch down in the US under new loan deal,diplomatic_visit,diplomacy,3,1.3,1,2,1,6,6,0,0,0,,0,0,,,False,False,False,0.0,0.0
+40,"South Korea, Ukraine relations sour over North Korean POW transfer",agreement,diplomacy,3,0.7,1,2,1,5,4,1,0,0,,0,0,,,False,False,False,0.0,0.0
+43,Mexico's Pacific coast braces for Hurricane Polo,unknown,unknown,3,0.5,1,2,1,6,5,0,0,0,,0,0,,,False,False,False,0.0,0.0
+44,168 hours on the dance floor: Nigerian dancer chases Guinness World Record,unknown,unknown,3,1.0,1,2,1,6,2,0,0,0,,0,0,,,False,False,False,0.0,0.0
+45,"US to grant sanctions waiver for flights between Iran and Iraq’s Najaf, source says",sanctions,economic,3,0.2,1,2,1,8,4,0,1,1,,0,0,,,False,False,False,0.0,0.0
+47,"French far-right’s Bardella denies alleged antisemitic comments, files defamation lawsuit",unknown,unknown,3,0.7,1,3,1,12,0,0,0,0,,0,0,,,False,False,False,0.0,0.0
+48,UAE confirms Netanyahu visit to Abu Dhabi,diplomatic_visit,diplomacy,3,1.1,1,2,1,10,4,0,0,0,,0,0,,,False,False,False,0.0,0.0
+71,‘Truly historic’: Morocco’s king appoints first woman prime minister,appointment,political,3,0.4,1,2,1,7,3,0,0,0,,0,0,,,False,False,False,0.0,0.0
+74,‘New path’: UK’s Burnham promises huge expansion of public services,policy_change,political,3,0.7,1,2,1,6,3,0,0,0,,0,0,,,False,False,False,0.0,0.0
+79,"Somali pirates killed five crew members on hijacked tanker, officials say",unknown,unknown,3,0.2,1,3,1,6,4,0,0,0,,0,0,,,False,False,False,0.0,0.0
+90,MI5 warns UK academics to cut ties with Chinese group over alleged spying,security_incident,security,3,1.0,1,2,1,7,4,0,0,0,,0,0,,,False,False,False,0.0,0.0
+98,Trump set to announce $200bn in energy investments from South Korea,unknown,unknown,3,0.7,1,2,1,7,4,0,0,0,,0,0,,,False,False,False,0.0,0.0
+105,Renee Good: Family of US woman killed by ICE agent sues Trump officials,unknown,unknown,3,0.3,1,3,1,7,3,0,0,0,,0,0,,,False,False,False,0.0,0.0
+109,"Row between Ukraine, South Korea mounts over North Korean POWs",warning,security,3,0.1,1,3,1,5,5,0,0,0,,0,0,,,False,False,False,0.0,0.0
+116,Indian artist takes ‘deleted voter’ song to Cockroach protest,election,political,3,0.3,1,2,1,7,2,0,0,0,,0,0,,,False,False,False,0.0,0.0
+137,Samoa PM apologises after Nazi salute video emerges,unknown,unknown,3,1.0,2,3,1,8,2,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.0
+151,"Herzog, 'lutto per uomini, donne, bambini, neonati, anziani, caduti il 7 ottobre'",unknown,unknown,3,1.7,2,2,1,3,4,0,0,0,0.0,1,0,1.0,,False,False,False,1.0,0.0
+156,The European Union and Moldova reiterate their strong partnership and announce the disbursement of €157 million under Gr,negotiation,diplomacy,3,0.7,1,3,1,5,3,0,0,0,,0,0,,,False,False,False,0.0,0.0
+167,Mueren dos personas tras un incendio en un buque comercial en aguas del mar Negro frente a Rumanía,unknown,unknown,3,1.7,2,2,1,2,4,0,0,0,0.0,1,0,0.0,,False,False,False,1.0,0.0
+171,"‘There will be no Hamas rule in Gaza,’ Netanyahu vows at October 7 memorial",significant_statement,diplomacy,3,0.7,2,2,1,6,4,0,0,0,0.0,1,0,1.0,,False,False,False,0.0,0.67
+178,President Trump and Republicans Are Delivering Real Results for Nebraska,diplomatic_visit,diplomacy,3,0.4,1,3,1,27,9,0,0,1,0.0,1,0,0.0,,False,False,False,0.0,0.33
+179,"France, Germany call for new weapon allowing ‘immediate cut off’ of China from EU market",negotiation,diplomacy,3,0.8,2,2,1,9,4,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.0
+194,Two dead after ship sinks off Romania following fire,unknown,unknown,3,0.3,1,2,1,3,2,0,0,0,,0,0,,,False,False,False,0.0,0.67
+195,US seeks to revoke citizenship of two China-born men convicted in Beijing-linked cases,security_incident,security,3,0.2,2,3,1,9,4,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.33
+206,"Spotlight. Nigeria, dentro la guerra al terrorismo jihadista",military_action,military,3,2.2,2,2,2,8,3,0,0,0,0.0,1,0,1.0,,False,False,False,0.33,0.67
+220,8 public officers in Singapore referred to police after property review,unknown,unknown,3,0.1,1,3,1,8,3,0,0,0,,0,0,,,False,False,False,0.0,0.33
+222,Police clash with Kosovo protesters over bid to curb Hague war crimes court,unknown,unknown,3,1.3,2,2,1,5,1,0,0,0,0.0,1,0,1.0,,False,False,False,0.0,0.67
+223,Lithuania takes 1st step to lift nuclear weapons ban amid Russian threat,policy_change,political,3,0.4,1,2,1,5,2,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.67
+236,Anduril launches new shipyard to manufacture components for Virginia-class subs,unknown,unknown,3,0.1,1,3,1,16,11,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.33
+249,Tuareg rebels withdraw from strategic town of Kidal in northern Mali,military_action,military,3,0.8,2,3,1,12,5,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.33
+250,Macron slams Russia’s ‘irresponsible’ strikes on Ukraine’s civilian infrastructure,military_action,military,3,1.2,1,3,1,6,5,0,0,0,,0,0,,,False,False,False,0.0,0.33
+251,Cornell names Sally Yates to review university’s response to rape case,unknown,unknown,3,1.8,2,2,1,6,1,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.67
+253,"Amid protests, Kosovo’s political deadlock raises prospect of new elections",election,political,3,0.6,2,2,1,3,1,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.67
+260,Oman evacuates injured crew from attacked tanker in Strait of Hormuz,military_action,military,3,1.1,1,2,1,6,4,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.67
+261,"China’s economy to slow as global growth stays solid, US think tank report says",significant_statement,diplomacy,3,0.2,1,2,1,5,3,0,0,0,,0,0,,,False,False,False,0.0,0.67
+266,Children brave snipers and mortars to go to school near Yemen front line,unknown,unknown,3,1.5,1,3,1,5,1,0,0,0,1.0,1,0,1.0,,False,False,False,0.0,0.33
+269,"Bolivia, dalla Caf 224 milioni di dollari per la rete stradale",unknown,unknown,3,0.2,1,2,1,4,4,0,0,0,,0,0,,,False,False,False,1.0,0.0
+285,Sri Lanka's ex-first lady arrested over alleged misuse of children's hospital donations,unknown,unknown,3,1.1,2,3,1,7,2,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.0
+287,Commission adopts proposal to accelerate standards development and improve EU competitiveness,unknown,unknown,3,2.4,2,3,1,3,1,0,0,0,0.0,1,0,1.0,,False,False,False,0.0,0.33
+292,Ultra-Orthodox rabbi’s anti-Zionist remarks stir Israel election row,election,political,3,2.0,1,2,1,8,1,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.67
+298,"Many Nepalis swept away in the floods aren't officially dead, leaving families in limbo",unknown,unknown,3,1.1,1,3,1,6,3,0,1,1,,0,0,,,False,False,False,0.0,0.33
+301,Pro-Palestine university groups march in London on October 7 anniversary,unknown,unknown,3,0.3,1,2,1,7,2,0,0,0,,0,0,,,False,False,False,0.0,0.67
+306,China's Golden Week reveals cautious consumer spending despite travel surge,diplomatic_visit,diplomacy,3,1.9,2,2,1,6,2,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.0
+315,CAS to hear Senegal appeal over AFCON title awarded to Morocco,unknown,unknown,3,2.0,2,2,1,10,4,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.0
+320,Elon Musk hits out at ‘certain oligarchs’ for blocking Starlink in India,unknown,unknown,3,1.5,2,2,1,11,2,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.0
+322,"Russia carried out sabotage against Danish defense firms, intelligence says",significant_statement,diplomacy,3,0.8,1,2,1,7,5,0,0,0,0.0,1,0,1.0,,False,False,False,0.0,0.67
+327,"Security Council, 10235th Meeting (AM) Sudan",sanctions,economic,3,1.9,2,3,1,6,3,0,0,0,0.0,1,0,1.0,,False,False,False,0.0,0.33
+330,"UK, Germany to launch partnership to counter cyberattacks as Burnham visits Berlin",security_incident,security,3,0.1,1,2,1,12,6,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.67
+335,New York Mayor Mamdani under fire for attending October 7 vigil,significant_statement,diplomacy,3,0.8,1,2,1,6,2,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.67
+337,"Search warrants for former prince Andrew's homes were unlawful, UK court rules",unknown,unknown,3,0.1,1,3,1,11,5,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.0
+342,"Muore Margaret Hamilton, creò software che permise l'allunaggio dell'Apollo 11",unknown,unknown,3,0.5,1,3,3,5,0,0,0,0,,0,0,,,False,False,False,0.67,0.0
+350,Israel opens first-ever pavilion at Morocco defence show,unknown,unknown,3,1.3,1,3,1,7,2,0,0,0,,0,0,,,False,False,False,0.0,0.33
+359,Isaías: el primer huracán de la temporada en el Atlántico se fortalece y pone en alerta al golfo de México,unknown,unknown,3,0.3,1,2,1,6,7,0,0,0,,0,0,,,False,False,False,1.0,0.0
+365,Taxation: Council updates the EU list of non-cooperative jurisdictions for tax purposes,sanctions,economic,3,0.2,1,3,2,14,14,0,0,0,0.0,1,0,1.0,,False,False,False,0.33,0.0
+367,"€5 million theft at Marchesi Antinori, 30,000 bottles of fine wine stolen",unknown,unknown,3,0.5,1,3,1,21,8,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.0
+368,"Founder of Rybar, Russian war propaganda channel, detained in Montenegro",unknown,unknown,3,0.3,1,2,1,8,3,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.67
+376,"Ukraine pushes Russia back in Donetsk as military, civilian casualties soar",significant_statement,diplomacy,3,1.1,1,3,1,6,4,0,0,0,,0,0,,,False,False,False,0.0,0.33
+377,Press remarks by Commissioner Šefčovič at the second meeting of the EU-China Trade and Investment Consultations,bilateral_meeting,diplomacy,3,0.9,1,2,1,13,2,0,0,0,,0,0,,,False,False,False,0.0,0.0
+382,"Man City charges: How Premier League reacted – United, Arsenal, Liverpool",unknown,unknown,3,1.2,1,2,1,7,3,0,0,0,,0,0,,,False,False,False,0.0,0.33
+401,"Trump: ""È ora di rinominare un oceano, l'Atlantico o il Pacifico si potrebbero chiamare Trump Ocean""",unknown,unknown,3,0.3,1,3,2,4,7,0,0,0,,0,0,,,False,False,False,1.0,0.0
+404,UN aid operation underway in Nepal following fresh floods,unknown,unknown,3,1.8,2,3,1,6,1,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.33
+410,Poland reports arrests of 2 Turkish citizens in Germany in connection with Starlink station fire last month,significant_statement,diplomacy,3,0.9,1,3,1,8,5,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.0
+415,"Incidente sulle montagne russe in Georgia, un morto e diversi feriti",unknown,unknown,3,0.6,1,3,2,3,5,0,0,0,0.0,1,0,0.0,,False,False,False,1.0,0.0
+422,Ungheria adotta prima legge che elimina disposizioni anti-Lgbt+ di Orbán,unknown,unknown,3,0.2,1,3,1,10,4,0,0,0,0.0,1,0,0.0,,False,False,False,1.0,0.0
+429,Huracanes en México: Simón y Rachel dejan al menos dos muertos y 10 desaparecidos,unknown,unknown,3,1.9,2,3,1,7,7,0,0,0,0.0,1,0,0.0,,False,False,False,1.0,0.0
+430,Dos estadounidenses ganan el Nobel de Economía por su innovador modelo que ayuda a gobiernos y bancos centrales de todo ,unknown,unknown,3,1.1,1,3,2,10,3,0,0,0,1.0,1,0,0.0,,False,False,False,0.67,0.0
+435,‘My son was killed’ France faces backlash over proposed police firearms law,warning,security,3,0.2,1,3,1,4,1,0,0,0,0.0,1,0,1.0,,False,False,False,0.0,0.33
+445,Anduril unveils Steelfin interceptor as cheaper option to PAC-3 missiles,unknown,unknown,3,1.7,1,3,1,10,3,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.33
+446,"Usa, blitz del Dipartimento Sicurezza interna nella casa della deputata dem Ilhan Omar",unknown,unknown,3,0.3,2,3,2,9,5,0,0,0,0.0,1,0,0.0,,False,False,False,1.0,0.0
+450,France seizes tanker suspected of belonging to Russia’s shadow fleet,sanctions,economic,3,0.7,1,3,1,11,9,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.33
+457,China sentences 3 more Myanmar crime bosses to death in scam centre crackdown,unknown,unknown,3,0.7,2,3,1,10,4,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.33
+471,Man dies after fall from Six Flags rollercoaster in Georgia,unknown,unknown,3,0.5,1,2,1,2,2,0,0,0,,0,0,,,False,False,False,0.0,0.0
+472,Atletico Madrid beat Manchester United 2-0 as winless run continues,unknown,unknown,3,0.0,1,2,1,13,4,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.0
+476,Chile: fenómeno de El Niño extiende temporada de nevadas y favorece al gremio turístico,unknown,unknown,3,0.1,2,3,1,4,4,0,0,0,0.0,1,0,0.0,,False,False,False,1.0,0.0
+486,Moody's: 'La guerra in Iran costa a ogni famiglia Usa una media di 2.000 dollari',unknown,unknown,3,0.1,1,3,2,4,2,0,0,0,0.0,1,0,0.0,,False,False,False,0.67,0.33
+489,Trump Protester punched at Trump rally as they’re mocked by the president,unknown,unknown,3,2.4,2,3,1,6,2,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.33
+501,"Bukele plantea la ""libertad condicional"" a cerca del 50% de presos acusados de colaborar con pandillas en El Salvador",unknown,unknown,3,2.0,2,3,2,6,3,0,0,0,0.0,1,0,1.0,,False,False,False,1.0,0.0
+502,"Commission disburses €2.86 billion to Ukraine for drones, missiles and urgent battlefield needs",unknown,unknown,3,2.1,2,3,1,6,2,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.33
+504,En imágenes: la impresionante crecida en las cataratas del Iguazú,unknown,unknown,3,1.5,2,2,1,2,5,0,0,0,0.0,1,0,0.0,,False,False,False,1.0,0.0
+509,UK sanctions Dutch businessman exposed by Kyiv Independent for shipping EU machinery to Russian missile suppliers,sanctions,economic,3,1.5,1,2,1,12,6,0,0,0,,0,0,,,False,False,False,0.0,0.67
+511,Colombia opens embassy in Jerusalem and restores free trade with Israel,unknown,unknown,3,0.2,1,2,1,8,6,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.33
+513,"Los grupos palestinos Al Fatá, Hamás, Yihad Islámica y el FPLP se reunirán en El Cairo tras el aplazamiento electoral",bilateral_meeting,diplomacy,3,1.2,2,3,2,13,8,0,0,0,1.0,1,0,1.0,,False,False,False,0.33,0.33
+516,Burnham says he wants to 'repair bridges' between Ukraine and US,bilateral_meeting,diplomacy,3,0.2,1,2,1,5,4,0,1,1,,0,0,,,False,False,False,0.0,0.67
+517,Questions and answers on the proposal for amendment to the EU Methane Regulation,policy_change,political,3,0.7,1,2,1,5,2,0,0,0,,0,0,,,False,False,False,0.0,0.33
+524,"Operation Vivaldi's 'Fourth Season' — Ukraine retakes another 101 square kilometers on Lyman front, Biletskyi says",significant_statement,diplomacy,3,0.3,1,2,1,15,7,0,0,1,0.0,1,0,0.0,,False,False,False,0.0,0.33
+540,Real Madrid’s Vinicius banned for Clasico after hair-pull red card,policy_change,political,3,0.8,2,2,1,11,2,0,0,0,0.0,1,0,1.0,,False,False,False,0.0,0.33
+541,"Poverty Remains Greatest Global Challenge as 2030 Deadline Looms, Second Committee Hears",significant_statement,diplomacy,3,1.4,2,3,1,8,3,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.33
+547,Mexican court closes case against official over 2023 detention centre fire,unknown,unknown,3,0.1,1,2,1,4,2,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.67
+551,'Usa hanno proposto ai paesi Ue lo sblocco di alcuni asset russi',unknown,unknown,3,2.1,1,3,1,7,5,0,0,0,0.0,1,0,0.0,,False,False,False,1.0,0.0
+553,Presidential Message on the Birthday of the United States Navy,unknown,unknown,3,1.1,1,2,1,26,8,0,0,0,,0,0,,,False,False,False,0.0,0.33
+572,"Steady progress on the 'One Europe, One Market' Roadmap",unknown,unknown,3,0.2,1,3,1,2,2,0,0,0,,0,0,,,False,False,False,0.0,0.0
+573,Philippines rejects China’s calls for direct contact amid ‘miscalculation’ warnings,unknown,unknown,3,3.5,2,2,1,5,5,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.33
+577,Watch: Harry and Meghan at first joint engagement since UK return,unknown,unknown,3,1.8,1,3,1,8,4,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.33
+584,El capitán de un buque en aguas territoriales rumanas en el mar Negro alerta de un ataque con dron,unknown,unknown,3,0.6,1,2,1,9,6,0,0,0,0.0,1,0,0.0,,False,False,False,1.0,0.0
+591,"Tensions with teachers, pupils and Turkiye: Inside Azerbaijan’s hijab row",policy_change,political,3,2.0,2,3,1,4,4,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.33
+600,Somalia says it will hold elections in 2027,election,political,3,0.1,1,2,1,2,2,0,0,0,0.0,1,0,1.0,,False,False,False,0.0,0.67
+603,Trump administration sues California over noncitizens on voter rolls,threat,security,3,0.9,1,2,1,5,2,0,0,0,,0,0,,,False,False,False,0.0,0.67
+605,"Bus hits train stopped on French side of  Channel Tunnel, with 19 injured",unknown,unknown,3,0.2,2,3,1,2,3,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.0
+607,Press release - Metsola: We cannot agree on Europe's ambitions and cut the means to achieve them,agreement,diplomacy,3,1.0,2,3,1,13,3,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.0
+611,Police arrest US teen in alleged Illinois Hindu temple mass shooting plot,security_incident,security,3,0.8,2,3,1,8,4,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.0
+612,"Cheap weapons, growing fears: Inside the Taliban’s drone campaign against Pakistan",deployment,military,3,1.8,1,2,1,6,5,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.67
+614,South Korea-US alliance losing ‘trust’ amid widening cracks in ties,unknown,unknown,3,1.9,1,2,1,8,5,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.67
+617,Carney says US trying to break Canada amid vote for Alberta independence referendum,election,political,3,2.1,1,2,1,6,3,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.67
+622,"Un terremoto de magnitud 6,9 sacude la península rusa de Kamchatka",unknown,unknown,3,0.2,1,3,2,5,5,0,0,0,0.0,1,0,0.0,,False,False,False,1.0,0.0
+631,Nobel Peace Prize: the message behind Navi Pillay’s win,unknown,unknown,3,1.9,1,2,1,4,1,0,0,0,,0,0,,,False,False,False,0.0,0.67
+632,Alone in Gaza: Genocide leaves Palestinian man without family or a home,ceasefire,security,3,2.2,2,2,1,6,3,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.33
+640,Tesla unveils car that can drive upside down and jump through the air,unknown,unknown,3,1.6,1,3,1,5,1,0,0,0,,0,0,,,False,False,False,0.0,0.33
+642,"First Committee General Debate Ends with Calls for Nuclear Disarmament, Human Oversight of Military AI",warning,security,3,1.4,1,3,1,4,0,0,0,0,1.0,1,0,1.0,,False,False,False,0.0,0.33
+646,"Paraguay’s tech minister defies Beijing sanctions, says Taiwan ties ‘not up for negotiation’",sanctions,economic,3,3.5,2,2,1,10,6,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.67
+647,Israel ministers probed in Rome over assault on Gaza Flotilla,unknown,unknown,3,0.6,2,3,1,14,4,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.33
+657,Three men jailed for 158 years each for murdering Australian and US surfers in Mexico,security_incident,security,3,0.1,1,3,1,8,3,0,0,0,,0,0,,,False,False,False,0.0,0.0
+664,‘Standing up for democracy’: Atlanta ‘No Kings’ rally draws Trump critics ahead of midterms,unknown,unknown,3,1.4,1,3,1,4,3,0,0,0,,0,0,,,False,False,False,0.0,0.33
+668,"Massive Ukrainian drone attack hit oil facility, bridge, and data centers in St. Petersburg",military_action,military,3,0.4,1,3,1,8,5,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.33
+674,"Colombia, rimosse dal Museo Nazionale opere su Lgbt, femminismo e accordo con le Farc",unknown,unknown,3,1.2,1,3,2,5,8,0,0,0,,0,0,,,False,False,False,1.0,0.0
+676,"Lithuanians take shelter, Nato jets scramble as suspected drone explodes",unknown,unknown,3,0.1,1,3,1,9,4,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.33
+691,Venezuela opposition renews support for Maria Corina Machado as leader,election,political,3,1.0,1,2,1,4,1,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.67
+693,Mali’s military and armed groups committing abuses against civilians: HRW,military_action,military,3,1.6,2,2,1,4,1,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.67
+696,"Deputata austrialiana investita da auto, 'attacco mirato'",unknown,unknown,3,0.7,2,2,1,2,0,0,0,0,0.0,1,0,0.0,,False,False,False,1.0,0.0
+714,US airman dies as daredevil descent goes wrong before Texas college football game,unknown,unknown,3,0.9,1,2,1,6,2,0,0,0,,0,0,,,False,False,False,0.0,0.67
+721,"Department of War and BAE Systems Sign Framework Agreement to Surge Counter-Drone Production to 25,000 Precision Interce",agreement,diplomacy,3,0.2,1,3,1,19,7,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.33
+724,US Supreme Court denies bid by accused 9/11 mastermind to revive plea deal,unknown,unknown,3,0.3,1,2,1,9,0,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.67
+732,"Ronaldo banned for 30 days, fined $285 by Portugal over spat with Jesus",policy_change,political,3,0.6,2,3,2,5,1,0,0,0,0.0,1,0,0.0,,False,False,False,0.33,0.0
+734,El líder de una secta condenado por ordenar a sus seguidores dejar morir de hambre a casi 200 niños,unknown,unknown,3,1.9,2,3,1,7,1,0,0,0,1.0,1,0,1.0,,False,False,False,1.0,0.0
+747,Press release - Opening: 19-22 October plenary session,summit,diplomacy,3,1.8,2,2,1,8,2,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.0
+748,"Myanmar, le rare immagini di Aung San Suu Kyi detenuta: riceve libri e lettere da re Carlo III",unknown,unknown,3,0.6,1,3,2,6,3,0,0,0,0.0,1,0,0.0,,False,False,False,0.33,0.33
+754,"President Trump Delivers Historic Wins for Kansas Workers, Families, Farmers, and Rural Communities",unknown,unknown,3,0.7,1,2,1,35,9,0,0,1,,0,0,,,False,False,False,0.0,0.67
+759,‘Tinubu Must Go’: Nigeria's northern protests test the limits of political dissent,election,political,3,2.0,2,2,1,3,1,0,0,0,0.0,1,0,1.0,,False,False,False,0.0,0.67
+772,"US, China should learn from Cold War-era arms control to tackle AI risks: ex-US official",warning,security,3,1.3,1,2,1,8,7,0,0,0,1.0,1,0,1.0,,False,False,False,0.0,0.67
+773,US regulators certify Boeing 737 Max 10 after years of delay,unknown,unknown,3,0.2,2,2,2,7,2,0,0,0,0.0,1,0,1.0,,False,False,False,0.33,0.0
+775,Zelensky confirms ballistic missile early warning systems operational after skipped alerts,warning,security,3,0.1,1,2,1,5,2,0,0,0,,0,0,,,False,False,False,0.0,0.67
+779,AI on track to ‘crowd out’ human decision-making in warfare,warning,security,3,1.4,1,3,1,6,1,0,0,0,0.0,1,0,1.0,,False,False,False,0.0,0.33
+784,The Gambia to pay reparations to ex-dictator’s victims from sale of US mansion,unknown,unknown,3,0.4,2,3,1,7,3,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.33
+792,Portugal housing protests continue after police clear camps,unknown,unknown,3,0.6,1,3,1,3,3,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.0
+795,"Security Situation in Central African Republic Fragile, Security Council Hears, amid Calls to Adequately Fund Peacekeepi",warning,security,3,0.8,1,3,1,5,4,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.33
+797,"In Japan, Takaichi’s first-year leadership style threatens hold on power",threat,security,3,1.2,2,2,1,7,1,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.67
+798,Israeli soldiers mock Lebanese home they rigged with explosives,threat,security,3,1.6,2,2,1,6,5,0,0,0,0.0,1,0,1.0,,False,False,False,0.0,0.67
+825,Cuba accuses US of threatening countries ahead of UN embargo vote,economic_action,economic,3,1.1,1,2,1,6,5,0,0,0,,0,0,,,False,False,False,0.0,0.67
+833,Ex-prosecutor charged with treason in Mexico over US drug raid,security_incident,security,3,1.0,2,3,1,4,2,0,0,0,0.0,1,0,1.0,,False,False,False,0.0,0.33
+834,Unmasking Service Providers Facilitating Iran’s Shadow Fleet Operations,sanctions,economic,3,0.9,2,2,1,10,9,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.67
+835,Canadian publisher drops author Orelien after confirming he used AI in debut novel,significant_statement,diplomacy,3,0.4,2,3,1,6,1,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.0
+845,"Ahead of Communist Party plenum, Xi Jinping warns that China faces a ‘new Long March’",warning,security,3,0.1,1,2,1,8,1,0,0,0,0.0,1,0,1.0,,False,False,False,0.0,0.67
+849,Tehran displays mock installation of Trump behind bars,unknown,unknown,3,1.8,2,2,1,4,5,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.67
+850,Cinco claves de la crisis cibernética de PHP que encendió alarmas a nivel global,security_incident,security,3,0.8,1,3,2,4,1,0,0,0,0.0,1,0,0.0,,False,False,False,0.67,0.0
+852,Interior ministry identifying truckers blocking roads says Urso,significant_statement,diplomacy,3,1.1,1,2,1,16,3,0,0,0,,0,0,,,False,False,False,0.0,0.0
+858,China’s offshore tax crackdown could inadvertently fuel a digital dollar boom,unknown,unknown,3,1.9,2,2,1,3,1,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.67
+865,Two European women held captive for more than a year in Niger freed in Libya,unknown,unknown,3,0.5,1,2,1,7,4,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.67
+866,"Iowa Wins Big Under President Trump: Lower Taxes, New Investment, and Stronger Rural Communities",unknown,unknown,3,1.1,2,2,1,28,4,0,1,1,0.0,1,0,1.0,,False,False,False,0.0,0.67
+868,‘Ability to strike back’: Denmark commits to long-range missile orders,military_action,military,3,0.1,1,3,1,16,10,0,0,0,,0,0,,,False,False,False,0.0,0.33
+873,"Emmy-winning US actor Tom Skerritt, known for ‘Top Gun’ and ‘Picket Fences’, dies at 93",unknown,unknown,3,0.5,2,3,1,8,3,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.33
+900,Speech by President von der Leyen to the Hungarian National Assembly on the occasion of the 70th anniversary of the Hung,bilateral_meeting,diplomacy,3,1.1,1,3,1,22,10,0,0,0,,0,0,,,False,False,False,0.0,0.0
+902,Varios muertos y heridos en un tiroteo en una iglesia en la gobernación de Karak (Jordania),unknown,unknown,3,0.3,1,3,1,1,4,0,0,0,0.0,1,0,0.0,,False,False,False,1.0,0.0
+910,Oil spill washes up on UAE beaches after tanker strike,military_action,military,3,0.6,2,3,1,3,1,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.33
+918,Fact Sheet: President Donald J. Trump Further Modifies Canadian Products Subject to Tariffs Under Section 338,election,political,3,0.2,2,3,1,13,3,0,0,0,0.0,1,0,1.0,,False,False,False,0.0,0.0
+927,"Media, 'rapporto denuncia trattenute su stipendi dei medici cubani in Italia'",unknown,unknown,3,0.9,1,2,1,2,3,0,0,0,,0,0,,,False,False,False,1.0,0.0
+932,"Starshield operations restored to speeds of more than 400 km/h, Ukraine's Defense Ministry says",significant_statement,diplomacy,3,0.6,1,2,1,6,2,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.67
+938,Turkey's new deal on Mediterranean maritime boundaries with Libya is exacerbating issues with Greece and the EU,unknown,unknown,3,1.3,1,2,1,7,4,0,0,0,,0,0,,,False,False,False,0.0,0.67
+939,"Scontri alla fine del corteo di Parigi, polizia con lacrimogeni e idranti",unknown,unknown,3,0.1,1,2,1,1,3,0,0,0,,0,0,,,False,False,False,1.0,0.0
+951,Violenti scontri nel centro di Tirana fra polizia e manifestanti,unknown,unknown,3,1.0,1,3,2,5,3,0,0,0,,0,0,,,False,False,False,1.0,0.0
+955,Le Pen leads polls with up to 38% six months before election,significant_statement,diplomacy,3,0.3,1,2,1,12,3,0,0,0,,0,0,,,False,False,False,0.0,0.0
+963,F1: Antonelli two points from title after winning United States Grand Prix,unknown,unknown,3,0.4,1,3,2,15,5,0,0,0,,0,0,,,False,False,False,0.33,0.0
+964,Rapper Nicki Minaj joins Trump onstage at Michigan rally,unknown,unknown,3,0.6,1,3,2,6,1,0,0,0,0.0,1,0,0.0,,False,False,False,0.33,0.0
+969,US Marine indictment in Okinawa murder trial renews anti-base movement,security_incident,security,3,1.1,1,3,1,9,4,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.33
+971,Jordan arrests three suspects in deadly church attack,security_incident,security,3,0.2,1,2,1,5,3,0,0,0,,0,0,,,False,False,False,0.0,0.0
+974,Semiautomatic grenade launcher and aim-assist for shooting down drones | Highlights from AUSA 2026,unknown,unknown,3,1.1,2,3,1,5,2,0,0,0,0.0,1,0,1.0,,False,False,False,0.0,0.33
+978,Ukraine: Investigators find Russia committed war crimes by targeting civilians,significant_statement,diplomacy,3,1.0,1,3,1,4,2,0,0,0,0.0,1,0,0.0,,False,False,False,0.0,0.33
+979,Helsing unveils interceptor missiles designed to chase Russia’s fast-flying Geran drones,military_action,military,3,0.8,1,3,1,19,8,0,0,0,1.0,1,0,1.0,,False,False,False,0.0,0.33
+980,"More than 60 Christians killed in Ethiopia 'massacre', church official says",military_action,military,3,0.6,1,3,1,6,1,0,0,0,,0,0,,,False,False,False,0.0,0.33
+982,Pope says happy to return to South America after trip confirmed,diplomatic_visit,diplomacy,3,0.1,1,2,1,23,16,0,0,0,,0,0,,,False,False,False,0.0,0.0
+989,Joint Statement on Famine in Sudan,warning,security,3,0.4,1,3,1,41,33,0,0,0,0.0,1,0,0.0,actor_diverse,False,False,False,0.0,0.33
+997,Trump cites 9/11 in urging Michigan voters to oppose Muslim Senate candidate El-Sayed,military_action,military,3,1.6,1,3,1,12,3,0,0,0,,0,0,,,False,False,False,0.0,0.0
+999,Macklemore opens ‘Free Palestine’ tour in Dublin,unknown,unknown,3,0.3,1,3,1,7,6,0,0,0,,0,0,,,False,False,False,0.0,0.33
+3,Nepal’s leader labels devastating flood a ‘warning to the world’,significant_statement,diplomacy,2,0.0,1,2,1,8,3,0,0,0,,0,0,,,False,False,False,0.0,0.0
+6,"Air Force, civilian staff dispute status of China Aerospace Studies Institute",significant_statement,diplomacy,2,1.0,1,2,1,27,3,0,0,0,,0,0,,,False,False,False,0.0,0.0
+7,Italy ministers agree to ban burqa and niqab in school and cap foreigners in class,policy_change,political,2,0.7,1,2,1,4,2,0,0,0,,0,0,,,False,False,False,0.0,0.0
+13,Navy launches Robotics and Autonomous Systems Warfighting Development Center,unknown,unknown,2,1.1,1,2,1,12,1,0,0,0,,0,0,,,False,False,False,0.0,0.0
+14,US F-35 fighters to debut in Indian multinational air exercise,unknown,unknown,2,0.3,1,2,1,30,17,0,0,0,,0,0,,,False,False,False,0.0,0.0
+15,US top court allows Trump to use controversial voter verification system,warning,security,2,0.1,1,2,1,2,1,0,0,0,,0,0,,,False,False,False,0.0,0.0
+17,EU to release US$7.5 billion linked to Ukraine military aid,arms_transfer,military,2,0.3,1,2,1,16,4,0,0,0,,0,0,,,False,False,False,0.0,0.0
+28,Students strike across Germany in protest against military service,unknown,unknown,2,1.0,1,2,1,3,2,0,0,0,,0,0,,,False,False,False,0.0,0.0
+29,South African police discover body of 10th woman near Johannesburg,unknown,unknown,2,0.0,1,2,1,2,1,0,0,0,,0,0,,,False,False,False,0.0,0.0
+35,Israel revokes Dutch diplomats’ status over sanctions on settlements,sanctions,economic,2,0.0,1,2,1,7,6,0,0,0,,0,0,,,False,False,False,0.0,0.0
+36,"3 people killed and 4 injured in shooting at Michigan strip club, police say",unknown,unknown,2,0.1,1,2,1,4,3,0,0,0,,0,0,,,False,False,False,0.0,0.0
+39,"‘Right now, it’s fine’: Trump brushes off questions about summit talk on Taiwan",summit,diplomacy,2,0.9,1,2,1,3,2,0,0,0,,0,0,,,False,False,False,0.0,0.0
+41,Thai man’s jet ski stunt fuels anger in ‘unequal’ Bangkok as poor hit hardest by floods,security_incident,security,2,0.1,1,2,1,3,1,0,0,0,,0,0,,,False,False,False,0.0,0.0
+42,Child among three killed off French coast in Channel crossing attempt,unknown,unknown,2,0.1,1,2,1,6,4,0,0,0,,0,0,,,False,False,False,0.0,0.0
+46,Trump announcing new Iowa steel plant the White House says will be biggest in US,significant_statement,diplomacy,2,0.1,1,2,1,4,2,0,0,0,,0,0,,,False,False,False,0.0,0.0
+50,Remains of dozens of suspected kidnap victims found in Nigerian forests,unknown,unknown,2,0.5,1,2,1,3,2,0,0,0,,0,0,,,False,False,False,0.0,0.0
+51,SpaceX’s Starship rocket reaches orbit for first time,unknown,unknown,2,0.4,1,2,1,5,2,0,0,0,,0,0,,,False,False,False,0.0,0.0
+52,Plan for controversial Sydney data centre scrapped after push-back,unknown,unknown,2,0.5,1,2,1,5,2,0,0,0,,0,0,,,False,False,False,0.0,0.0
+55,"New York Times executive fatally shot by elderly in-laws, police say",security_incident,security,2,0.0,1,2,1,5,3,0,0,0,,0,0,,,False,False,False,0.0,0.0
+59,Argentina threatens legal action against UK over Falkland Islands oil exploration,threat,security,2,0.2,1,2,1,6,4,0,0,0,,0,0,,,False,False,False,0.0,0.0
+61,Rights group accuses Vietnam of abducting Australian and Norwegian activists,unknown,unknown,2,0.3,1,2,1,5,4,0,0,0,,0,0,,,False,False,False,0.0,0.0
+62,"Israeli settlers attack Jalud village in occupied West Bank, torch homes",military_action,military,2,0.2,1,2,1,5,2,0,0,0,,0,0,,,False,False,False,0.0,0.0
+63,Man charged over AI image of crocodile at Singapore reservoir that led to search,unknown,unknown,2,0.1,1,2,1,4,2,0,0,0,,0,0,,,False,False,False,0.0,0.0
+70,"US, UK test SM-6, other missiles on SINKEX target frigate",military_exercise,military,2,0.8,1,2,1,21,9,0,0,0,,0,0,,,False,False,False,0.0,0.0
+72,Eiffel Tower chief to quit after female staff replaced by men during religious visit,resignation,political,2,0.0,1,2,1,3,1,0,0,0,,0,0,,,False,False,False,0.0,0.0
+73,Pentagon awards Raytheon up to $20.7 billion to nearly double AMRAAM production,unknown,unknown,2,0.0,1,2,1,18,5,0,0,0,,0,0,,,False,False,False,0.0,0.0
+75,US ban on Canadian alcohol and dairy comes into effect as trade war drags on,policy_change,political,2,0.7,1,2,1,3,2,0,0,0,,0,0,,,False,False,False,0.0,0.0
+77,Indonesian prison chief suspended over secret VIP compound for inmates,unknown,unknown,2,0.7,1,2,1,6,2,0,0,0,,0,0,,,False,False,False,0.0,0.0
+80,'Backpack' declared Alaska's Fat Bear Week winner,significant_statement,diplomacy,2,0.1,1,2,1,2,2,0,0,0,,0,0,,,False,False,False,0.0,0.0
+81,"Knife-wielding schoolboy kills teacher, injures two in Slovakia",unknown,unknown,2,0.6,1,2,1,8,4,0,0,0,,0,0,,,False,False,False,0.0,0.0
+83,Former American Idol contestant and pastor found guilty of murdering wife,unknown,unknown,2,0.6,1,2,1,5,1,0,0,0,,0,0,,,False,False,False,0.0,0.0
+87,China expands overseas military presence with new Laos air force centre,unknown,unknown,2,0.9,1,2,1,6,3,0,0,0,,0,0,,,False,False,False,0.0,0.0
+89,UK-France deal targeting migrants crossing English Channel is scrapped,unknown,unknown,2,0.0,1,2,1,5,3,0,0,0,,0,0,,,False,False,False,0.0,0.0
+91,"White House names nominees for SPACECOM, Navy No. 2",appointment,political,2,0.1,1,2,1,33,6,0,0,0,,0,0,,,False,False,False,0.0,0.0
+93,US Army selects five companies for PrSM development,unknown,unknown,2,0.1,1,2,1,13,2,0,0,0,,0,0,,,False,False,False,0.0,0.0
+95,Six smugglers jailed for manslaughter over worst Channel small boats disaster,unknown,unknown,2,0.1,1,2,1,3,1,0,0,0,,0,0,,,False,False,False,0.0,0.0
+96,"Boom News founder Tang Ho-wing, 1 other arrested by Hong Kong national security police",security_incident,security,2,0.8,1,2,1,5,1,0,0,0,,0,0,,,False,False,False,0.0,0.0
+102,Zimbabwe tycoon Wicknell Chivayo and wife killed in helicopter crash,unknown,unknown,2,0.2,1,2,1,3,2,0,0,0,,0,0,,,False,False,False,0.0,0.0
+104,US Supreme Court lets Trump resume deportations to third countries,agreement,diplomacy,2,1.6,1,2,1,5,1,0,0,0,,0,0,,,False,False,False,0.0,0.0
+106,Algeria introduces death penalty for arsonists after deadly wildfires,policy_change,political,2,0.0,1,2,1,2,2,0,0,0,,0,0,,,False,False,False,0.0,0.0
+107,Canada fast-tracking oil pipeline designed to diversify economy away from US,unknown,unknown,2,0.0,1,2,1,5,4,0,0,0,,0,0,,,False,False,False,0.0,0.0
+111,Trekkers helicoptered off mountains as more deadly landslides hit Nepal,unknown,unknown,2,1.3,1,2,1,1,1,0,0,0,,0,0,,,False,False,False,0.0,0.0
+117,US Navy awards RTX’s Raytheon $24.4B for SM-6 missiles amid stockpile concerns,unknown,unknown,2,0.7,1,2,1,8,1,0,0,0,,0,0,,,False,False,False,0.0,0.0
+120,"China backs Cuba, Beijing’s Panama threat, new UN chief: 7 Latin America relations reads",unknown,unknown,2,1.3,1,2,1,7,6,0,0,0,,0,0,,,False,False,False,0.0,0.0
+121,Polls open in Latvia against backdrop of perceived Russia threat,election,political,2,0.0,1,2,1,8,1,0,0,0,,0,0,,,False,False,False,0.0,0.0
+126,Trump ramps up pressure on US Republicans to end US clock switching,policy_change,political,2,0.2,1,2,1,7,2,0,0,0,,0,0,,,False,False,False,0.0,0.0
+127,Police bodycam shows Luigi Mangione arrest at Pennsylvania McDonald’s,security_incident,security,2,0.1,1,2,1,7,1,0,0,0,,0,0,,,False,False,False,0.0,0.0
+139,Ex-prince Andrew takes UK police to court to ‘quash’ Epstein affair search warrants,unknown,unknown,2,0.1,1,2,1,9,5,0,0,0,,0,0,,,False,False,False,0.0,0.0
+140,Manchester City charges: ‘Everyone knew’ – Marsch says relegation to follow,significant_statement,diplomacy,2,0.4,1,2,1,6,2,0,0,0,,0,0,,,False,False,False,0.0,0.0
+146,"El presidente de Cornell dice que la universidad ""debe hacer más"" tras la denuncia de violación en grupo en una fraterni",unknown,unknown,2,1.0,1,2,1,4,1,0,0,0,,0,0,,,False,False,False,1.0,0.0
+150,"Amid teen triumph and organisational chaos, Asian Games close in Japan",bilateral_meeting,diplomacy,2,1.0,1,2,1,8,4,0,0,0,,0,0,,,False,False,False,0.0,0.0
+152,Sudan: Driver killed in aerial attack on aid trucks in South Kordofan,military_action,military,2,0.8,1,2,1,3,2,0,0,0,,0,0,,,False,False,False,0.0,0.0
+153,"Dozens detained at a rally in Moscow held by Kremlin-friendly Communist Party, party says",significant_statement,diplomacy,2,0.2,1,2,1,5,1,0,0,0,,0,0,,,False,False,False,0.0,0.0
+157,El Pentágono retira sus bombarderos de la base británica de Fairford tras el presunto intento de atentado,military_action,military,2,0.4,1,2,1,5,4,0,0,0,,0,0,,,False,False,False,1.0,0.0
+158,Il Nicaragua ha deciso di ritirarsi dal Parlamento centroamericano,significant_statement,diplomacy,2,0.5,1,2,2,6,3,0,0,0,,0,0,,,False,False,False,0.5,0.0
+161,"Ft, 'l'Estonia sposta le truppe più vicino al confine con la Russia'",unknown,unknown,2,0.0,1,2,1,3,5,0,0,0,,0,0,,,False,False,False,1.0,0.0
+164,Laotian man freed from eSwatini jail 14 months after US third-country deportation,unknown,unknown,2,0.5,1,2,1,6,2,0,0,0,,0,0,,,False,False,False,0.0,0.5
+165,German intelligence chief warns of 'violent conflict with Russia',warning,security,2,0.1,1,2,1,5,2,0,0,0,,0,0,,,False,False,False,0.0,0.5
+166,Speech by President António Costa at the opening ceremony of the academic year of the College of Europe (Natolin campus),unknown,unknown,2,0.1,1,2,1,9,2,0,0,0,,0,0,,,False,False,False,0.0,0.0
+174,"Rabbia e voglia di riscatto, la serata da incubo dei lulistas",unknown,unknown,2,0.4,1,2,1,4,1,0,0,0,,0,0,,,False,False,False,1.0,0.0
+186,US to announce US$150 million for Alaska power lines as Vance visits battleground state,diplomatic_visit,diplomacy,2,0.1,1,2,1,11,2,0,0,0,,0,0,,,False,False,False,0.0,0.5
+200,Former American Idol singer Caleb Flynn sentenced to life in prison for wife’s murder,security_incident,security,2,0.2,1,2,1,6,2,0,0,0,,0,0,,,False,False,False,0.0,0.0
+201,New York declares statewide disaster emergency as measles cases rise,significant_statement,diplomacy,2,0.1,1,2,1,5,3,0,0,0,,0,0,,,False,False,False,0.0,0.0
+209,Afganistán cumple 25 años de la intervención de EEUU con un lustro de nuevo régimen talibán,unknown,unknown,2,0.6,1,2,2,7,5,0,0,0,,0,0,,,False,False,False,0.5,0.5
+213,Hundido un carguero en un ataque con drones frente a las costas de Bulgaria en el mar Negro,unknown,unknown,2,0.0,1,2,1,2,3,0,0,0,,0,0,,,False,False,False,1.0,0.0
+214,Russia's military spending masks a longer-term strategy for a prolonged war,unknown,unknown,2,0.8,1,2,1,4,3,0,0,0,,0,0,,,False,False,False,0.0,0.5
+216,Pakistan installs fishing nets at security outposts to block drone attacks,military_action,military,2,1.1,1,2,1,5,2,0,0,0,,0,0,,,False,False,False,0.0,0.5
+218,Iran says Hormuz to remain closed until US meets conditions,sanctions,economic,2,2.0,1,2,1,4,4,0,0,0,,0,0,,,False,False,False,0.0,0.5
+226,"Germania, arrestato per sospetto spionaggio l'ex capo dell'intelligence",unknown,unknown,2,0.1,1,2,1,3,2,0,0,0,,0,0,,,False,False,False,1.0,0.0
+228,Tennis: Sinner says his season is over because of knee injury,significant_statement,diplomacy,2,0.1,1,2,1,4,1,0,0,0,,0,0,,,False,False,False,0.0,0.0
+229,Lithuania says it would pay the cost if US establishes military base,significant_statement,diplomacy,2,0.1,1,2,1,11,8,0,0,0,,0,0,,,False,False,False,0.0,0.5
+230,Directo Latam y el ataque con cuchillo en una escuela de México,unknown,unknown,2,0.7,1,2,1,3,3,0,0,0,,0,0,,,False,False,False,1.0,0.0
+234,Southeast Asia’s energy chiefs meet against backdrop of Iran war,multilateral_meeting,diplomacy,2,0.3,1,2,1,4,2,0,0,0,,0,0,,,False,False,False,0.0,0.0
+235,Trump's deportation push sees LGBT migrants sent to hostile countries,unknown,unknown,2,0.2,1,2,1,6,1,0,0,0,,0,0,,,False,False,False,0.0,0.5
+238,Un guardia fronterizo moldavo herido por un proyectil ruso en un ataque en un paso con Ucrania,unknown,unknown,2,1.2,1,2,1,2,5,0,0,0,,0,0,,,False,False,False,1.0,0.0
+239,Northrop logs first flight for self-funded drone wingman,unknown,unknown,2,0.9,1,2,1,14,3,0,0,0,,0,0,,,False,False,False,0.0,0.0
+240,Francia realiza un ensayo de un nuevo misil balístico intercontinental sin ojiva nuclear,unknown,unknown,2,0.2,1,2,1,3,3,0,0,0,,0,0,,,False,False,False,1.0,0.0
+241,France's Macron observes test of new nuclear-capable missile without warhead,unknown,unknown,2,0.3,1,2,1,17,5,0,0,0,,0,0,,,False,False,False,0.0,0.0
+242,The price of doing business in Russia,military_action,military,2,0.1,1,2,1,5,6,0,0,0,,0,0,,,False,False,False,0.0,0.5
+245,FIFA chief Infantino’s ‘abuse of power’ questioned by Norway in complaints,unknown,unknown,2,0.0,1,2,1,5,1,0,0,0,,0,0,,,False,False,False,0.0,0.5
+246,"Poland to deploy Patriots near Ukrainian border, announces $26 billion civil defense plan",deployment,military,2,0.0,1,2,1,5,3,0,0,0,,0,0,,,False,False,False,0.0,0.5
+247,A simple guide to the US midterms,unknown,unknown,2,0.7,1,2,1,2,1,0,0,0,,0,0,,,False,False,False,0.0,0.5
+248,Catalan separatist leader Puigdemont set for Spain return after arrest warrant lifted,unknown,unknown,2,0.2,1,2,1,7,1,0,0,0,,0,0,,,False,False,False,0.0,0.0
+252,US firm gets $2.9bn sub deal after boss joins war study with Musk,unknown,unknown,2,0.2,1,2,1,3,1,0,0,0,,0,0,,,False,False,False,0.0,0.5
+257,Israel's mental health crisis in the wake of Oct. 7 attacks,military_action,military,2,1.6,1,2,1,3,1,0,0,0,,0,0,,,False,False,False,0.0,0.5
+259,"Sudan’s al-Burhan rejects talks, vows to retake all territory from RSF",negotiation,diplomacy,2,1.1,1,2,1,7,3,0,0,0,,0,0,,,False,False,False,0.0,0.5
+262,Libya’s parliament removes Speaker Saleh after 12 years as discontent grows,resignation,political,2,0.3,1,2,1,5,1,0,0,0,,0,0,,,False,False,False,0.0,0.5
+264,US arrests suspect in connection with Tumbler Ridge school shooting,security_incident,security,2,0.1,1,2,1,7,3,0,0,0,,0,0,,,False,False,False,0.0,0.0
+267,Finland orders halt to work on two Google data centres,unknown,unknown,2,0.5,1,2,1,2,1,0,0,0,,0,0,,,False,False,False,0.0,0.0
+268,"'We were naive' about Hamas, Israeli ex-hostage Shoshan Haran says",significant_statement,diplomacy,2,0.7,1,2,1,7,3,0,0,0,,0,0,,,False,False,False,0.0,0.5
+272,When streets become pharmacies: Booming illicit markets in Central Africa,unknown,unknown,2,0.9,1,2,1,3,2,0,0,0,,0,0,,,False,False,False,0.0,0.5
+273,"Politkovskaya 'predicted' Russia's turn under Putin, editor says on 20th anniversary of her death",significant_statement,diplomacy,2,0.0,1,2,1,5,3,0,0,0,,0,0,,,False,False,False,0.0,0.5
+274,Norway's 2027 budget includes almost $9 billion in new Ukraine support,unknown,unknown,2,0.0,1,2,1,5,2,0,0,0,,0,0,,,False,False,False,0.0,0.5
+276,Euro falls to 17-month low against the USD on French debt concerns,unknown,unknown,2,1.5,1,2,1,7,6,0,0,0,,0,0,,,False,False,False,0.0,0.0
+277,US seeks US$100 million bail each for Chinese-born couple in surrogacy child abuse case,unknown,unknown,2,0.5,1,2,1,7,4,0,0,0,,0,0,,,False,False,False,0.0,0.0
+278,'Machado pronta a negoziare direttamente con Delcy Rodriguez in Venezuela',unknown,unknown,2,0.8,1,2,2,4,2,0,0,0,,0,0,,,False,False,False,1.0,0.0
+279,Italy-India Task Force Meets to Combat Terrorism and Organized Crime,bilateral_meeting,diplomacy,2,0.0,1,2,1,12,3,0,0,0,,0,0,,,False,False,False,0.0,0.5
+284,"Armed individuals from Belarus threaten Latvian soldiers at border, followed by another breach",threat,security,2,0.6,1,2,1,6,3,0,0,0,,0,0,,,False,False,False,0.0,0.5
+286,South Sudan's road to elections remains uncertain,election,political,2,0.0,1,2,1,2,1,0,0,0,,0,0,,,False,False,False,0.0,0.5
+288,British adventurer back in UK after 28-year trek on foot around the world,unknown,unknown,2,0.7,1,2,1,7,5,0,0,0,,0,0,,,False,False,False,0.0,0.0
+290,Israelis demand accountability over 7 October failures three years after attacks,unknown,unknown,2,0.1,1,2,1,2,1,0,0,0,,0,0,,,False,False,False,0.0,0.5
+291,Erdogan raises Black Sea safety in call with Putin,bilateral_meeting,diplomacy,2,0.1,1,2,1,3,1,0,0,0,,0,0,,,False,False,False,0.0,0.5
+293,Canada suspends plans to expand assisted dying to people with mental illness,unknown,unknown,2,0.1,1,2,1,1,1,0,0,0,,0,0,,,False,False,False,0.0,0.0
+294,Former Australian bishop jailed for sexually abusing young men,unknown,unknown,2,0.6,1,2,1,4,1,0,0,0,,0,0,,,False,False,False,0.0,0.0
+295,Three years of Israel’s mass dispossession of West Bank Palestinians,sanctions,economic,2,0.5,1,2,1,4,3,0,0,0,,0,0,,,False,False,False,0.0,0.5
+297,Africa joins the data center backlash,unknown,unknown,2,0.6,1,2,1,9,6,0,0,0,,0,0,,,False,False,False,0.0,0.5
+305,Ronaldo apologizes for Portugal walkout; says Jesus broke promise,significant_statement,diplomacy,2,1.4,1,2,1,7,1,0,0,0,,0,0,,,False,False,False,0.0,0.0
+307,Trump wants to turn Florida golf course into presidential retreat,unknown,unknown,2,0.4,1,2,1,5,4,0,0,0,,0,0,,,False,False,False,0.0,0.0
+308,US senators urge Trump administration to enforce new Russia sanctions law ahead of Oct. 18 deadline,sanctions,economic,2,0.3,1,2,1,6,4,0,0,0,,0,0,,,False,False,False,0.0,0.5
+309,Designation of Fijian Resident for Involvement in Significant Corruption on Behalf of China-Based Actors,sanctions,economic,2,0.3,1,2,1,13,4,0,0,0,,0,0,,,False,False,False,0.0,0.0
+310,"Naked, gilded Trump statue goes on display at EU Parliament",unknown,unknown,2,0.3,1,2,1,11,4,0,0,0,,0,0,,,False,False,False,0.0,0.5
+311,Harmanpreet Kaur: The captain who changed how India’s women played cricket,resignation,political,2,0.1,1,2,1,3,1,0,0,0,,0,0,,,False,False,False,0.0,0.0
+313,From drought to deluge: ‘Super’ El Niño’s expanding reach,warning,security,2,1.8,1,2,1,4,2,0,0,0,,0,0,,,False,False,False,0.0,0.0
+316,"North Korea decries medical aid, says ‘nothing to give or receive’ from Seoul",significant_statement,diplomacy,2,0.1,1,2,1,10,4,0,0,0,,0,0,,,False,False,False,0.0,0.5
+317,Oil refinery in Russia's Salavat reportedly burning after attack,military_action,military,2,1.9,1,2,1,6,3,0,0,0,,0,0,,,False,False,False,0.0,0.5
+319,'Busification': Inside Ukraine’s controversial recruitment practices,unknown,unknown,2,1.8,1,2,1,2,1,0,0,0,,0,0,,,False,False,False,0.0,0.5
+321,'Great moral courage: The French thought they knew de Gaulle and suddenly realized they didn't',unknown,unknown,2,0.8,1,2,1,9,4,0,0,0,,0,0,,,False,False,False,0.0,0.5
+323,"National Energy Dominance Month, 2026",unknown,unknown,2,0.5,1,2,1,11,4,0,0,0,,0,0,,,False,False,False,0.0,0.5
+324,Companies expect inflation to rise further - Bank of Italy survey,unknown,unknown,2,0.9,1,2,1,7,2,0,0,0,,0,0,,,False,False,False,0.0,0.5
+325,US AI firm Anthropic enables Chinese-language options for Claude chatbot,unknown,unknown,2,0.1,1,2,2,3,3,0,0,0,,0,0,,,False,False,False,0.5,0.0
+326,"Tanker hit by multiple projectiles off north coast of Qatar, UKMTO says",significant_statement,diplomacy,2,0.3,1,2,1,4,5,0,0,0,,0,0,,,False,False,False,0.0,0.0
+329,India aims to anchor military ties with US as Indo-Pacific ‘resident power’,bilateral_meeting,diplomacy,2,1.1,1,2,1,8,4,0,0,0,,0,0,,,False,False,False,0.0,0.5
+331,"In Kyiv district battered by Russian strikes, a protest to save trees turns ugly",military_action,military,2,1.1,1,2,1,3,3,0,0,0,,0,0,,,False,False,False,0.0,0.5
+332,German lawmakers approve funds for eight-ship fleet of sub-hunting frigates,unknown,unknown,2,0.1,1,2,1,18,10,0,0,0,,0,0,,,False,False,False,0.0,0.5
+333,The EU budget continues delivering for Europe in 2025,negotiation,diplomacy,2,0.5,1,2,1,6,2,0,0,0,,0,0,,,False,False,False,0.0,0.0
+334,South Korea test-flies its first home-grown hypersonic weapon,unknown,unknown,2,0.1,1,2,1,6,4,0,0,0,,0,0,,,False,False,False,0.0,0.5
+336,Pentagon recruits drone pilots from across services for upcoming competition,unknown,unknown,2,0.0,1,2,1,10,0,0,0,0,,0,0,,,False,False,False,0.0,0.5
+338,Myanmar: Poverty deepens as families face multiple shocks with limited resources,significant_statement,diplomacy,2,0.0,1,2,1,6,1,0,0,0,,0,0,,,False,False,False,0.0,0.5
+340,US mortgage rates hit their highest level in three years,unknown,unknown,2,1.0,1,2,1,2,1,0,0,0,,0,0,,,False,False,False,0.0,0.5
+341,EU pulls sponsorship from Disinfo2026 event in Lithuania,unknown,unknown,2,0.8,1,2,1,7,4,0,0,0,,0,0,,,False,False,False,0.0,0.5
+344,The Russian-occupied town in Ukraine facing starvation,unknown,unknown,2,0.4,1,2,1,4,4,0,0,0,,0,0,,,False,False,False,0.0,0.5
+346,United States and Zambia Sign Five-Year Global Health Partnership under the Trump Administration’s America First Global ,agreement,diplomacy,2,0.2,1,2,1,46,34,0,0,0,,0,0,,actor_diverse,False,False,False,0.0,0.0
+351,"President Trump Is Putting American Industry, Jobs, and Paychecks Back on the Map",unknown,unknown,2,1.2,1,2,1,27,11,0,0,0,,0,0,,,False,False,False,0.0,0.5
+352,Remarks by Commissioner Dombrovskis at Eurogroup press conference,bilateral_meeting,diplomacy,2,0.9,1,2,1,6,1,0,0,0,,0,0,,,False,False,False,0.0,0.0
+353,Cómo llegó Colombia a tener una deuda tan alta (y por qué De la Espriella tendrá que aumentarla),unknown,unknown,2,0.3,1,2,1,9,3,0,0,0,,0,0,,,False,False,False,1.0,0.0
+354,President Trump Presents National Medals of Science and National Medals of Technology and Innovation,unknown,unknown,2,0.5,1,2,1,16,1,0,0,0,,0,0,,,False,False,False,0.0,0.5
+357,UK navy sailor appears in London court on charges of spying for Russia,security_incident,security,2,0.2,1,2,1,7,4,0,0,0,,0,0,,,False,False,False,0.0,0.0
+364,Fired OpenAI researchers say they were let go for 'prioritising safety',warning,security,2,0.0,1,2,1,0,0,0,0,0,,0,0,,,False,False,False,0.0,0.0
+366,China and EU reach ‘understanding’ on hybrid vehicles after crunch trade talks,negotiation,diplomacy,2,1.0,1,2,1,3,3,0,0,0,,0,0,,,False,False,False,0.0,0.5
+369,Estonia’s KrattWorks crafting Shahed-like dummy drone for target practice,military_action,military,2,0.1,1,2,1,23,12,0,0,0,,0,0,,,False,False,False,0.0,0.5
+370,Dutch firm uses AI to help drone systems ‘talk’ on Ukraine’s battlefield,unknown,unknown,2,0.9,1,2,1,18,9,0,0,0,,0,0,,,False,False,False,0.0,0.0
+371,Man City charges: Maresca says players focused on Liverpool test,significant_statement,diplomacy,2,0.7,1,2,1,7,3,0,0,0,,0,0,,,False,False,False,0.0,0.5
+373,Two Renoir paintings stolen from French museum are recovered,unknown,unknown,2,0.0,1,2,1,4,1,0,0,0,,0,0,,,False,False,False,0.0,0.0
+374,"Colombian embassy to open in Jerusalem, Israeli FM says",significant_statement,diplomacy,2,0.8,1,2,1,9,4,0,0,0,,0,0,,,False,False,False,0.0,0.5
+375,Singapore’s air pollution worst in world as haze shuts Malaysia schools,unknown,unknown,2,1.9,1,2,1,7,6,0,0,0,,0,0,,,False,False,False,0.0,0.0
+378,"Messico, dieci morti in una rivolta in carcere a Mazatlán",unknown,unknown,2,0.5,1,2,2,2,2,0,0,0,,0,0,,,False,False,False,1.0,0.0
+379,Bangladesh’s mango diplomacy with India has reached its limits,negotiation,diplomacy,2,1.7,1,2,1,3,2,0,0,0,,0,0,,,False,False,False,0.0,0.5
+380,"Barricate e sassaiole, scontri tra studenti e polizia a Bruxelles",unknown,unknown,2,0.0,1,2,1,1,1,0,0,0,,0,0,,,False,False,False,1.0,0.0
+383,European Council of 15-16 October 2026 - Invitation letter by President António Costa to the members of the European Cou,bilateral_meeting,diplomacy,2,1.0,1,2,1,7,4,0,0,0,,0,0,,,False,False,False,0.0,0.0
+384,Zelensky sends delegation to meet Trump envoys as he hints at secret US-Russia economic talks,bilateral_meeting,diplomacy,2,0.9,1,2,1,5,3,0,0,0,,0,0,,,False,False,False,0.0,0.5
+385,Nicaragua: Council extends restrictive measures until October 2027,sanctions,economic,2,0.3,1,2,1,4,1,0,0,0,,0,0,,,False,False,False,0.0,0.5
+388,Trump’s planned DC arch faces new lawsuit,unknown,unknown,2,0.1,1,2,1,5,3,0,0,0,,0,0,,,False,False,False,0.0,0.5
+389,Jerusalem Daily: US charity to use AI to monitor Gaza classrooms,unknown,unknown,2,0.2,1,2,1,4,2,0,0,0,,0,0,,,False,False,False,0.0,0.5
+390,"La ONU ve ""abominable"" la próxima ejecución retransmitida del atacante de Fort Hood en EEUU",unknown,unknown,2,0.1,1,2,1,6,3,0,0,0,,0,0,,,False,False,False,1.0,0.0
+391,Condenado a cadena perpetua un palestino por la muerte de un soldado israelí en una operación en Cisjordania,unknown,unknown,2,1.1,1,2,1,7,1,0,0,0,,0,0,,,False,False,False,1.0,0.0
+393,Las buscadoras: el rostro de los desaparecidos en México,unknown,unknown,2,0.1,1,2,2,4,1,0,0,0,,0,0,,,False,False,False,0.5,0.5
+394,Commentator Katie Zacharia picked as new White House press secretary,unknown,unknown,2,0.0,1,2,1,4,0,0,0,0,,0,0,,,False,False,False,0.0,0.0
+406,Thousands march to Indian Supreme Court to demand election chief resign,election,political,2,0.0,1,2,1,6,3,0,0,0,,0,0,,,False,False,False,0.0,0.0
+409,Directo a... Londres y la insistencia de Burnham por un acuerdo con la Unión Europea,unknown,unknown,2,0.2,1,2,1,8,4,0,0,0,,0,0,,,False,False,False,1.0,0.0
+413,"Middle East and Central Asia’s economy to shrink in 2026 amid war, IMF says",significant_statement,diplomacy,2,0.1,1,2,1,9,9,0,0,0,,0,0,,,False,False,False,0.0,0.5
+417,Kyiv under missile attack before air raid alert issued,military_action,military,2,0.5,1,2,1,4,3,0,0,0,,0,0,,,False,False,False,0.0,0.5
+420,"Ong, '79 abusi e 4 morti nelle carceri cubane a settembre'",unknown,unknown,2,2.0,1,2,1,1,1,0,0,0,,0,0,,,False,False,False,1.0,0.0
+427,Emir says Qatar has shown resilience in the face of ‘exceptional events’,significant_statement,diplomacy,2,0.1,1,2,1,6,1,0,0,0,,0,0,,,False,False,False,0.0,0.5
+434,Riad vuole una tregua con gli Houthi prima del vertice degli investitori,unknown,unknown,2,0.3,1,2,1,6,5,0,0,0,,0,0,,,False,False,False,1.0,0.0
+440,Critics warn of espionage risks as Slovakia restores military-diplomatic representation with Russia,security_incident,security,2,0.6,1,2,1,6,4,0,0,0,,0,0,,,False,False,False,0.0,0.0
+443,'A positive step': Hungary removes anti-LGBTQ provisions from Orban-era law,bilateral_meeting,diplomacy,2,0.3,1,2,1,5,1,0,0,0,,0,0,,,False,False,False,0.0,0.0
+454,Majority in US say Trump prioritises personal wealth over all else: Poll,significant_statement,diplomacy,2,0.2,1,2,1,4,1,0,0,0,,0,0,,,False,False,False,0.0,0.5
+463,"Cholera cases surge in Yemen as conflict intensifies, WHO says",significant_statement,diplomacy,2,0.1,1,2,1,4,2,0,0,0,,0,0,,,False,False,False,0.0,0.5
+465,Forti esplosioni udite a Riad e nei pressi di un impianto Aramco nell'est,unknown,unknown,2,1.5,1,2,1,2,1,0,0,0,,0,0,,,False,False,False,1.0,0.0
+469,"Documents falsified to evade tax on Abramovich's wealth, BBC finds",unknown,unknown,2,1.6,1,2,1,5,1,0,0,0,,0,0,,,False,False,False,0.0,0.5
+470,Sudan: Drought and war push Darfur and Kordofan towards famine,warning,security,2,1.3,1,2,1,7,5,0,0,0,,0,0,,,False,False,False,0.0,0.5
+477,Six Flags closes some rides after man flung to his death from roller coaster,unknown,unknown,2,0.2,1,2,1,6,4,0,0,0,,0,0,,,False,False,False,0.0,0.0
+479,"Amid unease in Europe, NATO SACEUR bullish on ‘block, blunt, break’ theory of victory",significant_statement,diplomacy,2,1.2,1,2,1,5,1,0,0,0,,0,0,,,False,False,False,0.0,0.5
+482,"Anduril’s Palmer Luckey envisions missiles made in car factories, underground battles",unknown,unknown,2,0.1,1,2,1,17,2,0,0,0,,0,0,,,False,False,False,0.0,0.5
+484,Drivers queue for hours in Bali amid fuel shortage,unknown,unknown,2,0.4,1,2,1,8,4,0,0,0,,0,0,,,False,False,False,0.0,0.0
+488,"Capo 007 Gb, 'Ia moltiplica minacce, anche per nuove armi biologiche'",unknown,unknown,2,0.0,1,2,1,5,5,0,0,0,,0,0,,,False,False,False,1.0,0.0
+491,"China, Russia deepen maritime and Arctic logistics ties to secure energy supply",bilateral_meeting,diplomacy,2,1.0,1,2,1,7,6,0,0,0,,0,0,,,False,False,False,0.0,0.5
+496,Scientists urge tighter AI controls to prevent global cyber risks,warning,security,2,0.5,1,2,1,4,2,0,0,0,,0,0,,,False,False,False,0.0,0.5
+498,Llega a Jamaica el primer vuelo con migrantes deportados desde EEUU,unknown,unknown,2,0.3,1,2,2,4,6,0,0,0,,0,0,,,False,False,False,0.5,0.0
+500,"Nuove attrezzature petrolifere in Venezuela, le prime in 15 anni",unknown,unknown,2,0.3,1,2,2,3,1,0,0,0,,0,0,,,False,False,False,1.0,0.0
+503,"Pekín afirma que Taiwán tendrá que ""afrontar las consecuencias"" del uso de cañones de agua contra un buque chino",significant_statement,diplomacy,2,0.2,1,2,2,4,5,0,0,0,,0,0,,,False,False,False,0.5,0.5
+507,Settlers set fire to mosque in West Bank as Israeli forces raid villages,military_action,military,2,0.1,1,2,1,6,4,0,0,0,,0,0,,,False,False,False,0.0,0.5
+508,Israeli plan to reopen settler ‘Route 463’ threatens to isolate Ramallah,threat,security,2,0.0,1,2,1,5,4,0,0,0,,0,0,,,False,False,False,0.0,0.5
+510,Mauritius imposes curfew after night of unrest over police shooting,unknown,unknown,2,0.5,1,2,1,2,1,0,0,0,,0,0,,,False,False,False,0.0,0.0
+518,Asia must guard against repeat of 1997 financial crisis: Philippine central bank chief,significant_statement,diplomacy,2,0.3,1,2,1,7,2,0,0,0,,0,0,,,False,False,False,0.0,0.5
+519,Media advisory - Tripartite Social Summit of 14 October 2026,summit,diplomacy,2,0.2,1,2,1,1,0,0,0,0,,0,0,,,False,False,False,0.0,0.5
+521,The Lynx XM30 is making its case to be the US Army’s Bradley replacement,unknown,unknown,2,1.0,1,2,1,14,4,0,0,0,,0,0,,,False,False,False,0.0,0.5
+522,Estonia weighs buying light jet aircraft to shoot down Russian jet-powered drones,military_action,military,2,0.0,1,2,1,25,9,0,0,0,,0,0,,,False,False,False,0.0,0.5
+523,"India sells air defense missiles to Tajikistan, Turkmenistan in Central Asia push",unknown,unknown,2,2.0,1,2,1,26,13,0,0,0,,0,0,,,False,False,False,0.0,0.5
+527,Jerusalem Daily: UN demands Israel do more to stop settler violence,election,political,2,0.0,1,2,1,5,2,0,0,0,,0,0,,,False,False,False,0.0,0.5
+529,UN official warns of looming food crisis as Hormuz fertiliser plan stalls,warning,security,2,0.1,1,2,1,3,1,0,0,0,,0,0,,,False,False,False,0.0,0.5
+530,US Supreme Court agrees to hear watchdog case on Elon Musk’s DOGE records,agreement,diplomacy,2,1.0,1,2,1,5,0,0,0,0,,0,0,,,False,False,False,0.0,0.5
+531,Radars in the Balkans to defend Italy too says Crosetto,significant_statement,diplomacy,2,0.3,1,2,2,13,8,0,0,0,,0,0,,,False,False,False,0.5,0.0
+532,World's oldest shipwreck found off coast of Turkey,unknown,unknown,2,0.6,1,2,1,2,2,0,0,0,,0,0,,,False,False,False,0.0,0.0
+533,"AI could self-replicate on home devices within ‘months’, Anthropic says",warning,security,2,1.6,1,2,1,2,1,0,0,0,,0,0,,,False,False,False,0.0,0.5
+534,One-Year Anniversary of the Gaza Peace Summit,summit,diplomacy,2,1.3,1,2,1,11,5,0,0,0,,0,0,,,False,False,False,0.0,0.5
+537,Bangladesh arrests two for luring locals to fight for Russia in Ukraine,unknown,unknown,2,0.1,1,2,1,7,4,0,0,0,,0,0,,,False,False,False,0.0,0.5
+543,El juicio en Alemania sobre el sabotaje del gasoducto Nord Stream decidirá si fue un crimen de guerra,unknown,unknown,2,0.8,1,2,1,5,1,0,0,0,,0,0,,,False,False,False,1.0,0.0
+544,US Social Security benefits to rise by 3.6 percent in 2027,unknown,unknown,2,0.3,1,2,1,3,1,0,0,0,,0,0,,,False,False,False,0.0,0.5
+545,Hidden cameras found in women’s showers on Australian navy ship,unknown,unknown,2,0.6,1,2,1,6,3,0,0,0,,0,0,,,False,False,False,0.0,0.5
+546,Taiwan turns to US drone boats to track rising mainland Chinese sea activity near island,unknown,unknown,2,0.6,1,2,1,8,5,0,0,0,,0,0,,,False,False,False,0.0,0.5
+548,Malaysia’s Firefly cancels flights to Singapore over haze from Indonesia,unknown,unknown,2,1.8,1,2,1,7,4,0,0,0,,0,0,,,False,False,False,0.0,0.0
+549,Colombia: UN independent experts call for Ecopetrol to provide reparations to victims of armed conflict,bilateral_meeting,diplomacy,2,0.6,1,2,1,4,1,0,0,0,,0,0,,,False,False,False,0.0,0.5
+550,US destroys dhow suspected of Iranian command and control,unknown,unknown,2,0.1,1,2,1,3,4,0,0,0,,0,0,,,False,False,False,0.0,0.5
+552,Turquía interviene uno de los últimos canales opositores en medio de una nueva ola censora,unknown,unknown,2,0.6,1,2,1,2,4,0,0,0,,0,0,,,False,False,False,1.0,0.0
+555,South Africa suspends asylum applications amid renewed anti-immigrant protests,unknown,unknown,2,1.5,1,2,1,6,2,0,0,0,,0,0,,,False,False,False,0.0,0.5
+560,La primera ministra de Japón niega que el periodista detenido en Rusia realizara labores de espionaje,unknown,unknown,2,1.5,1,2,1,6,2,0,0,0,,0,0,,,False,False,False,1.0,0.0
+561,"Zelensky, 'in corso attacco russo, Mosca sfrutta nostri problemi con Starlink'",unknown,unknown,2,0.2,1,2,1,4,4,0,0,0,,0,0,,,False,False,False,1.0,0.0
+562,"G20 finance ministers, central bankers gather amid fallout from Iran war",multilateral_meeting,diplomacy,2,0.1,1,2,1,5,3,0,0,0,,0,0,,,False,False,False,0.0,0.5
+565,Russian nuclear-powered submarine fires missiles during Pacific drills,military_exercise,military,2,1.0,1,2,1,4,3,0,0,0,,0,0,,,False,False,False,0.0,0.5
+570,"L'Uruguay annuncia un polo di data center da 5,7 miliardi di dollari",unknown,unknown,2,0.2,1,2,2,6,2,0,0,0,,0,0,,,False,False,False,1.0,0.0
+574,Secretary Rubio’s Call with Ethiopian Prime Minister Abiy,bilateral_meeting,diplomacy,2,0.6,1,2,1,7,3,0,0,0,,0,0,,,False,False,False,0.0,0.5
+576,India and China aren't friends - but Nepal wants to unite them against climate threats,unknown,unknown,2,0.0,1,2,1,6,4,0,0,0,,0,0,,,False,False,False,0.0,0.5
+579,Climate change and drone attacks exacerbate the humanitarian crisis in war-torn Sudan,military_action,military,2,0.0,1,2,1,5,3,0,0,0,,0,0,,,False,False,False,0.0,0.5
+580,Iran: Political infighting deepens as economic woes mount during war,unknown,unknown,2,1.3,1,2,1,3,1,0,0,0,,0,0,,,False,False,False,0.0,0.5
+583,La cooperazione italiana continua a sostenere le strutture sanitarie in Libano,unknown,unknown,2,1.3,1,2,2,3,1,0,0,0,,0,0,,,False,False,False,0.5,0.5
+585,Syrian court sentences two to death over 2025 coastal violence,military_action,military,2,0.2,1,2,1,3,1,0,0,0,,0,0,,,False,False,False,0.0,0.5
+587,US-born Bollywood actor Imran Khan told to leave India over political protest: local media,election,political,2,0.0,1,2,1,7,3,0,0,0,,0,0,,,False,False,False,0.0,0.0
+588,Pentagon seeks expertise to develop brain injury assessment standards,unknown,unknown,2,0.1,1,2,1,10,1,0,0,0,,0,0,,,False,False,False,0.0,0.5
+589,"Routine testosterone screening of US troops may require extensive follow-on care, study finds",unknown,unknown,2,0.0,1,2,1,14,5,0,0,0,,0,0,,,False,False,False,0.0,0.5
+592,Bagno di folla per Harry e Meghan nel primo impegno pubblico dopo rientro in Gb,unknown,unknown,2,0.1,1,2,2,4,4,0,0,0,,0,0,,,False,False,False,1.0,0.0
+594,Trump ramps up third-country US deportations despite global rights outcry,unknown,unknown,2,1.1,1,2,1,3,1,0,0,0,,0,0,,,False,False,False,0.0,0.5
+595,"Londra mette al bando i libri di Sally Rooney, sostenitrice di Palestine Action",unknown,unknown,2,1.0,1,2,1,4,2,0,0,0,,0,0,,,False,False,False,1.0,0.0
+596,Juicio contra el actor Russell Brand por violación: Fiscalía lo acusa de ser un “depredador sexual implacable”,significant_statement,diplomacy,2,1.0,1,2,1,5,1,0,0,0,,0,0,,,False,False,False,1.0,0.0
+598,Israeli ad-tech firm helped place spyware on Al Jazeera devices,unknown,unknown,2,0.2,1,2,1,4,1,0,0,0,,0,0,,,False,False,False,0.0,0.5
+599,"Sanctioning Cuban State-Owned Banco Internacional de Comercio, S.A. (BICSA)",sanctions,economic,2,0.1,1,2,1,21,4,0,0,0,,0,0,,,False,False,False,0.0,0.5
+601,"Two dead in Istanbul after heaviest rainfall in 84 years, governor says",significant_statement,diplomacy,2,0.5,1,2,1,1,1,0,0,0,,0,0,,,False,False,False,0.0,0.0
+602,"Expanded dining options popular among soldiers, US Army officials say",unknown,unknown,2,0.1,1,2,1,28,17,0,0,0,,0,0,,,False,False,False,0.0,0.5
+606,"Il premier della Finlandia, 'l'intesa di Trump sul diesel con Putin non ha logica'",unknown,unknown,2,0.6,1,2,1,6,5,0,0,0,,0,0,,,False,False,False,1.0,0.0
+613,Acting US Army secretary creates task force for HVAC repairs,unknown,unknown,2,0.9,1,2,1,18,9,0,0,0,,0,0,,,False,False,False,0.0,0.5
+618,US sanctions leave Iranians facing flight cancellations and soaring costs,sanctions,economic,2,0.3,1,2,1,4,3,0,0,0,,0,0,,,False,False,False,0.0,0.5
+620,Envoy says China ‘could easily win’ conflict as Manila claims it is ‘thinly veiled threat’,significant_statement,diplomacy,2,0.2,1,2,1,5,6,0,0,0,,0,0,,,False,False,False,0.0,0.5
+621,‘Our works are next to each other’: Art bridges Gaza and West Bank,unknown,unknown,2,0.9,1,2,1,5,3,0,0,0,,0,0,,,False,False,False,0.0,0.5
+623,Japan’s Okinawa drops opposition to hosting crash-prone US Osprey aircraft,deployment,military,2,1.9,1,2,1,7,4,0,0,0,,0,0,,,False,False,False,0.0,0.5
+625,"Which countries waste the most food, and how to reduce waste at home",unknown,unknown,2,0.1,1,2,1,1,0,0,0,0,,0,0,,,False,False,False,0.0,0.5
+628,Network problem with Italian air-traffic control systems causes major disruption,unknown,unknown,2,0.1,1,2,1,9,6,0,0,0,,0,0,,,False,False,False,0.0,0.0
+629,Spring-summer 2027 ready-to-wear collections: Africa in the spotlight at Paris Fashion Week,unknown,unknown,2,0.1,1,2,1,9,7,0,0,0,,0,0,,,False,False,False,0.0,0.5
+633,Israel secures procurement of 12 Apache gunships in last-minute maneuver,military_action,military,2,1.9,1,2,1,7,3,0,0,0,,0,0,,,False,False,False,0.0,0.5
+634,‘Weaponized light’: KBR’s new base defense technology pits lasers against drones,unknown,unknown,2,0.5,1,2,1,9,2,0,0,0,,0,0,,,False,False,False,0.0,0.5
+637,Italy to bring Schengen suspension in line with Spain,negotiation,diplomacy,2,0.3,1,2,1,10,5,0,0,0,,0,0,,,False,False,False,0.0,0.0
+638,"Ancora blocchi studenteschi in Francia, verso possibile 'convergenza' con gilet gialli",unknown,unknown,2,0.4,1,2,1,3,1,0,0,0,,0,0,,,False,False,False,1.0,0.0
+641,"Cuba, 'Rubio cerca di far cambiare i voti all'Onu contro l'embargo'",economic_action,economic,2,1.2,1,2,2,4,3,0,0,0,,0,0,,,False,False,False,1.0,0.0
+643,Speech by Executive Vice-President Teresa Ribera at 17th Conference of the Parties to the United Nations Convention on B,summit,diplomacy,2,0.2,1,2,1,6,1,0,0,0,,0,0,,,False,False,False,0.0,0.0
+645,Mohamed VI toma juramento al nuevo gobierno de la primera ministra Fátima el Mansuri,unknown,unknown,2,0.1,1,2,1,7,3,0,0,0,,0,0,,,False,False,False,1.0,0.0
+648,Orcas que atacan y se comen a los grandes tiburones blancos: la sangrienta batalla entre los mayores depredadores marino,unknown,unknown,2,1.2,1,2,1,1,1,0,0,0,,0,0,,,False,False,False,1.0,0.0
+649,Implementing the Lindsey O. Graham Sanctioning Russia and Iran Act of 2026,sanctions,economic,2,1.9,1,2,1,14,4,0,0,0,,0,0,,,False,False,False,0.0,0.5
+653,Asean’s Myanmar peace push needs Japan’s ‘silent diplomacy’,multilateral_meeting,diplomacy,2,0.8,1,2,1,8,6,0,0,0,,0,0,,,False,False,False,0.0,0.5
+654,Real Madrid demand resignation of La Liga chief after Goebbels comparison,resignation,political,2,0.3,1,2,2,9,5,0,0,0,,0,0,,,False,False,False,0.5,0.0
+655,Trump mocks Middle Eastern names with ‘Mohammed’ joke,unknown,unknown,2,0.0,1,2,1,7,6,0,0,0,,0,0,,,False,False,False,0.0,0.0
+658,Iran’s president condemns environmental impact of war in Middle East,significant_statement,diplomacy,2,0.2,1,2,1,2,3,0,0,0,,0,0,,,False,False,False,0.0,0.5
+661,Colonos israelíes atacan en Taybeh a agricultores palestinos y una comitiva de diplomáticos europeos,unknown,unknown,2,0.3,1,2,1,3,3,0,0,0,,0,0,,,False,False,False,1.0,0.0
+666,Chinese kindergarten owner given life sentence over lead paint poisoning scandal,unknown,unknown,2,0.3,1,2,1,7,2,0,0,0,,0,0,,,False,False,False,0.0,0.0
+671,Un yate con una piscina de 50 metros y toboganes acuáticos: imágenes satelitales revelan el lujoso complejo de vacacione,unknown,unknown,2,0.2,1,2,2,7,3,0,0,0,,0,0,,,False,False,False,1.0,0.0
+672,At least 17 dead in crush at Hindu festival event in India,unknown,unknown,2,0.7,1,2,1,4,2,0,0,0,,0,0,,,False,False,False,0.0,0.0
+673,"I sindaci di Parigi, Marsiglia e Lione chiedono un incontro col premier",unknown,unknown,2,0.4,1,2,1,1,3,0,0,0,,0,0,,,False,False,False,1.0,0.0
+678,China’s youth draw upon Long March spirit to navigate modern uncertainties,unknown,unknown,2,0.5,1,2,1,7,1,0,0,0,,0,0,,,False,False,False,0.0,0.5
+679,"There’s a ‘New Middle East’, but not the one Israel planned",significant_statement,diplomacy,2,0.2,1,2,1,3,3,0,0,0,,0,0,,,False,False,False,0.0,0.5
+681,Ascienden a cinco los muertos por las inundaciones en Estambul,unknown,unknown,2,0.8,1,2,1,1,1,0,0,0,,0,0,,,False,False,False,1.0,0.0
+682,Irán informa de una nueva explosión en un petrolero incendiados tras el impacto con una mina en Ormuz,unknown,unknown,2,0.8,1,2,1,4,6,0,0,0,,0,0,,,False,False,False,1.0,0.0
+683,Rare pink diamond goes on display in France 100 years after amateur heist,unknown,unknown,2,1.6,1,2,1,6,2,0,0,0,,0,0,,,False,False,False,0.0,0.0
+685,Indian Bollywood superstar Tiger Shroff allegedly shot at by gunmen,unknown,unknown,2,0.3,1,2,1,5,2,0,0,0,,0,0,,,False,False,False,0.0,0.0
+687,'Very upsetting': Residents in shock after historic French town hall set alight,security_incident,security,2,0.2,1,2,1,2,2,0,0,0,,0,0,,,False,False,False,0.0,0.0
+688,Anthropic says it will commit 5% of its shares to 'public benefit fund',significant_statement,diplomacy,2,0.0,1,2,1,1,0,0,0,0,,0,0,,,False,False,False,0.0,0.0
+689,DR Congo’s fast-moving Ebola outbreak spreads to eighth province,unknown,unknown,2,0.5,1,2,1,7,3,0,0,0,,0,0,,,False,False,False,0.0,0.5
+690,Informe desde Santiago: manifestantes conmemoran el estallido social en Chile,unknown,unknown,2,0.3,1,2,1,6,3,0,0,0,,0,0,,,False,False,False,1.0,0.0
+695,"China’s economy grows 4.5 percent in Q3, beating forecasts",bilateral_meeting,diplomacy,2,0.1,1,2,1,4,2,0,0,0,,0,0,,,False,False,False,0.0,0.0
+707,Inside the shadowy world of anti-Putin sabotage from within Russia,unknown,unknown,2,0.5,1,2,1,3,2,0,0,0,,0,0,,,False,False,False,0.0,0.5
+712,"Over 100,000 Ukrainians safe from deportation as US is set to extend protection status",unknown,unknown,2,0.8,1,2,1,6,4,0,0,0,,0,0,,,False,False,False,0.0,0.5
+715,A shifting landscape: Where the US Army moved in 2026 and what may be on the horizon,unknown,unknown,2,0.2,1,2,1,45,26,0,0,0,,0,0,,actor_diverse,False,False,False,0.0,0.5
+716,Ukrainian defense firms get creative to try and break through export restrictions,policy_change,political,2,0.1,1,2,1,4,3,0,0,0,,0,0,,,False,False,False,0.0,0.5
+720,"Ukraine to compensate damaged cargo ships, as Russia rejects Black Sea proposal",bilateral_meeting,diplomacy,2,0.1,1,2,1,8,9,0,0,0,,0,0,,,False,False,False,0.0,0.5
+728,Benny Gantz drops out of Israel’s election race,election,political,2,0.1,1,2,1,5,1,0,0,0,,0,0,,,False,False,False,0.0,0.5
+736,"Trump says 'France is burning', country 'shattered' by immigration",significant_statement,diplomacy,2,1.2,1,2,1,5,4,0,0,0,,0,0,,,False,False,False,0.0,0.0
+740,US Supreme Court to hear case on race in school admissions,unknown,unknown,2,0.6,1,2,1,5,1,0,0,0,,0,0,,,False,False,False,0.0,0.5
+741,Zelensky says Starshield speed limits slowing down frontline response,significant_statement,diplomacy,2,0.3,1,2,1,7,5,0,0,0,,0,0,,,False,False,False,0.0,0.0
+742,Tormenta Adam deja muertos y graves inundaciones en el este de España,unknown,unknown,2,0.3,1,2,1,3,4,0,0,0,,0,0,,,False,False,False,1.0,0.0
+743,Chinese ambassador denies threatening Philippines after saying a war may prove easy to win,sanctions,economic,2,0.8,1,2,1,8,3,0,0,0,,0,0,,,False,False,False,0.0,0.5
+744,France tells online marketplaces to crack down on resale of looted items,unknown,unknown,2,0.2,1,2,1,3,1,0,0,0,,0,0,,,False,False,False,0.0,0.0
+749,La nueva primera ministra de Marruecos fija el control del Sáhara como asunto prioritario de su agenda,unknown,unknown,2,0.0,1,2,1,5,4,0,0,0,,0,0,,,False,False,False,1.0,0.0
+750,Council and Parliament strike deal on updated measures to support organic farming in the EU,agreement,diplomacy,2,0.1,1,2,1,2,1,0,0,0,,0,0,,,False,False,False,0.0,0.0
+751,US Army acquisition command awards contracts worth $6.8B in 2026,unknown,unknown,2,1.0,1,2,1,12,1,0,0,0,,0,0,,,False,False,False,0.0,0.5
+752,"12 migranti morti nell'Egeo, 6 tra cui neonato in collisione con nave polizia",unknown,unknown,2,0.0,1,2,1,0,3,0,0,0,,0,0,,,False,False,False,1.0,0.0
+753,South Korea to pull more embassy staff from Ukraine after POW row,unknown,unknown,2,0.1,1,2,1,5,4,0,0,0,,0,0,,,False,False,False,0.0,0.0
+755,Midterms 2026: The farmers calling for more migrant workers,unknown,unknown,2,0.6,1,2,1,10,5,0,0,0,,0,0,,,False,False,False,0.0,0.5
+756,"More than 250,000 displaced in Yemen since fighting escalated: UNHCR",unknown,unknown,2,0.0,1,2,1,4,1,0,0,0,,0,0,,,False,False,False,0.0,0.5
+757,"Pakistan suspends Iran border trade, amid violence on both sides",unknown,unknown,2,1.0,1,2,1,4,5,0,0,0,,0,0,,,False,False,False,0.0,0.5
+758,Turkish defense procurement spending proposed to rise 229% in 2027,unknown,unknown,2,1.0,1,2,1,2,1,0,0,0,,0,0,,,False,False,False,0.0,0.5
+763,Ben-Gvir mocks Gaza destruction in AI-generated video,unknown,unknown,2,0.2,1,2,1,5,2,0,0,0,,0,0,,,False,False,False,0.0,0.5
+764,La OTAN reforzará con más medios su presencia en el mar Negro tras el incremento de ataques con drones,unknown,unknown,2,0.1,1,2,1,9,3,0,0,0,,0,0,,,False,False,False,1.0,0.0
+767,"Swimmer, 65, killed in shark attack off South Africa's east coast",military_action,military,2,0.1,1,2,1,9,5,0,0,0,,0,0,,,False,False,False,0.0,0.0
+768,‘One step away from famine’: Inside Afghanistan’s hunger crisis,warning,security,2,0.1,1,2,1,2,1,0,0,0,,0,0,,,False,False,False,0.0,0.0
+769,US Air Force F-22 pilot controls unmanned FQ-44 in flight,unknown,unknown,2,0.1,1,2,1,19,3,0,0,0,,0,0,,,False,False,False,0.0,0.5
+774,US Army support for Golden Dome missile shield takes shape,policy_change,political,2,0.2,1,2,1,16,4,0,0,0,,0,0,,,False,False,False,0.0,0.5
+776,"US troops in South Korea must be ready for missions beyond peninsula, commander says",significant_statement,diplomacy,2,1.4,1,2,1,6,3,0,0,0,,0,0,,,False,False,False,0.0,0.5
+783,US Army competition explores military uses for humanoid robots,unknown,unknown,2,1.3,1,2,1,19,1,0,0,0,,0,0,,,False,False,False,0.0,0.5
+785,"Trump official claims record-breaking 300,000 visas were revoked",significant_statement,diplomacy,2,0.3,1,2,1,1,1,0,0,0,,0,0,,,False,False,False,0.0,0.0
+788,"Trump, 'i presidenti per un motivo o per l'altro perdono sempre le midterm'",unknown,unknown,2,0.6,1,2,1,6,3,0,0,0,,0,0,,,False,False,False,1.0,0.0
+789,Taiwan admits paying for retired US general to observe largest annual war games,military_exercise,military,2,0.3,1,2,1,7,5,0,0,0,,0,0,,,False,False,False,0.0,0.5
+790,‘I don't recognise the country I grew up in anymore’: some Israelis are tempted by exile,election,political,2,0.5,1,2,1,3,2,0,0,0,,0,0,,,False,False,False,0.0,0.5
+794,"Condenado a 30 años de cárcel un guatemalteco por el caso de los 53 migrantes asfixiados en un remolque en Texas, EEUU",unknown,unknown,2,0.9,1,2,1,9,5,0,0,0,,0,0,,,False,False,False,1.0,0.0
+796,"Caccia francese precipita vicino a Nancy, almeno un morto",unknown,unknown,2,0.0,1,2,1,1,1,0,0,0,,0,0,,,False,False,False,1.0,0.0
+802,"Cremlino, 'urgente riprendere i negoziati sugli armamenti nucleari con gli Usa'",unknown,unknown,2,0.1,1,2,2,4,7,0,0,0,,0,0,,,False,False,False,1.0,0.0
+806,Pakistan arrests man hunted by US over $126m postage fraud case,unknown,unknown,2,0.3,1,2,1,3,2,0,0,0,,0,0,,,False,False,False,0.0,0.0
+807,Papa Leone XIV telefona a Zelensky per Oleshky: ci sia tregua umanitaria,unknown,unknown,2,1.8,1,2,2,4,3,0,0,0,,0,0,,,False,False,False,1.0,0.0
+808,Suspect arrested after historic town hall set alight - French media,security_incident,security,2,1.1,1,2,1,1,2,0,0,0,,0,0,,,False,False,False,0.0,0.0
+809,Egypt’s Hassan and Zico suspended over FIFA World Cup refereeing criticism,unknown,unknown,2,1.4,1,2,1,7,2,0,0,0,,0,0,,,False,False,False,0.0,0.5
+813,"Almost 46,000 foreigners have signed contracts with Russian army since 2022, Ukraine says",significant_statement,diplomacy,2,0.9,1,2,1,4,3,0,0,0,,0,0,,,False,False,False,0.0,0.5
+814,"""Me cambió la voz"": Selena Gomez revela cómo vapear nicotina la afectó y pide a sus fans que no lo hagan",unknown,unknown,2,0.1,1,2,1,5,0,0,0,0,,0,0,,,False,False,False,1.0,0.0
+815,Pakistan-Taliban conflict: How India could benefit from shifting regional dynamics,unknown,unknown,2,0.2,1,2,1,7,5,0,0,0,,0,0,,,False,False,False,0.0,0.5
+816,"Colombia, arrestato un uomo per minacce alla moglie del presidente",unknown,unknown,2,0.4,1,2,2,2,3,0,0,0,,0,0,,,False,False,False,1.0,0.0
+817,"Global warming will breach 1.5°C – but deep, fast cuts can still bring it back",warning,security,2,0.2,1,2,1,6,2,0,0,0,,0,0,,,False,False,False,0.0,0.0
+818,"Russian Su-30 fighter jet crashes in Kaliningrad Oblast during training exercises, Moscow says",significant_statement,diplomacy,2,0.1,1,2,1,3,3,0,0,0,,0,0,,,False,False,False,0.0,0.5
+819,Department of War's Project Agincourt Accelerates Autonomous Warfare Command to Drive Battlefield Adaptation at Scale,unknown,unknown,2,0.1,1,2,1,5,1,0,0,0,,0,0,,,False,False,False,0.0,0.5
+820,"Pentagon AI oversight office struggles to keep pace with department’s ambitions, GAO finds",unknown,unknown,2,0.1,1,2,1,24,1,0,0,0,,0,0,,,False,False,False,0.0,0.5
+821,Britain’s ban on pro-Palestinian author Sally Rooney makes it a laughing stock,policy_change,political,2,0.9,1,2,1,8,3,0,0,0,,0,0,,,False,False,False,0.0,0.0
+823,China creates state-owned firm in Xiongan to develop nation’s AI data resources,unknown,unknown,2,1.3,1,2,1,5,4,0,0,0,,0,0,,,False,False,False,0.0,0.5
+824,U.S.-Paraguay Cooperation to Advance Prosperity and Security,unknown,unknown,2,0.0,1,2,1,31,9,0,0,0,,0,0,,,False,False,False,0.0,0.0
+826,Israel’s Elbit acquires Canadian company focused on autonomous underwater systems,unknown,unknown,2,0.1,1,2,1,7,2,0,0,0,,0,0,,,False,False,False,0.0,0.5
+829,France’s growing debt woes: How bond markets set countries’ borrowing costs,unknown,unknown,2,1.4,1,2,1,7,4,0,0,0,,0,0,,,False,False,False,0.0,0.0
+830,First Committee Debates Pathways to Prevent Weaponization of Outer Space,unknown,unknown,2,0.7,1,2,1,4,1,0,0,0,,0,0,,,False,False,False,0.0,0.5
+832,Trump heads to South Carolina to boost Senator Darline Graham in race,unknown,unknown,2,0.2,1,2,1,8,1,0,0,0,,0,0,,,False,False,False,0.0,0.5
+838,Real Madrid rout RB Leipzig 4-1 to continue perfect Champions League start,unknown,unknown,2,0.1,1,2,1,13,2,0,0,0,,0,0,,,False,False,False,0.0,0.0
+840,La Guardia Revolucionaria iraní afirma haber atacado cuatro buques que movían petróleo en el golfo Pérsico,unknown,unknown,2,0.1,1,2,1,5,6,0,0,0,,0,0,,,False,False,False,1.0,0.0
+842,"Trump snaps at reporter, ordering him to be quiet",unknown,unknown,2,1.0,1,2,1,3,1,0,0,0,,0,0,,,False,False,False,0.0,0.5
+843,"One killed, eight injured in attack on Saudi Arabia’s King Fahd airport",military_action,military,2,0.3,1,2,1,2,1,0,0,0,,0,0,,,False,False,False,0.0,0.5
+844,Como savour Manchester United thrashing as Italians bounce back in Champions League,unknown,unknown,2,0.1,1,2,1,22,8,0,0,0,,0,0,,,False,False,False,0.0,0.0
+848,Celebrity shark guided out of South Korea canal refuses to swim out to sea,unknown,unknown,2,0.2,1,2,1,2,2,0,0,0,,0,0,,,False,False,False,0.0,0.0
+851,"Ilhan Omar home raid, Haines attack: Inside rise in violence on officials",military_action,military,2,1.8,1,2,1,7,2,0,0,0,,0,0,,,False,False,False,0.0,0.5
+853,Indonesians turn to eco-art as haze sparks anger and diplomatic tension,unknown,unknown,2,0.3,1,2,2,5,7,0,0,0,,0,0,,,False,False,False,0.5,0.0
+855,"Italy, Spain agree to end border controls, restore Schengen rules",agreement,diplomacy,2,0.3,1,2,1,15,6,0,0,0,,0,0,,,False,False,False,0.0,0.0
+857,Zuckerberg gets new Meta shares to stay in California amid billionaire tax vote,agreement,diplomacy,2,0.0,1,2,1,4,1,0,0,0,,0,0,,,False,False,False,0.0,0.0
+860,US Army long-range fires make a splash on the frontline with China,unknown,unknown,2,0.1,1,2,1,27,24,0,0,0,,0,0,,,False,False,False,0.0,0.5
+861,Press release - EP TODAY,unknown,unknown,2,0.4,1,2,1,2,0,0,0,0,,0,0,,,False,False,False,0.0,0.5
+864,Two Syrian security officers killed in raid on ISIL cell near Damascus,unknown,unknown,2,0.1,1,2,1,8,3,0,0,0,,0,0,,,False,False,False,0.0,0.5
+869,UN agencies appeal for help to protect weakest from unprecedented El Niño,unknown,unknown,2,1.3,1,2,1,3,0,0,0,0,,0,0,,,False,False,False,0.0,0.5
+871,Ships and hydrofoils at risk in Gulf of Naples,unknown,unknown,2,1.3,1,2,1,14,7,0,0,0,,0,0,,,False,False,False,0.0,0.5
+872,Millions in cheese revenue lost as protest hits Italy’s buffalo mozzarella output,unknown,unknown,2,0.1,1,2,1,3,3,0,0,0,,0,0,,,False,False,False,0.0,0.0
+875,Emirati diplomat could become next UN chief despite human rights concerns,unknown,unknown,2,0.6,1,2,1,5,2,0,0,0,,0,0,,,False,False,False,0.0,0.5
+876,"'Neither the Sudanese military, nor the RSF take any acknowledgement of human life in this war'",military_action,military,2,1.2,1,2,1,13,4,0,0,0,,0,0,,,False,False,False,0.0,0.0
+877,Australian TV reporter rescues man from sinking car,unknown,unknown,2,0.3,1,2,1,2,1,0,0,0,,0,0,,,False,False,False,0.0,0.0
+879,Ilhan Omar says 'bizarre' pre-dawn raid on her home is forcing her to leave,significant_statement,diplomacy,2,0.5,1,2,1,3,2,0,0,0,,0,0,,,False,False,False,0.0,0.0
+880,"Russian disinformation campaign targets pro-Ukraine candidates ahead of midterms, lawmakers say",unknown,unknown,2,0.3,1,2,1,5,4,0,0,0,,0,0,,,False,False,False,0.0,0.5
+881,ECB Consumer Expectations Survey results – September 2026,unknown,unknown,2,0.9,1,2,1,2,1,0,0,0,,0,0,,,False,False,False,0.0,0.5
+882,US tech stocks tumble as investors fret over AI spending,unknown,unknown,2,0.2,1,2,1,3,1,0,0,0,,0,0,,,False,False,False,0.0,0.5
+883,Hamilton calls for Palestine and DR Congo freedom as Rwanda takes F1 spotlight,unknown,unknown,2,1.9,1,2,1,9,4,0,0,0,,0,0,,,False,False,False,0.0,0.5
+886,Seúl apunta que Pyongyang habría desplegado cerca de un millón de minas en la zona desmilitarizada desde 2024,unknown,unknown,2,0.1,1,2,1,6,8,0,0,0,,0,0,,,False,False,False,1.0,0.0
+887,New Zealand defense chief resigns over ‘inappropriate relationship’,resignation,political,2,0.0,1,2,1,15,2,0,0,0,,0,0,,,False,False,False,0.0,0.5
+888,Rubio turns to small Indian town as US faces high oil prices,unknown,unknown,2,1.7,1,2,1,5,2,0,0,0,,0,0,,,False,False,False,0.0,0.5
+890,"Carte Pokémon da record, pensionato inglese le vende all'asta e diventa milionario",unknown,unknown,2,0.0,1,2,1,2,0,0,0,0,,0,0,,,False,False,False,1.0,0.0
+891,New York City votes to ban Central Park horse-drawn carriages after decades of debate,policy_change,political,2,0.1,1,2,1,5,3,0,0,0,,0,0,,,False,False,False,0.0,0.0
+895,"Meghan Markle dice que fue informada en 2018 de las ""inquietantes acusaciones"" contra su padre por presunta posesión de ",unknown,unknown,2,0.1,1,2,1,3,1,0,0,0,,0,0,,,False,False,False,1.0,0.0
+896,China’s first aircraft carrier forms ‘evolving pattern’ of voyages in disputed Asian seas,significant_statement,diplomacy,2,0.1,1,2,1,38,24,0,0,0,,0,0,,,False,False,False,0.0,0.5
+898,"Liechtenstein, il principe pone il veto alla riforma per rendere legale l’aborto",unknown,unknown,2,0.1,1,2,2,4,1,0,0,0,,0,0,,,False,False,False,1.0,0.0
+899,Japan-Russia ties erode as journalist sits in Moscow jail,negotiation,diplomacy,2,1.7,1,2,1,4,4,0,0,0,,0,0,,,False,False,False,0.0,0.5
+904,"‘I killed lots of terrorists, but it didn’t make me feel better’: The trauma haunting Israel's elections",election,political,2,1.3,1,2,1,6,4,0,0,0,,0,0,,,False,False,False,0.0,0.5
+905,Sangre nueva para frenar a Trump,unknown,unknown,2,0.2,1,2,1,4,2,0,0,0,,0,0,,,False,False,False,1.0,0.0
+906,Dembele to miss Ballon d’Or event as PSG game moved amid protests in France,unknown,unknown,2,0.0,1,2,1,8,6,0,0,0,,0,0,,,False,False,False,0.0,0.0
+907,"HD Hyundai, Kiewit unveil plans for new US shipyard",unknown,unknown,2,0.2,1,2,1,5,1,0,0,0,,0,0,,,False,False,False,0.0,0.5
+908,Secretary of War Pete Hegseth Directs Establishment of New Air National Guard Special Tactics Squadron in Florida,unknown,unknown,2,1.8,1,2,1,5,1,0,0,0,,0,0,,,False,False,False,0.0,0.5
+913,Department of War Publishes Seventh Release of Unidentified Anomalous Phenomena Files on WAR.GOV/UFO,unknown,unknown,2,0.2,1,2,1,2,0,0,0,0,,0,0,,,False,False,False,0.0,0.5
+914,"Dalma Maradona alla chiusura del processo per la morte del padre, 'merita giustizia'",unknown,unknown,2,0.8,1,2,2,2,1,0,0,0,,0,0,,,False,False,False,1.0,0.0
+915,Delcy Rodríguez se reúne en Miraflores con la jefa negociadora de la oposición,unknown,unknown,2,0.4,1,2,1,3,4,0,0,0,,0,0,,,False,False,False,1.0,0.0
+917,Brazil’s right has already changed the balance of power,unknown,unknown,2,0.1,1,2,1,5,1,0,0,0,,0,0,,,False,False,False,0.0,0.5
+919,Tigray official urges rebels to disarm,unknown,unknown,2,0.2,1,2,1,5,2,0,0,0,,0,0,,,False,False,False,0.0,0.5
+920,US consumer sentiment hits a near-record low before midterm elections,election,political,2,0.1,1,2,1,2,1,0,0,0,,0,0,,,False,False,False,0.0,0.5
+921,A meeting in Seoul on Galileo and particle physics,bilateral_meeting,diplomacy,2,2.4,1,2,1,12,2,0,0,0,,0,0,,,False,False,False,0.0,0.0
+922,"Discussing Implementation of UN Charter, Sixth Committee Touches on Sanctions, Peaceful Dispute Settlement",sanctions,economic,2,1.1,1,2,1,4,0,0,0,0,,0,0,,,False,False,False,0.0,0.5
+924,Displaced West Bank Palestinians face growing hunger after UN cuts food aid,unknown,unknown,2,0.7,1,2,1,6,4,0,0,0,,0,0,,,False,False,False,0.0,0.5
+925,Moody’s mantiene il rating sovrano della Francia ad Aa3 con prospettiva negativa,unknown,unknown,2,0.0,1,2,2,2,2,0,0,0,,0,0,,,False,False,False,1.0,0.0
+930,"NFL would cancel Paris game if unsafe due to riots, Steelers’ Rodgers says",significant_statement,diplomacy,2,0.9,1,2,1,8,5,0,0,0,,0,0,,,False,False,False,0.0,0.0
+931,4 pilots killed in mid-air collision of Philippine military planes,unknown,unknown,2,0.1,1,2,1,6,4,0,0,0,,0,0,,,False,False,False,0.0,0.5
+934,Populist Czech government pushes through media funding changes,threat,security,2,0.1,1,2,1,4,2,0,0,0,,0,0,,,False,False,False,0.0,0.0
+937,"Asia-Pacific AI agent market to surge 14-fold to US$11.2 billion by 2030, Omdia says",significant_statement,diplomacy,2,1.6,1,2,1,8,7,0,0,0,,0,0,,,False,False,False,0.0,0.5
+941,"Smotrich, 'stiamo per demolire edifici abusivi di arabi vicini a luogo attacco'",unknown,unknown,2,1.4,1,2,1,1,1,0,0,0,,0,0,,,False,False,False,1.0,0.0
+943,"Elon Musk reprocha a Ucrania un uso indebido de Starlink ""para matar gente""",unknown,unknown,2,0.0,1,2,1,4,2,0,0,0,,0,0,,,False,False,False,1.0,0.0
+944,"Trump, a critic of early voting, votes early in Florida",election,political,2,0.0,1,2,1,6,4,0,0,0,,0,0,,,False,False,False,0.0,0.5
+946,Indonesia seizes more than a tonne of ketamine from tanker,unknown,unknown,2,1.5,1,2,1,6,5,0,0,0,,0,0,,,False,False,False,0.0,0.0
+947,Beijing commemorates end of Japanese rule over Taiwan with call for reunification,policy_change,political,2,0.8,1,2,1,7,7,0,0,0,,0,0,,,False,False,False,0.0,0.5
+950,The search for gold is a dangerous and laborious gamble for Sudan’s miners,military_action,military,2,1.1,1,2,1,3,2,0,0,0,,0,0,,,False,False,False,0.0,0.5
+953,Suspect in deadly Paris suburb shooting sent for psychiatric observation,unknown,unknown,2,0.2,1,2,1,1,2,0,0,0,,0,0,,,False,False,False,0.0,0.0
+956,"Usgs, 'terremoto di magnitudo 5.2 in Afghanistan al confine con il Pakistan'",unknown,unknown,2,0.0,1,2,1,2,7,0,0,0,,0,0,,,False,False,False,1.0,0.0
+959,Russia to host first Olympic federation world event since Ukraine invasion,military_action,military,2,0.1,1,2,1,3,3,0,0,0,,0,0,,,False,False,False,0.0,0.0
+961,Severe hunger stalks people in Gaza as bakeries close down,unknown,unknown,2,1.5,1,2,1,3,3,0,0,0,,0,0,,,False,False,False,0.0,0.5
+966,Eye on China: Japan reopens taboo debate over nuclear-powered submarines,unknown,unknown,2,0.8,1,2,1,7,4,0,0,0,,0,0,,,False,False,False,0.0,0.5
+967,Liberman chiede a procura un'inchiesta per tradimento contro Netanyahu,unknown,unknown,2,0.0,1,2,2,7,2,0,0,0,,0,0,,,False,False,False,1.0,0.0
+968,"Burnham renuncia a la vuelta de Reino Unido a la UE esta legislatura pero admite que le gustaría verla ""durante su vida""",unknown,unknown,2,1.0,1,2,1,6,2,0,0,0,,0,0,,,False,False,False,1.0,0.0
+970,Key European defence ministers meet in Paris to discuss Ukraine support,diplomatic_visit,diplomacy,2,0.1,1,2,1,9,9,0,0,0,,0,0,,,False,False,False,0.0,0.0
+975,US singer Chris Brown avoids jail after guilty plea in UK nightclub incident,unknown,unknown,2,0.0,1,2,1,10,4,0,0,0,,0,0,,,False,False,False,0.0,0.0
+977,"AI chip surge lifts South Korea to record surplus, behind only China",unknown,unknown,2,0.9,1,2,1,4,5,0,0,0,,0,0,,,False,False,False,0.0,0.0
+981,"Joint Statement, USS Colorado (SSN 788) Announced as First Submarine for Submarine Rotational Force – West",significant_statement,diplomacy,2,0.1,1,2,1,20,9,0,0,0,,0,0,,,False,False,False,0.0,0.0
+983,EU support for Ukraine: Council mobilises €4.9 billion under the European Peace Facility,unknown,unknown,2,0.1,1,2,1,5,1,0,0,0,,0,0,,,False,False,False,0.0,0.0
+984,"Dem pubblicano testimonianza shock, 'Trump mi violentò brutalmente nel '93'",unknown,unknown,2,0.0,1,2,1,7,1,0,0,0,,0,0,,,False,False,False,1.0,0.0
+985,"President Trump Puts Mississippi First with Historic Tax Cuts, Surging Investment, and Stronger Communities",unknown,unknown,2,0.6,1,2,1,27,5,0,0,0,,0,0,,,False,False,False,0.0,0.5
+987,"UN System ‘Sits Idle While We Fall into Hell’, Special Rapporteur Warns, as ‘Truth in Palestine Is under Attack’",military_action,military,2,0.4,1,2,1,13,5,0,0,0,,0,0,,,False,False,False,0.0,0.5
+988,"Messico, stretta sul lavoro nero per le esportazioni agricole",unknown,unknown,2,0.1,1,2,1,2,1,0,0,0,,0,0,,,False,False,False,1.0,0.0
+991,"In Australia, Sydney’s second airport blows some passengers off course",unknown,unknown,2,0.4,1,2,1,3,3,0,0,0,,0,0,,,False,False,False,0.0,0.0
+993,US appeals court sceptical of Trump’s lawsuit over California voter rolls,unknown,unknown,2,1.0,1,2,2,2,4,0,0,0,,0,0,,,False,False,False,0.5,0.0
+994,Secretary Rubio’s Travel to Atlanta to Host the G20 Foreign Ministers’ Meeting,multilateral_meeting,diplomacy,2,0.8,1,2,1,13,8,0,0,0,,0,0,,,False,False,False,0.0,0.0
+995,WNBA Finals: Valkyries beat Dream to reach the brink of their first title,unknown,unknown,2,0.1,1,2,1,8,2,0,0,0,,0,0,,,False,False,False,0.0,0.5
+998,Sudan: One year after the fall of El-Fasher,unknown,unknown,2,0.9,1,2,1,4,3,0,0,0,,0,0,,,False,False,False,0.0,0.5
+1000,Drone strike kills at least 21 and injures 40 in Sudan’s Nyala,military_action,military,2,0.1,1,2,1,7,6,0,0,0,,0,0,,,False,False,False,0.0,0.0
+1001,Netherlands pulls out of Eurovision again over Israel participation,unknown,unknown,2,0.0,1,2,1,4,3,0,0,0,,0,0,,,False,False,False,0.0,0.5

@@ -1,0 +1,1201 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="580" font-family="sans-serif" font-size="11">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="40" y="20" font-size="13">D398 attachment tree: x = when the member was stored, y = hops from the seed over attach-time links; line = best partner (highest cosine)</text>
+<text x="4" y="44" fill="#888">0</text>
+<text x="4" y="84" fill="#888">1</text>
+<text x="4" y="124" fill="#888">2</text>
+<text x="4" y="164" fill="#888">3</text>
+<text x="4" y="204" fill="#888">4</text>
+<text x="4" y="244" fill="#888">5</text>
+<text x="4" y="284" fill="#888">6</text>
+<text x="4" y="324" fill="#888">7</text>
+<text x="4" y="364" fill="#888">8</text>
+<text x="4" y="404" fill="#888">9</text>
+<text x="4" y="444" fill="#888">10</text>
+<text x="4" y="484" fill="#888">n/a</text>
+<line x1="47.6" y1="92.0" x2="40.0" y2="43.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="55.3" y1="138.0" x2="47.6" y2="92.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="55.3" y1="86.0" x2="40.0" y2="58.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="55.3" y1="80.0" x2="40.0" y2="40.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="56.9" y1="92.0" x2="40.0" y2="43.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="56.9" y1="89.0" x2="40.0" y2="43.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="59.2" y1="92.0" x2="40.0" y2="40.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="61.1" y1="95.0" x2="55.3" y2="86.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="62.4" y1="138.0" x2="55.3" y2="80.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="63.0" y1="83.0" x2="56.9" y2="92.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="83.2" y1="132.0" x2="55.3" y2="80.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="83.2" y1="83.0" x2="40.0" y2="43.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="84.3" y1="83.0" x2="40.0" y2="58.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="89.4" y1="83.0" x2="61.1" y2="95.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="90.1" y1="80.0" x2="40.0" y2="43.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="90.1" y1="132.0" x2="89.4" y2="83.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="98.5" y1="92.0" x2="61.1" y2="95.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="99.2" y1="138.0" x2="98.5" y2="92.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="106.5" y1="138.0" x2="98.5" y2="92.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="112.1" y1="132.0" x2="98.5" y2="92.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="114.7" y1="129.0" x2="106.5" y2="138.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="114.7" y1="80.0" x2="40.0" y2="43.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="130.1" y1="98.0" x2="40.0" y2="43.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="130.1" y1="80.0" x2="40.0" y2="43.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="130.7" y1="98.0" x2="40.0" y2="58.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="131.4" y1="123.0" x2="114.7" y2="80.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="132.7" y1="92.0" x2="40.0" y2="43.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="134.6" y1="86.0" x2="130.1" y2="98.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="134.6" y1="169.0" x2="131.4" y2="123.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="134.6" y1="178.0" x2="131.4" y2="123.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="135.2" y1="86.0" x2="130.1" y2="80.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="135.3" y1="80.0" x2="130.1" y2="80.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="137.8" y1="92.0" x2="130.7" y2="98.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="139.1" y1="175.0" x2="131.4" y2="123.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="139.8" y1="209.0" x2="139.1" y2="175.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="139.8" y1="178.0" x2="131.4" y2="123.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="139.8" y1="126.0" x2="130.1" y2="80.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="140.4" y1="126.0" x2="131.4" y2="123.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="141.1" y1="83.0" x2="89.4" y2="83.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="144.3" y1="83.0" x2="40.0" y2="43.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="148.3" y1="98.0" x2="130.1" y2="80.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="148.3" y1="175.0" x2="139.8" y2="178.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="148.3" y1="120.0" x2="114.7" y2="80.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="149.0" y1="92.0" x2="40.0" y2="43.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="149.4" y1="218.0" x2="148.3" y2="175.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="154.0" y1="120.0" x2="141.1" y2="83.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="155.3" y1="209.0" x2="139.8" y2="178.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="156.1" y1="243.0" x2="149.4" y2="218.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="156.3" y1="283.0" x2="156.1" y2="243.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="156.3" y1="298.0" x2="156.1" y2="243.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="156.3" y1="289.0" x2="156.1" y2="243.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="156.3" y1="283.0" x2="156.1" y2="243.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="157.2" y1="160.0" x2="139.1" y2="175.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="157.2" y1="169.0" x2="139.1" y2="175.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="157.2" y1="83.0" x2="149.0" y2="92.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="158.5" y1="80.0" x2="40.0" y2="43.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="159.1" y1="218.0" x2="148.3" y2="175.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="159.8" y1="83.0" x2="40.0" y2="58.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="160.5" y1="160.0" x2="131.4" y2="123.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="161.1" y1="89.0" x2="130.1" y2="80.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="163.0" y1="169.0" x2="157.2" y2="169.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="166.2" y1="175.0" x2="159.1" y2="218.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="168.2" y1="160.0" x2="55.3" y2="138.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="168.8" y1="178.0" x2="139.8" y2="178.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="169.5" y1="135.0" x2="131.4" y2="123.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="170.1" y1="132.0" x2="141.1" y2="83.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="170.8" y1="166.0" x2="139.1" y2="175.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="170.8" y1="329.0" x2="156.3" y2="283.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="171.4" y1="360.0" x2="170.8" y2="329.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="174.0" y1="215.0" x2="148.3" y2="175.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="174.7" y1="169.0" x2="157.2" y2="169.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="174.7" y1="160.0" x2="159.1" y2="218.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="175.9" y1="92.0" x2="157.2" y2="160.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="177.2" y1="123.0" x2="157.2" y2="160.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="179.8" y1="203.0" x2="134.6" y2="169.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="179.8" y1="126.0" x2="131.4" y2="123.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="179.8" y1="160.0" x2="157.2" y2="169.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="183.1" y1="95.0" x2="89.4" y2="83.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="184.4" y1="166.0" x2="179.8" y2="160.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="185.6" y1="83.0" x2="135.2" y2="86.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="185.6" y1="409.0" x2="171.4" y2="360.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="185.6" y1="160.0" x2="157.2" y2="169.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="185.6" y1="218.0" x2="149.4" y2="218.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="186.3" y1="443.0" x2="185.6" y2="409.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="186.3" y1="138.0" x2="139.1" y2="175.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="189.5" y1="126.0" x2="170.1" y2="132.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="189.5" y1="160.0" x2="166.2" y2="175.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="190.2" y1="80.0" x2="40.0" y2="58.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="193.8" y1="132.0" x2="135.3" y2="80.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="195.3" y1="169.0" x2="186.3" y2="138.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="205.7" y1="163.0" x2="139.8" y2="178.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="205.7" y1="178.0" x2="186.3" y2="138.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="205.7" y1="123.0" x2="130.7" y2="98.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="209.0" y1="120.0" x2="55.3" y2="80.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="209.6" y1="163.0" x2="209.0" y2="120.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="209.6" y1="160.0" x2="209.0" y2="120.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="210.1" y1="218.0" x2="209.6" y2="160.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="210.6" y1="89.0" x2="131.4" y2="123.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="210.6" y1="172.0" x2="186.3" y2="138.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="211.5" y1="166.0" x2="209.0" y2="120.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="211.5" y1="172.0" x2="186.3" y2="138.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="212.8" y1="166.0" x2="186.3" y2="138.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="214.1" y1="172.0" x2="179.8" y2="126.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="214.1" y1="175.0" x2="186.3" y2="138.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="214.1" y1="160.0" x2="179.8" y2="126.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="222.6" y1="166.0" x2="210.1" y2="218.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="223.0" y1="83.0" x2="175.9" y2="92.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="223.0" y1="172.0" x2="179.8" y2="126.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="223.7" y1="98.0" x2="141.1" y2="83.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="224.3" y1="129.0" x2="186.3" y2="138.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="226.5" y1="95.0" x2="149.0" y2="92.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="227.5" y1="86.0" x2="226.5" y2="95.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="227.5" y1="92.0" x2="226.5" y2="95.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="228.2" y1="89.0" x2="186.3" y2="138.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="229.5" y1="160.0" x2="186.3" y2="138.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="231.4" y1="80.0" x2="40.0" y2="43.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="232.0" y1="175.0" x2="134.6" y2="169.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="232.0" y1="169.0" x2="157.2" y2="169.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="234.0" y1="138.0" x2="189.5" y2="126.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="234.6" y1="163.0" x2="157.2" y2="169.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="234.6" y1="138.0" x2="205.7" y2="163.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="235.2" y1="123.0" x2="186.3" y2="138.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="235.3" y1="89.0" x2="227.5" y2="92.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="235.3" y1="135.0" x2="189.5" y2="126.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="235.9" y1="83.0" x2="55.3" y2="86.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="236.0" y1="92.0" x2="227.5" y2="92.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="237.9" y1="126.0" x2="234.0" y2="138.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="239.2" y1="83.0" x2="226.5" y2="95.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="239.8" y1="135.0" x2="170.1" y2="132.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="240.4" y1="120.0" x2="184.4" y2="166.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="243.0" y1="135.0" x2="90.1" y2="132.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="243.7" y1="89.0" x2="235.9" y2="83.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="245.0" y1="120.0" x2="170.1" y2="132.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="245.0" y1="129.0" x2="139.1" y2="175.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="245.0" y1="172.0" x2="157.2" y2="169.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="245.0" y1="95.0" x2="226.5" y2="95.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="245.0" y1="83.0" x2="226.5" y2="95.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="246.9" y1="135.0" x2="89.4" y2="83.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="247.6" y1="135.0" x2="245.0" y2="95.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="248.4" y1="83.0" x2="245.0" y2="95.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="248.4" y1="120.0" x2="223.0" y2="83.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="249.6" y1="123.0" x2="248.4" y2="83.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="250.1" y1="129.0" x2="245.0" y2="129.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="250.2" y1="135.0" x2="189.5" y2="126.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="250.2" y1="172.0" x2="249.6" y2="123.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="251.0" y1="166.0" x2="139.8" y2="126.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="251.0" y1="83.0" x2="130.1" y2="80.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="251.0" y1="135.0" x2="236.0" y2="92.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="251.0" y1="86.0" x2="248.4" y2="83.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="254.6" y1="123.0" x2="185.6" y2="160.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="259.8" y1="86.0" x2="227.5" y2="92.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="274.0" y1="120.0" x2="135.2" y2="86.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="274.0" y1="138.0" x2="179.8" y2="160.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="274.0" y1="175.0" x2="189.5" y2="126.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="274.0" y1="138.0" x2="223.7" y2="98.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="274.0" y1="218.0" x2="174.0" y2="215.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="274.1" y1="215.0" x2="251.0" y2="166.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="274.1" y1="212.0" x2="209.6" y2="160.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="274.1" y1="172.0" x2="209.0" y2="120.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="274.7" y1="160.0" x2="131.4" y2="123.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="274.7" y1="252.0" x2="274.1" y2="215.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="274.7" y1="255.0" x2="274.1" y2="212.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="274.7" y1="249.0" x2="274.1" y2="212.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="275.9" y1="123.0" x2="135.2" y2="86.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="275.9" y1="175.0" x2="235.2" y2="123.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="276.6" y1="89.0" x2="245.0" y2="95.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="277.9" y1="169.0" x2="157.2" y2="169.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="277.9" y1="126.0" x2="245.0" y2="83.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="278.5" y1="169.0" x2="209.0" y2="120.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="279.2" y1="240.0" x2="274.1" y2="212.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="280.4" y1="80.0" x2="227.5" y2="92.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="281.8" y1="126.0" x2="254.6" y2="123.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="285.7" y1="172.0" x2="247.6" y2="135.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="285.7" y1="132.0" x2="247.6" y2="135.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="286.9" y1="178.0" x2="285.7" y2="132.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="286.9" y1="160.0" x2="285.7" y2="132.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="286.9" y1="175.0" x2="285.7" y2="132.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="289.5" y1="163.0" x2="224.3" y2="129.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="290.8" y1="135.0" x2="251.0" y2="83.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="290.8" y1="172.0" x2="234.6" y2="138.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="290.8" y1="160.0" x2="209.0" y2="120.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="290.8" y1="206.0" x2="189.5" y2="160.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="293.9" y1="135.0" x2="245.0" y2="95.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="296.0" y1="129.0" x2="293.9" y2="135.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="296.0" y1="203.0" x2="274.7" y2="252.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="298.6" y1="95.0" x2="227.5" y2="92.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="301.2" y1="166.0" x2="224.3" y2="129.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="315.2" y1="138.0" x2="298.6" y2="95.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="315.2" y1="135.0" x2="139.8" y2="178.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="315.3" y1="375.0" x2="170.8" y2="329.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="315.3" y1="132.0" x2="237.9" y2="126.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="315.3" y1="203.0" x2="189.5" y2="160.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="318.5" y1="200.0" x2="135.3" y2="498.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="319.2" y1="166.0" x2="234.6" y2="138.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="319.2" y1="169.0" x2="247.6" y2="135.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="319.2" y1="178.0" x2="315.2" y2="135.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="320.5" y1="169.0" x2="285.7" y2="132.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="320.5" y1="132.0" x2="285.7" y2="132.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="321.8" y1="172.0" x2="320.5" y2="132.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="321.8" y1="138.0" x2="293.9" y2="135.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="321.8" y1="132.0" x2="315.2" y2="138.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="323.6" y1="163.0" x2="293.9" y2="135.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="323.6" y1="135.0" x2="285.7" y2="132.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="323.6" y1="98.0" x2="226.5" y2="95.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="324.0" y1="175.0" x2="323.6" y2="135.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="324.4" y1="169.0" x2="315.2" y2="135.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="324.4" y1="132.0" x2="274.0" y2="175.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="324.7" y1="172.0" x2="245.0" y2="129.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="326.9" y1="169.0" x2="157.2" y2="169.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="326.9" y1="132.0" x2="248.4" y2="83.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="328.1" y1="132.0" x2="315.2" y2="138.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="328.8" y1="123.0" x2="285.7" y2="132.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="330.1" y1="169.0" x2="179.8" y2="126.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="330.1" y1="126.0" x2="239.8" y2="135.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="330.7" y1="215.0" x2="149.4" y2="218.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="330.7" y1="126.0" x2="148.3" y2="98.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="331.3" y1="123.0" x2="227.5" y2="92.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="331.7" y1="123.0" x2="235.3" y2="135.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="332.6" y1="166.0" x2="254.6" y2="123.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="332.6" y1="166.0" x2="224.3" y2="129.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="332.6" y1="120.0" x2="298.6" y2="95.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="335.3" y1="135.0" x2="130.1" y2="80.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="335.3" y1="129.0" x2="131.4" y2="123.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="335.9" y1="178.0" x2="189.5" y2="160.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="335.9" y1="123.0" x2="323.6" y2="98.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="336.5" y1="120.0" x2="315.2" y2="135.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="339.2" y1="215.0" x2="149.4" y2="218.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="339.2" y1="123.0" x2="285.7" y2="132.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="340.5" y1="135.0" x2="245.0" y2="95.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="342.3" y1="172.0" x2="157.2" y2="169.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="343.6" y1="123.0" x2="157.2" y2="169.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="344.3" y1="120.0" x2="285.7" y2="132.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="344.3" y1="138.0" x2="248.4" y2="83.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="351.1" y1="120.0" x2="245.0" y2="120.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="352.2" y1="175.0" x2="344.3" y2="138.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="352.2" y1="120.0" x2="335.3" y2="129.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="352.2" y1="132.0" x2="339.2" y2="123.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="352.2" y1="120.0" x2="328.8" y2="123.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="352.2" y1="178.0" x2="323.6" y2="135.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="352.2" y1="132.0" x2="285.7" y2="132.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="352.2" y1="138.0" x2="328.8" y2="123.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="352.2" y1="123.0" x2="328.8" y2="123.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="352.2" y1="163.0" x2="328.8" y2="123.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="353.1" y1="169.0" x2="352.2" y2="132.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="353.8" y1="172.0" x2="332.6" y2="166.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="355.1" y1="166.0" x2="232.0" y2="175.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="355.8" y1="160.0" x2="331.7" y2="123.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="356.5" y1="138.0" x2="251.0" y2="135.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="371.1" y1="169.0" x2="274.0" y2="120.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="371.8" y1="246.0" x2="274.7" y2="255.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="371.9" y1="129.0" x2="315.2" y2="135.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="371.9" y1="135.0" x2="245.0" y2="129.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="371.9" y1="120.0" x2="251.0" y2="83.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="371.9" y1="120.0" x2="130.1" y2="80.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="371.9" y1="123.0" x2="323.6" y2="135.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="371.9" y1="129.0" x2="328.8" y2="123.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="371.9" y1="163.0" x2="328.8" y2="123.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="371.9" y1="135.0" x2="323.6" y2="135.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="371.9" y1="120.0" x2="330.7" y2="126.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="371.9" y1="123.0" x2="141.1" y2="83.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="371.9" y1="172.0" x2="90.1" y2="132.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="372.6" y1="169.0" x2="371.9" y2="120.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="373.9" y1="135.0" x2="352.2" y2="132.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="375.6" y1="123.0" x2="323.6" y2="135.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="376.6" y1="178.0" x2="371.9" y2="135.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="379.1" y1="178.0" x2="352.2" y2="120.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="379.2" y1="175.0" x2="157.2" y2="169.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="381.6" y1="120.0" x2="371.9" y2="135.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="408.5" y1="123.0" x2="375.6" y2="123.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="408.5" y1="132.0" x2="375.6" y2="123.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="408.5" y1="175.0" x2="281.8" y2="126.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="408.5" y1="132.0" x2="159.8" y2="83.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="408.5" y1="123.0" x2="135.3" y2="80.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="408.5" y1="138.0" x2="371.9" y2="120.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="408.9" y1="175.0" x2="371.9" y2="120.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="408.9" y1="209.0" x2="408.5" y2="175.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="408.9" y1="206.0" x2="408.5" y2="175.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="409.4" y1="120.0" x2="408.5" y2="175.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="409.4" y1="166.0" x2="381.6" y2="120.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="515.4" y1="206.0" x2="371.9" y2="163.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="516.2" y1="166.0" x2="296.0" y2="203.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="516.2" y1="160.0" x2="234.6" y2="138.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="516.2" y1="138.0" x2="355.1" y2="166.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="516.2" y1="178.0" x2="408.5" y2="123.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="516.2" y1="166.0" x2="371.9" y2="123.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="516.2" y1="120.0" x2="298.6" y2="95.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="516.2" y1="138.0" x2="251.0" y2="83.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="516.2" y1="129.0" x2="210.6" y2="89.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="516.2" y1="132.0" x2="251.0" y2="83.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="516.2" y1="138.0" x2="408.5" y2="123.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="516.2" y1="135.0" x2="408.5" y2="123.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="516.2" y1="172.0" x2="408.5" y2="175.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="517.9" y1="120.0" x2="335.3" y2="135.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="517.9" y1="163.0" x2="515.4" y2="206.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="517.9" y1="138.0" x2="352.2" y2="132.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="532.6" y1="132.0" x2="517.9" y2="120.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="532.6" y1="123.0" x2="516.2" y2="120.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="533.3" y1="212.0" x2="352.2" y2="178.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="533.9" y1="169.0" x2="285.7" y2="132.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="533.9" y1="120.0" x2="251.0" y2="83.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="533.9" y1="169.0" x2="517.9" y2="120.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="533.9" y1="178.0" x2="532.6" y2="132.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="533.9" y1="175.0" x2="371.9" y2="120.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="533.9" y1="212.0" x2="296.0" y2="203.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="535.3" y1="123.0" x2="328.8" y2="123.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="536.4" y1="175.0" x2="408.5" y2="175.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="539.0" y1="163.0" x2="533.9" y2="169.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="539.0" y1="172.0" x2="533.9" y2="120.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="539.6" y1="172.0" x2="532.6" y2="132.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="541.2" y1="160.0" x2="516.2" y2="135.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="542.2" y1="178.0" x2="533.9" y2="212.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="542.8" y1="126.0" x2="408.5" y2="123.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="544.8" y1="200.0" x2="533.9" y2="169.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="546.1" y1="169.0" x2="371.9" y2="120.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="546.7" y1="166.0" x2="539.0" y2="163.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="548.6" y1="135.0" x2="371.9" y2="120.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="549.3" y1="169.0" x2="516.2" y2="138.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="549.3" y1="175.0" x2="516.2" y2="160.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="549.9" y1="132.0" x2="535.3" y2="123.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="551.3" y1="135.0" x2="276.6" y2="89.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="552.5" y1="175.0" x2="539.0" y2="163.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="553.1" y1="160.0" x2="408.5" y2="132.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="555.3" y1="169.0" x2="549.9" y2="132.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="556.4" y1="175.0" x2="551.3" y2="135.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="557.0" y1="166.0" x2="551.3" y2="135.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="557.0" y1="160.0" x2="408.5" y2="132.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="558.3" y1="172.0" x2="539.0" y2="163.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="558.9" y1="175.0" x2="551.3" y2="135.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="559.6" y1="175.0" x2="516.2" y2="135.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="595.1" y1="172.0" x2="559.6" y2="175.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="595.1" y1="172.0" x2="559.6" y2="175.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="595.1" y1="178.0" x2="551.3" y2="135.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="595.1" y1="175.0" x2="330.7" y2="126.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="595.1" y1="166.0" x2="532.6" y2="132.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="597.0" y1="163.0" x2="516.2" y2="135.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="598.4" y1="160.0" x2="532.6" y2="132.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="599.9" y1="178.0" x2="595.1" y2="172.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="599.9" y1="166.0" x2="532.6" y2="132.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="599.9" y1="169.0" x2="533.9" y2="120.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="609.9" y1="160.0" x2="408.5" y2="123.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="610.6" y1="163.0" x2="408.5" y2="175.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="612.1" y1="175.0" x2="551.3" y2="135.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="613.5" y1="169.0" x2="517.9" y2="163.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="613.5" y1="172.0" x2="595.1" y2="178.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="615.7" y1="206.0" x2="598.4" y2="160.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="615.7" y1="169.0" x2="598.4" y2="160.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="617.3" y1="166.0" x2="408.5" y2="123.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="619.0" y1="166.0" x2="352.2" y2="123.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="622.9" y1="169.0" x2="595.1" y2="172.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="622.9" y1="166.0" x2="516.2" y2="129.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="627.2" y1="169.0" x2="408.5" y2="123.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="627.3" y1="166.0" x2="551.3" y2="135.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="627.3" y1="169.0" x2="535.3" y2="123.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="630.6" y1="169.0" x2="516.2" y2="160.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="632.0" y1="169.0" x2="539.6" y2="172.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="646.6" y1="172.0" x2="532.6" y2="123.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="646.6" y1="178.0" x2="379.1" y2="178.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="646.6" y1="160.0" x2="542.8" y2="126.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="646.6" y1="178.0" x2="533.9" y2="169.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="650.0" y1="178.0" x2="408.5" y2="132.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="650.0" y1="172.0" x2="539.0" y2="163.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="653.2" y1="175.0" x2="549.9" y2="132.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="653.2" y1="206.0" x2="646.6" y2="178.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="653.2" y1="160.0" x2="650.0" y2="178.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="653.2" y1="178.0" x2="559.6" y2="175.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="653.2" y1="160.0" x2="408.5" y2="175.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="656.3" y1="166.0" x2="653.2" y2="178.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="657.0" y1="175.0" x2="551.3" y2="135.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="658.3" y1="178.0" x2="516.2" y2="135.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="658.9" y1="160.0" x2="653.2" y2="178.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="658.9" y1="160.0" x2="632.0" y2="169.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="686.7" y1="206.0" x2="658.9" y2="160.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="688.1" y1="160.0" x2="595.1" y2="172.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="688.1" y1="169.0" x2="535.3" y2="123.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="688.1" y1="209.0" x2="657.0" y2="175.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="688.1" y1="178.0" x2="533.9" y2="169.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="689.5" y1="166.0" x2="658.9" y2="160.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="689.6" y1="200.0" x2="653.2" y2="178.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="689.6" y1="175.0" x2="517.9" y2="163.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="691.0" y1="169.0" x2="533.9" y2="169.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="691.0" y1="160.0" x2="688.1" y2="169.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="692.6" y1="166.0" x2="517.9" y2="120.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="698.0" y1="160.0" x2="517.9" y2="120.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="699.4" y1="178.0" x2="535.3" y2="123.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="701.2" y1="178.0" x2="688.1" y2="178.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="701.2" y1="206.0" x2="646.6" y2="160.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="702.7" y1="169.0" x2="689.5" y2="166.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="702.7" y1="163.0" x2="699.4" y2="178.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="703.6" y1="212.0" x2="691.0" y2="160.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="703.6" y1="169.0" x2="551.3" y2="135.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="706.8" y1="175.0" x2="702.7" y2="163.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="709.3" y1="172.0" x2="551.3" y2="135.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="709.3" y1="166.0" x2="702.7" y2="163.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="714.5" y1="175.0" x2="532.6" y2="132.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="714.5" y1="218.0" x2="617.3" y2="166.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="715.8" y1="160.0" x2="535.3" y2="123.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="715.8" y1="160.0" x2="699.4" y2="178.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="715.8" y1="160.0" x2="702.7" y2="163.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="717.1" y1="160.0" x2="598.4" y2="160.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="718.4" y1="212.0" x2="539.0" y2="172.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="720.9" y1="200.0" x2="517.9" y2="163.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="723.6" y1="215.0" x2="617.3" y2="166.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="727.4" y1="163.0" x2="703.6" y2="169.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="727.4" y1="206.0" x2="709.3" y2="172.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="730.7" y1="160.0" x2="702.7" y2="163.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="731.9" y1="169.0" x2="559.6" y2="175.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="731.9" y1="166.0" x2="617.3" y2="166.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="735.6" y1="175.0" x2="715.8" y2="160.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="737.6" y1="200.0" x2="727.4" y2="206.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="738.9" y1="200.0" x2="627.2" y2="169.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="739.3" y1="175.0" x2="533.9" y2="169.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="739.3" y1="218.0" x2="715.8" y2="160.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="740.9" y1="206.0" x2="739.3" y2="175.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="740.9" y1="169.0" x2="715.8" y2="160.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="742.8" y1="169.0" x2="653.2" y2="178.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="746.0" y1="206.0" x2="735.6" y2="175.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="747.4" y1="215.0" x2="688.1" y2="169.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="750.0" y1="200.0" x2="691.0" y2="160.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="750.0" y1="172.0" x2="646.6" y2="160.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="751.2" y1="249.0" x2="750.0" y2="200.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="751.9" y1="292.0" x2="751.2" y2="249.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="755.1" y1="203.0" x2="730.7" y2="160.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="759.6" y1="169.0" x2="715.8" y2="160.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="764.1" y1="209.0" x2="715.8" y2="160.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="764.1" y1="215.0" x2="688.1" y2="169.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="764.1" y1="169.0" x2="731.9" y2="169.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="767.3" y1="160.0" x2="731.9" y2="169.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="767.3" y1="166.0" x2="689.5" y2="166.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="773.1" y1="178.0" x2="535.3" y2="123.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="775.1" y1="206.0" x2="516.2" y2="166.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="775.1" y1="215.0" x2="727.4" y2="163.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="775.7" y1="249.0" x2="775.1" y2="215.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="775.7" y1="240.0" x2="775.1" y2="206.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="775.7" y1="255.0" x2="775.1" y2="206.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="776.3" y1="172.0" x2="730.7" y2="160.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="777.7" y1="166.0" x2="735.6" y2="175.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="781.2" y1="166.0" x2="598.4" y2="160.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="781.2" y1="203.0" x2="740.9" y2="169.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="782.2" y1="163.0" x2="516.2" y2="178.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="782.2" y1="175.0" x2="598.4" y2="160.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="782.2" y1="209.0" x2="776.3" y2="172.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="783.9" y1="166.0" x2="776.3" y2="172.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="784.9" y1="212.0" x2="783.9" y2="166.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="791.2" y1="163.0" x2="776.3" y2="172.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="791.4" y1="160.0" x2="517.9" y2="120.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="791.4" y1="169.0" x2="776.3" y2="172.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="792.3" y1="203.0" x2="777.7" y2="166.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="793.0" y1="212.0" x2="777.7" y2="166.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="793.1" y1="218.0" x2="730.7" y2="160.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="794.4" y1="172.0" x2="791.2" y2="163.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="797.0" y1="200.0" x2="794.4" y2="172.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="797.0" y1="166.0" x2="791.2" y2="163.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="797.0" y1="163.0" x2="776.3" y2="172.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="798.3" y1="215.0" x2="797.0" y2="166.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="798.3" y1="203.0" x2="797.0" y2="166.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="804.8" y1="172.0" x2="797.0" y2="166.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="805.4" y1="175.0" x2="794.4" y2="172.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="806.0" y1="163.0" x2="794.4" y2="172.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="807.4" y1="200.0" x2="798.3" y2="203.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="809.4" y1="206.0" x2="791.4" y2="169.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="809.4" y1="212.0" x2="797.0" y2="166.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="809.4" y1="160.0" x2="797.0" y2="166.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="810.6" y1="169.0" x2="646.6" y2="178.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="810.6" y1="212.0" x2="691.0" y2="160.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="811.9" y1="209.0" x2="791.4" y2="169.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="811.9" y1="169.0" x2="551.3" y2="135.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="816.3" y1="209.0" x2="809.4" y2="206.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="816.4" y1="169.0" x2="688.1" y2="169.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="816.4" y1="212.0" x2="794.4" y2="172.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="816.4" y1="175.0" x2="791.2" y2="163.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="817.7" y1="243.0" x2="807.4" y2="200.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="820.3" y1="215.0" x2="804.8" y2="172.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="820.3" y1="206.0" x2="810.6" y2="169.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="820.3" y1="218.0" x2="811.9" y2="209.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="821.5" y1="175.0" x2="794.4" y2="172.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="822.9" y1="169.0" x2="816.3" y2="209.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="827.7" y1="178.0" x2="816.4" y2="175.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="829.8" y1="218.0" x2="820.3" y2="215.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="829.9" y1="206.0" x2="809.4" y2="212.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="831.3" y1="203.0" x2="811.9" y2="169.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="831.3" y1="200.0" x2="809.4" y2="206.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="832.5" y1="209.0" x2="820.3" y2="215.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="840.9" y1="203.0" x2="797.0" y2="166.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="873.8" y1="200.0" x2="598.4" y2="160.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="873.8" y1="209.0" x2="731.9" y2="166.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="873.9" y1="258.0" x2="688.1" y2="209.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="874.6" y1="280.0" x2="873.9" y2="258.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="875.3" y1="209.0" x2="816.4" y2="175.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="879.1" y1="218.0" x2="617.3" y2="166.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="882.0" y1="218.0" x2="879.1" y2="218.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="882.0" y1="215.0" x2="791.4" y2="160.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="883.7" y1="249.0" x2="793.0" y2="212.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="883.8" y1="240.0" x2="798.3" y2="215.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="886.0" y1="249.0" x2="882.0" y2="215.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="887.6" y1="218.0" x2="615.7" y2="169.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="887.6" y1="203.0" x2="615.7" y2="169.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="887.6" y1="212.0" x2="615.7" y2="169.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="887.6" y1="286.0" x2="886.0" y2="249.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="890.1" y1="203.0" x2="810.6" y2="169.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="890.1" y1="298.0" x2="883.8" y2="240.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="891.8" y1="212.0" x2="809.4" y2="206.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="893.6" y1="218.0" x2="791.2" y2="163.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="894.6" y1="200.0" x2="688.1" y2="209.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="894.6" y1="206.0" x2="688.1" y2="209.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="894.6" y1="218.0" x2="688.1" y2="209.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="894.6" y1="206.0" x2="811.9" y2="209.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="896.0" y1="206.0" x2="656.3" y2="166.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="898.0" y1="209.0" x2="797.0" y2="166.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="898.0" y1="206.0" x2="776.3" y2="172.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="900.0" y1="212.0" x2="688.1" y2="209.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="900.0" y1="203.0" x2="782.2" y2="175.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="900.0" y1="206.0" x2="807.4" y2="200.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="902.0" y1="212.0" x2="816.4" y2="212.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="902.2" y1="215.0" x2="840.9" y2="203.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="905.1" y1="200.0" x2="894.6" y2="206.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="907.0" y1="258.0" x2="894.6" y2="218.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="907.0" y1="258.0" x2="811.9" y2="209.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="907.0" y1="215.0" x2="811.9" y2="209.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="910.2" y1="215.0" x2="810.6" y2="169.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="910.2" y1="206.0" x2="598.4" y2="160.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="910.2" y1="212.0" x2="882.0" y2="215.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="912.3" y1="212.0" x2="703.6" y2="169.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="914.4" y1="209.0" x2="650.0" y2="172.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="918.3" y1="209.0" x2="887.6" y2="212.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="918.3" y1="215.0" x2="887.6" y2="218.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="925.0" y1="203.0" x2="781.2" y2="166.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="966.9" y1="212.0" x2="822.9" y2="169.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="966.9" y1="215.0" x2="689.5" y2="166.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="966.9" y1="203.0" x2="702.7" y2="169.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="967.0" y1="203.0" x2="701.2" y2="178.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="970.5" y1="203.0" x2="910.2" y2="206.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="971.8" y1="200.0" x2="816.4" y2="212.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="979.2" y1="209.0" x2="727.4" y2="163.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="979.2" y1="240.0" x2="879.1" y2="218.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="986.9" y1="243.0" x2="925.0" y2="203.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="990.1" y1="209.0" x2="816.3" y2="209.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="991.7" y1="243.0" x2="887.6" y2="212.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="995.2" y1="249.0" x2="900.0" y2="203.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="997.1" y1="243.0" x2="875.3" y2="209.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="997.1" y1="246.0" x2="925.0" y2="203.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="998.4" y1="206.0" x2="995.2" y2="249.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="1001.0" y1="209.0" x2="887.6" y2="203.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="1006.6" y1="249.0" x2="990.1" y2="209.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="1012.2" y1="200.0" x2="966.9" y2="203.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="1015.3" y1="243.0" x2="879.1" y2="218.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="1017.6" y1="206.0" x2="831.3" y2="200.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="1017.6" y1="212.0" x2="822.9" y2="169.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="1019.1" y1="255.0" x2="990.1" y2="209.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="1020.5" y1="200.0" x2="890.1" y2="203.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="1066.1" y1="243.0" x2="998.4" y2="206.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="1067.6" y1="203.0" x2="900.0" y2="212.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="1067.6" y1="206.0" x2="791.2" y2="163.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="1070.6" y1="240.0" x2="998.4" y2="206.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="1071.9" y1="203.0" x2="971.8" y2="200.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="1075.4" y1="200.0" x2="971.8" y2="200.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="1076.9" y1="212.0" x2="902.0" y2="212.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="1084.9" y1="243.0" x2="1012.2" y2="200.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="1088.7" y1="218.0" x2="971.8" y2="200.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="1093.2" y1="240.0" x2="1084.9" y2="243.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="1109.5" y1="249.0" x2="966.9" y2="212.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="1117.2" y1="252.0" x2="971.8" y2="200.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="1165.6" y1="249.0" x2="998.4" y2="206.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="1187.0" y1="243.0" x2="902.0" y2="212.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="1187.0" y1="246.0" x2="979.2" y2="209.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="1189.5" y1="240.0" x2="900.0" y2="203.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="1191.0" y1="252.0" x2="1189.5" y2="240.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="1197.1" y1="240.0" x2="1001.0" y2="209.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="1249.5" y1="258.0" x2="971.8" y2="200.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="1258.2" y1="255.0" x2="1012.2" y2="200.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="1258.9" y1="298.0" x2="1258.2" y2="255.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="1265.8" y1="323.0" x2="1258.9" y2="298.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="1268.4" y1="292.0" x2="1117.2" y2="252.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="1342.6" y1="252.0" x2="1249.5" y2="258.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="1342.6" y1="240.0" x2="1249.5" y2="258.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="1342.6" y1="252.0" x2="1249.5" y2="258.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="1342.6" y1="252.0" x2="1075.4" y2="200.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="1342.7" y1="295.0" x2="1191.0" y2="252.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="1344.7" y1="298.0" x2="1342.6" y2="252.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="1344.7" y1="298.0" x2="1342.6" y2="252.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="1350.7" y1="280.0" x2="1342.6" y2="252.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="1350.7" y1="338.0" x2="1258.9" y2="298.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="1352.9" y1="280.0" x2="1342.6" y2="240.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="1354.1" y1="338.0" x2="1352.9" y2="280.0" stroke="#bbb" stroke-width="0.5"/>
+<line x1="1360.0" y1="298.0" x2="1342.6" y2="252.0" stroke="#bbb" stroke-width="0.5"/>
+<circle cx="40.0" cy="43.0" r="4" fill="#3cb44b"><title>8331 S1: Six Ukrainian energy sites hit by Russia since Trump announced ceasefire, Zelensky says</title></circle>
+<circle cx="40.0" cy="55.0" r="4" fill="#bcf60c"><title>8440 S2: Trump claims Russia and Ukraine agreed to 'energy ceasefire'</title></circle>
+<circle cx="40.0" cy="58.0" r="4" fill="#3cb44b"><title>8455 S1: 'Increasingly evident' Russia won't accept 'energy ceasefire': Zelensky</title></circle>
+<circle cx="40.0" cy="58.0" r="4" fill="#bcf60c"><title>8490 S2: Trump insists energy ceasefire holds as Ukraine reports new Russian strikes</title></circle>
+<circle cx="40.0" cy="40.0" r="4" fill="#777"><title>8491 S3: Russia and Ukraine trade strikes amid doubt over ‘energy ceasefire’</title></circle>
+<circle cx="40.0" cy="40.0" r="4" fill="#bcf60c"><title>8561 S2: Trump says Ukraine, Russia agree to energy strike ceasefire 'because I said they agreed'</title></circle>
+<circle cx="40.0" cy="52.0" r="4" fill="#3cb44b"><title>8572 S1: 'We have one refinery' — Zelensky says energy ceasefire must cover power grid, not just oil, as Russia strikes energy fa</title></circle>
+<circle cx="47.6" cy="92.0" r="2.2" fill="#e6194b"><title>8908 S4: Putin wants Ukraine deal more than Zelensky</title></circle>
+<circle cx="55.3" cy="138.0" r="2.2" fill="#777"><title>8329 S5: Russia's offensive ability is broken, Kyiv's former top general tells BBC</title></circle>
+<circle cx="55.3" cy="86.0" r="2.2" fill="#3cb44b"><title>9046 S1: Kyiv stopped attacking Russia's oil refineries, Moscow continues pounding Ukraine's energy grid, Zelensky says</title></circle>
+<circle cx="55.3" cy="80.0" r="2.2" fill="#bcf60c"><title>9058 S2: Roundup: European leaders question Trumps Russia-Ukraine energy ceasefire</title></circle>
+<circle cx="56.9" cy="92.0" r="2.2" fill="#bcf60c"><title>9097 S2: Russia hits energy targets despite Trump ceasefire announcement, says Kyiv</title></circle>
+<circle cx="56.9" cy="89.0" r="2.2" fill="#bcf60c"><title>9103 S2: Russia hits no energy targets in Ukraine after truce</title></circle>
+<circle cx="59.2" cy="92.0" r="2.2" fill="#777"><title>9125 S6: Russia: No red lines in Ukraine - New peace plan by US and EU, the 4 pillars</title></circle>
+<circle cx="61.1" cy="95.0" r="2.2" fill="#3cb44b"><title>9175 S1: Ukraine had no warning from partners on incoming Kyiv missile strike – Zelensky</title></circle>
+<circle cx="62.4" cy="138.0" r="2.2" fill="#bcf60c"><title>9204 S2: Why Moscow is staying tight-lipped on Trump's energy ceasefire</title></circle>
+<circle cx="63.0" cy="83.0" r="2.2" fill="#bcf60c"><title>9220 S2: Russia pounds Ukrainian cities, spares energy targets for first time since Trump 'ceasefire'</title></circle>
+<circle cx="83.2" cy="132.0" r="2.2" fill="#bcf60c"><title>9335 S2: Why Trump’s ‘energy ceasefire’ upset Europe</title></circle>
+<circle cx="83.2" cy="83.0" r="2.2" fill="#bcf60c"><title>9409 S2: Trump refuses to accuse Russia of breaking energy ceasefire, says Ukraine 'hit sites the day before'</title></circle>
+<circle cx="84.3" cy="83.0" r="2.2" fill="#e6194b"><title>9500 S4: Zelenskyy tells NPR Ukraine wants peace but will hit Russia until it follows ceasefire</title></circle>
+<circle cx="89.4" cy="83.0" r="2.2" fill="#777"><title>9633 S7: Kyiv residential building struck by Russia as Ukraine says intelligence sharing from partners interrupted</title></circle>
+<circle cx="90.1" cy="80.0" r="2.2" fill="#3cb44b"><title>9667 S1: Russia Launches Over 100 Missiles At Ukraine, Killing Four Residents, Zelenskyy Accuses Moscow Of Violating US Energy Tr</title></circle>
+<circle cx="90.1" cy="132.0" r="2.2" fill="#777"><title>9664 S8: The Trump administration warns Ukraine it could cut off intel, Zelenskyy tells NPR</title></circle>
+<circle cx="98.5" cy="92.0" r="2.2" fill="#777"><title>9804 S7: Russian strikes hit key power plant in Kyiv, Zelensky says</title></circle>
+<circle cx="99.2" cy="138.0" r="2.2" fill="#3cb44b"><title>9463 S1: Allies failed to warn Ukraine of impending missile attack, Zelensky says</title></circle>
+<circle cx="106.5" cy="138.0" r="2.2" fill="#777"><title>9925 S9: Kyiv power plant hit by Russian missile without warning from allies</title></circle>
+<circle cx="112.1" cy="132.0" r="2.2" fill="#3cb44b"><title>10007 S1: Allies gave Ukraine no warning of impending missile attack, Zelenskyy says</title></circle>
+<circle cx="114.7" cy="129.0" r="2.2" fill="#777"><title>10027 S9: Kyiv hit by Russian ballistic missiles for second day with no warning</title></circle>
+<circle cx="114.7" cy="80.0" r="2.2" fill="#3cb44b"><title>10038 S1: Zelensky defies Trumps warnings with Ukraine drone strike on Russian oil depot</title></circle>
+<circle cx="130.1" cy="98.0" r="2.2" fill="#3cb44b"><title>10198 S1: 🔴Ukraine live: Russia's 'targeted' strikes on energy leave 600,000 without power, Zelensky says</title></circle>
+<circle cx="130.1" cy="80.0" r="2.2" fill="#3cb44b"><title>10199 S1: Ukraine live: Russia's 'targeted' strikes on energy leave 600,000 without power, Zelensky says</title></circle>
+<circle cx="130.7" cy="98.0" r="2.2" fill="#3cb44b"><title>10226 S1: 'Ostentatious disrespect' — Zelensky says Russia defied Trump's energy ceasefire with latest missile strike</title></circle>
+<circle cx="131.4" cy="123.0" r="2.2" fill="#4363d8"><title>10242 S10: 'This cannot be a coincidence' — Ukraine's Starlink access restricted without warning, Zelensky adviser says</title></circle>
+<circle cx="132.7" cy="92.0" r="2.2" fill="#3cb44b"><title>10287 S1: Russia strikes Ukraines energy infrastructure despite energy ceasefire; Zelenskyy says Moscow ignores Trumps statements</title></circle>
+<circle cx="134.6" cy="86.0" r="2.2" fill="#3cb44b"><title>10362 S1: Zelenskyy: Russian attack on energy grid leaves 600,000 without power, damages 30 facilities</title></circle>
+<circle cx="134.6" cy="169.0" r="2.2" fill="#4363d8"><title>10356 S10: SpaceX limits Starlink terminal speed in Ukraine overnight without warning – presidential adviser</title></circle>
+<circle cx="134.6" cy="178.0" r="2.2" fill="#911eb4"><title>10359 S11: Elon Musks Starlink limits Ukraine terminals as Russia bombards country</title></circle>
+<circle cx="135.2" cy="86.0" r="2.2" fill="#3cb44b"><title>10369 S1: Russian strikes leave 600,000 without power in Ukraine, Zelensky says</title></circle>
+<circle cx="135.3" cy="498.0" r="2.2" fill="#777"><title>8560 S5: General Staff: Russia has lost 1,555,700 troops in Ukraine since Feb. 24, 2022</title></circle>
+<circle cx="135.3" cy="80.0" r="2.2" fill="#777"><title>10374 S12: Heavy Russian strikes on Ukraine kill 6, cut power in Kiev</title></circle>
+<circle cx="137.8" cy="92.0" r="2.2" fill="#3cb44b"><title>10427 S1: Blatant Disrespect Toward America: Zelensky Slams Russias Strike on Ukraines Energy Sector</title></circle>
+<circle cx="139.1" cy="175.0" r="2.2" fill="#911eb4"><title>10456 S11: Elon Musks Spacex limits Ukraines Starlink operations, disrupting defense ops.</title></circle>
+<circle cx="139.8" cy="209.0" r="2.2" fill="#777"><title>8431 S13: Starlink India launch: Why Elon Musk is still waiting</title></circle>
+<circle cx="139.8" cy="178.0" r="2.2" fill="#4363d8"><title>10471 S10: Ukraine says Starlink restricted operations overnight, disrupting military missions</title></circle>
+<circle cx="139.8" cy="126.0" r="2.2" fill="#777"><title>10467 S7: What we know about Russia's overnight strikes on Ukraine</title></circle>
+<circle cx="140.4" cy="126.0" r="2.2" fill="#4363d8"><title>10502 S10: Ukraine caught off guard by Starlink restrictions and intelligence gaps during Russian attack</title></circle>
+<circle cx="141.1" cy="83.0" r="2.2" fill="#777"><title>10515 S8: Ukraine reports Russian attacks with no warnings, Trump says US still sharing intel</title></circle>
+<circle cx="144.3" cy="83.0" r="2.2" fill="#777"><title>10599 S12: Ukraine reports deadly attacks on energy sites</title></circle>
+<circle cx="148.3" cy="98.0" r="2.2" fill="#777"><title>10681 S12: Russian attacks kill at least 10, injure 91 across Ukraine over past day as ballistic missiles strike Kyiv for second st</title></circle>
+<circle cx="148.3" cy="175.0" r="2.2" fill="#777"><title>10680 S14: Ucrania confirma limitaciones de Starlink y se ve forzado a interrumpir "varias misiones"</title></circle>
+<circle cx="148.3" cy="120.0" r="2.2" fill="#777"><title>10682 S15: Zelensky arrives in UK as London vows to speed up anti-drone missile deliveries for Ukraine</title></circle>
+<circle cx="149.0" cy="92.0" r="2.2" fill="#3cb44b"><title>10707 S1: Zelensky says Russian strikes hit Ukraines energy sites despite ceasefire push</title></circle>
+<circle cx="149.4" cy="218.0" r="2.2" fill="#777"><title>10716 S14: En directo: Ucrania denuncia acceso restringido a Starlink para sus soldados en combate</title></circle>
+<circle cx="154.0" cy="120.0" r="2.2" fill="#777"><title>10836 S16: trump (and now elon) turn the screws on Ukraine</title></circle>
+<circle cx="155.3" cy="209.0" r="2.2" fill="#4363d8"><title>10860 S10: SpaceX Reportedly Caps Starlink Speed As Kiev Defies Trumps Calls To Halt Refinery Strikes</title></circle>
+<circle cx="156.1" cy="243.0" r="2.2" fill="#777"><title>10872 S17: Iran targets Starlink as ‘tool of war’ with hints of more internet curbs</title></circle>
+<circle cx="156.3" cy="283.0" r="2.2" fill="#777"><title>8912 S18: Iran ready for both war and diplomacy: Gharibabadi</title></circle>
+<circle cx="156.3" cy="298.0" r="2.2" fill="#777"><title>9785 S17: Rezaei: Iran Will Obliterate U.S. Tech Assets If Attacked – NaturalNews.com</title></circle>
+<circle cx="156.3" cy="289.0" r="2.2" fill="#777"><title>9964 S19: Iran shifting tactics to step up attacks on shipping before US vote: Officials</title></circle>
+<circle cx="156.3" cy="283.0" r="2.2" fill="#777"><title>10676 S20: Katz warns Iran, proxies planning terrorist attacks to influence Israeli election</title></circle>
+<circle cx="157.2" cy="160.0" r="2.2" fill="#777"><title>10913 S21: Ukraine accuses SpaceX of crippling military missions as ties with US worsen</title></circle>
+<circle cx="157.2" cy="169.0" r="2.2" fill="#4363d8"><title>10916 S10: Ukraine asking US, SpaceX and NATO to clarify Starlink limitations</title></circle>
+<circle cx="157.2" cy="83.0" r="2.2" fill="#777"><title>10921 S22: Ukraine races to field faster interceptors as Russia hammers its energy grid</title></circle>
+<circle cx="158.5" cy="80.0" r="2.2" fill="#bcf60c"><title>10962 S2: Russia targeting energy sites despite Trumps ceasefire, Ukraine says - National</title></circle>
+<circle cx="159.1" cy="218.0" r="2.2" fill="#777"><title>10968 S14: Ucrania denuncia restricciones de Starlink en el frente, mientras Rusia escala su asedio energético</title></circle>
+<circle cx="159.8" cy="83.0" r="2.2" fill="#bcf60c"><title>10991 S2: Moscow says scope of Trump's energy truce unclear after launching new attack on Ukraine</title></circle>
+<circle cx="160.5" cy="160.0" r="2.2" fill="#4363d8"><title>11025 S10: Starlink Slowdown Spells Disaster for Ukraines Army – Analyst</title></circle>
+<circle cx="161.1" cy="89.0" r="2.2" fill="#777"><title>11035 S7: Russia strikes multiple Ukrainian energy facilities, data center overnight-Xinhua</title></circle>
+<circle cx="163.0" cy="169.0" r="2.2" fill="#4363d8"><title>11098 S10: Ukraine slams SpaceX for cutting Starlink internet access while Russians launch brutal attacks</title></circle>
+<circle cx="166.2" cy="175.0" r="2.2" fill="#777"><title>11163 S14: Cómo una reducción de velocidad de internet de Starlink afecta a la defensa de Ucrania de los ataques rusos</title></circle>
+<circle cx="168.2" cy="160.0" r="2.2" fill="#777"><title>11228 S23: Russia-Ukraine War News: Prigozhins Rebellion Questions Putins Grip, Wagner Groups Future</title></circle>
+<circle cx="168.8" cy="178.0" r="2.2" fill="#777"><title>11234 S24: SBU detains 18-year-old suspected FSB agent in Kyiv over attempt to activate 148 Starlink terminals for Russia</title></circle>
+<circle cx="169.5" cy="135.0" r="2.2" fill="#4363d8"><title>11261 S10: Ukrainian drones lose some speed after SpaceX imposes sudden restrictions on use of Starlink</title></circle>
+<circle cx="170.1" cy="132.0" r="2.2" fill="#777"><title>11274 S9: Arab News | Ukraine accuses US of helping Russia as missiles hit Kyiv</title></circle>
+<circle cx="170.8" cy="166.0" r="2.2" fill="#911eb4"><title>11286 S11: Ukraine accuses Elon Musk’s SpaceX of throttling Starlink terminals</title></circle>
+<circle cx="170.8" cy="329.0" r="2.2" fill="#777"><title>11287 S25: Suspected Israeli online operations cause alarm in Iran and Lebanon</title></circle>
+<circle cx="171.4" cy="360.0" r="2.2" fill="#777"><title>10598 S25: Lebanon Steps Up Probe into Seized Explosives, Smuggling Networks</title></circle>
+<circle cx="174.0" cy="215.0" r="2.2" fill="#777"><title>11352 S14: Guerra en Ucrania: Zelenski denuncia restricciones de Starlink en el frente de batalla</title></circle>
+<circle cx="174.7" cy="169.0" r="2.2" fill="#4363d8"><title>11378 S10: SpaceX restricts Starlink services in Ukraine, disrupting military drone missions: Report</title></circle>
+<circle cx="174.7" cy="160.0" r="2.2" fill="#777"><title>11382 S26: Zelenskyy on Starlinks speed limits: This will result in significant losses</title></circle>
+<circle cx="175.9" cy="92.0" r="2.2" fill="#911eb4"><title>11400 S11: Ukraine Accuses Elon Musks SpaceX of Disrupting Military Operations as Russia Pounds Energy Grid.</title></circle>
+<circle cx="177.2" cy="123.0" r="2.2" fill="#777"><title>11432 S21: Ukraine says SpaceX hampers drones for attack and defence, as US ties fray</title></circle>
+<circle cx="179.8" cy="203.0" r="2.2" fill="#777"><title>11488 S27: Kiev, 'connessione a Starlink migliorata, ma SpaceX mantiene limite a 161 km/h'</title></circle>
+<circle cx="179.8" cy="126.0" r="2.2" fill="#911eb4"><title>11489 S11: Starlink restriction 'no surprise' after Musk condemned Ukraine strikes on Russian data centres</title></circle>
+<circle cx="179.8" cy="160.0" r="2.2" fill="#4363d8"><title>11494 S10: Ukraine Says New Limits on Starlink Are Disrupting Its Military Operations</title></circle>
+<circle cx="183.1" cy="95.0" r="2.2" fill="#777"><title>11548 S7: Russia attack hits Kyiv after reported intelligence lapse</title></circle>
+<circle cx="184.4" cy="166.0" r="2.2" fill="#911eb4"><title>11587 S11: Musk says any limits on Ukraine's Starlink access down to US, not his firm</title></circle>
+<circle cx="185.6" cy="83.0" r="2.2" fill="#3cb44b"><title>11628 S1: Russian Strikes Leave 600,000 Without Power as Ukraine Reports Starlink Restrictions - Novinite.com</title></circle>
+<circle cx="185.6" cy="409.0" r="2.2" fill="#777"><title>11623 S28: Israeli quadcopter drone drops bomb in Lebanon</title></circle>
+<circle cx="185.6" cy="160.0" r="2.2" fill="#4363d8"><title>11627 S10: Ukraine says some military Starlink services restricted amid Russian attacks</title></circle>
+<circle cx="185.6" cy="218.0" r="2.2" fill="#777"><title>11619 S29: 'Amministrazione Trump nega di avere un ruolo nel depotenziamento di Starlink'</title></circle>
+<circle cx="186.3" cy="443.0" r="2.2" fill="#777"><title>8926 S28: IDF: Mystery aerial object in northern Israel likely balloon, not drone</title></circle>
+<circle cx="186.3" cy="138.0" r="2.2" fill="#911eb4"><title>11640 S11: Musk suggests US government behind any slowdown in Ukraine’s Starshield</title></circle>
+<circle cx="189.5" cy="126.0" r="2.2" fill="#777"><title>11699 S9: Ukraine accuses US of helping Russia as missiles hit Kyiv</title></circle>
+<circle cx="189.5" cy="160.0" r="2.2" fill="#777"><title>11697 S14: Desconexión satelital en Ucrania: restringieron Starshield, el sistema militar de Starlink, y Musk apuntó a Trump</title></circle>
+<circle cx="190.2" cy="80.0" r="2.2" fill="#3cb44b"><title>11711 S1: Ukraines Zelenskyy says its increasingly evident that Russia is unwilling to accept an energy ceasefire</title></circle>
+<circle cx="193.8" cy="132.0" r="2.2" fill="#777"><title>11778 S12: 'Intense' Russian assault on Kropyvnytskyi kills 3, injures 6</title></circle>
+<circle cx="195.3" cy="169.0" r="2.2" fill="#777"><title>11784 S16: Elon Musk shifts responsibility to Trump over satellite restrictions affecting Ukraine</title></circle>
+<circle cx="205.7" cy="163.0" r="2.2" fill="#4363d8"><title>11964 S10: Starlink restrictions affect Ukraines military operations amid US-Ukraine tensions: Reports</title></circle>
+<circle cx="205.7" cy="178.0" r="2.2" fill="#777"><title>11759 S16: Musk drives bus over Trump after abrupt Ukraine move turns deadly</title></circle>
+<circle cx="205.7" cy="123.0" r="2.2" fill="#e6194b"><title>11824 S4: Zelensky accuses Trump of betrayal as Musk points the finger at US President for satellite sabotage</title></circle>
+<circle cx="209.0" cy="120.0" r="2.2" fill="#777"><title>11368 S30: How Trump’s diesel deal with Russia will impact the United States and Ukraine</title></circle>
+<circle cx="209.6" cy="163.0" r="2.2" fill="#777"><title>9899 S31: Diesel futures signal higher prices to come, despite Trump moves</title></circle>
+<circle cx="209.6" cy="160.0" r="2.2" fill="#e6194b"><title>11928 S4: Hey, big man, are you playing politics: What Trump-Putins diesel deal, Starlink curbs mean for Zelenskys Ukraine?</title></circle>
+<circle cx="210.1" cy="218.0" r="2.2" fill="#777"><title>9533 S30: Ukraine and the US: What's next after Trump’s diesel deal with Russia?</title></circle>
+<circle cx="210.6" cy="89.0" r="2.2" fill="#4363d8"><title>12022 S10: Big mistake, will bring human losses: Zelenskyy slams Starlink restrictions as Russia intensifies attacks on Ukraine</title></circle>
+<circle cx="210.6" cy="172.0" r="2.2" fill="#911eb4"><title>12023 S11: Musk points to US govt over possible Starshield slowdown</title></circle>
+<circle cx="211.5" cy="166.0" r="2.2" fill="#777"><title>10411 S32: Analysis: Moscow, Washington vs. Kyiv: Can Trump Force Ukraine to Capitulate?</title></circle>
+<circle cx="211.5" cy="172.0" r="2.2" fill="#911eb4"><title>12051 S11: Musk says US government controls Starshield speed limits affecting Ukraine drones</title></circle>
+<circle cx="212.8" cy="166.0" r="2.2" fill="#911eb4"><title>12070 S11: Elon Musk Claims Donald Trump Has Final Say on Starshield Caps Disrupting Ukraine Drones</title></circle>
+<circle cx="214.1" cy="172.0" r="2.2" fill="#911eb4"><title>12086 S11: Musk faces intense criticism after reports of Starlink restricted in Ukraine amid strikes from Russia</title></circle>
+<circle cx="214.1" cy="175.0" r="2.2" fill="#911eb4"><title>12087 S11: Musk says US government may be behind slowdown of Ukraine drone speeds - International</title></circle>
+<circle cx="214.1" cy="160.0" r="2.2" fill="#e6194b"><title>12089 S4: Donald Trump Betrayed Ukraine Over Elon Musks Starlink, Zelenskyy Says</title></circle>
+<circle cx="222.6" cy="166.0" r="2.2" fill="#777"><title>10453 S30: Why Meloni calls US-Russia diesel deal a very risky choice</title></circle>
+<circle cx="223.0" cy="83.0" r="2.2" fill="#777"><title>12139 S33: Russia turns to new tactics to destroy Ukraine’s energy grid this winter for good</title></circle>
+<circle cx="223.0" cy="172.0" r="2.2" fill="#911eb4"><title>12142 S11: Elon Musk accused of manipulating Starlink to stop Ukrainian drone attacks – Ghanamma.com</title></circle>
+<circle cx="223.7" cy="98.0" r="2.2" fill="#e6194b"><title>12158 S4: Ukraine War, Day 1,694: Zelensky - Trump Has Betrayed Us</title></circle>
+<circle cx="224.3" cy="129.0" r="2.2" fill="#911eb4"><title>12162 S11: Musk says US govt responsible for any Starshield restrictions affecting Ukraine</title></circle>
+<circle cx="226.5" cy="95.0" r="2.2" fill="#3cb44b"><title>12206 S1: Zelensky lifts pause on Ukraine's strikes against Russian oil refineries</title></circle>
+<circle cx="227.5" cy="86.0" r="2.2" fill="#3cb44b"><title>12147 S1: Zelenskiy says Ukraine will resume strikes on Russian refineries</title></circle>
+<circle cx="227.5" cy="92.0" r="2.2" fill="#3cb44b"><title>12226 S1: ‘We’re done’: Ukraine resumes Russian refinery strikes as Zelensky defies Trump</title></circle>
+<circle cx="228.2" cy="89.0" r="2.2" fill="#e6194b"><title>12246 S4: Musk calls on Zelensky to go as Ukraine leader</title></circle>
+<circle cx="229.5" cy="160.0" r="2.2" fill="#911eb4"><title>12264 S11: Musk: SpaceX Not Behind Ukraine Service Interruptions</title></circle>
+<circle cx="231.4" cy="80.0" r="2.2" fill="#3cb44b"><title>12306 S1: Were done: Zelenskyy lifts energy ceasefire, to resume strikes on Russian energy infrastructure</title></circle>
+<circle cx="232.0" cy="175.0" r="2.2" fill="#4363d8"><title>12318 S10: Breaking: Starlink service in Ukraine 'restored,' Defense Ministry source says</title></circle>
+<circle cx="232.0" cy="169.0" r="2.2" fill="#4363d8"><title>12323 S10: Starlink restrictions may hamper Ukraines war effort. But the country can adapt, experts say</title></circle>
+<circle cx="234.0" cy="138.0" r="2.2" fill="#777"><title>12347 S34: Integrating Ukraine into EU a powerful response to Russia's attacks, says Irish PM</title></circle>
+<circle cx="234.6" cy="163.0" r="2.2" fill="#777"><title>12237 S35: Sufficient merit: Expert backs Indias Starlink licensing stance after reports of restriction in Ukraine</title></circle>
+<circle cx="234.6" cy="138.0" r="2.2" fill="#4363d8"><title>12368 S10: Restrictions expose Ukraine's Starlink dependency in Russia war</title></circle>
+<circle cx="235.2" cy="123.0" r="2.2" fill="#911eb4"><title>12377 S11: Musk suggests US govt behind any slowdown in Ukraine's Starshield system</title></circle>
+<circle cx="235.3" cy="89.0" r="2.2" fill="#3cb44b"><title>12386 S1: Ukraine resumes strikes on Russian refineries, anger mounts with Trump – NBC 5 Dallas-Fort Worth</title></circle>
+<circle cx="235.3" cy="135.0" r="2.2" fill="#777"><title>12381 S9: Ukraine hits 6 Russian Su-34 bomber jets with Neptune missile, military says</title></circle>
+<circle cx="235.9" cy="83.0" r="2.2" fill="#3cb44b"><title>12398 S1: Russia says Ukraine resumes attacks on oil refineries</title></circle>
+<circle cx="236.0" cy="92.0" r="2.2" fill="#3cb44b"><title>12401 S1: Ukraine resumes attacks on Russian oil refineries, officials say, as US relations teeter</title></circle>
+<circle cx="237.9" cy="126.0" r="2.2" fill="#777"><title>12448 S36: Planned terrorist acts on behalf of Ukraine: Russia arrests Swedish man, charges him with illegal border crossing</title></circle>
+<circle cx="239.2" cy="83.0" r="2.2" fill="#3cb44b"><title>12454 S1: Ukraine to restart strikes on Russian oil refineries, Zelensky says</title></circle>
+<circle cx="239.8" cy="135.0" r="2.2" fill="#777"><title>12493 S37: 'American abandonment' threatens Ukraine's civilians in war against Russia</title></circle>
+<circle cx="240.4" cy="120.0" r="2.2" fill="#911eb4"><title>12502 S11: Starlink in Ukraine: Musk suggests US govt behind any slowdown</title></circle>
+<circle cx="243.0" cy="135.0" r="2.2" fill="#777"><title>12542 S8: Ukrainians fear US intelligence cuts as Russian strikes intensify</title></circle>
+<circle cx="243.7" cy="89.0" r="2.2" fill="#3cb44b"><title>12561 S1: Ukraine bins energy cease-fire with attacks on Russian refineries</title></circle>
+<circle cx="245.0" cy="120.0" r="2.2" fill="#777"><title>12586 S38: From Oleshky to Mariupol — The deepening humanitarian crisis across Ukraine's occupied territories</title></circle>
+<circle cx="245.0" cy="129.0" r="2.2" fill="#777"><title>12582 S16: Elon Musk and Donald Trump: What their growing ties mean for Ukraine</title></circle>
+<circle cx="245.0" cy="172.0" r="2.2" fill="#4363d8"><title>12590 S10: Starlink restrictions affecting Ukraines front line operations</title></circle>
+<circle cx="245.0" cy="95.0" r="2.2" fill="#3cb44b"><title>12584 S1: Ukraine's Zelensky defies Trump with Russian refinery strikes</title></circle>
+<circle cx="245.0" cy="83.0" r="2.2" fill="#3cb44b"><title>12594 S1: Zelensky To Resume Strikes On Russian Refineries As Energy Truce Collapses</title></circle>
+<circle cx="246.9" cy="135.0" r="2.2" fill="#777"><title>12423 S39: Morning attack on Kyiv region injures woman, damages private houses – official</title></circle>
+<circle cx="247.6" cy="135.0" r="2.2" fill="#777"><title>12647 S40: Zelensky arrives in Belgium, prepares to meet Prime Minister De Wever</title></circle>
+<circle cx="248.4" cy="83.0" r="2.2" fill="#e6194b"><title>12664 S4: Ukrainians lash out at Trump as Zelenskyy warns of US betrayal</title></circle>
+<circle cx="248.4" cy="120.0" r="2.2" fill="#777"><title>12670 S41: Russia Fires Missiles at Ukraine: Live Updates</title></circle>
+<circle cx="249.6" cy="123.0" r="2.2" fill="#e6194b"><title>12391 S4: Zelensky accuses Trump of betrayal, rules out resigning under U.S. pressure</title></circle>
+<circle cx="250.1" cy="129.0" r="2.2" fill="#777"><title>12680 S42: Starlink: How Elon Musk's company influences geopolitics</title></circle>
+<circle cx="250.2" cy="135.0" r="2.2" fill="#777"><title>12682 S43: Russia accuses Ukraine of contradicting US brokered deal</title></circle>
+<circle cx="250.2" cy="172.0" r="2.2" fill="#777"><title>12331 S44: 🔴Ukraine live: Zelensky calls for US not to stand 'with the aggressor', asks for 'honesty'</title></circle>
+<circle cx="251.0" cy="166.0" r="2.2" fill="#777"><title>9753 S45: Have Ukrainian strikes on Yandex data centres hit Russian online disinformation?</title></circle>
+<circle cx="251.0" cy="83.0" r="2.2" fill="#777"><title>12720 S46: Russia targets Ukraine with massive aerial attack, including hundreds of drones, Zelenskyy says – KTBB News, Weather, Ta</title></circle>
+<circle cx="251.0" cy="135.0" r="2.2" fill="#777"><title>12710 S47: Europe shuts US out of Russian assets conversation</title></circle>
+<circle cx="251.0" cy="86.0" r="2.2" fill="#e6194b"><title>12714 S4: Trump BETRAYED us, Zelensky slams… saying people will die after Starshield cut off leaving Ukraine at mercy of strikes</title></circle>
+<circle cx="254.6" cy="123.0" r="2.2" fill="#4363d8"><title>12734 S10: Ukraine struggles with Starlink and US satellite data as missiles hit Kyiv</title></circle>
+<circle cx="259.8" cy="86.0" r="2.2" fill="#3cb44b"><title>12868 S1: 'We're done': Ukraine resumes strikes on Russian oil refineries as 'only leverage' for peace talks</title></circle>
+<circle cx="274.0" cy="120.0" r="2.2" fill="#777"><title>12957 S12: Ukraine: Critical health supplies destroyed in ongoing Russian attacks</title></circle>
+<circle cx="274.0" cy="138.0" r="2.2" fill="#4363d8"><title>12949 S10: No one's owning up to throttling Ukraine's military Starlink, and that's telling</title></circle>
+<circle cx="274.0" cy="175.0" r="2.2" fill="#777"><title>12948 S41: UK to resupply Ukraine with more Storm Shadow missiles to strike Russia, Bloomberg reports</title></circle>
+<circle cx="274.0" cy="138.0" r="2.2" fill="#777"><title>12907 S34: Why have US-Ukraine relations soured ahead of the midterms?</title></circle>
+<circle cx="274.0" cy="218.0" r="2.2" fill="#777"><title>12893 S14: Zelenski pide a la OTAN que no cese el suministro de armas a Ucrania para compensar los bloqueos a Starlink</title></circle>
+<circle cx="274.1" cy="215.0" r="2.2" fill="#4363d8"><title>12570 S10: Why has Starlink internet become so crucial in Ukraines war?</title></circle>
+<circle cx="274.1" cy="486.0" r="2.2" fill="#4363d8"><title>12595 S10: Starlink restrictions and Russias Donbas demands: Is Ukraine facing a new military and diplomatic challenge?</title></circle>
+<circle cx="274.1" cy="212.0" r="2.2" fill="#777"><title>12681 S48: What is Starshield, and who limited Ukraine’s access to it?</title></circle>
+<circle cx="274.1" cy="172.0" r="2.2" fill="#4363d8"><title>12905 S10: Will Trump really pull the plug? Starlink restored but Ukraine's fate still uncertain</title></circle>
+<circle cx="274.7" cy="160.0" r="2.2" fill="#4363d8"><title>12999 S10: Ukrainian soldier says Starlink disruption has caused irreversible breach in trust</title></circle>
+<circle cx="274.7" cy="252.0" r="2.2" fill="#4363d8"><title>11589 S10: Why is Starlink internet so important on the battlefield in Ukraine?</title></circle>
+<circle cx="274.7" cy="255.0" r="2.2" fill="#777"><title>11527 S49: What is Starshield, SpaceX's military version of Starlink?</title></circle>
+<circle cx="274.7" cy="249.0" r="2.2" fill="#777"><title>11693 S14: ¿Qué es Starshield, la versión militar de la red satelital de Musk restringida en Ucrania?</title></circle>
+<circle cx="275.9" cy="123.0" r="2.2" fill="#777"><title>13014 S50: Russian drone strikes leave portions of Kyiv without power, fires burning</title></circle>
+<circle cx="275.9" cy="175.0" r="2.2" fill="#777"><title>13025 S42: Inside the race between Elon Musk and Jeff Bezos for control of outer space</title></circle>
+<circle cx="276.6" cy="89.0" r="2.2" fill="#3cb44b"><title>13037 S1: Ukraine abandons truce and attacks Russian oil refinery as Zelenskyy says he feels betrayed by Trump</title></circle>
+<circle cx="277.9" cy="169.0" r="2.2" fill="#4363d8"><title>13058 S10: Streeting reassured by Hegseth that Ukraines access to Starlink restored</title></circle>
+<circle cx="277.9" cy="126.0" r="2.2" fill="#777"><title>13050 S40: Zelensky meets Belgian Prime Minister De Wever, but silence reigns on Russian assets</title></circle>
+<circle cx="278.5" cy="169.0" r="2.2" fill="#777"><title>13072 S30: Opinion: Trumps diesel deal empowers Putins war and Betrays Ukraine, democracy and Churchill | Psa</title></circle>
+<circle cx="279.2" cy="240.0" r="2.2" fill="#777"><title>13083 S48: What to know about Starshield and why its disruption rattled Ukraines forces | World</title></circle>
+<circle cx="280.4" cy="80.0" r="2.2" fill="#3cb44b"><title>13104 S1: Ukraine resumes refinery strikes as Zelenskyys anger at Trump mounts</title></circle>
+<circle cx="281.8" cy="126.0" r="2.2" fill="#777"><title>13134 S43: Ukraine Accuses US of Aiding Russia, Citing Delayed Missile Warnings and Starlink Restrictions – The Indian Awaaz</title></circle>
+<circle cx="285.7" cy="172.0" r="2.2" fill="#777"><title>11463 S44: We are behind you and that will not change, PM tells Zelensky</title></circle>
+<circle cx="285.7" cy="132.0" r="2.2" fill="#e6194b"><title>13178 S4: Zelensky rallies European allies as US support for Ukraine wanes</title></circle>
+<circle cx="286.9" cy="178.0" r="2.2" fill="#777"><title>9876 S51: Zelenskiy visits Britain as Burnham pledges fresh support for Ukraine</title></circle>
+<circle cx="286.9" cy="160.0" r="2.2" fill="#e6194b"><title>11123 S4: Zelensky personally thanks King for his unwavering support for Ukraine</title></circle>
+<circle cx="286.9" cy="175.0" r="2.2" fill="#777"><title>11590 S40: Hungary’s Magyar to meet Zelensky for first time at upcoming EU summit</title></circle>
+<circle cx="289.5" cy="163.0" r="2.2" fill="#777"><title>13252 S48: White House ordered limits on Ukraines Starshield service - Reuters</title></circle>
+<circle cx="290.8" cy="135.0" r="2.2" fill="#777"><title>13256 S45: Ukrainian drones reportedly strike Yandex data center, warehouses in overnight attack on Russia</title></circle>
+<circle cx="290.8" cy="172.0" r="2.2" fill="#777"><title>13262 S48: Order to restrict Ukraines Starshield defence system came from White House, officials say</title></circle>
+<circle cx="290.8" cy="160.0" r="2.2" fill="#777"><title>13265 S30: How Will Trump and Putins Diesel Deal Impact Russia and Global Markets? | Carnegie Endowment for International Peace</title></circle>
+<circle cx="290.8" cy="206.0" r="2.2" fill="#777"><title>10537 S52: Bruselas desembolsa otros casi 2.900 millones de euros a Ucrania para drones, misiles y armamento</title></circle>
+<circle cx="293.9" cy="135.0" r="2.2" fill="#e6194b"><title>13291 S4: 'I'm not a big fan of Zelensky,' Trump says as US-Ukraine tensions deepen</title></circle>
+<circle cx="296.0" cy="129.0" r="2.2" fill="#e6194b"><title>13338 S4: Zelensky Lack of Judgment Attacking Trump</title></circle>
+<circle cx="296.0" cy="203.0" r="2.2" fill="#4363d8"><title>13336 S10: Is the US limiting Starlink in Ukraine? The risks could be catastrophic - 16-Oct-2026</title></circle>
+<circle cx="298.6" cy="95.0" r="2.2" fill="#3cb44b"><title>13361 S1: Live: Trump calls renewed Ukraine attacks on Russian oil refineries 'a disgrace'</title></circle>
+<circle cx="301.2" cy="166.0" r="2.2" fill="#777"><title>13400 S53: US senators seek Pentagon watchdog probe into reported Starshield disruptions in Ukraine</title></circle>
+<circle cx="315.2" cy="138.0" r="2.2" fill="#3cb44b"><title>13446 S1: Trump rebukes Zelensky, calls Ukraine’s strikes on Russian refineries a ‘disgrace’</title></circle>
+<circle cx="315.2" cy="135.0" r="2.2" fill="#777"><title>13459 S48: Order limiting Starlink access for Ukraine's military came from within White House, Reuters reports</title></circle>
+<circle cx="315.3" cy="375.0" r="2.2" fill="#777"><title>13186 S25: Israel Strikes Hezbollah Positions in Lebanon: Live Updates</title></circle>
+<circle cx="315.3" cy="132.0" r="2.2" fill="#777"><title>13458 S54: Investigation: How scammers exploit Ukraine’s occupation to deceive foreign men</title></circle>
+<circle cx="315.3" cy="203.0" r="2.2" fill="#777"><title>13455 S14: Ucrania necesita usar los satélites de Starlink en la guerra, pero el Pentágono tiene el control</title></circle>
+<circle cx="318.5" cy="200.0" r="2.2" fill="#777"><title>13545 S5: General Staff: Russia has lost 1,561,020 troops in Ukraine since Feb. 24, 2022</title></circle>
+<circle cx="319.2" cy="166.0" r="2.2" fill="#4363d8"><title>13575 S10: Ukraine pushes for European alternatives to US air defences and Starlink amid tensions with Washington</title></circle>
+<circle cx="319.2" cy="169.0" r="2.2" fill="#e6194b"><title>13583 S4: Ukraines Zelenskyy turns to Brussels as US support falters</title></circle>
+<circle cx="319.2" cy="178.0" r="2.2" fill="#777"><title>13579 S48: White House Behind Starshield Speed Limit Over Ukraine; US Official Rejects Trump Made The Request - Report</title></circle>
+<circle cx="320.5" cy="169.0" r="2.2" fill="#777"><title>13590 S55: Poland provided aid to defend Kyiv, Zelensky says</title></circle>
+<circle cx="320.5" cy="132.0" r="2.2" fill="#e6194b"><title>13591 S4: Zelensky thanks EU's 'real leaders' for their continued support as bloc confirms new sanctions package on the way</title></circle>
+<circle cx="321.8" cy="172.0" r="2.2" fill="#777"><title>13136 S56: Were done: Zelenskiy overrides Trumps energy truce</title></circle>
+<circle cx="321.8" cy="138.0" r="2.2" fill="#e6194b"><title>13621 S4: Trump questions Zelenskyys role in Ukraine peace talks: Not a good guy</title></circle>
+<circle cx="321.8" cy="132.0" r="2.2" fill="#3cb44b"><title>13626 S1: Trump calls Ukrainian strikes on Russian refineries a disgrace</title></circle>
+<circle cx="323.6" cy="163.0" r="2.2" fill="#777"><title>13581 S26: Trump continues his jibe on Zelenskyy, says not a good guy to deal with amid Starlink restriction row</title></circle>
+<circle cx="323.6" cy="135.0" r="2.2" fill="#e6194b"><title>13641 S4: Zelensky rallies EU support as Trump says Ukraine leader 'more difficult to deal with than Putin'</title></circle>
+<circle cx="323.6" cy="98.0" r="2.2" fill="#3cb44b"><title>13642 S1: Russia accuses Ukraine of attacking oil refinery after Zelensky says strikes to resume</title></circle>
+<circle cx="324.0" cy="175.0" r="2.2" fill="#777"><title>11492 S57: Volodymyr Zelenskys message to King Charles days after Donald Trump takes swipe at Ukraine leader</title></circle>
+<circle cx="324.4" cy="169.0" r="2.2" fill="#4363d8"><title>13681 S10: Report: Order to Slow Starlink in Ukraine Came From White House</title></circle>
+<circle cx="324.4" cy="132.0" r="2.2" fill="#777"><title>13682 S41: Ukraine on the Verge of Running Out of Patriot Missiles</title></circle>
+<circle cx="324.7" cy="172.0" r="2.2" fill="#777"><title>12527 S58: Elon Musks depraved interference in Ukraine plumbs new depths</title></circle>
+<circle cx="326.9" cy="169.0" r="2.2" fill="#4363d8"><title>13744 S10: Throttling Starlink puts added strain on US-Ukraine relations</title></circle>
+<circle cx="326.9" cy="132.0" r="2.2" fill="#e6194b"><title>13745 S4: EU leaders back Zelenskiy, Trump blasts Russia strikes</title></circle>
+<circle cx="328.1" cy="132.0" r="2.2" fill="#3cb44b"><title>13773 S1: Trump criticizes Ukraines resumption of refinery strikes, calls Zelenskyy difficult negotiator – media</title></circle>
+<circle cx="328.8" cy="123.0" r="2.2" fill="#e6194b"><title>13791 S4: European leaders back Zelensky as Ukraine-US ties fray over Trump’s Russia sanctions lift</title></circle>
+<circle cx="330.1" cy="169.0" r="2.2" fill="#911eb4"><title>13807 S11: Musks Starlink faces Ukrainian backlash</title></circle>
+<circle cx="330.1" cy="126.0" r="2.2" fill="#777"><title>13806 S41: Ukraine out of stock, allies in a queue, and the US Patriot missiles now shaping wars and alliances</title></circle>
+<circle cx="330.7" cy="215.0" r="2.2" fill="#777"><title>13767 S14: Kallas admite que Europa no puede sustituir a Starlink a corto plazo ante las restricciones de EEUU a Ucrania</title></circle>
+<circle cx="330.7" cy="126.0" r="2.2" fill="#3cb44b"><title>13813 S1: Russia strikes nine Ukrainian regions as strain grows between Zelensky and Trump</title></circle>
+<circle cx="331.3" cy="123.0" r="2.2" fill="#777"><title>13742 S6: Let Ukrainians do what theyre good at as Trumps ex-envoy backs explosive deep strikes on Russia - London Business News</title></circle>
+<circle cx="331.7" cy="123.0" r="2.2" fill="#777"><title>13826 S59: Poland scrambles fighter jets as Russia strikes western Ukraine</title></circle>
+<circle cx="332.6" cy="166.0" r="2.2" fill="#777"><title>13848 S53: GOP Senators Demand Probe Into Ukraines Satellite Data Loss</title></circle>
+<circle cx="332.6" cy="166.0" r="2.2" fill="#777"><title>13855 S48: Order to limit Starshield for Ukraine came from inside White House, sources say</title></circle>
+<circle cx="332.6" cy="120.0" r="2.2" fill="#3cb44b"><title>13846 S1: Trump calls Ukraines strikes on Russian oil sites a disgrace – NBC Bay Area</title></circle>
+<circle cx="335.3" cy="135.0" r="2.2" fill="#777"><title>13879 S12: Russian attacks kill at least 3, injure 53 across Ukraine, as Moscow hammers energy infrastructure</title></circle>
+<circle cx="335.3" cy="129.0" r="2.2" fill="#4363d8"><title>13877 S10: 🔴Follow live: 'Ukraine is dependent on Starlink', Zelensky says in Brussels</title></circle>
+<circle cx="335.9" cy="178.0" r="2.2" fill="#777"><title>13901 S52: Ucrania “depende” de Starlink para interceptar drones rusos, afirma Zelenski en Bruselas</title></circle>
+<circle cx="335.9" cy="123.0" r="2.2" fill="#3cb44b"><title>13917 S1: Russia accuses Ukraine of attacking oil refinery</title></circle>
+<circle cx="336.5" cy="120.0" r="2.2" fill="#4363d8"><title>13923 S10: US senators call for investigation into Ukraine's Starlink restrictions</title></circle>
+<circle cx="339.2" cy="215.0" r="2.2" fill="#777"><title>13977 S14: Zelenski confirma que Starlink empieza a recuperar su velocidad en Ucrania tras las restricciones de EEUU</title></circle>
+<circle cx="339.2" cy="123.0" r="2.2" fill="#e6194b"><title>13987 S4: EU leaders rally around Zelenskyy as Trump calls Ukrainian strikes on Russia a disgrace</title></circle>
+<circle cx="340.5" cy="135.0" r="2.2" fill="#e6194b"><title>14033 S4: 'Gas deals will follow' — Zelensky warns Trump could ease more sanctions on Russia</title></circle>
+<circle cx="342.3" cy="172.0" r="2.2" fill="#4363d8"><title>14067 S10: US senators call for investigation into Ukraine Starlink restrictions</title></circle>
+<circle cx="343.6" cy="123.0" r="2.2" fill="#777"><title>14092 S48: The White House Reportedly Limited Ukraines Access to Wartime Satellites. Shares of a European Competitor are Soaring.</title></circle>
+<circle cx="344.3" cy="120.0" r="2.2" fill="#e6194b"><title>14098 S4: Amid Trump tensions, Zelensky says Ukraine will stand its ground — with Europe's support</title></circle>
+<circle cx="344.3" cy="138.0" r="2.2" fill="#3cb44b"><title>14104 S1: Amid tensions between Zelenskyy and Trump, Russia strikes Ukraine</title></circle>
+<circle cx="351.1" cy="120.0" r="2.2" fill="#777"><title>14133 S23: Ukraine – Russia War</title></circle>
+<circle cx="352.2" cy="175.0" r="2.2" fill="#777"><title>14194 S60: Anne Applebaum on the contradiction of Trump’s support of Russia</title></circle>
+<circle cx="352.2" cy="120.0" r="2.2" fill="#4363d8"><title>14147 S10: Ukraine pushes Russia back on front line where Starlink has played key role</title></circle>
+<circle cx="352.2" cy="132.0" r="2.2" fill="#e6194b"><title>14165 S4: Zelensky hails "real leaders" in Europe, blasts Trump's diesel deal with Russia</title></circle>
+<circle cx="352.2" cy="120.0" r="2.2" fill="#777"><title>14168 S61: REPLAY: Ukraine's Zelensky holds presser in Brussels</title></circle>
+<circle cx="352.2" cy="178.0" r="2.2" fill="#777"><title>14181 S62: EU rallies in support of Ukraine amid Trump standoff</title></circle>
+<circle cx="352.2" cy="132.0" r="2.2" fill="#e6194b"><title>14186 S4: Zelensky asks EU for extra $79 billion to sustain Ukraine’s war effort</title></circle>
+<circle cx="352.2" cy="138.0" r="2.2" fill="#777"><title>14195 S61: Zelensky calls on EU to keep Moldova's membership bid shackled to Ukraine</title></circle>
+<circle cx="352.2" cy="123.0" r="2.2" fill="#777"><title>14197 S15: Zelensky's ask: 300 Patriot missiles, 70 billion euros, and Russian assets</title></circle>
+<circle cx="352.2" cy="163.0" r="2.2" fill="#e6194b"><title>14211 S4: EU leaders back Zelenskyy as Trump ties sour further</title></circle>
+<circle cx="353.1" cy="169.0" r="2.2" fill="#e6194b"><title>13961 S4: Zelensky praises real leaders in Europe as his relationship with Trump deteriorates</title></circle>
+<circle cx="353.8" cy="172.0" r="2.2" fill="#777"><title>14228 S48: Order to limit Starshield for Ukraine came from inside White House, sources say</title></circle>
+<circle cx="355.1" cy="166.0" r="2.2" fill="#4363d8"><title>14261 S10: Zelensky says Starlink speed not yet fully restored in Ukraine</title></circle>
+<circle cx="355.8" cy="160.0" r="2.2" fill="#777"><title>14196 S63: Belgium promises to deliver 10 F-16 fighter jets to Ukraine this year</title></circle>
+<circle cx="356.5" cy="138.0" r="2.2" fill="#777"><title>13460 S47: Russia Returns to G20 Finance Talks as Ukraine War Deepens Divisions With Europe</title></circle>
+<circle cx="371.1" cy="169.0" r="2.2" fill="#777"><title>13128 S64: G7 countries pledge 260 million euros for Chornobyl safety infrastructure repairs damaged in Russian attack</title></circle>
+<circle cx="371.8" cy="246.0" r="2.2" fill="#777"><title>14373 S49: What is Starshield, SpaceX’s military version of Starlink?</title></circle>
+<circle cx="371.9" cy="129.0" r="2.2" fill="#911eb4"><title>14311 S11: Trump denies limiting Ukraine access to Starlink network</title></circle>
+<circle cx="371.9" cy="135.0" r="2.2" fill="#911eb4"><title>14362 S11: 'They were both in on it' — Musk suggested Trump restrict Ukraine's Starlink service, Telegraph reports</title></circle>
+<circle cx="371.9" cy="120.0" r="2.2" fill="#777"><title>14364 S50: Ukraine war latest: Drone attack sparks fire at industrial facility in Russia's Surgut district</title></circle>
+<circle cx="371.9" cy="120.0" r="2.2" fill="#777"><title>14371 S12: Ukraine: Civilian casualty rates among ‘deadliest’ in years, as energy attacks intensify</title></circle>
+<circle cx="371.9" cy="123.0" r="2.2" fill="#e6194b"><title>14323 S4: Ukrainian President Zelenskyy speaks at EU summit amid spat with Donald Trump</title></circle>
+<circle cx="371.9" cy="129.0" r="2.2" fill="#e6194b"><title>14325 S4: Zelensky turns to Europe for backing as ties with Trump deteriorate</title></circle>
+<circle cx="371.9" cy="163.0" r="2.2" fill="#e6194b"><title>14330 S4: 'US tilting toward Russia: Europeans are standing more and more solidly with Zelensky'</title></circle>
+<circle cx="371.9" cy="135.0" r="2.2" fill="#777"><title>14348 S32: Ukraine president targets Trump, Putin at EU summit</title></circle>
+<circle cx="371.9" cy="120.0" r="2.2" fill="#777"><title>14350 S32: Ukraine advances in occupied Donetsk as Trump hands Putin diesel deal</title></circle>
+<circle cx="371.9" cy="123.0" r="2.2" fill="#777"><title>14386 S65: Trump declines to blame Putin for Ukraine war, amid transatlantic tensions</title></circle>
+<circle cx="371.9" cy="172.0" r="2.2" fill="#777"><title>13129 S66: Ukrainian officials blame Pentagon for withholding life-saving intel from Kyiv</title></circle>
+<circle cx="372.6" cy="169.0" r="2.2" fill="#777"><title>14192 S67: There is nothing apolitical about the scientists behind Russian weapons</title></circle>
+<circle cx="373.9" cy="135.0" r="2.2" fill="#e6194b"><title>14397 S4: Zelenskyy blasts Trumps diesel deal, calls Russian peace moves a parody</title></circle>
+<circle cx="375.6" cy="123.0" r="2.2" fill="#e6194b"><title>14428 S4: Zelensky Warns of More Trump-Russia Deals as Putin Envoy Eyes Expansion</title></circle>
+<circle cx="376.6" cy="178.0" r="2.2" fill="#911eb4"><title>14440 S11: Musk approached Trump to slow down Starlink in Ukraine</title></circle>
+<circle cx="379.1" cy="178.0" r="2.2" fill="#777"><title>14468 S68: Ukraines Zelensky again visits Pope Leo XIV</title></circle>
+<circle cx="379.2" cy="175.0" r="2.2" fill="#777"><title>14474 S69: Presidential adviser says Ukraine is in talks to lift speed limit on military satellite network</title></circle>
+<circle cx="381.6" cy="120.0" r="2.2" fill="#777"><title>14511 S32: Trump 'completely wrong' to restrict support for Ukraine, Italian minister tells BBC</title></circle>
+<circle cx="408.5" cy="123.0" r="2.2" fill="#e6194b"><title>14575 S4: Trump waives several Russia sanctions as row with Zelensky intensifies</title></circle>
+<circle cx="408.5" cy="132.0" r="2.2" fill="#e6194b"><title>14599 S4: Trump waives Russia sanctions as rift with Zelenskyy widens</title></circle>
+<circle cx="408.5" cy="175.0" r="2.2" fill="#777"><title>14635 S70: Trump waives latest Russia sanctions amid growing Ukraine-US tensions</title></circle>
+<circle cx="408.5" cy="132.0" r="2.2" fill="#777"><title>14641 S70: Trump Waives New Sanctions Against Russia | News/Talk 1130 WISN</title></circle>
+<circle cx="408.5" cy="123.0" r="2.2" fill="#777"><title>14596 S12: Russian attacks in Ukraine kill at least 8, cut power to 1 million</title></circle>
+<circle cx="408.5" cy="138.0" r="2.2" fill="#777"><title>14636 S33: Russian attacks put millions of Ukrainians at risk of displacement this winter, UN Migration says</title></circle>
+<circle cx="408.9" cy="175.0" r="2.2" fill="#777"><title>13305 S71: StarGate medical evacuation drone: How Ukraines new heavy-lift technology aims to rescue wounded soldiers from the front</title></circle>
+<circle cx="408.9" cy="209.0" r="2.2" fill="#777"><title>13653 S72: Russia/Ukraine Sanctions Update - Month of September 2026</title></circle>
+<circle cx="408.9" cy="206.0" r="2.2" fill="#777"><title>13729 S73: UK Tightens Russian Oil Sanctions as U . S . Weighs Relief</title></circle>
+<circle cx="409.4" cy="120.0" r="2.2" fill="#777"><title>14679 S70: Trump waives Russia-related sanctions before they even kick in as Ukraine ties worsen</title></circle>
+<circle cx="409.4" cy="166.0" r="2.2" fill="#777"><title>14660 S32: Ukraine and Europe have little choice but to work with Trump</title></circle>
+<circle cx="515.4" cy="206.0" r="2.2" fill="#777"><title>13939 S74: Interview: Russias Shadow War On NATO Is Bound To Intensify</title></circle>
+<circle cx="516.2" cy="166.0" r="2.2" fill="#4363d8"><title>14772 S10: How reliant is Ukraine on the US-controlled Starlink internet service?</title></circle>
+<circle cx="516.2" cy="160.0" r="2.2" fill="#777"><title>14819 S48: Rubio says Ukraine without access to Starshield, future ‘under discussion’</title></circle>
+<circle cx="516.2" cy="138.0" r="2.2" fill="#4363d8"><title>14895 S10: 'Planned operation' — Zelensky confirms Ukraine's Starlink access not fully restored</title></circle>
+<circle cx="516.2" cy="178.0" r="2.2" fill="#777"><title>14902 S12: Russian strikes cause power cuts in 9 Ukrainian regions</title></circle>
+<circle cx="516.2" cy="166.0" r="2.2" fill="#777"><title>14268 S75: Ukraine President Thankful For EU Leadership</title></circle>
+<circle cx="516.2" cy="120.0" r="2.2" fill="#3cb44b"><title>14882 S1: Zelensky reveals how many Russian attacks have followed Trump's energy ceasefire</title></circle>
+<circle cx="516.2" cy="138.0" r="2.2" fill="#e6194b"><title>14888 S4: Zelensky warns Russia may expand missile threats from Belarus against western Ukraine</title></circle>
+<circle cx="516.2" cy="129.0" r="2.2" fill="#777"><title>14892 S76: Russia may seek to get back immobilized assets through Ukraine's partners, Zelensky says</title></circle>
+<circle cx="516.2" cy="132.0" r="2.2" fill="#777"><title>14893 S46: Over half of Russian jet-powered drones downed by Ukraine's aircraft, Zelensky says</title></circle>
+<circle cx="516.2" cy="138.0" r="2.2" fill="#777"><title>14776 S33: Russia wants blackout in Ukraine as winter comes — Zelenskyy</title></circle>
+<circle cx="516.2" cy="135.0" r="2.2" fill="#e6194b"><title>14894 S4: 'Putin feels joy' — Zelensky calls Trump's waiving of key Russia sanctions 'wrong'</title></circle>
+<circle cx="516.2" cy="172.0" r="2.2" fill="#777"><title>14900 S73: UK takes different view to Trump on Russia sanctions, says minister</title></circle>
+<circle cx="517.9" cy="120.0" r="2.2" fill="#f032e6"><title>14917 S77: Ukrainian drone attack on Russia’s St Petersburg kills 1, hits energy sites</title></circle>
+<circle cx="517.9" cy="163.0" r="2.2" fill="#777"><title>14918 S34: Russia’s war in Ukraine puts Europe on edge</title></circle>
+<circle cx="517.9" cy="138.0" r="2.2" fill="#e6194b"><title>14923 S4: Trump calls for replacing Ukraines Zelenskyy in tussle over diesel deal with Russia</title></circle>
+<circle cx="532.6" cy="132.0" r="2.2" fill="#777"><title>14942 S12: Russian drones hit western Ukraine as nationwide attacks kill 10, injure 73</title></circle>
+<circle cx="532.6" cy="123.0" r="2.2" fill="#3cb44b"><title>14946 S1: Zelenskyy says Russia attacked Ukrainian energy sector 76 times in past week</title></circle>
+<circle cx="533.3" cy="212.0" r="2.2" fill="#777"><title>14193 S78: EU doubles down on helping Ukraine's rule of law with new task force</title></circle>
+<circle cx="533.9" cy="169.0" r="2.2" fill="#777"><title>15025 S8: US resumes intel sharing on Russian missile launches with Ukraine, Zelensky says</title></circle>
+<circle cx="533.9" cy="120.0" r="2.2" fill="#f032e6"><title>14889 S77: Ukraine hits Russian drone manufacturing plant in Rostov Oblast</title></circle>
+<circle cx="533.9" cy="169.0" r="2.2" fill="#f032e6"><title>15004 S77: Ukrainian drone attack on Saint Petersburg kills one, sets refinery ablaze</title></circle>
+<circle cx="533.9" cy="178.0" r="2.2" fill="#f032e6"><title>15028 S77: One killed, 15 injured in Ukrainian drone attack on St Petersburg, Leningrad region</title></circle>
+<circle cx="533.9" cy="175.0" r="2.2" fill="#777"><title>15034 S50: Ukraine Launches More Than 1,000 Drones at Russia, Setting St Petersburg Oil Terminal Ablaze</title></circle>
+<circle cx="533.9" cy="212.0" r="2.2" fill="#911eb4"><title>14998 S11: Who capped Starlink in Ukraine? Musk, Trump and Rubio give three different answers</title></circle>
+<circle cx="535.3" cy="123.0" r="2.2" fill="#e6194b"><title>15051 S4: 'A great deal depends on America's position' — Zelensky holds call with Trump's peace envoys as US pivots to Moscow's si</title></circle>
+<circle cx="536.4" cy="175.0" r="2.2" fill="#777"><title>15076 S70: Republicans break ranks with Trump over Russia sanctions waiver: Terrible misjudgment</title></circle>
+<circle cx="539.0" cy="163.0" r="2.2" fill="#f032e6"><title>15100 S77: Ukraine war latest: St. Petersburg slammed by drones in mass Ukrainian attack</title></circle>
+<circle cx="539.0" cy="172.0" r="2.2" fill="#777"><title>15103 S79: Ukraine regrets diversion of its drone over Lithuania</title></circle>
+<circle cx="539.6" cy="172.0" r="2.2" fill="#777"><title>15117 S80: Russian drone strike hits Odesa high-rise, injuring child</title></circle>
+<circle cx="541.2" cy="160.0" r="2.2" fill="#777"><title>15155 S70: Bessent says no one has been tougher on Russian sanctions than Trump</title></circle>
+<circle cx="542.2" cy="178.0" r="2.2" fill="#4363d8"><title>15161 S10: How Starlink gave Ukraine a ‘middle strike’ advantage that is now at risk</title></circle>
+<circle cx="542.8" cy="126.0" r="2.2" fill="#777"><title>15178 S32: Ukraine defies Trump and launches one of its biggest attacks on Russia this year</title></circle>
+<circle cx="544.8" cy="200.0" r="2.2" fill="#777"><title>15183 S8: US resumes intelligence-sharing with Ukraine after pause, Zelenskiy says</title></circle>
+<circle cx="546.1" cy="169.0" r="2.2" fill="#777"><title>15221 S50: Russian oil sites ablaze as Ukraine launches more than 1,000 drones</title></circle>
+<circle cx="546.7" cy="166.0" r="2.2" fill="#777"><title>15234 S50: Ukraine sends waves of drones at Russian oil facilities</title></circle>
+<circle cx="548.6" cy="135.0" r="2.2" fill="#777"><title>15251 S81: Ukrainian strike sparks major fire at Saint Petersburg oil refinery</title></circle>
+<circle cx="549.3" cy="169.0" r="2.2" fill="#777"><title>15263 S26: White House Warns Zelensky About Starlink Accusations</title></circle>
+<circle cx="549.3" cy="175.0" r="2.2" fill="#777"><title>15265 S48: Ukraine and the U.S. are at odds over Starshield. Heres what to know</title></circle>
+<circle cx="549.9" cy="132.0" r="2.2" fill="#e6194b"><title>15271 S4: Zelensky speaks to US envoys amid Trump spat after warning US not to side with Russia</title></circle>
+<circle cx="551.3" cy="135.0" r="2.2" fill="#e6194b"><title>15286 S4: Russia’s war on Ukraine ‘must be brought to an end’, Zelenskyy says</title></circle>
+<circle cx="552.5" cy="175.0" r="2.2" fill="#777"><title>15307 S50: St. Petersburg on fire as Kyiv launches more than 1,000 drones</title></circle>
+<circle cx="553.1" cy="160.0" r="2.2" fill="#e6194b"><title>15316 S4: US defends Russia sanctions waiver as Zelenskyy rift deepens</title></circle>
+<circle cx="555.3" cy="169.0" r="2.2" fill="#e6194b"><title>15333 S4: Zelenskyy warns US alignment with Russia would be a historic mistake</title></circle>
+<circle cx="556.4" cy="175.0" r="2.2" fill="#e6194b"><title>15342 S4: 'I want this war end' — Trump defends pro-Russian policies in scathing diatribe against Zelensky</title></circle>
+<circle cx="557.0" cy="166.0" r="2.2" fill="#e6194b"><title>15360 S4: Russias war on Ukraine must be brought to an end, Zelenskyy says – The Frontier Post</title></circle>
+<circle cx="557.0" cy="160.0" r="2.2" fill="#e6194b"><title>15351 S4: US Treasury Secretary downplays Russia sanctions waiver, warns Zelensky to 'be careful'</title></circle>
+<circle cx="558.3" cy="172.0" r="2.2" fill="#777"><title>15369 S46: Ukraine launches more than 1,000 drones at Russia as spat between Trump and Zelenskyy continues</title></circle>
+<circle cx="558.9" cy="175.0" r="2.2" fill="#777"><title>15377 S76: Russias war on Ukraine must be brought to an end, Zelenskyy says - Dominican Republic Post – Caribbean News, Business, T</title></circle>
+<circle cx="559.6" cy="175.0" r="2.2" fill="#e6194b"><title>15384 S4: Trump defends Russia sanctions relief, accuses Zelensky of rejecting peace</title></circle>
+<circle cx="595.1" cy="172.0" r="2.2" fill="#e6194b"><title>15453 S4: Trump defends Russian sanctions relief, lashes out at Zelenskyy</title></circle>
+<circle cx="595.1" cy="172.0" r="2.2" fill="#777"><title>15474 S15: US delaying Patriot missiles already paid for under NATO initiative, Zelensky says</title></circle>
+<circle cx="595.1" cy="178.0" r="2.2" fill="#e6194b"><title>15427 S4: Russia pounds Kyiv as Rubio urges Ukraine's Zelensky to 'focus' on ending the war</title></circle>
+<circle cx="595.1" cy="175.0" r="2.2" fill="#777"><title>15475 S76: Ukraine has retaken more territory than Russia captured this fall, Zelensky says</title></circle>
+<circle cx="595.1" cy="166.0" r="2.2" fill="#777"><title>15500 S82: Mali forces, Russian backers accused of killing civilians in drone strikes</title></circle>
+<circle cx="597.0" cy="163.0" r="2.2" fill="#e6194b"><title>15548 S4: Trump bashes Zelensky, defends waiving Russia sanctions</title></circle>
+<circle cx="598.4" cy="160.0" r="2.2" fill="#777"><title>15589 S9: Russian missiles and drones hit Kyiv overnight, killing 1 and injuring 8</title></circle>
+<circle cx="599.9" cy="178.0" r="2.2" fill="#777"><title>15602 S65: Trump Admits Russia Is Helping Iran But Still Wont Criticise Putin</title></circle>
+<circle cx="599.9" cy="166.0" r="2.2" fill="#f032e6"><title>15605 S77: Ukrainian capital hit by deadly Russian missile and drone attacks</title></circle>
+<circle cx="599.9" cy="169.0" r="2.2" fill="#777"><title>15606 S45: Russia Hits Military Facilities and Data Processing Center in Kiev</title></circle>
+<circle cx="609.9" cy="160.0" r="2.2" fill="#777"><title>15785 S12: 3 killed, 53 injured in Russian attacks across Ukraine over past day as 550,000 households lose power</title></circle>
+<circle cx="610.6" cy="163.0" r="2.2" fill="#777"><title>15807 S70: Trump waived key Russian sanctions; US equity futures set to open firmer - Newsquawk US Market Open</title></circle>
+<circle cx="612.1" cy="175.0" r="2.2" fill="#777"><title>15839 S34: The war is getting nearer: Ukraines eastern exodus accelerates as Russia steps up attacks – The Irish Times</title></circle>
+<circle cx="613.5" cy="169.0" r="2.2" fill="#777"><title>15851 S41: Space War: Russian satellite within breathing distance of Ukraines European eye</title></circle>
+<circle cx="613.5" cy="172.0" r="2.2" fill="#3cb44b"><title>15852 S1: Ukraine received no early warning of Russian strikes: Zelenskyy</title></circle>
+<circle cx="615.7" cy="206.0" r="2.2" fill="#777"><title>15318 S9: Russian ballistic missiles slam Kyiv right as air raid alarms sound</title></circle>
+<circle cx="615.7" cy="169.0" r="2.2" fill="#777"><title>15907 S9: US reacts to Kyiv's claim it received no advance notice of Russian ballistic missile launches</title></circle>
+<circle cx="617.3" cy="166.0" r="2.2" fill="#777"><title>15941 S45: 1 killed in Russian strikes on Ukrainian data center, military-industrial facilities</title></circle>
+<circle cx="619.0" cy="166.0" r="2.2" fill="#e6194b"><title>15990 S4: Putin Reportedly Floated a Meeting To Discuss the Future of the War. Zelenskyy Isnt Included.</title></circle>
+<circle cx="622.9" cy="169.0" r="2.2" fill="#3cb44b"><title>16061 S1: Trump accuses Zelenskyy of prolonging war as Russia pounds Ukraines power grid</title></circle>
+<circle cx="622.9" cy="166.0" r="2.2" fill="#3cb44b"><title>16053 S1: Ukraine got no early warning from partners as Russia hits grid again – Zelensky</title></circle>
+<circle cx="627.2" cy="169.0" r="2.2" fill="#777"><title>16117 S83: Russian attacks cost Ukrainian businesses $7.7 billion in 2026, prime minister says</title></circle>
+<circle cx="627.3" cy="166.0" r="2.2" fill="#777"><title>16116 S38: Ukraine, Russia nearing agreement on evacuation of civilians from occupied Oleshky, ombudsman says</title></circle>
+<circle cx="627.3" cy="169.0" r="2.2" fill="#777"><title>16124 S84: Wicker urges Trump to accept Ukraine deal: Please take this win!</title></circle>
+<circle cx="630.6" cy="169.0" r="2.2" fill="#777"><title>16201 S48: Starshield Gives Trump Massive Power Over Ukraine</title></circle>
+<circle cx="632.0" cy="169.0" r="2.2" fill="#f032e6"><title>16222 S77: Russian drone strike on park in Kharkiv Oblast kills children and infant</title></circle>
+<circle cx="646.6" cy="172.0" r="2.2" fill="#3cb44b"><title>16321 S1: Russia strikes 28 critical energy facilities across Ukraine in latest wave of attacks, Zelensky says</title></circle>
+<circle cx="646.6" cy="178.0" r="2.2" fill="#777"><title>16316 S68: Pope Leo, Zelensky discuss hopes for ceasefire in Russian-occupied Oleshky</title></circle>
+<circle cx="646.6" cy="160.0" r="2.2" fill="#777"><title>16317 S85: 'We will fight' — We asked Ukrainian soldiers about Trump's latest outburst</title></circle>
+<circle cx="646.6" cy="178.0" r="2.2" fill="#e6194b"><title>16253 S4: Ukrainians dying because US restricting intelligence sharing, Zelensky adviser tells BBC</title></circle>
+<circle cx="650.0" cy="178.0" r="2.2" fill="#777"><title>16386 S70: Trump waives Russia sanctions, tariffs before they take effect</title></circle>
+<circle cx="650.0" cy="172.0" r="2.2" fill="#f032e6"><title>16391 S77: Russia Strikes Kiev in Response to Ukrainian Drone Attack on St. Petersburg</title></circle>
+<circle cx="653.2" cy="175.0" r="2.2" fill="#e6194b"><title>15510 S4: Zelensky seeks further US talks as strikes continue</title></circle>
+<circle cx="653.2" cy="206.0" r="2.2" fill="#777"><title>16242 S68: Pope-Zelensky phone call: 'Assistance requested for evacuation of Oleshky'</title></circle>
+<circle cx="653.2" cy="160.0" r="2.2" fill="#777"><title>16415 S70: Trump waives Russia sanctions, tariffs before they take effect</title></circle>
+<circle cx="653.2" cy="178.0" r="2.2" fill="#e6194b"><title>16428 S4: Zelensky should get ‘somebody else’ to negotiate to end Ukraine war, Trump says</title></circle>
+<circle cx="653.2" cy="160.0" r="2.2" fill="#777"><title>16436 S70: Trump faces bipartisan backlash over waiving Russia sanctions</title></circle>
+<circle cx="656.3" cy="166.0" r="2.2" fill="#777"><title>16480 S55: Zelensky appeals to US lawmakers for answers as White House turns on Kyiv</title></circle>
+<circle cx="657.0" cy="175.0" r="2.2" fill="#777"><title>16490 S23: Tag: Russia-Ukraine War – NBC Los Angeles</title></circle>
+<circle cx="658.3" cy="178.0" r="2.2" fill="#777"><title>16505 S70: Trump blocks new Russia sanctions and tariffs from taking effect</title></circle>
+<circle cx="658.9" cy="160.0" r="2.2" fill="#e6194b"><title>16527 S4: Time for someone else to negotiate for Ukraine: Donald Trump rips into Volodymyr Zelenskyy as rift between allies widens</title></circle>
+<circle cx="658.9" cy="160.0" r="2.2" fill="#f032e6"><title>16520 S77: Children among six killed in Russian drone strike on Ukraine park</title></circle>
+<circle cx="686.7" cy="206.0" r="2.2" fill="#777"><title>16179 S86: Two women, infant killed, at least 14 injured in strike on park in Kharkiv region</title></circle>
+<circle cx="688.1" cy="160.0" r="2.2" fill="#777"><title>16583 S15: Zelensky accuses US of delaying missile deliveries as tensions rise</title></circle>
+<circle cx="688.1" cy="169.0" r="2.2" fill="#e6194b"><title>16600 S4: US-Ukraine relations sour as Trump, Zelenskyy clash over talks, arms</title></circle>
+<circle cx="688.1" cy="209.0" r="2.2" fill="#777"><title>16649 S6: The political calculus of peace in Ukraine</title></circle>
+<circle cx="688.1" cy="178.0" r="2.2" fill="#777"><title>16673 S8: No warning before missile strikes: Zelensky as Ukraine suspects US blocking intel on Russian attacks</title></circle>
+<circle cx="689.5" cy="166.0" r="2.2" fill="#f032e6"><title>16704 S77: Russian Drone Strike on Ukrainian Park Kills Six, Including Two Children - Novinite.com</title></circle>
+<circle cx="689.6" cy="200.0" r="2.2" fill="#777"><title>16688 S87: Zelensky, Rubio discuss critical military systems amid US-Ukraine tensions</title></circle>
+<circle cx="689.6" cy="175.0" r="2.2" fill="#777"><title>16707 S23: Topic | Russia-Ukraine war</title></circle>
+<circle cx="691.0" cy="169.0" r="2.2" fill="#777"><title>16719 S50: Fire reported at oil pumping station in Russia’s Tambov Oblast after drone attack</title></circle>
+<circle cx="691.0" cy="160.0" r="2.2" fill="#e6194b"><title>16723 S4: Trump and Zelensky Tensions Deepen as US-Ukraine Relations Face Growing Distrust</title></circle>
+<circle cx="692.6" cy="166.0" r="2.2" fill="#f032e6"><title>16746 S77: Russian drone attack on Kyiv rush-hour traffic kills at least 1, injures 6</title></circle>
+<circle cx="698.0" cy="160.0" r="2.2" fill="#777"><title>16807 S46: Russian missile and drone blitz kills 4 in Ukraine as Zelenskyy seeks help in Norway – Winnipeg Free Press</title></circle>
+<circle cx="699.4" cy="178.0" r="2.2" fill="#f58231"><title>16841 S88: Ukraine, US to hold Norway peace talks amid rising Zelensky, Trump tension</title></circle>
+<circle cx="701.2" cy="178.0" r="2.2" fill="#777"><title>16855 S55: Zelensky accuses US of again failing to warn Kyiv of impending attacks</title></circle>
+<circle cx="701.2" cy="206.0" r="2.2" fill="#f58231"><title>16865 S88: Trump Says Ukraine Needs New Negotiator for Peace Talks with Russia</title></circle>
+<circle cx="702.7" cy="169.0" r="2.2" fill="#f032e6"><title>16894 S77: At least 14 killed, 71 injured in Russian attacks across Ukraine over past day as Russian drone kills 2 children in park</title></circle>
+<circle cx="702.7" cy="163.0" r="2.2" fill="#46f0f0"><title>16892 S89: Zelenskyy to hold talks on Russia-Ukraine war with Witkoff, Europeans</title></circle>
+<circle cx="703.6" cy="212.0" r="2.2" fill="#777"><title>16923 S90: Zelensky's trust rating surges amid Trump's pressure campaign, poll finds</title></circle>
+<circle cx="703.6" cy="169.0" r="2.2" fill="#777"><title>16929 S32: Trump says Russia has been fine on Ukraine as he savages Zelensky and defends Putin</title></circle>
+<circle cx="706.8" cy="175.0" r="2.2" fill="#e6194b"><title>16973 S4: Zelensky prepares for Oslo talks with US envoys as Rubio denies withholding intelligence</title></circle>
+<circle cx="709.3" cy="172.0" r="2.2" fill="#777"><title>17028 S91: Putin invokes Stalingrad to predict victory of new Nazism in Ukraine</title></circle>
+<circle cx="709.3" cy="166.0" r="2.2" fill="#46f0f0"><title>17026 S89: Zelenskyy to hold talks on Russia-Ukraine war with Witkoff, Europeans</title></circle>
+<circle cx="714.5" cy="175.0" r="2.2" fill="#777"><title>17120 S46: Russian aerial blitz kills 7 as Zelenskyy meets US, European officials</title></circle>
+<circle cx="714.5" cy="218.0" r="2.2" fill="#777"><title>17114 S92: Data center in occupied Donetsk destroyed, expert says</title></circle>
+<circle cx="715.8" cy="160.0" r="2.2" fill="#e6194b"><title>17150 S4: The Latest: US ties with Ukraine hit a new low as Trump slights Zelenskyy and eases up on Russia</title></circle>
+<circle cx="715.8" cy="160.0" r="2.2" fill="#e6194b"><title>17129 S4: Zelensky in Oslo for talks with US envoys as Ukraine claims missile holdup</title></circle>
+<circle cx="715.8" cy="160.0" r="2.2" fill="#46f0f0"><title>17136 S89: Zelensky meets Trump envoy Witkoff in Norway as US-Ukraine ties sour</title></circle>
+<circle cx="717.1" cy="160.0" r="2.2" fill="#f032e6"><title>17157 S77: Russian drones strike Kyiv hospital, injure 5 across the city</title></circle>
+<circle cx="718.4" cy="212.0" r="2.2" fill="#777"><title>17175 S79: Poland to demand explanation from Ukraine over drone incident in Lithuania</title></circle>
+<circle cx="720.9" cy="200.0" r="2.2" fill="#777"><title>17206 S34: EU-Ukraine News | EU-Ukraine Relations – NewsNow</title></circle>
+<circle cx="723.6" cy="215.0" r="2.2" fill="#777"><title>17239 S12: Ukraine's HUR claims 108 Russian soldiers killed, 29 captured in Sumy Oblast operation</title></circle>
+<circle cx="727.4" cy="163.0" r="2.2" fill="#777"><title>17305 S32: Things Russia has done to Ukraine that Trump thinks are 'fine'</title></circle>
+<circle cx="727.4" cy="206.0" r="2.2" fill="#777"><title>17306 S93: Death is a master from Russia</title></circle>
+<circle cx="730.7" cy="160.0" r="2.2" fill="#46f0f0"><title>17381 S89: Witkoff to visit St. Petersburg after Zelensky talks</title></circle>
+<circle cx="731.9" cy="169.0" r="2.2" fill="#e6194b"><title>17405 S4: As Trump turns toward Russia, Zelensky drops his restraint</title></circle>
+<circle cx="731.9" cy="166.0" r="2.2" fill="#777"><title>17404 S45: Ukraine war latest: Drone strikes on Yandex data centers disrupt Russian court hearings, media reports</title></circle>
+<circle cx="735.6" cy="175.0" r="2.2" fill="#46f0f0"><title>17435 S89: Zelensky meets Witkoff as US-Ukraine relations sink to new lows</title></circle>
+<circle cx="737.6" cy="200.0" r="2.2" fill="#777"><title>17493 S94: Pope Leo urges Ukraine-Russia humanitarian cooperation as Russian strike kills children at playground</title></circle>
+<circle cx="738.9" cy="200.0" r="2.2" fill="#777"><title>16877 S83: One Day of Conflict Costs Ukraine $266Mln - Finance Ministry Data</title></circle>
+<circle cx="739.3" cy="175.0" r="2.2" fill="#e6194b"><title>17519 S4: Zelensky says US intelligence sharing 'works now' after talks with Trump envoy in Oslo</title></circle>
+<circle cx="739.3" cy="218.0" r="2.2" fill="#777"><title>17520 S95: Trump and Zelensky appear at loggerheads despite Oslo optimism</title></circle>
+<circle cx="740.9" cy="206.0" r="2.2" fill="#777"><title>15927 S96: Ruling party lawmaker says US intelligence not omniscient</title></circle>
+<circle cx="740.9" cy="169.0" r="2.2" fill="#46f0f0"><title>17559 S89: US envoy Witkoff to meet Russians, Trump presses Kyiv to settle</title></circle>
+<circle cx="742.8" cy="169.0" r="2.2" fill="#e6194b"><title>17594 S4: Zelenskyy has to want to settle this war, says Trump; highlights Russian territorial gains in conflict</title></circle>
+<circle cx="746.0" cy="206.0" r="2.2" fill="#46f0f0"><title>17635 S89: US Restores Intelligence to Ukraine as Witkoff Carries Peace Proposals to Putin</title></circle>
+<circle cx="747.4" cy="215.0" r="2.2" fill="#777"><title>17652 S62: Bipartisan pushback swells against Trumps Ukraine moves – Roll Call</title></circle>
+<circle cx="750.0" cy="200.0" r="2.2" fill="#777"><title>17675 S6: ‘I don’t care how it’s done’: Trump pressures Ukraine to cut peace deal</title></circle>
+<circle cx="750.0" cy="172.0" r="2.2" fill="#777"><title>17686 S6: I dont care how its done: Trump pressures Ukraine to cut peace deal | Russia-Ukraine war News</title></circle>
+<circle cx="751.2" cy="249.0" r="2.2" fill="#777"><title>16957 S30: Jon Stewart tears into Trumps Russian diesel deal as Ukraine crisis deepens</title></circle>
+<circle cx="751.9" cy="292.0" r="2.2" fill="#777"><title>16328 S30: In Skepticism We Trust: Ukraine Reacts to the Diesel Deal</title></circle>
+<circle cx="755.1" cy="203.0" r="2.2" fill="#46f0f0"><title>17767 S89: Witkoff could meet Putin soon</title></circle>
+<circle cx="759.6" cy="169.0" r="2.2" fill="#e6194b"><title>17825 S4: US envoy to meet Putin after Oslo talks with Zelenskiy</title></circle>
+<circle cx="764.1" cy="209.0" r="2.2" fill="#777"><title>17881 S61: Ukrainian President Volodymyr Zelenskyys October 2026 address to the European Council – The Sofia Globe</title></circle>
+<circle cx="764.1" cy="215.0" r="2.2" fill="#e6194b"><title>17890 S4: Zelenskys Temper Tantrum May Have Just Cost Ukraine American Military Support</title></circle>
+<circle cx="764.1" cy="169.0" r="2.2" fill="#e6194b"><title>17895 S4: Trump warns Zelensky to make deal with Russia</title></circle>
+<circle cx="767.3" cy="160.0" r="2.2" fill="#777"><title>17934 S90: Zelensky Says I Dont Know Whos Pushing Him But Trumps Not On Right Side of History</title></circle>
+<circle cx="767.3" cy="166.0" r="2.2" fill="#f032e6"><title>17929 S77: Russian drones kill 2 in Kharkiv Oblast, strike university building in Kremenchuk</title></circle>
+<circle cx="773.1" cy="178.0" r="2.2" fill="#e6194b"><title>18010 S4: US envoy to present Putin with peace proposal after talks with Zelenskyy</title></circle>
+<circle cx="775.1" cy="206.0" r="2.2" fill="#777"><title>17012 S41: Is Russia stalking satellites which help Ukraine from space?</title></circle>
+<circle cx="775.1" cy="215.0" r="2.2" fill="#777"><title>18065 S32: Ukraine Invasion Day 1,700: Turncoat Trump - Russia, frankly, has been fine on Ukraine.</title></circle>
+<circle cx="775.7" cy="249.0" r="2.2" fill="#777"><title>16362 S32: What Russia's doing to Ukraine is 'fine,' Trump says</title></circle>
+<circle cx="775.7" cy="240.0" r="2.2" fill="#777"><title>17836 S41: Does Russia Keep Advancing in Ukraine?</title></circle>
+<circle cx="775.7" cy="255.0" r="2.2" fill="#777"><title>16322 S45: Why Russia's war on Ukraine's data centers could backfire on Moscow</title></circle>
+<circle cx="776.3" cy="172.0" r="2.2" fill="#46f0f0"><title>18092 S89: US envoy Witkoff to meet Putin in Russia after 'positive' talks with Zelensky</title></circle>
+<circle cx="777.7" cy="166.0" r="2.2" fill="#46f0f0"><title>18125 S89: Ukraine War, Day 1,700: After Talks With Zelensky, Trump Envoy Witkoff Meets Putin</title></circle>
+<circle cx="781.2" cy="166.0" r="2.2" fill="#777"><title>18181 S97: 'Very difficult to defeat' — how Russia uses mesh networks inside drones to precision-strike Kyiv</title></circle>
+<circle cx="781.2" cy="203.0" r="2.2" fill="#46f0f0"><title>18180 S89: US envoy Steve Witkoff lands in St. Petersburg for Russia peace talks</title></circle>
+<circle cx="782.2" cy="163.0" r="2.2" fill="#777"><title>17718 S7: Ukrainian forces reportedly strike energy infrastructure in occupied Donetsk Oblast, blackouts in Crimea</title></circle>
+<circle cx="782.2" cy="175.0" r="2.2" fill="#f032e6"><title>18205 S77: At least 2 killed, 2 injured in Russian drone attack on Kyiv</title></circle>
+<circle cx="782.2" cy="209.0" r="2.2" fill="#777"><title>18196 S98: Rusia confirma que Putin se reunirá a primera hora de hoy con el enviado de Trump para hablar de Ucrania</title></circle>
+<circle cx="783.9" cy="166.0" r="2.2" fill="#46f0f0"><title>18223 S89: Witkoff in Russia for Putin meeting after ‘positive’ talks with Zelenskyy</title></circle>
+<circle cx="784.9" cy="212.0" r="2.2" fill="#777"><title>16818 S99: Putins top henchman unleashes horror WW3 warning | World | News</title></circle>
+<circle cx="791.2" cy="163.0" r="2.2" fill="#e6194b"><title>18320 S4: US envoy meets Putin after 'positive' talks with Zelenskyy</title></circle>
+<circle cx="791.4" cy="160.0" r="2.2" fill="#777"><title>18333 S12: Russian attacks kill at least 9, wound 45 across Ukraine, as yet another deadly drone attack strikes Kyiv</title></circle>
+<circle cx="791.4" cy="169.0" r="2.2" fill="#46f0f0"><title>18343 S89: U.S. Envoy Steve Witkoff Arrives in Russia for Peace Talks With Putin</title></circle>
+<circle cx="792.3" cy="203.0" r="2.2" fill="#e6194b"><title>16927 S4: Ukraine’s Zelenskyy says US decisions on Ukraine hard to explain</title></circle>
+<circle cx="793.0" cy="212.0" r="2.2" fill="#e6194b"><title>18351 S4: Ukraine talks: What progress after US envoy met with Zelensky?</title></circle>
+<circle cx="793.1" cy="218.0" r="2.2" fill="#46f0f0"><title>18367 S89: Russia releases imprisoned American man, US envoy Witkoff says on visit to St. Petersburg</title></circle>
+<circle cx="794.4" cy="172.0" r="2.2" fill="#f58231"><title>18386 S88: Putin holds Ukraine peace talks with Trump’s envoy Witkoff, frees American Hubbard</title></circle>
+<circle cx="797.0" cy="200.0" r="2.2" fill="#777"><title>16387 S100: In a Truth Social post, a wimp reveals his negotiating technique: Give Putin everything</title></circle>
+<circle cx="797.0" cy="166.0" r="2.2" fill="#f58231"><title>18433 S88: Ukraine talks: US envoy meets Vladimir Putin in Russia</title></circle>
+<circle cx="797.0" cy="163.0" r="2.2" fill="#46f0f0"><title>18446 S89: Trump envoy Witkoff meets Putin in St Petersburg for Ukraine war talks</title></circle>
+<circle cx="798.3" cy="215.0" r="2.2" fill="#777"><title>18436 S101: Lockheed Martin delegation meets Ukraine's defense chiefs in Kyiv amid severe Patriot shortage</title></circle>
+<circle cx="798.3" cy="203.0" r="2.2" fill="#777"><title>18453 S98: El enviado de Trump pide a Putin retomar los contactos con Ucrania</title></circle>
+<circle cx="804.8" cy="172.0" r="2.2" fill="#777"><title>18575 S102: US Special Envoy commends Putin for being humanitarian like Trump in Ukraine talks</title></circle>
+<circle cx="805.4" cy="175.0" r="2.2" fill="#f58231"><title>18555 S88: Putin hosts Trump envoy for new Ukraine peace talks, frees US citizen held in Russia</title></circle>
+<circle cx="806.0" cy="163.0" r="2.2" fill="#46f0f0"><title>18607 S89: US envoy Witkoff meets Putin, discusses possible end of Ukraine war</title></circle>
+<circle cx="807.4" cy="200.0" r="2.2" fill="#777"><title>18613 S98: Witkoff insta a Putin a reanudar las negociaciones trilaterales de paz con Ucrania</title></circle>
+<circle cx="809.4" cy="206.0" r="2.2" fill="#f58231"><title>18650 S88: Kremlin 'ready' to resume trilateral peace talks with US, Ukraine, Putin claims</title></circle>
+<circle cx="809.4" cy="212.0" r="2.2" fill="#f58231"><title>18659 S88: Putin agrees to resume trilateral talks between Russia, Ukraine, US next month</title></circle>
+<circle cx="809.4" cy="160.0" r="2.2" fill="#f58231"><title>18662 S88: Putin, Trumps special envoy discuss Ukraine and situation in Persian Gulf</title></circle>
+<circle cx="810.6" cy="169.0" r="2.2" fill="#e6194b"><title>18672 S4: Zelensky proposes freezing front with Russia as first step to peace talks</title></circle>
+<circle cx="810.6" cy="212.0" r="2.2" fill="#777"><title>18673 S103: Peter Zalmayev: 'Ukraine was showing all sorts of cards that Trump took away and gave to Putin'</title></circle>
+<circle cx="811.9" cy="209.0" r="2.2" fill="#46f0f0"><title>18714 S89: US envoy Witkoff calls Russia’s Putin a ‘humanitarian’</title></circle>
+<circle cx="811.9" cy="169.0" r="2.2" fill="#f58231"><title>18721 S88: Putin agrees to resume talks on Ukraine war with Kyiv and Washington – Kremlin</title></circle>
+<circle cx="816.3" cy="209.0" r="2.2" fill="#f58231"><title>18784 S88: Kremlin says 'ready' to resume 3-way talks with US and Ukraine mid-November</title></circle>
+<circle cx="816.4" cy="169.0" r="2.2" fill="#e6194b"><title>18798 S4: Zelenskyy says Ukraine ready to freeze conflict along current front line, move to diplomacy</title></circle>
+<circle cx="816.4" cy="212.0" r="2.2" fill="#f58231"><title>18799 S88: Putin agrees to resume Ukraine peace talks after meeting with Trump envoy</title></circle>
+<circle cx="816.4" cy="175.0" r="2.2" fill="#f58231"><title>18779 S88: Russia ready to resume talks with Ukraine and US to end war</title></circle>
+<circle cx="817.7" cy="243.0" r="2.2" fill="#777"><title>18803 S98: Witkoff a Putin, 'anche lei è compassionevole'. Bufera in Usa, 'è un assassino'</title></circle>
+<circle cx="820.3" cy="215.0" r="2.2" fill="#777"><title>18849 S102: Trump faces fresh questions over ties to ‘humanitarian’ Putin</title></circle>
+<circle cx="820.3" cy="206.0" r="2.2" fill="#e6194b"><title>18860 S4: This May Be It: Putin Agrees to Peace Talks, Zelensky Open to Deal That Freezes Lines</title></circle>
+<circle cx="820.3" cy="218.0" r="2.2" fill="#777"><title>18864 S102: Trump envoy thanks Putin for humanitarian gesture</title></circle>
+<circle cx="821.5" cy="175.0" r="2.2" fill="#46f0f0"><title>18877 S89: PEACE TALKS: Witkoff Meets Russian President As Trump Pushes New Ukraine Peace Negotiations</title></circle>
+<circle cx="822.9" cy="169.0" r="2.2" fill="#f58231"><title>18889 S88: Ukraine war latest: Russia 'ready' to resume trilateral peace talks with US, Ukraine</title></circle>
+<circle cx="827.7" cy="178.0" r="2.2" fill="#46f0f0"><title>18934 S89: Russia willing to resume peace talks with Ukraine, US after Witkoff visit</title></circle>
+<circle cx="829.8" cy="218.0" r="2.2" fill="#777"><title>18990 S102: Trump faces fresh questions over ties to 'humanitarian' Putin</title></circle>
+<circle cx="829.9" cy="206.0" r="2.2" fill="#f58231"><title>18986 S88: Putin agrees to resume three-way talks with Kyiv and Washington</title></circle>
+<circle cx="831.3" cy="203.0" r="2.2" fill="#777"><title>18789 S104: US has disconnected its interests from morality, Kellogg’s daughter argues</title></circle>
+<circle cx="831.3" cy="200.0" r="2.2" fill="#f58231"><title>19019 S88: Russia willing to resume trilateral peace talks in November, Kremlin says after Witkoff meeting</title></circle>
+<circle cx="832.5" cy="209.0" r="2.2" fill="#777"><title>19029 S102: Trump weighs in after his envoy calls Putin a humanitarian</title></circle>
+<circle cx="840.9" cy="203.0" r="2.2" fill="#f58231"><title>19167 S88: Trump envoy meets Putin as new push to end Ukraine war faces major obstacles</title></circle>
+<circle cx="873.8" cy="200.0" r="2.2" fill="#777"><title>19292 S50: Explosions, fires reported amid overnight Ukrainian drone attack on Lipetsk, Russia</title></circle>
+<circle cx="873.8" cy="209.0" r="2.2" fill="#777"><title>19295 S45: Ukraines strikes on Russian data centers disrupt key services and derail AI research</title></circle>
+<circle cx="873.9" cy="258.0" r="2.2" fill="#777"><title>19214 S105: Ukraine’s Pavlohrad refuses to yield to Putin despite unrelenting bombardment</title></circle>
+<circle cx="874.6" cy="280.0" r="2.2" fill="#777"><title>17542 S105: Kaja Kallas accuses the US of pushing Ukraine to surrender on Putins terms</title></circle>
+<circle cx="875.3" cy="209.0" r="2.2" fill="#f58231"><title>19330 S88: Putin ready for talks with Ukraine, offers Trump help on Iran crisis</title></circle>
+<circle cx="879.1" cy="218.0" r="2.2" fill="#777"><title>19410 S7: Russian strikes hit Kyiv after Witkoff meets Putin</title></circle>
+<circle cx="882.0" cy="218.0" r="2.2" fill="#777"><title>19291 S7: Ukrainian forces reportedly strike Moscow Oblast weapons plant</title></circle>
+<circle cx="882.0" cy="215.0" r="2.2" fill="#777"><title>19451 S3: Russian strikes kill seven in Ukraine after US envoy meets P</title></circle>
+<circle cx="883.7" cy="249.0" r="2.2" fill="#f58231"><title>19484 S88: Russia signals new talks next month with Ukraine</title></circle>
+<circle cx="883.8" cy="240.0" r="2.2" fill="#777"><title>19474 S106: Ukraine to be able to buy military supplies via NATO agency: report</title></circle>
+<circle cx="886.0" cy="249.0" r="2.2" fill="#777"><title>19498 S3: Russia and Ukraine trade attacks despite pledging to resume peace talks</title></circle>
+<circle cx="887.6" cy="218.0" r="2.2" fill="#777"><title>19522 S9: Missiles hit Kyiv after Russia agrees to US call to resume Ukraine peace talks</title></circle>
+<circle cx="887.6" cy="203.0" r="2.2" fill="#777"><title>19552 S9: Russia pounds Kyiv with missiles and drones, hours after agreeing to peace talks</title></circle>
+<circle cx="887.6" cy="212.0" r="2.2" fill="#777"><title>19555 S9: Russia bombards Kyiv with missiles – hours after agreeing to resume talks with Ukraine</title></circle>
+<circle cx="887.6" cy="286.0" r="2.2" fill="#777"><title>19273 S3: Russia and Ukraine trade major attacks as Trump touts progress</title></circle>
+<circle cx="890.1" cy="203.0" r="2.2" fill="#e6194b"><title>19587 S4: Zelensky open to freezing conflict with Russia along current frontline</title></circle>
+<circle cx="890.1" cy="298.0" r="2.2" fill="#777"><title>19501 S106: Ukraine to gain access to NATO procurement system for weapons, ammunition, Financial Times says</title></circle>
+<circle cx="891.8" cy="212.0" r="2.2" fill="#777"><title>19429 S107: Putin Says Iran Deal Still Possible After Talks With US Envoy</title></circle>
+<circle cx="893.6" cy="218.0" r="2.2" fill="#e6194b"><title>19641 S4: Zelenskiy mocks Trump envoys humanitarian praise for Putin after fresh attacks – The Irish Times</title></circle>
+<circle cx="894.6" cy="200.0" r="2.2" fill="#777"><title>19327 S108: The West Is Thinking Too Small About Ukraine’s Victory</title></circle>
+<circle cx="894.6" cy="206.0" r="2.2" fill="#777"><title>19609 S33: Ukraine on threshold of winter: Energy, defense and new diplomatic reality</title></circle>
+<circle cx="894.6" cy="218.0" r="2.2" fill="#777"><title>19655 S23: Ukraine: Life near the front line in Sloviansk</title></circle>
+<circle cx="894.6" cy="206.0" r="2.2" fill="#46f0f0"><title>19672 S89: Witkoff Lavishes Praise On Humanitarian Kidnapper Putin</title></circle>
+<circle cx="896.0" cy="206.0" r="2.2" fill="#777"><title>19693 S55: Zelenskiy pushes for November talks, Kyiv hit by attack</title></circle>
+<circle cx="898.0" cy="209.0" r="2.2" fill="#777"><title>19701 S109: Finnish PM visits Kyiv as Russia steps up attacks despite peace push</title></circle>
+<circle cx="898.0" cy="206.0" r="2.2" fill="#46f0f0"><title>19714 S89: Russia frees retired US schoolteacher in goodwill gesture as Putin meets Witkoff</title></circle>
+<circle cx="900.0" cy="212.0" r="2.2" fill="#777"><title>19737 S6: Russia Criticizes Ukraine Peace Proposals</title></circle>
+<circle cx="900.0" cy="203.0" r="2.2" fill="#777"><title>19748 S9: Russian missiles pound Kyiv as Moscow says over 800 Ukrainian drones downed</title></circle>
+<circle cx="900.0" cy="206.0" r="2.2" fill="#777"><title>19721 S98: El Kremlin confirma que Putin no entregó a Witkoff ninguna nueva propuesta sobre la guerra de Ucrania</title></circle>
+<circle cx="902.0" cy="212.0" r="2.2" fill="#f58231"><title>19758 S88: Russia agrees to resume trilateral peace talks on Ukraine war</title></circle>
+<circle cx="902.2" cy="215.0" r="2.2" fill="#777"><title>19024 S6: Rosenberg: US diplomatic push offers little hope for imminent Ukraine peace</title></circle>
+<circle cx="905.1" cy="200.0" r="2.2" fill="#777"><title>19796 S33: On Borrowed Time: Ukraine's Economy in the War's Fifth Winter – KI Insights monthly briefing</title></circle>
+<circle cx="907.0" cy="258.0" r="2.2" fill="#777"><title>19823 S110: Zelenski rechaza ceder a Rusia los últimos bastiones en Donetsk: "Pueden hacerse con muchísimas más ciudades"</title></circle>
+<circle cx="907.0" cy="258.0" r="2.2" fill="#777"><title>19683 S102: Downing Street rejects American description of Vladimir Putin as humanitarian</title></circle>
+<circle cx="907.0" cy="215.0" r="2.2" fill="#46f0f0"><title>19836 S89: Just hours after being bombed, we asked people in Kyiv about Witkoff's praise of Putin</title></circle>
+<circle cx="910.2" cy="215.0" r="2.2" fill="#e6194b"><title>19906 S4: The Media Line: Zelensky Backs Freezing Ukraine Front Lines as Russia Agrees To Resume Talks</title></circle>
+<circle cx="910.2" cy="206.0" r="2.2" fill="#777"><title>19161 S9: Russian ballistic missiles rock Kyiv in late-night attack, injuring 6</title></circle>
+<circle cx="910.2" cy="212.0" r="2.2" fill="#777"><title>19891 S3: Ukraine and Russia exchange strikes after US envoy visit to the Kremlin</title></circle>
+<circle cx="912.3" cy="212.0" r="2.2" fill="#e6194b"><title>19926 S4: ‘No change’ in Russia’s attitude on war shown by deadly attacks, Zelensky says</title></circle>
+<circle cx="914.4" cy="209.0" r="2.2" fill="#777"><title>19960 S7: Ukraine strikes Russian electronic warfare station, General Staff says</title></circle>
+<circle cx="918.3" cy="209.0" r="2.2" fill="#777"><title>20030 S37: In war between Russia and Ukraine, United States is first to surrender, but Americans still stand with Ukraine</title></circle>
+<circle cx="918.3" cy="215.0" r="2.2" fill="#777"><title>20039 S9: Russian missiles hit Ukraine as Viktor Orbán called for a ceasefire in China</title></circle>
+<circle cx="925.0" cy="203.0" r="2.2" fill="#777"><title>20147 S9: Russia bombs Kyiv and Ukraine fires drones towards Moscow, despite talk of renewing negotiations</title></circle>
+<circle cx="966.9" cy="212.0" r="2.2" fill="#777"><title>20234 S7: Ukraine hit by strikes after Russia agrees to new peace talks</title></circle>
+<circle cx="966.9" cy="215.0" r="2.2" fill="#f032e6"><title>20326 S77: Russian drone attack injures 9 people, including 2 children</title></circle>
+<circle cx="966.9" cy="203.0" r="2.2" fill="#777"><title>20329 S99: World News in Brief: Russian attacks intensify, UN team tours West Bank, ‘unlawful’ elderly deaths</title></circle>
+<circle cx="967.0" cy="203.0" r="2.2" fill="#e6194b"><title>20350 S4: Zelensky Seeks Congress-Backed US Security Guarantees for Ukraine</title></circle>
+<circle cx="970.5" cy="203.0" r="2.2" fill="#777"><title>20399 S9: Russia strikes Kyiv with missiles | The Arkansas Democrat-Gazette - Arkansas Best News Source</title></circle>
+<circle cx="971.8" cy="200.0" r="2.2" fill="#f58231"><title>20419 S88: Russia ready for talks on plans for final Ukraine deal, not truce: Putin</title></circle>
+<circle cx="979.2" cy="209.0" r="2.2" fill="#777"><title>20569 S32: Trump makes another push to help Russia beat Ukraine (Editorial)</title></circle>
+<circle cx="979.2" cy="240.0" r="2.2" fill="#777"><title>20552 S12: Energy facilities across Ukraine targeted as Russian attacks kill at least 8, injure 67 over past day</title></circle>
+<circle cx="986.9" cy="243.0" r="2.2" fill="#777"><title>20665 S111: Ukraine receives 50,000 rounds of ammunition for F-16 cannons from Denmark</title></circle>
+<circle cx="990.1" cy="209.0" r="2.2" fill="#777"><title>20709 S112: Russia-Ukraine talks planned for November in UAE: Kremlin</title></circle>
+<circle cx="991.7" cy="243.0" r="2.2" fill="#777"><title>20749 S9: Russia drops cluster bombs on Ukraine as Kyiv consolidates front line</title></circle>
+<circle cx="995.2" cy="249.0" r="2.2" fill="#f032e6"><title>20835 S77: Ukrainian drone attack triggers shut down of Moscow airports, drone debris reported on tarmac</title></circle>
+<circle cx="997.1" cy="243.0" r="2.2" fill="#777"><title>20861 S113: Exclusive: Ukraine fears Trump could grant Russia long-sought relief for fertilizer industry</title></circle>
+<circle cx="997.1" cy="246.0" r="2.2" fill="#777"><title>19700 S97: Inside the institution where Ukraine races to counter Russia's evolving drones</title></circle>
+<circle cx="998.4" cy="206.0" r="2.2" fill="#f032e6"><title>20883 S77: Ukraine tries to shut Moscow's airports with drone strikes on Russia</title></circle>
+<circle cx="1001.0" cy="209.0" r="2.2" fill="#777"><title>20926 S41: ‘The West can’t stop me’: Space wars heat up as Russia tails a Ukraine-linked US satellite</title></circle>
+<circle cx="1006.6" cy="249.0" r="2.2" fill="#777"><title>20933 S114: Latest UAE mediation efforts succeed in exchange of 540 captives between Russia and Ukraine</title></circle>
+<circle cx="1012.2" cy="200.0" r="2.2" fill="#777"><title>21049 S12: Ukrainian civilians killed in Russian attacks after Trumps easing of sanctions</title></circle>
+<circle cx="1015.3" cy="243.0" r="2.2" fill="#777"><title>21092 S23: Russia's attacks on Ukraine's capital, Kyiv, are intensifying. DW asked people on the ground what life is like</title></circle>
+<circle cx="1017.6" cy="206.0" r="2.2" fill="#f58231"><title>21121 S88: Trilateral peace talks with Russia, US negotiators to begin in November, Zelensky says</title></circle>
+<circle cx="1017.6" cy="212.0" r="2.2" fill="#bcf60c"><title>21123 S2: Ukrainian negotiator says local ceasefire with Russia will start Oct. 27</title></circle>
+<circle cx="1019.1" cy="255.0" r="2.2" fill="#777"><title>21110 S112: Zelenskiy says Ukrainian, Russian and US negotiators to meet in early November in Abu Dhabi</title></circle>
+<circle cx="1020.5" cy="200.0" r="2.2" fill="#e6194b"><title>21161 S4: Zelensky hopes Beijing can use ‘influence’ over Moscow to help stop Ukraine war</title></circle>
+<circle cx="1066.1" cy="243.0" r="2.2" fill="#777"><title>20672 S59: Poland closes airports and air defence system activated as Russia launches attack</title></circle>
+<circle cx="1067.6" cy="203.0" r="2.2" fill="#777"><title>21351 S87: Rubio reveals theory on Russia's war against Ukraine ahead of next US peace push</title></circle>
+<circle cx="1067.6" cy="206.0" r="2.2" fill="#e6194b"><title>21352 S4: Zelensky 'maybe not such a big humanitarian as Putin,' he quips as Ukraine's relations with Trump unravel</title></circle>
+<circle cx="1070.6" cy="240.0" r="2.2" fill="#777"><title>21420 S12: Russian attacks kill 4, injure 78 across Ukraine over past day, as drone strikes Kyiv residential building in the mornin</title></circle>
+<circle cx="1071.9" cy="203.0" r="2.2" fill="#f58231"><title>21435 S88: Ukraine and Russia eye new peace talks — and Melania Trumps mission — but steep obstacles remain</title></circle>
+<circle cx="1075.4" cy="200.0" r="2.2" fill="#bcf60c"><title>21476 S2: Russia, Ukraine Agree Ceasefire in Embattled Town, Plan Peace Talks</title></circle>
+<circle cx="1076.9" cy="212.0" r="2.2" fill="#f58231"><title>21487 S88: Ukraine and Russia eye fresh peace talks despite obstacles</title></circle>
+<circle cx="1084.9" cy="243.0" r="2.2" fill="#777"><title>21519 S106: Ukraine sanctions Russian arms suppliers as Moscow ramps up attacks</title></circle>
+<circle cx="1088.7" cy="218.0" r="2.2" fill="#777"><title>21664 S6: Putin: Chinas plan may end war, but Ukraine and West not ready for peace</title></circle>
+<circle cx="1093.2" cy="240.0" r="2.2" fill="#e6194b"><title>21700 S4: Zelenskyy imposes sanctions on suppliers to Russias defense industry</title></circle>
+<circle cx="1109.5" cy="249.0" r="2.2" fill="#777"><title>21780 S7: Ukrainian forces reportedly strike Russian targets 2,500 kilometers from border</title></circle>
+<circle cx="1117.2" cy="252.0" r="2.2" fill="#e6194b"><title>21851 S4: Zelensky says Ukraine ready to freeze front lines but rejects territorial concessions-Xinhua</title></circle>
+<circle cx="1165.6" cy="249.0" r="2.2" fill="#f032e6"><title>22004 S77: Massive Ukrainian drone attack hits shopping center in Russia's Belgorod Oblast, locals say</title></circle>
+<circle cx="1187.0" cy="243.0" r="2.2" fill="#f58231"><title>22142 S88: Moscow ready to resume trilateral talks with Ukraine, US after Nov. 4, Kremlin aide says</title></circle>
+<circle cx="1187.0" cy="246.0" r="2.2" fill="#777"><title>22143 S32: Trump wants 'business with both' Ukraine, Russia after war ends</title></circle>
+<circle cx="1189.5" cy="240.0" r="2.2" fill="#f032e6"><title>22141 S77: Ukraine strikes Russian titanium plant, facility producing missile, drone components, monitoring channels claim</title></circle>
+<circle cx="1191.0" cy="252.0" r="2.2" fill="#f032e6"><title>22229 S77: Russia says Ukraine fired missiles at Moscow, drone strikes in Crimea</title></circle>
+<circle cx="1197.1" cy="240.0" r="2.2" fill="#777"><title>22281 S41: 1,200km reach, Western parts: How Russias new Filin missile adds to Ukraines air defence woes</title></circle>
+<circle cx="1249.5" cy="258.0" r="2.2" fill="#bcf60c"><title>22588 S2: Ukraine-Russia ceasefire announced ahead of Melania Trump mission</title></circle>
+<circle cx="1258.2" cy="255.0" r="2.2" fill="#777"><title>22699 S12: Russian attacks across Ukraine kill 2, injure 35 over past day, as repeated strikes hit Zaporizhzhia</title></circle>
+<circle cx="1258.9" cy="298.0" r="2.2" fill="#777"><title>22672 S12: 6 Injured in Russian Strikes on Ukraines Zaporizhzhia, Chernihiv, Officials Say</title></circle>
+<circle cx="1265.8" cy="323.0" r="2.2" fill="#777"><title>22793 S7: Ukrainian strike reportedly damages chemical plant in Russia's Voronezh</title></circle>
+<circle cx="1268.4" cy="292.0" r="2.2" fill="#777"><title>22831 S41: US holding up air defense missiles for Ukraine for nearly a month, Zelensky says</title></circle>
+<circle cx="1342.6" cy="252.0" r="2.2" fill="#bcf60c"><title>23034 S2: Truce begins in wartorn Ukraine city after it was announced by Melania Trump</title></circle>
+<circle cx="1342.6" cy="240.0" r="2.2" fill="#777"><title>23149 S38: Russia halts strikes on Ukraine’s Kherson as Oleshky ceasefire takes effect</title></circle>
+<circle cx="1342.6" cy="252.0" r="2.2" fill="#bcf60c"><title>23174 S2: Ceasefire brokered by Melania Trump begins in Russian-occupied Ukrainian town</title></circle>
+<circle cx="1342.6" cy="252.0" r="2.2" fill="#777"><title>23209 S38: Local ceasefire in besieged Oleshky begins, Ukrainian, Russian officials say</title></circle>
+<circle cx="1342.7" cy="295.0" r="2.2" fill="#777"><title>23210 S7: Ukraine reportedly strikes Russian ammunition depot in occupied Luhansk Oblast</title></circle>
+<circle cx="1344.7" cy="298.0" r="2.2" fill="#777"><title>23295 S38: Russia, Ukraine begin Oleshky ceasefire but keep up strikes elsewhere</title></circle>
+<circle cx="1344.7" cy="298.0" r="2.2" fill="#bcf60c"><title>23309 S2: US-Brokered Truce Begins in Ukraine City Occupied by Russia</title></circle>
+<circle cx="1350.7" cy="280.0" r="2.2" fill="#bcf60c"><title>23380 S2: Melania Trump-brokered one-city ceasefire between Russia and Ukraine takes effect</title></circle>
+<circle cx="1350.7" cy="338.0" r="2.2" fill="#777"><title>23372 S12: Russian attacks across Ukraine kill four, injure 55 over past day, as Kyiv comes under ballistic missile assault</title></circle>
+<circle cx="1352.9" cy="280.0" r="2.2" fill="#777"><title>23415 S38: Russia Halts Fire Near Ukraines Oleshky for Aid Mission, Immediately Strikes Kyiv - Novinite.com</title></circle>
+<circle cx="1354.1" cy="338.0" r="2.2" fill="#777"><title>23204 S9: Russian ballistic missiles hit major Kyiv bridge university, medical centers, — 1 dead, 15 injured</title></circle>
+<circle cx="1360.0" cy="298.0" r="2.2" fill="#bcf60c"><title>23512 S2: Localised Russia-Ukraine ceasefire starts Ukrainian town facing starvation</title></circle>
+<circle cx="40" cy="540" r="4" fill="#e6194b"/><text x="48" y="544">S4: Putin wants Ukraine deal mor</text>
+<circle cx="210" cy="540" r="4" fill="#3cb44b"/><text x="218" y="544">S1: Six Ukrainian energy sites h</text>
+<circle cx="380" cy="540" r="4" fill="#4363d8"/><text x="388" y="544">S10: 'This cannot be a coincidenc</text>
+<circle cx="550" cy="540" r="4" fill="#f58231"/><text x="558" y="544">S88: Ukraine, US to hold Norway p</text>
+<circle cx="720" cy="540" r="4" fill="#911eb4"/><text x="728" y="544">S11: Elon Musks Starlink limits U</text>
+<circle cx="890" cy="540" r="4" fill="#46f0f0"/><text x="898" y="544">S89: Zelenskyy to hold talks on R</text>
+<circle cx="1060" cy="540" r="4" fill="#f032e6"/><text x="1068" y="544">S77: Ukrainian drone attack on Ru</text>
+<circle cx="1230" cy="540" r="4" fill="#bcf60c"/><text x="1238" y="544">S2: Trump claims Russia and Ukra</text>
+<text x="40" y="570" fill="#666">Grey dots: the other sub-stories. Hover a dot for the item.</text></svg>

@@ -1,0 +1,199 @@
+{
+ "cosine_sweep": [
+  {
+   "min_cosine": 0.53,
+   "largest": 216,
+   "components_ge5": 1,
+   "singletons": 0,
+   "top5": [
+    216
+   ]
+  },
+  {
+   "min_cosine": 0.55,
+   "largest": 201,
+   "components_ge5": 2,
+   "singletons": 7,
+   "top5": [
+    201,
+    8,
+    1,
+    1,
+    1
+   ]
+  },
+  {
+   "min_cosine": 0.58,
+   "largest": 180,
+   "components_ge5": 1,
+   "singletons": 27,
+   "top5": [
+    180,
+    4,
+    3,
+    2,
+    1
+   ]
+  },
+  {
+   "min_cosine": 0.6,
+   "largest": 166,
+   "components_ge5": 1,
+   "singletons": 36,
+   "top5": [
+    166,
+    4,
+    3,
+    3,
+    2
+   ]
+  },
+  {
+   "min_cosine": 0.62,
+   "largest": 155,
+   "components_ge5": 1,
+   "singletons": 46,
+   "top5": [
+    155,
+    3,
+    3,
+    3,
+    2
+   ]
+  },
+  {
+   "min_cosine": 0.65,
+   "largest": 136,
+   "components_ge5": 1,
+   "singletons": 60,
+   "top5": [
+    136,
+    3,
+    3,
+    3,
+    3
+   ]
+  },
+  {
+   "min_cosine": 0.7,
+   "largest": 65,
+   "components_ge5": 4,
+   "singletons": 107,
+   "top5": [
+    65,
+    9,
+    6,
+    5,
+    4
+   ]
+  },
+  {
+   "min_cosine": 0.75,
+   "largest": 8,
+   "components_ge5": 5,
+   "singletons": 156,
+   "top5": [
+    8,
+    7,
+    6,
+    5,
+    5
+   ]
+  }
+ ],
+ "drift": [
+  {
+   "day": "2026-10-16",
+   "n": 1,
+   "mean_cos_to_current_centroid": 0.71,
+   "mean_cos_to_seed_centroid": 0.71,
+   "share_below_0.53_to_seed": 0.0,
+   "centroid_vs_seed": 1.0
+  },
+  {
+   "day": "2026-10-18",
+   "n": 23,
+   "mean_cos_to_current_centroid": 0.694,
+   "mean_cos_to_seed_centroid": 0.577,
+   "share_below_0.53_to_seed": 0.22,
+   "centroid_vs_seed": 0.855
+  },
+  {
+   "day": "2026-10-19",
+   "n": 37,
+   "mean_cos_to_current_centroid": 0.646,
+   "mean_cos_to_seed_centroid": 0.548,
+   "share_below_0.53_to_seed": 0.38,
+   "centroid_vs_seed": 0.818
+  },
+  {
+   "day": "2026-10-20",
+   "n": 37,
+   "mean_cos_to_current_centroid": 0.573,
+   "mean_cos_to_seed_centroid": 0.478,
+   "share_below_0.53_to_seed": 0.43,
+   "centroid_vs_seed": 0.828
+  },
+  {
+   "day": "2026-10-21",
+   "n": 21,
+   "mean_cos_to_current_centroid": 0.604,
+   "mean_cos_to_seed_centroid": 0.52,
+   "share_below_0.53_to_seed": 0.52,
+   "centroid_vs_seed": 0.83
+  },
+  {
+   "day": "2026-10-22",
+   "n": 18,
+   "mean_cos_to_current_centroid": 0.63,
+   "mean_cos_to_seed_centroid": 0.518,
+   "share_below_0.53_to_seed": 0.56,
+   "centroid_vs_seed": 0.831
+  },
+  {
+   "day": "2026-10-23",
+   "n": 32,
+   "mean_cos_to_current_centroid": 0.654,
+   "mean_cos_to_seed_centroid": 0.548,
+   "share_below_0.53_to_seed": 0.38,
+   "centroid_vs_seed": 0.83
+  },
+  {
+   "day": "2026-10-24",
+   "n": 27,
+   "mean_cos_to_current_centroid": 0.702,
+   "mean_cos_to_seed_centroid": 0.584,
+   "share_below_0.53_to_seed": 0.19,
+   "centroid_vs_seed": 0.831
+  },
+  {
+   "day": "2026-10-25",
+   "n": 9,
+   "mean_cos_to_current_centroid": 0.697,
+   "mean_cos_to_seed_centroid": 0.561,
+   "share_below_0.53_to_seed": 0.33,
+   "centroid_vs_seed": 0.829
+  },
+  {
+   "day": "2026-10-26",
+   "n": 3,
+   "mean_cos_to_current_centroid": 0.708,
+   "mean_cos_to_seed_centroid": 0.599,
+   "share_below_0.53_to_seed": 0.33,
+   "centroid_vs_seed": 0.829
+  },
+  {
+   "day": "2026-10-27",
+   "n": 2,
+   "mean_cos_to_current_centroid": 0.656,
+   "mean_cos_to_seed_centroid": 0.526,
+   "share_below_0.53_to_seed": 0.5,
+   "centroid_vs_seed": 0.829
+  }
+ ],
+ "overall": {
+  "continuations": 210,
+  "share_below_0.53_to_seed_centroid": 0.371,
+  "share_below_0.53_to_current_centroid": 0.138
+ }
+}
