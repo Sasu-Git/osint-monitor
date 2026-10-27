@@ -142,3 +142,38 @@ rejects the guard, whatever the development result.
 - Cross-language identity.
 - Any threshold change.
 - Live deployment: if accepted, E1 becomes its own deploy candidate under the runbook, after Candidates A and B.
+
+## Amendment 1 (2026-10-27): feasibility gate definitions, frozen before measurement
+
+Owner approval 2026-10-27: "APPROVE E1 FEASIBILITY" (feasibility only; no implementation; no full replay before
+Candidate A C2; the Phase 2 holdout is not opened). Written and committed before any pair was measured.
+
+- **Lexicon frozen:** `e1/action_classes.yaml`, 16 classes, en / es / it, sha256 (LF bytes)
+  `6de4875a69b9fc4850342e93139dcd520e86e911efd76e4ddc6c9a1374196150`. Written without reading any pair headline.
+  No lemma is in two classes, or in a class and the generic list.
+- **Measurement script frozen:** `e1/feasibility.py`, sha256 (LF bytes)
+  `a3f736756fe90f11bd3590d7489381dfd8c8c91bd4588c69b0518558d4780929`. It records the sha256 of every input.
+- **Main action.** The headline is HTML-unescaped and parsed with the pipeline's model for its language
+  (en_core_web_lg, es_core_news_md, it_core_news_md). The main action is the root of the first sentence whose root is a
+  VERB, NOUN or PROPN, as its lowercased spaCy lemma. Generic lemmas and lemmas outside the lexicon get no class.
+  Other languages get no class. Items in the wayback clustering windows (2026-08-21, 2026-09-25) carry no language
+  field and are read as English.
+- **Report headline:** `headline_kind` from `osint_monitor/processors/development_segmentation.py` at `adacb83`
+  (identical to `production-stable-20261016` for this function).
+- **Guard on one link:** fires only when the two items are more than 24 h apart, both are report headlines, both main
+  actions have a class, and the classes differ.
+- **Pairs.** A case is two sides; a side is one item (identity gold) or several (relation-derived defect cases). Every
+  item link between the sides is evaluated. Cases are deduplicated across sources by their item sets; a case with
+  conflicting labels across sources is reported and left out. AMBIGUOUS is left out.
+- **Data (development only).** Identity gold rev 4 entries with `split: development` (`identity-gold.yaml` and
+  `identity-gold-rev3-additions.yaml`, which together hold the Phase 2 development pairs); the frozen defect set
+  (`defect-cases.json`) except its one case in the holdout window 2026-08-31, which is dropped unread. Gold entries of
+  the holdout split are dropped before any other field is used.
+- **F1 population:** cross-day OVERMERGE pairs = DIFFERENT pairs that the current code keeps together: defect-set
+  OVERMERGE cases, plus Phase 2 development DIFFERENT pairs ledgered "kept together" in
+  `phase2-dev-actor-hygiene.json` (@fix/actor-hygiene). Cross-day means **every** item link is more than 24 h apart
+  (a link within 24 h cannot be cut). **F1** = the share whose every link the guard cuts.
+- **F2 population:** SAME pairs (all development sources) with **at least one** item link more than 24 h apart.
+  **F2** = the number on which the guard cuts at least one link.
+- **Gate unchanged:** proceed only if F1 >= 40% and F2 <= 1; otherwise stop and implement nothing. Secondary numbers
+  (F1 counting any cut link; all cross-day DIFFERENT pairs) are reported for information and do not change the gate.

@@ -1,0 +1,73 @@
+# E1 action lexicon (EXPERIMENT-PLAN.md, amendment 1). FROZEN before any measurement: do not edit.
+# General classes only: no names, places or case identifiers. Keys are lowercase spaCy lemmas (verbs and event nouns).
+# A lemma belongs to at most one class per language. Lemmas outside the lexicon, and the generic list, never fire.
+version: 1
+generic:
+  en: [say, report, update, continue, make, take, hold]
+  es: [decir, informar, actualizar, continuar, seguir, hacer, tomar, mantener]
+  it: [dire, riferire, aggiornare, continuare, fare, prendere, tenere]
+classes:
+  judicial_ruling:
+    en: [rule, ruling, uphold, overturn, convict, acquit, sentence, verdict]
+    es: [fallar, dictaminar, condenar, absolver, sentenciar, anular, fallo, sentencia, condena, veredicto]
+    it: [condannare, assolvere, sentenziare, annullare, sentenza, condanna, verdetto]
+  halt_suspend:
+    en: [halt, suspend, pause, freeze, postpone, delay, cancel, stop, suspension, postponement]
+    es: [suspender, paralizar, frenar, aplazar, posponer, cancelar, congelar, suspensión, aplazamiento]
+    it: [sospendere, fermare, bloccare, rinviare, cancellare, congelare, sospensione, rinvio]
+  execute_carry_out:
+    en: [execute, execution, hang]
+    es: [ejecutar, ejecución]
+    it: [giustiziare, eseguire, esecuzione]
+  reject_refuse:
+    en: [reject, refuse, deny, veto, rebuff, rejection, refusal]
+    es: [rechazar, negar, rehusar, vetar, rechazo]
+    it: [respingere, rifiutare, negare, bocciare, rifiuto]
+  propose_offer:
+    en: [propose, offer, proposal]
+    es: [proponer, ofrecer, propuesta, oferta]
+    it: [proporre, offrire, proposta, offerta]
+  negotiate_meet:
+    en: [negotiate, meet, talk, talks, negotiation, meeting, summit, visit]
+    es: [negociar, reunir, negociación, reunión, cumbre, visitar, visita, conversación]
+    it: [negoziare, incontrare, trattare, negoziato, incontro, vertice, colloquio, visitare, visita, trattativa]
+  attack_strike:
+    en: [attack, strike, bomb, shell, raid, invade, hit, airstrike, invasion, bombing]
+    es: [atacar, bombardear, invadir, disparar, ataque, bombardeo, invasión]
+    it: [attaccare, bombardare, colpire, invadere, attacco, bombardamento, raid, invasione]
+  arrive_deliver:
+    en: [arrive, deliver, land, send, ship, arrival, delivery]
+    es: [llegar, entregar, enviar, aterrizar, llegada, entrega, envío]
+    it: [arrivare, consegnare, inviare, atterrare, arrivo, consegna, invio]
+  detain_arrest:
+    en: [detain, arrest, capture, seize, kidnap, detention]
+    es: [detener, arrestar, capturar, secuestrar, detención, arresto]
+    it: [arrestare, catturare, rapire, arresto, cattura]
+  resign_dismiss:
+    en: [resign, quit, dismiss, sack, oust, resignation, ouster]
+    es: [dimitir, renunciar, destituir, cesar, dimisión, renuncia, destitución]
+    it: [dimettere, licenziare, destituire, dimissioni, licenziamento]
+  approve_sign:
+    en: [approve, sign, pass, ratify, adopt, agree, approval, agreement, deal, accord]
+    es: [aprobar, firmar, ratificar, acordar, aprobación, firma, acuerdo]
+    it: [approvare, firmare, ratificare, approvazione, firma, accordo, intesa]
+  announce_launch:
+    en: [announce, launch, unveil, introduce, begin, start, announcement]
+    es: [anunciar, lanzar, presentar, iniciar, comenzar, anuncio, lanzamiento]
+    it: [annunciare, lanciare, presentare, avviare, iniziare, annuncio, lancio]
+  casualty:
+    en: [kill, die, death, killing]
+    es: [matar, morir, muerte]
+    it: [uccidere, morire, morte]
+  warn_threaten:
+    en: [warn, threaten, warning, threat, vow]
+    es: [advertir, amenazar, alertar, amenaza, advertencia]
+    it: [avvertire, minacciare, avvisare, minaccia, avvertimento]
+  protest:
+    en: [protest, demonstrate, rally, march]
+    es: [protestar, manifestar, protesta, manifestación, huelga]
+    it: [protestare, manifestare, protesta, manifestazione, sciopero]
+  investigate_charge:
+    en: [investigate, probe, charge, accuse, indict, sue, investigation]
+    es: [investigar, acusar, imputar, procesar, denunciar, investigación, acusación]
+    it: [indagare, accusare, denunciare, indagine, inchiesta, accusa]
