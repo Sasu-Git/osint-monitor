@@ -41,6 +41,9 @@ def _isolated_runtime_files(tmp_path, monkeypatch):
     monkeypatch.setattr(gaps, "EVENTS_LOG", tmp_path / "collector_events.jsonl")
     from osint_monitor.alerting import channels
     monkeypatch.setattr(channels, "DELIVERY_FILE", tmp_path / "alert_delivery.json")
+    # membership provenance: off (the default) and, if a test turns it on, never written to data/logs
+    monkeypatch.setenv("OSINT_MEMBERSHIP_LOG", "false")
+    monkeypatch.setenv("OSINT_MEMBERSHIP_LOG_PATH", str(tmp_path / "membership_decisions.jsonl"))
 
 
 @pytest.fixture()

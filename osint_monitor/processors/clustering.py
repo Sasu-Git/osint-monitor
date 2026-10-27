@@ -438,15 +438,19 @@ def persist_clusters(session: Session, clusters: list[dict], decisions: list | N
     it is compatibly linked to; new items that continue nothing form a new Development only when they are linked
     and come from at least two independent origins (single-source evidence stays below the Development layer).
     ``decisions``, when given, receives every ``development_identity.Decision`` with its reasons."""
+    from osint_monitor.core import membership_log
     from osint_monitor.core.config import load_event_grouping_config
     from osint_monitor.processors import development_identity as identity
 
     config = load_event_grouping_config().development_segmentation
+    log = membership_log.writer()                     # None unless membership provenance is enabled
     created = 0
     for cluster in sorted(clusters, key=lambda c: identity.cluster_order_key(session, c)):
-        for d in identity.reconcile(session, cluster, config):
+        for d in identity.reconcile(session, cluster, config, evidence=log is not None):
             if decisions is not None:
                 decisions.append(d)
+            if log is not None and d.held and not d.added:
+                _log_decision(log, d, cluster)
             if not d.added:
                 continue
             items = (session.query(RawItem).options(joinedload(RawItem.source))
@@ -495,9 +499,30 @@ def persist_clusters(session: Session, clusters: list[dict], decisions: list | N
             _populate_event_entities(session, event.id, d.added)
             _link_claims_to_event(session, event.id, d.added)
             session.flush()
+            if log is not None:
+                _log_decision(log, d, cluster)
 
     session.commit()
     return created
+
+
+def _log_decision(log, d, cluster: dict) -> None:
+    """Membership provenance for one identity decision (core/membership_log.py). Never raises."""
+    from osint_monitor.core.membership_log import cluster_fingerprint
+    try:
+        fp = cluster_fingerprint(cluster.get("item_ids") or [])
+        if d.added:
+            path = ("structured" if cluster.get("kind") == STRUCTURED
+                    else "formation" if d.created else "late_attachment")
+            for n in d.added:
+                log.record(item_id=n, event_id=d.event_id, decision="accepted", path=path,
+                           reason=d.reasons[0] if d.reasons else None, cluster_fingerprint=fp,
+                           **d.evidence.get(n, {}))
+        for n, why in d.held.items():
+            log.record(item_id=n, event_id=None, decision="rejected", path="held", reason=why,
+                       cluster_fingerprint=fp, **d.evidence.get(n, {}))
+    except Exception as e:
+        logger.debug(f"membership log skipped: {e}")
 
 
 def update_earliest_published(session: Session, event: Event, item_ids: list[int]) -> None:

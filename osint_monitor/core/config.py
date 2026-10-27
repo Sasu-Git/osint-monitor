@@ -368,6 +368,12 @@ class AppSettings(BaseSettings):
     log_level: str = "INFO"
     api_host: str = "0.0.0.0"
     api_port: int = 8000
+    # Membership-decision provenance (core/membership_log.py): observability only, OFF unless enabled
+    # (OSINT_MEMBERSHIP_LOG=true). Rotating JSONL; never read by the pipeline.
+    membership_log: bool = False
+    membership_log_path: str = str(DATA_DIR / "logs" / "membership_decisions.jsonl")
+    membership_log_max_bytes: int = 10_000_000
+    membership_log_backups: int = 9
 
     model_config = {"env_prefix": "OSINT_", "env_file": str(BASE_DIR / ".env"), "extra": "ignore"}
 

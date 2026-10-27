@@ -958,3 +958,11 @@ def _process_single_item(
                 item_id=db_item.id,
                 similarity_score=dedup_result["similarity"],
             ))
+            from osint_monitor.core import membership_log
+            log = membership_log.writer()
+            if log is not None:
+                log.record(item_id=db_item.id, event_id=existing_event_item.event_id, decision="accepted", path="dedup",
+                           reason="near-duplicate of a member from another source",
+                           supporting_member_ids=[existing_item.id], n_links=1,
+                           similarity=dedup_result.get("similarity"),
+                           segmentation="not checked (dedup path)", source=raw_item.source_name)

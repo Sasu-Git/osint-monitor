@@ -46,6 +46,10 @@ class Decision:
     added: list[int] = field(default_factory=list)
     held: dict[int, str] = field(default_factory=dict)     # item id -> why it stayed below the Development layer
     reasons: list[str] = field(default_factory=list)
+    # item id -> the evidence this decision used (supporting members, similarities, override, ...); filled only when
+    # membership provenance is on (core/membership_log.py) and never read by any decision
+    evidence: dict[int, dict] = field(default_factory=dict)
+    origins: int | None = None                                 # independent origins counted for a new Development
 
 
 def cluster_order_key(session: Session, cluster: dict):
@@ -108,9 +112,10 @@ def _components(ids: list[int], linked) -> list[list[int]]:
     return parts
 
 
-def reconcile(session: Session, cluster: dict, config) -> list[Decision]:
+def reconcile(session: Session, cluster: dict, config, evidence: bool = False) -> list[Decision]:
     """Decide what one cluster does to the persisted Developments (no writes). Returns one Decision per
-    Development it extends or creates, plus one (event_id None) for the items it leaves below the layer."""
+    Development it extends or creates, plus one (event_id None) for the items it leaves below the layer.
+    With ``evidence``, each Decision also carries the evidence it used (provenance only; decisions are identical)."""
     from osint_monitor.core.database import EventItem
     from osint_monitor.processors.development_segmentation import _cosine, compatible_link, segment_items
     from osint_monitor.processors.event_grouping import STRUCTURED
@@ -142,10 +147,12 @@ def reconcile(session: Session, cluster: dict, config) -> list[Decision]:
     decisions: list[Decision] = []
     extend: dict[int, list[int]] = {}
     rest: list[int] = []
+    candidates: dict[int, dict[int, list[int]]] = {}         # item -> Development -> linked members (provenance)
     for n in new_ids:
         best = None
         for e in touched:
             links = [m for m in members[e] if linked(n, m)]
+            candidates.setdefault(n, {})[e] = links
             if links:
                 score = (len(links), max(_cosine(seg[n].vector, seg[m].vector) for m in links), -e)
                 if best is None or score > best[0]:
@@ -171,10 +178,57 @@ def reconcile(session: Session, cluster: dict, config) -> list[Decision]:
             for n in part:
                 held.held[n] = f"single-source: {origins} independent origin(s)"
             continue
-        d = Decision(cluster=cluster, created=True, added=part)
+        d = Decision(cluster=cluster, created=True, added=part, origins=origins)
         d.reasons.append(f"new Development: {len(part)} items, {origins} independent origins")
         decisions.append(d)
     if held.held:
         held.reasons.append("below the Development layer")
         decisions.append(held)
+    if evidence:
+        try:
+            _attach_evidence(decisions, seg, candidates, linked, config)
+        except Exception as e:                                   # provenance never affects identity
+            logger.debug(f"membership evidence skipped: {e}")
     return decisions
+
+
+def _attach_evidence(decisions: list[Decision], seg: dict, candidates: dict, linked, config) -> None:
+    """Describe, per item, the links each decision already relied on. Pure: reads the same cached links and
+    segmentation items; computes no new link and changes no decision."""
+    from osint_monitor.processors.development_segmentation import (
+        _cosine, _headline_mismatch_outweighed, occurrence_evidence, places_compatible)
+
+    def describe(n: int, partners: list[int]) -> dict:
+        ranked = sorted(partners, key=lambda m: -_cosine(seg[n].vector, seg[m].vector)) if n in seg else []
+        out = {"supporting_member_ids": ranked[:5], "n_links": len(partners), "best_cosine": None,
+               "best_headline_cosine": None, "override": None, "places_compatible": None,
+               "segmentation": "no guard on the supporting link" if ranked else None,
+               "actors_compatible": None}                     # actors are not part of the current link rule
+        if not ranked:
+            return out
+        a, b = seg[n], seg[ranked[0]]
+        out["best_cosine"] = round(_cosine(a.vector, b.vector), 4)
+        if a.headline_vector is not None and b.headline_vector is not None:
+            h = _cosine(a.headline_vector, b.headline_vector)
+            out["best_headline_cosine"] = round(h, 4)
+            if (config.min_headline_similarity is not None and a.source != b.source
+                    and h < config.min_headline_similarity):
+                out["override"] = ("headline_6h" if _headline_mismatch_outweighed(a, b, config)
+                                   else "p7" if occurrence_evidence(a, b, config) else None)
+        if a.locations and b.locations:
+            out["places_compatible"] = places_compatible(a.locations, b.locations, config)
+        return out
+
+    for d in decisions:
+        if d.event_id is not None and not d.created:             # continuation of an existing Development
+            for n in d.added:
+                cands = candidates.get(n, {})
+                d.evidence[n] = {**describe(n, cands.get(d.event_id, [])),
+                                 "competing_event_ids": sorted(e for e, ls in cands.items() if ls and e != d.event_id)}
+        elif d.created:                                          # a new Development: links among its own items
+            for n in d.added:
+                d.evidence[n] = {**describe(n, [m for m in d.added if m != n and linked(n, m)]),
+                                 "independent_origins": d.origins, "competing_event_ids": []}
+        for n in d.held:
+            cands = candidates.get(n, {})
+            d.evidence[n] = {**describe(n, []), "competing_event_ids": sorted(e for e, ls in cands.items() if ls)}
