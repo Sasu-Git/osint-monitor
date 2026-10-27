@@ -1,0 +1,813 @@
+# Owner labels for the coverage-recoverability sample (see review_server.py for the fields).
+# The sample, partners and key are frozen in sample-manifest.json / FREEZE.md.
+C001:
+  label: SHOULD_JOIN
+  labelled_at: '2026-10-13T12:57:08+00:00'
+  note: null
+  partners:
+  - 5911
+  - 5185
+  reviewer: owner
+C002:
+  label: SHOULD_JOIN
+  labelled_at: '2026-10-13T12:57:28+00:00'
+  note: null
+  partners:
+  - 7712
+  - 7809
+  reviewer: owner
+C003:
+  label: SHOULD_JOIN
+  labelled_at: '2026-10-13T12:57:39+00:00'
+  note: null
+  partners:
+  - 2572
+  - 2570
+  - 2551
+  reviewer: owner
+C004:
+  label: SHOULD_JOIN
+  labelled_at: '2026-10-13T12:59:19+00:00'
+  note: null
+  partners:
+  - 6227
+  - 6068
+  reviewer: owner
+C005:
+  label: SHOULD_JOIN
+  labelled_at: '2026-10-13T12:59:39+00:00'
+  note: null
+  partners:
+  - 8494
+  reviewer: owner
+C006:
+  label: SHOULD_JOIN
+  labelled_at: '2026-10-13T12:59:59+00:00'
+  note: null
+  partners:
+  - 5492
+  reviewer: owner
+C007:
+  label: SHOULD_JOIN
+  labelled_at: '2026-10-13T13:00:15+00:00'
+  note: null
+  partners:
+  - 6352
+  - 5099
+  reviewer: owner
+C008:
+  label: AMBIGUOUS
+  labelled_at: '2026-10-13T13:01:12+00:00'
+  note: source from GDELT is not English, Italian or Spanish. Why did it surface (ping
+    me in output after review)
+  partners: null
+  reviewer: owner
+C009:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-13T13:01:29+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C010:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-13T13:01:38+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C011:
+  label: SHOULD_JOIN
+  labelled_at: '2026-10-13T13:01:50+00:00'
+  note: null
+  partners:
+  - 7698
+  - 7514
+  reviewer: owner
+C012:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-13T13:03:26+00:00'
+  note: '"variety of counter-drone tech" --> when finding partners we can cross check
+    company names or total amounts to make sure they''re talking about the same occurrence
+    / development'
+  partners: null
+  reviewer: owner
+C013:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-13T13:03:43+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C014:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-13T13:04:04+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C015:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-13T13:07:23+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C016:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-13T13:07:40+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C017:
+  label: SHOULD_JOIN
+  labelled_at: '2026-10-13T13:08:31+00:00'
+  note: should join only because they are both referring to the export recovery, looks
+    like both are analysis pieces
+  partners:
+  - 3632
+  reviewer: owner
+C018:
+  label: SHOULD_JOIN
+  labelled_at: '2026-10-13T13:09:19+00:00'
+  note: should join, partner 1 is an analysis piece
+  partners:
+  - 3252
+  reviewer: owner
+C019:
+  label: AMBIGUOUS
+  labelled_at: '2026-10-13T13:09:46+00:00'
+  note: again the item is not in English, Italian or Spanish. Should not surface
+  partners: null
+  reviewer: owner
+C020:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-13T13:11:49+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C021:
+  label: SHOULD_JOIN
+  labelled_at: '2026-10-13T13:12:02+00:00'
+  note: null
+  partners:
+  - 5179
+  reviewer: owner
+C022:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-13T13:12:13+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C023:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-13T13:29:13+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C024:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-13T13:30:04+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C025:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-13T13:30:13+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C026:
+  label: SHOULD_JOIN
+  labelled_at: '2026-10-13T13:32:32+00:00'
+  note: null
+  partners:
+  - 7335
+  - 7145
+  - 7383
+  reviewer: owner
+C027:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-13T13:33:09+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C028:
+  label: SHOULD_JOIN
+  labelled_at: '2026-10-13T13:33:44+00:00'
+  note: null
+  partners:
+  - 7205
+  reviewer: owner
+C029:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-13T13:34:02+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C030:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-13T13:34:10+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C031:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-13T13:34:19+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C032:
+  label: SHOULD_JOIN
+  labelled_at: '2026-10-13T13:34:41+00:00'
+  note: null
+  partners:
+  - 3660
+  - 3607
+  reviewer: owner
+C033:
+  label: SHOULD_JOIN
+  labelled_at: '2026-10-13T13:35:13+00:00'
+  note: null
+  partners:
+  - 8410
+  reviewer: owner
+C034:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-13T13:39:50+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C035:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-13T13:40:42+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C036:
+  label: SHOULD_JOIN
+  labelled_at: '2026-10-13T13:41:31+00:00'
+  note: null
+  partners:
+  - 4807
+  - 5163
+  reviewer: owner
+C037:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-13T13:41:43+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C038:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-13T13:43:11+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C039:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-13T13:44:29+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C040:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-13T13:46:41+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C041:
+  label: SHOULD_JOIN
+  labelled_at: '2026-10-13T13:47:56+00:00'
+  note: null
+  partners:
+  - 7227
+  - 7297
+  - 7537
+  reviewer: owner
+C042:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-13T13:48:27+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C043:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-14T09:10:28+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C044:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-14T09:10:53+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C045:
+  label: SHOULD_JOIN
+  labelled_at: '2026-10-27T10:49:33+00:00'
+  note: null
+  partners:
+  - 651
+  reviewer: owner
+C046:
+  label: SHOULD_JOIN
+  labelled_at: '2026-10-27T10:50:03+00:00'
+  note: null
+  partners:
+  - 4837
+  - 6673
+  - 4147
+  reviewer: owner
+C047:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-27T10:50:13+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C048:
+  label: SHOULD_JOIN
+  labelled_at: '2026-10-27T10:51:38+00:00'
+  note: null
+  partners:
+  - 5208
+  - 3627
+  reviewer: owner
+C049:
+  label: SHOULD_JOIN
+  labelled_at: '2026-10-27T10:51:57+00:00'
+  note: null
+  partners:
+  - 7232
+  - 5129
+  - 4810
+  reviewer: owner
+C050:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-27T10:52:16+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C051:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-27T10:53:02+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C052:
+  label: SHOULD_JOIN
+  labelled_at: '2026-10-27T10:53:16+00:00'
+  note: null
+  partners:
+  - 6373
+  reviewer: owner
+C053:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-27T10:53:45+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C054:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-27T10:53:52+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C055:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-27T10:54:00+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C056:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-27T11:17:46+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C057:
+  label: SHOULD_JOIN
+  labelled_at: '2026-10-27T11:17:55+00:00'
+  note: null
+  partners:
+  - 2605
+  - 2551
+  - 1940
+  reviewer: owner
+C058:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-27T11:18:07+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C059:
+  label: SHOULD_JOIN
+  labelled_at: '2026-10-27T11:50:38+00:00'
+  note: null
+  partners:
+  - 8562
+  - 8862
+  reviewer: owner
+C060:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-27T11:50:47+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C061:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-27T11:51:08+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C062:
+  label: SHOULD_JOIN
+  labelled_at: '2026-10-27T11:51:21+00:00'
+  note: null
+  partners:
+  - 8999
+  - 8574
+  reviewer: owner
+C063:
+  label: SHOULD_JOIN
+  labelled_at: '2026-10-27T11:51:41+00:00'
+  note: null
+  partners:
+  - 7371
+  - 7845
+  reviewer: owner
+C064:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-27T11:51:54+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C065:
+  label: SHOULD_JOIN
+  labelled_at: '2026-10-27T11:52:02+00:00'
+  note: null
+  partners:
+  - 5833
+  - 5594
+  - 6205
+  reviewer: owner
+C066:
+  label: SHOULD_JOIN
+  labelled_at: '2026-10-27T11:52:24+00:00'
+  note: null
+  partners:
+  - 8882
+  - 8889
+  reviewer: owner
+C067:
+  label: SHOULD_JOIN
+  labelled_at: '2026-10-27T11:57:39+00:00'
+  note: null
+  partners:
+  - 4695
+  - 5558
+  reviewer: owner
+C068:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-27T11:58:44+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C069:
+  label: SHOULD_JOIN
+  labelled_at: '2026-10-27T11:59:12+00:00'
+  note: null
+  partners:
+  - 6385
+  reviewer: owner
+C070:
+  label: SHOULD_JOIN
+  labelled_at: '2026-10-27T11:59:22+00:00'
+  note: null
+  partners:
+  - 2931
+  reviewer: owner
+C071:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-27T11:59:41+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C072:
+  label: SHOULD_JOIN
+  labelled_at: '2026-10-27T12:01:10+00:00'
+  note: null
+  partners:
+  - 4845
+  reviewer: owner
+C073:
+  label: SHOULD_JOIN
+  labelled_at: '2026-10-27T12:01:31+00:00'
+  note: null
+  partners:
+  - 663
+  - 681
+  - 855
+  reviewer: owner
+C074:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-27T12:01:48+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C075:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-27T12:11:54+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C076:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-27T12:14:56+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C077:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-27T12:15:20+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C078:
+  label: SHOULD_JOIN
+  labelled_at: '2026-10-27T12:15:38+00:00'
+  note: null
+  partners:
+  - 7340
+  - 7018
+  reviewer: owner
+C079:
+  label: SHOULD_JOIN
+  labelled_at: '2026-10-27T12:15:53+00:00'
+  note: null
+  partners:
+  - 6029
+  reviewer: owner
+C080:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-27T12:16:08+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C081:
+  label: SHOULD_JOIN
+  labelled_at: '2026-10-27T12:16:18+00:00'
+  note: null
+  partners:
+  - 6464
+  reviewer: owner
+C082:
+  label: SHOULD_JOIN
+  labelled_at: '2026-10-27T12:17:14+00:00'
+  note: cost of living is the common topic "quejas provienen de España" is the link
+  partners:
+  - 7232
+  - 6389
+  reviewer: owner
+C083:
+  label: SHOULD_JOIN
+  labelled_at: '2026-10-27T12:17:32+00:00'
+  note: null
+  partners:
+  - 5950
+  reviewer: owner
+C084:
+  label: SHOULD_JOIN
+  labelled_at: '2026-10-27T12:17:50+00:00'
+  note: null
+  partners:
+  - 4437
+  - 4203
+  reviewer: owner
+C085:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-27T12:17:59+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C086:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-27T12:18:16+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C087:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-27T12:18:31+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C088:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-27T12:18:41+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C089:
+  label: SHOULD_JOIN
+  labelled_at: '2026-10-27T12:25:50+00:00'
+  note: null
+  partners:
+  - 2578
+  reviewer: owner
+C090:
+  label: SHOULD_JOIN
+  labelled_at: '2026-10-27T12:26:04+00:00'
+  note: null
+  partners:
+  - 7958
+  reviewer: owner
+C091:
+  label: SHOULD_JOIN
+  labelled_at: '2026-10-27T12:26:15+00:00'
+  note: null
+  partners:
+  - 7203
+  - 7295
+  reviewer: owner
+C092:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-27T12:26:29+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C093:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-27T12:26:37+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C094:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-27T12:27:54+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C095:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-27T12:29:56+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C096:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-27T12:30:44+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C097:
+  label: SHOULD_JOIN
+  labelled_at: '2026-10-27T12:31:00+00:00'
+  note: null
+  partners:
+  - 3104
+  reviewer: owner
+C098:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-27T12:31:17+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C099:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-27T12:31:35+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C100:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-27T12:32:23+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C101:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-27T12:33:22+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C102:
+  label: SHOULD_JOIN
+  labelled_at: '2026-10-27T12:33:49+00:00'
+  note: null
+  partners:
+  - 8404
+  reviewer: owner
+C103:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-27T12:34:03+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C104:
+  label: SHOULD_JOIN
+  labelled_at: '2026-10-27T12:34:52+00:00'
+  note: null
+  partners:
+  - 5201
+  reviewer: owner
+C105:
+  label: SHOULD_JOIN
+  labelled_at: '2026-10-27T12:35:00+00:00'
+  note: null
+  partners:
+  - 7184
+  reviewer: owner
+C106:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-27T12:35:04+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C107:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-27T12:36:51+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C108:
+  label: SHOULD_JOIN
+  labelled_at: '2026-10-27T12:37:01+00:00'
+  note: null
+  partners:
+  - 5237
+  - 5075
+  - 5272
+  reviewer: owner
+C109:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-27T12:37:26+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C110:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-27T12:37:36+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C111:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-27T12:37:46+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C112:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-27T12:37:59+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C113:
+  label: SHOULD_JOIN
+  labelled_at: '2026-10-27T12:38:14+00:00'
+  note: null
+  partners:
+  - 2602
+  reviewer: owner
+C114:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-27T12:38:54+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C115:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-27T12:39:06+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C116:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-27T12:40:13+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C117:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-27T12:40:23+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C118:
+  label: SHOULD_NOT_JOIN
+  labelled_at: '2026-10-27T12:40:40+00:00'
+  note: null
+  partners: null
+  reviewer: owner
+C119:
+  label: SHOULD_JOIN
+  labelled_at: '2026-10-27T12:40:54+00:00'
+  note: null
+  partners:
+  - 4249
+  reviewer: owner
+C120:
+  label: SHOULD_JOIN
+  labelled_at: '2026-10-27T12:41:06+00:00'
+  note: null
+  partners:
+  - 5908
+  - 5165
+  - 3708
+  reviewer: owner
