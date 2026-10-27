@@ -1,0 +1,1514 @@
+[
+ {
+  "event_id": 398,
+  "founders": [
+   {
+    "item_id": 8331,
+    "added_at": "2026-10-13 07:47:02.941159",
+    "run": "c6b440e9ca14460fa78d72919f94a15f",
+    "title": "Six Ukrainian energy sites hit by Russia since Trump announced ceasefire, Zelensky says",
+    "source": "BBC World",
+    "published_at": "2026-10-12 21:20:51.000000"
+   },
+   {
+    "item_id": 8440,
+    "added_at": "2026-10-13 07:47:02.941254",
+    "run": "c6b440e9ca14460fa78d72919f94a15f",
+    "title": "Trump claims Russia and Ukraine agreed to 'energy ceasefire'",
+    "source": "DW World",
+    "published_at": "2026-10-11 14:47:00.000000"
+   },
+   {
+    "item_id": 8455,
+    "added_at": "2026-10-13 07:47:02.941303",
+    "run": "c6b440e9ca14460fa78d72919f94a15f",
+    "title": "'Increasingly evident' Russia won't accept 'energy ceasefire': Zelensky",
+    "source": "France 24",
+    "published_at": "2026-10-12 19:40:05.000000"
+   },
+   {
+    "item_id": 8490,
+    "added_at": "2026-10-13 07:47:02.941345",
+    "run": "c6b440e9ca14460fa78d72919f94a15f",
+    "title": "Trump insists energy ceasefire holds as Ukraine reports new Russian strikes",
+    "source": "Al Jazeera",
+    "published_at": "2026-10-13 03:30:23.000000"
+   },
+   {
+    "item_id": 8491,
+    "added_at": "2026-10-13 07:47:02.941385",
+    "run": "c6b440e9ca14460fa78d72919f94a15f",
+    "title": "Russia and Ukraine trade strikes amid doubt over ‘energy ceasefire’",
+    "source": "Al Jazeera",
+    "published_at": "2026-10-13 03:11:19.000000"
+   },
+   {
+    "item_id": 8561,
+    "added_at": "2026-10-13 07:47:02.941439",
+    "run": "c6b440e9ca14460fa78d72919f94a15f",
+    "title": "Trump says Ukraine, Russia agree to energy strike ceasefire 'because I said they agreed'",
+    "source": "Kyiv Independent",
+    "published_at": "2026-10-13 03:16:54.000000"
+   },
+   {
+    "item_id": 8572,
+    "added_at": "2026-10-13 07:47:02.941478",
+    "run": "c6b440e9ca14460fa78d72919f94a15f",
+    "title": "'We have one refinery' — Zelensky says energy ceasefire must cover power grid, not just oil, as Russia strikes energy facilities across Ukraine",
+    "source": "Kyiv Independent",
+    "published_at": "2026-10-12 09:29:03.000000"
+   }
+  ],
+  "sample": [
+   {
+    "item_id": 10515,
+    "added_at": "2026-10-14 09:54:23.169183",
+    "run": "86dd902bc98245f89ed032ed0969209c",
+    "title": "Ukraine reports Russian attacks with no warnings, Trump says US still sharing intel",
+    "source": "France 24",
+    "published_at": "2026-10-14 09:41:54.000000",
+    "stratum": "Q1"
+   },
+   {
+    "item_id": 9500,
+    "added_at": "2026-10-13 19:13:47.011778",
+    "run": "15da1b5f25584db48bbc775abe99ce73",
+    "title": "Zelenskyy tells NPR Ukraine wants peace but will hit Russia until it follows ceasefire",
+    "source": "GDELT",
+    "published_at": "2026-10-13 19:02:35.000000",
+    "stratum": "Q1"
+   },
+   {
+    "item_id": 10427,
+    "added_at": "2026-10-14 09:04:00.196866",
+    "run": "8462f6d88d564bcfb73e1984e5823e3e",
+    "title": "Blatant Disrespect Toward America: Zelensky Slams Russias Strike on Ukraines Energy Sector",
+    "source": "GDELT",
+    "published_at": "2026-10-14 08:47:49.000000",
+    "stratum": "Q1"
+   },
+   {
+    "item_id": 10872,
+    "added_at": "2026-10-14 13:46:57.063567",
+    "run": "edbaa23aeaef4d2bbac9d60b592278cf",
+    "title": "Iran targets Starlink as ‘tool of war’ with hints of more internet curbs",
+    "source": "Al Jazeera",
+    "published_at": "2026-10-14 13:17:34.000000",
+    "stratum": "Q1"
+   },
+   {
+    "item_id": 13545,
+    "added_at": "2026-10-16 07:45:21.453534",
+    "run": "07ddc9e7ae29491d893ab2e47378b609",
+    "title": "General Staff: Russia has lost 1,561,020 troops in Ukraine since Feb. 24, 2022",
+    "source": "Kyiv Independent",
+    "published_at": "2026-10-16 06:25:02.000000",
+    "stratum": "Q2"
+   },
+   {
+    "item_id": 13128,
+    "added_at": "2026-10-16 21:21:12.831931",
+    "run": "228e5f8edaf84836840315f8194b62c2",
+    "title": "G7 countries pledge 260 million euros for Chornobyl safety infrastructure repairs damaged in Russian attack",
+    "source": "Kyiv Independent",
+    "published_at": "2026-10-15 22:06:57.000000",
+    "stratum": "Q2"
+   },
+   {
+    "item_id": 13083,
+    "added_at": "2026-10-15 21:35:54.100208",
+    "run": "46797e1d4f174161a896ffb43a03ed70",
+    "title": "What to know about Starshield and why its disruption rattled Ukraines forces | World",
+    "source": "GDELT",
+    "published_at": "2026-10-15 21:17:35.000000",
+    "stratum": "Q2"
+   },
+   {
+    "item_id": 13641,
+    "added_at": "2026-10-16 09:04:20.189784",
+    "run": "639d8721fbfe46a88778aa9d08a87033",
+    "title": "Zelensky rallies EU support as Trump says Ukraine leader 'more difficult to deal with than Putin'",
+    "source": "BBC World",
+    "published_at": "2026-10-16 08:47:17.000000",
+    "stratum": "Q2"
+   },
+   {
+    "item_id": 14193,
+    "added_at": "2026-10-18 15:15:28.903336",
+    "run": "d90f3c6e07c24ab0ae8704ce958085f8",
+    "title": "EU doubles down on helping Ukraine's rule of law with new task force",
+    "source": "Kyiv Independent",
+    "published_at": "2026-10-16 15:25:57.000000",
+    "stratum": "Q3"
+   },
+   {
+    "item_id": 15025,
+    "added_at": "2026-10-18 15:25:05.446756",
+    "run": "77866d6627634060a409722fe277237e",
+    "title": "US resumes intel sharing on Russian missile launches with Ukraine, Zelensky says",
+    "source": "Kyiv Independent",
+    "published_at": "2026-10-18 15:10:51.000000",
+    "stratum": "Q3"
+   },
+   {
+    "item_id": 17675,
+    "added_at": "2026-10-20 23:15:19.426352",
+    "run": "25407df657c744ec93ad59192eca10fe",
+    "title": "‘I don’t care how it’s done’: Trump pressures Ukraine to cut peace deal",
+    "source": "Al Jazeera",
+    "published_at": "2026-10-20 22:20:13.000000",
+    "stratum": "Q3"
+   },
+   {
+    "item_id": 17157,
+    "added_at": "2026-10-20 14:46:04.791642",
+    "run": "1b31e3bfac7946e6a744e20725e10aa8",
+    "title": "Russian drones strike Kyiv hospital, injure 5 across the city",
+    "source": "Kyiv Independent",
+    "published_at": "2026-10-20 14:23:36.000000",
+    "stratum": "Q3"
+   },
+   {
+    "item_id": 21092,
+    "added_at": "2026-10-23 19:49:20.014345",
+    "run": "ff639936a0884c119b5b38de6ab0f25a",
+    "title": "Russia's attacks on Ukraine's capital, Kyiv, are intensifying. DW asked people on the ground what life is like",
+    "source": "DW World",
+    "published_at": "2026-10-23 19:08:00.000000",
+    "stratum": "Q4"
+   },
+   {
+    "item_id": 23309,
+    "added_at": "2026-10-27 08:57:40.866583",
+    "run": "2eb94c3570a342999b5dd2dbe9a91a2c",
+    "title": "US-Brokered Truce Begins in Ukraine City Occupied by Russia",
+    "source": "GDELT",
+    "published_at": "2026-10-27 08:47:01.000000",
+    "stratum": "Q4"
+   },
+   {
+    "item_id": 18351,
+    "added_at": "2026-10-21 10:23:18.201567",
+    "run": "b3a3ec821b0d4ae38ed9f327caa2d3b9",
+    "title": "Ukraine talks: What progress after US envoy met with Zelensky?",
+    "source": "France 24",
+    "published_at": "2026-10-21 09:58:36.000000",
+    "stratum": "Q4"
+   },
+   {
+    "item_id": 18607,
+    "added_at": "2026-10-21 13:44:49.719437",
+    "run": "d2a4890aebb4474896395413255ef69c",
+    "title": "US envoy Witkoff meets Putin, discusses possible end of Ukraine war",
+    "source": "GDELT",
+    "published_at": "2026-10-21 13:32:47.000000",
+    "stratum": "Q4"
+   }
+  ]
+ },
+ {
+  "event_id": 397,
+  "founders": [
+   {
+    "item_id": 8341,
+    "added_at": "2026-10-13 07:47:02.544602",
+    "run": "c6b440e9ca14460fa78d72919f94a15f",
+    "title": "Saudi minister vows 'serious response' to Houthi attacks on airports",
+    "source": "BBC World",
+    "published_at": "2026-10-13 04:30:09.000000"
+   },
+   {
+    "item_id": 8434,
+    "added_at": "2026-10-13 07:47:02.544682",
+    "run": "c6b440e9ca14460fa78d72919f94a15f",
+    "title": "Fact check: Viral videos falsely linked to Riyadh airport attacks",
+    "source": "DW World",
+    "published_at": "2026-10-12 17:19:00.000000"
+   },
+   {
+    "item_id": 8450,
+    "added_at": "2026-10-13 07:47:02.544723",
+    "run": "c6b440e9ca14460fa78d72919f94a15f",
+    "title": "No, these pictures do not show the Houthi attacks on Riyadh King Khalid Airport",
+    "source": "France 24",
+    "published_at": "2026-10-12 20:59:18.000000"
+   },
+   {
+    "item_id": 8454,
+    "added_at": "2026-10-13 07:47:02.544758",
+    "run": "c6b440e9ca14460fa78d72919f94a15f",
+    "title": "Houthi official warns of 'swift, painful response' if US enters Yemen war",
+    "source": "France 24",
+    "published_at": "2026-10-12 19:42:01.000000"
+   },
+   {
+    "item_id": 8496,
+    "added_at": "2026-10-13 07:47:02.544791",
+    "run": "c6b440e9ca14460fa78d72919f94a15f",
+    "title": "Houthi missile attack targets Saudi capital Riyadh for third day in a row",
+    "source": "Al Jazeera",
+    "published_at": "2026-10-12 23:54:05.000000"
+   },
+   {
+    "item_id": 8598,
+    "added_at": "2026-10-13 07:47:02.544823",
+    "run": "c6b440e9ca14460fa78d72919f94a15f",
+    "title": "‘These attacks must cease immediately’: Guterres condemns deadly Houthi strike on Riyadh airport",
+    "source": "UN News",
+    "published_at": "2026-10-11 12:00:00.000000"
+   }
+  ],
+  "sample": [
+   {
+    "item_id": 10368,
+    "added_at": "2026-10-14 08:14:21.020632",
+    "run": "9afa405a6a5747638c4ef7979e499446",
+    "title": "At the mercy of the Houthis: Why Saudi Arabia cannot stop them despite spending $83 billion on defense - The US",
+    "source": "GDELT",
+    "published_at": "2026-10-14 08:02:18.000000",
+    "stratum": "Q1"
+   },
+   {
+    "item_id": 9913,
+    "added_at": "2026-10-14 00:24:55.787830",
+    "run": "d531bfb5332848e48ec49857365564d1",
+    "title": "Arab News | Four injured by shrapnel after Houthi missiles shot down in Riyadh",
+    "source": "GDELT",
+    "published_at": "2026-10-14 00:16:52.000000",
+    "stratum": "Q1"
+   },
+   {
+    "item_id": 10701,
+    "added_at": "2026-10-14 11:57:36.615376",
+    "run": "27755058fdb542ed847659da166baf3a",
+    "title": "Saudi-led coalition intercepts Houthi missile launched towards Riyadh",
+    "source": "Al Jazeera",
+    "published_at": "2026-10-14 11:39:06.000000",
+    "stratum": "Q1"
+   },
+   {
+    "item_id": 9780,
+    "added_at": "2026-10-13 22:24:23.191467",
+    "run": "e37ec0ad2e0d4e2bb97d1e0c85f41e4d",
+    "title": "U.S. Embassy warns Americans about traveling to Saudi Arabia: risk of drone and missile targeting",
+    "source": "GDELT",
+    "published_at": "2026-10-13 22:17:06.000000",
+    "stratum": "Q1"
+   },
+   {
+    "item_id": 12449,
+    "added_at": "2026-10-15 10:56:04.966239",
+    "run": "7cf978c64fd84b7887ca7086a067f515",
+    "title": "Saudi Arabia intercepts missile in Madinah, Houthis deny attack",
+    "source": "GDELT",
+    "published_at": "2026-10-15 10:47:08.000000",
+    "stratum": "Q2"
+   },
+   {
+    "item_id": 12976,
+    "added_at": "2026-10-15 20:16:02.756890",
+    "run": "90f6d24ab09747cfa2352fdbc144e7fc",
+    "title": "2 killed in explosions near palace used by Yemens government in latest Houthi attack",
+    "source": "GDELT",
+    "published_at": "2026-10-15 20:02:33.000000",
+    "stratum": "Q2"
+   },
+   {
+    "item_id": 11720,
+    "added_at": "2026-10-14 22:46:05.069727",
+    "run": "93aa7b39b6c948eeb9280a11c9607865",
+    "title": "Yemeni army says 200 Houthis killed, wounded in clashes in Taiz",
+    "source": "GDELT",
+    "published_at": "2026-10-14 22:32:37.000000",
+    "stratum": "Q2"
+   },
+   {
+    "item_id": 11724,
+    "added_at": "2026-10-15 00:05:20.994441",
+    "run": "11874f2a97624615b7f9ae7f55326755",
+    "title": "Houthis to build ballistic missiles with more Chinese supplies: report",
+    "source": "GDELT",
+    "published_at": "2026-10-14 22:32:32.000000",
+    "stratum": "Q2"
+   },
+   {
+    "item_id": 17248,
+    "added_at": "2026-10-20 16:26:10.833069",
+    "run": "3bb006b3d4794e71acf12aaf34b7c61b",
+    "title": "Saudi says intercepted Houthi missile, blasts heard in capital",
+    "source": "GDELT",
+    "published_at": "2026-10-20 16:17:12.000000",
+    "stratum": "Q3"
+   },
+   {
+    "item_id": 16229,
+    "added_at": "2026-10-19 16:45:29.424165",
+    "run": "526b524d3e3640d893293f651ec67433",
+    "title": "Yemen: 25 killed, 30 injured in missile attack on military camp",
+    "source": "GDELT",
+    "published_at": "2026-10-19 16:32:03.000000",
+    "stratum": "Q3"
+   },
+   {
+    "item_id": 16993,
+    "added_at": "2026-10-20 12:05:49.957033",
+    "run": "afd016a4779e4d7991894638572e0bc9",
+    "title": "RAF jets to protect Saudi Arabias skies from Houthi rebels",
+    "source": "GDELT",
+    "published_at": "2026-10-20 11:47:16.000000",
+    "stratum": "Q3"
+   },
+   {
+    "item_id": 15121,
+    "added_at": "2026-10-18 16:54:15.619360",
+    "run": "51b1cfdcbcef4074b209e048270a4f9f",
+    "title": "Saudi-led coalition says helicopter crash in Najran kills two crew members",
+    "source": "GDELT",
+    "published_at": "2026-10-18 16:47:28.000000",
+    "stratum": "Q3"
+   },
+   {
+    "item_id": 19165,
+    "added_at": "2026-10-22 10:09:28.258559",
+    "run": "781a3ff2d8e6448da0881210b6a3c0ee",
+    "title": "Saudi authorities say 2 killed by falling debris at oil facility following a drone attack in Kingdom",
+    "source": "GDELT",
+    "published_at": "2026-10-21 22:32:02.000000",
+    "stratum": "Q4"
+   },
+   {
+    "item_id": 21181,
+    "added_at": "2026-10-23 21:38:35.900066",
+    "run": "cbe345011bd5417da8111022e75201a7",
+    "title": "Time ‘running out’ to reach Yemen’s Taiz amid deepening crisis, UN says",
+    "source": "Al Jazeera",
+    "published_at": "2026-10-23 20:44:02.000000",
+    "stratum": "Q4"
+   },
+   {
+    "item_id": 19912,
+    "added_at": "2026-10-22 16:39:26.757634",
+    "run": "34554d6dda374d2faface1a524e61e8a",
+    "title": "Arab News | UN chief condemns Houthi attacks on Saudi Arabia, warns an El Nino of war is hitting worlds poor",
+    "source": "GDELT",
+    "published_at": "2026-10-22 16:17:29.000000",
+    "stratum": "Q4"
+   },
+   {
+    "item_id": 18691,
+    "added_at": "2026-10-21 14:56:02.064422",
+    "run": "de0d71a674e648a293df82f5e48400c4",
+    "title": "Besieged Yemeni city on verge of unmanageable crisis, aid workers warn",
+    "source": "GDELT",
+    "published_at": "2026-10-21 14:47:33.000000",
+    "stratum": "Q4"
+   }
+  ]
+ },
+ {
+  "event_id": 449,
+  "founders": [
+   {
+    "item_id": 8355,
+    "added_at": "2026-10-13 18:56:39.920168",
+    "run": "0ead6e7d344349b69d1a018b4ca19b1e",
+    "title": "Brasile, Flávio Bolsonaro annuncia visita al padre dopo tre mesi di stop",
+    "source": "ANSA Mondo",
+    "published_at": "2026-10-12 23:45:43.000000"
+   },
+   {
+    "item_id": 9295,
+    "added_at": "2026-10-13 18:56:39.920289",
+    "run": "0ead6e7d344349b69d1a018b4ca19b1e",
+    "title": "Flávio Bolsonaro cambia de opinión y anuncia ahora su respaldo a la reducción de la jornada laboral en Brasil",
+    "source": "Europa Press Internacional",
+    "published_at": "2026-10-13 15:39:09.000000"
+   },
+   {
+    "item_id": 9365,
+    "added_at": "2026-10-13 18:56:39.920370",
+    "run": "0ead6e7d344349b69d1a018b4ca19b1e",
+    "title": "In Brazil, thousands march fearing return of Bolsonaro presidency",
+    "source": "France 24",
+    "published_at": "2026-10-13 14:59:30.000000"
+   },
+   {
+    "item_id": 9375,
+    "added_at": "2026-10-13 18:56:39.920437",
+    "run": "0ead6e7d344349b69d1a018b4ca19b1e",
+    "title": "Directo a... Río de Janeiro y las campañas de Lula y Bolsonaro a pocos días de la segunda vuelta",
+    "source": "France 24 Español",
+    "published_at": "2026-10-13 16:03:05.000000"
+   },
+   {
+    "item_id": 9406,
+    "added_at": "2026-10-13 18:56:39.920500",
+    "run": "0ead6e7d344349b69d1a018b4ca19b1e",
+    "title": "Mientras lidera las encuestas en Brasil, Flávio Bolsonaro visitó a su padre en prisión domiciliaria",
+    "source": "Clarín Mundo",
+    "published_at": "2026-10-13 14:45:33.000000"
+   }
+  ],
+  "sample": [
+   {
+    "item_id": 10912,
+    "added_at": "2026-10-14 20:55:13.572273",
+    "run": "828e84fcd1e14aff9bbe7df12e927d6a",
+    "title": "Bolsonaro cambia idea, parteciperà al dibattito con Lula su Tv Band",
+    "source": "ANSA Mondo",
+    "published_at": "2026-10-14 13:46:45.000000",
+    "stratum": "Q1"
+   },
+   {
+    "item_id": 13363,
+    "added_at": "2026-10-16 02:37:25.113720",
+    "run": "b77c1a30b949469d8d3c5c8a7cdf0aec",
+    "title": "Rebaja de la jornada laboral y transporte gratuito: Lula apunta a la economía en vísperas del balotaje",
+    "source": "France 24 Español",
+    "published_at": "2026-10-16 02:10:45.000000",
+    "stratum": "Q1"
+   },
+   {
+    "item_id": 15411,
+    "added_at": "2026-10-19 07:14:12.463770",
+    "run": "b3f999f4f33a4150bc747bc171783974",
+    "title": "El Supremo brasileño investiga a Flávio Bolsonaro por sospechas de blanqueo de capitales",
+    "source": "Europa Press Internacional",
+    "published_at": "2026-10-19 04:39:42.000000",
+    "stratum": "Q1"
+   },
+   {
+    "item_id": 15465,
+    "added_at": "2026-10-19 07:14:12.464030",
+    "run": "b3f999f4f33a4150bc747bc171783974",
+    "title": "Bolsonaro vs Lula Da Silva, EN VIVO: quién ganó el debate presidencial, a una semana del balotaje en Brasil",
+    "source": "Clarín Mundo",
+    "published_at": "2026-10-18 21:29:40.000000",
+    "stratum": "Q1"
+   },
+   {
+    "item_id": 21306,
+    "added_at": "2026-10-24 09:20:55.907546",
+    "run": "adc685a493824775aa237d2cdb0580ff",
+    "title": "La hora de la verdad entre Lula y Bolsonaro: esperanza y cambio, promesas comunes con vías divergentes",
+    "source": "France 24 Español",
+    "published_at": "2026-10-24 03:25:58.000000",
+    "stratum": "Q2"
+   },
+   {
+    "item_id": 21990,
+    "added_at": "2026-10-25 10:39:50.495515",
+    "run": "5b31390336db47508985a7c75f7612af",
+    "title": "Brasil decide este domingo si seguirá siendo una democracia",
+    "source": "El País Internacional",
+    "published_at": "2026-10-25 04:00:00.000000",
+    "stratum": "Q2"
+   },
+   {
+    "item_id": 20659,
+    "added_at": "2026-10-23 12:29:34.690816",
+    "run": "2ca4b096b0524f7283e2943ecec7c07c",
+    "title": "Elecciones en Brasil, EN VIVO: últimas encuestas y a qué hora es hoy el segundo debate presidencial entre Lula y Flávio Bolsonaro",
+    "source": "Clarín Mundo",
+    "published_at": "2026-10-23 11:17:45.000000",
+    "stratum": "Q2"
+   },
+   {
+    "item_id": 21259,
+    "added_at": "2026-10-24 09:20:55.907125",
+    "run": "adc685a493824775aa237d2cdb0580ff",
+    "title": "Brasil decide este domingo entre el continuismo de Lula y la vuelta del bolsonarismo en una cita muy ajustada",
+    "source": "Europa Press Internacional",
+    "published_at": "2026-10-24 06:51:48.000000",
+    "stratum": "Q2"
+   },
+   {
+    "item_id": 22138,
+    "added_at": "2026-10-25 16:11:44.650531",
+    "run": "0a636d7ef4f84d82bc05375d134baed9",
+    "title": "Elecciones en Brasil 2026, EN VIVO: Lula y Flávio Bolsonaro se enfrentan en balotaje por la presidencia este 25 de octubre",
+    "source": "Clarín Mundo",
+    "published_at": "2026-10-25 09:01:51.000000",
+    "stratum": "Q3"
+   },
+   {
+    "item_id": 22269,
+    "added_at": "2026-10-26 08:20:34.383294",
+    "run": "eaba77b0ed964036ac3273e5f332fd2b",
+    "title": "Amnistía Internacional denuncia un uso desproporcionado de la fuerza en el desalojo de acampadas en Portugal",
+    "source": "Europa Press Internacional",
+    "published_at": "2026-10-25 17:27:00.000000",
+    "stratum": "Q3"
+   },
+   {
+    "item_id": 22353,
+    "added_at": "2026-10-25 21:14:24.334883",
+    "run": "b5ec56d0198f479f95f4341118f01352",
+    "title": "Elecciones en Brasil: Lula da Silva denuncia el bloqueo del transporte público en Bahia y otros ocho estados y pide que se extienda dos horas la votación",
+    "source": "Clarín Mundo",
+    "published_at": "2026-10-25 19:25:02.000000",
+    "stratum": "Q3"
+   },
+   {
+    "item_id": 22485,
+    "added_at": "2026-10-26 08:20:38.858135",
+    "run": "eaba77b0ed964036ac3273e5f332fd2b",
+    "title": "Dalla fabbrica a quattro presidenze, l’epopea di Lula: l'uomo delle rimonte",
+    "source": "Rai News Esteri",
+    "published_at": "2026-10-26 01:01:00.000000",
+    "stratum": "Q3"
+   },
+   {
+    "item_id": 23196,
+    "added_at": "2026-10-27 08:25:13.860164",
+    "run": "200b8b718aa24916a745879306e307e3",
+    "title": "Claves | La fórmula de Lula para lograr la histórica remontada en tres semanas",
+    "source": "El País Internacional",
+    "published_at": "2026-10-26 18:16:22.000000",
+    "stratum": "Q4"
+   },
+   {
+    "item_id": 22986,
+    "added_at": "2026-10-26 15:24:33.172750",
+    "run": "5647361f008345a794e68f98f95757f7",
+    "title": "Videoanálisis | Lula logra parar la racha de victorias derechistas en América Latina",
+    "source": "El País Internacional",
+    "published_at": "2026-10-26 05:09:49.000000",
+    "stratum": "Q4"
+   },
+   {
+    "item_id": 23158,
+    "added_at": "2026-10-27 08:25:13.860023",
+    "run": "200b8b718aa24916a745879306e307e3",
+    "title": "Tras la derrota frente a Lula, la Justicia le prohibió salir del país a Flávio Bolsonaro",
+    "source": "Clarín Mundo",
+    "published_at": "2026-10-26 22:41:35.000000",
+    "stratum": "Q4"
+   },
+   {
+    "item_id": 22659,
+    "added_at": "2026-10-26 10:10:11.851386",
+    "run": "103dccca27e94ce99fa0c2fc50a9f680",
+    "title": "Brasile, Luiz Ignacio Lula da Silva, ottant'anni, conquista il suo quarto mandato presidenziale",
+    "source": "Rai News Esteri",
+    "published_at": "2026-10-26 09:12:00.000000",
+    "stratum": "Q4"
+   }
+  ]
+ },
+ {
+  "event_id": 639,
+  "founders": [
+   {
+    "item_id": 13713,
+    "added_at": "2026-10-16 16:52:18.924985",
+    "run": "e116781a9e984edbb957fb7779bffe10",
+    "title": "Francia vuelve a permitir el uso de granadas aturdidoras de cara a las protestas de este sábado",
+    "source": "Europa Press Internacional",
+    "published_at": "2026-10-16 09:25:15.000000"
+   },
+   {
+    "item_id": 14223,
+    "added_at": "2026-10-16 16:52:18.925114",
+    "run": "e116781a9e984edbb957fb7779bffe10",
+    "title": "Directo París y las movilizaciones convocadas por estudiantes, obreros y otros gremios",
+    "source": "France 24 Español",
+    "published_at": "2026-10-16 16:31:16.000000"
+   }
+  ],
+  "sample": [
+   {
+    "item_id": 15160,
+    "added_at": "2026-10-18 17:33:21.325870",
+    "run": "2c3663fae32540deaed8650d93aabde4",
+    "title": "Saqueos, violencia y desolación: París despierta devastada tras una noche de terror",
+    "source": "Clarín Mundo",
+    "published_at": "2026-10-18 16:33:20.000000",
+    "stratum": "Q1"
+   },
+   {
+    "item_id": 15337,
+    "added_at": "2026-10-18 21:04:03.371394",
+    "run": "85cd4bd8d9564f689e9e7d8cd12bf770",
+    "title": "Italia se contagia de las protestas estudiantiles en Francia",
+    "source": "El País Internacional",
+    "published_at": "2026-10-18 19:34:29.000000",
+    "stratum": "Q1"
+   },
+   {
+    "item_id": 15407,
+    "added_at": "2026-10-19 07:14:06.654777",
+    "run": "b3f999f4f33a4150bc747bc171783974",
+    "title": "Más de 200 detenidos, la mayoría menores, durante una segunda jornada de disturbios y saqueos en Milán",
+    "source": "Europa Press Internacional",
+    "published_at": "2026-10-19 00:49:39.000000",
+    "stratum": "Q1"
+   },
+   {
+    "item_id": 15541,
+    "added_at": "2026-10-19 07:44:13.991142",
+    "run": "d313fddcb5eb42dfb084093b5184ad78",
+    "title": "Macron rechaza la dimisión del ministro del Interior tras las protestas y disturbios del sábado en Francia",
+    "source": "Europa Press Internacional",
+    "published_at": "2026-10-19 07:21:07.000000",
+    "stratum": "Q1"
+   },
+   {
+    "item_id": 18197,
+    "added_at": "2026-10-21 07:35:04.165773",
+    "run": "55f6e756cb6848e288a86e3e8c8e3b45",
+    "title": "Machado pide a la población sumarse a las protestas del jueves para pedir elecciones presidenciales en Venezuela",
+    "source": "Europa Press Internacional",
+    "published_at": "2026-10-21 07:02:32.000000",
+    "stratum": "Q2"
+   },
+   {
+    "item_id": 17574,
+    "added_at": "2026-10-20 21:14:04.460003",
+    "run": "c4ae85f8804b49f8bff5318b7e2347b8",
+    "title": "\"Quien rompe paga\": Italia crea un nuevo delito y habilita la prisión preventiva para menores tras los graves desórdenes en Milán",
+    "source": "Clarín Mundo",
+    "published_at": "2026-10-20 20:08:21.000000",
+    "stratum": "Q2"
+   },
+   {
+    "item_id": 17947,
+    "added_at": "2026-10-21 04:11:49.894815",
+    "run": "5433cd9d627d4da48065746fc85a1c30",
+    "title": "Qué es el \"efecto bola de nieve\" de la deuda y qué papel tiene en la crítica situación económica que alimenta las protestas en Francia",
+    "source": "BBC Mundo",
+    "published_at": "2026-10-21 03:57:54.000000",
+    "stratum": "Q2"
+   },
+   {
+    "item_id": 18481,
+    "added_at": "2026-10-21 12:16:17.902553",
+    "run": "9e5d2f0718aa450c8dde0512dac7221c",
+    "title": "No se permitirá a quienes busquen sembrar el caos, afirma Macron de cara a las protestas del sábado",
+    "source": "France 24 Español",
+    "published_at": "2026-10-21 11:53:26.000000",
+    "stratum": "Q2"
+   },
+   {
+    "item_id": 20019,
+    "added_at": "2026-10-23 14:17:46.614609",
+    "run": "991b5993f2d64d12abd3b26a90417d2a",
+    "title": "La prefectura de París prolonga hasta el lunes el toque de queda en zonas del centro de la capital",
+    "source": "Europa Press Internacional",
+    "published_at": "2026-10-22 18:19:26.000000",
+    "stratum": "Q3"
+   },
+   {
+    "item_id": 19929,
+    "added_at": "2026-10-22 17:11:56.761967",
+    "run": "a947f089cd524eabaa64b29df0fe1f0c",
+    "title": "Las autoridades de Lyon y Marsella prohíben todas las protestas para el sábado",
+    "source": "France 24 Español",
+    "published_at": "2026-10-22 16:54:20.000000",
+    "stratum": "Q3"
+   },
+   {
+    "item_id": 20691,
+    "added_at": "2026-10-23 12:58:34.195683",
+    "run": "c1e84b0d88434127bbad340350f2b624",
+    "title": "Italia libera ayudas para frenar la huelga de camioneros y refuerza la seguridad ante nuevas protestas",
+    "source": "France 24 Español",
+    "published_at": "2026-10-23 12:51:29.000000",
+    "stratum": "Q3"
+   },
+   {
+    "item_id": 21279,
+    "added_at": "2026-10-24 09:47:10.526533",
+    "run": "cdcc0ee39f594658b400581e49aba126",
+    "title": "Protests against cost of living expected in Italy under heavy security",
+    "source": "France 24",
+    "published_at": "2026-10-24 07:08:54.000000",
+    "stratum": "Q3"
+   },
+   {
+    "item_id": 21934,
+    "added_at": "2026-10-25 10:39:46.691399",
+    "run": "5b31390336db47508985a7c75f7612af",
+    "title": "Marchas masivas en Francia bajo fuerte seguridad: casi mil detenidos y choques en varias ciudades",
+    "source": "France 24 Español",
+    "published_at": "2026-10-25 03:16:49.000000",
+    "stratum": "Q4"
+   },
+   {
+    "item_id": 21695,
+    "added_at": "2026-10-24 15:57:37.818206",
+    "run": "988457c81bb5451982db62b06d7a752f",
+    "title": "Más de 130 arrestos en Francia donde miles de personas salen a las calles a protestar",
+    "source": "BBC Mundo",
+    "published_at": "2026-10-24 15:40:39.000000",
+    "stratum": "Q4"
+   },
+   {
+    "item_id": 22179,
+    "added_at": "2026-10-25 16:50:09.865498",
+    "run": "bb22f201fedd493e828d46e39eba19af",
+    "title": "Trump insiste, 'devo decidere se fare un accordo con l'Iran o annientarlo'",
+    "source": "ANSA Mondo",
+    "published_at": "2026-10-25 16:02:21.000000",
+    "stratum": "Q4"
+   },
+   {
+    "item_id": 22499,
+    "added_at": "2026-10-26 08:20:45.980849",
+    "run": "eaba77b0ed964036ac3273e5f332fd2b",
+    "title": "Ohio y Michigan: el expresidente Obama entra en la batalla por el Senado",
+    "source": "France 24 Español",
+    "published_at": "2026-10-26 03:58:11.000000",
+    "stratum": "Q4"
+   }
+  ]
+ },
+ {
+  "event_id": 399,
+  "founders": [
+   {
+    "item_id": 8364,
+    "added_at": "2026-10-13 07:47:03.229514",
+    "run": "c6b440e9ca14460fa78d72919f94a15f",
+    "title": "Zelensky, almeno due morti questa sera in attacchi russi a Kiev",
+    "source": "ANSA Mondo",
+    "published_at": "2026-10-12 19:06:37.000000"
+   },
+   {
+    "item_id": 8379,
+    "added_at": "2026-10-13 07:47:03.229618",
+    "run": "c6b440e9ca14460fa78d72919f94a15f",
+    "title": "\"Un salvavidas financiero para Rusia mientras mata civiles en Ucrania\": las críticas contra Trump por su plan de importar diésel ruso",
+    "source": "BBC Mundo",
+    "published_at": "2026-10-12 14:42:18.000000"
+   },
+   {
+    "item_id": 8403,
+    "added_at": "2026-10-13 07:47:03.229678",
+    "run": "c6b440e9ca14460fa78d72919f94a15f",
+    "title": "Trump insiste en la tregua entre Rusia y Ucrania y asegura que \"Putin quiere un acuerdo más que Zelenski\"",
+    "source": "Europa Press Internacional",
+    "published_at": "2026-10-12 23:25:37.000000"
+   },
+   {
+    "item_id": 8405,
+    "added_at": "2026-10-13 07:47:03.229727",
+    "run": "c6b440e9ca14460fa78d72919f94a15f",
+    "title": "Al menos dos muertos y diez heridos en bombardeos rusos contra Járkov (Ucrania), cerca de la frontera con Rusia",
+    "source": "Europa Press Internacional",
+    "published_at": "2026-10-13 04:28:33.000000"
+   },
+   {
+    "item_id": 8407,
+    "added_at": "2026-10-13 07:47:03.229775",
+    "run": "c6b440e9ca14460fa78d72919f94a15f",
+    "title": "Trump descarta que Rusia y China ayuden a Irán y argumenta que \"tienen demasiado que perder\"",
+    "source": "Europa Press Internacional",
+    "published_at": "2026-10-13 06:48:18.000000"
+   },
+   {
+    "item_id": 8426,
+    "added_at": "2026-10-13 07:47:03.229825",
+    "run": "c6b440e9ca14460fa78d72919f94a15f",
+    "title": "Gli annunci di Trump fra guerra, elezioni e sondaggi",
+    "source": "Rai News Esteri",
+    "published_at": "2026-10-12 00:36:44.000000"
+   },
+   {
+    "item_id": 8469,
+    "added_at": "2026-10-13 07:47:03.229893",
+    "run": "c6b440e9ca14460fa78d72919f94a15f",
+    "title": "Rusia no confirma el alto el fuego energético con Ucrania anunciado por Trump",
+    "source": "France 24 Español",
+    "published_at": "2026-10-12 23:41:43.000000"
+   },
+   {
+    "item_id": 8508,
+    "added_at": "2026-10-13 07:47:03.229942",
+    "run": "c6b440e9ca14460fa78d72919f94a15f",
+    "title": "Ucraina, Zelensky: «Almeno due morti questa sera in attacchi russi a Kiev»",
+    "source": "Il Sole 24 Ore Mondo",
+    "published_at": "2026-10-12 05:41:00.000000"
+   },
+   {
+    "item_id": 8534,
+    "added_at": "2026-10-13 07:47:03.229992",
+    "run": "c6b440e9ca14460fa78d72919f94a15f",
+    "title": "Rusia considera la tregua energética anunciada por Trump una “trampa” y prosigue sus ataques sobre infraestructura en Ucrania",
+    "source": "El País Internacional",
+    "published_at": "2026-10-12 17:23:12.000000"
+   }
+  ],
+  "sample": [
+   {
+    "item_id": 12938,
+    "added_at": "2026-10-16 00:36:30.958144",
+    "run": "7572a19fd5e24aafbe3bb9f067f8f931",
+    "title": "Trump da marcha atrás: el Pentágono no retransmitirá la ejecución por fusilamiento de Nidal Malik Hasan",
+    "source": "El País Internacional",
+    "published_at": "2026-10-15 14:25:02.000000",
+    "stratum": "Q1"
+   },
+   {
+    "item_id": 10305,
+    "added_at": "2026-10-14 23:46:21.873505",
+    "run": "29abe3126e7342ee804875523a6f75b9",
+    "title": "Mosca, bombardate sei centrali elettriche a Kiev e Kharkiv",
+    "source": "ANSA Mondo",
+    "published_at": "2026-10-14 07:42:49.000000",
+    "stratum": "Q1"
+   },
+   {
+    "item_id": 12747,
+    "added_at": "2026-10-15 15:15:20.887007",
+    "run": "26f662554496413f90e53625786042d8",
+    "title": "En Londres, Zelenski rompe el silencio y revela cómo el acuerdo entre Putin y Trump por el diésel redibuja la guerra en Ucrania",
+    "source": "Clarín Mundo",
+    "published_at": "2026-10-15 14:21:38.000000",
+    "stratum": "Q1"
+   },
+   {
+    "item_id": 10839,
+    "added_at": "2026-10-14 13:24:21.610439",
+    "run": "ff36583bc5164f17807733beb7a0778b",
+    "title": "Putin avisa que la economía rusa está bajo graves amenazas informáticas entre nuevos ataques a sus centros de datos",
+    "source": "Europa Press Internacional",
+    "published_at": "2026-10-14 13:11:23.000000",
+    "stratum": "Q1"
+   },
+   {
+    "item_id": 14005,
+    "added_at": "2026-10-16 13:14:56.768423",
+    "run": "b001ff2d2dca412ea2071a590999a4c1",
+    "title": "El acuerdo de Trump de democracia por diésel nos avergüenza a todos",
+    "source": "Clarín Mundo",
+    "published_at": "2026-10-16 12:16:55.000000",
+    "stratum": "Q2"
+   },
+   {
+    "item_id": 15270,
+    "added_at": "2026-10-18 19:33:48.262942",
+    "run": "0370e84298894fc2ad4f04c1d5a60960",
+    "title": "Zelensky, 'Trump spinge l'Ucraina alla capitolazione di fronte alla Russia'",
+    "source": "ANSA Mondo",
+    "published_at": "2026-10-18 19:19:22.000000",
+    "stratum": "Q2"
+   },
+   {
+    "item_id": 13234,
+    "added_at": "2026-10-16 07:34:39.067506",
+    "run": "92b6edb3540545748264ac36e9c43107",
+    "title": "Droni russi su Sepetivka, brucia un deposito di petrolio",
+    "source": "ANSA Mondo",
+    "published_at": "2026-10-15 23:59:50.000000",
+    "stratum": "Q2"
+   },
+   {
+    "item_id": 14841,
+    "added_at": "2026-10-18 10:51:04.237935",
+    "run": "31851875204c48cb93b3e76fb3599f1d",
+    "title": "Ucrania, en punto muerto: asediada por Putin y abandonada por Trump",
+    "source": "El País Internacional",
+    "published_at": "2026-10-18 03:30:01.000000",
+    "stratum": "Q2"
+   },
+   {
+    "item_id": 18931,
+    "added_at": "2026-10-21 19:20:18.695008",
+    "run": "286767c73f6143858135108882f6dd1d",
+    "title": "Zelensky, 'favorevoli a incontro trilaterale il prima possibile'",
+    "source": "ANSA Mondo",
+    "published_at": "2026-10-21 18:45:30.000000",
+    "stratum": "Q3"
+   },
+   {
+    "item_id": 15570,
+    "added_at": "2026-10-20 07:28:14.892776",
+    "run": "941d9fd3c69743019b645b1a4f83ef5e",
+    "title": "Kiev, 'gli alleati non ci hanno avvertito del primo attacco sulla capitale'",
+    "source": "ANSA Mondo",
+    "published_at": "2026-10-19 07:47:10.000000",
+    "stratum": "Q3"
+   },
+   {
+    "item_id": 17433,
+    "added_at": "2026-10-20 23:34:14.501313",
+    "run": "2bf516c81f104541a7cfec478a97d527",
+    "title": "Trump, 'ho chiesto a Putin la liberazione dell'americano Hubbard'",
+    "source": "ANSA Mondo",
+    "published_at": "2026-10-20 19:24:15.000000",
+    "stratum": "Q3"
+   },
+   {
+    "item_id": 18272,
+    "added_at": "2026-10-21 08:45:44.025242",
+    "run": "224f62fdb54c4e61909d7258fff1e044",
+    "title": "Rusia detiene a un alemán acusado de combatir como \"mercenario\" del lado de las Fuerzas Armadas de Ucrania",
+    "source": "Europa Press Internacional",
+    "published_at": "2026-10-21 08:39:25.000000",
+    "stratum": "Q3"
+   },
+   {
+    "item_id": 21074,
+    "added_at": "2026-10-23 19:19:23.859308",
+    "run": "5ad04eb5a3ef4b8a9bbaa75f1c9db787",
+    "title": "Ucrania: Kiev afronta el invierno con escasez de refugios antiaéreos",
+    "source": "France 24 Español",
+    "published_at": "2026-10-23 18:18:21.000000",
+    "stratum": "Q4"
+   },
+   {
+    "item_id": 21310,
+    "added_at": "2026-10-24 09:20:49.769472",
+    "run": "adc685a493824775aa237d2cdb0580ff",
+    "title": "Rusia confirma cumbre en Abu Dabi con EE. UU. y Ucrania; Kiev y Moscú intercambian prisioneros",
+    "source": "France 24 Español",
+    "published_at": "2026-10-24 00:55:37.000000",
+    "stratum": "Q4"
+   },
+   {
+    "item_id": 19437,
+    "added_at": "2026-10-22 09:23:10.154388",
+    "run": "7c2aec2f429f441c9fea6cc46758be98",
+    "title": "Rusia golpea Kiev con varias oleadas de misiles balísticos unas horas después de la propuesta ucrania de negociación",
+    "source": "El País Internacional",
+    "published_at": "2026-10-22 07:02:30.000000",
+    "stratum": "Q4"
+   },
+   {
+    "item_id": 20075,
+    "added_at": "2026-10-22 19:29:18.471406",
+    "run": "179c331c571d4bd880efba7c5b21b085",
+    "title": "Putin, i territori nell'Ucraina orientale sono 'terre storicamente russe'",
+    "source": "ANSA Mondo",
+    "published_at": "2026-10-22 19:14:48.000000",
+    "stratum": "Q4"
+   }
+  ]
+ },
+ {
+  "event_id": 626,
+  "founders": [
+   {
+    "item_id": 12402,
+    "added_at": "2026-10-16 09:16:35.036069",
+    "run": "6ab7e9befcca4ec8ab26476ce68e32b4",
+    "title": "ONE CYRS VIEW: Demonstrations in France have international impact",
+    "source": "GDELT",
+    "published_at": "2026-10-15 10:17:29.000000"
+   },
+   {
+    "item_id": 13666,
+    "added_at": "2026-10-16 09:16:35.036172",
+    "run": "6ab7e9befcca4ec8ab26476ce68e32b4",
+    "title": "France to witness a 'crossroads of anger' as mass protests expected on Saturday",
+    "source": "France 24",
+    "published_at": "2026-10-16 08:53:57.000000"
+   }
+  ],
+  "sample": [
+   {
+    "item_id": 14777,
+    "added_at": "2026-10-18 10:51:01.274448",
+    "run": "31851875204c48cb93b3e76fb3599f1d",
+    "title": "France: Protesters clash with police in nationwide protests, amid rising social polarization",
+    "source": "DW World",
+    "published_at": "2026-10-17 08:02:00.000000",
+    "stratum": "Q1"
+   },
+   {
+    "item_id": 15353,
+    "added_at": "2026-10-19 08:05:01.730396",
+    "run": "c6911fff8dd449e4b5e367522d693ead",
+    "title": "Nothing justifies it: Macron condemns unbridled violence; announces policy reforms, vows action against rioters",
+    "source": "GDELT",
+    "published_at": "2026-10-18 21:16:52.000000",
+    "stratum": "Q1"
+   },
+   {
+    "item_id": 14999,
+    "added_at": "2026-10-18 15:25:07.085727",
+    "run": "77866d6627634060a409722fe277237e",
+    "title": "'Like we had a war': France left reeling after nationwide violent protests",
+    "source": "France 24",
+    "published_at": "2026-10-18 13:50:00.000000",
+    "stratum": "Q1"
+   },
+   {
+    "item_id": 15284,
+    "added_at": "2026-10-19 17:05:38.313020",
+    "run": "9bcf4bab2aab4f8ea10636f872c51faa",
+    "title": "How will Europe deal with youth-led protests?",
+    "source": "Al Jazeera",
+    "published_at": "2026-10-18 19:15:21.000000",
+    "stratum": "Q1"
+   },
+   {
+    "item_id": 17100,
+    "added_at": "2026-10-20 17:51:43.506475",
+    "run": "ba6249e9618e4c02b740d396f6df7695",
+    "title": "Midterms: Trump seizes on unrest in France for political gain",
+    "source": "France 24",
+    "published_at": "2026-10-20 13:54:13.000000",
+    "stratum": "Q2"
+   },
+   {
+    "item_id": 17624,
+    "added_at": "2026-10-20 22:14:42.291936",
+    "run": "9cfefdb868a74dc18c9b8fecb3c74793",
+    "title": "PSG score late to sink Barcelona 4-2 in Champions League blockbuster",
+    "source": "Al Jazeera",
+    "published_at": "2026-10-20 21:24:06.000000",
+    "stratum": "Q2"
+   },
+   {
+    "item_id": 15691,
+    "added_at": "2026-10-19 21:03:08.674233",
+    "run": "146306726a2a499dbaa213783493c121",
+    "title": "🎧 France Reels After Worst Violence in Years",
+    "source": "GDELT",
+    "published_at": "2026-10-19 09:32:08.000000",
+    "stratum": "Q2"
+   },
+   {
+    "item_id": 16802,
+    "added_at": "2026-10-20 09:49:39.173333",
+    "run": "f806aca3d7774095a96006f1fc0338f7",
+    "title": "Out of control? France stunned by October 17 rioting",
+    "source": "France 24",
+    "published_at": "2026-10-20 09:08:06.000000",
+    "stratum": "Q2"
+   },
+   {
+    "item_id": 19516,
+    "added_at": "2026-10-22 10:24:38.284949",
+    "run": "9ef49c27676e417b9e60d2ec61f8554a",
+    "title": "French unions negotiate with Macron as mass protests explode across Europe",
+    "source": "GDELT",
+    "published_at": "2026-10-22 10:02:20.000000",
+    "stratum": "Q3"
+   },
+   {
+    "item_id": 20392,
+    "added_at": "2026-10-23 08:15:11.224230",
+    "run": "217cdc3d657442cbbac0110f2bbae2c3",
+    "title": "French authorities seek to ban protests: Macron to meet students on Friday",
+    "source": "France 24",
+    "published_at": "2026-10-23 07:53:57.000000",
+    "stratum": "Q3"
+   },
+   {
+    "item_id": 18987,
+    "added_at": "2026-10-21 19:54:47.513690",
+    "run": "946339bea63d4efe943bbf752e748e26",
+    "title": "Trump exploits France riots to push false immigration claims ahead of midterms",
+    "source": "France 24",
+    "published_at": "2026-10-21 19:28:54.000000",
+    "stratum": "Q3"
+   },
+   {
+    "item_id": 18846,
+    "added_at": "2026-10-22 09:49:48.522933",
+    "run": "1d797ba1fc794eb38b0ad5aa5c41884d",
+    "title": "Paris shopkeepers fear more destruction after riots destroy livelihoods",
+    "source": "Al Jazeera",
+    "published_at": "2026-10-21 16:57:15.000000",
+    "stratum": "Q3"
+   },
+   {
+    "item_id": 21748,
+    "added_at": "2026-10-24 20:09:53.312307",
+    "run": "115d70f9502441d3876a014b6f56eb5e",
+    "title": "France: Protests continue while police fire tear gas at demonstrators",
+    "source": "France 24",
+    "published_at": "2026-10-24 17:10:42.000000",
+    "stratum": "Q4"
+   },
+   {
+    "item_id": 22064,
+    "added_at": "2026-10-25 16:11:59.906776",
+    "run": "0a636d7ef4f84d82bc05375d134baed9",
+    "title": "France: 110.000 protesters in Paris",
+    "source": "France 24",
+    "published_at": "2026-10-25 15:00:01.000000",
+    "stratum": "Q4"
+   },
+   {
+    "item_id": 21335,
+    "added_at": "2026-10-24 09:20:50.538016",
+    "run": "adc685a493824775aa237d2cdb0580ff",
+    "title": "Some Parisians buy pepper spray, tear gas for self-defence during protests",
+    "source": "South China Morning Post",
+    "published_at": "2026-10-24 03:30:17.000000",
+    "stratum": "Q4"
+   },
+   {
+    "item_id": 21696,
+    "added_at": "2026-10-24 15:57:31.479001",
+    "run": "988457c81bb5451982db62b06d7a752f",
+    "title": "🔴 French protests live: Police say 110,000 turn out for 'calm' Paris march amid reports of clashes in other cities",
+    "source": "France 24",
+    "published_at": "2026-10-24 15:42:17.000000",
+    "stratum": "Q4"
+   }
+  ]
+ },
+ {
+  "event_id": 514,
+  "founders": [
+   {
+    "item_id": 8485,
+    "added_at": "2026-10-14 13:04:40.383181",
+    "run": "10e04ec6c60243bf8088aca59e66e0f1",
+    "title": "Despite long history with Netanyahu, Trump hedges as Israel vote nears",
+    "source": "Al Jazeera",
+    "published_at": "2026-10-13 05:40:10.000000"
+   },
+   {
+    "item_id": 10815,
+    "added_at": "2026-10-14 13:04:40.383296",
+    "run": "10e04ec6c60243bf8088aca59e66e0f1",
+    "title": "Trump Says He May Endorse Somebody as Netanyahu Faces Pivotal Israeli Election",
+    "source": "GDELT",
+    "published_at": "2026-10-14 12:47:42.000000"
+   }
+  ],
+  "sample": [
+   {
+    "item_id": 11764,
+    "added_at": "2026-10-14 23:15:54.550993",
+    "run": "b8cfec7ed3a74114bc438ca86df7d899",
+    "title": "Former Israeli security chief sues Netanyahu for Oct 7 defamation",
+    "source": "GDELT",
+    "published_at": "2026-10-14 23:02:12.000000",
+    "stratum": "Q1"
+   },
+   {
+    "item_id": 16557,
+    "added_at": "2026-10-20 07:16:22.997391",
+    "run": "c6981049b418413493bd298bd5a48a87",
+    "title": "Hegseth visita a las tropas de EEUU en Oriente Próximo tras informaciones de una reunión con Netanyahu en Israel",
+    "source": "Europa Press Internacional",
+    "published_at": "2026-10-20 03:31:55.000000",
+    "stratum": "Q1"
+   },
+   {
+    "item_id": 15243,
+    "added_at": "2026-10-18 18:53:41.722977",
+    "run": "170808a6a767434c81dbec3d2b7bd782",
+    "title": "Trump wades into Israels election to back ally Netanyahu",
+    "source": "GDELT",
+    "published_at": "2026-10-18 18:47:20.000000",
+    "stratum": "Q1"
+   },
+   {
+    "item_id": 15259,
+    "added_at": "2026-10-18 19:13:23.000620",
+    "run": "eacd838af15441b4919240cf627dcaa9",
+    "title": "Trump endorses Netanyahu in Israeli legislative elections",
+    "source": "GDELT",
+    "published_at": "2026-10-18 19:02:02.000000",
+    "stratum": "Q1"
+   },
+   {
+    "item_id": 19014,
+    "added_at": "2026-10-21 20:16:27.452989",
+    "run": "4cb5993aa24247b091690c21eb91adfa",
+    "title": "Netanyahu says he has ordered IDF and Mossad to overthrow Irans regime",
+    "source": "GDELT",
+    "published_at": "2026-10-21 20:02:13.000000",
+    "stratum": "Q2"
+   },
+   {
+    "item_id": 19229,
+    "added_at": "2026-10-22 07:16:26.050555",
+    "run": "6e35e3a4c59b416783b237f0a43038cb",
+    "title": "Israel: Ben Gvir gana terreno en el norte mientras Netanyahu pierde apoyo",
+    "source": "France 24 Español",
+    "published_at": "2026-10-22 01:03:14.000000",
+    "stratum": "Q2"
+   },
+   {
+    "item_id": 18751,
+    "added_at": "2026-10-21 16:09:01.046699",
+    "run": "33b4363d7ce14b13a518652b2d44f31d",
+    "title": "Netanyahu insiste en que \"hay que derrocar al régimen de Irán\": \"Mojtaba Jamenei sigue los pasos de su padre\"",
+    "source": "Europa Press Internacional",
+    "published_at": "2026-10-21 15:38:02.000000",
+    "stratum": "Q2"
+   },
+   {
+    "item_id": 17521,
+    "added_at": "2026-10-20 20:30:50.559409",
+    "run": "dd7c62155d604b43a0d6eba8c21dbc2d",
+    "title": "Hegseth visita Israel por sorpresa y antes de las elecciones, que ya no cuentan con Benny Gantz",
+    "source": "France 24 Español",
+    "published_at": "2026-10-20 20:15:06.000000",
+    "stratum": "Q2"
+   },
+   {
+    "item_id": 22049,
+    "added_at": "2026-10-25 16:11:58.653113",
+    "run": "0a636d7ef4f84d82bc05375d134baed9",
+    "title": "Netanyahu advierte de un \"segundo holocausto\" con un ataque nuclear sobre Tel Aviv a dos días de las elecciones",
+    "source": "Europa Press Internacional",
+    "published_at": "2026-10-25 12:34:53.000000",
+    "stratum": "Q3"
+   },
+   {
+    "item_id": 21992,
+    "added_at": "2026-10-25 10:39:59.860396",
+    "run": "5b31390336db47508985a7c75f7612af",
+    "title": "Benjamín Netanyahu, un superviviente político aferrado a las guerras para ganar una vez más",
+    "source": "El País Internacional",
+    "published_at": "2026-10-25 04:45:01.000000",
+    "stratum": "Q3"
+   },
+   {
+    "item_id": 21589,
+    "added_at": "2026-10-24 20:42:58.488394",
+    "run": "1ffb2a3ca64049ee83fc0b7a05591ba9",
+    "title": "Armed Israeli settlers try to break into Palestinian grandfather’s home",
+    "source": "Al Jazeera",
+    "published_at": "2026-10-24 13:16:23.000000",
+    "stratum": "Q3"
+   },
+   {
+    "item_id": 22350,
+    "added_at": "2026-10-25 21:14:26.144022",
+    "run": "b5ec56d0198f479f95f4341118f01352",
+    "title": "Israele al voto: la sfida politica decisiva tra Netanyahu e Eisenkot",
+    "source": "Rai News Esteri",
+    "published_at": "2026-10-25 19:44:00.000000",
+    "stratum": "Q3"
+   },
+   {
+    "item_id": 23367,
+    "added_at": "2026-10-27 10:30:40.477675",
+    "run": "366051e4cef64fabb064113011382aec",
+    "title": "Israele al voto, viaggio nei seggi tra manifestazioni e minuti di silenzio",
+    "source": "Il Sole 24 Ore Mondo",
+    "published_at": "2026-10-27 09:56:00.000000",
+    "stratum": "Q4"
+   },
+   {
+    "item_id": 23435,
+    "added_at": "2026-10-27 11:55:05.133431",
+    "run": "19fa9db62ecb4588bf30c9c200325745",
+    "title": "El Comité Electoral de Israel descarta irregularidades en los comicios a pesar de las acusaciones",
+    "source": "Europa Press Internacional",
+    "published_at": "2026-10-27 10:56:44.000000",
+    "stratum": "Q4"
+   },
+   {
+    "item_id": 22780,
+    "added_at": "2026-10-26 12:33:32.414741",
+    "run": "1b61f63f5b8c43c69927f3bc22e12cc0",
+    "title": "Elezioni in Israele, la sfida è tutta su Netanyahu: proteste e sondaggi indicano uno stallo",
+    "source": "Rai News Esteri",
+    "published_at": "2026-10-26 11:27:00.000000",
+    "stratum": "Q4"
+   },
+   {
+    "item_id": 22749,
+    "added_at": "2026-10-26 13:50:01.662687",
+    "run": "5e16424cf69a4961987da315e6bf4d67",
+    "title": "Domani Israele alle urne, si vota dalle 7 alle 22 ora locale",
+    "source": "ANSA Mondo",
+    "published_at": "2026-10-26 10:53:39.000000",
+    "stratum": "Q4"
+   }
+  ]
+ },
+ {
+  "event_id": 182,
+  "founders": [
+   {
+    "item_id": 2619,
+    "added_at": "2026-10-05 18:53:59.845844",
+    "run": "8fc1866471ff457cb41902a7dab4761c",
+    "title": "Ghaydaa Kamal Al Abadsa, escritora palestina: “En Gaza no hay un alto el fuego, no crean esa mentira”",
+    "source": "El País Internacional",
+    "published_at": "2026-10-05 03:30:01.000000"
+   },
+   {
+    "item_id": 2633,
+    "added_at": "2026-10-05 18:53:59.845992",
+    "run": "8fc1866471ff457cb41902a7dab4761c",
+    "title": "A tres años del ataque de Hamas: la amenaza de un nuevo atentado reaviva las alarmas en Israel",
+    "source": "Clarín Mundo",
+    "published_at": "2026-10-05 00:39:44.000000"
+   },
+   {
+    "item_id": 3094,
+    "added_at": "2026-10-05 18:53:59.846067",
+    "run": "8fc1866471ff457cb41902a7dab4761c",
+    "title": "Israel anunció que mató a 4.000 implicados en la masacre del 7 de octubre: quedan 2.000 prófugos",
+    "source": "Clarín Mundo",
+    "published_at": "2026-10-05 16:59:32.000000"
+   },
+   {
+    "item_id": 3143,
+    "added_at": "2026-10-05 18:53:59.846164",
+    "run": "8fc1866471ff457cb41902a7dab4761c",
+    "title": "Aumentan a 1.460 los palestinos muertos por ataques de Israel contra Gaza desde el acuerdo de alto el fuego",
+    "source": "Europa Press Internacional",
+    "published_at": "2026-10-05 09:54:39.000000"
+   },
+   {
+    "item_id": 3146,
+    "added_at": "2026-10-05 18:53:59.846229",
+    "run": "8fc1866471ff457cb41902a7dab4761c",
+    "title": "Israel asegura que ha matado ya a 4.000 de los 6.000 \"terroristas\" del 7 de octubre de 2023",
+    "source": "Europa Press Internacional",
+    "published_at": "2026-10-05 16:55:32.000000"
+   }
+  ],
+  "sample": [
+   {
+    "item_id": 4538,
+    "added_at": "2026-10-06 15:24:45.486977",
+    "run": "74b9134c68cc43fb8371c85957dac536",
+    "title": "Israel puts military on high alert over claimed Hamas attack ahead of October 7",
+    "source": "GDELT",
+    "published_at": "2026-10-06 15:17:09.000000",
+    "stratum": "Q1"
+   },
+   {
+    "item_id": 3734,
+    "added_at": "2026-10-07 06:54:04.100340",
+    "run": "043f9dd5f67c463fae8b98afbdbed6cb",
+    "title": "Israeli documentary NAZA opens in the US, reigniting debate over the war in Gaza",
+    "source": "GDELT",
+    "published_at": "2026-10-06 06:17:10.000000",
+    "stratum": "Q1"
+   },
+   {
+    "item_id": 3870,
+    "added_at": "2026-10-07 05:54:00.526255",
+    "run": "440462de0e8944938fb9fd3bdfc95906",
+    "title": "Israel warns Gazans will pay 'heavy price' for any October 7 attacks on military",
+    "source": "France 24",
+    "published_at": "2026-10-06 07:50:10.000000",
+    "stratum": "Q1"
+   },
+   {
+    "item_id": 4865,
+    "added_at": "2026-10-07 06:54:03.060063",
+    "run": "043f9dd5f67c463fae8b98afbdbed6cb",
+    "title": "At UNs October 7th Commemoration, U.S.s Waltz says attack on Israel backfired on Iran",
+    "source": "GDELT",
+    "published_at": "2026-10-06 19:17:11.000000",
+    "stratum": "Q1"
+   },
+   {
+    "item_id": 5692,
+    "added_at": "2026-10-07 12:03:50.000497",
+    "run": "d11707637c244c6abc8c0607f4277b03",
+    "title": "En directo: Israel conmemora tres años de los mortíferos ataques de Hamás del 7 de octubre.",
+    "source": "France 24 Español",
+    "published_at": "2026-10-07 11:56:45.000000",
+    "stratum": "Q2"
+   },
+   {
+    "item_id": 5790,
+    "added_at": "2026-10-07 13:15:19.615252",
+    "run": "48b6d7f3b38442689a50cca31dd4cbbd",
+    "title": "Israel marks 3 years since Hamas attack with no hostages in Gaza",
+    "source": "GDELT",
+    "published_at": "2026-10-07 13:02:13.000000",
+    "stratum": "Q2"
+   },
+   {
+    "item_id": 5380,
+    "added_at": "2026-10-07 08:14:43.044654",
+    "run": "2b3bbf83652c4c9d81d9b69e8ab63e88",
+    "title": "Israel continues demolishing buildings in Gaza a year after ceasefire",
+    "source": "South China Morning Post",
+    "published_at": "2026-10-07 08:11:19.000000",
+    "stratum": "Q2"
+   },
+   {
+    "item_id": 5412,
+    "added_at": "2026-10-07 08:56:23.956699",
+    "run": "3f8eaf1e40cc4720b9b3e6331aae8b82",
+    "title": "Satellite photos show how Israeli forces have erased Gaza towns",
+    "source": "GDELT",
+    "published_at": "2026-10-07 08:17:33.000000",
+    "stratum": "Q2"
+   },
+   {
+    "item_id": 5938,
+    "added_at": "2026-10-07 19:23:45.190123",
+    "run": "2458e5a3ae634b188b61d0e254603d7b",
+    "title": "The mass killing does not mean Israel’s winning",
+    "source": "Al Jazeera",
+    "published_at": "2026-10-07 15:25:06.000000",
+    "stratum": "Q3"
+   },
+   {
+    "item_id": 5833,
+    "added_at": "2026-10-07 13:54:25.216512",
+    "run": "07579e1145784c02a8e03e50e7d348f7",
+    "title": "Three years on, October 7 massacre sites in Israel draw visitors seeking to remember",
+    "source": "France 24",
+    "published_at": "2026-10-07 13:21:08.000000",
+    "stratum": "Q3"
+   },
+   {
+    "item_id": 5685,
+    "added_at": "2026-10-07 19:36:30.077627",
+    "run": "0b5bca9dcfa648a1b65a2822eb58e633",
+    "title": "Israelis are split over Netanyahu in their first elections since Oct. 7 – KTBB News, Weather, Talk",
+    "source": "GDELT",
+    "published_at": "2026-10-07 11:47:21.000000",
+    "stratum": "Q3"
+   },
+   {
+    "item_id": 5918,
+    "added_at": "2026-10-07 16:56:14.110640",
+    "run": "d9462a46e60d45eea90d8d7b201edbde",
+    "title": "La BBC entra en Gaza: campos infestados de ratas y miles de niños que necesitan ser evacuados de una zona devastada por la guerra",
+    "source": "BBC Mundo",
+    "published_at": "2026-10-07 14:30:16.000000",
+    "stratum": "Q3"
+   },
+   {
+    "item_id": 6365,
+    "added_at": "2026-10-08 08:03:43.475254",
+    "run": "59b5fdbec95d4b54a9efc8dc62efbda7",
+    "title": "Global protests mark October 7 attack with calls for Gaza ceasefire",
+    "source": "Al Jazeera",
+    "published_at": "2026-10-08 03:25:47.000000",
+    "stratum": "Q4"
+   },
+   {
+    "item_id": 6394,
+    "added_at": "2026-10-08 05:54:52.930693",
+    "run": "0976f2c09f9549ea85d222aab2a6c065",
+    "title": "Gaza: el panorama en el enclave tres años después de los ataques de Hamas del 7-O",
+    "source": "France 24 Español",
+    "published_at": "2026-10-08 01:32:48.000000",
+    "stratum": "Q4"
+   },
+   {
+    "item_id": 7554,
+    "added_at": "2026-10-09 11:48:36.986952",
+    "run": "d0d5d6747b6d4e8b8df086e2b7cab3c3",
+    "title": "Three years after October 7, prolonged war takes its toll on Israelis",
+    "source": "Al Jazeera",
+    "published_at": "2026-10-09 07:57:36.000000",
+    "stratum": "Q4"
+   },
+   {
+    "item_id": 6600,
+    "added_at": "2026-10-08 08:13:55.230948",
+    "run": "0ed4248f6e3941cb8d18860adcb7b7b9",
+    "title": "Israel pone fin a la actividad del Consulado Británico en Jerusalén y veta la entrada a altos cargos por \"antisemitas\"",
+    "source": "Europa Press Internacional",
+    "published_at": "2026-10-08 07:56:00.000000",
+    "stratum": "Q4"
+   }
+  ]
+ }
+]

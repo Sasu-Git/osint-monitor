@@ -1,0 +1,13 @@
+{
+ "seed": 20261027,
+ "snapshot": "C:\\Users\\EugenioVardiero\\osint-monitor\\data\\eval\\snapshot-20261027-forensic.db",
+ "snapshot_sha256": "3c0b2cd9c9a6e2347a055c62b1f88b7800f9d7b82228370983d48203ad0b4a39",
+ "blast_radius_csv_sha256": "98aafd3432bf65ea3ddc7cd1a5bf53e12cbeb96131965f81bda716113a3680b5",
+ "script_sha256": "03b71686fd261b6017da80d03df73ee93fabb227024097e451fa70db5313723c",
+ "outputs": {
+  "relay-set.json": "e7580daeb7e393c9c06d6dca6ee4491d2d6024a4083f1d1a0aee7e6e40f7e68d",
+  "giant-label-sample.json": "bb90bc52191af7c1893688b303d87905115a58df28efd80a891c8dc692ad08d9",
+  "large-occurrence-candidates.json": "7992faa6386b9f2422b98b333c7b2f7d3e9ddb361ef5c18d6e6a9e04e330038d",
+  "small-controls.json": "684ea9ad68b7d09c91e5b52bfff1fc0ad05aec873e10807f3731b9117e2c5b4a"
+ }
+}

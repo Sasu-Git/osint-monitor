@@ -1,0 +1,452 @@
+[
+ {
+  "event_id": 119,
+  "size": 137,
+  "signatures": [
+   "actor_diverse",
+   "large",
+   "long"
+  ],
+  "sample": [
+   {
+    "item_id": 4146,
+    "added_at": "2026-10-06 10:53:51.176208",
+    "run": "6702e94072094a85a66886f8223955be",
+    "title": "Yemen: Houthis Prosecute UN, Civil Society Staff",
+    "source": "GDELT",
+    "published_at": "2026-10-06 10:47:15.000000"
+   },
+   {
+    "item_id": 4036,
+    "added_at": "2026-10-06 09:44:06.032828",
+    "run": "d038fd5d700c48a6a20e21202639ebab",
+    "title": "Yemeni army claims to have killed 100 Houthis, downed 5 drones in Taiz",
+    "source": "GDELT",
+    "published_at": "2026-10-06 09:32:21.000000"
+   },
+   {
+    "item_id": 8103,
+    "added_at": "2026-10-09 17:58:50.216271",
+    "run": "5984084121ea4d16bdb42bb2b13b9496",
+    "title": "Attacks on Riyadhs international airport killed 3 Saudi citizens, and other Mideast developments",
+    "source": "GDELT",
+    "published_at": "2026-10-09 17:47:11.000000"
+   },
+   {
+    "item_id": 6760,
+    "added_at": "2026-10-08 10:07:23.602476",
+    "run": "5b095d5a7e1c47ab9725f751ebc6226f",
+    "title": "Houthis claim new attack on Riyadh airport as fighting continues in Yemen",
+    "source": "France 24",
+    "published_at": "2026-10-08 09:55:03.000000"
+   },
+   {
+    "item_id": 5204,
+    "added_at": "2026-10-07 06:46:57.517495",
+    "run": "6506bb4cf6924124b132d0601d0193c3",
+    "title": "Two Houthi missiles target Yemen’s Aden International Airport",
+    "source": "Al Jazeera",
+    "published_at": "2026-10-07 01:59:15.000000"
+   },
+   {
+    "item_id": 2966,
+    "added_at": "2026-10-05 20:33:47.488669",
+    "run": "b74a213041274161bb84370510e6248f",
+    "title": "Yemeni government forces say they have 'secured' Bab al-Mandab Strait",
+    "source": "BBC World",
+    "published_at": "2026-10-05 14:37:17.000000"
+   },
+   {
+    "item_id": 6076,
+    "added_at": "2026-10-07 19:36:31.387409",
+    "run": "0b5bca9dcfa648a1b65a2822eb58e633",
+    "title": "Two killed, 28 injured in Houthi strike on Saudi Arabias Abha airport",
+    "source": "GDELT",
+    "published_at": "2026-10-07 19:17:32.000000"
+   },
+   {
+    "item_id": 5757,
+    "added_at": "2026-10-07 12:54:35.442508",
+    "run": "23bad9ef084d412c8801ff96db4799f3",
+    "title": "Houthis Strike Airports, Military Targets in Saudi Arabia and Yemen as Fighting Escalates",
+    "source": "GDELT",
+    "published_at": "2026-10-07 12:47:22.000000"
+   }
+  ]
+ },
+ {
+  "event_id": 124,
+  "size": 105,
+  "signatures": [
+   "actor_diverse",
+   "drift",
+   "large",
+   "long"
+  ],
+  "sample": [
+   {
+    "item_id": 7843,
+    "added_at": "2026-10-09 13:24:19.229600",
+    "run": "a49b37bf59d94d51aab389952057b0d7",
+    "title": "Ukraine takes aim at Russia’s AI data infrastructure",
+    "source": "Al Jazeera",
+    "published_at": "2026-10-09 13:01:57.000000"
+   },
+   {
+    "item_id": 7603,
+    "added_at": "2026-10-09 11:48:28.191444",
+    "run": "d0d5d6747b6d4e8b8df086e2b7cab3c3",
+    "title": "Ukraine reportedly targets Russian cruise missile fuel plant, oil depot in overnight attack",
+    "source": "Kyiv Independent",
+    "published_at": "2026-10-09 03:51:11.000000"
+   },
+   {
+    "item_id": 2921,
+    "added_at": "2026-10-06 09:54:03.151160",
+    "run": "4ead858537f5489fa53720c70ce983ec",
+    "title": "Children among dozens injured as Russian glide bombs hit Kharkiv, 3 dead",
+    "source": "Kyiv Independent",
+    "published_at": "2026-10-05 13:59:59.000000"
+   },
+   {
+    "item_id": 6922,
+    "added_at": "2026-10-08 11:55:08.276896",
+    "run": "0fbaf4af1245455abad47ab6f5ed80fe",
+    "title": "Russian strikes kill at least 10, injure 45 across Ukraine over past day",
+    "source": "Kyiv Independent",
+    "published_at": "2026-10-08 11:43:28.000000"
+   },
+   {
+    "item_id": 2177,
+    "added_at": null,
+    "run": null,
+    "title": "Russia strikes Kyiv bridge as Germany’s Merz visits, pledges aid",
+    "source": "South China Morning Post",
+    "published_at": "2026-10-04 09:55:12.000000"
+   },
+   {
+    "item_id": 7928,
+    "added_at": "2026-10-09 14:36:17.653672",
+    "run": "9d61f7825feb4c52bd680a468f106ca0",
+    "title": "Lawsuits blame Fox News for deaths of journalists in Ukraine",
+    "source": "France 24",
+    "published_at": "2026-10-09 14:23:35.000000"
+   },
+   {
+    "item_id": 6748,
+    "added_at": "2026-10-08 09:54:39.592103",
+    "run": "36627b269e8a42eea8b2451f6b6ec734",
+    "title": "Ukraine War, Day 1,687: Russia Murders 20 in Apartment Block in Chernihiv Region",
+    "source": "GDELT",
+    "published_at": "2026-10-08 09:47:21.000000"
+   },
+   {
+    "item_id": 4612,
+    "added_at": "2026-10-06 16:14:10.958213",
+    "run": "ab78d8f262294698b026f1b32f03a0ab",
+    "title": "Ukraine fires nearly 900 drones at Russia, says Moscow",
+    "source": "France 24",
+    "published_at": "2026-10-06 16:01:42.000000"
+   }
+  ]
+ },
+ {
+  "event_id": 67,
+  "size": 91,
+  "signatures": [
+   "actor_diverse",
+   "large",
+   "long"
+  ],
+  "sample": [
+   {
+    "item_id": 2049,
+    "added_at": null,
+    "run": null,
+    "title": "French high school engulfed in flames as student protests continue",
+    "source": "Al Jazeera",
+    "published_at": "2026-10-03 12:59:27.000000"
+   },
+   {
+    "item_id": 7378,
+    "added_at": "2026-10-08 20:49:02.488500",
+    "run": "a6c66ff21aa64e61b6c26f55937a68f0",
+    "title": "'Fighting for our future': France high school students vow no let-up",
+    "source": "France 24",
+    "published_at": "2026-10-08 20:17:01.000000"
+   },
+   {
+    "item_id": 4494,
+    "added_at": "2026-10-06 15:24:49.342022",
+    "run": "74b9134c68cc43fb8371c85957dac536",
+    "title": "🔴 Live: French PM denies 'police repression', suspends classes as clashes erupt at student protests",
+    "source": "France 24",
+    "published_at": "2026-10-06 14:21:35.000000"
+   },
+   {
+    "item_id": 6028,
+    "added_at": "2026-10-07 19:23:39.616084",
+    "run": "2458e5a3ae634b188b61d0e254603d7b",
+    "title": "Over 100 arrested in Belgium student protests over education costs",
+    "source": "Al Jazeera",
+    "published_at": "2026-10-07 17:28:56.000000"
+   },
+   {
+    "item_id": 7535,
+    "added_at": "2026-10-09 11:48:47.013881",
+    "run": "d0d5d6747b6d4e8b8df086e2b7cab3c3",
+    "title": "As protests continue, half of France reportedly backs high school student movement",
+    "source": "France 24",
+    "published_at": "2026-10-09 10:06:28.000000"
+   },
+   {
+    "item_id": 5053,
+    "added_at": "2026-10-06 21:36:12.672279",
+    "run": "c149c8310628450d92579c4136079550",
+    "title": "How much does France spend on education?",
+    "source": "France 24",
+    "published_at": "2026-10-06 20:29:58.000000"
+   },
+   {
+    "item_id": 2423,
+    "added_at": null,
+    "run": null,
+    "title": "Students continue to protest in France as hundreds of schools close",
+    "source": "Al Jazeera",
+    "published_at": "2026-10-05 12:25:26.000000"
+   },
+   {
+    "item_id": 3394,
+    "added_at": "2026-10-05 21:24:19.758783",
+    "run": "47c6736f01a14678933ae39806ef75f7",
+    "title": "France braces for national day of school protests after injuries and mass arrests",
+    "source": "BBC World",
+    "published_at": "2026-10-05 21:18:10.000000"
+   }
+  ]
+ },
+ {
+  "event_id": 162,
+  "size": 76,
+  "signatures": [
+   "actor_diverse",
+   "large",
+   "long"
+  ],
+  "sample": [
+   {
+    "item_id": 6463,
+    "added_at": "2026-10-09 11:53:55.428674",
+    "run": "6d324761f5154f51b6f254c52ec09d5a",
+    "title": "Alcalde de Lieja prohíbe reuniones de más de tres personas tras disturbios por manifestaciones estudiantiles en Bélgica",
+    "source": "Europa Press Internacional",
+    "published_at": "2026-10-08 03:23:26.000000"
+   },
+   {
+    "item_id": 2564,
+    "added_at": "2026-10-05 13:16:53.901979",
+    "run": "17dbf9e87f644cf5b1c53abf0b938f97",
+    "title": "La protesta degli studenti a Parigi: in fiamme il portone di un liceo, sassaiola contro gli agenti",
+    "source": "Rai News Esteri",
+    "published_at": "2026-10-05 08:21:00.000000"
+   },
+   {
+    "item_id": 5347,
+    "added_at": "2026-10-07 07:44:19.511086",
+    "run": "45cd875de5c6424d8d08497cf4173124",
+    "title": "Irán convoca al embajador de Francia en protesta por la \"violenta respuesta\" de las manifestaciones estudiantiles",
+    "source": "Europa Press Internacional",
+    "published_at": "2026-10-07 07:21:24.000000"
+   },
+   {
+    "item_id": 6392,
+    "added_at": "2026-10-08 05:54:56.599594",
+    "run": "0976f2c09f9549ea85d222aab2a6c065",
+    "title": "Francia: Ejecutivo anuncia que mantendrá fuerza policial contra manifestaciones estudiantiles",
+    "source": "France 24 Español",
+    "published_at": "2026-10-08 02:27:01.000000"
+   },
+   {
+    "item_id": 6903,
+    "added_at": "2026-10-08 11:44:30.819147",
+    "run": "e8d5eeb1ff08477b9a5736e91556f586",
+    "title": "Los estudiantes de Francia presentan 10 reivindicaciones para detener sus protestas",
+    "source": "El País Internacional",
+    "published_at": "2026-10-08 11:36:17.000000"
+   },
+   {
+    "item_id": 3712,
+    "added_at": "2026-10-06 06:34:23.543977",
+    "run": "daaccbf9bc1c4da9b27151b5184db2ba",
+    "title": "En directo: sindicatos se suman a protestas estudiantiles en Francia; convocan a agricultores",
+    "source": "France 24 Español",
+    "published_at": "2026-10-06 05:44:50.000000"
+   },
+   {
+    "item_id": 4943,
+    "added_at": "2026-10-06 20:25:22.701003",
+    "run": "219fa01961754b628eadc5b9c12d4071",
+    "title": "Directo a... París y los choques entre estudiantes y policías en las manifestaciones",
+    "source": "France 24 Español",
+    "published_at": "2026-10-06 19:57:39.000000"
+   },
+   {
+    "item_id": 7228,
+    "added_at": "2026-10-08 15:35:56.319052",
+    "run": "f2149bb23ce6437086edc62dbddcf967",
+    "title": "Chi è Elwan, simbolo delle proteste studentesche in Francia: 17 anni e milioni di visualizzazioni",
+    "source": "Rai News Esteri",
+    "published_at": "2026-10-08 14:52:00.000000"
+   }
+  ]
+ },
+ {
+  "event_id": 923,
+  "size": 66,
+  "signatures": [
+   "actor_diverse",
+   "large",
+   "long"
+  ],
+  "sample": [
+   {
+    "item_id": 23442,
+    "added_at": "2026-10-27 11:55:09.429170",
+    "run": "19fa9db62ecb4588bf30c9c200325745",
+    "title": "Israeli election: Fragile co-existence between residents in Jewish-Arab town of Lod",
+    "source": "France 24",
+    "published_at": "2026-10-27 11:14:33.000000"
+   },
+   {
+    "item_id": 20500,
+    "added_at": "2026-10-24 09:21:12.499286",
+    "run": "adc685a493824775aa237d2cdb0580ff",
+    "title": "Israeli Elections Set For Tuesday | Newstalk 1400, 104.5, and 105.9 WJMX",
+    "source": "GDELT",
+    "published_at": "2026-10-23 09:17:01.000000"
+   },
+   {
+    "item_id": 22758,
+    "added_at": "2026-10-26 12:33:30.704135",
+    "run": "1b61f63f5b8c43c69927f3bc22e12cc0",
+    "title": "Netanyahu says Iran may attack ahead of Israel election",
+    "source": "GDELT",
+    "published_at": "2026-10-26 11:17:04.000000"
+   },
+   {
+    "item_id": 22846,
+    "added_at": "2026-10-27 08:57:46.340132",
+    "run": "2eb94c3570a342999b5dd2dbe9a91a2c",
+    "title": "Who are the Israeli candidates trying to unseat Netanyahu?",
+    "source": "Al Jazeera",
+    "published_at": "2026-10-26 13:02:29.000000"
+   },
+   {
+    "item_id": 22424,
+    "added_at": "2026-10-25 22:50:57.494173",
+    "run": "e1c4500efb7543e480e48b2ef3bd6530",
+    "title": "Deeply divided Israel braces for pivotal election",
+    "source": "BBC World",
+    "published_at": "2026-10-25 22:11:13.000000"
+   },
+   {
+    "item_id": 22690,
+    "added_at": "2026-10-27 08:57:46.340092",
+    "run": "2eb94c3570a342999b5dd2dbe9a91a2c",
+    "title": "If Netanyahu loses, what changes for Palestinians?",
+    "source": "Al Jazeera",
+    "published_at": "2026-10-26 10:16:39.000000"
+   },
+   {
+    "item_id": 22864,
+    "added_at": "2026-10-27 08:57:46.340176",
+    "run": "2eb94c3570a342999b5dd2dbe9a91a2c",
+    "title": "Israels Next Election May Change Its Leader, But Will It Change How the World Sees Israel?",
+    "source": "GDELT",
+    "published_at": "2026-10-26 13:32:23.000000"
+   },
+   {
+    "item_id": 23278,
+    "added_at": "2026-10-27 08:57:46.340246",
+    "run": "2eb94c3570a342999b5dd2dbe9a91a2c",
+    "title": "Why it could take time for a new Israeli government to form",
+    "source": "BBC World",
+    "published_at": "2026-10-27 08:37:30.000000"
+   }
+  ]
+ },
+ {
+  "event_id": 786,
+  "size": 63,
+  "signatures": [
+   "large",
+   "long"
+  ],
+  "sample": [
+   {
+    "item_id": 21437,
+    "added_at": "2026-10-25 08:48:23.975932",
+    "run": "9ee862b2dff24d77a9a21df3d7086780",
+    "title": "Lawmakers plan to block Trump nominees over Ukraine satellite network restrictions",
+    "source": "GDELT",
+    "published_at": "2026-10-24 10:16:57.000000"
+   },
+   {
+    "item_id": 20426,
+    "added_at": "2026-10-23 08:35:01.245235",
+    "run": "8340e85a28cd453a9265db75b82fb245",
+    "title": "Trump ordered Musk to restore Starlink access for Ukraine amidst Russian strikes: Report",
+    "source": "GDELT",
+    "published_at": "2026-10-23 08:17:18.000000"
+   },
+   {
+    "item_id": 20780,
+    "added_at": "2026-10-23 14:05:25.778993",
+    "run": "585d7df471804140aec2bb2869114d4a",
+    "title": "Trump administration offers mixed messages on limits to Ukraines Starshield access",
+    "source": "GDELT",
+    "published_at": "2026-10-23 13:47:24.000000"
+   },
+   {
+    "item_id": 18101,
+    "added_at": "2026-10-21 06:04:32.548000",
+    "run": "94fde01ddd374392a57fddf38fedc43a",
+    "title": "Musk Ordered Starlink Movement Limit Affecting Ukraine Drones, WSJ Reports",
+    "source": "GDELT",
+    "published_at": "2026-10-21 05:47:28.000000"
+   },
+   {
+    "item_id": 17661,
+    "added_at": "2026-10-21 00:14:56.823272",
+    "run": "985ea8dc7eeb4986a732fa0e1eb0a793",
+    "title": "Musk ordered slowdown of Starlink service Ukraine military relies on, report says",
+    "source": "South China Morning Post",
+    "published_at": "2026-10-20 22:49:12.000000"
+   },
+   {
+    "item_id": 20366,
+    "added_at": "2026-10-23 07:55:34.500625",
+    "run": "020c923a174842a0a5365bebcd46f9fa",
+    "title": "Trump says it doesnt matter who throttled Ukraines Starshield system and reveals Musk has put it back on",
+    "source": "GDELT",
+    "published_at": "2026-10-23 07:32:18.000000"
+   },
+   {
+    "item_id": 18189,
+    "added_at": "2026-10-21 07:20:05.203653",
+    "run": "43fac54a83bc42c99c7b85a8944644e1",
+    "title": "WSJ: Musk Ordered Ukraine Starlink Slowdown | Newsradio WOOD 1300 and 106.9 FM",
+    "source": "GDELT",
+    "published_at": "2026-10-21 07:01:59.000000"
+   },
+   {
+    "item_id": 21886,
+    "added_at": "2026-10-24 23:07:17.862996",
+    "run": "208ce5e40755498f931b5ffee2eed5c8",
+    "title": "Zelensky Says Starlink Is Back, Musk Says Ukraine Broke Rules",
+    "source": "GDELT",
+    "published_at": "2026-10-24 22:46:50.000000"
+   }
+  ]
+ }
+]
