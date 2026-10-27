@@ -177,3 +177,9 @@ Candidate A C2; the Phase 2 holdout is not opened). Written and committed before
   **F2** = the number on which the guard cuts at least one link.
 - **Gate unchanged:** proceed only if F1 >= 40% and F2 <= 1; otherwise stop and implement nothing. Secondary numbers
   (F1 counting any cut link; all cross-day DIFFERENT pairs) are reported for information and do not change the gate.
+
+## Amendment 2 (2026-10-27): feasibility result
+
+Feasibility gate **FAILED**: F1 = 0/5 (gate >= 40%), F2 = 0/7 (gate <= 1). E1 stops as pre-registered; nothing is
+implemented. Only 5-6 of 41 development OVERMERGE cases are cross-day, fewer than the 6 the development acceptance
+requires. Details: `e1/FEASIBILITY.md`, `e1/feasibility-results.json`.

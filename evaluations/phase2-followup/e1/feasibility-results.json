@@ -1,0 +1,439 @@
+{
+ "inputs": {
+  "lexicon": "C:\\Users\\EugenioVardiero\\osint-monitor-phase2\\evaluations\\phase2-followup\\e1\\action_classes.yaml",
+  "gold_rev2": "C:\\Users\\EugenioVardiero\\osint-monitor-identity\\evaluations\\identity\\gold\\identity-gold.yaml",
+  "gold_rev3_additions": "C:\\Users\\EugenioVardiero\\osint-monitor-identity\\evaluations\\identity\\gold\\identity-gold-rev3-additions.yaml",
+  "defect_set": "C:\\Users\\EugenioVardiero\\osint-monitor-identity\\evaluations\\identity\\defects\\defect-cases.json",
+  "phase2_dev_run": "C:\\Users\\EugenioVardiero\\osint-monitor-actors\\evaluations\\identity\\runs\\phase2-dev-actor-hygiene.json",
+  "window 2026-08-21": "C:\\Users\\EugenioVardiero\\osint-monitor-identity\\evaluations\\clustering\\windows\\2026-08-21.items.jsonl",
+  "window 2026-09-25": "C:\\Users\\EugenioVardiero\\osint-monitor-identity\\evaluations\\clustering\\windows\\2026-09-25.items.jsonl",
+  "window 2026-09-30-multilingual": "C:\\Users\\EugenioVardiero\\osint-monitor-identity\\evaluations\\identity\\windows\\2026-09-30-multilingual.items.jsonl",
+  "window 2026-10-03-live": "C:\\Users\\EugenioVardiero\\osint-monitor-identity\\evaluations\\identity\\windows\\2026-10-03-live.items.jsonl",
+  "window 2026-10-05-live": "C:\\Users\\EugenioVardiero\\osint-monitor-identity\\evaluations\\identity\\windows\\2026-10-05-live.items.jsonl"
+ },
+ "sha256": {
+  "lexicon": "6de4875a69b9fc4850342e93139dcd520e86e911efd76e4ddc6c9a1374196150",
+  "gold_rev2": "cc98765b7506b9faa3b81913655978c23afc0d21202e8b69e85c1217ffa2cc58",
+  "gold_rev3_additions": "a92b66f2309162c1378a2b0164a34c11534a2924da3ab88944abc75616825d6b",
+  "defect_set": "fafc8abb4b7d5f1eec1e5286a251ab32a5a650e614e8e4fcc33dc3472764a681",
+  "phase2_dev_run": "d40f671f6f0f546904a626f6923cd44668d2f85283daf9b8d069b4a1dcec85c7",
+  "window 2026-08-21": "c4932b5c4acf7d7566efd87b27a25dcb3ce78410c836ae1565463336ea860814",
+  "window 2026-09-25": "dd84b77e1b99c487396e1dc46411ea626ec49b005f98840e6a2f4dbba6affaef",
+  "window 2026-09-30-multilingual": "492e17ce0ed0121d5e0ceafc0bdbb376e94fe4a0245880f74fd0cc1c3fb264d9",
+  "window 2026-10-03-live": "f66e02726930173fa10ca226a09cceb492700fc40441f481f2f2ff892c06fd46",
+  "window 2026-10-05-live": "3ea43a325af80b202d45dbcd4749c1282fe4d6535e247a3c0eb418c0cb5a4a2e"
+ },
+ "summary": {
+  "F1": {
+   "cut": 0,
+   "of": 5,
+   "rate": 0.0,
+   "gate": ">= 0.40",
+   "pass": false
+  },
+  "F2": {
+   "cut": 0,
+   "of": 7,
+   "gate": "<= 1",
+   "pass": true
+  },
+  "secondary": {
+   "F1_any_link": 1,
+   "all_cross_day_different_cut_all": [
+    0,
+    9
+   ]
+  },
+  "conflicts": [],
+  "gate": "FAIL"
+ },
+ "rows": [
+  {
+   "sources": [
+    "gold A002",
+    "defect D004 OVERMERGE"
+   ],
+   "label": "DIFFERENT_DEVELOPMENT",
+   "overmerge": true,
+   "links": 1,
+   "links_fired": 0,
+   "cuts_all": false,
+   "cuts_any": false,
+   "why_not": [
+    "main action not classed"
+   ],
+   "hours_min": 39.1,
+   "hours_max": 39.1,
+   "single": {
+    "a": {
+     "title": "Carney calls Trump's fresh tariffs a 'miscalculation' after trade talks collapse",
+     "lang": "en",
+     "lemma": "call",
+     "class": null,
+     "why": "out of lexicon"
+    },
+    "b": {
+     "title": "Canadian premier says ‘erratic’ Trump ‘not to be trusted’ amid US trade feud",
+     "lang": "en",
+     "lemma": "say",
+     "class": null,
+     "why": "generic"
+    }
+   }
+  },
+  {
+   "sources": [
+    "gold A010"
+   ],
+   "label": "DIFFERENT_DEVELOPMENT",
+   "overmerge": false,
+   "links": 1,
+   "links_fired": 0,
+   "cuts_all": false,
+   "cuts_any": false,
+   "why_not": [
+    "main action not classed"
+   ],
+   "hours_min": 24.1,
+   "hours_max": 24.1,
+   "single": {
+    "a": {
+     "title": "Embrace AI to boost competitiveness, Paul Chan says at tech festival opening",
+     "lang": "en",
+     "lemma": "say",
+     "class": null,
+     "why": "generic"
+    },
+    "b": {
+     "title": "Robot horse and rider steal the spotlight at Chinese conference",
+     "lang": "en",
+     "lemma": "steal",
+     "class": null,
+     "why": "out of lexicon"
+    }
+   }
+  },
+  {
+   "sources": [
+    "gold A023",
+    "defect D009 OVERMERGE"
+   ],
+   "label": "DIFFERENT_DEVELOPMENT",
+   "overmerge": true,
+   "links": 1,
+   "links_fired": 0,
+   "cuts_all": false,
+   "cuts_any": false,
+   "why_not": [
+    "main action not classed"
+   ],
+   "hours_min": 31.8,
+   "hours_max": 31.8,
+   "single": {
+    "a": {
+     "title": "Israel re-establishes closed West Bank settlement, defying growing international protests",
+     "lang": "en",
+     "lemma": "re",
+     "class": null,
+     "why": "out of lexicon"
+    },
+    "b": {
+     "title": "Jewish activists push back against Israeli settlers",
+     "lang": "en",
+     "lemma": "push",
+     "class": null,
+     "why": "out of lexicon"
+    }
+   }
+  },
+  {
+   "sources": [
+    "gold A030"
+   ],
+   "label": "DIFFERENT_DEVELOPMENT",
+   "overmerge": false,
+   "links": 1,
+   "links_fired": 0,
+   "cuts_all": false,
+   "cuts_any": false,
+   "why_not": [
+    "main action not classed"
+   ],
+   "hours_min": 32.5,
+   "hours_max": 32.5,
+   "single": {
+    "a": {
+     "title": "In the embodied AI race, China can opt to look beyond bigger models",
+     "lang": "en",
+     "lemma": "opt",
+     "class": null,
+     "why": "out of lexicon"
+    },
+    "b": {
+     "title": "Robot horse and rider steal the spotlight at Chinese conference",
+     "lang": "en",
+     "lemma": "steal",
+     "class": null,
+     "why": "out of lexicon"
+    }
+   }
+  },
+  {
+   "sources": [
+    "gold B007",
+    "defect D016 SAME_LANGUAGE_RECALL_MISS"
+   ],
+   "label": "SAME_DEVELOPMENT",
+   "overmerge": false,
+   "links": 1,
+   "links_fired": 0,
+   "cuts_all": false,
+   "cuts_any": false,
+   "why_not": [
+    "main action not classed"
+   ],
+   "hours_min": 24.3,
+   "hours_max": 24.3,
+   "single": {
+    "a": {
+     "title": "The Air Force says its China think tank will continue. Its director says it’s basically dead.",
+     "lang": "en",
+     "lemma": "say",
+     "class": null,
+     "why": "generic"
+    },
+    "b": {
+     "title": "Air Force, civilian staff dispute status of China Aerospace Studies Institute",
+     "lang": "en",
+     "lemma": "force",
+     "class": null,
+     "why": "out of lexicon"
+    }
+   }
+  },
+  {
+   "sources": [
+    "gold C069"
+   ],
+   "label": "DIFFERENT_DEVELOPMENT",
+   "overmerge": false,
+   "links": 1,
+   "links_fired": 0,
+   "cuts_all": false,
+   "cuts_any": false,
+   "why_not": [
+    "main action not classed"
+   ],
+   "hours_min": 32.0,
+   "hours_max": 32.0,
+   "single": {
+    "a": {
+     "title": "El argentino Rafael Grossi recupera terreno en la carrera para dirigir la ONU",
+     "lang": "es",
+     "lemma": "recuperar",
+     "class": null,
+     "why": "out of lexicon"
+    },
+    "b": {
+     "title": "\"El ganado se está muriendo de sed y hambre\": el devastador impacto de El Niño que ya se siente en el Corredor Seco de Centroamérica",
+     "lang": "es",
+     "lemma": "morir",
+     "class": "casualty",
+     "why": null
+    }
+   }
+  },
+  {
+   "sources": [
+    "gold V015"
+   ],
+   "label": "DIFFERENT_DEVELOPMENT",
+   "overmerge": false,
+   "links": 1,
+   "links_fired": 0,
+   "cuts_all": false,
+   "cuts_any": false,
+   "why_not": [
+    "not both report headlines"
+   ],
+   "hours_min": 27.0,
+   "hours_max": 27.0,
+   "single": {
+    "a": {
+     "title": "\"Lo hice para vengar a Gaza, quería morir como mártir\": el copiloto del vuelo de Flydubai confesó por qué atacó al piloto",
+     "lang": "es",
+     "lemma": "querer",
+     "class": null,
+     "why": "out of lexicon"
+    },
+    "b": {
+     "title": "‘Did he know?’: Why Israel is rejecting an October 7 reckoning",
+     "lang": "en",
+     "lemma": "know",
+     "class": null,
+     "why": "out of lexicon"
+    }
+   }
+  },
+  {
+   "sources": [
+    "defect D008 OVERMERGE"
+   ],
+   "label": "DIFFERENT_DEVELOPMENT",
+   "overmerge": true,
+   "links": 2,
+   "links_fired": 0,
+   "cuts_all": false,
+   "cuts_any": false,
+   "why_not": [
+    "main action not classed"
+   ],
+   "hours_min": 39.1,
+   "hours_max": 41.0,
+   "single": null
+  },
+  {
+   "sources": [
+    "defect D099 CORRECT_BEHAVIOR"
+   ],
+   "label": "SAME_DEVELOPMENT",
+   "overmerge": false,
+   "links": 5,
+   "links_fired": 0,
+   "cuts_all": false,
+   "cuts_any": false,
+   "why_not": [
+    "main action not classed",
+    "within 24 h"
+   ],
+   "hours_min": 12.5,
+   "hours_max": 40.7,
+   "single": null
+  },
+  {
+   "sources": [
+    "defect D101 OVERMERGE"
+   ],
+   "label": "DIFFERENT_DEVELOPMENT",
+   "overmerge": true,
+   "links": 5,
+   "links_fired": 1,
+   "cuts_all": false,
+   "cuts_any": true,
+   "why_not": [
+    "main action not classed"
+   ],
+   "hours_min": 41.1,
+   "hours_max": 69.3,
+   "single": null
+  },
+  {
+   "sources": [
+    "defect D103 OVERMERGE"
+   ],
+   "label": "DIFFERENT_DEVELOPMENT",
+   "overmerge": true,
+   "links": 5,
+   "links_fired": 0,
+   "cuts_all": false,
+   "cuts_any": false,
+   "why_not": [
+    "main action not classed",
+    "same class"
+   ],
+   "hours_min": 24.8,
+   "hours_max": 53.0,
+   "single": null
+  },
+  {
+   "sources": [
+    "defect D119 CROSS_LANGUAGE_MISS"
+   ],
+   "label": "SAME_DEVELOPMENT",
+   "overmerge": false,
+   "links": 36,
+   "links_fired": 0,
+   "cuts_all": false,
+   "cuts_any": false,
+   "why_not": [
+    "main action not classed",
+    "within 24 h"
+   ],
+   "hours_min": 0.2,
+   "hours_max": 42.7,
+   "single": null
+  },
+  {
+   "sources": [
+    "defect D120 CROSS_LANGUAGE_MISS"
+   ],
+   "label": "SAME_DEVELOPMENT",
+   "overmerge": false,
+   "links": 18,
+   "links_fired": 0,
+   "cuts_all": false,
+   "cuts_any": false,
+   "why_not": [
+    "main action not classed",
+    "within 24 h"
+   ],
+   "hours_min": 0.2,
+   "hours_max": 31.0,
+   "single": null
+  },
+  {
+   "sources": [
+    "defect D121 CROSS_LANGUAGE_MISS"
+   ],
+   "label": "SAME_DEVELOPMENT",
+   "overmerge": false,
+   "links": 784,
+   "links_fired": 0,
+   "cuts_all": false,
+   "cuts_any": false,
+   "why_not": [
+    "main action not classed",
+    "within 24 h"
+   ],
+   "hours_min": 0.1,
+   "hours_max": 41.5,
+   "single": null
+  },
+  {
+   "sources": [
+    "defect D123 SPLIT"
+   ],
+   "label": "SAME_DEVELOPMENT",
+   "overmerge": false,
+   "links": 21,
+   "links_fired": 0,
+   "cuts_all": false,
+   "cuts_any": false,
+   "why_not": [
+    "main action not classed",
+    "within 24 h"
+   ],
+   "hours_min": 1.1,
+   "hours_max": 36.5,
+   "single": null
+  },
+  {
+   "sources": [
+    "defect D124 CROSS_LANGUAGE_MISS"
+   ],
+   "label": "SAME_DEVELOPMENT",
+   "overmerge": false,
+   "links": 72,
+   "links_fired": 0,
+   "cuts_all": false,
+   "cuts_any": false,
+   "why_not": [
+    "main action not classed",
+    "within 24 h"
+   ],
+   "hours_min": 0.1,
+   "hours_max": 50.1,
+   "single": null
+  }
+ ]
+}
