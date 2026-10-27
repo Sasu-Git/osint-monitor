@@ -213,3 +213,12 @@ with commentary.
   change; any Situation effect is reported, not gated, in round 1.
 - **Dedup path unchanged.** Near-duplicates still attach directly. They inherit the admitted member's correctness;
   their count is reported.
+
+## Amendment 1 (2026-10-27): the dedup path is subject to admission
+
+The dedup attachment (section 1b) is no longer a bypass in the experiment. A cross-origin near-duplicate may use the
+near-duplicate match as its local link, but it joins an existing Development only if it also passes that variant's
+Development-level check (DA1, DA2: `core_compatible`; DA4: the medoid check; DA3: it counts as one of the two
+supporting links). Otherwise it is processed as an ordinary new item. Deduplication itself is unchanged. DA1 is the
+attachment-control experiment and may keep a mixed founder set; DA2 tests formation as well (`EXPERIMENT-PLAN.md`,
+amendment 1 C).

@@ -1,0 +1,1861 @@
+{
+ "R001": {
+  "set": "L3a",
+  "event_id": 124,
+  "stratum": "large",
+  "reference_item": 1937,
+  "candidate_item": 2177,
+  "member_items": null
+ },
+ "R002": {
+  "set": "L3a",
+  "event_id": 67,
+  "stratum": "large",
+  "reference_item": 981,
+  "candidate_item": 4494,
+  "member_items": null
+ },
+ "R003": {
+  "set": "L2",
+  "event_id": 639,
+  "stratum": "Q2",
+  "reference_item": 13713,
+  "candidate_item": 17947,
+  "member_items": null
+ },
+ "R004": {
+  "set": "L2",
+  "event_id": 398,
+  "stratum": "Q4",
+  "reference_item": 8440,
+  "candidate_item": 18351,
+  "member_items": null
+ },
+ "R005": {
+  "set": "L2",
+  "event_id": 449,
+  "stratum": "Q4",
+  "reference_item": 8355,
+  "candidate_item": 22659,
+  "member_items": null
+ },
+ "R006": {
+  "set": "L2",
+  "event_id": 398,
+  "stratum": "Q4",
+  "reference_item": 8440,
+  "candidate_item": 21092,
+  "member_items": null
+ },
+ "R007": {
+  "set": "L3a",
+  "event_id": 923,
+  "stratum": "large",
+  "reference_item": 20500,
+  "candidate_item": 22690,
+  "member_items": null
+ },
+ "R008": {
+  "set": "L2",
+  "event_id": 182,
+  "stratum": "Q2",
+  "reference_item": 2633,
+  "candidate_item": 5380,
+  "member_items": null
+ },
+ "R009": {
+  "set": "L2",
+  "event_id": 399,
+  "stratum": "Q1",
+  "reference_item": 8426,
+  "candidate_item": 10305,
+  "member_items": null
+ },
+ "R010": {
+  "set": "L2",
+  "event_id": 449,
+  "stratum": "Q4",
+  "reference_item": 8355,
+  "candidate_item": 23196,
+  "member_items": null
+ },
+ "R011": {
+  "set": "L3a",
+  "event_id": 124,
+  "stratum": "large",
+  "reference_item": 1937,
+  "candidate_item": 6748,
+  "member_items": null
+ },
+ "R012": {
+  "set": "L2",
+  "event_id": 449,
+  "stratum": "Q4",
+  "reference_item": 8355,
+  "candidate_item": 22986,
+  "member_items": null
+ },
+ "R013": {
+  "set": "L2b",
+  "event_id": 399,
+  "stratum": null,
+  "reference_item": 8426,
+  "candidate_item": null,
+  "member_items": [
+   12938,
+   12747,
+   14005,
+   13234,
+   18931,
+   17433,
+   21074,
+   19437
+  ]
+ },
+ "R014": {
+  "set": "L3a",
+  "event_id": 786,
+  "stratum": "large",
+  "reference_item": 17661,
+  "candidate_item": 20426,
+  "member_items": null
+ },
+ "R015": {
+  "set": "L3a",
+  "event_id": 67,
+  "stratum": "large",
+  "reference_item": 981,
+  "candidate_item": 2049,
+  "member_items": null
+ },
+ "R016": {
+  "set": "L1",
+  "event_id": 182,
+  "stratum": "founder",
+  "reference_item": 2633,
+  "candidate_item": 3143,
+  "member_items": null
+ },
+ "R017": {
+  "set": "L2",
+  "event_id": 397,
+  "stratum": "Q2",
+  "reference_item": 8598,
+  "candidate_item": 12449,
+  "member_items": null
+ },
+ "R018": {
+  "set": "L2",
+  "event_id": 182,
+  "stratum": "Q4",
+  "reference_item": 2633,
+  "candidate_item": 6394,
+  "member_items": null
+ },
+ "R019": {
+  "set": "L2",
+  "event_id": 449,
+  "stratum": "Q2",
+  "reference_item": 8355,
+  "candidate_item": 21259,
+  "member_items": null
+ },
+ "R020": {
+  "set": "L3a",
+  "event_id": 67,
+  "stratum": "large",
+  "reference_item": 981,
+  "candidate_item": 2423,
+  "member_items": null
+ },
+ "R021": {
+  "set": "L2",
+  "event_id": 514,
+  "stratum": "Q1",
+  "reference_item": 8485,
+  "candidate_item": 16557,
+  "member_items": null
+ },
+ "R022": {
+  "set": "L2",
+  "event_id": 514,
+  "stratum": "Q3",
+  "reference_item": 8485,
+  "candidate_item": 22350,
+  "member_items": null
+ },
+ "R023": {
+  "set": "L2",
+  "event_id": 399,
+  "stratum": "Q2",
+  "reference_item": 8426,
+  "candidate_item": 14841,
+  "member_items": null
+ },
+ "R024": {
+  "set": "L2",
+  "event_id": 182,
+  "stratum": "Q3",
+  "reference_item": 2633,
+  "candidate_item": 5918,
+  "member_items": null
+ },
+ "R025": {
+  "set": "L2",
+  "event_id": 639,
+  "stratum": "Q4",
+  "reference_item": 13713,
+  "candidate_item": 22179,
+  "member_items": null
+ },
+ "R026": {
+  "set": "L1",
+  "event_id": 397,
+  "stratum": "founder",
+  "reference_item": 8598,
+  "candidate_item": 8341,
+  "member_items": null
+ },
+ "R027": {
+  "set": "L2",
+  "event_id": 626,
+  "stratum": "Q1",
+  "reference_item": 12402,
+  "candidate_item": 14999,
+  "member_items": null
+ },
+ "R028": {
+  "set": "L2",
+  "event_id": 514,
+  "stratum": "Q2",
+  "reference_item": 8485,
+  "candidate_item": 19014,
+  "member_items": null
+ },
+ "R029": {
+  "set": "L2",
+  "event_id": 182,
+  "stratum": "Q2",
+  "reference_item": 2633,
+  "candidate_item": 5692,
+  "member_items": null
+ },
+ "R030": {
+  "set": "L2",
+  "event_id": 397,
+  "stratum": "Q1",
+  "reference_item": 8598,
+  "candidate_item": 9780,
+  "member_items": null
+ },
+ "R031": {
+  "set": "L2",
+  "event_id": 639,
+  "stratum": "Q3",
+  "reference_item": 13713,
+  "candidate_item": 20691,
+  "member_items": null
+ },
+ "R032": {
+  "set": "L3a",
+  "event_id": 124,
+  "stratum": "large",
+  "reference_item": 1937,
+  "candidate_item": 4612,
+  "member_items": null
+ },
+ "R033": {
+  "set": "L2",
+  "event_id": 449,
+  "stratum": "Q3",
+  "reference_item": 8355,
+  "candidate_item": 22269,
+  "member_items": null
+ },
+ "R034": {
+  "set": "L2",
+  "event_id": 399,
+  "stratum": "Q4",
+  "reference_item": 8426,
+  "candidate_item": 21310,
+  "member_items": null
+ },
+ "R035": {
+  "set": "L2b",
+  "event_id": 182,
+  "stratum": null,
+  "reference_item": 2633,
+  "candidate_item": null,
+  "member_items": [
+   4538,
+   3870,
+   5692,
+   5380,
+   5938,
+   5685,
+   6365,
+   7554
+  ]
+ },
+ "R036": {
+  "set": "L1",
+  "event_id": 449,
+  "stratum": "founder",
+  "reference_item": 8355,
+  "candidate_item": 9365,
+  "member_items": null
+ },
+ "R037": {
+  "set": "L3a",
+  "event_id": 162,
+  "stratum": "large",
+  "reference_item": 2564,
+  "candidate_item": 6463,
+  "member_items": null
+ },
+ "R038": {
+  "set": "L2",
+  "event_id": 399,
+  "stratum": "Q1",
+  "reference_item": 8426,
+  "candidate_item": 12938,
+  "member_items": null
+ },
+ "R039": {
+  "set": "L1",
+  "event_id": 182,
+  "stratum": "founder",
+  "reference_item": 2633,
+  "candidate_item": 3094,
+  "member_items": null
+ },
+ "R040": {
+  "set": "L3a",
+  "event_id": 786,
+  "stratum": "large",
+  "reference_item": 17661,
+  "candidate_item": 18189,
+  "member_items": null
+ },
+ "R041": {
+  "set": "L3a",
+  "event_id": 124,
+  "stratum": "large",
+  "reference_item": 1937,
+  "candidate_item": 2921,
+  "member_items": null
+ },
+ "R042": {
+  "set": "L1",
+  "event_id": 399,
+  "stratum": "founder",
+  "reference_item": 8426,
+  "candidate_item": 8469,
+  "member_items": null
+ },
+ "R043": {
+  "set": "L3a",
+  "event_id": 786,
+  "stratum": "large",
+  "reference_item": 17661,
+  "candidate_item": 20780,
+  "member_items": null
+ },
+ "R044": {
+  "set": "L1",
+  "event_id": 398,
+  "stratum": "founder",
+  "reference_item": 8440,
+  "candidate_item": 8572,
+  "member_items": null
+ },
+ "R045": {
+  "set": "L3a",
+  "event_id": 124,
+  "stratum": "large",
+  "reference_item": 1937,
+  "candidate_item": 6922,
+  "member_items": null
+ },
+ "R046": {
+  "set": "L2",
+  "event_id": 182,
+  "stratum": "Q4",
+  "reference_item": 2633,
+  "candidate_item": 7554,
+  "member_items": null
+ },
+ "R047": {
+  "set": "L2",
+  "event_id": 639,
+  "stratum": "Q2",
+  "reference_item": 13713,
+  "candidate_item": 17574,
+  "member_items": null
+ },
+ "R048": {
+  "set": "L2b",
+  "event_id": 514,
+  "stratum": null,
+  "reference_item": 8485,
+  "candidate_item": null,
+  "member_items": [
+   11764,
+   15243,
+   19014,
+   18751,
+   22049,
+   21589,
+   23367,
+   22780
+  ]
+ },
+ "R049": {
+  "set": "L3a",
+  "event_id": 923,
+  "stratum": "large",
+  "reference_item": 20500,
+  "candidate_item": 22846,
+  "member_items": null
+ },
+ "R050": {
+  "set": "L3a",
+  "event_id": 923,
+  "stratum": "large",
+  "reference_item": 20500,
+  "candidate_item": 22864,
+  "member_items": null
+ },
+ "R051": {
+  "set": "L3a",
+  "event_id": 124,
+  "stratum": "large",
+  "reference_item": 1937,
+  "candidate_item": 7928,
+  "member_items": null
+ },
+ "R052": {
+  "set": "L2",
+  "event_id": 626,
+  "stratum": "Q3",
+  "reference_item": 12402,
+  "candidate_item": 18987,
+  "member_items": null
+ },
+ "R053": {
+  "set": "L2",
+  "event_id": 639,
+  "stratum": "Q4",
+  "reference_item": 13713,
+  "candidate_item": 22499,
+  "member_items": null
+ },
+ "R054": {
+  "set": "L2",
+  "event_id": 397,
+  "stratum": "Q3",
+  "reference_item": 8598,
+  "candidate_item": 16229,
+  "member_items": null
+ },
+ "R055": {
+  "set": "L3a",
+  "event_id": 119,
+  "stratum": "large",
+  "reference_item": 1708,
+  "candidate_item": 5757,
+  "member_items": null
+ },
+ "R056": {
+  "set": "L3a",
+  "event_id": 786,
+  "stratum": "large",
+  "reference_item": 17661,
+  "candidate_item": 20366,
+  "member_items": null
+ },
+ "R057": {
+  "set": "L3a",
+  "event_id": 162,
+  "stratum": "large",
+  "reference_item": 2564,
+  "candidate_item": 4943,
+  "member_items": null
+ },
+ "R058": {
+  "set": "L2",
+  "event_id": 182,
+  "stratum": "Q1",
+  "reference_item": 2633,
+  "candidate_item": 3870,
+  "member_items": null
+ },
+ "R059": {
+  "set": "L2",
+  "event_id": 626,
+  "stratum": "Q4",
+  "reference_item": 12402,
+  "candidate_item": 22064,
+  "member_items": null
+ },
+ "R060": {
+  "set": "L2",
+  "event_id": 397,
+  "stratum": "Q4",
+  "reference_item": 8598,
+  "candidate_item": 19912,
+  "member_items": null
+ },
+ "R061": {
+  "set": "L2",
+  "event_id": 514,
+  "stratum": "Q1",
+  "reference_item": 8485,
+  "candidate_item": 15259,
+  "member_items": null
+ },
+ "R062": {
+  "set": "L3a",
+  "event_id": 67,
+  "stratum": "large",
+  "reference_item": 981,
+  "candidate_item": 5053,
+  "member_items": null
+ },
+ "R063": {
+  "set": "L2",
+  "event_id": 514,
+  "stratum": "Q4",
+  "reference_item": 8485,
+  "candidate_item": 23435,
+  "member_items": null
+ },
+ "R064": {
+  "set": "L1",
+  "event_id": 399,
+  "stratum": "founder",
+  "reference_item": 8426,
+  "candidate_item": 8405,
+  "member_items": null
+ },
+ "R065": {
+  "set": "L1",
+  "event_id": 398,
+  "stratum": "founder",
+  "reference_item": 8440,
+  "candidate_item": 8490,
+  "member_items": null
+ },
+ "R066": {
+  "set": "L1",
+  "event_id": 182,
+  "stratum": "founder",
+  "reference_item": 2633,
+  "candidate_item": 2619,
+  "member_items": null
+ },
+ "R067": {
+  "set": "L3a",
+  "event_id": 119,
+  "stratum": "large",
+  "reference_item": 1708,
+  "candidate_item": 2966,
+  "member_items": null
+ },
+ "R068": {
+  "set": "L2",
+  "event_id": 514,
+  "stratum": "Q3",
+  "reference_item": 8485,
+  "candidate_item": 22049,
+  "member_items": null
+ },
+ "R069": {
+  "set": "L2",
+  "event_id": 398,
+  "stratum": "Q2",
+  "reference_item": 8440,
+  "candidate_item": 13545,
+  "member_items": null
+ },
+ "R070": {
+  "set": "L2",
+  "event_id": 399,
+  "stratum": "Q1",
+  "reference_item": 8426,
+  "candidate_item": 10839,
+  "member_items": null
+ },
+ "R071": {
+  "set": "L2",
+  "event_id": 626,
+  "stratum": "Q2",
+  "reference_item": 12402,
+  "candidate_item": 17100,
+  "member_items": null
+ },
+ "R072": {
+  "set": "L2",
+  "event_id": 397,
+  "stratum": "Q3",
+  "reference_item": 8598,
+  "candidate_item": 16993,
+  "member_items": null
+ },
+ "R073": {
+  "set": "L2",
+  "event_id": 398,
+  "stratum": "Q2",
+  "reference_item": 8440,
+  "candidate_item": 13083,
+  "member_items": null
+ },
+ "R074": {
+  "set": "L2b",
+  "event_id": 639,
+  "stratum": null,
+  "reference_item": 13713,
+  "candidate_item": null,
+  "member_items": [
+   15160,
+   15407,
+   18197,
+   17947,
+   20019,
+   20691,
+   21934,
+   22179
+  ]
+ },
+ "R075": {
+  "set": "L3b",
+  "event_id": 67,
+  "stratum": null,
+  "reference_item": 981,
+  "candidate_item": null,
+  "member_items": [
+   2049,
+   7378,
+   4494,
+   6028,
+   7535,
+   5053,
+   2423,
+   3394
+  ]
+ },
+ "R076": {
+  "set": "L2",
+  "event_id": 639,
+  "stratum": "Q1",
+  "reference_item": 13713,
+  "candidate_item": 15407,
+  "member_items": null
+ },
+ "R077": {
+  "set": "L2b",
+  "event_id": 449,
+  "stratum": null,
+  "reference_item": 8355,
+  "candidate_item": null,
+  "member_items": [
+   10912,
+   15411,
+   21306,
+   20659,
+   22138,
+   22353,
+   23196,
+   23158
+  ]
+ },
+ "R078": {
+  "set": "L2",
+  "event_id": 626,
+  "stratum": "Q3",
+  "reference_item": 12402,
+  "candidate_item": 20392,
+  "member_items": null
+ },
+ "R079": {
+  "set": "L2",
+  "event_id": 397,
+  "stratum": "Q4",
+  "reference_item": 8598,
+  "candidate_item": 19165,
+  "member_items": null
+ },
+ "R080": {
+  "set": "L2",
+  "event_id": 626,
+  "stratum": "Q4",
+  "reference_item": 12402,
+  "candidate_item": 21748,
+  "member_items": null
+ },
+ "R081": {
+  "set": "L2",
+  "event_id": 399,
+  "stratum": "Q3",
+  "reference_item": 8426,
+  "candidate_item": 17433,
+  "member_items": null
+ },
+ "R082": {
+  "set": "L1",
+  "event_id": 397,
+  "stratum": "founder",
+  "reference_item": 8598,
+  "candidate_item": 8496,
+  "member_items": null
+ },
+ "R083": {
+  "set": "L2",
+  "event_id": 397,
+  "stratum": "Q1",
+  "reference_item": 8598,
+  "candidate_item": 10701,
+  "member_items": null
+ },
+ "R084": {
+  "set": "L2",
+  "event_id": 449,
+  "stratum": "Q1",
+  "reference_item": 8355,
+  "candidate_item": 10912,
+  "member_items": null
+ },
+ "R085": {
+  "set": "L2",
+  "event_id": 639,
+  "stratum": "Q2",
+  "reference_item": 13713,
+  "candidate_item": 18197,
+  "member_items": null
+ },
+ "R086": {
+  "set": "L2",
+  "event_id": 398,
+  "stratum": "Q3",
+  "reference_item": 8440,
+  "candidate_item": 17675,
+  "member_items": null
+ },
+ "R087": {
+  "set": "L2",
+  "event_id": 397,
+  "stratum": "Q2",
+  "reference_item": 8598,
+  "candidate_item": 12976,
+  "member_items": null
+ },
+ "R088": {
+  "set": "L2",
+  "event_id": 182,
+  "stratum": "Q4",
+  "reference_item": 2633,
+  "candidate_item": 6365,
+  "member_items": null
+ },
+ "R089": {
+  "set": "L2",
+  "event_id": 626,
+  "stratum": "Q1",
+  "reference_item": 12402,
+  "candidate_item": 15353,
+  "member_items": null
+ },
+ "R090": {
+  "set": "L1",
+  "event_id": 399,
+  "stratum": "founder",
+  "reference_item": 8426,
+  "candidate_item": 8534,
+  "member_items": null
+ },
+ "R091": {
+  "set": "L2",
+  "event_id": 626,
+  "stratum": "Q1",
+  "reference_item": 12402,
+  "candidate_item": 15284,
+  "member_items": null
+ },
+ "R092": {
+  "set": "L2",
+  "event_id": 397,
+  "stratum": "Q2",
+  "reference_item": 8598,
+  "candidate_item": 11724,
+  "member_items": null
+ },
+ "R093": {
+  "set": "L3a",
+  "event_id": 119,
+  "stratum": "large",
+  "reference_item": 1708,
+  "candidate_item": 6076,
+  "member_items": null
+ },
+ "R094": {
+  "set": "L2",
+  "event_id": 639,
+  "stratum": "Q4",
+  "reference_item": 13713,
+  "candidate_item": 21695,
+  "member_items": null
+ },
+ "R095": {
+  "set": "L2",
+  "event_id": 626,
+  "stratum": "Q2",
+  "reference_item": 12402,
+  "candidate_item": 15691,
+  "member_items": null
+ },
+ "R096": {
+  "set": "L1",
+  "event_id": 397,
+  "stratum": "founder",
+  "reference_item": 8598,
+  "candidate_item": 8454,
+  "member_items": null
+ },
+ "R097": {
+  "set": "L1",
+  "event_id": 449,
+  "stratum": "founder",
+  "reference_item": 8355,
+  "candidate_item": 9406,
+  "member_items": null
+ },
+ "R098": {
+  "set": "L1",
+  "event_id": 399,
+  "stratum": "founder",
+  "reference_item": 8426,
+  "candidate_item": 8403,
+  "member_items": null
+ },
+ "R099": {
+  "set": "L2",
+  "event_id": 514,
+  "stratum": "Q2",
+  "reference_item": 8485,
+  "candidate_item": 17521,
+  "member_items": null
+ },
+ "R100": {
+  "set": "L1",
+  "event_id": 397,
+  "stratum": "founder",
+  "reference_item": 8598,
+  "candidate_item": 8434,
+  "member_items": null
+ },
+ "R101": {
+  "set": "L3a",
+  "event_id": 162,
+  "stratum": "large",
+  "reference_item": 2564,
+  "candidate_item": 5347,
+  "member_items": null
+ },
+ "R102": {
+  "set": "L2",
+  "event_id": 639,
+  "stratum": "Q1",
+  "reference_item": 13713,
+  "candidate_item": 15337,
+  "member_items": null
+ },
+ "R103": {
+  "set": "L3a",
+  "event_id": 786,
+  "stratum": "large",
+  "reference_item": 17661,
+  "candidate_item": 21886,
+  "member_items": null
+ },
+ "R104": {
+  "set": "L3a",
+  "event_id": 162,
+  "stratum": "large",
+  "reference_item": 2564,
+  "candidate_item": 7228,
+  "member_items": null
+ },
+ "R105": {
+  "set": "L2",
+  "event_id": 398,
+  "stratum": "Q1",
+  "reference_item": 8440,
+  "candidate_item": 9500,
+  "member_items": null
+ },
+ "R106": {
+  "set": "L2",
+  "event_id": 626,
+  "stratum": "Q2",
+  "reference_item": 12402,
+  "candidate_item": 17624,
+  "member_items": null
+ },
+ "R107": {
+  "set": "L1",
+  "event_id": 398,
+  "stratum": "founder",
+  "reference_item": 8440,
+  "candidate_item": 8561,
+  "member_items": null
+ },
+ "R108": {
+  "set": "L2",
+  "event_id": 639,
+  "stratum": "Q3",
+  "reference_item": 13713,
+  "candidate_item": 20019,
+  "member_items": null
+ },
+ "R109": {
+  "set": "L3a",
+  "event_id": 119,
+  "stratum": "large",
+  "reference_item": 1708,
+  "candidate_item": 6760,
+  "member_items": null
+ },
+ "R110": {
+  "set": "L2",
+  "event_id": 398,
+  "stratum": "Q3",
+  "reference_item": 8440,
+  "candidate_item": 15025,
+  "member_items": null
+ },
+ "R111": {
+  "set": "L2",
+  "event_id": 449,
+  "stratum": "Q3",
+  "reference_item": 8355,
+  "candidate_item": 22138,
+  "member_items": null
+ },
+ "R112": {
+  "set": "L2",
+  "event_id": 626,
+  "stratum": "Q1",
+  "reference_item": 12402,
+  "candidate_item": 14777,
+  "member_items": null
+ },
+ "R113": {
+  "set": "L2",
+  "event_id": 182,
+  "stratum": "Q3",
+  "reference_item": 2633,
+  "candidate_item": 5938,
+  "member_items": null
+ },
+ "R114": {
+  "set": "L2",
+  "event_id": 449,
+  "stratum": "Q1",
+  "reference_item": 8355,
+  "candidate_item": 15411,
+  "member_items": null
+ },
+ "R115": {
+  "set": "L3b",
+  "event_id": 124,
+  "stratum": null,
+  "reference_item": 1937,
+  "candidate_item": null,
+  "member_items": [
+   7843,
+   7603,
+   2921,
+   6922,
+   2177,
+   7928,
+   6748,
+   4612
+  ]
+ },
+ "R116": {
+  "set": "L2",
+  "event_id": 399,
+  "stratum": "Q3",
+  "reference_item": 8426,
+  "candidate_item": 15570,
+  "member_items": null
+ },
+ "R117": {
+  "set": "L3a",
+  "event_id": 119,
+  "stratum": "large",
+  "reference_item": 1708,
+  "candidate_item": 4146,
+  "member_items": null
+ },
+ "R118": {
+  "set": "L3a",
+  "event_id": 923,
+  "stratum": "large",
+  "reference_item": 20500,
+  "candidate_item": 22758,
+  "member_items": null
+ },
+ "R119": {
+  "set": "L2",
+  "event_id": 398,
+  "stratum": "Q4",
+  "reference_item": 8440,
+  "candidate_item": 23309,
+  "member_items": null
+ },
+ "R120": {
+  "set": "L1",
+  "event_id": 626,
+  "stratum": "founder",
+  "reference_item": 12402,
+  "candidate_item": 13666,
+  "member_items": null
+ },
+ "R121": {
+  "set": "L2",
+  "event_id": 626,
+  "stratum": "Q4",
+  "reference_item": 12402,
+  "candidate_item": 21696,
+  "member_items": null
+ },
+ "R122": {
+  "set": "L2b",
+  "event_id": 397,
+  "stratum": null,
+  "reference_item": 8598,
+  "candidate_item": null,
+  "member_items": [
+   10368,
+   10701,
+   12449,
+   11720,
+   17248,
+   16993,
+   19165,
+   19912
+  ]
+ },
+ "R123": {
+  "set": "L2",
+  "event_id": 514,
+  "stratum": "Q2",
+  "reference_item": 8485,
+  "candidate_item": 19229,
+  "member_items": null
+ },
+ "R124": {
+  "set": "L2",
+  "event_id": 399,
+  "stratum": "Q2",
+  "reference_item": 8426,
+  "candidate_item": 14005,
+  "member_items": null
+ },
+ "R125": {
+  "set": "L2",
+  "event_id": 626,
+  "stratum": "Q3",
+  "reference_item": 12402,
+  "candidate_item": 18846,
+  "member_items": null
+ },
+ "R126": {
+  "set": "L2",
+  "event_id": 639,
+  "stratum": "Q4",
+  "reference_item": 13713,
+  "candidate_item": 21934,
+  "member_items": null
+ },
+ "R127": {
+  "set": "L2",
+  "event_id": 182,
+  "stratum": "Q1",
+  "reference_item": 2633,
+  "candidate_item": 3734,
+  "member_items": null
+ },
+ "R128": {
+  "set": "L2",
+  "event_id": 639,
+  "stratum": "Q1",
+  "reference_item": 13713,
+  "candidate_item": 15541,
+  "member_items": null
+ },
+ "R129": {
+  "set": "L2",
+  "event_id": 399,
+  "stratum": "Q2",
+  "reference_item": 8426,
+  "candidate_item": 15270,
+  "member_items": null
+ },
+ "R130": {
+  "set": "L1",
+  "event_id": 399,
+  "stratum": "founder",
+  "reference_item": 8426,
+  "candidate_item": 8364,
+  "member_items": null
+ },
+ "R131": {
+  "set": "L2",
+  "event_id": 399,
+  "stratum": "Q4",
+  "reference_item": 8426,
+  "candidate_item": 20075,
+  "member_items": null
+ },
+ "R132": {
+  "set": "L2",
+  "event_id": 399,
+  "stratum": "Q3",
+  "reference_item": 8426,
+  "candidate_item": 18272,
+  "member_items": null
+ },
+ "R133": {
+  "set": "L1",
+  "event_id": 639,
+  "stratum": "founder",
+  "reference_item": 13713,
+  "candidate_item": 14223,
+  "member_items": null
+ },
+ "R134": {
+  "set": "L2",
+  "event_id": 397,
+  "stratum": "Q1",
+  "reference_item": 8598,
+  "candidate_item": 10368,
+  "member_items": null
+ },
+ "R135": {
+  "set": "L1",
+  "event_id": 398,
+  "stratum": "founder",
+  "reference_item": 8440,
+  "candidate_item": 8491,
+  "member_items": null
+ },
+ "R136": {
+  "set": "L2",
+  "event_id": 514,
+  "stratum": "Q4",
+  "reference_item": 8485,
+  "candidate_item": 23367,
+  "member_items": null
+ },
+ "R137": {
+  "set": "L2",
+  "event_id": 514,
+  "stratum": "Q4",
+  "reference_item": 8485,
+  "candidate_item": 22749,
+  "member_items": null
+ },
+ "R138": {
+  "set": "L3a",
+  "event_id": 162,
+  "stratum": "large",
+  "reference_item": 2564,
+  "candidate_item": 6392,
+  "member_items": null
+ },
+ "R139": {
+  "set": "L2",
+  "event_id": 514,
+  "stratum": "Q2",
+  "reference_item": 8485,
+  "candidate_item": 18751,
+  "member_items": null
+ },
+ "R140": {
+  "set": "L1",
+  "event_id": 449,
+  "stratum": "founder",
+  "reference_item": 8355,
+  "candidate_item": 9375,
+  "member_items": null
+ },
+ "R141": {
+  "set": "L2",
+  "event_id": 639,
+  "stratum": "Q3",
+  "reference_item": 13713,
+  "candidate_item": 19929,
+  "member_items": null
+ },
+ "R142": {
+  "set": "L2",
+  "event_id": 398,
+  "stratum": "Q1",
+  "reference_item": 8440,
+  "candidate_item": 10515,
+  "member_items": null
+ },
+ "R143": {
+  "set": "L2",
+  "event_id": 398,
+  "stratum": "Q2",
+  "reference_item": 8440,
+  "candidate_item": 13641,
+  "member_items": null
+ },
+ "R144": {
+  "set": "L2",
+  "event_id": 397,
+  "stratum": "Q2",
+  "reference_item": 8598,
+  "candidate_item": 11720,
+  "member_items": null
+ },
+ "R145": {
+  "set": "L3b",
+  "event_id": 786,
+  "stratum": null,
+  "reference_item": 17661,
+  "candidate_item": null,
+  "member_items": [
+   21437,
+   20426,
+   20780,
+   18101,
+   20366,
+   18189,
+   21886
+  ]
+ },
+ "R146": {
+  "set": "L2",
+  "event_id": 514,
+  "stratum": "Q1",
+  "reference_item": 8485,
+  "candidate_item": 15243,
+  "member_items": null
+ },
+ "R147": {
+  "set": "L2",
+  "event_id": 514,
+  "stratum": "Q1",
+  "reference_item": 8485,
+  "candidate_item": 11764,
+  "member_items": null
+ },
+ "R148": {
+  "set": "L2",
+  "event_id": 182,
+  "stratum": "Q4",
+  "reference_item": 2633,
+  "candidate_item": 6600,
+  "member_items": null
+ },
+ "R149": {
+  "set": "L2",
+  "event_id": 398,
+  "stratum": "Q3",
+  "reference_item": 8440,
+  "candidate_item": 17157,
+  "member_items": null
+ },
+ "R150": {
+  "set": "L2",
+  "event_id": 397,
+  "stratum": "Q1",
+  "reference_item": 8598,
+  "candidate_item": 9913,
+  "member_items": null
+ },
+ "R151": {
+  "set": "L2",
+  "event_id": 182,
+  "stratum": "Q3",
+  "reference_item": 2633,
+  "candidate_item": 5685,
+  "member_items": null
+ },
+ "R152": {
+  "set": "L3a",
+  "event_id": 67,
+  "stratum": "large",
+  "reference_item": 981,
+  "candidate_item": 6028,
+  "member_items": null
+ },
+ "R153": {
+  "set": "L2",
+  "event_id": 182,
+  "stratum": "Q2",
+  "reference_item": 2633,
+  "candidate_item": 5790,
+  "member_items": null
+ },
+ "R154": {
+  "set": "L1",
+  "event_id": 397,
+  "stratum": "founder",
+  "reference_item": 8598,
+  "candidate_item": 8450,
+  "member_items": null
+ },
+ "R155": {
+  "set": "L1",
+  "event_id": 399,
+  "stratum": "founder",
+  "reference_item": 8426,
+  "candidate_item": 8379,
+  "member_items": null
+ },
+ "R156": {
+  "set": "L3b",
+  "event_id": 162,
+  "stratum": null,
+  "reference_item": 2564,
+  "candidate_item": null,
+  "member_items": [
+   6463,
+   5347,
+   6392,
+   6903,
+   3712,
+   4943,
+   7228
+  ]
+ },
+ "R157": {
+  "set": "L2",
+  "event_id": 397,
+  "stratum": "Q4",
+  "reference_item": 8598,
+  "candidate_item": 21181,
+  "member_items": null
+ },
+ "R158": {
+  "set": "L2",
+  "event_id": 399,
+  "stratum": "Q1",
+  "reference_item": 8426,
+  "candidate_item": 12747,
+  "member_items": null
+ },
+ "R159": {
+  "set": "L2",
+  "event_id": 639,
+  "stratum": "Q3",
+  "reference_item": 13713,
+  "candidate_item": 21279,
+  "member_items": null
+ },
+ "R160": {
+  "set": "L2",
+  "event_id": 399,
+  "stratum": "Q4",
+  "reference_item": 8426,
+  "candidate_item": 19437,
+  "member_items": null
+ },
+ "R161": {
+  "set": "L2",
+  "event_id": 399,
+  "stratum": "Q2",
+  "reference_item": 8426,
+  "candidate_item": 13234,
+  "member_items": null
+ },
+ "R162": {
+  "set": "L2",
+  "event_id": 639,
+  "stratum": "Q2",
+  "reference_item": 13713,
+  "candidate_item": 18481,
+  "member_items": null
+ },
+ "R163": {
+  "set": "L2",
+  "event_id": 449,
+  "stratum": "Q3",
+  "reference_item": 8355,
+  "candidate_item": 22485,
+  "member_items": null
+ },
+ "R164": {
+  "set": "L2",
+  "event_id": 397,
+  "stratum": "Q4",
+  "reference_item": 8598,
+  "candidate_item": 18691,
+  "member_items": null
+ },
+ "R165": {
+  "set": "L2b",
+  "event_id": 626,
+  "stratum": null,
+  "reference_item": 12402,
+  "candidate_item": null,
+  "member_items": [
+   14777,
+   14999,
+   17100,
+   15691,
+   19516,
+   18987,
+   21748,
+   21335
+  ]
+ },
+ "R166": {
+  "set": "L2",
+  "event_id": 449,
+  "stratum": "Q4",
+  "reference_item": 8355,
+  "candidate_item": 23158,
+  "member_items": null
+ },
+ "R167": {
+  "set": "L1",
+  "event_id": 449,
+  "stratum": "founder",
+  "reference_item": 8355,
+  "candidate_item": 9295,
+  "member_items": null
+ },
+ "R168": {
+  "set": "L2",
+  "event_id": 399,
+  "stratum": "Q3",
+  "reference_item": 8426,
+  "candidate_item": 18931,
+  "member_items": null
+ },
+ "R169": {
+  "set": "L3a",
+  "event_id": 923,
+  "stratum": "large",
+  "reference_item": 20500,
+  "candidate_item": 22424,
+  "member_items": null
+ },
+ "R170": {
+  "set": "L3a",
+  "event_id": 119,
+  "stratum": "large",
+  "reference_item": 1708,
+  "candidate_item": 5204,
+  "member_items": null
+ },
+ "R171": {
+  "set": "L2",
+  "event_id": 397,
+  "stratum": "Q3",
+  "reference_item": 8598,
+  "candidate_item": 15121,
+  "member_items": null
+ },
+ "R172": {
+  "set": "L1",
+  "event_id": 399,
+  "stratum": "founder",
+  "reference_item": 8426,
+  "candidate_item": 8407,
+  "member_items": null
+ },
+ "R173": {
+  "set": "L2",
+  "event_id": 514,
+  "stratum": "Q3",
+  "reference_item": 8485,
+  "candidate_item": 21992,
+  "member_items": null
+ },
+ "R174": {
+  "set": "L3a",
+  "event_id": 119,
+  "stratum": "large",
+  "reference_item": 1708,
+  "candidate_item": 4036,
+  "member_items": null
+ },
+ "R175": {
+  "set": "L2",
+  "event_id": 398,
+  "stratum": "Q3",
+  "reference_item": 8440,
+  "candidate_item": 14193,
+  "member_items": null
+ },
+ "R176": {
+  "set": "L2",
+  "event_id": 626,
+  "stratum": "Q4",
+  "reference_item": 12402,
+  "candidate_item": 21335,
+  "member_items": null
+ },
+ "R177": {
+  "set": "L2",
+  "event_id": 449,
+  "stratum": "Q1",
+  "reference_item": 8355,
+  "candidate_item": 13363,
+  "member_items": null
+ },
+ "R178": {
+  "set": "L2",
+  "event_id": 398,
+  "stratum": "Q4",
+  "reference_item": 8440,
+  "candidate_item": 18607,
+  "member_items": null
+ },
+ "R179": {
+  "set": "L3b",
+  "event_id": 119,
+  "stratum": null,
+  "reference_item": 1708,
+  "candidate_item": null,
+  "member_items": [
+   4146,
+   4036,
+   8103,
+   6760,
+   5204,
+   2966,
+   6076,
+   5757
+  ]
+ },
+ "R180": {
+  "set": "L3a",
+  "event_id": 923,
+  "stratum": "large",
+  "reference_item": 20500,
+  "candidate_item": 23278,
+  "member_items": null
+ },
+ "R181": {
+  "set": "L2",
+  "event_id": 449,
+  "stratum": "Q2",
+  "reference_item": 8355,
+  "candidate_item": 21306,
+  "member_items": null
+ },
+ "R182": {
+  "set": "L2",
+  "event_id": 182,
+  "stratum": "Q2",
+  "reference_item": 2633,
+  "candidate_item": 5412,
+  "member_items": null
+ },
+ "R183": {
+  "set": "L2b",
+  "event_id": 398,
+  "stratum": null,
+  "reference_item": 8440,
+  "candidate_item": null,
+  "member_items": [
+   10515,
+   10427,
+   13545,
+   13083,
+   14193,
+   17675,
+   21092,
+   18351
+  ]
+ },
+ "R184": {
+  "set": "L2",
+  "event_id": 626,
+  "stratum": "Q3",
+  "reference_item": 12402,
+  "candidate_item": 19516,
+  "member_items": null
+ },
+ "R185": {
+  "set": "L3a",
+  "event_id": 67,
+  "stratum": "large",
+  "reference_item": 981,
+  "candidate_item": 3394,
+  "member_items": null
+ },
+ "R186": {
+  "set": "L2",
+  "event_id": 449,
+  "stratum": "Q1",
+  "reference_item": 8355,
+  "candidate_item": 15465,
+  "member_items": null
+ },
+ "R187": {
+  "set": "L3a",
+  "event_id": 162,
+  "stratum": "large",
+  "reference_item": 2564,
+  "candidate_item": 6903,
+  "member_items": null
+ },
+ "R188": {
+  "set": "L3a",
+  "event_id": 786,
+  "stratum": "large",
+  "reference_item": 17661,
+  "candidate_item": 21437,
+  "member_items": null
+ },
+ "R189": {
+  "set": "L1",
+  "event_id": 399,
+  "stratum": "founder",
+  "reference_item": 8426,
+  "candidate_item": 8508,
+  "member_items": null
+ },
+ "R190": {
+  "set": "L2",
+  "event_id": 399,
+  "stratum": "Q4",
+  "reference_item": 8426,
+  "candidate_item": 21074,
+  "member_items": null
+ },
+ "R191": {
+  "set": "L3a",
+  "event_id": 923,
+  "stratum": "large",
+  "reference_item": 20500,
+  "candidate_item": 23442,
+  "member_items": null
+ },
+ "R192": {
+  "set": "L3b",
+  "event_id": 923,
+  "stratum": null,
+  "reference_item": 20500,
+  "candidate_item": null,
+  "member_items": [
+   23442,
+   22758,
+   22846,
+   22424,
+   22690,
+   22864,
+   23278
+  ]
+ },
+ "R193": {
+  "set": "L1",
+  "event_id": 398,
+  "stratum": "founder",
+  "reference_item": 8440,
+  "candidate_item": 8331,
+  "member_items": null
+ },
+ "R194": {
+  "set": "L3a",
+  "event_id": 162,
+  "stratum": "large",
+  "reference_item": 2564,
+  "candidate_item": 3712,
+  "member_items": null
+ },
+ "R195": {
+  "set": "L2",
+  "event_id": 398,
+  "stratum": "Q1",
+  "reference_item": 8440,
+  "candidate_item": 10427,
+  "member_items": null
+ },
+ "R196": {
+  "set": "L3a",
+  "event_id": 67,
+  "stratum": "large",
+  "reference_item": 981,
+  "candidate_item": 7535,
+  "member_items": null
+ },
+ "R197": {
+  "set": "L3a",
+  "event_id": 119,
+  "stratum": "large",
+  "reference_item": 1708,
+  "candidate_item": 8103,
+  "member_items": null
+ },
+ "R198": {
+  "set": "L3a",
+  "event_id": 786,
+  "stratum": "large",
+  "reference_item": 17661,
+  "candidate_item": 18101,
+  "member_items": null
+ },
+ "R199": {
+  "set": "L2",
+  "event_id": 449,
+  "stratum": "Q2",
+  "reference_item": 8355,
+  "candidate_item": 20659,
+  "member_items": null
+ },
+ "R200": {
+  "set": "L2",
+  "event_id": 182,
+  "stratum": "Q1",
+  "reference_item": 2633,
+  "candidate_item": 4865,
+  "member_items": null
+ },
+ "R201": {
+  "set": "L2",
+  "event_id": 449,
+  "stratum": "Q3",
+  "reference_item": 8355,
+  "candidate_item": 22353,
+  "member_items": null
+ },
+ "R202": {
+  "set": "L2",
+  "event_id": 626,
+  "stratum": "Q2",
+  "reference_item": 12402,
+  "candidate_item": 16802,
+  "member_items": null
+ },
+ "R203": {
+  "set": "L1",
+  "event_id": 398,
+  "stratum": "founder",
+  "reference_item": 8440,
+  "candidate_item": 8455,
+  "member_items": null
+ },
+ "R204": {
+  "set": "L2",
+  "event_id": 639,
+  "stratum": "Q1",
+  "reference_item": 13713,
+  "candidate_item": 15160,
+  "member_items": null
+ },
+ "R205": {
+  "set": "L2",
+  "event_id": 397,
+  "stratum": "Q3",
+  "reference_item": 8598,
+  "candidate_item": 17248,
+  "member_items": null
+ },
+ "R206": {
+  "set": "L2",
+  "event_id": 514,
+  "stratum": "Q3",
+  "reference_item": 8485,
+  "candidate_item": 21589,
+  "member_items": null
+ },
+ "R207": {
+  "set": "L1",
+  "event_id": 514,
+  "stratum": "founder",
+  "reference_item": 8485,
+  "candidate_item": 10815,
+  "member_items": null
+ },
+ "R208": {
+  "set": "L2",
+  "event_id": 398,
+  "stratum": "Q1",
+  "reference_item": 8440,
+  "candidate_item": 10872,
+  "member_items": null
+ },
+ "R209": {
+  "set": "L2",
+  "event_id": 449,
+  "stratum": "Q2",
+  "reference_item": 8355,
+  "candidate_item": 21990,
+  "member_items": null
+ },
+ "R210": {
+  "set": "L3a",
+  "event_id": 124,
+  "stratum": "large",
+  "reference_item": 1937,
+  "candidate_item": 7843,
+  "member_items": null
+ },
+ "R211": {
+  "set": "L1",
+  "event_id": 182,
+  "stratum": "founder",
+  "reference_item": 2633,
+  "candidate_item": 3146,
+  "member_items": null
+ },
+ "R212": {
+  "set": "L2",
+  "event_id": 398,
+  "stratum": "Q2",
+  "reference_item": 8440,
+  "candidate_item": 13128,
+  "member_items": null
+ },
+ "R213": {
+  "set": "L2",
+  "event_id": 182,
+  "stratum": "Q1",
+  "reference_item": 2633,
+  "candidate_item": 4538,
+  "member_items": null
+ },
+ "R214": {
+  "set": "L3a",
+  "event_id": 67,
+  "stratum": "large",
+  "reference_item": 981,
+  "candidate_item": 7378,
+  "member_items": null
+ },
+ "R215": {
+  "set": "L3a",
+  "event_id": 124,
+  "stratum": "large",
+  "reference_item": 1937,
+  "candidate_item": 7603,
+  "member_items": null
+ },
+ "R216": {
+  "set": "L2",
+  "event_id": 514,
+  "stratum": "Q4",
+  "reference_item": 8485,
+  "candidate_item": 22780,
+  "member_items": null
+ },
+ "R217": {
+  "set": "L2",
+  "event_id": 182,
+  "stratum": "Q3",
+  "reference_item": 2633,
+  "candidate_item": 5833,
+  "member_items": null
+ }
+}

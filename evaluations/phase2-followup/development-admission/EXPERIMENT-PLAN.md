@@ -123,3 +123,95 @@ this experiment; the provenance proposal makes it unnecessary in future.
 
 Repairing existing Developments; Situation rules; cross-language identity; a multilingual embedding; core
 promotion; secondary safeguards (size, age, source-specific rules); production deployment.
+
+## Amendment 1 (2026-10-27): owner-approved amendments A, B and C, and the labelling definition
+
+Owner approval 2026-10-27: plan approved subject to A, B and C. H3, H2 and any runtime implementation each still need
+their own approval. Recorded before any labelling or measurement.
+
+### A. The dedup path may not bypass Development-level admission
+
+A cross-origin near-duplicate may still use deduplication as its **local-link evidence**. Attaching it to an existing
+Development must also satisfy the Development-level rule of the variant:
+
+- **DA1, DA2:** `core_compatible(item, core)`;
+- **DA4:** the medoid check;
+- **DA3:** the dedup link counts as one supporting link, and a second, from another origin, is still required;
+- **DA0:** unchanged.
+
+A near-duplicate that fails the check is not attached by the dedup path. It continues as an ordinary new item
+(clustering, then admission). Deduplication itself (detection, thresholds, storage) is not redesigned. Dedup-path
+attachments and rejections are reported per variant. **The case set does not change.**
+
+### B. Stronger H2 validity, replacing the H2 validity check above
+
+**Tolerance, defined before H2 runs.** A live Development L with members M_L (restricted to items in the replay
+period, 2026-10-04 to 2026-10-27) is **reproduced** by the DA0 replay when the replay Development R with the largest
+overlap |R ∩ M_L| satisfies both:
+
+- **coverage:** |R ∩ M_L| ≥ 0.5 · |M_L|;
+- **size:** 0.5 · |M_L| ≤ |R| ≤ 2 · |M_L|.
+
+**H2 is valid only if all three hold:**
+1. **D398 is reproduced.**
+2. **At least 7 of the 8 giants are reproduced.**
+3. **At least 18 of the 24 relay-signature Developments (75%) are reproduced.**
+
+The small-control condition stays as a stability metric (G14), not as the validity condition.
+
+**Cadence.**
+- Pre-declared order: **12 h**, then **3 h**, then **1 h** ticks. The first cadence whose DA0 replay passes is used
+  for every variant.
+- Every cadence tried and its validity result are recorded.
+- If none passes, **H2 is declared inadequate and stops**. The gate is never relaxed.
+- 1 h over 23 days is about 550 ticks; its cost is estimated from the 12 h run before it starts.
+
+H2 runs only after Candidate A's C2.
+
+### C. DA1 and DA2 are interpreted separately
+
+- **DA1 is the attachment-control experiment.** It tests whether a stable occurrence core stops later relay and drift.
+  It keeps every founder, so a founder cluster that was already mixed stays mixed.
+- **DA2 is the formation-plus-attachment experiment.** It tests the tighter founder kernel, then applies the same
+  core admission rule to later members.
+- **The occurrence-core architecture is not rejected only because DA1 cannot repair mixed founders,** if DA2
+  materially improves them. Results are reported per variant with this reading: G1 and G4 depend on formation, so a
+  DA1 failure there with a DA2 pass is read as "formation needed", not as "core admission failed".
+
+### Labelling definition (L1–L3; supersedes the label names in `DATASET-MANIFEST.md`)
+
+**Reference report.** For each labelled Development (the 8 giants and the 6 large-occurrence candidates), the
+reference is its **earliest-published founder report**: a founder whose headline kind is REPORT and which is not a
+roundup; ties go to the lowest item id. This is deterministic, uses no DA rule, and is shown to the owner only as
+"reference report". **The founding occurrence is the reference report's occurrence.**
+
+**Cases.** Each case shows the reference report and one candidate report, and asks whether they concern the same
+occurrence:
+- **L1:** every other founder of a giant vs its reference;
+- **L2:** every sampled later member of a giant vs its reference;
+- **L3a:** every sampled member of a large-occurrence candidate vs its reference (a sampled member that is the
+  reference itself is dropped);
+- **L3b, one case per large-occurrence candidate:** the reference plus its sampled members. Do these all concern one
+  occurrence? `SAME_OCCURRENCE` = one occurrence; `DIFFERENT_OCCURRENCE` = more than one.
+
+**Owner-facing labels:** `SAME_OCCURRENCE`, `DIFFERENT_OCCURRENCE`, `AMBIGUOUS`, per the identity contract.
+
+**Mapping to the gate:** L2-SAME and L2-DIFFERENT become SAME_OCCURRENCE and DIFFERENT_OCCURRENCE vs the reference.
+"The Development holding the founding occurrence" (G1) is the replay Development that contains the reference report.
+
+The case set is the frozen selection (`dataset/FREEZE.json`). Only the reference rule above is added. Final counts
+and hashes are in `labelling/FREEZE-LABELLING.json`.
+
+## Amendment 2 (2026-10-27): final labelling case set, recorded before any case is shown
+
+The case set changes from amendment 1 in two recorded ways:
+
+- **L2b added, one set-level case per giant** (the reference plus 8 of its 16 sampled members, every second one in
+  sample order). The large-occurrence candidates have set-level cases (L3b); without matching cases for the giants,
+  the existence of a set-level case would tell the reviewer which Developments are not giants. L2b keeps the review
+  blind, and also gives a Development-level answer for each giant. L2b is reported, not gated.
+- **L3a has 45 cases, not 48:** three sampled members of large-occurrence candidates were the reference report itself
+  and were dropped.
+
+Total **217 cases**: L1 30, L2 128, L2b 8, L3a 45, L3b 6. No reference report needed the fallback. Hashes are in
+`labelling/FREEZE-LABELLING.json`, rebuilt after this amendment.

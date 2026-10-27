@@ -66,3 +66,18 @@ reused for a variant or for tuning. Sealed holdouts are never used.
 
 A passing candidate becomes its own deploy candidate under the deployment runbook, after Candidates A and B, with its
 own approval. Existing Developments are not repaired by it.
+
+## Amendment 1 (2026-10-27)
+
+- **H2 validity** (replaces the earlier condition; definitions in `EXPERIMENT-PLAN.md`, amendment 1 B): D398
+  reproduced, ≥ 7 of 8 giants reproduced, and ≥ 18 of 24 relay-signature Developments reproduced. "Reproduced" means
+  coverage ≥ 50% of the live members and replay size within 0.5–2× of the live size. Cadences are tried in the order
+  12 h, 3 h, 1 h; the gate is never relaxed. If no cadence passes, H2 is inadequate and the experiment stops.
+- **Dedup path (amendment A):** every gate line is evaluated with near-duplicates subject to the variant's
+  Development-level check. Added line **G20**: in DA1, DA2 and DA4, no near-duplicate is attached to a Development it
+  fails the check for (verified from the run's decision records).
+- **DA1 vs DA2 reading (amendment C):** a variant failing G1 or G4 while another variant of the same architecture
+  passes is reported as such. The architecture is judged on its best variant; each variant still must pass every line
+  to be chosen.
+- **Labels:** L2-SAME and L2-DIFFERENT mean SAME_OCCURRENCE and DIFFERENT_OCCURRENCE vs the reference report
+  (labelling definition, amendment 1).

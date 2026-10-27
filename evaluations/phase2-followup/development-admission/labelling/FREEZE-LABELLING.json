@@ -1,0 +1,42 @@
+{
+ "seed": 20261028,
+ "cases": 217,
+ "by_set": {
+  "L3a": 45,
+  "L2": 128,
+  "L2b": 8,
+  "L1": 30,
+  "L3b": 6
+ },
+ "reference_fallbacks": [],
+ "code": {
+  "worktree": "C:\\Users\\EugenioVardiero\\osint-monitor-timing",
+  "sha": "adacb83e220a733663a0f69ff9a104c6c597bd5e",
+  "dirty": false
+ },
+ "snapshot": {
+  "path": "C:\\Users\\EugenioVardiero\\osint-monitor\\data\\eval\\snapshot-20261027-forensic.db",
+  "sha256": "3c0b2cd9c9a6e2347a055c62b1f88b7800f9d7b82228370983d48203ad0b4a39"
+ },
+ "dataset_freeze_sha256": "45d423017c3de772e4ab8b6b0e48341d335de8747c185028cc7909c66bd42c63",
+ "inputs": {
+  "giant-label-sample.json": "bb90bc52191af7c1893688b303d87905115a58df28efd80a891c8dc692ad08d9",
+  "large-occurrence-candidates.json": "7992faa6386b9f2422b98b333c7b2f7d3e9ddb361ef5c18d6e6a9e04e330038d"
+ },
+ "outputs": {
+  "review-cases.json": "7a452e4964a859e177071db1ebd4e8acc23331dc7e583382515ffbd11ad0a230",
+  "key.json": "fa01fe496f40e81adfedd368ee0bdae1004a327a2558a481da0eac3477d072cf"
+ },
+ "scripts": {
+  "build_labelling.py": "7a92d3b50204d43e51ade14259ed0df51a45aa6459dea6669b527fe4f3d7097d",
+  "review_server.py": "0c1961312ab5ed2cb3598b10285e75ef647fcd84abe555c48797266d36bdad6a",
+  "review.html": "65f384a5d937325812f4391cb846c64d840922f76ac2668f53c30c05de4bf1e1",
+  "labels_tool.py": "dc4b31031bd41db3c23e93cb6f51f85b2afc93c725faf51c0f9150097276b1c8"
+ },
+ "plan": {
+  "EXPERIMENT-PLAN.md": "d003100ee521ebd68b5e89b756c06fdce840079262a074ef3ae4108042d3d8a1",
+  "ACCEPTANCE-GATE.md": "0206d1267c115b93bc52e56f5990dfbf1614998ec40ea0e9a25c76543f76a6d8",
+  "ARCHITECTURE.md": "e3346629d2b2364f83e2822bf5b335a90497a63a10d8a25b59b13d1d899fbe6c",
+  "DATASET-MANIFEST.md": "b2af9c7d108e0441ce6c6aa825f6cba5213cbd960a05297b64ea6747d38aacaa"
+ }
+}
