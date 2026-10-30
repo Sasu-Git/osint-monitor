@@ -88,10 +88,19 @@ def foreign_key_violations(conn, limit: int = 20) -> list:
     return conn.execute(f"PRAGMA foreign_key_check").fetchmany(limit)
 
 
+def stamped_memberships(conn) -> int:
+    """Memberships that carry a membership time or run (0 before migration 5 added the columns)."""
+    if "event_items" not in tables(conn) or "added_at" not in columns(conn, "event_items"):
+        return 0
+    return conn.execute("SELECT COUNT(*) FROM event_items WHERE added_at IS NOT NULL OR added_run_id IS NOT NULL"
+                        ).fetchone()[0]
+
+
 def snapshot(conn) -> dict:
     """Everything the runbook records about a database state."""
     return {"schema_version": schema_version(conn), "counts": counts(conn),
             "duplicate_memberships": duplicate_memberships(conn),
+            "stamped_memberships": stamped_memberships(conn),
             "max_ids": {t: max_id(conn, t) for t in ("raw_items", "events", "event_items", "situations", "alerts")},
             "situation_slugs": sorted(r[0] for r in conn.execute("SELECT slug FROM situations"))
             if "situations" in tables(conn) else []}
@@ -194,10 +203,14 @@ def verify_structure(conn, before: dict | None = None) -> list[dict]:
               f"event_items may drop by the {before.get('duplicate_memberships', 0)} duplicates migration 5 removes")
         cutoff = (before.get("max_ids") or {}).get("event_items")
         if cutoff and "added_at" in columns(conn, "event_items"):
-            invented = conn.execute("SELECT COUNT(*) FROM event_items WHERE id <= ? AND "
-                                    "(added_at IS NOT NULL OR added_run_id IS NOT NULL)", (cutoff,)).fetchone()[0]
-            check("no invented membership timestamps on historical rows", invented == 0,
-                  f"{invented} pre-deploy memberships carry a time or run")
+            # the migration must not stamp a membership that was unstamped before it. Memberships the running daemon
+            # stamped since migration 5 are legitimately stamped (``stamped_memberships`` in the pre-migration
+            # snapshot); a snapshot without the key comes from a pre-migration-5 database, where none were stamped.
+            stamped = conn.execute("SELECT COUNT(*) FROM event_items WHERE id <= ? AND "
+                                   "(added_at IS NOT NULL OR added_run_id IS NOT NULL)", (cutoff,)).fetchone()[0]
+            allowed = before.get("stamped_memberships", 0)
+            check("no invented membership timestamps on historical rows", stamped <= allowed,
+                  f"{stamped} pre-deploy memberships carry a time or run; {allowed} already did before the migration")
     return out
 
 

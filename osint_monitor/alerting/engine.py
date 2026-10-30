@@ -275,6 +275,9 @@ class AlertEngine:
         sources = self.session.query(Source).all()
         current_state = {}
         now = datetime.utcnow()
+        from osint_monitor.core.database import PipelineRun
+        first_run = self.session.query(PipelineRun.started_at).order_by(PipelineRun.started_at).first()
+        ledger_start = first_run[0] if first_run else None
 
         for src in sources:
             latest_item = (
@@ -298,7 +301,7 @@ class AlertEngine:
                 gap = (latest_item.fetched_at - last_seen).total_seconds()
                 # Item is fresh (within last hour) but previous was >24h ago
                 if gap > 86400 and (now - latest_item.fetched_at).total_seconds() < 3600:
-                    why = _operational_silence(src.name, last_seen, latest_item.fetched_at)
+                    why = _operational_silence(src.name, last_seen, latest_item.fetched_at, ledger_start)
                     if why:
                         logger.info(f"Source {src.name} resumed after {gap / 3600:.0f}h, not alerted: {why}")
                         continue
@@ -328,20 +331,28 @@ class AlertEngine:
             logger.debug(f"Signal gap detection unavailable: {e}")
             return []
 
-        previous_gap_types = set(self.state.get_or_default("signal_gaps", {}).get("types", []))
+        stored = self.state.get_or_default("signal_gaps", {})
+        previous_gap_types = set(stored.get("types", []))
+        previous_suspended = set(stored.get("suspended", []))
+        known = previous_gap_types | previous_suspended
         alerts = []
 
         current_gap_types = set()
+        suspended = set()
         for gap in current_gaps:
-            if gap.get("operational"):
-                # our collection outage, not a finding: shown in `main.py status`, never alerted as a signal gap
-                logger.info(f"Signal gap not alerted (collection outage): {gap['modality']}")
-                continue
             gap_id = f"{gap['gap_type']}:{gap['modality']}"
+            if gap.get("operational"):
+                # our collection outage, not a finding: shown in `main.py status`, never alerted as a signal gap.
+                # A gap we already knew stays held as suspended: it has not closed, and it is not new when the
+                # collector comes back and it is analytic again.
+                logger.info(f"Signal gap not alerted (collection outage): {gap['modality']}")
+                if gap_id in known:
+                    suspended.add(gap_id)
+                continue
             current_gap_types.add(gap_id)
 
             # New gap opened
-            if gap_id not in previous_gap_types:
+            if gap_id not in known:
                 alerts.append(Alert(
                     alert_type=AlertType.SIGNAL_GAP_OPENED.value,
                     severity=0.5,
@@ -350,9 +361,10 @@ class AlertEngine:
                     trigger_key=f"gap_opened:{gap_id}",
                 ))
 
-        # Gaps that closed
-        for prev_gap in previous_gap_types:
-            if prev_gap not in current_gap_types:
+        # Gaps that closed: no longer reported at all, neither as a finding nor as our own outage (a gap that only
+        # turned operational is suspended, not closed: no "Signal restored" while we are not collecting it)
+        for prev_gap in sorted(known):
+            if prev_gap not in current_gap_types and prev_gap not in suspended:
                 modality = prev_gap.split(":", 1)[-1] if ":" in prev_gap else prev_gap
                 alerts.append(Alert(
                     alert_type=AlertType.SIGNAL_GAP_CLOSED.value,
@@ -362,7 +374,7 @@ class AlertEngine:
                     trigger_key=f"gap_closed:{prev_gap}",
                 ))
 
-        self.state.set("signal_gaps", {"types": list(current_gap_types)})
+        self.state.set("signal_gaps", {"types": sorted(current_gap_types), "suspended": sorted(suspended)})
         return alerts
 
     # ------------------------------------------------------------------
@@ -429,10 +441,14 @@ class AlertEngine:
         pass
 
 
-def _operational_silence(source_name: str, since: datetime, until: datetime) -> str | None:
+def _operational_silence(source_name: str, since: datetime, until: datetime,
+                         ledger_start: datetime | None = None) -> str | None:
     """Why a source's silence was (at least mostly) our own outage, or None when we were collecting it.
-    It is operational when recorded collection gaps cover at least half of it, or when the source's collector
-    failed during it. Its resumption is then not a finding."""
+    It is operational when it began before the first recorded pipeline run (``ledger_start``: before the run
+    ledger there is no evidence that we were collecting at all), when recorded collection gaps cover at least half
+    of it, or when the source's collector failed during it. Its resumption is then not a finding."""
+    if ledger_start is not None and since < ledger_start:
+        return f"the silence began before the first recorded run ({ledger_start:%Y-%m-%d %H:%M}): no collection evidence"
     try:
         from osint_monitor.collectors import status as collector_status
         from osint_monitor.core.gaps import overlap_seconds, read_gap_log

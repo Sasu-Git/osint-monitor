@@ -7,7 +7,9 @@
 #   2. the entity resolver's normalisation (lowercase, articles, US/U.S./America -> united states, ...)
 #   3. non_actors   -> dropped (topics the NER mislabels as organisations or places)
 #   4. demonyms     -> country ("Aussie" -> Australia); plurals ("Russians") are handled
-#   5. aliases      -> canonical actor ("Kremlin" -> Russia)
+#   5. aliases      -> canonical actor ("Kremlin" -> Russia); then the place names of config/geography.yaml
+#                      in other languages ("Estados Unidos", "Stati Uniti", "Moscú") for mentions that are not
+#                      already actor names. Demonym and alias lookups are also accent-insensitive.
 #   6. represents   -> the state a person or body acts for ("Xi" -> China); situations and
 #                      principal support are counted at this level
 # All matching is on the normalised (lowercase) form; entries are case-insensitive.
@@ -117,6 +119,104 @@ demonyms:
   Venezuelan: Venezuela
   Vietnamese: Vietnam
   Yemeni: Yemen
+  # Spanish / Italian (singular forms; Spanish plurals in -s are handled, Italian plurals are listed)
+  estadounidense: United States
+  statunitense: United States
+  statunitensi: United States
+  americano: United States
+  americana: United States
+  americani: United States
+  ruso: Russia
+  rusa: Russia
+  russo: Russia
+  russa: Russia
+  russi: Russia
+  russe: Russia
+  chino: China
+  cinese: China
+  cinesi: China
+  israeli: Israel
+  israelies: Israel
+  israeliano: Israel
+  israeliana: Israel
+  israeliani: Israel
+  irani: Iran
+  iranies: Iran
+  iraniano: Iran
+  iraniana: Iran
+  iraniani: Iran
+  ucraniano: Ukraine
+  ucraniana: Ukraine
+  ucraino: Ukraine
+  ucraini: Ukraine
+  britanico: United Kingdom
+  britanica: United Kingdom
+  britannico: United Kingdom
+  britannica: United Kingdom
+  britannici: United Kingdom
+  frances: France
+  francesa: France
+  franceses: France
+  francese: France
+  francesi: France
+  aleman: Germany
+  alemana: Germany
+  alemanes: Germany
+  tedesco: Germany
+  tedesca: Germany
+  tedeschi: Germany
+  tedesche: Germany
+  palestino: Palestine
+  palestinese: Palestine
+  palestinesi: Palestine
+  turco: Turkey
+  turca: Turkey
+  turchi: Turkey
+  sirio: Syria
+  siriano: Syria
+  siriani: Syria
+  libanes: Lebanon
+  libanese: Lebanon
+  libanesi: Lebanon
+  egipcio: Egypt
+  egiziano: Egypt
+  egiziani: Egypt
+  japones: Japan
+  giapponese: Japan
+  giapponesi: Japan
+  brasileno: Brazil
+  brasilena: Brazil
+  brasiliano: Brazil
+  brasiliani: Brazil
+  mexicano: Mexico
+  messicano: Mexico
+  espanol: Spain
+  espanola: Spain
+  espanoles: Spain
+  spagnolo: Spain
+  spagnoli: Spain
+  italiano: Italy
+  italiani: Italy
+  saudi: Saudi Arabia
+  saudita: Saudi Arabia
+  sauditi: Saudi Arabia
+  venezolano: Venezuela
+  venezuelano: Venezuela
+  cubano: Cuba
+  afgano: Afghanistan
+  afghano: Afghanistan
+  iraqui: Iraq
+  iracheno: Iraq
+  pakistani: Pakistan
+  pakistano: Pakistan
+  polaco: Poland
+  polacco: Poland
+  griego: Greece
+  greco: Greece
+  norcoreano: North Korea
+  nordcoreano: North Korea
+  surcoreano: South Korea
+  sudcoreano: South Korea
 
 # Variant -> canonical actor name.
 aliases:
@@ -127,6 +227,18 @@ aliases:
   Great Britain: United Kingdom
   Türkiye: Turkey
   Turkiye: Turkey
+  # Spanish / Italian names of bodies (country names come from config/geography.yaml)
+  OTAN: NATO
+  ONU: United Nations
+  Naciones Unidas: United Nations
+  Nazioni Unite: United Nations
+  Unión Europea: European Union
+  Unione Europea: European Union
+  Casa Blanca: White House
+  Casa Bianca: White House
+  Pentágono: Pentagon
+  Pentagono: Pentagon
+  Cremlino: Kremlin
 
 # Person / body -> the state it acts for. Situations are country-level, so "Xi met Trump"
 # involves China and the United States. Keep to principals who reliably act for a state;
@@ -183,6 +295,11 @@ represents:
   IRGC: Iran
   Benjamin Netanyahu: Israel
   Netanyahu: Israel
+
+# Bare names that stand for several people (a family name shared by politicians). Such a mention is not an
+# actor on its own: "Bolsonaro" may be Jair (former president) or Flávio / Eduardo (his sons, politicians), and
+# merging them would fuse different principals. Full names ("Flávio Bolsonaro") remain actors.
+ambiguous_names: [Bolsonaro]
 
 # Role prefixes dropped from a name before matching ("FM Araghchi" -> Araghchi). Only
 # applied when the full name is not itself a configured actor.

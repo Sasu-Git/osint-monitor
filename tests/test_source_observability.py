@@ -365,3 +365,40 @@ def test_pipeline_counts_analytic_gaps_and_outages_separately(session, monkeypat
     _strike_news(session)
     stats = pipeline.run_post_processing(session, quiet=True, offline=True)
     assert stats["collection_outages"] == 4 and stats["signal_gaps"] == 0
+
+
+# --- post-soak item 4: no false operational alerts --------------------------------------------------------------------
+
+def _gap(operational):
+    return {"gap_type": "missing_modality", "modality": "imagery", "operational": operational,
+            "description": "imagery absent", "significance": "low"}
+
+
+def test_a_known_gap_that_turns_operational_is_suspended_not_restored(session, monkeypatch):
+    from osint_monitor.alerting import engine as E
+    from osint_monitor.analysis import fusion
+    eng = E.AlertEngine(session)
+    sequence = [[_gap(False)], [_gap(True)], [_gap(False)], []]   # analytic, our outage, analytic again, really gone
+    titles = []
+    for gaps in sequence:
+        monkeypatch.setattr(fusion, "detect_signal_gaps", lambda s, hours_back=24, g=gaps: g)
+        titles.append([a.title for a in eng._tier3_signal_gaps(24)])
+    assert titles == [["Signal gap: imagery went dark"], [], [], ["Signal restored: imagery reporting again"]]
+
+
+def test_a_gap_that_is_only_ever_operational_is_neither_opened_nor_restored(session, monkeypatch):
+    from osint_monitor.alerting import engine as E
+    from osint_monitor.analysis import fusion
+    eng = E.AlertEngine(session)
+    for gaps in ([_gap(True)], []):
+        monkeypatch.setattr(fusion, "detect_signal_gaps", lambda s, hours_back=24, g=gaps: g)
+        assert eng._tier3_signal_gaps(24) == []
+
+
+def test_a_silence_that_began_before_the_run_ledger_is_operational():
+    from osint_monitor.alerting import engine as E
+    since, until = T0, T0 + timedelta(hours=30)
+    assert E._operational_silence("Wire", since, until) is None                  # no ledger given: as before
+    assert E._operational_silence("Wire", since, until, ledger_start=T0 + timedelta(hours=2)).startswith(
+        "the silence began before the first recorded run")
+    assert E._operational_silence("Wire", since, until, ledger_start=T0 - timedelta(hours=1)) is None

@@ -61,3 +61,32 @@ def test_situations_yaml_entries_still_extend_the_actor_config():
     extended = ActorNormalizer(ActorsConfig(), extra_aliases={"Tatmadaw": "Myanmar"},
                                extra_represents={"Min Aung Hlaing": "Myanmar"})
     assert extended.key("Tatmadaw") == extended.key("Min Aung Hlaing") == "myanmar"
+
+
+# --- Spanish / Italian names (post-soak fix 1: "Estados Unidos" founded a United States - United States Situation) ---
+
+@pytest.mark.parametrize("name, state", [
+    ("Estados Unidos", "united states"), ("EE.UU.", "united states"), ("Stati Uniti", "united states"),
+    ("estadounidense", "united states"), ("statunitensi", "united states"), ("Casa Blanca", "united states"),
+    ("Rusia", "russia"), ("rusos", "russia"), ("russi", "russia"), ("Moscú", "russia"), ("Cremlino", "russia"),
+    ("Irán", "iran"), ("iraní", "iran"), ("israelí", "israel"), ("israeliani", "israel"),
+    ("Cina", "china"), ("cinesi", "china"), ("Pechino", "china"), ("Turquía", "turkey"), ("Regno Unito", "united kingdom"),
+    ("Ucrania", "ukraine"), ("ucraini", "ukraine"), ("OTAN", "nato"), ("Unión Europea", "european union"),
+])
+def test_spanish_and_italian_names_reach_the_english_canonical_actor(actors, name, state):
+    assert actors.key(name) == state
+
+
+def test_one_country_in_two_languages_is_one_actor(actors):
+    assert actors.keys(["Estados Unidos", "United States", "EE.UU.", "US"]) == frozenset({"united states"})
+
+
+def test_place_names_do_not_override_an_existing_actor_name(actors):
+    assert actors.key("Turkey") == "turkey"           # the gazetteer says "turkiye"; the actor name wins
+    assert actors.key("Kyiv") == "ukraine" and actors.key("Washington") == "united states"
+
+
+def test_an_ambiguous_family_name_is_not_an_actor_but_full_names_are(actors):
+    assert actors.key("Bolsonaro") is None
+    assert actors.keys(["Bolsonaro", "Flávio Bolsonaro", "Jair Bolsonaro"]) == frozenset(
+        {"flávio bolsonaro", "jair bolsonaro"})

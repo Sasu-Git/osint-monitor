@@ -21,6 +21,11 @@ policy:
   ambiguity_margin: 0.1
   min_actors_to_create: 2
   create_min_developments: 2
+  # Founder-distinctness guard (post-soak item 1, option a): OFF. Founders with no language in common, reported
+  # within N hours, naming one specific place would count once. It changes the Situation creation contract, so it is
+  # evaluated on its own branch (feat/situation-founder-guard) before it can be enabled. null = exact actor-set
+  # recurrence as accepted by the Situation holdout.
+  founder_same_occurrence_hours: null
   create_window_days: 7
   dormant_after_days: 14
   centroid_developments: 20

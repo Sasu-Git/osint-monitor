@@ -158,3 +158,67 @@ def test_postdeploy_structure_passes_on_a_rehearsed_copy_and_reads_only(tmp_path
     assert postdeploy_check.main(["--db", str(copy), "--pre", str(tmp_path / "o" / "predeploy-pre.json"),
                                   "--runtime", "--since", "2026-10-05T00:00"]) == 1
     assert "pipeline runs recorded since start: 0 runs" in capsys.readouterr().out
+
+
+def _rehearsed(tmp_path):
+    db = _legacy_db(tmp_path / "live.db")
+    r = D.rehearse_migration(db, tmp_path / "rehearsal")
+    return Path(r["copy"]), {"live_state": r["before"], "target": {"sha": None}}
+
+
+def test_no_op_runs_are_exempt_from_the_stage_check_but_runs_with_new_items_are_not(tmp_path):
+    copy, pre = _rehearsed(tmp_path)
+    engine = create_engine(f"sqlite:///{copy.as_posix()}")
+    with engine.begin() as conn:
+        for rid, new, stages in (("a" * 32, 0, None), ("b" * 32, 0, "{}"), ("c" * 32, 4, '{"nlp": "ok"}')):
+            _insert(conn, "pipeline_runs", id=rid, kind="tier", tier="warm", started_at="2026-10-05 02:00:00",
+                    status="ok", stages=stages, items_new=new)
+    engine.dispose()
+    since = __import__("datetime").datetime(2026, 10, 5)
+    [stage] = [c for c in postdeploy_check.runtime_checks(D.ro(copy), pre, since, None, 3, 5.0) if "stage" in c["check"]]
+    assert stage["ok"] and "2 no-op runs exempt" in stage["detail"]
+    engine = create_engine(f"sqlite:///{copy.as_posix()}")
+    with engine.begin() as conn:
+        _insert(conn, "pipeline_runs", id="d" * 32, kind="tier", tier="warm", started_at="2026-10-05 03:00:00",
+                status="ok", stages=None, items_new=2)
+    engine.dispose()
+    [stage] = [c for c in postdeploy_check.runtime_checks(D.ro(copy), pre, since, None, 3, 5.0) if "stage" in c["check"]]
+    assert not stage["ok"] and "1 of 2 without stages" in stage["detail"]
+
+
+def test_development_growth_separates_backlog_from_fresh_developments(tmp_path):
+    copy, pre = _rehearsed(tmp_path)
+    engine = create_engine(f"sqlite:///{copy.as_posix()}")
+    with engine.begin() as conn:
+        _insert(conn, "sources", id=5, name="New outlet", type="rss", url="n")      # first item after the deploy
+        items = ((20, 1, "2026-10-04 20:00:00"),     # published before the start: backlog
+                 (21, 5, "2026-10-05 03:00:00"),     # only a first-time source: backlog
+                 (22, 1, "2026-10-05 04:00:00"), (23, 2, "2026-10-05 04:10:00"))   # fresh, established sources
+        for item, src, pub in items:
+            _insert(conn, "raw_items", id=item, source_id=src, title="t", content_hash=f"g{item}", published_at=pub)
+        for ev, members in ((20, (20,)), (21, (21,)), (22, (22, 23))):
+            _insert(conn, "events", id=ev, summary="e", first_reported_at="2026-10-05 05:00:00")
+            for item in members:
+                _insert(conn, "event_items", id=200 + item, event_id=ev, item_id=item)
+    engine.dispose()
+    since = __import__("datetime").datetime(2026, 10, 5)
+    assert postdeploy_check.development_growth(D.ro(copy), pre, since) == (1, 2)
+    [growth] = [c for c in postdeploy_check.runtime_checks(D.ro(copy), pre, since, None, 3, 5.0)
+                if "explosion" in c["check"]]
+    assert "backlog not counted: 2" in growth["detail"]
+
+
+def test_memberships_stamped_by_the_running_daemon_are_not_invented_but_new_stamps_are(tmp_path):
+    copy, _ = _rehearsed(tmp_path)
+    conn = sqlite3.connect(copy)
+    conn.execute("UPDATE event_items SET added_at = '2026-10-06 00:00:00' WHERE id = 1")    # stamped by the daemon
+    conn.commit()
+    before = D.snapshot(D.ro(copy))                     # a same-schema deploy: one membership already stamped
+    assert before["stamped_memberships"] == 1
+    [inv] = [c for c in D.verify_structure(D.ro(copy), before) if "invented" in c["check"]]
+    assert inv["ok"]
+    conn.execute("UPDATE event_items SET added_at = '2026-10-06 00:00:00' WHERE id = 2")    # a migration stamping history
+    conn.commit()
+    conn.close()
+    [inv] = [c for c in D.verify_structure(D.ro(copy), before) if "invented" in c["check"]]
+    assert not inv["ok"] and "2 pre-deploy memberships" in inv["detail"]

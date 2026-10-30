@@ -110,6 +110,15 @@ Get-Content "$DAEMON\data\logs\daemon.err.log" -Tail 200 > "$OUT\old-daemon-err-
 
 ## X. Stop
 
+**X0. Hold the supervisor.** The live daemon is supervised (production architecture since 2026-10-13: the scheduled
+task "OSINT daemon supervisor", `scripts/ops/supervisor/`). Without a hold it restarts the stopped daemon within 5
+minutes, in the middle of the deploy. Create the hold file first and keep it until S2 has passed (or until R-4):
+
+```powershell
+$SUP = "$REPO\data\deploy\supervisor"
+New-Item -ItemType File -Force "$SUP\HOLD" | Out-Null
+```
+
 **X1. Stop the daemon.** It was started detached, so there is no console to send Ctrl+C to, and there is no
 clean-shutdown command.
 
@@ -197,6 +206,15 @@ $r.ProcessId                                                         # the cmd w
 ```
 
 **S2. Verify the start** within 5 minutes.
+
+**S3. Re-pin and release the supervisor** once S2 has passed: the supervisor only ever starts the pinned commit.
+
+```powershell
+$c = Get-Content "$SUP\config.json" -Raw | ConvertFrom-Json
+$c.pinned_commit = (git -C $DAEMON rev-parse HEAD)                   # the newly deployed commit
+[System.IO.File]::WriteAllText("$SUP\config.json", ($c | ConvertTo-Json), (New-Object System.Text.UTF8Encoding $false))
+Remove-Item "$SUP\HOLD"
+```
 
 - **Code:** `git -C $DAEMON rev-parse HEAD` equals `$TARGET`. Every new `pipeline_runs.code_sha` equals it too
   (C1 checks this).
@@ -292,6 +310,12 @@ $cmd = "cmd /c cd /d $DAEMON && set `"OSINT_DB_URL=$URL`" && " +
        "`"$PY`" main.py daemon >> data\logs\daemon.out.log 2>> data\logs\daemon.err.log"
 Invoke-CimMethod Win32_Process -MethodName Create -Arguments @{ CommandLine = $cmd }
 Remove-Item "$DAEMON\data\pause" -ErrorAction SilentlyContinue
+
+# R-4b  re-pin the supervisor to the restored commit and release it (as in S3, with the prior commit)
+$c = Get-Content "$SUP\config.json" -Raw | ConvertFrom-Json
+$c.pinned_commit = (git -C $DAEMON rev-parse HEAD)
+[System.IO.File]::WriteAllText("$SUP\config.json", ($c | ConvertTo-Json), (New-Object System.Text.UTF8Encoding $false))
+Remove-Item "$SUP\HOLD"
 ```
 
 **R-5. Verify the old state.**
