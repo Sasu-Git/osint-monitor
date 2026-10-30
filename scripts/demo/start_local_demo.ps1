@@ -14,8 +14,11 @@ function Fail([string]$Msg) { Write-Host "REFUSED: $Msg" -ForegroundColor Red; e
 # 1. Right worktree and commit
 $branch = (& git -C $DemoRoot rev-parse --abbrev-ref HEAD).Trim()
 $head   = (& git -C $DemoRoot rev-parse HEAD).Trim()
-if (-not $AllowAnyCommit -and ($branch -ne $DemoBranch -or -not $head.StartsWith($DemoCommit))) {
-    Fail "worktree $DemoRoot is on $branch @ $($head.Substring(0,7)); expected $DemoBranch @ $DemoCommit (use -AllowAnyCommit to override)"
+# the application code (not these scripts) must be exactly the approved commit's, with no local edits
+& git -C $DemoRoot diff --quiet $DemoCommit -- osint_monitor web config main.py
+$appChanged = $LASTEXITCODE -ne 0
+if (-not $AllowAnyCommit -and ($branch -ne $DemoBranch -or $appChanged)) {
+    Fail "worktree $DemoRoot is on $branch @ $($head.Substring(0,7)) (app code differs from $DemoCommit`: $appChanged); expected $DemoBranch with the app code of $DemoCommit (use -AllowAnyCommit to override)"
 }
 if ($DemoRoot -like '*osint-monitor-daemon*') { Fail "this is the live daemon worktree" }
 

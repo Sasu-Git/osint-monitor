@@ -2,7 +2,7 @@
 $DemoRoot      = (Resolve-Path (Join-Path $PSScriptRoot '..\..')).Path          # the frontend worktree
 $DemoPython    = 'C:\Users\EugenioVardiero\osint-monitor\.venv\Scripts\python.exe'
 $DemoBranch    = 'feat/sa-workspace'
-$DemoCommit    = '5e36c1c'                                                       # expected HEAD (prefix)
+$DemoCommit    = '5e36c1c'                                                       # approved app code (feat/sa-workspace)
 $DemoHost      = '127.0.0.1'
 $DemoDir       = Join-Path $DemoRoot 'data\demo'
 $DemoScratchDb = Join-Path $DemoDir 'intel-scratch.db'

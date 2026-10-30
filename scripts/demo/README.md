@@ -25,7 +25,8 @@ powershell -ExecutionPolicy Bypass -File .\scripts\demo\stop_local_demo.ps1
 ```
 
 **Start refuses when:**
-- the worktree is not on `feat/sa-workspace` @ 5e36c1c (override: `-AllowAnyCommit`);
+- the worktree is not on `feat/sa-workspace`, or its app code (`osint_monitor`, `web`, `config`, `main.py`)
+  differs from the approved 5e36c1c, including uncommitted edits (override: `-AllowAnyCommit`);
 - the worktree is the daemon worktree;
 - a demo server is already running, or the port is in use;
 - the scratch DB or user-state path resolves to the live DB, any `data\osint.db`, a default `user_state.db`, or
