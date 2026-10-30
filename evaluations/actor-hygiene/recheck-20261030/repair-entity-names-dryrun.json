@@ -1,0 +1,6102 @@
+{
+ "db": "C:\\Users\\EUGENI~1\\AppData\\Local\\Temp\\claude\\c--Users-EugenioVardiero-osint-monitor\\abdb3e25-7d97-457f-baca-564f3e3e9577\\scratchpad\\candB\\live-snap-20261030.db",
+ "at_utc": "2026-10-30T12:29:46",
+ "applied": false,
+ "rename": [
+  {
+   "id": 68,
+   "from": "AI\nCurrent",
+   "to": "AI Current",
+   "type": "ORG",
+   "aliases": [
+    "AI\nCurrent"
+   ]
+  },
+  {
+   "id": 160,
+   "from": "Russia&#039;s Perm",
+   "to": "Russia's Perm",
+   "type": "GPE",
+   "aliases": [
+    "Russia&#039;s Perm"
+   ]
+  },
+  {
+   "id": 165,
+   "from": "Al Jazeera’s",
+   "to": "Al Jazeera",
+   "type": "ORG",
+   "aliases": [
+    "Al Jazeera",
+    "Al Jazeera’s"
+   ]
+  },
+  {
+   "id": 174,
+   "from": "minister&#039;s",
+   "to": "minister",
+   "type": "PERSON",
+   "aliases": [
+    "minister&#039;s"
+   ]
+  },
+  {
+   "id": 175,
+   "from": "the UN Israel’s Prime",
+   "to": "UN Israel's Prime",
+   "type": "ORG",
+   "aliases": [
+    "the UN Israel’s Prime"
+   ]
+  },
+  {
+   "id": 176,
+   "from": "the Future Soldier’s",
+   "to": "Future Soldier",
+   "type": "ORG",
+   "aliases": [
+    "the Future Soldier’s"
+   ]
+  },
+  {
+   "id": 178,
+   "from": "North Korea’s",
+   "to": "North Korea",
+   "type": "GPE",
+   "aliases": [
+    "North Korea",
+    "North Korea’s"
+   ]
+  },
+  {
+   "id": 185,
+   "from": "the &#8220;mania&#8221",
+   "to": "\"mania",
+   "type": "ORG",
+   "aliases": [
+    "the &#8220;mania&#8221"
+   ]
+  },
+  {
+   "id": 188,
+   "from": "The New Signature Wounds: How Drone Warfare Is Reshaping the Injuries Veterans Bring Home Traumatic",
+   "to": "New Signature Wounds: How Drone Warfare Is Reshaping the Injuries Veterans Bring Home Traumatic",
+   "type": "ORG",
+   "aliases": [
+    "The New Signature Wounds: How Drone Warfare Is Reshaping the Injuries Veterans Bring Home Traumatic"
+   ]
+  },
+  {
+   "id": 190,
+   "from": "the Department of Veterans Affairs&#8217",
+   "to": "Department of Veterans Affairs",
+   "type": "ORG",
+   "aliases": [
+    "the Department of Veterans Affairs&#8217"
+   ]
+  },
+  {
+   "id": 191,
+   "from": "Chisholm Chisholm &#38",
+   "to": "Chisholm Chisholm &",
+   "type": "ORG",
+   "aliases": [
+    "Chisholm Chisholm &#38"
+   ]
+  },
+  {
+   "id": 196,
+   "from": "the United States?Outside",
+   "to": "United States? Outside",
+   "type": "GPE",
+   "aliases": [
+    "the United States?Outside"
+   ]
+  },
+  {
+   "id": 197,
+   "from": "the Rules: Optimizing Weapons Reviews",
+   "to": "Rules: Optimizing Weapons Reviews",
+   "type": "ORG",
+   "aliases": [
+    "the Rules: Optimizing Weapons Reviews"
+   ]
+  },
+  {
+   "id": 205,
+   "from": "the Strait of Hormuz",
+   "to": "Strait of Hormuz",
+   "type": "LOC",
+   "aliases": [
+    "Strait of Hormuz",
+    "the Strait of Hormuz"
+   ]
+  },
+  {
+   "id": 206,
+   "from": "the Russo-Ukrainian War",
+   "to": "Russo-Ukrainian War",
+   "type": "EVENT",
+   "aliases": [
+    "Russo-Ukrainian War",
+    "the Russo-Ukrainian War"
+   ]
+  },
+  {
+   "id": 207,
+   "from": "the End of Operation Inherent Resolve Means for Iraq",
+   "to": "End of Operation Inherent Resolve Means for Iraq",
+   "type": "ORG",
+   "aliases": [
+    "the End of Operation Inherent Resolve Means for Iraq"
+   ]
+  },
+  {
+   "id": 209,
+   "from": "Joint Task Force &#8211",
+   "to": "Joint Task Force",
+   "type": "ORG",
+   "aliases": [
+    "Joint Task Force &#8211"
+   ]
+  },
+  {
+   "id": 210,
+   "from": "the Islamic State of Iraq",
+   "to": "Islamic State of Iraq",
+   "type": "ORG",
+   "aliases": [
+    "the Islamic State of Iraq"
+   ]
+  },
+  {
+   "id": 215,
+   "from": "the participants &#8220;cyber",
+   "to": "participants \"cyber",
+   "type": "ORG",
+   "aliases": [
+    "the participants &#8220;cyber"
+   ]
+  },
+  {
+   "id": 219,
+   "from": "the battlefield &#8212",
+   "to": "battlefield",
+   "type": "ORG",
+   "aliases": [
+    "the battlefield &#8212"
+   ]
+  },
+  {
+   "id": 222,
+   "from": "the Development Finance Corporation",
+   "to": "Development Finance Corporation",
+   "type": "ORG",
+   "aliases": [
+    "Development Finance Corporation",
+    "the Development Finance Corporation"
+   ]
+  },
+  {
+   "id": 230,
+   "from": "the South China Sea",
+   "to": "South China Sea",
+   "type": "LOC",
+   "aliases": [
+    "South China Sea",
+    "the South China Sea"
+   ]
+  },
+  {
+   "id": 231,
+   "from": "the Taiwan Strait",
+   "to": "Taiwan Strait",
+   "type": "LOC",
+   "aliases": [
+    "Taiwan Strait",
+    "the Taiwan Strait"
+   ]
+  },
+  {
+   "id": 235,
+   "from": "the Post-Maduro Environment",
+   "to": "Post-Maduro Environment",
+   "type": "ORG",
+   "aliases": [
+    "the Post-Maduro Environment"
+   ]
+  },
+  {
+   "id": 242,
+   "from": "the United States-Mexico-Canada Agreement",
+   "to": "United States-Mexico-Canada Agreement",
+   "type": "GPE",
+   "aliases": [
+    "the United States-Mexico-Canada Agreement"
+   ]
+  },
+  {
+   "id": 250,
+   "from": "the Eastern Flank",
+   "to": "Eastern Flank",
+   "type": "ORG",
+   "aliases": [
+    "Eastern Flank",
+    "The Eastern Flank Watch",
+    "the Eastern Flank"
+   ]
+  },
+  {
+   "id": 254,
+   "from": "Multi-Domain Command &#8211",
+   "to": "Multi-Domain Command",
+   "type": "ORG",
+   "aliases": [
+    "Multi-Domain Command &#8211"
+   ]
+  },
+  {
+   "id": 262,
+   "from": "the Nevada Testing and Training Range",
+   "to": "Nevada Testing and Training Range",
+   "type": "ORG",
+   "aliases": [
+    "the Nevada Testing and Training Range"
+   ]
+  },
+  {
+   "id": 263,
+   "from": "The Real U.S.-Saudi Nuclear Deal",
+   "to": "Real U.S.-Saudi Nuclear Deal",
+   "type": "ORG",
+   "aliases": [
+    "The Real U.S.-Saudi Nuclear Deal"
+   ]
+  },
+  {
+   "id": 264,
+   "from": "the Atomic Energy Act",
+   "to": "Atomic Energy Act",
+   "type": "EVENT",
+   "aliases": [
+    "the Atomic Energy Act"
+   ]
+  },
+  {
+   "id": 272,
+   "from": "&#8220;Article",
+   "to": "Article",
+   "type": "ORG",
+   "aliases": [
+    "&#8220;Article"
+   ]
+  },
+  {
+   "id": 273,
+   "from": "the Rebuilding of",
+   "to": "Rebuilding of",
+   "type": "ORG",
+   "aliases": [
+    "the Rebuilding of"
+   ]
+  },
+  {
+   "id": 275,
+   "from": "the Shangri-La Dialogue",
+   "to": "Shangri-La Dialogue",
+   "type": "ORG",
+   "aliases": [
+    "the Shangri-La Dialogue"
+   ]
+  },
+  {
+   "id": 282,
+   "from": "The Department of Information and Communications Technology",
+   "to": "Department of Information and Communications Technology",
+   "type": "ORG",
+   "aliases": [
+    "The Department of Information and Communications Technology"
+   ]
+  },
+  {
+   "id": 284,
+   "from": "‌across",
+   "to": "across",
+   "type": "ORG",
+   "aliases": [
+    "‌across"
+   ]
+  },
+  {
+   "id": 286,
+   "from": "the Temple of Zeus",
+   "to": "Temple of Zeus",
+   "type": "FAC",
+   "aliases": [
+    "the Temple of Zeus"
+   ]
+  },
+  {
+   "id": 288,
+   "from": "‌fire",
+   "to": "fire",
+   "type": "LOC",
+   "aliases": [
+    "‌fire"
+   ]
+  },
+  {
+   "id": 290,
+   "from": "the National Archives",
+   "to": "National Archives",
+   "type": "ORG",
+   "aliases": [
+    "National Archives",
+    "the National Archives",
+    "‌the National Archives"
+   ]
+  },
+  {
+   "id": 294,
+   "from": "the Declaration of Independence",
+   "to": "Declaration of Independence",
+   "type": "EVENT",
+   "aliases": [
+    "the Declaration of Independence"
+   ]
+  },
+  {
+   "id": 295,
+   "from": "the Office of the First Lady",
+   "to": "Office of the First Lady",
+   "type": "ORG",
+   "aliases": [
+    "the Office of the First Lady"
+   ]
+  },
+  {
+   "id": 297,
+   "from": "the Oval Office",
+   "to": "Oval Office",
+   "type": "FAC",
+   "aliases": [
+    "Oval Office",
+    "the Oval Office"
+   ]
+  },
+  {
+   "id": 298,
+   "from": "the South Lawn",
+   "to": "South Lawn",
+   "type": "LOC",
+   "aliases": [
+    "South Lawn",
+    "the South Lawn"
+   ]
+  },
+  {
+   "id": 312,
+   "from": "the Central Guard Bureau",
+   "to": "Central Guard Bureau",
+   "type": "ORG",
+   "aliases": [
+    "the Central Guard Bureau"
+   ]
+  },
+  {
+   "id": 313,
+   "from": "the Communist Party’s",
+   "to": "Communist Party",
+   "type": "ORG",
+   "aliases": [
+    "Communist Party’s",
+    "the Communist Party’s"
+   ]
+  },
+  {
+   "id": 318,
+   "from": "the United Nations General Assembly",
+   "to": "United Nations General Assembly",
+   "type": "ORG",
+   "aliases": [
+    "United Nations General Assembly",
+    "the United Nations General Assembly"
+   ]
+  },
+  {
+   "id": 321,
+   "from": "the High Island Geo Trail",
+   "to": "High Island Geo Trail",
+   "type": "LOC",
+   "aliases": [
+    "High Island Geo Trail",
+    "the High Island Geo Trail",
+    "the High Island Geo Trail’s"
+   ]
+  },
+  {
+   "id": 325,
+   "from": "the FutureChina Global Forum",
+   "to": "FutureChina Global Forum",
+   "type": "FAC",
+   "aliases": [
+    "the FutureChina Global Forum"
+   ]
+  },
+  {
+   "id": 335,
+   "from": "the Hospital Authority",
+   "to": "Hospital Authority",
+   "type": "ORG",
+   "aliases": [
+    "Hospital Authority",
+    "the Hospital Authority"
+   ]
+  },
+  {
+   "id": 338,
+   "from": "the East Room",
+   "to": "East Room",
+   "type": "LOC",
+   "aliases": [
+    "the East Room"
+   ]
+  },
+  {
+   "id": 345,
+   "from": "The Bio-Pharma Industry",
+   "to": "Bio-Pharma Industry",
+   "type": "ORG",
+   "aliases": [
+    "The Bio-Pharma Industry"
+   ]
+  },
+  {
+   "id": 348,
+   "from": "J. Stephen Morrison\n              \n      \n\n  \n    Downloads",
+   "to": "J. Stephen Morrison Downloads",
+   "type": "PERSON",
+   "aliases": [
+    "Christopher K. Johnson\n              \n      \n\n  \n    Downloads",
+    "J. Stephen Morrison\n              \n      \n\n  \n    Downloads"
+   ]
+  },
+  {
+   "id": 349,
+   "from": "Projects\n          \n              \n\n  \n      \n      Global Health Policy Center\n\n    \n    \n\n  \n  \n    \n  \n    Parent",
+   "to": "Projects Global Health Policy Center Parent",
+   "type": "ORG",
+   "aliases": [
+    "Projects\n          \n              \n\n  \n      \n      Global Health Policy Center\n\n    \n    \n\n  \n  \n    \n  \n    Parent",
+    "Projects\n          \n              \n\n  \n      \n      International Security Program\n\n    \n    \n\n  \n  \n    \n  \n    Parent"
+   ]
+  },
+  {
+   "id": 350,
+   "from": "Archive\n              \n      \n\n  \n\n\n\n          \n\n  \n      \n      Global Development\n\n    \n    \n\n  \n  \n    \n  \n    Featured Image",
+   "to": "Archive Global Development Featured Image",
+   "type": "ORG",
+   "aliases": [
+    "Archive\n              \n      \n\n  \n\n\n\n          \n\n  \n      \n      Global Development\n\n    \n    \n\n  \n  \n    \n  \n    Featured Image"
+   ]
+  },
+  {
+   "id": 353,
+   "from": "The FY2017 Defense Budget and Strategic Outlook",
+   "to": "FY2017 Defense Budget and Strategic Outlook",
+   "type": "ORG",
+   "aliases": [
+    "The FY2017 Defense Budget and Strategic Outlook"
+   ]
+  },
+  {
+   "id": 355,
+   "from": "Drupal Admin\nMon",
+   "to": "Drupal Admin Mon",
+   "type": "ORG",
+   "aliases": [
+    "Drupal Admin\nFri",
+    "Drupal Admin\nMon"
+   ]
+  },
+  {
+   "id": 356,
+   "from": "John J. Hamre\n          Tina W. Jonas",
+   "to": "John J. Hamre Tina W. Jonas",
+   "type": "PERSON",
+   "aliases": [
+    "John J. Hamre\n          Tina W. Jonas"
+   ]
+  },
+  {
+   "id": 357,
+   "from": "Todd Harrison\n          ",
+   "to": "Todd Harrison",
+   "type": "PERSON",
+   "aliases": [
+    "Todd Harrison\n          "
+   ]
+  },
+  {
+   "id": 358,
+   "from": "Andrew Philip Hunter\n              \n      \n\n  \n    Programs &",
+   "to": "Andrew Philip Hunter Programs &",
+   "type": "PERSON",
+   "aliases": [
+    "Andrew Philip Hunter\n              \n      \n\n  \n    Programs &"
+   ]
+  },
+  {
+   "id": 360,
+   "from": "ISP Programs\n          Analysis",
+   "to": "ISP Programs Analysis",
+   "type": "ORG",
+   "aliases": [
+    "ISP Programs\n          Analysis"
+   ]
+  },
+  {
+   "id": 361,
+   "from": "The Defense Budget Analysis Program",
+   "to": "Defense Budget Analysis Program",
+   "type": "ORG",
+   "aliases": [
+    "The Defense Budget Analysis Program"
+   ]
+  },
+  {
+   "id": 363,
+   "from": "Navigation\n          \n              Staff",
+   "to": "Navigation Staff",
+   "type": "ORG",
+   "aliases": [
+    "Navigation\n          \n              Staff"
+   ]
+  },
+  {
+   "id": 364,
+   "from": "The CSIS Defense and Security",
+   "to": "CSIS Defense and Security",
+   "type": "ORG",
+   "aliases": [
+    "The CSIS Defense and Security"
+   ]
+  },
+  {
+   "id": 365,
+   "from": "Innovation\n          Defense Strategy",
+   "to": "Innovation Defense Strategy",
+   "type": "ORG",
+   "aliases": [
+    "Innovation\n          Defense Strategy"
+   ]
+  },
+  {
+   "id": 369,
+   "from": "Admin\nFri",
+   "to": "Admin Fri",
+   "type": "PERSON",
+   "aliases": [
+    "Admin\nFri"
+   ]
+  },
+  {
+   "id": 370,
+   "from": "Michael J. Green\n              \n      \n\n  \n    Programs &",
+   "to": "Michael J. Green Programs &",
+   "type": "PERSON",
+   "aliases": [
+    "Kathleen H. Hicks\n              \n      \n\n  \n    Programs &",
+    "Michael J. Green\n              \n      \n\n  \n    Programs &"
+   ]
+  },
+  {
+   "id": 371,
+   "from": "Projects\n          \n              \n\n  \n      \n      Japan Chair",
+   "to": "Projects Japan Chair",
+   "type": "ORG",
+   "aliases": [
+    "Projects\n          \n              \n\n  \n      \n      Freeman Chair",
+    "Projects\n          \n              \n\n  \n      \n      Japan Chair"
+   ]
+  },
+  {
+   "id": 376,
+   "from": "The Future of the Grid—A View",
+   "to": "Future of the Grid-A View",
+   "type": "ORG",
+   "aliases": [
+    "The Future of the Grid—A View"
+   ]
+  },
+  {
+   "id": 377,
+   "from": "The CSIS Energy",
+   "to": "CSIS Energy",
+   "type": "ORG",
+   "aliases": [
+    "The CSIS Energy"
+   ]
+  },
+  {
+   "id": 380,
+   "from": "the Advanced Research Projects Agency-Energy",
+   "to": "Advanced Research Projects Agency-Energy",
+   "type": "ORG",
+   "aliases": [
+    "the Advanced Research Projects Agency-Energy"
+   ]
+  },
+  {
+   "id": 381,
+   "from": "Sarah Ladislaw\n          Francis O'Sullivan\n              \n      \n\n  \n    Downloads",
+   "to": "Sarah Ladislaw Francis O'Sullivan Downloads",
+   "type": "PERSON",
+   "aliases": [
+    "Sarah Ladislaw\n          Francis O'Sullivan\n              \n      \n\n  \n    Downloads"
+   ]
+  },
+  {
+   "id": 382,
+   "from": "Projects\n          \n              \n\n  \n      \n      Energy Security and Climate Change Program",
+   "to": "Projects Energy Security and Climate Change Program",
+   "type": "ORG",
+   "aliases": [
+    "Projects\n          \n              \n\n  \n      \n      Energy Security and Climate Change Program"
+   ]
+  },
+  {
+   "id": 384,
+   "from": "Sustainability\n          Energy and Geopolitics\n          Energy Innovation\n          Energy Markets, Trends",
+   "to": "Sustainability Energy and Geopolitics Energy Innovation Energy Markets, Trends",
+   "type": "ORG",
+   "aliases": [
+    "Sustainability\n          Energy and Geopolitics\n          Energy Innovation\n          Energy Markets, Trends"
+   ]
+  },
+  {
+   "id": 385,
+   "from": "Outlooks\n              \n      \n\n  \n    Event Dates",
+   "to": "Outlooks Event Dates",
+   "type": "ORG",
+   "aliases": [
+    "Outlooks\n              \n      \n\n  \n    Event Dates"
+   ]
+  },
+  {
+   "id": 388,
+   "from": "PRC Statesmen's",
+   "to": "PRC Statesmen",
+   "type": "ORG",
+   "aliases": [
+    "PRC Statesmen's"
+   ]
+  },
+  {
+   "id": 390,
+   "from": "John J. Hamre\n          ",
+   "to": "John J. Hamre",
+   "type": "PERSON",
+   "aliases": [
+    "John J. Hamre\n          ",
+    "John J. Hamre\n              \n      \n\n  \n    "
+   ]
+  },
+  {
+   "id": 391,
+   "from": "Regions\n          \n              China\n              \n      \n\n  \n    Event Dates",
+   "to": "Regions China Event Dates",
+   "type": "ORG",
+   "aliases": [
+    "Regions\n          \n              China\n              \n      \n\n  \n    Event Dates"
+   ]
+  },
+  {
+   "id": 392,
+   "from": "Scott Kennedy\n              \n      \n\n  \n    ",
+   "to": "Scott Kennedy",
+   "type": "PERSON",
+   "aliases": [
+    "Scott Kennedy",
+    "Scott Kennedy\n              \n      \n\n  \n    "
+   ]
+  },
+  {
+   "id": 393,
+   "from": "Projects\n          \n              \n\n  \n      \n      Chinese Business and Economics\n\n    \n    \n\n  \n  \n    \n  \n    Parent\n              Economic Security and Technology\n          \n\n  \n    ",
+   "to": "Projects Chinese Business and Economics Parent Economic Security and Technology",
+   "type": "ORG",
+   "aliases": [
+    "Projects\n          \n              \n\n  \n      \n      Chinese Business and Economics\n\n    \n    \n\n  \n  \n    \n  \n    Parent\n              Economic Security and Technology\n          \n\n  \n    "
+   ]
+  },
+  {
+   "id": 394,
+   "from": "China Pulse\n          Trustee",
+   "to": "China Pulse Trustee",
+   "type": "ORG",
+   "aliases": [
+    "China Pulse\n          Trustee"
+   ]
+  },
+  {
+   "id": 398,
+   "from": "United Kingdom Statesmen's",
+   "to": "United Kingdom Statesmen",
+   "type": "ORG",
+   "aliases": [
+    "United Kingdom Statesmen's"
+   ]
+  },
+  {
+   "id": 401,
+   "from": "The CSIS Travel Guide",
+   "to": "CSIS Travel Guide",
+   "type": "ORG",
+   "aliases": [
+    "The CSIS Travel Guide"
+   ]
+  },
+  {
+   "id": 403,
+   "from": "Economics\n          \n\n  \n    Featured Image",
+   "to": "Economics Featured Image",
+   "type": "ORG",
+   "aliases": [
+    "Economics\n          \n\n  \n    Featured Image"
+   ]
+  },
+  {
+   "id": 404,
+   "from": "Homeland Security\n              \n      \n\n  \n    ",
+   "to": "Homeland Security",
+   "type": "ORG",
+   "aliases": [
+    "Homeland Security",
+    "Homeland Security\n              \n      \n\n  \n    "
+   ]
+  },
+  {
+   "id": 405,
+   "from": "the Indo-Asia-Pacific",
+   "to": "Indo-Asia-Pacific",
+   "type": "EVENT",
+   "aliases": [
+    "the Indo-Asia-Pacific"
+   ]
+  },
+  {
+   "id": 410,
+   "from": "the Department of Defense",
+   "to": "Department of Defense",
+   "type": "ORG",
+   "aliases": [
+    "DoD",
+    "the Department of Defense"
+   ]
+  },
+  {
+   "id": 417,
+   "from": "Bob Schieffer\n          Frances F. Townsend",
+   "to": "Bob Schieffer Frances F. Townsend",
+   "type": "PERSON",
+   "aliases": [
+    "Bob Schieffer\n          Frances F. Townsend"
+   ]
+  },
+  {
+   "id": 418,
+   "from": "Juan C. Zarate \n              \n      \n\n  \n    Topics",
+   "to": "Juan C. Zarate Topics",
+   "type": "PERSON",
+   "aliases": [
+    "Juan C. Zarate \n              \n      \n\n  \n    Topics"
+   ]
+  },
+  {
+   "id": 419,
+   "from": "Homeland Security\n          Geopolitics",
+   "to": "Homeland Security Geopolitics",
+   "type": "ORG",
+   "aliases": [
+    "Homeland Security\n          Geopolitics"
+   ]
+  },
+  {
+   "id": 421,
+   "from": "the U.S. Armed Forces",
+   "to": "U.S. Armed Forces",
+   "type": "ORG",
+   "aliases": [
+    "U.S. Air Force",
+    "the U.S. Armed Forces"
+   ]
+  },
+  {
+   "id": 422,
+   "from": "Todd Harrison\n          Mark F. Cancian",
+   "to": "Todd Harrison Mark F. Cancian",
+   "type": "PERSON",
+   "aliases": [
+    "Todd Harrison\n          Mark F. Cancian"
+   ]
+  },
+  {
+   "id": 423,
+   "from": "Andrew Philip Hunter\n          Kathleen H. Hicks\n              \n      \n\n  \n    Downloads",
+   "to": "Andrew Philip Hunter Kathleen H. Hicks Downloads",
+   "type": "PERSON",
+   "aliases": [
+    "Andrew Philip Hunter\n          Kathleen H. Hicks\n              \n      \n\n  \n    Downloads"
+   ]
+  },
+  {
+   "id": 424,
+   "from": "Programs &amp",
+   "to": "Programs &",
+   "type": "ORG",
+   "aliases": [
+    "Programs &amp"
+   ]
+  },
+  {
+   "id": 425,
+   "from": "The Future of Land Power \n          Analysis",
+   "to": "Future of Land Power Analysis",
+   "type": "ORG",
+   "aliases": [
+    "The Future of Land Power \n          Analysis"
+   ]
+  },
+  {
+   "id": 426,
+   "from": "Focus Areas\n          \n\n  \n    ",
+   "to": "Focus Areas",
+   "type": "ORG",
+   "aliases": [
+    "Focus Areas\n          \n\n  \n    "
+   ]
+  },
+  {
+   "id": 435,
+   "from": "the Ship Management System",
+   "to": "Ship Management System",
+   "type": "ORG",
+   "aliases": [
+    "the Ship Management System"
+   ]
+  },
+  {
+   "id": 456,
+   "from": "the Warfighting Acquisition System",
+   "to": "Warfighting Acquisition System",
+   "type": "ORG",
+   "aliases": [
+    "the Warfighting Acquisition System"
+   ]
+  },
+  {
+   "id": 457,
+   "from": "The Marine Corps Warfighting Laboratory",
+   "to": "Marine Corps Warfighting Laboratory",
+   "type": "ORG",
+   "aliases": [
+    "The Marine Corps Warfighting Laboratory"
+   ]
+  },
+  {
+   "id": 468,
+   "from": "the Danish Navy",
+   "to": "Danish Navy",
+   "type": "ORG",
+   "aliases": [
+    "the Danish Navy"
+   ]
+  },
+  {
+   "id": 470,
+   "from": "the Danish Armed Forces",
+   "to": "Danish Armed Forces",
+   "type": "ORG",
+   "aliases": [
+    "the Danish Armed Forces"
+   ]
+  },
+  {
+   "id": 471,
+   "from": "the Baltic Sea",
+   "to": "Baltic Sea",
+   "type": "LOC",
+   "aliases": [
+    "Baltic Sea",
+    "the Baltic Sea"
+   ]
+  },
+  {
+   "id": 472,
+   "from": "the North Sea",
+   "to": "North Sea",
+   "type": "LOC",
+   "aliases": [
+    "North Sea",
+    "the North Sea"
+   ]
+  },
+  {
+   "id": 473,
+   "from": "the Royal Danish Navy",
+   "to": "Royal Danish Navy",
+   "type": "ORG",
+   "aliases": [
+    "the Royal Danish Navy"
+   ]
+  },
+  {
+   "id": 474,
+   "from": "the Danish Straits",
+   "to": "Danish Straits",
+   "type": "LOC",
+   "aliases": [
+    "the Danish Straits"
+   ]
+  },
+  {
+   "id": 478,
+   "from": "the Mediterranean VIENNA",
+   "to": "Mediterranean VIENNA",
+   "type": "LOC",
+   "aliases": [
+    "the Mediterranean VIENNA"
+   ]
+  },
+  {
+   "id": 487,
+   "from": "the Defense Council",
+   "to": "Defense Council",
+   "type": "ORG",
+   "aliases": [
+    "the Defense Council"
+   ]
+  },
+  {
+   "id": 491,
+   "from": "the Öresund Strait",
+   "to": "Öresund Strait",
+   "type": "LOC",
+   "aliases": [
+    "the Öresund Strait"
+   ]
+  },
+  {
+   "id": 506,
+   "from": "the Tactical Intelligence Targeting Access Node",
+   "to": "Tactical Intelligence Targeting Access Node",
+   "type": "ORG",
+   "aliases": [
+    "the Tactical Intelligence Targeting Access Node"
+   ]
+  },
+  {
+   "id": 507,
+   "from": "the Maven Smart System",
+   "to": "Maven Smart System",
+   "type": "ORG",
+   "aliases": [
+    "Maven Smart System",
+    "the Maven Smart System"
+   ]
+  },
+  {
+   "id": 508,
+   "from": "the Electromagnetic Aircraft Launch System",
+   "to": "Electromagnetic Aircraft Launch System",
+   "type": "ORG",
+   "aliases": [
+    "the Electromagnetic Aircraft Launch System"
+   ]
+  },
+  {
+   "id": 512,
+   "from": "the USS Doris Miller",
+   "to": "USS Doris Miller",
+   "type": "PRODUCT",
+   "aliases": [
+    "USS Doris Miller",
+    "the USS Doris Miller"
+   ]
+  },
+  {
+   "id": 514,
+   "from": "the USS George H. W. Bush",
+   "to": "USS George H. W. Bush",
+   "type": "PRODUCT",
+   "aliases": [
+    "the USS George H. W. Bush"
+   ]
+  },
+  {
+   "id": 517,
+   "from": "the U.S. Naval Institute",
+   "to": "U.S. Naval Institute",
+   "type": "ORG",
+   "aliases": [
+    "the U.S. Naval Institute",
+    "the U.S. Naval Institute’s"
+   ]
+  },
+  {
+   "id": 527,
+   "from": "the Department of the Air Force",
+   "to": "Department of the Air Force",
+   "type": "ORG",
+   "aliases": [
+    "the Department of the Air Force"
+   ]
+  },
+  {
+   "id": 531,
+   "from": "the Army War College’s",
+   "to": "Army War College",
+   "type": "ORG",
+   "aliases": [
+    "the Army War College’s"
+   ]
+  },
+  {
+   "id": 533,
+   "from": "the Marine Corps War College’s",
+   "to": "Marine Corps War College",
+   "type": "ORG",
+   "aliases": [
+    "the Marine Corps War College’s"
+   ]
+  },
+  {
+   "id": 541,
+   "from": "the American Enterprise Institute",
+   "to": "American Enterprise Institute",
+   "type": "ORG",
+   "aliases": [
+    "American Enterprise Institute",
+    "the American Enterprise Institute"
+   ]
+  },
+  {
+   "id": 567,
+   "from": "the World Space Business Week",
+   "to": "World Space Business Week",
+   "type": "ORG",
+   "aliases": [
+    "the World Space Business Week"
+   ]
+  },
+  {
+   "id": 602,
+   "from": "the Arabian Sea",
+   "to": "Arabian Sea",
+   "type": "LOC",
+   "aliases": [
+    "Arabian Sea",
+    "the Arabian Sea"
+   ]
+  },
+  {
+   "id": 607,
+   "from": "the Iran war",
+   "to": "Iran war",
+   "type": "EVENT",
+   "aliases": [
+    "Iran war",
+    "the Iran war"
+   ]
+  },
+  {
+   "id": 608,
+   "from": "The USS Carney",
+   "to": "USS Carney",
+   "type": "PRODUCT",
+   "aliases": [
+    "The USS Carney",
+    "USS Carney"
+   ]
+  },
+  {
+   "id": 619,
+   "from": "the British Underwater Test &",
+   "to": "British Underwater Test &",
+   "type": "ORG",
+   "aliases": [
+    "the British Underwater Test &"
+   ]
+  },
+  {
+   "id": 626,
+   "from": "the Royal Australian Navy",
+   "to": "Royal Australian Navy",
+   "type": "ORG",
+   "aliases": [
+    "the Royal Australian Navy"
+   ]
+  },
+  {
+   "id": 629,
+   "from": "the Anduril Dive-XL",
+   "to": "Anduril Dive-XL",
+   "type": "ORG",
+   "aliases": [
+    "Anduril Dive-LD",
+    "the Anduril Dive-XL"
+   ]
+  },
+  {
+   "id": 641,
+   "from": "U.S. 5th Fleet’s",
+   "to": "U.S. 5th Fleet",
+   "type": "ORG",
+   "aliases": [
+    "U.S. 5th Fleet’s",
+    "the U.S. Fifth Fleet"
+   ]
+  },
+  {
+   "id": 648,
+   "from": "the Center for Naval Analyses",
+   "to": "Center for Naval Analyses",
+   "type": "ORG",
+   "aliases": [
+    "the Center for Naval Analyses"
+   ]
+  },
+  {
+   "id": 661,
+   "from": "The South Korean Army",
+   "to": "South Korean Army",
+   "type": "ORG",
+   "aliases": [
+    "The South Korean Army"
+   ]
+  },
+  {
+   "id": 664,
+   "from": "the Korean Peninsula",
+   "to": "Korean Peninsula",
+   "type": "LOC",
+   "aliases": [
+    "Korean Peninsula",
+    "the Korean Peninsula"
+   ]
+  },
+  {
+   "id": 669,
+   "from": "the Sea of Aden",
+   "to": "Sea of Aden",
+   "type": "LOC",
+   "aliases": [
+    "the Sea of Aden"
+   ]
+  },
+  {
+   "id": 679,
+   "from": "the United Arab Emirates",
+   "to": "United Arab Emirates",
+   "type": "GPE",
+   "aliases": [
+    "United Arab Emirates",
+    "the United Arab Emirates"
+   ]
+  },
+  {
+   "id": 680,
+   "from": "the Al Dhafra Air Base",
+   "to": "Al Dhafra Air Base",
+   "type": "FAC",
+   "aliases": [
+    "the Al Dhafra Air Base"
+   ]
+  },
+  {
+   "id": 693,
+   "from": "the east coast",
+   "to": "east coast",
+   "type": "LOC",
+   "aliases": [
+    "East Coast",
+    "the east coast",
+    "west coast"
+   ]
+  },
+  {
+   "id": 708,
+   "from": "the Air Staff",
+   "to": "Air Staff",
+   "type": "ORG",
+   "aliases": [
+    "the Air Staff"
+   ]
+  },
+  {
+   "id": 714,
+   "from": "The Lynx XM30",
+   "to": "Lynx XM30",
+   "type": "PRODUCT",
+   "aliases": [
+    "Lynx XM30",
+    "The Lynx XM30"
+   ]
+  },
+  {
+   "id": 720,
+   "from": "the U.S. Department of State’s",
+   "to": "U.S. Department of State",
+   "type": "ORG",
+   "aliases": [
+    "the U.S. Department of State's",
+    "the U.S. Department of State’s"
+   ]
+  },
+  {
+   "id": 733,
+   "from": "North Macedonia&nbsp;is",
+   "to": "North Macedonia is",
+   "type": "GPE",
+   "aliases": [
+    "North Macedonia&nbsp;is"
+   ]
+  },
+  {
+   "id": 738,
+   "from": "the Hong Kong Special Administrative Region",
+   "to": "Hong Kong Special Administrative Region",
+   "type": "GPE",
+   "aliases": [
+    "Macau Special Administrative Region",
+    "the Hong Kong Special Administrative Region"
+   ]
+  },
+  {
+   "id": 740,
+   "from": "the Hong Kong National Security Law",
+   "to": "Hong Kong National Security Law",
+   "type": "ORG",
+   "aliases": [
+    "the Hong Kong National Security Law"
+   ]
+  },
+  {
+   "id": 744,
+   "from": "the U.S. Mission",
+   "to": "U.S. Mission",
+   "type": "ORG",
+   "aliases": [
+    "the U.S. Mission"
+   ]
+  },
+  {
+   "id": 746,
+   "from": "Health \nMedical",
+   "to": "Health Medical",
+   "type": "ORG",
+   "aliases": [
+    "Health \nMedical"
+   ]
+  },
+  {
+   "id": 748,
+   "from": "the Tibet Autonomous Region",
+   "to": "Tibet Autonomous Region",
+   "type": "GPE",
+   "aliases": [
+    "Tibet Autonomous Region",
+    "the Tibet Autonomous Region"
+   ]
+  },
+  {
+   "id": 751,
+   "from": "the Kathmandu Valley",
+   "to": "Kathmandu Valley",
+   "type": "LOC",
+   "aliases": [
+    "the Kathmandu Valley"
+   ]
+  },
+  {
+   "id": 753,
+   "from": "the Government of Nepal",
+   "to": "Government of Nepal",
+   "type": "ORG",
+   "aliases": [
+    "the Government of Iraq",
+    "the Government of Nepal"
+   ]
+  },
+  {
+   "id": 759,
+   "from": "the Loreto Region",
+   "to": "Loreto Region",
+   "type": "LOC",
+   "aliases": [
+    "the Loreto Region"
+   ]
+  },
+  {
+   "id": 760,
+   "from": "the Valley of the",
+   "to": "Valley of the",
+   "type": "LOC",
+   "aliases": [
+    "the Valley of the"
+   ]
+  },
+  {
+   "id": 768,
+   "from": "Unrest&nbsp",
+   "to": "Unrest",
+   "type": "ORG",
+   "aliases": [
+    "Unrest&nbsp"
+   ]
+  },
+  {
+   "id": 770,
+   "from": "airports.&nbsp",
+   "to": "airports.",
+   "type": "ORG",
+   "aliases": [
+    "airports.&nbsp"
+   ]
+  },
+  {
+   "id": 771,
+   "from": "employees&nbsp",
+   "to": "employees",
+   "type": "PERSON",
+   "aliases": [
+    "employees&nbsp"
+   ]
+  },
+  {
+   "id": 776,
+   "from": "ordnances&nbsp",
+   "to": "ordnances",
+   "type": "ORG",
+   "aliases": [
+    "ordnances&nbsp"
+   ]
+  },
+  {
+   "id": 781,
+   "from": "Romit.&nbsp;&nbsp",
+   "to": "Romit.",
+   "type": "ORG",
+   "aliases": [
+    "Romit.&nbsp;&nbsp"
+   ]
+  },
+  {
+   "id": 784,
+   "from": "restrictions&nbsp",
+   "to": "restrictions",
+   "type": "ORG",
+   "aliases": [
+    "restrictions&nbsp"
+   ]
+  },
+  {
+   "id": 785,
+   "from": "the embassy security office",
+   "to": "embassy security office",
+   "type": "ORG",
+   "aliases": [
+    "the embassy security office"
+   ]
+  },
+  {
+   "id": 786,
+   "from": "GBAO.&nbsp",
+   "to": "GBAO.",
+   "type": "ORG",
+   "aliases": [
+    "GBAO.&nbsp"
+   ]
+  },
+  {
+   "id": 787,
+   "from": "the United States.&nbsp;&nbsp",
+   "to": "United States.",
+   "type": "ORG",
+   "aliases": [
+    "the United States.&nbsp;&nbsp"
+   ]
+  },
+  {
+   "id": 793,
+   "from": "the U.S. Embassy",
+   "to": "U.S. Embassy",
+   "type": "ORG",
+   "aliases": [
+    "U.S. Embassy",
+    "no U.S. Embassy",
+    "the U.S. Embassy"
+   ]
+  },
+  {
+   "id": 801,
+   "from": "the U.S. Department of State's Country Reports",
+   "to": "U.S. Department of State's Country Reports",
+   "type": "ORG",
+   "aliases": [
+    "the U.S. Department of State's Country Reports"
+   ]
+  },
+  {
+   "id": 802,
+   "from": "The Sulu Archipelago",
+   "to": "Sulu Archipelago",
+   "type": "GPE",
+   "aliases": [
+    "The Sulu Archipelago"
+   ]
+  },
+  {
+   "id": 806,
+   "from": "Reconsider Travel to:&nbsp",
+   "to": "Reconsider Travel to",
+   "type": "ORG",
+   "aliases": [
+    "Reconsider Travel to:&nbsp"
+   ]
+  },
+  {
+   "id": 810,
+   "from": "the Administrative Regions of Ceilandia",
+   "to": "Administrative Regions of Ceilandia",
+   "type": "GPE",
+   "aliases": [
+    "the Administrative Regions of Ceilandia"
+   ]
+  },
+  {
+   "id": 821,
+   "from": "the U.S. Coast Guard",
+   "to": "U.S. Coast Guard",
+   "type": "ORG",
+   "aliases": [
+    "The US Coast Guard",
+    "U.S. Coast Guard",
+    "the U.S. Coast Guard"
+   ]
+  },
+  {
+   "id": 822,
+   "from": "The Federal Aviation Administration",
+   "to": "Federal Aviation Administration",
+   "type": "ORG",
+   "aliases": [
+    "Federal Aviation Administration",
+    "The Federal Aviation Administration",
+    "the Federal Aviation Administration’s"
+   ]
+  },
+  {
+   "id": 832,
+   "from": "the Internet Archive Country",
+   "to": "Internet Archive Country",
+   "type": "ORG",
+   "aliases": [
+    "the Internet Archive Country"
+   ]
+  },
+  {
+   "id": 853,
+   "from": "JO\nStart",
+   "to": "JO Start",
+   "type": "PERSON",
+   "aliases": [
+    "JO\nStart"
+   ]
+  },
+  {
+   "id": 878,
+   "from": "China&#8217;s Ministry of Foreign Affairs",
+   "to": "China's Ministry of Foreign Affairs",
+   "type": "ORG",
+   "aliases": [
+    "China&#8217;s Ministry of Foreign Affairs"
+   ]
+  },
+  {
+   "id": 880,
+   "from": "the Gulf of Oman",
+   "to": "Gulf of Oman",
+   "type": "LOC",
+   "aliases": [
+    "Gulf of Oman",
+    "the Gulf of Oman"
+   ]
+  },
+  {
+   "id": 882,
+   "from": "lear\n** HIGH SIGNAL",
+   "to": "lear ** HIGH SIGNAL",
+   "type": "ORG",
+   "aliases": [
+    "lear\n** HIGH SIGNAL"
+   ]
+  },
+  {
+   "id": 884,
+   "from": "the Centers for Disease Control and Prevention",
+   "to": "Centers for Disease Control and Prevention",
+   "type": "ORG",
+   "aliases": [
+    "the Centers for Disease Control and Prevention"
+   ]
+  },
+  {
+   "id": 886,
+   "from": "the State Department",
+   "to": "State Department",
+   "type": "ORG",
+   "aliases": [
+    "US State Department",
+    "the State Department"
+   ]
+  },
+  {
+   "id": 889,
+   "from": "the Kuwait International Airport",
+   "to": "Kuwait International Airport",
+   "type": "FAC",
+   "aliases": [
+    "Atlanta International Airport",
+    "Kuwait International Airport",
+    "the Kuwait International Airport"
+   ]
+  },
+  {
+   "id": 894,
+   "from": "Enrollment Program&nbsp;(STEP",
+   "to": "Enrollment Program (STEP",
+   "type": "PERSON",
+   "aliases": [
+    "Enrollment Program&nbsp;(STEP"
+   ]
+  },
+  {
+   "id": 896,
+   "from": "the International Travel Checklist",
+   "to": "International Travel Checklist",
+   "type": "ORG",
+   "aliases": [
+    "the International Travel Checklist",
+    "the International Travel Checklist.&nbsp"
+   ]
+  },
+  {
+   "id": 903,
+   "from": "the Gaza Strip",
+   "to": "Gaza Strip",
+   "type": "GPE",
+   "aliases": [
+    "Gaza Strip",
+    "the Gaza Strip"
+   ]
+  },
+  {
+   "id": 907,
+   "from": "&nbsp;There",
+   "to": "There",
+   "type": "ORG",
+   "aliases": [
+    "&nbsp;There"
+   ]
+  },
+  {
+   "id": 910,
+   "from": "the Allenby Bridge",
+   "to": "Allenby Bridge",
+   "type": "FAC",
+   "aliases": [
+    "Allenby Bridge",
+    "the Allenby Bridge"
+   ]
+  },
+  {
+   "id": 949,
+   "from": "the UploadServlet Java",
+   "to": "UploadServlet Java",
+   "type": "ORG",
+   "aliases": [
+    "the UploadServlet Java"
+   ]
+  },
+  {
+   "id": 957,
+   "from": ":*:*:*:*:*:*:*",
+   "to": "*:*:*:*:*:*:*",
+   "type": "ORG",
+   "aliases": [
+    ":*:*:*:*:*:*:*",
+    ":*:*:*:*:*:*:*\nIn"
+   ]
+  },
+  {
+   "id": 961,
+   "from": "the \"ActiveX Parameter",
+   "to": "\"ActiveX Parameter",
+   "type": "ORG",
+   "aliases": [
+    "the \"ActiveX Parameter"
+   ]
+  },
+  {
+   "id": 998,
+   "from": "Bosco Taganda’s",
+   "to": "Bosco Taganda",
+   "type": "PERSON",
+   "aliases": [
+    "BOSCO TAGANDA Listed",
+    "Bosco Taganda’s"
+   ]
+  },
+  {
+   "id": 1003,
+   "from": "the High Military Court",
+   "to": "High Military Court",
+   "type": "ORG",
+   "aliases": [
+    "the High Military Court",
+    "the Military Court"
+   ]
+  },
+  {
+   "id": 1013,
+   "from": "the Democratic Republic of the Congo",
+   "to": "Democratic Republic of the Congo",
+   "type": "GPE",
+   "aliases": [
+    "Democratic Republic of the Congo",
+    "the Democratic Republic of the Congo"
+   ]
+  },
+  {
+   "id": 1021,
+   "from": "Great Lakes\n",
+   "to": "Great Lakes",
+   "type": "GPE",
+   "aliases": [
+    "Great Lakes",
+    "Great Lakes\n"
+   ]
+  },
+  {
+   "id": 1027,
+   "from": "the Geneva Convection",
+   "to": "Geneva Convection",
+   "type": "ORG",
+   "aliases": [
+    "the Geneva Convection"
+   ]
+  },
+  {
+   "id": 1031,
+   "from": "the Republic of Rwanda",
+   "to": "Republic of Rwanda",
+   "type": "GPE",
+   "aliases": [
+    "The Republic of Ireland",
+    "the Republic of Rwanda"
+   ]
+  },
+  {
+   "id": 1035,
+   "from": "the Government of the DRC",
+   "to": "Government of the DRC",
+   "type": "ORG",
+   "aliases": [
+    "the Government of the DRC"
+   ]
+  },
+  {
+   "id": 1037,
+   "from": "the Appeals Chamber",
+   "to": "Appeals Chamber",
+   "type": "ORG",
+   "aliases": [
+    "the Appeals Chamber"
+   ]
+  },
+  {
+   "id": 1049,
+   "from": "DRC Government’s",
+   "to": "DRC Government",
+   "type": "ORG",
+   "aliases": [
+    "DRC Government’s"
+   ]
+  },
+  {
+   "id": 1056,
+   "from": "the Alliance pour le Salut du Peuple",
+   "to": "Alliance pour le Salut du Peuple",
+   "type": "ORG",
+   "aliases": [
+    "the Alliance pour le Salut du Peuple"
+   ]
+  },
+  {
+   "id": 1062,
+   "from": "‘Umoja Wetu’",
+   "to": "Umoja Wetu",
+   "type": "PERSON",
+   "aliases": [
+    "‘Umoja Wetu’"
+   ]
+  },
+  {
+   "id": 1069,
+   "from": "the 31st Brigade",
+   "to": "31st Brigade",
+   "type": "ORG",
+   "aliases": [
+    "the 31st Brigade"
+   ]
+  },
+  {
+   "id": 1073,
+   "from": "the Allied Democratic Forces",
+   "to": "Allied Democratic Forces",
+   "type": "ORG",
+   "aliases": [
+    "the Allied Democratic Forces"
+   ]
+  },
+  {
+   "id": 1080,
+   "from": "the Aigle Lemabé Brigade",
+   "to": "Aigle Lemabé Brigade",
+   "type": "ORG",
+   "aliases": [
+    "the Aigle Lemabé Brigade"
+   ]
+  },
+  {
+   "id": 1094,
+   "from": "NANGAA YOBELUO  ",
+   "to": "NANGAA YOBELUO",
+   "type": "ORG",
+   "aliases": [
+    "NANGAA YOBELUO  "
+   ]
+  },
+  {
+   "id": 1096,
+   "from": "the Alliance Fleuve Congo",
+   "to": "Alliance Fleuve Congo",
+   "type": "ORG",
+   "aliases": [
+    "the Alliance Fleuve Congo"
+   ]
+  },
+  {
+   "id": 1102,
+   "from": "CHARLES  ",
+   "to": "CHARLES",
+   "type": "PERSON",
+   "aliases": [
+    "CHARLES  ",
+    "Charles"
+   ]
+  },
+  {
+   "id": 1104,
+   "from": "JOHN  IMANI",
+   "to": "JOHN IMANI",
+   "type": "PERSON",
+   "aliases": [
+    "JOHN  IMANI"
+   ]
+  },
+  {
+   "id": 1111,
+   "from": "the Commando de Recherche et d'Action en Profondeur",
+   "to": "Commando de Recherche et d'Action en Profondeur",
+   "type": "ORG",
+   "aliases": [
+    "the Commando de Recherche et d'Action en Profondeur"
+   ]
+  },
+  {
+   "id": 1118,
+   "from": "the Indian Air Force",
+   "to": "Indian Air Force",
+   "type": "ORG",
+   "aliases": [
+    "Indian Air Force",
+    "the Indian Air Force"
+   ]
+  },
+  {
+   "id": 1122,
+   "from": "the Mirage 2000",
+   "to": "Mirage 2000",
+   "type": "ORG",
+   "aliases": [
+    "Mirage 2000",
+    "the Mirage 2000"
+   ]
+  },
+  {
+   "id": 1151,
+   "from": "the Sahara Desert",
+   "to": "Sahara Desert",
+   "type": "LOC",
+   "aliases": [
+    "the Sahara Desert"
+   ]
+  },
+  {
+   "id": 1164,
+   "from": "the FutureChina Business Forum",
+   "to": "FutureChina Business Forum",
+   "type": "FAC",
+   "aliases": [
+    "the FutureChina Business Forum"
+   ]
+  },
+  {
+   "id": 1168,
+   "from": "the U.S. Central Intelligence Agency",
+   "to": "U.S. Central Intelligence Agency",
+   "type": "ORG",
+   "aliases": [
+    "the U.S. Central Intelligence Agency"
+   ]
+  },
+  {
+   "id": 1174,
+   "from": "Jordan\nDetails",
+   "to": "Jordan Details",
+   "type": "PERSON",
+   "aliases": [
+    "Jordan\nDetails"
+   ]
+  },
+  {
+   "id": 1176,
+   "from": "Ma’an City",
+   "to": "Ma'an City",
+   "type": "GPE",
+   "aliases": [
+    "Man City",
+    "Ma’an City"
+   ]
+  },
+  {
+   "id": 1177,
+   "from": "Ma’an",
+   "to": "Ma'an",
+   "type": "ORG",
+   "aliases": [
+    "Ma’an"
+   ]
+  },
+  {
+   "id": 1178,
+   "from": "Ma’an Governorate",
+   "to": "Ma'an Governorate",
+   "type": "ORG",
+   "aliases": [
+    "Ma’an Governorate"
+   ]
+  },
+  {
+   "id": 1187,
+   "from": "‌come",
+   "to": "come",
+   "type": "ORG",
+   "aliases": [
+    "‌come"
+   ]
+  },
+  {
+   "id": 1188,
+   "from": "the European Peace Facility",
+   "to": "European Peace Facility",
+   "type": "ORG",
+   "aliases": [
+    "European Peace Facility",
+    "the European Peace Facility"
+   ]
+  },
+  {
+   "id": 1190,
+   "from": "The Hong Kong Tourism Board",
+   "to": "Hong Kong Tourism Board",
+   "type": "ORG",
+   "aliases": [
+    "Hong Kong Tourism Board",
+    "The Hong Kong Tourism Board"
+   ]
+  },
+  {
+   "id": 1223,
+   "from": "the North Atlantic",
+   "to": "North Atlantic",
+   "type": "LOC",
+   "aliases": [
+    "North Atlantic",
+    "the North Atlantic"
+   ]
+  },
+  {
+   "id": 1233,
+   "from": "-3.22",
+   "to": "3.22",
+   "type": "PERSON",
+   "aliases": [
+    "-3.22",
+    "-3.27"
+   ]
+  },
+  {
+   "id": 1238,
+   "from": "Elon Musk's",
+   "to": "Elon Musk",
+   "type": "PERSON",
+   "aliases": [
+    "Elon Musk's",
+    "Elon Musk’s"
+   ]
+  },
+  {
+   "id": 1253,
+   "from": "-0.36",
+   "to": "0.36",
+   "type": "FAC",
+   "aliases": [
+    "-0.36"
+   ]
+  },
+  {
+   "id": 1266,
+   "from": "Singer&#039;s",
+   "to": "Singer",
+   "type": "ORG",
+   "aliases": [
+    "Singer&#039;s"
+   ]
+  },
+  {
+   "id": 1278,
+   "from": "China&#039;s Zhang Zhanshuo",
+   "to": "China's Zhang Zhanshuo",
+   "type": "PERSON",
+   "aliases": [
+    "China&#039;s Zhang Zhanshuo"
+   ]
+  },
+  {
+   "id": 1281,
+   "from": "the Caspian Sea",
+   "to": "Caspian Sea",
+   "type": "LOC",
+   "aliases": [
+    "the Caspian Sea"
+   ]
+  },
+  {
+   "id": 1285,
+   "from": "the Security Council",
+   "to": "Security Council",
+   "type": "ORG",
+   "aliases": [
+    "Security Council",
+    "the Security Council"
+   ]
+  },
+  {
+   "id": 1316,
+   "from": "the Data-Centric Security",
+   "to": "Data-Centric Security",
+   "type": "ORG",
+   "aliases": [
+    "the Data-Centric Security"
+   ]
+  },
+  {
+   "id": 1318,
+   "from": "the French Army",
+   "to": "French Army",
+   "type": "ORG",
+   "aliases": [
+    "The French Army’s",
+    "the French Army"
+   ]
+  },
+  {
+   "id": 1325,
+   "from": "the &#8220;cyber magazine&#8221",
+   "to": "\"cyber magazine",
+   "type": "ORG",
+   "aliases": [
+    "the &#8220;cyber magazine&#8221"
+   ]
+  },
+  {
+   "id": 1334,
+   "from": "the U.S. Court of Appeals",
+   "to": "U.S. Court of Appeals",
+   "type": "ORG",
+   "aliases": [
+    "the U.S. Court of Appeals"
+   ]
+  },
+  {
+   "id": 1341,
+   "from": "the Shipyard Infrastructure Optimization Program",
+   "to": "Shipyard Infrastructure Optimization Program",
+   "type": "ORG",
+   "aliases": [
+    "the Shipyard Infrastructure Optimization Program"
+   ]
+  },
+  {
+   "id": 1344,
+   "from": "Tasia Fortune’s",
+   "to": "Tasia Fortune",
+   "type": "ORG",
+   "aliases": [
+    "Tasia Fortune",
+    "Tasia Fortune’s"
+   ]
+  },
+  {
+   "id": 1351,
+   "from": "the Ukraine Security Assistance Initiative",
+   "to": "Ukraine Security Assistance Initiative",
+   "type": "ORG",
+   "aliases": [
+    "the Ukraine Security Assistance Initiative"
+   ]
+  },
+  {
+   "id": 1354,
+   "from": "The U.S. war",
+   "to": "U.S. war",
+   "type": "EVENT",
+   "aliases": [
+    "The U.S. war",
+    "US War",
+    "the US war"
+   ]
+  },
+  {
+   "id": 1356,
+   "from": "the Mecca Joint Defence Agreement",
+   "to": "Mecca Joint Defence Agreement",
+   "type": "ORG",
+   "aliases": [
+    "Mecca Joint Defence Agreement",
+    "the Mecca Joint Defence Agreement"
+   ]
+  },
+  {
+   "id": 1376,
+   "from": "The British Ministry of Defence",
+   "to": "British Ministry of Defence",
+   "type": "ORG",
+   "aliases": [
+    "The British Ministry of Defence"
+   ]
+  },
+  {
+   "id": 1381,
+   "from": "Ukraine’s Defence Ministry",
+   "to": "Ukraine's Defence Ministry",
+   "type": "ORG",
+   "aliases": [
+    "Ukraine’s Defence Ministry"
+   ]
+  },
+  {
+   "id": 1398,
+   "from": "-0.41",
+   "to": "0.41",
+   "type": "PERSON",
+   "aliases": [
+    "-0.41"
+   ]
+  },
+  {
+   "id": 1410,
+   "from": "the &quot;choice",
+   "to": "\"choice",
+   "type": "ORG",
+   "aliases": [
+    "the &quot;choice"
+   ]
+  },
+  {
+   "id": 1450,
+   "from": "the Development Bureau",
+   "to": "Development Bureau",
+   "type": "ORG",
+   "aliases": [
+    "the Development Bureau"
+   ]
+  },
+  {
+   "id": 1459,
+   "from": "the Philippine Coast Guard",
+   "to": "Philippine Coast Guard",
+   "type": "ORG",
+   "aliases": [
+    "Philippine Coast Guard",
+    "the Philippine Coast Guard"
+   ]
+  },
+  {
+   "id": 1466,
+   "from": "the Central Rail Link",
+   "to": "Central Rail Link",
+   "type": "FAC",
+   "aliases": [
+    "the Central Rail Link"
+   ]
+  },
+  {
+   "id": 1468,
+   "from": "Real America’s",
+   "to": "Real America",
+   "type": "ORG",
+   "aliases": [
+    "Real America’s"
+   ]
+  },
+  {
+   "id": 1472,
+   "from": "the University of Tennessee",
+   "to": "University of Tennessee",
+   "type": "ORG",
+   "aliases": [
+    "the University of Tennessee"
+   ]
+  },
+  {
+   "id": 1475,
+   "from": "Japan&#039;s Asian Games",
+   "to": "Japan's Asian Games",
+   "type": "ORG",
+   "aliases": [
+    "Japan&#039;s Asian Games"
+   ]
+  },
+  {
+   "id": 1479,
+   "from": "Real America&#039;s Voice News",
+   "to": "Real America's Voice News",
+   "type": "ORG",
+   "aliases": [
+    "Real America&#039;s Voice News"
+   ]
+  },
+  {
+   "id": 1480,
+   "from": "Morocco&#039;s 2030 World Cup",
+   "to": "Morocco's 2030 World Cup",
+   "type": "PRODUCT",
+   "aliases": [
+    "Morocco&#039;s 2030 World Cup"
+   ]
+  },
+  {
+   "id": 1489,
+   "from": "Sunday&#039;s",
+   "to": "Sunday",
+   "type": "PERSON",
+   "aliases": [
+    "Sudan&#039;s",
+    "Sunday&#039;s"
+   ]
+  },
+  {
+   "id": 1509,
+   "from": "UEFA Nations League – Predictions",
+   "to": "UEFA Nations League - Predictions",
+   "type": "ORG",
+   "aliases": [
+    "UEFA Nations League – Predictions"
+   ]
+  },
+  {
+   "id": 1524,
+   "from": "the Tai Po South",
+   "to": "Tai Po South",
+   "type": "ORG",
+   "aliases": [
+    "the Tai Po South"
+   ]
+  },
+  {
+   "id": 1525,
+   "from": "the Tai Po South Area Committee",
+   "to": "Tai Po South Area Committee",
+   "type": "ORG",
+   "aliases": [
+    "the Tai Po South Area Committee"
+   ]
+  },
+  {
+   "id": 1526,
+   "from": "the Tai Po Kwong Fuk",
+   "to": "Tai Po Kwong Fuk",
+   "type": "ORG",
+   "aliases": [
+    "the Tai Po Kwong Fuk"
+   ]
+  },
+  {
+   "id": 1529,
+   "from": "the South China Morning Post",
+   "to": "South China Morning Post",
+   "type": "ORG",
+   "aliases": [
+    "South China Morning Post",
+    "the South China Morning Post"
+   ]
+  },
+  {
+   "id": 1534,
+   "from": "the Drainage Services Department",
+   "to": "Drainage Services Department",
+   "type": "ORG",
+   "aliases": [
+    "The Fire Services Department",
+    "the Drainage Services Department"
+   ]
+  },
+  {
+   "id": 1540,
+   "from": "the Saudi Press Agency",
+   "to": "Saudi Press Agency",
+   "type": "ORG",
+   "aliases": [
+    "the Saudi Press Agency"
+   ]
+  },
+  {
+   "id": 1558,
+   "from": "the Austrian GP",
+   "to": "Austrian GP",
+   "type": "ORG",
+   "aliases": [
+    "the Austrian GP"
+   ]
+  },
+  {
+   "id": 1610,
+   "from": "the Journal of Deep Space Exploration",
+   "to": "Journal of Deep Space Exploration",
+   "type": "ORG",
+   "aliases": [
+    "the Journal of Deep Space Exploration"
+   ]
+  },
+  {
+   "id": 1634,
+   "from": "The Dosa King’s",
+   "to": "Dosa King",
+   "type": "PERSON",
+   "aliases": [
+    "The Dosa King’s"
+   ]
+  },
+  {
+   "id": 1652,
+   "from": "the Islamic Republic",
+   "to": "Islamic Republic",
+   "type": "GPE",
+   "aliases": [
+    "Islamic Republic",
+    "the Islamic Republic"
+   ]
+  },
+  {
+   "id": 1653,
+   "from": "the UN Human Rights Council",
+   "to": "UN Human Rights Council",
+   "type": "ORG",
+   "aliases": [
+    "UN Human Rights Council",
+    "the UN Human Rights Council"
+   ]
+  },
+  {
+   "id": 1678,
+   "from": "CIRCUMSTANCES“We",
+   "to": "CIRCUMSTANCES\"We",
+   "type": "ORG",
+   "aliases": [
+    "CIRCUMSTANCES“We"
+   ]
+  },
+  {
+   "id": 1686,
+   "from": "The 501st Combat Support Wing",
+   "to": "501st Combat Support Wing",
+   "type": "ORG",
+   "aliases": [
+    "The 501st Combat Support Wing"
+   ]
+  },
+  {
+   "id": 1718,
+   "from": "the Centre for Strategic and International Studies",
+   "to": "Centre for Strategic and International Studies",
+   "type": "ORG",
+   "aliases": [
+    "the Centre for Strategic and International Studies"
+   ]
+  },
+  {
+   "id": 1719,
+   "from": "the Open Questions series",
+   "to": "Open Questions series",
+   "type": "EVENT",
+   "aliases": [
+    "the Open Questions series"
+   ]
+  },
+  {
+   "id": 1737,
+   "from": "the Roman Catholic Church holds",
+   "to": "Roman Catholic Church holds",
+   "type": "ORG",
+   "aliases": [
+    "the Roman Catholic Church holds"
+   ]
+  },
+  {
+   "id": 1744,
+   "from": "Cathay Pacific’s",
+   "to": "Cathay Pacific",
+   "type": "ORG",
+   "aliases": [
+    "Cathay Pacific’s"
+   ]
+  },
+  {
+   "id": 1758,
+   "from": "the Nepal National Mountain Guide Association",
+   "to": "Nepal National Mountain Guide Association",
+   "type": "ORG",
+   "aliases": [
+    "the Nepal National Mountain Guide Association"
+   ]
+  },
+  {
+   "id": 1766,
+   "from": "The Hefei Advanced Light Facility",
+   "to": "Hefei Advanced Light Facility",
+   "type": "ORG",
+   "aliases": [
+    "The Hefei Advanced Light Facility"
+   ]
+  },
+  {
+   "id": 1769,
+   "from": "the New Territories",
+   "to": "New Territories",
+   "type": "LOC",
+   "aliases": [
+    "New Territories",
+    "the New Territories"
+   ]
+  },
+  {
+   "id": 1777,
+   "from": "the People’s Republic of China",
+   "to": "People's Republic of China",
+   "type": "GPE",
+   "aliases": [
+    "the People&#8217;s Republic of China",
+    "the People’s Republic of China"
+   ]
+  },
+  {
+   "id": 1778,
+   "from": "The National Day “golden week",
+   "to": "National Day \"golden week",
+   "type": "EVENT",
+   "aliases": [
+    "National Day “golden week",
+    "The National Day “golden week"
+   ]
+  },
+  {
+   "id": 1783,
+   "from": "the National Heart Institute",
+   "to": "National Heart Institute",
+   "type": "ORG",
+   "aliases": [
+    "the National Heart Institute"
+   ]
+  },
+  {
+   "id": 1791,
+   "from": "the State Council",
+   "to": "State Council",
+   "type": "ORG",
+   "aliases": [
+    "State Council",
+    "the State Council"
+   ]
+  },
+  {
+   "id": 1798,
+   "from": "the District Court",
+   "to": "District Court",
+   "type": "ORG",
+   "aliases": [
+    "District Court",
+    "the District Court"
+   ]
+  },
+  {
+   "id": 1799,
+   "from": "country&#039;s",
+   "to": "country",
+   "type": "ORG",
+   "aliases": [
+    "community&#039;s",
+    "country&#039;s"
+   ]
+  },
+  {
+   "id": 1801,
+   "from": "the Hong Kong Metropolitan University’s",
+   "to": "Hong Kong Metropolitan University",
+   "type": "ORG",
+   "aliases": [
+    "Hong Kong Metropolitan University",
+    "the Hong Kong Metropolitan University’s"
+   ]
+  },
+  {
+   "id": 1808,
+   "from": "the State Courts",
+   "to": "State Courts",
+   "type": "ORG",
+   "aliases": [
+    "the State Courts"
+   ]
+  },
+  {
+   "id": 1817,
+   "from": "George Orwell’s",
+   "to": "George Orwell",
+   "type": "PERSON",
+   "aliases": [
+    "George Orwell’s"
+   ]
+  },
+  {
+   "id": 1819,
+   "from": "The post Speed to Fielding Is Not Speed to",
+   "to": "post Speed to Fielding Is Not Speed to",
+   "type": "ORG",
+   "aliases": [
+    "The post Speed to Fielding Is Not Speed to"
+   ]
+  },
+  {
+   "id": 1827,
+   "from": "Data Links NATO&#8217;s",
+   "to": "Data Links NATO",
+   "type": "ORG",
+   "aliases": [
+    "Data Links NATO&#8217;s"
+   ]
+  },
+  {
+   "id": 1850,
+   "from": "Monday&#039;s Nations League",
+   "to": "Monday's Nations League",
+   "type": "ORG",
+   "aliases": [
+    "Monday&#039;s Nations League"
+   ]
+  },
+  {
+   "id": 1856,
+   "from": "the MTV Video Music Awards",
+   "to": "MTV Video Music Awards",
+   "type": "ORG",
+   "aliases": [
+    "the MTV Video Music Awards"
+   ]
+  },
+  {
+   "id": 1859,
+   "from": "the &#039;preparation",
+   "to": "'preparation",
+   "type": "ORG",
+   "aliases": [
+    "the &#039;preparation"
+   ]
+  },
+  {
+   "id": 1869,
+   "from": "the Air Mail Centre",
+   "to": "Air Mail Centre",
+   "type": "ORG",
+   "aliases": [
+    "the Air Mail Centre"
+   ]
+  },
+  {
+   "id": 1874,
+   "from": "Mary Jane Veloso’s",
+   "to": "Mary Jane Veloso",
+   "type": "PERSON",
+   "aliases": [
+    "Mary Jane Veloso",
+    "Mary Jane Veloso’s"
+   ]
+  },
+  {
+   "id": 1876,
+   "from": "the Correctional Institution for Women",
+   "to": "Correctional Institution for Women",
+   "type": "ORG",
+   "aliases": [
+    "the Correctional Institution for Women"
+   ]
+  },
+  {
+   "id": 1882,
+   "from": "Health Information&nbsp;for Serbia",
+   "to": "Health Information for Serbia",
+   "type": "ORG",
+   "aliases": [
+    "Health Information&nbsp;for Serbia"
+   ]
+  },
+  {
+   "id": 1889,
+   "from": "the Central Ethiopia Region",
+   "to": "Central Ethiopia Region",
+   "type": "LOC",
+   "aliases": [
+    "the Central Ethiopia Region"
+   ]
+  },
+  {
+   "id": 1890,
+   "from": "the South Ethiopia Region",
+   "to": "South Ethiopia Region",
+   "type": "LOC",
+   "aliases": [
+    "the South Ethiopia Region",
+    "the Southwest Ethiopia Region"
+   ]
+  },
+  {
+   "id": 1903,
+   "from": "the Left Party",
+   "to": "Left Party",
+   "type": "ORG",
+   "aliases": [
+    "the Left Party"
+   ]
+  },
+  {
+   "id": 1920,
+   "from": "CanSemi Technology’s",
+   "to": "CanSemi Technology",
+   "type": "ORG",
+   "aliases": [
+    "CanSemi Technology’s"
+   ]
+  },
+  {
+   "id": 1931,
+   "from": "The Asian Infrastructure Investment Bank",
+   "to": "Asian Infrastructure Investment Bank",
+   "type": "ORG",
+   "aliases": [
+    "Asian Infrastructure Investment Bank",
+    "The Asian Infrastructure Investment Bank"
+   ]
+  },
+  {
+   "id": 1939,
+   "from": "The Department of Justice",
+   "to": "Department of Justice",
+   "type": "ORG",
+   "aliases": [
+    "Department of Justice",
+    "The Department of Justice"
+   ]
+  },
+  {
+   "id": 1940,
+   "from": "the Arbitration Ordinance",
+   "to": "Arbitration Ordinance",
+   "type": "ORG",
+   "aliases": [
+    "the Arbitration Ordinance"
+   ]
+  },
+  {
+   "id": 1942,
+   "from": "the Aerospace Industries Association",
+   "to": "Aerospace Industries Association",
+   "type": "ORG",
+   "aliases": [
+    "the Aerospace Industries Association"
+   ]
+  },
+  {
+   "id": 1943,
+   "from": "Bain &#038",
+   "to": "Bain &",
+   "type": "ORG",
+   "aliases": [
+    "Bain &#038"
+   ]
+  },
+  {
+   "id": 1950,
+   "from": "the Census and Statistics Department",
+   "to": "Census and Statistics Department",
+   "type": "ORG",
+   "aliases": [
+    "Census and Statistics Department",
+    "the Census and Statistics Department"
+   ]
+  },
+  {
+   "id": 1955,
+   "from": "the Trade Development Council",
+   "to": "Trade Development Council",
+   "type": "ORG",
+   "aliases": [
+    "the Trade Development Council"
+   ]
+  },
+  {
+   "id": 1957,
+   "from": "the Global South",
+   "to": "Global South",
+   "type": "LOC",
+   "aliases": [
+    "Global South",
+    "the Global South"
+   ]
+  },
+  {
+   "id": 1967,
+   "from": "The Chinese Academy of Sciences",
+   "to": "Chinese Academy of Sciences",
+   "type": "ORG",
+   "aliases": [
+    "Chinese Academy of Sciences",
+    "National Academy of Sciences",
+    "The Chinese Academy of Sciences"
+   ]
+  },
+  {
+   "id": 1971,
+   "from": "the UDPS party’s",
+   "to": "UDPS party",
+   "type": "ORG",
+   "aliases": [
+    "the UDPS party’s"
+   ]
+  },
+  {
+   "id": 1974,
+   "from": "the South West State",
+   "to": "South West State",
+   "type": "LOC",
+   "aliases": [
+    "the South West State"
+   ]
+  },
+  {
+   "id": 1996,
+   "from": "the US Treasury Department",
+   "to": "US Treasury Department",
+   "type": "ORG",
+   "aliases": [
+    "the US Treasury Department"
+   ]
+  },
+  {
+   "id": 2005,
+   "from": "Hurricane Polo Residents of Mexico’s",
+   "to": "Hurricane Polo Residents of Mexico",
+   "type": "EVENT",
+   "aliases": [
+    "Hurricane Polo Residents of Mexico’s"
+   ]
+  },
+  {
+   "id": 2009,
+   "from": "the University of Michigan",
+   "to": "University of Michigan",
+   "type": "ORG",
+   "aliases": [
+    "the University of Michigan"
+   ]
+  },
+  {
+   "id": 2019,
+   "from": "the Police Tactical Unit",
+   "to": "Police Tactical Unit",
+   "type": "ORG",
+   "aliases": [
+    "the Police Tactical Unit"
+   ]
+  },
+  {
+   "id": 2028,
+   "from": "the Council of the EU",
+   "to": "Council of the EU",
+   "type": "ORG",
+   "aliases": [
+    "the Council of the EU"
+   ]
+  },
+  {
+   "id": 2034,
+   "from": "the Russian &#8220;state",
+   "to": "Russian \"state",
+   "type": "ORG",
+   "aliases": [
+    "the Russian &#8220;state"
+   ]
+  },
+  {
+   "id": 2053,
+   "from": "October&#039;s Knesset",
+   "to": "October's Knesset",
+   "type": "ORG",
+   "aliases": [
+    "October&#039;s Knesset"
+   ]
+  },
+  {
+   "id": 2067,
+   "from": "France&#039;s National Rally party",
+   "to": "France's National Rally party",
+   "type": "ORG",
+   "aliases": [
+    "France&#039;s National Rally party"
+   ]
+  },
+  {
+   "id": 2070,
+   "from": "Israel Slovenia’s",
+   "to": "Israel Slovenia",
+   "type": "GPE",
+   "aliases": [
+    "Israel Slovenia’s"
+   ]
+  },
+  {
+   "id": 2091,
+   "from": "the November 3 midterms",
+   "to": "November 3 midterms",
+   "type": "EVENT",
+   "aliases": [
+    "the November 3 midterms"
+   ]
+  },
+  {
+   "id": 2094,
+   "from": "the Catholic Church",
+   "to": "Catholic Church",
+   "type": "ORG",
+   "aliases": [
+    "Catholic Church",
+    "the Catholic Church"
+   ]
+  },
+  {
+   "id": 2102,
+   "from": "Hungary&#039;s Parliament",
+   "to": "Hungary's Parliament",
+   "type": "ORG",
+   "aliases": [
+    "Hungary&#039;s Parliament"
+   ]
+  },
+  {
+   "id": 2104,
+   "from": "the Africa Space Expo",
+   "to": "Africa Space Expo",
+   "type": "ORG",
+   "aliases": [
+    "the Africa Space Expo"
+   ]
+  },
+  {
+   "id": 2106,
+   "from": "Inside Al Jazeera’s",
+   "to": "Inside Al Jazeera",
+   "type": "ORG",
+   "aliases": [
+    "Inside Al Jazeera’s"
+   ]
+  },
+  {
+   "id": 2113,
+   "from": "Jonathan McKinsey's",
+   "to": "Jonathan McKinsey",
+   "type": "PERSON",
+   "aliases": [
+    "Jonathan McKinsey",
+    "Jonathan McKinsey's"
+   ]
+  },
+  {
+   "id": 2117,
+   "from": "Split Enz's",
+   "to": "Split Enz",
+   "type": "PERSON",
+   "aliases": [
+    "Split Enz's"
+   ]
+  },
+  {
+   "id": 2122,
+   "from": "the MTR Corporation",
+   "to": "MTR Corporation",
+   "type": "ORG",
+   "aliases": [
+    "MTR Corporation",
+    "the MTR Corporation"
+   ]
+  },
+  {
+   "id": 2123,
+   "from": "the WorldSkills Competition",
+   "to": "WorldSkills Competition",
+   "type": "EVENT",
+   "aliases": [
+    "the WorldSkills Competition"
+   ]
+  },
+  {
+   "id": 2130,
+   "from": "Li Fei-Fei’s",
+   "to": "Li Fei-Fei",
+   "type": "PERSON",
+   "aliases": [
+    "Li Fei-Fei",
+    "Li Fei-Fei’s"
+   ]
+  },
+  {
+   "id": 2138,
+   "from": "the China Geological Survey",
+   "to": "China Geological Survey",
+   "type": "ORG",
+   "aliases": [
+    "the China Geological Survey"
+   ]
+  },
+  {
+   "id": 2139,
+   "from": "the official ministry newspaper",
+   "to": "official ministry newspaper",
+   "type": "ORG",
+   "aliases": [
+    "the official ministry newspaper"
+   ]
+  },
+  {
+   "id": 2143,
+   "from": "the Unesco Global Geopark",
+   "to": "Unesco Global Geopark",
+   "type": "ORG",
+   "aliases": [
+    "the Unesco Global Geopark"
+   ]
+  },
+  {
+   "id": 2145,
+   "from": "the Third Affiliated Hospital of Guangzhou Medical University",
+   "to": "Third Affiliated Hospital of Guangzhou Medical University",
+   "type": "ORG",
+   "aliases": [
+    "the Third Affiliated Hospital of Guangzhou Medical University"
+   ]
+  },
+  {
+   "id": 2150,
+   "from": "the Pinglu Canal",
+   "to": "Pinglu Canal",
+   "type": "LOC",
+   "aliases": [
+    "the Pinglu Canal"
+   ]
+  },
+  {
+   "id": 2153,
+   "from": "the Gulf of Tonkin",
+   "to": "Gulf of Tonkin",
+   "type": "LOC",
+   "aliases": [
+    "the Gulf of Tonkin"
+   ]
+  },
+  {
+   "id": 2154,
+   "from": "the Beibu Gulf",
+   "to": "Beibu Gulf",
+   "type": "LOC",
+   "aliases": [
+    "the Beibu Gulf"
+   ]
+  },
+  {
+   "id": 2166,
+   "from": "The Manhattan Project Mindset: How Nuclear Analogies Are Steering AI Policy Off",
+   "to": "Manhattan Project Mindset: How Nuclear Analogies Are Steering AI Policy Off",
+   "type": "ORG",
+   "aliases": [
+    "The Manhattan Project Mindset: How Nuclear Analogies Are Steering AI Policy",
+    "The Manhattan Project Mindset: How Nuclear Analogies Are Steering AI Policy Off"
+   ]
+  },
+  {
+   "id": 2167,
+   "from": "the Industrial Revolution",
+   "to": "Industrial Revolution",
+   "type": "EVENT",
+   "aliases": [
+    "the Industrial Revolution"
+   ]
+  },
+  {
+   "id": 2169,
+   "from": "the Association of Hong Kong Nursing",
+   "to": "Association of Hong Kong Nursing",
+   "type": "ORG",
+   "aliases": [
+    "the Association of Hong Kong Nursing"
+   ]
+  },
+  {
+   "id": 2170,
+   "from": "the U.S. Military Military",
+   "to": "U.S. Military Military",
+   "type": "ORG",
+   "aliases": [
+    "the U.S. Military Military"
+   ]
+  },
+  {
+   "id": 2171,
+   "from": "the U.S. Military",
+   "to": "U.S. Military",
+   "type": "ORG",
+   "aliases": [
+    "the U.S. Military"
+   ]
+  },
+  {
+   "id": 2191,
+   "from": "the Alliance of Concerned Teachers",
+   "to": "Alliance of Concerned Teachers",
+   "type": "ORG",
+   "aliases": [
+    "the Alliance of Concerned Teachers"
+   ]
+  },
+  {
+   "id": 2192,
+   "from": "the Future Combat Systems",
+   "to": "Future Combat Systems",
+   "type": "ORG",
+   "aliases": [
+    "the Future Combat Systems"
+   ]
+  },
+  {
+   "id": 2194,
+   "from": "a&#160;&#8220;system",
+   "to": "a \"system",
+   "type": "GPE",
+   "aliases": [
+    "a&#160;&#8220;system"
+   ]
+  },
+  {
+   "id": 2199,
+   "from": "the National Natural Science Foundation of China",
+   "to": "National Natural Science Foundation of China",
+   "type": "ORG",
+   "aliases": [
+    "the National Natural Science Foundation of China"
+   ]
+  },
+  {
+   "id": 2212,
+   "from": "Burkina Faso's",
+   "to": "Burkina Faso",
+   "type": "GPE",
+   "aliases": [
+    "Burkina Faso's"
+   ]
+  },
+  {
+   "id": 2220,
+   "from": "the US Open",
+   "to": "US Open",
+   "type": "EVENT",
+   "aliases": [
+    "US Open",
+    "the US Open"
+   ]
+  },
+  {
+   "id": 2230,
+   "from": "the Shanghai Stock Exchange’s",
+   "to": "Shanghai Stock Exchange",
+   "type": "ORG",
+   "aliases": [
+    "the Shanghai Stock Exchange’s"
+   ]
+  },
+  {
+   "id": 2233,
+   "from": "the Korean war armistice",
+   "to": "Korean war armistice",
+   "type": "EVENT",
+   "aliases": [
+    "the Korean war armistice"
+   ]
+  },
+  {
+   "id": 2243,
+   "from": "The University of International Business and Economics",
+   "to": "University of International Business and Economics",
+   "type": "ORG",
+   "aliases": [
+    "The University of International Business and Economics"
+   ]
+  },
+  {
+   "id": 2244,
+   "from": "the Chinese Institute of Command",
+   "to": "Chinese Institute of Command",
+   "type": "ORG",
+   "aliases": [
+    "the Chinese Institute of Command"
+   ]
+  },
+  {
+   "id": 2255,
+   "from": "The Royal New Zealand Navy",
+   "to": "Royal New Zealand Navy",
+   "type": "ORG",
+   "aliases": [
+    "The Royal New Zealand Navy"
+   ]
+  },
+  {
+   "id": 2271,
+   "from": "the 7th Armored Brigade",
+   "to": "7th Armored Brigade",
+   "type": "ORG",
+   "aliases": [
+    "the 7th Armored Brigade"
+   ]
+  },
+  {
+   "id": 2273,
+   "from": "the Royal United Services Institute",
+   "to": "Royal United Services Institute",
+   "type": "ORG",
+   "aliases": [
+    "the Royal United Services Institute"
+   ]
+  },
+  {
+   "id": 2296,
+   "from": "the China Institutes of Contemporary International Relations",
+   "to": "China Institutes of Contemporary International Relations",
+   "type": "ORG",
+   "aliases": [
+    "the China Institutes of Contemporary International Relations"
+   ]
+  },
+  {
+   "id": 2298,
+   "from": "the Ministry of State Security",
+   "to": "Ministry of State Security",
+   "type": "ORG",
+   "aliases": [
+    "the Ministry of State Security",
+    "‌the Chinese Ministry of State Security"
+   ]
+  },
+  {
+   "id": 2299,
+   "from": "The Tourism Board’s",
+   "to": "Tourism Board",
+   "type": "ORG",
+   "aliases": [
+    "The Tourism Board’s"
+   ]
+  },
+  {
+   "id": 2313,
+   "from": "GE Aerospace’s",
+   "to": "GE Aerospace",
+   "type": "ORG",
+   "aliases": [
+    "GE Aerospace’s"
+   ]
+  },
+  {
+   "id": 2323,
+   "from": "the iPhone Duo",
+   "to": "iPhone Duo",
+   "type": "ORG",
+   "aliases": [
+    "iPhone Duo",
+    "the iPhone Duo"
+   ]
+  },
+  {
+   "id": 2326,
+   "from": "the China Internet Network Information Centre",
+   "to": "China Internet Network Information Centre",
+   "type": "ORG",
+   "aliases": [
+    "the China Internet Network Information Centre"
+   ]
+  },
+  {
+   "id": 2339,
+   "from": "Spain&#039;s Alonso",
+   "to": "Spain's Alonso",
+   "type": "PERSON",
+   "aliases": [
+    "Spain&#039;s Alonso"
+   ]
+  },
+  {
+   "id": 2343,
+   "from": "Tsinghua University’s School of Economics and Management",
+   "to": "Tsinghua University's School of Economics and Management",
+   "type": "ORG",
+   "aliases": [
+    "Tsinghua University’s School of Economics and Management"
+   ]
+  },
+  {
+   "id": 2350,
+   "from": "The Legal Aid Department",
+   "to": "Legal Aid Department",
+   "type": "ORG",
+   "aliases": [
+    "The Legal Aid Department"
+   ]
+  },
+  {
+   "id": 2354,
+   "from": "UNGA Sudan&#039;s",
+   "to": "UNGA Sudan",
+   "type": "ORG",
+   "aliases": [
+    "UNGA Sudan&#039;s"
+   ]
+  },
+  {
+   "id": 2357,
+   "from": "the October 7",
+   "to": "October 7",
+   "type": "EVENT",
+   "aliases": [
+    "October 7",
+    "the October 7"
+   ]
+  },
+  {
+   "id": 2361,
+   "from": "the Estonian Internal Security Service",
+   "to": "Estonian Internal Security Service",
+   "type": "ORG",
+   "aliases": [
+    "the Estonian Internal Security Service"
+   ]
+  },
+  {
+   "id": 2383,
+   "from": "the Islamic Resistance in Iraq",
+   "to": "Islamic Resistance in Iraq",
+   "type": "ORG",
+   "aliases": [
+    "the Islamic Resistance in Iraq"
+   ]
+  },
+  {
+   "id": 2384,
+   "from": "‌umbrella",
+   "to": "umbrella",
+   "type": "ORG",
+   "aliases": [
+    "‌umbrella"
+   ]
+  },
+  {
+   "id": 2393,
+   "from": "the National Security Commission",
+   "to": "National Security Commission",
+   "type": "ORG",
+   "aliases": [
+    "the National Security Commission"
+   ]
+  },
+  {
+   "id": 2399,
+   "from": "the House Permanent Select Committee on Intelligence",
+   "to": "House Permanent Select Committee on Intelligence",
+   "type": "ORG",
+   "aliases": [
+    "House Permanent Select Committee on Intelligence",
+    "the House Permanent Select Committee on Intelligence",
+    "the Senate Select Committee on Intelligence"
+   ]
+  },
+  {
+   "id": 2400,
+   "from": "a &#8220;likely&#8221",
+   "to": "a \"likely",
+   "type": "ORG",
+   "aliases": [
+    "a &#8220;likely&#8221"
+   ]
+  },
+  {
+   "id": 2404,
+   "from": "The Conference Board",
+   "to": "Conference Board",
+   "type": "ORG",
+   "aliases": [
+    "The Conference Board"
+   ]
+  },
+  {
+   "id": 2409,
+   "from": "Chloe Tong Tsam-yu’s",
+   "to": "Chloe Tong Tsam-yu",
+   "type": "PERSON",
+   "aliases": [
+    "Chloe Tong Tsam-yu’s"
+   ]
+  },
+  {
+   "id": 2423,
+   "from": "&#039;premeditated",
+   "to": "premeditated",
+   "type": "ORG",
+   "aliases": [
+    "&#039;premeditated"
+   ]
+  },
+  {
+   "id": 2424,
+   "from": "Labour Party conference &#039;fundamental",
+   "to": "Labour Party conference 'fundamental",
+   "type": "ORG",
+   "aliases": [
+    "Labour Party conference &#039;fundamental"
+   ]
+  },
+  {
+   "id": 2430,
+   "from": "the Royal Air Force Fairford",
+   "to": "Royal Air Force Fairford",
+   "type": "ORG",
+   "aliases": [
+    "the Royal Air Force Fairford"
+   ]
+  },
+  {
+   "id": 2436,
+   "from": "the Joint Force",
+   "to": "Joint Force",
+   "type": "ORG",
+   "aliases": [
+    "Joint Force",
+    "the Joint Force"
+   ]
+  },
+  {
+   "id": 2441,
+   "from": "the National Advanced Surface-to-Air Missile System",
+   "to": "National Advanced Surface-to-Air Missile System",
+   "type": "ORG",
+   "aliases": [
+    "the National Advanced Surface-to-Air Missile System"
+   ]
+  },
+  {
+   "id": 2442,
+   "from": "the AIM-260 Joint Advanced Tactical Missile",
+   "to": "AIM-260 Joint Advanced Tactical Missile",
+   "type": "ORG",
+   "aliases": [
+    "AIM-260 Joint Advanced Tactical Missile",
+    "the AIM-260 Joint Advanced Tactical Missile"
+   ]
+  },
+  {
+   "id": 2444,
+   "from": "The USS Klakring",
+   "to": "USS Klakring",
+   "type": "PRODUCT",
+   "aliases": [
+    "The USS Klakring"
+   ]
+  },
+  {
+   "id": 2450,
+   "from": "the Iran-Iraq War",
+   "to": "Iran-Iraq War",
+   "type": "EVENT",
+   "aliases": [
+    "the Iran-Iraq War"
+   ]
+  },
+  {
+   "id": 2456,
+   "from": "the Standard Missile 6",
+   "to": "Standard Missile 6",
+   "type": "FAC",
+   "aliases": [
+    "the Standard Missile 6"
+   ]
+  },
+  {
+   "id": 2464,
+   "from": "the Ban Keun Airport",
+   "to": "Ban Keun Airport",
+   "type": "ORG",
+   "aliases": [
+    "Ban Keun Airport",
+    "the Ban Keun Airport"
+   ]
+  },
+  {
+   "id": 2490,
+   "from": "Christa Pike's",
+   "to": "Christa Pike",
+   "type": "PERSON",
+   "aliases": [
+    "Christa Pike",
+    "Christa Pike's"
+   ]
+  },
+  {
+   "id": 2491,
+   "from": "secretary&#039;s &#039;State",
+   "to": "secretary's 'State",
+   "type": "ORG",
+   "aliases": [
+    "secretary&#039;s &#039;State"
+   ]
+  },
+  {
+   "id": 2493,
+   "from": "Netanyahu&#039;s",
+   "to": "Netanyahu",
+   "type": "PERSON",
+   "aliases": [
+    "Netanyahu&#039;s"
+   ]
+  },
+  {
+   "id": 2494,
+   "from": "month&#039;s",
+   "to": "month",
+   "type": "ORG",
+   "aliases": [
+    "month&#039;s"
+   ]
+  },
+  {
+   "id": 2503,
+   "from": "industry&#039;s",
+   "to": "industry",
+   "type": "ORG",
+   "aliases": [
+    "industry&#039;s"
+   ]
+  },
+  {
+   "id": 2507,
+   "from": "national &#039;Sovereignty",
+   "to": "national 'Sovereignty",
+   "type": "ORG",
+   "aliases": [
+    "national &#039;Sovereignty"
+   ]
+  },
+  {
+   "id": 2509,
+   "from": "The Housing Bureau",
+   "to": "Housing Bureau",
+   "type": "ORG",
+   "aliases": [
+    "Housing Bureau",
+    "The Housing Bureau"
+   ]
+  },
+  {
+   "id": 2511,
+   "from": "the “Cornell 7”",
+   "to": "\"Cornell 7",
+   "type": "ORG",
+   "aliases": [
+    "the ‘Cornell 7’",
+    "the “Cornell 7”"
+   ]
+  },
+  {
+   "id": 2518,
+   "from": "PayMe and HSBC’s",
+   "to": "PayMe and HSBC",
+   "type": "ORG",
+   "aliases": [
+    "PayMe and HSBC’s"
+   ]
+  },
+  {
+   "id": 2520,
+   "from": "the National Radio and Television",
+   "to": "National Radio and Television",
+   "type": "ORG",
+   "aliases": [
+    "the National Radio and Television"
+   ]
+  },
+  {
+   "id": 2530,
+   "from": "The National Security Department",
+   "to": "National Security Department",
+   "type": "ORG",
+   "aliases": [
+    "The National Security Department"
+   ]
+  },
+  {
+   "id": 2534,
+   "from": "‌aboard",
+   "to": "aboard",
+   "type": "ORG",
+   "aliases": [
+    "‌aboard"
+   ]
+  },
+  {
+   "id": 2536,
+   "from": "the Affiliated Kindergarten",
+   "to": "Affiliated Kindergarten",
+   "type": "FAC",
+   "aliases": [
+    "the Affiliated Kindergarten"
+   ]
+  },
+  {
+   "id": 2541,
+   "from": "Raising Hong Kong’s",
+   "to": "Raising Hong Kong",
+   "type": "ORG",
+   "aliases": [
+    "Raising Hong Kong’s"
+   ]
+  },
+  {
+   "id": 2545,
+   "from": "The Elmet Group",
+   "to": "Elmet Group",
+   "type": "ORG",
+   "aliases": [
+    "The Elmet Group"
+   ]
+  },
+  {
+   "id": 2571,
+   "from": "Huawei Technologies’ Ascend AI",
+   "to": "Huawei Technologies' Ascend AI",
+   "type": "ORG",
+   "aliases": [
+    "Huawei Technologies’ Ascend AI"
+   ]
+  },
+  {
+   "id": 2573,
+   "from": "the Department of Tourism",
+   "to": "Department of Tourism",
+   "type": "ORG",
+   "aliases": [
+    "Department of Tourism",
+    "the Department of Tourism"
+   ]
+  },
+  {
+   "id": 2575,
+   "from": "the Philippine Star",
+   "to": "Philippine Star",
+   "type": "ORG",
+   "aliases": [
+    "the Philippine Star"
+   ]
+  },
+  {
+   "id": 2581,
+   "from": "US president&#039;s",
+   "to": "US president",
+   "type": "EVENT",
+   "aliases": [
+    "US president&#039;s"
+   ]
+  },
+  {
+   "id": 2583,
+   "from": "Meta&#039;s Muse",
+   "to": "Meta's Muse",
+   "type": "ORG",
+   "aliases": [
+    "Meta&#039;s Muse"
+   ]
+  },
+  {
+   "id": 2584,
+   "from": "Google&#039;s Gemini Spark",
+   "to": "Google's Gemini Spark",
+   "type": "ORG",
+   "aliases": [
+    "Google&#039;s Gemini Spark"
+   ]
+  },
+  {
+   "id": 2586,
+   "from": "Scott\n",
+   "to": "Scott",
+   "type": "PERSON",
+   "aliases": [
+    "Scott\n"
+   ]
+  },
+  {
+   "id": 2592,
+   "from": "That&#8217;s",
+   "to": "That",
+   "type": "ORG",
+   "aliases": [
+    "That&#8217;s"
+   ]
+  },
+  {
+   "id": 2593,
+   "from": "I&#8217;ve",
+   "to": "I've",
+   "type": "ORG",
+   "aliases": [
+    "I&#8217;ve"
+   ]
+  },
+  {
+   "id": 2600,
+   "from": "the Hong Kong Monetary Authority",
+   "to": "Hong Kong Monetary Authority",
+   "type": "ORG",
+   "aliases": [
+    "Hong Kong Monetary Authority",
+    "the Hong Kong Monetary Authority"
+   ]
+  },
+  {
+   "id": 2605,
+   "from": "the Alaska Peninsula",
+   "to": "Alaska Peninsula",
+   "type": "LOC",
+   "aliases": [
+    "the Alaska Peninsula"
+   ]
+  },
+  {
+   "id": 2618,
+   "from": "plane experiences &quot;incident&quot",
+   "to": "plane experiences \"incident",
+   "type": "ORG",
+   "aliases": [
+    "plane experiences &quot;incident&quot"
+   ]
+  },
+  {
+   "id": 2620,
+   "from": "the Korea JoongAng Daily",
+   "to": "Korea JoongAng Daily",
+   "type": "ORG",
+   "aliases": [
+    "Korea JoongAng Daily",
+    "the Korea JoongAng Daily"
+   ]
+  },
+  {
+   "id": 2625,
+   "from": "the National Capital Region",
+   "to": "National Capital Region",
+   "type": "ORG",
+   "aliases": [
+    "the National Capital Region"
+   ]
+  },
+  {
+   "id": 2630,
+   "from": "the Army of Drones",
+   "to": "Army of Drones",
+   "type": "ORG",
+   "aliases": [
+    "the Army of Drones",
+    "“The Army of Drones"
+   ]
+  },
+  {
+   "id": 2647,
+   "from": "the Future of Trade Forum",
+   "to": "Future of Trade Forum",
+   "type": "ORG",
+   "aliases": [
+    "the Future of Trade Forum"
+   ]
+  },
+  {
+   "id": 2652,
+   "from": "M&amp;G Investments and Natixis Investment Managers",
+   "to": "M&G Investments and Natixis Investment Managers",
+   "type": "ORG",
+   "aliases": [
+    "M&amp;G Investments and Natixis Investment Managers"
+   ]
+  },
+  {
+   "id": 2653,
+   "from": "the Monetary Authority of Singapore’s",
+   "to": "Monetary Authority of Singapore",
+   "type": "ORG",
+   "aliases": [
+    "the Monetary Authority of Singapore’s"
+   ]
+  },
+  {
+   "id": 2670,
+   "from": "Chad Lowe '",
+   "to": "Chad Lowe",
+   "type": "PERSON",
+   "aliases": [
+    "Chad Lowe '"
+   ]
+  },
+  {
+   "id": 2676,
+   "from": "the International Peace Institute",
+   "to": "International Peace Institute",
+   "type": "ORG",
+   "aliases": [
+    "the International Peace Institute"
+   ]
+  },
+  {
+   "id": 2680,
+   "from": "the Hong Kong University of Science and Technology",
+   "to": "Hong Kong University of Science and Technology",
+   "type": "ORG",
+   "aliases": [
+    "the Hong Kong University of Science and Technology"
+   ]
+  },
+  {
+   "id": 2684,
+   "from": "the “",
+   "to": "the",
+   "type": "ORG",
+   "aliases": [
+    "the “"
+   ]
+  },
+  {
+   "id": 2687,
+   "from": "The Football Association of Ireland",
+   "to": "Football Association of Ireland",
+   "type": "ORG",
+   "aliases": [
+    "The Football Association of Ireland"
+   ]
+  },
+  {
+   "id": 2688,
+   "from": "the Korean Demilitarized Zone",
+   "to": "Korean Demilitarized Zone",
+   "type": "LOC",
+   "aliases": [
+    "the Korean Demilitarized Zone"
+   ]
+  },
+  {
+   "id": 2694,
+   "from": "the Abu Dhabi Media Office",
+   "to": "Abu Dhabi Media Office",
+   "type": "ORG",
+   "aliases": [
+    "the Abu Dhabi Media Office"
+   ]
+  },
+  {
+   "id": 2720,
+   "from": "&#039;Sovereignty",
+   "to": "Sovereignty",
+   "type": "ORG",
+   "aliases": [
+    "&#039;Sovereignty"
+   ]
+  },
+  {
+   "id": 2724,
+   "from": "the People’s Republic",
+   "to": "People's Republic",
+   "type": "GPE",
+   "aliases": [
+    "the People’s Republic"
+   ]
+  },
+  {
+   "id": 2727,
+   "from": "the Environmental Protection Department",
+   "to": "Environmental Protection Department",
+   "type": "ORG",
+   "aliases": [
+    "the Environmental Protection Department"
+   ]
+  },
+  {
+   "id": 2732,
+   "from": "‌said",
+   "to": "said",
+   "type": "PERSON",
+   "aliases": [
+    "‌said"
+   ]
+  },
+  {
+   "id": 2734,
+   "from": "Siegfried Muresan&#039;s",
+   "to": "Siegfried Muresan",
+   "type": "PERSON",
+   "aliases": [
+    "Siegfried Muresan&#039;s"
+   ]
+  },
+  {
+   "id": 2760,
+   "from": "the Vietnam War",
+   "to": "Vietnam War",
+   "type": "EVENT",
+   "aliases": [
+    "the Vietnam War"
+   ]
+  },
+  {
+   "id": 2774,
+   "from": "Atlantic City 2026’s",
+   "to": "Atlantic City 2026",
+   "type": "LOC",
+   "aliases": [
+    "Atlantic City 2026",
+    "Atlantic City 2026’s"
+   ]
+  },
+  {
+   "id": 2781,
+   "from": "the Home Office",
+   "to": "Home Office",
+   "type": "ORG",
+   "aliases": [
+    "the Home Office"
+   ]
+  },
+  {
+   "id": 2796,
+   "from": "The Chinese Ministry of Commerce",
+   "to": "Chinese Ministry of Commerce",
+   "type": "ORG",
+   "aliases": [
+    "The Chinese Ministry of Commerce"
+   ]
+  },
+  {
+   "id": 2798,
+   "from": "the Defense Intelligence Agency",
+   "to": "Defense Intelligence Agency",
+   "type": "ORG",
+   "aliases": [
+    "the Defense Intelligence Agency"
+   ]
+  },
+  {
+   "id": 2800,
+   "from": "the China General Technology Research Institute (CGTRI",
+   "to": "China General Technology Research Institute (CGTRI",
+   "type": "ORG",
+   "aliases": [
+    "the China General Technology Research Institute (CGTRI"
+   ]
+  },
+  {
+   "id": 2809,
+   "from": "the Air Force Troy Meink",
+   "to": "Air Force Troy Meink",
+   "type": "ORG",
+   "aliases": [
+    "Air Force Troy Meink",
+    "the Air Force Troy Meink"
+   ]
+  },
+  {
+   "id": 2813,
+   "from": "Space Forces Association’s",
+   "to": "Space Forces Association",
+   "type": "ORG",
+   "aliases": [
+    "Space Forces Association’s"
+   ]
+  },
+  {
+   "id": 2817,
+   "from": "the Office of the Deputy",
+   "to": "Office of the Deputy",
+   "type": "ORG",
+   "aliases": [
+    "Office of the Deputy",
+    "the Office of the Deputy",
+    "the Office of the Under"
+   ]
+  },
+  {
+   "id": 2818,
+   "from": "the Senate Armed Services Committee",
+   "to": "Senate Armed Services Committee",
+   "type": "ORG",
+   "aliases": [
+    "the Senate Armed Services Committee",
+    "the Senate Armed Services Committee’s"
+   ]
+  },
+  {
+   "id": 2832,
+   "from": "the Air Force for Lots 1 through 7",
+   "to": "Air Force for Lots 1 through 7",
+   "type": "ORG",
+   "aliases": [
+    "the Air Force for Lots 1 through 7"
+   ]
+  },
+  {
+   "id": 2835,
+   "from": "the kingdom &#039;will",
+   "to": "kingdom 'will",
+   "type": "ORG",
+   "aliases": [
+    "the kingdom &#039;will"
+   ]
+  },
+  {
+   "id": 2841,
+   "from": "&#039;true",
+   "to": "true",
+   "type": "ORG",
+   "aliases": [
+    "&#039;true"
+   ]
+  },
+  {
+   "id": 2843,
+   "from": "&#039;extraordinary",
+   "to": "extraordinary",
+   "type": "ORG",
+   "aliases": [
+    "&#039;extraordinary"
+   ]
+  },
+  {
+   "id": 2845,
+   "from": "the English Channel",
+   "to": "English Channel",
+   "type": "EVENT",
+   "aliases": [
+    "the English Channel"
+   ]
+  },
+  {
+   "id": 2854,
+   "from": "the Global Forum on Steel Excess Capacity",
+   "to": "Global Forum on Steel Excess Capacity",
+   "type": "EVENT",
+   "aliases": [
+    "the Global Forum on Steel Excess Capacity"
+   ]
+  },
+  {
+   "id": 2890,
+   "from": "CVE-2025-0247:",
+   "to": "CVE-2025-0247",
+   "type": "ORG",
+   "aliases": [
+    "CVE-2025-0247:"
+   ]
+  },
+  {
+   "id": 2910,
+   "from": "The Malaysian Medical Association",
+   "to": "Malaysian Medical Association",
+   "type": "ORG",
+   "aliases": [
+    "The Malaysian Medical Association"
+   ]
+  },
+  {
+   "id": 2915,
+   "from": "the Long March",
+   "to": "Long March",
+   "type": "EVENT",
+   "aliases": [
+    "Long March",
+    "the Long March"
+   ]
+  },
+  {
+   "id": 2924,
+   "from": "John Lee Hong Kong’s",
+   "to": "John Lee Hong Kong",
+   "type": "PERSON",
+   "aliases": [
+    "John Lee Hong Kong’s"
+   ]
+  },
+  {
+   "id": 2929,
+   "from": "the Jia Hai Ke 7",
+   "to": "Jia Hai Ke 7",
+   "type": "PERSON",
+   "aliases": [
+    "the Jia Hai Ke 7"
+   ]
+  },
+  {
+   "id": 2939,
+   "from": "the Glacier Monitoring",
+   "to": "Glacier Monitoring",
+   "type": "ORG",
+   "aliases": [
+    "the Glacier Monitoring"
+   ]
+  },
+  {
+   "id": 2943,
+   "from": "the Philippine Nuclear Research Institute",
+   "to": "Philippine Nuclear Research Institute",
+   "type": "ORG",
+   "aliases": [
+    "the Philippine Nuclear Research Institute"
+   ]
+  },
+  {
+   "id": 2951,
+   "from": "National Day ‘golden week’ More than 400",
+   "to": "National Day 'golden week' More than 400",
+   "type": "EVENT",
+   "aliases": [
+    "National Day ‘golden week’ More than 400"
+   ]
+  },
+  {
+   "id": 2954,
+   "from": "the Southeast Asia Climate Outlook",
+   "to": "Southeast Asia Climate Outlook",
+   "type": "LOC",
+   "aliases": [
+    "the Southeast Asia Climate Outlook"
+   ]
+  },
+  {
+   "id": 2959,
+   "from": "the Chinese Academy of Sciences’ Institute of Artificial Intelligence for Industries",
+   "to": "Chinese Academy of Sciences' Institute of Artificial Intelligence for Industries",
+   "type": "ORG",
+   "aliases": [
+    "the Chinese Academy of Sciences’ Institute of Artificial Intelligence for Industries"
+   ]
+  },
+  {
+   "id": 2966,
+   "from": "Hotstone Yoga’s",
+   "to": "Hotstone Yoga",
+   "type": "ORG",
+   "aliases": [
+    "Hotstone Yoga",
+    "Hotstone Yoga’s"
+   ]
+  },
+  {
+   "id": 2975,
+   "from": "gov’t AI",
+   "to": "gov't AI",
+   "type": "ORG",
+   "aliases": [
+    "gov’t AI"
+   ]
+  },
+  {
+   "id": 2984,
+   "from": "the National Narcotics Agency",
+   "to": "National Narcotics Agency",
+   "type": "ORG",
+   "aliases": [
+    "the National Narcotics Agency"
+   ]
+  },
+  {
+   "id": 2987,
+   "from": "the House Commission on Legal Affairs",
+   "to": "House Commission on Legal Affairs",
+   "type": "ORG",
+   "aliases": [
+    "the House Commission on Legal Affairs"
+   ]
+  },
+  {
+   "id": 2999,
+   "from": "&nbsp;U.S.",
+   "to": "U.S.",
+   "type": "ORG",
+   "aliases": [
+    "&nbsp;U.S."
+   ]
+  },
+  {
+   "id": 3000,
+   "from": "for&nbsp;Travel",
+   "to": "for Travel",
+   "type": "GPE",
+   "aliases": [
+    "for&nbsp;Travel"
+   ]
+  },
+  {
+   "id": 3001,
+   "from": "&nbsp;Be",
+   "to": "Be",
+   "type": "PRODUCT",
+   "aliases": [
+    "&nbsp;Be"
+   ]
+  },
+  {
+   "id": 3011,
+   "from": "the Department of Government Efficiency",
+   "to": "Department of Government Efficiency",
+   "type": "ORG",
+   "aliases": [
+    "the Department of Government Efficiency"
+   ]
+  },
+  {
+   "id": 3032,
+   "from": "the Tactical Missiles Corporation",
+   "to": "Tactical Missiles Corporation",
+   "type": "ORG",
+   "aliases": [
+    "the Tactical Missiles Corporation"
+   ]
+  },
+  {
+   "id": 3043,
+   "from": "the Russian Aerospace Forces",
+   "to": "Russian Aerospace Forces",
+   "type": "ORG",
+   "aliases": [
+    "the Russian Aerospace Forces"
+   ]
+  },
+  {
+   "id": 3045,
+   "from": "the Mitchell Institute for Aerospace Studies",
+   "to": "Mitchell Institute for Aerospace Studies",
+   "type": "ORG",
+   "aliases": [
+    "Mitchell Institute for Aerospace Studies",
+    "the Mitchell Institute for Aerospace Studies"
+   ]
+  },
+  {
+   "id": 3046,
+   "from": "Isaac Newton’s",
+   "to": "Isaac Newton",
+   "type": "PERSON",
+   "aliases": [
+    "Isaac Newton’s"
+   ]
+  },
+  {
+   "id": 3053,
+   "from": "“To",
+   "to": "To",
+   "type": "PERSON",
+   "aliases": [
+    "“To"
+   ]
+  },
+  {
+   "id": 3054,
+   "from": "the AMOS Conference",
+   "to": "AMOS Conference",
+   "type": "FAC",
+   "aliases": [
+    "the AMOS Conference"
+   ]
+  },
+  {
+   "id": 3067,
+   "from": "Kanye West's",
+   "to": "Kanye West",
+   "type": "PERSON",
+   "aliases": [
+    "Kanye West's"
+   ]
+  },
+  {
+   "id": 3094,
+   "from": "the Kuma Academy",
+   "to": "Kuma Academy",
+   "type": "ORG",
+   "aliases": [
+    "the Kuma Academy"
+   ]
+  },
+  {
+   "id": 3097,
+   "from": "the presidential office committee",
+   "to": "presidential office committee",
+   "type": "ORG",
+   "aliases": [
+    "the presidential office committee"
+   ]
+  },
+  {
+   "id": 3099,
+   "from": "the Cornell Brooks School of Public Policy",
+   "to": "Cornell Brooks School of Public Policy",
+   "type": "ORG",
+   "aliases": [
+    "the Cornell Brooks School of Public Policy"
+   ]
+  },
+  {
+   "id": 3103,
+   "from": "the Taiwan Research Hub",
+   "to": "Taiwan Research Hub",
+   "type": "ORG",
+   "aliases": [
+    "the Taiwan Research Hub"
+   ]
+  },
+  {
+   "id": 3104,
+   "from": "the University of Nottingham",
+   "to": "University of Nottingham",
+   "type": "ORG",
+   "aliases": [
+    "the University of Nottingham"
+   ]
+  },
+  {
+   "id": 3107,
+   "from": "the National Women’s League",
+   "to": "National Women's League",
+   "type": "ORG",
+   "aliases": [
+    "the National Women’s League"
+   ]
+  },
+  {
+   "id": 3118,
+   "from": "The Labor Department",
+   "to": "Labor Department",
+   "type": "ORG",
+   "aliases": [
+    "The Labor Department",
+    "the Labor Department’s"
+   ]
+  },
+  {
+   "id": 3134,
+   "from": "Naval Group’s",
+   "to": "Naval Group",
+   "type": "ORG",
+   "aliases": [
+    "Naval Group’s"
+   ]
+  },
+  {
+   "id": 3141,
+   "from": "The Overview award",
+   "to": "Overview award",
+   "type": "ORG",
+   "aliases": [
+    "The Overview award"
+   ]
+  },
+  {
+   "id": 3142,
+   "from": "the Pentagon&#8217;s Operational Energy Capability Improvement Fund",
+   "to": "Pentagon's Operational Energy Capability Improvement Fund",
+   "type": "ORG",
+   "aliases": [
+    "the Pentagon&#8217;s Operational Energy Capability Improvement Fund"
+   ]
+  },
+  {
+   "id": 3182,
+   "from": "CVE-2017-6884:",
+   "to": "CVE-2017-6884",
+   "type": "ORG",
+   "aliases": [
+    "CVE-2017-6884:"
+   ]
+  },
+  {
+   "id": 3187,
+   "from": ":*:*:*",
+   "to": "*:*:*",
+   "type": "ORG",
+   "aliases": [
+    ":*:*:*"
+   ]
+  },
+  {
+   "id": 3207,
+   "from": "Lata, Solomon Islands Magnitude:",
+   "to": "Lata, Solomon Islands Magnitude",
+   "type": "ORG",
+   "aliases": [
+    "Lata, Solomon Islands Magnitude:"
+   ]
+  },
+  {
+   "id": 3213,
+   "from": "coldfusion:*:*:*:*:*:*:*:*\nIn",
+   "to": "coldfusion:*:*:*:*:*:*:*:* In",
+   "type": "ORG",
+   "aliases": [
+    "coldfusion:*:*:*:*:*:*:*:*\nIn"
+   ]
+  },
+  {
+   "id": 3235,
+   "from": "CVE-2022-30333:",
+   "to": "CVE-2022-30333",
+   "type": "ORG",
+   "aliases": [
+    "CVE-2022-30333:"
+   ]
+  },
+  {
+   "id": 3238,
+   "from": "Tung Chee-hwa’s",
+   "to": "Tung Chee-hwa",
+   "type": "PERSON",
+   "aliases": [
+    "Tung Chee-hwa",
+    "Tung Chee-hwa’s"
+   ]
+  },
+  {
+   "id": 3252,
+   "from": "&#039;Cockroach&#039",
+   "to": "Cockroach",
+   "type": "ORG",
+   "aliases": [
+    "&#039;Cockroach&#039"
+   ]
+  },
+  {
+   "id": 3272,
+   "from": "the Tigray People’s Liberation Front",
+   "to": "Tigray People's Liberation Front",
+   "type": "ORG",
+   "aliases": [
+    "the Tigray People’s Liberation Front"
+   ]
+  },
+  {
+   "id": 3288,
+   "from": "The Competition and Consumer Commission of Singapore",
+   "to": "Competition and Consumer Commission of Singapore",
+   "type": "ORG",
+   "aliases": [
+    "The Competition and Consumer Commission of Singapore"
+   ]
+  },
+  {
+   "id": 3306,
+   "from": "the Peak Tram",
+   "to": "Peak Tram",
+   "type": "FAC",
+   "aliases": [
+    "the Peak Tram"
+   ]
+  },
+  {
+   "id": 3311,
+   "from": "Leibowitz&#039;s",
+   "to": "Leibowitz",
+   "type": "PERSON",
+   "aliases": [
+    "Leibowitz&#039;s"
+   ]
+  },
+  {
+   "id": 3319,
+   "from": "the Fiji Islands Magnitude",
+   "to": "Fiji Islands Magnitude",
+   "type": "LOC",
+   "aliases": [
+    "Fiji Islands Magnitude",
+    "the Fiji Islands Magnitude"
+   ]
+  },
+  {
+   "id": 3320,
+   "from": "the Fiji Islands",
+   "to": "Fiji Islands",
+   "type": "LOC",
+   "aliases": [
+    "Fiji Islands",
+    "the Fiji Islands"
+   ]
+  },
+  {
+   "id": 3326,
+   "from": "Shoko Kawata's",
+   "to": "Shoko Kawata",
+   "type": "PERSON",
+   "aliases": [
+    "Shoko Kawata's"
+   ]
+  },
+  {
+   "id": 3359,
+   "from": "the Immaculate Conception Academy",
+   "to": "Immaculate Conception Academy",
+   "type": "ORG",
+   "aliases": [
+    "the Immaculate Conception Academy"
+   ]
+  },
+  {
+   "id": 3370,
+   "from": "the Land Registry",
+   "to": "Land Registry",
+   "type": "ORG",
+   "aliases": [
+    "Land Registry",
+    "the Land Registry"
+   ]
+  },
+  {
+   "id": 3372,
+   "from": "The College of Unmanned and Intelligent Engineering",
+   "to": "College of Unmanned and Intelligent Engineering",
+   "type": "ORG",
+   "aliases": [
+    "The College of Unmanned and Intelligent Engineering"
+   ]
+  },
+  {
+   "id": 3373,
+   "from": "the College of Combat Support",
+   "to": "College of Combat Support",
+   "type": "ORG",
+   "aliases": [
+    "the College of Combat Support"
+   ]
+  },
+  {
+   "id": 3375,
+   "from": "the College of Equipment Support",
+   "to": "College of Equipment Support",
+   "type": "ORG",
+   "aliases": [
+    "the College of Equipment Support"
+   ]
+  },
+  {
+   "id": 3378,
+   "from": "the Centre for Technology & Statecraft",
+   "to": "Centre for Technology & Statecraft",
+   "type": "ORG",
+   "aliases": [
+    "the Centre for Technology & Statecraft"
+   ]
+  },
+  {
+   "id": 3385,
+   "from": "the Indo-Pacific region",
+   "to": "Indo-Pacific region",
+   "type": "EVENT",
+   "aliases": [
+    "the Indo-Pacific region"
+   ]
+  },
+  {
+   "id": 3388,
+   "from": "the U.S.-based Brookings Institution",
+   "to": "U.S.-based Brookings Institution",
+   "type": "ORG",
+   "aliases": [
+    "the U.S.-based Brookings Institution"
+   ]
+  },
+  {
+   "id": 3392,
+   "from": "the U.S.-Taiwan Business Council",
+   "to": "U.S.-Taiwan Business Council",
+   "type": "ORG",
+   "aliases": [
+    "the U.S.-Taiwan Business Council"
+   ]
+  },
+  {
+   "id": 3395,
+   "from": "the Chinese Communist Party",
+   "to": "Chinese Communist Party",
+   "type": "ORG",
+   "aliases": [
+    "Chinese Communist Party",
+    "the Chinese Communist Party"
+   ]
+  },
+  {
+   "id": 3397,
+   "from": "the S. Rajaratnam School of International Studies",
+   "to": "S. Rajaratnam School of International Studies",
+   "type": "ORG",
+   "aliases": [
+    "the S. Rajaratnam School of International Studies"
+   ]
+  },
+  {
+   "id": 3399,
+   "from": "the Sha Tin to Central Link",
+   "to": "Sha Tin to Central Link",
+   "type": "PERSON",
+   "aliases": [
+    "the Sha Tin to Central Link"
+   ]
+  },
+  {
+   "id": 3407,
+   "from": "The US Commerce Department",
+   "to": "US Commerce Department",
+   "type": "ORG",
+   "aliases": [
+    "The US Commerce Department"
+   ]
+  },
+  {
+   "id": 3411,
+   "from": "students &#039;in",
+   "to": "students 'in",
+   "type": "ORG",
+   "aliases": [
+    "students &#039;in"
+   ]
+  },
+  {
+   "id": 3418,
+   "from": "the Armed Forces Ministry’s",
+   "to": "Armed Forces Ministry",
+   "type": "ORG",
+   "aliases": [
+    "the Armed Forces Ministry’s"
+   ]
+  },
+  {
+   "id": 3425,
+   "from": "the Escadron de chasse et d’expérimentation",
+   "to": "Escadron de chasse et d'expérimentation",
+   "type": "ORG",
+   "aliases": [
+    "the Escadron de chasse et d’expérimentation"
+   ]
+  },
+  {
+   "id": 3437,
+   "from": "Pennsylvania McDonald’s",
+   "to": "Pennsylvania McDonald",
+   "type": "ORG",
+   "aliases": [
+    "Pennsylvania McDonald’s"
+   ]
+  },
+  {
+   "id": 3440,
+   "from": "&#039;maybe",
+   "to": "maybe",
+   "type": "ORG",
+   "aliases": [
+    "&#039;maybe"
+   ]
+  },
+  {
+   "id": 3442,
+   "from": "Italy&#039;s Alessandro Bastoni",
+   "to": "Italy's Alessandro Bastoni",
+   "type": "PERSON",
+   "aliases": [
+    "Italy&#039;s Alessandro Bastoni"
+   ]
+  },
+  {
+   "id": 3446,
+   "from": "could&#039;ve",
+   "to": "could've",
+   "type": "ORG",
+   "aliases": [
+    "could&#039;ve"
+   ]
+  },
+  {
+   "id": 3447,
+   "from": "Lawyers The Tennessee woman&#039;s",
+   "to": "Lawyers The Tennessee woman",
+   "type": "ORG",
+   "aliases": [
+    "Lawyers The Tennessee woman&#039;s"
+   ]
+  },
+  {
+   "id": 3450,
+   "from": "&#039;maximum feasible&#039",
+   "to": "maximum feasible",
+   "type": "ORG",
+   "aliases": [
+    "&#039;maximum feasible&#039"
+   ]
+  },
+  {
+   "id": 3466,
+   "from": "Clayton ‌being",
+   "to": "Clayton being",
+   "type": "PERSON",
+   "aliases": [
+    "Clayton ‌being"
+   ]
+  },
+  {
+   "id": 3467,
+   "from": "The US Department of Energy",
+   "to": "US Department of Energy",
+   "type": "ORG",
+   "aliases": [
+    "The US Department of Energy"
+   ]
+  },
+  {
+   "id": 3468,
+   "from": "the National Nuclear Security Administration",
+   "to": "National Nuclear Security Administration",
+   "type": "ORG",
+   "aliases": [
+    "the National Nuclear Security Administration"
+   ]
+  },
+  {
+   "id": 3469,
+   "from": "the Nevada National Security Site",
+   "to": "Nevada National Security Site",
+   "type": "ORG",
+   "aliases": [
+    "the Nevada National Security Site"
+   ]
+  },
+  {
+   "id": 3477,
+   "from": "CK Hutchison’s",
+   "to": "CK Hutchison",
+   "type": "ORG",
+   "aliases": [
+    "CK Hutchison’s"
+   ]
+  },
+  {
+   "id": 3479,
+   "from": "the Atlantic Council",
+   "to": "Atlantic Council",
+   "type": "ORG",
+   "aliases": [
+    "Atlantic Council",
+    "the Atlantic Council"
+   ]
+  },
+  {
+   "id": 3489,
+   "from": "Jin Sha’s",
+   "to": "Jin Sha",
+   "type": "PERSON",
+   "aliases": [
+    "Jin Sha’s"
+   ]
+  },
+  {
+   "id": 3495,
+   "from": "‌whom",
+   "to": "whom",
+   "type": "ORG",
+   "aliases": [
+    "‌whom"
+   ]
+  },
+  {
+   "id": 3502,
+   "from": "the Hong Kong Bar Association",
+   "to": "Hong Kong Bar Association",
+   "type": "ORG",
+   "aliases": [
+    "the Hong Kong Bar Association"
+   ]
+  },
+  {
+   "id": 3504,
+   "from": "the Association of Southeast Asian Nations",
+   "to": "Association of Southeast Asian Nations",
+   "type": "ORG",
+   "aliases": [
+    "the Association of Southeast Asian Nations"
+   ]
+  },
+  {
+   "id": 3519,
+   "from": "the League party",
+   "to": "League party",
+   "type": "ORG",
+   "aliases": [
+    "the League party"
+   ]
+  },
+  {
+   "id": 3521,
+   "from": "Five Star’s",
+   "to": "Five Star",
+   "type": "ORG",
+   "aliases": [
+    "Five Star’s"
+   ]
+  },
+  {
+   "id": 3524,
+   "from": "the Defence Security and Space Programme",
+   "to": "Defence Security and Space Programme",
+   "type": "ORG",
+   "aliases": [
+    "the Defence Security and Space Programme"
+   ]
+  },
+  {
+   "id": 3530,
+   "from": "Chen Jeng-",
+   "to": "Chen Jeng",
+   "type": "PERSON",
+   "aliases": [
+    "Chen Jeng-"
+   ]
+  },
+  {
+   "id": 3564,
+   "from": "Red Bull’s",
+   "to": "Red Bull",
+   "type": "ORG",
+   "aliases": [
+    "Red Bull’s"
+   ]
+  },
+  {
+   "id": 3567,
+   "from": "Red Bull&#039;s ⁠Isack",
+   "to": "Red Bull's Isack",
+   "type": "ORG",
+   "aliases": [
+    "Red Bull&#039;s ⁠Isack"
+   ]
+  },
+  {
+   "id": 3574,
+   "from": "Hasan Nawaz&#039;s 96",
+   "to": "Hasan Nawaz's 96",
+   "type": "PERSON",
+   "aliases": [
+    "Hasan Nawaz&#039;s 96"
+   ]
+  },
+  {
+   "id": 3582,
+   "from": "​determine &#",
+   "to": "determine &#",
+   "type": "ORG",
+   "aliases": [
+    "​determine &#"
+   ]
+  },
+  {
+   "id": 3587,
+   "from": "the Red Star News",
+   "to": "Red Star News",
+   "type": "ORG",
+   "aliases": [
+    "the Red Star News"
+   ]
+  },
+  {
+   "id": 3591,
+   "from": "the Financial Times",
+   "to": "Financial Times",
+   "type": "ORG",
+   "aliases": [
+    "Financial Times",
+    "the Financial Times"
+   ]
+  },
+  {
+   "id": 3595,
+   "from": "the Jiada Lithium Mine",
+   "to": "Jiada Lithium Mine",
+   "type": "ORG",
+   "aliases": [
+    "the Jiada Lithium Mine"
+   ]
+  },
+  {
+   "id": 3597,
+   "from": "the US Trade Representative’s",
+   "to": "US Trade Representative",
+   "type": "ORG",
+   "aliases": [
+    "the US Trade Representative’s"
+   ]
+  },
+  {
+   "id": 3599,
+   "from": "the World Economic Forum",
+   "to": "World Economic Forum",
+   "type": "EVENT",
+   "aliases": [
+    "the World Economic Forum"
+   ]
+  },
+  {
+   "id": 3607,
+   "from": "Chuseok, South Korea’s",
+   "to": "Chuseok, South Korea",
+   "type": "LOC",
+   "aliases": [
+    "Chuseok, South Korea’s"
+   ]
+  },
+  {
+   "id": 3634,
+   "from": "Italy&#039;s Jannik Sinner",
+   "to": "Italy's Jannik Sinner",
+   "type": "PERSON",
+   "aliases": [
+    "Italy&#039;s Jannik Sinner"
+   ]
+  },
+  {
+   "id": 3644,
+   "from": "Christie’s",
+   "to": "Christie",
+   "type": "ORG",
+   "aliases": [
+    "Christie’s"
+   ]
+  },
+  {
+   "id": 3656,
+   "from": "the Department of Correction",
+   "to": "Department of Correction",
+   "type": "ORG",
+   "aliases": [
+    "the Department of Correction"
+   ]
+  },
+  {
+   "id": 3659,
+   "from": "The Buildings Department",
+   "to": "Buildings Department",
+   "type": "ORG",
+   "aliases": [
+    "Buildings Department",
+    "The Buildings Department"
+   ]
+  },
+  {
+   "id": 3663,
+   "from": "team&#039;s &#039;greatest",
+   "to": "team's 'greatest",
+   "type": "ORG",
+   "aliases": [
+    "team&#039;s &#039;greatest"
+   ]
+  },
+  {
+   "id": 3666,
+   "from": "Erling Haaland&#039;s Norway",
+   "to": "Erling Haaland's Norway",
+   "type": "ORG",
+   "aliases": [
+    "Erling Haaland&#039;s Norway"
+   ]
+  },
+  {
+   "id": 3669,
+   "from": "lawmaker&#039;s",
+   "to": "lawmaker",
+   "type": "ORG",
+   "aliases": [
+    "lawmaker&#039;s"
+   ]
+  },
+  {
+   "id": 3688,
+   "from": "the Union for International Cancer Control",
+   "to": "Union for International Cancer Control",
+   "type": "ORG",
+   "aliases": [
+    "the Union for International Cancer Control"
+   ]
+  },
+  {
+   "id": 3689,
+   "from": "the World Cancer Congress",
+   "to": "World Cancer Congress",
+   "type": "ORG",
+   "aliases": [
+    "the World Cancer Congress"
+   ]
+  },
+  {
+   "id": 3741,
+   "from": "the Futenma Airbase",
+   "to": "Futenma Airbase",
+   "type": "FAC",
+   "aliases": [
+    "the Futenma Airbase"
+   ]
+  },
+  {
+   "id": 3749,
+   "from": "Designers’ House",
+   "to": "Designers' House",
+   "type": "ORG",
+   "aliases": [
+    "Designers’ House"
+   ]
+  },
+  {
+   "id": 3758,
+   "from": "Herzegovina&#039;s",
+   "to": "Herzegovina",
+   "type": "ORG",
+   "aliases": [
+    "Herzegovina&#039;s"
+   ]
+  },
+  {
+   "id": 3774,
+   "from": "the Flying Tigers",
+   "to": "Flying Tigers",
+   "type": "ORG",
+   "aliases": [
+    "the Flying Tigers"
+   ]
+  },
+  {
+   "id": 3775,
+   "from": "The Hong Kong Association of Private Practice Optometrists",
+   "to": "Hong Kong Association of Private Practice Optometrists",
+   "type": "ORG",
+   "aliases": [
+    "The Hong Kong Association of Private Practice Optometrists"
+   ]
+  },
+  {
+   "id": 3776,
+   "from": "the Auspicious Ark",
+   "to": "Auspicious Ark",
+   "type": "ORG",
+   "aliases": [
+    "Auspicious Ark",
+    "the Auspicious Ark"
+   ]
+  },
+  {
+   "id": 3779,
+   "from": "-5.59",
+   "to": "5.59",
+   "type": "PERSON",
+   "aliases": [
+    "-5.59"
+   ]
+  },
+  {
+   "id": 3792,
+   "from": "The Customs and Excise Department",
+   "to": "Customs and Excise Department",
+   "type": "ORG",
+   "aliases": [
+    "The Customs and Excise Department"
+   ]
+  },
+  {
+   "id": 3793,
+   "from": "The Consumer Council",
+   "to": "Consumer Council",
+   "type": "ORG",
+   "aliases": [
+    "The Consumer Council"
+   ]
+  },
+  {
+   "id": 3794,
+   "from": "the Global Security Research",
+   "to": "Global Security Research",
+   "type": "ORG",
+   "aliases": [
+    "the Global Security Research"
+   ]
+  },
+  {
+   "id": 3797,
+   "from": "The Hong Kong Observatory",
+   "to": "Hong Kong Observatory",
+   "type": "ORG",
+   "aliases": [
+    "Hong Kong Observatory",
+    "The Hong Kong Observatory"
+   ]
+  },
+  {
+   "id": 3801,
+   "from": "⁠capital",
+   "to": "capital",
+   "type": "ORG",
+   "aliases": [
+    "⁠capital"
+   ]
+  },
+  {
+   "id": 3811,
+   "from": "Julian Hall&#039;s",
+   "to": "Julian Hall",
+   "type": "PERSON",
+   "aliases": [
+    "Julian Hall&#039;s"
+   ]
+  },
+  {
+   "id": 3818,
+   "from": "‌combat",
+   "to": "combat",
+   "type": "ORG",
+   "aliases": [
+    "‌combat"
+   ]
+  },
+  {
+   "id": 3822,
+   "from": "the Construction Industry Council",
+   "to": "Construction Industry Council",
+   "type": "ORG",
+   "aliases": [
+    "the Construction Industry Council"
+   ]
+  },
+  {
+   "id": 3833,
+   "from": "the Strait of...",
+   "to": "Strait of...",
+   "type": "LOC",
+   "aliases": [
+    "the Strait of..."
+   ]
+  },
+  {
+   "id": 3834,
+   "from": "the Arabian Peninsula",
+   "to": "Arabian Peninsula",
+   "type": "LOC",
+   "aliases": [
+    "Arabian Peninsula",
+    "the Arabian Peninsula"
+   ]
+  },
+  {
+   "id": 3835,
+   "from": "the Presidential Leadership Council",
+   "to": "Presidential Leadership Council",
+   "type": "ORG",
+   "aliases": [
+    "the Presidential Leadership Council"
+   ]
+  },
+  {
+   "id": 3840,
+   "from": "the Arab Spring",
+   "to": "Arab Spring",
+   "type": "EVENT",
+   "aliases": [
+    "the Arab Spring"
+   ]
+  },
+  {
+   "id": 3844,
+   "from": "the Bab el-Mandeb Strait",
+   "to": "Bab el-Mandeb Strait",
+   "type": "LOC",
+   "aliases": [
+    "Bab el-Mandeb Strait",
+    "the Bab el-Mandeb Strait"
+   ]
+  },
+  {
+   "id": 3845,
+   "from": "the Taiz-Aden",
+   "to": "Taiz-Aden",
+   "type": "FAC",
+   "aliases": [
+    "the Taiz-Aden"
+   ]
+  },
+  {
+   "id": 3855,
+   "from": "the &#039;antisemitic lie&#039",
+   "to": "'antisemitic lie",
+   "type": "ORG",
+   "aliases": [
+    "the &#039;antisemitic lie&#039"
+   ]
+  },
+  {
+   "id": 3857,
+   "from": "the Military Air Tracking Alliance",
+   "to": "Military Air Tracking Alliance",
+   "type": "ORG",
+   "aliases": [
+    "the Military Air Tracking Alliance"
+   ]
+  },
+  {
+   "id": 3862,
+   "from": "several &#039;terrorism-related&#039",
+   "to": "several 'terrorism-related",
+   "type": "ORG",
+   "aliases": [
+    "several &#039;terrorism-related&#039"
+   ]
+  },
+  {
+   "id": 3877,
+   "from": "&#039;disciplinary committee",
+   "to": "disciplinary committee",
+   "type": "ORG",
+   "aliases": [
+    "&#039;disciplinary committee"
+   ]
+  },
+  {
+   "id": 3878,
+   "from": "at&#039",
+   "to": "at",
+   "type": "ORG",
+   "aliases": [
+    "at&#039"
+   ]
+  },
+  {
+   "id": 3882,
+   "from": "Super Intelligence Force'",
+   "to": "Super Intelligence Force",
+   "type": "ORG",
+   "aliases": [
+    "Super Intelligence Force'"
+   ]
+  },
+  {
+   "id": 3884,
+   "from": "Yoo Seong-min’s",
+   "to": "Yoo Seong-min",
+   "type": "PERSON",
+   "aliases": [
+    "Yoo Seong-min’s"
+   ]
+  },
+  {
+   "id": 3888,
+   "from": "the Dairy Farm Guildford Road Shopping Centre",
+   "to": "Dairy Farm Guildford Road Shopping Centre",
+   "type": "ORG",
+   "aliases": [
+    "the Dairy Farm Guildford Road Shopping Centre"
+   ]
+  },
+  {
+   "id": 3889,
+   "from": "the German Swiss International School",
+   "to": "German Swiss International School",
+   "type": "ORG",
+   "aliases": [
+    "the German Swiss International School"
+   ]
+  },
+  {
+   "id": 3894,
+   "from": "the Chinese Academy of Sciences’ Dalian Institute of Chemical Physics",
+   "to": "Chinese Academy of Sciences' Dalian Institute of Chemical Physics",
+   "type": "ORG",
+   "aliases": [
+    "the Chinese Academy of Sciences’ Dalian Institute of Chemical Physics"
+   ]
+  },
+  {
+   "id": 3899,
+   "from": "La’auli Leuatea",
+   "to": "La'auli Leuatea",
+   "type": "PERSON",
+   "aliases": [
+    "La’auli Leuatea"
+   ]
+  },
+  {
+   "id": 3926,
+   "from": "the Bahrain Grand Prix",
+   "to": "Bahrain Grand Prix",
+   "type": "ORG",
+   "aliases": [
+    "the Bahrain Grand Prix"
+   ]
+  },
+  {
+   "id": 3931,
+   "from": "the U.S. Air University&#8217;s China Aerospace Studies Institute",
+   "to": "U.S. Air University's China Aerospace Studies Institute",
+   "type": "ORG",
+   "aliases": [
+    "the U.S. Air University&#8217;s China Aerospace Studies Institute"
+   ]
+  },
+  {
+   "id": 3932,
+   "from": "Baoan Women’s and",
+   "to": "Baoan Women's and",
+   "type": "ORG",
+   "aliases": [
+    "Baoan Women’s and"
+   ]
+  },
+  {
+   "id": 3934,
+   "from": "The Wall Street Journal",
+   "to": "Wall Street Journal",
+   "type": "ORG",
+   "aliases": [
+    "The Wall Street Journal",
+    "Wall Street Journal"
+   ]
+  },
+  {
+   "id": 3937,
+   "from": "the Global Youth Powerhouse Summit",
+   "to": "Global Youth Powerhouse Summit",
+   "type": "ORG",
+   "aliases": [
+    "the Global Youth Powerhouse Summit"
+   ]
+  },
+  {
+   "id": 3940,
+   "from": "The AI-Assisted Strategic Own Goal",
+   "to": "AI-Assisted Strategic Own Goal",
+   "type": "ORG",
+   "aliases": [
+    "The AI-Assisted Strategic Own Goal"
+   ]
+  },
+  {
+   "id": 3943,
+   "from": "the Centre for Global Security",
+   "to": "Centre for Global Security",
+   "type": "ORG",
+   "aliases": [
+    "the Centre for Global Security"
+   ]
+  },
+  {
+   "id": 3950,
+   "from": "the National Bureau of Statistics",
+   "to": "National Bureau of Statistics",
+   "type": "ORG",
+   "aliases": [
+    "National Bureau of Statistics",
+    "the National Bureau of Statistics"
+   ]
+  },
+  {
+   "id": 3952,
+   "from": "the Institute for Defence Analyses",
+   "to": "Institute for Defence Analyses",
+   "type": "ORG",
+   "aliases": [
+    "the Institute for Defence Analyses"
+   ]
+  },
+  {
+   "id": 3959,
+   "from": "the Medicine Prize",
+   "to": "Medicine Prize",
+   "type": "ORG",
+   "aliases": [
+    "Medicine Prize",
+    "the Medicine Prize"
+   ]
+  },
+  {
+   "id": 3963,
+   "from": "the Karolinska Institute",
+   "to": "Karolinska Institute",
+   "type": "ORG",
+   "aliases": [
+    "the Karolinska Institute"
+   ]
+  },
+  {
+   "id": 3968,
+   "from": "the Changhe Aircraft Industries Corporation",
+   "to": "Changhe Aircraft Industries Corporation",
+   "type": "ORG",
+   "aliases": [
+    "the Changhe Aircraft Industries Corporation"
+   ]
+  },
+  {
+   "id": 3971,
+   "from": "the Peninsular Metropolis News",
+   "to": "Peninsular Metropolis News",
+   "type": "ORG",
+   "aliases": [
+    "the Peninsular Metropolis News"
+   ]
+  },
+  {
+   "id": 4017,
+   "from": "the Air Accident Investigation Authority",
+   "to": "Air Accident Investigation Authority",
+   "type": "ORG",
+   "aliases": [
+    "the Air Accident Investigation Authority"
+   ]
+  },
+  {
+   "id": 4027,
+   "from": "the Okinawa Defense Bureau",
+   "to": "Okinawa Defense Bureau",
+   "type": "ORG",
+   "aliases": [
+    "the Okinawa Defense Bureau"
+   ]
+  },
+  {
+   "id": 4034,
+   "from": "the USS George Washington",
+   "to": "USS George Washington",
+   "type": "PRODUCT",
+   "aliases": [
+    "the USS George Washington"
+   ]
+  },
+  {
+   "id": 4035,
+   "from": "the USS Abraham Lincoln",
+   "to": "USS Abraham Lincoln",
+   "type": "PRODUCT",
+   "aliases": [
+    "USS Abraham Lincoln",
+    "the USS Abraham Lincoln"
+   ]
+  },
+  {
+   "id": 4038,
+   "from": "the Nansei Islands",
+   "to": "Nansei Islands",
+   "type": "LOC",
+   "aliases": [
+    "the Nansei Islands"
+   ]
+  }
+ ],
+ "collisions": [
+  {
+   "id": 87,
+   "from": "the UN General Assembly",
+   "to": "UN General Assembly",
+   "type": "ORG",
+   "would_merge_with": [
+    4394
+   ]
+  },
+  {
+   "id": 152,
+   "from": "Mexico&#039;s",
+   "to": "Mexico",
+   "type": "NORP",
+   "would_merge_with": [
+    150
+   ]
+  },
+  {
+   "id": 156,
+   "from": "nation&#039;s",
+   "to": "nation",
+   "type": "NORP",
+   "would_merge_with": [
+    4319
+   ]
+  },
+  {
+   "id": 162,
+   "from": "Pakistan&#039;s",
+   "to": "Pakistan",
+   "type": "ORG",
+   "would_merge_with": [
+    4462
+   ]
+  },
+  {
+   "id": 194,
+   "from": "&#8220;South",
+   "to": "South",
+   "type": "ORG",
+   "would_merge_with": [
+    337
+   ]
+  },
+  {
+   "id": 214,
+   "from": "Syria &#8212",
+   "to": "Syria",
+   "type": "ORG",
+   "would_merge_with": [
+    213,
+    24152
+   ]
+  },
+  {
+   "id": 227,
+   "from": "Washington &#8212",
+   "to": "Washington",
+   "type": "ORG",
+   "would_merge_with": [
+    4116
+   ]
+  },
+  {
+   "id": 234,
+   "from": "Latin America’s",
+   "to": "Latin America",
+   "type": "LOC",
+   "would_merge_with": [
+    236,
+    7724
+   ]
+  },
+  {
+   "id": 236,
+   "from": "Latin America&#8217;s",
+   "to": "Latin America",
+   "type": "LOC",
+   "would_merge_with": [
+    234,
+    7724
+   ]
+  },
+  {
+   "id": 239,
+   "from": "Nicol&#225;s Maduro",
+   "to": "Nicolás Maduro",
+   "type": "PERSON",
+   "would_merge_with": [
+    5279
+   ]
+  },
+  {
+   "id": 265,
+   "from": "the White House &#8212",
+   "to": "White House",
+   "type": "ORG",
+   "would_merge_with": [
+    88
+   ]
+  },
+  {
+   "id": 271,
+   "from": "NATO&#8217;s",
+   "to": "NATO",
+   "type": "PERSON",
+   "would_merge_with": [
+    269
+   ]
+  },
+  {
+   "id": 274,
+   "from": "the People&#8217;s Liberation Army&#8217;s",
+   "to": "People's Liberation Army",
+   "type": "ORG",
+   "would_merge_with": [
+    6435
+   ]
+  },
+  {
+   "id": 488,
+   "from": "the Élysée Palace",
+   "to": "Élysée Palace",
+   "type": "ORG",
+   "would_merge_with": [
+    1401
+   ]
+  },
+  {
+   "id": 501,
+   "from": "The U.S. Army",
+   "to": "U.S. Army",
+   "type": "ORG",
+   "would_merge_with": [
+    4612
+   ]
+  },
+  {
+   "id": 566,
+   "from": "“Sovereignty",
+   "to": "Sovereignty",
+   "type": "LOC",
+   "would_merge_with": [
+    2720
+   ]
+  },
+  {
+   "id": 575,
+   "from": "the European Commission",
+   "to": "European Commission",
+   "type": "ORG",
+   "would_merge_with": [
+    4067
+   ]
+  },
+  {
+   "id": 701,
+   "from": "Navy&#8217;s",
+   "to": "Navy",
+   "type": "ORG",
+   "would_merge_with": [
+    441
+   ]
+  },
+  {
+   "id": 749,
+   "from": "China.&nbsp;&nbsp",
+   "to": "China.",
+   "type": "ORG",
+   "would_merge_with": [
+    77
+   ]
+  },
+  {
+   "id": 756,
+   "from": "Morocco.&nbsp;&nbsp",
+   "to": "Morocco.",
+   "type": "ORG",
+   "would_merge_with": [
+    755
+   ]
+  },
+  {
+   "id": 911,
+   "from": "time.&nbsp",
+   "to": "time.",
+   "type": "ORG",
+   "would_merge_with": [
+    3145
+   ]
+  },
+  {
+   "id": 1005,
+   "from": "the\nGovernment",
+   "to": "Government",
+   "type": "ORG",
+   "would_merge_with": [
+    2506
+   ]
+  },
+  {
+   "id": 1006,
+   "from": "the International Criminal Court",
+   "to": "International Criminal Court",
+   "type": "ORG",
+   "would_merge_with": [
+    5206
+   ]
+  },
+  {
+   "id": 1098,
+   "from": "the United Nations",
+   "to": "United Nations",
+   "type": "ORG",
+   "would_merge_with": [
+    4165
+   ]
+  },
+  {
+   "id": 1142,
+   "from": "&nbsp;The &#",
+   "to": "&#",
+   "type": "ORG",
+   "would_merge_with": [
+    2502
+   ]
+  },
+  {
+   "id": 1184,
+   "from": "Ukraine&#039;s",
+   "to": "Ukraine",
+   "type": "ORG",
+   "would_merge_with": [
+    99
+   ]
+  },
+  {
+   "id": 1211,
+   "from": "Focus:",
+   "to": "Focus",
+   "type": "ORG",
+   "would_merge_with": [
+    4906
+   ]
+  },
+  {
+   "id": 1260,
+   "from": "Iran&#039;s",
+   "to": "Iran",
+   "type": "NORP",
+   "would_merge_with": [
+    72,
+    4529
+   ]
+  },
+  {
+   "id": 1306,
+   "from": "“A",
+   "to": "A",
+   "type": "ORG",
+   "would_merge_with": [
+    2241,
+    18092
+   ]
+  },
+  {
+   "id": 1387,
+   "from": "France&#039;s",
+   "to": "France",
+   "type": "GPE",
+   "would_merge_with": [
+    134
+   ]
+  },
+  {
+   "id": 1401,
+   "from": "the Elysee Palace",
+   "to": "Elysee Palace",
+   "type": "FAC",
+   "would_merge_with": [
+    488
+   ]
+  },
+  {
+   "id": 1490,
+   "from": "UK&#039;s",
+   "to": "UK",
+   "type": "ORG",
+   "would_merge_with": [
+    117,
+    623
+   ]
+  },
+  {
+   "id": 1550,
+   "from": "Germany&#039;s",
+   "to": "Germany",
+   "type": "ORG",
+   "would_merge_with": [
+    111
+   ]
+  },
+  {
+   "id": 1602,
+   "from": "Pedro Sanchez&#039;s",
+   "to": "Pedro Sanchez",
+   "type": "PERSON",
+   "would_merge_with": [
+    2744
+   ]
+  },
+  {
+   "id": 1635,
+   "from": "Yemen&#039;s",
+   "to": "Yemen",
+   "type": "ORG",
+   "would_merge_with": [
+    147
+   ]
+  },
+  {
+   "id": 1705,
+   "from": "South Korea&#039;s",
+   "to": "South Korea",
+   "type": "GPE",
+   "would_merge_with": [
+    5718,
+    5842
+   ]
+  },
+  {
+   "id": 1710,
+   "from": "Aleksandar Vučić's",
+   "to": "Aleksandar Vučić",
+   "type": "LOC",
+   "would_merge_with": [
+    1715
+   ]
+  },
+  {
+   "id": 1863,
+   "from": "Tehran&#039;s",
+   "to": "Tehran",
+   "type": "PERSON",
+   "would_merge_with": [
+    4162
+   ]
+  },
+  {
+   "id": 1968,
+   "from": "World&#039;s",
+   "to": "World",
+   "type": "ORG",
+   "would_merge_with": [
+    7996
+   ]
+  },
+  {
+   "id": 1980,
+   "from": "Trump&#039;s",
+   "to": "Trump",
+   "type": "ORG",
+   "would_merge_with": [
+    83,
+    2486
+   ]
+  },
+  {
+   "id": 2066,
+   "from": "Mediapart&#039;s",
+   "to": "Mediapart",
+   "type": "PERSON",
+   "would_merge_with": [
+    2044
+   ]
+  },
+  {
+   "id": 2108,
+   "from": "SpaceX&#039;s",
+   "to": "SpaceX",
+   "type": "ORG",
+   "would_merge_with": [
+    704
+   ]
+  },
+  {
+   "id": 2183,
+   "from": "Israel&#039;s",
+   "to": "Israel",
+   "type": "ORG",
+   "would_merge_with": [
+    4112
+   ]
+  },
+  {
+   "id": 2185,
+   "from": "PTI&#039;s",
+   "to": "PTI",
+   "type": "ORG",
+   "would_merge_with": [
+    1415
+   ]
+  },
+  {
+   "id": 2187,
+   "from": "Hamas&#039;s",
+   "to": "Hamas",
+   "type": "NORP",
+   "would_merge_with": [
+    17,
+    5234
+   ]
+  },
+  {
+   "id": 2241,
+   "from": "&#039;a",
+   "to": "a",
+   "type": "ORG",
+   "would_merge_with": [
+    18092
+   ]
+  },
+  {
+   "id": 2363,
+   "from": "”A",
+   "to": "A",
+   "type": "ORG",
+   "would_merge_with": [
+    2241,
+    18092
+   ]
+  },
+  {
+   "id": 2407,
+   "from": "Pentagon&#8217;s",
+   "to": "Pentagon",
+   "type": "ORG",
+   "would_merge_with": [
+    12718
+   ]
+  },
+  {
+   "id": 2467,
+   "from": "Canada&#039;s",
+   "to": "Canada",
+   "type": "ORG",
+   "would_merge_with": [
+    1243
+   ]
+  },
+  {
+   "id": 2476,
+   "from": "Spain&#039;s",
+   "to": "Spain",
+   "type": "NORP",
+   "would_merge_with": [
+    484
+   ]
+  },
+  {
+   "id": 2486,
+   "from": "Trump's '",
+   "to": "Trump",
+   "type": "ORG",
+   "would_merge_with": [
+    83,
+    1980
+   ]
+  },
+  {
+   "id": 2501,
+   "from": "Doha&#039;s",
+   "to": "Doha",
+   "type": "NORP",
+   "would_merge_with": [
+    1932
+   ]
+  },
+  {
+   "id": 2506,
+   "from": "government&#039;s",
+   "to": "government",
+   "type": "NORP",
+   "would_merge_with": [
+    1005
+   ]
+  },
+  {
+   "id": 2582,
+   "from": "&#039;dots&#039",
+   "to": "dots",
+   "type": "ORG",
+   "would_merge_with": [
+    16088
+   ]
+  },
+  {
+   "id": 2729,
+   "from": "Gaza&#039;s",
+   "to": "Gaza",
+   "type": "PERSON",
+   "would_merge_with": [
+    139
+   ]
+  },
+  {
+   "id": 2783,
+   "from": "SPACECOM&#8217;s",
+   "to": "SPACECOM",
+   "type": "ORG",
+   "would_merge_with": [
+    2782
+   ]
+  },
+  {
+   "id": 2823,
+   "from": "Brazil&#039;s",
+   "to": "Brazil",
+   "type": "ORG",
+   "would_merge_with": [
+    220
+   ]
+  },
+  {
+   "id": 2899,
+   "from": "Switzerland&#039;s",
+   "to": "Switzerland",
+   "type": "NORP",
+   "would_merge_with": [
+    919
+   ]
+  },
+  {
+   "id": 3073,
+   "from": "Ethiopia&#039;s",
+   "to": "Ethiopia",
+   "type": "NORP",
+   "would_merge_with": [
+    104
+   ]
+  },
+  {
+   "id": 3111,
+   "from": "League&#039;s",
+   "to": "League",
+   "type": "PERSON",
+   "would_merge_with": [
+    7945
+   ]
+  },
+  {
+   "id": 3143,
+   "from": "Renee Good’s",
+   "to": "Renee Good",
+   "type": "PERSON",
+   "would_merge_with": [
+    3144
+   ]
+  },
+  {
+   "id": 3144,
+   "from": "Renee Good&#039;s",
+   "to": "Renee Good",
+   "type": "PERSON",
+   "would_merge_with": [
+    3143
+   ]
+  },
+  {
+   "id": 3153,
+   "from": "&#8220;Belarus",
+   "to": "Belarus",
+   "type": "ORG",
+   "would_merge_with": [
+    3150
+   ]
+  },
+  {
+   "id": 3259,
+   "from": "the &#039;ceasefire&#039",
+   "to": "'ceasefire",
+   "type": "ORG",
+   "would_merge_with": [
+    22876
+   ]
+  },
+  {
+   "id": 3331,
+   "from": "Trump administration&#039;s",
+   "to": "Trump administration",
+   "type": "ORG",
+   "would_merge_with": [
+    4315
+   ]
+  },
+  {
+   "id": 3394,
+   "from": "”He",
+   "to": "He",
+   "type": "ORG",
+   "would_merge_with": [
+    8083
+   ]
+  },
+  {
+   "id": 3408,
+   "from": "‌a",
+   "to": "a",
+   "type": "ORG",
+   "would_merge_with": [
+    2241,
+    18092
+   ]
+  },
+  {
+   "id": 3409,
+   "from": "Europe&#039;s",
+   "to": "Europe",
+   "type": "ORG",
+   "would_merge_with": [
+    255
+   ]
+  },
+  {
+   "id": 3443,
+   "from": "Michael Olise&#039;s",
+   "to": "Michael Olise",
+   "type": "PERSON",
+   "would_merge_with": [
+    5520
+   ]
+  },
+  {
+   "id": 3583,
+   "from": "WHO&#039;s",
+   "to": "WHO",
+   "type": "NORP",
+   "would_merge_with": [
+    1394
+   ]
+  },
+  {
+   "id": 3627,
+   "from": "India&#039;s",
+   "to": "India",
+   "type": "ORG",
+   "would_merge_with": [
+    4290
+   ]
+  },
+  {
+   "id": 3640,
+   "from": "Tigray&#039;s",
+   "to": "Tigray",
+   "type": "GPE",
+   "would_merge_with": [
+    167
+   ]
+  },
+  {
+   "id": 3649,
+   "from": "state&#039;s",
+   "to": "state",
+   "type": "NORP",
+   "would_merge_with": [
+    2062,
+    21521
+   ]
+  },
+  {
+   "id": 3683,
+   "from": "Lula&#039;s",
+   "to": "Lula",
+   "type": "PERSON",
+   "would_merge_with": [
+    1495
+   ]
+  },
+  {
+   "id": 3734,
+   "from": "Shai Hope&#039;s",
+   "to": "Shai Hope",
+   "type": "PERSON",
+   "would_merge_with": [
+    13741
+   ]
+  },
+  {
+   "id": 3760,
+   "from": "Senegal&#039;s",
+   "to": "Senegal",
+   "type": "GPE",
+   "would_merge_with": [
+    857
+   ]
+  },
+  {
+   "id": 3846,
+   "from": "the World Food Programme",
+   "to": "World Food Programme",
+   "type": "ORG",
+   "would_merge_with": [
+    4760
+   ]
+  },
+  {
+   "id": 3873,
+   "from": "Hitler&#039",
+   "to": "Hitler",
+   "type": "ORG",
+   "would_merge_with": [
+    14913
+   ]
+  },
+  {
+   "id": 3876,
+   "from": "the &#039;Knights",
+   "to": "'Knights",
+   "type": "ORG",
+   "would_merge_with": [
+    13041
+   ]
+  },
+  {
+   "id": 3958,
+   "from": "South America’s",
+   "to": "South America",
+   "type": "LOC",
+   "would_merge_with": [
+    8043
+   ]
+  }
+ ]
+}
