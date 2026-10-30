@@ -17,6 +17,11 @@ It does not detect a hung daemon (alive but not ticking): a host that was asleep
 Processes are created through WMI (``Win32_Process.Create``): detached from any console and not children of the
 scheduled task, exactly as the manual runbook does (``data/deploy/LIVE-DAEMON.md``). Every decision is appended to
 ``log`` as one JSON line. The decision itself is the pure function ``decide`` (tests: tests/test_daemon_supervisor.py).
+
+The daemon is started through ``daemon_launcher.py``, which records each start and exit (exit code, runtime, hold,
+the tail of ``daemon.err.log``) in ``daemon-exits.jsonl``. When a start has no exit record and both processes are gone
+(the launcher was killed with the daemon: a process-tree kill, a reboot, power loss), ``reconcile_exits`` records the
+missing exit as unrecorded.
 """
 from __future__ import annotations
 
@@ -74,6 +79,28 @@ def wmi_start(command_line: str, cwd: str) -> dict:
     return json.loads(out) if out.strip() else {"rc": None, "pid": None}
 
 
+def reconcile_exits(exits: list[dict], running: bool, held: bool, now: datetime) -> dict | None:
+    """The exit record to append when the last start has none and nothing it started is running, else None."""
+    last = next((e for e in reversed(exits) if e.get("event") in ("start", "exit")), None)
+    if not last or last["event"] != "start" or running:
+        return None
+    return {"event": "exit", "at": now.isoformat(timespec="seconds"), "daemon_pid": last.get("daemon_pid"),
+            "exit_code": None, "recorded_by": "supervisor", "held": held,
+            "cause": "unrecorded: the launcher ended with the daemon (process-tree kill, host reboot or power loss)"}
+
+
+def read_jsonl(path: Path, last: int = 200) -> list[dict]:
+    if not path.exists():
+        return []
+    out = []
+    for line in path.read_text(encoding="utf-8").splitlines()[-last:]:
+        try:
+            out.append(json.loads(line))
+        except ValueError:
+            continue
+    return out
+
+
 def head_of(worktree: str) -> str | None:
     r = subprocess.run(["git", "-C", worktree, "rev-parse", "HEAD"], capture_output=True, text=True,
                        creationflags=NO_WINDOW, timeout=60)
@@ -102,16 +129,24 @@ def main(config_path: str) -> int:
     worktree = cfg["daemon_worktree"]
     procs = processes()
     lower = lambda p: (p.get("CommandLine") or "").lower()  # noqa: E731
-    daemon = [p for p in procs if "main.py daemon" in lower(p)]     # the daemon's python (its cmd parent is not python)
+    daemon = [p for p in procs if "main.py daemon" in lower(p)]     # the daemon's python (its launcher is not matched)
+    launcher = [p for p in procs if "daemon_launcher.py" in lower(p)]
     keep = [p for p in procs if "keepawake.py" in lower(p)]
-    state = State(held=Path(cfg["hold_file"]).exists(), daemon_running=bool(daemon), head=head_of(worktree),
+    held = Path(cfg["hold_file"]).exists()
+    exit_log = Path(cfg.get("exit_log") or log.with_name("daemon-exits.jsonl"))
+    missing = reconcile_exits(read_jsonl(exit_log), bool(daemon or launcher), held, now)
+    if missing:
+        with open(exit_log, "a", encoding="utf-8") as f:
+            f.write(json.dumps(missing) + "\n")
+    state = State(held=held, daemon_running=bool(daemon), head=head_of(worktree),
                   keepawake_running=bool(keep), restarts_last_hour=recent_restarts(log, now))
     action = decide(state, cfg["pinned_commit"], cfg.get("max_restarts_per_hour", 3), cfg.get("keepawake", True))
     entry = {"at": now.isoformat(timespec="seconds"), **action, "head": state.head, "pinned": cfg["pinned_commit"],
              "daemon_pids": [p["ProcessId"] for p in daemon], "restarts_last_hour": state.restarts_last_hour}
     if action["daemon"] == "restart":
-        command = (f'cmd /c cd /d {worktree} && set "OSINT_DB_URL={cfg["db_url"]}" && "{cfg["python"]}" '
-                   f"main.py daemon >> data\\logs\\daemon.out.log 2>> data\\logs\\daemon.err.log")
+        # the launcher runs the same command as the runbook and records how the daemon ends (daemon-exits.jsonl)
+        launcher_script = cfg.get("launcher") or str(Path(__file__).with_name("daemon_launcher.py"))
+        command = f'"{cfg["pythonw"]}" "{launcher_script}" "{Path(config_path).resolve()}"'
         entry["started"] = wmi_start(command, worktree)
     if action["keepawake"] == "start":
         until = (now + timedelta(hours=cfg.get("keepawake_hours", 24))).strftime("%Y-%m-%dT%H:%M:%SZ")
