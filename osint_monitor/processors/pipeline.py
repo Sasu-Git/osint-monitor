@@ -454,12 +454,21 @@ def run_post_processing(session: Session, quiet: bool = False, offline: bool = F
     stats: dict = {}
     stages: dict[str, str] = {}
     stats["stages"] = stages
+    seconds: dict[str, float] = {}               # wall-clock seconds per stage, retries included
+    stats["stage_seconds"] = seconds
 
     def _print(msg: str):
         if not quiet:
             print(msg)
 
     def _stage(name: str, fn, network: bool = False) -> None:
+        started = time.perf_counter()
+        try:
+            _run_stage(name, fn, network)
+        finally:
+            seconds[name] = round(time.perf_counter() - started, 1)
+
+    def _run_stage(name: str, fn, network: bool) -> None:
         if network and offline:
             stages[name] = "skipped (offline)"
             return
@@ -680,28 +689,46 @@ def run_tier(tier: str, db_url: str | None = None, quiet: bool = False) -> dict:
     init_db(db_url)
     session = get_session(db_url)
 
+    timing: dict[str, float] = {}
+
+    def _record_timing(proc_stats: dict) -> None:
+        # stored with the run under the reserved stage key "_seconds": phases (collection, lock_wait, db_write,
+        # post_processing) and, when post-processing ran, each of its stages
+        proc_stats.setdefault("stages", {})["_seconds"] = {**timing, **proc_stats.pop("stage_seconds", {})}
+        logger.info(f"[{tier}] timing: " + ", ".join(f"{k} {v:.0f}s" for k, v in timing.items()))
+
     try:
         # 1. Collect this tier (concurrently with other tiers: network-bound)
         started = datetime.utcnow()
+        t = time.perf_counter()
         raw_items = run_collection_for_tier(session, tier)
+        timing["collection"] = round(time.perf_counter() - t, 1)
 
         # 2-3. Write phase, one tier at a time: process new items, then post-process. The run row is
         # written here, under the lock, so run bookkeeping never races another tier's writes.
+        t = time.perf_counter()
         with DB_WRITE_LOCK:
+            timing["lock_wait"] = round(time.perf_counter() - t, 1)      # another tier's write phase
             run, token = start_run(session, "tier", tier=tier, started_at=started)
             proc_stats: dict = {}
             try:
+                t = time.perf_counter()
                 proc_stats = process_new_items(session, raw_items)
+                timing["db_write"] = round(time.perf_counter() - t, 1)
                 if proc_stats.get("new_items", 0) > 0:
+                    t = time.perf_counter()
                     post_stats = run_post_processing(session, quiet=quiet)
+                    timing["post_processing"] = round(time.perf_counter() - t, 1)
                     proc_stats.update(post_stats)
                     logger.info(f"[{tier}] {proc_stats['new_items']} new items processed, post-processing complete")
                 else:
                     logger.info(f"[{tier}] No new items, skipping post-processing")
             except Exception as e:
                 session.rollback()
+                _record_timing(proc_stats)
                 finish_run(session, run, token, proc_stats, items_collected=len(raw_items), error=e)
                 raise
+            _record_timing(proc_stats)
             finish_run(session, run, token, proc_stats, items_collected=len(raw_items))
 
         return proc_stats
