@@ -1,7 +1,21 @@
 # Development location contract: PROPOSED (2026-11-02)
 
-**Status.** Design only. No geocoder, pipeline, schema or frontend change. Every rule here is `PROPOSED` until the owner
-approves it.
+**Status.** Design only. No geocoder, pipeline, schema or frontend change. Rules L1–L8 remain `PROPOSED`. The six
+product decisions below are **decided by the owner (2026-11-02)**. Nothing is implemented.
+
+## Owner rulings (2026-11-02)
+
+| # | Ruling | Effect on this contract |
+|---|---|---|
+| U1 | **(a)** A statement or speech is located at the speaker's location **only when the report states where it was made**; otherwise NONE | L1's REPORTING_LOCATION role is used only for that case (G13 → NONE; G06 → NONE for the call) |
+| U2 | **(a)** Several supported places in one country → **country ring** plus the places listed; no single point | L5 as written (G04 → EVENT_COUNTRY RUS, places listed) |
+| U3 | **(a)** Seas, straits, continents and regions: **not on the map**, label in the feed only | L6 and L8 as written (G06, G07 source region, D333 Europe) |
+| U4 | **(a)** Disputed or occupied territory is **its own entity**, contained in nothing, compatible with both claimants for matching only | West Bank, Gaza, Crimea and Western Sahara become their own entities in the location layer (G02, G05) |
+| U5 | **(c)** Drop the shared alias `america → united states`. **Implementation deferred**: it changes NER and actor keys, so it ships only as its own candidate behind the identity, entity and Situation gates | Out of this contract's implementation; tracked as a separate change |
+| U6 | **(b)** Stored Developments are re-derived only through a **separately approved repair** with a dry run and backup; new Developments follow the contract once implemented | No automatic backfill |
+
+With U1 and U2 decided, the earlier stop point (section 5) is resolved: the contract is implementable as written once
+implementation is approved.
 
 **Evidence.** The frozen geolocation audit (`evaluations/geolocation/2026-11-02/`, sha-pinned in its `FREEZE.md`;
 inputs unchanged, not re-run): 1,166 located Developments; about 12% of stored points wrong; 45 correct points hidden by
