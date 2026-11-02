@@ -1,0 +1,544 @@
+{
+ "D1-elon-musk": {
+  "situation": {
+   "id": 17,
+   "slug": "elon-musk-musk",
+   "primary_actors": [
+    "Elon Musk",
+    "Musk"
+   ],
+   "created_at": "2026-10-13 18:59:08.605062"
+  },
+  "developments": [
+   {
+    "development_id": 320,
+    "principals": [
+     {
+      "entity_id": 1238,
+      "canonical_name": "Elon Musk's",
+      "entity_type": "PERSON",
+      "actor_role": "actor"
+     },
+     {
+      "entity_id": 9920,
+      "canonical_name": "Musk",
+      "entity_type": "PRODUCT",
+      "actor_role": "actor"
+     }
+    ],
+    "items": [
+     {
+      "item_id": 6421,
+      "source": "South China Morning Post",
+      "title": "Elon Musk hits out at ‘certain oligarchs’ for blocking Starlink in India",
+      "defect_mentions": [
+       {
+        "span_text": "Elon Musk",
+        "entity_id": 1238,
+        "canonical_name": "Elon Musk's",
+        "entity_type": "PERSON",
+        "method": "fuzzy-provisional",
+        "evidence": "'elon musk's' scored 90 (threshold 80); not stored as an alias"
+       }
+      ]
+     },
+     {
+      "item_id": 6668,
+      "source": "Al Jazeera",
+      "title": "India defends satellite internet approval process after Elon Musk jab",
+      "defect_mentions": [
+       {
+        "span_text": "Elon Musk jab Musk",
+        "entity_id": 8753,
+        "canonical_name": "Elon Musk jab Musk",
+        "entity_type": "PERSON",
+        "method": "new",
+        "evidence": "no trusted match"
+       }
+      ]
+     },
+     {
+      "item_id": 7717,
+      "source": "South China Morning Post",
+      "title": "Elon Musk’s Starlink row in India exposes Asia’s deeper battle over satellite power",
+      "defect_mentions": [
+       {
+        "span_text": "Elon Musk",
+        "entity_id": 1238,
+        "canonical_name": "Elon Musk's",
+        "entity_type": "PERSON",
+        "method": "fuzzy-provisional",
+        "evidence": "'elon musk's' scored 90 (threshold 80); not stored as an alias"
+       },
+       {
+        "span_text": "Musk",
+        "entity_id": 9920,
+        "canonical_name": "Musk",
+        "entity_type": "PRODUCT",
+        "method": "exact",
+        "evidence": "'Musk' is a trusted name of 'Musk'"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "development_id": 447,
+    "principals": [
+     {
+      "entity_id": 83,
+      "canonical_name": "Trump",
+      "entity_type": "PERSON",
+      "actor_role": "actor"
+     },
+     {
+      "entity_id": 201,
+      "canonical_name": "Donald Trump",
+      "entity_type": "PERSON",
+      "actor_role": "actor"
+     },
+     {
+      "entity_id": 4052,
+      "canonical_name": "EEUU",
+      "entity_type": "GPE",
+      "actor_role": "actor"
+     },
+     {
+      "entity_id": 4053,
+      "canonical_name": "Estados Unidos",
+      "entity_type": "GPE",
+      "actor_role": "actor"
+     },
+     {
+      "entity_id": 4116,
+      "canonical_name": "Washington",
+      "entity_type": "GPE",
+      "actor_role": "actor"
+     },
+     {
+      "entity_id": 6587,
+      "canonical_name": "EE. UU.",
+      "entity_type": "GPE",
+      "actor_role": "actor"
+     },
+     {
+      "entity_id": 9630,
+      "canonical_name": "EE.UU.",
+      "entity_type": "GPE",
+      "actor_role": "actor"
+     }
+    ],
+    "items": [
+     {
+      "item_id": 8556,
+      "source": "Clarín Mundo",
+      "title": "Elon Musk se convirtió en el mayor donante en la elección legislativa de Estados Unidos con un objetivo: salvar a los republicanos",
+      "defect_mentions": [
+       {
+        "span_text": "Elon Musk",
+        "entity_id": 1238,
+        "canonical_name": "Elon Musk's",
+        "entity_type": "PERSON",
+        "method": "fuzzy-provisional",
+        "evidence": "'elon musk's' scored 90 (threshold 80); not stored as an alias"
+       }
+      ]
+     },
+     {
+      "item_id": 9382,
+      "source": "France 24 Español",
+      "title": "\"Musk donó a los republicanos 276 millones de dólares para las midterms\": 'The New York Times'",
+      "defect_mentions": [
+       {
+        "span_text": "Musk",
+        "entity_id": 9920,
+        "canonical_name": "Musk",
+        "entity_type": "PRODUCT",
+        "method": "exact",
+        "evidence": "'Musk' is a trusted name of 'Musk'"
+       },
+       {
+        "span_text": "Elon Musk",
+        "entity_id": 1238,
+        "canonical_name": "Elon Musk's",
+        "entity_type": "PERSON",
+        "method": "fuzzy-provisional",
+        "evidence": "'elon musk's' scored 90 (threshold 80); not stored as an alias"
+       }
+      ]
+     },
+     {
+      "item_id": 9392,
+      "source": "El País Internacional",
+      "title": "La embajadora de Estados Unidos en Grecia dimite por corrupción presionada por Trump",
+      "defect_mentions": []
+     },
+     {
+      "item_id": 9403,
+      "source": "Clarín Mundo",
+      "title": "Renunció la embajadora de Donald Trump en Grecia por varias acusaciones de \"conducta indebida\"",
+      "defect_mentions": []
+     },
+     {
+      "item_id": 9840,
+      "source": "BBC Mundo",
+      "title": "Trump destituye a Kimberly Guilfoyle como embajadora de EE.UU. en Grecia tras acusaciones de corrupción",
+      "defect_mentions": []
+     },
+     {
+      "item_id": 10064,
+      "source": "France 24 Español",
+      "title": "Informe desde Washington: la renuncia de Kimberly Guilfoyle la embajadora de EE. UU. en Grecia",
+      "defect_mentions": []
+     },
+     {
+      "item_id": 10165,
+      "source": "Europa Press Internacional",
+      "title": "Un juez extiende el acceso a CNN, MS NOW y Politico a la Casa Blanca y considera inconstitucional el veto de Trump",
+      "defect_mentions": []
+     },
+     {
+      "item_id": 10171,
+      "source": "Europa Press Internacional",
+      "title": "La Casa Blanca fuerza la dimisión de la embajadora de EEUU en Grecia, Kimberly Guilfoyle, por presunta corrupción",
+      "defect_mentions": []
+     },
+     {
+      "item_id": 10426,
+      "source": "El País Internacional",
+      "title": "La senadora republicana por Maine se distancia de Trump para salvar su escaño: “El presidente no tenía un buen plan”",
+      "defect_mentions": []
+     },
+     {
+      "item_id": 10493,
+      "source": "El País Internacional",
+      "title": "Un juez federal ratifica el acceso a la Casa Blanca de CNN, Politico y MS Now que vetó Trump",
+      "defect_mentions": []
+     },
+     {
+      "item_id": 11263,
+      "source": "Clarín Mundo",
+      "title": "Los primeros 14 minutos de Katie Zacharia: la voz oficial de la persona más poderosa del mundo",
+      "defect_mentions": []
+     },
+     {
+      "item_id": 11323,
+      "source": "El País Internacional",
+      "title": "El “desastroso” estreno de la portavoz de la Casa Blanca provoca apuestas sobre su permanencia",
+      "defect_mentions": []
+     },
+     {
+      "item_id": 12540,
+      "source": "BBC Mundo",
+      "title": "Quién es Katie Zacharia y por qué su designación como secretaria de prensa de Trump ha generado controversia",
+      "defect_mentions": []
+     }
+    ]
+   }
+  ],
+  "entities_named": [
+   {
+    "entity_id": 1238,
+    "canonical_name": "Elon Musk's",
+    "entity_type": "PERSON",
+    "aliases": "[\"Elon Musk\\u2019s\"]"
+   },
+   {
+    "entity_id": 7111,
+    "canonical_name": "Musk Anduril",
+    "entity_type": "ORG",
+    "aliases": "[]"
+   },
+   {
+    "entity_id": 8753,
+    "canonical_name": "Elon Musk jab Musk",
+    "entity_type": "PERSON",
+    "aliases": "[]"
+   },
+   {
+    "entity_id": 9920,
+    "canonical_name": "Musk",
+    "entity_type": "PRODUCT",
+    "aliases": "[]"
+   },
+   {
+    "entity_id": 12556,
+    "canonical_name": "Elon Musks Starlink",
+    "entity_type": "ORG",
+    "aliases": "[]"
+   },
+   {
+    "entity_id": 12812,
+    "canonical_name": "Elon Musks Spacex",
+    "entity_type": "ORG",
+    "aliases": "[]"
+   },
+   {
+    "entity_id": 14137,
+    "canonical_name": "Ukraine Elon Musk",
+    "entity_type": "PERSON",
+    "aliases": "[]"
+   },
+   {
+    "entity_id": 14311,
+    "canonical_name": "Alex Gibneys Musk",
+    "entity_type": "PERSON",
+    "aliases": "[]"
+   }
+  ]
+ },
+ "D2-storm-names": {
+  "situation": {
+   "id": 18,
+   "slug": "rachel-simon",
+   "primary_actors": [
+    "Rachel",
+    "Simon"
+   ],
+   "created_at": "2026-10-13 22:16:20.224263"
+  },
+  "developments": [
+   {
+    "development_id": 402,
+    "principals": [
+     {
+      "entity_id": 10091,
+      "canonical_name": "Simon",
+      "entity_type": "PERSON",
+      "actor_role": "actor"
+     },
+     {
+      "entity_id": 10777,
+      "canonical_name": "Rachel",
+      "entity_type": "PERSON",
+      "actor_role": "actor"
+     }
+    ],
+    "items": [
+     {
+      "item_id": 8436,
+      "source": "DW World",
+      "title": "Hurricane Simon batters Mexico's Pacific Coast",
+      "defect_mentions": [
+       {
+        "span_text": "Hurricane Simon",
+        "entity_id": 10744,
+        "canonical_name": "Hurricane Simon",
+        "entity_type": "EVENT",
+        "method": "new",
+        "evidence": "no trusted match"
+       }
+      ]
+     },
+     {
+      "item_id": 8497,
+      "source": "Al Jazeera",
+      "title": "Two deaths reported as Hurricane Simon, storm Rachel batter Mexico’s coast",
+      "defect_mentions": [
+       {
+        "span_text": "Hurricane Simon",
+        "entity_id": 10744,
+        "canonical_name": "Hurricane Simon",
+        "entity_type": "EVENT",
+        "method": "exact",
+        "evidence": "'Hurricane Simon' is a trusted name of 'Hurricane Simon'"
+       },
+       {
+        "span_text": "Rachel",
+        "entity_id": 10777,
+        "canonical_name": "Rachel",
+        "entity_type": "PERSON",
+        "method": "exact",
+        "evidence": "'Rachel' is a trusted name of 'Rachel'"
+       },
+       {
+        "span_text": "Simon",
+        "entity_id": 10091,
+        "canonical_name": "Simon",
+        "entity_type": "PERSON",
+        "method": "exact",
+        "evidence": "'Simon' is a trusted name of 'Simon'"
+       }
+      ]
+     },
+     {
+      "item_id": 9552,
+      "source": "GDELT",
+      "title": "Death toll rises as Hurricanes Simon, Rachel remnants unleash floods",
+      "defect_mentions": [
+       {
+        "span_text": "Hurricanes Simon",
+        "entity_id": 10744,
+        "canonical_name": "Hurricane Simon",
+        "entity_type": "EVENT",
+        "method": "fuzzy-provisional",
+        "evidence": "'hurricane simon' scored 97 (threshold 85); not stored as an alias"
+       },
+       {
+        "span_text": "Rachel",
+        "entity_id": 10777,
+        "canonical_name": "Rachel",
+        "entity_type": "PERSON",
+        "method": "exact",
+        "evidence": "'Rachel' is a trusted name of 'Rachel'"
+       }
+      ]
+     },
+     {
+      "item_id": 9761,
+      "source": "GDELT",
+      "title": "Death toll rises to 6 as Hurricane Simon and Rachel remnants unleash floods in Mexico",
+      "defect_mentions": [
+       {
+        "span_text": "Simon",
+        "entity_id": 10091,
+        "canonical_name": "Simon",
+        "entity_type": "PERSON",
+        "method": "exact",
+        "evidence": "'Simon' is a trusted name of 'Simon'"
+       },
+       {
+        "span_text": "Rachel",
+        "entity_id": 10777,
+        "canonical_name": "Rachel",
+        "entity_type": "PERSON",
+        "method": "exact",
+        "evidence": "'Rachel' is a trusted name of 'Rachel'"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "development_id": 429,
+    "principals": [],
+    "items": [
+     {
+      "item_id": 8472,
+      "source": "France 24 Español",
+      "title": "Huracanes en México: Simón y Rachel dejan al menos dos muertos y 10 desaparecidos",
+      "defect_mentions": [
+       {
+        "span_text": "Simón",
+        "entity_id": 10091,
+        "canonical_name": "Simon",
+        "entity_type": "PERSON",
+        "method": "fuzzy-provisional",
+        "evidence": "'simon' scored 80 (threshold 80); not stored as an alias"
+       },
+       {
+        "span_text": "Rachel",
+        "entity_id": 10777,
+        "canonical_name": "Rachel",
+        "entity_type": "PERSON",
+        "method": "new",
+        "evidence": "no trusted match"
+       }
+      ]
+     },
+     {
+      "item_id": 8544,
+      "source": "El País Internacional",
+      "title": "Cómo California se convirtió en cuna y refugio de los hijos de los narcos más temidos de México",
+      "defect_mentions": []
+     },
+     {
+      "item_id": 10194,
+      "source": "Europa Press Internacional",
+      "title": "Al menos siete muertos, entre ellos dos menores, por el paso del ciclón 'Rachel' en Baja California, en México",
+      "defect_mentions": [
+       {
+        "span_text": "'Rachel",
+        "entity_id": 10777,
+        "canonical_name": "Rachel",
+        "entity_type": "PERSON",
+        "method": "exact",
+        "evidence": "''Rachel' is a trusted name of 'Rachel'"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "entities_named": [
+   {
+    "entity_id": 4242,
+    "canonical_name": "Simona De Martino",
+    "entity_type": "PERSON",
+    "aliases": "[]"
+   },
+   {
+    "entity_id": 4543,
+    "canonical_name": "Simone Pitta",
+    "entity_type": "PERSON",
+    "aliases": "[]"
+   },
+   {
+    "entity_id": 5643,
+    "canonical_name": "Simon Andriesz",
+    "entity_type": "PERSON",
+    "aliases": "[]"
+   },
+   {
+    "entity_id": 6682,
+    "canonical_name": "Simon Moritz",
+    "entity_type": "PERSON",
+    "aliases": "[]"
+   },
+   {
+    "entity_id": 7957,
+    "canonical_name": "Simona Ciuffoni",
+    "entity_type": "PERSON",
+    "aliases": "[]"
+   },
+   {
+    "entity_id": 8154,
+    "canonical_name": "Simone Lorenzo Benini",
+    "entity_type": "PERSON",
+    "aliases": "[]"
+   },
+   {
+    "entity_id": 10091,
+    "canonical_name": "Simon",
+    "entity_type": "PERSON",
+    "aliases": "[]"
+   },
+   {
+    "entity_id": 10110,
+    "canonical_name": "Andrea Simoncini",
+    "entity_type": "PERSON",
+    "aliases": "[]"
+   },
+   {
+    "entity_id": 10248,
+    "canonical_name": "Simon Martin",
+    "entity_type": "PERSON",
+    "aliases": "[]"
+   },
+   {
+    "entity_id": 10744,
+    "canonical_name": "Hurricane Simon",
+    "entity_type": "EVENT",
+    "aliases": "[]"
+   },
+   {
+    "entity_id": 10777,
+    "canonical_name": "Rachel",
+    "entity_type": "PERSON",
+    "aliases": "[]"
+   },
+   {
+    "entity_id": 11553,
+    "canonical_name": "Simon King",
+    "entity_type": "PERSON",
+    "aliases": "[]"
+   },
+   {
+    "entity_id": 15057,
+    "canonical_name": "Simon Ekpas",
+    "entity_type": "PERSON",
+    "aliases": "[]"
+   }
+  ]
+ }
+}

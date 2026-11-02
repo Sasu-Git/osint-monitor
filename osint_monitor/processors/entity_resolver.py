@@ -326,6 +326,17 @@ class EntityResolver:
 
         ``context``: the states / organisations the mention's item names or its publisher is
         (``institutions.item_qualifiers``); a generic label ("the Navy") resolves only through it."""
+        # --- Step -1: the mention stands for another name in its own item (a bare surname's full name, a named
+        # storm): resolve that name; the mention is never stored as its alias
+        if extracted.refers_to and extracted.refers_to != extracted.text:
+            target = self.resolve(ExtractedEntity(text=extracted.refers_to, entity_type=extracted.entity_type,
+                                                  role=extracted.role, canonical_name=extracted.refers_to), context)
+            why = ("names the storm" if extracted.entity_type == EntityType.EVENT
+                   else "is the surname of the person the same item names as")
+            self.last_method = "in-item"
+            self.last_evidence = f"'{extracted.text}' {why} '{extracted.refers_to}' ({self.last_evidence})"
+            return target
+
         # --- Step 0: normalise & type-correct --------------------------------
         corrected_type = correct_entity_type(
             extracted.text, extracted.entity_type

@@ -276,6 +276,113 @@ def mention_span(span):
     return core
 
 
+def ner_text(title: str | None, content: str | None) -> str:
+    """An item's headline and body as one NER input, with a sentence break between them: joined by a bare
+    space, "... after Elon Musk jab" + "Musk has claimed ..." parses as one name ("Elon Musk jab Musk")."""
+    head, body = (title or "").strip(), (content or "").strip()
+    if not head or not body:
+        return head or body
+    return f"{head}{'' if head[-1] in '.!?:;…' else '.'} {body}"
+
+
+# --- named storms (all languages) ----------------------------------------------------------------
+# A name governed by a storm word is the storm, not a person: "Hurricane Simon", "storm Rachel", "ciclón 'Rachel'",
+# and the names listed with it ("Hurricanes Simon, Rachel", "Hurricane Simon and Rachel", "Huracanes en México:
+# Simón y Rachel"). The descriptor's English form names the storm entity.
+STORM_WORDS = {
+    "hurricane": "Hurricane", "huracan": "Hurricane", "uragano": "Hurricane",
+    "storm": "Storm", "tormenta": "Storm", "tempesta": "Storm",
+    "typhoon": "Typhoon", "tifon": "Typhoon", "tifone": "Typhoon",
+    "cyclone": "Cyclone", "ciclon": "Cyclone", "ciclone": "Cyclone",
+}
+STORM_PLURALS = {"hurricanes": "hurricane", "huracanes": "huracan", "uragani": "uragano", "storms": "storm",
+                 "tormentas": "tormenta", "tempeste": "tempesta", "typhoons": "typhoon", "tifones": "tifon",
+                 "tifoni": "tifone", "cyclones": "cyclone", "ciclones": "ciclon", "cicloni": "ciclone"}
+_STORM_SKIP = {"tropical", "tropicale", "'", "‘", "’", "\"", "“", "”", "«", "»"}
+_LIST_WORDS = {",", "and", "y", "e", "et", "&"}
+
+
+def _fold(word: str) -> str:
+    import unicodedata
+    return "".join(c for c in unicodedata.normalize("NFKD", word.lower()) if not unicodedata.combining(c))
+
+
+def _storm_word(tok) -> tuple[str | None, bool]:
+    """(English descriptor, plural) when the token is a storm word, else (None, False)."""
+    w = _fold(tok.text)
+    if w in STORM_WORDS:
+        return STORM_WORDS[w], False
+    if w in STORM_PLURALS:
+        return STORM_WORDS[STORM_PLURALS[w]], True
+    return None, False
+
+
+def _name_token(tok) -> bool:
+    return tok.text[:1].isupper() and tok.is_alpha and _storm_word(tok)[0] is None
+
+
+def storm_names(doc) -> dict[int, str]:
+    """Token index -> English storm descriptor, for every token that names a storm in ``doc``."""
+    out: dict[int, str] = {}
+    n = len(doc)
+    for i, tok in enumerate(doc):
+        desc, plural = _storm_word(tok)
+        if desc is None:
+            continue
+        j = i + 1
+        while j < n and (doc[j].text in _STORM_SKIP or _fold(doc[j].text) in _STORM_SKIP or _storm_word(doc[j])[0]):
+            j += 1
+        if j >= n or not _name_token(doc[j]):
+            continue
+        out[j] = desc
+        # the names listed with it: through a conjunction always, through a bare comma only after a plural
+        k = j
+        while True:
+            m, joined = k + 1, False
+            while m < n and doc[m].lower_ in _LIST_WORDS:
+                joined = joined or doc[m].lower_ != ","
+                m += 1
+            while m < n and doc[m].text in _STORM_SKIP:
+                m += 1
+            if m == k + 1 or m >= n or not _name_token(doc[m]) or not (joined or plural):
+                break
+            out[m] = desc
+            k = m
+    # a plural storm word and a coordinated pair of bare names in one sentence: "Huracanes en México: Simón y Rachel"
+    for sent in doc.sents:
+        plural = next((STORM_WORDS[STORM_PLURALS[_fold(t.text)]] for t in sent if _fold(t.text) in STORM_PLURALS), None)
+        if plural is None:
+            continue
+        people = [e for e in doc.ents if e.start >= sent.start and e.end <= sent.end and len(e) == 1
+                  and e.label_ in ("PERSON", "PER")]
+        for a, b in zip(people, people[1:]):
+            between = doc[a.end:b.start]
+            if len(between) >= 1 and all(t.lower_ in _LIST_WORDS for t in between):
+                out.setdefault(a.start, plural)
+                out.setdefault(b.start, plural)
+    return out
+
+
+def _link_surnames(entities: list[ExtractedEntity]) -> None:
+    """A bare surname stands for the full name the same item gives, when exactly one person there has that
+    surname ("Musk" with "Elon Musk"; "Bolsonaro" with both Jair and Flávio Bolsonaro stays unlinked)."""
+    from osint_monitor.processors.entity_resolver import variant_key
+    full: dict[str, set[str]] = {}
+    for e in entities:
+        name = e.canonical_name or e.text
+        if e.entity_type == EntityType.PERSON and len(name.split()) >= 2:
+            full.setdefault(variant_key(name.split()[-1]), set()).add(name)
+    for e in entities:
+        name = e.canonical_name or e.text
+        if len(name.split()) != 1 or e.entity_type not in (EntityType.PERSON, EntityType.ORG, EntityType.PRODUCT):
+            continue
+        names = full.get(variant_key(name), set())
+        distinct = {variant_key(n) for n in names}
+        if len(distinct) == 1:
+            e.refers_to = sorted(names, key=len)[0]
+            e.entity_type = EntityType.PERSON
+
+
 def extract_entities(text: str, lang: str = "en") -> list[ExtractedEntity]:
     """Extract named entities from text."""
     from osint_monitor.processors.text_normalize import clean_name, clean_text
@@ -283,6 +390,9 @@ def extract_entities(text: str, lang: str = "en") -> list[ExtractedEntity]:
     if nlp is None:
         return []                          # no trusted model for this language: no entities, not wrong ones
     doc = nlp(clean_text(text)[:10000])  # limit input size
+    storms = storm_names(doc)
+    # a name the item gives as a storm is that storm wherever it stands alone in the item ("Hurricane Simon ... Simon")
+    storm_words = {_fold(doc[i].text): d for i, d in storms.items()}
 
     entities: list[ExtractedEntity] = []
     seen: set[str] = set()
@@ -292,6 +402,17 @@ def extract_entities(text: str, lang: str = "en") -> list[ExtractedEntity]:
         if span is None:
             continue
         etype = entity_type_of(ent.label_, span.text, (lang or "en").split("-")[0].lower())
+        named = [t for t in span if t.is_alpha and _storm_word(t)[0] is None]
+        alone = len(named) == 1 and _fold(named[0].text) in storm_words
+        if etype in (EntityType.PERSON, EntityType.LOC) and named and (all(t.i in storms for t in named) or alone):
+            desc = storms.get(named[0].i) or storm_words[_fold(named[0].text)]
+            storm = f"{desc} {' '.join(t.text for t in named)}"
+            key = f"{storm.lower()}:{EntityType.EVENT}"
+            if key not in seen:
+                seen.add(key)
+                entities.append(ExtractedEntity(text=span.text, entity_type=EntityType.EVENT, role=EntityRole.SUBJECT,
+                                                confidence=1.0, canonical_name=storm, refers_to=storm))
+            continue
         if etype is None:
             from osint_monitor.processors.institutions import registry
             reg = registry()                    # MISC spans the registry names ("Corte Suprema") are organisations
@@ -318,6 +439,7 @@ def extract_entities(text: str, lang: str = "en") -> list[ExtractedEntity]:
             canonical_name=name,           # the clean name an entity created from it gets
         ))
 
+    _link_surnames(entities)
     return entities
 
 

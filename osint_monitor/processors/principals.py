@@ -149,6 +149,17 @@ def _gazetteer() -> Gazetteer:
     return _GAZETTEER
 
 
+def _names_storm(span) -> bool:
+    """Whether every name word of the span names a storm in its document (``nlp.storm_names``, cached per doc)."""
+    from osint_monitor.processors.nlp import _storm_word, storm_names
+    doc = span.doc
+    if "storm_names" not in doc.user_data:
+        doc.user_data["storm_names"] = storm_names(doc)
+    storms = doc.user_data["storm_names"]
+    named = [t for t in span if t.is_alpha and _storm_word(t)[0] is None]
+    return bool(named) and all(t.i in storms for t in named)
+
+
 def rejection(span, normalizer: ActorNormalizer, geo: Gazetteer | None = None, label: str | None = None) -> str | None:
     """Why an actor candidate is not an actor in its sentence, or None. Uses the NER label,
     part of speech and dependency role; configured actors are never rejected."""
@@ -159,6 +170,8 @@ def rejection(span, normalizer: ActorNormalizer, geo: Gazetteer | None = None, l
     before = span.doc[span.start - 1].lower_ if span.start > 0 else ""
     if span[0].lower_ in WEATHER_WORDS or before in WEATHER_WORDS:
         return "weather_system"
+    if label in ("PERSON", "LOC") and _names_storm(span):
+        return "weather_system"                     # "Hurricanes Simon, Rachel", "Huracanes ...: Simón y Rachel"
     proper = [t.pos_ == "PROPN" for t in span]
     if not any(proper) and not geo.is_country(text):
         return "common_noun"
@@ -363,10 +376,18 @@ def mark_principal_actors(session: Session, now: datetime | None = None,
                                     for n in [ee.entity.canonical_name, *short_forms(ee.entity)]}
                      for ee in links if ee.entity is not None}
         principal_ids: set[int] = set()
+        entity_of = {ee.entity_id: ee.entity for ee in links if ee.entity is not None}
         for holder in actors.principals:
             # the entity's own name must stand for this actor: an "Americas" entity that the
             # resolver gave an "America" alias is not the United States
             matched = {eid for eid, hs in holder_of.items() if any(same_holder(h, holder) for h in hs)}
+            if len(matched) > 1:
+                # one actor, one identity: "Elon Musk" and a "Musk" product entity both match the holder "elon musk"
+                # but normalise to different actors; only entities of the best match's actor stay (entities that
+                # normalise alike -- "United States", "EE.UU." -- all stay, as before)
+                best = min(matched, key=lambda eid: _holder_rank(entity_of.get(eid), holder_of[eid], holder))
+                best_key = _actor_key(entity_of.get(best), normalizer)
+                matched = {eid for eid in matched if eid == best or _actor_key(entity_of.get(eid), normalizer) == best_key}
             if not matched:
                 if by_surface is None:
                     by_surface = _entity_index(session, normalizer)
@@ -401,6 +422,21 @@ def entity_holder(canonical: str, entity_type: str | None, normalizer: ActorNorm
             return geo.canonical(key)
         return geo.canonical(canonical)
     return normalizer.surface(canonical) or canonical.lower()
+
+
+_ACTOR_TYPES = ("PERSON", "ORG", "GPE", "NORP")
+
+
+def _holder_rank(entity: Entity | None, holders: set[str], holder: str) -> tuple:
+    """Sort key: an entity whose own name is the holder's surface form first, then actor-typed, then the oldest."""
+    from osint_monitor.processors.entity_resolver import variant_key
+    exact = any(variant_key(h) == variant_key(holder) for h in holders)
+    actor = entity is not None and entity.entity_type in _ACTOR_TYPES
+    return (not exact, not actor, entity.id if entity is not None else 0)
+
+
+def _actor_key(entity: Entity | None, normalizer: ActorNormalizer) -> str | None:
+    return normalizer.key(entity.canonical_name) if entity is not None else None
 
 
 def short_forms(entity: Entity) -> list[str]:

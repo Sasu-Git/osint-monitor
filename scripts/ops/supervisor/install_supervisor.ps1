@@ -14,6 +14,7 @@ $ErrorActionPreference = "Stop"
 $here = Split-Path -Parent $MyInvocation.MyCommand.Path
 New-Item -ItemType Directory -Force $RuntimeDir | Out-Null
 Copy-Item "$here\daemon_supervisor.py" "$RuntimeDir\daemon_supervisor.py" -Force
+Copy-Item "$here\daemon_launcher.py" "$RuntimeDir\daemon_launcher.py" -Force
 
 $config = Join-Path $RuntimeDir "config.json"
 if (-not (Test-Path $config)) {
