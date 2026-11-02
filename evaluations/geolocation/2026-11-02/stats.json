@@ -1,0 +1,67 @@
+{
+ "developments": 1198,
+ "with_stored_location": 1166,
+ "no_stored_location": 32,
+ "shown": 998,
+ "shown_country_level_point": 788,
+ "suppressed": 168,
+ "suppressed_unlabelled": [],
+ "suppressed_stored_verdict": {
+  "C": 45,
+  "W": 92,
+  "P": 31
+ },
+ "suppressed_root_cause": {
+  "MULTIPLE_PLACES_NO_DOMINANT_LOCATION": 49,
+  "AMBIGUOUS_NAME": 24,
+  "NON_PLACE_MENTION": 23,
+  "MISSING_ALIAS": 23,
+  "SUPRANATIONAL_REGION": 17,
+  "FIRST_RESULT_WINS": 16,
+  "MISSING_CONTAINMENT": 6,
+  "WRONG_COUNTRY_MATCH": 5,
+  "REGION_CITY_COLLISION": 4,
+  "INVALID_STORED_PLACE": 1
+ },
+ "suppressed_wrong_root_cause": {
+  "NON_PLACE_MENTION": 23,
+  "MULTIPLE_PLACES_NO_DOMINANT_LOCATION": 22,
+  "AMBIGUOUS_NAME": 20,
+  "FIRST_RESULT_WINS": 16,
+  "SUPRANATIONAL_REGION": 5,
+  "WRONG_COUNTRY_MATCH": 3,
+  "REGION_CITY_COLLISION": 3
+ },
+ "suppressed_correct_root_cause": {
+  "MISSING_ALIAS": 22,
+  "MULTIPLE_PLACES_NO_DOMINANT_LOCATION": 12,
+  "MISSING_CONTAINMENT": 6,
+  "AMBIGUOUS_NAME": 4,
+  "REGION_CITY_COLLISION": 1
+ },
+ "shown_sample_verdict": {
+  "C": 36,
+  "P": 2,
+  "W": 2
+ },
+ "gaza_mozambique": 17,
+ "west_bank_minneapolis": 4,
+ "dominant_language_located": {
+  "en": 674,
+  "?": 261,
+  "es": 141,
+  "it": 90
+ },
+ "dominant_language_suppressed": {
+  "en": 90,
+  "es": 32,
+  "?": 29,
+  "it": 17
+ },
+ "dominant_language_suppressed_wrong": {
+  "en": 51,
+  "es": 20,
+  "?": 14,
+  "it": 7
+ }
+}
