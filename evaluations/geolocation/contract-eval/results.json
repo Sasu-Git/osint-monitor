@@ -1,0 +1,9871 @@
+{
+ "summary": {
+  "audit_cases": 208,
+  "W_total": 94,
+  "W_removed": 91,
+  "W_removed_share": 0.968,
+  "C_total": 81,
+  "C_preserved": 24,
+  "C_preserved_share": 0.296,
+  "C_lost_to_none": 36,
+  "C_changed": 21,
+  "P_outcomes": {
+   "P:EVENT_COUNTRY": 9,
+   "P:NONE": 15,
+   "P:EVENT_PLACE": 9
+  },
+  "acceptance_pass": 4,
+  "acceptance_total": 16,
+  "acceptance_failed": [
+   "G01",
+   "G04b",
+   "G05",
+   "G07",
+   "G08",
+   "G09",
+   "G10",
+   "G11",
+   "G12",
+   "G13",
+   "G14",
+   "G15"
+  ],
+  "proposed_gates": {
+   "W_removed_share": ">= 0.80 (PROPOSED)",
+   "C_preserved_share": ">= 0.90 (PROPOSED)"
+  }
+ },
+ "audit": [
+  {
+   "development_id": 1,
+   "set": "suppressed",
+   "stored_verdict": "C",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "stored_country": "CHN",
+   "outcome": "PRESERVED",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "place": "shenzhen",
+   "country": "china",
+   "country_iso": "CHN",
+   "places": [],
+   "region": null,
+   "reason": "one specific place",
+   "rejected": [
+    [
+     "China",
+     "ACTOR_POSITION"
+    ],
+    [
+     "US",
+     "ACTOR_POSITION"
+    ],
+    [
+     "China",
+     "ACTOR_POSITION"
+    ],
+    [
+     "US",
+     "ACTOR_POSITION"
+    ],
+    [
+     "China",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Great Hall of the People",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "US",
+     "ACTOR_POSITION"
+    ],
+    [
+     "the Oval Office",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "the South Lawn",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "US",
+     "ACTOR_POSITION"
+    ],
+    [
+     "South",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "US",
+     "ACTOR_POSITION"
+    ]
+   ],
+   "mentions": 37,
+   "headline": "Xi got Trump's red carpet welcome - but not everything he wanted"
+  },
+  {
+   "development_id": 24,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "AMBIGUOUS_NAME",
+   "stored_country": "USA",
+   "outcome": "REMOVED",
+   "role": "EVENT_PLACE",
+   "confidence": "CONFIRMED_PLACE",
+   "place": "athens",
+   "country": "greece",
+   "country_iso": "GRC",
+   "places": [],
+   "region": null,
+   "reason": "one specific place",
+   "rejected": [
+    [
+     "Acropolis",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "the Temple of Zeus",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "‌fire",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Acropolis",
+     "NON_PLACE"
+    ],
+    [
+     "US",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Acropolis",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "the Temple of Zeus",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Acropolis",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 14,
+   "headline": "3 injured after explosion causes building collapse in Athens’ tourist centre"
+  },
+  {
+   "development_id": 31,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "stored_country": "IRN",
+   "outcome": "REMOVED",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "place": null,
+   "country": "united kingdom",
+   "country_iso": "GBR",
+   "places": [
+    "england",
+    "london"
+   ],
+   "region": null,
+   "reason": "several places in one country (U2: country ring, places listed)",
+   "rejected": [
+    [
+     "UK",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Iran",
+     "ACTOR_POSITION"
+    ],
+    [
+     "England",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "the Strait of Hormuz",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "X.Britain",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "UK",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Gloucestershire",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "UK",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Iran",
+     "ACTOR_POSITION"
+    ],
+    [
+     "the Middle East",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "UK",
+     "ACTOR_POSITION"
+    ],
+    [
+     "UK",
+     "ACTOR_POSITION"
+    ]
+   ],
+   "mentions": 38,
+   "headline": "UK police arrest 5 on terrorism charges near airbase used by US in Iran war"
+  },
+  {
+   "development_id": 35,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "FIRST_RESULT_WINS",
+   "stored_country": "USA",
+   "outcome": "REMOVED",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "place": "ramallah",
+   "country": "palestine",
+   "country_iso": "PSE",
+   "places": [],
+   "region": null,
+   "reason": "one specific place",
+   "rejected": [
+    [
+     "Netherlands",
+     "ACTOR_POSITION"
+    ],
+    [
+     "East",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Britain",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "London",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ]
+   ],
+   "mentions": 7,
+   "headline": "Israel revokes Dutch diplomats’ status over sanctions on settlements"
+  },
+  {
+   "development_id": 51,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "NON_PLACE_MENTION",
+   "stored_country": "JPN",
+   "outcome": "REMOVED",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [],
+   "region": null,
+   "reason": "no place in the occurrence reports' headlines or leads",
+   "rejected": [
+    [
+     "7.49am",
+     "NON_PLACE"
+    ],
+    [
+     "South Texas",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ]
+   ],
+   "mentions": 2,
+   "headline": "SpaceX’s Starship rocket reaches orbit for first time"
+  },
+  {
+   "development_id": 57,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "NON_PLACE_MENTION",
+   "stored_country": "IDN",
+   "outcome": "REMOVED",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [],
+   "region": null,
+   "reason": "no place mention",
+   "rejected": [],
+   "mentions": 0,
+   "headline": "Alleged rape on campus sparks violent protest at Indian university"
+  },
+  {
+   "development_id": 62,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "FIRST_RESULT_WINS",
+   "stored_country": "USA",
+   "outcome": "REMOVED",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [],
+   "region": null,
+   "reason": "no place in the occurrence reports' headlines or leads",
+   "rejected": [
+    [
+     "Jalud village",
+     "ACTOR_POSITION"
+    ],
+    [
+     "West Bank",
+     "ACTOR_POSITION"
+    ],
+    [
+     "West Bank",
+     "ACTOR_POSITION"
+    ]
+   ],
+   "mentions": 3,
+   "headline": "Israeli settlers attack Jalud village in occupied West Bank, torch homes"
+  },
+  {
+   "development_id": 64,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "stored_country": "UKR",
+   "outcome": "REMOVED",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "place": "scotland",
+   "country": "united kingdom",
+   "country_iso": "GBR",
+   "places": [],
+   "region": null,
+   "reason": "one specific place",
+   "rejected": [
+    [
+     "Estonia",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Tallinn",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Estonia",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Ukraine Russia",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Estonia",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Tallinn",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Estonian",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Estonia",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Milrem GLASGOW",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Estonian",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Tallinn",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Ukraine",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ]
+   ],
+   "mentions": 28,
+   "headline": "Estonia blames Russia for arson attack on company supplying vehicles to Ukraine"
+  },
+  {
+   "development_id": 65,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "AMBIGUOUS_NAME",
+   "stored_country": "MOZ",
+   "outcome": "REMOVED",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "place": "gaza city",
+   "country": "palestine",
+   "country_iso": "PSE",
+   "places": [],
+   "region": null,
+   "reason": "one specific place",
+   "rejected": [
+    [
+     "Gaza",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Gaza City’s",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Gaza",
+     "ACTOR_POSITION"
+    ]
+   ],
+   "mentions": 8,
+   "headline": "Israeli forces kill Hamas commander Izz al-Din al-Beik in Gaza attack"
+  },
+  {
+   "development_id": 82,
+   "set": "suppressed",
+   "stored_verdict": "C",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "stored_country": "SAU",
+   "outcome": "CHANGED",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "place": null,
+   "country": "united arab emirates",
+   "country_iso": "ARE",
+   "places": [
+    "abu dhabi",
+    "dubai"
+   ],
+   "region": null,
+   "reason": "several places in one country (U2: country ring, places listed)",
+   "rejected": [
+    [
+     "Delhi",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Omani",
+     "NON_PLACE"
+    ],
+    [
+     "the United Arab Emirates",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "the United Arab Emirates",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Australian",
+     "NON_PLACE"
+    ],
+    [
+     "Omani",
+     "NON_PLACE"
+    ],
+    [
+     "Omani",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 30,
+   "headline": "FlyDubai flight to Israel diverted to Saudi Arabia after incident in cockpit"
+  },
+  {
+   "development_id": 92,
+   "set": "suppressed",
+   "stored_verdict": "C",
+   "root_cause": "MISSING_ALIAS",
+   "stored_country": "RUS",
+   "outcome": "LOST_TO_NONE",
+   "role": "NONE",
+   "confidence": "REGION",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [],
+   "region": "the baltic sea",
+   "reason": "only a sea, strait or region (U3: label, no marker)",
+   "rejected": [
+    [
+     "Kaliningrad",
+     "NON_PLACE"
+    ],
+    [
+     "Kaliningrad",
+     "NON_PLACE"
+    ],
+    [
+     "West",
+     "NON_PLACE"
+    ],
+    [
+     "Kaliningrad",
+     "NON_PLACE"
+    ],
+    [
+     "European",
+     "NON_PLACE"
+    ],
+    [
+     "West",
+     "NON_PLACE"
+    ],
+    [
+     "the Baltic Sea",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ]
+   ],
+   "mentions": 10,
+   "headline": "Russia sends nuclear warning to Nato over its Kaliningrad enclave"
+  },
+  {
+   "development_id": 96,
+   "set": "suppressed",
+   "stored_verdict": "C",
+   "root_cause": "MISSING_CONTAINMENT",
+   "stored_country": "HKG",
+   "outcome": "LOST_TO_NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [],
+   "region": null,
+   "reason": "no place in the occurrence reports' headlines or leads",
+   "rejected": [
+    [
+     "Hong Kong",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Hong Kong",
+     "ACTOR_POSITION"
+    ]
+   ],
+   "mentions": 2,
+   "headline": "Boom News founder Tang Ho-wing, 1 other arrested by Hong Kong national security police"
+  },
+  {
+   "development_id": 103,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "NON_PLACE_MENTION",
+   "stored_country": "PHL",
+   "outcome": "REMOVED",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "place": "california",
+   "country": "united states",
+   "country_iso": "USA",
+   "places": [],
+   "region": null,
+   "reason": "one specific place",
+   "rejected": [
+    [
+     "Neros",
+     "NON_PLACE"
+    ],
+    [
+     "Yuma Proving Ground",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 3,
+   "headline": "The drone war will be won on the factory floor, not just the front line"
+  },
+  {
+   "development_id": 117,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "FIRST_RESULT_WINS",
+   "stored_country": "USA",
+   "outcome": "REMOVED",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [],
+   "region": null,
+   "reason": "no place in the occurrence reports' headlines or leads",
+   "rejected": [
+    [
+     "the Middle East",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 1,
+   "headline": "US Navy awards RTX’s Raytheon $24.4B for SM-6 missiles amid stockpile concerns"
+  },
+  {
+   "development_id": 120,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "FIRST_RESULT_WINS",
+   "stored_country": "BRA",
+   "outcome": "REMOVED",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "place": "havana",
+   "country": "cuba",
+   "country_iso": "CUB",
+   "places": [],
+   "region": null,
+   "reason": "one specific place",
+   "rejected": [
+    [
+     "China",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Panama",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Latin American",
+     "NON_PLACE"
+    ],
+    [
+     "China",
+     "ACTOR_POSITION"
+    ]
+   ],
+   "mentions": 10,
+   "headline": "China backs Cuba, Beijing’s Panama threat, new UN chief: 7 Latin America relations reads"
+  },
+  {
+   "development_id": 121,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "NON_PLACE_MENTION",
+   "stored_country": "FRA",
+   "outcome": "REMOVED",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [],
+   "region": null,
+   "reason": "no place in the occurrence reports' headlines or leads",
+   "rejected": [
+    [
+     "pro-Europe",
+     "NON_PLACE"
+    ],
+    [
+     "pro-European",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 2,
+   "headline": "Polls open in Latvia against backdrop of perceived Russia threat"
+  },
+  {
+   "development_id": 124,
+   "set": "suppressed",
+   "stored_verdict": "C",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "stored_country": "UKR",
+   "outcome": "PRESERVED",
+   "role": "EVENT_PLACE",
+   "confidence": "CONFIRMED_PLACE",
+   "place": "kyiv",
+   "country": "ukraine",
+   "country_iso": "UKR",
+   "places": [
+    "Kramatorsk",
+    "Pryluky",
+    "Russian",
+    "Ukraines",
+    "Ukrainian",
+    "brussels",
+    "donetsk",
+    "kharkiv",
+    "kyiv",
+    "moscow",
+    "odesa",
+    "samara",
+    "siberia",
+    "zaporizhzhia"
+   ],
+   "region": null,
+   "reason": "dominant specific place",
+   "rejected": [
+    [
+     "Northern Bridge",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "German",
+     "NON_PLACE"
+    ],
+    [
+     "the Northern Bridge",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "European",
+     "NON_PLACE"
+    ],
+    [
+     "the Northern Bridge",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "German",
+     "NON_PLACE"
+    ],
+    [
+     "German",
+     "NON_PLACE"
+    ],
+    [
+     "German",
+     "NON_PLACE"
+    ],
+    [
+     "Russia",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Russia",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Russia",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Russian",
+     "ACTOR_POSITION"
+    ]
+   ],
+   "mentions": 296,
+   "headline": "Russia strikes second major bridge in Kyiv, mayor says"
+  },
+  {
+   "development_id": 127,
+   "set": "suppressed",
+   "stored_verdict": "C",
+   "root_cause": "MISSING_ALIAS",
+   "stored_country": "USA",
+   "outcome": "LOST_TO_NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [],
+   "region": null,
+   "reason": "no place in the occurrence reports' headlines or leads",
+   "rejected": [
+    [
+     "Altoona",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 1,
+   "headline": "Police bodycam shows Luigi Mangione arrest at Pennsylvania McDonald’s"
+  },
+  {
+   "development_id": 135,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "stored_country": "IRN",
+   "outcome": "REMOVED",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [
+    "British",
+    "Cambridgeshire",
+    "U.K.",
+    "england",
+    "london",
+    "new york"
+   ],
+   "region": null,
+   "reason": "several places in different countries, none dominant (L5)",
+   "rejected": [
+    [
+     "US",
+     "ACTOR_POSITION"
+    ],
+    [
+     "US",
+     "ACTOR_POSITION"
+    ],
+    [
+     "US",
+     "ACTOR_POSITION"
+    ],
+    [
+     "US",
+     "ACTOR_POSITION"
+    ],
+    [
+     "U.K.",
+     "NON_PLACE"
+    ],
+    [
+     "Iran",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Britain",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "the Strait of Hormuz",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "US",
+     "ACTOR_POSITION"
+    ],
+    [
+     "US",
+     "ACTOR_POSITION"
+    ],
+    [
+     "US",
+     "ACTOR_POSITION"
+    ],
+    [
+     "British",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 116,
+   "headline": "US Air Force removes all bombers from UK airbase targeted by suspected terror attack"
+  },
+  {
+   "development_id": 137,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "FIRST_RESULT_WINS",
+   "stored_country": "FRA",
+   "outcome": "REMOVED",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [],
+   "region": null,
+   "reason": "no place in the occurrence reports' headlines or leads",
+   "rejected": [
+    [
+     "Pacific island",
+     "NON_PLACE"
+    ],
+    [
+     "Germany",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ]
+   ],
+   "mentions": 2,
+   "headline": "Samoa PM apologises after Nazi salute video emerges"
+  },
+  {
+   "development_id": 140,
+   "set": "suppressed",
+   "stored_verdict": "C",
+   "root_cause": "MISSING_ALIAS",
+   "stored_country": "GBR",
+   "outcome": "LOST_TO_NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [],
+   "region": null,
+   "reason": "no place in the occurrence reports' headlines or leads",
+   "rejected": [
+    [
+     "Manchester City",
+     "NON_PLACE"
+    ],
+    [
+     "Man City",
+     "NON_PLACE"
+    ],
+    [
+     "Manchester City's",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 3,
+   "headline": "Manchester City charges: ‘Everyone knew’ – Marsch says relegation to follow"
+  },
+  {
+   "development_id": 141,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "stored_country": "CHN",
+   "outcome": "REMOVED",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [
+    "beijing",
+    "manila",
+    "taipei",
+    "tokyo"
+   ],
+   "region": null,
+   "reason": "several places in different countries, none dominant (L5)",
+   "rejected": [
+    [
+     "US",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Yonaguni Island",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Okinawa",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "US",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Yonaguni",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "the United States",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "China",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Okinawa",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Batanes Islands",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Balikatan",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Australian",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Camp Ishigaki",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ]
+   ],
+   "mentions": 30,
+   "headline": "US to deploy NMESIS anti-ship system on Japanese island closest to Taiwan for first time"
+  },
+  {
+   "development_id": 144,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "AMBIGUOUS_NAME",
+   "stored_country": "MOZ",
+   "outcome": "REMOVED",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "place": "tel aviv",
+   "country": "israel",
+   "country_iso": "ISR",
+   "places": [],
+   "region": null,
+   "reason": "one specific place",
+   "rejected": [
+    [
+     "Emirati",
+     "NON_PLACE"
+    ],
+    [
+     "Cisgiordania",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Israeli",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Hamás",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Jerusalén",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Emiratos Árabes Unidos",
+     "NON_PLACE"
+    ],
+    [
+     "Israel",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Brigate",
+     "NON_PLACE"
+    ],
+    [
+     "Qassem",
+     "NON_PLACE"
+    ],
+    [
+     "Israel",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Hamás",
+     "NON_PLACE"
+    ],
+    [
+     "Emirati",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ]
+   ],
+   "mentions": 53,
+   "headline": "Netanyahu, 'il regime iraniano è destinato a sparire'"
+  },
+  {
+   "development_id": 146,
+   "set": "suppressed",
+   "stored_verdict": "C",
+   "root_cause": "MISSING_ALIAS",
+   "stored_country": "USA",
+   "outcome": "LOST_TO_NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [],
+   "region": null,
+   "reason": "no place in the occurrence reports' headlines or leads",
+   "rejected": [
+    [
+     "Nueva York",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 1,
+   "headline": "El presidente de Cornell dice que la universidad \"debe hacer más\" tras la denuncia de violación en grupo en una fraterni"
+  },
+  {
+   "development_id": 148,
+   "set": "suppressed",
+   "stored_verdict": "C",
+   "root_cause": "MISSING_ALIAS",
+   "stored_country": "BRA",
+   "outcome": "CHANGED",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "place": null,
+   "country": "united states",
+   "country_iso": "USA",
+   "places": [],
+   "region": null,
+   "reason": "country named as the place (L4)",
+   "rejected": [
+    [
+     "Paranà",
+     "NON_PLACE"
+    ],
+    [
+     "Paese",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Congreso de Brasil",
+     "NON_PLACE"
+    ],
+    [
+     "America Latina",
+     "NON_PLACE"
+    ],
+    [
+     "Messico",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Rio",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 7,
+   "headline": "Astensione record in Brasile, il 21,08% non ha votato al primo turno"
+  },
+  {
+   "development_id": 151,
+   "set": "suppressed",
+   "stored_verdict": "C",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "stored_country": "ISR",
+   "outcome": "CHANGED",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "place": null,
+   "country": "bulgaria",
+   "country_iso": "BGR",
+   "places": [],
+   "region": null,
+   "reason": "country named as the place (L4)",
+   "rejected": [
+    [
+     "Monte Herzl",
+     "NON_PLACE"
+    ],
+    [
+     "Gerusalemme",
+     "NON_PLACE"
+    ],
+    [
+     "Mar Nero",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 4,
+   "headline": "Herzog, 'lutto per uomini, donne, bambini, neonati, anziani, caduti il 7 ottobre'"
+  },
+  {
+   "development_id": 154,
+   "set": "suppressed",
+   "stored_verdict": "C",
+   "root_cause": "MISSING_ALIAS",
+   "stored_country": "BIH",
+   "outcome": "CHANGED",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "place": null,
+   "country": "ukraine",
+   "country_iso": "UKR",
+   "places": [],
+   "region": null,
+   "reason": "country named as the place (L4)",
+   "rejected": [
+    [
+     "Bosnia-Herzegovina",
+     "NON_PLACE"
+    ],
+    [
+     "Bosnia-Herzegovina",
+     "NON_PLACE"
+    ],
+    [
+     "Banja Luka",
+     "NON_PLACE"
+    ],
+    [
+     "República Sprska",
+     "NON_PLACE"
+    ],
+    [
+     "Balcanes",
+     "NON_PLACE"
+    ],
+    [
+     "Bosnia-Herzegovina",
+     "NON_PLACE"
+    ],
+    [
+     "Banja Luka",
+     "NON_PLACE"
+    ],
+    [
+     "Bosnia-Herzegovina",
+     "NON_PLACE"
+    ],
+    [
+     "Saravejo",
+     "NON_PLACE"
+    ],
+    [
+     "Bosnia-Herzegovina",
+     "NON_PLACE"
+    ],
+    [
+     "Bosnia-Herzegovina",
+     "NON_PLACE"
+    ],
+    [
+     "Museo de la Infancia",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 16,
+   "headline": "Nationalists top Bosnia-Herzegovina's divisive election"
+  },
+  {
+   "development_id": 167,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "NON_PLACE_MENTION",
+   "stored_country": "PHL",
+   "outcome": "REMOVED",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "place": null,
+   "country": "russia",
+   "country_iso": "RUS",
+   "places": [],
+   "region": null,
+   "reason": "country named as the place (L4)",
+   "rejected": [
+    [
+     "Negro",
+     "NON_PLACE"
+    ],
+    [
+     "Rumanía",
+     "NON_PLACE"
+    ],
+    [
+     "Negro",
+     "NON_PLACE"
+    ],
+    [
+     "Negro",
+     "NON_PLACE"
+    ],
+    [
+     "Ministerio de Transportes de Rusia",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 6,
+   "headline": "Mueren dos personas tras un incendio en un buque comercial en aguas del mar Negro frente a Rumanía"
+  },
+  {
+   "development_id": 168,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "stored_country": "USA",
+   "outcome": "REMOVED",
+   "role": "EVENT_PLACE",
+   "confidence": "CONFIRMED_PLACE",
+   "place": "siberia",
+   "country": "russia",
+   "country_iso": "RUS",
+   "places": [
+    "Irkutsk",
+    "siberia"
+   ],
+   "region": null,
+   "reason": "dominant specific place",
+   "rejected": [
+    [
+     "US",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Russian",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Russia",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Moscow",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Washington",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Irkutsk",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Russian",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Moscow",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Washington",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Siberia",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Irkutsk",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "FRANCE",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ]
+   ],
+   "mentions": 89,
+   "headline": "Russian lab worker dies of suspected plague in Siberia; US monitoring case"
+  },
+  {
+   "development_id": 170,
+   "set": "suppressed",
+   "stored_verdict": "C",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "stored_country": "UKR",
+   "outcome": "CHANGED",
+   "role": "EVENT_PLACE",
+   "confidence": "CONFIRMED_PLACE",
+   "place": "Romanian",
+   "country": "russia",
+   "country_iso": "RUS",
+   "places": [],
+   "region": null,
+   "reason": "one specific place",
+   "rejected": [
+    [
+     "Russias",
+     "NON_PLACE"
+    ],
+    [
+     "Russian",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Turkish",
+     "NON_PLACE"
+    ],
+    [
+     "Ukraine",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Russian",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Ukrainian",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Turkish",
+     "NON_PLACE"
+    ],
+    [
+     "Ukraine",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Russian",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Russian",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Russian",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Indians",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 22,
+   "headline": "Zelensky condemns 'horrific' Russian strike on boat carrying corn in Black Sea"
+  },
+  {
+   "development_id": 171,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "AMBIGUOUS_NAME",
+   "stored_country": "MOZ",
+   "outcome": "REMOVED",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "place": null,
+   "country": "gaza",
+   "country_iso": "PSE",
+   "places": [],
+   "region": null,
+   "reason": "country named as the place (L4)",
+   "rejected": [
+    [
+     "Israeli",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Israel",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Mount Herzl",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Jerusalem",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Israeli",
+     "ACTOR_POSITION"
+    ]
+   ],
+   "mentions": 8,
+   "headline": "‘There will be no Hamas rule in Gaza,’ Netanyahu vows at October 7 memorial"
+  },
+  {
+   "development_id": 181,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "AMBIGUOUS_NAME",
+   "stored_country": "MOZ",
+   "outcome": "REMOVED",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "place": "gaza city",
+   "country": "palestine",
+   "country_iso": "PSE",
+   "places": [],
+   "region": null,
+   "reason": "one specific place",
+   "rejected": [],
+   "mentions": 7,
+   "headline": "Funeral held at Gaza church for mother and daughter killed in Gaza strike"
+  },
+  {
+   "development_id": 188,
+   "set": "suppressed",
+   "stored_verdict": "C",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "stored_country": "USA",
+   "outcome": "PRESERVED",
+   "role": "EVENT_PLACE",
+   "confidence": "CONFIRMED_PLACE",
+   "place": "california",
+   "country": "united states",
+   "country_iso": "USA",
+   "places": [
+    "Taiwanese",
+    "beijing",
+    "california"
+   ],
+   "region": null,
+   "reason": "dominant specific place",
+   "rejected": [
+    [
+     "US",
+     "ACTOR_POSITION"
+    ],
+    [
+     "American",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Chinese",
+     "NON_PLACE"
+    ],
+    [
+     "Taiwanese",
+     "NON_PLACE"
+    ],
+    [
+     "Washington",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Los Angeles International Airport",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Chinas",
+     "NON_PLACE"
+    ],
+    [
+     "Washington",
+     "ACTOR_POSITION"
+    ],
+    [
+     "US",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Washington",
+     "ACTOR_POSITION"
+    ]
+   ],
+   "mentions": 24,
+   "headline": "FBI arrests ‘Chinese foreign agent’ for spying on Taiwan president’s son"
+  },
+  {
+   "development_id": 192,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "NON_PLACE_MENTION",
+   "stored_country": "GRC",
+   "outcome": "REMOVED",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "place": null,
+   "country": "united states",
+   "country_iso": "USA",
+   "places": [],
+   "region": null,
+   "reason": "country named as the place (L4)",
+   "rejected": [
+    [
+     "Epirus",
+     "NON_PLACE"
+    ],
+    [
+     "Epirus",
+     "NON_PLACE"
+    ],
+    [
+     "Fort Huachuca",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Arizona",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Texas",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Washington",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "North Dakota",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Missouri",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Red Sands",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Saudi Arabia",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Guntersville Dam",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Alabama",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ]
+   ],
+   "mentions": 13,
+   "headline": "Systems Selected for JIATF 401 Directed-Energy Counter-Drone Pilot Program"
+  },
+  {
+   "development_id": 195,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "stored_country": "CHN",
+   "outcome": "REMOVED",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [
+    "beijing",
+    "florida"
+   ],
+   "region": null,
+   "reason": "several places in different countries, none dominant (L5)",
+   "rejected": [
+    [
+     "Americans",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 6,
+   "headline": "US seeks to revoke citizenship of two China-born men convicted in Beijing-linked cases"
+  },
+  {
+   "development_id": 213,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "NON_PLACE_MENTION",
+   "stored_country": "PHL",
+   "outcome": "REMOVED",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "place": null,
+   "country": "bulgaria",
+   "country_iso": "BGR",
+   "places": [],
+   "region": null,
+   "reason": "country named as the place (L4)",
+   "rejected": [
+    [
+     "Negro",
+     "NON_PLACE"
+    ],
+    [
+     "Negro",
+     "NON_PLACE"
+    ],
+    [
+     "Rumania",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ]
+   ],
+   "mentions": 4,
+   "headline": "Hundido un carguero en un ataque con drones frente a las costas de Bulgaria en el mar Negro"
+  },
+  {
+   "development_id": 220,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "NON_PLACE_MENTION",
+   "stored_country": "CAN",
+   "outcome": "REMOVED",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "place": null,
+   "country": "singapore",
+   "country_iso": "SGP",
+   "places": [],
+   "region": null,
+   "reason": "country named as the place (L4)",
+   "rejected": [
+    [
+     "MRT",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "MRT",
+     "NON_PLACE"
+    ],
+    [
+     "MRT",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 6,
+   "headline": "8 public officers in Singapore referred to police after property review"
+  },
+  {
+   "development_id": 224,
+   "set": "suppressed",
+   "stored_verdict": "P",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "stored_country": "UKR",
+   "outcome": "P:EVENT_COUNTRY",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "place": null,
+   "country": "ukraine",
+   "country_iso": "UKR",
+   "places": [],
+   "region": null,
+   "reason": "country named as the place (L4)",
+   "rejected": [
+    [
+     "Bulgaria",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Bulgaria",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Russian",
+     "NON_PLACE"
+    ],
+    [
+     "Marshall Islands",
+     "NON_PLACE"
+    ],
+    [
+     "Bulgaria",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Russian",
+     "NON_PLACE"
+    ],
+    [
+     "Indian",
+     "NON_PLACE"
+    ],
+    [
+     "Black Sea Ship",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Ukrainian",
+     "NON_PLACE"
+    ],
+    [
+     "Russian",
+     "NON_PLACE"
+    ],
+    [
+     "Russian",
+     "NON_PLACE"
+    ],
+    [
+     "Bulgaria",
+     "ACTOR_POSITION"
+    ]
+   ],
+   "mentions": 37,
+   "headline": "Sailors missing after fresh attacks on Black Sea vessels, Bulgaria says"
+  },
+  {
+   "development_id": 228,
+   "set": "suppressed",
+   "stored_verdict": "C",
+   "root_cause": "MISSING_ALIAS",
+   "stored_country": "ITA",
+   "outcome": "LOST_TO_NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [],
+   "region": null,
+   "reason": "no place in the occurrence reports' headlines or leads",
+   "rejected": [
+    [
+     "Turin",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ]
+   ],
+   "mentions": 1,
+   "headline": "Tennis: Sinner says his season is over because of knee injury"
+  },
+  {
+   "development_id": 232,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "stored_country": "USA",
+   "outcome": "REMOVED",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "place": "oslo",
+   "country": "norway",
+   "country_iso": "NOR",
+   "places": [],
+   "region": null,
+   "reason": "one specific place",
+   "rejected": [
+    [
+     "Stati Uniti",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Irán",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Estados",
+     "NON_PLACE"
+    ],
+    [
+     "Gaza",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Ruanda",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Myanmar",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Gobierno de Israel",
+     "NON_PLACE"
+    ],
+    [
+     "Ginebra",
+     "NON_PLACE"
+    ],
+    [
+     "Sudáfrica",
+     "NON_PLACE"
+    ],
+    [
+     "Natal",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Estado",
+     "NON_PLACE"
+    ],
+    [
+     "Estado",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 36,
+   "headline": "Nobel, fino al 12 ottobre la settimana dei Premi 2026"
+  },
+  {
+   "development_id": 237,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "AMBIGUOUS_NAME",
+   "stored_country": "MOZ",
+   "outcome": "REMOVED",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "place": null,
+   "country": "gaza",
+   "country_iso": "PSE",
+   "places": [],
+   "region": null,
+   "reason": "country named as the place (L4)",
+   "rejected": [
+    [
+     "Israeli",
+     "NON_PLACE"
+    ],
+    [
+     "Palestinians",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 11,
+   "headline": "In Gaza, we cannot even begin to recover from trauma"
+  },
+  {
+   "development_id": 272,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "FIRST_RESULT_WINS",
+   "stored_country": "PRY",
+   "outcome": "REMOVED",
+   "role": "NONE",
+   "confidence": "REGION",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [],
+   "region": "central africa",
+   "reason": "only a sea, strait or region (U3: label, no marker)",
+   "rejected": [
+    [
+     "Central Africa Antibiotics",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ]
+   ],
+   "mentions": 2,
+   "headline": "When streets become pharmacies: Booming illicit markets in Central Africa"
+  },
+  {
+   "development_id": 286,
+   "set": "suppressed",
+   "stored_verdict": "C",
+   "root_cause": "MISSING_ALIAS",
+   "stored_country": "SSD",
+   "outcome": "LOST_TO_NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [],
+   "region": null,
+   "reason": "no place in the occurrence reports' headlines or leads",
+   "rejected": [
+    [
+     "South Sudan",
+     "ACTOR_POSITION"
+    ],
+    [
+     "South Sudan",
+     "ACTOR_POSITION"
+    ]
+   ],
+   "mentions": 2,
+   "headline": "South Sudan's road to elections remains uncertain"
+  },
+  {
+   "development_id": 288,
+   "set": "suppressed",
+   "stored_verdict": "P",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "stored_country": "CHL",
+   "outcome": "P:EVENT_COUNTRY",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "place": null,
+   "country": "united kingdom",
+   "country_iso": "GBR",
+   "places": [],
+   "region": null,
+   "reason": "country named as the place (L4)",
+   "rejected": [
+    [
+     "British",
+     "ACTOR_POSITION"
+    ],
+    [
+     "British",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Punta Arenas",
+     "NON_PLACE"
+    ],
+    [
+     "England",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ]
+   ],
+   "mentions": 8,
+   "headline": "British adventurer back in UK after 28-year trek on foot around the world"
+  },
+  {
+   "development_id": 291,
+   "set": "suppressed",
+   "stored_verdict": "P",
+   "root_cause": "SUPRANATIONAL_REGION",
+   "stored_country": null,
+   "outcome": "P:NONE",
+   "role": "NONE",
+   "confidence": "REGION",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [],
+   "region": "black sea",
+   "reason": "only a sea, strait or region (U3: label, no marker)",
+   "rejected": [],
+   "mentions": 2,
+   "headline": "Erdogan raises Black Sea safety in call with Putin"
+  },
+  {
+   "development_id": 297,
+   "set": "suppressed",
+   "stored_verdict": "P",
+   "root_cause": "SUPRANATIONAL_REGION",
+   "stored_country": "TCD",
+   "outcome": "P:NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [
+    "asmara",
+    "tigray"
+   ],
+   "region": null,
+   "reason": "several places in different countries, none dominant (L5)",
+   "rejected": [
+    [
+     "Eritrean",
+     "NON_PLACE"
+    ],
+    [
+     "South African",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 7,
+   "headline": "Africa joins the data center backlash"
+  },
+  {
+   "development_id": 333,
+   "set": "suppressed",
+   "stored_verdict": "P",
+   "root_cause": "SUPRANATIONAL_REGION",
+   "stored_country": "DEU",
+   "outcome": "P:EVENT_PLACE",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "place": "brussels",
+   "country": "belgium",
+   "country_iso": "BEL",
+   "places": [],
+   "region": null,
+   "reason": "one specific place",
+   "rejected": [],
+   "mentions": 2,
+   "headline": "The EU budget continues delivering for Europe in 2025"
+  },
+  {
+   "development_id": 360,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "WRONG_COUNTRY_MATCH",
+   "stored_country": "USA",
+   "outcome": "REMOVED",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [],
+   "region": null,
+   "reason": "no place in the occurrence reports' headlines or leads",
+   "rejected": [
+    [
+     "Nueva York",
+     "NON_PLACE"
+    ],
+    [
+     "Marble Hill",
+     "NON_PLACE"
+    ],
+    [
+     "Nueva York",
+     "NON_PLACE"
+    ],
+    [
+     "Minneapolis",
+     "NON_PLACE"
+    ],
+    [
+     "Nueva York",
+     "NON_PLACE"
+    ],
+    [
+     "Nueva York",
+     "NON_PLACE"
+    ],
+    [
+     "Nueva York",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 7,
+   "headline": "Un herido por disparos en operación del ICE en Nueva York, que justifica la acción por su historial criminal"
+  },
+  {
+   "development_id": 363,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "stored_country": "ISR",
+   "outcome": "REMOVED",
+   "role": "EVENT_PLACE",
+   "confidence": "CONFIRMED_PLACE",
+   "place": "oslo",
+   "country": "norway",
+   "country_iso": "NOR",
+   "places": [
+    "oslo",
+    "stockholm"
+   ],
+   "region": null,
+   "reason": "dominant specific place",
+   "rejected": [
+    [
+     "South African",
+     "NON_PLACE"
+    ],
+    [
+     "Israeli",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Israel",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Gaza",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "FRANCE",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "US",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Gaza",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "South African",
+     "NON_PLACE"
+    ],
+    [
+     "South African",
+     "NON_PLACE"
+    ],
+    [
+     "South African",
+     "NON_PLACE"
+    ],
+    [
+     "FRANCE",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Italian",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 45,
+   "headline": "Former UN rights chief awarded Nobel Peace Prize"
+  },
+  {
+   "development_id": 382,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "NON_PLACE_MENTION",
+   "stored_country": "CIV",
+   "outcome": "REMOVED",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "place": "liverpool",
+   "country": "united kingdom",
+   "country_iso": "GBR",
+   "places": [],
+   "region": null,
+   "reason": "one specific place",
+   "rejected": [
+    [
+     "Man City",
+     "NON_PLACE"
+    ],
+    [
+     "Man City",
+     "NON_PLACE"
+    ],
+    [
+     "Manchester City",
+     "NON_PLACE"
+    ],
+    [
+     "Man City",
+     "NON_PLACE"
+    ],
+    [
+     "Manchester City",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 7,
+   "headline": "Man City charges: How Premier League reacted – United, Arsenal, Liverpool"
+  },
+  {
+   "development_id": 396,
+   "set": "suppressed",
+   "stored_verdict": "C",
+   "root_cause": "MISSING_ALIAS",
+   "stored_country": "SAU",
+   "outcome": "LOST_TO_NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [
+    "iran",
+    "israel",
+    "united states"
+   ],
+   "region": null,
+   "reason": "several countries, none dominant (L5)",
+   "rejected": [
+    [
+     "King Khalid",
+     "NON_PLACE"
+    ],
+    [
+     "Riad",
+     "NON_PLACE"
+    ],
+    [
+     "Missile Houthi",
+     "NON_PLACE"
+    ],
+    [
+     "Riad",
+     "NON_PLACE"
+    ],
+    [
+     "Scontri",
+     "NON_PLACE"
+    ],
+    [
+     "Israele",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Riad",
+     "NON_PLACE"
+    ],
+    [
+     "Sud",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Arabia",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Italia",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Usa",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ]
+   ],
+   "mentions": 14,
+   "headline": "L'esplosione e la paura al Terminal 3 dopo il missile Houthi sull'aeroporto King Khalid"
+  },
+  {
+   "development_id": 399,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "stored_country": "RUS",
+   "outcome": "REMOVED",
+   "role": "EVENT_PLACE",
+   "confidence": "CONFIRMED_PLACE",
+   "place": "kyiv",
+   "country": "ukraine",
+   "country_iso": "UKR",
+   "places": [
+    "Lituania",
+    "alaska",
+    "berlin",
+    "brussels",
+    "budapest",
+    "california",
+    "dnipro",
+    "donetsk",
+    "florida",
+    "kharkiv",
+    "kyiv",
+    "london",
+    "los angeles",
+    "madrid",
+    "michigan",
+    "moscow",
+    "nebraska",
+    "ohio",
+    "oslo",
+    "samara",
+    "sumy",
+    "texas",
+    "washington"
+   ],
+   "region": null,
+   "reason": "dominant specific place",
+   "rejected": [
+    [
+     "Zelenski",
+     "NON_PLACE"
+    ],
+    [
+     "Járkov",
+     "NON_PLACE"
+    ],
+    [
+     "Europa",
+     "NON_PLACE"
+    ],
+    [
+     "Estados Unidos",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Estocolmo",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Kiev",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Volodímir Zelenski",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Luxemburgo",
+     "NON_PLACE"
+    ],
+    [
+     "Járkov",
+     "NON_PLACE"
+    ],
+    [
+     "Zelenski",
+     "NON_PLACE"
+    ],
+    [
+     "Volodimir Zelenski",
+     "NON_PLACE"
+    ],
+    [
+     "Mariúpol",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 772,
+   "headline": "Zelensky, almeno due morti questa sera in attacchi russi a Kiev"
+  },
+  {
+   "development_id": 400,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "AMBIGUOUS_NAME",
+   "stored_country": "MOZ",
+   "outcome": "REMOVED",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [
+    "Israeli",
+    "gaza city"
+   ],
+   "region": null,
+   "reason": "several places in different countries, none dominant (L5)",
+   "rejected": [
+    [
+     "Israel",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Israel",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Israel",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Territorios Palestinos Ocupados",
+     "NON_PLACE"
+    ],
+    [
+     "Israeli",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Palestinian",
+     "NON_PLACE"
+    ],
+    [
+     "West Bank Snipers",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Palestinian",
+     "NON_PLACE"
+    ],
+    [
+     "Israel",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Palestinian",
+     "NON_PLACE"
+    ],
+    [
+     "Israeli",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Palestinians",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 65,
+   "headline": "\"Cada día muere gente\": las familias en Gaza que siguen bajo los ataques israelíes pese al alto el fuego, mientras el ac"
+  },
+  {
+   "development_id": 416,
+   "set": "suppressed",
+   "stored_verdict": "P",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "stored_country": "USA",
+   "outcome": "P:EVENT_PLACE",
+   "role": "EVENT_PLACE",
+   "confidence": "CONFIRMED_PLACE",
+   "place": "Russian",
+   "country": null,
+   "country_iso": null,
+   "places": [
+    "Russian",
+    "kyiv",
+    "miami",
+    "south carolina",
+    "washington"
+   ],
+   "region": null,
+   "reason": "dominant specific place",
+   "rejected": [
+    [
+     "US",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Ukrainians",
+     "NON_PLACE"
+    ],
+    [
+     "Russian",
+     "ACTOR_POSITION"
+    ],
+    [
+     "United States",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "US",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Russian",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Ukrainian",
+     "NON_PLACE"
+    ],
+    [
+     "Washington",
+     "ACTOR_POSITION"
+    ],
+    [
+     "US",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Russian",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Russia",
+     "ACTOR_POSITION"
+    ],
+    [
+     "US",
+     "ACTOR_POSITION"
+    ]
+   ],
+   "mentions": 181,
+   "headline": "Trump faces growing backlash over plans to import diesel from Russia"
+  },
+  {
+   "development_id": 420,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "WRONG_COUNTRY_MATCH",
+   "stored_country": "DJI",
+   "outcome": "REMOVED",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [],
+   "region": null,
+   "reason": "no place in the occurrence reports' headlines or leads",
+   "rejected": [
+    [
+     "Gibuti",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 1,
+   "headline": "Ong, '79 abusi e 4 morti nelle carceri cubane a settembre'"
+  },
+  {
+   "development_id": 425,
+   "set": "suppressed",
+   "stored_verdict": "C",
+   "root_cause": "AMBIGUOUS_NAME",
+   "stored_country": "COD",
+   "outcome": "PRESERVED",
+   "role": "EVENT_PLACE",
+   "confidence": "CONFIRMED_PLACE",
+   "place": "kinshasa",
+   "country": "democratic republic of the congo",
+   "country_iso": "COD",
+   "places": [
+    "DR",
+    "kinshasa",
+    "tigray"
+   ],
+   "region": null,
+   "reason": "dominant specific place",
+   "rejected": [
+    [
+     "Congo",
+     "ACTOR_POSITION"
+    ],
+    [
+     "DR Congo",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Ruanda",
+     "NON_PLACE"
+    ],
+    [
+     "Congo",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Congo",
+     "ACTOR_POSITION"
+    ],
+    [
+     "DR Congo",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Congo",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Congos",
+     "NON_PLACE"
+    ],
+    [
+     "Congo",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Congo",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Rwandan",
+     "NON_PLACE"
+    ],
+    [
+     "Congo",
+     "ACTOR_POSITION"
+    ]
+   ],
+   "mentions": 23,
+   "headline": "DR Congo’s former president Kabila to lead new movement with M23 rebels"
+  },
+  {
+   "development_id": 426,
+   "set": "suppressed",
+   "stored_verdict": "C",
+   "root_cause": "MISSING_CONTAINMENT",
+   "stored_country": "ITA",
+   "outcome": "PRESERVED",
+   "role": "EVENT_PLACE",
+   "confidence": "CONFIRMED_PLACE",
+   "place": "rome",
+   "country": "italy",
+   "country_iso": "ITA",
+   "places": [
+    "Gemelli",
+    "chicago",
+    "rome"
+   ],
+   "region": null,
+   "reason": "dominant specific place",
+   "rejected": [
+    [
+     "Gemelli",
+     "NON_PLACE"
+    ],
+    [
+     "American",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Gemelli",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "VATICAN CITY",
+     "NON_PLACE"
+    ],
+    [
+     "Gemelli",
+     "NON_PLACE"
+    ],
+    [
+     "Gemelli",
+     "NON_PLACE"
+    ],
+    [
+     "FRANCE",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Rome",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "American",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "St. Peter",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Colombian",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Latin America'",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 78,
+   "headline": "Pope's lung-surgery announcement was bolt from the blue says Parolin"
+  },
+  {
+   "development_id": 433,
+   "set": "suppressed",
+   "stored_verdict": "C",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "stored_country": "JPN",
+   "outcome": "PRESERVED",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "place": null,
+   "country": "japan",
+   "country_iso": "JPN",
+   "places": [
+    "okinawa",
+    "tokyo"
+   ],
+   "region": null,
+   "reason": "several places in one country (U2: country ring, places listed)",
+   "rejected": [
+    [
+     "Japan",
+     "ACTOR_POSITION"
+    ],
+    [
+     "US",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Japanese",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Japanese",
+     "ACTOR_POSITION"
+    ],
+    [
+     "US",
+     "ACTOR_POSITION"
+    ],
+    [
+     "American",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Asia",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Japan",
+     "ACTOR_POSITION"
+    ],
+    [
+     "US",
+     "ACTOR_POSITION"
+    ],
+    [
+     "U.S.",
+     "ACTOR_POSITION"
+    ]
+   ],
+   "mentions": 16,
+   "headline": "Japan, US review military liberty policies after Okinawa killing"
+  },
+  {
+   "development_id": 438,
+   "set": "suppressed",
+   "stored_verdict": "C",
+   "root_cause": "MISSING_CONTAINMENT",
+   "stored_country": "MAR",
+   "outcome": "CHANGED",
+   "role": "EVENT_PLACE",
+   "confidence": "CONFIRMED_PLACE",
+   "place": "ceuta",
+   "country": "spain",
+   "country_iso": "ESP",
+   "places": [
+    "brussels",
+    "ceuta",
+    "madrid",
+    "melilla"
+   ],
+   "region": null,
+   "reason": "dominant specific place",
+   "rejected": [
+    [
+     "Spain",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Spanish",
+     "ACTOR_POSITION"
+    ],
+    [
+     "North Africa",
+     "NON_PLACE"
+    ],
+    [
+     "Spain",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Felipe",
+     "NON_PLACE"
+    ],
+    [
+     "España",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Palacio de la Asamblea",
+     "NON_PLACE"
+    ],
+    [
+     "Spanish",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Spain",
+     "ACTOR_POSITION"
+    ],
+    [
+     "España",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Marruecos",
+     "NON_PLACE"
+    ],
+    [
+     "Marruecos",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 55,
+   "headline": "Spain’s king visits Ceuta amid tensions with Morocco"
+  },
+  {
+   "development_id": 442,
+   "set": "suppressed",
+   "stored_verdict": "C",
+   "root_cause": "MISSING_ALIAS",
+   "stored_country": "FRA",
+   "outcome": "LOST_TO_NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [],
+   "region": null,
+   "reason": "no place in the occurrence reports' headlines or leads",
+   "rejected": [
+    [
+     "Marsiglia",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 1,
+   "headline": "L'attrice Selma Blair arrestata dopo aver aggredito due assistenti di volo"
+  },
+  {
+   "development_id": 444,
+   "set": "suppressed",
+   "stored_verdict": "P",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "stored_country": "USA",
+   "outcome": "P:EVENT_PLACE",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "place": "london",
+   "country": "united kingdom",
+   "country_iso": "GBR",
+   "places": [],
+   "region": null,
+   "reason": "one specific place",
+   "rejected": [
+    [
+     "Kyiv",
+     "ACTOR_POSITION"
+    ],
+    [
+     "US",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Kyiv",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Russian",
+     "NON_PLACE"
+    ],
+    [
+     "US",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Ukraine",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Kyiv",
+     "ACTOR_POSITION"
+    ],
+    [
+     "British",
+     "NON_PLACE"
+    ],
+    [
+     "Ukrainian",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Zelenski",
+     "NON_PLACE"
+    ],
+    [
+     "Kiev",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Washington",
+     "ACTOR_POSITION"
+    ]
+   ],
+   "mentions": 25,
+   "headline": "Trump’s diesel deal opens a new rift with Europe over Ukraine"
+  },
+  {
+   "development_id": 452,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "NON_PLACE_MENTION",
+   "stored_country": "NIC",
+   "outcome": "REMOVED",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "place": null,
+   "country": "france",
+   "country_iso": "FRA",
+   "places": [],
+   "region": null,
+   "reason": "country named as the place (L4)",
+   "rejected": [
+    [
+     "Gobierno",
+     "NON_PLACE"
+    ],
+    [
+     "Gobierno",
+     "NON_PLACE"
+    ],
+    [
+     "Gobierno",
+     "NON_PLACE"
+    ],
+    [
+     "Gobierno",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ]
+   ],
+   "mentions": 7,
+   "headline": "Estudiantes, docentes y sindicatos marchan por París a pocas horas del debate nacional sobre presupuestos"
+  },
+  {
+   "development_id": 458,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "FIRST_RESULT_WINS",
+   "stored_country": "GHA",
+   "outcome": "REMOVED",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "place": "washington",
+   "country": "united states",
+   "country_iso": "USA",
+   "places": [],
+   "region": null,
+   "reason": "one specific place",
+   "rejected": [
+    [
+     "FASCOM",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "FASCOM",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Virginia",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "French",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Middle East",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Pacific",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Futur",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "D.C.",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "FASCOM",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "FASCOM",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Europe",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Ukraine",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ]
+   ],
+   "mentions": 25,
+   "headline": "US Army to stand up command for unmanned and autonomous warfare"
+  },
+  {
+   "development_id": 464,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "stored_country": "JPN",
+   "outcome": "STILL_WRONG",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "place": null,
+   "country": "japan",
+   "country_iso": "JPN",
+   "places": [
+    "Russias Sakhalin",
+    "tokyo"
+   ],
+   "region": null,
+   "reason": "several places in one country (U2: country ring, places listed)",
+   "rejected": [
+    [
+     "Russia",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Japanese",
+     "NON_PLACE"
+    ],
+    [
+     "Sakhalin Island",
+     "NON_PLACE"
+    ],
+    [
+     "Moscow",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Japanese",
+     "NON_PLACE"
+    ],
+    [
+     "Russia",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Japanese",
+     "NON_PLACE"
+    ],
+    [
+     "Russia",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Japanese",
+     "NON_PLACE"
+    ],
+    [
+     "Moscow",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Sakhalin",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Russian",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ]
+   ],
+   "mentions": 34,
+   "headline": "Russia arrests Japanese reporter for alleged espionage"
+  },
+  {
+   "development_id": 465,
+   "set": "suppressed",
+   "stored_verdict": "C",
+   "root_cause": "MISSING_ALIAS",
+   "stored_country": "SAU",
+   "outcome": "LOST_TO_NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [],
+   "region": null,
+   "reason": "no place in the occurrence reports' headlines or leads",
+   "rejected": [
+    [
+     "Riad",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 1,
+   "headline": "Forti esplosioni udite a Riad e nei pressi di un impianto Aramco nell'est"
+  },
+  {
+   "development_id": 468,
+   "set": "suppressed",
+   "stored_verdict": "C",
+   "root_cause": "AMBIGUOUS_NAME",
+   "stored_country": "COD",
+   "outcome": "CHANGED",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "place": "DR",
+   "country": "congo",
+   "country_iso": "COG",
+   "places": [],
+   "region": null,
+   "reason": "one specific place",
+   "rejected": [],
+   "mentions": 3,
+   "headline": "Security Council Hears Calls for Greater Synergy among Parallel Diplomatic Efforts to End Violence in Eastern Democratic"
+  },
+  {
+   "development_id": 471,
+   "set": "suppressed",
+   "stored_verdict": "C",
+   "root_cause": "REGION_CITY_COLLISION",
+   "stored_country": "USA",
+   "outcome": "PRESERVED",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "place": "atlanta",
+   "country": "united states",
+   "country_iso": "USA",
+   "places": [],
+   "region": null,
+   "reason": "one specific place",
+   "rejected": [],
+   "mentions": 4,
+   "headline": "Man dies after fall from Six Flags rollercoaster in Georgia"
+  },
+  {
+   "development_id": 479,
+   "set": "suppressed",
+   "stored_verdict": "P",
+   "root_cause": "SUPRANATIONAL_REGION",
+   "stored_country": "DEU",
+   "outcome": "P:NONE",
+   "role": "NONE",
+   "confidence": "REGION",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [],
+   "region": "europe",
+   "reason": "only a sea, strait or region (U3: label, no marker)",
+   "rejected": [],
+   "mentions": 1,
+   "headline": "Amid unease in Europe, NATO SACEUR bullish on ‘block, blunt, break’ theory of victory"
+  },
+  {
+   "development_id": 494,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "stored_country": "UKR",
+   "outcome": "REMOVED",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "place": null,
+   "country": "united kingdom",
+   "country_iso": "GBR",
+   "places": [],
+   "region": null,
+   "reason": "country named as the place (L4)",
+   "rejected": [
+    [
+     "Ukraine",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "The Cherry Creek News Domain",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ]
+   ],
+   "mentions": 4,
+   "headline": "Army to take a (cautious) step toward employing AI agents to defend networks: Official"
+  },
+  {
+   "development_id": 495,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "REGION_CITY_COLLISION",
+   "stored_country": "USA",
+   "outcome": "REMOVED",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "place": null,
+   "country": "west bank",
+   "country_iso": "PSE",
+   "places": [],
+   "region": null,
+   "reason": "country named as the place (L4)",
+   "rejected": [
+    [
+     "Palestinians",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Palestinians",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Palestinians",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Israel",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Israelis",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Palestinian",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Israel",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Palestinians",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Palestinian",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Israeli",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Israel",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Palestinian",
+     "ACTOR_POSITION"
+    ]
+   ],
+   "mentions": 21,
+   "headline": "‘Like we don’t exist’: Palestinians in West Bank denied say in Israel vote"
+  },
+  {
+   "development_id": 507,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "FIRST_RESULT_WINS",
+   "stored_country": "USA",
+   "outcome": "REMOVED",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "place": "nablus",
+   "country": "palestine",
+   "country_iso": "PSE",
+   "places": [],
+   "region": null,
+   "reason": "one specific place",
+   "rejected": [
+    [
+     "Israeli",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Beita",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 5,
+   "headline": "Settlers set fire to mosque in West Bank as Israeli forces raid villages"
+  },
+  {
+   "development_id": 513,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "NON_PLACE_MENTION",
+   "stored_country": "NIC",
+   "outcome": "REMOVED",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "place": "cairo",
+   "country": "egypt",
+   "country_iso": "EGY",
+   "places": [],
+   "region": null,
+   "reason": "one specific place",
+   "rejected": [
+    [
+     "Hamás",
+     "NON_PLACE"
+    ],
+    [
+     "El Cairo",
+     "NON_PLACE"
+    ],
+    [
+     "Gobierno",
+     "NON_PLACE"
+    ],
+    [
+     "Palestinian",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Palestine",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Palestinian",
+     "ACTOR_POSITION"
+    ]
+   ],
+   "mentions": 10,
+   "headline": "Los grupos palestinos Al Fatá, Hamás, Yihad Islámica y el FPLP se reunirán en El Cairo tras el aplazamiento electoral"
+  },
+  {
+   "development_id": 528,
+   "set": "suppressed",
+   "stored_verdict": "P",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "stored_country": "IRL",
+   "outcome": "P:EVENT_COUNTRY",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "place": null,
+   "country": "united kingdom",
+   "country_iso": "GBR",
+   "places": [],
+   "region": null,
+   "reason": "country named as the place (L4)",
+   "rejected": [
+    [
+     "Irish",
+     "NON_PLACE"
+    ],
+    [
+     "Ireland",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Irish",
+     "NON_PLACE"
+    ],
+    [
+     "Irish",
+     "NON_PLACE"
+    ],
+    [
+     "Ireland",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "FRANCE",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Irish",
+     "NON_PLACE"
+    ],
+    [
+     "British",
+     "NON_PLACE"
+    ],
+    [
+     "Israeli",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Irish",
+     "NON_PLACE"
+    ],
+    [
+     "Ireland",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "FRANCE",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ]
+   ],
+   "mentions": 21,
+   "headline": "Sally Rooney books can’t be sold in UK amid Palestine Action ban, publisher says"
+  },
+  {
+   "development_id": 529,
+   "set": "suppressed",
+   "stored_verdict": "P",
+   "root_cause": "MISSING_ALIAS",
+   "stored_country": "OMN",
+   "outcome": "P:NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [],
+   "region": null,
+   "reason": "no place in the occurrence reports' headlines or leads",
+   "rejected": [
+    [
+     "Hormuz",
+     "NON_PLACE"
+    ],
+    [
+     "Hormuz",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 2,
+   "headline": "UN official warns of looming food crisis as Hormuz fertiliser plan stalls"
+  },
+  {
+   "development_id": 534,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "AMBIGUOUS_NAME",
+   "stored_country": "MOZ",
+   "outcome": "REMOVED",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "place": null,
+   "country": "gaza",
+   "country_iso": "PSE",
+   "places": [],
+   "region": null,
+   "reason": "country named as the place (L4)",
+   "rejected": [
+    [
+     "Sharm el-Sheikh",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Egypt",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Palestinian",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Israel",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Israels",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 7,
+   "headline": "One-Year Anniversary of the Gaza Peace Summit"
+  },
+  {
+   "development_id": 540,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "NON_PLACE_MENTION",
+   "stored_country": "MEX",
+   "outcome": "REMOVED",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [],
+   "region": null,
+   "reason": "no place in the occurrence reports' headlines or leads",
+   "rejected": [
+    [
+     "El Clasico",
+     "NON_PLACE"
+    ],
+    [
+     "La Liga",
+     "NON_PLACE"
+    ],
+    [
+     "La Liga",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 3,
+   "headline": "Real Madrid’s Vinicius banned for Clasico after hair-pull red card"
+  },
+  {
+   "development_id": 541,
+   "set": "suppressed",
+   "stored_verdict": "P",
+   "root_cause": "WRONG_COUNTRY_MATCH",
+   "stored_country": "ITA",
+   "outcome": "P:EVENT_PLACE",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "place": "brussels",
+   "country": "belgium",
+   "country_iso": "BEL",
+   "places": [],
+   "region": null,
+   "reason": "one specific place",
+   "rejected": [],
+   "mentions": 3,
+   "headline": "Poverty Remains Greatest Global Challenge as 2030 Deadline Looms, Second Committee Hears"
+  },
+  {
+   "development_id": 564,
+   "set": "suppressed",
+   "stored_verdict": "P",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "stored_country": "CHN",
+   "outcome": "P:NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [
+    "French",
+    "brussels",
+    "kyiv"
+   ],
+   "region": null,
+   "reason": "several places in different countries, none dominant (L5)",
+   "rejected": [
+    [
+     "Brussels",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Belgian",
+     "NON_PLACE"
+    ],
+    [
+     "Beijing",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Chinese",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Brussels",
+     "ACTOR_POSITION"
+    ],
+    [
+     "US",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "FRANCE",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Brussels",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Belgium",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "French",
+     "NON_PLACE"
+    ],
+    [
+     "France",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Brussels",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ]
+   ],
+   "mentions": 30,
+   "headline": "EU leaders to ‘urgently’ call for new trade weapons to tackle China shock"
+  },
+  {
+   "development_id": 566,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "AMBIGUOUS_NAME",
+   "stored_country": "MOZ",
+   "outcome": "REMOVED",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [
+    "gaza",
+    "israel",
+    "united states"
+   ],
+   "region": null,
+   "reason": "several countries, none dominant (L5)",
+   "rejected": [
+    [
+     "Franja",
+     "NON_PLACE"
+    ],
+    [
+     "Hamás",
+     "NON_PLACE"
+    ],
+    [
+     "Irlanda",
+     "NON_PLACE"
+    ],
+    [
+     "Franja Alrededor",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Franja",
+     "NON_PLACE"
+    ],
+    [
+     "Franja de Gaza",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Gobierno de Israel",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "EL PAÍS",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Israeli",
+     "NON_PLACE"
+    ],
+    [
+     "Wfp",
+     "NON_PLACE"
+    ],
+    [
+     "Israel",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Franja de Gaza",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ]
+   ],
+   "mentions": 42,
+   "headline": "Emergency, a Gaza entro dicembre 1,4 milioni in grave insicurezza alimentare"
+  },
+  {
+   "development_id": 569,
+   "set": "suppressed",
+   "stored_verdict": "P",
+   "root_cause": "SUPRANATIONAL_REGION",
+   "stored_country": "BGR",
+   "outcome": "P:EVENT_COUNTRY",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "place": null,
+   "country": "israel",
+   "country_iso": "ISR",
+   "places": [],
+   "region": null,
+   "reason": "country named as the place (L4)",
+   "rejected": [
+    [
+     "Balkan",
+     "NON_PLACE"
+    ],
+    [
+     "Iranian",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 5,
+   "headline": "‘Each country goes its own way’: How Balkan politics shape ties with Israel"
+  },
+  {
+   "development_id": 572,
+   "set": "suppressed",
+   "stored_verdict": "P",
+   "root_cause": "SUPRANATIONAL_REGION",
+   "stored_country": "DEU",
+   "outcome": "P:NONE",
+   "role": "NONE",
+   "confidence": "REGION",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [],
+   "region": "europe",
+   "reason": "only a sea, strait or region (U3: label, no marker)",
+   "rejected": [
+    [
+     "Brussels",
+     "ACTOR_POSITION"
+    ]
+   ],
+   "mentions": 4,
+   "headline": "Steady progress on the 'One Europe, One Market' Roadmap"
+  },
+  {
+   "development_id": 573,
+   "set": "suppressed",
+   "stored_verdict": "P",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "stored_country": "CHN",
+   "outcome": "P:NONE",
+   "role": "NONE",
+   "confidence": "REGION",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [],
+   "region": "south china sea",
+   "reason": "only a sea, strait or region (U3: label, no marker)",
+   "rejected": [
+    [
+     "Philippines",
+     "ACTOR_POSITION"
+    ],
+    [
+     "China",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Philippine",
+     "NON_PLACE"
+    ],
+    [
+     "Chinese",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Beijing",
+     "ACTOR_POSITION"
+    ],
+    [
+     "China",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Philippines",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Philippines",
+     "ACTOR_POSITION"
+    ],
+    [
+     "China",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Philippine",
+     "NON_PLACE"
+    ],
+    [
+     "Second Thomas Shoal",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 13,
+   "headline": "Philippines rejects China’s calls for direct contact amid ‘miscalculation’ warnings"
+  },
+  {
+   "development_id": 584,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "NON_PLACE_MENTION",
+   "stored_country": "PHL",
+   "outcome": "REMOVED",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [
+    "bulgaria",
+    "russia"
+   ],
+   "region": null,
+   "reason": "several countries, none dominant (L5)",
+   "rejected": [
+    [
+     "Negro",
+     "NON_PLACE"
+    ],
+    [
+     "Negro Dos",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Rumania",
+     "NON_PLACE"
+    ],
+    [
+     "Negro",
+     "NON_PLACE"
+    ],
+    [
+     "Negro",
+     "NON_PLACE"
+    ],
+    [
+     "Rumanía",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ]
+   ],
+   "mentions": 8,
+   "headline": "El capitán de un buque en aguas territoriales rumanas en el mar Negro alerta de un ataque con dron"
+  },
+  {
+   "development_id": 604,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "AMBIGUOUS_NAME",
+   "stored_country": "MOZ",
+   "outcome": "REMOVED",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "place": null,
+   "country": "gaza",
+   "country_iso": "PSE",
+   "places": [],
+   "region": null,
+   "reason": "country named as the place (L4)",
+   "rejected": [
+    [
+     "Israel",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Israel",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Israel",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Israel",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Israel",
+     "ACTOR_POSITION"
+    ]
+   ],
+   "mentions": 10,
+   "headline": "Israel halts commercial goods from entering Gaza; Hamas denies tax claims"
+  },
+  {
+   "development_id": 607,
+   "set": "suppressed",
+   "stored_verdict": "P",
+   "root_cause": "SUPRANATIONAL_REGION",
+   "stored_country": "DEU",
+   "outcome": "P:NONE",
+   "role": "NONE",
+   "confidence": "REGION",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [],
+   "region": "europe",
+   "reason": "only a sea, strait or region (U3: label, no marker)",
+   "rejected": [
+    [
+     "Slovenia",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Europe",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Italian",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ]
+   ],
+   "mentions": 4,
+   "headline": "Press release - Metsola: We cannot agree on Europe's ambitions and cut the means to achieve them"
+  },
+  {
+   "development_id": 621,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "AMBIGUOUS_NAME",
+   "stored_country": "MOZ",
+   "outcome": "REMOVED",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "place": null,
+   "country": "gaza",
+   "country_iso": "PSE",
+   "places": [],
+   "region": null,
+   "reason": "country named as the place (L4)",
+   "rejected": [
+    [
+     "Palestinian",
+     "NON_PLACE"
+    ],
+    [
+     "Palestinian",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 6,
+   "headline": "‘Our works are next to each other’: Art bridges Gaza and West Bank"
+  },
+  {
+   "development_id": 629,
+   "set": "suppressed",
+   "stored_verdict": "P",
+   "root_cause": "SUPRANATIONAL_REGION",
+   "stored_country": "TCD",
+   "outcome": "P:EVENT_PLACE",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "place": "paris",
+   "country": "france",
+   "country_iso": "FRA",
+   "places": [],
+   "region": null,
+   "reason": "one specific place",
+   "rejected": [
+    [
+     "Maxhosa Africa",
+     "NON_PLACE"
+    ],
+    [
+     "Laduma Ngxokolo",
+     "NON_PLACE"
+    ],
+    [
+     "Père Lachaise Cemetery",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ]
+   ],
+   "mentions": 8,
+   "headline": "Spring-summer 2027 ready-to-wear collections: Africa in the spotlight at Paris Fashion Week"
+  },
+  {
+   "development_id": 630,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "REGION_CITY_COLLISION",
+   "stored_country": "USA",
+   "outcome": "REMOVED",
+   "role": "EVENT_PLACE",
+   "confidence": "CONFIRMED_PLACE",
+   "place": "Palestinians",
+   "country": null,
+   "country_iso": null,
+   "places": [
+    "American",
+    "Israeli",
+    "Palestinians"
+   ],
+   "region": null,
+   "reason": "dominant specific place",
+   "rejected": [
+    [
+     "Palestinian",
+     "NON_PLACE"
+    ],
+    [
+     "East Jerusalem Settlers",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Palestinian",
+     "NON_PLACE"
+    ],
+    [
+     "Palestinian",
+     "NON_PLACE"
+    ],
+    [
+     "Israeli",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Palestinians",
+     "NON_PLACE"
+    ],
+    [
+     "Israeli",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Palestinians",
+     "NON_PLACE"
+    ],
+    [
+     "Israeli",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Israeli",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Palestinians",
+     "NON_PLACE"
+    ],
+    [
+     "West Bank Domain",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ]
+   ],
+   "mentions": 156,
+   "headline": "Settlers attack Palestinian mosque near occupied East Jerusalem"
+  },
+  {
+   "development_id": 632,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "AMBIGUOUS_NAME",
+   "stored_country": "MOZ",
+   "outcome": "REMOVED",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "place": null,
+   "country": "gaza",
+   "country_iso": "PSE",
+   "places": [],
+   "region": null,
+   "reason": "country named as the place (L4)",
+   "rejected": [
+    [
+     "Palestinian",
+     "NON_PLACE"
+    ],
+    [
+     "Israeli",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 5,
+   "headline": "Alone in Gaza: Genocide leaves Palestinian man without family or a home"
+  },
+  {
+   "development_id": 643,
+   "set": "suppressed",
+   "stored_verdict": "C",
+   "root_cause": "MISSING_ALIAS",
+   "stored_country": "ARM",
+   "outcome": "LOST_TO_NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [],
+   "region": null,
+   "reason": "no place in the occurrence reports' headlines or leads",
+   "rejected": [
+    [
+     "Yerevan",
+     "NON_PLACE"
+    ],
+    [
+     "Yerevan",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 2,
+   "headline": "Speech by Executive Vice-President Teresa Ribera at 17th Conference of the Parties to the United Nations Convention on B"
+  },
+  {
+   "development_id": 648,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "FIRST_RESULT_WINS",
+   "stored_country": "ESP",
+   "outcome": "REMOVED",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [],
+   "region": null,
+   "reason": "no place in the occurrence reports' headlines or leads",
+   "rejected": [
+    [
+     "Boletín Oficial del Estado",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 1,
+   "headline": "Orcas que atacan y se comen a los grandes tiburones blancos: la sangrienta batalla entre los mayores depredadores marino"
+  },
+  {
+   "development_id": 654,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "NON_PLACE_MENTION",
+   "stored_country": "MEX",
+   "outcome": "REMOVED",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "place": "madrid",
+   "country": "spain",
+   "country_iso": "ESP",
+   "places": [],
+   "region": null,
+   "reason": "one specific place",
+   "rejected": [
+    [
+     "La Liga",
+     "ACTOR_POSITION"
+    ],
+    [
+     "La Liga",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Nazi Germany",
+     "NON_PLACE"
+    ],
+    [
+     "La Liga",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Tebas",
+     "NON_PLACE"
+    ],
+    [
+     "Chamartín",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ]
+   ],
+   "mentions": 7,
+   "headline": "Real Madrid demand resignation of La Liga chief after Goebbels comparison"
+  },
+  {
+   "development_id": 661,
+   "set": "suppressed",
+   "stored_verdict": "C",
+   "root_cause": "MISSING_ALIAS",
+   "stored_country": "PSE",
+   "outcome": "LOST_TO_NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [],
+   "region": null,
+   "reason": "no place in the occurrence reports' headlines or leads",
+   "rejected": [
+    [
+     "Taybeh",
+     "NON_PLACE"
+    ],
+    [
+     "Bélgica",
+     "NON_PLACE"
+    ],
+    [
+     "Cisjordania Captura",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Taybeh",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 4,
+   "headline": "Colonos israelíes atacan en Taybeh a agricultores palestinos y una comitiva de diplomáticos europeos"
+  },
+  {
+   "development_id": 675,
+   "set": "suppressed",
+   "stored_verdict": "C",
+   "root_cause": "MISSING_ALIAS",
+   "stored_country": "PSE",
+   "outcome": "LOST_TO_NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [
+    "tehran",
+    "washington"
+   ],
+   "region": null,
+   "reason": "several places in different countries, none dominant (L5)",
+   "rejected": [
+    [
+     "Palestina",
+     "NON_PLACE"
+    ],
+    [
+     "Palestina",
+     "NON_PLACE"
+    ],
+    [
+     "Palestina",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Gobierno de Irán",
+     "NON_PLACE"
+    ],
+    [
+     "Israel",
+     "ACTOR_POSITION"
+    ]
+   ],
+   "mentions": 10,
+   "headline": "Netanyahu, 'cautela su violenza a diplomatici, servono prove inconfutabili'"
+  },
+  {
+   "development_id": 681,
+   "set": "suppressed",
+   "stored_verdict": "C",
+   "root_cause": "MISSING_ALIAS",
+   "stored_country": "TUR",
+   "outcome": "LOST_TO_NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [],
+   "region": null,
+   "reason": "no place in the occurrence reports' headlines or leads",
+   "rejected": [
+    [
+     "Estambul",
+     "NON_PLACE"
+    ],
+    [
+     "Estambul",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 2,
+   "headline": "Ascienden a cinco los muertos por las inundaciones en Estambul"
+  },
+  {
+   "development_id": 684,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "AMBIGUOUS_NAME",
+   "stored_country": "MOZ",
+   "outcome": "REMOVED",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "place": null,
+   "country": "gaza",
+   "country_iso": "PSE",
+   "places": [],
+   "region": null,
+   "reason": "country named as the place (L4)",
+   "rejected": [
+    [
+     "Palestinian",
+     "NON_PLACE"
+    ],
+    [
+     "Palestinians",
+     "NON_PLACE"
+    ],
+    [
+     "Palestinians",
+     "NON_PLACE"
+    ],
+    [
+     "Palestinians",
+     "NON_PLACE"
+    ],
+    [
+     "Palestinians",
+     "NON_PLACE"
+    ],
+    [
+     "Palestinians",
+     "NON_PLACE"
+    ],
+    [
+     "Palestinians",
+     "NON_PLACE"
+    ],
+    [
+     "Israeli",
+     "NON_PLACE"
+    ],
+    [
+     "Palestinian",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 31,
+   "headline": "Gaza families fear food shortages as Israel halts commercial shipments"
+  },
+  {
+   "development_id": 689,
+   "set": "suppressed",
+   "stored_verdict": "C",
+   "root_cause": "AMBIGUOUS_NAME",
+   "stored_country": "COD",
+   "outcome": "CHANGED",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "place": null,
+   "country": "congo",
+   "country_iso": "COG",
+   "places": [],
+   "region": null,
+   "reason": "country named as the place (L4)",
+   "rejected": [
+    [
+     "Democratic Republic of Congo",
+     "ACTOR_POSITION"
+    ]
+   ],
+   "mentions": 4,
+   "headline": "DR Congo’s fast-moving Ebola outbreak spreads to eighth province"
+  },
+  {
+   "development_id": 690,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "AMBIGUOUS_NAME",
+   "stored_country": "CRI",
+   "outcome": "REMOVED",
+   "role": "EVENT_PLACE",
+   "confidence": "CONFIRMED_PLACE",
+   "place": "santiago",
+   "country": "chile",
+   "country_iso": "CHL",
+   "places": [],
+   "region": null,
+   "reason": "one specific place",
+   "rejected": [
+    [
+     "Chile Chile",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Chile",
+     "ACTOR_POSITION"
+    ]
+   ],
+   "mentions": 4,
+   "headline": "Informe desde Santiago: manifestantes conmemoran el estallido social en Chile"
+  },
+  {
+   "development_id": 706,
+   "set": "suppressed",
+   "stored_verdict": "C",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "stored_country": "BGD",
+   "outcome": "CHANGED",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "place": "mecca",
+   "country": "saudi arabia",
+   "country_iso": "SAU",
+   "places": [],
+   "region": null,
+   "reason": "one specific place",
+   "rejected": [
+    [
+     "Saudi Arabia",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Bangladeshis",
+     "NON_PLACE"
+    ],
+    [
+     "Saudi Arabia",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Bangladeshis",
+     "NON_PLACE"
+    ],
+    [
+     "Mideast",
+     "NON_PLACE"
+    ],
+    [
+     "Saudi Arabia",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Mideast",
+     "NON_PLACE"
+    ],
+    [
+     "Saudi Arabia",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Bangladeshis",
+     "NON_PLACE"
+    ],
+    [
+     "Mecca Saudi Arabia",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Saudi",
+     "ACTOR_POSITION"
+    ]
+   ],
+   "mentions": 13,
+   "headline": "Bangladesh says it was not informed of its citizens' execution by Saudi Arabia"
+  },
+  {
+   "development_id": 713,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "NON_PLACE_MENTION",
+   "stored_country": "NGA",
+   "outcome": "REMOVED",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "place": null,
+   "country": "japan",
+   "country_iso": "JPN",
+   "places": [],
+   "region": null,
+   "reason": "country named as the place (L4)",
+   "rejected": [
+    [
+     "Marte",
+     "NON_PLACE"
+    ],
+    [
+     "Tierra",
+     "NON_PLACE"
+    ],
+    [
+     "Luna",
+     "NON_PLACE"
+    ],
+    [
+     "Fobos",
+     "NON_PLACE"
+    ],
+    [
+     "Marte",
+     "NON_PLACE"
+    ],
+    [
+     "Fobos de Marte",
+     "NON_PLACE"
+    ],
+    [
+     "Marte",
+     "NON_PLACE"
+    ],
+    [
+     "Fobos",
+     "NON_PLACE"
+    ],
+    [
+     "Marte Científicos",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Marte",
+     "NON_PLACE"
+    ],
+    [
+     "Tierra",
+     "NON_PLACE"
+    ],
+    [
+     "Marte",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 15,
+   "headline": "Cómo es la revolucionaria misión que busca traer un trozo de la mayor luna de Marte a la Tierra"
+  },
+  {
+   "development_id": 719,
+   "set": "suppressed",
+   "stored_verdict": "C",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "stored_country": "USA",
+   "outcome": "PRESERVED",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "place": null,
+   "country": "united states",
+   "country_iso": "USA",
+   "places": [
+    "florida",
+    "miami",
+    "washington"
+   ],
+   "region": null,
+   "reason": "several places in one country (U2: country ring, places listed)",
+   "rejected": [
+    [
+     "Fiscalía de EEUU",
+     "NON_PLACE"
+    ],
+    [
+     "Undécimo Circuito Judicial de Florida",
+     "NON_PLACE"
+    ],
+    [
+     "Cuban",
+     "NON_PLACE"
+    ],
+    [
+     "Cubas",
+     "NON_PLACE"
+    ],
+    [
+     "Pinar del Río",
+     "NON_PLACE"
+    ],
+    [
+     "Cuban",
+     "NON_PLACE"
+    ],
+    [
+     "Grenada",
+     "NON_PLACE"
+    ],
+    [
+     "Southwest Florida Domain",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Cubas",
+     "NON_PLACE"
+    ],
+    [
+     "La Habana",
+     "NON_PLACE"
+    ],
+    [
+     "Paese",
+     "NON_PLACE"
+    ],
+    [
+     "La Habana",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 51,
+   "headline": "Florida, mandato d'arresto per omicidio contro Raul Castro"
+  },
+  {
+   "development_id": 725,
+   "set": "suppressed",
+   "stored_verdict": "P",
+   "root_cause": "SUPRANATIONAL_REGION",
+   "stored_country": "DEU",
+   "outcome": "P:EVENT_PLACE",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "place": "Northern Neighbourhood",
+   "country": null,
+   "country_iso": null,
+   "places": [],
+   "region": null,
+   "reason": "one specific place",
+   "rejected": [
+    [
+     "Brussels",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Strasbourg",
+     "NON_PLACE"
+    ],
+    [
+     "Strasbourg",
+     "NON_PLACE"
+    ],
+    [
+     "European Arctic Strategy",
+     "NON_PLACE"
+    ],
+    [
+     "Russian",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 35,
+   "headline": "EU invests over €390 million in 135 new climate and environment projects"
+  },
+  {
+   "development_id": 730,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "SUPRANATIONAL_REGION",
+   "stored_country": "DEU",
+   "outcome": "REMOVED",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [
+    "france",
+    "italy"
+   ],
+   "region": null,
+   "reason": "several countries, none dominant (L5)",
+   "rejected": [
+    [
+     "Europa",
+     "NON_PLACE"
+    ],
+    [
+     "Europa",
+     "NON_PLACE"
+    ],
+    [
+     "Polonia",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Europa",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 6,
+   "headline": "Directo Latam y el decreto de Sheinbaum que obliga a redes sociales a proteger a menores"
+  },
+  {
+   "development_id": 734,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "FIRST_RESULT_WINS",
+   "stored_country": "ESP",
+   "outcome": "REMOVED",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [],
+   "region": null,
+   "reason": "no place in the occurrence reports' headlines or leads",
+   "rejected": [
+    [
+     "Pacífico",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 1,
+   "headline": "El líder de una secta condenado por ordenar a sus seguidores dejar morir de hambre a casi 200 niños"
+  },
+  {
+   "development_id": 746,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "stored_country": "UKR",
+   "outcome": "REMOVED",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [
+    "ukraine",
+    "united states"
+   ],
+   "region": null,
+   "reason": "several countries, none dominant (L5)",
+   "rejected": [
+    [
+     "Russian",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Russian",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Moscow",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Russia",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Earth",
+     "NON_PLACE"
+    ],
+    [
+     "Finland",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "United States",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Russian",
+     "ACTOR_POSITION"
+    ]
+   ],
+   "mentions": 12,
+   "headline": "Russian satellite stalked ICEYE spacecraft in potentially dangerous on-orbit maneuvers"
+  },
+  {
+   "development_id": 747,
+   "set": "suppressed",
+   "stored_verdict": "C",
+   "root_cause": "MISSING_ALIAS",
+   "stored_country": "FRA",
+   "outcome": "CHANGED",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "place": null,
+   "country": "united kingdom",
+   "country_iso": "GBR",
+   "places": [],
+   "region": null,
+   "reason": "country named as the place (L4)",
+   "rejected": [
+    [
+     "Strasbourg",
+     "NON_PLACE"
+    ],
+    [
+     "Strasbourg",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 3,
+   "headline": "Press release - Opening: 19-22 October plenary session"
+  },
+  {
+   "development_id": 752,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "FIRST_RESULT_WINS",
+   "stored_country": "GBR",
+   "outcome": "REMOVED",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [],
+   "region": null,
+   "reason": "no place in the occurrence reports' headlines or leads",
+   "rejected": [
+    [
+     "Egeo",
+     "NON_PLACE"
+    ],
+    [
+     "Lesbo",
+     "NON_PLACE"
+    ],
+    [
+     "Samo",
+     "NON_PLACE"
+    ],
+    [
+     "Egeo",
+     "NON_PLACE"
+    ],
+    [
+     "Lesbo",
+     "NON_PLACE"
+    ],
+    [
+     "Samo",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ]
+   ],
+   "mentions": 6,
+   "headline": "12 migranti morti nell'Egeo, 6 tra cui neonato in collisione con nave polizia"
+  },
+  {
+   "development_id": 761,
+   "set": "suppressed",
+   "stored_verdict": "P",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "stored_country": "SAU",
+   "outcome": "P:EVENT_PLACE",
+   "role": "EVENT_PLACE",
+   "confidence": "CONFIRMED_PLACE",
+   "place": "mecca",
+   "country": "saudi arabia",
+   "country_iso": "SAU",
+   "places": [],
+   "region": null,
+   "reason": "one specific place",
+   "rejected": [
+    [
+     "Pakistan",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Saudi",
+     "NON_PLACE"
+    ],
+    [
+     "Turkey",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Pakistan",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Turkiye",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Pakistan",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Saudi Arabia Trilateral",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Türkiye",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Türkiye",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Turkey",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Pakistan",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Middle East News",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 31,
+   "headline": "Turkiye moves to ratify Mecca defence pact with Pakistan, Saudi Arabia"
+  },
+  {
+   "development_id": 762,
+   "set": "suppressed",
+   "stored_verdict": "P",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "stored_country": "USA",
+   "outcome": "P:EVENT_COUNTRY",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "place": null,
+   "country": "iran",
+   "country_iso": "IRN",
+   "places": [],
+   "region": null,
+   "reason": "country named as the place (L4)",
+   "rejected": [
+    [
+     "Usa",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Hormuz",
+     "NON_PLACE"
+    ],
+    [
+     "MQ-9",
+     "NON_PLACE"
+    ],
+    [
+     "Stretto di Hormuz",
+     "NON_PLACE"
+    ],
+    [
+     "Usa",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Nuovi",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "EEUU",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Estados Unidos",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Estados Unidos",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Washington",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Estambul",
+     "NON_PLACE"
+    ],
+    [
+     "Exteriores",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 29,
+   "headline": "Cuba, 'gli Usa consentono a dei terroristi di agire impunemente'"
+  },
+  {
+   "development_id": 764,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "NON_PLACE_MENTION",
+   "stored_country": "PHL",
+   "outcome": "REMOVED",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "place": "brussels",
+   "country": "belgium",
+   "country_iso": "BEL",
+   "places": [],
+   "region": null,
+   "reason": "one specific place",
+   "rejected": [
+    [
+     "Negro",
+     "NON_PLACE"
+    ],
+    [
+     "Negro",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 4,
+   "headline": "La OTAN reforzará con más medios su presencia en el mar Negro tras el incremento de ataques con drones"
+  },
+  {
+   "development_id": 781,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "stored_country": "DEU",
+   "outcome": "REMOVED",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "place": "tehran",
+   "country": "iran",
+   "country_iso": "IRN",
+   "places": [],
+   "region": null,
+   "reason": "one specific place",
+   "rejected": [
+    [
+     "Berlín",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Media",
+     "NON_PLACE"
+    ],
+    [
+     "Usa",
+     "ACTOR_POSITION"
+    ],
+    [
+     "IA",
+     "NON_PLACE"
+    ],
+    [
+     "Usa",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Francia",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Italia",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Europa",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Usa",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Stati Uniti",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Europa",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ]
+   ],
+   "mentions": 17,
+   "headline": "Media, 'Iran ha trascinato negoziati con gli Usa per indebolire Trump alle midterm'"
+  },
+  {
+   "development_id": 782,
+   "set": "suppressed",
+   "stored_verdict": "P",
+   "root_cause": "SUPRANATIONAL_REGION",
+   "stored_country": null,
+   "outcome": "P:NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [
+    "bulgaria",
+    "ukraine"
+   ],
+   "region": null,
+   "reason": "several countries, none dominant (L5)",
+   "rejected": [
+    [
+     "Russian",
+     "NON_PLACE"
+    ],
+    [
+     "Türkiyes",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 16,
+   "headline": "NATO to send additional patrol planes to Black Sea after drone attacks"
+  },
+  {
+   "development_id": 783,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "NON_PLACE_MENTION",
+   "stored_country": "FRA",
+   "outcome": "REMOVED",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [],
+   "region": null,
+   "reason": "no place in the occurrence reports' headlines or leads",
+   "rejected": [
+    [
+     "Alex",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ]
+   ],
+   "mentions": 1,
+   "headline": "US Army competition explores military uses for humanoid robots"
+  },
+  {
+   "development_id": 795,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "stored_country": "SDN",
+   "outcome": "REMOVED",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [
+    "central african republic",
+    "chad",
+    "sudan"
+   ],
+   "region": null,
+   "reason": "several countries, none dominant (L5)",
+   "rejected": [
+    [
+     "Bangui",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 9,
+   "headline": "Security Situation in Central African Republic Fragile, Security Council Hears, amid Calls to Adequately Fund Peacekeepi"
+  },
+  {
+   "development_id": 796,
+   "set": "suppressed",
+   "stored_verdict": "C",
+   "root_cause": "MISSING_ALIAS",
+   "stored_country": "FRA",
+   "outcome": "LOST_TO_NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [],
+   "region": null,
+   "reason": "no place in the occurrence reports' headlines or leads",
+   "rejected": [
+    [
+     "Nancy",
+     "NON_PLACE"
+    ],
+    [
+     "Nancy",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 2,
+   "headline": "Caccia francese precipita vicino a Nancy, almeno un morto"
+  },
+  {
+   "development_id": 798,
+   "set": "suppressed",
+   "stored_verdict": "C",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "stored_country": "LBN",
+   "outcome": "LOST_TO_NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [
+    "lebanon",
+    "syria"
+   ],
+   "region": null,
+   "reason": "several countries, none dominant (L5)",
+   "rejected": [
+    [
+     "Beiruts",
+     "NON_PLACE"
+    ],
+    [
+     "Israeli",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Lebanese",
+     "NON_PLACE"
+    ],
+    [
+     "Israeli",
+     "ACTOR_POSITION"
+    ]
+   ],
+   "mentions": 6,
+   "headline": "Israeli soldiers mock Lebanese home they rigged with explosives"
+  },
+  {
+   "development_id": 803,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "SUPRANATIONAL_REGION",
+   "stored_country": "DNK",
+   "outcome": "REMOVED",
+   "role": "NONE",
+   "confidence": "REGION",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [],
+   "region": "north sea",
+   "reason": "only a sea, strait or region (U3: label, no marker)",
+   "rejected": [
+    [
+     "UK",
+     "ACTOR_POSITION"
+    ],
+    [
+     "UK",
+     "ACTOR_POSITION"
+    ]
+   ],
+   "mentions": 3,
+   "headline": "UK approves development of Jackdaw gasfield in North Sea"
+  },
+  {
+   "development_id": 804,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "SUPRANATIONAL_REGION",
+   "stored_country": "DEU",
+   "outcome": "REMOVED",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "place": "paris",
+   "country": "france",
+   "country_iso": "FRA",
+   "places": [],
+   "region": null,
+   "reason": "one specific place",
+   "rejected": [
+    [
+     "Berlin",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Russian",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Estonia",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "French",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Ile Longue",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Brest",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "France",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Ukrainian",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Germany",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Leipzig",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Moscow",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Kyiv",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ]
+   ],
+   "mentions": 20,
+   "headline": "Drones take over AUSA, plus the Army’s plan to bring in new vendors"
+  },
+  {
+   "development_id": 811,
+   "set": "suppressed",
+   "stored_verdict": "C",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "stored_country": "DEU",
+   "outcome": "CHANGED",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "place": "vienna",
+   "country": "austria",
+   "country_iso": "AUT",
+   "places": [],
+   "region": null,
+   "reason": "one specific place",
+   "rejected": [
+    [
+     "Leipzig",
+     "NON_PLACE"
+    ],
+    [
+     "German",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Russian",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Germany",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Ukrainian",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Wunstorf",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Wunstorf",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Leipzig/Halle Airport",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Leipzig",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Russia",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Ukraine",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Moscow",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ]
+   ],
+   "mentions": 25,
+   "headline": "German military raises sabotage threat level amid warning of Russian attacks: report"
+  },
+  {
+   "development_id": 812,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "FIRST_RESULT_WINS",
+   "stored_country": "USA",
+   "outcome": "REMOVED",
+   "role": "EVENT_PLACE",
+   "confidence": "CONFIRMED_PLACE",
+   "place": "hebron",
+   "country": "palestine",
+   "country_iso": "PSE",
+   "places": [
+    "Israeli",
+    "Palestinian",
+    "West Bank City",
+    "gaza city",
+    "hebron",
+    "ramallah"
+   ],
+   "region": null,
+   "reason": "dominant specific place",
+   "rejected": [
+    [
+     "Israeli",
+     "NON_PLACE"
+    ],
+    [
+     "NY",
+     "NON_PLACE"
+    ],
+    [
+     "Israelis",
+     "NON_PLACE"
+    ],
+    [
+     "Americans",
+     "NON_PLACE"
+    ],
+    [
+     "NY",
+     "NON_PLACE"
+    ],
+    [
+     "Israeli",
+     "NON_PLACE"
+    ],
+    [
+     "Palestinian",
+     "NON_PLACE"
+    ],
+    [
+     "Americans",
+     "NON_PLACE"
+    ],
+    [
+     "Israeli",
+     "NON_PLACE"
+    ],
+    [
+     "Israeli",
+     "NON_PLACE"
+    ],
+    [
+     "Israeli",
+     "NON_PLACE"
+    ],
+    [
+     "Palestinian",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 249,
+   "headline": "US congressional candidate Brad Lander freed after West Bank detention"
+  },
+  {
+   "development_id": 820,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "NON_PLACE_MENTION",
+   "stored_country": "IMN",
+   "outcome": "REMOVED",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [],
+   "region": null,
+   "reason": "no place in the occurrence reports' headlines or leads",
+   "rejected": [
+    [
+     "R-Neb.",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ]
+   ],
+   "mentions": 1,
+   "headline": "Pentagon AI oversight office struggles to keep pace with department’s ambitions, GAO finds"
+  },
+  {
+   "development_id": 821,
+   "set": "suppressed",
+   "stored_verdict": "P",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "stored_country": "PSE",
+   "outcome": "P:NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [],
+   "region": null,
+   "reason": "no place in the occurrence reports' headlines or leads",
+   "rejected": [
+    [
+     "Britain",
+     "ACTOR_POSITION"
+    ],
+    [
+     "-Palestinian",
+     "NON_PLACE"
+    ],
+    [
+     "British",
+     "ACTOR_POSITION"
+    ],
+    [
+     "United Kingdom",
+     "ACTOR_POSITION"
+    ],
+    [
+     "UK",
+     "ACTOR_POSITION"
+    ]
+   ],
+   "mentions": 5,
+   "headline": "Britain’s ban on pro-Palestinian author Sally Rooney makes it a laughing stock"
+  },
+  {
+   "development_id": 827,
+   "set": "suppressed",
+   "stored_verdict": "C",
+   "root_cause": "MISSING_CONTAINMENT",
+   "stored_country": "ITA",
+   "outcome": "PRESERVED",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "place": "rome",
+   "country": "italy",
+   "country_iso": "ITA",
+   "places": [],
+   "region": null,
+   "reason": "one specific place",
+   "rejected": [
+    [
+     "Vatican",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Vatican",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Vatican",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Vatican",
+     "ACTOR_POSITION"
+    ],
+    [
+     "American",
+     "NON_PLACE"
+    ],
+    [
+     "Gemelli",
+     "NON_PLACE"
+    ],
+    [
+     "Vatican",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Uruguay",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Argentina",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Peru",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ]
+   ],
+   "mentions": 11,
+   "headline": "Pope does not need further treatment after lung cancer surgery"
+  },
+  {
+   "development_id": 838,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "NON_PLACE_MENTION",
+   "stored_country": "DEU",
+   "outcome": "REMOVED",
+   "role": "EVENT_PLACE",
+   "confidence": "CONFIRMED_PLACE",
+   "place": "madrid",
+   "country": "spain",
+   "country_iso": "ESP",
+   "places": [],
+   "region": null,
+   "reason": "one specific place",
+   "rejected": [
+    [
+     "Leipzig",
+     "NON_PLACE"
+    ],
+    [
+     "Leipzig",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 4,
+   "headline": "Real Madrid rout RB Leipzig 4-1 to continue perfect Champions League start"
+  },
+  {
+   "development_id": 846,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "AMBIGUOUS_NAME",
+   "stored_country": "MOZ",
+   "outcome": "REMOVED",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "place": "brussels",
+   "country": "belgium",
+   "country_iso": "BEL",
+   "places": [],
+   "region": null,
+   "reason": "one specific place",
+   "rejected": [
+    [
+     "Estados Unidos",
+     "ACTOR_POSITION"
+    ]
+   ],
+   "mentions": 3,
+   "headline": "La Corte penale internazionale vince il premio Sacharov del Pe"
+  },
+  {
+   "development_id": 875,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "FIRST_RESULT_WINS",
+   "stored_country": "USA",
+   "outcome": "REMOVED",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [],
+   "region": null,
+   "reason": "no place in the occurrence reports' headlines or leads",
+   "rejected": [
+    [
+     "Emirati",
+     "ACTOR_POSITION"
+    ],
+    [
+     "United Arab Emirates",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Sudan",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ]
+   ],
+   "mentions": 3,
+   "headline": "Emirati diplomat could become next UN chief despite human rights concerns"
+  },
+  {
+   "development_id": 884,
+   "set": "suppressed",
+   "stored_verdict": "P",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "stored_country": "USA",
+   "outcome": "P:EVENT_PLACE",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "place": "new york",
+   "country": "united states",
+   "country_iso": "USA",
+   "places": [],
+   "region": null,
+   "reason": "one specific place",
+   "rejected": [
+    [
+     "Russia",
+     "ACTOR_POSITION"
+    ],
+    [
+     "US",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Russia",
+     "ACTOR_POSITION"
+    ],
+    [
+     "St. Petersburg",
+     "NON_PLACE"
+    ],
+    [
+     "Sakhalin",
+     "NON_PLACE"
+    ],
+    [
+     "Russian",
+     "ACTOR_POSITION"
+    ],
+    [
+     "US",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Russian",
+     "ACTOR_POSITION"
+    ],
+    [
+     "US",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Russian",
+     "ACTOR_POSITION"
+    ],
+    [
+     "US",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Ukraines",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 21,
+   "headline": "Russia to send first diesel tanker to the US amid Trump deal"
+  },
+  {
+   "development_id": 892,
+   "set": "suppressed",
+   "stored_verdict": "C",
+   "root_cause": "MISSING_ALIAS",
+   "stored_country": "ITA",
+   "outcome": "CHANGED",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "place": null,
+   "country": "vatican",
+   "country_iso": "VAT",
+   "places": [],
+   "region": null,
+   "reason": "country named as the place (L4)",
+   "rejected": [
+    [
+     "Assisi",
+     "NON_PLACE"
+    ],
+    [
+     "American",
+     "NON_PLACE"
+    ],
+    [
+     "Saint John Paul II",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Assisi",
+     "NON_PLACE"
+    ],
+    [
+     "Uruguay",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Argentina",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Peru",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Assisi",
+     "NON_PLACE"
+    ],
+    [
+     "Assisi",
+     "NON_PLACE"
+    ],
+    [
+     "Assisi",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 12,
+   "headline": "Pope cancels October 27 visit to Assisi, 'too soon after surgery'"
+  },
+  {
+   "development_id": 895,
+   "set": "suppressed",
+   "stored_verdict": "P",
+   "root_cause": "INVALID_STORED_PLACE",
+   "stored_country": null,
+   "outcome": "P:NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [],
+   "region": null,
+   "reason": "no place in the occurrence reports' headlines or leads",
+   "rejected": [
+    [
+     "Filipinas",
+     "NON_PLACE"
+    ],
+    [
+     "Filipinas",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ]
+   ],
+   "mentions": 2,
+   "headline": "Meghan Markle dice que fue informada en 2018 de las \"inquietantes acusaciones\" contra su padre por presunta posesión de "
+  },
+  {
+   "development_id": 902,
+   "set": "suppressed",
+   "stored_verdict": "C",
+   "root_cause": "MISSING_ALIAS",
+   "stored_country": "JOR",
+   "outcome": "LOST_TO_NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [],
+   "region": null,
+   "reason": "no place in the occurrence reports' headlines or leads",
+   "rejected": [
+    [
+     "Karak",
+     "NON_PLACE"
+    ],
+    [
+     "Jordania",
+     "NON_PLACE"
+    ],
+    [
+     "Jordania",
+     "NON_PLACE"
+    ],
+    [
+     "Maniobras",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Azraq",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Jordania",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 6,
+   "headline": "Varios muertos y heridos en un tiroteo en una iglesia en la gobernación de Karak (Jordania)"
+  },
+  {
+   "development_id": 910,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "FIRST_RESULT_WINS",
+   "stored_country": "USA",
+   "outcome": "REMOVED",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "place": null,
+   "country": "united arab emirates",
+   "country_iso": "ARE",
+   "places": [],
+   "region": null,
+   "reason": "country named as the place (L4)",
+   "rejected": [],
+   "mentions": 3,
+   "headline": "Oil spill washes up on UAE beaches after tanker strike"
+  },
+  {
+   "development_id": 924,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "REGION_CITY_COLLISION",
+   "stored_country": "USA",
+   "outcome": "REMOVED",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [
+    "gaza",
+    "west bank"
+   ],
+   "region": null,
+   "reason": "several countries, none dominant (L5)",
+   "rejected": [
+    [
+     "Palestinians",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Palestinians",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Israeli",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 5,
+   "headline": "Displaced West Bank Palestinians face growing hunger after UN cuts food aid"
+  },
+  {
+   "development_id": 933,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "stored_country": "UKR",
+   "outcome": "REMOVED",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "place": null,
+   "country": "russia",
+   "country_iso": "RUS",
+   "places": [
+    "Dnipropetrovsk Oblast",
+    "Krasnodar Krai",
+    "Voronezh"
+   ],
+   "region": null,
+   "reason": "several places in one country (U2: country ring, places listed)",
+   "rejected": [
+    [
+     "Ukraine",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Tolyattikauchuk",
+     "NON_PLACE"
+    ],
+    [
+     "Russia",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Ukraine",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Russian",
+     "ACTOR_POSITION"
+    ]
+   ],
+   "mentions": 10,
+   "headline": "Ukraine strikes factory in Russia's Tolyatti, airfield in Krasnodar Krai, General Staff says"
+  },
+  {
+   "development_id": 941,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "WRONG_COUNTRY_MATCH",
+   "stored_country": "FRA",
+   "outcome": "REMOVED",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [],
+   "region": null,
+   "reason": "no place in the occurrence reports' headlines or leads",
+   "rejected": [
+    [
+     "Marsiglia",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 1,
+   "headline": "Smotrich, 'stiamo per demolire edifici abusivi di arabi vicini a luogo attacco'"
+  },
+  {
+   "development_id": 945,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "stored_country": "UKR",
+   "outcome": "REMOVED",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [
+    "bulgaria",
+    "russia",
+    "ukraine"
+   ],
+   "region": null,
+   "reason": "several countries, none dominant (L5)",
+   "rejected": [
+    [
+     "Bulgaria",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Bulgaria",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Ukraine War Domain",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Bulgaria",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Bulgaria",
+     "ACTOR_POSITION"
+    ]
+   ],
+   "mentions": 14,
+   "headline": "Bulgaria holds presidential elections amid divisions over Ukraine war"
+  },
+  {
+   "development_id": 949,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "stored_country": "IRN",
+   "outcome": "REMOVED",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "place": null,
+   "country": "united states",
+   "country_iso": "USA",
+   "places": [
+    "atlanta",
+    "michigan",
+    "ohio"
+   ],
+   "region": null,
+   "reason": "several places in one country (U2: country ring, places listed)",
+   "rejected": [
+    [
+     "US",
+     "ACTOR_POSITION"
+    ],
+    [
+     "US",
+     "ACTOR_POSITION"
+    ],
+    [
+     "US",
+     "ACTOR_POSITION"
+    ],
+    [
+     "US",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Americans",
+     "ACTOR_POSITION"
+    ],
+    [
+     "US",
+     "ACTOR_POSITION"
+    ],
+    [
+     "US",
+     "ACTOR_POSITION"
+    ],
+    [
+     "US",
+     "ACTOR_POSITION"
+    ],
+    [
+     "USA",
+     "ACTOR_POSITION"
+    ],
+    [
+     "US",
+     "ACTOR_POSITION"
+    ]
+   ],
+   "mentions": 23,
+   "headline": "Obama attacks Trump as he campaigns for Democrats ahead of midterm elections"
+  },
+  {
+   "development_id": 952,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "stored_country": "USA",
+   "outcome": "REMOVED",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "place": "budapest",
+   "country": "hungary",
+   "country_iso": "HUN",
+   "places": [],
+   "region": null,
+   "reason": "one specific place",
+   "rejected": [
+    [
+     "Pyongyang",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Pechino",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Mosca",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Washington",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Usa",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Europa",
+     "NON_PLACE"
+    ],
+    [
+     "Russia-Cina",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 16,
+   "headline": "Putin, accusarci per i disordini segno di debolezza e incapacità dei leader europei"
+  },
+  {
+   "development_id": 957,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "stored_country": "IRN",
+   "outcome": "REMOVED",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [
+    "aden",
+    "medina"
+   ],
+   "region": null,
+   "reason": "several places in different countries, none dominant (L5)",
+   "rejected": [
+    [
+     "La Meca",
+     "NON_PLACE"
+    ],
+    [
+     "Yemen",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Riad",
+     "NON_PLACE"
+    ],
+    [
+     "Davos",
+     "NON_PLACE"
+    ],
+    [
+     "Yemen",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Aeropuerto Internacional Rey Jalid",
+     "NON_PLACE"
+    ],
+    [
+     "Yemen",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Riad",
+     "NON_PLACE"
+    ],
+    [
+     "Rey Jalid",
+     "NON_PLACE"
+    ],
+    [
+     "Adén",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Yemen",
+     "ACTOR_POSITION"
+    ]
+   ],
+   "mentions": 18,
+   "headline": "Los hutíes reivindican ataques contra Arabia Saudita, pero niegan tomar como blanco La Meca y Medina"
+  },
+  {
+   "development_id": 958,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "NON_PLACE_MENTION",
+   "stored_country": "MEX",
+   "outcome": "REMOVED",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "place": null,
+   "country": "spain",
+   "country_iso": "ESP",
+   "places": [
+    "Camp Nou",
+    "barcelona"
+   ],
+   "region": null,
+   "reason": "several places in one country (U2: country ring, places listed)",
+   "rejected": [
+    [
+     "La Liga",
+     "NON_PLACE"
+    ],
+    [
+     "El Clasico",
+     "NON_PLACE"
+    ],
+    [
+     "El Clasico",
+     "NON_PLACE"
+    ],
+    [
+     "El Clasico",
+     "NON_PLACE"
+    ],
+    [
+     "La Liga",
+     "NON_PLACE"
+    ],
+    [
+     "Spanish",
+     "NON_PLACE"
+    ],
+    [
+     "La Liga",
+     "NON_PLACE"
+    ],
+    [
+     "French",
+     "NON_PLACE"
+    ],
+    [
+     "Madrid",
+     "ACTOR_POSITION"
+    ],
+    [
+     "FC",
+     "NON_PLACE"
+    ],
+    [
+     "FC Barcelona",
+     "NON_PLACE"
+    ],
+    [
+     "La Liga",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 21,
+   "headline": "Barcelona vs Real Madrid: La Liga – El Clasico preview, predictions, teams"
+  },
+  {
+   "development_id": 961,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "AMBIGUOUS_NAME",
+   "stored_country": "MOZ",
+   "outcome": "REMOVED",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "place": null,
+   "country": "gaza",
+   "country_iso": "PSE",
+   "places": [],
+   "region": null,
+   "reason": "country named as the place (L4)",
+   "rejected": [
+    [
+     "Bakeries",
+     "NON_PLACE"
+    ],
+    [
+     "Egypt",
+     "ACTOR_POSITION"
+    ]
+   ],
+   "mentions": 4,
+   "headline": "Severe hunger stalks people in Gaza as bakeries close down"
+  },
+  {
+   "development_id": 984,
+   "set": "suppressed",
+   "stored_verdict": "P",
+   "root_cause": "WRONG_COUNTRY_MATCH",
+   "stored_country": "USA",
+   "outcome": "P:NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [],
+   "region": null,
+   "reason": "no place in the occurrence reports' headlines or leads",
+   "rejected": [
+    [
+     "Atlantic City",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ]
+   ],
+   "mentions": 1,
+   "headline": "Dem pubblicano testimonianza shock, 'Trump mi violentò brutalmente nel '93'"
+  },
+  {
+   "development_id": 986,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "NON_PLACE_MENTION",
+   "stored_country": "NIC",
+   "outcome": "REMOVED",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "place": null,
+   "country": "united states",
+   "country_iso": "USA",
+   "places": [],
+   "region": null,
+   "reason": "country named as the place (L4)",
+   "rejected": [
+    [
+     "Gobierno",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 2,
+   "headline": "Ex-FBI chief James Comey faces federal charges for third time"
+  },
+  {
+   "development_id": 987,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "stored_country": "UKR",
+   "outcome": "REMOVED",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "place": null,
+   "country": "west bank",
+   "country_iso": "PSE",
+   "places": [],
+   "region": null,
+   "reason": "country named as the place (L4)",
+   "rejected": [
+    [
+     "Occupied Palestinian Territory",
+     "NON_PLACE"
+    ],
+    [
+     "Russian Federation",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Palestinians",
+     "NON_PLACE"
+    ],
+    [
+     "Israeli",
+     "NON_PLACE"
+    ],
+    [
+     "Israeli",
+     "NON_PLACE"
+    ],
+    [
+     "Israeli",
+     "NON_PLACE"
+    ],
+    [
+     "West Bank Videos",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ]
+   ],
+   "mentions": 14,
+   "headline": "UN System ‘Sits Idle While We Fall into Hell’, Special Rapporteur Warns, as ‘Truth in Palestine Is under Attack’"
+  },
+  {
+   "development_id": 1006,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "stored_country": "IRN",
+   "outcome": "REMOVED",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [
+    "British",
+    "Irans"
+   ],
+   "region": null,
+   "reason": "several places in different countries, none dominant (L5)",
+   "rejected": [
+    [
+     "U.K.",
+     "NON_PLACE"
+    ],
+    [
+     "Iranian",
+     "NON_PLACE"
+    ],
+    [
+     "British",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "England",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ]
+   ],
+   "mentions": 11,
+   "headline": "UK prosecutors charge two after RAF Fairford incident"
+  },
+  {
+   "development_id": 1009,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "stored_country": "IRN",
+   "outcome": "REMOVED",
+   "role": "EVENT_PLACE",
+   "confidence": "CONFIRMED_PLACE",
+   "place": "manila",
+   "country": "philippines",
+   "country_iso": "PHL",
+   "places": [
+    "manila",
+    "tokyo"
+   ],
+   "region": null,
+   "reason": "dominant specific place",
+   "rejected": [
+    [
+     "US",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Washington",
+     "ACTOR_POSITION"
+    ],
+    [
+     "China",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Iran",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "US",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Asia-Pacific",
+     "NON_PLACE"
+    ],
+    [
+     "Japanese",
+     "NON_PLACE"
+    ],
+    [
+     "Philippine",
+     "NON_PLACE"
+    ],
+    [
+     "Southeast Asia",
+     "NON_PLACE"
+    ],
+    [
+     "US",
+     "ACTOR_POSITION"
+    ],
+    [
+     "US",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Washington",
+     "ACTOR_POSITION"
+    ]
+   ],
+   "mentions": 34,
+   "headline": "Pentagon chief Hegseth to visit Philippines to meet US allies at Asean events"
+  },
+  {
+   "development_id": 1019,
+   "set": "suppressed",
+   "stored_verdict": "P",
+   "root_cause": "SUPRANATIONAL_REGION",
+   "stored_country": null,
+   "outcome": "P:EVENT_COUNTRY",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "place": null,
+   "country": "bahamas",
+   "country_iso": "BHS",
+   "places": [],
+   "region": null,
+   "reason": "country named as the place (L4)",
+   "rejected": [
+    [
+     "Antigua",
+     "NON_PLACE"
+    ],
+    [
+     "Barbuda",
+     "NON_PLACE"
+    ],
+    [
+     "New Providence",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Antigua",
+     "NON_PLACE"
+    ],
+    [
+     "Barbuda",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 21,
+   "headline": "King Charles confronts calls for slavery apology during Caribbean tour"
+  },
+  {
+   "development_id": 1032,
+   "set": "suppressed",
+   "stored_verdict": "P",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "stored_country": "CHN",
+   "outcome": "P:NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [
+    "beijing",
+    "tokyo"
+   ],
+   "region": null,
+   "reason": "several places in different countries, none dominant (L5)",
+   "rejected": [
+    [
+     "Russian",
+     "NON_PLACE"
+    ],
+    [
+     "US",
+     "ACTOR_POSITION"
+    ],
+    [
+     "American",
+     "ACTOR_POSITION"
+    ],
+    [
+     "US",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Japan",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Chinas",
+     "NON_PLACE"
+    ],
+    [
+     "Japan",
+     "ACTOR_POSITION"
+    ],
+    [
+     "US",
+     "ACTOR_POSITION"
+    ],
+    [
+     "American",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Japanese",
+     "ACTOR_POSITION"
+    ],
+    [
+     "US",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Japan",
+     "ACTOR_POSITION"
+    ]
+   ],
+   "mentions": 23,
+   "headline": "US warns China is expanding its space toolkit with spaceplane and energy weapons"
+  },
+  {
+   "development_id": 1033,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "AMBIGUOUS_NAME",
+   "stored_country": "MOZ",
+   "outcome": "REMOVED",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "place": null,
+   "country": "gaza",
+   "country_iso": "PSE",
+   "places": [],
+   "region": null,
+   "reason": "country named as the place (L4)",
+   "rejected": [
+    [
+     "Palestinians",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 4,
+   "headline": "Gaza: Families brace for fourth winter in tents as aid operations remain stymied"
+  },
+  {
+   "development_id": 1047,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "FIRST_RESULT_WINS",
+   "stored_country": "ARG",
+   "outcome": "REMOVED",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [
+    "bahamas",
+    "guyana",
+    "united states"
+   ],
+   "region": null,
+   "reason": "several countries, none dominant (L5)",
+   "rejected": [
+    [
+     "Caribe",
+     "NON_PLACE"
+    ],
+    [
+     "Pacífico",
+     "NON_PLACE"
+    ],
+    [
+     "Caribe",
+     "NON_PLACE"
+    ],
+    [
+     "Caribe",
+     "NON_PLACE"
+    ],
+    [
+     "Después",
+     "NON_PLACE"
+    ],
+    [
+     "Antigua y Barbuda",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 9,
+   "headline": "Carlos III afronta en su viaje al Caribe protestas por el comercio histórico de esclavos y reclamaciones de reparación"
+  },
+  {
+   "development_id": 1052,
+   "set": "suppressed",
+   "stored_verdict": "P",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "stored_country": "OMN",
+   "outcome": "P:NONE",
+   "role": "NONE",
+   "confidence": "REGION",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [],
+   "region": "strait of hormuz",
+   "reason": "only a sea, strait or region (U3: label, no marker)",
+   "rejected": [
+    [
+     "Hormuz",
+     "NON_PLACE"
+    ],
+    [
+     "UAE",
+     "ACTOR_POSITION"
+    ]
+   ],
+   "mentions": 3,
+   "headline": "Hormuz oil spill forces closure of UAE beaches"
+  },
+  {
+   "development_id": 1066,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "AMBIGUOUS_NAME",
+   "stored_country": "MOZ",
+   "outcome": "REMOVED",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "place": null,
+   "country": "gaza",
+   "country_iso": "PSE",
+   "places": [],
+   "region": null,
+   "reason": "country named as the place (L4)",
+   "rejected": [
+    [
+     "US",
+     "ACTOR_POSITION"
+    ],
+    [
+     "US",
+     "ACTOR_POSITION"
+    ]
+   ],
+   "mentions": 5,
+   "headline": "Former US officials call on 2028 candidates to denounce Biden’s Gaza policy"
+  },
+  {
+   "development_id": 1081,
+   "set": "suppressed",
+   "stored_verdict": "C",
+   "root_cause": "MISSING_CONTAINMENT",
+   "stored_country": "HKG",
+   "outcome": "CHANGED",
+   "role": "EVENT_PLACE",
+   "confidence": "CONFIRMED_PLACE",
+   "place": "hong kong",
+   "country": "china",
+   "country_iso": "CHN",
+   "places": [],
+   "region": null,
+   "reason": "one specific place",
+   "rejected": [],
+   "mentions": 9,
+   "headline": "Housing chief Winnie Ho resigns, government admits ‘decades of failure’ led to Tai Po fire"
+  },
+  {
+   "development_id": 1086,
+   "set": "suppressed",
+   "stored_verdict": "C",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "stored_country": "UKR",
+   "outcome": "PRESERVED",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "place": null,
+   "country": "ukraine",
+   "country_iso": "UKR",
+   "places": [
+    "Russian",
+    "Ukrainian",
+    "dnipro",
+    "kyiv"
+   ],
+   "region": null,
+   "reason": "several places in one country (U2: country ring, places listed)",
+   "rejected": [
+    [
+     "Russia",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Ukrainian",
+     "NON_PLACE"
+    ],
+    [
+     "Russian",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Moscow",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Russian",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Russian",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Darnitsky",
+     "NON_PLACE"
+    ],
+    [
+     "Russia",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Russian",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Russian",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Ukrainian",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 24,
+   "headline": "At least 13 killed in 'horrific' Russian drone strike at Ukraine train station"
+  },
+  {
+   "development_id": 1092,
+   "set": "suppressed",
+   "stored_verdict": "C",
+   "root_cause": "MISSING_ALIAS",
+   "stored_country": "BIH",
+   "outcome": "CHANGED",
+   "role": "EVENT_PLACE",
+   "confidence": "CONFIRMED_PLACE",
+   "place": "Bosnia",
+   "country": null,
+   "country_iso": null,
+   "places": [],
+   "region": null,
+   "reason": "one specific place",
+   "rejected": [
+    [
+     "Brcko",
+     "NON_PLACE"
+    ],
+    [
+     "Brcko",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Brcko",
+     "NON_PLACE"
+    ],
+    [
+     "Brcko",
+     "NON_PLACE"
+    ],
+    [
+     "CH 47 Chinook",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 9,
+   "headline": "Precipita elicottero dell'Eufor in Bosnia, possibili vittime"
+  },
+  {
+   "development_id": 1107,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "NON_PLACE_MENTION",
+   "stored_country": "JPN",
+   "outcome": "REMOVED",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [
+    "el salvador",
+    "peru"
+   ],
+   "region": null,
+   "reason": "several countries, none dominant (L5)",
+   "rejected": [
+    [
+     "Fujimori",
+     "NON_PLACE"
+    ],
+    [
+     "Fujimori",
+     "NON_PLACE"
+    ],
+    [
+     "Fujimori",
+     "NON_PLACE"
+    ],
+    [
+     "Latinoamérica",
+     "NON_PLACE"
+    ],
+    [
+     "Estado",
+     "NON_PLACE"
+    ],
+    [
+     "Gobierno",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ]
+   ],
+   "mentions": 10,
+   "headline": "Perù, Fujimori annuncia il modello carcerario di Bukele per sei nuovi penitenziari"
+  },
+  {
+   "development_id": 1114,
+   "set": "suppressed",
+   "stored_verdict": "P",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "stored_country": "USA",
+   "outcome": "P:EVENT_COUNTRY",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "place": null,
+   "country": "russia",
+   "country_iso": "RUS",
+   "places": [],
+   "region": null,
+   "reason": "country named as the place (L4)",
+   "rejected": [
+    [
+     "Lithuania",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Latvia",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Estonia",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "U.S.",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Ukraine",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Russian",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Estonian",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Moscow",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Americans",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "German",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Belarusians",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ]
+   ],
+   "mentions": 17,
+   "headline": "Pentagon tells Europeans to cool their rhetoric on Russia, sources say"
+  },
+  {
+   "development_id": 1115,
+   "set": "suppressed",
+   "stored_verdict": "P",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "stored_country": "KOR",
+   "outcome": "P:NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [
+    "japan",
+    "south korea"
+   ],
+   "region": null,
+   "reason": "several countries, none dominant (L5)",
+   "rejected": [
+    [
+     "Corea del Norte",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Este",
+     "NON_PLACE"
+    ],
+    [
+     "Seúl",
+     "NON_PLACE"
+    ],
+    [
+     "Corea del Norte",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Seúl",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ]
+   ],
+   "mentions": 7,
+   "headline": "Corea del Norte dispara una decena de misiles balísticos hacia el mar de Japón"
+  },
+  {
+   "development_id": 1120,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "FIRST_RESULT_WINS",
+   "stored_country": "CUB",
+   "outcome": "REMOVED",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [],
+   "region": null,
+   "reason": "no place in the occurrence reports' headlines or leads",
+   "rejected": [
+    [
+     "América Latina",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 1,
+   "headline": "Hackeo a la empresa Binance afecta US$6.300 millones en activos digitales, en el mayor robo de criptomonedas conocido (y"
+  },
+  {
+   "development_id": 1128,
+   "set": "suppressed",
+   "stored_verdict": "C",
+   "root_cause": "MISSING_ALIAS",
+   "stored_country": "GBR",
+   "outcome": "LOST_TO_NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [],
+   "region": null,
+   "reason": "no place in the occurrence reports' headlines or leads",
+   "rejected": [
+    [
+     "Balmoral",
+     "NON_PLACE"
+    ],
+    [
+     "Escocia",
+     "NON_PLACE"
+    ],
+    [
+     "Balmoral",
+     "NON_PLACE"
+    ],
+    [
+     "Famiglia Reale",
+     "NON_PLACE"
+    ],
+    [
+     "Balmoral",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 5,
+   "headline": "Polizia scozzese indaga sui soggiorni di Andrea con Epstein a Balmoral"
+  },
+  {
+   "development_id": 1131,
+   "set": "suppressed",
+   "stored_verdict": "C",
+   "root_cause": "MISSING_CONTAINMENT",
+   "stored_country": "ITA",
+   "outcome": "CHANGED",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "place": null,
+   "country": "united states",
+   "country_iso": "USA",
+   "places": [
+    "chicago",
+    "washington"
+   ],
+   "region": null,
+   "reason": "several places in one country (U2: country ring, places listed)",
+   "rejected": [
+    [
+     "Vaticano",
+     "NON_PLACE"
+    ],
+    [
+     "Vaticano",
+     "NON_PLACE"
+    ],
+    [
+     "Vaticano",
+     "NON_PLACE"
+    ],
+    [
+     "El Vaticano",
+     "NON_PLACE"
+    ],
+    [
+     "Carolina Valladares",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "IA",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 17,
+   "headline": "El Papa pide las papeletas para votar por correo en las elecciones de Estados Unidos"
+  },
+  {
+   "development_id": 1142,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "SUPRANATIONAL_REGION",
+   "stored_country": "TCD",
+   "outcome": "REMOVED",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "place": "durban",
+   "country": "south africa",
+   "country_iso": "ZAF",
+   "places": [],
+   "region": null,
+   "reason": "one specific place",
+   "rejected": [],
+   "mentions": 5,
+   "headline": "Olympic Games: South Africa bids to make Durban host city for 2036 or 2040"
+  },
+  {
+   "development_id": 1145,
+   "set": "suppressed",
+   "stored_verdict": "C",
+   "root_cause": "MISSING_ALIAS",
+   "stored_country": "MAR",
+   "outcome": "LOST_TO_NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [],
+   "region": null,
+   "reason": "no place in the occurrence reports' headlines or leads",
+   "rejected": [
+    [
+     "Sáhara Occidental",
+     "NON_PLACE"
+    ],
+    [
+     "Tinduf",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Argelia",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Sahara",
+     "NON_PLACE"
+    ],
+    [
+     "EE. UU.",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Rusia",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Estados Unidos",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Sáhara Occidental",
+     "NON_PLACE"
+    ],
+    [
+     "Washington",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Rusia",
+     "ACTOR_POSITION"
+    ],
+    [
+     "EE UU",
+     "NON_PLACE"
+    ],
+    [
+     "Sáhara",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 16,
+   "headline": "El Sáhara Occidental afronta en la ONU un futuro de autodeterminación sin referéndum"
+  },
+  {
+   "development_id": 1150,
+   "set": "suppressed",
+   "stored_verdict": "C",
+   "root_cause": "AMBIGUOUS_NAME",
+   "stored_country": "COD",
+   "outcome": "CHANGED",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "place": "DR",
+   "country": null,
+   "country_iso": null,
+   "places": [],
+   "region": null,
+   "reason": "one specific place",
+   "rejected": [
+    [
+     "Democratic Republic of Congo",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 9,
+   "headline": "DR Congo: Hunger deepens for millions amid conflict, Ebola and climate shocks"
+  },
+  {
+   "development_id": 1160,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "SUPRANATIONAL_REGION",
+   "stored_country": null,
+   "outcome": "STILL_WRONG",
+   "role": "NONE",
+   "confidence": "REGION",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [],
+   "region": "caribbean",
+   "reason": "only a sea, strait or region (U3: label, no marker)",
+   "rejected": [
+    [
+     "British",
+     "ACTOR_POSITION"
+    ],
+    [
+     "UK",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Britain",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Caribbean",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Britain",
+     "ACTOR_POSITION"
+    ],
+    [
+     "UK",
+     "ACTOR_POSITION"
+    ],
+    [
+     "UK",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Antigua",
+     "NON_PLACE"
+    ],
+    [
+     "Barbuda",
+     "NON_PLACE"
+    ],
+    [
+     "Caribbean",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ]
+   ],
+   "mentions": 11,
+   "headline": "UK PM Burnham says 'open' to slavery apology but rules out financial reparations"
+  },
+  {
+   "development_id": 1171,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "AMBIGUOUS_NAME",
+   "stored_country": "USA",
+   "outcome": "REMOVED",
+   "role": "NONE",
+   "confidence": "REGION",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [],
+   "region": "gulf",
+   "reason": "only a sea, strait or region (U3: label, no marker)",
+   "rejected": [
+    [
+     "Qatari",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 3,
+   "headline": "Qatar LNG carrier struck by ‘unidentified objects’ in Gulf"
+  },
+  {
+   "development_id": 1172,
+   "set": "suppressed",
+   "stored_verdict": "P",
+   "root_cause": "SUPRANATIONAL_REGION",
+   "stored_country": null,
+   "outcome": "P:EVENT_PLACE",
+   "role": "EVENT_PLACE",
+   "confidence": "CONFIRMED_PLACE",
+   "place": "moscow",
+   "country": "russia",
+   "country_iso": "RUS",
+   "places": [],
+   "region": null,
+   "reason": "one specific place",
+   "rejected": [
+    [
+     "Bulgaria",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Bulgaria",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Bulgaria",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Bulgaria",
+     "ACTOR_POSITION"
+    ]
+   ],
+   "mentions": 13,
+   "headline": "Bulgarians vote in presidential run-off amid Black Sea tensions"
+  },
+  {
+   "development_id": 1177,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "NON_PLACE_MENTION",
+   "stored_country": "ITA",
+   "outcome": "REMOVED",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "place": null,
+   "country": "united states",
+   "country_iso": "USA",
+   "places": [],
+   "region": null,
+   "reason": "country named as the place (L4)",
+   "rejected": [
+    [
+     "Città del Messico",
+     "NON_PLACE"
+    ],
+    [
+     "Paese",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Mideterm",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 4,
+   "headline": "Città del Messico, parata da 1,6 milioni di spettatori per i defunti"
+  },
+  {
+   "development_id": 1182,
+   "set": "suppressed",
+   "stored_verdict": "W",
+   "root_cause": "AMBIGUOUS_NAME",
+   "stored_country": "MOZ",
+   "outcome": "REMOVED",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [
+    "Israeli",
+    "gaza city"
+   ],
+   "region": null,
+   "reason": "several places in different countries, none dominant (L5)",
+   "rejected": [
+    [
+     "Palestinians",
+     "NON_PLACE"
+    ],
+    [
+     "Israeli",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Israel",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Media Gaza",
+     "NON_PLACE"
+    ],
+    [
+     "Idf",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Gaza City",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Palestinians",
+     "NON_PLACE"
+    ],
+    [
+     "Israeli",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Hamás",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Israeli",
+     "ACTOR_POSITION"
+    ]
+   ],
+   "mentions": 20,
+   "headline": "At least four Palestinians killed in Gaza as Israeli attacks continue"
+  },
+  {
+   "development_id": 693,
+   "set": "shown_sample",
+   "stored_verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "stored_country": "MLI",
+   "outcome": "PRESERVED",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "place": null,
+   "country": "mali",
+   "country_iso": "MLI",
+   "places": [],
+   "region": null,
+   "reason": "country named as the place (L4)",
+   "rejected": [
+    [
+     "Malian",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 2,
+   "headline": "Mali’s military and armed groups committing abuses against civilians: HRW"
+  },
+  {
+   "development_id": 79,
+   "set": "shown_sample",
+   "stored_verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "stored_country": "SOM",
+   "outcome": "LOST_TO_NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [],
+   "region": null,
+   "reason": "no place in the occurrence reports' headlines or leads",
+   "rejected": [
+    [
+     "Somali",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Somali",
+     "ACTOR_POSITION"
+    ],
+    [
+     "MT",
+     "NON_PLACE"
+    ],
+    [
+     "Somalia",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Puntland",
+     "NON_PLACE"
+    ],
+    [
+     "Palau",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Somali",
+     "ACTOR_POSITION"
+    ]
+   ],
+   "mentions": 7,
+   "headline": "Somali pirates killed five crew members on hijacked tanker, officials say"
+  },
+  {
+   "development_id": 1191,
+   "set": "shown_sample",
+   "stored_verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "stored_country": "ITA",
+   "outcome": "CHANGED",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "place": "mexico city",
+   "country": "mexico",
+   "country_iso": "MEX",
+   "places": [],
+   "region": null,
+   "reason": "one specific place",
+   "rejected": [
+    [
+     "Italian",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Gran Premio de Ciudad de México",
+     "NON_PLACE"
+    ],
+    [
+     "Italian",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 6,
+   "headline": "Antonelli becomes F1's youngest-ever champ, Italy's first in 73 years"
+  },
+  {
+   "development_id": 456,
+   "set": "shown_sample",
+   "stored_verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "stored_country": "UKR",
+   "outcome": "CHANGED",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "place": "German",
+   "country": null,
+   "country_iso": null,
+   "places": [],
+   "region": null,
+   "reason": "one specific place",
+   "rejected": [
+    [
+     "Ukrainian",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Ukrainian",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Russian",
+     "NON_PLACE"
+    ],
+    [
+     "Ukrainian",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Ukraine",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Ukrainian",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Ukrainian",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Ukrainian",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Ukrainian",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Ukrainian",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Russian",
+     "NON_PLACE"
+    ],
+    [
+     "FRANCE",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ]
+   ],
+   "mentions": 39,
+   "headline": "Last Seen in Crimea: Kyiv Independent documentary investigates Russia's secret detention system for Ukrainian civilians"
+  },
+  {
+   "development_id": 772,
+   "set": "shown_sample",
+   "stored_verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "stored_country": "CHN",
+   "outcome": "LOST_TO_NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [
+    "beijing",
+    "washington"
+   ],
+   "region": null,
+   "reason": "several places in different countries, none dominant (L5)",
+   "rejected": [
+    [
+     "Soviet Union",
+     "NON_PLACE"
+    ],
+    [
+     "Moscow",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ]
+   ],
+   "mentions": 8,
+   "headline": "US, China should learn from Cold War-era arms control to tackle AI risks: ex-US official"
+  },
+  {
+   "development_id": 786,
+   "set": "shown_sample",
+   "stored_verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "stored_country": "UKR",
+   "outcome": "LOST_TO_NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [
+    "Bryansk Oblast",
+    "Starshield",
+    "abu dhabi",
+    "kyiv",
+    "moscow",
+    "washington"
+   ],
+   "region": null,
+   "reason": "several places in different countries, none dominant (L5)",
+   "rejected": [
+    [
+     "Ukraine",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Ukraine",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Ukraine",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Kyivs",
+     "NON_PLACE"
+    ],
+    [
+     "Ukraines",
+     "NON_PLACE"
+    ],
+    [
+     "Ukraines",
+     "NON_PLACE"
+    ],
+    [
+     "Ukraine",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Ukraine",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Ukraines",
+     "NON_PLACE"
+    ],
+    [
+     "Ukraine",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Kyiv",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Ukrainian",
+     "ACTOR_POSITION"
+    ]
+   ],
+   "mentions": 124,
+   "headline": "Musk ordered slowdown of Starlink service Ukraine military relies on, report says"
+  },
+  {
+   "development_id": 202,
+   "set": "shown_sample",
+   "stored_verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "stored_country": "USA",
+   "outcome": "LOST_TO_NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [],
+   "region": null,
+   "reason": "no place in the occurrence reports' headlines or leads",
+   "rejected": [
+    [
+     "United States of America",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "American",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "American",
+     "ACTOR_POSITION"
+    ],
+    [
+     "America",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Russia",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Ukraine",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Nebraska",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "AMERICAN",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Russia",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Ukraine",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "America",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "US",
+     "ACTOR_POSITION"
+    ]
+   ],
+   "mentions": 12,
+   "headline": "President Trump Takes Decisive Action to Lower Diesel Costs for American Truckers, Farmers"
+  },
+  {
+   "development_id": 155,
+   "set": "shown_sample",
+   "stored_verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "stored_country": "YEM",
+   "outcome": "LOST_TO_NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [
+    "aden",
+    "sanaa",
+    "washington"
+   ],
+   "region": null,
+   "reason": "several places in different countries, none dominant (L5)",
+   "rejected": [
+    [
+     "Yemen",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Yemen",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Gobierno de Yemen",
+     "NON_PLACE"
+    ],
+    [
+     "Saná",
+     "NON_PLACE"
+    ],
+    [
+     "Yemen",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Yemen",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Stretto di Bab",
+     "NON_PLACE"
+    ],
+    [
+     "Mar Rosso",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Usa",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Hormuz",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Yemen",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Estado",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 90,
+   "headline": "Forze governative Yemen, ripreso il controllo di Bab el Mandeb"
+  },
+  {
+   "development_id": 503,
+   "set": "shown_sample",
+   "stored_verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "stored_country": "CHN",
+   "outcome": "LOST_TO_NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [],
+   "region": null,
+   "reason": "no place in the occurrence reports' headlines or leads",
+   "rejected": [
+    [
+     "Taiwan",
+     "ACTOR_POSITION"
+    ],
+    [
+     "China",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Pekín",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Taiwán",
+     "ACTOR_POSITION"
+    ],
+    [
+     "China",
+     "ACTOR_POSITION"
+    ],
+    [
+     "China Meridional",
+     "NON_PLACE"
+    ],
+    [
+     "Pratas",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 7,
+   "headline": "Pekín afirma que Taiwán tendrá que \"afrontar las consecuencias\" del uso de cañones de agua contra un buque chino"
+  },
+  {
+   "development_id": 52,
+   "set": "shown_sample",
+   "stored_verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "stored_country": "AUS",
+   "outcome": "LOST_TO_NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [],
+   "region": null,
+   "reason": "no place in the occurrence reports' headlines or leads",
+   "rejected": [
+    [
+     "Sydney",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Australian",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Sydney",
+     "ACTOR_POSITION"
+    ]
+   ],
+   "mentions": 3,
+   "headline": "Plan for controversial Sydney data centre scrapped after push-back"
+  },
+  {
+   "development_id": 937,
+   "set": "shown_sample",
+   "stored_verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "stored_country": "CHN",
+   "outcome": "LOST_TO_NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [
+    "australia",
+    "new zealand"
+   ],
+   "region": null,
+   "reason": "several countries, none dominant (L5)",
+   "rejected": [
+    [
+     "Asia-Pacific AI",
+     "NON_PLACE"
+    ],
+    [
+     "Chinese",
+     "NON_PLACE"
+    ],
+    [
+     "Beijing",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "China",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Hong Kong",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ]
+   ],
+   "mentions": 8,
+   "headline": "Asia-Pacific AI agent market to surge 14-fold to US$11.2 billion by 2030, Omdia says"
+  },
+  {
+   "development_id": 1031,
+   "set": "shown_sample",
+   "stored_verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "stored_country": "CHN",
+   "outcome": "LOST_TO_NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [
+    "beijing",
+    "brussels"
+   ],
+   "region": null,
+   "reason": "several places in different countries, none dominant (L5)",
+   "rejected": [
+    [
+     "Chinese",
+     "NON_PLACE"
+    ],
+    [
+     "Chinese",
+     "NON_PLACE"
+    ],
+    [
+     "Beijing",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ]
+   ],
+   "mentions": 12,
+   "headline": "EU-China hybrid car deal won’t really help European carmakers"
+  },
+  {
+   "development_id": 797,
+   "set": "shown_sample",
+   "stored_verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "stored_country": "JPN",
+   "outcome": "LOST_TO_NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [],
+   "region": null,
+   "reason": "no place in the occurrence reports' headlines or leads",
+   "rejected": [
+    [
+     "Japan",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Japanese",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Japan",
+     "ACTOR_POSITION"
+    ]
+   ],
+   "mentions": 3,
+   "headline": "In Japan, Takaichi’s first-year leadership style threatens hold on power"
+  },
+  {
+   "development_id": 252,
+   "set": "shown_sample",
+   "stored_verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "stored_country": "USA",
+   "outcome": "LOST_TO_NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [],
+   "region": null,
+   "reason": "no place in the occurrence reports' headlines or leads",
+   "rejected": [
+    [
+     "US",
+     "ACTOR_POSITION"
+    ],
+    [
+     "US",
+     "ACTOR_POSITION"
+    ]
+   ],
+   "mentions": 2,
+   "headline": "US firm gets $2.9bn sub deal after boss joins war study with Musk"
+  },
+  {
+   "development_id": 947,
+   "set": "shown_sample",
+   "stored_verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "stored_country": "CHN",
+   "outcome": "CHANGED",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "place": "taipei",
+   "country": "taiwan",
+   "country_iso": "TWN",
+   "places": [],
+   "region": null,
+   "reason": "one specific place",
+   "rejected": [
+    [
+     "Beijing",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Sun Yat",
+     "NON_PLACE"
+    ],
+    [
+     "Beijing",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Japanese",
+     "NON_PLACE"
+    ],
+    [
+     "Mainland China",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Chinese",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ]
+   ],
+   "mentions": 8,
+   "headline": "Beijing commemorates end of Japanese rule over Taiwan with call for reunification"
+  },
+  {
+   "development_id": 1149,
+   "set": "shown_sample",
+   "stored_verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "stored_country": "MAR",
+   "outcome": "CHANGED",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "place": null,
+   "country": "western sahara",
+   "country_iso": "ESH",
+   "places": [],
+   "region": null,
+   "reason": "country named as the place (L4)",
+   "rejected": [],
+   "mentions": 6,
+   "headline": "Following Contentious Debate, Security Council Fails to Adopt Resolution to Extend UN Mission for Referendum in Western "
+  },
+  {
+   "development_id": 491,
+   "set": "shown_sample",
+   "stored_verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "stored_country": "CHN",
+   "outcome": "PRESERVED",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "place": "beijing",
+   "country": "china",
+   "country_iso": "CHN",
+   "places": [],
+   "region": null,
+   "reason": "one specific place",
+   "rejected": [
+    [
+     "Russia",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Moscow",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Chinese",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 9,
+   "headline": "China, Russia deepen maritime and Arctic logistics ties to secure energy supply"
+  },
+  {
+   "development_id": 627,
+   "set": "shown_sample",
+   "stored_verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "stored_country": "ARG",
+   "outcome": "PRESERVED",
+   "role": "EVENT_PLACE",
+   "confidence": "CONFIRMED_PLACE",
+   "place": "buenos aires",
+   "country": "argentina",
+   "country_iso": "ARG",
+   "places": [],
+   "region": null,
+   "reason": "one specific place",
+   "rejected": [
+    [
+     "Argentine",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Argentine",
+     "ACTOR_POSITION"
+    ]
+   ],
+   "mentions": 6,
+   "headline": "Lanci di lacrimogeni e incidenti alla manifestazione per le Università in Argentina"
+  },
+  {
+   "development_id": 755,
+   "set": "shown_sample",
+   "stored_verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "stored_country": "USA",
+   "outcome": "PRESERVED",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "place": "arizona",
+   "country": "united states",
+   "country_iso": "USA",
+   "places": [],
+   "region": null,
+   "reason": "one specific place",
+   "rejected": [
+    [
+     "Yuma County",
+     "NON_PLACE"
+    ],
+    [
+     "Mexican",
+     "NON_PLACE"
+    ],
+    [
+     "France",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ]
+   ],
+   "mentions": 5,
+   "headline": "Midterms 2026: The farmers calling for more migrant workers"
+  },
+  {
+   "development_id": 568,
+   "set": "shown_sample",
+   "stored_verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "stored_country": "LBY",
+   "outcome": "PRESERVED",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "place": "tripoli",
+   "country": "libya",
+   "country_iso": "LBY",
+   "places": [],
+   "region": null,
+   "reason": "one specific place",
+   "rejected": [
+    [
+     "Libyas",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 4,
+   "headline": "Security Council, 10242nd Meeting (AM) Libya"
+  },
+  {
+   "development_id": 242,
+   "set": "shown_sample",
+   "stored_verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "stored_country": "RUS",
+   "outcome": "PRESERVED",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "place": null,
+   "country": "russia",
+   "country_iso": "RUS",
+   "places": [],
+   "region": null,
+   "reason": "country named as the place (L4)",
+   "rejected": [
+    [
+     "Moscow",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Ukraine",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Swiss",
+     "NON_PLACE"
+    ],
+    [
+     "Russia",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Kyiv",
+     "ACTOR_POSITION"
+    ]
+   ],
+   "mentions": 7,
+   "headline": "The price of doing business in Russia"
+  },
+  {
+   "development_id": 978,
+   "set": "shown_sample",
+   "stored_verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "stored_country": "RUS",
+   "outcome": "CHANGED",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "place": null,
+   "country": "ukraine",
+   "country_iso": "UKR",
+   "places": [],
+   "region": null,
+   "reason": "country named as the place (L4)",
+   "rejected": [
+    [
+     "Russia",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Russia",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Russian",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Russia",
+     "ACTOR_POSITION"
+    ]
+   ],
+   "mentions": 7,
+   "headline": "Ukraine: Investigators find Russia committed war crimes by targeting civilians"
+  },
+  {
+   "development_id": 1173,
+   "set": "shown_sample",
+   "stored_verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "stored_country": "ECU",
+   "outcome": "PRESERVED",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "place": null,
+   "country": "ecuador",
+   "country_iso": "ECU",
+   "places": [],
+   "region": null,
+   "reason": "country named as the place (L4)",
+   "rejected": [
+    [
+     "Gobierno de Ecuador",
+     "NON_PLACE"
+    ],
+    [
+     "Guayas",
+     "NON_PLACE"
+    ],
+    [
+     "Playas",
+     "NON_PLACE"
+    ],
+    [
+     "Guayas",
+     "NON_PLACE"
+    ],
+    [
+     "Guayaquil",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 6,
+   "headline": "El Gobierno de Ecuador continúa con los operativos contra autoridades regionales: \"Todos van a rendir cuentas\""
+  },
+  {
+   "development_id": 1101,
+   "set": "shown_sample",
+   "stored_verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "stored_country": "USA",
+   "outcome": "LOST_TO_NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [
+    "england",
+    "los angeles"
+   ],
+   "region": null,
+   "reason": "several places in different countries, none dominant (L5)",
+   "rejected": [
+    [
+     "Paseo de la Fama de Hollywood",
+     "NON_PLACE"
+    ],
+    [
+     "British",
+     "NON_PLACE"
+    ],
+    [
+     "Los Angeles",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ]
+   ],
+   "mentions": 6,
+   "headline": "E' morto Patrick Stewart, l'attore di Star Trek e X-Men"
+  },
+  {
+   "development_id": 732,
+   "set": "shown_sample",
+   "stored_verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "stored_country": "PRT",
+   "outcome": "PRESERVED",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "place": null,
+   "country": "portugal",
+   "country_iso": "PRT",
+   "places": [],
+   "region": null,
+   "reason": "country named as the place (L4)",
+   "rejected": [],
+   "mentions": 3,
+   "headline": "Ronaldo banned for 30 days, fined $285 by Portugal over spat with Jesus"
+  },
+  {
+   "development_id": 234,
+   "set": "shown_sample",
+   "stored_verdict": "P",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "stored_country": "IRN",
+   "outcome": "P:EVENT_COUNTRY",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "place": null,
+   "country": "iran",
+   "country_iso": "IRN",
+   "places": [],
+   "region": null,
+   "reason": "country named as the place (L4)",
+   "rejected": [
+    [
+     "Southeast Asia",
+     "NON_PLACE"
+    ],
+    [
+     "Southeast Asia",
+     "NON_PLACE"
+    ],
+    [
+     "Iran",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ]
+   ],
+   "mentions": 4,
+   "headline": "Southeast Asia’s energy chiefs meet against backdrop of Iran war"
+  },
+  {
+   "development_id": 864,
+   "set": "shown_sample",
+   "stored_verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "stored_country": "SYR",
+   "outcome": "PRESERVED",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "place": null,
+   "country": "syria",
+   "country_iso": "SYR",
+   "places": [
+    "Damascus - Dominican Republic Post",
+    "damascus"
+   ],
+   "region": null,
+   "reason": "several places in one country (U2: country ring, places listed)",
+   "rejected": [
+    [
+     "Syrian",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Syrian",
+     "ACTOR_POSITION"
+    ]
+   ],
+   "mentions": 4,
+   "headline": "Two Syrian security officers killed in raid on ISIL cell near Damascus"
+  },
+  {
+   "development_id": 680,
+   "set": "shown_sample",
+   "stored_verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "stored_country": "LTU",
+   "outcome": "LOST_TO_NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [
+    "German",
+    "moscow",
+    "warsaw"
+   ],
+   "region": null,
+   "reason": "several places in different countries, none dominant (L5)",
+   "rejected": [
+    [
+     "Lithuania",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Russian",
+     "NON_PLACE"
+    ],
+    [
+     "Lithuania",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Lithuania",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Germans",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 13,
+   "headline": "Lithuania foils arson attack on Starlink equipment, suspects Russian involvement"
+  },
+  {
+   "development_id": 496,
+   "set": "shown_sample",
+   "stored_verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "stored_country": "USA",
+   "outcome": "PRESERVED",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "place": null,
+   "country": "united states",
+   "country_iso": "USA",
+   "places": [],
+   "region": null,
+   "reason": "country named as the place (L4)",
+   "rejected": [],
+   "mentions": 3,
+   "headline": "Scientists urge tighter AI controls to prevent global cyber risks"
+  },
+  {
+   "development_id": 691,
+   "set": "shown_sample",
+   "stored_verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "stored_country": "VEN",
+   "outcome": "LOST_TO_NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [],
+   "region": null,
+   "reason": "no place in the occurrence reports' headlines or leads",
+   "rejected": [
+    [
+     "Venezuela",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Venezuela",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Venezuelan",
+     "ACTOR_POSITION"
+    ]
+   ],
+   "mentions": 3,
+   "headline": "Venezuela opposition renews support for Maria Corina Machado as leader"
+  },
+  {
+   "development_id": 982,
+   "set": "shown_sample",
+   "stored_verdict": "W",
+   "root_cause": "WRONG_COUNTRY_MATCH",
+   "stored_country": "USA",
+   "outcome": "REMOVED",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [
+    "peru",
+    "vatican"
+   ],
+   "region": null,
+   "reason": "several countries, none dominant (L5)",
+   "rejected": [
+    [
+     "US",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Uruguay",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Argentina",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Christ",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Montevideo",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Paysandú",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Florida",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Buenos Aires",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Córdoba",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Luján",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "American",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Chiclayo",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ]
+   ],
+   "mentions": 25,
+   "headline": "Pope says happy to return to South America after trip confirmed"
+  },
+  {
+   "development_id": 539,
+   "set": "shown_sample",
+   "stored_verdict": "P",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "stored_country": "IRN",
+   "outcome": "P:EVENT_COUNTRY",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "place": null,
+   "country": "china",
+   "country_iso": "CHN",
+   "places": [],
+   "region": null,
+   "reason": "country named as the place (L4)",
+   "rejected": [
+    [
+     "San Diego",
+     "NON_PLACE"
+    ],
+    [
+     "Iranian",
+     "NON_PLACE"
+    ],
+    [
+     "US",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Washington",
+     "ACTOR_POSITION"
+    ]
+   ],
+   "mentions": 5,
+   "headline": "Hegseth calls US$1.5 trillion defence budget ‘critical’ to counter China"
+  },
+  {
+   "development_id": 723,
+   "set": "shown_sample",
+   "stored_verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "stored_country": "SAU",
+   "outcome": "LOST_TO_NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [
+    "saudi arabia",
+    "united states"
+   ],
+   "region": null,
+   "reason": "several countries, none dominant (L5)",
+   "rejected": [
+    [
+     "Alfozan",
+     "NON_PLACE"
+    ],
+    [
+     "Saudi",
+     "NON_PLACE"
+    ],
+    [
+     "Saudi",
+     "NON_PLACE"
+    ],
+    [
+     "Saudi",
+     "NON_PLACE"
+    ],
+    [
+     "Saudi",
+     "NON_PLACE"
+    ],
+    [
+     "Saudi",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 8,
+   "headline": "Ex-OpenAI worker accused of planting device had Saudi support says court filing"
+  },
+  {
+   "development_id": 388,
+   "set": "shown_sample",
+   "stored_verdict": "W",
+   "root_cause": "CAPITAL_COUNTRY_CONFUSION",
+   "stored_country": "USA",
+   "outcome": "STILL_WRONG",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "place": null,
+   "country": "united states",
+   "country_iso": "USA",
+   "places": [
+    "Arlington County",
+    "virginia"
+   ],
+   "region": null,
+   "reason": "several places in one country (U2: country ring, places listed)",
+   "rejected": [
+    [
+     "DC",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 4,
+   "headline": "Trump’s planned DC arch faces new lawsuit"
+  },
+  {
+   "development_id": 988,
+   "set": "shown_sample",
+   "stored_verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "stored_country": "MEX",
+   "outcome": "PRESERVED",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "place": null,
+   "country": "mexico",
+   "country_iso": "MEX",
+   "places": [],
+   "region": null,
+   "reason": "country named as the place (L4)",
+   "rejected": [],
+   "mentions": 1,
+   "headline": "Messico, stretta sul lavoro nero per le esportazioni agricole"
+  },
+  {
+   "development_id": 249,
+   "set": "shown_sample",
+   "stored_verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "stored_country": "MLI",
+   "outcome": "LOST_TO_NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [
+    "mali",
+    "russia"
+   ],
+   "region": null,
+   "reason": "several countries, none dominant (L5)",
+   "rejected": [
+    [
+     "Kidal",
+     "NON_PLACE"
+    ],
+    [
+     "Malian",
+     "NON_PLACE"
+    ],
+    [
+     "Russian",
+     "NON_PLACE"
+    ],
+    [
+     "Kidal",
+     "NON_PLACE"
+    ],
+    [
+     "Mali - Dominican Republic Post",
+     "NON_PLACE"
+    ],
+    [
+     "Kidal",
+     "NON_PLACE"
+    ],
+    [
+     "Russian",
+     "NON_PLACE"
+    ],
+    [
+     "FRANCE",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ]
+   ],
+   "mentions": 11,
+   "headline": "Tuareg rebels withdraw from strategic town of Kidal in northern Mali"
+  },
+  {
+   "development_id": 666,
+   "set": "shown_sample",
+   "stored_verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "stored_country": "CHN",
+   "outcome": "PRESERVED",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "place": null,
+   "country": "china",
+   "country_iso": "CHN",
+   "places": [],
+   "region": null,
+   "reason": "country named as the place (L4)",
+   "rejected": [
+    [
+     "Chinese",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Gansu",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ]
+   ],
+   "mentions": 3,
+   "headline": "Chinese kindergarten owner given life sentence over lead paint poisoning scandal"
+  },
+  {
+   "development_id": 828,
+   "set": "shown_sample",
+   "stored_verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "stored_country": "USA",
+   "outcome": "LOST_TO_NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "place": null,
+   "country": null,
+   "country_iso": null,
+   "places": [],
+   "region": null,
+   "reason": "no place in the occurrence reports' headlines or leads",
+   "rejected": [
+    [
+     "Iran",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "U.S.",
+     "ACTOR_POSITION"
+    ],
+    [
+     "American",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ]
+   ],
+   "mentions": 3,
+   "headline": "US Air Force outlines the fighter fleet it needs by 2035"
+  },
+  {
+   "development_id": 610,
+   "set": "shown_sample",
+   "stored_verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "stored_country": "USA",
+   "outcome": "PRESERVED",
+   "role": "EVENT_PLACE",
+   "confidence": "CONFIRMED_PLACE",
+   "place": "oregon",
+   "country": "united states",
+   "country_iso": "USA",
+   "places": [],
+   "region": null,
+   "reason": "one specific place",
+   "rejected": [
+    [
+     "Bend",
+     "NON_PLACE"
+    ],
+    [
+     "Silver Rail Elementary School",
+     "NON_PLACE"
+    ],
+    [
+     "Stati",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Bend",
+     "NON_PLACE"
+    ]
+   ],
+   "mentions": 8,
+   "headline": "Polizia Oregon, 'ucciso l'uomo armato nella scuola, ci sono feriti'"
+  },
+  {
+   "development_id": 68,
+   "set": "shown_sample",
+   "stored_verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "stored_country": "IRQ",
+   "outcome": "PRESERVED",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "place": null,
+   "country": "iraq",
+   "country_iso": "IRQ",
+   "places": [
+    "baghdad",
+    "najaf"
+   ],
+   "region": null,
+   "reason": "several places in one country (U2: country ring, places listed)",
+   "rejected": [
+    [
+     "US",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Iraqi",
+     "ACTOR_POSITION"
+    ],
+    [
+     "US",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Iraq",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Iraqi",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Fallujah",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Afghanistan",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Baghdad",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Erbil",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "Middle East",
+     "NOT_IN_HEADLINE_OR_LEAD"
+    ],
+    [
+     "US",
+     "ACTOR_POSITION"
+    ],
+    [
+     "Iraq",
+     "ACTOR_POSITION"
+    ]
+   ],
+   "mentions": 36,
+   "headline": "US forces set to complete withdrawal from Iraq after 2 decades"
+  }
+ ],
+ "acceptance": [
+  {
+   "id": "G01",
+   "development": 65,
+   "depends_on": null,
+   "expected": {
+    "role": "EVENT_PLACE",
+    "place": "Gaza",
+    "country": "PSE",
+    "confidence": "CONFIRMED_PLACE"
+   },
+   "got": {
+    "role": "EVENT_PLACE",
+    "confidence": "PLACE",
+    "place": "gaza city",
+    "country": "palestine",
+    "country_iso": "PSE",
+    "places": [],
+    "region": null,
+    "reason": "one specific place",
+    "rejected": [
+     [
+      "Gaza",
+      "ACTOR_POSITION"
+     ],
+     [
+      "Gaza City’s",
+      "NOT_IN_HEADLINE_OR_LEAD"
+     ],
+     [
+      "Gaza",
+      "ACTOR_POSITION"
+     ]
+    ],
+    "mentions": 8
+   },
+   "checks": {
+    "role": true,
+    "country": true,
+    "confidence": false
+   },
+   "pass": false
+  },
+  {
+   "id": "G02",
+   "development": 35,
+   "depends_on": "U4",
+   "expected": {
+    "role": "EVENT_PLACE",
+    "place": "West Bank",
+    "country": "PSE"
+   },
+   "got": {
+    "role": "EVENT_PLACE",
+    "confidence": "PLACE",
+    "place": "ramallah",
+    "country": "palestine",
+    "country_iso": "PSE",
+    "places": [],
+    "region": null,
+    "reason": "one specific place",
+    "rejected": [
+     [
+      "Netherlands",
+      "ACTOR_POSITION"
+     ],
+     [
+      "East",
+      "NOT_IN_HEADLINE_OR_LEAD"
+     ],
+     [
+      "Britain",
+      "NOT_IN_HEADLINE_OR_LEAD"
+     ],
+     [
+      "London",
+      "NOT_IN_HEADLINE_OR_LEAD"
+     ]
+    ],
+    "mentions": 7
+   },
+   "checks": {
+    "role": true,
+    "country": true
+   },
+   "pass": true
+  },
+  {
+   "id": "G03",
+   "development": 124,
+   "depends_on": null,
+   "expected": {
+    "role": "EVENT_PLACE",
+    "place": "Kyiv",
+    "country": "UKR"
+   },
+   "got": {
+    "role": "EVENT_PLACE",
+    "confidence": "CONFIRMED_PLACE",
+    "place": "kyiv",
+    "country": "ukraine",
+    "country_iso": "UKR",
+    "places": [
+     "Kramatorsk",
+     "Pryluky",
+     "Russian",
+     "Ukraines",
+     "Ukrainian",
+     "brussels",
+     "donetsk",
+     "kharkiv",
+     "kyiv",
+     "moscow",
+     "odesa",
+     "samara",
+     "siberia",
+     "zaporizhzhia"
+    ],
+    "region": null,
+    "reason": "dominant specific place",
+    "rejected": [
+     [
+      "Northern Bridge",
+      "NOT_IN_HEADLINE_OR_LEAD"
+     ],
+     [
+      "German",
+      "NON_PLACE"
+     ],
+     [
+      "the Northern Bridge",
+      "NOT_IN_HEADLINE_OR_LEAD"
+     ],
+     [
+      "European",
+      "NON_PLACE"
+     ],
+     [
+      "the Northern Bridge",
+      "NOT_IN_HEADLINE_OR_LEAD"
+     ],
+     [
+      "German",
+      "NON_PLACE"
+     ],
+     [
+      "German",
+      "NON_PLACE"
+     ],
+     [
+      "German",
+      "NON_PLACE"
+     ],
+     [
+      "Russia",
+      "ACTOR_POSITION"
+     ],
+     [
+      "Russia",
+      "ACTOR_POSITION"
+     ],
+     [
+      "Russia",
+      "ACTOR_POSITION"
+     ],
+     [
+      "Russian",
+      "ACTOR_POSITION"
+     ]
+    ],
+    "mentions": 296
+   },
+   "checks": {
+    "role": true,
+    "country": true
+   },
+   "pass": true
+  },
+  {
+   "id": "G04",
+   "development": 933,
+   "depends_on": "U2",
+   "expected": {
+    "role": "EVENT_COUNTRY",
+    "country": "RUS",
+    "places": [
+     "Tolyatti",
+     "Krasnodar Krai"
+    ]
+   },
+   "got": {
+    "role": "EVENT_COUNTRY",
+    "confidence": "COUNTRY_ONLY",
+    "place": null,
+    "country": "russia",
+    "country_iso": "RUS",
+    "places": [
+     "Dnipropetrovsk Oblast",
+     "Krasnodar Krai",
+     "Voronezh"
+    ],
+    "region": null,
+    "reason": "several places in one country (U2: country ring, places listed)",
+    "rejected": [
+     [
+      "Ukraine",
+      "ACTOR_POSITION"
+     ],
+     [
+      "Tolyattikauchuk",
+      "NON_PLACE"
+     ],
+     [
+      "Russia",
+      "ACTOR_POSITION"
+     ],
+     [
+      "Ukraine",
+      "ACTOR_POSITION"
+     ],
+     [
+      "Russian",
+      "ACTOR_POSITION"
+     ]
+    ],
+    "mentions": 10
+   },
+   "checks": {
+    "role": true,
+    "country": true
+   },
+   "pass": true
+  },
+  {
+   "id": "G04b",
+   "development": 1006,
+   "depends_on": null,
+   "expected": {
+    "role": "EVENT_PLACE",
+    "place": "RAF Fairford",
+    "country": "GBR"
+   },
+   "got": {
+    "role": "NONE",
+    "confidence": "NONE",
+    "place": null,
+    "country": null,
+    "country_iso": null,
+    "places": [
+     "British",
+     "Irans"
+    ],
+    "region": null,
+    "reason": "several places in different countries, none dominant (L5)",
+    "rejected": [
+     [
+      "U.K.",
+      "NON_PLACE"
+     ],
+     [
+      "Iranian",
+      "NON_PLACE"
+     ],
+     [
+      "British",
+      "NOT_IN_HEADLINE_OR_LEAD"
+     ],
+     [
+      "England",
+      "NOT_IN_HEADLINE_OR_LEAD"
+     ]
+    ],
+    "mentions": 11
+   },
+   "checks": {
+    "role": false,
+    "country": false
+   },
+   "pass": false
+  },
+  {
+   "id": "G05",
+   "development": 495,
+   "depends_on": "U4",
+   "expected": {
+    "role": "EVENT_PLACE",
+    "place": "West Bank",
+    "country": "PSE"
+   },
+   "got": {
+    "role": "EVENT_COUNTRY",
+    "confidence": "COUNTRY_ONLY",
+    "place": null,
+    "country": "west bank",
+    "country_iso": "PSE",
+    "places": [],
+    "region": null,
+    "reason": "country named as the place (L4)",
+    "rejected": [
+     [
+      "Palestinians",
+      "ACTOR_POSITION"
+     ],
+     [
+      "Palestinians",
+      "ACTOR_POSITION"
+     ],
+     [
+      "Palestinians",
+      "ACTOR_POSITION"
+     ],
+     [
+      "Israel",
+      "ACTOR_POSITION"
+     ],
+     [
+      "Israelis",
+      "ACTOR_POSITION"
+     ],
+     [
+      "Palestinian",
+      "ACTOR_POSITION"
+     ],
+     [
+      "Israel",
+      "ACTOR_POSITION"
+     ],
+     [
+      "Palestinians",
+      "ACTOR_POSITION"
+     ],
+     [
+      "Palestinian",
+      "ACTOR_POSITION"
+     ],
+     [
+      "Israeli",
+      "ACTOR_POSITION"
+     ],
+     [
+      "Israel",
+      "ACTOR_POSITION"
+     ],
+     [
+      "Palestinian",
+      "ACTOR_POSITION"
+     ]
+    ],
+    "mentions": 21
+   },
+   "checks": {
+    "role": false,
+    "country": true
+   },
+   "pass": false
+  },
+  {
+   "id": "G06",
+   "development": 291,
+   "depends_on": [
+    "U1",
+    "U3"
+   ],
+   "expected": {
+    "role": "NONE",
+    "label": "Black Sea (region)"
+   },
+   "got": {
+    "role": "NONE",
+    "confidence": "REGION",
+    "place": null,
+    "country": null,
+    "country_iso": null,
+    "places": [],
+    "region": "black sea",
+    "reason": "only a sea, strait or region (U3: label, no marker)",
+    "rejected": [],
+    "mentions": 2
+   },
+   "checks": {
+    "role": true
+   },
+   "pass": true
+  },
+  {
+   "id": "G07",
+   "development": 1052,
+   "depends_on": null,
+   "expected": {
+    "role": "EVENT_COUNTRY",
+    "country": "ARE"
+   },
+   "got": {
+    "role": "NONE",
+    "confidence": "REGION",
+    "place": null,
+    "country": null,
+    "country_iso": null,
+    "places": [],
+    "region": "strait of hormuz",
+    "reason": "only a sea, strait or region (U3: label, no marker)",
+    "rejected": [
+     [
+      "Hormuz",
+      "NON_PLACE"
+     ],
+     [
+      "UAE",
+      "ACTOR_POSITION"
+     ]
+    ],
+    "mentions": 3
+   },
+   "checks": {
+    "role": false,
+    "country": false
+   },
+   "pass": false
+  },
+  {
+   "id": "G08",
+   "development": 96,
+   "depends_on": null,
+   "expected": {
+    "role": "EVENT_PLACE",
+    "place": "Hong Kong",
+    "country": "HKG",
+    "frontend": "shown"
+   },
+   "got": {
+    "role": "NONE",
+    "confidence": "NONE",
+    "place": null,
+    "country": null,
+    "country_iso": null,
+    "places": [],
+    "region": null,
+    "reason": "no place in the occurrence reports' headlines or leads",
+    "rejected": [
+     [
+      "Hong Kong",
+      "ACTOR_POSITION"
+     ],
+     [
+      "Hong Kong",
+      "ACTOR_POSITION"
+     ]
+    ],
+    "mentions": 2
+   },
+   "checks": {
+    "role": false,
+    "country": false
+   },
+   "pass": false
+  },
+  {
+   "id": "G09",
+   "development": 747,
+   "depends_on": null,
+   "expected": {
+    "role": "EVENT_PLACE",
+    "place": "Strasbourg",
+    "country": "FRA",
+    "frontend": "shown"
+   },
+   "got": {
+    "role": "EVENT_COUNTRY",
+    "confidence": "COUNTRY_ONLY",
+    "place": null,
+    "country": "united kingdom",
+    "country_iso": "GBR",
+    "places": [],
+    "region": null,
+    "reason": "country named as the place (L4)",
+    "rejected": [
+     [
+      "Strasbourg",
+      "NON_PLACE"
+     ],
+     [
+      "Strasbourg",
+      "NON_PLACE"
+     ]
+    ],
+    "mentions": 3
+   },
+   "checks": {
+    "role": false,
+    "country": false
+   },
+   "pass": false
+  },
+  {
+   "id": "G10",
+   "development": 654,
+   "depends_on": null,
+   "expected": {
+    "role": "NONE"
+   },
+   "got": {
+    "role": "EVENT_PLACE",
+    "confidence": "PLACE",
+    "place": "madrid",
+    "country": "spain",
+    "country_iso": "ESP",
+    "places": [],
+    "region": null,
+    "reason": "one specific place",
+    "rejected": [
+     [
+      "La Liga",
+      "ACTOR_POSITION"
+     ],
+     [
+      "La Liga",
+      "ACTOR_POSITION"
+     ],
+     [
+      "Nazi Germany",
+      "NON_PLACE"
+     ],
+     [
+      "La Liga",
+      "ACTOR_POSITION"
+     ],
+     [
+      "Tebas",
+      "NON_PLACE"
+     ],
+     [
+      "Chamartín",
+      "NOT_IN_HEADLINE_OR_LEAD"
+     ]
+    ],
+    "mentions": 7
+   },
+   "checks": {
+    "role": false
+   },
+   "pass": false
+  },
+  {
+   "id": "G11",
+   "development": 382,
+   "depends_on": null,
+   "expected": {
+    "role": "NONE"
+   },
+   "got": {
+    "role": "EVENT_PLACE",
+    "confidence": "PLACE",
+    "place": "liverpool",
+    "country": "united kingdom",
+    "country_iso": "GBR",
+    "places": [],
+    "region": null,
+    "reason": "one specific place",
+    "rejected": [
+     [
+      "Man City",
+      "NON_PLACE"
+     ],
+     [
+      "Man City",
+      "NON_PLACE"
+     ],
+     [
+      "Manchester City",
+      "NON_PLACE"
+     ],
+     [
+      "Man City",
+      "NON_PLACE"
+     ],
+     [
+      "Manchester City",
+      "NON_PLACE"
+     ]
+    ],
+    "mentions": 7
+   },
+   "checks": {
+    "role": false
+   },
+   "pass": false
+  },
+  {
+   "id": "G12",
+   "development": 449,
+   "depends_on": null,
+   "expected": {
+    "role": "EVENT_COUNTRY",
+    "country": "BRA"
+   },
+   "got": {
+    "role": "EVENT_PLACE",
+    "confidence": "CONFIRMED_PLACE",
+    "place": "miami",
+    "country": "united states",
+    "country_iso": "USA",
+    "places": [
+     "alaska",
+     "anchorage",
+     "beijing",
+     "brasilia",
+     "buenos aires",
+     "california",
+     "ceuta",
+     "florida",
+     "iowa",
+     "kansas",
+     "kyiv",
+     "lima",
+     "louisiana",
+     "miami",
+     "michigan",
+     "moscow",
+     "nashville",
+     "rio de janeiro",
+     "rome",
+     "sao paulo",
+     "south carolina",
+     "sussex",
+     "tel aviv",
+     "tennessee",
+     "texas",
+     "washington"
+    ],
+    "region": null,
+    "reason": "dominant specific place",
+    "rejected": [
+     [
+      "Brazilians",
+      "NON_PLACE"
+     ],
+     [
+      "FRANCE",
+      "NOT_IN_HEADLINE_OR_LEAD"
+     ],
+     [
+      "Brazilian",
+      "NON_PLACE"
+     ],
+     [
+      "Gobierno",
+      "NON_PLACE"
+     ],
+     [
+      "Datafolha",
+      "NON_PLACE"
+     ],
+     [
+      "Brazilian",
+      "NON_PLACE"
+     ],
+     [
+      "PF",
+      "NON_PLACE"
+     ],
+     [
+      "Banco Master",
+      "NOT_IN_HEADLINE_OR_LEAD"
+     ],
+     [
+      "Flávio",
+      "NON_PLACE"
+     ],
+     [
+      "Tensione",
+      "NON_PLACE"
+     ],
+     [
+      "Brazilian",
+      "NON_PLACE"
+     ],
+     [
+      "Flávio",
+      "NON_PLACE"
+     ]
+    ],
+    "mentions": 848
+   },
+   "checks": {
+    "role": false,
+    "country": false
+   },
+   "pass": false
+  },
+  {
+   "id": "G13",
+   "development": 952,
+   "depends_on": "U1",
+   "expected": {
+    "role": "NONE"
+   },
+   "got": {
+    "role": "EVENT_PLACE",
+    "confidence": "PLACE",
+    "place": "budapest",
+    "country": "hungary",
+    "country_iso": "HUN",
+    "places": [],
+    "region": null,
+    "reason": "one specific place",
+    "rejected": [
+     [
+      "Pyongyang",
+      "NOT_IN_HEADLINE_OR_LEAD"
+     ],
+     [
+      "Pechino",
+      "NOT_IN_HEADLINE_OR_LEAD"
+     ],
+     [
+      "Mosca",
+      "NOT_IN_HEADLINE_OR_LEAD"
+     ],
+     [
+      "Washington",
+      "NOT_IN_HEADLINE_OR_LEAD"
+     ],
+     [
+      "Usa",
+      "ACTOR_POSITION"
+     ],
+     [
+      "Europa",
+      "NON_PLACE"
+     ],
+     [
+      "Russia-Cina",
+      "NON_PLACE"
+     ]
+    ],
+    "mentions": 16
+   },
+   "checks": {
+    "role": false
+   },
+   "pass": false
+  },
+  {
+   "id": "G14",
+   "development": 982,
+   "depends_on": [
+    "U1",
+    "U5"
+   ],
+   "expected": {
+    "role": "NONE or EVENT_COUNTRY of the trip's stated destinations"
+   },
+   "got": {
+    "role": "NONE",
+    "confidence": "NONE",
+    "place": null,
+    "country": null,
+    "country_iso": null,
+    "places": [
+     "peru",
+     "vatican"
+    ],
+    "region": null,
+    "reason": "several countries, none dominant (L5)",
+    "rejected": [
+     [
+      "US",
+      "NOT_IN_HEADLINE_OR_LEAD"
+     ],
+     [
+      "Uruguay",
+      "NOT_IN_HEADLINE_OR_LEAD"
+     ],
+     [
+      "Argentina",
+      "NOT_IN_HEADLINE_OR_LEAD"
+     ],
+     [
+      "Christ",
+      "NOT_IN_HEADLINE_OR_LEAD"
+     ],
+     [
+      "Montevideo",
+      "NOT_IN_HEADLINE_OR_LEAD"
+     ],
+     [
+      "Paysandú",
+      "NOT_IN_HEADLINE_OR_LEAD"
+     ],
+     [
+      "Florida",
+      "NOT_IN_HEADLINE_OR_LEAD"
+     ],
+     [
+      "Buenos Aires",
+      "NOT_IN_HEADLINE_OR_LEAD"
+     ],
+     [
+      "Córdoba",
+      "NOT_IN_HEADLINE_OR_LEAD"
+     ],
+     [
+      "Luján",
+      "NOT_IN_HEADLINE_OR_LEAD"
+     ],
+     [
+      "American",
+      "NOT_IN_HEADLINE_OR_LEAD"
+     ],
+     [
+      "Chiclayo",
+      "NOT_IN_HEADLINE_OR_LEAD"
+     ]
+    ],
+    "mentions": 25
+   },
+   "checks": {
+    "role": false
+   },
+   "pass": false
+  },
+  {
+   "id": "G15",
+   "development": 1115,
+   "depends_on": null,
+   "expected": {
+    "role": "EVENT_COUNTRY",
+    "country": "PRK"
+   },
+   "got": {
+    "role": "NONE",
+    "confidence": "NONE",
+    "place": null,
+    "country": null,
+    "country_iso": null,
+    "places": [
+     "japan",
+     "south korea"
+    ],
+    "region": null,
+    "reason": "several countries, none dominant (L5)",
+    "rejected": [
+     [
+      "Corea del Norte",
+      "ACTOR_POSITION"
+     ],
+     [
+      "Este",
+      "NON_PLACE"
+     ],
+     [
+      "Seúl",
+      "NON_PLACE"
+     ],
+     [
+      "Corea del Norte",
+      "ACTOR_POSITION"
+     ],
+     [
+      "Seúl",
+      "NOT_IN_HEADLINE_OR_LEAD"
+     ]
+    ],
+    "mentions": 7
+   },
+   "checks": {
+    "role": false,
+    "country": false
+   },
+   "pass": false
+  }
+ ]
+}
