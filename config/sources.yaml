@@ -309,6 +309,8 @@ rss_feeds:
     credibility_score: 0.7
     priority: 2
     poll_interval: 3600
+    enabled: false
+    access: "feed answers 403 to automated clients (2026-11)"
 
   - name: "CSIS"
     language: en

@@ -53,6 +53,16 @@ def test_one_identity_with_several_feeds_is_one_identity_and_several_endpoints()
     assert "@bellingcat" in {e.source_name for e in inv.configured_endpoints(config)}   # leading @ not doubled
 
 
+def test_lawfare_is_disabled_in_the_shipped_config_with_its_reason():
+    from osint_monitor.collectors import status as S
+    from osint_monitor.processors.pipeline import build_collectors
+    lawfare = next(e for e in inv.configured_endpoints() if e.source_name == "Lawfare")
+    assert inv.gate_status(lawfare.gate, {}) == (
+        False, "disabled in config/sources.yaml: feed answers 403 to automated clients (2026-11)")
+    assert next(c for c in S.configured_collectors() if c["name"] == "Lawfare")["disabled"] is True
+    assert "Lawfare" not in {c.name for c in build_collectors()}
+
+
 def test_credentials_decide_enabled_and_alternative_modes_switch():
     eps = inv.configured_endpoints()
     firms = [e for e in eps if e.collector == "NASAFIRMSCollector"]
@@ -144,8 +154,11 @@ def test_log_evidence_marks_recurrent_errors_without_judging_silence(tmp_path):
     assert evidence["UN Consolidated"].returned == 50 and evidence["X-ForYou"].skip == 1
     db = tmp_path / "copy.db"
     make_db(db, ROWS)
+    config = SourcesFileConfig(                                    # enabled here; the shipped config disables them
+        rss_feeds=[SourceConfig(name="Lawfare", url="https://www.lawfaremedia.org/feed")],
+        twitter_accounts=[TwitterAccountConfig(username="NATO")])
     rows = {r.endpoint.source_name: r for r in inv.build_inventory(
-        inv.configured_endpoints(), inv.read_observations(str(db)), evidence, env={})}
+        inv.configured_endpoints(config), inv.read_observations(str(db)), evidence, env={})}
     assert rows["@NATO"].state == inv.ERRORS and "all Nitter instances failed" in rows["@NATO"].evidence
     assert rows["Lawfare"].state == inv.NO_OBSERVATIONS           # silent, not declared broken
     assert "0 items returned" in rows["Lawfare"].evidence
