@@ -1,0 +1,14 @@
+{
+ "frozen_at": "2026-11-02T15:01:36+00:00",
+ "labels_sha256": "1a66ec001afc3fb31548c9271f56e44ed9dcf9183ec1b4e248d187df0ed0110b",
+ "reviewers": {
+  "owner": 217
+ },
+ "revised_verdicts": 10,
+ "labelling_freeze_sha256": "072bf39e8c035c5259659afa4445ea0c95d1e33c9836b0bba961ff18cba92090",
+ "scoring_inputs": {
+  "key.json": "fa01fe496f40e81adfedd368ee0bdae1004a327a2558a481da0eac3477d072cf",
+  "review-cases.json": "7a452e4964a859e177071db1ebd4e8acc23331dc7e583382515ffbd11ad0a230",
+  "owner-labels.yaml": "1a66ec001afc3fb31548c9271f56e44ed9dcf9183ec1b4e248d187df0ed0110b"
+ }
+}
