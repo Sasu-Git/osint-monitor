@@ -1,0 +1,3921 @@
+{
+ "inputs": {
+  "code_sha": "adacb83e220a733663a0f69ff9a104c6c597bd5e",
+  "db": "C:\\Users\\EugenioVardiero\\osint-monitor\\data\\eval\\snapshot-20261027-forensic.db",
+  "labels_sha256": "1a66ec001afc3fb31548c9271f56e44ed9dcf9183ec1b4e248d187df0ed0110b"
+ },
+ "thresholds": {
+  "link_similarity": 0.53,
+  "min_headline_similarity": 0.5,
+  "location_match": "containment",
+  "use_regions": false
+ },
+ "giants": {
+  "182": {
+   "founders": 5,
+   "founders_with_embedding": 5,
+   "eligible": 5,
+   "core": [
+    3094,
+    3146
+   ],
+   "core_rule": "kernel",
+   "core_titles": [
+    "Israel anunció que mató a 4.000 implicados en la masacre del 7 de octubre: quedan 2.000 prófugos",
+    "Israel asegura que ha matado ya a 4.000 de los 6.000 \"terroristas\" del 7 de octubre de 2023"
+   ]
+  },
+  "397": {
+   "founders": 6,
+   "founders_with_embedding": 6,
+   "eligible": 6,
+   "core": [
+    8341,
+    8598,
+    8450,
+    8496
+   ],
+   "core_rule": "kernel",
+   "core_titles": [
+    "Saudi minister vows 'serious response' to Houthi attacks on airports",
+    "‘These attacks must cease immediately’: Guterres condemns deadly Houthi strike on Riyadh airport",
+    "No, these pictures do not show the Houthi attacks on Riyadh King Khalid Airport",
+    "Houthi missile attack targets Saudi capital Riyadh for third day in a row"
+   ]
+  },
+  "398": {
+   "founders": 7,
+   "founders_with_embedding": 7,
+   "eligible": 7,
+   "core": [
+    8455,
+    8490,
+    8331,
+    8572,
+    8440
+   ],
+   "core_rule": "kernel",
+   "core_titles": [
+    "'Increasingly evident' Russia won't accept 'energy ceasefire': Zelensky",
+    "Trump insists energy ceasefire holds as Ukraine reports new Russian strikes",
+    "Six Ukrainian energy sites hit by Russia since Trump announced ceasefire, Zelensky says",
+    "'We have one refinery' — Zelensky says energy ceasefire must cover power grid, not just oil, as Russia strikes energy facilities across Ukraine",
+    "Trump claims Russia and Ukraine agreed to 'energy ceasefire'"
+   ]
+  },
+  "399": {
+   "founders": 9,
+   "founders_with_embedding": 9,
+   "eligible": 9,
+   "core": [
+    8364,
+    8508
+   ],
+   "core_rule": "kernel",
+   "core_titles": [
+    "Zelensky, almeno due morti questa sera in attacchi russi a Kiev",
+    "Ucraina, Zelensky: «Almeno due morti questa sera in attacchi russi a Kiev»"
+   ]
+  },
+  "449": {
+   "founders": 5,
+   "founders_with_embedding": 5,
+   "eligible": 5,
+   "core": [
+    9375,
+    9406,
+    9295,
+    8355
+   ],
+   "core_rule": "kernel",
+   "core_titles": [
+    "Directo a... Río de Janeiro y las campañas de Lula y Bolsonaro a pocos días de la segunda vuelta",
+    "Mientras lidera las encuestas en Brasil, Flávio Bolsonaro visitó a su padre en prisión domiciliaria",
+    "Flávio Bolsonaro cambia de opinión y anuncia ahora su respaldo a la reducción de la jornada laboral en Brasil",
+    "Brasile, Flávio Bolsonaro annuncia visita al padre dopo tre mesi di stop"
+   ]
+  },
+  "514": {
+   "founders": 2,
+   "founders_with_embedding": 2,
+   "eligible": 2,
+   "core": [
+    8485,
+    10815
+   ],
+   "core_rule": "kernel",
+   "core_titles": [
+    "Despite long history with Netanyahu, Trump hedges as Israel vote nears",
+    "Trump Says He May Endorse Somebody as Netanyahu Faces Pivotal Israeli Election"
+   ]
+  },
+  "626": {
+   "founders": 2,
+   "founders_with_embedding": 2,
+   "eligible": 2,
+   "core": [
+    12402,
+    13666
+   ],
+   "core_rule": "kernel",
+   "core_titles": [
+    "ONE CYRS VIEW: Demonstrations in France have international impact",
+    "France to witness a 'crossroads of anger' as mass protests expected on Saturday"
+   ]
+  },
+  "639": {
+   "founders": 2,
+   "founders_with_embedding": 2,
+   "eligible": 2,
+   "core": [
+    13713,
+    14223
+   ],
+   "core_rule": "kernel",
+   "core_titles": [
+    "Francia vuelve a permitir el uso de granadas aturdidoras de cara a las protestas de este sábado",
+    "Directo París y las movilizaciones convocadas por estudiantes, obreros y otros gremios"
+   ]
+  }
+ },
+ "cases": [
+  {
+   "case": "R003",
+   "event_id": 639,
+   "item": 17947,
+   "reference_item": 13713,
+   "stratum": "Q2",
+   "label": "SAME_OCCURRENCE",
+   "scorable": true,
+   "title": "Qué es el \"efecto bola de nieve\" de la deuda y qué papel tiene en la crítica situación económica que alimenta las protestas en Francia",
+   "rejected": false,
+   "c_sem": true,
+   "c_sem_quorum": "2/2 (need 1)",
+   "c_head": true,
+   "c_head_detail": {
+    "headline_hits": [
+     13713
+    ],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "francia"
+   ],
+   "core_places": [
+    "francia"
+   ]
+  },
+  {
+   "case": "R004",
+   "event_id": 398,
+   "item": 18351,
+   "reference_item": 8440,
+   "stratum": "Q4",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Ukraine talks: What progress after US envoy met with Zelensky?",
+   "rejected": false,
+   "c_sem": true,
+   "c_sem_quorum": "3/5 (need 3)",
+   "c_head": true,
+   "c_head_detail": {
+    "skipped": "analysis"
+   },
+   "c_place": true,
+   "item_places": [
+    "norway",
+    "oslo",
+    "russia",
+    "ukraine",
+    "united states"
+   ],
+   "core_places": [
+    "france",
+    "moscow",
+    "russia",
+    "ukraine",
+    "united states"
+   ]
+  },
+  {
+   "case": "R005",
+   "event_id": 449,
+   "item": 22659,
+   "reference_item": 8355,
+   "stratum": "Q4",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Brasile, Luiz Ignacio Lula da Silva, ottant'anni, conquista il suo quarto mandato presidenziale",
+   "rejected": false,
+   "c_sem": true,
+   "c_sem_quorum": "2/4 (need 2)",
+   "c_head": true,
+   "c_head_detail": {
+    "headline_hits": [
+     9406,
+     9295,
+     8355
+    ],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [],
+   "core_places": [
+    "brasil",
+    "rio de janeiro"
+   ]
+  },
+  {
+   "case": "R006",
+   "event_id": 398,
+   "item": 21092,
+   "reference_item": 8440,
+   "stratum": "Q4",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Russia's attacks on Ukraine's capital, Kyiv, are intensifying. DW asked people on the ground what life is like",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "0/5 (need 3)",
+   "c_head": true,
+   "c_head_detail": {
+    "headline_hits": [
+     8331
+    ],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "kyiv",
+    "russia",
+    "ukraine"
+   ],
+   "core_places": [
+    "france",
+    "moscow",
+    "russia",
+    "ukraine",
+    "united states"
+   ]
+  },
+  {
+   "case": "R008",
+   "event_id": 182,
+   "item": 5380,
+   "reference_item": 2633,
+   "stratum": "Q2",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Israel continues demolishing buildings in Gaza a year after ceasefire",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "0/2 (need 1)",
+   "c_head": false,
+   "c_head_detail": {
+    "headline_hits": [],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "gaza",
+    "gaza strip",
+    "israel",
+    "rafah"
+   ],
+   "core_places": [
+    "franja de gaza",
+    "israel"
+   ]
+  },
+  {
+   "case": "R009",
+   "event_id": 399,
+   "item": 10305,
+   "reference_item": 8426,
+   "stratum": "Q1",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Mosca, bombardate sei centrali elettriche a Kiev e Kharkiv",
+   "rejected": false,
+   "c_sem": true,
+   "c_sem_quorum": "1/2 (need 1)",
+   "c_head": true,
+   "c_head_detail": {
+    "headline_hits": [
+     8364,
+     8508
+    ],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "kharkiv",
+    "kiev",
+    "mosca"
+   ],
+   "core_places": [
+    "kiev",
+    "russia",
+    "ucraina",
+    "united states"
+   ]
+  },
+  {
+   "case": "R010",
+   "event_id": 449,
+   "item": 23196,
+   "reference_item": 8355,
+   "stratum": "Q4",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Claves | La fórmula de Lula para lograr la histórica remontada en tres semanas",
+   "rejected": true,
+   "c_sem": true,
+   "c_sem_quorum": "2/4 (need 2)",
+   "c_head": false,
+   "c_head_detail": {
+    "headline_hits": [],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "são paulo"
+   ],
+   "core_places": [
+    "brasil",
+    "rio de janeiro"
+   ]
+  },
+  {
+   "case": "R012",
+   "event_id": 449,
+   "item": 22986,
+   "reference_item": 8355,
+   "stratum": "Q4",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Videoanálisis | Lula logra parar la racha de victorias derechistas en América Latina",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "0/4 (need 2)",
+   "c_head": false,
+   "c_head_detail": {
+    "headline_hits": [],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "brasil",
+    "videoanálisis | lula"
+   ],
+   "core_places": [
+    "brasil",
+    "rio de janeiro"
+   ]
+  },
+  {
+   "case": "R017",
+   "event_id": 397,
+   "item": 12449,
+   "reference_item": 8598,
+   "stratum": "Q2",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Saudi Arabia intercepts missile in Madinah, Houthis deny attack",
+   "rejected": false,
+   "c_sem": true,
+   "c_sem_quorum": "4/4 (need 2)",
+   "c_head": true,
+   "c_head_detail": {
+    "headline_hits": [
+     8341,
+     8598,
+     8450,
+     8496
+    ],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "madinah",
+    "saudi arabia"
+   ],
+   "core_places": [
+    "king khalid",
+    "king khalid international airport",
+    "riyadh",
+    "saudi arabia"
+   ]
+  },
+  {
+   "case": "R018",
+   "event_id": 182,
+   "item": 6394,
+   "reference_item": 2633,
+   "stratum": "Q4",
+   "label": "SAME_OCCURRENCE",
+   "scorable": true,
+   "title": "Gaza: el panorama en el enclave tres años después de los ataques de Hamas del 7-O",
+   "rejected": false,
+   "c_sem": true,
+   "c_sem_quorum": "1/2 (need 1)",
+   "c_head": true,
+   "c_head_detail": {
+    "headline_hits": [
+     3094,
+     3146
+    ],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "franja de gaza",
+    "gaza",
+    "hamás",
+    "israel"
+   ],
+   "core_places": [
+    "franja de gaza",
+    "israel"
+   ]
+  },
+  {
+   "case": "R019",
+   "event_id": 449,
+   "item": 21259,
+   "reference_item": 8355,
+   "stratum": "Q2",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Brasil decide este domingo entre el continuismo de Lula y la vuelta del bolsonarismo en una cita muy ajustada",
+   "rejected": false,
+   "c_sem": true,
+   "c_sem_quorum": "4/4 (need 2)",
+   "c_head": true,
+   "c_head_detail": {
+    "headline_hits": [
+     9375,
+     9406,
+     9295,
+     8355
+    ],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "brasil"
+   ],
+   "core_places": [
+    "brasil",
+    "rio de janeiro"
+   ]
+  },
+  {
+   "case": "R021",
+   "event_id": 514,
+   "item": 16557,
+   "reference_item": 8485,
+   "stratum": "Q1",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Hegseth visita a las tropas de EEUU en Oriente Próximo tras informaciones de una reunión con Netanyahu en Israel",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "0/2 (need 1)",
+   "c_head": true,
+   "c_head_detail": {
+    "headline_hits": [
+     8485
+    ],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "eeuu",
+    "ejército",
+    "israel"
+   ],
+   "core_places": [
+    "israel",
+    "united states"
+   ]
+  },
+  {
+   "case": "R022",
+   "event_id": 514,
+   "item": 22350,
+   "reference_item": 8485,
+   "stratum": "Q3",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Israele al voto: la sfida politica decisiva tra Netanyahu e Eisenkot",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "0/2 (need 1)",
+   "c_head": true,
+   "c_head_detail": {
+    "headline_hits": [
+     8485
+    ],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "israele"
+   ],
+   "core_places": [
+    "israel",
+    "united states"
+   ]
+  },
+  {
+   "case": "R023",
+   "event_id": 399,
+   "item": 14841,
+   "reference_item": 8426,
+   "stratum": "Q2",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Ucrania, en punto muerto: asediada por Putin y abandonada por Trump",
+   "rejected": true,
+   "c_sem": true,
+   "c_sem_quorum": "1/2 (need 1)",
+   "c_head": false,
+   "c_head_detail": {
+    "headline_hits": [],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "kramatorsk",
+    "ucrania"
+   ],
+   "core_places": [
+    "kiev",
+    "russia",
+    "ucraina",
+    "united states"
+   ]
+  },
+  {
+   "case": "R024",
+   "event_id": 182,
+   "item": 5918,
+   "reference_item": 2633,
+   "stratum": "Q3",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "La BBC entra en Gaza: campos infestados de ratas y miles de niños que necesitan ser evacuados de una zona devastada por la guerra",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "0/2 (need 1)",
+   "c_head": false,
+   "c_head_detail": {
+    "headline_hits": [],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "gaza"
+   ],
+   "core_places": [
+    "franja de gaza",
+    "israel"
+   ]
+  },
+  {
+   "case": "R025",
+   "event_id": 639,
+   "item": 22179,
+   "reference_item": 13713,
+   "stratum": "Q4",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Trump insiste, 'devo decidere se fare un accordo con l'Iran o annientarlo'",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "0/2 (need 1)",
+   "c_head": false,
+   "c_head_detail": {
+    "headline_hits": [],
+    "p7": []
+   },
+   "c_place": false,
+   "item_places": [
+    "iran"
+   ],
+   "core_places": [
+    "francia"
+   ]
+  },
+  {
+   "case": "R027",
+   "event_id": 626,
+   "item": 14999,
+   "reference_item": 12402,
+   "stratum": "Q1",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "'Like we had a war': France left reeling after nationwide violent protests",
+   "rejected": false,
+   "c_sem": true,
+   "c_sem_quorum": "1/2 (need 1)",
+   "c_head": true,
+   "c_head_detail": {
+    "headline_hits": [
+     12402,
+     13666
+    ],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "france"
+   ],
+   "core_places": [
+    "afghanistan",
+    "france"
+   ]
+  },
+  {
+   "case": "R028",
+   "event_id": 514,
+   "item": 19014,
+   "reference_item": 8485,
+   "stratum": "Q2",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Netanyahu says he has ordered IDF and Mossad to overthrow Irans regime",
+   "rejected": true,
+   "c_sem": true,
+   "c_sem_quorum": "1/2 (need 1)",
+   "c_head": true,
+   "c_head_detail": {
+    "headline_hits": [
+     8485,
+     10815
+    ],
+    "p7": []
+   },
+   "c_place": false,
+   "item_places": [
+    "iran"
+   ],
+   "core_places": [
+    "israel",
+    "united states"
+   ]
+  },
+  {
+   "case": "R029",
+   "event_id": 182,
+   "item": 5692,
+   "reference_item": 2633,
+   "stratum": "Q2",
+   "label": "SAME_OCCURRENCE",
+   "scorable": true,
+   "title": "En directo: Israel conmemora tres años de los mortíferos ataques de Hamás del 7 de octubre.",
+   "rejected": false,
+   "c_sem": true,
+   "c_sem_quorum": "2/2 (need 1)",
+   "c_head": true,
+   "c_head_detail": {
+    "headline_hits": [
+     3094,
+     3146
+    ],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "hamás",
+    "israel"
+   ],
+   "core_places": [
+    "franja de gaza",
+    "israel"
+   ]
+  },
+  {
+   "case": "R030",
+   "event_id": 397,
+   "item": 9780,
+   "reference_item": 8598,
+   "stratum": "Q1",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "U.S. Embassy warns Americans about traveling to Saudi Arabia: risk of drone and missile targeting",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "0/4 (need 2)",
+   "c_head": true,
+   "c_head_detail": {
+    "headline_hits": [
+     8341,
+     8496
+    ],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "saudi arabia",
+    "united states"
+   ],
+   "core_places": [
+    "king khalid",
+    "king khalid international airport",
+    "riyadh",
+    "saudi arabia"
+   ]
+  },
+  {
+   "case": "R031",
+   "event_id": 639,
+   "item": 20691,
+   "reference_item": 13713,
+   "stratum": "Q3",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Italia libera ayudas para frenar la huelga de camioneros y refuerza la seguridad ante nuevas protestas",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "0/2 (need 1)",
+   "c_head": true,
+   "c_head_detail": {
+    "headline_hits": [
+     13713
+    ],
+    "p7": []
+   },
+   "c_place": false,
+   "item_places": [
+    "italia",
+    "milan"
+   ],
+   "core_places": [
+    "francia"
+   ]
+  },
+  {
+   "case": "R033",
+   "event_id": 449,
+   "item": 22269,
+   "reference_item": 8355,
+   "stratum": "Q3",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Amnistía Internacional denuncia un uso desproporcionado de la fuerza en el desalojo de acampadas en Portugal",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "1/4 (need 2)",
+   "c_head": true,
+   "c_head_detail": {
+    "headline_hits": [
+     9295
+    ],
+    "p7": []
+   },
+   "c_place": false,
+   "item_places": [
+    "lisboa",
+    "oporto",
+    "portugal"
+   ],
+   "core_places": [
+    "brasil",
+    "rio de janeiro"
+   ]
+  },
+  {
+   "case": "R034",
+   "event_id": 399,
+   "item": 21310,
+   "reference_item": 8426,
+   "stratum": "Q4",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Rusia confirma cumbre en Abu Dabi con EE. UU. y Ucrania; Kiev y Moscú intercambian prisioneros",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "0/2 (need 1)",
+   "c_head": false,
+   "c_head_detail": {
+    "headline_hits": [],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "abu dabi",
+    "ee. uu.",
+    "estados unidos",
+    "kiev",
+    "rusia",
+    "ucrania"
+   ],
+   "core_places": [
+    "kiev",
+    "russia",
+    "ucraina",
+    "united states"
+   ]
+  },
+  {
+   "case": "R038",
+   "event_id": 399,
+   "item": 12938,
+   "reference_item": 8426,
+   "stratum": "Q1",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Trump da marcha atrás: el Pentágono no retransmitirá la ejecución por fusilamiento de Nidal Malik Hasan",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "0/2 (need 1)",
+   "c_head": false,
+   "c_head_detail": {
+    "headline_hits": [],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [],
+   "core_places": [
+    "kiev",
+    "russia",
+    "ucraina",
+    "united states"
+   ]
+  },
+  {
+   "case": "R046",
+   "event_id": 182,
+   "item": 7554,
+   "reference_item": 2633,
+   "stratum": "Q4",
+   "label": "SAME_OCCURRENCE",
+   "scorable": true,
+   "title": "Three years after October 7, prolonged war takes its toll on Israelis",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "0/2 (need 1)",
+   "c_head": false,
+   "c_head_detail": {
+    "headline_hits": [],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "israel"
+   ],
+   "core_places": [
+    "franja de gaza",
+    "israel"
+   ]
+  },
+  {
+   "case": "R047",
+   "event_id": 639,
+   "item": 17574,
+   "reference_item": 13713,
+   "stratum": "Q2",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "\"Quien rompe paga\": Italia crea un nuevo delito y habilita la prisión preventiva para menores tras los graves desórdenes en Milán",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "0/2 (need 1)",
+   "c_head": false,
+   "c_head_detail": {
+    "headline_hits": [],
+    "p7": []
+   },
+   "c_place": false,
+   "item_places": [
+    "italia",
+    "milan"
+   ],
+   "core_places": [
+    "francia"
+   ]
+  },
+  {
+   "case": "R052",
+   "event_id": 626,
+   "item": 18987,
+   "reference_item": 12402,
+   "stratum": "Q3",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Trump exploits France riots to push false immigration claims ahead of midterms",
+   "rejected": false,
+   "c_sem": true,
+   "c_sem_quorum": "1/2 (need 1)",
+   "c_head": true,
+   "c_head_detail": {
+    "headline_hits": [
+     12402,
+     13666
+    ],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "france"
+   ],
+   "core_places": [
+    "afghanistan",
+    "france"
+   ]
+  },
+  {
+   "case": "R053",
+   "event_id": 639,
+   "item": 22499,
+   "reference_item": 13713,
+   "stratum": "Q4",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Ohio y Michigan: el expresidente Obama entra en la batalla por el Senado",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "0/2 (need 1)",
+   "c_head": false,
+   "c_head_detail": {
+    "headline_hits": [],
+    "p7": []
+   },
+   "c_place": false,
+   "item_places": [
+    "estados unidos",
+    "michigan",
+    "ohio"
+   ],
+   "core_places": [
+    "francia"
+   ]
+  },
+  {
+   "case": "R054",
+   "event_id": 397,
+   "item": 16229,
+   "reference_item": 8598,
+   "stratum": "Q3",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Yemen: 25 killed, 30 injured in missile attack on military camp",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "0/4 (need 2)",
+   "c_head": true,
+   "c_head_detail": {
+    "headline_hits": [
+     8496
+    ],
+    "p7": []
+   },
+   "c_place": false,
+   "item_places": [
+    "yemen"
+   ],
+   "core_places": [
+    "king khalid",
+    "king khalid international airport",
+    "riyadh",
+    "saudi arabia"
+   ]
+  },
+  {
+   "case": "R058",
+   "event_id": 182,
+   "item": 3870,
+   "reference_item": 2633,
+   "stratum": "Q1",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Israel warns Gazans will pay 'heavy price' for any October 7 attacks on military",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "0/2 (need 1)",
+   "c_head": true,
+   "c_head_detail": {
+    "headline_hits": [
+     3146
+    ],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "gaza",
+    "israel",
+    "palestine"
+   ],
+   "core_places": [
+    "franja de gaza",
+    "israel"
+   ]
+  },
+  {
+   "case": "R059",
+   "event_id": 626,
+   "item": 22064,
+   "reference_item": 12402,
+   "stratum": "Q4",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "France: 110.000 protesters in Paris",
+   "rejected": false,
+   "c_sem": true,
+   "c_sem_quorum": "1/2 (need 1)",
+   "c_head": true,
+   "c_head_detail": {
+    "headline_hits": [
+     12402,
+     13666
+    ],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "france",
+    "paris"
+   ],
+   "core_places": [
+    "afghanistan",
+    "france"
+   ]
+  },
+  {
+   "case": "R060",
+   "event_id": 397,
+   "item": 19912,
+   "reference_item": 8598,
+   "stratum": "Q4",
+   "label": "SAME_OCCURRENCE",
+   "scorable": true,
+   "title": "Arab News | UN chief condemns Houthi attacks on Saudi Arabia, warns an El Nino of war is hitting worlds poor",
+   "rejected": false,
+   "c_sem": true,
+   "c_sem_quorum": "3/4 (need 2)",
+   "c_head": true,
+   "c_head_detail": {
+    "headline_hits": [
+     8341,
+     8496
+    ],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "saudi arabia"
+   ],
+   "core_places": [
+    "king khalid",
+    "king khalid international airport",
+    "riyadh",
+    "saudi arabia"
+   ]
+  },
+  {
+   "case": "R061",
+   "event_id": 514,
+   "item": 15259,
+   "reference_item": 8485,
+   "stratum": "Q1",
+   "label": "SAME_OCCURRENCE",
+   "scorable": true,
+   "title": "Trump endorses Netanyahu in Israeli legislative elections",
+   "rejected": false,
+   "c_sem": true,
+   "c_sem_quorum": "2/2 (need 1)",
+   "c_head": true,
+   "c_head_detail": {
+    "headline_hits": [
+     8485,
+     10815
+    ],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "israel"
+   ],
+   "core_places": [
+    "israel",
+    "united states"
+   ]
+  },
+  {
+   "case": "R063",
+   "event_id": 514,
+   "item": 23435,
+   "reference_item": 8485,
+   "stratum": "Q4",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "El Comité Electoral de Israel descarta irregularidades en los comicios a pesar de las acusaciones",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "0/2 (need 1)",
+   "c_head": false,
+   "c_head_detail": {
+    "headline_hits": [],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "israel"
+   ],
+   "core_places": [
+    "israel",
+    "united states"
+   ]
+  },
+  {
+   "case": "R068",
+   "event_id": 514,
+   "item": 22049,
+   "reference_item": 8485,
+   "stratum": "Q3",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Netanyahu advierte de un \"segundo holocausto\" con un ataque nuclear sobre Tel Aviv a dos días de las elecciones",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "0/2 (need 1)",
+   "c_head": false,
+   "c_head_detail": {
+    "headline_hits": [],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "ia",
+    "irán",
+    "tel aviv"
+   ],
+   "core_places": [
+    "israel",
+    "united states"
+   ]
+  },
+  {
+   "case": "R069",
+   "event_id": 398,
+   "item": 13545,
+   "reference_item": 8440,
+   "stratum": "Q2",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "General Staff: Russia has lost 1,561,020 troops in Ukraine since Feb. 24, 2022",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "0/5 (need 3)",
+   "c_head": false,
+   "c_head_detail": {
+    "headline_hits": [],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "russia",
+    "ukraine"
+   ],
+   "core_places": [
+    "france",
+    "moscow",
+    "russia",
+    "ukraine",
+    "united states"
+   ]
+  },
+  {
+   "case": "R070",
+   "event_id": 399,
+   "item": 10839,
+   "reference_item": 8426,
+   "stratum": "Q1",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Putin avisa que la economía rusa está bajo graves amenazas informáticas entre nuevos ataques a sus centros de datos",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "0/2 (need 1)",
+   "c_head": false,
+   "c_head_detail": {
+    "headline_hits": [],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [],
+   "core_places": [
+    "kiev",
+    "russia",
+    "ucraina",
+    "united states"
+   ]
+  },
+  {
+   "case": "R071",
+   "event_id": 626,
+   "item": 17100,
+   "reference_item": 12402,
+   "stratum": "Q2",
+   "label": "AMBIGUOUS",
+   "scorable": true,
+   "title": "Midterms: Trump seizes on unrest in France for political gain",
+   "rejected": false,
+   "c_sem": true,
+   "c_sem_quorum": "1/2 (need 1)",
+   "c_head": true,
+   "c_head_detail": {
+    "headline_hits": [
+     12402,
+     13666
+    ],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "france"
+   ],
+   "core_places": [
+    "afghanistan",
+    "france"
+   ]
+  },
+  {
+   "case": "R072",
+   "event_id": 397,
+   "item": 16993,
+   "reference_item": 8598,
+   "stratum": "Q3",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "RAF jets to protect Saudi Arabias skies from Houthi rebels",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "0/4 (need 2)",
+   "c_head": true,
+   "c_head_detail": {
+    "headline_hits": [
+     8341,
+     8496
+    ],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "saudi arabia"
+   ],
+   "core_places": [
+    "king khalid",
+    "king khalid international airport",
+    "riyadh",
+    "saudi arabia"
+   ]
+  },
+  {
+   "case": "R073",
+   "event_id": 398,
+   "item": 13083,
+   "reference_item": 8440,
+   "stratum": "Q2",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "What to know about Starshield and why its disruption rattled Ukraines forces | World",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "0/5 (need 3)",
+   "c_head": true,
+   "c_head_detail": {
+    "skipped": "analysis"
+   },
+   "c_place": true,
+   "item_places": [
+    "starshield",
+    "ukraine"
+   ],
+   "core_places": [
+    "france",
+    "moscow",
+    "russia",
+    "ukraine",
+    "united states"
+   ]
+  },
+  {
+   "case": "R076",
+   "event_id": 639,
+   "item": 15407,
+   "reference_item": 13713,
+   "stratum": "Q1",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Más de 200 detenidos, la mayoría menores, durante una segunda jornada de disturbios y saqueos en Milán",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "0/2 (need 1)",
+   "c_head": true,
+   "c_head_detail": {
+    "headline_hits": [
+     13713,
+     14223
+    ],
+    "p7": []
+   },
+   "c_place": false,
+   "item_places": [
+    "bolonia",
+    "italia",
+    "milan",
+    "turín"
+   ],
+   "core_places": [
+    "francia"
+   ]
+  },
+  {
+   "case": "R078",
+   "event_id": 626,
+   "item": 20392,
+   "reference_item": 12402,
+   "stratum": "Q3",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "French authorities seek to ban protests: Macron to meet students on Friday",
+   "rejected": false,
+   "c_sem": true,
+   "c_sem_quorum": "1/2 (need 1)",
+   "c_head": true,
+   "c_head_detail": {
+    "headline_hits": [
+     12402,
+     13666
+    ],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "france"
+   ],
+   "core_places": [
+    "afghanistan",
+    "france"
+   ]
+  },
+  {
+   "case": "R079",
+   "event_id": 397,
+   "item": 19165,
+   "reference_item": 8598,
+   "stratum": "Q4",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Saudi authorities say 2 killed by falling debris at oil facility following a drone attack in Kingdom",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "0/4 (need 2)",
+   "c_head": false,
+   "c_head_detail": {
+    "headline_hits": [],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "kingdom domain",
+    "saudi arabia"
+   ],
+   "core_places": [
+    "king khalid",
+    "king khalid international airport",
+    "riyadh",
+    "saudi arabia"
+   ]
+  },
+  {
+   "case": "R080",
+   "event_id": 626,
+   "item": 21748,
+   "reference_item": 12402,
+   "stratum": "Q4",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "France: Protests continue while police fire tear gas at demonstrators",
+   "rejected": false,
+   "c_sem": true,
+   "c_sem_quorum": "1/2 (need 1)",
+   "c_head": true,
+   "c_head_detail": {
+    "headline_hits": [
+     12402,
+     13666
+    ],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "bordeaux",
+    "france",
+    "lyon",
+    "marseille",
+    "nantes",
+    "nice",
+    "paris"
+   ],
+   "core_places": [
+    "afghanistan",
+    "france"
+   ]
+  },
+  {
+   "case": "R081",
+   "event_id": 399,
+   "item": 17433,
+   "reference_item": 8426,
+   "stratum": "Q3",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Trump, 'ho chiesto a Putin la liberazione dell'americano Hubbard'",
+   "rejected": true,
+   "c_sem": true,
+   "c_sem_quorum": "1/2 (need 1)",
+   "c_head": false,
+   "c_head_detail": {
+    "headline_hits": [],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "russia",
+    "ucraina"
+   ],
+   "core_places": [
+    "kiev",
+    "russia",
+    "ucraina",
+    "united states"
+   ]
+  },
+  {
+   "case": "R083",
+   "event_id": 397,
+   "item": 10701,
+   "reference_item": 8598,
+   "stratum": "Q1",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Saudi-led coalition intercepts Houthi missile launched towards Riyadh",
+   "rejected": false,
+   "c_sem": true,
+   "c_sem_quorum": "3/4 (need 2)",
+   "c_head": true,
+   "c_head_detail": {
+    "headline_hits": [
+     8341,
+     8598,
+     8450,
+     8496
+    ],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "saudi arabia"
+   ],
+   "core_places": [
+    "king khalid",
+    "king khalid international airport",
+    "riyadh",
+    "saudi arabia"
+   ]
+  },
+  {
+   "case": "R084",
+   "event_id": 449,
+   "item": 10912,
+   "reference_item": 8355,
+   "stratum": "Q1",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Bolsonaro cambia idea, parteciperà al dibattito con Lula su Tv Band",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "0/4 (need 2)",
+   "c_head": true,
+   "c_head_detail": {
+    "headline_hits": [
+     9375,
+     9406,
+     9295,
+     8355
+    ],
+    "p7": [
+     9375,
+     9406
+    ]
+   },
+   "c_place": true,
+   "item_places": [],
+   "core_places": [
+    "brasil",
+    "rio de janeiro"
+   ]
+  },
+  {
+   "case": "R085",
+   "event_id": 639,
+   "item": 18197,
+   "reference_item": 13713,
+   "stratum": "Q2",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Machado pide a la población sumarse a las protestas del jueves para pedir elecciones presidenciales en Venezuela",
+   "rejected": true,
+   "c_sem": true,
+   "c_sem_quorum": "2/2 (need 1)",
+   "c_head": true,
+   "c_head_detail": {
+    "headline_hits": [
+     13713,
+     14223
+    ],
+    "p7": []
+   },
+   "c_place": false,
+   "item_places": [
+    "venezuela"
+   ],
+   "core_places": [
+    "francia"
+   ]
+  },
+  {
+   "case": "R086",
+   "event_id": 398,
+   "item": 17675,
+   "reference_item": 8440,
+   "stratum": "Q3",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "‘I don’t care how it’s done’: Trump pressures Ukraine to cut peace deal",
+   "rejected": false,
+   "c_sem": true,
+   "c_sem_quorum": "3/5 (need 3)",
+   "c_head": true,
+   "c_head_detail": {
+    "headline_hits": [
+     8490,
+     8440
+    ],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "ukraine",
+    "united states"
+   ],
+   "core_places": [
+    "france",
+    "moscow",
+    "russia",
+    "ukraine",
+    "united states"
+   ]
+  },
+  {
+   "case": "R087",
+   "event_id": 397,
+   "item": 12976,
+   "reference_item": 8598,
+   "stratum": "Q2",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "2 killed in explosions near palace used by Yemens government in latest Houthi attack",
+   "rejected": true,
+   "c_sem": true,
+   "c_sem_quorum": "4/4 (need 2)",
+   "c_head": true,
+   "c_head_detail": {
+    "headline_hits": [
+     8341,
+     8598,
+     8450,
+     8496
+    ],
+    "p7": []
+   },
+   "c_place": false,
+   "item_places": [
+    "yemen"
+   ],
+   "core_places": [
+    "king khalid",
+    "king khalid international airport",
+    "riyadh",
+    "saudi arabia"
+   ]
+  },
+  {
+   "case": "R088",
+   "event_id": 182,
+   "item": 6365,
+   "reference_item": 2633,
+   "stratum": "Q4",
+   "label": "AMBIGUOUS",
+   "scorable": true,
+   "title": "Global protests mark October 7 attack with calls for Gaza ceasefire",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "0/2 (need 1)",
+   "c_head": false,
+   "c_head_detail": {
+    "headline_hits": [],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "gaza",
+    "israel",
+    "west bank"
+   ],
+   "core_places": [
+    "franja de gaza",
+    "israel"
+   ]
+  },
+  {
+   "case": "R089",
+   "event_id": 626,
+   "item": 15353,
+   "reference_item": 12402,
+   "stratum": "Q1",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Nothing justifies it: Macron condemns unbridled violence; announces policy reforms, vows action against rioters",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "0/2 (need 1)",
+   "c_head": false,
+   "c_head_detail": {
+    "headline_hits": [],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [],
+   "core_places": [
+    "afghanistan",
+    "france"
+   ]
+  },
+  {
+   "case": "R091",
+   "event_id": 626,
+   "item": 15284,
+   "reference_item": 12402,
+   "stratum": "Q1",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "How will Europe deal with youth-led protests?",
+   "rejected": true,
+   "c_sem": true,
+   "c_sem_quorum": "1/2 (need 1)",
+   "c_head": true,
+   "c_head_detail": {
+    "skipped": "analysis"
+   },
+   "c_place": false,
+   "item_places": [
+    "europe"
+   ],
+   "core_places": [
+    "afghanistan",
+    "france"
+   ]
+  },
+  {
+   "case": "R092",
+   "event_id": 397,
+   "item": 11724,
+   "reference_item": 8598,
+   "stratum": "Q2",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Houthis to build ballistic missiles with more Chinese supplies: report",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "0/4 (need 2)",
+   "c_head": false,
+   "c_head_detail": {
+    "headline_hits": [],
+    "p7": []
+   },
+   "c_place": false,
+   "item_places": [
+    "china"
+   ],
+   "core_places": [
+    "king khalid",
+    "king khalid international airport",
+    "riyadh",
+    "saudi arabia"
+   ]
+  },
+  {
+   "case": "R094",
+   "event_id": 639,
+   "item": 21695,
+   "reference_item": 13713,
+   "stratum": "Q4",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Más de 130 arrestos en Francia donde miles de personas salen a las calles a protestar",
+   "rejected": false,
+   "c_sem": true,
+   "c_sem_quorum": "2/2 (need 1)",
+   "c_head": true,
+   "c_head_detail": {
+    "headline_hits": [
+     13713,
+     14223
+    ],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "francia"
+   ],
+   "core_places": [
+    "francia"
+   ]
+  },
+  {
+   "case": "R095",
+   "event_id": 626,
+   "item": 15691,
+   "reference_item": 12402,
+   "stratum": "Q2",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "🎧 France Reels After Worst Violence in Years",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "0/2 (need 1)",
+   "c_head": false,
+   "c_head_detail": {
+    "headline_hits": [],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [],
+   "core_places": [
+    "afghanistan",
+    "france"
+   ]
+  },
+  {
+   "case": "R099",
+   "event_id": 514,
+   "item": 17521,
+   "reference_item": 8485,
+   "stratum": "Q2",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Hegseth visita Israel por sorpresa y antes de las elecciones, que ya no cuentan con Benny Gantz",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "0/2 (need 1)",
+   "c_head": false,
+   "c_head_detail": {
+    "headline_hits": [],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "irán",
+    "israel",
+    "teherán",
+    "tel aviv"
+   ],
+   "core_places": [
+    "israel",
+    "united states"
+   ]
+  },
+  {
+   "case": "R102",
+   "event_id": 639,
+   "item": 15337,
+   "reference_item": 13713,
+   "stratum": "Q1",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Italia se contagia de las protestas estudiantiles en Francia",
+   "rejected": true,
+   "c_sem": true,
+   "c_sem_quorum": "1/2 (need 1)",
+   "c_head": false,
+   "c_head_detail": {
+    "headline_hits": [],
+    "p7": []
+   },
+   "c_place": false,
+   "item_places": [
+    "italia",
+    "milan"
+   ],
+   "core_places": [
+    "francia"
+   ]
+  },
+  {
+   "case": "R105",
+   "event_id": 398,
+   "item": 9500,
+   "reference_item": 8440,
+   "stratum": "Q1",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Zelenskyy tells NPR Ukraine wants peace but will hit Russia until it follows ceasefire",
+   "rejected": false,
+   "c_sem": true,
+   "c_sem_quorum": "4/5 (need 3)",
+   "c_head": true,
+   "c_head_detail": {
+    "headline_hits": [
+     8455,
+     8490,
+     8331,
+     8572,
+     8440
+    ],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "russia",
+    "ukraine"
+   ],
+   "core_places": [
+    "france",
+    "moscow",
+    "russia",
+    "ukraine",
+    "united states"
+   ]
+  },
+  {
+   "case": "R106",
+   "event_id": 626,
+   "item": 17624,
+   "reference_item": 12402,
+   "stratum": "Q2",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "PSG score late to sink Barcelona 4-2 in Champions League blockbuster",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "0/2 (need 1)",
+   "c_head": false,
+   "c_head_detail": {
+    "headline_hits": [],
+    "p7": []
+   },
+   "c_place": false,
+   "item_places": [
+    "barcelona"
+   ],
+   "core_places": [
+    "afghanistan",
+    "france"
+   ]
+  },
+  {
+   "case": "R108",
+   "event_id": 639,
+   "item": 20019,
+   "reference_item": 13713,
+   "stratum": "Q3",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "La prefectura de París prolonga hasta el lunes el toque de queda en zonas del centro de la capital",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "0/2 (need 1)",
+   "c_head": true,
+   "c_head_detail": {
+    "headline_hits": [
+     14223
+    ],
+    "p7": []
+   },
+   "c_place": false,
+   "item_places": [
+    "la prefectura de policía"
+   ],
+   "core_places": [
+    "francia"
+   ]
+  },
+  {
+   "case": "R110",
+   "event_id": 398,
+   "item": 15025,
+   "reference_item": 8440,
+   "stratum": "Q3",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "US resumes intel sharing on Russian missile launches with Ukraine, Zelensky says",
+   "rejected": true,
+   "c_sem": true,
+   "c_sem_quorum": "3/5 (need 3)",
+   "c_head": false,
+   "c_head_detail": {
+    "headline_hits": [],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "russia",
+    "ukraine",
+    "united states"
+   ],
+   "core_places": [
+    "france",
+    "moscow",
+    "russia",
+    "ukraine",
+    "united states"
+   ]
+  },
+  {
+   "case": "R111",
+   "event_id": 449,
+   "item": 22138,
+   "reference_item": 8355,
+   "stratum": "Q3",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Elecciones en Brasil 2026, EN VIVO: Lula y Flávio Bolsonaro se enfrentan en balotaje por la presidencia este 25 de octubre",
+   "rejected": false,
+   "c_sem": true,
+   "c_sem_quorum": "4/4 (need 2)",
+   "c_head": true,
+   "c_head_detail": {
+    "headline_hits": [
+     9375,
+     9406,
+     9295,
+     8355
+    ],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [],
+   "core_places": [
+    "brasil",
+    "rio de janeiro"
+   ]
+  },
+  {
+   "case": "R112",
+   "event_id": 626,
+   "item": 14777,
+   "reference_item": 12402,
+   "stratum": "Q1",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "France: Protesters clash with police in nationwide protests, amid rising social polarization",
+   "rejected": false,
+   "c_sem": true,
+   "c_sem_quorum": "1/2 (need 1)",
+   "c_head": true,
+   "c_head_detail": {
+    "headline_hits": [
+     12402,
+     13666
+    ],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "france"
+   ],
+   "core_places": [
+    "afghanistan",
+    "france"
+   ]
+  },
+  {
+   "case": "R113",
+   "event_id": 182,
+   "item": 5938,
+   "reference_item": 2633,
+   "stratum": "Q3",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "The mass killing does not mean Israel’s winning",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "0/2 (need 1)",
+   "c_head": false,
+   "c_head_detail": {
+    "headline_hits": [],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "gaza",
+    "israel"
+   ],
+   "core_places": [
+    "franja de gaza",
+    "israel"
+   ]
+  },
+  {
+   "case": "R114",
+   "event_id": 449,
+   "item": 15411,
+   "reference_item": 8355,
+   "stratum": "Q1",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "El Supremo brasileño investiga a Flávio Bolsonaro por sospechas de blanqueo de capitales",
+   "rejected": false,
+   "c_sem": true,
+   "c_sem_quorum": "4/4 (need 2)",
+   "c_head": true,
+   "c_head_detail": {
+    "headline_hits": [
+     9375,
+     9406,
+     9295,
+     8355
+    ],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "banco master",
+    "brasil",
+    "flávio",
+    "pf"
+   ],
+   "core_places": [
+    "brasil",
+    "rio de janeiro"
+   ]
+  },
+  {
+   "case": "R116",
+   "event_id": 399,
+   "item": 15570,
+   "reference_item": 8426,
+   "stratum": "Q3",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Kiev, 'gli alleati non ci hanno avvertito del primo attacco sulla capitale'",
+   "rejected": false,
+   "c_sem": true,
+   "c_sem_quorum": "2/2 (need 1)",
+   "c_head": true,
+   "c_head_detail": {
+    "headline_hits": [
+     8364,
+     8508
+    ],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "kiev"
+   ],
+   "core_places": [
+    "kiev",
+    "russia",
+    "ucraina",
+    "united states"
+   ]
+  },
+  {
+   "case": "R119",
+   "event_id": 398,
+   "item": 23309,
+   "reference_item": 8440,
+   "stratum": "Q4",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "US-Brokered Truce Begins in Ukraine City Occupied by Russia",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "0/5 (need 3)",
+   "c_head": true,
+   "c_head_detail": {
+    "headline_hits": [
+     8490,
+     8440
+    ],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "russia",
+    "ukraine city",
+    "united states"
+   ],
+   "core_places": [
+    "france",
+    "moscow",
+    "russia",
+    "ukraine",
+    "united states"
+   ]
+  },
+  {
+   "case": "R121",
+   "event_id": 626,
+   "item": 21696,
+   "reference_item": 12402,
+   "stratum": "Q4",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "🔴 French protests live: Police say 110,000 turn out for 'calm' Paris march amid reports of clashes in other cities",
+   "rejected": false,
+   "c_sem": true,
+   "c_sem_quorum": "1/2 (need 1)",
+   "c_head": true,
+   "c_head_detail": {
+    "skipped": "rolling"
+   },
+   "c_place": true,
+   "item_places": [
+    "france",
+    "paris"
+   ],
+   "core_places": [
+    "afghanistan",
+    "france"
+   ]
+  },
+  {
+   "case": "R123",
+   "event_id": 514,
+   "item": 19229,
+   "reference_item": 8485,
+   "stratum": "Q2",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Israel: Ben Gvir gana terreno en el norte mientras Netanyahu pierde apoyo",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "0/2 (need 1)",
+   "c_head": false,
+   "c_head_detail": {
+    "headline_hits": [],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "habitantes",
+    "hezbolá",
+    "israel",
+    "kiryat shmona"
+   ],
+   "core_places": [
+    "israel",
+    "united states"
+   ]
+  },
+  {
+   "case": "R124",
+   "event_id": 399,
+   "item": 14005,
+   "reference_item": 8426,
+   "stratum": "Q2",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "El acuerdo de Trump de democracia por diésel nos avergüenza a todos",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "0/2 (need 1)",
+   "c_head": false,
+   "c_head_detail": {
+    "headline_hits": [],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [],
+   "core_places": [
+    "kiev",
+    "russia",
+    "ucraina",
+    "united states"
+   ]
+  },
+  {
+   "case": "R125",
+   "event_id": 626,
+   "item": 18846,
+   "reference_item": 12402,
+   "stratum": "Q3",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Paris shopkeepers fear more destruction after riots destroy livelihoods",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "0/2 (need 1)",
+   "c_head": false,
+   "c_head_detail": {
+    "headline_hits": [],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "paris"
+   ],
+   "core_places": [
+    "afghanistan",
+    "france"
+   ]
+  },
+  {
+   "case": "R126",
+   "event_id": 639,
+   "item": 21934,
+   "reference_item": 13713,
+   "stratum": "Q4",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Marchas masivas en Francia bajo fuerte seguridad: casi mil detenidos y choques en varias ciudades",
+   "rejected": false,
+   "c_sem": true,
+   "c_sem_quorum": "2/2 (need 1)",
+   "c_head": true,
+   "c_head_detail": {
+    "headline_hits": [
+     13713,
+     14223
+    ],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "francia",
+    "lyon",
+    "nantes",
+    "toulouse"
+   ],
+   "core_places": [
+    "francia"
+   ]
+  },
+  {
+   "case": "R127",
+   "event_id": 182,
+   "item": 3734,
+   "reference_item": 2633,
+   "stratum": "Q1",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Israeli documentary NAZA opens in the US, reigniting debate over the war in Gaza",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "0/2 (need 1)",
+   "c_head": false,
+   "c_head_detail": {
+    "headline_hits": [],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "gaza",
+    "israel",
+    "united states"
+   ],
+   "core_places": [
+    "franja de gaza",
+    "israel"
+   ]
+  },
+  {
+   "case": "R128",
+   "event_id": 639,
+   "item": 15541,
+   "reference_item": 13713,
+   "stratum": "Q1",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Macron rechaza la dimisión del ministro del Interior tras las protestas y disturbios del sábado en Francia",
+   "rejected": false,
+   "c_sem": true,
+   "c_sem_quorum": "2/2 (need 1)",
+   "c_head": true,
+   "c_head_detail": {
+    "headline_hits": [
+     13713,
+     14223
+    ],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "francia"
+   ],
+   "core_places": [
+    "francia"
+   ]
+  },
+  {
+   "case": "R129",
+   "event_id": 399,
+   "item": 15270,
+   "reference_item": 8426,
+   "stratum": "Q2",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Zelensky, 'Trump spinge l'Ucraina alla capitolazione di fronte alla Russia'",
+   "rejected": false,
+   "c_sem": true,
+   "c_sem_quorum": "2/2 (need 1)",
+   "c_head": true,
+   "c_head_detail": {
+    "headline_hits": [
+     8364,
+     8508
+    ],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "mosca",
+    "russia",
+    "ucraina"
+   ],
+   "core_places": [
+    "kiev",
+    "russia",
+    "ucraina",
+    "united states"
+   ]
+  },
+  {
+   "case": "R131",
+   "event_id": 399,
+   "item": 20075,
+   "reference_item": 8426,
+   "stratum": "Q4",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Putin, i territori nell'Ucraina orientale sono 'terre storicamente russe'",
+   "rejected": false,
+   "c_sem": true,
+   "c_sem_quorum": "2/2 (need 1)",
+   "c_head": true,
+   "c_head_detail": {
+    "headline_hits": [
+     8364,
+     8508
+    ],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "mosca",
+    "ucraina"
+   ],
+   "core_places": [
+    "kiev",
+    "russia",
+    "ucraina",
+    "united states"
+   ]
+  },
+  {
+   "case": "R132",
+   "event_id": 399,
+   "item": 18272,
+   "reference_item": 8426,
+   "stratum": "Q3",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Rusia detiene a un alemán acusado de combatir como \"mercenario\" del lado de las Fuerzas Armadas de Ucrania",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "0/2 (need 1)",
+   "c_head": true,
+   "c_head_detail": {
+    "headline_hits": [
+     8508
+    ],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "berlin",
+    "rusia",
+    "ucrania"
+   ],
+   "core_places": [
+    "kiev",
+    "russia",
+    "ucraina",
+    "united states"
+   ]
+  },
+  {
+   "case": "R134",
+   "event_id": 397,
+   "item": 10368,
+   "reference_item": 8598,
+   "stratum": "Q1",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "At the mercy of the Houthis: Why Saudi Arabia cannot stop them despite spending $83 billion on defense - The US",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "0/4 (need 2)",
+   "c_head": true,
+   "c_head_detail": {
+    "headline_hits": [
+     8341,
+     8496
+    ],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "saudi arabia",
+    "united states"
+   ],
+   "core_places": [
+    "king khalid",
+    "king khalid international airport",
+    "riyadh",
+    "saudi arabia"
+   ]
+  },
+  {
+   "case": "R136",
+   "event_id": 514,
+   "item": 23367,
+   "reference_item": 8485,
+   "stratum": "Q4",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Israele al voto, viaggio nei seggi tra manifestazioni e minuti di silenzio",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "0/2 (need 1)",
+   "c_head": false,
+   "c_head_detail": {
+    "headline_hits": [],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "israele"
+   ],
+   "core_places": [
+    "israel",
+    "united states"
+   ]
+  },
+  {
+   "case": "R137",
+   "event_id": 514,
+   "item": 22749,
+   "reference_item": 8485,
+   "stratum": "Q4",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Domani Israele alle urne, si vota dalle 7 alle 22 ora locale",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "0/2 (need 1)",
+   "c_head": false,
+   "c_head_detail": {
+    "headline_hits": [],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "israele"
+   ],
+   "core_places": [
+    "israel",
+    "united states"
+   ]
+  },
+  {
+   "case": "R139",
+   "event_id": 514,
+   "item": 18751,
+   "reference_item": 8485,
+   "stratum": "Q2",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Netanyahu insiste en que \"hay que derrocar al régimen de Irán\": \"Mojtaba Jamenei sigue los pasos de su padre\"",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "0/2 (need 1)",
+   "c_head": false,
+   "c_head_detail": {
+    "headline_hits": [],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "irán",
+    "israel"
+   ],
+   "core_places": [
+    "israel",
+    "united states"
+   ]
+  },
+  {
+   "case": "R141",
+   "event_id": 639,
+   "item": 19929,
+   "reference_item": 13713,
+   "stratum": "Q3",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Las autoridades de Lyon y Marsella prohíben todas las protestas para el sábado",
+   "rejected": false,
+   "c_sem": true,
+   "c_sem_quorum": "1/2 (need 1)",
+   "c_head": true,
+   "c_head_detail": {
+    "headline_hits": [
+     13713
+    ],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "lyon",
+    "marsella"
+   ],
+   "core_places": [
+    "francia"
+   ]
+  },
+  {
+   "case": "R142",
+   "event_id": 398,
+   "item": 10515,
+   "reference_item": 8440,
+   "stratum": "Q1",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Ukraine reports Russian attacks with no warnings, Trump says US still sharing intel",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "1/5 (need 3)",
+   "c_head": true,
+   "c_head_detail": {
+    "headline_hits": [
+     8490,
+     8331,
+     8440
+    ],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "kyiv",
+    "russia",
+    "ukraine",
+    "united states",
+    "washington"
+   ],
+   "core_places": [
+    "france",
+    "moscow",
+    "russia",
+    "ukraine",
+    "united states"
+   ]
+  },
+  {
+   "case": "R143",
+   "event_id": 398,
+   "item": 13641,
+   "reference_item": 8440,
+   "stratum": "Q2",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Zelensky rallies EU support as Trump says Ukraine leader 'more difficult to deal with than Putin'",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "2/5 (need 3)",
+   "c_head": true,
+   "c_head_detail": {
+    "headline_hits": [
+     8455,
+     8331
+    ],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "brussels",
+    "ukraine",
+    "united states"
+   ],
+   "core_places": [
+    "france",
+    "moscow",
+    "russia",
+    "ukraine",
+    "united states"
+   ]
+  },
+  {
+   "case": "R144",
+   "event_id": 397,
+   "item": 11720,
+   "reference_item": 8598,
+   "stratum": "Q2",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Yemeni army says 200 Houthis killed, wounded in clashes in Taiz",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "0/4 (need 2)",
+   "c_head": false,
+   "c_head_detail": {
+    "headline_hits": [],
+    "p7": []
+   },
+   "c_place": false,
+   "item_places": [
+    "taiz domain",
+    "yemen"
+   ],
+   "core_places": [
+    "king khalid",
+    "king khalid international airport",
+    "riyadh",
+    "saudi arabia"
+   ]
+  },
+  {
+   "case": "R146",
+   "event_id": 514,
+   "item": 15243,
+   "reference_item": 8485,
+   "stratum": "Q1",
+   "label": "SAME_OCCURRENCE",
+   "scorable": true,
+   "title": "Trump wades into Israels election to back ally Netanyahu",
+   "rejected": false,
+   "c_sem": true,
+   "c_sem_quorum": "2/2 (need 1)",
+   "c_head": true,
+   "c_head_detail": {
+    "headline_hits": [
+     8485,
+     10815
+    ],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "israel"
+   ],
+   "core_places": [
+    "israel",
+    "united states"
+   ]
+  },
+  {
+   "case": "R147",
+   "event_id": 514,
+   "item": 11764,
+   "reference_item": 8485,
+   "stratum": "Q1",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Former Israeli security chief sues Netanyahu for Oct 7 defamation",
+   "rejected": false,
+   "c_sem": true,
+   "c_sem_quorum": "1/2 (need 1)",
+   "c_head": true,
+   "c_head_detail": {
+    "headline_hits": [
+     8485,
+     10815
+    ],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "israel"
+   ],
+   "core_places": [
+    "israel",
+    "united states"
+   ]
+  },
+  {
+   "case": "R148",
+   "event_id": 182,
+   "item": 6600,
+   "reference_item": 2633,
+   "stratum": "Q4",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Israel pone fin a la actividad del Consulado Británico en Jerusalén y veta la entrada a altos cargos por \"antisemitas\"",
+   "rejected": false,
+   "c_sem": true,
+   "c_sem_quorum": "1/2 (need 1)",
+   "c_head": true,
+   "c_head_detail": {
+    "headline_hits": [
+     3094,
+     3146
+    ],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "israel",
+    "jerusalén",
+    "londres"
+   ],
+   "core_places": [
+    "franja de gaza",
+    "israel"
+   ]
+  },
+  {
+   "case": "R149",
+   "event_id": 398,
+   "item": 17157,
+   "reference_item": 8440,
+   "stratum": "Q3",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Russian drones strike Kyiv hospital, injure 5 across the city",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "0/5 (need 3)",
+   "c_head": false,
+   "c_head_detail": {
+    "headline_hits": [],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "kyiv",
+    "russia",
+    "ukraine"
+   ],
+   "core_places": [
+    "france",
+    "moscow",
+    "russia",
+    "ukraine",
+    "united states"
+   ]
+  },
+  {
+   "case": "R150",
+   "event_id": 397,
+   "item": 9913,
+   "reference_item": 8598,
+   "stratum": "Q1",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Arab News | Four injured by shrapnel after Houthi missiles shot down in Riyadh",
+   "rejected": false,
+   "c_sem": true,
+   "c_sem_quorum": "4/4 (need 2)",
+   "c_head": true,
+   "c_head_detail": {
+    "headline_hits": [
+     8598,
+     8450,
+     8496
+    ],
+    "p7": [
+     8341
+    ]
+   },
+   "c_place": true,
+   "item_places": [
+    "riyadh"
+   ],
+   "core_places": [
+    "king khalid",
+    "king khalid international airport",
+    "riyadh",
+    "saudi arabia"
+   ]
+  },
+  {
+   "case": "R151",
+   "event_id": 182,
+   "item": 5685,
+   "reference_item": 2633,
+   "stratum": "Q3",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Israelis are split over Netanyahu in their first elections since Oct. 7 – KTBB News, Weather, Talk",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "0/2 (need 1)",
+   "c_head": false,
+   "c_head_detail": {
+    "headline_hits": [],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "israel",
+    "weather"
+   ],
+   "core_places": [
+    "franja de gaza",
+    "israel"
+   ]
+  },
+  {
+   "case": "R153",
+   "event_id": 182,
+   "item": 5790,
+   "reference_item": 2633,
+   "stratum": "Q2",
+   "label": "SAME_OCCURRENCE",
+   "scorable": true,
+   "title": "Israel marks 3 years since Hamas attack with no hostages in Gaza",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "0/2 (need 1)",
+   "c_head": false,
+   "c_head_detail": {
+    "headline_hits": [],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "gaza",
+    "israel"
+   ],
+   "core_places": [
+    "franja de gaza",
+    "israel"
+   ]
+  },
+  {
+   "case": "R157",
+   "event_id": 397,
+   "item": 21181,
+   "reference_item": 8598,
+   "stratum": "Q4",
+   "label": "SAME_OCCURRENCE",
+   "scorable": true,
+   "title": "Time ‘running out’ to reach Yemen’s Taiz amid deepening crisis, UN says",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "0/4 (need 2)",
+   "c_head": false,
+   "c_head_detail": {
+    "headline_hits": [],
+    "p7": []
+   },
+   "c_place": false,
+   "item_places": [
+    "yemen"
+   ],
+   "core_places": [
+    "king khalid",
+    "king khalid international airport",
+    "riyadh",
+    "saudi arabia"
+   ]
+  },
+  {
+   "case": "R158",
+   "event_id": 399,
+   "item": 12747,
+   "reference_item": 8426,
+   "stratum": "Q1",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "En Londres, Zelenski rompe el silencio y revela cómo el acuerdo entre Putin y Trump por el diésel redibuja la guerra en Ucrania",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "0/2 (need 1)",
+   "c_head": false,
+   "c_head_detail": {
+    "headline_hits": [],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "estados unidos",
+    "londres",
+    "ucrania",
+    "zelenski"
+   ],
+   "core_places": [
+    "kiev",
+    "russia",
+    "ucraina",
+    "united states"
+   ]
+  },
+  {
+   "case": "R159",
+   "event_id": 639,
+   "item": 21279,
+   "reference_item": 13713,
+   "stratum": "Q3",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Protests against cost of living expected in Italy under heavy security",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "0/2 (need 1)",
+   "c_head": false,
+   "c_head_detail": {
+    "headline_hits": [],
+    "p7": []
+   },
+   "c_place": false,
+   "item_places": [
+    "italy",
+    "milan",
+    "rome"
+   ],
+   "core_places": [
+    "francia"
+   ]
+  },
+  {
+   "case": "R160",
+   "event_id": 399,
+   "item": 19437,
+   "reference_item": 8426,
+   "stratum": "Q4",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Rusia golpea Kiev con varias oleadas de misiles balísticos unas horas después de la propuesta ucrania de negociación",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "0/2 (need 1)",
+   "c_head": false,
+   "c_head_detail": {
+    "headline_hits": [],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "kiev",
+    "rusia"
+   ],
+   "core_places": [
+    "kiev",
+    "russia",
+    "ucraina",
+    "united states"
+   ]
+  },
+  {
+   "case": "R161",
+   "event_id": 399,
+   "item": 13234,
+   "reference_item": 8426,
+   "stratum": "Q2",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Droni russi su Sepetivka, brucia un deposito di petrolio",
+   "rejected": true,
+   "c_sem": true,
+   "c_sem_quorum": "1/2 (need 1)",
+   "c_head": false,
+   "c_head_detail": {
+    "headline_hits": [],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "ucraina"
+   ],
+   "core_places": [
+    "kiev",
+    "russia",
+    "ucraina",
+    "united states"
+   ]
+  },
+  {
+   "case": "R162",
+   "event_id": 639,
+   "item": 18481,
+   "reference_item": 13713,
+   "stratum": "Q2",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "No se permitirá a quienes busquen sembrar el caos, afirma Macron de cara a las protestas del sábado",
+   "rejected": true,
+   "c_sem": true,
+   "c_sem_quorum": "2/2 (need 1)",
+   "c_head": true,
+   "c_head_detail": {
+    "headline_hits": [
+     13713
+    ],
+    "p7": []
+   },
+   "c_place": false,
+   "item_places": [
+    "qatar"
+   ],
+   "core_places": [
+    "francia"
+   ]
+  },
+  {
+   "case": "R163",
+   "event_id": 449,
+   "item": 22485,
+   "reference_item": 8355,
+   "stratum": "Q3",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Dalla fabbrica a quattro presidenze, l’epopea di Lula: l'uomo delle rimonte",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "1/4 (need 2)",
+   "c_head": false,
+   "c_head_detail": {
+    "headline_hits": [],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [],
+   "core_places": [
+    "brasil",
+    "rio de janeiro"
+   ]
+  },
+  {
+   "case": "R164",
+   "event_id": 397,
+   "item": 18691,
+   "reference_item": 8598,
+   "stratum": "Q4",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Besieged Yemeni city on verge of unmanageable crisis, aid workers warn",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "0/4 (need 2)",
+   "c_head": false,
+   "c_head_detail": {
+    "headline_hits": [],
+    "p7": []
+   },
+   "c_place": false,
+   "item_places": [
+    "yemen"
+   ],
+   "core_places": [
+    "king khalid",
+    "king khalid international airport",
+    "riyadh",
+    "saudi arabia"
+   ]
+  },
+  {
+   "case": "R166",
+   "event_id": 449,
+   "item": 23158,
+   "reference_item": 8355,
+   "stratum": "Q4",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Tras la derrota frente a Lula, la Justicia le prohibió salir del país a Flávio Bolsonaro",
+   "rejected": false,
+   "c_sem": true,
+   "c_sem_quorum": "4/4 (need 2)",
+   "c_head": true,
+   "c_head_detail": {
+    "headline_hits": [
+     9375,
+     9406,
+     9295,
+     8355
+    ],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [],
+   "core_places": [
+    "brasil",
+    "rio de janeiro"
+   ]
+  },
+  {
+   "case": "R168",
+   "event_id": 399,
+   "item": 18931,
+   "reference_item": 8426,
+   "stratum": "Q3",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Zelensky, 'favorevoli a incontro trilaterale il prima possibile'",
+   "rejected": false,
+   "c_sem": true,
+   "c_sem_quorum": "2/2 (need 1)",
+   "c_head": true,
+   "c_head_detail": {
+    "headline_hits": [
+     8364,
+     8508
+    ],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "kiev",
+    "mosca"
+   ],
+   "core_places": [
+    "kiev",
+    "russia",
+    "ucraina",
+    "united states"
+   ]
+  },
+  {
+   "case": "R171",
+   "event_id": 397,
+   "item": 15121,
+   "reference_item": 8598,
+   "stratum": "Q3",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Saudi-led coalition says helicopter crash in Najran kills two crew members",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "0/4 (need 2)",
+   "c_head": false,
+   "c_head_detail": {
+    "headline_hits": [],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "najran",
+    "saudi arabia"
+   ],
+   "core_places": [
+    "king khalid",
+    "king khalid international airport",
+    "riyadh",
+    "saudi arabia"
+   ]
+  },
+  {
+   "case": "R173",
+   "event_id": 514,
+   "item": 21992,
+   "reference_item": 8485,
+   "stratum": "Q3",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Benjamín Netanyahu, un superviviente político aferrado a las guerras para ganar una vez más",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "0/2 (need 1)",
+   "c_head": false,
+   "c_head_detail": {
+    "headline_hits": [],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "tel aviv"
+   ],
+   "core_places": [
+    "israel",
+    "united states"
+   ]
+  },
+  {
+   "case": "R175",
+   "event_id": 398,
+   "item": 14193,
+   "reference_item": 8440,
+   "stratum": "Q3",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "EU doubles down on helping Ukraine's rule of law with new task force",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "0/5 (need 3)",
+   "c_head": false,
+   "c_head_detail": {
+    "headline_hits": [],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "ukraine"
+   ],
+   "core_places": [
+    "france",
+    "moscow",
+    "russia",
+    "ukraine",
+    "united states"
+   ]
+  },
+  {
+   "case": "R176",
+   "event_id": 626,
+   "item": 21335,
+   "reference_item": 12402,
+   "stratum": "Q4",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Some Parisians buy pepper spray, tear gas for self-defence during protests",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "0/2 (need 1)",
+   "c_head": false,
+   "c_head_detail": {
+    "headline_hits": [],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "france"
+   ],
+   "core_places": [
+    "afghanistan",
+    "france"
+   ]
+  },
+  {
+   "case": "R177",
+   "event_id": 449,
+   "item": 13363,
+   "reference_item": 8355,
+   "stratum": "Q1",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Rebaja de la jornada laboral y transporte gratuito: Lula apunta a la economía en vísperas del balotaje",
+   "rejected": true,
+   "c_sem": true,
+   "c_sem_quorum": "3/4 (need 2)",
+   "c_head": false,
+   "c_head_detail": {
+    "headline_hits": [],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [],
+   "core_places": [
+    "brasil",
+    "rio de janeiro"
+   ]
+  },
+  {
+   "case": "R178",
+   "event_id": 398,
+   "item": 18607,
+   "reference_item": 8440,
+   "stratum": "Q4",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "US envoy Witkoff meets Putin, discusses possible end of Ukraine war",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "1/5 (need 3)",
+   "c_head": false,
+   "c_head_detail": {
+    "headline_hits": [],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "united states"
+   ],
+   "core_places": [
+    "france",
+    "moscow",
+    "russia",
+    "ukraine",
+    "united states"
+   ]
+  },
+  {
+   "case": "R181",
+   "event_id": 449,
+   "item": 21306,
+   "reference_item": 8355,
+   "stratum": "Q2",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "La hora de la verdad entre Lula y Bolsonaro: esperanza y cambio, promesas comunes con vías divergentes",
+   "rejected": false,
+   "c_sem": true,
+   "c_sem_quorum": "4/4 (need 2)",
+   "c_head": true,
+   "c_head_detail": {
+    "headline_hits": [
+     9375,
+     9406,
+     9295,
+     8355
+    ],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "brasil"
+   ],
+   "core_places": [
+    "brasil",
+    "rio de janeiro"
+   ]
+  },
+  {
+   "case": "R182",
+   "event_id": 182,
+   "item": 5412,
+   "reference_item": 2633,
+   "stratum": "Q2",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Satellite photos show how Israeli forces have erased Gaza towns",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "0/2 (need 1)",
+   "c_head": false,
+   "c_head_detail": {
+    "headline_hits": [],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "gaza",
+    "israel"
+   ],
+   "core_places": [
+    "franja de gaza",
+    "israel"
+   ]
+  },
+  {
+   "case": "R184",
+   "event_id": 626,
+   "item": 19516,
+   "reference_item": 12402,
+   "stratum": "Q3",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "French unions negotiate with Macron as mass protests explode across Europe",
+   "rejected": false,
+   "c_sem": true,
+   "c_sem_quorum": "2/2 (need 1)",
+   "c_head": true,
+   "c_head_detail": {
+    "headline_hits": [
+     12402,
+     13666
+    ],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "europe",
+    "france"
+   ],
+   "core_places": [
+    "afghanistan",
+    "france"
+   ]
+  },
+  {
+   "case": "R186",
+   "event_id": 449,
+   "item": 15465,
+   "reference_item": 8355,
+   "stratum": "Q1",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Bolsonaro vs Lula Da Silva, EN VIVO: quién ganó el debate presidencial, a una semana del balotaje en Brasil",
+   "rejected": false,
+   "c_sem": true,
+   "c_sem_quorum": "4/4 (need 2)",
+   "c_head": true,
+   "c_head_detail": {
+    "headline_hits": [
+     9375,
+     9406,
+     9295,
+     8355
+    ],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "brasil",
+    "chicanas"
+   ],
+   "core_places": [
+    "brasil",
+    "rio de janeiro"
+   ]
+  },
+  {
+   "case": "R190",
+   "event_id": 399,
+   "item": 21074,
+   "reference_item": 8426,
+   "stratum": "Q4",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Ucrania: Kiev afronta el invierno con escasez de refugios antiaéreos",
+   "rejected": false,
+   "c_sem": true,
+   "c_sem_quorum": "1/2 (need 1)",
+   "c_head": true,
+   "c_head_detail": {
+    "headline_hits": [
+     8364,
+     8508
+    ],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "france",
+    "kiev",
+    "ucrania"
+   ],
+   "core_places": [
+    "kiev",
+    "russia",
+    "ucraina",
+    "united states"
+   ]
+  },
+  {
+   "case": "R195",
+   "event_id": 398,
+   "item": 10427,
+   "reference_item": 8440,
+   "stratum": "Q1",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Blatant Disrespect Toward America: Zelensky Slams Russias Strike on Ukraines Energy Sector",
+   "rejected": false,
+   "c_sem": true,
+   "c_sem_quorum": "4/5 (need 3)",
+   "c_head": true,
+   "c_head_detail": {
+    "headline_hits": [
+     8455,
+     8490,
+     8331,
+     8572,
+     8440
+    ],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [],
+   "core_places": [
+    "france",
+    "moscow",
+    "russia",
+    "ukraine",
+    "united states"
+   ]
+  },
+  {
+   "case": "R199",
+   "event_id": 449,
+   "item": 20659,
+   "reference_item": 8355,
+   "stratum": "Q2",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Elecciones en Brasil, EN VIVO: últimas encuestas y a qué hora es hoy el segundo debate presidencial entre Lula y Flávio Bolsonaro",
+   "rejected": false,
+   "c_sem": true,
+   "c_sem_quorum": "4/4 (need 2)",
+   "c_head": true,
+   "c_head_detail": {
+    "headline_hits": [
+     9375,
+     9406,
+     9295,
+     8355
+    ],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [],
+   "core_places": [
+    "brasil",
+    "rio de janeiro"
+   ]
+  },
+  {
+   "case": "R200",
+   "event_id": 182,
+   "item": 4865,
+   "reference_item": 2633,
+   "stratum": "Q1",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "At UNs October 7th Commemoration, U.S.s Waltz says attack on Israel backfired on Iran",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "0/2 (need 1)",
+   "c_head": false,
+   "c_head_detail": {
+    "headline_hits": [],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "iran",
+    "israel"
+   ],
+   "core_places": [
+    "franja de gaza",
+    "israel"
+   ]
+  },
+  {
+   "case": "R201",
+   "event_id": 449,
+   "item": 22353,
+   "reference_item": 8355,
+   "stratum": "Q3",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Elecciones en Brasil: Lula da Silva denuncia el bloqueo del transporte público en Bahia y otros ocho estados y pide que se extienda dos horas la votación",
+   "rejected": true,
+   "c_sem": true,
+   "c_sem_quorum": "2/4 (need 2)",
+   "c_head": true,
+   "c_head_detail": {
+    "headline_hits": [
+     9375,
+     9406,
+     9295
+    ],
+    "p7": []
+   },
+   "c_place": false,
+   "item_places": [
+    "bahia",
+    "san salvador de bahia"
+   ],
+   "core_places": [
+    "brasil",
+    "rio de janeiro"
+   ]
+  },
+  {
+   "case": "R202",
+   "event_id": 626,
+   "item": 16802,
+   "reference_item": 12402,
+   "stratum": "Q2",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Out of control? France stunned by October 17 rioting",
+   "rejected": false,
+   "c_sem": true,
+   "c_sem_quorum": "1/2 (need 1)",
+   "c_head": true,
+   "c_head_detail": {
+    "skipped": "analysis"
+   },
+   "c_place": true,
+   "item_places": [
+    "france",
+    "limoge"
+   ],
+   "core_places": [
+    "afghanistan",
+    "france"
+   ]
+  },
+  {
+   "case": "R204",
+   "event_id": 639,
+   "item": 15160,
+   "reference_item": 13713,
+   "stratum": "Q1",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Saqueos, violencia y desolación: París despierta devastada tras una noche de terror",
+   "rejected": true,
+   "c_sem": true,
+   "c_sem_quorum": "1/2 (need 1)",
+   "c_head": true,
+   "c_head_detail": {
+    "headline_hits": [
+     13713,
+     14223
+    ],
+    "p7": []
+   },
+   "c_place": false,
+   "item_places": [
+    "gobierno",
+    "lille",
+    "limoge",
+    "marsella"
+   ],
+   "core_places": [
+    "francia"
+   ]
+  },
+  {
+   "case": "R205",
+   "event_id": 397,
+   "item": 17248,
+   "reference_item": 8598,
+   "stratum": "Q3",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Saudi says intercepted Houthi missile, blasts heard in capital",
+   "rejected": false,
+   "c_sem": true,
+   "c_sem_quorum": "3/4 (need 2)",
+   "c_head": true,
+   "c_head_detail": {
+    "headline_hits": [
+     8341,
+     8598,
+     8450,
+     8496
+    ],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "saudi arabia"
+   ],
+   "core_places": [
+    "king khalid",
+    "king khalid international airport",
+    "riyadh",
+    "saudi arabia"
+   ]
+  },
+  {
+   "case": "R206",
+   "event_id": 514,
+   "item": 21589,
+   "reference_item": 8485,
+   "stratum": "Q3",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Armed Israeli settlers try to break into Palestinian grandfather’s home",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "0/2 (need 1)",
+   "c_head": false,
+   "c_head_detail": {
+    "headline_hits": [],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "israel",
+    "palestine",
+    "umm safa"
+   ],
+   "core_places": [
+    "israel",
+    "united states"
+   ]
+  },
+  {
+   "case": "R208",
+   "event_id": 398,
+   "item": 10872,
+   "reference_item": 8440,
+   "stratum": "Q1",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Iran targets Starlink as ‘tool of war’ with hints of more internet curbs",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "0/5 (need 3)",
+   "c_head": false,
+   "c_head_detail": {
+    "headline_hits": [],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "iran",
+    "israel",
+    "united states"
+   ],
+   "core_places": [
+    "france",
+    "moscow",
+    "russia",
+    "ukraine",
+    "united states"
+   ]
+  },
+  {
+   "case": "R209",
+   "event_id": 449,
+   "item": 21990,
+   "reference_item": 8355,
+   "stratum": "Q2",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Brasil decide este domingo si seguirá siendo una democracia",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "1/4 (need 2)",
+   "c_head": true,
+   "c_head_detail": {
+    "headline_hits": [
+     9406,
+     9295
+    ],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "brasil",
+    "copacabana",
+    "rio de janeiro"
+   ],
+   "core_places": [
+    "brasil",
+    "rio de janeiro"
+   ]
+  },
+  {
+   "case": "R212",
+   "event_id": 398,
+   "item": 13128,
+   "reference_item": 8440,
+   "stratum": "Q2",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "G7 countries pledge 260 million euros for Chornobyl safety infrastructure repairs damaged in Russian attack",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "0/5 (need 3)",
+   "c_head": false,
+   "c_head_detail": {
+    "headline_hits": [],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "chornobyl",
+    "kyiv",
+    "russia"
+   ],
+   "core_places": [
+    "france",
+    "moscow",
+    "russia",
+    "ukraine",
+    "united states"
+   ]
+  },
+  {
+   "case": "R213",
+   "event_id": 182,
+   "item": 4538,
+   "reference_item": 2633,
+   "stratum": "Q1",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Israel puts military on high alert over claimed Hamas attack ahead of October 7",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "0/2 (need 1)",
+   "c_head": false,
+   "c_head_detail": {
+    "headline_hits": [],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "israel"
+   ],
+   "core_places": [
+    "franja de gaza",
+    "israel"
+   ]
+  },
+  {
+   "case": "R216",
+   "event_id": 514,
+   "item": 22780,
+   "reference_item": 8485,
+   "stratum": "Q4",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Elezioni in Israele, la sfida è tutta su Netanyahu: proteste e sondaggi indicano uno stallo",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "0/2 (need 1)",
+   "c_head": false,
+   "c_head_detail": {
+    "headline_hits": [],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "domani israele",
+    "israele"
+   ],
+   "core_places": [
+    "israel",
+    "united states"
+   ]
+  },
+  {
+   "case": "R217",
+   "event_id": 182,
+   "item": 5833,
+   "reference_item": 2633,
+   "stratum": "Q3",
+   "label": "DIFFERENT_OCCURRENCE",
+   "scorable": true,
+   "title": "Three years on, October 7 massacre sites in Israel draw visitors seeking to remember",
+   "rejected": true,
+   "c_sem": false,
+   "c_sem_quorum": "0/2 (need 1)",
+   "c_head": false,
+   "c_head_detail": {
+    "headline_hits": [],
+    "p7": []
+   },
+   "c_place": true,
+   "item_places": [
+    "france",
+    "gaza",
+    "israel"
+   ],
+   "core_places": [
+    "franja de gaza",
+    "israel"
+   ]
+  }
+ ],
+ "summary": {
+  "L2_cases": 128,
+  "scorable": 128,
+  "not_scorable": [],
+  "F1_different_rejected": {
+   "n": 117,
+   "rejected": 80,
+   "share": 0.6838,
+   "wilson95": [
+    0.5948,
+    0.761
+   ]
+  },
+  "F1_gate": ">= 0.60",
+  "F1_pass": true,
+  "F2_same_rejected": {
+   "n": 9,
+   "rejected": 3,
+   "share": 0.3333,
+   "wilson95": [
+    0.1206,
+    0.6458
+   ]
+  },
+  "F2_gate": "<= 0.10",
+  "F2_pass": false,
+  "ambiguous": {
+   "n": 2,
+   "rejected": 1,
+   "share": 0.5,
+   "wilson95": [
+    0.0945,
+    0.9055
+   ]
+  },
+  "H3": "FAIL"
+ }
+}
