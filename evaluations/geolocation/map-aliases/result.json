@@ -1,0 +1,2236 @@
+{
+ "summary": {
+  "cases": 208,
+  "before_matches_recorded_audit": 208,
+  "C_hidden_to_shown": 21,
+  "W_hidden_to_shown": 2,
+  "P_hidden_to_shown": 0,
+  "any_shown_to_hidden": 0,
+  "C_still_hidden": [
+   1,
+   82,
+   124,
+   140,
+   148,
+   151,
+   170,
+   188,
+   425,
+   426,
+   433,
+   438,
+   468,
+   471,
+   689,
+   706,
+   719,
+   798,
+   811,
+   827,
+   1086,
+   1131,
+   1145,
+   1150
+  ],
+  "flipped": [
+   [
+    92,
+    "C",
+    "hidden->shown"
+   ],
+   [
+    96,
+    "C",
+    "hidden->shown"
+   ],
+   [
+    127,
+    "C",
+    "hidden->shown"
+   ],
+   [
+    146,
+    "C",
+    "hidden->shown"
+   ],
+   [
+    154,
+    "C",
+    "hidden->shown"
+   ],
+   [
+    228,
+    "C",
+    "hidden->shown"
+   ],
+   [
+    286,
+    "C",
+    "hidden->shown"
+   ],
+   [
+    360,
+    "W",
+    "hidden->shown"
+   ],
+   [
+    396,
+    "C",
+    "hidden->shown"
+   ],
+   [
+    442,
+    "C",
+    "hidden->shown"
+   ],
+   [
+    465,
+    "C",
+    "hidden->shown"
+   ],
+   [
+    643,
+    "C",
+    "hidden->shown"
+   ],
+   [
+    661,
+    "C",
+    "hidden->shown"
+   ],
+   [
+    675,
+    "C",
+    "hidden->shown"
+   ],
+   [
+    681,
+    "C",
+    "hidden->shown"
+   ],
+   [
+    747,
+    "C",
+    "hidden->shown"
+   ],
+   [
+    796,
+    "C",
+    "hidden->shown"
+   ],
+   [
+    892,
+    "C",
+    "hidden->shown"
+   ],
+   [
+    902,
+    "C",
+    "hidden->shown"
+   ],
+   [
+    941,
+    "W",
+    "hidden->shown"
+   ],
+   [
+    1081,
+    "C",
+    "hidden->shown"
+   ],
+   [
+    1092,
+    "C",
+    "hidden->shown"
+   ],
+   [
+    1128,
+    "C",
+    "hidden->shown"
+   ]
+  ],
+  "neutral": false
+ },
+ "rows": [
+  {
+   "development_id": 1,
+   "set": "suppressed",
+   "verdict": "C",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 24,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "AMBIGUOUS_NAME",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 31,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 35,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "FIRST_RESULT_WINS",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 51,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "NON_PLACE_MENTION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 57,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "NON_PLACE_MENTION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 62,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "FIRST_RESULT_WINS",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 64,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 65,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "AMBIGUOUS_NAME",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 82,
+   "set": "suppressed",
+   "verdict": "C",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 92,
+   "set": "suppressed",
+   "verdict": "C",
+   "root_cause": "MISSING_ALIAS",
+   "recorded_shown": false,
+   "before": false,
+   "after": true,
+   "flip": "hidden->shown"
+  },
+  {
+   "development_id": 96,
+   "set": "suppressed",
+   "verdict": "C",
+   "root_cause": "MISSING_CONTAINMENT",
+   "recorded_shown": false,
+   "before": false,
+   "after": true,
+   "flip": "hidden->shown"
+  },
+  {
+   "development_id": 103,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "NON_PLACE_MENTION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 117,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "FIRST_RESULT_WINS",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 120,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "FIRST_RESULT_WINS",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 121,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "NON_PLACE_MENTION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 124,
+   "set": "suppressed",
+   "verdict": "C",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 127,
+   "set": "suppressed",
+   "verdict": "C",
+   "root_cause": "MISSING_ALIAS",
+   "recorded_shown": false,
+   "before": false,
+   "after": true,
+   "flip": "hidden->shown"
+  },
+  {
+   "development_id": 135,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 137,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "FIRST_RESULT_WINS",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 140,
+   "set": "suppressed",
+   "verdict": "C",
+   "root_cause": "MISSING_ALIAS",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 141,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 144,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "AMBIGUOUS_NAME",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 146,
+   "set": "suppressed",
+   "verdict": "C",
+   "root_cause": "MISSING_ALIAS",
+   "recorded_shown": false,
+   "before": false,
+   "after": true,
+   "flip": "hidden->shown"
+  },
+  {
+   "development_id": 148,
+   "set": "suppressed",
+   "verdict": "C",
+   "root_cause": "MISSING_ALIAS",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 151,
+   "set": "suppressed",
+   "verdict": "C",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 154,
+   "set": "suppressed",
+   "verdict": "C",
+   "root_cause": "MISSING_ALIAS",
+   "recorded_shown": false,
+   "before": false,
+   "after": true,
+   "flip": "hidden->shown"
+  },
+  {
+   "development_id": 167,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "NON_PLACE_MENTION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 168,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 170,
+   "set": "suppressed",
+   "verdict": "C",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 171,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "AMBIGUOUS_NAME",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 181,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "AMBIGUOUS_NAME",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 188,
+   "set": "suppressed",
+   "verdict": "C",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 192,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "NON_PLACE_MENTION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 195,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 213,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "NON_PLACE_MENTION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 220,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "NON_PLACE_MENTION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 224,
+   "set": "suppressed",
+   "verdict": "P",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 228,
+   "set": "suppressed",
+   "verdict": "C",
+   "root_cause": "MISSING_ALIAS",
+   "recorded_shown": false,
+   "before": false,
+   "after": true,
+   "flip": "hidden->shown"
+  },
+  {
+   "development_id": 232,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 237,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "AMBIGUOUS_NAME",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 272,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "FIRST_RESULT_WINS",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 286,
+   "set": "suppressed",
+   "verdict": "C",
+   "root_cause": "MISSING_ALIAS",
+   "recorded_shown": false,
+   "before": false,
+   "after": true,
+   "flip": "hidden->shown"
+  },
+  {
+   "development_id": 288,
+   "set": "suppressed",
+   "verdict": "P",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 291,
+   "set": "suppressed",
+   "verdict": "P",
+   "root_cause": "SUPRANATIONAL_REGION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 297,
+   "set": "suppressed",
+   "verdict": "P",
+   "root_cause": "SUPRANATIONAL_REGION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 333,
+   "set": "suppressed",
+   "verdict": "P",
+   "root_cause": "SUPRANATIONAL_REGION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 360,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "WRONG_COUNTRY_MATCH",
+   "recorded_shown": false,
+   "before": false,
+   "after": true,
+   "flip": "hidden->shown"
+  },
+  {
+   "development_id": 363,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 382,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "NON_PLACE_MENTION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 396,
+   "set": "suppressed",
+   "verdict": "C",
+   "root_cause": "MISSING_ALIAS",
+   "recorded_shown": false,
+   "before": false,
+   "after": true,
+   "flip": "hidden->shown"
+  },
+  {
+   "development_id": 399,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 400,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "AMBIGUOUS_NAME",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 416,
+   "set": "suppressed",
+   "verdict": "P",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 420,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "WRONG_COUNTRY_MATCH",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 425,
+   "set": "suppressed",
+   "verdict": "C",
+   "root_cause": "AMBIGUOUS_NAME",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 426,
+   "set": "suppressed",
+   "verdict": "C",
+   "root_cause": "MISSING_CONTAINMENT",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 433,
+   "set": "suppressed",
+   "verdict": "C",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 438,
+   "set": "suppressed",
+   "verdict": "C",
+   "root_cause": "MISSING_CONTAINMENT",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 442,
+   "set": "suppressed",
+   "verdict": "C",
+   "root_cause": "MISSING_ALIAS",
+   "recorded_shown": false,
+   "before": false,
+   "after": true,
+   "flip": "hidden->shown"
+  },
+  {
+   "development_id": 444,
+   "set": "suppressed",
+   "verdict": "P",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 452,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "NON_PLACE_MENTION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 458,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "FIRST_RESULT_WINS",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 464,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 465,
+   "set": "suppressed",
+   "verdict": "C",
+   "root_cause": "MISSING_ALIAS",
+   "recorded_shown": false,
+   "before": false,
+   "after": true,
+   "flip": "hidden->shown"
+  },
+  {
+   "development_id": 468,
+   "set": "suppressed",
+   "verdict": "C",
+   "root_cause": "AMBIGUOUS_NAME",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 471,
+   "set": "suppressed",
+   "verdict": "C",
+   "root_cause": "REGION_CITY_COLLISION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 479,
+   "set": "suppressed",
+   "verdict": "P",
+   "root_cause": "SUPRANATIONAL_REGION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 494,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 495,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "REGION_CITY_COLLISION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 507,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "FIRST_RESULT_WINS",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 513,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "NON_PLACE_MENTION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 528,
+   "set": "suppressed",
+   "verdict": "P",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 529,
+   "set": "suppressed",
+   "verdict": "P",
+   "root_cause": "MISSING_ALIAS",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 534,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "AMBIGUOUS_NAME",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 540,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "NON_PLACE_MENTION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 541,
+   "set": "suppressed",
+   "verdict": "P",
+   "root_cause": "WRONG_COUNTRY_MATCH",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 564,
+   "set": "suppressed",
+   "verdict": "P",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 566,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "AMBIGUOUS_NAME",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 569,
+   "set": "suppressed",
+   "verdict": "P",
+   "root_cause": "SUPRANATIONAL_REGION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 572,
+   "set": "suppressed",
+   "verdict": "P",
+   "root_cause": "SUPRANATIONAL_REGION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 573,
+   "set": "suppressed",
+   "verdict": "P",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 584,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "NON_PLACE_MENTION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 604,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "AMBIGUOUS_NAME",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 607,
+   "set": "suppressed",
+   "verdict": "P",
+   "root_cause": "SUPRANATIONAL_REGION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 621,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "AMBIGUOUS_NAME",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 629,
+   "set": "suppressed",
+   "verdict": "P",
+   "root_cause": "SUPRANATIONAL_REGION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 630,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "REGION_CITY_COLLISION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 632,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "AMBIGUOUS_NAME",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 643,
+   "set": "suppressed",
+   "verdict": "C",
+   "root_cause": "MISSING_ALIAS",
+   "recorded_shown": false,
+   "before": false,
+   "after": true,
+   "flip": "hidden->shown"
+  },
+  {
+   "development_id": 648,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "FIRST_RESULT_WINS",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 654,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "NON_PLACE_MENTION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 661,
+   "set": "suppressed",
+   "verdict": "C",
+   "root_cause": "MISSING_ALIAS",
+   "recorded_shown": false,
+   "before": false,
+   "after": true,
+   "flip": "hidden->shown"
+  },
+  {
+   "development_id": 675,
+   "set": "suppressed",
+   "verdict": "C",
+   "root_cause": "MISSING_ALIAS",
+   "recorded_shown": false,
+   "before": false,
+   "after": true,
+   "flip": "hidden->shown"
+  },
+  {
+   "development_id": 681,
+   "set": "suppressed",
+   "verdict": "C",
+   "root_cause": "MISSING_ALIAS",
+   "recorded_shown": false,
+   "before": false,
+   "after": true,
+   "flip": "hidden->shown"
+  },
+  {
+   "development_id": 684,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "AMBIGUOUS_NAME",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 689,
+   "set": "suppressed",
+   "verdict": "C",
+   "root_cause": "AMBIGUOUS_NAME",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 690,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "AMBIGUOUS_NAME",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 706,
+   "set": "suppressed",
+   "verdict": "C",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 713,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "NON_PLACE_MENTION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 719,
+   "set": "suppressed",
+   "verdict": "C",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 725,
+   "set": "suppressed",
+   "verdict": "P",
+   "root_cause": "SUPRANATIONAL_REGION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 730,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "SUPRANATIONAL_REGION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 734,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "FIRST_RESULT_WINS",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 746,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 747,
+   "set": "suppressed",
+   "verdict": "C",
+   "root_cause": "MISSING_ALIAS",
+   "recorded_shown": false,
+   "before": false,
+   "after": true,
+   "flip": "hidden->shown"
+  },
+  {
+   "development_id": 752,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "FIRST_RESULT_WINS",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 761,
+   "set": "suppressed",
+   "verdict": "P",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 762,
+   "set": "suppressed",
+   "verdict": "P",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 764,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "NON_PLACE_MENTION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 781,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 782,
+   "set": "suppressed",
+   "verdict": "P",
+   "root_cause": "SUPRANATIONAL_REGION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 783,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "NON_PLACE_MENTION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 795,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 796,
+   "set": "suppressed",
+   "verdict": "C",
+   "root_cause": "MISSING_ALIAS",
+   "recorded_shown": false,
+   "before": false,
+   "after": true,
+   "flip": "hidden->shown"
+  },
+  {
+   "development_id": 798,
+   "set": "suppressed",
+   "verdict": "C",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 803,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "SUPRANATIONAL_REGION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 804,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "SUPRANATIONAL_REGION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 811,
+   "set": "suppressed",
+   "verdict": "C",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 812,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "FIRST_RESULT_WINS",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 820,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "NON_PLACE_MENTION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 821,
+   "set": "suppressed",
+   "verdict": "P",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 827,
+   "set": "suppressed",
+   "verdict": "C",
+   "root_cause": "MISSING_CONTAINMENT",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 838,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "NON_PLACE_MENTION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 846,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "AMBIGUOUS_NAME",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 875,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "FIRST_RESULT_WINS",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 884,
+   "set": "suppressed",
+   "verdict": "P",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 892,
+   "set": "suppressed",
+   "verdict": "C",
+   "root_cause": "MISSING_ALIAS",
+   "recorded_shown": false,
+   "before": false,
+   "after": true,
+   "flip": "hidden->shown"
+  },
+  {
+   "development_id": 895,
+   "set": "suppressed",
+   "verdict": "P",
+   "root_cause": "INVALID_STORED_PLACE",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 902,
+   "set": "suppressed",
+   "verdict": "C",
+   "root_cause": "MISSING_ALIAS",
+   "recorded_shown": false,
+   "before": false,
+   "after": true,
+   "flip": "hidden->shown"
+  },
+  {
+   "development_id": 910,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "FIRST_RESULT_WINS",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 924,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "REGION_CITY_COLLISION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 933,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 941,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "WRONG_COUNTRY_MATCH",
+   "recorded_shown": false,
+   "before": false,
+   "after": true,
+   "flip": "hidden->shown"
+  },
+  {
+   "development_id": 945,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 949,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 952,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 957,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 958,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "NON_PLACE_MENTION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 961,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "AMBIGUOUS_NAME",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 984,
+   "set": "suppressed",
+   "verdict": "P",
+   "root_cause": "WRONG_COUNTRY_MATCH",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 986,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "NON_PLACE_MENTION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 987,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 1006,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 1009,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 1019,
+   "set": "suppressed",
+   "verdict": "P",
+   "root_cause": "SUPRANATIONAL_REGION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 1032,
+   "set": "suppressed",
+   "verdict": "P",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 1033,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "AMBIGUOUS_NAME",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 1047,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "FIRST_RESULT_WINS",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 1052,
+   "set": "suppressed",
+   "verdict": "P",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 1066,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "AMBIGUOUS_NAME",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 1081,
+   "set": "suppressed",
+   "verdict": "C",
+   "root_cause": "MISSING_CONTAINMENT",
+   "recorded_shown": false,
+   "before": false,
+   "after": true,
+   "flip": "hidden->shown"
+  },
+  {
+   "development_id": 1086,
+   "set": "suppressed",
+   "verdict": "C",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 1092,
+   "set": "suppressed",
+   "verdict": "C",
+   "root_cause": "MISSING_ALIAS",
+   "recorded_shown": false,
+   "before": false,
+   "after": true,
+   "flip": "hidden->shown"
+  },
+  {
+   "development_id": 1107,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "NON_PLACE_MENTION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 1114,
+   "set": "suppressed",
+   "verdict": "P",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 1115,
+   "set": "suppressed",
+   "verdict": "P",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 1120,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "FIRST_RESULT_WINS",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 1128,
+   "set": "suppressed",
+   "verdict": "C",
+   "root_cause": "MISSING_ALIAS",
+   "recorded_shown": false,
+   "before": false,
+   "after": true,
+   "flip": "hidden->shown"
+  },
+  {
+   "development_id": 1131,
+   "set": "suppressed",
+   "verdict": "C",
+   "root_cause": "MISSING_CONTAINMENT",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 1142,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "SUPRANATIONAL_REGION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 1145,
+   "set": "suppressed",
+   "verdict": "C",
+   "root_cause": "MISSING_ALIAS",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 1150,
+   "set": "suppressed",
+   "verdict": "C",
+   "root_cause": "AMBIGUOUS_NAME",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 1160,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "SUPRANATIONAL_REGION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 1171,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "AMBIGUOUS_NAME",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 1172,
+   "set": "suppressed",
+   "verdict": "P",
+   "root_cause": "SUPRANATIONAL_REGION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 1177,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "NON_PLACE_MENTION",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 1182,
+   "set": "suppressed",
+   "verdict": "W",
+   "root_cause": "AMBIGUOUS_NAME",
+   "recorded_shown": false,
+   "before": false,
+   "after": false,
+   "flip": "same"
+  },
+  {
+   "development_id": 693,
+   "set": "shown_sample",
+   "verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "recorded_shown": true,
+   "before": true,
+   "after": true,
+   "flip": "same"
+  },
+  {
+   "development_id": 79,
+   "set": "shown_sample",
+   "verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "recorded_shown": true,
+   "before": true,
+   "after": true,
+   "flip": "same"
+  },
+  {
+   "development_id": 1191,
+   "set": "shown_sample",
+   "verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "recorded_shown": true,
+   "before": true,
+   "after": true,
+   "flip": "same"
+  },
+  {
+   "development_id": 456,
+   "set": "shown_sample",
+   "verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "recorded_shown": true,
+   "before": true,
+   "after": true,
+   "flip": "same"
+  },
+  {
+   "development_id": 772,
+   "set": "shown_sample",
+   "verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "recorded_shown": true,
+   "before": true,
+   "after": true,
+   "flip": "same"
+  },
+  {
+   "development_id": 786,
+   "set": "shown_sample",
+   "verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "recorded_shown": true,
+   "before": true,
+   "after": true,
+   "flip": "same"
+  },
+  {
+   "development_id": 202,
+   "set": "shown_sample",
+   "verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "recorded_shown": true,
+   "before": true,
+   "after": true,
+   "flip": "same"
+  },
+  {
+   "development_id": 155,
+   "set": "shown_sample",
+   "verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "recorded_shown": true,
+   "before": true,
+   "after": true,
+   "flip": "same"
+  },
+  {
+   "development_id": 503,
+   "set": "shown_sample",
+   "verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "recorded_shown": true,
+   "before": true,
+   "after": true,
+   "flip": "same"
+  },
+  {
+   "development_id": 52,
+   "set": "shown_sample",
+   "verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "recorded_shown": true,
+   "before": true,
+   "after": true,
+   "flip": "same"
+  },
+  {
+   "development_id": 937,
+   "set": "shown_sample",
+   "verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "recorded_shown": true,
+   "before": true,
+   "after": true,
+   "flip": "same"
+  },
+  {
+   "development_id": 1031,
+   "set": "shown_sample",
+   "verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "recorded_shown": true,
+   "before": true,
+   "after": true,
+   "flip": "same"
+  },
+  {
+   "development_id": 797,
+   "set": "shown_sample",
+   "verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "recorded_shown": true,
+   "before": true,
+   "after": true,
+   "flip": "same"
+  },
+  {
+   "development_id": 252,
+   "set": "shown_sample",
+   "verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "recorded_shown": true,
+   "before": true,
+   "after": true,
+   "flip": "same"
+  },
+  {
+   "development_id": 947,
+   "set": "shown_sample",
+   "verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "recorded_shown": true,
+   "before": true,
+   "after": true,
+   "flip": "same"
+  },
+  {
+   "development_id": 1149,
+   "set": "shown_sample",
+   "verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "recorded_shown": true,
+   "before": true,
+   "after": true,
+   "flip": "same"
+  },
+  {
+   "development_id": 491,
+   "set": "shown_sample",
+   "verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "recorded_shown": true,
+   "before": true,
+   "after": true,
+   "flip": "same"
+  },
+  {
+   "development_id": 627,
+   "set": "shown_sample",
+   "verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "recorded_shown": true,
+   "before": true,
+   "after": true,
+   "flip": "same"
+  },
+  {
+   "development_id": 755,
+   "set": "shown_sample",
+   "verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "recorded_shown": true,
+   "before": true,
+   "after": true,
+   "flip": "same"
+  },
+  {
+   "development_id": 568,
+   "set": "shown_sample",
+   "verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "recorded_shown": true,
+   "before": true,
+   "after": true,
+   "flip": "same"
+  },
+  {
+   "development_id": 242,
+   "set": "shown_sample",
+   "verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "recorded_shown": true,
+   "before": true,
+   "after": true,
+   "flip": "same"
+  },
+  {
+   "development_id": 978,
+   "set": "shown_sample",
+   "verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "recorded_shown": true,
+   "before": true,
+   "after": true,
+   "flip": "same"
+  },
+  {
+   "development_id": 1173,
+   "set": "shown_sample",
+   "verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "recorded_shown": true,
+   "before": true,
+   "after": true,
+   "flip": "same"
+  },
+  {
+   "development_id": 1101,
+   "set": "shown_sample",
+   "verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "recorded_shown": true,
+   "before": true,
+   "after": true,
+   "flip": "same"
+  },
+  {
+   "development_id": 732,
+   "set": "shown_sample",
+   "verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "recorded_shown": true,
+   "before": true,
+   "after": true,
+   "flip": "same"
+  },
+  {
+   "development_id": 234,
+   "set": "shown_sample",
+   "verdict": "P",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "recorded_shown": true,
+   "before": true,
+   "after": true,
+   "flip": "same"
+  },
+  {
+   "development_id": 864,
+   "set": "shown_sample",
+   "verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "recorded_shown": true,
+   "before": true,
+   "after": true,
+   "flip": "same"
+  },
+  {
+   "development_id": 680,
+   "set": "shown_sample",
+   "verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "recorded_shown": true,
+   "before": true,
+   "after": true,
+   "flip": "same"
+  },
+  {
+   "development_id": 496,
+   "set": "shown_sample",
+   "verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "recorded_shown": true,
+   "before": true,
+   "after": true,
+   "flip": "same"
+  },
+  {
+   "development_id": 691,
+   "set": "shown_sample",
+   "verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "recorded_shown": true,
+   "before": true,
+   "after": true,
+   "flip": "same"
+  },
+  {
+   "development_id": 982,
+   "set": "shown_sample",
+   "verdict": "W",
+   "root_cause": "WRONG_COUNTRY_MATCH",
+   "recorded_shown": true,
+   "before": true,
+   "after": true,
+   "flip": "same"
+  },
+  {
+   "development_id": 539,
+   "set": "shown_sample",
+   "verdict": "P",
+   "root_cause": "MULTIPLE_PLACES_NO_DOMINANT_LOCATION",
+   "recorded_shown": true,
+   "before": true,
+   "after": true,
+   "flip": "same"
+  },
+  {
+   "development_id": 723,
+   "set": "shown_sample",
+   "verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "recorded_shown": true,
+   "before": true,
+   "after": true,
+   "flip": "same"
+  },
+  {
+   "development_id": 388,
+   "set": "shown_sample",
+   "verdict": "W",
+   "root_cause": "CAPITAL_COUNTRY_CONFUSION",
+   "recorded_shown": true,
+   "before": true,
+   "after": true,
+   "flip": "same"
+  },
+  {
+   "development_id": 988,
+   "set": "shown_sample",
+   "verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "recorded_shown": true,
+   "before": true,
+   "after": true,
+   "flip": "same"
+  },
+  {
+   "development_id": 249,
+   "set": "shown_sample",
+   "verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "recorded_shown": true,
+   "before": true,
+   "after": true,
+   "flip": "same"
+  },
+  {
+   "development_id": 666,
+   "set": "shown_sample",
+   "verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "recorded_shown": true,
+   "before": true,
+   "after": true,
+   "flip": "same"
+  },
+  {
+   "development_id": 828,
+   "set": "shown_sample",
+   "verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "recorded_shown": true,
+   "before": true,
+   "after": true,
+   "flip": "same"
+  },
+  {
+   "development_id": 610,
+   "set": "shown_sample",
+   "verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "recorded_shown": true,
+   "before": true,
+   "after": true,
+   "flip": "same"
+  },
+  {
+   "development_id": 68,
+   "set": "shown_sample",
+   "verdict": "C",
+   "root_cause": "CORRECT_LOCATION",
+   "recorded_shown": true,
+   "before": true,
+   "after": true,
+   "flip": "same"
+  }
+ ]
+}

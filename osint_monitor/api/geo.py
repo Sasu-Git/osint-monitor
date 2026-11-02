@@ -17,6 +17,7 @@ from functools import lru_cache
 from pathlib import Path
 
 DATA = Path(__file__).parent / "data" / "countries.json"
+PLACE_ALIASES = Path(__file__).parent / "data" / "place_aliases.json"   # map-only; the pipeline never reads it
 COAST_DEGREES = (0.05, 0.15)      # probe distances for coastal points outside the 1:50m outlines (~5 and ~15 km)
 
 
@@ -58,6 +59,7 @@ class CountryIndex:
         self.gazetteer = gazetteer
         self.normalizer = normalizer
         self._by_place: dict[str, str] = {}      # gazetteer country name -> id
+        self.map_aliases: dict[str, str] = {}    # place mention -> id, map only (place_aliases.json)
         self._by_actor: dict[str, str] = {}      # actor key -> id
         for c in countries:
             for n in c.names:
@@ -78,7 +80,10 @@ class CountryIndex:
         from osint_monitor.processors.geography import Gazetteer
         raw = json.loads(DATA.read_text(encoding="utf-8"))
         countries = [Country(r["id"], r["name"], tuple(r["names"]), tuple(r["polygons"])) for r in raw]
-        return cls(countries, Gazetteer.load(), ActorNormalizer.load())
+        index = cls(countries, Gazetteer.load(), ActorNormalizer.load())
+        aliases = json.loads(PLACE_ALIASES.read_text(encoding="utf-8")).get("places", {})
+        index.map_aliases = {k.lower(): v for k, v in aliases.items() if v in index.countries}
+        return index
 
     def name(self, country_id: str) -> str:
         c = self.countries.get(country_id)
@@ -121,7 +126,11 @@ class CountryIndex:
         return min(xs) <= lon <= max(xs) and min(ys) <= lat <= max(ys)
 
     def of_place(self, name: str) -> str | None:
-        """The country a place mention names or lies in, when the gazetteer knows it."""
+        """The country a place mention names or lies in: the map-only alias table first (place_aliases.json:
+        exonyms, cities and territories the gazetteer lacks or files under another country), then the gazetteer."""
+        alias = self.map_aliases.get((name or "").strip().lower())
+        if alias:
+            return alias
         place = self.gazetteer.canonical(name)
         if place in self.gazetteer.countries:
             return self._by_place.get(place)

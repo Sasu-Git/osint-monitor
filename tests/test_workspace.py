@@ -209,8 +209,10 @@ def test_placement_check():
     assert not wrong.mapped and wrong.country == "PSE" and "Mozambique" in wrong.reason
     assert not placement(idx, None, None, None, Counter({"Gaza": 1})).mapped
     assert not placement(idx, 0.0, 0.0, "Null Island", Counter()).mapped
-    unconfirmed = placement(idx, 40.52, -78.39, "Altoona, Pennsylvania", Counter({"Altoona": 2}))
-    assert not unconfirmed.mapped                                 # nothing the gazetteer knows confirms it
+    unconfirmed = placement(idx, 40.52, -78.39, "Hollidaysburg, Pennsylvania", Counter({"Hollidaysburg": 2}))
+    assert not unconfirmed.mapped                                 # nothing the gazetteer or map aliases confirm
+    altoona = placement(idx, 40.52, -78.39, "Altoona, Pennsylvania", Counter({"Altoona": 2}))
+    assert altoona.mapped and altoona.country == "USA"            # confirmed by the map-only alias table
     assert placement(idx, 53.48, -2.24, "Manchester, England", Counter({"Manchester": 2})).country == "GBR"
     whole = placement(idx, 46.6, 1.89, "France", Counter({"France": 2}))
     assert whole.mapped and whole.country_level
@@ -272,3 +274,13 @@ def test_situation_page_and_its_map(seeded):
     assert geo.status_code == 200 and geo.json()["type"] == "FeatureCollection"
     empty = c.get("/situations/sudan-civil-war")
     assert empty.status_code == 200 and "No developments linked yet" in empty.text
+
+
+def test_map_aliases_stay_out_of_the_shared_gazetteer():
+    """place_aliases.json is read by the map's CountryIndex only: the gazetteer the pipeline uses is unchanged."""
+    from osint_monitor.processors.geography import Gazetteer
+    idx = CountryIndex.load()
+    assert idx.of_place("Riad") == "SAU" and idx.of_place("Hong Kong") == "HKG" and idx.of_place("Strasbourg") == "FRA"
+    geo = Gazetteer.load()
+    assert geo.canonical("Riad") == "riad" and not geo.is_country("Riad")      # no alias leaked into the gazetteer
+    assert not any(a in geo.ancestors("Strasbourg") for a in geo.countries)
