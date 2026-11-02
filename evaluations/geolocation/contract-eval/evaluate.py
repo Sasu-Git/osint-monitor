@@ -43,6 +43,7 @@ from osint_monitor.processors.provenance import ProvenanceResolver
 import importlib.util  # noqa: E402
 _spec = importlib.util.spec_from_file_location("web_geo", Path(a.countries) / "osint_monitor" / "api" / "geo.py")
 _web_geo = importlib.util.module_from_spec(_spec)   # the web code's country lookup, loaded by path (ISO mapping only)
+sys.modules["web_geo"] = _web_geo                   # dataclasses look their module up while it executes
 _spec.loader.exec_module(_web_geo)
 CountryIndex = _web_geo.CountryIndex
 

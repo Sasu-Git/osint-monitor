@@ -58,13 +58,13 @@ cases:
   - id: G08
     development: 96
     headline: Boom News founder Tang Ho-wing, 1 other arrested by Hong Kong police
-    stored: Hong Kong (correct; map hides it: outline HKG vs gazetteer China)
+    stored: "Hong Kong (correct; map hides it: outline HKG vs gazetteer China)"
     expected: {role: EVENT_PLACE, place: Hong Kong, country: HKG, frontend: shown}
     rule: section 4 (frontend-only containment)
   - id: G09
     development: 747
     headline: "Press release - Opening: 19-22 October plenary session (Strasbourg)"
-    stored: Strasbourg (correct; map hides it: not in gazetteer)
+    stored: "Strasbourg (correct; map hides it: not in gazetteer)"
     expected: {role: EVENT_PLACE, place: Strasbourg, country: FRA, frontend: shown}
     rule: section 4 (frontend-only alias)
   - id: G10

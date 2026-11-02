@@ -17,3 +17,9 @@ Gates in `evaluate.py` are PROPOSED (W removed >= 80%, C preserved >= 90%); they
 beside this branch's package). `evaluate.py` now loads the web code's `geo.py` by file path. Import mechanism only;
 no metric, input or rule changed. New sha: `12926c7c9e4ac89841bf517fce6831f730aab36b3241bef22ef0ad4fdd41ba1e`. The audit copy differs from the original only in line endings
 (same JSON content; CRLF-normalised hashes equal).
+
+**Amendment 2 (before any result was written):** `acceptance-cases.yaml` was not valid YAML (two descriptive `stored:`
+values contained ": "). They are now quoted. No `expected` value, case or development id changed (diff: 2 lines).
+evaluate.py import fixes: loaded by path and registered in `sys.modules`. Final hashes:
+- `*evaluations/geolocation/acceptance-cases.yaml`: `92a30dd268239b2c9e5ce8c0878ccdf35e33a5f598d73efd112d74a4ecca3898`
+- `*evaluations/geolocation/contract-eval/evaluate.py`: `a922554753c951701e75b27c9879a9549a79269f8f4905fc53296ce3f0fb5712`
