@@ -1,0 +1,116 @@
+{
+ "label": "after",
+ "runs": 3,
+ "pages": {
+  "situation israel-palestine": {
+   "url": "/situations/israel-palestine",
+   "seconds": [
+    3.675,
+    3.648,
+    3.433
+   ],
+   "median": 3.648,
+   "bytes": 17209
+  },
+  "situation russia-united-states": {
+   "url": "/situations/russia-united-states",
+   "seconds": [
+    6.401,
+    6.365,
+    6.314
+   ],
+   "median": 6.365,
+   "bytes": 25193
+  },
+  "situation gaza-ceasefire": {
+   "url": "/situations/gaza-ceasefire",
+   "seconds": [
+    1.413,
+    1.427,
+    1.437
+   ],
+   "median": 1.427,
+   "bytes": 10582
+  },
+  "situation russia-ukraine-war": {
+   "url": "/situations/russia-ukraine-war",
+   "seconds": [
+    2.939,
+    2.995,
+    3.129
+   ],
+   "median": 2.995,
+   "bytes": 23730
+  },
+  "development 449 (520 items)": {
+   "url": "/developments/449",
+   "seconds": [
+    3.139,
+    3.17,
+    3.287
+   ],
+   "median": 3.17,
+   "bytes": 559611
+  },
+  "development 514 (274 items)": {
+   "url": "/developments/514",
+   "seconds": [
+    1.514,
+    1.535,
+    1.516
+   ],
+   "median": 1.516,
+   "bytes": 292932
+  },
+  "development 399 (276 items)": {
+   "url": "/developments/399",
+   "seconds": [
+    1.78,
+    1.936,
+    2.004
+   ],
+   "median": 1.936,
+   "bytes": 311955
+  },
+  "situation sudan-civil-war (small)": {
+   "url": "/situations/sudan-civil-war",
+   "seconds": [
+    0.37,
+    0.347,
+    0.395
+   ],
+   "median": 0.37,
+   "bytes": 4427
+  },
+  "development 11 (small)": {
+   "url": "/developments/11",
+   "seconds": [
+    0.394,
+    0.325,
+    0.33
+   ],
+   "median": 0.33,
+   "bytes": 11283
+  },
+  "today /": {
+   "url": "/",
+   "seconds": [
+    0.426,
+    0.451,
+    0.424
+   ],
+   "median": 0.426,
+   "bytes": 114619
+  },
+  "map /map": {
+   "url": "/map",
+   "seconds": [
+    0.406,
+    0.422,
+    0.404
+   ],
+   "median": 0.406,
+   "bytes": 114621
+  }
+ }
+}
