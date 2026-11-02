@@ -27,7 +27,10 @@
   <h2>Timeline · newest first</h2>
   {% if situation.developments %}
   <ol class="timeline">
+    {% set day = namespace(last=none) %}
     {% for d in situation.developments %}
+    {% set bucket = d.first_reported_at | day_bucket %}
+    {% if bucket != day.last %}<li class="tl-day"><h3>{{ bucket }}</h3></li>{% set day.last = bucket %}{% endif %}
     <li class="tl">
       <div class="when">{{ d.first_reported_at | when }}</div>
       <div class="title"><a href="/developments/{{ d.id }}">{{ d.what_happened }}</a></div>
@@ -45,7 +48,7 @@
     {% endfor %}
   </ol>
   {% else %}
-  <div class="empty"><strong>No developments linked yet.</strong>This situation is tracked; developments join it when they involve its actors.</div>
+  <div class="empty"><strong>No developments in this situation yet.</strong>It is tracked: a corroborated development joins it when it involves the situation's actors. Until then, see <a href="/">Today</a> for everything that changed.</div>
   {% endif %}
 </section>
 <aside>
@@ -62,7 +65,9 @@
     <h2>Geographic context</h2>
     <div class="mini-wrap"><div id="map" class="mini-map" data-mode="situation"
       data-geojson="/api/workspace/developments.geojson?scope=situation&amp;situation={{ situation.slug | urlencode }}&amp;show_muted=1"
-      role="region" aria-label="Map of this situation's developments"></div></div>
+      role="region" aria-label="Map of this situation's developments"></div>
+      <p class="map-empty" id="map-empty" hidden>None of this situation's developments has a confirmed location.</p></div>
+    {% include "_legend.html" %}
     <p class="hint">Developments whose stored location is confirmed by the places their reports mention. The others appear in the timeline only.</p>
   </section>
   <section class="section panel">

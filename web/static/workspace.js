@@ -89,7 +89,7 @@
     map.on("load", () => {
       const f = form();
       if (f && f.country && f.country.value) selectCountry(f.country.value);
-      if (!workspace) fitToData(map, geojsonUrl(el));
+      if (workspace) checkEmpty(el); else fitToData(map, geojsonUrl(el));
     });
 
     map.on("mouseenter", "points", e => {
@@ -140,8 +140,20 @@
     return map;
   }
 
+  // "No confirmed location" overlay: only when the view has developments and none of them can be placed on the map
+  // (an empty view is explained by the feed's own empty state)
+  function markEmpty(j) {
+    const note = document.getElementById("map-empty");
+    if (note && j && j.features) note.hidden = !(j.features.length === 0 && (j.unmapped || 0) > 0);
+  }
+
+  function checkEmpty(el) {
+    fetch(geojsonUrl(el)).then(r => r.ok ? r.json() : null).then(markEmpty).catch(() => {});
+  }
+
   function fitToData(map, url) {
     fetch(url).then(r => r.ok ? r.json() : null).then(j => {
+      markEmpty(j);
       if (!j || !j.features || !j.features.length) return;
       const b = new maplibregl.LngLatBounds();
       j.features.forEach(ft => b.extend(ft.geometry.coordinates));
@@ -175,9 +187,13 @@
     if (!el || !el._map) return;
     const src = el._map.getSource("devs");
     if (src) src.setData(geojsonUrl(el));
+    checkEmpty(el);
   }
 
   document.addEventListener("DOMContentLoaded", () => {
+    // the legend starts closed at phone width so it does not cover the map (one tap opens it)
+    if (window.matchMedia && window.matchMedia("(max-width: 640px)").matches)
+      document.querySelectorAll("details.map-legend").forEach(d => { d.open = false; });
     const el = document.getElementById("map");
     if (el) initMap(el);
 

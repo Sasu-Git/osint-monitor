@@ -20,22 +20,23 @@
       {% if d.summary.text %}<div class="summary">{{ d.summary.text }}</div>{% endif %}
       <div class="meta-right">
         {{ ui.confidence(d.confidence.confidence_class) }}
-        <span class="time">{{ d.last_updated_at | when }}</span>
+        <span class="time"><span class="day-tag">{{ d.last_updated_at | day_bucket }}</span> {{ d.last_updated_at | when }}</span>
         <span class="state state-{{ it.lifecycle }}">{{ 'New' if it.lifecycle == 'new' else 'Updated' }}</span>
       </div>
-      <div class="line">
+      {# line-class / line-geo / line-ctx: phone width keeps actors, place and situation, drops the chips (app.css) #}
+      <div class="line line-class">
         {{ ui.significance(d.significance_class) }}
         {{ ui.event_type(d.classification.event_type) }}
         {{ ui.domain(d.classification.event_domain) }}
         {{ ui.actors(d.principal_actors) }}
       </div>
-      <div class="line">
+      <div class="line line-geo">
         {{ ui.place(g) }}
         {% if it.involves %}<span class="involves" title="States the principal actors act for">Involves {{ it.involves | map(attribute=1) | join(', ') }}</span>{% endif %}
       </div>
-      <div class="line">
+      <div class="line line-ctx">
         {{ ui.situation(c.situation_slug, c.situation_title) }}
-        <span>{{ ui.sources(c.independent_sources, None) }}</span>
+        <span class="srcs">{{ ui.sources(c.independent_sources, None) }}</span>
       </div>
       {% if it.priority.note %}<div class="prio-note">{{ it.priority.note }}</div>{% endif %}
       {% if c.reasons.surfaced or c.reasons.caveats %}
@@ -51,11 +52,21 @@
   <p class="hint">Showing the first {{ page.cards | length }} of {{ page.total }}. Narrow the filters to see the rest.</p>
   {% endif %}
   {% else %}
-  <div class="empty">
-    <strong>No corroborated developments in this period.</strong>
-    {% if page.anchor is none %}Nothing has been collected yet. Run <code>python main.py collect</code> or the daemon.
-    {% elif page.muted and not page.filters.show_muted %}{{ page.muted }} muted development{{ '' if page.muted == 1 else 's' }} hidden: tick "Show muted" to see {{ 'it' if page.muted == 1 else 'them' }}.
-    {% else %}Try a longer period or clear the filters.{% endif %}
+  {% set f = page.filters %}
+  {% set narrowed = f.country or f.domain or f.type or f.confidence or f.lifecycle or f.situation %}
+  <div class="empty" role="status">
+    {% if page.anchor is none %}
+      <strong>Nothing collected yet.</strong>Developments appear here once the pipeline has collected and corroborated reports.
+    {% elif page.muted and not f.show_muted %}
+      <strong>Every development in this view is muted.</strong>{{ page.muted }} muted development{{ '' if page.muted == 1 else 's' }} hidden by your priorities.
+      <a href="{{ request.url.include_query_params(show_muted=1) }}">Show {{ 'it' if page.muted == 1 else 'them' }}</a> or change the priority on <a href="/priorities">Priorities</a>.
+    {% elif narrowed %}
+      <strong>No development matches these filters.</strong>
+      Filtered by {% set parts = [] %}{% if f.country %}{% set _ = parts.append('country') %}{% endif %}{% if f.domain %}{% set _ = parts.append('topic') %}{% endif %}{% if f.type %}{% set _ = parts.append('type') %}{% endif %}{% if f.confidence %}{% set _ = parts.append('confidence') %}{% endif %}{% if f.lifecycle %}{% set _ = parts.append('lifecycle') %}{% endif %}{% if f.situation %}{% set _ = parts.append('situation') %}{% endif %}{{ parts | join(', ') }}.
+      <a href="{{ request.url.path }}?range={{ f.range | urlencode }}">Clear the filters</a> or choose a longer period.
+    {% else %}
+      <strong>No corroborated development in this period.</strong>Choose a longer period.{% if page.awaiting_corroboration %} Stories with a single source wait for corroboration (below).{% endif %}
+    {% endif %}
   </div>
   {% endif %}
 

@@ -1,0 +1,13 @@
+{# Map legend, shared by the workspace map and the Situation mini-map. A disclosure (open by default, closed on phone
+   width by workspace.js) so it never hides the map; read by screen readers, it is not decoration. #}
+<details class="map-legend" open>
+  <summary>Map legend</summary>
+  <ul>
+    <li><i class="dot lvl-NORMAL" aria-hidden="true"></i>Point: a specific place</li>
+    <li><i class="dot ring" aria-hidden="true"></i>Hollow ring: the whole country, no specific place</li>
+    <li><i class="dot lvl-HIGH" aria-hidden="true"></i>Larger, amber: high priority</li>
+    <li><i class="dot lvl-LOW" aria-hidden="true"></i>Smaller, grey: low priority</li>
+    <li><i class="dot cluster-high" aria-hidden="true"></i>Group with a high-priority item</li>
+    <li><i class="loc-mark" aria-hidden="true"></i>No confirmed location: in the list, not on the map</li>
+  </ul>
+</details>

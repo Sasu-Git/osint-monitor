@@ -52,8 +52,17 @@ def when(value: datetime | None, with_date: bool = True) -> str:
     return value.strftime("%d %b %Y, %H:%M UTC" if with_date else "%H:%M UTC").lstrip("0")
 
 
+def day_bucket(value: datetime | None, now: datetime | None = None) -> str:
+    """"Today", "Yesterday" or "Earlier" by UTC calendar day of a stored timestamp. Presentation only: it groups
+    by when something was reported, never by lifecycle."""
+    if value is None:
+        return "Earlier"
+    days = ((now or datetime.utcnow()).date() - value.date()).days
+    return "Today" if days <= 0 else "Yesterday" if days == 1 else "Earlier"
+
+
 templates.env.filters.update(
-    type_label=type_label, domain_label=domain_label, when=when,
+    type_label=type_label, domain_label=domain_label, when=when, day_bucket=day_bucket,
     conf_label=lambda v: CONFIDENCE_LABELS.get(v or "", "Not assessed"),
     role_label=lambda v: SOURCE_ROLE_LABELS.get(v or "unknown"),
     evidence_label=lambda v: EVIDENCE_LABELS.get(v or ""),

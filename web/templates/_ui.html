@@ -32,8 +32,8 @@
   {% if g.mapped %}<span class="place" title="Location (stored, confirmed by the places the reports mention)">
     {%- if g.country_level %}{{ g.country_name }} <span class="time">(whole country)</span>
     {%- else %}{{ g.place }}{% if g.country_name and g.country_name != g.place %}, {{ g.country_name }}{% endif %}{% endif %}</span>
-  {%- elif g.country_name %}<span class="place unmapped" title="Not on the map: {{ g.not_mapped_because }}">{{ g.country_name }} <span class="time">(not on map)</span></span>
-  {%- else %}<span class="none" title="{{ g.not_mapped_because }}">No confirmed location</span>{% endif %}
+  {%- elif g.country_name %}<span class="place unmapped" title="Not on the map: {{ g.not_mapped_because }}"><i class="loc-mark" aria-hidden="true"></i>{{ g.country_name }} <span class="time">(location not confirmed, not on the map)</span><span class="sr-only">: {{ g.not_mapped_because }}</span></span>
+  {%- else %}<span class="place none" title="{{ g.not_mapped_because or 'The reports name no place that confirms a location' }}"><i class="loc-mark" aria-hidden="true"></i>No confirmed location <span class="time">(listed here, not on the map)</span>{% if g.not_mapped_because %}<span class="sr-only">: {{ g.not_mapped_because }}</span>{% endif %}</span>{% endif %}
 {%- endmacro %}
 
 {% macro sources(independent, total) -%}

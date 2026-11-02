@@ -219,9 +219,13 @@ h1, h2, h3 { margin: 0; font-weight: 600; letter-spacing: -0.01em; }
 .ws-mapwrap { position: relative; flex: 0 0 auto; height: 44vh; min-height: 260px; border-bottom: 1px solid var(--line); }
 .view-map .ws-mapwrap { height: 68vh; }
 .ws-mapwrap > .ws-map, .mini-wrap > .mini-map { width: 100%; height: 100%; background: var(--map-sea); }
-.map-legend { position: absolute; left: 10px; bottom: 8px; display: flex; gap: 12px; flex-wrap: wrap; font-size: 11px;
-  color: var(--text-2); background: color-mix(in srgb, var(--panel) 85%, transparent); padding: 4px 8px;
-  border: 1px solid var(--line); border-radius: var(--radius); pointer-events: none; }
+/* top-left: the zoom control is top-right and the attribution bottom-right */
+.map-legend { position: absolute; left: 10px; top: 10px; max-width: min(300px, calc(100% - 70px)); font-size: 11px;
+  color: var(--text-2); background: color-mix(in srgb, var(--panel) 90%, transparent); padding: 4px 8px;
+  border: 1px solid var(--line); border-radius: var(--radius); }
+.map-legend summary { cursor: pointer; font-weight: 600; color: var(--text-2); }
+.map-legend summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.map-legend ul { list-style: none; margin: 4px 0 2px; padding: 0; display: grid; gap: 3px; }
 .dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 5px; vertical-align: -1px; background: #8fb3d9; }
 .dot.lvl-HIGH { background: var(--high); width: 11px; height: 11px; }
 .dot.lvl-LOW { background: var(--low); width: 7px; height: 7px; }
@@ -353,4 +357,36 @@ body.collapsed-rail-left .drawer-btn.left { display: block; position: fixed; lef
   .ws-feed { padding: 0 12px 64px; }
   .prio-page { grid-template-columns: 1fr; }
   .nav a { padding: 0 8px; }
+}
+
+/* --- accessibility and polish (2026-11 owner follow-ups) -------------------------------------------- */
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0);
+  white-space: nowrap; border: 0; }
+.lvl-seg .lv:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; position: relative; z-index: 1; }
+.link-btn:focus-visible, .icon-btn:focus-visible, .drawer-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+/* no confirmed location: a dashed empty circle, the same mark as in the map legend */
+.loc-mark { display: inline-block; width: 9px; height: 9px; border: 1.5px dashed var(--text-3); border-radius: 50%;
+  margin-right: 5px; vertical-align: -1px; }
+.place.none, .place.unmapped { color: var(--text-3); }
+.day-tag { font-weight: 600; color: var(--text-2); }
+.timeline .tl-day { list-style: none; margin: 18px 0 4px; }
+.timeline .tl-day:first-child { margin-top: 0; }
+.timeline .tl-day h3 { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-3);
+  margin: 0; padding-bottom: 4px; border-bottom: 1px solid var(--line); }
+.mini-wrap + .map-legend, .section > .map-legend { position: static; margin: 0 0 8px; pointer-events: auto; }
+.map-empty { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); max-width: 80%; margin: 0;
+  padding: 8px 12px; font-size: 13px; color: var(--text-2); text-align: center; background: var(--panel);
+  border: 1px solid var(--line); border-radius: var(--radius); }
+.map-empty[hidden] { display: none; }
+.empty a { margin-left: 2px; }
+/* phone width: title, time, actors, place and situation stay; classification chips, sources, reasons and the
+   summary go (they remain on the Development page) */
+@media (max-width: 640px) {
+  .dev { padding: 10px 2px; }
+  .dev .summary, .dev .reasons, .dev .line-class .chip, .dev .line-class .sig, .dev .line-ctx .srcs, .dev .involves,
+  .dev .meta-right .state { display: none; }
+  .dev .rank { font-size: 11px; }
+  .dev .title { font-size: 15px; }
+  .dev .line { font-size: 12.5px; gap: 4px 10px; }
+  .map-legend { font-size: 10.5px; gap: 6px 10px; max-width: calc(100% - 20px); }
 }

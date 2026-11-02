@@ -72,13 +72,8 @@
   <div class="ws-mapwrap">
     <div id="map" class="ws-map" data-geojson="/api/workspace/developments.geojson" data-mode="workspace"
          role="region" aria-label="World map of developments"></div>
-    <div class="map-legend" aria-hidden="true">
-      <span><i class="dot lvl-HIGH"></i>High priority</span>
-      <span><i class="dot lvl-NORMAL"></i>Normal</span>
-      <span><i class="dot lvl-LOW"></i>Low</span>
-      <span><i class="dot ring"></i>Whole-country location</span>
-      <span><i class="dot cluster-high"></i>Group with a high-priority item</span>
-    </div>
+    {% include "_legend.html" %}
+    <p class="map-empty" id="map-empty" hidden>No development in this view has a confirmed location. They are all in the list below.</p>
   </div>
   {% include "_feed.html" %}
 </section>

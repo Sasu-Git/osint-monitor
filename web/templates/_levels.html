@@ -1,10 +1,16 @@
-{# HIGH / NORMAL / LOW / MUTED control for one country or topic; posts its stable id. #}
-{% macro levels_control(scope, key, current, label) -%}
+{# HIGH / NORMAL / LOW / MUTED control for one country or topic; posts its stable id. Native buttons: Tab focuses,
+   Enter / Space activates; the tooltip and the accessible name say what each letter does. #}
+{% macro levels_control(scope, key, current, label, idp="lv") -%}
+  {% set help = {"HIGH": "High: surface first", "NORMAL": "Normal: default order",
+                 "LOW": "Low: quieter, lower in the list", "MUTED": "Muted: hidden unless Show muted is ticked"} %}
   <div class="lvl-seg" role="group" aria-label="Priority for {{ label }}">
     {% for lv in levels %}
-    <button type="button" class="lv lv-{{ lv }}" {% if lv == current %}aria-pressed="true"{% else %}aria-pressed="false"{% endif %}
+    {# a stable id lets HTMX put keyboard focus back on the same button after it swaps the panel #}
+    <button type="button" id="{{ idp }}-{{ scope }}-{{ key }}-{{ lv }}" class="lv lv-{{ lv }}" {% if lv == current %}aria-pressed="true"{% else %}aria-pressed="false"{% endif %}
             hx-post="/ui/priorities/{{ scope }}/{{ key }}" hx-vals='{"level": "{{ lv }}"}'
-            hx-target="#priorities" hx-swap="outerHTML" title="{{ lv | capitalize }}">{{ lv[0] }}</button>
+            hx-target="#priorities" hx-swap="outerHTML"
+            title="{{ help[lv] }}{% if lv == current %} (current){% endif %}"
+            aria-label="{{ label }}: {{ help[lv] }}">{{ lv[0] }}</button>
     {% endfor %}
   </div>
 {%- endmacro %}

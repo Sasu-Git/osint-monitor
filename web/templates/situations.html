@@ -9,8 +9,9 @@
 {% set active = situations | selectattr('development_count') | list %}
 {% set idle = situations | rejectattr('development_count') | list %}
 {% if not situations %}
-  <div class="empty"><strong>No situations yet.</strong>Situations appear once developments recur around the same actors.</div>
+  <div class="empty"><strong>No situations yet.</strong>A situation appears when developments with the same principal actors recur, or when one is predefined. Developments are on <a href="/">Today</a> meanwhile.</div>
 {% else %}
+{% if not active %}<p class="notice">No situation has a development yet; the tracked ones are listed below.</p>{% endif %}
 <ol class="sit-list">
   {% for s in active %}
   <li class="sit">

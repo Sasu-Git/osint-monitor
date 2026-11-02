@@ -271,4 +271,4 @@ def test_situation_page_and_its_map(seeded):
     geo = c.get("/api/workspace/developments.geojson?scope=situation&situation=china-united-states&show_muted=1")
     assert geo.status_code == 200 and geo.json()["type"] == "FeatureCollection"
     empty = c.get("/situations/sudan-civil-war")
-    assert empty.status_code == 200 and "No developments linked yet" in empty.text
+    assert empty.status_code == 200 and "No developments in this situation yet" in empty.text

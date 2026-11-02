@@ -98,7 +98,7 @@ def test_situation_pages_load_and_reach_evidence_in_one_click(seeded):
     first = re.search(r'href="(/developments/\d+)"', detail.text).group(1)
     assert page(first).status_code == 200
     empty = page("/situations/sudan-civil-war")
-    assert empty.status_code == 200 and "No developments linked yet" in empty.text
+    assert empty.status_code == 200 and "No developments in this situation yet" in empty.text
     assert page("/situations/no-such-thing").status_code == 404
     assert page("/developments/999999").status_code == 404
 
@@ -118,7 +118,7 @@ def test_filters_narrow_the_list_and_htmx_gets_only_the_list(seeded):
 def test_empty_database_shows_an_empty_state(db):
     r = page("/")
     assert r.status_code == 200
-    assert "No corroborated developments in this period." in r.text and "Nothing has been collected yet" in r.text
+    assert "Nothing collected yet." in r.text
 
 
 def test_database_errors_render_an_unavailable_page(monkeypatch):
