@@ -115,8 +115,12 @@ deploying any key; no key is stored here.
 
 **Outcome after 1–3:** the recurring "14 failed collectors" warning reduces to genuine, transient failures.
 
-**Owner inputs needed:**
+**Owner rulings (2026-11-02):**
+- **WP2 exemption set:** **Defense Stock Monitor** and **Commodity SIGINT** are the event-driven sources exempt from
+  silence-break ("Source resumed") alerts.
+- **WP1 contact string:** unresolved. WP1 waits until the owner provides a real contact string; no placeholder is used.
+
+**Owner inputs still needed:**
 - the WP1 contact string;
-- the WP2 event-driven list;
 - whether WP3 is (a) only or (a) + (b);
 - whether to obtain the Congress key (⚠️ via the Data & AI Team).
