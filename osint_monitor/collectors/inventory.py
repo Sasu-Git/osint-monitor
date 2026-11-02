@@ -154,7 +154,8 @@ def configured_endpoints(config=None) -> list[Endpoint]:
                      f"{instances[0]}/{user}/rss", note=f"mirrors tried in order: {', '.join(instances)}",
                      gate=Gate(config_enabled=account.enabled, access=account.access)))
     add(Endpoint("social", "XForYouCollector", "X (For You feed of the logged-in account)", "X-ForYou",
-                 "x.com/home via Chrome CDP", "https://x.com/home", gate=Gate(prerequisite="playwright")))
+                 "x.com/home via Chrome CDP", "https://x.com/home",
+                 gate=Gate(env=("OSINT_X_FORYOU",), prerequisite="playwright"), note="daemon opt-in; normally run by hand"))
 
     for name, feed in sanctions.SANCTIONS_FEEDS.items():
         identity = "US Treasury OFAC" if name.startswith("OFAC") else "UN Security Council"

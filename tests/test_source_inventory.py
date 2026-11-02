@@ -16,11 +16,20 @@ from osint_monitor.core.config import SourceConfig, SourcesFileConfig, TwitterAc
 from osint_monitor.core.database import Base, RawItem, Source
 
 GATED_ENV = {"FAA_NOTAM_KEY": "x", "COMTRADE_API_KEY": "x", "SAM_GOV_API_KEY": "x", "SPACETRACK_USER": "x",
-             "SPACETRACK_PASS": "x", "RIPE_ATLAS_KEY": "x"}
+             "SPACETRACK_PASS": "x", "RIPE_ATLAS_KEY": "x", "CONGRESS_API_KEY": "x", "OSINT_X_FORYOU": "1"}
 NOW = datetime(2026, 9, 29, 12, 0)
 
 
-def test_inventory_covers_every_collector_build_collectors_can_build(monkeypatch):
+@pytest.fixture()
+def finance_agent(tmp_path, monkeypatch):
+    """A local finance_agent checkout (only its run.py is looked for); nothing is run."""
+    from osint_monitor.collectors import finance_bridge
+    (tmp_path / "run.py").write_text("", encoding="utf-8")
+    monkeypatch.setattr(finance_bridge, "_DEFAULT_FINANCE_AGENT_PATH", tmp_path)
+    return tmp_path
+
+
+def test_inventory_covers_every_collector_build_collectors_can_build(monkeypatch, finance_agent):
     from osint_monitor.processors.pipeline import build_collectors
     for k, v in GATED_ENV.items():
         monkeypatch.setenv(k, v)
@@ -76,6 +85,29 @@ def test_disabled_nitter_accounts_are_listed_but_not_built(monkeypatch):
     assert [c.name for c in pipeline.build_collectors() if type(c).__name__ == "NitterCollector"] == ["@on"]
 
 
+OPTIONAL = {"CongressCollector", "FinanceBridgeCollector", "XForYouCollector"}
+
+
+def test_optional_collectors_are_not_built_without_their_prerequisite(monkeypatch, tmp_path):
+    from osint_monitor.collectors import finance_bridge
+    from osint_monitor.processors.pipeline import build_collectors
+    for var in ("CONGRESS_API_KEY", "OSINT_X_FORYOU"):
+        monkeypatch.delenv(var, raising=False)
+    monkeypatch.setattr(finance_bridge, "_DEFAULT_FINANCE_AGENT_PATH", tmp_path / "missing")
+    assert not {type(c).__name__ for c in build_collectors()} & OPTIONAL
+
+
+def test_optional_collectors_are_built_with_their_prerequisite(monkeypatch, finance_agent):
+    from osint_monitor.collectors.browser import XForYouCollector
+    from osint_monitor.processors.pipeline import build_collectors
+    monkeypatch.setenv("CONGRESS_API_KEY", "x")
+    monkeypatch.setenv("OSINT_X_FORYOU", "1")
+    built = {type(c).__name__: c for c in build_collectors()}
+    assert OPTIONAL <= set(built)
+    assert built["FinanceBridgeCollector"].agent_path == finance_agent
+    assert XForYouCollector().name == "X-ForYou"                   # manual use constructs it without the opt-in
+
+
 def test_credentials_decide_enabled_and_alternative_modes_switch():
     eps = inv.configured_endpoints()
     firms = [e for e in eps if e.collector == "NASAFIRMSCollector"]
@@ -86,7 +118,7 @@ def test_credentials_decide_enabled_and_alternative_modes_switch():
     acled = next(e for e in eps if e.collector == "ACLEDCollector")
     assert inv.gate_status(acled.gate, {"ACLED_EMAIL": "a"}) == (False, "ACLED_PASSWORD not set")
     congress = next(e for e in eps if e.collector == "CongressCollector")
-    assert inv.gate_status(congress.gate, {})[0] is False      # built, but returns nothing without the key
+    assert inv.gate_status(congress.gate, {})[0] is False      # not built without the key
 
 
 def make_db(path, rows):

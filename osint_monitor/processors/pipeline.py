@@ -13,6 +13,7 @@ import os
 import threading
 import time
 from datetime import datetime
+from pathlib import Path
 
 from sqlalchemy.orm import Session
 
@@ -137,7 +138,9 @@ def build_collectors() -> list[BaseCollector]:
         from osint_monitor.collectors.govint import (
             CongressCollector, TravelAdvisoryCollector, OONICollector,
         )
-        collectors.append(CongressCollector())
+        # Congress only if API key available
+        if os.environ.get("CONGRESS_API_KEY"):
+            collectors.append(CongressCollector())
         collectors.append(TravelAdvisoryCollector())
         collectors.append(OONICollector())
         # NOTAMCollector only if API key available
@@ -196,10 +199,11 @@ def build_collectors() -> list[BaseCollector]:
     except ImportError:
         logger.debug("Infrastructure collectors not available")
 
-    # Financial intelligence bridge (runs finance_agent, extracts signals)
+    # Financial intelligence bridge (runs finance_agent, extracts signals) only if the finance_agent checkout exists
     try:
-        from osint_monitor.collectors.finance_bridge import FinanceBridgeCollector
-        collectors.append(FinanceBridgeCollector())
+        from osint_monitor.collectors import finance_bridge
+        if (Path(finance_bridge._DEFAULT_FINANCE_AGENT_PATH) / "run.py").exists():
+            collectors.append(finance_bridge.FinanceBridgeCollector())
     except ImportError:
         logger.debug("Finance bridge not available")
 
@@ -236,10 +240,12 @@ def build_collectors() -> list[BaseCollector]:
     except ImportError:
         logger.debug("Spectrum collectors not available")
 
-    # Browser-based X/Twitter collector (uses Playwright + Chrome profile)
+    # Browser-based X/Twitter collector (uses Playwright + Chrome profile) only on explicit opt-in (OSINT_X_FORYOU=1):
+    # it needs a logged-in Chrome with CDP, so it is normally run by hand
     try:
-        from osint_monitor.collectors.browser import XForYouCollector
-        collectors.append(XForYouCollector(scroll_rounds=15, max_items=60))
+        if os.environ.get("OSINT_X_FORYOU"):
+            from osint_monitor.collectors.browser import XForYouCollector
+            collectors.append(XForYouCollector(scroll_rounds=15, max_items=60))
     except ImportError:
         logger.debug("Browser collector not available (playwright not installed)")
 
