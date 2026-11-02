@@ -1,7 +1,20 @@
 # Situation membership contract v2: testable form, PROPOSED (2026-11-02)
 
-**Status.** Design only. No runtime, schema or config change. Every decision below is `PROPOSED` until the owner
-approves it.
+**Status.** Design only. No runtime, schema or config change. The five product decisions below are **decided by the
+owner (2026-11-02)**. D1, D7, D8, the reason codes and the evaluation gates remain `PROPOSED`. Nothing is implemented.
+
+## Owner rulings (2026-11-02)
+
+| Decision | Ruling | Contract effect |
+|---|---|---|
+| Commentary (D2) | **(b) linked context, not a member** | Commentary is never a member, never in the centroid, never reactivates a Situation; shown as "Analysis" on the page. X2 `COMMENTARY_ONLY` applies; D214, D242, D112 become linked context |
+| No principals (D3) | **(a) never joins automatically** | X1 `NO_PRINCIPALS` applies; the mentioned-entities fallback path is withdrawn for continuation; D439, D858, D1084 would not join; owner `MANUAL` assignment remains possible |
+| Half coverage (D4) | **(b) scope signal plus a specific place in scope** | At 50% coverage E2 and an in-scope place are both required; D1086 and D303 stay members; D1147 and D710 do not |
+| Frozen scope (D5) | **(a) derived from the founders and frozen; only the owner widens it** | Automatic Situations get a scope at creation; X3/X4 reject out-of-scope members; widening is a dated owner override in `situations.yaml` |
+| Spillover (D6) | **(b) its own Situations through the normal creation rule** | The war's place scope (Ukraine, Russia) rejects D12, D64, D811; they may found their own Situations by exact actor-set recurrence |
+
+Next step when approved: build the blind evaluation set (section 4) and preregister its gates. No runtime change before
+that.
 
 **Builds on.** `CONTRACT-DRAFT.md` (v1, `eval/soak-safe-20261102` `1c3fa7a`). Its evidence is reused, not re-derived:
 the 2026-11-02 snapshot (sha `b5bb5728…`), `SituationGrouper.explain` on `main` `44e0357`, and the Situation code on
