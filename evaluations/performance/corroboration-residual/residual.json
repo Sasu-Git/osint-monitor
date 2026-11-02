@@ -1,0 +1,1405 @@
+{
+ "developments": 1198,
+ "total_s": 187.52,
+ "parts_s": {
+  "corroboration: assess_event (total)": 135.42,
+  "evidence: build_evidence (items, claims)": 80.09,
+  "evidence: sources.yaml categories": 44.31,
+  "provenance: resolve (roles, attribution, matcher)": 29.11,
+  "provenance: resolver construction (config load, regex compile)": 25.97,
+  "provenance: syndicated-copy matcher": 2.14
+ },
+ "calls": {
+  "corroboration: assess_event (total)": 1198,
+  "evidence: build_evidence (items, claims)": 1198,
+  "evidence: sources.yaml categories": 1198,
+  "provenance: resolver construction (config load, regex compile)": 1198,
+  "provenance: resolve (roles, attribution, matcher)": 1198,
+  "provenance: syndicated-copy matcher": 1198
+ },
+ "sql": {
+  "corroboration: own queries (items, sources, claims)": {
+   "statements": 7381,
+   "seconds": 26.33
+  },
+  "evidence: build_evidence (items, claims)": {
+   "statements": 2396,
+   "seconds": 17.46
+  }
+ },
+ "per_development_ms": {
+  "median": 130.71,
+  "p90": 222.69,
+  "max": 2852.8
+ },
+ "slowest": [
+  [
+   449,
+   2.853
+  ],
+  [
+   398,
+   1.492
+  ],
+  [
+   399,
+   1.47
+  ],
+  [
+   639,
+   1.266
+  ],
+  [
+   514,
+   1.207
+  ],
+  [
+   1,
+   1.09
+  ],
+  [
+   397,
+   0.715
+  ],
+  [
+   626,
+   0.714
+  ],
+  [
+   162,
+   0.6
+  ],
+  [
+   147,
+   0.57
+  ]
+ ],
+ "ledger": [
+  {
+   "tier": "hot",
+   "started": "2026-10-27 10:08:46.493597",
+   "items_new": 1,
+   "developments": 993,
+   "developments_changed": 0,
+   "corroboration_s": 660.7
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-27 10:09:26.489973",
+   "items_new": 25,
+   "developments": 993,
+   "developments_changed": 5,
+   "corroboration_s": 696.7
+  },
+  {
+   "tier": "hot",
+   "started": "2026-10-27 10:31:16.507334",
+   "items_new": 2,
+   "developments": 994,
+   "developments_changed": 0,
+   "corroboration_s": 675.8
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-27 10:49:26.503572",
+   "items_new": 41,
+   "developments": 994,
+   "developments_changed": 8,
+   "corroboration_s": 684.9
+  },
+  {
+   "tier": "cold",
+   "started": "2026-10-27 11:00:07.368552",
+   "items_new": 1,
+   "developments": 994,
+   "developments_changed": 2,
+   "corroboration_s": 671.2
+  },
+  {
+   "tier": "hot",
+   "started": "2026-10-27 11:03:46.500404",
+   "items_new": 1,
+   "developments": 994,
+   "developments_changed": 0,
+   "corroboration_s": 657.8
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-27 11:29:27.239659",
+   "items_new": 33,
+   "developments": 996,
+   "developments_changed": 10,
+   "corroboration_s": 665.9
+  },
+  {
+   "tier": "cold",
+   "started": "2026-10-27 12:00:07.021150",
+   "items_new": 1,
+   "developments": 996,
+   "developments_changed": 0,
+   "corroboration_s": 666.0
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-27 12:19:26.942277",
+   "items_new": 42,
+   "developments": 996,
+   "developments_changed": 13,
+   "corroboration_s": 645.7
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-27 12:49:26.504396",
+   "items_new": 31,
+   "developments": 1001,
+   "developments_changed": 10,
+   "corroboration_s": 1070.6
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-27 13:29:26.530827",
+   "items_new": 36,
+   "developments": 1002,
+   "developments_changed": 6,
+   "corroboration_s": 685.2
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-27 13:49:26.501689",
+   "items_new": 37,
+   "developments": 1002,
+   "developments_changed": 11,
+   "corroboration_s": 713.4
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-27 14:19:26.479801",
+   "items_new": 38,
+   "developments": 1004,
+   "developments_changed": 11,
+   "corroboration_s": 689.8
+  },
+  {
+   "tier": "hot",
+   "started": "2026-10-27 14:21:16.487236",
+   "items_new": 2,
+   "developments": 1004,
+   "developments_changed": 1,
+   "corroboration_s": 712.4
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-27 14:49:27.890226",
+   "items_new": 26,
+   "developments": 1007,
+   "developments_changed": 6,
+   "corroboration_s": 722.4
+  },
+  {
+   "tier": "hot",
+   "started": "2026-10-27 15:01:16.813838",
+   "items_new": 1,
+   "developments": 1007,
+   "developments_changed": 1,
+   "corroboration_s": 5392.2
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-27 16:49:28.563936",
+   "items_new": 82,
+   "developments": 1007,
+   "developments_changed": 17,
+   "corroboration_s": 979.3
+  },
+  {
+   "tier": "hot",
+   "started": "2026-10-27 16:56:16.563564",
+   "items_new": 1,
+   "developments": 1007,
+   "developments_changed": 1,
+   "corroboration_s": 982.4
+  },
+  {
+   "tier": "cold",
+   "started": "2026-10-27 17:00:06.540295",
+   "items_new": 3,
+   "developments": 1010,
+   "developments_changed": 0,
+   "corroboration_s": 874.1
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-27 17:39:26.996801",
+   "items_new": 37,
+   "developments": 1011,
+   "developments_changed": 6,
+   "corroboration_s": 853.7
+  },
+  {
+   "tier": "hot",
+   "started": "2026-10-27 17:53:46.537354",
+   "items_new": 1,
+   "developments": 1011,
+   "developments_changed": 0,
+   "corroboration_s": 16027.8
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-27 22:59:55.172440",
+   "items_new": 124,
+   "developments": 1013,
+   "developments_changed": 16,
+   "corroboration_s": 913.5
+  },
+  {
+   "tier": "hot",
+   "started": "2026-10-27 23:13:46.515188",
+   "items_new": 3,
+   "developments": 1013,
+   "developments_changed": 2,
+   "corroboration_s": 873.8
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-27 23:49:26.633612",
+   "items_new": 38,
+   "developments": 1018,
+   "developments_changed": 7,
+   "corroboration_s": 885.5
+  },
+  {
+   "tier": "cold",
+   "started": "2026-10-28 00:00:06.569826",
+   "items_new": 2,
+   "developments": 1018,
+   "developments_changed": 1,
+   "corroboration_s": 898.0
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-28 08:16:47.963664",
+   "items_new": 126,
+   "developments": 1019,
+   "developments_changed": 16,
+   "corroboration_s": 737.2
+  },
+  {
+   "tier": "hot",
+   "started": "2026-10-28 08:18:37.980236",
+   "items_new": 6,
+   "developments": 1019,
+   "developments_changed": 4,
+   "corroboration_s": 735.2
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-28 08:56:49.112432",
+   "items_new": 42,
+   "developments": 1023,
+   "developments_changed": 8,
+   "corroboration_s": 707.2
+  },
+  {
+   "tier": "cold",
+   "started": "2026-10-28 09:07:28.588177",
+   "items_new": 15,
+   "developments": 1023,
+   "developments_changed": 1,
+   "corroboration_s": 740.1
+  },
+  {
+   "tier": "hot",
+   "started": "2026-10-28 09:11:07.959640",
+   "items_new": 3,
+   "developments": 1023,
+   "developments_changed": 2,
+   "corroboration_s": 719.7
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-28 09:36:48.544098",
+   "items_new": 32,
+   "developments": 1025,
+   "developments_changed": 11,
+   "corroboration_s": 734.8
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-28 10:26:47.978388",
+   "items_new": 41,
+   "developments": 1027,
+   "developments_changed": 6,
+   "corroboration_s": 761.0
+  },
+  {
+   "tier": "hot",
+   "started": "2026-10-28 10:28:37.968880",
+   "items_new": 1,
+   "developments": 1027,
+   "developments_changed": 1,
+   "corroboration_s": 750.6
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-28 10:56:48.776845",
+   "items_new": 34,
+   "developments": 1028,
+   "developments_changed": 10,
+   "corroboration_s": 747.1
+  },
+  {
+   "tier": "hot",
+   "started": "2026-10-28 11:11:08.061895",
+   "items_new": 2,
+   "developments": 1028,
+   "developments_changed": 0,
+   "corroboration_s": 764.2
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-28 11:36:48.543406",
+   "items_new": 40,
+   "developments": 1030,
+   "developments_changed": 7,
+   "corroboration_s": 750.3
+  },
+  {
+   "tier": "hot",
+   "started": "2026-10-28 11:48:37.982054",
+   "items_new": 1,
+   "developments": 1030,
+   "developments_changed": 0,
+   "corroboration_s": 766.0
+  },
+  {
+   "tier": "cold",
+   "started": "2026-10-28 12:07:28.700270",
+   "items_new": 1,
+   "developments": 1031,
+   "developments_changed": 1,
+   "corroboration_s": 741.6
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-28 12:16:49.558915",
+   "items_new": 35,
+   "developments": 1031,
+   "developments_changed": 10,
+   "corroboration_s": 738.9
+  },
+  {
+   "tier": "hot",
+   "started": "2026-10-28 13:03:37.976996",
+   "items_new": 1,
+   "developments": 1034,
+   "developments_changed": 0,
+   "corroboration_s": 743.2
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-28 13:06:47.980170",
+   "items_new": 50,
+   "developments": 1034,
+   "developments_changed": 13,
+   "corroboration_s": 745.4
+  },
+  {
+   "tier": "hot",
+   "started": "2026-10-28 13:43:37.980259",
+   "items_new": 2,
+   "developments": 1038,
+   "developments_changed": 0,
+   "corroboration_s": 717.3
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-28 13:46:47.975924",
+   "items_new": 46,
+   "developments": 1038,
+   "developments_changed": 7,
+   "corroboration_s": 759.0
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-28 14:26:47.975994",
+   "items_new": 45,
+   "developments": 1039,
+   "developments_changed": 11,
+   "corroboration_s": 731.6
+  },
+  {
+   "tier": "hot",
+   "started": "2026-10-28 14:53:37.970570",
+   "items_new": 1,
+   "developments": 1039,
+   "developments_changed": 0,
+   "corroboration_s": 706.9
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-28 14:56:47.979795",
+   "items_new": 37,
+   "developments": 1039,
+   "developments_changed": 7,
+   "corroboration_s": 722.7
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-28 15:36:47.963818",
+   "items_new": 35,
+   "developments": 1039,
+   "developments_changed": 7,
+   "corroboration_s": 724.8
+  },
+  {
+   "tier": "hot",
+   "started": "2026-10-28 15:38:37.962750",
+   "items_new": 1,
+   "developments": 1039,
+   "developments_changed": 1,
+   "corroboration_s": 700.6
+  },
+  {
+   "tier": "hot",
+   "started": "2026-10-28 15:56:08.228067",
+   "items_new": 3,
+   "developments": 1039,
+   "developments_changed": 2,
+   "corroboration_s": 748.7
+  },
+  {
+   "tier": "cold",
+   "started": "2026-10-28 16:07:29.244494",
+   "items_new": 7,
+   "developments": 1040,
+   "developments_changed": 2,
+   "corroboration_s": 724.3
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-28 16:16:47.973037",
+   "items_new": 36,
+   "developments": 1040,
+   "developments_changed": 8,
+   "corroboration_s": 722.2
+  },
+  {
+   "tier": "hot",
+   "started": "2026-10-28 16:33:38.115306",
+   "items_new": 1,
+   "developments": 1040,
+   "developments_changed": 1,
+   "corroboration_s": 723.3
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-28 17:06:47.979115",
+   "items_new": 45,
+   "developments": 1042,
+   "developments_changed": 10,
+   "corroboration_s": 758.6
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-28 17:46:47.976643",
+   "items_new": 35,
+   "developments": 1046,
+   "developments_changed": 11,
+   "corroboration_s": 776.8
+  },
+  {
+   "tier": "hot",
+   "started": "2026-10-28 17:51:08.144220",
+   "items_new": 1,
+   "developments": 1046,
+   "developments_changed": 0,
+   "corroboration_s": 756.8
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-28 18:16:49.302315",
+   "items_new": 22,
+   "developments": 1048,
+   "developments_changed": 6,
+   "corroboration_s": 765.9
+  },
+  {
+   "tier": "hot",
+   "started": "2026-10-28 18:28:37.971439",
+   "items_new": 1,
+   "developments": 1048,
+   "developments_changed": 1,
+   "corroboration_s": 753.9
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-28 18:56:49.281950",
+   "items_new": 31,
+   "developments": 1049,
+   "developments_changed": 9,
+   "corroboration_s": 776.0
+  },
+  {
+   "tier": "hot",
+   "started": "2026-10-28 19:06:07.981744",
+   "items_new": 1,
+   "developments": 1049,
+   "developments_changed": 1,
+   "corroboration_s": 782.3
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-28 19:36:49.380548",
+   "items_new": 38,
+   "developments": 1051,
+   "developments_changed": 11,
+   "corroboration_s": 780.2
+  },
+  {
+   "tier": "hot",
+   "started": "2026-10-28 19:48:37.989331",
+   "items_new": 2,
+   "developments": 1053,
+   "developments_changed": 1,
+   "corroboration_s": 785.9
+  },
+  {
+   "tier": "cold",
+   "started": "2026-10-28 20:07:28.807430",
+   "items_new": 4,
+   "developments": 1053,
+   "developments_changed": 2,
+   "corroboration_s": 785.1
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-28 20:16:49.163471",
+   "items_new": 45,
+   "developments": 1053,
+   "developments_changed": 9,
+   "corroboration_s": 769.5
+  },
+  {
+   "tier": "hot",
+   "started": "2026-10-28 20:28:37.972612",
+   "items_new": 2,
+   "developments": 1053,
+   "developments_changed": 0,
+   "corroboration_s": 899.8
+  },
+  {
+   "tier": "cold",
+   "started": "2026-10-28 21:07:29.484930",
+   "items_new": 1,
+   "developments": 1053,
+   "developments_changed": 0,
+   "corroboration_s": 965.0
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-28 21:16:48.756618",
+   "items_new": 41,
+   "developments": 1053,
+   "developments_changed": 11,
+   "corroboration_s": 1004.5
+  },
+  {
+   "tier": "hot",
+   "started": "2026-10-28 21:33:37.997065",
+   "items_new": 3,
+   "developments": 1053,
+   "developments_changed": 2,
+   "corroboration_s": 729.3
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-28 22:26:47.985164",
+   "items_new": 41,
+   "developments": 1056,
+   "developments_changed": 11,
+   "corroboration_s": 748.8
+  },
+  {
+   "tier": "hot",
+   "started": "2026-10-28 22:46:07.968917",
+   "items_new": 1,
+   "developments": 1060,
+   "developments_changed": 0,
+   "corroboration_s": 1013.0
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-28 23:06:48.357249",
+   "items_new": 18,
+   "developments": 1060,
+   "developments_changed": 6,
+   "corroboration_s": 1020.2
+  },
+  {
+   "tier": "cold",
+   "started": "2026-10-28 23:07:27.998739",
+   "items_new": 1,
+   "developments": 1060,
+   "developments_changed": 1,
+   "corroboration_s": 1010.7
+  },
+  {
+   "tier": "hot",
+   "started": "2026-10-28 23:31:08.001360",
+   "items_new": 1,
+   "developments": 1060,
+   "developments_changed": 1,
+   "corroboration_s": 1011.7
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-29 00:26:48.018425",
+   "items_new": 41,
+   "developments": 1061,
+   "developments_changed": 8,
+   "corroboration_s": 1037.4
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-29 01:26:47.978037",
+   "items_new": 26,
+   "developments": 1061,
+   "developments_changed": 9,
+   "corroboration_s": 1032.8
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-29 01:56:47.980699",
+   "items_new": 18,
+   "developments": 1062,
+   "developments_changed": 5,
+   "corroboration_s": 1053.2
+  },
+  {
+   "tier": "hot",
+   "started": "2026-10-29 02:36:07.995424",
+   "items_new": 1,
+   "developments": 1062,
+   "developments_changed": 1,
+   "corroboration_s": 1052.2
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-29 02:36:47.991932",
+   "items_new": 17,
+   "developments": 1062,
+   "developments_changed": 4,
+   "corroboration_s": 1047.4
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-29 03:36:47.984372",
+   "items_new": 33,
+   "developments": 1063,
+   "developments_changed": 8,
+   "corroboration_s": 1017.3
+  },
+  {
+   "tier": "cold",
+   "started": "2026-10-29 04:07:28.947424",
+   "items_new": 2,
+   "developments": 1064,
+   "developments_changed": 2,
+   "corroboration_s": 1043.7
+  },
+  {
+   "tier": "hot",
+   "started": "2026-10-29 04:11:08.262789",
+   "items_new": 1,
+   "developments": 1064,
+   "developments_changed": 0,
+   "corroboration_s": 8763.3
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-29 04:16:48.042466",
+   "items_new": 19,
+   "developments": 1064,
+   "developments_changed": 4,
+   "corroboration_s": 2916.2
+  },
+  {
+   "tier": "hot",
+   "started": "2026-10-29 07:06:08.001430",
+   "items_new": 2,
+   "developments": 1064,
+   "developments_changed": 1,
+   "corroboration_s": 840.1
+  },
+  {
+   "tier": "cold",
+   "started": "2026-10-29 07:07:28.033523",
+   "items_new": 13,
+   "developments": 1064,
+   "developments_changed": 0,
+   "corroboration_s": 855.6
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-29 08:06:48.055538",
+   "items_new": 78,
+   "developments": 1064,
+   "developments_changed": 16,
+   "corroboration_s": 839.5
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-29 09:06:47.989630",
+   "items_new": 41,
+   "developments": 1069,
+   "developments_changed": 11,
+   "corroboration_s": 850.3
+  },
+  {
+   "tier": "cold",
+   "started": "2026-10-29 09:07:27.959812",
+   "items_new": 2,
+   "developments": 1069,
+   "developments_changed": 3,
+   "corroboration_s": 895.9
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-29 09:56:47.981369",
+   "items_new": 36,
+   "developments": 1073,
+   "developments_changed": 12,
+   "corroboration_s": 839.9
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-29 10:26:47.997538",
+   "items_new": 30,
+   "developments": 1074,
+   "developments_changed": 8,
+   "corroboration_s": 1136.7
+  },
+  {
+   "tier": "hot",
+   "started": "2026-10-29 11:03:37.977604",
+   "items_new": 2,
+   "developments": 1075,
+   "developments_changed": 2,
+   "corroboration_s": 825.2
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-29 11:06:47.998371",
+   "items_new": 53,
+   "developments": 1076,
+   "developments_changed": 18,
+   "corroboration_s": 831.7
+  },
+  {
+   "tier": "hot",
+   "started": "2026-10-29 11:46:07.984020",
+   "items_new": 1,
+   "developments": 1082,
+   "developments_changed": 1,
+   "corroboration_s": 876.2
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-29 11:46:47.973195",
+   "items_new": 37,
+   "developments": 1082,
+   "developments_changed": 10,
+   "corroboration_s": 822.3
+  },
+  {
+   "tier": "cold",
+   "started": "2026-10-29 12:07:29.745474",
+   "items_new": 1,
+   "developments": 1082,
+   "developments_changed": 3,
+   "corroboration_s": 875.5
+  },
+  {
+   "tier": "hot",
+   "started": "2026-10-29 12:08:38.006385",
+   "items_new": 1,
+   "developments": 1083,
+   "developments_changed": 0,
+   "corroboration_s": 840.6
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-29 12:36:49.235138",
+   "items_new": 46,
+   "developments": 1085,
+   "developments_changed": 11,
+   "corroboration_s": 842.8
+  },
+  {
+   "tier": "hot",
+   "started": "2026-10-29 13:46:07.989830",
+   "items_new": 1,
+   "developments": 1086,
+   "developments_changed": 2,
+   "corroboration_s": 971.9
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-29 13:46:47.987148",
+   "items_new": 62,
+   "developments": 1086,
+   "developments_changed": 18,
+   "corroboration_s": 989.0
+  },
+  {
+   "tier": "hot",
+   "started": "2026-10-29 14:13:38.295344",
+   "items_new": 4,
+   "developments": 1086,
+   "developments_changed": 3,
+   "corroboration_s": 873.8
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-29 14:46:47.988444",
+   "items_new": 52,
+   "developments": 1089,
+   "developments_changed": 10,
+   "corroboration_s": 32127.8
+  },
+  {
+   "tier": "hot",
+   "started": "2026-10-30 00:13:37.982056",
+   "items_new": 2,
+   "developments": 1090,
+   "developments_changed": 2,
+   "corroboration_s": 1106.8
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-30 00:16:48.035898",
+   "items_new": 206,
+   "developments": 1090,
+   "developments_changed": 35,
+   "corroboration_s": 1128.3
+  },
+  {
+   "tier": "cold",
+   "started": "2026-10-30 01:07:28.087142",
+   "items_new": 1,
+   "developments": 1101,
+   "developments_changed": 3,
+   "corroboration_s": 1122.1
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-30 01:26:48.001327",
+   "items_new": 38,
+   "developments": 1101,
+   "developments_changed": 12,
+   "corroboration_s": 1130.2
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-30 02:36:47.992459",
+   "items_new": 26,
+   "developments": 1102,
+   "developments_changed": 7,
+   "corroboration_s": 13220.9
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-30 06:36:48.017460",
+   "items_new": 59,
+   "developments": 1103,
+   "developments_changed": 11,
+   "corroboration_s": 1092.9
+  },
+  {
+   "tier": "hot",
+   "started": "2026-10-30 06:38:37.990566",
+   "items_new": 1,
+   "developments": 1103,
+   "developments_changed": 4,
+   "corroboration_s": 1106.7
+  },
+  {
+   "tier": "cold",
+   "started": "2026-10-30 07:07:31.707129",
+   "items_new": 21,
+   "developments": 1105,
+   "developments_changed": 2,
+   "corroboration_s": 1137.3
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-30 07:16:48.688102",
+   "items_new": 34,
+   "developments": 1107,
+   "developments_changed": 9,
+   "corroboration_s": 921.4
+  },
+  {
+   "tier": "hot",
+   "started": "2026-10-30 07:33:38.030468",
+   "items_new": 1,
+   "developments": 1107,
+   "developments_changed": 1,
+   "corroboration_s": 969.2
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-30 08:26:47.979070",
+   "items_new": 30,
+   "developments": 1111,
+   "developments_changed": 9,
+   "corroboration_s": 908.6
+  },
+  {
+   "tier": "hot",
+   "started": "2026-10-30 08:48:38.151564",
+   "items_new": 1,
+   "developments": 1111,
+   "developments_changed": 1,
+   "corroboration_s": 928.5
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-30 09:16:47.998254",
+   "items_new": 36,
+   "developments": 1112,
+   "developments_changed": 6,
+   "corroboration_s": 947.7
+  },
+  {
+   "tier": "hot",
+   "started": "2026-10-30 10:01:07.968856",
+   "items_new": 1,
+   "developments": 1113,
+   "developments_changed": 0,
+   "corroboration_s": 949.6
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-30 10:06:48.008292",
+   "items_new": 36,
+   "developments": 1113,
+   "developments_changed": 9,
+   "corroboration_s": 950.3
+  },
+  {
+   "tier": "hot",
+   "started": "2026-10-30 10:23:38.024286",
+   "items_new": 2,
+   "developments": 1113,
+   "developments_changed": 0,
+   "corroboration_s": 920.1
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-30 10:56:47.981511",
+   "items_new": 48,
+   "developments": 1113,
+   "developments_changed": 9,
+   "corroboration_s": 909.9
+  },
+  {
+   "tier": "hot",
+   "started": "2026-10-30 11:43:37.969258",
+   "items_new": 2,
+   "developments": 1114,
+   "developments_changed": 0,
+   "corroboration_s": 921.2
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-30 11:46:47.990418",
+   "items_new": 31,
+   "developments": 1114,
+   "developments_changed": 7,
+   "corroboration_s": 963.7
+  },
+  {
+   "tier": "hot",
+   "started": "2026-10-30 14:22:37.471499",
+   "items_new": 4,
+   "developments": 1118,
+   "developments_changed": 0,
+   "corroboration_s": 960.6
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-30 14:30:47.146281",
+   "items_new": 109,
+   "developments": 1118,
+   "developments_changed": 30,
+   "corroboration_s": 906.9
+  },
+  {
+   "tier": "hot",
+   "started": "2026-10-30 15:20:07.136320",
+   "items_new": 3,
+   "developments": 1130,
+   "developments_changed": 2,
+   "corroboration_s": 930.0
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-30 15:20:47.123347",
+   "items_new": 47,
+   "developments": 1130,
+   "developments_changed": 12,
+   "corroboration_s": 937.2
+  },
+  {
+   "tier": "cold",
+   "started": "2026-10-30 15:21:27.146578",
+   "items_new": 1,
+   "developments": 1130,
+   "developments_changed": 1,
+   "corroboration_s": 962.2
+  },
+  {
+   "tier": "hot",
+   "started": "2026-10-30 16:37:37.126629",
+   "items_new": 2,
+   "developments": 1133,
+   "developments_changed": 1,
+   "corroboration_s": 945.4
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-30 16:40:47.132619",
+   "items_new": 60,
+   "developments": 1133,
+   "developments_changed": 16,
+   "corroboration_s": 944.8
+  },
+  {
+   "tier": "cold",
+   "started": "2026-10-30 17:21:28.194837",
+   "items_new": 1,
+   "developments": 1135,
+   "developments_changed": 2,
+   "corroboration_s": 947.1
+  },
+  {
+   "tier": "hot",
+   "started": "2026-10-30 17:30:07.349682",
+   "items_new": 3,
+   "developments": 1135,
+   "developments_changed": 2,
+   "corroboration_s": 938.7
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-30 17:30:47.142948",
+   "items_new": 34,
+   "developments": 1135,
+   "developments_changed": 7,
+   "corroboration_s": 948.9
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-30 18:40:47.124644",
+   "items_new": 41,
+   "developments": 1137,
+   "developments_changed": 12,
+   "corroboration_s": 953.1
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-30 19:10:47.144264",
+   "items_new": 23,
+   "developments": 1139,
+   "developments_changed": 8,
+   "corroboration_s": 24413.2
+  },
+  {
+   "tier": "hot",
+   "started": "2026-10-31 02:12:37.144340",
+   "items_new": 2,
+   "developments": 1139,
+   "developments_changed": 3,
+   "corroboration_s": 907.0
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-31 02:20:48.210232",
+   "items_new": 134,
+   "developments": 1140,
+   "developments_changed": 33,
+   "corroboration_s": 1222.4
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-31 03:20:47.129095",
+   "items_new": 26,
+   "developments": 1149,
+   "developments_changed": 10,
+   "corroboration_s": 1071.8
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-31 04:00:47.145340",
+   "items_new": 22,
+   "developments": 1150,
+   "developments_changed": 6,
+   "corroboration_s": 1225.5
+  },
+  {
+   "tier": "hot",
+   "started": "2026-10-31 04:35:07.153677",
+   "items_new": 1,
+   "developments": 1151,
+   "developments_changed": 0,
+   "corroboration_s": 1230.6
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-31 04:40:48.438913",
+   "items_new": 21,
+   "developments": 1151,
+   "developments_changed": 3,
+   "corroboration_s": 1219.2
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-31 05:30:47.136708",
+   "items_new": 9,
+   "developments": 1151,
+   "developments_changed": 3,
+   "corroboration_s": 1210.7
+  },
+  {
+   "tier": "hot",
+   "started": "2026-10-31 05:32:37.157739",
+   "items_new": 7,
+   "developments": 1151,
+   "developments_changed": 4,
+   "corroboration_s": 983.7
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-31 15:40:47.973278",
+   "items_new": 157,
+   "developments": 1151,
+   "developments_changed": 32,
+   "corroboration_s": 995.6
+  },
+  {
+   "tier": "hot",
+   "started": "2026-10-31 15:57:37.292671",
+   "items_new": 5,
+   "developments": 1151,
+   "developments_changed": 5,
+   "corroboration_s": 1029.4
+  },
+  {
+   "tier": "cold",
+   "started": "2026-10-31 16:21:28.087697",
+   "items_new": 26,
+   "developments": 1163,
+   "developments_changed": 2,
+   "corroboration_s": 1020.2
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-31 16:30:47.133429",
+   "items_new": 25,
+   "developments": 1163,
+   "developments_changed": 10,
+   "corroboration_s": 1004.3
+  },
+  {
+   "tier": "hot",
+   "started": "2026-10-31 16:55:07.227927",
+   "items_new": 1,
+   "developments": 1163,
+   "developments_changed": 2,
+   "corroboration_s": 1039.0
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-31 17:50:47.211451",
+   "items_new": 34,
+   "developments": 1163,
+   "developments_changed": 7,
+   "corroboration_s": 995.0
+  },
+  {
+   "tier": "hot",
+   "started": "2026-10-31 18:12:37.142292",
+   "items_new": 2,
+   "developments": 1163,
+   "developments_changed": 1,
+   "corroboration_s": 1178.2
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-31 18:40:47.142232",
+   "items_new": 23,
+   "developments": 1165,
+   "developments_changed": 7,
+   "corroboration_s": 1098.9
+  },
+  {
+   "tier": "hot",
+   "started": "2026-10-31 19:05:07.142011",
+   "items_new": 1,
+   "developments": 1165,
+   "developments_changed": 1,
+   "corroboration_s": 969.2
+  },
+  {
+   "tier": "warm",
+   "started": "2026-10-31 19:40:48.066763",
+   "items_new": 28,
+   "developments": 1165,
+   "developments_changed": 11,
+   "corroboration_s": 1049.2
+  },
+  {
+   "tier": "hot",
+   "started": "2026-10-31 19:55:07.149394",
+   "items_new": 2,
+   "developments": 1165,
+   "developments_changed": 1,
+   "corroboration_s": 1250.3
+  },
+  {
+   "tier": "warm",
+   "started": "2026-11-01 10:40:48.178955",
+   "items_new": 143,
+   "developments": 1165,
+   "developments_changed": 16,
+   "corroboration_s": 1306.8
+  },
+  {
+   "tier": "hot",
+   "started": "2026-11-01 11:05:07.423582",
+   "items_new": 4,
+   "developments": 1165,
+   "developments_changed": 3,
+   "corroboration_s": 4978.2
+  },
+  {
+   "tier": "cold",
+   "started": "2026-11-01 11:21:28.096808",
+   "items_new": 7,
+   "developments": 1169,
+   "developments_changed": 1,
+   "corroboration_s": 1274.9
+  },
+  {
+   "tier": "warm",
+   "started": "2026-11-01 11:50:47.267659",
+   "items_new": 29,
+   "developments": 1169,
+   "developments_changed": 7,
+   "corroboration_s": 1317.3
+  },
+  {
+   "tier": "hot",
+   "started": "2026-11-01 13:22:37.181919",
+   "items_new": 6,
+   "developments": 1169,
+   "developments_changed": 2,
+   "corroboration_s": 1310.4
+  },
+  {
+   "tier": "warm",
+   "started": "2026-11-01 14:20:47.164515",
+   "items_new": 73,
+   "developments": 1172,
+   "developments_changed": 20,
+   "corroboration_s": 1295.7
+  },
+  {
+   "tier": "hot",
+   "started": "2026-11-02 08:07:37.156210",
+   "items_new": 9,
+   "developments": 1178,
+   "developments_changed": 4,
+   "corroboration_s": 1092.7
+  },
+  {
+   "tier": "warm",
+   "started": "2026-11-02 08:10:47.157075",
+   "items_new": 174,
+   "developments": 1178,
+   "developments_changed": 33,
+   "corroboration_s": 1096.7
+  },
+  {
+   "tier": "cold",
+   "started": "2026-11-02 08:21:27.698015",
+   "items_new": 4,
+   "developments": 1178,
+   "developments_changed": 2,
+   "corroboration_s": 1477.2
+  },
+  {
+   "tier": "hot",
+   "started": "2026-11-02 08:32:37.136297",
+   "items_new": 2,
+   "developments": 1178,
+   "developments_changed": 1,
+   "corroboration_s": 1120.3
+  },
+  {
+   "tier": "warm",
+   "started": "2026-11-02 09:10:47.160137",
+   "items_new": 37,
+   "developments": 1191,
+   "developments_changed": 12,
+   "corroboration_s": 1129.7
+  },
+  {
+   "tier": "hot",
+   "started": "2026-11-02 10:10:07.158975",
+   "items_new": 5,
+   "developments": 1191,
+   "developments_changed": 4,
+   "corroboration_s": 1131.8
+  },
+  {
+   "tier": "cold",
+   "started": "2026-11-02 10:21:28.097954",
+   "items_new": 1,
+   "developments": 1195,
+   "developments_changed": 0,
+   "corroboration_s": 1093.7
+  },
+  {
+   "tier": "warm",
+   "started": "2026-11-02 10:40:47.871797",
+   "items_new": 59,
+   "developments": 1195,
+   "developments_changed": 12,
+   "corroboration_s": 1072.6
+  },
+  {
+   "tier": "hot",
+   "started": "2026-11-02 11:00:07.145563",
+   "items_new": 1,
+   "developments": 1195,
+   "developments_changed": 3,
+   "corroboration_s": 1261.7
+  },
+  {
+   "tier": "warm",
+   "started": "2026-11-02 11:50:47.258695",
+   "items_new": 61,
+   "developments": 1197,
+   "developments_changed": 10,
+   "corroboration_s": 1112.0
+  }
+ ],
+ "ledger_summary": {
+  "runs": 165,
+  "changed_share_median": 0.0038,
+  "changed_share_p90": 0.0112,
+  "changed_developments_median": 4
+ }
+}
