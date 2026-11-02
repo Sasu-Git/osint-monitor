@@ -1,0 +1,94 @@
+{
+ "impl": {
+  "provenance_mismatches": 0,
+  "corroboration_mismatches": 0,
+  "missing_or_extra": 0,
+  "mismatched_events": {
+   "provenance": [],
+   "corroboration": []
+  }
+ },
+ "P1": {
+  "provenance_mismatches": 0,
+  "corroboration_mismatches": 0,
+  "missing_or_extra": 0,
+  "mismatched_events": {
+   "provenance": [],
+   "corroboration": []
+  },
+  "pairs_decided": 113109,
+  "pairs_skipped": 113105,
+  "pairs_full_ratio": 4,
+  "accepted_set_identical": true,
+  "accepted": 4,
+  "skipped_but_p0_accepted": 0,
+  "skipped_not_in_p0_log": 0,
+  "full_ratio_decision_differs": 0,
+  "full_ratio_value_differs": 0,
+  "pair_set_identical_to_p0": true,
+  "max_skipped_bound": 0.945,
+  "skipped_bound_below_p0_ratio": 0
+ },
+ "P2": {
+  "provenance_mismatches": 0,
+  "corroboration_mismatches": 0,
+  "missing_or_extra": 0,
+  "mismatched_events": {
+   "provenance": [],
+   "corroboration": []
+  },
+  "pairs_decided": 113109,
+  "pairs_skipped": 113105,
+  "pairs_full_ratio": 4,
+  "accepted_set_identical": true,
+  "accepted": 4,
+  "skipped_but_p0_accepted": 0,
+  "skipped_not_in_p0_log": 0,
+  "full_ratio_decision_differs": 0,
+  "full_ratio_value_differs": 0,
+  "pair_set_identical_to_p0": true,
+  "max_skipped_bound": 0.945,
+  "skipped_bound_below_p0_ratio": 0
+ },
+ "P1_vs_P2": {
+  "skip_sets_identical": true,
+  "bound_values_identical": true
+ },
+ "buckets": {
+  "2-10": {
+   "developments": 12,
+   "possible_pairs": 78,
+   "p0_full_comparisons": 33,
+   "p2_skipped": 33,
+   "p2_full_comparisons": 0
+  },
+  "11-50": {
+   "developments": 8,
+   "possible_pairs": 1536,
+   "p0_full_comparisons": 113,
+   "p2_skipped": 113,
+   "p2_full_comparisons": 0
+  },
+  "51-150": {
+   "developments": 6,
+   "possible_pairs": 30695,
+   "p0_full_comparisons": 3748,
+   "p2_skipped": 3746,
+   "p2_full_comparisons": 2
+  },
+  "151-300": {
+   "developments": 3,
+   "possible_pairs": 99882,
+   "p0_full_comparisons": 35670,
+   "p2_skipped": 35670,
+   "p2_full_comparisons": 0
+  },
+  "301-+": {
+   "developments": 3,
+   "possible_pairs": 421446,
+   "p0_full_comparisons": 73545,
+   "p2_skipped": 73543,
+   "p2_full_comparisons": 2
+  }
+ }
+}

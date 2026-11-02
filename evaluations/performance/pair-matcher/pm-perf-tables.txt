@@ -1,0 +1,33 @@
+matcher_s        main    451.8 s  branch     1.5 s  saved   450.2 s  (99.7%)
+provenance_s     main    467.7 s  branch    19.7 s  saved   448.0 s  (95.8%)
+corroboration_s  main    524.9 s  branch   100.6 s  saved   424.3 s  (80.8%)
+matcher share of corroboration: main 82%, branch 2%
+
+per-Development provenance by size bucket: n, main median/p90 ms, branch median/p90 ms, median speedup, seconds main->branch
+  2-10: n=1034  main      3.6/     18.0  branch     3.6/   11.5  x   1.0      8.2 ->    5.8 s
+  11-50: n= 139  main     55.7/    342.8  branch    26.0/   70.1  x   2.1     19.5 ->    4.6 s
+  51-150: n=  17  main   1805.7/   3833.1  branch   118.7/  239.4  x   8.2     44.3 ->    2.4 s
+  151-300: n=   5  main  36790.2/  52408.3  branch   814.1/  885.9  x  41.5    177.4 ->    3.5 s
+  301-+: n=   3  main  24369.1/  24369.1  branch  1132.7/ 1132.7  x  21.5    218.3 ->    3.5 s
+
+giant Developments (provenance s main -> branch):
+  D449: 520 items   190.53 -> 2.001  (x95)
+  D399: 276 items    80.70 -> 1.255  (x64)
+  D639: 267 items    52.41 -> 0.814  (x64)
+  D514: 274 items    36.79 -> 0.886  (x42)
+  D398: 682 items    24.37 -> 1.133  (x22)
+  D147: 108 items    11.75 -> 0.239  (x49)
+  D162: 76 items    10.43 -> 0.194  (x54)
+  D626: 216 items     6.30 -> 0.285  (x22)
+
+Situation pages, provenance part (sum over member Developments):
+  israel-palestine        18 devs    37.29 ->   1.10 s
+  gaza-ceasefire           9 devs     2.88 ->   0.24 s
+  russia-ukraine-war      26 devs     1.01 ->   0.24 s
+  sudan-civil-war          2 devs     0.04 ->   0.02 s
+  russia-united-states    26 devs   106.76 ->   2.91 s
+  china-united-states     20 devs     0.42 ->   0.30 s
+
+normal 2-10 items: 1034 devs; branch slower by >20% on 330; total 8.2 -> 5.8 s
+small (2-10): provenance delta ms median +0.08, p90 +1.45, max +11.58; matcher delta ms median +0.005, max +1.072
+small with no matcher work at all: 0 -> their provenance deltas are pure timing noise
