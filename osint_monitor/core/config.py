@@ -348,6 +348,9 @@ class SituationsConfig(BaseModel):
 class AppSettings(BaseSettings):
     """App-level settings from environment variables."""
     db_url: str = f"sqlite:///{DATA_DIR / 'osint.db'}"
+    # OSINT_DB_READONLY=1: open the intelligence DB read-only (SQLite mode=ro), never migrate it, and refuse
+    # every write and operational route (read-only web deployment, docs/deploy/WEB-LOCAL.md)
+    db_readonly: bool = False
     openai_api_key: Optional[str] = None
     openai_model: str = "gpt-4o-mini"
     anthropic_api_key: Optional[str] = None

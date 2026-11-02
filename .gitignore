@@ -24,6 +24,9 @@ data/telegram_session*
 # Local demo databases (scripts/build_demo_db.py)
 data/demo/
 
+# Read-only web deployment: personal user state, logs, approved tag (scripts/web/, docs/deploy/WEB-LOCAL.md)
+data/web/
+
 # Export directory IS tracked (JSON snapshots for git)
 !data/export/
 !data/export/*.json

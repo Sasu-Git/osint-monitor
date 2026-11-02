@@ -15,10 +15,13 @@ from fastapi import APIRouter, Request
 from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
 
+from osint_monitor.core.database import db_readonly
+
 logger = logging.getLogger(__name__)
 router = APIRouter()
 TEMPLATES_DIR = Path(__file__).parent.parent.parent / "web" / "templates"
 templates = Jinja2Templates(directory=str(TEMPLATES_DIR))
+templates.env.globals["read_only"] = db_readonly   # shell.html shows the read-only badge
 
 UNCLASSIFIED = {None, "", "unknown"}
 CONFIDENCE_LABELS = {"confirmed": "Confirmed", "probable": "Probable", "possible": "Possible",

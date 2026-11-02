@@ -55,7 +55,7 @@ async function loadAlerts() {
                 <td>${a.title}</td>
                 <td style="font-size:0.8rem">${a.created_at ? new Date(a.created_at).toLocaleString() : '-'}</td>
                 <td>${a.acknowledged ? '<span style="color:var(--low)">ACK</span>' : '<span style="color:var(--critical)">OPEN</span>'}</td>
-                <td>${!a.acknowledged ? `<button onclick="ackAlert(${a.id})" style="padding:0.2rem 0.5rem;font-size:0.75rem">Acknowledge</button>` : ''}</td>
+                <td>{% if not (read_only is defined and read_only()) %}${!a.acknowledged ? `<button onclick="ackAlert(${a.id})" style="padding:0.2rem 0.5rem;font-size:0.75rem">Acknowledge</button>` : ''}{% endif %}</td>
             </tr>`).join('') + '</table>';
     } else {
         el.innerHTML = '<p style="color:var(--text-secondary)">No alerts match the current filters.</p>';

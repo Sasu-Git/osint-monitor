@@ -13,7 +13,7 @@
         <option value="720">30 days</option>
     </select>
     <label style="font-size: 0.85rem; color: var(--text-secondary); margin-left: 0.5rem;">
-        <input type="checkbox" id="use-llm" style="margin-right: 0.3rem;">LLM Scoring
+        <input type="checkbox" id="use-llm" style="margin-right: 0.3rem;"{% if read_only is defined and read_only() %} disabled title="Unavailable in the read-only deployment"{% endif %}>LLM Scoring
     </label>
     <button onclick="loadScenarios()" style="margin-left: 0.5rem;">Refresh</button>
 </div>

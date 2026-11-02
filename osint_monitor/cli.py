@@ -177,6 +177,9 @@ def _setup_error_message(e: Exception) -> str | None:
         return f"{e}\nSet it in .env (see .env.example) or choose another provider with --provider."
     if isinstance(e, MigrationError):
         return f"Database migration failed.\n{e}"
+    from osint_monitor.core.database import ReadOnlyDatabaseError
+    if isinstance(e, ReadOnlyDatabaseError):
+        return str(e)
     from osint_monitor.benchmark.format import BenchmarkError
     if isinstance(e, BenchmarkError):
         return f"Benchmark: {e}"
@@ -185,7 +188,15 @@ def _setup_error_message(e: Exception) -> str | None:
     return None
 
 
+# Commands that write the intelligence DB or the pipeline's control files: refused under OSINT_DB_READONLY
+WRITING_COMMANDS = {None, "collect", "daemon", "migrate", "seed", "import", "briefing", "alerts", "pause", "resume"}
+
+
 def _dispatch(args):
+    from osint_monitor.core.database import ReadOnlyDatabaseError, db_readonly
+    if db_readonly() and args.command in WRITING_COMMANDS:
+        raise ReadOnlyDatabaseError(f"OSINT_DB_READONLY is set: '{args.command or 'collect'}' writes and is "
+                                    "refused (only 'serve' and read-only commands run in read-only mode)")
     if args.command is None:
         # Default: run collection pipeline (backwards compatible)
         _cmd_collect(argparse.Namespace(hours_back=24))

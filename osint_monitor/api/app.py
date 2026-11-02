@@ -12,7 +12,9 @@ from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 
-from osint_monitor.core.database import init_db
+from osint_monitor.core.database import ReadOnlyDatabaseError, db_readonly, init_db, sqlite_path
+from osint_monitor.core.user_state import default_path as user_state_path
+from osint_monitor.api.readonly import readonly_gate
 from osint_monitor.api.routes.events import router as events_router
 from osint_monitor.api.routes.entities import router as entities_router
 from osint_monitor.api.routes.alerts import router as alerts_router
@@ -53,13 +55,17 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# Read-only deployment (OSINT_DB_READONLY=1): 403 for write, operational and language-model routes (api/readonly.py)
+app.middleware("http")(readonly_gate)
+
 # Static files
 STATIC_DIR.mkdir(parents=True, exist_ok=True)
 app.mount("/static", StaticFiles(directory=str(STATIC_DIR)), name="static")
 
-# Templates
+# Templates (read_only() hides the controls whose routes the read-only gate refuses)
 TEMPLATES_DIR.mkdir(parents=True, exist_ok=True)
 templates = Jinja2Templates(directory=str(TEMPLATES_DIR))
+templates.env.globals["read_only"] = db_readonly
 
 # API routes
 app.include_router(events_router, prefix="/api/events", tags=["events"])
@@ -76,8 +82,23 @@ app.include_router(situations_router, prefix="/api/situations", tags=["situation
 
 @app.on_event("startup")
 async def startup():
-    init_db()
-    logger.info("OSINT Monitor API started")
+    init_db()   # read-only: schema check only, fails closed on a mismatch
+    if db_readonly():
+        _check_user_state_separate()
+        logger.info("OSINT Monitor API started READ-ONLY (intelligence DB mode=ro; user state %s)",
+                    user_state_path())
+    else:
+        logger.info("OSINT Monitor API started")
+
+
+def _check_user_state_separate():
+    """Fail closed when the writable user-state DB is the intelligence DB (or its WAL / shared-memory file)."""
+    from osint_monitor.core.config import get_settings
+
+    intel = sqlite_path(get_settings().db_url)
+    user = user_state_path().resolve()
+    if intel is not None and user in {Path(str(intel.resolve()) + s) for s in ("", "-wal", "-shm", "-journal")}:
+        raise ReadOnlyDatabaseError(f"OSINT_USER_STATE_DB ({user}) must not be the intelligence database")
 
 
 # Workspace: Today (/) and Map (/map), Priorities, the map GeoJSON and personal priorities (api/workspace.py)

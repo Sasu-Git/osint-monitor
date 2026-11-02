@@ -2,6 +2,7 @@
 
 from datetime import datetime
 from pathlib import Path
+from urllib.parse import quote
 
 from sqlalchemy import (
     Boolean, Column, DateTime, Enum, Float, ForeignKey, Index, Integer,
@@ -417,6 +418,44 @@ def is_lock_error(exc: BaseException) -> bool:
     return "database is locked" in text or "database table is locked" in text or "database is busy" in text
 
 
+class ReadOnlyDatabaseError(RuntimeError):
+    """The read-only intelligence DB cannot be served as it is (missing, not SQLite, or schema out of date)."""
+
+
+def db_readonly() -> bool:
+    """Whether OSINT_DB_READONLY is set: the intelligence DB is opened read-only and never migrated."""
+    from osint_monitor.core.config import get_settings
+    return get_settings().db_readonly
+
+
+def sqlite_path(db_url: str) -> Path | None:
+    """The file behind a sqlite:/// URL (None for other databases and :memory:)."""
+    if not db_url.startswith("sqlite:///") or db_url == "sqlite:///:memory:":
+        return None
+    return Path(db_url.removeprefix("sqlite:///").split("?", 1)[0])
+
+
+def _readonly_engine(db_url: str):
+    """Engine on an existing SQLite file opened with mode=ro: no create, no write, no journal-mode change."""
+    path = sqlite_path(db_url)
+    if path is None:
+        raise ReadOnlyDatabaseError(f"OSINT_DB_READONLY needs a SQLite file database, got {db_url!r}")
+    if not path.is_file():
+        raise ReadOnlyDatabaseError(f"OSINT_DB_READONLY: intelligence database not found: {path}")
+    uri = "file:" + quote(path.resolve().as_posix(), safe="/:") + "?mode=ro&uri=true"
+    engine = create_engine(f"sqlite:///{uri}", echo=False,
+                           connect_args={"timeout": SQLITE_BUSY_TIMEOUT_SECONDS, "check_same_thread": False})
+
+    @event.listens_for(engine, "connect")
+    def set_sqlite_pragma(dbapi_conn, connection_record):
+        # No journal_mode change: the writer (the daemon) owns it. query_only refuses writes on this connection too.
+        cursor = dbapi_conn.cursor()
+        cursor.execute("PRAGMA query_only=ON")
+        cursor.execute("PRAGMA foreign_keys=ON")
+        cursor.close()
+    return engine
+
+
 def get_engine(db_url: str | None = None):
     """Get or create the database engine."""
     global _engine
@@ -424,6 +463,9 @@ def get_engine(db_url: str | None = None):
         if db_url is None:
             from osint_monitor.core.config import get_settings
             db_url = get_settings().db_url   # OSINT_DB_URL, default data/osint.db
+        if db_readonly():
+            _engine = _readonly_engine(db_url)
+            return _engine
         if db_url.startswith("sqlite:///") and db_url != "sqlite:///:memory:":
             Path(db_url.removeprefix("sqlite:///")).parent.mkdir(parents=True, exist_ok=True)
         connect_args = {"timeout": SQLITE_BUSY_TIMEOUT_SECONDS} if db_url.startswith("sqlite") else {}
@@ -451,9 +493,17 @@ def get_session(db_url: str | None = None) -> Session:
 def init_db(db_url: str | None = None, backup_dir: Path | None = None):
     """Create tables and apply pending schema migrations (see core/migrations.py).
     Enables pgvector extension on PostgreSQL."""
-    from osint_monitor.core.migrations import run_migrations
+    from osint_monitor.core.migrations import current_version, head_version, run_migrations
 
     engine = get_engine(db_url)
+    if db_readonly():
+        # Never create or migrate a read-only DB: serve it only at exactly the schema this code expects
+        version, head = current_version(engine), head_version()
+        if version != head:
+            raise ReadOnlyDatabaseError(
+                f"OSINT_DB_READONLY: database schema version {version} != code schema version {head}; "
+                "refusing to start (a read-only server never migrates)")
+        return engine
     run_migrations(engine, backup_dir=backup_dir)
 
     # Enable pgvector on PostgreSQL (no-op on SQLite)

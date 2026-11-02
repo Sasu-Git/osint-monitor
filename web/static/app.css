@@ -43,6 +43,8 @@ h1, h2, h3 { margin: 0; font-weight: 600; letter-spacing: -0.01em; }
   padding: 0 24px; height: 48px; background: var(--panel); border-bottom: 1px solid var(--line); }
 .brand { font-weight: 700; letter-spacing: 0.02em; color: var(--text); font-size: 14px; }
 .brand:hover { text-decoration: none; }
+.ro-badge { margin-left: -16px; padding: 2px 8px; border: 1px solid var(--line); border-radius: 10px;
+  color: var(--text-2); font-size: 11px; letter-spacing: 0.04em; text-transform: uppercase; }
 .nav { display: flex; gap: 4px; height: 100%; }
 .nav a { display: flex; align-items: center; padding: 0 12px; color: var(--text-2); border-bottom: 2px solid transparent; }
 .nav a:hover { color: var(--text); text-decoration: none; }

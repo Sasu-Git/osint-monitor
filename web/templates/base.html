@@ -176,6 +176,7 @@
 <body>
     <nav class="sidebar">
         <h1>OSINT Monitor</h1>
+        {% if read_only is defined and read_only() %}<div class="section-label" title="Intelligence database opened read-only: acknowledging alerts, generating briefings, language-model analysis and pipeline controls are unavailable here">Read-only</div>{% endif %}
         <a href="/">Today</a>
         <a href="/dashboard" {% if request.url.path == '/dashboard' %}class="active"{% endif %}>Dashboard</a>
         <a href="/situations" {% if '/situations' in request.url.path %}class="active"{% endif %}>Situations</a>

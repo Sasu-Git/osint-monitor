@@ -11,6 +11,7 @@
 <body class="{% block body_class %}{% endblock %}">
   <header class="topbar">
     <a class="brand" href="/">OSINT Monitor</a>
+    {% if read_only is defined and read_only() %}<span class="ro-badge" title="Intelligence database opened read-only: only your priorities can be changed here">Read-only</span>{% endif %}
     <nav class="nav" aria-label="Main">
       {% set path = request.url.path %}
       <a href="/" {% if path == '/' or path.startswith('/developments') %}aria-current="page"{% endif %}>Today</a>
