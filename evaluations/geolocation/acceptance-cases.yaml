@@ -1,0 +1,106 @@
+# Representative acceptance cases for LOCATION-CONTRACT.md (PROPOSED). Drawn from the frozen audit
+# (evaluations/geolocation/2026-11-02/cases.json, snapshot sha b5bb5728...). "expected" follows the PROPOSED contract;
+# cases marked depends_on need an owner decision first. Not scored. Headlines are abbreviated (some paraphrased);
+# the exact text is in cases.json by Development id.
+cases:
+  - id: G01
+    development: 65
+    headline: Israeli forces kill Hamas commander Izz al-Din al-Beik in Gaza
+    stored: "Gaza, Zona Sul, Mocambique"
+    expected: {role: EVENT_PLACE, place: Gaza, country: PSE, confidence: CONFIRMED_PLACE}
+    rule: L2 (hit outside every mentioned country is rejected)
+  - id: G02
+    development: 35
+    headline: Israel revokes Dutch diplomats' status over sanctions on settlers (West Bank)
+    stored: "West Bank, Washington Avenue South, ... Minneapolis"
+    expected: {role: EVENT_PLACE, place: West Bank, country: PSE}
+    rule: L2 (business/street result rejected; outside context)
+    depends_on: U4
+  - id: G03
+    development: 124
+    headline: Russia strikes second major bridge in Kyiv, mayor says
+    stored: Ukraine (country point); most-mentioned place is "Russia"
+    expected: {role: EVENT_PLACE, place: Kyiv, country: UKR}
+    rule: L1 (Russia is in actor position, excluded); TARGET is the event place
+  - id: G04
+    development: 933
+    headline: Ukraine strikes factory in Russia's Tolyatti, airfield in Krasnodar Krai
+    stored: Ukraine (country point)
+    expected: {role: EVENT_COUNTRY, country: RUS, places: [Tolyatti, Krasnodar Krai]}
+    rule: L1 (Ukraine is the actor) + L5 (two places, one country)
+    depends_on: U2
+  - id: G04b
+    development: 1006
+    headline: UK prosecutors charge two after RAF Fairford attack
+    stored: Iran (country point)
+    expected: {role: EVENT_PLACE, place: RAF Fairford, country: GBR}
+    rule: L1 (place named in the headline, not an actor); L2
+  - id: G05
+    development: 495
+    headline: "'Like we don't exist': Palestinians in West Bank denied ..."
+    stored: "Palestine, Anderson County, Texas"
+    expected: {role: EVENT_PLACE, place: West Bank, country: PSE}
+    rule: L2
+    depends_on: U4
+  - id: G06
+    development: 291
+    headline: Erdogan raises Black Sea safety in call with Putin
+    stored: Black Sea (multilingual sea label; no country)
+    expected: {role: NONE, label: "Black Sea (region)"}
+    rule: L6 / U3; also a statement (U1)
+    depends_on: [U1, U3]
+  - id: G07
+    development: 1052
+    headline: Hormuz oil spill forces closure of UAE beaches
+    stored: Strait of Hormuz, Oman
+    expected: {role: EVENT_COUNTRY, country: ARE}
+    rule: L1/L4 (the beaches closed are in the UAE; Hormuz is the source region)
+  - id: G08
+    development: 96
+    headline: Boom News founder Tang Ho-wing, 1 other arrested by Hong Kong police
+    stored: Hong Kong (correct; map hides it: outline HKG vs gazetteer China)
+    expected: {role: EVENT_PLACE, place: Hong Kong, country: HKG, frontend: shown}
+    rule: section 4 (frontend-only containment)
+  - id: G09
+    development: 747
+    headline: "Press release - Opening: 19-22 October plenary session (Strasbourg)"
+    stored: Strasbourg (correct; map hides it: not in gazetteer)
+    expected: {role: EVENT_PLACE, place: Strasbourg, country: FRA, frontend: shown}
+    rule: section 4 (frontend-only alias)
+  - id: G10
+    development: 654
+    headline: Real Madrid demand resignation of La Liga chief ...
+    stored: "La Liga, Matamoros, Mexico"
+    expected: {role: NONE}
+    rule: L1 (organisation, not a place)
+  - id: G11
+    development: 382
+    headline: "Man City charges: How Premier League reacted"
+    stored: "Man, Cote d'Ivoire"
+    expected: {role: NONE}
+    rule: L1 (club, not a place)
+  - id: G12
+    development: 449
+    headline: Brazil election (campaign coverage family)
+    expected: {role: EVENT_COUNTRY, country: BRA}
+    rule: L4 (country-wide occurrence)
+  - id: G13
+    development: 952
+    headline: "Putin: blaming us for the unrest is a sign of weakness"
+    stored: Washington DC
+    expected: {role: NONE}
+    rule: U1 (statement; the report does not say where it was made)
+    depends_on: U1
+  - id: G14
+    development: 982
+    headline: Pope says happy to return to South America after trip
+    stored: United States (shown on the map)
+    expected: {role: NONE or EVENT_COUNTRY of the trip's stated destinations}
+    rule: L1 ("America" is part of "South America", not the US); shared-alias finding U5
+    depends_on: [U1, U5]
+  - id: G15
+    development: 1115
+    headline: North Korea fires about ten missiles (reported from Seoul)
+    stored: Seoul
+    expected: {role: EVENT_COUNTRY, country: PRK}
+    rule: L1 (Seoul is the REPORTING_LOCATION, not the event place)
