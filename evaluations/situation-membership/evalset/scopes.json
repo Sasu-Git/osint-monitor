@@ -1,0 +1,1610 @@
+{
+ "note": "Derived facts only. The owner's intended scope for each automatic Situation is recorded in owner-labels.yaml under situation_scopes (this file stays frozen).",
+ "founder_derivation": "No founder record is stored. Founders = members whose first_reported_at is at or before the Situation's created_at; exact_actor_set says whether the member's canonical principal actor set equals the Situation's actor set (the creation rule). If none qualify, the two earliest members are used and flagged. The derived scope uses the exact-actor-set founders when there are any, else all listed founders (derived_from says which). Domains and event types come from the rules classifier, whose reliability for scope is unmeasured (CONTRACT-V2 D5).",
+ "automatic": [
+  {
+   "slug": "china-united-states",
+   "title": "China – United States",
+   "status": "active",
+   "created_at": "2026-09-25T09:44:50.078960",
+   "primary_actors": [
+    "China",
+    "United States"
+   ],
+   "region": "china",
+   "founders_fallback_two_earliest": false,
+   "founders": [
+    {
+     "development_id": 1,
+     "headline": "Xi got Trump's red carpet welcome - but not everything he wanted",
+     "first_reported_at": "2026-09-25T09:44:33.484777",
+     "domain": "diplomacy",
+     "event_type": "negotiation",
+     "region": "china",
+     "specific_places": [
+      "asean",
+      "east room",
+      "futurechina business forum",
+      "great hall of the people",
+      "middle east",
+      "new york",
+      "oval office",
+      "shenzhen",
+      "south",
+      "south lawn"
+     ],
+     "exact_actor_set": true
+    },
+    {
+     "development_id": 2,
+     "headline": "Trump and Xi come face-to-face as US and China battle to win the AI race",
+     "first_reported_at": "2026-09-25T09:44:33.497398",
+     "domain": "diplomacy",
+     "event_type": "summit",
+     "region": "china",
+     "specific_places": [
+      "asean",
+      "futurechina business forum",
+      "hong kong",
+      "new york",
+      "san francisco",
+      "south"
+     ],
+     "exact_actor_set": true
+    }
+   ],
+   "derived_from": "exact_actor_set founders",
+   "derived": {
+    "domains": [
+     "diplomacy"
+    ],
+    "event_types": [
+     "negotiation",
+     "summit"
+    ],
+    "specific_places": [
+     "asean",
+     "east room",
+     "futurechina business forum",
+     "great hall of the people",
+     "hong kong",
+     "middle east",
+     "new york",
+     "oval office",
+     "san francisco",
+     "shenzhen",
+     "south",
+     "south lawn"
+    ]
+   },
+   "owner_intended_scope": null
+  },
+  {
+   "slug": "france-pope",
+   "title": "France – Pope",
+   "status": "dormant",
+   "created_at": "2026-09-26T17:13:22.124793",
+   "primary_actors": [
+    "France",
+    "Pope"
+   ],
+   "region": null,
+   "founders_fallback_two_earliest": false,
+   "founders": [
+    {
+     "development_id": 19,
+     "headline": "In Paris, Pope warns against losing humanity in ‘paradise of machines’",
+     "first_reported_at": "2026-09-25T23:42:51.782006",
+     "domain": "security",
+     "event_type": "warning",
+     "region": null,
+     "specific_places": [
+      "elysee palace",
+      "paris"
+     ],
+     "exact_actor_set": true
+    },
+    {
+     "development_id": 27,
+     "headline": "Hundreds of thousands expected in Paris for Pope's visit",
+     "first_reported_at": "2026-09-26T17:13:11.804998",
+     "domain": "political",
+     "event_type": "election",
+     "region": null,
+     "specific_places": [
+      "paris"
+     ],
+     "exact_actor_set": true
+    }
+   ],
+   "derived_from": "exact_actor_set founders",
+   "derived": {
+    "domains": [
+     "political",
+     "security"
+    ],
+    "event_types": [
+     "election",
+     "warning"
+    ],
+    "specific_places": [
+     "elysee palace",
+     "paris"
+    ]
+   },
+   "owner_intended_scope": null
+  },
+  {
+   "slug": "eritrea-ethiopia",
+   "title": "Eritrea – Ethiopia",
+   "status": "active",
+   "created_at": "2026-10-02T07:54:33.074489",
+   "primary_actors": [
+    "Eritrea",
+    "Ethiopia"
+   ],
+   "region": "africa",
+   "founders_fallback_two_earliest": false,
+   "founders": [
+    {
+     "development_id": 9,
+     "headline": "Ethiopia's army says it has repelled attacks in first comment on fresh fighting",
+     "first_reported_at": "2026-09-25T13:03:14.112852",
+     "domain": "military",
+     "event_type": "military_action",
+     "region": "africa",
+     "specific_places": [
+      "tigray"
+     ],
+     "exact_actor_set": false
+    },
+    {
+     "development_id": 86,
+     "headline": "Somali army clashes with local forces for control of Baidoa",
+     "first_reported_at": "2026-09-30T16:43:36.300845",
+     "domain": "political",
+     "event_type": "policy_change",
+     "region": "africa",
+     "specific_places": [
+      "addis",
+      "addis ababa",
+      "asmara",
+      "baidoa",
+      "idlib",
+      "mekelle",
+      "south west state",
+      "taftanaz",
+      "tigray",
+      "tigray eritrea"
+     ],
+     "exact_actor_set": false
+    },
+    {
+     "development_id": 110,
+     "headline": "Eritrea severs diplomatic ties with Ethiopia in tit-for-tat move",
+     "first_reported_at": "2026-10-02T05:53:29.962529",
+     "domain": "unknown",
+     "event_type": "unknown",
+     "region": "africa",
+     "specific_places": [
+      "addis",
+      "addis ababa",
+      "asmara",
+      "tigray",
+      "tigray eritrea"
+     ],
+     "exact_actor_set": false
+    }
+   ],
+   "derived_from": "all listed founders (none has the exact actor set)",
+   "derived": {
+    "domains": [
+     "military",
+     "political",
+     "unknown"
+    ],
+    "event_types": [
+     "military_action",
+     "policy_change",
+     "unknown"
+    ],
+    "specific_places": [
+     "addis",
+     "addis ababa",
+     "asmara",
+     "baidoa",
+     "idlib",
+     "mekelle",
+     "south west state",
+     "taftanaz",
+     "tigray",
+     "tigray eritrea"
+    ]
+   },
+   "owner_intended_scope": null
+  },
+  {
+   "slug": "nato-russia",
+   "title": "Nato – Russia",
+   "status": "active",
+   "created_at": "2026-10-06T11:35:01.557615",
+   "primary_actors": [
+    "Nato",
+    "Russia"
+   ],
+   "region": "russia",
+   "founders_fallback_two_earliest": false,
+   "founders": [
+    {
+     "development_id": 92,
+     "headline": "Russia sends nuclear warning to Nato over its Kaliningrad enclave",
+     "first_reported_at": "2026-09-30T19:13:02.379890",
+     "domain": "security",
+     "event_type": "warning",
+     "region": "russia",
+     "specific_places": [
+      "baltic sea",
+      "europe",
+      "kaliningrad",
+      "west"
+     ],
+     "exact_actor_set": true
+    },
+    {
+     "development_id": 221,
+     "headline": "NATO drafts strategy on repelling Russian attack against eastern flank",
+     "first_reported_at": "2026-10-06T11:34:03.886785",
+     "domain": "security",
+     "event_type": "warning",
+     "region": "russia",
+     "specific_places": [
+      "europe",
+      "kaliningrad"
+     ],
+     "exact_actor_set": false
+    }
+   ],
+   "derived_from": "exact_actor_set founders",
+   "derived": {
+    "domains": [
+     "security"
+    ],
+    "event_types": [
+     "warning"
+    ],
+    "specific_places": [
+     "baltic sea",
+     "europe",
+     "kaliningrad",
+     "west"
+    ]
+   },
+   "owner_intended_scope": null
+  },
+  {
+   "slug": "christa-pike-pike",
+   "title": "Christa Pike – Pike",
+   "status": "active",
+   "created_at": "2026-10-07T06:48:50.596659",
+   "primary_actors": [
+    "Christa Pike",
+    "Pike"
+   ],
+   "region": null,
+   "founders_fallback_two_earliest": false,
+   "founders": [
+    {
+     "development_id": 85,
+     "headline": "Tennessee governor declines to halt execution of state's lone woman on death row",
+     "first_reported_at": "2026-09-30T13:53:12.572259",
+     "domain": "political",
+     "event_type": "commentary",
+     "region": null,
+     "specific_places": [
+      "middle east",
+      "nashville",
+      "tennessee"
+     ],
+     "exact_actor_set": true
+    },
+    {
+     "development_id": 254,
+     "headline": "US death row inmate Christa Pike conscious after failed execution, lawyers say",
+     "first_reported_at": "2026-10-06T21:44:19.526989",
+     "domain": "security",
+     "event_type": "security_incident",
+     "region": null,
+     "specific_places": [
+      "tennessee",
+      "texas"
+     ],
+     "exact_actor_set": false
+    }
+   ],
+   "derived_from": "exact_actor_set founders",
+   "derived": {
+    "domains": [
+     "political"
+    ],
+    "event_types": [
+     "commentary"
+    ],
+    "specific_places": [
+     "middle east",
+     "nashville",
+     "tennessee"
+    ]
+   },
+   "owner_intended_scope": null
+  },
+  {
+   "slug": "russia-united-states",
+   "title": "Russia – United States",
+   "status": "active",
+   "created_at": "2026-10-07T11:56:13.607320",
+   "primary_actors": [
+    "Russia",
+    "United States"
+   ],
+   "region": "russia",
+   "founders_fallback_two_earliest": false,
+   "founders": [
+    {
+     "development_id": 168,
+     "headline": "Russian lab worker dies of suspected plague in Siberia; US monitoring case",
+     "first_reported_at": "2026-10-05T15:45:41.773288",
+     "domain": "diplomacy",
+     "event_type": "significant_statement",
+     "region": "russia",
+     "specific_places": [
+      "irkutsk",
+      "irkutsk anti-plague institute",
+      "oval office",
+      "siberia",
+      "siberia russian"
+     ],
+     "exact_actor_set": true
+    },
+    {
+     "development_id": 184,
+     "headline": "Trump blames Democrats and Ukraine for soaring US fuel prices, not Iran war",
+     "first_reported_at": "2026-10-05T19:43:52.671888",
+     "domain": "diplomacy",
+     "event_type": "negotiation",
+     "region": "russia",
+     "specific_places": [
+      "black sea",
+      "california",
+      "crimea",
+      "europe"
+     ],
+     "exact_actor_set": true
+    },
+    {
+     "development_id": 270,
+     "headline": "Wsj: 'Washington preme su Mosca, serve nota ufficiale sul decesso legato alla peste'",
+     "first_reported_at": "2026-10-07T07:44:22.264631",
+     "domain": "unknown",
+     "event_type": "unknown",
+     "region": "russia",
+     "specific_places": [
+      "siberia"
+     ],
+     "exact_actor_set": false
+    }
+   ],
+   "derived_from": "exact_actor_set founders",
+   "derived": {
+    "domains": [
+     "diplomacy"
+    ],
+    "event_types": [
+     "negotiation",
+     "significant_statement"
+    ],
+    "specific_places": [
+     "black sea",
+     "california",
+     "crimea",
+     "europe",
+     "irkutsk",
+     "irkutsk anti-plague institute",
+     "oval office",
+     "siberia",
+     "siberia russian"
+    ]
+   },
+   "owner_intended_scope": null
+  },
+  {
+   "slug": "european-union-russia",
+   "title": "European Union – Russia",
+   "status": "active",
+   "created_at": "2026-10-08T11:37:10.065888",
+   "primary_actors": [
+    "European Union",
+    "Russia"
+   ],
+   "region": "russia",
+   "founders_fallback_two_earliest": false,
+   "founders": [
+    {
+     "development_id": 190,
+     "headline": "US not removing diplomats from Kyiv amid Russian threats, Rubio says",
+     "first_reported_at": "2026-10-05T21:24:21.089532",
+     "domain": "economic",
+     "event_type": "sanctions",
+     "region": "russia",
+     "specific_places": [],
+     "exact_actor_set": true
+    },
+    {
+     "development_id": 318,
+     "headline": "Lithuania calls for EU sanctions against Russian grain",
+     "first_reported_at": "2026-10-08T08:34:36.314797",
+     "domain": "economic",
+     "event_type": "sanctions",
+     "region": "russia",
+     "specific_places": [
+      "u.k"
+     ],
+     "exact_actor_set": false
+    }
+   ],
+   "derived_from": "exact_actor_set founders",
+   "derived": {
+    "domains": [
+     "economic"
+    ],
+    "event_types": [
+     "sanctions"
+    ],
+    "specific_places": []
+   },
+   "owner_intended_scope": null
+  },
+  {
+   "slug": "donald-j-trump-united-states",
+   "title": "Donald J. Trump – United States",
+   "status": "active",
+   "created_at": "2026-10-09T11:44:37.701838",
+   "primary_actors": [
+    "Donald J. Trump",
+    "United States"
+   ],
+   "region": "russia",
+   "founders_fallback_two_earliest": false,
+   "founders": [
+    {
+     "development_id": 202,
+     "headline": "President Trump Takes Decisive Action to Lower Diesel Costs for American Truckers, Farmers",
+     "first_reported_at": "2026-10-06T05:45:17.672639",
+     "domain": "political",
+     "event_type": "policy_change",
+     "region": "russia",
+     "specific_places": [
+      "nebraska"
+     ],
+     "exact_actor_set": true
+    },
+    {
+     "development_id": 351,
+     "headline": "President Trump Is Putting American Industry, Jobs, and Paychecks Back on the Map",
+     "first_reported_at": "2026-10-08T20:49:08.880004",
+     "domain": "unknown",
+     "event_type": "unknown",
+     "region": null,
+     "specific_places": [
+      "alaska",
+      "beluga",
+      "iowa",
+      "map",
+      "maryland",
+      "massachusetts",
+      "texas",
+      "virginia"
+     ],
+     "exact_actor_set": true
+    },
+    {
+     "development_id": 354,
+     "headline": "President Trump Presents National Medals of Science and National Medals of Technology and Innovation",
+     "first_reported_at": "2026-10-08T20:49:12.686693",
+     "domain": "unknown",
+     "event_type": "unknown",
+     "region": null,
+     "specific_places": [],
+     "exact_actor_set": false
+    }
+   ],
+   "derived_from": "exact_actor_set founders",
+   "derived": {
+    "domains": [
+     "political",
+     "unknown"
+    ],
+    "event_types": [
+     "policy_change",
+     "unknown"
+    ],
+    "specific_places": [
+     "alaska",
+     "beluga",
+     "iowa",
+     "map",
+     "maryland",
+     "massachusetts",
+     "nebraska",
+     "texas",
+     "virginia"
+    ]
+   },
+   "owner_intended_scope": null
+  },
+  {
+   "slug": "elon-musk-musk",
+   "title": "Elon Musk – Musk",
+   "status": "active",
+   "created_at": "2026-10-13T18:59:08.605062",
+   "primary_actors": [
+    "Elon Musk",
+    "Musk"
+   ],
+   "region": "russia",
+   "founders_fallback_two_earliest": false,
+   "founders": [
+    {
+     "development_id": 320,
+     "headline": "Elon Musk hits out at ‘certain oligarchs’ for blocking Starlink in India",
+     "first_reported_at": "2026-10-08T08:54:18.610261",
+     "domain": "unknown",
+     "event_type": "unknown",
+     "region": null,
+     "specific_places": [
+      "asia"
+     ],
+     "exact_actor_set": true
+    },
+    {
+     "development_id": 447,
+     "headline": "\"Musk donó a los republicanos 276 millones de dólares para las midterms\": 'The New York Times'",
+     "first_reported_at": "2026-10-13T18:56:36.910170",
+     "domain": "unknown",
+     "event_type": "unknown",
+     "region": "russia",
+     "specific_places": [
+      "aeropuerto internacional harry reid",
+      "capitolio",
+      "estado de nuevo mexico",
+      "florida",
+      "kansas",
+      "la casa blanca",
+      "las vegas",
+      "maine",
+      "mar-a-lago",
+      "nueva america",
+      "tajrish"
+     ],
+     "exact_actor_set": false
+    }
+   ],
+   "derived_from": "exact_actor_set founders",
+   "derived": {
+    "domains": [
+     "unknown"
+    ],
+    "event_types": [
+     "unknown"
+    ],
+    "specific_places": [
+     "asia"
+    ]
+   },
+   "owner_intended_scope": null
+  },
+  {
+   "slug": "rachel-simon",
+   "title": "Rachel – Simon",
+   "status": "dormant",
+   "created_at": "2026-10-13T22:16:20.224263",
+   "primary_actors": [
+    "Rachel",
+    "Simon"
+   ],
+   "region": null,
+   "founders_fallback_two_earliest": false,
+   "founders": [
+    {
+     "development_id": 402,
+     "headline": "Hurricane Simon batters Mexico's Pacific Coast",
+     "first_reported_at": "2026-10-13T07:47:03.915417",
+     "domain": "unknown",
+     "event_type": "unknown",
+     "region": null,
+     "specific_places": [
+      "hawaii",
+      "pacific",
+      "pacific coast",
+      "pacific coast hurricane"
+     ],
+     "exact_actor_set": true
+    },
+    {
+     "development_id": 429,
+     "headline": "Huracanes en México: Simón y Rachel dejan al menos dos muertos y 10 desaparecidos",
+     "first_reported_at": "2026-10-13T09:45:11.640108",
+     "domain": "unknown",
+     "event_type": "unknown",
+     "region": null,
+     "specific_places": [
+      "ademas",
+      "baja california",
+      "california",
+      "ensenada",
+      "guerrero",
+      "nueva york"
+     ],
+     "exact_actor_set": false
+    }
+   ],
+   "derived_from": "exact_actor_set founders",
+   "derived": {
+    "domains": [
+     "unknown"
+    ],
+    "event_types": [
+     "unknown"
+    ],
+    "specific_places": [
+     "hawaii",
+     "pacific",
+     "pacific coast",
+     "pacific coast hurricane"
+    ]
+   },
+   "owner_intended_scope": null
+  },
+  {
+   "slug": "israel-palestine",
+   "title": "Israel – Palestine",
+   "status": "active",
+   "created_at": "2026-10-14T07:36:12.546778",
+   "primary_actors": [
+    "Israel",
+    "Palestine"
+   ],
+   "region": "middle_east",
+   "founders_fallback_two_earliest": false,
+   "founders": [
+    {
+     "development_id": 211,
+     "headline": "Israeli forces kill one, injure several in occupied West Bank",
+     "first_reported_at": "2026-10-06T08:54:17.545151",
+     "domain": "military",
+     "event_type": "military_action",
+     "region": "middle_east",
+     "specific_places": [
+      "gaza",
+      "quneitra",
+      "west bank",
+      "west bank domain"
+     ],
+     "exact_actor_set": true
+    },
+    {
+     "development_id": 237,
+     "headline": "In Gaza, we cannot even begin to recover from trauma",
+     "first_reported_at": "2026-10-06T15:24:51.087742",
+     "domain": "security",
+     "event_type": "ceasefire",
+     "region": "middle_east",
+     "specific_places": [
+      "gaza"
+     ],
+     "exact_actor_set": false
+    },
+    {
+     "development_id": 295,
+     "headline": "Three years of Israel’s mass dispossession of West Bank Palestinians",
+     "first_reported_at": "2026-10-07T20:35:49.751718",
+     "domain": "economic",
+     "event_type": "sanctions",
+     "region": "middle_east",
+     "specific_places": [
+      "west bank"
+     ],
+     "exact_actor_set": false
+    },
+    {
+     "development_id": 453,
+     "headline": "Israel’s military raids NGO offices in Ramallah",
+     "first_reported_at": "2026-10-13T18:56:44.422727",
+     "domain": "political",
+     "event_type": "election",
+     "region": "middle_east",
+     "specific_places": [
+      "africa",
+      "asia-pacific",
+      "damascus",
+      "dc",
+      "europe",
+      "gaza",
+      "latin america & caribbean",
+      "middle east",
+      "middle east monitor",
+      "ramallah",
+      "suwayda",
+      "sweida",
+      "west bank",
+      "west bank domain",
+      "youtube"
+     ],
+     "exact_actor_set": false
+    },
+    {
+     "development_id": 495,
+     "headline": "‘Like we don’t exist’: Palestinians in West Bank denied say in Israel vote",
+     "first_reported_at": "2026-10-14T07:33:55.788648",
+     "domain": "political",
+     "event_type": "election",
+     "region": "middle_east",
+     "specific_places": [
+      "gaza",
+      "west bank"
+     ],
+     "exact_actor_set": true
+    }
+   ],
+   "derived_from": "exact_actor_set founders",
+   "derived": {
+    "domains": [
+     "military",
+     "political"
+    ],
+    "event_types": [
+     "election",
+     "military_action"
+    ],
+    "specific_places": [
+     "gaza",
+     "quneitra",
+     "west bank",
+     "west bank domain"
+    ]
+   },
+   "owner_intended_scope": null
+  },
+  {
+   "slug": "malaysia-singapore",
+   "title": "Malaysia – Singapore",
+   "status": "dormant",
+   "created_at": "2026-10-15T01:20:50.064522",
+   "primary_actors": [
+    "Malaysia",
+    "Singapore"
+   ],
+   "region": null,
+   "founders_fallback_two_earliest": false,
+   "founders": [
+    {
+     "development_id": 375,
+     "headline": "Singapore’s air pollution worst in world as haze shuts Malaysia schools",
+     "first_reported_at": "2026-10-09T13:24:19.357352",
+     "domain": "unknown",
+     "event_type": "unknown",
+     "region": null,
+     "specific_places": [
+      "johor",
+      "kuala lumpur",
+      "southeast asia"
+     ],
+     "exact_actor_set": true
+    },
+    {
+     "development_id": 548,
+     "headline": "Malaysia’s Firefly cancels flights to Singapore over haze from Indonesia",
+     "first_reported_at": "2026-10-15T01:16:17.276979",
+     "domain": "unknown",
+     "event_type": "unknown",
+     "region": null,
+     "specific_places": [
+      "kuala lumpur"
+     ],
+     "exact_actor_set": true
+    }
+   ],
+   "derived_from": "exact_actor_set founders",
+   "derived": {
+    "domains": [
+     "unknown"
+    ],
+    "event_types": [
+     "unknown"
+    ],
+    "specific_places": [
+     "johor",
+     "kuala lumpur",
+     "southeast asia"
+    ]
+   },
+   "owner_intended_scope": null
+  },
+  {
+   "slug": "china-taiwan",
+   "title": "China – Taiwan",
+   "status": "active",
+   "created_at": "2026-10-19T12:19:08.249226",
+   "primary_actors": [
+    "China",
+    "Taiwan"
+   ],
+   "region": "china",
+   "founders_fallback_two_earliest": false,
+   "founders": [
+    {
+     "development_id": 503,
+     "headline": "Pekín afirma que Taiwán tendrá que \"afrontar las consecuencias\" del uso de cañones de agua contra un buque chino",
+     "first_reported_at": "2026-10-14T10:25:14.386968",
+     "domain": "diplomacy",
+     "event_type": "significant_statement",
+     "region": "china",
+     "specific_places": [
+      "china meridional",
+      "pratas"
+     ],
+     "exact_actor_set": true
+    },
+    {
+     "development_id": 546,
+     "headline": "Taiwan turns to US drone boats to track rising mainland Chinese sea activity near island",
+     "first_reported_at": "2026-10-15T00:36:32.727100",
+     "domain": "unknown",
+     "event_type": "unknown",
+     "region": "china",
+     "specific_places": [
+      "florida"
+     ],
+     "exact_actor_set": false
+    },
+    {
+     "development_id": 703,
+     "headline": "‘Hybrid warfare’: Taiwan drives away 16 Chinese ships",
+     "first_reported_at": "2026-10-19T12:14:24.075412",
+     "domain": "military",
+     "event_type": "deployment",
+     "region": "china",
+     "specific_places": [
+      "charleston",
+      "dongsha island",
+      "hualien",
+      "kaohsiung",
+      "pingtung",
+      "sabina shoal",
+      "south china sea",
+      "spratly",
+      "spratly islands",
+      "taipei"
+     ],
+     "exact_actor_set": true
+    }
+   ],
+   "derived_from": "exact_actor_set founders",
+   "derived": {
+    "domains": [
+     "diplomacy",
+     "military"
+    ],
+    "event_types": [
+     "deployment",
+     "significant_statement"
+    ],
+    "specific_places": [
+     "charleston",
+     "china meridional",
+     "dongsha island",
+     "hualien",
+     "kaohsiung",
+     "pingtung",
+     "pratas",
+     "sabina shoal",
+     "south china sea",
+     "spratly",
+     "spratly islands",
+     "taipei"
+    ]
+   },
+   "owner_intended_scope": null
+  },
+  {
+   "slug": "javier-milei-milei",
+   "title": "Javier Milei – Milei",
+   "status": "active",
+   "created_at": "2026-10-21T10:31:44.386954",
+   "primary_actors": [
+    "Javier Milei",
+    "Milei"
+   ],
+   "region": null,
+   "founders_fallback_two_earliest": false,
+   "founders": [
+    {
+     "development_id": 619,
+     "headline": "Más de una treintena de personas detenidas en protestas universitarias en Buenos Aires",
+     "first_reported_at": "2026-10-16T06:55:10.870115",
+     "domain": "unknown",
+     "event_type": "unknown",
+     "region": null,
+     "specific_places": [
+      "buenos aires",
+      "gobierno de javier milei"
+     ],
+     "exact_actor_set": true
+    },
+    {
+     "development_id": 760,
+     "headline": "La crisis de la vivienda y la gestión de Ceuta sacuden la carrera electoral en España",
+     "first_reported_at": "2026-10-20T16:05:37.024050",
+     "domain": "unknown",
+     "event_type": "unknown",
+     "region": null,
+     "specific_places": [
+      "ceuta"
+     ],
+     "exact_actor_set": true
+    }
+   ],
+   "derived_from": "exact_actor_set founders",
+   "derived": {
+    "domains": [
+     "unknown"
+    ],
+    "event_types": [
+     "unknown"
+    ],
+    "specific_places": [
+     "buenos aires",
+     "ceuta",
+     "gobierno de javier milei"
+    ]
+   },
+   "owner_intended_scope": null
+  },
+  {
+   "slug": "mexico-united-states",
+   "title": "Mexico – United States",
+   "status": "active",
+   "created_at": "2026-10-21T22:17:08.781608",
+   "primary_actors": [
+    "Mexico",
+    "United States"
+   ],
+   "region": null,
+   "founders_fallback_two_earliest": false,
+   "founders": [
+    {
+     "development_id": 657,
+     "headline": "Three men jailed for 158 years each for murdering Australian and US surfers in Mexico",
+     "first_reported_at": "2026-10-17T07:00:40.948877",
+     "domain": "security",
+     "event_type": "security_incident",
+     "region": null,
+     "specific_places": [],
+     "exact_actor_set": true
+    },
+    {
+     "development_id": 833,
+     "headline": "Ex-prosecutor charged with treason in Mexico over US drug raid",
+     "first_reported_at": "2026-10-21T22:06:14.407284",
+     "domain": "security",
+     "event_type": "security_incident",
+     "region": null,
+     "specific_places": [],
+     "exact_actor_set": false
+    }
+   ],
+   "derived_from": "exact_actor_set founders",
+   "derived": {
+    "domains": [
+     "security"
+    ],
+    "event_types": [
+     "security_incident"
+    ],
+    "specific_places": []
+   },
+   "owner_intended_scope": null
+  },
+  {
+   "slug": "bukele-el-salvador-nayib-bukele",
+   "title": "Bukele – El Salvador – Nayib Bukele",
+   "status": "active",
+   "created_at": "2026-10-22T07:26:14.640279",
+   "primary_actors": [
+    "Bukele",
+    "El Salvador",
+    "Nayib Bukele"
+   ],
+   "region": null,
+   "founders_fallback_two_earliest": false,
+   "founders": [
+    {
+     "development_id": 501,
+     "headline": "Bukele plantea la \"libertad condicional\" a cerca del 50% de presos acusados de colaborar con pandillas en El Salvador",
+     "first_reported_at": "2026-10-14T09:54:27.780904",
+     "domain": "unknown",
+     "event_type": "unknown",
+     "region": null,
+     "specific_places": [
+      "san salvador"
+     ],
+     "exact_actor_set": true
+    },
+    {
+     "development_id": 837,
+     "headline": "El Salvador, ultimatum di Bukele alle gang di Haiti",
+     "first_reported_at": "2026-10-22T07:16:41.376933",
+     "domain": "security",
+     "event_type": "threat",
+     "region": null,
+     "specific_places": [
+      "puerto principe",
+      "san salvador"
+     ],
+     "exact_actor_set": true
+    }
+   ],
+   "derived_from": "exact_actor_set founders",
+   "derived": {
+    "domains": [
+     "security",
+     "unknown"
+    ],
+    "event_types": [
+     "threat",
+     "unknown"
+    ],
+    "specific_places": [
+     "puerto principe",
+     "san salvador"
+    ]
+   },
+   "owner_intended_scope": null
+  },
+  {
+   "slug": "china-chinas-long-march",
+   "title": "China – Chinas Long March",
+   "status": "active",
+   "created_at": "2026-10-22T11:00:17.595606",
+   "primary_actors": [
+    "China",
+    "Chinas Long March"
+   ],
+   "region": "china",
+   "founders_fallback_two_earliest": false,
+   "founders": [
+    {
+     "development_id": 678,
+     "headline": "China’s youth draw upon Long March spirit to navigate modern uncertainties",
+     "first_reported_at": "2026-10-18T16:43:43.377868",
+     "domain": "unknown",
+     "event_type": "unknown",
+     "region": "china",
+     "specific_places": [],
+     "exact_actor_set": true
+    },
+    {
+     "development_id": 845,
+     "headline": "Ahead of Communist Party plenum, Xi Jinping warns that China faces a ‘new Long March’",
+     "first_reported_at": "2026-10-22T10:50:11.711861",
+     "domain": "security",
+     "event_type": "warning",
+     "region": "china",
+     "specific_places": [],
+     "exact_actor_set": false
+    }
+   ],
+   "derived_from": "exact_actor_set founders",
+   "derived": {
+    "domains": [
+     "unknown"
+    ],
+    "event_types": [
+     "unknown"
+    ],
+    "specific_places": []
+   },
+   "owner_intended_scope": null
+  },
+  {
+   "slug": "international-criminal-court-united-states",
+   "title": "International Criminal Court – United States",
+   "status": "active",
+   "created_at": "2026-10-22T20:44:12.121068",
+   "primary_actors": [
+    "International Criminal Court",
+    "United States"
+   ],
+   "region": "middle_east",
+   "founders_fallback_two_earliest": false,
+   "founders": [
+    {
+     "development_id": 793,
+     "headline": "Human rights: EU appoints a new Special Representative",
+     "first_reported_at": "2026-10-21T04:54:15.137251",
+     "domain": "economic",
+     "event_type": "sanctions",
+     "region": "middle_east",
+     "specific_places": [
+      "africa",
+      "gaza"
+     ],
+     "exact_actor_set": true
+    },
+    {
+     "development_id": 846,
+     "headline": "La Corte penale internazionale vince il premio Sacharov del Pe",
+     "first_reported_at": "2026-10-22T10:50:12.104267",
+     "domain": "unknown",
+     "event_type": "unknown",
+     "region": null,
+     "specific_places": [
+      "gaza"
+     ],
+     "exact_actor_set": true
+    }
+   ],
+   "derived_from": "exact_actor_set founders",
+   "derived": {
+    "domains": [
+     "economic",
+     "unknown"
+    ],
+    "event_types": [
+     "sanctions",
+     "unknown"
+    ],
+    "specific_places": [
+     "africa",
+     "gaza"
+    ]
+   },
+   "owner_intended_scope": null
+  },
+  {
+   "slug": "machado-maria-corina-machado",
+   "title": "Machado – Maria Corina Machado",
+   "status": "active",
+   "created_at": "2026-10-25T20:23:25.228487",
+   "primary_actors": [
+    "Machado",
+    "Maria Corina Machado"
+   ],
+   "region": null,
+   "founders_fallback_two_earliest": false,
+   "founders": [
+    {
+     "development_id": 841,
+     "headline": "Gobierno y oposición cierran el tercer ciclo de diálogos en Venezuela con acuerdos sobre inhabilitaciones políticas",
+     "first_reported_at": "2026-10-22T07:16:42.655838",
+     "domain": "political",
+     "event_type": "election",
+     "region": null,
+     "specific_places": [
+      "alaska",
+      "banco de inglaterra",
+      "barquisimeto",
+      "buena vista del meta",
+      "caracas",
+      "caracas la embajada de estados unidos",
+      "colombia cartello",
+      "corpus christi",
+      "eln",
+      "estado",
+      "gobierno",
+      "gobierno de estados unidos",
+      "la guaira",
+      "latin america",
+      "london",
+      "miami",
+      "michigan",
+      "planadas",
+      "plasencia",
+      "santuario divina pastora",
+      "sinaloa",
+      "stato",
+      "stato di apure",
+      "texas",
+      "tolima",
+      "valencia",
+      "valle del cauca",
+      "western hemisphere"
+     ],
+     "exact_actor_set": false
+    },
+    {
+     "development_id": 954,
+     "headline": "Venezuelan opposition leader María Machado returns after months in exile",
+     "first_reported_at": "2026-10-25T17:32:57.881945",
+     "domain": "political",
+     "event_type": "election",
+     "region": null,
+     "specific_places": [
+      "caracas",
+      "lara",
+      "plaza del pueblo",
+      "santa rosa"
+     ],
+     "exact_actor_set": true
+    }
+   ],
+   "derived_from": "exact_actor_set founders",
+   "derived": {
+    "domains": [
+     "political"
+    ],
+    "event_types": [
+     "election"
+    ],
+    "specific_places": [
+     "caracas",
+     "lara",
+     "plaza del pueblo",
+     "santa rosa"
+    ]
+   },
+   "owner_intended_scope": null
+  },
+  {
+   "slug": "emmanuel-macron-france-macron",
+   "title": "Emmanuel Macron – France – Macron",
+   "status": "active",
+   "created_at": "2026-10-26T14:00:38.147538",
+   "primary_actors": [
+    "Emmanuel Macron",
+    "France",
+    "Macron"
+   ],
+   "region": "middle_east",
+   "founders_fallback_two_earliest": false,
+   "founders": [
+    {
+     "development_id": 708,
+     "headline": "France 'has to assist' Gulf states, diplomat says as Macron makes three-day visit",
+     "first_reported_at": "2026-10-19T12:58:54.327056",
+     "domain": "diplomacy",
+     "event_type": "significant_statement",
+     "region": "middle_east",
+     "specific_places": [
+      "bahrein",
+      "eliseo",
+      "emiratos",
+      "emiratos arabes unidos",
+      "golfo",
+      "golfo persico",
+      "gulf"
+     ],
+     "exact_actor_set": true
+    },
+    {
+     "development_id": 973,
+     "headline": "Macron vows ‘concrete’ measures to address student demands after unrest",
+     "first_reported_at": "2026-10-26T13:50:05.567654",
+     "domain": "diplomacy",
+     "event_type": "significant_statement",
+     "region": null,
+     "specific_places": [
+      "marseille"
+     ],
+     "exact_actor_set": true
+    }
+   ],
+   "derived_from": "exact_actor_set founders",
+   "derived": {
+    "domains": [
+     "diplomacy"
+    ],
+    "event_types": [
+     "significant_statement"
+    ],
+    "specific_places": [
+     "bahrein",
+     "eliseo",
+     "emiratos",
+     "emiratos arabes unidos",
+     "golfo",
+     "golfo persico",
+     "gulf",
+     "marseille"
+    ]
+   },
+   "owner_intended_scope": null
+  },
+  {
+   "slug": "canada-european-union",
+   "title": "Canada – European Union",
+   "status": "active",
+   "created_at": "2026-10-29T09:52:25.867406",
+   "primary_actors": [
+    "Canada",
+    "European Union"
+   ],
+   "region": null,
+   "founders_fallback_two_earliest": false,
+   "founders": [
+    {
+     "development_id": 1051,
+     "headline": "'Canada associato all'Ue ma non membro', verso accordo sulla formula",
+     "first_reported_at": "2026-10-28T19:06:20.763041",
+     "domain": "unknown",
+     "event_type": "unknown",
+     "region": null,
+     "specific_places": [
+      "montreal",
+      "ottawa"
+     ],
+     "exact_actor_set": false
+    },
+    {
+     "development_id": 1073,
+     "headline": "Canada and EU drop associate membership plan in bid to deepen ties",
+     "first_reported_at": "2026-10-29T09:31:03.434999",
+     "domain": "diplomacy",
+     "event_type": "summit",
+     "region": null,
+     "specific_places": [
+      "americas",
+      "arctic",
+      "europe",
+      "montreal",
+      "oslo",
+      "ottawa",
+      "vienna"
+     ],
+     "exact_actor_set": true
+    }
+   ],
+   "derived_from": "exact_actor_set founders",
+   "derived": {
+    "domains": [
+     "diplomacy"
+    ],
+    "event_types": [
+     "summit"
+    ],
+    "specific_places": [
+     "americas",
+     "arctic",
+     "europe",
+     "montreal",
+     "oslo",
+     "ottawa",
+     "vienna"
+    ]
+   },
+   "owner_intended_scope": null
+  },
+  {
+   "slug": "afghanistan-taliban",
+   "title": "Afghanistan – Taliban",
+   "status": "active",
+   "created_at": "2026-11-02T09:08:45.408327",
+   "primary_actors": [
+    "Afghanistan",
+    "Taliban"
+   ],
+   "region": null,
+   "founders_fallback_two_earliest": false,
+   "founders": [
+    {
+     "development_id": 1089,
+     "headline": "Afghanistan opium production jumps fivefold as farmers find ways round Taliban ban",
+     "first_reported_at": "2026-10-29T14:16:21.143579",
+     "domain": "political",
+     "event_type": "policy_change",
+     "region": null,
+     "specific_places": [],
+     "exact_actor_set": true
+    },
+    {
+     "development_id": 1181,
+     "headline": "Taliban voices 'serious concern' over US plan to deport Afghan migrants via Pakistan",
+     "first_reported_at": "2026-11-02T08:33:33.953327",
+     "domain": "unknown",
+     "event_type": "unknown",
+     "region": null,
+     "specific_places": [],
+     "exact_actor_set": true
+    }
+   ],
+   "derived_from": "exact_actor_set founders",
+   "derived": {
+    "domains": [
+     "political",
+     "unknown"
+    ],
+    "event_types": [
+     "policy_change",
+     "unknown"
+    ],
+    "specific_places": []
+   },
+   "owner_intended_scope": null
+  },
+  {
+   "slug": "democrat-united-states",
+   "title": "Democrat – United States",
+   "status": "active",
+   "created_at": "2026-11-02T10:34:06.807025",
+   "primary_actors": [
+    "Democrat",
+    "United States"
+   ],
+   "region": null,
+   "founders_fallback_two_earliest": false,
+   "founders": [
+    {
+     "development_id": 1084,
+     "headline": "Trump demands Alaska candidates be removed over alleged ballot scheme",
+     "first_reported_at": "2026-10-29T12:08:44.869514",
+     "domain": "political",
+     "event_type": "election",
+     "region": null,
+     "specific_places": [
+      "alaska"
+     ],
+     "exact_actor_set": false
+    },
+    {
+     "development_id": 1174,
+     "headline": "Trump insists Republicans ‘have a shot’ in midterms as rallies resume amid health concerns",
+     "first_reported_at": "2026-11-01T16:07:28.532205",
+     "domain": "military",
+     "event_type": "military_action",
+     "region": null,
+     "specific_places": [
+      "iowa",
+      "kansas"
+     ],
+     "exact_actor_set": true
+    },
+    {
+     "development_id": 1189,
+     "headline": "El Partido Demócrata de Michigan expulsa a la tránsfuga Stevens y cierra filas en torno a Abdul El Sayed",
+     "first_reported_at": "2026-11-02T08:33:57.804046",
+     "domain": "political",
+     "event_type": "election",
+     "region": null,
+     "specific_places": [
+      "detroit",
+      "michigan"
+     ],
+     "exact_actor_set": true
+    }
+   ],
+   "derived_from": "exact_actor_set founders",
+   "derived": {
+    "domains": [
+     "military",
+     "political"
+    ],
+    "event_types": [
+     "election",
+     "military_action"
+    ],
+    "specific_places": [
+     "detroit",
+     "iowa",
+     "kansas",
+     "michigan"
+    ]
+   },
+   "owner_intended_scope": null
+  }
+ ],
+ "seeded": [
+  {
+   "slug": "us-iran",
+   "title": "US–Iran negotiations and confrontation",
+   "scope_source": "seed (config/situations.yaml)",
+   "primary_actors": [
+    "United States",
+    "Iran"
+   ],
+   "region": "iran",
+   "description": "Talks, pressure and incidents between the United States and Iran, including the nuclear file.",
+   "keywords": [
+    "nuclear",
+    "enrichment",
+    "IAEA",
+    "JCPOA",
+    "talks",
+    "negotiations",
+    "sanctions",
+    "Hormuz"
+   ],
+   "status": "active"
+  },
+  {
+   "slug": "russia-ukraine-war",
+   "title": "Russia–Ukraine war",
+   "scope_source": "seed (config/situations.yaml)",
+   "primary_actors": [
+    "Russia",
+    "Ukraine"
+   ],
+   "region": "russia",
+   "description": "The war in Ukraine, including front-line fighting, strikes and ceasefire diplomacy.",
+   "keywords": [
+    "front",
+    "offensive",
+    "drone",
+    "missile",
+    "ceasefire",
+    "peace talks",
+    "occupied"
+   ],
+   "status": "active"
+  },
+  {
+   "slug": "eu-china-trade",
+   "title": "EU–China trade dispute",
+   "scope_source": "seed (config/situations.yaml)",
+   "primary_actors": [
+    "European Union",
+    "China"
+   ],
+   "region": "china",
+   "description": "Tariffs, anti-dumping cases and export controls between the European Union and China.",
+   "keywords": [
+    "tariff",
+    "anti-dumping",
+    "export control",
+    "EV",
+    "trade",
+    "subsidy",
+    "rare earth"
+   ],
+   "status": "dormant"
+  },
+  {
+   "slug": "gaza-ceasefire",
+   "title": "Gaza ceasefire negotiations",
+   "scope_source": "seed (config/situations.yaml)",
+   "primary_actors": [
+    "Israel",
+    "Hamas"
+   ],
+   "region": "middle_east",
+   "description": "Ceasefire and hostage negotiations between Israel and Hamas, and mediation by Qatar, Egypt and the US.",
+   "keywords": [
+    "ceasefire",
+    "hostage",
+    "truce",
+    "Gaza",
+    "Rafah",
+    "mediation",
+    "humanitarian"
+   ],
+   "status": "active"
+  },
+  {
+   "slug": "sudan-civil-war",
+   "title": "Sudan civil war",
+   "scope_source": "seed (config/situations.yaml)",
+   "primary_actors": [
+    "Sudan",
+    "Rapid Support Forces"
+   ],
+   "region": "africa",
+   "description": "Fighting between the Sudanese Armed Forces and the Rapid Support Forces.",
+   "keywords": [
+    "El Fasher",
+    "Darfur",
+    "Khartoum",
+    "SAF",
+    "famine"
+   ],
+   "status": "active"
+  }
+ ]
+}
