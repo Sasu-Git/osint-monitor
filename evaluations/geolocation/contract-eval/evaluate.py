@@ -40,8 +40,11 @@ from osint_monitor.processors.event_location import Role, decide, mentions_for_e
 from osint_monitor.processors.geography import Gazetteer
 from osint_monitor.processors.provenance import ProvenanceResolver
 
-sys.path.append(a.countries)                       # only for the ISO lookup below
-from osint_monitor.api.geo import CountryIndex  # noqa: E402
+import importlib.util  # noqa: E402
+_spec = importlib.util.spec_from_file_location("web_geo", Path(a.countries) / "osint_monitor" / "api" / "geo.py")
+_web_geo = importlib.util.module_from_spec(_spec)   # the web code's country lookup, loaded by path (ISO mapping only)
+_spec.loader.exec_module(_web_geo)
+CountryIndex = _web_geo.CountryIndex
 
 DISPUTED_ISO = {"west bank": "PSE", "gaza": "PSE", "east jerusalem": "PSE", "crimea": "UKR", "western sahara": "ESH"}
 index, geo, normalizer, resolver = CountryIndex.load(), Gazetteer.load(), ActorNormalizer.load(), ProvenanceResolver()

@@ -12,3 +12,8 @@ Code: `feat/geolocation-contract` `62fe91d` (module), ISO lookup from the web co
 `audit-cases.json` is `evaluations/geolocation/2026-11-02/cases.json` from `eval/soak-safe-20261102` (`b794902`),
 copied unchanged (its own FREEZE.md records sha `cab20c4a...`).
 Gates in `evaluate.py` are PROPOSED (W removed >= 80%, C preserved >= 90%); they are not established until approved.
+
+**Amendment (before any result was produced):** the first run failed at import (`osint_monitor.api.geo` is not importable
+beside this branch's package). `evaluate.py` now loads the web code's `geo.py` by file path. Import mechanism only;
+no metric, input or rule changed. New sha: `12926c7c9e4ac89841bf517fce6831f730aab36b3241bef22ef0ad4fdd41ba1e`. The audit copy differs from the original only in line endings
+(same JSON content; CRLF-normalised hashes equal).
