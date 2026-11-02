@@ -105,11 +105,12 @@ def build_collectors() -> list[BaseCollector]:
 
     # Twitter/Nitter
     for account in config.twitter_accounts:
-        collectors.append(NitterCollector(
-            username=account.username,
-            instances=config.nitter_instances,
-            max_items=10,
-        ))
+        if account.enabled:
+            collectors.append(NitterCollector(
+                username=account.username,
+                instances=config.nitter_instances,
+                max_items=10,
+            ))
 
     # Sanctions (OFAC, UN)
     try:

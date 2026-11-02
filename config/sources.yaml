@@ -368,14 +368,21 @@ nitter_instances:
   - "https://nitter.poast.org"
 
 # Twitter accounts to monitor
+# 2026-11-02: every account below is disabled (enabled: false). All Nitter instances fail (nitter.net errors,
+# nitter.poast.org does not resolve) and none has ever returned an item. Kept here for a later replacement
+# decision (evaluations/collectors/WORK-PACKAGES-2026-11-02.md, WP3).
 twitter_accounts:
   # Tier 1 - Most reliable (credibility: 0.5)
   - username: "bellingcat"
     focus: "investigations"
     credibility_score: 0.5
+    enabled: false
+    access: "Nitter instances unreachable, never succeeded (2026-11)"
   - username: "TheIntelFrog"
     focus: "military"
     credibility_score: 0.5
+    enabled: false
+    access: "Nitter instances unreachable, never succeeded (2026-11)"
   # barbarastarrcnn — removed, consistently returns 0 items across all instances
   # - username: "barbarastarrcnn"
   #   focus: "pentagon"
@@ -387,9 +394,13 @@ twitter_accounts:
   - username: "CENTCOM"
     focus: "official"
     credibility_score: 0.8
+    enabled: false
+    access: "Nitter instances unreachable, never succeeded (2026-11)"
   - username: "NATO"
     focus: "official"
     credibility_score: 0.8
+    enabled: false
+    access: "Nitter instances unreachable, never succeeded (2026-11)"
 
   # Tier 2 - Regional (credibility: 0.3-0.4)
   # OSINT_Ukraine — removed, consistently returns 0 items across all instances
@@ -399,9 +410,13 @@ twitter_accounts:
   - username: "AuroraIntel"
     focus: "middle_east"
     credibility_score: 0.4
+    enabled: false
+    access: "Nitter instances unreachable, never succeeded (2026-11)"
   - username: "COUPSURE"
     focus: "global"
     credibility_score: 0.3
+    enabled: false
+    access: "Nitter instances unreachable, never succeeded (2026-11)"
   # IntelCrab — removed, account announced sunsetting
   # - username: "IntelCrab"
   #   focus: "geospatial"
@@ -409,12 +424,18 @@ twitter_accounts:
   - username: "detresfa_"
     focus: "satellite"
     credibility_score: 0.4
+    enabled: false
+    access: "Nitter instances unreachable, never succeeded (2026-11)"
   - username: "RALee85"
     focus: "russia"
     credibility_score: 0.4
+    enabled: false
+    access: "Nitter instances unreachable, never succeeded (2026-11)"
   - username: "NavyLookout"
     focus: "naval"
     credibility_score: 0.4
+    enabled: false
+    access: "Nitter instances unreachable, never succeeded (2026-11)"
   # AirbusDragon — removed, consistently returns 0 items across all instances
   # - username: "AirbusDragon"
   #   focus: "aviation"

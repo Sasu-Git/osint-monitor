@@ -151,7 +151,8 @@ def configured_endpoints(config=None) -> list[Endpoint]:
     for account in config.twitter_accounts:
         user = account.username.lstrip("@")
         add(Endpoint("social", "NitterCollector", f"@{user}", f"@{user}", "Nitter RSS",
-                     f"{instances[0]}/{user}/rss", note=f"mirrors tried in order: {', '.join(instances)}"))
+                     f"{instances[0]}/{user}/rss", note=f"mirrors tried in order: {', '.join(instances)}",
+                     gate=Gate(config_enabled=account.enabled, access=account.access)))
     add(Endpoint("social", "XForYouCollector", "X (For You feed of the logged-in account)", "X-ForYou",
                  "x.com/home via Chrome CDP", "https://x.com/home", gate=Gate(prerequisite="playwright")))
 

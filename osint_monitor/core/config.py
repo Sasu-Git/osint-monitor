@@ -38,6 +38,8 @@ class TwitterAccountConfig(BaseModel):
     username: str
     focus: str = "general"
     credibility_score: float = 0.4
+    enabled: bool = True
+    access: Optional[str] = None         # why the account is disabled
 
 
 class RegionConfig(BaseModel):

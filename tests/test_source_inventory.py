@@ -25,7 +25,7 @@ def test_inventory_covers_every_collector_build_collectors_can_build(monkeypatch
     for k, v in GATED_ENV.items():
         monkeypatch.setenv(k, v)
     built = {type(c).__name__ for c in build_collectors()}
-    listed = {e.collector for e in inv.configured_endpoints()}
+    listed = {e.collector for e in inv.configured_endpoints() if e.gate.config_enabled}
     assert built == listed - {"ADSBCollector"}            # the OpenSky fallback is built only if adsb_tracks fails
     assert not built & {u.collector for u in inv.UNWIRED}
 
@@ -61,6 +61,19 @@ def test_lawfare_is_disabled_in_the_shipped_config_with_its_reason():
         False, "disabled in config/sources.yaml: feed answers 403 to automated clients (2026-11)")
     assert next(c for c in S.configured_collectors() if c["name"] == "Lawfare")["disabled"] is True
     assert "Lawfare" not in {c.name for c in build_collectors()}
+
+
+def test_disabled_nitter_accounts_are_listed_but_not_built(monkeypatch):
+    from osint_monitor.collectors import status as S
+    from osint_monitor.processors import pipeline
+    assert not [c for c in pipeline.build_collectors() if type(c).__name__ == "NitterCollector"]   # shipped config
+    nato = next(e for e in inv.configured_endpoints() if e.source_name == "@NATO")
+    assert inv.gate_status(nato.gate, {})[1].startswith("disabled in config/sources.yaml: Nitter instances")
+    assert next(c for c in S.configured_collectors() if c["name"] == "@NATO")["disabled"] is True
+    config = SourcesFileConfig(twitter_accounts=[TwitterAccountConfig(username="on"),
+                                                 TwitterAccountConfig(username="off", enabled=False)])
+    monkeypatch.setattr(pipeline, "load_sources_config", lambda: config)
+    assert [c.name for c in pipeline.build_collectors() if type(c).__name__ == "NitterCollector"] == ["@on"]
 
 
 def test_credentials_decide_enabled_and_alternative_modes_switch():

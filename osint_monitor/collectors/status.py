@@ -285,7 +285,7 @@ def configured_collectors() -> list[dict]:
     for acct in cfg.twitter_accounts:
         u = acct.username.lstrip("@")
         out.append({"key": f"NitterCollector:{u}", "name": f"@{u}", "collector_type": "NitterCollector",
-                    "tier": "warm", "source_type": "twitter_nitter", "disabled": False})
+                    "tier": "warm", "source_type": "twitter_nitter", "disabled": not acct.enabled})
     return out
 
 
