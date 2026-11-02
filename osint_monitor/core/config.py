@@ -70,6 +70,8 @@ class AlertsConfig(BaseModel):
     channels: list[AlertChannelConfig] = Field(default_factory=list)
     quiet_hours: dict = Field(default_factory=dict)  # {"start": "22:00", "end": "07:00"}
     default_cooldown_minutes: int = 240
+    # event-driven sources (emit only when a condition is met): a long silence is normal, never "Source resumed"
+    silence_break_exempt: list[str] = Field(default_factory=list)
 
 
 class EntitySeedConfig(BaseModel):

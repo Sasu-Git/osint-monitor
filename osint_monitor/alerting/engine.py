@@ -50,6 +50,7 @@ class AlertEngine:
         self.fatigue = FatigueManager(session)
         self.state = StateTracker(session)
         self._sources_config = load_sources_config()
+        self._silence_break_exempt = set(load_alerts_config().silence_break_exempt)
 
     def evaluate_all(self, hours_back: int = 1) -> list[Alert]:
         """Run all alert tiers and return newly fired alerts."""
@@ -268,7 +269,7 @@ class AlertEngine:
         return alerts
 
     def _tier2_source_silence_break(self) -> list[Alert]:
-        """Alert when a source that's been quiet for >24h suddenly posts."""
+        """Alert when a source that's been quiet for >24h suddenly posts (event-driven sources are exempt)."""
         previous = self.state.get_or_default("source_last_seen", {})
         alerts = []
 
@@ -301,6 +302,9 @@ class AlertEngine:
                 gap = (latest_item.fetched_at - last_seen).total_seconds()
                 # Item is fresh (within last hour) but previous was >24h ago
                 if gap > 86400 and (now - latest_item.fetched_at).total_seconds() < 3600:
+                    if src.name in self._silence_break_exempt:
+                        logger.info(f"Source {src.name} resumed after {gap / 3600:.0f}h, not alerted: event-driven")
+                        continue
                     why = _operational_silence(src.name, last_seen, latest_item.fetched_at, ledger_start)
                     if why:
                         logger.info(f"Source {src.name} resumed after {gap / 3600:.0f}h, not alerted: {why}")

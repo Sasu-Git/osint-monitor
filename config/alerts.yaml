@@ -30,6 +30,13 @@ rules:
     cooldown_minutes: 60
     channels: ["desktop", "slack"]
 
+# Event-driven sources emit only when a condition is met (a ticker or commodity past its threshold; markets close at
+# weekends), so a long silence is normal: no "Source resumed" alert for them. Source names as collected.
+# Owner ruling 2026-11-02 (evaluations/collectors/WORK-PACKAGES-2026-11-02.md, WP2).
+silence_break_exempt:
+  - "Defense Stock Monitor"
+  - "Commodity SIGINT"
+
 channels:
   - type: desktop
     enabled: true

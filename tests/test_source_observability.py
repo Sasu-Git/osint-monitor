@@ -185,6 +185,24 @@ def test_resumption_after_our_own_gap_is_not_a_silence_break(monkeypatch):
     assert "collection gaps cover" in E._operational_silence("Wire", since, until)
 
 
+@pytest.mark.parametrize("name, alerted", [("Defense Stock Monitor", False), ("Commodity SIGINT", False),
+                                           ("Wire", True)])
+def test_event_driven_sources_are_exempt_from_silence_break(session, name, alerted):
+    from osint_monitor.alerting.engine import AlertEngine
+    from osint_monitor.core.database import RawItem, Source
+    now = datetime.utcnow()
+    src = Source(name=name, type="rss", url=f"https://{name.replace(' ', '')}.invalid/")
+    session.add(src)
+    session.flush()
+    session.add(RawItem(source_id=src.id, title="Ticker past threshold", url="https://x.invalid/1",
+                        fetched_at=now - timedelta(minutes=5), content_hash=f"h-{name}"))
+    session.flush()
+    engine = AlertEngine(session)                                     # exempt set from the shipped config/alerts.yaml
+    engine.state.set("source_last_seen", {str(src.id): (now - timedelta(hours=66, minutes=5)).isoformat()})
+    alerts = engine._tier2_source_silence_break()
+    assert [a.title for a in alerts] == ([f"Source resumed: {name} (silent 66h)"] if alerted else [])
+
+
 # --- collection gaps ---------------------------------------------------------------------------------------------------
 
 def _ticks():
