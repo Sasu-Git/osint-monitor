@@ -44,3 +44,10 @@ These belong to the location contract, not to the map.
 
 **Tests:** full suite 762 passed, 3 xfailed in 150.14s (0:02:30); workspace and page tests 22 passed (the Altoona assertion updated: now confirmed by design; an unknown town
 keeps the unconfirmed case).
+
+## Owner decision (2026-11-03): option (b)
+
+"nueva york" and "marsiglia" dropped; the other 31 entries kept. Re-check (`result-b.json`, same snapshot and cases):
+baseline 208/208; C hidden → shown **19** (D146, D442 stay hidden); W hidden → shown **0**; P 0; shown → hidden **0**.
+Neutral by the check's rule. Tests: frontend (workspace, pages, UI, read-only web, geography, geocoding) 78 passed;
+full suite 762 passed, 3 xfailed. Not deployed (pair-matcher soak in progress).
