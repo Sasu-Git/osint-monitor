@@ -1,0 +1,490 @@
+{
+ "evalset": "situation-membership",
+ "subsample_of": "cases.json",
+ "cases_sha256": "725d7a2d50e18e20ead4e773f17a0fdc014c2784bfb21096ac10b7550cb88b17",
+ "seed": 20261103,
+ "fraction": 0.25,
+ "min_per_situation": 2,
+ "size": 126,
+ "counts": {
+  "by_stratum": {
+   "repeated": 20,
+   "seed_boundary": 9,
+   "seed_negative": 10,
+   "seed_positive": 10,
+   "single": 77
+  },
+  "by_situation_kind": {
+   "automatic": 90,
+   "seeded": 36
+  },
+  "situations_represented": 28,
+  "situations_open": 28
+ },
+ "per_situation": {
+  "afghanistan-taliban": {
+   "kind": "automatic",
+   "non_seed": {
+    "repeated": 0,
+    "single": 3
+   },
+   "drawn": {
+    "repeated": 0,
+    "single": 2
+   },
+   "seeds": 0
+  },
+  "bukele-el-salvador-nayib-bukele": {
+   "kind": "automatic",
+   "non_seed": {
+    "repeated": 0,
+    "single": 3
+   },
+   "drawn": {
+    "repeated": 0,
+    "single": 2
+   },
+   "seeds": 0
+  },
+  "canada-european-union": {
+   "kind": "automatic",
+   "non_seed": {
+    "repeated": 3,
+    "single": 9
+   },
+   "drawn": {
+    "repeated": 1,
+    "single": 2
+   },
+   "seeds": 0
+  },
+  "china-chinas-long-march": {
+   "kind": "automatic",
+   "non_seed": {
+    "repeated": 6,
+    "single": 6
+   },
+   "drawn": {
+    "repeated": 2,
+    "single": 1
+   },
+   "seeds": 0
+  },
+  "china-taiwan": {
+   "kind": "automatic",
+   "non_seed": {
+    "repeated": 5,
+    "single": 13
+   },
+   "drawn": {
+    "repeated": 1,
+    "single": 3
+   },
+   "seeds": 0
+  },
+  "china-united-states": {
+   "kind": "automatic",
+   "non_seed": {
+    "repeated": 1,
+    "single": 22
+   },
+   "drawn": {
+    "repeated": 1,
+    "single": 5
+   },
+   "seeds": 7
+  },
+  "christa-pike-pike": {
+   "kind": "automatic",
+   "non_seed": {
+    "repeated": 0,
+    "single": 6
+   },
+   "drawn": {
+    "repeated": 0,
+    "single": 2
+   },
+   "seeds": 0
+  },
+  "democrat-united-states": {
+   "kind": "automatic",
+   "non_seed": {
+    "repeated": 4,
+    "single": 9
+   },
+   "drawn": {
+    "repeated": 1,
+    "single": 2
+   },
+   "seeds": 0
+  },
+  "donald-j-trump-united-states": {
+   "kind": "automatic",
+   "non_seed": {
+    "repeated": 5,
+    "single": 12
+   },
+   "drawn": {
+    "repeated": 1,
+    "single": 3
+   },
+   "seeds": 0
+  },
+  "elon-musk-musk": {
+   "kind": "automatic",
+   "non_seed": {
+    "repeated": 0,
+    "single": 6
+   },
+   "drawn": {
+    "repeated": 0,
+    "single": 2
+   },
+   "seeds": 0
+  },
+  "emmanuel-macron-france-macron": {
+   "kind": "automatic",
+   "non_seed": {
+    "repeated": 0,
+    "single": 3
+   },
+   "drawn": {
+    "repeated": 0,
+    "single": 2
+   },
+   "seeds": 0
+  },
+  "eritrea-ethiopia": {
+   "kind": "automatic",
+   "non_seed": {
+    "repeated": 0,
+    "single": 12
+   },
+   "drawn": {
+    "repeated": 0,
+    "single": 3
+   },
+   "seeds": 0
+  },
+  "eu-china-trade": {
+   "kind": "seeded",
+   "non_seed": {
+    "repeated": 7,
+    "single": 7
+   },
+   "drawn": {
+    "repeated": 2,
+    "single": 2
+   },
+   "seeds": 0
+  },
+  "european-union-russia": {
+   "kind": "automatic",
+   "non_seed": {
+    "repeated": 3,
+    "single": 13
+   },
+   "drawn": {
+    "repeated": 1,
+    "single": 3
+   },
+   "seeds": 0
+  },
+  "france-pope": {
+   "kind": "automatic",
+   "non_seed": {
+    "repeated": 0,
+    "single": 12
+   },
+   "drawn": {
+    "repeated": 0,
+    "single": 3
+   },
+   "seeds": 0
+  },
+  "gaza-ceasefire": {
+   "kind": "seeded",
+   "non_seed": {
+    "repeated": 7,
+    "single": 12
+   },
+   "drawn": {
+    "repeated": 2,
+    "single": 3
+   },
+   "seeds": 0
+  },
+  "international-criminal-court-united-states": {
+   "kind": "automatic",
+   "non_seed": {
+    "repeated": 3,
+    "single": 9
+   },
+   "drawn": {
+    "repeated": 1,
+    "single": 2
+   },
+   "seeds": 0
+  },
+  "israel-palestine": {
+   "kind": "automatic",
+   "non_seed": {
+    "repeated": 7,
+    "single": 21
+   },
+   "drawn": {
+    "repeated": 2,
+    "single": 5
+   },
+   "seeds": 0
+  },
+  "javier-milei-milei": {
+   "kind": "automatic",
+   "non_seed": {
+    "repeated": 0,
+    "single": 4
+   },
+   "drawn": {
+    "repeated": 0,
+    "single": 2
+   },
+   "seeds": 0
+  },
+  "machado-maria-corina-machado": {
+   "kind": "automatic",
+   "non_seed": {
+    "repeated": 0,
+    "single": 2
+   },
+   "drawn": {
+    "repeated": 0,
+    "single": 2
+   },
+   "seeds": 0
+  },
+  "malaysia-singapore": {
+   "kind": "automatic",
+   "non_seed": {
+    "repeated": 0,
+    "single": 6
+   },
+   "drawn": {
+    "repeated": 0,
+    "single": 2
+   },
+   "seeds": 0
+  },
+  "mexico-united-states": {
+   "kind": "automatic",
+   "non_seed": {
+    "repeated": 2,
+    "single": 10
+   },
+   "drawn": {
+    "repeated": 1,
+    "single": 2
+   },
+   "seeds": 0
+  },
+  "nato-russia": {
+   "kind": "automatic",
+   "non_seed": {
+    "repeated": 2,
+    "single": 11
+   },
+   "drawn": {
+    "repeated": 1,
+    "single": 2
+   },
+   "seeds": 0
+  },
+  "rachel-simon": {
+   "kind": "automatic",
+   "non_seed": {
+    "repeated": 0,
+    "single": 2
+   },
+   "drawn": {
+    "repeated": 0,
+    "single": 2
+   },
+   "seeds": 0
+  },
+  "russia-ukraine-war": {
+   "kind": "seeded",
+   "non_seed": {
+    "repeated": 1,
+    "single": 23
+   },
+   "drawn": {
+    "repeated": 1,
+    "single": 5
+   },
+   "seeds": 12
+  },
+  "russia-united-states": {
+   "kind": "automatic",
+   "non_seed": {
+    "repeated": 4,
+    "single": 22
+   },
+   "drawn": {
+    "repeated": 1,
+    "single": 5
+   },
+   "seeds": 10
+  },
+  "sudan-civil-war": {
+   "kind": "seeded",
+   "non_seed": {
+    "repeated": 0,
+    "single": 5
+   },
+   "drawn": {
+    "repeated": 0,
+    "single": 2
+   },
+   "seeds": 0
+  },
+  "us-iran": {
+   "kind": "seeded",
+   "non_seed": {
+    "repeated": 4,
+    "single": 23
+   },
+   "drawn": {
+    "repeated": 1,
+    "single": 6
+   },
+   "seeds": 0
+  }
+ },
+ "case_ids": [
+  "S001",
+  "S003",
+  "S006",
+  "S008",
+  "S009",
+  "S013",
+  "S016",
+  "S022",
+  "S023",
+  "S024",
+  "S027",
+  "S028",
+  "S030",
+  "S033",
+  "S037",
+  "S042",
+  "S043",
+  "S045",
+  "S049",
+  "S050",
+  "S051",
+  "S054",
+  "S055",
+  "S056",
+  "S060",
+  "S062",
+  "S066",
+  "S067",
+  "S068",
+  "S074",
+  "S078",
+  "S079",
+  "S080",
+  "S086",
+  "S087",
+  "S090",
+  "S093",
+  "S096",
+  "S101",
+  "S105",
+  "S107",
+  "S119",
+  "S121",
+  "S130",
+  "S132",
+  "S134",
+  "S137",
+  "S138",
+  "S140",
+  "S141",
+  "S145",
+  "S149",
+  "S150",
+  "S152",
+  "S154",
+  "S155",
+  "S157",
+  "S158",
+  "S159",
+  "S162",
+  "S166",
+  "S168",
+  "S169",
+  "S176",
+  "S177",
+  "S185",
+  "S195",
+  "S199",
+  "S200",
+  "S205",
+  "S207",
+  "S208",
+  "S209",
+  "S213",
+  "S221",
+  "S222",
+  "S233",
+  "S237",
+  "S238",
+  "S243",
+  "S248",
+  "S251",
+  "S256",
+  "S262",
+  "S267",
+  "S268",
+  "S269",
+  "S271",
+  "S273",
+  "S274",
+  "S275",
+  "S276",
+  "S279",
+  "S292",
+  "S293",
+  "S295",
+  "S297",
+  "S299",
+  "S300",
+  "S301",
+  "S302",
+  "S306",
+  "S307",
+  "S310",
+  "S312",
+  "S318",
+  "S319",
+  "S320",
+  "S329",
+  "S330",
+  "S337",
+  "S340",
+  "S341",
+  "S343",
+  "S344",
+  "S347",
+  "S350",
+  "S353",
+  "S357",
+  "S359",
+  "S362",
+  "S364",
+  "S365",
+  "S372",
+  "S377",
+  "S379"
+ ]
+}
