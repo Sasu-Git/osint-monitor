@@ -15,12 +15,25 @@ into its country.
 
 from __future__ import annotations
 
+import json
 import re
 from dataclasses import dataclass, field
 from enum import Enum
+from functools import lru_cache
+from pathlib import Path
 from typing import Iterable, Protocol
 
 from osint_monitor.processors.geography import Gazetteer
+
+# Iteration 2: the location layer's frozen gazetteer extension (GeoNames cities15000, built by
+# evaluations/geolocation/gazetteer-extension/build_extension.py). Read by this module only; the shared gazetteer is
+# unchanged and always takes precedence. name -> {gazetteer country: [population, lat, lon]}
+EXTENSION = Path(__file__).parent / "data" / "place_extension.json"
+
+
+@lru_cache(maxsize=1)
+def load_extension() -> dict[str, dict[str, list]]:
+    return json.loads(EXTENSION.read_text(encoding="utf-8")).get("places", {}) if EXTENSION.exists() else {}
 
 
 class Role(str, Enum):
@@ -39,6 +52,32 @@ class Confidence(str, Enum):
 
 # Rejection reasons recorded per mention (L7)
 ACTOR_POSITION, NON_PLACE, REGION_ONLY, NOT_IN_LEAD = "ACTOR_POSITION", "NON_PLACE", "REGION", "NOT_IN_HEADLINE_OR_LEAD"
+OUTSIDE_NAMED = "OUTSIDE_NAMED_COUNTRIES"      # L2: an extension place none of whose countries the reports name
+
+# Iteration 2, L1 non-place filter: a span the gazetteer does not know is not a place when it names an organisation,
+# competition or body (frozen lexicon, any position, locative included: "in La Liga"), is an institution or media
+# outlet, or ends like a sports club ("Man City") and the extension does not know it either. PROPOSED.
+_NON_PLACE_WORDS = re.compile(
+    r"\b(liga|league|serie a|premiership|bundesliga|ligue|eredivisie|cup|copa|coppa|championships?|tournament|"
+    r"olympics?|grand prix|club|fc|cf|afc|ministry|ministerio|ministero|government|gobierno|governo|parliament|"
+    r"parlamento|congress|senate|council|commission|committee|party|partido|partito|union|agency|bank|banco|"
+    r"corporation|corp|inc|ltd|group|university|universidad|police|policía|polizia|army|forces|navy|airlines?|"
+    r"airways)\b", re.I)
+_CLUB_SUFFIX = re.compile(r"\b(city|united|utd|rovers|wanderers|hotspur|albion|athletic)$", re.I)
+
+# Iteration 2, L1 revision (L4 first bullet): a principal-actor country mention is the event country when the report
+# states a country-wide occurrence (frozen lexicon below, in its headline or lead) and its headline is not a statement
+# (U1). Used only when no supported point location exists. PROPOSED.
+_COUNTRY_WIDE = re.compile(
+    r"\b(elections?|electoral|votes?|voters?|voting|polls?|ballots?|referendum|run-?off|primar(?:y|ies)|protests?|"
+    r"protesters?|demonstrations?|unrest|riots?|nationwide|national|parliament(?:ary)?|legislation|laws?|"
+    r"constitution(?:al)?|cabinet|coalition|government|budget|census|curfew|lockdown|state of emergency|martial law|"
+    r"coup|impeach\w*|general strike|earthquake|quake|floods?|flooding|wildfires?|drought|heatwave|cyclone|typhoon|"
+    r"hurricane|blackouts?|outbreak|epidemic|inflation|recession|economy|elecciones|elezioni|protestas|proteste)\b",
+    re.I)
+_STATEMENT = re.compile(
+    r"\b(says?|said|warns?|urges?|calls (?:on|for)|vows?|threatens?|denies|rejects?|condemns?|accuses?|claims?|"
+    r"insists?|blames?|slams?|demands?|tells?|pledges?|promises?|dice|afferma|afirma)\b", re.I)
 
 # U4 (owner ruling a): disputed or occupied territory is its own entity, contained in nothing. Location layer only;
 # the shared gazetteer is not changed. The list itself is PROPOSED.
@@ -102,6 +141,30 @@ def _is_region(name: str, geo: Gazetteer) -> bool:
     return key in _REGIONS or bool(_REGION_WORDS.search(key)) or key in getattr(geo, "regions", {})
 
 
+@lru_cache(maxsize=1)
+def _bodies():
+    from osint_monitor.processors.actors import ActorNormalizer
+    from osint_monitor.processors.institutions import registry
+    return registry(), ActorNormalizer.load()
+
+
+def _organisation(span: str) -> bool:
+    """Lexicon word, institution or media outlet (the non-place filter's first part)."""
+    if _NON_PLACE_WORDS.search(span):
+        return True
+    reg, normalizer = _bodies()
+    return reg.lookup(span) is not None or normalizer.is_media(span)
+
+
+def _country_wide(m: OccurrenceMention) -> bool:
+    return bool(_COUNTRY_WIDE.search(m.title) or _COUNTRY_WIDE.search(m.lead)) and not _STATEMENT.search(m.title)
+
+
+def _known_to_gazetteer(name: str, geo: Gazetteer) -> bool:
+    key = name.lower().strip()
+    return key in DISPUTED or key in geo.known or geo.canonical(name) in geo.known
+
+
 def _country_of(name: str, geo: Gazetteer) -> tuple[str | None, bool]:
     """(country, is_country) for a place name: disputed entities are their own country (U4)."""
     key = geo.canonical(name)
@@ -114,36 +177,56 @@ def _country_of(name: str, geo: Gazetteer) -> tuple[str | None, bool]:
 
 
 def decide(mentions: Iterable[OccurrenceMention], principal_keys: set[str], geo: Gazetteer,
-           actor_key=lambda name: name.lower()) -> EventLocation:
+           actor_key=lambda name: name.lower(), extension: dict[str, dict[str, list]] | None = None) -> EventLocation:
     """The contract's L1-L6 over the occurrence reports' place mentions.
 
     principal_keys: canonical actor keys of the Development's principal actors (a place mention whose actor key is
     one of them is the actor, not the location, unless it is written in locative position).
+    extension: the frozen gazetteer extension (default: place_extension.json); pass {} for the gazetteer alone.
     """
+    ext = load_extension() if extension is None else extension
     mentions = list(mentions)
     rejected: list[tuple[str, str]] = []
     specific: dict[str, set[str]] = {}         # place -> origins
     country_of: dict[str, str | None] = {}
     countries: dict[str, set[str]] = {}         # country named as a place -> origins
     regions: dict[str, set[str]] = {}
+    actor_countries: dict[str, set[str]] = {}   # actor country stated as country-wide occurrence -> origins (L1 rev.)
+    ext_candidates: dict[str, dict[str, list]] = {}
     for m in mentions:
         if not _in_headline_or_lead(m):
             rejected.append((m.span, NOT_IN_LEAD))
             continue
         locative = _locative(m)
         if not locative and actor_key(m.span) in principal_keys:
+            country, is_country = _country_of(m.span, geo)
+            if (is_country or m.span.lower().strip() in DISPUTED) and _country_wide(m):
+                actor_countries.setdefault(country, set()).add(m.origin)
             rejected.append((m.span, ACTOR_POSITION))       # "Russia strikes ..." (L1)
             continue
         if _is_region(m.span, geo):
             regions.setdefault(m.span.lower().strip(), set()).add(m.origin)
             continue
+        known = _known_to_gazetteer(m.span, geo)
+        if not known and _organisation(m.span):
+            rejected.append((m.span, NON_PLACE))             # "in La Liga", "Gobierno" (L1 non-place filter)
+            continue
         country, is_country = _country_of(m.span, geo)
+        key = m.span.lower().strip()
         if is_country:
             countries.setdefault(country, set()).add(m.origin)
         elif country is not None:
-            place = DISPUTED.get(m.span.lower().strip()) or geo.canonical(m.span)
+            place = DISPUTED.get(key) or geo.canonical(m.span)
             specific.setdefault(place, set()).add(m.origin)
             country_of[place] = country
+        elif not known and key in ext:
+            # a real place the gazetteer lacks: its countries come from the extension, resolved under L2 below
+            place = m.span.strip()
+            specific.setdefault(place, set()).add(m.origin)
+            country_of[place] = None
+            ext_candidates[place] = ext[key]
+        elif not known and _CLUB_SUFFIX.search(m.span.strip()):
+            rejected.append((m.span, NON_PLACE))             # "at Man City"
         elif locative:
             # unknown to the gazetteer but written as a location: a specific place whose country the geocoder
             # must establish within the reports' countries (L2); kept with no country here
@@ -152,6 +235,20 @@ def decide(mentions: Iterable[OccurrenceMention], principal_keys: set[str], geo:
             country_of[place] = None
         else:
             rejected.append((m.span, NON_PLACE))             # "La Liga", "Man City", "Gobierno" (L1)
+
+    # L2 for extension places: only inside the countries the reports name through the gazetteer; with none named, the
+    # most populous candidate when it is dominant (>= 4x the next country's), otherwise unresolved (PROPOSED: 4x)
+    named = set(countries) | {c for c in country_of.values() if c is not None}
+    for place, cands in ext_candidates.items():
+        inside = {c: v for c, v in cands.items() if c in named} if named else cands
+        if not inside:
+            specific.pop(place)
+            country_of.pop(place)
+            rejected.append((place, OUTSIDE_NAMED))
+            continue
+        ranked = sorted(inside.items(), key=lambda kv: -kv[1][0])
+        if len(ranked) == 1 or ranked[0][1][0] >= 4 * ranked[1][1][0]:
+            country_of[place] = ranked[0][0]
 
     # L2: a place the gazetteer does not know can only lie inside the countries the reports name; when exactly one
     # country is in play it is that one (the geocoder is then restricted to it), otherwise it stays unresolved
@@ -199,6 +296,16 @@ def decide(mentions: Iterable[OccurrenceMention], principal_keys: set[str], geo:
                                  rejected=rejected, reason="country named as the place (L4)")
         return EventLocation(Role.NONE, Confidence.NONE, places=sorted(countries), support=support, rejected=rejected,
                              reason="several countries, none dominant (L5)")
+    if actor_countries:
+        # L1 revision (iteration 2): no supported point location, and the reports state a country-wide occurrence
+        # in a principal actor's own country ("Brazil holds runoff", "Hong Kong police arrest ... under national
+        # security law"): that country is the event country
+        top = max(len(o) for o in actor_countries.values())
+        leaders = [c for c, o in actor_countries.items() if len(o) == top]
+        if len(leaders) == 1:
+            return EventLocation(Role.EVENT_COUNTRY, Confidence.COUNTRY_ONLY, country=leaders[0],
+                                 support={**support, leaders[0]: sorted(actor_countries[leaders[0]])},
+                                 rejected=rejected, reason="country-wide occurrence in the actor's country (L1 rev.)")
     if regions:
         top = max(len(o) for o in regions.values())
         leaders = sorted(r for r, o in regions.items() if len(o) == top)

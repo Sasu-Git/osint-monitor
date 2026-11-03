@@ -4,7 +4,7 @@ over occurrence-report place mentions, without a database."""
 import pytest
 
 from osint_monitor.processors.event_location import (
-    ACTOR_POSITION, NON_PLACE, Confidence, OccurrenceMention, Role, decide)
+    ACTOR_POSITION, NON_PLACE, OUTSIDE_NAMED, Confidence, OccurrenceMention, Role, decide)
 from osint_monitor.processors.geography import Gazetteer
 
 
@@ -77,3 +77,57 @@ def test_places_in_different_countries_without_a_dominant_one(geo):        # L5
 def test_mentions_outside_headline_and_lead_do_not_count(geo):
     loc = decide([m("Kyiv", "Talks resume", lead="Officials met in Geneva on Monday.")], set(), geo)
     assert loc.role == Role.NONE
+
+
+# --- iteration 2: gazetteer extension, non-place filter, L1 revision ---------------------------------------------
+
+EXT = {"fooville": {"ukraine": [50000, 49.0, 30.0]},
+       "twinton": {"france": [90000, 45.0, 2.0], "canada": [60000, 45.0, -75.0]},
+       "bigburg": {"germany": [800000, 50.0, 8.0], "brazil": [20000, -20.0, -45.0]}}
+
+
+def test_extension_place_resolves_inside_named_country(geo):
+    t = "Drone hits refinery near Fooville, Ukraine"
+    loc = decide([m("Fooville", t), m("Ukraine", t)], set(), geo, extension=EXT)
+    assert (loc.role, loc.place, loc.country) == (Role.EVENT_PLACE, "Fooville", "ukraine")
+
+
+def test_extension_place_outside_named_countries_is_rejected(geo):         # L2
+    t = "Floods in Twinton as Germany sends aid"
+    loc = decide([m("Twinton", t), m("Germany", t)], set(), geo, extension=EXT)
+    assert ("Twinton", OUTSIDE_NAMED) in loc.rejected and loc.country == "germany"
+
+
+def test_extension_ambiguity_without_named_country(geo):
+    assert decide([m("Bigburg", "Blast at Bigburg plant")], set(), geo, extension=EXT).country == "germany"
+    loc = decide([m("Twinton", "Blast at Twinton plant")], set(), geo, extension=EXT)
+    assert loc.place == "Twinton" and loc.country is None          # 90k vs 60k: not dominant, unresolved
+
+
+def test_gazetteer_wins_over_extension(geo):
+    loc = decide([m("Kyiv", "Strike in Kyiv")], set(), geo, extension={"kyiv": {"russia": [1, 0.0, 0.0]}})
+    assert loc.country == "ukraine"
+
+
+def test_locative_non_places_are_filtered(geo):
+    for span, t in (("La Liga", "Record crowd in La Liga"), ("Man City", "Late winner at Man City"),
+                    ("Labour Party", "Revolt in Labour Party")):
+        loc = decide([m(span, t)], set(), geo, extension={})
+        assert loc.role == Role.NONE and (span, NON_PLACE) in loc.rejected, span
+
+
+def test_country_wide_occurrence_in_actor_country(geo):                     # L1 revision
+    t = "Brazil heads to the polls in tight presidential runoff"
+    loc = decide([m("Brazil", t)], {"brazil"}, geo, extension={})
+    assert (loc.role, loc.country, loc.confidence) == (Role.EVENT_COUNTRY, "brazil", Confidence.COUNTRY_ONLY)
+
+
+def test_actor_country_without_country_wide_occurrence_stays_excluded(geo):
+    loc = decide([m("Russia", "Russia launches drones overnight")], {"russia"}, geo, extension={})
+    assert loc.role == Role.NONE
+
+
+def test_point_location_beats_country_wide_actor(geo):
+    t = "Ukraine votes on martial law as strikes hit Kharkiv"
+    loc = decide([m("Ukraine", t), m("Kharkiv", t)], {"ukraine"}, geo, extension={})
+    assert loc.place == "kharkiv"
