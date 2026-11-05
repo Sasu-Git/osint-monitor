@@ -1,0 +1,424 @@
+{
+ "frame": {
+  "first_id": 1199,
+  "last_id": 1341,
+  "size": 143,
+  "unmapped": 25,
+  "shown_by_language": {
+   "?": 14,
+   "en": 79,
+   "es": 19,
+   "it": 6
+  }
+ },
+ "allocation": {
+  "unmapped": 25,
+  "shown/?": 9,
+  "shown/en": 50,
+  "shown/es": 12,
+  "shown/it": 4
+ },
+ "seed": 20261105,
+ "cases": [
+  {
+   "development_id": 1200,
+   "stratum": "unmapped"
+  },
+  {
+   "development_id": 1201,
+   "stratum": "unmapped"
+  },
+  {
+   "development_id": 1204,
+   "stratum": "shown/es"
+  },
+  {
+   "development_id": 1205,
+   "stratum": "shown/en"
+  },
+  {
+   "development_id": 1206,
+   "stratum": "shown/en"
+  },
+  {
+   "development_id": 1208,
+   "stratum": "shown/en"
+  },
+  {
+   "development_id": 1209,
+   "stratum": "unmapped"
+  },
+  {
+   "development_id": 1210,
+   "stratum": "shown/es"
+  },
+  {
+   "development_id": 1211,
+   "stratum": "unmapped"
+  },
+  {
+   "development_id": 1212,
+   "stratum": "unmapped"
+  },
+  {
+   "development_id": 1216,
+   "stratum": "shown/en"
+  },
+  {
+   "development_id": 1217,
+   "stratum": "shown/en"
+  },
+  {
+   "development_id": 1218,
+   "stratum": "shown/en"
+  },
+  {
+   "development_id": 1220,
+   "stratum": "shown/en"
+  },
+  {
+   "development_id": 1221,
+   "stratum": "shown/en"
+  },
+  {
+   "development_id": 1224,
+   "stratum": "shown/en"
+  },
+  {
+   "development_id": 1225,
+   "stratum": "shown/en"
+  },
+  {
+   "development_id": 1227,
+   "stratum": "shown/en"
+  },
+  {
+   "development_id": 1232,
+   "stratum": "shown/en"
+  },
+  {
+   "development_id": 1233,
+   "stratum": "unmapped"
+  },
+  {
+   "development_id": 1234,
+   "stratum": "shown/en"
+  },
+  {
+   "development_id": 1235,
+   "stratum": "shown/en"
+  },
+  {
+   "development_id": 1236,
+   "stratum": "shown/en"
+  },
+  {
+   "development_id": 1237,
+   "stratum": "shown/es"
+  },
+  {
+   "development_id": 1238,
+   "stratum": "unmapped"
+  },
+  {
+   "development_id": 1241,
+   "stratum": "shown/en"
+  },
+  {
+   "development_id": 1242,
+   "stratum": "shown/en"
+  },
+  {
+   "development_id": 1243,
+   "stratum": "unmapped"
+  },
+  {
+   "development_id": 1246,
+   "stratum": "shown/en"
+  },
+  {
+   "development_id": 1247,
+   "stratum": "unmapped"
+  },
+  {
+   "development_id": 1248,
+   "stratum": "shown/?"
+  },
+  {
+   "development_id": 1249,
+   "stratum": "unmapped"
+  },
+  {
+   "development_id": 1250,
+   "stratum": "shown/it"
+  },
+  {
+   "development_id": 1251,
+   "stratum": "shown/es"
+  },
+  {
+   "development_id": 1252,
+   "stratum": "shown/en"
+  },
+  {
+   "development_id": 1253,
+   "stratum": "shown/en"
+  },
+  {
+   "development_id": 1254,
+   "stratum": "shown/es"
+  },
+  {
+   "development_id": 1255,
+   "stratum": "unmapped"
+  },
+  {
+   "development_id": 1256,
+   "stratum": "unmapped"
+  },
+  {
+   "development_id": 1257,
+   "stratum": "shown/en"
+  },
+  {
+   "development_id": 1258,
+   "stratum": "shown/es"
+  },
+  {
+   "development_id": 1261,
+   "stratum": "shown/?"
+  },
+  {
+   "development_id": 1262,
+   "stratum": "shown/en"
+  },
+  {
+   "development_id": 1263,
+   "stratum": "shown/en"
+  },
+  {
+   "development_id": 1264,
+   "stratum": "shown/en"
+  },
+  {
+   "development_id": 1267,
+   "stratum": "shown/en"
+  },
+  {
+   "development_id": 1268,
+   "stratum": "shown/en"
+  },
+  {
+   "development_id": 1269,
+   "stratum": "shown/en"
+  },
+  {
+   "development_id": 1271,
+   "stratum": "shown/en"
+  },
+  {
+   "development_id": 1272,
+   "stratum": "unmapped"
+  },
+  {
+   "development_id": 1273,
+   "stratum": "shown/en"
+  },
+  {
+   "development_id": 1275,
+   "stratum": "shown/en"
+  },
+  {
+   "development_id": 1276,
+   "stratum": "shown/en"
+  },
+  {
+   "development_id": 1277,
+   "stratum": "shown/?"
+  },
+  {
+   "development_id": 1278,
+   "stratum": "shown/es"
+  },
+  {
+   "development_id": 1281,
+   "stratum": "shown/?"
+  },
+  {
+   "development_id": 1282,
+   "stratum": "shown/?"
+  },
+  {
+   "development_id": 1284,
+   "stratum": "shown/en"
+  },
+  {
+   "development_id": 1286,
+   "stratum": "unmapped"
+  },
+  {
+   "development_id": 1287,
+   "stratum": "unmapped"
+  },
+  {
+   "development_id": 1289,
+   "stratum": "shown/en"
+  },
+  {
+   "development_id": 1290,
+   "stratum": "unmapped"
+  },
+  {
+   "development_id": 1291,
+   "stratum": "shown/it"
+  },
+  {
+   "development_id": 1294,
+   "stratum": "shown/?"
+  },
+  {
+   "development_id": 1295,
+   "stratum": "unmapped"
+  },
+  {
+   "development_id": 1296,
+   "stratum": "shown/en"
+  },
+  {
+   "development_id": 1297,
+   "stratum": "shown/en"
+  },
+  {
+   "development_id": 1299,
+   "stratum": "shown/en"
+  },
+  {
+   "development_id": 1301,
+   "stratum": "shown/en"
+  },
+  {
+   "development_id": 1302,
+   "stratum": "shown/en"
+  },
+  {
+   "development_id": 1304,
+   "stratum": "shown/?"
+  },
+  {
+   "development_id": 1305,
+   "stratum": "shown/en"
+  },
+  {
+   "development_id": 1306,
+   "stratum": "shown/en"
+  },
+  {
+   "development_id": 1307,
+   "stratum": "shown/it"
+  },
+  {
+   "development_id": 1308,
+   "stratum": "unmapped"
+  },
+  {
+   "development_id": 1310,
+   "stratum": "shown/en"
+  },
+  {
+   "development_id": 1312,
+   "stratum": "shown/en"
+  },
+  {
+   "development_id": 1313,
+   "stratum": "shown/en"
+  },
+  {
+   "development_id": 1314,
+   "stratum": "shown/en"
+  },
+  {
+   "development_id": 1316,
+   "stratum": "unmapped"
+  },
+  {
+   "development_id": 1317,
+   "stratum": "shown/es"
+  },
+  {
+   "development_id": 1318,
+   "stratum": "shown/en"
+  },
+  {
+   "development_id": 1319,
+   "stratum": "unmapped"
+  },
+  {
+   "development_id": 1320,
+   "stratum": "shown/en"
+  },
+  {
+   "development_id": 1321,
+   "stratum": "shown/en"
+  },
+  {
+   "development_id": 1322,
+   "stratum": "unmapped"
+  },
+  {
+   "development_id": 1323,
+   "stratum": "unmapped"
+  },
+  {
+   "development_id": 1324,
+   "stratum": "shown/es"
+  },
+  {
+   "development_id": 1326,
+   "stratum": "shown/en"
+  },
+  {
+   "development_id": 1327,
+   "stratum": "unmapped"
+  },
+  {
+   "development_id": 1330,
+   "stratum": "unmapped"
+  },
+  {
+   "development_id": 1331,
+   "stratum": "shown/es"
+  },
+  {
+   "development_id": 1332,
+   "stratum": "shown/es"
+  },
+  {
+   "development_id": 1333,
+   "stratum": "shown/en"
+  },
+  {
+   "development_id": 1334,
+   "stratum": "shown/?"
+  },
+  {
+   "development_id": 1336,
+   "stratum": "shown/?"
+  },
+  {
+   "development_id": 1338,
+   "stratum": "shown/es"
+  },
+  {
+   "development_id": 1339,
+   "stratum": "shown/it"
+  },
+  {
+   "development_id": 1340,
+   "stratum": "shown/en"
+  },
+  {
+   "development_id": 1341,
+   "stratum": "unmapped"
+  }
+ ]
+}
