@@ -131,3 +131,59 @@ def test_point_location_beats_country_wide_actor(geo):
     t = "Ukraine votes on martial law as strikes hit Kharkiv"
     loc = decide([m("Ukraine", t), m("Kharkiv", t)], {"ukraine"}, geo, extension={})
     assert loc.place == "kharkiv"
+
+
+# Iteration 3 rules (evaluations/geolocation/iter3-design/DESIGN.md): each is off by default and switchable.
+
+def test_iter3_rules_are_off_by_default(geo):
+    t = "Brazil delegation lands in Japan for talks"
+    ms = [m("Brazil", t), m("Japan", t)]
+    assert decide(ms, set(), geo) == decide(ms, set(), geo, rules=())
+
+
+def test_unknown_rule_is_refused(geo):
+    with pytest.raises(AssertionError):
+        decide([], set(), geo, rules={"1a"})
+
+
+def test_2a_tied_places_in_one_country_collapse_to_it(geo):
+    t = "Drones hit Kharkiv and Odesa; debris reported in Belgorod"
+    ms = [m("Kharkiv", t), m("Kharkiv", t, origin="BBC World", item=2), m("Odesa", t),
+          m("Odesa", t, origin="BBC World", item=2), m("Belgorod", t)]
+    assert decide(ms, set(), geo).role == Role.NONE
+    loc = decide(ms, set(), geo, rules={"2a"})
+    assert (loc.role, loc.country, loc.confidence) == (Role.EVENT_COUNTRY, "ukraine", Confidence.COUNTRY_ONLY)
+
+
+def test_3a_bare_country_is_not_the_place(geo):
+    t = "Brazil delegation lands in Japan for talks"
+    ms = [m("Brazil", t), m("Japan", t)]
+    assert decide(ms, set(), geo).role == Role.NONE                      # iteration 2: two countries tie (L5)
+    loc = decide(ms, set(), geo, rules={"3a"})
+    assert (loc.role, loc.country) == (Role.EVENT_COUNTRY, "japan")
+    assert ("Brazil", "COUNTRY_NOT_LOCATIVE") in loc.rejected
+
+
+def test_3a_admits_a_country_wide_occurrence(geo):
+    t = "Brazil floods kill 20"
+    loc = decide([m("Brazil", t)], set(), geo, rules={"3a"})
+    assert (loc.role, loc.country) == (Role.EVENT_COUNTRY, "brazil")
+
+
+def test_4a_congo_cues(geo):
+    t = "Clashes erupt in Congo"
+    cod = decide([m("Congo", t, lead="M23 rebels advanced overnight.")], set(), geo, rules={"4a"})
+    cog = decide([m("Congo", t, lead="Shops closed in Brazzaville.")], set(), geo, rules={"4a"})
+    none = decide([m("Congo", t)], set(), geo, rules={"4a"})
+    assert decide([m("Congo", t, lead="M23 rebels advanced overnight.")], set(), geo).country == "congo"
+    assert cod.country == "democratic republic of the congo" and cog.country == "congo"
+    assert none.role == Role.NONE and ("Congo", "AMBIGUOUS_CONGO") in none.rejected
+
+
+def test_5a_hong_kong_is_its_own_entity(geo):
+    t = "Police clear protest camp in Kowloon"
+    assert decide([m("Kowloon", t)], set(), geo).country == "china"
+    assert decide([m("Kowloon", t)], set(), geo, rules={"5a"}).country == "hong kong"
+    t = "Thousands march in Hong Kong"
+    loc = decide([m("Hong Kong", t)], set(), geo, rules={"5a"})
+    assert (loc.role, loc.country) == (Role.EVENT_COUNTRY, "hong kong")

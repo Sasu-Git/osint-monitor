@@ -94,6 +94,26 @@ _LOCATIVE = re.compile(r"\b(in|at|near|outside|across|over|into|off|on|from|insi
                        r"((?:[A-Z][\w'’.-]*\s+){0,3})$")
 LEAD_CHARS = 300
 
+# Iteration 3 rules (evaluations/geolocation/iter3-design/DESIGN.md, owner selection 2026-11-05). Each is off unless
+# named in ``decide(rules=...)``, so they can be scored separately; with none, decide() is iteration 2 unchanged.
+RULE_CONTAINMENT = "2a"      # tied leading places all in one country -> that country, COUNTRY_ONLY
+RULE_LOCATIVE_COUNTRY = "3a"  # a bare country counts as the place only in locative position (or country-wide occurrence)
+RULE_CONGO = "4a"            # bare "Congo" decided by a frozen cue lexicon, otherwise no country
+RULE_TERRITORY = "5a"        # Hong Kong and Macau are their own country-level entity in this module
+ITER3_RULES = frozenset({RULE_CONTAINMENT, RULE_LOCATIVE_COUNTRY, RULE_CONGO, RULE_TERRITORY})
+
+# 4a: cue lexicon over the Development's occurrence headlines and leads (frozen in DESIGN.md). Exactly one side's cues
+# present decides; none or both leave a bare "Congo" with no country.
+_COD_CUES = re.compile(r"\b(?:DR|DRC|RDC|M23)\b|(?i:\b(?:democratic|kinshasa|goma|bukavu|kivu|ituri)\b)")
+_COG_CUES = re.compile(r"\b(brazzaville|pointe-noire)\b", re.I)
+_BARE_CONGO = {"congo", "the congo"}
+COD, COG = "democratic republic of the congo", "congo"
+AMBIGUOUS_CONGO = "AMBIGUOUS_CONGO"
+NOT_LOCATIVE_COUNTRY = "COUNTRY_NOT_LOCATIVE"
+
+# 5a: module-local territories, each its own country-level entity like U4's disputed list (explicit two-entry list)
+TERRITORIES = {"hong kong": "hong kong", "macau": "macau"}
+
 
 @dataclass(frozen=True)
 class OccurrenceMention:
@@ -165,31 +185,51 @@ def _known_to_gazetteer(name: str, geo: Gazetteer) -> bool:
     return key in DISPUTED or key in geo.known or geo.canonical(name) in geo.known
 
 
-def _country_of(name: str, geo: Gazetteer) -> tuple[str | None, bool]:
-    """(country, is_country) for a place name: disputed entities are their own country (U4)."""
+def _country_of(name: str, geo: Gazetteer, territories: bool = False) -> tuple[str | None, bool]:
+    """(country, is_country) for a place name: disputed entities are their own country (U4); with rule 5a so are
+    the territories, and a place inside one ("Kowloon") belongs to it, not to its gazetteer country."""
     key = geo.canonical(name)
     if key in DISPUTED or name.lower().strip() in DISPUTED:
         return DISPUTED.get(key) or DISPUTED[name.lower().strip()], False
+    if territories:
+        for k in (key, name.lower().strip(), *geo.ancestors(key)):
+            if k in TERRITORIES:
+                return TERRITORIES[k], False
     if key in geo.countries:
         return key, True
     inside = [a for a in geo.ancestors(key) if a in geo.countries]
     return (inside[0], False) if len(inside) == 1 else (None, False)
 
 
+def _congo(mentions: list[OccurrenceMention]) -> str | None:
+    """Rule 4a: COD or COG from the cue lexicon over the occurrence headlines and leads; None when undecided."""
+    texts = {t for m in mentions for t in (m.title, m.lead)}
+    cod = any(_COD_CUES.search(t) for t in texts)
+    cog = any(_COG_CUES.search(t) for t in texts)
+    return COD if cod and not cog else COG if cog and not cod else None
+
+
 def decide(mentions: Iterable[OccurrenceMention], principal_keys: set[str], geo: Gazetteer,
-           actor_key=lambda name: name.lower(), extension: dict[str, dict[str, list]] | None = None) -> EventLocation:
+           actor_key=lambda name: name.lower(), extension: dict[str, dict[str, list]] | None = None,
+           rules: Iterable[str] = ()) -> EventLocation:
     """The contract's L1-L6 over the occurrence reports' place mentions.
 
     principal_keys: canonical actor keys of the Development's principal actors (a place mention whose actor key is
     one of them is the actor, not the location, unless it is written in locative position).
     extension: the frozen gazetteer extension (default: place_extension.json); pass {} for the gazetteer alone.
+    rules: iteration-3 rules to apply (subset of ITER3_RULES); none = iteration 2.
     """
     ext = load_extension() if extension is None else extension
+    rules = frozenset(rules)
+    assert rules <= ITER3_RULES, rules - ITER3_RULES
+    territories = RULE_TERRITORY in rules
     mentions = list(mentions)
+    congo = _congo(mentions) if RULE_CONGO in rules else None
     rejected: list[tuple[str, str]] = []
     specific: dict[str, set[str]] = {}         # place -> origins
     country_of: dict[str, str | None] = {}
     countries: dict[str, set[str]] = {}         # country named as a place -> origins
+    bare_countries: set[str] = set()            # 3a: countries named, but not as the place (still bound L2)
     regions: dict[str, set[str]] = {}
     actor_countries: dict[str, set[str]] = {}   # actor country stated as country-wide occurrence -> origins (L1 rev.)
     ext_candidates: dict[str, dict[str, list]] = {}
@@ -198,22 +238,33 @@ def decide(mentions: Iterable[OccurrenceMention], principal_keys: set[str], geo:
             rejected.append((m.span, NOT_IN_LEAD))
             continue
         locative = _locative(m)
+        key = m.span.lower().strip()
         if not locative and actor_key(m.span) in principal_keys:
-            country, is_country = _country_of(m.span, geo)
-            if (is_country or m.span.lower().strip() in DISPUTED) and _country_wide(m):
+            country, is_country = _country_of(m.span, geo, territories)
+            if RULE_CONGO in rules and key in _BARE_CONGO:
+                country, is_country = congo, congo is not None
+            if (is_country or key in DISPUTED or (territories and country in TERRITORIES.values())) \
+                    and _country_wide(m):
                 actor_countries.setdefault(country, set()).add(m.origin)
             rejected.append((m.span, ACTOR_POSITION))       # "Russia strikes ..." (L1)
             continue
         if _is_region(m.span, geo):
-            regions.setdefault(m.span.lower().strip(), set()).add(m.origin)
+            regions.setdefault(key, set()).add(m.origin)
             continue
         known = _known_to_gazetteer(m.span, geo)
         if not known and _organisation(m.span):
             rejected.append((m.span, NON_PLACE))             # "in La Liga", "Gobierno" (L1 non-place filter)
             continue
-        country, is_country = _country_of(m.span, geo)
-        key = m.span.lower().strip()
-        if is_country:
+        country, is_country = _country_of(m.span, geo, territories)
+        if RULE_CONGO in rules and key in _BARE_CONGO:
+            if congo is None:
+                rejected.append((m.span, AMBIGUOUS_CONGO))   # 4a: no cue decides COD vs COG
+                continue
+            country, is_country = congo, True
+        if is_country and RULE_LOCATIVE_COUNTRY in rules and not locative and not _country_wide(m):
+            bare_countries.add(country)                      # 3a: "Brazil" as subject or actor is not the place
+            rejected.append((m.span, NOT_LOCATIVE_COUNTRY))
+        elif is_country:
             countries.setdefault(country, set()).add(m.origin)
         elif country is not None:
             place = DISPUTED.get(key) or geo.canonical(m.span)
@@ -238,7 +289,7 @@ def decide(mentions: Iterable[OccurrenceMention], principal_keys: set[str], geo:
 
     # L2 for extension places: only inside the countries the reports name through the gazetteer; with none named, the
     # most populous candidate when it is dominant (>= 4x the next country's), otherwise unresolved (PROPOSED: 4x)
-    named = set(countries) | {c for c in country_of.values() if c is not None}
+    named = set(countries) | bare_countries | {c for c in country_of.values() if c is not None}
     for place, cands in ext_candidates.items():
         inside = {c: v for c, v in cands.items() if c in named} if named else cands
         if not inside:
@@ -252,7 +303,7 @@ def decide(mentions: Iterable[OccurrenceMention], principal_keys: set[str], geo:
 
     # L2: a place the gazetteer does not know can only lie inside the countries the reports name; when exactly one
     # country is in play it is that one (the geocoder is then restricted to it), otherwise it stays unresolved
-    named = set(countries) | {c for c in country_of.values() if c is not None}
+    named = set(countries) | bare_countries | {c for c in country_of.values() if c is not None}
     if len(named) == 1:
         for place, country in country_of.items():
             if country is None:
@@ -286,6 +337,11 @@ def decide(mentions: Iterable[OccurrenceMention], principal_keys: set[str], geo:
             return EventLocation(Role.EVENT_PLACE, Confidence.CONFIRMED_PLACE if top >= 2 else Confidence.PLACE,
                                  place=place, country=country_of[place], places=sorted(specific), support=support,
                                  rejected=rejected, reason="dominant specific place")
+        if RULE_CONTAINMENT in rules and len(leader_countries) == 1 and None not in leader_countries:
+            country = next(iter(leader_countries))
+            return EventLocation(Role.EVENT_COUNTRY, Confidence.COUNTRY_ONLY, country=country,
+                                 places=sorted(specific), support=support, rejected=rejected,
+                                 reason="tied places all in one country (2a: containment collapse)")
         return EventLocation(Role.NONE, Confidence.NONE, places=sorted(specific), support=support, rejected=rejected,
                              reason="several places in different countries, none dominant (L5)")
     if countries:
