@@ -9,6 +9,7 @@ outlet's own reporting.
 from __future__ import annotations
 
 import re
+from collections import Counter
 from datetime import datetime
 from difflib import SequenceMatcher
 from typing import Sequence
@@ -29,6 +30,13 @@ def _alias_regex(alias: str) -> str:
 
 def _normalize(text: str) -> str:
     return _SPACE.sub(" ", text.lower()).strip()
+
+
+def quick_ratio_bound(a_counts: Counter, b_counts: Counter, total_length: int) -> float:
+    """SequenceMatcher(None, a, b).quick_ratio() from the two strings' character counts: the same `matches` (the
+    multiset intersection) and the same expression as difflib's ratio, so it is an upper bound on ratio()."""
+    matches = sum((a_counts & b_counts).values())
+    return 2.0 * matches / total_length if total_length else 1.0
 
 
 def _rolling_or_analysis(title: str | None) -> bool:
@@ -137,26 +145,35 @@ class ProvenanceResolver:
         return resolved
 
     def _mark_syndicated_copies(self, items: Sequence[EvidenceItem], resolved: list[ItemProvenance]) -> None:
-        """A later item whose body text starts like an earlier item from another origin is a copy."""
+        """A later item whose body text starts like an earlier item from another origin is a copy.
+
+        Pairs are checked first against quick_ratio()'s bound, computed from precomputed character counts:
+        ratio() never exceeds it (matching blocks are a subset of the shared characters), so a pair below the
+        threshold there cannot match and the expensive ratio() is skipped. Same pairs, same order, same first
+        match: the result is unchanged (evaluations/performance/pair-matcher/EQUIVALENCE.md)."""
         cfg = self.config
         n = cfg.syndication_min_chars
+        threshold = cfg.syndication_similarity
         order = sorted(range(len(items)), key=lambda i: (items[i].published_at or datetime.min, i))
-        earlier: list[tuple[str, int]] = []   # (normalized prefix, index)
+        earlier: list[tuple[str, int, Counter]] = []   # (normalized prefix, index, its character counts)
         for i in order:
             body = _normalize(items[i].text)
             if len(body) < n:
                 continue
             prefix = body[: n * 2]
+            counts = Counter(prefix)
             prov = resolved[i]
             if prov.evidence_type not in (EvidenceType.PRIMARY, EvidenceType.COMMENTARY):
-                for other_prefix, j in earlier:
+                for other_prefix, j, other_counts in earlier:
                     if resolved[j].origin == prov.origin:
                         continue
-                    if SequenceMatcher(None, prefix, other_prefix, autojunk=False).ratio() >= cfg.syndication_similarity:
+                    if quick_ratio_bound(counts, other_counts, len(prefix) + len(other_prefix)) < threshold:
+                        continue
+                    if SequenceMatcher(None, prefix, other_prefix, autojunk=False).ratio() >= threshold:
                         origin = resolved[j].origin
                         resolved[i] = prov.model_copy(update={
                             "evidence_type": EvidenceType.DERIVATIVE, "origin": origin, "derived_from": origin,
                             "note": f"near-identical copy of {resolved[j].source_name}",
                         })
                         break
-            earlier.append((prefix, i))
+            earlier.append((prefix, i, counts))
