@@ -31,8 +31,10 @@ rules:
     channels: ["desktop", "slack"]
 
 channels:
+  # Desktop notifications off (owner ruling 2026-11-09): the daemon moves to a headless Linux VM, where they
+  # cannot be delivered. Alerts are still stored and shown in the dashboard; no external channel is configured.
   - type: desktop
-    enabled: true
+    enabled: false
     config: {}
 
   # Uncomment and configure as needed:
