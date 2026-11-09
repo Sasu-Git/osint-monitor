@@ -9,6 +9,9 @@ it, pinned to the approved code, when its process is gone.
 | situation | action |
 |---|---|
 | hold file `HOLD` exists in the runtime folder | nothing (deliberate stop: deploy, rollback, maintenance) |
+| yield file `YIELD` exists, its lease not over | no restart (the daemon gave its memory to other work: `daemon_yield.py`) |
+| yield file exists, lease over, available memory < `yield_resume_available_mb` (default 2900 MB) | no restart; logged every check (`yield_wait_memory`) |
+| yield file exists, lease over, enough memory | restart as below and remove the yield file |
 | daemon running | nothing |
 | daemon gone, daemon worktree HEAD = pinned commit, < 3 restarts in the last hour | restart it detached through WMI, through `daemon_launcher.py` (same command, environment and logs as the runbook) |
 | daemon gone, HEAD is another commit | **refuse** and log: the supervisor never changes or starts other code |
@@ -27,7 +30,7 @@ crash report, and the old `cmd /c` wrapper discarded the exit code. The supervis
 | record | fields |
 |---|---|
 | `start` | time, launcher pid, daemon pid, command, worktree HEAD |
-| `exit` (written by the launcher) | time, daemon pid, `exit_code` and `exit_code_hex`, runtime, `held` (the hold file existed: a deliberate stop), last 20 lines of `daemon.err.log` |
+| `exit` (written by the launcher) | time, daemon pid, `exit_code` and `exit_code_hex`, runtime, `held` (the hold file existed: a deliberate stop), `yielded` (the yield file existed), last 20 lines of `daemon.err.log` |
 | `exit` with `recorded_by: supervisor` | the launcher died with the daemon (process-tree kill, reboot, power loss): exit code unknown |
 
 Reading exit codes: `0` a clean exit; `1` a forced termination (`taskkill /F`) or an unhandled Python error (see the
@@ -52,8 +55,20 @@ Re-running refreshes the script and the task; it never overwrites `config.json`.
   the launcher then records the exit (`held: true`) and ends by itself.
 - **Deploying new code**: with the hold in place, deploy through `docs/operations/deployment-runbook.md`, then set
   `pinned_commit` in `config.json` to the new approved commit, then delete the hold.
+- **Giving the daemon's memory to other work** (owner permission, 2026-11-09: any agent or person may do this when
+  a task needs the RAM). The daemon uses about 1.2 GB resident, peaking at 2.4 GB, and 4.6 GB committed.
+  ```powershell
+  $PY = "C:\Users\EugenioVardiero\osint-monitor\.venv\Scripts\python.exe"
+  $Y  = "C:\Users\EugenioVardiero\osint-monitor\data\deploy\supervisor\daemon_yield.py"
+  & $PY $Y yield --by "<who>" --reason "<task>" --minutes 120   # graceful: pause, let the running run finish (<= 20 min), stop
+  & $PY $Y resume --by "<who>"                                   # when done: restart now
+  & $PY $Y status                                                # daemon pids, yield, lease, available memory
+  ```
+  Without `resume`, the supervisor brings the daemon back after the lease once available memory reaches
+  `yield_resume_available_mb`. `yield` refuses while the hold file exists. Each yield and resume is logged in
+  `yields.jsonl`; the downtime is a collection gap (and soak downtime). `--now` skips waiting for the running run.
 - **Log**: `data\deploy\supervisor\supervisor.jsonl`, one line per action (restarts, refusals, keep-awake starts);
   `daemon-exits.jsonl` beside it, one line per daemon start and exit.
 - **Remove**: `Unregister-ScheduledTask -TaskName "OSINT daemon supervisor" -Confirm:$false`.
 
-Tests: `tests/test_daemon_supervisor.py` (the decision rules, exit records, reconciling unrecorded exits).
+Tests: `tests/test_daemon_supervisor.py` (the decision rules including yield, exit records, reconciling unrecorded exits).
