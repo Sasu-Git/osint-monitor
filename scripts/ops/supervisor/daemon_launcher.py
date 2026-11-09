@@ -8,7 +8,8 @@ it, and appends two JSON lines to ``exit_log`` (default ``daemon-exits.jsonl`` n
 
 - ``start``: time, launcher pid, daemon pid, command, worktree HEAD;
 - ``exit``: time, daemon pid, exit code (decimal and hex: 0xC0000005 is a native crash, 1 a forced termination or an
-  unhandled Python error), runtime, whether the hold file existed (a deliberate stop: deploy, rollback, maintenance),
+  unhandled Python error), runtime, whether the hold file existed (a deliberate stop: deploy, rollback, maintenance)
+  or the yield file (``daemon_yield.py``: memory given to other work),
   and the last ``tail_lines`` lines of ``daemon.err.log``.
 
 Nothing here restarts anything: restarts stay with the supervisor and its rules. To stop the daemon so that its exit is
@@ -75,6 +76,7 @@ def run(cfg: dict, argv: list[str]) -> int:
                    "exit_code": code, "exit_code_hex": f"0x{code & 0xFFFFFFFF:08X}",
                    "runtime_s": round((ended - started).total_seconds()),
                    "held": Path(cfg["hold_file"]).exists(),
+                   "yielded": Path(cfg.get("yield_file") or Path(cfg["hold_file"]).with_name("YIELD")).exists(),
                    "err_tail": tail(logs / "daemon.err.log", int(cfg.get("tail_lines", 20)))})
     return code
 

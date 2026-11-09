@@ -128,3 +128,53 @@ def test_tail_reads_only_the_end_of_a_large_log(tmp_path):
     log.write_text("x" * 200_000 + "\n" + "\n".join(f"line {i}" for i in range(50)) + "\n", encoding="utf-8")
     assert launcher.tail(log, 2) == ["line 48", "line 49"]
     assert launcher.tail(tmp_path / "missing.log", 2) == []
+
+
+# Yield (daemon_yield.py): the daemon gives its memory to other work for a lease, then comes back when memory allows.
+
+def test_a_yield_lease_keeps_the_daemon_stopped():
+    s = state(daemon_running=False, yielded=True, lease_active=True, available_mb=9000)
+    assert sup.decide(s, PIN[:7], 3)["daemon"] == "yield"
+
+
+def test_after_the_lease_the_daemon_waits_for_memory():
+    s = state(daemon_running=False, yielded=True, lease_active=False, available_mb=1200)
+    assert sup.decide(s, PIN[:7], 3, resume_available_mb=2900)["daemon"] == "yield_wait_memory"
+    s = state(daemon_running=False, yielded=True, lease_active=False, available_mb=None)
+    assert sup.decide(s, PIN[:7], 3)["daemon"] == "yield_wait_memory"          # unknown memory: keep waiting
+
+
+def test_after_the_lease_with_memory_available_the_pinned_daemon_restarts():
+    s = state(daemon_running=False, yielded=True, lease_active=False, available_mb=3100)
+    assert sup.decide(s, PIN[:7], 3, resume_available_mb=2900)["daemon"] == "restart"
+    s = state(daemon_running=False, yielded=True, lease_active=False, available_mb=3100, head=None)
+    assert sup.decide(s, PIN[:7], 3)["daemon"] == "refuse_pin_mismatch"         # the pin still applies
+
+
+def test_the_hold_overrides_a_yield_and_a_running_daemon_is_left_alone():
+    assert sup.decide(state(held=True, yielded=True), PIN[:7], 3)["daemon"] == "hold"
+    assert sup.decide(state(yielded=True, lease_active=True), PIN[:7], 3)["daemon"] == "ok"
+
+
+def test_the_lease():
+    now = datetime(2026, 11, 9, 12, tzinfo=timezone.utc)
+    assert sup.lease_active({"until": "2026-11-09T13:00:00+00:00"}, now)
+    assert not sup.lease_active({"until": "2026-11-09T11:00:00+00:00"}, now)
+    assert not sup.lease_active({}, now) and not sup.lease_active(None, now)    # unreadable yield: no lease
+
+
+def test_read_yield(tmp_path):
+    f = tmp_path / "YIELD"
+    assert sup.read_yield(f) is None
+    f.write_text('{"by": "agent", "until": "2026-11-09T13:00:00+00:00"}')
+    assert sup.read_yield(f)["by"] == "agent"
+    f.write_text("not json")
+    assert sup.read_yield(f) == {}
+
+
+def test_a_yield_stop_is_marked_on_the_exit_record(tmp_path):
+    cfg = _cfg(tmp_path)
+    (tmp_path / "YIELD").write_text("{}")
+    launcher.run(cfg, [sys.executable, "-c", "pass"])
+    end = json.loads((tmp_path / "daemon-exits.jsonl").read_text().splitlines()[-1])
+    assert end["yielded"] is True and end["held"] is False

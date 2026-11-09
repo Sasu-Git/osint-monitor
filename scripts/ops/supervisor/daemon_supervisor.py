@@ -4,6 +4,9 @@
 
 Each run:
 1. does nothing while the hold file exists (a deliberate stop: a deploy, a rollback, maintenance);
+   while the yield file exists (``daemon_yield.py``: the daemon gave its memory to other work) it does not restart
+   the daemon before the yield's lease ends, then only once available memory reaches ``yield_resume_available_mb``,
+   and removes the yield file when it restarts;
 2. finds the daemon (a python process running ``main.py daemon`` whose command line names the daemon worktree);
 3. if it is gone, restarts it only when
    - the daemon worktree's HEAD is the pinned commit (the supervisor never changes code: a different checkout is
@@ -42,14 +45,22 @@ class State:
     head: str | None
     keepawake_running: bool
     restarts_last_hour: int
+    yielded: bool = False            # the yield file exists
+    lease_active: bool = False       # ... and its lease has not ended
+    available_mb: int | None = None  # available physical memory (free + standby)
 
 
-def decide(state: State, pinned: str, max_restarts_per_hour: int, keepawake: bool = True) -> dict:
+def decide(state: State, pinned: str, max_restarts_per_hour: int, keepawake: bool = True,
+           resume_available_mb: int = 2900) -> dict:
     """What to do about the daemon and the keep-awake (no side effects)."""
     if state.held:
         return {"daemon": "hold", "keepawake": "hold"}
     if state.daemon_running:
         daemon = "ok"
+    elif state.yielded and state.lease_active:
+        daemon = "yield"
+    elif state.yielded and (state.available_mb is None or state.available_mb < resume_available_mb):
+        daemon = "yield_wait_memory"
     elif not (state.head and pinned and len(pinned) >= 7 and state.head.startswith(pinned)):
         daemon = "refuse_pin_mismatch"
     elif state.restarts_last_hour >= max_restarts_per_hour:
@@ -101,6 +112,28 @@ def read_jsonl(path: Path, last: int = 200) -> list[dict]:
     return out
 
 
+def available_mb() -> int | None:
+    out = _ps("(Get-CimInstance Win32_PerfFormattedData_PerfOS_Memory).AvailableMBytes").strip()
+    return int(out) if out.isdigit() else None
+
+
+def read_yield(path: Path) -> dict | None:
+    """The yield file's content (``daemon_yield.py``), or None without one; an unreadable file is a yield with no lease."""
+    if not path.exists():
+        return None
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return {}
+
+
+def lease_active(y: dict | None, now: datetime) -> bool:
+    try:
+        return bool(y) and now < datetime.fromisoformat(y["until"])
+    except (KeyError, TypeError, ValueError):
+        return False
+
+
 def head_of(worktree: str) -> str | None:
     r = subprocess.run(["git", "-C", worktree, "rev-parse", "HEAD"], capture_output=True, text=True,
                        creationflags=NO_WINDOW, timeout=60)
@@ -138,11 +171,23 @@ def main(config_path: str) -> int:
     if missing:
         with open(exit_log, "a", encoding="utf-8") as f:
             f.write(json.dumps(missing) + "\n")
+    yield_file = Path(cfg.get("yield_file") or Path(cfg["hold_file"]).with_name("YIELD"))
+    y = read_yield(yield_file)
     state = State(held=held, daemon_running=bool(daemon), head=head_of(worktree),
-                  keepawake_running=bool(keep), restarts_last_hour=recent_restarts(log, now))
-    action = decide(state, cfg["pinned_commit"], cfg.get("max_restarts_per_hour", 3), cfg.get("keepawake", True))
+                  keepawake_running=bool(keep), restarts_last_hour=recent_restarts(log, now),
+                  yielded=y is not None, lease_active=lease_active(y, now),
+                  available_mb=available_mb() if y is not None and not daemon else None)
+    resume_mb = cfg.get("yield_resume_available_mb", 2900)
+    action = decide(state, cfg["pinned_commit"], cfg.get("max_restarts_per_hour", 3), cfg.get("keepawake", True),
+                    resume_mb)
     entry = {"at": now.isoformat(timespec="seconds"), **action, "head": state.head, "pinned": cfg["pinned_commit"],
              "daemon_pids": [p["ProcessId"] for p in daemon], "restarts_last_hour": state.restarts_last_hour}
+    if y is not None:
+        entry["yield"] = {"by": y.get("by"), "until": y.get("until"), "available_mb": state.available_mb,
+                          "resume_available_mb": resume_mb}
+    if action["daemon"] == "restart" and y is not None:
+        yield_file.unlink(missing_ok=True)       # the yield ends with the restart (lease over, memory available)
+        entry["yield_ended"] = True
     if action["daemon"] == "restart":
         # the launcher runs the same command as the runbook and records how the daemon ends (daemon-exits.jsonl)
         launcher_script = cfg.get("launcher") or str(Path(__file__).with_name("daemon_launcher.py"))
