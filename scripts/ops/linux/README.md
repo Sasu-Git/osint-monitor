@@ -30,6 +30,8 @@ sudo install -o root -g osint -m 0640 $OPS/daemon.env.example /etc/osint/daemon.
 git -C /opt/osint/app rev-parse HEAD | sudo tee /etc/osint/pinned_commit
 sudo install -D -m 0755 $OPS/check_pin.sh /usr/local/lib/osint/check_pin.sh
 sudo install -m 0644 $OPS/osint-daemon.service /etc/systemd/system/
+# systemd opens the log files before any ExecStartPre runs, so the (untracked) log folder must already exist
+sudo install -d -o osint -g osint /opt/osint/app/data /opt/osint/app/data/logs
 sudo systemctl daemon-reload
 sudo systemctl enable --now osint-daemon
 ```
