@@ -19,7 +19,9 @@ def _feed_categories() -> dict[str, str]:
         return {}
 
 
-def build_evidence(session: Session, event_id: int) -> list[EvidenceItem]:
+def build_evidence(session: Session, event_id: int, categories: dict[str, str] | None = None) -> list[EvidenceItem]:
+    """The event's items as EvidenceItems. ``categories`` (``_feed_categories()``) may be passed in to read
+    sources.yaml once for many events."""
     items = (
         session.query(RawItem)
         .join(EventItem, EventItem.item_id == RawItem.id)
@@ -35,8 +37,11 @@ def build_evidence(session: Session, event_id: int) -> list[EvidenceItem]:
     for item_id, claim_type in (session.query(Claim.item_id, Claim.claim_type)
                                 .filter(Claim.item_id.in_([i.id for i in items]))):
         claim_types.setdefault(item_id, set()).add(claim_type)
+    return evidence_from_items(items, claim_types, _feed_categories() if categories is None else categories)
 
-    categories = _feed_categories()
+
+def evidence_from_items(items, claim_types: dict[int, set[str]], categories: dict[str, str]) -> list[EvidenceItem]:
+    """EvidenceItems from loaded RawItems (with their source) and each item's claim types, in item-id order."""
     evidence = []
     for item in sorted(items, key=lambda i: i.id):
         source = item.source

@@ -11,7 +11,7 @@ from collections import Counter
 from itertools import combinations
 
 import numpy as np
-from sqlalchemy.orm import Session
+from sqlalchemy.orm import Session, joinedload
 
 from osint_monitor.core.database import (
     Claim,
@@ -140,7 +140,19 @@ def _compute_diversity_score(source_grades: list[str]) -> float:
 # Core scoring
 # ---------------------------------------------------------------------------
 
-def compute_corroboration_score(session: Session, event_id: int) -> dict:
+_EMPTY_SCORE = {
+    "independent_sources": 0,
+    "outlets": 0,
+    "source_diversity": 0.0,
+    "admiralty_rating": "F6",
+    "corroboration_level": "UNCONFIRMED",
+    "confidence": 0.0,
+    "confidence_class": ConfidenceClass.UNVERIFIED.value,
+    "provenance_flags": [],
+}
+
+
+def compute_corroboration_score(session: Session, event_id: int, resolver=None, categories=None) -> dict:
     """Compute multi-source corroboration score for an event.
 
     Returns a dict with:
@@ -152,6 +164,9 @@ def compute_corroboration_score(session: Session, event_id: int) -> dict:
         - ``confidence``: 0-1 composite confidence
         - ``confidence_class``: ConfidenceClass value from provenance
         - ``provenance_flags``: ProvenanceFlag values, e.g. derivative_collapsed
+
+    ``resolver`` (a ProvenanceResolver) and ``categories`` (the sources.yaml feed categories) may be passed in to reuse
+    them across events; by default they are loaded for this call. ``score_events`` scores many events at once.
     """
     # Gather all items + their sources for this event
     event_items = (
@@ -161,37 +176,107 @@ def compute_corroboration_score(session: Session, event_id: int) -> dict:
     )
 
     if not event_items:
-        return {
-            "independent_sources": 0,
-            "outlets": 0,
-            "source_diversity": 0.0,
-            "admiralty_rating": "F6",
-            "corroboration_level": "UNCONFIRMED",
-            "confidence": 0.0,
-            "confidence_class": ConfidenceClass.UNVERIFIED.value,
-            "provenance_flags": [],
-        }
+        return dict(_EMPTY_SCORE)
 
     item_ids = [ei.item_id for ei in event_items]
     items = session.query(RawItem).filter(RawItem.id.in_(item_ids)).all()
+    sources_by_id = _sources_of(items, lambda source_id: session.get(Source, source_id))
 
-    # Count independent sources (different source_id = different organisation)
-    source_ids = set()
-    sources_by_id: dict[int, Source] = {}
+    def provenance():
+        from osint_monitor.processors.provenance import assess_event
+        return assess_event(session, event_id, resolver, categories)
+
+    def claims():
+        found = session.query(Claim).filter(Claim.event_id == event_id).all()
+        if not found:
+            # Also check claims linked via items
+            found = session.query(Claim).filter(Claim.item_id.in_(item_ids)).all()
+        return found
+
+    return _score(event_id, items, sources_by_id, provenance, claims)
+
+
+def score_events(session: Session, event_ids: list[int], chunk: int = 200) -> dict:
+    """``compute_corroboration_score`` for many events: one ProvenanceResolver and one read of the feed categories for
+    the whole call, and the members, items (with their sources) and claims loaded per chunk of events instead of per
+    event. The scoring itself is the same function on the same rows. Maps event id -> score dict, or -> the exception
+    its scoring raised, so the caller can handle a failed event as before."""
+    from osint_monitor.processors.provenance import ProvenanceResolver, assess_confidence
+    from osint_monitor.processors.provenance.context import _feed_categories, evidence_from_items
+
+    resolver, categories = ProvenanceResolver(), _feed_categories()
+    results: dict = {}
+    for start in range(0, len(event_ids), chunk):
+        ids = event_ids[start:start + chunk]
+        members: dict[int, list[int]] = {e: [] for e in ids}
+        for event_id, item_id in (session.query(EventItem.event_id, EventItem.item_id)
+                                  .filter(EventItem.event_id.in_(ids)).order_by(EventItem.id)):
+            members[event_id].append(item_id)
+        all_items = sorted({i for v in members.values() for i in v})
+        rows = {r.id: r for r in _in_chunks(all_items, lambda part: session.query(RawItem)
+                                            .options(joinedload(RawItem.source))
+                                            .filter(RawItem.id.in_(part)).all())}
+        claims_by_item: dict[int, list] = {}
+        for c in _in_chunks(all_items, lambda part: session.query(Claim).filter(Claim.item_id.in_(part))
+                            .order_by(Claim.id).all()):
+            claims_by_item.setdefault(c.item_id, []).append(c)
+        claims_by_event: dict[int, list] = {}
+        for c in session.query(Claim).filter(Claim.event_id.in_(ids)).order_by(Claim.id):
+            claims_by_event.setdefault(c.event_id, []).append(c)
+
+        for event_id in ids:
+            try:
+                item_ids = members[event_id]
+                if not item_ids:
+                    results[event_id] = dict(_EMPTY_SCORE)
+                    continue
+                items = [rows[i] for i in sorted(set(item_ids)) if i in rows]
+                sources_by_id = _sources_of(items, lambda source_id, items=items: next(
+                    (i.source for i in items if i.source_id == source_id), None))
+                claim_types = {i: {c.claim_type for c in claims_by_item.get(i, [])} for i in item_ids}
+
+                def provenance(items=items, claim_types=claim_types):
+                    return assess_confidence(evidence_from_items(items, claim_types, categories), resolver)
+
+                def claims(event_id=event_id, item_ids=item_ids):
+                    return claims_by_event.get(event_id) or [c for i in sorted(set(item_ids))
+                                                             for c in claims_by_item.get(i, [])]
+
+                results[event_id] = _score(event_id, items, sources_by_id, provenance, claims)
+            except Exception as exc:
+                results[event_id] = exc
+    return results
+
+
+def _in_chunks(ids: list[int], fetch, size: int = 500) -> list:
+    out = []
+    for start in range(0, len(ids), size):
+        out.extend(fetch(ids[start:start + size]))
+    return out
+
+
+def _sources_of(items, get_source) -> dict:
+    """Distinct sources of the items, in item order (the order compute_corroboration_score has always used)."""
+    sources_by_id: dict = {}
     for item in items:
-        source_ids.add(item.source_id)
         if item.source_id not in sources_by_id:
-            source = session.get(Source, item.source_id)
+            source = get_source(item.source_id)
             if source:
                 sources_by_id[item.source_id] = source
+    return sources_by_id
+
+
+def _score(event_id: int, items, sources_by_id: dict, provenance, claims) -> dict:
+    """The corroboration score from an event's items, their sources, its provenance assessment (a callable, so that
+    a failure falls back to counting outlets, as before) and its claims (a callable)."""
+    source_ids = {item.source_id for item in items}
 
     # Independent origins, not outlets: wire copy republished by five outlets counts once,
     # analysis never counts as confirmation.
-    provenance = None
+    assessment = None
     try:
-        from osint_monitor.processors.provenance import assess_event
-        provenance = assess_event(session, event_id)
-        independent_count = provenance.independent_origins
+        assessment = provenance()
+        independent_count = assessment.independent_origins
     except Exception as exc:
         logger.warning(f"Provenance assessment failed for event {event_id}: {exc}")
         independent_count = len(source_ids)
@@ -237,18 +322,10 @@ def compute_corroboration_score(session: Session, event_id: int) -> dict:
     # Check for contradictions via claims with opposing types about the same subject
     has_contradictions = False
     try:
-        claims = session.query(Claim).filter(Claim.event_id == event_id).all()
-        if not claims:
-            # Also check claims linked via items
-            claims = (
-                session.query(Claim)
-                .filter(Claim.item_id.in_(item_ids))
-                .all()
-            )
         # Group by subject, check for assertion vs denial
         from collections import defaultdict as _dd
         subj_types: dict[str, set[str]] = _dd(set)
-        for c in claims:
+        for c in claims():
             subj_types[c.subject.lower()].add(c.claim_type)
         for subj, types in subj_types.items():
             if "assertion" in types and "denial" in types:
@@ -260,7 +337,7 @@ def compute_corroboration_score(session: Session, event_id: int) -> dict:
     except Exception:
         pass
 
-    if provenance and provenance.confidence_class == ConfidenceClass.DISPUTED:
+    if assessment and assessment.confidence_class == ConfidenceClass.DISPUTED:
         has_contradictions = True
 
     return {
@@ -271,8 +348,8 @@ def compute_corroboration_score(session: Session, event_id: int) -> dict:
         "corroboration_level": corroboration_level,
         "confidence": round(confidence, 3),
         "has_contradictions": has_contradictions,
-        "confidence_class": provenance.confidence_class.value if provenance else None,
-        "provenance_flags": [f.value for f in provenance.flags] if provenance else [],
+        "confidence_class": assessment.confidence_class.value if assessment else None,
+        "provenance_flags": [f.value for f in assessment.flags] if assessment else [],
     }
 
 

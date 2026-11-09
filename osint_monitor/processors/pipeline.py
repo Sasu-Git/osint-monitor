@@ -584,12 +584,15 @@ def run_post_processing(session: Session, quiet: bool = False, offline: bool = F
     _print("--- Scoring corroboration ---")
 
     def _corroboration():
-        from osint_monitor.processors.corroboration import compute_corroboration_score
+        from osint_monitor.processors.corroboration import score_events
         events = session.query(Event).all()
+        scores = score_events(session, [ev.id for ev in events])   # config read once, queries batched; same scores
         failed = 0
         for ev in events:
             try:
-                sc = compute_corroboration_score(session, ev.id)
+                sc = scores[ev.id]
+                if isinstance(sc, Exception):
+                    raise sc
                 ev.source_count = sc.get("independent_sources", 0)
                 ev.admiralty_rating = sc.get("admiralty_rating")
                 ev.corroboration_level = sc.get("corroboration_level", "UNVERIFIED")
