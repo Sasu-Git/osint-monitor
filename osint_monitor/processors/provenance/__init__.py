@@ -17,6 +17,6 @@ from osint_monitor.processors.provenance.resolve import ProvenanceResolver
 __all__ = ["ProvenanceResolver", "assess_confidence", "assess_event", "build_evidence"]
 
 
-def assess_event(session: Session, event_id: int,
-                 resolver: ProvenanceResolver | None = None) -> ConfidenceAssessment:
-    return assess_confidence(build_evidence(session, event_id), resolver)
+def assess_event(session: Session, event_id: int, resolver: ProvenanceResolver | None = None,
+                 categories: dict[str, str] | None = None) -> ConfidenceAssessment:
+    return assess_confidence(build_evidence(session, event_id, categories), resolver)

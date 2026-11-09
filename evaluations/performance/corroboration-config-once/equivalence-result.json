@@ -1,0 +1,24 @@
+{
+ "developments": 1198,
+ "old_loop": {
+  "seconds": 166.12,
+  "feed_categories_reads": 1198,
+  "resolver_constructions": 1198,
+  "sql_statements": 9777
+ },
+ "new_stage_path": {
+  "seconds": 23.76,
+  "feed_categories_reads": 1,
+  "resolver_constructions": 1,
+  "sql_statements": 58
+ },
+ "mismatches": {
+  "score_events_vs_frozen": 0,
+  "compute_default_vs_frozen": 0,
+  "assess_event_default_vs_frozen": 0,
+  "assess_event_shared_vs_frozen": 0
+ },
+ "mismatched_ids": {},
+ "exceptions_in_new_path": [],
+ "gate": "PASS"
+}
