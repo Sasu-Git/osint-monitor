@@ -1,0 +1,34 @@
+# Live collection daemon on the Linux host (replaces the Windows supervisor; see README.md here).
+# Install: /etc/systemd/system/osint-daemon.service. Settings: /etc/osint/daemon.env. Pin: /etc/osint/pinned_commit.
+[Unit]
+Description=OSINT monitor collection daemon (pinned commit)
+After=network-online.target
+Wants=network-online.target
+# crash-loop guard, as the Windows supervisor: at most 3 starts per hour, then stay down until a person looks
+StartLimitIntervalSec=3600
+StartLimitBurst=3
+
+[Service]
+Type=simple
+User=osint
+Group=osint
+WorkingDirectory=/opt/osint/app
+EnvironmentFile=/etc/osint/daemon.env
+# refuse to start anything but the approved commit (a git update can never change what runs)
+ExecStartPre=/usr/local/lib/osint/check_pin.sh
+ExecStart=/opt/osint/venv/bin/python main.py daemon
+# same files as the runbook on Windows; journald also keeps start/stop/exit-code records (journalctl -u osint-daemon)
+StandardOutput=append:/opt/osint/app/data/logs/daemon.out.log
+StandardError=append:/opt/osint/app/data/logs/daemon.err.log
+Restart=on-failure
+RestartSec=60
+# SIGTERM first; an interrupted SQLite write rolls back on the next open
+KillMode=mixed
+TimeoutStopSec=120
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+ProtectHome=true
+
+[Install]
+WantedBy=multi-user.target
