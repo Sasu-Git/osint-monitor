@@ -1,0 +1,638 @@
+{
+ "blindness_note": "Not shown owner labels, owner scope notes, key.json or scores. CONTRACT-V2 (the definitions the preregistration points to) lists the seed Development ids by positive/negative/boundary group and names D214, D242 and D112 as linked context, so the seed grouping was visible to this labeller.",
+ "labeller": "Claude",
+ "made_blind": true,
+ "scope_source": "Situation title/description + scopes.json founder evidence (not the owner's scope notes)",
+ "verdicts": {
+  "S001": {
+   "confidence": "high",
+   "label": "NOT_MEMBER",
+   "reason": "EU internal organic-farming rulebook deal; no China, no tariffs, anti-dumping or export controls."
+  },
+  "S003": {
+   "confidence": "medium",
+   "label": "NOT_MEMBER",
+   "reason": "Topic is Western Sahara and the end of MINURSO; US and Russia appear only as veto-casting Council members, not a bilateral US-Russia development."
+  },
+  "S006": {
+   "confidence": "low",
+   "label": "AMBIGUOUS",
+   "reason": "Incoherent cluster: headline is Spain's election (not Milei), but Milei statements on Spain and Salazar sit in reports and it is a listed founder."
+  },
+  "S008": {
+   "confidence": "medium",
+   "label": "MEMBER",
+   "reason": "Headline is the Israeli raid on NGO offices in Ramallah, a West Bank Israel-Palestine event matching founders; Syria incursion reports are cluster noise."
+  },
+  "S009": {
+   "confidence": "medium",
+   "label": "AMBIGUOUS",
+   "reason": "US arrests a Chinese agent: a US-China security incident, but founders are summit diplomacy and the target is Taiwan's leader's family (china-taiwan pull)."
+  },
+  "S013": {
+   "confidence": "high",
+   "label": "NOT_MEMBER",
+   "reason": "Pope's South America trip and health; nothing about France or the Paris visit that founded the Situation."
+  },
+  "S016": {
+   "confidence": "high",
+   "label": "NOT_MEMBER",
+   "reason": "Israeli Apache helicopter procurement from Boeing; no ceasefire, hostage or mediation content."
+  },
+  "S022": {
+   "confidence": "high",
+   "label": "SPILLOVER",
+   "reason": "Russian-ordered sabotage in Estonia against a Ukraine supplier: war-linked but outside the Ukraine/Russia place scope."
+  },
+  "S023": {
+   "confidence": "high",
+   "label": "MEMBER",
+   "reason": "Bukele's conditional-release plan for gang detainees in El Salvador; is a founder and fits the Bukele security agenda."
+  },
+  "S024": {
+   "confidence": "medium",
+   "label": "SPILLOVER",
+   "reason": "Suspected plot near a UK base used by the US against Iran: linked to the US-Iran confrontation but occurring in Britain, no US-Iran interaction."
+  },
+  "S027": {
+   "confidence": "high",
+   "label": "OTHER_SITUATION",
+   "reason": "Ukraine's missile early-warning resuming after a Rubio call belongs to russia-ukraine-war, not NATO-Russia posture."
+  },
+  "S028": {
+   "confidence": "high",
+   "label": "MEMBER",
+   "reason": "Black Sea shipping protection, Russian rejection of a Ukrainian proposal and ship damage compensation: direct war and ceasefire-diplomacy content."
+  },
+  "S030": {
+   "confidence": "high",
+   "label": "MEMBER",
+   "reason": "NATO eastern-flank strategy against a Russian attack is the Situation's founding NATO-Russia security story."
+  },
+  "S033": {
+   "confidence": "high",
+   "label": "NOT_MEMBER",
+   "reason": "African data-centre roundup with no principals; Eritrea and Ethiopia only appear as mentions in a daily digest."
+  },
+  "S037": {
+   "confidence": "high",
+   "label": "CONTEXT",
+   "reason": "Analysis piece on Russia's war budget strategy; commentary on the war, not an occurrence."
+  },
+  "S042": {
+   "confidence": "medium",
+   "label": "MEMBER",
+   "reason": "White House release touting Trump wins for Kansas matches the founders' White House self-promotional policy releases exactly."
+  },
+  "S043": {
+   "confidence": "high",
+   "label": "NOT_MEMBER",
+   "reason": "US Air Force internal dispute over its China think tank; no China-Taiwan interaction."
+  },
+  "S045": {
+   "confidence": "high",
+   "label": "NOT_MEMBER",
+   "reason": "Brazilian election and Bolsonaro mega-cluster with no principals; nothing on Russia or Ukraine."
+  },
+  "S049": {
+   "confidence": "high",
+   "label": "MEMBER",
+   "reason": "Russian drone attacks on Kyiv and new jet drones breaching defences: front-line strike content."
+  },
+  "S050": {
+   "confidence": "high",
+   "label": "MEMBER",
+   "reason": "Russian drone strike killing 13 at Dnipro station: a direct war strike in Ukraine."
+  },
+  "S051": {
+   "confidence": "high",
+   "label": "MEMBER",
+   "reason": "Russian strikes on Kyiv bridges and Kharkiv: core war strike reporting."
+  },
+  "S054": {
+   "confidence": "high",
+   "label": "NOT_MEMBER",
+   "reason": "Rubio defends the US-Venezuela oil deal; Russia is only invoked rhetorically, no US-Russia development."
+  },
+  "S055": {
+   "confidence": "high",
+   "label": "NOT_MEMBER",
+   "reason": "Ex-Biden officials urging 2028 candidates on Gaza policy; no International Criminal Court involvement at all."
+  },
+  "S056": {
+   "confidence": "high",
+   "label": "MEMBER",
+   "reason": "White House release on Trump's industry and jobs record; a founder of this White House-actions Situation."
+  },
+  "S060": {
+   "confidence": "medium",
+   "label": "MEMBER",
+   "reason": "Headline is EU leaders seeking new trade weapons against the China shock; budget-summit reports dilute but do not displace it."
+  },
+  "S062": {
+   "confidence": "high",
+   "label": "MEMBER",
+   "reason": "New US aviation sanctions on Iran and Treasury pressure: direct US-Iran sanctions pressure named in the seed scope."
+  },
+  "S066": {
+   "confidence": "high",
+   "label": "NOT_MEMBER",
+   "reason": "China's new air force centre in Laos; no Taiwan dimension."
+  },
+  "S067": {
+   "confidence": "high",
+   "label": "NOT_MEMBER",
+   "reason": "US military aid to Israel and Gaza aid logistics; no ICC action or US-ICC dispute."
+  },
+  "S068": {
+   "confidence": "high",
+   "label": "MEMBER",
+   "reason": "Drone strikes knocking out Yandex data centres inside Russia: Ukrainian strike campaign within the war's place scope."
+  },
+  "S074": {
+   "confidence": "high",
+   "label": "MEMBER",
+   "reason": "University-funding protests against the Milei government in Buenos Aires; a founder of the Situation."
+  },
+  "S078": {
+   "confidence": "high",
+   "label": "MEMBER",
+   "reason": "Trump-Xi White House summit on AI and Taiwan; a founder of the Situation."
+  },
+  "S079": {
+   "confidence": "medium",
+   "label": "OTHER_SITUATION",
+   "reason": "Trump's lawsuit over the Alaska Senate certification is US domestic electoral politics (democrat-united-states covers the Alaska ballot), nothing China."
+  },
+  "S080": {
+   "confidence": "medium",
+   "label": "AMBIGUOUS",
+   "reason": "Headline is Poland's air defence boost (spillover), but the summary and most reports are Russian strikes on Ukraine's data centres (member content)."
+  },
+  "S086": {
+   "confidence": "high",
+   "label": "NOT_MEMBER",
+   "reason": "Commission standards and enlargement-reform proposals; Russia absent."
+  },
+  "S087": {
+   "confidence": "high",
+   "label": "NOT_MEMBER",
+   "reason": "EU enlargement, space-defence and UN nuclear debate roundup; no Canada-EU relationship content."
+  },
+  "S090": {
+   "confidence": "high",
+   "label": "OTHER_SITUATION",
+   "reason": "Beijing's Taiwan reunification commemoration belongs to china-taiwan, not the Long March rhetoric Situation."
+  },
+  "S093": {
+   "confidence": "medium",
+   "label": "OTHER_SITUATION",
+   "reason": "French cost-of-living protests and Bastille ban fit the Macron/France unrest Situation, not the Pope's Paris visit."
+  },
+  "S096": {
+   "confidence": "high",
+   "label": "MEMBER",
+   "reason": "Hurricanes Simon and Rachel battering Mexico; a founder of the Situation."
+  },
+  "S101": {
+   "confidence": "high",
+   "label": "MEMBER",
+   "reason": "Trump-Putin diesel deal to ease US fuel prices is a direct US-Russia deal on the founders' fuel-price theme."
+  },
+  "S105": {
+   "confidence": "low",
+   "label": "MEMBER",
+   "reason": "Ethiopia's Russian jet and S-400 buildup amid fighting in Tigray fits the Horn military confrontation, though Eritrea is not named."
+  },
+  "S107": {
+   "confidence": "high",
+   "label": "NOT_MEMBER",
+   "reason": "Domestic food-safety court case in Gansu; unrelated to Long March political messaging."
+  },
+  "S119": {
+   "confidence": "high",
+   "label": "MEMBER",
+   "reason": "EU-China understanding on hybrid vehicles, EV tariffs and rare-earth licences: core EU-China trade dispute."
+  },
+  "S121": {
+   "confidence": "high",
+   "label": "NOT_MEMBER",
+   "reason": "CCTV football blackout over an Mbappe remark; no US involvement."
+  },
+  "S130": {
+   "confidence": "high",
+   "label": "MEMBER",
+   "reason": "Ukrainian counteroffensive retaking territory on the Lyman front: front-line fighting."
+  },
+  "S132": {
+   "confidence": "high",
+   "label": "MEMBER",
+   "reason": "Vance writes to an Iranian hard-liner to revive talks while strikes are threatened: core US-Iran negotiation and confrontation."
+  },
+  "S134": {
+   "confidence": "medium",
+   "label": "MEMBER",
+   "reason": "Venezuelan government-opposition dialogue round closing on political disqualifications; a founder, though the cluster carries unrelated noise."
+  },
+  "S137": {
+   "confidence": "medium",
+   "label": "MEMBER",
+   "reason": "Ethiopian army fighting in Tigray is a founder and Tigray is in the derived place scope, though Eritrea is not named directly."
+  },
+  "S138": {
+   "confidence": "high",
+   "label": "NOT_MEMBER",
+   "reason": "Andy Burnham on UK-EU relations; no Canada."
+  },
+  "S140": {
+   "confidence": "high",
+   "label": "MEMBER",
+   "reason": "Musk's Starlink-in-India row is a founder of this Musk-centred Situation."
+  },
+  "S141": {
+   "confidence": "high",
+   "label": "NOT_MEMBER",
+   "reason": "EU-Moldova Association Council and Growth Plan funds; no Canada."
+  },
+  "S145": {
+   "confidence": "medium",
+   "label": "NOT_MEMBER",
+   "reason": "Supreme Court ruling on third-country deportations is immigration law, not the midterm/partisan election scope of the founders."
+  },
+  "S149": {
+   "confidence": "high",
+   "label": "CONTEXT",
+   "reason": "Opinion piece on Israel's regional strategy plus Obama remarks; commentary, not an Israel-Palestine occurrence."
+  },
+  "S150": {
+   "confidence": "high",
+   "label": "MEMBER",
+   "reason": "Israel closing West Bank crossings and the Hebron crackdown after a militant attack: direct Israel-Palestine event."
+  },
+  "S152": {
+   "confidence": "high",
+   "label": "NOT_MEMBER",
+   "reason": "EU-Moldova partnership and funding; no China, no trade dispute."
+  },
+  "S154": {
+   "confidence": "high",
+   "label": "OTHER_SITUATION",
+   "reason": "IRGC attacks on Gulf tankers and US-Israeli strike plans against Iran belong to us-iran, not Israel-Palestine."
+  },
+  "S155": {
+   "confidence": "medium",
+   "label": "MEMBER",
+   "reason": "Sanctions on networks supplying EU machinery to Russian missile makers and new EU sanctions fit the founders' EU-Russia sanctions scope."
+  },
+  "S157": {
+   "confidence": "medium",
+   "label": "MEMBER",
+   "reason": "Headline is Musk's record midterm donations, a founder; the cluster also carries unrelated Trump-administration stories."
+  },
+  "S158": {
+   "confidence": "medium",
+   "label": "NOT_MEMBER",
+   "reason": "Russian Pacific Fleet missile drill and UK submarine defence; no NATO-Russia interaction on the eastern flank or Kaliningrad."
+  },
+  "S159": {
+   "confidence": "high",
+   "label": "NOT_MEMBER",
+   "reason": "UN vote on the US embargo of Cuba; Mexico is not involved."
+  },
+  "S162": {
+   "confidence": "high",
+   "label": "MEMBER",
+   "reason": "Chinese coastguard patrols around Taiwan, Dongsha and Quemoy with Taipei shadowing: core China-Taiwan pressure."
+  },
+  "S166": {
+   "confidence": "medium",
+   "label": "AMBIGUOUS",
+   "reason": "Headline is the Pope on AI risk (not US-China), but most reports cover Trump rejecting US-China AI cooperation and the AI race from the founding summit."
+  },
+  "S168": {
+   "confidence": "high",
+   "label": "NOT_MEMBER",
+   "reason": "Hurricane Polo hitting Baja California; a Mexican weather event with no US-Mexico interaction."
+  },
+  "S169": {
+   "confidence": "high",
+   "label": "MEMBER",
+   "reason": "Christa Pike regaining consciousness after the failed execution; a founder."
+  },
+  "S176": {
+   "confidence": "high",
+   "label": "OTHER_SITUATION",
+   "reason": "A localized Russia-Ukraine ceasefire in Oleshky is war ceasefire diplomacy (russia-ukraine-war), with the US only as mediator."
+  },
+  "S177": {
+   "confidence": "medium",
+   "label": "SPILLOVER",
+   "reason": "Russian disinformation against pro-Ukraine US candidates is a war-linked hybrid operation located in the US, outside the war's place scope."
+  },
+  "S185": {
+   "confidence": "high",
+   "label": "MEMBER",
+   "reason": "Christa Pike speaking a month after her failed execution; same story, extra reports are noise."
+  },
+  "S195": {
+   "confidence": "high",
+   "label": "MEMBER",
+   "reason": "Putin frees US citizen Hubbard during Witkoff talks after Trump's request: direct US-Russia diplomatic deal."
+  },
+  "S199": {
+   "confidence": "high",
+   "label": "MEMBER",
+   "reason": "Opium output surging despite the Taliban ban in Afghanistan; a founder of the Situation."
+  },
+  "S200": {
+   "confidence": "high",
+   "label": "NOT_MEMBER",
+   "reason": "Israeli domestic protest for a Jewish-Arab coalition; no ceasefire, hostages or mediation."
+  },
+  "S205": {
+   "confidence": "medium",
+   "label": "NOT_MEMBER",
+   "reason": "G20 photo cancelled as Europeans refused to stand with Lavrov: a multilateral Europe-Russia snub over Ukraine, not a US-Russia development."
+  },
+  "S207": {
+   "confidence": "high",
+   "label": "MEMBER",
+   "reason": "Russian strikes on the Kyiv region and Ukraine's power grid: core war strikes."
+  },
+  "S208": {
+   "confidence": "high",
+   "label": "OTHER_SITUATION",
+   "reason": "US sanctions on the ICC belong to international-criminal-court-united-states; Iran is not involved."
+  },
+  "S209": {
+   "confidence": "medium",
+   "label": "MEMBER",
+   "reason": "Israel halting commercial goods into Gaza amid a dispute with Hamas is ceasefire-period humanitarian-access friction between the two parties."
+  },
+  "S213": {
+   "confidence": "high",
+   "label": "MEMBER",
+   "reason": "Trump downplays Taiwan talk at the Xi summit: direct follow-up to the founding summit."
+  },
+  "S221": {
+   "confidence": "high",
+   "label": "MEMBER",
+   "reason": "Russian missile barrage on Kyiv and other cities: core war strikes."
+  },
+  "S222": {
+   "confidence": "low",
+   "label": "OTHER_SITUATION",
+   "reason": "Trump voting early in the midterms is campaign politics (democrat-united-states midterm scope) rather than the founders' White House policy announcements."
+  },
+  "S233": {
+   "confidence": "high",
+   "label": "MEMBER",
+   "reason": "Kremlin calls for urgent resumption of US-Russia nuclear arms talks: bilateral US-Russia diplomacy."
+  },
+  "S237": {
+   "confidence": "high",
+   "label": "MEMBER",
+   "reason": "US sanctions waiver for Iran-Najaf flights and Iran's protest of US curbs: US-Iran sanctions file."
+  },
+  "S238": {
+   "confidence": "high",
+   "label": "MEMBER",
+   "reason": "Machado returns to Venezuela from exile; a founder of the Situation."
+  },
+  "S243": {
+   "confidence": "low",
+   "label": "MEMBER",
+   "reason": "Headline is China's AI-driven chip export surge (not bilateral), but reports cover the US-China AI rivalry and agenda ahead of Xi-Trump talks."
+  },
+  "S248": {
+   "confidence": "high",
+   "label": "NOT_MEMBER",
+   "reason": "EU drops sponsorship of a disinformation conference at US officials' request; Russia not involved."
+  },
+  "S251": {
+   "confidence": "high",
+   "label": "NOT_MEMBER",
+   "reason": "Latvian election shaped by Russia fears; no United States role."
+  },
+  "S256": {
+   "confidence": "low",
+   "label": "SPILLOVER",
+   "reason": "Seoul-Kyiv row over transferring captured North Korean soldiers: war-derived but a third-country diplomatic dispute outside Russia-Ukraine fighting."
+  },
+  "S262": {
+   "confidence": "medium",
+   "label": "NOT_MEMBER",
+   "reason": "Israeli mental-health toll since October 7 is a domestic social report, not an Israel-Palestine development."
+  },
+  "S267": {
+   "confidence": "high",
+   "label": "MEMBER",
+   "reason": "Xi's White House state visit and Taiwan demands; a founder of the Situation."
+  },
+  "S268": {
+   "confidence": "high",
+   "label": "MEMBER",
+   "reason": "Taliban concern over US deportation of Afghans via Pakistan; a founder of the Situation."
+  },
+  "S269": {
+   "confidence": "high",
+   "label": "MEMBER",
+   "reason": "Khamenei warns the US against new strikes as Trump weighs more targets: direct US-Iran confrontation."
+  },
+  "S271": {
+   "confidence": "high",
+   "label": "MEMBER",
+   "reason": "Deaths from hurricanes Simon and Rachel in Mexico; a founder (no principals, but squarely the story)."
+  },
+  "S273": {
+   "confidence": "medium",
+   "label": "AMBIGUOUS",
+   "reason": "Headline is war-crimes charges against a Russian occupation official (member), but most reports are German espionage arrests and a German mercenary case (spillover)."
+  },
+  "S274": {
+   "confidence": "high",
+   "label": "NOT_MEMBER",
+   "reason": "New White House press secretary's debut briefing; the only China link is a claim about her bar exam."
+  },
+  "S275": {
+   "confidence": "high",
+   "label": "NOT_MEMBER",
+   "reason": "Pope's lung surgery in Rome inside an Italian news mega-cluster with no principals; no US-Russia development."
+  },
+  "S276": {
+   "confidence": "high",
+   "label": "MEMBER",
+   "reason": "First Russian diesel tanker sails to the US under the Trump-Putin deal: direct continuation of the bilateral deal."
+  },
+  "S279": {
+   "confidence": "low",
+   "label": "MEMBER",
+   "reason": "Palestinian factions' Cairo reconciliation talks and the UNSC debate on the Palestinian question; Palestine-side politics, Israel not a direct actor."
+  },
+  "S292": {
+   "confidence": "high",
+   "label": "MEMBER",
+   "reason": "Drone strike killing 21 in Nyala, Darfur, plus refugee flows to Chad: Sudan war violence."
+  },
+  "S293": {
+   "confidence": "medium",
+   "label": "MEMBER",
+   "reason": "US sanctions on Chinese entities over AI trade-secret theft and the DeepSeek ban: bilateral AI-race measures matching the founders' theme."
+  },
+  "S295": {
+   "confidence": "high",
+   "label": "MEMBER",
+   "reason": "Coordinated Russia-Ukraine humanitarian evacuation of occupied Oleshky: war and ceasefire diplomacy on Ukrainian soil."
+  },
+  "S297": {
+   "confidence": "medium",
+   "label": "NOT_MEMBER",
+   "reason": "Headline and most reports are Trump on Little Italy, ICE and other Italian-feed items; only a minority of reports mention the Russian diesel deal."
+  },
+  "S299": {
+   "confidence": "medium",
+   "label": "MEMBER",
+   "reason": "Israeli strike killing a Hamas commander amid reported ceasefire violations in Gaza: the state of the Israel-Hamas ceasefire."
+  },
+  "S300": {
+   "confidence": "high",
+   "label": "NOT_MEMBER",
+   "reason": "Rubio's India trip for a US-India trade deal; Russian oil only figures as tariff background."
+  },
+  "S301": {
+   "confidence": "high",
+   "label": "MEMBER",
+   "reason": "Bukele's ultimatum and troop deployment to Haiti over abducted Salvadoran soldiers; a founder."
+  },
+  "S302": {
+   "confidence": "high",
+   "label": "MEMBER",
+   "reason": "Macron promises measures after weeks of student unrest; a founder of the Situation."
+  },
+  "S306": {
+   "confidence": "high",
+   "label": "OTHER_SITUATION",
+   "reason": "Singapore-flagged ship sunk in the Strait of Hormuz belongs to the US-Iran/Hormuz confrontation, not Malaysia-Singapore haze."
+  },
+  "S307": {
+   "confidence": "medium",
+   "label": "CONTEXT",
+   "reason": "Ex-hostage interview and McGurk rebutting a claim on Hamas hostage readiness: retrospective commentary on hostage talks, not a negotiation event."
+  },
+  "S310": {
+   "confidence": "high",
+   "label": "MEMBER",
+   "reason": "Iran tells the US there is no military solution after failed talks; Guterres urges an end to the US-Iran war."
+  },
+  "S312": {
+   "confidence": "high",
+   "label": "NOT_MEMBER",
+   "reason": "Mbappe sponsorship backlash over a Mao joke; nothing about Long March rhetoric or Party messaging."
+  },
+  "S318": {
+   "confidence": "medium",
+   "label": "MEMBER",
+   "reason": "Macron's statement condemning Russian strikes and announcing French aid is a Macron foreign-policy statement, like the Gulf-assistance founder."
+  },
+  "S319": {
+   "confidence": "medium",
+   "label": "OTHER_SITUATION",
+   "reason": "German sabotage-threat raise over Russian hybrid attacks is a NATO/Europe-Russia story (nato-russia), not US-Russia."
+  },
+  "S320": {
+   "confidence": "high",
+   "label": "NOT_MEMBER",
+   "reason": "Russia hosting a weightlifting championship is a sport story, outside the war's scope."
+  },
+  "S329": {
+   "confidence": "high",
+   "label": "NOT_MEMBER",
+   "reason": "Malaysia repatriating Myanmar and Rohingya refugees; no Singapore and nothing on the haze founders."
+  },
+  "S330": {
+   "confidence": "high",
+   "label": "NOT_MEMBER",
+   "reason": "Trump rally quip about renaming an ocean; no Russia."
+  },
+  "S337": {
+   "confidence": "medium",
+   "label": "OTHER_SITUATION",
+   "reason": "Trump's White House announcement of an Iowa steel plant matches the donald-j-trump-united-states industry-announcement founders more than Democrat-related midterm politics."
+  },
+  "S340": {
+   "confidence": "high",
+   "label": "NOT_MEMBER",
+   "reason": "US judge's ethics inquiry over a Washington golf course case; no Mexico."
+  },
+  "S341": {
+   "confidence": "high",
+   "label": "NOT_MEMBER",
+   "reason": "Israel's first pavilion at a Moroccan defence show is Israel-Morocco normalisation, not Israel-Palestine."
+  },
+  "S343": {
+   "confidence": "medium",
+   "label": "NOT_MEMBER",
+   "reason": "No principals; mainly an analysis of China's offshore tax crackdown, with only a side report on a US Treasury investment rule."
+  },
+  "S344": {
+   "confidence": "medium",
+   "label": "MEMBER",
+   "reason": "UN Security Council renews Sudan sanctions and the fact-finding mandate amid Darfur needs: international handling of the Sudan war."
+  },
+  "S347": {
+   "confidence": "low",
+   "label": "MEMBER",
+   "reason": "Panda loan arrival under a 10-year US-China agreement is a bilateral diplomatic gesture, though soft and low-stakes relative to the summit founders."
+  },
+  "S350": {
+   "confidence": "medium",
+   "label": "NOT_MEMBER",
+   "reason": "Procedural European Council invitation letter paired with a UNSC Ukraine meeting; no EU-Russia sanctions or bilateral action."
+  },
+  "S353": {
+   "confidence": "high",
+   "label": "NOT_MEMBER",
+   "reason": "Controversy over the Pentagon livestreaming a US military execution; the ICC is not involved."
+  },
+  "S357": {
+   "confidence": "medium",
+   "label": "OTHER_SITUATION",
+   "reason": "US Patriot sale to Ukraine is military support in the Russia-Ukraine war, not a US-Russia bilateral development."
+  },
+  "S359": {
+   "confidence": "high",
+   "label": "NOT_MEMBER",
+   "reason": "US strike on an alleged drug boat in the eastern Pacific; Russia absent."
+  },
+  "S362": {
+   "confidence": "medium",
+   "label": "NOT_MEMBER",
+   "reason": "Chinese ambassador's war remark toward the Philippines is a China-Philippines dispute; Taiwan not involved."
+  },
+  "S364": {
+   "confidence": "high",
+   "label": "OTHER_SITUATION",
+   "reason": "Irkutsk plague-lab case with US monitoring and Rubio's request to Moscow is exactly the russia-united-states founding story, not Trump White House actions."
+  },
+  "S365": {
+   "confidence": "medium",
+   "label": "NOT_MEMBER",
+   "reason": "Explainer on French debt and bond yields after unrest; nothing about the Pope."
+  },
+  "S372": {
+   "confidence": "medium",
+   "label": "MEMBER",
+   "reason": "Vance campaigning in the Alaska Senate battleground with a funding announcement fits the founders' midterm and Alaska-race scope."
+  },
+  "S377": {
+   "confidence": "high",
+   "label": "CONTEXT",
+   "reason": "Feature on the cost of doing business in Russia since the invasion: analysis, not a war occurrence."
+  },
+  "S379": {
+   "confidence": "low",
+   "label": "CONTEXT",
+   "reason": "Commentary on Europe competing with the US and China and Spain-China ties; analysis with only tangential US-China relevance (could be NOT_MEMBER)."
+  }
+ }
+}

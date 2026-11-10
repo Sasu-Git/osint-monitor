@@ -1,0 +1,8 @@
+{
+ "frozen_at": "2026-11-10T10:03:43+00:00",
+ "verdicts_sha256": "7a3d5e2ba74ed34d56b490d6a280222036552dfb62167a7cd1098818136f310a",
+ "cases": 126,
+ "owner_labels_at_freeze": 66,
+ "owner_labels_file_sha256_at_freeze": "bd9ecef5d393b9d8ca2f5e8db680c05810e0618376e0fefbe61ec322c5b0a3cc",
+ "note": "Verdicts made without reading the owner labels file; the owner's existing labels are recorded as baseline in owner-label-history.jsonl when the server first starts."
+}

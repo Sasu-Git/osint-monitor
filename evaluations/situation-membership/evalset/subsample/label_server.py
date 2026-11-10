@@ -5,6 +5,11 @@
 Blind: it reads ../cases.json (the same fields a reviewer sees in the full set), ../scopes.json (founder evidence for
 the automatic Situations), manifest.json and the labels file. It never reads ../key.json. Bound to 127.0.0.1 only.
 When done: python labels_subsample.py validate, then python labels_subsample.py freeze.
+
+Second opinion (owner request 2026-11-10): when claude-verdicts.json exists (a blind second labeller's verdicts, hash
+in claude-verdicts-freeze.json), a case shows Claude's verdict only after the owner has saved a label for it. Every
+save is appended to owner-label-history.jsonl with ``after_reveal`` true when that case's verdict had already been
+shown; labels saved before the second opinion existed are recorded once as ``baseline``. The labels file is unchanged.
 """
 
 from __future__ import annotations
@@ -13,6 +18,7 @@ import argparse
 import html
 import json
 import os
+from datetime import datetime, timezone
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import parse_qs, urlparse
@@ -36,6 +42,9 @@ IDS = json.loads((HERE / "manifest.json").read_text(encoding="utf-8"))["case_ids
 CASES = {c["case_id"]: c for c in json.loads((EVALSET / "cases.json").read_text(encoding="utf-8"))["cases"]
          if c["case_id"] in set(IDS)}
 SCOPES = {a["slug"]: a for a in json.loads((EVALSET / "scopes.json").read_text(encoding="utf-8"))["automatic"]}
+VERDICTS_PATH = HERE / "claude-verdicts.json"
+HISTORY_PATH = HERE / "owner-label-history.jsonl"
+VERDICTS = (json.loads(VERDICTS_PATH.read_text(encoding="utf-8"))["verdicts"] if VERDICTS_PATH.exists() else {})
 
 CSS = """body{font:15px/1.45 system-ui,sans-serif;max-width:900px;margin:0 auto;padding:16px;color:#1d1d1f;background:#fff}
 a{color:#0b57d0}h1{font-size:20px}h2{font-size:17px;margin-top:22px}.muted{color:#666}.box{border:1px solid #ddd;
@@ -65,6 +74,51 @@ def page(title: str, body: str) -> bytes:
             ).encode("utf-8")
 
 
+def history() -> list[dict]:
+    if not HISTORY_PATH.exists():
+        return []
+    return [json.loads(x) for x in HISTORY_PATH.read_text(encoding="utf-8").splitlines() if x.strip()]
+
+
+def log_save(e: dict, after_reveal: bool, baseline: bool = False) -> None:
+    rec = {"at": datetime.now(timezone.utc).isoformat(timespec="seconds"), "case": e["case_id"], "label": e["label"],
+           "reason": e.get("reason"), "after_reveal": after_reveal}
+    if baseline:
+        rec["baseline"] = True
+    with open(HISTORY_PATH, "a", encoding="utf-8", newline="\n") as f:
+        f.write(json.dumps(rec, ensure_ascii=False) + "\n")
+
+
+def baseline_history(data: dict) -> None:
+    """Record labels saved before the second opinion existed, once, as the pre-reveal answers."""
+    if VERDICTS and not HISTORY_PATH.exists():
+        HISTORY_PATH.write_text("", encoding="utf-8")
+        for e in data["cases"]:
+            if e.get("label"):
+                log_save(e, False, baseline=True)
+
+
+def agrees(e: dict) -> bool | None:
+    if not e.get("label") or e["case_id"] not in VERDICTS:
+        return None
+    return e["label"] == VERDICTS[e["case_id"]]["label"]
+
+
+def verdict_box(e: dict) -> str:
+    if not e.get("label") or e["case_id"] not in VERDICTS:
+        return ""
+    v, hist = VERDICTS[e["case_id"]], [h for h in history() if h["case"] == e["case_id"]]
+    first = hist[0] if hist else None
+    changed = (f"<p class=muted>Your first answer was <b>{esc(first['label'])}</b>; you changed it after seeing this "
+               f"verdict (logged).</p>" if first and first["label"] != e["label"] and any(h["after_reveal"] for h in hist)
+               else "")
+    mark = "<span class=done>agrees with you</span>" if agrees(e) else "<span class=todo>differs from you</span>"
+    return (f"<div class=box style='background:#f6f8fc'><b>Claude's verdict</b> (blind, made before seeing yours, from "
+            f"the Situation description and founder evidence, not your scope notes; shown only after you save): "
+            f"<b>{esc(v['label'])}</b> · {esc(v.get('confidence'))} confidence · {mark}<div>{esc(v.get('reason'))}</div>"
+            f"{changed}</div>")
+
+
 def last_reviewer(data: dict) -> str:
     for e in reversed(data["cases"]):
         if e.get("reviewer"):
@@ -80,11 +134,16 @@ def index() -> bytes:
     done = sum(1 for e in data["cases"] if e.get("label"))
     sdone = sum(1 for s in data["situation_scopes"] if s.get("domains_or_types") is not None)
     rows = []
+    marks = {None: "", True: "<span class=done>agrees</span>", False: "<span class=todo>differs</span>"}
     for e in data["cases"]:
         c = CASES[e["case_id"]]
         st = f"<span class=done>{esc(e['label'])}</span>" if e.get("label") else "<span class=todo>open</span>"
         rows.append(f"<tr><td><a href='/case/{esc(e['case_id'])}'>{esc(e['case_id'])}</a></td>"
-                    f"<td>{esc(c['situation']['slug'])}</td><td>{esc(c['development']['headline'])}</td><td>{st}</td></tr>")
+                    f"<td>{esc(c['situation']['slug'])}</td><td>{esc(c['development']['headline'])}</td><td>{st}</td>"
+                    + (f"<td>{marks[agrees(e)]}</td>" if VERDICTS else "") + "</tr>")
+    ag = [agrees(e) for e in data["cases"] if agrees(e) is not None]
+    second = (f"<br>Claude agrees on {sum(ag)} of {len(ag)} you have labelled; its verdict on a case appears after "
+              f"you save yours." if VERDICTS else "")
     first_open = next((e["case_id"] for e in data["cases"] if not e.get("label")), None)
     nxt = f"<a href='/case/{esc(first_open)}'>next open case</a>" if first_open else "all cases labelled"
     body = (f"<h1>Situation membership: labelling subsample</h1>"
@@ -92,8 +151,9 @@ def index() -> bytes:
             f"Situation pages. Labels are saved to {esc(LABELS_PATH.name)}.</p>"
             f"<p>1. <a href='/scopes'>Intended scopes of the automatic Situations</a>: {sdone}/{len(data['situation_scopes'])}"
             f" filled (do these first).<br>2. Cases: {done}/{len(data['cases'])} labelled; {nxt}.<br>3. When done: "
-            f"<code>python labels_subsample.py validate</code>, then <code>python labels_subsample.py freeze</code>.</p>"
-            f"<table><tr><th>Case</th><th>Situation</th><th>Development</th><th>Label</th></tr>{''.join(rows)}</table>")
+            f"<code>python labels_subsample.py validate</code>, then <code>python labels_subsample.py freeze</code>."
+            f"{second}</p><table><tr><th>Case</th><th>Situation</th><th>Development</th><th>Label</th>"
+            + ("<th>Claude</th>" if VERDICTS else "") + f"</tr>{''.join(rows)}</table>")
     return page("Membership labelling", body)
 
 
@@ -135,8 +195,11 @@ def case_page(cid: str, msg: str = "") -> bytes:
     i = IDS.index(cid)
     prev_l = f"<a href='/case/{IDS[i - 1]}'>previous</a>" if i else ""
     next_l = f"<a href='/case/{IDS[i + 1]}'>next</a>" if i + 1 < len(IDS) else ""
+    open_next = next((x["case_id"] for x in data["cases"][i + 1:] + data["cases"][:i] if not x.get("label")), None)
+    go = (f"<p><a href='/case/{esc(open_next)}'>Next open case →</a></p>"
+          if VERDICTS and e.get("label") and open_next else "")
     body = (f"<p><a href='/'>index</a> · {prev_l} · {next_l} · case {i + 1}/{len(IDS)}</p>{msg}"
-            f"<h1>{esc(cid)}</h1>"
+            f"<h1>{esc(cid)}</h1>{verdict_box(e)}{go}"
             f"<div class=box><h2>Situation: {esc(s['title'])}</h2><p class=muted>{esc(s['slug'])} · {esc(s['kind'])} · region "
             f"{esc(s.get('region'))}</p><p>Primary actors: {esc(', '.join(s.get('primary_actors', [])))}</p>"
             f"<p>{esc(s.get('description'))}</p></div>"
@@ -205,9 +268,13 @@ class Handler(BaseHTTPRequestHandler):
             if label not in LABELS:
                 return self._send(case_page(cid, "<p class=todo>Choose one label.</p>"), 400)
             e = next(x for x in data["cases"] if x["case_id"] == cid)
+            revealed = bool(VERDICTS) and bool(e.get("label")) and cid in VERDICTS
             e["label"], e["reason"] = label, f.get("reason", "").strip() or None
             e["reviewer"] = f.get("reviewer", "").strip() or None
             save(data)
+            if VERDICTS:
+                log_save(e, revealed)
+                return self._redirect(f"/case/{cid}")  # stay: show the second opinion next to the saved label
             i = IDS.index(cid)
             return self._redirect(f"/case/{IDS[i + 1]}" if i + 1 < len(IDS) else "/")
         self._send(page("Not found", "<p>Not found.</p>"), 404)
@@ -220,6 +287,7 @@ def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--port", type=int, default=8791)
     a = ap.parse_args()
+    baseline_history(load())
     print(f"labelling page: http://127.0.0.1:{a.port}/  (labels -> {LABELS_PATH}; Ctrl+C to stop)")
     ThreadingHTTPServer(("127.0.0.1", a.port), Handler).serve_forever()
 
