@@ -1,0 +1,611 @@
+{
+ "inputs": [
+  "label-cases.json",
+  "countries-iso3.json",
+  "FREEZE.md schema"
+ ],
+ "labeller": "Claude",
+ "made_blind": true,
+ "verdicts": {
+  "1200": {
+   "confidence": "low",
+   "event_country": "POL",
+   "event_place": null,
+   "reason": "Headline item: Tusk addresses the nation over president's clash at Polish court; second member is unrelated US midterms piece, 1-1 split."
+  },
+  "1201": {
+   "confidence": "high",
+   "event_country": "BGR",
+   "event_place": null,
+   "reason": "Headline and 4 of 8 items report Bulgaria's presidential runoff; other members (Serbia, Israel, US, Russia) are scattered, unrelated."
+  },
+  "1204": {
+   "confidence": "high",
+   "event_country": "SRB",
+   "event_place": null,
+   "reason": "Serbian parliamentary elections repeated in 53 polling stations; El País item also on Serbian election (Belgrade)."
+  },
+  "1205": {
+   "confidence": "medium",
+   "event_country": "USA",
+   "event_place": null,
+   "reason": "Partnership between Wisconsin-based Oshkosh and Silicon Valley startup Grid Aero; business announcement, both US firms."
+  },
+  "1206": {
+   "confidence": "high",
+   "event_country": "FRA",
+   "event_place": "Paris",
+   "reason": "Petrol bomb thrown at police during protests in Paris/cities across France; French attempted murder investigation."
+  },
+  "1208": {
+   "confidence": "high",
+   "event_country": "SDN",
+   "event_place": null,
+   "reason": "Headline and most items: drone attacks across Sudan on civilian/power infrastructure; minority items on Ethiopia-side incidents and diplomacy."
+  },
+  "1209": {
+   "confidence": "medium",
+   "event_country": "UKR",
+   "event_place": "Komyshuvakha, Zaporizhzhia region",
+   "reason": "Headline: Russian aerial bombs on Komyshuvakha, Zaporizhzhia region; other member is an unrelated French cold case."
+  },
+  "1210": {
+   "confidence": "low",
+   "event_country": "GBR",
+   "event_place": "Hull",
+   "reason": "Headline: Bushby completes walk arriving in Hull, England; two other members are unrelated Chile stories (pensions, abortion ruling), 2-2 split."
+  },
+  "1211": {
+   "confidence": "high",
+   "event_country": "GBR",
+   "event_place": "Hull",
+   "reason": "All five items: Karl Bushby arrives home in Hull, northern England, ending 28-year trek."
+  },
+  "1212": {
+   "confidence": "high",
+   "event_country": "COD",
+   "event_place": "Virunga National Park",
+   "reason": "Anthrax kills hippos in Virunga National Park, DR Congo; second item Ebola deaths in Congo."
+  },
+  "1216": {
+   "confidence": "high",
+   "event_country": "USA",
+   "event_place": "Massachusetts",
+   "reason": "Lindsay Clancy court hearing in Massachusetts on motion to dismiss murder charges."
+  },
+  "1217": {
+   "confidence": "medium",
+   "event_country": "ISR",
+   "event_place": null,
+   "reason": "Four items on Palestinian citizens' vote and intimidation after Israel's election; two members are US midterms reactions."
+  },
+  "1218": {
+   "confidence": "medium",
+   "event_country": "NONE",
+   "event_place": null,
+   "reason": "US decision to drop South Africa and Rwanda from AGOA; two target countries equally, decision location not stated."
+  },
+  "1220": {
+   "confidence": "medium",
+   "event_country": "SOM",
+   "event_place": null,
+   "reason": "Ugandan troops begin withdrawing from AU mission in Somalia; bases near Mogadishu handed over. Announcement made in Kampala."
+  },
+  "1221": {
+   "confidence": "low",
+   "event_country": "NONE",
+   "event_place": null,
+   "reason": "Oman-China deal signing location not stated; second member is a China-only forex measure, so no single event country."
+  },
+  "1224": {
+   "confidence": "high",
+   "event_country": "USA",
+   "event_place": "Washington, Department of State",
+   "reason": "Readout: Rubio met Venezuelan Foreign Minister Blanco at the Department of State."
+  },
+  "1225": {
+   "confidence": "medium",
+   "event_country": "IDN",
+   "event_place": null,
+   "reason": "Haze originates in Indonesia with protests around the capital; Singapore minister's parliamentary remarks are a reaction."
+  },
+  "1227": {
+   "confidence": "medium",
+   "event_country": "POL",
+   "event_place": "southeastern Poland",
+   "reason": "France 24: ~2,800 European troops exercise in southeastern Poland Nov 9-22; BBC item describes same rehearsal without place."
+  },
+  "1232": {
+   "confidence": "low",
+   "event_country": "NONE",
+   "event_place": null,
+   "reason": "Collision in a Spanish second-division match vs FC Andorra; no item states the venue (Tenerife or Andorra) or where he died."
+  },
+  "1233": {
+   "confidence": "medium",
+   "event_country": "NONE",
+   "event_place": null,
+   "reason": "Mixed UN General Assembly agenda (New York) with Eurogroup briefing notice and EU legislation factsheet; no single event."
+  },
+  "1234": {
+   "confidence": "medium",
+   "event_country": "CHN",
+   "event_place": null,
+   "reason": "Xi's meetings, party fifth plenum and culling of party leaders all in China."
+  },
+  "1235": {
+   "confidence": "high",
+   "event_country": "PAK",
+   "event_place": "Mohmand, Khyber Pakhtunkhwa",
+   "reason": "Drive-by shooting of police guarding polio workers in Mohmand district, Khyber Pakhtunkhwa, Pakistan."
+  },
+  "1236": {
+   "confidence": "high",
+   "event_country": "NONE",
+   "event_place": null,
+   "reason": "Roundup of seven global relations reads plus a generic China-Russia news page; no single event."
+  },
+  "1237": {
+   "confidence": "medium",
+   "event_country": "NONE",
+   "event_place": null,
+   "reason": "Core event is Trump's Fox phone interview on Israel aid, place not stated; other members are Israeli election and US-Israel items."
+  },
+  "1238": {
+   "confidence": "medium",
+   "event_country": "NONE",
+   "event_place": null,
+   "reason": "Trump's announcement made in a Fox and Friends interview; no item states where he spoke. Reactions in US and Israel."
+  },
+  "1241": {
+   "confidence": "high",
+   "event_country": "USA",
+   "event_place": "Texas",
+   "reason": "Texas Senate race: Talarico defeats Paxton; rallies and victory in Austin, Texas."
+  },
+  "1242": {
+   "confidence": "medium",
+   "event_country": "NONE",
+   "event_place": null,
+   "reason": "Mixed: Nordic hockey boycott of a future championship in Germany, Finland/Norway call to Putin, Baltic Sea tensions, Canada ban."
+  },
+  "1243": {
+   "confidence": "high",
+   "event_country": "NONE",
+   "event_place": null,
+   "reason": "Hoax bomb threats on flights landing in Poland, Italy, Bulgaria, Spain and Czechia; several countries equally."
+  },
+  "1246": {
+   "confidence": "low",
+   "event_country": "RUS",
+   "event_place": null,
+   "reason": "Headline item: rising utility bills strain Russian households; other member is about Ukraine's economy and aid needs, 1-1 split."
+  },
+  "1247": {
+   "confidence": "high",
+   "event_country": "ATG",
+   "event_place": "Antigua and Barbuda",
+   "reason": "King Charles spoke opening the Commonwealth summit in Antigua and Barbuda."
+  },
+  "1248": {
+   "confidence": "high",
+   "event_country": "GRL",
+   "event_place": null,
+   "reason": "Greenland's parliament ratified the security deal with the US and Denmark (Greenland vote)."
+  },
+  "1249": {
+   "confidence": "high",
+   "event_country": "NONE",
+   "event_place": null,
+   "reason": "Bomb threats on flights to Warsaw, Sofia, Rome, Murcia and others; multi-country wave across Europe."
+  },
+  "1250": {
+   "confidence": "high",
+   "event_country": "USA",
+   "event_place": "New York",
+   "reason": "Reportage of voters queuing in New York on US midterm day; second item a US vote explainer."
+  },
+  "1251": {
+   "confidence": "high",
+   "event_country": "PRY",
+   "event_place": null,
+   "reason": "Paraguay's central bank liquidates Ueno Bank; protests in Asuncion and across Paraguay."
+  },
+  "1252": {
+   "confidence": "high",
+   "event_country": "HTI",
+   "event_place": null,
+   "reason": "El Salvador sends troops into Haiti to search for missing soldiers after gang ambush in Haiti."
+  },
+  "1253": {
+   "confidence": "high",
+   "event_country": "POL",
+   "event_place": "Polish border with Kaliningrad",
+   "reason": "Tusk: Poland prevented a provocation on its border with Kaliningrad; counterterrorism police deployed near border."
+  },
+  "1254": {
+   "confidence": "high",
+   "event_country": "USA",
+   "event_place": "Michigan",
+   "reason": "Michigan Senate race in US midterms; El-Sayed's election-night event in Detroit, Michigan."
+  },
+  "1255": {
+   "confidence": "high",
+   "event_country": "USA",
+   "event_place": null,
+   "reason": "US midterm results: Democrats reach 218 House seats and lead the Senate."
+  },
+  "1256": {
+   "confidence": "high",
+   "event_country": "USA",
+   "event_place": "Georgia (US state)",
+   "reason": "Ossoff vs Collins US Senate race in the US state of Georgia; Ossoff reelected."
+  },
+  "1257": {
+   "confidence": "high",
+   "event_country": "ZAF",
+   "event_place": null,
+   "reason": "South Africa's nationwide municipal elections on November 4; votes counted across the country."
+  },
+  "1258": {
+   "confidence": "low",
+   "event_country": "NONE",
+   "event_place": null,
+   "reason": "European Commission emergency-preparedness guidance for EU citizens, no venue stated; third member is a separate Brussels statement on Ukraine accession."
+  },
+  "1261": {
+   "confidence": "medium",
+   "event_country": "USA",
+   "event_place": null,
+   "reason": "Democrats' plans to investigate Trump from Congress after winning the US midterms."
+  },
+  "1262": {
+   "confidence": "high",
+   "event_country": "USA",
+   "event_place": "New Jersey",
+   "reason": "New Jersey governor wrote to the state's ports warning against accepting Russian diesel."
+  },
+  "1263": {
+   "confidence": "high",
+   "event_country": "NOR",
+   "event_place": "Finnmark",
+   "reason": "Norway deploys NASAMS sensors and troops along its border with Russia in Finnmark."
+  },
+  "1264": {
+   "confidence": "high",
+   "event_country": "ESP",
+   "event_place": null,
+   "reason": "Spanish transport minister resigns after train collision south of Madrid killed 69."
+  },
+  "1267": {
+   "confidence": "high",
+   "event_country": "USA",
+   "event_place": "Florida; Georgia (US state)",
+   "reason": "Gubernatorial results in Florida and the US state of Georgia in US midterms; both in the USA."
+  },
+  "1268": {
+   "confidence": "high",
+   "event_country": "USA",
+   "event_place": null,
+   "reason": "US midterms: Democrats take House and Senate."
+  },
+  "1269": {
+   "confidence": "medium",
+   "event_country": "USA",
+   "event_place": null,
+   "reason": "Jeffries and Trump react to US midterm results; venue of remarks not stated but the event is the US election."
+  },
+  "1271": {
+   "confidence": "medium",
+   "event_country": "NONE",
+   "event_place": null,
+   "reason": "PLA vessels across the western Pacific/Philippine Sea and coastguard off Taiwan's east coast; activity at sea, reported by Taiwan."
+  },
+  "1272": {
+   "confidence": "medium",
+   "event_country": "RUS",
+   "event_place": "Anapa",
+   "reason": "Novichok creator Uglev died Oct 26; he spent his last years in Anapa (death place implied, not stated)."
+  },
+  "1273": {
+   "confidence": "high",
+   "event_country": "ETH",
+   "event_place": "Addis Ababa",
+   "reason": "All items in Ethiopia: Italian Language Week in Addis Ababa, Arba Minch, Dire Dawa; Afar; conflict displacement."
+  },
+  "1275": {
+   "confidence": "high",
+   "event_country": "USA",
+   "event_place": "Maine",
+   "reason": "Troy Jackson unseats Susan Collins in the Maine US Senate race; victory speech in Portland, Maine."
+  },
+  "1276": {
+   "confidence": "high",
+   "event_country": "USA",
+   "event_place": "Alaska",
+   "reason": "Alaska US Senate race in final days before the vote."
+  },
+  "1277": {
+   "confidence": "high",
+   "event_country": "USA",
+   "event_place": null,
+   "reason": "Democrats win control of US Congress in the midterms."
+  },
+  "1278": {
+   "confidence": "low",
+   "event_country": "CHN",
+   "event_place": "Beijing",
+   "reason": "China's government calls midterms an internal matter; reported from Beijing, but briefing venue not explicitly stated."
+  },
+  "1281": {
+   "confidence": "medium",
+   "event_country": "SRB",
+   "event_place": "Belgrade",
+   "reason": "Serbian student list's election victory celebrated in Belgrade; Novi Sad item; Serbian-press item on Kyiv arms is off-topic."
+  },
+  "1282": {
+   "confidence": "medium",
+   "event_country": "NONE",
+   "event_place": null,
+   "reason": "Reactions across Asian countries to US midterms plus pieces on young American voters; no single event country."
+  },
+  "1284": {
+   "confidence": "high",
+   "event_country": "BEL",
+   "event_place": "Brussels",
+   "reason": "Euronews EU Enlargement Summit in Brussels on Nov 3 and Commission's Enlargement Package adopted in Brussels."
+  },
+  "1286": {
+   "confidence": "medium",
+   "event_country": "CHE",
+   "event_place": null,
+   "reason": "Swiss government decided to waive medical costs for Italians injured in Crans-Montana fire; decision in Switzerland, Tajani reacts on X."
+  },
+  "1287": {
+   "confidence": "low",
+   "event_country": "SYR",
+   "event_place": null,
+   "reason": "Headline item and duplicate: Arab Opinion Index survey of Syrians; other two members on Israel-Iran threat claims."
+  },
+  "1289": {
+   "confidence": "medium",
+   "event_country": "NONE",
+   "event_place": null,
+   "reason": "Sharp objects found in Halloween sweets in Austria, Germany and Hungary; several countries, Austria leads but not exclusively."
+  },
+  "1290": {
+   "confidence": "high",
+   "event_country": "USA",
+   "event_place": "New Jersey",
+   "reason": "Adam Hamawy wins New Jersey's 12th Congressional District in US midterms."
+  },
+  "1291": {
+   "confidence": "high",
+   "event_country": "FRA",
+   "event_place": null,
+   "reason": "Hackers raised temperatures in cold rooms of the French Blood Establishment (EFS) in France."
+  },
+  "1294": {
+   "confidence": "high",
+   "event_country": "GBR",
+   "event_place": "RAF Fairford",
+   "reason": "RIAT airshow leaves RAF Fairford for MOD Boscombe Down, both in England."
+  },
+  "1295": {
+   "confidence": "low",
+   "event_country": "NONE",
+   "event_place": null,
+   "reason": "Kardashian BBC interview on retaking the bar exam; no item states any place for the interview or exam."
+  },
+  "1296": {
+   "confidence": "high",
+   "event_country": "USA",
+   "event_place": null,
+   "reason": "US midterm redistricting results in Texas (Houston), Florida and other US states."
+  },
+  "1297": {
+   "confidence": "high",
+   "event_country": "USA",
+   "event_place": null,
+   "reason": "Historic firsts for women and minorities across US midterm races (Minnesota, New Hampshire, Michigan, Georgia)."
+  },
+  "1299": {
+   "confidence": "high",
+   "event_country": "IND",
+   "event_place": "New Delhi",
+   "reason": "NEW DELHI dateline: India signed $5.7bn contract with Garden Reach and Goa Shipyard for corvettes."
+  },
+  "1301": {
+   "confidence": "high",
+   "event_country": "DNK",
+   "event_place": "Copenhagen",
+   "reason": "Thousands of Danish students marched from Copenhagen City Hall Square to parliament."
+  },
+  "1302": {
+   "confidence": "medium",
+   "event_country": "USA",
+   "event_place": null,
+   "reason": "US Democrats warn Trump administration after midterm wins; statement venue not stated, US domestic politics."
+  },
+  "1304": {
+   "confidence": "medium",
+   "event_country": "NONE",
+   "event_place": null,
+   "reason": "US sanctions announcement targeting Indian and Turkish firms and fake registries (Guyana, Laos) for Iran's fleet; multiple target countries."
+  },
+  "1305": {
+   "confidence": "high",
+   "event_country": "HUN",
+   "event_place": null,
+   "reason": "Hungary releases its communist-era secret police files."
+  },
+  "1306": {
+   "confidence": "low",
+   "event_country": "NONE",
+   "event_place": null,
+   "reason": "Ukrainian intelligence estimate of Russian missile output (an assessment, venue not stated) plus a US Air Force RFI; no single occurrence place."
+  },
+  "1307": {
+   "confidence": "medium",
+   "event_country": "BEL",
+   "event_place": "Brussels",
+   "reason": "Kallas spoke on the new US Congress; El País places her remarks in Brussels. Third member is Mamdani in New York."
+  },
+  "1308": {
+   "confidence": "high",
+   "event_country": "VAT",
+   "event_place": "Vatican",
+   "reason": "Bob Dylan met Pope Leo XIV at the Vatican."
+  },
+  "1310": {
+   "confidence": "low",
+   "event_country": "CAN",
+   "event_place": null,
+   "reason": "Canadian reactions to US midterms (minister statement, tariff hopes); venue of remarks not stated, but the event is Canada's response."
+  },
+  "1312": {
+   "confidence": "high",
+   "event_country": "USA",
+   "event_place": "Washington",
+   "reason": "US and Chinese defence officials met in Washington for the working group meeting."
+  },
+  "1313": {
+   "confidence": "high",
+   "event_country": "USA",
+   "event_place": null,
+   "reason": "Gen Z voting pattern and candidates in US midterm elections."
+  },
+  "1314": {
+   "confidence": "high",
+   "event_country": "ESP",
+   "event_place": null,
+   "reason": "Zelensky landed in Spain for air-defence talks."
+  },
+  "1316": {
+   "confidence": "low",
+   "event_country": "UKR",
+   "event_place": null,
+   "reason": "Headline: Ukrainian soldiers shot down a Shahed carrying leaflets; other members (UK trainers, Russian satellite manoeuvre) are unrelated."
+  },
+  "1317": {
+   "confidence": "medium",
+   "event_country": "NONE",
+   "event_place": null,
+   "reason": "Pope Leo's planned tour of Uruguay, Argentina and Peru; items cover Montevideo and Zana preparations, three countries."
+  },
+  "1318": {
+   "confidence": "high",
+   "event_country": "USA",
+   "event_place": null,
+   "reason": "Democratic Socialists' record wins in US midterm elections."
+  },
+  "1319": {
+   "confidence": "low",
+   "event_country": "IDN",
+   "event_place": null,
+   "reason": "Swift telescope burned up in Earth's atmosphere over Indonesia per NASA; re-entry is an atmospheric event, location only loosely tied."
+  },
+  "1320": {
+   "confidence": "high",
+   "event_country": "NONE",
+   "event_place": null,
+   "reason": "Sudan and Ethiopia expel each other's diplomats; two countries equally."
+  },
+  "1321": {
+   "confidence": "high",
+   "event_country": "CAN",
+   "event_place": "Bella Coola, British Columbia",
+   "reason": "Grizzly attack killed mother and daughter near Bella Coola, British Columbia, Canada."
+  },
+  "1322": {
+   "confidence": "high",
+   "event_country": "HKG",
+   "event_place": null,
+   "reason": "Hong Kong High Court sentenced Joshua Wong to 10 years; other member also a Hong Kong court case."
+  },
+  "1323": {
+   "confidence": "medium",
+   "event_country": "NONE",
+   "event_place": "Strait of Hormuz",
+   "reason": "South Korean patrol deployment to waters near the Strait of Hormuz and Oman's Duqm; maritime region, not a single country."
+  },
+  "1324": {
+   "confidence": "high",
+   "event_country": "USA",
+   "event_place": null,
+   "reason": "US Homeland Security warning on illegal voting on US midterm day; voters in Minnesota and Texas."
+  },
+  "1326": {
+   "confidence": "medium",
+   "event_country": "NONE",
+   "event_place": null,
+   "reason": "Zelensky's call with Trump envoys (place not stated), hopes for US Congress, and a Madrid visit; no single event country."
+  },
+  "1327": {
+   "confidence": "low",
+   "event_country": "SAU",
+   "event_place": "Riyadh",
+   "reason": "Headline: Syria-Saudi defence deal signed during al-Sharaa's Riyadh visit; half the members are separate Yemen-war items."
+  },
+  "1330": {
+   "confidence": "high",
+   "event_country": "HKG",
+   "event_place": null,
+   "reason": "Hong Kong court sentenced Joshua Wong to another 10 years."
+  },
+  "1331": {
+   "confidence": "high",
+   "event_country": "DEU",
+   "event_place": "Berlin",
+   "reason": "Bavarian deputy premier Aiwanger found dead in a Berlin hotel room."
+  },
+  "1332": {
+   "confidence": "high",
+   "event_country": "ISR",
+   "event_place": null,
+   "reason": "United Torah Judaism declined to recommend a PM candidate during consultations with President Herzog in Israel."
+  },
+  "1333": {
+   "confidence": "high",
+   "event_country": "FRA",
+   "event_place": null,
+   "reason": "Nationwide strikes and protests across more than 70 French cities."
+  },
+  "1334": {
+   "confidence": "medium",
+   "event_country": "FRA",
+   "event_place": "Evreux",
+   "reason": "Headline and most items: Dublin-Rome Aer Lingus flight diverted to Evreux airbase, France; several members cover the wider European threat wave."
+  },
+  "1336": {
+   "confidence": "medium",
+   "event_country": "SAU",
+   "event_place": "Medina",
+   "reason": "Headline: missile at Medina intercepted; Riyadh airport claim also in Saudi Arabia; two members are strikes inside Yemen."
+  },
+  "1338": {
+   "confidence": "high",
+   "event_country": "POL",
+   "event_place": null,
+   "reason": "Poland arrests six suspected Russian spies; other member is Tusk on a foiled provocation at the Polish-Kaliningrad border."
+  },
+  "1339": {
+   "confidence": "medium",
+   "event_country": "FRA",
+   "event_place": null,
+   "reason": "Five of six members: national strike in France (Paris, Tour Eiffel, school fire near Toulouse); headline item is Harry/Meghan at European Parliament."
+  },
+  "1340": {
+   "confidence": "high",
+   "event_country": "AUS",
+   "event_place": "Queensland",
+   "reason": "Chef fired from a Queensland restaurant; Australia's Fair Work Commission upheld the firing."
+  },
+  "1341": {
+   "confidence": "high",
+   "event_country": "PSE",
+   "event_place": "Gaza",
+   "reason": "Israeli attacks killed four people in Gaza; Gaza truce death toll."
+  }
+ }
+}
