@@ -12,9 +12,23 @@ the 379 cases remain the expansion set.
 ```sha256
 1f441e71a05b14cb56406cfdf2fda244c04ee827cfd7c2218fc3ae9da3697446  sample_subsample.py
 c745d15c66df2823f8f1dbecb02b3d88a5580875db582a854fad0faae6f0458a  manifest.json
-e6f0f287d320660cc1123f02cfd0a894a1ca84a2496e038600bec6da12738527  label_server.py
+11266c71dcca9a4d7c16abf2c5ed30676ecba8826fa240163dec9b2edfccd642  label_server.py
 4660f3f02512cc7dd51c7ad5ac08e832ff98ad9de0e8ec131134c2bff58763bf  labels_subsample.py
 1e9dfe1f55971fd2cd3c9456785a1aef787a80fcc114f9790b61ae785b7e7aa0  score_subsample.py
 d9a2250b8c0cf826cc6bca2567075a773c3d30f3a93e718f4b62d00daeafaf63  SUBSAMPLE.md
 339cdb3c3430a97c861c2ec6ef47f63e7f327c6481ca2742eb324288ebe9d958  owner-labels-subsample.yaml (empty template)
 ```
+
+## Amendment (2026-11-10): label page changed, nothing else
+
+At the owner's request (2026-11-10) the label page gained a blind second opinion: Claude's verdicts
+(`claude-verdicts.json`, hash in `claude-verdicts-freeze.json`, commit `8a5a6ab`) are shown for a case only after the
+owner has saved a label for it, and every save is appended to `owner-label-history.jsonl` with `after_reveal`.
+That changed `label_server.py` from sha256 `e6f0f287d320660cc1123f02cfd0a894a1ca84a2496e038600bec6da12738527` (frozen
+2026-11-03) to `11266c71dcca9a4d7c16abf2c5ed30676ecba8826fa240163dec9b2edfccd642`; the hash block above now carries the
+new value so `validate` passes. The draw, `manifest.json`, `labels_subsample.py`, `score_subsample.py` and
+`SUBSAMPLE.md` are unchanged and still verify against their 2026-11-03 hashes.
+
+Scoring basis (owner, 2026-11-10): primary = the owner's first saved answer per case (first line per case in
+`owner-label-history.jsonl`, `baseline` lines included); secondary = the final labels in
+`owner-labels-subsample.yaml`. If pass/fail differs between the two, the result is inconclusive.

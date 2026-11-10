@@ -3,622 +3,725 @@ instructions: Fill label (MEMBER | CONTEXT | SPILLOVER | OTHER_SITUATION | NOT_M
   Do not open ../key.json.
 cases:
 - case_id: S001
-  label: null
-  reason: null
-  reviewer: null
+  label: NOT_MEMBER
+  reason: It focuses on technical parameters such as doubling the turnover exemption threshold for small operators, clarifying
+    organic logo rules, and extending organic standard equivalence recognition for 11 unnamed third-party countries through
+    2036
+  reviewer: Owner
 - case_id: S003
-  label: null
-  reason: null
-  reviewer: null
+  label: OTHER_SITUATION
+  reason: Western Sahara at best can be viewed in terms of spheres of influence, but it would be a different situation
+  reviewer: Owner
 - case_id: S006
-  label: null
-  reason: null
-  reviewer: null
+  label: OTHER_SITUATION
+  reason: Housing Crisis in Spain and Milei's declarations are two different situations
+  reviewer: Owner
 - case_id: S008
-  label: null
-  reason: null
-  reviewer: null
+  label: MEMBER
+  reason: It is a member because Ramallah is a Palestinian city, the de-facto capital
+  reviewer: Owner
 - case_id: S009
-  label: null
-  reason: null
-  reviewer: null
+  label: MEMBER
+  reason: US arrested a Chinese spy for tailing Taiwan's president's son, de-facto a US ally
+  reviewer: Owner
 - case_id: S013
-  label: null
-  reason: null
-  reviewer: null
+  label: NOT_MEMBER
+  reason: Not a member, clearly a different situation (although Pope-France also does not seem like a worthy situation to
+    create, I would prefer Pope-EU Relations or Pope-US relations)
+  reviewer: Owner
 - case_id: S016
-  label: null
-  reason: null
-  reviewer: null
+  label: AMBIGUOUS
+  reason: We don't know whether these Apaches will be employed in the war in Gaza or not, so Ambiguous
+  reviewer: Owner
 - case_id: S022
-  label: null
-  reason: null
-  reviewer: null
+  label: SPILLOVER
+  reason: 'Adjudicated by owner 2026-11-10 after second opinion: Russian-ordered sabotage in Estonia against a Ukraine supplier:
+    a real incident outside the war''s places caused by the war (D6), not commentary.'
+  reviewer: Owner
 - case_id: S023
-  label: null
-  reason: null
-  reviewer: null
+  label: AMBIGUOUS
+  reason: It matches, Reports all concern either Bukele's policies or El Salvador trades
+  reviewer: Owner
 - case_id: S024
-  label: null
-  reason: null
-  reviewer: null
+  label: MEMBER
+  reason: the event actually happened on UK soil but the base is actively used in US-Iran war
+  reviewer: Owner
 - case_id: S027
-  label: null
-  reason: null
-  reviewer: null
+  label: MEMBER
+  reason: Member only because Zelensky still has NATO support to this date
+  reviewer: Owner
 - case_id: S028
-  label: null
-  reason: null
-  reviewer: null
+  label: MEMBER
+  reason: Clear negotiating procedure going on inside the situation
+  reviewer: Owner
 - case_id: S030
-  label: null
-  reason: null
-  reviewer: null
+  label: MEMBER
+  reason: Perfect fit for all reports
+  reviewer: Owner
 - case_id: S033
-  label: null
-  reason: null
-  reviewer: null
+  label: NOT_MEMBER
+  reason: Not a member of the Eritrea - Ethiopia situation (what even is the situation?)
+  reviewer: Owner
 - case_id: S037
-  label: null
-  reason: null
-  reviewer: null
+  label: CONTEXT
+  reason: Analysis piece on Russia's spending and/or war related spending
+  reviewer: Owner
 - case_id: S042
-  label: null
-  reason: null
-  reviewer: null
+  label: MEMBER
+  reason: It is a member although location region is USA, not  russia
+  reviewer: Owner
 - case_id: S043
-  label: null
-  reason: null
-  reviewer: null
+  label: SPILLOVER
+  reason: This is a consequence of the broader US-China-Taiwan triangular relations (as Taiwan is a US ally)
+  reviewer: Owner
 - case_id: S045
-  label: null
-  reason: null
-  reviewer: null
+  label: NOT_MEMBER
+  reason: off scope, bolsonaro and Brazil elections have nothing to do with Russia-Ukraine
+  reviewer: Owner
 - case_id: S049
-  label: null
-  reason: null
-  reviewer: null
+  label: MEMBER
+  reason: Clear member
+  reviewer: Owner
 - case_id: S050
-  label: null
-  reason: null
-  reviewer: null
+  label: MEMBER
+  reason: clear member
+  reviewer: Owner
 - case_id: S051
-  label: null
-  reason: null
-  reviewer: null
+  label: MEMBER
+  reason: Clear member
+  reviewer: Owner
 - case_id: S054
-  label: null
-  reason: null
-  reviewer: null
+  label: OTHER_SITUATION
+  reason: Belongs to US-South America relations, the fact that Rubio said "US are the alternative to Chinese & Russian" involvement
+    should also speak to Russia-South America or China-South America situations
+  reviewer: Owner
 - case_id: S055
-  label: null
-  reason: null
-  reviewer: null
+  label: AMBIGUOUS
+  reason: 'Only ambiguous because "denouncing" does not specify a location or public office where these claims have been presented:
+    otherwise not member'
+  reviewer: Owner
 - case_id: S056
-  label: null
-  reason: null
-  reviewer: null
+  label: MEMBER
+  reason: clearly a member
+  reviewer: Owner
 - case_id: S060
-  label: null
-  reason: null
-  reviewer: null
+  label: MEMBER
+  reason: Clearly a member
+  reviewer: Owner
 - case_id: S062
-  label: null
-  reason: null
-  reviewer: null
+  label: MEMBER
+  reason: clearly a member
+  reviewer: Owner
 - case_id: S066
-  label: null
-  reason: null
-  reviewer: null
+  label: MEMBER
+  reason: clearly a member (south-east pacific ocean is an area of interest for multiple reasons, so I would also expect US
+    to be involved)
+  reviewer: Owner
 - case_id: S067
-  label: null
-  reason: null
-  reviewer: null
+  label: OTHER_SITUATION
+  reason: Belongs to US-Israel situation
+  reviewer: Owner
 - case_id: S068
-  label: null
-  reason: null
-  reviewer: null
+  label: MEMBER
+  reason: clearly a member
+  reviewer: Owner
 - case_id: S074
-  label: null
-  reason: null
-  reviewer: null
+  label: MEMBER
+  reason: Member, Buenos Aires protests are also against Milei
+  reviewer: Owner
 - case_id: S078
-  label: null
-  reason: null
-  reviewer: null
+  label: MEMBER
+  reason: clear member
+  reviewer: Owner
 - case_id: S079
-  label: null
-  reason: null
-  reviewer: null
+  label: NOT_MEMBER
+  reason: Development is clearly not related to China
+  reviewer: Owner
 - case_id: S080
-  label: null
-  reason: null
-  reviewer: null
+  label: MEMBER
+  reason: member as "Russians provocations" and war are linked explicitly
+  reviewer: Owner
 - case_id: S086
-  label: null
-  reason: null
-  reviewer: null
+  label: OTHER_SITUATION
+  reason: Belongs to EU Law Initiatives & Economy
+  reviewer: Owner
 - case_id: S087
-  label: null
-  reason: null
-  reviewer: null
+  label: OTHER_SITUATION
+  reason: EU law initiatives & Institutions
+  reviewer: Owner
 - case_id: S090
-  label: null
-  reason: null
-  reviewer: null
+  label: OTHER_SITUATION
+  reason: China- Taiwan situation member
+  reviewer: Owner
 - case_id: S093
-  label: null
-  reason: null
-  reviewer: null
+  label: NOT_MEMBER
+  reason: France-Pope shouldn't even be a situation; better would be Pope Remarks/Addresses
+  reviewer: Owner
 - case_id: S096
-  label: null
-  reason: null
-  reviewer: null
+  label: MEMBER
+  reason: Situation should carry the name of the calamity, so if it's hurricane then hurricane, and the geographical areas
+    interested. Each calamity should be its own situation
+  reviewer: Owner
 - case_id: S101
-  label: null
-  reason: null
-  reviewer: null
+  label: MEMBER
+  reason: Clear member
+  reviewer: Owner
 - case_id: S105
-  label: null
-  reason: null
-  reviewer: null
+  label: AMBIGUOUS
+  reason: 'No mention of Eritrea so ambiguous: unless this is a race to arms/ongoing armed conflict with Eritrea'
+  reviewer: Owner
 - case_id: S107
-  label: null
-  reason: null
-  reviewer: null
+  label: NOT_MEMBER
+  reason: Not member; also "Chinas Long March" shouldn't be a situation, "China News & Policy" would be better
+  reviewer: Owner
 - case_id: S119
-  label: null
-  reason: null
-  reviewer: null
+  label: MEMBER
+  reason: clear member
+  reviewer: Owner
 - case_id: S121
-  label: null
-  reason: null
-  reviewer: null
+  label: OTHER_SITUATION
+  reason: Other situation, La Liga covers Spanish football matches, not USA
+  reviewer: Owner
 - case_id: S130
-  label: null
-  reason: null
-  reviewer: null
+  label: MEMBER
+  reason: clear member
+  reviewer: Owner
 - case_id: S132
-  label: null
-  reason: null
-  reviewer: null
+  label: MEMBER
+  reason: Clear member
+  reviewer: Owner
 - case_id: S134
-  label: null
-  reason: null
-  reviewer: null
+  label: MEMBER
+  reason: Clear member
+  reviewer: Owner
 - case_id: S137
-  label: null
-  reason: null
-  reviewer: null
+  label: MEMBER
+  reason: clear member
+  reviewer: Owner
 - case_id: S138
-  label: null
-  reason: null
-  reviewer: null
+  label: OTHER_SITUATION
+  reason: Belongs to UK-EU Relations (Burnham is the UK PM)
+  reviewer: Owner
 - case_id: S140
-  label: null
-  reason: null
-  reviewer: null
+  label: AMBIGUOUS
+  reason: 'Situation should be: Elon Musk - Starlink (or whatever company: Tesla, X, SpaceX etc...); or simply Elon Musk'
+  reviewer: Owner
 - case_id: S141
-  label: null
-  reason: null
-  reviewer: null
+  label: OTHER_SITUATION
+  reason: EU Enlargement plans situation
+  reviewer: Owner
 - case_id: S145
-  label: null
-  reason: null
-  reviewer: null
+  label: AMBIGUOUS
+  reason: 'Situation should be: United States Justice & Jurisprudence (whenever a court rules anything or any judicial institution
+    does anything relevant)'
+  reviewer: Owner
 - case_id: S149
-  label: null
-  reason: null
-  reviewer: null
+  label: CONTEXT
+  reason: context, referring to Obama's speech about middle east
+  reviewer: Owner
 - case_id: S150
-  label: null
-  reason: null
-  reviewer: null
+  label: MEMBER
+  reason: member
+  reviewer: Owner
 - case_id: S152
-  label: null
-  reason: null
-  reviewer: null
+  label: OTHER_SITUATION
+  reason: belongs to EU Enlargement/Expansion plan situation
+  reviewer: Owner
 - case_id: S154
-  label: null
-  reason: null
-  reviewer: null
+  label: OTHER_SITUATION
+  reason: Iran-US situation
+  reviewer: Owner
 - case_id: S155
-  label: null
-  reason: null
-  reviewer: null
+  label: MEMBER
+  reason: member as machinery is labelled as "EU machinery"
+  reviewer: Owner
 - case_id: S157
-  label: null
-  reason: null
-  reviewer: null
+  label: OTHER_SITUATION
+  reason: 'Situation should be: Elon Musk - Politics'
+  reviewer: Owner
 - case_id: S158
-  label: null
-  reason: null
-  reviewer: null
+  label: MEMBER
+  reason: member
+  reviewer: Owner
 - case_id: S159
-  label: null
-  reason: null
-  reviewer: null
+  label: OTHER_SITUATION
+  reason: Situation should be US-Cuba
+  reviewer: Owner
 - case_id: S162
-  label: null
-  reason: null
-  reviewer: null
+  label: MEMBER
+  reason: clear member
+  reviewer: Owner
 - case_id: S166
-  label: null
-  reason: null
-  reviewer: null
+  label: OTHER_SITUATION
+  reason: 'Situation should be: Pope''s remarks'
+  reviewer: Owner
 - case_id: S168
-  label: null
-  reason: null
-  reviewer: null
+  label: OTHER_SITUATION
+  reason: Natural calamity, different than US-Mexico situation. Should be either one of its own or all natural calamities
+    under one big umbrella, then divided by geotag
+  reviewer: Owner
 - case_id: S169
-  label: null
-  reason: null
-  reviewer: null
+  label: OTHER_SITUATION
+  reason: Situation should be US Justice, Trials & Jurisprudence
+  reviewer: Owner
 - case_id: S176
-  label: null
-  reason: null
-  reviewer: null
+  label: AMBIGUOUS
+  reason: I think here is more Russia - Ukraine situation with the US interventions. Also, in general, situations like the
+    war in Ukraine can have more than 2 principal actors (e.g. USA, Russia & Ukraine)
+  reviewer: Owner
 - case_id: S177
-  label: null
-  reason: null
-  reviewer: null
+  label: MEMBER
+  reason: clear member
+  reviewer: Owner
 - case_id: S185
-  label: null
-  reason: null
-  reviewer: null
+  label: OTHER_SITUATION
+  reason: 'Situation should be: US Justice, Trials & Jurisprudence'
+  reviewer: Owner
 - case_id: S195
-  label: null
-  reason: null
-  reviewer: null
+  label: MEMBER
+  reason: 'Clear Member: diplomacy'
+  reviewer: Owner
 - case_id: S199
-  label: null
-  reason: null
-  reviewer: null
+  label: MEMBER
+  reason: Member
+  reviewer: Owner
 - case_id: S200
-  label: null
-  reason: null
-  reviewer: null
+  label: NOT_MEMBER
+  reason: off scope; protest is about election turnout
+  reviewer: Owner
 - case_id: S205
-  label: null
-  reason: null
-  reviewer: null
+  label: MEMBER
+  reason: Member due to the occasion where the news arose; it carries meaning that it happened in the US, speaks ALSO (not
+    just) to US-Russia relations
+  reviewer: Owner
 - case_id: S207
-  label: null
-  reason: null
-  reviewer: null
+  label: MEMBER
+  reason: clear member
+  reviewer: Owner
 - case_id: S208
-  label: null
-  reason: null
-  reviewer: null
+  label: AMBIGUOUS
+  reason: Ambiguous because it could also be a spillover; Iran is not involved directly, but it very much is indirectly, as
+    is Israel
+  reviewer: Owner
 - case_id: S209
-  label: null
-  reason: null
-  reviewer: null
+  label: MEMBER
+  reason: Not directly ceasefire but it's very much related to it, so member
+  reviewer: Owner
 - case_id: S213
-  label: null
-  reason: null
-  reviewer: null
+  label: MEMBER
+  reason: clear member
+  reviewer: Owner
 - case_id: S221
-  label: null
-  reason: null
-  reviewer: null
+  label: MEMBER
+  reason: clear member
+  reviewer: Owner
 - case_id: S222
-  label: null
-  reason: null
-  reviewer: null
+  label: OTHER_SITUATION
+  reason: Here the situation should be United States Midterms
+  reviewer: Owner
 - case_id: S233
-  label: null
-  reason: null
-  reviewer: null
+  label: MEMBER
+  reason: clear member
+  reviewer: Owner
 - case_id: S237
-  label: null
-  reason: null
-  reviewer: null
+  label: MEMBER
+  reason: sanction waiver counts as negotiation
+  reviewer: Owner
 - case_id: S238
-  label: null
-  reason: null
-  reviewer: null
+  label: MEMBER
+  reason: clear member
+  reviewer: Owner
 - case_id: S243
-  label: null
-  reason: null
-  reviewer: null
+  label: MEMBER
+  reason: clear member
+  reviewer: Owner
 - case_id: S248
-  label: null
-  reason: null
-  reviewer: null
+  label: NOT_MEMBER
+  reason: 'Adjudicated by owner 2026-11-10 after second opinion: Russia does not appear in the reports; the trigger is a US
+    request. Judged on the pair as shown.'
+  reviewer: Owner
 - case_id: S251
-  label: null
-  reason: null
-  reviewer: null
+  label: NOT_MEMBER
+  reason: Consequence, not a member
+  reviewer: Owner
 - case_id: S256
-  label: null
-  reason: null
-  reviewer: null
+  label: SPILLOVER
+  reason: No Russia involved directly
+  reviewer: Owner
 - case_id: S262
-  label: null
-  reason: null
-  reviewer: null
+  label: CONTEXT
+  reason: More commentary than member
+  reviewer: Owner
 - case_id: S267
-  label: null
-  reason: null
-  reviewer: null
+  label: MEMBER
+  reason: 'Adjudicated by owner 2026-11-10 after second opinion: The Development is the Xi state visit itself (23 reports)
+    and a founder; matches the intended scope (leaders'' meeting in Washington).'
+  reviewer: Owner
 - case_id: S268
-  label: null
-  reason: null
-  reviewer: null
+  label: MEMBER
+  reason: member
+  reviewer: Owner
 - case_id: S269
-  label: null
-  reason: null
-  reviewer: null
+  label: MEMBER
+  reason: clear member
+  reviewer: Owner
 - case_id: S271
-  label: null
-  reason: null
-  reviewer: null
+  label: MEMBER
+  reason: 'Member but the situation should be one big "cloud" of natural disasters, searchable by geotag. Ping me on this:
+    developments following disasters should be easily reconcilable via calamity name (like rachel or simon) / country affected'
+  reviewer: Owner
 - case_id: S273
-  label: null
-  reason: null
-  reviewer: null
+  label: AMBIGUOUS
+  reason: 'It becomes a clear member once suspicions are confirmed, ambiguous for now. Ping me on this, do we have this "unlock"
+    features: i.e. specific developments that discriminate situation membership status?'
+  reviewer: Owner
 - case_id: S274
-  label: null
-  reason: null
-  reviewer: null
+  label: NOT_MEMBER
+  reason: not  a member
+  reviewer: Owner
 - case_id: S275
-  label: null
-  reason: null
-  reviewer: null
+  label: NOT_MEMBER
+  reason: off scope
+  reviewer: Owner
 - case_id: S276
-  label: null
-  reason: null
-  reviewer: null
+  label: MEMBER
+  reason: member
+  reviewer: Owner
 - case_id: S279
-  label: null
-  reason: null
-  reviewer: null
+  label: MEMBER
+  reason: No mention of Isr directly but this belongs to Isr-Pal situation
+  reviewer: Owner
 - case_id: S292
-  label: null
-  reason: null
-  reviewer: null
+  label: MEMBER
+  reason: clear member
+  reviewer: Owner
 - case_id: S293
-  label: null
-  reason: null
-  reviewer: null
+  label: MEMBER
+  reason: clear member
+  reviewer: Owner
 - case_id: S295
-  label: null
-  reason: null
-  reviewer: null
+  label: MEMBER
+  reason: 'Clear member: humanitarian corridor'
+  reviewer: Owner
 - case_id: S297
-  label: null
-  reason: null
-  reviewer: null
+  label: AMBIGUOUS
+  reason: 'Reports conflict: Little italy & New york have nothing to do; Super Intelligence same, no relation; the rest is
+    good'
+  reviewer: Owner
 - case_id: S299
-  label: null
-  reason: null
-  reviewer: null
+  label: MEMBER
+  reason: Killing is not exactly an act of negotiation for ceasefire
+  reviewer: Owner
 - case_id: S300
-  label: null
-  reason: null
-  reviewer: null
+  label: NOT_MEMBER
+  reason: Off scope; although the situation between India & US is connected to situation Russia & US insofar as the US is
+    trying to ensure oil supply and flow control through India given the conflict blockage in Russia
+  reviewer: Owner
 - case_id: S301
-  label: null
-  reason: null
-  reviewer: null
+  label: MEMBER
+  reason: clear member
+  reviewer: Owner
 - case_id: S302
-  label: null
-  reason: null
-  reviewer: null
+  label: NOT_MEMBER
+  reason: 'Adjudicated by owner 2026-11-10 after second opinion: Macron''s domestic student-protest response cohabits with
+    the Gulf visit only because a defective actor set created the Situation; not within its intended scope.'
+  reviewer: Owner
 - case_id: S306
-  label: null
-  reason: null
-  reviewer: null
+  label: OTHER_SITUATION
+  reason: off scope, malaysia is not involved
+  reviewer: Owner
 - case_id: S307
-  label: null
-  reason: null
-  reviewer: null
+  label: CONTEXT
+  reason: testimony from witness, linked context
+  reviewer: Owner
 - case_id: S310
-  label: null
-  reason: null
-  reviewer: null
+  label: MEMBER
+  reason: clear member
+  reviewer: Owner
 - case_id: S312
-  label: null
-  reason: null
-  reviewer: null
+  label: NOT_MEMBER
+  reason: I wouldn't know which situation to assign this to tbh
+  reviewer: Owner
 - case_id: S318
-  label: null
-  reason: null
-  reviewer: null
+  label: AMBIGUOUS
+  reason: I think this should belong to EU-Russia situation as Macron is a EU head of state condemning Russia
+  reviewer: Owner
 - case_id: S319
-  label: null
-  reason: null
-  reviewer: null
+  label: OTHER_SITUATION
+  reason: off scope, US is only related to this as NATO member
+  reviewer: Owner
 - case_id: S320
-  label: null
-  reason: null
-  reviewer: null
+  label: OTHER_SITUATION
+  reason: different situation; it's diplomatic, not military action
+  reviewer: Owner
 - case_id: S329
-  label: null
-  reason: null
-  reviewer: null
+  label: NOT_MEMBER
+  reason: Singapore is not involved
+  reviewer: Owner
 - case_id: S330
-  label: null
-  reason: null
-  reviewer: null
+  label: NOT_MEMBER
+  reason: off scope
+  reviewer: Owner
 - case_id: S337
-  label: null
-  reason: null
-  reviewer: null
+  label: OTHER_SITUATION
+  reason: Feels like other situation, like US Economic Policy
+  reviewer: Owner
 - case_id: S340
-  label: null
-  reason: null
-  reviewer: null
+  label: NOT_MEMBER
+  reason: off scope
+  reviewer: Owner
 - case_id: S341
-  label: null
-  reason: null
-  reviewer: null
+  label: NOT_MEMBER
+  reason: not a member
+  reviewer: Owner
 - case_id: S343
-  label: null
-  reason: null
-  reviewer: null
+  label: NOT_MEMBER
+  reason: 'Adjudicated by owner 2026-11-10 after second opinion: China''s offshore tax crackdown (domestic capital control)
+    and the US Treasury outbound rule are different actors, opposite flows and motives; not China-US.'
+  reviewer: Owner
 - case_id: S344
-  label: null
-  reason: null
-  reviewer: null
+  label: MEMBER
+  reason: member
+  reviewer: Owner
 - case_id: S347
-  label: null
-  reason: null
-  reviewer: null
+  label: MEMBER
+  reason: diplomatic exchange, member
+  reviewer: Owner
 - case_id: S350
-  label: null
-  reason: null
-  reviewer: null
+  label: OTHER_SITUATION
+  reason: 'Adjudicated by owner 2026-11-10 after second opinion: The Russian attacks are a UN Security Council (russia-ukraine-war)
+    topic; the EU part is a procedural letter with no EU-Russia action.'
+  reviewer: Owner
 - case_id: S353
-  label: null
-  reason: null
-  reviewer: null
+  label: NOT_MEMBER
+  reason: not a member
+  reviewer: Owner
 - case_id: S357
-  label: null
-  reason: null
-  reviewer: null
+  label: OTHER_SITUATION
+  reason: other situation
+  reviewer: Owner
 - case_id: S359
-  label: null
-  reason: null
-  reviewer: null
+  label: NOT_MEMBER
+  reason: off scope
+  reviewer: Owner
 - case_id: S362
-  label: null
-  reason: null
-  reviewer: null
+  label: OTHER_SITUATION
+  reason: other situations but given geographical proximity I would also lean towards spillover; ping me on why not
+  reviewer: Owner
 - case_id: S364
-  label: null
-  reason: null
-  reviewer: null
+  label: OTHER_SITUATION
+  reason: different
+  reviewer: Owner
 - case_id: S365
-  label: null
-  reason: null
-  reviewer: null
+  label: NOT_MEMBER
+  reason: no way
+  reviewer: Owner
 - case_id: S372
-  label: null
-  reason: null
-  reviewer: null
+  label: MEMBER
+  reason: 'Adjudicated by owner 2026-11-10 after second opinion: The Situation is de facto US midterms (election founders,
+    intended scope political/election, USA); Vance campaigning in the Alaska Senate battleground fits. The defective name
+    is a separate finding.'
+  reviewer: Owner
 - case_id: S377
-  label: null
-  reason: null
-  reviewer: null
+  label: CONTEXT
+  reason: seems like EU-Russia situation even though the report is from Kyiv independent
+  reviewer: Owner
 - case_id: S379
-  label: null
-  reason: null
-  reviewer: null
+  label: NOT_MEMBER
+  reason: other situation
+  reviewer: Owner
 situation_scopes:
 - slug: china-united-states
-  domains_or_types: null
-  places: null
+  domains_or_types:
+  - meeting between the two leaders held in Washington
+  - USA
+  places:
+  - Washington
+  - USA
   note: null
-  reviewer: null
+  reviewer: Owner
 - slug: france-pope
-  domains_or_types: null
-  places: null
+  domains_or_types:
+  - Pope warning; Pope future visit
+  places:
+  - Rome (where warning comes from); Paris (where the Pope will be)
   note: null
-  reviewer: null
+  reviewer: Owner
 - slug: eritrea-ethiopia
-  domains_or_types: null
-  places: null
-  note: null
-  reviewer: null
+  domains_or_types:
+  - Ethiopia's army says it has repelled attacks; Somali army clashes; Eritrea severs diplomatic ties with Ethiopia
+  places:
+  - Ethiopia; Somalia; Eritrea
+  note: 3 different developments
+  reviewer: Owner
 - slug: nato-russia
-  domains_or_types: null
-  places: null
-  note: null
-  reviewer: null
+  domains_or_types:
+  - Russia nuclear warning (military); NATO drafting strategy (military)
+  places:
+  - Russia
+  note: NATO is a military alliance, not a place.
+  reviewer: Owner
 - slug: christa-pike-pike
-  domains_or_types: null
-  places: null
+  domains_or_types:
+  - Topical news
+  places:
+  - Tennessee
   note: null
-  reviewer: null
+  reviewer: Owner
 - slug: russia-united-states
-  domains_or_types: null
-  places: null
+  domains_or_types:
+  - Russian lab worker;Trump blames Democrats and Ukraine;Washington preme su Mosca
+  places:
+  - Russia; USA; USA;
   note: null
-  reviewer: null
+  reviewer: Owner
 - slug: european-union-russia
-  domains_or_types: null
-  places: null
-  note: null
-  reviewer: null
+  domains_or_types:
+  - USA not removing diplomats from Kyiv (diplomacy); Lithuania calls for EU sanctions (Politics; diplomacy)
+  places:
+  - USA; Lithuania
+  note: When some minor country (e.g.) Lithuania calls for EU to do anything, and these calls are not picked up by any other
+    memebr state, it should not surface
+  reviewer: Owner
 - slug: donald-j-trump-united-states
-  domains_or_types: null
-  places: null
-  note: null
-  reviewer: null
+  domains_or_types:
+  - President Trump Actions
+  places:
+  - USA;
+  note: Topical news; Politics; Economics;
+  reviewer: Owner
 - slug: elon-musk-musk
-  domains_or_types: null
-  places: null
-  note: null
-  reviewer: null
+  domains_or_types:
+  - Topical Tech News; Politics (donations in D447)
+  places:
+  - India; USA
+  note: Midterms are held in the USA, so USA is the second Place
+  reviewer: Owner
 - slug: rachel-simon
-  domains_or_types: null
-  places: null
+  domains_or_types:
+  - Natural calamities
+  places:
+  - Mexico
   note: null
-  reviewer: null
+  reviewer: Owner
 - slug: israel-palestine
-  domains_or_types: null
-  places: null
+  domains_or_types:
+  - Armed conflict development
+  - military; War testimony
+  - security (D237); War testimony
+  - security
+  - economic (D295); Armed conflict development
+  - military; Political piece
+  places:
+  - Israel; Gaza;
   note: null
-  reviewer: null
+  reviewer: Owner
 - slug: malaysia-singapore
-  domains_or_types: null
-  places: null
+  domains_or_types:
+  - Natural calamity; Security and natural calamity's consequence
+  places:
+  - Singapore; Malaysia; Indonesia;
   note: null
-  reviewer: null
+  reviewer: Owner
 - slug: china-taiwan
-  domains_or_types: null
-  places: null
+  domains_or_types:
+  - 'D503: diplomacy; D546: military'
+  - economic
+  - 'security; D703: military'
+  - security
+  places:
+  - China; Taiwan
   note: null
-  reviewer: null
+  reviewer: Owner
 - slug: javier-milei-milei
-  domains_or_types: null
-  places: null
-  note: null
-  reviewer: null
+  domains_or_types:
+  - 'D619: economic'
+  - 'political; D760: economic'
+  - political
+  places:
+  - D619 Argentina; D760 Spain
+  note: Javier Milei clearly only concerns D619
+  reviewer: Owner
 - slug: mexico-united-states
-  domains_or_types: null
-  places: null
-  note: null
-  reviewer: null
+  domains_or_types:
+  - 'D657: security incident'
+  - 'isolated incident; D833: security incident'
+  - isolated incident
+  places:
+  - Mexico;
+  note: Should be given less priority/weight unless the news is cited, commented or reported by PMs, Defense ministries or
+    equivalent
+  reviewer: Owner
 - slug: bukele-el-salvador-nayib-bukele
-  domains_or_types: null
-  places: null
+  domains_or_types:
+  - 'D501: Security'
+  - 'political; D837: security'
+  - threat
+  places:
+  - El Salvador;
   note: null
-  reviewer: null
+  reviewer: Owner
 - slug: china-chinas-long-march
-  domains_or_types: null
-  places: null
-  note: null
-  reviewer: null
+  domains_or_types:
+  - 'D687: Society'
+  - 'Politics; D845: Security'
+  - Politics
+  - Public address
+  places:
+  - China;
+  note: '"Chinas long march" is not an Identity or Country; China is'
+  reviewer: Owner
 - slug: international-criminal-court-united-states
-  domains_or_types: null
-  places: null
-  note: null
-  reviewer: null
+  domains_or_types:
+  - 'D793: Politics'
+  - 'appointment/nomination; D846: Cerimony'
+  - award
+  places:
+  - EU; Aia/Aja (Netherlands)
+  note: '"EU appoints" it''s clearly a political event (appointment) that can be located in the EU (Brussels); The "Corte
+    Penale Internazionale" is located in the Netherlands, so that would be the appropriate tag'
+  reviewer: Owner
 - slug: machado-maria-corina-machado
-  domains_or_types: null
-  places: null
+  domains_or_types:
+  - 'D841: political; D954: political'
+  - election
+  places:
+  - Venezuela;
   note: null
-  reviewer: null
+  reviewer: Owner
 - slug: emmanuel-macron-france-macron
-  domains_or_types: null
-  places: null
+  domains_or_types:
+  - 'D708: diplomacy / significant_statement; D973: political'
+  - significant_statement
+  places:
+  - France;
   note: null
-  reviewer: null
+  reviewer: Owner
 - slug: canada-european-union
-  domains_or_types: null
-  places: null
+  domains_or_types:
+  - 'D1051: diplomacy / significant_statement; D1073: diplomacy / significant_statement'
+  places:
+  - Canada; EU;
   note: null
-  reviewer: null
+  reviewer: Owner
 - slug: afghanistan-taliban
-  domains_or_types: null
-  places: null
-  note: null
-  reviewer: null
+  domains_or_types:
+  - 'D1089: political'
+  - security
+  - 'threat; D1181: diplomacy'
+  - security
+  - migration
+  - significant_statement
+  places:
+  - Afghanistan; Pakistan
+  note: 'Here D1181 can be ambiguous because of "US Plan": the place is still Afghanistan but it would have to be made clear
+    where the deportations D1181 is referring to are happening (meaning from where to where)'
+  reviewer: Owner
 - slug: democrat-united-states
-  domains_or_types: null
-  places: null
-  note: null
-  reviewer: null
+  domains_or_types:
+  - 'D1084: Political/election; D1174: election; D1189: political/election'
+  places:
+  - USA
+  note: 'Important: Republicans "have a shot" is tagged as military/military_action: that''s a clear mistake we should be
+    able to fix'
+  reviewer: Owner

@@ -1,0 +1,20 @@
+{
+ "frozen_at": "2026-11-10T20:17:49.752117+00:00",
+ "reviewers": [
+  "Owner"
+ ],
+ "labels_sha256": "180240d53a1da529e4700308e9c6419eea67c943da78ef2cf1bd9d5371561615",
+ "manifest_sha256": "c745d15c66df2823f8f1dbecb02b3d88a5580875db582a854fad0faae6f0458a",
+ "freeze_subsample_md_sha256": "1ff46550ceaffb9195b179ff6618b73f80fb8fc897a355fde1b7379e878a53bd",
+ "frozen_set": {
+  "cases.json": "725d7a2d50e18e20ead4e773f17a0fdc014c2784bfb21096ac10b7550cb88b17",
+  "key.json": "5817074a533be24cb7610eb6b6d5096e4369c8edb396d48d8ee5813b03042632",
+  "scopes.json": "fa3da833e246efbb28cfb93ee0e3b12c81e79939d02f42060c5432cdfa28da3e",
+  "build_evalset.py": "0c5acfc90e6d1879f1477527db98c3bda10c12365bc93304813ad6c4fc0f77a1",
+  "labels_tool.py": "2ffe77f8d7f6105ebdebcebf0f6594bbed2ea5d0f651050f9016c1f43aaf48e4",
+  "score.py": "a48568b8e404c9c2d06cb49be3f2db0c1b57462ea01b2618864b491fff95034c",
+  "PREREGISTRATION.md": "fd48bef8faccb65947124fcd6a05d67ba6ba871c25f5c55a591a52f280cf7072",
+  "owner-labels.yaml (empty template)": "ef7ecb356e99a344ac7f8d2e8227d7c5cf8c5233fec88ebee1bff13c958f6a1b"
+ },
+ "case_count": 126
+}
