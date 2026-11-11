@@ -30,7 +30,10 @@ class ActorCanonicalizer:
         return self.normalizer.key(name) or ""
 
     def keys(self, names: Iterable[str]) -> frozenset[str]:
-        return frozenset(k for k in (self.key(n) for n in names) if k)
+        """Canonical keys of one actor set. Name variants of one person inside the set count once
+        (``ActorNormalizer.collapse_variants``), then each surface maps to the state it acts for."""
+        surfaces = [s for s in (self.normalizer.surface(n) for n in names) if s]
+        return frozenset(self.normalizer.represents(s) for s in self.normalizer.collapse_variants(surfaces))
 
     def remember(self, name: str) -> None:
         """Record a preferred display spelling (seed names win because they are loaded first)."""

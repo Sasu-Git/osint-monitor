@@ -27,6 +27,18 @@ non_actors:
   - Brexit
   - Location
   - Magnitude
+  # party words, a language name and a rocket that NER tags as actors (Situation-v2 defect set C,
+  # evaluations/actor-hygiene/v2-prereq-20261111/DEFECTS.md); full party names stay organisations
+  - Democrat
+  - Democrats
+  - Democratic
+  - Republican
+  - Republicans
+  - Democratici
+  - English
+  - Chinas Long March
+  - China's Long March
+  - Long March
 
 demonyms:
   Afghan: Afghanistan
@@ -239,6 +251,8 @@ aliases:
   Pentágono: Pentagon
   Pentagono: Pentagon
   Cremlino: Kremlin
+  # full-name variant of a configured person (Situation-v2 defect A8)
+  Donald J. Trump: Trump
 
 # Person / body -> the state it acts for. Situations are country-level, so "Xi met Trump"
 # involves China and the United States. Keep to principals who reliably act for a state;
@@ -295,6 +309,10 @@ represents:
   IRGC: Iran
   Benjamin Netanyahu: Israel
   Netanyahu: Israel
+  # full names only (Situation-v2 defect set B); bare surnames are never aliased globally (owner, 2026-10-16)
+  Emmanuel Macron: France
+  Nayib Bukele: El Salvador
+  J.D. Vance: United States
 
 # Bare names that stand for several people (a family name shared by politicians). Such a mention is not an
 # actor on its own: "Bolsonaro" may be Jair (former president) or Flávio / Eduardo (his sons, politicians), and

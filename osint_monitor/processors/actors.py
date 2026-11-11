@@ -131,6 +131,32 @@ class ActorNormalizer:
     def keys(self, names: Iterable[str]) -> frozenset[str]:
         return frozenset(k for k in (self.key(n) for n in names) if k)
 
+    def collapse_variants(self, surfaces: Iterable[str]) -> list[str]:
+        """Within ONE actor set, a one-word surface that is the last word of exactly one multi-word surface of the
+        same set is that person ({"javier milei", "milei"} -> {"javier milei"}). Set-level only: a bare surname is
+        never aliased globally (owner, 2026-10-16). Two full names with that last word ("jair bolsonaro",
+        "flavio bolsonaro") merge nothing. A configured actor or a place name is never collapsed ("guinea" next to
+        "equatorial guinea" stays two)."""
+        uniq = list(dict.fromkeys(s for s in surfaces if s))
+        multi = [s for s in uniq if len(s.split()) > 1 and not self._is_place(s)]
+        out = []
+        for s in uniq:
+            if len(s.split()) == 1 and s not in self._known and fold(s) not in self._places and not self._is_place(s):
+                full = [m for m in multi if fold(m.split()[-1]) == fold(s)]
+                if len(full) == 1:
+                    out.append(full[0])
+                    continue
+            out.append(s)
+        return list(dict.fromkeys(out))
+
+    def _is_place(self, surface: str) -> bool:
+        """Whether the gazetteer knows this name as a place (country, region, city), prefixes included."""
+        geo = getattr(self, "_geo", None)
+        if geo is None:
+            from osint_monitor.processors.geography import Gazetteer
+            geo = self._geo = Gazetteer.load()
+        return geo.canonical(surface) in geo.known or geo.canonical(fold(surface)) in geo.known
+
     def is_media(self, name: str) -> bool:
         return normalise(clean(name)) in self.media
 
