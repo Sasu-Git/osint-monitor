@@ -36,3 +36,19 @@ def test_stays_unknown(title):
 def test_english_typed_development_never_changes():
     """The fallback runs only when no English rule matched anything in the Development."""
     assert classify("Russia strikes Kharkiv overnight", "Rusia y Ucrania firman un acuerdo") == EventType.MILITARY_ACTION
+
+
+@pytest.mark.parametrize("title,expected", [
+    ("Un hombre hiere a tres personas en un ataque con cuchillo en una estación de Madrid", EventType.SECURITY_INCIDENT),
+    ("Unos lobos atacan a un rebaño de ovejas en los montes de León", EventType.UNKNOWN),          # not military
+    ("La oposición pide la dimisión del ministro de Interior por el escándalo", EventType.SIGNIFICANT_STATEMENT),
+    ("El juez ordena la detención del exministro por el derribo de dos avionetas en 1996", EventType.UNKNOWN),  # legal guard
+])
+def test_strict_guards(title, expected):
+    assert classify(title) == expected
+
+
+def test_one_stray_headline_does_not_type_a_mixed_development():
+    assert classify("Rusia ataca con drones la región de Járkov y mata a cuatro personas",
+                    "El rey visita una exposición de pintura en el museo del Prado de Madrid",
+                    "La selección española gana el partido amistoso contra Italia por dos goles") == EventType.UNKNOWN

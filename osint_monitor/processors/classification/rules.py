@@ -168,11 +168,28 @@ ML_COMMENTARY_TITLE = _rx(
     r"^(?:como|por que|que|perche|come|cosa|quale|chi)\b|\?|\b(?:analisis|opinion|editorial|tribuna|"
     r"analisi|editoriale|commento|portavoz|portavoce)\b")
 ML_TEMPORAL = _rx(
-    r"\b(?:antes|despues|tras|desde|hasta|prima|dopo|fino a)\s+(?:de\s+|di\s+)?"
-    r"(?:(?:la|las|el|los|le|il|lo|gli|delle|degli|della|del)\s+)?(?:elecciones|elezioni|cumbre|vertice|guerra)\b")
+    r"\b(?:antes|despues|tras|desde|hasta|prima|dopo|fino a|a (?:\w+ )?(?:semanas|dias|meses|horas)|"
+    r"a (?:pochi |poche )?(?:giorni|settimane|mesi|ore)|en visperas|alla vigilia|in vista)\s+(?:de\s+|di\s+|da\s+)?"
+    r"(?:(?:la|las|el|los|le|il|lo|gli|delle|degli|della|del|dalle|dal)\s+)?"
+    r"(?:(?:proximas|prossime|nuevas|nuove)\s+)?"
+    r"(?:elecciones|elezioni|comicios|voto|cumbre|vertice|guerra|invasion|invasione)\b")
 ML_HYPOTHETICAL = _rx(
-    r"\b(?:planes? para|posibles?|eventual(?:es)?|futuros?|possibil[ei]|eventual[ei]|futur[oi]|piani? per)\s+"
-    r"(?:atacar|ataques?|ofensiva|attaccare|attacchi|attacco|offensiva)\b")
+    r"\b(?:planes? para|posibles?|eventual(?:es)?|futuros?|cualquier|possibil[ei]|eventual[ei]|futur[oi]|"
+    r"qualsiasi|qualunque|piani? per)\s+(?:\w+\s+)?"
+    r"(?:atacar|ataques?|ofensiva|attaccare|attacchi|attacco|offensiva|incontro|reunion|cumbre|vertice|"
+    r"acuerdo|accordo|negociaciones|negoziati|tregua)\b")
+# "Calls for" (CALLS_FOR): asking for an act is a statement, not the act ("pide la dimisión").
+ML_CALLS_FOR = _rx(
+    r"\b(?:pide|piden|pidio|exige|exigen|reclama|reclaman|insta a|chiede|chiedono|esige|esigono|sollecita|invoca)\b")
+# Legal headlines (COURT_ACTION / JUSTICE_STEP): a court or prosecutor acting is not the act being tried.
+ML_LEGAL = _rx(
+    r"\b(?:juicio|juez|jueza|jueces|tribunal|tribunale|fiscalia|fiscal|orden de (?:detencion|arresto|captura)|"
+    r"mandato d'arresto|processo|procura|procuratore|giudice|condenad[oa]s?|condannat[oi]|sentencia|sentenza|"
+    r"imputad[oa]s?|imputat[oi]|acusad[oa]s?|accusat[oi]|investigacion|inchiesta|indagin[ei])\b")
+ML_SECURITY_OFFENCE = _rx(
+    r"\b(?:terroris\w*|atentado|attentato|tiroteo|sparatoria|hombres armados|uomini armati|pistoleros|"
+    r"sabotaje|sabotaggio|espionaje|spionaggio|espia\w*|spia|spie|yihadis\w*|jihadis\w*|secuestr\w*|"
+    r"rapiment\w*|explosiv\w*|esplosiv\w*|bomba)\b")
 ML_TYPE_RULES: list[tuple[EventType, re.Pattern]] = [
     (EventType.CEASEFIRE, _rx(r"\b(?:alto el fuego|cese el fuego|tregua|cessate il fuoco)\b")),
     (EventType.TREATY, _rx(r"\b(?:tratado|trattato)\b")),
@@ -191,13 +208,27 @@ ML_TYPE_RULES: list[tuple[EventType, re.Pattern]] = [
     (EventType.SANCTIONS, _rx(r"\b(?:sanciones|sanciona|sancionado|sanzioni|sanziona|sanzionato)\b")),
     (EventType.ECONOMIC_ACTION, _rx(r"\b(?:aranceles?|embargo|dazi|controles? a la exportacion)\b")),
     (EventType.MILITARY_EXERCISE, _rx(r"\b(?:ejercicios? militares?|maniobras|esercitazion[ei])\b")),
+    # before military action, as in the English order: non-state violence, sabotage and cyber are security
     (EventType.SECURITY_INCIDENT, _rx(
         r"\b(?:atentado|attentato|tiroteo|sparatoria|apunal\w*|accoltell\w*|ciberataque|attacco informatico|"
-        r"espionaje|spionaggio|hackers?|secuestr\w*|sequestr\w* (?:di persona|lampo))\b")),
+        r"espionaje|spionaggio|hackers?|secuestr\w*|sequestr\w* (?:di persona|lampo)|sabotaje|sabotaggio)\b"
+        r"|\b(?:ataque|ataques|attacco|attacchi|agresion|aggressione) (?:con (?:arma blanca|cuchillo|coltello|"
+        r"machete)|terrorista|yihadista|jihadista|informatico)\b"
+        r"|\b(?:colonos|coloni|hombres armados|uomini armati|pistoleros|un grupo armado|un gruppo armato)\b"
+        r"[^.;]{0,40}\b(?:atac\w*|attacc\w*|mata\w*|uccid\w*|agred\w*|aggred\w*|asalt\w*|assalt\w*)\b")),
+    # military only with a military means or object ("ataca ... con drones"), never a bare "ataque"
     (EventType.MILITARY_ACTION, _rx(
-        r"\b(?:ataca|atacan|ataco|atacaron|atacado|ataque|ataques|bombardea|bombardeo|bombardeos|bombardean|"
-        r"ofensiva|invasion|invade|derriba|derribo|derriban|attacca|attaccano|attacco|attacchi|bombarda|"
-        r"bombardamento|bombardamenti|raid|offensiva|invasione|abbatte|abbattuti|abbattut[oi])\b")),
+        r"\b(?:ataque|ataques|attacco|attacchi|raid|bombardeo|bombardeos|bombardamento|bombardamenti)\s+"
+        r"(?:aereo|aereos|aereo|aerei|con drones?|con misiles?|con cohetes?|con droni|con missili|di droni|"
+        r"de drones?|de misiles?|missilistic\w*|ruso|rusos|russo|russi|israeli|israelies|israeliano|ucraniano|"
+        r"ucraino|militar|militare|de artilleria|di artiglieria)\b"
+        r"|\b(?:ataca|atacan|atacaron|atacado|atacada|ataco|attacca|attaccano|attaccato|bombardea|bombardean|"
+        r"bombarda|bombardano)\b(?:[^.;]|(?<=\d)\.(?=\d)){0,50}\b(?:drones?|misiles?|cohetes?|buques?|barcos?|lanchas?|narcolanchas?|"
+        r"petroleros?|bases?|posiciones|frente|droni|missili|razzi|navi|petroliere|postazioni)\b"
+        r"|\b(?:derriba|derriban|derribo|derribado|abbatte|abbattono|abbattut[oi])\b(?:[^.;]|(?<=\d)\.(?=\d)){0,30}"
+        r"\b(?:drones?|misiles?|aviones?|cazas?|droni|missili|aerei|caccia)\b"
+        r"|\b(?:ofensiva (?:militar|rusa|ucraniana|terrestre)|offensiva (?:militare|russa|ucraina|di terra)|"
+        r"invade|invasion de|invasione de\w*)\b")),
     (EventType.DEPLOYMENT, _rx(r"\b(?:despliega|despliegue|desplegados?|schiera|schieramento|dispiega|dispiegamento)\b"
                                r"|\b(?:envia|invia) (?:tropas|truppe|buques|navi)\b")),
     (EventType.SUMMIT, _rx(r"\b(?:cumbre|vertice)\b")),
@@ -446,10 +477,24 @@ class RuleBasedClassifier:
             if commentary:
                 return EventType.COMMENTARY, commentary.group(0)
         stripped = ML_HYPOTHETICAL.sub(" ", ML_TEMPORAL.sub(" ", t))
+        if headline:
+            calls = ML_CALLS_FOR.search(stripped)
+            if calls:
+                return EventType.SIGNIFICANT_STATEMENT, calls.group(0)   # asking for an act is not the act
+        suppressed: set[EventType] = set()
+        if ML_LEGAL.search(stripped):
+            suppressed |= {EventType.POLICY_CHANGE, EventType.ELECTION, EventType.AGREEMENT, EventType.RESIGNATION,
+                           EventType.MILITARY_ACTION, EventType.DEPLOYMENT}
+            if not ML_SECURITY_OFFENCE.search(stripped):
+                suppressed.add(EventType.SECURITY_INCIDENT)
         for event_type, pattern in ML_TYPE_RULES:
+            if event_type in suppressed:
+                continue
             m = pattern.search(QUOTED.sub(" ", stripped) if event_type in RHETORIC_TYPES else stripped)
             if m:
                 return event_type, m.group(0)
+        if suppressed:
+            return None                       # a legal headline: incidental words must not decide it
         if headline:
             statement = ML_STATEMENT_TITLE.search(stripped)
             if statement:
@@ -464,23 +509,24 @@ class RuleBasedClassifier:
         ml = [i for i in context.items if item_language(i.source_name or None, i.title or "") in ("es", "it")]
         if not ml:
             return None
-        for texts, headline in (([i.title for i in ml], True), ([_lead(i.excerpt) for i in ml], False)):
-            votes = [v for v in (self._match_text_ml(t, headline) for t in texts if t) if v]
-            commentary = sum(1 for t, _ in votes if t == EventType.COMMENTARY)
-            if headline and commentary and commentary * 2 <= len([t for t in texts if t]):
-                votes = [v for v in votes if v[0] != EventType.COMMENTARY]
-            if not votes:
-                continue
-            counts = Counter(t for t, _ in votes)
-            ranked = sorted(counts, key=lambda t: (-counts[t], _PRIORITY[t]))
-            winner = ranked[0]
-            ambiguous = (len(ranked) > 1 and counts[ranked[1]] == counts[winner]
-                         and winner not in RHETORIC_TYPES and ranked[1] not in RHETORIC_TYPES)
-            evidence = next(e for t, e in votes if t == winner) + " [es/it]"
-            if not headline:
-                evidence += " [lead sentence]"
-            return winner, evidence, ambiguous
-        return None
+        # headlines only (lead sentences pull in incidental words), and a type only when at least half of the
+        # Development's es/it headlines agree on it: one stray headline cannot type a mixed Development
+        texts = [i.title for i in ml if (i.title or "").strip()]
+        votes = [v for v in (self._match_text_ml(t, True) for t in texts) if v]
+        commentary = sum(1 for t, _ in votes if t == EventType.COMMENTARY)
+        if commentary and commentary * 2 <= len(texts):
+            votes = [v for v in votes if v[0] != EventType.COMMENTARY]
+        if not votes:
+            return None
+        counts = Counter(t for t, _ in votes)
+        ranked = sorted(counts, key=lambda t: (-counts[t], _PRIORITY[t]))
+        winner = ranked[0]
+        if counts[winner] * 2 < len(texts):
+            return None
+        ambiguous = (len(ranked) > 1 and counts[ranked[1]] == counts[winner]
+                     and winner not in RHETORIC_TYPES and ranked[1] not in RHETORIC_TYPES)
+        evidence = next(e for t, e in votes if t == winner) + f" [es/it {counts[winner]}/{len(texts)} headlines]"
+        return winner, evidence, ambiguous
 
     def _concreteness(
         self,
