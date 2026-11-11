@@ -8,3 +8,5 @@ evaluations/geolocation/iter3-sample/owner-label-history.jsonl text eol=lf
 evaluations/geolocation/iter3-sample/labels-freeze.json text eol=lf
 evaluations/geolocation/iter3-sample/claude-verdicts.json text eol=lf
 evaluations/geolocation/iter3-sample/claude-verdicts-freeze.json text eol=lf
+# Geolocation iteration-3 scoring files (written with LF; hashed in iter3-score/*FREEZE*.md).
+evaluations/geolocation/iter3-score/** text eol=lf

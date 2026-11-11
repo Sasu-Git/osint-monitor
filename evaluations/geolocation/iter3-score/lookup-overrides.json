@@ -1,0 +1,13 @@
+{
+ "note": "Evaluation-local equivalence table for the iteration-3 scoring lookup (FREEZE.md step 3). Applied before DISPUTED_ISO and the web CountryIndex (ab45312). Fixes only names the location module can emit that the frozen lookup maps to no code or to a code other than the entity's own. Rule code, labels, sample, gazetteer and extension unchanged.",
+ "overrides": {
+  "hong kong": "HKG",
+  "macau": "MAC",
+  "south sudan": "SSD"
+ },
+ "reasons": {
+  "hong kong": "rule 5a emits 'hong kong' as its own entity (owner ruling 2026-11-10: Hong Kong stays its own location entity); the lookup filed it under China via the gazetteer, so a correct 5a output scored as CHN",
+  "macau": "same as hong kong (rule 5a's second territory)",
+  "south sudan": "gazetteer country with no country-name match in the web lookup (iteration-2 RESULTS.md, D286 harness limitation)"
+ }
+}
