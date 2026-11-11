@@ -1,0 +1,651 @@
+{
+ "changed": {
+  "4": {
+   "base": [
+    "Houthis",
+    "Islamabad",
+    "Pakistani",
+    "Pakistani",
+    "Riyadh",
+    "Saudi",
+    "Saudi Arabia"
+   ],
+   "cand": [
+    "France",
+    "French",
+    "Houthis",
+    "Islamabad",
+    "Pakistani",
+    "Pakistani",
+    "Riyadh",
+    "Saudi",
+    "Saudi Arabia"
+   ],
+   "base_sit_keys": [
+    "houthis",
+    "pakistan",
+    "saudi arabia"
+   ],
+   "cand_sit_keys": [
+    "france",
+    "houthis",
+    "pakistan",
+    "saudi arabia"
+   ],
+   "split_support_dev": true
+  },
+  "76": {
+   "base": [
+    "Boeing"
+   ],
+   "cand": [
+    "Boeing",
+    "U.S. Air Force"
+   ],
+   "base_sit_keys": [
+    "boeing"
+   ],
+   "cand_sit_keys": [
+    "boeing",
+    "united states"
+   ],
+   "split_support_dev": true
+  },
+  "85": {
+   "base": [
+    "Christa Pike's"
+   ],
+   "cand": [
+    "America",
+    "Christa Pike's"
+   ],
+   "base_sit_keys": [
+    "christa pike"
+   ],
+   "cand_sit_keys": [
+    "christa pike",
+    "united states"
+   ],
+   "split_support_dev": true
+  },
+  "123": {
+   "base": [
+    "North Korea’s",
+    "North Korea’s"
+   ],
+   "cand": [
+    "Kyiv",
+    "North Korea’s",
+    "North Korea’s",
+    "Ukraine",
+    "Ukrainian"
+   ],
+   "base_sit_keys": [
+    "north korea"
+   ],
+   "cand_sit_keys": [
+    "north korea",
+    "ukraine"
+   ],
+   "split_support_dev": true
+  },
+  "132": {
+   "base": [
+    "Iran",
+    "Iran",
+    "Iranian",
+    "Tehran"
+   ],
+   "cand": [
+    "Iran",
+    "Iran",
+    "Iranian",
+    "Tehran",
+    "United Nations"
+   ],
+   "base_sit_keys": [
+    "iran"
+   ],
+   "cand_sit_keys": [
+    "iran",
+    "united nations"
+   ],
+   "split_support_dev": true
+  },
+  "175": {
+   "base": [
+    "Irán",
+    "Teherán"
+   ],
+   "cand": [
+    "Irán",
+    "Teherán",
+    "Trump"
+   ],
+   "base_sit_keys": [
+    "iran"
+   ],
+   "cand_sit_keys": [
+    "iran",
+    "united states"
+   ],
+   "split_support_dev": true
+  },
+  "190": {
+   "base": [
+    "European Union",
+    "Russia",
+    "Russia"
+   ],
+   "cand": [
+    "America",
+    "European Union",
+    "Russia",
+    "Russia"
+   ],
+   "base_sit_keys": [
+    "european union",
+    "russia"
+   ],
+   "cand_sit_keys": [
+    "european union",
+    "russia",
+    "united states"
+   ],
+   "split_support_dev": true
+  },
+  "195": {
+   "base": [],
+   "cand": [
+    "America",
+    "America"
+   ],
+   "base_sit_keys": [],
+   "cand_sit_keys": [
+    "united states"
+   ],
+   "split_support_dev": true
+  },
+  "210": {
+   "base": [
+    "Iran",
+    "Iran",
+    "Irán"
+   ],
+   "cand": [
+    "Donald Trump",
+    "Iran",
+    "Iran",
+    "Irán",
+    "Trump"
+   ],
+   "base_sit_keys": [
+    "iran"
+   ],
+   "cand_sit_keys": [
+    "iran",
+    "united states"
+   ],
+   "split_support_dev": true
+  },
+  "232": {
+   "base": [],
+   "cand": [
+    "Donald Trump",
+    "Trump"
+   ],
+   "base_sit_keys": [],
+   "cand_sit_keys": [
+    "united states"
+   ],
+   "split_support_dev": true
+  },
+  "250": {
+   "base": [
+    "Emmanuel Macron",
+    "Moscow",
+    "Russia",
+    "Russia"
+   ],
+   "cand": [
+    "Emmanuel Macron",
+    "Moscow",
+    "Russia",
+    "Russia",
+    "Volodymyr Zelenskyy"
+   ],
+   "base_sit_keys": [
+    "france",
+    "russia"
+   ],
+   "cand_sit_keys": [
+    "france",
+    "russia",
+    "ukraine"
+   ],
+   "split_support_dev": true
+  },
+  "270": {
+   "base": [
+    "America",
+    "Estados Unidos",
+    "Washington"
+   ],
+   "cand": [
+    "America",
+    "Estados Unidos",
+    "Mosca",
+    "Rusia",
+    "Russia",
+    "Washington"
+   ],
+   "base_sit_keys": [
+    "united states"
+   ],
+   "cand_sit_keys": [
+    "russia",
+    "united states"
+   ],
+   "split_support_dev": false
+  },
+  "322": {
+   "base": [],
+   "cand": [
+    "Russia"
+   ],
+   "base_sit_keys": [],
+   "cand_sit_keys": [
+    "russia"
+   ],
+   "split_support_dev": true
+  },
+  "377": {
+   "base": [],
+   "cand": [
+    "European Union"
+   ],
+   "base_sit_keys": [],
+   "cand_sit_keys": [
+    "european union"
+   ],
+   "split_support_dev": true
+  },
+  "399": {
+   "base": [],
+   "cand": [
+    "Kiev",
+    "Mosca",
+    "Rusia",
+    "Rusia",
+    "Russia",
+    "Russia",
+    "Ucraina",
+    "Ucrania",
+    "Ukraine"
+   ],
+   "base_sit_keys": [],
+   "cand_sit_keys": [
+    "russia",
+    "ukraine"
+   ],
+   "split_support_dev": true
+  },
+  "428": {
+   "base": [],
+   "cand": [
+    "European Union"
+   ],
+   "base_sit_keys": [],
+   "cand_sit_keys": [
+    "european union"
+   ],
+   "split_support_dev": true
+  },
+  "436": {
+   "base": [
+    "Colombia",
+    "Colombia"
+   ],
+   "cand": [
+    "Colombia",
+    "Colombia",
+    "UN Security Council"
+   ],
+   "base_sit_keys": [
+    "colombia"
+   ],
+   "cand_sit_keys": [
+    "colombia",
+    "united nations"
+   ],
+   "split_support_dev": false
+  },
+  "468": {
+   "base": [],
+   "cand": [
+    "United Nations"
+   ],
+   "base_sit_keys": [],
+   "cand_sit_keys": [
+    "united nations"
+   ],
+   "split_support_dev": true
+  },
+  "502": {
+   "base": [],
+   "cand": [
+    "European Union"
+   ],
+   "base_sit_keys": [],
+   "cand_sit_keys": [
+    "european union"
+   ],
+   "split_support_dev": true
+  },
+  "517": {
+   "base": [],
+   "cand": [
+    "European Union"
+   ],
+   "base_sit_keys": [],
+   "cand_sit_keys": [
+    "european union"
+   ],
+   "split_support_dev": true
+  },
+  "538": {
+   "base": [],
+   "cand": [
+    "UN Security Council"
+   ],
+   "base_sit_keys": [],
+   "cand_sit_keys": [
+    "united nations"
+   ],
+   "split_support_dev": false
+  },
+  "607": {
+   "base": [],
+   "cand": [
+    "European Union"
+   ],
+   "base_sit_keys": [],
+   "cand_sit_keys": [
+    "european union"
+   ],
+   "split_support_dev": true
+  },
+  "684": {
+   "base": [],
+   "cand": [
+    "United Nations"
+   ],
+   "base_sit_keys": [],
+   "cand_sit_keys": [
+    "united nations"
+   ],
+   "split_support_dev": true
+  },
+  "782": {
+   "base": [],
+   "cand": [
+    "European Union"
+   ],
+   "base_sit_keys": [],
+   "cand_sit_keys": [
+    "european union"
+   ],
+   "split_support_dev": true
+  },
+  "786": {
+   "base": [
+    "Kiev",
+    "Kyiv",
+    "Kyiv",
+    "Ucrania",
+    "Ukraine",
+    "Ukraine"
+   ],
+   "cand": [
+    "Donald Trump",
+    "Kiev",
+    "Kyiv",
+    "Kyiv",
+    "Trump",
+    "Ucrania",
+    "Ukraine",
+    "Ukraine"
+   ],
+   "base_sit_keys": [
+    "ukraine"
+   ],
+   "cand_sit_keys": [
+    "ukraine",
+    "united states"
+   ],
+   "split_support_dev": true
+  },
+  "811": {
+   "base": [
+    "Germany",
+    "Germany",
+    "Moscow",
+    "Russia",
+    "Russia"
+   ],
+   "cand": [
+    "America",
+    "Germany",
+    "Germany",
+    "Moscow",
+    "Russia",
+    "Russia"
+   ],
+   "base_sit_keys": [
+    "germany",
+    "russia"
+   ],
+   "cand_sit_keys": [
+    "germany",
+    "russia",
+    "united states"
+   ],
+   "split_support_dev": true
+  },
+  "839": {
+   "base": [
+    "J.D. Vance"
+   ],
+   "cand": [
+    "J.D. Vance",
+    "Trump"
+   ],
+   "base_sit_keys": [
+    "united states"
+   ],
+   "cand_sit_keys": [
+    "united states"
+   ],
+   "split_support_dev": true
+  },
+  "845": {
+   "base": [],
+   "cand": [
+    "China",
+    "China"
+   ],
+   "base_sit_keys": [],
+   "cand_sit_keys": [
+    "china"
+   ],
+   "split_support_dev": true
+  },
+  "986": {
+   "base": [
+    "Ex-FBI"
+   ],
+   "cand": [
+    "EE. UU.",
+    "Ex-FBI"
+   ],
+   "base_sit_keys": [
+    "ex-fbi"
+   ],
+   "cand_sit_keys": [
+    "ex-fbi",
+    "united states"
+   ],
+   "split_support_dev": true
+  },
+  "996": {
+   "base": [
+    "Vladimir Putin"
+   ],
+   "cand": [
+    "Mosca",
+    "Moscow",
+    "Rusia",
+    "Russia",
+    "Russia",
+    "Vladimir Putin"
+   ],
+   "base_sit_keys": [
+    "russia"
+   ],
+   "cand_sit_keys": [
+    "russia"
+   ],
+   "split_support_dev": true
+  },
+  "1051": {
+   "base": [
+    "Canada"
+   ],
+   "cand": [
+    "Canada",
+    "European Union"
+   ],
+   "base_sit_keys": [
+    "canada"
+   ],
+   "cand_sit_keys": [
+    "canada",
+    "european union"
+   ],
+   "split_support_dev": false
+  },
+  "1114": {
+   "base": [],
+   "cand": [
+    "America",
+    "America"
+   ],
+   "base_sit_keys": [],
+   "cand_sit_keys": [
+    "united states"
+   ],
+   "split_support_dev": true
+  },
+  "1146": {
+   "base": [
+    "Marco Rubio"
+   ],
+   "cand": [
+    "Marco Rubio",
+    "Russia"
+   ],
+   "base_sit_keys": [
+    "united states"
+   ],
+   "cand_sit_keys": [
+    "russia",
+    "united states"
+   ],
+   "split_support_dev": true
+  },
+  "1153": {
+   "base": [],
+   "cand": [
+    "Russia"
+   ],
+   "base_sit_keys": [],
+   "cand_sit_keys": [
+    "russia"
+   ],
+   "split_support_dev": true
+  }
+ },
+ "unexplained": {
+  "270": {
+   "base": [
+    "America",
+    "Estados Unidos",
+    "Washington"
+   ],
+   "cand": [
+    "America",
+    "Estados Unidos",
+    "Mosca",
+    "Rusia",
+    "Russia",
+    "Washington"
+   ],
+   "base_sit_keys": [
+    "united states"
+   ],
+   "cand_sit_keys": [
+    "russia",
+    "united states"
+   ],
+   "split_support_dev": false
+  },
+  "436": {
+   "base": [
+    "Colombia",
+    "Colombia"
+   ],
+   "cand": [
+    "Colombia",
+    "Colombia",
+    "UN Security Council"
+   ],
+   "base_sit_keys": [
+    "colombia"
+   ],
+   "cand_sit_keys": [
+    "colombia",
+    "united nations"
+   ],
+   "split_support_dev": false
+  },
+  "538": {
+   "base": [],
+   "cand": [
+    "UN Security Council"
+   ],
+   "base_sit_keys": [],
+   "cand_sit_keys": [
+    "united nations"
+   ],
+   "split_support_dev": false
+  },
+  "1051": {
+   "base": [
+    "Canada"
+   ],
+   "cand": [
+    "Canada",
+    "European Union"
+   ],
+   "base_sit_keys": [
+    "canada"
+   ],
+   "cand_sit_keys": [
+    "canada",
+    "european union"
+   ],
+   "split_support_dev": false
+  }
+ },
+ "lost_principals": {}
+}
