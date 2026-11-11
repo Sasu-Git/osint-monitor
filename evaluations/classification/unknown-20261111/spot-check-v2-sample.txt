@@ -1,0 +1,102 @@
+seed 20261112; newly typed 38; excluded already-reviewed 8; pool 30; sample 30
+D146 significant_statement | matched 'dice [es/it 1/2 headlines]'
+     El presidente de Cornell dice que la universidad "debe hacer más" tras la denuncia de violación en grupo en una fraternidad
+     Universidad de Cornell respalda investigación independiente por caso de violación grupal
+D148 election | matched 'ballottaggio [es/it 6/12 headlines]'
+     Media, Lula e Bolsonaro andranno al ballottaggio il 25 ottobre
+     Urne aperte in Brasile per le elezioni presidenziali e legislative, sfida Lula-Bolsonaro
+     Brasile, Bolsonaro vince al primo turno con 47%, Lula al 45%: ballottaggio il 25 ottobre
+     No es solo la Presidencia: la derecha se consolida en el Congreso de Brasil y potencia a Bolsonaro
+D213 military_action | matched 'ataque con drones [es/it 1/2 headlines]'
+     Hundido un carguero en un ataque con drones frente a las costas de Bulgaria en el mar Negro
+     Dos barcos comerciales son atacados por drones en el mar Negro
+D226 security_incident | matched 'spionaggio [es/it 2/2 headlines]'
+     Germania, arrestato per sospetto spionaggio l'ex capo dell'intelligence
+     Germania, arrestato ex capo dei servizi segreti per spionaggio e tradimento
+D230 security_incident | matched 'ataque con cuchillo [es/it 1/2 headlines]'
+     Directo Latam y el ataque con cuchillo en una escuela de México
+     Cómo se transforman las escuelas militarizadas en México, prohibidas tras la muerte de una joven de 13 años
+D238 military_action | matched 'ofensiva rusa [es/it 1/2 headlines]'
+     Un guardia fronterizo moldavo herido por un proyectil ruso en un ataque en un paso con Ucrania
+     Ucrania instala redes antidrones en Kiev por primera vez para blindarse ante la ofensiva rusa
+D271 military_action | matched 'raid russi [es/it 4/8 headlines]'
+     Fonti Nato, il Comitato Militare alleato in visita a Kiev
+     Ucraina, russi colpiscono un ponte sul Dnipro a Zaporizhzhia. La Romania fa decollare due F-18
+     Relations with Ukraine
+     Eurocamera, 'relazioni con Cina a un punto critico, politica tuteli interessi Ue'
+D391 election | matched 'elecciones [es/it 1/2 headlines]'
+     Condenado a cadena perpetua un palestino por la muerte de un soldado israelí en una operación en Cisjordania
+     La Autoridad Palestina aplaza las elecciones legislativas previstas para noviembre
+D434 ceasefire | matched 'tregua [es/it 1/2 headlines]'
+     Riad vuole una tregua con gli Houthi prima del vertice degli investitori
+     Dal forum sul petrolio a Riad: "Sicurezza energetica non garantita"
+D560 security_incident | matched 'espionaje [es/it 2/2 headlines]'
+     La primera ministra de Japón niega que el periodista detenido en Rusia realizara labores de espionaje
+     Rusia encarcela a un periodista japonés bajo el pretexto de supuesto espionaje
+D561 military_action | matched 'attacco russo [es/it 1/2 headlines]'
+     Zelensky, 'in corso attacco russo, Mosca sfrutta nostri problemi con Starlink'
+     Mosca rivendica nuovi raid sull'Ucraina
+D570 significant_statement | matched 'annuncia [es/it 2/2 headlines]'
+     L'Uruguay annuncia un polo di data center da 5,7 miliardi di dollari
+     La española Solaria anuncia una inversión de 5.000 millones de euros en Uruguay para centros de datos
+D584 military_action | matched 'ataques con drones [es/it 2/3 headlines]'
+     El capitán de un buque en aguas territoriales rumanas en el mar Negro alerta de un ataque con dron
+     Ataques con drones contra buques mercantes agravan la tensión en el mar Negro
+     La OTAN abordará la semana que viene los ataques con drones a buques en el mar Negro
+D606 sanctions | matched 'sanzioni [es/it 1/2 headlines]'; sanctions mentioned but not reported as imposed
+     Il premier della Finlandia, 'l'intesa di Trump sul diesel con Putin non ha logica'
+     Trump valuta di ridurre le sanzioni sulla «flotta ombra» che trasporta petrolio
+D609 security_incident | matched 'sparatoria [es/it 7/9 headlines]'
+     Cinque morti nella sparatoria in Oregon, killer è un sedicenne
+     Un tiroteo en una escuela de EEUU deja al menos tres niños y un adulto muertos, además del tirador
+     Al menos 3 niños y un adulto mueren en un tiroteo en una escuela primaria de Oregón, según medios en EE.UU.
+     EE. UU.: varias víctimas, incluidos niños, en un tiroteo en una escuela primaria de Oregon
+D645 appointment | matched 'nombra [es/it 1/2 headlines]'
+     Mohamed VI toma juramento al nuevo gobierno de la primera ministra Fátima el Mansuri
+     Fátima Mansouri nombra nuevo Gobierno en Marruecos con el jefe del fútbol al frente de Economía
+D661 security_incident | matched 'colonos israelies ataca [es/it 2/2 headlines]'
+     Un grupo de colonos israelíes ataca a una comitiva de diplomáticos europeos en Cisjordania
+     Colonos israelíes atacan en Taybeh a agricultores palestinos y una comitiva de diplomáticos europeos
+D673 significant_statement | matched 'chiedono [es/it 1/2 headlines]'
+     I sindaci di Parigi, Marsiglia e Lione chiedono un incontro col premier
+     A Lione saccheggiato e dato alle fiamme l’ufficio del turismo. Il video dell’assalto
+D764 military_action | matched 'ataques con drones [es/it 2/2 headlines]'
+     La OTAN reforzará con más medios su presencia en el mar Negro tras el incremento de ataques con drones
+     La OTAN reforzará su presencia en el mar Negro tras los últimos ataques con drones
+D807 ceasefire | matched 'tregua [es/it 1/2 headlines]'
+     Papa Leone XIV telefona a Zelensky per Oleshky: ci sia tregua umanitaria
+     Impresionante baño de multitudes en la primera audiencia general del Papa León XIV después de su cirugía
+D814 significant_statement | matched 'pide [es/it 1/2 headlines]'
+     "Me cambió la voz": Selena Gomez revela cómo vapear nicotina la afectó y pide a sus fans que no lo hagan
+     "Che, dicen que no me que querés más... ¡Ja!", Milei subió un video hablando con el líder de Vox, Santiago Abascal, y se burl
+D895 significant_statement | matched 'dice [es/it 2/2 headlines]'
+     Meghan Markle dice que fue informada en 2018 de las "inquietantes acusaciones" contra su padre por presunta posesión de imáge
+     Hallan imágenes pedofilia en la casa del padre de Meghan Markle: la duquesa afirma que fue informada de las "inquietantes acu
+D915 bilateral_meeting | matched 'se reune [es/it 1/2 headlines]'
+     Delcy Rodríguez se reúne en Miraflores con la jefa negociadora de la oposición
+     Los temores de un ex secretario del Tesoro: "En seis décadas de vida pública, jamás pensé que escribiría este artículo"
+D967 significant_statement | matched 'chiede [es/it 2/2 headlines]'
+     Liberman chiede a procura un'inchiesta per tradimento contro Netanyahu
+     El opositor israelí Avigdor Liberman pide a la Fiscalía investigar a Netanyahu por "traición"
+D984 significant_statement | matched 'chiedono [es/it 1/2 headlines]'
+     Dem pubblicano testimonianza shock, 'Trump mi violentò brutalmente nel '93'
+     «Cinque donne accusano Trump di abusi sessuali», Dem chiedono procuratore speciale su Epstein
+D1070 significant_statement | matched 'chiede [es/it 1/2 headlines]'
+     Caetano Veloso chiede un risarcimento per gli insulti ricevuti in campagna elettorale
+     Soccorritori al lavoro tutta la notte sul luogo dello scontro tra i treni in Spagna
+D1071 military_action | matched 'derriba mas de 1.200 drones [es/it 1/2 headlines]'
+     Rusia derriba más de 1.200 drones de Ucrania, la cifra más alta en una sola noche desde el inicio de la guerra
+     Una nueva era de guerra: un helicóptero estadounidense de 9 toneladas contra un dron
+D1079 security_incident | matched 'sabotaje [es/it 1/2 headlines]'
+     Detenidos en Alemania dos hombres acusados de planear actos de sabotaje en nombre de Rusia
+     Alemania detiene a dos ciudadanos bielorrusos sospechosos de sabotajes por encargo de Rusia
+D1131 election | matched 'elezioni [es/it 4/8 headlines]'
+     El Papa pide las papeletas para votar por correo en las elecciones de Estados Unidos
+     Papa Leone ha votato per posta alle elezioni di metà mandato
+     León XIV participó por correo en las elecciones de medio término de Estados Unidos
+     Usa, tutto quello che c'è da sapere sulle elezioni di midterm: perché, come, per chi e cosa si vota
+D1157 security_incident | matched 'sparatoria [es/it 3/5 headlines]'
+     Sparatoria in un negozio di articoli per Halloween in California, un morto e 6 feriti
+     California: sparatoria in un negozio di articoli per Halloween, un morto e 6 feriti
+     EE.UU.: un muerto y seis heridos en un tiroteo en la mayor cadena de ventas de artículos de Halloween
+     Halloween di sangue in Texas, 4 morti e 15 feriti in tre sparatorie a Dallas
