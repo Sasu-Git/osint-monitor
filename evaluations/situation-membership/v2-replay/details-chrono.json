@@ -1,0 +1,1613 @@
+{
+ "rule": "situation-v2 candidate, chronological replay, CONTRACT-V2-R2 (bf57ed7) + seeded-scopes v1",
+ "cases": {
+  "S001": {
+   "development_id": 750,
+   "situation": "eu-china-trade",
+   "counterparts": [
+    "eu-china-trade"
+   ],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "GENERIC_ANCHOR_ONLY"
+  },
+  "S003": {
+   "development_id": 1145,
+   "situation": "russia-united-states",
+   "counterparts": [
+    "russia-united_states:diplomacy"
+   ],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_SCOPE_SIGNAL"
+  },
+  "S006": {
+   "development_id": 760,
+   "situation": "javier-milei-milei",
+   "counterparts": [],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_COUNTERPART"
+  },
+  "S008": {
+   "development_id": 453,
+   "situation": "israel-palestine",
+   "counterparts": [],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_COUNTERPART"
+  },
+  "S009": {
+   "development_id": 188,
+   "situation": "china-united-states",
+   "counterparts": [
+    "china-united_states:diplomacy",
+    "china-united_states:economic"
+   ],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "GENERIC_ANCHOR_ONLY"
+  },
+  "S013": {
+   "development_id": 982,
+   "situation": "france-pope",
+   "counterparts": [],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_COUNTERPART"
+  },
+  "S016": {
+   "development_id": 633,
+   "situation": "gaza-ceasefire",
+   "counterparts": [
+    "gaza-ceasefire"
+   ],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "LOW_COVERAGE"
+  },
+  "S022": {
+   "development_id": 64,
+   "situation": "russia-ukraine-war",
+   "counterparts": [
+    "russia-ukraine-war"
+   ],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_SHARED_ACTORS"
+  },
+  "S023": {
+   "development_id": 501,
+   "situation": "bukele-el-salvador-nayib-bukele",
+   "counterparts": [],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_COUNTERPART"
+  },
+  "S024": {
+   "development_id": 31,
+   "situation": "us-iran",
+   "counterparts": [
+    "us-iran"
+   ],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "LOW_COVERAGE"
+  },
+  "S027": {
+   "development_id": 775,
+   "situation": "nato-russia",
+   "counterparts": [],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_COUNTERPART"
+  },
+  "S028": {
+   "development_id": 720,
+   "situation": "russia-ukraine-war",
+   "counterparts": [
+    "russia-ukraine-war"
+   ],
+   "assigned": "russia-ukraine-war",
+   "outcome": "MEMBER",
+   "reason": "ASSIGNED"
+  },
+  "S030": {
+   "development_id": 221,
+   "situation": "nato-russia",
+   "counterparts": [],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_COUNTERPART"
+  },
+  "S033": {
+   "development_id": 297,
+   "situation": "eritrea-ethiopia",
+   "counterparts": [],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_COUNTERPART"
+  },
+  "S037": {
+   "development_id": 214,
+   "situation": "russia-ukraine-war",
+   "counterparts": [
+    "russia-ukraine-war"
+   ],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_SCOPE_SIGNAL"
+  },
+  "S042": {
+   "development_id": 754,
+   "situation": "donald-j-trump-united-states",
+   "counterparts": [],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_COUNTERPART"
+  },
+  "S043": {
+   "development_id": 6,
+   "situation": "china-taiwan",
+   "counterparts": [],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_COUNTERPART"
+  },
+  "S045": {
+   "development_id": 449,
+   "situation": "russia-ukraine-war",
+   "counterparts": [
+    "russia-ukraine-war"
+   ],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_PRINCIPALS"
+  },
+  "S049": {
+   "development_id": 99,
+   "situation": "russia-ukraine-war",
+   "counterparts": [
+    "russia-ukraine-war"
+   ],
+   "assigned": "russia-ukraine-war",
+   "outcome": "MEMBER",
+   "reason": "ASSIGNED"
+  },
+  "S050": {
+   "development_id": 1086,
+   "situation": "russia-ukraine-war",
+   "counterparts": [
+    "russia-ukraine-war"
+   ],
+   "assigned": "russia-ukraine-war",
+   "outcome": "MEMBER",
+   "reason": "ASSIGNED"
+  },
+  "S051": {
+   "development_id": 124,
+   "situation": "russia-ukraine-war",
+   "counterparts": [
+    "russia-ukraine-war"
+   ],
+   "assigned": "russia-ukraine-war",
+   "outcome": "MEMBER",
+   "reason": "ASSIGNED"
+  },
+  "S054": {
+   "development_id": 1010,
+   "situation": "russia-united-states",
+   "counterparts": [
+    "russia-united_states:diplomacy"
+   ],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_SCOPE_SIGNAL"
+  },
+  "S055": {
+   "development_id": 1066,
+   "situation": "international-criminal-court-united-states",
+   "counterparts": [],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_COUNTERPART"
+  },
+  "S056": {
+   "development_id": 351,
+   "situation": "donald-j-trump-united-states",
+   "counterparts": [],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_COUNTERPART"
+  },
+  "S060": {
+   "development_id": 564,
+   "situation": "eu-china-trade",
+   "counterparts": [
+    "eu-china-trade"
+   ],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "GENERIC_ANCHOR_ONLY"
+  },
+  "S062": {
+   "development_id": 618,
+   "situation": "us-iran",
+   "counterparts": [
+    "us-iran"
+   ],
+   "assigned": "us-iran",
+   "outcome": "MEMBER",
+   "reason": "ASSIGNED"
+  },
+  "S066": {
+   "development_id": 87,
+   "situation": "china-taiwan",
+   "counterparts": [],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_COUNTERPART"
+  },
+  "S067": {
+   "development_id": 283,
+   "situation": "international-criminal-court-united-states",
+   "counterparts": [],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_COUNTERPART"
+  },
+  "S068": {
+   "development_id": 303,
+   "situation": "russia-ukraine-war",
+   "counterparts": [
+    "russia-ukraine-war"
+   ],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "GENERIC_ANCHOR_ONLY"
+  },
+  "S074": {
+   "development_id": 619,
+   "situation": "javier-milei-milei",
+   "counterparts": [],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_COUNTERPART"
+  },
+  "S078": {
+   "development_id": 2,
+   "situation": "china-united-states",
+   "counterparts": [
+    "china-united_states:diplomacy",
+    "china-united_states:economic"
+   ],
+   "assigned": "china-united_states:diplomacy",
+   "outcome": "MEMBER",
+   "reason": "ASSIGNED"
+  },
+  "S079": {
+   "development_id": 916,
+   "situation": "china-united-states",
+   "counterparts": [
+    "china-united_states:diplomacy",
+    "china-united_states:economic"
+   ],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "GENERIC_ANCHOR_ONLY"
+  },
+  "S080": {
+   "development_id": 12,
+   "situation": "russia-ukraine-war",
+   "counterparts": [
+    "russia-ukraine-war"
+   ],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "GENERIC_ANCHOR_ONLY"
+  },
+  "S086": {
+   "development_id": 287,
+   "situation": "european-union-russia",
+   "counterparts": [],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_COUNTERPART"
+  },
+  "S087": {
+   "development_id": 255,
+   "situation": "canada-european-union",
+   "counterparts": [],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_COUNTERPART"
+  },
+  "S090": {
+   "development_id": 947,
+   "situation": "china-chinas-long-march",
+   "counterparts": [],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_COUNTERPART"
+  },
+  "S093": {
+   "development_id": 1155,
+   "situation": "france-pope",
+   "counterparts": [],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_COUNTERPART"
+  },
+  "S096": {
+   "development_id": 402,
+   "situation": "rachel-simon",
+   "counterparts": [],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_COUNTERPART"
+  },
+  "S101": {
+   "development_id": 395,
+   "situation": "russia-united-states",
+   "counterparts": [
+    "russia-united_states:diplomacy"
+   ],
+   "assigned": "russia-united_states:diplomacy",
+   "outcome": "MEMBER",
+   "reason": "ASSIGNED"
+  },
+  "S105": {
+   "development_id": 1072,
+   "situation": "eritrea-ethiopia",
+   "counterparts": [],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_COUNTERPART"
+  },
+  "S107": {
+   "development_id": 666,
+   "situation": "china-chinas-long-march",
+   "counterparts": [],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_COUNTERPART"
+  },
+  "S119": {
+   "development_id": 366,
+   "situation": "eu-china-trade",
+   "counterparts": [
+    "eu-china-trade"
+   ],
+   "assigned": "eu-china-trade",
+   "outcome": "MEMBER",
+   "reason": "ASSIGNED"
+  },
+  "S121": {
+   "development_id": 1193,
+   "situation": "china-united-states",
+   "counterparts": [
+    "china-united_states:diplomacy",
+    "china-united_states:economic"
+   ],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "GENERIC_ANCHOR_ONLY"
+  },
+  "S130": {
+   "development_id": 524,
+   "situation": "russia-ukraine-war",
+   "counterparts": [
+    "russia-ukraine-war"
+   ],
+   "assigned": "russia-ukraine-war",
+   "outcome": "MEMBER",
+   "reason": "ASSIGNED"
+  },
+  "S132": {
+   "development_id": 1060,
+   "situation": "us-iran",
+   "counterparts": [
+    "us-iran"
+   ],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "GENERIC_ANCHOR_ONLY"
+  },
+  "S134": {
+   "development_id": 841,
+   "situation": "machado-maria-corina-machado",
+   "counterparts": [],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_COUNTERPART"
+  },
+  "S137": {
+   "development_id": 9,
+   "situation": "eritrea-ethiopia",
+   "counterparts": [],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_COUNTERPART"
+  },
+  "S138": {
+   "development_id": 409,
+   "situation": "canada-european-union",
+   "counterparts": [],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_COUNTERPART"
+  },
+  "S140": {
+   "development_id": 320,
+   "situation": "elon-musk-musk",
+   "counterparts": [],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_COUNTERPART"
+  },
+  "S141": {
+   "development_id": 156,
+   "situation": "canada-european-union",
+   "counterparts": [],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_COUNTERPART"
+  },
+  "S145": {
+   "development_id": 104,
+   "situation": "democrat-united-states",
+   "counterparts": [],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_COUNTERPART"
+  },
+  "S149": {
+   "development_id": 679,
+   "situation": "israel-palestine",
+   "counterparts": [],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_COUNTERPART"
+  },
+  "S150": {
+   "development_id": 948,
+   "situation": "israel-palestine",
+   "counterparts": [],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_COUNTERPART"
+  },
+  "S152": {
+   "development_id": 156,
+   "situation": "eu-china-trade",
+   "counterparts": [
+    "eu-china-trade"
+   ],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "GENERIC_ANCHOR_ONLY"
+  },
+  "S154": {
+   "development_id": 840,
+   "situation": "israel-palestine",
+   "counterparts": [],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_COUNTERPART"
+  },
+  "S155": {
+   "development_id": 509,
+   "situation": "european-union-russia",
+   "counterparts": [],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_COUNTERPART"
+  },
+  "S157": {
+   "development_id": 447,
+   "situation": "elon-musk-musk",
+   "counterparts": [],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_COUNTERPART"
+  },
+  "S158": {
+   "development_id": 565,
+   "situation": "nato-russia",
+   "counterparts": [],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_COUNTERPART"
+  },
+  "S159": {
+   "development_id": 1040,
+   "situation": "mexico-united-states",
+   "counterparts": [],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_COUNTERPART"
+  },
+  "S162": {
+   "development_id": 1170,
+   "situation": "china-taiwan",
+   "counterparts": [],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_COUNTERPART"
+  },
+  "S166": {
+   "development_id": 49,
+   "situation": "china-united-states",
+   "counterparts": [
+    "china-united_states:diplomacy",
+    "china-united_states:economic"
+   ],
+   "assigned": "china-united_states:diplomacy",
+   "outcome": "MEMBER",
+   "reason": "ASSIGNED"
+  },
+  "S168": {
+   "development_id": 43,
+   "situation": "mexico-united-states",
+   "counterparts": [],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_COUNTERPART"
+  },
+  "S169": {
+   "development_id": 254,
+   "situation": "christa-pike-pike",
+   "counterparts": [],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_COUNTERPART"
+  },
+  "S176": {
+   "development_id": 901,
+   "situation": "russia-united-states",
+   "counterparts": [
+    "russia-united_states:diplomacy"
+   ],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "GENERIC_ANCHOR_ONLY"
+  },
+  "S177": {
+   "development_id": 880,
+   "situation": "russia-ukraine-war",
+   "counterparts": [
+    "russia-ukraine-war"
+   ],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_SCOPE_SIGNAL"
+  },
+  "S185": {
+   "development_id": 1135,
+   "situation": "christa-pike-pike",
+   "counterparts": [],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_COUNTERPART"
+  },
+  "S195": {
+   "development_id": 800,
+   "situation": "russia-united-states",
+   "counterparts": [
+    "russia-united_states:diplomacy"
+   ],
+   "assigned": "russia-ukraine-war",
+   "outcome": "OTHER_SITUATION",
+   "reason": "ASSIGNED_ELSEWHERE:russia-ukraine-war"
+  },
+  "S199": {
+   "development_id": 1089,
+   "situation": "afghanistan-taliban",
+   "counterparts": [],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_COUNTERPART"
+  },
+  "S200": {
+   "development_id": 1168,
+   "situation": "gaza-ceasefire",
+   "counterparts": [
+    "gaza-ceasefire"
+   ],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "LOW_COVERAGE"
+  },
+  "S205": {
+   "development_id": 1138,
+   "situation": "russia-united-states",
+   "counterparts": [
+    "russia-united_states:diplomacy"
+   ],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_SHARED_ACTORS"
+  },
+  "S207": {
+   "development_id": 84,
+   "situation": "russia-ukraine-war",
+   "counterparts": [
+    "russia-ukraine-war"
+   ],
+   "assigned": "russia-ukraine-war",
+   "outcome": "MEMBER",
+   "reason": "ASSIGNED"
+  },
+  "S208": {
+   "development_id": 386,
+   "situation": "us-iran",
+   "counterparts": [
+    "us-iran"
+   ],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "GENERIC_ANCHOR_ONLY"
+  },
+  "S209": {
+   "development_id": 604,
+   "situation": "gaza-ceasefire",
+   "counterparts": [
+    "gaza-ceasefire"
+   ],
+   "assigned": null,
+   "outcome": "PENDING",
+   "reason": "PENDING_ATTRIBUTION"
+  },
+  "S213": {
+   "development_id": 39,
+   "situation": "china-united-states",
+   "counterparts": [
+    "china-united_states:diplomacy",
+    "china-united_states:economic"
+   ],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "GENERIC_ANCHOR_ONLY"
+  },
+  "S221": {
+   "development_id": 417,
+   "situation": "russia-ukraine-war",
+   "counterparts": [
+    "russia-ukraine-war"
+   ],
+   "assigned": "russia-ukraine-war",
+   "outcome": "MEMBER",
+   "reason": "ASSIGNED"
+  },
+  "S222": {
+   "development_id": 944,
+   "situation": "donald-j-trump-united-states",
+   "counterparts": [],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_COUNTERPART"
+  },
+  "S233": {
+   "development_id": 802,
+   "situation": "russia-united-states",
+   "counterparts": [
+    "russia-united_states:diplomacy"
+   ],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_SCOPE_SIGNAL"
+  },
+  "S237": {
+   "development_id": 45,
+   "situation": "us-iran",
+   "counterparts": [
+    "us-iran"
+   ],
+   "assigned": "us-iran",
+   "outcome": "MEMBER",
+   "reason": "ASSIGNED"
+  },
+  "S238": {
+   "development_id": 954,
+   "situation": "machado-maria-corina-machado",
+   "counterparts": [],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_COUNTERPART"
+  },
+  "S243": {
+   "development_id": 497,
+   "situation": "china-united-states",
+   "counterparts": [
+    "china-united_states:diplomacy",
+    "china-united_states:economic"
+   ],
+   "assigned": "china-united_states:economic",
+   "outcome": "MEMBER",
+   "reason": "ASSIGNED"
+  },
+  "S248": {
+   "development_id": 341,
+   "situation": "european-union-russia",
+   "counterparts": [],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_COUNTERPART"
+  },
+  "S251": {
+   "development_id": 121,
+   "situation": "russia-united-states",
+   "counterparts": [
+    "russia-united_states:diplomacy"
+   ],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "GENERIC_ANCHOR_ONLY"
+  },
+  "S256": {
+   "development_id": 40,
+   "situation": "russia-ukraine-war",
+   "counterparts": [
+    "russia-ukraine-war"
+   ],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "LOW_COVERAGE"
+  },
+  "S262": {
+   "development_id": 257,
+   "situation": "israel-palestine",
+   "counterparts": [],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_COUNTERPART"
+  },
+  "S267": {
+   "development_id": 1,
+   "situation": "china-united-states",
+   "counterparts": [
+    "china-united_states:diplomacy",
+    "china-united_states:economic"
+   ],
+   "assigned": "china-united_states:diplomacy",
+   "outcome": "MEMBER",
+   "reason": "ASSIGNED"
+  },
+  "S268": {
+   "development_id": 1181,
+   "situation": "afghanistan-taliban",
+   "counterparts": [],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_COUNTERPART"
+  },
+  "S269": {
+   "development_id": 1161,
+   "situation": "us-iran",
+   "counterparts": [
+    "us-iran"
+   ],
+   "assigned": "us-iran",
+   "outcome": "MEMBER",
+   "reason": "ASSIGNED"
+  },
+  "S271": {
+   "development_id": 429,
+   "situation": "rachel-simon",
+   "counterparts": [],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_COUNTERPART"
+  },
+  "S273": {
+   "development_id": 810,
+   "situation": "russia-ukraine-war",
+   "counterparts": [
+    "russia-ukraine-war"
+   ],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "GENERIC_ANCHOR_ONLY"
+  },
+  "S274": {
+   "development_id": 542,
+   "situation": "china-united-states",
+   "counterparts": [
+    "china-united_states:diplomacy",
+    "china-united_states:economic"
+   ],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "OUT_OF_SCOPE_DOMAIN"
+  },
+  "S275": {
+   "development_id": 439,
+   "situation": "russia-united-states",
+   "counterparts": [
+    "russia-united_states:diplomacy"
+   ],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_PRINCIPALS"
+  },
+  "S276": {
+   "development_id": 884,
+   "situation": "russia-united-states",
+   "counterparts": [
+    "russia-united_states:diplomacy"
+   ],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "OUT_OF_SCOPE_DOMAIN"
+  },
+  "S279": {
+   "development_id": 513,
+   "situation": "israel-palestine",
+   "counterparts": [],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_COUNTERPART"
+  },
+  "S292": {
+   "development_id": 1000,
+   "situation": "sudan-civil-war",
+   "counterparts": [
+    "sudan-civil-war"
+   ],
+   "assigned": "sudan-civil-war",
+   "outcome": "MEMBER",
+   "reason": "ASSIGNED"
+  },
+  "S293": {
+   "development_id": 737,
+   "situation": "china-united-states",
+   "counterparts": [
+    "china-united_states:diplomacy",
+    "china-united_states:economic"
+   ],
+   "assigned": "china-united_states:economic",
+   "outcome": "MEMBER",
+   "reason": "ASSIGNED"
+  },
+  "S295": {
+   "development_id": 1125,
+   "situation": "russia-ukraine-war",
+   "counterparts": [
+    "russia-ukraine-war"
+   ],
+   "assigned": "russia-ukraine-war",
+   "outcome": "MEMBER",
+   "reason": "ASSIGNED"
+  },
+  "S297": {
+   "development_id": 387,
+   "situation": "russia-united-states",
+   "counterparts": [
+    "russia-united_states:diplomacy"
+   ],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "OUT_OF_SCOPE_DOMAIN"
+  },
+  "S299": {
+   "development_id": 65,
+   "situation": "gaza-ceasefire",
+   "counterparts": [
+    "gaza-ceasefire"
+   ],
+   "assigned": "gaza-ceasefire",
+   "outcome": "MEMBER",
+   "reason": "ASSIGNED"
+  },
+  "S300": {
+   "development_id": 710,
+   "situation": "russia-united-states",
+   "counterparts": [
+    "russia-united_states:diplomacy"
+   ],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "GENERIC_ANCHOR_ONLY"
+  },
+  "S301": {
+   "development_id": 837,
+   "situation": "bukele-el-salvador-nayib-bukele",
+   "counterparts": [],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_COUNTERPART"
+  },
+  "S302": {
+   "development_id": 973,
+   "situation": "emmanuel-macron-france-macron",
+   "counterparts": [],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_COUNTERPART"
+  },
+  "S306": {
+   "development_id": 526,
+   "situation": "malaysia-singapore",
+   "counterparts": [],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_COUNTERPART"
+  },
+  "S307": {
+   "development_id": 268,
+   "situation": "gaza-ceasefire",
+   "counterparts": [
+    "gaza-ceasefire"
+   ],
+   "assigned": "gaza-ceasefire",
+   "outcome": "MEMBER",
+   "reason": "ASSIGNED"
+  },
+  "S310": {
+   "development_id": 132,
+   "situation": "us-iran",
+   "counterparts": [
+    "us-iran"
+   ],
+   "assigned": "us-iran",
+   "outcome": "MEMBER",
+   "reason": "ASSIGNED"
+  },
+  "S312": {
+   "development_id": 990,
+   "situation": "china-chinas-long-march",
+   "counterparts": [],
+   "assigned": "eu-china-trade",
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_COUNTERPART"
+  },
+  "S318": {
+   "development_id": 250,
+   "situation": "emmanuel-macron-france-macron",
+   "counterparts": [],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_COUNTERPART"
+  },
+  "S319": {
+   "development_id": 811,
+   "situation": "russia-united-states",
+   "counterparts": [
+    "russia-united_states:diplomacy"
+   ],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "GENERIC_ANCHOR_ONLY"
+  },
+  "S320": {
+   "development_id": 959,
+   "situation": "russia-ukraine-war",
+   "counterparts": [
+    "russia-ukraine-war"
+   ],
+   "assigned": "russia-ukraine-war",
+   "outcome": "MEMBER",
+   "reason": "ASSIGNED"
+  },
+  "S329": {
+   "development_id": 56,
+   "situation": "malaysia-singapore",
+   "counterparts": [],
+   "assigned": "malaysia:diplomacy:malaysia",
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_COUNTERPART"
+  },
+  "S330": {
+   "development_id": 401,
+   "situation": "russia-united-states",
+   "counterparts": [
+    "russia-united_states:diplomacy"
+   ],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "GENERIC_ANCHOR_ONLY"
+  },
+  "S337": {
+   "development_id": 46,
+   "situation": "democrat-united-states",
+   "counterparts": [],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_COUNTERPART"
+  },
+  "S340": {
+   "development_id": 1151,
+   "situation": "mexico-united-states",
+   "counterparts": [],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_COUNTERPART"
+  },
+  "S341": {
+   "development_id": 350,
+   "situation": "israel-palestine",
+   "counterparts": [],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_COUNTERPART"
+  },
+  "S343": {
+   "development_id": 858,
+   "situation": "china-united-states",
+   "counterparts": [
+    "china-united_states:diplomacy",
+    "china-united_states:economic"
+   ],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_PRINCIPALS"
+  },
+  "S344": {
+   "development_id": 327,
+   "situation": "sudan-civil-war",
+   "counterparts": [
+    "sudan-civil-war"
+   ],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "OUT_OF_SCOPE_DOMAIN"
+  },
+  "S347": {
+   "development_id": 34,
+   "situation": "china-united-states",
+   "counterparts": [
+    "china-united_states:diplomacy",
+    "china-united_states:economic"
+   ],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_SHARED_ACTORS"
+  },
+  "S350": {
+   "development_id": 383,
+   "situation": "european-union-russia",
+   "counterparts": [],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_COUNTERPART"
+  },
+  "S353": {
+   "development_id": 556,
+   "situation": "international-criminal-court-united-states",
+   "counterparts": [],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_COUNTERPART"
+  },
+  "S357": {
+   "development_id": 1147,
+   "situation": "russia-united-states",
+   "counterparts": [
+    "russia-united_states:diplomacy"
+   ],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "GENERIC_ANCHOR_ONLY"
+  },
+  "S359": {
+   "development_id": 1043,
+   "situation": "russia-united-states",
+   "counterparts": [
+    "russia-united_states:diplomacy"
+   ],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "GENERIC_ANCHOR_ONLY"
+  },
+  "S362": {
+   "development_id": 743,
+   "situation": "china-taiwan",
+   "counterparts": [],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_COUNTERPART"
+  },
+  "S364": {
+   "development_id": 159,
+   "situation": "donald-j-trump-united-states",
+   "counterparts": [],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_COUNTERPART"
+  },
+  "S365": {
+   "development_id": 829,
+   "situation": "france-pope",
+   "counterparts": [],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_COUNTERPART"
+  },
+  "S372": {
+   "development_id": 186,
+   "situation": "democrat-united-states",
+   "counterparts": [],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_COUNTERPART"
+  },
+  "S377": {
+   "development_id": 242,
+   "situation": "russia-ukraine-war",
+   "counterparts": [
+    "russia-ukraine-war"
+   ],
+   "assigned": "russia-ukraine-war",
+   "outcome": "MEMBER",
+   "reason": "ASSIGNED"
+  },
+  "S379": {
+   "development_id": 112,
+   "situation": "china-united-states",
+   "counterparts": [
+    "china-united_states:diplomacy",
+    "china-united_states:economic"
+   ],
+   "assigned": null,
+   "outcome": "NOT_MEMBER",
+   "reason": "GENERIC_ANCHOR_ONLY"
+  }
+ },
+ "situations": [
+  {
+   "slug": "us-iran",
+   "mode": "seeded",
+   "anchors": [
+    "iran",
+    "united states"
+   ],
+   "families": [
+    "armed_conflict",
+    "diplomacy",
+    "economic",
+    "security"
+   ],
+   "place_scope": [
+    "iran",
+    "iraq",
+    "oman",
+    "qatar",
+    "united states"
+   ],
+   "keywords": [
+    "nuclear",
+    "enrichment",
+    "IAEA",
+    "JCPOA",
+    "talks",
+    "negotiations",
+    "sanctions",
+    "Hormuz"
+   ],
+   "hazard": null,
+   "scope_version": 1,
+   "founders": [],
+   "members": 11
+  },
+  {
+   "slug": "russia-ukraine-war",
+   "mode": "seeded",
+   "anchors": [
+    "russia",
+    "ukraine"
+   ],
+   "families": [
+    "armed_conflict",
+    "diplomacy",
+    "security"
+   ],
+   "place_scope": [
+    "belarus",
+    "russia",
+    "ukraine"
+   ],
+   "keywords": [
+    "front",
+    "offensive",
+    "drone",
+    "missile",
+    "ceasefire",
+    "peace talks",
+    "occupied"
+   ],
+   "hazard": null,
+   "scope_version": 1,
+   "founders": [],
+   "members": 31
+  },
+  {
+   "slug": "eu-china-trade",
+   "mode": "seeded",
+   "anchors": [
+    "china",
+    "european union"
+   ],
+   "families": [
+    "diplomacy",
+    "economic",
+    "politics"
+   ],
+   "place_scope": [
+    "belgium",
+    "china",
+    "france",
+    "germany",
+    "italy",
+    "netherlands",
+    "poland",
+    "spain"
+   ],
+   "keywords": [
+    "tariff",
+    "anti-dumping",
+    "export control",
+    "EV",
+    "trade",
+    "subsidy",
+    "rare earth"
+   ],
+   "hazard": null,
+   "scope_version": 1,
+   "founders": [],
+   "members": 4
+  },
+  {
+   "slug": "gaza-ceasefire",
+   "mode": "seeded",
+   "anchors": [
+    "hamas",
+    "israel"
+   ],
+   "families": [
+    "armed_conflict",
+    "diplomacy",
+    "security"
+   ],
+   "place_scope": [
+    "egypt",
+    "israel",
+    "palestine",
+    "qatar"
+   ],
+   "keywords": [
+    "ceasefire",
+    "hostage",
+    "truce",
+    "Gaza",
+    "Rafah",
+    "mediation",
+    "humanitarian"
+   ],
+   "hazard": null,
+   "scope_version": 1,
+   "founders": [],
+   "members": 15
+  },
+  {
+   "slug": "sudan-civil-war",
+   "mode": "seeded",
+   "anchors": [
+    "rapid support forces",
+    "sudan"
+   ],
+   "families": [
+    "armed_conflict",
+    "security"
+   ],
+   "place_scope": [
+    "sudan"
+   ],
+   "keywords": [
+    "El Fasher",
+    "Darfur",
+    "Khartoum",
+    "SAF",
+    "famine"
+   ],
+   "hazard": null,
+   "scope_version": 1,
+   "founders": [],
+   "members": 1
+  },
+  {
+   "slug": "china-united_states:diplomacy",
+   "mode": "actor_process",
+   "anchors": [
+    "china",
+    "united states"
+   ],
+   "families": [
+    "diplomacy"
+   ],
+   "place_scope": [
+    "china",
+    "united states"
+   ],
+   "keywords": [],
+   "hazard": null,
+   "scope_version": 1,
+   "founders": [
+    1,
+    2
+   ],
+   "members": 5
+  },
+  {
+   "slug": "hazard:flood:united states:-",
+   "mode": "hazard",
+   "anchors": [],
+   "families": [
+    "hazard"
+   ],
+   "place_scope": [
+    "united states"
+   ],
+   "keywords": [],
+   "hazard": [
+    "flood",
+    "united states",
+    null
+   ],
+   "scope_version": 1,
+   "founders": [
+    3,
+    30
+   ],
+   "members": 2
+  },
+  {
+   "slug": "india:politics:india",
+   "mode": "single_party",
+   "anchors": [
+    "india"
+   ],
+   "families": [
+    "politics"
+   ],
+   "place_scope": [
+    "india"
+   ],
+   "keywords": [],
+   "hazard": null,
+   "scope_version": 1,
+   "founders": [
+    10,
+    116
+   ],
+   "members": 5
+  },
+  {
+   "slug": "spain:politics:spain",
+   "mode": "single_party",
+   "anchors": [
+    "spain"
+   ],
+   "families": [
+    "politics"
+   ],
+   "place_scope": [
+    "spain"
+   ],
+   "keywords": [],
+   "hazard": null,
+   "scope_version": 1,
+   "founders": [
+    69,
+    122
+   ],
+   "members": 2
+  },
+  {
+   "slug": "malaysia:diplomacy:malaysia",
+   "mode": "single_party",
+   "anchors": [
+    "malaysia"
+   ],
+   "families": [
+    "diplomacy"
+   ],
+   "place_scope": [
+    "malaysia"
+   ],
+   "keywords": [],
+   "hazard": null,
+   "scope_version": 1,
+   "founders": [
+    56,
+    136
+   ],
+   "members": 2
+  },
+  {
+   "slug": "hazard:storm:united states:isaias",
+   "mode": "hazard",
+   "anchors": [],
+   "families": [
+    "hazard"
+   ],
+   "place_scope": [
+    "united states"
+   ],
+   "keywords": [],
+   "hazard": [
+    "storm",
+    "united states",
+    "isaias"
+   ],
+   "scope_version": 1,
+   "founders": [
+    263,
+    355
+   ],
+   "members": 3
+  },
+  {
+   "slug": "india:diplomacy:india",
+   "mode": "single_party",
+   "anchors": [
+    "india"
+   ],
+   "families": [
+    "diplomacy"
+   ],
+   "place_scope": [
+    "india"
+   ],
+   "keywords": [],
+   "hazard": null,
+   "scope_version": 1,
+   "founders": [
+    329,
+    372
+   ],
+   "members": 2
+  },
+  {
+   "slug": "russia-united_states:diplomacy",
+   "mode": "actor_process",
+   "anchors": [
+    "russia",
+    "united states"
+   ],
+   "families": [
+    "diplomacy"
+   ],
+   "place_scope": [
+    "russia",
+    "united states"
+   ],
+   "keywords": [],
+   "hazard": null,
+   "scope_version": 1,
+   "founders": [
+    168,
+    395
+   ],
+   "members": 4
+  },
+  {
+   "slug": "china-united_states:economic",
+   "mode": "actor_process",
+   "anchors": [
+    "china",
+    "united states"
+   ],
+   "families": [
+    "economic"
+   ],
+   "place_scope": [
+    "china",
+    "taiwan",
+    "united states"
+   ],
+   "keywords": [],
+   "hazard": null,
+   "scope_version": 1,
+   "founders": [
+    497,
+    737
+   ],
+   "members": 3
+  },
+  {
+   "slug": "hazard:earthquake:china:-",
+   "mode": "hazard",
+   "anchors": [],
+   "families": [
+    "hazard"
+   ],
+   "place_scope": [
+    "china"
+   ],
+   "keywords": [],
+   "hazard": [
+    "earthquake",
+    "china",
+    null
+   ],
+   "scope_version": 1,
+   "founders": [
+    862,
+    874
+   ],
+   "members": 2
+  },
+  {
+   "slug": "hazard:storm:india:arnab",
+   "mode": "hazard",
+   "anchors": [],
+   "families": [
+    "hazard"
+   ],
+   "place_scope": [
+    "india"
+   ],
+   "keywords": [],
+   "hazard": [
+    "storm",
+    "india",
+    "arnab"
+   ],
+   "scope_version": 1,
+   "founders": [
+    1035,
+    1062
+   ],
+   "members": 2
+  },
+  {
+   "slug": "russia-ukraine:armed_conflict",
+   "mode": "actor_process",
+   "anchors": [
+    "russia",
+    "ukraine"
+   ],
+   "families": [
+    "armed_conflict"
+   ],
+   "place_scope": [
+    "russia",
+    "senegal",
+    "ukraine"
+   ],
+   "keywords": [],
+   "hazard": null,
+   "scope_version": 1,
+   "founders": [
+    911,
+    1102
+   ],
+   "members": 2
+  }
+ ],
+ "assignment_counts": {
+  "china-united_states:diplomacy": 5,
+  "us-iran": 11,
+  "hazard:flood:united states:-": 2,
+  "gaza-ceasefire": 15,
+  "russia-ukraine-war": 31,
+  "india:politics:india": 5,
+  "spain:politics:spain": 2,
+  "malaysia:diplomacy:malaysia": 2,
+  "eu-china-trade": 4,
+  "hazard:storm:united states:isaias": 3,
+  "india:diplomacy:india": 2,
+  "russia-united_states:diplomacy": 4,
+  "china-united_states:economic": 3,
+  "hazard:earthquake:china:-": 2,
+  "sudan-civil-war": 1,
+  "hazard:storm:india:arnab": 2,
+  "russia-ukraine:armed_conflict": 2
+ },
+ "features_summary": {
+  "developments": 1198,
+  "family_unknown": 544,
+  "no_principals": 302,
+  "no_event_country": 696
+ }
+}
