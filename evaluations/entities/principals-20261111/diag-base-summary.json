@@ -1,0 +1,3205 @@
+{
+"summary": {
+"developments": 1198,
+"developments_with_missing": 768,
+"causes": {
+"role:subject": 167,
+"actor_filtered": 517,
+"role:institutional_context": 41,
+"role:participant": 163,
+"role:target": 53,
+"no_mention": 297,
+"role:affected": 38,
+"role:location/participant": 9,
+"role:location": 317,
+"role:location/target": 5,
+"role:location/subject": 8,
+"role:participant/subject": 8,
+"role:institutional_context/subject": 1,
+"role:institutional_context/target": 1,
+"role:institutional_context/location": 2,
+"role:location/participant/subject": 2,
+"role:affected/institutional_context/subject": 1,
+"role:affected/participant": 1,
+"role:institutional_context/participant": 1,
+"role:participant/target": 1,
+"role:subject/target": 1,
+"role:affected/subject": 1,
+"role:affected/location/participant": 1
+}
+},
+"missing_by_development": {
+"1": {
+"taiwan": "role:subject",
+"asean": "actor_filtered"
+},
+"2": {
+"united nations": "role:institutional_context",
+"taiwan": "actor_filtered",
+"asean": "actor_filtered"
+},
+"3": {
+"india": "role:participant",
+"china": "role:participant"
+},
+"4": {
+"turkey": "actor_filtered",
+"yemen": "role:subject",
+"france": "actor_filtered",
+"iran": "role:target",
+"united nations": "role:institutional_context",
+"united states": "actor_filtered"
+},
+"5": {
+"afghanistan": "role:participant",
+"russia": "actor_filtered",
+"ukraine": "actor_filtered"
+},
+"6": {
+"china": "actor_filtered"
+},
+"8": {
+"united nations": "role:institutional_context",
+"united states": "role:participant"
+},
+"9": {
+"northern ethiopia": "no_mention"
+},
+"11": {
+"china": "role:participant"
+},
+"12": {
+"denmark": "actor_filtered",
+"poland": "actor_filtered"
+},
+"17": {
+"ukraine": "role:affected"
+},
+"18": {
+"united nations": "role:institutional_context",
+"iraq": "role:participant",
+"qatar": "actor_filtered"
+},
+"19": {
+"france": "role:subject"
+},
+"22": {
+"australia": "actor_filtered",
+"united states": "role:participant"
+},
+"24": {
+"united kingdom": "role:participant"
+},
+"25": {
+"china": "role:location/participant"
+},
+"26": {
+"ireland": "no_mention",
+"israel": "role:participant",
+"gaza": "role:location"
+},
+"27": {
+"france": "role:location"
+},
+"28": {
+"germany": "role:participant"
+},
+"30": {
+"northeastern united states": "no_mention",
+"united states": "role:participant"
+},
+"31": {
+"united states": "actor_filtered"
+},
+"32": {
+"south africa": "role:location"
+},
+"34": {
+"united states": "role:location"
+},
+"35": {
+"netherlands": "role:target"
+},
+"37": {
+"russia": "actor_filtered"
+},
+"39": {
+"taiwan": "role:subject"
+},
+"40": {
+"north korea": "role:location"
+},
+"42": {
+"france": "role:location",
+"united kingdom": "role:subject"
+},
+"45": {
+"iran": "role:participant",
+"iraq": "role:participant"
+},
+"48": {
+"united arab emirates": "actor_filtered",
+"qatar": "role:target",
+"gaza": "role:location"
+},
+"50": {
+"nigeria": "role:location"
+},
+"54": {
+"india": "role:affected",
+"united states": "actor_filtered"
+},
+"56": {
+"myanmar": "role:subject"
+},
+"57": {
+"india": "role:affected"
+},
+"58": {
+"north korea": "actor_filtered"
+},
+"59": {
+"united kingdom": "role:target"
+},
+"60": {
+"uganda": "role:location"
+},
+"61": {
+"australia": "role:participant",
+"norway": "role:participant"
+},
+"62": {
+"palestine": "role:target"
+},
+"63": {
+"singapore": "role:location"
+},
+"64": {
+"russia": "role:target",
+"ukraine": "role:subject"
+},
+"65": {
+"gaza": "role:location",
+"palestine": "role:participant"
+},
+"67": {
+"chile": "role:location",
+"united states": "no_mention",
+"belgium": "role:location"
+},
+"68": {
+"iran": "role:affected",
+"united kingdom": "actor_filtered"
+},
+"75": {
+"canada": "role:target"
+},
+"76": {
+"united states": "actor_filtered",
+"china": "actor_filtered"
+},
+"78": {
+"china": "actor_filtered"
+},
+"81": {
+"slovakia": "role:location",
+"malaysia": "role:participant"
+},
+"82": {
+"saudi arabia": "role:subject",
+"israel": "actor_filtered",
+"united nations": "no_mention",
+"india": "actor_filtered",
+"united arab emirates": "actor_filtered",
+"oman": "role:subject",
+"australia": "actor_filtered"
+},
+"84": {
+"japan": "actor_filtered"
+},
+"85": {
+"united states": "actor_filtered",
+"united nations": "no_mention"
+},
+"86": {
+"somalia": "actor_filtered",
+"syria": "role:location"
+},
+"87": {
+"laos": "role:participant"
+},
+"88": {
+"taiwan": "role:location"
+},
+"90": {
+"china": "role:location/target",
+"united states": "role:target"
+},
+"92": {
+"nato": "role:target"
+},
+"95": {
+"united kingdom": "role:subject"
+},
+"99": {
+"japan": "actor_filtered"
+},
+"100": {
+"taiwan": "role:participant"
+},
+"101": {
+"russia": "actor_filtered",
+"japan": "actor_filtered"
+},
+"107": {
+"united states": "role:location"
+},
+"108": {
+"united states": "actor_filtered",
+"iran": "role:target",
+"united arab emirates": "actor_filtered",
+"united nations": "no_mention",
+"oman": "role:subject"
+},
+"109": {
+"north korea": "role:location"
+},
+"112": {
+"united states": "role:participant",
+"european union": "role:institutional_context"
+},
+"114": {
+"china": "actor_filtered",
+"united states": "actor_filtered"
+},
+"115": {
+"china": "actor_filtered"
+},
+"119": {
+"yemen": "no_mention",
+"saudi arabia": "actor_filtered",
+"pakistan": "no_mention",
+"somalia": "actor_filtered",
+"united nations": "actor_filtered",
+"united states": "actor_filtered",
+"turkey": "actor_filtered",
+"israel": "actor_filtered",
+"syria": "actor_filtered",
+"india": "no_mention"
+},
+"120": {
+"united nations": "role:institutional_context",
+"cuba": "role:participant",
+"united states": "role:subject"
+},
+"122": {
+"spain": "no_mention",
+"france": "actor_filtered",
+"united states": "no_mention"
+},
+"123": {
+"south korea": "actor_filtered",
+"ukraine": "actor_filtered",
+"russia": "actor_filtered"
+},
+"124": {
+"ukraine": "actor_filtered",
+"germany": "actor_filtered",
+"poland": "role:subject",
+"european union": "actor_filtered",
+"eastern ukraine": "no_mention",
+"east ukraine": "no_mention",
+"dominican republic": "no_mention"
+},
+"125": {
+"united states": "role:location"
+},
+"128": {
+"eritrea": "role:participant"
+},
+"130": {
+"japan": "no_mention"
+},
+"132": {
+"iran": "actor_filtered",
+"united states": "role:participant",
+"iraq": "role:participant",
+"israel": "actor_filtered",
+"bahrain": "role:subject",
+"united nations": "actor_filtered",
+"pakistan": "role:location",
+"georgia": "role:location",
+"azerbaijan": "role:location"
+},
+"133": {
+"bosnia and herzegovina": "actor_filtered",
+"european union": "actor_filtered"
+},
+"134": {
+"israel": "actor_filtered",
+"united nations": "no_mention",
+"united states": "actor_filtered"
+},
+"135": {
+"united kingdom": "role:location/subject",
+"iran": "role:subject",
+"israel": "actor_filtered",
+"russia": "role:participant",
+"latvia": "actor_filtered",
+"nato": "role:institutional_context"
+},
+"136": {
+"myanmar": "no_mention",
+"dominican republic": "no_mention",
+"asean": "role:institutional_context"
+},
+"138": {
+"united states": "role:subject",
+"germany": "role:subject"
+},
+"139": {
+"united kingdom": "role:participant"
+},
+"141": {
+"japan": "role:subject",
+"taiwan": "role:location"
+},
+"142": {
+"spain": "role:location",
+"france": "role:location",
+"united states": "role:participant/subject",
+"mexico": "role:location",
+"china": "role:subject",
+"european union": "actor_filtered",
+"américa": "no_mention",
+"venezuela": "no_mention",
+"united nations": "no_mention"
+},
+"143": {
+"afghanistan": "role:subject"
+},
+"144": {
+"israel": "actor_filtered",
+"iran": "role:participant",
+"gaza": "no_mention",
+"united states": "actor_filtered",
+"united nations": "role:institutional_context/subject"
+},
+"145": {
+"spain": "actor_filtered",
+"united states": "actor_filtered",
+"russia": "no_mention"
+},
+"147": {
+"brazil": "role:location",
+"united states": "actor_filtered",
+"américa": "no_mention",
+"paraguay": "role:location",
+"european union": "role:location",
+"poland": "role:participant",
+"venezuela": "role:subject",
+"argentina": "role:participant",
+"iran": "role:participant",
+"united nations": "role:institutional_context"
+},
+"148": {
+"brazil": "role:location",
+"united states": "role:location/subject",
+"world bank": "actor_filtered"
+},
+"149": {
+"spain": "role:subject"
+},
+"151": {
+"bulgaria": "actor_filtered"
+},
+"152": {
+"sudan": "role:location",
+"united nations": "role:institutional_context/target"
+},
+"153": {
+"russia": "actor_filtered"
+},
+"154": {
+"european union": "actor_filtered",
+"russia": "role:subject",
+"ukraine": "role:participant"
+},
+"155": {
+"yemen": "no_mention",
+"saudi arabia": "actor_filtered",
+"united states": "actor_filtered",
+"pakistan": "role:participant",
+"turkey": "role:participant",
+"djibouti": "actor_filtered",
+"nato": "actor_filtered"
+},
+"156": {
+"moldova": "no_mention"
+},
+"157": {
+"united kingdom": "role:subject"
+},
+"158": {
+"united states": "no_mention"
+},
+"159": {
+"united nations": "role:subject"
+},
+"160": {
+"european union": "role:institutional_context",
+"china": "role:subject"
+},
+"161": {
+"russia": "role:participant",
+"ukraine": "no_mention"
+},
+"162": {
+"france": "no_mention",
+"iran": "actor_filtered",
+"united states": "role:subject",
+"mexico": "role:subject",
+"ukraine": "role:location",
+"united kingdom": "no_mention",
+"united nations": "actor_filtered",
+"european union": "role:location"
+},
+"163": {
+"benin": "role:target",
+"india": "role:location"
+},
+"164": {
+"eswatini": "role:affected",
+"united states": "actor_filtered"
+},
+"165": {
+"russia": "role:participant"
+},
+"167": {
+"turkey": "no_mention",
+"russia": "role:participant"
+},
+"168": {
+"united nations": "actor_filtered"
+},
+"170": {
+"romania": "role:location",
+"india": "actor_filtered"
+},
+"171": {
+"gaza": "role:location"
+},
+"172": {
+"turkey": "actor_filtered"
+},
+"173": {
+"united states": "actor_filtered",
+"european union": "actor_filtered",
+"northern ethiopia": "no_mention"
+},
+"175": {
+"united states": "actor_filtered"
+},
+"176": {
+"international criminal court": "actor_filtered",
+"afghanistan": "role:location"
+},
+"177": {
+"russia": "role:location/target",
+"european union": "actor_filtered",
+"greece": "role:subject",
+"france": "actor_filtered",
+"united kingdom": "actor_filtered"
+},
+"179": {
+"france": "actor_filtered",
+"china": "role:participant",
+"european union": "role:institutional_context"
+},
+"180": {
+"italy": "actor_filtered"
+},
+"181": {
+"gaza": "role:location",
+"israel": "actor_filtered"
+},
+"182": {
+"gaza": "no_mention",
+"israel": "actor_filtered",
+"palestine": "no_mention",
+"united states": "actor_filtered",
+"iran": "actor_filtered",
+"united nations": "actor_filtered",
+"france": "role:subject",
+"canada": "role:affected",
+"united kingdom": "no_mention",
+"lebanon": "role:location"
+},
+"183": {
+"saudi arabia": "role:location/subject"
+},
+"184": {
+"ukraine": "actor_filtered",
+"iran": "role:affected",
+"european union": "actor_filtered",
+"poland": "actor_filtered"
+},
+"185": {
+"dominican republic": "no_mention",
+"ukraine": "role:location",
+"israel": "role:location",
+"taiwan": "role:location"
+},
+"187": {
+"gaza": "no_mention"
+},
+"188": {
+"china": "role:subject",
+"taiwan": "role:subject"
+},
+"189": {
+"saudi arabia": "role:subject",
+"turkey": "role:location",
+"yemen": "role:location"
+},
+"190": {
+"ukraine": "role:location",
+"ireland": "actor_filtered",
+"united states": "actor_filtered"
+},
+"191": {
+"cuba": "role:subject",
+"venezuela": "actor_filtered",
+"united states": "role:target"
+},
+"193": {
+"israel": "no_mention",
+"palestine": "actor_filtered"
+},
+"194": {
+"romania": "actor_filtered",
+"turkey": "role:location"
+},
+"195": {
+"united states": "actor_filtered"
+},
+"196": {
+"north korea": "actor_filtered",
+"russia": "role:subject"
+},
+"198": {
+"canada": "role:location"
+},
+"199": {
+"ukraine": "role:location"
+},
+"201": {
+"united states": "role:location"
+},
+"204": {
+"united nations": "no_mention",
+"dominican republic": "no_mention"
+},
+"205": {
+"belgium": "role:participant"
+},
+"206": {
+"united kingdom": "role:subject"
+},
+"207": {
+"united nations": "actor_filtered"
+},
+"208": {
+"european union": "actor_filtered"
+},
+"209": {
+"united states": "role:participant"
+},
+"210": {
+"united states": "actor_filtered",
+"israel": "role:subject",
+"palestine": "no_mention"
+},
+"211": {
+"gaza": "role:location",
+"syria": "role:target"
+},
+"212": {
+"dominican republic": "no_mention"
+},
+"213": {
+"bulgaria": "role:subject"
+},
+"214": {
+"italy": "role:location"
+},
+"215": {
+"congo": "no_mention",
+"united nations": "actor_filtered",
+"democratic republic of the congo": "role:location"
+},
+"216": {
+"pakistan": "no_mention",
+"afghanistan": "role:location"
+},
+"217": {
+"france": "role:subject",
+"japan": "role:subject"
+},
+"219": {
+"israel": "role:location",
+"ireland": "role:subject"
+},
+"220": {
+"singapore": "actor_filtered"
+},
+"221": {
+"nato": "role:institutional_context",
+"lithuania": "actor_filtered",
+"ukraine": "actor_filtered",
+"latvia": "role:subject"
+},
+"222": {
+"kosovo": "actor_filtered"
+},
+"223": {
+"lithuania": "no_mention",
+"russia": "actor_filtered"
+},
+"224": {
+"ukraine": "role:location",
+"russia": "actor_filtered",
+"india": "actor_filtered",
+"nato": "role:institutional_context",
+"european union": "actor_filtered",
+"romania": "role:subject"
+},
+"225": {
+"north korea": "role:location",
+"ukraine": "role:location/participant"
+},
+"226": {
+"germany": "role:subject"
+},
+"227": {
+"united states": "role:participant",
+"turkey": "actor_filtered"
+},
+"230": {
+"mexico": "role:location"
+},
+"232": {
+"united states": "actor_filtered",
+"israel": "role:participant/subject",
+"gaza": "role:location",
+"united nations": "role:institutional_context/location",
+"international criminal court": "role:subject"
+},
+"233": {
+"germany": "no_mention",
+"united kingdom": "role:subject"
+},
+"234": {
+"iran": "role:target"
+},
+"237": {
+"israel": "actor_filtered",
+"gaza": "role:location",
+"india": "no_mention",
+"iraq": "role:location",
+"united states": "actor_filtered",
+"palestine": "actor_filtered"
+},
+"238": {
+"russia": "no_mention"
+},
+"244": {
+"pakistan": "role:location",
+"india": "role:location"
+},
+"245": {
+"norway": "role:subject"
+},
+"246": {
+"sweden": "role:subject",
+"ukraine": "role:affected"
+},
+"247": {
+"united states": "role:subject"
+},
+"248": {
+"spain": "role:affected"
+},
+"249": {
+"northern mali": "no_mention",
+"mali": "actor_filtered",
+"dominican republic": "no_mention"
+},
+"250": {
+"ukraine": "actor_filtered"
+},
+"251": {
+"united states": "role:participant"
+},
+"253": {
+"kosovo": "no_mention"
+},
+"254": {
+"united nations": "no_mention"
+},
+"255": {
+"ukraine": "actor_filtered",
+"united states": "actor_filtered"
+},
+"256": {
+"united nations": "no_mention"
+},
+"258": {
+"united states": "actor_filtered",
+"israel": "role:target",
+"oman": "no_mention",
+"yemen": "role:location"
+},
+"259": {
+"rapid support forces": "role:location"
+},
+"260": {
+"oman": "role:location"
+},
+"261": {
+"international monetary fund": "actor_filtered",
+"united states": "actor_filtered"
+},
+"263": {
+"venezuela": "actor_filtered",
+"united states": "role:affected"
+},
+"264": {
+"canada": "role:subject"
+},
+"265": {
+"argentina": "role:participant"
+},
+"266": {
+"yemen": "actor_filtered",
+"syria": "no_mention"
+},
+"269": {
+"bolivia": "actor_filtered"
+},
+"270": {
+"russia": "actor_filtered",
+"ukraine": "role:subject"
+},
+"271": {
+"ukraine": "actor_filtered",
+"russia": "role:affected",
+"romania": "actor_filtered",
+"nato": "no_mention",
+"china": "role:participant",
+"united states": "role:subject"
+},
+"273": {
+"russia": "role:location/participant/subject"
+},
+"274": {
+"ukraine": "role:location"
+},
+"275": {
+"poland": "role:location",
+"united states": "actor_filtered"
+},
+"278": {
+"venezuela": "role:location",
+"united nations": "no_mention"
+},
+"279": {
+"india": "role:subject"
+},
+"281": {
+"iran": "actor_filtered",
+"nato": "role:institutional_context"
+},
+"282": {
+"ukraine": "role:participant"
+},
+"283": {
+"gaza": "role:location",
+"israel": "role:affected"
+},
+"284": {
+"belarus": "role:location",
+"latvia": "role:subject"
+},
+"286": {
+"sudan": "no_mention"
+},
+"289": {
+"brazil": "actor_filtered"
+},
+"292": {
+"israel": "role:location/participant"
+},
+"295": {
+"palestine": "role:subject"
+},
+"296": {
+"united nations": "role:subject"
+},
+"299": {
+"united states": "actor_filtered"
+},
+"300": {
+"iran": "no_mention"
+},
+"301": {
+"united kingdom": "role:location"
+},
+"302": {
+"syria": "role:participant"
+},
+"303": {
+"ukraine": "role:target"
+},
+"304": {
+"iran": "role:subject"
+},
+"305": {
+"portugal": "role:affected"
+},
+"308": {
+"ukraine": "role:affected"
+},
+"309": {
+"china": "role:subject"
+},
+"310": {
+"european union": "role:institutional_context",
+"united states": "actor_filtered"
+},
+"311": {
+"united nations": "no_mention"
+},
+"312": {
+"united states": "role:participant",
+"ecuador": "actor_filtered",
+"chile": "no_mention",
+"cuba": "role:participant",
+"uruguay": "actor_filtered"
+},
+"315": {
+"morocco": "role:subject",
+"switzerland": "role:location"
+},
+"316": {
+"south korea": "actor_filtered"
+},
+"317": {
+"russia": "role:participant"
+},
+"318": {
+"russia": "role:target",
+"japan": "actor_filtered",
+"ukraine": "role:location",
+"lithuania": "actor_filtered",
+"european union": "actor_filtered",
+"estonia": "actor_filtered",
+"nato": "actor_filtered"
+},
+"320": {
+"india": "role:location"
+},
+"322": {
+"russia": "actor_filtered",
+"denmark": "role:target",
+"netherlands": "actor_filtered"
+},
+"324": {
+"italy": "no_mention"
+},
+"326": {
+"qatar": "role:location"
+},
+"329": {
+"united states": "role:participant"
+},
+"330": {
+"united kingdom": "actor_filtered",
+"germany": "actor_filtered"
+},
+"333": {
+"european union": "role:affected/institutional_context/subject"
+},
+"338": {
+"myanmar": "role:location"
+},
+"339": {
+"iran": "role:target"
+},
+"341": {
+"united states": "role:location",
+"lithuania": "role:location"
+},
+"344": {
+"russia": "role:subject"
+},
+"345": {
+"nato": "role:institutional_context",
+"montenegro": "actor_filtered"
+},
+"348": {
+"china": "role:subject"
+},
+"349": {
+"iran": "role:location"
+},
+"350": {
+"morocco": "role:location"
+},
+"355": {
+"united states": "role:participant"
+},
+"357": {
+"russia": "role:affected"
+},
+"358": {
+"united states": "actor_filtered"
+},
+"359": {
+"mexico": "role:participant"
+},
+"360": {
+"united states": "actor_filtered"
+},
+"361": {
+"north korea": "role:location",
+"afghanistan": "role:location"
+},
+"362": {
+"united nations": "no_mention"
+},
+"363": {
+"south africa": "actor_filtered",
+"international criminal court": "no_mention",
+"united nations": "actor_filtered",
+"israel": "actor_filtered",
+"gaza": "role:location",
+"italy": "no_mention"
+},
+"365": {
+"european union": "actor_filtered",
+"panama": "role:participant",
+"panamá": "no_mention"
+},
+"367": {
+"italy": "role:location"
+},
+"368": {
+"montenegro": "role:location"
+},
+"370": {
+"ukraine": "role:subject"
+},
+"373": {
+"france": "role:location"
+},
+"374": {
+"israel": "role:participant",
+"gaza": "role:location"
+},
+"375": {
+"indonesia": "role:location"
+},
+"377": {
+"european union": "actor_filtered",
+"china": "actor_filtered"
+},
+"378": {
+"mexico": "role:subject"
+},
+"380": {
+"european union": "role:location"
+},
+"381": {
+"israel": "role:location",
+"oman": "actor_filtered"
+},
+"384": {
+"russia": "role:subject"
+},
+"385": {
+"nicaragua": "role:subject"
+},
+"386": {
+"international criminal court": "role:target",
+"italy": "no_mention",
+"dominican republic": "no_mention",
+"united kingdom": "actor_filtered",
+"russia": "role:target",
+"netherlands": "actor_filtered",
+"japan": "actor_filtered",
+"canada": "actor_filtered",
+"european union": "actor_filtered"
+},
+"387": {
+"italy": "no_mention",
+"ukraine": "role:subject"
+},
+"389": {
+"gaza": "role:location"
+},
+"390": {
+"united states": "role:location"
+},
+"391": {
+"palestine": "no_mention",
+"israel": "no_mention"
+},
+"392": {
+"panama": "no_mention",
+"panamá": "no_mention",
+"united states": "role:participant",
+"américa": "no_mention"
+},
+"393": {
+"mexico": "no_mention"
+},
+"394": {
+"united states": "role:subject"
+},
+"395": {
+"ukraine": "role:location"
+},
+"396": {
+"united states": "role:participant"
+},
+"397": {
+"saudi arabia": "role:location",
+"united states": "actor_filtered",
+"yemen": "no_mention",
+"india": "no_mention",
+"israel": "actor_filtered",
+"pakistan": "actor_filtered",
+"france": "actor_filtered",
+"egypt": "no_mention",
+"bangladesh": "no_mention",
+"china": "role:participant/subject",
+"iraq": "actor_filtered",
+"united nations": "actor_filtered",
+"djibouti": "actor_filtered",
+"iran": "role:location",
+"dominican republic": "no_mention",
+"northern yemen": "no_mention",
+"gulf cooperation council": "no_mention",
+"northeastern yemen": "no_mention",
+"southern yemen": "no_mention",
+"united kingdom": "actor_filtered",
+"eastern saudi arabia": "no_mention",
+"european union": "actor_filtered",
+"turkey": "role:location",
+"russia": "actor_filtered",
+"western saudi arabia": "no_mention",
+"nato": "role:institutional_context"
+},
+"398": {
+"russia": "actor_filtered",
+"ukraine": "actor_filtered",
+"united states": "actor_filtered",
+"india": "no_mention",
+"iran": "actor_filtered",
+"northern israel": "no_mention",
+"israel": "actor_filtered",
+"european union": "actor_filtered",
+"united kingdom": "actor_filtered",
+"lebanon": "role:location",
+"nato": "role:institutional_context",
+"hungary": "actor_filtered",
+"ireland": "actor_filtered",
+"sweden": "role:target",
+"belgium": "actor_filtered",
+"united nations": "actor_filtered",
+"g7": "actor_filtered",
+"g20": "no_mention",
+"poland": "actor_filtered",
+"western ukraine": "no_mention",
+"moldova": "role:participant",
+"italy": "actor_filtered",
+"belarus": "role:location",
+"lithuania": "role:location",
+"dominican republic": "no_mention",
+"mali": "actor_filtered",
+"norway": "role:location",
+"finland": "actor_filtered",
+"china": "no_mention",
+"denmark": "role:location",
+"united arab emirates": "no_mention"
+},
+"399": {
+"ukraine": "actor_filtered",
+"russia": "actor_filtered",
+"united states": "actor_filtered",
+"iran": "role:participant",
+"china": "actor_filtered",
+"nato": "actor_filtered",
+"taiwan": "actor_filtered",
+"cuba": "role:subject",
+"united kingdom": "actor_filtered",
+"bulgaria": "role:participant",
+"poland": "role:participant",
+"european union": "actor_filtered",
+"brazil": "role:participant",
+"france": "role:location",
+"italy": "no_mention",
+"south korea": "actor_filtered",
+"north korea": "no_mention",
+"germany": "actor_filtered",
+"argentina": "role:subject",
+"united nations": "actor_filtered",
+"turkey": "actor_filtered"
+},
+"400": {
+"gaza": "role:location",
+"israel": "actor_filtered",
+"united states": "actor_filtered",
+"palestine": "actor_filtered",
+"united nations": "actor_filtered"
+},
+"402": {
+"mexico": "role:participant"
+},
+"404": {
+"nepal": "role:location"
+},
+"405": {
+"european union": "actor_filtered",
+"united states": "actor_filtered",
+"g20": "role:institutional_context",
+"bulgaria": "no_mention",
+"nato": "actor_filtered",
+"western ukraine": "no_mention"
+},
+"407": {
+"france": "role:location"
+},
+"408": {
+"united kingdom": "actor_filtered",
+"iran": "role:target",
+"russia": "actor_filtered",
+"united states": "actor_filtered",
+"iraq": "role:location"
+},
+"409": {
+"united kingdom": "role:participant"
+},
+"410": {
+"turkey": "role:participant",
+"germany": "role:location",
+"russia": "actor_filtered"
+},
+"414": {
+"saudi arabia": "role:participant",
+"united states": "role:subject",
+"yemen": "role:location",
+"united nations": "actor_filtered"
+},
+"415": {
+"russia": "no_mention",
+"georgia": "role:location",
+"united states": "role:location"
+},
+"416": {
+"ukraine": "actor_filtered",
+"united kingdom": "actor_filtered",
+"poland": "role:location",
+"india": "role:target",
+"italy": "no_mention",
+"european union": "actor_filtered",
+"china": "role:subject"
+},
+"418": {
+"united kingdom": "role:location",
+"italy": "role:affected",
+"india": "role:affected",
+"united states": "actor_filtered"
+},
+"419": {
+"bulgaria": "role:location",
+"russia": "actor_filtered",
+"nato": "role:institutional_context",
+"european union": "actor_filtered",
+"ukraine": "actor_filtered",
+"azerbaijan": "role:subject",
+"romania": "actor_filtered",
+"moldova": "role:participant"
+},
+"421": {
+"argentina": "role:subject",
+"perú": "no_mention",
+"perù": "no_mention",
+"uruguay": "actor_filtered"
+},
+"422": {
+"european union": "role:location"
+},
+"423": {
+"france": "actor_filtered",
+"sweden": "actor_filtered"
+},
+"424": {
+"india": "no_mention",
+"united nations": "no_mention"
+},
+"425": {
+"congo": "no_mention",
+"democratic republic of the congo": "actor_filtered",
+"dominican republic": "no_mention"
+},
+"426": {
+"vatican": "no_mention",
+"ukraine": "actor_filtered",
+"united states": "actor_filtered"
+},
+"427": {
+"dominican republic": "no_mention"
+},
+"428": {
+"albania": "role:participant",
+"moldova": "no_mention",
+"ukraine": "role:participant/subject",
+"european union": "actor_filtered",
+"gulf cooperation council": "role:institutional_context"
+},
+"429": {
+"mexico": "role:location"
+},
+"430": {
+"united states": "actor_filtered"
+},
+"432": {
+"european union": "actor_filtered"
+},
+"433": {
+"china": "role:subject"
+},
+"436": {
+"colombia": "no_mention"
+},
+"437": {
+"united states": "actor_filtered"
+},
+"438": {
+"morocco": "role:participant"
+},
+"439": {
+"nicaragua": "actor_filtered",
+"ukraine": "role:location/subject",
+"united states": "actor_filtered",
+"russia": "actor_filtered",
+"spain": "role:location",
+"international monetary fund": "no_mention",
+"lebanon": "role:location",
+"nato": "no_mention",
+"italy": "role:location",
+"palestine": "no_mention"
+},
+"440": {
+"russia": "role:participant"
+},
+"441": {
+"mexico": "role:location",
+"venezuela": "actor_filtered",
+"colombia": "role:subject",
+"argentina": "role:subject",
+"perú": "no_mention",
+"united states": "actor_filtered",
+"spain": "role:subject",
+"italy": "actor_filtered"
+},
+"442": {
+"turkey": "no_mention"
+},
+"444": {
+"russia": "actor_filtered"
+},
+"446": {
+"united states": "actor_filtered"
+},
+"447": {
+"greece": "role:location",
+"ukraine": "role:participant",
+"israel": "role:participant",
+"mexico": "no_mention",
+"américa": "no_mention",
+"iran": "actor_filtered"
+},
+"448": {
+"united kingdom": "role:participant",
+"iran": "no_mention",
+"israel": "actor_filtered",
+"southern lebanon": "no_mention",
+"lebanon": "role:location",
+"russia": "role:subject",
+"ukraine": "role:target"
+},
+"449": {
+"brazil": "actor_filtered",
+"united kingdom": "actor_filtered",
+"united states": "actor_filtered",
+"spain": "role:location",
+"argentina": "no_mention",
+"américa": "no_mention",
+"russia": "actor_filtered",
+"ukraine": "actor_filtered",
+"portugal": "role:location",
+"bulgaria": "role:location",
+"mexico": "actor_filtered",
+"united nations": "actor_filtered",
+"china": "actor_filtered",
+"italy": "role:participant",
+"perù": "no_mention",
+"ecuador": "role:subject",
+"israel": "role:subject",
+"iran": "role:location",
+"france": "role:location",
+"poland": "role:location",
+"colombia": "no_mention"
+},
+"450": {
+"france": "actor_filtered",
+"russia": "actor_filtered",
+"india": "no_mention"
+},
+"451": {
+"united states": "actor_filtered",
+"israel": "actor_filtered",
+"south korea": "role:subject"
+},
+"452": {
+"france": "role:location"
+},
+"453": {
+"palestine": "actor_filtered",
+"southwest syria": "no_mention",
+"united nations": "actor_filtered",
+"gaza": "role:location"
+},
+"455": {
+"greece": "role:subject"
+},
+"456": {
+"germany": "role:location",
+"russia": "role:participant",
+"dominican republic": "no_mention"
+},
+"457": {
+"myanmar": "role:participant"
+},
+"458": {
+"united states": "actor_filtered"
+},
+"459": {
+"ukraine": "no_mention",
+"russia": "no_mention"
+},
+"460": {
+"greece": "role:location",
+"russia": "actor_filtered",
+"mexico": "role:subject",
+"ukraine": "actor_filtered",
+"bolivia": "role:location",
+"france": "actor_filtered"
+},
+"462": {
+"venezuela": "no_mention",
+"nicaragua": "role:location",
+"mexico": "actor_filtered",
+"united nations": "actor_filtered",
+"américa": "no_mention"
+},
+"463": {
+"yemen": "role:location",
+"united nations": "no_mention"
+},
+"464": {
+"japan": "role:participant",
+"sweden": "role:target"
+},
+"467": {
+"united kingdom": "role:target",
+"spain": "role:subject"
+},
+"468": {
+"congo": "role:location",
+"eastern dr congo": "no_mention",
+"united nations": "actor_filtered"
+},
+"470": {
+"sudan": "role:location"
+},
+"471": {
+"georgia": "role:location"
+},
+"473": {
+"northwestern pakistan": "no_mention",
+"pakistan": "no_mention",
+"united states": "role:target",
+"iran": "role:target"
+},
+"474": {
+"congo": "no_mention"
+},
+"475": {
+"european union": "actor_filtered",
+"ukraine": "role:affected/participant"
+},
+"476": {
+"chile": "no_mention"
+},
+"478": {
+"china": "role:participant"
+},
+"479": {
+"nato": "actor_filtered"
+},
+"480": {
+"united states": "actor_filtered"
+},
+"481": {
+"canada": "no_mention"
+},
+"483": {
+"united states": "actor_filtered",
+"united kingdom": "actor_filtered",
+"india": "actor_filtered",
+"russia": "role:subject"
+},
+"486": {
+"iran": "no_mention",
+"united states": "role:participant"
+},
+"487": {
+"dominican republic": "no_mention"
+},
+"488": {
+"united kingdom": "actor_filtered",
+"iran": "role:subject"
+},
+"489": {
+"united states": "role:location"
+},
+"490": {
+"congo": "no_mention",
+"eastern dr congo": "no_mention",
+"democratic republic of the congo": "actor_filtered",
+"nigeria": "no_mention",
+"united states": "actor_filtered",
+"united nations": "actor_filtered"
+},
+"491": {
+"china": "actor_filtered",
+"united states": "role:subject"
+},
+"492": {
+"greenland": "role:location"
+},
+"493": {
+"albania": "role:location",
+"russia": "role:location",
+"iran": "role:location"
+},
+"494": {
+"united kingdom": "role:affected"
+},
+"495": {
+"gaza": "role:location",
+"jordan": "role:target"
+},
+"497": {
+"israel": "actor_filtered"
+},
+"498": {
+"united states": "role:location"
+},
+"500": {
+"saudi arabia": "no_mention",
+"venezuela": "role:location"
+},
+"501": {
+"belize": "role:participant"
+},
+"502": {
+"ukraine": "role:subject",
+"european union": "actor_filtered"
+},
+"505": {
+"north korea": "no_mention",
+"south korea": "role:participant"
+},
+"506": {
+"iran": "no_mention",
+"united states": "actor_filtered"
+},
+"509": {
+"united kingdom": "actor_filtered",
+"netherlands": "role:subject",
+"ukraine": "role:subject",
+"russia": "role:subject"
+},
+"511": {
+"israel": "role:participant"
+},
+"512": {
+"iran": "role:target",
+"united states": "actor_filtered",
+"gaza": "role:location"
+},
+"514": {
+"israel": "actor_filtered",
+"united states": "actor_filtered",
+"iran": "no_mention",
+"palestine": "actor_filtered",
+"gaza": "role:location",
+"qatar": "role:subject",
+"américa": "no_mention",
+"italy": "actor_filtered",
+"european union": "role:institutional_context"
+},
+"515": {
+"colombia": "no_mention",
+"united nations": "role:subject",
+"israel": "role:participant",
+"france": "actor_filtered"
+},
+"516": {
+"ukraine": "role:participant"
+},
+"517": {
+"european union": "actor_filtered"
+},
+"521": {
+"united states": "role:participant"
+},
+"522": {
+"russia": "role:target"
+},
+"523": {
+"tajikistan": "role:subject",
+"turkmenistan": "role:subject"
+},
+"524": {
+"ukraine": "no_mention"
+},
+"525": {
+"united kingdom": "actor_filtered"
+},
+"526": {
+"iran": "actor_filtered"
+},
+"527": {
+"iran": "role:target"
+},
+"528": {
+"united kingdom": "role:location",
+"palestine": "no_mention"
+},
+"531": {
+"italy": "no_mention",
+"nato": "no_mention",
+"kosovo": "role:location"
+},
+"532": {
+"turkey": "role:location"
+},
+"534": {
+"gaza": "role:location",
+"united states": "no_mention"
+},
+"536": {
+"ukraine": "actor_filtered",
+"united nations": "role:institutional_context/participant",
+"spain": "role:location",
+"france": "actor_filtered",
+"italy": "role:location",
+"poland": "role:location",
+"germany": "actor_filtered",
+"european union": "actor_filtered"
+},
+"537": {
+"russia": "role:affected",
+"ukraine": "role:location",
+"dominican republic": "no_mention"
+},
+"538": {
+"haiti": "actor_filtered",
+"russia": "actor_filtered",
+"china": "actor_filtered"
+},
+"539": {
+"iran": "role:target",
+"china": "role:participant"
+},
+"541": {
+"vatican": "actor_filtered"
+},
+"543": {
+"ukraine": "actor_filtered"
+},
+"545": {
+"australia": "role:subject"
+},
+"546": {
+"china": "role:participant",
+"japan": "role:subject"
+},
+"548": {
+"indonesia": "role:location"
+},
+"549": {
+"colombia": "role:subject"
+},
+"550": {
+"iran": "role:subject",
+"oman": "no_mention"
+},
+"551": {
+"russia": "role:subject",
+"ukraine": "actor_filtered"
+},
+"552": {
+"turkey": "role:location"
+},
+"553": {
+"united states": "role:subject"
+},
+"554": {
+"united nations": "no_mention",
+"dominican republic": "no_mention"
+},
+"556": {
+"australia": "actor_filtered",
+"united nations": "no_mention"
+},
+"557": {
+"singapore": "actor_filtered",
+"malaysia": "role:target",
+"asean": "actor_filtered"
+},
+"558": {
+"united states": "role:location",
+"el salvador": "role:location"
+},
+"559": {
+"united states": "actor_filtered"
+},
+"561": {
+"ukraine": "role:subject"
+},
+"562": {
+"g20": "no_mention",
+"iran": "role:location"
+},
+"563": {
+"pakistan": "no_mention",
+"india": "role:subject",
+"panama": "no_mention",
+"france": "actor_filtered",
+"paraguay": "role:location",
+"argentina": "role:location"
+},
+"564": {
+"china": "role:participant",
+"ukraine": "role:subject",
+"france": "role:location"
+},
+"566": {
+"gaza": "role:location",
+"palestine": "no_mention",
+"israel": "no_mention",
+"united nations": "actor_filtered"
+},
+"567": {
+"pakistan": "role:location",
+"northwestern pakistan": "no_mention"
+},
+"568": {
+"libya": "no_mention"
+},
+"569": {
+"israel": "actor_filtered",
+"iran": "role:participant",
+"united states": "role:subject"
+},
+"570": {
+"spain": "no_mention"
+},
+"571": {
+"india": "actor_filtered"
+},
+"579": {
+"sudan": "role:location"
+},
+"581": {
+"european union": "role:institutional_context/location",
+"ukraine": "actor_filtered"
+},
+"582": {
+"eritrea": "role:participant"
+},
+"583": {
+"lebanon": "role:location"
+},
+"584": {
+"nato": "actor_filtered"
+},
+"586": {
+"russia": "actor_filtered"
+},
+"587": {
+"india": "role:participant"
+},
+"590": {
+"united states": "role:subject"
+},
+"591": {
+"turkey": "role:participant",
+"azerbaijan": "no_mention"
+},
+"592": {
+"united kingdom": "role:location"
+},
+"594": {
+"united states": "role:participant"
+},
+"595": {
+"palestine": "no_mention",
+"united kingdom": "role:location"
+},
+"597": {
+"afghanistan": "actor_filtered"
+},
+"599": {
+"cuba": "role:subject"
+},
+"600": {
+"qatar": "no_mention"
+},
+"603": {
+"united states": "actor_filtered"
+},
+"604": {
+"gaza": "role:location",
+"dominican republic": "no_mention"
+},
+"605": {
+"france": "role:location"
+},
+"606": {
+"russia": "role:participant/subject"
+},
+"607": {
+"european union": "actor_filtered"
+},
+"608": {
+"united states": "actor_filtered",
+"united nations": "no_mention"
+},
+"609": {
+"united states": "role:location"
+},
+"610": {
+"united states": "role:participant"
+},
+"611": {
+"united states": "role:target"
+},
+"615": {
+"iran": "role:location",
+"united states": "role:participant",
+"ukraine": "actor_filtered",
+"china": "role:participant",
+"mexico": "actor_filtered",
+"brazil": "actor_filtered"
+},
+"616": {
+"lebanon": "role:target",
+"israel": "role:participant"
+},
+"617": {
+"united states": "actor_filtered",
+"canada": "role:participant"
+},
+"618": {
+"iran": "no_mention"
+},
+"619": {
+"argentina": "role:location",
+"united states": "actor_filtered"
+},
+"621": {
+"gaza": "role:location",
+"palestine": "actor_filtered"
+},
+"622": {
+"russia": "role:location",
+"japan": "role:subject"
+},
+"624": {
+"israel": "role:participant",
+"gaza": "role:location"
+},
+"626": {
+"united nations": "no_mention",
+"china": "actor_filtered",
+"india": "role:location",
+"united states": "actor_filtered",
+"israel": "role:location",
+"saudi arabia": "actor_filtered",
+"portugal": "role:location",
+"greece": "role:location",
+"european union": "role:institutional_context",
+"italy": "role:location"
+},
+"630": {
+"palestine": "role:target",
+"united states": "actor_filtered",
+"european union": "actor_filtered",
+"france": "actor_filtered",
+"dominican republic": "no_mention",
+"gaza": "role:location",
+"united kingdom": "actor_filtered",
+"united nations": "no_mention",
+"italy": "actor_filtered"
+},
+"632": {
+"gaza": "role:location",
+"palestine": "role:participant"
+},
+"633": {
+"united states": "role:location"
+},
+"635": {
+"sudan": "no_mention"
+},
+"636": {
+"palestine": "no_mention",
+"israel": "actor_filtered",
+"united states": "role:participant"
+},
+"637": {
+"italy": "no_mention",
+"spain": "role:participant"
+},
+"638": {
+"france": "role:location"
+},
+"639": {
+"france": "actor_filtered",
+"italy": "actor_filtered",
+"venezuela": "actor_filtered",
+"united states": "actor_filtered",
+"colombia": "role:subject",
+"mexico": "role:subject",
+"israel": "actor_filtered",
+"greece": "role:location",
+"spain": "actor_filtered",
+"brazil": "role:subject",
+"albania": "role:location",
+"iran": "role:subject",
+"syria": "role:affected",
+"cuba": "role:subject",
+"russia": "actor_filtered",
+"ukraine": "no_mention",
+"portugal": "role:location",
+"chile": "role:location"
+},
+"643": {
+"united nations": "role:institutional_context"
+},
+"644": {
+"ukraine": "role:location"
+},
+"646": {
+"taiwan": "actor_filtered",
+"belize": "actor_filtered"
+},
+"647": {
+"israel": "role:participant",
+"gaza": "role:affected"
+},
+"648": {
+"spain": "no_mention"
+},
+"649": {
+"iran": "role:subject"
+},
+"650": {
+"ukraine": "role:location",
+"occupied ukraine": "no_mention",
+"russia": "actor_filtered"
+},
+"653": {
+"myanmar": "no_mention",
+"japan": "role:participant"
+},
+"656": {
+"russia": "role:participant/target",
+"ukraine": "role:location"
+},
+"657": {
+"australia": "role:target"
+},
+"659": {
+"united states": "actor_filtered",
+"israel": "role:subject"
+},
+"660": {
+"india": "role:target"
+},
+"661": {
+"israel": "no_mention",
+"palestine": "no_mention"
+},
+"662": {
+"united nations": "no_mention"
+},
+"663": {
+"france": "role:location",
+"united states": "actor_filtered",
+"russia": "role:location",
+"italy": "actor_filtered"
+},
+"664": {
+"united states": "role:location/participant"
+},
+"665": {
+"bolivia": "role:participant",
+"chile": "role:participant"
+},
+"667": {
+"guatemala": "actor_filtered"
+},
+"668": {
+"russia": "role:location"
+},
+"669": {
+"canada": "role:subject",
+"united states": "actor_filtered"
+},
+"670": {
+"canada": "no_mention",
+"united kingdom": "actor_filtered"
+},
+"671": {
+"north korea": "role:location"
+},
+"672": {
+"india": "role:location"
+},
+"674": {
+"colombia": "no_mention"
+},
+"675": {
+"united states": "role:location/participant/subject",
+"iran": "actor_filtered"
+},
+"676": {
+"lithuania": "role:location"
+},
+"677": {
+"saudi arabia": "role:affected",
+"egypt": "actor_filtered"
+},
+"680": {
+"russia": "role:location/target",
+"bulgaria": "actor_filtered",
+"germany": "role:participant"
+},
+"683": {
+"france": "role:location"
+},
+"684": {
+"gaza": "role:location",
+"israel": "actor_filtered",
+"united nations": "actor_filtered",
+"palestine": "role:affected",
+"united kingdom": "actor_filtered"
+},
+"685": {
+"india": "role:subject"
+},
+"686": {
+"bulgaria": "role:location",
+"israel": "role:participant",
+"austria": "role:subject"
+},
+"687": {
+"france": "role:location"
+},
+"689": {
+"congo": "no_mention"
+},
+"692": {
+"united nations": "no_mention",
+"israel": "actor_filtered",
+"dominican republic": "no_mention"
+},
+"693": {
+"mali": "actor_filtered"
+},
+"694": {
+"uzbekistan": "actor_filtered",
+"kazakhstan": "actor_filtered",
+"china": "actor_filtered",
+"india": "no_mention"
+},
+"697": {
+"canada": "role:location",
+"united states": "role:subject/target",
+"turkey": "role:location",
+"nato": "role:institutional_context"
+},
+"698": {
+"norway": "role:location"
+},
+"699": {
+"rural australia": "no_mention"
+},
+"700": {
+"dominican republic": "no_mention"
+},
+"702": {
+"sudan": "no_mention",
+"ethiopia": "role:location",
+"rapid support forces": "actor_filtered",
+"southern sudan": "no_mention",
+"south sudan": "role:location",
+"nigeria": "role:affected",
+"dominican republic": "no_mention"
+},
+"703": {
+"south china": "no_mention",
+"united states": "role:participant"
+},
+"704": {
+"qatar": "no_mention",
+"iran": "actor_filtered",
+"united states": "no_mention"
+},
+"705": {
+"australia": "role:location"
+},
+"706": {
+"bangladesh": "role:participant"
+},
+"707": {
+"russia": "role:location",
+"united states": "no_mention"
+},
+"708": {
+"saudi arabia": "role:location/subject"
+},
+"709": {
+"ukraine": "role:subject"
+},
+"710": {
+"russia": "role:subject"
+},
+"711": {
+"iran": "role:location",
+"united states": "role:subject",
+"ukraine": "actor_filtered"
+},
+"712": {
+"ukraine": "role:location",
+"sudan": "role:location",
+"united states": "role:affected"
+},
+"713": {
+"japan": "actor_filtered"
+},
+"714": {
+"united states": "actor_filtered"
+},
+"717": {
+"united nations": "no_mention"
+},
+"719": {
+"united states": "actor_filtered",
+"cuba": "no_mention",
+"russia": "actor_filtered",
+"vietnam": "actor_filtered",
+"ukraine": "role:location"
+},
+"722": {
+"united states": "actor_filtered"
+},
+"723": {
+"saudi arabia": "role:participant"
+},
+"725": {
+"united states": "actor_filtered",
+"russia": "role:participant",
+"china": "actor_filtered",
+"dominican republic": "no_mention"
+},
+"726": {
+"uganda": "role:location"
+},
+"727": {
+"haiti": "role:location",
+"china": "actor_filtered"
+},
+"729": {
+"canada": "role:participant"
+},
+"731": {
+"ecuador": "role:location"
+},
+"732": {
+"portugal": "role:subject"
+},
+"733": {
+"eastern spain": "no_mention"
+},
+"734": {
+"argentina": "no_mention",
+"united nations": "role:institutional_context"
+},
+"739": {
+"ethiopia": "no_mention"
+},
+"742": {
+"spain": "role:location"
+},
+"743": {
+"philippines": "role:target"
+},
+"746": {
+"united states": "actor_filtered"
+},
+"747": {
+"european union": "actor_filtered"
+},
+"753": {
+"ukraine": "actor_filtered"
+},
+"756": {
+"yemen": "role:location",
+"united nations": "actor_filtered"
+},
+"757": {
+"iran": "role:participant"
+},
+"759": {
+"nigeria": "actor_filtered"
+},
+"760": {
+"spain": "role:location",
+"américa": "no_mention"
+},
+"761": {
+"saudi arabia": "actor_filtered",
+"qatar": "actor_filtered",
+"indonesia": "actor_filtered"
+},
+"762": {
+"iran": "actor_filtered",
+"israel": "role:subject",
+"cuba": "actor_filtered"
+},
+"763": {
+"israel": "role:location",
+"gaza": "role:location"
+},
+"765": {
+"libya": "no_mention",
+"united states": "role:subject",
+"european union": "role:institutional_context",
+"united nations": "role:institutional_context",
+"greece": "actor_filtered"
+},
+"766": {
+"iran": "role:participant",
+"united states": "role:target"
+},
+"767": {
+"south africa": "role:location"
+},
+"768": {
+"afghanistan": "role:location"
+},
+"770": {
+"canada": "role:target"
+},
+"772": {
+"united states": "actor_filtered",
+"china": "actor_filtered"
+},
+"775": {
+"united states": "actor_filtered"
+},
+"777": {
+"perù": "no_mention"
+},
+"778": {
+"united states": "role:location",
+"india": "no_mention"
+},
+"779": {
+"united states": "no_mention"
+},
+"780": {
+"kenya": "actor_filtered",
+"nigeria": "actor_filtered",
+"burkina faso": "actor_filtered",
+"south africa": "role:location",
+"uganda": "role:location",
+"congo": "no_mention",
+"united nations": "actor_filtered",
+"switzerland": "actor_filtered",
+"democratic republic of the congo": "role:location"
+},
+"781": {
+"ukraine": "role:subject",
+"iran": "role:location",
+"germany": "role:participant",
+"russia": "role:participant"
+},
+"782": {
+"european union": "actor_filtered",
+"nato": "actor_filtered",
+"russia": "role:subject",
+"bulgaria": "actor_filtered",
+"ukraine": "role:subject"
+},
+"784": {
+"united states": "role:location"
+},
+"786": {
+"ukraine": "actor_filtered",
+"united states": "actor_filtered",
+"russia": "actor_filtered",
+"finland": "actor_filtered",
+"united nations": "no_mention",
+"taiwan": "role:affected"
+},
+"787": {
+"oman": "role:participant",
+"united kingdom": "role:location"
+},
+"789": {
+"united states": "role:affected"
+},
+"790": {
+"israel": "role:affected"
+},
+"791": {
+"chile": "no_mention",
+"spain": "role:participant",
+"italy": "role:participant"
+},
+"793": {
+"european union": "actor_filtered",
+"south africa": "role:subject",
+"gaza": "role:location"
+},
+"794": {
+"united states": "role:subject"
+},
+"795": {
+"central african republic": "role:subject",
+"sudan": "actor_filtered"
+},
+"796": {
+"france": "no_mention"
+},
+"798": {
+"lebanon": "role:participant",
+"southern syria": "no_mention",
+"syria": "role:location"
+},
+"799": {
+"european union": "actor_filtered"
+},
+"800": {
+"united states": "actor_filtered",
+"ukraine": "role:participant"
+},
+"801": {
+"cuba": "no_mention",
+"united states": "role:affected/subject"
+},
+"802": {
+"ukraine": "role:location/subject"
+},
+"804": {
+"united states": "role:location"
+},
+"805": {
+"pakistan": "actor_filtered",
+"iran": "role:location/target",
+"israel": "no_mention",
+"saudi arabia": "actor_filtered",
+"qatar": "actor_filtered",
+"dominican republic": "no_mention",
+"yemen": "role:subject",
+"egypt": "role:location",
+"united nations": "actor_filtered"
+},
+"806": {
+"united states": "role:target"
+},
+"807": {
+"ukraine": "actor_filtered"
+},
+"808": {
+"france": "role:participant"
+},
+"809": {
+"argentina": "role:subject"
+},
+"810": {
+"ukraine": "role:target",
+"united nations": "no_mention"
+},
+"811": {
+"united states": "actor_filtered",
+"nato": "role:institutional_context",
+"ukraine": "actor_filtered",
+"estonia": "role:participant"
+},
+"812": {
+"israel": "actor_filtered",
+"united states": "role:subject",
+"palestine": "actor_filtered",
+"gaza": "no_mention",
+"united nations": "actor_filtered",
+"united kingdom": "actor_filtered",
+"india": "role:subject"
+},
+"813": {
+"ukraine": "role:subject",
+"united states": "role:affected",
+"united nations": "no_mention"
+},
+"815": {
+"afghanistan": "role:participant"
+},
+"816": {
+"colombia": "role:location"
+},
+"818": {
+"nato": "no_mention"
+},
+"820": {
+"united states": "actor_filtered"
+},
+"824": {
+"italy": "role:subject"
+},
+"825": {
+"united states": "role:target",
+"iran": "actor_filtered"
+},
+"831": {
+"mexico": "no_mention"
+},
+"833": {
+"mexico": "actor_filtered"
+},
+"834": {
+"iran": "no_mention",
+"united states": "actor_filtered"
+},
+"836": {
+"north korea": "no_mention",
+"united nations": "role:institutional_context"
+},
+"837": {
+"haití": "no_mention",
+"haiti": "role:location"
+},
+"839": {
+"united states": "actor_filtered"
+},
+"841": {
+"venezuela": "no_mention",
+"united states": "actor_filtered",
+"mexico": "role:location",
+"colombia": "no_mention",
+"argentina": "actor_filtered",
+"ecuador": "actor_filtered"
+},
+"845": {
+"china": "actor_filtered"
+},
+"846": {
+"european union": "actor_filtered"
+},
+"848": {
+"south korea": "role:affected"
+},
+"849": {
+"united states": "role:participant"
+},
+"850": {
+"singapore": "actor_filtered"
+},
+"852": {
+"italy": "actor_filtered"
+},
+"854": {
+"southern syria": "no_mention",
+"israel": "no_mention",
+"syria": "role:location"
+},
+"855": {
+"italy": "no_mention"
+},
+"856": {
+"south africa": "role:location"
+},
+"858": {
+"china": "actor_filtered",
+"united states": "actor_filtered"
+},
+"859": {
+"united states": "role:participant"
+},
+"860": {
+"united states": "role:subject",
+"china": "role:participant"
+},
+"862": {
+"china": "role:location"
+},
+"863": {
+"united states": "actor_filtered",
+"saudi arabia": "role:subject"
+},
+"864": {
+"dominican republic": "no_mention"
+},
+"865": {
+"niger": "role:location",
+"libya": "role:location",
+"austria": "actor_filtered"
+},
+"867": {
+"taiwan": "role:participant",
+"japan": "role:participant",
+"honduras": "actor_filtered",
+"china": "role:target",
+"eastern china": "no_mention"
+},
+"868": {
+"united states": "role:location",
+"norway": "role:location",
+"russia": "role:participant"
+},
+"873": {
+"united states": "actor_filtered"
+},
+"874": {
+"china": "actor_filtered"
+},
+"875": {
+"united nations": "role:institutional_context"
+},
+"876": {
+"sudan": "no_mention"
+},
+"878": {
+"taiwan": "no_mention"
+},
+"879": {
+"united states": "role:subject"
+},
+"881": {
+"european union": "no_mention"
+},
+"883": {
+"palestine": "role:affected"
+},
+"884": {
+"european union": "actor_filtered"
+},
+"885": {
+"serbia": "no_mention",
+"european union": "actor_filtered"
+},
+"886": {
+"south korea": "role:subject"
+},
+"888": {
+"india": "role:subject"
+},
+"894": {
+"france": "role:subject"
+},
+"897": {
+"serbia": "role:location",
+"germany": "actor_filtered",
+"israel": "no_mention"
+},
+"898": {
+"united states": "no_mention"
+},
+"900": {
+"hungary": "role:participant"
+},
+"901": {
+"russia": "role:participant/subject",
+"ukraine": "role:participant",
+"occupied ukraine": "no_mention"
+},
+"903": {
+"syria": "role:location"
+},
+"904": {
+"israel": "role:participant"
+},
+"905": {
+"united states": "role:participant"
+},
+"906": {
+"france": "role:location"
+},
+"907": {
+"united states": "role:affected"
+},
+"909": {
+"romania": "role:location",
+"russia": "actor_filtered",
+"azerbaijan": "actor_filtered"
+},
+"910": {
+"united arab emirates": "role:location"
+},
+"911": {
+"united states": "role:affected"
+},
+"912": {
+"iran": "role:subject",
+"united states": "actor_filtered"
+},
+"918": {
+"canada": "role:participant"
+},
+"921": {
+"south korea": "role:location"
+},
+"923": {
+"israel": "actor_filtered",
+"lebanon": "actor_filtered",
+"iran": "role:participant",
+"united states": "actor_filtered",
+"united nations": "no_mention",
+"gaza": "role:location",
+"palestine": "actor_filtered",
+"syria": "no_mention",
+"qatar": "role:subject",
+"germany": "actor_filtered"
+},
+"924": {
+"gaza": "role:location"
+},
+"925": {
+"france": "role:participant"
+},
+"927": {
+"greece": "actor_filtered",
+"united kingdom": "role:location",
+"italy": "role:location"
+},
+"935": {
+"serbia": "role:location",
+"israel": "role:location"
+},
+"936": {
+"germany": "role:location"
+},
+"937": {
+"china": "actor_filtered"
+},
+"938": {
+"united arab emirates": "no_mention",
+"european union": "role:institutional_context"
+},
+"940": {
+"france": "role:location",
+"united states": "actor_filtered",
+"israel": "actor_filtered",
+"italy": "no_mention"
+},
+"943": {
+"ukraine": "actor_filtered"
+},
+"944": {
+"iran": "role:subject"
+},
+"945": {
+"ukraine": "role:location",
+"russia": "role:location"
+},
+"947": {
+"china": "no_mention",
+"japan": "role:participant",
+"taiwan": "role:location"
+},
+"949": {
+"iran": "actor_filtered",
+"united nations": "no_mention"
+},
+"950": {
+"sudan": "role:affected"
+},
+"951": {
+"albania": "role:location"
+},
+"952": {
+"china": "role:participant",
+"russia": "role:participant/subject",
+"united nations": "role:affected",
+"ukraine": "actor_filtered"
+},
+"954": {
+"venezuela": "no_mention",
+"united states": "actor_filtered"
+},
+"956": {
+"afghanistan": "no_mention",
+"pakistan": "role:participant"
+},
+"957": {
+"saudi arabia": "role:target"
+},
+"961": {
+"gaza": "role:location"
+},
+"962": {
+"iran": "actor_filtered",
+"saudi arabia": "actor_filtered",
+"pakistan": "actor_filtered",
+"turkey": "actor_filtered",
+"united states": "actor_filtered",
+"yemen": "actor_filtered",
+"dominican republic": "no_mention",
+"united nations": "actor_filtered",
+"israel": "role:participant"
+},
+"963": {
+"united states": "no_mention"
+},
+"965": {
+"niger": "role:affected"
+},
+"966": {
+"united states": "no_mention"
+},
+"967": {
+"israel": "role:target"
+},
+"968": {
+"united kingdom": "role:participant"
+},
+"969": {
+"united states": "actor_filtered",
+"japan": "role:location"
+},
+"972": {
+"european union": "actor_filtered"
+},
+"975": {
+"united kingdom": "role:location"
+},
+"977": {
+"china": "role:subject"
+},
+"978": {
+"ukraine": "role:target"
+},
+"979": {
+"russia": "role:participant",
+"ukraine": "actor_filtered",
+"nato": "no_mention"
+},
+"980": {
+"ethiopia": "role:location"
+},
+"982": {
+"united states": "role:location",
+"south america": "no_mention",
+"vatican": "actor_filtered"
+},
+"983": {
+"ukraine": "role:affected/location/participant",
+"european union": "actor_filtered",
+"united nations": "actor_filtered",
+"netherlands": "actor_filtered",
+"united kingdom": "actor_filtered",
+"russia": "actor_filtered",
+"france": "role:participant"
+},
+"986": {
+"united states": "actor_filtered"
+},
+"987": {
+"palestine": "role:participant",
+"sri lanka": "no_mention",
+"israel": "actor_filtered"
+},
+"988": {
+"mexico": "role:subject",
+"niger": "role:location"
+},
+"989": {
+"sudan": "role:location",
+"south sudan": "no_mention"
+},
+"991": {
+"australia": "role:location"
+},
+"994": {
+"g20": "no_mention",
+"united states": "role:subject",
+"georgia": "no_mention"
+},
+"996": {
+"russia": "actor_filtered",
+"ukraine": "actor_filtered",
+"norway": "actor_filtered",
+"iraq": "role:location",
+"finland": "no_mention",
+"united states": "actor_filtered",
+"nato": "role:institutional_context"
+},
+"998": {
+"sudan": "role:location"
+},
+"999": {
+"palestine": "actor_filtered"
+},
+"1001": {
+"israel": "role:location"
+},
+"1003": {
+"india": "role:participant"
+},
+"1004": {
+"south korea": "role:participant"
+},
+"1005": {
+"north korea": "role:participant"
+},
+"1006": {
+"united kingdom": "role:location",
+"iran": "no_mention"
+},
+"1008": {
+"nigeria": "role:location",
+"northeastern nigeria": "no_mention"
+},
+"1009": {
+"philippines": "actor_filtered",
+"asean": "role:institutional_context",
+"japan": "role:subject",
+"china": "actor_filtered"
+},
+"1010": {
+"china": "role:participant"
+},
+"1011": {
+"poland": "role:participant"
+},
+"1019": {
+"bahamas": "role:location"
+},
+"1020": {
+"sudan": "role:participant",
+"united nations": "role:institutional_context",
+"united arab emirates": "role:participant"
+},
+"1021": {
+"russia": "role:participant"
+},
+"1023": {
+"haiti": "no_mention",
+"haití": "no_mention"
+},
+"1026": {
+"russia": "role:location/target"
+},
+"1027": {
+"spain": "role:location",
+"united states": "actor_filtered",
+"italy": "actor_filtered",
+"argentina": "no_mention",
+"china": "actor_filtered",
+"australia": "actor_filtered",
+"portugal": "actor_filtered"
+},
+"1028": {
+"spain": "role:location",
+"southern spain": "no_mention",
+"central spain": "no_mention",
+"italy": "actor_filtered"
+},
+"1031": {
+"european union": "actor_filtered",
+"china": "role:location/participant"
+},
+"1032": {
+"russia": "actor_filtered",
+"china": "no_mention"
+},
+"1033": {
+"gaza": "role:location"
+},
+"1035": {
+"india": "role:location",
+"southern india": "no_mention"
+},
+"1036": {
+"cambodia": "role:location",
+"united states": "actor_filtered"
+},
+"1037": {
+"yemen": "no_mention"
+},
+"1038": {
+"international criminal court": "no_mention"
+},
+"1039": {
+"russia": "role:location"
+},
+"1040": {
+"cuba": "no_mention",
+"venezuela": "role:subject",
+"india": "no_mention"
+},
+"1042": {
+"united nations": "no_mention",
+"zimbabwe": "role:location",
+"ukraine": "role:location"
+},
+"1045": {
+"kenya": "role:subject"
+},
+"1047": {
+"united states": "actor_filtered"
+},
+"1048": {
+"united nations": "no_mention"
+},
+"1049": {
+"united states": "actor_filtered"
+},
+"1051": {
+"ukraine": "role:location"
+},
+"1054": {
+"nato": "no_mention",
+"united states": "role:participant"
+},
+"1055": {
+"united states": "role:subject"
+},
+"1056": {
+"united states": "actor_filtered",
+"congo": "no_mention",
+"rwanda": "role:target"
+},
+"1058": {
+"sudan": "role:location",
+"france": "actor_filtered",
+"iran": "role:location",
+"afghanistan": "role:subject"
+},
+"1059": {
+"european union": "role:institutional_context"
+},
+"1060": {
+"israel": "actor_filtered",
+"iran": "role:target"
+},
+"1061": {
+"china": "role:affected"
+},
+"1062": {
+"india": "role:location"
+},
+"1063": {
+"ukraine": "role:subject"
+},
+"1064": {
+"united states": "role:location"
+},
+"1066": {
+"united nations": "no_mention",
+"gaza": "no_mention"
+},
+"1067": {
+"iran": "role:target"
+},
+"1068": {
+"japan": "actor_filtered",
+"china": "role:location"
+},
+"1070": {
+"spain": "role:location"
+},
+"1071": {
+"united states": "no_mention",
+"ukraine": "role:participant"
+},
+"1072": {
+"russia": "role:location/participant"
+},
+"1073": {
+"united states": "actor_filtered"
+},
+"1077": {
+"malaysia": "role:participant"
+},
+"1079": {
+"russia": "role:location"
+},
+"1080": {
+"united states": "role:subject"
+},
+"1082": {
+"el salvador": "actor_filtered",
+"european union": "role:participant"
+},
+"1083": {
+"south america": "no_mention",
+"united states": "role:location"
+},
+"1084": {
+"united states": "actor_filtered"
+},
+"1086": {
+"ukraine": "actor_filtered"
+},
+"1091": {
+"european union": "role:institutional_context"
+},
+"1092": {
+"italy": "no_mention"
+},
+"1093": {
+"south korea": "role:location"
+},
+"1094": {
+"mexico": "role:location"
+},
+"1096": {
+"ukraine": "role:affected",
+"canada": "actor_filtered"
+},
+"1099": {
+"turkey": "role:location"
+},
+"1100": {
+"germany": "role:location"
+},
+"1103": {
+"oman": "actor_filtered"
+},
+"1104": {
+"north korea": "role:subject",
+"united states": "actor_filtered"
+},
+"1107": {
+"perù": "no_mention",
+"el salvador": "role:participant",
+"peru": "actor_filtered"
+},
+"1109": {
+"united states": "no_mention",
+"canada": "no_mention"
+},
+"1112": {
+"united states": "role:location/subject",
+"g20": "role:institutional_context"
+},
+"1114": {
+"united states": "actor_filtered",
+"russia": "role:participant/subject"
+},
+"1115": {
+"japan": "role:subject",
+"south korea": "role:participant"
+},
+"1116": {
+"turkey": "role:location"
+},
+"1117": {
+"pakistan": "role:location"
+},
+"1118": {
+"united states": "no_mention"
+},
+"1120": {
+"américa": "no_mention"
+},
+"1121": {
+"united states": "actor_filtered"
+},
+"1123": {
+"north korea": "role:subject"
+},
+"1124": {
+"palestine": "role:location"
+},
+"1125": {
+"united states": "actor_filtered"
+},
+"1126": {
+"italy": "role:location",
+"france": "no_mention",
+"germany": "no_mention"
+},
+"1127": {
+"iran": "actor_filtered",
+"dominican republic": "no_mention",
+"united arab emirates": "no_mention"
+},
+"1130": {
+"vatican": "actor_filtered",
+"united states": "role:location/participant"
+},
+"1131": {
+"united states": "role:location/participant"
+},
+"1135": {
+"kosovo": "role:participant"
+},
+"1137": {
+"france": "role:location",
+"germany": "role:location"
+},
+"1138": {
+"china": "role:location",
+"russia": "role:location/participant",
+"united states": "actor_filtered",
+"ukraine": "role:location"
+},
+"1139": {
+"north korea": "role:participant"
+},
+"1140": {
+"gaza": "role:location"
+},
+"1142": {
+"south africa": "role:location"
+},
+"1143": {
+"european union": "actor_filtered"
+},
+"1144": {
+"poland": "role:location",
+"united states": "actor_filtered",
+"france": "role:subject"
+},
+"1145": {
+"united nations": "actor_filtered"
+},
+"1146": {
+"g20": "role:institutional_context",
+"russia": "actor_filtered"
+},
+"1147": {
+"ukraine": "actor_filtered",
+"nato": "role:institutional_context",
+"russia": "actor_filtered"
+},
+"1148": {
+"european union": "actor_filtered"
+},
+"1149": {
+"united nations": "actor_filtered",
+"united states": "role:subject",
+"russia": "role:subject"
+},
+"1150": {
+"congo": "no_mention"
+},
+"1152": {
+"united states": "role:subject"
+},
+"1153": {
+"russia": "actor_filtered",
+"turkey": "role:location"
+},
+"1157": {
+"united states": "role:subject"
+},
+"1158": {
+"iran": "role:subject",
+"israel": "actor_filtered"
+},
+"1161": {
+"israel": "actor_filtered"
+},
+"1163": {
+"albania": "role:location"
+},
+"1171": {
+"qatar": "role:subject"
+},
+"1173": {
+"ecuador": "no_mention"
+},
+"1177": {
+"mexico": "no_mention",
+"united states": "role:location"
+},
+"1178": {
+"united states": "role:participant"
+},
+"1179": {
+"united states": "actor_filtered",
+"russia": "actor_filtered"
+},
+"1180": {
+"yemen": "role:location",
+"european union": "role:institutional_context"
+},
+"1181": {
+"united states": "role:location",
+"united nations": "no_mention",
+"pakistan": "role:subject"
+},
+"1182": {
+"palestine": "actor_filtered",
+"gaza": "no_mention"
+},
+"1184": {
+"israel": "actor_filtered"
+},
+"1188": {
+"australia": "role:location"
+},
+"1190": {
+"united states": "role:location/subject"
+},
+"1191": {
+"italy": "role:participant",
+"mexico": "no_mention"
+},
+"1192": {
+"spain": "actor_filtered"
+},
+"1194": {
+"southern lebanon": "no_mention",
+"gaza": "role:location",
+"lebanon": "role:subject",
+"palestine": "role:participant"
+},
+"1197": {
+"china": "role:location"
+}
+}
+}
