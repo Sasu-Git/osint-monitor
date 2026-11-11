@@ -28,3 +28,10 @@ An amendment is a new dated section here with new hashes. Any amendment after th
 
 **Next:** build the candidate against the diagnostic set (no acceptance use), show the OD7 scope mapping to the owner,
 freeze the code, open the window.
+
+## Amendment 1 (2026-11-11, before the holdout window): seeded Situation scope metadata
+
+Owner instruction (upstream hardening track 5): the five seeded Situations get explicit, versioned topic families and
+place scopes as curated metadata, in `seeded-scopes.yaml` (v1, sha256 `dd036990f5a93cff8c1c9eac5f836252b79b2b4a2524b2570bbd51bee269f8f5`). This fills the gap the diagnostic
+replay exposed (seeded Situations had no families, so OD5/OD6 could never pass on them). Contract text unchanged;
+`§1.5`/`§2` already assign seeded scope to the owner. The window has not opened; no other frozen value changes.

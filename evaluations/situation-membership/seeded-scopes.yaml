@@ -1,0 +1,32 @@
+version: 1
+kind: seeded_situation_scopes
+status: "curated metadata (owner instruction 2026-11-11, upstream hardening track 5); amendable until the holdout window opens"
+author: "agent draft, adopted per owner instruction; values below are curated from each seed's own description and keywords, not replay-derived"
+note: >
+  CONTRACT-V2-R2 §1.5/§2: seeded Situations have owner-written scope. Until v2 ships, this file is the versioned
+  scope source for seeded Situations in v2 replays; at deployment it moves into config/situations.yaml. Families use
+  the §1.1 names. place_scope lists gazetteer country keys; it never widens automatically. Known open point for the
+  owner: diplomacy ABOUT a Situation hosted in a third country (talks in Istanbul or Geneva) is out of place scope by
+  design here — if that should count, the owner widens the scope with a dated entry, per D5.
+
+situations:
+  - slug: us-iran
+    families: [diplomacy, economic, security, armed_conflict]
+    place_scope: [iran, united states, iraq, oman, qatar]
+    reason: "Talks, sanctions pressure and incidents, including through Iraq-based groups and Gulf venues (seed description + keywords: nuclear, JCPOA, sanctions, Hormuz)"
+  - slug: russia-ukraine-war
+    families: [armed_conflict, diplomacy, security]
+    place_scope: [russia, ukraine, belarus]
+    reason: "Front-line fighting, strikes and ceasefire diplomacy (seed description). Place scope stays Ukraine/Russia per ruling D6, plus Belarus as a staging party; spillover into other countries stays spillover"
+  - slug: eu-china-trade
+    families: [economic, diplomacy, politics]
+    place_scope: [china, belgium, germany, france, italy, spain, netherlands, poland]
+    reason: "Tariffs, export controls and subsidies (seed keywords); Brussels institutions and the large member states as the EU side's places, since the EU itself is not a gazetteer country"
+  - slug: gaza-ceasefire
+    families: [diplomacy, armed_conflict, security]
+    place_scope: [israel, palestine, egypt, qatar]
+    reason: "Ceasefire, hostages, mediation and humanitarian access (seed keywords); Hamas is not a country, so Palestine enters the place scope explicitly; Egypt and Qatar as the standing mediation venues"
+  - slug: sudan-civil-war
+    families: [armed_conflict, security]
+    place_scope: [sudan]
+    reason: "SAF-RSF war (seed keywords: El Fasher, Darfur, Khartoum, famine). Refugee and border effects in Chad stay spillover"
