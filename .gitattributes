@@ -2,3 +2,7 @@
 evaluations/clustering/** text eol=lf
 evaluations/entities/gold/** text eol=lf
 evaluations/identity/** text eol=lf
+# Situation membership v2 rev 2: frozen files verified by SHA-256 (LF bytes).
+evaluations/situation-membership/CONTRACT-V2-R2.md text eol=lf
+evaluations/situation-membership/PREREGISTRATION-V2-R2.md text eol=lf
+evaluations/situation-membership/scope-overrides/** text eol=lf

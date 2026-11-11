@@ -1,0 +1,558 @@
+version: 1
+kind: situation_scope_overrides
+source: owner intended scopes from the 126-case review (evalset/subsample/owner-labels-subsample.yaml, labels frozen 57fef39)
+adopted_by: owner ruling OD7, 2026-11-11
+status: design input; not acceptance evidence
+timestamp_basis: the time the review labels were frozen; individual scope saves were not timestamped
+mapping_note: new_value is the owner's text verbatim. It is mapped to topic families and countries at implementation, and
+  the mapping is shown to the owner before the code freeze.
+overrides:
+- slug: china-united-states
+  author: Owner
+  timestamp: '2026-11-10T20:17:49Z'
+  previous_value:
+    source: derived from founders (scopes.json)
+    domains:
+    - diplomacy
+    event_types:
+    - negotiation
+    - summit
+    specific_places:
+    - asean
+    - east room
+    - futurechina business forum
+    - great hall of the people
+    - hong kong
+    - middle east
+    - new york
+    - oval office
+    - san francisco
+    - shenzhen
+    - south
+    - south lawn
+  new_value:
+    domains_or_types:
+    - meeting between the two leaders held in Washington
+    - USA
+    places:
+    - Washington
+    - USA
+    note: null
+  reason: Owner intended scope recorded in the 126-case membership review
+- slug: france-pope
+  author: Owner
+  timestamp: '2026-11-10T20:17:49Z'
+  previous_value:
+    source: derived from founders (scopes.json)
+    domains:
+    - political
+    - security
+    event_types:
+    - election
+    - warning
+    specific_places:
+    - elysee palace
+    - paris
+  new_value:
+    domains_or_types:
+    - Pope warning; Pope future visit
+    places:
+    - Rome (where warning comes from); Paris (where the Pope will be)
+    note: null
+  reason: Owner intended scope recorded in the 126-case membership review
+- slug: eritrea-ethiopia
+  author: Owner
+  timestamp: '2026-11-10T20:17:49Z'
+  previous_value:
+    source: derived from founders (scopes.json)
+    domains:
+    - military
+    - political
+    - unknown
+    event_types:
+    - military_action
+    - policy_change
+    - unknown
+    specific_places:
+    - addis
+    - addis ababa
+    - asmara
+    - baidoa
+    - idlib
+    - mekelle
+    - south west state
+    - taftanaz
+    - tigray
+    - tigray eritrea
+  new_value:
+    domains_or_types:
+    - Ethiopia's army says it has repelled attacks; Somali army clashes; Eritrea severs diplomatic ties with Ethiopia
+    places:
+    - Ethiopia; Somalia; Eritrea
+    note: 3 different developments
+  reason: Owner intended scope recorded in the 126-case membership review
+- slug: nato-russia
+  author: Owner
+  timestamp: '2026-11-10T20:17:49Z'
+  previous_value:
+    source: derived from founders (scopes.json)
+    domains:
+    - security
+    event_types:
+    - warning
+    specific_places:
+    - baltic sea
+    - europe
+    - kaliningrad
+    - west
+  new_value:
+    domains_or_types:
+    - Russia nuclear warning (military); NATO drafting strategy (military)
+    places:
+    - Russia
+    note: NATO is a military alliance, not a place.
+  reason: Owner intended scope recorded in the 126-case membership review
+- slug: christa-pike-pike
+  author: Owner
+  timestamp: '2026-11-10T20:17:49Z'
+  previous_value:
+    source: derived from founders (scopes.json)
+    domains:
+    - political
+    event_types:
+    - commentary
+    specific_places:
+    - middle east
+    - nashville
+    - tennessee
+  new_value:
+    domains_or_types:
+    - Topical news
+    places:
+    - Tennessee
+    note: null
+  reason: Owner intended scope recorded in the 126-case membership review
+- slug: russia-united-states
+  author: Owner
+  timestamp: '2026-11-10T20:17:49Z'
+  previous_value:
+    source: derived from founders (scopes.json)
+    domains:
+    - diplomacy
+    event_types:
+    - negotiation
+    - significant_statement
+    specific_places:
+    - black sea
+    - california
+    - crimea
+    - europe
+    - irkutsk
+    - irkutsk anti-plague institute
+    - oval office
+    - siberia
+    - siberia russian
+  new_value:
+    domains_or_types:
+    - Russian lab worker;Trump blames Democrats and Ukraine;Washington preme su Mosca
+    places:
+    - Russia; USA; USA;
+    note: null
+  reason: Owner intended scope recorded in the 126-case membership review
+- slug: european-union-russia
+  author: Owner
+  timestamp: '2026-11-10T20:17:49Z'
+  previous_value:
+    source: derived from founders (scopes.json)
+    domains:
+    - economic
+    event_types:
+    - sanctions
+    specific_places: []
+  new_value:
+    domains_or_types:
+    - USA not removing diplomats from Kyiv (diplomacy); Lithuania calls for EU sanctions (Politics; diplomacy)
+    places:
+    - USA; Lithuania
+    note: When some minor country (e.g.) Lithuania calls for EU to do anything, and these calls are not picked up by any other
+      memebr state, it should not surface
+  reason: Owner intended scope recorded in the 126-case membership review
+- slug: donald-j-trump-united-states
+  author: Owner
+  timestamp: '2026-11-10T20:17:49Z'
+  previous_value:
+    source: derived from founders (scopes.json)
+    domains:
+    - political
+    - unknown
+    event_types:
+    - policy_change
+    - unknown
+    specific_places:
+    - alaska
+    - beluga
+    - iowa
+    - map
+    - maryland
+    - massachusetts
+    - nebraska
+    - texas
+    - virginia
+  new_value:
+    domains_or_types:
+    - President Trump Actions
+    places:
+    - USA;
+    note: Topical news; Politics; Economics;
+  reason: Owner intended scope recorded in the 126-case membership review
+- slug: elon-musk-musk
+  author: Owner
+  timestamp: '2026-11-10T20:17:49Z'
+  previous_value:
+    source: derived from founders (scopes.json)
+    domains:
+    - unknown
+    event_types:
+    - unknown
+    specific_places:
+    - asia
+  new_value:
+    domains_or_types:
+    - Topical Tech News; Politics (donations in D447)
+    places:
+    - India; USA
+    note: Midterms are held in the USA, so USA is the second Place
+  reason: Owner intended scope recorded in the 126-case membership review
+- slug: rachel-simon
+  author: Owner
+  timestamp: '2026-11-10T20:17:49Z'
+  previous_value:
+    source: derived from founders (scopes.json)
+    domains:
+    - unknown
+    event_types:
+    - unknown
+    specific_places:
+    - hawaii
+    - pacific
+    - pacific coast
+    - pacific coast hurricane
+  new_value:
+    domains_or_types:
+    - Natural calamities
+    places:
+    - Mexico
+    note: null
+  reason: Owner intended scope recorded in the 126-case membership review
+- slug: israel-palestine
+  author: Owner
+  timestamp: '2026-11-10T20:17:49Z'
+  previous_value:
+    source: derived from founders (scopes.json)
+    domains:
+    - military
+    - political
+    event_types:
+    - election
+    - military_action
+    specific_places:
+    - gaza
+    - quneitra
+    - west bank
+    - west bank domain
+  new_value:
+    domains_or_types:
+    - Armed conflict development
+    - military; War testimony
+    - security (D237); War testimony
+    - security
+    - economic (D295); Armed conflict development
+    - military; Political piece
+    places:
+    - Israel; Gaza;
+    note: null
+  reason: Owner intended scope recorded in the 126-case membership review
+- slug: malaysia-singapore
+  author: Owner
+  timestamp: '2026-11-10T20:17:49Z'
+  previous_value:
+    source: derived from founders (scopes.json)
+    domains:
+    - unknown
+    event_types:
+    - unknown
+    specific_places:
+    - johor
+    - kuala lumpur
+    - southeast asia
+  new_value:
+    domains_or_types:
+    - Natural calamity; Security and natural calamity's consequence
+    places:
+    - Singapore; Malaysia; Indonesia;
+    note: null
+  reason: Owner intended scope recorded in the 126-case membership review
+- slug: china-taiwan
+  author: Owner
+  timestamp: '2026-11-10T20:17:49Z'
+  previous_value:
+    source: derived from founders (scopes.json)
+    domains:
+    - diplomacy
+    - military
+    event_types:
+    - deployment
+    - significant_statement
+    specific_places:
+    - charleston
+    - china meridional
+    - dongsha island
+    - hualien
+    - kaohsiung
+    - pingtung
+    - pratas
+    - sabina shoal
+    - south china sea
+    - spratly
+    - spratly islands
+    - taipei
+  new_value:
+    domains_or_types:
+    - 'D503: diplomacy; D546: military'
+    - economic
+    - 'security; D703: military'
+    - security
+    places:
+    - China; Taiwan
+    note: null
+  reason: Owner intended scope recorded in the 126-case membership review
+- slug: javier-milei-milei
+  author: Owner
+  timestamp: '2026-11-10T20:17:49Z'
+  previous_value:
+    source: derived from founders (scopes.json)
+    domains:
+    - unknown
+    event_types:
+    - unknown
+    specific_places:
+    - buenos aires
+    - ceuta
+    - gobierno de javier milei
+  new_value:
+    domains_or_types:
+    - 'D619: economic'
+    - 'political; D760: economic'
+    - political
+    places:
+    - D619 Argentina; D760 Spain
+    note: Javier Milei clearly only concerns D619
+  reason: Owner intended scope recorded in the 126-case membership review
+- slug: mexico-united-states
+  author: Owner
+  timestamp: '2026-11-10T20:17:49Z'
+  previous_value:
+    source: derived from founders (scopes.json)
+    domains:
+    - security
+    event_types:
+    - security_incident
+    specific_places: []
+  new_value:
+    domains_or_types:
+    - 'D657: security incident'
+    - 'isolated incident; D833: security incident'
+    - isolated incident
+    places:
+    - Mexico;
+    note: Should be given less priority/weight unless the news is cited, commented or reported by PMs, Defense ministries
+      or equivalent
+  reason: Owner intended scope recorded in the 126-case membership review
+- slug: bukele-el-salvador-nayib-bukele
+  author: Owner
+  timestamp: '2026-11-10T20:17:49Z'
+  previous_value:
+    source: derived from founders (scopes.json)
+    domains:
+    - security
+    - unknown
+    event_types:
+    - threat
+    - unknown
+    specific_places:
+    - puerto principe
+    - san salvador
+  new_value:
+    domains_or_types:
+    - 'D501: Security'
+    - 'political; D837: security'
+    - threat
+    places:
+    - El Salvador;
+    note: null
+  reason: Owner intended scope recorded in the 126-case membership review
+- slug: china-chinas-long-march
+  author: Owner
+  timestamp: '2026-11-10T20:17:49Z'
+  previous_value:
+    source: derived from founders (scopes.json)
+    domains:
+    - unknown
+    event_types:
+    - unknown
+    specific_places: []
+  new_value:
+    domains_or_types:
+    - 'D687: Society'
+    - 'Politics; D845: Security'
+    - Politics
+    - Public address
+    places:
+    - China;
+    note: '"Chinas long march" is not an Identity or Country; China is'
+  reason: Owner intended scope recorded in the 126-case membership review
+- slug: international-criminal-court-united-states
+  author: Owner
+  timestamp: '2026-11-10T20:17:49Z'
+  previous_value:
+    source: derived from founders (scopes.json)
+    domains:
+    - economic
+    - unknown
+    event_types:
+    - sanctions
+    - unknown
+    specific_places:
+    - africa
+    - gaza
+  new_value:
+    domains_or_types:
+    - 'D793: Politics'
+    - 'appointment/nomination; D846: Cerimony'
+    - award
+    places:
+    - EU; Aia/Aja (Netherlands)
+    note: '"EU appoints" it''s clearly a political event (appointment) that can be located in the EU (Brussels); The "Corte
+      Penale Internazionale" is located in the Netherlands, so that would be the appropriate tag'
+  reason: Owner intended scope recorded in the 126-case membership review
+- slug: machado-maria-corina-machado
+  author: Owner
+  timestamp: '2026-11-10T20:17:49Z'
+  previous_value:
+    source: derived from founders (scopes.json)
+    domains:
+    - political
+    event_types:
+    - election
+    specific_places:
+    - caracas
+    - lara
+    - plaza del pueblo
+    - santa rosa
+  new_value:
+    domains_or_types:
+    - 'D841: political; D954: political'
+    - election
+    places:
+    - Venezuela;
+    note: null
+  reason: Owner intended scope recorded in the 126-case membership review
+- slug: emmanuel-macron-france-macron
+  author: Owner
+  timestamp: '2026-11-10T20:17:49Z'
+  previous_value:
+    source: derived from founders (scopes.json)
+    domains:
+    - diplomacy
+    event_types:
+    - significant_statement
+    specific_places:
+    - bahrein
+    - eliseo
+    - emiratos
+    - emiratos arabes unidos
+    - golfo
+    - golfo persico
+    - gulf
+    - marseille
+  new_value:
+    domains_or_types:
+    - 'D708: diplomacy / significant_statement; D973: political'
+    - significant_statement
+    places:
+    - France;
+    note: null
+  reason: Owner intended scope recorded in the 126-case membership review
+- slug: canada-european-union
+  author: Owner
+  timestamp: '2026-11-10T20:17:49Z'
+  previous_value:
+    source: derived from founders (scopes.json)
+    domains:
+    - diplomacy
+    event_types:
+    - summit
+    specific_places:
+    - americas
+    - arctic
+    - europe
+    - montreal
+    - oslo
+    - ottawa
+    - vienna
+  new_value:
+    domains_or_types:
+    - 'D1051: diplomacy / significant_statement; D1073: diplomacy / significant_statement'
+    places:
+    - Canada; EU;
+    note: null
+  reason: Owner intended scope recorded in the 126-case membership review
+- slug: afghanistan-taliban
+  author: Owner
+  timestamp: '2026-11-10T20:17:49Z'
+  previous_value:
+    source: derived from founders (scopes.json)
+    domains:
+    - political
+    - unknown
+    event_types:
+    - policy_change
+    - unknown
+    specific_places: []
+  new_value:
+    domains_or_types:
+    - 'D1089: political'
+    - security
+    - 'threat; D1181: diplomacy'
+    - security
+    - migration
+    - significant_statement
+    places:
+    - Afghanistan; Pakistan
+    note: 'Here D1181 can be ambiguous because of "US Plan": the place is still Afghanistan but it would have to be made clear
+      where the deportations D1181 is referring to are happening (meaning from where to where)'
+  reason: Owner intended scope recorded in the 126-case membership review
+- slug: democrat-united-states
+  author: Owner
+  timestamp: '2026-11-10T20:17:49Z'
+  previous_value:
+    source: derived from founders (scopes.json)
+    domains:
+    - military
+    - political
+    event_types:
+    - election
+    - military_action
+    specific_places:
+    - detroit
+    - iowa
+    - kansas
+    - michigan
+  new_value:
+    domains_or_types:
+    - 'D1084: Political/election; D1174: election; D1189: political/election'
+    places:
+    - USA
+    note: 'Important: Republicans "have a shot" is tagged as military/military_action: that''s a clear mistake we should be
+      able to fix'
+  reason: Owner intended scope recorded in the 126-case membership review
