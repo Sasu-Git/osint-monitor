@@ -320,12 +320,35 @@ def development_actors(items: list[dict], nlp=None, normalizer: ActorNormalizer 
     # principal = the role says it acts, consistently across the evidence: its dominant role is "actor"
     # and its actor support reaches the same threshold as before (1 for 1-2 items, else 1.5 / 25%)
     need = required_support(len(dev.items))
-    principals = {h for h, role in dev.roles.items() if role == "actor" and dev.weights[h].get("actor", 0.0) >= need}
+    acting = {h for h, role in dev.roles.items() if role == "actor"}
+    principals = {h for h in acting if dev.weights[h].get("actor", 0.0) >= need}
     # lead sentences support the actors headlines name; they add none of their own ("The Pentagon
     # declined to comment") unless no headline names an actor at all
     if dev.headline_actors:
         principals &= dev.headline_actors
+    principals |= _key_level_principals(acting, principals, dev, need, normalizer)
     return DevelopmentActors(principals, dev.roles, selection)
+
+
+def _key_level_principals(acting: set[str], chosen: set[str], dev, need: float, normalizer: ActorNormalizer) -> set[str]:
+    """Support is counted per actor, not per name (module docstring, stage 4): "Russia" and "Kremlin", or
+    "United States" and "Rubio", in different headlines are one actor. When no name of an actor reaches the
+    threshold alone but its names together do, the actor's best-supported name becomes principal (ties: the name
+    that is the actor's own key). The headline gate applies at actor level. Actors with a name already chosen,
+    or with a single name, are untouched."""
+    by_key: dict[str, list[str]] = defaultdict(list)
+    for h in acting:
+        by_key[normalizer.key(h) or h].append(h)
+    headline_keys = {normalizer.key(h) or h for h in dev.headline_actors}
+    out = set()
+    for key, names in by_key.items():
+        if len(names) < 2 or any(h in chosen for h in names):
+            continue
+        if dev.headline_actors and key not in headline_keys:
+            continue
+        if sum(dev.weights[h].get("actor", 0.0) for h in names) >= need:
+            out.add(max(names, key=lambda h: (dev.weights[h].get("actor", 0.0), h == key, h)))
+    return out
 
 
 def principal_keys(nlp, items: list[tuple[str, str]], normalizer: ActorNormalizer | None = None) -> set[str]:
