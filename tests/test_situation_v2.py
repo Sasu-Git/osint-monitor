@@ -86,3 +86,17 @@ def test_hazard_lexicon_and_storm_name():
     assert V.hazard_of(["Hurricane Rachel batters Mexico"]) == ("storm", "rachel")
     assert V.hazard_of(["Terremoto in Turchia"])[0] == "earthquake"
     assert V.hazard_of(["Talks resume in Geneva"]) is None
+
+
+def test_chronological_creation_and_membership():
+    pc = lambda keys: {k for k in keys if k in ("russia", "ukraine", "argentina")}   # noqa: E731
+    a = dev(eid=1)
+    b = dev(eid=2, at=T0 + timedelta(hours=3))
+    c = dev(eid=3, at=T0 + timedelta(days=2))
+    g1 = dev(parties=("united states",), family="politics", places={"miami": "united states"}, eid=4)
+    g2 = dev(parties=("united states",), family="politics", places={"ohio": "united states"}, eid=5,
+             at=T0 + timedelta(days=1))
+    out = V.chronological([a, b, c, g1, g2], [], pc)
+    slugs = [s.slug for s in out["situations"]]
+    assert slugs == ["russia-ukraine:armed_conflict"]                      # generic single party never founds
+    assert out["assigned"] == {1: slugs[0], 2: slugs[0], 3: slugs[0]}      # founders + a later member

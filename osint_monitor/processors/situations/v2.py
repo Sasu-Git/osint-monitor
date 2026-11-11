@@ -290,6 +290,97 @@ def derive_automatic(slug: str, anchors: frozenset[str], founders: list[DevFeatu
     return [], "no anchor parties and no two founders share a hazard and country"
 
 
+def creation_keys(d: DevFeatures) -> list[tuple]:
+    """§1.2-1.4: the identity keys a Development can found, if it may found at all (occurrence, not mixed)."""
+    if not d.occurrence or d.mixed:
+        return []
+    keys = []
+    if d.has_principals and d.family and len(d.parties) >= 2:
+        keys.append(("actor_process", d.parties, d.family))
+    if d.has_principals and d.family and d.event_country and len(d.parties) == 1:
+        p = next(iter(d.parties))
+        if p not in GENERIC_PARTIES:                    # OD1/OD6: a widely shared actor never founds on identity alone
+            keys.append(("single_party", frozenset({p}), d.family, d.event_country))
+    if d.hazard and d.event_country:
+        keys.append(("hazard", d.hazard[0], d.event_country, d.hazard[1]))
+    return keys
+
+
+def found(key: tuple, members: list[DevFeatures], party_countries) -> Situation2 | None:
+    """Create the Situation for ``key`` if its pooled Developments satisfy the creation rule of its mode."""
+    mode = key[0]
+    if mode == "single_party":
+        if not _within(members, CREATE_WINDOW, SINGLE_PARTY_SEPARATION):
+            return None
+    elif len(members) < 2 or not _within(members, CREATE_WINDOW):
+        return None
+    ids = tuple(m.event_id for m in members)
+    if mode == "actor_process":
+        anchors, fam = key[1], key[2]
+        places = {c for m in members for c in m.places.values() if c} | party_countries(anchors)
+        slug = "-".join(sorted(a.replace(" ", "_") for a in anchors)) + f":{fam}"
+        return Situation2(slug, mode, anchors, frozenset({fam}), frozenset(places), founders=ids)
+    if mode == "single_party":
+        anchors, fam, c = key[1], key[2], key[3]
+        return Situation2(f"{next(iter(anchors)).replace(' ', '_')}:{fam}:{c}", mode, anchors, frozenset({fam}),
+                          frozenset({c}), founders=ids)
+    h, c, n = key[1], key[2], key[3]
+    return Situation2(f"hazard:{h}:{c}:{n or '-'}", mode, frozenset(), frozenset({"hazard"}), frozenset({c}),
+                      hazard=(h, c, n), founders=ids)
+
+
+def chronological(devs: list[DevFeatures], seeded: list[Situation2], party_countries) -> dict:
+    """Full chronological v2 replay: each Development in first-report order is decided against the open Situations;
+    unassigned ones pool by creation key; a key with enough pooled Developments founds a Situation, and the pooled
+    Developments still inside the creation window are decided against it (as the runtime regroups recent unassigned
+    Developments). Returns the Situations, each Development's assignment and its decision log."""
+    sits = list(seeded)
+    assigned: dict[int, str] = {}
+    log: dict[int, dict[str, Decision]] = {}
+    pool: dict[tuple, list[DevFeatures]] = {}
+    order = sorted(devs, key=lambda d: (d.first_reported_at or datetime.min, d.event_id))
+    for d in order:
+        log[d.event_id] = {}
+        for s in sits:
+            dec = decide(d, s, sits)
+            log[d.event_id][s.slug] = dec
+            if dec.outcome == "MEMBER":
+                assigned[d.event_id] = s.slug
+        if d.event_id in assigned:
+            continue
+        for key in creation_keys(d):
+            now = d.first_reported_at or datetime.min
+            pool[key] = [m for m in pool.get(key, []) if m.event_id not in assigned
+                         and now - (m.first_reported_at or datetime.min) <= CREATE_WINDOW] + [d]
+            if any(s.slug == _slug_of(key) for s in sits):
+                continue
+            new = found(key, pool[key], party_countries)
+            if new is None:
+                continue
+            sits.append(new)
+            for m in pool[key]:
+                assigned[m.event_id] = new.slug                    # founders are members by construction
+                log[m.event_id][new.slug] = Decision("MEMBER", "EXACT_KEY_RECURRENCE", {"founders": list(new.founders)})
+            for key2, members in pool.items():                     # recent unassigned Developments of other keys
+                for m in members:
+                    if m.event_id in assigned:
+                        continue
+                    dec = decide(m, new, sits)
+                    log[m.event_id][new.slug] = dec
+                    if dec.outcome == "MEMBER":
+                        assigned[m.event_id] = new.slug
+            break
+    return {"situations": sits, "assigned": assigned, "log": log}
+
+
+def _slug_of(key: tuple) -> str:
+    if key[0] == "actor_process":
+        return "-".join(sorted(a.replace(" ", "_") for a in key[1])) + f":{key[2]}"
+    if key[0] == "single_party":
+        return f"{next(iter(key[1])).replace(' ', '_')}:{key[2]}:{key[3]}"
+    return f"hazard:{key[1]}:{key[2]}:{key[3] or '-'}"
+
+
 def _within(fs: list[DevFeatures], window: timedelta, min_gap: timedelta = timedelta(0)) -> bool:
     """Some two founders were first reported within ``window`` of each other and at least ``min_gap`` apart."""
     ts = sorted(f.first_reported_at for f in fs if f.first_reported_at)
