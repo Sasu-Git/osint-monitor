@@ -1,0 +1,854 @@
+classes:
+  abha: a
+  abu dabi: a
+  abyei: d
+  addis: a_left
+  ademas: d
+  aden international airport: a
+  africa: c
+  aleksandar vucic: d
+  allerta: d
+  america latina: c
+  antigua: a_left
+  apec: d
+  arabian peninsula: c
+  arctic: c
+  argelia: b
+  asean: d
+  asia: c
+  asia-pacific: c
+  atenas: a
+  atlantic: c
+  atlantico: c
+  aung san suu kyi: d
+  azov: c
+  bahrein: b
+  balikatan: d
+  balkans: c
+  baltic sea: c
+  barbuda: a_left
+  barein: b
+  belgica: b
+  belgio: b
+  belgrado: a
+  bend: a_left
+  berlino: a
+  bielorrusia: b
+  bielorussia: b
+  black sea: c
+  black sea domain: d
+  blue nile: c
+  bolsa familia: d
+  bosnia: b
+  bosnia y herzegovina: b
+  bosnia-herzegovina: b
+  brcko: d
+  bronx: a
+  bryansk oblast: a
+  capitale: d
+  caribbean: c
+  caribe: c
+  carolina valladares: d
+  carson: a_left
+  castilla-la mancha: a
+  cataluna: a
+  centinaia: d
+  central: d
+  central asia: c
+  central europe: c
+  cerca: d
+  charleston: a
+  chernihiv: a
+  chiclayo: a
+  chigi: d
+  cile: b
+  ciudad del vaticano: a_left
+  congreso de brasil: d
+  contexto: d
+  copacabana: a_left
+  cordoba: a_left
+  corpus christi: a
+  costa d'avorio: b
+  cusco: a
+  d.c: a
+  dandong: a
+  danimarca: b
+  darnitsky: a
+  datafolha: d
+  davos: d
+  dc: a
+  decenas: d
+  decine: d
+  democratic republic of congo: b
+  dinamarca: b
+  dnipro river: c
+  dnipropetrovsk: a
+  dnipropetrovsk oblast: a
+  donbas: a
+  donetsk oblast: a
+  dongsha island: a_left
+  downing street: d
+  dr: d
+  e.o: d
+  earth: c
+  east: d
+  east africa: c
+  east asia: c
+  east china sea: c
+  east jerusalem: a_left
+  east sea: c
+  ee uu: b
+  ejercito: d
+  ejercito de eeuu: d
+  ejercito de ucrania: d
+  el clasico: d
+  el fasher: a
+  el pais: d
+  el reino unido: b
+  eliseo: d
+  elysee: d
+  elysee palace: d
+  embajada: d
+  emirati: b
+  emiratos: b
+  emiratos arabes unidos: b
+  entretanto: d
+  epirus: a_left
+  estado: d
+  estambul: a
+  etiopia: b
+  europa: c
+  europe: c
+  exteriores: d
+  falkland islands: a_left
+  falklands: a_left
+  farmer bridge assistance: d
+  fc: d
+  fc barcelona: d
+  federative republic of brazil: b
+  felipe: d
+  filipinas: b
+  finlandia: b
+  flavio: d
+  fort bragg: a
+  fort carson: a
+  fort hood: a
+  franja: d
+  ft: d
+  fujimori: d
+  futenma: a
+  futurechina business forum: d
+  gadi: d
+  gb: b
+  gemelli: a_left
+  gibuti: b
+  giordania: b
+  gloucestershire: a
+  gobierno: d
+  gobierno de donald trump: d
+  gobierno de estados unidos: d
+  gobierno de giorgia meloni: d
+  gobierno de iran: d
+  gobierno de israel: d
+  gobierno de javier milei: d
+  gobierno de yemen: d
+  golfo: c
+  golfo persico: c
+  grenada: a_left
+  groenlandia: b
+  guayaquil: a
+  gulf: c
+  habitantes: d
+  hamas: d
+  hellenic republic: b
+  hezbola: d
+  himalayas: c
+  hormuz: c
+  horn of africa: c
+  hospital gemelli: a_left
+  huntsville: a
+  ia: d
+  iguazu: c
+  ile longue: d
+  incremento: d
+  interno: d
+  irkutsk: a
+  irlanda: b
+  iryo: d
+  islamic republic: d
+  italian republic: b
+  izium: a
+  jackson: a_left
+  jerson: a
+  jerusalem: a_left
+  jerusalen: a_left
+  johor: a
+  jordania: b
+  kalimantan: a
+  kaliningrad: a
+  kaliningrado: a
+  karak: a
+  kast: d
+  kenia: b
+  kharkiv oblast: a
+  king khalid: a_left
+  king khalid international airport: a
+  kordofan: a
+  korea: a_left
+  korean peninsula: c
+  kramatorsk: a
+  krasnodar krai: a
+  kupiansk: a
+  kyrgyz republic: b
+  la casa blanca: d
+  la habana: a
+  la liga: d
+  la meca: a
+  la santa sede: a_left
+  la verriere: a
+  latin america: c
+  le pen: d
+  leipzig: a
+  leipzig/halle airport: a
+  lettonia: b
+  libia: b
+  lille: a
+  limoge: a
+  lione: a
+  lisboa: a
+  lituania: b
+  los angeles domain: d
+  lpu: d
+  lujan: d
+  lutsk: a
+  luxemburgo: b
+  m51: d
+  malasia: b
+  man city: d
+  manchester city: d
+  mar nero: c
+  mar-a-lago: a
+  marble hill: a_left
+  marocco: b
+  marruecos: b
+  marsiglia: a
+  mazatlan: a
+  media: d
+  mediterranean: c
+  mekelle: a
+  middle east: c
+  middle east monitor: c
+  mideast: c
+  ministerio del interior: d
+  minneapolis: a
+  misisipi: a
+  mojtaba: d
+  mokha: a
+  moldavia: b
+  montevideo: a
+  nagaland: a
+  nagqu: a
+  naha: a
+  najran: a
+  nantes: a
+  nawrocki: d
+  negros: d
+  nice: d
+  north: d
+  north atlantic: c
+  north sea: c
+  noruega: b
+  norvegia: b
+  nottingham: a
+  nueva york: a
+  nunez: d
+  nuova zelanda: b
+  ny: a
+  occidente: d
+  occupied palestinian territory: b
+  olanda: b
+  oleshki: a
+  oleshky: a
+  oporto: a
+  oriente medio: c
+  ormuz: c
+  ormuz el ejercito de estados unidos: d
+  orsay: a
+  oval office: d
+  pacific: c
+  pacific coast: c
+  pacific ocean: c
+  pacifico: c
+  paese: d
+  paesi: d
+  palau: a_left
+  palermo: a
+  palestina: b
+  palm beach: a
+  parana: a_left
+  parc des princes: a_left
+  paris saint-germain: d
+  pavlohrad: a
+  paysandu: a
+  pensilvania: a
+  persian gulf: c
+  persico: c
+  petro: d
+  place de la nation: d
+  place de la republique: a_left
+  prefettura: d
+  pryluky: a
+  puerto principe: a
+  red sea: c
+  renfe: d
+  repubblica: d
+  republic of iceland: b
+  republic of moldova: b
+  republic of rwanda: b
+  republic of zambia: b
+  republica dominicana: b
+  republique: d
+  rey jalid: d
+  riad: a
+  rio: a_left
+  rivne: a
+  rostov oblast: a
+  ruanda: b
+  rumania: b
+  s korea: b
+  sa: d
+  saba: a_left
+  sahara: c
+  saint-denis: a_left
+  sakhalin: a
+  samarkand: a
+  san diego: a
+  san pedro: a_left
+  san petersburgo: a
+  san salvador: a
+  sana: a_left
+  santiago de chile: a
+  sarajevo: a
+  saudi-arabia: b
+  scontri: d
+  sea of japan: c
+  seul: a
+  sheet: d
+  silver rail elementary school: d
+  sinaloa: a
+  sindacati: d
+  singapur: b
+  sinkevicius: d
+  situazione: d
+  sloviansk: a
+  socialist republic of viet nam: b
+  south: d
+  south china sea: c
+  southeast asia: c
+  southern bridge: d
+  soviet union: c
+  sparatoria: d
+  st: a_left
+  starshield: d
+  stati: d
+  stato: d
+  strait: d
+  strait of hormuz: c
+  strasbourg: a
+  stretto di hormuz: c
+  sudafrica: b
+  sudamerica: c
+  suecia: b
+  supremo: d
+  svezia: b
+  taiwan strait: c
+  taiz domain: d
+  tampa: a
+  taybeh: a_left
+  tensione: d
+  territorios palestinos ocupados: b
+  tesoro de estados unidos: d
+  tierra: d
+  tigray eritrea: d
+  tirana: a
+  toledo: a_left
+  toulouse: a
+  trappes: d
+  trasporti: d
+  travel: d
+  tribunal: d
+  trinidad: a_left
+  turin: a
+  u.k: b
+  ukraine domain: d
+  ukraine russia: d
+  ukraine ukraine: d
+  ungheria: b
+  united kingdom of great britain: b
+  valencia: a_left
+  varsavia: a
+  varsovia: a
+  vaticano: a_left
+  vecinos: d
+  videoanalisis | lula: d
+  viet nam: b
+  vilnius: a
+  volodimir zelenski: d
+  voronezh: a
+  vucic: d
+  walter e. washington convention center: d
+  wangaratta: a
+  weather: d
+  west: d
+  west bank domain: d
+  west francois picard: d
+  west kordofan: a
+  west palm beach: a
+  western hemisphere: c
+  western sahara: a_left
+  yemens aden: d
+  yerevan: a
+  youtube: d
+  yuma county: a
+  yuma proving ground: a
+  yvelines: a
+  zakharova: d
+  zelenski: d
+targets:
+  abha:
+    parent: saudi arabia
+  abu dabi:
+    alias: abu dhabi
+  addis:
+    why: truncated name
+  aden international airport:
+    parent: aden
+  antigua:
+    why: ambiguous
+  argelia:
+    alias: algeria
+  atenas:
+    alias: athens
+  bahrein:
+    alias: bahrain
+  barbuda:
+    why: country absent from the country list
+  barein:
+    alias: bahrain
+  belgica:
+    alias: belgium
+  belgio:
+    alias: belgium
+  belgrado:
+    alias: belgrade
+  bend:
+    why: ambiguous
+  berlino:
+    alias: berlin
+  bielorrusia:
+    alias: belarus
+  bielorussia:
+    alias: belarus
+  bosnia:
+    alias: bosnia and herzegovina
+  bosnia y herzegovina:
+    alias: bosnia and herzegovina
+  bosnia-herzegovina:
+    alias: bosnia and herzegovina
+  bronx:
+    parent: new york city
+  bryansk oblast:
+    parent: russia
+  carson:
+    why: ambiguous
+  castilla-la mancha:
+    parent: spain
+  cataluna:
+    alias: catalonia
+  charleston:
+    parent: united states
+  chernihiv:
+    parent: ukraine
+  chiclayo:
+    parent: peru
+  cile:
+    alias: chile
+  ciudad del vaticano:
+    why: absent from the country list
+  copacabana:
+    why: ambiguous (Brazil / Bolivia)
+  cordoba:
+    why: ambiguous (Spain / Argentina)
+  corpus christi:
+    parent: texas
+  costa d'avorio:
+    alias: cote d'ivoire
+  cusco:
+    parent: peru
+  d.c:
+    alias: washington dc
+  dandong:
+    parent: china
+  danimarca:
+    alias: denmark
+  darnitsky:
+    parent: kyiv
+  dc:
+    alias: washington dc
+  democratic republic of congo:
+    alias: democratic republic of the congo
+  dinamarca:
+    alias: denmark
+  dnipropetrovsk:
+    parent: ukraine
+  dnipropetrovsk oblast:
+    parent: ukraine
+  donbas:
+    parent: ukraine
+  donetsk oblast:
+    parent: ukraine
+  dongsha island:
+    why: contested (China / Taiwan)
+  east jerusalem:
+    why: contested status (owner decision)
+  ee uu:
+    alias: united states
+  el fasher:
+    parent: darfur
+  el reino unido:
+    alias: united kingdom
+  emirati:
+    alias: united arab emirates
+  emiratos:
+    alias: united arab emirates
+  emiratos arabes unidos:
+    alias: united arab emirates
+  epirus:
+    why: ambiguous (Greece / Albania)
+  estambul:
+    alias: istanbul
+  etiopia:
+    alias: ethiopia
+  falkland islands:
+    why: contested (United Kingdom / Argentina)
+  falklands:
+    why: contested (United Kingdom / Argentina)
+  federative republic of brazil:
+    alias: brazil
+  filipinas:
+    alias: philippines
+  finlandia:
+    alias: finland
+  fort bragg:
+    parent: north carolina
+  fort carson:
+    parent: colorado
+  fort hood:
+    parent: texas
+  futenma:
+    parent: okinawa
+  gb:
+    alias: united kingdom
+  gemelli:
+    why: ambiguous
+  gibuti:
+    alias: djibouti
+  giordania:
+    alias: jordan
+  gloucestershire:
+    parent: england
+  grenada:
+    why: country absent from the country list (or Granada)
+  groenlandia:
+    alias: greenland
+  guayaquil:
+    parent: ecuador
+  hellenic republic:
+    alias: greece
+  hospital gemelli:
+    why: landmark
+  huntsville:
+    parent: alabama
+  irkutsk:
+    parent: russia
+  irlanda:
+    alias: ireland
+  italian republic:
+    alias: italy
+  izium:
+    parent: ukraine
+  jackson:
+    why: ambiguous (several US places, a surname)
+  jerson:
+    alias: kherson
+  jerusalem:
+    why: contested status (owner decision)
+  jerusalen:
+    why: contested status (owner decision)
+  johor:
+    parent: malaysia
+  jordania:
+    alias: jordan
+  kalimantan:
+    parent: indonesia
+  kaliningrad:
+    parent: russia
+  kaliningrado:
+    alias: kaliningrad
+  karak:
+    parent: jordan
+  kenia:
+    alias: kenya
+  kharkiv oblast:
+    parent: ukraine
+  king khalid:
+    why: ambiguous (person / airport)
+  king khalid international airport:
+    parent: riyadh
+  kordofan:
+    parent: sudan
+  korea:
+    why: ambiguous (North / South)
+  kramatorsk:
+    parent: ukraine
+  krasnodar krai:
+    parent: russia
+  kupiansk:
+    parent: ukraine
+  kyrgyz republic:
+    alias: kyrgyzstan
+  la habana:
+    alias: havana
+  la meca:
+    alias: mecca
+  la santa sede:
+    why: the Holy See is absent from the country list
+  la verriere:
+    parent: france
+  leipzig:
+    parent: germany
+  leipzig/halle airport:
+    parent: germany
+  lettonia:
+    alias: latvia
+  libia:
+    alias: libya
+  lille:
+    parent: france
+  limoge:
+    parent: france
+  lione:
+    alias: lyon
+  lisboa:
+    alias: lisbon
+  lituania:
+    alias: lithuania
+  lutsk:
+    parent: ukraine
+  luxemburgo:
+    alias: luxembourg
+  malasia:
+    alias: malaysia
+  mar-a-lago:
+    parent: florida
+  marble hill:
+    why: ambiguous
+  marocco:
+    alias: morocco
+  marruecos:
+    alias: morocco
+  marsiglia:
+    alias: marseille
+  mazatlan:
+    parent: mexico
+  mekelle:
+    parent: tigray
+  minneapolis:
+    parent: minnesota
+  misisipi:
+    alias: mississippi
+  mokha:
+    parent: yemen
+  moldavia:
+    alias: moldova
+  montevideo:
+    parent: uruguay
+  nagaland:
+    parent: india
+  nagqu:
+    parent: tibet
+  naha:
+    parent: okinawa
+  najran:
+    parent: saudi arabia
+  nantes:
+    parent: france
+  noruega:
+    alias: norway
+  norvegia:
+    alias: norway
+  nottingham:
+    parent: england
+  nueva york:
+    alias: new york
+  nuova zelanda:
+    alias: new zealand
+  ny:
+    alias: new york
+  occupied palestinian territory:
+    alias: palestine
+  olanda:
+    alias: netherlands
+  oleshki:
+    parent: ukraine
+  oleshky:
+    parent: ukraine
+  oporto:
+    parent: portugal
+  orsay:
+    parent: france
+  palau:
+    why: country absent from the country list
+  palermo:
+    parent: sicily
+  palestina:
+    alias: palestine
+  palm beach:
+    parent: florida
+  parana:
+    why: ambiguous (Brazil / Argentina)
+  parc des princes:
+    why: landmark
+  pavlohrad:
+    parent: ukraine
+  paysandu:
+    parent: uruguay
+  pensilvania:
+    alias: pennsylvania
+  place de la republique:
+    why: landmark
+  pryluky:
+    parent: ukraine
+  puerto principe:
+    alias: port-au-prince
+  republic of iceland:
+    alias: iceland
+  republic of moldova:
+    alias: moldova
+  republic of rwanda:
+    alias: rwanda
+  republic of zambia:
+    alias: zambia
+  republica dominicana:
+    alias: dominican republic
+  riad:
+    alias: riyadh
+  rio:
+    why: ambiguous
+  rivne:
+    parent: ukraine
+  rostov oblast:
+    parent: russia
+  ruanda:
+    alias: rwanda
+  rumania:
+    alias: romania
+  s korea:
+    alias: south korea
+  saba:
+    why: ambiguous
+  saint-denis:
+    why: ambiguous (France / Reunion)
+  sakhalin:
+    parent: russia
+  samarkand:
+    parent: uzbekistan
+  san diego:
+    parent: california
+  san pedro:
+    why: ambiguous
+  san petersburgo:
+    alias: saint petersburg
+  san salvador:
+    parent: el salvador
+  sana:
+    why: ambiguous token
+  santiago de chile:
+    alias: santiago
+  sarajevo:
+    parent: bosnia and herzegovina
+  saudi-arabia:
+    alias: saudi arabia
+  seul:
+    alias: seoul
+  sinaloa:
+    parent: mexico
+  singapur:
+    alias: singapore
+  sloviansk:
+    parent: ukraine
+  socialist republic of viet nam:
+    alias: vietnam
+  st:
+    why: fragment
+  strasbourg:
+    parent: france
+  sudafrica:
+    alias: south africa
+  suecia:
+    alias: sweden
+  svezia:
+    alias: sweden
+  tampa:
+    parent: florida
+  taybeh:
+    why: ambiguous (West Bank / Israel)
+  territorios palestinos ocupados:
+    alias: palestine
+  tirana:
+    parent: albania
+  toledo:
+    why: ambiguous (Spain / United States)
+  toulouse:
+    parent: france
+  trinidad:
+    why: ambiguous (country / Cuba)
+  turin:
+    parent: italy
+  u.k:
+    alias: united kingdom
+  ungheria:
+    alias: hungary
+  united kingdom of great britain:
+    alias: united kingdom
+  valencia:
+    why: ambiguous (Spain / Venezuela)
+  varsavia:
+    alias: warsaw
+  varsovia:
+    alias: warsaw
+  vaticano:
+    why: absent from the country list
+  viet nam:
+    alias: vietnam
+  vilnius:
+    parent: lithuania
+  voronezh:
+    parent: russia
+  wangaratta:
+    parent: australia
+  west kordofan:
+    parent: sudan
+  west palm beach:
+    parent: florida
+  western sahara:
+    why: contested
+  yerevan:
+    parent: armenia
+  yuma county:
+    parent: arizona
+  yuma proving ground:
+    parent: arizona
+  yvelines:
+    parent: france
+listed_but_not_in_inventory: []
