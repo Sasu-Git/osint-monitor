@@ -1,0 +1,910 @@
+{
+ "system": "I3-5a",
+ "rules": [
+  "5a"
+ ],
+ "module_path": "C:\\Users\\EugenioVardiero\\osint-monitor-geoimpl\\osint_monitor\\processors\\event_location.py",
+ "module_sha256": "985afbcdcc140139122d7b8c42f05ae676fbee85e6d1eba2cd1360075663f947",
+ "cases": {
+  "1200": {
+   "country": "NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "module_country": null,
+   "place": null,
+   "region": null,
+   "reason": "no place in the occurrence reports' headlines or leads"
+  },
+  "1201": {
+   "country": "RUS",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "module_country": "russia",
+   "place": "moscow",
+   "region": null,
+   "reason": "one specific place"
+  },
+  "1204": {
+   "country": "SRB",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "module_country": "serbia",
+   "place": "Belgrado",
+   "region": null,
+   "reason": "one specific place"
+  },
+  "1205": {
+   "country": "USA",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "module_country": "united states",
+   "place": null,
+   "region": null,
+   "reason": "several places in one country (U2: country ring, places listed)"
+  },
+  "1206": {
+   "country": "FRA",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "module_country": "france",
+   "place": "paris",
+   "region": null,
+   "reason": "one specific place"
+  },
+  "1208": {
+   "country": "SDN",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "module_country": "sudan",
+   "place": "khartoum",
+   "region": null,
+   "reason": "one specific place"
+  },
+  "1209": {
+   "country": "NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "module_country": null,
+   "place": null,
+   "region": null,
+   "reason": "no place mention"
+  },
+  "1210": {
+   "country": "CHL",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "module_country": "chile",
+   "place": null,
+   "region": null,
+   "reason": "country named as the place (L4)"
+  },
+  "1211": {
+   "country": "GBR",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "module_country": "united kingdom",
+   "place": "england",
+   "region": null,
+   "reason": "one specific place"
+  },
+  "1212": {
+   "country": "COG",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "module_country": "congo",
+   "place": "Virunga National Park",
+   "region": null,
+   "reason": "one specific place"
+  },
+  "1216": {
+   "country": "USA",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "module_country": "united states",
+   "place": "massachusetts",
+   "region": null,
+   "reason": "one specific place"
+  },
+  "1217": {
+   "country": "NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "module_country": null,
+   "place": null,
+   "region": null,
+   "reason": "several countries, none dominant (L5)"
+  },
+  "1218": {
+   "country": "NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "module_country": null,
+   "place": null,
+   "region": null,
+   "reason": "several countries, none dominant (L5)"
+  },
+  "1220": {
+   "country": "NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "module_country": null,
+   "place": null,
+   "region": null,
+   "reason": "several places in different countries, none dominant (L5)"
+  },
+  "1221": {
+   "country": "NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "module_country": null,
+   "place": null,
+   "region": null,
+   "reason": "no place in the occurrence reports' headlines or leads"
+  },
+  "1224": {
+   "country": "USA",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "module_country": "united states",
+   "place": null,
+   "region": null,
+   "reason": "country-wide occurrence in the actor's country (L1 rev.)"
+  },
+  "1225": {
+   "country": "NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "module_country": null,
+   "place": null,
+   "region": null,
+   "reason": "several countries, none dominant (L5)"
+  },
+  "1227": {
+   "country": "NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "module_country": null,
+   "place": null,
+   "region": null,
+   "reason": "several countries, none dominant (L5)"
+  },
+  "1232": {
+   "country": "AND",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "module_country": "andorra",
+   "place": null,
+   "region": null,
+   "reason": "country named as the place (L4)"
+  },
+  "1233": {
+   "country": "NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "module_country": null,
+   "place": null,
+   "region": null,
+   "reason": "no place mention"
+  },
+  "1234": {
+   "country": "OMN",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "module_country": "oman",
+   "place": null,
+   "region": null,
+   "reason": "country named as the place (L4)"
+  },
+  "1235": {
+   "country": "PAK",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "module_country": "pakistan",
+   "place": null,
+   "region": null,
+   "reason": "country named as the place (L4)"
+  },
+  "1236": {
+   "country": "NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "module_country": null,
+   "place": null,
+   "region": null,
+   "reason": "no place in the occurrence reports' headlines or leads"
+  },
+  "1237": {
+   "country": "USA",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "module_country": "united states",
+   "place": "florida",
+   "region": null,
+   "reason": "one specific place"
+  },
+  "1238": {
+   "country": "ISR",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "module_country": "israel",
+   "place": "Jerusalem",
+   "region": null,
+   "reason": "one specific place"
+  },
+  "1241": {
+   "country": "USA",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "module_country": "united states",
+   "place": null,
+   "region": null,
+   "reason": "several places in one country (U2: country ring, places listed)"
+  },
+  "1242": {
+   "country": "RUS",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "module_country": "russia",
+   "place": "moscow",
+   "region": null,
+   "reason": "one specific place"
+  },
+  "1243": {
+   "country": "POL",
+   "role": "EVENT_PLACE",
+   "confidence": "CONFIRMED_PLACE",
+   "module_country": "poland",
+   "place": "Varsovia",
+   "region": null,
+   "reason": "dominant specific place"
+  },
+  "1246": {
+   "country": "UKR",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "module_country": "ukraine",
+   "place": null,
+   "region": null,
+   "reason": "country named as the place (L4)"
+  },
+  "1247": {
+   "country": "GTM",
+   "role": "EVENT_PLACE",
+   "confidence": "CONFIRMED_PLACE",
+   "module_country": "guatemala",
+   "place": "Antigua",
+   "region": null,
+   "reason": "one specific place"
+  },
+  "1248": {
+   "country": "NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "module_country": null,
+   "place": null,
+   "region": null,
+   "reason": "several countries, none dominant (L5)"
+  },
+  "1249": {
+   "country": "POL",
+   "role": "EVENT_PLACE",
+   "confidence": "CONFIRMED_PLACE",
+   "module_country": "poland",
+   "place": "warsaw",
+   "region": null,
+   "reason": "dominant specific place"
+  },
+  "1250": {
+   "country": "USA",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "module_country": "united states",
+   "place": "new york",
+   "region": null,
+   "reason": "one specific place"
+  },
+  "1251": {
+   "country": "PRY",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "module_country": "paraguay",
+   "place": "Asunción",
+   "region": null,
+   "reason": "one specific place"
+  },
+  "1252": {
+   "country": "NONE",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "module_country": null,
+   "place": "El Salvadors",
+   "region": null,
+   "reason": "one specific place"
+  },
+  "1253": {
+   "country": "RUS",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "module_country": "russia",
+   "place": null,
+   "region": null,
+   "reason": "several places in one country (U2: country ring, places listed)"
+  },
+  "1254": {
+   "country": "USA",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "module_country": "united states",
+   "place": null,
+   "region": null,
+   "reason": "several places in one country (U2: country ring, places listed)"
+  },
+  "1255": {
+   "country": "NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "module_country": null,
+   "place": null,
+   "region": null,
+   "reason": "no place in the occurrence reports' headlines or leads"
+  },
+  "1256": {
+   "country": "GEO",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "module_country": "georgia",
+   "place": null,
+   "region": null,
+   "reason": "country named as the place (L4)"
+  },
+  "1257": {
+   "country": "ZAF",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "module_country": "south africa",
+   "place": "gauteng",
+   "region": null,
+   "reason": "one specific place"
+  },
+  "1258": {
+   "country": "BEL",
+   "role": "EVENT_PLACE",
+   "confidence": "CONFIRMED_PLACE",
+   "module_country": "belgium",
+   "place": "brussels",
+   "region": null,
+   "reason": "one specific place"
+  },
+  "1261": {
+   "country": "USA",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "module_country": "united states",
+   "place": null,
+   "region": null,
+   "reason": "country named as the place (L4)"
+  },
+  "1262": {
+   "country": "USA",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "module_country": "united states",
+   "place": "new jersey",
+   "region": null,
+   "reason": "one specific place"
+  },
+  "1263": {
+   "country": "RUS",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "module_country": "russia",
+   "place": null,
+   "region": null,
+   "reason": "country named as the place (L4)"
+  },
+  "1264": {
+   "country": "ESP",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "module_country": "spain",
+   "place": "madrid",
+   "region": null,
+   "reason": "one specific place"
+  },
+  "1267": {
+   "country": "USA",
+   "role": "EVENT_PLACE",
+   "confidence": "CONFIRMED_PLACE",
+   "module_country": "united states",
+   "place": "florida",
+   "region": null,
+   "reason": "one specific place"
+  },
+  "1268": {
+   "country": "USA",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "module_country": "united states",
+   "place": null,
+   "region": null,
+   "reason": "country named as the place (L4)"
+  },
+  "1269": {
+   "country": "IRN",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "module_country": "iran",
+   "place": null,
+   "region": null,
+   "reason": "country named as the place (L4)"
+  },
+  "1271": {
+   "country": "USA",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "module_country": "united states",
+   "place": "east coast",
+   "region": null,
+   "reason": "one specific place"
+  },
+  "1272": {
+   "country": "NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "module_country": null,
+   "place": null,
+   "region": null,
+   "reason": "no place mention"
+  },
+  "1273": {
+   "country": "ETH",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "module_country": "ethiopia",
+   "place": "addis ababa",
+   "region": null,
+   "reason": "one specific place"
+  },
+  "1275": {
+   "country": "USA",
+   "role": "EVENT_PLACE",
+   "confidence": "CONFIRMED_PLACE",
+   "module_country": "united states",
+   "place": "maine",
+   "region": null,
+   "reason": "dominant specific place"
+  },
+  "1276": {
+   "country": "USA",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "module_country": "united states",
+   "place": "alaska",
+   "region": null,
+   "reason": "one specific place"
+  },
+  "1277": {
+   "country": "UKR",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "module_country": "ukraine",
+   "place": null,
+   "region": null,
+   "reason": "country named as the place (L4)"
+  },
+  "1278": {
+   "country": "USA",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "module_country": "united states",
+   "place": null,
+   "region": null,
+   "reason": "country named as the place (L4)"
+  },
+  "1281": {
+   "country": "SRB",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "module_country": "serbia",
+   "place": "Belgrado",
+   "region": null,
+   "reason": "one specific place"
+  },
+  "1282": {
+   "country": "USA",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "module_country": "united states",
+   "place": "washington",
+   "region": null,
+   "reason": "one specific place"
+  },
+  "1284": {
+   "country": "BEL",
+   "role": "EVENT_PLACE",
+   "confidence": "CONFIRMED_PLACE",
+   "module_country": "belgium",
+   "place": "brussels",
+   "region": null,
+   "reason": "dominant specific place"
+  },
+  "1286": {
+   "country": "NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "module_country": null,
+   "place": null,
+   "region": null,
+   "reason": "no place in the occurrence reports' headlines or leads"
+  },
+  "1287": {
+   "country": "NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "module_country": null,
+   "place": null,
+   "region": null,
+   "reason": "several countries, none dominant (L5)"
+  },
+  "1289": {
+   "country": "NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "module_country": null,
+   "place": null,
+   "region": null,
+   "reason": "several countries, none dominant (L5)"
+  },
+  "1290": {
+   "country": "USA",
+   "role": "EVENT_PLACE",
+   "confidence": "CONFIRMED_PLACE",
+   "module_country": "united states",
+   "place": "new jersey",
+   "region": null,
+   "reason": "one specific place"
+  },
+  "1291": {
+   "country": "FRA",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "module_country": "france",
+   "place": null,
+   "region": null,
+   "reason": "country named as the place (L4)"
+  },
+  "1294": {
+   "country": "GBR",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "module_country": "united kingdom",
+   "place": "london",
+   "region": null,
+   "reason": "one specific place"
+  },
+  "1295": {
+   "country": "NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "module_country": null,
+   "place": null,
+   "region": null,
+   "reason": "no place mention"
+  },
+  "1296": {
+   "country": "USA",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "module_country": "united states",
+   "place": null,
+   "region": null,
+   "reason": "several places in one country (U2: country ring, places listed)"
+  },
+  "1297": {
+   "country": "USA",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "module_country": "united states",
+   "place": null,
+   "region": null,
+   "reason": "several places in one country (U2: country ring, places listed)"
+  },
+  "1299": {
+   "country": "IND",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "module_country": "india",
+   "place": "new delhi",
+   "region": null,
+   "reason": "one specific place"
+  },
+  "1301": {
+   "country": "DNK",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "module_country": "denmark",
+   "place": "copenhagen",
+   "region": null,
+   "reason": "one specific place"
+  },
+  "1302": {
+   "country": "USA",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "module_country": "united states",
+   "place": null,
+   "region": null,
+   "reason": "country named as the place (L4)"
+  },
+  "1304": {
+   "country": "NONE",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "module_country": null,
+   "place": "Indian",
+   "region": null,
+   "reason": "one specific place"
+  },
+  "1305": {
+   "country": "HUN",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "module_country": "hungary",
+   "place": null,
+   "region": null,
+   "reason": "country named as the place (L4)"
+  },
+  "1306": {
+   "country": "NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "module_country": null,
+   "place": null,
+   "region": null,
+   "reason": "no place in the occurrence reports' headlines or leads"
+  },
+  "1307": {
+   "country": "NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "module_country": null,
+   "place": null,
+   "region": null,
+   "reason": "several places in different countries, none dominant (L5)"
+  },
+  "1308": {
+   "country": "ITA",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "module_country": "italy",
+   "place": "rome",
+   "region": null,
+   "reason": "one specific place"
+  },
+  "1310": {
+   "country": "USA",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "module_country": "united states",
+   "place": null,
+   "region": null,
+   "reason": "country named as the place (L4)"
+  },
+  "1312": {
+   "country": "CHN",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "module_country": "china",
+   "place": null,
+   "region": null,
+   "reason": "country named as the place (L4)"
+  },
+  "1313": {
+   "country": "USA",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "module_country": "united states",
+   "place": null,
+   "region": null,
+   "reason": "country named as the place (L4)"
+  },
+  "1314": {
+   "country": "ESP",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "module_country": "spain",
+   "place": null,
+   "region": null,
+   "reason": "country named as the place (L4)"
+  },
+  "1316": {
+   "country": "UKR",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "module_country": "ukraine",
+   "place": "Russian",
+   "region": null,
+   "reason": "one specific place"
+  },
+  "1317": {
+   "country": "PER",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "module_country": "peru",
+   "place": "Zaña",
+   "region": null,
+   "reason": "one specific place"
+  },
+  "1318": {
+   "country": "NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "module_country": null,
+   "place": null,
+   "region": null,
+   "reason": "several countries, none dominant (L5)"
+  },
+  "1319": {
+   "country": "IDN",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "module_country": "indonesia",
+   "place": null,
+   "region": null,
+   "reason": "country named as the place (L4)"
+  },
+  "1320": {
+   "country": "ETH",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "module_country": "ethiopia",
+   "place": "tigray",
+   "region": null,
+   "reason": "one specific place"
+  },
+  "1321": {
+   "country": "CAN",
+   "role": "EVENT_PLACE",
+   "confidence": "CONFIRMED_PLACE",
+   "module_country": "canada",
+   "place": "british columbia",
+   "region": null,
+   "reason": "one specific place"
+  },
+  "1322": {
+   "country": "CHN",
+   "role": "EVENT_PLACE",
+   "confidence": "CONFIRMED_PLACE",
+   "module_country": "china",
+   "place": "beijing",
+   "region": null,
+   "reason": "one specific place"
+  },
+  "1323": {
+   "country": "NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "module_country": null,
+   "place": null,
+   "region": null,
+   "reason": "several countries, none dominant (L5)"
+  },
+  "1324": {
+   "country": "USA",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "module_country": "united states",
+   "place": null,
+   "region": null,
+   "reason": "several places in one country (U2: country ring, places listed)"
+  },
+  "1326": {
+   "country": "NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "module_country": null,
+   "place": null,
+   "region": null,
+   "reason": "several places in different countries, none dominant (L5)"
+  },
+  "1327": {
+   "country": "SAU",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "module_country": "saudi arabia",
+   "place": "mecca",
+   "region": null,
+   "reason": "one specific place"
+  },
+  "1330": {
+   "country": "HKG",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "module_country": "hong kong",
+   "place": null,
+   "region": null,
+   "reason": "country named as the place (L4)"
+  },
+  "1331": {
+   "country": "DEU",
+   "role": "EVENT_PLACE",
+   "confidence": "CONFIRMED_PLACE",
+   "module_country": "germany",
+   "place": "berlin",
+   "region": null,
+   "reason": "one specific place"
+  },
+  "1332": {
+   "country": "ISR",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "module_country": "israel",
+   "place": null,
+   "region": null,
+   "reason": "country named as the place (L4)"
+  },
+  "1333": {
+   "country": "FRA",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "module_country": "france",
+   "place": "paris",
+   "region": null,
+   "reason": "one specific place"
+  },
+  "1334": {
+   "country": "ITA",
+   "role": "EVENT_PLACE",
+   "confidence": "CONFIRMED_PLACE",
+   "module_country": "italy",
+   "place": "rome",
+   "region": null,
+   "reason": "dominant specific place"
+  },
+  "1336": {
+   "country": "NONE",
+   "role": "NONE",
+   "confidence": "NONE",
+   "module_country": null,
+   "place": null,
+   "region": null,
+   "reason": "several places in different countries, none dominant (L5)"
+  },
+  "1338": {
+   "country": "RUS",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "module_country": "russia",
+   "place": "Kaliningrado",
+   "region": null,
+   "reason": "one specific place"
+  },
+  "1339": {
+   "country": "FRA",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "module_country": "france",
+   "place": null,
+   "region": null,
+   "reason": "several places in one country (U2: country ring, places listed)"
+  },
+  "1340": {
+   "country": "AUS",
+   "role": "EVENT_COUNTRY",
+   "confidence": "COUNTRY_ONLY",
+   "module_country": "australia",
+   "place": null,
+   "region": null,
+   "reason": "country named as the place (L4)"
+  },
+  "1341": {
+   "country": "PSE",
+   "role": "EVENT_PLACE",
+   "confidence": "PLACE",
+   "module_country": "gaza",
+   "place": "Israeli",
+   "region": null,
+   "reason": "one specific place"
+  }
+ }
+}

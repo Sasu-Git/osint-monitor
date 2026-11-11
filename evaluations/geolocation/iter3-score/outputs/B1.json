@@ -1,0 +1,606 @@
+{
+ "system": "B1",
+ "audit_sha256": "b5327a9d5165f29d2f596c0ef26493d13a14024540e565151e0623a3120444ea",
+ "cases": {
+  "1200": {
+   "country": "NONE",
+   "shown": false,
+   "point_country": "ISR",
+   "frontend_reason": "no mentioned place confirms the stored point"
+  },
+  "1201": {
+   "country": "NONE",
+   "shown": false,
+   "point_country": "RUS",
+   "frontend_reason": "stored point lies in Russia, the reports mention Bulgaria"
+  },
+  "1204": {
+   "country": "SRB",
+   "shown": true,
+   "point_country": "SRB",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1205": {
+   "country": "USA",
+   "shown": true,
+   "point_country": "USA",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1206": {
+   "country": "FRA",
+   "shown": true,
+   "point_country": "FRA",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1208": {
+   "country": "SDN",
+   "shown": true,
+   "point_country": "SDN",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1209": {
+   "country": "NONE",
+   "shown": false,
+   "point_country": null,
+   "frontend_reason": "no stored coordinates"
+  },
+  "1210": {
+   "country": "CHL",
+   "shown": true,
+   "point_country": "CHL",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1211": {
+   "country": "NONE",
+   "shown": false,
+   "point_country": "CHL",
+   "frontend_reason": "stored point lies in Chile, the reports mention United Kingdom"
+  },
+  "1212": {
+   "country": "NONE",
+   "shown": false,
+   "point_country": "COD",
+   "frontend_reason": "stored point lies in Dem. Rep. Congo, the reports mention Congo"
+  },
+  "1216": {
+   "country": "USA",
+   "shown": true,
+   "point_country": "USA",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1217": {
+   "country": "ISR",
+   "shown": true,
+   "point_country": "ISR",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1218": {
+   "country": "RWA",
+   "shown": true,
+   "point_country": "RWA",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1220": {
+   "country": "SOM",
+   "shown": true,
+   "point_country": "SOM",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1221": {
+   "country": "CHN",
+   "shown": true,
+   "point_country": "CHN",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1224": {
+   "country": "VEN",
+   "shown": true,
+   "point_country": "VEN",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1225": {
+   "country": "NONE",
+   "shown": true,
+   "point_country": null,
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1227": {
+   "country": "UKR",
+   "shown": true,
+   "point_country": "UKR",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1232": {
+   "country": "ESP",
+   "shown": true,
+   "point_country": "ESP",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1233": {
+   "country": "NONE",
+   "shown": false,
+   "point_country": null,
+   "frontend_reason": "no stored coordinates"
+  },
+  "1234": {
+   "country": "CHN",
+   "shown": true,
+   "point_country": "CHN",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1235": {
+   "country": "PAK",
+   "shown": true,
+   "point_country": "PAK",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1236": {
+   "country": "CHN",
+   "shown": true,
+   "point_country": "CHN",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1237": {
+   "country": "ISR",
+   "shown": true,
+   "point_country": "ISR",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1238": {
+   "country": "NONE",
+   "shown": false,
+   "point_country": "USA",
+   "frontend_reason": "stored point lies in United States of America, the reports mention Israel"
+  },
+  "1241": {
+   "country": "USA",
+   "shown": true,
+   "point_country": "USA",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1242": {
+   "country": "RUS",
+   "shown": true,
+   "point_country": "RUS",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1243": {
+   "country": "NONE",
+   "shown": false,
+   "point_country": "DEU",
+   "frontend_reason": "stored point lies in Germany, the reports mention Bulgaria, Denmark, Italy, Poland, Russia, Spain, United Kingdom"
+  },
+  "1246": {
+   "country": "RUS",
+   "shown": true,
+   "point_country": "RUS",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1247": {
+   "country": "NONE",
+   "shown": false,
+   "point_country": "ATG",
+   "frontend_reason": "stored point lies in Antigua and Barb., the reports mention United Kingdom"
+  },
+  "1248": {
+   "country": "GRL",
+   "shown": true,
+   "point_country": "GRL",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1249": {
+   "country": "NONE",
+   "shown": false,
+   "point_country": "DEU",
+   "frontend_reason": "stored point lies in Germany, the reports mention Poland"
+  },
+  "1250": {
+   "country": "USA",
+   "shown": true,
+   "point_country": "USA",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1251": {
+   "country": "PRY",
+   "shown": true,
+   "point_country": "PRY",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1252": {
+   "country": "SLV",
+   "shown": true,
+   "point_country": "SLV",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1253": {
+   "country": "POL",
+   "shown": true,
+   "point_country": "POL",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1254": {
+   "country": "USA",
+   "shown": true,
+   "point_country": "USA",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1255": {
+   "country": "NONE",
+   "shown": false,
+   "point_country": "USA",
+   "frontend_reason": "no mentioned place confirms the stored point"
+  },
+  "1256": {
+   "country": "NONE",
+   "shown": false,
+   "point_country": "USA",
+   "frontend_reason": "stored point lies in United States of America, the reports mention Georgia"
+  },
+  "1257": {
+   "country": "ZAF",
+   "shown": true,
+   "point_country": "ZAF",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1258": {
+   "country": "BEL",
+   "shown": true,
+   "point_country": "BEL",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1261": {
+   "country": "USA",
+   "shown": true,
+   "point_country": "USA",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1262": {
+   "country": "RUS",
+   "shown": true,
+   "point_country": "RUS",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1263": {
+   "country": "NOR",
+   "shown": true,
+   "point_country": "NOR",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1264": {
+   "country": "ESP",
+   "shown": true,
+   "point_country": "ESP",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1267": {
+   "country": "USA",
+   "shown": true,
+   "point_country": "USA",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1268": {
+   "country": "USA",
+   "shown": true,
+   "point_country": "USA",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1269": {
+   "country": "USA",
+   "shown": true,
+   "point_country": "USA",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1271": {
+   "country": "TWN",
+   "shown": true,
+   "point_country": "TWN",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1272": {
+   "country": "NONE",
+   "shown": false,
+   "point_country": null,
+   "frontend_reason": "no stored coordinates"
+  },
+  "1273": {
+   "country": "ETH",
+   "shown": true,
+   "point_country": "ETH",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1275": {
+   "country": "USA",
+   "shown": true,
+   "point_country": "USA",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1276": {
+   "country": "USA",
+   "shown": true,
+   "point_country": "USA",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1277": {
+   "country": "UKR",
+   "shown": true,
+   "point_country": "UKR",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1278": {
+   "country": "CHN",
+   "shown": true,
+   "point_country": "CHN",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1281": {
+   "country": "SRB",
+   "shown": true,
+   "point_country": "SRB",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1282": {
+   "country": "USA",
+   "shown": true,
+   "point_country": "USA",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1284": {
+   "country": "BEL",
+   "shown": true,
+   "point_country": "BEL",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1286": {
+   "country": "NONE",
+   "shown": false,
+   "point_country": "CHE",
+   "frontend_reason": "no mentioned place confirms the stored point"
+  },
+  "1287": {
+   "country": "NONE",
+   "shown": false,
+   "point_country": "SYR",
+   "frontend_reason": "stored point lies in Syria, the reports mention Iran, Israel"
+  },
+  "1289": {
+   "country": "AUT",
+   "shown": true,
+   "point_country": "AUT",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1290": {
+   "country": "NONE",
+   "shown": false,
+   "point_country": "MOZ",
+   "frontend_reason": "stored point lies in Mozambique, the reports mention Palestine, United States of America"
+  },
+  "1291": {
+   "country": "FRA",
+   "shown": true,
+   "point_country": "FRA",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1294": {
+   "country": "GBR",
+   "shown": true,
+   "point_country": "GBR",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1295": {
+   "country": "NONE",
+   "shown": false,
+   "point_country": null,
+   "frontend_reason": "no stored coordinates"
+  },
+  "1296": {
+   "country": "USA",
+   "shown": true,
+   "point_country": "USA",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1297": {
+   "country": "USA",
+   "shown": true,
+   "point_country": "USA",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1299": {
+   "country": "IND",
+   "shown": true,
+   "point_country": "IND",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1301": {
+   "country": "DNK",
+   "shown": true,
+   "point_country": "DNK",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1302": {
+   "country": "USA",
+   "shown": true,
+   "point_country": "USA",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1304": {
+   "country": "IRN",
+   "shown": true,
+   "point_country": "IRN",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1305": {
+   "country": "HUN",
+   "shown": true,
+   "point_country": "HUN",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1306": {
+   "country": "UKR",
+   "shown": true,
+   "point_country": "UKR",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1307": {
+   "country": "USA",
+   "shown": true,
+   "point_country": "USA",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1308": {
+   "country": "NONE",
+   "shown": false,
+   "point_country": "ITA",
+   "frontend_reason": "stored point lies in Italy, the reports mention Vatican"
+  },
+  "1310": {
+   "country": "CAN",
+   "shown": true,
+   "point_country": "CAN",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1312": {
+   "country": "CHN",
+   "shown": true,
+   "point_country": "CHN",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1313": {
+   "country": "USA",
+   "shown": true,
+   "point_country": "USA",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1314": {
+   "country": "ESP",
+   "shown": true,
+   "point_country": "ESP",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1316": {
+   "country": "NONE",
+   "shown": false,
+   "point_country": "UKR",
+   "frontend_reason": "stored point lies in Ukraine, the reports mention Russia"
+  },
+  "1317": {
+   "country": "URY",
+   "shown": true,
+   "point_country": "URY",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1318": {
+   "country": "USA",
+   "shown": true,
+   "point_country": "USA",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1319": {
+   "country": "NONE",
+   "shown": false,
+   "point_country": "USA",
+   "frontend_reason": "stored point lies in United States of America, the reports mention Indonesia"
+  },
+  "1320": {
+   "country": "ETH",
+   "shown": true,
+   "point_country": "ETH",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1321": {
+   "country": "CAN",
+   "shown": true,
+   "point_country": "CAN",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1322": {
+   "country": "HKG",
+   "shown": true,
+   "point_country": "HKG",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1323": {
+   "country": "NONE",
+   "shown": false,
+   "point_country": "OMN",
+   "frontend_reason": "stored point lies in Oman, the reports mention South Korea"
+  },
+  "1324": {
+   "country": "USA",
+   "shown": true,
+   "point_country": "USA",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1326": {
+   "country": "UKR",
+   "shown": true,
+   "point_country": "UKR",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1327": {
+   "country": "NONE",
+   "shown": false,
+   "point_country": "SYR",
+   "frontend_reason": "stored point lies in Syria, the reports mention Saudi Arabia"
+  },
+  "1330": {
+   "country": "HKG",
+   "shown": true,
+   "point_country": "HKG",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1331": {
+   "country": "DEU",
+   "shown": true,
+   "point_country": "DEU",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1332": {
+   "country": "ISR",
+   "shown": true,
+   "point_country": "ISR",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1333": {
+   "country": "FRA",
+   "shown": true,
+   "point_country": "FRA",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1334": {
+   "country": "FRA",
+   "shown": true,
+   "point_country": "FRA",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1336": {
+   "country": "YEM",
+   "shown": true,
+   "point_country": "YEM",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1338": {
+   "country": "POL",
+   "shown": true,
+   "point_country": "POL",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1339": {
+   "country": "FRA",
+   "shown": true,
+   "point_country": "FRA",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1340": {
+   "country": "AUS",
+   "shown": true,
+   "point_country": "AUS",
+   "frontend_reason": "confirmed by mentioned place"
+  },
+  "1341": {
+   "country": "NONE",
+   "shown": false,
+   "point_country": "MOZ",
+   "frontend_reason": "stored point lies in Mozambique, the reports mention Israel, Palestine"
+  }
+ }
+}
