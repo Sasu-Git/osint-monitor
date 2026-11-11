@@ -1,0 +1,6253 @@
+{
+ "snapshot": "C:/Users/EugenioVardiero/osint-monitor/data/eval/geolocation-iter3/snap-20261102.db",
+ "distinct_places": 1897,
+ "zero_country_places": 1659,
+ "zero_country_development_references": 2849,
+ "places": {
+  "europe": {
+   "developments": 78
+  },
+  "middle east": {
+   "developments": 49
+  },
+  "gobierno": {
+   "developments": 38
+  },
+  "africa": {
+   "developments": 27
+  },
+  "hormuz": {
+   "developments": 25
+  },
+  "europa": {
+   "developments": 24
+  },
+  "paese": {
+   "developments": 23
+  },
+  "estado": {
+   "developments": 21
+  },
+  "strait of hormuz": {
+   "developments": 18
+  },
+  "asia": {
+   "developments": 17
+  },
+  "mideast": {
+   "developments": 16
+  },
+  "latin america": {
+   "developments": 15
+  },
+  "stato": {
+   "developments": 14
+  },
+  "negros": {
+   "developments": 13
+  },
+  "u.k": {
+   "developments": 13
+  },
+  "black sea": {
+   "developments": 12
+  },
+  "gulf": {
+   "developments": 12
+  },
+  "nueva york": {
+   "developments": 12
+  },
+  "south": {
+   "developments": 12
+  },
+  "america latina": {
+   "developments": 11
+  },
+  "fort hood": {
+   "developments": 11
+  },
+  "arctic": {
+   "developments": 10
+  },
+  "d.c": {
+   "developments": 10
+  },
+  "jerusalem": {
+   "developments": 10
+  },
+  "riad": {
+   "developments": 10
+  },
+  "strait": {
+   "developments": 10
+  },
+  "decenas": {
+   "developments": 9
+  },
+  "pacific": {
+   "developments": 9
+  },
+  "trappes": {
+   "developments": 9
+  },
+  "atlantic": {
+   "developments": 8
+  },
+  "grenada": {
+   "developments": 8
+  },
+  "hamas": {
+   "developments": 8
+  },
+  "oleshky": {
+   "developments": 8
+  },
+  "south china sea": {
+   "developments": 8
+  },
+  "starshield": {
+   "developments": 8
+  },
+  "dr": {
+   "developments": 7
+  },
+  "ejercito": {
+   "developments": 7
+  },
+  "leipzig": {
+   "developments": 7
+  },
+  "pacifico": {
+   "developments": 7
+  },
+  "paesi": {
+   "developments": 7
+  },
+  "southeast asia": {
+   "developments": 7
+  },
+  "west": {
+   "developments": 7
+  },
+  "ee uu": {
+   "developments": 6
+  },
+  "emiratos arabes unidos": {
+   "developments": 6
+  },
+  "ia": {
+   "developments": 6
+  },
+  "kharkiv oblast": {
+   "developments": 6
+  },
+  "marsiglia": {
+   "developments": 6
+  },
+  "mediterranean": {
+   "developments": 6
+  },
+  "north": {
+   "developments": 6
+  },
+  "ormuz": {
+   "developments": 6
+  },
+  "red sea": {
+   "developments": 6
+  },
+  "strasbourg": {
+   "developments": 6
+  },
+  "valencia": {
+   "developments": 6
+  },
+  "volodimir zelenski": {
+   "developments": 6
+  },
+  "weather": {
+   "developments": 6
+  },
+  "ademas": {
+   "developments": 5
+  },
+  "belgica": {
+   "developments": 5
+  },
+  "bosnia": {
+   "developments": 5
+  },
+  "caribbean": {
+   "developments": 5
+  },
+  "democratic republic of congo": {
+   "developments": 5
+  },
+  "e.o": {
+   "developments": 5
+  },
+  "earth": {
+   "developments": 5
+  },
+  "east jerusalem": {
+   "developments": 5
+  },
+  "estambul": {
+   "developments": 5
+  },
+  "finlandia": {
+   "developments": 5
+  },
+  "jerusalen": {
+   "developments": 5
+  },
+  "kramatorsk": {
+   "developments": 5
+  },
+  "la liga": {
+   "developments": 5
+  },
+  "le pen": {
+   "developments": 5
+  },
+  "lille": {
+   "developments": 5
+  },
+  "limoge": {
+   "developments": 5
+  },
+  "manchester city": {
+   "developments": 5
+  },
+  "media": {
+   "developments": 5
+  },
+  "rumania": {
+   "developments": 5
+  },
+  "sudamerica": {
+   "developments": 5
+  },
+  "tirana": {
+   "developments": 5
+  },
+  "west bank domain": {
+   "developments": 5
+  },
+  "asia-pacific": {
+   "developments": 4
+  },
+  "balkans": {
+   "developments": 4
+  },
+  "caribe": {
+   "developments": 4
+  },
+  "carolina valladares": {
+   "developments": 4
+  },
+  "centinaia": {
+   "developments": 4
+  },
+  "central asia": {
+   "developments": 4
+  },
+  "cordoba": {
+   "developments": 4
+  },
+  "downing street": {
+   "developments": 4
+  },
+  "el pais": {
+   "developments": 4
+  },
+  "exteriores": {
+   "developments": 4
+  },
+  "gemelli": {
+   "developments": 4
+  },
+  "gobierno de estados unidos": {
+   "developments": 4
+  },
+  "gobierno de giorgia meloni": {
+   "developments": 4
+  },
+  "la santa sede": {
+   "developments": 4
+  },
+  "la verriere": {
+   "developments": 4
+  },
+  "lione": {
+   "developments": 4
+  },
+  "montevideo": {
+   "developments": 4
+  },
+  "nantes": {
+   "developments": 4
+  },
+  "north atlantic": {
+   "developments": 4
+  },
+  "north sea": {
+   "developments": 4
+  },
+  "noruega": {
+   "developments": 4
+  },
+  "place de la republique": {
+   "developments": 4
+  },
+  "repubblica": {
+   "developments": 4
+  },
+  "rostov oblast": {
+   "developments": 4
+  },
+  "saint-denis": {
+   "developments": 4
+  },
+  "san diego": {
+   "developments": 4
+  },
+  "scontri": {
+   "developments": 4
+  },
+  "seul": {
+   "developments": 4
+  },
+  "stati": {
+   "developments": 4
+  },
+  "toledo": {
+   "developments": 4
+  },
+  "vaticano": {
+   "developments": 4
+  },
+  "western hemisphere": {
+   "developments": 4
+  },
+  "zelenski": {
+   "developments": 4
+  },
+  "aleksandar vucic": {
+   "developments": 3
+  },
+  "atlantico": {
+   "developments": 3
+  },
+  "azov": {
+   "developments": 3
+  },
+  "belgrado": {
+   "developments": 3
+  },
+  "bend": {
+   "developments": 3
+  },
+  "berlino": {
+   "developments": 3
+  },
+  "blue nile": {
+   "developments": 3
+  },
+  "cataluna": {
+   "developments": 3
+  },
+  "chernihiv": {
+   "developments": 3
+  },
+  "chiclayo": {
+   "developments": 3
+  },
+  "chigi": {
+   "developments": 3
+  },
+  "cile": {
+   "developments": 3
+  },
+  "ciudad del vaticano": {
+   "developments": 3
+  },
+  "dc": {
+   "developments": 3
+  },
+  "dnipropetrovsk oblast": {
+   "developments": 3
+  },
+  "ejercito de ucrania": {
+   "developments": 3
+  },
+  "el fasher": {
+   "developments": 3
+  },
+  "eliseo": {
+   "developments": 3
+  },
+  "entretanto": {
+   "developments": 3
+  },
+  "epirus": {
+   "developments": 3
+  },
+  "fort carson": {
+   "developments": 3
+  },
+  "ft": {
+   "developments": 3
+  },
+  "fujimori": {
+   "developments": 3
+  },
+  "gb": {
+   "developments": 3
+  },
+  "gobierno de donald trump": {
+   "developments": 3
+  },
+  "gobierno de javier milei": {
+   "developments": 3
+  },
+  "golfo": {
+   "developments": 3
+  },
+  "guayaquil": {
+   "developments": 3
+  },
+  "horn of africa": {
+   "developments": 3
+  },
+  "huntsville": {
+   "developments": 3
+  },
+  "interno": {
+   "developments": 3
+  },
+  "islamic republic": {
+   "developments": 3
+  },
+  "jordania": {
+   "developments": 3
+  },
+  "kalimantan": {
+   "developments": 3
+  },
+  "kaliningrad": {
+   "developments": 3
+  },
+  "kast": {
+   "developments": 3
+  },
+  "kordofan": {
+   "developments": 3
+  },
+  "krasnodar krai": {
+   "developments": 3
+  },
+  "lisboa": {
+   "developments": 3
+  },
+  "man city": {
+   "developments": 3
+  },
+  "mar-a-lago": {
+   "developments": 3
+  },
+  "marble hill": {
+   "developments": 3
+  },
+  "marruecos": {
+   "developments": 3
+  },
+  "middle east monitor": {
+   "developments": 3
+  },
+  "minneapolis": {
+   "developments": 3
+  },
+  "misisipi": {
+   "developments": 3
+  },
+  "mokha": {
+   "developments": 3
+  },
+  "najran": {
+   "developments": 3
+  },
+  "nunez": {
+   "developments": 3
+  },
+  "occupied palestinian territory": {
+   "developments": 3
+  },
+  "oleshki": {
+   "developments": 3
+  },
+  "oporto": {
+   "developments": 3
+  },
+  "oriente medio": {
+   "developments": 3
+  },
+  "orsay": {
+   "developments": 3
+  },
+  "palestina": {
+   "developments": 3
+  },
+  "paris saint-germain": {
+   "developments": 3
+  },
+  "pensilvania": {
+   "developments": 3
+  },
+  "persian gulf": {
+   "developments": 3
+  },
+  "rio": {
+   "developments": 3
+  },
+  "ruanda": {
+   "developments": 3
+  },
+  "saba": {
+   "developments": 3
+  },
+  "san salvador": {
+   "developments": 3
+  },
+  "sarajevo": {
+   "developments": 3
+  },
+  "sheet": {
+   "developments": 3
+  },
+  "st": {
+   "developments": 3
+  },
+  "taiwan strait": {
+   "developments": 3
+  },
+  "taybeh": {
+   "developments": 3
+  },
+  "tensione": {
+   "developments": 3
+  },
+  "tesoro de estados unidos": {
+   "developments": 3
+  },
+  "toulouse": {
+   "developments": 3
+  },
+  "turin": {
+   "developments": 3
+  },
+  "ukraine domain": {
+   "developments": 3
+  },
+  "ukraine ukraine": {
+   "developments": 3
+  },
+  "viet nam": {
+   "developments": 3
+  },
+  "vilnius": {
+   "developments": 3
+  },
+  "vucic": {
+   "developments": 3
+  },
+  "west palm beach": {
+   "developments": 3
+  },
+  "youtube": {
+   "developments": 3
+  },
+  "yuma proving ground": {
+   "developments": 3
+  },
+  "abha": {
+   "developments": 2
+  },
+  "abu dabi": {
+   "developments": 2
+  },
+  "abyei": {
+   "developments": 2
+  },
+  "addis": {
+   "developments": 2
+  },
+  "aden international airport": {
+   "developments": 2
+  },
+  "allerta": {
+   "developments": 2
+  },
+  "antigua": {
+   "developments": 2
+  },
+  "apec": {
+   "developments": 2
+  },
+  "arabian peninsula": {
+   "developments": 2
+  },
+  "asean": {
+   "developments": 2
+  },
+  "atenas": {
+   "developments": 2
+  },
+  "aung san suu kyi": {
+   "developments": 2
+  },
+  "balikatan": {
+   "developments": 2
+  },
+  "baltic sea": {
+   "developments": 2
+  },
+  "barbuda": {
+   "developments": 2
+  },
+  "belgio": {
+   "developments": 2
+  },
+  "black sea domain": {
+   "developments": 2
+  },
+  "bolsa familia": {
+   "developments": 2
+  },
+  "bosnia-herzegovina": {
+   "developments": 2
+  },
+  "brcko": {
+   "developments": 2
+  },
+  "bronx": {
+   "developments": 2
+  },
+  "bryansk oblast": {
+   "developments": 2
+  },
+  "capitale": {
+   "developments": 2
+  },
+  "carson": {
+   "developments": 2
+  },
+  "castilla-la mancha": {
+   "developments": 2
+  },
+  "central": {
+   "developments": 2
+  },
+  "central europe": {
+   "developments": 2
+  },
+  "cerca": {
+   "developments": 2
+  },
+  "charleston": {
+   "developments": 2
+  },
+  "congreso de brasil": {
+   "developments": 2
+  },
+  "contexto": {
+   "developments": 2
+  },
+  "copacabana": {
+   "developments": 2
+  },
+  "corpus christi": {
+   "developments": 2
+  },
+  "cusco": {
+   "developments": 2
+  },
+  "dandong": {
+   "developments": 2
+  },
+  "darnitsky": {
+   "developments": 2
+  },
+  "datafolha": {
+   "developments": 2
+  },
+  "davos": {
+   "developments": 2
+  },
+  "decine": {
+   "developments": 2
+  },
+  "dnipro river": {
+   "developments": 2
+  },
+  "dnipropetrovsk": {
+   "developments": 2
+  },
+  "donbas": {
+   "developments": 2
+  },
+  "donetsk oblast": {
+   "developments": 2
+  },
+  "dongsha island": {
+   "developments": 2
+  },
+  "east": {
+   "developments": 2
+  },
+  "east africa": {
+   "developments": 2
+  },
+  "east asia": {
+   "developments": 2
+  },
+  "east china sea": {
+   "developments": 2
+  },
+  "east sea": {
+   "developments": 2
+  },
+  "ejercito de eeuu": {
+   "developments": 2
+  },
+  "el clasico": {
+   "developments": 2
+  },
+  "el reino unido": {
+   "developments": 2
+  },
+  "elysee": {
+   "developments": 2
+  },
+  "elysee palace": {
+   "developments": 2
+  },
+  "embajada": {
+   "developments": 2
+  },
+  "emiratos": {
+   "developments": 2
+  },
+  "etiopia": {
+   "developments": 2
+  },
+  "falkland islands": {
+   "developments": 2
+  },
+  "falklands": {
+   "developments": 2
+  },
+  "farmer bridge assistance": {
+   "developments": 2
+  },
+  "fc": {
+   "developments": 2
+  },
+  "fc barcelona": {
+   "developments": 2
+  },
+  "felipe": {
+   "developments": 2
+  },
+  "flavio": {
+   "developments": 2
+  },
+  "fort bragg": {
+   "developments": 2
+  },
+  "franja": {
+   "developments": 2
+  },
+  "futenma": {
+   "developments": 2
+  },
+  "futurechina business forum": {
+   "developments": 2
+  },
+  "gadi": {
+   "developments": 2
+  },
+  "gloucestershire": {
+   "developments": 2
+  },
+  "gobierno de iran": {
+   "developments": 2
+  },
+  "gobierno de israel": {
+   "developments": 2
+  },
+  "gobierno de yemen": {
+   "developments": 2
+  },
+  "golfo persico": {
+   "developments": 2
+  },
+  "habitantes": {
+   "developments": 2
+  },
+  "hezbola": {
+   "developments": 2
+  },
+  "himalayas": {
+   "developments": 2
+  },
+  "hospital gemelli": {
+   "developments": 2
+  },
+  "iguazu": {
+   "developments": 2
+  },
+  "ile longue": {
+   "developments": 2
+  },
+  "incremento": {
+   "developments": 2
+  },
+  "irkutsk": {
+   "developments": 2
+  },
+  "irlanda": {
+   "developments": 2
+  },
+  "iryo": {
+   "developments": 2
+  },
+  "izium": {
+   "developments": 2
+  },
+  "jackson": {
+   "developments": 2
+  },
+  "jerson": {
+   "developments": 2
+  },
+  "johor": {
+   "developments": 2
+  },
+  "kaliningrado": {
+   "developments": 2
+  },
+  "karak": {
+   "developments": 2
+  },
+  "king khalid": {
+   "developments": 2
+  },
+  "king khalid international airport": {
+   "developments": 2
+  },
+  "korea": {
+   "developments": 2
+  },
+  "korean peninsula": {
+   "developments": 2
+  },
+  "kupiansk": {
+   "developments": 2
+  },
+  "la casa blanca": {
+   "developments": 2
+  },
+  "la habana": {
+   "developments": 2
+  },
+  "la meca": {
+   "developments": 2
+  },
+  "leipzig/halle airport": {
+   "developments": 2
+  },
+  "lituania": {
+   "developments": 2
+  },
+  "los angeles domain": {
+   "developments": 2
+  },
+  "lpu": {
+   "developments": 2
+  },
+  "lujan": {
+   "developments": 2
+  },
+  "lutsk": {
+   "developments": 2
+  },
+  "luxemburgo": {
+   "developments": 2
+  },
+  "m51": {
+   "developments": 2
+  },
+  "mar nero": {
+   "developments": 2
+  },
+  "mazatlan": {
+   "developments": 2
+  },
+  "mekelle": {
+   "developments": 2
+  },
+  "ministerio del interior": {
+   "developments": 2
+  },
+  "mojtaba": {
+   "developments": 2
+  },
+  "nagaland": {
+   "developments": 2
+  },
+  "nagqu": {
+   "developments": 2
+  },
+  "naha": {
+   "developments": 2
+  },
+  "nawrocki": {
+   "developments": 2
+  },
+  "nice": {
+   "developments": 2
+  },
+  "nottingham": {
+   "developments": 2
+  },
+  "ny": {
+   "developments": 2
+  },
+  "occidente": {
+   "developments": 2
+  },
+  "ormuz el ejercito de estados unidos": {
+   "developments": 2
+  },
+  "oval office": {
+   "developments": 2
+  },
+  "pacific coast": {
+   "developments": 2
+  },
+  "pacific ocean": {
+   "developments": 2
+  },
+  "palau": {
+   "developments": 2
+  },
+  "palermo": {
+   "developments": 2
+  },
+  "palm beach": {
+   "developments": 2
+  },
+  "parana": {
+   "developments": 2
+  },
+  "parc des princes": {
+   "developments": 2
+  },
+  "pavlohrad": {
+   "developments": 2
+  },
+  "paysandu": {
+   "developments": 2
+  },
+  "persico": {
+   "developments": 2
+  },
+  "petro": {
+   "developments": 2
+  },
+  "place de la nation": {
+   "developments": 2
+  },
+  "prefettura": {
+   "developments": 2
+  },
+  "pryluky": {
+   "developments": 2
+  },
+  "puerto principe": {
+   "developments": 2
+  },
+  "renfe": {
+   "developments": 2
+  },
+  "republic of moldova": {
+   "developments": 2
+  },
+  "republique": {
+   "developments": 2
+  },
+  "rey jalid": {
+   "developments": 2
+  },
+  "rivne": {
+   "developments": 2
+  },
+  "s korea": {
+   "developments": 2
+  },
+  "sa": {
+   "developments": 2
+  },
+  "sahara": {
+   "developments": 2
+  },
+  "sakhalin": {
+   "developments": 2
+  },
+  "samarkand": {
+   "developments": 2
+  },
+  "san pedro": {
+   "developments": 2
+  },
+  "san petersburgo": {
+   "developments": 2
+  },
+  "sana": {
+   "developments": 2
+  },
+  "santiago de chile": {
+   "developments": 2
+  },
+  "sea of japan": {
+   "developments": 2
+  },
+  "silver rail elementary school": {
+   "developments": 2
+  },
+  "sinaloa": {
+   "developments": 2
+  },
+  "sindacati": {
+   "developments": 2
+  },
+  "sinkevicius": {
+   "developments": 2
+  },
+  "situazione": {
+   "developments": 2
+  },
+  "sloviansk": {
+   "developments": 2
+  },
+  "southern bridge": {
+   "developments": 2
+  },
+  "soviet union": {
+   "developments": 2
+  },
+  "sparatoria": {
+   "developments": 2
+  },
+  "stretto di hormuz": {
+   "developments": 2
+  },
+  "suecia": {
+   "developments": 2
+  },
+  "supremo": {
+   "developments": 2
+  },
+  "taiz domain": {
+   "developments": 2
+  },
+  "tampa": {
+   "developments": 2
+  },
+  "tierra": {
+   "developments": 2
+  },
+  "tigray eritrea": {
+   "developments": 2
+  },
+  "trasporti": {
+   "developments": 2
+  },
+  "travel": {
+   "developments": 2
+  },
+  "tribunal": {
+   "developments": 2
+  },
+  "trinidad": {
+   "developments": 2
+  },
+  "ukraine russia": {
+   "developments": 2
+  },
+  "varsavia": {
+   "developments": 2
+  },
+  "varsovia": {
+   "developments": 2
+  },
+  "vecinos": {
+   "developments": 2
+  },
+  "videoanalisis | lula": {
+   "developments": 2
+  },
+  "voronezh": {
+   "developments": 2
+  },
+  "walter e. washington convention center": {
+   "developments": 2
+  },
+  "wangaratta": {
+   "developments": 2
+  },
+  "west francois picard": {
+   "developments": 2
+  },
+  "west kordofan": {
+   "developments": 2
+  },
+  "western sahara": {
+   "developments": 2
+  },
+  "yemens aden": {
+   "developments": 2
+  },
+  "yerevan": {
+   "developments": 2
+  },
+  "yuma county": {
+   "developments": 2
+  },
+  "yvelines": {
+   "developments": 2
+  },
+  "zakharova": {
+   "developments": 2
+  },
+  "7.49am": {
+   "developments": 1
+  },
+  "aa3": {
+   "developments": 1
+  },
+  "abilene": {
+   "developments": 1
+  },
+  "abuja nigeria": {
+   "developments": 1
+  },
+  "access asia": {
+   "developments": 1
+  },
+  "acropolis": {
+   "developments": 1
+  },
+  "adamuz": {
+   "developments": 1
+  },
+  "aden airport attack": {
+   "developments": 1
+  },
+  "aden airports domain": {
+   "developments": 1
+  },
+  "aden decenas": {
+   "developments": 1
+  },
+  "aden international airport explosions": {
+   "developments": 1
+  },
+  "aden presidential palace": {
+   "developments": 1
+  },
+  "aduenan": {
+   "developments": 1
+  },
+  "aek athens": {
+   "developments": 1
+  },
+  "aeropuerto ejecutivo de opa-locka": {
+   "developments": 1
+  },
+  "aeropuerto internacional harry reid": {
+   "developments": 1
+  },
+  "aeropuerto internacional rey fahd": {
+   "developments": 1
+  },
+  "aeropuerto internacional rey jalid": {
+   "developments": 1
+  },
+  "aeropuerto internacional rey jalid de riad": {
+   "developments": 1
+  },
+  "aeropuerto internacional rey khalid": {
+   "developments": 1
+  },
+  "aeropuerto miami opa-locka": {
+   "developments": 1
+  },
+  "afar": {
+   "developments": 1
+  },
+  "africa nigeria": {
+   "developments": 1
+  },
+  "africa rwanda": {
+   "developments": 1
+  },
+  "agoniza": {
+   "developments": 1
+  },
+  "agra": {
+   "developments": 1
+  },
+  "aguantaremos": {
+   "developments": 1
+  },
+  "aguila": {
+   "developments": 1
+  },
+  "ahmedabad": {
+   "developments": 1
+  },
+  "aichi": {
+   "developments": 1
+  },
+  "airdrie": {
+   "developments": 1
+  },
+  "al-bayda": {
+   "developments": 1
+  },
+  "al-bweib": {
+   "developments": 1
+  },
+  "al-dibab": {
+   "developments": 1
+  },
+  "al-khair education centre": {
+   "developments": 1
+  },
+  "al-maashiq palace": {
+   "developments": 1
+  },
+  "ala": {
+   "developments": 1
+  },
+  "alajuela": {
+   "developments": 1
+  },
+  "alaska peninsula": {
+   "developments": 1
+  },
+  "albania dos": {
+   "developments": 1
+  },
+  "albuquerque": {
+   "developments": 1
+  },
+  "alcalde de lieja": {
+   "developments": 1
+  },
+  "alex": {
+   "developments": 1
+  },
+  "alexa spatium": {
+   "developments": 1
+  },
+  "alfozan": {
+   "developments": 1
+  },
+  "alicante": {
+   "developments": 1
+  },
+  "alpes": {
+   "developments": 1
+  },
+  "alpes el nido": {
+   "developments": 1
+  },
+  "alps": {
+   "developments": 1
+  },
+  "altayeb alhadi": {
+   "developments": 1
+  },
+  "altoona": {
+   "developments": 1
+  },
+  "altos": {
+   "developments": 1
+  },
+  "alvia": {
+   "developments": 1
+  },
+  "amazonas": {
+   "developments": 1
+  },
+  "amazonassu": {
+   "developments": 1
+  },
+  "amazonia": {
+   "developments": 1
+  },
+  "amazzonia": {
+   "developments": 1
+  },
+  "amcham georgia": {
+   "developments": 1
+  },
+  "america central": {
+   "developments": 1
+  },
+  "americas": {
+   "developments": 1
+  },
+  "amiet market": {
+   "developments": 1
+  },
+  "amman": {
+   "developments": 1
+  },
+  "amraam": {
+   "developments": 1
+  },
+  "anapa": {
+   "developments": 1
+  },
+  "andalucia": {
+   "developments": 1
+  },
+  "anguilla": {
+   "developments": 1
+  },
+  "antalya": {
+   "developments": 1
+  },
+  "antarctic": {
+   "developments": 1
+  },
+  "anthem": {
+   "developments": 1
+  },
+  "antigua y barbuda": {
+   "developments": 1
+  },
+  "apartment block": {
+   "developments": 1
+  },
+  "aqui america": {
+   "developments": 1
+  },
+  "arabia": {
+   "developments": 1
+  },
+  "arabia saudita la defensa civil": {
+   "developments": 1
+  },
+  "arabian sea": {
+   "developments": 1
+  },
+  "arco del triunfo manifestaciones": {
+   "developments": 1
+  },
+  "arco di trionfo": {
+   "developments": 1
+  },
+  "arctic 7": {
+   "developments": 1
+  },
+  "arezzo": {
+   "developments": 1
+  },
+  "argelia": {
+   "developments": 1
+  },
+  "arlington county": {
+   "developments": 1
+  },
+  "artico": {
+   "developments": 1
+  },
+  "arunachal": {
+   "developments": 1
+  },
+  "arunachal pradesh": {
+   "developments": 1
+  },
+  "ashkelon": {
+   "developments": 1
+  },
+  "asia centre": {
+   "developments": 1
+  },
+  "assemblea di madrid omaggio": {
+   "developments": 1
+  },
+  "assisi": {
+   "developments": 1
+  },
+  "asuncion": {
+   "developments": 1
+  },
+  "asuntos exteriores": {
+   "developments": 1
+  },
+  "athens international airport": {
+   "developments": 1
+  },
+  "atlantic city": {
+   "developments": 1
+  },
+  "atlantic ocean": {
+   "developments": 1
+  },
+  "atlantico norte": {
+   "developments": 1
+  },
+  "atocha": {
+   "developments": 1
+  },
+  "aula": {
+   "developments": 1
+  },
+  "aulnoye-aymeries": {
+   "developments": 1
+  },
+  "avenues": {
+   "developments": 1
+  },
+  "ayuntamiento": {
+   "developments": 1
+  },
+  "ayuntamiento de limoges": {
+   "developments": 1
+  },
+  "azraq": {
+   "developments": 1
+  },
+  "bab": {
+   "developments": 1
+  },
+  "bab el-mandeb strait": {
+   "developments": 1
+  },
+  "badung": {
+   "developments": 1
+  },
+  "bagno": {
+   "developments": 1
+  },
+  "bahia": {
+   "developments": 1
+  },
+  "bahrein": {
+   "developments": 1
+  },
+  "baidoa": {
+   "developments": 1
+  },
+  "baja": {
+   "developments": 1
+  },
+  "baja california": {
+   "developments": 1
+  },
+  "bakeries": {
+   "developments": 1
+  },
+  "bakersfield": {
+   "developments": 1
+  },
+  "baku": {
+   "developments": 1
+  },
+  "balabac": {
+   "developments": 1
+  },
+  "balabac island": {
+   "developments": 1
+  },
+  "balcanes": {
+   "developments": 1
+  },
+  "balcani": {
+   "developments": 1
+  },
+  "baleari": {
+   "developments": 1
+  },
+  "balmoral": {
+   "developments": 1
+  },
+  "baltic states": {
+   "developments": 1
+  },
+  "baltico": {
+   "developments": 1
+  },
+  "baltico' presidente": {
+   "developments": 1
+  },
+  "baltimore": {
+   "developments": 1
+  },
+  "baltimore county": {
+   "developments": 1
+  },
+  "bamenda": {
+   "developments": 1
+  },
+  "bamina": {
+   "developments": 1
+  },
+  "banco de desarrollo de america latina": {
+   "developments": 1
+  },
+  "banco de inglaterra": {
+   "developments": 1
+  },
+  "banco master": {
+   "developments": 1
+  },
+  "bangui": {
+   "developments": 1
+  },
+  "baniyas": {
+   "developments": 1
+  },
+  "banja luka": {
+   "developments": 1
+  },
+  "barcellona": {
+   "developments": 1
+  },
+  "barein": {
+   "developments": 1
+  },
+  "barquisimeto": {
+   "developments": 1
+  },
+  "barranquilla": {
+   "developments": 1
+  },
+  "bastiglia": {
+   "developments": 1
+  },
+  "batanes islands": {
+   "developments": 1
+  },
+  "batangas": {
+   "developments": 1
+  },
+  "baton rouge": {
+   "developments": 1
+  },
+  "baviera": {
+   "developments": 1
+  },
+  "bayeux": {
+   "developments": 1
+  },
+  "beita": {
+   "developments": 1
+  },
+  "belgorod oblast": {
+   "developments": 1
+  },
+  "bellevue": {
+   "developments": 1
+  },
+  "belo horizonte": {
+   "developments": 1
+  },
+  "beluga": {
+   "developments": 1
+  },
+  "berlin wall": {
+   "developments": 1
+  },
+  "beta israel": {
+   "developments": 1
+  },
+  "biarritz": {
+   "developments": 1
+  },
+  "biblioteca del condado de palm beach": {
+   "developments": 1
+  },
+  "bielorrusia": {
+   "developments": 1
+  },
+  "bielorussia": {
+   "developments": 1
+  },
+  "bilbao": {
+   "developments": 1
+  },
+  "biscarrosse": {
+   "developments": 1
+  },
+  "black sea authorities": {
+   "developments": 1
+  },
+  "black sea drone strikes": {
+   "developments": 1
+  },
+  "black sea emergency": {
+   "developments": 1
+  },
+  "black sea ship attacks - novinite.com domain": {
+   "developments": 1
+  },
+  "black sea shipping domain": {
+   "developments": 1
+  },
+  "blue nile domain": {
+   "developments": 1
+  },
+  "blue nile state": {
+   "developments": 1
+  },
+  "bogor": {
+   "developments": 1
+  },
+  "boletin oficial del estado": {
+   "developments": 1
+  },
+  "bolonia": {
+   "developments": 1
+  },
+  "bolshoi de moscu": {
+   "developments": 1
+  },
+  "bolsonaro close": {
+   "developments": 1
+  },
+  "bondi beach": {
+   "developments": 1
+  },
+  "borneo": {
+   "developments": 1
+  },
+  "bosnia and herzegovina level": {
+   "developments": 1
+  },
+  "bosnia domain": {
+   "developments": 1
+  },
+  "bosnia lugar": {
+   "developments": 1
+  },
+  "bosnia y herzegovina": {
+   "developments": 1
+  },
+  "boulevard des invalides": {
+   "developments": 1
+  },
+  "brest": {
+   "developments": 1
+  },
+  "brigate": {
+   "developments": 1
+  },
+  "britains fairford": {
+   "developments": 1
+  },
+  "british empire": {
+   "developments": 1
+  },
+  "brovary": {
+   "developments": 1
+  },
+  "bruselas ucrania": {
+   "developments": 1
+  },
+  "bruxelles i ventisette": {
+   "developments": 1
+  },
+  "bucarest": {
+   "developments": 1
+  },
+  "buchanskyi": {
+   "developments": 1
+  },
+  "buena vista del meta": {
+   "developments": 1
+  },
+  "bullhead city": {
+   "developments": 1
+  },
+  "bundestag": {
+   "developments": 1
+  },
+  "bunia": {
+   "developments": 1
+  },
+  "burdeos": {
+   "developments": 1
+  },
+  "butler eagle domain": {
+   "developments": 1
+  },
+  "cabo san lucas": {
+   "developments": 1
+  },
+  "caf 224": {
+   "developments": 1
+  },
+  "cage": {
+   "developments": 1
+  },
+  "caiado": {
+   "developments": 1
+  },
+  "caicos islands": {
+   "developments": 1
+  },
+  "cairns": {
+   "developments": 1
+  },
+  "caja chica": {
+   "developments": 1
+  },
+  "calais": {
+   "developments": 1
+  },
+  "calgary": {
+   "developments": 1
+  },
+  "cambridge analytica": {
+   "developments": 1
+  },
+  "cambridgeshire": {
+   "developments": 1
+  },
+  "camp david": {
+   "developments": 1
+  },
+  "camp ishigaki": {
+   "developments": 1
+  },
+  "camp nou": {
+   "developments": 1
+  },
+  "camp pendleton": {
+   "developments": 1
+  },
+  "campania": {
+   "developments": 1
+  },
+  "canal": {
+   "developments": 1
+  },
+  "canal de panama": {
+   "developments": 1
+  },
+  "canal meteo": {
+   "developments": 1
+  },
+  "canale": {
+   "developments": 1
+  },
+  "cao bakery": {
+   "developments": 1
+  },
+  "caos": {
+   "developments": 1
+  },
+  "capadocia": {
+   "developments": 1
+  },
+  "capitolio": {
+   "developments": 1
+  },
+  "capitolio de los estados unidos": {
+   "developments": 1
+  },
+  "capo 007 gb": {
+   "developments": 1
+  },
+  "cappadocia": {
+   "developments": 1
+  },
+  "caracas la embajada de estados unidos": {
+   "developments": 1
+  },
+  "caracas psuv": {
+   "developments": 1
+  },
+  "caraibi": {
+   "developments": 1
+  },
+  "caricom": {
+   "developments": 1
+  },
+  "carolina del norte": {
+   "developments": 1
+  },
+  "carolina del norte carolina del norte": {
+   "developments": 1
+  },
+  "carrusel de las artes": {
+   "developments": 1
+  },
+  "carson - hood": {
+   "developments": 1
+  },
+  "casa bianca katie zacharia": {
+   "developments": 1
+  },
+  "casa bianca' reuters": {
+   "developments": 1
+  },
+  "casa blanca de temu": {
+   "developments": 1
+  },
+  "casa blanca sombria": {
+   "developments": 1
+  },
+  "casa real": {
+   "developments": 1
+  },
+  "casa reale": {
+   "developments": 1
+  },
+  "castelgandolfo": {
+   "developments": 1
+  },
+  "castilla la mancha": {
+   "developments": 1
+  },
+  "cavo dragone": {
+   "developments": 1
+  },
+  "celebes sea": {
+   "developments": 1
+  },
+  "centenares": {
+   "developments": 1
+  },
+  "central africa": {
+   "developments": 1
+  },
+  "central africa antibiotics": {
+   "developments": 1
+  },
+  "central asia domain": {
+   "developments": 1
+  },
+  "central kalimantan": {
+   "developments": 1
+  },
+  "central park": {
+   "developments": 1
+  },
+  "centre right": {
+   "developments": 1
+  },
+  "centro arenal": {
+   "developments": 1
+  },
+  "centro sismologico euro-mediterraneo": {
+   "developments": 1
+  },
+  "ch 47 chinook": {
+   "developments": 1
+  },
+  "chamartin": {
+   "developments": 1
+  },
+  "changi airport": {
+   "developments": 1
+  },
+  "charge": {
+   "developments": 1
+  },
+  "charles bend": {
+   "developments": 1
+  },
+  "cheongwang": {
+   "developments": 1
+  },
+  "chernihiv oblast": {
+   "developments": 1
+  },
+  "chernihiv region": {
+   "developments": 1
+  },
+  "cherry creek news domain": {
+   "developments": 1
+  },
+  "chicanas": {
+   "developments": 1
+  },
+  "chiese": {
+   "developments": 1
+  },
+  "chile chile": {
+   "developments": 1
+  },
+  "china meridional": {
+   "developments": 1
+  },
+  "cholera": {
+   "developments": 1
+  },
+  "chornobyl": {
+   "developments": 1
+  },
+  "christ": {
+   "developments": 1
+  },
+  "cina-corea del nord": {
+   "developments": 1
+  },
+  "cisjordania captura": {
+   "developments": 1
+  },
+  "cisjordania soldados": {
+   "developments": 1
+  },
+  "citta del messico": {
+   "developments": 1
+  },
+  "city of milan": {
+   "developments": 1
+  },
+  "ciudad de gaza": {
+   "developments": 1
+  },
+  "ciudad de mexico": {
+   "developments": 1
+  },
+  "ciudad de panama": {
+   "developments": 1
+  },
+  "civiles": {
+   "developments": 1
+  },
+  "civit": {
+   "developments": 1
+  },
+  "clarksville": {
+   "developments": 1
+  },
+  "cleveland": {
+   "developments": 1
+  },
+  "coahuila": {
+   "developments": 1
+  },
+  "cocle": {
+   "developments": 1
+  },
+  "col du portet": {
+   "developments": 1
+  },
+  "collapses apartment building": {
+   "developments": 1
+  },
+  "colo": {
+   "developments": 1
+  },
+  "colombia cartello": {
+   "developments": 1
+  },
+  "colorado springs": {
+   "developments": 1
+  },
+  "columbus": {
+   "developments": 1
+  },
+  "columna": {
+   "developments": 1
+  },
+  "combattuta": {
+   "developments": 1
+  },
+  "comune": {
+   "developments": 1
+  },
+  "comunidad de madrid": {
+   "developments": 1
+  },
+  "comunidad valenciana": {
+   "developments": 1
+  },
+  "comunita": {
+   "developments": 1
+  },
+  "congo africa": {
+   "developments": 1
+  },
+  "congreso de colombia": {
+   "developments": 1
+  },
+  "congreso de ee.uu": {
+   "developments": 1
+  },
+  "congreso ilhan omar": {
+   "developments": 1
+  },
+  "conrad hotel": {
+   "developments": 1
+  },
+  "constitucional": {
+   "developments": 1
+  },
+  "convergence": {
+   "developments": 1
+  },
+  "cop17": {
+   "developments": 1
+  },
+  "corea del sur militares": {
+   "developments": 1
+  },
+  "coreas": {
+   "developments": 1
+  },
+  "corinth": {
+   "developments": 1
+  },
+  "cornhusker state": {
+   "developments": 1
+  },
+  "corresponsales": {
+   "developments": 1
+  },
+  "corte costituzionale": {
+   "developments": 1
+  },
+  "corte suprema venezuela": {
+   "developments": 1
+  },
+  "cortona": {
+   "developments": 1
+  },
+  "costa d'avorio": {
+   "developments": 1
+  },
+  "countries": {
+   "developments": 1
+  },
+  "cours de vincennes": {
+   "developments": 1
+  },
+  "covid": {
+   "developments": 1
+  },
+  "crimean peninsula": {
+   "developments": 1
+  },
+  "dalma maradona": {
+   "developments": 1
+  },
+  "dalton": {
+   "developments": 1
+  },
+  "damascus - dominican republic post": {
+   "developments": 1
+  },
+  "dammam": {
+   "developments": 1
+  },
+  "dandong north korean": {
+   "developments": 1
+  },
+  "dandong with north korea": {
+   "developments": 1
+  },
+  "dandong, china": {
+   "developments": 1
+  },
+  "danimarca": {
+   "developments": 1
+  },
+  "danos": {
+   "developments": 1
+  },
+  "danube": {
+   "developments": 1
+  },
+  "daraa": {
+   "developments": 1
+  },
+  "daytona beach": {
+   "developments": 1
+  },
+  "de soto": {
+   "developments": 1
+  },
+  "deep ellum": {
+   "developments": 1
+  },
+  "delhi manifestantes": {
+   "developments": 1
+  },
+  "demilitarised zone": {
+   "developments": 1
+  },
+  "demilitarized zone": {
+   "developments": 1
+  },
+  "denison": {
+   "developments": 1
+  },
+  "denpasar": {
+   "developments": 1
+  },
+  "departamento": {
+   "developments": 1
+  },
+  "deportazioni": {
+   "developments": 1
+  },
+  "deraa": {
+   "developments": 1
+  },
+  "desert": {
+   "developments": 1
+  },
+  "desolate arctic": {
+   "developments": 1
+  },
+  "despues": {
+   "developments": 1
+  },
+  "dinamarca": {
+   "developments": 1
+  },
+  "disastro": {
+   "developments": 1
+  },
+  "distrito federal": {
+   "developments": 1
+  },
+  "distrito norte de california": {
+   "developments": 1
+  },
+  "dnepr": {
+   "developments": 1
+  },
+  "dnipro' 'cinque": {
+   "developments": 1
+  },
+  "dobropilia": {
+   "developments": 1
+  },
+  "dodik": {
+   "developments": 1
+  },
+  "domani israele": {
+   "developments": 1
+  },
+  "dona luiza": {
+   "developments": 1
+  },
+  "doral": {
+   "developments": 1
+  },
+  "dubuque": {
+   "developments": 1
+  },
+  "dynamic front 2026": {
+   "developments": 1
+  },
+  "e4": {
+   "developments": 1
+  },
+  "eagle ii": {
+   "developments": 1
+  },
+  "east jerusalem settlers": {
+   "developments": 1
+  },
+  "east kalimantan": {
+   "developments": 1
+  },
+  "east room": {
+   "developments": 1
+  },
+  "east sea domain": {
+   "developments": 1
+  },
+  "east-west": {
+   "developments": 1
+  },
+  "eastern democratic republic": {
+   "developments": 1
+  },
+  "eastern europe": {
+   "developments": 1
+  },
+  "eastern mediterranean": {
+   "developments": 1
+  },
+  "eastleigh": {
+   "developments": 1
+  },
+  "eastroc": {
+   "developments": 1
+  },
+  "eau egipto": {
+   "developments": 1
+  },
+  "ebola": {
+   "developments": 1
+  },
+  "ecuador-peru": {
+   "developments": 1
+  },
+  "edimburgo": {
+   "developments": 1
+  },
+  "edwards air force base": {
+   "developments": 1
+  },
+  "ee": {
+   "developments": 1
+  },
+  "ee. uu. rusia": {
+   "developments": 1
+  },
+  "efrat": {
+   "developments": 1
+  },
+  "egeo": {
+   "developments": 1
+  },
+  "eisenkot bloc": {
+   "developments": 1
+  },
+  "eizenkot": {
+   "developments": 1
+  },
+  "el aaiun": {
+   "developments": 1
+  },
+  "el cairo": {
+   "developments": 1
+  },
+  "el centro nacional de huracanes": {
+   "developments": 1
+  },
+  "el mansouri": {
+   "developments": 1
+  },
+  "el nido": {
+   "developments": 1
+  },
+  "el reino": {
+   "developments": 1
+  },
+  "el salvador costa rica": {
+   "developments": 1
+  },
+  "el salvador el cacco": {
+   "developments": 1
+  },
+  "eln": {
+   "developments": 1
+  },
+  "embajada de colombia": {
+   "developments": 1
+  },
+  "emirati": {
+   "developments": 1
+  },
+  "ensenada": {
+   "developments": 1
+  },
+  "entebbe international airport": {
+   "developments": 1
+  },
+  "entire bangkok": {
+   "developments": 1
+  },
+  "escocia": {
+   "developments": 1
+  },
+  "esmail baqaei": {
+   "developments": 1
+  },
+  "especialistas": {
+   "developments": 1
+  },
+  "espirito santo": {
+   "developments": 1
+  },
+  "estadao": {
+   "developments": 1
+  },
+  "estadio monumental": {
+   "developments": 1
+  },
+  "estado a china": {
+   "developments": 1
+  },
+  "estado de bienestar en europa": {
+   "developments": 1
+  },
+  "estado de nuevo mexico": {
+   "developments": 1
+  },
+  "estado israel": {
+   "developments": 1
+  },
+  "estado mayor": {
+   "developments": 1
+  },
+  "estado y de gobierno": {
+   "developments": 1
+  },
+  "este": {
+   "developments": 1
+  },
+  "estocolmo": {
+   "developments": 1
+  },
+  "estrecho de magallanes": {
+   "developments": 1
+  },
+  "estudios sociales": {
+   "developments": 1
+  },
+  "etienne": {
+   "developments": 1
+  },
+  "etihad stadium": {
+   "developments": 1
+  },
+  "europea": {
+   "developments": 1
+  },
+  "european arctic strategy": {
+   "developments": 1
+  },
+  "eurovision": {
+   "developments": 1
+  },
+  "exit": {
+   "developments": 1
+  },
+  "expanded meeting": {
+   "developments": 1
+  },
+  "export": {
+   "developments": 1
+  },
+  "exteriores de colombia": {
+   "developments": 1
+  },
+  "exteriores de iran": {
+   "developments": 1
+  },
+  "f-16v block": {
+   "developments": 1
+  },
+  "facturas": {
+   "developments": 1
+  },
+  "fairfield": {
+   "developments": 1
+  },
+  "falklands oil fight": {
+   "developments": 1
+  },
+  "fallujah": {
+   "developments": 1
+  },
+  "famiglia reale": {
+   "developments": 1
+  },
+  "fascom": {
+   "developments": 1
+  },
+  "favour": {
+   "developments": 1
+  },
+  "federative republic of brazil": {
+   "developments": 1
+  },
+  "fernando air base": {
+   "developments": 1
+  },
+  "fighting": {
+   "developments": 1
+  },
+  "filadelfia": {
+   "developments": 1
+  },
+  "filipinas": {
+   "developments": 1
+  },
+  "finisterre": {
+   "developments": 1
+  },
+  "fire": {
+   "developments": 1
+  },
+  "fiscalia de eeuu": {
+   "developments": 1
+  },
+  "fiumicino": {
+   "developments": 1
+  },
+  "florence": {
+   "developments": 1
+  },
+  "florencia": {
+   "developments": 1
+  },
+  "fobos": {
+   "developments": 1
+  },
+  "fobos de marte": {
+   "developments": 1
+  },
+  "fonti nato": {
+   "developments": 1
+  },
+  "fort hood shooter": {
+   "developments": 1
+  },
+  "fort huachuca": {
+   "developments": 1
+  },
+  "fort myers": {
+   "developments": 1
+  },
+  "fort stewart": {
+   "developments": 1
+  },
+  "foto": {
+   "developments": 1
+  },
+  "francfort": {
+   "developments": 1
+  },
+  "francia parole": {
+   "developments": 1
+  },
+  "franja alrededor": {
+   "developments": 1
+  },
+  "fuentes de el vaticano": {
+   "developments": 1
+  },
+  "furiosos": {
+   "developments": 1
+  },
+  "futenma airbase": {
+   "developments": 1
+  },
+  "futur": {
+   "developments": 1
+  },
+  "fuzhou": {
+   "developments": 1
+  },
+  "ganges": {
+   "developments": 1
+  },
+  "gansu": {
+   "developments": 1
+  },
+  "gaza de israel": {
+   "developments": 1
+  },
+  "gaza ireland": {
+   "developments": 1
+  },
+  "gaza strip domain": {
+   "developments": 1
+  },
+  "gaza tres": {
+   "developments": 1
+  },
+  "gazipur": {
+   "developments": 1
+  },
+  "gerusalemme": {
+   "developments": 1
+  },
+  "gharibabadi domain": {
+   "developments": 1
+  },
+  "gibuti": {
+   "developments": 1
+  },
+  "ginebra": {
+   "developments": 1
+  },
+  "giordania": {
+   "developments": 1
+  },
+  "giustiziato": {
+   "developments": 1
+  },
+  "global south": {
+   "developments": 1
+  },
+  "goa": {
+   "developments": 1
+  },
+  "goania": {
+   "developments": 1
+  },
+  "gobierno colombia": {
+   "developments": 1
+  },
+  "gobierno de australia": {
+   "developments": 1
+  },
+  "gobierno de brasil": {
+   "developments": 1
+  },
+  "gobierno de canada": {
+   "developments": 1
+  },
+  "gobierno de castilla-la mancha": {
+   "developments": 1
+  },
+  "gobierno de ecuador": {
+   "developments": 1
+  },
+  "gobierno de la ue": {
+   "developments": 1
+  },
+  "gobierno de mansouri": {
+   "developments": 1
+  },
+  "gobierno de moldavia": {
+   "developments": 1
+  },
+  "gobierno de polonia": {
+   "developments": 1
+  },
+  "gobierno de portugal": {
+   "developments": 1
+  },
+  "gobierno de volodimir zelenski": {
+   "developments": 1
+  },
+  "golden dome": {
+   "developments": 1
+  },
+  "golden dome for america": {
+   "developments": 1
+  },
+  "golden state": {
+   "developments": 1
+  },
+  "golden state valkyries": {
+   "developments": 1
+  },
+  "golfo de mexico": {
+   "developments": 1
+  },
+  "golfo del messico": {
+   "developments": 1
+  },
+  "gorica": {
+   "developments": 1
+  },
+  "gorice": {
+   "developments": 1
+  },
+  "gran premio de ciudad de mexico": {
+   "developments": 1
+  },
+  "gran premio de estados unidos": {
+   "developments": 1
+  },
+  "grand canyon state": {
+   "developments": 1
+  },
+  "grand island": {
+   "developments": 1
+  },
+  "great hall of the people": {
+   "developments": 1
+  },
+  "great lakes": {
+   "developments": 1
+  },
+  "greater kordofan": {
+   "developments": 1
+  },
+  "grenoble": {
+   "developments": 1
+  },
+  "groenlandia": {
+   "developments": 1
+  },
+  "groenlandia recalca": {
+   "developments": 1
+  },
+  "guayas": {
+   "developments": 1
+  },
+  "guerrero": {
+   "developments": 1
+  },
+  "gulevka": {
+   "developments": 1
+  },
+  "gulf coast": {
+   "developments": 1
+  },
+  "gulf of naples": {
+   "developments": 1
+  },
+  "gulf of oman": {
+   "developments": 1
+  },
+  "gulf of oman domain": {
+   "developments": 1
+  },
+  "gulf ship": {
+   "developments": 1
+  },
+  "gulfport": {
+   "developments": 1
+  },
+  "guntersville dam": {
+   "developments": 1
+  },
+  "gyeonggi province": {
+   "developments": 1
+  },
+  "hacienda": {
+   "developments": 1
+  },
+  "haiti massiccio": {
+   "developments": 1
+  },
+  "halles": {
+   "developments": 1
+  },
+  "hamburgo": {
+   "developments": 1
+  },
+  "hammoud": {
+   "developments": 1
+  },
+  "hebei": {
+   "developments": 1
+  },
+  "hellenic republic": {
+   "developments": 1
+  },
+  "high north": {
+   "developments": 1
+  },
+  "hindu kush": {
+   "developments": 1
+  },
+  "historic": {
+   "developments": 1
+  },
+  "hmas stirling": {
+   "developments": 1
+  },
+  "hodeida": {
+   "developments": 1
+  },
+  "hofdi": {
+   "developments": 1
+  },
+  "holosiivskyi district": {
+   "developments": 1
+  },
+  "hood": {
+   "developments": 1
+  },
+  "hormuz ahead": {
+   "developments": 1
+  },
+  "hormuz strait": {
+   "developments": 1
+  },
+  "hormuz tehran": {
+   "developments": 1
+  },
+  "horn county": {
+   "developments": 1
+  },
+  "hualien": {
+   "developments": 1
+  },
+  "hudson": {
+   "developments": 1
+  },
+  "huties": {
+   "developments": 1
+  },
+  "huties de yemen": {
+   "developments": 1
+  },
+  "ibovespa": {
+   "developments": 1
+  },
+  "indian ocean": {
+   "developments": 1
+  },
+  "insieme": {
+   "developments": 1
+  },
+  "instituto contra la peste de irkutsk": {
+   "developments": 1
+  },
+  "instituto nacional de geociencias de panama": {
+   "developments": 1
+  },
+  "interior de baviera": {
+   "developments": 1
+  },
+  "interiores": {
+   "developments": 1
+  },
+  "invitadodeldiaf24": {
+   "developments": 1
+  },
+  "iowas": {
+   "developments": 1
+  },
+  "irkutsk anti-plague institute": {
+   "developments": 1
+  },
+  "ischia": {
+   "developments": 1
+  },
+  "ishigaki island": {
+   "developments": 1
+  },
+  "isla coiba": {
+   "developments": 1
+  },
+  "israel colombia": {
+   "developments": 1
+  },
+  "italian republic": {
+   "developments": 1
+  },
+  "ithaca": {
+   "developments": 1
+  },
+  "jalisco": {
+   "developments": 1
+  },
+  "jalud village": {
+   "developments": 1
+  },
+  "jamla": {
+   "developments": 1
+  },
+  "jarkov": {
+   "developments": 1
+  },
+  "jato": {
+   "developments": 1
+  },
+  "jerusalen este": {
+   "developments": 1
+  },
+  "jodhpur": {
+   "developments": 1
+  },
+  "johor bahru": {
+   "developments": 1
+  },
+  "juarez": {
+   "developments": 1
+  },
+  "kadaha": {
+   "developments": 1
+  },
+  "kalispell": {
+   "developments": 1
+  },
+  "kamchatka": {
+   "developments": 1
+  },
+  "kansas city": {
+   "developments": 1
+  },
+  "karnakis": {
+   "developments": 1
+  },
+  "keelung": {
+   "developments": 1
+  },
+  "kenia": {
+   "developments": 1
+  },
+  "kfar aza": {
+   "developments": 1
+  },
+  "khartoum international airport": {
+   "developments": 1
+  },
+  "kherson oblast": {
+   "developments": 1
+  },
+  "khrustalnyi": {
+   "developments": 1
+  },
+  "kidal": {
+   "developments": 1
+  },
+  "kielce": {
+   "developments": 1
+  },
+  "kiev attacchi": {
+   "developments": 1
+  },
+  "kiev tre": {
+   "developments": 1
+  },
+  "king oyo nyimba": {
+   "developments": 1
+  },
+  "kingdom": {
+   "developments": 1
+  },
+  "kingdom centre": {
+   "developments": 1
+  },
+  "kingdom domain": {
+   "developments": 1
+  },
+  "kings island": {
+   "developments": 1
+  },
+  "kingsford smith airport": {
+   "developments": 1
+  },
+  "kirovogrado": {
+   "developments": 1
+  },
+  "kiryat shmona": {
+   "developments": 1
+  },
+  "klin": {
+   "developments": 1
+  },
+  "km": {
+   "developments": 1
+  },
+  "knoxville": {
+   "developments": 1
+  },
+  "kolodiazi": {
+   "developments": 1
+  },
+  "kolpinsky district": {
+   "developments": 1
+  },
+  "konstantinovo": {
+   "developments": 1
+  },
+  "korean demilitarized zone": {
+   "developments": 1
+  },
+  "korotych": {
+   "developments": 1
+  },
+  "kp": {
+   "developments": 1
+  },
+  "kremenchuk": {
+   "developments": 1
+  },
+  "ksudach": {
+   "developments": 1
+  },
+  "kuala": {
+   "developments": 1
+  },
+  "kubura port": {
+   "developments": 1
+  },
+  "kugompo": {
+   "developments": 1
+  },
+  "kurdistan": {
+   "developments": 1
+  },
+  "kursk oblast": {
+   "developments": 1
+  },
+  "kuwait international airport": {
+   "developments": 1
+  },
+  "kyiv kyiv": {
+   "developments": 1
+  },
+  "kyiv metro": {
+   "developments": 1
+  },
+  "kyiv oblast": {
+   "developments": 1
+  },
+  "kyiv ukraine": {
+   "developments": 1
+  },
+  "kyrgyz republic": {
+   "developments": 1
+  },
+  "l'avana": {
+   "developments": 1
+  },
+  "la": {
+   "developments": 1
+  },
+  "la casa rosada": {
+   "developments": 1
+  },
+  "la county": {
+   "developments": 1
+  },
+  "la guaira": {
+   "developments": 1
+  },
+  "la mancha": {
+   "developments": 1
+  },
+  "la prefectura de policia": {
+   "developments": 1
+  },
+  "la repubblica": {
+   "developments": 1
+  },
+  "laduma ngxokolo": {
+   "developments": 1
+  },
+  "lago di costanza": {
+   "developments": 1
+  },
+  "lago ontario": {
+   "developments": 1
+  },
+  "lajes": {
+   "developments": 1
+  },
+  "lamerd": {
+   "developments": 1
+  },
+  "language": {
+   "developments": 1
+  },
+  "lara": {
+   "developments": 1
+  },
+  "large-scale review": {
+   "developments": 1
+  },
+  "las condes": {
+   "developments": 1
+  },
+  "latin america & caribbean": {
+   "developments": 1
+  },
+  "lausanne": {
+   "developments": 1
+  },
+  "lava": {
+   "developments": 1
+  },
+  "lawrence venturepark": {
+   "developments": 1
+  },
+  "lebrons": {
+   "developments": 1
+  },
+  "leeds": {
+   "developments": 1
+  },
+  "lemusiniere del papa": {
+   "developments": 1
+  },
+  "leningrad": {
+   "developments": 1
+  },
+  "leon": {
+   "developments": 1
+  },
+  "leopoli": {
+   "developments": 1
+  },
+  "les halles": {
+   "developments": 1
+  },
+  "les invalides": {
+   "developments": 1
+  },
+  "lesbo": {
+   "developments": 1
+  },
+  "leshuttle": {
+   "developments": 1
+  },
+  "lettonia": {
+   "developments": 1
+  },
+  "ley": {
+   "developments": 1
+  },
+  "lhasa": {
+   "developments": 1
+  },
+  "liaoning": {
+   "developments": 1
+  },
+  "libano dotazioni": {
+   "developments": 1
+  },
+  "libia": {
+   "developments": 1
+  },
+  "lieja": {
+   "developments": 1
+  },
+  "lille 3-0": {
+   "developments": 1
+  },
+  "lipetsk": {
+   "developments": 1
+  },
+  "lithuania lithuania": {
+   "developments": 1
+  },
+  "little italy": {
+   "developments": 1
+  },
+  "liuqiu": {
+   "developments": 1
+  },
+  "loews": {
+   "developments": 1
+  },
+  "lombardy": {
+   "developments": 1
+  },
+  "lombardy region": {
+   "developments": 1
+  },
+  "los angeles county": {
+   "developments": 1
+  },
+  "los angeles international airport": {
+   "developments": 1
+  },
+  "los yebenes": {
+   "developments": 1
+  },
+  "lublin": {
+   "developments": 1
+  },
+  "lugansk": {
+   "developments": 1
+  },
+  "luhansk oblast ukraine": {
+   "developments": 1
+  },
+  "luna": {
+   "developments": 1
+  },
+  "lunes": {
+   "developments": 1
+  },
+  "madeira": {
+   "developments": 1
+  },
+  "madinah": {
+   "developments": 1
+  },
+  "madison": {
+   "developments": 1
+  },
+  "madrid dos": {
+   "developments": 1
+  },
+  "madrid-andalusia": {
+   "developments": 1
+  },
+  "madrid-sevilla": {
+   "developments": 1
+  },
+  "madrid-siviglia": {
+   "developments": 1
+  },
+  "magallanes": {
+   "developments": 1
+  },
+  "mainland china": {
+   "developments": 1
+  },
+  "malasia": {
+   "developments": 1
+  },
+  "mali - dominican republic post": {
+   "developments": 1
+  },
+  "malvinas": {
+   "developments": 1
+  },
+  "manabi": {
+   "developments": 1
+  },
+  "managua": {
+   "developments": 1
+  },
+  "manaus": {
+   "developments": 1
+  },
+  "manchester united": {
+   "developments": 1
+  },
+  "mandeb": {
+   "developments": 1
+  },
+  "maniobras": {
+   "developments": 1
+  },
+  "manufacturing base": {
+   "developments": 1
+  },
+  "map": {
+   "developments": 1
+  },
+  "mar negro": {
+   "developments": 1
+  },
+  "mar rosso": {
+   "developments": 1
+  },
+  "marche des enfants rouges": {
+   "developments": 1
+  },
+  "marina bay sands": {
+   "developments": 1
+  },
+  "mariupol": {
+   "developments": 1
+  },
+  "marocco": {
+   "developments": 1
+  },
+  "marrakesh": {
+   "developments": 1
+  },
+  "mars": {
+   "developments": 1
+  },
+  "marsella": {
+   "developments": 1
+  },
+  "marshall islands": {
+   "developments": 1
+  },
+  "marte": {
+   "developments": 1
+  },
+  "marte cientificos": {
+   "developments": 1
+  },
+  "mascate": {
+   "developments": 1
+  },
+  "mateusz morawiecki": {
+   "developments": 1
+  },
+  "mather air force base": {
+   "developments": 1
+  },
+  "mather airport": {
+   "developments": 1
+  },
+  "maxhosa africa": {
+   "developments": 1
+  },
+  "maximos mansion": {
+   "developments": 1
+  },
+  "ma’an city": {
+   "developments": 1
+  },
+  "meca": {
+   "developments": 1
+  },
+  "mecca houthi": {
+   "developments": 1
+  },
+  "mecca saudi arabia": {
+   "developments": 1
+  },
+  "mecca turchia": {
+   "developments": 1
+  },
+  "media gaza": {
+   "developments": 1
+  },
+  "medina domain": {
+   "developments": 1
+  },
+  "mediterraneo": {
+   "developments": 1
+  },
+  "mercosur": {
+   "developments": 1
+  },
+  "mesa": {
+   "developments": 1
+  },
+  "metropoles": {
+   "developments": 1
+  },
+  "metropolitan city": {
+   "developments": 1
+  },
+  "metropolitan city of milan": {
+   "developments": 1
+  },
+  "michurinsky": {
+   "developments": 1
+  },
+  "middle east domain": {
+   "developments": 1
+  },
+  "middle east war oil": {
+   "developments": 1
+  },
+  "middle eastern": {
+   "developments": 1
+  },
+  "mideterm": {
+   "developments": 1
+  },
+  "migrantes": {
+   "developments": 1
+  },
+  "mijmas": {
+   "developments": 1
+  },
+  "milano": {
+   "developments": 1
+  },
+  "militarnyi": {
+   "developments": 1
+  },
+  "military demarcation line": {
+   "developments": 1
+  },
+  "millerovo": {
+   "developments": 1
+  },
+  "milosevic": {
+   "developments": 1
+  },
+  "milrem glasgow": {
+   "developments": 1
+  },
+  "minas gerais": {
+   "developments": 1
+  },
+  "mindaugas": {
+   "developments": 1
+  },
+  "ministerio": {
+   "developments": 1
+  },
+  "ministerio de transportes de rusia": {
+   "developments": 1
+  },
+  "ministerio publico": {
+   "developments": 1
+  },
+  "ministro de asuntos exteriores de cuba": {
+   "developments": 1
+  },
+  "ministro dell'interno": {
+   "developments": 1
+  },
+  "miraflores": {
+   "developments": 1
+  },
+  "misiones": {
+   "developments": 1
+  },
+  "missile houthi": {
+   "developments": 1
+  },
+  "mobilitazione": {
+   "developments": 1
+  },
+  "moderna": {
+   "developments": 1
+  },
+  "mojave": {
+   "developments": 1
+  },
+  "mojave desert": {
+   "developments": 1
+  },
+  "moldavia": {
+   "developments": 1
+  },
+  "moncloa": {
+   "developments": 1
+  },
+  "monitorati": {
+   "developments": 1
+  },
+  "monoprix": {
+   "developments": 1
+  },
+  "monte herzl": {
+   "developments": 1
+  },
+  "montenegro mikhail zvinchuk": {
+   "developments": 1
+  },
+  "monumental": {
+   "developments": 1
+  },
+  "monumental stadium": {
+   "developments": 1
+  },
+  "moscow oblast": {
+   "developments": 1
+  },
+  "mount herzl": {
+   "developments": 1
+  },
+  "mq-9": {
+   "developments": 1
+  },
+  "mrt": {
+   "developments": 1
+  },
+  "mt": {
+   "developments": 1
+  },
+  "multe": {
+   "developments": 1
+  },
+  "museo": {
+   "developments": 1
+  },
+  "museo de la infancia": {
+   "developments": 1
+  },
+  "museo del louvre": {
+   "developments": 1
+  },
+  "museo nacional": {
+   "developments": 1
+  },
+  "museo nacional cientos": {
+   "developments": 1
+  },
+  "museo nacional de colombia": {
+   "developments": 1
+  },
+  "museo nazionale opere su lgbt": {
+   "developments": 1
+  },
+  "myanmar rohingya": {
+   "developments": 1
+  },
+  "mykolaiv": {
+   "developments": 1
+  },
+  "nanan city people's court": {
+   "developments": 1
+  },
+  "nancy": {
+   "developments": 1
+  },
+  "nansei": {
+   "developments": 1
+  },
+  "nansei islands": {
+   "developments": 1
+  },
+  "nantucket": {
+   "developments": 1
+  },
+  "napoles": {
+   "developments": 1
+  },
+  "napoli": {
+   "developments": 1
+  },
+  "narino": {
+   "developments": 1
+  },
+  "natal": {
+   "developments": 1
+  },
+  "natick": {
+   "developments": 1
+  },
+  "nato summit": {
+   "developments": 1
+  },
+  "navlya": {
+   "developments": 1
+  },
+  "nazi germany": {
+   "developments": 1
+  },
+  "nebraskans": {
+   "developments": 1
+  },
+  "negev": {
+   "developments": 1
+  },
+  "negro dos": {
+   "developments": 1
+  },
+  "negro turquia": {
+   "developments": 1
+  },
+  "new orleans saints": {
+   "developments": 1
+  },
+  "new providence": {
+   "developments": 1
+  },
+  "new us": {
+   "developments": 1
+  },
+  "new yalu river bridge": {
+   "developments": 1
+  },
+  "new yemen": {
+   "developments": 1
+  },
+  "new york case": {
+   "developments": 1
+  },
+  "new york domain": {
+   "developments": 1
+  },
+  "nido del aguila": {
+   "developments": 1
+  },
+  "nile": {
+   "developments": 1
+  },
+  "niza": {
+   "developments": 1
+  },
+  "nizza": {
+   "developments": 1
+  },
+  "nordeste": {
+   "developments": 1
+  },
+  "normandia": {
+   "developments": 1
+  },
+  "norte de kiev": {
+   "developments": 1
+  },
+  "norte fire": {
+   "developments": 1
+  },
+  "north africa": {
+   "developments": 1
+  },
+  "north africa programme": {
+   "developments": 1
+  },
+  "north and south kivu": {
+   "developments": 1
+  },
+  "north bridge": {
+   "developments": 1
+  },
+  "north domain": {
+   "developments": 1
+  },
+  "north korea south korea": {
+   "developments": 1
+  },
+  "north zone": {
+   "developments": 1
+  },
+  "northeast africa": {
+   "developments": 1
+  },
+  "northern bridge": {
+   "developments": 1
+  },
+  "northern neighbourhood": {
+   "developments": 1
+  },
+  "northern song": {
+   "developments": 1
+  },
+  "norvegia": {
+   "developments": 1
+  },
+  "nova": {
+   "developments": 1
+  },
+  "nova de israel": {
+   "developments": 1
+  },
+  "novokuibyshevsk": {
+   "developments": 1
+  },
+  "novolipetsk metallurgical plant": {
+   "developments": 1
+  },
+  "nueva america": {
+   "developments": 1
+  },
+  "nueva delhi": {
+   "developments": 1
+  },
+  "nueve": {
+   "developments": 1
+  },
+  "nuevo mexico": {
+   "developments": 1
+  },
+  "nuova zelanda": {
+   "developments": 1
+  },
+  "nuovi": {
+   "developments": 1
+  },
+  "nuristan": {
+   "developments": 1
+  },
+  "oahu": {
+   "developments": 1
+  },
+  "obukhiv": {
+   "developments": 1
+  },
+  "oceano americano": {
+   "developments": 1
+  },
+  "okotoks": {
+   "developments": 1
+  },
+  "olanda": {
+   "developments": 1
+  },
+  "oleshky domain": {
+   "developments": 1
+  },
+  "oleshky moscow": {
+   "developments": 1
+  },
+  "oleshky russia": {
+   "developments": 1
+  },
+  "omsk": {
+   "developments": 1
+  },
+  "ondo": {
+   "developments": 1
+  },
+  "onu bogota": {
+   "developments": 1
+  },
+  "opala": {
+   "developments": 1
+  },
+  "orange county": {
+   "developments": 1
+  },
+  "orient beach": {
+   "developments": 1
+  },
+  "orlando": {
+   "developments": 1
+  },
+  "orleans": {
+   "developments": 1
+  },
+  "ostroleka": {
+   "developments": 1
+  },
+  "overland park": {
+   "developments": 1
+  },
+  "p.l": {
+   "developments": 1
+  },
+  "pacific arctic": {
+   "developments": 1
+  },
+  "pacific coast hurricane": {
+   "developments": 1
+  },
+  "pacific domain": {
+   "developments": 1
+  },
+  "pacific island": {
+   "developments": 1
+  },
+  "pacifico usgs": {
+   "developments": 1
+  },
+  "pacto historico": {
+   "developments": 1
+  },
+  "padua": {
+   "developments": 1
+  },
+  "paese sassi": {
+   "developments": 1
+  },
+  "paesi del golfo": {
+   "developments": 1
+  },
+  "pais": {
+   "developments": 1
+  },
+  "pakistan sisma": {
+   "developments": 1
+  },
+  "pakistan' media": {
+   "developments": 1
+  },
+  "pakistanwashington": {
+   "developments": 1
+  },
+  "palacio apostolico": {
+   "developments": 1
+  },
+  "palacio de la asamblea": {
+   "developments": 1
+  },
+  "palacio de la moncloa": {
+   "developments": 1
+  },
+  "palacio de miraflores": {
+   "developments": 1
+  },
+  "palacio del eliseo": {
+   "developments": 1
+  },
+  "palacio del planalto": {
+   "developments": 1
+  },
+  "palanca": {
+   "developments": 1
+  },
+  "palangka": {
+   "developments": 1
+  },
+  "palasport": {
+   "developments": 1
+  },
+  "palawan": {
+   "developments": 1
+  },
+  "palazzo del governo": {
+   "developments": 1
+  },
+  "palazzp chigi": {
+   "developments": 1
+  },
+  "palm beach county": {
+   "developments": 1
+  },
+  "palmas": {
+   "developments": 1
+  },
+  "pantallas": {
+   "developments": 1
+  },
+  "pantheon-assas": {
+   "developments": 1
+  },
+  "paralelamente": {
+   "developments": 1
+  },
+  "paris st-germain": {
+   "developments": 1
+  },
+  "park city": {
+   "developments": 1
+  },
+  "parlamento de sajonia-anhalt": {
+   "developments": 1
+  },
+  "parque nacional big bend": {
+   "developments": 1
+  },
+  "parque nacional del iguazu": {
+   "developments": 1
+  },
+  "parroquia del perpetuo socorro de guayaquil": {
+   "developments": 1
+  },
+  "paseo de la fama de hollywood": {
+   "developments": 1
+  },
+  "patria": {
+   "developments": 1
+  },
+  "patrimonio de la humanidad": {
+   "developments": 1
+  },
+  "paulista": {
+   "developments": 1
+  },
+  "paz": {
+   "developments": 1
+  },
+  "pd": {
+   "developments": 1
+  },
+  "pecherskyi": {
+   "developments": 1
+  },
+  "peninsula qatar domain": {
+   "developments": 1
+  },
+  "penonome": {
+   "developments": 1
+  },
+  "people’s republic": {
+   "developments": 1
+  },
+  "people’s republic of china": {
+   "developments": 1
+  },
+  "peoria": {
+   "developments": 1
+  },
+  "perch 1.0": {
+   "developments": 1
+  },
+  "perch 2.0": {
+   "developments": 1
+  },
+  "pere lachaise cemetery": {
+   "developments": 1
+  },
+  "persian gulf domain": {
+   "developments": 1
+  },
+  "perspective": {
+   "developments": 1
+  },
+  "peterson space force base": {
+   "developments": 1
+  },
+  "pf": {
+   "developments": 1
+  },
+  "phobos": {
+   "developments": 1
+  },
+  "piazza del duomo": {
+   "developments": 1
+  },
+  "pinar del rio": {
+   "developments": 1
+  },
+  "pinduoduo": {
+   "developments": 1
+  },
+  "pinecrest": {
+   "developments": 1
+  },
+  "pingtung": {
+   "developments": 1
+  },
+  "pirineos": {
+   "developments": 1
+  },
+  "pistoia": {
+   "developments": 1
+  },
+  "pitaloza arriba": {
+   "developments": 1
+  },
+  "pittsburgh": {
+   "developments": 1
+  },
+  "place": {
+   "developments": 1
+  },
+  "place de": {
+   "developments": 1
+  },
+  "place de la bastille": {
+   "developments": 1
+  },
+  "place de la republique dalle 23": {
+   "developments": 1
+  },
+  "planadas": {
+   "developments": 1
+  },
+  "plasencia": {
+   "developments": 1
+  },
+  "playas": {
+   "developments": 1
+  },
+  "plaza de la bastilla": {
+   "developments": 1
+  },
+  "plaza de los rehenes": {
+   "developments": 1
+  },
+  "plaza de san pedro": {
+   "developments": 1
+  },
+  "plaza del pueblo": {
+   "developments": 1
+  },
+  "podgorica": {
+   "developments": 1
+  },
+  "polandus": {
+   "developments": 1
+  },
+  "policaa": {
+   "developments": 1
+  },
+  "polo sur": {
+   "developments": 1
+  },
+  "polonia personal": {
+   "developments": 1
+  },
+  "port huron": {
+   "developments": 1
+  },
+  "porta di brandeburgo": {
+   "developments": 1
+  },
+  "porto": {
+   "developments": 1
+  },
+  "porto rico": {
+   "developments": 1
+  },
+  "pozzuoli": {
+   "developments": 1
+  },
+  "pratas": {
+   "developments": 1
+  },
+  "pratica di mare": {
+   "developments": 1
+  },
+  "prefecture": {
+   "developments": 1
+  },
+  "primorsk": {
+   "developments": 1
+  },
+  "pristina": {
+   "developments": 1
+  },
+  "pro-europe": {
+   "developments": 1
+  },
+  "pryluky fourteen": {
+   "developments": 1
+  },
+  "pucallpa": {
+   "developments": 1
+  },
+  "puerta del sol": {
+   "developments": 1
+  },
+  "puerto iguazu": {
+   "developments": 1
+  },
+  "puerto san carlos": {
+   "developments": 1
+  },
+  "pulkovo": {
+   "developments": 1
+  },
+  "pulkovo airport": {
+   "developments": 1
+  },
+  "punta arenas": {
+   "developments": 1
+  },
+  "puntland": {
+   "developments": 1
+  },
+  "putrajaya": {
+   "developments": 1
+  },
+  "qassem": {
+   "developments": 1
+  },
+  "quito": {
+   "developments": 1
+  },
+  "quneitra": {
+   "developments": 1
+  },
+  "r-neb": {
+   "developments": 1
+  },
+  "ramala": {
+   "developments": 1
+  },
+  "ramat gan": {
+   "developments": 1
+  },
+  "ramla": {
+   "developments": 1
+  },
+  "readout": {
+   "developments": 1
+  },
+  "recep": {
+   "developments": 1
+  },
+  "red sands": {
+   "developments": 1
+  },
+  "regione lombardia": {
+   "developments": 1
+  },
+  "registan square": {
+   "developments": 1
+  },
+  "regno": {
+   "developments": 1
+  },
+  "republic of iceland": {
+   "developments": 1
+  },
+  "republic of rwanda": {
+   "developments": 1
+  },
+  "republic of zambia": {
+   "developments": 1
+  },
+  "republica": {
+   "developments": 1
+  },
+  "republica dominicana": {
+   "developments": 1
+  },
+  "republica sprska": {
+   "developments": 1
+  },
+  "response": {
+   "developments": 1
+  },
+  "retiro": {
+   "developments": 1
+  },
+  "rey jalid de riad": {
+   "developments": 1
+  },
+  "reykjavik": {
+   "developments": 1
+  },
+  "riad l'onu": {
+   "developments": 1
+  },
+  "richmond": {
+   "developments": 1
+  },
+  "riga": {
+   "developments": 1
+  },
+  "riyadh domain": {
+   "developments": 1
+  },
+  "rocky view county": {
+   "developments": 1
+  },
+  "rogeria braga": {
+   "developments": 1
+  },
+  "rojo": {
+   "developments": 1
+  },
+  "roosevelt": {
+   "developments": 1
+  },
+  "rosario": {
+   "developments": 1
+  },
+  "roshen": {
+   "developments": 1
+  },
+  "rossio de lisboa": {
+   "developments": 1
+  },
+  "route": {
+   "developments": 1
+  },
+  "route 463": {
+   "developments": 1
+  },
+  "rubios india": {
+   "developments": 1
+  },
+  "rue beaurepaire": {
+   "developments": 1
+  },
+  "russia-africa summit": {
+   "developments": 1
+  },
+  "russia-cina": {
+   "developments": 1
+  },
+  "russiarussia": {
+   "developments": 1
+  },
+  "russias black sea": {
+   "developments": 1
+  },
+  "russias sakhalin": {
+   "developments": 1
+  },
+  "ryazan": {
+   "developments": 1
+  },
+  "sabina shoal": {
+   "developments": 1
+  },
+  "sacramento": {
+   "developments": 1
+  },
+  "safnahusid": {
+   "developments": 1
+  },
+  "sahara occidental": {
+   "developments": 1
+  },
+  "saint john paul ii": {
+   "developments": 1
+  },
+  "saint peter square": {
+   "developments": 1
+  },
+  "saint-etienne": {
+   "developments": 1
+  },
+  "sajonia-anhalt": {
+   "developments": 1
+  },
+  "sakhalin island": {
+   "developments": 1
+  },
+  "salimos": {
+   "developments": 1
+  },
+  "samo": {
+   "developments": 1
+  },
+  "san andres": {
+   "developments": 1
+  },
+  "san antonio": {
+   "developments": 1
+  },
+  "san blas": {
+   "developments": 1
+  },
+  "san diego bay": {
+   "developments": 1
+  },
+  "san diego donald trump": {
+   "developments": 1
+  },
+  "san diego gavin newsom": {
+   "developments": 1
+  },
+  "san pietroburgo": {
+   "developments": 1
+  },
+  "san salvador de bahia": {
+   "developments": 1
+  },
+  "san sebastian": {
+   "developments": 1
+  },
+  "san siro": {
+   "developments": 1
+  },
+  "sandringham": {
+   "developments": 1
+  },
+  "sangatte": {
+   "developments": 1
+  },
+  "santa barbara de iscuande": {
+   "developments": 1
+  },
+  "santa catarina": {
+   "developments": 1
+  },
+  "santa rosa": {
+   "developments": 1
+  },
+  "santo domingo": {
+   "developments": 1
+  },
+  "santuario divina pastora": {
+   "developments": 1
+  },
+  "sao bernardo do campo": {
+   "developments": 1
+  },
+  "sao goncalo": {
+   "developments": 1
+  },
+  "sao paulo miles": {
+   "developments": 1
+  },
+  "saravejo": {
+   "developments": 1
+  },
+  "saronic": {
+   "developments": 1
+  },
+  "sarych": {
+   "developments": 1
+  },
+  "saudi arabia - news": {
+   "developments": 1
+  },
+  "saudi arabia domain": {
+   "developments": 1
+  },
+  "saudi arabia trilateral": {
+   "developments": 1
+  },
+  "saudi invitational": {
+   "developments": 1
+  },
+  "saudi-arabia": {
+   "developments": 1
+  },
+  "saudis arabia": {
+   "developments": 1
+  },
+  "scarborough shoal": {
+   "developments": 1
+  },
+  "scettica": {
+   "developments": 1
+  },
+  "schwarz": {
+   "developments": 1
+  },
+  "sciences sociales de paris": {
+   "developments": 1
+  },
+  "scontri alla bastiglia": {
+   "developments": 1
+  },
+  "scrutinio": {
+   "developments": 1
+  },
+  "sea of azov": {
+   "developments": 1
+  },
+  "second thomas shoal": {
+   "developments": 1
+  },
+  "seggi": {
+   "developments": 1
+  },
+  "seis": {
+   "developments": 1
+  },
+  "seized explosives": {
+   "developments": 1
+  },
+  "sejm": {
+   "developments": 1
+  },
+  "self-loading equipment dock": {
+   "developments": 1
+  },
+  "seoul pyongyang": {
+   "developments": 1
+  },
+  "serafin": {
+   "developments": 1
+  },
+  "serpukhov": {
+   "developments": 1
+  },
+  "sevilla": {
+   "developments": 1
+  },
+  "seville": {
+   "developments": 1
+  },
+  "shabwa dozens": {
+   "developments": 1
+  },
+  "shadow fleet network": {
+   "developments": 1
+  },
+  "shadow fleet operations": {
+   "developments": 1
+  },
+  "shakahola": {
+   "developments": 1
+  },
+  "shamonda": {
+   "developments": 1
+  },
+  "sharjah": {
+   "developments": 1
+  },
+  "sharm el-sheikh": {
+   "developments": 1
+  },
+  "shelejov": {
+   "developments": 1
+  },
+  "shelekhov": {
+   "developments": 1
+  },
+  "sheremetyevo": {
+   "developments": 1
+  },
+  "si": {
+   "developments": 1
+  },
+  "siberia la casa blanca": {
+   "developments": 1
+  },
+  "siberia russian": {
+   "developments": 1
+  },
+  "siccita": {
+   "developments": 1
+  },
+  "sicurezza": {
+   "developments": 1
+  },
+  "silver rail elementary in bend": {
+   "developments": 1
+  },
+  "sindicato de inquilinas": {
+   "developments": 1
+  },
+  "singapur": {
+   "developments": 1
+  },
+  "sinuiju": {
+   "developments": 1
+  },
+  "sisma a panama": {
+   "developments": 1
+  },
+  "sistema solar": {
+   "developments": 1
+  },
+  "siviglia": {
+   "developments": 1
+  },
+  "six flags": {
+   "developments": 1
+  },
+  "sm-3 block": {
+   "developments": 1
+  },
+  "sochi": {
+   "developments": 1
+  },
+  "socialist republic of viet nam": {
+   "developments": 1
+  },
+  "solaia": {
+   "developments": 1
+  },
+  "solfagnano castle": {
+   "developments": 1
+  },
+  "songshan": {
+   "developments": 1
+  },
+  "sophie germain": {
+   "developments": 1
+  },
+  "south africa police": {
+   "developments": 1
+  },
+  "south asia": {
+   "developments": 1
+  },
+  "south atlantic": {
+   "developments": 1
+  },
+  "south atlantic fishery management council": {
+   "developments": 1
+  },
+  "south bridge": {
+   "developments": 1
+  },
+  "south kordofan": {
+   "developments": 1
+  },
+  "south korea domain": {
+   "developments": 1
+  },
+  "south lawn": {
+   "developments": 1
+  },
+  "south pole": {
+   "developments": 1
+  },
+  "south west state": {
+   "developments": 1
+  },
+  "southaven": {
+   "developments": 1
+  },
+  "southeast asia massive": {
+   "developments": 1
+  },
+  "southeastern": {
+   "developments": 1
+  },
+  "southern": {
+   "developments": 1
+  },
+  "southern asean": {
+   "developments": 1
+  },
+  "southern cone": {
+   "developments": 1
+  },
+  "southwest florida domain": {
+   "developments": 1
+  },
+  "southwest islands": {
+   "developments": 1
+  },
+  "spallanzani": {
+   "developments": 1
+  },
+  "spratly": {
+   "developments": 1
+  },
+  "spratly islands": {
+   "developments": 1
+  },
+  "spring creek mine": {
+   "developments": 1
+  },
+  "sri venkateswara swami": {
+   "developments": 1
+  },
+  "st. peter": {
+   "developments": 1
+  },
+  "st. petersburg domain": {
+   "developments": 1
+  },
+  "stade de france": {
+   "developments": 1
+  },
+  "stalingrad": {
+   "developments": 1
+  },
+  "standard missile 6": {
+   "developments": 1
+  },
+  "staskov": {
+   "developments": 1
+  },
+  "stato di apure": {
+   "developments": 1
+  },
+  "stato islamico": {
+   "developments": 1
+  },
+  "stato usa": {
+   "developments": 1
+  },
+  "steelfin": {
+   "developments": 1
+  },
+  "sterling heights": {
+   "developments": 1
+  },
+  "strait of": {
+   "developments": 1
+  },
+  "strait of malacca": {
+   "developments": 1
+  },
+  "strait of taiwan": {
+   "developments": 1
+  },
+  "strasburgo": {
+   "developments": 1
+  },
+  "strategic fintech hub": {
+   "developments": 1
+  },
+  "stretto di bab": {
+   "developments": 1
+  },
+  "strip": {
+   "developments": 1
+  },
+  "striscia": {
+   "developments": 1
+  },
+  "strong regions, strong europe": {
+   "developments": 1
+  },
+  "studio ovale": {
+   "developments": 1
+  },
+  "sturla": {
+   "developments": 1
+  },
+  "sud": {
+   "developments": 1
+  },
+  "sudafrica": {
+   "developments": 1
+  },
+  "sudamerica el papa leon": {
+   "developments": 1
+  },
+  "sudan aid": {
+   "developments": 1
+  },
+  "sudan drone": {
+   "developments": 1
+  },
+  "sumy oblast": {
+   "developments": 1
+  },
+  "sun yat": {
+   "developments": 1
+  },
+  "sunflower state": {
+   "developments": 1
+  },
+  "supremo de venezuela": {
+   "developments": 1
+  },
+  "sur": {
+   "developments": 1
+  },
+  "suramerica": {
+   "developments": 1
+  },
+  "suu kyi domain": {
+   "developments": 1
+  },
+  "suwayda": {
+   "developments": 1
+  },
+  "svezia": {
+   "developments": 1
+  },
+  "sweida": {
+   "developments": 1
+  },
+  "switchblade 300": {
+   "developments": 1
+  },
+  "tabarre": {
+   "developments": 1
+  },
+  "taftanaz": {
+   "developments": 1
+  },
+  "taibe": {
+   "developments": 1
+  },
+  "taichung": {
+   "developments": 1
+  },
+  "taipei city": {
+   "developments": 1
+  },
+  "taitung": {
+   "developments": 1
+  },
+  "taiwan taoyuan": {
+   "developments": 1
+  },
+  "taiz city": {
+   "developments": 1
+  },
+  "taiz-aden": {
+   "developments": 1
+  },
+  "tajrish": {
+   "developments": 1
+  },
+  "tajrish square": {
+   "developments": 1
+  },
+  "talks": {
+   "developments": 1
+  },
+  "tambov oblast": {
+   "developments": 1
+  },
+  "tar": {
+   "developments": 1
+  },
+  "taraba": {
+   "developments": 1
+  },
+  "tarrant county": {
+   "developments": 1
+  },
+  "tarrawingee": {
+   "developments": 1
+  },
+  "tawila": {
+   "developments": 1
+  },
+  "tbilisi": {
+   "developments": 1
+  },
+  "tebas": {
+   "developments": 1
+  },
+  "tel aviv searches": {
+   "developments": 1
+  },
+  "temple of zeus": {
+   "developments": 1
+  },
+  "tenerife": {
+   "developments": 1
+  },
+  "terra santa": {
+   "developments": 1
+  },
+  "terremoto": {
+   "developments": 1
+  },
+  "terremoto in afghanistan": {
+   "developments": 1
+  },
+  "territorios palestinos ocupados": {
+   "developments": 1
+  },
+  "tesoro": {
+   "developments": 1
+  },
+  "tesoro de ee. uu": {
+   "developments": 1
+  },
+  "texas la administracion": {
+   "developments": 1
+  },
+  "tf1": {
+   "developments": 1
+  },
+  "thames valley": {
+   "developments": 1
+  },
+  "thames valley police": {
+   "developments": 1
+  },
+  "thessaloniki": {
+   "developments": 1
+  },
+  "tibet autonomous region": {
+   "developments": 1
+  },
+  "tibet epicentro": {
+   "developments": 1
+  },
+  "tibet fotografia": {
+   "developments": 1
+  },
+  "tierra prometida": {
+   "developments": 1
+  },
+  "tinduf": {
+   "developments": 1
+  },
+  "tobago": {
+   "developments": 1
+  },
+  "todavia": {
+   "developments": 1
+  },
+  "todos los santos": {
+   "developments": 1
+  },
+  "tokio": {
+   "developments": 1
+  },
+  "tolima": {
+   "developments": 1
+  },
+  "tolyattikauchuk": {
+   "developments": 1
+  },
+  "tooro kingdom": {
+   "developments": 1
+  },
+  "topeka": {
+   "developments": 1
+  },
+  "tormenta adam": {
+   "developments": 1
+  },
+  "toro": {
+   "developments": 1
+  },
+  "tracciati 113": {
+   "developments": 1
+  },
+  "transportes": {
+   "developments": 1
+  },
+  "transportes de pedro sanchez": {
+   "developments": 1
+  },
+  "tribunal de distrito de estados unidos": {
+   "developments": 1
+  },
+  "tribunal supremo de eeuu": {
+   "developments": 1
+  },
+  "tribunal supremo de justicia": {
+   "developments": 1
+  },
+  "tribunal supremo federal": {
+   "developments": 1
+  },
+  "trieste": {
+   "developments": 1
+  },
+  "tucson": {
+   "developments": 1
+  },
+  "tur": {
+   "developments": 1
+  },
+  "turning point": {
+   "developments": 1
+  },
+  "tuscany": {
+   "developments": 1
+  },
+  "tuzla": {
+   "developments": 1
+  },
+  "tver oblast": {
+   "developments": 1
+  },
+  "u.s.-japan": {
+   "developments": 1
+  },
+  "u.s.-kazakhstan": {
+   "developments": 1
+  },
+  "ucraina tregua": {
+   "developments": 1
+  },
+  "ucrania de dnipro imagen": {
+   "developments": 1
+  },
+  "ucrania de jerson": {
+   "developments": 1
+  },
+  "ue piogge": {
+   "developments": 1
+  },
+  "uk airbase domain": {
+   "developments": 1
+  },
+  "ukraine - dominican republic post": {
+   "developments": 1
+  },
+  "ukraine city": {
+   "developments": 1
+  },
+  "ukraine countries": {
+   "developments": 1
+  },
+  "ukraine key": {
+   "developments": 1
+  },
+  "ultraviolentos": {
+   "developments": 1
+  },
+  "umbria": {
+   "developments": 1
+  },
+  "umm safa": {
+   "developments": 1
+  },
+  "undecimo circuito judicial de florida": {
+   "developments": 1
+  },
+  "ungheria": {
+   "developments": 1
+  },
+  "united kingdom of great britain": {
+   "developments": 1
+  },
+  "united nations conference on biodiversity": {
+   "developments": 1
+  },
+  "united states diplomatic mission": {
+   "developments": 1
+  },
+  "united states embassy": {
+   "developments": 1
+  },
+  "united states government": {
+   "developments": 1
+  },
+  "united states news": {
+   "developments": 1
+  },
+  "united states of adventure": {
+   "developments": 1
+  },
+  "united states trade representative": {
+   "developments": 1
+  },
+  "united states-greece": {
+   "developments": 1
+  },
+  "universidad de sao paulo": {
+   "developments": 1
+  },
+  "universita di firenze": {
+   "developments": 1
+  },
+  "universita di pavia": {
+   "developments": 1
+  },
+  "urgewald": {
+   "developments": 1
+  },
+  "uruguayel papa": {
+   "developments": 1
+  },
+  "us virgin islands": {
+   "developments": 1
+  },
+  "usa' 'criminali": {
+   "developments": 1
+  },
+  "usd": {
+   "developments": 1
+  },
+  "usp": {
+   "developments": 1
+  },
+  "vaishali": {
+   "developments": 1
+  },
+  "valle del cauca": {
+   "developments": 1
+  },
+  "valle nevado": {
+   "developments": 1
+  },
+  "vandalia": {
+   "developments": 1
+  },
+  "varna": {
+   "developments": 1
+  },
+  "vatican city": {
+   "developments": 1
+  },
+  "velivolo": {
+   "developments": 1
+  },
+  "vergori": {
+   "developments": 1
+  },
+  "vertical corridor": {
+   "developments": 1
+  },
+  "vertice el paccto": {
+   "developments": 1
+  },
+  "via": {
+   "developments": 1
+  },
+  "vicenza": {
+   "developments": 1
+  },
+  "videoanalisis": {
+   "developments": 1
+  },
+  "viena": {
+   "developments": 1
+  },
+  "viet nam to lam": {
+   "developments": 1
+  },
+  "viginum": {
+   "developments": 1
+  },
+  "viminale": {
+   "developments": 1
+  },
+  "vinnytsianew": {
+   "developments": 1
+  },
+  "viterbo": {
+   "developments": 1
+  },
+  "vitoria": {
+   "developments": 1
+  },
+  "vladimir oblast": {
+   "developments": 1
+  },
+  "vnukovo": {
+   "developments": 1
+  },
+  "volinia": {
+   "developments": 1
+  },
+  "volodimir zelensi": {
+   "developments": 1
+  },
+  "voronezh voronezh oblast": {
+   "developments": 1
+  },
+  "war zone": {
+   "developments": 1
+  },
+  "warriors corner": {
+   "developments": 1
+  },
+  "wasilla": {
+   "developments": 1
+  },
+  "wenzhou": {
+   "developments": 1
+  },
+  "west bank - shafaqna": {
+   "developments": 1
+  },
+  "west bank city": {
+   "developments": 1
+  },
+  "west bank meeting": {
+   "developments": 1
+  },
+  "west bank snipers": {
+   "developments": 1
+  },
+  "west bank videos": {
+   "developments": 1
+  },
+  "west bank: families": {
+   "developments": 1
+  },
+  "west jerusalem": {
+   "developments": 1
+  },
+  "western arctic": {
+   "developments": 1
+  },
+  "western pacific": {
+   "developments": 1
+  },
+  "westminster": {
+   "developments": 1
+  },
+  "whitehall": {
+   "developments": 1
+  },
+  "windsor": {
+   "developments": 1
+  },
+  "world expo": {
+   "developments": 1
+  },
+  "wunstorf": {
+   "developments": 1
+  },
+  "xiongan": {
+   "developments": 1
+  },
+  "xiongan new area": {
+   "developments": 1
+  },
+  "yakarta": {
+   "developments": 1
+  },
+  "yalta": {
+   "developments": 1
+  },
+  "yalu": {
+   "developments": 1
+  },
+  "yalyilia": {
+   "developments": 1
+  },
+  "yanbu": {
+   "developments": 1
+  },
+  "yangpyeong": {
+   "developments": 1
+  },
+  "yaroslavsky": {
+   "developments": 1
+  },
+  "yellow sea": {
+   "developments": 1
+  },
+  "yemen yemen": {
+   "developments": 1
+  },
+  "yemens iran": {
+   "developments": 1
+  },
+  "yonaguni": {
+   "developments": 1
+  },
+  "yonaguni island": {
+   "developments": 1
+  },
+  "yonhap": {
+   "developments": 1
+  },
+  "yotova": {
+   "developments": 1
+  },
+  "youngstown": {
+   "developments": 1
+  },
+  "yugoslavia": {
+   "developments": 1
+  },
+  "zamfara": {
+   "developments": 1
+  },
+  "zaporiyia": {
+   "developments": 1
+  },
+  "zaporizhzhia oblast": {
+   "developments": 1
+  },
+  "zawaida": {
+   "developments": 1
+  },
+  "zelena dolyna": {
+   "developments": 1
+  },
+  "zendaya": {
+   "developments": 1
+  },
+  "zhytomyr oblast": {
+   "developments": 1
+  },
+  "zona desmilitarizada": {
+   "developments": 1
+  },
+  "zoo atlanta": {
+   "developments": 1
+  }
+ },
+ "by_class": {
+  "a": {
+   "places": 112,
+   "development_references": 343
+  },
+  "a_left": {
+   "places": 39,
+   "development_references": 124
+  },
+  "b": {
+   "places": 67,
+   "development_references": 139
+  },
+  "c": {
+   "places": 60,
+   "development_references": 481
+  },
+  "d": {
+   "places": 137,
+   "development_references": 518
+  }
+ },
+ "unclassified": [
+  "7.49am",
+  "aa3",
+  "abilene",
+  "abuja nigeria",
+  "access asia",
+  "acropolis",
+  "adamuz",
+  "aden airport attack",
+  "aden airports domain",
+  "aden decenas",
+  "aden international airport explosions",
+  "aden presidential palace",
+  "aduenan",
+  "aek athens",
+  "aeropuerto ejecutivo de opa-locka",
+  "aeropuerto internacional harry reid",
+  "aeropuerto internacional rey fahd",
+  "aeropuerto internacional rey jalid",
+  "aeropuerto internacional rey jalid de riad",
+  "aeropuerto internacional rey khalid",
+  "aeropuerto miami opa-locka",
+  "afar",
+  "africa nigeria",
+  "africa rwanda",
+  "agoniza",
+  "agra",
+  "aguantaremos",
+  "aguila",
+  "ahmedabad",
+  "aichi",
+  "airdrie",
+  "al-bayda",
+  "al-bweib",
+  "al-dibab",
+  "al-khair education centre",
+  "al-maashiq palace",
+  "ala",
+  "alajuela",
+  "alaska peninsula",
+  "albania dos",
+  "albuquerque",
+  "alcalde de lieja",
+  "alex",
+  "alexa spatium",
+  "alfozan",
+  "alicante",
+  "alpes",
+  "alpes el nido",
+  "alps",
+  "altayeb alhadi",
+  "altoona",
+  "altos",
+  "alvia",
+  "amazonas",
+  "amazonassu",
+  "amazonia",
+  "amazzonia",
+  "amcham georgia",
+  "america central",
+  "americas",
+  "amiet market",
+  "amman",
+  "amraam",
+  "anapa",
+  "andalucia",
+  "anguilla",
+  "antalya",
+  "antarctic",
+  "anthem",
+  "antigua y barbuda",
+  "apartment block",
+  "aqui america",
+  "arabia",
+  "arabia saudita la defensa civil",
+  "arabian sea",
+  "arco del triunfo manifestaciones",
+  "arco di trionfo",
+  "arctic 7",
+  "arezzo",
+  "arlington county",
+  "artico",
+  "arunachal",
+  "arunachal pradesh",
+  "ashkelon",
+  "asia centre",
+  "assemblea di madrid omaggio",
+  "assisi",
+  "asuncion",
+  "asuntos exteriores",
+  "athens international airport",
+  "atlantic city",
+  "atlantic ocean",
+  "atlantico norte",
+  "atocha",
+  "aula",
+  "aulnoye-aymeries",
+  "avenues",
+  "ayuntamiento",
+  "ayuntamiento de limoges",
+  "azraq",
+  "bab",
+  "bab el-mandeb strait",
+  "badung",
+  "bagno",
+  "bahia",
+  "baidoa",
+  "baja",
+  "baja california",
+  "bakeries",
+  "bakersfield",
+  "baku",
+  "balabac",
+  "balabac island",
+  "balcanes",
+  "balcani",
+  "baleari",
+  "balmoral",
+  "baltic states",
+  "baltico",
+  "baltico' presidente",
+  "baltimore",
+  "baltimore county",
+  "bamenda",
+  "bamina",
+  "banco de desarrollo de america latina",
+  "banco de inglaterra",
+  "banco master",
+  "bangui",
+  "baniyas",
+  "banja luka",
+  "barcellona",
+  "barquisimeto",
+  "barranquilla",
+  "bastiglia",
+  "batanes islands",
+  "batangas",
+  "baton rouge",
+  "baviera",
+  "bayeux",
+  "beita",
+  "belgorod oblast",
+  "bellevue",
+  "belo horizonte",
+  "beluga",
+  "berlin wall",
+  "beta israel",
+  "biarritz",
+  "biblioteca del condado de palm beach",
+  "bilbao",
+  "biscarrosse",
+  "black sea authorities",
+  "black sea drone strikes",
+  "black sea emergency",
+  "black sea ship attacks - novinite.com domain",
+  "black sea shipping domain",
+  "blue nile domain",
+  "blue nile state",
+  "bogor",
+  "boletin oficial del estado",
+  "bolonia",
+  "bolshoi de moscu",
+  "bolsonaro close",
+  "bondi beach",
+  "borneo",
+  "bosnia and herzegovina level",
+  "bosnia domain",
+  "bosnia lugar",
+  "boulevard des invalides",
+  "brest",
+  "brigate",
+  "britains fairford",
+  "british empire",
+  "brovary",
+  "bruselas ucrania",
+  "bruxelles i ventisette",
+  "bucarest",
+  "buchanskyi",
+  "buena vista del meta",
+  "bullhead city",
+  "bundestag",
+  "bunia",
+  "burdeos",
+  "butler eagle domain",
+  "cabo san lucas",
+  "caf 224",
+  "cage",
+  "caiado",
+  "caicos islands",
+  "cairns",
+  "caja chica",
+  "calais",
+  "calgary",
+  "cambridge analytica",
+  "cambridgeshire",
+  "camp david",
+  "camp ishigaki",
+  "camp nou",
+  "camp pendleton",
+  "campania",
+  "canal",
+  "canal de panama",
+  "canal meteo",
+  "canale",
+  "cao bakery",
+  "caos",
+  "capadocia",
+  "capitolio",
+  "capitolio de los estados unidos",
+  "capo 007 gb",
+  "cappadocia",
+  "caracas la embajada de estados unidos",
+  "caracas psuv",
+  "caraibi",
+  "caricom",
+  "carolina del norte",
+  "carolina del norte carolina del norte",
+  "carrusel de las artes",
+  "carson - hood",
+  "casa bianca katie zacharia",
+  "casa bianca' reuters",
+  "casa blanca de temu",
+  "casa blanca sombria",
+  "casa real",
+  "casa reale",
+  "castelgandolfo",
+  "castilla la mancha",
+  "cavo dragone",
+  "celebes sea",
+  "centenares",
+  "central africa",
+  "central africa antibiotics",
+  "central asia domain",
+  "central kalimantan",
+  "central park",
+  "centre right",
+  "centro arenal",
+  "centro sismologico euro-mediterraneo",
+  "ch 47 chinook",
+  "chamartin",
+  "changi airport",
+  "charge",
+  "charles bend",
+  "cheongwang",
+  "chernihiv oblast",
+  "chernihiv region",
+  "cherry creek news domain",
+  "chicanas",
+  "chiese",
+  "chile chile",
+  "china meridional",
+  "cholera",
+  "chornobyl",
+  "christ",
+  "cina-corea del nord",
+  "cisjordania captura",
+  "cisjordania soldados",
+  "citta del messico",
+  "city of milan",
+  "ciudad de gaza",
+  "ciudad de mexico",
+  "ciudad de panama",
+  "civiles",
+  "civit",
+  "clarksville",
+  "cleveland",
+  "coahuila",
+  "cocle",
+  "col du portet",
+  "collapses apartment building",
+  "colo",
+  "colombia cartello",
+  "colorado springs",
+  "columbus",
+  "columna",
+  "combattuta",
+  "comune",
+  "comunidad de madrid",
+  "comunidad valenciana",
+  "comunita",
+  "congo africa",
+  "congreso de colombia",
+  "congreso de ee.uu",
+  "congreso ilhan omar",
+  "conrad hotel",
+  "constitucional",
+  "convergence",
+  "cop17",
+  "corea del sur militares",
+  "coreas",
+  "corinth",
+  "cornhusker state",
+  "corresponsales",
+  "corte costituzionale",
+  "corte suprema venezuela",
+  "cortona",
+  "countries",
+  "cours de vincennes",
+  "covid",
+  "crimean peninsula",
+  "dalma maradona",
+  "dalton",
+  "damascus - dominican republic post",
+  "dammam",
+  "dandong north korean",
+  "dandong with north korea",
+  "dandong, china",
+  "danos",
+  "danube",
+  "daraa",
+  "daytona beach",
+  "de soto",
+  "deep ellum",
+  "delhi manifestantes",
+  "demilitarised zone",
+  "demilitarized zone",
+  "denison",
+  "denpasar",
+  "departamento",
+  "deportazioni",
+  "deraa",
+  "desert",
+  "desolate arctic",
+  "despues",
+  "disastro",
+  "distrito federal",
+  "distrito norte de california",
+  "dnepr",
+  "dnipro' 'cinque",
+  "dobropilia",
+  "dodik",
+  "domani israele",
+  "dona luiza",
+  "doral",
+  "dubuque",
+  "dynamic front 2026",
+  "e4",
+  "eagle ii",
+  "east jerusalem settlers",
+  "east kalimantan",
+  "east room",
+  "east sea domain",
+  "east-west",
+  "eastern democratic republic",
+  "eastern europe",
+  "eastern mediterranean",
+  "eastleigh",
+  "eastroc",
+  "eau egipto",
+  "ebola",
+  "ecuador-peru",
+  "edimburgo",
+  "edwards air force base",
+  "ee",
+  "ee. uu. rusia",
+  "efrat",
+  "egeo",
+  "eisenkot bloc",
+  "eizenkot",
+  "el aaiun",
+  "el cairo",
+  "el centro nacional de huracanes",
+  "el mansouri",
+  "el nido",
+  "el reino",
+  "el salvador costa rica",
+  "el salvador el cacco",
+  "eln",
+  "embajada de colombia",
+  "ensenada",
+  "entebbe international airport",
+  "entire bangkok",
+  "escocia",
+  "esmail baqaei",
+  "especialistas",
+  "espirito santo",
+  "estadao",
+  "estadio monumental",
+  "estado a china",
+  "estado de bienestar en europa",
+  "estado de nuevo mexico",
+  "estado israel",
+  "estado mayor",
+  "estado y de gobierno",
+  "este",
+  "estocolmo",
+  "estrecho de magallanes",
+  "estudios sociales",
+  "etienne",
+  "etihad stadium",
+  "europea",
+  "european arctic strategy",
+  "eurovision",
+  "exit",
+  "expanded meeting",
+  "export",
+  "exteriores de colombia",
+  "exteriores de iran",
+  "f-16v block",
+  "facturas",
+  "fairfield",
+  "falklands oil fight",
+  "fallujah",
+  "famiglia reale",
+  "fascom",
+  "favour",
+  "fernando air base",
+  "fighting",
+  "filadelfia",
+  "finisterre",
+  "fire",
+  "fiscalia de eeuu",
+  "fiumicino",
+  "florence",
+  "florencia",
+  "fobos",
+  "fobos de marte",
+  "fonti nato",
+  "fort hood shooter",
+  "fort huachuca",
+  "fort myers",
+  "fort stewart",
+  "foto",
+  "francfort",
+  "francia parole",
+  "franja alrededor",
+  "fuentes de el vaticano",
+  "furiosos",
+  "futenma airbase",
+  "futur",
+  "fuzhou",
+  "ganges",
+  "gansu",
+  "gaza de israel",
+  "gaza ireland",
+  "gaza strip domain",
+  "gaza tres",
+  "gazipur",
+  "gerusalemme",
+  "gharibabadi domain",
+  "ginebra",
+  "giustiziato",
+  "global south",
+  "goa",
+  "goania",
+  "gobierno colombia",
+  "gobierno de australia",
+  "gobierno de brasil",
+  "gobierno de canada",
+  "gobierno de castilla-la mancha",
+  "gobierno de ecuador",
+  "gobierno de la ue",
+  "gobierno de mansouri",
+  "gobierno de moldavia",
+  "gobierno de polonia",
+  "gobierno de portugal",
+  "gobierno de volodimir zelenski",
+  "golden dome",
+  "golden dome for america",
+  "golden state",
+  "golden state valkyries",
+  "golfo de mexico",
+  "golfo del messico",
+  "gorica",
+  "gorice",
+  "gran premio de ciudad de mexico",
+  "gran premio de estados unidos",
+  "grand canyon state",
+  "grand island",
+  "great hall of the people",
+  "great lakes",
+  "greater kordofan",
+  "grenoble",
+  "groenlandia recalca",
+  "guayas",
+  "guerrero",
+  "gulevka",
+  "gulf coast",
+  "gulf of naples",
+  "gulf of oman",
+  "gulf of oman domain",
+  "gulf ship",
+  "gulfport",
+  "guntersville dam",
+  "gyeonggi province",
+  "hacienda",
+  "haiti massiccio",
+  "halles",
+  "hamburgo",
+  "hammoud",
+  "hebei",
+  "high north",
+  "hindu kush",
+  "historic",
+  "hmas stirling",
+  "hodeida",
+  "hofdi",
+  "holosiivskyi district",
+  "hood",
+  "hormuz ahead",
+  "hormuz strait",
+  "hormuz tehran",
+  "horn county",
+  "hualien",
+  "hudson",
+  "huties",
+  "huties de yemen",
+  "ibovespa",
+  "indian ocean",
+  "insieme",
+  "instituto contra la peste de irkutsk",
+  "instituto nacional de geociencias de panama",
+  "interior de baviera",
+  "interiores",
+  "invitadodeldiaf24",
+  "iowas",
+  "irkutsk anti-plague institute",
+  "ischia",
+  "ishigaki island",
+  "isla coiba",
+  "israel colombia",
+  "ithaca",
+  "jalisco",
+  "jalud village",
+  "jamla",
+  "jarkov",
+  "jato",
+  "jerusalen este",
+  "jodhpur",
+  "johor bahru",
+  "juarez",
+  "kadaha",
+  "kalispell",
+  "kamchatka",
+  "kansas city",
+  "karnakis",
+  "keelung",
+  "kfar aza",
+  "khartoum international airport",
+  "kherson oblast",
+  "khrustalnyi",
+  "kidal",
+  "kielce",
+  "kiev attacchi",
+  "kiev tre",
+  "king oyo nyimba",
+  "kingdom",
+  "kingdom centre",
+  "kingdom domain",
+  "kings island",
+  "kingsford smith airport",
+  "kirovogrado",
+  "kiryat shmona",
+  "klin",
+  "km",
+  "knoxville",
+  "kolodiazi",
+  "kolpinsky district",
+  "konstantinovo",
+  "korean demilitarized zone",
+  "korotych",
+  "kp",
+  "kremenchuk",
+  "ksudach",
+  "kuala",
+  "kubura port",
+  "kugompo",
+  "kurdistan",
+  "kursk oblast",
+  "kuwait international airport",
+  "kyiv kyiv",
+  "kyiv metro",
+  "kyiv oblast",
+  "kyiv ukraine",
+  "l'avana",
+  "la",
+  "la casa rosada",
+  "la county",
+  "la guaira",
+  "la mancha",
+  "la prefectura de policia",
+  "la repubblica",
+  "laduma ngxokolo",
+  "lago di costanza",
+  "lago ontario",
+  "lajes",
+  "lamerd",
+  "language",
+  "lara",
+  "large-scale review",
+  "las condes",
+  "latin america & caribbean",
+  "lausanne",
+  "lava",
+  "lawrence venturepark",
+  "lebrons",
+  "leeds",
+  "lemusiniere del papa",
+  "leningrad",
+  "leon",
+  "leopoli",
+  "les halles",
+  "les invalides",
+  "lesbo",
+  "leshuttle",
+  "ley",
+  "lhasa",
+  "liaoning",
+  "libano dotazioni",
+  "lieja",
+  "lille 3-0",
+  "lipetsk",
+  "lithuania lithuania",
+  "little italy",
+  "liuqiu",
+  "loews",
+  "lombardy",
+  "lombardy region",
+  "los angeles county",
+  "los angeles international airport",
+  "los yebenes",
+  "lublin",
+  "lugansk",
+  "luhansk oblast ukraine",
+  "luna",
+  "lunes",
+  "madeira",
+  "madinah",
+  "madison",
+  "madrid dos",
+  "madrid-andalusia",
+  "madrid-sevilla",
+  "madrid-siviglia",
+  "magallanes",
+  "mainland china",
+  "mali - dominican republic post",
+  "malvinas",
+  "manabi",
+  "managua",
+  "manaus",
+  "manchester united",
+  "mandeb",
+  "maniobras",
+  "manufacturing base",
+  "map",
+  "mar negro",
+  "mar rosso",
+  "marche des enfants rouges",
+  "marina bay sands",
+  "mariupol",
+  "marrakesh",
+  "mars",
+  "marsella",
+  "marshall islands",
+  "marte",
+  "marte cientificos",
+  "mascate",
+  "mateusz morawiecki",
+  "mather air force base",
+  "mather airport",
+  "maxhosa africa",
+  "maximos mansion",
+  "ma’an city",
+  "meca",
+  "mecca houthi",
+  "mecca saudi arabia",
+  "mecca turchia",
+  "media gaza",
+  "medina domain",
+  "mediterraneo",
+  "mercosur",
+  "mesa",
+  "metropoles",
+  "metropolitan city",
+  "metropolitan city of milan",
+  "michurinsky",
+  "middle east domain",
+  "middle east war oil",
+  "middle eastern",
+  "mideterm",
+  "migrantes",
+  "mijmas",
+  "milano",
+  "militarnyi",
+  "military demarcation line",
+  "millerovo",
+  "milosevic",
+  "milrem glasgow",
+  "minas gerais",
+  "mindaugas",
+  "ministerio",
+  "ministerio de transportes de rusia",
+  "ministerio publico",
+  "ministro de asuntos exteriores de cuba",
+  "ministro dell'interno",
+  "miraflores",
+  "misiones",
+  "missile houthi",
+  "mobilitazione",
+  "moderna",
+  "mojave",
+  "mojave desert",
+  "moncloa",
+  "monitorati",
+  "monoprix",
+  "monte herzl",
+  "montenegro mikhail zvinchuk",
+  "monumental",
+  "monumental stadium",
+  "moscow oblast",
+  "mount herzl",
+  "mq-9",
+  "mrt",
+  "mt",
+  "multe",
+  "museo",
+  "museo de la infancia",
+  "museo del louvre",
+  "museo nacional",
+  "museo nacional cientos",
+  "museo nacional de colombia",
+  "museo nazionale opere su lgbt",
+  "myanmar rohingya",
+  "mykolaiv",
+  "nanan city people's court",
+  "nancy",
+  "nansei",
+  "nansei islands",
+  "nantucket",
+  "napoles",
+  "napoli",
+  "narino",
+  "natal",
+  "natick",
+  "nato summit",
+  "navlya",
+  "nazi germany",
+  "nebraskans",
+  "negev",
+  "negro dos",
+  "negro turquia",
+  "new orleans saints",
+  "new providence",
+  "new us",
+  "new yalu river bridge",
+  "new yemen",
+  "new york case",
+  "new york domain",
+  "nido del aguila",
+  "nile",
+  "niza",
+  "nizza",
+  "nordeste",
+  "normandia",
+  "norte de kiev",
+  "norte fire",
+  "north africa",
+  "north africa programme",
+  "north and south kivu",
+  "north bridge",
+  "north domain",
+  "north korea south korea",
+  "north zone",
+  "northeast africa",
+  "northern bridge",
+  "northern neighbourhood",
+  "northern song",
+  "nova",
+  "nova de israel",
+  "novokuibyshevsk",
+  "novolipetsk metallurgical plant",
+  "nueva america",
+  "nueva delhi",
+  "nueve",
+  "nuevo mexico",
+  "nuovi",
+  "nuristan",
+  "oahu",
+  "obukhiv",
+  "oceano americano",
+  "okotoks",
+  "oleshky domain",
+  "oleshky moscow",
+  "oleshky russia",
+  "omsk",
+  "ondo",
+  "onu bogota",
+  "opala",
+  "orange county",
+  "orient beach",
+  "orlando",
+  "orleans",
+  "ostroleka",
+  "overland park",
+  "p.l",
+  "pacific arctic",
+  "pacific coast hurricane",
+  "pacific domain",
+  "pacific island",
+  "pacifico usgs",
+  "pacto historico",
+  "padua",
+  "paese sassi",
+  "paesi del golfo",
+  "pais",
+  "pakistan sisma",
+  "pakistan' media",
+  "pakistanwashington",
+  "palacio apostolico",
+  "palacio de la asamblea",
+  "palacio de la moncloa",
+  "palacio de miraflores",
+  "palacio del eliseo",
+  "palacio del planalto",
+  "palanca",
+  "palangka",
+  "palasport",
+  "palawan",
+  "palazzo del governo",
+  "palazzp chigi",
+  "palm beach county",
+  "palmas",
+  "pantallas",
+  "pantheon-assas",
+  "paralelamente",
+  "paris st-germain",
+  "park city",
+  "parlamento de sajonia-anhalt",
+  "parque nacional big bend",
+  "parque nacional del iguazu",
+  "parroquia del perpetuo socorro de guayaquil",
+  "paseo de la fama de hollywood",
+  "patria",
+  "patrimonio de la humanidad",
+  "paulista",
+  "paz",
+  "pd",
+  "pecherskyi",
+  "peninsula qatar domain",
+  "penonome",
+  "people’s republic",
+  "people’s republic of china",
+  "peoria",
+  "perch 1.0",
+  "perch 2.0",
+  "pere lachaise cemetery",
+  "persian gulf domain",
+  "perspective",
+  "peterson space force base",
+  "pf",
+  "phobos",
+  "piazza del duomo",
+  "pinar del rio",
+  "pinduoduo",
+  "pinecrest",
+  "pingtung",
+  "pirineos",
+  "pistoia",
+  "pitaloza arriba",
+  "pittsburgh",
+  "place",
+  "place de",
+  "place de la bastille",
+  "place de la republique dalle 23",
+  "planadas",
+  "plasencia",
+  "playas",
+  "plaza de la bastilla",
+  "plaza de los rehenes",
+  "plaza de san pedro",
+  "plaza del pueblo",
+  "podgorica",
+  "polandus",
+  "policaa",
+  "polo sur",
+  "polonia personal",
+  "port huron",
+  "porta di brandeburgo",
+  "porto",
+  "porto rico",
+  "pozzuoli",
+  "pratas",
+  "pratica di mare",
+  "prefecture",
+  "primorsk",
+  "pristina",
+  "pro-europe",
+  "pryluky fourteen",
+  "pucallpa",
+  "puerta del sol",
+  "puerto iguazu",
+  "puerto san carlos",
+  "pulkovo",
+  "pulkovo airport",
+  "punta arenas",
+  "puntland",
+  "putrajaya",
+  "qassem",
+  "quito",
+  "quneitra",
+  "r-neb",
+  "ramala",
+  "ramat gan",
+  "ramla",
+  "readout",
+  "recep",
+  "red sands",
+  "regione lombardia",
+  "registan square",
+  "regno",
+  "republica",
+  "republica sprska",
+  "response",
+  "retiro",
+  "rey jalid de riad",
+  "reykjavik",
+  "riad l'onu",
+  "richmond",
+  "riga",
+  "riyadh domain",
+  "rocky view county",
+  "rogeria braga",
+  "rojo",
+  "roosevelt",
+  "rosario",
+  "roshen",
+  "rossio de lisboa",
+  "route",
+  "route 463",
+  "rubios india",
+  "rue beaurepaire",
+  "russia-africa summit",
+  "russia-cina",
+  "russiarussia",
+  "russias black sea",
+  "russias sakhalin",
+  "ryazan",
+  "sabina shoal",
+  "sacramento",
+  "safnahusid",
+  "sahara occidental",
+  "saint john paul ii",
+  "saint peter square",
+  "saint-etienne",
+  "sajonia-anhalt",
+  "sakhalin island",
+  "salimos",
+  "samo",
+  "san andres",
+  "san antonio",
+  "san blas",
+  "san diego bay",
+  "san diego donald trump",
+  "san diego gavin newsom",
+  "san pietroburgo",
+  "san salvador de bahia",
+  "san sebastian",
+  "san siro",
+  "sandringham",
+  "sangatte",
+  "santa barbara de iscuande",
+  "santa catarina",
+  "santa rosa",
+  "santo domingo",
+  "santuario divina pastora",
+  "sao bernardo do campo",
+  "sao goncalo",
+  "sao paulo miles",
+  "saravejo",
+  "saronic",
+  "sarych",
+  "saudi arabia - news",
+  "saudi arabia domain",
+  "saudi arabia trilateral",
+  "saudi invitational",
+  "saudis arabia",
+  "scarborough shoal",
+  "scettica",
+  "schwarz",
+  "sciences sociales de paris",
+  "scontri alla bastiglia",
+  "scrutinio",
+  "sea of azov",
+  "second thomas shoal",
+  "seggi",
+  "seis",
+  "seized explosives",
+  "sejm",
+  "self-loading equipment dock",
+  "seoul pyongyang",
+  "serafin",
+  "serpukhov",
+  "sevilla",
+  "seville",
+  "shabwa dozens",
+  "shadow fleet network",
+  "shadow fleet operations",
+  "shakahola",
+  "shamonda",
+  "sharjah",
+  "sharm el-sheikh",
+  "shelejov",
+  "shelekhov",
+  "sheremetyevo",
+  "si",
+  "siberia la casa blanca",
+  "siberia russian",
+  "siccita",
+  "sicurezza",
+  "silver rail elementary in bend",
+  "sindicato de inquilinas",
+  "sinuiju",
+  "sisma a panama",
+  "sistema solar",
+  "siviglia",
+  "six flags",
+  "sm-3 block",
+  "sochi",
+  "solaia",
+  "solfagnano castle",
+  "songshan",
+  "sophie germain",
+  "south africa police",
+  "south asia",
+  "south atlantic",
+  "south atlantic fishery management council",
+  "south bridge",
+  "south kordofan",
+  "south korea domain",
+  "south lawn",
+  "south pole",
+  "south west state",
+  "southaven",
+  "southeast asia massive",
+  "southeastern",
+  "southern",
+  "southern asean",
+  "southern cone",
+  "southwest florida domain",
+  "southwest islands",
+  "spallanzani",
+  "spratly",
+  "spratly islands",
+  "spring creek mine",
+  "sri venkateswara swami",
+  "st. peter",
+  "st. petersburg domain",
+  "stade de france",
+  "stalingrad",
+  "standard missile 6",
+  "staskov",
+  "stato di apure",
+  "stato islamico",
+  "stato usa",
+  "steelfin",
+  "sterling heights",
+  "strait of",
+  "strait of malacca",
+  "strait of taiwan",
+  "strasburgo",
+  "strategic fintech hub",
+  "stretto di bab",
+  "strip",
+  "striscia",
+  "strong regions, strong europe",
+  "studio ovale",
+  "sturla",
+  "sud",
+  "sudamerica el papa leon",
+  "sudan aid",
+  "sudan drone",
+  "sumy oblast",
+  "sun yat",
+  "sunflower state",
+  "supremo de venezuela",
+  "sur",
+  "suramerica",
+  "suu kyi domain",
+  "suwayda",
+  "sweida",
+  "switchblade 300",
+  "tabarre",
+  "taftanaz",
+  "taibe",
+  "taichung",
+  "taipei city",
+  "taitung",
+  "taiwan taoyuan",
+  "taiz city",
+  "taiz-aden",
+  "tajrish",
+  "tajrish square",
+  "talks",
+  "tambov oblast",
+  "tar",
+  "taraba",
+  "tarrant county",
+  "tarrawingee",
+  "tawila",
+  "tbilisi",
+  "tebas",
+  "tel aviv searches",
+  "temple of zeus",
+  "tenerife",
+  "terra santa",
+  "terremoto",
+  "terremoto in afghanistan",
+  "tesoro",
+  "tesoro de ee. uu",
+  "texas la administracion",
+  "tf1",
+  "thames valley",
+  "thames valley police",
+  "thessaloniki",
+  "tibet autonomous region",
+  "tibet epicentro",
+  "tibet fotografia",
+  "tierra prometida",
+  "tinduf",
+  "tobago",
+  "todavia",
+  "todos los santos",
+  "tokio",
+  "tolima",
+  "tolyattikauchuk",
+  "tooro kingdom",
+  "topeka",
+  "tormenta adam",
+  "toro",
+  "tracciati 113",
+  "transportes",
+  "transportes de pedro sanchez",
+  "tribunal de distrito de estados unidos",
+  "tribunal supremo de eeuu",
+  "tribunal supremo de justicia",
+  "tribunal supremo federal",
+  "trieste",
+  "tucson",
+  "tur",
+  "turning point",
+  "tuscany",
+  "tuzla",
+  "tver oblast",
+  "u.s.-japan",
+  "u.s.-kazakhstan",
+  "ucraina tregua",
+  "ucrania de dnipro imagen",
+  "ucrania de jerson",
+  "ue piogge",
+  "uk airbase domain",
+  "ukraine - dominican republic post",
+  "ukraine city",
+  "ukraine countries",
+  "ukraine key",
+  "ultraviolentos",
+  "umbria",
+  "umm safa",
+  "undecimo circuito judicial de florida",
+  "united nations conference on biodiversity",
+  "united states diplomatic mission",
+  "united states embassy",
+  "united states government",
+  "united states news",
+  "united states of adventure",
+  "united states trade representative",
+  "united states-greece",
+  "universidad de sao paulo",
+  "universita di firenze",
+  "universita di pavia",
+  "urgewald",
+  "uruguayel papa",
+  "us virgin islands",
+  "usa' 'criminali",
+  "usd",
+  "usp",
+  "vaishali",
+  "valle del cauca",
+  "valle nevado",
+  "vandalia",
+  "varna",
+  "vatican city",
+  "velivolo",
+  "vergori",
+  "vertical corridor",
+  "vertice el paccto",
+  "via",
+  "vicenza",
+  "videoanalisis",
+  "viena",
+  "viet nam to lam",
+  "viginum",
+  "viminale",
+  "vinnytsianew",
+  "viterbo",
+  "vitoria",
+  "vladimir oblast",
+  "vnukovo",
+  "volinia",
+  "volodimir zelensi",
+  "voronezh voronezh oblast",
+  "war zone",
+  "warriors corner",
+  "wasilla",
+  "wenzhou",
+  "west bank - shafaqna",
+  "west bank city",
+  "west bank meeting",
+  "west bank snipers",
+  "west bank videos",
+  "west bank: families",
+  "west jerusalem",
+  "western arctic",
+  "western pacific",
+  "westminster",
+  "whitehall",
+  "windsor",
+  "world expo",
+  "wunstorf",
+  "xiongan",
+  "xiongan new area",
+  "yakarta",
+  "yalta",
+  "yalu",
+  "yalyilia",
+  "yanbu",
+  "yangpyeong",
+  "yaroslavsky",
+  "yellow sea",
+  "yemen yemen",
+  "yemens iran",
+  "yonaguni",
+  "yonaguni island",
+  "yonhap",
+  "yotova",
+  "youngstown",
+  "yugoslavia",
+  "zamfara",
+  "zaporiyia",
+  "zaporizhzhia oblast",
+  "zawaida",
+  "zelena dolyna",
+  "zendaya",
+  "zhytomyr oblast",
+  "zona desmilitarizada",
+  "zoo atlanta"
+ ]
+}
