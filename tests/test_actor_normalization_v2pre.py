@@ -46,3 +46,34 @@ def test_non_actor_words(word):
 def test_topic_keys_do_not_collapse_variants():
     """Development identity uses ActorNormalizer.keys, which is unchanged: no set-level collapse there."""
     assert ActorNormalizer.load().keys(["Javier Milei", "Milei"]) == frozenset({"javier milei", "milei"})
+
+
+# --- principal extraction, track 3 (evaluations/entities/principals-20261111/DIAGNOSIS.md, P-A) -----------------
+
+class _Dev:
+    def __init__(self, weights, headline):
+        self.weights, self.headline_actors = weights, headline
+
+
+def test_key_level_support_adds_one_name_of_a_split_actor():
+    from osint_monitor.processors.principals import _key_level_principals
+    norm = ActorNormalizer.load()
+    dev = _Dev({"russia": {"actor": 1.0}, "kremlin": {"actor": 1.0}, "denmark": {"actor": 1.0}},
+               {"russia", "kremlin", "denmark"})
+    got = _key_level_principals({"russia", "kremlin", "denmark"}, set(), dev, 1.5, norm)
+    assert got == {"russia"}                       # one actor, its own name; Denmark (one name, 1.0) stays out
+
+
+def test_key_level_support_leaves_passing_and_single_name_actors_alone():
+    from osint_monitor.processors.principals import _key_level_principals
+    norm = ActorNormalizer.load()
+    dev = _Dev({"united states": {"actor": 2.0}, "trump": {"actor": 1.0}, "iran": {"actor": 1.0}},
+               {"united states", "trump", "iran"})
+    assert _key_level_principals({"united states", "trump", "iran"}, {"united states"}, dev, 1.5, norm) == set()
+
+
+def test_key_level_support_keeps_the_headline_gate():
+    from osint_monitor.processors.principals import _key_level_principals
+    norm = ActorNormalizer.load()
+    dev = _Dev({"russia": {"actor": 1.0}, "kremlin": {"actor": 1.0}, "israel": {"actor": 2.0}}, {"israel"})
+    assert _key_level_principals({"russia", "kremlin", "israel"}, {"israel"}, dev, 1.5, norm) == set()

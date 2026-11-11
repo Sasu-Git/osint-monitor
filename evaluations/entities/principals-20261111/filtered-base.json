@@ -1,0 +1,6075 @@
+{
+ "counts": {
+  "below_support": 458,
+  "split_support": 43,
+  "headline_gate": 11,
+  "other": 5
+ },
+ "developments": {
+  "1": {
+   "asean": {
+    "class": "below_support",
+    "holders": {
+     "asean": 1.0
+    },
+    "total": 1.0,
+    "need": 5.75,
+    "in_headline": true,
+    "title": "Xi got Trump's red carpet welcome - but not everything he wanted"
+   }
+  },
+  "2": {
+   "taiwan": {
+    "class": "below_support",
+    "holders": {
+     "taiwan": 1.5
+    },
+    "total": 1.5,
+    "need": 9.75,
+    "in_headline": true,
+    "title": "Trump and Xi come face-to-face as US and China battle to win the AI race"
+   },
+   "asean": {
+    "class": "below_support",
+    "holders": {
+     "asean": 1.0
+    },
+    "total": 1.0,
+    "need": 9.75,
+    "in_headline": true,
+    "title": "Trump and Xi come face-to-face as US and China battle to win the AI race"
+   }
+  },
+  "4": {
+   "turkey": {
+    "class": "below_support",
+    "holders": {
+     "turkiye": 1.0,
+     "ankara": 0.0
+    },
+    "total": 1.0,
+    "need": 3.0,
+    "in_headline": true,
+    "title": "Saudi Arabia allies line up support as Houthi attacks mount"
+   },
+   "france": {
+    "class": "split_support",
+    "holders": {
+     "france": 2.5,
+     "emmanuel macron": 2.0
+    },
+    "total": 4.5,
+    "need": 3.0,
+    "in_headline": true,
+    "title": "Saudi Arabia allies line up support as Houthi attacks mount"
+   },
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "united states": 0.0,
+     "rubio": 1.0
+    },
+    "total": 1.0,
+    "need": 3.0,
+    "in_headline": true,
+    "title": "Saudi Arabia allies line up support as Houthi attacks mount"
+   }
+  },
+  "5": {
+   "russia": {
+    "class": "below_support",
+    "holders": {
+     "russia": 1.0
+    },
+    "total": 1.0,
+    "need": 2.25,
+    "in_headline": true,
+    "title": "Four civilians killed in Pakistani strikes in Afghanistan, Taliban says"
+   },
+   "ukraine": {
+    "class": "below_support",
+    "holders": {
+     "ukraine": 1.0
+    },
+    "total": 1.0,
+    "need": 2.25,
+    "in_headline": true,
+    "title": "Four civilians killed in Pakistani strikes in Afghanistan, Taliban says"
+   }
+  },
+  "6": {
+   "china": {
+    "class": "headline_gate",
+    "holders": {
+     "china": 1.0
+    },
+    "total": 1.0,
+    "need": 1.0,
+    "in_headline": false,
+    "title": "Air Force, civilian staff dispute status of China Aerospace Studies Institute"
+   }
+  },
+  "12": {
+   "denmark": {
+    "class": "below_support",
+    "holders": {
+     "denmark": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Russian hybrid attacks likely to increase in coming months: Danish intel assessment"
+   },
+   "poland": {
+    "class": "below_support",
+    "holders": {
+     "poland": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Russian hybrid attacks likely to increase in coming months: Danish intel assessment"
+   }
+  },
+  "18": {
+   "qatar": {
+    "class": "below_support",
+    "holders": {
+     "qatar": 1.5
+    },
+    "total": 1.5,
+    "need": 5.75,
+    "in_headline": true,
+    "title": "Iran pitches seven-day roadmap to end conflict with US"
+   }
+  },
+  "22": {
+   "australia": {
+    "class": "below_support",
+    "holders": {
+     "australia": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Rogue OpenAI agent 'infiltrated' Australian government website in world first"
+   }
+  },
+  "31": {
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "united states": 0.0,
+     "trump": 1.0
+    },
+    "total": 1.0,
+    "need": 3.5,
+    "in_headline": true,
+    "title": "UK police arrest 5 on terrorism charges near airbase used by US in Iran war"
+   }
+  },
+  "37": {
+   "russia": {
+    "class": "below_support",
+    "holders": {
+     "putin": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Embattled Serbian president resigns, paving way for early elections"
+   }
+  },
+  "48": {
+   "united arab emirates": {
+    "class": "below_support",
+    "holders": {
+     "united arab emirates": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "UAE confirms Netanyahu visit to Abu Dhabi"
+   }
+  },
+  "54": {
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "united states": 2.0
+    },
+    "total": 2.0,
+    "need": 6.75,
+    "in_headline": true,
+    "title": "Alleged rape on campus sparks violent protest at Indian university"
+   }
+  },
+  "58": {
+   "north korea": {
+    "class": "below_support",
+    "holders": {
+     "north korea": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "South Korea suspects North Korean mines behind DMZ blast"
+   }
+  },
+  "68": {
+   "united kingdom": {
+    "class": "below_support",
+    "holders": {
+     "united kingdom": 1.0
+    },
+    "total": 1.0,
+    "need": 3.0,
+    "in_headline": true,
+    "title": "US forces set to complete withdrawal from Iraq after 2 decades"
+   }
+  },
+  "76": {
+   "united states": {
+    "class": "split_support",
+    "holders": {
+     "united states": 1.0,
+     "us department of defense": 1.0,
+     "u.s. navy": 1.0,
+     "u.s. air force": 1.5
+    },
+    "total": 4.5,
+    "need": 1.75,
+    "in_headline": true,
+    "title": "Boeing wins Navy next-gen fighter F/A-XX competition"
+   },
+   "china": {
+    "class": "below_support",
+    "holders": {
+     "china": 1.0
+    },
+    "total": 1.0,
+    "need": 1.75,
+    "in_headline": true,
+    "title": "Boeing wins Navy next-gen fighter F/A-XX competition"
+   }
+  },
+  "78": {
+   "china": {
+    "class": "below_support",
+    "holders": {
+     "china": 1.0
+    },
+    "total": 1.0,
+    "need": 2.75,
+    "in_headline": true,
+    "title": "What Will Hegseth’s “State of the Force” Reprise Reveal?"
+   }
+  },
+  "82": {
+   "israel": {
+    "class": "split_support",
+    "holders": {
+     "israel": 5.0,
+     "benjamin netanyahu": 7.5
+    },
+    "total": 12.5,
+    "need": 11.75,
+    "in_headline": true,
+    "title": "FlyDubai flight to Israel diverted to Saudi Arabia after incident in cockpit"
+   },
+   "india": {
+    "class": "below_support",
+    "holders": {
+     "india": 5.5
+    },
+    "total": 5.5,
+    "need": 11.75,
+    "in_headline": true,
+    "title": "FlyDubai flight to Israel diverted to Saudi Arabia after incident in cockpit"
+   },
+   "united arab emirates": {
+    "class": "below_support",
+    "holders": {
+     "united arab emirates": 2.0
+    },
+    "total": 2.0,
+    "need": 11.75,
+    "in_headline": true,
+    "title": "FlyDubai flight to Israel diverted to Saudi Arabia after incident in cockpit"
+   },
+   "australia": {
+    "class": "below_support",
+    "holders": {
+     "australia": 1.5
+    },
+    "total": 1.5,
+    "need": 11.75,
+    "in_headline": true,
+    "title": "FlyDubai flight to Israel diverted to Saudi Arabia after incident in cockpit"
+   }
+  },
+  "84": {
+   "japan": {
+    "class": "below_support",
+    "holders": {
+     "japan": 1.0
+    },
+    "total": 1.0,
+    "need": 2.75,
+    "in_headline": true,
+    "title": "Ukraine's prized steel industry left in ruins by Russian missile campaign"
+   }
+  },
+  "85": {
+   "united states": {
+    "class": "split_support",
+    "holders": {
+     "u.s. supreme court": 2.0,
+     "united states": 5.0
+    },
+    "total": 7.0,
+    "need": 5.25,
+    "in_headline": true,
+    "title": "Tennessee governor declines to halt execution of state's lone woman on death row"
+   }
+  },
+  "86": {
+   "somalia": {
+    "class": "below_support",
+    "holders": {
+     "somalia": 1.0
+    },
+    "total": 1.0,
+    "need": 3.25,
+    "in_headline": true,
+    "title": "Somali army clashes with local forces for control of Baidoa"
+   }
+  },
+  "99": {
+   "japan": {
+    "class": "below_support",
+    "holders": {
+     "japan": 1.0
+    },
+    "total": 1.0,
+    "need": 2.25,
+    "in_headline": true,
+    "title": "Russian drone crashes into Kyiv playground without exploding"
+   }
+  },
+  "101": {
+   "russia": {
+    "class": "below_support",
+    "holders": {
+     "russia": 1.0,
+     "moscow": 0.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Ukraine's prized steel industry left in ruins by Russian missile campaign"
+   },
+   "japan": {
+    "class": "below_support",
+    "holders": {
+     "japan": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Ukraine's prized steel industry left in ruins by Russian missile campaign"
+   }
+  },
+  "108": {
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "donald trump": 1.5,
+     "united states": 0.5
+    },
+    "total": 2.0,
+    "need": 3.25,
+    "in_headline": true,
+    "title": "Iran war live: Trump hints US could strike Iran, warns time coming"
+   },
+   "united arab emirates": {
+    "class": "below_support",
+    "holders": {
+     "united arab emirates": 1.5
+    },
+    "total": 1.5,
+    "need": 3.25,
+    "in_headline": true,
+    "title": "Iran war live: Trump hints US could strike Iran, warns time coming"
+   }
+  },
+  "114": {
+   "china": {
+    "class": "below_support",
+    "holders": {
+     "china": 1.0
+    },
+    "total": 1.0,
+    "need": 8.0,
+    "in_headline": true,
+    "title": "A political dynasty? Why the Bolsonaro family dominates Brazil’s right wing"
+   },
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "united states": 1.0,
+     "trump": 0.0
+    },
+    "total": 1.0,
+    "need": 8.0,
+    "in_headline": true,
+    "title": "A political dynasty? Why the Bolsonaro family dominates Brazil’s right wing"
+   }
+  },
+  "115": {
+   "china": {
+    "class": "below_support",
+    "holders": {
+     "china": 0.0,
+     "xi": 0.0,
+     "xi jinping": 0.5,
+     "beijing": 0.0
+    },
+    "total": 0.5,
+    "need": 1.5,
+    "in_headline": false,
+    "title": "US delivers F-16V fighter jets to Taiwan as island eyes threat from China"
+   }
+  },
+  "119": {
+   "saudi arabia": {
+    "class": "below_support",
+    "holders": {
+     "saudi arabia": 31.0
+    },
+    "total": 31.0,
+    "need": 31.75,
+    "in_headline": true,
+    "title": "After Red Sea losses, Yemen’s government forces hold the line"
+   },
+   "somalia": {
+    "class": "below_support",
+    "holders": {
+     "somalia": 1.0
+    },
+    "total": 1.0,
+    "need": 31.75,
+    "in_headline": true,
+    "title": "After Red Sea losses, Yemen’s government forces hold the line"
+   },
+   "united nations": {
+    "class": "below_support",
+    "holders": {
+     "united nations": 1.5,
+     "un security council": 0.0
+    },
+    "total": 1.5,
+    "need": 31.75,
+    "in_headline": true,
+    "title": "After Red Sea losses, Yemen’s government forces hold the line"
+   },
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "trump": 1.0,
+     "united states": 0.0
+    },
+    "total": 1.0,
+    "need": 31.75,
+    "in_headline": true,
+    "title": "After Red Sea losses, Yemen’s government forces hold the line"
+   },
+   "turkey": {
+    "class": "below_support",
+    "holders": {
+     "turkiye": 4.5
+    },
+    "total": 4.5,
+    "need": 31.75,
+    "in_headline": true,
+    "title": "After Red Sea losses, Yemen’s government forces hold the line"
+   },
+   "israel": {
+    "class": "below_support",
+    "holders": {
+     "israel": 1.0
+    },
+    "total": 1.0,
+    "need": 31.75,
+    "in_headline": true,
+    "title": "After Red Sea losses, Yemen’s government forces hold the line"
+   },
+   "syria": {
+    "class": "below_support",
+    "holders": {
+     "syria": 2.0
+    },
+    "total": 2.0,
+    "need": 31.75,
+    "in_headline": true,
+    "title": "After Red Sea losses, Yemen’s government forces hold the line"
+   }
+  },
+  "122": {
+   "france": {
+    "class": "below_support",
+    "holders": {
+     "france": 1.5,
+     "emmanuel macron": 0.0
+    },
+    "total": 1.5,
+    "need": 5.75,
+    "in_headline": true,
+    "title": "Pot banging protests across Spain over housing crisis"
+   }
+  },
+  "123": {
+   "south korea": {
+    "class": "below_support",
+    "holders": {
+     "south korea": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "North Korea fires ballistic missile towards the sea, South Korea says"
+   },
+   "ukraine": {
+    "class": "split_support",
+    "holders": {
+     "ukraine": 1.0,
+     "zelensky": 0.5,
+     "kyiv": 0.0
+    },
+    "total": 1.5,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "North Korea fires ballistic missile towards the sea, South Korea says"
+   },
+   "russia": {
+    "class": "split_support",
+    "holders": {
+     "russia": 0.5,
+     "russian aerospace forces": 1.0
+    },
+    "total": 1.5,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "North Korea fires ballistic missile towards the sea, South Korea says"
+   }
+  },
+  "124": {
+   "ukraine": {
+    "class": "below_support",
+    "holders": {
+     "kyiv": 0.0,
+     "zelensky": 5.5,
+     "zelenskyy": 0.0
+    },
+    "total": 5.5,
+    "need": 24.0,
+    "in_headline": true,
+    "title": "Intensified Russian strikes are tearing Kyiv apart, warns mayor"
+   },
+   "germany": {
+    "class": "below_support",
+    "holders": {
+     "germany": 7.5
+    },
+    "total": 7.5,
+    "need": 24.0,
+    "in_headline": true,
+    "title": "Intensified Russian strikes are tearing Kyiv apart, warns mayor"
+   },
+   "european union": {
+    "class": "below_support",
+    "holders": {
+     "brussels": 0.0,
+     "european commission": 0.5,
+     "european union": 1.0
+    },
+    "total": 1.5,
+    "need": 24.0,
+    "in_headline": true,
+    "title": "Intensified Russian strikes are tearing Kyiv apart, warns mayor"
+   }
+  },
+  "132": {
+   "iran": {
+    "class": "below_support",
+    "holders": {
+     "abbas araghchi": 0.5
+    },
+    "total": 0.5,
+    "need": 4.25,
+    "in_headline": false,
+    "title": "Iran tells US: there is ‘no military solution’ to end the war"
+   },
+   "israel": {
+    "class": "below_support",
+    "holders": {
+     "israel": 1.0
+    },
+    "total": 1.0,
+    "need": 4.25,
+    "in_headline": true,
+    "title": "Iran tells US: there is ‘no military solution’ to end the war"
+   },
+   "united nations": {
+    "class": "split_support",
+    "holders": {
+     "united nations": 3.5,
+     "un general assembly": 1.0
+    },
+    "total": 4.5,
+    "need": 4.25,
+    "in_headline": true,
+    "title": "Iran tells US: there is ‘no military solution’ to end the war"
+   }
+  },
+  "133": {
+   "bosnia and herzegovina": {
+    "class": "below_support",
+    "holders": {
+     "bosnia and herzegovina": 1.5
+    },
+    "total": 1.5,
+    "need": 3.0,
+    "in_headline": false,
+    "title": "Bosnia’s elections explained"
+   },
+   "european union": {
+    "class": "below_support",
+    "holders": {
+     "european union": 1.0,
+     "european commission": 0.5
+    },
+    "total": 1.5,
+    "need": 3.0,
+    "in_headline": true,
+    "title": "Bosnia’s elections explained"
+   }
+  },
+  "134": {
+   "israel": {
+    "class": "below_support",
+    "holders": {
+     "israel": 2.5
+    },
+    "total": 2.5,
+    "need": 4.0,
+    "in_headline": true,
+    "title": "UK Green Party adopts ‘Zionism is racism’ policy, drawing backlash from Israel"
+   },
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "united states": 1.0
+    },
+    "total": 1.0,
+    "need": 4.0,
+    "in_headline": true,
+    "title": "UK Green Party adopts ‘Zionism is racism’ policy, drawing backlash from Israel"
+   }
+  },
+  "135": {
+   "israel": {
+    "class": "below_support",
+    "holders": {
+     "israel": 1.0
+    },
+    "total": 1.0,
+    "need": 12.25,
+    "in_headline": true,
+    "title": "US Air Force removes all bombers from UK airbase targeted by suspected terror attack"
+   },
+   "latvia": {
+    "class": "below_support",
+    "holders": {
+     "latvia": 3.0
+    },
+    "total": 3.0,
+    "need": 12.25,
+    "in_headline": true,
+    "title": "US Air Force removes all bombers from UK airbase targeted by suspected terror attack"
+   }
+  },
+  "142": {
+   "european union": {
+    "class": "below_support",
+    "holders": {
+     "european union": 0.0,
+     "european commission": 0.5,
+     "european council": 0.0,
+     "brussels": 0.0
+    },
+    "total": 0.5,
+    "need": 12.75,
+    "in_headline": false,
+    "title": "Moncloa, alle 9 dichiarazione istituzionale del premier Sanchez"
+   }
+  },
+  "144": {
+   "israel": {
+    "class": "below_support",
+    "holders": {
+     "benjamin netanyahu": 2.0
+    },
+    "total": 2.0,
+    "need": 6.5,
+    "in_headline": true,
+    "title": "Netanyahu, 'il regime iraniano è destinato a sparire'"
+   },
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "donald trump": 1.5,
+     "united states": 0.5
+    },
+    "total": 2.0,
+    "need": 6.5,
+    "in_headline": true,
+    "title": "Netanyahu, 'il regime iraniano è destinato a sparire'"
+   }
+  },
+  "145": {
+   "spain": {
+    "class": "below_support",
+    "holders": {
+     "spain": 5.0
+    },
+    "total": 5.0,
+    "need": 6.5,
+    "in_headline": true,
+    "title": "La Spagna al voto: i sondaggi premiano le destre, l'area progressista frammentata"
+   },
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "white house": 1.0
+    },
+    "total": 1.0,
+    "need": 6.5,
+    "in_headline": true,
+    "title": "La Spagna al voto: i sondaggi premiano le destre, l'area progressista frammentata"
+   }
+  },
+  "147": {
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "donald trump": 18.0,
+     "united states": 6.0,
+     "washington": 0.0
+    },
+    "total": 24.0,
+    "need": 27.0,
+    "in_headline": true,
+    "title": "Bolsonaro gana la primera vuelta en Brasil con el 47% de los votos y disputará contra Lula (45%) la segunda vuelta"
+   }
+  },
+  "148": {
+   "world bank": {
+    "class": "below_support",
+    "holders": {
+     "world bank": 1.0
+    },
+    "total": 1.0,
+    "need": 4.25,
+    "in_headline": true,
+    "title": "Astensione record in Brasile, il 21,08% non ha votato al primo turno"
+   }
+  },
+  "151": {
+   "bulgaria": {
+    "class": "below_support",
+    "holders": {
+     "bulgaria": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Herzog, 'lutto per uomini, donne, bambini, neonati, anziani, caduti il 7 ottobre'"
+   }
+  },
+  "153": {
+   "russia": {
+    "class": "below_support",
+    "holders": {
+     "moscow": 0.0,
+     "kremlin": 0.0,
+     "russia": 0.5
+    },
+    "total": 0.5,
+    "need": 1.0,
+    "in_headline": false,
+    "title": "Dozens detained at a rally in Moscow held by Kremlin-friendly Communist Party, party says"
+   }
+  },
+  "154": {
+   "european union": {
+    "class": "below_support",
+    "holders": {
+     "european union": 1.0
+    },
+    "total": 1.0,
+    "need": 1.75,
+    "in_headline": true,
+    "title": "Nationalists top Bosnia-Herzegovina's divisive election"
+   }
+  },
+  "155": {
+   "saudi arabia": {
+    "class": "below_support",
+    "holders": {
+     "saudi arabia": 5.5
+    },
+    "total": 5.5,
+    "need": 7.75,
+    "in_headline": true,
+    "title": "Forze governative Yemen, ripreso il controllo di Bab el Mandeb"
+   },
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "marco rubio": 1.5,
+     "united states": 1.5,
+     "washington": 0.0,
+     "donald trump": 1.5
+    },
+    "total": 4.5,
+    "need": 7.75,
+    "in_headline": true,
+    "title": "Forze governative Yemen, ripreso il controllo di Bab el Mandeb"
+   },
+   "djibouti": {
+    "class": "below_support",
+    "holders": {
+     "djibouti": 1.0
+    },
+    "total": 1.0,
+    "need": 7.75,
+    "in_headline": true,
+    "title": "Forze governative Yemen, ripreso il controllo di Bab el Mandeb"
+   },
+   "nato": {
+    "class": "below_support",
+    "holders": {
+     "nato": 1.0
+    },
+    "total": 1.0,
+    "need": 7.75,
+    "in_headline": true,
+    "title": "Forze governative Yemen, ripreso il controllo di Bab el Mandeb"
+   }
+  },
+  "162": {
+   "iran": {
+    "class": "below_support",
+    "holders": {
+     "iran": 2.0,
+     "tehran": 0.0
+    },
+    "total": 2.0,
+    "need": 18.25,
+    "in_headline": true,
+    "title": "Ségolène Royal denuncia la 'repressione' degli studenti in Francia"
+   },
+   "united nations": {
+    "class": "below_support",
+    "holders": {
+     "united nations": 1.0
+    },
+    "total": 1.0,
+    "need": 18.25,
+    "in_headline": true,
+    "title": "Ségolène Royal denuncia la 'repressione' degli studenti in Francia"
+   }
+  },
+  "164": {
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "united states": 0.0,
+     "donald trump": 0.5
+    },
+    "total": 0.5,
+    "need": 1.0,
+    "in_headline": false,
+    "title": "Laotian man freed from eSwatini jail 14 months after US third-country deportation"
+   }
+  },
+  "168": {
+   "united nations": {
+    "class": "below_support",
+    "holders": {
+     "world health organization": 1.0,
+     "united nations": 2.5
+    },
+    "total": 3.5,
+    "need": 8.0,
+    "in_headline": true,
+    "title": "Russian lab worker dies of suspected plague in Siberia; US monitoring case"
+   }
+  },
+  "170": {
+   "india": {
+    "class": "below_support",
+    "holders": {
+     "india": 1.0
+    },
+    "total": 1.0,
+    "need": 1.75,
+    "in_headline": true,
+    "title": "Europe on red alert as Russias sabotage campaign raises fears of catastrophic miscalculation - London Business News"
+   }
+  },
+  "172": {
+   "turkey": {
+    "class": "below_support",
+    "holders": {
+     "turkiye": 1.0
+    },
+    "total": 1.0,
+    "need": 3.5,
+    "in_headline": true,
+    "title": "32 people on board crashed Nigerian military aircraft"
+   }
+  },
+  "173": {
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "united states": 1.0
+    },
+    "total": 1.0,
+    "need": 4.75,
+    "in_headline": true,
+    "title": "Four African leaders issue joint declaration as Ethiopia war escalates"
+   },
+   "european union": {
+    "class": "below_support",
+    "holders": {
+     "european union": 1.5
+    },
+    "total": 1.5,
+    "need": 4.75,
+    "in_headline": true,
+    "title": "Four African leaders issue joint declaration as Ethiopia war escalates"
+   }
+  },
+  "175": {
+   "united states": {
+    "class": "split_support",
+    "holders": {
+     "united states": 0.0,
+     "trump": 1.0,
+     "white house": 0.5
+    },
+    "total": 1.5,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Irán entrena a mujeres en las armas ante una posible invasión terrestre"
+   }
+  },
+  "176": {
+   "international criminal court": {
+    "class": "below_support",
+    "holders": {
+     "international criminal court": 1.0
+    },
+    "total": 1.0,
+    "need": 2.0,
+    "in_headline": false,
+    "title": "ICC unseals arrest warrants for Taliban education ministers"
+   }
+  },
+  "177": {
+   "european union": {
+    "class": "below_support",
+    "holders": {
+     "brussels": 0.0,
+     "european union": 1.0,
+     "european commission": 0.5
+    },
+    "total": 1.5,
+    "need": 4.0,
+    "in_headline": true,
+    "title": "La Inteligencia de Alemania acusa a Rusia de una \"guerra en la sombra\" y apunta a \"éxitos\" frente a Moscú"
+   },
+   "france": {
+    "class": "below_support",
+    "holders": {
+     "france": 1.0
+    },
+    "total": 1.0,
+    "need": 4.0,
+    "in_headline": true,
+    "title": "La Inteligencia de Alemania acusa a Rusia de una \"guerra en la sombra\" y apunta a \"éxitos\" frente a Moscú"
+   },
+   "united kingdom": {
+    "class": "below_support",
+    "holders": {
+     "united kingdom": 1.5
+    },
+    "total": 1.5,
+    "need": 4.0,
+    "in_headline": true,
+    "title": "La Inteligencia de Alemania acusa a Rusia de una \"guerra en la sombra\" y apunta a \"éxitos\" frente a Moscú"
+   }
+  },
+  "179": {
+   "france": {
+    "class": "headline_gate",
+    "holders": {
+     "france": 1.5
+    },
+    "total": 1.5,
+    "need": 1.5,
+    "in_headline": false,
+    "title": "France, Germany call for new weapon allowing ‘immediate cut off’ of China from EU market"
+   }
+  },
+  "180": {
+   "italy": {
+    "class": "below_support",
+    "holders": {
+     "italy": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Putin authorizes reorganization of UniCredit's Russian division"
+   }
+  },
+  "181": {
+   "israel": {
+    "class": "below_support",
+    "holders": {
+     "israel": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Funeral held at Gaza church for mother and daughter killed in Gaza strike"
+   }
+  },
+  "182": {
+   "israel": {
+    "class": "below_support",
+    "holders": {
+     "benjamin netanyahu": 2.0
+    },
+    "total": 2.0,
+    "need": 35.5,
+    "in_headline": true,
+    "title": "Ghaydaa Kamal Al Abadsa, escritora palestina: “En Gaza no hay un alto el fuego, no crean esa mentira”"
+   },
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "united states": 1.5,
+     "cia": 1.0
+    },
+    "total": 2.5,
+    "need": 35.5,
+    "in_headline": true,
+    "title": "Ghaydaa Kamal Al Abadsa, escritora palestina: “En Gaza no hay un alto el fuego, no crean esa mentira”"
+   },
+   "iran": {
+    "class": "below_support",
+    "holders": {
+     "iran": 1.0
+    },
+    "total": 1.0,
+    "need": 35.5,
+    "in_headline": true,
+    "title": "Ghaydaa Kamal Al Abadsa, escritora palestina: “En Gaza no hay un alto el fuego, no crean esa mentira”"
+   },
+   "united nations": {
+    "class": "below_support",
+    "holders": {
+     "united nations": 1.0,
+     "ocha": 0.5
+    },
+    "total": 1.5,
+    "need": 35.5,
+    "in_headline": false,
+    "title": "Ghaydaa Kamal Al Abadsa, escritora palestina: “En Gaza no hay un alto el fuego, no crean esa mentira”"
+   }
+  },
+  "184": {
+   "ukraine": {
+    "class": "below_support",
+    "holders": {
+     "zelensky": 1.0
+    },
+    "total": 1.0,
+    "need": 2.75,
+    "in_headline": true,
+    "title": "Trump's Ukraine-Russia peace gambit begins to unravel. Again"
+   },
+   "european union": {
+    "class": "below_support",
+    "holders": {
+     "european union": 1.0
+    },
+    "total": 1.0,
+    "need": 2.75,
+    "in_headline": true,
+    "title": "Trump's Ukraine-Russia peace gambit begins to unravel. Again"
+   },
+   "poland": {
+    "class": "below_support",
+    "holders": {
+     "poland": 1.0
+    },
+    "total": 1.0,
+    "need": 2.75,
+    "in_headline": true,
+    "title": "Trump's Ukraine-Russia peace gambit begins to unravel. Again"
+   }
+  },
+  "190": {
+   "ireland": {
+    "class": "below_support",
+    "holders": {
+     "ireland": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "We stay in Kyiv: Irish diplomats vow to stay in Ukraine despite Russian threat of strikes"
+   },
+   "united states": {
+    "class": "split_support",
+    "holders": {
+     "united states": 1.0,
+     "rubio": 1.0
+    },
+    "total": 2.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "We stay in Kyiv: Irish diplomats vow to stay in Ukraine despite Russian threat of strikes"
+   }
+  },
+  "191": {
+   "venezuela": {
+    "class": "below_support",
+    "holders": {
+     "venezuela": 1.0
+    },
+    "total": 1.0,
+    "need": 2.0,
+    "in_headline": true,
+    "title": "\"Estamos listos para ir de inmediato\": los millonarios cubanoestadounidenses que esperan en Miami que caiga el gobierno "
+   }
+  },
+  "193": {
+   "palestine": {
+    "class": "below_support",
+    "holders": {
+     "palestine": 1.0
+    },
+    "total": 1.0,
+    "need": 6.25,
+    "in_headline": true,
+    "title": "UK ‘threatens to expel 27 Israeli diplomats’ over Jerusalem consulate"
+   }
+  },
+  "194": {
+   "romania": {
+    "class": "below_support",
+    "holders": {
+     "romania": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Two dead after ship sinks off Romania following fire"
+   }
+  },
+  "195": {
+   "united states": {
+    "class": "split_support",
+    "holders": {
+     "united states": 1.0,
+     "trump": 1.0
+    },
+    "total": 2.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Justice Department Moves to Strip Citizenship from 40 Criminals in Largest Single-Period Filing Under the Trump Administ"
+   }
+  },
+  "196": {
+   "north korea": {
+    "class": "below_support",
+    "holders": {
+     "north korea": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "North Korea, Russia Evade U.N. Sanctions To Buttress Moscows Drone Program"
+   }
+  },
+  "207": {
+   "united nations": {
+    "class": "below_support",
+    "holders": {
+     "united nations": 1.0
+    },
+    "total": 1.0,
+    "need": 2.25,
+    "in_headline": true,
+    "title": "Trump approva la fucilazione per l'autore della strage nella base di Fort Hood"
+   }
+  },
+  "208": {
+   "european union": {
+    "class": "below_support",
+    "holders": {
+     "brussels": 0.0,
+     "european commission": 0.5
+    },
+    "total": 0.5,
+    "need": 1.5,
+    "in_headline": false,
+    "title": "Las autoridades de Moscú registran al menos un muerto y seis heridos tras detectar más de 600 drones"
+   }
+  },
+  "210": {
+   "united states": {
+    "class": "split_support",
+    "holders": {
+     "united states": 1.5,
+     "donald trump": 3.0,
+     "cia": 0.0,
+     "white house": 2.0,
+     "us department of defense": 2.0
+    },
+    "total": 8.5,
+    "need": 6.75,
+    "in_headline": true,
+    "title": "Joint Statement on Countering Iranian Terrorist Activity in the Western Hemisphere"
+   }
+  },
+  "215": {
+   "united nations": {
+    "class": "below_support",
+    "holders": {
+     "unicef": 0.5,
+     "united nations": 0.5,
+     "world health organization": 0.5
+    },
+    "total": 1.5,
+    "need": 3.25,
+    "in_headline": false,
+    "title": "Kenya confirms its first Ebola death as outbreak spreads"
+   }
+  },
+  "220": {
+   "singapore": {
+    "class": "below_support",
+    "holders": {
+     "singapore": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "8 public officers in Singapore referred to police after property review"
+   }
+  },
+  "221": {
+   "lithuania": {
+    "class": "below_support",
+    "holders": {
+     "lithuania": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "NATO drafts strategy on repelling Russian attack against eastern flank"
+   },
+   "ukraine": {
+    "class": "below_support",
+    "holders": {
+     "zelensky": 1.0,
+     "ukraine": 0.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "NATO drafts strategy on repelling Russian attack against eastern flank"
+   }
+  },
+  "222": {
+   "kosovo": {
+    "class": "below_support",
+    "holders": {
+     "kosovo": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Police clash with Kosovo protesters over bid to curb Hague war crimes court"
+   }
+  },
+  "223": {
+   "russia": {
+    "class": "below_support",
+    "holders": {
+     "russia": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Lithuania takes 1st step to lift nuclear weapons ban amid Russian threat"
+   }
+  },
+  "224": {
+   "russia": {
+    "class": "below_support",
+    "holders": {
+     "russia": 3.0
+    },
+    "total": 3.0,
+    "need": 3.5,
+    "in_headline": true,
+    "title": "Sailors missing after fresh attacks on Black Sea vessels, Bulgaria says"
+   },
+   "india": {
+    "class": "below_support",
+    "holders": {
+     "india": 1.0
+    },
+    "total": 1.0,
+    "need": 3.5,
+    "in_headline": true,
+    "title": "Sailors missing after fresh attacks on Black Sea vessels, Bulgaria says"
+   },
+   "european union": {
+    "class": "below_support",
+    "holders": {
+     "european union": 1.0
+    },
+    "total": 1.0,
+    "need": 3.5,
+    "in_headline": true,
+    "title": "Sailors missing after fresh attacks on Black Sea vessels, Bulgaria says"
+   }
+  },
+  "227": {
+   "turkey": {
+    "class": "below_support",
+    "holders": {
+     "turkiye": 1.0
+    },
+    "total": 1.0,
+    "need": 4.75,
+    "in_headline": true,
+    "title": "Las conversaciones entre EE.UU. y Rusia sobre Ucrania ahora incluyen un acuerdo petrolero vinculado a los aliados de Tru"
+   }
+  },
+  "232": {
+   "united states": {
+    "class": "split_support",
+    "holders": {
+     "donald trump": 6.0,
+     "united states": 3.5,
+     "marco rubio": 0.5
+    },
+    "total": 10.0,
+    "need": 8.75,
+    "in_headline": true,
+    "title": "Qué hay que saber sobre los Premios Nobel de 2026"
+   }
+  },
+  "237": {
+   "israel": {
+    "class": "below_support",
+    "holders": {
+     "israel": 1.0
+    },
+    "total": 1.0,
+    "need": 1.75,
+    "in_headline": true,
+    "title": "Médecins Sans Frontières: Israel is progressively asphyxiating Gaza and continuing its genocide"
+   },
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "donald trump": 1.0
+    },
+    "total": 1.0,
+    "need": 1.75,
+    "in_headline": true,
+    "title": "Médecins Sans Frontières: Israel is progressively asphyxiating Gaza and continuing its genocide"
+   },
+   "palestine": {
+    "class": "below_support",
+    "holders": {
+     "palestine": 1.0
+    },
+    "total": 1.0,
+    "need": 1.75,
+    "in_headline": true,
+    "title": "Médecins Sans Frontières: Israel is progressively asphyxiating Gaza and continuing its genocide"
+   }
+  },
+  "249": {
+   "mali": {
+    "class": "below_support",
+    "holders": {
+     "mali": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Tuareg rebels withdraw from strategic town of Kidal in northern Mali"
+   }
+  },
+  "250": {
+   "ukraine": {
+    "class": "split_support",
+    "holders": {
+     "ukraine": 1.0,
+     "zelensky": 1.0,
+     "zelenskyy": 1.0
+    },
+    "total": 3.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Macron slams Russia’s ‘irresponsible’ strikes on Ukraine’s civilian infrastructure"
+   }
+  },
+  "255": {
+   "ukraine": {
+    "class": "below_support",
+    "holders": {
+     "ukraine": 1.0
+    },
+    "total": 1.0,
+    "need": 1.75,
+    "in_headline": true,
+    "title": "EU deepens collective space security with mutual defense pact"
+   },
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "united states": 1.0
+    },
+    "total": 1.0,
+    "need": 1.75,
+    "in_headline": true,
+    "title": "EU deepens collective space security with mutual defense pact"
+   }
+  },
+  "258": {
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "united states": 0.5,
+     "rubio": 0.0,
+     "trump": 1.0
+    },
+    "total": 1.5,
+    "need": 2.25,
+    "in_headline": true,
+    "title": "Irán carga contra las \"delirantes previsiones\" de EEUU sobre la guerra económica: \"También fracasaréis\""
+   }
+  },
+  "261": {
+   "international monetary fund": {
+    "class": "below_support",
+    "holders": {
+     "international monetary fund": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "IMF says global economy stagnant, cuts growth forecast for China, Eurozone"
+   },
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "united states": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "IMF says global economy stagnant, cuts growth forecast for China, Eurozone"
+   }
+  },
+  "263": {
+   "venezuela": {
+    "class": "below_support",
+    "holders": {
+     "venezuela": 1.0
+    },
+    "total": 1.0,
+    "need": 2.25,
+    "in_headline": true,
+    "title": "Christa Pike ha ripreso conoscenza e parla"
+   }
+  },
+  "266": {
+   "yemen": {
+    "class": "below_support",
+    "holders": {
+     "yemen": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Children brave snipers and mortars to go to school near Yemen front line"
+   }
+  },
+  "269": {
+   "bolivia": {
+    "class": "below_support",
+    "holders": {
+     "bolivia": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Bolivia, dalla Caf 224 milioni di dollari per la rete stradale"
+   }
+  },
+  "270": {
+   "russia": {
+    "class": "other",
+    "holders": {
+     "moscow": 0.0,
+     "russia": 1.5,
+     "vladimir putin": 2.0,
+     "kremlin": 1.5
+    },
+    "total": 5.0,
+    "need": 1.75,
+    "in_headline": true,
+    "title": "Wsj: 'Washington preme su Mosca, serve nota ufficiale sul decesso legato alla peste'"
+   }
+  },
+  "271": {
+   "ukraine": {
+    "class": "below_support",
+    "holders": {
+     "ukraine": 1.0,
+     "kyiv": 0.0
+    },
+    "total": 1.0,
+    "need": 2.25,
+    "in_headline": true,
+    "title": "Ucraina, russi colpiscono un ponte sul Dnipro a Zaporizhzhia. La Romania fa decollare due F-18"
+   },
+   "romania": {
+    "class": "below_support",
+    "holders": {
+     "romania": 1.0
+    },
+    "total": 1.0,
+    "need": 2.25,
+    "in_headline": true,
+    "title": "Ucraina, russi colpiscono un ponte sul Dnipro a Zaporizhzhia. La Romania fa decollare due F-18"
+   }
+  },
+  "275": {
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "united states": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Noruega estudia limitar los lentes inteligentes por temor a las grabaciones sin consentimiento"
+   }
+  },
+  "281": {
+   "iran": {
+    "class": "below_support",
+    "holders": {
+     "iran": 2.0
+    },
+    "total": 2.0,
+    "need": 4.25,
+    "in_headline": true,
+    "title": "Secretary of State Marco Rubio Remarks to the Press"
+   }
+  },
+  "289": {
+   "brazil": {
+    "class": "below_support",
+    "holders": {
+     "brazil": 1.0
+    },
+    "total": 1.0,
+    "need": 2.75,
+    "in_headline": true,
+    "title": "Meloni renews commitment to fighting antisemitism on October 7 anniversary"
+   }
+  },
+  "299": {
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "us department of defense": 1.0,
+     "united states": 0.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Department of War's Office of Strategic Capital Announces $1.5 Billion Conditional Loan Commitment to Wolfspeed, Inc."
+   }
+  },
+  "310": {
+   "united states": {
+    "class": "headline_gate",
+    "holders": {
+     "united states": 0.5,
+     "donald trump": 0.5
+    },
+    "total": 1.0,
+    "need": 1.0,
+    "in_headline": false,
+    "title": "European Parliament Installs Gilded Nude Statue Mocking Trump"
+   }
+  },
+  "312": {
+   "ecuador": {
+    "class": "below_support",
+    "holders": {
+     "ecuador": 1.0
+    },
+    "total": 1.0,
+    "need": 2.5,
+    "in_headline": true,
+    "title": "Por qué la mayor colonia de pingüinos del mundo ha perdido dos tercios de su población"
+   },
+   "uruguay": {
+    "class": "below_support",
+    "holders": {
+     "uruguay": 2.0
+    },
+    "total": 2.0,
+    "need": 2.5,
+    "in_headline": true,
+    "title": "Por qué la mayor colonia de pingüinos del mundo ha perdido dos tercios de su población"
+   }
+  },
+  "316": {
+   "south korea": {
+    "class": "below_support",
+    "holders": {
+     "seoul": 0.0,
+     "south korea": 0.5
+    },
+    "total": 0.5,
+    "need": 1.0,
+    "in_headline": false,
+    "title": "North Korea decries medical aid, says ‘nothing to give or receive’ from Seoul"
+   }
+  },
+  "318": {
+   "japan": {
+    "class": "below_support",
+    "holders": {
+     "japan": 1.0
+    },
+    "total": 1.0,
+    "need": 1.75,
+    "in_headline": true,
+    "title": "Russia blames Euro-Atlantic nations for Japan sanctions over Ukraine"
+   },
+   "lithuania": {
+    "class": "below_support",
+    "holders": {
+     "lithuania": 1.0
+    },
+    "total": 1.0,
+    "need": 1.75,
+    "in_headline": true,
+    "title": "Russia blames Euro-Atlantic nations for Japan sanctions over Ukraine"
+   },
+   "european union": {
+    "class": "below_support",
+    "holders": {
+     "european union": 1.5
+    },
+    "total": 1.5,
+    "need": 1.75,
+    "in_headline": true,
+    "title": "Russia blames Euro-Atlantic nations for Japan sanctions over Ukraine"
+   },
+   "estonia": {
+    "class": "below_support",
+    "holders": {
+     "estonia": 1.0
+    },
+    "total": 1.0,
+    "need": 1.75,
+    "in_headline": true,
+    "title": "Russia blames Euro-Atlantic nations for Japan sanctions over Ukraine"
+   },
+   "nato": {
+    "class": "below_support",
+    "holders": {
+     "nato": 1.0
+    },
+    "total": 1.0,
+    "need": 1.75,
+    "in_headline": true,
+    "title": "Russia blames Euro-Atlantic nations for Japan sanctions over Ukraine"
+   }
+  },
+  "322": {
+   "russia": {
+    "class": "split_support",
+    "holders": {
+     "russia": 1.0,
+     "kremlin": 1.0
+    },
+    "total": 2.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Russia carried out sabotage against Danish defense firms, intelligence says"
+   },
+   "netherlands": {
+    "class": "below_support",
+    "holders": {
+     "netherlands": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Russia carried out sabotage against Danish defense firms, intelligence says"
+   }
+  },
+  "330": {
+   "united kingdom": {
+    "class": "below_support",
+    "holders": {
+     "united kingdom": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "UK, Germany to launch partnership to counter cyberattacks as Burnham visits Berlin"
+   },
+   "germany": {
+    "class": "below_support",
+    "holders": {
+     "germany": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "UK, Germany to launch partnership to counter cyberattacks as Burnham visits Berlin"
+   }
+  },
+  "345": {
+   "montenegro": {
+    "class": "below_support",
+    "holders": {
+     "montenegro": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Rubio visits Portugal, praising a great ally and looking to build deeper ties – Winnipeg Free Press"
+   }
+  },
+  "358": {
+   "united states": {
+    "class": "headline_gate",
+    "holders": {
+     "us department of defense": 1.5,
+     "united states": 0.0
+    },
+    "total": 1.5,
+    "need": 1.5,
+    "in_headline": false,
+    "title": "Department of War Awards $6.3 Billion Multi-Year Contract to RTX's Raytheon for SM-3 BLOCK IB Interceptors"
+   }
+  },
+  "360": {
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "trump": 0.0,
+     "us department of homeland security": 0.5
+    },
+    "total": 0.5,
+    "need": 1.5,
+    "in_headline": false,
+    "title": "Un herido por disparos en operación del ICE en Nueva York, que justifica la acción por su historial criminal"
+   }
+  },
+  "363": {
+   "south africa": {
+    "class": "below_support",
+    "holders": {
+     "south africa": 4.0
+    },
+    "total": 4.0,
+    "need": 6.5,
+    "in_headline": true,
+    "title": "Navi Pillay wins the Nobel Peace Prize for her work in international justice"
+   },
+   "united nations": {
+    "class": "below_support",
+    "holders": {
+     "united nations": 1.0,
+     "international court of justice": 1.0
+    },
+    "total": 2.0,
+    "need": 6.5,
+    "in_headline": true,
+    "title": "Navi Pillay wins the Nobel Peace Prize for her work in international justice"
+   },
+   "israel": {
+    "class": "below_support",
+    "holders": {
+     "netanyahu": 1.0
+    },
+    "total": 1.0,
+    "need": 6.5,
+    "in_headline": true,
+    "title": "Navi Pillay wins the Nobel Peace Prize for her work in international justice"
+   }
+  },
+  "365": {
+   "european union": {
+    "class": "split_support",
+    "holders": {
+     "european union": 1.0,
+     "council of the european union": 0.5
+    },
+    "total": 1.5,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "EU removes Panama from tax haven blacklist"
+   }
+  },
+  "377": {
+   "european union": {
+    "class": "split_support",
+    "holders": {
+     "european union": 1.0,
+     "european commission": 1.0
+    },
+    "total": 2.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "EU trade envoy eyes yawning goods deficit on first day of China visit"
+   },
+   "china": {
+    "class": "headline_gate",
+    "holders": {
+     "china": 1.5,
+     "beijing": 0.0
+    },
+    "total": 1.5,
+    "need": 1.5,
+    "in_headline": false,
+    "title": "EU trade envoy eyes yawning goods deficit on first day of China visit"
+   }
+  },
+  "381": {
+   "oman": {
+    "class": "below_support",
+    "holders": {
+     "oman": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Israel Was Ready to Shoot Down Flydubai Jet, Sources Say"
+   }
+  },
+  "386": {
+   "united kingdom": {
+    "class": "below_support",
+    "holders": {
+     "united kingdom": 1.0
+    },
+    "total": 1.0,
+    "need": 9.25,
+    "in_headline": true,
+    "title": "US imposes sanctions on International Criminal Court"
+   },
+   "netherlands": {
+    "class": "below_support",
+    "holders": {
+     "netherlands": 1.0
+    },
+    "total": 1.0,
+    "need": 9.25,
+    "in_headline": true,
+    "title": "US imposes sanctions on International Criminal Court"
+   },
+   "japan": {
+    "class": "below_support",
+    "holders": {
+     "japan": 2.0
+    },
+    "total": 2.0,
+    "need": 9.25,
+    "in_headline": true,
+    "title": "US imposes sanctions on International Criminal Court"
+   },
+   "canada": {
+    "class": "below_support",
+    "holders": {
+     "canada": 1.0
+    },
+    "total": 1.0,
+    "need": 9.25,
+    "in_headline": true,
+    "title": "US imposes sanctions on International Criminal Court"
+   },
+   "european union": {
+    "class": "below_support",
+    "holders": {
+     "european commission": 0.5,
+     "brussels": 0.0,
+     "european union": 1.5
+    },
+    "total": 2.0,
+    "need": 9.25,
+    "in_headline": true,
+    "title": "US imposes sanctions on International Criminal Court"
+   }
+  },
+  "397": {
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "united states": 14.0,
+     "donald trump": 4.0
+    },
+    "total": 18.0,
+    "need": 81.25,
+    "in_headline": true,
+    "title": "Saudi minister vows 'serious response' to Houthi attacks on airports"
+   },
+   "israel": {
+    "class": "below_support",
+    "holders": {
+     "netanyahu": 0.0,
+     "israel": 5.0
+    },
+    "total": 5.0,
+    "need": 81.25,
+    "in_headline": true,
+    "title": "Saudi minister vows 'serious response' to Houthi attacks on airports"
+   },
+   "pakistan": {
+    "class": "below_support",
+    "holders": {
+     "pakistan": 1.0
+    },
+    "total": 1.0,
+    "need": 81.25,
+    "in_headline": true,
+    "title": "Saudi minister vows 'serious response' to Houthi attacks on airports"
+   },
+   "france": {
+    "class": "below_support",
+    "holders": {
+     "france": 1.0
+    },
+    "total": 1.0,
+    "need": 81.25,
+    "in_headline": true,
+    "title": "Saudi minister vows 'serious response' to Houthi attacks on airports"
+   },
+   "iraq": {
+    "class": "below_support",
+    "holders": {
+     "iraq": 2.0
+    },
+    "total": 2.0,
+    "need": 81.25,
+    "in_headline": true,
+    "title": "Saudi minister vows 'serious response' to Houthi attacks on airports"
+   },
+   "united nations": {
+    "class": "below_support",
+    "holders": {
+     "united nations": 8.0,
+     "world food programme": 1.0,
+     "un security council": 2.0
+    },
+    "total": 11.0,
+    "need": 81.25,
+    "in_headline": true,
+    "title": "Saudi minister vows 'serious response' to Houthi attacks on airports"
+   },
+   "djibouti": {
+    "class": "below_support",
+    "holders": {
+     "djibouti": 1.0
+    },
+    "total": 1.0,
+    "need": 81.25,
+    "in_headline": true,
+    "title": "Saudi minister vows 'serious response' to Houthi attacks on airports"
+   },
+   "united kingdom": {
+    "class": "below_support",
+    "holders": {
+     "united kingdom": 10.5
+    },
+    "total": 10.5,
+    "need": 81.25,
+    "in_headline": true,
+    "title": "Saudi minister vows 'serious response' to Houthi attacks on airports"
+   },
+   "european union": {
+    "class": "below_support",
+    "holders": {
+     "european union": 1.0
+    },
+    "total": 1.0,
+    "need": 81.25,
+    "in_headline": true,
+    "title": "Saudi minister vows 'serious response' to Houthi attacks on airports"
+   },
+   "russia": {
+    "class": "below_support",
+    "holders": {
+     "russia": 1.0
+    },
+    "total": 1.0,
+    "need": 81.25,
+    "in_headline": true,
+    "title": "Saudi minister vows 'serious response' to Houthi attacks on airports"
+   }
+  },
+  "398": {
+   "russia": {
+    "class": "below_support",
+    "holders": {
+     "vladimir putin": 43.5,
+     "kremlin": 8.5
+    },
+    "total": 52.0,
+    "need": 163.75,
+    "in_headline": true,
+    "title": "Russia's offensive ability is broken, Kyiv's former top general tells BBC"
+   },
+   "ukraine": {
+    "class": "below_support",
+    "holders": {
+     "zelensky": 90.5,
+     "kyiv": 0.0,
+     "kiev": 1.0,
+     "ukrainian": 0.0
+    },
+    "total": 91.5,
+    "need": 163.75,
+    "in_headline": true,
+    "title": "Russia's offensive ability is broken, Kyiv's former top general tells BBC"
+   },
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "united states": 81.5,
+     "donald trump": 14.0,
+     "washington": 0.0,
+     "hegseth": 0.0,
+     "us department of defense": 1.0,
+     "white house": 4.5,
+     "us congress": 0.0,
+     "marco rubio": 6.5,
+     "us treasury": 1.0
+    },
+    "total": 108.5,
+    "need": 163.75,
+    "in_headline": true,
+    "title": "Russia's offensive ability is broken, Kyiv's former top general tells BBC"
+   },
+   "iran": {
+    "class": "below_support",
+    "holders": {
+     "iran": 5.0
+    },
+    "total": 5.0,
+    "need": 163.75,
+    "in_headline": true,
+    "title": "Russia's offensive ability is broken, Kyiv's former top general tells BBC"
+   },
+   "israel": {
+    "class": "below_support",
+    "holders": {
+     "israel": 2.0
+    },
+    "total": 2.0,
+    "need": 163.75,
+    "in_headline": true,
+    "title": "Russia's offensive ability is broken, Kyiv's former top general tells BBC"
+   },
+   "european union": {
+    "class": "below_support",
+    "holders": {
+     "european union": 8.5,
+     "brussels": 0.0,
+     "european commission": 0.5,
+     "european council": 0.0
+    },
+    "total": 9.0,
+    "need": 163.75,
+    "in_headline": true,
+    "title": "Russia's offensive ability is broken, Kyiv's former top general tells BBC"
+   },
+   "united kingdom": {
+    "class": "below_support",
+    "holders": {
+     "united kingdom": 3.5
+    },
+    "total": 3.5,
+    "need": 163.75,
+    "in_headline": true,
+    "title": "Russia's offensive ability is broken, Kyiv's former top general tells BBC"
+   },
+   "hungary": {
+    "class": "below_support",
+    "holders": {
+     "hungary": 0.5
+    },
+    "total": 0.5,
+    "need": 163.75,
+    "in_headline": false,
+    "title": "Russia's offensive ability is broken, Kyiv's former top general tells BBC"
+   },
+   "ireland": {
+    "class": "below_support",
+    "holders": {
+     "ireland": 1.0
+    },
+    "total": 1.0,
+    "need": 163.75,
+    "in_headline": true,
+    "title": "Russia's offensive ability is broken, Kyiv's former top general tells BBC"
+   },
+   "belgium": {
+    "class": "below_support",
+    "holders": {
+     "belgium": 2.0
+    },
+    "total": 2.0,
+    "need": 163.75,
+    "in_headline": true,
+    "title": "Russia's offensive ability is broken, Kyiv's former top general tells BBC"
+   },
+   "united nations": {
+    "class": "below_support",
+    "holders": {
+     "united nations": 2.0,
+     "un security council": 1.0
+    },
+    "total": 3.0,
+    "need": 163.75,
+    "in_headline": true,
+    "title": "Russia's offensive ability is broken, Kyiv's former top general tells BBC"
+   },
+   "g7": {
+    "class": "below_support",
+    "holders": {
+     "g7": 1.0
+    },
+    "total": 1.0,
+    "need": 163.75,
+    "in_headline": true,
+    "title": "Russia's offensive ability is broken, Kyiv's former top general tells BBC"
+   },
+   "poland": {
+    "class": "below_support",
+    "holders": {
+     "poland": 5.5
+    },
+    "total": 5.5,
+    "need": 163.75,
+    "in_headline": true,
+    "title": "Russia's offensive ability is broken, Kyiv's former top general tells BBC"
+   },
+   "italy": {
+    "class": "below_support",
+    "holders": {
+     "italy": 1.0
+    },
+    "total": 1.0,
+    "need": 163.75,
+    "in_headline": true,
+    "title": "Russia's offensive ability is broken, Kyiv's former top general tells BBC"
+   },
+   "mali": {
+    "class": "below_support",
+    "holders": {
+     "mali": 1.0
+    },
+    "total": 1.0,
+    "need": 163.75,
+    "in_headline": true,
+    "title": "Russia's offensive ability is broken, Kyiv's former top general tells BBC"
+   },
+   "finland": {
+    "class": "below_support",
+    "holders": {
+     "finland": 1.5
+    },
+    "total": 1.5,
+    "need": 163.75,
+    "in_headline": false,
+    "title": "Russia's offensive ability is broken, Kyiv's former top general tells BBC"
+   }
+  },
+  "399": {
+   "ukraine": {
+    "class": "split_support",
+    "holders": {
+     "zelensky": 11.0,
+     "kyiv": 0.0,
+     "ukraine": 57.5
+    },
+    "total": 68.5,
+    "need": 67.75,
+    "in_headline": true,
+    "title": "Zelensky, almeno due morti questa sera in attacchi russi a Kiev"
+   },
+   "russia": {
+    "class": "split_support",
+    "holders": {
+     "russia": 48.0,
+     "vladimir putin": 31.0,
+     "moscow": 0.0,
+     "kremlin": 3.0,
+     "sergei lavrov": 1.5
+    },
+    "total": 83.5,
+    "need": 67.75,
+    "in_headline": true,
+    "title": "Zelensky, almeno due morti questa sera in attacchi russi a Kiev"
+   },
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "united states": 23.5,
+     "donald trump": 22.5,
+     "washington": 0.5,
+     "federal reserve": 0.0,
+     "white house": 0.5,
+     "us department of defense": 1.5,
+     "marco rubio": 1.5,
+     "us department of homeland security": 0.0
+    },
+    "total": 50.0,
+    "need": 67.75,
+    "in_headline": true,
+    "title": "Zelensky, almeno due morti questa sera in attacchi russi a Kiev"
+   },
+   "china": {
+    "class": "below_support",
+    "holders": {
+     "china": 1.5,
+     "xi": 3.0,
+     "xi jinping": 0.5,
+     "wang yi": 1.0
+    },
+    "total": 6.0,
+    "need": 67.75,
+    "in_headline": true,
+    "title": "Zelensky, almeno due morti questa sera in attacchi russi a Kiev"
+   },
+   "nato": {
+    "class": "below_support",
+    "holders": {
+     "nato": 1.5
+    },
+    "total": 1.5,
+    "need": 67.75,
+    "in_headline": true,
+    "title": "Zelensky, almeno due morti questa sera in attacchi russi a Kiev"
+   },
+   "taiwan": {
+    "class": "below_support",
+    "holders": {
+     "taiwan": 1.0
+    },
+    "total": 1.0,
+    "need": 67.75,
+    "in_headline": true,
+    "title": "Zelensky, almeno due morti questa sera in attacchi russi a Kiev"
+   },
+   "united kingdom": {
+    "class": "below_support",
+    "holders": {
+     "united kingdom": 0.5
+    },
+    "total": 0.5,
+    "need": 67.75,
+    "in_headline": false,
+    "title": "Zelensky, almeno due morti questa sera in attacchi russi a Kiev"
+   },
+   "european union": {
+    "class": "below_support",
+    "holders": {
+     "european union": 2.5,
+     "brussels": 0.0,
+     "european council": 0.0,
+     "european central bank": 0.5
+    },
+    "total": 3.0,
+    "need": 67.75,
+    "in_headline": true,
+    "title": "Zelensky, almeno due morti questa sera in attacchi russi a Kiev"
+   },
+   "south korea": {
+    "class": "below_support",
+    "holders": {
+     "south korea": 1.0
+    },
+    "total": 1.0,
+    "need": 67.75,
+    "in_headline": true,
+    "title": "Zelensky, almeno due morti questa sera in attacchi russi a Kiev"
+   },
+   "germany": {
+    "class": "below_support",
+    "holders": {
+     "germany": 1.5
+    },
+    "total": 1.5,
+    "need": 67.75,
+    "in_headline": true,
+    "title": "Zelensky, almeno due morti questa sera in attacchi russi a Kiev"
+   },
+   "united nations": {
+    "class": "below_support",
+    "holders": {
+     "united nations": 1.0
+    },
+    "total": 1.0,
+    "need": 67.75,
+    "in_headline": true,
+    "title": "Zelensky, almeno due morti questa sera in attacchi russi a Kiev"
+   },
+   "turkey": {
+    "class": "below_support",
+    "holders": {
+     "turkiye": 1.5
+    },
+    "total": 1.5,
+    "need": 67.75,
+    "in_headline": true,
+    "title": "Zelensky, almeno due morti questa sera in attacchi russi a Kiev"
+   }
+  },
+  "400": {
+   "israel": {
+    "class": "below_support",
+    "holders": {
+     "netanyahu": 1.5
+    },
+    "total": 1.5,
+    "need": 6.75,
+    "in_headline": true,
+    "title": "\"Cada día muere gente\": las familias en Gaza que siguen bajo los ataques israelíes pese al alto el fuego, mientras el ac"
+   },
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "united states": 1.0,
+     "us state department": 0.0
+    },
+    "total": 1.0,
+    "need": 6.75,
+    "in_headline": true,
+    "title": "\"Cada día muere gente\": las familias en Gaza que siguen bajo los ataques israelíes pese al alto el fuego, mientras el ac"
+   },
+   "palestine": {
+    "class": "below_support",
+    "holders": {
+     "palestine": 4.0
+    },
+    "total": 4.0,
+    "need": 6.75,
+    "in_headline": true,
+    "title": "\"Cada día muere gente\": las familias en Gaza que siguen bajo los ataques israelíes pese al alto el fuego, mientras el ac"
+   },
+   "united nations": {
+    "class": "below_support",
+    "holders": {
+     "united nations": 3.0,
+     "un security council": 0.5
+    },
+    "total": 3.5,
+    "need": 6.75,
+    "in_headline": true,
+    "title": "\"Cada día muere gente\": las familias en Gaza que siguen bajo los ataques israelíes pese al alto el fuego, mientras el ac"
+   }
+  },
+  "405": {
+   "european union": {
+    "class": "below_support",
+    "holders": {
+     "european union": 1.0,
+     "council of the european union": 0.5
+    },
+    "total": 1.5,
+    "need": 7.25,
+    "in_headline": true,
+    "title": "Russian missile attack on Kharkiv kills 3, injures at least 15 including rescuer"
+   },
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "united states": 2.0,
+     "trump": 1.0
+    },
+    "total": 3.0,
+    "need": 7.25,
+    "in_headline": true,
+    "title": "Russian missile attack on Kharkiv kills 3, injures at least 15 including rescuer"
+   },
+   "nato": {
+    "class": "below_support",
+    "holders": {
+     "nato": 1.0
+    },
+    "total": 1.0,
+    "need": 7.25,
+    "in_headline": true,
+    "title": "Russian missile attack on Kharkiv kills 3, injures at least 15 including rescuer"
+   }
+  },
+  "408": {
+   "united kingdom": {
+    "class": "below_support",
+    "holders": {
+     "united kingdom": 6.5
+    },
+    "total": 6.5,
+    "need": 6.75,
+    "in_headline": true,
+    "title": "Joint Statement on the United Kingdom’s Attribution of Iran’s Involvement in Attempted Terrorist Attack at RAF Fairford"
+   },
+   "russia": {
+    "class": "below_support",
+    "holders": {
+     "russia": 2.0
+    },
+    "total": 2.0,
+    "need": 6.75,
+    "in_headline": true,
+    "title": "Joint Statement on the United Kingdom’s Attribution of Iran’s Involvement in Attempted Terrorist Attack at RAF Fairford"
+   },
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "united states": 1.5,
+     "donald trump": 3.0
+    },
+    "total": 4.5,
+    "need": 6.75,
+    "in_headline": true,
+    "title": "Joint Statement on the United Kingdom’s Attribution of Iran’s Involvement in Attempted Terrorist Attack at RAF Fairford"
+   }
+  },
+  "410": {
+   "russia": {
+    "class": "below_support",
+    "holders": {
+     "russia": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Poland reports arrests of 2 Turkish citizens in Germany in connection with Starlink station fire last month"
+   }
+  },
+  "414": {
+   "united nations": {
+    "class": "below_support",
+    "holders": {
+     "world food programme": 1.0,
+     "unicef": 0.0
+    },
+    "total": 1.0,
+    "need": 4.0,
+    "in_headline": true,
+    "title": "Especial BBC: el desértico campo de batalla donde se libra una guerra con consecuencias globales"
+   }
+  },
+  "416": {
+   "ukraine": {
+    "class": "below_support",
+    "holders": {
+     "zelensky": 1.0,
+     "zelenskyy": 1.0
+    },
+    "total": 2.0,
+    "need": 18.5,
+    "in_headline": true,
+    "title": "Trump faces growing backlash over plans to import diesel from Russia"
+   },
+   "united kingdom": {
+    "class": "below_support",
+    "holders": {
+     "united kingdom": 1.5
+    },
+    "total": 1.5,
+    "need": 18.5,
+    "in_headline": true,
+    "title": "Trump faces growing backlash over plans to import diesel from Russia"
+   },
+   "european union": {
+    "class": "below_support",
+    "holders": {
+     "european union": 1.0
+    },
+    "total": 1.0,
+    "need": 18.5,
+    "in_headline": true,
+    "title": "Trump faces growing backlash over plans to import diesel from Russia"
+   }
+  },
+  "418": {
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "us treasury": 0.0,
+     "united states": 0.5
+    },
+    "total": 0.5,
+    "need": 4.5,
+    "in_headline": false,
+    "title": "IMF projects Indias growth at 7% in FY27 and FY28, flags fragile global outlook"
+   }
+  },
+  "419": {
+   "russia": {
+    "class": "below_support",
+    "holders": {
+     "russia": 4.5
+    },
+    "total": 4.5,
+    "need": 10.0,
+    "in_headline": true,
+    "title": "Bulgaria rescata a la tripulación de un buque atacado con drones en el mar Negro y convoca a embajadora rusa"
+   },
+   "european union": {
+    "class": "below_support",
+    "holders": {
+     "european commission": 0.5,
+     "european union": 1.0
+    },
+    "total": 1.5,
+    "need": 10.0,
+    "in_headline": true,
+    "title": "Bulgaria rescata a la tripulación de un buque atacado con drones en el mar Negro y convoca a embajadora rusa"
+   },
+   "ukraine": {
+    "class": "below_support",
+    "holders": {
+     "ukraine": 3.0
+    },
+    "total": 3.0,
+    "need": 10.0,
+    "in_headline": true,
+    "title": "Bulgaria rescata a la tripulación de un buque atacado con drones en el mar Negro y convoca a embajadora rusa"
+   },
+   "romania": {
+    "class": "below_support",
+    "holders": {
+     "romania": 2.5
+    },
+    "total": 2.5,
+    "need": 10.0,
+    "in_headline": true,
+    "title": "Bulgaria rescata a la tripulación de un buque atacado con drones en el mar Negro y convoca a embajadora rusa"
+   }
+  },
+  "421": {
+   "uruguay": {
+    "class": "below_support",
+    "holders": {
+     "uruguay": 1.0
+    },
+    "total": 1.0,
+    "need": 2.75,
+    "in_headline": true,
+    "title": "Viaje del papa León XIV a la Argentina: la Iglesia mantiene la esperanza de que venga pese a su operación"
+   }
+  },
+  "423": {
+   "france": {
+    "class": "other",
+    "holders": {
+     "france": 8.0,
+     "emmanuel macron": 2.5
+    },
+    "total": 10.5,
+    "need": 7.25,
+    "in_headline": true,
+    "title": "Francia, la procura: \"Sangue freddo\" del personale scolastico che ha disarmato l'adolescente"
+   },
+   "sweden": {
+    "class": "below_support",
+    "holders": {
+     "sweden": 1.0
+    },
+    "total": 1.0,
+    "need": 7.25,
+    "in_headline": true,
+    "title": "Francia, la procura: \"Sangue freddo\" del personale scolastico che ha disarmato l'adolescente"
+   }
+  },
+  "425": {
+   "democratic republic of the congo": {
+    "class": "below_support",
+    "holders": {
+     "democratic republic of the congo": 1.0
+    },
+    "total": 1.0,
+    "need": 3.75,
+    "in_headline": true,
+    "title": "DR Congo’s former president Kabila to lead new movement with M23 rebels"
+   }
+  },
+  "426": {
+   "ukraine": {
+    "class": "below_support",
+    "holders": {
+     "zelenskyy": 1.0
+    },
+    "total": 1.0,
+    "need": 7.75,
+    "in_headline": true,
+    "title": "Pope Leo to enter hospital on Tuesday for surgery on lung nodule this week"
+   },
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "united states": 0.5
+    },
+    "total": 0.5,
+    "need": 7.75,
+    "in_headline": false,
+    "title": "Pope Leo to enter hospital on Tuesday for surgery on lung nodule this week"
+   }
+  },
+  "428": {
+   "european union": {
+    "class": "split_support",
+    "holders": {
+     "brussels": 0.0,
+     "european parliament": 1.0,
+     "european union": 2.0,
+     "european council": 2.0,
+     "european commission": 1.5
+    },
+    "total": 6.5,
+    "need": 3.5,
+    "in_headline": true,
+    "title": "Media advisory - General Affairs Council and accession conferences with Albania, the Republic of Moldova and Ukraine of "
+   }
+  },
+  "430": {
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "united states": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Dos estadounidenses ganan el Nobel de Economía por su innovador modelo que ayuda a gobiernos y bancos centrales de todo "
+   }
+  },
+  "432": {
+   "european union": {
+    "class": "below_support",
+    "holders": {
+     "european union": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": false,
+    "title": "Paris Motor Show kicks off as China-EU rivalry heats up"
+   }
+  },
+  "437": {
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "united states": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "US archbishop says Catholics in army should not participate in firing squad"
+   }
+  },
+  "439": {
+   "nicaragua": {
+    "class": "below_support",
+    "holders": {
+     "nicaragua": 1.0
+    },
+    "total": 1.0,
+    "need": 8.75,
+    "in_headline": true,
+    "title": "Nicaragua, il Papa ha ricevuto in Vaticano il presidente dei vescovi Herrera Gutiérrez"
+   },
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "donald trump": 5.5,
+     "united states": 1.0
+    },
+    "total": 6.5,
+    "need": 8.75,
+    "in_headline": true,
+    "title": "Nicaragua, il Papa ha ricevuto in Vaticano il presidente dei vescovi Herrera Gutiérrez"
+   },
+   "russia": {
+    "class": "below_support",
+    "holders": {
+     "putin": 1.5,
+     "kremlin": 1.0
+    },
+    "total": 2.5,
+    "need": 8.75,
+    "in_headline": true,
+    "title": "Nicaragua, il Papa ha ricevuto in Vaticano il presidente dei vescovi Herrera Gutiérrez"
+   }
+  },
+  "441": {
+   "venezuela": {
+    "class": "below_support",
+    "holders": {
+     "venezuela": 1.0
+    },
+    "total": 1.0,
+    "need": 18.5,
+    "in_headline": true,
+    "title": "L'uragano Simon verso Mazatlán, due vittime in Messico"
+   },
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "united states": 0.5,
+     "donald trump": 3.0
+    },
+    "total": 3.5,
+    "need": 18.5,
+    "in_headline": true,
+    "title": "L'uragano Simon verso Mazatlán, due vittime in Messico"
+   },
+   "italy": {
+    "class": "below_support",
+    "holders": {
+     "italy": 2.0
+    },
+    "total": 2.0,
+    "need": 18.5,
+    "in_headline": true,
+    "title": "L'uragano Simon verso Mazatlán, due vittime in Messico"
+   }
+  },
+  "444": {
+   "russia": {
+    "class": "below_support",
+    "holders": {
+     "putin": 1.0,
+     "russia": 1.5
+    },
+    "total": 2.5,
+    "need": 3.5,
+    "in_headline": true,
+    "title": "Zelenskyy risks split with Trump as Kyiv resists US pressure | Jefferson City News Tribune"
+   }
+  },
+  "446": {
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "united states": 0.5,
+     "donald trump": 0.0,
+     "washington": 0.0
+    },
+    "total": 0.5,
+    "need": 1.5,
+    "in_headline": false,
+    "title": "Usa, blitz del Dipartimento Sicurezza interna nella casa della deputata dem Ilhan Omar"
+   }
+  },
+  "447": {
+   "iran": {
+    "class": "below_support",
+    "holders": {
+     "iran": 1.0,
+     "tehran": 0.0
+    },
+    "total": 1.0,
+    "need": 6.5,
+    "in_headline": true,
+    "title": "Elon Musk se convirtió en el mayor donante en la elección legislativa de Estados Unidos con un objetivo: salvar a los re"
+   }
+  },
+  "448": {
+   "israel": {
+    "class": "below_support",
+    "holders": {
+     "netanyahu": 3.0,
+     "israel": 1.0
+    },
+    "total": 4.0,
+    "need": 8.25,
+    "in_headline": true,
+    "title": "Una treintena de países respalda la acusación del Reino Unido contra Irán por el intento de atentado en la base de Fairf"
+   }
+  },
+  "449": {
+   "brazil": {
+    "class": "below_support",
+    "holders": {
+     "brazil": 101.5
+    },
+    "total": 101.5,
+    "need": 128.75,
+    "in_headline": true,
+    "title": "Brasile, Flávio Bolsonaro annuncia visita al padre dopo tre mesi di stop"
+   },
+   "united kingdom": {
+    "class": "below_support",
+    "holders": {
+     "united kingdom": 1.0
+    },
+    "total": 1.0,
+    "need": 128.75,
+    "in_headline": true,
+    "title": "Brasile, Flávio Bolsonaro annuncia visita al padre dopo tre mesi di stop"
+   },
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "united states": 20.5,
+     "donald trump": 12.0,
+     "us congress": 0.0,
+     "marco rubio": 1.0,
+     "washington": 0.0,
+     "us state department": 0.5,
+     "white house": 0.5,
+     "u.s. supreme court": 0.5
+    },
+    "total": 35.0,
+    "need": 128.75,
+    "in_headline": true,
+    "title": "Brasile, Flávio Bolsonaro annuncia visita al padre dopo tre mesi di stop"
+   },
+   "russia": {
+    "class": "below_support",
+    "holders": {
+     "russia": 0.5,
+     "putin": 1.0
+    },
+    "total": 1.5,
+    "need": 128.75,
+    "in_headline": true,
+    "title": "Brasile, Flávio Bolsonaro annuncia visita al padre dopo tre mesi di stop"
+   },
+   "ukraine": {
+    "class": "below_support",
+    "holders": {
+     "ukraine": 0.0,
+     "zelensky": 1.0
+    },
+    "total": 1.0,
+    "need": 128.75,
+    "in_headline": true,
+    "title": "Brasile, Flávio Bolsonaro annuncia visita al padre dopo tre mesi di stop"
+   },
+   "mexico": {
+    "class": "below_support",
+    "holders": {
+     "mexico": 2.0
+    },
+    "total": 2.0,
+    "need": 128.75,
+    "in_headline": true,
+    "title": "Brasile, Flávio Bolsonaro annuncia visita al padre dopo tre mesi di stop"
+   },
+   "united nations": {
+    "class": "below_support",
+    "holders": {
+     "united nations": 1.0
+    },
+    "total": 1.0,
+    "need": 128.75,
+    "in_headline": true,
+    "title": "Brasile, Flávio Bolsonaro annuncia visita al padre dopo tre mesi di stop"
+   },
+   "china": {
+    "class": "below_support",
+    "holders": {
+     "china": 0.0,
+     "beijing": 0.0,
+     "xi": 1.0
+    },
+    "total": 1.0,
+    "need": 128.75,
+    "in_headline": true,
+    "title": "Brasile, Flávio Bolsonaro annuncia visita al padre dopo tre mesi di stop"
+   }
+  },
+  "450": {
+   "france": {
+    "class": "below_support",
+    "holders": {
+     "france": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "French Navy intercepts Russian shadow fleet tanker in Indian Ocean"
+   },
+   "russia": {
+    "class": "below_support",
+    "holders": {
+     "russia": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "French Navy intercepts Russian shadow fleet tanker in Indian Ocean"
+   }
+  },
+  "451": {
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "united states": 0.0,
+     "washington": 0.0,
+     "u.s. army": 2.0
+    },
+    "total": 2.0,
+    "need": 4.0,
+    "in_headline": true,
+    "title": "Systems to counter missiles and drones take centre stage at US defence expo"
+   },
+   "israel": {
+    "class": "below_support",
+    "holders": {
+     "israel": 1.0
+    },
+    "total": 1.0,
+    "need": 4.0,
+    "in_headline": true,
+    "title": "Systems to counter missiles and drones take centre stage at US defence expo"
+   }
+  },
+  "453": {
+   "palestine": {
+    "class": "below_support",
+    "holders": {
+     "palestine": 1.5
+    },
+    "total": 1.5,
+    "need": 4.25,
+    "in_headline": true,
+    "title": "Security Council LIVE: Syria’s fragile transition – economic strain, Israeli incursions and progress towards elections"
+   },
+   "united nations": {
+    "class": "below_support",
+    "holders": {
+     "united nations": 0.5,
+     "un security council": 0.0,
+     "unicef": 0.5
+    },
+    "total": 1.0,
+    "need": 4.25,
+    "in_headline": false,
+    "title": "Security Council LIVE: Syria’s fragile transition – economic strain, Israeli incursions and progress towards elections"
+   }
+  },
+  "458": {
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "u.s. army": 1.0,
+     "united states": 0.0
+    },
+    "total": 1.0,
+    "need": 1.75,
+    "in_headline": true,
+    "title": "US Army to stand up command for unmanned and autonomous warfare"
+   }
+  },
+  "460": {
+   "russia": {
+    "class": "below_support",
+    "holders": {
+     "russia": 1.5,
+     "moscow": 0.0,
+     "kremlin": 0.0
+    },
+    "total": 1.5,
+    "need": 6.75,
+    "in_headline": true,
+    "title": "Importazioni di tequila, l'Italia è sesta al mondo"
+   },
+   "ukraine": {
+    "class": "below_support",
+    "holders": {
+     "ukraine": 0.0,
+     "zelensky": 1.0
+    },
+    "total": 1.0,
+    "need": 6.75,
+    "in_headline": true,
+    "title": "Importazioni di tequila, l'Italia è sesta al mondo"
+   },
+   "france": {
+    "class": "below_support",
+    "holders": {
+     "france": 1.0
+    },
+    "total": 1.0,
+    "need": 6.75,
+    "in_headline": true,
+    "title": "Importazioni di tequila, l'Italia è sesta al mondo"
+   }
+  },
+  "462": {
+   "mexico": {
+    "class": "below_support",
+    "holders": {
+     "mexico": 1.0
+    },
+    "total": 1.0,
+    "need": 9.25,
+    "in_headline": true,
+    "title": "El Departamento de Justicia de Estados Unidos registra la vivienda de la legisladora progresista Ilhan Omar"
+   },
+   "united nations": {
+    "class": "below_support",
+    "holders": {
+     "onu": 0.0,
+     "united nations": 0.0,
+     "international atomic energy agency": 0.5
+    },
+    "total": 0.5,
+    "need": 9.25,
+    "in_headline": false,
+    "title": "El Departamento de Justicia de Estados Unidos registra la vivienda de la legisladora progresista Ilhan Omar"
+   }
+  },
+  "468": {
+   "united nations": {
+    "class": "split_support",
+    "holders": {
+     "united nations": 1.0,
+     "un security council": 1.0
+    },
+    "total": 2.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Global action to end violence against children is lagging behind risks: UN expert"
+   }
+  },
+  "475": {
+   "european union": {
+    "class": "below_support",
+    "holders": {
+     "european union": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Less than half of EU citizens support Ukraine's quick accession, poll shows"
+   }
+  },
+  "479": {
+   "nato": {
+    "class": "headline_gate",
+    "holders": {
+     "nato": 1.0
+    },
+    "total": 1.0,
+    "need": 1.0,
+    "in_headline": false,
+    "title": "Amid unease in Europe, NATO SACEUR bullish on ‘block, blunt, break’ theory of victory"
+   }
+  },
+  "480": {
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "united states": 1.0
+    },
+    "total": 1.0,
+    "need": 2.25,
+    "in_headline": false,
+    "title": "Saudi man charged with planting 'sophisticated' recording device in OpenAI office"
+   }
+  },
+  "483": {
+   "united states": {
+    "class": "other",
+    "holders": {
+     "marco rubio": 1.5,
+     "united states": 1.0
+    },
+    "total": 2.5,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Secretary of State Rubio’s Call with UK Foreign Secretary Miliband"
+   },
+   "united kingdom": {
+    "class": "below_support",
+    "holders": {
+     "united kingdom": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Secretary of State Rubio’s Call with UK Foreign Secretary Miliband"
+   },
+   "india": {
+    "class": "below_support",
+    "holders": {
+     "india": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Secretary of State Rubio’s Call with UK Foreign Secretary Miliband"
+   }
+  },
+  "488": {
+   "united kingdom": {
+    "class": "below_support",
+    "holders": {
+     "united kingdom": 0.5
+    },
+    "total": 0.5,
+    "need": 1.0,
+    "in_headline": false,
+    "title": "Capo 007 Gb, 'Ia moltiplica minacce, anche per nuove armi biologiche'"
+   }
+  },
+  "490": {
+   "democratic republic of the congo": {
+    "class": "below_support",
+    "holders": {
+     "democratic republic of the congo": 4.0
+    },
+    "total": 4.0,
+    "need": 4.25,
+    "in_headline": true,
+    "title": "DR Congo Ebola cases pass 9,000 as efforts to curb transmission falter"
+   },
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "united states": 1.0
+    },
+    "total": 1.0,
+    "need": 4.25,
+    "in_headline": true,
+    "title": "DR Congo Ebola cases pass 9,000 as efforts to curb transmission falter"
+   },
+   "united nations": {
+    "class": "below_support",
+    "holders": {
+     "world health organization": 1.0,
+     "united nations": 0.0
+    },
+    "total": 1.0,
+    "need": 4.25,
+    "in_headline": false,
+    "title": "DR Congo Ebola cases pass 9,000 as efforts to curb transmission falter"
+   }
+  },
+  "491": {
+   "china": {
+    "class": "headline_gate",
+    "holders": {
+     "china": 0.5,
+     "wang yi": 0.5
+    },
+    "total": 1.0,
+    "need": 1.0,
+    "in_headline": false,
+    "title": "China, Russia deepen maritime and Arctic logistics ties to secure energy supply"
+   }
+  },
+  "497": {
+   "israel": {
+    "class": "below_support",
+    "holders": {
+     "israel": 1.0
+    },
+    "total": 1.0,
+    "need": 3.25,
+    "in_headline": true,
+    "title": "China chip exports jump 136% to US$45b as AI frenzy jacks up prices"
+   }
+  },
+  "502": {
+   "european union": {
+    "class": "split_support",
+    "holders": {
+     "brussels": 0.0,
+     "european commission": 0.5,
+     "european union": 1.0
+    },
+    "total": 1.5,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Commission disburses €2.86 billion to Ukraine for drones, missiles and urgent battlefield needs"
+   }
+  },
+  "506": {
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "united states": 0.5,
+     "donald trump": 2.5
+    },
+    "total": 3.0,
+    "need": 4.5,
+    "in_headline": true,
+    "title": "Hormuz ships pummeled with worst attacks of the Iran War — as oil flows plummet"
+   }
+  },
+  "509": {
+   "united kingdom": {
+    "class": "below_support",
+    "holders": {
+     "united kingdom": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "UK sanctions Dutch businessman exposed by Kyiv Independent for shipping EU machinery to Russian missile suppliers"
+   }
+  },
+  "512": {
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "trump": 0.0,
+     "united states": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Axios: Netanyahu discussed joint strike on Iran with Trump before Israeli election"
+   }
+  },
+  "514": {
+   "israel": {
+    "class": "below_support",
+    "holders": {
+     "benjamin netanyahu": 12.0,
+     "israel defense forces": 0.0,
+     "idf": 0.0
+    },
+    "total": 12.0,
+    "need": 67.5,
+    "in_headline": true,
+    "title": "Despite long history with Netanyahu, Trump hedges as Israel vote nears"
+   },
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "donald trump": 25.5,
+     "united states": 7.5,
+     "white house": 0.0,
+     "pete hegseth": 7.5,
+     "us department of defense": 0.5,
+     "u.s. central command": 0.0,
+     "federal reserve": 1.0
+    },
+    "total": 42.0,
+    "need": 67.5,
+    "in_headline": true,
+    "title": "Despite long history with Netanyahu, Trump hedges as Israel vote nears"
+   },
+   "palestine": {
+    "class": "below_support",
+    "holders": {
+     "palestine": 1.5
+    },
+    "total": 1.5,
+    "need": 67.5,
+    "in_headline": true,
+    "title": "Despite long history with Netanyahu, Trump hedges as Israel vote nears"
+   },
+   "italy": {
+    "class": "below_support",
+    "holders": {
+     "italy": 3.0
+    },
+    "total": 3.0,
+    "need": 67.5,
+    "in_headline": true,
+    "title": "Despite long history with Netanyahu, Trump hedges as Israel vote nears"
+   }
+  },
+  "515": {
+   "france": {
+    "class": "below_support",
+    "holders": {
+     "emmanuel macron": 1.5,
+     "france": 2.5
+    },
+    "total": 4.0,
+    "need": 6.25,
+    "in_headline": true,
+    "title": "Colombia, governo De la Espriella chiede di escludere la riforma rurale da mandato Onu"
+   }
+  },
+  "517": {
+   "european union": {
+    "class": "split_support",
+    "holders": {
+     "european commission": 0.5,
+     "brussels": 0.0,
+     "european union": 1.0
+    },
+    "total": 1.5,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Questions and answers on the proposal for amendment to the EU Methane Regulation"
+   }
+  },
+  "525": {
+   "united kingdom": {
+    "class": "below_support",
+    "holders": {
+     "united kingdom": 1.0
+    },
+    "total": 1.0,
+    "need": 2.0,
+    "in_headline": true,
+    "title": "US Army hackathon sets backdrop for an AUSA focused on autonomy"
+   }
+  },
+  "526": {
+   "iran": {
+    "class": "below_support",
+    "holders": {
+     "irgc": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Burning Container Ship Sinks In Strait Of Hormuz, As IRGC Proclaims 5 Or 6 Vessels Targeted Nightly"
+   }
+  },
+  "536": {
+   "ukraine": {
+    "class": "below_support",
+    "holders": {
+     "zelensky": 1.0
+    },
+    "total": 1.0,
+    "need": 3.25,
+    "in_headline": true,
+    "title": "Lula scrive una lettera agli evangelici a difesa della famiglia"
+   },
+   "france": {
+    "class": "below_support",
+    "holders": {
+     "france": 1.0,
+     "emmanuel macron": 0.5
+    },
+    "total": 1.5,
+    "need": 3.25,
+    "in_headline": true,
+    "title": "Lula scrive una lettera agli evangelici a difesa della famiglia"
+   },
+   "germany": {
+    "class": "below_support",
+    "holders": {
+     "germany": 1.0
+    },
+    "total": 1.0,
+    "need": 3.25,
+    "in_headline": true,
+    "title": "Lula scrive una lettera agli evangelici a difesa della famiglia"
+   },
+   "european union": {
+    "class": "split_support",
+    "holders": {
+     "european union": 3.0,
+     "european commission": 0.5,
+     "brussels": 0.0,
+     "european council": 0.5
+    },
+    "total": 4.0,
+    "need": 3.25,
+    "in_headline": true,
+    "title": "Lula scrive una lettera agli evangelici a difesa della famiglia"
+   }
+  },
+  "538": {
+   "haiti": {
+    "class": "headline_gate",
+    "holders": {
+     "haiti": 4.0
+    },
+    "total": 4.0,
+    "need": 2.0,
+    "in_headline": false,
+    "title": "Haiti Continent Guide, Role, Weight and Alliances"
+   },
+   "russia": {
+    "class": "below_support",
+    "holders": {
+     "russia": 1.0
+    },
+    "total": 1.0,
+    "need": 2.0,
+    "in_headline": true,
+    "title": "Haiti Continent Guide, Role, Weight and Alliances"
+   },
+   "china": {
+    "class": "below_support",
+    "holders": {
+     "china": 1.0
+    },
+    "total": 1.0,
+    "need": 2.0,
+    "in_headline": true,
+    "title": "Haiti Continent Guide, Role, Weight and Alliances"
+   }
+  },
+  "541": {
+   "vatican": {
+    "class": "below_support",
+    "holders": {
+     "vatican": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Vatican at UN: Poverty is the greatest challenge facing our world today"
+   }
+  },
+  "543": {
+   "ukraine": {
+    "class": "below_support",
+    "holders": {
+     "ukraine": 0.5
+    },
+    "total": 0.5,
+    "need": 1.0,
+    "in_headline": false,
+    "title": "El juicio en Alemania sobre el sabotaje del gasoducto Nord Stream decidirá si fue un crimen de guerra"
+   }
+  },
+  "551": {
+   "ukraine": {
+    "class": "below_support",
+    "holders": {
+     "zelensky": 1.0,
+     "ukraine": 0.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Identificato l'uomo precipitato dalle montagne russe: verifiche sui dispositivi di sicurezza"
+   }
+  },
+  "556": {
+   "australia": {
+    "class": "below_support",
+    "holders": {
+     "australia": 2.0
+    },
+    "total": 2.0,
+    "need": 7.5,
+    "in_headline": true,
+    "title": "Australia will do anything to stop US execution being shown online, says Albanese"
+   }
+  },
+  "557": {
+   "singapore": {
+    "class": "below_support",
+    "holders": {
+     "singapore": 2.0
+    },
+    "total": 2.0,
+    "need": 4.25,
+    "in_headline": true,
+    "title": "Sky turns orange as wildfires rage across Indonesia"
+   },
+   "asean": {
+    "class": "below_support",
+    "holders": {
+     "asean": 1.0
+    },
+    "total": 1.0,
+    "need": 4.25,
+    "in_headline": true,
+    "title": "Sky turns orange as wildfires rage across Indonesia"
+   }
+  },
+  "559": {
+   "united states": {
+    "class": "headline_gate",
+    "holders": {
+     "trump": 3.0
+    },
+    "total": 3.0,
+    "need": 1.5,
+    "in_headline": false,
+    "title": "President Trump Returns to Arizona with a Record of Results: Tax Relief, Jobs, and Border Security"
+   }
+  },
+  "563": {
+   "france": {
+    "class": "below_support",
+    "holders": {
+     "france": 1.0
+    },
+    "total": 1.0,
+    "need": 3.75,
+    "in_headline": true,
+    "title": "Pakistan Is Treating Every Grievance as Terrorism, and Its Failing – The Diplomat"
+   }
+  },
+  "566": {
+   "united nations": {
+    "class": "below_support",
+    "holders": {
+     "wfp": 0.0,
+     "world food programme": 1.5,
+     "united nations": 0.0
+    },
+    "total": 1.5,
+    "need": 4.5,
+    "in_headline": true,
+    "title": "Emergency, a Gaza entro dicembre 1,4 milioni in grave insicurezza alimentare"
+   }
+  },
+  "569": {
+   "israel": {
+    "class": "below_support",
+    "holders": {
+     "israel": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": false,
+    "title": "Britains Breach With Israel - OpEd - Eurasia Review"
+   }
+  },
+  "571": {
+   "india": {
+    "class": "below_support",
+    "holders": {
+     "india": 1.0
+    },
+    "total": 1.0,
+    "need": 1.75,
+    "in_headline": true,
+    "title": "Ship catches fire in Romania’s waters amid rising attacks in the Black Sea"
+   }
+  },
+  "581": {
+   "ukraine": {
+    "class": "below_support",
+    "holders": {
+     "zelensky": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Finlandia, Danimarca e Svezia a Costa, 'non indebolire sistema Ets'"
+   }
+  },
+  "584": {
+   "nato": {
+    "class": "below_support",
+    "holders": {
+     "nato": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "El capitán de un buque en aguas territoriales rumanas en el mar Negro alerta de un ataque con dron"
+   }
+  },
+  "586": {
+   "russia": {
+    "class": "below_support",
+    "holders": {
+     "russia": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "EU Criticism of Sanctions Rises Over Energy Dependency and Domestic Costs"
+   }
+  },
+  "597": {
+   "afghanistan": {
+    "class": "below_support",
+    "holders": {
+     "afghanistan": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "UN food rights expert warns famine is becoming normalised as hunger is used as a weapon of war"
+   }
+  },
+  "603": {
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "trump": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Justice Department threatens to sue California over alleged noncitizen voters; LA County sent list"
+   }
+  },
+  "607": {
+   "european union": {
+    "class": "split_support",
+    "holders": {
+     "european council": 1.0,
+     "european union": 1.0
+    },
+    "total": 2.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Press release - Metsola: We cannot agree on Europe's ambitions and cut the means to achieve them"
+   }
+  },
+  "608": {
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "united states": 1.5
+    },
+    "total": 1.5,
+    "need": 3.75,
+    "in_headline": true,
+    "title": "Two hospitalised after shooting at Oregon elementary school; gunman dead"
+   }
+  },
+  "615": {
+   "ukraine": {
+    "class": "below_support",
+    "holders": {
+     "ukraine": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Incendi in Amazzonia brasiliana, a Manaus scuole chiuse per il fumo"
+   },
+   "mexico": {
+    "class": "below_support",
+    "holders": {
+     "mexico": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Incendi in Amazzonia brasiliana, a Manaus scuole chiuse per il fumo"
+   },
+   "brazil": {
+    "class": "below_support",
+    "holders": {
+     "brazil": 0.5
+    },
+    "total": 0.5,
+    "need": 1.5,
+    "in_headline": false,
+    "title": "Incendi in Amazzonia brasiliana, a Manaus scuole chiuse per il fumo"
+   }
+  },
+  "617": {
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "united states": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "God, guns and grievances: Albertas separatists make their case for independence"
+   }
+  },
+  "619": {
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "rubio": 1.0,
+     "united states": 0.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Studenti e docenti ancora in piazza in Argentina per il finanziamento delle Università"
+   }
+  },
+  "621": {
+   "palestine": {
+    "class": "below_support",
+    "holders": {
+     "palestine": 0.5
+    },
+    "total": 0.5,
+    "need": 1.0,
+    "in_headline": false,
+    "title": "‘Our works are next to each other’: Art bridges Gaza and West Bank"
+   }
+  },
+  "626": {
+   "china": {
+    "class": "below_support",
+    "holders": {
+     "china": 3.0
+    },
+    "total": 3.0,
+    "need": 47.5,
+    "in_headline": true,
+    "title": "ONE CYRS VIEW: Demonstrations in France have international impact"
+   },
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "donald trump": 4.0,
+     "united states": 1.0
+    },
+    "total": 5.0,
+    "need": 47.5,
+    "in_headline": true,
+    "title": "ONE CYRS VIEW: Demonstrations in France have international impact"
+   },
+   "saudi arabia": {
+    "class": "below_support",
+    "holders": {
+     "saudi arabia": 1.5,
+     "riyadh": 0.0
+    },
+    "total": 1.5,
+    "need": 47.5,
+    "in_headline": true,
+    "title": "ONE CYRS VIEW: Demonstrations in France have international impact"
+   }
+  },
+  "630": {
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "united states": 6.5,
+     "marco rubio": 0.5
+    },
+    "total": 7.0,
+    "need": 15.25,
+    "in_headline": true,
+    "title": "Settlers attack Palestinian mosque near occupied East Jerusalem"
+   },
+   "european union": {
+    "class": "below_support",
+    "holders": {
+     "european union": 1.0
+    },
+    "total": 1.0,
+    "need": 15.25,
+    "in_headline": true,
+    "title": "Settlers attack Palestinian mosque near occupied East Jerusalem"
+   },
+   "france": {
+    "class": "below_support",
+    "holders": {
+     "france": 2.0
+    },
+    "total": 2.0,
+    "need": 15.25,
+    "in_headline": true,
+    "title": "Settlers attack Palestinian mosque near occupied East Jerusalem"
+   },
+   "united kingdom": {
+    "class": "below_support",
+    "holders": {
+     "united kingdom": 1.0
+    },
+    "total": 1.0,
+    "need": 15.25,
+    "in_headline": true,
+    "title": "Settlers attack Palestinian mosque near occupied East Jerusalem"
+   },
+   "italy": {
+    "class": "below_support",
+    "holders": {
+     "italy": 1.0
+    },
+    "total": 1.0,
+    "need": 15.25,
+    "in_headline": true,
+    "title": "Settlers attack Palestinian mosque near occupied East Jerusalem"
+   }
+  },
+  "636": {
+   "israel": {
+    "class": "below_support",
+    "holders": {
+     "israel": 0.5
+    },
+    "total": 0.5,
+    "need": 2.5,
+    "in_headline": false,
+    "title": "El Gobierno palestino condena el incendio de una mezquita en Cisjordania a manos de colonos israelíes"
+   }
+  },
+  "639": {
+   "france": {
+    "class": "below_support",
+    "holders": {
+     "france": 32.5,
+     "emmanuel macron": 32.5
+    },
+    "total": 65.0,
+    "need": 65.75,
+    "in_headline": true,
+    "title": "Francia vuelve a permitir el uso de granadas aturdidoras de cara a las protestas de este sábado"
+   },
+   "italy": {
+    "class": "below_support",
+    "holders": {
+     "italy": 17.5
+    },
+    "total": 17.5,
+    "need": 65.75,
+    "in_headline": true,
+    "title": "Francia vuelve a permitir el uso de granadas aturdidoras de cara a las protestas de este sábado"
+   },
+   "venezuela": {
+    "class": "below_support",
+    "holders": {
+     "venezuela": 2.5
+    },
+    "total": 2.5,
+    "need": 65.75,
+    "in_headline": true,
+    "title": "Francia vuelve a permitir el uso de granadas aturdidoras de cara a las protestas de este sábado"
+   },
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "united states": 7.0,
+     "donald trump": 24.5,
+     "white house": 1.5,
+     "marco rubio": 1.0,
+     "cia": 0.0,
+     "washington": 0.0
+    },
+    "total": 34.0,
+    "need": 65.75,
+    "in_headline": true,
+    "title": "Francia vuelve a permitir el uso de granadas aturdidoras de cara a las protestas de este sábado"
+   },
+   "israel": {
+    "class": "below_support",
+    "holders": {
+     "netanyahu": 0.0,
+     "israel": 1.0
+    },
+    "total": 1.0,
+    "need": 65.75,
+    "in_headline": true,
+    "title": "Francia vuelve a permitir el uso de granadas aturdidoras de cara a las protestas de este sábado"
+   },
+   "spain": {
+    "class": "below_support",
+    "holders": {
+     "spain": 1.0
+    },
+    "total": 1.0,
+    "need": 65.75,
+    "in_headline": true,
+    "title": "Francia vuelve a permitir el uso de granadas aturdidoras de cara a las protestas de este sábado"
+   },
+   "russia": {
+    "class": "below_support",
+    "holders": {
+     "russia": 1.0,
+     "moscow": 0.0
+    },
+    "total": 1.0,
+    "need": 65.75,
+    "in_headline": false,
+    "title": "Francia vuelve a permitir el uso de granadas aturdidoras de cara a las protestas de este sábado"
+   }
+  },
+  "646": {
+   "taiwan": {
+    "class": "below_support",
+    "holders": {
+     "taiwan": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "PM Briceño Says China Sanctions Will Strengthen Belizes Support for Taiwan - Love FM Belize News & Music Power"
+   },
+   "belize": {
+    "class": "below_support",
+    "holders": {
+     "belize": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": false,
+    "title": "PM Briceño Says China Sanctions Will Strengthen Belizes Support for Taiwan - Love FM Belize News & Music Power"
+   }
+  },
+  "650": {
+   "russia": {
+    "class": "below_support",
+    "holders": {
+     "russia": 1.0,
+     "kremlin": 0.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "War in Ukraine: Kyiv residents decry shortage of bomb shelters"
+   }
+  },
+  "659": {
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "rubio": 0.0,
+     "united states": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Cisgiordania, ancora violenze dei coloni sulla raccolta delle olive, ferita una giornalista del WP"
+   }
+  },
+  "663": {
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "donald trump": 5.0,
+     "united states": 2.0
+    },
+    "total": 7.0,
+    "need": 14.0,
+    "in_headline": true,
+    "title": "In calo il traffico su Truth Social, 'meno 30% in un anno'"
+   },
+   "italy": {
+    "class": "below_support",
+    "holders": {
+     "italy": 1.0
+    },
+    "total": 1.0,
+    "need": 14.0,
+    "in_headline": true,
+    "title": "In calo il traffico su Truth Social, 'meno 30% in un anno'"
+   }
+  },
+  "667": {
+   "guatemala": {
+    "class": "below_support",
+    "holders": {
+     "guatemala": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Asesinato de destacado exfiscal anticorrupción Juan Francisco Solórzano sacude a Guatemala"
+   }
+  },
+  "669": {
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "donald trump": 2.5,
+     "white house": 0.0
+    },
+    "total": 2.5,
+    "need": 2.75,
+    "in_headline": true,
+    "title": "Media canadesi, 'almeno 7 morti nell'incendio nella base militare'"
+   }
+  },
+  "670": {
+   "united kingdom": {
+    "class": "below_support",
+    "holders": {
+     "united kingdom": 1.0
+    },
+    "total": 1.0,
+    "need": 10.25,
+    "in_headline": true,
+    "title": "Canadá confirma víctimas mortales por un gran incendio en la base militar de Alberta"
+   }
+  },
+  "675": {
+   "iran": {
+    "class": "below_support",
+    "holders": {
+     "iran": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Netanyahu, 'cautela su violenza a diplomatici, servono prove inconfutabili'"
+   }
+  },
+  "677": {
+   "egypt": {
+    "class": "below_support",
+    "holders": {
+     "egypt": 0.5
+    },
+    "total": 0.5,
+    "need": 1.5,
+    "in_headline": false,
+    "title": "Egypt to provide ‘necessary’ support to Saudi Arabia amid Houthi attacks"
+   }
+  },
+  "680": {
+   "bulgaria": {
+    "class": "below_support",
+    "holders": {
+     "bulgaria": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Lithuania foils arson attack on Starlink equipment, suspects Russian involvement"
+   }
+  },
+  "684": {
+   "israel": {
+    "class": "below_support",
+    "holders": {
+     "israel": 1.5
+    },
+    "total": 1.5,
+    "need": 4.25,
+    "in_headline": true,
+    "title": "Gaza families fear food shortages as Israel halts commercial shipments"
+   },
+   "united nations": {
+    "class": "split_support",
+    "holders": {
+     "world food programme": 4.0,
+     "united nations": 4.0
+    },
+    "total": 8.0,
+    "need": 4.25,
+    "in_headline": true,
+    "title": "Gaza families fear food shortages as Israel halts commercial shipments"
+   },
+   "united kingdom": {
+    "class": "below_support",
+    "holders": {
+     "united kingdom": 1.0
+    },
+    "total": 1.0,
+    "need": 4.25,
+    "in_headline": true,
+    "title": "Gaza families fear food shortages as Israel halts commercial shipments"
+   }
+  },
+  "692": {
+   "israel": {
+    "class": "below_support",
+    "holders": {
+     "netanyahu": 1.0
+    },
+    "total": 1.0,
+    "need": 2.25,
+    "in_headline": true,
+    "title": "The kingmakers who could determine Israel’s election"
+   }
+  },
+  "693": {
+   "mali": {
+    "class": "below_support",
+    "holders": {
+     "mali": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Mali: Military Attacks On Civilians, Insurgent Abuses"
+   }
+  },
+  "694": {
+   "uzbekistan": {
+    "class": "below_support",
+    "holders": {
+     "uzbekistan": 2.0
+    },
+    "total": 2.0,
+    "need": 5.25,
+    "in_headline": true,
+    "title": "Secretary of State Marco Rubio Remarks to the Press"
+   },
+   "kazakhstan": {
+    "class": "below_support",
+    "holders": {
+     "kazakhstan": 1.0
+    },
+    "total": 1.0,
+    "need": 5.25,
+    "in_headline": true,
+    "title": "Secretary of State Marco Rubio Remarks to the Press"
+   },
+   "china": {
+    "class": "below_support",
+    "holders": {
+     "china": 1.0
+    },
+    "total": 1.0,
+    "need": 5.25,
+    "in_headline": true,
+    "title": "Secretary of State Marco Rubio Remarks to the Press"
+   }
+  },
+  "702": {
+   "rapid support forces": {
+    "class": "below_support",
+    "holders": {
+     "rapid support forces": 1.5
+    },
+    "total": 1.5,
+    "need": 7.75,
+    "in_headline": true,
+    "title": "Sudan army accused of drone strike on livestock market"
+   }
+  },
+  "704": {
+   "iran": {
+    "class": "below_support",
+    "holders": {
+     "iran": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Qatar to announce new regional military partnership"
+   }
+  },
+  "711": {
+   "ukraine": {
+    "class": "below_support",
+    "holders": {
+     "ukraine": 0.0,
+     "zelenskyy": 0.0,
+     "zelensky": 1.0
+    },
+    "total": 1.0,
+    "need": 3.25,
+    "in_headline": true,
+    "title": "Russian FM to visit Iran as Moscow looks to mediate in war"
+   }
+  },
+  "713": {
+   "japan": {
+    "class": "below_support",
+    "holders": {
+     "japan": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Cómo es la revolucionaria misión que busca traer un trozo de la mayor luna de Marte a la Tierra"
+   }
+  },
+  "714": {
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "united states": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Airman dies after rappelling accident at UTSA-Navy football game"
+   }
+  },
+  "719": {
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "united states": 4.0
+    },
+    "total": 4.0,
+    "need": 6.25,
+    "in_headline": true,
+    "title": "Florida Attorney General to Discuss Arrest Warrant for Raúl Castro at FIU on Monday"
+   },
+   "russia": {
+    "class": "below_support",
+    "holders": {
+     "russia": 1.0
+    },
+    "total": 1.0,
+    "need": 6.25,
+    "in_headline": true,
+    "title": "Florida Attorney General to Discuss Arrest Warrant for Raúl Castro at FIU on Monday"
+   },
+   "vietnam": {
+    "class": "below_support",
+    "holders": {
+     "vietnam": 1.0
+    },
+    "total": 1.0,
+    "need": 6.25,
+    "in_headline": true,
+    "title": "Florida Attorney General to Discuss Arrest Warrant for Raúl Castro at FIU on Monday"
+   }
+  },
+  "722": {
+   "united states": {
+    "class": "headline_gate",
+    "holders": {
+     "united states": 0.5,
+     "donald trump": 0.5,
+     "white house": 0.5
+    },
+    "total": 1.5,
+    "need": 1.5,
+    "in_headline": false,
+    "title": "First Lady Melania Trump Champions New U.S. Women’s Health Initiative"
+   }
+  },
+  "725": {
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "united states": 2.0
+    },
+    "total": 2.0,
+    "need": 3.5,
+    "in_headline": true,
+    "title": "EU invests over €390 million in 135 new climate and environment projects"
+   },
+   "china": {
+    "class": "below_support",
+    "holders": {
+     "china": 1.0
+    },
+    "total": 1.0,
+    "need": 3.5,
+    "in_headline": true,
+    "title": "EU invests over €390 million in 135 new climate and environment projects"
+   }
+  },
+  "727": {
+   "china": {
+    "class": "below_support",
+    "holders": {
+     "china": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Security Council, 10246th Meeting (AM) Haiti"
+   }
+  },
+  "746": {
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "united states": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Russian satellite stalked ICEYE spacecraft in potentially dangerous on-orbit maneuvers"
+   }
+  },
+  "747": {
+   "european union": {
+    "class": "split_support",
+    "holders": {
+     "european parliament": 0.5,
+     "european union": 1.0,
+     "european commission": 0.5
+    },
+    "total": 2.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Press release - Opening: 19-22 October plenary session"
+   }
+  },
+  "753": {
+   "ukraine": {
+    "class": "below_support",
+    "holders": {
+     "ukraine": 0.0,
+     "kyiv": 0.0,
+     "zelenskyy": 0.5
+    },
+    "total": 0.5,
+    "need": 1.0,
+    "in_headline": false,
+    "title": "South Korea to pull more embassy staff from Ukraine after POW row"
+   }
+  },
+  "756": {
+   "united nations": {
+    "class": "below_support",
+    "holders": {
+     "unhcr": 0.0,
+     "unicef": 0.5
+    },
+    "total": 0.5,
+    "need": 1.0,
+    "in_headline": false,
+    "title": "Türk Urges Immediate Aid Access to Besieged Taiz, Yemen"
+   }
+  },
+  "759": {
+   "nigeria": {
+    "class": "below_support",
+    "holders": {
+     "nigeria": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "‘Tinubu Must Go’: Nigeria's northern protests test the limits of political dissent"
+   }
+  },
+  "761": {
+   "saudi arabia": {
+    "class": "below_support",
+    "holders": {
+     "saudi arabia": 1.5
+    },
+    "total": 1.5,
+    "need": 2.5,
+    "in_headline": true,
+    "title": "Stretched on too many fronts, Pakistan cannot shore up Saudi security under Mecca Pact: Report"
+   },
+   "qatar": {
+    "class": "below_support",
+    "holders": {
+     "qatar": 1.0
+    },
+    "total": 1.0,
+    "need": 2.5,
+    "in_headline": true,
+    "title": "Stretched on too many fronts, Pakistan cannot shore up Saudi security under Mecca Pact: Report"
+   },
+   "indonesia": {
+    "class": "below_support",
+    "holders": {
+     "indonesia": 2.0
+    },
+    "total": 2.0,
+    "need": 2.5,
+    "in_headline": true,
+    "title": "Stretched on too many fronts, Pakistan cannot shore up Saudi security under Mecca Pact: Report"
+   }
+  },
+  "762": {
+   "iran": {
+    "class": "below_support",
+    "holders": {
+     "iran": 1.0
+    },
+    "total": 1.0,
+    "need": 1.75,
+    "in_headline": true,
+    "title": "Iran, Pasdaran colpiscono drone Usa a Hormuz. Hegseth a sorpresa da Netanyahu"
+   },
+   "cuba": {
+    "class": "below_support",
+    "holders": {
+     "cuba": 1.0
+    },
+    "total": 1.0,
+    "need": 1.75,
+    "in_headline": true,
+    "title": "Iran, Pasdaran colpiscono drone Usa a Hormuz. Hegseth a sorpresa da Netanyahu"
+   }
+  },
+  "765": {
+   "greece": {
+    "class": "below_support",
+    "holders": {
+     "greece": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Eastern Libya parliament approves 2019 maritime deal with Turkiye"
+   }
+  },
+  "772": {
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "united states": 0.5,
+     "us treasury": 0.5
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": false,
+    "title": "US, China should learn from Cold War-era arms control to tackle AI risks: ex-US official"
+   },
+   "china": {
+    "class": "below_support",
+    "holders": {
+     "china": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "US, China should learn from Cold War-era arms control to tackle AI risks: ex-US official"
+   }
+  },
+  "775": {
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "rubio": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Zelensky says early warning system resumes following Rubio call"
+   }
+  },
+  "780": {
+   "kenya": {
+    "class": "below_support",
+    "holders": {
+     "kenya": 5.0
+    },
+    "total": 5.0,
+    "need": 8.5,
+    "in_headline": true,
+    "title": "Kenya confirms eighth Ebola case amid widening regional outbreak"
+   },
+   "nigeria": {
+    "class": "below_support",
+    "holders": {
+     "nigeria": 7.0
+    },
+    "total": 7.0,
+    "need": 8.5,
+    "in_headline": true,
+    "title": "Kenya confirms eighth Ebola case amid widening regional outbreak"
+   },
+   "burkina faso": {
+    "class": "below_support",
+    "holders": {
+     "burkina faso": 1.0
+    },
+    "total": 1.0,
+    "need": 8.5,
+    "in_headline": true,
+    "title": "Kenya confirms eighth Ebola case amid widening regional outbreak"
+   },
+   "united nations": {
+    "class": "below_support",
+    "holders": {
+     "world health organization": 1.5,
+     "united nations": 1.5
+    },
+    "total": 3.0,
+    "need": 8.5,
+    "in_headline": true,
+    "title": "Kenya confirms eighth Ebola case amid widening regional outbreak"
+   },
+   "switzerland": {
+    "class": "below_support",
+    "holders": {
+     "switzerland": 1.5
+    },
+    "total": 1.5,
+    "need": 8.5,
+    "in_headline": false,
+    "title": "Kenya confirms eighth Ebola case amid widening regional outbreak"
+   }
+  },
+  "782": {
+   "european union": {
+    "class": "split_support",
+    "holders": {
+     "european union": 2.0,
+     "european parliament": 0.5
+    },
+    "total": 2.5,
+    "need": 2.5,
+    "in_headline": true,
+    "title": "Black Sea strikes fueling global food storm: EU"
+   },
+   "nato": {
+    "class": "below_support",
+    "holders": {
+     "nato": 2.0
+    },
+    "total": 2.0,
+    "need": 2.5,
+    "in_headline": true,
+    "title": "Black Sea strikes fueling global food storm: EU"
+   },
+   "bulgaria": {
+    "class": "below_support",
+    "holders": {
+     "bulgaria": 1.5
+    },
+    "total": 1.5,
+    "need": 2.5,
+    "in_headline": true,
+    "title": "Black Sea strikes fueling global food storm: EU"
+   }
+  },
+  "786": {
+   "ukraine": {
+    "class": "below_support",
+    "holders": {
+     "volodymyr zelenskyy": 2.5,
+     "zelensky": 2.5
+    },
+    "total": 5.0,
+    "need": 17.75,
+    "in_headline": true,
+    "title": "Musk ordered slowdown of Starlink service Ukraine military relies on, report says"
+   },
+   "united states": {
+    "class": "split_support",
+    "holders": {
+     "united states": 3.5,
+     "donald trump": 12.0,
+     "us department of defense": 1.0,
+     "rubio": 1.0,
+     "white house": 0.5,
+     "washington": 0.0
+    },
+    "total": 18.0,
+    "need": 17.75,
+    "in_headline": true,
+    "title": "Musk ordered slowdown of Starlink service Ukraine military relies on, report says"
+   },
+   "russia": {
+    "class": "below_support",
+    "holders": {
+     "russia": 3.0,
+     "vladimir putin": 6.0
+    },
+    "total": 9.0,
+    "need": 17.75,
+    "in_headline": true,
+    "title": "Musk ordered slowdown of Starlink service Ukraine military relies on, report says"
+   },
+   "finland": {
+    "class": "below_support",
+    "holders": {
+     "finland": 1.0
+    },
+    "total": 1.0,
+    "need": 17.75,
+    "in_headline": true,
+    "title": "Musk ordered slowdown of Starlink service Ukraine military relies on, report says"
+   }
+  },
+  "793": {
+   "european union": {
+    "class": "other",
+    "holders": {
+     "european union": 4.5,
+     "council of the european union": 0.5,
+     "european parliament": 1.0
+    },
+    "total": 6.0,
+    "need": 3.75,
+    "in_headline": true,
+    "title": "Human rights: EU appoints a new Special Representative"
+   }
+  },
+  "795": {
+   "sudan": {
+    "class": "below_support",
+    "holders": {
+     "sudan": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "As Sudan war spills into Central African Republic, UN warns against early peacekeeper exit"
+   }
+  },
+  "799": {
+   "european union": {
+    "class": "below_support",
+    "holders": {
+     "european union": 0.0,
+     "brussels": 0.0,
+     "european commission": 0.5
+    },
+    "total": 0.5,
+    "need": 1.5,
+    "in_headline": false,
+    "title": "Factsheet on Vision 2040 for fisheries and aquaculture in the EU"
+   }
+  },
+  "800": {
+   "united states": {
+    "class": "other",
+    "holders": {
+     "united states": 9.0,
+     "donald trump": 1.0,
+     "u.s. air force": 1.0
+    },
+    "total": 11.0,
+    "need": 7.25,
+    "in_headline": true,
+    "title": "Stephen Hubbard release on the cards as US pensioner trapped in Russia"
+   }
+  },
+  "805": {
+   "pakistan": {
+    "class": "below_support",
+    "holders": {
+     "pakistan": 1.0
+    },
+    "total": 1.0,
+    "need": 15.25,
+    "in_headline": true,
+    "title": "Pakistan army chief in Tehran: Can diplomacy prevent new US-Iran fighting?"
+   },
+   "saudi arabia": {
+    "class": "below_support",
+    "holders": {
+     "riyadh": 0.0,
+     "saudi arabia": 1.0
+    },
+    "total": 1.0,
+    "need": 15.25,
+    "in_headline": true,
+    "title": "Pakistan army chief in Tehran: Can diplomacy prevent new US-Iran fighting?"
+   },
+   "qatar": {
+    "class": "below_support",
+    "holders": {
+     "qatar": 1.0
+    },
+    "total": 1.0,
+    "need": 15.25,
+    "in_headline": true,
+    "title": "Pakistan army chief in Tehran: Can diplomacy prevent new US-Iran fighting?"
+   },
+   "united nations": {
+    "class": "below_support",
+    "holders": {
+     "united nations": 1.5
+    },
+    "total": 1.5,
+    "need": 15.25,
+    "in_headline": true,
+    "title": "Pakistan army chief in Tehran: Can diplomacy prevent new US-Iran fighting?"
+   }
+  },
+  "807": {
+   "ukraine": {
+    "class": "below_support",
+    "holders": {
+     "zelensky": 0.0,
+     "ukraine": 0.5
+    },
+    "total": 0.5,
+    "need": 1.0,
+    "in_headline": false,
+    "title": "Papa Leone XIV telefona a Zelensky per Oleshky: ci sia tregua umanitaria"
+   }
+  },
+  "811": {
+   "united states": {
+    "class": "split_support",
+    "holders": {
+     "united states": 1.0,
+     "us department of homeland security": 1.0
+    },
+    "total": 2.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "US intel says Putin ordered NATO sabotage drive, Leipzig drone attack an opening shot"
+   },
+   "ukraine": {
+    "class": "below_support",
+    "holders": {
+     "ukraine": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "US intel says Putin ordered NATO sabotage drive, Leipzig drone attack an opening shot"
+   }
+  },
+  "812": {
+   "israel": {
+    "class": "below_support",
+    "holders": {
+     "benjamin netanyahu": 2.0
+    },
+    "total": 2.0,
+    "need": 21.5,
+    "in_headline": true,
+    "title": "Israeli forces detain 90 West Bank volunteers, including NY nominee Brad Lander"
+   },
+   "palestine": {
+    "class": "below_support",
+    "holders": {
+     "palestine": 13.0
+    },
+    "total": 13.0,
+    "need": 21.5,
+    "in_headline": true,
+    "title": "Israeli forces detain 90 West Bank volunteers, including NY nominee Brad Lander"
+   },
+   "united nations": {
+    "class": "below_support",
+    "holders": {
+     "united nations": 5.5
+    },
+    "total": 5.5,
+    "need": 21.5,
+    "in_headline": true,
+    "title": "Israeli forces detain 90 West Bank volunteers, including NY nominee Brad Lander"
+   },
+   "united kingdom": {
+    "class": "below_support",
+    "holders": {
+     "united kingdom": 1.0
+    },
+    "total": 1.0,
+    "need": 21.5,
+    "in_headline": true,
+    "title": "Israeli forces detain 90 West Bank volunteers, including NY nominee Brad Lander"
+   }
+  },
+  "820": {
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "us department of defense": 0.5
+    },
+    "total": 0.5,
+    "need": 1.0,
+    "in_headline": false,
+    "title": "Pentagon AI oversight office struggles to keep pace with department’s ambitions, GAO finds"
+   }
+  },
+  "825": {
+   "iran": {
+    "class": "below_support",
+    "holders": {
+     "iran": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "U.S. Rallies Cuban Political Exiles at U.N. to Undermine Support for Anti-Embargo Resolution"
+   }
+  },
+  "833": {
+   "mexico": {
+    "class": "below_support",
+    "holders": {
+     "mexico": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Ex-prosecutor charged with treason in Mexico over US drug raid"
+   }
+  },
+  "834": {
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "united states": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Unmasking Service Providers Facilitating Iran’s Shadow Fleet Operations"
+   }
+  },
+  "839": {
+   "united states": {
+    "class": "split_support",
+    "holders": {
+     "united states": 0.5,
+     "trump": 1.0
+    },
+    "total": 1.5,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Ramaswamy faces firestorm over US political ad featuring Democrat rival’s estranged mother"
+   }
+  },
+  "841": {
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "united states": 6.5,
+     "washington": 0.0,
+     "marco rubio": 2.5,
+     "donald trump": 2.0
+    },
+    "total": 11.0,
+    "need": 15.0,
+    "in_headline": true,
+    "title": "\"Todavía no sabemos la magnitud real del daño\": el joven que decidió diseñar un software para buscar a  desaparecidos en"
+   },
+   "argentina": {
+    "class": "below_support",
+    "holders": {
+     "argentina": 3.0
+    },
+    "total": 3.0,
+    "need": 15.0,
+    "in_headline": true,
+    "title": "\"Todavía no sabemos la magnitud real del daño\": el joven que decidió diseñar un software para buscar a  desaparecidos en"
+   },
+   "ecuador": {
+    "class": "below_support",
+    "holders": {
+     "ecuador": 0.5
+    },
+    "total": 0.5,
+    "need": 15.0,
+    "in_headline": false,
+    "title": "\"Todavía no sabemos la magnitud real del daño\": el joven que decidió diseñar un software para buscar a  desaparecidos en"
+   }
+  },
+  "845": {
+   "china": {
+    "class": "split_support",
+    "holders": {
+     "xi jinping": 1.0,
+     "china": 1.0,
+     "xi": 1.0
+    },
+    "total": 3.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Chinas Long March legacy endures from trek to tech - Peoples Daily Online"
+   }
+  },
+  "846": {
+   "european union": {
+    "class": "below_support",
+    "holders": {
+     "european parliament": 1.5,
+     "brussels": 0.0,
+     "european union": 0.0
+    },
+    "total": 1.5,
+    "need": 1.75,
+    "in_headline": false,
+    "title": "El Tribunal Penal Internacional (TPI), galardonado con el premio Premio Sájarov 2026 del Parlamento Europeo"
+   }
+  },
+  "850": {
+   "singapore": {
+    "class": "below_support",
+    "holders": {
+     "singapore": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Cinco claves de la crisis cibernética de PHP que encendió alarmas a nivel global"
+   }
+  },
+  "852": {
+   "italy": {
+    "class": "below_support",
+    "holders": {
+     "italy": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Interior ministry identifying truckers blocking roads says Urso"
+   }
+  },
+  "858": {
+   "china": {
+    "class": "below_support",
+    "holders": {
+     "china": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "China’s offshore tax crackdown could inadvertently fuel a digital dollar boom"
+   },
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "us treasury": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "China’s offshore tax crackdown could inadvertently fuel a digital dollar boom"
+   }
+  },
+  "863": {
+   "united states": {
+    "class": "split_support",
+    "holders": {
+     "united states": 3.5,
+     "trump": 2.0
+    },
+    "total": 5.5,
+    "need": 4.0,
+    "in_headline": true,
+    "title": "Iran claims oil tankers struck sea mines as IMO warns Hormuz unsafe"
+   }
+  },
+  "865": {
+   "austria": {
+    "class": "below_support",
+    "holders": {
+     "austria": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Two European women held captive for more than a year in Niger freed in Libya"
+   }
+  },
+  "867": {
+   "honduras": {
+    "class": "below_support",
+    "holders": {
+     "honduras": 1.0
+    },
+    "total": 1.0,
+    "need": 2.5,
+    "in_headline": true,
+    "title": "Super Typhoon Champi: Hong Kong airlines cancel at least 12 Taiwan, Japan flights"
+   }
+  },
+  "873": {
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "united states": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Emmy-winning US actor Tom Skerritt, known for ‘Top Gun’ and ‘Picket Fences’, dies at 93"
+   }
+  },
+  "874": {
+   "china": {
+    "class": "split_support",
+    "holders": {
+     "china": 1.5,
+     "xi jinping": 1.0
+    },
+    "total": 2.5,
+    "need": 1.75,
+    "in_headline": true,
+    "title": "Casualties reported after 7.0 quake strikes China’s Tibet"
+   }
+  },
+  "884": {
+   "european union": {
+    "class": "below_support",
+    "holders": {
+     "european union": 1.0
+    },
+    "total": 1.0,
+    "need": 2.25,
+    "in_headline": true,
+    "title": "Russia to send first diesel tanker to the US amid Trump deal"
+   }
+  },
+  "885": {
+   "european union": {
+    "class": "below_support",
+    "holders": {
+     "european union": 1.0
+    },
+    "total": 1.0,
+    "need": 7.0,
+    "in_headline": true,
+    "title": "From the streets to the ballot box: Serbia’s students hope for election win"
+   }
+  },
+  "897": {
+   "germany": {
+    "class": "below_support",
+    "holders": {
+     "germany": 1.0
+    },
+    "total": 1.0,
+    "need": 3.25,
+    "in_headline": true,
+    "title": "Ultimi sondaggi in Serbia delineano esito incerto fra studenti e Vucic"
+   }
+  },
+  "909": {
+   "russia": {
+    "class": "below_support",
+    "holders": {
+     "russia": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Civilian cargo ship sinks off coast of Romania after Russian drone strike, authorities say"
+   },
+   "azerbaijan": {
+    "class": "below_support",
+    "holders": {
+     "azerbaijan": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Civilian cargo ship sinks off coast of Romania after Russian drone strike, authorities say"
+   }
+  },
+  "912": {
+   "united states": {
+    "class": "split_support",
+    "holders": {
+     "us congress": 1.0,
+     "trump": 1.0,
+     "united states": 0.0
+    },
+    "total": 2.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Voters want the next Congress to focus on costs and Iran, not on Trump, a new AP-NORC poll shows"
+   }
+  },
+  "923": {
+   "israel": {
+    "class": "below_support",
+    "holders": {
+     "israel defense forces": 0.0,
+     "benjamin netanyahu": 10.0
+    },
+    "total": 10.0,
+    "need": 53.25,
+    "in_headline": true,
+    "title": "Israeli Elections Set For Tuesday | Newstalk 1400, 104.5, and 105.9 WJMX"
+   },
+   "lebanon": {
+    "class": "below_support",
+    "holders": {
+     "lebanon": 4.5
+    },
+    "total": 4.5,
+    "need": 53.25,
+    "in_headline": true,
+    "title": "Israeli Elections Set For Tuesday | Newstalk 1400, 104.5, and 105.9 WJMX"
+   },
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "united states": 0.0,
+     "donald trump": 2.0
+    },
+    "total": 2.0,
+    "need": 53.25,
+    "in_headline": true,
+    "title": "Israeli Elections Set For Tuesday | Newstalk 1400, 104.5, and 105.9 WJMX"
+   },
+   "palestine": {
+    "class": "below_support",
+    "holders": {
+     "palestine": 5.0
+    },
+    "total": 5.0,
+    "need": 53.25,
+    "in_headline": true,
+    "title": "Israeli Elections Set For Tuesday | Newstalk 1400, 104.5, and 105.9 WJMX"
+   },
+   "germany": {
+    "class": "below_support",
+    "holders": {
+     "germany": 1.0
+    },
+    "total": 1.0,
+    "need": 53.25,
+    "in_headline": true,
+    "title": "Israeli Elections Set For Tuesday | Newstalk 1400, 104.5, and 105.9 WJMX"
+   }
+  },
+  "927": {
+   "greece": {
+    "class": "below_support",
+    "holders": {
+     "greece": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Guerra alla dipendenza digitale, la Grecia vieta i social agli under 15"
+   }
+  },
+  "937": {
+   "china": {
+    "class": "below_support",
+    "holders": {
+     "china": 0.5
+    },
+    "total": 0.5,
+    "need": 1.0,
+    "in_headline": false,
+    "title": "Asia-Pacific AI agent market to surge 14-fold to US$11.2 billion by 2030, Omdia says"
+   }
+  },
+  "940": {
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "united states": 0.0,
+     "donald trump": 1.5,
+     "white house": 0.0
+    },
+    "total": 1.5,
+    "need": 2.0,
+    "in_headline": true,
+    "title": "Sindacati, '800.000 in piazza in Francia, 250.000 a Parigi'"
+   },
+   "israel": {
+    "class": "below_support",
+    "holders": {
+     "netanyahu": 1.0
+    },
+    "total": 1.0,
+    "need": 2.0,
+    "in_headline": true,
+    "title": "Sindacati, '800.000 in piazza in Francia, 250.000 a Parigi'"
+   }
+  },
+  "943": {
+   "ukraine": {
+    "class": "below_support",
+    "holders": {
+     "ukraine": 0.0,
+     "volodymyr zelenskyy": 0.5
+    },
+    "total": 0.5,
+    "need": 1.0,
+    "in_headline": false,
+    "title": "Elon Musk reprocha a Ucrania un uso indebido de Starlink \"para matar gente\""
+   }
+  },
+  "949": {
+   "iran": {
+    "class": "below_support",
+    "holders": {
+     "iran": 1.0
+    },
+    "total": 1.0,
+    "need": 3.25,
+    "in_headline": true,
+    "title": "Obama and Trump Hold Rival Midterm Rallies"
+   }
+  },
+  "952": {
+   "ukraine": {
+    "class": "below_support",
+    "holders": {
+     "ukraine": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Kim Jong Un rafforza i legami con la Cina prima del possibile incontro con Trump"
+   }
+  },
+  "954": {
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "united states": 1.0,
+     "trump": 0.0,
+     "rubio": 1.0
+    },
+    "total": 2.0,
+    "need": 2.75,
+    "in_headline": true,
+    "title": "Venezuelan opposition leader María Machado returns after months in exile"
+   }
+  },
+  "962": {
+   "iran": {
+    "class": "below_support",
+    "holders": {
+     "tehran": 0.0,
+     "khamenei": 0.5
+    },
+    "total": 0.5,
+    "need": 10.5,
+    "in_headline": false,
+    "title": "Officials from Mecca pact states to hold talks in Iran amid regional tensions"
+   },
+   "saudi arabia": {
+    "class": "below_support",
+    "holders": {
+     "saudi arabia": 5.0
+    },
+    "total": 5.0,
+    "need": 10.5,
+    "in_headline": true,
+    "title": "Officials from Mecca pact states to hold talks in Iran amid regional tensions"
+   },
+   "pakistan": {
+    "class": "below_support",
+    "holders": {
+     "pakistan": 3.0
+    },
+    "total": 3.0,
+    "need": 10.5,
+    "in_headline": true,
+    "title": "Officials from Mecca pact states to hold talks in Iran amid regional tensions"
+   },
+   "turkey": {
+    "class": "below_support",
+    "holders": {
+     "turkiye": 2.0
+    },
+    "total": 2.0,
+    "need": 10.5,
+    "in_headline": true,
+    "title": "Officials from Mecca pact states to hold talks in Iran amid regional tensions"
+   },
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "united states": 6.5,
+     "trump": 0.0,
+     "rubio": 0.0
+    },
+    "total": 6.5,
+    "need": 10.5,
+    "in_headline": true,
+    "title": "Officials from Mecca pact states to hold talks in Iran amid regional tensions"
+   },
+   "yemen": {
+    "class": "below_support",
+    "holders": {
+     "yemen": 1.0
+    },
+    "total": 1.0,
+    "need": 10.5,
+    "in_headline": true,
+    "title": "Officials from Mecca pact states to hold talks in Iran amid regional tensions"
+   },
+   "united nations": {
+    "class": "below_support",
+    "holders": {
+     "un security council": 1.0,
+     "international atomic energy agency": 1.0,
+     "united nations": 0.5
+    },
+    "total": 2.5,
+    "need": 10.5,
+    "in_headline": true,
+    "title": "Officials from Mecca pact states to hold talks in Iran amid regional tensions"
+   }
+  },
+  "969": {
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "united states": 0.5
+    },
+    "total": 0.5,
+    "need": 1.5,
+    "in_headline": false,
+    "title": "US Marine indictment in Okinawa murder trial renews anti-base movement"
+   }
+  },
+  "972": {
+   "european union": {
+    "class": "headline_gate",
+    "holders": {
+     "brussels": 0.0,
+     "european commission": 1.0,
+     "european council": 0.5,
+     "european union": 0.0
+    },
+    "total": 1.5,
+    "need": 1.5,
+    "in_headline": false,
+    "title": "Daily News 26 / 10 / 2026"
+   }
+  },
+  "979": {
+   "ukraine": {
+    "class": "below_support",
+    "holders": {
+     "ukraine": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Helsing unveils interceptor missiles designed to chase Russia’s fast-flying Geran drones"
+   }
+  },
+  "982": {
+   "vatican": {
+    "class": "below_support",
+    "holders": {
+     "vatican": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Pope's South American trip to go ahead as planned after lung cancer surgery"
+   }
+  },
+  "983": {
+   "european union": {
+    "class": "below_support",
+    "holders": {
+     "european union": 1.0,
+     "council of the european union": 1.0
+    },
+    "total": 2.0,
+    "need": 4.0,
+    "in_headline": true,
+    "title": "Ukraine adopts EU-linked law giving veterans priority in government hiring"
+   },
+   "united nations": {
+    "class": "below_support",
+    "holders": {
+     "united nations": 1.0
+    },
+    "total": 1.0,
+    "need": 4.0,
+    "in_headline": true,
+    "title": "Ukraine adopts EU-linked law giving veterans priority in government hiring"
+   },
+   "netherlands": {
+    "class": "below_support",
+    "holders": {
+     "netherlands": 3.5
+    },
+    "total": 3.5,
+    "need": 4.0,
+    "in_headline": true,
+    "title": "Ukraine adopts EU-linked law giving veterans priority in government hiring"
+   },
+   "united kingdom": {
+    "class": "below_support",
+    "holders": {
+     "united kingdom": 2.5
+    },
+    "total": 2.5,
+    "need": 4.0,
+    "in_headline": true,
+    "title": "Ukraine adopts EU-linked law giving veterans priority in government hiring"
+   },
+   "russia": {
+    "class": "below_support",
+    "holders": {
+     "russia": 2.0,
+     "vladimir putin": 0.0,
+     "kremlin": 1.0
+    },
+    "total": 3.0,
+    "need": 4.0,
+    "in_headline": true,
+    "title": "Ukraine adopts EU-linked law giving veterans priority in government hiring"
+   }
+  },
+  "986": {
+   "united states": {
+    "class": "split_support",
+    "holders": {
+     "trump": 1.0,
+     "fbi": 0.0,
+     "united states": 1.0
+    },
+    "total": 2.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Ex-FBI chief James Comey faces federal charges for third time"
+   }
+  },
+  "987": {
+   "israel": {
+    "class": "below_support",
+    "holders": {
+     "israel": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "UN System ‘Sits Idle While We Fall into Hell’, Special Rapporteur Warns, as ‘Truth in Palestine Is under Attack’"
+   }
+  },
+  "996": {
+   "russia": {
+    "class": "split_support",
+    "holders": {
+     "russia": 4.5,
+     "kremlin": 1.0,
+     "vladimir putin": 1.0
+    },
+    "total": 6.5,
+    "need": 6.5,
+    "in_headline": true,
+    "title": "Russia, Ukraine down weapons as war starves town"
+   },
+   "ukraine": {
+    "class": "below_support",
+    "holders": {
+     "ukraine": 1.0,
+     "kyiv": 0.0,
+     "zelensky": 1.0
+    },
+    "total": 2.0,
+    "need": 6.5,
+    "in_headline": true,
+    "title": "Russia, Ukraine down weapons as war starves town"
+   },
+   "norway": {
+    "class": "below_support",
+    "holders": {
+     "norway": 3.5
+    },
+    "total": 3.5,
+    "need": 6.5,
+    "in_headline": true,
+    "title": "Russia, Ukraine down weapons as war starves town"
+   },
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "trump": 1.0,
+     "united states": 0.0
+    },
+    "total": 1.0,
+    "need": 6.5,
+    "in_headline": true,
+    "title": "Russia, Ukraine down weapons as war starves town"
+   }
+  },
+  "999": {
+   "palestine": {
+    "class": "below_support",
+    "holders": {
+     "palestine": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Macklemore opens ‘Free Palestine’ tour in Dublin"
+   }
+  },
+  "1009": {
+   "philippines": {
+    "class": "below_support",
+    "holders": {
+     "philippines": 2.0
+    },
+    "total": 2.0,
+    "need": 2.5,
+    "in_headline": true,
+    "title": "Pentagon chief Hegseth to visit Philippines to meet US allies at Asean events"
+   },
+   "china": {
+    "class": "below_support",
+    "holders": {
+     "china": 2.0
+    },
+    "total": 2.0,
+    "need": 2.5,
+    "in_headline": true,
+    "title": "Pentagon chief Hegseth to visit Philippines to meet US allies at Asean events"
+   }
+  },
+  "1027": {
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "united states": 1.0
+    },
+    "total": 1.0,
+    "need": 17.75,
+    "in_headline": true,
+    "title": "Spagna, le prime immagini dello scontro tra treni alta velocità nei pressi di Toledo, diversi morti"
+   },
+   "italy": {
+    "class": "below_support",
+    "holders": {
+     "italy": 0.5
+    },
+    "total": 0.5,
+    "need": 17.75,
+    "in_headline": false,
+    "title": "Spagna, le prime immagini dello scontro tra treni alta velocità nei pressi di Toledo, diversi morti"
+   },
+   "china": {
+    "class": "below_support",
+    "holders": {
+     "xi jinping": 1.0
+    },
+    "total": 1.0,
+    "need": 17.75,
+    "in_headline": true,
+    "title": "Spagna, le prime immagini dello scontro tra treni alta velocità nei pressi di Toledo, diversi morti"
+   },
+   "australia": {
+    "class": "below_support",
+    "holders": {
+     "australia": 1.0
+    },
+    "total": 1.0,
+    "need": 17.75,
+    "in_headline": true,
+    "title": "Spagna, le prime immagini dello scontro tra treni alta velocità nei pressi di Toledo, diversi morti"
+   },
+   "portugal": {
+    "class": "below_support",
+    "holders": {
+     "portugal": 1.0
+    },
+    "total": 1.0,
+    "need": 17.75,
+    "in_headline": true,
+    "title": "Spagna, le prime immagini dello scontro tra treni alta velocità nei pressi di Toledo, diversi morti"
+   }
+  },
+  "1028": {
+   "italy": {
+    "class": "below_support",
+    "holders": {
+     "italy": 3.0
+    },
+    "total": 3.0,
+    "need": 13.0,
+    "in_headline": true,
+    "title": "🔴 Two high-speed trains collide in Spain, halting traffic on Madrid-Andalusia line"
+   }
+  },
+  "1031": {
+   "european union": {
+    "class": "below_support",
+    "holders": {
+     "european union": 1.0,
+     "brussels": 0.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "EU-China hybrid car deal won’t really help European carmakers"
+   }
+  },
+  "1032": {
+   "russia": {
+    "class": "below_support",
+    "holders": {
+     "russia": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "New report tracks how Russia helps China build better drones"
+   }
+  },
+  "1036": {
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "united states": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Luxury cruise passengers stranded in Cambodia due to soaring fuel costs"
+   }
+  },
+  "1047": {
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "united states": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Carlos III afronta en su viaje al Caribe protestas por el comercio histórico de esclavos y reclamaciones de reparación"
+   }
+  },
+  "1049": {
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "united states": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Addio a Dolores Huerta, leader sindacalista Usa e icona dei diritti civili"
+   }
+  },
+  "1056": {
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "united states": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "The United States Announces Sanctions in Response to Rwanda’s Destabilizing Activities in Eastern Democratic Republic of"
+   }
+  },
+  "1058": {
+   "france": {
+    "class": "below_support",
+    "holders": {
+     "france": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "UN, France condemn escalating drone attacks across Sudan - Dabanga Radio TV Online"
+   }
+  },
+  "1060": {
+   "israel": {
+    "class": "below_support",
+    "holders": {
+     "netanyahu": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "'Vance ha scritto a esponente linea dura dell'Iran per riavviare i colloqui'"
+   }
+  },
+  "1068": {
+   "japan": {
+    "class": "below_support",
+    "holders": {
+     "japan": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Hello Kitty maker cuts ties with Japanese spy drama after China backlash"
+   }
+  },
+  "1073": {
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "united states": 0.0,
+     "donald trump": 1.5,
+     "washington": 0.0
+    },
+    "total": 1.5,
+    "need": 4.75,
+    "in_headline": true,
+    "title": "Canada and EU drop associate membership plan in bid to deepen ties"
+   }
+  },
+  "1082": {
+   "el salvador": {
+    "class": "below_support",
+    "holders": {
+     "el salvador": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "El Salvador avvia la campagna per le presidenziali del 2027"
+   }
+  },
+  "1084": {
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "trump": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Republican Murkowski endorses Democrat in Alaskas governor race"
+   }
+  },
+  "1086": {
+   "ukraine": {
+    "class": "split_support",
+    "holders": {
+     "ukraine": 1.5,
+     "zelensky": 0.5,
+     "kyiv": 0.0
+    },
+    "total": 2.0,
+    "need": 1.75,
+    "in_headline": true,
+    "title": "Breaking: Russia strikes train at Dnipro station with jet-powered drone, at least 13 dead"
+   }
+  },
+  "1096": {
+   "canada": {
+    "class": "below_support",
+    "holders": {
+     "canada": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Daily News 29 / 10 / 2026"
+   }
+  },
+  "1103": {
+   "oman": {
+    "class": "below_support",
+    "holders": {
+     "oman": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Ship reported on fire off Oman as Iran escalation fears mount"
+   }
+  },
+  "1104": {
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "fbi": 2.0
+    },
+    "total": 2.0,
+    "need": 3.25,
+    "in_headline": true,
+    "title": "Binance says $3bn in crypto funds frozen amid ‘potential security issue’"
+   }
+  },
+  "1107": {
+   "peru": {
+    "class": "below_support",
+    "holders": {
+     "peru": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": false,
+    "title": "Perù, Fujimori annuncia il modello carcerario di Bukele per sei nuovi penitenziari"
+   }
+  },
+  "1114": {
+   "united states": {
+    "class": "split_support",
+    "holders": {
+     "united states": 1.0,
+     "us department of defense": 1.0
+    },
+    "total": 2.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "US tells Europeans to cool their rhetoric on Russia"
+   }
+  },
+  "1121": {
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "united states": 0.0,
+     "trump": 0.5
+    },
+    "total": 0.5,
+    "need": 1.0,
+    "in_headline": false,
+    "title": "US 2026: Georgia’s African Americans mobilise for the midterms"
+   }
+  },
+  "1125": {
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "united states": 2.0
+    },
+    "total": 2.0,
+    "need": 2.5,
+    "in_headline": true,
+    "title": "Mosca e Kiev, iniziata l'evacuazione umanitaria a Oleshky"
+   }
+  },
+  "1127": {
+   "iran": {
+    "class": "split_support",
+    "holders": {
+     "tehran": 0.0,
+     "iran": 2.5,
+     "abbas araghchi": 0.5
+    },
+    "total": 3.0,
+    "need": 2.75,
+    "in_headline": true,
+    "title": "Qatar mediators return to Tehran to boost US-Iran deal efforts"
+   }
+  },
+  "1130": {
+   "vatican": {
+    "class": "below_support",
+    "holders": {
+     "vatican": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": false,
+    "title": "Pope has voted in the midterms says Vatican"
+   }
+  },
+  "1138": {
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "united states": 0.0,
+     "rubio": 1.0
+    },
+    "total": 1.0,
+    "need": 2.0,
+    "in_headline": true,
+    "title": "Deep rifts among G20 diplomats, including from China and Russia, prompt US to ditch group photo plan"
+   }
+  },
+  "1143": {
+   "european union": {
+    "class": "below_support",
+    "holders": {
+     "european central bank": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Bce lascia costo denaro invariato, tasso su depositi resta al 2,50%. «Rischi al rialzo per l’inflazione»"
+   }
+  },
+  "1144": {
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "donald trump": 1.5,
+     "united states": 0.0
+    },
+    "total": 1.5,
+    "need": 4.0,
+    "in_headline": true,
+    "title": "Musk lancia l'allarme, se vincono i democratici è la fine della democrazia"
+   }
+  },
+  "1145": {
+   "united nations": {
+    "class": "split_support",
+    "holders": {
+     "united nations": 1.0,
+     "un security council": 0.5
+    },
+    "total": 1.5,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "El Sáhara Occidental afronta en la ONU un futuro de autodeterminación sin referéndum"
+   }
+  },
+  "1146": {
+   "russia": {
+    "class": "split_support",
+    "holders": {
+     "russia": 2.0,
+     "lavrov": 1.0
+    },
+    "total": 3.0,
+    "need": 2.25,
+    "in_headline": true,
+    "title": "Secretary of State Marco Rubio at a Plenary Session on Geopolitical Issues"
+   }
+  },
+  "1147": {
+   "ukraine": {
+    "class": "below_support",
+    "holders": {
+     "ukraine": 0.0,
+     "zelenskyy": 1.0,
+     "kyiv": 0.0
+    },
+    "total": 1.0,
+    "need": 1.75,
+    "in_headline": true,
+    "title": "US approves sale of 500 Patriot missiles to Ukraine"
+   },
+   "russia": {
+    "class": "below_support",
+    "holders": {
+     "russia": 1.0
+    },
+    "total": 1.0,
+    "need": 1.75,
+    "in_headline": true,
+    "title": "US approves sale of 500 Patriot missiles to Ukraine"
+   }
+  },
+  "1148": {
+   "european union": {
+    "class": "below_support",
+    "holders": {
+     "european commission": 1.5
+    },
+    "total": 1.5,
+    "need": 2.0,
+    "in_headline": true,
+    "title": "Police deployed during stand-off over control of top Poland court"
+   }
+  },
+  "1149": {
+   "united nations": {
+    "class": "split_support",
+    "holders": {
+     "united nations": 1.0,
+     "un security council": 0.5
+    },
+    "total": 1.5,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Following Contentious Debate, Security Council Fails to Adopt Resolution to Extend UN Mission for Referendum in Western "
+   }
+  },
+  "1153": {
+   "russia": {
+    "class": "split_support",
+    "holders": {
+     "russia": 1.0,
+     "putin": 1.0
+    },
+    "total": 2.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Novaya Gazeta chiude in Russia, 'uccisi dalle autorità e dai servizi'"
+   }
+  },
+  "1158": {
+   "israel": {
+    "class": "below_support",
+    "holders": {
+     "israel": 0.5,
+     "netanyahu": 0.0
+    },
+    "total": 0.5,
+    "need": 1.75,
+    "in_headline": false,
+    "title": "'Gli Usa approvano la possibile vendita di Patriot all'Ucraina per 2,1 miliardi'"
+   }
+  },
+  "1161": {
+   "israel": {
+    "class": "below_support",
+    "holders": {
+     "israel": 0.5,
+     "benjamin netanyahu": 0.5
+    },
+    "total": 1.0,
+    "need": 2.75,
+    "in_headline": false,
+    "title": "Iran warns of unfettered retaliation if attacked as mediators try for peace"
+   }
+  },
+  "1179": {
+   "united states": {
+    "class": "below_support",
+    "holders": {
+     "rubio": 1.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Rubio, non so se Putin sarà a Miami, con Lavrov discusso possibile incontro ad Apec"
+   },
+   "russia": {
+    "class": "below_support",
+    "holders": {
+     "putin": 1.0,
+     "lavrov": 0.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Rubio, non so se Putin sarà a Miami, con Lavrov discusso possibile incontro ad Apec"
+   }
+  },
+  "1182": {
+   "palestine": {
+    "class": "below_support",
+    "holders": {
+     "palestine": 1.0
+    },
+    "total": 1.0,
+    "need": 1.75,
+    "in_headline": true,
+    "title": "At least four Palestinians killed in Gaza as Israeli attacks continue"
+   }
+  },
+  "1184": {
+   "israel": {
+    "class": "below_support",
+    "holders": {
+     "israel": 1.0,
+     "netanyahu": 0.0
+    },
+    "total": 1.0,
+    "need": 1.5,
+    "in_headline": true,
+    "title": "Herzog: 'Mercoledì i dati ufficiali del voto, poi al via le consultazioni'"
+   }
+  },
+  "1192": {
+   "spain": {
+    "class": "below_support",
+    "holders": {
+     "spain": 0.5
+    },
+    "total": 0.5,
+    "need": 1.5,
+    "in_headline": false,
+    "title": "España: El desastre ferroviario en Toledo es un golpe para Pedro Sánchez,  quien ya estaba en desventaja electoral"
+   }
+  }
+ }
+}
