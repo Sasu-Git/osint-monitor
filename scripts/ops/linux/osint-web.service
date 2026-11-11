@@ -1,0 +1,24 @@
+# Read-only dashboard on the Linux host (docs/deploy/WEB-LOCAL.md rules: read-only intelligence DB, own user-state DB).
+# Bound to 127.0.0.1 only: reach it through the SSH tunnel (README.md here), never through a firewall rule.
+[Unit]
+Description=OSINT monitor dashboard (read-only, 127.0.0.1:8790)
+After=network-online.target
+
+[Service]
+Type=simple
+User=osint
+Group=osint
+WorkingDirectory=/opt/osint/web
+EnvironmentFile=/etc/osint/web.env
+ExecStart=/opt/osint/venv/bin/python main.py serve --host 127.0.0.1 --port 8790 --no-reload
+StandardOutput=append:/opt/osint/data/web/logs/web.out.log
+StandardError=append:/opt/osint/data/web/logs/web.err.log
+Restart=on-failure
+RestartSec=30
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+ProtectHome=true
+
+[Install]
+WantedBy=multi-user.target

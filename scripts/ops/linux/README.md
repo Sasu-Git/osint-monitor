@@ -59,7 +59,16 @@ A start whose checkout is not the pinned commit, or has local changes, is refuse
 **Rollback:** the same steps with the previous `production-stable-*` tag, and the runbook's database restore when the
 candidate changed data.
 
-## Dashboard and evaluations
+## Dashboard (owner ruling 2026-11-09: on the VM, through the tunnel)
+
+`osint-web.service` runs the read-only web server from its own checkout `/opt/osint/web` (an approved `deploy-web-*`
+tag of `feat/sa-workspace`), bound to `127.0.0.1:8790`, with the intelligence DB read-only (`/etc/osint/web.env`,
+`OSINT_DB_READONLY=1`) and personal priorities in `/opt/osint/data/web/user_state.db`.
+
+On the laptop, `open_dashboard.ps1` (here) forwards `localhost:8790` to it through the IAP SSH tunnel. Keep its window
+open while using http://localhost:8790/. No firewall port is opened.
+
+## Dashboard and evaluations (before the move)
 
 The web server stays read-only. Either:
 - run it on the VM and reach it through IAP port forwarding
