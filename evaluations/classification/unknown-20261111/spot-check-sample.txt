@@ -1,0 +1,111 @@
+D159 significant_statement | matched 'asegura [es/it]'
+     Rubio, Mosca condivida le informazioni sulla Siberia
+     Rusia asegura que la situación epidemiológica en Irkutsk es "estable" tras un supuesto accidente en un laboratorio
+     Russia, donna morta in Siberia per peste: in 200 sotto osservazione
+D177 security_incident | matched 'espionaje [es/it]'
+     La Inteligencia de Alemania acusa a Rusia de una "guerra en la sombra" y apunta a "éxitos" frente a Moscú
+     Bruselas plantea retirar el derecho al voto a los nuevos miembros de la UE si no cumplen las reglas
+     De Alemania a Grecia: así responden los países europeos a la crisis de vivienda
+D209 military_action | matched 'invasion [es/it] [lead sentence]'
+     Afganistán cumple 25 años de la intervención de EEUU con un lustro de nuevo régimen talibán
+     Toward A More Active Role in Afghanistan in 2012
+D232 sanctions | matched 'sanzioni [es/it]'; sanctions mentioned but not reported as imposed
+     Nobel per la Pace alla giurista sudafricana Navi Pillay, accusò Israele di genocidio
+     La jurista sudafricana Navi Pillay, Premio Nobel de la Paz 2026
+     Nobel, fino al 12 ottobre la settimana dei Premi 2026
+D265 election | matched 'elecciones [es/it] [lead sentence]'
+     Diosdado Cabello llama a cerrar filas con Delcy Rodríguez y reta a la oposición a medirse en las urnas
+     El emotivo último partido en el que Messi se despidió de la selección argentina
+     El día que nadie quería que llegara: Messi se despidió de Argentina con gol y dos asistencias
+D275 military_action | matched 'ataque [es/it]'
+     Heridas siete personas en un ataque con arma blanca en una escuela en el este de Polonia
+     Noruega estudia limitar los lentes inteligentes por temor a las grabaciones sin consentimiento
+     Los hábitos ocultos que empeoran tu ansiedad social (y cómo romperlos)
+D325 commentary | matched 'por que [es/it]'
+     US AI firm Anthropic enables Chinese-language options for Claude chatbot
+     Por qué China considera una amenaza la IA que imita las relaciones humanas
+D409 summit | matched 'cumbre [es/it] [lead sentence]'
+     Burnham viajará a Bruselas para “abrir una discusión sobre la relación a largo plazo” del Reino Unido y la UE
+     Directo a... Londres y la insistencia de Burnham por un acuerdo con la Unión Europea
+D423 election | matched 'primarie [es/it]'
+     Francia, indagini su 36 casi di presunte violenze di polizia nelle proteste
+     La activista sueca Greta Thunberg se suma a las protestas estudiantiles en Francia
+     Francia, Glucksmann trionfa alle primarie socialdemocratiche: "Ora avanti fino all'Eliseo"
+D439 ceasefire | matched 'cessate il fuoco [es/it]'
+     Tajani, attacco Trump a Zelensky? Tocca a ucraini scegliere loro presidente
+     L'agenda del Papa il giorno dopo l'annuncio del ricovero al Gemelli
+     Ucraina, Trump: «La tregua energetica? Putin la vuole più di Zelensky».  Altre due navi bulgare colpite nel Mar Nero
+D460 resignation | matched 'dimissioni [es/it]'
+     Importazioni di tequila, l'Italia è sesta al mondo
+     Scandali e favori, Trump chiede le dimissioni dell'ambasciatrice Usa in Grecia Kimberly Guilfoyle
+     La Casa Bianca chiede le dimissioni dell’ambasciatrice americana in Grecia Kimberly Guilfoyle
+D515 military_action | matched 'ataque [es/it]'
+     Colombia, governo De la Espriella chiede di escludere la riforma rurale da mandato Onu
+     Colombia inaugura en Jerusalén su Embajada en Israel y habla de "paso decisivo" para sus relaciones
+     De la Espriella convierte Colombia en el mayor país latinoamericano con embajada en Jerusalén
+D543 military_action | matched 'ataques [es/it]'
+     El juicio en Alemania sobre el sabotaje del gasoducto Nord Stream decidirá si fue un crimen de guerra
+     Alemania acusa a ciudadano ucraniano por los ataques de Nordstream: los detalles del juicio
+D615 summit | matched 'vertice [es/it]'
+     Incendi in Amazzonia brasiliana, a Manaus scuole chiuse per il fumo
+     Ucraina, Stati Uniti, Cina: al via un vertice chiave per i rapporti tra Ue e mondo
+     Un sedicenne uccide tre bambini e un adulto in una scuola dell'=regon
+D636 military_action | matched 'atacan [es/it]'
+     El Gobierno palestino condena el incendio de una mezquita en Cisjordania a manos de colonos israelíes
+     Decenas de colonos enmascarados atacan una aldea de Cisjordania durante la recogida de la aceituna y dan una paliza a un
+     Colonos israelíes atacan brutalmente la aldea de Abu Falah y agreden a una fotógrafa de EE. UU.
+D648 military_action | matched 'atacan [es/it]'
+     Orcas que atacan y se comen a los grandes tiburones blancos: la sangrienta batalla entre los mayores depredadores marino
+     Campañas en redes y abogados gratis: los españoles por la ley de nietos se movilizan para poder votar desde el exterior
+D656 sanctions | matched 'sanciones [es/it]'; sanctions mentioned but not reported as imposed
+     Trump suspende el último paquete de sanciones contra Rusia por motivos de "interés nacional"
+     Trump pausa paquete de sanciones contra Rusia alegando motivos de "interés nacional"
+     Rubio defiende el descargo de sanciones a Rusia y niega que EEUU ordenara interrumpir Starlink en Ucrania
+D719 military_action | matched 'derribo [es/it]'
+     Florida, mandato d'arresto per omicidio contro Raul Castro
+     La Fiscalía de EEUU emite una orden de detención contra el expresidente de Cuba Raúl Castro
+     El derribo de dos avionetas de Hermanos al Rescate por el que una jueza en EE.UU. ordenó el arresto de Raúl Castro 30 añ
+D777 policy_change | matched 'decreto [es/it]'; policy announced, implementation not reported
+     Ecuador-Perù, Noboa cede a Lima la presidenza della Comunità andina
+     Directo a... Lima y la reunión entre Fujimori y Noboa sobre seguridad fronteriza
+     Keiko Fujimori rompe a la oposición y consigue una mayoría en el Senado que le permite legislar por decreto durante 90 d
+D802 negotiation | matched 'negoziati [es/it]'
+     Cremlino, 'urgente riprendere i negoziati sugli armamenti nucleari con gli Usa'
+     Rubio niega cambios en las entregas de armamento a Ucrania y achaca problemas en Starshield a "fallos técnicos"
+D840 military_action | matched 'atacado [es/it]'
+     La Guardia Revolucionaria iraní afirma haber atacado cuatro buques que movían petróleo en el golfo Pérsico
+     Los ejércitos de Estados Unidos e Israel desarrollan planes para atacar Irán tras las elecciones
+D886 deployment | matched 'desplegado [es/it]'
+     Seúl apunta que Pyongyang habría desplegado cerca de un millón de minas en la zona desmilitarizada desde 2024
+     Corea del Norte ha colocado un millón de minas en la zona desmilitarizada, según Corea del Sur
+D902 security_incident | matched 'tiroteo [es/it]'
+     Varios muertos y heridos en un tiroteo en una iglesia en la gobernación de Karak (Jordania)
+     Al menos siete muertos por el ataque de un grupo de hombres armados en una iglesia de Jordania durante un entierro
+     Masacre en una iglesia de Jordania: hombres armados mataron a siete personas durante un funeral
+D952 bilateral_meeting | matched 'incontro con [es/it]'
+     Putin, accusarci per i disordini segno di debolezza e incapacità dei leader europei
+     Kim Jong Un rafforza i legami con la Cina prima del possibile incontro con Trump
+     Wsj: Trump con Cina e Russia pensano a Orbán come prossimo segretario Onu
+D1047 military_action | matched 'ataca [es/it]'
+     Carlos III afronta en su viaje al Caribe protestas por el comercio histórico de esclavos y reclamaciones de reparación
+     El rey Carlos III llegó al Caribe para una gira incómoda marcada por reclamos de disculpas por la esclavitud
+     Estados Unidos ataca una supuesta narcolancha en el Pacífico y mata a cinco personas
+D1107 significant_statement | matched 'annuncia [es/it]'
+     Perù, Fujimori annuncia il modello carcerario di Bukele per sei nuovi penitenziari
+     Fujimori califica a El Salvador como un "faro de esperanza" en materia de seguridad
+     Fujimori tours El Salvador mega-prison with hopes to build one in Peru
+D1126 deployment | matched 'despliega [es/it]'
+     Protests take place all over Italy amid big police presence, fears of violence
+     Miles de personas vuelven a salir a la calle en Italia para protestar contra el Gobierno en plena huelga general
+     Italy tightens security as students, unions launch nationwide protests
+D1137 security_incident | matched 'atentado [es/it]'
+     París declara el toque de queda en dos zonas de la ciudad ante nuevas manifestaciones
+     'Le Monde' reseña un "racismo atmosférico" en Francia tras el atentado "terrorista" en Trappes
+     Más de 300.000 franceses salen a la calle por tercer fin de semana para protestar por el coste de la vida
+D1158 military_action | matched 'ataque [es/it]'
+     'Gli Usa approvano la possibile vendita di Patriot all'Ucraina per 2,1 miliardi'
+     Jamenei ordena que la respuesta a cualquier ataque de EEUU no tenga restricciones geográficas
+     Usa-Iran, prove di negoziati ma possibili attacchi Usa. Khamenei: risposta senza limiti
+D1173 election | matched 'elecciones [es/it]'
+     El Gobierno de Ecuador continúa con los operativos contra autoridades regionales: "Todos van a rendir cuentas"
+     Ecuador inicia su cuarto toque de queda del año para contener la violencia a semanas de las elecciones locales
