@@ -1,0 +1,7415 @@
+{
+ "snapshot": "C:/Users/EugenioVardiero/osint-monitor/data/eval/geolocation-iter3/snap-20261102.db",
+ "developments": 1198,
+ "stored_unknown": 541,
+ "recomputed_unknown": 547,
+ "stored_vs_recomputed_differ": 13,
+ "unknown_rate": 0.4566,
+ "by_language": {
+  "en": {
+   "developments": 968,
+   "unknown": 353
+  },
+  "es": {
+   "developments": 136,
+   "unknown": 108
+  },
+  "it": {
+   "developments": 94,
+   "unknown": 86
+  }
+ },
+ "unknown_by_cause": {
+  "suppressed_legal": 24,
+  "lexicon_gap_en": 325,
+  "mixed_language_gap": 102,
+  "non_english_headlines": 91,
+  "statement_missed": 5
+ },
+ "unknown_by_top_source": {
+  "Al Jazeera": 163,
+  "ANSA Mondo": 114,
+  "BBC World": 44,
+  "GDELT": 37,
+  "BBC Mundo": 34,
+  "El País Internacional": 27,
+  "Breaking Defense": 25,
+  "Defense News": 21,
+  "France 24": 20,
+  "Clarín Mundo": 17,
+  "ANSA English": 12,
+  "Europa Press Internacional": 8,
+  "DW World": 7,
+  "Council of the EU Press": 4,
+  "France 24 Español": 3
+ },
+ "types_recomputed": {
+  "negotiation": 22,
+  "summit": 17,
+  "significant_statement": 145,
+  "military_action": 105,
+  "policy_change": 26,
+  "election": 67,
+  "unknown": 547,
+  "warning": 38,
+  "arms_transfer": 2,
+  "ceasefire": 5,
+  "agreement": 18,
+  "diplomatic_visit": 21,
+  "sanctions": 35,
+  "resignation": 13,
+  "appointment": 6,
+  "security_incident": 44,
+  "threat": 15,
+  "military_exercise": 4,
+  "deployment": 13,
+  "bilateral_meeting": 36,
+  "multilateral_meeting": 10,
+  "economic_action": 8,
+  "commentary": 1
+ },
+ "sample": {
+  "111": {
+   "cause": "lexicon_gap_en",
+   "lang": "en",
+   "titles": [
+    "Trekkers helicoptered off mountains as more deadly landslides hit Nepal",
+    "Nepal avalanche kills at least 15 expedition workers"
+   ],
+   "leads": [
+    "A month after mass catastrophic flooding, around 30 people have died in landslides and heavy rain.",
+    "Rescuers recovered eight more bodies on Thursday from the area of an avalanche that swept through a mountain camp."
+   ],
+   "sources": [
+    "Al Jazeera",
+    "BBC World"
+   ]
+  },
+  "145": {
+   "cause": "mixed_language_gap",
+   "lang": "it",
+   "titles": [
+    "La Spagna al voto: i sondaggi premiano le destre, l'area progressista frammentata",
+    "La Spagna in piazza per il diritto alla casa. E Sanchez pensa al voto anticipato",
+    "Casa e scuola: il filo rosso che lega le proteste in Europa",
+    "Spagna, Sanchez indice elezioni anticipate: \"Serve maggioranza più ampia per piegare le élite\"",
+    "Marea sociale contro il caro-affitti in Spagna: le piazze spingono Sánchez verso le urne",
+    "Caro casa, prezzi e affitti salgono nell’Ue. Il Governo studia le misure per giovani e locazioni",
+    "Sanchez sfida le destre: Spagna al voto anticipato",
+    "Migliaia di persone a Barcellona in piazza per il diritto alla casa",
+    "Le tende di Madrid e i costi della casa",
+    "Spagna, le tappe della crisi",
+    "Spagna, Sanchez al fianco delle piazze sull’emergenza casa",
+    "Spagna, amnistia per Puigdemont. Sanchez corre ai ripari coi decreti casa",
+    "È morta Maricarmen, il volto delle proteste per diritto alla casa in Spagna",
+    "E' morta Maricarmen, il volto delle proteste per il diritto alla casa in Spagna",
+    "Spagna, morta Maricarmen, l’anziana sfrattata che ha dato il via alle proteste per il diritto alla casa",
+    "Spagna, la morte di Maricarmen: in centinaia marciano verso il Parlamento",
+    "La moglie di Lula criticata per il flop della campagna elettorale",
+    "La storia di Maricarmen: sfrattata a 87 anni e diventata il simbolo della protesta per la casa",
+    "Madrid, fanno scudo a una famiglia con tre figli e fermano lo sfratto: \"Tamara non sei sola\"",
+    "Lula torna sui social per sfidare Bolsonaro sul fronte sicurezza",
+    "Arringa finale del pm al processo Maradona, 'Diego abbandonato alla sua sorte'",
+    "La Spagna verso le elezioni, Sanchez: \"Il Parlamento somigli di più alla strada e meno agli attici\"",
+    "Decine di migliaia in corteo per Maricarmen, simbolo delle lotte per la casa",
+    "In memoria di Maricarmen, la marcia silenziosa di Madrid",
+    "Morte Maricarmen Abascal, migliaia in piazza a Madrid contro il caro-affitti",
+    "Casa Bianca sospende temporaneamente le sanzioni sul diesel russo"
+   ],
+   "leads": [
+    "Il partito popolare e Vox arriverebbero al 52%, secondo un sondaggio per El Pais",
+    "Centinaia di migliaia di persone al fianco delle proteste di Madrid per la casa, il governo bocciato in Parlamento valuta elezioni a fine novembre",
+    "In Spagna per il diritto alla casa, in Francia l'erosione allo studio accende lo scontento dei più giovani",
+    "Alle urne il 29 novembre",
+    "Ondata di proteste da Madrid a tutte le principali città per il diritto alla casa dopo lo sfratto dell'ottantasettenne Mari Carmen; il rifiuto dei decreti da parte delle destre e dei catalani di Junts apre lo scenario di elezioni anticipate",
+    "«Serve una formazione di qualità, un lavoro sicuro e stabile, una retribuzione adeguata, una casa a un prezzo equo», ha detto di recente la premier Giorgia Meloni",
+    "Per Pedro Sanchez è la sfida più difficile della sua avventura politica",
+    "Lunedì 5 ottobre migliaia di manifestanti sono scesi nelle strade di Barcellona per protestare contro l’aggravarsi della crisi abitativa in Spagna, lo stesso giorno in cui il primo ministro spagnolo, Pedro Sánchez, ha annunciato elezioni anticipate per novembre di quest’anno.",
+    "Le proteste di piazza contro la crisi abitativa hanno convinto il premier spagnolo Pedro Sanchez, ultimo leader forte della sinistra in Europa, che per i socialisti è arrivato il momento migliore per andare al voto e tentare di rimanere alla guida del Paese",
+    "È partito tutto da uno sfratto.Il 23 settembre scorso l'anziana Maricarmen Abascal, 87 anni, viene portata via in barella dalla sua casa di Madrid",
+    "Pedro Sanchez non cede e ha fatto approvare dal governo due decreti sull’emergenza casa del tutto simili ai provvedimenti bocciati venerdì scorso dalle destre (e dai catalani separatisti di Junts) in Parlamento",
+    "Scatta il fattore Catalonia nella campagna elettorale spagnola dopo che la Corte Costituzionale ha aperto la strada all'amnistia per i leader indipendentisti.Puigdemontnon è più ricercato per il tentativo di secessione del 2017",
+    "E' morta Maricarmen Abascal, l'87enne spagnola divenuta il simbolo delle proteste per il diritto alla casa in Spagna",
+    "E' morta Maricarmen Abascal, l'87enne spagnola divenuta il simbolo delle proteste per il diritto alla casa in Spagna",
+    "È morta Maricarmen Abascal, l’87enne spagnola divenuta il simbolo delle proteste per il diritto alla casa in Spagna",
+    "Centinaia di spagnoli sono scesi in strada a Madrid per manifestare in seguito alla notizia della morte dell'anziana il cui sfratto ha innescato proteste in tutto il Paese per il diritto alla casa",
+    "A pochi giorni dal ballottaggio",
+    "Maricarmen Abascal è stata portata via dalla casa dove viveva da quando aveva 17 anni",
+    "Oltre cento persone si sono mobilitate nel quartiere di San Blas-Canillejas per impedire lo sfratto di una famiglia che vive da dodici anni in un ex locale commerciale",
+    "\"Per garantire la sicurezza ai",
+    "\"Il nucleo centrale delle",
+    "Il voto il 29 novembre, i sondaggi assegnano alle destre la maggioranza assoluta ma il Partito socialista recupera",
+    "Una lunga e affollata marcia a Madrid per onorare l'anziana il cui sfratto ha dato il via alle proteste per il diritto all'abitare",
+    "\"Lotteremo per te\", almeno 20mila persone in corteo lungo i tre chilometri dal centro all'abitazione dell'anziana simbolo del movimento per la casa",
+    "La Capitale spagnola esplode in una marea di candele e rabbia, mentre migliaia di persone marciano verso il Parlamento per gridare “basta” alla speculazione che uccide\"",
+    "La Casa Bianca sospende"
+   ],
+   "sources": [
+    "ANSA Mondo",
+    "Il Sole 24 Ore Mondo",
+    "Rai News Esteri"
+   ]
+  },
+  "205": {
+   "cause": "lexicon_gap_en",
+   "lang": "en",
+   "titles": [
+    "France vs Belgium: UEFA Nations League – Olise, De Bruyne, teams and format",
+    "LIVE: France vs Belgium – UEFA Nations League",
+    "Super-subs help France demolish Belgium with late flurry",
+    "Nations League: France defeat Belgium in second-half comeback"
+   ],
+   "leads": [
+    "Only one point separates Group A1 leaders France and second-placed Belgium before Monday&#039;s clash.",
+    "Build-up",
+    "Michael Olise scores twice and assists as France come from behind to beat Belgium 4-1 in Nations League.",
+    "Despite being behind at half-time, France scored four goals in 15 minutes to defeat Belgium in the Nations League (4-1)"
+   ],
+   "sources": [
+    "Al Jazeera",
+    "France 24"
+   ]
+  },
+  "208": {
+   "cause": "non_english_headlines",
+   "lang": "es",
+   "titles": [
+    "Las autoridades de Moscú registran al menos un muerto y seis heridos tras detectar más de 600 drones",
+    "Ucrania ataca la región de Moscú con 650 drones y mata a dos personas",
+    "Al menos tres muertos en un ataque de Ucrania contra un minibús en una zona ocupada de Zaporiyia",
+    "Bruselas desembolsa 1.240 millones a Ucrania para financiar drones y misiles de producción nacional",
+    "Rusia asegura haber derribado cerca de 400 drones ucranianos en un ataque nocturno"
+   ],
+   "leads": [
+    "Al menos una persona ha fallecido y otras seis han resultado heridas en la región de Moscú fruto de ataques con drones ucranianos, tras haber detectado el lanzamiento de cerca de 650 drones ucranianos sobre este territorio ruso, según han informado las autoridades locales y regionales.",
+    "Una columna de humo se alza de un almacén en Moscú, tras un ataque ucranio con drones, el pasado 16 de agosto.",
+    "Al menos tres personas han muerto este martes en un ataque perpetrado con drones del Ejército de Ucrania contra un minibús que circulaba en una zona ocupada de la provincia de Zaporiyia, en el este de Ucrania.",
+    "La Comisión Europea ha desembolsado este miércoles un nuevo pago a Ucrania, esta vez de 1.240 millones de euros, para financiar la compra de drones, interceptores, munición para drones y misiles fabricados por empresas ucranianas, dentro del componente de defensa del préstamo europeo de 90.000 millo",
+    "Las Fuerzas Armadas de Rusia han asegurado este jueves haber interceptado y destruido un total de 399 drones lanzados por Ucrania durante la pasada noche y que ha afectado a una veintena de regiones del país, además de a la península de Crimea y al mar Negro."
+   ],
+   "sources": [
+    "El País Internacional",
+    "Europa Press Internacional"
+   ]
+  },
+  "219": {
+   "cause": "lexicon_gap_en",
+   "lang": "en",
+   "titles": [
+    "Arab News | UEFA bars Israeli journalists after tense Ireland media session",
+    "Ireland coach wants UEFA to keep team apart from Israel after contentious games",
+    "UEFA to investigate spitting incident at Ireland–Israel football match",
+    "UEFA investigate alleged spitting incident during Ireland v Israel game"
+   ],
+   "leads": [
+    "Domain: arabnews.com | Language: ENGLISH | Source country:",
+    "Domain: mymotherlode.com | Language: ENGLISH | Source country:",
+    "An Israeli player is accused of spitting on an Irish coach as the teams returned to their dressing rooms at half-time.",
+    "Domain: tribune.com.pk | Language: ENGLISH | Source country:"
+   ],
+   "sources": [
+    "Al Jazeera",
+    "GDELT"
+   ]
+  },
+  "236": {
+   "cause": "lexicon_gap_en",
+   "lang": "en",
+   "titles": [
+    "Anduril launches new shipyard to manufacture components for Virginia-class subs",
+    "Anduril, US Navy invest $6.6 billion to boost submarine parts production",
+    "Anduril, US Navy invest $6.6 billion to boost submarine parts production"
+   ],
+   "leads": [
+    "Anduril&#8217;s Arsenal-2 is positioned to produce “complex components and large scale assemblies” for the vessels, according to the firm.",
+    "Defense tech firm Anduril said on Tuesday it will invest $3.7 billion to develop a new shipyard in Maryland to build critical components for the US Navy’s Virginia-class submarines, as Washington seeks to bolster its maritime defense capabilities.Subsequently, the US Navy awarded Anduril a contract ",
+    "Domain: defensenews.com | Language: ENGLISH | Source country:"
+   ],
+   "sources": [
+    "Breaking Defense",
+    "Defense News",
+    "GDELT"
+   ]
+  },
+  "276": {
+   "cause": "lexicon_gap_en",
+   "lang": "en",
+   "titles": [
+    "Euro falls to 17-month low against the USD on French debt concerns",
+    "Despite rising yields and political gridlock, France not facing a debt crisis: analysts"
+   ],
+   "leads": [
+    "The euro has stumbled to a 17-month low against the US dollar on concern about France's ability to bring its public finances in order.  The currency has fallen nearly 7% from its peak in late January.  Meanwhile, global oil prices fell despite ongoing tensions around the Arabian Peninsula, after the",
+    "Despite the recent surge in French borrowing costs that pushed the country’s 10-year bond yield spread with Germany to a level unseen since the euro zone crisis, analysts are urging calm, saying France is not facing a debt crisis but cautioning that future uncertainties remain."
+   ],
+   "sources": [
+    "France 24",
+    "South China Morning Post"
+   ]
+  },
+  "277": {
+   "cause": "lexicon_gap_en",
+   "lang": "en",
+   "titles": [
+    "US seeks US$100 million bail each for Chinese-born couple in surrogacy child abuse case",
+    "California pair charged with abusing at least 14 surrogate-born children"
+   ],
+   "leads": [
+    "Los Angeles County prosecutors are seeking bail of US$100 million each for a Chinese-born couple charged on Tuesday with conspiring to abuse young children who were born through surrogacy and raised in their California mansion.",
+    "Guojun Xuan and Silvia Zhang were arrested at their Arcadia mansion after 21 children were removed from their custody last year."
+   ],
+   "sources": [
+    "BBC World",
+    "South China Morning Post"
+   ]
+  },
+  "293": {
+   "cause": "lexicon_gap_en",
+   "lang": "en",
+   "titles": [
+    "Canada suspends plans to expand assisted dying to people with mental illness",
+    "Canada will not allow assisted suicide for those with only mental illness"
+   ],
+   "leads": [
+    "People with mental illness alone were to be eligible for assisted dying in Canada in March 2027, but that has now been paused indefinitely.",
+    "Canada will not allow medically assisted suicide for people whose only condition is mental illness, the justice minister said on Wednesday, seeking to close debate on one of the country’s most controversial healthcare issues."
+   ],
+   "sources": [
+    "BBC World",
+    "South China Morning Post"
+   ]
+  },
+  "324": {
+   "cause": "lexicon_gap_en",
+   "lang": "en",
+   "titles": [
+    "RBI projects CPI inflation at 5.2% for FY27, sees Q3 inflation rising to 6% due to rising food and fuel costs",
+    "Companies expect inflation to rise further - Bank of Italy survey"
+   ],
+   "leads": [
+    "Domain: britainnews.net | Language: ENGLISH | Source country:",
+    "(ANSA) - ROME, 08 OTT - Italian companies expect further increases in inflation over the next 12 months, following the spikes linked to the Iran war, due to hikes in raw material costs, according to a survey of industrial and service firms released on Thursday by the Bank of Italy."
+   ],
+   "sources": [
+    "ANSA English",
+    "GDELT"
+   ]
+  },
+  "342": {
+   "cause": "lexicon_gap_en",
+   "lang": "en",
+   "titles": [
+    "Margaret Hamilton, whose software helped land Apollo 11 on the Moon, dies at 90",
+    "Muore Margaret Hamilton, creò software che permise l'allunaggio dell'Apollo 11",
+    "Muere Margaret Hamilton, la científica que desarrolló el software que fue clave para que la misión Apolo 11 llegara a la Luna"
+   ],
+   "leads": [
+    "Pioneering computer scientist led the development of the software for Nasa's Apollo mission and was awarded the Presidential Medal of Freedom.",
+    "Margaret Hamilton, la ricercatrice",
+    "Fuente de la imagen,NurPhoto vía Getty Images"
+   ],
+   "sources": [
+    "ANSA Mondo",
+    "BBC Mundo",
+    "BBC World"
+   ]
+  },
+  "373": {
+   "cause": "lexicon_gap_en",
+   "lang": "en",
+   "titles": [
+    "Two Renoir paintings stolen from French museum are recovered",
+    "Renoir paintings stolen from French Riviera museum recovered, six suspects arrested"
+   ],
+   "leads": [
+    "The two works were seized last month when thieves cut through a fence and smashed a window at the Renoir Museum on the French Riviera.",
+    "Two ⁠Renoir paintings worth millions ​of dollars that were stolen from a ​museum on the French Riviera a month ago have been recovered and six suspects have been arrested, the ​local ‌mayor said on Friday. The thieves sliced through a fence, climbed through a window and initally stole four paintings"
+   ],
+   "sources": [
+    "BBC World",
+    "France 24"
+   ]
+  },
+  "394": {
+   "cause": "lexicon_gap_en",
+   "lang": "en",
+   "titles": [
+    "Commentator Katie Zacharia picked as new White House press secretary",
+    "Katie Zacharia ‘offered” position as White House press secretary"
+   ],
+   "leads": [
+    "The conservative commentator currently works as a communications adviser at Trump Media & Technology Group.",
+    "The role has been vacant since former White House press secretary Karoline Leavitt left in August."
+   ],
+   "sources": [
+    "Al Jazeera",
+    "BBC World"
+   ]
+  },
+  "429": {
+   "cause": "non_english_headlines",
+   "lang": "es",
+   "titles": [
+    "Huracanes en México: Simón y Rachel dejan al menos dos muertos y 10 desaparecidos",
+    "Cómo California se convirtió en cuna y refugio de los hijos de los narcos más temidos de México",
+    "Al menos siete muertos, entre ellos dos menores, por el paso del ciclón 'Rachel' en Baja California, en México"
+   ],
+   "leads": [
+    "El huracán Simón y la tormenta tropical Rachel dejaron al menos dos muertos y 10 desaparecidos en Guerrero y Baja California",
+    "Emma Coronel sale de la Corte de Nueva York con sus hijas, en junio de 2018.",
+    "Al menos siete personas han fallecido, entre ellas dos menores de trece y cuatro años, y otras tres se encuentran desaparecidas tras el paso del ciclón 'Rachel' por el municipio de Ensenada, en el estado mexicano de Baja California."
+   ],
+   "sources": [
+    "El País Internacional",
+    "Europa Press Internacional",
+    "France 24 Español"
+   ]
+  },
+  "446": {
+   "cause": "non_english_headlines",
+   "lang": "es",
+   "titles": [
+    "Usa, blitz del Dipartimento Sicurezza interna nella casa della deputata dem Ilhan Omar",
+    "\"No me silenciarán\": Ilhan Omar denuncia \"intimidación política\" de Trump tras allanamiento a su casa",
+    "Agentes federales allanan la casa de la congresista Ilhan Omar, crítica de Donald Trump: \"No me silenciaran\""
+   ],
+   "leads": [
+    "Media: \"Indagine penale in corso sulla documentazione relativa al suo status di immigrata\"",
+    "Agentes federales de Estados Unidos registraron la residencia en Washington de la representante demócrata Ilhan Omar, enemiga política del presidente Donald Trump",
+    "Agentes federales ejecutaron una orden judicial en la residencia de la congresista demócrata a tres semanas de las elecciones legislativas.La legisladora calificó el procedimiento como una persecución política impulsada por el presidente y se confirmó que no se presentaron cargos en su contra."
+   ],
+   "sources": [
+    "Clarín Mundo",
+    "France 24 Español",
+    "Rai News Esteri"
+   ]
+  },
+  "471": {
+   "cause": "lexicon_gap_en",
+   "lang": "en",
+   "titles": [
+    "Man dies after fall from Six Flags rollercoaster in Georgia",
+    "One killed, several injured in Georgia rollercoaster ‘incident’",
+    "Horrified witnesses recount fatal rollercoaster incident at Six Flags"
+   ],
+   "leads": [
+    "One person has died and several others were injured in an incident at Six Flags ‘Over Georgia’ theme park near Atlanta.",
+    "Six Flags temporarily closes nine similar rollercoasters after a fatal accident at its Georgia amusement park.",
+    "Police say preliminary information suggests the man who died at the Georgia amusement park fell from a ride."
+   ],
+   "sources": [
+    "Al Jazeera",
+    "BBC World"
+   ]
+  },
+  "476": {
+   "cause": "non_english_headlines",
+   "lang": "es",
+   "titles": [
+    "Chile: fenómeno de El Niño extiende temporada de nevadas y favorece al gremio turístico",
+    "Tras el aluvión, El Niño vuelve a golpear en Santiago de Chile: voladura de techos, inundaciones y granizo como nieve",
+    "Una lluvia torrencial e inesperada desborda Santiago de Chile"
+   ],
+   "leads": [
+    "Los turistas de Valle Nevado, en Chile, celebran la extensión de la temporada de nieve, consecuencia del fenómeno de El Niño",
+    "Una tormenta anegó calles, generó destrozos e inundó edificios este martes en la capital del país.Alerta roja en gran parte de Chile",
+    "En plena primavera en Santiago de Chile, cuando habitualmente las lluvias y los fríos han acabado, este martes unatormenta inesperada ha desbordado la ciudad de más de seis millones de habitantes"
+   ],
+   "sources": [
+    "Clarín Mundo",
+    "El País Internacional",
+    "France 24 Español"
+   ]
+  },
+  "484": {
+   "cause": "lexicon_gap_en",
+   "lang": "en",
+   "titles": [
+    "Drivers queue for hours in Bali amid fuel shortage",
+    "Indonesia’s Bali hit by fuel crisis as huge queues form at petrol stations"
+   ],
+   "leads": [
+    "Drivers in Bali face hours-long queues amid shortages of Indonesia’s subsidised Pertalite fuel.",
+    "Motorists have been left queuing for hours at petrol stations across Indonesia’s resort island of Bali in recent days amid reports of a crippling fuel shortage."
+   ],
+   "sources": [
+    "Al Jazeera",
+    "South China Morning Post"
+   ]
+  },
+  "576": {
+   "cause": "lexicon_gap_en",
+   "lang": "en",
+   "titles": [
+    "Nepal floods: Why Balendra Shah wants India and China to work together in the Himalayan region",
+    "India and China aren't friends - but Nepal wants to unite them against climate threats"
+   ],
+   "leads": [
+    "Domain: bbc.co.uk | Language: ENGLISH | Source country:",
+    "Can Nepal bring the two regional giants together to confront a shared climate threat in the Himalayas?"
+   ],
+   "sources": [
+    "BBC World",
+    "GDELT"
+   ]
+  },
+  "602": {
+   "cause": "lexicon_gap_en",
+   "lang": "en",
+   "titles": [
+    "Prices increasing for overseas military kids school meals",
+    "Expanded dining options popular among soldiers, US Army officials say"
+   ],
+   "leads": [
+    "Domain: marinecorpstimes.com | Language: ENGLISH | Source country:",
+    "The U.S"
+   ],
+   "sources": [
+    "Defense News",
+    "GDELT"
+   ]
+  },
+  "636": {
+   "cause": "non_english_headlines",
+   "lang": "es",
+   "titles": [
+    "El Gobierno palestino condena el incendio de una mezquita en Cisjordania a manos de colonos israelíes",
+    "Decenas de colonos enmascarados atacan una aldea de Cisjordania durante la recogida de la aceituna y dan una paliza a una fotógrafa",
+    "A patadas y golpes, colonos israelíes atacan brutalmente a una fotógrafa de The Washington Post: \"Sin mi chaleco y casco no estaría viva\"",
+    "Colonos israelíes atacan brutalmente la aldea de Abu Falah y agreden a una fotógrafa de EE. UU.",
+    "“Déjame morir”: el terror alcanza a fotoperiodista en una ofensiva de colonos en la cosecha en Cisjordania",
+    "\"Un acto de violencia grave\": condenan ataque de colonos israelíes contra diplomáticos europeos en Cisjordania",
+    "Nuevo ataque de colonos israelíes en Cisjordania: víctimas habían parte de convoy de la UE",
+    "Colonos israelíes atacaron a una delegación diplomática europea en Cisjordania: fuerte repudio del canciller de Bélgica",
+    "La UE condena el ataque de colonos a diplomáticos europeos en Cisjordania y pide responsabilidades",
+    "Diez detenidos por su supuesto papel en los ataques contra una periodista y diplomáticos en Cisjordania"
+   ],
+   "leads": [
+    "El Gobierno palestino ha condenado el incendio el miércoles de una mezquita en la ciudad cisjordana de Mijmas, situada en los alrededores de Jerusalén, a manos de un grupo de colonos y ha dicho que se trata de un acto \"terrorista\", en medio del repunte de estos asaltos y las incursiones de las fuerz",
+    "Soldados israelíes junto a un palestino herido tras el ataque de colonos, este viernes en Abu Falah (Cisjordania).",
+    "La periodista estadounidense Heidi Levine fue atacada al cubrir la recolección de aceitunas de otoño en Cisjordania",
+    "Heidi Levine, fotógrafa del 'The Washington Post', y al menos un palestino están hospitalizados debido al brutal ataque coordinado por decenas de colonos israelíes, durante la recogida de aceituna en el pueblo de Abu Falah, cerca de Ramala",
+    "La temporada de cosecha de aceitunas ha comenzado en Cisjordania y con ella también la temporada de terror para decenas de miles de familias de agricultores palestinos",
+    "Fuente de la imagen,Reuters",
+    "Colonos israelíes atacaron un convoy de diplomáticos europeos que realizaban una visita a la Cisjordania ocupada y propinaron una paliza a un alcalde francés que se encontraba allí, declararon a la AFP un testigo y dos diplomáticos",
+    "Fue en la localidad de Taybeh, durante la recorrida de una comitiva internacional tras las agresiones sufridas por agricultores palestinos.El canciller belga exigió a las autoridades israelíes llevar a los responsables ante la Justicia e impulsó sanciones europeas.",
+    "El Servicio Europeo de Acción Exterior ha condenado este domingo la agresión sufrida el sábado por un convoy diplomático europeo en Taibé, al este de Ramala, en Cisjordania, obra de colonos israelíes y ha pedido rendición de cuentas de los responsables",
+    "Las autoridades de Israel han anunciado este lunes la detención de diez personas por su supuesto papel en los ataques perpetrados durante los últimos días por colonos en Cisjordania, que se saldaron con numerosos heridos, entre ellos una periodista del diario estadounidense 'The Washington Post' y v"
+   ],
+   "sources": [
+    "BBC Mundo",
+    "Clarín Mundo",
+    "El País Internacional",
+    "Europa Press Internacional",
+    "France 24 Español"
+   ]
+  },
+  "647": {
+   "cause": "lexicon_gap_en",
+   "lang": "en",
+   "titles": [
+    "Israel ministers probed in Rome over assault on Gaza Flotilla",
+    "Italy probes Israel’s Katz over abuse, sexual assault of flotilla activists",
+    "Italy widens flotilla torture probe to include Israeli defence minister, others"
+   ],
+   "leads": [
+    "(ANSA) - ROME, 16 OTT - Two Israeli ministers are among those placed under investigation by Rome prosecutors Friday in a probe into the Israeli assault on the Global Sumud Flotilla for Gaza in May, judicial sources said.",
+    "Rome prosecutors also name 12 senior military, police and prison officials over alleged abuse of detained activists.",
+    "Domain: middleeasteye.net | Language: ENGLISH | Source country:"
+   ],
+   "sources": [
+    "ANSA English",
+    "Al Jazeera",
+    "GDELT"
+   ]
+  },
+  "673": {
+   "cause": "mixed_language_gap",
+   "lang": "it",
+   "titles": [
+    "I sindaci di Parigi, Marsiglia e Lione chiedono un incontro col premier",
+    "A Lione saccheggiato e dato alle fiamme l’ufficio del turismo. Il video dell’assalto"
+   ],
+   "leads": [
+    "In una dichiarazione congiunta, i",
+    "Ai vigili del fuoco è stato impedito di raggiungere l'ufficio per spegnere l'incendio"
+   ],
+   "sources": [
+    "ANSA Mondo",
+    "Rai News Esteri"
+   ]
+  },
+  "713": {
+   "cause": "non_english_headlines",
+   "lang": "es",
+   "titles": [
+    "Cómo es la revolucionaria misión que busca traer un trozo de la mayor luna de Marte a la Tierra",
+    "Una nave espacial japonesa pretende traer de vuelta un fragmento de la Luna marciana",
+    "Una sonda japonesa parte rumbo a la luna Fobos de Marte con el vehículo explorador franco-alemán Idefix",
+    "Japón lanza la primera misión mundial a una luna de Marte",
+    "Despega con éxito misión que explorará una de las lunas de Marte por primera vez en la historia"
+   ],
+   "leads": [
+    "La misión espacial japonesa MMX tiene la ambiciosa misión de traer 10 gramos de polvo lunar marciano de vuelta a la Tierra para ser estudiado y resolver el misterio de la formación de las lunas de Marte.",
+    "La misión, cuyo lanzamiento está previsto para el lunes, se dirige a Fobos, la mayor de las dos lunas de Marte",
+    "Una sonda espacial japonesa ha iniciado con éxito este martes su viaje hacia Marte, con el objetivo de desplegar el vehículo explorador franco-alemán Idefix en Fobos, una de las lunas de Marte, en 2029.",
+    "Científicos japoneses lanzaron el martes una nave espacial que aspira a ser la primera en recoger muestras de una de las lunas de Marte, lo que podría ayudar a desvelar los orígenes del sistema solar y de la vida en la Tierra.",
+    "Despegó con éxito el cohete que lleva la primera sonda que explorará Fobos, la mayor de las lunas de Marte"
+   ],
+   "sources": [
+    "BBC Mundo",
+    "Clarín Mundo",
+    "Europa Press Internacional",
+    "France 24 Español"
+   ]
+  },
+  "739": {
+   "cause": "lexicon_gap_en",
+   "lang": "en",
+   "titles": [
+    "‘Weight of responsibility’: Promise and perils of covering Ethiopia’s war",
+    "Ethiopia: From Military Victory to Political Settlement - Why Ethiopias Real Test Lies Beyond Controlling Mekelle",
+    "A look at how Ethiopias wars, sea ambitions and Nile dam fuel fears of wider conflict | World",
+    "Fighting in Ethiopia and the Risk of Regional Spillover"
+   ],
+   "leads": [
+    "Al Jazeera correspondent shares his experience of covering the fighting between government forces and Tigray rebels.",
+    "Domain: allafrica.com | Language: ENGLISH | Source country:",
+    "Domain: rockymounttelegram.com | Language: ENGLISH | Source country:",
+    "In September, fighting broke out in Ethiopia&#8217;s Tigray region between Ethiopian government forces and the Tigray People&#8217;s Liberation Front (TPLF), effectively collapsing the 2022 peace deal"
+   ],
+   "sources": [
+    "Al Jazeera",
+    "GDELT",
+    "War on the Rocks"
+   ]
+  },
+  "742": {
+   "cause": "non_english_headlines",
+   "lang": "es",
+   "titles": [
+    "Las lluvias torrenciales y las graves inundaciones en el este de España dejan al menos cuatro muertos",
+    "Tormenta Adam deja muertos y graves inundaciones en el este de España"
+   ],
+   "leads": [
+    "El temporal afectó al litoral mediterráneo y provocó al menos cuatro muertes en la Comunidad Valenciana y Cataluña",
+    "Calles cubiertas de barro y graves inundaciones afectan al este de España tras un aguacero provocado por la tormenta Adam"
+   ],
+   "sources": [
+    "Clarín Mundo",
+    "France 24 Español"
+   ]
+  },
+  "804": {
+   "cause": "lexicon_gap_en",
+   "lang": "en",
+   "titles": [
+    "Drones take over AUSA, plus the Army’s plan to bring in new vendors",
+    "Europe weighs giving utilities, infrastructure companies more powers to bring down drones",
+    "Europe weighs giving utilities, infrastructure companies more powers to bring down drones",
+    "The Future of American Drone Warfare | Daily Reckoning",
+    "Establishing Battery Supply Chain Resilience for Drones",
+    "Rocket-armed uncrewed aircraft intercepts multiple drones in U.S. tests",
+    "Army unit experimenting with small drones for ‘tailored cyber effects’"
+   ],
+   "leads": [
+    "Drones and counter-drone tech dominated the show as the Army implements new ways to keep industry competing.",
+    "Domain: whbl.com | Language: ENGLISH | Source country:",
+    "At a former flight-test base south of Paris, drones swoop over fields and woodland as teams on the ground test systems designed to stop them — a response to a growing wave of drone incursions and “hybrid attacks” since Russia invaded Ukraine in 2022.The potential clients for technology such as elect",
+    "Domain: dailyreckoning.com | Language: ENGLISH | Source country:",
+    "Militaries have spent more than a century operating with fuel and ammunition as limits of combat endurance",
+    "Domain: militaryembedded.com | Language: ENGLISH | Source country:",
+    "The Army is testing drone-mounted cyber and electronic warfare capabilities as it works to determine the standard-issue equipment for its 11th Cyber Battalion and a forthcoming second battalion."
+   ],
+   "sources": [
+    "Breaking Defense",
+    "Defense News",
+    "GDELT",
+    "War on the Rocks"
+   ]
+  },
+  "823": {
+   "cause": "lexicon_gap_en",
+   "lang": "en",
+   "titles": [
+    "China creates state-owned firm in Xiongan to develop nation’s AI data resources",
+    "AI Will Deepen Divide Between the PRCs Two Economies"
+   ],
+   "leads": [
+    "China has set up a new state-owned enterprise dedicated to managing the country’s massive data resources, a significant move designed to turbocharge the nation’s artificial intelligence industry and bolster its digital economy.",
+    "Domain: jamestown.org | Language: ENGLISH | Source country:"
+   ],
+   "sources": [
+    "GDELT",
+    "South China Morning Post"
+   ]
+  },
+  "840": {
+   "cause": "non_english_headlines",
+   "lang": "es",
+   "titles": [
+    "La Guardia Revolucionaria iraní afirma haber atacado cuatro buques que movían petróleo en el golfo Pérsico",
+    "Los ejércitos de Estados Unidos e Israel desarrollan planes para atacar Irán tras las elecciones"
+   ],
+   "leads": [
+    "Agrega que otros tres han chocado con minas y advierte con atacar bases militares de EEUU si sigue fomentando el tráfico en el estrecho     MADRID, 22 Oct",
+    "Motoristas pasan ante un retrato del líder espiritual iraní, Mojtaba Jameneí, en una plaza de Teherán"
+   ],
+   "sources": [
+    "El País Internacional",
+    "Europa Press Internacional"
+   ]
+  },
+  "946": {
+   "cause": "lexicon_gap_en",
+   "lang": "en",
+   "titles": [
+    "Indonesia seizes more than a tonne of ketamine from tanker",
+    "Malaysian-owned tanker carrying US$14 million in ketamine seized in Indonesia"
+   ],
+   "leads": [
+    "Indonesian authorities seized 1.16 tonnes of ketamine from a Malaysian vessel in the Strait of Malacca.",
+    "The tanker detained by Indonesian authorities that was used in an attempt to smuggle 1.16 tonnes of ketamine is owned by a Malaysian-registered company."
+   ],
+   "sources": [
+    "Al Jazeera",
+    "South China Morning Post"
+   ]
+  },
+  "967": {
+   "cause": "mixed_language_gap",
+   "lang": "it",
+   "titles": [
+    "Liberman chiede a procura un'inchiesta per tradimento contro Netanyahu",
+    "El opositor israelí Avigdor Liberman pide a la Fiscalía investigar a Netanyahu por \"traición\""
+   ],
+   "leads": [
+    "Il leader del partito Yisrael",
+    "El líder del partido Israel Beitenu, Avigdor Liberman, ha enviado este lunes una carta a la fiscal general del país, Gali Baharav-Miara, para pedir la apertura de una investigación por la vía penal contra el primer ministro, Benjamin Netanyahu, por \"traición\", al considerar que ha estado tratando de"
+   ],
+   "sources": [
+    "ANSA Mondo",
+    "Europa Press Internacional"
+   ]
+  },
+  "1013": {
+   "cause": "lexicon_gap_en",
+   "lang": "en",
+   "titles": [
+    "Defeated Brazilian candidate Flavio Bolsonaro's passports cancelled, whereabouts unknown",
+    "Flávio Bolsonaro's passports cancelled after he fails to surrender them"
+   ],
+   "leads": [
+    "Brazil on Tuesday cancelled ​Senator Flavio Bolsonaro's passports after he failed to hand them into police as part of a money laundering probe in which he denies wrongdoing",
+    "The defeated presidential candidate crossed a land border into Argentina late on Tuesday, Argentine migration authorities say."
+   ],
+   "sources": [
+    "BBC World",
+    "France 24"
+   ]
+  },
+  "1053": {
+   "cause": "lexicon_gap_en",
+   "lang": "en",
+   "titles": [
+    "US Fed holds interest rates steady despite surging inflation",
+    "Fed leaves interest rates unchanged despite inflation in the US"
+   ],
+   "leads": [
+    "The US Federal Reserve on Wednesday held interest rates steady, in line with market expectations, days ahead of crucial midterm elections where surging inflation has been a key issue.",
+    "Rates will remain 3.75-4 percent even as inflation continues to rise."
+   ],
+   "sources": [
+    "Al Jazeera",
+    "South China Morning Post"
+   ]
+  },
+  "1063": {
+   "cause": "lexicon_gap_en",
+   "lang": "en",
+   "titles": [
+    "Pentagon watchdog tells lawmakers it wont investigate Starlink slowdowns to Ukraine",
+    "Pentagon watchdog rejects bipartisan plea to investigate Starlink disruption, AP reports"
+   ],
+   "leads": [
+    "Domain: niagarafallsreview.ca | Language: ENGLISH | Source country:",
+    "The refusal is interpreted by sources familiar with the matter as a way to avoid investigating Elon Musk and Starlink, AP reported."
+   ],
+   "sources": [
+    "GDELT",
+    "Kyiv Independent"
+   ]
+  },
+  "1068": {
+   "cause": "lexicon_gap_en",
+   "lang": "en",
+   "titles": [
+    "Hello Kitty maker cuts ties with Japanese spy drama after China backlash",
+    "Hello Kitty owner Sanrio scraps Japanese TV show Vivant deal over China backlash",
+    "Hello Kitty Maker Sanrio Cuts Ties With TV Spy Show After China Backlash"
+   ],
+   "leads": [
+    "Sanrio has apologised after its merchandise line with Japanese TV series Vivant drew criticism.",
+    "Japanese character company Sanrio, owner of popular IPs including Hello Kitty, Cinnamoroll and My Melody, has terminated its planned collaboration with the television drama Vivant following strong public criticism in China.",
+    "Domain: deccanchronicle.com | Language: ENGLISH | Source country:"
+   ],
+   "sources": [
+    "BBC World",
+    "GDELT",
+    "South China Morning Post"
+   ]
+  },
+  "1071": {
+   "cause": "non_english_headlines",
+   "lang": "es",
+   "titles": [
+    "Una nueva era de guerra: un helicóptero estadounidense de 9 toneladas contra un dron",
+    "Rusia derriba más de 1.200 drones de Ucrania, la cifra más alta en una sola noche desde el inicio de la guerra"
+   ],
+   "leads": [
+    "",
+    "Las autoridades de Rusia han anunciado este jueves el derribo de más de 1.200 drones lanzados por el Ejército de Ucrania, la cifra más alta desde el estallido de la guerra a causa de la orden de invasión firmada en febrero de 2022 por el presidente ruso, Vladimir Putin."
+   ],
+   "sources": [
+    "Clarín Mundo",
+    "Europa Press Internacional"
+   ]
+  },
+  "1077": {
+   "cause": "lexicon_gap_en",
+   "lang": "en",
+   "titles": [
+    "Rain brings temporary relief as Southeast Asia battles fires and toxic haze",
+    "Indonesia haze cost Malaysia US$1.97 billion in losses: study",
+    "Indonesians share impact of haze on their livelihoods",
+    "Indonesia’s wildfire smoke crisis claims over 3,500 lives in September",
+    "Smoke from wildfires killed 3,500 people in Indonesia in September: Report"
+   ],
+   "leads": [
+    "Rain has offered brief relief from wildfires in Indonesia, but underground peat fires continue to burn",
+    "Smoke from this year’s Indonesian forest and peatland fires has inflicted an estimated 8 billion ringgit (US$1.97 billion) in welfare losses on Malaysia, contributing to an estimated 1,700 deaths and severely disrupting manufacturing, according to a report commissioned by the country’s leading indus",
+    "Months of forest fires and toxic haze in Indonesia has severely disrupted daily life.",
+    "Pollution from smoke emitted by months of wildfires across Indonesia caused an estimated 3,560 deaths in the vast Southeast Asian archipelago in September, according to a new study.",
+    "Persistent wildfires sparked by drought have enveloped the region in smog."
+   ],
+   "sources": [
+    "Al Jazeera",
+    "South China Morning Post"
+   ]
+  },
+  "1082": {
+   "cause": "mixed_language_gap",
+   "lang": "it",
+   "titles": [
+    "El Salvador avvia la campagna per le presidenziali del 2027",
+    "Christine Lagarde dejará la presidencia del BCE el 7 de febrero, nueve meses antes de finalizar su mandato",
+    "Lagarde: «Lascio la Bce dal 7 febbraio 2027»"
+   ],
+   "leads": [
+    "Inizia in El Salvador il",
+    "La presidenta del Banco Central Europeo (BCE), Christine Lagarde, anunció su salida anticipada para el 7 de febrero de 2027, una decisión que abre la carrera por su sucesión en medio de la incertidumbre…",
+    "«Lascio questa istituzione con un senso di buon lavoro fatto e una Bce pronta per il futuro»"
+   ],
+   "sources": [
+    "ANSA Mondo",
+    "France 24 Español",
+    "Il Sole 24 Ore Mondo"
+   ]
+  },
+  "1092": {
+   "cause": "mixed_language_gap",
+   "lang": "it",
+   "titles": [
+    "Sindaco di Brcko, 'tre morti e 12 feriti nell'elicottero caduto'",
+    "Precipita elicottero dell'Eufor in Bosnia, possibili vittime",
+    "Cade un Chinook italiano in Bosnia, 3 morti e 12 feriti",
+    "Elicottero caduto in Bosnia, le prime immagini",
+    "Elicottero italiano precipitato in Bosnia, 4 vittime. Crosetto dagli 11 feriti. Si indaga su cause"
+   ],
+   "leads": [
+    "\"Tre persone sono morte e dodici",
+    "La Forza militare dell'Unione",
+    "Un elicottero Chinook italiano impiegato nella missione militare Althea dell'Unione Europea in Bosnia-Erzegovina è precipitato nella regione di Brcko, nel nord-est del Paese",
+    "Unelicottero militare italiano CH 47 Chinook, impegnato nell'operazione Eufor Althea inBosnia-Erzegovina, èprecipitatonel pomeriggio di oggi per cause ancora in corso di accertamento",
+    "La Difesa conferma il bilancio delle vittime"
+   ],
+   "sources": [
+    "ANSA Mondo",
+    "Rai News Esteri"
+   ]
+  },
+  "1101": {
+   "cause": "lexicon_gap_en",
+   "lang": "en",
+   "titles": [
+    "E' morto Patrick Stewart, l'attore di Star Trek e X-Men",
+    "Muere a los 86 años Patrick Stewart, legendario actor de Star Trek y X-Men",
+    "Patrick Stewart, star of 'Star Trek' and 'X men', dies at 86",
+    "Muere Patrick Stewart, estrella de 'Star Trek' y 'X-Men'",
+    "Patrick Stewart, ‘Star Trek’ Captain Picard and ‘X-Men’ actor, dies at 86",
+    "Patrick Stewart, of Star Trek and X-Men fame, dies at 86",
+    "Addio a Patrick Stewart, il Capitano Picard di \"Star Trek\" e il Professor X degli \"X-Men\"",
+    "Patrick Stewart found Star Trek fame but always returned to Shakespeare and the stage"
+   ],
+   "leads": [
+    "Addio a Patrick Stewart, l'attore",
+    "A lo largo de una trayectoria que abarcó siete décadas, Patrick Stewart  obtuvo varios premios Emmy y Globos de Oro, una estrella en el Paseo de la Fama de Hollywood y el título de caballero otorgado por la reina Isabel II.",
+    "The British actor Patrick Stewart has died at 86, a statement released on Thursday said",
+    "El actor británico Patrick Stewart, conocido por su trabajo en 'Star Trek' y la franquicia cinematográfica de 'X-Men', murió a los 86 años, según un comunicado de su familia.",
+    "Stewart died in Los Angeles after living with Alzheimer&#039;s disease and Lewy body dementia.",
+    "Patrick Stewart, who rose from poverty in England to become an accomplished Shakespearean stage actor and then achieved global stardom as the erudite Captain Jean-Luc Picard in ⁠television’s Star Trek: The Next Generation and the telepathic Professor Charles ⁠Xavier in the X-Men films, has died at t",
+    "Patrick Stewart era malato di Alzheimer e di demenza a corpi di Lewy, si è spento all'età di 86 anni",
+    "Domain: isp.netscape.com | Language: ENGLISH | Source country:"
+   ],
+   "sources": [
+    "ANSA Mondo",
+    "Al Jazeera",
+    "BBC Mundo",
+    "France 24",
+    "France 24 Español",
+    "GDELT",
+    "Rai News Esteri",
+    "South China Morning Post"
+   ]
+  }
+ },
+ "per_development": {
+  "1": {
+   "stored": "negotiation",
+   "recomputed": "negotiation",
+   "lang": "en"
+  },
+  "2": {
+   "stored": "summit",
+   "recomputed": "summit",
+   "lang": "en"
+  },
+  "3": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "4": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "5": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "6": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "7": {
+   "stored": "policy_change",
+   "recomputed": "policy_change",
+   "lang": "en"
+  },
+  "8": {
+   "stored": "security_incident",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "9": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "10": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "en"
+  },
+  "11": {
+   "stored": "policy_change",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "suppressed_legal"
+  },
+  "12": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "13": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "14": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "15": {
+   "stored": "warning",
+   "recomputed": "warning",
+   "lang": "en"
+  },
+  "16": {
+   "stored": "policy_change",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "suppressed_legal"
+  },
+  "17": {
+   "stored": "arms_transfer",
+   "recomputed": "arms_transfer",
+   "lang": "en"
+  },
+  "18": {
+   "stored": "ceasefire",
+   "recomputed": "ceasefire",
+   "lang": "en"
+  },
+  "19": {
+   "stored": "warning",
+   "recomputed": "warning",
+   "lang": "en"
+  },
+  "20": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "21": {
+   "stored": "agreement",
+   "recomputed": "agreement",
+   "lang": "en"
+  },
+  "22": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "23": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "24": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "25": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "26": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "27": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "en"
+  },
+  "28": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "29": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "30": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "31": {
+   "stored": "security_incident",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "32": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "en"
+  },
+  "33": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "en"
+  },
+  "34": {
+   "stored": "diplomatic_visit",
+   "recomputed": "diplomatic_visit",
+   "lang": "en"
+  },
+  "35": {
+   "stored": "sanctions",
+   "recomputed": "sanctions",
+   "lang": "en"
+  },
+  "36": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "37": {
+   "stored": "resignation",
+   "recomputed": "resignation",
+   "lang": "en"
+  },
+  "38": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "39": {
+   "stored": "summit",
+   "recomputed": "summit",
+   "lang": "en"
+  },
+  "40": {
+   "stored": "agreement",
+   "recomputed": "agreement",
+   "lang": "en"
+  },
+  "41": {
+   "stored": "security_incident",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "42": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "43": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "44": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "45": {
+   "stored": "sanctions",
+   "recomputed": "sanctions",
+   "lang": "en"
+  },
+  "46": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "47": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "48": {
+   "stored": "diplomatic_visit",
+   "recomputed": "diplomatic_visit",
+   "lang": "en"
+  },
+  "49": {
+   "stored": "summit",
+   "recomputed": "summit",
+   "lang": "en"
+  },
+  "50": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "51": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "52": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "suppressed_legal"
+  },
+  "53": {
+   "stored": "security_incident",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "suppressed_legal"
+  },
+  "54": {
+   "stored": "appointment",
+   "recomputed": "appointment",
+   "lang": "en"
+  },
+  "55": {
+   "stored": "security_incident",
+   "recomputed": "security_incident",
+   "lang": "en"
+  },
+  "56": {
+   "stored": "bilateral_meeting",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "suppressed_legal"
+  },
+  "57": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "58": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "59": {
+   "stored": "threat",
+   "recomputed": "threat",
+   "lang": "en"
+  },
+  "60": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "61": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "62": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "63": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "64": {
+   "stored": "security_incident",
+   "recomputed": "security_incident",
+   "lang": "en"
+  },
+  "65": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "66": {
+   "stored": "policy_change",
+   "recomputed": "policy_change",
+   "lang": "en"
+  },
+  "67": {
+   "stored": "warning",
+   "recomputed": "warning",
+   "lang": "en"
+  },
+  "68": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "69": {
+   "stored": "policy_change",
+   "recomputed": "policy_change",
+   "lang": "en"
+  },
+  "70": {
+   "stored": "military_exercise",
+   "recomputed": "military_exercise",
+   "lang": "en"
+  },
+  "71": {
+   "stored": "appointment",
+   "recomputed": "appointment",
+   "lang": "en"
+  },
+  "72": {
+   "stored": "resignation",
+   "recomputed": "resignation",
+   "lang": "en"
+  },
+  "73": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "74": {
+   "stored": "policy_change",
+   "recomputed": "policy_change",
+   "lang": "en"
+  },
+  "75": {
+   "stored": "policy_change",
+   "recomputed": "policy_change",
+   "lang": "en"
+  },
+  "76": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "77": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "78": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "79": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "80": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "81": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "82": {
+   "stored": "security_incident",
+   "recomputed": "security_incident",
+   "lang": "en"
+  },
+  "83": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "84": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "85": {
+   "stored": "commentary",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "suppressed_legal"
+  },
+  "86": {
+   "stored": "policy_change",
+   "recomputed": "policy_change",
+   "lang": "en"
+  },
+  "87": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "88": {
+   "stored": "summit",
+   "recomputed": "summit",
+   "lang": "en"
+  },
+  "89": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "90": {
+   "stored": "security_incident",
+   "recomputed": "security_incident",
+   "lang": "en"
+  },
+  "91": {
+   "stored": "appointment",
+   "recomputed": "appointment",
+   "lang": "en"
+  },
+  "92": {
+   "stored": "warning",
+   "recomputed": "warning",
+   "lang": "en"
+  },
+  "93": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "94": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "95": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "96": {
+   "stored": "security_incident",
+   "recomputed": "security_incident",
+   "lang": "en"
+  },
+  "97": {
+   "stored": "warning",
+   "recomputed": "warning",
+   "lang": "en"
+  },
+  "98": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "99": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "100": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "101": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "102": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "103": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "104": {
+   "stored": "agreement",
+   "recomputed": "agreement",
+   "lang": "en"
+  },
+  "105": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "106": {
+   "stored": "policy_change",
+   "recomputed": "policy_change",
+   "lang": "en"
+  },
+  "107": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "108": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "109": {
+   "stored": "warning",
+   "recomputed": "warning",
+   "lang": "en"
+  },
+  "110": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "111": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "112": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "113": {
+   "stored": "agreement",
+   "recomputed": "agreement",
+   "lang": "en"
+  },
+  "114": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "en"
+  },
+  "115": {
+   "stored": "summit",
+   "recomputed": "summit",
+   "lang": "en"
+  },
+  "116": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "en"
+  },
+  "117": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "118": {
+   "stored": "commentary",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "119": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "120": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "121": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "en"
+  },
+  "122": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "en"
+  },
+  "123": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "124": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "125": {
+   "stored": "deployment",
+   "recomputed": "deployment",
+   "lang": "en"
+  },
+  "126": {
+   "stored": "policy_change",
+   "recomputed": "policy_change",
+   "lang": "en"
+  },
+  "127": {
+   "stored": "security_incident",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "128": {
+   "stored": "appointment",
+   "recomputed": "appointment",
+   "lang": "en"
+  },
+  "129": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "en"
+  },
+  "130": {
+   "stored": "security_incident",
+   "recomputed": "security_incident",
+   "lang": "en"
+  },
+  "131": {
+   "stored": "negotiation",
+   "recomputed": "negotiation",
+   "lang": "en"
+  },
+  "132": {
+   "stored": "bilateral_meeting",
+   "recomputed": "bilateral_meeting",
+   "lang": "en"
+  },
+  "133": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "en"
+  },
+  "134": {
+   "stored": "bilateral_meeting",
+   "recomputed": "bilateral_meeting",
+   "lang": "en"
+  },
+  "135": {
+   "stored": "security_incident",
+   "recomputed": "security_incident",
+   "lang": "en"
+  },
+  "136": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "137": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "138": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "139": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "140": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "141": {
+   "stored": "deployment",
+   "recomputed": "deployment",
+   "lang": "en"
+  },
+  "142": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "es"
+  },
+  "143": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "144": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "es"
+  },
+  "145": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "146": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "147": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "mixed_language_gap"
+  },
+  "148": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "149": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "it"
+  },
+  "150": {
+   "stored": "bilateral_meeting",
+   "recomputed": "bilateral_meeting",
+   "lang": "en"
+  },
+  "151": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "152": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "153": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "154": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "es"
+  },
+  "155": {
+   "stored": "bilateral_meeting",
+   "recomputed": "bilateral_meeting",
+   "lang": "es"
+  },
+  "156": {
+   "stored": "negotiation",
+   "recomputed": "negotiation",
+   "lang": "en"
+  },
+  "157": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "es"
+  },
+  "158": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "159": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "mixed_language_gap"
+  },
+  "160": {
+   "stored": "policy_change",
+   "recomputed": "policy_change",
+   "lang": "en"
+  },
+  "161": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "non_english_headlines"
+  },
+  "162": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "mixed_language_gap"
+  },
+  "163": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "164": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "suppressed_legal"
+  },
+  "165": {
+   "stored": "warning",
+   "recomputed": "warning",
+   "lang": "en"
+  },
+  "166": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "167": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "168": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "169": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "170": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "171": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "172": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "173": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "174": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "non_english_headlines"
+  },
+  "175": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "mixed_language_gap"
+  },
+  "176": {
+   "stored": "threat",
+   "recomputed": "threat",
+   "lang": "en"
+  },
+  "177": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "178": {
+   "stored": "diplomatic_visit",
+   "recomputed": "diplomatic_visit",
+   "lang": "en"
+  },
+  "179": {
+   "stored": "negotiation",
+   "recomputed": "negotiation",
+   "lang": "en"
+  },
+  "180": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "181": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "182": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "183": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "184": {
+   "stored": "negotiation",
+   "recomputed": "negotiation",
+   "lang": "en"
+  },
+  "185": {
+   "stored": "deployment",
+   "recomputed": "deployment",
+   "lang": "en"
+  },
+  "186": {
+   "stored": "diplomatic_visit",
+   "recomputed": "diplomatic_visit",
+   "lang": "en"
+  },
+  "187": {
+   "stored": "agreement",
+   "recomputed": "agreement",
+   "lang": "en"
+  },
+  "188": {
+   "stored": "security_incident",
+   "recomputed": "security_incident",
+   "lang": "en"
+  },
+  "189": {
+   "stored": "agreement",
+   "recomputed": "agreement",
+   "lang": "en"
+  },
+  "190": {
+   "stored": "sanctions",
+   "recomputed": "sanctions",
+   "lang": "en"
+  },
+  "191": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "mixed_language_gap"
+  },
+  "192": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "193": {
+   "stored": "sanctions",
+   "recomputed": "sanctions",
+   "lang": "en"
+  },
+  "194": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "195": {
+   "stored": "security_incident",
+   "recomputed": "security_incident",
+   "lang": "en"
+  },
+  "196": {
+   "stored": "sanctions",
+   "recomputed": "sanctions",
+   "lang": "en"
+  },
+  "197": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "198": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "en"
+  },
+  "199": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "200": {
+   "stored": "security_incident",
+   "recomputed": "security_incident",
+   "lang": "en"
+  },
+  "201": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "202": {
+   "stored": "policy_change",
+   "recomputed": "policy_change",
+   "lang": "en"
+  },
+  "203": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "204": {
+   "stored": "security_incident",
+   "recomputed": "security_incident",
+   "lang": "en"
+  },
+  "205": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "206": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "207": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "208": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "209": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "210": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "211": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "212": {
+   "stored": "warning",
+   "recomputed": "warning",
+   "lang": "en"
+  },
+  "213": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "214": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "215": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "216": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "217": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "218": {
+   "stored": "sanctions",
+   "recomputed": "sanctions",
+   "lang": "en"
+  },
+  "219": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "220": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "221": {
+   "stored": "warning",
+   "recomputed": "warning",
+   "lang": "en"
+  },
+  "222": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "223": {
+   "stored": "policy_change",
+   "recomputed": "policy_change",
+   "lang": "en"
+  },
+  "224": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "225": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "226": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "227": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "es"
+  },
+  "228": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "229": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "230": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "231": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "232": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "mixed_language_gap"
+  },
+  "233": {
+   "stored": "security_incident",
+   "recomputed": "security_incident",
+   "lang": "en"
+  },
+  "234": {
+   "stored": "multilateral_meeting",
+   "recomputed": "multilateral_meeting",
+   "lang": "en"
+  },
+  "235": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "suppressed_legal"
+  },
+  "236": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "237": {
+   "stored": "ceasefire",
+   "recomputed": "ceasefire",
+   "lang": "en"
+  },
+  "238": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "239": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "240": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "mixed_language_gap"
+  },
+  "241": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "242": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "243": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "244": {
+   "stored": "diplomatic_visit",
+   "recomputed": "diplomatic_visit",
+   "lang": "en"
+  },
+  "245": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "246": {
+   "stored": "deployment",
+   "recomputed": "deployment",
+   "lang": "en"
+  },
+  "247": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "248": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "249": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "250": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "251": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "252": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "253": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "en"
+  },
+  "254": {
+   "stored": "security_incident",
+   "recomputed": "security_incident",
+   "lang": "en"
+  },
+  "255": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "256": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "257": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "258": {
+   "stored": "negotiation",
+   "recomputed": "negotiation",
+   "lang": "es"
+  },
+  "259": {
+   "stored": "negotiation",
+   "recomputed": "negotiation",
+   "lang": "en"
+  },
+  "260": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "261": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "262": {
+   "stored": "resignation",
+   "recomputed": "resignation",
+   "lang": "en"
+  },
+  "263": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "264": {
+   "stored": "security_incident",
+   "recomputed": "security_incident",
+   "lang": "en"
+  },
+  "265": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "266": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "267": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "268": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "269": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "270": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "271": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "272": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "273": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "274": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "275": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "276": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "277": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "278": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "279": {
+   "stored": "bilateral_meeting",
+   "recomputed": "bilateral_meeting",
+   "lang": "en"
+  },
+  "280": {
+   "stored": "negotiation",
+   "recomputed": "negotiation",
+   "lang": "en"
+  },
+  "281": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "282": {
+   "stored": "security_incident",
+   "recomputed": "security_incident",
+   "lang": "it"
+  },
+  "283": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "284": {
+   "stored": "threat",
+   "recomputed": "threat",
+   "lang": "en"
+  },
+  "285": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "286": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "en"
+  },
+  "287": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "288": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "289": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "en"
+  },
+  "290": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "291": {
+   "stored": "bilateral_meeting",
+   "recomputed": "bilateral_meeting",
+   "lang": "en"
+  },
+  "292": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "en"
+  },
+  "293": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "294": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "295": {
+   "stored": "sanctions",
+   "recomputed": "sanctions",
+   "lang": "en"
+  },
+  "296": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "297": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "298": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "299": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "300": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "301": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "302": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "303": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "304": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "305": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "306": {
+   "stored": "diplomatic_visit",
+   "recomputed": "diplomatic_visit",
+   "lang": "en"
+  },
+  "307": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "308": {
+   "stored": "sanctions",
+   "recomputed": "sanctions",
+   "lang": "en"
+  },
+  "309": {
+   "stored": "sanctions",
+   "recomputed": "sanctions",
+   "lang": "en"
+  },
+  "310": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "311": {
+   "stored": "resignation",
+   "recomputed": "resignation",
+   "lang": "en"
+  },
+  "312": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "mixed_language_gap"
+  },
+  "313": {
+   "stored": "warning",
+   "recomputed": "warning",
+   "lang": "en"
+  },
+  "314": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "315": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "316": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "317": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "318": {
+   "stored": "sanctions",
+   "recomputed": "sanctions",
+   "lang": "en"
+  },
+  "319": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "320": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "321": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "322": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "323": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "324": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "325": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "326": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "327": {
+   "stored": "sanctions",
+   "recomputed": "sanctions",
+   "lang": "en"
+  },
+  "328": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "329": {
+   "stored": "bilateral_meeting",
+   "recomputed": "bilateral_meeting",
+   "lang": "en"
+  },
+  "330": {
+   "stored": "security_incident",
+   "recomputed": "security_incident",
+   "lang": "en"
+  },
+  "331": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "332": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "333": {
+   "stored": "negotiation",
+   "recomputed": "negotiation",
+   "lang": "en"
+  },
+  "334": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "335": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "336": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "337": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "suppressed_legal"
+  },
+  "338": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "339": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "340": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "341": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "342": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "343": {
+   "stored": "deployment",
+   "recomputed": "deployment",
+   "lang": "en"
+  },
+  "344": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "345": {
+   "stored": "diplomatic_visit",
+   "recomputed": "diplomatic_visit",
+   "lang": "en"
+  },
+  "346": {
+   "stored": "agreement",
+   "recomputed": "agreement",
+   "lang": "en"
+  },
+  "347": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "348": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "349": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "350": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "351": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "352": {
+   "stored": "bilateral_meeting",
+   "recomputed": "bilateral_meeting",
+   "lang": "en"
+  },
+  "353": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "354": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "355": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "suppressed_legal"
+  },
+  "356": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "357": {
+   "stored": "security_incident",
+   "recomputed": "security_incident",
+   "lang": "en"
+  },
+  "358": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "359": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "mixed_language_gap"
+  },
+  "360": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "361": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "362": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "363": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "364": {
+   "stored": "warning",
+   "recomputed": "warning",
+   "lang": "en"
+  },
+  "365": {
+   "stored": "sanctions",
+   "recomputed": "sanctions",
+   "lang": "en"
+  },
+  "366": {
+   "stored": "negotiation",
+   "recomputed": "negotiation",
+   "lang": "en"
+  },
+  "367": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "368": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "suppressed_legal"
+  },
+  "369": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "370": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "371": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "372": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "373": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "374": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "375": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "376": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "377": {
+   "stored": "bilateral_meeting",
+   "recomputed": "bilateral_meeting",
+   "lang": "en"
+  },
+  "378": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "379": {
+   "stored": "negotiation",
+   "recomputed": "negotiation",
+   "lang": "en"
+  },
+  "380": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "381": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "382": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "383": {
+   "stored": "bilateral_meeting",
+   "recomputed": "bilateral_meeting",
+   "lang": "en"
+  },
+  "384": {
+   "stored": "bilateral_meeting",
+   "recomputed": "bilateral_meeting",
+   "lang": "en"
+  },
+  "385": {
+   "stored": "sanctions",
+   "recomputed": "sanctions",
+   "lang": "en"
+  },
+  "386": {
+   "stored": "sanctions",
+   "recomputed": "sanctions",
+   "lang": "en"
+  },
+  "387": {
+   "stored": "threat",
+   "recomputed": "threat",
+   "lang": "it"
+  },
+  "388": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "389": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "390": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "391": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "392": {
+   "stored": "warning",
+   "recomputed": "warning",
+   "lang": "es"
+  },
+  "393": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "mixed_language_gap"
+  },
+  "394": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "395": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "396": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "397": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "398": {
+   "stored": "ceasefire",
+   "recomputed": "ceasefire",
+   "lang": "en"
+  },
+  "399": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "mixed_language_gap"
+  },
+  "400": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "401": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "402": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "403": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "404": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "405": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "406": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "en"
+  },
+  "407": {
+   "stored": "security_incident",
+   "recomputed": "security_incident",
+   "lang": "es"
+  },
+  "408": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "409": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "410": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "411": {
+   "stored": "security_incident",
+   "recomputed": "security_incident",
+   "lang": "en"
+  },
+  "412": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "mixed_language_gap"
+  },
+  "413": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "414": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "es"
+  },
+  "415": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "416": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "417": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "418": {
+   "stored": "warning",
+   "recomputed": "warning",
+   "lang": "en"
+  },
+  "419": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "420": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "421": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "mixed_language_gap"
+  },
+  "422": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "non_english_headlines"
+  },
+  "423": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "statement_missed"
+  },
+  "424": {
+   "stored": "policy_change",
+   "recomputed": "policy_change",
+   "lang": "en"
+  },
+  "425": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "426": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "427": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "428": {
+   "stored": "summit",
+   "recomputed": "summit",
+   "lang": "en"
+  },
+  "429": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "430": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "mixed_language_gap"
+  },
+  "431": {
+   "stored": "warning",
+   "recomputed": "warning",
+   "lang": "en"
+  },
+  "432": {
+   "stored": "diplomatic_visit",
+   "recomputed": "diplomatic_visit",
+   "lang": "en"
+  },
+  "433": {
+   "stored": "negotiation",
+   "recomputed": "negotiation",
+   "lang": "en"
+  },
+  "434": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "435": {
+   "stored": "warning",
+   "recomputed": "warning",
+   "lang": "en"
+  },
+  "436": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "437": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "438": {
+   "stored": "diplomatic_visit",
+   "recomputed": "diplomatic_visit",
+   "lang": "es"
+  },
+  "439": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "440": {
+   "stored": "security_incident",
+   "recomputed": "security_incident",
+   "lang": "en"
+  },
+  "441": {
+   "stored": "summit",
+   "recomputed": "summit",
+   "lang": "es"
+  },
+  "442": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "443": {
+   "stored": "bilateral_meeting",
+   "recomputed": "bilateral_meeting",
+   "lang": "en"
+  },
+  "444": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "445": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "446": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "447": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "mixed_language_gap"
+  },
+  "448": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "it"
+  },
+  "449": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "es"
+  },
+  "450": {
+   "stored": "sanctions",
+   "recomputed": "sanctions",
+   "lang": "en"
+  },
+  "451": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "452": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "453": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "en"
+  },
+  "454": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "455": {
+   "stored": "resignation",
+   "recomputed": "resignation",
+   "lang": "en"
+  },
+  "456": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "457": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "458": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "459": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "460": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "461": {
+   "stored": "policy_change",
+   "recomputed": "policy_change",
+   "lang": "en"
+  },
+  "462": {
+   "stored": "sanctions",
+   "recomputed": "sanctions",
+   "lang": "es"
+  },
+  "463": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "464": {
+   "stored": "security_incident",
+   "recomputed": "security_incident",
+   "lang": "en"
+  },
+  "465": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "466": {
+   "stored": "security_incident",
+   "recomputed": "security_incident",
+   "lang": "en"
+  },
+  "467": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "mixed_language_gap"
+  },
+  "468": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "469": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "470": {
+   "stored": "warning",
+   "recomputed": "warning",
+   "lang": "en"
+  },
+  "471": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "472": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "473": {
+   "stored": "bilateral_meeting",
+   "recomputed": "bilateral_meeting",
+   "lang": "en"
+  },
+  "474": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "475": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "476": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "477": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "478": {
+   "stored": "sanctions",
+   "recomputed": "sanctions",
+   "lang": "en"
+  },
+  "479": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "480": {
+   "stored": "diplomatic_visit",
+   "recomputed": "diplomatic_visit",
+   "lang": "en"
+  },
+  "481": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "482": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "483": {
+   "stored": "negotiation",
+   "recomputed": "negotiation",
+   "lang": "en"
+  },
+  "484": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "485": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "en"
+  },
+  "486": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "487": {
+   "stored": "sanctions",
+   "recomputed": "sanctions",
+   "lang": "en"
+  },
+  "488": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "489": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "490": {
+   "stored": "diplomatic_visit",
+   "recomputed": "diplomatic_visit",
+   "lang": "en"
+  },
+  "491": {
+   "stored": "bilateral_meeting",
+   "recomputed": "bilateral_meeting",
+   "lang": "en"
+  },
+  "492": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "493": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "494": {
+   "stored": "warning",
+   "recomputed": "warning",
+   "lang": "en"
+  },
+  "495": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "en"
+  },
+  "496": {
+   "stored": "warning",
+   "recomputed": "warning",
+   "lang": "en"
+  },
+  "497": {
+   "stored": "sanctions",
+   "recomputed": "sanctions",
+   "lang": "en"
+  },
+  "498": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "suppressed_legal"
+  },
+  "499": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "500": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "mixed_language_gap"
+  },
+  "501": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "502": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "503": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "504": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "505": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "506": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "507": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "508": {
+   "stored": "threat",
+   "recomputed": "threat",
+   "lang": "en"
+  },
+  "509": {
+   "stored": "sanctions",
+   "recomputed": "sanctions",
+   "lang": "en"
+  },
+  "510": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "511": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "512": {
+   "stored": "negotiation",
+   "recomputed": "negotiation",
+   "lang": "en"
+  },
+  "513": {
+   "stored": "bilateral_meeting",
+   "recomputed": "bilateral_meeting",
+   "lang": "en"
+  },
+  "514": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "es"
+  },
+  "515": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "mixed_language_gap"
+  },
+  "516": {
+   "stored": "bilateral_meeting",
+   "recomputed": "bilateral_meeting",
+   "lang": "en"
+  },
+  "517": {
+   "stored": "policy_change",
+   "recomputed": "policy_change",
+   "lang": "en"
+  },
+  "518": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "519": {
+   "stored": "summit",
+   "recomputed": "summit",
+   "lang": "en"
+  },
+  "520": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "en"
+  },
+  "521": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "522": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "523": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "524": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "525": {
+   "stored": "negotiation",
+   "recomputed": "negotiation",
+   "lang": "en"
+  },
+  "526": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "527": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "en"
+  },
+  "528": {
+   "stored": "policy_change",
+   "recomputed": "policy_change",
+   "lang": "en"
+  },
+  "529": {
+   "stored": "warning",
+   "recomputed": "warning",
+   "lang": "en"
+  },
+  "530": {
+   "stored": "agreement",
+   "recomputed": "agreement",
+   "lang": "en"
+  },
+  "531": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "532": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "533": {
+   "stored": "warning",
+   "recomputed": "warning",
+   "lang": "en"
+  },
+  "534": {
+   "stored": "summit",
+   "recomputed": "summit",
+   "lang": "en"
+  },
+  "535": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "536": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "mixed_language_gap"
+  },
+  "537": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "538": {
+   "stored": "sanctions",
+   "recomputed": "sanctions",
+   "lang": "en"
+  },
+  "539": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "540": {
+   "stored": "policy_change",
+   "recomputed": "policy_change",
+   "lang": "en"
+  },
+  "541": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "542": {
+   "stored": "appointment",
+   "recomputed": "appointment",
+   "lang": "en"
+  },
+  "543": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "544": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "545": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "546": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "547": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "548": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "549": {
+   "stored": "bilateral_meeting",
+   "recomputed": "bilateral_meeting",
+   "lang": "en"
+  },
+  "550": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "551": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "552": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "553": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "554": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "555": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "suppressed_legal"
+  },
+  "556": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "557": {
+   "stored": "multilateral_meeting",
+   "recomputed": "multilateral_meeting",
+   "lang": "en"
+  },
+  "558": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "559": {
+   "stored": "diplomatic_visit",
+   "recomputed": "diplomatic_visit",
+   "lang": "en"
+  },
+  "560": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "561": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "562": {
+   "stored": "multilateral_meeting",
+   "recomputed": "multilateral_meeting",
+   "lang": "en"
+  },
+  "563": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "mixed_language_gap"
+  },
+  "564": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "en"
+  },
+  "565": {
+   "stored": "military_exercise",
+   "recomputed": "military_exercise",
+   "lang": "en"
+  },
+  "566": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "es"
+  },
+  "567": {
+   "stored": "warning",
+   "recomputed": "warning",
+   "lang": "en"
+  },
+  "568": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "en"
+  },
+  "569": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "570": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "571": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "572": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "573": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "574": {
+   "stored": "bilateral_meeting",
+   "recomputed": "bilateral_meeting",
+   "lang": "en"
+  },
+  "575": {
+   "stored": "summit",
+   "recomputed": "summit",
+   "lang": "en"
+  },
+  "576": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "577": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "578": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "579": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "580": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "581": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "582": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "583": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "584": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "585": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "586": {
+   "stored": "sanctions",
+   "recomputed": "sanctions",
+   "lang": "en"
+  },
+  "587": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "en"
+  },
+  "588": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "589": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "590": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "591": {
+   "stored": "policy_change",
+   "recomputed": "policy_change",
+   "lang": "en"
+  },
+  "592": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "non_english_headlines"
+  },
+  "593": {
+   "stored": "appointment",
+   "recomputed": "appointment",
+   "lang": "en"
+  },
+  "594": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "suppressed_legal"
+  },
+  "595": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "non_english_headlines"
+  },
+  "596": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "es"
+  },
+  "597": {
+   "stored": "threat",
+   "recomputed": "threat",
+   "lang": "en"
+  },
+  "598": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "599": {
+   "stored": "sanctions",
+   "recomputed": "sanctions",
+   "lang": "en"
+  },
+  "600": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "en"
+  },
+  "601": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "602": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "603": {
+   "stored": "threat",
+   "recomputed": "threat",
+   "lang": "en"
+  },
+  "604": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "605": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "606": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "non_english_headlines"
+  },
+  "607": {
+   "stored": "agreement",
+   "recomputed": "agreement",
+   "lang": "en"
+  },
+  "608": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "609": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "mixed_language_gap"
+  },
+  "610": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "611": {
+   "stored": "security_incident",
+   "recomputed": "security_incident",
+   "lang": "en"
+  },
+  "612": {
+   "stored": "deployment",
+   "recomputed": "deployment",
+   "lang": "en"
+  },
+  "613": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "614": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "615": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "616": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "617": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "en"
+  },
+  "618": {
+   "stored": "sanctions",
+   "recomputed": "sanctions",
+   "lang": "en"
+  },
+  "619": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "mixed_language_gap"
+  },
+  "620": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "621": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "622": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "623": {
+   "stored": "deployment",
+   "recomputed": "deployment",
+   "lang": "en"
+  },
+  "624": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "625": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "626": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "en"
+  },
+  "627": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "628": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "629": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "630": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "631": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "632": {
+   "stored": "ceasefire",
+   "recomputed": "ceasefire",
+   "lang": "en"
+  },
+  "633": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "634": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "635": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "636": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "637": {
+   "stored": "negotiation",
+   "recomputed": "negotiation",
+   "lang": "en"
+  },
+  "638": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "639": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "es"
+  },
+  "640": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "641": {
+   "stored": "economic_action",
+   "recomputed": "economic_action",
+   "lang": "it"
+  },
+  "642": {
+   "stored": "warning",
+   "recomputed": "warning",
+   "lang": "en"
+  },
+  "643": {
+   "stored": "summit",
+   "recomputed": "summit",
+   "lang": "en"
+  },
+  "644": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "645": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "646": {
+   "stored": "sanctions",
+   "recomputed": "sanctions",
+   "lang": "en"
+  },
+  "647": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "648": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "649": {
+   "stored": "sanctions",
+   "recomputed": "sanctions",
+   "lang": "en"
+  },
+  "650": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "651": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "en"
+  },
+  "652": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "653": {
+   "stored": "multilateral_meeting",
+   "recomputed": "multilateral_meeting",
+   "lang": "en"
+  },
+  "654": {
+   "stored": "resignation",
+   "recomputed": "resignation",
+   "lang": "en"
+  },
+  "655": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "656": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "657": {
+   "stored": "security_incident",
+   "recomputed": "security_incident",
+   "lang": "en"
+  },
+  "658": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "659": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "660": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "661": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "662": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "663": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "664": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "665": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "mixed_language_gap"
+  },
+  "666": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "667": {
+   "stored": "security_incident",
+   "recomputed": "security_incident",
+   "lang": "es"
+  },
+  "668": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "669": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "670": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "statement_missed"
+  },
+  "671": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "672": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "673": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "674": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "675": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "676": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "677": {
+   "stored": "agreement",
+   "recomputed": "agreement",
+   "lang": "en"
+  },
+  "678": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "679": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "680": {
+   "stored": "security_incident",
+   "recomputed": "security_incident",
+   "lang": "en"
+  },
+  "681": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "682": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "683": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "684": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "685": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "686": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "mixed_language_gap"
+  },
+  "687": {
+   "stored": "security_incident",
+   "recomputed": "security_incident",
+   "lang": "en"
+  },
+  "688": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "689": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "690": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "691": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "en"
+  },
+  "692": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "en"
+  },
+  "693": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "694": {
+   "stored": "multilateral_meeting",
+   "recomputed": "multilateral_meeting",
+   "lang": "en"
+  },
+  "695": {
+   "stored": "bilateral_meeting",
+   "recomputed": "bilateral_meeting",
+   "lang": "en"
+  },
+  "696": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "697": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "en"
+  },
+  "698": {
+   "stored": "summit",
+   "recomputed": "summit",
+   "lang": "en"
+  },
+  "699": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "700": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "701": {
+   "stored": "bilateral_meeting",
+   "recomputed": "bilateral_meeting",
+   "lang": "en"
+  },
+  "702": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "703": {
+   "stored": "deployment",
+   "recomputed": "deployment",
+   "lang": "en"
+  },
+  "704": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "705": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "706": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "707": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "708": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "709": {
+   "stored": "diplomatic_visit",
+   "recomputed": "diplomatic_visit",
+   "lang": "en"
+  },
+  "710": {
+   "stored": "economic_action",
+   "recomputed": "economic_action",
+   "lang": "en"
+  },
+  "711": {
+   "stored": "warning",
+   "recomputed": "warning",
+   "lang": "en"
+  },
+  "712": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "suppressed_legal"
+  },
+  "713": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "714": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "715": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "716": {
+   "stored": "policy_change",
+   "recomputed": "policy_change",
+   "lang": "en"
+  },
+  "717": {
+   "stored": "security_incident",
+   "recomputed": "security_incident",
+   "lang": "en"
+  },
+  "718": {
+   "stored": "deployment",
+   "recomputed": "deployment",
+   "lang": "en"
+  },
+  "719": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "statement_missed"
+  },
+  "720": {
+   "stored": "bilateral_meeting",
+   "recomputed": "bilateral_meeting",
+   "lang": "en"
+  },
+  "721": {
+   "stored": "agreement",
+   "recomputed": "agreement",
+   "lang": "en"
+  },
+  "722": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "723": {
+   "stored": "security_incident",
+   "recomputed": "security_incident",
+   "lang": "en"
+  },
+  "724": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "725": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "726": {
+   "stored": "diplomatic_visit",
+   "recomputed": "diplomatic_visit",
+   "lang": "en"
+  },
+  "727": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "en"
+  },
+  "728": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "en"
+  },
+  "729": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "es"
+  },
+  "730": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "731": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "suppressed_legal"
+  },
+  "732": {
+   "stored": "policy_change",
+   "recomputed": "policy_change",
+   "lang": "en"
+  },
+  "733": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "734": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "735": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "en"
+  },
+  "736": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "737": {
+   "stored": "sanctions",
+   "recomputed": "sanctions",
+   "lang": "en"
+  },
+  "738": {
+   "stored": "diplomatic_visit",
+   "recomputed": "diplomatic_visit",
+   "lang": "en"
+  },
+  "739": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "740": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "741": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "742": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "743": {
+   "stored": "sanctions",
+   "recomputed": "sanctions",
+   "lang": "en"
+  },
+  "744": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "745": {
+   "stored": "deployment",
+   "recomputed": "deployment",
+   "lang": "en"
+  },
+  "746": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "747": {
+   "stored": "summit",
+   "recomputed": "summit",
+   "lang": "en"
+  },
+  "748": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "749": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "750": {
+   "stored": "agreement",
+   "recomputed": "agreement",
+   "lang": "en"
+  },
+  "751": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "752": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "753": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "754": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "755": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "756": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "757": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "758": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "759": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "en"
+  },
+  "760": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "761": {
+   "stored": "agreement",
+   "recomputed": "agreement",
+   "lang": "en"
+  },
+  "762": {
+   "stored": "economic_action",
+   "recomputed": "economic_action",
+   "lang": "es"
+  },
+  "763": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "764": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "765": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "766": {
+   "stored": "security_incident",
+   "recomputed": "security_incident",
+   "lang": "en"
+  },
+  "767": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "768": {
+   "stored": "warning",
+   "recomputed": "warning",
+   "lang": "en"
+  },
+  "769": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "770": {
+   "stored": "economic_action",
+   "recomputed": "economic_action",
+   "lang": "en"
+  },
+  "771": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "772": {
+   "stored": "warning",
+   "recomputed": "warning",
+   "lang": "en"
+  },
+  "773": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "774": {
+   "stored": "policy_change",
+   "recomputed": "policy_change",
+   "lang": "en"
+  },
+  "775": {
+   "stored": "warning",
+   "recomputed": "warning",
+   "lang": "en"
+  },
+  "776": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "777": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "mixed_language_gap"
+  },
+  "778": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "779": {
+   "stored": "warning",
+   "recomputed": "warning",
+   "lang": "en"
+  },
+  "780": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "statement_missed"
+  },
+  "781": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "782": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "783": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "784": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "785": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "786": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "787": {
+   "stored": "diplomatic_visit",
+   "recomputed": "diplomatic_visit",
+   "lang": "en"
+  },
+  "788": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "non_english_headlines"
+  },
+  "789": {
+   "stored": "military_exercise",
+   "recomputed": "military_exercise",
+   "lang": "en"
+  },
+  "790": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "en"
+  },
+  "791": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "792": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "793": {
+   "stored": "sanctions",
+   "recomputed": "sanctions",
+   "lang": "en"
+  },
+  "794": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "795": {
+   "stored": "warning",
+   "recomputed": "warning",
+   "lang": "en"
+  },
+  "796": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "797": {
+   "stored": "threat",
+   "recomputed": "threat",
+   "lang": "en"
+  },
+  "798": {
+   "stored": "threat",
+   "recomputed": "threat",
+   "lang": "en"
+  },
+  "799": {
+   "stored": "bilateral_meeting",
+   "recomputed": "bilateral_meeting",
+   "lang": "en"
+  },
+  "800": {
+   "stored": "negotiation",
+   "recomputed": "negotiation",
+   "lang": "en"
+  },
+  "801": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "suppressed_legal"
+  },
+  "802": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "non_english_headlines"
+  },
+  "803": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "804": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "805": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "806": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "807": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "808": {
+   "stored": "security_incident",
+   "recomputed": "security_incident",
+   "lang": "en"
+  },
+  "809": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "810": {
+   "stored": "security_incident",
+   "recomputed": "security_incident",
+   "lang": "en"
+  },
+  "811": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "812": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "813": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "814": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "mixed_language_gap"
+  },
+  "815": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "816": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "817": {
+   "stored": "warning",
+   "recomputed": "warning",
+   "lang": "en"
+  },
+  "818": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "819": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "820": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "821": {
+   "stored": "policy_change",
+   "recomputed": "policy_change",
+   "lang": "en"
+  },
+  "822": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "823": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "824": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "825": {
+   "stored": "economic_action",
+   "recomputed": "economic_action",
+   "lang": "en"
+  },
+  "826": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "827": {
+   "stored": "unknown",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "828": {
+   "stored": "agreement",
+   "recomputed": "agreement",
+   "lang": "en"
+  },
+  "829": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "830": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "831": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "suppressed_legal"
+  },
+  "832": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "833": {
+   "stored": "security_incident",
+   "recomputed": "security_incident",
+   "lang": "en"
+  },
+  "834": {
+   "stored": "sanctions",
+   "recomputed": "sanctions",
+   "lang": "en"
+  },
+  "835": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "836": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "837": {
+   "stored": "threat",
+   "recomputed": "threat",
+   "lang": "es"
+  },
+  "838": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "839": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "840": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "841": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "es"
+  },
+  "842": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "843": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "844": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "845": {
+   "stored": "warning",
+   "recomputed": "warning",
+   "lang": "en"
+  },
+  "846": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "847": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "848": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "849": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "850": {
+   "stored": "security_incident",
+   "recomputed": "security_incident",
+   "lang": "es"
+  },
+  "851": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "852": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "853": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "854": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "855": {
+   "stored": "agreement",
+   "recomputed": "agreement",
+   "lang": "en"
+  },
+  "856": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "857": {
+   "stored": "agreement",
+   "recomputed": "agreement",
+   "lang": "en"
+  },
+  "858": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "859": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "suppressed_legal"
+  },
+  "860": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "861": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "862": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "mixed_language_gap"
+  },
+  "863": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "864": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "865": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "866": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "867": {
+   "stored": "military_exercise",
+   "recomputed": "military_exercise",
+   "lang": "en"
+  },
+  "868": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "869": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "870": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "871": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "872": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "873": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "874": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "875": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "876": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "877": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "878": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "879": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "880": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "881": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "882": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "883": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "884": {
+   "stored": "sanctions",
+   "recomputed": "sanctions",
+   "lang": "en"
+  },
+  "885": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "en"
+  },
+  "886": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "887": {
+   "stored": "resignation",
+   "recomputed": "resignation",
+   "lang": "en"
+  },
+  "888": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "889": {
+   "stored": "security_incident",
+   "recomputed": "security_incident",
+   "lang": "en"
+  },
+  "890": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "891": {
+   "stored": "policy_change",
+   "recomputed": "policy_change",
+   "lang": "en"
+  },
+  "892": {
+   "stored": "bilateral_meeting",
+   "recomputed": "bilateral_meeting",
+   "lang": "en"
+  },
+  "893": {
+   "stored": "security_incident",
+   "recomputed": "security_incident",
+   "lang": "en"
+  },
+  "894": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "895": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "896": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "897": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "mixed_language_gap"
+  },
+  "898": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "non_english_headlines"
+  },
+  "899": {
+   "stored": "negotiation",
+   "recomputed": "negotiation",
+   "lang": "en"
+  },
+  "900": {
+   "stored": "bilateral_meeting",
+   "recomputed": "bilateral_meeting",
+   "lang": "en"
+  },
+  "901": {
+   "stored": "ceasefire",
+   "recomputed": "ceasefire",
+   "lang": "en"
+  },
+  "902": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "903": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "904": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "en"
+  },
+  "905": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "mixed_language_gap"
+  },
+  "906": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "907": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "908": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "909": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "910": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "911": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "912": {
+   "stored": "policy_change",
+   "recomputed": "policy_change",
+   "lang": "en"
+  },
+  "913": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "914": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "non_english_headlines"
+  },
+  "915": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "916": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "en"
+  },
+  "917": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "918": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "en"
+  },
+  "919": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "920": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "en"
+  },
+  "921": {
+   "stored": "bilateral_meeting",
+   "recomputed": "bilateral_meeting",
+   "lang": "en"
+  },
+  "922": {
+   "stored": "sanctions",
+   "recomputed": "sanctions",
+   "lang": "en"
+  },
+  "923": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "en"
+  },
+  "924": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "925": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "non_english_headlines"
+  },
+  "926": {
+   "stored": "deployment",
+   "recomputed": "deployment",
+   "lang": "en"
+  },
+  "927": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "928": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "929": {
+   "stored": "diplomatic_visit",
+   "recomputed": "diplomatic_visit",
+   "lang": "en"
+  },
+  "930": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "931": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "932": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "933": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "934": {
+   "stored": "threat",
+   "recomputed": "threat",
+   "lang": "en"
+  },
+  "935": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "it"
+  },
+  "936": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "937": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "938": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "939": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "940": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "941": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "non_english_headlines"
+  },
+  "942": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "943": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "944": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "en"
+  },
+  "945": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "en"
+  },
+  "946": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "947": {
+   "stored": "policy_change",
+   "recomputed": "policy_change",
+   "lang": "en"
+  },
+  "948": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "en"
+  },
+  "949": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "950": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "951": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "non_english_headlines"
+  },
+  "952": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "953": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "954": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "en"
+  },
+  "955": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "956": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "957": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "mixed_language_gap"
+  },
+  "958": {
+   "stored": "bilateral_meeting",
+   "recomputed": "bilateral_meeting",
+   "lang": "en"
+  },
+  "959": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "960": {
+   "stored": "bilateral_meeting",
+   "recomputed": "bilateral_meeting",
+   "lang": "en"
+  },
+  "961": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "962": {
+   "stored": "bilateral_meeting",
+   "recomputed": "bilateral_meeting",
+   "lang": "en"
+  },
+  "963": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "964": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "965": {
+   "stored": "deployment",
+   "recomputed": "deployment",
+   "lang": "en"
+  },
+  "966": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "967": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "968": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "969": {
+   "stored": "security_incident",
+   "recomputed": "security_incident",
+   "lang": "en"
+  },
+  "970": {
+   "stored": "diplomatic_visit",
+   "recomputed": "diplomatic_visit",
+   "lang": "en"
+  },
+  "971": {
+   "stored": "security_incident",
+   "recomputed": "security_incident",
+   "lang": "en"
+  },
+  "972": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "973": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "974": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "975": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "976": {
+   "stored": "warning",
+   "recomputed": "warning",
+   "lang": "en"
+  },
+  "977": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "978": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "979": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "980": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "981": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "982": {
+   "stored": "diplomatic_visit",
+   "recomputed": "diplomatic_visit",
+   "lang": "en"
+  },
+  "983": {
+   "stored": "arms_transfer",
+   "recomputed": "arms_transfer",
+   "lang": "en"
+  },
+  "984": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "985": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "986": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "suppressed_legal"
+  },
+  "987": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "988": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "non_english_headlines"
+  },
+  "989": {
+   "stored": "warning",
+   "recomputed": "warning",
+   "lang": "en"
+  },
+  "990": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "991": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "992": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "993": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "994": {
+   "stored": "multilateral_meeting",
+   "recomputed": "multilateral_meeting",
+   "lang": "en"
+  },
+  "995": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "996": {
+   "stored": "bilateral_meeting",
+   "recomputed": "bilateral_meeting",
+   "lang": "en"
+  },
+  "997": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "998": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "999": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "1000": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "1001": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "1002": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "1003": {
+   "stored": "threat",
+   "recomputed": "threat",
+   "lang": "en"
+  },
+  "1004": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "1005": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "1006": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "1007": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "1008": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "1009": {
+   "stored": "multilateral_meeting",
+   "recomputed": "multilateral_meeting",
+   "lang": "en"
+  },
+  "1010": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "1011": {
+   "stored": "bilateral_meeting",
+   "recomputed": "bilateral_meeting",
+   "lang": "en"
+  },
+  "1012": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "1013": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "1014": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "1015": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "1016": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "1017": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "suppressed_legal"
+  },
+  "1018": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "1019": {
+   "stored": "diplomatic_visit",
+   "recomputed": "diplomatic_visit",
+   "lang": "en"
+  },
+  "1020": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "1021": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "1022": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "1023": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "es"
+  },
+  "1024": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "1025": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "1026": {
+   "stored": "security_incident",
+   "recomputed": "security_incident",
+   "lang": "en"
+  },
+  "1027": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "mixed_language_gap"
+  },
+  "1028": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "statement_missed"
+  },
+  "1029": {
+   "stored": "economic_action",
+   "recomputed": "economic_action",
+   "lang": "en"
+  },
+  "1030": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "en"
+  },
+  "1031": {
+   "stored": "agreement",
+   "recomputed": "agreement",
+   "lang": "en"
+  },
+  "1032": {
+   "stored": "agreement",
+   "recomputed": "agreement",
+   "lang": "en"
+  },
+  "1033": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "en"
+  },
+  "1034": {
+   "stored": "economic_action",
+   "recomputed": "economic_action",
+   "lang": "en"
+  },
+  "1035": {
+   "stored": "warning",
+   "recomputed": "warning",
+   "lang": "en"
+  },
+  "1036": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "1037": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "1038": {
+   "stored": "sanctions",
+   "recomputed": "sanctions",
+   "lang": "en"
+  },
+  "1039": {
+   "stored": "bilateral_meeting",
+   "recomputed": "bilateral_meeting",
+   "lang": "en"
+  },
+  "1040": {
+   "stored": "economic_action",
+   "recomputed": "economic_action",
+   "lang": "en"
+  },
+  "1041": {
+   "stored": "warning",
+   "recomputed": "warning",
+   "lang": "en"
+  },
+  "1042": {
+   "stored": "summit",
+   "recomputed": "summit",
+   "lang": "en"
+  },
+  "1043": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "1044": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "es"
+  },
+  "1045": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "1046": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "1047": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "1048": {
+   "stored": "unknown",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "1049": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "1050": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "1051": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "1052": {
+   "stored": "threat",
+   "recomputed": "threat",
+   "lang": "en"
+  },
+  "1053": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "1054": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "1055": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "1056": {
+   "stored": "sanctions",
+   "recomputed": "sanctions",
+   "lang": "en"
+  },
+  "1057": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "1058": {
+   "stored": "warning",
+   "recomputed": "warning",
+   "lang": "en"
+  },
+  "1059": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "1060": {
+   "stored": "negotiation",
+   "recomputed": "negotiation",
+   "lang": "it"
+  },
+  "1061": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "1062": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "non_english_headlines"
+  },
+  "1063": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "1064": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "1065": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "1066": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "1067": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "1068": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "1069": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "1070": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "1071": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "1072": {
+   "stored": "summit",
+   "recomputed": "summit",
+   "lang": "en"
+  },
+  "1073": {
+   "stored": "summit",
+   "recomputed": "summit",
+   "lang": "en"
+  },
+  "1074": {
+   "stored": "sanctions",
+   "recomputed": "sanctions",
+   "lang": "en"
+  },
+  "1075": {
+   "stored": "resignation",
+   "recomputed": "resignation",
+   "lang": "en"
+  },
+  "1076": {
+   "stored": "diplomatic_visit",
+   "recomputed": "diplomatic_visit",
+   "lang": "en"
+  },
+  "1077": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "1078": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "en"
+  },
+  "1079": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "1080": {
+   "stored": "threat",
+   "recomputed": "threat",
+   "lang": "en"
+  },
+  "1081": {
+   "stored": "resignation",
+   "recomputed": "resignation",
+   "lang": "en"
+  },
+  "1082": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "1083": {
+   "stored": "bilateral_meeting",
+   "recomputed": "bilateral_meeting",
+   "lang": "en"
+  },
+  "1084": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "en"
+  },
+  "1085": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "1086": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "1087": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "1088": {
+   "stored": "resignation",
+   "recomputed": "resignation",
+   "lang": "en"
+  },
+  "1089": {
+   "stored": "policy_change",
+   "recomputed": "policy_change",
+   "lang": "en"
+  },
+  "1090": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "1091": {
+   "stored": "commentary",
+   "recomputed": "commentary",
+   "lang": "en"
+  },
+  "1092": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "1093": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "1094": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "1095": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "1096": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "1097": {
+   "stored": "security_incident",
+   "recomputed": "security_incident",
+   "lang": "en"
+  },
+  "1098": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "1099": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "1100": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "1101": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "1102": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "1103": {
+   "stored": "military_action",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "1104": {
+   "stored": "security_incident",
+   "recomputed": "security_incident",
+   "lang": "en"
+  },
+  "1105": {
+   "stored": "resignation",
+   "recomputed": "resignation",
+   "lang": "en"
+  },
+  "1106": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "1107": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "1108": {
+   "stored": "bilateral_meeting",
+   "recomputed": "bilateral_meeting",
+   "lang": "en"
+  },
+  "1109": {
+   "stored": "policy_change",
+   "recomputed": "policy_change",
+   "lang": "en"
+  },
+  "1110": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "1111": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "1112": {
+   "stored": "multilateral_meeting",
+   "recomputed": "multilateral_meeting",
+   "lang": "es"
+  },
+  "1113": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "1114": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "1115": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "1116": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "1117": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "1118": {
+   "stored": "security_incident",
+   "recomputed": "security_incident",
+   "lang": "en"
+  },
+  "1119": {
+   "stored": "resignation",
+   "recomputed": "resignation",
+   "lang": "en"
+  },
+  "1120": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "1121": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "en"
+  },
+  "1122": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "en"
+  },
+  "1123": {
+   "stored": "security_incident",
+   "recomputed": "security_incident",
+   "lang": "it"
+  },
+  "1124": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "1125": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "mixed_language_gap"
+  },
+  "1126": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "1127": {
+   "stored": "negotiation",
+   "recomputed": "negotiation",
+   "lang": "en"
+  },
+  "1128": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "1129": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "suppressed_legal"
+  },
+  "1130": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "en"
+  },
+  "1131": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "mixed_language_gap"
+  },
+  "1132": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "1133": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "1134": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "1135": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "1136": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "1137": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "mixed_language_gap"
+  },
+  "1138": {
+   "stored": "negotiation",
+   "recomputed": "negotiation",
+   "lang": "en"
+  },
+  "1139": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "1140": {
+   "stored": "warning",
+   "recomputed": "warning",
+   "lang": "en"
+  },
+  "1141": {
+   "stored": "multilateral_meeting",
+   "recomputed": "multilateral_meeting",
+   "lang": "en"
+  },
+  "1142": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "1143": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "1144": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "1145": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "1146": {
+   "stored": "multilateral_meeting",
+   "recomputed": "multilateral_meeting",
+   "lang": "en"
+  },
+  "1147": {
+   "stored": "resignation",
+   "recomputed": "resignation",
+   "lang": "en"
+  },
+  "1148": {
+   "stored": "deployment",
+   "recomputed": "deployment",
+   "lang": "en"
+  },
+  "1149": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "en"
+  },
+  "1150": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "1151": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "suppressed_legal"
+  },
+  "1152": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "1153": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "1154": {
+   "stored": "summit",
+   "recomputed": "summit",
+   "lang": "en"
+  },
+  "1155": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "1156": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "1157": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "1158": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "1159": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "1160": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "1161": {
+   "stored": "threat",
+   "recomputed": "threat",
+   "lang": "en"
+  },
+  "1162": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "1163": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "1164": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "1165": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "1166": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "1167": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "en"
+  },
+  "1168": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "1169": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "1170": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "1171": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "1172": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "en"
+  },
+  "1173": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "es",
+   "cause": "non_english_headlines"
+  },
+  "1174": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "1175": {
+   "stored": "bilateral_meeting",
+   "recomputed": "bilateral_meeting",
+   "lang": "en"
+  },
+  "1176": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "1177": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "non_english_headlines"
+  },
+  "1178": {
+   "stored": "warning",
+   "recomputed": "warning",
+   "lang": "en"
+  },
+  "1179": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "non_english_headlines"
+  },
+  "1180": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "1181": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "suppressed_legal"
+  },
+  "1182": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "1183": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "1184": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "mixed_language_gap"
+  },
+  "1185": {
+   "stored": "bilateral_meeting",
+   "recomputed": "bilateral_meeting",
+   "lang": "en"
+  },
+  "1186": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "1187": {
+   "stored": "security_incident",
+   "recomputed": "security_incident",
+   "lang": "en"
+  },
+  "1188": {
+   "stored": "military_action",
+   "recomputed": "military_action",
+   "lang": "en"
+  },
+  "1189": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "en"
+  },
+  "1190": {
+   "stored": "bilateral_meeting",
+   "recomputed": "bilateral_meeting",
+   "lang": "en"
+  },
+  "1191": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "1192": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "it",
+   "cause": "non_english_headlines"
+  },
+  "1193": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "1194": {
+   "stored": "significant_statement",
+   "recomputed": "significant_statement",
+   "lang": "en"
+  },
+  "1195": {
+   "stored": "unknown",
+   "recomputed": "unknown",
+   "lang": "en",
+   "cause": "lexicon_gap_en"
+  },
+  "1196": {
+   "stored": "election",
+   "recomputed": "election",
+   "lang": "en"
+  },
+  "1197": {
+   "stored": "negotiation",
+   "recomputed": "negotiation",
+   "lang": "es"
+  },
+  "1198": {
+   "stored": "warning",
+   "recomputed": "warning",
+   "lang": "en"
+  }
+ }
+}
