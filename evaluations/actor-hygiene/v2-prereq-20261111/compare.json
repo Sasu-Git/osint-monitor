@@ -1,0 +1,834 @@
+{
+ "G1": {
+  "situations": {
+   "javier-milei-milei": {
+    "expected": [
+     "javier milei"
+    ],
+    "got": [
+     "javier milei"
+    ],
+    "ok": true
+   },
+   "elon-musk-musk": {
+    "expected": [
+     "elon musk"
+    ],
+    "got": [
+     "elon musk"
+    ],
+    "ok": true
+   },
+   "christa-pike-pike": {
+    "expected": [
+     "christa pike"
+    ],
+    "got": [
+     "christa pike"
+    ],
+    "ok": true
+   },
+   "machado-maria-corina-machado": {
+    "expected": [
+     "maria corina machado"
+    ],
+    "got": [
+     "maria corina machado"
+    ],
+    "ok": true
+   },
+   "bukele-el-salvador-nayib-bukele": {
+    "expected": [
+     "el salvador"
+    ],
+    "got": [
+     "el salvador"
+    ],
+    "ok": true
+   },
+   "emmanuel-macron-france-macron": {
+    "expected": [
+     "france"
+    ],
+    "got": [
+     "france"
+    ],
+    "ok": true
+   },
+   "donald-j-trump-united-states": {
+    "expected": [
+     "united states"
+    ],
+    "got": [
+     "united states"
+    ],
+    "ok": true
+   },
+   "democrat-united-states": {
+    "expected": [
+     "united states"
+    ],
+    "got": [
+     "united states"
+    ],
+    "ok": true
+   },
+   "china-chinas-long-march": {
+    "expected": [
+     "china"
+    ],
+    "got": [
+     "china"
+    ],
+    "ok": true
+   },
+   "rachel-simon": {
+    "expected": [],
+    "got": [
+     "rachel",
+     "simon"
+    ],
+    "ok": false
+   }
+  },
+  "D402_principals": [],
+  "guards_ok": true,
+  "other_situations_changed": {},
+  "pass": false
+ },
+ "G5": {
+  "principal_types": {
+   "base": {
+    "GPE": 1181,
+    "NORP": 103,
+    "PERSON": 422,
+    "ORG": 284,
+    "FAC": 3,
+    "LOC": 6,
+    "EVENT": 1
+   },
+   "cand": {
+    "GPE": 1181,
+    "NORP": 103,
+    "PERSON": 433,
+    "ORG": 284,
+    "FAC": 3,
+    "LOC": 6,
+    "EVENT": 1
+   }
+  },
+  "situation_key_count_per_development": {
+   "base": {
+    "2": 260,
+    "1": 581,
+    "3": 41,
+    "0": 304,
+    "4": 12
+   },
+   "cand": {
+    "2": 248,
+    "1": 594,
+    "3": 40,
+    "0": 304,
+    "4": 12
+   }
+  },
+  "share_with_keys": {
+   "base": 0.7462,
+   "cand": 0.7462
+  },
+  "changed_developments": 25,
+  "unexplained": {
+   "722": {
+    "base": [],
+    "cand": [
+     "Melania Trump"
+    ],
+    "base_keys": [],
+    "cand_keys": [
+     "melania trump"
+    ],
+    "explained": false
+   },
+   "963": {
+    "base": [
+     "Antonelli",
+     "Kimi Antonelli"
+    ],
+    "cand": [
+     "Antonelli",
+     "Kimi Antonelli"
+    ],
+    "base_keys": [
+     "antonelli",
+     "kimi antonelli"
+    ],
+    "cand_keys": [
+     "kimi antonelli"
+    ],
+    "explained": false
+   },
+   "1048": {
+    "base": [
+     "Alvin K. Hellerstein",
+     "America",
+     "Hellerstein"
+    ],
+    "cand": [
+     "Alvin K. Hellerstein",
+     "America",
+     "Hellerstein"
+    ],
+    "base_keys": [
+     "alvin k. hellerstein",
+     "hellerstein",
+     "united states"
+    ],
+    "cand_keys": [
+     "alvin k. hellerstein",
+     "united states"
+    ],
+    "explained": false
+   }
+  },
+  "changes": {
+   "178": {
+    "base": [
+     "Donald Trump",
+     "Republicans",
+     "Trump"
+    ],
+    "cand": [
+     "DONALD J. TRUMP",
+     "Donald Trump",
+     "Republicans",
+     "Trump"
+    ],
+    "base_keys": [
+     "republicans",
+     "united states"
+    ],
+    "cand_keys": [
+     "united states"
+    ],
+    "explained": true
+   },
+   "202": {
+    "base": [
+     "DONALD J. TRUMP"
+    ],
+    "cand": [
+     "DONALD J. TRUMP",
+     "Donald Trump",
+     "Trump"
+    ],
+    "base_keys": [
+     "donald j. trump"
+    ],
+    "cand_keys": [
+     "united states"
+    ],
+    "explained": true
+   },
+   "204": {
+    "base": [
+     "Donald Trump",
+     "Trump"
+    ],
+    "cand": [
+     "DONALD J. TRUMP",
+     "Donald Trump",
+     "Trump"
+    ],
+    "base_keys": [
+     "united states"
+    ],
+    "cand_keys": [
+     "united states"
+    ],
+    "explained": true
+   },
+   "250": {
+    "base": [
+     "Emmanuel Macron",
+     "Moscow",
+     "Russia",
+     "Russia"
+    ],
+    "cand": [
+     "Emmanuel Macron",
+     "Moscow",
+     "Russia",
+     "Russia"
+    ],
+    "base_keys": [
+     "emmanuel macron",
+     "russia"
+    ],
+    "cand_keys": [
+     "france",
+     "russia"
+    ],
+    "explained": true
+   },
+   "351": {
+    "base": [
+     "Trump"
+    ],
+    "cand": [
+     "DONALD J. TRUMP",
+     "Trump"
+    ],
+    "base_keys": [
+     "united states"
+    ],
+    "cand_keys": [
+     "united states"
+    ],
+    "explained": true
+   },
+   "354": {
+    "base": [
+     "National Medals of Technology",
+     "Trump"
+    ],
+    "cand": [
+     "DONALD J. TRUMP",
+     "National Medals of Technology",
+     "Trump"
+    ],
+    "base_keys": [
+     "national medals of technology",
+     "united states"
+    ],
+    "cand_keys": [
+     "national medals of technology",
+     "united states"
+    ],
+    "explained": true
+   },
+   "501": {
+    "base": [
+     "El Salvador",
+     "Nayib Bukele"
+    ],
+    "cand": [
+     "El Salvador",
+     "Nayib Bukele"
+    ],
+    "base_keys": [
+     "el salvador",
+     "nayib bukele"
+    ],
+    "cand_keys": [
+     "el salvador"
+    ],
+    "explained": true
+   },
+   "678": {
+    "base": [
+     "China",
+     "China",
+     "Chinas Long March"
+    ],
+    "cand": [
+     "China",
+     "China",
+     "Chinas Long March"
+    ],
+    "base_keys": [
+     "china",
+     "chinas long march"
+    ],
+    "cand_keys": [
+     "china"
+    ],
+    "explained": true
+   },
+   "708": {
+    "base": [
+     "Emmanuel Macron",
+     "France",
+     "France",
+     "Francia"
+    ],
+    "cand": [
+     "Emmanuel Macron",
+     "France",
+     "France",
+     "Francia"
+    ],
+    "base_keys": [
+     "emmanuel macron",
+     "france"
+    ],
+    "cand_keys": [
+     "france"
+    ],
+    "explained": true
+   },
+   "722": {
+    "base": [],
+    "cand": [
+     "Melania Trump"
+    ],
+    "base_keys": [],
+    "cand_keys": [
+     "melania trump"
+    ],
+    "explained": false
+   },
+   "754": {
+    "base": [
+     "Trump",
+     "Trump Rallies"
+    ],
+    "cand": [
+     "DONALD J. TRUMP",
+     "Trump",
+     "Trump Rallies"
+    ],
+    "base_keys": [
+     "trump rallies",
+     "united states"
+    ],
+    "cand_keys": [
+     "trump rallies",
+     "united states"
+    ],
+    "explained": true
+   },
+   "837": {
+    "base": [
+     "El Salvador",
+     "Nayib Bukele"
+    ],
+    "cand": [
+     "El Salvador",
+     "Nayib Bukele"
+    ],
+    "base_keys": [
+     "el salvador",
+     "nayib bukele"
+    ],
+    "cand_keys": [
+     "el salvador"
+    ],
+    "explained": true
+   },
+   "839": {
+    "base": [
+     "J.D. Vance"
+    ],
+    "cand": [
+     "J.D. Vance"
+    ],
+    "base_keys": [
+     "j.d. vance"
+    ],
+    "cand_keys": [
+     "united states"
+    ],
+    "explained": true
+   },
+   "866": {
+    "base": [
+     "Republicans",
+     "Trump"
+    ],
+    "cand": [
+     "DONALD J. TRUMP",
+     "Republicans",
+     "Trump"
+    ],
+    "base_keys": [
+     "republicans",
+     "united states"
+    ],
+    "cand_keys": [
+     "united states"
+    ],
+    "explained": true
+   },
+   "918": {
+    "base": [
+     "DONALD J. TRUMP"
+    ],
+    "cand": [
+     "DONALD J. TRUMP",
+     "Trump"
+    ],
+    "base_keys": [
+     "donald j. trump"
+    ],
+    "cand_keys": [
+     "united states"
+    ],
+    "explained": true
+   },
+   "954": {
+    "base": [
+     "Machado",
+     "Maria Corina Machado"
+    ],
+    "cand": [
+     "Machado",
+     "Maria Corina Machado"
+    ],
+    "base_keys": [
+     "machado",
+     "maria corina machado"
+    ],
+    "cand_keys": [
+     "maria corina machado"
+    ],
+    "explained": true
+   },
+   "963": {
+    "base": [
+     "Antonelli",
+     "Kimi Antonelli"
+    ],
+    "cand": [
+     "Antonelli",
+     "Kimi Antonelli"
+    ],
+    "base_keys": [
+     "antonelli",
+     "kimi antonelli"
+    ],
+    "cand_keys": [
+     "kimi antonelli"
+    ],
+    "explained": false
+   },
+   "973": {
+    "base": [
+     "Emmanuel Macron",
+     "France",
+     "France"
+    ],
+    "cand": [
+     "Emmanuel Macron",
+     "France",
+     "France"
+    ],
+    "base_keys": [
+     "emmanuel macron",
+     "france"
+    ],
+    "cand_keys": [
+     "france"
+    ],
+    "explained": true
+   },
+   "985": {
+    "base": [
+     "Trump"
+    ],
+    "cand": [
+     "DONALD J. TRUMP",
+     "Trump"
+    ],
+    "base_keys": [
+     "united states"
+    ],
+    "cand_keys": [
+     "united states"
+    ],
+    "explained": true
+   },
+   "1023": {
+    "base": [
+     "El Salvador",
+     "El Salvador",
+     "Nayib Bukele"
+    ],
+    "cand": [
+     "El Salvador",
+     "El Salvador",
+     "Nayib Bukele"
+    ],
+    "base_keys": [
+     "el salvador",
+     "nayib bukele"
+    ],
+    "cand_keys": [
+     "el salvador"
+    ],
+    "explained": true
+   },
+   "1048": {
+    "base": [
+     "Alvin K. Hellerstein",
+     "America",
+     "Hellerstein"
+    ],
+    "cand": [
+     "Alvin K. Hellerstein",
+     "America",
+     "Hellerstein"
+    ],
+    "base_keys": [
+     "alvin k. hellerstein",
+     "hellerstein",
+     "united states"
+    ],
+    "cand_keys": [
+     "alvin k. hellerstein",
+     "united states"
+    ],
+    "explained": false
+   },
+   "1060": {
+    "base": [
+     "J.D. Vance",
+     "Trump"
+    ],
+    "cand": [
+     "J.D. Vance",
+     "Trump"
+    ],
+    "base_keys": [
+     "j.d. vance",
+     "united states"
+    ],
+    "cand_keys": [
+     "united states"
+    ],
+    "explained": true
+   },
+   "1122": {
+    "base": [
+     "Republicans"
+    ],
+    "cand": [
+     "Republicans"
+    ],
+    "base_keys": [
+     "republicans"
+    ],
+    "cand_keys": [],
+    "explained": true
+   },
+   "1174": {
+    "base": [
+     "America",
+     "Democrat",
+     "Donald Trump",
+     "Trump"
+    ],
+    "cand": [
+     "America",
+     "Democrat",
+     "Donald Trump",
+     "Trump"
+    ],
+    "base_keys": [
+     "democrat",
+     "united states"
+    ],
+    "cand_keys": [
+     "united states"
+    ],
+    "explained": true
+   },
+   "1189": {
+    "base": [
+     "Democrat",
+     "Donald Trump"
+    ],
+    "cand": [
+     "Democrat",
+     "Donald Trump"
+    ],
+    "base_keys": [
+     "democrat",
+     "united states"
+    ],
+    "cand_keys": [
+     "united states"
+    ],
+    "explained": true
+   }
+  },
+  "pass": false
+ },
+ "G6": {
+  "changed": 17,
+  "unexplained": {
+   "722": {
+    "base": [],
+    "cand": [
+     "melania trump"
+    ],
+    "explained": false
+   }
+  },
+  "changes": {
+   "178": {
+    "base": [
+     "republicans",
+     "united states"
+    ],
+    "cand": [
+     "united states"
+    ],
+    "explained": true
+   },
+   "202": {
+    "base": [
+     "donald j. trump"
+    ],
+    "cand": [
+     "united states"
+    ],
+    "explained": true
+   },
+   "250": {
+    "base": [
+     "emmanuel macron",
+     "russia"
+    ],
+    "cand": [
+     "france",
+     "russia"
+    ],
+    "explained": true
+   },
+   "501": {
+    "base": [
+     "el salvador",
+     "nayib bukele"
+    ],
+    "cand": [
+     "el salvador"
+    ],
+    "explained": true
+   },
+   "678": {
+    "base": [
+     "china",
+     "chinas long march"
+    ],
+    "cand": [
+     "china"
+    ],
+    "explained": true
+   },
+   "708": {
+    "base": [
+     "emmanuel macron",
+     "france"
+    ],
+    "cand": [
+     "france"
+    ],
+    "explained": true
+   },
+   "722": {
+    "base": [],
+    "cand": [
+     "melania trump"
+    ],
+    "explained": false
+   },
+   "837": {
+    "base": [
+     "el salvador",
+     "nayib bukele"
+    ],
+    "cand": [
+     "el salvador"
+    ],
+    "explained": true
+   },
+   "839": {
+    "base": [
+     "j.d. vance"
+    ],
+    "cand": [
+     "united states"
+    ],
+    "explained": true
+   },
+   "866": {
+    "base": [
+     "republicans",
+     "united states"
+    ],
+    "cand": [
+     "united states"
+    ],
+    "explained": true
+   },
+   "918": {
+    "base": [
+     "donald j. trump"
+    ],
+    "cand": [
+     "united states"
+    ],
+    "explained": true
+   },
+   "973": {
+    "base": [
+     "emmanuel macron",
+     "france"
+    ],
+    "cand": [
+     "france"
+    ],
+    "explained": true
+   },
+   "1023": {
+    "base": [
+     "el salvador",
+     "nayib bukele"
+    ],
+    "cand": [
+     "el salvador"
+    ],
+    "explained": true
+   },
+   "1060": {
+    "base": [
+     "j.d. vance",
+     "united states"
+    ],
+    "cand": [
+     "united states"
+    ],
+    "explained": true
+   },
+   "1122": {
+    "base": [
+     "republicans"
+    ],
+    "cand": [],
+    "explained": true
+   },
+   "1174": {
+    "base": [
+     "democrat",
+     "united states"
+    ],
+    "cand": [
+     "united states"
+    ],
+    "explained": true
+   },
+   "1189": {
+    "base": [
+     "democrat",
+     "united states"
+    ],
+    "cand": [
+     "united states"
+    ],
+    "explained": true
+   }
+  },
+  "pass": false
+ }
+}
