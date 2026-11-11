@@ -14,6 +14,7 @@ None and why_it_matters stays empty.
 from __future__ import annotations
 
 import re
+import unicodedata
 from collections import Counter
 
 from osint_monitor.core.config import DevelopmentTypeDefaults, load_development_types
@@ -159,6 +160,68 @@ TYPE_RULES: list[tuple[EventType, re.Pattern]] = [
         r"\bthreaten(?:s|ed)?\b|\bvow(?:s|ed)? to (?:retaliate|respond|strike)\b|\bwill (?:retaliate|respond)\b")),
     (EventType.WARNING, _rx(r"\bwarn(?:s|ed|ing)?\b|\bcaution(?:s|ed)?\b")),
 ]
+# Spanish and Italian equivalents of the English rules above (evaluations/classification/unknown-20261111).
+# Matched on accent-folded lowercase text, and only when the English rules find nothing in the whole
+# Development, so an already-typed Development never changes. Same order and intent as TYPE_RULES; no new
+# types. Verb- or noun-anchored, like the English rules.
+ML_COMMENTARY_TITLE = _rx(
+    r"^(?:como|por que|que|perche|come|cosa|quale|chi)\b|\?|\b(?:analisis|opinion|editorial|tribuna|"
+    r"analisi|editoriale|commento|portavoz|portavoce)\b")
+ML_TEMPORAL = _rx(
+    r"\b(?:antes|despues|tras|desde|hasta|prima|dopo|fino a)\s+(?:de\s+|di\s+)?"
+    r"(?:(?:la|las|el|los|le|il|lo|gli|delle|degli|della|del)\s+)?(?:elecciones|elezioni|cumbre|vertice|guerra)\b")
+ML_HYPOTHETICAL = _rx(
+    r"\b(?:planes? para|posibles?|eventual(?:es)?|futuros?|possibil[ei]|eventual[ei]|futur[oi]|piani? per)\s+"
+    r"(?:atacar|ataques?|ofensiva|attaccare|attacchi|attacco|offensiva)\b")
+ML_TYPE_RULES: list[tuple[EventType, re.Pattern]] = [
+    (EventType.CEASEFIRE, _rx(r"\b(?:alto el fuego|cese el fuego|tregua|cessate il fuoco)\b")),
+    (EventType.TREATY, _rx(r"\b(?:tratado|trattato)\b")),
+    (EventType.ARMS_TRANSFER, _rx(r"\b(?:venta|envio|paquete) de armas\b|\b(?:vendita|invio|fornitura) di armi\b"
+                                  r"|\bayuda militar\b|\baiuti militari\b")),
+    (EventType.AGREEMENT, _rx(
+        r"\b(?:firman?|firmo|firmaron|sellan?|alcanzan?|firmano|firma|siglano|sigla|raggiungono)\b[^.;]{0,40}"
+        r"\b(?:acuerdo|pacto|accordo|intesa|patto)\b|\b(?:acuerdo|accordo|intesa) (?:firmado|alcanzado|firmato|raggiunto)\b")),
+    (EventType.ELECTION, _rx(
+        r"\b(?:elecciones|comicios|referendum|presidenciales|primarias|elezioni|presidenziali|primarie|"
+        r"elecciones generales|ballottaggio|segunda vuelta)\b")),
+    (EventType.RESIGNATION, _rx(
+        r"\b(?:dimite|dimitio|dimision|dimisiones|se dimette|si e dimesso|si dimette|dimissioni|"
+        r"destituid[oa]|destituisce|destituito|cesad[oa])\b")),
+    (EventType.APPOINTMENT, _rx(r"\b(?:nombra|nombrado|nombrada|designa|nomina|nominato|nominata)\b")),
+    (EventType.SANCTIONS, _rx(r"\b(?:sanciones|sanciona|sancionado|sanzioni|sanziona|sanzionato)\b")),
+    (EventType.ECONOMIC_ACTION, _rx(r"\b(?:aranceles?|embargo|dazi|controles? a la exportacion)\b")),
+    (EventType.MILITARY_EXERCISE, _rx(r"\b(?:ejercicios? militares?|maniobras|esercitazion[ei])\b")),
+    (EventType.SECURITY_INCIDENT, _rx(
+        r"\b(?:atentado|attentato|tiroteo|sparatoria|apunal\w*|accoltell\w*|ciberataque|attacco informatico|"
+        r"espionaje|spionaggio|hackers?|secuestr\w*|sequestr\w* (?:di persona|lampo))\b")),
+    (EventType.MILITARY_ACTION, _rx(
+        r"\b(?:ataca|atacan|ataco|atacaron|atacado|ataque|ataques|bombardea|bombardeo|bombardeos|bombardean|"
+        r"ofensiva|invasion|invade|derriba|derribo|derriban|attacca|attaccano|attacco|attacchi|bombarda|"
+        r"bombardamento|bombardamenti|raid|offensiva|invasione|abbatte|abbattuti|abbattut[oi])\b")),
+    (EventType.DEPLOYMENT, _rx(r"\b(?:despliega|despliegue|desplegados?|schiera|schieramento|dispiega|dispiegamento)\b"
+                               r"|\b(?:envia|invia) (?:tropas|truppe|buques|navi)\b")),
+    (EventType.SUMMIT, _rx(r"\b(?:cumbre|vertice)\b")),
+    (EventType.NEGOTIATION, _rx(r"\b(?:negociaciones?|negocia|negocian|negoziat\w*|conversaciones de paz|colloqui)\b")),
+    (EventType.DIPLOMATIC_VISIT, _rx(r"\b(?:visita oficial|visita de estado|viaja a|llega a|in visita|visita a|"
+                                     r"visita ufficiale|arriva a)\b")),
+    (EventType.BILATERAL_MEETING, _rx(
+        r"\b(?:se reune|se reunio|se reunen|reunion con|incontra|incontrano|incontro con|ha incontrato|"
+        r"conversacion telefonica|telefonata)\b")),
+    (EventType.POLICY_CHANGE, _rx(
+        r"\b(?:decreto|nueva ley|aprueba la ley|ley aprobada|nuova legge|approva la legge|legge approvata|prohibe|"
+        r"vieta|entra en vigor|entra in vigore)\b")),
+    (EventType.THREAT, _rx(r"\b(?:amenaza con|amenazan con|minaccia di|minacciano di)\b")),
+    (EventType.WARNING, _rx(r"\b(?:advierte|advierten|alerta de|avverte|avvertono|mette in guardia)\b")),
+]
+ML_STATEMENT_TITLE = _rx(
+    r"\b(?:afirma|asegura|declara|anuncia|denuncia|condena|dice|insiste|dichiara|afferma|annuncia|condanna|"
+    r"sostiene|ribadisce)\b")
+
+
+def _fold(text: str) -> str:
+    return "".join(c for c in unicodedata.normalize("NFKD", text or "") if not unicodedata.combining(c)).lower()
+
+
 # Only matched against headlines: "said" appears in almost every article body.
 STATEMENT_TITLE = _rx(
     r"\b(?:said|says|stated|declare[sd]|announce[sd]|statement|addresse[sd]|"
@@ -372,7 +435,52 @@ class RuleBasedClassifier:
             if not headline:
                 evidence += " [lead sentence]"
             return winner, evidence, ambiguous
-        return EventType.UNKNOWN, "", True
+        return self._match_multilingual(context) or (EventType.UNKNOWN, "", True)
+
+    @staticmethod
+    def _match_text_ml(text: str, headline: bool) -> tuple[EventType, str] | None:
+        """Spanish / Italian equivalent of ``_match_text`` on accent-folded text."""
+        t = _fold(text)
+        if headline:
+            commentary = ML_COMMENTARY_TITLE.search(t)
+            if commentary:
+                return EventType.COMMENTARY, commentary.group(0)
+        stripped = ML_HYPOTHETICAL.sub(" ", ML_TEMPORAL.sub(" ", t))
+        for event_type, pattern in ML_TYPE_RULES:
+            m = pattern.search(QUOTED.sub(" ", stripped) if event_type in RHETORIC_TYPES else stripped)
+            if m:
+                return event_type, m.group(0)
+        if headline:
+            statement = ML_STATEMENT_TITLE.search(stripped)
+            if statement:
+                return EventType.SIGNIFICANT_STATEMENT, statement.group(0)
+        return None
+
+    def _match_multilingual(self, context: ClusterContext) -> tuple[EventType, str, bool] | None:
+        """Fallback when no English rule matched any headline or lead: the same vote with the es/it rules.
+        Never reached for a Development the English rules type, so those cannot change. Only Spanish and
+        Italian items are read: English headlines keep the English rules' deliberate narrowness."""
+        from osint_monitor.processors.language import item_language
+        ml = [i for i in context.items if item_language(i.source_name or None, i.title or "") in ("es", "it")]
+        if not ml:
+            return None
+        for texts, headline in (([i.title for i in ml], True), ([_lead(i.excerpt) for i in ml], False)):
+            votes = [v for v in (self._match_text_ml(t, headline) for t in texts if t) if v]
+            commentary = sum(1 for t, _ in votes if t == EventType.COMMENTARY)
+            if headline and commentary and commentary * 2 <= len([t for t in texts if t]):
+                votes = [v for v in votes if v[0] != EventType.COMMENTARY]
+            if not votes:
+                continue
+            counts = Counter(t for t, _ in votes)
+            ranked = sorted(counts, key=lambda t: (-counts[t], _PRIORITY[t]))
+            winner = ranked[0]
+            ambiguous = (len(ranked) > 1 and counts[ranked[1]] == counts[winner]
+                         and winner not in RHETORIC_TYPES and ranked[1] not in RHETORIC_TYPES)
+            evidence = next(e for t, e in votes if t == winner) + " [es/it]"
+            if not headline:
+                evidence += " [lead sentence]"
+            return winner, evidence, ambiguous
+        return None
 
     def _concreteness(
         self,
