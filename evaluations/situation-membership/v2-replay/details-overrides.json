@@ -1,0 +1,3624 @@
+{
+ "rule": "situation-v2 candidate (overrides scope), CONTRACT-V2-R2 (bf57ed7)",
+ "cases": {
+  "S001": {
+   "development_id": 750,
+   "situation": "eu-china-trade",
+   "outcome": "NOT_MEMBER",
+   "reason": "GENERIC_ANCHOR_ONLY"
+  },
+  "S003": {
+   "development_id": 1145,
+   "situation": "russia-united-states",
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_SCOPE_SIGNAL"
+  },
+  "S006": {
+   "development_id": 760,
+   "situation": "javier-milei-milei",
+   "outcome": "NOT_MEMBER",
+   "reason": "SITUATION_NOT_REPRODUCED"
+  },
+  "S008": {
+   "development_id": 453,
+   "situation": "israel-palestine",
+   "outcome": "NOT_MEMBER",
+   "reason": "SITUATION_NOT_REPRODUCED"
+  },
+  "S009": {
+   "development_id": 188,
+   "situation": "china-united-states",
+   "outcome": "NOT_MEMBER",
+   "reason": "GENERIC_ANCHOR_ONLY"
+  },
+  "S013": {
+   "development_id": 982,
+   "situation": "france-pope",
+   "outcome": "NOT_MEMBER",
+   "reason": "SITUATION_NOT_REPRODUCED"
+  },
+  "S016": {
+   "development_id": 633,
+   "situation": "gaza-ceasefire",
+   "outcome": "NOT_MEMBER",
+   "reason": "LOW_COVERAGE"
+  },
+  "S022": {
+   "development_id": 64,
+   "situation": "russia-ukraine-war",
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_SHARED_ACTORS"
+  },
+  "S023": {
+   "development_id": 501,
+   "situation": "bukele-el-salvador-nayib-bukele",
+   "outcome": "NOT_MEMBER",
+   "reason": "SITUATION_NOT_REPRODUCED"
+  },
+  "S024": {
+   "development_id": 31,
+   "situation": "us-iran",
+   "outcome": "NOT_MEMBER",
+   "reason": "LOW_COVERAGE"
+  },
+  "S027": {
+   "development_id": 775,
+   "situation": "nato-russia",
+   "outcome": "NOT_MEMBER",
+   "reason": "SITUATION_NOT_REPRODUCED"
+  },
+  "S028": {
+   "development_id": 720,
+   "situation": "russia-ukraine-war",
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_SCOPE_SIGNAL"
+  },
+  "S030": {
+   "development_id": 221,
+   "situation": "nato-russia",
+   "outcome": "NOT_MEMBER",
+   "reason": "SITUATION_NOT_REPRODUCED"
+  },
+  "S033": {
+   "development_id": 297,
+   "situation": "eritrea-ethiopia",
+   "outcome": "NOT_MEMBER",
+   "reason": "SITUATION_NOT_REPRODUCED"
+  },
+  "S037": {
+   "development_id": 214,
+   "situation": "russia-ukraine-war",
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_SCOPE_SIGNAL"
+  },
+  "S042": {
+   "development_id": 754,
+   "situation": "donald-j-trump-united-states",
+   "outcome": "NOT_MEMBER",
+   "reason": "SITUATION_NOT_REPRODUCED"
+  },
+  "S043": {
+   "development_id": 6,
+   "situation": "china-taiwan",
+   "outcome": "NOT_MEMBER",
+   "reason": "SITUATION_NOT_REPRODUCED"
+  },
+  "S045": {
+   "development_id": 449,
+   "situation": "russia-ukraine-war",
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_PRINCIPALS"
+  },
+  "S049": {
+   "development_id": 99,
+   "situation": "russia-ukraine-war",
+   "outcome": "MEMBER",
+   "reason": "CONTINUATION"
+  },
+  "S050": {
+   "development_id": 1086,
+   "situation": "russia-ukraine-war",
+   "outcome": "NOT_MEMBER",
+   "reason": "GENERIC_ANCHOR_ONLY"
+  },
+  "S051": {
+   "development_id": 124,
+   "situation": "russia-ukraine-war",
+   "outcome": "NOT_MEMBER",
+   "reason": "GENERIC_ANCHOR_ONLY"
+  },
+  "S054": {
+   "development_id": 1010,
+   "situation": "russia-united-states",
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_SCOPE_SIGNAL"
+  },
+  "S055": {
+   "development_id": 1066,
+   "situation": "international-criminal-court-united-states",
+   "outcome": "NOT_MEMBER",
+   "reason": "SITUATION_NOT_REPRODUCED"
+  },
+  "S056": {
+   "development_id": 351,
+   "situation": "donald-j-trump-united-states",
+   "outcome": "NOT_MEMBER",
+   "reason": "SITUATION_NOT_REPRODUCED"
+  },
+  "S060": {
+   "development_id": 564,
+   "situation": "eu-china-trade",
+   "outcome": "NOT_MEMBER",
+   "reason": "GENERIC_ANCHOR_ONLY"
+  },
+  "S062": {
+   "development_id": 618,
+   "situation": "us-iran",
+   "outcome": "MEMBER",
+   "reason": "CONTINUATION"
+  },
+  "S066": {
+   "development_id": 87,
+   "situation": "china-taiwan",
+   "outcome": "NOT_MEMBER",
+   "reason": "SITUATION_NOT_REPRODUCED"
+  },
+  "S067": {
+   "development_id": 283,
+   "situation": "international-criminal-court-united-states",
+   "outcome": "NOT_MEMBER",
+   "reason": "SITUATION_NOT_REPRODUCED"
+  },
+  "S068": {
+   "development_id": 303,
+   "situation": "russia-ukraine-war",
+   "outcome": "NOT_MEMBER",
+   "reason": "GENERIC_ANCHOR_ONLY"
+  },
+  "S074": {
+   "development_id": 619,
+   "situation": "javier-milei-milei",
+   "outcome": "NOT_MEMBER",
+   "reason": "SITUATION_NOT_REPRODUCED"
+  },
+  "S078": {
+   "development_id": 2,
+   "situation": "china-united-states",
+   "outcome": "MEMBER",
+   "reason": "CONTINUATION"
+  },
+  "S079": {
+   "development_id": 916,
+   "situation": "china-united-states",
+   "outcome": "NOT_MEMBER",
+   "reason": "GENERIC_ANCHOR_ONLY"
+  },
+  "S080": {
+   "development_id": 12,
+   "situation": "russia-ukraine-war",
+   "outcome": "NOT_MEMBER",
+   "reason": "GENERIC_ANCHOR_ONLY"
+  },
+  "S086": {
+   "development_id": 287,
+   "situation": "european-union-russia",
+   "outcome": "NOT_MEMBER",
+   "reason": "SITUATION_NOT_REPRODUCED"
+  },
+  "S087": {
+   "development_id": 255,
+   "situation": "canada-european-union",
+   "outcome": "NOT_MEMBER",
+   "reason": "SITUATION_NOT_REPRODUCED"
+  },
+  "S090": {
+   "development_id": 947,
+   "situation": "china-chinas-long-march",
+   "outcome": "NOT_MEMBER",
+   "reason": "SITUATION_NOT_REPRODUCED"
+  },
+  "S093": {
+   "development_id": 1155,
+   "situation": "france-pope",
+   "outcome": "NOT_MEMBER",
+   "reason": "SITUATION_NOT_REPRODUCED"
+  },
+  "S096": {
+   "development_id": 402,
+   "situation": "rachel-simon",
+   "outcome": "NOT_MEMBER",
+   "reason": "SITUATION_NOT_REPRODUCED"
+  },
+  "S101": {
+   "development_id": 395,
+   "situation": "russia-united-states",
+   "outcome": "MEMBER",
+   "reason": "CONTINUATION"
+  },
+  "S105": {
+   "development_id": 1072,
+   "situation": "eritrea-ethiopia",
+   "outcome": "NOT_MEMBER",
+   "reason": "SITUATION_NOT_REPRODUCED"
+  },
+  "S107": {
+   "development_id": 666,
+   "situation": "china-chinas-long-march",
+   "outcome": "NOT_MEMBER",
+   "reason": "SITUATION_NOT_REPRODUCED"
+  },
+  "S119": {
+   "development_id": 366,
+   "situation": "eu-china-trade",
+   "outcome": "MEMBER",
+   "reason": "CONTINUATION"
+  },
+  "S121": {
+   "development_id": 1193,
+   "situation": "china-united-states",
+   "outcome": "NOT_MEMBER",
+   "reason": "GENERIC_ANCHOR_ONLY"
+  },
+  "S130": {
+   "development_id": 524,
+   "situation": "russia-ukraine-war",
+   "outcome": "NOT_MEMBER",
+   "reason": "LOW_COVERAGE"
+  },
+  "S132": {
+   "development_id": 1060,
+   "situation": "us-iran",
+   "outcome": "NOT_MEMBER",
+   "reason": "GENERIC_ANCHOR_ONLY"
+  },
+  "S134": {
+   "development_id": 841,
+   "situation": "machado-maria-corina-machado",
+   "outcome": "NOT_MEMBER",
+   "reason": "SITUATION_NOT_REPRODUCED"
+  },
+  "S137": {
+   "development_id": 9,
+   "situation": "eritrea-ethiopia",
+   "outcome": "NOT_MEMBER",
+   "reason": "SITUATION_NOT_REPRODUCED"
+  },
+  "S138": {
+   "development_id": 409,
+   "situation": "canada-european-union",
+   "outcome": "NOT_MEMBER",
+   "reason": "SITUATION_NOT_REPRODUCED"
+  },
+  "S140": {
+   "development_id": 320,
+   "situation": "elon-musk-musk",
+   "outcome": "NOT_MEMBER",
+   "reason": "SITUATION_NOT_REPRODUCED"
+  },
+  "S141": {
+   "development_id": 156,
+   "situation": "canada-european-union",
+   "outcome": "NOT_MEMBER",
+   "reason": "SITUATION_NOT_REPRODUCED"
+  },
+  "S145": {
+   "development_id": 104,
+   "situation": "democrat-united-states",
+   "outcome": "NOT_MEMBER",
+   "reason": "SITUATION_NOT_REPRODUCED"
+  },
+  "S149": {
+   "development_id": 679,
+   "situation": "israel-palestine",
+   "outcome": "NOT_MEMBER",
+   "reason": "SITUATION_NOT_REPRODUCED"
+  },
+  "S150": {
+   "development_id": 948,
+   "situation": "israel-palestine",
+   "outcome": "NOT_MEMBER",
+   "reason": "SITUATION_NOT_REPRODUCED"
+  },
+  "S152": {
+   "development_id": 156,
+   "situation": "eu-china-trade",
+   "outcome": "NOT_MEMBER",
+   "reason": "GENERIC_ANCHOR_ONLY"
+  },
+  "S154": {
+   "development_id": 840,
+   "situation": "israel-palestine",
+   "outcome": "NOT_MEMBER",
+   "reason": "SITUATION_NOT_REPRODUCED"
+  },
+  "S155": {
+   "development_id": 509,
+   "situation": "european-union-russia",
+   "outcome": "NOT_MEMBER",
+   "reason": "SITUATION_NOT_REPRODUCED"
+  },
+  "S157": {
+   "development_id": 447,
+   "situation": "elon-musk-musk",
+   "outcome": "NOT_MEMBER",
+   "reason": "SITUATION_NOT_REPRODUCED"
+  },
+  "S158": {
+   "development_id": 565,
+   "situation": "nato-russia",
+   "outcome": "NOT_MEMBER",
+   "reason": "SITUATION_NOT_REPRODUCED"
+  },
+  "S159": {
+   "development_id": 1040,
+   "situation": "mexico-united-states",
+   "outcome": "NOT_MEMBER",
+   "reason": "SITUATION_NOT_REPRODUCED"
+  },
+  "S162": {
+   "development_id": 1170,
+   "situation": "china-taiwan",
+   "outcome": "NOT_MEMBER",
+   "reason": "SITUATION_NOT_REPRODUCED"
+  },
+  "S166": {
+   "development_id": 49,
+   "situation": "china-united-states",
+   "outcome": "MEMBER",
+   "reason": "CONTINUATION"
+  },
+  "S168": {
+   "development_id": 43,
+   "situation": "mexico-united-states",
+   "outcome": "NOT_MEMBER",
+   "reason": "SITUATION_NOT_REPRODUCED"
+  },
+  "S169": {
+   "development_id": 254,
+   "situation": "christa-pike-pike",
+   "outcome": "NOT_MEMBER",
+   "reason": "SITUATION_NOT_REPRODUCED"
+  },
+  "S176": {
+   "development_id": 901,
+   "situation": "russia-united-states",
+   "outcome": "NOT_MEMBER",
+   "reason": "GENERIC_ANCHOR_ONLY"
+  },
+  "S177": {
+   "development_id": 880,
+   "situation": "russia-ukraine-war",
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_SCOPE_SIGNAL"
+  },
+  "S185": {
+   "development_id": 1135,
+   "situation": "christa-pike-pike",
+   "outcome": "NOT_MEMBER",
+   "reason": "SITUATION_NOT_REPRODUCED"
+  },
+  "S195": {
+   "development_id": 800,
+   "situation": "russia-united-states",
+   "outcome": "MEMBER",
+   "reason": "CONTINUATION"
+  },
+  "S199": {
+   "development_id": 1089,
+   "situation": "afghanistan-taliban",
+   "outcome": "NOT_MEMBER",
+   "reason": "SITUATION_NOT_REPRODUCED"
+  },
+  "S200": {
+   "development_id": 1168,
+   "situation": "gaza-ceasefire",
+   "outcome": "NOT_MEMBER",
+   "reason": "LOW_COVERAGE"
+  },
+  "S205": {
+   "development_id": 1138,
+   "situation": "russia-united-states",
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_SHARED_ACTORS"
+  },
+  "S207": {
+   "development_id": 84,
+   "situation": "russia-ukraine-war",
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_SCOPE_SIGNAL"
+  },
+  "S208": {
+   "development_id": 386,
+   "situation": "us-iran",
+   "outcome": "NOT_MEMBER",
+   "reason": "GENERIC_ANCHOR_ONLY"
+  },
+  "S209": {
+   "development_id": 604,
+   "situation": "gaza-ceasefire",
+   "outcome": "PENDING",
+   "reason": "PENDING_ATTRIBUTION"
+  },
+  "S213": {
+   "development_id": 39,
+   "situation": "china-united-states",
+   "outcome": "NOT_MEMBER",
+   "reason": "GENERIC_ANCHOR_ONLY"
+  },
+  "S221": {
+   "development_id": 417,
+   "situation": "russia-ukraine-war",
+   "outcome": "MEMBER",
+   "reason": "CONTINUATION"
+  },
+  "S222": {
+   "development_id": 944,
+   "situation": "donald-j-trump-united-states",
+   "outcome": "NOT_MEMBER",
+   "reason": "SITUATION_NOT_REPRODUCED"
+  },
+  "S233": {
+   "development_id": 802,
+   "situation": "russia-united-states",
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_SCOPE_SIGNAL"
+  },
+  "S237": {
+   "development_id": 45,
+   "situation": "us-iran",
+   "outcome": "NOT_MEMBER",
+   "reason": "GENERIC_ANCHOR_ONLY"
+  },
+  "S238": {
+   "development_id": 954,
+   "situation": "machado-maria-corina-machado",
+   "outcome": "NOT_MEMBER",
+   "reason": "SITUATION_NOT_REPRODUCED"
+  },
+  "S243": {
+   "development_id": 497,
+   "situation": "china-united-states",
+   "outcome": "NOT_MEMBER",
+   "reason": "OUT_OF_SCOPE_DOMAIN"
+  },
+  "S248": {
+   "development_id": 341,
+   "situation": "european-union-russia",
+   "outcome": "NOT_MEMBER",
+   "reason": "SITUATION_NOT_REPRODUCED"
+  },
+  "S251": {
+   "development_id": 121,
+   "situation": "russia-united-states",
+   "outcome": "NOT_MEMBER",
+   "reason": "GENERIC_ANCHOR_ONLY"
+  },
+  "S256": {
+   "development_id": 40,
+   "situation": "russia-ukraine-war",
+   "outcome": "NOT_MEMBER",
+   "reason": "LOW_COVERAGE"
+  },
+  "S262": {
+   "development_id": 257,
+   "situation": "israel-palestine",
+   "outcome": "NOT_MEMBER",
+   "reason": "SITUATION_NOT_REPRODUCED"
+  },
+  "S267": {
+   "development_id": 1,
+   "situation": "china-united-states",
+   "outcome": "MEMBER",
+   "reason": "CONTINUATION"
+  },
+  "S268": {
+   "development_id": 1181,
+   "situation": "afghanistan-taliban",
+   "outcome": "NOT_MEMBER",
+   "reason": "SITUATION_NOT_REPRODUCED"
+  },
+  "S269": {
+   "development_id": 1161,
+   "situation": "us-iran",
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_SCOPE_SIGNAL"
+  },
+  "S271": {
+   "development_id": 429,
+   "situation": "rachel-simon",
+   "outcome": "NOT_MEMBER",
+   "reason": "SITUATION_NOT_REPRODUCED"
+  },
+  "S273": {
+   "development_id": 810,
+   "situation": "russia-ukraine-war",
+   "outcome": "NOT_MEMBER",
+   "reason": "GENERIC_ANCHOR_ONLY"
+  },
+  "S274": {
+   "development_id": 542,
+   "situation": "china-united-states",
+   "outcome": "NOT_MEMBER",
+   "reason": "OUT_OF_SCOPE_DOMAIN"
+  },
+  "S275": {
+   "development_id": 439,
+   "situation": "russia-united-states",
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_PRINCIPALS"
+  },
+  "S276": {
+   "development_id": 884,
+   "situation": "russia-united-states",
+   "outcome": "NOT_MEMBER",
+   "reason": "OUT_OF_SCOPE_DOMAIN"
+  },
+  "S279": {
+   "development_id": 513,
+   "situation": "israel-palestine",
+   "outcome": "NOT_MEMBER",
+   "reason": "SITUATION_NOT_REPRODUCED"
+  },
+  "S292": {
+   "development_id": 1000,
+   "situation": "sudan-civil-war",
+   "outcome": "MEMBER",
+   "reason": "CONTINUATION"
+  },
+  "S293": {
+   "development_id": 737,
+   "situation": "china-united-states",
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_SCOPE_SIGNAL"
+  },
+  "S295": {
+   "development_id": 1125,
+   "situation": "russia-ukraine-war",
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_SCOPE_SIGNAL"
+  },
+  "S297": {
+   "development_id": 387,
+   "situation": "russia-united-states",
+   "outcome": "NOT_MEMBER",
+   "reason": "OUT_OF_SCOPE_DOMAIN"
+  },
+  "S299": {
+   "development_id": 65,
+   "situation": "gaza-ceasefire",
+   "outcome": "NOT_MEMBER",
+   "reason": "LOW_COVERAGE"
+  },
+  "S300": {
+   "development_id": 710,
+   "situation": "russia-united-states",
+   "outcome": "NOT_MEMBER",
+   "reason": "GENERIC_ANCHOR_ONLY"
+  },
+  "S301": {
+   "development_id": 837,
+   "situation": "bukele-el-salvador-nayib-bukele",
+   "outcome": "NOT_MEMBER",
+   "reason": "SITUATION_NOT_REPRODUCED"
+  },
+  "S302": {
+   "development_id": 973,
+   "situation": "emmanuel-macron-france-macron",
+   "outcome": "NOT_MEMBER",
+   "reason": "SITUATION_NOT_REPRODUCED"
+  },
+  "S306": {
+   "development_id": 526,
+   "situation": "malaysia-singapore",
+   "outcome": "NOT_MEMBER",
+   "reason": "SITUATION_NOT_REPRODUCED"
+  },
+  "S307": {
+   "development_id": 268,
+   "situation": "gaza-ceasefire",
+   "outcome": "MEMBER",
+   "reason": "CONTINUATION"
+  },
+  "S310": {
+   "development_id": 132,
+   "situation": "us-iran",
+   "outcome": "NOT_MEMBER",
+   "reason": "LOW_COVERAGE"
+  },
+  "S312": {
+   "development_id": 990,
+   "situation": "china-chinas-long-march",
+   "outcome": "NOT_MEMBER",
+   "reason": "SITUATION_NOT_REPRODUCED"
+  },
+  "S318": {
+   "development_id": 250,
+   "situation": "emmanuel-macron-france-macron",
+   "outcome": "NOT_MEMBER",
+   "reason": "SITUATION_NOT_REPRODUCED"
+  },
+  "S319": {
+   "development_id": 811,
+   "situation": "russia-united-states",
+   "outcome": "NOT_MEMBER",
+   "reason": "GENERIC_ANCHOR_ONLY"
+  },
+  "S320": {
+   "development_id": 959,
+   "situation": "russia-ukraine-war",
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_SCOPE_SIGNAL"
+  },
+  "S329": {
+   "development_id": 56,
+   "situation": "malaysia-singapore",
+   "outcome": "NOT_MEMBER",
+   "reason": "SITUATION_NOT_REPRODUCED"
+  },
+  "S330": {
+   "development_id": 401,
+   "situation": "russia-united-states",
+   "outcome": "NOT_MEMBER",
+   "reason": "GENERIC_ANCHOR_ONLY"
+  },
+  "S337": {
+   "development_id": 46,
+   "situation": "democrat-united-states",
+   "outcome": "NOT_MEMBER",
+   "reason": "SITUATION_NOT_REPRODUCED"
+  },
+  "S340": {
+   "development_id": 1151,
+   "situation": "mexico-united-states",
+   "outcome": "NOT_MEMBER",
+   "reason": "SITUATION_NOT_REPRODUCED"
+  },
+  "S341": {
+   "development_id": 350,
+   "situation": "israel-palestine",
+   "outcome": "NOT_MEMBER",
+   "reason": "SITUATION_NOT_REPRODUCED"
+  },
+  "S343": {
+   "development_id": 858,
+   "situation": "china-united-states",
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_PRINCIPALS"
+  },
+  "S344": {
+   "development_id": 327,
+   "situation": "sudan-civil-war",
+   "outcome": "MEMBER",
+   "reason": "CONTINUATION"
+  },
+  "S347": {
+   "development_id": 34,
+   "situation": "china-united-states",
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_SHARED_ACTORS"
+  },
+  "S350": {
+   "development_id": 383,
+   "situation": "european-union-russia",
+   "outcome": "NOT_MEMBER",
+   "reason": "SITUATION_NOT_REPRODUCED"
+  },
+  "S353": {
+   "development_id": 556,
+   "situation": "international-criminal-court-united-states",
+   "outcome": "NOT_MEMBER",
+   "reason": "SITUATION_NOT_REPRODUCED"
+  },
+  "S357": {
+   "development_id": 1147,
+   "situation": "russia-united-states",
+   "outcome": "NOT_MEMBER",
+   "reason": "GENERIC_ANCHOR_ONLY"
+  },
+  "S359": {
+   "development_id": 1043,
+   "situation": "russia-united-states",
+   "outcome": "NOT_MEMBER",
+   "reason": "GENERIC_ANCHOR_ONLY"
+  },
+  "S362": {
+   "development_id": 743,
+   "situation": "china-taiwan",
+   "outcome": "NOT_MEMBER",
+   "reason": "SITUATION_NOT_REPRODUCED"
+  },
+  "S364": {
+   "development_id": 159,
+   "situation": "donald-j-trump-united-states",
+   "outcome": "NOT_MEMBER",
+   "reason": "SITUATION_NOT_REPRODUCED"
+  },
+  "S365": {
+   "development_id": 829,
+   "situation": "france-pope",
+   "outcome": "NOT_MEMBER",
+   "reason": "SITUATION_NOT_REPRODUCED"
+  },
+  "S372": {
+   "development_id": 186,
+   "situation": "democrat-united-states",
+   "outcome": "NOT_MEMBER",
+   "reason": "SITUATION_NOT_REPRODUCED"
+  },
+  "S377": {
+   "development_id": 242,
+   "situation": "russia-ukraine-war",
+   "outcome": "NOT_MEMBER",
+   "reason": "NO_SCOPE_SIGNAL"
+  },
+  "S379": {
+   "development_id": 112,
+   "situation": "china-united-states",
+   "outcome": "NOT_MEMBER",
+   "reason": "GENERIC_ANCHOR_ONLY"
+  }
+ },
+ "situations": {
+  "us-iran": [
+   {
+    "slug": "us-iran",
+    "mode": "seeded",
+    "anchors": [
+     "iran",
+     "united states"
+    ],
+    "families": [],
+    "place_scope": [
+     "iran",
+     "united states"
+    ],
+    "keywords": [
+     "nuclear",
+     "enrichment",
+     "IAEA",
+     "JCPOA",
+     "talks",
+     "negotiations",
+     "sanctions",
+     "Hormuz"
+    ],
+    "hazard": null,
+    "scope_version": 1,
+    "scope_source": "seed",
+    "founders": []
+   }
+  ],
+  "russia-ukraine-war": [
+   {
+    "slug": "russia-ukraine-war",
+    "mode": "seeded",
+    "anchors": [
+     "russia",
+     "ukraine"
+    ],
+    "families": [],
+    "place_scope": [
+     "russia",
+     "ukraine"
+    ],
+    "keywords": [
+     "front",
+     "offensive",
+     "drone",
+     "missile",
+     "ceasefire",
+     "peace talks",
+     "occupied"
+    ],
+    "hazard": null,
+    "scope_version": 1,
+    "scope_source": "seed",
+    "founders": []
+   }
+  ],
+  "eu-china-trade": [
+   {
+    "slug": "eu-china-trade",
+    "mode": "seeded",
+    "anchors": [
+     "china",
+     "european union"
+    ],
+    "families": [],
+    "place_scope": [
+     "china"
+    ],
+    "keywords": [
+     "tariff",
+     "anti-dumping",
+     "export control",
+     "EV",
+     "trade",
+     "subsidy",
+     "rare earth"
+    ],
+    "hazard": null,
+    "scope_version": 1,
+    "scope_source": "seed",
+    "founders": []
+   }
+  ],
+  "gaza-ceasefire": [
+   {
+    "slug": "gaza-ceasefire",
+    "mode": "seeded",
+    "anchors": [
+     "hamas",
+     "israel"
+    ],
+    "families": [],
+    "place_scope": [
+     "israel"
+    ],
+    "keywords": [
+     "ceasefire",
+     "hostage",
+     "truce",
+     "Gaza",
+     "Rafah",
+     "mediation",
+     "humanitarian"
+    ],
+    "hazard": null,
+    "scope_version": 1,
+    "scope_source": "seed",
+    "founders": []
+   }
+  ],
+  "sudan-civil-war": [
+   {
+    "slug": "sudan-civil-war",
+    "mode": "seeded",
+    "anchors": [
+     "rapid support forces",
+     "sudan"
+    ],
+    "families": [],
+    "place_scope": [
+     "sudan"
+    ],
+    "keywords": [
+     "El Fasher",
+     "Darfur",
+     "Khartoum",
+     "SAF",
+     "famine"
+    ],
+    "hazard": null,
+    "scope_version": 1,
+    "scope_source": "seed",
+    "founders": []
+   }
+  ],
+  "china-united-states": [
+   {
+    "slug": "china-united-states",
+    "mode": "actor_process",
+    "anchors": [
+     "china",
+     "united states"
+    ],
+    "families": [
+     "diplomacy"
+    ],
+    "place_scope": [
+     "china",
+     "united states"
+    ],
+    "keywords": [],
+    "hazard": null,
+    "scope_version": 2,
+    "scope_source": "owner_override",
+    "founders": [
+     1,
+     2
+    ]
+   }
+  ],
+  "france-pope": [],
+  "eritrea-ethiopia": [],
+  "nato-russia": [],
+  "christa-pike-pike": [],
+  "russia-united-states": [
+   {
+    "slug": "russia-united-states",
+    "mode": "actor_process",
+    "anchors": [
+     "russia",
+     "united states"
+    ],
+    "families": [
+     "diplomacy"
+    ],
+    "place_scope": [
+     "russia",
+     "united states"
+    ],
+    "keywords": [],
+    "hazard": null,
+    "scope_version": 2,
+    "scope_source": "owner_override",
+    "founders": [
+     168,
+     184
+    ]
+   }
+  ],
+  "european-union-russia": [],
+  "donald-j-trump-united-states": [],
+  "elon-musk-musk": [],
+  "rachel-simon": [],
+  "israel-palestine": [],
+  "malaysia-singapore": [],
+  "china-taiwan": [],
+  "javier-milei-milei": [],
+  "mexico-united-states": [],
+  "bukele-el-salvador-nayib-bukele": [],
+  "china-chinas-long-march": [],
+  "international-criminal-court-united-states": [],
+  "machado-maria-corina-machado": [],
+  "emmanuel-macron-france-macron": [],
+  "canada-european-union": [],
+  "afghanistan-taliban": [],
+  "democrat-united-states": []
+ },
+ "not_reproduced": {
+  "france-pope": "no two founders share anchor parties and a family",
+  "eritrea-ethiopia": "no two founders share anchor parties and a family",
+  "nato-russia": "no two founders share anchor parties and a family",
+  "christa-pike-pike": "no two founders >= 24 h apart share the party, a family and an event country",
+  "european-union-russia": "no two founders share anchor parties and a family",
+  "donald-j-trump-united-states": "single party is generic (OD1/OD6)",
+  "elon-musk-musk": "no two founders >= 24 h apart share the party, a family and an event country",
+  "rachel-simon": "no two founders share anchor parties and a family",
+  "israel-palestine": "no two founders share anchor parties and a family",
+  "malaysia-singapore": "no two founders share anchor parties and a family",
+  "china-taiwan": "no two founders share anchor parties and a family",
+  "javier-milei-milei": "no two founders >= 24 h apart share the party, a family and an event country",
+  "mexico-united-states": "no two founders share anchor parties and a family",
+  "bukele-el-salvador-nayib-bukele": "no two founders >= 24 h apart share the party, a family and an event country",
+  "china-chinas-long-march": "single party is generic (OD1/OD6)",
+  "international-criminal-court-united-states": "no two founders share anchor parties and a family",
+  "machado-maria-corina-machado": "no two founders >= 24 h apart share the party, a family and an event country",
+  "emmanuel-macron-france-macron": "single party is generic (OD1/OD6)",
+  "canada-european-union": "no two founders share anchor parties and a family",
+  "afghanistan-taliban": "no two founders share anchor parties and a family",
+  "democrat-united-states": "single party is generic (OD1/OD6)"
+ },
+ "override_mapping": {
+  "china-united-states": {
+   "families": [
+    "diplomacy"
+   ],
+   "countries": [
+    "united states"
+   ]
+  },
+  "russia-united-states": {
+   "families": [],
+   "countries": [
+    "russia",
+    "united states"
+   ]
+  }
+ },
+ "features": {
+  "1": {
+   "parties": [
+    "china",
+    "united states"
+   ],
+   "family": "diplomacy",
+   "event_country": null,
+   "places": {
+    "asean": null,
+    "east room": null,
+    "futurechina business forum": null,
+    "great hall of the people": null,
+    "middle east": null,
+    "new york": "united states",
+    "oval office": null,
+    "shenzhen": "china",
+    "south": null,
+    "south lawn": null
+   },
+   "report_share": 0.652,
+   "hazard": null,
+   "hedges": []
+  },
+  "2": {
+   "parties": [
+    "china",
+    "united states"
+   ],
+   "family": "diplomacy",
+   "event_country": null,
+   "places": {
+    "asean": null,
+    "futurechina business forum": null,
+    "hong kong": "china",
+    "new york": "united states",
+    "san francisco": "united states",
+    "south": null
+   },
+   "report_share": 0.718,
+   "hazard": null,
+   "hedges": []
+  },
+  "6": {
+   "parties": [
+    "china aerospace studies institute"
+   ],
+   "family": "diplomacy",
+   "event_country": "united states",
+   "places": {
+    "alabama": "united states"
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "9": {
+   "parties": [
+    "ethiopia"
+   ],
+   "family": "armed_conflict",
+   "event_country": "ethiopia",
+   "places": {
+    "tigray": "ethiopia"
+   },
+   "report_share": 0.714,
+   "hazard": null,
+   "hedges": []
+  },
+  "12": {
+   "parties": [
+    "russia"
+   ],
+   "family": "armed_conflict",
+   "event_country": null,
+   "places": {},
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": [
+    "alleged"
+   ]
+  },
+  "19": {
+   "parties": [
+    "pope"
+   ],
+   "family": "security",
+   "event_country": "france",
+   "places": {
+    "elysee palace": null,
+    "paris": "france"
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "27": {
+   "parties": [
+    "pope"
+   ],
+   "family": "politics",
+   "event_country": "france",
+   "places": {
+    "paris": "france"
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "31": {
+   "parties": [
+    "iran",
+    "united kingdom"
+   ],
+   "family": "security",
+   "event_country": "united kingdom",
+   "places": {
+    "gloucestershire": null,
+    "london": "united kingdom",
+    "middle east": null,
+    "nagaland": null,
+    "strait of hormuz": null,
+    "westminster": null
+   },
+   "report_share": 0.765,
+   "hazard": null,
+   "hedges": []
+  },
+  "34": {
+   "parties": [
+    "fu shuang",
+    "ping ping"
+   ],
+   "family": "diplomacy",
+   "event_country": null,
+   "places": {
+    "atlanta": "united states",
+    "chengdu": "china",
+    "kuwait international airport": null,
+    "zoo atlanta": null
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "39": {
+   "parties": [
+    "united states"
+   ],
+   "family": "diplomacy",
+   "event_country": null,
+   "places": {},
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "40": {
+   "parties": [
+    "south korea",
+    "ukraine"
+   ],
+   "family": "diplomacy",
+   "event_country": null,
+   "places": {},
+   "report_share": 0.667,
+   "hazard": null,
+   "hedges": []
+  },
+  "43": {
+   "parties": [
+    "mexico"
+   ],
+   "family": null,
+   "event_country": "united states",
+   "places": {
+    "cabo san lucas": null,
+    "hawaii": "united states",
+    "pacific coast": null,
+    "puerto san carlos": null
+   },
+   "report_share": 1.0,
+   "hazard": [
+    "storm",
+    "polo"
+   ],
+   "hedges": []
+  },
+  "45": {
+   "parties": [
+    "united states"
+   ],
+   "family": "economic",
+   "event_country": "iraq",
+   "places": {
+    "najaf": "iraq"
+   },
+   "report_share": 0.667,
+   "hazard": null,
+   "hedges": []
+  },
+  "46": {
+   "parties": [
+    "united states"
+   ],
+   "family": "diplomacy",
+   "event_country": "united states",
+   "places": {
+    "iowa": "united states"
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "49": {
+   "parties": [
+    "china",
+    "united states"
+   ],
+   "family": "diplomacy",
+   "event_country": null,
+   "places": {
+    "hong kong": "china",
+    "san francisco": "united states"
+   },
+   "report_share": 0.765,
+   "hazard": null,
+   "hedges": []
+  },
+  "56": {
+   "parties": [
+    "malaysia"
+   ],
+   "family": "diplomacy",
+   "event_country": "malaysia",
+   "places": {
+    "kuala lumpur": "malaysia"
+   },
+   "report_share": 0.833,
+   "hazard": null,
+   "hedges": []
+  },
+  "64": {
+   "parties": [
+    "estonia"
+   ],
+   "family": "security",
+   "event_country": null,
+   "places": {
+    "charge": null,
+    "europe": null,
+    "leipzig/halle airport": null,
+    "milrem glasgow": null,
+    "munich": "germany",
+    "schwarz": null,
+    "scotland": "united kingdom",
+    "ukraine russia": null
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "65": {
+   "parties": [
+    "israel"
+   ],
+   "family": "armed_conflict",
+   "event_country": "palestine",
+   "places": {
+    "gaza": "palestine",
+    "gaza city": "palestine"
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "84": {
+   "parties": [
+    "russia",
+    "ukraine"
+   ],
+   "family": "armed_conflict",
+   "event_country": null,
+   "places": {
+    "azov": null,
+    "glasgow": "united kingdom",
+    "rostov oblast": null,
+    "scotland": "united kingdom",
+    "tokyo": "japan"
+   },
+   "report_share": 0.909,
+   "hazard": null,
+   "hedges": []
+  },
+  "85": {
+   "parties": [
+    "christa pike"
+   ],
+   "family": null,
+   "event_country": "united states",
+   "places": {
+    "middle east": null,
+    "nashville": "united states",
+    "tennessee": "united states"
+   },
+   "report_share": 0.952,
+   "hazard": null,
+   "hedges": []
+  },
+  "86": {
+   "parties": [
+    "eritrea",
+    "ethiopia"
+   ],
+   "family": "politics",
+   "event_country": null,
+   "places": {
+    "addis": null,
+    "addis ababa": "ethiopia",
+    "asmara": "eritrea",
+    "baidoa": null,
+    "idlib": "syria",
+    "mekelle": null,
+    "south west state": null,
+    "taftanaz": null,
+    "tigray": "ethiopia",
+    "tigray eritrea": null
+   },
+   "report_share": 0.846,
+   "hazard": null,
+   "hedges": []
+  },
+  "87": {
+   "parties": [
+    "china"
+   ],
+   "family": null,
+   "event_country": "nigeria",
+   "places": {
+    "lagos": "nigeria"
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "92": {
+   "parties": [
+    "russia"
+   ],
+   "family": "security",
+   "event_country": null,
+   "places": {
+    "baltic sea": null,
+    "europe": null,
+    "kaliningrad": null,
+    "west": null
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "99": {
+   "parties": [
+    "russia",
+    "ukraine"
+   ],
+   "family": "armed_conflict",
+   "event_country": null,
+   "places": {
+    "azov": null,
+    "glasgow": "united kingdom",
+    "rostov oblast": null,
+    "scotland": "united kingdom",
+    "tokyo": "japan"
+   },
+   "report_share": 0.889,
+   "hazard": null,
+   "hedges": []
+  },
+  "104": {
+   "parties": [
+    "united states"
+   ],
+   "family": "diplomacy",
+   "event_country": null,
+   "places": {},
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "110": {
+   "parties": [
+    "eritrea",
+    "ethiopia"
+   ],
+   "family": null,
+   "event_country": null,
+   "places": {
+    "addis": null,
+    "addis ababa": "ethiopia",
+    "asmara": "eritrea",
+    "tigray": "ethiopia",
+    "tigray eritrea": null
+   },
+   "report_share": 0.714,
+   "hazard": null,
+   "hedges": []
+  },
+  "112": {
+   "parties": [
+    "china",
+    "spain"
+   ],
+   "family": null,
+   "event_country": null,
+   "places": {
+    "europe": null
+   },
+   "report_share": 0.5,
+   "hazard": null,
+   "hedges": []
+  },
+  "121": {
+   "parties": [
+    "latvia",
+    "russia"
+   ],
+   "family": "politics",
+   "event_country": null,
+   "places": {
+    "pro-europe": null
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "124": {
+   "parties": [
+    "russia"
+   ],
+   "family": "armed_conflict",
+   "event_country": null,
+   "places": {
+    "apartment block": null,
+    "black sea": null,
+    "black sea domain": null,
+    "brovary": null,
+    "buchanskyi": null,
+    "chernihiv oblast": null,
+    "chernihiv region": null,
+    "collapses apartment building": null,
+    "crimean peninsula": null,
+    "donetsk": "ukraine",
+    "europe": null,
+    "kharkiv": "ukraine",
+    "kharkiv oblast": null,
+    "konstantinovo": null,
+    "kramatorsk": null,
+    "kyiv metro": null,
+    "northern bridge": null,
+    "odesa": "ukraine",
+    "omsk": null,
+    "pecherskyi": null,
+    "polandus": null,
+    "pryluky": null,
+    "pryluky fourteen": null,
+    "samara": "russia",
+    "sea of azov": null,
+    "siberia": "russia",
+    "tver oblast": null,
+    "ukraine russia": null,
+    "zaporizhzhia": "ukraine"
+   },
+   "report_share": 0.962,
+   "hazard": [
+    "flood",
+    null
+   ],
+   "hedges": []
+  },
+  "132": {
+   "parties": [
+    "iran"
+   ],
+   "family": "diplomacy",
+   "event_country": "iraq",
+   "places": {
+    "erbil": "iraq",
+    "kurdistan": null,
+    "middle east": null,
+    "strait of": null
+   },
+   "report_share": 0.9,
+   "hazard": null,
+   "hedges": []
+  },
+  "156": {
+   "parties": [
+    "european union",
+    "republic of moldova"
+   ],
+   "family": "diplomacy",
+   "event_country": null,
+   "places": {
+    "republic of moldova": null
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "159": {
+   "parties": [
+    "russia",
+    "united states"
+   ],
+   "family": null,
+   "event_country": "russia",
+   "places": {
+    "estado": null,
+    "instituto contra la peste de irkutsk": null,
+    "irkutsk": null,
+    "shelejov": null,
+    "shelekhov": null,
+    "siberia": "russia",
+    "siberia la casa blanca": null,
+    "spallanzani": null,
+    "yaroslavsky": null
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": [
+    "presunto"
+   ]
+  },
+  "168": {
+   "parties": [
+    "russia",
+    "united states"
+   ],
+   "family": "diplomacy",
+   "event_country": "russia",
+   "places": {
+    "irkutsk": null,
+    "irkutsk anti-plague institute": null,
+    "oval office": null,
+    "siberia": "russia",
+    "siberia russian": null
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": [
+    "suspected"
+   ]
+  },
+  "184": {
+   "parties": [
+    "russia",
+    "united states"
+   ],
+   "family": "diplomacy",
+   "event_country": null,
+   "places": {
+    "black sea": null,
+    "california": "united states",
+    "crimea": "ukraine",
+    "europe": null
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "186": {
+   "parties": [
+    "united states",
+    "vance"
+   ],
+   "family": "diplomacy",
+   "event_country": "united states",
+   "places": {
+    "alaska": "united states"
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "188": {
+   "parties": [
+    "united states"
+   ],
+   "family": "security",
+   "event_country": "united states",
+   "places": {
+    "california": "united states",
+    "los angeles international airport": null,
+    "taiwan strait": null
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": [
+    "allegedly"
+   ]
+  },
+  "190": {
+   "parties": [
+    "european union",
+    "russia"
+   ],
+   "family": "economic",
+   "event_country": null,
+   "places": {},
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "202": {
+   "parties": [
+    "united states"
+   ],
+   "family": "politics",
+   "event_country": "united states",
+   "places": {
+    "nebraska": "united states"
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "211": {
+   "parties": [
+    "israel",
+    "palestine"
+   ],
+   "family": "armed_conflict",
+   "event_country": "palestine",
+   "places": {
+    "gaza": "palestine",
+    "quneitra": null,
+    "west bank": "palestine",
+    "west bank domain": null
+   },
+   "report_share": 0.923,
+   "hazard": null,
+   "hedges": []
+  },
+  "214": {
+   "parties": [
+    "russia",
+    "ukraine"
+   ],
+   "family": null,
+   "event_country": null,
+   "places": {},
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "221": {
+   "parties": [
+    "russia"
+   ],
+   "family": "security",
+   "event_country": null,
+   "places": {
+    "europe": null,
+    "kaliningrad": null
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "237": {
+   "parties": [],
+   "family": "armed_conflict",
+   "event_country": "palestine",
+   "places": {
+    "gaza": "palestine"
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "242": {
+   "parties": [
+    "russia",
+    "ukraine"
+   ],
+   "family": "armed_conflict",
+   "event_country": null,
+   "places": {
+    "europe": null
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "250": {
+   "parties": [
+    "france",
+    "russia"
+   ],
+   "family": "armed_conflict",
+   "event_country": null,
+   "places": {
+    "europe": null
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "254": {
+   "parties": [
+    "christa pike",
+    "united states"
+   ],
+   "family": "security",
+   "event_country": "united states",
+   "places": {
+    "tennessee": "united states",
+    "texas": "united states"
+   },
+   "report_share": 0.769,
+   "hazard": null,
+   "hedges": []
+  },
+  "255": {
+   "parties": [
+    "european union"
+   ],
+   "family": null,
+   "event_country": null,
+   "places": {
+    "atlantic": null,
+    "europe": null
+   },
+   "report_share": 0.875,
+   "hazard": null,
+   "hedges": []
+  },
+  "257": {
+   "parties": [
+    "israel"
+   ],
+   "family": "armed_conflict",
+   "event_country": null,
+   "places": {},
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "268": {
+   "parties": [
+    "brett mcgurk",
+    "hamas",
+    "israel",
+    "shoshan haran"
+   ],
+   "family": "diplomacy",
+   "event_country": "palestine",
+   "places": {
+    "gaza": "palestine"
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "270": {
+   "parties": [
+    "united states"
+   ],
+   "family": null,
+   "event_country": "russia",
+   "places": {
+    "siberia": "russia"
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "283": {
+   "parties": [
+    "united states"
+   ],
+   "family": "diplomacy",
+   "event_country": "palestine",
+   "places": {
+    "gaza": "palestine"
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "287": {
+   "parties": [
+    "european union"
+   ],
+   "family": null,
+   "event_country": null,
+   "places": {},
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "295": {
+   "parties": [
+    "israel"
+   ],
+   "family": "economic",
+   "event_country": "palestine",
+   "places": {
+    "west bank": "palestine"
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "297": {
+   "parties": [],
+   "family": null,
+   "event_country": null,
+   "places": {
+    "africa": null,
+    "asmara": "eritrea",
+    "tigray": "ethiopia"
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "303": {
+   "parties": [
+    "russia",
+    "yandex"
+   ],
+   "family": "armed_conflict",
+   "event_country": null,
+   "places": {},
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": [
+    "reportedly"
+   ]
+  },
+  "318": {
+   "parties": [
+    "united kingdom"
+   ],
+   "family": "economic",
+   "event_country": null,
+   "places": {
+    "u.k": null
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "320": {
+   "parties": [
+    "elon musk"
+   ],
+   "family": null,
+   "event_country": null,
+   "places": {
+    "asia": null
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "327": {
+   "parties": [
+    "sudan",
+    "united nations"
+   ],
+   "family": "economic",
+   "event_country": "sudan",
+   "places": {
+    "darfur": "sudan",
+    "tawila": null
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "341": {
+   "parties": [
+    "european union"
+   ],
+   "family": null,
+   "event_country": null,
+   "places": {
+    "vilnius": null
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "350": {
+   "parties": [
+    "israel"
+   ],
+   "family": null,
+   "event_country": null,
+   "places": {},
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "351": {
+   "parties": [
+    "united states"
+   ],
+   "family": null,
+   "event_country": "united states",
+   "places": {
+    "alaska": "united states",
+    "beluga": null,
+    "iowa": "united states",
+    "map": null,
+    "maryland": "united states",
+    "massachusetts": "united states",
+    "texas": "united states",
+    "virginia": "united states"
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "354": {
+   "parties": [
+    "national medals of technology",
+    "united states"
+   ],
+   "family": null,
+   "event_country": null,
+   "places": {},
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "366": {
+   "parties": [
+    "china",
+    "european union"
+   ],
+   "family": "diplomacy",
+   "event_country": null,
+   "places": {
+    "europe": null
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "375": {
+   "parties": [
+    "malaysia",
+    "singapore"
+   ],
+   "family": null,
+   "event_country": "malaysia",
+   "places": {
+    "johor": null,
+    "kuala lumpur": "malaysia",
+    "southeast asia": null
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "383": {
+   "parties": [
+    "european union",
+    "ukraine",
+    "united nations"
+   ],
+   "family": "diplomacy",
+   "event_country": null,
+   "places": {
+    "middle east": null
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "386": {
+   "parties": [
+    "united states"
+   ],
+   "family": "economic",
+   "event_country": null,
+   "places": {
+    "e.o": null,
+    "sheet": null,
+    "tesoro de estados unidos": null,
+    "youtube": null
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "387": {
+   "parties": [
+    "russia",
+    "united states"
+   ],
+   "family": "security",
+   "event_country": "united states",
+   "places": {
+    "bronx": null,
+    "little italy": null,
+    "miami": "united states",
+    "new york": "united states",
+    "sparatoria": null,
+    "stato": null
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "395": {
+   "parties": [
+    "russia",
+    "united states"
+   ],
+   "family": "diplomacy",
+   "event_country": null,
+   "places": {},
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "401": {
+   "parties": [
+    "united states"
+   ],
+   "family": null,
+   "event_country": "united states",
+   "places": {
+    "atlantico": null,
+    "clarksville": null,
+    "golfo del messico": null,
+    "lago ontario": null,
+    "pacifico": null,
+    "tennessee": "united states"
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "402": {
+   "parties": [],
+   "family": null,
+   "event_country": "united states",
+   "places": {
+    "hawaii": "united states",
+    "pacific": null,
+    "pacific coast": null,
+    "pacific coast hurricane": null
+   },
+   "report_share": 1.0,
+   "hazard": [
+    "storm",
+    "simon"
+   ],
+   "hedges": []
+  },
+  "409": {
+   "parties": [
+    "andy burnham",
+    "european union"
+   ],
+   "family": null,
+   "event_country": "united kingdom",
+   "places": {
+    "london": "united kingdom"
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "417": {
+   "parties": [
+    "russia",
+    "ukraine"
+   ],
+   "family": "armed_conflict",
+   "event_country": null,
+   "places": {},
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "429": {
+   "parties": [],
+   "family": null,
+   "event_country": "united states",
+   "places": {
+    "ademas": null,
+    "baja california": null,
+    "california": "united states",
+    "ensenada": null,
+    "guerrero": null,
+    "nueva york": null
+   },
+   "report_share": 1.0,
+   "hazard": [
+    "storm",
+    "rachel"
+   ],
+   "hedges": []
+  },
+  "439": {
+   "parties": [],
+   "family": null,
+   "event_country": null,
+   "places": {
+    "alicante": null,
+    "baleari": null,
+    "ceuta": "spain",
+    "cina-corea del nord": null,
+    "ciudad del vaticano": null,
+    "civit": null,
+    "costa d'avorio": null,
+    "europa": null,
+    "felipe": null,
+    "gemelli": null,
+    "hospital gemelli": null,
+    "la santa sede": null,
+    "lago di costanza": null,
+    "mar nero": null,
+    "marocco": null,
+    "melilla": "spain",
+    "occidente": null,
+    "paese": null,
+    "paesi": null,
+    "rome": "italy",
+    "san pietroburgo": null,
+    "siccita": null,
+    "stretto di hormuz": null,
+    "sudamerica": null,
+    "tensione": null,
+    "ue piogge": null,
+    "valencia": null,
+    "vaticano": null,
+    "yalu": null
+   },
+   "report_share": 0.917,
+   "hazard": null,
+   "hedges": []
+  },
+  "447": {
+   "parties": [
+    "united states"
+   ],
+   "family": null,
+   "event_country": "united states",
+   "places": {
+    "aeropuerto internacional harry reid": null,
+    "capitolio": null,
+    "estado de nuevo mexico": null,
+    "florida": "united states",
+    "kansas": "united states",
+    "la casa blanca": null,
+    "las vegas": "united states",
+    "maine": "united states",
+    "mar-a-lago": null,
+    "nueva america": null,
+    "tajrish": null
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "449": {
+   "parties": [],
+   "family": "politics",
+   "event_country": null,
+   "places": {
+    "aeropuerto ejecutivo de opa-locka": null,
+    "aeropuerto miami opa-locka": null,
+    "africa": null,
+    "alaska": "united states",
+    "aleksandar vucic": null,
+    "amazonas": null,
+    "amazonassu": null,
+    "amazonia": null,
+    "america latina": null,
+    "anchorage": "united states",
+    "aqui america": null,
+    "asia": null,
+    "avenues": null,
+    "bahia": null,
+    "banco master": null,
+    "belgrado": null,
+    "belo horizonte": null,
+    "bolsa familia": null,
+    "brasilia": "brazil",
+    "buenos aires": "argentina",
+    "california": "united states",
+    "capitolio de los estados unidos": null,
+    "caribe": null,
+    "casa blanca sombria": null,
+    "casa real": null,
+    "cerca": null,
+    "ceuta": "spain",
+    "chicanas": null,
+    "chiese": null,
+    "ciudad del vaticano": null,
+    "congreso de brasil": null,
+    "congreso de colombia": null,
+    "constitucional": null,
+    "copacabana": null,
+    "corpus christi": null,
+    "corresponsales": null,
+    "covid": null,
+    "datafolha": null,
+    "daytona beach": null,
+    "deportazioni": null,
+    "dona luiza": null,
+    "dubuque": null,
+    "ee uu": null,
+    "emiratos arabes unidos": null,
+    "espirito santo": null,
+    "estadao": null,
+    "estado": null,
+    "europa": null,
+    "europe": null,
+    "federative republic of brazil": null,
+    "filadelfia": null,
+    "flavio": null,
+    "florida": "united states",
+    "foto": null,
+    "furiosos": null,
+    "global south": null,
+    "gobierno": null,
+    "gobierno de brasil": null,
+    "gobierno de donald trump": null,
+    "gobierno de javier milei": null,
+    "guayaquil": null,
+    "hacienda": null,
+    "ia": null,
+    "ibovespa": null,
+    "iguazu": null,
+    "iowa": "united states",
+    "italian republic": null,
+    "jato": null,
+    "jordania": null,
+    "kansas": "united states",
+    "la casa blanca": null,
+    "la casa rosada": null,
+    "la santa sede": null,
+    "latin america": null,
+    "lava": null,
+    "lima": "peru",
+    "lisboa": null,
+    "louisiana": "united states",
+    "mar-a-lago": null,
+    "mateusz morawiecki": null,
+    "metropoles": null,
+    "miami": "united states",
+    "michigan": "united states",
+    "minas gerais": null,
+    "misiones": null,
+    "monitorati": null,
+    "nashville": "united states",
+    "nordeste": null,
+    "north zone": null,
+    "ohio": "united states",
+    "oporto": null,
+    "oriente medio": null,
+    "pacifico": null,
+    "paese": null,
+    "paesi": null,
+    "palacio del planalto": null,
+    "palm beach": null,
+    "paralelamente": null,
+    "park city": null,
+    "patria": null,
+    "paulista": null,
+    "pensilvania": null,
+    "pf": null,
+    "policaa": null,
+    "puerto iguazu": null,
+    "rio": null,
+    "rio de janeiro": "brazil",
+    "rogeria braga": null,
+    "rome": "italy",
+    "san pedro": null,
+    "san salvador de bahia": null,
+    "sao bernardo do campo": null,
+    "sao paulo": "brazil",
+    "sao paulo miles": null,
+    "south carolina": "united states",
+    "stato": null,
+    "sterling heights": null,
+    "sudamerica": null,
+    "supremo": null,
+    "sur": null,
+    "sussex": "united kingdom",
+    "tel aviv": "israel",
+    "tennessee": "united states",
+    "tensione": null,
+    "texas": "united states",
+    "toledo": null,
+    "trasporti": null,
+    "tribunal": null,
+    "tribunal supremo federal": null,
+    "universidad de sao paulo": null,
+    "usa' 'criminali": null,
+    "usp": null,
+    "varsavia": null,
+    "varsovia": null,
+    "vaticano": null,
+    "videoanalisis": null,
+    "videoanalisis | lula": null,
+    "vitoria": null,
+    "vucic": null,
+    "yotova": null
+   },
+   "report_share": 0.958,
+   "hazard": [
+    "flood",
+    null
+   ],
+   "hedges": []
+  },
+  "453": {
+   "parties": [
+    "israel",
+    "syria"
+   ],
+   "family": "politics",
+   "event_country": null,
+   "places": {
+    "africa": null,
+    "asia-pacific": null,
+    "damascus": "syria",
+    "dc": null,
+    "europe": null,
+    "gaza": "palestine",
+    "latin america & caribbean": null,
+    "middle east": null,
+    "middle east monitor": null,
+    "ramallah": "palestine",
+    "suwayda": null,
+    "sweida": null,
+    "west bank": "palestine",
+    "west bank domain": null,
+    "youtube": null
+   },
+   "report_share": 0.842,
+   "hazard": null,
+   "hedges": []
+  },
+  "495": {
+   "parties": [
+    "israel",
+    "palestine"
+   ],
+   "family": "politics",
+   "event_country": "palestine",
+   "places": {
+    "gaza": "palestine",
+    "west bank": "palestine"
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "497": {
+   "parties": [
+    "china",
+    "united states"
+   ],
+   "family": "economic",
+   "event_country": null,
+   "places": {
+    "asia": null,
+    "asia-pacific": null,
+    "hong kong": "china",
+    "shenzhen": "china",
+    "taipei": "taiwan"
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "501": {
+   "parties": [
+    "el salvador"
+   ],
+   "family": null,
+   "event_country": null,
+   "places": {
+    "san salvador": null
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "503": {
+   "parties": [
+    "china",
+    "taiwan"
+   ],
+   "family": "diplomacy",
+   "event_country": null,
+   "places": {
+    "china meridional": null,
+    "pratas": null
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "509": {
+   "parties": [
+    "european union"
+   ],
+   "family": "economic",
+   "event_country": null,
+   "places": {
+    "u.k": null
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "513": {
+   "parties": [
+    "palestine"
+   ],
+   "family": "diplomacy",
+   "event_country": null,
+   "places": {
+    "cairo": "egypt",
+    "el cairo": null,
+    "gobierno": null,
+    "hamas": null,
+    "middle east": null,
+    "west bank": "palestine"
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "524": {
+   "parties": [
+    "biletskyi",
+    "ukraine",
+    "vivaldi"
+   ],
+   "family": "diplomacy",
+   "event_country": "united kingdom",
+   "places": {
+    "donetsk oblast": null,
+    "kolodiazi": null,
+    "london": "united kingdom",
+    "zelena dolyna": null
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "526": {
+   "parties": [
+    "singapore"
+   ],
+   "family": "diplomacy",
+   "event_country": null,
+   "places": {
+    "strait of hormuz": null
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "542": {
+   "parties": [
+    "china",
+    "katie zacharia",
+    "united states"
+   ],
+   "family": "politics",
+   "event_country": "united states",
+   "places": {
+    "california": "united states",
+    "florida": "united states",
+    "kentucky": "united states"
+   },
+   "report_share": 0.75,
+   "hazard": null,
+   "hedges": []
+  },
+  "546": {
+   "parties": [
+    "taiwan",
+    "united states"
+   ],
+   "family": null,
+   "event_country": "united states",
+   "places": {
+    "florida": "united states"
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "548": {
+   "parties": [
+    "malaysia",
+    "singapore"
+   ],
+   "family": null,
+   "event_country": "malaysia",
+   "places": {
+    "kuala lumpur": "malaysia"
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "556": {
+   "parties": [
+    "united states"
+   ],
+   "family": "diplomacy",
+   "event_country": "united states",
+   "places": {
+    "fort hood": null,
+    "southeast asia": null,
+    "texas": "united states"
+   },
+   "report_share": 0.906,
+   "hazard": null,
+   "hedges": []
+  },
+  "564": {
+   "parties": [
+    "european union"
+   ],
+   "family": "politics",
+   "event_country": null,
+   "places": {
+    "europe": null
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "565": {
+   "parties": [
+    "russia",
+    "united kingdom"
+   ],
+   "family": "armed_conflict",
+   "event_country": null,
+   "places": {
+    "pacific": null
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "604": {
+   "parties": [
+    "hamas",
+    "israel"
+   ],
+   "family": "diplomacy",
+   "event_country": "palestine",
+   "places": {
+    "gaza": "palestine"
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": [
+    "claims"
+   ]
+  },
+  "618": {
+   "parties": [
+    "iran",
+    "united states"
+   ],
+   "family": "economic",
+   "event_country": null,
+   "places": {
+    "new us": null
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "619": {
+   "parties": [
+    "javier milei"
+   ],
+   "family": null,
+   "event_country": "argentina",
+   "places": {
+    "buenos aires": "argentina",
+    "gobierno de javier milei": null
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "633": {
+   "parties": [
+    "israel"
+   ],
+   "family": "armed_conflict",
+   "event_country": null,
+   "places": {
+    "jerusalem": null
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "657": {
+   "parties": [
+    "mexico",
+    "united states"
+   ],
+   "family": "security",
+   "event_country": null,
+   "places": {},
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "666": {
+   "parties": [
+    "china"
+   ],
+   "family": null,
+   "event_country": null,
+   "places": {
+    "gansu": null
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "678": {
+   "parties": [
+    "china"
+   ],
+   "family": null,
+   "event_country": null,
+   "places": {},
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "679": {
+   "parties": [
+    "israel",
+    "obama"
+   ],
+   "family": "diplomacy",
+   "event_country": null,
+   "places": {
+    "middle east": null,
+    "middle east monitor": null
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "703": {
+   "parties": [
+    "china",
+    "taiwan"
+   ],
+   "family": "armed_conflict",
+   "event_country": "taiwan",
+   "places": {
+    "charleston": null,
+    "dongsha island": null,
+    "hualien": null,
+    "kaohsiung": "taiwan",
+    "pingtung": null,
+    "sabina shoal": null,
+    "south china sea": null,
+    "spratly": null,
+    "spratly islands": null,
+    "taipei": "taiwan"
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "708": {
+   "parties": [
+    "france"
+   ],
+   "family": "diplomacy",
+   "event_country": null,
+   "places": {
+    "bahrein": null,
+    "eliseo": null,
+    "emiratos": null,
+    "emiratos arabes unidos": null,
+    "golfo": null,
+    "golfo persico": null,
+    "gulf": null
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "710": {
+   "parties": [
+    "india",
+    "united states"
+   ],
+   "family": "economic",
+   "event_country": "india",
+   "places": {
+    "delhi": "india",
+    "mumbai": "india",
+    "new delhi": "india"
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "720": {
+   "parties": [
+    "egypt",
+    "india",
+    "russia",
+    "turkey",
+    "ukraine"
+   ],
+   "family": "diplomacy",
+   "event_country": null,
+   "places": {
+    "black sea": null,
+    "black sea shipping domain": null,
+    "talks": null
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "737": {
+   "parties": [
+    "china",
+    "united states"
+   ],
+   "family": "economic",
+   "event_country": null,
+   "places": {},
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "743": {
+   "parties": [
+    "china"
+   ],
+   "family": "economic",
+   "event_country": null,
+   "places": {},
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "750": {
+   "parties": [
+    "european union"
+   ],
+   "family": "diplomacy",
+   "event_country": null,
+   "places": {},
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "754": {
+   "parties": [
+    "trump rallies",
+    "united states"
+   ],
+   "family": null,
+   "event_country": "united states",
+   "places": {
+    "de soto": null,
+    "kansas": "united states",
+    "kansas city": null,
+    "lawrence venturepark": null,
+    "overland park": null,
+    "strategic fintech hub": null,
+    "sunflower state": null,
+    "topeka": null
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "760": {
+   "parties": [
+    "javier milei"
+   ],
+   "family": null,
+   "event_country": "spain",
+   "places": {
+    "ceuta": "spain"
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "775": {
+   "parties": [
+    "russia"
+   ],
+   "family": "security",
+   "event_country": null,
+   "places": {},
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "793": {
+   "parties": [
+    "international criminal court",
+    "united states"
+   ],
+   "family": "economic",
+   "event_country": "palestine",
+   "places": {
+    "africa": null,
+    "gaza": "palestine"
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "800": {
+   "parties": [
+    "russia"
+   ],
+   "family": "diplomacy",
+   "event_country": null,
+   "places": {
+    "california": "united states",
+    "gobierno": null,
+    "izium": null,
+    "kharkiv oblast": null,
+    "mather air force base": null,
+    "mather airport": null,
+    "pulkovo airport": null,
+    "sacramento": null,
+    "st petersburg": "russia"
+   },
+   "report_share": 0.966,
+   "hazard": null,
+   "hedges": []
+  },
+  "802": {
+   "parties": [
+    "russia",
+    "united states"
+   ],
+   "family": null,
+   "event_country": null,
+   "places": {
+    "ejercito": null,
+    "estado": null,
+    "starshield": null
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "810": {
+   "parties": [
+    "germany",
+    "russia"
+   ],
+   "family": "security",
+   "event_country": null,
+   "places": {
+    "zaporizhzhia oblast": null
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "811": {
+   "parties": [
+    "germany",
+    "russia"
+   ],
+   "family": "armed_conflict",
+   "event_country": null,
+   "places": {
+    "berlin": "germany",
+    "europe": null,
+    "leipzig": null,
+    "leipzig/halle airport": null,
+    "vienna": "austria",
+    "wunstorf": null
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "829": {
+   "parties": [
+    "france"
+   ],
+   "family": null,
+   "event_country": null,
+   "places": {},
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "833": {
+   "parties": [
+    "united states"
+   ],
+   "family": "security",
+   "event_country": null,
+   "places": {},
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": [
+    "accused of",
+    "suspected"
+   ]
+  },
+  "837": {
+   "parties": [
+    "el salvador"
+   ],
+   "family": "security",
+   "event_country": null,
+   "places": {
+    "puerto principe": null,
+    "san salvador": null
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "840": {
+   "parties": [
+    "iran",
+    "israel",
+    "united states"
+   ],
+   "family": null,
+   "event_country": null,
+   "places": {
+    "persico": null
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "841": {
+   "parties": [
+    "maria corina machado"
+   ],
+   "family": "politics",
+   "event_country": null,
+   "places": {
+    "alaska": "united states",
+    "banco de inglaterra": null,
+    "barquisimeto": null,
+    "buena vista del meta": null,
+    "caracas": "venezuela",
+    "caracas la embajada de estados unidos": null,
+    "colombia cartello": null,
+    "corpus christi": null,
+    "eln": null,
+    "estado": null,
+    "gobierno": null,
+    "gobierno de estados unidos": null,
+    "la guaira": null,
+    "latin america": null,
+    "london": "united kingdom",
+    "miami": "united states",
+    "michigan": "united states",
+    "planadas": null,
+    "plasencia": null,
+    "santuario divina pastora": null,
+    "sinaloa": null,
+    "stato": null,
+    "stato di apure": null,
+    "texas": "united states",
+    "tolima": null,
+    "valencia": null,
+    "valle del cauca": null,
+    "western hemisphere": null
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "845": {
+   "parties": [],
+   "family": "security",
+   "event_country": null,
+   "places": {},
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "846": {
+   "parties": [
+    "international criminal court",
+    "united states"
+   ],
+   "family": null,
+   "event_country": "palestine",
+   "places": {
+    "gaza": "palestine"
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "858": {
+   "parties": [],
+   "family": null,
+   "event_country": null,
+   "places": {},
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "880": {
+   "parties": [
+    "russia",
+    "ukraine"
+   ],
+   "family": null,
+   "event_country": null,
+   "places": {},
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "884": {
+   "parties": [
+    "russia",
+    "united states"
+   ],
+   "family": "economic",
+   "event_country": null,
+   "places": {
+    "new york": "united states",
+    "sakhalin": null,
+    "st petersburg": "russia"
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "901": {
+   "parties": [
+    "melania trump",
+    "united states"
+   ],
+   "family": "armed_conflict",
+   "event_country": null,
+   "places": {
+    "crimea": "ukraine",
+    "dnipro river": null,
+    "kherson": "ukraine",
+    "new york city": "united states",
+    "oleshky": null,
+    "oleshky domain": null
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "916": {
+   "parties": [
+    "united states"
+   ],
+   "family": "politics",
+   "event_country": "united states",
+   "places": {
+    "alaska": "united states"
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "944": {
+   "parties": [
+    "united states"
+   ],
+   "family": "politics",
+   "event_country": "united states",
+   "places": {
+    "florida": "united states",
+    "west palm beach": null
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "947": {
+   "parties": [
+    "mainland china"
+   ],
+   "family": "politics",
+   "event_country": "taiwan",
+   "places": {
+    "mainland china": null,
+    "sun yat": null,
+    "taipei": "taiwan"
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "948": {
+   "parties": [
+    "israel"
+   ],
+   "family": "politics",
+   "event_country": "palestine",
+   "places": {
+    "hebron": "palestine",
+    "west bank": "palestine"
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "954": {
+   "parties": [
+    "maria corina machado"
+   ],
+   "family": "politics",
+   "event_country": "venezuela",
+   "places": {
+    "caracas": "venezuela",
+    "lara": null,
+    "plaza del pueblo": null,
+    "santa rosa": null
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "959": {
+   "parties": [
+    "russia",
+    "ukraine"
+   ],
+   "family": "armed_conflict",
+   "event_country": null,
+   "places": {},
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "973": {
+   "parties": [
+    "france"
+   ],
+   "family": "diplomacy",
+   "event_country": "france",
+   "places": {
+    "marseille": "france"
+   },
+   "report_share": 0.75,
+   "hazard": null,
+   "hedges": []
+  },
+  "982": {
+   "parties": [
+    "pope"
+   ],
+   "family": "diplomacy",
+   "event_country": null,
+   "places": {
+    "buenos aires": "argentina",
+    "chiclayo": null,
+    "christ": null,
+    "cordoba": null,
+    "florida": "united states",
+    "latin america": null,
+    "lima": "peru",
+    "lujan": null,
+    "montevideo": null,
+    "paysandu": null,
+    "rome": "italy"
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "990": {
+   "parties": [
+    "china",
+    "kylian mbappe"
+   ],
+   "family": "diplomacy",
+   "event_country": "spain",
+   "places": {
+    "eastroc": null,
+    "la liga": null,
+    "madrid": "spain",
+    "west francois picard": null
+   },
+   "report_share": 0.909,
+   "hazard": [
+    "storm",
+    null
+   ],
+   "hedges": []
+  },
+  "1000": {
+   "parties": [
+    "chad",
+    "sudan"
+   ],
+   "family": "armed_conflict",
+   "event_country": "sudan",
+   "places": {
+    "bamina": null,
+    "darfur": "sudan",
+    "el fasher": null
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "1010": {
+   "parties": [
+    "russia",
+    "united states",
+    "venezuela"
+   ],
+   "family": null,
+   "event_country": null,
+   "places": {},
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "1040": {
+   "parties": [
+    "united nations",
+    "united states"
+   ],
+   "family": "economic",
+   "event_country": "cuba",
+   "places": {
+    "aguantaremos": null,
+    "caribbean": null,
+    "d.c": null,
+    "entretanto": null,
+    "export": null,
+    "exteriores": null,
+    "havana": "cuba",
+    "ministro de asuntos exteriores de cuba": null,
+    "porto rico": null,
+    "trinidad": null,
+    "viet nam": null
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "1043": {
+   "parties": [
+    "united states"
+   ],
+   "family": "armed_conflict",
+   "event_country": null,
+   "places": {
+    "pacific": null
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": [
+    "alleged"
+   ]
+  },
+  "1051": {
+   "parties": [
+    "canada"
+   ],
+   "family": null,
+   "event_country": "canada",
+   "places": {
+    "montreal": "canada",
+    "ottawa": "canada"
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "1060": {
+   "parties": [
+    "united states"
+   ],
+   "family": "diplomacy",
+   "event_country": null,
+   "places": {
+    "paesi del golfo": null
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "1066": {
+   "parties": [
+    "biden",
+    "united states"
+   ],
+   "family": null,
+   "event_country": "palestine",
+   "places": {
+    "gaza": "palestine"
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "1072": {
+   "parties": [
+    "ethiopia"
+   ],
+   "family": "diplomacy",
+   "event_country": "ethiopia",
+   "places": {
+    "tigray": "ethiopia"
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "1073": {
+   "parties": [
+    "canada",
+    "european union"
+   ],
+   "family": "diplomacy",
+   "event_country": null,
+   "places": {
+    "americas": null,
+    "arctic": null,
+    "europe": null,
+    "montreal": "canada",
+    "oslo": "norway",
+    "ottawa": "canada",
+    "vienna": "austria"
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "1084": {
+   "parties": [],
+   "family": "politics",
+   "event_country": "united states",
+   "places": {
+    "alaska": "united states"
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": [
+    "alleged"
+   ]
+  },
+  "1086": {
+   "parties": [
+    "russia"
+   ],
+   "family": "armed_conflict",
+   "event_country": "ukraine",
+   "places": {
+    "darnitsky": null,
+    "dnipro": "ukraine"
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "1089": {
+   "parties": [
+    "afghanistan",
+    "taliban"
+   ],
+   "family": "politics",
+   "event_country": null,
+   "places": {},
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "1125": {
+   "parties": [
+    "russia",
+    "ukraine"
+   ],
+   "family": null,
+   "event_country": null,
+   "places": {
+    "bielorrusia": null,
+    "bielorussia": null,
+    "decenas": null,
+    "jerson": null,
+    "negros": null,
+    "oleshki": null,
+    "oleshky": null,
+    "ucrania de jerson": null,
+    "volodimir zelenski": null
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "1135": {
+   "parties": [
+    "christa pike"
+   ],
+   "family": null,
+   "event_country": "united states",
+   "places": {
+    "berlino": null,
+    "interno": null,
+    "palestina": null,
+    "tennessee": "united states"
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "1138": {
+   "parties": [
+    "g20"
+   ],
+   "family": "diplomacy",
+   "event_country": "united states",
+   "places": {
+    "atlanta": "united states",
+    "hormuz": null
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "1145": {
+   "parties": [
+    "russia",
+    "united states"
+   ],
+   "family": null,
+   "event_country": null,
+   "places": {
+    "argelia": null,
+    "ee uu": null,
+    "el aaiun": null,
+    "sahara": null,
+    "sahara occidental": null,
+    "tinduf": null
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "1147": {
+   "parties": [
+    "united states"
+   ],
+   "family": "politics",
+   "event_country": null,
+   "places": {},
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "1151": {
+   "parties": [
+    "united states",
+    "us department of justice"
+   ],
+   "family": null,
+   "event_country": null,
+   "places": {},
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "1155": {
+   "parties": [
+    "france"
+   ],
+   "family": null,
+   "event_country": "france",
+   "places": {
+    "bastiglia": null,
+    "paese": null,
+    "paris": "france",
+    "sindacati": null,
+    "tar": null
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "1161": {
+   "parties": [
+    "iran",
+    "united states"
+   ],
+   "family": "security",
+   "event_country": null,
+   "places": {
+    "islamic republic": null,
+    "middle east": null,
+    "mideast": null,
+    "mojtaba": null
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "1168": {
+   "parties": [
+    "israel"
+   ],
+   "family": null,
+   "event_country": null,
+   "places": {},
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "1170": {
+   "parties": [
+    "china",
+    "taiwan"
+   ],
+   "family": "diplomacy",
+   "event_country": "taiwan",
+   "places": {
+    "dongsha island": null,
+    "taipei": "taiwan"
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "1174": {
+   "parties": [
+    "united states"
+   ],
+   "family": "armed_conflict",
+   "event_country": "united states",
+   "places": {
+    "iowa": "united states",
+    "kansas": "united states"
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "1181": {
+   "parties": [
+    "afghanistan",
+    "taliban"
+   ],
+   "family": null,
+   "event_country": null,
+   "places": {},
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "1189": {
+   "parties": [
+    "united states"
+   ],
+   "family": "politics",
+   "event_country": "united states",
+   "places": {
+    "detroit": "united states",
+    "michigan": "united states"
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  },
+  "1193": {
+   "parties": [
+    "china"
+   ],
+   "family": null,
+   "event_country": null,
+   "places": {
+    "la liga": null
+   },
+   "report_share": 1.0,
+   "hazard": null,
+   "hedges": []
+  }
+ }
+}

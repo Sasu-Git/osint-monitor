@@ -1,0 +1,7794 @@
+{
+ "rule": "situation-v2 candidate (overrides scope), CONTRACT-V2-R2 (bf57ed7)",
+ "status": "DEVELOPMENT EVIDENCE on the diagnostic set; not acceptance",
+ "first": {
+  "cases": 126,
+  "systems": [
+   {
+    "system": "current_runtime",
+    "overall": {
+     "cases": 126,
+     "precision_member": {
+      "n": 47,
+      "of": 69,
+      "rate": 0.6812
+     },
+     "recall_member": {
+      "n": 47,
+      "of": 58,
+      "rate": 0.8103
+     },
+     "members_kept": {
+      "n": 47,
+      "of": 58,
+      "rate": 0.8103
+     },
+     "not_member_rejected": {
+      "n": 18,
+      "of": 24,
+      "rate": 0.75
+     },
+     "non_member_label_rejected": {
+      "CONTEXT": {
+       "n": 1,
+       "of": 7,
+       "rate": 0.1429
+      },
+      "SPILLOVER": {
+       "n": 2,
+       "of": 3,
+       "rate": 0.6667
+      },
+      "OTHER_SITUATION": {
+       "n": 15,
+       "of": 24,
+       "rate": 0.625
+      },
+      "NOT_MEMBER": {
+       "n": 18,
+       "of": 24,
+       "rate": 0.75
+      }
+     },
+     "owner_ambiguous": {
+      "n": 10,
+      "of": 126,
+      "rate": 0.0794
+     },
+     "positive_seed_regressions": {
+      "all": {
+       "n": 0,
+       "of": 10,
+       "cases": []
+      },
+      "seeded_situations_only": {
+       "n": 0,
+       "of": 6
+      }
+     }
+    },
+    "gates_proposed": {
+     "status": "PROPOSED (not approved; reported for information only)",
+     "owner_member_kept": {
+      "threshold": 0.9,
+      "value": 0.8103
+     },
+     "owner_not_member_rejected": {
+      "threshold": 0.7,
+      "value": 0.75
+     },
+     "positive_seed_regressions": {
+      "threshold": 0,
+      "value_all": 0,
+      "value_seeded_situations_only": 0,
+      "gate_basis": "seeded_situations_only",
+      "value": 0
+     }
+    },
+    "per_situation": {
+     "afghanistan-taliban": {
+      "cases": 2,
+      "precision_member": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "recall_member": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "members_kept": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "not_member_rejected": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "NOT_MEMBER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "bukele-el-salvador-nayib-bukele": {
+      "cases": 2,
+      "precision_member": {
+       "n": 1,
+       "of": 1,
+       "rate": 1.0
+      },
+      "recall_member": {
+       "n": 1,
+       "of": 1,
+       "rate": 1.0
+      },
+      "members_kept": {
+       "n": 1,
+       "of": 1,
+       "rate": 1.0
+      },
+      "not_member_rejected": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "NOT_MEMBER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       }
+      },
+      "owner_ambiguous": {
+       "n": 1,
+       "of": 2,
+       "rate": 0.5
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "canada-european-union": {
+      "cases": 3,
+      "precision_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "recall_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "members_kept": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "not_member_rejected": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 3,
+        "of": 3,
+        "rate": 1.0
+       },
+       "NOT_MEMBER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 3,
+       "rate": 0.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "china-chinas-long-march": {
+      "cases": 3,
+      "precision_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "recall_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "members_kept": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "not_member_rejected": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       },
+       "NOT_MEMBER": {
+        "n": 2,
+        "of": 2,
+        "rate": 1.0
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 3,
+       "rate": 0.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "china-taiwan": {
+      "cases": 4,
+      "precision_member": {
+       "n": 1,
+       "of": 1,
+       "rate": 1.0
+      },
+      "recall_member": {
+       "n": 1,
+       "of": 2,
+       "rate": 0.5
+      },
+      "members_kept": {
+       "n": 1,
+       "of": 2,
+       "rate": 0.5
+      },
+      "not_member_rejected": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       },
+       "OTHER_SITUATION": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       },
+       "NOT_MEMBER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 4,
+       "rate": 0.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "china-united-states": {
+      "cases": 13,
+      "precision_member": {
+       "n": 6,
+       "of": 11,
+       "rate": 0.5455
+      },
+      "recall_member": {
+       "n": 6,
+       "of": 6,
+       "rate": 1.0
+      },
+      "members_kept": {
+       "n": 6,
+       "of": 6,
+       "rate": 1.0
+      },
+      "not_member_rejected": {
+       "n": 1,
+       "of": 2,
+       "rate": 0.5
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 2,
+        "rate": 0.0
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 1,
+        "of": 3,
+        "rate": 0.3333
+       },
+       "NOT_MEMBER": {
+        "n": 1,
+        "of": 2,
+        "rate": 0.5
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 13,
+       "rate": 0.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 2,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "christa-pike-pike": {
+      "cases": 2,
+      "precision_member": {
+       "n": 0,
+       "of": 1,
+       "rate": 0.0
+      },
+      "recall_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "members_kept": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "not_member_rejected": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 1,
+        "of": 2,
+        "rate": 0.5
+       },
+       "NOT_MEMBER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "democrat-united-states": {
+      "cases": 3,
+      "precision_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "recall_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "members_kept": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "not_member_rejected": {
+       "n": 1,
+       "of": 1,
+       "rate": 1.0
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       },
+       "NOT_MEMBER": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       }
+      },
+      "owner_ambiguous": {
+       "n": 1,
+       "of": 3,
+       "rate": 0.3333
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "donald-j-trump-united-states": {
+      "cases": 4,
+      "precision_member": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "recall_member": {
+       "n": 2,
+       "of": 3,
+       "rate": 0.6667
+      },
+      "members_kept": {
+       "n": 2,
+       "of": 3,
+       "rate": 0.6667
+      },
+      "not_member_rejected": {
+       "n": 1,
+       "of": 1,
+       "rate": 1.0
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "NOT_MEMBER": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 4,
+       "rate": 0.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "elon-musk-musk": {
+      "cases": 2,
+      "precision_member": {
+       "n": 0,
+       "of": 1,
+       "rate": 0.0
+      },
+      "recall_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "members_kept": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "not_member_rejected": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 0,
+        "of": 1,
+        "rate": 0.0
+       },
+       "NOT_MEMBER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       }
+      },
+      "owner_ambiguous": {
+       "n": 1,
+       "of": 2,
+       "rate": 0.5
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "emmanuel-macron-france-macron": {
+      "cases": 2,
+      "precision_member": {
+       "n": 1,
+       "of": 1,
+       "rate": 1.0
+      },
+      "recall_member": {
+       "n": 1,
+       "of": 1,
+       "rate": 1.0
+      },
+      "members_kept": {
+       "n": 1,
+       "of": 1,
+       "rate": 1.0
+      },
+      "not_member_rejected": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "NOT_MEMBER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       }
+      },
+      "owner_ambiguous": {
+       "n": 1,
+       "of": 2,
+       "rate": 0.5
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "eritrea-ethiopia": {
+      "cases": 3,
+      "precision_member": {
+       "n": 1,
+       "of": 2,
+       "rate": 0.5
+      },
+      "recall_member": {
+       "n": 1,
+       "of": 1,
+       "rate": 1.0
+      },
+      "members_kept": {
+       "n": 1,
+       "of": 1,
+       "rate": 1.0
+      },
+      "not_member_rejected": {
+       "n": 0,
+       "of": 1,
+       "rate": 0.0
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "NOT_MEMBER": {
+        "n": 0,
+        "of": 1,
+        "rate": 0.0
+       }
+      },
+      "owner_ambiguous": {
+       "n": 1,
+       "of": 3,
+       "rate": 0.3333
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "eu-china-trade": {
+      "cases": 4,
+      "precision_member": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "recall_member": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "members_kept": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "not_member_rejected": {
+       "n": 1,
+       "of": 1,
+       "rate": 1.0
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       },
+       "NOT_MEMBER": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 4,
+       "rate": 0.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "european-union-russia": {
+      "cases": 4,
+      "precision_member": {
+       "n": 1,
+       "of": 1,
+       "rate": 1.0
+      },
+      "recall_member": {
+       "n": 1,
+       "of": 3,
+       "rate": 0.3333
+      },
+      "members_kept": {
+       "n": 1,
+       "of": 3,
+       "rate": 0.3333
+      },
+      "not_member_rejected": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       },
+       "NOT_MEMBER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 4,
+       "rate": 0.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "france-pope": {
+      "cases": 3,
+      "precision_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "recall_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "members_kept": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "not_member_rejected": {
+       "n": 3,
+       "of": 3,
+       "rate": 1.0
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "NOT_MEMBER": {
+        "n": 3,
+        "of": 3,
+        "rate": 1.0
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 3,
+       "rate": 0.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "gaza-ceasefire": {
+      "cases": 5,
+      "precision_member": {
+       "n": 0,
+       "of": 3,
+       "rate": 0.0
+      },
+      "recall_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "members_kept": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "not_member_rejected": {
+       "n": 1,
+       "of": 2,
+       "rate": 0.5
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 1,
+        "rate": 0.0
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 1,
+        "rate": 0.0
+       },
+       "OTHER_SITUATION": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "NOT_MEMBER": {
+        "n": 1,
+        "of": 2,
+        "rate": 0.5
+       }
+      },
+      "owner_ambiguous": {
+       "n": 1,
+       "of": 5,
+       "rate": 0.2
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "international-criminal-court-united-states": {
+      "cases": 3,
+      "precision_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "recall_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "members_kept": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "not_member_rejected": {
+       "n": 1,
+       "of": 1,
+       "rate": 1.0
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       },
+       "NOT_MEMBER": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       }
+      },
+      "owner_ambiguous": {
+       "n": 1,
+       "of": 3,
+       "rate": 0.3333
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "israel-palestine": {
+      "cases": 7,
+      "precision_member": {
+       "n": 2,
+       "of": 3,
+       "rate": 0.6667
+      },
+      "recall_member": {
+       "n": 2,
+       "of": 3,
+       "rate": 0.6667
+      },
+      "members_kept": {
+       "n": 2,
+       "of": 3,
+       "rate": 0.6667
+      },
+      "not_member_rejected": {
+       "n": 1,
+       "of": 1,
+       "rate": 1.0
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 1,
+        "of": 2,
+        "rate": 0.5
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       },
+       "NOT_MEMBER": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 7,
+       "rate": 0.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "javier-milei-milei": {
+      "cases": 2,
+      "precision_member": {
+       "n": 1,
+       "of": 2,
+       "rate": 0.5
+      },
+      "recall_member": {
+       "n": 1,
+       "of": 1,
+       "rate": 1.0
+      },
+      "members_kept": {
+       "n": 1,
+       "of": 1,
+       "rate": 1.0
+      },
+      "not_member_rejected": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 0,
+        "of": 1,
+        "rate": 0.0
+       },
+       "NOT_MEMBER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "machado-maria-corina-machado": {
+      "cases": 2,
+      "precision_member": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "recall_member": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "members_kept": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "not_member_rejected": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "NOT_MEMBER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "malaysia-singapore": {
+      "cases": 2,
+      "precision_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "recall_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "members_kept": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "not_member_rejected": {
+       "n": 1,
+       "of": 1,
+       "rate": 1.0
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       },
+       "NOT_MEMBER": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "mexico-united-states": {
+      "cases": 3,
+      "precision_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "recall_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "members_kept": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "not_member_rejected": {
+       "n": 1,
+       "of": 1,
+       "rate": 1.0
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 2,
+        "of": 2,
+        "rate": 1.0
+       },
+       "NOT_MEMBER": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 3,
+       "rate": 0.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "nato-russia": {
+      "cases": 3,
+      "precision_member": {
+       "n": 1,
+       "of": 1,
+       "rate": 1.0
+      },
+      "recall_member": {
+       "n": 1,
+       "of": 3,
+       "rate": 0.3333
+      },
+      "members_kept": {
+       "n": 1,
+       "of": 3,
+       "rate": 0.3333
+      },
+      "not_member_rejected": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "NOT_MEMBER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 3,
+       "rate": 0.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "rachel-simon": {
+      "cases": 2,
+      "precision_member": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "recall_member": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "members_kept": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "not_member_rejected": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "NOT_MEMBER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "russia-ukraine-war": {
+      "cases": 18,
+      "precision_member": {
+       "n": 11,
+       "of": 15,
+       "rate": 0.7333
+      },
+      "recall_member": {
+       "n": 11,
+       "of": 12,
+       "rate": 0.9167
+      },
+      "members_kept": {
+       "n": 11,
+       "of": 12,
+       "rate": 0.9167
+      },
+      "not_member_rejected": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 2,
+        "rate": 0.0
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 0,
+        "of": 2,
+        "rate": 0.0
+       },
+       "NOT_MEMBER": {
+        "n": 2,
+        "of": 2,
+        "rate": 1.0
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 18,
+       "rate": 0.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 6,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 6
+       }
+      }
+     },
+     "russia-united-states": {
+      "cases": 16,
+      "precision_member": {
+       "n": 6,
+       "of": 11,
+       "rate": 0.5455
+      },
+      "recall_member": {
+       "n": 6,
+       "of": 6,
+       "rate": 1.0
+      },
+      "members_kept": {
+       "n": 6,
+       "of": 6,
+       "rate": 1.0
+      },
+      "not_member_rejected": {
+       "n": 2,
+       "of": 5,
+       "rate": 0.4
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       },
+       "OTHER_SITUATION": {
+        "n": 0,
+        "of": 2,
+        "rate": 0.0
+       },
+       "NOT_MEMBER": {
+        "n": 2,
+        "of": 5,
+        "rate": 0.4
+       }
+      },
+      "owner_ambiguous": {
+       "n": 2,
+       "of": 16,
+       "rate": 0.125
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 2,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "sudan-civil-war": {
+      "cases": 2,
+      "precision_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "recall_member": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "members_kept": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "not_member_rejected": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "NOT_MEMBER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "us-iran": {
+      "cases": 7,
+      "precision_member": {
+       "n": 5,
+       "of": 5,
+       "rate": 1.0
+      },
+      "recall_member": {
+       "n": 5,
+       "of": 6,
+       "rate": 0.8333
+      },
+      "members_kept": {
+       "n": 5,
+       "of": 6,
+       "rate": 0.8333
+      },
+      "not_member_rejected": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "NOT_MEMBER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       }
+      },
+      "owner_ambiguous": {
+       "n": 1,
+       "of": 7,
+       "rate": 0.1429
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     }
+    }
+   },
+   {
+    "system": "candidate: situation-v2 candidate (overrides scope), CONTRACT-V2-R2 (bf57ed7)",
+    "overall": {
+     "cases": 126,
+     "precision_member": {
+      "n": 9,
+      "of": 12,
+      "rate": 0.75
+     },
+     "recall_member": {
+      "n": 9,
+      "of": 58,
+      "rate": 0.1552
+     },
+     "members_kept": {
+      "n": 9,
+      "of": 58,
+      "rate": 0.1552
+     },
+     "not_member_rejected": {
+      "n": 24,
+      "of": 24,
+      "rate": 1.0
+     },
+     "non_member_label_rejected": {
+      "CONTEXT": {
+       "n": 5,
+       "of": 7,
+       "rate": 0.7143
+      },
+      "SPILLOVER": {
+       "n": 3,
+       "of": 3,
+       "rate": 1.0
+      },
+      "OTHER_SITUATION": {
+       "n": 23,
+       "of": 24,
+       "rate": 0.9583
+      },
+      "NOT_MEMBER": {
+       "n": 24,
+       "of": 24,
+       "rate": 1.0
+      }
+     },
+     "owner_ambiguous": {
+      "n": 10,
+      "of": 126,
+      "rate": 0.0794
+     },
+     "system_ambiguous": {
+      "n": 0,
+      "of": 126,
+      "rate": 0.0
+     },
+     "decisions_with_reason_and_evidence": {
+      "n": 126,
+      "of": 126,
+      "rate": 1.0
+     },
+     "positive_seed_regressions": {
+      "all": {
+       "n": 6,
+       "of": 10,
+       "cases": [
+        "S050",
+        "S051",
+        "S068",
+        "S207",
+        "S243",
+        "S276"
+       ]
+      },
+      "seeded_situations_only": {
+       "n": 4,
+       "of": 6
+      }
+     }
+    },
+    "gates_proposed": {
+     "status": "PROPOSED (not approved; reported for information only)",
+     "owner_member_kept": {
+      "threshold": 0.9,
+      "value": 0.1552
+     },
+     "owner_not_member_rejected": {
+      "threshold": 0.7,
+      "value": 1.0
+     },
+     "positive_seed_regressions": {
+      "threshold": 0,
+      "value_all": 6,
+      "value_seeded_situations_only": 4,
+      "gate_basis": "seeded_situations_only",
+      "value": 4
+     }
+    },
+    "per_situation": {
+     "afghanistan-taliban": {
+      "cases": 2,
+      "precision_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "recall_member": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "members_kept": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "not_member_rejected": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "NOT_MEMBER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "system_ambiguous": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "decisions_with_reason_and_evidence": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "bukele-el-salvador-nayib-bukele": {
+      "cases": 2,
+      "precision_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "recall_member": {
+       "n": 0,
+       "of": 1,
+       "rate": 0.0
+      },
+      "members_kept": {
+       "n": 0,
+       "of": 1,
+       "rate": 0.0
+      },
+      "not_member_rejected": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "NOT_MEMBER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       }
+      },
+      "owner_ambiguous": {
+       "n": 1,
+       "of": 2,
+       "rate": 0.5
+      },
+      "system_ambiguous": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "decisions_with_reason_and_evidence": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "canada-european-union": {
+      "cases": 3,
+      "precision_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "recall_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "members_kept": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "not_member_rejected": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 3,
+        "of": 3,
+        "rate": 1.0
+       },
+       "NOT_MEMBER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 3,
+       "rate": 0.0
+      },
+      "system_ambiguous": {
+       "n": 0,
+       "of": 3,
+       "rate": 0.0
+      },
+      "decisions_with_reason_and_evidence": {
+       "n": 3,
+       "of": 3,
+       "rate": 1.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "china-chinas-long-march": {
+      "cases": 3,
+      "precision_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "recall_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "members_kept": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "not_member_rejected": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       },
+       "NOT_MEMBER": {
+        "n": 2,
+        "of": 2,
+        "rate": 1.0
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 3,
+       "rate": 0.0
+      },
+      "system_ambiguous": {
+       "n": 0,
+       "of": 3,
+       "rate": 0.0
+      },
+      "decisions_with_reason_and_evidence": {
+       "n": 3,
+       "of": 3,
+       "rate": 1.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "china-taiwan": {
+      "cases": 4,
+      "precision_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "recall_member": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "members_kept": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "not_member_rejected": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       },
+       "OTHER_SITUATION": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       },
+       "NOT_MEMBER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 4,
+       "rate": 0.0
+      },
+      "system_ambiguous": {
+       "n": 0,
+       "of": 4,
+       "rate": 0.0
+      },
+      "decisions_with_reason_and_evidence": {
+       "n": 4,
+       "of": 4,
+       "rate": 1.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "china-united-states": {
+      "cases": 13,
+      "precision_member": {
+       "n": 1,
+       "of": 3,
+       "rate": 0.3333
+      },
+      "recall_member": {
+       "n": 1,
+       "of": 6,
+       "rate": 0.1667
+      },
+      "members_kept": {
+       "n": 1,
+       "of": 6,
+       "rate": 0.1667
+      },
+      "not_member_rejected": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 1,
+        "of": 2,
+        "rate": 0.5
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 2,
+        "of": 3,
+        "rate": 0.6667
+       },
+       "NOT_MEMBER": {
+        "n": 2,
+        "of": 2,
+        "rate": 1.0
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 13,
+       "rate": 0.0
+      },
+      "system_ambiguous": {
+       "n": 0,
+       "of": 13,
+       "rate": 0.0
+      },
+      "decisions_with_reason_and_evidence": {
+       "n": 13,
+       "of": 13,
+       "rate": 1.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 1,
+        "of": 2,
+        "cases": [
+         "S243"
+        ]
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "christa-pike-pike": {
+      "cases": 2,
+      "precision_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "recall_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "members_kept": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "not_member_rejected": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 2,
+        "of": 2,
+        "rate": 1.0
+       },
+       "NOT_MEMBER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "system_ambiguous": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "decisions_with_reason_and_evidence": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "democrat-united-states": {
+      "cases": 3,
+      "precision_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "recall_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "members_kept": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "not_member_rejected": {
+       "n": 1,
+       "of": 1,
+       "rate": 1.0
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       },
+       "NOT_MEMBER": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       }
+      },
+      "owner_ambiguous": {
+       "n": 1,
+       "of": 3,
+       "rate": 0.3333
+      },
+      "system_ambiguous": {
+       "n": 0,
+       "of": 3,
+       "rate": 0.0
+      },
+      "decisions_with_reason_and_evidence": {
+       "n": 3,
+       "of": 3,
+       "rate": 1.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "donald-j-trump-united-states": {
+      "cases": 4,
+      "precision_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "recall_member": {
+       "n": 0,
+       "of": 3,
+       "rate": 0.0
+      },
+      "members_kept": {
+       "n": 0,
+       "of": 3,
+       "rate": 0.0
+      },
+      "not_member_rejected": {
+       "n": 1,
+       "of": 1,
+       "rate": 1.0
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "NOT_MEMBER": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 4,
+       "rate": 0.0
+      },
+      "system_ambiguous": {
+       "n": 0,
+       "of": 4,
+       "rate": 0.0
+      },
+      "decisions_with_reason_and_evidence": {
+       "n": 4,
+       "of": 4,
+       "rate": 1.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "elon-musk-musk": {
+      "cases": 2,
+      "precision_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "recall_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "members_kept": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "not_member_rejected": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       },
+       "NOT_MEMBER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       }
+      },
+      "owner_ambiguous": {
+       "n": 1,
+       "of": 2,
+       "rate": 0.5
+      },
+      "system_ambiguous": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "decisions_with_reason_and_evidence": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "emmanuel-macron-france-macron": {
+      "cases": 2,
+      "precision_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "recall_member": {
+       "n": 0,
+       "of": 1,
+       "rate": 0.0
+      },
+      "members_kept": {
+       "n": 0,
+       "of": 1,
+       "rate": 0.0
+      },
+      "not_member_rejected": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "NOT_MEMBER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       }
+      },
+      "owner_ambiguous": {
+       "n": 1,
+       "of": 2,
+       "rate": 0.5
+      },
+      "system_ambiguous": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "decisions_with_reason_and_evidence": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "eritrea-ethiopia": {
+      "cases": 3,
+      "precision_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "recall_member": {
+       "n": 0,
+       "of": 1,
+       "rate": 0.0
+      },
+      "members_kept": {
+       "n": 0,
+       "of": 1,
+       "rate": 0.0
+      },
+      "not_member_rejected": {
+       "n": 1,
+       "of": 1,
+       "rate": 1.0
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "NOT_MEMBER": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       }
+      },
+      "owner_ambiguous": {
+       "n": 1,
+       "of": 3,
+       "rate": 0.3333
+      },
+      "system_ambiguous": {
+       "n": 0,
+       "of": 3,
+       "rate": 0.0
+      },
+      "decisions_with_reason_and_evidence": {
+       "n": 3,
+       "of": 3,
+       "rate": 1.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "eu-china-trade": {
+      "cases": 4,
+      "precision_member": {
+       "n": 1,
+       "of": 1,
+       "rate": 1.0
+      },
+      "recall_member": {
+       "n": 1,
+       "of": 2,
+       "rate": 0.5
+      },
+      "members_kept": {
+       "n": 1,
+       "of": 2,
+       "rate": 0.5
+      },
+      "not_member_rejected": {
+       "n": 1,
+       "of": 1,
+       "rate": 1.0
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       },
+       "NOT_MEMBER": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 4,
+       "rate": 0.0
+      },
+      "system_ambiguous": {
+       "n": 0,
+       "of": 4,
+       "rate": 0.0
+      },
+      "decisions_with_reason_and_evidence": {
+       "n": 4,
+       "of": 4,
+       "rate": 1.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "european-union-russia": {
+      "cases": 4,
+      "precision_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "recall_member": {
+       "n": 0,
+       "of": 3,
+       "rate": 0.0
+      },
+      "members_kept": {
+       "n": 0,
+       "of": 3,
+       "rate": 0.0
+      },
+      "not_member_rejected": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       },
+       "NOT_MEMBER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 4,
+       "rate": 0.0
+      },
+      "system_ambiguous": {
+       "n": 0,
+       "of": 4,
+       "rate": 0.0
+      },
+      "decisions_with_reason_and_evidence": {
+       "n": 4,
+       "of": 4,
+       "rate": 1.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "france-pope": {
+      "cases": 3,
+      "precision_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "recall_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "members_kept": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "not_member_rejected": {
+       "n": 3,
+       "of": 3,
+       "rate": 1.0
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "NOT_MEMBER": {
+        "n": 3,
+        "of": 3,
+        "rate": 1.0
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 3,
+       "rate": 0.0
+      },
+      "system_ambiguous": {
+       "n": 0,
+       "of": 3,
+       "rate": 0.0
+      },
+      "decisions_with_reason_and_evidence": {
+       "n": 3,
+       "of": 3,
+       "rate": 1.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "gaza-ceasefire": {
+      "cases": 5,
+      "precision_member": {
+       "n": 0,
+       "of": 1,
+       "rate": 0.0
+      },
+      "recall_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "members_kept": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "not_member_rejected": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 1,
+        "rate": 0.0
+       },
+       "SPILLOVER": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       },
+       "OTHER_SITUATION": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "NOT_MEMBER": {
+        "n": 2,
+        "of": 2,
+        "rate": 1.0
+       }
+      },
+      "owner_ambiguous": {
+       "n": 1,
+       "of": 5,
+       "rate": 0.2
+      },
+      "system_ambiguous": {
+       "n": 0,
+       "of": 5,
+       "rate": 0.0
+      },
+      "decisions_with_reason_and_evidence": {
+       "n": 5,
+       "of": 5,
+       "rate": 1.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "international-criminal-court-united-states": {
+      "cases": 3,
+      "precision_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "recall_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "members_kept": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "not_member_rejected": {
+       "n": 1,
+       "of": 1,
+       "rate": 1.0
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       },
+       "NOT_MEMBER": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       }
+      },
+      "owner_ambiguous": {
+       "n": 1,
+       "of": 3,
+       "rate": 0.3333
+      },
+      "system_ambiguous": {
+       "n": 0,
+       "of": 3,
+       "rate": 0.0
+      },
+      "decisions_with_reason_and_evidence": {
+       "n": 3,
+       "of": 3,
+       "rate": 1.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "israel-palestine": {
+      "cases": 7,
+      "precision_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "recall_member": {
+       "n": 0,
+       "of": 3,
+       "rate": 0.0
+      },
+      "members_kept": {
+       "n": 0,
+       "of": 3,
+       "rate": 0.0
+      },
+      "not_member_rejected": {
+       "n": 1,
+       "of": 1,
+       "rate": 1.0
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 2,
+        "of": 2,
+        "rate": 1.0
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       },
+       "NOT_MEMBER": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 7,
+       "rate": 0.0
+      },
+      "system_ambiguous": {
+       "n": 0,
+       "of": 7,
+       "rate": 0.0
+      },
+      "decisions_with_reason_and_evidence": {
+       "n": 7,
+       "of": 7,
+       "rate": 1.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "javier-milei-milei": {
+      "cases": 2,
+      "precision_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "recall_member": {
+       "n": 0,
+       "of": 1,
+       "rate": 0.0
+      },
+      "members_kept": {
+       "n": 0,
+       "of": 1,
+       "rate": 0.0
+      },
+      "not_member_rejected": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       },
+       "NOT_MEMBER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "system_ambiguous": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "decisions_with_reason_and_evidence": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "machado-maria-corina-machado": {
+      "cases": 2,
+      "precision_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "recall_member": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "members_kept": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "not_member_rejected": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "NOT_MEMBER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "system_ambiguous": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "decisions_with_reason_and_evidence": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "malaysia-singapore": {
+      "cases": 2,
+      "precision_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "recall_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "members_kept": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "not_member_rejected": {
+       "n": 1,
+       "of": 1,
+       "rate": 1.0
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       },
+       "NOT_MEMBER": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "system_ambiguous": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "decisions_with_reason_and_evidence": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "mexico-united-states": {
+      "cases": 3,
+      "precision_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "recall_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "members_kept": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "not_member_rejected": {
+       "n": 1,
+       "of": 1,
+       "rate": 1.0
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 2,
+        "of": 2,
+        "rate": 1.0
+       },
+       "NOT_MEMBER": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 3,
+       "rate": 0.0
+      },
+      "system_ambiguous": {
+       "n": 0,
+       "of": 3,
+       "rate": 0.0
+      },
+      "decisions_with_reason_and_evidence": {
+       "n": 3,
+       "of": 3,
+       "rate": 1.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "nato-russia": {
+      "cases": 3,
+      "precision_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "recall_member": {
+       "n": 0,
+       "of": 3,
+       "rate": 0.0
+      },
+      "members_kept": {
+       "n": 0,
+       "of": 3,
+       "rate": 0.0
+      },
+      "not_member_rejected": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "NOT_MEMBER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 3,
+       "rate": 0.0
+      },
+      "system_ambiguous": {
+       "n": 0,
+       "of": 3,
+       "rate": 0.0
+      },
+      "decisions_with_reason_and_evidence": {
+       "n": 3,
+       "of": 3,
+       "rate": 1.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "rachel-simon": {
+      "cases": 2,
+      "precision_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "recall_member": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "members_kept": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "not_member_rejected": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "NOT_MEMBER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "system_ambiguous": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "decisions_with_reason_and_evidence": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "russia-ukraine-war": {
+      "cases": 18,
+      "precision_member": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "recall_member": {
+       "n": 2,
+       "of": 12,
+       "rate": 0.1667
+      },
+      "members_kept": {
+       "n": 2,
+       "of": 12,
+       "rate": 0.1667
+      },
+      "not_member_rejected": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 2,
+        "of": 2,
+        "rate": 1.0
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 2,
+        "of": 2,
+        "rate": 1.0
+       },
+       "NOT_MEMBER": {
+        "n": 2,
+        "of": 2,
+        "rate": 1.0
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 18,
+       "rate": 0.0
+      },
+      "system_ambiguous": {
+       "n": 0,
+       "of": 18,
+       "rate": 0.0
+      },
+      "decisions_with_reason_and_evidence": {
+       "n": 18,
+       "of": 18,
+       "rate": 1.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 4,
+        "of": 6,
+        "cases": [
+         "S050",
+         "S051",
+         "S068",
+         "S207"
+        ]
+       },
+       "seeded_situations_only": {
+        "n": 4,
+        "of": 6
+       }
+      }
+     },
+     "russia-united-states": {
+      "cases": 16,
+      "precision_member": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "recall_member": {
+       "n": 2,
+       "of": 6,
+       "rate": 0.3333
+      },
+      "members_kept": {
+       "n": 2,
+       "of": 6,
+       "rate": 0.3333
+      },
+      "not_member_rejected": {
+       "n": 5,
+       "of": 5,
+       "rate": 1.0
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       },
+       "OTHER_SITUATION": {
+        "n": 2,
+        "of": 2,
+        "rate": 1.0
+       },
+       "NOT_MEMBER": {
+        "n": 5,
+        "of": 5,
+        "rate": 1.0
+       }
+      },
+      "owner_ambiguous": {
+       "n": 2,
+       "of": 16,
+       "rate": 0.125
+      },
+      "system_ambiguous": {
+       "n": 0,
+       "of": 16,
+       "rate": 0.0
+      },
+      "decisions_with_reason_and_evidence": {
+       "n": 16,
+       "of": 16,
+       "rate": 1.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 1,
+        "of": 2,
+        "cases": [
+         "S276"
+        ]
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "sudan-civil-war": {
+      "cases": 2,
+      "precision_member": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "recall_member": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "members_kept": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "not_member_rejected": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "NOT_MEMBER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "system_ambiguous": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "decisions_with_reason_and_evidence": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "us-iran": {
+      "cases": 7,
+      "precision_member": {
+       "n": 1,
+       "of": 1,
+       "rate": 1.0
+      },
+      "recall_member": {
+       "n": 1,
+       "of": 6,
+       "rate": 0.1667
+      },
+      "members_kept": {
+       "n": 1,
+       "of": 6,
+       "rate": 0.1667
+      },
+      "not_member_rejected": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "NOT_MEMBER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       }
+      },
+      "owner_ambiguous": {
+       "n": 1,
+       "of": 7,
+       "rate": 0.1429
+      },
+      "system_ambiguous": {
+       "n": 0,
+       "of": 7,
+       "rate": 0.0
+      },
+      "decisions_with_reason_and_evidence": {
+       "n": 7,
+       "of": 7,
+       "rate": 1.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     }
+    }
+   }
+  ]
+ },
+ "final": {
+  "cases": 126,
+  "systems": [
+   {
+    "system": "current_runtime",
+    "overall": {
+     "cases": 126,
+     "precision_member": {
+      "n": 48,
+      "of": 69,
+      "rate": 0.6957
+     },
+     "recall_member": {
+      "n": 48,
+      "of": 56,
+      "rate": 0.8571
+     },
+     "members_kept": {
+      "n": 48,
+      "of": 56,
+      "rate": 0.8571
+     },
+     "not_member_rejected": {
+      "n": 17,
+      "of": 24,
+      "rate": 0.7083
+     },
+     "non_member_label_rejected": {
+      "CONTEXT": {
+       "n": 1,
+       "of": 5,
+       "rate": 0.2
+      },
+      "SPILLOVER": {
+       "n": 2,
+       "of": 3,
+       "rate": 0.6667
+      },
+      "OTHER_SITUATION": {
+       "n": 18,
+       "of": 27,
+       "rate": 0.6667
+      },
+      "NOT_MEMBER": {
+       "n": 17,
+       "of": 24,
+       "rate": 0.7083
+      }
+     },
+     "owner_ambiguous": {
+      "n": 11,
+      "of": 126,
+      "rate": 0.0873
+     },
+     "positive_seed_regressions": {
+      "all": {
+       "n": 0,
+       "of": 10,
+       "cases": []
+      },
+      "seeded_situations_only": {
+       "n": 0,
+       "of": 6
+      }
+     }
+    },
+    "gates_proposed": {
+     "status": "PROPOSED (not approved; reported for information only)",
+     "owner_member_kept": {
+      "threshold": 0.9,
+      "value": 0.8571
+     },
+     "owner_not_member_rejected": {
+      "threshold": 0.7,
+      "value": 0.7083
+     },
+     "positive_seed_regressions": {
+      "threshold": 0,
+      "value_all": 0,
+      "value_seeded_situations_only": 0,
+      "gate_basis": "seeded_situations_only",
+      "value": 0
+     }
+    },
+    "per_situation": {
+     "afghanistan-taliban": {
+      "cases": 2,
+      "precision_member": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "recall_member": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "members_kept": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "not_member_rejected": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "NOT_MEMBER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "bukele-el-salvador-nayib-bukele": {
+      "cases": 2,
+      "precision_member": {
+       "n": 1,
+       "of": 1,
+       "rate": 1.0
+      },
+      "recall_member": {
+       "n": 1,
+       "of": 1,
+       "rate": 1.0
+      },
+      "members_kept": {
+       "n": 1,
+       "of": 1,
+       "rate": 1.0
+      },
+      "not_member_rejected": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "NOT_MEMBER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       }
+      },
+      "owner_ambiguous": {
+       "n": 1,
+       "of": 2,
+       "rate": 0.5
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "canada-european-union": {
+      "cases": 3,
+      "precision_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "recall_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "members_kept": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "not_member_rejected": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 3,
+        "of": 3,
+        "rate": 1.0
+       },
+       "NOT_MEMBER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 3,
+       "rate": 0.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "china-chinas-long-march": {
+      "cases": 3,
+      "precision_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "recall_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "members_kept": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "not_member_rejected": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       },
+       "NOT_MEMBER": {
+        "n": 2,
+        "of": 2,
+        "rate": 1.0
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 3,
+       "rate": 0.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "china-taiwan": {
+      "cases": 4,
+      "precision_member": {
+       "n": 1,
+       "of": 1,
+       "rate": 1.0
+      },
+      "recall_member": {
+       "n": 1,
+       "of": 2,
+       "rate": 0.5
+      },
+      "members_kept": {
+       "n": 1,
+       "of": 2,
+       "rate": 0.5
+      },
+      "not_member_rejected": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       },
+       "OTHER_SITUATION": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       },
+       "NOT_MEMBER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 4,
+       "rate": 0.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "china-united-states": {
+      "cases": 13,
+      "precision_member": {
+       "n": 7,
+       "of": 11,
+       "rate": 0.6364
+      },
+      "recall_member": {
+       "n": 7,
+       "of": 7,
+       "rate": 1.0
+      },
+      "members_kept": {
+       "n": 7,
+       "of": 7,
+       "rate": 1.0
+      },
+      "not_member_rejected": {
+       "n": 1,
+       "of": 4,
+       "rate": 0.25
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 1,
+        "of": 2,
+        "rate": 0.5
+       },
+       "NOT_MEMBER": {
+        "n": 1,
+        "of": 4,
+        "rate": 0.25
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 13,
+       "rate": 0.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 2,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "christa-pike-pike": {
+      "cases": 2,
+      "precision_member": {
+       "n": 0,
+       "of": 1,
+       "rate": 0.0
+      },
+      "recall_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "members_kept": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "not_member_rejected": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 1,
+        "of": 2,
+        "rate": 0.5
+       },
+       "NOT_MEMBER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "democrat-united-states": {
+      "cases": 3,
+      "precision_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "recall_member": {
+       "n": 0,
+       "of": 1,
+       "rate": 0.0
+      },
+      "members_kept": {
+       "n": 0,
+       "of": 1,
+       "rate": 0.0
+      },
+      "not_member_rejected": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       },
+       "NOT_MEMBER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       }
+      },
+      "owner_ambiguous": {
+       "n": 1,
+       "of": 3,
+       "rate": 0.3333
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "donald-j-trump-united-states": {
+      "cases": 4,
+      "precision_member": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "recall_member": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "members_kept": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "not_member_rejected": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 2,
+        "of": 2,
+        "rate": 1.0
+       },
+       "NOT_MEMBER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 4,
+       "rate": 0.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "elon-musk-musk": {
+      "cases": 2,
+      "precision_member": {
+       "n": 0,
+       "of": 1,
+       "rate": 0.0
+      },
+      "recall_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "members_kept": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "not_member_rejected": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 0,
+        "of": 1,
+        "rate": 0.0
+       },
+       "NOT_MEMBER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       }
+      },
+      "owner_ambiguous": {
+       "n": 1,
+       "of": 2,
+       "rate": 0.5
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "emmanuel-macron-france-macron": {
+      "cases": 2,
+      "precision_member": {
+       "n": 0,
+       "of": 1,
+       "rate": 0.0
+      },
+      "recall_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "members_kept": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "not_member_rejected": {
+       "n": 0,
+       "of": 1,
+       "rate": 0.0
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "NOT_MEMBER": {
+        "n": 0,
+        "of": 1,
+        "rate": 0.0
+       }
+      },
+      "owner_ambiguous": {
+       "n": 1,
+       "of": 2,
+       "rate": 0.5
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "eritrea-ethiopia": {
+      "cases": 3,
+      "precision_member": {
+       "n": 1,
+       "of": 2,
+       "rate": 0.5
+      },
+      "recall_member": {
+       "n": 1,
+       "of": 1,
+       "rate": 1.0
+      },
+      "members_kept": {
+       "n": 1,
+       "of": 1,
+       "rate": 1.0
+      },
+      "not_member_rejected": {
+       "n": 0,
+       "of": 1,
+       "rate": 0.0
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "NOT_MEMBER": {
+        "n": 0,
+        "of": 1,
+        "rate": 0.0
+       }
+      },
+      "owner_ambiguous": {
+       "n": 1,
+       "of": 3,
+       "rate": 0.3333
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "eu-china-trade": {
+      "cases": 4,
+      "precision_member": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "recall_member": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "members_kept": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "not_member_rejected": {
+       "n": 1,
+       "of": 1,
+       "rate": 1.0
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       },
+       "NOT_MEMBER": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 4,
+       "rate": 0.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "european-union-russia": {
+      "cases": 4,
+      "precision_member": {
+       "n": 1,
+       "of": 1,
+       "rate": 1.0
+      },
+      "recall_member": {
+       "n": 1,
+       "of": 1,
+       "rate": 1.0
+      },
+      "members_kept": {
+       "n": 1,
+       "of": 1,
+       "rate": 1.0
+      },
+      "not_member_rejected": {
+       "n": 1,
+       "of": 1,
+       "rate": 1.0
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 2,
+        "of": 2,
+        "rate": 1.0
+       },
+       "NOT_MEMBER": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 4,
+       "rate": 0.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "france-pope": {
+      "cases": 3,
+      "precision_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "recall_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "members_kept": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "not_member_rejected": {
+       "n": 3,
+       "of": 3,
+       "rate": 1.0
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "NOT_MEMBER": {
+        "n": 3,
+        "of": 3,
+        "rate": 1.0
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 3,
+       "rate": 0.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "gaza-ceasefire": {
+      "cases": 5,
+      "precision_member": {
+       "n": 2,
+       "of": 3,
+       "rate": 0.6667
+      },
+      "recall_member": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "members_kept": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "not_member_rejected": {
+       "n": 1,
+       "of": 1,
+       "rate": 1.0
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 1,
+        "rate": 0.0
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "NOT_MEMBER": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       }
+      },
+      "owner_ambiguous": {
+       "n": 1,
+       "of": 5,
+       "rate": 0.2
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "international-criminal-court-united-states": {
+      "cases": 3,
+      "precision_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "recall_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "members_kept": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "not_member_rejected": {
+       "n": 1,
+       "of": 1,
+       "rate": 1.0
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       },
+       "NOT_MEMBER": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       }
+      },
+      "owner_ambiguous": {
+       "n": 1,
+       "of": 3,
+       "rate": 0.3333
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "israel-palestine": {
+      "cases": 7,
+      "precision_member": {
+       "n": 2,
+       "of": 3,
+       "rate": 0.6667
+      },
+      "recall_member": {
+       "n": 2,
+       "of": 3,
+       "rate": 0.6667
+      },
+      "members_kept": {
+       "n": 2,
+       "of": 3,
+       "rate": 0.6667
+      },
+      "not_member_rejected": {
+       "n": 1,
+       "of": 1,
+       "rate": 1.0
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 1,
+        "of": 2,
+        "rate": 0.5
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       },
+       "NOT_MEMBER": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 7,
+       "rate": 0.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "javier-milei-milei": {
+      "cases": 2,
+      "precision_member": {
+       "n": 1,
+       "of": 2,
+       "rate": 0.5
+      },
+      "recall_member": {
+       "n": 1,
+       "of": 1,
+       "rate": 1.0
+      },
+      "members_kept": {
+       "n": 1,
+       "of": 1,
+       "rate": 1.0
+      },
+      "not_member_rejected": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 0,
+        "of": 1,
+        "rate": 0.0
+       },
+       "NOT_MEMBER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "machado-maria-corina-machado": {
+      "cases": 2,
+      "precision_member": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "recall_member": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "members_kept": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "not_member_rejected": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "NOT_MEMBER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "malaysia-singapore": {
+      "cases": 2,
+      "precision_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "recall_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "members_kept": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "not_member_rejected": {
+       "n": 1,
+       "of": 1,
+       "rate": 1.0
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       },
+       "NOT_MEMBER": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "mexico-united-states": {
+      "cases": 3,
+      "precision_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "recall_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "members_kept": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "not_member_rejected": {
+       "n": 1,
+       "of": 1,
+       "rate": 1.0
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 2,
+        "of": 2,
+        "rate": 1.0
+       },
+       "NOT_MEMBER": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 3,
+       "rate": 0.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "nato-russia": {
+      "cases": 3,
+      "precision_member": {
+       "n": 1,
+       "of": 1,
+       "rate": 1.0
+      },
+      "recall_member": {
+       "n": 1,
+       "of": 3,
+       "rate": 0.3333
+      },
+      "members_kept": {
+       "n": 1,
+       "of": 3,
+       "rate": 0.3333
+      },
+      "not_member_rejected": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "NOT_MEMBER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 3,
+       "rate": 0.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "rachel-simon": {
+      "cases": 2,
+      "precision_member": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "recall_member": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "members_kept": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "not_member_rejected": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "NOT_MEMBER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "russia-ukraine-war": {
+      "cases": 18,
+      "precision_member": {
+       "n": 11,
+       "of": 15,
+       "rate": 0.7333
+      },
+      "recall_member": {
+       "n": 11,
+       "of": 11,
+       "rate": 1.0
+      },
+      "members_kept": {
+       "n": 11,
+       "of": 11,
+       "rate": 1.0
+      },
+      "not_member_rejected": {
+       "n": 1,
+       "of": 1,
+       "rate": 1.0
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 2,
+        "rate": 0.0
+       },
+       "SPILLOVER": {
+        "n": 1,
+        "of": 2,
+        "rate": 0.5
+       },
+       "OTHER_SITUATION": {
+        "n": 0,
+        "of": 1,
+        "rate": 0.0
+       },
+       "NOT_MEMBER": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       }
+      },
+      "owner_ambiguous": {
+       "n": 1,
+       "of": 18,
+       "rate": 0.0556
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 6,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 6
+       }
+      }
+     },
+     "russia-united-states": {
+      "cases": 16,
+      "precision_member": {
+       "n": 5,
+       "of": 11,
+       "rate": 0.4545
+      },
+      "recall_member": {
+       "n": 5,
+       "of": 5,
+       "rate": 1.0
+      },
+      "members_kept": {
+       "n": 5,
+       "of": 5,
+       "rate": 1.0
+      },
+      "not_member_rejected": {
+       "n": 3,
+       "of": 5,
+       "rate": 0.6
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 0,
+        "of": 4,
+        "rate": 0.0
+       },
+       "NOT_MEMBER": {
+        "n": 3,
+        "of": 5,
+        "rate": 0.6
+       }
+      },
+      "owner_ambiguous": {
+       "n": 2,
+       "of": 16,
+       "rate": 0.125
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 2,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "sudan-civil-war": {
+      "cases": 2,
+      "precision_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "recall_member": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "members_kept": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "not_member_rejected": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "NOT_MEMBER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "us-iran": {
+      "cases": 7,
+      "precision_member": {
+       "n": 5,
+       "of": 5,
+       "rate": 1.0
+      },
+      "recall_member": {
+       "n": 5,
+       "of": 6,
+       "rate": 0.8333
+      },
+      "members_kept": {
+       "n": 5,
+       "of": 6,
+       "rate": 0.8333
+      },
+      "not_member_rejected": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "NOT_MEMBER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       }
+      },
+      "owner_ambiguous": {
+       "n": 1,
+       "of": 7,
+       "rate": 0.1429
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     }
+    }
+   },
+   {
+    "system": "candidate: situation-v2 candidate (overrides scope), CONTRACT-V2-R2 (bf57ed7)",
+    "overall": {
+     "cases": 126,
+     "precision_member": {
+      "n": 10,
+      "of": 12,
+      "rate": 0.8333
+     },
+     "recall_member": {
+      "n": 10,
+      "of": 56,
+      "rate": 0.1786
+     },
+     "members_kept": {
+      "n": 10,
+      "of": 56,
+      "rate": 0.1786
+     },
+     "not_member_rejected": {
+      "n": 24,
+      "of": 24,
+      "rate": 1.0
+     },
+     "non_member_label_rejected": {
+      "CONTEXT": {
+       "n": 4,
+       "of": 5,
+       "rate": 0.8
+      },
+      "SPILLOVER": {
+       "n": 3,
+       "of": 3,
+       "rate": 1.0
+      },
+      "OTHER_SITUATION": {
+       "n": 26,
+       "of": 27,
+       "rate": 0.963
+      },
+      "NOT_MEMBER": {
+       "n": 24,
+       "of": 24,
+       "rate": 1.0
+      }
+     },
+     "owner_ambiguous": {
+      "n": 11,
+      "of": 126,
+      "rate": 0.0873
+     },
+     "system_ambiguous": {
+      "n": 0,
+      "of": 126,
+      "rate": 0.0
+     },
+     "decisions_with_reason_and_evidence": {
+      "n": 126,
+      "of": 126,
+      "rate": 1.0
+     },
+     "positive_seed_regressions": {
+      "all": {
+       "n": 6,
+       "of": 10,
+       "cases": [
+        "S050",
+        "S051",
+        "S068",
+        "S207",
+        "S243",
+        "S276"
+       ]
+      },
+      "seeded_situations_only": {
+       "n": 4,
+       "of": 6
+      }
+     }
+    },
+    "gates_proposed": {
+     "status": "PROPOSED (not approved; reported for information only)",
+     "owner_member_kept": {
+      "threshold": 0.9,
+      "value": 0.1786
+     },
+     "owner_not_member_rejected": {
+      "threshold": 0.7,
+      "value": 1.0
+     },
+     "positive_seed_regressions": {
+      "threshold": 0,
+      "value_all": 6,
+      "value_seeded_situations_only": 4,
+      "gate_basis": "seeded_situations_only",
+      "value": 4
+     }
+    },
+    "per_situation": {
+     "afghanistan-taliban": {
+      "cases": 2,
+      "precision_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "recall_member": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "members_kept": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "not_member_rejected": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "NOT_MEMBER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "system_ambiguous": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "decisions_with_reason_and_evidence": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "bukele-el-salvador-nayib-bukele": {
+      "cases": 2,
+      "precision_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "recall_member": {
+       "n": 0,
+       "of": 1,
+       "rate": 0.0
+      },
+      "members_kept": {
+       "n": 0,
+       "of": 1,
+       "rate": 0.0
+      },
+      "not_member_rejected": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "NOT_MEMBER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       }
+      },
+      "owner_ambiguous": {
+       "n": 1,
+       "of": 2,
+       "rate": 0.5
+      },
+      "system_ambiguous": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "decisions_with_reason_and_evidence": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "canada-european-union": {
+      "cases": 3,
+      "precision_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "recall_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "members_kept": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "not_member_rejected": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 3,
+        "of": 3,
+        "rate": 1.0
+       },
+       "NOT_MEMBER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 3,
+       "rate": 0.0
+      },
+      "system_ambiguous": {
+       "n": 0,
+       "of": 3,
+       "rate": 0.0
+      },
+      "decisions_with_reason_and_evidence": {
+       "n": 3,
+       "of": 3,
+       "rate": 1.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "china-chinas-long-march": {
+      "cases": 3,
+      "precision_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "recall_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "members_kept": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "not_member_rejected": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       },
+       "NOT_MEMBER": {
+        "n": 2,
+        "of": 2,
+        "rate": 1.0
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 3,
+       "rate": 0.0
+      },
+      "system_ambiguous": {
+       "n": 0,
+       "of": 3,
+       "rate": 0.0
+      },
+      "decisions_with_reason_and_evidence": {
+       "n": 3,
+       "of": 3,
+       "rate": 1.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "china-taiwan": {
+      "cases": 4,
+      "precision_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "recall_member": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "members_kept": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "not_member_rejected": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       },
+       "OTHER_SITUATION": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       },
+       "NOT_MEMBER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 4,
+       "rate": 0.0
+      },
+      "system_ambiguous": {
+       "n": 0,
+       "of": 4,
+       "rate": 0.0
+      },
+      "decisions_with_reason_and_evidence": {
+       "n": 4,
+       "of": 4,
+       "rate": 1.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "china-united-states": {
+      "cases": 13,
+      "precision_member": {
+       "n": 2,
+       "of": 3,
+       "rate": 0.6667
+      },
+      "recall_member": {
+       "n": 2,
+       "of": 7,
+       "rate": 0.2857
+      },
+      "members_kept": {
+       "n": 2,
+       "of": 7,
+       "rate": 0.2857
+      },
+      "not_member_rejected": {
+       "n": 4,
+       "of": 4,
+       "rate": 1.0
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 1,
+        "of": 2,
+        "rate": 0.5
+       },
+       "NOT_MEMBER": {
+        "n": 4,
+        "of": 4,
+        "rate": 1.0
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 13,
+       "rate": 0.0
+      },
+      "system_ambiguous": {
+       "n": 0,
+       "of": 13,
+       "rate": 0.0
+      },
+      "decisions_with_reason_and_evidence": {
+       "n": 13,
+       "of": 13,
+       "rate": 1.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 1,
+        "of": 2,
+        "cases": [
+         "S243"
+        ]
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "christa-pike-pike": {
+      "cases": 2,
+      "precision_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "recall_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "members_kept": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "not_member_rejected": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 2,
+        "of": 2,
+        "rate": 1.0
+       },
+       "NOT_MEMBER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "system_ambiguous": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "decisions_with_reason_and_evidence": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "democrat-united-states": {
+      "cases": 3,
+      "precision_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "recall_member": {
+       "n": 0,
+       "of": 1,
+       "rate": 0.0
+      },
+      "members_kept": {
+       "n": 0,
+       "of": 1,
+       "rate": 0.0
+      },
+      "not_member_rejected": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       },
+       "NOT_MEMBER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       }
+      },
+      "owner_ambiguous": {
+       "n": 1,
+       "of": 3,
+       "rate": 0.3333
+      },
+      "system_ambiguous": {
+       "n": 0,
+       "of": 3,
+       "rate": 0.0
+      },
+      "decisions_with_reason_and_evidence": {
+       "n": 3,
+       "of": 3,
+       "rate": 1.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "donald-j-trump-united-states": {
+      "cases": 4,
+      "precision_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "recall_member": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "members_kept": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "not_member_rejected": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 2,
+        "of": 2,
+        "rate": 1.0
+       },
+       "NOT_MEMBER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 4,
+       "rate": 0.0
+      },
+      "system_ambiguous": {
+       "n": 0,
+       "of": 4,
+       "rate": 0.0
+      },
+      "decisions_with_reason_and_evidence": {
+       "n": 4,
+       "of": 4,
+       "rate": 1.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "elon-musk-musk": {
+      "cases": 2,
+      "precision_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "recall_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "members_kept": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "not_member_rejected": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       },
+       "NOT_MEMBER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       }
+      },
+      "owner_ambiguous": {
+       "n": 1,
+       "of": 2,
+       "rate": 0.5
+      },
+      "system_ambiguous": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "decisions_with_reason_and_evidence": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "emmanuel-macron-france-macron": {
+      "cases": 2,
+      "precision_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "recall_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "members_kept": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "not_member_rejected": {
+       "n": 1,
+       "of": 1,
+       "rate": 1.0
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "NOT_MEMBER": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       }
+      },
+      "owner_ambiguous": {
+       "n": 1,
+       "of": 2,
+       "rate": 0.5
+      },
+      "system_ambiguous": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "decisions_with_reason_and_evidence": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "eritrea-ethiopia": {
+      "cases": 3,
+      "precision_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "recall_member": {
+       "n": 0,
+       "of": 1,
+       "rate": 0.0
+      },
+      "members_kept": {
+       "n": 0,
+       "of": 1,
+       "rate": 0.0
+      },
+      "not_member_rejected": {
+       "n": 1,
+       "of": 1,
+       "rate": 1.0
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "NOT_MEMBER": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       }
+      },
+      "owner_ambiguous": {
+       "n": 1,
+       "of": 3,
+       "rate": 0.3333
+      },
+      "system_ambiguous": {
+       "n": 0,
+       "of": 3,
+       "rate": 0.0
+      },
+      "decisions_with_reason_and_evidence": {
+       "n": 3,
+       "of": 3,
+       "rate": 1.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "eu-china-trade": {
+      "cases": 4,
+      "precision_member": {
+       "n": 1,
+       "of": 1,
+       "rate": 1.0
+      },
+      "recall_member": {
+       "n": 1,
+       "of": 2,
+       "rate": 0.5
+      },
+      "members_kept": {
+       "n": 1,
+       "of": 2,
+       "rate": 0.5
+      },
+      "not_member_rejected": {
+       "n": 1,
+       "of": 1,
+       "rate": 1.0
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       },
+       "NOT_MEMBER": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 4,
+       "rate": 0.0
+      },
+      "system_ambiguous": {
+       "n": 0,
+       "of": 4,
+       "rate": 0.0
+      },
+      "decisions_with_reason_and_evidence": {
+       "n": 4,
+       "of": 4,
+       "rate": 1.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "european-union-russia": {
+      "cases": 4,
+      "precision_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "recall_member": {
+       "n": 0,
+       "of": 1,
+       "rate": 0.0
+      },
+      "members_kept": {
+       "n": 0,
+       "of": 1,
+       "rate": 0.0
+      },
+      "not_member_rejected": {
+       "n": 1,
+       "of": 1,
+       "rate": 1.0
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 2,
+        "of": 2,
+        "rate": 1.0
+       },
+       "NOT_MEMBER": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 4,
+       "rate": 0.0
+      },
+      "system_ambiguous": {
+       "n": 0,
+       "of": 4,
+       "rate": 0.0
+      },
+      "decisions_with_reason_and_evidence": {
+       "n": 4,
+       "of": 4,
+       "rate": 1.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "france-pope": {
+      "cases": 3,
+      "precision_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "recall_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "members_kept": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "not_member_rejected": {
+       "n": 3,
+       "of": 3,
+       "rate": 1.0
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "NOT_MEMBER": {
+        "n": 3,
+        "of": 3,
+        "rate": 1.0
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 3,
+       "rate": 0.0
+      },
+      "system_ambiguous": {
+       "n": 0,
+       "of": 3,
+       "rate": 0.0
+      },
+      "decisions_with_reason_and_evidence": {
+       "n": 3,
+       "of": 3,
+       "rate": 1.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "gaza-ceasefire": {
+      "cases": 5,
+      "precision_member": {
+       "n": 0,
+       "of": 1,
+       "rate": 0.0
+      },
+      "recall_member": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "members_kept": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "not_member_rejected": {
+       "n": 1,
+       "of": 1,
+       "rate": 1.0
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 1,
+        "rate": 0.0
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "NOT_MEMBER": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       }
+      },
+      "owner_ambiguous": {
+       "n": 1,
+       "of": 5,
+       "rate": 0.2
+      },
+      "system_ambiguous": {
+       "n": 0,
+       "of": 5,
+       "rate": 0.0
+      },
+      "decisions_with_reason_and_evidence": {
+       "n": 5,
+       "of": 5,
+       "rate": 1.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "international-criminal-court-united-states": {
+      "cases": 3,
+      "precision_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "recall_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "members_kept": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "not_member_rejected": {
+       "n": 1,
+       "of": 1,
+       "rate": 1.0
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       },
+       "NOT_MEMBER": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       }
+      },
+      "owner_ambiguous": {
+       "n": 1,
+       "of": 3,
+       "rate": 0.3333
+      },
+      "system_ambiguous": {
+       "n": 0,
+       "of": 3,
+       "rate": 0.0
+      },
+      "decisions_with_reason_and_evidence": {
+       "n": 3,
+       "of": 3,
+       "rate": 1.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "israel-palestine": {
+      "cases": 7,
+      "precision_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "recall_member": {
+       "n": 0,
+       "of": 3,
+       "rate": 0.0
+      },
+      "members_kept": {
+       "n": 0,
+       "of": 3,
+       "rate": 0.0
+      },
+      "not_member_rejected": {
+       "n": 1,
+       "of": 1,
+       "rate": 1.0
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 2,
+        "of": 2,
+        "rate": 1.0
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       },
+       "NOT_MEMBER": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 7,
+       "rate": 0.0
+      },
+      "system_ambiguous": {
+       "n": 0,
+       "of": 7,
+       "rate": 0.0
+      },
+      "decisions_with_reason_and_evidence": {
+       "n": 7,
+       "of": 7,
+       "rate": 1.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "javier-milei-milei": {
+      "cases": 2,
+      "precision_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "recall_member": {
+       "n": 0,
+       "of": 1,
+       "rate": 0.0
+      },
+      "members_kept": {
+       "n": 0,
+       "of": 1,
+       "rate": 0.0
+      },
+      "not_member_rejected": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       },
+       "NOT_MEMBER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "system_ambiguous": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "decisions_with_reason_and_evidence": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "machado-maria-corina-machado": {
+      "cases": 2,
+      "precision_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "recall_member": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "members_kept": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "not_member_rejected": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "NOT_MEMBER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "system_ambiguous": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "decisions_with_reason_and_evidence": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "malaysia-singapore": {
+      "cases": 2,
+      "precision_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "recall_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "members_kept": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "not_member_rejected": {
+       "n": 1,
+       "of": 1,
+       "rate": 1.0
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       },
+       "NOT_MEMBER": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "system_ambiguous": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "decisions_with_reason_and_evidence": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "mexico-united-states": {
+      "cases": 3,
+      "precision_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "recall_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "members_kept": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "not_member_rejected": {
+       "n": 1,
+       "of": 1,
+       "rate": 1.0
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 2,
+        "of": 2,
+        "rate": 1.0
+       },
+       "NOT_MEMBER": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 3,
+       "rate": 0.0
+      },
+      "system_ambiguous": {
+       "n": 0,
+       "of": 3,
+       "rate": 0.0
+      },
+      "decisions_with_reason_and_evidence": {
+       "n": 3,
+       "of": 3,
+       "rate": 1.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "nato-russia": {
+      "cases": 3,
+      "precision_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "recall_member": {
+       "n": 0,
+       "of": 3,
+       "rate": 0.0
+      },
+      "members_kept": {
+       "n": 0,
+       "of": 3,
+       "rate": 0.0
+      },
+      "not_member_rejected": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "NOT_MEMBER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 3,
+       "rate": 0.0
+      },
+      "system_ambiguous": {
+       "n": 0,
+       "of": 3,
+       "rate": 0.0
+      },
+      "decisions_with_reason_and_evidence": {
+       "n": 3,
+       "of": 3,
+       "rate": 1.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "rachel-simon": {
+      "cases": 2,
+      "precision_member": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "recall_member": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "members_kept": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "not_member_rejected": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "NOT_MEMBER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "system_ambiguous": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "decisions_with_reason_and_evidence": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "russia-ukraine-war": {
+      "cases": 18,
+      "precision_member": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "recall_member": {
+       "n": 2,
+       "of": 11,
+       "rate": 0.1818
+      },
+      "members_kept": {
+       "n": 2,
+       "of": 11,
+       "rate": 0.1818
+      },
+      "not_member_rejected": {
+       "n": 1,
+       "of": 1,
+       "rate": 1.0
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 2,
+        "of": 2,
+        "rate": 1.0
+       },
+       "SPILLOVER": {
+        "n": 2,
+        "of": 2,
+        "rate": 1.0
+       },
+       "OTHER_SITUATION": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       },
+       "NOT_MEMBER": {
+        "n": 1,
+        "of": 1,
+        "rate": 1.0
+       }
+      },
+      "owner_ambiguous": {
+       "n": 1,
+       "of": 18,
+       "rate": 0.0556
+      },
+      "system_ambiguous": {
+       "n": 0,
+       "of": 18,
+       "rate": 0.0
+      },
+      "decisions_with_reason_and_evidence": {
+       "n": 18,
+       "of": 18,
+       "rate": 1.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 4,
+        "of": 6,
+        "cases": [
+         "S050",
+         "S051",
+         "S068",
+         "S207"
+        ]
+       },
+       "seeded_situations_only": {
+        "n": 4,
+        "of": 6
+       }
+      }
+     },
+     "russia-united-states": {
+      "cases": 16,
+      "precision_member": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "recall_member": {
+       "n": 2,
+       "of": 5,
+       "rate": 0.4
+      },
+      "members_kept": {
+       "n": 2,
+       "of": 5,
+       "rate": 0.4
+      },
+      "not_member_rejected": {
+       "n": 5,
+       "of": 5,
+       "rate": 1.0
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 4,
+        "of": 4,
+        "rate": 1.0
+       },
+       "NOT_MEMBER": {
+        "n": 5,
+        "of": 5,
+        "rate": 1.0
+       }
+      },
+      "owner_ambiguous": {
+       "n": 2,
+       "of": 16,
+       "rate": 0.125
+      },
+      "system_ambiguous": {
+       "n": 0,
+       "of": 16,
+       "rate": 0.0
+      },
+      "decisions_with_reason_and_evidence": {
+       "n": 16,
+       "of": 16,
+       "rate": 1.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 1,
+        "of": 2,
+        "cases": [
+         "S276"
+        ]
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "sudan-civil-war": {
+      "cases": 2,
+      "precision_member": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "recall_member": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "members_kept": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "not_member_rejected": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "NOT_MEMBER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       }
+      },
+      "owner_ambiguous": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "system_ambiguous": {
+       "n": 0,
+       "of": 2,
+       "rate": 0.0
+      },
+      "decisions_with_reason_and_evidence": {
+       "n": 2,
+       "of": 2,
+       "rate": 1.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     },
+     "us-iran": {
+      "cases": 7,
+      "precision_member": {
+       "n": 1,
+       "of": 1,
+       "rate": 1.0
+      },
+      "recall_member": {
+       "n": 1,
+       "of": 6,
+       "rate": 0.1667
+      },
+      "members_kept": {
+       "n": 1,
+       "of": 6,
+       "rate": 0.1667
+      },
+      "not_member_rejected": {
+       "n": 0,
+       "of": 0,
+       "rate": null
+      },
+      "non_member_label_rejected": {
+       "CONTEXT": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "SPILLOVER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "OTHER_SITUATION": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       },
+       "NOT_MEMBER": {
+        "n": 0,
+        "of": 0,
+        "rate": null
+       }
+      },
+      "owner_ambiguous": {
+       "n": 1,
+       "of": 7,
+       "rate": 0.1429
+      },
+      "system_ambiguous": {
+       "n": 0,
+       "of": 7,
+       "rate": 0.0
+      },
+      "decisions_with_reason_and_evidence": {
+       "n": 7,
+       "of": 7,
+       "rate": 1.0
+      },
+      "positive_seed_regressions": {
+       "all": {
+        "n": 0,
+        "of": 0,
+        "cases": []
+       },
+       "seeded_situations_only": {
+        "n": 0,
+        "of": 0
+       }
+      }
+     }
+    }
+   }
+  ]
+ }
+}
