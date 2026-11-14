@@ -235,9 +235,29 @@ reported only); recommended `abstain_reason=NO_TARGET`.
    - V2: at least 2 components of at least 2 items each;
    - V3: V1 on report items only;
    - V4: V2 on report items only.
-4. Counts and examples from the `eval-worker` diagnostic (`eval/mixed-flag-diagnostic`) are added when it finishes.
+4. Counts on the 11-02 snapshot (all 1,198 Developments; `eval/mixed-flag-diagnostic` `e304a21`, read-only;
+   identity hash unchanged before and after):
+
+   | | V1 | V2 | V3 | V4 |
+   |---|---|---|---|---|
+   | all | 76 (6.3%) | 16 (1.3%) | 59 (4.9%) | 10 (0.8%) |
+   | size 6+ | 47 (14.5%) | 15 (4.6%) | 40 (12.3%) | 9 (2.8%) |
+
+   Known merged Developments (check only):
+   - D49: flagged by all four variants;
+   - D439: flagged by V3 and V4;
+   - **D447, D542, D810: flagged by none.** Their items are linked as compatible pairwise even though the stories
+     differ.
+
+   Samples with headlines are in that branch's `REPORT.md`.
 6. v2 E5 (`PENDING_MIXED`), P5 support, identity diagnostics. The flag never mutates a Development.
-7. Recommended after the counts: likely V4, which is the least noisy.
+7. **The existing pairwise compatibility signal has low recall on known merges (1–2 of 5).** Options:
+   - (a) store V4 now as a conservative `segmentation_split` evidence flag (0.8%), explicitly not "mixed";
+   - (b) store nothing until the topic/role model gives a per-item action frame, then define "mixed" as report items
+     with incompatible frames (different `action_type` + agent sets) inside one Development;
+   - (c) both: (a) now as evidence, (b) as the real definition later.
+
+   **Recommendation: (c).** Owner to read the V4 sample in `REPORT.md` before approving (a).
 8. Reversible (a stored flag). 9. Identity gates must stay identical; the definition is checked against the known
    merged cases only as evidence.
 
