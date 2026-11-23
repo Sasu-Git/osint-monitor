@@ -1,0 +1,159 @@
+{
+ "config_sha256": {
+  "config/actors.yaml": "4379cda3f5f4228f6656f586203b40883ebdbececd97ad69fab3112103266872",
+  "config/development_types.yaml": "b0aac78c05ec0614a8780d7e45c5d0b9ed72498f23061d9d17f30683370a6422",
+  "config/event_grouping.yaml": "f3777650d116fa17e205f09bb0db238362b53326f73d8fac337355fc5350ac43",
+  "config/geography.yaml": "21e0eb38ee9ae4e04a99ad7d27328ae581770ee02308822f369e21ac3072c2cb",
+  "config/situations.yaml": "5afe26ad3996842618bc988c89acf1828009e60f0a06d517a4cd13d2060236a0"
+ },
+ "engine_parity": {
+  "assignments_equal": true,
+  "engine_chronological_equal": true,
+  "open_decisions_equal": true,
+  "situation_list_equal": true
+ },
+ "evalset_dir_files": {
+  "cases.json": "725d7a2d50e18e20ead4e773f17a0fdc014c2784bfb21096ac10b7550cb88b17",
+  "key.json": "5817074a533be24cb7610eb6b6d5096e4369c8edb396d48d8ee5813b03042632",
+  "scopes.json": "fa3da833e246efbb28cfb93ee0e3b12c81e79939d02f42060c5432cdfa28da3e",
+  "subsample/manifest.json": "c745d15c66df2823f8f1dbecb02b3d88a5580875db582a854fad0faae6f0458a"
+ },
+ "finished_utc": "2026-11-23T13:37:52.424902+00:00",
+ "git": {
+  "branch": "eval/chrono-replay-instrumentation",
+  "dirty": false,
+  "sha": "e2163e0bd740614cc2f2e51746d64deb71a27e01"
+ },
+ "guard": {
+  "final_requires": "see chrono_replay/guard.py",
+  "owner_approved": null
+ },
+ "identity": {
+  "config_sha256": {
+   "config/actors.yaml": "4379cda3f5f4228f6656f586203b40883ebdbececd97ad69fab3112103266872",
+   "config/development_types.yaml": "b0aac78c05ec0614a8780d7e45c5d0b9ed72498f23061d9d17f30683370a6422",
+   "config/event_grouping.yaml": "f3777650d116fa17e205f09bb0db238362b53326f73d8fac337355fc5350ac43",
+   "config/geography.yaml": "21e0eb38ee9ae4e04a99ad7d27328ae581770ee02308822f369e21ac3072c2cb",
+   "config/situations.yaml": "5afe26ad3996842618bc988c89acf1828009e60f0a06d517a4cd13d2060236a0"
+  },
+  "engine_sha256": "1fca9935e9b621b196f06e3cbcd7efc7d6f612616ae0346f00fe488fdcbf2fbe",
+  "first_dev": 1,
+  "last_dev": 50,
+  "limit": 50,
+  "mixed_from": "v4",
+  "mode": "smoke",
+  "providers": {
+   "components": {
+    "origin": "stored",
+    "path": "report-components-v1-snap-7463859a.jsonl",
+    "provider_id": "report-components-v1:66dec1336789",
+    "role": "components",
+    "rows": 2180,
+    "sha256": "66dec13367890068c15e296f4cc22881ca192aee80472bb65336068bb75e89a6"
+   },
+   "location": {
+    "geography_sha256": "21e0eb38ee9ae4e04a99ad7d27328ae581770ee02308822f369e21ac3072c2cb",
+    "origin": "stored",
+    "provider_id": "stored-location:item_entities+gazetteer",
+    "role": "location"
+   },
+   "principals": {
+    "origin": "stored",
+    "provider_id": "stored-principals:event_entities.is_principal",
+    "role": "principals"
+   },
+   "topic": {
+    "origin": "stored",
+    "provider_id": "stored-topic:events.event_type",
+    "role": "topic"
+   }
+  },
+  "seeded_scopes_sha256": "dd036990f5a93cff8c1c9eac5f836252b79b2b4a2524b2570bbd51bee269f8f5",
+  "snapshot_sha256": "7463859a4f3537eb29447a755f252dbebc80cc01a1d855739c57b10489964c3c",
+  "window_size": 50
+ },
+ "limit": 50,
+ "mixed_from": "v4",
+ "mode": "smoke",
+ "pins": {
+  "component_evidence": {
+   "algorithm_version": "report-components-v1",
+   "path": "inputs/report-components-v1-snap-7463859a.jsonl",
+   "ref": "origin/eval/report-component-partition@7fb2cbb evaluations/development-identity/report-component-partition/v1/snap-7463859a.jsonl",
+   "sha256": "66dec13367890068c15e296f4cc22881ca192aee80472bb65336068bb75e89a6"
+  },
+  "contract": {
+   "ref": "origin/design/situation-membership-v2-r2@bbc9bba evaluations/situation-membership/CONTRACT-V2-R2.md",
+   "sha256": "115c8c183f196fd3b1ea2633a21caf9746787211379042a359996b82bf31a997"
+  },
+  "default_snapshot": {
+   "path": "data/eval/upstream-gold-20261123/gold-snap.db (main checkout)",
+   "sha256": "7463859a4f3537eb29447a755f252dbebc80cc01a1d855739c57b10489964c3c"
+  },
+  "engine": {
+   "origin": "origin/feat/situation-membership-v2-candidate@4f4f85d osint_monitor/processors/situations/v2.py (unmodified copy)",
+   "path": "engine/situation_v2_4f4f85d.py",
+   "sha256": "1fca9935e9b621b196f06e3cbcd7efc7d6f612616ae0346f00fe488fdcbf2fbe"
+  },
+  "evalset": {
+   "built_on_snapshot_sha256": "b5bb5728ce76d3eb28c70712b088b026268538243f4fa099744856dc2c29af40",
+   "files": {
+    "cases.json": "725d7a2d50e18e20ead4e773f17a0fdc014c2784bfb21096ac10b7550cb88b17",
+    "key.json": "5817074a533be24cb7610eb6b6d5096e4369c8edb396d48d8ee5813b03042632",
+    "scopes.json": "fa3da833e246efbb28cfb93ee0e3b12c81e79939d02f42060c5432cdfa28da3e",
+    "subsample/manifest.json": "c745d15c66df2823f8f1dbecb02b3d88a5580875db582a854fad0faae6f0458a"
+   },
+   "labels_files_final_mode_only": [
+    "subsample/LABELS-FREEZE-subsample.json",
+    "subsample/owner-labels-subsample.yaml"
+   ],
+   "ref": "origin/design/situation-membership-v2-r2@bbc9bba evaluations/situation-membership/evalset (read-only; passed with --evalset-dir)"
+  },
+  "note": "Frozen inputs this instrument depends on. Verified by code before every run; a mismatch stops the run. Nothing here is a threshold or a result.",
+  "seeded_scopes": {
+   "origin": "origin/design/situation-membership-v2-r2@bbc9bba evaluations/situation-membership/seeded-scopes.yaml (contract amendment 1)",
+   "path": "inputs/seeded-scopes.yaml",
+   "sha256": "dd036990f5a93cff8c1c9eac5f836252b79b2b4a2524b2570bbd51bee269f8f5"
+  },
+  "upstream_specs": {
+   "event_location_model": "origin/design/event-location-model@508f0bd evaluations/event-location-model/SPEC.md",
+   "event_topic_model": "origin/design/event-topic-model@b12cd98 evaluations/event-topic-model/SPEC.md"
+  }
+ },
+ "providers": {
+  "components": {
+   "origin": "stored",
+   "path": "report-components-v1-snap-7463859a.jsonl",
+   "provider_id": "report-components-v1:66dec1336789",
+   "role": "components",
+   "rows": 2180,
+   "sha256": "66dec13367890068c15e296f4cc22881ca192aee80472bb65336068bb75e89a6"
+  },
+  "location": {
+   "geography_sha256": "21e0eb38ee9ae4e04a99ad7d27328ae581770ee02308822f369e21ac3072c2cb",
+   "origin": "stored",
+   "provider_id": "stored-location:item_entities+gazetteer",
+   "role": "location"
+  },
+  "principals": {
+   "origin": "stored",
+   "provider_id": "stored-principals:event_entities.is_principal",
+   "role": "principals"
+  },
+  "topic": {
+   "origin": "stored",
+   "provider_id": "stored-topic:events.event_type",
+   "role": "topic"
+  }
+ },
+ "run_id": "3ab53bae8936",
+ "seed": null,
+ "seed_note": "no randomness is used by the driver or the engine",
+ "snapshot": {
+  "name": "gold-snap.db",
+  "opened": "read-only; backup-API copy in a temporary directory, query_only",
+  "sha256": "7463859a4f3537eb29447a755f252dbebc80cc01a1d855739c57b10489964c3c"
+ },
+ "started_utc": "2026-11-23T13:37:52.215929+00:00",
+ "trace_sha256": "d24c0888030dc76e2d154c055a1c2c2f9e6b7c519ffca52036d4f6c9fd5000bc"
+}

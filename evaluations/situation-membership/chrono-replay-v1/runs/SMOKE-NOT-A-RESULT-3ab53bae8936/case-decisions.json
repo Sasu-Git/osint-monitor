@@ -1,0 +1,382 @@
+{
+ "decisions": {
+  "S024": {
+   "decision": "rejected",
+   "evidence": {
+    "assigned": null,
+    "contract_version": "CONTRACT-V2-R2 (bf57ed7)",
+    "counterparts": [
+     "us-iran"
+    ]
+   },
+   "reason": "LOW_COVERAGE"
+  },
+  "S043": {
+   "decision": "rejected",
+   "evidence": {
+    "assigned": "china-united_states:diplomacy",
+    "contract_version": "CONTRACT-V2-R2 (bf57ed7)",
+    "counterparts": []
+   },
+   "reason": "NO_COUNTERPART"
+  },
+  "S078": {
+   "decision": "rejected",
+   "evidence": {
+    "assigned": null,
+    "contract_version": "CONTRACT-V2-R2 (bf57ed7)",
+    "counterparts": [
+     "china-united_states:diplomacy"
+    ]
+   },
+   "reason": "COUNTERPART_CREATED_LATER"
+  },
+  "S080": {
+   "decision": "rejected",
+   "evidence": {
+    "assigned": null,
+    "contract_version": "CONTRACT-V2-R2 (bf57ed7)",
+    "counterparts": [
+     "russia-ukraine-war"
+    ]
+   },
+   "reason": "PENDING_ATTRIBUTION"
+  },
+  "S137": {
+   "decision": "rejected",
+   "evidence": {
+    "assigned": null,
+    "contract_version": "CONTRACT-V2-R2 (bf57ed7)",
+    "counterparts": []
+   },
+   "reason": "NO_COUNTERPART"
+  },
+  "S166": {
+   "decision": "rejected",
+   "evidence": {
+    "assigned": null,
+    "contract_version": "CONTRACT-V2-R2 (bf57ed7)",
+    "counterparts": [
+     "china-united_states:diplomacy"
+    ]
+   },
+   "reason": "PENDING_MIXED"
+  },
+  "S168": {
+   "decision": "rejected",
+   "evidence": {
+    "assigned": null,
+    "contract_version": "CONTRACT-V2-R2 (bf57ed7)",
+    "counterparts": []
+   },
+   "reason": "NO_COUNTERPART"
+  },
+  "S213": {
+   "decision": "entered",
+   "evidence": {
+    "assigned": "china-united_states:diplomacy",
+    "contract_version": "CONTRACT-V2-R2 (bf57ed7)",
+    "counterparts": [
+     "china-united_states:diplomacy"
+    ]
+   },
+   "reason": "ASSIGNED"
+  },
+  "S237": {
+   "decision": "entered",
+   "evidence": {
+    "assigned": "us-iran",
+    "contract_version": "CONTRACT-V2-R2 (bf57ed7)",
+    "counterparts": [
+     "us-iran"
+    ]
+   },
+   "reason": "ASSIGNED"
+  },
+  "S256": {
+   "decision": "rejected",
+   "evidence": {
+    "assigned": null,
+    "contract_version": "CONTRACT-V2-R2 (bf57ed7)",
+    "counterparts": [
+     "russia-ukraine-war"
+    ]
+   },
+   "reason": "LOW_COVERAGE"
+  },
+  "S267": {
+   "decision": "entered",
+   "evidence": {
+    "assigned": "china-united_states:diplomacy",
+    "contract_version": "CONTRACT-V2-R2 (bf57ed7)",
+    "counterparts": [
+     "china-united_states:diplomacy"
+    ]
+   },
+   "reason": "ASSIGNED"
+  },
+  "S337": {
+   "decision": "rejected",
+   "evidence": {
+    "assigned": null,
+    "contract_version": "CONTRACT-V2-R2 (bf57ed7)",
+    "counterparts": []
+   },
+   "reason": "NO_COUNTERPART"
+  },
+  "S347": {
+   "decision": "entered",
+   "evidence": {
+    "assigned": "china-united_states:diplomacy",
+    "contract_version": "CONTRACT-V2-R2 (bf57ed7)",
+    "counterparts": [
+     "china-united_states:diplomacy"
+    ]
+   },
+   "reason": "ASSIGNED"
+  }
+ },
+ "details": {
+  "cases": {
+   "S024": {
+    "assigned": null,
+    "counterparts": [
+     "us-iran"
+    ],
+    "development_id": 31,
+    "outcome": "NOT_MEMBER",
+    "reason": "LOW_COVERAGE",
+    "situation": "us-iran"
+   },
+   "S043": {
+    "assigned": "china-united_states:diplomacy",
+    "counterparts": [],
+    "development_id": 6,
+    "outcome": "NOT_MEMBER",
+    "reason": "NO_COUNTERPART",
+    "situation": "china-taiwan"
+   },
+   "S078": {
+    "assigned": null,
+    "counterparts": [
+     "china-united_states:diplomacy"
+    ],
+    "development_id": 2,
+    "outcome": "NOT_MEMBER",
+    "reason": "COUNTERPART_CREATED_LATER",
+    "situation": "china-united-states"
+   },
+   "S080": {
+    "assigned": null,
+    "counterparts": [
+     "russia-ukraine-war"
+    ],
+    "development_id": 12,
+    "outcome": "PENDING",
+    "reason": "PENDING_ATTRIBUTION",
+    "situation": "russia-ukraine-war"
+   },
+   "S137": {
+    "assigned": null,
+    "counterparts": [],
+    "development_id": 9,
+    "outcome": "NOT_MEMBER",
+    "reason": "NO_COUNTERPART",
+    "situation": "eritrea-ethiopia"
+   },
+   "S166": {
+    "assigned": null,
+    "counterparts": [
+     "china-united_states:diplomacy"
+    ],
+    "development_id": 49,
+    "outcome": "PENDING",
+    "reason": "PENDING_MIXED",
+    "situation": "china-united-states"
+   },
+   "S168": {
+    "assigned": null,
+    "counterparts": [],
+    "development_id": 43,
+    "outcome": "NOT_MEMBER",
+    "reason": "NO_COUNTERPART",
+    "situation": "mexico-united-states"
+   },
+   "S213": {
+    "assigned": "china-united_states:diplomacy",
+    "counterparts": [
+     "china-united_states:diplomacy"
+    ],
+    "development_id": 39,
+    "outcome": "MEMBER",
+    "reason": "ASSIGNED",
+    "situation": "china-united-states"
+   },
+   "S237": {
+    "assigned": "us-iran",
+    "counterparts": [
+     "us-iran"
+    ],
+    "development_id": 45,
+    "outcome": "MEMBER",
+    "reason": "ASSIGNED",
+    "situation": "us-iran"
+   },
+   "S256": {
+    "assigned": null,
+    "counterparts": [
+     "russia-ukraine-war"
+    ],
+    "development_id": 40,
+    "outcome": "NOT_MEMBER",
+    "reason": "LOW_COVERAGE",
+    "situation": "russia-ukraine-war"
+   },
+   "S267": {
+    "assigned": "china-united_states:diplomacy",
+    "counterparts": [
+     "china-united_states:diplomacy"
+    ],
+    "development_id": 1,
+    "outcome": "MEMBER",
+    "reason": "ASSIGNED",
+    "situation": "china-united-states"
+   },
+   "S337": {
+    "assigned": null,
+    "counterparts": [],
+    "development_id": 46,
+    "outcome": "NOT_MEMBER",
+    "reason": "NO_COUNTERPART",
+    "situation": "democrat-united-states"
+   },
+   "S347": {
+    "assigned": "china-united_states:diplomacy",
+    "counterparts": [
+     "china-united_states:diplomacy"
+    ],
+    "development_id": 34,
+    "outcome": "MEMBER",
+    "reason": "ASSIGNED",
+    "situation": "china-united-states"
+   }
+  },
+  "not_replayed": [
+   "S001",
+   "S003",
+   "S006",
+   "S008",
+   "S009",
+   "S013",
+   "S016",
+   "S022",
+   "S023",
+   "S027",
+   "S028",
+   "S030",
+   "S033",
+   "S037",
+   "S042",
+   "S045",
+   "S049",
+   "S050",
+   "S051",
+   "S054",
+   "S055",
+   "S056",
+   "S060",
+   "S062",
+   "S066",
+   "S067",
+   "S068",
+   "S074",
+   "S079",
+   "S086",
+   "S087",
+   "S090",
+   "S093",
+   "S096",
+   "S101",
+   "S105",
+   "S107",
+   "S119",
+   "S121",
+   "S130",
+   "S132",
+   "S134",
+   "S138",
+   "S140",
+   "S141",
+   "S145",
+   "S149",
+   "S150",
+   "S152",
+   "S154",
+   "S155",
+   "S157",
+   "S158",
+   "S159",
+   "S162",
+   "S169",
+   "S176",
+   "S177",
+   "S185",
+   "S195",
+   "S199",
+   "S200",
+   "S205",
+   "S207",
+   "S208",
+   "S209",
+   "S221",
+   "S222",
+   "S233",
+   "S238",
+   "S243",
+   "S248",
+   "S251",
+   "S262",
+   "S268",
+   "S269",
+   "S271",
+   "S273",
+   "S274",
+   "S275",
+   "S276",
+   "S279",
+   "S292",
+   "S293",
+   "S295",
+   "S297",
+   "S299",
+   "S300",
+   "S301",
+   "S302",
+   "S306",
+   "S307",
+   "S310",
+   "S312",
+   "S318",
+   "S319",
+   "S320",
+   "S329",
+   "S330",
+   "S340",
+   "S341",
+   "S343",
+   "S344",
+   "S350",
+   "S353",
+   "S357",
+   "S359",
+   "S362",
+   "S364",
+   "S365",
+   "S372",
+   "S377",
+   "S379"
+  ]
+ },
+ "rule": "situation-v2 candidate, chronological replay (smoke), CONTRACT-V2-R2 (bf57ed7)",
+ "status": "SMOKE / NOT A RESULT"
+}
