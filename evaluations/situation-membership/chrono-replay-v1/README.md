@@ -36,8 +36,9 @@ family only when it is a v2 family and confidence is `high` or `medium` (owner r
 `event` and `target` roles and only at `high`/`medium` confidence. The raw record stays visible in the trace.
 
 The owner's V4 condition (at least two report components of at least two items each) is derived on read from the
-component evidence and is never stored as a field. `--mixed-from v4` (default) feeds it to the engine's `mixed` flag
-(E5, `PENDING_MIXED`); `--mixed-from none` leaves the flag unset, as the earlier diagnostic replay did.
+component evidence and is never stored as a field. `--mixed-from none` (default) leaves the engine's `mixed` flag unset (owner ruling 2026-11-23: component evidence has no
+downstream use yet). `--mixed-from v4` is an explicit opt-in that feeds V4 to the flag (E5, `PENDING_MIXED`); manifest and
+summary then say `"mixed_from": "v4 (OWNER DECISION PENDING)"`.
 
 ## Run
 
@@ -93,8 +94,7 @@ the frozen `score.py` / `score_subsample.py` unchanged. The 126-case set is diag
 
 ## Open choices (left for the owner or the final-run brief)
 
-- Whether `mixed` = derived V4 (default) or unset; the component evidence file was declared "no downstream use" by the
-  owner on 2026-11-23, so using it as the E5 flag is a decision.
+- Whether `mixed` = derived V4: owner decision pending; default is unset (`none`).
 - Ordering key: `events.first_reported_at` (row creation, i.e. processing time), not source publication time.
 - Model consumption rules above (T3 confidence classes; event/target roles only; `out_of_scope` as no family).
 - Hazard family stays text-derived from headlines and leads (contract 1.4 lexicon), not a topic-model output.

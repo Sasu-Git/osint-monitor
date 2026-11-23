@@ -49,7 +49,7 @@ def stored_providers(bs, with_components=True):
     return p
 
 
-def run(engine, tmp_path, bs, providers, mode="smoke", limit=None, mixed_from="v4", name="o"):
+def run(engine, tmp_path, bs, providers, mode="smoke", limit=None, mixed_from="none", name="o"):
     return execute(engine=engine, bases=bs, providers=providers, seeded_factory=lambda: [],
                    party_countries=lambda keys: set(), mode=mode, limit=limit, mixed_from=mixed_from,
                    out_root=tmp_path / name, identity={"test": 1}, manifest_extra={"git": {"sha": "t", "dirty": False}})
@@ -83,7 +83,7 @@ def test_trace_rows_follow_time_order(engine, tmp_path):
 
 def test_every_row_carries_provider_values_and_provenance(engine, tmp_path):
     bs = bases(4)
-    r = run(engine, tmp_path, bs, stored_providers(bs))
+    r = run(engine, tmp_path, bs, stored_providers(bs), mixed_from="v4")
     for line in (r["out"] / "trace.jsonl").read_text().splitlines():
         row = json.loads(line)
         for role in ("topic", "location", "principals", "components"):
@@ -91,7 +91,8 @@ def test_every_row_carries_provider_values_and_provenance(engine, tmp_path):
             assert row["inputs"][role]["provenance"]["origin"] == "stored"
             assert "value" in row["inputs"][role]
         assert row["inputs"]["components"]["value"]["v4_derived"] is True
-        assert row["inputs"]["mixed"] == {"value": True, "from": "v4"}
+        assert row["inputs"]["mixed"] == {"value": True, "from": "v4 (OWNER DECISION PENDING)"}
+        assert r["summary"]["mixed_from"] == r["manifest"]["mixed_from"] == "v4 (OWNER DECISION PENDING)"
         assert row["mode"] == guard.SMOKE_LABEL and "candidates" in row and "reason" in row
 
 
@@ -213,7 +214,7 @@ def test_smoke_output_is_labelled_and_reads_no_label(engine, tmp_path):
     assert r["summary"]["status"] == guard.SMOKE_LABEL and r["summary"]["label_metrics"] is None
     with pytest.raises(SystemExit):                                       # final with no labels stops
         execute(engine=engine, bases=bs, providers=stored_providers(bs), seeded_factory=lambda: [],
-                party_countries=lambda k: set(), mode="final", limit=None, mixed_from="v4", out_root=tmp_path / "f",
+                party_countries=lambda k: set(), mode="final", limit=None, mixed_from="none", out_root=tmp_path / "f",
                 identity={}, manifest_extra={}, evalset={"key": {}, "case_ids": [], "anchors_of": {}, "founders_of": {},
                                                          "scopes": {"automatic": []}}, labels=None)
 
@@ -311,3 +312,11 @@ def test_pins_are_verified_files():
     assert sha256_file(ROOT / pins["engine"]["path"]) == pins["engine"]["sha256"]
     assert sha256_file(ROOT / pins["seeded_scopes"]["path"]) == pins["seeded_scopes"]["sha256"]
     assert sha256_file(ROOT / pins["component_evidence"]["path"]) == pins["component_evidence"]["sha256"]
+
+
+def test_default_is_none_and_labelled(engine, tmp_path):
+    bs = bases(2)
+    r = run(engine, tmp_path, bs, stored_providers(bs))
+    assert r["summary"]["mixed_from"] == "none" and r["manifest"]["mixed_from"] == "none"
+    import run_replay
+    assert run_replay.parse_args(["--snapshot", "x"]).mixed_from == "none"

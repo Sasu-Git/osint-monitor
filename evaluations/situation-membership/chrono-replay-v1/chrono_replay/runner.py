@@ -18,6 +18,8 @@ from .guard import SMOKE_LABEL, final_dir_name, smoke_dir_name
 from .providers import Provider
 from .util import dumps, sha256_text, write_json, write_lines
 
+MIXED_LABEL = {"none": "none", "v4": "v4 (OWNER DECISION PENDING)"}
+
 SMOKE_NOTE = ("SMOKE RUN, NOT A RESULT. Limited window, current stored-value providers or stubs, no label read. It "
               "proves the plumbing only and must not be cited as evidence about Situation v2.")
 
@@ -49,7 +51,7 @@ def execute(*, engine, bases: list[BaseDev], providers: dict[str, Provider], see
     summary = {
         "status": SMOKE_LABEL if mode == "smoke" else "FINAL (owner-approved)",
         "note": SMOKE_NOTE if mode == "smoke" else "No verdict is computed here; gates are PROPOSED context only.",
-        "run_id": run_id, "mode": mode, "limit": limit, "mixed_from": mixed_from,
+        "run_id": run_id, "mode": mode, "limit": limit, "mixed_from": MIXED_LABEL[mixed_from],
         "contract_version": engine.CONTRACT_VERSION,
         "engine_parity": parity,
         "structural": metrics.structural_summary(result, len(bases)),
@@ -82,7 +84,7 @@ def execute(*, engine, bases: list[BaseDev], providers: dict[str, Provider], see
         (out / "NOT-A-RESULT.txt").write_text(SMOKE_NOTE + "\n", encoding="utf-8", newline="\n")
     manifest = {**manifest_extra, "run_id": run_id, "mode": mode, "limit": limit, "seed": None,
                 "seed_note": "no randomness is used by the driver or the engine",
-                "mixed_from": mixed_from, "identity": ident,
+                "mixed_from": MIXED_LABEL[mixed_from], "identity": ident,
                 "providers": {r: p.describe() for r, p in sorted(providers.items())},
                 "trace_sha256": sha256_text("\n".join(trace_lines(result)) + "\n"),
                 "engine_parity": parity,

@@ -70,7 +70,7 @@ def build_features(engine, base: BaseDev, providers: dict[str, Provider], mixed_
         "principals": {"value": pr, "provenance": got["principals"].provenance},
         "components": ({"value": {**comp, "v4_derived": v4}, "provenance": got["components"].provenance}
                        if "components" in got else None),
-        "mixed": {"value": mixed, "from": mixed_from if "components" in got else "no component provider"},
+        "mixed": {"value": mixed, "from": ("v4 (OWNER DECISION PENDING)" if mixed_from == "v4" else mixed_from) if "components" in got else "no component provider"},
     }
     return feats, inputs
 
@@ -81,7 +81,7 @@ def _cand(slug, sit, dec) -> dict:
 
 
 def step_replay(engine, bases: list[BaseDev], providers: dict[str, Provider], seeded: list, party_countries: Callable,
-                *, run_mode: str, mixed_from: str = "v4") -> ReplayResult:
+                *, run_mode: str, mixed_from: str = "none") -> ReplayResult:
     ordered = chronological_order(bases)
     sits = list(seeded)
     assigned: dict[int, str] = {}

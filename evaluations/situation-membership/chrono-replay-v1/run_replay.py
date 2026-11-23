@@ -40,8 +40,9 @@ def parse_args(argv=None):
     ap.add_argument("--location", default="stored", help="'stored' or a frozen predictions .jsonl (model)")
     ap.add_argument("--principals", default="stored", help="'stored' or a frozen predictions .jsonl (model)")
     ap.add_argument("--components", default="pinned", help="'pinned', a report-components JSONL path, or 'none'")
-    ap.add_argument("--mixed-from", choices=("v4", "none"), default="v4",
-                    help="how the engine's mixed flag is set: derived V4 from component evidence, or never")
+    ap.add_argument("--mixed-from", choices=("v4", "none"), default="none",
+                    help="engine mixed flag: none (default; component evidence has no downstream use, owner 2026-11-23) "
+                         "or v4 (explicit opt-in, OWNER DECISION PENDING)")
     ap.add_argument("--owner-approved", help="reference to the owner's approval of the final run (final mode)")
     return ap.parse_args(argv)
 
