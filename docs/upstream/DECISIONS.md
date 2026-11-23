@@ -1,4 +1,4 @@
-# Upstream owner decisions (2026-11-14)
+# Upstream owner decisions (2026-11-14; owner rulings recorded 2026-11-23)
 
 Every semantic choice in the upstream track is listed here before any code. Each is marked
 **`OWNER DECISION REQUIRED`** or **`ALREADY FROZEN`**. Nothing marked "required" is implemented until approved.
@@ -19,7 +19,7 @@ recall trade-off, (6) downstream, (7) recommendation, (8) reversible?, (9) needs
 
 ## A. Principal actors (as a consequence of roles)
 
-### P1. Support threshold: fixed or size-dependent — `OWNER DECISION REQUIRED`
+### P1. Support threshold: fixed or size-dependent — **APPROVED 2026-11-23: keep current size-dependent rule, provisional until the role model is evaluated**
 1. `principals.required_support(n)`; weights `HEADLINE=1.0`, `LEAD=0.5` (`principals.py`).
 2. Already size-dependent: 1.0 for 1–2 items, else `max(1.5, 0.25·n)`.
 3. (a) keep; (b) fixed 1.5 (a 12-item Development needs 1.5, not 3); (c) role-based: a principal needs an *agent*
@@ -33,7 +33,7 @@ recall trade-off, (6) downstream, (7) recommendation, (8) reversible?, (9) needs
 8. Reversible (config and code).
 9. Yes: entity gold rev 3 plus the role gold (§B).
 
-### P2. Representative → state aggregation — `OWNER DECISION REQUIRED`
+### P2. Representative → state aggregation — **APPROVED 2026-11-23: representative and state stay separate; the state is principal only with institutional evidence**
 1. `config/actors.yaml` `represents`; support aggregation per holder in `mark_principal_actors`.
 2. A representative's mention keys to the state (Trump → United States), but principal flags and support are counted
    per surface holder. Support for "Russia" and "Kremlin" doesn't add up (43 cases). The rejected fix `5bb210e`
@@ -52,7 +52,7 @@ recall trade-off, (6) downstream, (7) recommendation, (8) reversible?, (9) needs
 8. Reversible.
 9. Yes: role gold plus entity gold rev 3.
 
-### P3. Does Gaza imply Palestine for actor purposes? — `OWNER DECISION REQUIRED`
+### P3. Does Gaza imply Palestine for actor purposes? — **APPROVED 2026-11-23: Gaza is a target/event location, never an actor standing for Palestine**
 1. Normalisation, `represents` / aliases; place-vs-actor rejection (`principals.rejection`, `place`).
 2. "Gaza" is a place: never an actor, never Palestine (339 misses of states named via a place, Gaza 33 of them).
 3. (a) keep (Gaza is a place); (b) "Gaza" as an actor stands for Palestine (like "Kremlin" → Russia); (c) Gaza stands
@@ -68,7 +68,7 @@ recall trade-off, (6) downstream, (7) recommendation, (8) reversible?, (9) needs
 8. Reversible.
 9. Yes: location gold plus role gold.
 
-### P4. Do targets count as principals? — `OWNER DECISION REQUIRED`
+### P4. Do targets count as principals? — **APPROVED 2026-11-23: target is a separate role; principal only where being targeted is structural (coercive or military action)**
 1. `principals.TARGET_HEADS` / `TARGET_PREPS` and the entity gold convention.
 2. Coercion targets ("sanctions on Russia", "strike on Iran") already count as parties in principal extraction (code
    comment line 62). The gold excludes some targets on purpose ("Russia warns NATO": NATO not principal); 61 such
@@ -82,7 +82,7 @@ recall trade-off, (6) downstream, (7) recommendation, (8) reversible?, (9) needs
 8. Reversible.
 9. Yes: role gold.
 
-### P5. Support from merged Developments — `OWNER DECISION REQUIRED`
+### P5. Support from merged Developments — **APPROVED 2026-11-23: largest compatible component only, once component evidence exists**
 1. `aggregate` over all member items.
 2. All members vote, including items from a merged-in different occurrence (297 noise misses, D49 Pope + summit).
 3. (a) keep; (b) count only the largest compatible component when the Development is mixed (needs M1); (c) count
@@ -99,7 +99,7 @@ recall trade-off, (6) downstream, (7) recommendation, (8) reversible?, (9) needs
 
 ## B. Topic / event model with roles (`design/event-topic-model`, `SPEC.md`)
 
-### T1. Topic families beyond the frozen v2 set — `OWNER DECISION REQUIRED`
+### T1. Topic families beyond the frozen v2 set — **APPROVED 2026-11-23: add out_of_scope; keep unknown for unresolved in-scope material; legal_justice deferred to a later amendment**
 1. Taxonomy `config/development_types.yaml`; v2 family map (frozen).
 2. No legal / justice, disaster, sport, health or markets type; those stories are `unknown`, which is the right call
    today.
@@ -112,7 +112,7 @@ recall trade-off, (6) downstream, (7) recommendation, (8) reversible?, (9) needs
 8. Reversible; (b) needs a v2 amendment before the window.
 9. Yes: topic gold.
 
-### T2. Intent: which intents yield an event type — `OWNER DECISION REQUIRED`
+### T2. Intent: which intents yield an event type — **APPROVED 2026-11-23: intent always stored; threatened -> threat; called for -> significant_statement**
 1. New `intent` field (spec §3).
 2. Not modelled: "wants a truce" typed as ceasefire; "postpones election" as election.
 3. (a) type only `occurred`; announced, threatened and called-for get type plus intent but count as non-occurrence;
@@ -126,7 +126,7 @@ recall trade-off, (6) downstream, (7) recommendation, (8) reversible?, (9) needs
 8. Reversible.
 9. Yes.
 
-### T3. Abstention and confidence classes — `OWNER DECISION REQUIRED`
+### T3. Abstention and confidence classes — **APPROVED 2026-11-23: downstream uses high and medium only; numeric boundaries calibrated on the frozen gold, not now**
 1. Spec §6 (`confidence`, `abstain_reason`).
 2. Rules output a type or `unknown`; no confidence.
 3. Classes: `high` / `medium` / `low` / `abstain`. Alternatives for what downstream may use: (a) high only; (b) high +
@@ -138,7 +138,7 @@ recall trade-off, (6) downstream, (7) recommendation, (8) reversible?, (9) needs
 8. Reversible.
 9. Yes: boundaries frozen on the gold's development split.
 
-### T4. Multilingual method — `OWNER DECISION REQUIRED`
+### T4. Multilingual method — **APPROVED 2026-11-23: spaCy role parsing + multilingual embedding classifier first; local LLM only if that fails the bar; no API keys**
 1. The model backend.
 2. English-only rules; the LLM path needs an API key, which is banned on the VM.
 3. (a) dependency-parse role extraction (spaCy en / es / it) plus multilingual embedding zero-shot for type; (b)
@@ -151,7 +151,7 @@ recall trade-off, (6) downstream, (7) recommendation, (8) reversible?, (9) needs
 8. Reversible.
 9. Yes.
 
-### T5. Item → Development aggregation — `OWNER DECISION REQUIRED`
+### T5. Item → Development aggregation — **APPROVED 2026-11-23: confidence-weighted vote over report items only; derived Development text never votes back**
 1. Spec §5.
 2. Rules use every headline, and leads vote.
 3. (a) headline-majority among compatible report items; (b) the headline of the earliest report item; (c) the
@@ -167,7 +167,7 @@ recall trade-off, (6) downstream, (7) recommendation, (8) reversible?, (9) needs
 
 ## C. Event location and place roles (`design/event-location-model`, `SPEC.md`)
 
-### L1. Several valid locations — `OWNER DECISION REQUIRED`
+### L1. Several valid locations — **APPROVED 2026-11-23: one Development-level location; MULTI when supported locations span countries**
 2. The map picks one point; v2 needs one event country or `NONE`.
 3. (a) one event location, plus the others kept as role-tagged places; (b) multiple event locations, all in scope;
    (c) `NONE` when they disagree.
@@ -181,20 +181,20 @@ recall trade-off, (6) downstream, (7) recommendation, (8) reversible?, (9) needs
 Kept. Origin is stored as `origin_location`. The only open sub-point is an attack with no stated target (launch
 reported only); recommended `abstain_reason=NO_TARGET`.
 
-### L3. Country-only events — `OWNER DECISION REQUIRED`
+### L3. Country-only events — **APPROVED 2026-11-23: country-only only for explicitly country-wide occurrences, never as a fallback**
 3. (a) a country-level event location is valid ("sanctions on Iran" → Iran?); (b) only when the text states a
    country-wide occurrence (the iteration-2 `_COUNTRY_WIDE` lexicon); (c) never: `NONE`.
 4. "Iran imposes curfew nationwide" vs "US sanctions Iran" (no occurrence place).
 7. **(b) for occurrences. Coercive measures get `NONE` for location; their target is a role, not a place.**
 8. Reversible. 9. Yes.
 
-### L4. Disputed territories — `OWNER DECISION REQUIRED`
+### L4. Disputed territories — **APPROVED 2026-11-23: disputed territories are first-class entities marked disputed**
 3. (a) an own entity code (as for Hong Kong); (b) the de-facto administrator; (c) `NONE` with `DISPUTED`.
 4. Jerusalem / East Jerusalem, Western Sahara, Falklands, Crimea, Dongsha (left unmapped on 11-11).
 7. **(a): own entity with an explicit `disputed: true`, never silently assigned to a state.**
 8. Reversible. 9. Yes.
 
-### L5. Seas and regions — `OWNER DECISION REQUIRED`
+### L5. Seas and regions — **APPROVED 2026-11-23: seas and regions are valid event locations, possibly without a country**
 3. (a) a region or sea is a valid event location without a country; (b) map it to the nearest or most-mentioned
    coastal state; (c) `NONE`.
 4. Black Sea, Strait of Hormuz, Red Sea attacks, "Middle East".
@@ -202,7 +202,7 @@ reported only); recommended `abstain_reason=NO_TARGET`.
    `black sea` to the war). Never mapped to a state.
 8. Reversible. 9. Yes.
 
-### L6. Containment source — `OWNER DECISION REQUIRED`
+### L6. Containment source — **APPROVED 2026-11-23: containment-only place-alias table, never entering actor/entity resolution**
 2. Containment comes from `geography.yaml`. Its aliases also feed actor and entity resolution, so the 93 parked
    aliases broke identity.
 3. (a) a containment-only alias table, read only by location and scope; (b) keep one table and accept identity
@@ -210,13 +210,13 @@ reported only); recommended `abstain_reason=NO_TARGET`.
 7. **(a).**
 8. Reversible. 9. Identity gates only.
 
-### L7. Evidence scope: headline / lead vs full text — `OWNER DECISION REQUIRED`
+### L7. Evidence scope: headline / lead vs full text — **APPROVED 2026-11-23: headline and lead primary; body may support or disambiguate but never silently overrides them**
 3. (a) headline + lead only; (b) + full text when fetched; (c) full text with dateline stripping.
 4. Datelines ("KYIV, Nov 3 –") are reporting locations, not occurrences.
 7. **(a) first; (c) as a measured variant.** Full text is uneven across sources.
 8. Reversible. 9. Yes.
 
-### L8. Minimum evidence for an event location — `OWNER DECISION REQUIRED`
+### L8. Minimum evidence for an event location — **APPROVED 2026-11-23: single-item: one clear headline-level item; multi-item: support from at least two items**
 3. (a) one occurrence or target role in one report headline; (b) the same place (or a contained one) in at least two
    items; (c) (a) for single-item Developments, (b) otherwise.
 5. (b) is precise, with lower coverage.
@@ -227,7 +227,7 @@ reported only); recommended `abstain_reason=NO_TARGET`.
 
 ## D. Mixed-Development flag
 
-### M1. Definition — `OWNER DECISION REQUIRED` (measurement running)
+### M1. Definition — `OWNER DECISION REQUIRED` (measured; samples returned 2026-11-23; field name and definition not chosen)
 1. A new read-only computation over stored Developments using the existing `development_segmentation.compatible_link`.
 2. Not computed after cluster formation; late attachments are never re-checked.
 3. Variants:
@@ -265,7 +265,7 @@ reported only); recommended `abstain_reason=NO_TARGET`.
 
 ## E. Malformed-Situation repair (dry run done, 2026-11-14; no writes)
 
-### R1. Approve the five retirements found by the existing check — `OWNER DECISION REQUIRED`
+### R1. Approve the five retirements found by the existing check — **APPROVED 2026-11-23 for 76 Developments; ON HOLD: the same five now hold 130 (re-approval needed)**
 Fresh VM snapshot (sha256 `541029e7…`, code `03841eb`), `scripts/repair_situations.py` dry run:
 
 | Situation | Reason | Developments detached |
@@ -284,7 +284,7 @@ Fresh VM snapshot (sha256 `541029e7…`, code `03841eb`), `scripts/repair_situat
 
 That's 76 Developments detached in total.
 
-### R2. Detection gaps — `OWNER DECISION REQUIRED`
+### R2. Detection gaps — **PARTIAL 2026-11-23: detector switched to the canonicaliser (dry run only); rachel-simon, russell-brand, china-iran returned for review**
 - **Name-variant pairs aren't caught:** `elon-musk-musk` (17, active, 6), `christa-pike-pike` (12, 3),
   `javier-milei-milei` (22, 2), `machado-maria-corina-machado` (27, 2). The script validates with the plain
   normaliser, and the set-level variant collapse lives only in the Situation canonicaliser.
@@ -298,7 +298,7 @@ That's 76 Developments detached in total.
 - **Recommendation:** (a) for the four name-variant pairs, and an explicit owner line for `rachel-simon`. Both via a
   second dry run.
 
-### R3. Detach only, or detach + regroup — `OWNER DECISION REQUIRED`
+### R3. Detach only, or detach + regroup — **APPROVED 2026-11-23: detach only, no regroup**
 - (a) detach only: the Developments stay without a Situation;
 - (b) `--regroup`: the normal grouping stage re-places those updated within the creation window. Most of these are
   older, so they would mostly stay unassigned anyway.
