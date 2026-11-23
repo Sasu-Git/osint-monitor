@@ -22,3 +22,20 @@ d779d9c82c5f20a6548883ec57a02c75de942fe742764dc1f2c5e6df6d519e24  topic/cases.js
 52d33cdc7a3dc12a6aa2b6b6d07f6d969e55963ba2788b24de3f8179f5227ed6  location/cases.json
 87f59ca890a7e671f50940481a75174e8622c1a1e352e1085fceabfa0218e93f  location/label_server.py
 ```
+
+## Amendment 1 (2026-11-23, 0 labels saved): development / acceptance split
+
+Owner ruling: 40 / 60, fixed seed, stratified, frozen before any label exists (both `labels.yaml` empty, no history).
+`split.py` (seed 20261126; stratified by sampling stratum, and for location also by role-subset membership; 40%
+per stratum, rounded). Development = confidence-band calibration only; acceptance = scored once.
+
+| Set | Development | Acceptance |
+|---|---|---|
+| topic | 52 | 78 |
+| location | 53 | 80 |
+
+```sha256
+c3a9d6147e2e01cc4d5b15223b75234be4fa6fc7b1c10b562ab16f14911505eb  split.py
+c299c015e0ea95357b804ef895d1b91d6c5334cdc9a0697bab4fbcd8d02afec3  topic/split.json
+bfc2c157e866807650f28bedb93ea0d935106b1a2a352c11202c5126727fdc43  location/split.json
+```
