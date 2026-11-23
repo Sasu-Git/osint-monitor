@@ -1,0 +1,101 @@
+{
+ "zero_link_items": [
+  {
+   "id": 8560,
+   "similarity_score": 1.0,
+   "added_at": "2026-10-14 08:24:30.748673",
+   "max_cos_prior": 0.517,
+   "title": "General Staff: Russia has lost 1,555,700 troops in Ukraine since Feb. 24, 2022"
+  },
+  {
+   "id": 12595,
+   "similarity_score": 1.0,
+   "added_at": "2026-10-15 20:16:07.874319",
+   "max_cos_prior": 0.802,
+   "title": "Starlink restrictions and Russias Donbas demands: Is Ukraine facing a new military and diplomatic challenge?"
+  },
+  {
+   "id": 37404,
+   "similarity_score": 1.0,
+   "added_at": "2026-11-10 12:35:45.875080",
+   "max_cos_prior": 0.711,
+   "title": "India speaks with Russia, Ukraine ahead of US-led peace talks"
+  },
+  {
+   "id": 43002,
+   "similarity_score": 1.0,
+   "added_at": "2026-11-13 11:11:08.238099",
+   "max_cos_prior": 0.715,
+   "title": "European voice in Ukraine peace talks must include UK, Taoiseach says"
+  }
+ ],
+ "near_dup_path_items": {
+  "n": 59,
+  "n_compat_prior_quantiles": [
+   1,
+   3,
+   5,
+   8,
+   10,
+   11,
+   14,
+   16,
+   19,
+   23,
+   32,
+   44
+  ],
+  "zero_compat": 0,
+  "similarity_range": [
+   0.8505016565322876,
+   0.997299313545227
+  ]
+ },
+ "same_run_items_note": "links to same-run members not counted (only earlier runs)",
+ "gold_topic": {
+  "top_keys": [
+   "snapshot",
+   "snapshot_sha256",
+   "first_id",
+   "eligibility",
+   "frame",
+   "shortfalls",
+   "sample",
+   "seed",
+   "target",
+   "strata",
+   "unknown_definition",
+   "cases"
+  ],
+  "first_id": 1342,
+  "ids_found": 130,
+  "min_id": 1354,
+  "contains_398": false,
+  "literal_398_token_present": false
+ },
+ "gold_location": {
+  "top_keys": [
+   "snapshot",
+   "snapshot_sha256",
+   "first_id",
+   "eligibility",
+   "frame",
+   "shortfalls",
+   "sample",
+   "seed",
+   "role_subset_seed",
+   "target",
+   "strike_share",
+   "strike_words",
+   "strata",
+   "disjoint_from",
+   "role_subset",
+   "cases"
+  ],
+  "first_id": 1342,
+  "ids_found": 133,
+  "min_id": 1345,
+  "contains_398": false,
+  "literal_398_token_present": false
+ }
+}

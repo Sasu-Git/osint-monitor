@@ -1,0 +1,1064 @@
+{
+ "snapshot_sha256": "7463859a4f3537eb29447a755f252dbebc80cc01a1d855739c57b10489964c3c",
+ "event_id": 398,
+ "stored_event": {
+  "id": "398",
+  "summary": "Six Ukrainian energy sites hit by Russia since Trump announced ceasefire, Zelensky says",
+  "event_type": "ceasefire",
+  "location_name": "Україна",
+  "lat": "49.4871968",
+  "lon": "31.2718321",
+  "region": "russia",
+  "first_reported_at": "2026-10-13 07:47:02.939813",
+  "last_updated_at": "2026-11-23 09:41:20.788406",
+  "earliest_published_at": "2026-10-11 14:47:00.000000",
+  "source_count": "23",
+  "situation_id": "14"
+ },
+ "1_size_span": {
+  "item_count": 2344,
+  "items_without_published_at": 0,
+  "published_at": [
+   "2026-10-11 14:47:00",
+   "2026-11-23 09:31:52"
+  ],
+  "fetched_at": [
+   "2026-10-13 07:42:53.489184",
+   "2026-11-23 09:38:11.860014"
+  ],
+  "added_at": [
+   "2026-10-13 07:47:02.941159",
+   "2026-11-23 09:41:20.787529"
+  ],
+  "items_also_in_other_events": 0
+ },
+ "1_added_per_week_by_added_at": {
+  "2026-W42": 338,
+  "2026-W43": 238,
+  "2026-W44": 93,
+  "2026-W45": 191,
+  "2026-W46": 474,
+  "2026-W47": 977,
+  "2026-W48": 33
+ },
+ "1_published_per_week": {
+  "2026-W41": 1,
+  "2026-W42": 339,
+  "2026-W43": 236,
+  "2026-W44": 100,
+  "2026-W45": 186,
+  "2026-W46": 491,
+  "2026-W47": 961,
+  "2026-W48": 30
+ },
+ "1_items_added_by_2026-11-02": 705,
+ "1_items_added_after_2026-11-02": 1639,
+ "1_runs": {
+  "distinct_runs": 1358,
+  "items_per_run_distribution": {
+   "1": 819,
+   "2": 299,
+   "3": 136,
+   "4": 55,
+   "5": 25,
+   "6": 13,
+   "7": 4,
+   "8": 2,
+   "9": 2,
+   "10": 1,
+   "12": 2
+  },
+  "top_10_runs": [
+   {
+    "run": "f87800ff088f4951b1d01fd2b13d12d7",
+    "items": 12,
+    "kind": "tier",
+    "tier": "warm",
+    "started_at": "2026-10-16 21:21:43.434352",
+    "code_sha": "3eda6d071716e26c86f4b649cde12583f2e83c28"
+   },
+   {
+    "run": "31851875204c48cb93b3e76fb3599f1d",
+    "items": 12,
+    "kind": "tier",
+    "tier": "warm",
+    "started_at": "2026-10-18 10:41:43.540883",
+    "code_sha": "3eda6d071716e26c86f4b649cde12583f2e83c28"
+   },
+   {
+    "run": "1f36f97f60c049afb7dd6a34fab86991",
+    "items": 10,
+    "kind": "tier",
+    "tier": "warm",
+    "started_at": "2026-11-19 03:17:55.101774",
+    "code_sha": "03841eb7e201c1c55201533a897f7b29e32f1203"
+   },
+   {
+    "run": "90f6d24ab09747cfa2352fdbc144e7fc",
+    "items": 9,
+    "kind": "tier",
+    "tier": "warm",
+    "started_at": "2026-10-15 20:11:43.422913",
+    "code_sha": "3eda6d071716e26c86f4b649cde12583f2e83c28"
+   },
+   {
+    "run": "e851c7ca9bcf41f1a16535ce721589df",
+    "items": 9,
+    "kind": "tier",
+    "tier": "warm",
+    "started_at": "2026-10-16 16:21:43.397735",
+    "code_sha": "3eda6d071716e26c86f4b649cde12583f2e83c28"
+   },
+   {
+    "run": "d32745b288744a3785e951b4bd6c9b7b",
+    "items": 8,
+    "kind": "tier",
+    "tier": "warm",
+    "started_at": "2026-11-17 17:17:55.102705",
+    "code_sha": "03841eb7e201c1c55201533a897f7b29e32f1203"
+   },
+   {
+    "run": "e94846410aad4c469ffcf674557399a5",
+    "items": 8,
+    "kind": "tier",
+    "tier": "warm",
+    "started_at": "2026-11-19 06:27:55.104987",
+    "code_sha": "03841eb7e201c1c55201533a897f7b29e32f1203"
+   },
+   {
+    "run": "c6b440e9ca14460fa78d72919f94a15f",
+    "items": 7,
+    "kind": "tier",
+    "tier": "warm",
+    "started_at": "2026-10-13 07:42:52.412816",
+    "code_sha": "5f046b34fb07a00936b75c6a773cf78a4e855f2b"
+   },
+   {
+    "run": "753edbaf960e4da38a76c1d00c53d2bb",
+    "items": 7,
+    "kind": "tier",
+    "tier": "warm",
+    "started_at": "2026-11-02 08:10:47.157075",
+    "code_sha": "e2c7afe07cb251720aa968c6d304be95847624ca"
+   },
+   {
+    "run": "3492d6057fff4e9ab6fcf35351b53f60",
+    "items": 7,
+    "kind": "tier",
+    "tier": "warm",
+    "started_at": "2026-11-19 04:47:55.114820",
+    "code_sha": "03841eb7e201c1c55201533a897f7b29e32f1203"
+   }
+  ],
+  "runs_by_kind_tier": {
+   "tier/warm": 1284,
+   "tier/hot": 59,
+   "tier/cold": 15
+  },
+  "items_by_code_sha": {
+   "03841eb7e201c1c55201533a897f7b29e32f1203": 1332,
+   "3eda6d071716e26c86f4b649cde12583f2e83c28": 580,
+   "6d6e7c8650d81bb5d7d4138328d8020c30261fff": 130,
+   "484dcc8903fc91fc535adbd17105cdcfb0f6f0da": 118,
+   "bc0d5c0e499571491f208e46d3f7d45f5eb3ed61": 77,
+   "e2c7afe07cb251720aa968c6d304be95847624ca": 52,
+   "adacb83e220a733663a0f69ff9a104c6c597bd5e": 47,
+   "5f046b34fb07a00936b75c6a773cf78a4e855f2b": 8
+  }
+ },
+ "1_added_per_day": {
+  "2026-10-13": 25,
+  "2026-10-14": 73,
+  "2026-10-15": 88,
+  "2026-10-16": 90,
+  "2026-10-17": 12,
+  "2026-10-18": 50,
+  "2026-10-19": 42,
+  "2026-10-20": 50,
+  "2026-10-21": 62,
+  "2026-10-22": 43,
+  "2026-10-23": 23,
+  "2026-10-24": 12,
+  "2026-10-25": 6,
+  "2026-10-26": 5,
+  "2026-10-27": 15,
+  "2026-10-28": 12,
+  "2026-10-29": 11,
+  "2026-10-30": 31,
+  "2026-10-31": 13,
+  "2026-11-01": 6,
+  "2026-11-02": 36,
+  "2026-11-03": 31,
+  "2026-11-04": 22,
+  "2026-11-05": 17,
+  "2026-11-06": 24,
+  "2026-11-07": 33,
+  "2026-11-08": 28,
+  "2026-11-09": 37,
+  "2026-11-10": 84,
+  "2026-11-11": 54,
+  "2026-11-12": 74,
+  "2026-11-13": 79,
+  "2026-11-14": 88,
+  "2026-11-15": 58,
+  "2026-11-16": 112,
+  "2026-11-17": 130,
+  "2026-11-18": 170,
+  "2026-11-19": 272,
+  "2026-11-20": 127,
+  "2026-11-21": 96,
+  "2026-11-22": 70,
+  "2026-11-23": 33
+ },
+ "1_similarity_score": {
+  "==1.0 (persist_clusters path)": 2285,
+  "<1.0 (pipeline near_different_source dedup path)": 59
+ },
+ "2_sources_top20": [
+  [
+   "GDELT",
+   1216
+  ],
+  [
+   "Kyiv Independent",
+   339
+  ],
+  [
+   "France 24",
+   186
+  ],
+  [
+   "Al Jazeera",
+   142
+  ],
+  [
+   "South China Morning Post",
+   111
+  ],
+  [
+   "BBC World",
+   77
+  ],
+  [
+   "France 24 Español",
+   44
+  ],
+  [
+   "Europa Press Internacional",
+   39
+  ],
+  [
+   "ANSA Mondo",
+   30
+  ],
+  [
+   "DW World",
+   26
+  ],
+  [
+   "Clarín Mundo",
+   22
+  ],
+  [
+   "El País Internacional",
+   22
+  ],
+  [
+   "Defense News",
+   15
+  ],
+  [
+   "Rai News Esteri",
+   11
+  ],
+  [
+   "State Department",
+   10
+  ],
+  [
+   "UN News",
+   9
+  ],
+  [
+   "European Commission Press",
+   9
+  ],
+  [
+   "Council of the EU Press",
+   8
+  ],
+  [
+   "BBC Mundo",
+   7
+  ],
+  [
+   "ANSA English",
+   6
+  ]
+ ],
+ "2_distinct_sources": 25,
+ "2_language": {
+  "en": 2165,
+  "es": 136,
+  "it": 43
+ },
+ "2_dominant_language": "en",
+ "3_item_event_type_rules": {
+  "unknown": 803,
+  "military_action": 463,
+  "negotiation": 219,
+  "summit": 179,
+  "bilateral_meeting": 176,
+  "significant_statement": 137,
+  "ceasefire": 82,
+  "commentary": 59,
+  "multilateral_meeting": 48,
+  "sanctions": 41,
+  "diplomatic_visit": 35,
+  "warning": 29,
+  "agreement": 29,
+  "security_incident": 21,
+  "deployment": 5,
+  "threat": 4,
+  "election": 3,
+  "arms_transfer": 3,
+  "policy_change": 3,
+  "appointment": 3,
+  "economic_action": 1,
+  "military_exercise": 1
+ },
+ "3_item_event_domain_rules": {
+  "diplomacy": 823,
+  "unknown": 803,
+  "military": 472,
+  "security": 136,
+  "political": 68,
+  "economic": 42
+ },
+ "3_stored_development_event_type": "ceasefire",
+ "4_stored_principals": [
+  {
+   "canonical_name": "Russia",
+   "entity_type": "GPE",
+   "role": "LOCATION",
+   "actor_role": "actor"
+  },
+  {
+   "canonical_name": "Russia",
+   "entity_type": "GPE",
+   "role": "SUBJECT",
+   "actor_role": "actor"
+  },
+  {
+   "canonical_name": "Moscow",
+   "entity_type": "GPE",
+   "role": "LOCATION",
+   "actor_role": "actor"
+  },
+  {
+   "canonical_name": "Rusia",
+   "entity_type": "GPE",
+   "role": "LOCATION",
+   "actor_role": "actor"
+  },
+  {
+   "canonical_name": "Russian",
+   "entity_type": "NORP",
+   "role": "SUBJECT",
+   "actor_role": "actor"
+  },
+  {
+   "canonical_name": "Moscow",
+   "entity_type": "GPE",
+   "role": "SUBJECT",
+   "actor_role": "actor"
+  },
+  {
+   "canonical_name": "Russa",
+   "entity_type": "GPE",
+   "role": "LOCATION",
+   "actor_role": "actor"
+  },
+  {
+   "canonical_name": "Mosca",
+   "entity_type": "GPE",
+   "role": "LOCATION",
+   "actor_role": "actor"
+  }
+ ],
+ "4_top20_actor_keys_items_with_key": [
+  [
+   "russia",
+   1675
+  ],
+  [
+   "ukraine",
+   1431
+  ],
+  [
+   "united states",
+   1007
+  ],
+  [
+   "china",
+   524
+  ],
+  [
+   "shenzhen",
+   183
+  ],
+  [
+   "european union",
+   100
+  ],
+  [
+   "european",
+   94
+  ],
+  [
+   "abu dhabi",
+   86
+  ],
+  [
+   "france",
+   84
+  ],
+  [
+   "nato",
+   76
+  ],
+  [
+   "oleshky",
+   70
+  ],
+  [
+   "starlink",
+   61
+  ],
+  [
+   "iran",
+   59
+  ],
+  [
+   "united kingdom",
+   46
+  ],
+  [
+   "crimea",
+   46
+  ],
+  [
+   "united nations",
+   41
+  ],
+  [
+   "steve witkoff",
+   41
+  ],
+  [
+   "asean",
+   39
+  ],
+  [
+   "finland",
+   38
+  ],
+  [
+   "libya",
+   38
+  ]
+ ],
+ "4_items_with_no_actor_key": 20,
+ "5_stored_location": {
+  "location_name": "Україна",
+  "lat": 49.4871968,
+  "lon": 31.2718321
+ },
+ "5_top20_specific_places_items_with_place": [
+  [
+   "shenzhen",
+   183
+  ],
+  [
+   "apec",
+   152
+  ],
+  [
+   "europe",
+   120
+  ],
+  [
+   "abu dhabi",
+   86
+  ],
+  [
+   "oleshky",
+   70
+  ],
+  [
+   "crimea",
+   46
+  ],
+  [
+   "asia",
+   33
+  ],
+  [
+   "donbas",
+   30
+  ],
+  [
+   "crimean bridge",
+   29
+  ],
+  [
+   "dublin",
+   27
+  ],
+  [
+   "starshield",
+   26
+  ],
+  [
+   "manila",
+   25
+  ],
+  [
+   "berlin",
+   22
+  ],
+  [
+   "st petersburg",
+   19
+  ],
+  [
+   "kharkiv",
+   17
+  ],
+  [
+   "paris",
+   16
+  ],
+  [
+   "baltic sea",
+   15
+  ],
+  [
+   "zaporizhzhia",
+   13
+  ],
+  [
+   "kherson",
+   12
+  ],
+  [
+   "oslo",
+   12
+  ]
+ ],
+ "5_items_with_no_specific_place": 1332,
+ "5_top20_all_location_keys": [
+  [
+   "russia",
+   1241
+  ],
+  [
+   "ukraine",
+   1210
+  ],
+  [
+   "united states",
+   563
+  ],
+  [
+   "china",
+   325
+  ],
+  [
+   "kyiv",
+   250
+  ],
+  [
+   "shenzhen",
+   183
+  ],
+  [
+   "apec",
+   152
+  ],
+  [
+   "moscow",
+   138
+  ],
+  [
+   "europe",
+   120
+  ],
+  [
+   "abu dhabi",
+   86
+  ],
+  [
+   "france",
+   83
+  ],
+  [
+   "washington",
+   71
+  ],
+  [
+   "oleshky",
+   70
+  ],
+  [
+   "iran",
+   49
+  ],
+  [
+   "crimea",
+   46
+  ],
+  [
+   "ucrania",
+   45
+  ],
+  [
+   "rusia",
+   44
+  ],
+  [
+   "united kingdom",
+   38
+  ],
+  [
+   "finland",
+   38
+  ],
+  [
+   "libya",
+   38
+  ]
+ ],
+ "5_distinct_specific_places": 327,
+ "6_segment_items_built": 2344,
+ "6_segment_items_seconds": 93.2,
+ "6_pairs_evaluated": 2745996,
+ "6_pair_seconds": 7.7,
+ "6_compatible_pairs": 21784,
+ "6_components": {
+  "n_components": 1,
+  "sizes_top30": [
+   2344
+  ],
+  "singletons": 0,
+  "components_size_ge2": 1,
+  "size_histogram": {
+   "2344": 1
+  },
+  "items_not_scored": 0
+ },
+ "6_compatible_degree": {
+  "q0": 1.0,
+  "q5": 1.0,
+  "q25": 5.0,
+  "q50": 12.0,
+  "q75": 25.0,
+  "q95": 61.0,
+  "q100": 168.0
+ },
+ "7_examples": [
+  {
+   "component_rank": 1,
+   "size": 2344,
+   "published_span": [
+    "2026-10-11 14:47:00",
+    "2026-11-23 09:31:52"
+   ],
+   "headlines_evenly_spaced_by_date": [
+    {
+     "id": 8440,
+     "published_at": "2026-10-11 14:47:00",
+     "source": "DW World",
+     "title": "Trump claims Russia and Ukraine agreed to 'energy ceasefire'"
+    },
+    {
+     "id": 15360,
+     "published_at": "2026-10-18 21:16:49",
+     "source": "GDELT",
+     "title": "Russias war on Ukraine must be brought to an end, Zelenskyy says – The Frontier Post"
+    },
+    {
+     "id": 27164,
+     "published_at": "2026-11-01 11:44:46",
+     "source": "Kyiv Independent",
+     "title": "Russian attacks kill 1, injure 47 over past day, leaving hundreds of thousands without electricity"
+    },
+    {
+     "id": 39506,
+     "published_at": "2026-11-11 10:47:30",
+     "source": "GDELT",
+     "title": "Ukraines army receives over 1.5 mln drones and other assets through DOT-Chain Defence"
+    },
+    {
+     "id": 46590,
+     "published_at": "2026-11-15 16:46:51",
+     "source": "GDELT",
+     "title": "Nizhnekamskneftekhim fire follows Nov. 15 drone attack in Nizhnekamsk"
+    },
+    {
+     "id": 51230,
+     "published_at": "2026-11-18 11:07:30",
+     "source": "South China Morning Post",
+     "title": "Takaichi makes low-key arrival in Shenzhen after Lee is greeted by dancers"
+    },
+    {
+     "id": 53617,
+     "published_at": "2026-11-19 19:40:50",
+     "source": "Kyiv Independent",
+     "title": "Ukraine war latest: Russian drones kill 1, damage 2 European embassies, cathedral in hours-long drone raid on Kyiv"
+    },
+    {
+     "id": 58831,
+     "published_at": "2026-11-23 09:31:52",
+     "source": "GDELT",
+     "title": "Ukraine claims it sank Russian warship off Libya as UN urges probe"
+    }
+   ]
+  }
+ ],
+ "7_component_top_actor_keys_and_places": [
+  {
+   "component_rank": 1,
+   "actors": [
+    [
+     "russia",
+     1675
+    ],
+    [
+     "ukraine",
+     1431
+    ],
+    [
+     "united states",
+     1007
+    ],
+    [
+     "china",
+     524
+    ],
+    [
+     "shenzhen",
+     183
+    ],
+    [
+     "european union",
+     100
+    ]
+   ],
+   "places": [
+    [
+     "shenzhen",
+     183
+    ],
+    [
+     "apec",
+     152
+    ],
+    [
+     "europe",
+     120
+    ],
+    [
+     "abu dhabi",
+     86
+    ],
+    [
+     "oleshky",
+     70
+    ],
+    [
+     "crimea",
+     46
+    ]
+   ]
+  }
+ ],
+ "8_first_batch": {
+  "run": "c6b440e9ca14460fa78d72919f94a15f",
+  "items": 7,
+  "added_at": "2026-10-13 07:47:02.941159",
+  "titles": [
+   "Six Ukrainian energy sites hit by Russia since Trump announced ceasefire, Zelensky says",
+   "Trump claims Russia and Ukraine agreed to 'energy ceasefire'",
+   "'Increasingly evident' Russia won't accept 'energy ceasefire': Zelensky",
+   "Trump insists energy ceasefire holds as Ukraine reports new Russian strikes",
+   "Russia and Ukraine trade strikes amid doubt over ‘energy ceasefire’",
+   "Trump says Ukraine, Russia agree to energy strike ceasefire 'because I said they agreed'",
+   "'We have one refinery' — Zelensky says energy ceasefire must cover power grid, not just oil, as Russia strikes energy facilities across Ukraine"
+  ]
+ },
+ "8_items_after_first_batch": 2337,
+ "8_attach_summary": {
+  "compat_link_to_>=1_earlier_member": 2333,
+  "compat_link_to_0_earlier_members": 4,
+  "compat_link_to_exactly_1_earlier_member": 455,
+  "compat_link_to_>=5_earlier_members": 1257,
+  "n_compat_prior_quantiles": {
+   "q0": 0.0,
+   "q5": 1.0,
+   "q25": 2.0,
+   "q50": 5.0,
+   "q75": 12.0,
+   "q95": 31.0,
+   "q100": 102.0
+  },
+  "best_link_cosine_quantiles": {
+   "q0": 0.5301,
+   "q5": 0.5435,
+   "q25": 0.5948,
+   "q50": 0.6581,
+   "q75": 0.7351,
+   "q95": 0.8266,
+   "q100": 0.9973
+  },
+  "best_link_gap_hours_quantiles": {
+   "q0": 0.0122,
+   "q5": 0.7747,
+   "q25": 4.5847,
+   "q50": 14.9411,
+   "q75": 33.3661,
+   "q95": 61.9883,
+   "q100": 71.9642
+  },
+  "max_cos_to_any_earlier_member_quantiles": {
+   "q0": 0.5168,
+   "q5": 0.5922,
+   "q25": 0.6818,
+   "q50": 0.7436,
+   "q75": 0.7994,
+   "q95": 0.8493,
+   "q100": 0.9973
+  },
+  "cos_to_seed_centroid_quantiles": {
+   "q0": -0.1055,
+   "q5": 0.1175,
+   "q25": 0.2936,
+   "q50": 0.3997,
+   "q75": 0.4924,
+   "q95": 0.5994,
+   "q100": 0.8426
+  },
+  "cos_to_earlier_centroid_quantiles": {
+   "q0": 0.0204,
+   "q5": 0.2401,
+   "q25": 0.4658,
+   "q50": 0.5778,
+   "q75": 0.6575,
+   "q95": 0.7433,
+   "q100": 0.882
+  },
+  "max_cos_to_any_seed_item_quantiles": {
+   "q0": -0.0256,
+   "q5": 0.167,
+   "q25": 0.3298,
+   "q50": 0.4342,
+   "q75": 0.5203,
+   "q95": 0.6242,
+   "q100": 0.8603
+  },
+  "cos_seed_centroid_below_MEMBER_SIMILARITY_0.45": 1484,
+  "cos_seed_centroid_below_LINK_SIMILARITY_0.53": 1984,
+  "max_cos_seed_below_0.53": 1811,
+  "compat_linked_to_a_seed_item": 57,
+  "constants": {
+   "LINK_SIMILARITY": 0.53,
+   "MEMBER_SIMILARITY": 0.45,
+   "MAX_LINK_HOURS": 72
+  }
+ },
+ "8_by_added_week": {
+  "2026-W42": {
+   "items": 331,
+   "median_cos_seed_centroid": 0.454,
+   "median_best_link_cos": 0.667,
+   "share_compat_link_to_seed": 0.172,
+   "median_n_compat_prior": 6
+  },
+  "2026-W43": {
+   "items": 238,
+   "median_cos_seed_centroid": 0.487,
+   "median_best_link_cos": 0.646,
+   "share_compat_link_to_seed": 0.0,
+   "median_n_compat_prior": 7.0
+  },
+  "2026-W44": {
+   "items": 93,
+   "median_cos_seed_centroid": 0.445,
+   "median_best_link_cos": 0.651,
+   "share_compat_link_to_seed": 0.0,
+   "median_n_compat_prior": 3
+  },
+  "2026-W45": {
+   "items": 191,
+   "median_cos_seed_centroid": 0.445,
+   "median_best_link_cos": 0.684,
+   "share_compat_link_to_seed": 0.0,
+   "median_n_compat_prior": 5
+  },
+  "2026-W46": {
+   "items": 474,
+   "median_cos_seed_centroid": 0.413,
+   "median_best_link_cos": 0.644,
+   "share_compat_link_to_seed": 0.0,
+   "median_n_compat_prior": 4.0
+  },
+  "2026-W47": {
+   "items": 977,
+   "median_cos_seed_centroid": 0.328,
+   "median_best_link_cos": 0.662,
+   "share_compat_link_to_seed": 0.0,
+   "median_n_compat_prior": 6
+  },
+  "2026-W48": {
+   "items": 33,
+   "median_cos_seed_centroid": 0.316,
+   "median_best_link_cos": 0.656,
+   "share_compat_link_to_seed": 0.0,
+   "median_n_compat_prior": 8
+  }
+ },
+ "8_chain_depth_via_best_linked_earlier_member": {
+  "max": 51,
+  "quantiles": {
+   "q0": 0.0,
+   "q5": 4.0,
+   "q25": 15.0,
+   "q50": 31.0,
+   "q75": 41.0,
+   "q95": 46.0,
+   "q100": 51.0
+  },
+  "depth0_including_unlinked": 11,
+  "histogram": {
+   "0": 11,
+   "1": 21,
+   "2": 23,
+   "3": 42,
+   "4": 61,
+   "5": 81,
+   "6": 73,
+   "7": 55,
+   "8": 47,
+   "9": 42,
+   "10": 25,
+   "11": 18,
+   "12": 25,
+   "13": 18,
+   "14": 27,
+   "15": 22,
+   "16": 27,
+   "17": 13,
+   "18": 31,
+   "19": 43,
+   "20": 35,
+   "21": 63,
+   "22": 49,
+   "23": 35,
+   "24": 29,
+   "25": 25,
+   "26": 19,
+   "27": 28,
+   "28": 34,
+   "29": 54,
+   "30": 52,
+   "31": 65,
+   "32": 71,
+   "33": 90,
+   "34": 70,
+   "35": 67,
+   "36": 44,
+   "37": 53,
+   "38": 59,
+   "39": 55,
+   "40": 40,
+   "41": 38,
+   "42": 67,
+   "43": 141,
+   "44": 109,
+   "45": 112,
+   "46": 59,
+   "47": 33,
+   "48": 23,
+   "49": 8,
+   "50": 9,
+   "51": 3
+  }
+ },
+ "8_centroid_drift_chunks_of_200_by_added_order": {
+  "cos_each_chunk_centroid_to_first_chunk": [
+   1.0,
+   0.96,
+   0.894,
+   0.854,
+   0.884,
+   0.842,
+   0.817,
+   0.779,
+   0.599,
+   0.597,
+   0.823,
+   0.811
+  ],
+  "cos_each_chunk_centroid_to_previous_chunk": [
+   0.96,
+   0.938,
+   0.928,
+   0.893,
+   0.957,
+   0.942,
+   0.942,
+   0.917,
+   0.972,
+   0.901,
+   0.804
+  ]
+ },
+ "8_all_pairs_cosine": {
+  "quantiles": {
+   "q0": -0.2305,
+   "q5": 0.0431,
+   "q25": 0.1871,
+   "q50": 0.3041,
+   "q75": 0.4163,
+   "q95": 0.5643,
+   "q100": 0.9973
+  },
+  "share_ge_0.53": 0.0793,
+  "share_ge_0.45": 0.1875
+ },
+ "8_cos_to_overall_centroid": {
+  "quantiles": {
+   "q0": 0.0235,
+   "q5": 0.2889,
+   "q25": 0.4752,
+   "q50": 0.5713,
+   "q75": 0.6467,
+   "q95": 0.7398,
+   "q100": 0.8318
+  },
+  "below_0.45": 474
+ },
+ "8_compat_edges_same_source_share": 0.0011,
+ "8_batches": {
+  "runs": 1358,
+  "runs_with_1_item": 819,
+  "runs_with_gt1_items": 539
+ },
+ "8_largest_component_graph": {
+  "nodes": 2344,
+  "edges": 21784,
+  "articulation_points": 146,
+  "diameter": 25,
+  "avg_shortest_path": 7.78
+ }
+}
