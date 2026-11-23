@@ -306,3 +306,27 @@ That's 76 Developments detached in total.
 Today's grouper is the v1 rule known to over-admit. **Recommendation: (a) detach only.** Re-placement waits for v2.
 Reversible from the verified backup that `--apply` writes first. No new evaluation needed; post-repair integrity
 checks apply.
+
+---
+
+## Owner rulings, 2026-11-23 (second round)
+
+- **Gold split:** 40 / 60 development / acceptance, fixed seed 20261126, stratified; frozen at 0 labels
+  (`eval/upstream-gold-20261123` `5813379`).
+- **Principal convention (institutions):** a state institution supports the state only when it participates in the
+  event predicate ("UK court convicts / sentences X" = institutional evidence). A nationality adjective
+  ("British comedian") or a mere location descriptor does not. An official institution or minister **speaking in an
+  official capacity** is a principal of the **statement** event; attribution ("…, Downing Street says") does not make
+  the state a principal of the **underlying** event. To be encoded in the topic/role spec at its next amendment.
+- **`russell-brand-united-kingdom`: KEEP** (UK courts acting in conviction / sentencing).
+- **`united-kingdom-united-states`: KEEP** (valid actor identity; mixed subject matter is a grouping / replay question).
+- **`china-iran-united-states`: KEEP** (ruled earlier; D1270 is a grouping question).
+- **Burnham:** `Andy Burnham → United Kingdom` added to `represents` (`fix/actors-burnham` `4ffee11`, not deployed).
+  Dry run: `andy-burnham-european-union-united-kingdom` becomes invalid (actors collapse to EU, UK; 3 Developments);
+  **write pending owner review**.
+- **Name-variant Situations: RETIRED** (allow-list; see the repair record).
+- **Component evidence:** versioned JSONL under evaluations (`eval/report-component-partition` `7fb2cbb`); no
+  production schema change until something consumes it; the V4 condition is derived at read time, never stored.
+- **D398:** the Development-identity track is opened; diagnose chaining and candidate guards only, with no size, age
+  or centroid rule implemented without evaluation and another owner call.
+- **Multilingual model on the VM:** deferred until labels are complete and the model build needs it.
