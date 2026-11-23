@@ -44,3 +44,6 @@ Thumbs.db
 # Models (large binary downloads)
 *.bin
 *.onnx
+
+# model package tarballs (built by deploy/multilingual-model/build_tarball.py)
+data/model-packages/

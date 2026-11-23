@@ -1,0 +1,21 @@
+# Lock fragment for the production VM (Python 3.14.3, /opt/osint/venv). NOTHING here is to be installed.
+# Pins = versions reported on the VM by the parent 2026-11-23. The laptop .venv has IDENTICAL versions for all of
+# these (compared 2026-11-23), so the laptop reproducibility run is a like-for-like reference.
+torch==2.14.0+cpu            # laptop metadata reports 2.14.0 (same release; local build tag not shown)
+sentence-transformers==6.1.0
+transformers==5.17.0
+tokenizers==0.23.2
+huggingface-hub==1.33.0
+numpy==2.5.3
+safetensors==0.8.0
+spacy==3.8.16
+scipy==1.18.1
+# spaCy models: SPEC.md s7 (origin/design/event-topic-model) names en_core_web_lg, es_core_news_md, it_core_news_md
+# as "already deployed". Laptop has 3.8.0 of each (compatible with spacy 3.8.x). VM model versions were NOT supplied:
+# VERIFY on the VM (importlib.metadata) before relying on it. No new spaCy model is implied by the spec; other
+# languages abstain with LANGUAGE_UNSUPPORTED.
+# en_core_web_lg==3.8.0 ; es_core_news_md==3.8.0 ; it_core_news_md==3.8.0   (verify-only, not new)
+#
+# MISSING on VM: scikit-learn (laptop has 1.9.1). No code in osint_monitor imports sklearn today and the spec does not
+# name it; if the topic-model implementation needs it, that is a separate owner-approved install.
+# Nothing else is missing: no psutil (footprint.py is stdlib-only), no sentencepiece (tokenizer.json is used).
