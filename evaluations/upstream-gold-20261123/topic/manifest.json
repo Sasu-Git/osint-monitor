@@ -1,0 +1,615 @@
+{
+ "snapshot": "gold-snap.db",
+ "snapshot_sha256": "7463859a4f3537eb29447a755f252dbebc80cc01a1d855739c57b10489964c3c",
+ "first_id": 1342,
+ "eligibility": "id > 1341; not in situation-membership key.json or iter3 manifest; >= 1 report headline (headline_kind == report); dominant language = most common item_language(source, title)",
+ "frame": {
+  "frame_developments_id_gt_1341": 839,
+  "excluded_by_key_or_manifest": 0,
+  "excluded_no_report_headline": 0,
+  "eligible": 839,
+  "eligible_by_language": {
+   "en": 684,
+   "es": 106,
+   "it": 49
+  },
+  "eligible_unknown_by_language": {
+   "en": 280,
+   "es": 93,
+   "it": 42
+  },
+  "eligible_strike_by_language": {
+   "en": 102,
+   "es": 18,
+   "it": 9
+  }
+ },
+ "shortfalls": [
+  {
+   "sample": "A",
+   "stratum": "es/typed",
+   "wanted": 20,
+   "available": 13
+  },
+  {
+   "sample": "A",
+   "stratum": "it/typed",
+   "wanted": 20,
+   "available": 7
+  },
+  {
+   "sample": "B",
+   "stratum": "es/strike",
+   "wanted": 14,
+   "available": 10
+  },
+  {
+   "sample": "B",
+   "stratum": "it/strike",
+   "wanted": 14,
+   "available": 1
+  }
+ ],
+ "sample": "A topic/event",
+ "seed": 20261123,
+ "target": {
+  "en": 70,
+  "es": 40,
+  "it": 40
+ },
+ "strata": {
+  "en/unknown": {
+   "wanted": 35,
+   "pool": 280,
+   "drawn": 35
+  },
+  "en/typed": {
+   "wanted": 35,
+   "pool": 404,
+   "drawn": 35
+  },
+  "es/unknown": {
+   "wanted": 20,
+   "pool": 93,
+   "drawn": 20
+  },
+  "es/typed": {
+   "wanted": 20,
+   "pool": 13,
+   "drawn": 13
+  },
+  "it/unknown": {
+   "wanted": 20,
+   "pool": 42,
+   "drawn": 20
+  },
+  "it/typed": {
+   "wanted": 20,
+   "pool": 7,
+   "drawn": 7
+  }
+ },
+ "unknown_definition": "stored event_type NULL, '' or 'unknown'; every other value (incl. 'other') is typed",
+ "cases": [
+  {
+   "development_id": 1388,
+   "stratum": "en/unknown"
+  },
+  {
+   "development_id": 1405,
+   "stratum": "en/unknown"
+  },
+  {
+   "development_id": 1417,
+   "stratum": "en/unknown"
+  },
+  {
+   "development_id": 1418,
+   "stratum": "en/unknown"
+  },
+  {
+   "development_id": 1426,
+   "stratum": "en/unknown"
+  },
+  {
+   "development_id": 1440,
+   "stratum": "en/unknown"
+  },
+  {
+   "development_id": 1461,
+   "stratum": "en/unknown"
+  },
+  {
+   "development_id": 1477,
+   "stratum": "en/unknown"
+  },
+  {
+   "development_id": 1496,
+   "stratum": "en/unknown"
+  },
+  {
+   "development_id": 1507,
+   "stratum": "en/unknown"
+  },
+  {
+   "development_id": 1518,
+   "stratum": "en/unknown"
+  },
+  {
+   "development_id": 1567,
+   "stratum": "en/unknown"
+  },
+  {
+   "development_id": 1589,
+   "stratum": "en/unknown"
+  },
+  {
+   "development_id": 1596,
+   "stratum": "en/unknown"
+  },
+  {
+   "development_id": 1604,
+   "stratum": "en/unknown"
+  },
+  {
+   "development_id": 1665,
+   "stratum": "en/unknown"
+  },
+  {
+   "development_id": 1729,
+   "stratum": "en/unknown"
+  },
+  {
+   "development_id": 1737,
+   "stratum": "en/unknown"
+  },
+  {
+   "development_id": 1796,
+   "stratum": "en/unknown"
+  },
+  {
+   "development_id": 1813,
+   "stratum": "en/unknown"
+  },
+  {
+   "development_id": 1849,
+   "stratum": "en/unknown"
+  },
+  {
+   "development_id": 1898,
+   "stratum": "en/unknown"
+  },
+  {
+   "development_id": 1916,
+   "stratum": "en/unknown"
+  },
+  {
+   "development_id": 1928,
+   "stratum": "en/unknown"
+  },
+  {
+   "development_id": 1934,
+   "stratum": "en/unknown"
+  },
+  {
+   "development_id": 1958,
+   "stratum": "en/unknown"
+  },
+  {
+   "development_id": 1962,
+   "stratum": "en/unknown"
+  },
+  {
+   "development_id": 1972,
+   "stratum": "en/unknown"
+  },
+  {
+   "development_id": 1986,
+   "stratum": "en/unknown"
+  },
+  {
+   "development_id": 2053,
+   "stratum": "en/unknown"
+  },
+  {
+   "development_id": 2059,
+   "stratum": "en/unknown"
+  },
+  {
+   "development_id": 2070,
+   "stratum": "en/unknown"
+  },
+  {
+   "development_id": 2091,
+   "stratum": "en/unknown"
+  },
+  {
+   "development_id": 2139,
+   "stratum": "en/unknown"
+  },
+  {
+   "development_id": 2167,
+   "stratum": "en/unknown"
+  },
+  {
+   "development_id": 1354,
+   "stratum": "en/typed"
+  },
+  {
+   "development_id": 1395,
+   "stratum": "en/typed"
+  },
+  {
+   "development_id": 1468,
+   "stratum": "en/typed"
+  },
+  {
+   "development_id": 1544,
+   "stratum": "en/typed"
+  },
+  {
+   "development_id": 1548,
+   "stratum": "en/typed"
+  },
+  {
+   "development_id": 1581,
+   "stratum": "en/typed"
+  },
+  {
+   "development_id": 1626,
+   "stratum": "en/typed"
+  },
+  {
+   "development_id": 1629,
+   "stratum": "en/typed"
+  },
+  {
+   "development_id": 1666,
+   "stratum": "en/typed"
+  },
+  {
+   "development_id": 1672,
+   "stratum": "en/typed"
+  },
+  {
+   "development_id": 1691,
+   "stratum": "en/typed"
+  },
+  {
+   "development_id": 1752,
+   "stratum": "en/typed"
+  },
+  {
+   "development_id": 1790,
+   "stratum": "en/typed"
+  },
+  {
+   "development_id": 1816,
+   "stratum": "en/typed"
+  },
+  {
+   "development_id": 1831,
+   "stratum": "en/typed"
+  },
+  {
+   "development_id": 1834,
+   "stratum": "en/typed"
+  },
+  {
+   "development_id": 1865,
+   "stratum": "en/typed"
+  },
+  {
+   "development_id": 1870,
+   "stratum": "en/typed"
+  },
+  {
+   "development_id": 1875,
+   "stratum": "en/typed"
+  },
+  {
+   "development_id": 1880,
+   "stratum": "en/typed"
+  },
+  {
+   "development_id": 1901,
+   "stratum": "en/typed"
+  },
+  {
+   "development_id": 1907,
+   "stratum": "en/typed"
+  },
+  {
+   "development_id": 1927,
+   "stratum": "en/typed"
+  },
+  {
+   "development_id": 1995,
+   "stratum": "en/typed"
+  },
+  {
+   "development_id": 1999,
+   "stratum": "en/typed"
+  },
+  {
+   "development_id": 2004,
+   "stratum": "en/typed"
+  },
+  {
+   "development_id": 2024,
+   "stratum": "en/typed"
+  },
+  {
+   "development_id": 2030,
+   "stratum": "en/typed"
+  },
+  {
+   "development_id": 2033,
+   "stratum": "en/typed"
+  },
+  {
+   "development_id": 2035,
+   "stratum": "en/typed"
+  },
+  {
+   "development_id": 2054,
+   "stratum": "en/typed"
+  },
+  {
+   "development_id": 2055,
+   "stratum": "en/typed"
+  },
+  {
+   "development_id": 2068,
+   "stratum": "en/typed"
+  },
+  {
+   "development_id": 2098,
+   "stratum": "en/typed"
+  },
+  {
+   "development_id": 2140,
+   "stratum": "en/typed"
+  },
+  {
+   "development_id": 1406,
+   "stratum": "es/unknown"
+  },
+  {
+   "development_id": 1519,
+   "stratum": "es/unknown"
+  },
+  {
+   "development_id": 1527,
+   "stratum": "es/unknown"
+  },
+  {
+   "development_id": 1641,
+   "stratum": "es/unknown"
+  },
+  {
+   "development_id": 1648,
+   "stratum": "es/unknown"
+  },
+  {
+   "development_id": 1741,
+   "stratum": "es/unknown"
+  },
+  {
+   "development_id": 1747,
+   "stratum": "es/unknown"
+  },
+  {
+   "development_id": 1761,
+   "stratum": "es/unknown"
+  },
+  {
+   "development_id": 1775,
+   "stratum": "es/unknown"
+  },
+  {
+   "development_id": 1810,
+   "stratum": "es/unknown"
+  },
+  {
+   "development_id": 1836,
+   "stratum": "es/unknown"
+  },
+  {
+   "development_id": 1915,
+   "stratum": "es/unknown"
+  },
+  {
+   "development_id": 1921,
+   "stratum": "es/unknown"
+  },
+  {
+   "development_id": 2043,
+   "stratum": "es/unknown"
+  },
+  {
+   "development_id": 2049,
+   "stratum": "es/unknown"
+  },
+  {
+   "development_id": 2129,
+   "stratum": "es/unknown"
+  },
+  {
+   "development_id": 2153,
+   "stratum": "es/unknown"
+  },
+  {
+   "development_id": 2161,
+   "stratum": "es/unknown"
+  },
+  {
+   "development_id": 2172,
+   "stratum": "es/unknown"
+  },
+  {
+   "development_id": 2173,
+   "stratum": "es/unknown"
+  },
+  {
+   "development_id": 1375,
+   "stratum": "es/typed"
+  },
+  {
+   "development_id": 1385,
+   "stratum": "es/typed"
+  },
+  {
+   "development_id": 1414,
+   "stratum": "es/typed"
+  },
+  {
+   "development_id": 1480,
+   "stratum": "es/typed"
+  },
+  {
+   "development_id": 1511,
+   "stratum": "es/typed"
+  },
+  {
+   "development_id": 1541,
+   "stratum": "es/typed"
+  },
+  {
+   "development_id": 1757,
+   "stratum": "es/typed"
+  },
+  {
+   "development_id": 1807,
+   "stratum": "es/typed"
+  },
+  {
+   "development_id": 1828,
+   "stratum": "es/typed"
+  },
+  {
+   "development_id": 1897,
+   "stratum": "es/typed"
+  },
+  {
+   "development_id": 1987,
+   "stratum": "es/typed"
+  },
+  {
+   "development_id": 2069,
+   "stratum": "es/typed"
+  },
+  {
+   "development_id": 2124,
+   "stratum": "es/typed"
+  },
+  {
+   "development_id": 1404,
+   "stratum": "it/unknown"
+  },
+  {
+   "development_id": 1431,
+   "stratum": "it/unknown"
+  },
+  {
+   "development_id": 1433,
+   "stratum": "it/unknown"
+  },
+  {
+   "development_id": 1463,
+   "stratum": "it/unknown"
+  },
+  {
+   "development_id": 1513,
+   "stratum": "it/unknown"
+  },
+  {
+   "development_id": 1517,
+   "stratum": "it/unknown"
+  },
+  {
+   "development_id": 1524,
+   "stratum": "it/unknown"
+  },
+  {
+   "development_id": 1540,
+   "stratum": "it/unknown"
+  },
+  {
+   "development_id": 1621,
+   "stratum": "it/unknown"
+  },
+  {
+   "development_id": 1660,
+   "stratum": "it/unknown"
+  },
+  {
+   "development_id": 1662,
+   "stratum": "it/unknown"
+  },
+  {
+   "development_id": 1767,
+   "stratum": "it/unknown"
+  },
+  {
+   "development_id": 1832,
+   "stratum": "it/unknown"
+  },
+  {
+   "development_id": 1886,
+   "stratum": "it/unknown"
+  },
+  {
+   "development_id": 1920,
+   "stratum": "it/unknown"
+  },
+  {
+   "development_id": 1952,
+   "stratum": "it/unknown"
+  },
+  {
+   "development_id": 1978,
+   "stratum": "it/unknown"
+  },
+  {
+   "development_id": 2088,
+   "stratum": "it/unknown"
+  },
+  {
+   "development_id": 2135,
+   "stratum": "it/unknown"
+  },
+  {
+   "development_id": 2163,
+   "stratum": "it/unknown"
+  },
+  {
+   "development_id": 1434,
+   "stratum": "it/typed"
+  },
+  {
+   "development_id": 1492,
+   "stratum": "it/typed"
+  },
+  {
+   "development_id": 1564,
+   "stratum": "it/typed"
+  },
+  {
+   "development_id": 1789,
+   "stratum": "it/typed"
+  },
+  {
+   "development_id": 1835,
+   "stratum": "it/typed"
+  },
+  {
+   "development_id": 2052,
+   "stratum": "it/typed"
+  },
+  {
+   "development_id": 2105,
+   "stratum": "it/typed"
+  }
+ ]
+}

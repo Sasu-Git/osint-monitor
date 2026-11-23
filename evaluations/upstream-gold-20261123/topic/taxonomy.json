@@ -1,0 +1,33 @@
+{
+ "source": "config/development_types.yaml @ origin/main b92acc6",
+ "action_types": [
+  "bilateral_meeting",
+  "multilateral_meeting",
+  "summit",
+  "negotiation",
+  "diplomatic_visit",
+  "agreement",
+  "treaty",
+  "sanctions",
+  "military_action",
+  "deployment",
+  "military_exercise",
+  "ceasefire",
+  "arms_transfer",
+  "security_incident",
+  "election",
+  "appointment",
+  "resignation",
+  "policy_change",
+  "economic_action",
+  "significant_statement",
+  "threat",
+  "warning",
+  "commentary",
+  "other"
+ ],
+ "extra": [
+  "out_of_scope",
+  "unknown"
+ ]
+}

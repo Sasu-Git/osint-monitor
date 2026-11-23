@@ -1,0 +1,819 @@
+{
+ "snapshot": "gold-snap.db",
+ "snapshot_sha256": "7463859a4f3537eb29447a755f252dbebc80cc01a1d855739c57b10489964c3c",
+ "first_id": 1342,
+ "eligibility": "id > 1341; not in situation-membership key.json or iter3 manifest; >= 1 report headline (headline_kind == report); dominant language = most common item_language(source, title)",
+ "frame": {
+  "frame_developments_id_gt_1341": 839,
+  "excluded_by_key_or_manifest": 0,
+  "excluded_no_report_headline": 0,
+  "eligible": 839,
+  "eligible_by_language": {
+   "en": 684,
+   "es": 106,
+   "it": 49
+  },
+  "eligible_unknown_by_language": {
+   "en": 280,
+   "es": 93,
+   "it": 42
+  },
+  "eligible_strike_by_language": {
+   "en": 102,
+   "es": 18,
+   "it": 9
+  }
+ },
+ "shortfalls": [
+  {
+   "sample": "A",
+   "stratum": "es/typed",
+   "wanted": 20,
+   "available": 13
+  },
+  {
+   "sample": "A",
+   "stratum": "it/typed",
+   "wanted": 20,
+   "available": 7
+  },
+  {
+   "sample": "B",
+   "stratum": "es/strike",
+   "wanted": 14,
+   "available": 10
+  },
+  {
+   "sample": "B",
+   "stratum": "it/strike",
+   "wanted": 14,
+   "available": 1
+  }
+ ],
+ "sample": "B location",
+ "seed": 20261124,
+ "role_subset_seed": 20261125,
+ "target": {
+  "en": 80,
+  "es": 35,
+  "it": 35
+ },
+ "strike_share": 0.4,
+ "strike_words": {
+  "en": "attack\\w*|strike\\w*|struck|airstrike\\w*|bomb\\w*|shell(?:ing|ed)|raid\\w*",
+  "es": "ataque\\w*|atac(?:a|an|ar|ó|aron|ando)|bombardeo\\w*|bombardea\\w*|bombardeó|bombardearon",
+  "it": "attacc\\w*|attacca\\w*|raid\\w*|bombardament\\w*|bombarda\\w*|colpisc\\w*|colpit\\w*"
+ },
+ "strata": {
+  "en/strike": {
+   "wanted": 32,
+   "pool": 94,
+   "drawn": 32
+  },
+  "en/random": {
+   "wanted": 48,
+   "pool": 582,
+   "drawn": 48
+  },
+  "es/strike": {
+   "wanted": 14,
+   "pool": 10,
+   "drawn": 10
+  },
+  "es/random": {
+   "wanted": 21,
+   "pool": 63,
+   "drawn": 21
+  },
+  "it/strike": {
+   "wanted": 14,
+   "pool": 1,
+   "drawn": 1
+  },
+  "it/random": {
+   "wanted": 21,
+   "pool": 21,
+   "drawn": 21
+  }
+ },
+ "disjoint_from": "topic/manifest.json",
+ "role_subset": [
+  1368,
+  1373,
+  1379,
+  1380,
+  1398,
+  1408,
+  1446,
+  1503,
+  1508,
+  1560,
+  1601,
+  1609,
+  1610,
+  1618,
+  1619,
+  1633,
+  1676,
+  1742,
+  1754,
+  1778,
+  1779,
+  1848,
+  1861,
+  1890,
+  1899,
+  1900,
+  1904,
+  1911,
+  1913,
+  1914,
+  1937,
+  1940,
+  1954,
+  1957,
+  1961,
+  1991,
+  2006,
+  2013,
+  2036,
+  2042,
+  2051,
+  2060,
+  2065,
+  2075,
+  2078,
+  2089,
+  2110,
+  2118,
+  2146,
+  2176
+ ],
+ "cases": [
+  {
+   "development_id": 1346,
+   "stratum": "en/strike",
+   "role_labels": false
+  },
+  {
+   "development_id": 1368,
+   "stratum": "en/strike",
+   "role_labels": true
+  },
+  {
+   "development_id": 1439,
+   "stratum": "en/strike",
+   "role_labels": false
+  },
+  {
+   "development_id": 1447,
+   "stratum": "en/strike",
+   "role_labels": false
+  },
+  {
+   "development_id": 1453,
+   "stratum": "en/strike",
+   "role_labels": false
+  },
+  {
+   "development_id": 1512,
+   "stratum": "en/strike",
+   "role_labels": false
+  },
+  {
+   "development_id": 1514,
+   "stratum": "en/strike",
+   "role_labels": false
+  },
+  {
+   "development_id": 1536,
+   "stratum": "en/strike",
+   "role_labels": false
+  },
+  {
+   "development_id": 1550,
+   "stratum": "en/strike",
+   "role_labels": false
+  },
+  {
+   "development_id": 1601,
+   "stratum": "en/strike",
+   "role_labels": true
+  },
+  {
+   "development_id": 1616,
+   "stratum": "en/strike",
+   "role_labels": false
+  },
+  {
+   "development_id": 1624,
+   "stratum": "en/strike",
+   "role_labels": false
+  },
+  {
+   "development_id": 1676,
+   "stratum": "en/strike",
+   "role_labels": true
+  },
+  {
+   "development_id": 1742,
+   "stratum": "en/strike",
+   "role_labels": true
+  },
+  {
+   "development_id": 1821,
+   "stratum": "en/strike",
+   "role_labels": false
+  },
+  {
+   "development_id": 1826,
+   "stratum": "en/strike",
+   "role_labels": false
+  },
+  {
+   "development_id": 1840,
+   "stratum": "en/strike",
+   "role_labels": false
+  },
+  {
+   "development_id": 1863,
+   "stratum": "en/strike",
+   "role_labels": false
+  },
+  {
+   "development_id": 1874,
+   "stratum": "en/strike",
+   "role_labels": false
+  },
+  {
+   "development_id": 1911,
+   "stratum": "en/strike",
+   "role_labels": true
+  },
+  {
+   "development_id": 1929,
+   "stratum": "en/strike",
+   "role_labels": false
+  },
+  {
+   "development_id": 1944,
+   "stratum": "en/strike",
+   "role_labels": false
+  },
+  {
+   "development_id": 1954,
+   "stratum": "en/strike",
+   "role_labels": true
+  },
+  {
+   "development_id": 1961,
+   "stratum": "en/strike",
+   "role_labels": true
+  },
+  {
+   "development_id": 1969,
+   "stratum": "en/strike",
+   "role_labels": false
+  },
+  {
+   "development_id": 1991,
+   "stratum": "en/strike",
+   "role_labels": true
+  },
+  {
+   "development_id": 2006,
+   "stratum": "en/strike",
+   "role_labels": true
+  },
+  {
+   "development_id": 2065,
+   "stratum": "en/strike",
+   "role_labels": true
+  },
+  {
+   "development_id": 2118,
+   "stratum": "en/strike",
+   "role_labels": true
+  },
+  {
+   "development_id": 2128,
+   "stratum": "en/strike",
+   "role_labels": false
+  },
+  {
+   "development_id": 2146,
+   "stratum": "en/strike",
+   "role_labels": true
+  },
+  {
+   "development_id": 2164,
+   "stratum": "en/strike",
+   "role_labels": false
+  },
+  {
+   "development_id": 1373,
+   "stratum": "en/random",
+   "role_labels": true
+  },
+  {
+   "development_id": 1378,
+   "stratum": "en/random",
+   "role_labels": false
+  },
+  {
+   "development_id": 1379,
+   "stratum": "en/random",
+   "role_labels": true
+  },
+  {
+   "development_id": 1382,
+   "stratum": "en/random",
+   "role_labels": false
+  },
+  {
+   "development_id": 1398,
+   "stratum": "en/random",
+   "role_labels": true
+  },
+  {
+   "development_id": 1450,
+   "stratum": "en/random",
+   "role_labels": false
+  },
+  {
+   "development_id": 1481,
+   "stratum": "en/random",
+   "role_labels": false
+  },
+  {
+   "development_id": 1495,
+   "stratum": "en/random",
+   "role_labels": false
+  },
+  {
+   "development_id": 1521,
+   "stratum": "en/random",
+   "role_labels": false
+  },
+  {
+   "development_id": 1545,
+   "stratum": "en/random",
+   "role_labels": false
+  },
+  {
+   "development_id": 1560,
+   "stratum": "en/random",
+   "role_labels": true
+  },
+  {
+   "development_id": 1578,
+   "stratum": "en/random",
+   "role_labels": false
+  },
+  {
+   "development_id": 1594,
+   "stratum": "en/random",
+   "role_labels": false
+  },
+  {
+   "development_id": 1609,
+   "stratum": "en/random",
+   "role_labels": true
+  },
+  {
+   "development_id": 1610,
+   "stratum": "en/random",
+   "role_labels": true
+  },
+  {
+   "development_id": 1618,
+   "stratum": "en/random",
+   "role_labels": true
+  },
+  {
+   "development_id": 1633,
+   "stratum": "en/random",
+   "role_labels": true
+  },
+  {
+   "development_id": 1639,
+   "stratum": "en/random",
+   "role_labels": false
+  },
+  {
+   "development_id": 1657,
+   "stratum": "en/random",
+   "role_labels": false
+  },
+  {
+   "development_id": 1700,
+   "stratum": "en/random",
+   "role_labels": false
+  },
+  {
+   "development_id": 1705,
+   "stratum": "en/random",
+   "role_labels": false
+  },
+  {
+   "development_id": 1710,
+   "stratum": "en/random",
+   "role_labels": false
+  },
+  {
+   "development_id": 1726,
+   "stratum": "en/random",
+   "role_labels": false
+  },
+  {
+   "development_id": 1754,
+   "stratum": "en/random",
+   "role_labels": true
+  },
+  {
+   "development_id": 1778,
+   "stratum": "en/random",
+   "role_labels": true
+  },
+  {
+   "development_id": 1785,
+   "stratum": "en/random",
+   "role_labels": false
+  },
+  {
+   "development_id": 1804,
+   "stratum": "en/random",
+   "role_labels": false
+  },
+  {
+   "development_id": 1853,
+   "stratum": "en/random",
+   "role_labels": false
+  },
+  {
+   "development_id": 1890,
+   "stratum": "en/random",
+   "role_labels": true
+  },
+  {
+   "development_id": 1904,
+   "stratum": "en/random",
+   "role_labels": true
+  },
+  {
+   "development_id": 1913,
+   "stratum": "en/random",
+   "role_labels": true
+  },
+  {
+   "development_id": 1914,
+   "stratum": "en/random",
+   "role_labels": true
+  },
+  {
+   "development_id": 1936,
+   "stratum": "en/random",
+   "role_labels": false
+  },
+  {
+   "development_id": 1942,
+   "stratum": "en/random",
+   "role_labels": false
+  },
+  {
+   "development_id": 1957,
+   "stratum": "en/random",
+   "role_labels": true
+  },
+  {
+   "development_id": 1964,
+   "stratum": "en/random",
+   "role_labels": false
+  },
+  {
+   "development_id": 2007,
+   "stratum": "en/random",
+   "role_labels": false
+  },
+  {
+   "development_id": 2013,
+   "stratum": "en/random",
+   "role_labels": true
+  },
+  {
+   "development_id": 2028,
+   "stratum": "en/random",
+   "role_labels": false
+  },
+  {
+   "development_id": 2036,
+   "stratum": "en/random",
+   "role_labels": true
+  },
+  {
+   "development_id": 2042,
+   "stratum": "en/random",
+   "role_labels": true
+  },
+  {
+   "development_id": 2047,
+   "stratum": "en/random",
+   "role_labels": false
+  },
+  {
+   "development_id": 2051,
+   "stratum": "en/random",
+   "role_labels": true
+  },
+  {
+   "development_id": 2075,
+   "stratum": "en/random",
+   "role_labels": true
+  },
+  {
+   "development_id": 2089,
+   "stratum": "en/random",
+   "role_labels": true
+  },
+  {
+   "development_id": 2092,
+   "stratum": "en/random",
+   "role_labels": false
+  },
+  {
+   "development_id": 2144,
+   "stratum": "en/random",
+   "role_labels": false
+  },
+  {
+   "development_id": 2160,
+   "stratum": "en/random",
+   "role_labels": false
+  },
+  {
+   "development_id": 1446,
+   "stratum": "es/strike",
+   "role_labels": true
+  },
+  {
+   "development_id": 1503,
+   "stratum": "es/strike",
+   "role_labels": true
+  },
+  {
+   "development_id": 1508,
+   "stratum": "es/strike",
+   "role_labels": true
+  },
+  {
+   "development_id": 1744,
+   "stratum": "es/strike",
+   "role_labels": false
+  },
+  {
+   "development_id": 1774,
+   "stratum": "es/strike",
+   "role_labels": false
+  },
+  {
+   "development_id": 1779,
+   "stratum": "es/strike",
+   "role_labels": true
+  },
+  {
+   "development_id": 1797,
+   "stratum": "es/strike",
+   "role_labels": false
+  },
+  {
+   "development_id": 1837,
+   "stratum": "es/strike",
+   "role_labels": false
+  },
+  {
+   "development_id": 1919,
+   "stratum": "es/strike",
+   "role_labels": false
+  },
+  {
+   "development_id": 1940,
+   "stratum": "es/strike",
+   "role_labels": true
+  },
+  {
+   "development_id": 1380,
+   "stratum": "es/random",
+   "role_labels": true
+  },
+  {
+   "development_id": 1392,
+   "stratum": "es/random",
+   "role_labels": false
+  },
+  {
+   "development_id": 1409,
+   "stratum": "es/random",
+   "role_labels": false
+  },
+  {
+   "development_id": 1437,
+   "stratum": "es/random",
+   "role_labels": false
+  },
+  {
+   "development_id": 1476,
+   "stratum": "es/random",
+   "role_labels": false
+  },
+  {
+   "development_id": 1572,
+   "stratum": "es/random",
+   "role_labels": false
+  },
+  {
+   "development_id": 1653,
+   "stratum": "es/random",
+   "role_labels": false
+  },
+  {
+   "development_id": 1675,
+   "stratum": "es/random",
+   "role_labels": false
+  },
+  {
+   "development_id": 1727,
+   "stratum": "es/random",
+   "role_labels": false
+  },
+  {
+   "development_id": 1764,
+   "stratum": "es/random",
+   "role_labels": false
+  },
+  {
+   "development_id": 1848,
+   "stratum": "es/random",
+   "role_labels": true
+  },
+  {
+   "development_id": 1900,
+   "stratum": "es/random",
+   "role_labels": true
+  },
+  {
+   "development_id": 1939,
+   "stratum": "es/random",
+   "role_labels": false
+  },
+  {
+   "development_id": 1974,
+   "stratum": "es/random",
+   "role_labels": false
+  },
+  {
+   "development_id": 2022,
+   "stratum": "es/random",
+   "role_labels": false
+  },
+  {
+   "development_id": 2060,
+   "stratum": "es/random",
+   "role_labels": true
+  },
+  {
+   "development_id": 2097,
+   "stratum": "es/random",
+   "role_labels": false
+  },
+  {
+   "development_id": 2110,
+   "stratum": "es/random",
+   "role_labels": true
+  },
+  {
+   "development_id": 2130,
+   "stratum": "es/random",
+   "role_labels": false
+  },
+  {
+   "development_id": 2156,
+   "stratum": "es/random",
+   "role_labels": false
+  },
+  {
+   "development_id": 2158,
+   "stratum": "es/random",
+   "role_labels": false
+  },
+  {
+   "development_id": 1740,
+   "stratum": "it/strike",
+   "role_labels": false
+  },
+  {
+   "development_id": 1345,
+   "stratum": "it/random",
+   "role_labels": false
+  },
+  {
+   "development_id": 1408,
+   "stratum": "it/random",
+   "role_labels": true
+  },
+  {
+   "development_id": 1445,
+   "stratum": "it/random",
+   "role_labels": false
+  },
+  {
+   "development_id": 1619,
+   "stratum": "it/random",
+   "role_labels": true
+  },
+  {
+   "development_id": 1645,
+   "stratum": "it/random",
+   "role_labels": false
+  },
+  {
+   "development_id": 1683,
+   "stratum": "it/random",
+   "role_labels": false
+  },
+  {
+   "development_id": 1759,
+   "stratum": "it/random",
+   "role_labels": false
+  },
+  {
+   "development_id": 1791,
+   "stratum": "it/random",
+   "role_labels": false
+  },
+  {
+   "development_id": 1844,
+   "stratum": "it/random",
+   "role_labels": false
+  },
+  {
+   "development_id": 1859,
+   "stratum": "it/random",
+   "role_labels": false
+  },
+  {
+   "development_id": 1861,
+   "stratum": "it/random",
+   "role_labels": true
+  },
+  {
+   "development_id": 1899,
+   "stratum": "it/random",
+   "role_labels": true
+  },
+  {
+   "development_id": 1905,
+   "stratum": "it/random",
+   "role_labels": false
+  },
+  {
+   "development_id": 1912,
+   "stratum": "it/random",
+   "role_labels": false
+  },
+  {
+   "development_id": 1937,
+   "stratum": "it/random",
+   "role_labels": true
+  },
+  {
+   "development_id": 2072,
+   "stratum": "it/random",
+   "role_labels": false
+  },
+  {
+   "development_id": 2078,
+   "stratum": "it/random",
+   "role_labels": true
+  },
+  {
+   "development_id": 2126,
+   "stratum": "it/random",
+   "role_labels": false
+  },
+  {
+   "development_id": 2157,
+   "stratum": "it/random",
+   "role_labels": false
+  },
+  {
+   "development_id": 2175,
+   "stratum": "it/random",
+   "role_labels": false
+  },
+  {
+   "development_id": 2176,
+   "stratum": "it/random",
+   "role_labels": true
+  }
+ ]
+}
