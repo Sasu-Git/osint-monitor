@@ -1,6 +1,6 @@
-# SPEC (draft 1, 2026-11-14): Development event representation — topic, action, intent and roles
+# SPEC (FROZEN 2026-11-23, owner rulings applied): Development event representation — topic, action, intent and roles
 
-**Status.** Draft for owner review. Nothing here is implemented. Items marked `OWNER DECISION REQUIRED` refer to
+**Status.** Frozen 2026-11-23 with the owner's P/T/L rulings (`docs/upstream/DECISIONS.md`). Nothing implemented yet. Changes after this point are dated amendments; amendments after the acceptance gold is frozen void that gold. Items marked APPROVED 2026-11-23 refer to
 `docs/upstream/DECISIONS.md` on `design/upstream-representation` (`b3ed3ef`); none is chosen silently. No new
 keyword rules are the primary answer to `unknown` (owner, 2026-11-11).
 
@@ -27,19 +27,19 @@ Per item, the same fields are produced first; §5 aggregates them to the Develop
 - **Agent:** grammatical or semantic doer of the main action in the headline clause (subject of an active verb;
   `by`-agent of a passive; possessor of an action noun: "Russia's strike").
 - **Target:** object of a coercive/military/legal action (direct object; `on/against` + action noun:
-  "sanctions on Iran"). Whether targets count as principals: P4 (`OWNER DECISION REQUIRED`).
+  "sanctions on Iran"). Whether targets count as principals: P4 (APPROVED 2026-11-23).
 - **Speaker:** subject of a reporting or statement verb (says, warns, claims, denies, dice, afferma, advierte).
   A warning is speech; the speaker is not an agent of the warned action.
 - **Counterpart:** the other party of a symmetric action (meeting, talks, agreement) — recorded as a second agent.
 - **Place names are never agents.** A place in agent position ("Gaza says", "Kyiv strikes") resolves through the
   existing `represents` table only where already configured (Kyiv → Ukraine, `ALREADY FROZEN`); new place-for-polity
-  readings (Gaza) are P3 (`OWNER DECISION REQUIRED`), recommended: never.
+  readings (Gaza) are P3 (APPROVED 2026-11-23): never.
 
 ## 3. Intent
 
 Intent comes from the clause's verb and modality markers (future, modal, conditional, "calls for", "threatens to",
 "plans to", "denies", "accused of"), in all three languages, from the dependency parse — not from topic keywords.
-Which intents yield an `action_type`: T2 (`OWNER DECISION REQUIRED`; recommended: type always, intent stored,
+Which intents yield an `action_type`: T2 (APPROVED 2026-11-23: type always, intent stored,
 `threatened` → `threat`, `called_for` → `significant_statement`).
 
 ## 4. Representatives and represented entities
@@ -50,15 +50,15 @@ Which intents yield an `action_type`: T2 (`OWNER DECISION REQUIRED`; recommended
   determined by role (agent/speaker) and the configured mapping; never inferred for unconfigured persons.
 - **Both are retained:** the record keeps the representative (Macron) and the represented entity (France) with the
   link `acts_for`.
-- **Support aggregation** across aliases and representatives: P2 (`OWNER DECISION REQUIRED`). Recommended (c):
+- **Support aggregation** across aliases and representatives: P2 (APPROVED 2026-11-23). Approved (c):
   the representative counts as itself; the state counts as a principal only with institutional evidence (named as
   state/government/army, or an institution acting) — so France next to Macron stays secondary, as the entity gold
   encodes. Name variants of one person always aggregate (already deployed, set-level).
-- **No new support threshold** is chosen here (P1, `OWNER DECISION REQUIRED`).
+- **No new support threshold** is chosen here (P1 APPROVED 2026-11-23).
 
 ## 5. Item → Development aggregation
 
-T5 (`OWNER DECISION REQUIRED`; recommended: confidence-weighted vote over report items only, analysis/rolling
+T5 (APPROVED 2026-11-23: confidence-weighted vote over report items only, analysis/rolling
 excluded, within the largest compatible component when the Development is mixed — M1/P5).
 `CONFLICTING_ITEMS` abstains when report items disagree on `action_type` with no majority.
 
@@ -66,7 +66,7 @@ excluded, within the largest compatible component when the Development is mixed 
 
 - Abstain rather than guess; a wrong type is worse than `unknown`.
 - `out_of_scope` (sport, markets, culture, crime, health, obituaries) is a positive class, not an abstention (T1).
-- Confidence classes and what downstream may consume: T3 (`OWNER DECISION REQUIRED`; recommended high + medium).
+- Confidence classes and what downstream may consume: T3 (APPROVED 2026-11-23: high + medium).
 
 ## 7. Multilingual behaviour
 
@@ -86,6 +86,6 @@ excluded, within the largest compatible component when the Development is mixed 
    oversampled; excludes the 126 Situation cases and the geolocation samples. Labels: `action_type`, `intent`, agent,
    target, speaker. Split: development (for confidence boundaries) / acceptance (scored once).
 3. Frozen before scoring: sample, labels, metrics — type precision on typed outputs (bar from this cycle: ≥ 0.90,
-   `OWNER DECISION REQUIRED` to confirm), `unknown` rate per language, intent accuracy, role F1.
+   **OPEN: owner to confirm the bar before scoring**), `unknown` rate per language, intent accuracy, role F1.
 4. Then normal gates (entity benchmark, identity gold check, Phase 2 identity, pytest) and the v2 chronological
    replay as development evidence. Evaluation runs via `eval-worker`.
