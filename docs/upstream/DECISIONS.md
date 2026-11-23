@@ -330,3 +330,20 @@ checks apply.
 - **D398:** the Development-identity track is opened; diagnose chaining and candidate guards only, with no size, age
   or centroid rule implemented without evaluation and another owner call.
 - **Multilingual model on the VM:** deferred until labels are complete and the model build needs it.
+
+---
+
+## Owner rulings, 2026-11-23 (third round) and their execution
+
+- **Burnham: deploy first, then retire.** `deploy-vm-20261123` = `4ffee11` live on the VM 13:49:49Z (gates: full
+  suite 776 passed; actor-key diff on snapshot `7463859a`: 1 of 44,476 entity names changes, `Andy Burnham` ->
+  `united kingdom`; C1 POST-DEPLOY OK). Detector rerun on deployed code flagged only id 35; allow-listed retirement
+  applied 14:39Z. **Detached: 1885, 2047, 2067, 2071** (2067 joined after the morning dry run). Detectors clean
+  afterwards (repair: none; founder: 0 of 16).
+- **Development definition: ADOPTED.** "A Development is one occurrence or tightly bounded event episode. Longer-running
+  storylines belong at the Situation layer." **No chaining guard yet**: first a long-horizon Development-identity
+  evaluation (`eval/long-horizon-identity`, DRAFT spec + blind sample, not frozen; decisions O1-O11 open).
+- **Not yet:** no Situation-membership tuning, no D398/chaining guard, no coverage threshold, no topic/location fit or
+  score from partial labels, no change to component-evidence storage, no regrouping of detached Developments, no
+  Situation v2 resume.
+- **Pre-model baseline:** `docs/upstream/BASELINE-pre-model-20261123.md`.
