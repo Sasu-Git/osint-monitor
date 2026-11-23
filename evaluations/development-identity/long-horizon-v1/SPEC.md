@@ -1,8 +1,8 @@
 # Long-horizon Development identity evaluation: SPEC
 
-**Status: DRAFT, not frozen.** Nothing here is labelled, scored or run through any model or guard. Every semantic choice is listed in
-section 12 (OWNER DECISIONS NEEDED) with options and a recommendation; the text below states the *recommended* option so the draft is
-runnable, and marks it `[O#]`. A choice is final only when the owner records it and the spec is frozen (section 11).
+**Status: FROZEN 2026-11-23** (owner approval of O1-O11, section 12; freeze record `SPEC-FREEZE.md`). Nothing here is labelled,
+scored or run through any model or guard. The sample, case files, split and scoring rules change only by a dated amendment. Markers
+`[O#]` point to the approved decision in section 12.
 
 ## 1. Purpose
 
@@ -161,21 +161,21 @@ judgement is not split-dependent); the split is applied when scoring.
    the server refuses edits afterwards.
 4. Only then may any guard be scored against the development half; the acceptance half stays unscored until the guard is frozen.
 
-## 12. OWNER DECISIONS NEEDED
+## 12. Owner decisions (approved 2026-11-23)
 
-| # | Decision | Options | Recommendation |
-|---|---|---|---|
-| O1 | Does a follow-up (reaction, consequence, next step) belong to the same Development? Defines the binary projection. | (a) No: only `SAME_EPISODE` is same (matches the owner definition and the identity contract, "attack vs retaliation" = different). (b) Yes: follow-ups stay in one Development. (c) Decide per case type later. | (a), with the follow-up-as-same sensitivity run in the report. |
-| O2 | Label set. | (a) The 5 labels in section 4. (b) 3 labels: SAME / NOT_SAME / CANNOT_TELL (faster, loses the Situation-layer signal). (c) 4 labels dropping RECURRING (merge it with DIFFERENT). | (a): the follow-up vs recurring vs different split costs labelling time but is needed to re-score O1 and to seed Situation membership. |
-| O3 | What counts as "tightly bounded" (the SAME_EPISODE boundary). | (a) Judgement from the owner's examples, no numeric cap; durations observed afterwards by band. (b) A fixed cap (e.g. 48 h, or 7 d) beyond which `SAME_EPISODE` is not allowed. (c) Event-class rules (a summit week is one episode, a war is not). | (a). A numeric cap imports an invented threshold; (c) is a rule list. Revisit after the first ~30 labels if labellers disagree with themselves. |
-| O4 | Time-gap bands. | (a) 6-48 h / 2-7 d / 7-21 d / >= 21 d (section 5). (b) Finer: add 7 d split at 3 d and 14 d. (c) Quantile bands from the snapshot. | (a). Pools at the long end are small (about 49 Developments >= 7 d), so finer bands would be empty. |
-| O5 | Pass / fail thresholds for over-merge and over-split. | (a) None now; metrics without a verdict until the owner PROPOSES targets. (b) Owner proposes before the first guard is scored. | (b), recorded in the spec before any scoring (no thresholds set after seeing results). This spec proposes none. |
-| O6 | Stratum definitions and thresholds (section 7: depth >= 8, late cosine < 0.55, 24 h silent-gap, 24 h continuity, 14 d multi-day ceiling). | (a) As proposed. (b) Owner edits thresholds. (c) Different strata (e.g. by stored event type). | (a). Only the sampling mix depends on them; labels do not. |
-| O7 | Whether stored attributes may stratify (event type, language, outlet count). | (a) Time and embedding features only, as built. (b) Add language and source-count stratification. | (a) for v1; add language later if the labelling shows a language effect. |
-| O8 | Who labels, and double-labelling. | (a) Owner alone. (b) Owner on all, plus a second labeller on a ~20% overlap sample for agreement. (c) Two blind labellers, owner adjudicates. | (b) if capacity allows; (a) otherwise. |
-| O9 | Sample size and the dev / acceptance split. | (a) ~160 cases, 50 / 50 by Development. (b) ~120 cases, 60 / 40. (c) ~200 cases, 40 / 60. | (a). Built at (a); realised size in `SAMPLE.md`. |
-| O10 | Extra case types. | (a) Founders-vs-late only. (b) Add adjacent-segment cases (a late segment vs its own chain parent) to separate local drift from global drift. | (a) for v1. Add (b) only if the guard work needs to localise the cut point. |
-| O11 | A-side: first reports only, or the founders plus the Development's stored summary. | (a) Reports only (blind, as built). (b) Show the stored summary. | (a): the summary is a system output and may itself have drifted. |
+| # | Decision | Approved |
+|---|---|---|
+| O1 | Does a follow-up (reaction, consequence, next step) belong to the same Development? | **No** in the primary definition: only `SAME_EPISODE` is *same*. A sensitivity run that counts `FOLLOW_UP_SAME_STORYLINE` as *same* is kept in every report. |
+| O2 | Label set | The 5 labels of section 4: same episode (`SAME_EPISODE`), follow-up (`FOLLOW_UP_SAME_STORYLINE`), recurring separate occurrence (`RECURRING_SEPARATE_OCCURRENCE`), different (`DIFFERENT`), cannot tell (`CANNOT_TELL`). |
+| O3 | What counts as "tightly bounded" | No numeric maximum duration; the owner's labels decide it case by case. Durations of `SAME_EPISODE` are observed afterwards by gap band. |
+| O4 | Time-gap bands | `6-48 h`, `2-7 d`, `7-21 d`, `>= 21 d` (section 5). |
+| O5 | Pass / fail thresholds for over-merge and over-split | Defined by the owner **before the first guard is scored**, not before labelling. None are set by this spec. |
+| O6 | Stratum definitions and cut-offs | Kept as proposed (depth >= 8, late cosine < 0.55, 24 h silent gap, 24 h continuity, 14 d multi-day ceiling). They shape sampling only, not semantics. |
+| O7 | Stratification features | Time and embedding features only; no stored attributes. |
+| O8 | Who labels | The owner labels all cases. A second labeller on ~20% is optional, not required. |
+| O9 | Size and split | Keep the 157 built cases and the ~50/50 development / acceptance split by Development (74 / 83). The `>= 21 d` band is **not** padded. |
+| O10 | Case types | Founding vs late segments only. |
+| O11 | Side content | Report evidence on each side (outlet, time, headline, lead); no stored summaries. |
 
 ## 13. Files
 
