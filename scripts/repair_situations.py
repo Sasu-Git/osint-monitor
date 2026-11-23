@@ -38,11 +38,15 @@ from pathlib import Path
 
 
 def invalid_reason(actors: list[str], normalizer, min_actors: int) -> str | None:
+    """Validate a Situation's primary actors exactly as Situation grouping keys them: through the Situation
+    canonicaliser (``ActorCanonicalizer.keys``), which also collapses name variants of one person inside the set
+    ({"Javier Milei", "Milei"} -> one actor). The plain per-name normaliser missed those (2026-11-14 dry run)."""
+    from osint_monitor.processors.situations.canonical import ActorCanonicalizer
     keys = [normalizer.key(a) for a in actors]
     dropped = [a for a, k in zip(actors, keys) if k is None]
     if dropped:
         return f"no longer actors: {dropped}"
-    distinct = sorted(set(keys))
+    distinct = sorted(ActorCanonicalizer(normalizer=normalizer).keys(actors))
     if len(distinct) < len(actors):
         return f"actors collapse to {distinct}"
     if len(distinct) < min_actors:
