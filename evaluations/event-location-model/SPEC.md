@@ -1,6 +1,6 @@
-# SPEC (draft 1, 2026-11-14): event location and place roles
+# SPEC (FROZEN 2026-11-23, owner rulings applied): event location and place roles
 
-**Status.** Draft for owner review. Nothing here is implemented. Items marked `OWNER DECISION REQUIRED` refer to
+**Status.** Frozen 2026-11-23 with the owner's P/T/L rulings (`docs/upstream/DECISIONS.md`). Nothing implemented yet. Changes after this point are dated amendments; amendments after the acceptance gold is frozen void that gold. Items marked APPROVED 2026-11-23 refer to
 `docs/upstream/DECISIONS.md` on `design/upstream-representation` (`b3ed3ef`). No map heuristics (owner, 2026-11-11):
 the iteration-3 rule family is closed; this is per-item role extraction, independent of actor geography.
 
@@ -44,20 +44,20 @@ the iteration-3 rule family is closed; this is per-item role extraction, indepen
 ## 3. Development event location (selection)
 
 1. Candidates: `event` and `target` roles from report items (analysis items excluded).
-2. Several valid locations: L1 (`OWNER DECISION REQUIRED`; recommended one location, `MULTI` when countries differ).
+2. Several valid locations: L1 (APPROVED 2026-11-23: one location, `MULTI` when countries differ).
 3. Attacks: target over origin (`ALREADY FROZEN`, owner 2026-11-10).
-4. Country-only: L3 (`OWNER DECISION REQUIRED`; recommended valid only for stated country-wide occurrences;
+4. Country-only: L3 (APPROVED 2026-11-23: valid only for stated country-wide occurrences;
    coercive measures get no location — their target is a role).
-5. Seas/regions: L5 (`OWNER DECISION REQUIRED`; recommended valid location with `event_country=null`).
-6. Disputed: L4 (`OWNER DECISION REQUIRED`; recommended own entity, `disputed=true`, never assigned to a state).
-7. Evidence scope: L7 (`OWNER DECISION REQUIRED`; recommended headline + lead first).
-8. Minimum evidence: L8 (`OWNER DECISION REQUIRED`; recommended one role in one report headline for single-item
+5. Seas/regions: L5 (APPROVED 2026-11-23: valid location with `event_country=null`).
+6. Disputed: L4 (APPROVED 2026-11-23: own entity, `disputed=true`, never assigned to a state).
+7. Evidence scope: L7 (APPROVED 2026-11-23: headline + lead first).
+8. Minimum evidence: L8 (APPROVED 2026-11-23: one role in one report headline for single-item
    Developments, the same or a contained place in ≥ 2 items otherwise).
 9. Mixed Developments: largest compatible component only (M1).
 
 ## 4. Containment
 
-- Containment-only table (L6, `OWNER DECISION REQUIRED`; recommended): the 86 parent entries already gated
+- Containment-only table (L6, APPROVED 2026-11-23; recommended): the 86 parent entries already gated
   (`fix/v2-upstream-places` `aa1d5a2`) plus the 93 parked aliases, read only by location and scope — never by actor
   or entity resolution, so Development identity cannot change.
 - Seas, straits and multi-country regions are first-class places with no country (Black Sea, Strait of Hormuz,
