@@ -63,7 +63,8 @@ def main(argv=None) -> int:
     if a.mode == "final":
         labels_present = bool(a.evalset_dir and (a.evalset_dir / "subsample" / "LABELS-FREEZE-subsample.json").exists())
         guard.require_final(topic=topic_pred, location=loc_pred, owner_approved=a.owner_approved, limit=a.limit,
-                            evalset_labels_present=labels_present, git_dirty=git["dirty"])
+                            evalset_labels_present=labels_present, git_dirty=git["dirty"],
+                            mixed_from=a.mixed_from)
         limit = None
     else:
         if a.owner_approved:

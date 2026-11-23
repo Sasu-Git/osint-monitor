@@ -177,6 +177,7 @@ def test_final_allowed_only_when_everything_holds(tmp_path):
     ({"evalset_labels_present": False}, "labels"),
     ({"git_dirty": True}, "dirty"),
     ({"git_dirty": None}, "dirty"),
+    ({"mixed_from": "v4"}, "diagnostic only"),
 ])
 def test_final_refused(tmp_path, over, needle):
     with pytest.raises(SystemExit) as e:

@@ -38,7 +38,8 @@ family only when it is a v2 family and confidence is `high` or `medium` (owner r
 The owner's V4 condition (at least two report components of at least two items each) is derived on read from the
 component evidence and is never stored as a field. `--mixed-from none` (default) leaves the engine's `mixed` flag unset (owner ruling 2026-11-23: component evidence has no
 downstream use yet). `--mixed-from v4` is an explicit opt-in that feeds V4 to the flag (E5, `PENDING_MIXED`); manifest and
-summary then say `"mixed_from": "v4 (OWNER DECISION PENDING)"`.
+summary then say `"mixed_from": "v4 (OWNER DECISION PENDING)"`. **Final mode refuses `--mixed-from v4`** (owner 2026-11-23: `report_component_partition` stays
+diagnostic evidence only and is not fed to the final replay as a "mixed" signal).
 
 ## Run
 

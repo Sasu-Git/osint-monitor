@@ -41,7 +41,7 @@ def acceptance_problems(role: str, pred: FrozenPredictions | None) -> list[str]:
 
 def final_problems(*, topic: FrozenPredictions | None, location: FrozenPredictions | None,
                    owner_approved: str | None, limit: int | None, evalset_labels_present: bool,
-                   git_dirty: bool | None) -> list[str]:
+                   git_dirty: bool | None, mixed_from: str = "none") -> list[str]:
     problems = acceptance_problems("topic", topic) + acceptance_problems("location", location)
     ref = (owner_approved or "").strip()
     if ref.lower() in PLACEHOLDERS or len(ref) < 8:
@@ -50,6 +50,8 @@ def final_problems(*, topic: FrozenPredictions | None, location: FrozenPredictio
         problems.append("final mode runs the full window: --limit is not allowed")
     if not evalset_labels_present:
         problems.append("frozen eval-set labels (LABELS-FREEZE-subsample.json) not found in --evalset-dir")
+    if mixed_from != "none":
+        problems.append("component evidence is diagnostic only (owner 2026-11-23): final mode requires --mixed-from none")
     if git_dirty is not False:
         problems.append("git tree is dirty or its state is unknown: commit before a final run")
     return problems
