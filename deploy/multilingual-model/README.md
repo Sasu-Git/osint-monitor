@@ -62,10 +62,10 @@ sha256 of the raw embedding bytes and first-5 dims rounded to 1e-5. Laptop refer
 2 threads) bitwise sha256 **`f2b3f68b3e9a0007308a94d6cdf6e20dda512bf0639a9d15ea972c4beb86a7d0`**; two laptop runs were
 bitwise identical.
 
-**OPEN DECISION (owner/engineering): tolerance policy for laptop vs VM.** Options: (a) bitwise equality, (b) per-sentence
-cosine distance <= 1e-4. PROPOSED recommendation: (b) as the gate, (a) reported as informational. Reason: laptop is
-Windows and the VM is Linux, possibly with a different CPU/BLAS kernel path, so bitwise float equality is not guaranteed
-even with identical package versions; 1e-4 cosine is far below anything a topic model resolves. Not an approved policy.
+**Reproducibility gate (APPROVED by the owner 2026-11-23):** per-sentence cosine distance <= 1e-4 between the laptop
+reference (`repro-laptop.json`) and the VM run decides PASS/FAIL (`compare_repro.py`, exit 0 = PASS, 1 = FAIL, 2 = not
+comparable). Bitwise equality of the float32 embeddings is reported separately, as information only (Windows laptop vs
+Linux VM need not be bitwise equal). Tests: `tests/test_multilingual_repro_gate.py`.
 
 ## Version comparison (laptop `.venv` vs VM)
 Identical: Python 3.14.3, torch 2.14.0 (VM +cpu), sentence-transformers 6.1.0, transformers 5.17.0, tokenizers 0.23.2,
