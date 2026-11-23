@@ -1,4 +1,4 @@
-"""Blind labelling page for the long-horizon Development-identity gold (DRAFT spec, see SPEC.md).
+"""Blind labelling page for the long-horizon Development-identity gold (spec frozen 2026-11-23, see SPEC.md and SPEC-FREEZE.md).
 
     python label_server.py [--port 8795]   then open http://127.0.0.1:8795/
     python label_server.py --validate      every case labelled, codes well-formed
@@ -38,8 +38,8 @@ border-bottom:1px solid #eee;text-align:left;vertical-align:top}textarea,select{
 .done{color:#137333}.todo{color:#b3261e}button{padding:6px 14px;margin-top:8px}.draft{background:#fff8e1}
 .side{border-left:4px solid #bbb;padding-left:10px}"""
 
-HELP = """<b>DRAFT definitions (pending owner decisions).</b> A Development is one occurrence or tightly bounded event
-episode; longer-running storylines belong at a higher layer. Compare the <b>earlier reports</b> with the <b>later
+HELP = """<b>Definitions (frozen 2026-11-23).</b> A Development is one occurrence or tightly bounded event
+episode. Longer-running storylines belong at the Situation layer. There is no fixed maximum duration: judge each case. Compare the <b>earlier reports</b> with the <b>later
 reports</b> and choose one:<ul>
 <li><b>SAME_EPISODE</b>: the later reports are about the same occurrence or tightly bounded episode as the earlier
 ones (same event, further detail, casualty updates, official documents, direct aftermath inside that episode).</li>
@@ -141,7 +141,7 @@ class App:
                 f"<p><label>note (optional)<textarea name='note' rows='2'{d}>{esc(cur.get('note'))}</textarea></label></p>"
                 f"<input type='hidden' name='next' value='{esc(nxt or '')}'><button{d}>Save</button></div></form>")
         return page(cid, f"<p><a href='/'>All cases</a></p><h1>{esc(cid)}</h1>"
-                    f"<details class='box draft'><summary>Definitions (draft)</summary>{HELP}</details>"
+                    f"<details class='box draft'><summary>Definitions</summary>{HELP}</details>"
                     f"{side('Earlier reports', c['a'])}{side('Later reports', c['b'])}{form}")
 
 

@@ -22,7 +22,7 @@ Text files are hashed with CRLF folded to LF (`.gitattributes` pins these paths 
 | `SPEC.md` | `3c1e00fb118b0274f9261292270acec86240d44bb07676326edee5e1a7488778` |
 | `SAMPLE.md` | `37cd7ae551117b1b7b7152121123f0ab6284362795a55251506f16f5a9fef272` |
 | `build_sample.py` | `e6c686ec0cf1b9660e15d8ed643ad218066f8e436c61e0ee33c60396faea0eb9` |
-| `label_server.py` | `250d87632692dcdd951dcfd0b690780e614c8d7ac014b22bba460ff64afcd968` |
+| `label_server.py` | `e9c7719bbdd45ef195dfbe362b7ba7ff00307e4f6e38e5eb48ff94501c48e8fe` (amendment 1; was `250d8763…cd968`) |
 | `cases.json` | `c1d41fe7fc2361817b460bb1172d154803ed9788f5dbaf0367b1c1c43cf338fb` |
 | `key.json` | `ba1f0bc4c444b588c417bf3608f2e387b6e5068a2c2be9a89610e1cb84980981` |
 | `split.json` | `20d34a6da64b012428f6b92bf8a5e16c9ff09678741d8402021e104f87fa8710` |
@@ -38,4 +38,7 @@ re-verified against these files at freeze.
 
 ## Amendments
 
-(none)
+1. **2026-11-23, before any label (0 labels), wording only.** `label_server.py` still showed "DRAFT definitions
+   (pending owner decisions)" and "higher layer". Replaced with the frozen header and the owner definition verbatim
+   ("…belong at the Situation layer"), plus O3 ("There is no fixed maximum duration: judge each case"). Label set,
+   case files, blindness and storage unchanged. New sha256 above.
