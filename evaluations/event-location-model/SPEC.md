@@ -57,7 +57,7 @@ the iteration-3 rule family is closed; this is per-item role extraction, indepen
 
 ## 4. Containment
 
-- Containment-only table (L6, APPROVED 2026-11-23; recommended): the 86 parent entries already gated
+- Containment-only table (L6, APPROVED 2026-11-23): the 86 parent entries already gated
   (`fix/v2-upstream-places` `aa1d5a2`) plus the 93 parked aliases, read only by location and scope — never by actor
   or entity resolution, so Development identity cannot change.
 - Seas, straits and multi-country regions are first-class places with no country (Black Sea, Strait of Hormuz,
