@@ -1,0 +1,1717 @@
+{
+ "note": "every guard value is an illustrative sweep point, not a proposal; no verdicts; snapshot sha256 verified",
+ "snapshot_sha256": "7463859a4f3537eb29447a755f252dbebc80cc01a1d855739c57b10489964c3c",
+ "part1_and_snapshot_guard_sim": {
+  "memberships_without_added_at_excluded": 778,
+  "snapshot_sha256": "7463859a4f3537eb29447a755f252dbebc80cc01a1d855739c57b10489964c3c",
+  "developments_ge3": 1204,
+  "items_in_them": 19080,
+  "distributions": {
+   "size": {
+    "p0": 3.0,
+    "p5": 3.0,
+    "p25": 3.0,
+    "p50": 5.0,
+    "p75": 10.0,
+    "p90": 24.0,
+    "p95": 37.0,
+    "p99": 222.0,
+    "p100": 2344.0
+   },
+   "span_days": {
+    "p0": 0.0,
+    "p5": 0.0,
+    "p25": 0.309,
+    "p50": 1.006,
+    "p75": 2.035,
+    "p90": 3.589,
+    "p95": 5.236,
+    "p99": 15.24,
+    "p100": 41.079
+   },
+   "chain_depth_max": {
+    "p0": 1.0,
+    "p5": 1.0,
+    "p25": 2.0,
+    "p50": 2.0,
+    "p75": 4.0,
+    "p90": 6.0,
+    "p95": 8.0,
+    "p99": 17.0,
+    "p100": 53.0
+   },
+   "chain_depth_median": {
+    "p0": 0.0,
+    "p5": 0.0,
+    "p25": 1.0,
+    "p50": 1.0,
+    "p75": 2.0,
+    "p90": 3.0,
+    "p95": 4.0,
+    "p99": 8.0,
+    "p100": 36.0
+   },
+   "late_median_cos_first_run_centroid": {
+    "p0": 0.2083,
+    "p5": 0.3549,
+    "p25": 0.4711,
+    "p50": 0.5575,
+    "p75": 0.6277,
+    "p90": 0.685,
+    "p95": 0.7179,
+    "p99": 0.793,
+    "p100": 0.8617
+   },
+   "no_direct_link_to_first_run_share": {
+    "p0": 0.0,
+    "p5": 0.0,
+    "p25": 0.0,
+    "p50": 0.1,
+    "p75": 0.5,
+    "p90": 0.6857,
+    "p95": 0.8,
+    "p99": 0.9533,
+    "p100": 1.0
+   },
+   "late_no_direct_link_to_first_run_share": {
+    "p0": 0.0,
+    "p5": 0.992,
+    "p25": 1.0,
+    "p50": 1.0,
+    "p75": 1.0,
+    "p90": 1.0,
+    "p95": 1.0,
+    "p99": 1.0,
+    "p100": 1.0
+   }
+  },
+  "n_with_value": {
+   "size": 1204,
+   "span_days": 1204,
+   "chain_depth_max": 1204,
+   "chain_depth_median": 1204,
+   "late_median_cos_first_run_centroid": 162,
+   "no_direct_link_to_first_run_share": 1102,
+   "late_no_direct_link_to_first_run_share": 162
+  },
+  "d398": {
+   "event_id": 398,
+   "summary": "Six Ukrainian energy sites hit by Russia since Trump announced ceasefire, Zelensky says",
+   "size": 2344,
+   "span_days": 41.079,
+   "first_run_size": 7,
+   "chain_depth_max": 53,
+   "chain_depth_median": 36.0,
+   "late_members": 2142,
+   "late_median_cos_first_run_centroid": 0.3955,
+   "members_outside_first_run": 2337,
+   "no_direct_link_to_first_run_share": 0.9756,
+   "late_no_direct_link_to_first_run_share": 0.9995
+  },
+  "top20_by_size": [
+   {
+    "event_id": 398,
+    "summary": "Six Ukrainian energy sites hit by Russia since Trump announced ceasefire, Zelensky says",
+    "size": 2344,
+    "span_days": 41.079,
+    "first_run_size": 7,
+    "chain_depth_max": 53,
+    "chain_depth_median": 36.0,
+    "late_members": 2142,
+    "late_median_cos_first_run_centroid": 0.3955,
+    "members_outside_first_run": 2337,
+    "no_direct_link_to_first_run_share": 0.9756,
+    "late_no_direct_link_to_first_run_share": 0.9995
+   },
+   {
+    "event_id": 449,
+    "summary": "Brasile, Fl\u00c3\u00a1vio Bolsonaro annuncia visita al padre dopo tre mesi di stop",
+    "size": 783,
+    "span_days": 31.628,
+    "first_run_size": 5,
+    "chain_depth_max": 27,
+    "chain_depth_median": 16,
+    "late_members": 757,
+    "late_median_cos_first_run_centroid": 0.5238,
+    "members_outside_first_run": 778,
+    "no_direct_link_to_first_run_share": 0.9794,
+    "late_no_direct_link_to_first_run_share": 1.0
+   },
+   {
+    "event_id": 1161,
+    "summary": "Iran\u00e2\u20ac\u2122s supreme leader warns US, Israel against war",
+    "size": 331,
+    "span_days": 13.925,
+    "first_run_size": 2,
+    "chain_depth_max": 18,
+    "chain_depth_median": 11,
+    "late_members": 313,
+    "late_median_cos_first_run_centroid": 0.5604,
+    "members_outside_first_run": 329,
+    "no_direct_link_to_first_run_share": 0.9818,
+    "late_no_direct_link_to_first_run_share": 1.0
+   },
+   {
+    "event_id": 397,
+    "summary": "\u00e2\u20ac\u02dcThese attacks must cease immediately\u00e2\u20ac\u2122: Guterres condemns deadly Houthi strike on Riyadh a",
+    "size": 330,
+    "span_days": 17.846,
+    "first_run_size": 6,
+    "chain_depth_max": 17,
+    "chain_depth_median": 8.0,
+    "late_members": 178,
+    "late_median_cos_first_run_centroid": 0.5783,
+    "members_outside_first_run": 324,
+    "no_direct_link_to_first_run_share": 0.7469,
+    "late_no_direct_link_to_first_run_share": 1.0
+   },
+   {
+    "event_id": 1479,
+    "summary": "US chipmaker Nvidia investigates CEO Jensen Huang over affair",
+    "size": 313,
+    "span_days": 14.429,
+    "first_run_size": 2,
+    "chain_depth_max": 20,
+    "chain_depth_median": 8,
+    "late_members": 241,
+    "late_median_cos_first_run_centroid": 0.5393,
+    "members_outside_first_run": 311,
+    "no_direct_link_to_first_run_share": 0.9164,
+    "late_no_direct_link_to_first_run_share": 1.0
+   },
+   {
+    "event_id": 1432,
+    "summary": "Rains flood thousands of displaced families\u00e2\u20ac\u2122 tents in Gaza",
+    "size": 310,
+    "span_days": 15.833,
+    "first_run_size": 2,
+    "chain_depth_max": 19,
+    "chain_depth_median": 11.0,
+    "late_members": 275,
+    "late_median_cos_first_run_centroid": 0.4338,
+    "members_outside_first_run": 308,
+    "no_direct_link_to_first_run_share": 0.9545,
+    "late_no_direct_link_to_first_run_share": 1.0
+   },
+   {
+    "event_id": 399,
+    "summary": "Zelensky, almeno due morti questa sera in attacchi russi a Kiev",
+    "size": 299,
+    "span_days": 23.161,
+    "first_run_size": 9,
+    "chain_depth_max": 20,
+    "chain_depth_median": 6,
+    "late_members": 216,
+    "late_median_cos_first_run_centroid": 0.5973,
+    "members_outside_first_run": 290,
+    "no_direct_link_to_first_run_share": 0.8759,
+    "late_no_direct_link_to_first_run_share": 1.0
+   },
+   {
+    "event_id": 1544,
+    "summary": "US moves aircraft from second UK base over \u00e2\u20ac\u02dcthreat from Iran\u00e2\u20ac\u2122",
+    "size": 293,
+    "span_days": 13.045,
+    "first_run_size": 5,
+    "chain_depth_max": 20,
+    "chain_depth_median": 12,
+    "late_members": 262,
+    "late_median_cos_first_run_centroid": 0.4805,
+    "members_outside_first_run": 288,
+    "no_direct_link_to_first_run_share": 0.9306,
+    "late_no_direct_link_to_first_run_share": 1.0
+   },
+   {
+    "event_id": 1168,
+    "summary": "Israeli protesters urge Jewish-Arab coalition government",
+    "size": 282,
+    "span_days": 15.448,
+    "first_run_size": 2,
+    "chain_depth_max": 19,
+    "chain_depth_median": 8.0,
+    "late_members": 271,
+    "late_median_cos_first_run_centroid": 0.4131,
+    "members_outside_first_run": 280,
+    "no_direct_link_to_first_run_share": 0.9893,
+    "late_no_direct_link_to_first_run_share": 1.0
+   },
+   {
+    "event_id": 514,
+    "summary": "Despite long history with Netanyahu, Trump hedges as Israel vote nears",
+    "size": 274,
+    "span_days": 18.812,
+    "first_run_size": 2,
+    "chain_depth_max": 19,
+    "chain_depth_median": 14.0,
+    "late_members": 262,
+    "late_median_cos_first_run_centroid": 0.3549,
+    "members_outside_first_run": 272,
+    "no_direct_link_to_first_run_share": 0.989,
+    "late_no_direct_link_to_first_run_share": 1.0
+   },
+   {
+    "event_id": 1336,
+    "summary": "Houthi missiles fired at Medina intercepted, Saudi coalition says",
+    "size": 270,
+    "span_days": 17.772,
+    "first_run_size": 5,
+    "chain_depth_max": 17,
+    "chain_depth_median": 10.0,
+    "late_members": 230,
+    "late_median_cos_first_run_centroid": 0.6356,
+    "members_outside_first_run": 265,
+    "no_direct_link_to_first_run_share": 0.9321,
+    "late_no_direct_link_to_first_run_share": 1.0
+   },
+   {
+    "event_id": 639,
+    "summary": "Francia vuelve a permitir el uso de granadas aturdidoras de cara a las protestas de este s",
+    "size": 267,
+    "span_days": 12.913,
+    "first_run_size": 2,
+    "chain_depth_max": 15,
+    "chain_depth_median": 6,
+    "late_members": 209,
+    "late_median_cos_first_run_centroid": 0.5333,
+    "members_outside_first_run": 265,
+    "no_direct_link_to_first_run_share": 0.9208,
+    "late_no_direct_link_to_first_run_share": 1.0
+   },
+   {
+    "event_id": 923,
+    "summary": "Lebanese sceptical Israeli polls will bring change, end occupation of south",
+    "size": 222,
+    "span_days": 7.37,
+    "first_run_size": 3,
+    "chain_depth_max": 11,
+    "chain_depth_median": 6.0,
+    "late_members": 175,
+    "late_median_cos_first_run_centroid": 0.5912,
+    "members_outside_first_run": 219,
+    "no_direct_link_to_first_run_share": 0.9269,
+    "late_no_direct_link_to_first_run_share": 1.0
+   },
+   {
+    "event_id": 626,
+    "summary": "France to witness a 'crossroads of anger' as mass protests expected on Saturday",
+    "size": 216,
+    "span_days": 11.132,
+    "first_run_size": 2,
+    "chain_depth_max": 13,
+    "chain_depth_median": 6.0,
+    "late_members": 180,
+    "late_median_cos_first_run_centroid": 0.5643,
+    "members_outside_first_run": 214,
+    "no_direct_link_to_first_run_share": 0.9533,
+    "late_no_direct_link_to_first_run_share": 1.0
+   },
+   {
+    "event_id": 1385,
+    "summary": "Muere una persona en un ataque de Rusia contra la provincia de Rivne, en el oeste de Ucran",
+    "size": 214,
+    "span_days": 17.007,
+    "first_run_size": 2,
+    "chain_depth_max": 18,
+    "chain_depth_median": 13.0,
+    "late_members": 207,
+    "late_median_cos_first_run_centroid": 0.4852,
+    "members_outside_first_run": 212,
+    "no_direct_link_to_first_run_share": 0.9858,
+    "late_no_direct_link_to_first_run_share": 0.9952
+   },
+   {
+    "event_id": 1251,
+    "summary": "Paraguay, la banca centrale avvia la liquidazione di Ueno Bank",
+    "size": 198,
+    "span_days": 15.24,
+    "first_run_size": 2,
+    "chain_depth_max": 17,
+    "chain_depth_median": 9.0,
+    "late_members": 125,
+    "late_median_cos_first_run_centroid": 0.622,
+    "members_outside_first_run": 196,
+    "no_direct_link_to_first_run_share": 0.8061,
+    "late_no_direct_link_to_first_run_share": 0.992
+   },
+   {
+    "event_id": 962,
+    "summary": "Officials from Mecca pact states to hold talks in Iran amid regional tensions",
+    "size": 197,
+    "span_days": 20.428,
+    "first_run_size": 4,
+    "chain_depth_max": 18,
+    "chain_depth_median": 12,
+    "late_members": 165,
+    "late_median_cos_first_run_centroid": 0.3851,
+    "members_outside_first_run": 193,
+    "no_direct_link_to_first_run_share": 0.9171,
+    "late_no_direct_link_to_first_run_share": 1.0
+   },
+   {
+    "event_id": 1482,
+    "summary": "Jeffries backs Hegseth impeachment as Democrats vow probes of Trump allies",
+    "size": 179,
+    "span_days": 4.498,
+    "first_run_size": 5,
+    "chain_depth_max": 9,
+    "chain_depth_median": 5,
+    "late_members": 8,
+    "late_median_cos_first_run_centroid": 0.6855,
+    "members_outside_first_run": 174,
+    "no_direct_link_to_first_run_share": 0.4023,
+    "late_no_direct_link_to_first_run_share": 1.0
+   },
+   {
+    "event_id": 1174,
+    "summary": "Trump insists Republicans \u00e2\u20ac\u02dchave a shot\u00e2\u20ac\u2122 in midterms as rallies resume amid health concerns",
+    "size": 168,
+    "span_days": 7.146,
+    "first_run_size": 3,
+    "chain_depth_max": 9,
+    "chain_depth_median": 5.0,
+    "late_members": 88,
+    "late_median_cos_first_run_centroid": 0.5004,
+    "members_outside_first_run": 165,
+    "no_direct_link_to_first_run_share": 0.903,
+    "late_no_direct_link_to_first_run_share": 1.0
+   },
+   {
+    "event_id": 1317,
+    "summary": "El papa \"regresa a casa\": as\u00c3\u00ad ser\u00c3\u00a1 la gira de Leon XIV por Uruguay, Argentina y Per\u00c3\u00ba",
+    "size": 167,
+    "span_days": 15.639,
+    "first_run_size": 2,
+    "chain_depth_max": 22,
+    "chain_depth_median": 8,
+    "late_members": 145,
+    "late_median_cos_first_run_centroid": 0.6591,
+    "members_outside_first_run": 165,
+    "no_direct_link_to_first_run_share": 0.9333,
+    "late_no_direct_link_to_first_run_share": 1.0
+   }
+  ],
+  "look_like_d398": {
+   "size": {
+    "d398_value": 2344,
+    "direction": "ge",
+    "n_with_value": 1204,
+    "count_at_grid": {
+     "1x D398 (2344)": 1,
+     "0.5x D398 (1172)": 1,
+     "0.25x D398 (586)": 2,
+     "0.1x D398 (234.4)": 12
+    }
+   },
+   "span_days": {
+    "d398_value": 41.079,
+    "direction": "ge",
+    "n_with_value": 1204,
+    "count_at_grid": {
+     "1x D398 (41.08)": 1,
+     "0.5x D398 (20.54)": 3,
+     "0.25x D398 (10.27)": 20,
+     "0.1x D398 (4.108)": 96
+    }
+   },
+   "chain_depth_max": {
+    "d398_value": 53,
+    "direction": "ge",
+    "n_with_value": 1204,
+    "count_at_grid": {
+     "1x D398 (53)": 1,
+     "0.5x D398 (26.5)": 2,
+     "0.25x D398 (13.25)": 18,
+     "0.1x D398 (5.3)": 129
+    }
+   },
+   "chain_depth_median": {
+    "d398_value": 36.0,
+    "direction": "ge",
+    "n_with_value": 1204,
+    "count_at_grid": {
+     "1x D398 (36)": 1,
+     "0.5x D398 (18)": 1,
+     "0.25x D398 (9)": 11,
+     "0.1x D398 (3.6)": 78
+    }
+   },
+   "late_median_cos_first_run_centroid": {
+    "d398_value": 0.3955,
+    "direction": "le",
+    "n_with_value": 162,
+    "count_at_grid": {
+     "<= D398 +0 (0.396)": 20,
+     "<= D398 +0.1 (0.496)": 50,
+     "<= D398 +0.2 (0.596)": 104
+    }
+   },
+   "no_direct_link_to_first_run_share": {
+    "d398_value": 0.9756,
+    "direction": "ge",
+    "n_with_value": 1102,
+    "count_at_grid": {
+     "1x D398 (0.9756)": 8,
+     "0.5x D398 (0.4878)": 313,
+     "0.25x D398 (0.2439)": 489,
+     "0.1x D398 (0.09756)": 552
+    }
+   },
+   "late_no_direct_link_to_first_run_share": {
+    "d398_value": 0.9995,
+    "direction": "ge",
+    "n_with_value": 162,
+    "count_at_grid": {
+     "1x D398 (0.9995)": 152,
+     "0.5x D398 (0.4998)": 161,
+     "0.25x D398 (0.2499)": 161,
+     "0.1x D398 (0.09995)": 161
+    }
+   }
+  },
+  "guard_sim_all_developments_ge3": {
+   "none": {
+    "developments_changed": 0,
+    "blocked_by_guard": 0,
+    "no_accepted_link": 249,
+    "non_founder_items_attached": 15695
+   },
+   "size=4": {
+    "developments_changed": 676,
+    "blocked_by_guard": 4358,
+    "no_accepted_link": 9958,
+    "non_founder_items_attached": 1628
+   },
+   "size=6": {
+    "developments_changed": 494,
+    "blocked_by_guard": 3998,
+    "no_accepted_link": 9178,
+    "non_founder_items_attached": 2768
+   },
+   "size=8": {
+    "developments_changed": 367,
+    "blocked_by_guard": 3621,
+    "no_accepted_link": 8685,
+    "non_founder_items_attached": 3638
+   },
+   "size=12": {
+    "developments_changed": 233,
+    "blocked_by_guard": 3093,
+    "no_accepted_link": 8013,
+    "non_founder_items_attached": 4838
+   },
+   "size=25": {
+    "developments_changed": 107,
+    "blocked_by_guard": 2151,
+    "no_accepted_link": 6978,
+    "non_founder_items_attached": 6815
+   },
+   "size=50": {
+    "developments_changed": 45,
+    "blocked_by_guard": 1667,
+    "no_accepted_link": 5859,
+    "non_founder_items_attached": 8418
+   },
+   "size=100": {
+    "developments_changed": 24,
+    "blocked_by_guard": 1265,
+    "no_accepted_link": 4665,
+    "non_founder_items_attached": 10014
+   },
+   "size=200": {
+    "developments_changed": 15,
+    "blocked_by_guard": 706,
+    "no_accepted_link": 3226,
+    "non_founder_items_attached": 12012
+   },
+   "age_h=6": {
+    "developments_changed": 927,
+    "blocked_by_guard": 4138,
+    "no_accepted_link": 10063,
+    "non_founder_items_attached": 1743
+   },
+   "age_h=12": {
+    "developments_changed": 804,
+    "blocked_by_guard": 3622,
+    "no_accepted_link": 9662,
+    "non_founder_items_attached": 2660
+   },
+   "age_h=24": {
+    "developments_changed": 605,
+    "blocked_by_guard": 2960,
+    "no_accepted_link": 8807,
+    "non_founder_items_attached": 4177
+   },
+   "age_h=36": {
+    "developments_changed": 452,
+    "blocked_by_guard": 2533,
+    "no_accepted_link": 8027,
+    "non_founder_items_attached": 5384
+   },
+   "age_h=72": {
+    "developments_changed": 158,
+    "blocked_by_guard": 1618,
+    "no_accepted_link": 6347,
+    "non_founder_items_attached": 7979
+   },
+   "age_h=168": {
+    "developments_changed": 37,
+    "blocked_by_guard": 809,
+    "no_accepted_link": 4351,
+    "non_founder_items_attached": 10784
+   },
+   "age_h=336": {
+    "developments_changed": 14,
+    "blocked_by_guard": 353,
+    "no_accepted_link": 2526,
+    "non_founder_items_attached": 13065
+   },
+   "centroid=0.4": {
+    "developments_changed": 55,
+    "blocked_by_guard": 407,
+    "no_accepted_link": 642,
+    "non_founder_items_attached": 14895
+   },
+   "centroid=0.45": {
+    "developments_changed": 97,
+    "blocked_by_guard": 607,
+    "no_accepted_link": 802,
+    "non_founder_items_attached": 14535
+   },
+   "centroid=0.5": {
+    "developments_changed": 192,
+    "blocked_by_guard": 985,
+    "no_accepted_link": 1235,
+    "non_founder_items_attached": 13724
+   },
+   "centroid=0.55": {
+    "developments_changed": 330,
+    "blocked_by_guard": 1780,
+    "no_accepted_link": 1827,
+    "non_founder_items_attached": 12337
+   },
+   "founder_k_h=6": {
+    "developments_changed": 437,
+    "blocked_by_guard": 2864,
+    "no_accepted_link": 7199,
+    "non_founder_items_attached": 5881
+   },
+   "founder_k_h=12": {
+    "developments_changed": 382,
+    "blocked_by_guard": 2653,
+    "no_accepted_link": 7009,
+    "non_founder_items_attached": 6282
+   },
+   "founder_k_h=24": {
+    "developments_changed": 263,
+    "blocked_by_guard": 2171,
+    "no_accepted_link": 6636,
+    "non_founder_items_attached": 7137
+   },
+   "founder_k_h=36": {
+    "developments_changed": 193,
+    "blocked_by_guard": 1853,
+    "no_accepted_link": 6174,
+    "non_founder_items_attached": 7917
+   },
+   "founder_k_h=72": {
+    "developments_changed": 97,
+    "blocked_by_guard": 1373,
+    "no_accepted_link": 4974,
+    "non_founder_items_attached": 9597
+   },
+   "founder_k_h=168": {
+    "developments_changed": 28,
+    "blocked_by_guard": 758,
+    "no_accepted_link": 3593,
+    "non_founder_items_attached": 11593
+   }
+  },
+  "guard_sim_d398": {
+   "none": {
+    "final_size": 2340,
+    "blocked_by_guard": 0,
+    "no_accepted_link": 4
+   },
+   "size=4": {
+    "final_size": 7,
+    "blocked_by_guard": 57,
+    "no_accepted_link": 2280
+   },
+   "size=6": {
+    "final_size": 7,
+    "blocked_by_guard": 57,
+    "no_accepted_link": 2280
+   },
+   "size=8": {
+    "final_size": 8,
+    "blocked_by_guard": 61,
+    "no_accepted_link": 2275
+   },
+   "size=12": {
+    "final_size": 13,
+    "blocked_by_guard": 72,
+    "no_accepted_link": 2259
+   },
+   "size=25": {
+    "final_size": 25,
+    "blocked_by_guard": 82,
+    "no_accepted_link": 2237
+   },
+   "size=50": {
+    "final_size": 50,
+    "blocked_by_guard": 146,
+    "no_accepted_link": 2148
+   },
+   "size=100": {
+    "final_size": 100,
+    "blocked_by_guard": 138,
+    "no_accepted_link": 2106
+   },
+   "size=200": {
+    "final_size": 200,
+    "blocked_by_guard": 107,
+    "no_accepted_link": 2037
+   },
+   "age_h=6": {
+    "final_size": 17,
+    "blocked_by_guard": 75,
+    "no_accepted_link": 2252
+   },
+   "age_h=12": {
+    "final_size": 20,
+    "blocked_by_guard": 77,
+    "no_accepted_link": 2247
+   },
+   "age_h=24": {
+    "final_size": 34,
+    "blocked_by_guard": 132,
+    "no_accepted_link": 2178
+   },
+   "age_h=36": {
+    "final_size": 81,
+    "blocked_by_guard": 145,
+    "no_accepted_link": 2118
+   },
+   "age_h=72": {
+    "final_size": 200,
+    "blocked_by_guard": 107,
+    "no_accepted_link": 2037
+   },
+   "age_h=168": {
+    "final_size": 386,
+    "blocked_by_guard": 98,
+    "no_accepted_link": 1860
+   },
+   "age_h=336": {
+    "final_size": 579,
+    "blocked_by_guard": 19,
+    "no_accepted_link": 1746
+   },
+   "centroid=0.4": {
+    "final_size": 1819,
+    "blocked_by_guard": 256,
+    "no_accepted_link": 269
+   },
+   "centroid=0.45": {
+    "final_size": 1674,
+    "blocked_by_guard": 305,
+    "no_accepted_link": 365
+   },
+   "centroid=0.5": {
+    "final_size": 1459,
+    "blocked_by_guard": 335,
+    "no_accepted_link": 550
+   },
+   "centroid=0.55": {
+    "final_size": 1220,
+    "blocked_by_guard": 465,
+    "no_accepted_link": 659
+   },
+   "founder_k_h=6": {
+    "final_size": 92,
+    "blocked_by_guard": 163,
+    "no_accepted_link": 2089
+   },
+   "founder_k_h=12": {
+    "final_size": 97,
+    "blocked_by_guard": 167,
+    "no_accepted_link": 2080
+   },
+   "founder_k_h=24": {
+    "final_size": 166,
+    "blocked_by_guard": 159,
+    "no_accepted_link": 2019
+   },
+   "founder_k_h=36": {
+    "final_size": 226,
+    "blocked_by_guard": 124,
+    "no_accepted_link": 1994
+   },
+   "founder_k_h=72": {
+    "final_size": 307,
+    "blocked_by_guard": 133,
+    "no_accepted_link": 1904
+   },
+   "founder_k_h=168": {
+    "final_size": 484,
+    "blocked_by_guard": 74,
+    "no_accepted_link": 1786
+   }
+  },
+  "sweep_points_note": "every value is an illustrative sweep point, not a proposal"
+ },
+ "part2_dev_replay": {
+  "baseline": {
+   "label": "baseline",
+   "metrics": {
+    "continuity_precision": [
+     43,
+     65
+    ],
+    "continuity_recall": [
+     43,
+     58
+    ],
+    "split_failures": [
+     22,
+     100
+    ],
+    "merge_failures": [
+     15,
+     58
+    ],
+    "id_stability": [
+     16,
+     19
+    ],
+    "mixed_developments": [
+     12,
+     31
+    ],
+    "duplicate_membership": [
+     0,
+     110
+    ],
+    "single_source_developments": [
+     0,
+     null
+    ],
+    "roundup_source_inflation": [
+     0,
+     null
+    ],
+    "roundup_summaries": [
+     0,
+     null
+    ],
+    "error_classes": {
+     "whole-storyline overmerge": 17,
+     "other": 4,
+     "segmentation interaction": 5,
+     "late attachment": 5,
+     "missed continuation": 6
+    }
+   },
+   "blocked_attachments_in_replay": 0
+  },
+  "nonecopy": {
+   "label": "nonecopy",
+   "metrics": {
+    "continuity_precision": [
+     43,
+     65
+    ],
+    "continuity_recall": [
+     43,
+     58
+    ],
+    "split_failures": [
+     22,
+     100
+    ],
+    "merge_failures": [
+     15,
+     58
+    ],
+    "id_stability": [
+     16,
+     19
+    ],
+    "mixed_developments": [
+     12,
+     31
+    ],
+    "duplicate_membership": [
+     0,
+     110
+    ],
+    "single_source_developments": [
+     0,
+     null
+    ],
+    "roundup_source_inflation": [
+     0,
+     null
+    ],
+    "roundup_summaries": [
+     0,
+     null
+    ],
+    "error_classes": {
+     "whole-storyline overmerge": 17,
+     "other": 4,
+     "segmentation interaction": 5,
+     "late attachment": 5,
+     "missed continuation": 6
+    }
+   },
+   "blocked_attachments_in_replay": 0
+  },
+  "size=4": {
+   "label": "size=4",
+   "metrics": {
+    "continuity_precision": [
+     43,
+     60
+    ],
+    "continuity_recall": [
+     43,
+     58
+    ],
+    "split_failures": [
+     17,
+     100
+    ],
+    "merge_failures": [
+     15,
+     58
+    ],
+    "id_stability": [
+     16,
+     19
+    ],
+    "mixed_developments": [
+     11,
+     30
+    ],
+    "duplicate_membership": [
+     0,
+     113
+    ],
+    "single_source_developments": [
+     0,
+     null
+    ],
+    "roundup_source_inflation": [
+     0,
+     null
+    ],
+    "roundup_summaries": [
+     0,
+     null
+    ],
+    "error_classes": {
+     "whole-storyline overmerge": 17,
+     "other": 4,
+     "segmentation interaction": 5,
+     "missed continuation": 6
+    }
+   },
+   "blocked_attachments_in_replay": 4
+  },
+  "size=6": {
+   "label": "size=6",
+   "metrics": {
+    "continuity_precision": [
+     43,
+     61
+    ],
+    "continuity_recall": [
+     43,
+     58
+    ],
+    "split_failures": [
+     18,
+     100
+    ],
+    "merge_failures": [
+     15,
+     58
+    ],
+    "id_stability": [
+     16,
+     19
+    ],
+    "mixed_developments": [
+     12,
+     31
+    ],
+    "duplicate_membership": [
+     0,
+     113
+    ],
+    "single_source_developments": [
+     0,
+     null
+    ],
+    "roundup_source_inflation": [
+     0,
+     null
+    ],
+    "roundup_summaries": [
+     0,
+     null
+    ],
+    "error_classes": {
+     "whole-storyline overmerge": 17,
+     "other": 4,
+     "segmentation interaction": 5,
+     "missed continuation": 6,
+     "late attachment": 1
+    }
+   },
+   "blocked_attachments_in_replay": 3
+  },
+  "size=8": {
+   "label": "size=8",
+   "metrics": {
+    "continuity_precision": [
+     43,
+     61
+    ],
+    "continuity_recall": [
+     43,
+     58
+    ],
+    "split_failures": [
+     18,
+     100
+    ],
+    "merge_failures": [
+     15,
+     58
+    ],
+    "id_stability": [
+     16,
+     19
+    ],
+    "mixed_developments": [
+     12,
+     31
+    ],
+    "duplicate_membership": [
+     0,
+     113
+    ],
+    "single_source_developments": [
+     0,
+     null
+    ],
+    "roundup_source_inflation": [
+     0,
+     null
+    ],
+    "roundup_summaries": [
+     0,
+     null
+    ],
+    "error_classes": {
+     "whole-storyline overmerge": 17,
+     "other": 4,
+     "segmentation interaction": 5,
+     "missed continuation": 6,
+     "late attachment": 1
+    }
+   },
+   "blocked_attachments_in_replay": 3
+  },
+  "size=12": {
+   "label": "size=12",
+   "metrics": {
+    "continuity_precision": [
+     43,
+     65
+    ],
+    "continuity_recall": [
+     43,
+     58
+    ],
+    "split_failures": [
+     22,
+     100
+    ],
+    "merge_failures": [
+     15,
+     58
+    ],
+    "id_stability": [
+     16,
+     19
+    ],
+    "mixed_developments": [
+     12,
+     31
+    ],
+    "duplicate_membership": [
+     0,
+     110
+    ],
+    "single_source_developments": [
+     0,
+     null
+    ],
+    "roundup_source_inflation": [
+     0,
+     null
+    ],
+    "roundup_summaries": [
+     0,
+     null
+    ],
+    "error_classes": {
+     "whole-storyline overmerge": 17,
+     "other": 4,
+     "segmentation interaction": 5,
+     "late attachment": 5,
+     "missed continuation": 6
+    }
+   },
+   "blocked_attachments_in_replay": 0
+  },
+  "age_h=6": {
+   "label": "age_h=6",
+   "metrics": {
+    "continuity_precision": [
+     37,
+     54
+    ],
+    "continuity_recall": [
+     37,
+     58
+    ],
+    "split_failures": [
+     17,
+     100
+    ],
+    "merge_failures": [
+     21,
+     58
+    ],
+    "id_stability": [
+     11,
+     19
+    ],
+    "mixed_developments": [
+     11,
+     30
+    ],
+    "duplicate_membership": [
+     0,
+     110
+    ],
+    "single_source_developments": [
+     0,
+     null
+    ],
+    "roundup_source_inflation": [
+     0,
+     null
+    ],
+    "roundup_summaries": [
+     0,
+     null
+    ],
+    "error_classes": {
+     "whole-storyline overmerge": 17,
+     "other": 6,
+     "segmentation interaction": 5,
+     "missed continuation": 10
+    }
+   },
+   "blocked_attachments_in_replay": 7
+  },
+  "age_h=12": {
+   "label": "age_h=12",
+   "metrics": {
+    "continuity_precision": [
+     37,
+     58
+    ],
+    "continuity_recall": [
+     37,
+     58
+    ],
+    "split_failures": [
+     21,
+     100
+    ],
+    "merge_failures": [
+     21,
+     58
+    ],
+    "id_stability": [
+     11,
+     19
+    ],
+    "mixed_developments": [
+     12,
+     31
+    ],
+    "duplicate_membership": [
+     0,
+     110
+    ],
+    "single_source_developments": [
+     0,
+     null
+    ],
+    "roundup_source_inflation": [
+     0,
+     null
+    ],
+    "roundup_summaries": [
+     0,
+     null
+    ],
+    "error_classes": {
+     "whole-storyline overmerge": 17,
+     "other": 6,
+     "segmentation interaction": 5,
+     "late attachment": 4,
+     "missed continuation": 10
+    }
+   },
+   "blocked_attachments_in_replay": 4
+  },
+  "age_h=24": {
+   "label": "age_h=24",
+   "metrics": {
+    "continuity_precision": [
+     43,
+     65
+    ],
+    "continuity_recall": [
+     43,
+     58
+    ],
+    "split_failures": [
+     22,
+     100
+    ],
+    "merge_failures": [
+     15,
+     58
+    ],
+    "id_stability": [
+     16,
+     19
+    ],
+    "mixed_developments": [
+     12,
+     31
+    ],
+    "duplicate_membership": [
+     0,
+     110
+    ],
+    "single_source_developments": [
+     0,
+     null
+    ],
+    "roundup_source_inflation": [
+     0,
+     null
+    ],
+    "roundup_summaries": [
+     0,
+     null
+    ],
+    "error_classes": {
+     "whole-storyline overmerge": 17,
+     "other": 4,
+     "segmentation interaction": 5,
+     "late attachment": 5,
+     "missed continuation": 6
+    }
+   },
+   "blocked_attachments_in_replay": 0
+  },
+  "age_h=36": {
+   "label": "age_h=36",
+   "metrics": {
+    "continuity_precision": [
+     43,
+     65
+    ],
+    "continuity_recall": [
+     43,
+     58
+    ],
+    "split_failures": [
+     22,
+     100
+    ],
+    "merge_failures": [
+     15,
+     58
+    ],
+    "id_stability": [
+     16,
+     19
+    ],
+    "mixed_developments": [
+     12,
+     31
+    ],
+    "duplicate_membership": [
+     0,
+     110
+    ],
+    "single_source_developments": [
+     0,
+     null
+    ],
+    "roundup_source_inflation": [
+     0,
+     null
+    ],
+    "roundup_summaries": [
+     0,
+     null
+    ],
+    "error_classes": {
+     "whole-storyline overmerge": 17,
+     "other": 4,
+     "segmentation interaction": 5,
+     "late attachment": 5,
+     "missed continuation": 6
+    }
+   },
+   "blocked_attachments_in_replay": 0
+  },
+  "centroid=0.40": {
+   "label": "centroid=0.40",
+   "metrics": {
+    "continuity_precision": [
+     43,
+     65
+    ],
+    "continuity_recall": [
+     43,
+     58
+    ],
+    "split_failures": [
+     22,
+     100
+    ],
+    "merge_failures": [
+     15,
+     58
+    ],
+    "id_stability": [
+     16,
+     19
+    ],
+    "mixed_developments": [
+     12,
+     31
+    ],
+    "duplicate_membership": [
+     0,
+     110
+    ],
+    "single_source_developments": [
+     0,
+     null
+    ],
+    "roundup_source_inflation": [
+     0,
+     null
+    ],
+    "roundup_summaries": [
+     0,
+     null
+    ],
+    "error_classes": {
+     "whole-storyline overmerge": 17,
+     "other": 4,
+     "segmentation interaction": 5,
+     "late attachment": 5,
+     "missed continuation": 6
+    }
+   },
+   "blocked_attachments_in_replay": 0
+  },
+  "centroid=0.45": {
+   "label": "centroid=0.45",
+   "metrics": {
+    "continuity_precision": [
+     43,
+     65
+    ],
+    "continuity_recall": [
+     43,
+     58
+    ],
+    "split_failures": [
+     22,
+     100
+    ],
+    "merge_failures": [
+     15,
+     58
+    ],
+    "id_stability": [
+     16,
+     19
+    ],
+    "mixed_developments": [
+     12,
+     31
+    ],
+    "duplicate_membership": [
+     0,
+     110
+    ],
+    "single_source_developments": [
+     0,
+     null
+    ],
+    "roundup_source_inflation": [
+     0,
+     null
+    ],
+    "roundup_summaries": [
+     0,
+     null
+    ],
+    "error_classes": {
+     "whole-storyline overmerge": 17,
+     "other": 4,
+     "segmentation interaction": 5,
+     "late attachment": 5,
+     "missed continuation": 6
+    }
+   },
+   "blocked_attachments_in_replay": 0
+  },
+  "centroid=0.50": {
+   "label": "centroid=0.50",
+   "metrics": {
+    "continuity_precision": [
+     43,
+     65
+    ],
+    "continuity_recall": [
+     43,
+     58
+    ],
+    "split_failures": [
+     22,
+     100
+    ],
+    "merge_failures": [
+     15,
+     58
+    ],
+    "id_stability": [
+     16,
+     19
+    ],
+    "mixed_developments": [
+     12,
+     31
+    ],
+    "duplicate_membership": [
+     0,
+     110
+    ],
+    "single_source_developments": [
+     0,
+     null
+    ],
+    "roundup_source_inflation": [
+     0,
+     null
+    ],
+    "roundup_summaries": [
+     0,
+     null
+    ],
+    "error_classes": {
+     "whole-storyline overmerge": 17,
+     "other": 4,
+     "segmentation interaction": 5,
+     "late attachment": 5,
+     "missed continuation": 6
+    }
+   },
+   "blocked_attachments_in_replay": 0
+  },
+  "centroid=0.55": {
+   "label": "centroid=0.55",
+   "metrics": {
+    "continuity_precision": [
+     41,
+     63
+    ],
+    "continuity_recall": [
+     41,
+     58
+    ],
+    "split_failures": [
+     22,
+     100
+    ],
+    "merge_failures": [
+     17,
+     58
+    ],
+    "id_stability": [
+     15,
+     19
+    ],
+    "mixed_developments": [
+     12,
+     31
+    ],
+    "duplicate_membership": [
+     0,
+     109
+    ],
+    "single_source_developments": [
+     0,
+     null
+    ],
+    "roundup_source_inflation": [
+     0,
+     null
+    ],
+    "roundup_summaries": [
+     0,
+     null
+    ],
+    "error_classes": {
+     "whole-storyline overmerge": 17,
+     "other": 5,
+     "segmentation interaction": 5,
+     "late attachment": 5,
+     "missed continuation": 7
+    }
+   },
+   "blocked_attachments_in_replay": 1
+  },
+  "founder_k_h=6": {
+   "label": "founder_k_h=6",
+   "metrics": {
+    "continuity_precision": [
+     43,
+     65
+    ],
+    "continuity_recall": [
+     43,
+     58
+    ],
+    "split_failures": [
+     22,
+     100
+    ],
+    "merge_failures": [
+     15,
+     58
+    ],
+    "id_stability": [
+     16,
+     19
+    ],
+    "mixed_developments": [
+     12,
+     31
+    ],
+    "duplicate_membership": [
+     0,
+     110
+    ],
+    "single_source_developments": [
+     0,
+     null
+    ],
+    "roundup_source_inflation": [
+     0,
+     null
+    ],
+    "roundup_summaries": [
+     0,
+     null
+    ],
+    "error_classes": {
+     "whole-storyline overmerge": 17,
+     "other": 4,
+     "segmentation interaction": 5,
+     "late attachment": 5,
+     "missed continuation": 6
+    }
+   },
+   "blocked_attachments_in_replay": 0
+  },
+  "founder_k_h=12": {
+   "label": "founder_k_h=12",
+   "metrics": {
+    "continuity_precision": [
+     43,
+     65
+    ],
+    "continuity_recall": [
+     43,
+     58
+    ],
+    "split_failures": [
+     22,
+     100
+    ],
+    "merge_failures": [
+     15,
+     58
+    ],
+    "id_stability": [
+     16,
+     19
+    ],
+    "mixed_developments": [
+     12,
+     31
+    ],
+    "duplicate_membership": [
+     0,
+     110
+    ],
+    "single_source_developments": [
+     0,
+     null
+    ],
+    "roundup_source_inflation": [
+     0,
+     null
+    ],
+    "roundup_summaries": [
+     0,
+     null
+    ],
+    "error_classes": {
+     "whole-storyline overmerge": 17,
+     "other": 4,
+     "segmentation interaction": 5,
+     "late attachment": 5,
+     "missed continuation": 6
+    }
+   },
+   "blocked_attachments_in_replay": 0
+  },
+  "founder_k_h=24": {
+   "label": "founder_k_h=24",
+   "metrics": {
+    "continuity_precision": [
+     43,
+     65
+    ],
+    "continuity_recall": [
+     43,
+     58
+    ],
+    "split_failures": [
+     22,
+     100
+    ],
+    "merge_failures": [
+     15,
+     58
+    ],
+    "id_stability": [
+     16,
+     19
+    ],
+    "mixed_developments": [
+     12,
+     31
+    ],
+    "duplicate_membership": [
+     0,
+     110
+    ],
+    "single_source_developments": [
+     0,
+     null
+    ],
+    "roundup_source_inflation": [
+     0,
+     null
+    ],
+    "roundup_summaries": [
+     0,
+     null
+    ],
+    "error_classes": {
+     "whole-storyline overmerge": 17,
+     "other": 4,
+     "segmentation interaction": 5,
+     "late attachment": 5,
+     "missed continuation": 6
+    }
+   },
+   "blocked_attachments_in_replay": 0
+  },
+  "founder_k_h=36": {
+   "label": "founder_k_h=36",
+   "metrics": {
+    "continuity_precision": [
+     43,
+     65
+    ],
+    "continuity_recall": [
+     43,
+     58
+    ],
+    "split_failures": [
+     22,
+     100
+    ],
+    "merge_failures": [
+     15,
+     58
+    ],
+    "id_stability": [
+     16,
+     19
+    ],
+    "mixed_developments": [
+     12,
+     31
+    ],
+    "duplicate_membership": [
+     0,
+     110
+    ],
+    "single_source_developments": [
+     0,
+     null
+    ],
+    "roundup_source_inflation": [
+     0,
+     null
+    ],
+    "roundup_summaries": [
+     0,
+     null
+    ],
+    "error_classes": {
+     "whole-storyline overmerge": 17,
+     "other": 4,
+     "segmentation interaction": 5,
+     "late attachment": 5,
+     "missed continuation": 6
+    }
+   },
+   "blocked_attachments_in_replay": 0
+  }
+ }
+}

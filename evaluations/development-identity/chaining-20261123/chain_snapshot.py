@@ -82,7 +82,10 @@ def main(snap, want, out):
 
     rows = session.execute(text("select event_id, item_id, added_at, added_run_id from event_items")).all()
     by_ev = defaultdict(list)
+    null_added = sum(1 for _, _, a, _ in rows if a is None)
     for e, i, a, r in rows:
+        if a is None:      # memberships without added_at cannot be ordered: excluded, count reported
+            continue
         by_ev[e].append((datetime.fromisoformat(str(a)), i, r))
     devs = {e: sorted(v) for e, v in by_ev.items() if len(v) >= 3}
     summaries = dict(session.execute(text("select id, summary from events")).all())
@@ -188,7 +191,7 @@ def main(snap, want, out):
             print(n_done + 1, "devs done; last size", n, round(time.time() - t0), "s", flush=True)
 
     per = list(results.values())
-    R = {"snapshot_sha256": got, "developments_ge3": len(per), "items_in_them": sum(r["size"] for r in per)}
+    R = {"memberships_without_added_at_excluded": null_added, "snapshot_sha256": got, "developments_ge3": len(per), "items_in_them": sum(r["size"] for r in per)}
     keys = ("size", "span_days", "chain_depth_max", "chain_depth_median", "late_median_cos_first_run_centroid",
             "no_direct_link_to_first_run_share", "late_no_direct_link_to_first_run_share")
     R["distributions"] = {k: pq([r[k] for r in per if r[k] is not None]) for k in keys}
