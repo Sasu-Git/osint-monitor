@@ -1,0 +1,161 @@
+{
+ "status": "DRAFT",
+ "snapshot": "gold-snap.db",
+ "snapshot_sha256": "7463859a4f3537eb29447a755f252dbebc80cc01a1d855739c57b10489964c3c",
+ "seed": 20261124,
+ "script": "build_sample.py",
+ "script_sha256": "e6c686ec0cf1b9660e15d8ed643ad218066f8e436c61e0ee33c60396faea0eb9",
+ "parameters": {
+  "FOUNDER_H": 6.0,
+  "LATE_H": 48.0,
+  "BURST_GAP_H": 24.0,
+  "MIN_SIZE": 3,
+  "SIDE_ITEMS": 3,
+  "NEIGHBOUR_H": 24.0,
+  "TEXT_CHARS": 600,
+  "bands_h": [
+   [
+    "G1_6h_48h",
+    6.0,
+    48.0
+   ],
+   [
+    "G2_2d_7d",
+    48.0,
+    168.0
+   ],
+   [
+    "G3_7d_21d",
+    168.0,
+    504.0
+   ],
+   [
+    "G4_21d_plus",
+    504.0,
+    null
+   ]
+  ],
+  "strata_order": [
+   "E_CHAIN_FAILURE",
+   "C_RECURRING_GAP",
+   "D_DRIFT_MULTIDAY",
+   "B_CONTINUOUS_MULTIDAY",
+   "A_SHORT"
+  ],
+  "E_MIN_SPAN_H": 168.0,
+  "E_MIN_DEPTH": 8,
+  "D_MAX_LATE_COS": 0.55,
+  "B_MAX_GAP_H": 24.0,
+  "B_MAX_SPAN_H": 336.0,
+  "A_SPAN_H": [
+   12.0,
+   48.0
+  ],
+  "plan_cases_and_per_development": {
+   "A_SHORT": [
+    30,
+    1
+   ],
+   "B_CONTINUOUS_MULTIDAY": [
+    30,
+    1
+   ],
+   "C_RECURRING_GAP": [
+    30,
+    2
+   ],
+   "D_DRIFT_MULTIDAY": [
+    30,
+    2
+   ],
+   "E_CHAIN_FAILURE": [
+    40,
+    3
+   ]
+  },
+  "pinned_development_cases": {
+   "398": 6
+  },
+  "split_acceptance_fraction": 0.5
+ },
+ "frame": {
+  "developments_ge_min_size": 1274,
+  "excluded_upstream_dev_id": 167,
+  "excluded_identity_gold_item": 14,
+  "eligible": 1093
+ },
+ "strata": {
+  "E_CHAIN_FAILURE": {
+   "pool": 32,
+   "developments": 14,
+   "cases": 44
+  },
+  "C_RECURRING_GAP": {
+   "pool": 75,
+   "developments": 15,
+   "cases": 28
+  },
+  "D_DRIFT_MULTIDAY": {
+   "pool": 86,
+   "developments": 15,
+   "cases": 25
+  },
+  "B_CONTINUOUS_MULTIDAY": {
+   "pool": 94,
+   "developments": 30,
+   "cases": 30
+  },
+  "A_SHORT": {
+   "pool": 513,
+   "developments": 30,
+   "cases": 30
+  }
+ },
+ "bands": {
+  "G1_6h_48h": 30,
+  "G2_2d_7d": 101,
+  "G3_7d_21d": 23,
+  "G4_21d_plus": 3
+ },
+ "cases": 157,
+ "developments": 104,
+ "split": {
+  "development": 74,
+  "acceptance": 83
+ },
+ "overlap": {
+  "upstream_gold_developments_total": 263,
+  "upstream_gold_in_drawn_developments": 0,
+  "upstream_gold_in_frame_before_exclusion": 167,
+  "identity_gold_items_total": 228,
+  "identity_gold_items_matched_in_snapshot": 33,
+  "identity_gold_matched_items_in_drawn_developments": 0,
+  "identity_gold_matched_items_in_shown_case_items": 0,
+  "developments_excluded_for_identity_gold_items": 14,
+  "identity_window_items_total": 810,
+  "identity_window_items_matched_in_snapshot": 61,
+  "identity_window_matched_items_in_drawn_developments": 3,
+  "identity_window_matched_items_in_shown_case_items": 3
+ },
+ "identity_inputs": {
+  "gold_case_item_ids": 228,
+  "gold_items_found_in_windows": 228,
+  "window_items": 810,
+  "window_files_sha256": {
+   "../clustering/windows/2026-08-21.items.jsonl": "c4932b5c4acf7d7566efd87b27a25dcb3ce78410c836ae1565463336ea860814",
+   "../clustering/windows/2026-09-25.items.jsonl": "dd84b77e1b99c487396e1dc46411ea626ec49b005f98840e6a2f4dbba6affaef",
+   "../clustering/windows/2026-08-31.items.jsonl": "aed1d3041577c500c1eaddbbedd7f71aae088d0006dddec62a4a4b69e1d474de",
+   "windows/2026-09-30-multilingual.items.jsonl": "492e17ce0ed0121d5e0ceafc0bdbb376e94fe4a0245880f74fd0cc1c3fb264d9"
+  },
+  "gold_yaml_sha256": "cc98765b7506b9faa3b81913655978c23afc0d21202e8b69e85c1217ffa2cc58"
+ },
+ "upstream_inputs_sha256": {
+  "topic": "d779d9c82c5f20a6548883ec57a02c75de942fe742764dc1f2c5e6df6d519e24",
+  "location": "52d33cdc7a3dc12a6aa2b6b6d07f6d969e55963ba2788b24de3f8179f5227ed6"
+ },
+ "outputs_sha256": {
+  "cases.json": "c1d41fe7fc2361817b460bb1172d154803ed9788f5dbaf0367b1c1c43cf338fb",
+  "key.json": "ba1f0bc4c444b588c417bf3608f2e387b6e5068a2c2be9a89610e1cb84980981",
+  "split.json": "20d34a6da64b012428f6b92bf8a5e16c9ff09678741d8402021e104f87fa8710"
+ }
+}

@@ -1,0 +1,5100 @@
+{
+ "cases": [
+  {
+   "development_id": 1146,
+   "stratum": "A_SHORT",
+   "band": "G1_6h_48h",
+   "gap_h": 11.4,
+   "a_items": [
+    26410,
+    26541
+   ],
+   "b_items": [
+    26664,
+    26751,
+    26985
+   ],
+   "case_id": "LH001",
+   "stratum_pool_size": 513,
+   "development_features": {
+    "size": 9,
+    "span_h": 28.02,
+    "n_sources": 6,
+    "founder_n": 2,
+    "late_n": 0,
+    "late_median_cos_founders": null,
+    "all_median_cos_founders": 0.7487,
+    "max_gap_h": 8.6,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": null,
+    "chain_depth_median": null,
+    "late_no_founder_link_share": null
+   }
+  },
+  {
+   "development_id": 397,
+   "stratum": "E_CHAIN_FAILURE",
+   "band": "G3_7d_21d",
+   "gap_h": 224.59,
+   "a_items": [
+    8598
+   ],
+   "b_items": [
+    16599,
+    17529,
+    18665
+   ],
+   "case_id": "LH002",
+   "stratum_pool_size": 32,
+   "development_features": {
+    "size": 330,
+    "span_h": 471.78,
+    "n_sources": 16,
+    "founder_n": 1,
+    "late_n": 310,
+    "late_median_cos_founders": 0.4933,
+    "all_median_cos_founders": 0.4938,
+    "max_gap_h": 29.4,
+    "n_bursts": 4,
+    "largest_burst_share": 0.5182,
+    "second_burst_n": 150,
+    "chain_depth_max": 15,
+    "chain_depth_median": 6.0,
+    "late_no_founder_link_share": 0.9323
+   }
+  },
+  {
+   "development_id": 449,
+   "stratum": "E_CHAIN_FAILURE",
+   "band": "G4_21d_plus",
+   "gap_h": 532.16,
+   "a_items": [
+    8355
+   ],
+   "b_items": [
+    29265,
+    29264,
+    29112
+   ],
+   "case_id": "LH003",
+   "stratum_pool_size": 32,
+   "development_features": {
+    "size": 783,
+    "span_h": 777.97,
+    "n_sources": 16,
+    "founder_n": 1,
+    "late_n": 772,
+    "late_median_cos_founders": 0.4608,
+    "all_median_cos_founders": 0.462,
+    "max_gap_h": 25.29,
+    "n_bursts": 2,
+    "largest_burst_share": 0.9642,
+    "second_burst_n": 28,
+    "chain_depth_max": 24,
+    "chain_depth_median": 12,
+    "late_no_founder_link_share": 0.9987
+   }
+  },
+  {
+   "development_id": 419,
+   "stratum": "D_DRIFT_MULTIDAY",
+   "band": "G2_2d_7d",
+   "gap_h": 57.69,
+   "a_items": [
+    8549
+   ],
+   "b_items": [
+    12040,
+    12235,
+    13572
+   ],
+   "case_id": "LH004",
+   "stratum_pool_size": 86,
+   "development_features": {
+    "size": 41,
+    "span_h": 88.4,
+    "n_sources": 11,
+    "founder_n": 1,
+    "late_n": 12,
+    "late_median_cos_founders": 0.2798,
+    "all_median_cos_founders": 0.3087,
+    "max_gap_h": 12.49,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 4,
+    "chain_depth_median": 2,
+    "late_no_founder_link_share": 1.0
+   }
+  },
+  {
+   "development_id": 122,
+   "stratum": "D_DRIFT_MULTIDAY",
+   "band": "G2_2d_7d",
+   "gap_h": 78.13,
+   "a_items": [
+    1767
+   ],
+   "b_items": [
+    2349,
+    2357,
+    2397
+   ],
+   "case_id": "LH005",
+   "stratum_pool_size": 86,
+   "development_features": {
+    "size": 23,
+    "span_h": 136.1,
+    "n_sources": 8,
+    "founder_n": 1,
+    "late_n": 19,
+    "late_median_cos_founders": 0.4237,
+    "all_median_cos_founders": 0.4419,
+    "max_gap_h": 33.65,
+    "n_bursts": 2,
+    "largest_burst_share": 0.9565,
+    "second_burst_n": 1,
+    "chain_depth_max": 6,
+    "chain_depth_median": 2,
+    "late_no_founder_link_share": 0.9474
+   }
+  },
+  {
+   "development_id": 514,
+   "stratum": "E_CHAIN_FAILURE",
+   "band": "G2_2d_7d",
+   "gap_h": 149.62,
+   "a_items": [
+    8485
+   ],
+   "b_items": [
+    15259,
+    15836,
+    16219
+   ],
+   "case_id": "LH006",
+   "stratum_pool_size": 32,
+   "development_features": {
+    "size": 274,
+    "span_h": 478.28,
+    "n_sources": 15,
+    "founder_n": 1,
+    "late_n": 266,
+    "late_median_cos_founders": 0.2773,
+    "all_median_cos_founders": 0.2801,
+    "max_gap_h": 29.62,
+    "n_bursts": 3,
+    "largest_burst_share": 0.9891,
+    "second_burst_n": 2,
+    "chain_depth_max": 18,
+    "chain_depth_median": 12.0,
+    "late_no_founder_link_share": 1.0
+   }
+  },
+  {
+   "development_id": 660,
+   "stratum": "D_DRIFT_MULTIDAY",
+   "band": "G2_2d_7d",
+   "gap_h": 56.24,
+   "a_items": [
+    13989
+   ],
+   "b_items": [
+    14871,
+    15257,
+    15346
+   ],
+   "case_id": "LH007",
+   "stratum_pool_size": 86,
+   "development_features": {
+    "size": 4,
+    "span_h": 56.24,
+    "n_sources": 2,
+    "founder_n": 1,
+    "late_n": 2,
+    "late_median_cos_founders": 0.5297,
+    "all_median_cos_founders": 0.5541,
+    "max_gap_h": 43.21,
+    "n_bursts": 2,
+    "largest_burst_share": 0.75,
+    "second_burst_n": 1,
+    "chain_depth_max": 2,
+    "chain_depth_median": 1.5,
+    "late_no_founder_link_share": 1.0
+   }
+  },
+  {
+   "development_id": 1945,
+   "stratum": "C_RECURRING_GAP",
+   "band": "G2_2d_7d",
+   "gap_h": 51.51,
+   "a_items": [
+    47631
+   ],
+   "b_items": [
+    51140,
+    51087,
+    51414
+   ],
+   "case_id": "LH008",
+   "stratum_pool_size": 75,
+   "development_features": {
+    "size": 9,
+    "span_h": 51.51,
+    "n_sources": 5,
+    "founder_n": 1,
+    "late_n": 2,
+    "late_median_cos_founders": 0.4463,
+    "all_median_cos_founders": 0.4513,
+    "max_gap_h": 26.59,
+    "n_bursts": 2,
+    "largest_burst_share": 0.6667,
+    "second_burst_n": 3,
+    "chain_depth_max": 3,
+    "chain_depth_median": 1,
+    "late_no_founder_link_share": 1.0
+   }
+  },
+  {
+   "development_id": 133,
+   "stratum": "C_RECURRING_GAP",
+   "band": "G2_2d_7d",
+   "gap_h": 85.92,
+   "a_items": [
+    1919
+   ],
+   "b_items": [
+    4846,
+    4196
+   ],
+   "case_id": "LH009",
+   "stratum_pool_size": 75,
+   "development_features": {
+    "size": 12,
+    "span_h": 85.92,
+    "n_sources": 5,
+    "founder_n": 1,
+    "late_n": 4,
+    "late_median_cos_founders": 0.5797,
+    "all_median_cos_founders": 0.6072,
+    "max_gap_h": 24.32,
+    "n_bursts": 2,
+    "largest_burst_share": 0.8333,
+    "second_burst_n": 2,
+    "chain_depth_max": 3,
+    "chain_depth_median": 0.0,
+    "late_no_founder_link_share": 1.0
+   }
+  },
+  {
+   "development_id": 1336,
+   "stratum": "E_CHAIN_FAILURE",
+   "band": "G2_2d_7d",
+   "gap_h": 159.7,
+   "a_items": [
+    30089,
+    30333,
+    30418
+   ],
+   "b_items": [
+    39143,
+    39356,
+    40500
+   ],
+   "case_id": "LH010",
+   "stratum_pool_size": 32,
+   "development_features": {
+    "size": 270,
+    "span_h": 443.08,
+    "n_sources": 13,
+    "founder_n": 3,
+    "late_n": 255,
+    "late_median_cos_founders": 0.5924,
+    "all_median_cos_founders": 0.5968,
+    "max_gap_h": 16.35,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 12,
+    "chain_depth_median": 6.0,
+    "late_no_founder_link_share": 0.9804
+   }
+  },
+  {
+   "development_id": 1429,
+   "stratum": "A_SHORT",
+   "band": "G1_6h_48h",
+   "gap_h": 12.33,
+   "a_items": [
+    32901
+   ],
+   "b_items": [
+    33523,
+    33574
+   ],
+   "case_id": "LH011",
+   "stratum_pool_size": 513,
+   "development_features": {
+    "size": 3,
+    "span_h": 17.86,
+    "n_sources": 2,
+    "founder_n": 1,
+    "late_n": 0,
+    "late_median_cos_founders": null,
+    "all_median_cos_founders": 0.7674,
+    "max_gap_h": 12.33,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": null,
+    "chain_depth_median": null,
+    "late_no_founder_link_share": null
+   }
+  },
+  {
+   "development_id": 536,
+   "stratum": "D_DRIFT_MULTIDAY",
+   "band": "G2_2d_7d",
+   "gap_h": 52.79,
+   "a_items": [
+    10774,
+    11208,
+    11319
+   ],
+   "b_items": [
+    12986,
+    13065,
+    14251
+   ],
+   "case_id": "LH012",
+   "stratum_pool_size": 86,
+   "development_features": {
+    "size": 15,
+    "span_h": 52.79,
+    "n_sources": 6,
+    "founder_n": 3,
+    "late_n": 3,
+    "late_median_cos_founders": 0.453,
+    "all_median_cos_founders": 0.5302,
+    "max_gap_h": 12.1,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 3,
+    "chain_depth_median": 2,
+    "late_no_founder_link_share": 0.6667
+   }
+  },
+  {
+   "development_id": 1184,
+   "stratum": "C_RECURRING_GAP",
+   "band": "G2_2d_7d",
+   "gap_h": 87.58,
+   "a_items": [
+    26997,
+    27197,
+    27322
+   ],
+   "b_items": [
+    30584,
+    31186,
+    31487
+   ],
+   "case_id": "LH013",
+   "stratum_pool_size": 75,
+   "development_features": {
+    "size": 14,
+    "span_h": 137.95,
+    "n_sources": 7,
+    "founder_n": 3,
+    "late_n": 8,
+    "late_median_cos_founders": 0.5882,
+    "all_median_cos_founders": 0.6449,
+    "max_gap_h": 32.41,
+    "n_bursts": 3,
+    "largest_burst_share": 0.5714,
+    "second_burst_n": 5,
+    "chain_depth_max": 6,
+    "chain_depth_median": 2.5,
+    "late_no_founder_link_share": 0.875
+   }
+  },
+  {
+   "development_id": 916,
+   "stratum": "C_RECURRING_GAP",
+   "band": "G2_2d_7d",
+   "gap_h": 50.79,
+   "a_items": [
+    20931,
+    21034,
+    21268
+   ],
+   "b_items": [
+    22305,
+    22402
+   ],
+   "case_id": "LH014",
+   "stratum_pool_size": 75,
+   "development_features": {
+    "size": 7,
+    "span_h": 53.65,
+    "n_sources": 5,
+    "founder_n": 3,
+    "late_n": 2,
+    "late_median_cos_founders": 0.7101,
+    "all_median_cos_founders": 0.891,
+    "max_gap_h": 31.11,
+    "n_bursts": 2,
+    "largest_burst_share": 0.7143,
+    "second_burst_n": 2,
+    "chain_depth_max": 5,
+    "chain_depth_median": 2,
+    "late_no_founder_link_share": 0.0
+   }
+  },
+  {
+   "development_id": 1387,
+   "stratum": "E_CHAIN_FAILURE",
+   "band": "G2_2d_7d",
+   "gap_h": 68.53,
+   "a_items": [
+    29554
+   ],
+   "b_items": [
+    33531,
+    34170,
+    34248
+   ],
+   "case_id": "LH015",
+   "stratum_pool_size": 32,
+   "development_features": {
+    "size": 13,
+    "span_h": 189.1,
+    "n_sources": 4,
+    "founder_n": 1,
+    "late_n": 10,
+    "late_median_cos_founders": 0.5388,
+    "all_median_cos_founders": 0.5469,
+    "max_gap_h": 42.42,
+    "n_bursts": 4,
+    "largest_burst_share": 0.4615,
+    "second_burst_n": 5,
+    "chain_depth_max": 8,
+    "chain_depth_median": 4,
+    "late_no_founder_link_share": 1.0
+   }
+  },
+  {
+   "development_id": 56,
+   "stratum": "A_SHORT",
+   "band": "G1_6h_48h",
+   "gap_h": 35.83,
+   "a_items": [
+    1066,
+    1045,
+    1094
+   ],
+   "b_items": [
+    1436
+   ],
+   "case_id": "LH016",
+   "stratum_pool_size": 513,
+   "development_features": {
+    "size": 6,
+    "span_h": 35.83,
+    "n_sources": 3,
+    "founder_n": 4,
+    "late_n": 0,
+    "late_median_cos_founders": null,
+    "all_median_cos_founders": 0.8601,
+    "max_gap_h": 29.79,
+    "n_bursts": 2,
+    "largest_burst_share": 0.8333,
+    "second_burst_n": 1,
+    "chain_depth_max": null,
+    "chain_depth_median": null,
+    "late_no_founder_link_share": null
+   }
+  },
+  {
+   "development_id": 1793,
+   "stratum": "B_CONTINUOUS_MULTIDAY",
+   "band": "G2_2d_7d",
+   "gap_h": 51.47,
+   "a_items": [
+    45728
+   ],
+   "b_items": [
+    47960,
+    49173
+   ],
+   "case_id": "LH017",
+   "stratum_pool_size": 94,
+   "development_features": {
+    "size": 4,
+    "span_h": 51.47,
+    "n_sources": 3,
+    "founder_n": 1,
+    "late_n": 1,
+    "late_median_cos_founders": 0.6254,
+    "all_median_cos_founders": 0.6941,
+    "max_gap_h": 23.91,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 2,
+    "chain_depth_median": 1.0,
+    "late_no_founder_link_share": 1.0
+   }
+  },
+  {
+   "development_id": 771,
+   "stratum": "A_SHORT",
+   "band": "G1_6h_48h",
+   "gap_h": 41.38,
+   "a_items": [
+    17346,
+    17480
+   ],
+   "b_items": [
+    19473
+   ],
+   "case_id": "LH018",
+   "stratum_pool_size": 513,
+   "development_features": {
+    "size": 4,
+    "span_h": 41.38,
+    "n_sources": 2,
+    "founder_n": 2,
+    "late_n": 0,
+    "late_median_cos_founders": null,
+    "all_median_cos_founders": 0.789,
+    "max_gap_h": 28.93,
+    "n_bursts": 2,
+    "largest_burst_share": 0.75,
+    "second_burst_n": 1,
+    "chain_depth_max": null,
+    "chain_depth_median": null,
+    "late_no_founder_link_share": null
+   }
+  },
+  {
+   "development_id": 2002,
+   "stratum": "B_CONTINUOUS_MULTIDAY",
+   "band": "G2_2d_7d",
+   "gap_h": 49.29,
+   "a_items": [
+    52183,
+    52257,
+    52548
+   ],
+   "b_items": [
+    55064,
+    55447,
+    55686
+   ],
+   "case_id": "LH019",
+   "stratum_pool_size": 94,
+   "development_features": {
+    "size": 19,
+    "span_h": 49.29,
+    "n_sources": 5,
+    "founder_n": 3,
+    "late_n": 1,
+    "late_median_cos_founders": 0.5115,
+    "all_median_cos_founders": 0.7773,
+    "max_gap_h": 15.67,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 5,
+    "chain_depth_median": 2,
+    "late_no_founder_link_share": 1.0
+   }
+  },
+  {
+   "development_id": 441,
+   "stratum": "E_CHAIN_FAILURE",
+   "band": "G2_2d_7d",
+   "gap_h": 94.64,
+   "a_items": [
+    8541
+   ],
+   "b_items": [
+    13205,
+    14178,
+    14429
+   ],
+   "case_id": "LH020",
+   "stratum_pool_size": 32,
+   "development_features": {
+    "size": 74,
+    "span_h": 256.19,
+    "n_sources": 8,
+    "founder_n": 1,
+    "late_n": 44,
+    "late_median_cos_founders": 0.6324,
+    "all_median_cos_founders": 0.6058,
+    "max_gap_h": 23.3,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 9,
+    "chain_depth_median": 4.0,
+    "late_no_founder_link_share": 0.9318
+   }
+  },
+  {
+   "development_id": 2084,
+   "stratum": "B_CONTINUOUS_MULTIDAY",
+   "band": "G2_2d_7d",
+   "gap_h": 55.65,
+   "a_items": [
+    55234,
+    55302,
+    55471
+   ],
+   "b_items": [
+    57588,
+    58236,
+    58359
+   ],
+   "case_id": "LH021",
+   "stratum_pool_size": 94,
+   "development_features": {
+    "size": 18,
+    "span_h": 57.78,
+    "n_sources": 8,
+    "founder_n": 5,
+    "late_n": 3,
+    "late_median_cos_founders": 0.6869,
+    "all_median_cos_founders": 0.7884,
+    "max_gap_h": 12.25,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 4,
+    "chain_depth_median": 2.0,
+    "late_no_founder_link_share": 0.3333
+   }
+  },
+  {
+   "development_id": 441,
+   "stratum": "E_CHAIN_FAILURE",
+   "band": "G3_7d_21d",
+   "gap_h": 211.25,
+   "a_items": [
+    8541
+   ],
+   "b_items": [
+    18503,
+    19002,
+    18993
+   ],
+   "case_id": "LH022",
+   "stratum_pool_size": 32,
+   "development_features": {
+    "size": 74,
+    "span_h": 256.19,
+    "n_sources": 8,
+    "founder_n": 1,
+    "late_n": 44,
+    "late_median_cos_founders": 0.6324,
+    "all_median_cos_founders": 0.6058,
+    "max_gap_h": 23.3,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 9,
+    "chain_depth_median": 4.0,
+    "late_no_founder_link_share": 0.9318
+   }
+  },
+  {
+   "development_id": 398,
+   "stratum": "E_CHAIN_FAILURE",
+   "band": "G3_7d_21d",
+   "gap_h": 188.26,
+   "a_items": [
+    8440
+   ],
+   "b_items": [
+    15548,
+    15807,
+    16436
+   ],
+   "case_id": "LH023",
+   "stratum_pool_size": 32,
+   "development_features": {
+    "size": 2344,
+    "span_h": 1026.75,
+    "n_sources": 25,
+    "founder_n": 1,
+    "late_n": 2323,
+    "late_median_cos_founders": 0.3164,
+    "all_median_cos_founders": 0.3169,
+    "max_gap_h": 18.7,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 46,
+    "chain_depth_median": 11.0,
+    "late_no_founder_link_share": 0.997
+   }
+  },
+  {
+   "development_id": 1871,
+   "stratum": "C_RECURRING_GAP",
+   "band": "G2_2d_7d",
+   "gap_h": 85.48,
+   "a_items": [
+    48309,
+    48583
+   ],
+   "b_items": [
+    52948,
+    54247,
+    54267
+   ],
+   "case_id": "LH024",
+   "stratum_pool_size": 75,
+   "development_features": {
+    "size": 11,
+    "span_h": 85.48,
+    "n_sources": 3,
+    "founder_n": 2,
+    "late_n": 7,
+    "late_median_cos_founders": 0.7227,
+    "all_median_cos_founders": 0.7248,
+    "max_gap_h": 35.59,
+    "n_bursts": 2,
+    "largest_burst_share": 0.6364,
+    "second_burst_n": 4,
+    "chain_depth_max": 4,
+    "chain_depth_median": 1,
+    "late_no_founder_link_share": 0.4286
+   }
+  },
+  {
+   "development_id": 731,
+   "stratum": "C_RECURRING_GAP",
+   "band": "G2_2d_7d",
+   "gap_h": 68.06,
+   "a_items": [
+    15066
+   ],
+   "b_items": [
+    18411
+   ],
+   "case_id": "LH025",
+   "stratum_pool_size": 75,
+   "development_features": {
+    "size": 16,
+    "span_h": 125.08,
+    "n_sources": 7,
+    "founder_n": 1,
+    "late_n": 13,
+    "late_median_cos_founders": 0.5553,
+    "all_median_cos_founders": 0.5654,
+    "max_gap_h": 37.46,
+    "n_bursts": 4,
+    "largest_burst_share": 0.75,
+    "second_burst_n": 2,
+    "chain_depth_max": 6,
+    "chain_depth_median": 4.5,
+    "late_no_founder_link_share": 0.9231
+   }
+  },
+  {
+   "development_id": 1842,
+   "stratum": "D_DRIFT_MULTIDAY",
+   "band": "G2_2d_7d",
+   "gap_h": 61.75,
+   "a_items": [
+    45227
+   ],
+   "b_items": [
+    48348,
+    49331,
+    49498
+   ],
+   "case_id": "LH026",
+   "stratum_pool_size": 86,
+   "development_features": {
+    "size": 5,
+    "span_h": 63.76,
+    "n_sources": 3,
+    "founder_n": 1,
+    "late_n": 2,
+    "late_median_cos_founders": 0.4612,
+    "all_median_cos_founders": 0.5216,
+    "max_gap_h": 44.14,
+    "n_bursts": 2,
+    "largest_burst_share": 0.8,
+    "second_burst_n": 1,
+    "chain_depth_max": 3,
+    "chain_depth_median": 2,
+    "late_no_founder_link_share": 1.0
+   }
+  },
+  {
+   "development_id": 639,
+   "stratum": "E_CHAIN_FAILURE",
+   "band": "G2_2d_7d",
+   "gap_h": 69.29,
+   "a_items": [
+    13713,
+    13835
+   ],
+   "b_items": [
+    15191,
+    15469,
+    15541
+   ],
+   "case_id": "LH027",
+   "stratum_pool_size": 32,
+   "development_features": {
+    "size": 267,
+    "span_h": 313.53,
+    "n_sources": 12,
+    "founder_n": 2,
+    "late_n": 250,
+    "late_median_cos_founders": 0.5064,
+    "all_median_cos_founders": 0.524,
+    "max_gap_h": 18.15,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 10,
+    "chain_depth_median": 4,
+    "late_no_founder_link_share": 0.964
+   }
+  },
+  {
+   "development_id": 1387,
+   "stratum": "E_CHAIN_FAILURE",
+   "band": "G3_7d_21d",
+   "gap_h": 189.1,
+   "a_items": [
+    29554
+   ],
+   "b_items": [
+    39388,
+    41088
+   ],
+   "case_id": "LH028",
+   "stratum_pool_size": 32,
+   "development_features": {
+    "size": 13,
+    "span_h": 189.1,
+    "n_sources": 4,
+    "founder_n": 1,
+    "late_n": 10,
+    "late_median_cos_founders": 0.5388,
+    "all_median_cos_founders": 0.5469,
+    "max_gap_h": 42.42,
+    "n_bursts": 4,
+    "largest_burst_share": 0.4615,
+    "second_burst_n": 5,
+    "chain_depth_max": 8,
+    "chain_depth_median": 4,
+    "late_no_founder_link_share": 1.0
+   }
+  },
+  {
+   "development_id": 1251,
+   "stratum": "E_CHAIN_FAILURE",
+   "band": "G3_7d_21d",
+   "gap_h": 269.24,
+   "a_items": [
+    28897,
+    29070,
+    29028
+   ],
+   "b_items": [
+    45486,
+    46603
+   ],
+   "case_id": "LH029",
+   "stratum_pool_size": 32,
+   "development_features": {
+    "size": 198,
+    "span_h": 367.04,
+    "n_sources": 15,
+    "founder_n": 4,
+    "late_n": 168,
+    "late_median_cos_founders": 0.6817,
+    "all_median_cos_founders": 0.6976,
+    "max_gap_h": 39.6,
+    "n_bursts": 2,
+    "largest_burst_share": 0.9293,
+    "second_burst_n": 14,
+    "chain_depth_max": 15,
+    "chain_depth_median": 7.0,
+    "late_no_founder_link_share": 0.8095
+   }
+  },
+  {
+   "development_id": 74,
+   "stratum": "A_SHORT",
+   "band": "G1_6h_48h",
+   "gap_h": 16.6,
+   "a_items": [
+    1192,
+    1217
+   ],
+   "b_items": [
+    1328
+   ],
+   "case_id": "LH030",
+   "stratum_pool_size": 513,
+   "development_features": {
+    "size": 3,
+    "span_h": 16.6,
+    "n_sources": 2,
+    "founder_n": 2,
+    "late_n": 0,
+    "late_median_cos_founders": null,
+    "all_median_cos_founders": 0.9052,
+    "max_gap_h": 12.54,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": null,
+    "chain_depth_median": null,
+    "late_no_founder_link_share": null
+   }
+  },
+  {
+   "development_id": 263,
+   "stratum": "B_CONTINUOUS_MULTIDAY",
+   "band": "G2_2d_7d",
+   "gap_h": 59.05,
+   "a_items": [
+    5025,
+    5049,
+    5048
+   ],
+   "b_items": [
+    7109,
+    7474
+   ],
+   "case_id": "LH031",
+   "stratum_pool_size": 94,
+   "development_features": {
+    "size": 9,
+    "span_h": 59.05,
+    "n_sources": 3,
+    "founder_n": 4,
+    "late_n": 1,
+    "late_median_cos_founders": 0.5447,
+    "all_median_cos_founders": 0.7504,
+    "max_gap_h": 20.37,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 4,
+    "chain_depth_median": 1,
+    "late_no_founder_link_share": 1.0
+   }
+  },
+  {
+   "development_id": 43,
+   "stratum": "A_SHORT",
+   "band": "G1_6h_48h",
+   "gap_h": 12.63,
+   "a_items": [
+    860,
+    935
+   ],
+   "b_items": [
+    1019
+   ],
+   "case_id": "LH032",
+   "stratum_pool_size": 513,
+   "development_features": {
+    "size": 3,
+    "span_h": 12.63,
+    "n_sources": 2,
+    "founder_n": 2,
+    "late_n": 0,
+    "late_median_cos_founders": null,
+    "all_median_cos_founders": 0.9231,
+    "max_gap_h": 7.85,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": null,
+    "chain_depth_median": null,
+    "late_no_founder_link_share": null
+   }
+  },
+  {
+   "development_id": 1777,
+   "stratum": "C_RECURRING_GAP",
+   "band": "G2_2d_7d",
+   "gap_h": 162.0,
+   "a_items": [
+    45414,
+    45546,
+    45568
+   ],
+   "b_items": [
+    55239,
+    56109,
+    56550
+   ],
+   "case_id": "LH033",
+   "stratum_pool_size": 75,
+   "development_features": {
+    "size": 31,
+    "span_h": 162.0,
+    "n_sources": 4,
+    "founder_n": 4,
+    "late_n": 16,
+    "late_median_cos_founders": 0.5849,
+    "all_median_cos_founders": 0.607,
+    "max_gap_h": 38.74,
+    "n_bursts": 2,
+    "largest_burst_share": 0.5484,
+    "second_burst_n": 14,
+    "chain_depth_max": 8,
+    "chain_depth_median": 4,
+    "late_no_founder_link_share": 0.9375
+   }
+  },
+  {
+   "development_id": 1322,
+   "stratum": "D_DRIFT_MULTIDAY",
+   "band": "G2_2d_7d",
+   "gap_h": 61.51,
+   "a_items": [
+    28214
+   ],
+   "b_items": [
+    30726,
+    31231,
+    31440
+   ],
+   "case_id": "LH034",
+   "stratum_pool_size": 86,
+   "development_features": {
+    "size": 20,
+    "span_h": 96.75,
+    "n_sources": 8,
+    "founder_n": 1,
+    "late_n": 14,
+    "late_median_cos_founders": 0.4443,
+    "all_median_cos_founders": 0.4754,
+    "max_gap_h": 41.01,
+    "n_bursts": 2,
+    "largest_burst_share": 0.95,
+    "second_burst_n": 1,
+    "chain_depth_max": 4,
+    "chain_depth_median": 2.0,
+    "late_no_founder_link_share": 0.8571
+   }
+  },
+  {
+   "development_id": 362,
+   "stratum": "A_SHORT",
+   "band": "G1_6h_48h",
+   "gap_h": 13.16,
+   "a_items": [
+    7460,
+    7550
+   ],
+   "b_items": [
+    7531,
+    8004,
+    8071
+   ],
+   "case_id": "LH035",
+   "stratum_pool_size": 513,
+   "development_features": {
+    "size": 5,
+    "span_h": 13.16,
+    "n_sources": 3,
+    "founder_n": 2,
+    "late_n": 0,
+    "late_median_cos_founders": null,
+    "all_median_cos_founders": 0.6886,
+    "max_gap_h": 5.9,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": null,
+    "chain_depth_median": null,
+    "late_no_founder_link_share": null
+   }
+  },
+  {
+   "development_id": 441,
+   "stratum": "E_CHAIN_FAILURE",
+   "band": "G3_7d_21d",
+   "gap_h": 187.95,
+   "a_items": [
+    8541
+   ],
+   "b_items": [
+    16648,
+    17079
+   ],
+   "case_id": "LH036",
+   "stratum_pool_size": 32,
+   "development_features": {
+    "size": 74,
+    "span_h": 256.19,
+    "n_sources": 8,
+    "founder_n": 1,
+    "late_n": 44,
+    "late_median_cos_founders": 0.6324,
+    "all_median_cos_founders": 0.6058,
+    "max_gap_h": 23.3,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 9,
+    "chain_depth_median": 4.0,
+    "late_no_founder_link_share": 0.9318
+   }
+  },
+  {
+   "development_id": 90,
+   "stratum": "A_SHORT",
+   "band": "G1_6h_48h",
+   "gap_h": 23.36,
+   "a_items": [
+    1431,
+    1438
+   ],
+   "b_items": [
+    1675
+   ],
+   "case_id": "LH037",
+   "stratum_pool_size": 513,
+   "development_features": {
+    "size": 3,
+    "span_h": 23.36,
+    "n_sources": 2,
+    "founder_n": 2,
+    "late_n": 0,
+    "late_median_cos_founders": null,
+    "all_median_cos_founders": 0.951,
+    "max_gap_h": 22.2,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": null,
+    "chain_depth_median": null,
+    "late_no_founder_link_share": null
+   }
+  },
+  {
+   "development_id": 1605,
+   "stratum": "A_SHORT",
+   "band": "G1_6h_48h",
+   "gap_h": 33.83,
+   "a_items": [
+    36737
+   ],
+   "b_items": [
+    39221,
+    39222,
+    39161
+   ],
+   "case_id": "LH038",
+   "stratum_pool_size": 513,
+   "development_features": {
+    "size": 5,
+    "span_h": 36.2,
+    "n_sources": 3,
+    "founder_n": 1,
+    "late_n": 0,
+    "late_median_cos_founders": null,
+    "all_median_cos_founders": 0.5353,
+    "max_gap_h": 26.42,
+    "n_bursts": 2,
+    "largest_burst_share": 0.8,
+    "second_burst_n": 1,
+    "chain_depth_max": null,
+    "chain_depth_median": null,
+    "late_no_founder_link_share": null
+   }
+  },
+  {
+   "development_id": 536,
+   "stratum": "D_DRIFT_MULTIDAY",
+   "band": "G2_2d_7d",
+   "gap_h": 52.18,
+   "a_items": [
+    10774,
+    11208,
+    11319
+   ],
+   "b_items": [
+    12937,
+    14179,
+    14173
+   ],
+   "case_id": "LH039",
+   "stratum_pool_size": 86,
+   "development_features": {
+    "size": 15,
+    "span_h": 52.79,
+    "n_sources": 6,
+    "founder_n": 3,
+    "late_n": 3,
+    "late_median_cos_founders": 0.453,
+    "all_median_cos_founders": 0.5302,
+    "max_gap_h": 12.1,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 3,
+    "chain_depth_median": 2,
+    "late_no_founder_link_share": 0.6667
+   }
+  },
+  {
+   "development_id": 528,
+   "stratum": "B_CONTINUOUS_MULTIDAY",
+   "band": "G2_2d_7d",
+   "gap_h": 48.37,
+   "a_items": [
+    11197,
+    11187,
+    12038
+   ],
+   "b_items": [
+    13667,
+    13113,
+    14279
+   ],
+   "case_id": "LH040",
+   "stratum_pool_size": 94,
+   "development_features": {
+    "size": 9,
+    "span_h": 48.37,
+    "n_sources": 5,
+    "founder_n": 4,
+    "late_n": 1,
+    "late_median_cos_founders": 0.7844,
+    "all_median_cos_founders": 0.9033,
+    "max_gap_h": 17.51,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 3,
+    "chain_depth_median": 1,
+    "late_no_founder_link_share": 0.0
+   }
+  },
+  {
+   "development_id": 122,
+   "stratum": "D_DRIFT_MULTIDAY",
+   "band": "G2_2d_7d",
+   "gap_h": 91.84,
+   "a_items": [
+    1767
+   ],
+   "b_items": [
+    2370,
+    3079,
+    3455
+   ],
+   "case_id": "LH041",
+   "stratum_pool_size": 86,
+   "development_features": {
+    "size": 23,
+    "span_h": 136.1,
+    "n_sources": 8,
+    "founder_n": 1,
+    "late_n": 19,
+    "late_median_cos_founders": 0.4237,
+    "all_median_cos_founders": 0.4419,
+    "max_gap_h": 33.65,
+    "n_bursts": 2,
+    "largest_burst_share": 0.9565,
+    "second_burst_n": 1,
+    "chain_depth_max": 6,
+    "chain_depth_median": 2,
+    "late_no_founder_link_share": 0.9474
+   }
+  },
+  {
+   "development_id": 1493,
+   "stratum": "D_DRIFT_MULTIDAY",
+   "band": "G2_2d_7d",
+   "gap_h": 105.96,
+   "a_items": [
+    35652
+   ],
+   "b_items": [
+    42321,
+    43049
+   ],
+   "case_id": "LH042",
+   "stratum_pool_size": 86,
+   "development_features": {
+    "size": 10,
+    "span_h": 105.96,
+    "n_sources": 3,
+    "founder_n": 1,
+    "late_n": 6,
+    "late_median_cos_founders": 0.5378,
+    "all_median_cos_founders": 0.559,
+    "max_gap_h": 23.22,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 3,
+    "chain_depth_median": 2.0,
+    "late_no_founder_link_share": 0.8333
+   }
+  },
+  {
+   "development_id": 1493,
+   "stratum": "D_DRIFT_MULTIDAY",
+   "band": "G2_2d_7d",
+   "gap_h": 56.61,
+   "a_items": [
+    35652
+   ],
+   "b_items": [
+    37703,
+    39505,
+    41247
+   ],
+   "case_id": "LH043",
+   "stratum_pool_size": 86,
+   "development_features": {
+    "size": 10,
+    "span_h": 105.96,
+    "n_sources": 3,
+    "founder_n": 1,
+    "late_n": 6,
+    "late_median_cos_founders": 0.5378,
+    "all_median_cos_founders": 0.559,
+    "max_gap_h": 23.22,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 3,
+    "chain_depth_median": 2.0,
+    "late_no_founder_link_share": 0.8333
+   }
+  },
+  {
+   "development_id": 710,
+   "stratum": "B_CONTINUOUS_MULTIDAY",
+   "band": "G2_2d_7d",
+   "gap_h": 60.0,
+   "a_items": [
+    15095
+   ],
+   "b_items": [
+    16991,
+    17088,
+    17969
+   ],
+   "case_id": "LH044",
+   "stratum_pool_size": 94,
+   "development_features": {
+    "size": 11,
+    "span_h": 60.0,
+    "n_sources": 2,
+    "founder_n": 1,
+    "late_n": 2,
+    "late_median_cos_founders": 0.5578,
+    "all_median_cos_founders": 0.5239,
+    "max_gap_h": 21.77,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 2,
+    "chain_depth_median": 2,
+    "late_no_founder_link_share": 1.0
+   }
+  },
+  {
+   "development_id": 1871,
+   "stratum": "C_RECURRING_GAP",
+   "band": "G2_2d_7d",
+   "gap_h": 73.54,
+   "a_items": [
+    48309,
+    48583
+   ],
+   "b_items": [
+    52844,
+    52919,
+    53655
+   ],
+   "case_id": "LH045",
+   "stratum_pool_size": 75,
+   "development_features": {
+    "size": 11,
+    "span_h": 85.48,
+    "n_sources": 3,
+    "founder_n": 2,
+    "late_n": 7,
+    "late_median_cos_founders": 0.7227,
+    "all_median_cos_founders": 0.7248,
+    "max_gap_h": 35.59,
+    "n_bursts": 2,
+    "largest_burst_share": 0.6364,
+    "second_burst_n": 4,
+    "chain_depth_max": 4,
+    "chain_depth_median": 1,
+    "late_no_founder_link_share": 0.4286
+   }
+  },
+  {
+   "development_id": 468,
+   "stratum": "A_SHORT",
+   "band": "G1_6h_48h",
+   "gap_h": 8.04,
+   "a_items": [
+    9428
+   ],
+   "b_items": [
+    9429,
+    9599,
+    11476
+   ],
+   "case_id": "LH046",
+   "stratum_pool_size": 513,
+   "development_features": {
+    "size": 5,
+    "span_h": 31.53,
+    "n_sources": 4,
+    "founder_n": 1,
+    "late_n": 0,
+    "late_median_cos_founders": null,
+    "all_median_cos_founders": 0.4978,
+    "max_gap_h": 15.58,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": null,
+    "chain_depth_median": null,
+    "late_no_founder_link_share": null
+   }
+  },
+  {
+   "development_id": 27,
+   "stratum": "D_DRIFT_MULTIDAY",
+   "band": "G2_2d_7d",
+   "gap_h": 50.04,
+   "a_items": [
+    40
+   ],
+   "b_items": [
+    678,
+    637,
+    739
+   ],
+   "case_id": "LH047",
+   "stratum_pool_size": 86,
+   "development_features": {
+    "size": 9,
+    "span_h": 61.64,
+    "n_sources": 3,
+    "founder_n": 1,
+    "late_n": 2,
+    "late_median_cos_founders": 0.3193,
+    "all_median_cos_founders": 0.5493,
+    "max_gap_h": 16.39,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 2,
+    "chain_depth_median": 1,
+    "late_no_founder_link_share": 1.0
+   }
+  },
+  {
+   "development_id": 398,
+   "stratum": "E_CHAIN_FAILURE",
+   "band": "G4_21d_plus",
+   "gap_h": 918.46,
+   "a_items": [
+    8440
+   ],
+   "b_items": [
+    51340,
+    52027,
+    53377
+   ],
+   "case_id": "LH048",
+   "stratum_pool_size": 32,
+   "development_features": {
+    "size": 2344,
+    "span_h": 1026.75,
+    "n_sources": 25,
+    "founder_n": 1,
+    "late_n": 2323,
+    "late_median_cos_founders": 0.3164,
+    "all_median_cos_founders": 0.3169,
+    "max_gap_h": 18.7,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 46,
+    "chain_depth_median": 11.0,
+    "late_no_founder_link_share": 0.997
+   }
+  },
+  {
+   "development_id": 416,
+   "stratum": "E_CHAIN_FAILURE",
+   "band": "G2_2d_7d",
+   "gap_h": 65.48,
+   "a_items": [
+    8345
+   ],
+   "b_items": [
+    10247,
+    11214,
+    11453
+   ],
+   "case_id": "LH049",
+   "stratum_pool_size": 32,
+   "development_features": {
+    "size": 74,
+    "span_h": 212.73,
+    "n_sources": 8,
+    "founder_n": 1,
+    "late_n": 62,
+    "late_median_cos_founders": 0.4943,
+    "all_median_cos_founders": 0.5024,
+    "max_gap_h": 22.0,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 9,
+    "chain_depth_median": 3.0,
+    "late_no_founder_link_share": 0.7581
+   }
+  },
+  {
+   "development_id": 1190,
+   "stratum": "B_CONTINUOUS_MULTIDAY",
+   "band": "G2_2d_7d",
+   "gap_h": 62.28,
+   "a_items": [
+    27333,
+    27380
+   ],
+   "b_items": [
+    29061,
+    29826
+   ],
+   "case_id": "LH050",
+   "stratum_pool_size": 94,
+   "development_features": {
+    "size": 17,
+    "span_h": 62.28,
+    "n_sources": 6,
+    "founder_n": 2,
+    "late_n": 1,
+    "late_median_cos_founders": 0.3723,
+    "all_median_cos_founders": 0.5367,
+    "max_gap_h": 17.75,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 3,
+    "chain_depth_median": 2,
+    "late_no_founder_link_share": 1.0
+   }
+  },
+  {
+   "development_id": 421,
+   "stratum": "C_RECURRING_GAP",
+   "band": "G2_2d_7d",
+   "gap_h": 79.75,
+   "a_items": [
+    8558,
+    8550
+   ],
+   "b_items": [
+    13254,
+    14253
+   ],
+   "case_id": "LH051",
+   "stratum_pool_size": 75,
+   "development_features": {
+    "size": 11,
+    "span_h": 96.13,
+    "n_sources": 5,
+    "founder_n": 2,
+    "late_n": 3,
+    "late_median_cos_founders": 0.7023,
+    "all_median_cos_founders": 0.6406,
+    "max_gap_h": 28.42,
+    "n_bursts": 2,
+    "largest_burst_share": 0.8182,
+    "second_burst_n": 2,
+    "chain_depth_max": 3,
+    "chain_depth_median": 1,
+    "late_no_founder_link_share": 0.6667
+   }
+  },
+  {
+   "development_id": 515,
+   "stratum": "D_DRIFT_MULTIDAY",
+   "band": "G2_2d_7d",
+   "gap_h": 70.66,
+   "a_items": [
+    8356
+   ],
+   "b_items": [
+    11883,
+    13143,
+    14298
+   ],
+   "case_id": "LH052",
+   "stratum_pool_size": 86,
+   "development_features": {
+    "size": 26,
+    "span_h": 161.55,
+    "n_sources": 7,
+    "founder_n": 1,
+    "late_n": 12,
+    "late_median_cos_founders": 0.4764,
+    "all_median_cos_founders": 0.5925,
+    "max_gap_h": 37.78,
+    "n_bursts": 2,
+    "largest_burst_share": 0.9615,
+    "second_burst_n": 1,
+    "chain_depth_max": 7,
+    "chain_depth_median": 3.0,
+    "late_no_founder_link_share": 0.9167
+   }
+  },
+  {
+   "development_id": 725,
+   "stratum": "D_DRIFT_MULTIDAY",
+   "band": "G2_2d_7d",
+   "gap_h": 48.28,
+   "a_items": [
+    15710
+   ],
+   "b_items": [
+    17555,
+    17642,
+    17653
+   ],
+   "case_id": "LH053",
+   "stratum_pool_size": 86,
+   "development_features": {
+    "size": 14,
+    "span_h": 48.28,
+    "n_sources": 8,
+    "founder_n": 1,
+    "late_n": 2,
+    "late_median_cos_founders": 0.328,
+    "all_median_cos_founders": 0.4018,
+    "max_gap_h": 19.55,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 6,
+    "chain_depth_median": 4.0,
+    "late_no_founder_link_share": 1.0
+   }
+  },
+  {
+   "development_id": 786,
+   "stratum": "E_CHAIN_FAILURE",
+   "band": "G3_7d_21d",
+   "gap_h": 185.89,
+   "a_items": [
+    17661,
+    17741,
+    17799
+   ],
+   "b_items": [
+    24636,
+    24741,
+    25120
+   ],
+   "case_id": "LH054",
+   "stratum_pool_size": 32,
+   "development_features": {
+    "size": 73,
+    "span_h": 206.64,
+    "n_sources": 9,
+    "founder_n": 6,
+    "late_n": 57,
+    "late_median_cos_founders": 0.6703,
+    "all_median_cos_founders": 0.695,
+    "max_gap_h": 29.74,
+    "n_bursts": 2,
+    "largest_burst_share": 0.863,
+    "second_burst_n": 10,
+    "chain_depth_max": 8,
+    "chain_depth_median": 3,
+    "late_no_founder_link_share": 0.807
+   }
+  },
+  {
+   "development_id": 609,
+   "stratum": "A_SHORT",
+   "band": "G1_6h_48h",
+   "gap_h": 23.2,
+   "a_items": [
+    13407,
+    13176,
+    13179
+   ],
+   "b_items": [
+    14410,
+    14812
+   ],
+   "case_id": "LH055",
+   "stratum_pool_size": 513,
+   "development_features": {
+    "size": 9,
+    "span_h": 45.59,
+    "n_sources": 6,
+    "founder_n": 7,
+    "late_n": 0,
+    "late_median_cos_founders": null,
+    "all_median_cos_founders": 0.8406,
+    "max_gap_h": 22.39,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": null,
+    "chain_depth_median": null,
+    "late_no_founder_link_share": null
+   }
+  },
+  {
+   "development_id": 1482,
+   "stratum": "B_CONTINUOUS_MULTIDAY",
+   "band": "G2_2d_7d",
+   "gap_h": 89.0,
+   "a_items": [
+    35165,
+    35341
+   ],
+   "b_items": [
+    40964,
+    41118,
+    42436
+   ],
+   "case_id": "LH056",
+   "stratum_pool_size": 94,
+   "development_features": {
+    "size": 179,
+    "span_h": 116.5,
+    "n_sources": 9,
+    "founder_n": 2,
+    "late_n": 94,
+    "late_median_cos_founders": 0.6447,
+    "all_median_cos_founders": 0.6397,
+    "max_gap_h": 11.75,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 7,
+    "chain_depth_median": 4,
+    "late_no_founder_link_share": 0.9255
+   }
+  },
+  {
+   "development_id": 416,
+   "stratum": "E_CHAIN_FAILURE",
+   "band": "G3_7d_21d",
+   "gap_h": 177.66,
+   "a_items": [
+    8345
+   ],
+   "b_items": [
+    15131,
+    15660,
+    15769
+   ],
+   "case_id": "LH057",
+   "stratum_pool_size": 32,
+   "development_features": {
+    "size": 74,
+    "span_h": 212.73,
+    "n_sources": 8,
+    "founder_n": 1,
+    "late_n": 62,
+    "late_median_cos_founders": 0.4943,
+    "all_median_cos_founders": 0.5024,
+    "max_gap_h": 22.0,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 9,
+    "chain_depth_median": 3.0,
+    "late_no_founder_link_share": 0.7581
+   }
+  },
+  {
+   "development_id": 949,
+   "stratum": "C_RECURRING_GAP",
+   "band": "G2_2d_7d",
+   "gap_h": 110.19,
+   "a_items": [
+    21869,
+    21964,
+    21917
+   ],
+   "b_items": [
+    25412,
+    25643
+   ],
+   "case_id": "LH058",
+   "stratum_pool_size": 75,
+   "development_features": {
+    "size": 13,
+    "span_h": 112.68,
+    "n_sources": 4,
+    "founder_n": 3,
+    "late_n": 3,
+    "late_median_cos_founders": 0.6722,
+    "all_median_cos_founders": 0.703,
+    "max_gap_h": 44.05,
+    "n_bursts": 3,
+    "largest_burst_share": 0.7692,
+    "second_burst_n": 2,
+    "chain_depth_max": 5,
+    "chain_depth_median": 2,
+    "late_no_founder_link_share": 1.0
+   }
+  },
+  {
+   "development_id": 639,
+   "stratum": "E_CHAIN_FAILURE",
+   "band": "G3_7d_21d",
+   "gap_h": 267.1,
+   "a_items": [
+    13713,
+    13835
+   ],
+   "b_items": [
+    23160,
+    23127,
+    23515
+   ],
+   "case_id": "LH059",
+   "stratum_pool_size": 32,
+   "development_features": {
+    "size": 267,
+    "span_h": 313.53,
+    "n_sources": 12,
+    "founder_n": 2,
+    "late_n": 250,
+    "late_median_cos_founders": 0.5064,
+    "all_median_cos_founders": 0.524,
+    "max_gap_h": 18.15,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 10,
+    "chain_depth_median": 4,
+    "late_no_founder_link_share": 0.964
+   }
+  },
+  {
+   "development_id": 1161,
+   "stratum": "E_CHAIN_FAILURE",
+   "band": "G3_7d_21d",
+   "gap_h": 240.81,
+   "a_items": [
+    26781,
+    26804,
+    26847
+   ],
+   "b_items": [
+    36880,
+    37915,
+    38354
+   ],
+   "case_id": "LH060",
+   "stratum_pool_size": 32,
+   "development_features": {
+    "size": 331,
+    "span_h": 337.81,
+    "n_sources": 10,
+    "founder_n": 5,
+    "late_n": 320,
+    "late_median_cos_founders": 0.5868,
+    "all_median_cos_founders": 0.5918,
+    "max_gap_h": 19.75,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 17,
+    "chain_depth_median": 4,
+    "late_no_founder_link_share": 0.9906
+   }
+  },
+  {
+   "development_id": 1411,
+   "stratum": "B_CONTINUOUS_MULTIDAY",
+   "band": "G2_2d_7d",
+   "gap_h": 60.03,
+   "a_items": [
+    32931,
+    32899
+   ],
+   "b_items": [
+    34500,
+    35588
+   ],
+   "case_id": "LH061",
+   "stratum_pool_size": 94,
+   "development_features": {
+    "size": 7,
+    "span_h": 60.03,
+    "n_sources": 3,
+    "founder_n": 2,
+    "late_n": 1,
+    "late_median_cos_founders": 0.6531,
+    "all_median_cos_founders": 0.7622,
+    "max_gap_h": 21.0,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 2,
+    "chain_depth_median": 1,
+    "late_no_founder_link_share": 0.0
+   }
+  },
+  {
+   "development_id": 692,
+   "stratum": "C_RECURRING_GAP",
+   "band": "G2_2d_7d",
+   "gap_h": 82.31,
+   "a_items": [
+    15446,
+    15614,
+    15658
+   ],
+   "b_items": [
+    19903
+   ],
+   "case_id": "LH062",
+   "stratum_pool_size": 75,
+   "development_features": {
+    "size": 9,
+    "span_h": 82.31,
+    "n_sources": 3,
+    "founder_n": 5,
+    "late_n": 3,
+    "late_median_cos_founders": 0.7444,
+    "all_median_cos_founders": 0.7521,
+    "max_gap_h": 41.63,
+    "n_bursts": 3,
+    "largest_burst_share": 0.5556,
+    "second_burst_n": 3,
+    "chain_depth_max": 3,
+    "chain_depth_median": 1,
+    "late_no_founder_link_share": 0.3333
+   }
+  },
+  {
+   "development_id": 1336,
+   "stratum": "E_CHAIN_FAILURE",
+   "band": "G3_7d_21d",
+   "gap_h": 203.5,
+   "a_items": [
+    30089,
+    30333,
+    30418
+   ],
+   "b_items": [
+    42592,
+    43080,
+    43357
+   ],
+   "case_id": "LH063",
+   "stratum_pool_size": 32,
+   "development_features": {
+    "size": 270,
+    "span_h": 443.08,
+    "n_sources": 13,
+    "founder_n": 3,
+    "late_n": 255,
+    "late_median_cos_founders": 0.5924,
+    "all_median_cos_founders": 0.5968,
+    "max_gap_h": 16.35,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 12,
+    "chain_depth_median": 6.0,
+    "late_no_founder_link_share": 0.9804
+   }
+  },
+  {
+   "development_id": 225,
+   "stratum": "C_RECURRING_GAP",
+   "band": "G2_2d_7d",
+   "gap_h": 50.23,
+   "a_items": [
+    4117,
+    4235
+   ],
+   "b_items": [
+    6732,
+    6803,
+    7062
+   ],
+   "case_id": "LH064",
+   "stratum_pool_size": 75,
+   "development_features": {
+    "size": 10,
+    "span_h": 51.03,
+    "n_sources": 6,
+    "founder_n": 2,
+    "late_n": 3,
+    "late_median_cos_founders": 0.6601,
+    "all_median_cos_founders": 0.6311,
+    "max_gap_h": 45.76,
+    "n_bursts": 2,
+    "largest_burst_share": 0.8,
+    "second_burst_n": 2,
+    "chain_depth_max": 4,
+    "chain_depth_median": 2.0,
+    "late_no_founder_link_share": 0.0
+   }
+  },
+  {
+   "development_id": 812,
+   "stratum": "E_CHAIN_FAILURE",
+   "band": "G2_2d_7d",
+   "gap_h": 115.55,
+   "a_items": [
+    18679,
+    18655,
+    18657
+   ],
+   "b_items": [
+    22074,
+    22694,
+    23134
+   ],
+   "case_id": "LH065",
+   "stratum_pool_size": 32,
+   "development_features": {
+    "size": 87,
+    "span_h": 198.46,
+    "n_sources": 9,
+    "founder_n": 7,
+    "late_n": 62,
+    "late_median_cos_founders": 0.486,
+    "all_median_cos_founders": 0.5068,
+    "max_gap_h": 26.63,
+    "n_bursts": 2,
+    "largest_burst_share": 0.9195,
+    "second_burst_n": 7,
+    "chain_depth_max": 10,
+    "chain_depth_median": 6,
+    "late_no_founder_link_share": 0.9032
+   }
+  },
+  {
+   "development_id": 1389,
+   "stratum": "A_SHORT",
+   "band": "G1_6h_48h",
+   "gap_h": 21.02,
+   "a_items": [
+    31061,
+    31126
+   ],
+   "b_items": [
+    32400
+   ],
+   "case_id": "LH066",
+   "stratum_pool_size": 513,
+   "development_features": {
+    "size": 3,
+    "span_h": 21.02,
+    "n_sources": 3,
+    "founder_n": 2,
+    "late_n": 0,
+    "late_median_cos_founders": null,
+    "all_median_cos_founders": 0.8461,
+    "max_gap_h": 20.41,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": null,
+    "chain_depth_median": null,
+    "late_no_founder_link_share": null
+   }
+  },
+  {
+   "development_id": 1763,
+   "stratum": "D_DRIFT_MULTIDAY",
+   "band": "G2_2d_7d",
+   "gap_h": 53.92,
+   "a_items": [
+    44726,
+    45065
+   ],
+   "b_items": [
+    46644,
+    47914,
+    48307
+   ],
+   "case_id": "LH067",
+   "stratum_pool_size": 86,
+   "development_features": {
+    "size": 9,
+    "span_h": 53.92,
+    "n_sources": 2,
+    "founder_n": 2,
+    "late_n": 3,
+    "late_median_cos_founders": 0.544,
+    "all_median_cos_founders": 0.6451,
+    "max_gap_h": 18.9,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 3,
+    "chain_depth_median": 2,
+    "late_no_founder_link_share": 1.0
+   }
+  },
+  {
+   "development_id": 1755,
+   "stratum": "A_SHORT",
+   "band": "G1_6h_48h",
+   "gap_h": 7.5,
+   "a_items": [
+    44638,
+    44721,
+    44865
+   ],
+   "b_items": [
+    45139,
+    45381,
+    46119
+   ],
+   "case_id": "LH068",
+   "stratum_pool_size": 513,
+   "development_features": {
+    "size": 6,
+    "span_h": 24.5,
+    "n_sources": 2,
+    "founder_n": 3,
+    "late_n": 0,
+    "late_median_cos_founders": null,
+    "all_median_cos_founders": 0.8315,
+    "max_gap_h": 13.01,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": null,
+    "chain_depth_median": null,
+    "late_no_founder_link_share": null
+   }
+  },
+  {
+   "development_id": 1552,
+   "stratum": "B_CONTINUOUS_MULTIDAY",
+   "band": "G2_2d_7d",
+   "gap_h": 60.71,
+   "a_items": [
+    36473
+   ],
+   "b_items": [
+    39471,
+    39929,
+    40941
+   ],
+   "case_id": "LH069",
+   "stratum_pool_size": 94,
+   "development_features": {
+    "size": 8,
+    "span_h": 60.71,
+    "n_sources": 4,
+    "founder_n": 1,
+    "late_n": 1,
+    "late_median_cos_founders": 0.2908,
+    "all_median_cos_founders": 0.4126,
+    "max_gap_h": 20.34,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 3,
+    "chain_depth_median": 1.5,
+    "late_no_founder_link_share": 1.0
+   }
+  },
+  {
+   "development_id": 850,
+   "stratum": "A_SHORT",
+   "band": "G1_6h_48h",
+   "gap_h": 18.16,
+   "a_items": [
+    19138
+   ],
+   "b_items": [
+    19766,
+    19918
+   ],
+   "case_id": "LH070",
+   "stratum_pool_size": 513,
+   "development_features": {
+    "size": 3,
+    "span_h": 18.16,
+    "n_sources": 3,
+    "founder_n": 1,
+    "late_n": 0,
+    "late_median_cos_founders": null,
+    "all_median_cos_founders": 0.7708,
+    "max_gap_h": 15.69,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": null,
+    "chain_depth_median": null,
+    "late_no_founder_link_share": null
+   }
+  },
+  {
+   "development_id": 1326,
+   "stratum": "D_DRIFT_MULTIDAY",
+   "band": "G2_2d_7d",
+   "gap_h": 114.87,
+   "a_items": [
+    30300
+   ],
+   "b_items": [
+    36269,
+    36345,
+    36398
+   ],
+   "case_id": "LH071",
+   "stratum_pool_size": 86,
+   "development_features": {
+    "size": 32,
+    "span_h": 135.82,
+    "n_sources": 4,
+    "founder_n": 1,
+    "late_n": 16,
+    "late_median_cos_founders": 0.542,
+    "all_median_cos_founders": 0.5488,
+    "max_gap_h": 19.5,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 5,
+    "chain_depth_median": 2.0,
+    "late_no_founder_link_share": 0.8125
+   }
+  },
+  {
+   "development_id": 1449,
+   "stratum": "B_CONTINUOUS_MULTIDAY",
+   "band": "G2_2d_7d",
+   "gap_h": 51.41,
+   "a_items": [
+    34118,
+    34127,
+    34142
+   ],
+   "b_items": [
+    36855,
+    37588,
+    37824
+   ],
+   "case_id": "LH072",
+   "stratum_pool_size": 94,
+   "development_features": {
+    "size": 26,
+    "span_h": 64.79,
+    "n_sources": 11,
+    "founder_n": 8,
+    "late_n": 6,
+    "late_median_cos_founders": 0.6097,
+    "all_median_cos_founders": 0.6939,
+    "max_gap_h": 12.04,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 5,
+    "chain_depth_median": 2.0,
+    "late_no_founder_link_share": 0.0
+   }
+  },
+  {
+   "development_id": 557,
+   "stratum": "C_RECURRING_GAP",
+   "band": "G3_7d_21d",
+   "gap_h": 181.35,
+   "a_items": [
+    11625
+   ],
+   "b_items": [
+    19502
+   ],
+   "case_id": "LH073",
+   "stratum_pool_size": 75,
+   "development_features": {
+    "size": 17,
+    "span_h": 181.35,
+    "n_sources": 5,
+    "founder_n": 1,
+    "late_n": 9,
+    "late_median_cos_founders": 0.582,
+    "all_median_cos_founders": 0.5954,
+    "max_gap_h": 44.62,
+    "n_bursts": 4,
+    "largest_burst_share": 0.5294,
+    "second_burst_n": 5,
+    "chain_depth_max": 5,
+    "chain_depth_median": 2,
+    "late_no_founder_link_share": 1.0
+   }
+  },
+  {
+   "development_id": 398,
+   "stratum": "E_CHAIN_FAILURE",
+   "band": "G2_2d_7d",
+   "gap_h": 113.5,
+   "a_items": [
+    8440
+   ],
+   "b_items": [
+    12386,
+    13626,
+    13846
+   ],
+   "case_id": "LH074",
+   "stratum_pool_size": 32,
+   "development_features": {
+    "size": 2344,
+    "span_h": 1026.75,
+    "n_sources": 25,
+    "founder_n": 1,
+    "late_n": 2323,
+    "late_median_cos_founders": 0.3164,
+    "all_median_cos_founders": 0.3169,
+    "max_gap_h": 18.7,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 46,
+    "chain_depth_median": 11.0,
+    "late_no_founder_link_share": 0.997
+   }
+  },
+  {
+   "development_id": 397,
+   "stratum": "E_CHAIN_FAILURE",
+   "band": "G2_2d_7d",
+   "gap_h": 60.0,
+   "a_items": [
+    8598
+   ],
+   "b_items": [
+    9891,
+    10062,
+    11795
+   ],
+   "case_id": "LH075",
+   "stratum_pool_size": 32,
+   "development_features": {
+    "size": 330,
+    "span_h": 471.78,
+    "n_sources": 16,
+    "founder_n": 1,
+    "late_n": 310,
+    "late_median_cos_founders": 0.4933,
+    "all_median_cos_founders": 0.4938,
+    "max_gap_h": 29.4,
+    "n_bursts": 4,
+    "largest_burst_share": 0.5182,
+    "second_burst_n": 150,
+    "chain_depth_max": 15,
+    "chain_depth_median": 6.0,
+    "late_no_founder_link_share": 0.9323
+   }
+  },
+  {
+   "development_id": 782,
+   "stratum": "B_CONTINUOUS_MULTIDAY",
+   "band": "G2_2d_7d",
+   "gap_h": 70.75,
+   "a_items": [
+    16992
+   ],
+   "b_items": [
+    19567,
+    20584
+   ],
+   "case_id": "LH076",
+   "stratum_pool_size": 94,
+   "development_features": {
+    "size": 10,
+    "span_h": 70.75,
+    "n_sources": 5,
+    "founder_n": 1,
+    "late_n": 1,
+    "late_median_cos_founders": 0.3935,
+    "all_median_cos_founders": 0.5657,
+    "max_gap_h": 23.82,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 3,
+    "chain_depth_median": 1.0,
+    "late_no_founder_link_share": 1.0
+   }
+  },
+  {
+   "development_id": 2009,
+   "stratum": "A_SHORT",
+   "band": "G1_6h_48h",
+   "gap_h": 28.28,
+   "a_items": [
+    52582,
+    52781,
+    52784
+   ],
+   "b_items": [
+    54616
+   ],
+   "case_id": "LH077",
+   "stratum_pool_size": 513,
+   "development_features": {
+    "size": 4,
+    "span_h": 28.28,
+    "n_sources": 3,
+    "founder_n": 3,
+    "late_n": 0,
+    "late_median_cos_founders": null,
+    "all_median_cos_founders": 0.8322,
+    "max_gap_h": 25.21,
+    "n_bursts": 2,
+    "largest_burst_share": 0.75,
+    "second_burst_n": 1,
+    "chain_depth_max": null,
+    "chain_depth_median": null,
+    "late_no_founder_link_share": null
+   }
+  },
+  {
+   "development_id": 398,
+   "stratum": "E_CHAIN_FAILURE",
+   "band": "G2_2d_7d",
+   "gap_h": 115.76,
+   "a_items": [
+    8440
+   ],
+   "b_items": [
+    12590,
+    13807,
+    14440
+   ],
+   "case_id": "LH078",
+   "stratum_pool_size": 32,
+   "development_features": {
+    "size": 2344,
+    "span_h": 1026.75,
+    "n_sources": 25,
+    "founder_n": 1,
+    "late_n": 2323,
+    "late_median_cos_founders": 0.3164,
+    "all_median_cos_founders": 0.3169,
+    "max_gap_h": 18.7,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 46,
+    "chain_depth_median": 11.0,
+    "late_no_founder_link_share": 0.997
+   }
+  },
+  {
+   "development_id": 703,
+   "stratum": "B_CONTINUOUS_MULTIDAY",
+   "band": "G2_2d_7d",
+   "gap_h": 48.11,
+   "a_items": [
+    15135
+   ],
+   "b_items": [
+    16860,
+    16935,
+    17280
+   ],
+   "case_id": "LH079",
+   "stratum_pool_size": 94,
+   "development_features": {
+    "size": 5,
+    "span_h": 48.11,
+    "n_sources": 3,
+    "founder_n": 1,
+    "late_n": 1,
+    "late_median_cos_founders": 0.4729,
+    "all_median_cos_founders": 0.5882,
+    "max_gap_h": 22.18,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 1,
+    "chain_depth_median": 1,
+    "late_no_founder_link_share": 1.0
+   }
+  },
+  {
+   "development_id": 449,
+   "stratum": "E_CHAIN_FAILURE",
+   "band": "G3_7d_21d",
+   "gap_h": 188.4,
+   "a_items": [
+    8355
+   ],
+   "b_items": [
+    16942,
+    17502,
+    19264
+   ],
+   "case_id": "LH080",
+   "stratum_pool_size": 32,
+   "development_features": {
+    "size": 783,
+    "span_h": 777.97,
+    "n_sources": 16,
+    "founder_n": 1,
+    "late_n": 772,
+    "late_median_cos_founders": 0.4608,
+    "all_median_cos_founders": 0.462,
+    "max_gap_h": 25.29,
+    "n_bursts": 2,
+    "largest_burst_share": 0.9642,
+    "second_burst_n": 28,
+    "chain_depth_max": 24,
+    "chain_depth_median": 12,
+    "late_no_founder_link_share": 0.9987
+   }
+  },
+  {
+   "development_id": 168,
+   "stratum": "B_CONTINUOUS_MULTIDAY",
+   "band": "G2_2d_7d",
+   "gap_h": 105.76,
+   "a_items": [
+    2299
+   ],
+   "b_items": [
+    7406,
+    7534,
+    7897
+   ],
+   "case_id": "LH081",
+   "stratum_pool_size": 94,
+   "development_features": {
+    "size": 32,
+    "span_h": 105.76,
+    "n_sources": 8,
+    "founder_n": 1,
+    "late_n": 10,
+    "late_median_cos_founders": 0.6568,
+    "all_median_cos_founders": 0.6722,
+    "max_gap_h": 15.63,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 6,
+    "chain_depth_median": 3.0,
+    "late_no_founder_link_share": 0.6
+   }
+  },
+  {
+   "development_id": 1144,
+   "stratum": "E_CHAIN_FAILURE",
+   "band": "G2_2d_7d",
+   "gap_h": 120.46,
+   "a_items": [
+    26315
+   ],
+   "b_items": [
+    29169,
+    29150,
+    29968
+   ],
+   "case_id": "LH082",
+   "stratum_pool_size": 32,
+   "development_features": {
+    "size": 119,
+    "span_h": 290.61,
+    "n_sources": 9,
+    "founder_n": 1,
+    "late_n": 106,
+    "late_median_cos_founders": 0.4789,
+    "all_median_cos_founders": 0.4796,
+    "max_gap_h": 25.0,
+    "n_bursts": 2,
+    "largest_burst_share": 0.9916,
+    "second_burst_n": 1,
+    "chain_depth_max": 9,
+    "chain_depth_median": 3,
+    "late_no_founder_link_share": 0.9811
+   }
+  },
+  {
+   "development_id": 1104,
+   "stratum": "B_CONTINUOUS_MULTIDAY",
+   "band": "G2_2d_7d",
+   "gap_h": 60.36,
+   "a_items": [
+    25790,
+    25848,
+    25841
+   ],
+   "b_items": [
+    27042,
+    27226,
+    27290
+   ],
+   "case_id": "LH083",
+   "stratum_pool_size": 94,
+   "development_features": {
+    "size": 13,
+    "span_h": 79.22,
+    "n_sources": 5,
+    "founder_n": 3,
+    "late_n": 4,
+    "late_median_cos_founders": 0.7452,
+    "all_median_cos_founders": 0.7659,
+    "max_gap_h": 18.86,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 3,
+    "chain_depth_median": 2,
+    "late_no_founder_link_share": 0.25
+   }
+  },
+  {
+   "development_id": 128,
+   "stratum": "B_CONTINUOUS_MULTIDAY",
+   "band": "G2_2d_7d",
+   "gap_h": 74.9,
+   "a_items": [
+    2036,
+    2048
+   ],
+   "b_items": [
+    3628,
+    4460,
+    4554
+   ],
+   "case_id": "LH084",
+   "stratum_pool_size": 94,
+   "development_features": {
+    "size": 18,
+    "span_h": 117.26,
+    "n_sources": 6,
+    "founder_n": 2,
+    "late_n": 11,
+    "late_median_cos_founders": 0.5936,
+    "all_median_cos_founders": 0.6739,
+    "max_gap_h": 14.75,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 3,
+    "chain_depth_median": 1.5,
+    "late_no_founder_link_share": 0.9091
+   }
+  },
+  {
+   "development_id": 1144,
+   "stratum": "E_CHAIN_FAILURE",
+   "band": "G2_2d_7d",
+   "gap_h": 167.64,
+   "a_items": [
+    26315
+   ],
+   "b_items": [
+    32023,
+    32214,
+    32849
+   ],
+   "case_id": "LH085",
+   "stratum_pool_size": 32,
+   "development_features": {
+    "size": 119,
+    "span_h": 290.61,
+    "n_sources": 9,
+    "founder_n": 1,
+    "late_n": 106,
+    "late_median_cos_founders": 0.4789,
+    "all_median_cos_founders": 0.4796,
+    "max_gap_h": 25.0,
+    "n_bursts": 2,
+    "largest_burst_share": 0.9916,
+    "second_burst_n": 1,
+    "chain_depth_max": 9,
+    "chain_depth_median": 3,
+    "late_no_founder_link_share": 0.9811
+   }
+  },
+  {
+   "development_id": 449,
+   "stratum": "E_CHAIN_FAILURE",
+   "band": "G2_2d_7d",
+   "gap_h": 147.09,
+   "a_items": [
+    8355
+   ],
+   "b_items": [
+    15434,
+    16221,
+    16295
+   ],
+   "case_id": "LH086",
+   "stratum_pool_size": 32,
+   "development_features": {
+    "size": 783,
+    "span_h": 777.97,
+    "n_sources": 16,
+    "founder_n": 1,
+    "late_n": 772,
+    "late_median_cos_founders": 0.4608,
+    "all_median_cos_founders": 0.462,
+    "max_gap_h": 25.29,
+    "n_bursts": 2,
+    "largest_burst_share": 0.9642,
+    "second_burst_n": 28,
+    "chain_depth_max": 24,
+    "chain_depth_median": 12,
+    "late_no_founder_link_share": 0.9987
+   }
+  },
+  {
+   "development_id": 1027,
+   "stratum": "B_CONTINUOUS_MULTIDAY",
+   "band": "G2_2d_7d",
+   "gap_h": 91.4,
+   "a_items": [
+    24166,
+    24173,
+    24194
+   ],
+   "b_items": [
+    26727,
+    26886,
+    27097
+   ],
+   "case_id": "LH087",
+   "stratum_pool_size": 94,
+   "development_features": {
+    "size": 72,
+    "span_h": 92.73,
+    "n_sources": 8,
+    "founder_n": 25,
+    "late_n": 18,
+    "late_median_cos_founders": 0.6524,
+    "all_median_cos_founders": 0.715,
+    "max_gap_h": 12.62,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 11,
+    "chain_depth_median": 5.0,
+    "late_no_founder_link_share": 0.3333
+   }
+  },
+  {
+   "development_id": 1363,
+   "stratum": "A_SHORT",
+   "band": "G1_6h_48h",
+   "gap_h": 9.58,
+   "a_items": [
+    31152,
+    31560
+   ],
+   "b_items": [
+    31580,
+    31829,
+    32078
+   ],
+   "case_id": "LH088",
+   "stratum_pool_size": 513,
+   "development_features": {
+    "size": 8,
+    "span_h": 14.83,
+    "n_sources": 7,
+    "founder_n": 2,
+    "late_n": 0,
+    "late_median_cos_founders": null,
+    "all_median_cos_founders": 0.4736,
+    "max_gap_h": 5.9,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": null,
+    "chain_depth_median": null,
+    "late_no_founder_link_share": null
+   }
+  },
+  {
+   "development_id": 1326,
+   "stratum": "D_DRIFT_MULTIDAY",
+   "band": "G2_2d_7d",
+   "gap_h": 88.12,
+   "a_items": [
+    30300
+   ],
+   "b_items": [
+    33837,
+    33888,
+    35016
+   ],
+   "case_id": "LH089",
+   "stratum_pool_size": 86,
+   "development_features": {
+    "size": 32,
+    "span_h": 135.82,
+    "n_sources": 4,
+    "founder_n": 1,
+    "late_n": 16,
+    "late_median_cos_founders": 0.542,
+    "all_median_cos_founders": 0.5488,
+    "max_gap_h": 19.5,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 5,
+    "chain_depth_median": 2.0,
+    "late_no_founder_link_share": 0.8125
+   }
+  },
+  {
+   "development_id": 99,
+   "stratum": "A_SHORT",
+   "band": "G1_6h_48h",
+   "gap_h": 34.77,
+   "a_items": [
+    1476
+   ],
+   "b_items": [
+    1556,
+    1832,
+    1840
+   ],
+   "case_id": "LH090",
+   "stratum_pool_size": 513,
+   "development_features": {
+    "size": 9,
+    "span_h": 38.57,
+    "n_sources": 4,
+    "founder_n": 1,
+    "late_n": 0,
+    "late_median_cos_founders": null,
+    "all_median_cos_founders": 0.3947,
+    "max_gap_h": 17.04,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": null,
+    "chain_depth_median": null,
+    "late_no_founder_link_share": null
+   }
+  },
+  {
+   "development_id": 138,
+   "stratum": "A_SHORT",
+   "band": "G1_6h_48h",
+   "gap_h": 18.92,
+   "a_items": [
+    2556,
+    2377,
+    2554
+   ],
+   "b_items": [
+    3502,
+    3713
+   ],
+   "case_id": "LH091",
+   "stratum_pool_size": 513,
+   "development_features": {
+    "size": 8,
+    "span_h": 18.92,
+    "n_sources": 6,
+    "founder_n": 6,
+    "late_n": 0,
+    "late_median_cos_founders": null,
+    "all_median_cos_founders": 0.8451,
+    "max_gap_h": 7.64,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": null,
+    "chain_depth_median": null,
+    "late_no_founder_link_share": null
+   }
+  },
+  {
+   "development_id": 1251,
+   "stratum": "E_CHAIN_FAILURE",
+   "band": "G2_2d_7d",
+   "gap_h": 78.39,
+   "a_items": [
+    28897,
+    29070,
+    29028
+   ],
+   "b_items": [
+    33344,
+    33377,
+    33378
+   ],
+   "case_id": "LH092",
+   "stratum_pool_size": 32,
+   "development_features": {
+    "size": 198,
+    "span_h": 367.04,
+    "n_sources": 15,
+    "founder_n": 4,
+    "late_n": 168,
+    "late_median_cos_founders": 0.6817,
+    "all_median_cos_founders": 0.6976,
+    "max_gap_h": 39.6,
+    "n_bursts": 2,
+    "largest_burst_share": 0.9293,
+    "second_burst_n": 14,
+    "chain_depth_max": 15,
+    "chain_depth_median": 7.0,
+    "late_no_founder_link_share": 0.8095
+   }
+  },
+  {
+   "development_id": 2127,
+   "stratum": "A_SHORT",
+   "band": "G1_6h_48h",
+   "gap_h": 19.09,
+   "a_items": [
+    56769,
+    56809,
+    56827
+   ],
+   "b_items": [
+    57725,
+    58134,
+    58176
+   ],
+   "case_id": "LH093",
+   "stratum_pool_size": 513,
+   "development_features": {
+    "size": 7,
+    "span_h": 27.59,
+    "n_sources": 4,
+    "founder_n": 4,
+    "late_n": 0,
+    "late_median_cos_founders": null,
+    "all_median_cos_founders": 0.7666,
+    "max_gap_h": 15.25,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": null,
+    "chain_depth_median": null,
+    "late_no_founder_link_share": null
+   }
+  },
+  {
+   "development_id": 136,
+   "stratum": "B_CONTINUOUS_MULTIDAY",
+   "band": "G2_2d_7d",
+   "gap_h": 94.9,
+   "a_items": [
+    2212
+   ],
+   "b_items": [
+    5779,
+    6564,
+    6774
+   ],
+   "case_id": "LH094",
+   "stratum_pool_size": 94,
+   "development_features": {
+    "size": 14,
+    "span_h": 95.4,
+    "n_sources": 3,
+    "founder_n": 1,
+    "late_n": 8,
+    "late_median_cos_founders": 0.5641,
+    "all_median_cos_founders": 0.5746,
+    "max_gap_h": 18.25,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 4,
+    "chain_depth_median": 2.0,
+    "late_no_founder_link_share": 0.75
+   }
+  },
+  {
+   "development_id": 155,
+   "stratum": "B_CONTINUOUS_MULTIDAY",
+   "band": "G2_2d_7d",
+   "gap_h": 91.61,
+   "a_items": [
+    2627
+   ],
+   "b_items": [
+    6956,
+    7294,
+    7713
+   ],
+   "case_id": "LH095",
+   "stratum_pool_size": 94,
+   "development_features": {
+    "size": 31,
+    "span_h": 110.2,
+    "n_sources": 12,
+    "founder_n": 1,
+    "late_n": 14,
+    "late_median_cos_founders": 0.6249,
+    "all_median_cos_founders": 0.6112,
+    "max_gap_h": 13.18,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 5,
+    "chain_depth_median": 3,
+    "late_no_founder_link_share": 0.8571
+   }
+  },
+  {
+   "development_id": 1144,
+   "stratum": "E_CHAIN_FAILURE",
+   "band": "G3_7d_21d",
+   "gap_h": 199.89,
+   "a_items": [
+    26315
+   ],
+   "b_items": [
+    33935,
+    34330,
+    35152
+   ],
+   "case_id": "LH096",
+   "stratum_pool_size": 32,
+   "development_features": {
+    "size": 119,
+    "span_h": 290.61,
+    "n_sources": 9,
+    "founder_n": 1,
+    "late_n": 106,
+    "late_median_cos_founders": 0.4789,
+    "all_median_cos_founders": 0.4796,
+    "max_gap_h": 25.0,
+    "n_bursts": 2,
+    "largest_burst_share": 0.9916,
+    "second_burst_n": 1,
+    "chain_depth_max": 9,
+    "chain_depth_median": 3,
+    "late_no_founder_link_share": 0.9811
+   }
+  },
+  {
+   "development_id": 697,
+   "stratum": "D_DRIFT_MULTIDAY",
+   "band": "G2_2d_7d",
+   "gap_h": 54.08,
+   "a_items": [
+    15092
+   ],
+   "b_items": [
+    17230,
+    17282,
+    17731
+   ],
+   "case_id": "LH097",
+   "stratum_pool_size": 86,
+   "development_features": {
+    "size": 26,
+    "span_h": 113.26,
+    "n_sources": 7,
+    "founder_n": 1,
+    "late_n": 10,
+    "late_median_cos_founders": 0.4113,
+    "all_median_cos_founders": 0.579,
+    "max_gap_h": 23.21,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 6,
+    "chain_depth_median": 2.0,
+    "late_no_founder_link_share": 1.0
+   }
+  },
+  {
+   "development_id": 1301,
+   "stratum": "A_SHORT",
+   "band": "G1_6h_48h",
+   "gap_h": 45.36,
+   "a_items": [
+    29851,
+    30124
+   ],
+   "b_items": [
+    32599
+   ],
+   "case_id": "LH098",
+   "stratum_pool_size": 513,
+   "development_features": {
+    "size": 3,
+    "span_h": 45.36,
+    "n_sources": 3,
+    "founder_n": 2,
+    "late_n": 0,
+    "late_median_cos_founders": null,
+    "all_median_cos_founders": 0.9475,
+    "max_gap_h": 41.9,
+    "n_bursts": 2,
+    "largest_burst_share": 0.6667,
+    "second_burst_n": 1,
+    "chain_depth_max": null,
+    "chain_depth_median": null,
+    "late_no_founder_link_share": null
+   }
+  },
+  {
+   "development_id": 1577,
+   "stratum": "B_CONTINUOUS_MULTIDAY",
+   "band": "G2_2d_7d",
+   "gap_h": 51.01,
+   "a_items": [
+    36251,
+    36474,
+    36663
+   ],
+   "b_items": [
+    40061,
+    40303,
+    40345
+   ],
+   "case_id": "LH099",
+   "stratum_pool_size": 94,
+   "development_features": {
+    "size": 61,
+    "span_h": 155.5,
+    "n_sources": 4,
+    "founder_n": 5,
+    "late_n": 34,
+    "late_median_cos_founders": 0.6992,
+    "all_median_cos_founders": 0.7349,
+    "max_gap_h": 20.99,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 2,
+    "chain_depth_median": 1,
+    "late_no_founder_link_share": 1.0
+   }
+  },
+  {
+   "development_id": 133,
+   "stratum": "C_RECURRING_GAP",
+   "band": "G2_2d_7d",
+   "gap_h": 61.02,
+   "a_items": [
+    1919
+   ],
+   "b_items": [
+    2241,
+    2255,
+    2530
+   ],
+   "case_id": "LH100",
+   "stratum_pool_size": 75,
+   "development_features": {
+    "size": 12,
+    "span_h": 85.92,
+    "n_sources": 5,
+    "founder_n": 1,
+    "late_n": 4,
+    "late_median_cos_founders": 0.5797,
+    "all_median_cos_founders": 0.6072,
+    "max_gap_h": 24.32,
+    "n_bursts": 2,
+    "largest_burst_share": 0.8333,
+    "second_burst_n": 2,
+    "chain_depth_max": 3,
+    "chain_depth_median": 0.0,
+    "late_no_founder_link_share": 1.0
+   }
+  },
+  {
+   "development_id": 1073,
+   "stratum": "B_CONTINUOUS_MULTIDAY",
+   "band": "G2_2d_7d",
+   "gap_h": 56.81,
+   "a_items": [
+    24993
+   ],
+   "b_items": [
+    26394,
+    26392,
+    26830
+   ],
+   "case_id": "LH101",
+   "stratum_pool_size": 94,
+   "development_features": {
+    "size": 19,
+    "span_h": 56.81,
+    "n_sources": 9,
+    "founder_n": 1,
+    "late_n": 1,
+    "late_median_cos_founders": 0.4936,
+    "all_median_cos_founders": 0.5581,
+    "max_gap_h": 12.83,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 5,
+    "chain_depth_median": 3,
+    "late_no_founder_link_share": 1.0
+   }
+  },
+  {
+   "development_id": 780,
+   "stratum": "C_RECURRING_GAP",
+   "band": "G3_7d_21d",
+   "gap_h": 178.87,
+   "a_items": [
+    15455
+   ],
+   "b_items": [
+    22525,
+    22959,
+    22948
+   ],
+   "case_id": "LH102",
+   "stratum_pool_size": 75,
+   "development_features": {
+    "size": 34,
+    "span_h": 256.1,
+    "n_sources": 8,
+    "founder_n": 1,
+    "late_n": 30,
+    "late_median_cos_founders": 0.5731,
+    "all_median_cos_founders": 0.5932,
+    "max_gap_h": 40.39,
+    "n_bursts": 3,
+    "largest_burst_share": 0.6176,
+    "second_burst_n": 12,
+    "chain_depth_max": 5,
+    "chain_depth_median": 2.0,
+    "late_no_founder_link_share": 0.9667
+   }
+  },
+  {
+   "development_id": 398,
+   "stratum": "E_CHAIN_FAILURE",
+   "band": "G4_21d_plus",
+   "gap_h": 938.76,
+   "a_items": [
+    8440
+   ],
+   "b_items": [
+    52620,
+    53445,
+    53695
+   ],
+   "case_id": "LH103",
+   "stratum_pool_size": 32,
+   "development_features": {
+    "size": 2344,
+    "span_h": 1026.75,
+    "n_sources": 25,
+    "founder_n": 1,
+    "late_n": 2323,
+    "late_median_cos_founders": 0.3164,
+    "all_median_cos_founders": 0.3169,
+    "max_gap_h": 18.7,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 46,
+    "chain_depth_median": 11.0,
+    "late_no_founder_link_share": 0.997
+   }
+  },
+  {
+   "development_id": 162,
+   "stratum": "B_CONTINUOUS_MULTIDAY",
+   "band": "G2_2d_7d",
+   "gap_h": 104.0,
+   "a_items": [
+    2564,
+    2440,
+    2560
+   ],
+   "b_items": [
+    7517,
+    7714,
+    7994
+   ],
+   "case_id": "LH104",
+   "stratum_pool_size": 94,
+   "development_features": {
+    "size": 76,
+    "span_h": 107.51,
+    "n_sources": 8,
+    "founder_n": 5,
+    "late_n": 48,
+    "late_median_cos_founders": 0.6419,
+    "all_median_cos_founders": 0.6674,
+    "max_gap_h": 8.27,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 9,
+    "chain_depth_median": 4.5,
+    "late_no_founder_link_share": 0.7292
+   }
+  },
+  {
+   "development_id": 1971,
+   "stratum": "A_SHORT",
+   "band": "G1_6h_48h",
+   "gap_h": 19.5,
+   "a_items": [
+    51128,
+    51357,
+    51326
+   ],
+   "b_items": [
+    52552
+   ],
+   "case_id": "LH105",
+   "stratum_pool_size": 513,
+   "development_features": {
+    "size": 4,
+    "span_h": 19.5,
+    "n_sources": 3,
+    "founder_n": 3,
+    "late_n": 0,
+    "late_median_cos_founders": null,
+    "all_median_cos_founders": 0.8476,
+    "max_gap_h": 17.68,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": null,
+    "chain_depth_median": null,
+    "late_no_founder_link_share": null
+   }
+  },
+  {
+   "development_id": 1161,
+   "stratum": "E_CHAIN_FAILURE",
+   "band": "G3_7d_21d",
+   "gap_h": 268.31,
+   "a_items": [
+    26781,
+    26804,
+    26847
+   ],
+   "b_items": [
+    39972,
+    40297,
+    41175
+   ],
+   "case_id": "LH106",
+   "stratum_pool_size": 32,
+   "development_features": {
+    "size": 331,
+    "span_h": 337.81,
+    "n_sources": 10,
+    "founder_n": 5,
+    "late_n": 320,
+    "late_median_cos_founders": 0.5868,
+    "all_median_cos_founders": 0.5918,
+    "max_gap_h": 19.75,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 17,
+    "chain_depth_median": 4,
+    "late_no_founder_link_share": 0.9906
+   }
+  },
+  {
+   "development_id": 697,
+   "stratum": "D_DRIFT_MULTIDAY",
+   "band": "G2_2d_7d",
+   "gap_h": 50.75,
+   "a_items": [
+    15092
+   ],
+   "b_items": [
+    16389,
+    16791,
+    17427
+   ],
+   "case_id": "LH107",
+   "stratum_pool_size": 86,
+   "development_features": {
+    "size": 26,
+    "span_h": 113.26,
+    "n_sources": 7,
+    "founder_n": 1,
+    "late_n": 10,
+    "late_median_cos_founders": 0.4113,
+    "all_median_cos_founders": 0.579,
+    "max_gap_h": 23.21,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 6,
+    "chain_depth_median": 2.0,
+    "late_no_founder_link_share": 1.0
+   }
+  },
+  {
+   "development_id": 1945,
+   "stratum": "C_RECURRING_GAP",
+   "band": "G2_2d_7d",
+   "gap_h": 48.38,
+   "a_items": [
+    47631
+   ],
+   "b_items": [
+    50367,
+    50658,
+    51143
+   ],
+   "case_id": "LH108",
+   "stratum_pool_size": 75,
+   "development_features": {
+    "size": 9,
+    "span_h": 51.51,
+    "n_sources": 5,
+    "founder_n": 1,
+    "late_n": 2,
+    "late_median_cos_founders": 0.4463,
+    "all_median_cos_founders": 0.4513,
+    "max_gap_h": 26.59,
+    "n_bursts": 2,
+    "largest_burst_share": 0.6667,
+    "second_burst_n": 3,
+    "chain_depth_max": 3,
+    "chain_depth_median": 1,
+    "late_no_founder_link_share": 1.0
+   }
+  },
+  {
+   "development_id": 198,
+   "stratum": "A_SHORT",
+   "band": "G1_6h_48h",
+   "gap_h": 12.42,
+   "a_items": [
+    3613,
+    3087,
+    3503
+   ],
+   "b_items": [
+    3583,
+    3617,
+    3615
+   ],
+   "case_id": "LH109",
+   "stratum_pool_size": 513,
+   "development_features": {
+    "size": 8,
+    "span_h": 22.83,
+    "n_sources": 5,
+    "founder_n": 3,
+    "late_n": 0,
+    "late_median_cos_founders": null,
+    "all_median_cos_founders": 0.8034,
+    "max_gap_h": 8.24,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": null,
+    "chain_depth_median": null,
+    "late_no_founder_link_share": null
+   }
+  },
+  {
+   "development_id": 416,
+   "stratum": "E_CHAIN_FAILURE",
+   "band": "G2_2d_7d",
+   "gap_h": 109.48,
+   "a_items": [
+    8345
+   ],
+   "b_items": [
+    13990,
+    14491,
+    14682
+   ],
+   "case_id": "LH110",
+   "stratum_pool_size": 32,
+   "development_features": {
+    "size": 74,
+    "span_h": 212.73,
+    "n_sources": 8,
+    "founder_n": 1,
+    "late_n": 62,
+    "late_median_cos_founders": 0.4943,
+    "all_median_cos_founders": 0.5024,
+    "max_gap_h": 22.0,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 9,
+    "chain_depth_median": 3.0,
+    "late_no_founder_link_share": 0.7581
+   }
+  },
+  {
+   "development_id": 2106,
+   "stratum": "B_CONTINUOUS_MULTIDAY",
+   "band": "G2_2d_7d",
+   "gap_h": 60.24,
+   "a_items": [
+    53799
+   ],
+   "b_items": [
+    56264,
+    56510,
+    57455
+   ],
+   "case_id": "LH111",
+   "stratum_pool_size": 94,
+   "development_features": {
+    "size": 11,
+    "span_h": 82.0,
+    "n_sources": 3,
+    "founder_n": 1,
+    "late_n": 2,
+    "late_median_cos_founders": 0.6531,
+    "all_median_cos_founders": 0.7752,
+    "max_gap_h": 21.76,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 3,
+    "chain_depth_median": 2,
+    "late_no_founder_link_share": 1.0
+   }
+  },
+  {
+   "development_id": 867,
+   "stratum": "B_CONTINUOUS_MULTIDAY",
+   "band": "G2_2d_7d",
+   "gap_h": 49.84,
+   "a_items": [
+    19439
+   ],
+   "b_items": [
+    20697,
+    21318,
+    21453
+   ],
+   "case_id": "LH112",
+   "stratum_pool_size": 94,
+   "development_features": {
+    "size": 10,
+    "span_h": 49.84,
+    "n_sources": 5,
+    "founder_n": 1,
+    "late_n": 2,
+    "late_median_cos_founders": 0.6659,
+    "all_median_cos_founders": 0.6766,
+    "max_gap_h": 16.46,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 3,
+    "chain_depth_median": 2.0,
+    "late_no_founder_link_share": 0.5
+   }
+  },
+  {
+   "development_id": 225,
+   "stratum": "C_RECURRING_GAP",
+   "band": "G2_2d_7d",
+   "gap_h": 48.41,
+   "a_items": [
+    4117,
+    4235
+   ],
+   "b_items": [
+    6728,
+    6886,
+    7106
+   ],
+   "case_id": "LH113",
+   "stratum_pool_size": 75,
+   "development_features": {
+    "size": 10,
+    "span_h": 51.03,
+    "n_sources": 6,
+    "founder_n": 2,
+    "late_n": 3,
+    "late_median_cos_founders": 0.6601,
+    "all_median_cos_founders": 0.6311,
+    "max_gap_h": 45.76,
+    "n_bursts": 2,
+    "largest_burst_share": 0.8,
+    "second_burst_n": 2,
+    "chain_depth_max": 4,
+    "chain_depth_median": 2.0,
+    "late_no_founder_link_share": 0.0
+   }
+  },
+  {
+   "development_id": 1765,
+   "stratum": "A_SHORT",
+   "band": "G1_6h_48h",
+   "gap_h": 43.57,
+   "a_items": [
+    45112,
+    45111,
+    45349
+   ],
+   "b_items": [
+    47820
+   ],
+   "case_id": "LH114",
+   "stratum_pool_size": 513,
+   "development_features": {
+    "size": 4,
+    "span_h": 43.57,
+    "n_sources": 4,
+    "founder_n": 3,
+    "late_n": 0,
+    "late_median_cos_founders": null,
+    "all_median_cos_founders": 0.8438,
+    "max_gap_h": 39.54,
+    "n_bursts": 2,
+    "largest_burst_share": 0.75,
+    "second_burst_n": 1,
+    "chain_depth_max": null,
+    "chain_depth_median": null,
+    "late_no_founder_link_share": null
+   }
+  },
+  {
+   "development_id": 149,
+   "stratum": "B_CONTINUOUS_MULTIDAY",
+   "band": "G2_2d_7d",
+   "gap_h": 53.44,
+   "a_items": [
+    2574
+   ],
+   "b_items": [
+    4199,
+    4215,
+    4812
+   ],
+   "case_id": "LH115",
+   "stratum_pool_size": 94,
+   "development_features": {
+    "size": 7,
+    "span_h": 53.44,
+    "n_sources": 4,
+    "founder_n": 1,
+    "late_n": 1,
+    "late_median_cos_founders": 0.2689,
+    "all_median_cos_founders": 0.6037,
+    "max_gap_h": 23.21,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 3,
+    "chain_depth_median": 1,
+    "late_no_founder_link_share": 1.0
+   }
+  },
+  {
+   "development_id": 983,
+   "stratum": "D_DRIFT_MULTIDAY",
+   "band": "G2_2d_7d",
+   "gap_h": 54.29,
+   "a_items": [
+    23272,
+    23215
+   ],
+   "b_items": [
+    24633,
+    24936,
+    25358
+   ],
+   "case_id": "LH116",
+   "stratum_pool_size": 86,
+   "development_features": {
+    "size": 16,
+    "span_h": 98.67,
+    "n_sources": 6,
+    "founder_n": 2,
+    "late_n": 9,
+    "late_median_cos_founders": 0.4733,
+    "all_median_cos_founders": 0.5088,
+    "max_gap_h": 21.12,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 3,
+    "chain_depth_median": 1.5,
+    "late_no_founder_link_share": 0.8889
+   }
+  },
+  {
+   "development_id": 100,
+   "stratum": "C_RECURRING_GAP",
+   "band": "G2_2d_7d",
+   "gap_h": 48.03,
+   "a_items": [
+    1155,
+    1205
+   ],
+   "b_items": [
+    1548,
+    1650,
+    1655
+   ],
+   "case_id": "LH117",
+   "stratum_pool_size": 75,
+   "development_features": {
+    "size": 7,
+    "span_h": 74.65,
+    "n_sources": 4,
+    "founder_n": 2,
+    "late_n": 4,
+    "late_median_cos_founders": 0.5736,
+    "all_median_cos_founders": 0.6318,
+    "max_gap_h": 37.75,
+    "n_bursts": 2,
+    "largest_burst_share": 0.7143,
+    "second_burst_n": 2,
+    "chain_depth_max": 2,
+    "chain_depth_median": 0,
+    "late_no_founder_link_share": 0.75
+   }
+  },
+  {
+   "development_id": 497,
+   "stratum": "D_DRIFT_MULTIDAY",
+   "band": "G2_2d_7d",
+   "gap_h": 61.5,
+   "a_items": [
+    10387,
+    10449,
+    10452
+   ],
+   "b_items": [
+    13447,
+    14352,
+    14415
+   ],
+   "case_id": "LH118",
+   "stratum_pool_size": 86,
+   "development_features": {
+    "size": 13,
+    "span_h": 61.5,
+    "n_sources": 3,
+    "founder_n": 4,
+    "late_n": 2,
+    "late_median_cos_founders": 0.4817,
+    "all_median_cos_founders": 0.6086,
+    "max_gap_h": 14.11,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 3,
+    "chain_depth_median": 1,
+    "late_no_founder_link_share": 1.0
+   }
+  },
+  {
+   "development_id": 397,
+   "stratum": "E_CHAIN_FAILURE",
+   "band": "G2_2d_7d",
+   "gap_h": 108.04,
+   "a_items": [
+    8598
+   ],
+   "b_items": [
+    12831,
+    13242,
+    13255
+   ],
+   "case_id": "LH119",
+   "stratum_pool_size": 32,
+   "development_features": {
+    "size": 330,
+    "span_h": 471.78,
+    "n_sources": 16,
+    "founder_n": 1,
+    "late_n": 310,
+    "late_median_cos_founders": 0.4933,
+    "all_median_cos_founders": 0.4938,
+    "max_gap_h": 29.4,
+    "n_bursts": 4,
+    "largest_burst_share": 0.5182,
+    "second_burst_n": 150,
+    "chain_depth_max": 15,
+    "chain_depth_median": 6.0,
+    "late_no_founder_link_share": 0.9323
+   }
+  },
+  {
+   "development_id": 1670,
+   "stratum": "A_SHORT",
+   "band": "G1_6h_48h",
+   "gap_h": 20.57,
+   "a_items": [
+    39820
+   ],
+   "b_items": [
+    40647,
+    41240
+   ],
+   "case_id": "LH120",
+   "stratum_pool_size": 513,
+   "development_features": {
+    "size": 3,
+    "span_h": 20.57,
+    "n_sources": 2,
+    "founder_n": 1,
+    "late_n": 0,
+    "late_median_cos_founders": null,
+    "all_median_cos_founders": 0.695,
+    "max_gap_h": 10.99,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": null,
+    "chain_depth_median": null,
+    "late_no_founder_link_share": null
+   }
+  },
+  {
+   "development_id": 421,
+   "stratum": "C_RECURRING_GAP",
+   "band": "G2_2d_7d",
+   "gap_h": 51.32,
+   "a_items": [
+    8558,
+    8550
+   ],
+   "b_items": [
+    9879,
+    10059,
+    11510
+   ],
+   "case_id": "LH121",
+   "stratum_pool_size": 75,
+   "development_features": {
+    "size": 11,
+    "span_h": 96.13,
+    "n_sources": 5,
+    "founder_n": 2,
+    "late_n": 3,
+    "late_median_cos_founders": 0.7023,
+    "all_median_cos_founders": 0.6406,
+    "max_gap_h": 28.42,
+    "n_bursts": 2,
+    "largest_burst_share": 0.8182,
+    "second_burst_n": 2,
+    "chain_depth_max": 3,
+    "chain_depth_median": 1,
+    "late_no_founder_link_share": 0.6667
+   }
+  },
+  {
+   "development_id": 731,
+   "stratum": "C_RECURRING_GAP",
+   "band": "G2_2d_7d",
+   "gap_h": 100.02,
+   "a_items": [
+    15066
+   ],
+   "b_items": [
+    19819,
+    22177,
+    20080
+   ],
+   "case_id": "LH122",
+   "stratum_pool_size": 75,
+   "development_features": {
+    "size": 16,
+    "span_h": 125.08,
+    "n_sources": 7,
+    "founder_n": 1,
+    "late_n": 13,
+    "late_median_cos_founders": 0.5553,
+    "all_median_cos_founders": 0.5654,
+    "max_gap_h": 37.46,
+    "n_bursts": 4,
+    "largest_burst_share": 0.75,
+    "second_burst_n": 2,
+    "chain_depth_max": 6,
+    "chain_depth_median": 4.5,
+    "late_no_founder_link_share": 0.9231
+   }
+  },
+  {
+   "development_id": 812,
+   "stratum": "E_CHAIN_FAILURE",
+   "band": "G3_7d_21d",
+   "gap_h": 187.32,
+   "a_items": [
+    18679,
+    18655,
+    18657
+   ],
+   "b_items": [
+    25250,
+    25398,
+    25668
+   ],
+   "case_id": "LH123",
+   "stratum_pool_size": 32,
+   "development_features": {
+    "size": 87,
+    "span_h": 198.46,
+    "n_sources": 9,
+    "founder_n": 7,
+    "late_n": 62,
+    "late_median_cos_founders": 0.486,
+    "all_median_cos_founders": 0.5068,
+    "max_gap_h": 26.63,
+    "n_bursts": 2,
+    "largest_burst_share": 0.9195,
+    "second_burst_n": 7,
+    "chain_depth_max": 10,
+    "chain_depth_median": 6,
+    "late_no_founder_link_share": 0.9032
+   }
+  },
+  {
+   "development_id": 419,
+   "stratum": "D_DRIFT_MULTIDAY",
+   "band": "G2_2d_7d",
+   "gap_h": 70.16,
+   "a_items": [
+    8549
+   ],
+   "b_items": [
+    12871,
+    12900,
+    13045
+   ],
+   "case_id": "LH124",
+   "stratum_pool_size": 86,
+   "development_features": {
+    "size": 41,
+    "span_h": 88.4,
+    "n_sources": 11,
+    "founder_n": 1,
+    "late_n": 12,
+    "late_median_cos_founders": 0.2798,
+    "all_median_cos_founders": 0.3087,
+    "max_gap_h": 12.49,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 4,
+    "chain_depth_median": 2,
+    "late_no_founder_link_share": 1.0
+   }
+  },
+  {
+   "development_id": 515,
+   "stratum": "D_DRIFT_MULTIDAY",
+   "band": "G2_2d_7d",
+   "gap_h": 161.55,
+   "a_items": [
+    8356
+   ],
+   "b_items": [
+    16301
+   ],
+   "case_id": "LH125",
+   "stratum_pool_size": 86,
+   "development_features": {
+    "size": 26,
+    "span_h": 161.55,
+    "n_sources": 7,
+    "founder_n": 1,
+    "late_n": 12,
+    "late_median_cos_founders": 0.4764,
+    "all_median_cos_founders": 0.5925,
+    "max_gap_h": 37.78,
+    "n_bursts": 2,
+    "largest_burst_share": 0.9615,
+    "second_burst_n": 1,
+    "chain_depth_max": 7,
+    "chain_depth_median": 3.0,
+    "late_no_founder_link_share": 0.9167
+   }
+  },
+  {
+   "development_id": 1941,
+   "stratum": "C_RECURRING_GAP",
+   "band": "G2_2d_7d",
+   "gap_h": 78.31,
+   "a_items": [
+    49323,
+    49509
+   ],
+   "b_items": [
+    54552,
+    54877
+   ],
+   "case_id": "LH126",
+   "stratum_pool_size": 75,
+   "development_features": {
+    "size": 6,
+    "span_h": 78.31,
+    "n_sources": 3,
+    "founder_n": 2,
+    "late_n": 2,
+    "late_median_cos_founders": 0.7735,
+    "all_median_cos_founders": 0.7947,
+    "max_gap_h": 47.67,
+    "n_bursts": 2,
+    "largest_burst_share": 0.6667,
+    "second_burst_n": 2,
+    "chain_depth_max": 2,
+    "chain_depth_median": 1.0,
+    "late_no_founder_link_share": 1.0
+   }
+  },
+  {
+   "development_id": 983,
+   "stratum": "D_DRIFT_MULTIDAY",
+   "band": "G2_2d_7d",
+   "gap_h": 94.2,
+   "a_items": [
+    23272,
+    23215
+   ],
+   "b_items": [
+    25603,
+    26192,
+    26287
+   ],
+   "case_id": "LH127",
+   "stratum_pool_size": 86,
+   "development_features": {
+    "size": 16,
+    "span_h": 98.67,
+    "n_sources": 6,
+    "founder_n": 2,
+    "late_n": 9,
+    "late_median_cos_founders": 0.4733,
+    "all_median_cos_founders": 0.5088,
+    "max_gap_h": 21.12,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 3,
+    "chain_depth_median": 1.5,
+    "late_no_founder_link_share": 0.8889
+   }
+  },
+  {
+   "development_id": 542,
+   "stratum": "B_CONTINUOUS_MULTIDAY",
+   "band": "G2_2d_7d",
+   "gap_h": 73.07,
+   "a_items": [
+    9735,
+    9339,
+    9290
+   ],
+   "b_items": [
+    13116,
+    14331,
+    14353
+   ],
+   "case_id": "LH128",
+   "stratum_pool_size": 94,
+   "development_features": {
+    "size": 16,
+    "span_h": 76.01,
+    "n_sources": 6,
+    "founder_n": 5,
+    "late_n": 7,
+    "late_median_cos_founders": 0.6972,
+    "all_median_cos_founders": 0.7071,
+    "max_gap_h": 18.83,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 3,
+    "chain_depth_median": 2.0,
+    "late_no_founder_link_share": 0.7143
+   }
+  },
+  {
+   "development_id": 559,
+   "stratum": "A_SHORT",
+   "band": "G1_6h_48h",
+   "gap_h": 9.34,
+   "a_items": [
+    11409,
+    11708
+   ],
+   "b_items": [
+    12066,
+    12672,
+    13229
+   ],
+   "case_id": "LH129",
+   "stratum_pool_size": 513,
+   "development_features": {
+    "size": 5,
+    "span_h": 28.85,
+    "n_sources": 2,
+    "founder_n": 2,
+    "late_n": 0,
+    "late_median_cos_founders": null,
+    "all_median_cos_founders": 0.6031,
+    "max_gap_h": 10.5,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": null,
+    "chain_depth_median": null,
+    "late_no_founder_link_share": null
+   }
+  },
+  {
+   "development_id": 514,
+   "stratum": "E_CHAIN_FAILURE",
+   "band": "G3_7d_21d",
+   "gap_h": 411.96,
+   "a_items": [
+    8485
+   ],
+   "b_items": [
+    25600,
+    25990,
+    26026
+   ],
+   "case_id": "LH130",
+   "stratum_pool_size": 32,
+   "development_features": {
+    "size": 274,
+    "span_h": 478.28,
+    "n_sources": 15,
+    "founder_n": 1,
+    "late_n": 266,
+    "late_median_cos_founders": 0.2773,
+    "all_median_cos_founders": 0.2801,
+    "max_gap_h": 29.62,
+    "n_bursts": 3,
+    "largest_burst_share": 0.9891,
+    "second_burst_n": 2,
+    "chain_depth_max": 18,
+    "chain_depth_median": 12.0,
+    "late_no_founder_link_share": 1.0
+   }
+  },
+  {
+   "development_id": 1777,
+   "stratum": "C_RECURRING_GAP",
+   "band": "G2_2d_7d",
+   "gap_h": 117.2,
+   "a_items": [
+    45414,
+    45546,
+    45568
+   ],
+   "b_items": [
+    53577,
+    54273,
+    54414
+   ],
+   "case_id": "LH131",
+   "stratum_pool_size": 75,
+   "development_features": {
+    "size": 31,
+    "span_h": 162.0,
+    "n_sources": 4,
+    "founder_n": 4,
+    "late_n": 16,
+    "late_median_cos_founders": 0.5849,
+    "all_median_cos_founders": 0.607,
+    "max_gap_h": 38.74,
+    "n_bursts": 2,
+    "largest_burst_share": 0.5484,
+    "second_burst_n": 14,
+    "chain_depth_max": 8,
+    "chain_depth_median": 4,
+    "late_no_founder_link_share": 0.9375
+   }
+  },
+  {
+   "development_id": 1856,
+   "stratum": "A_SHORT",
+   "band": "G1_6h_48h",
+   "gap_h": 12.14,
+   "a_items": [
+    48153,
+    48335
+   ],
+   "b_items": [
+    49126,
+    50489
+   ],
+   "case_id": "LH132",
+   "stratum_pool_size": 513,
+   "development_features": {
+    "size": 4,
+    "span_h": 35.53,
+    "n_sources": 3,
+    "founder_n": 2,
+    "late_n": 0,
+    "late_median_cos_founders": null,
+    "all_median_cos_founders": 0.742,
+    "max_gap_h": 23.39,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": null,
+    "chain_depth_median": null,
+    "late_no_founder_link_share": null
+   }
+  },
+  {
+   "development_id": 1763,
+   "stratum": "D_DRIFT_MULTIDAY",
+   "band": "G2_2d_7d",
+   "gap_h": 53.51,
+   "a_items": [
+    44726,
+    45065
+   ],
+   "b_items": [
+    48261
+   ],
+   "case_id": "LH133",
+   "stratum_pool_size": 86,
+   "development_features": {
+    "size": 9,
+    "span_h": 53.92,
+    "n_sources": 2,
+    "founder_n": 2,
+    "late_n": 3,
+    "late_median_cos_founders": 0.544,
+    "all_median_cos_founders": 0.6451,
+    "max_gap_h": 18.9,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 3,
+    "chain_depth_median": 2,
+    "late_no_founder_link_share": 1.0
+   }
+  },
+  {
+   "development_id": 1161,
+   "stratum": "E_CHAIN_FAILURE",
+   "band": "G2_2d_7d",
+   "gap_h": 103.06,
+   "a_items": [
+    26781,
+    26804,
+    26847
+   ],
+   "b_items": [
+    30184,
+    30226,
+    30298
+   ],
+   "case_id": "LH134",
+   "stratum_pool_size": 32,
+   "development_features": {
+    "size": 331,
+    "span_h": 337.81,
+    "n_sources": 10,
+    "founder_n": 5,
+    "late_n": 320,
+    "late_median_cos_founders": 0.5868,
+    "all_median_cos_founders": 0.5918,
+    "max_gap_h": 19.75,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 17,
+    "chain_depth_median": 4,
+    "late_no_founder_link_share": 0.9906
+   }
+  },
+  {
+   "development_id": 100,
+   "stratum": "C_RECURRING_GAP",
+   "band": "G2_2d_7d",
+   "gap_h": 74.65,
+   "a_items": [
+    1155,
+    1205
+   ],
+   "b_items": [
+    1716,
+    1961
+   ],
+   "case_id": "LH135",
+   "stratum_pool_size": 75,
+   "development_features": {
+    "size": 7,
+    "span_h": 74.65,
+    "n_sources": 4,
+    "founder_n": 2,
+    "late_n": 4,
+    "late_median_cos_founders": 0.5736,
+    "all_median_cos_founders": 0.6318,
+    "max_gap_h": 37.75,
+    "n_bursts": 2,
+    "largest_burst_share": 0.7143,
+    "second_burst_n": 2,
+    "chain_depth_max": 2,
+    "chain_depth_median": 0,
+    "late_no_founder_link_share": 0.75
+   }
+  },
+  {
+   "development_id": 639,
+   "stratum": "E_CHAIN_FAILURE",
+   "band": "G2_2d_7d",
+   "gap_h": 114.8,
+   "a_items": [
+    13713,
+    13835
+   ],
+   "b_items": [
+    17717,
+    17994,
+    18324
+   ],
+   "case_id": "LH136",
+   "stratum_pool_size": 32,
+   "development_features": {
+    "size": 267,
+    "span_h": 313.53,
+    "n_sources": 12,
+    "founder_n": 2,
+    "late_n": 250,
+    "late_median_cos_founders": 0.5064,
+    "all_median_cos_founders": 0.524,
+    "max_gap_h": 18.15,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 10,
+    "chain_depth_median": 4,
+    "late_no_founder_link_share": 0.964
+   }
+  },
+  {
+   "development_id": 480,
+   "stratum": "A_SHORT",
+   "band": "G1_6h_48h",
+   "gap_h": 16.94,
+   "a_items": [
+    9733,
+    10104,
+    9892
+   ],
+   "b_items": [
+    11028,
+    11109,
+    12017
+   ],
+   "case_id": "LH137",
+   "stratum_pool_size": 513,
+   "development_features": {
+    "size": 9,
+    "span_h": 35.34,
+    "n_sources": 4,
+    "founder_n": 4,
+    "late_n": 0,
+    "late_median_cos_founders": null,
+    "all_median_cos_founders": 0.7969,
+    "max_gap_h": 11.94,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": null,
+    "chain_depth_median": null,
+    "late_no_founder_link_share": null
+   }
+  },
+  {
+   "development_id": 692,
+   "stratum": "C_RECURRING_GAP",
+   "band": "G2_2d_7d",
+   "gap_h": 54.81,
+   "a_items": [
+    15446,
+    15614,
+    15658
+   ],
+   "b_items": [
+    18096,
+    18539,
+    18558
+   ],
+   "case_id": "LH138",
+   "stratum_pool_size": 75,
+   "development_features": {
+    "size": 9,
+    "span_h": 82.31,
+    "n_sources": 3,
+    "founder_n": 5,
+    "late_n": 3,
+    "late_median_cos_founders": 0.7444,
+    "all_median_cos_founders": 0.7521,
+    "max_gap_h": 41.63,
+    "n_bursts": 3,
+    "largest_burst_share": 0.5556,
+    "second_burst_n": 3,
+    "chain_depth_max": 3,
+    "chain_depth_median": 1,
+    "late_no_founder_link_share": 0.3333
+   }
+  },
+  {
+   "development_id": 812,
+   "stratum": "E_CHAIN_FAILURE",
+   "band": "G2_2d_7d",
+   "gap_h": 113.09,
+   "a_items": [
+    18679,
+    18655,
+    18657
+   ],
+   "b_items": [
+    22464,
+    23117,
+    23190
+   ],
+   "case_id": "LH139",
+   "stratum_pool_size": 32,
+   "development_features": {
+    "size": 87,
+    "span_h": 198.46,
+    "n_sources": 9,
+    "founder_n": 7,
+    "late_n": 62,
+    "late_median_cos_founders": 0.486,
+    "all_median_cos_founders": 0.5068,
+    "max_gap_h": 26.63,
+    "n_bursts": 2,
+    "largest_burst_share": 0.9195,
+    "second_burst_n": 7,
+    "chain_depth_max": 10,
+    "chain_depth_median": 6,
+    "late_no_founder_link_share": 0.9032
+   }
+  },
+  {
+   "development_id": 1322,
+   "stratum": "D_DRIFT_MULTIDAY",
+   "band": "G2_2d_7d",
+   "gap_h": 50.07,
+   "a_items": [
+    28214
+   ],
+   "b_items": [
+    30636,
+    30706,
+    30747
+   ],
+   "case_id": "LH140",
+   "stratum_pool_size": 86,
+   "development_features": {
+    "size": 20,
+    "span_h": 96.75,
+    "n_sources": 8,
+    "founder_n": 1,
+    "late_n": 14,
+    "late_median_cos_founders": 0.4443,
+    "all_median_cos_founders": 0.4754,
+    "max_gap_h": 41.01,
+    "n_bursts": 2,
+    "largest_burst_share": 0.95,
+    "second_burst_n": 1,
+    "chain_depth_max": 4,
+    "chain_depth_median": 2.0,
+    "late_no_founder_link_share": 0.8571
+   }
+  },
+  {
+   "development_id": 398,
+   "stratum": "E_CHAIN_FAILURE",
+   "band": "G3_7d_21d",
+   "gap_h": 203.17,
+   "a_items": [
+    8440
+   ],
+   "b_items": [
+    15453,
+    15474,
+    16583
+   ],
+   "case_id": "LH141",
+   "stratum_pool_size": 32,
+   "development_features": {
+    "size": 2344,
+    "span_h": 1026.75,
+    "n_sources": 25,
+    "founder_n": 1,
+    "late_n": 2323,
+    "late_median_cos_founders": 0.3164,
+    "all_median_cos_founders": 0.3169,
+    "max_gap_h": 18.7,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 46,
+    "chain_depth_median": 11.0,
+    "late_no_founder_link_share": 0.997
+   }
+  },
+  {
+   "development_id": 557,
+   "stratum": "C_RECURRING_GAP",
+   "band": "G2_2d_7d",
+   "gap_h": 136.73,
+   "a_items": [
+    11625
+   ],
+   "b_items": [
+    16689,
+    16853,
+    17107
+   ],
+   "case_id": "LH142",
+   "stratum_pool_size": 75,
+   "development_features": {
+    "size": 17,
+    "span_h": 181.35,
+    "n_sources": 5,
+    "founder_n": 1,
+    "late_n": 9,
+    "late_median_cos_founders": 0.582,
+    "all_median_cos_founders": 0.5954,
+    "max_gap_h": 44.62,
+    "n_bursts": 4,
+    "largest_burst_share": 0.5294,
+    "second_burst_n": 5,
+    "chain_depth_max": 5,
+    "chain_depth_median": 2,
+    "late_no_founder_link_share": 1.0
+   }
+  },
+  {
+   "development_id": 974,
+   "stratum": "B_CONTINUOUS_MULTIDAY",
+   "band": "G2_2d_7d",
+   "gap_h": 68.0,
+   "a_items": [
+    22432
+   ],
+   "b_items": [
+    23921,
+    24732
+   ],
+   "case_id": "LH143",
+   "stratum_pool_size": 94,
+   "development_features": {
+    "size": 6,
+    "span_h": 68.0,
+    "n_sources": 3,
+    "founder_n": 1,
+    "late_n": 1,
+    "late_median_cos_founders": 0.431,
+    "all_median_cos_founders": 0.5092,
+    "max_gap_h": 23.73,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 3,
+    "chain_depth_median": 1.5,
+    "late_no_founder_link_share": 1.0
+   }
+  },
+  {
+   "development_id": 1909,
+   "stratum": "A_SHORT",
+   "band": "G1_6h_48h",
+   "gap_h": 23.73,
+   "a_items": [
+    48648
+   ],
+   "b_items": [
+    49958,
+    50003,
+    50351
+   ],
+   "case_id": "LH144",
+   "stratum_pool_size": 513,
+   "development_features": {
+    "size": 5,
+    "span_h": 23.73,
+    "n_sources": 2,
+    "founder_n": 1,
+    "late_n": 0,
+    "late_median_cos_founders": null,
+    "all_median_cos_founders": 0.5665,
+    "max_gap_h": 12.57,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": null,
+    "chain_depth_median": null,
+    "late_no_founder_link_share": null
+   }
+  },
+  {
+   "development_id": 786,
+   "stratum": "E_CHAIN_FAILURE",
+   "band": "G2_2d_7d",
+   "gap_h": 68.73,
+   "a_items": [
+    17661,
+    17741,
+    17799
+   ],
+   "b_items": [
+    21107,
+    21538,
+    21660
+   ],
+   "case_id": "LH145",
+   "stratum_pool_size": 32,
+   "development_features": {
+    "size": 73,
+    "span_h": 206.64,
+    "n_sources": 9,
+    "founder_n": 6,
+    "late_n": 57,
+    "late_median_cos_founders": 0.6703,
+    "all_median_cos_founders": 0.695,
+    "max_gap_h": 29.74,
+    "n_bursts": 2,
+    "largest_burst_share": 0.863,
+    "second_burst_n": 10,
+    "chain_depth_max": 8,
+    "chain_depth_median": 3,
+    "late_no_founder_link_share": 0.807
+   }
+  },
+  {
+   "development_id": 780,
+   "stratum": "C_RECURRING_GAP",
+   "band": "G2_2d_7d",
+   "gap_h": 128.6,
+   "a_items": [
+    15455
+   ],
+   "b_items": [
+    21035,
+    21178,
+    21410
+   ],
+   "case_id": "LH146",
+   "stratum_pool_size": 75,
+   "development_features": {
+    "size": 34,
+    "span_h": 256.1,
+    "n_sources": 8,
+    "founder_n": 1,
+    "late_n": 30,
+    "late_median_cos_founders": 0.5731,
+    "all_median_cos_founders": 0.5932,
+    "max_gap_h": 40.39,
+    "n_bursts": 3,
+    "largest_burst_share": 0.6176,
+    "second_burst_n": 12,
+    "chain_depth_max": 5,
+    "chain_depth_median": 2.0,
+    "late_no_founder_link_share": 0.9667
+   }
+  },
+  {
+   "development_id": 1762,
+   "stratum": "B_CONTINUOUS_MULTIDAY",
+   "band": "G2_2d_7d",
+   "gap_h": 64.71,
+   "a_items": [
+    44368,
+    44576
+   ],
+   "b_items": [
+    48273,
+    48513,
+    48734
+   ],
+   "case_id": "LH147",
+   "stratum_pool_size": 94,
+   "development_features": {
+    "size": 16,
+    "span_h": 64.71,
+    "n_sources": 4,
+    "founder_n": 2,
+    "late_n": 7,
+    "late_median_cos_founders": 0.5652,
+    "all_median_cos_founders": 0.6565,
+    "max_gap_h": 22.18,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 4,
+    "chain_depth_median": 2.0,
+    "late_no_founder_link_share": 0.8571
+   }
+  },
+  {
+   "development_id": 949,
+   "stratum": "C_RECURRING_GAP",
+   "band": "G2_2d_7d",
+   "gap_h": 84.25,
+   "a_items": [
+    21869,
+    21964,
+    21917
+   ],
+   "b_items": [
+    24245
+   ],
+   "case_id": "LH148",
+   "stratum_pool_size": 75,
+   "development_features": {
+    "size": 13,
+    "span_h": 112.68,
+    "n_sources": 4,
+    "founder_n": 3,
+    "late_n": 3,
+    "late_median_cos_founders": 0.6722,
+    "all_median_cos_founders": 0.703,
+    "max_gap_h": 44.05,
+    "n_bursts": 3,
+    "largest_burst_share": 0.7692,
+    "second_burst_n": 2,
+    "chain_depth_max": 5,
+    "chain_depth_median": 2,
+    "late_no_founder_link_share": 1.0
+   }
+  },
+  {
+   "development_id": 786,
+   "stratum": "E_CHAIN_FAILURE",
+   "band": "G3_7d_21d",
+   "gap_h": 204.73,
+   "a_items": [
+    17661,
+    17741,
+    17799
+   ],
+   "b_items": [
+    25017,
+    25193,
+    25383
+   ],
+   "case_id": "LH149",
+   "stratum_pool_size": 32,
+   "development_features": {
+    "size": 73,
+    "span_h": 206.64,
+    "n_sources": 9,
+    "founder_n": 6,
+    "late_n": 57,
+    "late_median_cos_founders": 0.6703,
+    "all_median_cos_founders": 0.695,
+    "max_gap_h": 29.74,
+    "n_bursts": 2,
+    "largest_burst_share": 0.863,
+    "second_burst_n": 10,
+    "chain_depth_max": 8,
+    "chain_depth_median": 3,
+    "late_no_founder_link_share": 0.807
+   }
+  },
+  {
+   "development_id": 26,
+   "stratum": "B_CONTINUOUS_MULTIDAY",
+   "band": "G2_2d_7d",
+   "gap_h": 48.42,
+   "a_items": [
+    537,
+    554,
+    566
+   ],
+   "b_items": [
+    742,
+    734,
+    863
+   ],
+   "case_id": "LH150",
+   "stratum_pool_size": 94,
+   "development_features": {
+    "size": 8,
+    "span_h": 48.42,
+    "n_sources": 2,
+    "founder_n": 3,
+    "late_n": 1,
+    "late_median_cos_founders": 0.5432,
+    "all_median_cos_founders": 0.6911,
+    "max_gap_h": 23.61,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 1,
+    "chain_depth_median": 0.5,
+    "late_no_founder_link_share": 1.0
+   }
+  },
+  {
+   "development_id": 514,
+   "stratum": "E_CHAIN_FAILURE",
+   "band": "G3_7d_21d",
+   "gap_h": 367.99,
+   "a_items": [
+    8485
+   ],
+   "b_items": [
+    23729,
+    23942,
+    24471
+   ],
+   "case_id": "LH151",
+   "stratum_pool_size": 32,
+   "development_features": {
+    "size": 274,
+    "span_h": 478.28,
+    "n_sources": 15,
+    "founder_n": 1,
+    "late_n": 266,
+    "late_median_cos_founders": 0.2773,
+    "all_median_cos_founders": 0.2801,
+    "max_gap_h": 29.62,
+    "n_bursts": 3,
+    "largest_burst_share": 0.9891,
+    "second_burst_n": 2,
+    "chain_depth_max": 18,
+    "chain_depth_median": 12.0,
+    "late_no_founder_link_share": 1.0
+   }
+  },
+  {
+   "development_id": 143,
+   "stratum": "A_SHORT",
+   "band": "G1_6h_48h",
+   "gap_h": 43.22,
+   "a_items": [
+    2538
+   ],
+   "b_items": [
+    2829,
+    2844,
+    2948
+   ],
+   "case_id": "LH152",
+   "stratum_pool_size": 513,
+   "development_features": {
+    "size": 4,
+    "span_h": 43.22,
+    "n_sources": 2,
+    "founder_n": 1,
+    "late_n": 0,
+    "late_median_cos_founders": null,
+    "all_median_cos_founders": 0.6738,
+    "max_gap_h": 42.22,
+    "n_bursts": 2,
+    "largest_burst_share": 0.75,
+    "second_burst_n": 1,
+    "chain_depth_max": null,
+    "chain_depth_median": null,
+    "late_no_founder_link_share": null
+   }
+  },
+  {
+   "development_id": 1336,
+   "stratum": "E_CHAIN_FAILURE",
+   "band": "G3_7d_21d",
+   "gap_h": 380.0,
+   "a_items": [
+    30089,
+    30333,
+    30418
+   ],
+   "b_items": [
+    54689,
+    54774,
+    55463
+   ],
+   "case_id": "LH153",
+   "stratum_pool_size": 32,
+   "development_features": {
+    "size": 270,
+    "span_h": 443.08,
+    "n_sources": 13,
+    "founder_n": 3,
+    "late_n": 255,
+    "late_median_cos_founders": 0.5924,
+    "all_median_cos_founders": 0.5968,
+    "max_gap_h": 16.35,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 12,
+    "chain_depth_median": 6.0,
+    "late_no_founder_link_share": 0.9804
+   }
+  },
+  {
+   "development_id": 1184,
+   "stratum": "C_RECURRING_GAP",
+   "band": "G2_2d_7d",
+   "gap_h": 59.79,
+   "a_items": [
+    26997,
+    27197,
+    27322
+   ],
+   "b_items": [
+    28832,
+    29270
+   ],
+   "case_id": "LH154",
+   "stratum_pool_size": 75,
+   "development_features": {
+    "size": 14,
+    "span_h": 137.95,
+    "n_sources": 7,
+    "founder_n": 3,
+    "late_n": 8,
+    "late_median_cos_founders": 0.5882,
+    "all_median_cos_founders": 0.6449,
+    "max_gap_h": 32.41,
+    "n_bursts": 3,
+    "largest_burst_share": 0.5714,
+    "second_burst_n": 5,
+    "chain_depth_max": 6,
+    "chain_depth_median": 2.5,
+    "late_no_founder_link_share": 0.875
+   }
+  },
+  {
+   "development_id": 1251,
+   "stratum": "E_CHAIN_FAILURE",
+   "band": "G3_7d_21d",
+   "gap_h": 309.36,
+   "a_items": [
+    28897,
+    29070,
+    29028
+   ],
+   "b_items": [
+    48494,
+    49206,
+    48806
+   ],
+   "case_id": "LH155",
+   "stratum_pool_size": 32,
+   "development_features": {
+    "size": 198,
+    "span_h": 367.04,
+    "n_sources": 15,
+    "founder_n": 4,
+    "late_n": 168,
+    "late_median_cos_founders": 0.6817,
+    "all_median_cos_founders": 0.6976,
+    "max_gap_h": 39.6,
+    "n_bursts": 2,
+    "largest_burst_share": 0.9293,
+    "second_burst_n": 14,
+    "chain_depth_max": 15,
+    "chain_depth_median": 7.0,
+    "late_no_founder_link_share": 0.8095
+   }
+  },
+  {
+   "development_id": 2016,
+   "stratum": "B_CONTINUOUS_MULTIDAY",
+   "band": "G2_2d_7d",
+   "gap_h": 93.27,
+   "a_items": [
+    51563
+   ],
+   "b_items": [
+    57563,
+    57596,
+    58121
+   ],
+   "case_id": "LH156",
+   "stratum_pool_size": 94,
+   "development_features": {
+    "size": 15,
+    "span_h": 105.03,
+    "n_sources": 6,
+    "founder_n": 1,
+    "late_n": 12,
+    "late_median_cos_founders": 0.625,
+    "all_median_cos_founders": 0.6583,
+    "max_gap_h": 23.92,
+    "n_bursts": 1,
+    "largest_burst_share": 1.0,
+    "second_burst_n": 0,
+    "chain_depth_max": 4,
+    "chain_depth_median": 2,
+    "late_no_founder_link_share": 0.9167
+   }
+  },
+  {
+   "development_id": 509,
+   "stratum": "A_SHORT",
+   "band": "G1_6h_48h",
+   "gap_h": 35.13,
+   "a_items": [
+    8563
+   ],
+   "b_items": [
+    10603,
+    10734
+   ],
+   "case_id": "LH157",
+   "stratum_pool_size": 513,
+   "development_features": {
+    "size": 3,
+    "span_h": 36.38,
+    "n_sources": 2,
+    "founder_n": 1,
+    "late_n": 0,
+    "late_median_cos_founders": null,
+    "all_median_cos_founders": 0.5417,
+    "max_gap_h": 35.13,
+    "n_bursts": 2,
+    "largest_burst_share": 0.6667,
+    "second_burst_n": 1,
+    "chain_depth_max": null,
+    "chain_depth_median": null,
+    "late_no_founder_link_share": null
+   }
+  }
+ ]
+}
