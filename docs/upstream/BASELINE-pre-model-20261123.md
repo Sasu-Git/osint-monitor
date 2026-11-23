@@ -22,6 +22,11 @@ The upstream gold sets and every diagnostic so far were built on the earlier sna
 (2026-11-23 09:43Z). Developments are identical in kind between the two; only Situation assignments and new
 collection differ.
 
+## Hosts
+
+Production runs only on the GCP VM. The laptop daemon was retired 2026-11-23 (held since 11-09; supervisor task
+disabled; laptop DB frozen and not part of this baseline).
+
 ## Code and evaluation state (origin)
 
 | Branch / tag | SHA | State |

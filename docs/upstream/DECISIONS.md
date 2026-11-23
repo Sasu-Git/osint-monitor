@@ -347,3 +347,22 @@ checks apply.
   score from partial labels, no change to component-evidence storage, no regrouping of detached Developments, no
   Situation v2 resume.
 - **Pre-model baseline:** `docs/upstream/BASELINE-pre-model-20261123.md`.
+
+---
+
+## Owner rulings, 2026-11-23 (fourth round) and their execution
+
+- **Laptop daemon: RETIRED.** Read-only dependency check clean (no exclusive collectors beyond the OpenSky / State Dept
+  gaps accepted 2026-11-09; no unique credentials; only the supervisor task; no handoff files; state caches present on
+  the VM). Daemon already held since 11-09; scheduled task `OSINT daemon supervisor` disabled; code, config and frozen
+  laptop DB kept. Record: `data/archive/laptop-daemon-retired-20261123/RETIREMENT.md` (local).
+- **Long-horizon Development identity: FROZEN** with O1-O11 as approved (`eval/long-horizon-identity` `8c3b0e5`,
+  amendment 1 `01d8c75` = labelling-page wording only, before any label). Labelling page 127.0.0.1:8795.
+- **Location codes:** if `XKX` or another non-ISO operational code is actually used in labelling, add it explicitly to
+  the evaluation vocabulary with a documented reason; validation is never loosened to arbitrary three-letter strings.
+- **Model reproducibility gate:** per-sentence cosine distance <= 1e-4 laptop vs VM; bitwise equality reported
+  separately (`deploy/multilingual-model-package` `8b04b67`). Model **not** installed on the VM.
+- **Component evidence:** diagnostic only; the final chronological replay refuses it as a "mixed" signal
+  (`eval/chrono-replay-instrumentation` `3476746`).
+- Still not: Situation v2 resume, chaining guard, topic/location fit or score before complete labels, new confidence or
+  coverage thresholds, regrouping, component-evidence storage change, partial labels for model selection.
