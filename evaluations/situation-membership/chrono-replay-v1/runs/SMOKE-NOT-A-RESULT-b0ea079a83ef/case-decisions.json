@@ -21,15 +21,15 @@
    "reason": "NO_COUNTERPART"
   },
   "S078": {
-   "decision": "rejected",
+   "decision": "entered",
    "evidence": {
-    "assigned": null,
+    "assigned": "china-united_states:diplomacy",
     "contract_version": "CONTRACT-V2-R2 (bf57ed7)",
     "counterparts": [
      "china-united_states:diplomacy"
     ]
    },
-   "reason": "COUNTERPART_CREATED_LATER"
+   "reason": "ASSIGNED"
   },
   "S080": {
    "decision": "rejected",
@@ -52,15 +52,15 @@
    "reason": "NO_COUNTERPART"
   },
   "S166": {
-   "decision": "rejected",
+   "decision": "entered",
    "evidence": {
-    "assigned": null,
+    "assigned": "china-united_states:diplomacy",
     "contract_version": "CONTRACT-V2-R2 (bf57ed7)",
     "counterparts": [
      "china-united_states:diplomacy"
     ]
    },
-   "reason": "PENDING_MIXED"
+   "reason": "ASSIGNED"
   },
   "S168": {
    "decision": "rejected",
@@ -157,13 +157,13 @@
     "situation": "china-taiwan"
    },
    "S078": {
-    "assigned": null,
+    "assigned": "china-united_states:diplomacy",
     "counterparts": [
      "china-united_states:diplomacy"
     ],
     "development_id": 2,
-    "outcome": "NOT_MEMBER",
-    "reason": "COUNTERPART_CREATED_LATER",
+    "outcome": "MEMBER",
+    "reason": "ASSIGNED",
     "situation": "china-united-states"
    },
    "S080": {
@@ -185,13 +185,13 @@
     "situation": "eritrea-ethiopia"
    },
    "S166": {
-    "assigned": null,
+    "assigned": "china-united_states:diplomacy",
     "counterparts": [
      "china-united_states:diplomacy"
     ],
     "development_id": 49,
-    "outcome": "PENDING",
-    "reason": "PENDING_MIXED",
+    "outcome": "MEMBER",
+    "reason": "ASSIGNED",
     "situation": "china-united-states"
    },
    "S168": {

@@ -1,0 +1,67 @@
+{
+ "contract_version": "CONTRACT-V2-R2 (bf57ed7)",
+ "engine_parity": {
+  "assignments_equal": true,
+  "engine_chronological_equal": true,
+  "open_decisions_equal": true,
+  "situation_list_equal": true
+ },
+ "eval_set": {
+  "alignment": {
+   "cases": 379,
+   "development_present": 379,
+   "differing": [],
+   "differing_n": 0,
+   "headline_and_time_equal": 379
+  },
+  "cases_decided": 13,
+  "cases_in_set": 126,
+  "cases_not_replayed": 113
+ },
+ "label_metrics": null,
+ "limit": 50,
+ "mixed_from": "none",
+ "mode": "smoke",
+ "note": "SMOKE RUN, NOT A RESULT. Limited window, current stored-value providers or stubs, no label read. It proves the plumbing only and must not be cited as evidence about Situation v2.",
+ "run_id": "b0ea079a83ef",
+ "status": "SMOKE / NOT A RESULT",
+ "structural": {
+  "assigned_at_step": 9,
+  "assigned_final": 11,
+  "assignments_by_situation": {
+   "china-united_states:diplomacy": 7,
+   "gaza-ceasefire": 2,
+   "us-iran": 2
+  },
+  "developments_in_snapshot_window": 2180,
+  "developments_replayed": 50,
+  "input_coverage": {
+   "family_none": 16,
+   "mixed_true": 0,
+   "mixed_unknown": 50,
+   "no_event_country": 21,
+   "no_principals": 2
+  },
+  "row_reasons": {
+   "ASSIGNED_RETRO": 2,
+   "CONTINUATION": 9,
+   "REJECTED_BY_ALL:GENERIC_ANCHOR_ONLYx3,NO_SHARED_ACTORSx3": 1,
+   "REJECTED_BY_ALL:NO_PRINCIPALSx6": 2,
+   "REJECTED_BY_ALL:NO_SHARED_ACTORSx3,GENERIC_ANCHOR_ONLYx2,COMMENTARY_ONLYx1": 1,
+   "REJECTED_BY_ALL:NO_SHARED_ACTORSx4,GENERIC_ANCHOR_ONLYx2": 9,
+   "REJECTED_BY_ALL:NO_SHARED_ACTORSx5,LOW_COVERAGEx1": 3,
+   "REJECTED_BY_ALL:NO_SHARED_ACTORSx5,OUT_OF_SCOPE_DOMAINx1": 1,
+   "REJECTED_BY_ALL:NO_SHARED_ACTORSx5,PENDING_ATTRIBUTIONx1": 1,
+   "REJECTED_BY_ALL:NO_SHARED_ACTORSx6": 21
+  },
+  "situations_created": 1,
+  "situations_created_by_mode": {
+   "actor_process": 1
+  },
+  "situations_created_slugs": [
+   "china-united_states:diplomacy"
+  ],
+  "situations_seeded": 5
+ },
+ "trace_rows": 50
+}

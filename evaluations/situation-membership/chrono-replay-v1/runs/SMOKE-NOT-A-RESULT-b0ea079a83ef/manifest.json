@@ -18,11 +18,11 @@
   "scopes.json": "fa3da833e246efbb28cfb93ee0e3b12c81e79939d02f42060c5432cdfa28da3e",
   "subsample/manifest.json": "c745d15c66df2823f8f1dbecb02b3d88a5580875db582a854fad0faae6f0458a"
  },
- "finished_utc": "2026-11-23T13:37:52.424902+00:00",
+ "finished_utc": "2026-11-23T13:52:08.876932+00:00",
  "git": {
   "branch": "eval/chrono-replay-instrumentation",
   "dirty": false,
-  "sha": "e2163e0bd740614cc2f2e51746d64deb71a27e01"
+  "sha": "d9ace1e9cbea85af1ea6ba96cfc504049fb82dad"
  },
  "guard": {
   "final_requires": "see chrono_replay/guard.py",
@@ -40,7 +40,7 @@
   "first_dev": 1,
   "last_dev": 50,
   "limit": 50,
-  "mixed_from": "v4",
+  "mixed_from": "none",
   "mode": "smoke",
   "providers": {
    "components": {
@@ -73,7 +73,7 @@
   "window_size": 50
  },
  "limit": 50,
- "mixed_from": "v4",
+ "mixed_from": "none",
  "mode": "smoke",
  "pins": {
   "component_evidence": {
@@ -146,7 +146,7 @@
    "role": "topic"
   }
  },
- "run_id": "3ab53bae8936",
+ "run_id": "b0ea079a83ef",
  "seed": null,
  "seed_note": "no randomness is used by the driver or the engine",
  "snapshot": {
@@ -154,6 +154,6 @@
   "opened": "read-only; backup-API copy in a temporary directory, query_only",
   "sha256": "7463859a4f3537eb29447a755f252dbebc80cc01a1d855739c57b10489964c3c"
  },
- "started_utc": "2026-11-23T13:37:52.215929+00:00",
- "trace_sha256": "d24c0888030dc76e2d154c055a1c2c2f9e6b7c519ffca52036d4f6c9fd5000bc"
+ "started_utc": "2026-11-23T13:52:08.667994+00:00",
+ "trace_sha256": "493947e26923451ad1f9c27cbf2afad5c6c4cc2c04ac23b0f54f335d06b46f0a"
 }
