@@ -38,11 +38,15 @@ from pathlib import Path
 
 
 def invalid_reason(actors: list[str], normalizer, min_actors: int) -> str | None:
+    """Validate a Situation's primary actors exactly as Situation grouping keys them: through the Situation
+    canonicaliser (``ActorCanonicalizer.keys``), which also collapses name variants of one person inside the set
+    ({"Javier Milei", "Milei"} -> one actor). The plain per-name normaliser missed those (2026-11-14 dry run)."""
+    from osint_monitor.processors.situations.canonical import ActorCanonicalizer
     keys = [normalizer.key(a) for a in actors]
     dropped = [a for a, k in zip(actors, keys) if k is None]
     if dropped:
         return f"no longer actors: {dropped}"
-    distinct = sorted(set(keys))
+    distinct = sorted(ActorCanonicalizer(normalizer=normalizer).keys(actors))
     if len(distinct) < len(actors):
         return f"actors collapse to {distinct}"
     if len(distinct) < min_actors:
@@ -82,6 +86,38 @@ def find_invalid(session, normalizer, config) -> list[dict]:
             members = [e.id for e in session.query(Event.id).filter(Event.situation_id == s.id)]
             out.append({"id": s.id, "slug": s.slug, "actors": list(s.primary_actors or []), "reason": reason, "kind": kind,
                         "developments": members})
+    return out
+
+
+def allow_listed(session, only: list[str], config, reason: str, detected_ids: set[int]) -> tuple[list[dict], list[str]]:
+    """Rows for an owner allow-list of "ID:SLUG". Every entry must name an open, non-seed Situation whose id and
+    current slug both match; otherwise nothing is retired (the caller refuses). The detector's verdict is recorded
+    for information only and never widens or narrows the list."""
+    from osint_monitor.core.database import Event, Situation
+    seeds = {s.slug for s in config.situations}
+    rows, problems = [], []
+    for entry in only:
+        sid, _, slug = entry.partition(":")
+        s = session.get(Situation, int(sid)) if sid.isdigit() else None
+        if s is None or s.slug != slug:
+            problems.append(f"{entry}: no Situation with this id and slug")
+            continue
+        if s.slug in seeds or s.status == "closed":
+            problems.append(f"{entry}: seed or already closed")
+            continue
+        members = [e.id for e in session.query(Event.id).filter(Event.situation_id == s.id).order_by(Event.id)]
+        rows.append({"id": s.id, "slug": s.slug, "actors": list(s.primary_actors or []), "reason": reason,
+                     "kind": "owner allow-list", "detector_flags_it": s.id in detected_ids, "developments": members})
+    return rows, problems
+
+
+def situation_states(session, ids: list[int]) -> list[dict]:
+    from osint_monitor.core.database import Event, Situation
+    out = []
+    for sid in ids:
+        s = session.get(Situation, sid)
+        out.append({"id": sid, "slug": s.slug, "status": s.status, "short_description": s.short_description,
+                    "members": session.query(Event).filter(Event.situation_id == sid).count()})
     return out
 
 
@@ -141,17 +177,36 @@ def main(argv=None) -> int:
     ap.add_argument("--regroup", action="store_true")
     ap.add_argument("--backup-dir", type=Path)
     ap.add_argument("--out", type=Path)
+    ap.add_argument("--only", action="append", default=[], metavar="ID:SLUG",
+                    help="owner allow-list: retire exactly these Situations (id and current slug must both match an "
+                         "open, non-seed Situation), whatever any detector reports; repeatable; never with --regroup")
+    ap.add_argument("--reason", default="owner-approved retirement",
+                    help="reason recorded with --only")
     a = ap.parse_args(argv)
     if a.apply and not a.backup_dir:
         print("--apply needs --backup-dir")
+        return 2
+    if a.only and a.regroup:
+        print("--only never regroups")
         return 2
     from osint_monitor.core.config import load_situations_config
     from osint_monitor.processors.actors import ActorNormalizer
     session = writable_session(a.db) if a.apply else readonly_session(a.db)
     config, normalizer = load_situations_config(), ActorNormalizer.load()
-    invalid = find_invalid(session, normalizer, config)
+    detected = find_invalid(session, normalizer, config)
+    if a.only:
+        invalid, problems = allow_listed(session, a.only, config, a.reason, {r["id"] for r in detected})
+        if problems:
+            for p in problems:
+                print(f"REFUSED: {p}")
+            session.close()
+            return 3
+    else:
+        invalid = detected
     report = {"db": str(a.db), "at_utc": datetime.utcnow().isoformat(timespec="seconds"), "applied": False,
-              "invalid": invalid}
+              "mode": "allow-list" if a.only else "detector", "invalid": invalid,
+              "detector_findings": [{"id": r["id"], "slug": r["slug"], "reason": r["reason"]} for r in detected],
+              "before": situation_states(session, [r["id"] for r in invalid])}
     for row in invalid:
         print(f"INVALID {row['slug']}: {row['reason']}; {len(row['developments'])} Developments {row['developments']}")
     if not invalid:
@@ -162,6 +217,7 @@ def main(argv=None) -> int:
         session = writable_session(a.db)
         retire(session, invalid, datetime.utcnow().strftime("%Y%m%d"))
         report["applied"] = True
+        report["after"] = situation_states(session, [r["id"] for r in invalid])
         print(f"retired {len(invalid)}; backup {report['backup']}")
         if a.regroup:
             from osint_monitor.processors.situations import assign_situations, get_grouper

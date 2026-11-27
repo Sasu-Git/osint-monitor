@@ -46,3 +46,8 @@ def test_non_actor_words(word):
 def test_topic_keys_do_not_collapse_variants():
     """Development identity uses ActorNormalizer.keys, which is unchanged: no set-level collapse there."""
     assert ActorNormalizer.load().keys(["Javier Milei", "Milei"]) == frozenset({"javier milei", "milei"})
+
+
+def test_andy_burnham_acts_for_the_united_kingdom(canon):          # owner approval 2026-11-23
+    assert set(canon.keys(["Andy Burnham", "European Union", "United Kingdom"])) == {"european union", "united kingdom"}
+    assert ActorNormalizer.load().key("Burnham") == "burnham"          # full name only, never the bare surname
